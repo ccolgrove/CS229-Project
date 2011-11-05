@@ -30,7 +30,7 @@ public class QueryGetter {
     	queryMap.put("prop", "revisions");
     	queryMap.put("pageids", pageIds);
     	queryMap.put("rvlimit", "max");
-    	queryMap.put("rvprop", "flags|timestamp|user|comment|size|tags");
+    	queryMap.put("rvprop", "flags%7Ctimestamp%7Cuser%7Ccomment%7Csize%7Ctags");
     	if (revStartId != null) {
     		queryMap.put("rvstartid", revStartId);
     	}
