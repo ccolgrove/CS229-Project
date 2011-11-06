@@ -15,7 +15,7 @@ import org.xml.sax.SAXException;
 
 public class XMLParser {
 	// TODO(jtibs): fix this path
-	private static final String INPUT_DIR = "revhistories";
+	private static final String INPUT_DIR = "../revhistories";
 	
 	// TODO(jtibs): actually deal with these exceptions
 	public List<WikiDocument> parse() {
@@ -26,14 +26,18 @@ public class XMLParser {
 			List<WikiDocument> documents = new ArrayList<WikiDocument>();
 			File dir = new File(INPUT_DIR);
 			for (File file : dir.listFiles()) {
+				System.err.println(file);
 				Document xmlDocument = builder.parse(file);
 				documents.add(parseDocument(xmlDocument));
-				break;  // temporary!!
 			}
 			return documents;
 		} catch (IOException e) {
+			e.printStackTrace();
 		} catch (ParserConfigurationException e) {
-		} catch (SAXException e) {}
+			e.printStackTrace();
+		} catch (SAXException e) {
+			e.printStackTrace();
+		}
 		return null;
 	}
 
