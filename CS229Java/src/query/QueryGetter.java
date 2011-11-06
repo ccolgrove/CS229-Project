@@ -14,19 +14,23 @@ import org.w3c.dom.NodeList;
 
 public class QueryGetter {
 
+	public static final String NEGATIVE_DIR = "negative";
+	public static final String POSITIVE_DIR = "positive";
+	
+	
     public static void main(String[] args) throws Exception {
         List<String> pageIds = getRandomQueryIds();
         /* To get more random articles, go to
          * http://en.wikipedia.org/w/api.php?action=query&list=random&rnlimit=5&rnnamespace=0 */
-        DownloadRevHistories(pageIds);
+        DownloadRevHistories(pageIds, NEGATIVE_DIR);
     }
     
     
     public static List<String> getRandomQueryIds() {
     	List<String> idList = new ArrayList<String>();
     	try {
-    		for (int i = 0; i < 10; i++) {
-    			URL url = new URL("http://en.wikipedia.org/w/api.php?action=query&list=random&rnlimit=10&rnnamespace=0&format=xml");
+    		for (int i = 0; i < 1; i++) {
+    			URL url = new URL("http://en.wikipedia.org/w/api.php?action=query&list=random&rnlimit=1&rnnamespace=0&format=xml");
     			DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
     			DocumentBuilder builder = factory.newDocumentBuilder();
     			Document xmlDocument = builder.parse(url.openConnection().getInputStream());
@@ -64,7 +68,7 @@ public class QueryGetter {
     	
     }
     
-    public static void DownloadRevHistories(List<String> pageIds) throws Exception{
+    public static void DownloadRevHistories(List<String> pageIds, String label) throws Exception{
     	for (String pageId : pageIds) {
     		System.out.println("BEGIN DOWNLOAD FOR PAGE ID: " + pageId);
     		URLQuery query = new URLQuery("http://en.wikipedia.org/w/api.php");
@@ -73,7 +77,7 @@ public class QueryGetter {
     		while (true) {
     			Map<String, String> params = GetQueryParams(pageId, revStartId);
     			URL u = query.withQueryParams(params);
-    			String filename = "../revhistories/" + pageId + "-" + xmlDocNum + ".xml";
+    			String filename = "../revhistories/" + label + "/" +  pageId + "-" + xmlDocNum + ".xml";
     			revStartId = DownloadToFile(u, filename);
     			if (revStartId == null) break;
     			xmlDocNum++;
