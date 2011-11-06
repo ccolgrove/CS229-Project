@@ -19,10 +19,15 @@ public class QueryGetter {
 	
 	
     public static void main(String[] args) throws Exception {
-        List<String> pageIds = getRandomQueryIds();
+        //List<String> pageIds = getRandomQueryIds();
         /* To get more random articles, go to
          * http://en.wikipedia.org/w/api.php?action=query&list=random&rnlimit=5&rnnamespace=0 */
-        DownloadRevHistories(pageIds, NEGATIVE_DIR);
+        //DownloadRevHistories(pageIds, NEGATIVE_DIR);
+        
+        // get some controversial ones - we should crawl this later
+        List<String> controversial = new ArrayList<String>();
+        controversial.add("Libertarianism");
+        DownloadRevHistories(controversial, POSITIVE_DIR);
     }
     
     
