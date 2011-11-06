@@ -73,7 +73,7 @@ public class QueryGetter {
     		while (true) {
     			Map<String, String> params = GetQueryParams(pageId, revStartId);
     			URL u = query.withQueryParams(params);
-    			String filename = "revhistories/" + pageId + "-" + xmlDocNum + ".xml";
+    			String filename = "../revhistories/" + pageId + "-" + xmlDocNum + ".xml";
     			revStartId = DownloadToFile(u, filename);
     			if (revStartId == null) break;
     			xmlDocNum++;
