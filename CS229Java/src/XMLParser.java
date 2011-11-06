@@ -15,7 +15,7 @@ import org.xml.sax.SAXException;
 
 public class XMLParser {
 	// TODO(jtibs): fix this path
-	private static final String INPUT_DIR = "../revhistories";
+	private static final String INPUT_DIR = "revhistories";
 	
 	// TODO(jtibs): actually deal with these exceptions
 	public List<WikiDocument> parse() {
