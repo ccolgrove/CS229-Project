@@ -31,7 +31,6 @@ public class TrainingExample {
 		int sumCommentLengths = 0;
 		
 		for (Revision revision : document.revisions) {
-			System.out.println(revision.user);
 			users.add(revision.user);
 			sumRevisionLengths += revision.size;
 			sumCommentLengths += revision.comment.length();

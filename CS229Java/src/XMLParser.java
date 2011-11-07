@@ -14,8 +14,8 @@ import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
 
 public class XMLParser {
-	// TODO(jtibs): fix this path
-	private static final String INPUT_DIR = "../revhistories";
+	// TODO(jtibs): fix these paths
+	private static final String[] INPUT_DIRS = {"../../revhistories/negative", "../../revhistories/positive"};
 	
 	// TODO(jtibs): actually deal with these exceptions
 	public List<WikiDocument> parse() {
@@ -24,11 +24,24 @@ public class XMLParser {
 			DocumentBuilder builder = factory.newDocumentBuilder();
 
 			List<WikiDocument> documents = new ArrayList<WikiDocument>();
-			File dir = new File(INPUT_DIR);
-			for (File file : dir.listFiles()) {
-				System.err.println(file);
-				Document xmlDocument = builder.parse(file);
-				documents.add(parseDocument(xmlDocument));
+			String lastId = null;  // keep track of the ID of the last page we parsed, in case
+								   // revisions for a document are split across several files
+			WikiDocument result = null;
+			for (int i = 0; i < INPUT_DIRS.length; i++) {
+				File dir = new File(INPUT_DIRS[i]);
+				for (File file : dir.listFiles()) {
+					System.err.println(file);
+					Document xmlDocument = builder.parse(file);
+				
+					String fileName = file.getName();
+					String id = fileName.substring(0, fileName.indexOf('-'));
+					if (id != lastId) {
+						if (result != null) documents.add(result);  // we have finished parsing the previous document
+						result = new WikiDocument(fileName, i);  // start a new document
+						lastId = id;
+					}
+					parseDocument(xmlDocument, result);
+				}
 			}
 			return documents;
 		} catch (IOException e) {
@@ -41,24 +54,32 @@ public class XMLParser {
 		return null;
 	}
 
-	private WikiDocument parseDocument(Document xmlDocument) {
+	/**
+	 * Parses the given XML document and updates result.revisions
+	 */
+	private WikiDocument parseDocument(Document xmlDocument, WikiDocument result) {
 		NodeList revisions = xmlDocument.getElementsByTagName("rev");
-		WikiDocument document = new WikiDocument("fake title", 0);
 		for (int i = 0; i < revisions.getLength(); i++) {
 			NamedNodeMap attributes = revisions.item(i).getAttributes();
 
-			String id = attributes.getNamedItem("user").getNodeValue();
+			Node userAttr = attributes.getNamedItem("user");
+			String user = "";
+			if (userAttr != null) user = userAttr.getNodeValue();
+			
 			String timestamp = attributes.getNamedItem("timestamp").getNodeValue();
-			String user = attributes.getNamedItem("user").getNodeValue();
-			String comment = attributes.getNamedItem("comment").getNodeValue();
+	
+			Node commentAttr = attributes.getNamedItem("comment");
+			String comment = "";
+			if (commentAttr != null) comment = commentAttr.getNodeValue();
 			
 			Node sizeAttr = attributes.getNamedItem("size");
 			int size = 0;
 			if (sizeAttr != null) 
 				size = Integer.parseInt(sizeAttr.getNodeValue());
 
-			document.revisions.add(new Revision(id, timestamp, user, comment, size));
+			// TODO(jtibs): figure out why most revisions are missing the "id" attribute
+			result.revisions.add(new Revision("", timestamp, user, comment, size));
 		}
-		return document;
+		return result;
 	}
 }
