@@ -32,12 +32,12 @@ public class Main {
 			}
 
 			try {
-				BufferedWriter out = new BufferedWriter(new FileWriter(names[i] + "_X"));
+				BufferedWriter out = new BufferedWriter(new FileWriter("../" + names[i] + "_X"));
 				out.write(documents.size() + " " + numFeatures + "\n");  // output the dimensions
 				out.write(xBuilder.toString());  // output the feature matrix
 				out.close();
 
-				out = new BufferedWriter(new FileWriter(names[i] + "_Y"));
+				out = new BufferedWriter(new FileWriter("../" + names[i] + "_Y"));
 				out.write("1" + " " + documents.size() + "\n");  // output the dimensions
 				out.write(yBuilder.toString());  // output the label matrix
 				out.close();
