@@ -40,6 +40,8 @@ public class TrainingExample {
 		featureMap.put(Feature.NUM_USERS, (double)users.size());
 		featureMap.put(Feature.AV_REVISION_LENGTH, (double)sumRevisionLengths / numRevisions);
 		featureMap.put(Feature.AV_COMMENT_LENGTH, (double)sumCommentLengths / numRevisions);
+		
+		featureMap.put(Feature.AV_REVISION_LENGTH, featureMap.get(Feature.AV_REVISION_LENGTH) / 10000);
 	}
 	
 	public String featuresToString() {
