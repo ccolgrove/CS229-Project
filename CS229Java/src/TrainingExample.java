@@ -44,8 +44,8 @@ public class TrainingExample {
 	
 	public String featuresToString() {
 		StringBuilder builder = new StringBuilder();
-		for (double value : featureMap.values())
-			builder.append(value + " ");
+		for (Feature key : featureMap.keySet())
+			builder.append(featureMap.get(key) + " ");
 		
 		return builder.toString();
 	}
