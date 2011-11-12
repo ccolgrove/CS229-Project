@@ -35,7 +35,7 @@ public class XMLParser {
 				
 					String fileName = file.getName();
 					String id = fileName.substring(0, fileName.indexOf('-'));
-					if (id != lastId) {
+					if (! id.equals(lastId)) {
 						if (result != null) documents.add(result);  // we have finished parsing the previous document
 						result = new WikiDocument(fileName, i);  // start a new document
 						lastId = id;
