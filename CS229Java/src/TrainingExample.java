@@ -40,12 +40,19 @@ public class TrainingExample {
 		featureMap.put(Feature.NUM_USERS, (double)users.size());
 		featureMap.put(Feature.AV_REVISION_LENGTH, (double)sumRevisionLengths / numRevisions);
 		featureMap.put(Feature.AV_COMMENT_LENGTH, (double)sumCommentLengths / numRevisions);
+		
+		featureMap.put(Feature.NUM_REVISIONS, featureMap.get(Feature.NUM_REVISIONS) / 50000);
+		featureMap.put(Feature.NUM_USERS, featureMap.get(Feature.NUM_USERS) / 5000);
+		featureMap.put(Feature.AV_REVISION_LENGTH, featureMap.get(Feature.AV_REVISION_LENGTH) / 10000);
+		featureMap.put(Feature.AV_COMMENT_LENGTH, featureMap.get(Feature.AV_COMMENT_LENGTH) / 80);
 	}
 	
 	public String featuresToString() {
 		StringBuilder builder = new StringBuilder();
-		for (double value : featureMap.values())
-			builder.append(value + " ");
+		for (Feature key : featureMap.keySet()) {
+			System.out.println(key.toString());
+			builder.append(featureMap.get(key) + " ");
+		}
 		
 		return builder.toString();
 	}

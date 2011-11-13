@@ -35,7 +35,7 @@ public class XMLParser {
 				
 					String fileName = file.getName();
 					String id = fileName.substring(0, fileName.indexOf('-'));
-					if (id != lastId) {
+					if (! id.equals(lastId)) {
 						if (result != null) documents.add(result);  // we have finished parsing the previous document
 						result = new WikiDocument(fileName, i);  // start a new document
 						lastId = id;
@@ -53,10 +53,8 @@ public class XMLParser {
 		}
 		return null;
 	}
-
-	/**
-	 * Parses the given XML document and updates result.revisions
-	 */
+	
+	/** Parses the given XML document and updates result.revisions */
 	private WikiDocument parseDocument(Document xmlDocument, WikiDocument result) {
 		NodeList revisions = xmlDocument.getElementsByTagName("rev");
 		for (int i = 0; i < revisions.getLength(); i++) {
@@ -66,7 +64,12 @@ public class XMLParser {
 			String user = "";
 			if (userAttr != null) user = userAttr.getNodeValue();
 			
+			//String timestampAttr = attributes.getNamedItem("timestamp");
+			//Date timestamp = null;
+			//if (timestampAttr != null)
+			//	timestamp = parseTimestamp(timestampAttr.getNodeValue());
 			String timestamp = attributes.getNamedItem("timestamp").getNodeValue();
+			
 	
 			Node commentAttr = attributes.getNamedItem("comment");
 			String comment = "";
@@ -82,4 +85,15 @@ public class XMLParser {
 		}
 		return result;
 	}
+	
+//	/** timestamp will be of the form 2007-08-21T01:44:47Z */
+//	private Date parseTimestamp(String str) {
+//		String date = str.substring(0, str.indexOf('T'));
+//		String[] split = date.split('-');
+//		
+//		int year = Integer.parseInt(split[0]);
+//		int month = Integer.parseInt(split[1]);
+//		return null;
+//		
+//	}
 }
