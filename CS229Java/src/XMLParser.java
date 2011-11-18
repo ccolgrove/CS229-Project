@@ -1,6 +1,11 @@
 import java.io.File;
 import java.io.IOException;
+
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 import javax.xml.parsers.DocumentBuilderFactory;
@@ -25,7 +30,7 @@ public class XMLParser {
 
 			List<WikiDocument> documents = new ArrayList<WikiDocument>();
 			String lastId = null;  // keep track of the ID of the last page we parsed, in case
-								   // revisions for a document are split across several files
+								             // revisions for a document are split across several files
 			WikiDocument result = null;
 			for (int i = 0; i < INPUT_DIRS.length; i++) {
 				File dir = new File(INPUT_DIRS[i]);
@@ -64,12 +69,8 @@ public class XMLParser {
 			String user = "";
 			if (userAttr != null) user = userAttr.getNodeValue();
 			
-			//String timestampAttr = attributes.getNamedItem("timestamp");
-			//Date timestamp = null;
-			//if (timestampAttr != null)
-			//	timestamp = parseTimestamp(timestampAttr.getNodeValue());
-			String timestamp = attributes.getNamedItem("timestamp").getNodeValue();
-			
+			Node timestampAttr = attributes.getNamedItem("timestamp");
+			Date timestamp = parseTimestamp(timestampAttr.getNodeValue());
 	
 			Node commentAttr = attributes.getNamedItem("comment");
 			String comment = "";
@@ -80,20 +81,22 @@ public class XMLParser {
 			if (sizeAttr != null) 
 				size = Integer.parseInt(sizeAttr.getNodeValue());
 
-			// TODO(jtibs): figure out why most revisions are missing the "id" attribute
 			result.revisions.add(new Revision("", timestamp, user, comment, size));
 		}
 		return result;
 	}
 	
-//	/** timestamp will be of the form 2007-08-21T01:44:47Z */
-//	private Date parseTimestamp(String str) {
-//		String date = str.substring(0, str.indexOf('T'));
-//		String[] split = date.split('-');
-//		
-//		int year = Integer.parseInt(split[0]);
-//		int month = Integer.parseInt(split[1]);
-//		return null;
-//		
-//	}
+	/** timestamp will be of the form 2007-08-21T01:44:47Z */
+	private Date parseTimestamp(String str) {
+		str = str.replaceAll("[TZ]", " ");
+		SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+		
+		Date date = null;
+		try {
+			date = format.parse(str);
+		} catch(ParseException e) {}
+		
+		return date;
+		
+	}
 }
