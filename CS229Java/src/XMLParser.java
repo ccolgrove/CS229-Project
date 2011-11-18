@@ -35,13 +35,14 @@ public class XMLParser {
 			for (int i = 0; i < INPUT_DIRS.length; i++) {
 				File dir = new File(INPUT_DIRS[i]);
 				for (File file : dir.listFiles()) {
-					System.err.println(file);
+					//System.err.println(file);
 					Document xmlDocument = builder.parse(file);
 				
 					String fileName = file.getName();
 					String id = fileName.substring(0, fileName.indexOf('-'));
 					if (! id.equals(lastId)) {
 						if (result != null) documents.add(result);  // we have finished parsing the previous document
+						if (result != null) System.out.println(id + ", " + result.revisions.size());
 						result = new WikiDocument(fileName, i);  // start a new document
 						lastId = id;
 					}

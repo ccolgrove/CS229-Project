@@ -19,6 +19,7 @@ public class Main {
 		for (int i = 0; i < names.length; i++) {
 			StringBuilder xBuilder = new StringBuilder();
 			StringBuilder yBuilder = new StringBuilder();
+			StringBuilder timestampBuilder = new StringBuilder();
 			int numFeatures = 0;
 			
 			documents = (i == 0 ? training : testing);
@@ -29,6 +30,7 @@ public class Main {
 				
 				xBuilder.append(example.featuresToString() + "\n");
 				yBuilder.append(example.label + " ");
+				timestampBuilder.append(example.label + " " + example.timesToString() + "\n");
 			}
 
 			try {
@@ -41,6 +43,12 @@ public class Main {
 				out.write("1" + " " + documents.size() + "\n");  // output the dimensions
 				out.write(yBuilder.toString());  // output the label matrix
 				out.close();
+			} catch (IOException e) {}
+			
+			try {
+			  BufferedWriter out = new BufferedWriter(new FileWriter("../" + names[i] + "_TIMES"));
+			  out.write(timestampBuilder.toString());
+			  out.close();
 			} catch (IOException e) {}
 		}
 	}
