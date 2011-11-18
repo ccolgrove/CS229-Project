@@ -14,7 +14,7 @@ public class Main {
 		int split = (int) (0.7 * documents.size());
 		List<WikiDocument> training = documents.subList(0, split);
 		List<WikiDocument> testing = documents.subList(split, documents.size());
-		String[] names = {"TRAIN", "TEST"};
+		String[] names = {"TRAIN_LONG", "TEST_LONG"};
 		
 		for (int i = 0; i < names.length; i++) {
 			StringBuilder xBuilder = new StringBuilder();
