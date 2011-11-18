@@ -20,7 +20,7 @@ import org.xml.sax.SAXException;
 
 public class XMLParser {
 	// TODO(jtibs): fix these paths
-	private static final String[] INPUT_DIRS = {"../../revhistories/negative", "../../revhistories/positive"};
+	private static final String[] INPUT_DIRS = {"../../revhistories/long_negative", "../../revhistories/positive"};
 	
 	// TODO(jtibs): actually deal with these exceptions
 	public List<WikiDocument> parse() {
