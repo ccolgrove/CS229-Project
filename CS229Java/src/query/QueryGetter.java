@@ -43,9 +43,9 @@ public class QueryGetter {
         //DownloadRevHistories(pageIds, NEGATIVE_DIR);
         
         // get some controversial ones - we should crawl this later
-    	//downloadControversialIssuesPages(100);
+    	downloadControversialIssuesPages(100);
     	//downloadFeaturedIssuesPages(0);
-    	downloadNRandomRevHistories(1);
+    	//downloadNRandomRevHistories(1);
     }
     
     private static void downloadNRandomRevHistories(int n) throws Exception {
@@ -84,7 +84,7 @@ public class QueryGetter {
     
 
     private static void downloadControversialIssuesPages(int maxPagesToDownload) throws Exception {
-    	//compileControversialPageIdsTextFile();
+    	compileControversialPageIdsTextFile();
     	List<String> pageIds = new ArrayList<String>();
     	BufferedReader rd = new BufferedReader(new FileReader(CONTROVERSIAL_PAGE_IDS_TEXT_FILE_PATH));
     	for (int i = 0; i < maxPagesToDownload; i++) {
@@ -122,7 +122,7 @@ public class QueryGetter {
     	for (int i = 0; i < pageTitles.size(); i += nPageTitlesPerRequest) {
     		String joinedPageTitles = joinStringsInList(pageTitles, i,
     				nPageTitlesPerRequest, "%7C");
-    		String urlStr = "http://en.wikipedia.org/w/api.php?action=query&format=xml&titles=" + joinedPageTitles;
+    		String urlStr = "http://en.wikipedia.org/w/api.php?action=query&format=xml&redirects&titles=" + joinedPageTitles;
     		String filename = pageIdsDir + pageIdsListFileNamePrefix + curPageNum + ".xml";
     		downloadGeneralUrlToFile(new URL(urlStr), filename);
     		addPageIdsInFileToList(filename, pageMap);
@@ -178,7 +178,7 @@ public class QueryGetter {
     
     private static void writePageMapToFile(Map<String, String> pageMap, String filename)
     		throws Exception{
-    	PrintWriter writer = new PrintWriter(new FileWriter(filename));
+    	PrintWriter writer = new PrintWriter(filename, "UTF-8");
     	for (String id : pageMap.keySet()) {
     		writer.println(id + "::" + pageMap.get(id));
     	}
@@ -186,7 +186,7 @@ public class QueryGetter {
 	}
     
     private static List<String> getControversialPageTitles() throws Exception {
-    	BufferedReader rd = getBufferedReader(new URL(CONTROVERSIAL_ARTICLES_URL));
+    	BufferedReader rd = getBufferedReader(new URL(CONTROVERSIAL_ARTICLES_URL), "ISO-8859-1");
     	List<String> pageTitles = new ArrayList<String>();
     	String inputLine = null;
     	while ((inputLine = rd.readLine()) != null) {
@@ -211,7 +211,7 @@ public class QueryGetter {
     }
     
     private static List<String> getFeaturedPageTitles() throws Exception {
-    	BufferedReader rd = getBufferedReader(new URL(FEATURED_ARTICLES_URL));
+    	BufferedReader rd = getBufferedReader(new URL(FEATURED_ARTICLES_URL), "ISO-8859-1");
     	List<String> pageTitles = new ArrayList<String>();
     	String inputLine = null;
     	while ((inputLine = rd.readLine()) != null) {
@@ -236,9 +236,9 @@ public class QueryGetter {
     	return pageTitles;
     }
     
-    public static BufferedReader getBufferedReader(URL u) throws Exception {
+    public static BufferedReader getBufferedReader(URL u, String encoding) throws Exception {
     	URLConnection connection = u.openConnection();
-    	BufferedReader rd = new BufferedReader(new InputStreamReader(connection.getInputStream(), "UTF-8"));
+    	BufferedReader rd = new BufferedReader(new InputStreamReader(connection.getInputStream(), encoding));
     	return rd;
     }
     
@@ -249,7 +249,7 @@ public class QueryGetter {
     	queryMap.put("prop", "revisions");
     	queryMap.put("pageids", pageIds);
     	queryMap.put("rvlimit", "max");
-    	queryMap.put("rvprop", "flags%7Ctimestamp%7Cuser%7Ccomment%7Csize%7Ctags");
+    	queryMap.put("rvprop", "ids%7Cflags%7Ctimestamp%7Cuser%7Ccomment%7Csize%7Ctags");
     	if (revStartId != null) {
     		queryMap.put("rvstartid", revStartId);
     	}
@@ -300,9 +300,9 @@ public class QueryGetter {
     }
     
     private static void downloadGeneralUrlToFile(URL u, String filename) throws Exception {
-    	BufferedReader rd = getBufferedReader(u);
+    	BufferedReader rd = getBufferedReader(u, "ISO-8859-1");
     	System.out.println("Downloading: " + u.toString());
-    	PrintWriter pw = new PrintWriter(new FileWriter(filename));
+    	PrintWriter pw = new PrintWriter(filename, "UTF-8");
     	String inputLine;
     	String revStartId = null;
     	while ((inputLine = rd.readLine()) != null) {
@@ -314,7 +314,7 @@ public class QueryGetter {
     }
     
     public static String downloadRevQueryToFile(URL u, String filename) throws Exception {
-    	BufferedReader rd = getBufferedReader(u);
+    	BufferedReader rd = getBufferedReader(u, "ISO-8859-1");
     	System.out.println("Downloading: " + u.toString());
     	PrintWriter pw = new PrintWriter(filename, "UTF-8");
     	String inputLine;
