@@ -31,6 +31,7 @@ public class QueryGetter {
 	private static final String FEATURED_PAGE_IDS_TEXT_FILE_PATH = FEATURED_PAGE_IDS_DIR 
 			+ FEATURED_PAGE_IDS_TEXT_FILE_NAME;
 	private static final String FEATURED_DIR = "featured";
+	private static final String REV_DIFFS_DIR = "revision_diffs";
 	
 	/* We want non-controversial pages downloaded to have at least 8 * 500 = 4000 revisions */
 	private static final int MIN_NUM_REV_PAGES_PER_NEG_PAGE_ID = 6;
@@ -42,9 +43,12 @@ public class QueryGetter {
         //DownloadRevHistories(pageIds, NEGATIVE_DIR);
         
         // get some controversial ones - we should crawl this later
-    	downloadControversialIssuesPages(100);
+    	//downloadControversialIssuesPages(100);
+    	//downloadRevisionDiff("1623", "461928362", true, true);
     	//downloadFeaturedIssuesPages(0);
     	//downloadNRandomRevHistories(1);
+    	downloadRevisionDiffsForPage("14335296", true); // Necrophilia
+    	downloadRevisionDiffsForPage("1092923", true); // Google
     }
 	
 	
@@ -104,7 +108,6 @@ public class QueryGetter {
     	}
     }
     
-    
     private static void downloadControversialIssuesPages(int maxPagesToDownload) throws Exception {
     	compileControversialPageIdsTextFile();
     	List<String> pageIds = new ArrayList<String>();
@@ -136,7 +139,7 @@ public class QueryGetter {
     }
     
     private static void downloadGeneralUrlToFile(URL u, String filename) throws Exception {
-    	BufferedReader rd = getBufferedReader(u, "ISO-8859-1");
+    	BufferedReader rd = getBufferedReader(u);
     	System.out.println("Downloading: " + u.toString());
     	PrintWriter pw = new PrintWriter(filename, "UTF-8");
     	String inputLine;
@@ -149,6 +152,87 @@ public class QueryGetter {
     	System.out.println("Saved to: " + filename);
     }
 
+    private static void downloadRevisionDiffsForPage(String pageId, boolean diffWithPrev) 
+    throws Exception {
+    	System.out.println("DOWNLOADING REVISION DIFFS BY PAGE FOR PAGE ID: " + pageId);
+    	String nextRevId = downloadRevisionDiff(pageId, null, diffWithPrev, true);
+    	while (nextRevId != null) {
+    		nextRevId = downloadRevisionDiff(pageId, nextRevId, diffWithPrev, true);
+    	}
+    	System.out.println("DONE DOWNLOADING REVISION DIFFS BY PAGE FOR PAGE ID: " + pageId);
+    }
+    
+    private static void downloadRevisionDiffsForUser(String username, boolean diffWithPrev) {
+    	
+    }
+    
+    /**
+     * If diffWithPrev is true, downloads into the revision diffs directory
+     * the diff of the given revision (the page id somehow is also needed
+     * for the API) with the revision that came before it on the page.
+     * If diffWithPrev is false, the diff is done with the given revision
+     * and the page's latest revision (cur).
+     * @param pageId
+     * @param revId
+     * @param diffWithPrev
+     */
+    private static String downloadRevisionDiff(String pageId, String revId,
+    		boolean diffWithPrev, boolean byPage) 
+    throws Exception {
+    	String rvStartIdStr = "";
+    	String nextRevId = null;
+    	if (revId != null) {
+    		rvStartIdStr = "&rvstartid=" + revId;
+    	}
+    	String diffTo = diffWithPrev ? "prev" : "cur";
+    	String urlString = "http://en.wikipedia.org/w/api.php?action=query&format=xml&prop=revisions&rvlimit=1"
+    			+ "&pageids=" + pageId
+    			+ "&rvprop=ids%7Ctimestamp%7Cuser%7Ccomment"
+    			+ "&rvdiffto=" + diffTo
+    			+ rvStartIdStr;
+    	
+    	BufferedReader reader = getBufferedReader(urlString);
+    	System.out.println("Downloading: " + urlString);
+    	/* What's a bit annoying is that if it's the latest revision,
+    	 * I need to look at the file itself to see what the revision
+    	 * id is.
+    	 */
+    	ArrayList<String> firstLines = new ArrayList<String>();
+    	while (true) {
+    		String line = reader.readLine();
+    		if (line == null) break;
+    		firstLines.add(line);
+    		String possibleNextRevId = getAttrInLine(line, "<revisions rvstartid=\"");
+    		if (possibleNextRevId != null) {
+    			nextRevId = possibleNextRevId;
+    		}
+    		String revIdInFile = getAttrInLine(line, "<rev revid=\"");
+    		if (revIdInFile != null) {
+    			revId = revIdInFile;
+    			break;
+    		}
+    	}
+    	String filename = getRevDiffFileName(pageId, revId, diffWithPrev, byPage);
+    	PrintWriter writer = new PrintWriter(filename, "UTF-8");
+    	for (String firstLine : firstLines) {
+    		writer.println(firstLine);
+    	}
+    
+    	while (true) {
+    		String line = reader.readLine();
+    		if (line == null) break;
+    		String possibleNextRevId = getAttrInLine(line, "<revisions rvstartid=\"");
+    		if (possibleNextRevId != null) {
+    			nextRevId = possibleNextRevId;
+    		}
+    		writer.println(line);
+    	}
+    	reader.close();
+    	writer.close();
+    	System.out.println("Saved to: " + filename);
+    	return nextRevId;
+    }
+    
     
     
     private static void downloadNRandomRevHistories(int n) throws Exception {
@@ -200,7 +284,7 @@ public class QueryGetter {
     }
     
     public static String downloadRevQueryToFile(URL u, String filename) throws Exception {
-    	BufferedReader rd = getBufferedReader(u, "ISO-8859-1");
+    	BufferedReader rd = getBufferedReader(u);
     	System.out.println("Downloading: " + u.toString());
     	PrintWriter pw = new PrintWriter(filename, "UTF-8");
     	String inputLine;
@@ -221,14 +305,35 @@ public class QueryGetter {
     	return revStartId;
     }
     
-    public static BufferedReader getBufferedReader(URL u, String encoding) throws Exception {
+    /**
+     * If line is '<a href="blah">'
+     * and prefix is '<a href="'
+     * then returns 'blah' as a String,
+     * or null if the prefix cannot be found
+     * @param line
+     * @param prefix
+     * @return
+     */
+    private static String getAttrInLine(String line, String prefix) {
+		int index = line.indexOf(prefix);
+		if (index < 0) return null;
+		int nextQuoteIndex = line.indexOf("\"", index + prefix.length());
+		if (nextQuoteIndex < 0) return null;
+		return line.substring(index + prefix.length(), nextQuoteIndex);
+    }
+    
+    public static BufferedReader getBufferedReader(String urlString) throws Exception {
+    	return getBufferedReader(new URL(urlString));
+    }
+    
+    public static BufferedReader getBufferedReader(URL u) throws Exception {
     	URLConnection connection = u.openConnection();
-    	BufferedReader rd = new BufferedReader(new InputStreamReader(connection.getInputStream(), encoding));
+    	BufferedReader rd = new BufferedReader(new InputStreamReader(connection.getInputStream(), "ISO-8859-1"));
     	return rd;
     }
     
     private static List<String> getControversialPageTitles() throws Exception {
-    	BufferedReader rd = getBufferedReader(new URL(CONTROVERSIAL_ARTICLES_URL), "ISO-8859-1");
+    	BufferedReader rd = getBufferedReader(new URL(CONTROVERSIAL_ARTICLES_URL));
     	List<String> pageTitles = new ArrayList<String>();
     	String inputLine = null;
     	while ((inputLine = rd.readLine()) != null) {
@@ -253,7 +358,7 @@ public class QueryGetter {
     }
     
     private static List<String> getFeaturedPageTitles() throws Exception {
-    	BufferedReader rd = getBufferedReader(new URL(FEATURED_ARTICLES_URL), "ISO-8859-1");
+    	BufferedReader rd = getBufferedReader(new URL(FEATURED_ARTICLES_URL));
     	List<String> pageTitles = new ArrayList<String>();
     	String inputLine = null;
     	while ((inputLine = rd.readLine()) != null) {
@@ -313,6 +418,20 @@ public class QueryGetter {
     	}
     	return idList;
     }
+    
+    private static String getRevDiffFileName(String pageId, String revId, 
+    		boolean diffWithPrev, boolean byPage) {
+    	String revisionDiffsDirName = byPage ? "revision_diffs_by_page" : "revision_diffs_by_user"; 
+    	String directory = "../revhistories/" + revisionDiffsDirName + "/" + pageId;
+    	File dirFile = new File(directory);
+    	if (!dirFile.exists()) {
+    		dirFile.mkdirs();
+    	}
+    	String diffWith = diffWithPrev ? "prev" : "cur";
+    	String filename = pageId + "-" + revId + "-" + diffWith + ".xml";
+    	return directory + "/" + filename; 
+    }
+    
     
     private static String joinStringsInList(List<String> strList, int startIndex,
     		int maxElemsToJoin, String delimiter) {
