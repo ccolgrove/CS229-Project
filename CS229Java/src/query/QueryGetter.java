@@ -47,8 +47,10 @@ public class QueryGetter {
     	//downloadRevisionDiff("1623", "461928362", true, true);
     	//downloadFeaturedIssuesPages(0);
     	//downloadNRandomRevHistories(1);
-    	downloadRevisionDiffsForPage("14335296", true); // Necrophilia
-    	downloadRevisionDiffsForPage("1092923", true); // Google
+    	//downloadRevisionDiffsForPage("14335296", true); // Necrophilia
+    	//downloadRevisionDiffsForPage("1092923", true); // Google
+    	//downloadRevisionDiffsForUser("SF007", true);
+    	downloadRevisionDiffsForUser("Hammersoft", true);
     }
 	
 	
@@ -155,15 +157,70 @@ public class QueryGetter {
     private static void downloadRevisionDiffsForPage(String pageId, boolean diffWithPrev) 
     throws Exception {
     	System.out.println("DOWNLOADING REVISION DIFFS BY PAGE FOR PAGE ID: " + pageId);
-    	String nextRevId = downloadRevisionDiff(pageId, null, diffWithPrev, true);
+    	String nextRevId = downloadRevisionDiff(pageId, null, diffWithPrev, null);
     	while (nextRevId != null) {
-    		nextRevId = downloadRevisionDiff(pageId, nextRevId, diffWithPrev, true);
+    		nextRevId = downloadRevisionDiff(pageId, nextRevId, diffWithPrev, null);
     	}
     	System.out.println("DONE DOWNLOADING REVISION DIFFS BY PAGE FOR PAGE ID: " + pageId);
     }
     
-    private static void downloadRevisionDiffsForUser(String username, boolean diffWithPrev) {
-    	
+    private static void downloadRevisionDiffsForUser(String username, boolean diffWithPrev) 
+    throws Exception {
+    	System.out.println("DOWNLOADING REVISION DIFFS FOR USERNAME: " + username);
+    	File dir = new File("../revhistories/user_contribs");
+    	String prefix = username + "-";
+    	for (File f : dir.listFiles()) {
+    		if (f.getName().startsWith(prefix))	{
+    			downloadRevisionDiffsForUserInContribsFile(f, username, diffWithPrev);
+    		}
+    	}
+    	System.out.println("DONE DOWNLOADING REVISION DIFFS FOR USERNAME: " + username);
+    }
+    
+    private static void downloadRevisionDiffsForUserInContribsFile(File f,
+    		String username, boolean diffWithPrev) throws Exception {
+    	DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
+		DocumentBuilder builder = factory.newDocumentBuilder();
+		Document xmlDocument = builder.parse(f);
+		NodeList items = xmlDocument.getElementsByTagName("item");
+		for (int j = 0; j < items.getLength(); j++) {
+			NamedNodeMap attributes = items.item(j).getAttributes();
+			String pageId = attributes.getNamedItem("pageid").getNodeValue();
+			String revId = attributes.getNamedItem("revid").getNodeValue();
+			downloadRevisionDiff(pageId, revId, diffWithPrev, username);
+		}
+    }
+    
+    private static void downloadUserContribs(String username)
+    throws Exception {
+    	String urlStringPrefix = "http://en.wikipedia.org/w/api.php?action=query"
+    			+ "&list=usercontribs&uclimit=max&format=xml&ucnamespace=0"
+    			+ "&ucuser=" + username;
+    	String revStartStr = "";
+    	int curDocNum = 1;
+    	while (true) {
+    		String nextUcStart = null;
+        	String filename = "../revhistories/user_contribs/" + username + "-" + curDocNum + ".xml";
+        	String urlString = urlStringPrefix + revStartStr;
+    		BufferedReader reader = getBufferedReader(urlString);
+    		System.out.println("Downloading: " + urlString);
+        	PrintWriter writer = new PrintWriter(filename, "UTF-8");
+    		while (true) {
+    			String line = reader.readLine();
+    			if (line == null) break;
+        		String possibleNextUcStart = getAttrInLine(line, "<usercontribs ucstart=\"");
+        		if (possibleNextUcStart != null) {
+        			nextUcStart = possibleNextUcStart;
+        		}
+        		writer.println(line);
+    		}
+    		reader.close();
+    		writer.close();
+    		System.out.println("Saved to: " + filename);
+    		curDocNum++;
+    		if (nextUcStart == null) break;
+			revStartStr = "&ucstart=" + nextUcStart;
+    	}
     }
     
     /**
@@ -177,7 +234,7 @@ public class QueryGetter {
      * @param diffWithPrev
      */
     private static String downloadRevisionDiff(String pageId, String revId,
-    		boolean diffWithPrev, boolean byPage) 
+    		boolean diffWithPrev, String username) 
     throws Exception {
     	String rvStartIdStr = "";
     	String nextRevId = null;
@@ -212,7 +269,7 @@ public class QueryGetter {
     			break;
     		}
     	}
-    	String filename = getRevDiffFileName(pageId, revId, diffWithPrev, byPage);
+    	String filename = getRevDiffFileName(pageId, revId, diffWithPrev, username);
     	PrintWriter writer = new PrintWriter(filename, "UTF-8");
     	for (String firstLine : firstLines) {
     		writer.println(firstLine);
@@ -420,9 +477,14 @@ public class QueryGetter {
     }
     
     private static String getRevDiffFileName(String pageId, String revId, 
-    		boolean diffWithPrev, boolean byPage) {
-    	String revisionDiffsDirName = byPage ? "revision_diffs_by_page" : "revision_diffs_by_user"; 
-    	String directory = "../revhistories/" + revisionDiffsDirName + "/" + pageId;
+    		boolean diffWithPrev, String username) {
+    	String revisionDiffsDirName;
+    	if (username == null) {
+    		revisionDiffsDirName = "revision_diffs_by_page" + "/" + pageId;
+    	} else {
+    		revisionDiffsDirName = "revision_diffs_by_user/" + username; 
+    	}
+    	String directory = "../revhistories/" + revisionDiffsDirName;
     	File dirFile = new File(directory);
     	if (!dirFile.exists()) {
     		dirFile.mkdirs();
