@@ -50,7 +50,8 @@ public class QueryGetter {
     	//downloadRevisionDiffsForPage("14335296", true); // Necrophilia
     	//downloadRevisionDiffsForPage("1092923", true); // Google
     	//downloadRevisionDiffsForUser("SF007", true);
-    	downloadRevisionDiffsForUser("Hammersoft", true);
+    	//downloadRevisionDiffsForUser("Tangledorange", true);
+    	downloadNMostRecentlyEditedArticles("Tangledorange", 10);
     }
 	
 	
@@ -110,6 +111,13 @@ public class QueryGetter {
     	}
     }
     
+    private static void downloadArticleContent(String pageId) throws Exception {
+    	String urlString = "http://en.wikipedia.org/w/api.php?action=query&prop=revisions&redirects&rvprop=content&format=xml&pageids="
+    			+ pageId;
+    	String filename = "../articles/" + pageId + ".xml";
+    	downloadGeneralUrlToFile(new URL(urlString), filename);
+    }
+    
     private static void downloadControversialIssuesPages(int maxPagesToDownload) throws Exception {
     	compileControversialPageIdsTextFile();
     	List<String> pageIds = new ArrayList<String>();
@@ -145,13 +153,50 @@ public class QueryGetter {
     	System.out.println("Downloading: " + u.toString());
     	PrintWriter pw = new PrintWriter(filename, "UTF-8");
     	String inputLine;
-    	String revStartId = null;
     	while ((inputLine = rd.readLine()) != null) {
     		pw.println(inputLine);
     	}
     	pw.close();
     	rd.close();
     	System.out.println("Saved to: " + filename);
+    }
+    
+    private static void downloadNMostRecentlyEditedArticles(String username, int n) throws Exception {
+    	for (String pageId : getNMostRecentlyEditedPageIds(username, n)) {
+    		downloadArticleContent(pageId);
+    	}
+    }
+    
+    private static Set<String> getNMostRecentlyEditedPageIds(String username, int n) throws Exception {
+    	File dir = new File("../revhistories/user_contribs");
+    	TreeMap<Integer, File> files = new TreeMap<Integer, File>();
+    	for (File f : dir.listFiles()) {
+    		if (f.getName().startsWith(username)) {
+    			int numberBegin = username.length() + 1;
+    			int numberEnd = f.getName().indexOf(".xml", numberBegin);
+    			int docNum = Integer.parseInt(f.getName().substring(numberBegin, numberEnd));
+    			files.put(docNum, f);
+    		}
+    	}
+    	
+    	HashSet<String> topPageIds = new HashSet<String>();
+    	
+    	for (Integer i : files.keySet()) {
+    		if (topPageIds.size() >= n) break;
+    		File f = files.get(i);
+        	DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
+    		DocumentBuilder builder = factory.newDocumentBuilder();
+    		Document xmlDocument = builder.parse(f);
+    		NodeList items = xmlDocument.getElementsByTagName("item");
+    		for (int j = 0; j < items.getLength(); j++) {
+    			if (topPageIds.size() >= n) break;
+    			NamedNodeMap attributes = items.item(j).getAttributes();
+    			String pageId = attributes.getNamedItem("pageid").getNodeValue();
+    			topPageIds.add(pageId);
+    		}
+    	}
+    	
+    	return topPageIds;
     }
 
     private static void downloadRevisionDiffsForPage(String pageId, boolean diffWithPrev) 
@@ -166,6 +211,7 @@ public class QueryGetter {
     
     private static void downloadRevisionDiffsForUser(String username, boolean diffWithPrev) 
     throws Exception {
+    	downloadUserContribs(username);
     	System.out.println("DOWNLOADING REVISION DIFFS FOR USERNAME: " + username);
     	File dir = new File("../revhistories/user_contribs");
     	String prefix = username + "-";
@@ -244,7 +290,7 @@ public class QueryGetter {
     	String diffTo = diffWithPrev ? "prev" : "cur";
     	String urlString = "http://en.wikipedia.org/w/api.php?action=query&format=xml&prop=revisions&rvlimit=1"
     			+ "&pageids=" + pageId
-    			+ "&rvprop=ids%7Ctimestamp%7Cuser%7Ccomment"
+    			+ "&rvprop=ids%7Ctimestamp%7Cuser%7Ccomment%7Csize"
     			+ "&rvdiffto=" + diffTo
     			+ rvStartIdStr;
     	
