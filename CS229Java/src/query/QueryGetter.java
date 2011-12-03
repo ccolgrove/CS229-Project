@@ -50,8 +50,8 @@ public class QueryGetter {
     	//downloadRevisionDiffsForPage("14335296", true); // Necrophilia
     	//downloadRevisionDiffsForPage("1092923", true); // Google
     	//downloadRevisionDiffsForUser("SF007", true);
-    	//downloadRevisionDiffsForUser("JerryOrr", true);
-    	downloadNMostRecentlyEditedArticles("JerryOrr", 10);
+    	downloadRevisionDiffsForUser("The_Egyptian_Liberal", true);
+    	downloadNMostRecentlyEditedArticles("The_Egyptian_Liberal", 10);
     }
 	
 	
