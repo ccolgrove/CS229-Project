@@ -14,6 +14,7 @@ public class Revision {
 	    Date timestamp, String comment, String content) {
 	  this.user = user;
 		this.id = id;
+		this.pageId = pageId;
 		this.timestamp = timestamp;
 		this.comment = comment;
 		this.content = content;
