@@ -24,8 +24,7 @@ import org.w3c.dom.Text;
 import org.xml.sax.SAXException;
 
 public class XMLParser {
-  private static final String USER = "Hammersoft";
-	private static final String INPUT_DIR = "../../../revhistories/revision_diffs_by_user/" + USER;
+	private static final String INPUT_DIR = "../../../revhistories/revision_diffs_by_user/";
 	private static final String XML_HEADER = "<?xml version=\"1.0\"?> <!DOCTYPE some_name [ <!ENTITY nbsp \"&#160;\"> ]><api>"; 
 	private static final String XML_FOOTER = "</api>";
 
@@ -41,11 +40,11 @@ public class XMLParser {
 	}
 
 	// TODO(jtibs): actually deal with these exceptions
-	public List<Revision> parse() {
+	public List<Revision> parse(String user) {
 	  try {
 	    List<Revision> revisions = new ArrayList<Revision>();
 
-	    File dir = new File(INPUT_DIR);
+	    File dir = new File(INPUT_DIR + File.separator + user);
 	    System.out.println(INPUT_DIR);
 	    for (File file : dir.listFiles()) {
 	      //System.err.println(file);
@@ -66,9 +65,15 @@ public class XMLParser {
 
 	/** Parses the given revision diff and returns a Revision representing it */
 	private Revision parseRevision(Document xmlDocument) {
+	  // get information from <page> tag
+	  NodeList nodes = xmlDocument.getElementsByTagName("page");
+	  NamedNodeMap attributes = nodes.item(0).getAttributes();
+	  Node pageIdAttr = attributes.getNamedItem("pageid");
+	  String pageId = pageIdAttr.getNodeValue();
+	  
 	  // get information from <rev> tag
-	  NodeList revision = xmlDocument.getElementsByTagName("rev");
-	  NamedNodeMap attributes = revision.item(0).getAttributes();
+	  nodes = xmlDocument.getElementsByTagName("rev");
+	  attributes = nodes.item(0).getAttributes();
 
 	  Node userAttr = attributes.getNamedItem("user");
 	  String user = "";
@@ -85,14 +90,14 @@ public class XMLParser {
 	  if (commentAttr != null) comment = commentAttr.getNodeValue();
 
 	  // get information from <diff> tag
-	  NodeList diff = xmlDocument.getElementsByTagName("diff");
+	  nodes = xmlDocument.getElementsByTagName("diff");
 	
-	  Node contentAttr = diff.item(0).getFirstChild();
-	  if (contentAttr == null) return null;
-	  String content = cleanContent(contentAttr.getNodeValue());
+	  Node contentNode = nodes.item(0).getFirstChild();
+	  if (contentNode == null) return null;
+	  String content = cleanContent(contentNode.getNodeValue());
 	  if (content == null) return null;
 	  
-	  return new Revision(user, id, timestamp, comment, content);
+	  return new Revision(user, id, pageId, timestamp, comment, content);
 	}
 	
 	/** timestamp will be of the form 2007-08-21T01:44:47Z */

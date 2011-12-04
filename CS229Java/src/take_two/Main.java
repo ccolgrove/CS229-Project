@@ -9,6 +9,6 @@ public class Main {
 	public static void main(String[] args) {
 	  XMLParser parser = new XMLParser();
 	  
-		List<Revision> revisions = parser.parse();
+		List<Revision> revisions = parser.parse("Hammersoft");
 	}
 }
