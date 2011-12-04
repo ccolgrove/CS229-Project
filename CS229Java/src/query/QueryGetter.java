@@ -50,7 +50,11 @@ public class QueryGetter {
     	//downloadRevisionDiffsForPage("14335296", true); // Necrophilia
     	//downloadRevisionDiffsForPage("1092923", true); // Google
     	//downloadRevisionDiffsForUser("SF007", true);
-    	downloadRevisionDiffsForUser("The_Egyptian_Liberal", true);
+    	//downloadRevisionDiffsForUser("The_Egyptian_Liberal", true);
+    	downloadNMostRecentlyEditedArticles("Hammersoft", 10);
+    	downloadNMostRecentlyEditedArticles("SF007", 10);
+    	downloadNMostRecentlyEditedArticles("JerryOrr", 10);
+    	downloadNMostRecentlyEditedArticles("Tangledorange", 10);
     	downloadNMostRecentlyEditedArticles("The_Egyptian_Liberal", 10);
     }
 	
@@ -118,6 +122,13 @@ public class QueryGetter {
     	downloadGeneralUrlToFile(new URL(urlString), filename);
     }
     
+    private static void downloadArticleContentWithSuffix(String pageId, String suffix) throws Exception {
+    	String urlString = "http://en.wikipedia.org/w/api.php?action=query&prop=revisions&redirects&rvprop=content&format=xml&pageids="
+    			+ pageId;
+    	String filename = "../articles/" + pageId + "-" + suffix + ".xml";
+    	downloadGeneralUrlToFile(new URL(urlString), filename);
+    }
+    
     private static void downloadControversialIssuesPages(int maxPagesToDownload) throws Exception {
     	compileControversialPageIdsTextFile();
     	List<String> pageIds = new ArrayList<String>();
@@ -163,7 +174,7 @@ public class QueryGetter {
     
     private static void downloadNMostRecentlyEditedArticles(String username, int n) throws Exception {
     	for (String pageId : getNMostRecentlyEditedPageIds(username, n)) {
-    		downloadArticleContent(pageId);
+    		downloadArticleContentWithSuffix(pageId, username);
     	}
     }
     
