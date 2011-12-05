@@ -1,0 +1,172 @@
+<?xml version="1.0"?><api><query><pages><page pageid="7822219" ns="0" title="Tamarin (JavaScript engine)"><revisions><rev xml:space="preserve">{{Infobox software
+| name                   = Tamarin
+| logo                   =
+| screenshot             =
+| caption                =
+| developer              = [[Adobe Systems|Adobe Labs]] and [[Mozilla]]
+| latest release version =
+| latest release date    =
+| operating system       = [[Cross-platform]]
+| programming language   = [[C++]]
+| status                 = Active
+| genre                  = [[Virtual Machine]] for [[ECMAScript]]
+| license                = Tri-licensed [[GPL]], [[LGPL]], and [[Mozilla Public License|MPL]]
+| website                = [http://www.mozilla.org/projects/tamarin/ mozilla.org/projects/tamarin/]
+}}
+'''Tamarin''' is a [[free software|free]] [[virtual machine]] with [[just-in-time compilation]] (JIT) support intended to implement the fourth edition of the [[ECMAScript]] standard.
+
+Tamarin was developed by [[Adobe Systems|Adobe Labs]] for its [[ActionScript]] virtual machine used in [[Adobe Flash|Flash 9]] and up and open-sourced in 2006.
+
+==Tamarin and Mozilla==
+The code was donated to the [[Mozilla]] project on November 7, 2006.&lt;ref&gt;{{cite web
+ |url=http://www.mozilla.com/en-US/press/mozilla-2006-11-07.html
+ |title=Adobe and Mozilla Foundation to Open Source Flash Player Scripting Engine
+ |work=Mozilla Foundation Press Center
+ |publisher = Mozilla Foundation
+ |date = November 7, 2006
+ |location = San Francisco
+ |accessdate = September 3, 2010
+}}&lt;/ref&gt; The contributed code is tri-licensed under the [[GNU General Public License|GPL]], [[GNU Lesser General Public License|LGPL]], and [[Mozilla Public License|MPL]] licenses to be developed in Mozilla's [[Mercurial (software)|Mercurial]] repository.&lt;ref&gt;{{cite web
+ |url=http://www.mozilla.org/projects/tamarin/
+ |title=Tamarin Project
+ |publisher = Mozilla Foundation
+ |accessdate = September 3, 2010
+}}&lt;/ref&gt; The contributed code is approximately 135,000 lines of code,&lt;ref&gt;{{cite web
+ |url=http://blogs.adobe.com/penguin.swf/2006/11/open_source_actionscript.html
+ |title=Open Up
+ |work=Penguin.SWF â Just another Adobe Blog site
+ |first=Mike
+ |last=Melanson
+ |date=November 7, 2006
+ |accessdate=September 3, 2010
+}}&lt;/ref&gt; making it the largest single donation of code to the Mozilla project besides [[Netscape (web browser)|Netscape]] itself.&lt;ref&gt;{{cite web
+ |url=http://www.browserden.co.uk/news/tamarin/index.shtml
+ |title=Project Tamarin - Adobe's contribution to Mozilla
+ |work=The Browser Den
+}}{{Dead link|date=September 2010}}&lt;/ref&gt;
+
+There were plans to use Tamarin as part of [[Mozilla application framework|Mozilla]] 2&lt;ref&gt;{{cite web
+ |url=http://weblogs.mozillazine.org/roadmap/archives/2006/10/mozilla_2.html
+ |title=Mozilla 2
+ |work=Brendan's Roadmap Updates
+ |publisher = MozillaZine
+ |first=Brendan
+ |last = Eich
+ |authorlink = Brendan Eich
+ |date = October 13, 2006
+ |accessdate = September 3, 2010
+}}&lt;/ref&gt; (and therefore [[Mozilla Firefox|Firefox]]). The project to integrate Tamarin and [[SpiderMonkey (Javascript engine)|SpiderMonkey]] was called &quot;ActionMonkey&quot;,&lt;ref&gt;{{cite web
+ |url = http://ejohn.org/blog/actionmonkey/
+ |title = ActionMonkey
+ |first = John
+ |last = Resig
+ |work = John Resig Blog
+ |date = July 23, 2007
+ |accessdate = September 3, 2010
+}}&lt;/ref&gt; but was canceled in 2008&lt;ref&gt;{{cite web
+ |url = https://wiki.mozilla.org/index.php?title=JavaScript:ActionMonkey&amp;oldid=107405
+ |title = JavaScript:ActionMonkey
+ |work = MozillaWiki
+ |date = September 4, 2008
+ |accessdate = September 3, 2010
+ |publisher = [[Mozilla Foundation]]
+}}&lt;/ref&gt; because Tamarin's interpreter turned out to be slower than SpiderMonkey's and because the plans of ECMAScript development shifted from [[ECMAScript#Future development|ECMAScript 4]] (which was partially implemented by Tamarin) to [[ECMAScript Harmony]].&lt;ref&gt;{{cite web
+ |url = http://hacks.mozilla.org/2010/03/a-quick-note-on-javascript-engine-components/
+ |title = A quick note on JavaScript engine components
+ |work = Hacks.Mozilla.org
+ |publisher = [[Mozilla Foundation]]
+ |date = March 8, 2010
+ |first = Christopher
+ |last = Blizzard
+ |accessdate = September 3, 2010
+}}&lt;/ref&gt;
+
+Tamarin continues to be used in [[Adobe Flash Player]], but it has not replaced [[SpiderMonkey (JavaScript engine)|SpiderMonkey]] as the [[JavaScript engine]] of Mozilla applications.
+
+The only part of Tamarin used in modern Mozilla applications (e.g. Firefox 3.5+) via [[SpiderMonkey (JavaScript engine)|SpiderMonkey]] is '''NanoJIT''', a module that's used to generate native code when performing [[just-in-time compilation]].&lt;ref&gt;{{cite web
+ |url=http://groups.google.com/group/mozilla.dev.tech.js-engine/msg/04e49d6407c33bd3
+ |title=State of Tamarin
+ |work=&lt;code&gt;mozilla.dev.tech.js-engine&lt;/code&gt; group
+ |publisher=[[Google Groups]]
+ |first = Graydon
+ |last = Hoare
+ |accessdate = September 3, 2010
+ |date = October 14, 2009
+}}&lt;/ref&gt;
+
+==What Tamarin is not==
+Adobe contributed code for its virtual machine and the [[Just-in-time compilation|JIT]] compiler. The JavaScript compiler (the program generating [[bytecode]] from JavaScript [[source code]]) was not contributed as part of Tamarin.
+
+Tamarin is not the same as Adobe's [[Flash Player]], which remains closed source. The virtual machine is only a part of Flash Player.
+
+==Related projects==
+Two projects related to Tamarin were announced on July 25, 2007 in [[Brendan Eich]]'s keynote at The Ajax Experience West: IronMonkey and ScreamingMonkey.&lt;ref&gt;{{cite web
+ |url = http://weblogs.mozillazine.org/roadmap/archives/2007/07/new_projects.html
+ |title = New Projects
+ |work = Brendan's Roadmap Updates
+ |first = Brendan
+ |last = Eich
+ |authorlink = Brendan Eich
+ |date = July 25, 2007
+ |accessdate = September 3, 2010
+ |publisher = MozillaZine
+}}&lt;/ref&gt;&lt;ref&gt;{{cite web
+ |url = http://ejohn.org/blog/the-browser-scripting-revolution/
+ |title = The Browser Scripting Revolution
+ |first = John
+ |last = Resig
+ |date = August 8, 2007
+ |work = John Resig Blog
+ |accessdate = September 3, 2010
+}}&lt;/ref&gt; IronMonkey is a project to map [[IronPython]] and [[IronRuby]] to Tamarin led by Seo Sanghyeon.&lt;ref&gt;{{cite web
+ |url=https://wiki.mozilla.org/index.php?title=Tamarin:IronMonkey&amp;oldid=65786
+ |title=Tamarin:IronMonkey
+ |work=MozillaWiki
+ |publisher = [[Mozilla Foundation]]
+ |date = August 20, 2007
+ |accessdate = September 3, 2010
+}}&lt;/ref&gt; ScreamingMonkey's goal is to allow Tamarin to run within non-Mozilla browsers (thus allowing them to understand JavaScript 2), starting with [[Internet Explorer]]. The project is led by Mark Hammond.&lt;ref&gt;{{cite web
+ |url = https://wiki.mozilla.org/index.php?title=Tamarin:ScreamingMonkey&amp;oldid=94625
+ |title = Tamarin:ScreamingMonkey
+ |work = MozillaWiki
+ |publisher = [[Mozilla Foundation]]
+ |date = May 28, 2008
+ |accessdate = September 3, 2010
+}}&lt;/ref&gt; Neither project had production-quality releases and their current status is unclear.
+
+==Etymology==
+Both SpiderMonkey and Tamarin fulfill closely related goals and so were both dubbed after monkeys (the [[spider monkey]] and the [[tamarin]], respectively).
+
+==References==
+{{Reflist|2}}
+
+==Further reading==
+* [http://weblogs.mozillazine.org/roadmap/archives/2006/11/project_tamarin.html &quot;Project Tamarin&quot;] - blog post by [[Brendan Eich]], Mozilla [[Chief Technology Officer|CTO]].
+* [http://www.hecker.org/mozilla/adobe-mozilla-and-tamarin &quot;Adobe, Mozilla, and Tamarin&quot;] - blog post by [[Frank Hecker]], Mozilla Foundation executive director.
+* [http://www.bluishcoder.co.nz/2008/02/quick-introduction-to-tamarin-tracing.html &quot;A Quick Introduction to Tamarin Tracing&quot;] - blog post by [[Chris Double]], Mozilla developer
+* [http://www.bluishcoder.co.nz/2008/02/implementing-native-methods-in-tamarin.html &quot;Implementing Native Methods in Tamarin Tracing&quot;] - blog post by Chris Double
+* [http://www.bluishcoder.co.nz/2008/05/extending-tamarin-tracing-with-forth.html &quot;Extending Tamarin Tracing with Forth&quot;] - blog post by Chris Double
+*[http://software.intel.com/sites/products/documentation/hpc/vtune/windows/jit_profiling.pdf Profiling Runtime Generated and Interpreted Code using the VTune Performance Analyzer]
+
+==External links==
+{{Portal|Free software}}
+* [http://www.mozilla.org/projects/tamarin/ Project page]
+* [https://developer.mozilla.org/en/docs/Tamarin Tamarin documentation] at developer.mozilla.org
+
+{{Mozilla projects}}
+{{ECMAScript}}
+
+&lt;!-- Interlang --&gt;
+
+{{DEFAULTSORT:Tamarin (Javascript Engine)}}
+&lt;!-- Categories --&gt;
+[[Category:Adobe Systems]]
+[[Category:Free software programmed in C++]]
+[[Category:Mozilla]]
+[[Category:Virtual machines]]
+[[Category:Beta software]]
+
+[[cs:Tamarin]]
+[[de:Tamarin (JIT)]]
+[[es:Tamarin (motor JavaScript)]]
+[[fr:Projet Tamarin]]</rev></revisions></page></pages></query></api>

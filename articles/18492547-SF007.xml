@@ -1,0 +1,101 @@
+<?xml version="1.0"?><api><query><redirects><r from="Remote login" to="Remote administration" /></redirects><pages><page pageid="1623141" ns="0" title="Remote administration"><revisions><rev xml:space="preserve">'''Remote administration''' refers to any method of controlling a [[computer]] from a remote location.
+
+Software that allows remote administration is becoming increasingly common and is often used when it is difficult or impractical to be physically near a system in order to use it, or in order to access web material that is not available in one's location, for example viewing the [[BBC iPlayer]] from outside the [[United Kingdom]]. A remote location may refer to a computer in the next room or one on the other side of the world. It may also refer to both legal and illegal (i.e. [[Hacker (computer security)|hacking]]) remote administration (see [[0wned]]).
+
+== Requirements ==
+=== Internet connection ===
+
+Any computer with an [[Internet]] [[Internet connection|connection]], [[Transmission Control Protocol|TCP]]/[[Internet Protocol|IP]] or on a [[Local Area Network]] can be remotely administered.
+
+For non-malicious  administration, the user must install or enable server software on the host system in order to be viewed. Then the user/client can access the host system from another [[computer]] using the installed [[software]].
+
+Usually, both systems should be connected to the internet, and the [[IP address]] of the host/server system must be known. Remote administration is therefore less practical if the host uses a [[dial-up]] [[modem]], which is not constantly online and often has a [[Dynamic IP]].
+
+=== Connecting ===
+
+When the client connects to the host computer, a window showing the [[Desktop environment|Desktop]] of the host usually appears. The client may then control the host as if he/she were sitting right in front of it.
+
+Certain versions of [[Windows XP]] have a built-in remote administration package called [[Remote Desktop Connection]]. A free cross-platform alternative is [[VNC]], which offers similar functionality.
+
+==Common tasks for which remote administration is used==
+===General===
+Controlling one's own computer from a remote location (e.g. to access the software on a personal computer from an internet cafÃ©).
+
+=== Shutdown ===
+
+*Shutting down or rebooting another computer over a [[Computer networking|network]]
+
+=== Accessing Peripherals ===
+
+*Using a network device, like printer
+*Retrieving streaming data, much like a [[CCTV]] system
+
+=== Modifying ===
+
+*Editing another computer's [[Windows registry|registry]] settings
+*Modifying system services
+*Installing software on another machine
+*Modifying logical groups
+
+=== Viewing ===
+
+*Remotely assisting others
+*Supervising computer or internet usage
+*Access to a remote system's &quot;[[Microsoft Management Console|Computer Management]]&quot; snap-in
+
+==Popular software==
+=== Windows ===
+
+[[Windows Server 2003]][[Windows Server 2008|/2008]], [[Tablet computer|Tablet PC]] Editions, and [[Windows Vista]] Ultimate, Enterprise and Business editions come with Microsoft's [[Microsoft Management Console]], [[Windows Registry]] Editor and various [[Command-line interface|command-line utilities]] that may be used to administrate a remote machine.  One form of remote administration is [[remote desktop software]], and Windows includes a [[Remote Desktop Protocol|Remote Desktop Connection]] client for this purpose.
+
+[[Windows XP]] comes with a built-in remote administration tools called Remote Assistance and Remote Desktop, these are restricted versions of the [[Windows Server 2003]] Terminal Services meant only for helping users and remote administration. With a simple hack/patch (derived from the beta version of [[Windows XP]]) it's possible to &quot;unlock&quot; XP to a fully featured Terminal Server, one good and easy example is [http://www.kood.org/terminal-server-patch/ SalaÂ´s Terminal Server Patch].  With this patch it is possible to make a terminal server out of Windows XP Professional, Multimeda Center, and Tablet PC Edition. Windows XP Home can be made to run a full-featured Terminal Service as well, with additional patching.  [http://www.mydigitallife.info/2008/06/13/convert-and-upgrade-windows-xp-home-to-professional-without-reinstalling/] [http://www.mydigitallife.info/2008/06/14/install-and-enable-remote-desktop-in-windows-xp-home-edition/].
+
+[[Windows Server 2003]] comes with built-in remote administration tools, including a [[web application]] and a simplified version of [[Terminal Services]] designed for Remote administration.
+
+[[Active Directory]] and other features found in [[Microsoft]]'s [[Windows NT]] [[Windows Server Domain|Domains]] allow for remote administration of computers that are members of the domain, including editing the [[Windows registry|registry]] and modifying system services and access to the system's &quot;Computer Management&quot; [[Microsoft Management Console]] snap-in.
+
+Some third-party [[remote desktop software]] programs perform the same job.
+
+Remote Server Administration Tools for [[Windows 7]] enables [[Information technology|IT]] administrators to manage roles and features that are installed on remote computers that are running [[Windows Server 2008]] R2
+
+=== Non-Windows ===
+
+[[Virtual Network Computing|VNC]] can be used for remote administration of [[computer]]s, however it is increasingly being used as an equivalent of [[Terminal Services]] and [[Remote Desktop Protocol]] for multi-user environments.
+
+[[Back Orifice]], whilst commonly used as a [[Script Kiddie]] tool, claims to be a remote-administration and system management tool. Critics have previously stated that the capabilities of the software require a very loose definition of what &quot;administration&quot; entails.
+
+[[Linux]], [[UNIX]] and [[BSD]] support remote administration via remote login, typically via [[Secure Shell|SSH]] (The use of the [[Telnet]] protocol has been phased out due to security concerns). [[X Window System|X-server]] connection forwarding, often tunnelled over SSH for security, allows [[GUI]] programs to be used remotely. VNC is also available for these operating systems.
+
+[[Apple Remote Desktop]] provides [[Macintosh]] users with remote administration capabilities.
+
+[[Scriptlogic]]'s Desktop Authority encompasses remote control as a part of remote management. This solution includes: secure web-based access to client machines, real-time diagnostics and troubleshooting, management of the file system, users/groups, registry, virtual memory, reboots and more - without user interaction, interactive remote monitoring and control of the desktop, supports clients running Windows 98 through XP/2003/Vista.
+
+NX and its Google fork NeatX are free graphical Desktop sharing solutions for the X Window System with Clients for different platforms like Linux, Windows and Mac OS X. There is also a enhanced commercial version of NX Server available.
+
+==Wireless Remote Administration==
+Remote administration software has recently started to appear on wireless devices such as the [[BlackBerry]], [[Pocket PC]], and [[Palm Pilot|Palm]] devices, as well as some [[mobile phone]]s.
+
+Generally these solutions do not provide the full remote access seen on [[software]] such as [[VNC]] or [[Terminal Services]], but do allow [[System administrator|administrators]] to perform a variety of tasks, such as [[Soft reboot|rebooting]] computers, resetting [[password]]s, and viewing system event logs, thus reducing or even eliminating the need for system administrators to carry a [[laptop]] or be within reach of the office.
+
+[[AetherPal]] and [[Netop Remote Control]] can be used for full wireless remote access and administration on [[Smartphone]] devices.
+
+==Security==
+{{Advert|date=December 2010}}
+Security is an important factor when choosing a remote support solution for any enterprise. Gone are the days{{Tone-inline|date=August 2011}} where security was just a matter of the highest degree of encryption. Today, a truly secure remote support solution will allow organizations to centrally control who can do what and where safe in the knowledge that when each remote session has finished it should be able to document what actually took place.{{Citation needed|date=August 2011}}
+
+For systems in environments that need to meet and maintain compliance requirements,&lt;ref&gt;{{cite web | title=Compliance and Security Challenges with Remote Control| publisher=[[SANS Analyst Program]] | url=http://www.sans.org/reading_room/analysts_program/netop-02-2011.pdf |format=[[portable document format|PDF]]}}&lt;/ref&gt; remote administration software must have strict security control. Such Software Must be able to exceed the [[Cyber security standards]].
+
+It is necessary to examine &lt;ref&gt;{{cite web | title= Insidersâ Guide to Evaluating Remote Control Software | publisher=[[Netop Business Solution]] | url=http://www.netop.com/fileadmin/netop/resources/products/administration/remote_control/whitepapers/Insiders%20Guide%20to%20Evaluating%20Remote%20Control%20Software.pdf |format=[[portable document format|PDF]]}}&lt;/ref&gt; the remote control software functionality that best serves organizations that need a highly secure tool that crosses all platforms and devices and is completely scalable in any environment. It will help IT professionals select a remote control solution that increases productivity and customer satisfaction, as well as enhances the flexibility of the IT organization and improves the companyâs risk profile.
+
+== References ==
+{{Reflist}}
+
+{{remote administration software}}
+
+[[Category:Internet Protocol based network software]]
+[[Category:Remote administration software]]
+[[Category:System administration]]
+
+[[de:Fernwartung]]
+[[es:AdministraciÃ³n remota]]
+[[fr:TÃ©lÃ©maintenance]]</rev></revisions></page></pages></query></api>

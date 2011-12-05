@@ -1,0 +1,279 @@
+<?xml version="1.0"?><api><query><pages><page pageid="360889" ns="0" title="ReactOS"><revisions><rev xml:space="preserve">{{Infobox OS
+| name                     = ReactOS
+| logo                     = [[File:ReactOS logo.svg|200px]]
+| screenshot               = [[File:ReactOS-CurrentVersion.png|300px]]
+| caption                  = ReactOS 0.3.10's implementation of the Windows [[Start Menu]]
+| developer                = ReactOS Foundation
+| family                   = [[Microsoft Windows]]-like ([[Windows NT]]-like)
+| source_model             = [[Free and open source software]]
+| released                 = 0.0.7 / {{start date|1998|7|20|}}
+| latest_release_version   = 0.3.13
+| latest_release_date      = {{release date and age|2011|3|22}}
+| latest_preview_version   = [http://www.reactos.org/getbuilds (daily)]
+| latest_preview_date      =
+| marketing_target         = Personal computing
+| frequently_updated       = Yes
+| programmed_in            = [[C (programming language)|C]], [[C++]]
+| kernel_type              = [[Hybrid kernel|Hybrid]]
+| ui                       = [[Graphical user interface|Graphical]] (ReactOS Explorer)
+| supported_platforms      = [[x86]]
+| updatemodel              = Re-Installation
+| license                  = [[GNU GPL]], [[LGPL]] and [[BSD licenses]]&lt;ref&gt;{{cite web|url=http://osrevolution.com/os-history/general-presentation-10 |title=General Presentation | publisher=OS Revolution |accessdate=2009-11-30}}&lt;/ref&gt;
+| language                 = Multi-lingual
+| supported_platforms      = [[IA-32]], [[x86-64]]
+| website                  = {{URL|http://www.reactos.org/}}
+| working_state            = Alpha
+}}
+
+'''ReactOS''' is an [[open source]] computer [[operating system]] intended to be [[application binary interface|binary compatible]] with [[application software]] and [[device driver]]s made for [[Microsoft Windows NT]] versions 5.x and up ([[Windows 2000]] and its successors). A spin-off of a previous attempt to clone Windows 95, development started in early 1998, and has continued with the incremental addition of features already found in Windows.
+
+ReactOS is primarily written in [[C (programming language)|C]], with some elements, such as ReactOS Explorer, written in [[C++]]. The project has been ported to the [[ARM architecture|ARM]] and [[AMD64]] processor architectures, and partially implements [[Architecture of Windows NT|Windows API]] functionality. The latter is assisted by including parts from the [[Wine (software)|Wine]] compatibility layer for [[Unix-like]] operating systems, but other functionality is implemented by the developers themselves. However, progress has been hampered by a lack of developers with the relevant skill-sets.
+
+An extensive code audit is in place to protect against legal problems, such that implementation of the Windows API is only done by means of a complete [[clean room design|clean room]] [[reverse engineering]] process. This has been in place following claims made in 2006 by a former developer that the project contains [[disassembler|disassembled]] [[Assembly language|assembly code]] from Windows, an allegation that has had no adverse legal consequences to the project.
+
+ReactOS has been noted for its information on undocumented Windows APIs and more generally as an open-source drop-in replacement for Windows. The project aim, as cited from itself, is to allow users of Windows to completely renounce use of proprietary commercial software without having to switch to an operating system that is not binary-compatible with Windows, such as [[Linux]]. However, a lack of corporate backers and dedicated developers have limited its efforts to realize this.
+
+==Etymology==
+The name ReactOS was coined by project founder Jason Filby, an [[Oracle Corporation|Oracle]] developer from [[Durban, South Africa]]. While the term &quot;OS&quot; stood for Operating System, the term &quot;react&quot; referred to the group's dissatisfaction with - and reaction to - Microsoft's [[Microsoft litigation|monopolistic position]].&lt;ref name=&quot;spiegel&quot;&gt;{{cite web |url=http://www.spiegel.de/netzwelt/tech/0,1518,287199,00.html |last=Sixtus |first=Von Mario |title=ReactOS: Das Nicht-Windows {{de icon}}|publisher=[[Der Spiegel|Spiegel Online]] |date=2004-02-20 |accessdate=2009-12-11}}&lt;/ref&gt;
+
+==History==
+===Early development: FreeWin95 to ReactOS===
+Around 1996, a group of [[free and open source software]] developers started a project called ''FreeWin95'' to implement a [[clone (computing)|clone]] of [[Windows 95]]. The project stalled in discussions of the design of the system.
+
+While FreeWin95 had started out with high expectations, there still hadn't been any builds released to the public by the end of 1997. As a result, the project members, led by coordinator Jason Filby, joined together to revive the project. The revived project sought to duplicate the functionality of Windows NT. In creating the new project, a new name, ''ReactOS'', was chosen. The project began development in February 1998 by creating the basis for a new NT kernel and basic drivers.&lt;ref&gt;{{Citation
+ | last = Loschwitz
+ | first = Martin
+ | title = Projects on the Move
+ | newspaper = [[Linux Magazine]]
+ | pages = 87
+ | date = March 2004
+ | url = https://www.linux-magazine.com/w3/issue/40/Free_Software_Projects.pdf
+ | accessdate = 2009-11-18
+}}
+&lt;/ref&gt;
+
+===Internal audit===
+A claim was made on January 17, 2006 by now former developer Hartmut Birr on the ReactOS Developers [[mailing list]] (ros-dev) that ReactOS contained code derived from [[disassembler|disassembling]] Microsoft Windows.&lt;ref&gt;{{cite mailing list|first=Hartmut |last=Birr |url=http://marc.info/?l=ros-dev&amp;m=118775346131642&amp;w=2 |title=Bye bye |date=January 18, 2006 |mailinglist=ros-dev |accessdate=2009-01-03}}&lt;/ref&gt; The code that Birr disputed involved the function BadStack in syscall.S&lt;ref&gt;{{cite web|url=http://svn.reactos.org/svn/reactos/trunk/reactos/ntoskrnl/ke/i386/syscall.S?revision=20935&amp;view=markup&amp;pathrev=20935#l_41 |title=BadStack in syscall.S |publisher=ReactOS |date=January 17, 2006 |accessdate=2009-11-16}}&lt;/ref&gt; as well as other unspecified items.&lt;ref&gt;{{cite mailing list|first=Hartmut |last=Birr |url=http://marc.info/?l=ros-dev&amp;m=118775346131646&amp;w=2 |title=Bye bye |date=January 18, 2006 |mailinglist=ros-dev |accessdate=2009-11-16}}&lt;/ref&gt; Comparing this function to disassembled binaries from Windows XP, Birr argued that the BadStack function was simply [[copypaste|copy-pasted]] from Windows XP, given that they were identical. Alex Ionescu, the author of the code, asserted that while the Windows XP binary in question was indeed disassembled and studied, the code was not merely copy-pasted, but reimplemented; the reason why the functions were identical, Ionescu claimed, was because there was only one possible way to implement the function.&lt;ref&gt;{{cite mailing list|first=Alex |last=Ionescu |url=http://marc.info/?l=ros-dev&amp;m=118775346131654&amp;w=2 |title=Bye bye |date=January 18, 2006 |mailinglist=ros-dev |accessdate=2009-11-16}}&lt;/ref&gt;
+
+On January 27, 2006, the developers responsible for maintaining the ReactOS code repository disabled access after a meeting was held to discuss the allegations. However, when approached by NewsForge, Microsoft declined to comment about the incident. Since ReactOS is a [[free and open source software]] development project, the claim triggered a negative reaction by the [[free software community]]; in particular, Wine barred several now inactive developers from providing contributions and formal high level cooperation between the two projects still remains difficult.&lt;ref name=&quot;suspend&quot;&gt;{{cite web|url=http://www.linux.com/archive/feature/51800 |first=Stephen |last=Feller |title=ReactOS suspends development for source code review |publisher=[[Linux.com]] |date=2006-02-01 |accessdate=2009-12-10}}&lt;/ref&gt; Contributions from several active ReactOS developers however have been accepted post-audit and low level cooperation for bug fixes still occur.
+
+In a statement on its website, ReactOS cited differing legal definitions of what constitutes clean-room reverse engineering as a cause for the conflict, as some countries, including the United States, require that reimplementation of disassembled code be written by someone other than the person having disassembled and examined the original code{{Citation needed|date=July 2011}}, whereas other countries allow both tasks to be performed by the same individual. Consequently, ReactOS clarified that its Intellectual Property Policy Statement requirements on clean room reverse engineering conform to US law. An internal source code [[audit]] was conducted to ensure that only clean room reverse engineering was used, and all developers were made to sign an agreement committing them to comply with the project's policies on reverse engineering.&lt;ref name=&quot;suspend&quot; /&gt; Contributors to its development were not affected by these events, and all access to the software development tools was restored shortly afterward. In September 2007, with the audit nearing completion, the audit status was removed from the ReactOS homepage. Though the audit was completed, specific details were not made public as it was only an internal effort to ensure compliance with the project's own policies.&lt;ref name=&quot;audit&quot;&gt;{{cite mailing list|first=Aleksey|last=Bragin|url=http://marc.info/?l=ros-dev&amp;m=119018479822866&amp;w=2|title=Audit|mailinglist=ros-dev |date=September 18, 2007|accessdate=2009-01-03}}&lt;/ref&gt;  Much of the assembly code that was allegedly copied have also been replaced as a natural progression in ReactOS development, with developers having reimplemented the functionality in C for portability reasons.
+
+==Version history==
+{| class=&quot;wikitable sortable&quot; align=&quot;right&quot;
+! Color
+! Meaning
+|-
+| style=&quot;background-color:#fa8072;&quot; | Red
+| Release no longer supported
+|-
+| style=&quot;background-color:#a0e75a;&quot; | Green
+| Current release
+|-
+| style=&quot;background-color:#87ceeb;&quot; | Blue
+| Future release
+|-
+|}
+
+{| class=&quot;wikitable sortable&quot;
+|-
+! System Version !! Release Date !! Release Information
+|-
+! 0.2.0
+| style=&quot;background-color:#fa8072;&quot; | 2004-01-25 || first release with working [[Graphical user interface|GUI]]
+|-
+! 0.2.1
+| style=&quot;background-color:#fa8072;&quot; | 2004-03-03
+| rowspan=&quot;7&quot; | bug fixes only
+|-
+! 0.2.2
+| style=&quot;background-color:#fa8072;&quot; | 2004-04-27
+|-
+! 0.2.3
+| style=&quot;background-color:#fa8072;&quot; | 2004-06-26
+|-
+! 0.2.4
+| style=&quot;background-color:#fa8072;&quot; | 2004-09-13
+|-
+! 0.2.5
+| style=&quot;background-color:#fa8072;&quot; | 2005-01-02
+|-
+! 0.2.6
+| style=&quot;background-color:#fa8072;&quot; | 2005-04-09
+|-
+! 0.2.7
+| style=&quot;background-color:#fa8072;&quot; | 2005-08-21
+|-
+! 0.2.8
+| style=&quot;background-color:#fa8072;&quot; | 2005-10-29 || VMWare detection, CSRSS rewrite
+|-
+! 0.2.9
+| style=&quot;background-color:#fa8072;&quot; | 2005-12-22 || bug fixes only
+|-
+! 0.3.0
+| style=&quot;background-color:#fa8072;&quot; | 2006-08-27 || first version to officially support networking
+|-
+! 0.3.1
+| style=&quot;background-color:#fa8072;&quot; | 2007-03-10 || program manager included, start of kernel rewrite
+|-
+! 0.3.2
+| style=&quot;background-color:#fa8072;&quot; | ''skipped'' || branch created but never released
+|-
+! 0.3.3
+| style=&quot;background-color:#fa8072;&quot; | 2007-09-12 || kernel and win32k improvements
+|-
+! 0.3.4
+| style=&quot;background-color:#fa8072;&quot; | 2008-01-22 || registry support rewrite, remote desktop client and Plug 'N' Play
+|-
+! 0.3.5
+| style=&quot;background-color:#fa8072;&quot; | 2008-06-30 || bug fixes only
+|-
+! 0.3.6
+| style=&quot;background-color:#fa8072;&quot; | 2008-08-06 || RTL support
+|-
+! 0.3.7
+| style=&quot;background-color:#fa8072;&quot; | 2008-11-04 || improved [[x86-64]]; MSVC, new stacks
+|-
+! 0.3.8
+| style=&quot;background-color:#fa8072;&quot; | 2009-02-04 || introduced PSEH and multipartition HDD support in LiveCD
+|-
+! 0.3.9
+| style=&quot;background-color:#fa8072;&quot; | 2009-04-26 || 24MB minimum RAM, faster hyperspace mapping, initial sound support
+|-
+! 0.3.10
+| style=&quot;background-color:#fa8072;&quot; | 2009-07-05 || initial SATA support, USB keyboard/mouse support, Paint clone, initial [[Visual C++|MSVC]].&lt;ref&gt;{{cite web|url=http://osrevolution.com/os-release/reactos-0-3-10 |title=ReactOS 0.3.10 | publisher=OS Revolution |accessdate=2009-12-09}}&lt;/ref&gt;&lt;ref&gt;{{cite web|url=http://www.osnews.com/story/21778/ReactOS_0_3_10_Released |first=Thom |last=Holwerda |title=ReactOS 0.3.10 Released |publisher=OSNews |date=2009-07-06 |accessdate=2009-12-09}}&lt;/ref&gt;
+|-
+! 0.3.11
+| style=&quot;background-color:#fa8072;&quot; | 2009-12-16 || kdcom rewrite; Chinese/Korean fonts; compatibility updates; sound system improvements
+|-
+! 0.3.12
+| style=&quot;background-color:#fa8072;&quot; | 2010-10-20 || trap handler rewrite; timer and message handling rewrite; [[Non-maskable interrupt|NMI]] support; [[Side-by-side assembly|SxS]] support; partial [[Emergency Management Services|EMS]] support&lt;ref&gt;{{cite web|url=http://www.osnews.com/story/23919/ReactOS_0_3_12_Released |first=Thom |last=Holwerda |title=ReactOS 0.3.12 Released |publisher=OSNews |date=2010-10-20 |accessdate=2010-11-08}}&lt;/ref&gt;
+|-
+! 0.3.13
+| style=&quot;background-color:#a0e75a;&quot; | 2011-03-22 || heap manager rewrite, improved SATA support, fixed graphics issues &lt;ref&gt;{{citation |url=http://www.reactos.org/wiki/0.3.13 |title=0.3.13 - ReactOS}}&lt;/ref&gt;
+|}
+
+==Development==
+ReactOS is primarily written in [[C (programming language)|C]], with some elements, such as ReactOS Explorer and sound stack, written in [[C++]]. The project relies on [[MinGW]] for compilation, and contributes to its development through the submission of patches to its components.&lt;ref name=&quot;waterloo&quot;/&gt;
+
+The developers aim to make the kernel more compatible with Windows NT version 5.2 ([[Windows Server 2003]]), the usermode APIs with Windows NT 6 ([[Windows Vista]]),&lt;ref&gt;{{cite web|url=http://www.osnews.com/story/21087/ReactOS_Targets_Windows_2003_Vista |title=ReactOS Targets Windows 2003, Vista |publisher=OSNews |date=2009-03-05}}&lt;/ref&gt; and to add support for more applications and hardware. [[DirectX]] support is undertaken through ReactX, an in-house implementation. 2D hardware-accelerated rendering is done natively, while other drawing functionality is redirected to OpenGL as a stopgap solution.&lt;ref name=&quot;2008review&quot; /&gt;
+
+Development progress is influenced by the size of the development team and the level of experience amongst them. As an estimate of the effort required to implement the Windows API, there are 1000 or so developers who worked on [[Windows 7]] alone, organized into 25 teams, with each team averaging 40 developers.&lt;ref&gt;{{cite web|url=http://blogs.msdn.com/e7/archive/2008/08/18/windows_5F00_7_5F00_team.aspx |first=Steven |last=Sinovsky |title=The Windows 7 Team |publisher=Engineering Windows 7, MSDN |date=2008-08-18 |accessdate=2009-12-09}}&lt;/ref&gt; {{As of|2011|09|02}}, in the ReactOS entry in [[Ohloh]], the page followed through the &quot;Very large, active development team&quot; link lists 33 developers who have contributed over a 12-month period and a [[wikt:cumulative|cumulative total]] of 104 present and former users who have contributed code to the project via [[Subversion (software)|Subversion]] since its inception.&lt;ref&gt;{{cite web|url=http://www.ohloh.net/p/reactos/ |title=ReactOS |publisher=Ohloh |accessdate=2011-09-02}}&lt;/ref&gt; In his presentation at Hackmeeting 2009 in Milan, ReactOS developer Michele C. noted that most of the developers learn about Windows architecture while working on ReactOS and have no prior knowledge.&lt;ref name=&quot;notwindows&quot;/&gt;
+
+===Dependencies===
+ReactOS makes use of code from other projects where possible, so that developers can avoid duplicating readily available functionality and focus on binary compatibility with Windows.
+
+====Wine====
+[[File:Wine on ReactOS.svg|thumb|400px|A simplified architecture diagram of ReactOS, with Wine dependencies indicated with the Wine logo.]]ReactOS uses portions of the [[Wine (software)|Wine]] project so that it can benefit from Wine's progress in implementing the [[Win32]] [[API]].&lt;ref&gt;{{cite web|url=http://wiki.winehq.org/Acknowledgements |title=Acknowledgements |publisher=Wine |accessdate=2009-11-15}}&lt;/ref&gt; Wine's NTDLL, USER32, KERNEL32, GDI32 and ADVAPI components cannot be used by ReactOS due to architectural differences, but the other parts of the code can be shared between both projects. Components that are not available from Wine, such as the kernel, are developed separately.&lt;ref name=&quot;waterloo&quot;&gt;{{cite speech|url=http://mirror.csclub.uwaterloo.ca/csclub/alex-ionescu.pdf |author=[http://www.alex-ionescu.com Ionescu, Alex] |title=The ReactOS Project â An Open Source OS Platform for Learning |location=[http://csclub.uwaterloo.ca/media/ReactOS%20-%20An%20Open%20Source%20OS%20Platform%20for%20Learning.html University of Waterloo, Canada] |date=2006-02-26 |accessdate=2009-12-10}}&lt;/ref&gt;&lt;ref name=&quot;notwindows&quot;&gt;{{cite conference|first=Michele |last=C. |title=ReactOS is (not) Windows |conference=Hackmeeting 2009 |conferenceurl=http://it.hackmeeting.org |location=Milan |date=19â21 June 2009 |accessdate=2009-12-09}}&lt;/ref&gt;
+
+Separately, the experimental Arwinss branch was created as an alternative means to improve USER32 and GDI32 support through an alternative implementation of the Win32 API. Whereas ReactOS's original Win32 subsystem was closely modeled after its equivalent in Windows, Arwinss combines the architecture of that subsystem with the corresponding implementation in Wine. To this end, Arwinss uses Wine's GDI32 and USER32 libraries with few changes to take fuller advantage of Wine's existing software compatibility. Arwinss also allows the user to optionally use a remote [[X Window System|X server]] instead of a local display.&lt;ref&gt;{{cite web|url=http://www.osnews.com/story/22750/ReactOS_Proposes_Radical_New_Win32_Subsystem |first=Thom |last=Holwerda |title=ReactOS Proposes Radical New Win32 Subsystem |publisher=OSNews |date=2010-01-18 |accessdate=2010-01-18}}&lt;/ref&gt;
+
+====Networking====
+As part of its participation in the [[Google Summer of Code]] held in 2011,&lt;ref&gt;{{cite web|url=http://www.google-melange.com/gsoc/project/google/gsoc2011/claudiu_mihail/8001 |title=TCP/IP diriver replacement for ReactOS, using lwIP |publisher=Google |accessdate=2011-08-09}}&lt;/ref&gt; ReactOS mentored a student project which integrated [[lwIP]] into the network stack.&lt;ref&gt;{{cite mailing list|last=Gutman |first=Cameron |mailinglist=lwip-devel |title=ReactOS is now using lwIP for TCP |url=http://lists.nongnu.org/archive/html/lwip-devel/2011-08/msg00010.html |date=2011-08-07 |accessdate=2011-08-09}}&lt;/ref&gt; This replaced a previous implementation built from an import of the [[Transmission Control Protocol|TCP]] portion of OSKit's port of the network stack in [[FreeBSD]], along with an internally developed implementation for packet-oriented protocols like [[Internet Protocol|IP]].&lt;ref&gt;{{cite web|url=http://www.networkperformancedaily.com/2007/03/an_interview_with_art_yerkes_n_1.html |title=An interview with Art Yerkes, Network Developer for the ReactOS Project |publisher=Network Performance Daily |date=2007-03-28 |accessdate=2010-02-22}}&lt;/ref&gt;
+
+====Other====
+[[FreeType]] is used for the rendering of fonts in the GUI, while [[Mesa 3D (OpenGL)|Mesa 3D]] provides [[OpenGL]] rendering.&lt;ref name=&quot;waterloo&quot;/&gt; [[Serial ATA]] drivers are provided by UniATA. The project has also experimented with using the FullFAT library in its rewrite of its [[File Allocation Table|FAT]] [[Installable File System]].&lt;ref&gt;{{cite web|url=http://www.fullfat-fs.co.uk/Features/Portability |first=James |last=Walmsley |title=Features - Portability |year=2009 |accessdate=2010-02-19}}&lt;/ref&gt;
+
+===Architecture support===
+ReactOS has been partially ported to the AMD64 and ARM architectures.&lt;ref name=&quot;2008review&quot;&gt;{{cite web|first=Thom |last=Holwerda |url=http://www.osnews.com/story/20790/ReactOS_Looking_Back_Upon_2008 |title=ReactOS: Looking Back Upon 2008 |publisher=OS News |date=2009-01-17 |accessdate=2009-12-10}}&lt;/ref&gt; Support for the [[Xbox]], a variant IA-32 architecture, was added through the use of an architecture-specific [[Hardware abstraction layer|HAL]],&lt;ref name=&quot;notwindows&quot;/&gt; although this, along with a port to PowerPC, are no longer actively maintained.&lt;ref name=&quot;chemnitz&quot;/&gt;
+
+==Usability==
+At Chemnitz 2010, the ReactOS development team considered ReactOS 0.3.12 as [[Alpha version|alpha-stage]] software, not feature-complete and not suitable for everyday use.&lt;ref name=&quot;chemnitz&quot;&gt;{{cite conference|url=http://chemnitzer.linux-tage.de/2010/vortraege/detail.html?idx=424 |first1=Matthias |last1=Kupfer |first2=Aleksey |last2=Bragin |title=ReactOS - Das zu Windows binÃ¤rkompatible Open-Source-Betriebssystem {{de icon}} |conference=Chemnitzer Linux-Tage |conferenceurl=http://chemnitzer.linux-tage.de/2010/info/ |location=Chemnitz, Germany |date=2010-03-14 |accessdate=2010-03-15}}&lt;/ref&gt; The kernel is incomplete, and only a few Windows applications run without problems. However, the operating system is considered quite stable, and has a very short installation and boot time.
+
+The future 0.4 release series will also be in alpha stage; the 0.5 release series will be marked as [[Beta version|beta]], suitable for everyday use but not subjected to thorough [[quality control]].
+
+==Reception==
+[[File:Alksnis-Bragin.jpg|thumb|ReactOS project coordinator Aleksey Bragin (left) shows ReactOS to [[Viktor Alksnis]].]] 
+[[File:Medvedev and WOOS based on ReactOS 2.jpg|thumb|[[Dmitry Medvedev]] is given a demonstration of ReactOS.]] Various people have acknowledged ReactOS and the implications of having a viable open-source drop-in replacement for Windows.
+
+In his column for [[Free Software Magazine]], David Sugar noted that ReactOS would allow the use of applications depending on older versions of Windows whose APIs have been deprecated. He also recognized its potential to expand the total deployed base of free software, and as a resource for developers wanting to know undocumented Windows APIs in the course of writing portable applications.&lt;ref&gt;{{cite web|url=http://www.freesoftwaremagazine.com/node/1474 |author=[http://www.freesoftwaremagazine.com/user/15 Sugar, David] |title=A reaction to ReactOS |publisher=[[Free Software Magazine]] |date=2006-01-31 |accessdate=2009-12-11}}&lt;/ref&gt; [[PC Magazine]] columnist [[John C. Dvorak]] remarked that the Windows NT architecture has remained largely the same to this day, making it an ideal candidate for cloning, and believes that ReactOS could be &quot;a bigger threat than Linux to Microsoft's dominance&quot;.&lt;ref&gt;{{cite web|url=http://www.pcmag.com/article2/0,2817,2290313,00.asp |first=John C. |last=Dvorak |title=What A New OS Needs |publisher=[[PC Magazine]] |date=2008-04-04 |accessdate=2009-12-11}}&lt;/ref&gt; Indeed, Aleksey Bragin has mentioned in a comment to German weekly magazine [[Der Spiegel]] that ReactOS is directed at Windows users who want to renounce use of proprietary commercial software without having to switch to Linux.&lt;ref name=&quot;spiegel&quot;/&gt;
+
+However, ReactOS has been observed to have challenges. In response to Dvorak's column, [[ZDNet]] technology journalist Dana Blankenhorn has noted that a lack of corporate sponsors and partners has currently rendered the project harmless to Microsoft.&lt;ref&gt;{{cite web|url=http://blogs.zdnet.com/open-source/?p=2425 |author=[http://blogs.zdnet.com/bio.php#blankenhorn Blankenhorn, Dana] |title=ReactOS no threat to Windows |publisher=[[ZDNet]] |date=2008-05-13 |accessdate=2009-12-22}}&lt;/ref&gt;&lt;ref&gt;{{cite web|url=http://talkback.zdnet.com/5208-10535-0.html?forumID=1&amp;threadID=47591&amp;messageID=886507 |author=[http://blogs.zdnet.com/bio.php#blankenhorn Blankenhorn, Dana] |title=ReactOS needs a channel |publisher=[[ZDNet]] |date=2008-05-13 |accessdate=2009-12-22}}&lt;/ref&gt; Echoing this, Thom Holwerda of OSNews categorized ReactOS under a family of hobby operating systems that are maintained only by small groups of developers working in their spare time, and lack the financial support of more mainstream operating systems as well as the legacy of formerly mainstream ones such as [[RISC OS]].&lt;ref&gt;{{cite web|url=http://www.osnews.com/story/22638/My_OS_Is_Less_Hobby_than_Yours |first=Thom |last=Holwerda |title=My OS Is Less Hobby Than Yours |publisher=OSNews |date=2009-12-20 |accessdate=2009-12-22}}&lt;/ref&gt;
+
+Demonstrations of the operating system have been given, mainly to Russian political figures. [[Viktor Alksnis]] has met with current project coordinator Aleksey Bragin, who gave a presentation and demonstration of the project, showing ReactOS running with [[Total Commander]] and [[Mozilla Firefox]].&lt;ref&gt;{{cite web|url=http://v-alksnis2.livejournal.com/32900.html |title=ÐÐ¸ÐºÑÐ¾Ñ ÐÐ¼Ð°Ð½ÑÐ¾Ð²Ð¸Ñ ÐÐ»ÐºÑÐ½Ð¸Ñ â ÐÐ½Ð°ÐºÐ¾Ð¼ÑÑÐ²Ð¾ Ñ Ð¿ÑÐ¾ÐµÐºÑÐ¾Ð¼ ReactOS {{ru icon}} |first=Viktor |last=Alksnis |date=2007-06-06 |accessdate=2009-12-11}}&lt;/ref&gt; [[Dimitry Medvedev]] was also given a demonstration during a visit as [[President of Russia]] to a high school in Verhnerusskoe, [[Stavropol]], attended by one of the development team members.&lt;ref name=&quot;medvedev&quot;&gt;{{cite news|url=http://www.bbc.co.uk/news/technology-14899507 |title=Russian President Medvedev asked to fund Windows clone |agency=[[BBC News]] |date=2011-09-13 |accessdate=2011-09-14}}&lt;/ref&gt;
+
+==Related projects==
+* ReactOS shares some dependencies with [[Wine (software)|Wine]].
+* Other related projects are [[Samba (software)|Samba]]/[[Samba TNG]], which implement [[Local Security Authority Subsystem Service|LSASS]], [[Security Account Manager|SAM]], NETLOGON, [[Print spooling]] and other Windows network services.
+* A more distant project at the architectural level is the Linux Unified Kernel which intends to be binary-compatible with application software and device drivers made for Microsoft Windows and Linux. This kernel imports all the key features of the Windows kernel into the Linux equivalent to support both Linux and Windows applications and device drivers.
+* [[NDISwrapper]] recreated a partial Windows NT kernel inside a Linux Kernel making it possible to execute modern Windows drivers inside the NT kernel box. NDISWrapper consists of a NTOSKRNL API, a basic [[Windows Driver Model|WDM]] controller, and a set of Windows call wrappers such as Wireless/NDIS/USB/PnP to Linux APIs. NDISWrapper is not limited to execute only NDIS drivers; other WDM drivers can be used as long as the driver does not call a non implemented Windows API.
+* Independently of but roughly simultaneously with the NDISwrapper project, Bill Paul of Wind River Systems developed a similar system, known as Project Evil or The NDISulator, for FreeBSD. It has since been ported to NetBSD, but not OpenBSD, due to the latter's anti-[[binary blob]] policy. The NDISulator lacks some of the functionality of NDISwrapper, such as USB support.
+* [[NTFS-3G]], NTFS driver for Linux, [[Mac OS X]], [[FreeBSD]], [[NetBSD]], [[OpenSolaris]], [[QNX]], [[Haiku (operating system)|Haiku]], and other operating systems.
+* [http://woos.es WOOS] project is based on ReactOS code.
+
+==System requirements==
+* x86-compatible processor, Pentium or later
+* 24 MB RAM&lt;ref&gt;{{cite web|url=http://blog.internetnews.com/skerner/2009/04/reactos-039-improves-open-sour.html |first=Sean Michael |last=Kerner |publisher=InternetNews |title=ReactOS 0.3.9 improves open source Windows clone |date=2009-04-27 |accessdate=2009-12-09}}&lt;/ref&gt; (optimal 128MB)
+* IDE hard drive of at least 150 MB
+* FAT16/FAT32 Boot partition
+* 2 MB VGA graphics adapter
+* CD-ROM drive
+* Standard keyboard
+* PS/2 Compatible mouse or Microsoft Mouse-compatible serial mouse&lt;ref&gt;{{cite web|url=http://firefox.org/news/articles/1399/1/ReactOS-Bringing-Power-to-the-People/Page1.html |first=Barbara |last=Mountjoy |title=ReactOS: Bringing Power to the People |publisher=Firefox News |date=2008-04-17 |accessdate=2009-12-09}}&lt;/ref&gt;
+
+==See also==
+{{Portal|Free software}}
+* [[coLinux]]
+* [[E/OS]]
+* [[Freedows OS]]
+* [[HX DOS Extender]]
+* [[Binary code compatibility]]
+
+== References ==
+
+{{refs|30em}}
+
+==External links==
+{{Commons}}
+* {{Official website|http://www.reactos.org/}}
+* {{sourceforge|reactos}}
+* [http://www.foxplanet.de/explorer/index.html ReactOS Explorer]
+* [http://neosmart.net/gallery/album/view/os/ROS/ Screenshots of ReactOS]
+* [http://www.winehq.org/interview/14 Interview with Steven Edwards of ReactOS and Wine] (WineHQ)
+* [http://neosmart.net/blog/2006/reactos-the-next-windows/ Detailed review of ReactOS]
+* [http://www.freesoftwaremagazine.com/node/1474 A reaction to ReactOS â David Sugar]
+
+{{FLOSS}}
+{{Operating System}}
+
+{{good article}}
+
+{{DEFAULTSORT:Reactos}}
+[[Category:Alpha software]]
+[[Category:Free software programmed in C]]
+[[Category:Free software programmed in C++]]
+[[Category:Free software operating systems]]
+[[Category:Window-based operating systems]]
+[[Category:Software derived from or incorporating Wine]]
+
+[[ar:Ø±ÙØ§ÙØª Ø£Ù Ø¥Ø³]]
+[[bg:ReactOS]]
+[[ca:ReactOS]]
+[[cs:ReactOS]]
+[[de:ReactOS]]
+[[et:ReactOS]]
+[[el:ReactOS]]
+[[es:ReactOS]]
+[[fr:ReactOS]]
+[[ko:ReactOS]]
+[[id:ReactOS]]
+[[it:ReactOS]]
+[[he:ReactOS]]
+[[lt:ReactOS]]
+[[hu:ReactOS]]
+[[mr:à¤°à¤¿à¤âà¥à¤à¥à¤à¤à¤à¤¸]]
+[[ms:ReactOS]]
+[[nl:ReactOS]]
+[[ja:ReactOS]]
+[[no:ReactOS]]
+[[pl:ReactOS]]
+[[pt:ReactOS]]
+[[ro:ReactOS]]
+[[ru:ReactOS]]
+[[simple:ReactOS]]
+[[sk:ReactOS]]
+[[fi:ReactOS]]
+[[sv:ReactOS]]
+[[tr:ReactOS]]
+[[uk:ReactOS]]
+[[zh:ReactOS]]</rev></revisions></page></pages></query></api>

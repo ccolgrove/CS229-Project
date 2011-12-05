@@ -1,0 +1,299 @@
+<?xml version="1.0"?><api><query><pages><page pageid="32353" ns="0" title="Virtual machine"><revisions><rev xml:space="preserve">A '''virtual machine''' ('''VM''') is a &quot;completely isolated guest operating system installation within a normal host operating system&quot;.&lt;ref&gt;{{Cite web|url=http://www.griffincaprio.com/blog/2006/08/virtual-machines-virtualization-vs-emulation.html |title=Virtual Machines: Virtualization vs. Emulation |accessdate=2011-03-11 }}&lt;/ref&gt; Modern virtual machines are implemented with either [[software emulation]] or [[Virtualization#Hardware|hardware virtualization]] or (in the most cases) both together.
+
+==VM Definitions==
+
+A virtual machine (VM) is a software implementation of a machine (i.e. a computer) that executes programs like a physical machine. Virtual machines are separated into two major categories, based on their use and degree of correspondence to any real machine. A system virtual machine provides a complete [[system platform]] which supports the execution of a complete [[operating system]] (OS). In contrast, a process virtual machine is designed to run a single [[computer program|program]], which means that it supports a single [[process (computing)|process]]. An essential characteristic of a virtual machine is that the software running inside is limited to the resources and abstractions provided by the virtual machineâit cannot break out of its virtual world.
+
+A virtual machine was originally defined by [[Popek and Goldberg virtualization requirements|Popek and Goldberg]] as &quot;an efficient, isolated duplicate of a real machine&quot;. Current use includes virtual machines which have no direct correspondence to any real hardware.&lt;ref name=&quot;Smith_Nair_05&quot;&gt;{{cite journal
+  | last = Smith
+  | first = James E.
+  | authorlink =
+  | coauthors = Nair, Ravi
+  | title = The Architecture of Virtual Machines
+  | journal = Computer
+  | volume = 38
+  | issue = 5
+  | pages = 32â38
+  | publisher = IEEE Computer Society
+  | location =
+  | date =
+  | url =
+  | doi = 10.1109/MC.2005.173
+  | id =
+  | accessdate = 
+  | year = 2005
+}}&lt;/ref&gt;
+
+===System virtual machines===
+{{see also|Hardware virtualization|Comparison of platform virtual machines}}
+
+System virtual machines
+* multiple OS environments can co-exist on the same computer, in strong isolation from each other
+* the virtual machine can provide an [[instruction set]] architecture (ISA) that is somewhat different from that of the real machine
+* application provisioning, maintenance, high availability and disaster recovery&lt;ref&gt;http://www.vmware.com/solutions/business-critical-apps/&lt;/ref&gt;
+
+The main disadvantages of VMs are:
+* a virtual machine is less efficient than a real machine when it accesses the hardware indirectly
+* when multiple VMs are concurrently running on the same physical host, each VM may exhibit a varying and unstable performance (Speed of Execution, and not results), which highly depends on the workload imposed on the system by other VMs, unless proper techniques are used for [[temporal isolation among virtual machines]].
+
+Multiple VMs each running their own operating system (called guest operating system) are  frequently used in server consolidation, where different services that used to run on individual machines to avoid interference are instead run in separate VMs on the same physical machine.
+
+The desire to run multiple operating systems was the original motivation for virtual machines, as it allowed time-sharing a single computer between several single-tasking Operation Systems. In some respects, a system virtual machine can be considered a generalization of the concept of [[virtual memory]] that historically preceded it. IBM's [[CP/CMS]], the first systems to allow [[full virtualization]], implemented [[time sharing]] by providing each user with a single-user operating system, the [[Conversational Monitor System|CMS]]. Unlike virtual memory, a system virtual machine allowed the user to use privileged instructions in their code. This approach had certain advantages, for instance it allowed users to add input/output devices not allowed by the standard system.&lt;ref&gt;Smith and Nair, pp. 395â396&lt;/ref&gt;
+
+The guest OSes do not have to be compliant with the hardware making it possible to run different OSes on the same computer (e.g., [[Microsoft Windows]] and [[Linux]], or older versions of an OS to support software that has not yet been ported to the latest version). The use of virtual machines to support different guest OSes is becoming popular in [[embedded systems]]; a typical use is to support a [[real-time operating system]] at the same time as a high-level OS such as Linux or Windows.
+
+Another use is to [[Sandbox (software development)|sandbox]] an OS that is not trusted, possibly because it is a system under development. Virtual machines have other advantages for OS development, including better debugging access and faster reboots.&lt;ref&gt;http://www.vmwarez.com/2006/05/super-fast-server-reboots-another.html&lt;/ref&gt;
+
+===Process virtual machines===
+&lt;!-- This section is linked from [[.NET Framework]] --&gt;
+{{see also|Application virtualization|Run-time system|Comparison of application virtual machines}}
+
+A process VM, sometimes called an ''application virtual machine'', runs as a normal application inside a host OS and supports a single process. It is created when that process is started and destroyed when it exits. Its purpose is to provide a [[system platform|platform]]-independent programming environment that abstracts away details of the underlying hardware or operating system, and allows a program to execute in the same way on any platform.
+
+A process VM provides a high-level abstraction â that of a [[high-level programming language]] (compared to the low-level ISA abstraction of the system VM). Process VMs are implemented using an [[Interpreter (computing)|interpreter]]; performance comparable to compiled programming languages is achieved by the use of [[just-in-time compilation]].
+
+This type of VM has become popular with the [[Java (programming language)|Java programming language]], which is implemented using the [[Java virtual machine]]. Other examples include the [[Parrot virtual machine]], which serves as an [[abstraction layer]] for several interpreted languages, and the [[.NET Framework]], which runs on a VM called the [[Common Language Runtime]]. 
+
+A special case of process VMs are systems that abstract over the communication mechanisms of a (potentially heterogeneous) [[computer cluster]]. Such a VM does not consist of a single process, but one process per physical machine in the cluster. They are designed to ease the task of programming parallel applications by letting the programmer focus on algorithms rather than the communication mechanisms provided by the interconnect and the OS. They do not hide the fact that communication takes place, and as such do not attempt to present the cluster as a single parallel machine.
+
+Unlike other process VMs, these systems do not provide a specific programming language, but are embedded in an existing language; typically such a system provides bindings for several languages (e.g., [[C (programming language)|C]] and [[FORTRAN]]). Examples are PVM ([[Parallel Virtual Machine]]) and MPI ([[Message Passing Interface]]). They are not strictly virtual machines, as the applications running on top still have access to all OS services, and are therefore not confined to the system model provided by the &quot;VM&quot;.
+
+==Techniques==
+===Emulation of the underlying raw hardware (native execution) ===
+This approach is described as [[full virtualization]] of the hardware, and can be implemented using a Type 1 or Type 2 [[hypervisor]]. (A Type 1 hypervisor runs directly on the hardware; a Type 2 hypervisor runs on another operating system, such as [[Linux]]). Each virtual machine can run any operating system supported by the underlying hardware. Users can thus run two or more different &quot;guest&quot; operating systems simultaneously, in separate &quot;private&quot; virtual computers.
+
+The pioneer system using this concept was IBM's [[IBM CP-40|CP-40]], the first (1967) version of IBM's [[CP/CMS]] (1967â1972) and the precursor to IBM's [[VM (operating system)|VM family]] (1972âpresent). With the VM architecture, most users run a relatively simple [[interactive computing]] single-user operating system, [[Conversational Monitor System|CMS]], as a &quot;guest&quot; on top of the VM control program ([[VM-CP]]). This approach kept the CMS design simple, as if it were running alone; the control program quietly provides multitasking and resource management services &quot;behind the scenes&quot;. In addition to CMS, VM users can run any of the other IBM operating systems, such as [[MVS]] or [[z/OS]]. [[z/VM]] is the current version of VM, and is used to support hundreds or thousands of virtual machines on a given mainframe. Some installations use [[Linux for zSeries]] to run [[Web server]]s, where [[Linux]] runs as the operating system within many virtual machines.
+
+Full virtualization is particularly helpful in operating system development, when experimental new code can be run at the same time as older, more stable, versions, each in a separate virtual machine. The process can even be [[Recursion#Recursion in computing|recursive]]: [[IBM]] debugged new versions of its virtual machine operating system, [[VM (operating system)|VM]], in a virtual machine running under an older version of VM, and even used this technique to simulate new hardware.&lt;ref&gt;See [[History of CP/CMS]] for IBM's use of virtual machines for operating system development and simulation of new hardware&lt;/ref&gt;
+
+The standard [[x86]] [[processor architecture]] as used in the modern PCs does not actually meet the [[Popek and Goldberg virtualization requirements]]. Notably, there is no execution mode where all sensitive machine instructions always trap, which would allow per-instruction virtualization. 
+
+Despite these limitations, several software packages have managed to provide [[x86 virtualization|virtualization on the x86 architecture]], even though [[dynamic recompilation]] of privileged code, as first implemented by [[VMware]], incurs some performance overhead as compared to a VM running on a natively virtualizable architecture such as the IBM System/370 or [[Motorola 68020|Motorola MC68020]]. By now, several other software packages such as [[Virtual PC]], [[VirtualBox]], [[Parallels Workstation]] and [[Virtual Iron]] manage to implement virtualization on x86 hardware.
+
+[[Intel]] and [[AMD]] have introduced features to their x86 processors to enable virtualization in hardware.
+
+As well as virtualization of the resources of a single machine, multiple independent nodes in a cluster can be combined and accessed as a single virtual [[Non-Uniform Memory Access|NUMA]] machine  &lt;ref&gt;Matthew Chapman and Gernot Heiser. vNUMA: A virtual shared-memory multiprocessor. Proceedings of the 2009 USENIX Annual Technical Conference, San Diego, CA, USA, June, 2009 [http://www.ertos.nicta.com.au/publications/papers/Chapman_Heiser_09.pdf]&lt;/ref&gt;.
+
+===Emulation of a non-native system===
+Virtual machines can also perform the role of an [[emulator]], allowing software applications and [[operating systems]] written for another [[computer processor]] architecture to be run.
+
+Some virtual machines emulate hardware that only exists as a detailed specification. For example:
+
+* One of the first was the [[p-code machine]] specification, which allowed programmers to write [[Pascal programming language|Pascal]] [[Computer program|programs]] that would run on any computer running virtual machine software that correctly implemented the specification.
+* The specification of the [[Java virtual machine]].
+* The [[Common Language Infrastructure]] virtual machine at the heart of the [[.NET Framework|Microsoft .NET]] initiative.
+* [[Open Firmware]] allows plug-in hardware to include boot-time diagnostics, configuration code, and device drivers that will run on any kind of CPU.
+
+This technique allows diverse computers to run any software written to that specification; only the virtual machine software itself must be written separately for each type of computer on which it runs.
+
+===Operating system-level virtualization===
+
+{{main|Operating system-level virtualization}}
+
+[[Operating system-level virtualization]] is a server [[Platform virtualization|virtualization]] technology which virtualizes [[Server (computing)|server]]s on an [[operating system]] (kernel) layer. It can be thought of as partitioning: a single physical server is sliced into multiple small partitions (otherwise called virtual environments (VE), [[virtual private server]]s (VPS), guests, zones, etc.); each such partition looks and feels like a real server, from the point of view of its users.
+
+For example, Solaris Zones supports multiple guest OSes running under the same OS (such as Solaris 10). All guest OSes have to use the same kernel level and cannot run as different OS versions. Solaris native Zones also requires that the host OS be a version of Solaris;  other OSes from other manufacturers are not supported.{{Citation needed|date=September 2008}},however you need to use Solaris Branded zones to use another OSes as zones.
+
+Another example is [[Workload_partitions#System_WPAR|System Workload Partitions]] (WPARs), introduced in the IBM AIX 6.1 operating system. System WPARs are software partitions running under one instance of the global AIX OS environment.
+
+The operating system level architecture has low overhead that helps to maximize efficient use of server resources. The virtualization introduces only a negligible overhead and allows running hundreds of [[virtual private server]]s on a single physical server. In contrast, approaches such as [[full virtualization]] (like [[VMware]]) and [[paravirtualization]] (like [[Xen]] or [[User-mode Linux|UML]]) cannot achieve such level of density, due to overhead of running multiple kernels. From the other side, operating system-level virtualization does not allow running different operating systems (i.e. different kernels), although different libraries, distributions etc. are possible.
+
+==List of hardware with virtual machine support==
+
+* [[Alcatel-Lucent]] [[3B21D|3B20D/3B21D]] emulated on [[commercial off-the-shelf]] computers with 3B2OE or 3B21E system
+* [[AMD-V]] (formerly code-named Pacifica)
+* [[ARM architecture|ARM TrustZone]]
+* Boston Circuits gCore (grid-on-chip) with 16 [[ARC International|ARC]] 750D cores and Time-machine hardware virtualization module.
+* [[Freescale]] [[PowerPC]] MPC8572 and MPC8641D
+* [[IBM]] [[System/370]], [[System/390]], and [[zSeries]] mainframes
+* [[IBM Power Systems]]
+* [[Intel VT-x]] (formerly code-named Vanderpool)
+* [[Sun Microsystems]] sun4v (UltraSPARC [[UltraSPARC T1|T1]] and [[UltraSPARC T2|T2]]) â utilized by [[Logical Domains]]
+{{see also|x86 virtualization#Hardware support}}
+* [[HP]] vPAR and cell based [[HP nPar (Hard Partitioning)|nPAR]]
+* [[GE]] Project MAC then
+* [[Honeywell]] Multics systems
+* [[Honeywell]] 200/2000 systems Liberator replacing IBM 14xx systems, Level 62/64/66 GCOS
+* [[IBM]] System/360 Model 145 Hardware emulator for Honeywell 200/2000 systems
+* [[RCA]] Spectra/70 Series emulated IBM System/360
+* [[NAS]] CPUs emulated IBM and Amdahl machines
+* [[Honeywell]] Level 6 minicomputers emulated predecessor 316/516/716 minis
+* [[Xerox]] Sigma 6 CPUs were modified to emulate GE/Honeywell 600/6000 systems
+
+==List of virtual machine software==
+{{col-begin}}
+{{col-2}}
+;Process (application) virtual machine software
+* [[Baan]] Bshell Virtual Machine, Baan 4GL
+* [[Common Language Infrastructure]], [[C Sharp (programming language)|C#]], [[Visual Basic .NET]], [[J Sharp|J#]], [[C++/CLI]] (formerly [[Managed Extensions for C++|Managed C++]])
+* [[Dalvik virtual machine]], part of [[Android (operating system)|Android]] operating systems
+*  Dis, [[Inferno (operating system)|Inferno]] operating system and its [[Limbo (programming language)|Limbo]] language
+* [[DOSBox]]
+* [[EiffelStudio]] for the [[Eiffel (programming language)|Eiffel]] language
+* [[Erlang (programming language)|Erlang]] language
+* [[Forth virtual machine]], [[Forth (programming language)|Forth]]
+* [[Glulx]], [[Glulx]], [[Z-machine|Z-code]]
+* Hec, [[Bytecode|Hasm Assembler]]
+* [[Java Virtual Machine]], [[Java (programming language)|Java]], [[Nice (programming language)|Nice]], [[NetRexx]], [[Scala (programming language)|Scala]], [[Groovy (programming language)|Groovy]], [[Clojure]], [[JRuby]]
+* [[Low Level Virtual Machine]] (LLVM), currently [[C (programming language)|C]], [[C++]], Stacker
+* [[Lua (programming language)|Lua]]
+* [[Macromedia Flash Player]], [[SWF]]
+* Memory Array Redcode Simulator (MARS), virtual machine that executes [[Corewars]] programs
+* [[MMIX]], MMIXAL
+* Neko virtual machine, currently [[Neko (programming language)|Neko]] and [[haXe]]
+* [[O-code machine]], [[BCPL]]
+* [[p-code machine]], [[Pascal (programming language)|Pascal]]
+* [[Parrot virtual machine|Parrot]], [[Perl 6]]
+* [[Perl]] virtual machine, Perl
+* [[CPython]], [[Python (programming language)|Python]]
+* [[YARV]], [[Ruby MRI]]
+* [[Rubinius]], [[Ruby (programming language)|Ruby]]
+* [[ScummVM]], [[Scumm]]
+* [[SECD machine]], [[ISWIM]], [[Lispkit Lisp]]
+* [[Sed]] the stream-editor can also be seen as a VM with 2 storage spaces
+* [[Smalltalk]] virtual machine, Smalltalk language
+** [[Squeak]] virtual machine, Squeak language
+* [[SQLite]] virtual machine, SQLite opcodes
+* [[SWEET16]]
+* [[Tamarin (JavaScript engine)]], ActionScript VM in Flash 9
+* [[TrueType]] virtual machine, TrueType
+* [[V8 (JavaScript engine)]], JavaScript VM
+* [[Valgrind]], checking of memory accesses and leaks in [[x86]]/[[x86-64]] code under [[Linux]]
+* [[Virtual Processor]] (VP) from [[Tao Groumadarchodp]] ([[United Kingdom|UK]]).
+* [[VX32]] virtual machine, application-level virtualization for native code
+* Waba, virtual machine for small devices, similar to Java
+* [[Warren Abstract Machine]], [[Prolog]], [[Computer Sciences Corporation|CSC]] [[GraphTalk]]
+* [[Z-machine]], [[Z-machine|Z-Code]]
+* [[Zend Engine]], [[PHP]]
+* [[libJIT|libJIT Just-In-Time compilation library]], [[libJIT|libJIT bytecode]]
+{{col-2}}
+;System (hardware) virtual machine software
+* [[ATLAS Transformation Language]] (ATL), a [[Model Transformation Language|MTL]] virtual machine
+* [[Bochs]], portable open source x86 and AMD64 PCs emulator
+* [[CHARON-AXP]], virtualizes [[AlphaServer]] to migrate OpenVMS or Tru64 applications to x86 hardware
+* [[CHARON-VAX]], virtualizes [[PDP-11]] or [[VAX]] hardware to migrate OpenVMS or Tru64 applications to x86 or HP integrity hardware
+* [[CoLinux]] Open Source Linux inside Windows
+* [[CoWare]] [[Virtual Platform]]
+* [[Denali (operating system)|Denali]], uses paravirtualization of x86 for running para-virtualized PC operating systems.
+* [[Hercules emulator]], free System/370, ESA/390, z/Mainframe
+* [[Kernel-based Virtual Machine|KVM]]
+* [[Logical Domains]]
+* [[LynxSecure]] uses the [[Multiple Independent Levels of Security|MILS architecture]] to provide high assurance for embedded systems on x86
+* [[Windows Virtual PC]] (formerly Microsoft Virtual PC) and [[Microsoft Virtual Server]]
+* [[Oracle VM]]
+* [[OVPsim]] is a freely available virtual platform simulator designed to simulate complex multiprocessor systems at very high speeds
+* [[Palacios]] is an OS independent embeddable VMM, it is an open source virtual machine monitor for modern architectures
+* [[Parallels Workstation]], virtualizes x86 to run unmodified PC operating systems
+* [[Parallels Desktop for Mac]], virtualizes x86 to run virtual machines on Mac OS X
+* [[QEMU]], is a simulator based on a virtual machine
+* [[SheepShaver]]
+* [[Simics]]
+* [[Sun xVM]]
+* [[SVISTA]]
+* [[twoOStwo]]
+* [[User-mode Linux]]
+* [[VirtualBox]]
+* [[Virtual Iron]] (Virtual Iron 3.1)
+* [[VM (Operating system)|VM]] from [[International Business Machines|IBM]]
+* [[VMLite]]
+* [[VMware]] (ESX Server, Fusion, Virtual Server, Workstation, Player and ACE)
+* [[Xen]] (Opensource)
+* IBM POWER systems
+
+; Operating system level virtualization software
+* [[Microsoft Hyper-V]]
+* [[OpenVZ]]
+* [[FreeVPS]]
+* [[Linux-VServer]]
+* [[FreeBSD Jail]]s
+* [[Solaris Containers]]
+* AIX [[Workload Partitions]]
+* [[LXC]]
+{{col-end}}
+
+===Extended descriptions of selected virtualization software===
+
+The following software products can virtualize hardware so that several operating systems can share it.
+
+*[[Windows 2008 R2 Hyper-V]] provides x64 type 1 virtualization.
+*[[Adeos]] is a [[hardware abstraction layer]] that can be loaded as a [[Module (Linux)|Kernel Module]] in [[Linux]].  It allows the loading of a real-time kernel as a module, at the same time as Linux but with higher priority.
+*[[Denali (operating system)|Denali]] uses [[paravirtualisation]] to provide high-performance virtual machines on x86 computers.  Denali's virtual machines support specialised minimal OSs for Internet services.  The system can scale to thousands of virtual machines. Denali does not preserve the application binary interface (ABI), and so applications must be recompiled to run within a library operating system; in this sense it is similar to the [[Exokernel]].
+*OKL4 from [[Open Kernel Labs]] is designed for use in embedded systems and is primarily deployed in [[mobile phone]]s. It is the only commercial hypervisor employing [[capability-based security]].
+*[[OpenVZ]] provides operating system level server virtualization, built on Linux.
+*[[Parallels, Inc.|Parallels]] virtualizes x86 to run unmodified PC operating systems, and uses a lightweight hypervisor technology to improve security and to increase the efficiency. Parallels has become popular for its ability to run Windows as a guest under [[Mac OS X]] on the [[AppleâIntel architecture]].
+*[[QEMU]] is a simulator based on a virtual machine, which gives it the ability to emulate a variety of guest CPU architectures on many different host platforms.
+*[[Returnil Virtual System]] can virtualize Windows based systems, needs only a restart to rebuild the virtual machine.
+* [[VirtualBox]] is an open source ([[GNU General Public License|GPL]])/[[Proprietary software|proprietary]] virtual machine developed by [[Sun Microsystems]] (originally developed by [[Innotek GmbH]] and now owned by [[Oracle Corporation]]). It allows virtualization of x86 and supports various host operating systems including [[Microsoft Windows|Windows]], [[Linux]], [[Berkeley Software Distribution|BSD]] and [[Solaris (operating system)|Solaris]]. It also supports [[VMware]], [[Parallels]] and [[Microsoft]] [[Virtual Machine Disk Formats]].
+* [[Virtual Iron]] provides virtual machines for x86 that run unmodified operating systems, such as Windows, Red Hat and SUSE; open source, implements [[native virtualization]], which delivers near-native performance for x86 operating systems. Virtual Iron provides full OS compatibility for existing or new OSes with near-native performance without the performance trade-offs between paravirualization and binary translation.
+
+*[[VMware]] provides virtual machines for x86 that can run unmodified PC operating systems.  The technology involved in doing this is complex and also incurs (sometimes significant) performance overheads with hosted VMware products (VM Server and Workstation).  ESX server provides near-native performance and a fully virtualized option (along with para-virtualization of some hardware components).
+*[[Xen]] trades running of existing operating systems for running modified (paravirtualized) operating systems with improved performance.  Xen Virtualization system's motivation differs from that of Denali in that it is intended to run a moderate number of full-featured operating systems, rather than a large number of specialised, lightweight ones.
+*[[Kernel-based Virtual Machine|KVM]] is a [[Linux kernel]] module that enables a modified QEMU program to use hardware virtualization.
+*[[libJIT|libJIT Just-In-Time Compilation library]] is a library for development of advanced [[Just-in-time compilation]] (JIT) in [[Virtual Machine]] implementations, [[Dynamic programming language]]s, and [[Scripting languages]]. Currently it is used for [[Common Intermediate Language]], [[Ruby (programming language)|Ruby]], [[Java bytecode|Java]], [[Domain-specific language|Domain-specific programming languages]].
+
+==See also==
+*[[Comparison of platform virtual machines]]
+*[[Comparison of application virtual machines]]
+*[[Virtual appliance]]
+*[[Hypervisor]]
+*[[Storage hypervisor]]
+*[[Native development kit]]
+*[[International Computers Limited|ICL]]'s [[ICL VME|VME]] operating system
+*[[Amazon Machine Image]]
+*[[Virtual backup appliance]]
+*[[Virtual disk image]]
+
+==References==
+{{reflist}}
+
+== Further reading ==
+* James E. Smith, Ravi Nair, ''Virtual Machines: Versatile Platforms For Systems And Processes'', Morgan Kaufmann, May 2005, ISBN 1-55860-910-5, 656 pages (covers both process and system virtual machines)
+* Craig, Iain D. ''Virtual Machines''. Springer, 2006, ISBN 1-85233-969-1, 269 pages (covers only process virtual machines)
+
+==External links==
+*[http://acmqueue.com/modules.php?name=Content&amp;pa=showpage&amp;pid=168 The Reincarnation of Virtual Machines, Article on ACM Queue by Mendel Rosenblum, Co-Founder, VMware]
+*[http://www.net-security.org/secworld.php?id=7837 Sandia National Laboratories Runs 1 Million Linux Kernels as Virtual Machines]
+*[http://doc.cat-v.org/inferno/4th_edition/dis_VM_design The design of the Inferno virtual machine by Phil Winterbottom and Rob Pike]
+*[http://www.stefanv.com/computers/masters_thesis.html Software Portability by Virtual Machine Emulation by Stefan Vorkoetter]
+
+{{DEFAULTSORT:Virtual Machine}}
+[[Category:Virtual machines]]
+[[Category:Operating system technology]]
+[[Category:Programming language implementation]]
+
+[[af:Virtuele masjien]]
+[[ar:Ø¢ÙØ© Ø§ÙØªØ±Ø§Ø¶ÙØ©]]
+[[bn:à¦­à¦¾à¦°à§à¦à§à¦¯à¦¼à¦¾à¦² à¦®à§à¦¶à¦¿à¦¨]]
+[[bs:Virtualna maÅ¡ina]]
+[[bg:ÐÐ¸ÑÑÑÐ°Ð»Ð½Ð° Ð¼Ð°ÑÐ¸Ð½Ð°]]
+[[ca:MÃ quina virtual]]
+[[cs:VirtuÃ¡lnÃ­ stroj]]
+[[da:Virtuel maskine]]
+[[de:Virtuelle Maschine]]
+[[et:Virtuaalmasin]]
+[[es:MÃ¡quina virtual]]
+[[eu:Makina birtual]]
+[[fa:ÙØ§Ø´ÛÙ ÙØ¬Ø§Ø²Û]]
+[[fr:Machine virtuelle]]
+[[ko:ê°ì ë¨¸ì ]]
+[[id:Mesin virtual]]
+[[it:Macchina virtuale]]
+[[he:×××× × ×××¨××××××ª]]
+[[lo:àºàº­àº¡àºàº´àº§à»àºàºµàº£à»àºà»àº²àº¥àº­àº]]
+[[hu:VirtuÃ¡lis szÃ¡mÃ­tÃ³gÃ©p]]
+[[ml:à´µàµ¼à´àµà´àµà´µàµ½ à´®àµà´·àµàµ»]]
+[[ms:Mesin maya]]
+[[nl:Virtuele machine]]
+[[ja:ä»®æ³æ©æ¢°]]
+[[pl:Maszyna wirtualna]]
+[[pt:MÃ¡quina virtual]]
+[[ru:ÐÐ¸ÑÑÑÐ°Ð»ÑÐ½Ð°Ñ Ð¼Ð°ÑÐ¸Ð½Ð°]]
+[[simple:Virtual machine]]
+[[fi:Virtuaalikone]]
+[[sv:Virtuell maskin]]
+[[ta:à®®à¯à®¯à¯à®¨à®¿à®à®°à¯ à®à®¯à®¨à¯à®¤à®¿à®°à®®à¯]]
+[[tr:Sanal makine]]
+[[uk:ÐÑÑÑÑÐ°Ð»ÑÐ½Ð° Ð¼Ð°ÑÐ¸Ð½Ð°]]
+[[vi:MÃ¡y áº£o]]
+[[yi:××××¨×××¢× ×××©××]]
+[[zh:èæ¬æ©å¨]]</rev></revisions></page></pages></query></api>

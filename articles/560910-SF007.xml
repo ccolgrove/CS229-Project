@@ -1,0 +1,73 @@
+<?xml version="1.0"?><api><query><pages><page pageid="560910" ns="0" title="RealVNC"><revisions><rev xml:space="preserve">{{Infobox software
+| name = RealVNC
+| logo =
+| screenshot =&lt;!-- Deleted image removed:  [[Image:RealVNC connection.jpg|250px|{{ifdc|1=RealVNC connection.jpg|log=2009 July 3}}]] --&gt;
+| caption = The RealVNC viewer in action (pictured with resolution scaling)
+| developer = RealVNC
+| latest_release_version = 4.1.3 (Free) / 4.6.1 (Personal and Enterprise)
+| latest_release_date = {{release date and age|2010|12|20}}
+| operating_system = [[Microsoft Windows]], [[Mac OS X]], [[Linux]], [[HP-UX]], [[Solaris (operating system)|Solaris]] [[AIX]] (Enterprise only)
+| platform = [[Java Platform]]
+| programming_language = [[Java (programming language)|Java]]
+| genre = [[Remote administration]] software
+| license = [[GNU General Public License|GPL]] / [[Commerce|Commercial]]
+| website = [http://www.realvnc.com/ www.realvnc.com]
+}}
+
+'''RealVNC''' is a company that provides [[remote access]] software. The software consists of a server and client application for the [[Virtual Network Computing]] (VNC) protocol to control another computer's screen remotely.
+
+==History==
+RealVNC Ltd. was founded by [[Andy Harter]] (CEO) and other members of the original VNC team at AT&amp;T. For a desktop to desktop connection RealVNC runs on [[Microsoft Windows|Windows]], [[Mac OS X]], and many [[Unix-like]] operating systems. A RealVNC client also runs on the [[Java platform]] and on the [[Apple Inc.|Apple]] [[iPhone]], [[iPod Touch|iPod touch]] and [[iPad]] and [[Google]] [[Android (operating system)|Android]] devices. A Windows-only client, VNC Viewer Plus is now available, designed to interface to the embedded server on [[Intel Active Management Technology|Intel AMT]] chipsets found on [[Intel vPro]] motherboards.
+
+For remote access to view one computer desktop on another, RealVNC comes in one of three editions:
+
+# Free Edition &amp;ndash; free, [[open source]] version distributed under the [[GNU General Public License]]; runs on various flavors of Unix (Linux, Solaris, HP-UX, AIX) and some versions of Windows (not Vista or Server 2008).&lt;ref&gt;{{cite web|url=http://www.realvnc.com/products/download.html|title=VNC feature comparison|publisher=RealVNC Limited|accessdate=2009-11-24}}&lt;/ref&gt; Note that users who wish to use this free version, as supplied by the [http://www.realvnc.com/products/free/4.1/index.html realvnc.com] site, may need (for example) to patch and compile the [[XFree86]] source code by themselves, as the free binaries available for download are outdated and typically fail to operate in modern environments.&lt;ref name=&quot;tkac08&quot;&gt;{{Citation
+ | title = VNC compilation against Xorg 1.4 | author = Adam Tkac, Red Hat | url = http://www.realvnc.com/pipermail/vnc-list/2008-February/058615.html | publisher = &quot;VNC-List Archives&quot; at [http://www.realvnc.com/pipermail/vnc-list/ realvnc.com] | date = 2008-02-04 | accessdate = 2008-09-26}}&lt;/ref&gt; Fortunately, almost all [[Linux distribution]]s include an updated/customised version of the RealVNC free edition. For example, in [[Debian]] and its derivatives, the RealVNC server and client appear under the packages named [http://packages.debian.org/vnc4server vnc4server] and [http://packages.debian.org/xvnc4viewer xvnc4viewer], respectively.
+
+# Personal Edition &amp;ndash; commercial version geared towards home or small-business users, with authentication and encryption, remote printing, chat and file transfer; only runs on Windows.
+# Enterprise Edition &amp;ndash; commercial version geared towards enterprises, with enhanced authentication and encryption, remote printing, chat, file transfer and a deployment tool for Windows; runs on Windows, Mac OS X and various flavours of Linux and UNIX.
+
+As of release 4.3 (released August 2007) separate versions of both the Personal and Enterprise editions exist for 32-bit and 64-bit systems. The ({{as of | 2010 | lc = on}}) latest release (4.6) includes features such as HTTP proxy support, chat, an address book, remote printing, unicode support, and connection notification.
+
+==Client==
+RealVNC clients using &lt;code&gt;vncviewer&lt;/code&gt; can run in full-screen mode; they use the F8 function-key as the default key for bringing up an options menu (which includes the option to, among other things, switch off full screen mode or to forward a Control-Alt-Delete key-sequence).
+
+==Server==
+Server component of RealVNC allows computer to be remotely controlled by another computer. The software can be installed for legitimate purposes, but it can also be installed from a remote location by an attacker with malicious intent. It is detected as RemoteAccess:Win32/RealVNC by Windows Defender.&lt;ref name=&quot;WinDef&quot;&gt;{{Citation
+ | title = RemoteAccess:Win32/RealVNC | author = Microsoft | url = http://www.microsoft.com/security/portal/Threat/Encyclopedia/Entry.aspx?name=RemoteAccess%3aWin32%2fRealVNC&amp;threatid=7480 | publisher = &quot;Microsoft Corporation&quot; at [http://www.microsoft.com/security/portal/Threat/Threats.aspx] | date = 2006-06-18 | accessdate = 2009-12-14}}&lt;/ref&gt;
+
+==Connectivity==
+RealVNC uses the [[RFB protocol]]. It defaults to TCP port 5900. When making a connection over the internet, the user must open this port in the local firewall as well as configure [[port forwarding]] to forward TCP Port 5900 (or the customized port respectively) to the local machine address if behind a [[Network address translation|NAT]] Router.
+
+As an alternative, one can tunnel VNC through [[Secure shell|SSH]], avoiding the opening of additional ports and automatically traversing the NAT router. SSH also provides encryption of the connection between the VNC server and viewer.
+
+==Limitations==
+Unicode is not supported for VNC version 3.x and lower so it is impossible to transfer clipboard text outside the Latin-1 character set. This is not a restriction on the non-GPL software sold by RealVNC.
+
+The VNC protocol is pixel based.  Although this leads to great flexibility (i.e.- any type of desktop can be displayed), it is often less efficient than solutions that have a better understanding of the underlying graphic layout like [[X11]]. Those protocols send graphic primitives or high level commands in a simpler form (i.e.- open window), whereas RFB just sends the raw pixel data.
+
+==See also==
+{{Portal|Free software}}
+* RFB [[RFB protocol|Remote Frame Buffer protocol]]
+* [[Comparison of remote desktop software]]
+* [[X Window System]]
+* [http://newsblaze.com/story/2008080508511000001.we/topstory.html The NHS in Walsall prescribes RealVNC for remote care of IT systems]
+
+==References==
+&lt;references/&gt;
+
+==External links==
+* [http://www.realvnc.com/ RealVNC] - Official site
+
+{{Remote administration software}}
+
+{{DEFAULTSORT:Realvnc}}
+[[Category:Companies based in Cambridge]]
+[[Category:Virtual Network Computing]]
+[[Category:Remote administration software]]
+[[Category:Cross-platform software]]
+[[Category:Free network-related software]]
+[[Category:Free software programmed in Java]]
+
+[[es:RealVNC]]
+[[ta:à®±à®¿à®¯à®²à¯à®µà®¿à®à®©à¯à®à®¿]]</rev></revisions></page></pages></query></api>

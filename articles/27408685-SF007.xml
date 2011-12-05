@@ -1,0 +1,230 @@
+<?xml version="1.0"?><api><query><pages><page pageid="27408685" ns="0" title="WebM"><revisions><rev xml:space="preserve">{{Infobox file format
+| icon          =
+| logo          = [[File:WebM logo.svg|200px]]
+| extension     = &lt;code&gt;.webm&lt;/code&gt;
+| mime          = &lt;code&gt;video/webm&lt;/code&gt;&lt;br/&gt;&lt;code&gt;audio/webm&lt;/code&gt;
+| type code     =
+| uniform type  =
+| magic         =
+| owner         = [[Google]], based on developments of [[On2]], [[Xiph]], and [[Matroska]]
+| released      = {{Start date and age|df=yes|2010|05|19}}&lt;ref name=&quot;webm-release&quot;&gt;{{citation
+  |url=http://www.engadget.com/2010/05/19/google-launches-open-webm-web-video-format-based-on-vp8/
+  |title=Google launches open WebM web video format based on VP8
+  |date=19 May 2010
+  |first=Nilay
+  |last=Patel
+  |publisher=Engadget}}&lt;/ref&gt;
+| genre         = [[Media container]]
+| extended from = [[Matroska]]
+| container for = [[VP8]] (video)&lt;br/&gt;[[Vorbis]] (audio)
+| free          = Yes&lt;ref name=&quot;wemb-off-faq&quot; /&gt;
+| url           = {{URL|http://www.webmproject.org/}}
+}}
+
+'''WebM''' is an audio-video format designed to provide a [[royalty free|royalty-free]], [[open format|open]] [[video compression]] [[file format|format]] for use with [[HTML5 video]]. The project's development is sponsored by [[Google]].
+
+A WebM file consists of [[VP8]] video and [[Vorbis]] audio streams, in a [[container format (digital)|container]] based on a [[Profile (engineering)|profile]] of [[Matroska]].&lt;ref name=&quot;wemb-off-faq&quot;&gt;{{cite web|url=http://www.webmproject.org/about/faq/ |title=WebM FAQ |date=19 May 2010 |quote=WebM is an open media file format designed for the web. WebM files consist of video streams compressed with the VP8 video codec and audio streams compressed with the Vorbis audio codec. The WebM file structure is based on the Matroska media container.}}&lt;/ref&gt;&lt;ref&gt;{{citation |url=http://webmproject.blogspot.com/2010/05/introducing-webm-open-web-media-project.html |title=Introducing WebM, an open web media project |accessdate=19 May 2010 |date=19 May 2010 |first1=Jeremy |last1=Doig |first2=Mike |last2=Jazayeri |publisher=WebM Project}}&lt;/ref&gt;&lt;ref&gt;{{citation |url=http://www.xiph.org/press/2010/webm/ |title=Xiph.Org announces support for the WebM open media project |first=Chris |last=Montgomery |authorlink=Chris Montgomery |accessdate=20 May 2010 |date=19 May 2010 |publisher=[[Xiph.Org Foundation|Xiph]]}}&lt;/ref&gt; The project releases WebM related software under a [[BSD licenses|BSD license]] and all users are granted a worldwide, non-exclusive, no-charge, royalty-free patent license. Despite this, some in the industry have called upon Google to provide indemnification against patent suits.&lt;ref&gt;{{cite web|url=http://blogs.msdn.com/b/ie/archive/2011/02/02/html5-and-web-video-questions-for-the-industry-from-the-community.aspx |title=HTML5 and Web Video: Questions for the Industry from the Community |date=2 February 2011}}&lt;/ref&gt;
+
+==Vendor support==
+===Software===
+Native WebM support by [[Mozilla Firefox 4]],&lt;ref&gt;{{Cite web
+  |url=http://blog.mozilla.com/blog/2010/05/19/open-web-open-video-and-webm/
+  |title=Open Web, Open Video and WebM
+  |work=The Mozilla Blog
+  |publisher=[[Mozilla Foundation]]
+  |date=19 May 2010
+  |accessdate=8 March 2011
+  |first=Mike
+  |last=Shaver
+  |authorlink=Mike Shaver
+}}&lt;/ref&gt;&lt;ref&gt;{{Cite web
+  |url=http://hacks.mozilla.org/2010/05/firefox-youtube-and-webm/
+  |title=Firefox, YouTube and WebM
+  |work=Mozilla Hacks
+  |publisher=Mozilla Foundation
+  |first=Christopher
+  |last=Blizzard
+  |authorlink=Christopher Blizzard
+  |date=19 May 2010
+  |accessdate=8 March 2011
+}}&lt;/ref&gt; [[Opera 10#Opera 10.60|Opera 10.6]],&lt;ref&gt;{{Cite web
+  |url=http://labs.opera.com/news/2010/05/19/
+  |title=Welcome, WebM &amp;lt;video&amp;gt;!
+  |work=Opera Labs
+  |publisher=Opera Software ASA
+  |first=HÃ¥kon Wium
+  |last=Lie
+  |authorlink=HÃ¥kon Wium Lie
+  |date=19 May 2010
+  |accessdate=8 March 2011
+}}&lt;/ref&gt;&lt;ref&gt;{{Cite web
+  |url=http://dev.opera.com/articles/view/opera-supports-webm-video/
+  |title=Opera supports the WebM video format
+  |work =Dev.Opera
+  |publisher=Opera Software ASA
+  |date=19 May 2010
+  |accessdate=8 March 2011
+  |first=Chris
+  |last=Mills
+  |quote=On the day of the announcement, Opera released an experimental WebM-enabled build. This feature is now part of the core functionality of Opera 10.60 and all of our future desktop browser releases.
+}}&lt;/ref&gt; and [[Google Chrome]]&lt;ref&gt;{{Cite web
+  |url=http://blog.chromium.org/2010/05/webm-and-vp8-land-in-chromium.html
+  |title=WebM and VP8 land in Chromium
+  |work=The Chromium Blog
+  |publisher=Google Inc.
+  |date=19 May 2010
+  |accessdate=8 March 2011
+  |first=Jim
+  |last=Bankoski
+  |quote=
+}}&lt;/ref&gt; was announced at the 2010 [[Google I/O]] conference. However, not every web browser natively supports WebM. [[Epiphany (web browser)|Epiphany]] will only play WebM video after [[GStreamer]] multimedia framework is updated.&lt;ref&gt;{{citation |first=Andrew |last=Dickinson |date=1 June 2010 |title=How To Get WebM Support In Epiphany Web Browser |publisher=WebUpd8 |url=http://www.webupd8.org/2010/06/how-to-get-webm-support-in-epiphany-web.html |quote=You do need however an updated Gstreamer}}&lt;/ref&gt; [[Internet Explorer 9]] requires third-party WebM software.&lt;ref&gt;{{Cite web
+  |url = http://blogs.msdn.com/b/ie/archive/2011/03/16/html5-video-update-webm-for-ie9.aspx
+  |title = HTML5 Video UpdateâWebM for IE9
+  |work = IEBlog
+  |publisher = Microsoft Corporation
+  |date = 16 March 2011
+  |accessdate =16 March 2011
+  |first = Dean
+  |last = Hachamovitch
+  |quote = IE9 supports HTML5 video using WebM for Windows customers who install third-party WebM support. As an industry, we still face many legitimate, unanswered questions about liability, risks, and support for WebM, such as [~snip~].
+}}&lt;/ref&gt; [[Safari (web browser)|Safari]] for Windows and Mac OS X relies on [[QuickTime]] to play web media,&lt;ref&gt;{{Cite web
+  |url=http://developer.apple.com/safari/library/documentation/AudioVideo/Conceptual/Using_HTML5_Audio_Video/AudioandVideoTagBasics/AudioandVideoTagBasics.html#//apple_ref/doc/uid/TP40009523-CH2-DontLinkElementID_12
+  |title=Safari HTML5 Audio and Video Guide: Audio and Video HTML
+  |work=Safari Developer Library
+  |publisher=Apple Inc
+  |date=16 December 2010
+  |accessdate=8 March 2011
+  |quote=Safari on the desktop (Mac OS X and Windows) supports all media supported by the installed version of QuickTime, including any installed third-party codecs.
+}}&lt;/ref&gt; which {{as of|2011|04|1|df=US|lc=y}}, does not support WebM&lt;ref&gt;{{cite web | title=Apple&amp;nbsp;â QuickTime&amp;nbsp;â QuickTime Player&amp;nbsp;â Tech Specs | url=http://www.apple.com/quicktime/player/specs.html | accessdate=15 April 2010 |archiveurl = http://web.archive.org/web/20080724002332/http://www.apple.com/quicktime/player/specs.html |archivedate = 24 July 2008}}&lt;/ref&gt;&lt;ref&gt;{{Cite web
+  |url = http://support.apple.com/kb/HT3775
+  |title = Media formats supported by QuickTime Player in Mac OS X v10.6
+  |work = Apple Support
+  |publisher = Apple Inc
+  |date = 28 January 2011
+  |accessdate =1 April 2011
+}}&lt;/ref&gt; unless a third-party plug-in is installed.&lt;ref&gt;{{Cite web
+  |url = http://support.apple.com/kb/HT3526
+  |title = Adding additional media format support to QuickTime
+  |work = Apple Support
+  |publisher = Apple Inc
+  |date = 24 January 2011
+  |accessdate =1 April 2011
+}}&lt;/ref&gt; In January 2011, Google announced that the WebM Project Team will release plugins for Internet Explorer and Safari to allow playback of WebM files through the standard HTML5 &lt;video&gt; tag.&lt;ref name=&quot;googleplugin&quot;&gt;{{Cite web
+  |url=http://blog.chromium.org/2011/01/more-about-chrome-html-video-codec.html
+  |title=More about the Chrome HTML Video Codec Change
+  |work=The Chromium Blog
+  |publisher=Google Inc
+  |date=14 January 2011
+  |accessdate=8 March 2011
+  |first=Mike
+  |last=Jazayeri
+  |quote=the WebM Project team will soon release plugins that enable WebM support in Safari and IE9 via the HTML standard &lt;video&gt; tag
+}}&lt;/ref&gt; {{as of|2011|4|1|df=US}}, a [[Software release life cycle#Beta|public preview]] version of this plug-in is available for Internet Explorer 9.&lt;ref&gt;{{Cite web
+  |url = http://www.webmproject.org/ie/
+  |title = WebM Media Foundation Components for Microsoft Internet Explorer 9 (Preview release)
+  |work = WebMProject.org
+  |publisher = The WebM Project
+  |accessdate =1 April 2011
+}}&lt;/ref&gt;
+
+[[Adobe Systems]] announced that its [[Flash Player]] will be updated to support WebM. &lt;ref&gt;{{Cite web
+  |url=http://news.cnet.com/8301-30685_3-20061315-264.html
+  |title=Adobe issues CSS Web publishing prototype
+  |publisher=cnet.com
+  |date=9 May 2011
+  |first=Stephen
+  |last=Shankland
+  |quote=Gourdol confirmed tonight it would get the full WebM support, which also includes the Vorbis audio encoding technology and a container to bundle the data together.
+}}&lt;/ref&gt;
+
+Media players such as [[VLC media player|VLC]],&lt;ref&gt;{{citation |url=http://people.videolan.org/~jb/webm/ |title=Welcome to VLC's Webm page! |first=Jean-Baptiste |last=Kempf |publisher=VideoLAN}}&lt;/ref&gt;&lt;ref&gt;{{citation |url=http://www.kabatology.com/05/26/download-vlc-media-player-1-1-0-with-webm-support/ |title=Download VLC Media Player 1.1.0 with WebM Support |date=26 May 2010 |publisher=Kabatology |first=Martin |last=Kaba}}&lt;/ref&gt; [[Miro (software)|Miro]],&lt;ref&gt;{{citation |url=http://www8.getmiro.com/blog/2010/05/miro-video-converter-is-the-first-webm-vp8-converter/ |title=Miro Video Converter is the first WebM / VP8 converter! |date=21 May 2010 |publisher=Participatory Culture Foundation |first=Nicholas |last=Reville}}&lt;/ref&gt;&lt;ref&gt;{{citation |url=http://www.kabatology.com/05/21/miro-video-converter-2-0-adds-support-for-open-webm-vp8-video-format/ |title=Miro Video Converter 2.0 adds support for open WebM (vp8) video format |date=21 May 2010 |publisher=Kabatology |first=Martin |last=Kaba}}&lt;/ref&gt; and [[Winamp]],&lt;ref&gt;{{citation |url=http://www.winamp.com/help/Player_Features |title=Winamp Player Features |publisher=Nullsoft}}&lt;/ref&gt;&lt;ref&gt;{{citation |url=http://forums.winamp.com/showthread.php?t=320278 |title=Winamp 5.58 Released |date=29 June 2010}}&lt;/ref&gt; have announced support. [[MPlayer]] and [[foobar2000]] has native support for playing WebM files.&lt;ref&gt;{{citation |url=http://lists.mplayerhq.hu/pipermail/mplayer-cvslog/2010-June/039348.html |title=Add webm/VP8 support to native matroska demuxer. |date=5 June 2010}}&lt;/ref&gt; [[FFmpeg]] can now encode and decode VP8 videos when built with libvpx support, as well as [[Multiplexing|mux]]/[[Demultiplexer (media file)|demux]] WebM-compliant files.&lt;ref&gt;{{citation |url=http://www.ffmpeg.org/releases/ffmpeg-0.6.release |title=ffmpeg 0.6 release |publisher=ffmpeg.org |date=15 June 2010}}&lt;/ref&gt; On 23 July 2010, Jason Garrett-Glaser, Ronald Bultje, and David Conrad of the FFmpeg team announced the ffvp8 decoder. Through testing they determined that ffvp8 was faster than Google's own libvpx decoder.&lt;ref name=&quot;ffvp8&quot;&gt;{{citation |url=http://x264dev.multimedia.cx/?p=499 |title=Diary Of An x264 Developer: Announcing the worldâs fastest VP8 decoder}}&lt;/ref&gt;&lt;ref&gt;{{citation |url=http://lists.mplayerhq.hu/pipermail/ffmpeg-devel/2010-June/090751.html |title=PATCH VP8â« decoder |date=15 June 2010 |publisher=FFmpeg-devel}}&lt;/ref&gt; mkvtoolnix, the popular [[Matroska]] creation tools, have implemented support for Multiplexing/Demultiplexing WebM-compliant files out of the box.&lt;ref name=&quot;matroska-tools&quot;&gt;{{citation |url=http://www.matroska.org/news/webm-tools.html |title=webm support in Matroska tools |publisher=Matroska.org |date=20 May 2010}}&lt;/ref&gt; Haali Media Splitter has also announced support for muxing/demuxing of WebM.&lt;ref name=&quot;matroska-tools&quot; /&gt;
+
+[[Media Player Classic Home Cinema|MPC-HC]] as of SVN 2071 and higher builds supports WebM playback with internal VP8 decoder based on [[FFmpeg]]'s code.&lt;ref name=&quot;ffvp8&quot; /&gt;&lt;ref name=&quot;MPC-HC&quot;&gt;{{citation |url=http://mpc-hc.svn.sourceforge.net/viewvc/mpc-hc/?view=log |title=Add : Internal VP8 Decoder|date=23 June 2010}}&lt;/ref&gt; The latest official stable release of MPC-HC, 1.4.2499.0, 1.5.2.3456 and later versions has full decoding support for WebM.&lt;ref&gt;{{citation |url=http://mpc-hc.sourceforge.net/History.html |title=Release History and Player Update |publisher=Media Player Classic Home Cinema |date=7 September 2010}}&lt;/ref&gt;
+
+[[Android (operating system)|Android]] is WebM-enabled from version 2.3 - Gingerbread,&lt;ref&gt;{{citation |date=6 December 2010 |title=Android 2.3 Platform Highlights|publisher=Android Developer |url=http://developer.android.com/sdk/android-2.3-highlights.html}}&lt;/ref&gt; which was first made available via the [[Nexus S]] mobile phone.
+
+===Hardware===
+[[Advanced Micro Devices|AMD]], [[ARM Holdings|ARM]] and [[Broadcom]] have announced support for [[hardware acceleration]] of the WebM format.&lt;ref&gt;{{citation |url=http://www.theregister.co.uk/2010/05/19/google_chrome_announcement/ |title=Google open sources $124.6m video codec |first=Cade |last=Metz |date=19 May 2010 |publisher=The Register}}&lt;/ref&gt;&lt;ref&gt;{{citation |url=http://investor.broadcom.com/releasedetail.cfm?ReleaseID=471536 |title=Broadcom Accelerates WebM Video on Mobile Phones |date=19 May 2010 |publisher=Newswire}}&lt;/ref&gt; [[Intel Corporation|Intel]] is also considering hardware-based acceleration for WebM in its [[Intel Atom|Atom-based]] TV chips if the format gains popularity.&lt;ref&gt;{{citation |url=http://www.computerworld.com/s/article/9177437/Intel_eyes_hardware_acceleration_for_Google_s_WebM |title=Intel eyes hardware acceleration for Google's WebM |date=27 May 2010 |publisher=ComputerWorld |first=Agam |last=Shah}}&lt;/ref&gt; [[Qualcomm]] and [[Texas Instruments]] have announced support,&lt;ref&gt;{{citation |url=http://www.qualcomm.com/blog/2010/05/19/web-video-google |title=Google's Impact on Web Video |publisher=Qualcomm |date=19 May 2010 |first=Raj |last=Talluri}}&lt;/ref&gt;&lt;ref&gt;{{citation |url=http://e2e.ti.com/blogs_/b/mobile_momentum/archive/2010/05/19/our-omap-processors-embrace-webm-and-vp8-with-open-arms.aspx |title=Our OMAP processors embrace WebM and VP8 with open ARMs |publisher=Texas Instruments |date=19 May 2010 |first=Joseph |last=Meehan}}&lt;/ref&gt; with native support coming to the [[Texas Instruments OMAP|TI OMAP]] processor.&lt;ref&gt;{{citation |url=http://blog.webmproject.org/2010/10/demo-of-webm-running-on-ti-omap-4.html |title=Demo of WebM Running on TI OMAP 4 Processor |date=5 October 2010 |accessdate=15 October 2010 |publisher=WebM Project}}&lt;/ref&gt;
+[[Chip&amp;Media]] have announced the fully hardware decoder for VP8 that can decode [[full HD]] resolution VP8 streams at 60 frames per second.&lt;ref&gt;{{citation |url=http://www.design-reuse.com/news/24961/dual-hd-video-ip-core-vp8.html |title=Chips&amp;Media delivers latest dual HD video IP core with VP8 hardware decoding capability |date=18 November 2010 |publisher=Design &amp; Reuse}}&lt;/ref&gt;
+
+[[Nvidia|NVIDIA]] has stated that they support VP8 adoption, but they have no specific plans to provide hardware support.&lt;ref&gt;{{citation |url=http://blogs.nvidia.com/ntersect/2010/05/googles-royaltyfree-vp8-codec-a-move-forward.html |title=Google's Royalty-Free VP8 Codec â A Move Forward |date=19 May 2010 |publisher=NVIDIA |first=Tony |last=Tamasi}}&lt;/ref&gt;
+
+On 7 January 2011, [[Rockchip]] released the world's first chip to host a full hardware implementation of 1080p VP8 decoding. The video acceleration in the RK29xx chip is handled by the WebM Project's G-Series 1 hardware decoder IP.&lt;ref&gt;{{citation |url=http://www.prnewswire.com/news-releases/rockchip-and-webm-release-rk29xx----worlds-first-soc-to-support-webm-hd-video-playback-in-hardware-113069829.html |title=Rockchip and WebM Release RK29xx -- World's First SOC to Support WebM HD Video Playback in Hardware |date=7 January 2011 |publisher=PRNewsWire}}&lt;/ref&gt;
+
+In June 2011, [[ZiiLABS]] demonstrated their 1080p VP8 decoder implementation running on the ZMS-20 processor. The chips programmable media processing array is used to provide the VP8 acceleration.&lt;ref&gt;{{citation |url=http://www.ziilabs.com/technology/vp8webm.aspx |title=ZiiLABS VP8 Support Delivers Smooth Playback of 1080p WebM Video on ZMS Processors|date=11 June 2011 |publisher=ZiiLABS}}&lt;/ref&gt;
+
+===Services===
+[[YouTube]] now offers WebM videos as part of its HTML5 player experiment.&lt;ref&gt;{{Cite web
+ |url=http://www.youtube.com/html5
+ |title=YouTube HTML5 Video Player
+ |work = [[YouTube]]
+ |publisher = Google Inc
+ |accessdate =8 March 2011
+}}&lt;/ref&gt; All uploaded files with resolutions from [[720p]] and above are encoded to WebM in 480p and 720p, and other resolutions will follow.&lt;ref name=&quot;Google&quot;&gt;{{citation |url=http://www.youtube.com/watch?v=poHqoBKiSeY |title=Google I/O 2010 - WebM Open Video Playback in HTML5 |publisher=Google |date=28 May 2010}}&lt;/ref&gt;&lt;ref name=&quot;youtube.com&quot;&gt;{{citation |url=http://www.youtube.com/watch?v=ZQniEobrNU0 |title= Google I/O 2010 Keynote Day 1, pt. 3  |publisher=Google |date=19 May 2010}}&lt;/ref&gt; YouTube has committed to encode their entire portfolio of videos to WebM.&lt;ref name=&quot;Google&quot;/&gt;&lt;ref name=&quot;youtube.com&quot;/&gt; Sorenson Media's online encoding platform now supports VP8 and WebM.&lt;ref&gt;{{citation |url=http://blog.sorensonmedia.com/2010/05/vp8-webm-is-here-sorenson-users-can-encode-with-it-now/ |title=VP8 / WebM is here! Sorenson Users Can Encode With It Now. |publisher=Sorenson Media |date=19 May 2010}}&lt;/ref&gt; [[Skype]] has implemented the VP8 codec into the Skype 5.0 software.&lt;ref&gt;{{citation |url=http://blog.webmproject.org/2010/11/webm-video-codec-in-skype-50-group.html |title=WebM Video Codec in Skype 5.0 Group Video |publisher=Skype / Google |date=9 November 2010}}&lt;/ref&gt; [[Logitech]] is planning to use WebM as part of a [[Videotelephony|video calling]] service.&lt;ref&gt;{{citation |url=http://blog.logitech.com/2010/05/19/commitment-to-open-standards-such-as-vp8/ |title=Commitment to Open Standards such as VP8 is Critical to Innovation |publisher=Logitech |first=Eric |last=Kintz |date=19 May 2010}}&lt;/ref&gt; [[NVIDIA]] announced [[Stereoscopy|3D]] video support for WebM through [[HTML5]] and their [[Nvidia 3D Vision|NVIDIA 3D Vision]] technology.&lt;ref&gt;{{citation |url=http://blog.webmproject.org/2011/05/introducing-3d-webm-support-with-nvidia.html}}&lt;/ref&gt;&lt;ref&gt;{{citation |url=http://blogs.nvidia.com/2011/05/youtube-now-in-3d-vision/}}&lt;/ref&gt;&lt;ref&gt;{{citation |url=http://www.thinkdigit.com/Internet/Open-3D-video-comes-to-the-web_6851.html}}&lt;/ref&gt;
+
+==Licensing==
+In mid-2010, [[Simon Phipps (programmer)|Simon Phipps]], a board member for the [[Open Source Initiative]], expressed doubts as to whether the original WebM license was an [[open-source license]], since it had not been submitted to the OSI for approval.&lt;ref&gt;{{citation |url=http://www.computerworlduk.com/community/blogs/index.cfm?entryid=2973 |title=WebM: Missing The Assurances Open Source Needs? |date=24 May 2010 |publisher=ComputerworldUK |first=Simon |last=Phipps}}&lt;/ref&gt; In response, the WebM Project decoupled patents from copyright, offering the code under a standard [[BSD license]] and patents under a separate grant.&lt;ref&gt;{{citation |url=http://webmproject.blogspot.com/2010/06/changes-to-webm-open-source-license.html |title=Changes to the WebM Open Source License |date=4 June 2010 |first=Chris |last=DiBona |publisher=WebM}}&lt;/ref&gt; The [[Free Software Foundation]], which maintains the [[Free Software Definition]], has given its endorsement for WebM and VP8&lt;ref name=&quot;fsf&quot;&gt;{{citation |url=http://www.fsf.org/news/free-software-foundation-statement-on-webm-and-vp8 |title=Free Software Foundation statement on WebM and VP8 |date=19 May 2010 |publisher=Free Software Foundation |first=Matt |last=Lee}}&lt;/ref&gt; and considers the software's license to be compatible with the [[GNU General Public License]].&lt;ref&gt;{{Cite web |url=http://www.fsf.org/blogs/licensing/googles-updated-webm-license |title=Google's updated WebM license |publisher=Free Software Foundation|first=Brett |last=Smith |accessdate=14 June 2010}}&lt;/ref&gt;&lt;ref name=&quot;gnu&quot;&gt;{{Cite web |url=http://www.gnu.org/licenses/license-list.html#GPLCompatibleLicenses |title=Various Licenses and Comments about Them - GNU Project - Free Software Foundation (FSF) |publisher=Free Software Foundation |accessdate=13 June 2010}}&lt;/ref&gt; On 19 January 2011, the Free Software Foundation announced its official support for WebM project.&lt;ref&gt;{{Cite web |url=http://www.fsf.org/news/supporting-webm |title=No double standards: supporting Google's push for WebM |publisher=Free Software Foundation|first=Brett |last=Smith |accessdate=19 January 2011}}&lt;/ref&gt;
+
+Although Google has irrevocably released all of its patents on VP8 as a royalty-free format,&lt;ref&gt;{{citation |url=http://www.theregister.co.uk/2010/05/20/google_confident_on_vp8_and_patents/ |title=Google backs open codec against patent trolls |date=20 May 2010 |publisher=The Register |first=Cade |last=Metz}}&lt;/ref&gt; the [[MPEG LA]], licensors of the [[H.264/MPEG-4 AVC|H.264]] patent pool, have expressed interest in creating a [[patent pool]] for VP8.&lt;ref&gt;{{citation |url=http://www.theregister.co.uk/2010/05/21/mpegla_mulls_patent_license_for_webm/ |title=Google open video codec may face patent clash |date=21 May 2010 |publisher=The Register |first=Cade |last=Metz}}&lt;/ref&gt;&lt;ref&gt;{{citation |url=http://www.betanews.com/article/Patent-pool-may-be-in-the-works-for-free-VP8-codec/1274466745 |title=Patent pool may be in the works for 'free' VP8 codec |publisher=Betanews |date=21 May 2010 |first=Scott M. |last=Fulton}}&lt;/ref&gt; Conversely, other researchers cite evidence that [[On2_Technologies|On2]] made a particular effort to avoid any MPEG LA patents.&lt;ref&gt;{{citation |url=http://carlodaffara.conecta.it/?p=420 |title=An analysis of WebM and its patent risk |date=25 May 2010 |first=Carlo |last=Daffara |publisher=carlodaffara.conecta.it}}&lt;/ref&gt; As a result of the MPEG-LA threat the [[United States Department of Justice|United States Department of Justice(DoJ)]]  has started an investigation into the [[MPEG LA]] for its role in possibly attempting to stifle competition.&lt;ref&gt;{{citation |url=http://online.wsj.com/article/SB10001424052748703752404576178833590548792.html?mod=WSJ_WSJ_US_News_5 |title=Web Video Rivalry Sparks U.S. Probe |date=4 March 2011 |first=Thomas |last=Catan |publisher=The Wall Street Journal}}&lt;/ref&gt;&lt;ref&gt;{{Cite web
+ |url = http://arstechnica.com/tech-policy/news/2011/03/report-doj-looking-into-possible-anti-webm-moves-by-mpeg-la.ars
+ |title = Report: DoJ looking into possible anti-WebM moves by MPEG LA
+ |first = Jacqui
+ |last = Cheng
+ |work = [[Ars Technica]]
+ |publisher = CondÃ© Nast Digital
+ |date = 4 March 2011 &lt;!-- Hover your mouse over the phrase in front of &quot;Last updated&quot; to see the date --&gt;
+ |accessdate =8 March 2011
+}}&lt;/ref&gt;
+
+==See also==
+* [[EBML]]
+* [[Comparison of container formats]]
+* [[HTML5 video#Default video format debate|HTML5 default video format debate]]
+* [[H.264/MPEG-4 AVC]]
+* [[Theora]]
+* [[On2 Technologies]]
+* [[VP8]]
+* [[WebP]]
+
+==References==
+{{Reflist|30em}}
+
+== External links ==
+* {{Official|http://www.webmproject.org/}}
+* [http://www.webmproject.org/code/specs/container/ WebM Container Guidelines]
+
+{{Compression formats}}
+
+{{DEFAULTSORT:Webm}}
+[[Category:Google]]
+[[Category:Free multimedia codecs, containers, and splitters]]
+[[Category:Container formats]]
+[[Category:Videotelephony]]
+
+[[ar:ÙÙØ¨ Ø¥Ù]]
+[[bg:WebM]]
+[[cs:WebM]]
+[[da:WebM]]
+[[de:WebM]]
+[[es:WebM]]
+[[fa:ÙØ¨âØ§Ù]]
+[[fr:WebM]]
+[[ko:WebM]]
+[[hi:à¤µà¥à¤¬à¤à¤® (WebM)]]
+[[it:WebM]]
+[[kn:à²µà³à²¬à³âà²à²]]
+[[lv:WebM]]
+[[hu:WebM]]
+[[ml:à´µàµà´¬àµâà´à´ à´ªà´¦àµà´§à´¤à´¿]]
+[[nl:WebM]]
+[[ja:WebM]]
+[[no:WebM]]
+[[pl:WebM]]
+[[pt:WebM]]
+[[ru:WebM]]
+[[fi:WebM]]
+[[sv:WebM]]
+[[th:WebM]]
+[[uk:WebM]]
+[[yo:WebM]]
+[[zh:WebM]]</rev></revisions></page></pages></query></api>

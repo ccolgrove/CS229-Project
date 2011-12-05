@@ -1,0 +1,229 @@
+<?xml version="1.0"?><api><query><pages><page pageid="1197941" ns="0" title="Adobe Flex"><revisions><rev xml:space="preserve">{{Refimprove|date=November 2008}}
+{{Cleanup-rewrite|date=July 2009}}
+{{Infobox software
+| name                   = Adobe Flex
+| logo                   = [[Image:Flexicon.png|center|64px|Adobe Flex Icon]]
+| screenshot             = 
+| caption                = 
+| author                 = 
+| developer              = [[Adobe Systems]]
+| released               = June 20 2004
+| latest release version = 4.5.1.21328
+| latest release date    = {{Release date and age|2011|05|03}}
+| latest preview version = 
+| latest preview date    = 
+| operating system       =  [[Microsoft Windows|Windows]], [[Mac OS X]] and [[Linux]]
+| platform               = 
+| language               = English and Japanese
+| status                 = Committed
+| genre                  =  [[Rich Internet application]]
+| license                = [[Mozilla Public License]] (Flash Builder and Flash Player under proprietary license)
+| website                = [http://www.adobe.com/go/flex/ Adobe Flex Homepage]
+}}
+
+'''Adobe Flex''' is a [[software development kit]] (SDK) released by [[Adobe Systems]] for the development and deployment of cross-platform [[rich Internet application]]s based on the [[Adobe Flash]] platform.  Flex applications can be written using [[Adobe Flash Builder]] or by using the freely available Flex compiler from Adobe.
+
+The release in March 2004 by [[Macromedia]] included an SDK, an [[Integrated development environment]] (IDE), and a [[Java EE]] integration application known as [[Adobe LiveCycle|Flex Data Services]]. Since Adobe purchased Macromedia in 2005, subsequent releases of Flex no longer require a license for Flex Data Services, which has become a separate product rebranded as [[Adobe LiveCycle|LiveCycle Data Services]]. An alternative to Adobe LiveCycle Data Services is [[BlazeDS]], an open-source project that started with code contributed in 2007 by Adobe.
+
+In February 2008, Adobe released the Flex 3 SDK under the [[open source]] [[Mozilla Public License]] and so Flex applications can be developed using any standard IDE, for example [[Eclipse (software)|Eclipse]]. 
+
+On November 17th, 2011, Adobe officially  open-sourced Flex and donated it to the [[Apache Software Foundation]].&lt;ref&gt;{{cite web
+|url=http://www.techworld.com.au/article/407714/adobe_donates_flex_apache
+|title=Adobe donates Flex to Apache
+|publisher=[[Techworld]]
+|accessdate=2011-11-17
+}}&lt;/ref&gt;
+==Overview==
+
+
+Technologies that are commonly compared to Flex include [[Curl (programming language)|Curl]], [[OpenLaszlo]], [[Ajax (programming)|Ajax]], [[XUL]], [[JavaFX]], [[Windows Presentation Foundation]] and [[Silverlight]].
+
+=== Application Development Process===
+* Define an application interface using a set of pre-defined components (forms, buttons, and so on)
+* Arrange components into a user interface design 
+* Use styles and themes to define the visual design 
+* Add dynamic behavior (one part of the application interacting with another, for example) 
+* Define and connect to data services as needed
+
+== Versions ==
+=== Macromedia Flex Server 1.0 and 1.5 ===
+Macromedia targeted the enterprise application development market with its initial releases of Flex 1.0 and 1.5. The company offered the technology at a price around US$15000 per [[Central processing unit|CPU]]. Required for deployment, the [[Java Platform, Enterprise Edition|Java EE]] application server compiled [[MXML]] and [[ActionScript]] on-the-fly into Flash applications (binary [[SWF]] files). Each server license included 5 licenses for the Flex Builder IDE. 
+
+=== Adobe Flex 2 ===
+Adobe significantly changed the licensing model for the Flex product line with the release of Flex 2. The core Flex 2 SDK, consisting of the command-line compilers and the complete class library of user interface components and utilities, was made available as a free download. Complete Flex applications can be built and deployed with only the Flex 2 SDK, which contains no limitations or restrictions compared to the same SDK included with the Flex Builder IDE.
+
+Adobe based the new version of Flex Builder on the open source [[Eclipse (software)|Eclipse]] platform. The company released two versions of Flex Builder 2, Standard and Professional. The Professional version includes the Flex Charting Components library.
+
+Enterprise-oriented services remain available through Flex Data Services 2. This server component provides data synchronization, data push, publish-subscribe and automated testing. Unlike Flex 1.0 and 1.5, Flex Data Services is not required for the deployment of Flex applications.
+
+Coinciding with the release of Flex 2, Adobe introduced a new version of the [[ActionScript]] programming language, known as Actionscript 3, reflecting the latest [[ECMAScript]] specification. The use of ActionScript 3 and Flex 2 requires version 9 or later of the Flash Player runtime. Flash Player 9 incorporated a new and more robust virtual machine for running the new ActionScript 3.
+
+Flex was the first Macromedia product to be re-branded under the [[Adobe Systems|Adobe]] name.
+
+=== Adobe Flex 3 ===
+
+On April 26, 2007 Adobe announced their intent to release the Flex 3 SDK (which excludes the Flex Builder IDE and the LiveCycle Data Services) under the terms of the [[Mozilla Public License]].&lt;ref&gt;{{cite web
+|url=http://blogs.zdnet.com/Burnette/?p=296
+|title=Adobe keeps Flash, Flex close to the vest
+|publisher=[[Zdnet]]
+|accessdate=2008-02-09
+}}&lt;/ref&gt; 
+Adobe released the first beta of Flex 3, codenamed ''Moxie'', in June 2007. Major enhancements include integration with the new versions of Adobe's Creative Suite products, support for [[Adobe Apollo|AIR]] (Adobe's new desktop application runtime), and the addition of profiling and refactoring tools to the Flex Builder IDE.
+
+=== Adobe Flash Builder and Flex 4 ===
+
+Adobe released Flex 4.0 (code named Gumbo) on March 22, 2010.&lt;ref&gt;{{cite web|url=http://www.adobe.com/products/flashbuilder/ |title=Adobe Flash Builder 4: features |publisher=Adobe.com |date=2009-07-14 |accessdate=2010-12-04}}&lt;/ref&gt;  The Flex 4 development environment is called Adobe Flash Builder,&lt;ref&gt;[http://theflashblog.com/?p=993 A much needed name change (Adobe Flash Builder)]&lt;/ref&gt; formerly known as Adobe Flex Builder.
+
+Some themes that have been mentioned by Adobe and have been incorporated into Flex 4 are as follows:
+
+* Design in Mind: The framework has been designed for continuous collaboration between designers and developers.
+* Accelerated Development: Be able to take application development from conception to reality quickly.
+* Horizontal Platform Improvements: Compiler performance, language enhancements, BiDirectional components, enhanced text (Flex 4 includes the new Text Layout Framework &lt;ref&gt;{{cite web|url=http://labs.adobe.com/technologies/textlayout/ |title=Adobe Labs - Text Layout Framework |publisher=Labs.adobe.com |date= |accessdate=2010-12-04}}&lt;/ref&gt;).
+* Full Support for Adobe Flash Player 10 and above.
+* Broadening Horizons: Finding ways to make a framework lighter, supporting more deployment runtimes, runtime MXML.
+* Simpler skinning than the previous versions.
+* Integration with Adobe Flash Catalyst.
+* Custom templates
+
+Flash Builder is available in two versions: Standard and Premium,&lt;ref&gt;{{cite web|url=http://www.adobe.com/products/flex/upgrade/ |title=Flex: Upgrade details |publisher=Adobe |date=2009-07-14 |accessdate=2010-12-04}}&lt;/ref&gt;  the premium adds the following features;
+
+* Testing tools
+* Memory and performance profilers
+* An automated testing harness to connect to all the leading testing tools
+* FlexUnit support
+* command-line build capability
+* The new Network Monitor
+
+=== Adobe Flash Builder 4.5 ===
+May 3rd, 2011, Adobe shipped Flash Builder 4.5 formerly called Flex 4.5 which delivers full support for building Flex and ActionScript applications for Google Android, as well as support for building ActionScript applications for BlackBerry Tablet OS and Apple iOS. An update to Flash Builder 4.5 and Flex 4.5 adds support for building Flex applications for BlackBerry Tablet OS and Apple iOS.
+
+Flex 4.5 SDK delivers many new components and capabilities, along with integrated support in Flash Builder 4.5 and Flash Catalyst CS 5.5. With the Adobe Flex 4.5 SDK which is governed by three main goals:
+
+* Allow developers to use Flex for multiscreen application development
+* Further mature the Spark architecture and component set which was introduced in Flex 4
+* Make incremental improvements to core Flex infrastructure to ease large application development
+
+== Related tools ==
+===Adobe Flash Catalyst===
+On October 2, 2007, Adobe announced a new design tool related to Flex codenamed Adobe Thermo. On November 17, 2008 Adobe announced the official name of the product would be [[Adobe Flash Catalyst]].&lt;ref&gt;[http://labs.adobe.com/technologies/flashcatalyst/ Adobe Flash Catalyst]&lt;/ref&gt;
+
+===LiveCycle Data Services===
+{{Main|Flex Data Services}}
+LiveCycle Data Services (previously called ''Flex Data Services'') is a server-side complement to the main Flex SDK and Flash Builder IDE and is part of a family of server-based products available from Adobe. Deployed as a Java EE application, LiveCycle Data Services adds the following capabilities to Flex applications:
+* Remoting, which allows Flex client applications to invoke methods on Java server objects directly. Similar to  Java remote method invocation (RMI), remoting handles data marshalling automatically and uses a binary data transfer format.
+* Messaging, which provides the &quot;publish&quot; end of the &quot;publish/subscribe&quot; design pattern. The Flash client can publish events to a topic defined on the server, subscribe to events broadcast from the message service. One of the common use cases for this is real-time streaming of data, such as financial data or system status information.
+* Data management services, which provides a programming model for automatically managing data sets that have been downloaded to the Flex client. Once data is loaded from the server, changes are automatically tracked and can be synchronized with the server at the request of the application. Clients are also notified if changes to the data set are made on the server.
+* PDF document generation, providing APIs for generating PDF documents by merging client data or graphics with templates stored on the server.
+
+===BlazeDS===
+
+Previously available only as part of Adobe LiveCycle Data Services ES, Adobe plans to contribute the [[BlazeDS]] technologies to the community under the [[GNU Lesser General Public License|LGPL v3]]. BlazeDS gives Adobe developers free access to the remoting and messaging technologies developed by Adobe.
+
+Concurrent with pre-release of BlazeDS, Adobe is publishing the [[Action Message Format|AMF]] binary data protocol specification, on which the BlazeDS remoting implementation is based, and is attempting to partner with the community to make this protocol available for major server platforms.
+
+===Granite Data Services===
+{{Main|Granite data services}}
+[http://www.graniteds.org Granite Data Services] (GraniteDS) is the main open source alternative to Adobe JavaEE server solutions (LCDS and BlazeDS). It is released under the [[GNU Lesser General Public License|LGPL v2.1]] and provides:
+* [[Action Message Format|AMF]] remoting.
+* [[Comet_(programming)|Comet]]-based real time messaging ([[Push_technology|Data Push]]).
+* Integration with major [[Application_server|application servers]]: [[JBoss]], [[GlassFish]], [[WebLogic]], [[WebSphere]], [[Apache_Tomcat|Tomcat]], [[Jetty_(web_server)|Jetty]].
+* Integration with major JavaEE frameworks: [[Enterprise_JavaBean|EJB3]], [[Spring_Framework|Spring]], [[JBoss_Seam|Seam]].
+* Integration with major [[Java_Persistence_API|JPA]] engines: [[Hibernate_(Java)|Hibernate]], [[EclipseLink]], [[Apache_OpenJPA|OpenJPA]], [[DataNucleus]], all with full [[Lazy_loading|lazy-loading]] support.
+* [[Automatic_programming|Code generation]] tools (called &quot;Gas3&quot;) that replicate Java entities and services in ActionScript3.
+* A Flex development frame work with weborb use is very common nowadays.
+
+===Flex and ColdFusion===
+Flex 2 offers special integration with [[ColdFusion#Rich forms|ColdFusion MX 7]]. The ColdFusion MX 7.0.2 release adds updated Flash Remoting to support ActionScript 3, a Flex Data Services event gateway, and the Flex Data Services assembler.  Flex Builder 2 also adds extensions for ColdFusion providing a set of wizards for RAD Flex development. A subset of Flex 1.5 is also embedded into ColdFusion MX 7 middleware platform, for use in the ColdFusion Flash forms feature. It is possible to use this framework to write rich internet applications, although its intended purpose is for rich forms only.
+
+===Flash Builder for Education ===
+Since 2008, Adobe has made Flash Builder and [[ColdFusion]] available to all educational customers for free on [http://www.adobe.com/devnet/flex/free/ their website].
+
+===Application Frameworks===
+There are a number of application frameworks available which help the developer solve some common tasks and set up the application structure according to best practices.
+* Tide, part of the [[Granite_data_services|Granite Data Services]] platform.
+* [[Swiz (Flex framework)|Swiz]]
+* [[Parsley (Flex framework)|Parsley]]
+* [[Cairngorm (Flex framework)|Cairngorm]]
+* [[PureMVC]]
+* [[Mate (Flex framework)|Mate]]
+* [[RobotLegs]]
+
+==Notable sites using Flex==
+* [[YouTube]]
+* [[Pikeo]] online photo sharing
+* [[Sherwin-Williams]] color visualizer[&lt;ref&gt;https://www.sherwin-williams.com/visualizer&lt;/ref&gt;]
+* [[Sony Ericsson]] product catalog
+* [[Yahoo! Messenger release history|Yahoo! Messenger for the Web]]
+* [[BBC iPlayer]] desktop downloader
+* [[mint.com]]
+* [[Obligo]]
+* Major League Baseball TV
+* [[ChessCube]]
+* [[BigBlueButton]]
+* HBOGO.com
+
+==File Formats==
+{{Main| FXG}}
+Adobe has been developing a new file format for cross application use. It has been specifically stated that the first aim was for use with Flex.
+
+==See also==
+*[[List of rich internet application frameworks]]
+* [[Adobe Flash Catalyst]]
+* [[Adobe AIR]]
+* [[Curl (programming language)|Curl RIA]]
+* [[Microsoft Silverlight]]
+* [[OpenLaszlo]]
+* [[ZK Framework]]
+* [[JavaFX]]
+* [[Qt Quick]]
+* [[Illumination Software Creator]]
+* [[FXG]]
+* [[Comparison of Adobe Flex charts]]
+
+== References ==
+{{Reflist}}
+
+==External links==
+* [http://www.adobe.com/products/flex/ Official Adobe Flex site]
+* [http://livedocs.adobe.com/flex/3/html/index.html  Adobe Flex 3 Help]
+* [http://help.adobe.com/en_US/flex/using/index.html  Adobe Flex 4 Help]
+* [http://www.adobe.com/devnet/flex/ Adobe Developer Connection for Flex]
+* [http://opensource.adobe.com/wiki/display/flexsdk/Flex+SDK Official Open Source site for Flex]
+* [http://www.flexunit.org/ Official FlexUnit site]
+* [http://flex.org/tour Tour de Flex] desktop application, 217 demos and code samples
+* [http://sites.google.com/site/reflexutil ReflexUtil] - ReflexUtil, an extension (open source) for run-time testing and Design of Flex 
+* [http://www.graniteds.org Granite Data Services] - GraniteDS, is a comprehensive development and integration solution for building Flex / JavaEE RIA applications.
+
+{{Adobe Systems}}
+
+{{Eclipse plugins}}
+{{Rich Internet applications}}
+{{Widget toolkits}}
+
+[[Category:Macromedia software|Flex]]
+[[Category:Adobe software|Flex]]
+[[Category:Adobe Flex| ]]
+[[Category:Cross-platform software]]
+
+[[ar:Ø£Ø¯ÙØ¨Ù ÙÙÙÙØ³]]
+[[ca:Adobe Flex]]
+[[cs:Adobe Flex]]
+[[de:Adobe Flex]]
+[[es:Adobe Flex]]
+[[fr:Adobe Flex]]
+[[ko:ì´ëë¹ íë ì¤]]
+[[hi:à¤à¤¡à¥à¤¬à¥ à¤«à¥à¤²à¥à¤à¥à¤¸]]
+[[id:Adobe Flex]]
+[[it:Adobe Flex]]
+[[he:××××× ×¤××§×¡]]
+[[nl:Adobe Flex]]
+[[ja:Adobe Flex]]
+[[pl:Adobe Flex]]
+[[pt:Adobe Flex]]
+[[ro:Adobe Flex]]
+[[ru:Adobe Flex]]
+[[sr:Adobe Flex]]
+[[ta:à®à®à¯à®ªà¯ à®à®ªà¯à®³à¯à®à¯à®¸à¯]]
+[[tr:Adobe Flex]]
+[[uk:Adobe Flex]]
+[[zh:Adobe Flex]]</rev></revisions></page></pages></query></api>

@@ -1,0 +1,98 @@
+<?xml version="1.0"?><api><query><redirects><r from="Gnusiance" to="GNewSense" /></redirects><pages><page pageid="6747808" ns="0" title="GNewSense"><revisions><rev xml:space="preserve">{{lowercase|gNewSense}}
+{{ infobox OS
+| name                   = gNewSense
+| logo                   = [[Image:Gnewsenselogo.png|70px]]
+| screenshot             = [[File:GNewSense screenshot.png|300px]]
+| caption                = gNewSense
+| developer              = Brian Brazil and Paul O'Malley
+| source_model           = [[Free software]]
+| latest_release_version = 2.3 &lt;ref&gt;{{cite web |url=http://lists.gnu.org/archive/html/gnewsense-users/2009-09/msg00090.html |title=[gNewSense-users&amp;#93; gNewSense 2.3 released |publisher=Lists.gnu.org |year=2009 |month=September |accessdate=2011-07-02}}&lt;/ref&gt; &lt;!-- If you update this, remember to also update [[Comparison of Linux distributions]]--&gt;
+| family                 = [[Unix-like]]
+| latest_release_date    = {{release date and age|2009|09|14}}
+| latest_test_version    =
+| latest_test_date       =
+| kernel_type            = [[Monolithic kernel|Monolithic]] [[Linux kernel]]
+| ui                     = [[GNOME]]
+| license                = [[Free software]] licenses mainly the [[GNU GPL]]
+| working_state          = dormant, according to DistroWatch&lt;ref name=&quot;Distrowatch&quot;&gt;{{cite web |url=http://distrowatch.com/table.php?distribution=gnewsense |title=DistroWatch.com: gNewSense |accessdate=2011-08-14}}&lt;/ref&gt;
+| website                = [http://www.gnewsense.org/ www.gnewsense.org]
+| supported_platforms    = [[x86 architecture|x86]], [[MIPS architecture|mips]]
+| updatemodel            = [[Advanced Packaging Tool|APT]]
+| package_manager        = [[dpkg]] / [[Synaptic Package Manager]]
+}}
+
+'''gNewSense''' is a [[Linux distribution]] based on [[Ubuntu (operating system) |Ubuntu]].&lt;ref name=&quot;faq&quot;&gt;{{cite web |url=http://www.gnewsense.org/index.php?n=FAQ.FAQ |title=gNewSense Official Website : Free as in freedom {{!}} FAQ / FAQ {{!}} browse |accessdate=2009-03-17 |work=gNewSense.org}}&lt;/ref&gt; Its goal is to maintain the user-friendliness of Ubuntu, but with all [[proprietary software|proprietary]] (EG. [[binary blob]]s) and [[non-free]] software removed. The [[Free Software Foundation]] considers gNewSense to be a [[Linux distribution]] composed entirely of [[free software]].&lt;ref&gt;[http://www.gnu.org/distros/free-distros.html http://www.gnu.org/distros/free-distros.html] List of Free Software Foundation approved Linux distributions&lt;/ref&gt;
+
+gNewSense takes a relatively strict stance against proprietary software. For example, any documentation that gives instructions on installing proprietary software software is excluded.&lt;ref&gt;{{cite web|url=http://wiki.gnewsense.org/Main/CommunityGuidelines |title=Community guidelines - gNewSense GNU/Linux |publisher=Wiki.gnewsense.org |date=2010-04-30 |accessdate=2011-07-02}}&lt;/ref&gt; gNewSense is the distribution used by [[Richard Stallman]] (founder and president of the [[Free Software Foundation]]) as of January 2010.&lt;ref&gt;{{cite web |url=http://richard.stallman.usesthis.com/ |title=An interview with Richard Stallman |publisher=Richard.stallman.usesthis.com |date=2010-01-23 |accessdate=2011-07-02}}&lt;/ref&gt;
+
+The project was launched by Brian Brazil and Paul O'Malley in 2006. Since the 1.0 release, the Free Software Foundation assists gNewSense.&lt;ref&gt;{{cite web|url=http://www.fsf.org/news/gnewsense |title=gNewSense 1.0 released - Free Software Foundation |publisher=Fsf.org |date= |accessdate=2011-07-02}}&lt;/ref&gt;
+
+With no releases in two years, on August 8, 2011, [[Distrowatch]] classified gNewSense as &quot;dormant&quot;.&lt;ref name=&quot;Distrowatch&quot;/&gt;
+== Technical aspects ==
+
+By default gNewSense uses [[GNOME]], the official [[desktop environment]] of the [[GNU Project]]. The [[graphical user interface]] can be customized with the user's choice [[X display manager]], [[window managers]], and other desktop environments available to install through its hosted repositories.
+
+The Ubiquity installer allows installing to the hard disk from within the [[Live CD]] environment without the need for restarting the computer prior to installation.
+
+Besides standard system tools and other small applications, gNewSense comes installed with the following software: the [[OpenOffice.org]] productivity suite, the [[Epiphany (browser)|Epiphany]] Internet browser, the [[Pidgin (software)|Pidgin]] instant messenger, and the [[GIMP]] for editing photos and other [[raster graphics]]. Common [[software development]] tools including [[GNU Compiler Collection|GCC]] and the [[GNU Emacs]] [[text editor]] are installed by default.
+
+=== Installation ===
+The [[Live CD]] can be used to run the Operating System and to install onto disk. CD images are available for download.&lt;ref&gt;[http://www.gnewsense.org/Main/Download Download stable gNewSense]&lt;/ref&gt;
+
+=== Versions ===
+Version 1.0, &quot;deltad&quot;, was released on 2 November 2006 and was based on Ubuntu 6.06 &quot;Dapper Drake&quot;. Version 2.0, &quot;deltah&quot;, followed on 30 April 2008 and is based on Ubuntu 8.04 &quot;Hardy Heron&quot;; version 2.1 is a minor update which removes non-free software and expands hardware support. Version 3.0 is expected to be based on [[Debian]] instead of Ubuntu.&lt;ref&gt;{{cite web|url=http://www.gnewsense.org/index.php?n=FAQ.FAQ#toc13 |title=FAQ - gNewSense GNU/Linux |publisher=Gnewsense.org |date=2011-06-01 |accessdate=2011-07-02}}&lt;/ref&gt;
+
+== Comparison with other distributions ==
+Non-free software [[software repository|repositories]] are not provided by the gNewSense project, most non-free documentation and artwork have been removed and Ubuntu's &quot;Universe&quot; package repository is enabled by default. In order to avoid [[trademark]] problems that stem from the modification of [[Mozilla Firefox]], gNewSense 1.1 rebranded it as &quot;BurningDog&quot;. BurningDog likewise neither suggests nor provides/supports non-free [[Plug-in (computing)|plugin]]s&lt;ref&gt;{{cite web|url=http://www.gnewsense.org/Main/PressRelease20070122 |title=gNewSense Official Website &amp;#124; Main / PressRelease20070122 |publisher=Gnewsense.org |date=2007-01-22 |accessdate=2011-07-02}}&lt;/ref&gt; for various web media, such as [[Adobe Flash]]. gNewSense 2.0 uses the [[Epiphany (browser)|Epiphany]] web browser as released by the [[GNOME]] Project, with an option in software sources to install [[GNU IceCat]].
+[[Debian]] is another Linux distribution noted for strict licensing requirements. gNewSense excludes non-free software that Debian includes (such as proprietary [[firmware]]) and does not have repositories for non-free software (which Debian has). It should be noted, however, that gNewSense's policies allow including documentation that the Debian project considers non-free, particularly that licensed under the [[GNU Free Documentation License]] with invariant sections. This includes many manuals and documentation released by the [[GNU project]] themselves.
+
+== Limitations ==
+Over one hundred pieces of non-free [[firmware]] were removed from the Ubuntu [[Linux kernel]] to make gNewSense.{{Citation needed|date=July 2010}} Such removals include support for some [[wireless network]] cards, and therefore gNewSense currently supports a reduced range of wireless network cards compared to some other [[Linux distributions]]. By May 1, 2008, [[3D graphics]] and application support were also removed &lt;ref&gt;{{cite web|url=http://www.gnewsense.org/Main/Deltah |title=Main/Deltah - gNewSense GNU/Linux |publisher=Gnewsense.org |date= |accessdate=2011-07-02}}&lt;/ref&gt; because of licensing issues&lt;ref&gt;[http://bugs.gnewsense.org/Bugs/00129 xserver-xorg: wordy SGI license may not be free] bugs.gnewsense.org&lt;/ref&gt; with [[Mesa 3D (OpenGL)|Mesa 3D]]. After January 13, 2009, those issues were resolved and 3D support is now standard as of the 2.2 release.&lt;ref&gt;{{cite web|url=http://www.fsf.org/blogs/licensing/2009-01-xorg-glx |title=3D graphics are 100% free software â Free Software Foundation â working together for free software |publisher=Fsf.org |date= |accessdate=2011-07-02}}&lt;/ref&gt;
+
+=== Creating personalized versions ===
+Brian Brazil developed a tool called Builder to make gNewSense from Ubuntu. It is designed to be general enough so that anyone can use it to make their own free software distribution of Linux.
+
+{{See also|Software remastering}}
+
+== See also ==
+{{Portal|Free software}}
+* [[List of Linux distributions endorsed by the Free Software Foundation]]
+* [[List of Ubuntu-based distributions#Ubuntu-based|List of Ubuntu-based distributions]]
+
+== References ==
+{{Reflist|30em}}
+
+== External links ==
+* [http://www.gnewsense.org/ gNewSense website]
+
+{{Ubuntu-distro}}
+{{Linux distributions}}
+
+{{DEFAULTSORT:Gnewsense}}
+[[Category:Ubuntu (operating system) derivatives]]
+[[Category:Operating system distributions bootable from read-only media]]
+
+[[ar:Ø¬ÙÙÙØ³ÙØ³]]
+[[bn:à¦à¦¿à¦¨à¦¿à¦à¦¸à§à¦¨à§à¦¸]]
+[[ca:GNewSense]]
+[[de:Inoffizielle Ubuntu-Derivate#gNewSense]]
+[[es:GNewSense]]
+[[fa:Ú¯ÙÙØ³ÙØ³]]
+[[fr:GNewSense]]
+[[ko:ê·¸ë´ì¼ì¤]]
+[[it:GNewSense]]
+[[ms:GNewSense]]
+[[nl:GNewSense]]
+[[ja:GNewSense]]
+[[no:GNewSense]]
+[[pl:GNewSense]]
+[[pt:GNewSense]]
+[[ro:GNewSense]]
+[[ru:GNewSense]]
+[[simple:GNewSense]]
+[[sl:GNewSense]]
+[[fi:GNewSense]]
+[[sv:Gnewsense]]
+[[tr:GNewSense]]
+[[uk:GNewSense]]
+[[zh:GNewSense]]</rev></revisions></page></pages></query></api>

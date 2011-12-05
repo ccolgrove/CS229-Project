@@ -1,0 +1,366 @@
+<?xml version="1.0"?><api><query><pages><page pageid="3310065" ns="0" title="Banshee (media player)"><revisions><rev xml:space="preserve">{{Infobox software
+| name                 = Banshee
+| logo                 = [[File:Music-player-banshee.svg|48px|Banshee icon]]
+| screenshot           = [[File:Banshee-2.0.png|250px]]
+| caption              = Banshee's main interface in Ubuntu
+| developer            = Aaron Bockover, Alexander Kojevnikov, Bertrand Lorentz, and Gabriel Burt
+| released             = {{Start date|2005|2|17}}&lt;ref&gt;[http://www.banshee-project.org/History History - Banshee&lt;!-- Bot generated title --&gt;]&lt;/ref&gt;
+| Preview Release      = 1.3.1
+| frequently_updated   = yes&lt;!-- Release version update? Don't edit this page, just click on the version number! --&gt;
+| programming language = [[C Sharp (programming language)|C#]] ([[Gtk Sharp|Gtk#]])
+| operating system     = [[Linux]], [[Mac OS X]] (beta), [[Microsoft Windows|Windows]] (alpha)
+| language             = Multilingual
+| genre                = [[Media player (application software)|Media player]]
+| license              = [[MIT License|MIT]]
+| website              = {{URL|banshee.fm}}
+}}
+'''Banshee''' is an [[Open source software|open-source]] [[Media player (application software)|media player]], called Sonance until 2005.&lt;ref&gt;[http://git.gnome.org/cgit/banshee/commit/?id=37cd82bf9c14d8217257ccd7901b985fed2518f9 Banshee rename git commit]&lt;/ref&gt; Built upon [[Mono (software)|Mono]] and [[Gtk Sharp|Gtk#]], it uses the [[GStreamer]] multimedia platform for encoding and decoding various media formats, including [[Vorbis|Ogg Vorbis]], [[MP3]] and [[FLAC]]. Banshee can play and import audio [[Compact Disc|CD]]s and supports many portable media players, including [[Apple Inc.|Apple's]] [[iPod]], [[Android (operating system)|Android]] [[List of Android devices|devices]] and [[Creative Technology|Creative's]] [[Creative ZEN|ZEN]] players.&lt;ref&gt;http://library.gnome.org/users/banshee/1.8/sync.html.en&lt;/ref&gt; Other features include [[Last.fm]] integration, album artwork fetching, smart playlists and podcast support. Banshee is released under the terms of the [[MIT License]]. Stable versions are available for many [[Linux]] [[Linux distribution | distributions]], as well as a beta preview for [[Mac OS X]] and an alpha preview for [[Windows]].
+
+==Plugins==
+Using a plugin-capable architecture, Banshee is highly extensible and customizable. Current stable plugins include:
+*Audioscrobbler: Adds the capability of reporting played songs to a user's [[Last.fm]] playlist, and play last.fm radio stations (user's library, tags, similar to, etc.).
+*[[Digital Audio Access Protocol|DAAP]] music sharing: Allows sharing of music libraries with [[iTunes]] and other DAAP-compatible music software. The current version of Banshee is only partially compatible with iTunes 7, allowing iTunes to open a Banshee library, but not vice-versa.
+*iPod manager: Allows the transferring of songs, videos, and album art to and from the device.
+*Metadata searcher using [[Musicbrainz]]: Automatically retrieves missing and supplementary metadata for library items, including album art.
+*Music Recommendations using [[Last.fm]]: Recommends music based on the currently playing song.
+*Mini-Mode plugin: Provides a small window with minimal playback controls and song information.
+*Multimedia keys support in [[GNOME]]: Banshee can be controlled via multimedia keys as configured through GNOME.
+*Notification Area Icon: Adds an icon to the notification area in GNOME.
+*Podcasting: Enables Banshee to subscribe to podcast feeds, which are updated on a regular basis. There is also a &quot;Find new podcasts&quot; feature which utilises [http://www.podcastalley.com Podcast Alley].
+*Radio: Provides support for streaming Internet radio stations.
+
+==Cross-platform support==
+Compared to the Linux builds, which have stable releases, the Mac OS X builds are considered beta quality, and Windows builds are alpha quality.
+
+The first alpha release of Banshee on Windows was Banshee 1.9.4, released on February 23, 2011.&lt;ref name=&quot;bgo#641690 Comment #4&quot;&gt;{{cite web |url=https://bugzilla.gnome.org/show_bug.cgi?id=641690#c4 |title=bgo#641690 Comment #4 |publisher=Gnome Bugzilla}}&lt;/ref&gt;&lt;ref name=&quot;Gabriel Burt, Twitter&quot;&gt;{{cite web |url=http://twitter.com/gabaug/status/39113347198758912 |title=Gabriel Burt, Twitter |publisher=Twitter}}&lt;/ref&gt;&lt;ref name=&quot;OMG!Ubuntu! Article&quot;&gt;{{cite web |url=http://www.omgubuntu.co.uk/2011/02/banshee-alpha-for-windows-coming-next-week-and-other-banshee-news/ |title=OMG!Ubuntu! Article |publisher=OMG!Ubuntu!}}&lt;/ref&gt;
+
+==Release history==
+[http://banshee-project.org/download/archives/ Official Release History feature list]&lt;br&gt;
+[http://banshee.fm/about/calendar/ Official Calendar]
+{{col-begin}}
+{{col-2}}
+{| class=&quot;wikitable&quot;
+|-
+! Version
+! Release date
+! Significant changes
+|-
+| style=&quot;background:salmon;&quot;| 1.0
+| June 5, 2008
+|
+* Album Browser
+* Play Queue
+* Now Playing section
+* Video support
+* Audio CD support
+* CD [[Ripping]] / [[Optical disc authoring|Burning]]
+* Podcast support
+* Integrated Next/Shuffle button
+* Device support ([[Media Transfer Protocol|MTP]], [[iPod]], [[Mass storage]])
+* Mini mode
+* Automatic cover art
+|-
+| style=&quot;background:salmon;&quot;| 1.2
+| July 29, 2008
+|
+* 10-band [[Equalization|Equalizer]]
+* [[Internet radio]]
+* Music recommendations
+* [[Digital Audio Access Protocol|DAAP]] client
+* Playlist importing
+* Compilation album support
+* Manual reordering of playlists and play queue
+* [[Amarok (software)|Amarok]] migration
+|-
+| style=&quot;background:salmon;&quot;| 1.2.1
+| August 12, 2008
+|
+* Bugfix release
+|-
+| style=&quot;background:salmon;&quot;| 1.4.1
+| November 10, 2008
+|
+* Improved device support
+* Support for the [[HTC Dream|HTC Android G1]]
+* Support for [[Mac OS X]]
+* New track editor
+* New rescan library tool
+|-
+| style=&quot;background:salmon;&quot;| 1.4.2
+| January 20, 2009
+|
+* Bugfix release
+|-
+| style=&quot;background:salmon;&quot;| 1.4.3
+| March 4, 2009
+|
+* Improved MTP support
+* Device playlist sync
+|-
+| style=&quot;background:salmon;&quot;| 1.5.0
+| June 1, 2009
+|
+* [[Rhythmbox]] migrator
+* [[Tempo|Beats Per Minute]] detection
+* Automatic scoring
+* [[Creative Commons]] licensing information column
+* Separate library locations for music, videos and podcasts
+|-
+| style=&quot;background:salmon;&quot;| 1.5.1
+| October 13, 2009
+|
+* New Shuffle mode
+* Auto [[Disc jockey|DJ]]
+* Support for [[webOS]] devices
+* Support for [[Samsung i7500|Samsung Galaxy]] phones
+|-
+| style=&quot;background:salmon;&quot;| 1.5.2
+| November 20, 2009
+|
+* [[iTunes]] importer
+* Supports searching and streaming from the [[Internet Archive]]
+* Support for [[T-Mobile Pulse|Pulse]] and [[Motorola Droid|Droid]] phones
+* Uses [[Last.fm]] 2.0 API
+|-
+| style=&quot;background:salmon;&quot;| 1.5.3
+| January 27, 2010
+|
+* Sync device from playlist
+* Type-ahead Find
+* Optional cover art in lower left corner
+* Editable cover art
+* Separate library for [[audiobook]]s
+* Library-folder watcher
+* [[eMusic]] Importer/Downloader
+|-
+| style=&quot;background:salmon;&quot;| 1.5.4
+| February 24, 2010
+|
+* Equalizer presets
+* [[Nokia N900]] support
+|-
+| style=&quot;background:salmon;&quot;| 1.5.5
+| March 10, 2010
+|
+* Gapless playback
+* Album grid view
+* YouTube extension
+|-
+| style=&quot;background:salmon;&quot;| 1.5.6
+| March 20, 2010
+|
+* Bugfix release
+|-
+| style=&quot;background:salmon;&quot;| 1.6.0
+| March 31, 2010
+|
+* Cumulative update for everything since version 1.5.1
+|-
+| style=&quot;background:salmon;&quot;| 1.7.0
+| May 5, 2010
+|
+* Ability to connect to remote DAAP servers
+|-
+| style=&quot;background:salmon;&quot;| 1.7.1
+| May 26, 2010
+|
+* Improvements for Audiobook support, layout
+|-
+| style=&quot;background:salmon;&quot;| 1.7.2
+| June 30, 2010
+|
+* Minor bug fixes
+|-
+| style=&quot;background:salmon;&quot;| 1.7.3
+| July 21, 2010
+|
+* Amazon MP3 Store and downloader
+* Miro podcast directory
+* Bulk metadata fixup extension
+|-
+| style=&quot;background:salmon;&quot;| 1.7.4
+| August 11, 2010
+| 
+* User manual
+|-
+| style=&quot;background:salmon;&quot;| 1.7.5
+| September 1, 2010
+|
+* iPod and iPhone / iPod Touch support
+* No more HAL dependency
+|-
+| style=&quot;background:salmon;&quot;| 1.7.6
+| September 15, 2010
+|
+* Bugfix release
+|-
+| style=&quot;background:salmon;&quot;| 1.8.0
+| September 29, 2010
+|
+* Cumulative update for everything since version 1.6.0
+|-
+| style=&quot;background:salmon;&quot;| 1.9.0
+| November 10, 2010
+|
+* Artist/Album Browser Track Actions
+* 'Play After' Queue Options
+* User Interface Improvements
+|-
+| style=&quot;background:salmon;&quot;| 1.9.1
+| December 15, 2010
+|
+* Ubuntu One Music Store and SoundMenu Extensions
+* Added support for embedded and external subtitles
+|-
+| style=&quot;background:salmon;&quot;| 1.9.2
+| January 18, 2011
+|
+* Add support for Nexus S and Xperia X10 mini pro
+* Many improvements and fixes to the F1 user guide
+* SoundMenu: Implement the proper close/quit behavior
+* MPRIS: Implement the Playlists interface
+* Improved write-metadata-to-file performance
+|-
+| style=&quot;background:salmon;&quot;| 1.8.1
+| January 28, 2011
+|
+* Bugfix release
+|-
+| style=&quot;background:salmon;&quot;| 1.9.3
+| February 2, 2011
+|
+* Various fixes and improvements to the Windows build
+* MPRIS: Implement the recently added PlaylistChanged signal
+* SoundMenu: Implement the new registration process
+* Daap: Keep a list of recently used remote servers
+* Add back counts for top level libraries
+* Various other bug fixes
+|-
+| style=&quot;background:salmon;&quot;| 1.9.4
+| February 23, 2011
+|
+* Development release and 2.0-release dependency freeze
+* First alpha release of the Windows build
+* Multimedia-Keys: Support Pause, FastForward, Rewind, Repeat and Shuffle
+* Advertise lastfm scheme handling in the .desktop files
+* Various other bug fixes (25 fixed since 1.9.3)
+
+|-
+| style=&quot;background:salmon;&quot;| 1.9.5
+| March 9, 2011
+|
+* Development release, 2.0-release string freeze and 2.0-release feature freeze
+* Add support for handling u1ms:// links
+* Windows: Add Windows 7 thumbnail toolbar playback buttons
+* OS X Build: Work with new bockbuild, add MonoMac
+* Various other bug fixes (20 fixed since 1.9.4)
+|-
+| style=&quot;background:salmon;&quot;| 1.9.6
+| March 23, 2011
+|
+* Rename banshee-1 to banshee in preparation for 2.0 
+* AmazonMp3.Store: amazon.ca support 
+* MiroGuide: Handle Listen links from front page 
+* Dap: Add support for Sharp IS01
+* Playlists: Recognize m3u playlists without header 
+* LibraryWatcher: Guard against watching incorrect dirs
+* MassStorage: Support Sirius Alpha Android phone 
+* WebOSDevice: Support playlists
+* Windows: Auto-update functionality
+|-
+| style=&quot;background:salmon;&quot;| 2.0.0&lt;ref&gt;{{cite web|last=Project Banshee|title=Banshee 2.0.0 Release Announcement|url=http://download.banshee.fm/banshee/stable/2.0.0/banshee-2.0.0.news|name=banshee2.0.0|publisher=Banshee|work=Banshee Media Player|accessdate=6 April 2011}}&lt;/ref&gt;
+| April 6, 2011
+|
+* 2.x major-number release
+* Artist/Album Browser Track Actions
+* 'Play After' Queue Options
+* User Interface Improvements
+* Ubuntu One Music Store and SoundMenu Extensions
+* Subtitles
+|-
+| style=&quot;background:salmon;&quot;| 2.1.0&lt;ref&gt;http://banshee.fm/download/archives/2.1.0/&lt;/ref&gt;
+| May 12, 2011
+| 
+* [[eMusic]] store support
+* Various bug fixes (51 fixed since 2.0)
+|-
+| style=&quot;background:#90ee90;&quot;| 2.2.0
+| September 21, 2011
+|
+* Support for the following Android devices: New Devices Supported: Motorola Atrix, Notion Ink Adam, Samsung Galaxy Ace, Samsung Galaxy S2, Xperia X12
+* Support for the Barnes &amp; Noble Nook
+* Support default internet radio stations
+* Various bug fixes (108 fixed since 2.0.0)
+|}
+{{col-2}}
+{| class=&quot;wikitable&quot;
+|-
+! Color
+! Meaning
+|-
+| style=&quot;background:salmon;&quot;| Red
+| Old release
+|-
+| style=&quot;background:#90ee90;&quot;| Green
+| Current release
+|-
+| style=&quot;background:#ff8c00;&quot;| Orange
+| Current development release
+|-
+| style=&quot;background:skyBlue;&quot;| Blue
+| Future release
+|}
+{{col-end}}
+
+==Helix Banshee==
+Helix Banshee was a version of Banshee, included in older versions of [[SUSE Linux Enterprise Desktop]] and [[openSUSE]]. It was based upon the Banshee core, but with a plug-in to add support for the [[Helix (project)|Helix framework]] for playback and transcoding, in addition to GStreamer.
+
+==See also==
+{{Portal|Free software}}
+*[[Amarok (audio)|Amarok]]
+*[[Exaile]]
+*[[Rhythmbox]]
+*[[Songbird (software)|Songbird]]
+*[[Comparison of audio player software|Comparison of media players]]
+*[[Free audio software]]
+*[[gtkpod]]
+*[[List of Linux audio software]]
+
+==References==
+{{Reflist}}
+
+==External links==
+{{Commons category|Banshee (media player)}}
+*{{Official website|http://banshee.fm/}}
+*[https://helix-banshee.helixcommunity.org/ Helix Banshee]
+
+{{media player (application software)}}
+
+{{DEFAULTSORT:Banshee (Media Player)}}
+
+[[Category:2005 software]]
+[[Category:Applications using D-Bus]]
+[[Category:Free audio software]]
+[[Category:Free media players]]
+[[Category:Free software programmed in C Sharp]]
+[[Category:GTK media players]]
+[[Category:IPod software]]
+[[Category:Jukebox-style media players]]
+[[Category:Linux media players]]
+[[Category:Mono project applications]]
+[[Category:Software using the MIT license]]
+
+[[ca:Banshee (reproductor d'Ã udio)]]
+[[de:Banshee (Medienspieler)]]
+[[es:Banshee (reproductor multimedia)]]
+[[fi:Banshee (mediasoitin)]]
+[[fr:Banshee (logiciel)]]
+[[it:Banshee (lettore musicale)]]
+[[hu:Banshee (mÃ©dialejÃ¡tszÃ³)]]
+[[nl:Banshee (audiospeler)]]
+[[ja:Banshee]]
+[[pl:Banshee (Linux)]]
+[[pt:Banshee (media player)]]
+[[ru:Banshee (Ð¼ÐµÐ´Ð¸Ð°Ð¿Ð»ÐµÐµÑ)]]
+[[uk:Banshee]]
+[[zh:Banshee]]</rev></revisions></page></pages></query></api>

@@ -1,0 +1,154 @@
+<?xml version="1.0"?><api><query><redirects><r from="Fglrx" to="AMD Catalyst" tofragment="Linux" /></redirects><pages><page pageid="13668730" ns="0" title="AMD Catalyst"><revisions><rev xml:space="preserve">{{Infobox software
+| name                   = AMD Catalyst
+| logo                   = [[File:ATI Catalyst Logo.jpg|300px]]
+| screenshot             = [[File:AMD VISION Engine Control Center.png|300px]]
+| caption                = AMD Catalyst Control Center running on [[Windows 7]]
+| developer              = [[ATI Technologies]]
+| author                 = [[Advanced Micro Devices]]
+| released               = {{Start date and age|2002|June|13}} (v. 2.1)
+| frequently updated     = yes
+| operating system       = [[Microsoft Windows]]&lt;br /&gt;[[Linux]]
+| platform               = [[IA-32]] and [[x64]]&lt;br /&gt;[[.NET Framework]]
+| size                   = 51.75 MB ~ 93.93 MB
+| language               = &lt;!-- Exactly which languages? Do not forget to cite your sources! --&gt;
+| genre                  = [[Device driver]] and [[system monitor]]
+| license                = [[Freeware]]
+| website                = {{URL|http://sites.amd.com/us/game/downloads/Pages/downloads.aspx}}
+}}
+
+'''AMD Catalyst''' (formerly named '''ATI Catalyst''') is a [[device driver]] and [[utility software]] package for [[ATI]] line of [[video card]]s. It runs on Microsoft Windows and Linux, on 32- and 64-bit x86 processors.
+
+== History ==
+Catalyst was instituted on 13 June 2002&lt;ref name=&quot;CatalystAnnouncement&quot;&gt;[http://ati.amd.com/companyinfo/press/2002/4506.html ATI Catalyst announcement]&lt;/ref&gt; with version 02.1 after the release of the Radeon 8500, as &quot;a software suite that includes unified driver and software applications to enable [ATI's] Radeon family of graphics products&quot; for [[Windows XP]], [[Windows 2000]] and [[Windows Me]], with support for [[Windows 98]] via the Windows Me driver.  The first number in a release version denotes the year, the second the release within that year, starting at x.1 for all years other than 2003 when there was a 3.0 release.
+
+The original Catalyst consisted of these elements:
+#A new, unified driver for [[ATI Radeon]] graphics cards
+#Hydravision, ATI's proprietary desktop management software
+#An ATI &quot;Multimedia Center&quot;
+#ATI's Remote Wonder software
+#A new AGP diagnostic and stability tool
+#A newly redesigned control panel
+
+Key features promised by ATI include frequent driver updates with performance enhancements, bug fixes, and new features.
+
+{| class=&quot;wikitable&quot; style=&quot;text-align:center;&quot;
+! Windows support !! From version !! To version !! Notes
+|-
+! [[Windows 9x]] 
+|  || 4.4 || style=&quot;text-align:left;&quot; | There were some later releases for these operating systems, including and up to a Windows Me build of Catalyst 6.2 released on Feb 9, 2006.{{Citation needed|date=August 2011}}
+|-
+! [[Windows 2000]]
+|  || 6.5&lt;ref name=&quot;Catalyst66&quot;&gt;[http://www2.ati.com/relnotes/catalyst_66_release_notes.html ATI Catalyst 6.6 release notes]&lt;/ref&gt; || style=&quot;text-align:left;&quot; | 
+|-
+! [[Windows XP]]
+|  ||  || style=&quot;text-align:left;&quot; | 
+|-
+! [[Windows Vista]]
+| 7.2&lt;ref name=&quot;Catalyst72&quot;&gt;[http://www2.ati.com/relnotes/catalyst_72_release_notes.html ATI Catalyst 7.2 release notes]&lt;/ref&gt; || style=&quot;text-align:left;&quot; | 
+|-
+! [[Windows XP x64]]
+| 7.11&lt;ref name=&quot;Catalyst711&quot;&gt;[http://www2.ati.com/relnotes/catalyst_711_release_notes.html ATI Catalyst 7.11 release notes]&lt;/ref&gt; ||  || style=&quot;text-align:left;&quot; | 
+|-
+! [[Windows 7]]
+| 9.7&lt;ref name=&quot;Catalyst97&quot;&gt;[http://www2.ati.com/relnotess/Catalyst_97_release_notes.pdf ATI Catalyst 9.7 release notes]&lt;/ref&gt; ||  || style=&quot;text-align:left;&quot; | 
+|}
+
+Starting with version 4.9 released on 4 September 2004, the Catalyst driver package included the ATI Catalyst Control Center,&lt;ref name=&quot;CatalystCCAnnouncement&quot;&gt;[http://ati.amd.com/companyinfo/press/2004/4776.html ATI Catalyst Control Center announcement]&lt;/ref&gt; a new software application for manipulating many of the hardware's functions, such as 3D settings, monitor controls and video options. It shows a small 3D preview and allows the user to see how changes to the graphics settings affects the quality of the rendered image. It also shows information about the card itself and the software data. This application requires Microsoft [[.NET Framework]].
+
+=== Linux ===
+'''fglrx'''  is the name of the [[Linux]] display driver used for ATI Radeon and [[ATI FireGL]] family of video adapters and stands for &quot;FireGL and Radeon for [[X Window System|X]]&quot;. It contains both [[free and open-source]] and [[proprietary software|proprietary]] parts. Starting from Catalyst 11.7, the ATI Proprietary Linux driver was renamed ATI Catalyst Linux, and was moved to the same release dates and version numbering as the versions for Microsoft Windows.&lt;ref name=&quot;Catalyst711Linux&quot;&gt;[http://www2.ati.com/drivers/linux/catalyst_711_linux.html ATI Catalyst Linux 7.11 release notes]&lt;/ref&gt;
+
+Linux version has been criticized for its stability and performance issues as well as lack of options.&lt;ref&gt;[http://www.phoronix.com/vr.php?view=13267 AMD Linux 2008 Year in Review] on [[Phoronix]]. Mostly negative [http://www.phoronix.com/review2forums.php?view=amd_ayir_2008 forum response].&lt;/ref&gt;&lt;ref&gt;[http://linux.slashdot.org/article.pl?sid=07/06/04/1532215 Insight Into AMD's Linux Driver Development (2007)]&lt;/ref&gt;&lt;ref&gt;[http://linux.slashdot.org/article.pl?sid=06/07/20/1433230 The State of ATI Drivers on GNU/Linux (2006)]&lt;/ref&gt;&lt;ref&gt;[http://linux.slashdot.org/article.pl?sid=05/07/30/197259 A Look at the State of ATI Linux Drivers (2005)]&lt;/ref&gt; The state of the driver has improved over time with AMD trying to work in concert with application developers,&lt;ref&gt;[http://article.gmane.org/gmane.comp.emulators.wine.user/36669 WineD3D developer statement] concerning fglrx (2008-12)&lt;/ref&gt; although for most instances the drivers are considered to be solid enough for most tasks and functional for most users.&lt;ref name=&quot;ubuntugamer&quot;&gt;[http://xtrabuntu.blogspot.com/2011/02/overview-of-graphic-card-manufacturers.html An overview of graphic card manufacturers and how well they work with Ubuntu] Originally posted on Ubuntu Gamer, January 10, 2011 (Article by Luke Benstead)&lt;/ref&gt;
+
+==HydraVision==
+HydraVision is a desktop/screen management software mostly providing [[multi-monitor]] and virtual-screen management. Besides screen management, it includes hardware-accelerated eyefinity and has extensive hot-key support.&lt;ref&gt;[http://www.rage3d.com/reviews/software/catalyst/ ATi Catalyst Review] Ryan Ku, Rage3D.com, June 13, 2002, retrieved November 26, 2010.&lt;/ref&gt;
+
+HydraVision was originally developed in late 90s by [[Appian Graphics]]&lt;ref&gt;[http://web.archive.org/web/19990127160839/www.appiangraphics.com/product/hydra.htm Archived HydraVision web presentation] published Jan 25, 1999, retrieved November 26, 2010.&lt;/ref&gt; for their multi-head display solutions. ATI acquired HydraVision in July 2001 along with Appian's HydraVision team to join its then-new dual-head [[Radeon R100#RV200|Radeon 7500]] and [[Radeon 8500|8500]] series.
+
+Currently it is an optional component of the Catalyst software suite.&lt;ref name=&quot;avivo&quot;&gt;{{cite web
+|url=http://support.amd.com/us/gpudownload/windows/Pages/radeonmob_win7-64.aspx#3
+|title=AMD Catalystâ¢ Display Driver
+|publisher=[[AMD]]
+|accessdate=2011-05-17}}&lt;/ref&gt;
+
+==Supported products==
+
+Not all platforms have an equal level of support. For example, recent versions do not support cards older than [[Radeon R600|R600]] on GNU/Linux.
+
+* ATI [[Radeon]] graphics cards
+** Monthly updated:
+*** [[Radeon R600|Radeon HD 2XXX/3XXX series]]
+*** [[Radeon R700|Radeon HD 4XXX series]]
+*** [[Evergreen (GPU family)|Radeon HD 5XXX series]]
+*** [[Northern Islands (GPU family)|Radeon HD 6XXX series]]
+** Periodically updated:  - With no Official Windows 7 Support
+*** Radeon [[Radeon R300|9500/9550/9600/9700/9800/X300/X500/X600]]/[[Radeon R420|X700/X800]] series
+*** [[Radeon R520|Radeon X1500/X1600/X1800/X1900 series]]
+* ATI multimedia products
+** [[All-in-Wonder]] multimedia cards
+*** All-in-Wonder HD
+*** All-in-Wonder 2006 Edition
+*** All-in-Wonder X1800/X1900 series
+*** All-in-Wonder X800 series
+*** All-in-Wonder X600 series
+*** All-in-Wonder 9600/9800 series
+** Theater HDTV decoders
+*** Theater 600
+*** Theater HD 750
+*** Theater 550 PRO
+*** Theater 650
+* [[AMD FireStream]] products
+** FireStream 9270
+** FireStream 9170
+** FireStream 9250
+* AMD integrated graphics processors
+** [[AMD 700 chipset series#Integrated graphics|Radeon HD 4200/3000 series]]
+** [[AMD 690 chipset series|690 chipset series/Radeon X1200 series/Radeon Xpress 1200 series]]
+** [[AMD 580 chipset series|580X chipset series]]
+** [[Xpress 3200|Radeon Xpress 3200 CrossFire]]
+** [[Xpress 200|Radeon Xpress 200/1100/1150 series]]
+
+== Alternatives ==
+For ATI cards and the [[X.Org Server]], a [[Graphics_hardware_and_FOSS#ATI.2FAMD|number of open source drivers]] are available. In general, AMD/ATI has also been praised for its Linux graphics work outside of its Catalyst driver support, including providing documentation and limited support, as well as some actual active development, to various free software drivers.&lt;ref name=&quot;ubuntugamer&quot;/&gt; This is in direct contrast to AMD's main competitor in the graphics field [[NVIDIA]], which does offer its own proprietary driver similar to Catalyst, but does not provide any support or assistance to any free graphics initiatives.&lt;ref&gt;[http://www.phoronix.com/scan.php?page=news_item&amp;px=NzgwNQ NVIDIA's Response To Recent Nouveau Work] [[Phoronix]], December 14, 2009 (Article by [[Michael Larabel]])&lt;/ref&gt;
+
+== See also ==
+;ATI video adapters
+*[[All-in-Wonder]]
+*[[Radeon]]
+*[[Comparison of ATI chipsets]]
+*[[Comparison of AMD chipsets]]
+
+;Related technologies
+*[[ATI Avivo]]
+*[[ATI CrossFire]]
+*[[ATI PowerPlay]]
+
+;Related topics
+*[[Graphics hardware and FOSS]]
+
+== References ==
+{{Reflist|30em}}
+
+==External links==
+*[http://www.amd.com/us/products/technologies/amd-catalyst/Pages/catalyst.aspx AMD Catalyst Technology]
+*[http://support.amd.com/us/gpudownload/Pages/index.aspx AMD Graphics Drivers &amp; Software]
+*[http://sites.amd.com/us/game/downloads/Pages/downloads.aspx AMD Game Driver Page]
+
+{{ATI}}
+
+{{DEFAULTSORT:Amd Catalyst}}
+[[Category:Device drivers]]
+[[Category:Advanced Micro Devices]]
+[[Category:ATI Technologies]]
+[[Category:Linux drivers]]
+[[Category:Third-party Linux kernel modules]]
+[[Category:X Window System]]
+
+[[ar:Ø¥Ù ØªÙ Ø¢Ù ÙØ§ØªØ§ÙÙØ³Øª]]
+[[cs:AMD VISION Engine Control Center]]
+[[de:AMD Catalyst]]
+[[ko:AMD ì¹´íë¦¬ì¤í¸]]
+[[ja:Catalyst Control Center]]
+[[pt:AMD Catalyst]]
+[[ru:ATI Catalyst]]
+[[fi:AMD Catalyst]]</rev></revisions></page></pages></query></api>

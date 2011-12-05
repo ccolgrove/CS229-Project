@@ -1,0 +1,97 @@
+<?xml version="1.0"?><api><query><pages><page pageid="887427" ns="0" title="WinRAR"><revisions><rev xml:space="preserve">{{Infobox Software
+| name                   = WinRAR
+| logo                   = [[File:WinRAR-Logo.png]]
+| screenshot             = [[File:WinRAR screenshot.png|300px]]
+| caption                = WinRAR 4.01 in [[Windows 7]]
+| developer              = [[Eugene Roshal]], Alexander Roshal
+| released               = 1995&lt;!-- RAR was released in 1993. But WinRAR was released in 1995. --&gt;
+| frequently updated     = yes
+| programming language   = [[C++]]
+| operating system       = [[Microsoft Windows|Windows]] [[Windows 95|95]], [[Windows 98|98]], [[Windows Me|Me]], [[Windows 2000|2000]], [[Windows XP|XP]], [[Windows Vista|Vista]], [[Windows 7|7]], [[Mac OS X]], [[FreeBSD]], [[Linux]] ([[Wine (software)|Wine]] required for [[Graphical user interface|GUI]]), [[OS/2]]&lt;ref&gt;Only versions not newer than 3.93 support Windows 95, 98 and NT4. However in Serbian Cyrillic, Serbian Latin and undefined editions, only versions not newer than 3.92 support them, and in Valencian edition only versions not newer than 3.91 support them.&lt;/ref&gt;
+| language               = 47 languages
+| status                 = Current
+| genre                  = [[File archiver]]
+| license                = [[Commercial software|Commercial]], [[Proprietary software|Proprietary]], [[Shareware]]
+| website                = Primary: [http://www.rarlab.com www.rarlab.com]&lt;br /&gt;Secondary: [http://www.win-rar.com/ www.win-rar.com]
+}}
+{{Primary sources|date=September 2011}}
+'''WinRAR''' is a [[shareware]] [[file archiver]] and [[data compression]] utility developed by [[Eugene Roshal]], and first released in autumn of 1993.&lt;ref&gt;{{cite web|url=http://www.compression.ru/arctest/descript/roshal.htm |title=Interview by correspondence |publisher= |date=1997-2002 (see under 1997) |accessdate=2010-04-26 |language=Russian}} {{ru icon}}&lt;/ref&gt; It is one of the few applications that is able to create [[RAR (file format)|RAR]] archives natively, because the encoding method is held to be [[Proprietary software|proprietary]].
+
+==Developer==
+The current developer is Eugene Roshal, while his brother Alexander Roshal is engaged in running the business behind the software.&lt;ref&gt;[http://groups.google.com/group/fido7.rar.support/msg/8205725b02a2be76?pli=1 WinRAR 3.40 release notes by Eugene Roshal] {{ru icon}}&lt;/ref&gt;
+
+==Features==
+WinRAR supports the following features:
+*Complete support for [[RAR (file format)|RAR]] (WinRAR native conversion format)  and [[ZIP file format|ZIP]] archives, and unpacking of [[ARJ]], [[LZH]], [[tar (file format)|TAR]], [[Gzip|GZ]], [[ACE (file format)|ACE]], [[uuencode|UUE]], [[bzip2|BZ2]], [[JAR (file format)|JAR]], [[ISO image|ISO]], [[executable|EXE]], [[7z]], and [[Z (file format)|Z]] archives.&lt;ref&gt;{{cite web|url=http://www.donationcoder.com/Reviews/Archive/ArchiveTools/index.html |title=Best Archive Tool - DonationCoder.com |publisher=DonationCoder.com |date=2005-09-05 |accessdate=2009-07-01}}&lt;/ref&gt;
+*Multithreaded compression
+*The ability to create [[Self-extracting archive|self-extracting]] and multi-[[volume (compression)|volume]] (split) archives.
+*Data [[redundancy (information theory)|redundancy]] is provided via ''recovery records'' and ''recovery volumes'', allowing reconstruction of damaged archives.
+*Support for advanced [[NTFS]] file system options and [[Unicode]] in file names.
+*Optional archive [[encryption]] using [[Advanced Encryption Standard|AES]] (Advanced Encryption Standard) with a 128-bit key.
+
+==Version history==
+Below is a summary of version information.
+Version 2.00 was released on September 6, 1996.
+*Since version 2.90, the new [[RAR#Versions|RAR3]] [[archive format]] is implemented. The new compressed archives cannot be managed by old versions of WinRAR.
+*Since version 3.50, WinRAR adds support for interface [[Skin (computing)|skins]] and [[Theme (computing)|themes]] and support [[Windows XP editions#Windows XP Professional x64 Edition|Windows XP x64]].&lt;ref&gt;{{cite web|url=http://www.win-rar.com/index.php?id=24&amp;kb=1&amp;kb_article_id=191 |title=WinRAR download and support. WinRAR is a powerful Windows tool to compress and decompress zip, rar and many other formats: Knowledge Base |publisher=Win-rar.com |date= |accessdate=2009-07-01}}&lt;/ref&gt;
+*Since version 3.60, WinRAR includes a [[Thread (computer science)|multithreaded]] version of the compression algorithm, which improves compression speed on systems with [[Symmetric multiprocessing|multiple]], [[Multi-core|dual-core]], or [[Hyper-threading]]-enabled [[Central processing unit|CPUs]].
+*Since version 3.70, WinRAR features support for [[Windows Vista]].&lt;ref&gt;{{cite web|url=http://www.win-rar.com/447.html |title=WinRAR download and support. WinRAR is a powerful Windows tool to compress and decompress zip, rar and many other formats: WinRAR 3.70 beta 1 Released |publisher=Win-rar.com |date=2007-01-10 |accessdate=2009-07-01}}&lt;/ref&gt;
+*Since version 3.80, support for ZIP archives, which contain [[Unicode]] file names in [[UTF-8]].&lt;ref&gt;{{cite web|url=http://www.rarlab.com/ |title=WinRAR archiver, a powerful tool to process RAR and ZIP files |publisher=Rarlab.com |date= |accessdate=2009-07-01}}&lt;/ref&gt;
+*Since version 3.90, WinRAR adds support [[64-bit#64-bit software timeline|Windows x64]] natively and support [[Windows 7]]. Also it enhanced support for multithreading&lt;ref&gt;{{cite web|url=http://www.rarlab.com/rarnew.htm |title=WinRAR archiver, a powerful tool to process RAR and ZIP files |publisher=Rarlab.com |date= |accessdate=2009-07-01}}&lt;/ref&gt;
+*Version 4.00 speeds up decompression by up to 30%. [[Windows 98]], [[Windows Me]], and [[Windows NT]] are no longer supported; the minimum Windows version required is [[Windows 2000]].&lt;ref&gt;[http://www.rarlab.com/rarnew.htm WinRAR 4.00 Release Notes]&lt;/ref&gt;
+
+==Awards==
+{{Expand section|date=January 2011}}
+*WinRAR has been nominated for the [[Epsilon Award|Epsilon Award 2008]]. Later it became the winner of the award at the eighth annual European Software Conference.&lt;ref&gt;[http://www.euroconference.org/EpsilonHonored.htm Epsilon AwardÂ© Hall of Fame]&lt;/ref&gt;
+
+==WinRAR Unplugged==
+[http://www.win-rar.com/unpluggedinfo.html WinRAR Unplugged] is a [[Portable software|portable]] version of WinRAR that does not require installation or create dependencies on the host computer.
+
+==See also==
+*[[Comparison of file archivers]]
+
+==References==
+{{reflist}}
+
+==External links==
+*[http://www.win-rar.com/ WinRAR website]
+*[http://www.rarlab.com/ RARLAB main website]
+*[http://www.youtube.com/watch?v=vzW3EjTnOKs How to use winrar]
+*[http://tutorialwinrar.frombanda.com/ WinRAR Tutorials]
+
+{{Compression Software Implementations}}
+
+[[Category:1995 software]]
+[[Category:Windows compression software]]
+[[Category:Windows-only shareware]]
+[[Category:Disk image extractors]]
+[[Category:Portable software]]
+
+[[ar:ÙÙÙØ±Ø§Ø±]]
+[[be-x-old:WinRAR]]
+[[br:WinRAR]]
+[[ca:WinRAR]]
+[[cs:WinRAR]]
+[[da:WinRAR]]
+[[de:WinRAR]]
+[[es:WinRAR]]
+[[eu:WinRAR]]
+[[fa:ÙÛÙâØ±Ø§Ø±]]
+[[fr:WinRAR]]
+[[ko:WinRAR]]
+[[id:WinRAR]]
+[[it:WinRAR]]
+[[he:WinRAR]]
+[[lt:WinRAR]]
+[[nl:WinRAR]]
+[[ja:WinRAR]]
+[[pl:WinRAR]]
+[[pt:WinRAR]]
+[[ru:WinRAR]]
+[[simple:WinRAR]]
+[[fi:WinRAR]]
+[[sv:WinRAR]]
+[[tr:WinRAR]]
+[[uk:WinRAR]]
+[[vi:WinRAR]]
+[[zh:WinRAR]]</rev></revisions></page></pages></query></api>

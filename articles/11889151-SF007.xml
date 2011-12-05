@@ -1,0 +1,242 @@
+<?xml version="1.0"?><api><query><pages><page pageid="11889151" ns="0" title="TinTin++"><revisions><rev xml:space="preserve">{{Infobox Software
+| name                   = TinTin++
+| logo                   = 
+| screenshot             = 
+| caption                = 
+| developer              = Igor van den Hoven
+| latest_release_version = 2.00.6
+| latest_release_date    = {{Release date and age|2011|03|11}}
+| programming language   = [[C (programming language)|C]]
+| operating_system       = [[Unix-like]], [[Microsoft Windows|Windows]]
+| platform               = [[Cross-platform]]
+| genre                  = [[MUD client]]
+| license                = [[GNU General Public License|GNU GPL]]
+| website                = [http://tintin.sourceforge.net/ tintin.sourceforge.net]
+| status                 = Active
+| language               = English
+| size                   = 1224KB
+}}
+'''TinTin++''' is a [[MUD client]] primarily written for [[Unix]]-like systems. It is one of the oldest MUD clients in existence and a successor of the TINTIN client.&lt;ref name=&quot;shahromine&quot;&gt;{{cite book
+ | last1 = Shah | first1 = Rawn
+ | last2 = Romine | first2 = James
+ | year = 1995
+ | title = Playing MUDs on the Internet
+ | publisher = John Wiley &amp; Sons, Inc.
+ | pages = 259
+ | isbn = 0-471-11633-5
+ | quote = '''Tintin++''' [...] Derived and improved from Tintin.  Additional features include variables, faster triggers, and a split-screen mode.
+}}&lt;/ref&gt;  According to its author, TINTIN stands for &quot;'''T'''he k'''I'''cki'''N''' '''T'''ickin d'''I'''kumud clie'''N'''t&quot;.
+
+== About ==
+[[Image:TinTin++ Lost Souls.png|thumb|right|TinTin++ being used to play ''[[Lost Souls (online game)|Lost Souls]]''; the display in the upper [[Split screen (computer graphics)|split screen]] was constructed by TinTin++'s automapper]]
+TinTin++ is a [[terminal emulator|console]] [[telnet]] client enhanced with features that work particularly well for playing [[MUD]]s, though it allows connecting to Linux and [[Bulletin Board System]] servers as well.  To enhance game play on MUDs, the client can create a [[Split screen (computer graphics)|split screen]] arrangement, which divides the interface into input, output, and status areas.&lt;ref name=&quot;shahromine&quot; /&gt; Input handling is enhanced with [[readline]]-like input editing, [[Macro (computer science)|macro]], and [[Alias (Unix shell)|alias]] support. Text received from the server can be highlighted or set to execute triggers written in the TINTIN scripting language, which resembles the [[C programming language]].&lt;ref name=&quot;busey&quot;&gt;{{cite book
+ | last = Busey | first = Andrew
+ | title = Secrets of the MUD Wizards
+ | publisher = [[SAMS Publishing]]
+ | year = 1995
+ | isbn = 0-672-30723-5
+ | pages = 184â194
+}}&lt;/ref&gt;&lt;ref&gt;{{cite book
+  | author = Andy Eddy
+  | year = 1996
+  | title = Internet after hours
+  | publisher = Crown Publishing Group
+  | pages=179â180
+  | quote = Tintin++ is a variation of the original tintin, but with many new features and bug fixes. Some of the many features of tintin++ are triggers, aliases, high-lighting, gags, substitutions, and split-screen mode (Figure 5-3).
+  | isbn = 0761503862
+}}&lt;/ref&gt;
+
+TinTin++ has various other features that are commonly found in modern MUD clients, such as automapping, [[MCCP]], [[friend-to-friend]] messaging, logging in [[HTML]], and a [[TELNET]] event handler.
+
+== History == 
+
+TINTIN originated as a single file containing 700 lines of C code, allowing triggers and aliases, that was posted on [[Usenet]] by Peter Unold on April 1, 1992.&lt;ref&gt;{{cite web
+ |url=http://groups.google.com/group/alt.sources/msg/b144a14d0d0a9741
+ |title=TINTIN - a dikumud client
+ |author=Peter Unold
+ |accessdate=2008-07-08
+ |date=1992-04-01
+}}&lt;/ref&gt; On October 6 1992 Peter Unold made his final release, TINTIN III, which was a much more matured and feature rich program.&lt;ref&gt;{{cite web
+ |url=http://groups.google.nl/group/rec.games.mud.diku/msg/1f603d9ddbe251a9
+ |title=TINTIN III released
+ |author=Peter Unold
+ |accessdate=2008-07-08
+ |date=1992-10-06
+}}&lt;/ref&gt;
+
+In 1993 the development of TINTIN was continued by Bill Reiss who announced the release of TinTin++ v1.0 on July 3, 1993.&lt;ref&gt;{{cite web
+ |url=http://groups.google.nl/group/rec.games.mud.diku/msg/49964f64eff2b017
+ |title=where to get tintin++
+ |author=Bill Reiss
+ |accessdate=2008-07-08
+ |date=1993-06-03
+}}&lt;/ref&gt; On April 25, 1994 TinTin++ 1.5 was announced, which was a joint effort by Bill Reiss, David A. Wagner, Rob Ellsworth, and Jeremy C. Jack.&lt;ref&gt;{{cite web
+ |url=http://groups.google.com/group/rec.games.mud.announce/msg/b8f43b74e9df9a70
+ |title=Tintin++ v1.5 ready for release
+ |author=Robert Ellsworth
+ |accessdate=2008-07-09
+ |date=1994-04-24
+}}&lt;/ref&gt;
+
+After the 1.5 release in 1994 active development came to a halt. TinTin++ 1.5 had gained significant popularity however, and being public domain this resulted in many derivative works like [[zMUD]], yTin, Lyntin, Pueblo, WinTin95, and GGMud.&lt;ref name=&quot;koster&quot;&gt;{{cite web
+ | last = Koster | first = Raph | authorlink = Raph Koster
+ | url = http://www.raphkoster.com/2008/03/25/a-brief-history-of-botting/
+ | title = A brief history of botting
+ | work = Raph Koster's Website
+ | date = 2008-03-25
+ | accessdate = 2008-08-11
+ | quote = Given that writing a vanilla Telnet client is very easy, it was not long before there were dedicated clients that wrapped Telnet with additional functionality. The best known of these were TinyFugue and TinTin, and today it seems like zMud is still retaining dedicated users.
+}}&lt;/ref&gt; In 1998 development was continued briefly by Rob Elsworth who incorporated several patches by Sverre Normann before handing over development to Davin Chan who re-licensed the software to [[GNU General Public License|GNU GPL]] on July 12th, 2001 in his final release of TinTin++ 1.86b.&lt;ref&gt;{{cite web
+ |url=http://archive.debian.net/changelogs/pool/main/t/tintin++/tintin++_1.86-1/copyright
+ |title=tintin++ 1.86 copyright
+ |author=Jordi Mallach
+ |accessdate=2008-07-09
+ |date=2001-08-22
+}}&lt;/ref&gt;
+
+In 2004 development was continued by Igor van den Hoven.&lt;ref&gt;{{cite web
+ |url=http://packages.debian.org/changelogs/pool/main/t/tintin++/tintin++_1.96.3-1/copyright
+ |title=tintin++ 1.96.3 copyright
+ |author=Ana Beatriz Guerrero LÃ³pez
+ |accessdate=2008-07-09
+ |date=2006-10-03
+}} {{Dead link|date=October 2010|bot=H3llBot}}&lt;/ref&gt;
+
+== Distribution ==
+
+TinTin++ is currently distributed under the [[GNU General Public License]], and the source code can be compiled on most [[Unix-like]] operating systems. A port for [[Microsoft Windows]] called WinTin++ bundles TinTin++ with the [[mintty]] terminal emulator. A [[universal binary]] is available for [[Mac OS X]].
+
+== Supported Protocols ==
+
+{| border=&quot;0&quot; cellpadding=&quot;1&quot; cellspacing=&quot;0&quot; style=&quot;text-align: left; width: 100%; height: 20px; table-layout: fixed;&quot;
+|-
+| style=&quot;width:20%;&quot; |â¢ Character Mode
+| style=&quot;width:80%;&quot; | Allows directly transmitting client input, required for [[BBSes]], *NIX servers, and [[roguelike]]s.
+|-
+| style=&quot;width:20%;&quot; |â¢ Go Ahead
+| style=&quot;width:80%;&quot; | Allows the server to indicate the end of output, allowing better client side prompt handling.
+|-
+| style=&quot;width:20%;&quot; |â¢ MCCP
+| style=&quot;width:80%;&quot; | Allows the compression of the data transfer from the server to the client.
+|-
+| style=&quot;width:20%;&quot; |â¢ MudMaster Chat
+| style=&quot;width:80%;&quot; | Allows instant messaging and file transfers over private [[Peer-to-peer|P2P]] connections.
+|-
+| style=&quot;width:20%;&quot; |â¢ NAWS
+| style=&quot;width:80%;&quot; | Allows sending the client's window size to the server.
+|-
+| style=&quot;width:20%;&quot; |â¢ TELNET
+| style=&quot;width:80%;&quot; | Allows connecting to *NIX servers and BBSes using TELOPT negotiations.
+|-
+| style=&quot;width:20%;&quot; |â¢ VT100
+| style=&quot;width:80%;&quot; | Allows the displaying of a server side [[text user interface]].
+|-
+| style=&quot;width:20%;&quot; |â¢ xterm 256 colors
+| style=&quot;width:80%;&quot; | Allows using 256 different colors instead of the traditional 16.
+|-
+|}
+
+==Program Features==
+{| border=&quot;0&quot; cellpadding=&quot;1&quot; cellspacing=&quot;0&quot; style=&quot;text-align: left; width: 100%; height: 20px; table-layout: fixed;&quot;
+|-
+| style=&quot;width:20%;&quot; |â¢ Actions
+| style=&quot;width:80%;&quot; | Match lines of text or patterns of text with wildcard characters.
+|-
+| style=&quot;width:20%;&quot; |â¢ Aliases
+| style=&quot;width:80%;&quot; | Command shortcuts allow bundling multiple commands together.
+|-
+| style=&quot;width:20%;&quot; |â¢ Class
+| style=&quot;width:80%;&quot; | Labels a set of triggers to belong to a given class which allows removing or saving them independently.
+|-
+| style=&quot;width:20%;&quot; |â¢ Delay
+| style=&quot;width:80%;&quot; | Execute a script after a predefined amount of time has passed.
+|-
+| style=&quot;width:20%;&quot; |â¢ Events
+| style=&quot;width:80%;&quot; | Execute a script when a predefined event occurs.
+|-
+| style=&quot;width:20%;&quot; |â¢ Format
+| style=&quot;width:80%;&quot; | Format text using a [[printf]] like syntax.
+|-
+| style=&quot;width:20%;&quot; |â¢ Functions
+| style=&quot;width:80%;&quot; | Execute a script and substitute the function call with the returned result.
+|-
+| style=&quot;width:20%;&quot; |â¢ Gags
+| style=&quot;width:80%;&quot; | Prevent lines of text from being displayed.
+|-
+| style=&quot;width:20%;&quot; |â¢ Grep
+| style=&quot;width:80%;&quot; | Searches and displays matching lines in the scrollback buffer.
+|-
+| style=&quot;width:20%;&quot; |â¢ Highlights
+| style=&quot;width:80%;&quot; | Change the color of incoming text.
+|-
+| style=&quot;width:20%;&quot; |â¢ History Buffer
+| style=&quot;width:80%;&quot; | Stores the last commands you typed. Press UP to scroll through the list, or ctrl-r to find matches.
+|-
+| style=&quot;width:20%;&quot; |â¢ If Checks
+| style=&quot;width:80%;&quot; | Handles both numeric boolean checks and string comparisons.
+|-
+| style=&quot;width:20%;&quot; |â¢ Input editing
+| style=&quot;width:80%;&quot; | Input editing and handling that work much like the Unix Shell.
+|-
+| style=&quot;width:20%;&quot; |â¢ Lists
+| style=&quot;width:80%;&quot; | Store information in an unsorted or sorted manner and recall it when needed.
+|-
+| style=&quot;width:20%;&quot; |â¢ Log
+| style=&quot;width:80%;&quot; | Log incoming data as [[HTML]], [[VT100]], or plain text.
+|-
+| style=&quot;width:20%;&quot; |â¢ Macros
+| style=&quot;width:80%;&quot; | Assign text or commands to specific key combinations.
+|-
+| style=&quot;width:20%;&quot; |â¢ Map
+| style=&quot;width:80%;&quot; | Allows one to create an interactive map to help navigate the game world.
+|-
+| style=&quot;width:20%;&quot; |â¢ Math
+| style=&quot;width:80%;&quot; | 64 bit floating point mathematical expressions.
+|-
+| style=&quot;width:20%;&quot; |â¢ Multiple Sessions
+| style=&quot;width:80%;&quot; | Open Multiple session windows to use more than one character or connect to more than one server.
+|-
+| style=&quot;width:20%;&quot; |â¢ Read
+| style=&quot;width:80%;&quot; | Read in script files which can be indented and spaced out over several lines if braces are used.
+|-
+| style=&quot;width:20%;&quot; |â¢ Regular expressions
+| style=&quot;width:80%;&quot; | Text substitutions and triggers using [[Perl Compatible Regular Expressions]].
+|-
+| style=&quot;width:20%;&quot; |â¢ Run
+| style=&quot;width:80%;&quot; | Runs a given application, such as ssh, with access to all of tintin's scripting capabilities.
+|-
+| style=&quot;width:20%;&quot; |â¢ Scan
+| style=&quot;width:80%;&quot; | Reads in an ANSI or plain text log file so you can view it in the scrollback buffer.
+|-
+| style=&quot;width:20%;&quot; |â¢ Script
+| style=&quot;width:80%;&quot; | Runs the given script written in python, ruby, perl, php, etc., processing the output as a client command.
+|-
+| style=&quot;width:20%;&quot; |â¢ Scrollback
+| style=&quot;width:80%;&quot; | Store the last 5000 (default) lines of text which can be viewed using page-up/down.
+|-
+| style=&quot;width:20%;&quot; |â¢ Splitscreen
+| style=&quot;width:80%;&quot; | Splits the screens in an input, output, and status area.
+|-
+| style=&quot;width:20%;&quot; |â¢ Status Bar
+| style=&quot;width:80%;&quot; | The user definable status bar lets you display information between the input and output area.
+|-
+| style=&quot;width:20%;&quot; |â¢ Substitutions
+| style=&quot;width:80%;&quot; | Changes text to display as different text. Match simple text or patterns and replace them with a substitute text.
+|-
+| style=&quot;width:20%;&quot; |â¢ Tab Completion
+| style=&quot;width:80%;&quot; | Recall hard to spell words by typing the first couple of letters and pressing tab.
+|-
+|}
+
+==References==
+{{Reflist|2}}
+
+==External links==
+* [http://tintin.sourceforge.net TinTin++ MUD client home page]
+* [http://lyntin.sourceforge.net/TINTIN15.txt TinTin++ 1.5 Manual]
+
+{{MUDs}}
+
+[[Category:MUD clients]]
+[[Category:Free network-related software]]
+[[Category:Free software programmed in C]]</rev></revisions></page></pages></query></api>

@@ -1,0 +1,242 @@
+<?xml version="1.0"?><api><query><redirects><r from="APT Daemon" to="Advanced Packaging Tool" tofragment="Front-ends" /></redirects><pages><page pageid="187481" ns="0" title="Advanced Packaging Tool"><revisions><rev xml:space="preserve">{{refimprove|date=November 2011}}
+{{Infobox software
+| name                   = Advanced Packaging Tools
+| logo                   =
+| screenshot             = [[Image:Apt-get_install_mediawiki.png|320px]]
+| caption                = &lt;code&gt;apt-get&lt;/code&gt; requesting confirmation before an installation
+| developer              =
+| latest_release_version = 0.8.10&lt;ref name=package&gt;
+{{cite web
+|url=http://packages.qa.debian.org/a/apt.html
+|title=Debian -- Details of package apt
+|publisher=packages.qa.debian.org
+|accessdate=2010-12-14
+|last=
+|first=
+}}
+&lt;/ref&gt;
+| latest_release_date    = {{release date and age|2010|11|30}}
+| latest_preview_version = (None)
+| latest_preview_date    =
+| operating_system       = [[Cross-platform]]
+| platform               = [[Unix]] and [[Unix-like]] operating systems
+| programming_language   = [[C++]]
+| genre                  = [[Package management system]]
+| license                = [[GNU General Public License]]
+| website                = [http://wiki.debian.org/Apt wiki.debian.org/Apt] [http://wiki.debian.org/Teams/Apt wiki.debian.org/Teams/Apt]
+}}
+
+The '''Advanced Packaging Tool''', or '''APT''', is a [[Free software|free]] [[front-end|user interface]] that works with [[Software Library|core libraries]] to handle the installation and removal of software on the [[Debian]] [[GNU/Linux distribution]] and its variants.&lt;ref name=manpage&gt;
+{{cite web
+|url=http://linux.die.net/man/8/apt-get
+|title=apt-get(8) - Linux man page
+|publisher=linux.die.net
+|accessdate=2008-05-12
+|last=
+|first=
+}}
+&lt;/ref&gt; APT simplifies the process of managing software on [[Unix-like]] computer systems by automating the retrieval, configuration and installation of [[Software package (installation)|software packages]], either from binary files or by [[compiling]] source code.&lt;ref name=manpage /&gt;
+
+APT was originally designed as a front-end for [[dpkg]] to work with Debian's &lt;tt&gt;[[deb (file format)|.deb]]&lt;/tt&gt; packages, but it has since been modified to also work with the [[RPM Package Manager]] system via [[apt-rpm]].&lt;ref&gt;
+{{cite web
+|url=http://apt-rpm.org/about.shtml
+|title=APT-RPM
+|publisher=apt-rpm.org
+|accessdate=2008-05-12
+|last=
+|first=
+}}
+&lt;/ref&gt; The [[Fink]] project has ported APT to [[Mac OS X]] for some of its own package management tasks, and APT is also available in [[OpenSolaris]] (included in the [[Nexenta OS]] distribution).&lt;ref&gt;
+{{cite web
+|url=http://www.finkproject.org/about.php
+|title=Fink - About
+|publisher=www.finkproject.org
+|accessdate=2008-05-12
+|last=
+|first=
+}}
+&lt;/ref&gt;
+[[Cydia]] is a package manager for [[iOS jailbreaking|jailbroken iOS]] partially based on APT (ported to iOS as part of the related Telesphoreo project).&lt;ref&gt;[http://www.saurik.com/id/1 &quot;Bringing Debian APT to the iPhone&quot; by Jay Freeman (saurik]&lt;/ref&gt;&lt;ref&gt;[http://www.telesphoreo.org/ Telesphoreo Tangelo documentation]&lt;/ref&gt;
+
+== Usage ==
+There is no single &quot;apt&quot; program; apt is itself the package name containing the set of tools (and requiring the libraries) that support its functionality.  A significant part of apt is a [[C++]] library of functions (another package known as ''libapt'') which are used by these related front-end programs for dealing with packages, such as &lt;code&gt;apt-get&lt;/code&gt; and &lt;code&gt;apt-cache&lt;/code&gt;. They are commonly used in examples due to their simplicity and ubiquity; apt-get and apt-cache are of &quot;''important''&quot; priority in all current Debian releases, and are therefore installed in a default Debian installation.  Apt can be functionally considered to be a front-end to &lt;code&gt;[[dpkg]]&lt;/code&gt;, and a friendlier front end to this than &lt;code&gt;[[dselect]]&lt;/code&gt;.  While &lt;code&gt;dpkg&lt;/code&gt; performs actions on individual packages, apt tools manage relations (especially dependencies) between them, as well as sourcing and management of higher-level versioning decisions (release tracking and version pinning).
+
+APT is often hailed as one of Debian's best features.&lt;ref&gt;{{ cite web
+ | title = An apt-get primer | url = http://www.linux.com/archive/feed/40745 | archiveurl = http://www.webcitation.org/5p6i2iySC | archivedate = 2010-04-19 | first = Bruce | last = Byfield | date = 2004-12-09 }}&lt;/ref&gt;&lt;ref&gt;{{cite web
+ | title = From the archives: the best distros of 2000 | url = http://www.tuxradar.com/content/archives-best-distros-2000 | publisher = Tux Radar}}&lt;/ref&gt;&lt;ref&gt;{{cite web
+ | title = Migrating to Debian | url = http://www.linux.ie/lists/pipermail/cork/2004-January/003744.html | first = David | last = Dorgan | publisher=linux.ie | date = 2004-01-19 | archiveurl = http://www.webcitation.org/5p6ikqQPs | archivedate = 2010-04-19 }}&lt;/ref&gt;&lt;ref&gt;{{cite web
+ | title = Mobile Linux development with Familiar and a minimal Debian | url = http://www.vieka.com/mobiletux/debian.htm | publisher = Mobile Tux}}&lt;/ref&gt; It is remarked that this quality comes from the strict quality controls of Debian policy.&lt;ref&gt;[http://people.debian.org/~srivasta/talks/why_debian/talk.html Why Debian]&lt;/ref&gt;&lt;ref&gt;[http://www.debian.org/doc/debian-policy/ Debian policy manual]&lt;/ref&gt;
+
+A major feature in APT is the way it calls dpkg â it does [[topological sorting]] of the list of packages to be installed or removed and calls dpkg in the best possible sequence. In some cases, it utilizes the &lt;tt&gt;--force&lt;/tt&gt; options in dpkg. However, it only does this when it is unable to calculate how to avoid the reason dpkg requires the action to be forced.
+
+The most used &lt;code&gt;apt-get&lt;/code&gt; commands are &lt;code&gt;apt-get install ''package-name''&lt;/code&gt; (frequently the &lt;code&gt;''package-name''&lt;/code&gt; is simply the name of the desired executable application), &lt;code&gt;apt-get update&lt;/code&gt;, &lt;code&gt;apt-get upgrade&lt;/code&gt; and &lt;code&gt;apt-get dist-upgrade&lt;/code&gt;.
+
+=== Installation of software ===
+An install directive is followed by the name of one or more packages desired for installation. Each package name is phrased as just the name portion of the package, not a fully qualified filename (for instance, in a Debian GNU/Linux system, libc6 would be the argument provided, not &lt;tt&gt;libc6_1.9.6-2.deb&lt;/tt&gt;). Notably, all packages containing dependencies required by the package(s) specified for installation will also be automatically retrieved and installed.  This was an original distinguishing characteristic of apt-based package management systems whereby software installation failure due to missing dependencies, a type of [[dependency hell]], was specifically avoided.
+
+Another such distinction is remote repository retrieval of packages.  A location configuration file (&lt;tt&gt;/etc/apt/sources.list&lt;/tt&gt;) is used to locate the desired packages and retrieve them, and also obtain information about available (but uninstalled) packages.
+
+Other command option features (switches) may be used to override decisions made by apt-get's conflict resolution system. If a hyphen is appended to the package name (with no intervening space), the identified package will be removed if it is installed. Similarly, a plus sign can be used to designate a package to install. A specific version of a package can be selected for installation by following the package name with an equals and the version of the package to select. This will cause that version to be located and selected for install. Alternatively a specific distribution can be selected by following the package name with a slash and the version of the distribution or the archive name (stable, testing, unstable).
+
+Both of the version selection mechanisms can downgrade packages and must be used with care.
+
+Finally, the &lt;tt&gt;apt_preferences&lt;/tt&gt; mechanism allows creating an alternative installation policy for individual packages.
+
+If no package matches the given expression and the expression contains one of '&lt;code&gt;.&lt;/code&gt;', '&lt;code&gt;?&lt;/code&gt;' or '&lt;code&gt;*&lt;/code&gt;', it is assumed to be a POSIX regular expression and it is applied to all package names in the database. Any matches are then installed (or removed). Note that matching is done by substring, so &quot;&lt;code&gt;lo.*&lt;/code&gt;&quot; matches &quot;how-lo&quot; and &quot;lowest&quot;. If this is undesired, the regular expression can be anchored with a '&lt;code&gt;^&lt;/code&gt;' or '&lt;code&gt;$&lt;/code&gt;' character, or a more specific regular expression can be created.
+
+=== Update, upgrade and dist-upgrade ===
+
+* '''update''' is used to resynchronize the '''package index''' files from their sources. The lists of available packages are fetched from the location(s) specified in &lt;tt&gt;/etc/apt/sources.list&lt;/tt&gt;. For example, when using a Debian archive, this command retrieves and scans the &lt;tt&gt;Packages.gz&lt;/tt&gt; files, so that information about new and updated packages is available. An update should always be performed before a safe-upgrade or dist-upgrade. Be aware that the overall progress meter will not always be correct as the size of the package files cannot be known in advance.
+
+* '''upgrade''' is used to install the newest versions of all packages currently installed on the system from the sources enumerated in &lt;tt&gt;/etc/apt/sources.list&lt;/tt&gt;. Packages currently installed with new versions available are retrieved and upgraded; under no circumstances are currently installed packages removed, or packages not already installed retrieved and installed. New versions of currently installed packages that cannot be upgraded without changing the install status of another package will be left at their current version. An update must be performed first, so that apt-get knows that new versions of packages are available.
+
+* '''dist-upgrade''', in addition to performing the function of upgrade, also intelligently handles changing dependencies with new versions of packages; apt-get has a &quot;smart&quot; conflict resolution system, and it will attempt to upgrade the most important packages at the expense of less important ones if necessary. The &lt;tt&gt;/etc/apt/sources.list&lt;/tt&gt; file contains a list of locations from which to retrieve desired package files.&lt;ref&gt;[http://linux.die.net/man/8/apt-get die.net Linux Man pages]&lt;/ref&gt;  [[aptitude (program)|aptitude]] has a smarter dist-upgrade feature called full-upgrade.&lt;ref&gt;[http://forums.debian.net/viewtopic.php?f=10&amp;t=39379 Discussion on dist-upgrade vs. full-upgrade]&lt;/ref&gt;
+
+== Configuration and files==
+
+&lt;tt&gt;/etc/apt&lt;/tt&gt; has the apt configuration folders and files.
+
+''apt-config'' is the APT Configuration Query program.&lt;ref&gt;[http://www.debianadmin.com/manpages/aptconfigmanpage.htm Apt-Config&lt;!-- Bot generated title --&gt;]&lt;/ref&gt; &lt;code&gt;apt-config dump&lt;/code&gt; shows the configuration.&lt;ref&gt;[http://www.debianadmin.com/query-apt-configuration-using-apt-config.html Query APT Configuration Using apt-config - Debian Admin&lt;!-- Bot generated title --&gt;]&lt;/ref&gt;
+
+=== Files ===
+* &lt;tt&gt;/etc/apt/sources.list&lt;/tt&gt;: Locations to fetch packages from.
+* &lt;tt&gt;/etc/apt/sources.list.d/&lt;/tt&gt;: Additional source list fragments.
+* &lt;tt&gt;/etc/apt/apt.conf&lt;/tt&gt;: APT configuration file.
+* &lt;tt&gt;/etc/apt/apt.conf.d/&lt;/tt&gt;: APT configuration file fragments.
+* &lt;tt&gt;/etc/apt/preferences&lt;/tt&gt;: version preferences file. This is where you would specify &quot;[[APT Pinning|pinning]]&quot;, i.e. a preference to get certain packages from a separate source or from a different version of a distribution.
+* &lt;tt&gt;/var/cache/apt/archives/&lt;/tt&gt;: storage area for retrieved package files.
+* &lt;tt&gt;/var/cache/apt/archives/partial/&lt;/tt&gt;: storage area for package files in transit.
+* &lt;tt&gt;/var/lib/apt/lists/&lt;/tt&gt;: storage area for state information for each package resource specified in &lt;tt&gt;sources.list&lt;/tt&gt;
+* &lt;tt&gt;/var/lib/apt/lists/partial/&lt;/tt&gt;: storage area for state information in transit.
+
+== Sources ==
+
+APT relies on the concept of [[Software repository|repositories]] in order to find software and resolve dependencies. For apt, a repository is a directory containing packages along with an index file. This can be specified as a networked or CDROM location.  The Debian project keeps a central repository of over 25,000 software packages ready for download and installation.
+
+For extra packages, any number of additional repositories can be added to APT's ''sources.list'' configuration file (&lt;tt&gt;/etc/apt/sources.list&lt;/tt&gt;) and then be queried by APT. Graphical front-ends often allow modifying &lt;tt&gt;sources.list&lt;/tt&gt; more simply (apt-setup). Once a package repository has been specified (like during the system installation), packages in that repository can be installed without specifying a source.
+
+In addition to network repositories, [[Compact Disc|compact discs]] and other storage media (USB keydrive, hard disks...) can be used as well, using apt-cdrom &lt;ref&gt;[http://ccrma.stanford.edu/planetccrma/man/man8/apt-cdrom.8.html apt-cdrom&lt;!-- Bot generated title --&gt;]&lt;/ref&gt; or adding &lt;tt&gt;file:/&lt;/tt&gt;&lt;ref&gt;i.e. Deb file:/mnt/install stable main contrib. non-free&lt;/ref&gt; to the source list file. Apt-cdrom can specify a different folder than a cd-rom, using the &lt;tt&gt;-d&lt;/tt&gt; option (i.e. a hard disk or a USB keydrive). The Debian CDs available for download contain Debian repositories. This allows non-networked machines to be upgraded. Also one can use apt-zip.
+
+Problems may appear when several sources offer the same package(s). Systems that have such possibly conflicting sources can use APT pinning to control which sources should be preferred.
+
+== APT pinning ==
+
+The ''APT pinning'' feature allows administrators to force APT to choose particular versions of packages which may be available in different versions from different repositories. This allows administrators to ensure that packages are not upgraded to versions which may conflict with other packages on the system, or that have not been sufficiently tested for unwelcome changes.
+
+In order to do this, the ''pins'' in APT's ''preferences'' file (&lt;tt&gt;/etc/apt/preferences&lt;/tt&gt;) must be modified,&lt;ref&gt;{{ cite web | url = http://wiki.debian.org/AptPreferences | title = Apt Pinning | publisher = Debian Wiki | accessdate = 2006-09-19 }}&lt;/ref&gt; although graphical front-ends often make pinning simpler.
+
+==Front-ends==
+[[Image:Synaptic Package Manager.png|thumb|300px|[[Synaptic Package Manager]] is one of the frontends available for APT]]
+Several other [[front-end]]s to APT exist, which provide more advanced installation functions and more intuitive interfaces. These include:
+* ''[[Synaptic Package Manager]]'', a [[GTK+]] [[graphical user interface]]
+* ''[[Ubuntu Software Center]]'', a [[GTK+]] [[graphical user interface]] replacement for Synaptic
+* ''[[aptitude (program)|aptitude]]'', a versatile alternative to [[dselect]]
+* ''[[KPackage]]'', part of [[KDE]]
+* ''[[Adept Package Manager]]'', a graphical user interface for [[KDE]] (deb, rpm, bsd)
+* ''[[PackageKit]]'', a [[freedesktop.org]] frontend.
+* ''[[GDebi]]'', a GTK-based tool sponsored for Ubuntu. (There is also a Qt version, available in the Ubuntu repositories a gdebi-kde.)
+* ''apt-cdrom'', a way to add a new CDROM to APT's list of available sources.lists (list of available repositories). It is necessary to use apt-cdrom to add CDs to the APT system, it cannot be done by hand.
+* ''[[apt-zip]]'', a way to use apt with [[removable media]], specifically [[USB flash drive]]s.
+* ''apt:foo'', an interface for downloading and installing software by clicking on a web-link (experimental) &lt;ref&gt;[http://cafelinux.org/OzOs/node/3  OzOS | apt:foo&lt;!-- Bot generated title --&gt;]&lt;/ref&gt;
+* ''gnome-apt'', a gtk/[[GNOME]]-widget-based graphical front-end.
+* ''[[Cydia]]'', a package manager for [[iOS jailbreaking|jailbroken iOS]] partially based on APT (ported to iOS as part of the Telesphoreo project).&lt;ref&gt;[http://www.saurik.com/id/1 &quot;Bringing Debian APT to the iPhone&quot; by Jay Freeman (saurik]&lt;/ref&gt;&lt;ref&gt;[http://www.telesphoreo.org/ Telesphoreo Tangelo documentation]&lt;/ref&gt;
+* ''Hildon Application Manager (Maemo Application)'', a [[Maemo]] front-end
+* ''[https://launchpad.net/aptdaemon APT Daemon]'', a front-end that runs as a [[Daemon (software)|service]] to allow standard users to install software through [[PolicyKit]] and is in turn the framework that the [[Ubuntu Software Center]] (along with the [[Linux Mint#Software developed by Linux Mint|Linux Mint Software Manager]]) uses to not be [[Superuser|root]] and still run.
+
+APT front-ends can:
+* Search for new packages.
+* Upgrade packages.
+* Install or remove packages.
+* Upgrade the whole system to a new release.
+
+APT front-ends can list the dependencies of packages being installed or upgraded, ask the administrator if packages recommended or suggested by newly installed packages should be installed too, automatically install dependencies and perform other operations on the system such as removing obsolete files and packages.
+
+== History ==
+The original effort that led to the apt-get program was the [[dselect]] replacement project known by its codename ''deity''.&lt;ref name = &quot;d-u 1997-04&quot;&gt;[http://lists.debian.org/debian-user/1997/04/msg00786.html  Deity Mailing List], 1997-04.&lt;/ref&gt; This project was commissioned by Brian White, the Debian Release Manager at the time. The very first functional version of apt-get was called dpkg-get and was only intended to be a test program for the core library functions that would underpin the new UI.&lt;ref name = &quot;deity 1998-03&quot;&gt;[http://lists.debian.org/deity/1998/03/msg00013.html  Deity Mailing List], 1998-03.&lt;/ref&gt;
+
+Much of the original development of APT was done on IRC, so records have been lost. The 'Deity Creation Team' mailing list archives include only the major highlights.
+
+The Deity name was abandoned as the official name for the project due to concerns over the religious nature of the name. The APT name was eventually decided after considerable internal and public discussion. Ultimately the name was proposed on IRC, accepted and then finalized on the mailing lists.&lt;ref name = &quot;deity 1998-03 106&quot;&gt;[http://lists.debian.org/deity/1998/03/msg00106.html  Deity Mailing List], 1998-03.&lt;/ref&gt; As originally used, APT is not an acronym, but a proper name. The name gained mindshare during IRC discussions{{Citation needed|date=June 2007}} due to the variety of possible acronym expansions and it was ultimately decided that the official use of APT would be as a proper name and no official expansion would ever be presented by the team.
+
+APT was introduced in 1998 and original test builds were circulated on IRC. The first Debian version that included it was Debian 2.1, released on 9 March 1999.&lt;ref&gt;{{ cite web | title = A Brief History of Debian | url = http://debian.org/doc/manuals/project-history/ch-detailed.en.html#s4.1 | publisher = Debian.org }}&lt;/ref&gt;
+
+In the end the original goal of the Deity project of replacing the [[dselect]] UI was a failure. Work on the user interface (UI) portion of the project was abandoned (the UI directories were removed from the [[Concurrent Versions System|CVS]] system) after the first public release of apt-get. The response to APT as a dselect method and a command line utility was so great and positive that all development efforts focused on maintaining and improving the tool. It was not until much later that several independent people built UIs on top of the capable libapt-pkg.
+
+The final push of the first APT era was to build a complete dpkg replacement (libapt-inst). This project was also a failure, however the partial code found a use as part of the secretive 'Project Betsy' program, which resulted in the highly efficient apt-ftparchive and libapt python bindings. After this, the original author faded away and maintainership of APT languished.
+
+Eventually, a new team picked up the project, began to build new features and released version 0.6 of APT which introduced the Secure APT feature, using strong [[GNU Privacy Guard|cryptographic]] [[Digital signature|signing]] to authenticate the package repositories.&lt;ref&gt;{{cite web | url=http://wiki.debian.org/SecureApt | title=Secure APT | publisher = Debian Wiki | accessdate=2006-09-05}}&lt;/ref&gt;
+
+== See also ==
+{{Portal|Free software}}
+* [[AppStream]]
+* [[Package management system]]
+* [[apt-file]]
+* [[apt-rpm]]
+* [[Alien (software)|Alien]]
+* [[Linux Standard Base]]
+* [[PackageKit]]
+* [[Pkgsrc]]
+* [[Wajig]]
+* [[APTonCD]]
+* [[Ubuntu Software Center]]
+
+==References==
+{{Reflist|colwidth=30em}}
+
+==External links==
+* [http://linux.die.net/man/8/apt-get apt-get Manual page]
+* [http://www.debian.org/doc/manuals/apt-howto/ APT HOWTO]
+* [http://linux.die.net/man/8/apt-cache apt-cache]
+* [http://linux.die.net/man/5/apt.conf apt.conf]
+* [http://linux.die.net/man/5/apt_preferences apt_preferences]
+* [https://launchpad.net/python-apt Python-apt]
+* [http://www.fifi.org/doc/apt/offline.html/index.html Using apt offline]
+* [http://wiki.debian.org/AptZip apt-zip]:
+** [http://lists.debian.org/deity/2006/03/msg00090.html Offline functionality].
+* [http://apt-offline.alioth.debian.org apt-offline]
+* [http://www.debianadmin.com/adding-source-lists-using-apt-setup.html Adding source lists using apt-setup]
+* [http://linux.die.net/man/8/apt-cdrom apt-cdrom]
+* [https://launchpad.net/apturl/ apturl]
+
+{{debian}}
+
+[[Category:Dpkg]]
+[[Category:Free package management systems]]
+[[Category:Free software programmed in C++]]
+[[Category:Free cross-platform software]]
+[[Category:Linux package management-related software]]
+[[Category:Ubuntu (operating system)]]
+
+[[ar:Ø£Ø¯Ø§Ø© Ø§ÙØ­Ø²Ù Ø§ÙÙØªÙØ¯ÙØ©]]
+[[az:Advanced Packaging Tool]]
+[[bn:à¦à§à¦¯à¦¾à¦¡à¦­à¦¾à¦¨à§à¦¸à¦¡ à¦ªà§à¦¯à¦¾à¦à§à¦à¦¿à¦ à¦à§à¦²]]
+[[bg:Apt]]
+[[ca:Advanced Packaging Tool]]
+[[cs:Advanced Packaging Tool]]
+[[de:Advanced Packaging Tool]]
+[[el:APT]]
+[[es:Advanced Packaging Tool]]
+[[eo:Advanced Packaging Tool]]
+[[eu:Advanced Packaging Tool]]
+[[fa:Ø§Ø¨Ø²Ø§Ø± Ø¨Ø³ØªÙâØ¨ÙØ¯Û Ù¾ÛØ´Ø±ÙØªÙ]]
+[[fr:Advanced Packaging Tool]]
+[[gl:APT]]
+[[ko:ì´ëë°´ì¤ë í¨í¤ì§ í´]]
+[[is:Advanced Packaging Tool]]
+[[it:Advanced Packaging Tool]]
+[[lv:Advanced Packaging Tool]]
+[[hu:Advanced Packaging Tool]]
+[[nl:Advanced Packaging Tool]]
+[[ja:APT]]
+[[no:Advanced Packaging Tool]]
+[[pl:Advanced Packaging Tool]]
+[[pt:Advanced Packaging Tool]]
+[[ru:Advanced Packaging Tool]]
+[[simple:Advanced Packaging Tool]]
+[[sk:Advanced Packaging Tool]]
+[[fi:Advanced Packaging Tool]]
+[[sv:Advanced Packaging Tool]]
+[[tr:GeliÅmiÅ Paketleme AracÄ±]]
+[[uk:Advanced Packaging Tool]]
+[[vi:Advanced Packaging Tool]]
+[[zh:é«çº§åè£å·¥å·]]</rev></revisions></page></pages></query></api>

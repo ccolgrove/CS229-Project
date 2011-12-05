@@ -1,0 +1,55 @@
+<?xml version="1.0"?><api><query><redirects><r from="AppBundle" to="Application directory" /></redirects><pages><page pageid="3668017" ns="0" title="Application directory"><revisions><rev xml:space="preserve">{{Citations missing|date=October 2011}}[[File:RISC_OS_Application_Directory_-_!Draw.png|thumb|71px|An example RISC OS application directory - !Draw]]
+
+An '''application directory''' is a grouping of [[software]] [[Object file|code]], help files and resources that together comprise a complete [[Software package (installation)|software package]] but are presented to the user as a single object.
+
+They are currently used in [[RISC OS]] and the [[ROX Desktop]], and also form the basis of the [[Zero Install]] application distribution system. Similar technology includes [[VMware ThinApp]], [[RUNZ]], and the [[NEXTSTEP]]/[[GNUstep]]/[[Mac OS X]] concept of [[application bundle]]s. Their heritage lies in the system for automatically launching software stored on [[floppy disk]] on [[Acorn]]'s earlier 8-bit micros such as the [[BBC Micro]] (the ''!BOOT'' file).
+
+Bundling various files in this manner allows tools for manipulating applications to be replaced by tools for manipulating the [[file system]]. Applications can often be &quot;installed&quot; simply by dragging them from a distribution medium to a hard disk, and &quot;uninstalled&quot; by deleting the application directory.
+
+==Fixed contents==
+[[File:RISC_OS_Application_Directory_-_!Draw_Contents.png|thumb|300px|RISC OS: Contents of the !Draw application directory]]
+[[File:RISC_OS_Application_Directory_-_!Draw_Sprites.png|thumb|300px|RISC OS: Contents of !Draw's ''!Sprites22'' file]]
+
+In order to support user interaction with application directories, several files have special status.
+
+===Application binaries===
+Launching an application directory causes the included file ''AppRun'' (ROX Desktop) or ''!Run'' (RISC OS) to be launched. On RISC OS this is generally an Obey file (a RISC OS command script) which allocates memory and loads OS extension modules and [[shared libraries]] before executing the application binary, usually called ''!RunImage''. Under the ROX Desktop, it is not uncommon for it to be a [[shell script]] that will launch the correct system binary if available or compile a suitable binary from source otherwise.
+
+===Help files and icons===
+Both RISC OS and the ROX Desktop allow the user to view help files associated with an application directory without launching the application. RISC OS relies on a file in the directory named ''!Help'' which is launched as if the user double-clicked on it when help is requested (and can be any format the system understands, but plain text and !Draw formats are common), while the ROX Desktop opens the applicationâs ''Help'' subdirectory.
+
+Similarly, custom icons for the Application Directory may be contained within itâeither ''.DirIcon'' (in any supported image format) or ''AppIcon.xpm'' under the ROX Desktop, or ''!Sprites'' and optionally ''!Sprites22'' under RISC OS. The RISC OS Filer automatically loads these sprite files in the absence of a ''!Boot'' file, otherwise it is left to the ''!Boot'' file to load the appropriate icons.
+
+===!Boot===
+[[File:RISC_OS_Application_Directory_-_!Draw_Files.png|thumb|300px|RISC OS: !Draw's !Boot, !Run and !Help files]]
+
+RISC OS application directories may contain a file named ''!Boot'' which is executed by the ''Filer'' either explicitly via the '''FilerBoot''' command, or when the bundle is first displayed (unless the user held [[Control key|Control]] when opening that ''Filer'' window, which defeats application booting&lt;ref&gt;{{cite web |url=http://acorn.riscos.com/riscos3/37/37DiscImage/Manuals/Manual/BOOKB/BOOK_3.HTM#MARKER-2-14 |title=RISC OS 3.7 User Guide, 1 The desktop |publisher=Acorn legacy FTP site |accessdate=1 November 2009}}&lt;/ref&gt;).
+
+This allows an application to do tasks such as register supported filetypes (by defining their name, setting command aliases for running or printing them and loading appropriate icons), or choose to load different icons such as ''ASprites'' (icons with an alpha channel for RISC OS Select), ''5Sprites'' (icons with a RISC OS 5 appearance) or theme-specific icons.
+
+''!Boot'' files are the most popular propagation [[vector (malware)|vector]] for such RISC OS [[computer virus|virus]]es as exist (such as the well-known Extend virus), though they can be defeated simply by holding ''Control''.
+
+The ''!Boot'' feature is not duplicated by the ROX Desktop.
+
+===The RISC OS !Boot system directory===
+Acorn's early machines allowed a medium to be &quot;booted&quot; (automatically run) by executing a file called ''!BOOT'' if present (this action, &quot;booting a disc&quot;, was toggled with the [[Shift key|Shift]], and hence became known as ''shift-booting''). This was exploited in the RISC OS disc structure by having an application directory in the root of the default disc called ''!Boot''.
+
+This ''application directory'' is executed (run) when the machine boots (if so configured), therefore causing its !Run file to be executed (i.e. ''$.!Boot.!Run'' in Acorn [[Path (computing)|pathname]] syntax). This file then causes various files to be executed, OS modules loaded, standard icons to be loaded and filetypes defined, and defines a number of standard [[Environment variable|variables]] through which its various subdirectories are accessed. Thus RISC OS's entire boot sequence can be avoided merely by holding Shift.
+
+==Notes==
+{{Reflist}}
+
+==See also==
+*[[Bundle (NEXTSTEP)]]
+*[[Application Virtualization]]
+*[[Portable application creators]]
+*[[RUNZ]]
+* {{it}} [[:it:SpatialBundle|SpatialBundle at the italian wikipedia]]
+
+==External links==
+* [http://rox.sourceforge.net/Manual/Manual/Manual.html#AppDir ROX-Filer User Manual: Application directories]
+
+[[Category:Source code]]
+[[Category:Software distribution]]
+
+[[it:Application directory]]</rev></revisions></page></pages></query></api>

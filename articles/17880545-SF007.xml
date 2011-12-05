@@ -1,0 +1,84 @@
+<?xml version="1.0"?><api><query><redirects><r from="VMware Virtual Desktop Infrastructure" to="VMware View" /></redirects><pages><page pageid="20872016" ns="0" title="VMware View"><revisions><rev xml:space="preserve">{{Infobox Software
+| name = VMware View
+| logo =
+| screenshot =
+| caption =
+| collapsible =
+| author = [[VMware]]
+| developer = VMware
+| released =
+| latest release version = 4.5 (build 293049)
+| latest release date = {{release date|2010|09|09}}
+| latest preview version =
+| latest preview date =
+| frequently updated =
+| programming language =
+| operating system = [[Microsoft Windows|Windows]]
+| platform =
+| size =
+| language =
+| status = Active
+| genre = [[Desktop virtualization]]
+| license = Commercial, [[Proprietary software|Proprietary]]
+| website = [http://vmware.com/products/view/ vmware.com/products/view/]
+}}
+
+In [[computing]], '''VMware View''' is a commercial [[desktop virtualization | desktop-virtualization]] product developed by [[VMware|VMware, Inc]]. Its first two releases (2.0.0 and 2.1.0)  sold under the name '''VMware VDM''', but with the 3.0.0 release in 2008&lt;ref&gt;
+{{cite web
+| url         = http://www.vmware.com/company/news/releases/vmware_view_3.html
+| title       = VMware Announces General Availability of VMware View 3, with Ground-Breaking Advances in Managing, Scaling and Personalizing Virtual Desktop Environments
+| date        = 2008-12-02
+| work        = VMware News Release
+| publisher   = VMware
+| location    = Palo Alto
+| accessdate  = 2010-08-12
+| quote       = PALO ALTO, Calif., December 2, 2008 â VMware Inc. [...] today announced the general availability of VMware View 3 [...]
+}}
+&lt;/ref&gt;
+VMware Inc. changed the name to &quot;VMware View&quot;.
+
+'''VMware View''' provides remote desktop capabilities to users using VMware's virtualization technology.  A client desktop operating system - typically Microsoft Windows 7, Vista or XP - are run within a virtual environment on a server.  The VMware View product has a number of components which are required to provide the virtual desktops, including:
+* VMware vSphere for Desktops (includes ESX/ESXi virtualization)
+* VMware vCenter Server (management of virtualization environment)
+* View Composer (advanced View management, with automation and cloning)
+* View Manager (administration of the View Environment) 
+* View Client(communication between view and the desktop OS)
+
+In order to transport a view of the desktop to users, keyboard, video, mouse and other interactions are sent over a LAN connection.  Protocols supported for this are both the Microsoft-developed RDP ([[Remote Desktop Protocol]]), along with the [[PCoIP]] protocol.  Access is also supported through any HTML5 compliant browser.&lt;ref&gt;
+{{cite web
+| url         = http://communities.vmware.com/thread/308262
+| title       = VMware Community
+}}&lt;/ref&gt;
+
+Client connections to VMware View sessions are established by running a VMware View Client on a local host. Clients are supported for most versions of Windows, along with Mac OS X.  Specific embedded clients are also supported for a large number of thin clients, for a list of supported clients refer to the VMware website.&lt;ref&gt;
+{{cite web
+| url         = http://www.vmware.com/resources/compatibility/search.php?deviceCategory=vdm
+| title       = VMware View 4.5 HCL for thin devices
+}}&lt;/ref&gt;  
+
+An [[open-source]] product called &quot;VMware View Open Client&quot; can connect from a Linux or Mac OS X desktop to remote Windows desktops managed by VMware View.&lt;ref&gt;
+[http://blogs.vmware.com/view/2009/02/vmware-view-open-client---now-available.html VMware: VMware View: VMware View Open Client - Now Available]&lt;/ref&gt;
+
+An [[HTML5]] Client for VMware View is available to enable access to VMware View desktops directly from within any [[HTML5]]-compatible web browser such as Safari, Chrome, IE and [[Firefox]] (for [[Windows]], Linux, Mac and [[Chrome OS]] devices, such as [[Chromebooks]]).&lt;ref&gt;
+{{cite web
+| url         = http://communities.vmware.com/message/1726653
+| title       =VMware Community - HTML5 Client for VMware View
+}}&lt;/ref&gt;
+
+== See also ==
+* [[Desktop_virtualization|Desktop Virtualization Software]]
+* [[List of VMware software]]
+
+== References ==
+{{Reflist}}
+
+== External links ==
+* [http://www.vmware.com/products/view/ Official site]
+* [http://code.google.com/p/vmware-view-open-client/ VMware View Open Client]
+
+{{DEFAULTSORT:Vmware View}}
+[[Category:Centralized computing]]
+[[Category:VMware]]
+
+
+[[ru:VMware_View]]</rev></revisions></page></pages></query></api>

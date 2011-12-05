@@ -1,0 +1,192 @@
+<?xml version="1.0"?><api><query><pages><page pageid="3440343" ns="0" title="Symfony"><revisions><rev xml:space="preserve">{{Infobox Software
+| name                   = Symfony
+| logo                   = [[Image:Symfony.gif|200px]]
+| screenshot             = [[Image:Symfony project.png|250px]]
+| caption                = Symfony default project
+| author                 = 
+| developer              = [http://www.sensio-labs.com/ Sensio Labs]
+| released               = {{release date|2005|10|22}}
+| latest release version = 2.0.6
+| latest release date    = {{release_date|2011|11|16}}
+| latest preview version = 
+| latest preview date    = 
+| operating system       = [[Cross-platform]]
+| platform               = 
+| language               = 
+| genre                  = [[Web application framework]]
+| license                = [[MIT License]]
+| website                = http://symfony.com/
+}}
+
+'''Symfony''' is a [[web application framework]] written in [[PHP]] which follows the [[model-view-controller]] (MVC) paradigm. Released under the [[MIT license]], Symfony is [[free software]]. The symfony-project.com website launched on October 18, [[2005]].&lt;ref&gt;[http://www.symfony-project.org/blog/2007/10/18/two-years-of-symfony Symfony Web PHP Framework Â» Blog Â» Two years of symfony&lt;!-- Bot generated title --&gt;]&lt;/ref&gt;
+
+Symfony should not be confused with [[Symphony CMS]], the [[Open Source]] [[XML]]/[[XSLT]] content management system.
+
+== Goal ==
+Symfony aims to speed up the creation and maintenance of web applications and to replace repetitive coding tasks. It requires a few prerequisites for installation: [[Unix]], [[Linux]], [[Mac OS]] or [[Microsoft Windows]] with a web server and PHP 5 installed. It is currently compatible with the following [[Object Relational Mapping|object-relational mapping]]s: [[Propel (PHP)|Propel]] and [[Doctrine (PHP)|Doctrine]].&lt;ref&gt;[http://www.symfony-project.org/doctrine/1_2/en/01-Getting-Started The symfony and Doctrine book]&lt;/ref&gt;
+
+Symfony has low performance overheads when dealing with an environment that supports a [[PHP accelerator]].
+
+Symfony is aimed at building robust applications in an enterprise context, and aims to give developers full control over the configuration: from the directory structure to the foreign libraries, almost everything can be customized. To match enterprise development guidelines, Symfony is bundled with additional tools to help developers test, debug and document projects.{{Citation needed|date=March 2009}}
+
+== Technical ==
+Symfony makes use of many common and well understood [[design patterns]], such as [[Model-View-Controller]]. Symfony was heavily inspired by other [[Web Application Framework]]s such as [[Ruby On Rails]], [[Django (web framework)|Django]] and [[Spring Framework|Spring]].&lt;ref&gt;http://symfony-reloaded.org/&lt;/ref&gt;
+
+Symfony makes heavy use of existing PHP open source projects as part of the framework, such as:
+* [[Propel (PHP)|Propel]] or [[Doctrine (PHP)|Doctrine]], as [[Object Relational Mapping]] layer
+* [[Creole (Software)|Creole]], [[Database abstraction layer]] (v 1.0 and 1.1, with [[Propel (PHP)|Propel]])
+* [[PHP Data Objects|PDO]] [[Database abstraction layer]] (1.1, with [[Doctrine (PHP)|Doctrine]] and  [[Propel (PHP)|Propel 1.3]])
+* PRADO, an event-driven PHP web application framework, for Internationalization support
+* Pake, command-line helper (v 1.0)
+* [[PHPUnit]], unit tester
+* [[Zend Framework]], Zend_Logger and the Zend_Cache are used for logging and caching respectively
+* [[Mojavi]], an [[Model-view-controller|MVC]] framework
+* [[Swift Mailer]], a mail library
+
+Symfony also makes use of its own components which are freely available on the [http://components.symfony-project.org/ Symfony Components site] for various other projects:
+* [http://components.symfony-project.org/yaml/documentation Symfony YAML], a yaml parser based upon [[Spyc]]
+* [http://components.symfony-project.org/event-dispatcher/documentation Symfony Event Dispacher]
+* [http://components.symfony-project.org/dependency-injection/documentation Symfony Dependency Injector], a [[Dependency injection|Dependency Injector]]
+* [http://components.symfony-project.org/templating/documentation Symfony Templating], a templating engine
+* [[Symfony Request Handeler]], a flexible micro-kernel
+
+Using plugins, Symfony is able to support [[JavaScript]] frameworks and many more PHP projects, such as:
+* [[Prototype JavaScript Framework|Prototype]] or [[jQuery]], as JavaScript framework
+* [[script.aculo.us]], for visual effects
+* [http://github.com/leafo/ PHP Less], a CSS parser based upon [http://lesscss.org/ Less]
+* [[TinyMCE]] or [[CKEditor]], for Rich Text Editing
+* [[TCPDF]], PHP library for generating PDF documents
+
+As of Symfony release 1.2, no JavaScript framework is selected as the default, leaving inclusion and implementation of a [[JavaScript]] library to the developers.
+
+== Sponsors ==
+Symfony is sponsored by Sensio, a [[France|French]] web agency.&lt;ref&gt;[http://www.sitepoint.com/print/symfony-beginners-tutorial Learn symfony: A Beginner's Tutorial&lt;!-- Bot generated title --&gt;]&lt;/ref&gt; The first name was Sensio Framework,&lt;ref&gt;[http://www.symfony-project.org/forum/index.php/mv/msg/906/3674/#msg_3674 Symfony framework forum: General discussion =&gt; New symfony tagline brainstorming&lt;!-- Bot generated title --&gt;]&lt;/ref&gt; and all classes were prefixed with sf. Later on when it was decided to launch it as [[open source]] [[Software framework|framework]], the brainstorming resulted in the name symfony (being renamed to Symfony from version 2 and on), the name which depicts the theme and class name prefixes.&lt;ref&gt;[http://www.symfony-project.org/forum/index.php?t=msg&amp;&amp;th=906&amp;goto=3674#msg_3674 Comments by Sensio Owner]&lt;/ref&gt;
+
+== Real-world usage ==
+Symfony is used by the open-source Q&amp;A service [[Askeet]] and [http://trac.symfony-project.org/wiki/ApplicationsDevelopedWithSymfony many more applications], including [[Delicious (website)|Delicious]]&lt;ref&gt;[http://www.symfony-project.org/blog/2007/10/02/delicious-preview-built-with-symfony Symfony Blog - Delicious Preview built with symfony]&lt;/ref&gt; and the 20 million users of [http://bookmarks.yahoo.com Yahoo! Bookmarks].&lt;ref&gt;[http://www.symfony-project.org/blog/2006/10/28/yahoo-bookmarks-uses-symfony Symfony Blog - Yahoo! Bookmarks uses symfony]&lt;/ref&gt; As of February 2009, [[Dailymotion.com]] has ported part of its code to use Symfony, and is continuing the transition.&lt;ref&gt;[http://www.symfony-project.org/blog/2009/02/18/dailymotion-powered-by-symfony Symfony Blog - Dailymotion, powered by symfony]&lt;/ref&gt;. Symfony2 is used by [http://opensky.com/ OpenSky], a social shopping platform.
+
+== Development roadmap ==
+The upcoming new release version of Symfony will include new features such as:
+
+* A new form generation framework, first introduced in version 1.2
+* A new admin generator (referred to as [[Scaffold (programming)|scaffolding]] in [[Ruby on Rails|Rails]]) which makes use of the new ''form framework'' and is no longer implemented as a helper.
+* Object relationship mapping declared in a separate plugin, rather than being integrated into the ORM
+* Choice of ORM (Doctrine or Propel, or a combination of the two)
+* Classes re-factored for looser coupling between objects, allowing for more user flexibility in using objects and fewer dependencies (similar in principle to the [[Zend Framework]]).
+* Routing rules and route objects more closely follow [[REST]] design principles.
+
+== Releases ==
+
+{| class=&quot;wikitable&quot;
+|-
+! Color
+! Meaning
+|-
+| style=&quot;background-color:#fa8072;&quot; | Red
+| Release no longer supported
+|-
+| style=&quot;background-color:#a0e75a;&quot; | Green
+| Release still supported
+|-
+| style=&quot;background-color:#87ceeb;&quot; | Blue
+| Future release
+|}
+
+{| class=&quot;wikitable&quot;
+! Version
+! Release date
+! Support
+! PHP version
+! End of maintenance
+! Notes
+|-
+| 1.0
+| align=&quot;right&quot; | January 2007
+| style=&quot;background-color:#fa8072&quot; | 3 years
+| align=&quot;right&quot; | &gt;= 5.0
+| align=&quot;right&quot; | January 2010
+|
+|-
+| 1.1
+| align=&quot;right&quot; | June 2008
+| style=&quot;background-color:#fa8072;&quot; | 1 year
+| align=&quot;right&quot; | &gt;= 5.1
+| align=&quot;right&quot; | June 2009
+| security-related patches will be applied until June 2010
+|-
+| 1.2
+| align=&quot;right&quot; | December 2008
+| style=&quot;background-color:#fa8072&quot; | 1 year
+| align=&quot;right&quot; | &gt;= 5.2
+| align=&quot;right&quot; | November 2009
+|
+|-
+| 1.3
+| align=&quot;right&quot; | November 2009
+| style=&quot;background-color:#fa8072;&quot; | 1 year
+| align=&quot;right&quot; | &gt;= 5.2.4
+| align=&quot;right&quot; | November 2010
+|
+|-
+| 1.4
+| align=&quot;right&quot; | November 2009
+| style=&quot;background-color:#a0e75a;&quot; | 3 years
+| align=&quot;right&quot; | &gt;= 5.2.4
+| align=&quot;right&quot; | January 2013
+| 1.4 is identical to 1.3, but does not support the 1.3 deprecated features.&lt;ref&gt;[http://www.symfony-project.org/blog/2009/08/06/about-symfony-1-3-and-symfony-1-4 Symfony Blog - About symfony 1.3 and 1.4]&lt;/ref&gt;
+|-
+| 2.0 &lt;ref&gt;[http://www.symfony-project.org/blog/2009/10/27/why-will-symfony-2-0-finally-use-php-5-3 Symfony blog - Why will Symfony 2.0 finally use PHP 5.3?]&lt;/ref&gt;
+| align=&quot;right&quot; | July 2011&lt;ref&gt;[http://symfony.com/blog/symfony-2-0 Symfony blog - Symfony2 release]&lt;/ref&gt;
+| style=&quot;background-color:#a0e75a;&quot; | 
+| align=&quot;right&quot; | &gt;= 5.3.2
+| align=&quot;right&quot; | 
+| 
+|-
+|}
+
+== See also ==
+*[[Comparison of web application frameworks]]
+*[[Lime unit testing framework]]
+
+== References ==
+{{Reflist}}
+
+==Further reading==
+*Potencier, Fabien and Zaninotto, FranÃ§ois. (2007). ''The Definitive Guide to symfony.'' [[Apress]]. ISBN 1-59059-786-9.
+*Potencier, Fabien. (2009). ''Practical symfony'' (2009). [[Sensio Labs Books]]. [[Doctrine (PHP)|Doctrine]] edition, ISBN 978-2-918390-06-0, [[Propel (PHP)|Propel]] edition, 978-2918390077, and Spanish edition available on lulu.com.
+*Fabien Potencier, Hugo Hamon: ''Symfony, Mieux dÃ©velopper en PHP avec symfony 1.2 et Doctrine'', Eyrolles 2009, ISBN 978-2-212-12494-1, French
+*[http://www.timothybowler.com Tim Bowler], Wojciech Bancer (2009). ''Symfony 1.3 Web Application Development'', [[Packt]]. ISBN 978-1-84719-456-5.
+
+== External links ==
+* [http://www.symfony-project.org Symfony Project Homepage]
+* [http://www.symfony-project.org/doc/1_4/ Symfony 1.4 Documentation]
+* [http://symfony-blog.org.ua/ Symfony lessons]{{ref-ru}}
+* [http://symfony.com/ Symfony2 Homepage]
+* [http://www.symfony2.com Symfony2 News Updates]
+* [http://tigor.com.ua/ Symfony Blog Developer]
+* [http://symfonians.net/ Symfonians.net - A Community of Projects Using the Symfony Framework]
+* [http://symfonylab.com/ SymfonyLab.com - Symfony tips and tricks, free plugins]
+* [http://www.mobicules.com/symfony-development/codeigniter-vs-symfony-quick-roundup/ Mobicules.com - CodeIgniter vs Symfony - quick roundup]
+* {{Dmoz|Computers/Programming/Languages/PHP/Scripts/Frameworks/Symfony/|Symfony}}
+
+{{Application frameworks}}
+
+[[Category:PHP programming language]]
+[[Category:PHP Frameworks]]
+[[Category:Software using the MIT license]]
+[[Category:Web application frameworks]]
+
+[[bg:Symfony]]
+[[cs:Symfony]]
+[[de:Symfony]]
+[[es:Symfony]]
+[[fa:Ø³ÛÙÙÙÙÛ]]
+[[fr:Symfony]]
+[[it:Symfony]]
+[[ja:Symfony]]
+[[pl:Symfony]]
+[[pt:Symfony]]
+[[ru:Symfony]]
+[[tr:Symfony]]
+[[uk:Symfony]]
+[[zh:Symfony]]</rev></revisions></page></pages></query></api>

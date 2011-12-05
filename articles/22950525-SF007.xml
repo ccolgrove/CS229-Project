@@ -1,0 +1,32 @@
+<?xml version="1.0"?><api><query><redirects><r from="GNOME-VFS" to="GnomeVFS" /></redirects><pages><page pageid="576729" ns="0" title="GnomeVFS"><revisions><rev xml:space="preserve">{{lead too short|date=November 2010}}
+{{primarysources|date=November 2010}}
+'''GnomeVFS''' is short for [[GNOME]] Virtual File System. It provides an [[Abstraction (computer science)|abstraction layer]] for the reading, writing and execution of files. It was primarily used by the [[Nautilus file manager]] and other [[List of GNOME applications|GNOME applications]] before GNOME 2.22.
+
+A cause of confusion is the fact that the [[file system]] abstraction used by the [[Linux kernel]] is also called the [[virtual file system]] (VFS) layer. This is however at a lower level.
+
+A replacement&lt;ref&gt;[http://mail.gnome.org/archives/gtk-devel-list/2006-September/msg00072.html GnomeVFS shortcomings]&lt;/ref&gt; called [[GVFS]]&lt;ref&gt;[http://live.gnome.org/GioToDo Gio TODO]&lt;/ref&gt; is currently in development which also allows partitions to be mounted through [[Filesystem in Userspace|FUSE]].&lt;ref&gt;[http://mail.gnome.org/archives/gtk-devel-list/2007-February/msg00062.html gvfs status report, Alexander Larsson, mail.gnome.org, February 15, 2007]&lt;/ref&gt;
+
+{{As of|2008|4}}, the GNOME project has declared GnomeVFS [[deprecation|deprecated]] in favour of [[GVFS]] and [[GIO (GNOME)|GIO]], requesting that developers not use it in new applications.&lt;ref&gt;GNOME 2.22 Release Notes, [http://library.gnome.org/misc/release-notes/2.22/#sect:gvfs-gio 6.1: GVFS and GIO]&lt;/ref&gt;
+
+==References==
+{{Reflist}}
+
+==External links==
+{{Portal|Free software}}
+* [http://developer.gnome.org/doc/API/2.0/gnome-vfs-2.0/ GnomeVFS - Filesystem Abstraction library documentation]
+* [http://developer.imendio.com/wiki/Writing_GnomeVFS_Modules Writing GnomeVFS Modules]
+* [http://live.gnome.org/GnomeVfsPlans Future Gnome VFS]
+
+{{GNOME}}
+
+[[Category:GNOME]]
+
+{{GNOME-stub}}
+
+[[es:GNOME VFS]]
+[[fr:GnomeVFS]]
+[[it:GNOME VFS]]
+[[nl:GnomeVFS]]
+[[ja:GnomeVFS]]
+[[pl:GnomeVFS]]
+[[pt:GnomeVFS]]</rev></revisions></page></pages></query></api>

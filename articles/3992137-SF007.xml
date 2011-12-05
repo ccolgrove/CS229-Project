@@ -1,0 +1,72 @@
+<?xml version="1.0"?><api><query><pages><page pageid="3992137" ns="0" title="Windows Photo Gallery"><revisions><rev xml:space="preserve">{{for|the component of Windows Live Essentials|Windows Live Photo Gallery}}
+{{Infobox Windows component
+| name               = Windows Photo Gallery
+| logo               = Windows Photo Gallery logo.png
+| screenshot         = Windows Photo Gallery Vista.png
+| caption            = 
+| included_with      = [[Windows Vista]]
+| replaces           = [[Windows Picture and Fax Viewer]]
+| replaced_by        = 
+| related_components = [[Windows Live Photo Gallery]]
+}}
+'''Windows Photo Gallery''' is a [[Image organizer|photo management]], tagging, and editing tool developed by [[Microsoft]], and is included with all editions of [[Windows Vista]]. Themed photo slideshows with smooth transitions are only available in the Home Premium and Ultimate editions.
+
+Windows Photo Gallery is not based on [[Windows Picture and Fax Viewer]] but is a completely rewritten program based on the PIX engine which uses the [[Windows Imaging Component]] (WIC) library instead of GDI+. The underlying graphics engine pipeline has been overhauled &lt;ref&gt;[http://blogs.msdn.com/pix/archive/2006/05/30/611101.aspx Viewing photos in Windows Vista]&lt;/ref&gt; with support for large and high [[Color depth|bit depth]] [[High dynamic range imaging|HDR]] images. Windows Photo Gallery has native metadata handling and tagging support and since the Windows Imaging Component is extensible, it can organize and view any image format for which a third party WIC codec is installed. By default, it can view JPEG, BMP, PNG, TIFF and [[HD Photo]] images,&lt;ref&gt;[http://windows.microsoft.com/en-US/windows7/Understanding-picture-file-types Understanding Picture File Types]&lt;/ref&gt; as well as video. RAW image formats used by high-end professional cameras are also supported by installing their respective [[Windows Imaging Component|WIC codecs]]. Basic photo editing such as adjusting [[Exposure (photography)|exposure]], color, [[Red-eye effect|red eye]] and [[Cropping (image)|cropping]] can be done right within the application. Windows Photo Gallery also supports ICC V4 embedded color profiles and has [[Windows Color System]] support. However, legacy image formats such as WMF and EMF do not have their respective codecs available in WIC, and therefore cannot be viewed by default. Windows Photo Gallery can also view GIF images, but it shows animated GIFs as individual frames instead of a continuous animation; animated GIFs play properly in [[Internet Explorer]].
+
+In [[Windows 7]], the editing capabilities of Windows Photo Gallery have been removed and as such the program is called [[Windows Photo Viewer]].&lt;ref name=&quot;WPV&quot;&gt;[http://windows.microsoft.com/en-US/windows7/View-and-use-your-pictures-in-Windows-Photo-Viewer View and use your pictures in Windows Photo Viewer]&lt;/ref&gt; The full capabilities including editing and themed slideshows can be obtained by installing [[Windows Live Photo Gallery]].
+
+An upgraded version of Photo Gallery released under the [[Windows Live]] brand known as [[Windows Live Photo Gallery]], can be installed using the [[Windows Live Installer]], includes new features such as the viewing [[color histogram]] of an image, [[Panoramic photography|panoramic]] [[Image stitching|stitching]] and auto-tagging during importing and the ability to share photos by uploading them to [[Windows Live Spaces]] or [[Flickr]].
+
+== Features ==
+Windows Photo Gallery provides the ability to organize digital photo collection in its ''Gallery'' view, by adding titles, rating, captions, and custom [[metadata]] tags to photos. An ''Edit'' mode is also present, which allows photos to be edited for exposure or color correction. It also provides other basic [[Image editing|photo editing]] functions, such as resizing, cropping, red-eye reduction etc., and also allows printing photos, via the ''Photo Printing Wizard''. 
+
+There is limited support for tagging and managing video files, though not editing them. It integrates with [[Windows DVD Maker]] to provide integrated [[DVD]] burning features. Windows Photo Gallery can also be used to acquire photos and videos from digital cameras, scanners, and other sources.
+
+===Format support===
+Windows Photo Gallery uses the [[Windows Imaging Component]] framework, that can be used by any codec to integrate with the image handling capabilities of the operating system and other applications that use [[Windows Imaging Component|WIC]]. Windows Vista ships with codecs for common formats like [[BMP file format|BMP]], [[JPEG]], [[Portable Network Graphics|PNG]], [[TIFF]] and [[HD Photo]]. However, [[GIF]] images do not appear in the gallery.&lt;ref&gt;{{cite web| url = http://windowshelp.microsoft.com/Windows/en-US/Help/b2aab152-a3d0-4da5-81ae-dd97313a2ef41033.mspx#EJC | title = Windows Help and How-to: Choose which pictures and videos are displayed in Windows Photo Gallery | accessdate = 2007-04-28 | publisher = Microsoft}}&lt;/ref&gt;
+
+By means of [[Windows Imaging Component]] which is included in Windows Vista and also available for Windows XP, developers can provide support for any image format at the operating system level.&lt;ref&gt;{{cite web
+|url=http://blogs.msdn.com/pix/archive/2007/01/23/raw-support-in-windows-vista.aspx
+|title=RAW Support in Windows Vista
+|date=January 23, 2007
+|accessdate=2007-02-18
+|work=Microsoft PhotoBlog
+|publisher=MSDN Blogs
+}}&lt;/ref&gt;  Some camera vendors have developed WIC codecs for their proprietary RAW image formats. ''Windows Photo Gallery'' detects when a codec is needed, and provides a link to the relevant download location for the codec. If the appropriate codecs are installed, [[Raw image format|RAW images]] can be viewed by double-clicking them. However, Windows Photo Gallery does not automatically associate with RAW or other image file extensions for which codecs have been installed. Also, the touch-up capabilities are disabled for RAW images. As of November 2007, [[Canon (company)|Canon]], [[Nikon]], [[Sony]], [[Olympus Corporation|Olympus]] and [[Pentax]] have released WIC codecs.&lt;ref&gt;[http://windowsvistablog.com/blogs/windowsvista/archive/2007/02/15/understanding-raw-image-support-in-windows-vista.aspx Windows Vista Team Blog : Understanding RAW Image Support in Windows Vista&lt;!-- Bot generated title --&gt;]&lt;/ref&gt; A commercial [[Digital Negative (file format)|DNG]] codec is also available from Ardfry Imaging.&lt;ref&gt;[http://www.ardfry.com/dng-codec DNG Thumbnail and Preview Support for Windows Photo Gallery and Windows Live Photo Gallery]&lt;/ref&gt;
+
+===Tagging===
+Windows Photo Gallery uses the concept of hierarchical [[Tag (metadata)|tagging]] (e.g. People/Jim, Places/Paris). It does not have the ability to group tags in the same manner as [[Photoshop]] software. Deleting a tag from Windows Photo Gallery will also remove it from all photos in the utility.
+
+[[Adobe Systems]]'s [[Extensible Metadata Platform]] (XMP) metadata standard, a descendent of the ubiquitous [[Exchangeable image file format|Exif]] standard which almost all digital cameras currently support, is also supported. This allows for data such as the tags to be stored and edited much more efficiently than Exif or [[IPTC]]. However, edits to XMP data on JPEG images will not be visible on photos if they are transferred to a Windows XP-based system. Date tags, for example, will revert to their original Exif information even if XMP-related changes have been made.
+
+====Bugs====
+After rotating the image Windows Photo Gallery does not change the EXIF camera orientation flag.
+
+==See also==
+* [[Features new to Windows Vista]]
+* [[Windows Live Photo Gallery]]
+* [[Comparison of image viewers]]
+
+==References==
+{{Reflist}}
+
+==External links==
+* [http://blogs.msdn.com/pix PIX team blog]
+
+{{Windows Components}}
+
+[[Category:Windows components]]
+[[Category:Photo software]]
+[[Category:Image organizers]]
+[[Category:Discontinued Windows components]]
+
+[[bg:Windows Photo Gallery]]
+[[el:Î£ÏÎ»Î»Î¿Î³Î® ÏÏÏÎ¿Î³ÏÎ±ÏÎ¹ÏÎ½ ÏÏÎ½ Windows]]
+[[ko:ìë ì¬ì§ ê°¤ë¬ë¦¬]]
+[[nl:Windows Fotogalerie]]
+[[pl:Galeria fotografii systemu Windows]]
+[[pt:Windows Photo Gallery]]
+[[ru:Ð¤Ð¾ÑÐ¾Ð°Ð»ÑÐ±Ð¾Ð¼ Windows]]
+[[sv:Windows Fotogalleri]]
+[[vi:Windows Photo Gallery]]
+[[zh:Windowsç¸çååº«]]</rev></revisions></page></pages></query></api>

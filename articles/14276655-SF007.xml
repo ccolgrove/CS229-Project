@@ -1,0 +1,31 @@
+<?xml version="1.0"?><api><query><pages><page pageid="14276655" ns="0" title="Usplash"><revisions><rev xml:space="preserve">[[Image:Usplash_Theme_Debian_Swirl.png|thumb|alt=Usplash.|Screnshot of [[Debian|Debian GNU Linux]] booting using Usplash]]
+'''Usplash''' is a [[software]] project in the [[Ubuntu (operating system)|Ubuntu]] community.  Historically, scrolling text &quot;verbose mode&quot; has typically appeared on Linux computers during boot.  Usplash replaces the scrolling-text screens with a graphical [[splash screen]].  It was designed to replace [[Bootsplash]], which did the same thing on the [[User space|kernel space]] level. Since usplash operates in [[user space]], it can be updated without recompiling the kernel. 
+
+Usplash uses the [[Linux framebuffer]] interface or, alternatively, direct [[VESA]] access to display the splash screen.
+
+In Ubuntu 9.10 &quot;Karmic Koala&quot;, Usplash is only used in the preliminary stages of booting, after which [[XSplash]] takes over. In Ubuntu 10.04 LTS &quot;Lucid Lynx&quot;, Usplash has been fully replaced by [[Plymouth (software)|Plymouth]]. 
+
+==See also==
+*[[Bootsplash]]
+*[[Splashy]]
+
+== External links ==
+* [https://launchpad.net/usplash Usplash on Launchpad]
+* [http://packages.debian.org/usplash Debian package listing for usplash]
+* [https://help.ubuntu.com/community/USplash Ubuntu help page for usplash]
+* [https://wiki.ubuntu.com/USplashDiscuss Some discussions about usplash]
+* [http://lunatic.no/usplash/ Simple tool to create simple themes for usplash]
+
+{{Ubuntu}}
+
+[[Category:Free software programmed in C]]
+[[Category:Booting]]
+[[Category:Ubuntu (operating system)]]
+
+{{Linux-stub}}
+
+[[bn:à¦à¦à¦¸à§à¦ªà§à¦²à§à¦¯à¦¾à¦¶]]
+[[es:Usplash]]
+[[no:USplash]]
+[[ru:Usplash]]
+[[tr:Usplash]]</rev></revisions></page></pages></query></api>

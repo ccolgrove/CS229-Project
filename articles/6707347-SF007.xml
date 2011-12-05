@@ -1,0 +1,94 @@
+<?xml version="1.0"?><api><query><pages><page pageid="6707347" ns="0" title="Upstart"><revisions><rev xml:space="preserve">{{Infobox software
+|name                       = Upstart
+|logo                       = [[File:Logo for Upstart daemon.png|250px|Upstart logo]]
+|screenshot                 =
+|caption                    =
+|collapsible                =
+|author                     = [[Scott James Remnant]]
+|developer                  = [[Canonical Ltd.]]
+|released                   = 24 August 2006
+|latest release version     = 1.0
+|latest release date        = {{release date and age|2011|03|01}}
+|latest preview version     =
+|latest preview date        =
+|frequently updated         =
+|programming language       = [[C (programming language)|C]]
+|operating system           = [[Linux]]
+|platform                   =
+|size                       =
+|language                   =
+|status                     =
+|genre                      = Init daemon
+|license                    = [[GNU General Public License]]
+|website                    = [http://upstart.ubuntu.com/ upstart.ubuntu.com]
+}}
+
+'''Upstart''' is an [[Event-based programming|event-based]] replacement for the traditional [[init]] daemon&amp;nbsp;â the method by which several [[Unix-like]] computer [[operating system]]s perform tasks when the computer is started. It was written by [[Scott James Remnant]], a former employee of [[Canonical Ltd.]]
+
+== Rationale ==
+The traditional init process is strictly [[synchronization (computer science) | synchronous]], [[blocking (computing)| blocking]] future tasks until the current one has completed.  Its tasks must also be defined in advance, and they only run when the init daemon changes state (such as when the machine is powered on or off). This leaves it unable to handle various tasks on a modern [[desktop computer]] elegantly, including:
+
+* The addition or removal of [[USB pen drive]]s and other portable storage / network devices while the machine is running
+* The discovery and scanning of new storage devices, without locking the system, especially when a disk may not even power on until it is scanned
+* The loading of [[firmware]] for a device, which may need to occur after it is detected but before it is usable
+
+Upstart's event-driven model allows it to respond to events asynchronously as they are generated.&lt;ref&gt;{{cite web | url = http://www.netsplit.com/2006/08/26/upstart-in-universe/ | first =Scott James | last = Remnant | title = Upstart in Universe |publisher=Netsplit |date=2006-08-26 |accessdate=2009-09-12}}&lt;/ref&gt;
+
+== Design ==
+Upstart operates asynchronously&amp;nbsp;â as well as handling the starting of tasks and services during boot and stopping them during shutdown, it supervises them while the system is running.
+
+Easy transition and perfect [[backwards compatibility]] with [[sysvinit]] were explicit design goals&lt;ref&gt;{{citation | url = https://bugs.launchpad.net/ubuntu/+source/upstart/+bug/605007 | publisher = Ubuntu | title = Launch Pad | section = Upstart | chapter = Bugs | number = 605â¯007}}.&lt;/ref&gt;. As such, Upstart is able to run sysvinit scripts unmodified.  In this way it differs from most other init replacements, which usually assume and require complete transition to run properly, and don't support a mixed environment of traditional and new startup methods.&lt;ref&gt;{{citation | url = https://wiki.ubuntu.com/ReplacementInit | chapter = Discussion of design and implementation of Upstart | publisher = Canonical | title = Ubuntu | section = Wiki}}.&lt;/ref&gt;
+
+== Adoption ==
+Upstart was first included in [[Ubuntu (operating system)|Ubuntu]] in the  ''[[List of Ubuntu releases#Ubuntu 6.10 %28Edgy Eft%29|6.10 (Edgy Eft)]]'' release in late 2006, replacing sysvinit. Ubuntu 9.10 (Karmic Koala) introduced native Upstart bootup as of Alpha 6.&lt;ref&gt;{{cite web |url= http://www.ubuntulinux.org/testing/karmic/alpha6#Upstart |title= About | publisher = Ubuntu}}&lt;/ref&gt;
+
+As Upstart matures, it is intended that its role will expand to the duties currently handled by [[cron]], [[anacron]], the [[at (Unix)|at]] command's daemon (atd), and possibly (but much less likely) [[inetd]].
+
+Upstart replaced sysvinit in [[Fedora (operating system)|Fedora]] 9, and functioned in the same manner as it did in Ubuntu, i.e. it replaces sysvinit, while retaining the existing scripts. However, Upstart has been replaced by [[systemd]] in [[Fedora (operating system)|Fedora]] 15 release.&lt;ref&gt;{{cite web |url= https://fedoraproject.org/wiki/Releases/14/FeatureList | title = Fedora 14 Accepted Features | date = 2010-07-13 | accessdate = 2010-07-13}}&lt;/ref&gt;&lt;ref&gt;{{cite web | url = http://lwn.net/Articles/405100/ | title= Fedora defers systemd to F15 | date = 2010-09-14| accessdate = 2010-09-17 | publisher = Linux Weekly News}}&lt;/ref&gt; Red Hat also includes Upstart in their Red Hat Enterprise Linux 6 release&lt;ref&gt;{{cite web| url= http://docs.redhat.com/docs/en-US/Red_Hat_Enterprise_Linux/6/html-single/Beta_Release_Notes/index.html#id4862203 | publisher = Red Hat | title= Enterprise 6 Beta Release notes | dead-link = yes}}&lt;/ref&gt;
+
+[[Debian]] considered switching for the Squeeze release.&lt;ref&gt;{{cite web | author= Petter Reinholdtsen | url = http://lists.debian.org/debian-devel-announce/2009/09/msg00003.html |title=The future of the boot system in Debian |publisher= Debian |date=2009-09-05 |accessdate=2009-10-12}}&lt;/ref&gt;
+
+[[openSUSE]] has included upstart as of version 11.3 Milestone 4, but not as default.&lt;ref&gt;{{cite web |url= http://www.h-online.com/open/news/item/OpenSUSE-gets-an-Upstart-964636.html |title=OpenSUSE gets an Upstart|publisher=The H |date=2010-03-26 |accessdate=2010-04-04}}&lt;/ref&gt;
+
+Upstart replaces the sysvinit in the [[Maemo (operating system)|Maemo 5 operating system]] for [[Nokia]] Internet tablets.&lt;ref&gt;{{cite web |url= http://wiki.maemo.org/Task:Maemo_roadmap/Fremantle | publisher =Maemo | title = Fremantle |date= |accessdate=2009-08-24}}&lt;/ref&gt;
+
+Upstart is used in [[Hewlett-Packard|HP]]'s [[webOS]] for the [[Palm Pre]], [[Palm Pixi]] (both before Palm was bought out by HP), [[HP Veer]], and [[HP Pre 3]] smart phones, along with the [[HP TouchPad]] [[Tablet computer|tablet]].&lt;ref&gt;{{cite web | url= http://mjg59.livejournal.com/111453.html | publisher = mjg59 | title = Palm Pre | date = |accessdate=2009-07-09 | publisher = Live Journal}}&lt;/ref&gt;
+
+Upstart is also used in [[Google]]'s [[Google Chrome OS|Chrome OS]].&lt;ref name = &quot;chrome-os&quot;&gt;{{cite web | url = http://sites.google.com/a/chromium.org/dev/chromium-os/chromiumos-design-docs/security-overview |title=Security Overview: Chromium OS design documents |publisher=Google |accessdate=25 November 2009}}&lt;/ref&gt;
+
+== See also ==
+{{Portal|Free software}}
+
+* [[initng]]
+* [[launchd]]
+* [[Service Management Facility]]
+* [[eINIT]]
+* [[GoboLinux#Boot system]]
+* [[systemd]]
+* [[runit]]
+* [[daemontools]]
+
+== References ==
+{{Reflist}}
+
+== External links ==
+* [http://upstart.ubuntu.com/ Home page]
+* [https://launchpad.net/products/upstart Upstart in Launchpad]
+* [http://www.linux.com/feature/125977 Ubuntu's Upstart event-based init daemon]
+* [http://upstart.ubuntu.com/cookbook Upstart Cookbook]
+
+{{Ubuntu}}
+
+[[Category:Unix process and task management-related software]]
+[[Category:Ubuntu (operating system)]]
+
+[[bn:à¦à¦ªà¦¸à§à¦à¦¾à¦°à§à¦]]
+[[de:Upstart]]
+[[es:Upstart]]
+[[fr:Upstart]]
+[[it:Upstart]]
+[[ja:Upstart]]
+[[no:Upstart]]
+[[pl:Upstart]]
+[[ru:Upstart]]
+[[fi:Upstart]]</rev></revisions></page></pages></query></api>

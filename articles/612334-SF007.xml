@@ -1,0 +1,70 @@
+<?xml version="1.0"?><api><query><pages><page pageid="612334" ns="0" title="GNU Parted"><revisions><rev xml:space="preserve">{{Infobox Software
+| name                   = GNU Parted
+| logo                   =
+| caption                =
+| screenshot             =
+| developer              = Various
+| latest release version = 3.0
+| latest release date    = {{release date|2011|05|31}}
+| operating system       = [[Linux]], [[FreeBSD]], [[BeOS]]
+| genre                  = [[Partition editor]]
+| license                = [[GNU General Public License]] (version 3 or later)
+| website                = http://www.gnu.org/software/parted/
+}}
+
+'''GNU Parted''' (the name being the conjunction of the two words PARTition and EDitor) is a [[Free software|free]] [[partition editor]], used for creating, destroying, resizing, checking, and copying [[Partition (computing)|partition]]s, and the [[file system]]s on them. This is useful for creating space for new [[operating system]]s, reorganising [[hard disk]] usage, copying data between hard disks, and [[disk image|disk imaging]]. It was written by [[Andrew Clausen]] and Lennert Buytenhek.
+
+It consists of a library, '''libparted''', and a [[Command-line interface|command-line]] [[Front-end and back-end|front-end]], '''parted''', that also serves as a reference implementation.
+
+{{as of|2008 |alt=Currently}} GNU Parted runs only under [[Linux]] and [[GNU Hurd]].&lt;ref&gt;[http://www.gnu.org/software/parted/manual/parted.html#Supported-Platforms GNU Parted supported platforms]&lt;/ref&gt;
+
+== Other front-ends ==
+[[Image:GParted.png|thumb|300px|[[GParted]] uses GNU Parted in the backend]]
+'''nparted''' is the [[Newt (programming library)|newt]]-based front end to GNU Parted.&lt;ref&gt;[http://packages.qa.debian.org/n/nparted.html Overview of nparted source package&lt;!-- Bot generated title --&gt;]&lt;/ref&gt;
+
+Projects have started for an [[ncurses]] front-end,{{Citation needed|date=March 2008}} that also could be used in Windows (with [[GNUWin32]] Ncurses).&lt;ref&gt;[http://gnuwin32.sourceforge.net/packages/ncurses.htm Ncurses&lt;!-- Bot generated title --&gt;]&lt;/ref&gt;{{Citation needed|date=March 2008}}&lt;!-- link has no files, page was last modified 22 Sep 2003.  Top-level page has a package for PDCurses, which is not the same thing --&gt;
+
+'''fatresize''' offers a [[command-line interface]] for [[FAT16]]/[[FAT32]] non-destructive resize and uses the GNU Parted library.&lt;ref&gt;[http://sourceforge.net/projects/fatresize/ SourceForge.net: fatresize&lt;!-- Bot generated title --&gt;]&lt;/ref&gt;
+
+===Graphical front-ends ===
+[[GParted]] and [[KDE Partition Manager]] are graphical programs using the parted libraries. They are adapted for [[GNOME]] and [[KDE]] respectively; two major [[desktop environment]]s for Unix-like installations. They are often included as utilities on many [[live CD]] distributions to make partitioning easier. [[QtParted]] was another graphical front-end based on [[Qt (framework)|Qt]] that is no longer being actively maintained.
+
+'''Pyparted'''&lt;ref&gt;[http://dcantrel.fedorapeople.org/pyparted/ Fedora People&lt;!-- Bot generated title --&gt;]&lt;/ref&gt; (also called python-parted)&lt;ref&gt;[http://packages.ubuntu.com/dapper/python-parted Ubuntu - Details of package python-parted in dapper&lt;!-- Bot generated title --&gt;]&lt;/ref&gt; is the [[Python (programming language)|Python]] front-end for GNU Parted.
+
+[[Linux distribution]]s that come with this application by default include [[Slackware]], [[Knoppix]], [[sidux]], [[SystemRescueCD]] and [http://www.partedmagic.com/ Parted Magic].
+
+== Limitations==
+
+Parted has some limitations. For example, it cannot resize [[NTFS]] partitions without external tools, such as the [[ntfsprogs]] package. That means that one has to use a combination of a program to repair hard disk errors before parted if one wants to repartition a damaged hard disk. To overcome this limitation, many rescue discs include all the required utilities in one bootable CD, enabling resizing of most file systems.
+
+Parted cannot handle the extended attributes of the [[ext2]] file system, for instance, those related to [[SElinux]]. These extended attributes have to be removed to resize partitions with Parted.
+
+== See also==
+{{Portal|Free software}}
+*[[List of disk partitioning software]]
+*[[fdisk]]
+*[[cfdisk]]
+*[[gpart]]
+*[[gparted]]
+*[[FIPS (computer program)|FIPS]]
+*[[Master Boot Record manager]]
+
+==References==
+{{Reflist}}
+
+==External links==
+*[http://www.gnu.org/software/parted/ GNU parted page at www.gnu.org]
+*{{man|8|parted}}
+
+{{GNU}}
+
+{{DEFAULTSORT:Gnu Parted}}
+[[Category:GNU Project software|Parted]]
+[[Category:Disk partitioning software]]
+
+[[de:GNU Parted]]
+[[fr:GNU Parted]]
+[[it:GNU Parted]]
+[[pl:Parted]]
+[[simple:GNU Parted]]
+[[vi:GNU Parted]]</rev></revisions></page></pages></query></api>

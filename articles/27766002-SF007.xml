@@ -1,0 +1,82 @@
+<?xml version="1.0"?><api><query><redirects><r from="Ubuntu One Music Store" to="Ubuntu One" /></redirects><pages><page pageid="22777571" ns="0" title="Ubuntu One"><revisions><rev xml:space="preserve">{{Infobox software
+| logo                   = [[File:Ubuntu One Logo U1.svg|200px|Ubuntu One Logo]]
+| screenshot             =
+| caption                = The front page of the Ubuntu One website
+| developer              = [[Canonical Ltd.]]
+| released               = May 2009
+| latest release version =
+| latest release date    =
+| operating system       = [[Ubuntu (operating system)|Ubuntu]] 9.04 and higher, [[Android_(operating_system)|Android ]] 2.1 or newer, [[IOS_(Apple)|iOS]] 3.1 or newer or [[Microsoft Windows|Windows]] XP or newer
+| language               = [[English language|English]]
+| programming_language   = [[Python (programming language)|Python]]&lt;ref&gt;{{cite web|url=http://www.stefanoforenza.com/what-is-ubuntu-one/|title=What is Ubuntu One|date=13 May 2009}}&lt;/ref&gt;
+| status                 = Active
+| genre                  = [[Cloud Service]]
+| license                = Server-side: Proprietary&lt;ref&gt;{{cite web|url=https://launchpad.net/ubuntuone-servers |title=Ubuntu One Servers in Launchpad |quote=Other/Proprietary |accessdate=2010-10-22}}&lt;/ref&gt; &lt;br&gt; Client-side: [[GPLv3]]&lt;ref&gt;{{cite web|url=http://bazaar.launchpad.net/~ubuntuone-control-tower/ubuntuone-client/trunk/annotate/head%3A/ubuntuone/logger.py |title=One license notice example |quote=under the terms of the GNU General Public License version 3, as published by the Free Software Foundation. |accessdate=2010-10-22}}&lt;/ref&gt;
+| website                = [http://one.ubuntu.com one.ubuntu.com]
+}}
+
+'''Ubuntu One''' is a personal [[Cloud computing|cloud]] service operated by [[Canonical Ltd]].
+
+The service enables users to store files online and sync them between computers and mobile devices, as well as stream audio and music from cloud to mobile devices.
+
+== Features ==
+
+Ubuntu One has a client application that runs on Ubuntu 9.04 and later or Windows XP or newer.&lt;ref&gt;{{cite web|url=https://one.ubuntu.com/downloads/ |title=Ubuntu One: Downloads |accessdate=2011-10-01}}&lt;/ref&gt; {{As of | 2009}} no Ubuntu One clients run under [[Mac OS X]].&lt;ref&gt;{{cite web|url=http://jjesse.wordpress.com/2009/05/15/ubuntu-one-live-mesh-and-dropbox-a-comparison |title=Ubuntu One, Live Mesh, and Dropbox: A Comparison Â« A Conservative Techie |publisher=Jjesse.wordpress.com |date=2009-05-15 |accessdate=2010-01-26}}&lt;/ref&gt; A free Ubuntu One account offers 5 GB of storage. Users may increase their storage by adding additional 20 GB &quot;20-packs&quot; for $2.99 per month or $29.99 per year.
+
+âUbuntu One Music Streamingâ offers music-streaming apps for iPhone and Android phones. The âMusic Streamingâ package costs $3.99 a month or $39.99 per year.
+
+The Ubuntu One service is similar to services such as  [[SpiderOak]], [[Dropbox (storage provider)|Dropbox]], [[Box.net]], [[Mozy]], [[Wuala]], [[Amazon Cloud Player]], [[Google Music]], [[Humyo]], [[iDisk]], [[Jungle Disk]] and [[Live Mesh]]. Its client code is written in [[Python (programming language)|Python]]. It uses [[Twisted (software)|Twisted]] for its low-level networking and [[Protocol Buffers]] for protocol description.
+
+Additional features like the integration with other services sets Ubuntu One apart from the other similar service-providers. Examples include the automatic upload of photos taken from Android mobile devices for immediate sync across computers; integration with [[Mozilla Thunderbird]] for contacts and with [[Tomboy (software)|Tomboy]] for notes due to the access to the local [[CouchDB]] instance.&lt;ref&gt;{{cite web|url=http://www.linux-magazine.com/Online/News/Relaxed-Ubuntu-9.10-CouchDB-to-be-Integrated |title=Relaxed Ubuntu 9.10: CouchDB to be Integrated - Linux Magazine Online |publisher=Linux-magazine.com |date=2009-10-15 |accessdate=2010-01-26}}
+&lt;/ref&gt; Further possibilities include the capability of editing the contacts, as well as the Tomboy notes, online via the Ubuntu One Web interface; synching contacts with mobile devices; and purchasing [[Digital rights management|DRM]]-free music while synchronizing them automatically with an Ubuntu One Account via the Ubuntu One Music Store (in partnership with [[7digital]]).
+
+== Application Developer Program ==
+
+Ubuntu One publishes APIs for developers wishing to build applications utilizing file and data synchronization or music streaming.
+
+==Criticism==
+Ubuntu One has been criticized within the Ubuntu Community for its server software being [[Proprietary software|proprietary]]&lt;ref&gt;[https://bugs.launchpad.net/ubuntuone-servers/+bug/375272 Bug #375272 in Ubuntu One Servers: Â«Server software is closed sourceÂ» â Launchpad]&lt;/ref&gt;&lt;ref&gt;{{cite web|url=http://www.ebb.org/bkuhn/blog/2010/01/14/ubuntu-debian.html |title=Back Home, with Debian! |quote=UbuntuOne's server side system is proprietary software with no prospects of liberation. |author=Bradley M. Kuhn|date=2010-01-14 |accessdate=2010-10-22}}&lt;/ref&gt;.
+
+There is not yet a native client integration for the [[Kubuntu]] variant of the Ubuntu operating system (as of June 2010).&lt;ref&gt;{{cite web|url=https://bugs.launchpad.net/ubuntuone-client/+bug/375145 |title=Launchpad bug #375145 - Ubuntu One should have a KDE client | accessdate=2010-06-12}}&lt;/ref&gt; Kubuntu integration is under development and has also received a grant from the Google Summer of Code 2010.
+
+Further criticism concerns the choice of the patented [[mp3]] format for the music of the Ubuntu One Music Store and the unclear revenue share that will be granted to the community. The [[Amarok (software)|Amarok]] development team has announced that they will not add support for the Ubuntu One Music Store to the Amarok media player for the moment, unlike what they have done with [[Magnatune]] media store, which funds the project with 10% of the revenue produced via the interface to the store built in Amarok.&lt;ref&gt;{{cite web|url=http://blog.magnatune.com/2008/04/giving-money-to.html|title=buckman's magnatune blog: Giving money to open source|accessdate=2011-12-3}}&lt;/ref&gt;
+
+==See also==
+*[[List of online backup services]]
+
+== References ==
+
+{{Reflist}}
+
+== External links ==
+
+* {{Official website|https://one.ubuntu.com/}}
+* [http://wiki.ubuntu.com/UbuntuOne Ubuntu One wiki page on the Ubuntu Wiki]
+* [http://www.twit.tv/floss99 Floss Weekly 99 podcast] with Ubuntu One developer Stuart Langridge
+
+{{ubuntu}}
+
+[[Category:File hosting]]
+[[Category:Data synchronization]]
+[[Category:Linux internet software]]
+[[Category:File sharing services]]
+[[Category:Cloud storage]]
+[[Category:Canonical Ltd]]
+
+[[bn:à¦à¦¬à§à¦¨à§à¦à§ à¦à¦¯à¦¼à¦¾à¦¨]]
+[[bar:Ubuntu One]]
+[[ca:Ubuntu One]]
+[[cs:Ubuntu One]]
+[[de:Ubuntu One]]
+[[es:Ubuntu One]]
+[[eo:Ubuntu Unu]]
+[[fa:Ø§ÙØ¨ÙÙØªÙ ÙØ§Ù]]
+[[fr:Ubuntu One]]
+[[it:Ubuntu One]]
+[[nl:Ubuntu One]]
+[[pl:Ubuntu One]]
+[[ru:Ubuntu One]]
+[[fi:Ubuntu One]]
+[[tr:Ubuntu One]]
+[[uk:Ubuntu One]]
+[[zh:Ubuntu One]]</rev></revisions></page></pages></query></api>

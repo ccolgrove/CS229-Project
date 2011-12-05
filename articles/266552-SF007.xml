@@ -1,0 +1,59 @@
+<?xml version="1.0"?><api><query><pages><page pageid="266552" ns="0" title="Centericq"><revisions><rev xml:space="preserve">__NOTOC__
+{{Infobox software
+| name                   = Centericq
+| logo                   = 
+| screenshot             = [[File:Centericq-006.gif|200px]]
+| caption                = IRC chat window
+| developer              = [[Konstantin Klyagin]]
+| released               = 1 August 1999&lt;ref&gt;{{cite web |last=Klyagin |first=Konstantin |title=CHANGELOG.centericq |work=Centericq |publisher=thekonst.net |date=2005-09-02 |url=http://thekonst.net/download/CHANGELOG.centericq |accessdate=2009-11-05}}&lt;/ref&gt;
+| frequently_updated     = yes&lt;!-- Release version update? Don't edit this page, just click on the version number! --&gt;
+| programming language   = [[C++]]
+| operating system       = [[Cross-platform]]
+| language               = [[List of ISO 639-1 codes|bg, cs, de, en, es, fr, hu, it, ms, nl, pl, pt, ro, ru, sv, uk, zh]]&lt;ref&gt;Centericq 4.21.0 Source&lt;/ref&gt;
+| genre                  = [[Instant messaging]] [[client (computing)|client]]
+| license                = [[GNU General Public License|GPL]]
+| website                = [http://thekonst.net/en/centericq Centericq]
+}}
+'''Centericq''' is a text mode menu- and window-driven [[instant messaging]] interface that supports the [[ICQ]], [[Yahoo!]], [[AOL Instant Messenger|AIM]], [[MSN]], [[IRC]], [[Extensible Messaging and Presence Protocol|XMPP]], [[LiveJournal]], and [[Gadu-Gadu]] protocols. It allows you to send, receive, and forward messages, URLs, SMSes (both through the [[ICQ]] server and email gateways supported by [[Mirabilis (company)|Mirabilis]]), contacts, and email express messages, and it has many other useful features. Known to work in [[Linux]], [[FreeBSD]], [[NetBSD]], [[OpenBSD]], [[Solaris (operating system)|Solaris]], [[Microsoft Windows|Windows]] and [[Mac OS]] X/Darwin Operating Systems.
+
+Its heyday was in the first half-decade of the 2000s, with reviews appearing in [[Softpedia]],&lt;ref&gt;Mihai Marinof (12 September 2006), ''[http://www.softpedia.com/reviews/linux/Centericq-Review-35333.shtml Centericq Review]'', [[Softpedia]]&lt;/ref&gt; and [[Czech language|Czech]] online magazines ''ABC Linux''&lt;ref&gt;{{cs icon}} MatouÅ¡ Jan Fialka (24 March 2005), ''[http://www.abclinuxu.cz/clanky/recenze/centericq-komunikacni-centrala;jsessionid=ez3dz88gxyk7 CenterICQ - komunikaÄnÃ­ centrÃ¡la]'', ABC Linux, [[International Standard Serial Number|ISSN]] 1214-1267&lt;/ref&gt; and ''Linux.cz''.&lt;ref&gt;{{cs icon}} Petr Å igut (8 October 2004), ''[http://www.linuxsoft.cz/article.php?id_article=439 Centericq]'', Linuz.cz, [[International Standard Serial Number|ISSN]] 1801-3805&lt;/ref&gt; It was also recommended in a 2004 [[OSNews]] article on console applications,&lt;ref&gt;Scott Rippee (15 Jan 2004), ''[http://www.osnews.com/story/5679/Throw_That_GUI_Out_the_Door_Console_Applications_That_Shine/page2/ Throw That GUI Out the Door: Console Applications That Shine]'', [[OSNews]], page 2&lt;/ref&gt; and in a similar article in the Russian magazine [[Computerra]].&lt;ref&gt;{{ru icon}} ÐÐ½Ð´ÑÐµÐ¹ ÐÑÑÐ¿Ð¸Ð½ (9 September 2008), ''[http://www.computerra.ru/reviews/369248/ ÐÐ¾Ð½ÑÐ¾Ð»Ñ Windows: ÑÐµÐºÑÐµÑÑ Ð²ÑÐ¶Ð¸Ð²Ð°Ð½Ð¸Ñ]'' (Console Windows: the secrets of survival), [[Computerra]]&lt;/ref&gt; Two tutorial articles appeared in the German magazine [[LinuxUser]] in 2001 and 2004;&lt;ref&gt;Christian Perle (January 2001) [http://www.linux-user.de/ausgabe/2001/01/074-ootb/centericq-3.html Ich such' dich (I seek you)], [[LinuxUser]]&lt;/ref&gt;&lt;ref&gt;Frederik Bijlsma (February 2004) [http://www.linux-user.de/ausgabe/2004/02/066-ootb/index.html Kommunikationsszentrale (out of the box: Centericq)], [[LinuxUser]]&lt;/ref&gt; the latter article also appeared in the English version of [[Linux Magazine]].&lt;ref&gt;Frederik Bijlsma (March 2004) [https://www.linux-magazine.com/issue/40/Centericq.pdf CenterICQ: Communications Center], [[Linux Magazine]], pp. 78-79&lt;/ref&gt; It was included in a 2002 round-up of ICQ clients in the Russian XAKEP magazine,&lt;ref&gt;Zero Gravity (January 2002) [http://www.xakep.ru/magazine/xa/037/042/1.asp Icq Ð¿Ð¾Ð´ linux (Icq for Linux)], XAKEP, issue 37, pp. [http://konst.org.ua/articles/images/xpage1.jpg 42]-[http://konst.org.ua/articles/images/xpage2.jpg 43]&lt;/ref&gt; and in a 2005 round-up review of IRC Clients in [[Free Software Magazine]].&lt;ref name=fsm&gt;Martin Brown (7 September 2005) [http://www.freesoftwaremagazine.com/articles/free_irc ''Free IRC clients, Choosing the best IRC client for your needs''], [[Free Software Magazine]] issue 7, web pages 2-3&lt;/ref&gt; The FSM reviewer remarked CenterICQ for its windows-like interface built on top of the usual [[curses (programming library)|curses]] library, which provides a lot of information, but can also look cluttered on smaller terminal windows, including the standard 80 by 25 terminal. It also found that IRC support was &quot;excellent&quot; due to support for multiple servers and channels and the ease of switching between them in the âwindowedâ interface.&lt;ref name=fsm/&gt; In September 2002, Steven J. Vaughan-Nichols found it &quot;the greatest of all console IM clients&quot; due to its &quot;excellent interface and a huge number of features and configuration options&quot; in a category review on [[Freshmeat]].&lt;ref&gt;Steven J. Vaughan-Nichols (21 Sep 2002) [http://freshmeat.net/articles/instant-messaging-clients Instant Messaging Clients], [[Freshmeat]] Category Reviews&lt;/ref&gt; In 2005 it was also reviewed in [[The Unofficial Apple Weblog]], but despite support for [[.Mac|.mac]] accounts, the reviewer was displeased with the &quot;annoying key combos&quot; required to access the menus, because on [[Mac OS X]] the usual [[function key]] assignments of CenterICQ could not be used. He could also not access the MSN network. Despite this he concluded: &quot;All things considered, I've decided that Centericq is the most stable and intuitive terminal based chat client.&quot; &lt;ref&gt;Fabienne Serriere (22 Oct 2005) [http://www.tuaw.com/2005/10/22/terminal-tips-centericq-open-source-chat-aggregator-on-os-x/ Terminal Tips: Centericq open source chat aggregator on OS X], [[The Unofficial Apple Weblog]]&lt;/ref&gt;
+
+In November 2007, the project's website stated that CenterICQ is dead.{{Citation needed|date=January 2010}} Because CenterICQ is not actively maintained anymore, other developers forked the project to '''CenterIM''', and applied several security patches and updates. {{Asof|2009}}, CenterIM is still in development; version 4.22.9 was released on December 14. Neither CenterICQ nor CenterIM 4 support [[Unicode]], but support for [[UTF-8]] is planned for CenterIM 5.&lt;ref&gt;[http://www.centerim.org/index.php/Frequently_Asked_Questions#Does.2Fwill_UTF-8_work_in_CenterIM_4.x.3F CenterIM FAQ]&lt;/ref&gt;
+
+== See also ==
+{{commonscat|Centericq and CenterIM}}
+* [[naim (chat program)|naim]] is another text-based messaging client with support for multiple protocols
+* List of XMPP client software
+* [[Comparison of instant messaging clients]]
+
+== References ==
+{{reflist}}
+
+==Further reading==
+* Alexandru Voiculescu (September 2002) ''[http://konst.org.ua/articles/en/pcmaginterview.html Interview with Konstantin Klyagin]'', [[PC Magazine]] Romania, [http://web.archive.org/web/20021025144042/http://www.pcmagazine.ro/pcmag4-9/comentarii_interviuri.shtml original in Romanian]
+* Petr KrÄmÃ¡Å (12 March 2007), ''[http://www.root.cz/texty/centericq-creator-important-is-to-code/ Interview with the CenterICQ author, Konstantin Klyagin]'', root.cz
+
+== External links ==
+* [http://thekonst.net/en/centericq The Official Centericq website]
+* [http://www.centerim.org/ CenterIM - CenterICQ fork]
+
+{{IM clients}}
+{{IRC clients}}
+
+[[Category:1999 software]]
+[[Category:AIM clients]]
+[[Category:Free XMPP clients]]
+[[Category:Free instant messaging clients]]
+[[Category:Free Internet Relay Chat clients]]
+[[Category:Internet Relay Chat clients]]
+[[Category:Linux instant messaging clients]]
+[[Category:Cross-platform software]]
+
+[[cs:Centericq]]
+[[es:Centericq]]
+[[fr:CenterICQ]]
+[[hu:Centericq]]
+[[nl:CenterICQ]]
+[[ru:CenterIM]]
+[[sk:Centericq]]
+[[sv:Centericq]]</rev></revisions></page></pages></query></api>

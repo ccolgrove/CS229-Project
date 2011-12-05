@@ -1,0 +1,127 @@
+<?xml version="1.0"?><api><query><pages><page pageid="944153" ns="0" title="Open-Xchange"><revisions><rev xml:space="preserve">{{Software infobox
+| name                   = Open-Xchange Server
+| screenshot             = [[Image:Portal-screenshot-modules.gif|thumbnail|300px|right]]
+| caption                = Open-Xchange portal interface
+| developer              = Open-Xchange Inc.
+| latest release version = 6.18.0. (stable) 
+| latest release date    = (2010-08-30)
+| latest preview version = 
+| latest preview date    =
+| genre                  = [[Groupware]]
+| operating system       = [[SUSE Linux Enterprise Server|SLES]], [[RHEL]], [[Debian]]
+| license                = [[Dual license]] ([[GNU General Public License|GPL]])
+| website                = [http://www.open-xchange.com/ open-xchange.com]
+}}
+
+'''Open-Xchange Server''' is an [[open source]] project sponsored by Open-Xchange, Inc., developing [[collaboration software]]; i.e. email, calendaring, address book, etc. Product offerings based on Open-Xchange Server are marketed under the brand of Open-Xchange Server and various other names, e.g. 1&amp;1 MailXchange, Network Solutions Business Email and others. Open-Xchange Server is part of the [[Lisog]] open source stack initiative.
+
+==Overview==
+
+Open-Xchange Server is an [[open source]] [[collaboration software]] stack that features an integrated [[web 2.0]] [[e-mail]] user interface, calendar, contact, and task management functions. It also offers basic document management and sharing.
+
+Open-Xchange Server supports free standards and proprietary environments like Apple iSync and Microsoft Outlook via commercial extensions.
+
+The latest Open-Xchange Server beta versions provide social networking capabilities, enabling automated publish and subscribe capabilities between instances of Open-Xchange Server and [[social networking]] sites like [[LinkedIn]], [[Facebook]], and various [[Google]] services.
+The service runs on the [[#Backend|backend]], i.e. on the server, so that data connections stay active even if a user goes off line.
+
+These social capabilities are available at the preview server [http://ox.io] â the place with the most recent development releases from Open-Xchange.
+
+==History==
+
+The company was established in 2000 to provide a Linux-based, open source alternative to [[Microsoft Exchange Server|Microsoft Exchange]], [[SUSE-Linux-Open-Xchange-Server]] ([[SLOX]], an OEM version of Open-Xchange, 2002â2005) and [[Comfire]] before that (2000â2002).
+
+At CeBit 2006 Open-Xchange and [[1&amp;1]] jointly agreed to build a product for hosted deployments. Programming was done by Open-Xchange, testing and optimization - including large scale user studies - by [[1&amp;1]]. The result was a platform independent, browser based [[GUI]] and server software. In 2009, Open-Xchange claims to have more than 15 million users as results from deals with software-as-a-service (SaaS) providers including [[Versatel]], [[Dotster]], [[NameCheap]] and others.
+
+All components are available as [[open source]] and also as readily compiled packages for many [[Linux distribution]]s for download.
+
+===Awards===
+
+In 2005, Open-Xchange is [[CNET]] Networks' Finalist in the Technology sector.&lt;ref&gt;[http://www.cnet.com/topic/open-xchange.html Open-Xchange reviews on CNET]&lt;/ref&gt;
+
+In 2006, Open-Xchange receives Product Excellence Award from [[LinuxWorld]].&lt;ref&gt;[http://linux.sys-con.com/category/390 The Linux Week in Review â SYS-CON.TV and LinuxWorld Product Excellence Awards 2006]&lt;/ref&gt;
+
+In 2007, [[Linux Readers]]' Choice Award.&lt;ref&gt;[http://lxer.com/module/newswire/view/90267/index.html Open-Xchange Receives Readers' Choice Award for 'Best Linux Groupware Server']&lt;/ref&gt;
+
+In 2009, [[Linux Magazine]] listed Open-Xchange among the &quot;Companies To Watch&quot;.&lt;ref&gt;[http://syslab.com/blog/2009/01/15/linux-magazine-selects-open-xchange-among-201c20 Linux Magazine Selects Open-Xchange among &quot;20 Companies to Watch in 2009&quot;]&lt;/ref&gt;
+ 
+In 2010, Open-Xchange is named to Lead411's [[New York City]] Hot 125.&lt;ref&gt;[http://www.lead411.com/topnewyorkcompanies.html New York City Hot 125]&lt;/ref&gt;
+
+In April 2010, the company receives April 2010 Editorâs Choice Award of the website findmyhost.com.&lt;ref&gt;[http://www.open-xchange.com/node/1052 Open-Xchange Receives Editors' Choice Award]&lt;/ref&gt;
+
+==Technology==
+
+Open-Xchange Server consists of a [[Java (programming language)|Java]]-based [[#Backend|backend]], implemented as an [[OSGi]] bundle, a [[#Frontend|frontend]] implemented in [[JavaScript]] and various extensions.
+
+===Backend===
+
+The backend can be deployed as a single-instance server or as a scalable, fault-tolerant cluster providing up to several million virtual instances of Open-Xchange Server for many tenants concurrently. The backend supports a comprehensive range of protocols for configuration and communication with the [[#Frontend|frontend]]. Details can be found at [http://oxpedia.org].
+
+Since March 2006 Open-Xchange Server supports [[Secure Sockets Layer|SSL]] and [[Transport Layer Security|TLS]], thereby enabling encrypted communication between the clients and the Groupware server.
+
+===Frontend===
+
+An [[AJAX]] based user interface enabling operating system independent, installation free deployment via [[Web browser]]. Alternatively end users can access Open-Xchange Server via client software like e.g.  [[Mozilla]] [[Mozilla Thunderbird|Thunderbird]], [[Apple Inc.]] [[iSync]] or [[Microsoft]] [[Microsoft Outlook|Outlook]].
+
+===SaaS===
+
+A core capability of Open-Xchange Server is the ability to run in hosted environments, providing highly scalable [[Software as a Service]] (SaaS) offerings via service providers. Local servers for [[Groupware]] solutions become redundant and can be replaced by much more efficient and cheaper installations at data centers.
+
+===Social OX===
+
+Centrally hosted web applications are challenging from an integration perspective. From version 6.10 Open-Xchange Server supports [[Server Side Mashups]], addressing these challenges in a generic and simplistic approach. End users can configure data integration by cutting and pasting [[URLs]] from one instance of Open-Xchange Server to another. The same applies for 3rd party applications supporting SocialOX. This enables an open data ecosystem, an open data cloud in a standards compliant ecosystem for private data sources and company data alike. A preview can be found at [http://ox.io ox.io]
+
+==Community==
+
+Development of Open-Xchange Server is mainly sponsored by Open-Xchange, Inc. in [[Olpe, Germany|Olpe]], [[NÃ¼rnberg]], and [[New York City|New York]] together with implementation partners and the [[Open Source]] community around Open-Xchange Server.
+
+Open-Xchange Server is produced in the [[openSUSE Build Service]] environment and can be downloaded from there or from Open-Xchange, Inc.
+
+There are three commercially supported versions of Open-Xchange Server available:
+* one version for local installations, replacing the previous edition, Open-Xchange Server 5: Open-Xchange Server Appliance Edition
+* one version targeted at integration partners. This version only contains Open-Xchange Server, but for example no [[e-mail]] stack: Open-Xchange Server Edition
+* one version for hosted offerings, run in data centers in multi tenant configurations: Open-Xchange Hosting Edition
+
+===Licensing===
+
+As of August 2004 the Open-Xchange Server [[#Backend|Backend]] has been released under the [[GNU General Public License]], version 2. The Open-Xchange Server [[#Frontend|Frontend]] is released under [[Creative Commons]] [[Share Alike]], [[Non Commercial]], [[Attribution (copyright)|Attribution]].
+These licenses allow free use, also in commercial environments. The restriction to [[Non Commercial]] in the [[Creative Commons]] license for the [[#Frontend|Frontend]] restricts re-distribution to third parties, i.e. hosted deployments for third parties.
+
+== Functional Overview ==
+* Portal
+* Appointments
+* Contacts
+* Tasks
+* [[Document management system|Document Management]]
+* WebMail
+* UWA Widgets
+* [[WebDAV]]-Interface
+* [[Java (programming language)|Java]] API
+* [[Microsoft Outlook|Outlook]]- and [[MacOSX]]-Plugin (commercial offerings)
+* [[SyncML]]-Interface (for fee, via partners)
+
+== See also ==
+* [[SOGo]]
+
+== External links ==
+* [http://www.open-xchange.org/ Website of the Open-Xchange Project]
+* [http://www.oxpedia.org/ Technical Overview at Open-Xchange, Inc.]
+* [http://www.open-xchange.com/en/try/online-demo.html Online Demo]
+* {{Freshmeat|open-xchange|Open-Xchange}}
+
+== References ==
+&lt;references /&gt;
+
+{{FreeCollabManageSoftware}}
+
+[[Category:Document management systems]]
+[[Category:Free groupware]]
+[[Category:Free email software]]
+[[Category:Free email server software]]
+[[Category:Linux companies]]
+[[Category:Email clients]]
+
+[[de:Open-Xchange]]
+[[es:Open-Xchange]]
+[[fr:Open-Xchange]]
+[[it:Open-Xchange]]
+[[pl:Open-Xchange]]</rev></revisions></page></pages></query></api>

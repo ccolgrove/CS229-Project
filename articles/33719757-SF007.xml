@@ -1,0 +1,495 @@
+<?xml version="1.0"?><api><query><pages><page pageid="33719757" ns="0" title="Mono (software)"><revisions><rev xml:space="preserve">{{About|the computing platform|other uses|Mono (disambiguation)}}
+{{Infobox software
+| name                   = Mono
+| logo                   = [[Image:Mono project logo.svg|100px]]
+| screenshot             =
+| caption                =
+| developer              = [[Xamarin]] (formerly by [[Novell]] and originally by [[Ximian]]) and the Mono community
+| released               = June 30, 2004
+| latest_release_version = 2.10.6&lt;ref&gt;http://www.mono-project.com/Release_Notes_Mono_2.10.6&lt;/ref&gt;
+| latest_release_date    = {{release date|2011|10|14}}
+| latest_preview_version =
+| latest_preview_date    =
+| operating_system       = [[Cross-platform]]
+| genre                  = [[Platform (computing)|Platform]]
+| license                = [[MIT License|MIT]], [[GNU Lesser General Public License|LGPLv2]] and [[GPLv2]], or [[dual license]]&lt;ref&gt;{{cite web
+ | url = http://www.mono-project.com/FAQ:_Licensing
+ | title = FAQ: Licensing &amp;ndash; Mono
+ | accessdate = 2009-11-26
+}}&lt;/ref&gt;
+| website                = [http://www.mono-project.com/ www.mono-project.com]
+}}
+
+'''Mono''', pronounced {{IPA-en|ËmoÊ.noÊ|}} {{respell|MOH|noh}}, is a [[free and open source]] project led by [[Xamarin]] (formerly by [[Novell]] and originally by [[Ximian]]) to create an [[Ecma International|Ecma]] standard compliant [[.NET Framework|.NET]]-compatible set of tools including, among others, a [[C Sharp (programming language)|C#]] [[compiler]] and a [[Common Language Runtime]].
+
+The stated purpose of Mono is not only to be able to run Microsoft .NET applications cross-platform, but also to bring better development tools to Linux developers.&lt;ref&gt;{{cite web
+ |url=http://www.zdnet.com/news/mono-project-aims-to-bring-net-apps-to-linux/298857
+ |title=Mono Project aims to bring .Net apps to Linux
+ |publisher=ZDNet
+ |date=2001-10-29
+ |quote=&quot;''Called the Mono Project, this effort encompasses creating a development environment that will allow applications developed for .Net to run on Linux-based as well as Windows-based systems. Mono originated out of a need for improved development tools for the GNOME community and for Ximian specifically, according to Miguel de Icaza, Ximian's chief technical officer.''&quot;}}&lt;/ref&gt; Mono can be run on [[Android (operating system)|Android]], [[BSD]], [[iOS (Apple)|iOS]], [[Linux]], [[Mac OS X]], [[Microsoft Windows|Windows]], [[Solaris (operating system)|Solaris]], and [[Unix]] [[operating system]]s as well as some game console operating systems such as the ones for the [[PlayStation 3]], [[Wii]], and [[Xbox 360]].
+
+The logo of Mono is a stylized [[monkey|monkey's]] face, ''mono'' being [[Spanish language|Spanish]] for ''monkey''.&lt;ref&gt;{{cite web
+ |url=http://www.mono-project.com/FAQ:_General
+ |title=FAQ: General
+ |accessdate=December 4, 2009
+ |publisher=Mono Projects
+}}&lt;/ref&gt;&lt;ref&gt;{{cite web
+ |url=http://articles.techrepublic.com.com/5100-10878_11-1044968.html
+ |title=Ximian's Mono project: .NET for monkeys, penguins, and gnomes
+ |publisher=TechRepublic
+}}&lt;/ref&gt;
+
+==History==
+{| class=&quot;wikitable sortable&quot; style=&quot;float:right;margin-left:1em; width:30em;&quot;
+|+ Release History
+! Date !! Version&lt;ref&gt;http://www.mono-project.com/OldReleases&lt;/ref&gt; !! Notes
+|-
+| 2004-06-30 || 1.0&lt;ref&gt;http://go-mono.com/archive/1.0/&lt;/ref&gt; || [[C Sharp (programming language)|C# 1.0]] support
+|-
+| 2004-09-21 || 1.1&lt;ref&gt;http://www.go-mono.com/archive/1.1.1/&lt;/ref&gt; ||
+|-
+| 2006-11-09 || 1.2&lt;ref&gt;http://go-mono.com/archive/1.2/&lt;/ref&gt; ||[[C Sharp 2.0|C# 2.0]] support
+|-
+| 2008-10-06 || 2.0&lt;ref&gt;http://www.mono-project.com/Release_Notes_Mono_2.0&lt;/ref&gt; || Mono's APIs are now in par with .NET 2.0. Introduces the [[C Sharp 3.0|C# 3.0]] and Visual Basic 8 compilers. New Mono-specific APIs: Mono.Cecil, Mono.Cairo and Mono.Posix. Gtk# 2.12 is released. The Gendarme verification tool and Mono Linker are introduced.
+|-
+| 2009-01-13 || 2.2&lt;ref&gt;http://www.mono-project.com/Release_Notes_Mono_2.2&lt;/ref&gt; || Mono switches its JIT engine to a new internal representation &lt;ref&gt;http://www.mono-project.com/Linear_IL&lt;/ref&gt; that gives it a performance boost and introduces [[SIMD]] support in the Mono.Simd &lt;ref name=&quot;Mono.Simd&quot;&gt;http://tirania.org/blog/archive/2008/Nov-03.html&lt;/ref&gt; Mono.Simd namespace. &lt;br&gt;Mono introduces [http://tirania.org/blog/archive/2008/Nov-05.html Full Ahead of Time] compilation that allows developers to create full static applications and debuts the C# Compiler as a Service &lt;ref name=&quot;tirania.org&quot;&gt;http://tirania.org/blog/archive/2010/Apr-27.html&lt;/ref&gt; and the C# Interactive Shell &lt;ref name=&quot;CsharpRepl&quot;&gt;http://www.mono-project.com/CsharpRepl&lt;/ref&gt; (C# REPL)
+|-
+| 2009-03-30 || 2.4&lt;ref&gt;http://www.mono-project.com/Release_Notes_Mono_2.4&lt;/ref&gt; || This release mostly polishes all the features that shipped in 2.2 and became the foundation for the Long-Term support of Mono in SUSE Linux.
+|-
+| 2009-12-15 || 2.6&lt;ref&gt;http://www.mono-project.com/Release_Notes_Mono_2.6&lt;/ref&gt; || The Mono runtime is now able to use LLVM as a code generation backend and this release introduces Mono co-routines, the Mono Soft Debugger and the CoreCLR security system required for Moonlight and other Web-based plugins. &lt;br&gt;On the class library System.IO.Packaging, WCF client, WCF server, LINQ to SQL debut. The Interactive shell supports auto-completion and the LINQ to SQL supports multiple database backends. The xbuild build system is introduced.
+|-
+| 2010-09-22 || 2.8&lt;ref&gt;http://www.mono-project.com/Release_Notes_Mono_2.8&lt;/ref&gt; || Defaults to .NET 4.0 profile, [[C Sharp 4.0|C# 4.0]] support, new generational Garbage Collector, includes [[Parallel Extensions]], WCF Routing, [[CodeContracts]], ASP.NET 4.0, drops the 1.0 profile support; the LLVM engine tuned to support 99.9% of all generated code, runtime selectable llvm and gc; incorporates [[Dynamic Language Runtime]], [[Managed Extensibility Framework|MEF]], [[ASP.NET MVC Framework|ASP.NET MVC2]], OData Client open source code from Microsoft;. Will become release 3.0
+|-
+| 2011-02-15 || 2.10&lt;ref&gt;http://www.mono-project.com/Release_Notes_Mono_2.10&lt;/ref&gt; ||
+|}
+
+When Microsoft first announced their [[.NET Framework]] in June 2000 it was described as &quot;a new platform based on Internet standards&quot;,&lt;ref&gt;[http://www.zdnetasia.com/microsoft-sees-nothing-but-net-ahead-10028684.htm &quot;Microsoft sees nothing but .NET ahead&quot;], Steven Bonisteel, ZDNet, June 23, 2000&lt;/ref&gt; and in December of that year the underlying [[Common Language Infrastructure]] was published as an open standard, &quot;ECMA-335&quot;&lt;ref&gt;http://www.ecma-international.org/publications/files/ECMA-ST-WITHDRAWN/ECMA-335,%201st%20edition,%20December%202001.pdf&lt;/ref&gt; - opening up the potential for independent implementations.&lt;ref&gt;[http://www.zdnetasia.com/microsoft-edges-into-sharing-code-30083846.htm &quot;Microsoft edges into sharing code&quot;], Joe Wilcox and Stephen Shankland, ZDNet on June 28, 2001&lt;/ref&gt; [[Miguel de Icaza]] of [[Ximian]] believed that .NET had the potential to increase programmer productivity and began investigating whether a Linux version was feasible.&lt;ref name=mdi&gt;{{cite web|url=http://lists.ximian.com/archives/public/mono-list/2003-October/016345.html |title=[Mono-list] Mono early history. |date=2003-10-13 |archive=http://www.mono-project.com/Mailpost:earlystory}}&lt;/ref&gt; Recognizing that their small team could not expect to build and support a full product, they launched the Mono open source project, on July 19, 2001 at the [[O'Reilly Media|O'Reilly]] conference.
+
+After three years development, Mono 1.0 was released on June 30, 2004.&lt;ref&gt;{{cite web |url=http://arstechnica.com/old/content/2004/06/3949.ars |title=OSS .NET implementation Mono 1.0 released - Ars Technica |publisher=[[ArsTechnica]]|accessdate=2009-10-23 }}&lt;/ref&gt; Mono evolved from its initial focus of a developer platform for Linux desktop applications to supporting a wide range of architectures and operating systems - including embedded systems.&lt;ref&gt;[http://www.mono-project.com/Supported_Platforms &quot;Supported Platforms&quot;], Mono website&lt;/ref&gt;
+
+After [[Novell]] was acquired by [[Attachmate]] in April 2011, Attachmate announced hundreds of layoffs for the Novell workforce,&lt;ref&gt;{{cite web
+| url=http://www.ksl.com/?nid=148&amp;sid=15382738
+| title=Employees say hundreds laid off at Novell's Provo office
+| last=Koep|first=Paul
+| publisher=[[KSL-TV]]
+| date=2011-05-02
+| accessdate=2011-05-07}}&lt;/ref&gt; putting in question the future of Mono.&lt;ref&gt;{{cite web
+| url=http://www.zdnet.com/blog/open-source/is-mono-dead-is-novell-dying/8821
+| title=Is Mono dead? Is Novell dying?
+| last=J. Vaughan-Nichols|first=Steven
+| publisher=[[ZDNet]]
+| date=2011-05-04
+| accessdate=2011-05-07}}&lt;/ref&gt;&lt;ref&gt;{{cite web
+| url=.http://www.theregister.co.uk/2011/05/03/novell_mono_layoffs/
+| title=.NET Android and iOS clones stripped by Attachmate
+| last=Clarke|first=Gavin
+| publisher=[[The Register]]
+| date=2011-05-03
+| accessdate=2011-05-07}}&lt;/ref&gt;
+
+On May 16, Miguel de Icaza announced in his blog that Mono would continue to be supported by [[Xamarin]], a company he founded after being laid off from Novell. The original Mono team had also moved to the new company. Xamarin plans to keep working on Mono and had planned to rewrite the commercial .NET stacks for [[IOS (Apple)|iOS]] and [[Android (operating system)|Android]] from scratch because Novell still owned [[MonoTouch]] and [[Mono_(software)#Mono_for_Android|Mono for Android]] at the time.&lt;ref&gt;http://tirania.org/blog/archive/2011/May-16.html&lt;/ref&gt; After this announcement, the future of the project was questioned, [[Mono_(software)#MonoTouch|MonoTouch]] and [[Mono_(software)#Mono_for_Android|Mono for Android]] being in direct competition with the existing commercial offerings now owned by [[Attachmate]], and considering that the Xamarin team would have difficulties proving that they did not use technologies they previously developed when they were employed by [[Novell]] for the same work.&lt;ref&gt;{{cite web
+| url=http://www.infoq.com/news/2011/05/Mono-II
+| title=The Death and Rebirth of Mono
+| publisher=infoq.com
+| quote=''Even if they aren't supporting it, they do own a product that is in direct competition with Xamarin's future offerings. Without some sort of legal arrangement between Attachmate and Xamarin, the latter would face the daunting prospect of proving that their new development doesn't use any the technology that the old one did. Considering that this is really just a wrapper around the native API, it would be hard to prove you had a clean-room implementation even for a team that wasn't intimately familiar with Attachmate's code.''
+| date=2011-05-17
+| accessdate=2011-05-29}}&lt;/ref&gt; However, in July 2011, Novell, now a subsidiary of Attachmate, and Xamarin, announced that it granted a perpetual license to Xamarin for Mono, MonoTouch and Mono for Android, which took officially the stewardship of the project.&lt;ref&gt;{{cite web
+| url=http://www.c.com/news/press/2011/7/suse-and-xamarin-partner-to-accelerate-innovation-and-support-mono-customers-and-community.html?utm_source=twitterfeed&amp;utm_medium=twitter
+| title=SUSE and Xamarin Partner to Accelerate Innovation and Support Mono Customers and Community
+| publisher=[[Novell]]
+| quote=''The agreement grants Xamarin a broad, perpetual license to all intellectual property covering Mono, MonoTouch, Mono for Android and Mono Tools for Visual Studio. Xamarin will also provide technical support to SUSE customers using Mono-based products, and assume stewardship of the Mono open source community project.''
+| date=2011-07-18
+| accessdate=2011-07-18}}&lt;/ref&gt;&lt;ref&gt;{{cite web
+| url=http://tirania.org/blog/archive/2011/Jul-18.html
+| title=Novell/Xamarin Partnership around Mono
+| last=De Icaza|first=Miguel
+| date=2011-07-18
+| accessdate=2011-07-18}}&lt;/ref&gt;
+
+==Current status and roadmap==
+Mono's current version is 2.10 ({{As of|2011|February|lc=on}}). This version provides the core [[API]] of the [[.NET Framework]] as well as support for Visual Basic.NET and C# versions 2.0, 3.0, and 4.0. [[Language Integrated Query#LINQ to Objects|LINQ to Objects]], XML, and [[Language Integrated Query#LINQ Providers|SQL]] are part of the distribution. C# 4.0 is now the default mode of operation for the C# compiler. [[Windows Forms]] 2.0 is also supported, but not actively developed, and as such its support on Mono is incomplete.&lt;ref name=&quot;icaza20110307&quot;&gt;{{cite web
+ |url=http://tirania.org/blog/archive/2011/Mar-07.html
+ |title=GDC 2011
+ |date=2011-03-07
+ |accessdate=2011-03-11
+ |quote=''We have no plans on building WPF. We just do not have the man power to build an implementation in any reasonable time-frame(...)For tools that are mostly OpenGL/DirectX based, use Windows.Forms, keeping in mind that some bug fixing or work around on their part might be needed as our Windows.Forms is not actively developed.'' |author=[[Miguel de Icaza]]}}&lt;/ref&gt;
+
+Mono's aim is to achieve full support for the features in .NET 4.0 except [[Windows Presentation Foundation|WPF]] (which the Mono team do not plan to support due to the amount of work it would need),&lt;ref name=&quot;icaza20110307&quot;/&gt; [[ADO.NET Entity Framework|Entity Framework]] and [[Windows Workflow Foundation|WF]], limited [[Windows Communication Foundation|WCF]].&lt;ref&gt;[http://www.mono-project.com/Compatibility Mono compatibility list]&lt;/ref&gt; Some missing parts of the [[.NET Framework]] are under development in an experimental Mono subproject called [http://www.mono-project.com/Olive ''Olive''].&lt;ref&gt;[http://www.mono-project.com/Mono_Project_Roadmap#Upcoming_Releases]&lt;/ref&gt;
+
+The Mono project has also created a [[VB.NET]] compiler as well as a runtime designed for running VB.NET applications. It is currently being developed by Rolf Bjarne Kvinge.
+
+===Moonlight===
+{{Main|Moonlight (runtime)}}
+An open source implementation of [[Silverlight]], called [[Moonlight (runtime)|Moonlight]], has been included since Mono 1.9.&lt;ref&gt;{{cite web| url=http://www.mono-project.com/MoonlightRoadmap| title=MoonlightRoadmap| publisher=Mono Team| accessdate=2008-11-08}}&lt;/ref&gt; Moonlight 1.0, which supports the Silverlight 1.0 APIs, was released January 20, 2009. Moonlight 2.0 supports Silverlight 2.0 and some features of Silverlight 3.0.&lt;ref&gt;http://tirania.org/blog/archive/2009/Dec-17.html&lt;/ref&gt; A preview release of Moonlight 3.0 was announced in February 2010 and contains updates to Silverlight 3 support.&lt;ref&gt;http://tirania.org/blog/archive/2010/Feb-03.html&lt;/ref&gt;
+
+==Mono components==
+Mono consists of three groups of components:
+# Core components
+# Mono/Linux/GNOME development stack
+# Microsoft compatibility stack
+
+The '''core components''' include the C# compiler, the virtual machine for the [[Common Language Infrastructure]] and the core class libraries. These components are based on the [[Ecma International#Standards|Ecma-334 and Ecma-335 standards]],&lt;ref&gt;[http://www.ecma-international.org/publications/standards/Ecma-335.htm Ecma-335]&lt;/ref&gt; allowing Mono to provide a standards compliant, free and open source CLI [[virtual machine]]. Microsoft issued a statement that covers both standards under their [[Microsoft Open Specification Promise|Community Promise license]].&lt;ref&gt;[http://port25.technet.com/archive/2009/07/06/the-ecma-c-and-cli-standards.aspx Technet.com]&lt;/ref&gt;
+
+The '''Mono/Linux/GNOME development stack''' provide tools for application development while using the existing [[GNOME]] and [[Free and open source software|Free and Open Source]] libraries. These include: [[Gtk Sharp|Gtk#]] for [[GUI]] development, Mozilla libraries for working with the [[Gecko (layout engine)|Gecko rendering engine]], Unix integration libraries (Mono.Posix), database connectivity libraries, a security stack, and the XML schema language [[RelaxNG]]. Gtk# allows Mono applications to integrate into the Gnome desktop as native applications. The database libraries provide connectivity to the object-relational database [[db4o]], [[Firebird (database server)|Firebird]], [[Microsoft SQL Server]] (MSSQL), [[MySQL]], [[Open Database Connectivity]] (ODBC), [[Oracle database|Oracle]], [[PostgreSQL]], [[SQLite]], and many others. The Mono project tracks developing database components at its website.&lt;ref&gt;http://www.mono-project.com/Database_Access&lt;/ref&gt;
+
+The '''Microsoft compatibility stack''' provides a pathway for porting Windows .NET applications to GNU/Linux. This group of components include [[ADO.NET]], [[ASP.NET]], and [[Windows Forms|Windows.Forms]], among others. As these components are not covered by [[Ecma International|Ecma]] standards, some of them remain subject to [[#Mono and Microsoft's patents|patent fears and concerns]].
+
+==Framework architecture==
+[[Image:Mono architecture.svg|400px|thumb|right|Simplified Mono architecture]]
+
+The major components of Mono include:
+* [[#Code Execution Engine|Code Execution Engine]]
+* Class Libraries
+** [[Base Class Library]]
+** .NET Compatibility Class Libraries
+** Mono specific class libraries:
+*** Cross platform class libraries for both Mono and .NET (Gtk#, Mono.Cecil, Mono.CSharp, Text.Templating)
+*** Unix-specific class libraries (Posix, [[Filesystem in Userspace|FUSE]], curses)
+*** Platform-specific class libraries (Mac bindings, iPhone bindings, Android bindings, MeeGo bindings)
+* [[.NET Assembly|ECMA Assemblies]]
+* [[.NET metadata|ECMA Metadata]]
+* Mono's [[Common Language Runtime]]
+** Compatible with the ECMA [[Common Language Infrastructure]]/.NET [[Common Language Runtime]]
+** Mono-specific enhancements:
+*** Mono.SIMD support
+*** Mono co-routines and continuations.
+* Mono-specific enhancements
+* [[COM Interop|Native interop services and COM interop]]
+* Security - [http://msdn.microsoft.com/en-us/library/ee191569.aspx Transparent Code Framework]
+
+===Code Execution Engine===
+The Mono runtime contains a code execution engine that translates ECMA CIL byte codes into native code and supports a number of processors: [[ARM architecture|ARM]], [[MIPS architecture|MIPS]] (in 32-bit mode only), [[SPARC]], [[PowerPC]], [[S390]] (in 64-bit mode), [[x86]], [[x86-64]] and [[IA-64]] for 64-bit modes.
+
+The code generator is exposed in three modes:
+* Just in time (JIT) compilation: The runtime will turn ECMA CIL byte codes into native code as the code runs.
+* Ahead-of-Time (AOT) compilation: this code turns the ECMA CIL byte codes (typically found on a .exe or .dll file) and generates native code stored in an operating system, architecture and CPU specific file (for a foo.exe file, it would produce foo.exe.so on Linux). This mode of operation compiles most of the code that is typically done at runtime. There are some exceptions like [[Trampoline (computers)|trampolines]] and other administrative code that still require the JIT to function, so AOT images are not fully standalone.
+* Full Static Compilation: this mode is only supported on a handful of platforms and takes the Ahead-of-Time compilation process one step further and generates all the trampolines, [[Wrapper function|wrappers]] and [[Proxy pattern|proxies]] that are required into a static file that can be statically linked into a program and completely eliminates the need for a JIT at runtime. This is used on [[IOS (Apple)|Apple's iOS]], Sony's [[PlayStation 3]] and Microsoft's [[XBox 360]] operating systems{{Citation needed|date=April 2011}}.
+
+Starting with Mono 2.6, it is possible to configure Mono to use the [[Low Level Virtual Machine]] (LLVM) as the code generation engine instead of Mono's own code generation engine. This is useful for high performance computing loads and other situations where the execution performance is more important than the startup performance.
+
+Starting with the Mono 2.7 preview, it is no longer necessary to pick one engine over the other at configuration time. The code generation engine can be selected at startup by using the &lt;code&gt;--llvm&lt;/code&gt; or &lt;code&gt;--nollvm&lt;/code&gt; command line arguments, and it defaults to the fast Mono code generation engine.
+
+===Garbage collector===
+
+As of Mono 2.8, the Mono runtime ships with two garbage collectors, a generational collector&lt;ref name=&quot;mono-compacting_gc&quot;/&gt; and the Boehm conservative collector.
+
+The current default [[garbage collector (computer science)|garbage collector]] (the &quot;[[Boehm garbage collector|Boehm-Demers-Weiser Conservative Garbage Collector]]&quot;)&lt;ref name=&quot;mono-compacting_gc&quot;&gt;{{cite web|title=Compacting GC|url=http://www.mono-project.com/Compacting_GC| publisher=mono-project.com| accessdate=2008-12-16}}&lt;/ref&gt;&lt;ref&gt;{{cite web| title=Advantages and Disadvantages of Conservative Garbage Collection|url=http://www.hpl.hp.com/personal/Hans_Boehm/gc/issues.html| last=Boehm |first=Hans-J.|publisher=[[PARC (company)|Xerox Parc]]| accessdate=2008-12-16}}&lt;/ref&gt; has significant limitations compared to commercial garbage-collected runtimes like the [[Java Virtual Machine]] or the .NET framework's runtime, such as a conservative garbage collection can exhibit memory leaks on certain class of applications, this can make it unsuitable for long-running server applications.
+
+{{As of|October 2010}}, a new generational collector called the &quot;Simple Generational GC&quot; (SGen-GC) is part of Mono. Just like the LLVM code generation engine is now selectable at startup, users can elect to use the new SGen garbage collector by passing the &lt;code&gt;--gc=sgen&lt;/code&gt; switch to the Mono runtime at startup.&lt;ref name=&quot;mono-compacting_gc&quot;/&gt; This new garbage collector has many advantages over a traditional conservative scanner. It uses [[Garbage_collection_(computer_science)#Generational_GC_.28ephemeral_GC.29|generational garbage collection]] where new objects are allocated from a nursery, during the garbage collection cycle, all objects that survived are migrated to an older generation memory pool. The idea being that many objects are transient and can quickly be collected and only a handful of objects are long-term objects that live for the entire life of the application. To improve performance this collector assigns memory pools to each thread to let threads allocate new memory blocks without having to coordinate with other threads. Migration of objects from the nursery to the old generation is done by copying the data from the nursery to the old generation pool and updating any live pointers that point to the data to point to the new location. This can be expensive for large objects, so Mono's SGen uses a separate pool of memory for large objects (Large Object Section) and uses a mark-and-sweep algorithm for those objects.
+
+Currently SGen treats the stack and registers conservatively and pins any objects that could be referenced by any of these roots. The upcoming version of Mono scans the managed stack precisely reducing the number of pinned objects.
+
+===Class library===
+The '''class library''' provides a comprehensive set of facilities for application development. They are primarily written in C#, but due to the Common Language Specification they can be used by any .NET language. The class library is structured into namespaces, and deployed in shared libraries known as assemblies. Speaking of the .NET framework is primarily referring to this class library.&lt;ref&gt;[http://www.mono-project.com/.NET_Framework_Architecture .NET Framework Architecture] on the official Mono documentation&lt;/ref&gt;
+
+====Namespaces and assemblies====
+'''Namespaces''' are a mechanism for logically grouping similar classes into a hierarchical structure. This prevents naming conflicts. The structure is implemented using dot-separated words, where the most common top-level namespace is System, such as System.IO and System.Net. There are other top-level namespaces as well, such as Accessibility and Windows. A user can define a namespace by placing elements inside a namespace block.
+
+'''Assemblies''' are the physical packaging of the class libraries. These are .dll files, just like (but not to be confused with) Win32 shared libraries. Examples of assemblies are mscorlib.dll, System.dll, System.Data.dll and Accessibility.dll. Namespaces are often distributed among several assemblies and one assembly can be composed of several files.
+
+===Common Language Infrastructure and Common Language Specification===
+The '''Common Language Infrastructure''' (CLI), or more commonly known as the Common Language Runtime, is implemented by the Mono executable. The runtime is used to execute compiled .NET applications. The common language infrastructure is defined by the ECMA standard.&lt;ref&gt;[http://www.ecma-international.org/publications/standards/Ecma-335.htm ECMA-335]&lt;/ref&gt; To run an application, you must invoke the runtime with the relevant parameters.
+
+The '''Common Language Specification''' (CLS) is specified in chapter 6 of ECMA-335 and defines the interface to the CLI, such as conventions like the underlying types for Enum. The Mono compiler generates an image that conforms to the CLS. This is the Common Intermediate Language. The Mono runtime takes this image and runs it. The ECMA standard formally defines a library that conforms to the CLS as a framework.
+
+===Managed and unmanaged code===
+Within a native .NET/Mono application, all code is [[managed code|managed]]; that is, it is governed by the CLI's style of memory management and thread safety. Other .NET or Mono applications can use legacy code, which is referred to as unmanaged, by using the System.Runtime.InteropServices libraries to create C# bindings. Many libraries which ship with Mono use this feature of the CLI, such as Gtk#.
+
+===Mono-specific innovations===
+
+Mono has innovated in some areas with new extensions to the core C# and CLI specifications:
+* C# Compiler as a Service (Use the C# compiler as a library).&lt;ref name=&quot;tirania.org&quot;/&gt;
+* C# Interactive Shell.&lt;ref name=&quot;CsharpRepl&quot;/&gt;
+* SIMD support&lt;ref name=&quot;Mono.Simd&quot;/&gt; as part of the Mono.SIMD namespace, where method calls to special vector types are directly mapped to the underlying processor CPU SIMD instructions.
+* Full Static Compilation of .NET code&lt;ref&gt;http://tirania.org/blog/archive/2008/Nov-05.html&lt;/ref&gt; (used on Mono/iPhone, Mono/PS3).
+* Mono coroutines (used to implement micro-threading code and continuations, mostly for game developers).&lt;ref&gt;http://www.mono-project.com/Continuations&lt;/ref&gt;
+* 64-bit &quot;large arrays&quot;, although present on the ECMA specification, Mono is the only implementation that supports them.
+* Assembly injection to live processes.&lt;ref&gt;http://tirania.org/blog/archive/2008/Sep-29.html&lt;/ref&gt;
+* Use of LLVM as JIT backend.
+
+In addition, Mono is available on a variety of operating systems and architectures.&lt;ref&gt;http://www.mono-project.com/Supported_Platforms&lt;/ref&gt;
+
+===Related projects===
+
+Several projects extend Mono and allow developers to use it in their development environment. These projects include:
+
+Cross-Platform:
+* [[Banshee Media Player]] a cross-platform music media player built with Mono and Gtk# and also a driver of dozens of C#-based libraries and projects for media handling.
+* [[Beagle (software)|Beagle]] a search system for Unix systems.
+* Gecko#, bindings for embedding the layout engine used in Mozilla ([[Gecko (layout engine)|Gecko]]).
+* [[Gtk Sharp|Gtk#]], C# wrappers around the underlying [[GTK+]] and [[GNOME]] libraries, written in [[C (programming language)|C]] and available on Linux, MacOS and Windows.
+* [[Mono Migration Analyzer (MoMA)]], a tool which aids Windows .NET developers in finding areas in their code that might not be cross-platform and therefore not work in Mono on Linux and other Unixes.
+* [[MonoCross]], a cross-platform [[Modelâviewâcontroller]] design pattern where the Model and Controller are shared across platforms and the Views are unique for each platform for an optimized User Interface.
+* [[MonoDevelop]] an open source and cross platform Integrated Development Environment that supports building applications for ASP.NET, Gtk#, Meego, MonoTouch and Silverlight/Moonlight.
+* [[Moonlight (runtime)|Moonlight]], an implementation of [[Microsoft Silverlight|Silverlight]] that uses Mono.
+* [[OpenTK]], a managed binding for OpenGL, OpenCL and OpenAL.
+* [[Qyoto]], C# bindings for the [[Qt (framework)|Qt framework]].
+* [[Resco MobileBusiness]], a cross-platform developer solution for mobile clients.
+* [[Resco MobileCRM]], a cross-platform developer solution for mobile clients synchronized with [[Microsoft Dynamics CRM]].
+* [[ServiceStack]] a high-performance Open source .NET REST web services framework that simplifies the development of XML, JSON and SOAP Web Services.
+* [[Tao Framework|Tao]], a collection of graphics and gaming bindings (OpenGL, SDL, Glut, Cg).
+
+MacOS:
+* [[Cocoa Sharp|Cocoa#]] wrappers around the native Mac OS X toolkit ([[Cocoa (API)|Cocoa]]) (deprecated).
+* [[Monobjc]] a set of bindings for {{nowrap|Mac OS X}} programming.
+* [[MonoMac]] the new bindings for {{nowrap|Mac OS X}} programming, based on the [[MonoTouch]] API design.
+
+Mobile Platforms:
+* [[MonoDroid]] Mono for the Android operating system. With bindings for the Android APIs.
+* [[MonoTouch]] Mono for the iPhone, iPad and iPod Touches. With bindings to the iOS APIs.
+
+Windows:
+* [[MonoTools for Visual Studio]] A Visual Studio plugin that allows Windows developers to target Linux, MacOS right from Visual Studio and integrates with [[SUSE Studio]].
+
+=== Other Implementations ===
+
+[[Microsoft]] has a version of .NET 2.0 now available only for [[Windows XP]], called the [[Shared Source Common Language Infrastructure|Shared Source CLI (Rotor)]]. Microsoft's [[shared source]] license may be insufficient for the needs of the community (it explicitly forbids commercial use).
+
+[[Free Software Foundation]]'s abandoned [[Portable.NET]] project{{Citation needed|date=July 2011}}.
+
+==MonoDevelop==
+{{Main|MonoDevelop}}
+MonoDevelop is a free GNOME [[integrated development environment]] primarily designed for C# and other .NET languages such as Nemerle, [[Boo programming language|Boo]], and [[Java (programming language)|Java]] (via [[IKVM.NET]]), although it also supports languages such as [[C (programming language)|C]], [[C++ (programming language)|C++]], [[Python (programming language)|Python]], [[Java (programming language)|Java]], and [[Vala (programming language)|Vala]]. MonoDevelop was originally a port of [[SharpDevelop]] to Gtk#, but it has since evolved to meet the needs of Mono developers. The IDE includes class management, built-in help, code completion, Stetic (a GUI designer), project support, and an integrated debugger.
+
+The MonoDoc browser provides access to API documentation and code samples. The documentation browser uses wiki-style content management, allowing developers to edit and improve the documentation.
+
+==MonoTouch and Mono for Android==
+MonoTouch and Mono for Android, both developed by [[Xamarin]], are  implementations of Mono for [[iPhone]] and [[Android (operating system)|Android]]-based smart-phones. Contrary to Mono itself, they are released under a commercial license only.&lt;ref&gt;{{cite web
+ | url=http://ios.xamarin.com/FAQ#How_is_MonoTouch_Licensed.3f
+ | title=FAQ
+ | publisher=os.xamarin.com
+ | quote= ''MonoTouch is a commercial product based on the open source Mono project and is licensed on a per-developer basis.''
+ | date=2011-08-01
+}}&lt;/ref&gt;
+
+===MonoTouch===
+{| class=&quot;wikitable sortable&quot; style=&quot;float:right;margin-left:1em&quot;
+|+ Release History
+! Date !! Version !! Notes
+|-
+| 2009-09-14 || MonoTouch 1.0&lt;ref&gt;http://tirania.org/blog/archive/2009/Sep-14.html&lt;/ref&gt; || Initial release
+|-
+| 2010-04-05 || MonoTouch 2.0&lt;ref&gt;http://monotouch.net/Releases/MonoTouch_2/MonoTouch_2.0.0&lt;/ref&gt; || [[iPad]] support
+|-
+| 2010-04-16 || MonoTouch 3.0&lt;ref&gt;http://monotouch.net/Releases/MonoTouch_3/MonoTouch_3.0.0&lt;/ref&gt; || [[iPhone 4]] support
+|-
+| 2011-04-06 || MonoTouch 4.0&lt;ref&gt;http://ios.xamarin.com/Releases/MonoTouch_4/MonoTouch_4.0.0&lt;/ref&gt; || 
+|-
+| 2011-10-12 || MonoTouch 5.0&lt;ref&gt;http://ios.xamarin.com/Releases/MonoTouch_5/MonoTouch_5.0&lt;/ref&gt; || Latest version
+|}
+MonoTouch allows developers to create C# and .NET based applications that run on the iPhone. It is based on the Mono framework and developed in conjunction with Novell. Unlike Mono applications MonoTouch &quot;Apps&quot; are compiled down to machine code targeted specifically at the [[Apple Inc.|Apple]] [[iPhone]].&lt;ref&gt;{{cite web | url = http://www.mono-project.com/newstouch/archive/2010/Apr-09.html | title = MonoTouch and iPhone 4 | quote = &quot;''Applications built with MonoTouch are native applications indistinguishable from other native applications.''&quot;}}&lt;/ref&gt; This is necessary because the iPhone kernel prevents [[Just-in-time compilation|just-in-time compilers]] from executing on the device.
+
+The MonoTouch stack is made up of:
+* Compilers
+** C# from the Mono Project
+** Third party compilers like RemObject's Oxygene can target MonoTouch as well
+* Core .NET libraries
+* Development SDK:
+** Linker: used to bundle only the code used in the final application.
+** mtouch: the Native compiler and tool used to deploy to the target device.
+** [[Interface Builder]] integration tools.
+* Libraries that bind the native CocoaTouch APIs.
+* MonoDevelop IDE
+
+MonoDevelop is used as the primary IDE however additional links to [[Xcode]] and the iPhone simulator have been written.
+
+From April to early September 2010, the future of MonoTouch was put in doubt as Apple introduced new terms for iPhone developers that apparently prohibits them from developing in languages other than C, C++ and [[Objective-C]], and the use of a middle layer between the iPhone OS platform and iPhone applications. This made the future of MonoTouch, as well as other technologies such as UNITY, uncertain.&lt;ref&gt;http://arstechnica.com/apple/news/2010/04/apple-takes-aim-at-adobe-or-android.ars&lt;/ref&gt; Then, in September 2010, Apple rescinded this restriction, stating that they were relaxing the language restrictions that they had put in place earlier that year.&lt;ref&gt;{{cite web | url = http://www.apple.com/pr/library/2010/09/09statement.html | title = Statement by Apple on App Store Review Guidelines | quote = &quot;''Based on their input, today we are making some important changes to our iOS Developer Program license in sections 3.3.1, 3.3.2 and 3.3.9 to relax some restrictions we put in place earlier this year. In particular, we are relaxing all restrictions on the development tools used to create iOS apps, as long as the resulting apps do not download any code. This should give developers the flexibility they want, while preserving the security we need.''&quot;}}&lt;/ref&gt;&lt;ref&gt;{{cite web | url = http://tirania.org/blog/archive/2010/Sep-09.html | title = Great News for MonoTouch Users | quote = &quot;''With these new terms, the ambiguity is gone and C# lovers and enthusiasts can go back to using MonoTouch. Developers that like garbage collection and their strongly typed languages can resume their work.''&quot;}}&lt;/ref&gt;
+
+===Mono for Android===
+Mono for Android, developed by [[Xamarin]], is an implementation of Mono for [[Android (operating system)|Android]]-based smart-phones.&lt;ref&gt;{{cite web
+ |url=http://www.networkworld.com/news/2010/031610-novells-mono-project-bringing-net.html
+ |title=Novell's Mono project bringing .Net development to Android
+ |publisher=NtworkWorld
+}}&lt;/ref&gt;&lt;ref&gt;{{cite web
+ |url=http://www.infoworld.com/d/developer-world/novells-mono-project-bringing-net-development-android-778
+ |title=Novell's Mono project bringing .Net development to Android
+ |publisher=InfoWorld
+}}&lt;/ref&gt;&lt;ref&gt;{{cite web
+ |url=http://techie-buzz.com/mobile-news/monodroid-net-support-android.html
+ |title=MonoDroid: .NET Support Coming to Android
+ |publisher=TechieBuzz
+}}&lt;/ref&gt; It was first released on April 6, 2011.&lt;ref&gt;{{cite web|url=http://www.h-online.com/open/news/item/Mono-for-Android-brings-C-to-Android-1223483.html|title=Mono for Android brings C# to Android|publisher=[[Heise Online]]|date=2011-04-07|accessdate=2011-04-07}}&lt;/ref&gt; Mono for Android was developed to allow developers to more easily write cross-platform applications that will run on all mobile platforms.&lt;ref&gt;{{cite web
+ |url=http://androidcommunity.com/novel-monoc-is-developing-monodroid-20100217/
+ |title=Novell (Mono/C#) is developing MonoDroid
+ |quote=&quot;''This will make it easier for developers to make cross platform apps as well as bring some of the existing apps that are made using MonoTouch to Android.''&quot;
+ |publisher=Android Community
+}}&lt;/ref&gt; In an interview with H-Online, Miguel de Icaza stated, &quot;Our vision is to allow developers to reuse their engine and business logic code across all mobile platforms and swapping out the user interface code for a platform-specific API.&quot;&lt;ref&gt;{{cite web
+ |url=http://www.h-online.com/open/news/item/Mono-for-Android-957628.html
+ |title=Mono for Android
+ |quote=&quot;''Our vision is to allow developers to reuse their engine and business logic code across all mobile platforms and swapping out the user interface code for a platform-specific API.''&quot;
+ |publisher=H-Online
+}}&lt;/ref&gt;
+
+In August 2010, a Microsoft spokesman, Tom Hanrahan of Microsoftâs Open Source Technology Centre, stated, in reference to the lawsuit filed by Oracle against Google over Android's use of Java, that &quot;The type of action Oracle is taking against Google over Java is not going to happen. If a .NET port to Android was through Mono it would fall under the [[Microsoft Community Promise]] Agreement.&quot;&lt;ref&gt;{{cite web
+ |url=http://www.techworld.com.au/article/358564/microsoft_won_t_stop_net_android
+ |title=Microsoft won't stop (Mono) .NET on Android
+ |quote=&quot;''The type of action Oracle is taking against Google over Java is not going to happen. If a .NET port to Android was through Mono it would fall under the Microsoft Community Promise Agreement.''&quot;
+ |publisher=TechWorld}}&lt;/ref&gt;&lt;ref&gt;{{cite web
+ |url=http://www.developerfusion.com/news/85355/microsoft-says-net-on-android-is-safe-no-litigation-like-oracle/
+ |title=Microsoft says .NET on Android is safe, no litigation like Oracle
+ |publisher=Developer Fusion}}&lt;/ref&gt;
+
+The Mono for Android stack consists of the following components:
+* Mono runtime
+* Libraries:
+** Core .NET class libraries
+** Libraries that bind the native Android/Java APIs
+* SDK tools to package, deploy and debug
+* Visual Studio 2010 integration to remotely debug and deploy.
+
+==License==
+Mono is [[dual license]]d by Xamarin, similar to other products such as [[Qt (toolkit)|Qt]] and the [[Mozilla Application Suite]]. Mono's C# compiler and tools are released under the [[GNU General Public License]] (GPLv2 only) (starting with version 2.0 of Mono, the Mono C# compiler source code will also be available under the [[MIT X11 License]]),&lt;ref&gt;{{cite web|url=http://www.mono-project.com/news/archive/2008/Apr-08.html |title=Mono C# Compiler Under MIT X11 License |date=2008-04-08 |publisher=Novell Inc}}&lt;/ref&gt; the runtime libraries under the [[GNU Lesser General Public License]] (LGPLv2 only) and the class libraries under the [[MIT License]]. These are all [[free software]] and [[open-source license]]s and hence Mono is [[free software|free]] and [[open-source software]].
+
+The license of the C# compiler was changed from the GPL to the MIT X11 license&lt;ref&gt;http://tirania.org/blog/archive/2008/Apr-16-2.html&lt;/ref&gt; to allow the compiler code to be reused in a few instances where the GPL would have prevented it from being used:
+* Mono's Compiler as a Service
+** The Mono interactive Shell
+** The Mono embeddable C# compiler
+* Mono's implementation of the C# 4.0 dynamic binder.
+* MonoDevelop's built-in parser and AST graph
+
+==Mono and Microsoft's patents==
+{{details3|[[Software patents and free software]] and [[Novell#Agreement with Microsoft]]}}
+Monoâs implementation of those components of the .NET stack not submitted to the [[Ecma International|ECMA]] for standardization has been the source of patent violation concerns for much of the life of the project.&lt;ref&gt;[http://www.zdnetasia.com/will-open-source-get-snagged-in-net-30102692.htm &quot;Will open source get snagged in .Net?&quot;], Charles Babcock, ZDNet Asia on August 7, 2001&lt;/ref&gt; In particular, discussion has taken place about whether Microsoft could destroy the Mono project through patent suits.&lt;ref&gt;[http://www.fsf.org/news/2009-07-mscp-mono &quot;Microsoft's Empty Promise&quot;], Brett Smith, fsf.org, July 16, 2009&lt;/ref&gt; So far these concerns have proven to be unfounded.&lt;ref&gt;{{cite web|title=Mono Position Statement|url=https://lists.ubuntu.com/archives/ubuntu-devel-announce/2009-June/000584.html|quote=''It is common practice in the software industry to register patents as protection against litigation, rather than as an intent to litigate. Thus mere existence of a patent, without a claim of infringement, is not
+sufficient reason to warrant exclusion from the Ubuntu Project.''|publisher=[[Canonical Ltd.]]}}&lt;/ref&gt;
+
+The base technologies submitted to the ECMA, and therefore also the Unix/GNOME-specific parts, are not problematic due to Microsoft's explicitly placing both ECMA 334 and ECMA 335 standards under the [[Microsoft Community Promise]]. The concerns primarily relate to technologies developed by Microsoft on top of the .NET Framework, such as [[ASP.NET]], [[ADO.NET]] and [[Windows Forms]] (see [[Base Class Library#Non standardized namespaces|non-standardized namespaces]]), i.e. parts composing Monoâs Windows compatibility stack. These technologies are today not fully implemented in Mono and not required for developing Mono-applications, they are simply there for developers and users who need full compatibility with the Windows system.
+
+Should patent issues ever arise, the Mono project's stated strategy for dealing with them is as follows:&lt;ref&gt;[http://www.mono-project.com/Licensing#Patents Mono FAQ: Licensing | Patents]&lt;/ref&gt;
+* Work around the patent by using a different implementation technique that retains the API, but changes the mechanism; if that is not possible, they would
+* Remove the pieces of code that were covered by those patents, and also
+* Find prior art that would render the patent useless.
+
+In addition, Mono is also included in the list of software that the [[Open Invention Network]] has sworn to protect.&lt;ref&gt;{{cite web| url = http://lwn.net/Articles/179597/ | title = How Mono got into Fedora | quote = ''The list of &quot;certain Linux-related applications&quot; is said to exist, though it has not, yet, been posted publicly. But Mono is apparently on that list. So anybody who files patent infringement suits against Mono users, and who is, in turn, making use of technology covered by OIN's patents is setting himself up for a countersuit. Depending on the value of the patents held by OIN, that threat could raise the risk of attacking Mono considerably.'' | publisher = Linux Weekly News}}&lt;/ref&gt;
+
+On July 6, 2009, Microsoft announced that it was placing their ECMA 334 and ECMA 335 specifications under their [[Microsoft Community Promise|Community Promise]] pledging that they would not assert their patents against anyone implementing, distributing, or using alternative implementations of .NET.&lt;ref name=&quot;Port25CommunityPromise&quot;&gt;{{cite web|title=The ECMA C# and CLI Standards|url=http://port25.technet.com/archive/2009/07/06/the-ecma-c-and-cli-standards.aspx|date=2009-07-06|publisher=Port 25|quote=&quot;''Under the Community Promise, Microsoft provides assurance that it will not assert its Necessary Claims against anyone who makes, uses, sells, offers for sale, imports, or distributes any Covered Implementation under any type of development or distribution model, including open-source licensing models such as the LGPL or GPL.''&quot;}}&lt;/ref&gt; However, their position regarding the ''non-''ECMA components like [[ASP.NET]], [[ADO.NET]], and [[Windows Forms]] (which are the bone of contention) remains unclarified.
+
+Following criticism from the [[Free Software Foundation]]'s Richard Stallman, [[Canonical Ltd.]], makers of the [[Ubuntu (Operating System)|Ubuntu]] Linux distribution, came out with a Mono Position Statement&lt;ref&gt;{{cite web|title=Mono Position Statement|url=https://lists.ubuntu.com/archives/ubuntu-devel-announce/2009-June/000584.html| publisher=[[Canonical Ltd.]]| date=2009-06-30| quote=''Given the above, the Ubuntu Technical Board sees no reason to exclude Mono or applications based upon it from the archive, or from the default installation set.''| accessdate=2010-05-12}}&lt;/ref&gt; which states that &quot;''It is common practice in the software industry to register patents as protection against litigation, rather than as an intent to litigate. Thus mere existence of a patent, without a claim of infringement, is not sufficient reason to warrant exclusion from the Ubuntu Project.''&quot; The statement then goes on to say that they would therefore continue to ship Mono in Ubuntu until the patents actually become a real threat rather than simply a perceived threat.
+
+[[Fedora (operating system)|Fedora]] Project Leader, Paul Frields, has stated &quot;''We haven't come to a legal conclusion that is pat enough for us to make the decision to take mono out.''&quot; &lt;ref&gt;{{cite web|title=Fedora is concerned about Mono|url=http://blog.internetnews.com/skerner/2009/06/fedora-is-concerned-about-mono.html| publisher=internetnews.com| date=2009-06-12| quote=''We haven't come to a legal conclusion that is pat enough for us to make the decision to take mono out''| accessdate=2010-07-04}}&lt;/ref&gt;
+
+==Software developed with Mono==
+[[Image:Screenshot-AlbumPic.png|thumb|[[Banshee (media player)]]]]
+[[Image:Gnome-do-blue.png|thumb|[[GNOME Do]]]]
+A range of programs have been developed that use the Mono [[application programming interface|API]] and C#. Some programs written for the Linux Desktop include [[Banshee (media player)|Banshee]], [[Beagle (software)|Beagle]], [[Docky]], [[F-Spot]], [[Gbrainy]], [[GNOME Do]], [[MonoTorrent]], [[Pinta (software)|Pinta]], and [[Tomboy (software)|Tomboy]]. A number of video games such as ''[[The Sims 3]]'' and'' [[Second Life]]'s'' scripting language, [[Linden Scripting Language#Mono|LSL]] (although not an official .NET language itself), along with many games based on the [[Unity (game engine)|Unity game engine]] also make use of Mono.
+
+==See also==
+{{Portal|Free software}}
+* [[Common Language Runtime]]
+* [[Comparison of application virtual machines]]
+* [[DotGNU]] â A free software umbrella project which includes Portable.NET
+* [[MonoDevelop]] â An open source [[Integrated development environment|IDE]] targeting both Mono and Microsoft [[.NET framework]] platforms
+* [[Moonlight (runtime)]], an [[open-source]] implementation of [[Microsoft]]'s [[Microsoft Silverlight|Silverlight]] developed by the Mono Project
+* [[Portable.NET]] â Another free software implementation of ECMA 334 and 335
+* [[Shared Source Common Language Infrastructure]] â Microsoft's shared source implementation of .NET, previously codenamed Rotor
+* &lt;!-- BOTS: DNE - correct spell is mod_mono. Stop changing this bots! --&gt;[[mod_mono]]&lt;!-- BOTS: DNE - correct spell is mod_mono. Stop changing this bots! --&gt; â A module for the [[Apache HTTP Server]] that allows for hosting of [[ASP.NET]] pages and other assemblies on multiple platforms by use of Mono
+
+==Notes==
+{{Reflist|colwidth=30em}}
+
+==References==
+* ''This article incorporates text from Mono's [http://www.mono-project.com/ homepage], which was then under the [[GNU Free Documentation License]].''
+* {{cite web
+ | author= [[Miguel de Icaza]]
+ | date= October 13, 2003
+ | url= http://lists.ximian.com/archives/public/mono-list/2003-October/016345.html
+ | title= &lt;nowiki&gt;[Mono-list] Mono early history.&lt;/nowiki&gt;
+ | format= mailing list
+ | accessdate= December 6, 2005
+ }}
+* {{cite web
+ | author= Edd Dumbill
+ | date= March 11, 2004
+ | url= http://www.onlamp.com/pub/a/onlamp/2004/03/11/mono.html
+ | title= Will Mono Become the Preferred Platform for Linux Development?
+ | publisher= ONLamp
+ | accessdate= October 14, 2006
+ }}
+* {{cite web
+ | author= Eugenia Loli-Queru
+ | date= February 22, 2005
+ | url= http://www.osnews.com/story.php?news_id=9780
+ | title= Mono Applications? Aplenty!
+ | publisher= [[OSNews]]
+ | accessdate= December 6, 2005
+ }}
+* {{cite web
+ | author= Sean Michael Kerner
+ | date= November 18, 2005
+ | url= http://www.internetnews.com/dev-news/article.php/3565496
+ | title= Mono Project Goes Virtual
+ | publisher= Internet News
+ | accessdate= October 14, 2006
+ }}
+* {{Cite news
+ | date = November 9, 2006
+ | title = Months Late, Novell Ships Mono 1.2
+ | publisher = internetnews.com
+ | author = Kerner, Sean Michael
+ | url = http://www.internetnews.com/dev-news/article.php/3643026
+}}
+* {{cite web
+ | author= Corey Northcutt
+ | date= October 12, 2006
+ | url= http://blog.ubiquityhosting.com/?p=34
+ | title= In the World of mod_mono
+ | publisher= Ubiquity
+ | accessdate= October 14, 2006
+ }}
+* {{cite web
+ | author= Sean Campbell
+ | date= October 8, 2008
+ | url= http://howsoftwareisbuilt.com/2008/10/08/interview-with-joseph-hill-mono/
+ | title= Interview with Joseph Hill - Product Manager - Mono - Novell
+ | publisher= HSIB
+ | accessdate= October 8, 2008
+ }}
+* {{cite web
+ | author=Tim Smith
+ | date=September 9, 2010
+ | url=http://www.infoq.com/articles/java-dotnet-patents
+ | title=A Brief Introduction to the Java and .NET Patent Issues
+ | publisher=InfoQ
+ | accessdate=September 13, 2010
+}}
+&lt;/div&gt;
+
+==External links==
+* [http://www.mono-project.com/Main_Page Mono Project] Main Page
+* [http://www.monotouch.net/ MonoTouch] Main Page for the port to [[Apple Inc.]]'s hand-held products
+
+{{DotNET}}
+{{Novell}}
+
+{{DEFAULTSORT:Mono (Software)}}
+[[Category:Computing platforms]]
+[[Category:Free computer programming tools]]
+[[Category:Cross-platform software]]
+[[Category:Mono project]]
+[[Category:Novell software]]
+[[Category:Virtual machines]]
+[[Category:Software using the MIT license]]
+
+[[ca:Projecte Mono]]
+[[cs:Mono (platforma)]]
+[[da:Mono (software)]]
+[[de:Mono-Projekt]]
+[[es:Proyecto Mono]]
+[[fa:ÙÙÙÙ]]
+[[fr:Mono (logiciel)]]
+[[ko:ëª¨ë¸ (ìíí¸ì¨ì´)]]
+[[it:Mono (progetto)]]
+[[he:××× × (×ª××× ×)]]
+[[hu:Mono (szoftver)]]
+[[nl:Mono (ontwikkelplatform)]]
+[[ja:Mono (ã½ããã¦ã§ã¢)]]
+[[pl:Mono (projekt)]]
+[[pt:Mono (projeto)]]
+[[ru:Mono]]
+[[sk:Mono (platforma)]]
+[[sr:Mono]]
+[[fi:Mono (kehitysympÃ¤ristÃ¶)]]
+[[sv:Mono (utvecklingsplattform)]]
+[[uk:Mono]]
+[[vi:Mono]]
+[[zh:Mono]]</rev></revisions></page></pages></query></api>

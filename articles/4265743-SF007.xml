@@ -1,0 +1,91 @@
+<?xml version="1.0"?><api><query><pages><page pageid="4265743" ns="0" title="ATI Avivo"><revisions><rev xml:space="preserve">{{Infobox Software
+|name = ATI Avivo
+|screenshot = [[Image:ATI AVIVO logo obsolete.png|240px]]
+|caption = ATI Avivo logo (2005â2007)
+|website = [http://ati.amd.com/technology/Avivo ATI Avivo HD website at www.amd.com]
+}}
+
+'''ATI Avivo''' is a set of hardware and low level software features present on the [[Radeon R520|ATI Radeon R520]] family of [[Graphics processing unit|GPUs]] and all later ATI Radeon products. ATI Avivo was designed to offload [[video decoding]], [[encoding]], and [[Video post-processing|post-processing]] from a computer's [[Central processing unit|CPU]] to a compatible GPU. ATI Avivo compatible GPUs have lower CPU usage when a player and decoder software that support ATI Avivo is used. 
+
+Like NVIDIA [[PureVideo|PureVideo HD]], ATI Avivo does not offer any actual decoding software.
+
+==Background==
+The GPU wars between [[ATI Technologies|ATI]] and [[NVIDIA]] have resulted in [[Graphics processing unit|GPUs]] with ever increasing processing power since early 2000s. To parallel this increase in speed and power, both GPU makers needed to increase video quality as well, in 3D graphics applications the focus in increasing quality has mainly fallen on [[anti-aliasing]] and [[anisotropic filtering]]{{Citation needed|date=April 2010}}. However it has dawned upon both companies that video quality on the PC would need improvement as well and the current APIs provided by both companies have not seen many improvements over a few generations of GPUs{{Citation needed|date=April 2010}}. Therefore, ATI decided to revamp its GPU's video processing capability with ATI Avivo, in order to compete with NVIDIA PureVideo API.
+
+In the time of release of the latest generation [[Radeon R600|Radeon HD]] series, the successor, the ATI Avivo HD was announced, and was presented on every Radeon HD 2600 and 2400 [[video card]]s to be available July, 2007 after NVIDIA announced similar hardware acceleration solution, [[NVIDIA PureVideo|PureVideo HD]].
+
+As of 2011 [[ATI Avivo|Avivo]] is also known as ''AMD Media Codec Package'', an optional component of the [[AMD Catalyst]] software.&lt;ref name=&quot;avivo&quot; /&gt;
+
+==Features==
+===ATI Avivo===
+During capturing, ATI Avivo amplifies the source, automatically adjust its brightness and contrast. ATI Avivo implements 12-bit transform to reduce data loss during conversion; it also utilizes motion adaptive 3D comb filter, automatic color control, automatic gain control, hardware noise reduction and edge enhancement technologies for better video playback quality.
+
+In decoding, the GPU core supports hardware decoding of H.264, VC-1, WMV9, and MPEG-2 videos to lower CPU utilization (the bitstream processing/entropy decoding still requires CPU processing). ATI Avivo supports vector adaptive [[deinterlace|de-interlacing]] and video scaling to reduce [[jaggies]], and spatial/temporal dithering, enabling 10-bit color quality on 8-bit and 6-bit displays during process stage.
+
+===ATI Avivo HD===
+{{See also|Unified Video Decoder}}
+
+The successor of ATI Avivo is the ATI Avivo HD, which consists of several parts:  integrated 5.1 surround sound HDMI audio controller, dual integrated [[HDCP]] [[encryption key]] for each DVI port (to reduce license costs), the [http://ati.amd.com/products/theater200/index.html Theater 200]{{Dead link|date=April 2010}} chip for [[Video In Video Out|VIVO]] capabilities, the [[Xilleon]] chip for TV [[overscan]] and [[underscan]] correction, the [http://ati.amd.com/products/theater200/index.html Theater 200]{{Dead link|date=April 2010}} chip as well as the originally-presented [[ATI Avivo#ATI Avivo Video Converter|ATI Avivo Video Converter]]. 
+
+However, most of the important hardware decoding functions of ATI Avivo HD are provided by the accompanied [[Unified Video Decoder]] ([[Unified Video Decoder|UVD]]) and the Advanced Video Processor (AVP) which supports hardware decoding of [[H.264]]/AVC and [[VC-1]] videos (and included bitstream processing/entropy decoding which was absent in last generation ATI Avivo). For [[MPEG-1]], [[MPEG-2]], and [[MPEG-4]]/[[DivX]] videos, motion compensation and iDCT (inverse discrete cosine transform) will be done instead.
+
+The AVP retrieves the video from memory; handles scaling, de-interlacing and [[colour correction]]; and writes it back to memory. The AVP also uses 12-bit transform to reduce data loss during conversion, same as previous generation ATI Avivo.
+
+[[HDMI]] supports the transfer of video together with 8-channel 96&amp;nbsp;kHz 24-bit digital audio (and optionally Dolby TrueHD and DTS-HD Master Audio streams for external decoding by AV receivers, since HDMI 1.3). Integration of an audio controller in the GPU core capable of surround sound output eliminates the need for [[S/PDIF]] connection from [[motherboard]] or [[sound card]] to the video card, for synchronous video and audio output via HDMI cable.
+
+The [[Radeon R600#Radeon HD 2900|Radeon HD 2900 series]] lacked the [[Unified Video Decoder|UVD]] feature, but still was given the ATI Avivo HD label.
+
+===ATI Avivo Video Converter===
+ATI has also released a transcoder software dubbed &quot;ATI Avivo Video Converter,&quot; which supports transcoding between H.264, VC-1, [[WMV]]9, WMV9 [[Portable Media Center|PMC]], MPEG-2, [[MPEG-4]], [[DivX]] video formats, as well as formats used in [[iPod]] and [[PlayStation portable|PSP]]. Earlier versions of this software uses only the CPU for transcoding, but have been locked for exclusive use with the ATI [[Radeon R520|X1000 series]] of GPUs. Software modifications have made it possible to use version 1.12 of converter on a wider range of graphics adapters.&lt;ref&gt;[http://www.rage3d.com/board/archive/index.php?t-33838774.html Rage3D thread]&lt;/ref&gt; The ATI Avivo Video Converter for [[Windows Vista]] was available with the release of Catalyst 7.9 (September 2007 release, version 8.411).
+
+The ATI Avivo Video Converter with GPU transcoding acceleration is now also available for use with HD 4800 and HD 4600 series graphics cards and is included with the Catalyst 8.12 drivers.  Support for Vista x64 is available via a separate download starting with Catalyst 9.6 (9-6_vista32-64_xcode). The new software is faster than Badaboom, an encoder that uses NVIDIA's [[CUDA]] to accelerate encoding, but has a higher CPU utilization than Badaboom. One review reported visual problems with iPod and WMV playback using Catalyst version 8.12, and although concluding there was no clear winner, if forced to choose would go with the Avivo converter.&lt;ref&gt;[http://www.pcper.com/article.php?aid=647&amp;type=expert&amp;pid=3]&lt;/ref&gt;
+
+==Software support==
+*[[ArcSoft TotalMedia Theatre]]
+*[[Corel WinDVD]]
+*[[Media Player Classic#Forks|Media Player Classic Home Cinema]]
+*[[MediaPortal]]
+*[[Microsoft]] [[Windows Vista]] internal [[MPEG-2]] decoder
+*[[Nero (software suite)]]
+*All [[linux]] players supporting [[X video extension|Xv]] output (with [[ATI]] official drivers 9.1 or newer)
+
+==See also==
+* [[AMD Catalyst]] - contains the ''AMD Video Converter'' &lt;ref name=&quot;avivo&quot;&gt;{{cite web
+|url=http://support.amd.com/us/gpudownload/windows/Pages/radeonmob_win7-64.aspx#3
+|title=AMD Catalystâ¢ Display Driver
+|publisher=[[AMD]]
+|accessdate=2011-05-17}}&lt;/ref&gt; successor of [[ATI Avivo]]
+* [[Unified Video Decoder|UVD (Unified Video Decoder)]] - is the video decoding bit-stream technology from [[ATI Technologies]] to support hardware ([[GPU]]) decode with DXVA.
+* [[OpenVideo Decode|OpenVideo Decode (OVD)]] â an new open cross-platform video acceleration API from [[AMD]].&lt;ref&gt;http://developer.amd.com/gpu/AMDAPPSDK/assets/OpenVideo_Decode_API.PDF OpenVideo Decode (OVD) API&lt;/ref&gt;
+*[[X-Video Bitstream Acceleration|X-Video Bitstream Acceleration (XvBA) API]] for Linux/UNIX operating-system.
+*[[vaAPI|Video Acceleration API (VA API)]] for Linux/UNIX operating-system.
+*[[DirectX Video Acceleration|DirectX Video Acceleration (DxVA) API]] for [[Microsoft Windows]] operating-system.
+*[[Nvidia PureVideo]] - a competing technology from [[NVIDIA]] for use with their graphics chips.
+*[[VDPAU|VDPAU (Video Decode and Presentation API for Unix) from NVIDIA]]
+*[[Intel Clear Video]]
+*[[X-Video Motion Compensation|X-Video Motion Compensation (XvMC) API]]  for Linux/UNIX operating-system.
+
+==References==
+{{reflist}}
+
+==External links==
+*[http://www.amd.com/us/products/technologies/ati-avivo-hd/Pages/ati-avivo-hd.aspx ATI Avivo page]
+*[http://www.beyond3d.com/previews/ati/avivo/ Beyond3D AVIVO preview]
+*[http://www.anandtech.com/video/showdoc.aspx?i=2645 AnandTech article]
+*[http://www.pcper.com/article.php?aid=226&amp;type=expert&amp;pid=1 PC Perspective article]
+*[http://www.hexus.net/content/item.php?item=1622&amp;page=2 Hexus.net article]
+
+{{ATI}}
+{{VideoProcessing}}
+
+{{DEFAULTSORT:Ati Avivo}}
+[[Category:ATI Technologies]]
+[[Category:Video acceleration]]
+
+[[ar:Ø£ÙØ§ÙÙÙ]]
+[[cs:ATI Avivo HD]]
+[[de:ATI Avivo]]
+[[es:ATI Avivo]]
+[[pl:AVIVO]]
+[[ru:AVIVO]]
+[[zh:ATI Avivo]]</rev></revisions></page></pages></query></api>

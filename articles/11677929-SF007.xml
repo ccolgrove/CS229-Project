@@ -1,0 +1,137 @@
+<?xml version="1.0"?><api><query><pages><page pageid="11677929" ns="0" title="IcedTea"><revisions><rev xml:space="preserve">{{Other uses|Iced tea (disambiguation)}}
+{{Infobox software
+| name                   = IcedTea6
+| logo                   =
+| screenshot             = [[Image:awt-icedTea.png|250px]]
+| caption                = Screenshot of [[Abstract Window Toolkit|AWT]] widgets rendered in IcedTea
+| collapsible            = yes
+| developer              = [[Red Hat]] / [[GNU Classpath]]
+| latest release version = [http://blog.fuseyism.com/index.php/2011/10/18/security-icedtea6-1-8-10-1-9-10-and-1-10-4-released/ 1.10.4]
+| latest release date    = {{release date|2011|10|18|}}
+| latest preview version =
+| latest preview date    =
+| operating system       = [[Cross-platform]]
+| programming language   = [[C (programming language)|C]] and [[Java (programming language)|Java]]
+| genre                  = [[Java Virtual Machine]] and Java [[Library (computer science)|Library]]
+| license                = [[GNU General Public License|GPL]]+[[GPL linking exception|linking exception]]
+| website                = http://icedtea.classpath.org
+}}
+{{Infobox software
+| name                   = IcedTea-Web
+| logo                   =
+| collapsible            = yes
+| developer              = [[Red Hat]] / [[GNU Classpath]]
+| latest release version = [https://dbhole.wordpress.com/2011/11/08/icedtea-web-1-0-6-and-1-1-4-security-releases-released/ 1.1.4]
+| latest release date    = {{release date|2011|11|08}}
+| latest preview version =
+| latest preview date    =
+| operating system       = [[Cross-platform]]
+| programming language   = [[C++]] and [[Java (programming language)|Java]]
+| genre                  = [[Java Virtual Machine]] and Java [[Library (computer science)|Library]]
+| license                = [[GNU General Public License|GPL]]+[[GPL linking exception|linking exception]]
+| website                = http://icedtea.classpath.org/wiki/IcedTea-Web
+}}
+{{Infobox software
+| name                   = IcedTea7
+| logo                   =
+| collapsible            = yes
+| developer              = [[Red Hat]] / [[GNU Classpath]]
+| latest release version = [http://blog.fuseyism.com/index.php/2011/10/19/icedtea-2-0-released/ 2.0]
+| latest release date    = {{release date|2011|10|19}}
+| latest preview version =
+| latest preview date    =
+| operating system       = [[Cross-platform]]
+| programming language   = [[C (programming language)|C]] and [[Java (programming language)|Java]]
+| genre                  = [[Java Virtual Machine]] and Java [[Library (computer science)|Library]]
+| license                = [[GNU General Public License|GPL]]+[[GPL linking exception|linking exception]]
+| website                = http://icedtea.classpath.org
+}}
+
+'''IcedTea''' is a [[Software build|build]] and [[System integration|integration]] project for [[OpenJDK]] launched by [[Red Hat]] in June 2007.&lt;ref&gt;{{Cite web |url=http://mail.openjdk.java.net/pipermail/distro-pkg-dev/2007-June/000032.html |title=Credits |date=2007-06-08 |last=Fitzsimmons |first=Thomas |accessdate=2007-06-08}}&lt;/ref&gt; The initial goal was to make the [[Java (programming language)|Java]] [[OpenJDK]] software which [[Sun Microsystems]] released as [[free software]] in 2007 usable without requiring any other software that is not free software and hence make it possible to add OpenJDK to [[Fedora (Linux distribution)|Fedora]] and other [[Linux distribution]]s that insist on free software. This was met and a version of IcedTea based on OpenJDK was packaged with [[Fedora (operating system)#Fedora 8|Fedora 8]] in November 2007.
+
+April 2008 saw the first release&lt;ref&gt;{{Cite web |url=http://langel.wordpress.com/2008/04/04/icedtea6-11-released/ |title=IcedTea6 1.1 Released |date=2008-04-04 |last=Angel |first=Lillian |accessdate=2008-07-12}}&lt;/ref&gt; of a new variant, '''IcedTea6''' which is based on Sun's build drops of OpenJDK6, a fork of the OpenJDK with the goal of being compatible with the existing JDK6. This was released in [[Ubuntu (operating system)|Ubuntu]] and Fedora in May 2008. The IcedTea package in these distributions has been renamed to [[OpenJDK]] using the [http://openjdk.java.net/legal/openjdk-trademark-notice.html OpenJDK trademark notice]. In June 2008, the Fedora build passed Sun's rigorous [[Technology Compatibility Kit|TCK]] testing&lt;ref&gt;{{Cite web |url=http://blog.softwhere.org/archives/196 |title=Java is finally Free and Open |date=2008-06-19 |last=Sharples |first=Rich |accessdate=2008-06-19}}&lt;/ref&gt; on [[x86]] and [[x86-64]].
+
+==History==
+This project was created following Sunâs release of its [[HotSpot]] [[Virtual Machine]] and [[javac|Java compiler]] in November 2006, and most of the [[source code]] of the [[Java Class Library|class library]] in May 2007. However, parts of the class library, such as font rendering, colour management and sound support, were only provided as proprietary binary plugins. This was because the source code for these plugins was copyrighted to 3rd parties, rather than Sun Microsystems.&lt;ref&gt;{{Cite web |url=http://mail.openjdk.java.net/pipermail/announce/2007-May.txt |title=Open JDK is here! |publisher=Sun Microsystems |date=2007-05-08 |accessdate=2007-05-09}}&lt;/ref&gt;&lt;ref&gt;See also [[Java Class Library#Licensing|Java Class Library Licensing]]&lt;/ref&gt; The released parts were published under the terms of the [[GNU General Public License]], a [[free software license]].
+
+Due to these missing components, it was not possible to build OpenJDK only with [[Free software]] components. Sun aimed to negotiate with the license holders to allow this code to be released under a Free license, or failing that, to replace these proprietary elements with alternative implementations. With the plugins replaced, the class library would then be completely Free. Sun has continued to use the proprietary code in their certified binary releases.&lt;ref&gt;{{Cite web |url=http://www.sun.com/software/opensource/java/faq.jsp#b |title=Sun's OpenJDK FAQ |quote=''Now Sun is open sourcing most of the remaining components of the JDK, with the exception of a few encumbered components that we hope, with the community's help, can be re-implemented so that 100 % of the OpenJDK code commons is available as free software...Sun will continue to use that code in commercial releases until it's replaced by fully-functional open-source alternatives''}}&lt;/ref&gt;
+
+Following the announcement, the IcedTea project was started and was formally announced on June 7, 2007,&lt;ref name=&quot;announce&quot; /&gt; with a build repository provided by the [[GNU Classpath]] team. The team could not call their software product ''&quot;[[OpenJDK]]&quot;'' because this is a [[trademark]] owned by [[Sun Microsystems]]. They instead decided to use the temporary name ''&quot;IcedTea&quot;''.&lt;ref name=&quot;fitzsimAnnounce&quot;&gt;{{Cite web |url=http://fitzsim.org/blog/?p=17 |title=Plans for OpenJDK |last=Fitzsimmons |first=Thomas |date=2007-05-18 |accessdate=2007-05-22}}&lt;/ref&gt;
+
+On November 5, 2007, Red Hat signed both the Sun Contributor Agreement and the OpenJDK Community [[Technology Compatibility Kit|TCK]] License. The press release suggested that this would benefit the IcedTea project.&lt;ref&gt;{{Cite web |url=http://home.businesswire.com/portal/site/google/index.jsp?ndmViewId=news_view&amp;newsId=20071105005882&amp;newsLang=en |title=Red Hat and Sun Collaborate to Advance Open Source Java Technology |publisher=[[Red Hat]] |date=2007-11-05 |accessdate=2007-11-06}}&lt;/ref&gt; [[Simon Phipps (programmer)|Simon Phipps]] suggested the possibility of IcedTea being hosted on openjdk.java.net,&lt;ref&gt;{{Cite web |url=http://blogs.sun.com/webmink/entry/red_hat_joins_openjdk |title=Red Hat Joins OpenJDK |date=November 5, 2007 |accessdate=2007-11-14 |last=Phipps |first=Simon}}&lt;/ref&gt; and [[Mark Reinhold]] noted that signing the copyright assignment could allow Red Hat to contribute parts of IcedTea to Sun for inclusion in the mainstream JDK.&lt;ref&gt;{{Cite web |url=http://blogs.sun.com/mr/entry/rht_java |title=Welcome, Red Hat! |date=2007-11-05 |accessdate=2007-11-14 |last=Reinhold |first=Mark}}&lt;/ref&gt;&lt;ref&gt;{{Cite web |url=http://www.redhatmagazine.com/2008/05/16/open-source-project-openjdk/ |title=Open source project: OpenJDK |date=May 16, 2008 |last=Andrew |first=Haley}}&lt;/ref&gt;
+
+Since then, a number of patches from IcedTea6 have made their way into OpenJDK6.&lt;ref&gt;{{Cite web |url=http://bugs.sun.com/bugdatabase/view_bug.do?bug_id=6523403 |title=Bug ID 6523403: OSS CMM: Need to provide lcms library with PYCC and LINEAR_RGB OS ICC profiles |accessdate=2008-07-12}}&lt;/ref&gt;&lt;ref&gt;{{Cite web |url=http://bugs.sun.com/bugdatabase/view_bug.do?bug_id=6604044 |title=Bug ID 6604044 java crashes talking to second X screen |accessdate=2008-07-12}}&lt;/ref&gt;
+
+On June 2008, it was announced that IcedTea6 (as the packaged version of [[OpenJDK]] on [[Fedora (Linux distribution)|Fedora 9]]) has passed the [[Technology Compatibility Kit]] tests and can claim to be a fully compatible Java 6 implementation.&lt;ref&gt;{{Cite web |url=http://blog.softwhere.org/archives/196 |title=Java is finally Free and Open |date=2008-06-19 |last=Sharples |first=Rich}}&lt;/ref&gt; The project continues to track both OpenJDK6 and OpenJDK7 development in separate repositories, and contribute patches back upstream&lt;ref&gt;{{Cite web |url=http://mail.openjdk.java.net/pipermail/distro-pkg-dev/2009-April/005296.html |title=New project: getting rid of IcedTea local patches |date=2009-04-01 |accessdate=2009-09-05 |last=Haley |first=Andrew}}&lt;/ref&gt;
+where possible; the current state of each IcedTea patch is maintained on the [http://icedtea.classpath.org/wiki/IcedTea_JDK6_Patches IcedTea wiki].
+
+==The aims==
+Specifically, the IcedTea project started with two aims. One was to make it possible for the [[GNU Compiler for Java]] to [[compiler|compile]] the OpenJDK code. The problem was that the only program which could compile the OpenJDK software was the existing proprietary Sun JDK. Free distributions like Fedora can't depend on proprietary tools in order to build packages, so the IcedTea project had to make it possible to compile the code using [[Free software]]. When this was done, the resulting IcedTea version of OpenJDK could be used to compile itself, thus escaping the need to use non-Free software for future compiling.&lt;ref name=&quot;announce&quot;&gt;{{Cite web |url=http://article.gmane.org/gmane.comp.java.openjdk.distro-packaging.devel/5 |title=Experimental Build Repository at icedtea.classpath.org |date=2007-06-07 |last=Haley |first=Andrew |accessdate=2007-06-09}}&lt;/ref&gt;&lt;ref&gt;{{Cite web |url=http://developer.classpath.org/pipermail/classpath/2007-June/002109.html |title=Experimental Build Repository at icedtea.classpath.org |last=Wielaard |first=Mark |date=2007-06-07 |accessdate=2007-06-09}}&lt;/ref&gt;
+
+The second task was to provide Free equivalents of the binary plugins that existed in OpenJDK because Sun was unable to release all the source code. As of March 2008, this is no longer necessary for IcedTea6, as the OpenJDK6 build drops can be built with no binary plugins. With the release of b10,&lt;ref&gt;{{Cite web |url=http://mail.openjdk.java.net/pipermail/jdk6-dev/2008-June/000060.html |title=OpenJDK6 b10 source posted |date=2007-05-30 |accessdate=2008-07-12 |last=Wielaard |first=Mark}}&lt;/ref&gt; which replaces the proprietary sound support with that from the [[Gervill]] project, a full implementation of Java 1.6 can be built without binary plugins. The only remaining binary plug is for [[SNMP]] support, which is an optional provider for the [[JMX]] architecture and not part of the specification. As of b53 in April 2009,&lt;ref&gt;{{Cite web |url=http://download.java.net/jdk7/changes/jdk7-b53.html |title=Changes in OpenJDK7 b53 |date=2009-04-02 |accessdate=2009-09-05}}&lt;/ref&gt; the same is true for OpenJDK7.
+
+==Other benefits==
+IcedTea provides a [[free software]] Java Web browser plugin. It was the first to work in 64-bit browsers under 64-bit Linux, a feature Sun's proprietary JRE later addressed.&lt;ref&gt;http://java.sun.com/javase/6/webnotes/6u12.html&lt;/ref&gt; This makes it suitable to enable support for [[Java applet]]s in 64-bit Mozilla Firefox, among others. IcedTea also provides the only [[free software|Free]] [[Java Web Start]] implementation by means of continued development of [[Netx]].&lt;ref&gt;[http://jnlp.sourceforge.net/netx/ Netx is a high-quality implementation of the Java Network Launching Protocol (JNLP).]&lt;/ref&gt; Sun has made continued promises about releasing their plugin and Web Start implementation as part of OpenJDK, but have so far failed to deliver,&lt;ref&gt;{{Cite web |url=http://mail.openjdk.java.net/pipermail/jdk6-dev/2009-June/000604.html |title=OpenJDK and the new plugin |date=2009-06-08 |accessdate=2009-09-05 |last=Darcy |first=Joe}}&lt;/ref&gt; despite continued pressure from the community.&lt;ref&gt;{{Cite web |url=http://mail.openjdk.java.net/pipermail/discuss/2009-August/001372.html |title=Opensource plugin&amp;webstart - when? |date=2009-08-21 |accessdate=2009-09-05 |last=Hughes |first=Andrew John}}&lt;/ref&gt; Development on the IcedTea plugin continues, with the latest version of the next-generation plugin supporting Google's [[Chromium (web browser)|Chromium]].&lt;ref&gt;{{Cite web |url=http://dbhole.wordpress.com/2009/08/26/icedtea-java-plugin-with-chromium-and-firefox-3-6a1/ |title=IcedTea Java plugin with Chromium and Firefox 3.6A1 |date=2009-08-26 |accessdate=2009-09-05 |last=Bhole |first=Deepak}}&lt;/ref&gt;  Current development takes place in the separate IcedTea-Web project.&lt;ref&gt;{{Cite web | url=https://dbhole.wordpress.com/2011/02/02/first-release-of-icedtea-web/|title=First release of IcedTea-Web!|date=2011-02-02|accessdate=2011-04-04|last=Bhole|first=Deepak}}&lt;/ref&gt;
+
+IcedTea also provides a more familiar build system, by providing a wrapper around the OpenJDK makefiles using the [[GNU autotools]]. This removes the need to remember a large number of environment variables for configuring the build. (The current IcedTea builds set roughly forty such variables for the underlying OpenJDK build.) It has also provided a place for early work on features which will eventually appear in the main OpenJDK builds such as [[Gervill]]&lt;ref&gt;[https://gervill.dev.java.net/Gervill, a generic synthesizer for Java]&lt;/ref&gt; and for work on ports to other platforms.
+
+==Progress and availability==
+From June 2007, IcedTea was able to build itself and pass a significant portion of [[Mauve (test suite)|Mauve]], the [[GNU Classpath]] test suite.&lt;ref&gt;{{Cite web |url=http://mail.openjdk.java.net/pipermail/distro-pkg-dev/2007-June/000046.html |title=Mauve test run results |date=2007-06-12 |last=Kung |first=Francis |accessdate=2007-06-12}}&lt;/ref&gt; In May 2008, support was added to IcedTea for running the Sun [[JavaTest harness|jtreg]] regression tests.&lt;ref&gt;{{Cite web |url=http://mail.openjdk.java.net/pipermail/distro-pkg-dev/2008-May/001921.html |title=jtreg testing integrated |last=Wielaard |first=Mark |accessdate=2008-07-12}}&lt;/ref&gt; Availability on Windows, including Windows 7 as well as previous versions, still remains problematic.
+
+IcedTea has become popular among package maintainers for the following *NIX distributions, 
+Currently:
+
+* IcedTea is the default JVM in [[Ark Linux]],&lt;ref&gt;{{Cite web |url=http://arklinux.osuosl.org/dockyard-devel/SRPMS |title=Ark Linux packages |publisher=Ark Linux |accessdate=2008-02-23}}&lt;/ref&gt; and  [[Arch Linux]].&lt;ref&gt;{{Cite web |url=http://www.archlinux.org/news/418/ |title=JRE and JDK Moved to Community |publisher=Arch Linux |accessdate=2009-07-30}}&lt;/ref&gt;
+
+* IcedTea is available in [[CRUX PPC]] from release 2.4,&lt;ref&gt;{{Cite web |url=http://www.cruxppc.org/Main/News#CRUX-PPC-2_4-Released |title= CRUX PPC 2.4 Released! |publisher=CRUX PPC GNU/Linux Project |accessdate=2008-11-15}}&lt;/ref&gt; and actually there are binary ppc and ppc64 packages too.
+
+* IcedTea is available in [[Ubuntu (operating system)|Ubuntu]] 7.10 (Gutsy Gibbon), from the &quot;universe&quot; repository,&lt;ref&gt;{{Cite web |url=http://packages.ubuntu.com/gutsy/interpreters/icedtea-java7-jre |title=Ubuntu -- Details of icedtea-java7-jre in gutsy |publisher=Ubuntu Packages |accessdate=2007-10-26}}&lt;/ref&gt; and IcedTea6 in 8.04 (Hardy Heron).&lt;ref&gt;{{Cite web |url=http://packages.ubuntu.com/hardy/interpreters/openjdk-6-jre |title=Ubuntu -- Details of package openjdk-6-jre in hardy |publisher=Ubuntu Packages |accessdate=2008-07-12}}&lt;/ref&gt;
+
+* IcedTea[7] was available in [[Fedora (operating system)|Fedora]] 8 and IcedTea6 appears in Fedora 9, 10, 11, 12 and 13 as java-1.6.0-openjdk.
+
+* A binary package for IcedTea6 is available in [[Gentoo Linux|Gentoo's]] official repository, but was marked unstable until recently. Continued development on source ebuilds for Gentoo for both IcedTea6 and IcedTea7 occurs in the [http://overlays.gentoo.org/proj/java/ Java Project Overlay]. Installing a Java application by default pulls in IcedTea6 instead of sun-jdk because it can be installed without extra work from the user; as users have to manually agree to Oracles EULA to download the sun-jdk.
+
+* It can be built and run under [[Debian]].&lt;ref&gt;{{Cite web |url=http://icedtea.classpath.org/wiki/DebianBuildingInstructions |title=Debian Building Instructions |publisher=IcedTea Wiki |accessdate=2008-05-21}}&lt;/ref&gt; Binary packages were submitted on 20 April 2008 but were rejected due to licensing problems with some files.&lt;ref&gt;{{Citation missing|date=July 2011}}&lt;/ref&gt;&lt;ref&gt;{{Cite web |url=http://icedtea.classpath.org/bugzilla/show_bug.cgi?id=138 |title=jdk6 - GPL-compatible free software licenses and documented copyrights and licenses |accessdate=2008-07-12}}&lt;/ref&gt; A new package was uploaded in June 2008&lt;ref&gt;{{Citation missing|date=July 2011}}&lt;/ref&gt; and entered unstable on 12 July 2008.
+
+==Architecture==
+[[OpenJDK]] contained approximately (on release in May 2007) 4% [http://www.sun.com/software/opensource/java/faq.jsp#h encumbered code],&lt;ref name=&quot;fitzsimAnnounce&quot;/&gt; which was only packaged as binary plugins. These were required to build and use the JDK. [[OpenJDK#Supported JDK versions|OpenJDK6]] was released with only 1% encumbered code, and the encumbered sound support has also since been replaced. IcedTea6 is based on this release. IcedTea6 still provides its own web browser plugin and Web Start support, as Sun's implementation remains [[proprietary software|proprietary]].
+
+IcedTea can compile OpenJDK using [[GNU Classpath]]-based solutions such as [[GNU Compiler for Java|GCJ]] and optionally bootstraps itself using the [[HotSpot]] [[Java Virtual Machine]] and the [[javac]] [[Java compiler]] it just built.&lt;ref&gt;{{Cite web |url=http://gnu.wildebeest.org/diary/2007/06/07/icedtea/ |title=IcedTea |last=Wielaard |first=Mark |date=2007-06-07 |accessdate=2007-06-09}}&lt;/ref&gt;
+
+==Zero and Shark==
+Ports of [[HotSpot]] ([[OpenJDK]]'s [[Java Virtual Machine|Virtual Machine]]) are difficult because the code contains a lot of [[Assembly language|assembly]] in addition to the [[C++]] core.&lt;ref&gt;{{Cite web |url=http://gbenson.livejournal.com/2007/11/16/ |title=Gary's guide to porting IcedTea |first=Gary |last=Benson |date=2007-11-06 |accessdate=2008-01-26}}&lt;/ref&gt; The IcedTea project has developed a generic port of the HotSpot [[Interpreter (computing)|interpreter]] called ''zero-assembler Hotspot'' (or ''zero''),&lt;ref&gt;{{Cite web |url=http://openjdk.java.net/projects/zero/ |title=Zero-Assembler Project |accessdate=2008-08-22}}&lt;/ref&gt; with almost no assembly code.&lt;ref&gt;{{Cite web |url=http://icedtea.classpath.org/wiki/ZeroSharkFaq |title=ZeroSharkFaq |publisher=icedtea.classpath.org |accessdate=2009-05-30}}&lt;/ref&gt;&lt;ref name=&quot;Benson&quot;&gt;{{Cite web |url=http://gbenson.net/?p=80 |title= 28 May 2008 |first=Gary |last=Benson |publisher=[[Red Hat]] |date=2008-05-28 |quote=''Shark is a platform-independent JIT for HotSpot, to complement the zero-assembler interpreter weâve been using'' |accessdate=2008-05-30}}&lt;/ref&gt; This port is intended to allow the interpreter part of HotSpot to be very easily adapted to any [[Linux]] processor architecture.&lt;ref&gt;{{Cite web |url=http://today.java.net/pub/a/today/2009/05/21/zero-and-shark-openjdk-port.html |title= Zero and Shark: a Zero-Assembly Port of OpenJDK |first=Gary |last=Benson |publisher=java.net |date=2009-05-21 |quote=''We started an experimental port of OpenJDK without assembly language, using free software libraries to bridge the gaps. This experiment evolved to become the zero-assembly port of OpenJDK -- Zero -- and its just-in-time compiler Shark.'' |accessdate=2009-05-30}}&lt;/ref&gt; The code of ''zero-assembler Hotspot'' is used for all the non-[[x86 architecture|x86]] ports of HotSpot ([[PowerPC|PPC]], [[Itanium|IA64]], [[IBM System z9|S390]] and [[ARM architecture|ARM]]) since version 1.6 of IcedTea7.&lt;ref&gt;{{Cite web |url=http://gbenson.livejournal.com/2008/02/01/ |title=1st February 2008 |first=Gary |last=Benson |date=2008-02-01 |accessdate=2008-02-03}}&lt;/ref&gt;&lt;ref&gt;{{Cite web |url=http://mail.openjdk.java.net/pipermail/distro-pkg-dev/2008-January/001085.html |title=Making zero-assembler the default on ppc |first=Andrew |last=Haley |date=2008-01-31 |accessdate=2008-02-03}}&lt;/ref&gt;&lt;ref&gt;{{Cite web |url=http://mail.openjdk.java.net/pipermail/distro-pkg-dev/2008-February/001172.html |title=IcedTea 1.6 Released with Zero-assembler and JNLP support! |first=Lillian |last=Angel |publisher=[[Red Hat]] |date=2008-02-13 |accessdate=2008-02-13}}&lt;/ref&gt;
+
+The IcedTea project is now developing a [[Cross-platform|platform-independent]] [[Just-in-time compilation|just-in-time compiler]] called ''Shark'' for HotSpot, using [[Low Level Virtual Machine]], to complement ''Zero''.&lt;ref name=&quot;Benson&quot;/&gt;&lt;ref&gt;{{Cite web |url=http://gbenson.net/?p=67 |title= 31 March 2008 |first=Gary |last=Benson |publisher=[[Red Hat]] |date=2008-03-31 |accessdate=2008-05-30}}&lt;/ref&gt; Completing this work will make the [[Java Virtual Machine]] independent of the [[Central processing unit|CPU]]  architecture.
+
+==See also==
+{{Portal box|Free software|Java}}
+{{Portal|Free software}}
+
+* [[Free Java implementations]]
+* [[GNU Classpath]]
+* [[Java Class Library]]
+* [[OpenJDK]]
+* [[Apache Harmony]]
+
+==External links==
+* [http://icedtea.classpath.org/wiki/Main_Page IcedTea main page]
+* [http://icedtea.classpath.org/wiki/FrequentlyAskedQuestions#Functionality_and_Testing IcedTea Status]
+* [http://article.gmane.org/gmane.comp.java.openjdk.distro-packaging.devel/5 IcedTea announcement]
+* [http://developer.classpath.org/pipermail/classpath/2007-June/002109.html Classpath mailing list announcement]
+* [http://fitzsim.org/blog/?p=17 Thomas Fitzsimmons (Red Hat developer) blog entry announcing IcedTea]
+* [http://gbenson.net/?p=44 Guide to porting IcedTea]
+* [http://blogs.sun.com/barton808/entry/openjdk_and_icedtea_a_view OpenJDK and IcedTea, A view from the Fedora side]
+*[http://today.java.net/pub/a/today/2009/05/21/zero-and-shark-openjdk-port.html Zero and Shark: a Zero-Assembly Port of OpenJDK]
+
+==References==
+{{Reflist|2}}
+
+{{Java Virtual Machine}}
+
+{{DEFAULTSORT:Icedtea}}
+
+[[Category:Java platform]]
+
+[[de:IcedTea]]
+[[es:IcedTea]]
+[[pt:IcedTea]]</rev></revisions></page></pages></query></api>

@@ -1,0 +1,74 @@
+<?xml version="1.0"?><api><query><pages><page pageid="290313" ns="0" title="Yellowdog Updater, Modified"><revisions><rev xml:space="preserve">{{Unreferenced|date=February 2011}}
+{{Infobox software
+| name                   = Yellowdog updater,Modified| logo                   = [[File:yum.png]]
+| screenshot             = [[File:Screenshot-Yum Extender 2.0.4-1.png|250px]]
+| caption                = A screenshot from Yum Extender in Fedora 8
+| author                 =
+| developer              = Seth Vidal
+| released               =
+| latest release version = 3.4.0
+| latest release date    = {{release date|2011|4|15}}
+| latest preview version =
+| latest preview date    =
+| operating system       = [[Linux]]
+| platform               =
+| programming language   = [[Python (programming language)|Python]]
+| genre                  = [[package management system|package management]]
+| license                = [[GNU GPL]] â¥2
+| website                = http://yum.baseurl.org/
+}}
+The '''Yellowdog Updater, Modified''' ('''YUM''') is an [[open source software|open-source]] [[command-line interface|command-line]] [[Package management system|package-management]] utility for [[RPM Package Manager|RPM]]-compatible [[Linux]] [[operating system]]s and has been released under the [[GNU General Public License]]. It was developed by Seth Vidal and a group of volunteer programmers. Though yum has a command-line interface, several other tools provide [[graphical user interface]]s to yum functionality.
+
+As a full rewrite of its predecessor tool, [[Yellowdog Updater]] (YUP), yum evolved primarily in order to update and manage [[Red Hat Linux]] systems used at the Duke University department of Physics. Since then, it has been adopted by [[Red Hat Enterprise Linux]], [[Fedora (operating system)|Fedora]], [[CentOS]], and many other RPM-based [[Linux distribution]]s, including [[Yellow Dog Linux]] itself, where it has replaced the original YUP utility.
+
+System administrators can automate software updates using yum-updatesd, the yum-updateonboot package, the yum-cron package, or [[PackageKit]].
+
+Yum's XML repository, built with input from many other developers, quickly became the standard for RPM-based repositories.{{Citation needed|date=September 2009}}  Besides the distributions that use Yum directly, [[SUSE Linux]] 10.1 adds support for Yum repositories in [[YaST]], and the [[Open Build Service]] repositories use the YUM XML repository format.
+
+However Yum has moved{{When|date=September 2009}} to a dual approach in its repositories, where .[[sqlite]] meta-data database files are directly downloaded. This is a significant optimization.{{Citation needed|date=February 2011}}
+
+== Automatic metadata syncing ==
+Yum automatically synchronizes the remote meta data to the local client, with other tools opting to synchronize only when requested by the user. Having automatic synchronization means that yum cannot fail due to the user failing to run a command at the correct interval.
+
+== Yum repositories ==
+A separate tool, &lt;code&gt;createrepo&lt;/code&gt;, sets up yum repositories, generating the necessary [[XML]] [[metadata]] (and the [[sqlite]] meta data if given the -d option).
+
+The &lt;code&gt;mrepo&lt;/code&gt; tool (formerly known as Yam) can help in the creation and maintenance of repositories.
+
+== Plug-in/module system ==
+The 2.x versions of yum feature an additional interface for programming extensions in [[Python (programming language)|Python]] that allows the behavior of yum to be altered.
+
+A commonly installed package &lt;code&gt;yum-utils&lt;/code&gt;, contains commands which use the yum API, and many plugins.
+
+== Graphical front-ends ==
+* [[PackageKit]] â the default Yum graphical front-end for [[Fedora (operating system)|Fedora]] as of Fedora 9
+* Pirut â the default Yum graphical front-end for Fedora from Fedora Core 5 to Fedora 8
+* Pup â Package Updater Fedora GUI
+* [http://www.yum-extender.org/ Yum Extender], also known as &quot;yumex&quot; â an alternative Fedora GUI for Yum
+* [http://sourceforge.net/projects/kyum/ KYum] â GUI for Yum on KDE
+
+== External links ==
+{{Portal|Free software}}
+{{Commonscat|Yum Extender}}
+* [http://yum.baseurl.org/ Yum website]
+* [http://www.cyberciti.biz/faq/rhel-centos-fedora-linux-yum-command-howto/ yum command tutorial] â Explains how to update  and  install packages under Redhat Enterprise Linux ver 5.0
+* [http://prefetch.net/articles/yum.html Managing packages with yum] â Describes how to use yum to manage packages
+
+[[Category:Free package management systems]]
+[[Category:Linux package management-related software]]
+[[Category:Free software programmed in Python]]
+
+[[ar:ÙÙÙ Ø¯ÙØ¬ Ø£Ø¨Ø¯Ø§ØªØ±Ø ÙÙØ¯ÙÙØ§ÙØ¯]]
+[[cs:Yum]]
+[[de:Yellowdog Updater, Modified]]
+[[es:Yellow dog Updater, Modified]]
+[[fa:ÛØ§Ù]]
+[[fr:Yellow dog Updater, Modified]]
+[[ko:Yum]]
+[[it:Yellow dog Updater, Modified]]
+[[ja:Yellowdog Updater Modified]]
+[[pl:YUM]]
+[[pt:Yum]]
+[[ru:Yellow dog Updater, Modified]]
+[[fi:Yum]]
+[[zh:Yellow Dog Updater Modified]]</rev></revisions></page></pages></query></api>

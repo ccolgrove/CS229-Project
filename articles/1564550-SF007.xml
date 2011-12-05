@@ -1,0 +1,1654 @@
+<?xml version="1.0"?><api><query><pages><page pageid="1564550" ns="0" title="History of Firefox"><revisions><rev xml:space="preserve">{{Firefox TOC}}
+{{split-apart|date=October 2011}}
+The '''[[Firefox|Mozilla Firefox]]''' project was created by [[Dave Hyatt]] and [[Blake Ross]] as an experimental branch of the [[Mozilla]] project. Firefox 1.0 was released on November 9, 2004. Firefox 1.5 was released on November 29, 2005. [[Mozilla Firefox 2|Version 2.0]] was released on October 24, 2006. [[Mozilla Firefox 3|Firefox 3.0]] was released on June 17, 2008, with [[Mozilla Firefox 3.5|Version 3.5]] and [[Mozilla Firefox 3.6|Version 3.6]] released on June 30, 2009 and January 21, 2010 respectively. [[Mozilla Firefox 4.0|Version 4.0]] was released on March 22, 2011, [[#Version 5.0|Version 5.0]] was released on June 21, 2011, [[#Version 6.0|Version 6.0]] was released on August 16, 2011, [[#Version 7.0|Version 7.0]] was released on September 27, 2011 and [[#Version 8.0|Version 8.0]], the current release, was released on November 8, 2011.
+
+==Early history==
+===Early versions===
+[[Image:Phoenix0.1.PNG|thumb|200px|Phoenix 0.1, the first official release]]
+[[Image:Mozilla Firefox 1.0 front page screenshot.png|thumb|200px|Firefox 1.0, the first release targeted for general public]]
+
+Hyatt, Ross, Hewitt and Chanial's browser was created to combat the perceived [[software bloat]] of the [[Mozilla Application Suite|Mozilla Suite]] (codenamed, internally referred to, and continued by the community as ''[[SeaMonkey]]''), which integrated features such as [[Internet Relay Chat|IRC]], mail and news, and [[WYSIWYG]] [[HTML]] editing into one software suite.
+
+Firefox retains the [[cross-platform]] nature of the original Mozilla browser, using the [[XUL]] [[user interface markup language]]. The use of XUL makes it possible to extend the browser's capabilities through the use of [[Add-on (Mozilla)|extension]]s and [[skin (computing)|theme]]s. The development and installation processes of these add-ons raised security concerns, and with the release of Firefox 0.9, the Mozilla Foundation opened a Mozilla Update website containing &quot;approved&quot; themes and extensions. The use of XUL sets Firefox apart from other browsers, including other projects based on Mozilla's [[Gecko (layout engine)|Gecko]] [[Web browser engine|layout engine]] and most other browsers, which use interfaces native to their respective platforms ([[Galeon]] and [[Epiphany (web browser)|Epiphany]] use [[GTK+]]; [[K-Meleon]] uses [[Microsoft Foundation Class Library|MFC]]; and [[Camino]] uses [[Cocoa (API)|Cocoa]]). Many of these projects were started before Firefox, and probably served as inspiration.
+
+Although the Mozilla Foundation had intended to make the Mozilla Suite obsolete and replace it with Firefox, the Foundation continued to maintain the suite until April 12, 2006&lt;ref&gt;{{cite web|url=https://developer.mozilla.org/devnews/index.php/2006/04/12/sunset-announcement-for-fxtb-10x-and-mozilla-suite-17x/ |title=Mozilla Developer News Â» Blog Archive Â» Sunset Announcement for Fx/Tb 1.0.x and Mozilla Suite 1.7.x |publisher=Mozilla Developer Network |date=2006-04-12 |accessdate=2009-08-06}}&lt;/ref&gt; because it had many corporate users and was bundled with other software. The Mozilla community (as opposed to the Foundation) continues to release new versions of the suite, using the product name [[SeaMonkey]] to avoid confusion with the original Mozilla Suite.
+
+On February 5, 2004, business and IT consulting company [[American Management Systems|AMS]] categorized Mozilla Firefox (then known as Firebird) as a &quot;Tier 1&quot; (&quot;Best of Breed&quot;) open source product, considering it technically strong and virtually risk-free.&lt;ref name=&quot;keating&quot;&gt;{{cite journal
+|title=Open source: Swimming with the tide. In ''Consultants' Briefing''
+|last=Keating
+|first=Wick
+|journal=CIO Magazine
+|date=2004-02-05
+|accessdate=
+}}&lt;/ref&gt;
+
+===Naming===
+The project which became Firefox started as an experimental branch of the Mozilla Suite called ''m/b'' (or ''mozilla/browser''). After it had been sufficiently developed, binaries for public testing appeared in September 2002 under the name ''Phoenix''.
+
+The ''Phoenix'' name was kept until April 14, 2003, when it was changed because of a [[trademark]] dispute with the [[BIOS]] manufacturer, [[Phoenix Technologies]] (which produces a BIOS-based browser called Phoenix FirstWare Connect). The new name, ''Firebird'', met with mixed reactions, particularly as the [[Firebird (database server)|Firebird database server]] already carried the name. In response, the Mozilla Foundation stated that the browser should always bear the name Mozilla Firebird to avoid confusion with the database software. Continuing pressure from the Firebird community forced another change,&lt;ref&gt;{{cite web |url=http://www.zdnet.co.uk/news/desktop-apps/2004/02/10/new-mozilla-name-rises-from-ashes-39145898/ |title=New Mozilla name rises from ashes |author=Festa, Paul |date=February 10, 2004 |work=CNet News |publisher=CBS Interactive |accessdate=April 3, 2011}}&lt;/ref&gt; and on February 9, 2004 the project was renamed ''Mozilla Firefox'' (or ''Firefox'' for short).&lt;ref&gt;{{cite web |url=http://www-archive.mozilla.org/press/mozilla-2004-02-09.html |title=NEW ROUND OF RELEASES EXTENDS MOZILLA PROJECTÂS STANDARDS BASED OPEN SOURCE OFFERINGS |date=June 13, 2005 |work=archive.mozilla.org |publisher=Mozilla Foundation |accessdate=April 3, 2011}}&lt;/ref&gt;
+
+The name &quot;Firefox&quot; (a reference to the [[red panda]])&lt;ref&gt;{{cite web |url=http://www.mozilla.org/projects/firefox/firefox-name-faq.html |title=Brand Name Frequently Asked Questions |accessdate=July 28, 2011}}&lt;/ref&gt; was chosen for its similarity to &quot;Firebird&quot;, but also for its uniqueness in the computing industry. To ensure that no further name changes would be necessary, the Mozilla Foundation began the process of registering ''Firefox''&lt;ref&gt;{{US trademark|78344043}}&lt;/ref&gt; as a [[trademark]] with the [[United States Patent and Trademark Office]] in December 2003. This trademark process led to a delay of several months in the release of Firefox 0.8 when the foundation discovered that Firefox had already been registered as a trademark in the [[United Kingdom|UK]]&lt;ref&gt;{{UK trademark|2007607}}&lt;/ref&gt; for Charlton Company software.&lt;ref&gt;Class 09: Computer software for use in managed communications and connectivity.
+Class 42: Computer consultancy services; licensing and rental of computer software; design and development of computer software; maintenance, installation and up-dating of computer software; advisory services relating to computer programs and software&lt;/ref&gt; The situation was resolved when the foundation was given a license to use Charlton's European trademark.
+
+===Branding and visual identity===
+[[Image:Mozilla Firefox logo history.png|thumb|400px|left|Various logos used during the development of Firefox]]
+Early Firebird and Phoenix releases of Firefox were considered to have had reasonable visual designs, but were not up to the same standards as many professionally released software packages. In October 2003, professional interface designer Steven Garrity wrote an article covering everything he considered to be wrong with Mozilla's visual identity.&lt;ref name=&quot;branding-mozilla&quot;&gt;{{cite web|last=Garrity|first=Steven|title=Branding Mozilla: Towards Mozilla 2.0|url=http://www.actsofvolition.com/files/mozillabranding/|accessdate=2009-02-08|date=2003-10-23}}&lt;/ref&gt; The page received a great deal of attention; the majority of criticism leveled at the article fell along the lines of &quot;where's the patch?&quot;{{Citation needed|date=November 2009}}
+
+[[Image:Deer park globe.svg|right|thumb|128px|Blue globe artwork is distributed with Firefox [[source code]], and is explicitly not protected as a trademark&lt;ref&gt;[http://www.mozilla.org/foundation/trademarks/faq.html Mozilla Trademark Policy FAQ] ''&quot;What are the Mozilla Trademarks and Logos?&quot;''.  Retrieved on November 2, 2006&lt;/ref&gt;]]
+
+Shortly afterwards, Garrity was invited by the Mozilla Foundation to head up the new visual identity team. The release of Firefox 0.8 in February 2004 saw the introduction of the new branding efforts, including new icon designs by silverorange, a group of web developers with a long-standing relationship with Mozilla, with final renderings by [[Jon Hicks (designer)|Jon Hicks]], who had previously worked on [[Camino]].&lt;ref name=&quot;branding-mozilla-followup&quot;&gt;{{cite web|url=http://www.actsofvolition.com/archive/2004/february/brandingmozilla|title=Branding Mozilla: Towards Firefox 1.0|last=Garrity|first=Steven|date=2004-02-09|accessdate=2009-02-08}}&lt;/ref&gt;&lt;ref name=&quot;branding-firefox&quot;&gt;{{cite web|last=Hicks|first=Jon|title=Branding Firefox|url=http://www.hicksdesign.co.uk/journal/branding-firefox|date=2004-02-08|publisher=Hicksdesign|accessdate=2009-02-08}}&lt;/ref&gt; The logo was later revised and updated, fixing several flaws found when it was enlarged.&lt;ref name=&quot;spot-the-difference&quot;&gt;{{cite web|last=Hicks|first=Jon|title=Spot the Difference|url=http://www.hicksdesign.co.uk/journal/spot-the-difference/|publisher=Hicksdesign|date=2004-12-16|accessdate=2009-02-08}}&lt;/ref&gt;
+
+The animal shown in the logo is a stylized fox, although &quot;firefox&quot; is considered to be a common name for the [[red panda]]. The panda, according to Hicks, &quot;didn't really conjure up the right imagery&quot; and wasn't widely known.&lt;ref name=&quot;branding-firefox&quot; /&gt; The logo was chosen to make an impression while not shouting out with overdone artwork. It had to stand out in the user's mind, be easy for others to remember, and stand out without causing too much distraction when seen among other icons.
+
+The Firefox icon is a trademark used to designate the official Mozilla build of the Firefox software and builds of official distribution partners.&lt;ref&gt;[http://www.mozilla.org/foundation/trademarks/distribution-policy.html Mozilla Trademark Policy for Distribution Partners] Version 0.9 (DRAFT).  Retrieved on November 2, 2006.&lt;/ref&gt; For this reason, [[Debian]] and other software distributors who distribute patched or modified versions of Firefox do not use the icon. The crash reporting service was initially closed source, but switched with version 3 from a program called [[Crash reporter#Talkback|Talkback]] to the open source [[Crash reporter#Breakpad|BreakPad]] &amp; [http://code.google.com/p/socorro/ Socorro].
+
+===&quot;Delicious delicacies&quot;===
+[[File:Firefox Delicacies.png|thumb|150px|A screenshot showing the &quot;cookies are delicious delicacies&quot; line]]
+
+Early Firefox releases featured a preferences panel that described [[HTTP cookie|cookie]]s thus: &quot;Cookies are delicious delicacies&quot;.
+
+The phrase was representative of the programmers' quirky sense of humor and was a reflection of the [[free software movement]]'s unconventional approach. The phrase became something of a cult legend and was even featured in an [[O'Reilly Media|O'Reilly]] computer book.
+
+The original text was inserted by Blake Ross, one of the lead developers of Firefox, because, [http://web.archive.org/web/20071020020757/http://blakeross.com/index.php?p=24 he said], &quot;describing something so complicated in such a small space was quite frankly the last thing I wanted to worry about after rewriting the cookie manager&quot;.
+
+However, in reflection of the growing acceptance and use of the Firefox browser in the [[Internet]] mainstream, the text was later changed. It was labeled a [[software bug|bug]],&lt;ref&gt;[https://bugzilla.mozilla.org/show_bug.cgi?id=213186 Bugzilla.Mozilla.org]&lt;/ref&gt; and was &quot;fixed&quot; by Mike Connor to read, &quot;Cookies are pieces of information stored by web pages on your computer. They are used to remember login information and other data.&quot; The revision was regarded as more likely to be helpful to less technically oriented computer users who were now using Firefoxârepresenting Mozilla's desire to appeal to mainstream users.
+
+The text became a popular [[in-joke]] and on August 2004, the [https://www.squarefree.com/extensions/delicious-delicacies/ Delicious Delicacies extension], no longer maintained or updated, was released by Jesse Ruderman. The extension restored the old description of cookies, available in several languages.
+
+As of Firefox 2.0, cookies are no longer described in the preferences window.
+
+===Version 1.5===
+[[Image:Deer Park alpha 1 installation.png|thumb|150px|&quot;Deer Park&quot;, the codename of the Firefox 1.1 and 1.5 Alphas, did not include Firefox branding.]]
+
+On June 23, 2005, the Mozilla Foundation announced that Firefox 1.1 (which became Firefox 1.5) and other new Mozilla products would no longer support [[Mac OS X v10.1]], in order to improve the quality of Firefox releases on [[Mac OS X v10.2]] and above. Mac 10.1 users could still use Firefox versions from the 1.0.x branch (e.g. Firefox 1.0.7).
+
+[[Image:Deer Park alpha 1 options.png|thumb|150px|Updated options window introduced in Firefox 1.5]]
+Firefox 1.5 was released on November 30, 2005. While Firefox 1.5 was originally slated to arrive later, the Mozilla foundation abandoned the 1.1 release plan after the first two 1.1 alpha builds, merging it with the feature set of 1.5, which ended up being released later than the original 1.1 date. The new version resynchronized the code base of the release builds (as opposed to nightly builds) with the core &quot;trunk&quot;, which contained additional features not available in 1.0, as it [[Fork (software development)|branched]] from the trunk around the 0.9 release. As such, there was a backlog of bug fixes between 0.9 and the release of 1.0, which were made available in 1.5. Version 1.5 implemented a new Mac-like [http://weblogs.mozillazine.org/ben/archives/007377.html options interface], the subject of much criticism from Windows and Linux users, with a &quot;[http://weblogs.mozillazine.org/ben/archives/007150.html Sanitize]&quot; action to allow someone to clear their privacy-related information without manually clicking the &quot;Clear All&quot; button. In Firefox 1.5, a user could clear all privacy-related settings simply by exiting the browser or using a keyboard shortcut, depending on their settings. Moreover, the software update system was [http://weblogs.mozillazine.org/ben/archives/008067.html improved] (with binary patches now possible). There were also [http://weblogs.mozillazine.org/ben/archives/008066.html improvements] in the extension management system, with a number of [http://www-archive.mozilla.org/projects/deerpark/new-extension-dev-features.html new developer features].
+
+In addition, Firefox 1.5 had preliminary [[Scalable Vector Graphics|SVG]] 1.1 support.&lt;ref&gt;as shown in Mozilla's [[Bugzilla]] database&lt;/ref&gt;
+
+Alpha builds of Firefox 1.5 (1.1a1 and 1.1a2) did not carry Firefox branding; they were labeled &quot;Deer Park&quot; (which was Firefox 1.5's internal codename) and contained a different program icon. This was done to dissuade end-users from downloading preview versions, which are intended for developers only.
+
+Firefox 1.5.0.12 was the final version supported on [[Windows 95]].
+
+===Version 2===
+{{Main|Firefox 2}}
+[[File:Wikipedia Main Page in Firefox 2.0.0.12.png|right|thumb|250px|Mozilla Firefox 2.0.0.12 running on Ubuntu]]
+
+On March 22, 2006, the first alpha version of Firefox 2 (Bon Echo Alpha 1) was released. It featured Gecko 1.8.1 for the first time.
+
+Firefox 2 was released on October 24, 2006 and contained many new features not found in Firefox 1.5, including improved SVG and JavaScript 1.7 support, as well as UI changes.
+
+Mozilla Firefox 2.0.0.x was the final version supported on Windows NT 4.0, 98 and Me. Mozilla Corporation announced it would not develop new versions of Firefox 2 after the 2.0.0.20 release, but continued Firefox 2 development as long as other programs, such as [[Mozilla Thunderbird|Thunderbird mail client]], depended on it. The final internal release was 2.0.0.22, released in late April 2009.
+
+===Firefox Live Chat===
+In December 2007, Mozilla launched [http://support.mozilla.com/en-US/chat/ Live Chat], a service allowing users to seek technical support from volunteers. Because Live chat is kept running by volunteers, it is only available when they are online.&lt;ref&gt;{{cite web|url=http://blog.mozilla.com/sumo/2007/12/28/firefox-live-chat-launching-today/ |title=Firefox Support Blog Â» Blog Archive Â» Firefox Live Chat launching today |publisher=The Mozilla Blog |date=2007-12-28 |accessdate=2009-08-06}}&lt;/ref&gt; Support is only available in English officially, but the volunteers may also provide in other languages. Mozilla uses the open source software, [[Openfire]] and Spark with the Fastpath plugin, all by Ignite Realtime. Unlike other services by companies such as [[Microsoft]], Mozilla cannot offer [[Remote desktop software|remote control]], as volunteers are bound to the privacy policy.
+
+===Version 3===
+{{Main|Firefox 3}}
+
+[[File:Mozilla Firefox 3.0 in Ubuntu.png|thumb|250px|Mozilla Firefox 3.0 on [[Ubuntu (operating system)|Ubuntu]]]]
+
+The Mozilla Foundation released Firefox 3 on June 17, 2008. The first Firefox 3 beta (under codename 'Gran Paradiso').&lt;ref&gt;{{cite web
+|url=http://groups.google.com/group/mozilla.dev.planning/browse_thread/thread/c73f6a1c25e8e7b0/b714ca46975f0109#b714ca46975f0109 | title = Gecko 1.9/Firefox 3 (&quot;Gran Paradiso&quot;) Planning Meeting, Wednesday Jun 7, 11:00 am | accessdate=2006-09-17 |date=June 2, 2006 | last = Vukicevic | first = Vladimir | publisher = Google Groups: mozilla.dev.planning}}&lt;/ref&gt;
+had been released several months earlier, on 19 November 2007,&lt;ref&gt;{{cite web |url=https://developer.mozilla.org/devnews/index.php/2007/11/19/firefox-3-beta-1-now-available-for-download/ |author=Mike Beltzner |publisher=Mozilla Developer News |title=Firefox 3 Beta 1 now available for download}}&lt;/ref&gt; which was followed by several more beta releases in the Spring of 2008 culminating in the June release.&lt;ref&gt;{{cite web |accessdate=2007-12-20 |url=https://developer.mozilla.org/devnews/index.php/2007/12/18/firefox-3-beta-2-now-available-for-download/ |author=Mike Beltzner |publisher=Mozilla Developer News |title=Firefox 3 Beta 2 now available for download}}&lt;/ref&gt;
+
+One of the major changes in Firefox 3 is the implementation of [[Gecko (layout engine)|Gecko]] 1.9, an updated [[Web browser engine|layout engine]]. The new version fixes many bugs and implements new web APIs.&lt;ref name=&quot;mdc_fx3_developers&quot;&gt;{{cite web | url = https://developer.mozilla.org/en/docs/Firefox_3_for_developers | title = Firefox 3 for developers | accessdate = 2007-07-17 |date=2007-07-17 | publisher = Mozilla Developer Center}}&lt;/ref&gt;
+
+===Version 3.5===
+{{Main|Firefox 3.5}}
+
+After several development releases, the final version was released on June 30, 2009. The current version is 3.5.19, released on April 28, 2011. Also, as of mid-December 2009, Firefox 3.5 was the most popular browser (when counting individual browser versions), passing [[Internet Explorer 7]].&lt;ref name=&quot;test&quot;&gt;[http://blog.seattlepi.com/microsoft/archives/188906.asp?from=blog_last3 Firefox 3.5 is world's most popular browser, StatCounter says], Nick Eaton. The Microsoft Blog - seattlepi.com. Blogs - seattlepi.com. 2009-12-21. Retrieved 2009-12-22.&lt;/ref&gt; It was the first version to accomplish this feat.
+
+===Version 3.6===
+{{Main|Firefox 3.6}}
+Version 3.6, released on January 21, 2010, uses the Gecko 1.9.2 engine and includes several interface improvements, such as &quot;personas&quot;. This release was referred to as 3.2 before 3.1 was changed to 3.5. The codename for this version was Namoroka.
+
+One minor update to Firefox 3.6, version 3.6.4 (code-named [[Lorentz National Park|Lorentz]]) is the first minor update to make non-intrusive changes other than minor stability and security fixes.&lt;ref name=&quot;Lorentz&quot;&gt;{{cite web|url=http://news.cnet.com/8301-30685_3-10433844-264.html|title=Firefox 3.6 due this month; next comes 'Lorentz'|publisher=CNET News |date=2009-01-13 |accessdate=2010-01-17}}&lt;/ref&gt; It adds Out of Process Plugins (OOPP), which runs plugins in a separate process, allowing Firefox to recover from plugin crashes.
+
+Firefox 3.6.6 lengthens the amount of time a plug-in is allowed to be unresponsive before the plug-in quits.&lt;ref&gt;{{cite web|url=http://www.mozilla.com/en-US/firefox/3.6.6/releasenotes/|date=2010-06-26|publisher=Mozilla|title=Mozilla Firefox 3.6.6 Release Notes}}&lt;/ref&gt;
+
+===Version 4.0===
+{{Main|Firefox 4}}
+
+Nightly builds were marked as 4.0a1pre between February and June 2008,&lt;ref&gt;[http://ftp.mozilla.org/pub/mozilla.org/firefox/nightly/2008/02/2008-02-20-02-mozilla-central/ ftp.mozilla.org]&lt;/ref&gt;&lt;ref&gt;[http://ftp.mozilla.org/pub/mozilla.org/firefox/nightly/2008/06/2008-06-06-02-actionmonkey/ ftp.mozilla.org]&lt;/ref&gt; but were renamed to 3.1a1pre afterward.
+
+Firefox 3.7 (Gecko 1.9.3) Alpha 1 was released on February 10, 2010.&lt;ref&gt;[https://wiki.mozilla.org/Platform/2010-02-02#Notices_.2F_Schedule Mozilla Wiki]&lt;/ref&gt;&lt;ref name=&quot;mozilla1&quot;&gt;{{cite web|url=http://www.mozilla.org/projects/firefox/3.7a1/releasenotes/ |title=Release Notes: Mozilla Developer Preview |publisher=Mozilla |date= |accessdate=2010-09-06}}&lt;/ref&gt;
+Alpha 2 was released on March 1, 2010, Alpha 3 on March 17, Alpha 4 on April 12, and Alpha 5 on June 16. The version number was changed to 4.0 (and Gecko's was changed to 2.0) starting with Beta 1, released on July 6, 2010. Beta 2 was released on July 27, Beta 3 on August 11, Beta 4 on August 24, Beta 5 on September 7, Beta 6 (a chemspill release) on September 14. After major delays, Beta 7 was finally released on November 10. Beta 7 was followed by Beta 8, released on December 21. Beta 9 was released on January 14, 2011, Beta 10 on January 25, Beta 11 on February 8, and Beta 12 on February 12. Firefox then moved into the RC stage.&lt;ref&gt;http://www.theregister.co.uk/2011/02/25/firefox_4_beta_12_final_before_release_candidate/&lt;/ref&gt; The Final Version of Firefox 4 was released on March 22, 2011.&lt;ref name=FFReleases/&gt;
+
+One of the main focuses was to improve the user interface. UI overhaul mockups for the Windows version posted in the Mozilla Wiki showed numerous changes, including optional tab bar display at the top of the window, [[status bar]] integration with the tab toolbar, as well as search bar and the reload/stop button integration with the awesomebar.&lt;ref&gt;{{cite web|url=https://wiki.mozilla.org/Firefox/4.0_Windows_Theme_Mockups|title=Firefox/4.0 Windows Theme Mockups - MozillaWiki|date=2009-07-27|accessdate=2009-08-10|publisher=Mozilla}}&lt;/ref&gt; A new type of tab, called an application tab, was placed in the tab bar. Similar to the [[Mozilla Prism]] project, it allows web pages (such as [[Gmail]]) to become applications. The browser was given a home tab similar to new tab pages found in [[Internet Explorer 8]] and [[Google Chrome]], {{Citation needed|date=May 2010}} although users were allowed to customize the button to take them to their homepage instead. The [[menu bar]] disappeared from the mockups, and the UI used animations to manipulate tags and buttons.{{Citation needed|date=May 2010}}
+
+The Mac OS X installer was redesigned to make installations easier. {{Citation needed|date=December 2010|reason=isn't it already the easiest one can make?}} Firefox start-up windows were eliminated to make start-up quicker. Preference and add-on manager windows were redesigned to better assist users.
+
+&quot;Door hanger&quot; notifications were to be added to replace &quot;bar&quot; notifications, which were easily spoofed by web pages.
+
+The Gecko layout engine was improved to support more [[HTML5]] and [[Cascading Style Sheets#CSS 3|CSS3]] features.
+
+In addition, the [[Firefox Sync]] project was integrated into the browser to allow users to sync elements such as bookmarks, tabs, and history with either Mozilla or other third-party servers.
+
+== Rapid release development cycle ==
+From early 2011, Mozilla initiated a rapid release development cycle,&lt;ref&gt;{{cite web|url=http://blog.mozilla.com/blog/2011/04/13/new-channels-for-firefox-rapid-releases/ |title=New Channels for Firefox Rapid Releases |publisher=The Mozilla Blog |accessdate=2011-06-30 |date=2011-04-13}}&lt;/ref&gt;&lt;ref name=&quot;newdevchannels&quot;&gt;{{cite web|url=https://developer.mozilla.org/devnews/index.php/2011/04/07/new-development-channels-and-repositories-for-rapid-releases/ |title=New dev channels and repositories |publisher=Mozilla Developer News |date=2011-04-17 |accessdate=2011-07-06}}&lt;/ref&gt; with versions planned to move through Mozilla's NIGHTLY, AURORA and BETA development channels after spending 6 weeks in each.
+
+=== Version 5.0 ===
+[[Image:Firefox5.png|thumb|Firefox 5 on Windows 7]]
+Firefox 5 was released on June 21, 2011.&lt;ref name=&quot;moz-n&quot;&gt;[http://www.mozilla.com/en-US/firefox/5.0/releasenotes/ Mozilla Firefox Release Notes.&lt;!-- Bot generated title --&gt;]&lt;/ref&gt; This was the first edition under Mozilla's rapid release development cycle, and was released only three months after Firefox 4.
+
+Even though the [[Graphical user interface|GUI]] was changed very little, Firefox 5 features:
+*Better [[Web standards|standards]] support for [[HTML5]], [[CSS3]], [[MathML]], [[XMLHttpRequest|XHR]] and [[Synchronized Multimedia Integration Language|SMIL]]
+*Better visibility for the [[Do not track header]] preference&lt;ref name=&quot;Mashable&quot; /&gt;
+*Stability and [[security]] improvements&lt;ref name=&quot;Hexus.net&quot;&gt;{{cite web | url=http://www.hexus.net/content/item.php?item=30901 | title=Hexus.net - News: Firefox 5 heading your way | publisher=Hexus.net | date=20 June 2011 | accessdate=June 20, 2011}}&lt;/ref&gt;&lt;ref name=&quot;firefox-dev&quot;&gt;{{cite web | url = https://developer.mozilla.org/en/firefox_5_for_developers | title = Firefox 5 for developers | accessdate = 2011-06-17 | work = MDC Docs Firefox 5 for developers | publisher = [[Mozilla Foundation|Mozilla Developer Network]]}}&lt;/ref&gt;&lt;ref&gt;{{cite web|title=Firefox Beta release notes|url=http://www.mozilla.com/en-US/firefox/5.0beta/releasenotes/|publisher=[[Mozilla Foundation]]|accessdate=17 June 2011}}&lt;/ref&gt;
+*Better tuned [[Hypertext Transfer Protocol|HTTP]] idle connection logic&lt;ref name=&quot;Mashable&quot;&gt;{{cite web | url=http://mashable.com/2011/06/21/firefox-5/ | title=Firefox 5 Available for Download | publisher=Mashable | date=June 21, 2011 | accessdate=June 22, 2011}}&lt;/ref&gt;
+*Improved [[Canvas element|canvas]], [[JavaScript]], [[Computer memory|memory]], and [[Computer network|networking]] performance
+*Improved [[Spell checker|spell checking]] for some [[locale]]s
+*Improved desktop environment integration for Linux users
+*Better [[WebGL]] security (WebGL content can no longer load cross-domain textures)&lt;ref name=&quot;ftu&quot; /&gt;
+*Background tabs have setTimeout and setInterval clamped to 1000 [[Millisecond|ms]] to improve performance&lt;ref name=&quot;moz-n&quot; /&gt;
+Immediately following the launch of Firefox 5, several software critics reviewed it. Matt Egan of PC Advisor said that there was not much new to see, and that users would have to double-check they were not still using Firefox 4, although did concede that improvements in speed and stability made an upgrade worthwhile.&lt;ref&gt;{{cite web | url = http://www.pcadvisor.co.uk/reviews/software/3287536/mozilla-firefox-5-review | title = Mozilla Firefox 5 review | accessdate = 2011-06-23 | last = Egan | first = Matt | date = 2011-06-22 | work = PC Advisor's Browsers Reviews | publisher = PC Advisor}}&lt;/ref&gt; Gary Marshall of TechRadar.com commented that there appeared to be a version number race between different browsers and implies in his review that the changes do not merit a full version number. However, he does praise the addition of the Do Not Track button to the user interface and describes how this helps users.&lt;ref name=&quot;ftu&quot;&gt;{{cite web | url = http://www.techradar.com/news/software/applications/hands-on-firefox-5-review-969338 | title = Hands on: Firefox 5 review | accessdate = 2011-06-23 | last = Marshall | first = Gary | date = 2011-06-22 | work = techradar.com Application News | publisher = TechRadar UK}}&lt;/ref&gt;
+Seth Rosenblatt of CNET agrees with the other two reviewers on the minor nature of the changes and praises the speed and usability improvements.&lt;ref&gt;{{cite web | url = http://download.cnet.com/mozilla-firefox/ | title = Mozilla Firefox | accessdate = 2011-06-23 | last = Rosenblatt | first = Seth | date = 2011-06-20 | work = CNET Editor's Review | publisher = [[CNET]]}}&lt;/ref&gt;
+
+=== Version 6.0 ===
+[[Image:Firefox 6.0.png|thumb|Firefox 6 on Windows]]
+Firefox 6 was released on August 16, 2011. New features in Firefox 6.0 include:&lt;ref&gt;https://bugzilla.mozilla.org/buglist.cgi?resolution=FIXED&amp;classification=Client%20Software&amp;query_format=advanced&amp;target_milestone=Firefox%206&amp;product=Firefox&lt;/ref&gt;
+* about:permissions, a permissions manager. The user can choose what information can be shared with other sites, e.g. passwords.
+*The address bar now highlights the domain of the website you are visiting.
+*Streamlined the look of the site identity block
+*Added support for the latest draft version of [[WebSocket]]s with a prefixed API
+*Added support for EventSource / server-sent events
+*Added support for &lt;code&gt;window.matchMedia&lt;/code&gt;
+*Added Scratchpad, an interactive JavaScript prototyping environment
+*Added a new Web Developer menu item and moved development-related items into it
+*Improved usability of the Web Console
+*Improved the discoverability of Firefox Sync
+*Reduced browser startup time when using Panorama
+*Fixed several stability issues
+*Fixed several security issues
+
+=== Version 7.0 ===
+[[File:Firefox 7.0.1.png|thumb|Firefox 7 on Windows]]
+Firefox 7.0 was released on September 27, 2011. New features in Firefox 7.0 include:&lt;ref&gt;https://www.mozilla.org/en-US/firefox/7.0/releasenotes/&lt;/ref&gt;
+* Drastically improved memory handling for certain use cases
+* Added a new rendering backend to speed up Canvas operations on Windows systems
+* Bookmark and password changes now sync almost instantly when using Firefox Sync
+* The &lt;nowiki&gt;'http://'&lt;/nowiki&gt; URL prefix is now hidden by default.
+* Added support for text-overflow: ellipsis
+* Added support for the Web Timing specification
+* Enhanced support for MathML
+* The WebSocket protocol has been updated from version 7 to version 8.
+* Added an opt-in system for users to send performance data back to Mozilla to improve future versions of Firefox
+* Fixed several stability issues
+* Fixed several security issues
+
+Firefox 7.0.1 was released on September 29, 2011, providing a bug-fix for a problem with add-ons that were hidden after updating.&lt;ref&gt;http://blog.mozilla.com/addons/2011/09/28/issue-discovered-with-firefox-add-on-upgrades/&lt;/ref&gt;
+
+=== Version 8.0 ===
+[[Image:Firefox 8.png|thumb|Firefox 8 on Windows 7]]
+* Add-ons installed by third-party programs are now disabled by default
+* Added a one-time add-on selection dialog to manage previously installed add-ons
+* Added [[Twitter]] to the search bar
+* Added a preference to load tabs on demand, improving start-up time when windows are restored
+* Improved performance and memory handling when using &lt;audio&gt; and &lt;video&gt; elements
+* Added [[Cross-Origin Resource Sharing]] (CORS) support for cross-domain textures in WebGL
+* Added support for HTML5 context menus
+* Added support for &lt;code&gt;insertAdjacentHTML()&lt;/code&gt;
+* Improved CSS hyphen support for many languages
+* Improved WebSocket support
+* Fixed several stability issues
+
+Originally an improved tab animation for moving, reordering and detaching tabs was planned, but the new code was backed out with Beta 5 due to issues with the implementation. &lt;ref&gt;https://bugzilla.mozilla.org/show_bug.cgi?id=690227&lt;/ref&gt;
+
+== Future releases ==
+The precursory releases of upcoming Firefox releases are named ''Nightly'', as this is the name of the [[Trunk (software)|trunk]] builds, and ''Aurora'', a separate nightly branch for refining code. The next scheduled date for a version shift in these channels is December 20, 2011.
+
+=== Expected release dates ===
+{| class=&quot;wikitable&quot;
+|-
+! Version
+! Channel
+! Date
+|-
+| Firefox 9
+| Beta
+| December 20, 2011
+|-
+| Firefox 10
+| Aurora
+| January 31, 2012
+|-
+| Firefox 11
+| Nightly
+| March 13, 2012
+|}
+
+===Version 9.0===
+The log of changes in version 9 was first published in 11 November 2011 with the first public Beta release. &lt;ref&gt;https://www.mozilla.org/en-US/firefox/9.0/releasenotes/&lt;/ref&gt;
+* Added [[type inference]], significantly improving JavaScript performance.
+* Improved theme integration for Mac OS X Lion.
+* Added two finger swipe navigation for Mac OS X Lion.
+* Added support for querying [[Do not track header|Do Not Track]] status via JavaScript.
+* Added support for the &lt;code&gt;font-stretch&lt;/code&gt; CSS property.
+* Improved support for the &lt;code&gt;text-overflow&lt;/code&gt; CSS property.
+* Improved standards support for HTML5, MathML, and CSS.
+* Fixed several stability issues.
+
+=== Version 10.0 ===
+Firefox 10.0 is currently on the Aurora channel.
+
+=== Version 11.0 ===
+[[Image:Nightly firefox 11.0a1.jpg|thumb|Firefox 11.0A1 on Windows 7]]
+Firefox 11.0 is currently on the Nightly channel.
+
+== Release history ==
+=== Mozilla Firefox timeline ===
+{{Timeline Mozilla Firefox}}
+
+=== Color chart ===
+{| class=&quot;wikitable&quot;
+|-
+! Colour
+! Meaning
+|-
+| style=&quot;background:salmon;&quot; | Red
+| Former release; no longer supported
+|-
+| style=&quot;background:#ffc0cb;&quot; | Pink
+| Former test release
+|-
+| style=&quot;background:khaki;&quot; | Yellow
+| Former release; still supported
+|-
+| style=&quot;background:#a0e75a;&quot; | Green
+| Current supported release
+|-
+| style=&quot;background:skyBlue;&quot; | Blue
+| Future release
+|-
+| style=&quot;background:gold;&quot; | Gold
+| Current test release
+|-
+| style=&quot;background:#d6b4f1;&quot; | Purple
+| Future test release
+|}
+
+;Current Supported Releases
+:*Firefox 3.6.24
+:*Firefox 8.0.1
+
+;Current Test Releases
+;*Firefox 9.0 Beta 4
+:*Firefox 10.0 Aurora
+:*Firefox 11.0 Nightly
+
+;Future Releases
+:*Firefox 3.6.25
+:*Firefox 9.0
+:*Firefox 10.0
+:*Firefox 11.0
+:*Firefox 12.0
+
+;Future Test Releases
+:*Firefox 10.0 Beta
+:*Firefox 11.0 Aurora
+:*Firefox 11.0 Beta
+:*Firefox 12.0 Nightly
+:*Firefox 12.0 Aurora
+:*Firefox 12.0 Beta
+
+{{anchor|FeatureHistoryTable}}
+{| class=&quot;wikitable collapsible collapsed&quot; width=&quot;100%&quot;
+! colspan=6 | Release History
+|-
+! | Browser name 
+! | Gecko version
+! | Version
+! | Codename
+! | Release date&lt;ref name=FFReleases&gt;https://wiki.mozilla.org/Releases&lt;/ref&gt;
+! | Significant changes
+|-
+| rowspan=5 style=&quot;vertical-align:top;&quot;|'''Phoenix'''
+| rowspan=3 | 1.2
+| style=&quot;white-space:nowrap;background:salmon;&quot;| 0.1
+| ''[[Pescadero, California|Pescadero]]''
+| September 23, 2002
+| First release. Customizable toolbar, quicksearch.&lt;ref&gt;{{cite web|url=http://www.mozilla.com/en-US/firefox/releases/0.1.html |title=Phoenix 0.1 (Pescadero) Release Notes and FAQ |publisher=Mozilla |date=2002-09-23 |accessdate=2011-07-06}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:salmon;&quot;| 0.2
+| ''[[Santa Cruz, California|Santa Cruz]]''
+| October 1, 2002
+| Sidebar, extension management.&lt;ref&gt;{{cite web|url=http://www.mozilla.com/en-US/firefox/releases/0.2.html |title=Phoenix 0.2 (Santa Cruz) Release Notes and FAQ |publisher=Mozilla |date=2002-10-01 |accessdate=2011-07-06}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:salmon;&quot;| 0.3
+| ''[[Lucia, California|Lucia]]''
+| October 14, 2002
+| Image blocking, pop-up blocking whitelist, tabbed browsing.&lt;ref&gt;{{cite web|url=http://www.mozilla.com/en-US/firefox/releases/0.3.html |title=Phoenix 0.3 (Lucia) Release Notes and FAQ |publisher=Mozilla |date=2002-10-14 |accessdate=2011-07-06}}&lt;/ref&gt;
+|-
+|rowspan=&quot;2&quot;|1.3
+| style=&quot;white-space:nowrap;background:salmon;&quot;| 0.4
+| ''[[Oceano, California|Oceano]]''
+| October 19, 2002
+| Themes, pop-up blocking improvements, toolbar customization.&lt;ref&gt;{{cite web|url=http://www.mozilla.com/en-US/firefox/releases/0.4.html |title=Phoenix 0.4 (Oceano) Release Notes and FAQ |publisher=Mozilla |date=2002-10-19 |accessdate=2011-07-06}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:salmon;&quot;| 0.5
+| ''[[Naples, Long Beach, California|Naples]]''
+| December 7, 2002
+| Multiple homepages, sidebar and accessibility improvements.&lt;ref&gt;{{cite web|url=http://www.mozilla.com/en-US/firefox/releases/0.5.html |title=Phoenix 0.5 (Naples) Release Notes and FAQ |publisher=Mozilla |date=2002-12-07 |accessdate=2011-07-06}}&lt;/ref&gt;
+|-
+| rowspan=4 style=&quot;vertical-align:top;&quot;| '''Firebird'''
+| rowspan=4 | 1.5
+| style=&quot;white-space:nowrap;background:salmon;&quot;| 0.6
+| ''[[Glendale, California|Glendale]]''
+| May 17, 2003
+| New default theme (Qute), bookmark and privacy improvements, smooth scrolling, automatic image resizing.&lt;ref&gt;{{cite web|url=http://www.mozilla.com/en-US/firefox/releases/0.6.html |title=Mozilla Firebird 0.6 Release Notes and FAQ |publisher=Mozilla |date=2003-05-17 |accessdate=2011-07-06}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:salmon;&quot;| 0.6.1
+|
+| July 28, 2003
+| Bugfix release.&lt;ref&gt;{{cite web|url=http://www.mozilla.com/en-US/firefox/releases/0.6.1.html |title=Mozilla Firebird 0.6.1 Release Notes and FAQ |publisher=Mozilla |date=2003-07-28 |accessdate=2011-07-06}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:salmon;&quot;| 0.7
+| ''[[Indio, California|Indio]]''
+| October 15, 2003
+| Automatic scrolling, password manager, preferences panel improvements.&lt;ref&gt;{{cite web|url=http://www.mozilla.com/en-US/firefox/releases/0.7.html |title=Mozilla Firebird 0.7 Release Notes |publisher=Mozilla |date=2003-10-15 |accessdate=2011-07-06}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:salmon;&quot;| 0.7.1
+| ''[[Three Kings, New Zealand|Three Kings]]''
+| October 26, 2003
+| Bugfix release (Mac OS X only).&lt;ref&gt;{{cite web|url=http://www.mozilla.com/en-US/firefox/releases/0.7.1.html |title=Mozilla Firebird 0.7.1 Release Notes |publisher=Mozilla |date=2003-10-26 |accessdate=2011-07-06}}&lt;/ref&gt;
+|-
+| rowspan=&quot;7&quot; style=&quot;vertical-align:top;&quot;| '''[[Mozilla Firefox|Firefox]]'''
+| rowspan=1 | 1.6
+| style=&quot;white-space:nowrap;background:salmon;&quot;| 0.8
+| ''[[Royal Oak, New Zealand|Royal Oak]]''
+| February 9, 2004
+| Windows installer, offline working, bookmarks and download manager improvements, rebranded with new logo.&lt;ref&gt;{{cite web|url=http://www.mozilla.com/en-US/firefox/releases/0.8.html |title=Mozilla Firefox 0.8 (Royal Oak) Release Notes |publisher=Mozilla |date=2004-02-09 |accessdate=2011-07-06}}&lt;/ref&gt;
+|-
+| rowspan=17 | 1.7
+| style=&quot;white-space:nowrap;background:salmon;&quot;| 0.9
+| ''[[One Tree Hill, New Zealand|One Tree Hill]]''
+| June 15, 2004
+| New default theme (Winstripe), comprehensive data migration, new extension/theme manager, reduced download size, new help system, Linux installer, mail icon (Windows only).&lt;ref&gt;{{cite web|url=http://www.mozilla.com/en-US/firefox/releases/0.9.html |title=Mozilla Firefox 0.9 (One Tree Hill) Release Notes |publisher=Mozilla |date=2004-06-15 |accessdate=2011-07-06}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:salmon;&quot;| 0.9.1
+|
+| June 28, 2004
+| Bugfix release, updated default theme.&lt;ref name=&quot;Mozilla Firefox 0.9 Release Notes&quot;&gt;{{cite web|url=http://www.mozilla.com/en-US/firefox/releases/0.9.1.html |title=Mozilla Firefox 0.9 Release Notes |publisher=Mozilla |date=2004-06-28 |accessdate=2011-07-06}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:salmon;&quot;| 0.9.2
+|
+| July 8, 2004
+| Vulnerability patch (Windows only).&lt;ref name=&quot;Mozilla Firefox 0.9 Release Notes&quot;/&gt;
+|-
+| style=&quot;white-space:nowrap;background:salmon;&quot;| 0.9.3
+|
+| August 4, 2004
+| Vulnerability patch.&lt;ref&gt;{{cite web|url=http://www.mozilla.com/en-US/firefox/releases/0.9.3.html |title=Mozilla Firefox 0.9 Release Notes |publisher=Mozilla |date=2004-08-04 |accessdate=2011-07-06}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:salmon;&quot;| 0.10
+| ''Firefox 1.0 &lt;br /&gt; Preview Release &lt;br /&gt;&lt;small&gt;&quot;[[Greenlane]]&quot;&lt;/small&gt;''
+| style=&quot;white-space:nowrap;&quot;| September 14, 2004
+| Bugs with higher complexity/risk, localization impact, [[RSS]]/[[Atom (standard)|Atom]] feed support, find toolbar, plugin finder.&lt;ref&gt;{{cite web|url=http://www.mozilla.com/en-US/firefox/releases/0.10.html |title=Mozilla Firefox 0.10 (Preview Release) Release Notes |publisher=Mozilla |date=2004-09-14 |accessdate=2011-07-06}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:salmon;&quot;| 0.10.1
+|
+| October 1, 2004
+| Vulnerability patch.&lt;ref&gt;{{cite web|url=http://www.mozilla.com/en-US/firefox/releases/0.10.html |title=Mozilla Firefox 0.10.1 (Preview Release) Release Notes |publisher=Mozilla |date=2004-09-14 |accessdate=2011-07-06}}&lt;/ref&gt;
+|-
+| rowspan=&quot;11&quot; style=&quot;vertical-align:top;&quot;| '''[[Mozilla Firefox|Firefox 1]]'''
+| style=&quot;white-space:nowrap;background:#ffc0cb;&quot;| 1.0 RC1
+| ''Firefox 1.0 &lt;br /&gt; Release Candidate 1 &lt;br /&gt;&lt;small&gt;&quot;[[Mission Bay, New Zealand|Mission Bay]]&quot;&lt;/small&gt;''
+| October 27, 2004
+| First Firefox release candidate.
+|-
+| style=&quot;white-space:nowrap;background:#ffc0cb;&quot;| 1.0 RC2
+| ''Firefox 1.0 &lt;br /&gt; Release Candidate 2 &lt;br /&gt;&lt;small&gt;&quot;[[Whangamata]]&quot;&lt;/small&gt;''
+| November 3, 2004
+| Second Firefox release candidate.
+|-
+| style=&quot;white-space:nowrap;background:salmon;&quot;| 1.0
+| ''Firefox 1.0 &lt;br /&gt;&lt;small&gt;&quot;[[Phoenix, Arizona|Phoenix]]&quot;&lt;/small&gt;''
+| November 9, 2004
+| Official version 1.0 release. Official localized builds.&lt;ref&gt;{{cite web|url=http://www.mozilla.com/en-US/firefox/releases/1.0.html |title=Mozilla Firefox 1.0 Release Notes |publisher=Mozilla |date=2004-11-09 |accessdate=2011-07-06}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:salmon;&quot;| 1.0.1
+| ''Rose &amp; Crown''
+| February 24, 2005
+| Regular security and stability update.&lt;ref&gt;{{cite web|url=http://www.mozilla.com/en-US/firefox/releases/1.0.1.html |title=Mozilla Firefox 1.0.1 Release Notes |publisher=Mozilla |date=2005-02-24 |accessdate=2011-07-06}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:salmon;&quot;| 1.0.2
+|
+| March 23, 2005
+| Regular security and stability update.&lt;ref&gt;{{cite web|url=http://www.mozilla.com/en-US/firefox/releases/1.0.2.html |title=Mozilla Firefox 1.0.2 Release Notes |publisher=Mozilla |date=2005-03-23 |accessdate=2011-07-06}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:salmon;&quot;| 1.0.3
+|
+| April 15, 2005
+| Regular security and stability update. Installer improvements.&lt;ref&gt;{{cite web|url=http://www.mozilla.com/en-US/firefox/releases/1.0.3.html |title=Mozilla Firefox 1.0.3 Release Notes |publisher=Mozilla |date=2005-04-15 |accessdate=2011-07-06}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:salmon;&quot;| 1.0.4
+|
+| May 11, 2005
+| Regular security and stability update. Fix to DHTML errors encountered at some web sites.&lt;ref&gt;{{cite web|url=http://www.mozilla.com/en-US/firefox/releases/1.0.4.html |title=Mozilla Firefox 1.0.4 Release Notes |publisher=Mozilla |date=2005-05-11 |accessdate=2011-07-06}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:salmon;&quot;| 1.0.5
+|
+| July 12, 2005
+| Regular security and stability update.&lt;ref&gt;{{cite web|url=http://www.mozilla.com/en-US/firefox/releases/1.0.5.html |title=Mozilla Firefox 1.0.5 Release Notes |publisher=Mozilla |date=2005-07-12 |accessdate=2011-07-06}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:salmon;&quot;| 1.0.6
+|
+| July 19, 2005
+| Off-cycle stability update. Restored API compatibility for extensions and web applications that did not work in Firefox 1.0.5.&lt;ref&gt;{{cite web|url=http://www.mozilla.com/en-US/firefox/releases/1.0.6.html |title=Mozilla Firefox 1.0.6 Release Notes |publisher=Mozilla |date=2005-07-19 |accessdate=2011-07-06}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:salmon;&quot;| 1.0.7
+|
+| September 20, 2005
+| Regular security and stability update.&lt;ref&gt;{{cite web|url=http://www.mozilla.com/en-US/firefox/releases/1.0.7.html |title=Mozilla Firefox 1.0.7 Release Notes |publisher=Mozilla |date=2005-09-20 |accessdate=2011-07-06}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:salmon;&quot;| 1.0.8
+|
+| April 13, 2006
+| Regular security and stability update.&lt;ref&gt;{{cite web|url=http://www.mozilla.com/en-US/firefox/releases/1.0.8.html |title=Mozilla Firefox 1.0.8 Release Notes |publisher=Mozilla |date=2006-04-13 |accessdate=2011-07-06}}&lt;/ref&gt; [https://developer.mozilla.org/devnews/index.php/2006/04/13/firefox-108-security-and-stability-release-and-end-of-life-for-10x/ End-of-life 1.0.x product line]
+|-
+| rowspan=&quot;20&quot; style=&quot;vertical-align:top;white-space:nowrap;&quot;| '''[[Firefox 1.5]]'''
+| rowspan=20 | 1.8
+| style=&quot;white-space:nowrap;background:#ffc0cb;&quot;| 1.1a1
+| ''Deer Park Alpha 1 &lt;br /&gt;&lt;small&gt;&quot;[[National Tariff System|Strippenkaart]]&quot;&lt;/small&gt;''
+| May 31, 2005
+| First Firefox 1.1 alpha release. Support for [[Scalable Vector Graphics|SVG]] and [[Canvas element|canvas]]. &quot;Sanitize&quot; privacy feature. Improvements in JavaScript 1.5 and CSS 2/3. Broken website reporter tool.&lt;ref&gt;{{cite web|url=http://www-archive.mozilla.org/projects/deerpark/releases/alpha1.html |title=Mozilla Deer Park Alpha 1 Release Notes |publisher=Mozilla |date=2005-05-31 |accessdate=2011-07-06}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:#ffc0cb;&quot;| 1.1a2
+| ''Deer Park Alpha 2''
+| July 12, 2005
+| Second Firefox 1.1 alpha release. Blazing fast backwards and forwards (FastBack), [[drag-and-drop]] tab reordering, improved pop-up blocking, error pages instead of error dialogs.&lt;ref&gt;{{cite web|url=http://www-archive.mozilla.org/projects/deerpark/releases/alpha2.html |title=Mozilla Deer Park Alpha 2 Release Notes |publisher=Mozilla |date=2005-07-12 |accessdate=2011-07-06}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:#ffc0cb;&quot;| 1.5b1
+| ''Firefox 1.5 Beta 1''
+| September 9, 2005
+| First Firefox 1.5 beta release. New update system (binary patch). Prettier error pages, more Luna-like Winstripe theme (did not blend well with the Classic theme).&lt;ref&gt;{{cite web|url=http://www.mozilla.com/en-US/firefox/releases/1.5beta1.html |title=Mozilla Firefox 1.5 Beta 1 Release Notes |publisher=Mozilla |date=2005-09-09 |accessdate=2011-07-10}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:#ffc0cb;&quot;| 1.5b2
+| ''Firefox 1.5 Beta 2''
+| October 6, 2005
+| Second Firefox 1.5 beta release. Improvements to automated update system, website rendering and performance. Several security fixes.&lt;ref&gt;{{cite web|url=http://www.mozilla.com/en-US/firefox/releases/1.5beta2.html |title=Mozilla Firefox 1.5 Beta 2 Release Notes |publisher=Mozilla |date=2005-10-06 |accessdate=2011-07-10}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:#ffc0cb;&quot;| 1.5 RC1
+| ''Firefox 1.5 &lt;br /&gt; Release Candidate 1''
+| November 1, 2005
+| First Firefox 1.5 release candidate.
+|-
+| style=&quot;white-space:nowrap;background:#ffc0cb;&quot;| 1.5 RC2
+| ''Firefox 1.5 &lt;br /&gt; Release Candidate 2''
+| November 10, 2005
+| Second Firefox 1.5 release candidate.
+|-
+| style=&quot;white-space:nowrap;background:#ffc0cb;&quot;| 1.5 RC3
+| ''Firefox 1.5 &lt;br /&gt; Release Candidate 3''
+| November 17, 2005
+| Third Firefox 1.5 release candidate.
+|-
+| style=&quot;white-space:nowrap;background:salmon;&quot;| 1.5
+| ''Firefox 1.5 &lt;br /&gt;&lt;small&gt;&quot;Deer Park&quot;''&lt;/small&gt;
+| November 29, 2005
+| Official version 1.5 release. Official localized builds. Identical to 1.5 RC3.&lt;ref&gt;{{cite web|url=http://www.mozilla.com/en-US/firefox/releases/1.5.html |title=Mozilla Firefox 1.5 Release Notes |publisher=Mozilla |date=2005-11-29 |accessdate=2011-07-10}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:salmon;&quot;| 1.5.0.1
+|
+| February 1, 2006
+| Regular security and stability update.&lt;ref&gt;{{cite web|url=http://www.mozilla.com/en-US/firefox/releases/1.5.0.1.html |title=Mozilla Firefox 1.5.0.1 Release Notes |publisher=Mozilla |date=2006-02-01 |accessdate=2011-07-10}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:salmon;&quot;| 1.5.0.2
+|
+| April 13, 2006
+| Regular security and stability update. Native support for Intel-based Macintosh computers by shipping [[universal binary]].&lt;ref&gt;{{cite web|url=http://www.mozilla.com/en-US/firefox/releases/1.5.0.2.html |title=Mozilla Firefox 1.5.0.2 Release Notes |publisher=Mozilla |date=2006-04-13 |accessdate=2011-07-10}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:salmon;&quot;| 1.5.0.3
+|
+| May 2, 2006
+| Off-cycle security update. Fix for a [http://www.mozilla.org/security/announce/2006/mfsa2006-30.html publicly disclosed denial of service weakness].&lt;ref&gt;{{cite web|url=http://www.mozilla.com/en-US/firefox/releases/1.5.0.3.html |title=Mozilla Firefox 1.5.0.3 Release Notes |publisher=Mozilla |date=2006-05-02 |accessdate=2011-07-10}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:salmon;&quot;| 1.5.0.4
+|
+| June 1, 2006
+| Regular security and stability update.&lt;ref&gt;{{cite web|url=http://www.mozilla.com/en-US/firefox/releases/1.5.0.4.html |title=Mozilla Firefox 1.5.0.4 Release Notes |publisher=Mozilla |date=2006-06-01 |accessdate=2011-07-10}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:salmon;&quot;| 1.5.0.5
+|
+| July 26, 2006
+| Regular security and stability update. Added changes for Frisian locale (fy-NL).&lt;ref&gt;{{cite web|url=http://www.mozilla.com/en-US/firefox/releases/1.5.0.5.html |title=Mozilla Firefox 1.5.0.5 Release Notes |publisher=Mozilla |date=2006-07-27 |accessdate=2011-07-10}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:salmon;&quot;| 1.5.0.6
+|
+| August 2, 2006
+| Off-cycle security and stability update. Fixed an issue with playing Windows Media content introduced by previous update.&lt;ref&gt;{{cite web|url=http://www.mozilla.com/en-US/firefox/releases/1.5.0.6.html |title=Mozilla Firefox 1.5.0.6 Release Notes |publisher=Mozilla |date=2006-08-02 |accessdate=2011-07-10}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:salmon;&quot;| 1.5.0.7
+|
+| September 14, 2006
+| Regular security and stability update.&lt;ref&gt;{{cite web|url=http://www.mozilla.com/en-US/firefox/releases/1.5.0.7.html |title=Mozilla Firefox 1.5.0.7 Release Notes |publisher=Mozilla |date=2006-09-14 |accessdate=2011-07-10}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:salmon;&quot;| 1.5.0.8
+|
+| November 7, 2006
+| Regular security and stability update.&lt;ref&gt;{{cite web|url=http://www.mozilla.com/en-US/firefox/releases/1.5.0.8.html |title=Mozilla Firefox 1.5.0.8 Release Notes |publisher=Mozilla |date=2006-11-07 |accessdate=2011-07-10}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:salmon;&quot;| 1.5.0.9
+|
+| December 19, 2006
+| Regular security and stability update.&lt;ref&gt;{{cite web|url=http://www.mozilla.com/en-US/firefox/releases/1.5.0.9.html |title=Mozilla Firefox 1.5.0.9 Release Notes |publisher=Mozilla |date=2006-12-19 |accessdate=2011-07-10}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:salmon;&quot;| 1.5.0.10
+|
+| February 23, 2007
+| Regular security and stability update.&lt;ref&gt;{{cite web|url=http://www.mozilla.com/en-US/firefox/releases/1.5.0.10.html |title=Mozilla Firefox 1.5.0.9 Release Notes |publisher=Mozilla |date=2007-02-23 |accessdate=2011-07-10}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:salmon;&quot;| 1.5.0.11
+|
+| March 20, 2007
+| Regular security and stability update. Regression fixes.&lt;ref&gt;{{cite web|url=http://www.mozilla.com/en-US/firefox/releases/1.5.0.11.html |title=Mozilla Firefox 1.5.0.9 Release Notes |publisher=Mozilla |date=2007-03-20 |accessdate=2011-07-10}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:salmon;&quot;| 1.5.0.12
+|
+| May 30, 2007
+| Regular security and stability update.&lt;ref&gt;{{cite web|url=http://www.mozilla.com/en-US/firefox/releases/1.5.0.12.html |title=Mozilla Firefox 1.5.0.9 Release Notes |publisher=Mozilla |date=2007-05-30 |accessdate=2011-07-10}}&lt;/ref&gt; [https://developer.mozilla.org/devnews/index.php/2007/05/30/firefox-2004-and-firefox-15012-security-and-stability-update/ End-of-life 1.5.0.x product line]
+|-
+| rowspan=&quot;29&quot; style=&quot;vertical-align:top;&quot;| '''[[Firefox 2]]'''
+| rowspan=&quot;29&quot; | 1.8.1
+| style=&quot;white-space:nowrap;background:#ffc0cb;&quot;| 2.0a1
+| ''Bon Echo Alpha 1''
+| March 22, 2006
+| First Firefox 2.0 alpha release.&lt;ref&gt;{{cite web|url=http://www-archive.mozilla.org/projects/bonecho/releases/2.0a1.html |title=Mozilla Bon Echo Alpha 1 Release Notes |publisher=Mozilla |date=2006-03-22 |accessdate=2011-07-10}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:#ffc0cb;&quot;| 2.0a2
+| ''Bon Echo Alpha 2''
+| May 12, 2006
+| Second Firefox 2.0 alpha release. Links default to open in new tab. Close button on every tab. Inline [[spell checker|spell checking]] for text boxes. Session restoration after browser crash. Search suggestion for Google and Yahoo!. New search plugin manager and add-on manager. Web feed previewing. Bookmark [[Features of Mozilla Firefox#Microsummaries|microsummaries]]. Updates to extension system. Support for [[Sherlock (software)|Sherlock]] and [[OpenSearch]]. Support for SVG text using svg:textPath.&lt;ref&gt;{{cite web|url=http://www-archive.mozilla.org/projects/bonecho/releases/2.0a2.html |title=Mozilla Bon Echo Alpha 2 Release Notes |publisher=Mozilla |date=2006-05-12 |accessdate=2011-07-10}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:#ffc0cb;&quot;| 2.0a3
+| ''Bon Echo Alpha 3''
+| May 26, 2006
+| Third Firefox 2.0 alpha release. Anti-[[phishing]] protection. Search suggestions appear with search history in the search box for Google and Yahoo!. Support for client-side session and persistent storage.&lt;ref&gt;{{cite web|url=http://www-archive.mozilla.org/projects/bonecho/releases/2.0a3.html |title=Mozilla Bon Echo Alpha 3 Release Notes |publisher=Mozilla |date=2006-05-26 |accessdate=2011-07-10}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:#ffc0cb;&quot;| 2.0b1
+| ''Firefox 2.0 Beta 1''
+| July 12, 2006
+| First Firefox 2.0 beta release. Improved feed support. New [[Nullsoft Scriptable Install System|NSIS]]-based installer. JavaScript 1.7. Enhanced security and localization support for extensions.&lt;ref&gt;{{cite web|url=http://www-archive.mozilla.org/projects/bonecho/releases/2.0b1.html |title=Mozilla Firefox 2.0 Beta 1 Release Notes |publisher=Mozilla |date=2006-07-12 |accessdate=2011-07-10}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:#ffc0cb;&quot;| 2.0b2
+| ''Firefox 2.0 Beta 2''
+| August 31, 2006
+| Second Firefox 2.0 beta release. New Winstripe theme refresh: new navigation icons, URL bar refresh (new Go button attached to the URL bar), Search bar refresh, Tab bar refresh, Alltabs button (used to view a popup list of all tabs open).&lt;ref&gt;{{cite web|url=http://www-archive.mozilla.org/projects/bonecho/releases/2.0b2.html |title=Mozilla Firefox 2.0 Beta 2 Release Notes |publisher=Mozilla |date=2006-08-31 |accessdate=2011-07-10}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:#ffc0cb;&quot;| 2.0 RC1
+| ''Firefox 2.0 &lt;br /&gt; Release Candidate 1''
+| September 26, 2006
+| First Firefox 2.0 release candidate.&lt;ref&gt;{{cite web|url=http://www.mozilla.com/en-US/firefox/2.0rc1/releasenotes/ |title=Mozilla Firefox 2.0 Release Candidate 1 Release Notes |publisher=Mozilla |date=2006-09-26 |accessdate=2011-07-10}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:#ffc0cb;&quot;| 2.0 RC2
+| ''Firefox 2.0 &lt;br /&gt; Release Candidate 2''
+| October 6, 2006
+| Second Firefox 2.0 release candidate.&lt;ref&gt;{{cite web|url=http://www.mozilla.com/en-US/firefox/2.0rc2/releasenotes/ |title=Mozilla Firefox 2.0 Release Candidate 2 Release Notes |publisher=Mozilla |date=2006-10-06 |accessdate=2011-07-10}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:#ffc0cb;&quot;| 2.0 RC3
+| ''Firefox 2.0 &lt;br /&gt; Release Candidate 3''
+| October 16, 2006
+| Third Firefox 2.0 release candidate.&lt;ref&gt;{{cite web|url=http://www.mozilla.com/en-US/firefox/2.0rc3/releasenotes/ |title=Mozilla Firefox 2.0 Release Candidate 3 Release Notes |publisher=Mozilla |date=2006-10-16 |accessdate=2011-07-10}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:salmon;&quot;| 2.0
+| ''Firefox 2.0 &lt;br /&gt;&lt;small&gt;&quot;[[Bon Echo Provincial Park|Bon&amp;nbsp;Echo]]&quot;''&lt;/small&gt;
+| October 24, 2006
+| Official version 2.0 release, identical to 2.0 RC3. Official localized builds.&lt;ref&gt;{{cite web|url=http://www.mozilla.com/en-US/firefox/2.0/releasenotes |title=Mozilla Firefox 2.0 Release Notes |publisher=Mozilla |date=2006-10-24 |accessdate=2011-07-10}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:salmon;&quot;| 2.0.0.1
+|
+| December 19, 2006
+| Regular security and stability update.&lt;ref&gt;{{cite web|url=http://www.mozilla.com/en-US/firefox/2.0.0.1/releasenotes |title=Mozilla Firefox 2.0.0.1 Release Notes |publisher=Mozilla |date=2006-12-19 |accessdate=2011-07-10}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:salmon;&quot;| 2.0.0.2
+|
+| February 23, 2007
+| Regular security and stability update.&lt;ref&gt;{{cite web|url=http://www.mozilla.com/en-US/firefox/2.0.0.2/releasenotes |title=Mozilla Firefox 2.0.0.2 Release Notes |publisher=Mozilla |date=2007-02-23 |accessdate=2011-07-10}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:salmon;&quot;| 2.0.0.3
+|
+| March 20, 2007
+| Regular security and stability update. Regression fixes and security fixes.&lt;ref&gt;{{cite web|url=http://www.mozilla.com/en-US/firefox/2.0.0.3/releasenotes |title=Mozilla Firefox 2.0.0.3 Release Notes |publisher=Mozilla |date=2007-03-20 |accessdate=2011-07-10}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:salmon;&quot;| 2.0.0.4
+|
+| May 30, 2007
+| Regular security and stability update.&lt;ref&gt;{{cite web|url=http://www.mozilla.com/en-US/firefox/2.0.0.4/releasenotes |title=Mozilla Firefox 2.0.0.4 Release Notes |publisher=Mozilla |date=2007-05-30 |accessdate=2011-07-10}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:salmon;&quot;| 2.0.0.5
+|
+| July 17, 2007
+| Security and stability update.&lt;ref&gt;{{cite web|url=http://www.mozilla.com/en-US/firefox/2.0.0.5/releasenotes |title=Mozilla Firefox 2.0.0.5 Release Notes |publisher=Mozilla |date=2007-07-17 |accessdate=2011-07-10}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:salmon;&quot;| 2.0.0.6
+|
+| July 30, 2007
+| Regular security and stability update.&lt;ref&gt;{{cite web|url=http://www.mozilla.com/en-US/firefox/2.0.0.6/releasenotes |title=Mozilla Firefox 2.0.0.6 Release Notes |publisher=Mozilla |date=2007-07-30 |accessdate=2011-07-10}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:salmon;&quot;| 2.0.0.7
+|
+| September 18, 2007
+| Off-cycle security update.&lt;ref&gt;{{cite web|url=http://www.mozilla.com/en-US/firefox/2.0.0.7/releasenotes |title=Mozilla Firefox 2.0.0.7 Release Notes |publisher=Mozilla |date=2007-09-18 |accessdate=2011-07-10}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:salmon;&quot;| 2.0.0.8
+|
+| October 18, 2007
+| Regular security and stability update. [[Mac OS X Leopard|Mac OS X 10.5]] support.&lt;ref&gt;{{cite web|url=http://www.mozilla.com/en-US/firefox/2.0.0.8/releasenotes |title=Mozilla Firefox 2.0.0.8 Release Notes |publisher=Mozilla |date=2007-10-18 |accessdate=2011-07-10}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:salmon;&quot;| 2.0.0.9
+|
+| November 1, 2007
+| Off-cycle security and stability update.&lt;ref&gt;{{cite web|url=http://www.mozilla.com/en-US/firefox/2.0.0.9/releasenotes |title=Mozilla Firefox 2.0.0.9 Release Notes |publisher=Mozilla |date=2007-11-01 |accessdate=2011-07-10}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:salmon;&quot;| 2.0.0.10
+|
+| November 26, 2007
+| Off-cycle security and stability update.&lt;ref&gt;{{cite web|url=http://www.mozilla.com/en-US/firefox/2.0.0.10/releasenotes |title=Mozilla Firefox 2.0.0.10 Release Notes |publisher=Mozilla |date=2007-11-26 |accessdate=2011-07-10}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:salmon;&quot;| 2.0.0.11
+|
+| November 30, 2007
+| Off-cycle stability update.&lt;ref&gt;{{cite web|url=http://www.mozilla.com/en-US/firefox/2.0.0.11/releasenotes |title=Mozilla Firefox 2.0.0.11 Release Notes |publisher=Mozilla |date=2007-11-30 |accessdate=2011-07-10}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:salmon;&quot;| 2.0.0.12
+|
+| February 7, 2008
+| Regular security and stability update.&lt;ref&gt;{{cite web|url=http://www.mozilla.com/en-US/firefox/2.0.0.12/releasenotes |title=Mozilla Firefox 2.0.0.12 Release Notes |publisher=Mozilla |date=2008-02-07 |accessdate=2011-07-10}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:salmon;&quot;| 2.0.0.13
+|
+| March 25, 2008
+| Regular security and stability update.&lt;ref&gt;{{cite web|url=http://www.mozilla.com/en-US/firefox/2.0.0.13/releasenotes |title=Mozilla Firefox 2.0.0.13 Release Notes |publisher=Mozilla |date=2008-03-25 |accessdate=2011-07-10}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:salmon;&quot;| 2.0.0.14
+|
+| April 16, 2008
+| Off-cycle stability update.&lt;ref&gt;{{cite web|url=http://www.mozilla.com/en-US/firefox/2.0.0.14/releasenotes |title=Mozilla Firefox 2.0.0.14 Release Notes |publisher=Mozilla |date=2008-04-16 |accessdate=2011-07-10}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:salmon;&quot;| 2.0.0.15
+|
+| July 1, 2008
+| Regular security and stability update.&lt;ref&gt;{{cite web|url=http://www.mozilla.com/en-US/firefox/2.0.0.15/releasenotes |title=Mozilla Firefox 2.0.0.15 Release Notes |publisher=Mozilla |date=2008-07-01 |accessdate=2011-07-10}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:salmon;&quot;| 2.0.0.16
+|
+| July 15, 2008
+| Off-cycle security update.&lt;ref&gt;{{cite web|url=http://www.mozilla.com/en-US/firefox/2.0.0.16/releasenotes |title=Mozilla Firefox 2.0.0.16 Release Notes |publisher=Mozilla |date=2008-07-15 |accessdate=2011-07-10}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:salmon;&quot;| 2.0.0.17
+|
+| September 23, 2008
+| Regular security and stability update.&lt;ref&gt;{{cite web|url=http://www.mozilla.com/en-US/firefox/2.0.0.17/releasenotes |title=Mozilla Firefox 2.0.0.17 Release Notes |publisher=Mozilla |date=2008-09-23 |accessdate=2011-07-10}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:salmon;&quot;| 2.0.0.18
+|
+| November 12, 2008
+| Regular security and stability update.&lt;ref&gt;{{cite web|url=http://www.mozilla.com/en-US/firefox/2.0.0.18/releasenotes |title=Mozilla Firefox 2.0.0.18 Release Notes |publisher=Mozilla |date=2008-11-12 |accessdate=2011-07-10}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:salmon;&quot;| 2.0.0.19
+|
+| December 16, 2008
+| Regular security and stability update.&lt;ref&gt;{{cite web|url=http://www.mozilla.com/en-US/firefox/2.0.0.19/releasenotes |title=Mozilla Firefox 2.0.0.19 Release Notes |publisher=Mozilla |date=2008-12-16 |accessdate=2011-07-10}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:salmon;&quot;| 2.0.0.20
+|
+| December 18, 2008
+| Off-cycle security update.&lt;ref&gt;{{cite web|url=http://www.mozilla.com/en-US/firefox/2.0.0.20/releasenotes |title=Mozilla Firefox 2.0.0.20 Release Notes |publisher=Mozilla |date=2008-12-18 |accessdate=2011-07-10}}&lt;/ref&gt; [https://developer.mozilla.org/devnews/index.php/2009/01/19/firefox-20020-users-offered-a-free-upgrade/ End-of-life 2.0.0.x product line]
+|-
+| rowspan=&quot;36&quot; style=&quot;vertical-align:top;&quot; id=&quot;fx3-table&quot;| '''[[Firefox 3]]'''
+| rowspan=36| 1.9
+| style=&quot;white-space:nowrap;background:#ffc0cb;&quot;| 3.0a1
+| ''Gran Paradiso Alpha 1''
+| December 8, 2006
+| First Firefox 3.0 alpha release. [[Cairo (graphics)|Cairo]] graphics library. [[Cocoa (API)|Cocoa]] Widgets in OS X builds. Updated threading model. Changes to how [[DOM events]] are dispatched, how HTML object elements are loaded, and how web pages are painted. New SVG elements and filters, and improved SVG specification compliance. [[Windows 95]], [[Windows 98|98]], [[Windows Me|ME]] and [[Mac OS X v10.2]] no longer supported. Moving DOM nodes between documents require a call to importNode or adoptNode as per the DOM specification.&lt;ref&gt;{{cite web|url=http://www-archive.mozilla.org/projects/firefox/3.0a1/releasenotes/ |title=Mozilla Gran Paradiso Alpha 1 Release Notes |publisher=Mozilla |date=2006-12-08 |accessdate=2011-07-10}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:#ffc0cb;&quot;| 3.0a2
+| ''Gran Paradiso Alpha 2''
+| February 7, 2007
+| Second Firefox 3.0 alpha release. Reflow refactoring (leading to [[Acid2]] test compliance) among numerous layout bug fixes. Web Apps 1.0 API for changing stylesheets support. Inline-block and inline-table values of CSS 2.1's display property implemented. XML documents can be rendered during download. Greatly improved Mac widgets support since Alpha 1. Improvements in Cairo graphics layer. Non-standard JavaScript &quot;Script&quot; object no longer supported.&lt;ref&gt;{{cite web|url=http://www-archive.mozilla.org/projects/firefox/3.0a2/releasenotes/ |title=Mozilla Gran Paradiso Alpha 2 Release Notes |publisher=Mozilla |date=2007-02-07 |accessdate=2011-07-06}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:#ffc0cb;&quot;| 3.0a3
+| ''Gran Paradiso Alpha 3''
+| March 23, 2007
+| Third Firefox 3.0 alpha release. Support for allowing web pages to store resources in the browser's offline cache. Support for [[APNG|Animated PNG]] images. Support for the &quot;HTTPOnly&quot; cookie extension which provides enhanced cookie privacy (also [[Backporting|backported]] to Firefox 2.0.0.5). Improvements to layout and scaling precision across numerous screen and printer resolutions.&lt;ref&gt;{{cite web|url=http://www-archive.mozilla.org/projects/firefox/3.0a3/releasenotes/ |title=Mozilla Gran Paradiso Alpha 3 Release Notes |publisher=Mozilla |date=2007-03-23 |accessdate=2011-07-06}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:#ffc0cb;&quot;| 3.0a4
+| ''Gran Paradiso Alpha 4''
+| April 27, 2007
+| Fourth Firefox 3.0 alpha release. Adding of FUEL JavaScript library for extension developers. Rewrite of Page Info dialog. Upgrade to Cairo 1.4.2. More Cocoa regression fixes.&lt;ref&gt;{{cite web|url=http://www-archive.mozilla.org/projects/firefox/3.0a4/releasenotes/ |title=Mozilla Gran Paradiso Alpha 4 Release Notes |publisher=Mozilla |date=2007-04-27 |accessdate=2011-07-06}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:#ffc0cb;&quot;| 3.0a5
+| ''Gran Paradiso Alpha 5''
+| June 6, 2007
+| Fifth Firefox 3.0 alpha release. Places (bookmark and history service based on [[SQLite]]) used by default, but no front-end changes. Breakpad used as crash reporter on Windows and Mac OS X, superseding closed-source Talkback. Password manager rewrite. Support for [[Growl (software)|Growl]] and native widgets within forms for Mac OS X.&lt;ref&gt;{{cite web|url=http://www-archive.mozilla.org/projects/firefox/3.0a5/releasenotes/ |title=Mozilla Gran Paradiso Alpha 5 Release Notes |publisher=Mozilla |date=2007-06-06 |accessdate=2011-07-06}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:#ffc0cb;&quot;| 3.0a6
+| ''Gran Paradiso Alpha 6''
+| July 2, 2007
+| Sixth Firefox 3.0 alpha release. Upgrade of SQLite to version 3.3.17, leading to increased [[HTTP cookie|cookie]] performance due to transition of cookie service to SQLite. Site-specific preference service, used initially for text zoom, allowing zoom setting to remain on each website. Support for native widgets within forms for Linux. New Quit dialog handles multiple windows more elegantly and allows users to save session. Autoscroll rewrite: numerous bug fixes and significant performance gain. Fixes to the use of units within the download manager. Various Places bug fixes.&lt;ref&gt;{{cite web|url=http://www-archive.mozilla.org/projects/firefox/3.0a6/releasenotes/ |title=Mozilla Gran Paradiso Alpha 6 Release Notes |publisher=Mozilla |date=2007-07-02 |accessdate=2011-07-06}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:#ffc0cb;&quot;| 3.0a7
+| ''Gran Paradiso Alpha 7''
+| August 3, 2007
+| Seventh Firefox 3.0 alpha release. More APIs implemented from [[Web Hypertext Application Technology Working Group|WHATWG]] specs, such as ability to read files from file selection fields without need to upload and cut/copy/paste events, and cross-site [[XMLHttpRequest]]. New protocol-handling dialog. Experimental full-page zoom support, but no UI to control it. Numerous Mac OS X bug fixes, but OS X 10.3 no longer supported for Gecko 1.9. General bug fixes.&lt;ref&gt;{{cite web|url=http://www-archive.mozilla.org/projects/firefox/3.0a7/releasenotes/ |title=Mozilla Gran Paradiso Alpha 7 Release Notes |publisher=Mozilla |date=2007-08-03 |accessdate=2011-07-06}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:#ffc0cb;&quot;| 3.0a8
+| ''Gran Paradiso Alpha 8''
+| September 20, 2007
+| Eighth Firefox 3.0 alpha release. New, basic UI for tagging bookmarks. Remember password prompt changed to non-modal information bar. Malware blacklist support. New UI for FTP and File protocol listings. Applications pane added to preferences. Basic support for web-based protocol handlers.&lt;ref&gt;{{cite web|url=http://www-archive.mozilla.org/projects/firefox/3.0a8/releasenotes/ |title=Mozilla Gran Paradiso Alpha 8 Release Notes |publisher=Mozilla |date=2007-09-20 |accessdate=2011-07-06}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:#ffc0cb;&quot;| 3.0b1
+| ''Firefox 3.0 Beta 1''
+| November 19, 2007
+| First Firefox 3.0 beta release.&lt;ref&gt;{{cite web|url=https://developer.mozilla.org/devnews/index.php/2007/11/19/firefox-3-beta-1-now-available-for-download/ |title=Mozilla Firefox 3.0 Beta 1 Release Announcement |publisher=Mozilla Developer News |date=2007-11-19 |accessdate=2011-07-10}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:#ffc0cb;&quot;| 3.0b2
+| ''Firefox 3.0 Beta 2''
+| December 18, 2007
+| Second Firefox 3.0 beta release. New UI improvements, including redesigned location bar, Places Organizer, Smart Bookmarks. Various stability and performance improvements.&lt;ref&gt;{{cite web|url=https://developer.mozilla.org/devnews/index.php/2007/12/18/firefox-3-beta-2-now-available-for-download/ |title=Mozilla Firefox 3.0 Beta 2 Release Announcement |publisher=Mozilla Developer News |date=2007-12-18 |accessdate=2011-07-10}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:#ffc0cb;&quot;| 3.0b3
+| ''Firefox 3.0 Beta 3''
+| February 12, 2008
+| Third Firefox 3.0 beta release. New UI improvements, including redesigned buttons and location bar. Different default native themes for each operating system. Upgraded to SQLite 3.5.4. Various stability and performance improvements.&lt;ref&gt;{{cite web|url=https://developer.mozilla.org/devnews/index.php/2008/02/12/firefox-3-beta-3-now-available-for-download/ |title=Mozilla Firefox 3.0 Beta 3 Release Announcement |publisher=Mozilla Developer News |date=2008-02-12 |accessdate=2011-07-10}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:#ffc0cb;&quot;| 3.0b4
+| ''Firefox 3.0 Beta 4''
+| March 10, 2008
+| Fourth Firefox 3.0 beta release. New UI improvement, including improved default themes for different operating systems. Various improvements in speed and resource usage.&lt;ref&gt;{{cite web|url=https://developer.mozilla.org/devnews/index.php/2008/03/10/firefox-3-beta-4-now-available-for-download/ |title=Mozilla Firefox 3.0 Beta 4 Release Announcement |publisher=Mozilla Developer News |date=2008-03-10 |accessdate=2011-07-10}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:#ffc0cb;&quot;| 3.0b5
+| ''Firefox 3.0 Beta 5''
+| April 2, 2008
+| Fifth Firefox 3.0 beta release. Further improved themes to match various operating systems, JavaScript engine optimizations for speed, improved Places organizer.&lt;ref&gt;{{cite web|url=https://developer.mozilla.org/devnews/index.php/2008/04/02/firefox-3-beta-5-now-available-for-download/ |title=Mozilla Firefox 3.0 Beta 5 Release Announcement |publisher=Mozilla Developer News |date=2008-04-02 |accessdate=2011-07-10}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:#ffc0cb;&quot;| 3.0 RC1
+| ''Firefox 3.0 &lt;br /&gt; Release Candidate 1''
+| May 16, 2008
+| First Firefox 3.0 release candidate.&lt;ref&gt;{{cite web|url=http://www.mozilla.com/en-US/firefox/3.0rc1/releasenotes/ |title=Mozilla Firefox 3.0 Release Candidate 1 Release Notes |publisher=Mozilla |date=2008-05-16 |accessdate=2011-07-10}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:#ffc0cb;&quot;| 3.0 RC2
+| ''Firefox 3.0 &lt;br /&gt; Release Candidate 2''
+| June 5, 2008
+| Second Firefox 3.0 release candidate.&lt;ref&gt;{{cite web|url=http://www.mozilla.com/en-US/firefox/3.0rc2/releasenotes/ |title=Mozilla Firefox 3.0 Release Candidate 2 Release Notes |publisher=Mozilla |date=2008-06-05 |accessdate=2011-07-10}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:#ffc0cb;&quot;| 3.0 RC3
+| ''Firefox 3.0 &lt;br /&gt; Release Candidate 3''
+| June 11, 2008
+| Third Firefox 3.0 release candidate.&lt;ref&gt;{{cite web|url=http://www.mozilla.com/en-US/firefox/3.0rc3/releasenotes/ |title=Mozilla Firefox 3.0 Release Candidate 3 Release Notes |publisher=Mozilla |date=2008-06-11 |accessdate=2011-07-10}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:salmon;&quot;| 3.0
+| ''Firefox 3.0 &lt;br /&gt;&lt;small&gt;&quot;[[Gran Paradiso National Park|Gran&amp;nbsp;Paradiso]]&quot;''&lt;/small&gt;
+| June 17, 2008
+| Official version 3.0 release.&lt;ref&gt;{{cite web|url=http://www.mozilla.com/en-US/firefox/3.0/releasenotes |title=Mozilla Firefox 3.0 Release Notes |publisher=Mozilla |date=2008-06-17 |accessdate=2011-07-10}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:salmon;&quot;| 3.0.1
+|
+| July 16, 2008
+| Security and stability update.&lt;ref&gt;{{cite web|url=http://www.mozilla.com/en-US/firefox/3.0.1/releasenotes |title=Mozilla Firefox 3.0.1 Release Notes |publisher=Mozilla |date=2008-07-16 |accessdate=2011-07-10}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:salmon;&quot;| 3.0.2
+|
+| September 23, 2008
+| Regular security and stability update.&lt;ref&gt;{{cite web|url=http://www.mozilla.com/en-US/firefox/3.0.2/releasenotes |title=Mozilla Firefox 3.0.2 Release Notes |publisher=Mozilla |date=2008-09-23 |accessdate=2011-07-10}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:salmon;&quot;| 3.0.3
+|
+| September 26, 2008
+| Bug fix for retrieving and saving passwords.&lt;ref&gt;{{cite web|url=http://www.mozilla.com/en-US/firefox/3.0.3/releasenotes |title=Mozilla Firefox 3.0.3 Release Notes |publisher=Mozilla |date=2008-09-26 |accessdate=2011-07-10}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:salmon;&quot;| 3.0.4
+|
+| November 12, 2008
+| Regular security and stability update.&lt;ref&gt;{{cite web|url=http://www.mozilla.com/en-US/firefox/3.0.4/releasenotes |title=Mozilla Firefox 3.0.4 Release Notes |publisher=Mozilla |date=2008-11-12 |accessdate=2011-07-10}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:salmon;&quot;| 3.0.5
+|
+| December 16, 2008
+| Regular security and stability update.&lt;ref&gt;{{cite web|url=http://www.mozilla.com/en-US/firefox/3.0.5/releasenotes |title=Mozilla Firefox 3.0.5 Release Notes |publisher=Mozilla |date=2008-12-16 |accessdate=2011-07-10}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:salmon;&quot;| 3.0.6
+|
+| February 3, 2009
+| Regular security and stability update.&lt;ref&gt;{{cite web|url=http://www.mozilla.com/en-US/firefox/3.0.6/releasenotes |title=Mozilla Firefox 3.0.6 Release Notes |publisher=Mozilla |date=2009-02-03 |accessdate=2011-07-10}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:salmon;&quot;| 3.0.7
+|
+| March 4, 2009
+| Regular security and stability update.&lt;ref&gt;{{cite web|url=http://www.mozilla.com/en-US/firefox/3.0.7/releasenotes |title=Mozilla Firefox 3.0.7 Release Notes |publisher=Mozilla |date=2009-03-04 |accessdate=2011-07-10}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:salmon;&quot;| 3.0.8
+|
+| March 27, 2009
+| Off-cycle security update.&lt;ref&gt;{{cite web|url=http://www.mozilla.com/en-US/firefox/3.0.8/releasenotes |title=Mozilla Firefox 3.0.8 Release Notes |publisher=Mozilla |date=2009-03-27 |accessdate=2011-07-10}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:salmon;&quot;| 3.0.9
+|
+| April 21, 2009
+| Regular security and stability update.&lt;ref&gt;{{cite web|url=http://www.mozilla.com/en-US/firefox/3.0.9/releasenotes |title=Mozilla Firefox 3.0.9 Release Notes |publisher=Mozilla |date=2009-04-21 |accessdate=2011-07-10}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:salmon;&quot;| 3.0.10
+|
+| April 27, 2009
+| Off-cycle stability update.&lt;ref&gt;{{cite web|url=http://www.mozilla.com/en-US/firefox/3.0.10/releasenotes |title=Mozilla Firefox 3.0.10 Release Notes |publisher=Mozilla |date=2009-04-27 |accessdate=2011-07-10}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:salmon;&quot;| 3.0.11
+|
+| June 11, 2009
+| Regular security and stability update.&lt;ref&gt;{{cite web|url=http://www.mozilla.com/en-US/firefox/3.0.11/releasenotes |title=Mozilla Firefox 3.0.11 Release Notes |publisher=Mozilla |date=2009-06-11 |accessdate=2011-07-10}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:salmon;&quot;| 3.0.12
+|
+| July 21, 2009
+| Regular security and stability update.&lt;ref&gt;{{cite web|url=http://www.mozilla.com/en-US/firefox/3.0.12/releasenotes |title=Mozilla Firefox 3.0.12 Release Notes |publisher=Mozilla |date=2009-07-21 |accessdate=2011-07-10}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:salmon;&quot;| 3.0.13
+|
+| August 3, 2009
+| Regular security and stability update.&lt;ref&gt;{{cite web|url=http://www.mozilla.com/en-US/firefox/3.0.13/releasenotes |title=Mozilla Firefox 3.0.13 Release Notes |publisher=Mozilla |date=2009-08-03 |accessdate=2011-07-10}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:salmon;&quot;| 3.0.14
+|
+| September 9, 2009
+| Regular security and stability update.&lt;ref&gt;{{cite web|url=http://www.mozilla.com/en-US/firefox/3.0.14/releasenotes |title=Mozilla Firefox 3.0.14 Release Notes |publisher=Mozilla |date=2009-09-09 |accessdate=2011-07-10}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:salmon;&quot;| 3.0.15
+|
+| October 27, 2009
+| Regular security and stability update.&lt;ref&gt;{{cite web|url=http://www.mozilla.com/en-US/firefox/3.0.15/releasenotes |title=Mozilla Firefox 3.0.15 Release Notes |publisher=Mozilla |date=2009-10-27 |accessdate=2011-07-10}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:salmon;&quot;| 3.0.16
+|
+| December 15, 2009
+| Regular security and stability update.&lt;ref&gt;{{cite web|url=http://www.mozilla.com/en-US/firefox/3.0.16/releasenotes |title=Mozilla Firefox 3.0.16 Release Notes |publisher=Mozilla |date=2009-12-15 |accessdate=2011-07-10}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:salmon;&quot;| 3.0.17
+|
+| January 5, 2010
+| Off-cycle stability update.&lt;ref&gt;{{cite web|url=http://www.mozilla.com/en-US/firefox/3.0.17/releasenotes |title=Mozilla Firefox 3.0.17 Release Notes |publisher=Mozilla |date=2010-01-05 |accessdate=2011-07-10}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:salmon;&quot;| 3.0.18
+|
+| February 17, 2010
+| Regular security and stability update.&lt;ref&gt;{{cite web|url=http://www.mozilla.com/en-US/firefox/3.0.18/releasenotes |title=Mozilla Firefox 3.0.18 Release Notes |publisher=Mozilla |date=2010-02-17 |accessdate=2011-07-10}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:salmon;&quot;| 3.0.19
+|
+| March 30, 2010
+| Regular security and stability update.&lt;ref&gt;{{cite web|url=http://www.mozilla.com/en-US/firefox/3.0.19/releasenotes |title=Mozilla Firefox 3.0.19 Release Notes |publisher=Mozilla |date=2010-03-30 |accessdate=2011-07-10}}&lt;/ref&gt; [https://developer.mozilla.org/devnews/index.php/2010/03/30/firefox-3-5-9-and-3-0-19-security-updates-now-available/ End-of-life 3.0.x product line]
+|-
+| rowspan=&quot;30&quot; style=&quot;vertical-align:top;&quot;| '''[[Firefox 3.5]]'''
+| rowspan=30 | 1.9.1
+| style=&quot;white-space:nowrap;background:#ffc0cb;&quot;| 3.1a1
+| ''Shiretoko Alpha 1''
+| July 28, 2008
+| First Firefox 3.1 alpha release. Web standards improvements. Text API for the &lt;canvas&gt; element. Support for using border images. Support for DOM query selectors. Improvements to Smart Location Bar. New tab-switching behavior.&lt;ref&gt;{{cite web|url=https://developer.mozilla.org/devnews/index.php/2008/07/28/firefox-31-alpha-1-now-available-for-download/ |title=Mozilla Firefox 3.1 Alpha 1 Release Announcement |publisher=Mozilla Developer News |date=2008-07-28 |accessdate=2011-07-10}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:#ffc0cb;&quot;| 3.1a2
+| ''Shiretoko Alpha 2''
+| September 5, 2008
+| Second Firefox 3.1 alpha release.&lt;ref&gt;{{cite web|url=https://developer.mozilla.org/devnews/index.php/2008/09/05/firefox-31-alpha-2-now-available-for-download/ |title=Mozilla Firefox 3.1 Alpha 2 Release Announcement |publisher=Mozilla Developer News |date=2008-09-05 |accessdate=2011-07-10}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:#ffc0cb;&quot;| 3.1b1
+| ''Firefox 3.1 Beta 1''
+| October 14, 2008
+| First Firefox 3.1 beta release. Web standards improvements in Gecko layout engine. Added support for CSS 2.1 and CSS 3 properties. New tab-switching shortcut that shows previews of the tab user is switching to. Improved control over Smart Location Bar using special characters to restrict your search. Support for new web technologies.{{Clarify| reason=Vague.| date=July 2011}}&lt;ref&gt;{{cite web|url=https://developer.mozilla.org/devnews/index.php/2008/10/14/firefox-31-beta-1-now-available-for-download/ |title=Mozilla Firefox 3.1 Beta 1 Release Announcement |publisher=Mozilla Developer News |date=2008-10-14 |accessdate=2011-07-10}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:#ffc0cb;&quot;| 3.1b2
+| ''Firefox 3.1 Beta 2''
+| December 8, 2008
+| Second Firefox 3.1 beta release. Available in 54 languages. Added new Private Browsing Mode. Added functions to facilitate clearing recent history by time as well as to remove all traces of a website. New support for [[Web Workers|web worker]] threads. New TraceMonkey JavaScript engine on by default for web content. Improvements to Gecko layout engine, including speculative parsing for faster content rendering. Removed new tab-switching behavior based on user feedback. Support for new web technologies.{{Clarify| reason=Vague.| date=July 2011}}&lt;ref&gt;{{cite web|url=https://developer.mozilla.org/devnews/index.php/2008/12/08/firefox-31-beta-2-now-available-for-download/ |title=Mozilla Firefox 3.1 Beta 2 Release Announcement |publisher=Mozilla Developer News |date=2008-12-08 |accessdate=2011-07-10}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:#ffc0cb;&quot;| 3.1b3
+| ''Firefox 3.1 Beta 3''
+| March 12, 2009
+| Third Firefox 3.1 beta release. Available in 64 languages. Improved new Private Browsing Mode. Improvements to web worker thread support. Improved performance and stability with the TraceMonkey JavaScript engine. New native JSON support. Improvements to Gecko layout engine, including speculative parsing for faster content rendering. Support for new web technologies such as &lt;video&gt; and &lt;audio&gt; elements, W3C Geolocation API, JavaScript query selectors, CSS 2.1 and 3 properties, SVG transforms and offline applications.&lt;ref&gt;{{cite web|url=https://developer.mozilla.org/devnews/index.php/2009/03/12/firefox-31-beta-3-now-available-for-download/ |title=Mozilla Firefox 3.1 Beta 3 Release Announcement |publisher=Mozilla Developer News |date=2009-03-12 |accessdate=2011-07-10}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:#ffc0cb;&quot;| 3.5b4
+| ''Firefox 3.5 Beta 4''
+| April 27, 2009
+| First Firefox 3.5 beta release. Available in 70 languages. Improved tools for controlling private data, including Private Browsing Mode. Better performance and stability with new TraceMonkey JavaScript engine. Ability to provide Location Aware Browsing using web standards for geolocation. Support for native JSON, and web worker threads. Improvements to Gecko layout engine, including speculative parsing for faster content rendering. Support for new web technologies such as HTML5 &lt;video&gt; and &lt;audio&gt; elements, downloadable fonts and other new CSS properties, JavaScript query selectors, HTML5 offline data storage for applications, and SVG transforms.&lt;ref&gt;{{cite web|url=https://developer.mozilla.org/devnews/index.php/2009/04/27/firefox-35-beta-4-now-available-for-download/ |title=Mozilla Firefox 3.5 Beta 4 Release Announcement |publisher=Mozilla Developer News |date=2009-04-27 |accessdate=2011-07-10}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:#ffc0cb;&quot;| 3.5b99
+| style=&quot;white-space:nowrap;&quot; | ''Firefox 3.5 Preview''
+| June 8, 2009
+| Preview for Firefox 3.5, pre-release candidate.&lt;ref&gt;{{cite web|url=http://www.mozilla.com/en-US/firefox/3.5b99/releasenotes/ |title=Mozilla Firefox 3.5 Preview |publisher=Mozilla |date=2009-06-08 |accessdate=2011-07-10}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:#ffc0cb;&quot;| 3.5 RC1
+| ''Firefox 3.5 &lt;br /&gt; Release Candidate 1
+| June 16, 2009
+| First Firefox 3.5 release candidate.&lt;ref&gt;{{cite web|url=http://www.mozilla.com/en-US/firefox/3.5rc1/releasenotes/ |title=Mozilla Firefox 3.5 Release Candidate 1 Release Notes |publisher=Mozilla |date=2009-06-24 |accessdate=2011-07-10}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:#ffc0cb;&quot;| 3.5 RC2
+| ''Firefox 3.5 &lt;br /&gt; Release Candidate 2
+| June 19, 2009
+| Second Firefox 3.5 release candidate.&lt;ref&gt;{{cite web|url=http://www.mozilla.com/en-US/firefox/3.5rc1/releasenotes/ |title=Mozilla Firefox 3.5 Release Candidate 2 Release Notes |publisher=Mozilla |date=2009-06-24 |accessdate=2011-07-10}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:#ffc0cb;&quot;| 3.5 RC3
+| ''Firefox 3.5 &lt;br /&gt; Release Candidate 3
+| June 24, 2009
+| Third Firefox 3.5 release candidate.&lt;ref&gt;{{cite web|url=http://www.mozilla.com/en-US/firefox/3.5rc1/releasenotes/ |title=Mozilla Firefox 3.5 Release Candidate 3 Release Notes |publisher=Mozilla |date=2009-06-24 |accessdate=2011-07-10}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:salmon;&quot;| 3.5
+| ''Firefox 3.5 &lt;br /&gt;&lt;small&gt;&quot;[[Shiretoko National Park|Shiretoko]]&quot;''&lt;/small&gt;
+| June 30, 2009
+| Official version 3.5 release. Identical to 3.5 RC3.&lt;ref&gt;{{cite web|url=http://www.mozilla.com/en-US/firefox/3.5/releasenotes |title=Mozilla Firefox 3.5 Release Notes |publisher=Mozilla |date=2009-06-30 |accessdate=2011-07-10}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:salmon;&quot;| 3.5.1
+|
+| July 16, 2009
+| Off-cycle security and stability update.&lt;ref&gt;{{cite web|url=http://www.mozilla.com/en-US/firefox/3.5.1/releasenotes |title=Mozilla Firefox 3.5.1 Release Notes |publisher=Mozilla |date=2009-07-16 |accessdate=2011-07-10}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:salmon;&quot;| 3.5.2
+|
+| August 3, 2009
+| Regular security and stability update.&lt;ref&gt;{{cite web|url=http://www.mozilla.com/en-US/firefox/3.5.2/releasenotes |title=Mozilla Firefox 3.5.2 Release Notes |publisher=Mozilla |date=2009-08-03 |accessdate=2011-07-10}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:salmon;&quot;| 3.5.3
+|
+| September 9, 2009
+| Regular security and stability update.&lt;ref&gt;{{cite web|url=http://www.mozilla.com/en-US/firefox/3.5.3/releasenotes |title=Mozilla Firefox 3.5.3 Release Notes |publisher=Mozilla |date=2009-09-09 |accessdate=2011-07-10}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:salmon;&quot;| 3.5.4
+|
+| October 27, 2009
+| Regular security and stability update.&lt;ref&gt;{{cite web|url=http://www.mozilla.com/en-US/firefox/3.5.4/releasenotes |title=Mozilla Firefox 3.5.4 Release Notes |publisher=Mozilla |date=2009-10-27 |accessdate=2011-07-10}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:salmon;&quot;| 3.5.5
+|
+| November 5, 2009
+| Off-cycle security and stability update.&lt;ref&gt;{{cite web|url=http://www.mozilla.com/en-US/firefox/3.5.5/releasenotes |title=Mozilla Firefox 3.5.5 Release Notes |publisher=Mozilla |date=2009-11-05 |accessdate=2011-07-10}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:salmon;&quot;| 3.5.6
+|
+| December 15, 2009
+| Regular security and stability update.&lt;ref&gt;{{cite web|url=http://www.mozilla.com/en-US/firefox/3.5.6/releasenotes |title=Mozilla Firefox 3.5.6 Release Notes |publisher=Mozilla |date=2009-12-15 |accessdate=2011-07-10}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:salmon;&quot;| 3.5.7
+|
+| January 5, 2010
+| Off-cycle stability update.&lt;ref&gt;{{cite web|url=http://www.mozilla.com/en-US/firefox/3.5.7/releasenotes |title=Mozilla Firefox 3.5.7 Release Notes |publisher=Mozilla |date=2010-01-05 |accessdate=2011-07-10}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:salmon;&quot;| 3.5.8
+|
+| February 17, 2010
+| Regular security and stability update.&lt;ref&gt;{{cite web|url=http://www.mozilla.com/en-US/firefox/3.5.8/releasenotes |title=Mozilla Firefox 3.5.8 Release Notes |publisher=Mozilla |date=2010-02-17 |accessdate=2011-07-10}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:salmon;&quot;| 3.5.9
+|
+| March 30, 2010
+| Regular security and stability update.&lt;ref&gt;{{cite web|url=http://www.mozilla.com/en-US/firefox/3.5.9/releasenotes |title=Mozilla Firefox 3.5.9 Release Notes |publisher=Mozilla |date=2010-03-30 |accessdate=2011-07-10}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:salmon;&quot;| 3.5.10
+|
+| June 22, 2010
+| Regular security and stability update.&lt;ref&gt;{{cite web|url=http://www.mozilla.com/en-US/firefox/3.5.10/releasenotes |title=Mozilla Firefox 3.5.10 Release Notes |publisher=Mozilla |date=2010-06-22 |accessdate=2011-07-10}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:salmon;&quot;| 3.5.11
+|
+| July 20, 2010
+| Regular security and stability update.&lt;ref&gt;{{cite web|url=http://www.mozilla.com/en-US/firefox/3.5.11/releasenotes |title=Mozilla Firefox 3.5.11 Release Notes |publisher=Mozilla |date=2010-07-20 |accessdate=2011-07-10}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:salmon;&quot;| 3.5.12
+|
+| September 7, 2010
+| Regular security and stability update.&lt;ref&gt;{{cite web|url=http://www.mozilla.com/en-US/firefox/3.5.12/releasenotes |title=Mozilla Firefox 3.5.12 Release Notes |publisher=Mozilla |date=2010-09-07 |accessdate=2011-07-10}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:salmon;&quot;| 3.5.13
+|
+| September 15, 2010
+| Off-cycle stability update.&lt;ref&gt;{{cite web|url=http://www.mozilla.com/en-US/firefox/3.5.13/releasenotes |title=Mozilla Firefox 3.5.13 Release Notes |publisher=Mozilla |date=2010-09-15 |accessdate=2011-07-10}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:salmon;&quot;| 3.5.14
+|
+| October 19, 2010
+| Regular security and stability update.&lt;ref&gt;{{cite web|url=http://www.mozilla.com/en-US/firefox/3.5.14/releasenotes |title=Mozilla Firefox 3.5.14 Release Notes |publisher=Mozilla |date=2010-10-19 |accessdate=2011-07-10}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:salmon;&quot;| 3.5.15
+|
+| October 27, 2010
+| Off-cycle security update.&lt;ref&gt;{{cite web|url=http://www.mozilla.com/en-US/firefox/3.5.15/releasenotes |title=Mozilla Firefox 3.5.15 Release Notes |publisher=Mozilla |date=2010-10-27 |accessdate=2011-07-10}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:salmon;&quot;| 3.5.16
+|
+| December 9, 2010
+| Regular security and stability update.&lt;ref&gt;{{cite web|url=http://www.mozilla.com/en-US/firefox/3.5.16/releasenotes |title=Mozilla Firefox 3.5.16 Release Notes |publisher=Mozilla |date=2010-12-09 |accessdate=2011-07-10}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:salmon;&quot;| 3.5.17
+|
+| March 1, 2011
+| Regular security and stability update.&lt;ref&gt;{{cite web|url=http://www.mozilla.com/en-US/firefox/3.5.17/releasenotes |title=Mozilla Firefox 3.5.17 Release Notes |publisher=Mozilla |date=2011-03-01 |accessdate=2011-07-10}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:salmon;&quot;| 3.5.18
+|
+| March 22, 2011
+| Off-cycle security update. Blacklists a few invalid HTTPS certificates.&lt;ref&gt;{{cite web|url=http://www.mozilla.com/en-US/firefox/3.5.18/releasenotes/ |title=Mozilla Firefox 3.5.18 Release Notes |publisher=Mozilla |date=2011-03-22 |accessdate=2011-07-10}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:salmon;&quot;| 3.5.19
+|
+| April 28, 2011
+| Regular security and stability update.&lt;ref&gt;{{cite web|url=http://www.mozilla.com/en-US/firefox/3.5.19/releasenotes/ |title=Mozilla Firefox 3.5.19 Release Notes |publisher=Mozilla |date=2011-04-28 |accessdate=2011-07-10}}&lt;/ref&gt; [https://developer.mozilla.org/devnews/index.php/2011/04/28/firefox-4-0-1-3-6-17-and-3-5-19-security-updates-now-available/ End-of-life 3.5.x product line]
+|-
+| rowspan=&quot;33&quot; style=&quot;vertical-align:top;&quot;| '''[[Firefox 3.6]]'''
+| rowspan=&quot;33&quot; | 1.9.2
+| style=&quot;white-space:nowrap;background:#ffc0cb;&quot;| 3.6a1
+| ''Namoroka Alpha 1''
+| August 7, 2009
+| First Firefox 3.6 alpha release.&lt;ref&gt;{{cite web|url=https://developer.mozilla.org/devnews/index.php/2009/08/07/firefox-3-6-alpha-1-now-available-for-download/ |title=Mozilla Firefox 3.6 Alpha 1 Release Announcement |publisher=Mozilla Developer News |date=2009-08-07 |accessdate=2011-07-10}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:#ffc0cb;&quot;| 3.6b1
+| ''Firefox 3.6 Beta 1''
+| October 30, 2009
+| First Firefox 3.6 beta release.&lt;ref&gt;{{cite web|url=https://developer.mozilla.org/devnews/index.php/2009/10/30/firefox-3-6-beta-1-is-now-available-for-download/ |title=Mozilla Firefox 3.6 Beta 1 Release Announcement |publisher=Mozilla Developer News |date=2009-10-30 |accessdate=2011-07-10}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:#ffc0cb;&quot;| 3.6b2
+| ''Firefox 3.6 Beta 2''
+| November 10, 2009
+| Second Firefox 3.6 beta release.&lt;ref&gt;{{cite web|url=https://developer.mozilla.org/devnews/index.php/2009/11/11/firefox-3-6-beta-revision-2-update-published/ |title=Mozilla Firefox 3.6 Beta 2 Release Announcement |publisher=Mozilla Developer News |date=2009-11-11 |accessdate=2011-07-10}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:#ffc0cb;&quot;| 3.6b3
+| ''Firefox 3.6 Beta 3''
+| November 17, 2009
+| Third Firefox 3.6 beta release.&lt;ref&gt;{{cite web|url=https://developer.mozilla.org/devnews/index.php/2009/11/18/firefox-beta-3-6-revision-3-now-available-for-download/ |title=Mozilla Firefox 3.6 Beta 3 Release Announcement |publisher=Mozilla Developer News |date=2009-11-18 |accessdate=2011-07-10}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:#ffc0cb;&quot;| 3.6b4
+| ''Firefox 3.6 Beta 4''
+| November 26, 2009
+| Fourth Firefox 3.6 beta release.&lt;ref&gt;{{cite web|url=https://developer.mozilla.org/devnews/index.php/2009/11/26/firefox-3-6-beta-revision-4-now-available-for-download/ |title=Mozilla Firefox 3.6 Beta 4 Release Announcement |publisher=Mozilla Developer News |date=2009-11-26 |accessdate=2011-07-10}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:#ffc0cb;&quot;| 3.6b5
+| ''Firefox 3.6 Beta 5''
+| December 17, 2009
+| Fifth Firefox 3.6 beta release.&lt;ref&gt;{{cite web|url=https://developer.mozilla.org/devnews/index.php/2009/12/17/firefox-3-6-beta-revision-5-now-available-for-download/ |title=Mozilla Firefox 3.6 Beta 5 Release Announcement |publisher=Mozilla Developer News |date=2009-12-17 |accessdate=2011-07-10}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:#ffc0cb;&quot;| 3.6 RC1
+| ''Firefox 3.6 &lt;br /&gt; Release Candidate 1''
+| January 8, 2010
+| First Firefox 3.6 release candidate.&lt;ref&gt;{{cite web|url=http://www.mozilla.com/en-US/firefox/3.6rc1/releasenotes/ |title=Mozilla Firefox 3.6 Release Candidate 1 Release Notes |publisher=Mozilla |date=2009-01-08 |accessdate=2011-07-10}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:#ffc0cb;&quot;| 3.6 RC2
+| ''Firefox 3.6 &lt;br /&gt; Release Candidate 2''
+| January 17, 2010
+| Second Firefox 3.6 release candidate.&lt;ref&gt;{{cite web|url=http://www.mozilla.com/en-US/firefox/3.6rc2/releasenotes/ |title=Mozilla Firefox 3.6 Release Candidate 2 Release Notes |publisher=Mozilla |date=2010-01-17 |accessdate=2011-07-10}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:salmon;&quot;| 3.6
+| ''Firefox 3.6 &lt;br /&gt;&lt;small&gt;&quot;[[Tsingy de Namoroka Strict Nature Reserve|Namoroka]]&quot;''&lt;/small&gt;
+| January 21, 2010
+| Official Firefox 3.6 release. Identical to 3.6 RC2.&lt;ref&gt;{{cite web|url=http://www.mozilla.com/en-US/firefox/3.6/releasenotes/ |title=Mozilla Firefox 3.6 Release Notes |publisher=Mozilla |date=2010-01-21 |accessdate=2011-07-10}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:salmon;&quot;| 3.6.2&lt;ref group=t&gt;There was no version 3.6.1.&lt;/ref&gt;
+|
+| March 22, 2010
+| Security and stability update.&lt;ref&gt;{{cite web|url=http://www.mozilla.com/en-US/firefox/3.6.2/releasenotes |title=Mozilla Firefox 3.6.2 Release Notes |publisher=Mozilla |date=2010-03-22 |accessdate=2011-07-10}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:salmon;&quot;| 3.6.3
+|
+| April 1, 2010
+| Quick turn-around security update.&lt;ref&gt;{{cite web|url=http://www.mozilla.com/en-US/firefox/3.6.3/releasenotes |title=Mozilla Firefox 3.6.3 Release Notes |publisher=Mozilla |date=2010-04-01 |accessdate=2011-07-10}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:#ffc0cb;&quot;| 3.6.3plugin1
+| ''Firefox 3.6.3plugin1 &lt;br /&gt;&lt;small&gt;&quot;[[Lorentz National Park|Lorentz]]&quot;&lt;/small&gt;''
+| April 8, 2010
+| First Firefox &quot;[[Lorentz National Park|Lorentz]]&quot; beta, followed by 7 more Firefox 3.6.4 pre-release builds, all codenamed &quot;[[Lorentz National Park|Lorentz]]&quot;.&lt;ref&gt;{{cite web|url=http://www.mozilla.com/en-US/firefox/3.6.3plugin1/releasenotes/ |title=Mozilla Firefox Lorentz Release Notes |publisher=Mozilla |date=2010-04-08 |accessdate=2011-07-10}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:salmon;&quot;| 3.6.4
+| ''Firefox 3.6.4 (OOPP) &lt;br /&gt;&lt;small&gt;&quot;[[Lorentz National Park|Lorentz]]&quot;&lt;/small&gt;''
+| June 22, 2010
+| Regular security and stability update, including OOPP.&lt;ref&gt;{{cite web|url=http://www.mozilla.com/en-US/firefox/3.6.4/releasenotes |title=Mozilla Firefox 3.6.4 Release Notes |publisher=Mozilla |date=2010-06-22 |accessdate=2011-07-10}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:salmon;&quot;| 3.6.6&lt;ref group=t&gt;There was no version 3.6.5.&lt;/ref&gt;
+|
+| June 26, 2010
+| Off-cycle stability update. Modified crash protection feature to increase amount of time plugins allowed to be non-responsive before being terminated.&lt;ref&gt;{{cite web|url=http://www.mozilla.com/en-US/firefox/3.6.6/releasenotes/ |title=Mozilla Firefox 3.6.6 Release Notes |publisher=Mozilla |date=2010-06-26 |accessdate=2011-07-10}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:salmon;&quot;| 3.6.7
+|
+| July 20, 2010
+| Regular security and stability update.&lt;ref&gt;{{cite web|url=http://www.mozilla.com/en-US/firefox/3.6.7/releasenotes |title=Mozilla Firefox 3.6.7 Release Notes |publisher=Mozilla |date=2010-07-20 |accessdate=2011-07-10}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:salmon;&quot;| 3.6.8
+|
+| July 23, 2010
+| Off-cycle stability update.&lt;ref&gt;{{cite web|url=http://www.mozilla.com/en-US/firefox/3.6.8/releasenotes |title=Mozilla Firefox 3.6.8 Release Notes |publisher=Mozilla |date=2010-07-23 |accessdate=2011-07-10}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:salmon;&quot;| 3.6.9
+|
+| September 7, 2010
+| Regular security and stability update. Also added support for &lt;code&gt;X-FRAME-OPTIONS&lt;/code&gt; HTTP response header to help prevent [[clickjacking]] and removed option to enable experimental HTML5 parser via user preference html5.enable in about:config.&lt;ref&gt;{{cite web|url=http://www.mozilla.com/en-US/firefox/3.6.9/releasenotes |title=Mozilla Firefox 3.6.9 Release Notes |publisher=Mozilla |date=2010-09-07 |accessdate=2011-07-10}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:salmon;&quot;| 3.6.10
+|
+| September 15, 2010
+| Off-cycle stability update.&lt;ref&gt;{{cite web|url=http://www.mozilla.com/en-US/firefox/3.6.10/releasenotes |title=Mozilla Firefox 3.6.10 Release Notes |publisher=Mozilla |date=2010-09-15 |accessdate=2011-07-10}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:salmon;&quot;| 3.6.11
+|
+| October 19, 2010
+| Regular security and stability update.&lt;ref&gt;{{cite web|url=http://www.mozilla.com/en-US/firefox/3.6.11/releasenotes |title=Mozilla Firefox 3.6.11 Release Notes |publisher=Mozilla |date=2010-10-19 |accessdate=2011-07-10}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:salmon;&quot;| 3.6.12
+|
+| October 27, 2010
+| Off-cycle security update.&lt;ref&gt;{{cite web|url=http://www.mozilla.com/en-US/firefox/3.6.12/releasenotes |title=Mozilla Firefox 3.6.12 Release Notes |publisher=Mozilla |date=2010-10-27 |accessdate=2011-07-10}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:salmon&quot;| 3.6.13
+|
+| December 9, 2010
+| Regular security and stability update.&lt;ref&gt;{{cite web|url=http://www.mozilla.com/en-US/firefox/3.6.13/releasenotes |title=Mozilla Firefox 3.6.13 Release Notes |publisher=Mozilla |date=2010-12-09 |accessdate=2011-07-10}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:salmon&quot;| 3.6.14
+|
+| March 1, 2011
+| Regular security and stability update.&lt;ref&gt;{{cite web|url=http://www.mozilla.com/en-US/firefox/3.6.14/releasenotes |title=Mozilla Firefox 3.6.14 Release Notes |publisher=Mozilla |date=2011-03-01 |accessdate=2011-07-10}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:salmon;&quot;| 3.6.15
+|
+| March 4, 2011
+| Off-cycle stability update. Fixed issue where some Java applets failed to load in Firefox 3.6.14.&lt;ref&gt;{{cite web|url=http://www.mozilla.com/en-US/firefox/3.6.15/releasenotes |title=Mozilla Firefox 3.6.15 Release Notes |publisher=Mozilla |date=2011-03-04|accessdate=2011-07-10}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:salmon;&quot;| 3.6.16
+|
+| March 22, 2011
+| Off-cycle security update. Blacklisted several invalid HTTPS certificates.&lt;ref&gt;{{cite web|url=http://www.mozilla.com/en-US/firefox/3.6.16/releasenotes/ |title=Mozilla Firefox 3.6.16 Release Notes |publisher=Mozilla |date=2011-03-22 |accessdate=2011-07-10}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:salmon;&quot;| 3.6.17
+|
+| April 28, 2011
+| Regular security and stability update.&lt;ref&gt;{{cite web|url=http://www.mozilla.com/en-US/firefox/3.6.17/releasenotes/ |title=Mozilla Firefox 3.6.17 Release Notes |publisher=Mozilla |date=2011-04-28 |accessdate=2011-07-10}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:salmon;&quot;| 3.6.18
+|
+| June 21, 2011
+| Regular security and stability update.&lt;ref&gt;{{cite web|url=http://www.mozilla.com/en-US/firefox/3.6.18/releasenotes/ |title=Mozilla Firefox 3.6.18 Release Notes |publisher=Mozilla |date=2011-06-21 |accessdate=2011-07-10}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:salmon;&quot;| 3.6.19
+|
+| July 11, 2011
+| Off-cycle stability update. Turned off downloadable font support for users running Mac OS X 10.7 due to an underlying platform bug. No changes made on Windows side.&lt;ref&gt;{{cite web|url=http://www.mozilla.com/en-US/firefox/3.6.19/releasenotes/ |title=Mozilla Firefox 3.6.19 Release Notes |publisher=Mozilla |date=2011-07-11 |accessdate=2011-07-12}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:salmon;&quot;| 3.6.20
+|
+| August 16, 2011
+| Regular security and stability update.&lt;ref&gt;{{cite web|url=http://www.mozilla.com/en-US/firefox/3.6.20/releasenotes/ |title=Mozilla Firefox 3.6.20 Release Notes |publisher=Mozilla |date=2011-08-16 |accessdate=2011-08-16}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:salmon;&quot;| 3.6.21
+|
+| August 30, 2011
+| Off-cycle security update. Blacklisted a compromised HTTPS certificate.&lt;ref&gt;{{cite web|url=http://www.mozilla.org/en-US/firefox/3.6.21/releasenotes/ |title=Mozilla Firefox 3.6.21 Release Notes |publisher=Mozilla |date=2011-08-30 |accessdate=2011-08-31}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:salmon;&quot;| 3.6.22
+| 
+| September 6, 2011
+| Off-cycle security update.&lt;ref&gt;{{cite web|url=http://www.mozilla.org/en-US/firefox/3.6.22/releasenotes/ |title=Mozilla Firefox 3.6.22 Release Notes |publisher=Mozilla |date=2011-09-06 |accessdate=2011-09-06}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:salmon;&quot;| 3.6.23
+|
+| September 27, 2011
+| Regular security and stability update.&lt;ref&gt;{{cite web|url=http://www.mozilla.org/en-US/firefox/3.6.23/releasenotes/ |title=Mozilla Firefox 3.6.23 Release Notes |publisher=Mozilla |date=2011-09-27 |accessdate=2011-09-27}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:khaki;&quot;| 3.6.24
+|
+| November 8, 2011
+| Regular security and stability update.&lt;ref&gt;{{cite web|url=http://www.mozilla.org/en-US/firefox/3.6.24/releasenotes/ |title=Mozilla Firefox 3.6.24 Release Notes |publisher=Mozilla |date=2011-11-08 |accessdate=2011-11-10}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:skyBlue;&quot;| 3.6.25
+|
+| December 20, 2011
+| Regular security and stability update.
+|-
+| rowspan=&quot;22&quot; style=&quot;vertical-align:top;&quot;| '''[[Firefox 4]]'''
+| rowspan=6 | 1.9.3
+| style=&quot;white-space:nowrap;background:#ffc0cb;&quot;| 3.7a1
+| ''Mozilla Developer Preview 3.7 Alpha 1''
+| February 10, 2010
+| First Firefox 3.7 alpha release.&lt;ref&gt;{{cite web|url=http://www.mozilla.org/projects/firefox/3.7a1/releasenotes/ |title=Mozilla Developer Preview Alpha 1 Release Notes |publisher=Mozilla |date=2010-02-10 |accessdate=2011-07-10}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:#ffc0cb;&quot;| 3.7a2
+| ''Mozilla Developer Preview 3.7 Alpha 2''
+| March 3, 2010
+| Second Firefox 3.7 alpha release.&lt;ref&gt;{{cite web|url=http://www.mozilla.org/projects/firefox/3.7a2/releasenotes/ |title=Mozilla Developer Preview Alpha 2 Release Notes |publisher=Mozilla |date=2010-03-03 |accessdate=2011-07-10}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:#ffc0cb;&quot;| 3.7a3
+| ''Mozilla Developer Preview 3.7 Alpha 3''
+| March 17, 2010
+| Third Firefox 3.7 alpha release.&lt;ref&gt;{{cite web|url=http://www.mozilla.org/projects/firefox/3.7a3/releasenotes/ |title=Mozilla Developer Preview Alpha 3 Release Notes |publisher=Mozilla |date=2010-03-17 |accessdate=2011-07-10}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:#ffc0cb;&quot;| 3.7a4
+| ''Mozilla Developer Preview 3.7 Alpha 4''
+| April 12, 2010
+| Fourth Firefox 3.7 alpha release.&lt;ref&gt;{{cite web|url=http://www.mozilla.org/projects/firefox/3.7a4/releasenotes/ |title=Mozilla Developer Preview Alpha 4 Release Notes |publisher=Mozilla |date=2010-04-12 |accessdate=2011-07-10}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:#ffc0cb;&quot;| 3.7a4webm
+| ''Mozilla Developer Preview 3.7 Alpha 4 WebM''
+| May 19, 2010
+| Added [[WebM]] video playback.
+|-
+| style=&quot;white-space:nowrap;background:#ffc0cb;&quot;| 3.7a5
+| ''Mozilla Developer Preview 3.7 Alpha 5''
+| June 14, 2010
+| Fifth Firefox 3.7 alpha release. First official release to include linux-x86_64 and mac-x86_64 builds and first regular release to include [[WebM]] video playback.&lt;ref&gt;{{cite web|url=http://www.mozilla.org/projects/firefox/3.7a5/releasenotes/ |title=Mozilla Developer Preview Alpha 5 Release Notes |publisher=Mozilla |date=2010-06-14 |accessdate=2011-07-10}}&lt;/ref&gt;
+|-
+|rowspan=16 | 2.0
+| style=&quot;white-space:nowrap;background:#ffc0cb;&quot;| 4.0b1
+| ''Firefox 4.0 Beta 1''
+| July 6, 2010
+| First Firefox 4.0 beta release.&lt;ref&gt;{{cite web|url=http://blog.mozilla.com/blog/2010/07/06/firefox-4-beta-1-tell-us-what-you-think/ |title=Mozilla Firefox 4.0 Beta 1 Release Announcement |publisher=The Mozilla Blog |date=2010-07-06 |accessdate=2011-07-10}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:#ffc0cb;&quot;| 4.0b2
+| ''Firefox 4.0 Beta 2''
+| July 27, 2010
+| Second Firefox 4.0 beta release.&lt;ref&gt;{{cite web|url=http://blog.mozilla.com/blog/2010/07/27/new-update-to-firefox-4-beta-available-now-in-23-languages/ |title=Mozilla Firefox 4.0 Beta 2 Release Announcement |publisher=The Mozilla Blog |date=2010-07-27 |accessdate=2011-07-10}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:#ffc0cb;&quot;| 4.0b3
+| ''Firefox 4.0 Beta 3''
+| August 11, 2010
+| Third Firefox 4.0 beta release.&lt;ref&gt;{{cite web|url=http://blog.mozilla.com/blog/2010/08/11/newest-update-to-firefox-4-beta/ |title=Mozilla Firefox 4.0 Beta 3 Release Announcement |publisher=The Mozilla Blog |date=2010-08-11 |accessdate=2011-07-10}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:#ffc0cb;&quot;| 4.0b4
+| ''Firefox 4.0 Beta 4''
+| August 24, 2010
+| Fourth Firefox 4.0 beta release.&lt;ref&gt;{{cite web|url=http://blog.mozilla.com/blog/2010/08/24/firefox-4-beta-updated-with-sync-and-panorama/ |title=Mozilla Firefox 4.0 Beta 4 Release Announcement |publisher=The Mozilla Blog |date=2010-08-24 |accessdate=2011-07-10}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:#ffc0cb;&quot;| 4.0b5
+| ''Firefox 4.0 Beta 5''
+| September 7, 2010
+| Fifth Firefox 4.0 beta release.&lt;ref&gt;{{cite web|url=http://blog.mozilla.com/blog/2010/09/07/firefox-4-beta-with-faster-graphics-and-new-audio-capabilities-for-the-web/ |title=Mozilla Firefox 4.0 Beta 5 Release Announcement |publisher=The Mozilla Blog |date=2010-09-07 |accessdate=2011-07-10}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:#ffc0cb;&quot;| 4.0b6
+| ''Firefox 4.0 Beta 6''
+| September 14, 2010
+| Sixth Firefox 4.0 beta release.&lt;ref&gt;{{cite web|url=http://blog.mozilla.com/blog/2010/09/14/firefox-4-beta-gets-a-couple-of-quick-fixes/ |title=Mozilla Firefox 4.0 Beta 6 Release Announcement |publisher=The Mozilla Blog |date=2010-09-14 |accessdate=2011-07-10}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:#ffc0cb;&quot;| 4.0b7
+| ''Firefox 4.0 Beta 7''
+| November 10, 2010
+| Seventh Firefox 4.0 beta release.&lt;ref&gt;{{cite web|url=http://blog.mozilla.com/blog/2010/11/10/fasten-your-seatbelts-latest-firefox-4-beta-boosts-speed-in-the-browser/ |title=Mozilla Firefox 4.0 Beta 7 Release Announcement |publisher=The Mozilla Blog |date=2010-11-10 |accessdate=2011-07-10}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:#ffc0cb;&quot;| 4.0b8
+| ''Firefox 4.0 Beta 8''
+| style=&quot;white-space: nowrap;&quot;| December 21, 2010
+| Eighth Firefox 4.0 beta release.&lt;ref&gt;{{cite web|url=http://blog.mozilla.com/blog/2010/12/22/firefox-4-beta-gives-you-an-easier-firefox-sync-seup-and-3d-graphics-for-the-holidays/ |title=Mozilla Firefox 4.0 Beta 8 Release Announcement |publisher=The Mozilla Blog |date=2010-12-22 |accessdate=2011-07-10}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:#ffc0cb;&quot;| 4.0b9
+| ''Firefox 4.0 Beta 9''
+| January 14, 2011
+| Ninth Firefox 4.0 beta release.&lt;ref&gt;{{cite web|url=http://blog.mozilla.com/blog/2011/01/14/the-next-major-version-of-firefox-is-ready-to-test/ |title=Mozilla Firefox 4.0 Beta 9 Release Announcement |publisher=The Mozilla Blog |date=2011-01-14 |accessdate=2011-07-10}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:#ffc0cb;&quot;| 4.0b10
+| ''Firefox 4.0 Beta 10''
+| January 25, 2011
+| Tenth Firefox 4.0 beta release.&lt;ref&gt;{{cite web|url=http://blog.mozilla.com/blog/2011/01/25/test-firefox-4-beta-help-us-make-it-better/ |title=Mozilla Firefox 4.0 Beta 10 Release Announcement |publisher=The Mozilla Blog |date=2011-01-25 |accessdate=2011-07-10}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:#ffc0cb;&quot;| 4.0b11
+| ''Firefox 4.0 Beta 11''
+| February 8, 2011
+| Eleventh Firefox 4.0 beta release.&lt;ref&gt;{{cite web|url=http://blog.mozilla.com/blog/2011/02/08/mozilla-firefox-4-beta-now-including-do-not-track-capabilities/ |title=Mozilla Firefox 4.0 Beta 11 Release Announcement |publisher=The Mozilla Blog |date=2011-02-08 |accessdate=2011-07-10}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:#ffc0cb;&quot;| 4.0b12
+| ''Firefox 4.0 Beta 12''
+| February 25, 2011
+| Twelfth Firefox 4.0 beta release.&lt;ref&gt;{{cite web|url=http://blog.mozilla.com/blog/2011/02/25/get-the-latest-mozilla-firefox-4-beta-test-your-favorite-websites-and-add-ons/ |title=Mozilla Firefox 4.0 Beta 12 Release Announcement |publisher=The Mozilla Blog |date=2011-02-25 |accessdate=2011-07-10}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:#ffc0cb;&quot;| 4.0 RC1
+| ''Firefox 4.0 &lt;br /&gt; Release Candidate 1''
+| March 9, 2011
+| First Firefox 4.0 release candidate.&lt;ref&gt;{{cite web|url=http://www.mozilla.com/en-US/firefox/4.0rc1/releasenotes/ |title=Mozilla Firefox 4.0 Release Candidate 1 Release Notes |publisher=Mozilla |date=2011-03-09 |accessdate=2011-07-10}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:#ffc0cb;&quot;| 4.0 RC2
+| ''Firefox 4.0 &lt;br /&gt; Release Candidate 2''
+| March 18, 2011
+| Second Firefox 4.0 release candidate.&lt;ref&gt;{{cite web|url=http://www.mozilla.com/en-US/firefox/4.0rc2/releasenotes/ |title=Mozilla Firefox 4.0 Release Candidate 2 Release Notes |publisher=Mozilla |date=2011-03-18 |accessdate=2011-07-10}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:salmon;&quot;| 4.0
+| ''Firefox 4.0 &lt;br /&gt;&lt;small&gt;&quot;[[Tumucumaque National Park|Tumucumaque]]&quot;&lt;/small&gt;''
+| March 22, 2011
+| Official Firefox 4.0 release. Identical to 4.0 RC2.&lt;ref&gt;{{cite web|url=http://www.mozilla.com/en-US/firefox/4.0/releasenotes/ |title=Mozilla Firefox 4.0 Release Notes |publisher=Mozilla |date=2011-03-22 |accessdate=2011-07-10}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:salmon;&quot;| 4.0.1
+| ''Firefox 4.0.1 &lt;br /&gt;&lt;small&gt;&quot;[[Macaw]]&quot;&lt;/small&gt;''
+| April 28, 2011
+| Regular security and stability update.&lt;ref&gt;{{cite web|url=http://www.mozilla.com/en-US/firefox/4.0.1/releasenotes/ |title=Mozilla Firefox 4.0.1 Release Notes |publisher=Mozilla |date=2011-04-28 |accessdate=2011-07-10}}&lt;/ref&gt; [https://wiki.mozilla.org/Firefox/Planning/2011-06-22#Release_.283.6.2C_4.0.2C_5.0.29 End-of-life 4.0.x product line]
+|-
+| rowspan=&quot;9&quot; style=&quot;vertical-align:top;&quot;| '''[[Firefox 5]]'''
+| rowspan=9 | 5.0
+| style=&quot;white-space:nowrap;background:#ffc0cb;&quot;| 5.0a2
+| ''Firefox 5.0 Aurora''
+| April 13, 2011
+| First Firefox 5.0 Aurora build.&lt;ref name=&quot;newdevchannels&quot;/&gt;&lt;ref&gt;{{cite web|url=http://ftp.mozilla.org/pub/mozilla.org/firefox/nightly/2011/04/2011-04-13-03-mozilla-aurora-debug/ |title=Mozilla Firefox 5.0 - First Aurora build |publisher=Mozilla |date=2011-05-13 |accessdate=2011-07-06}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:#ffc0cb;&quot;| 5.0b1
+| ''Firefox 5.0 Beta 1''
+| May 4, 2011
+| No official Firefox 5.0 beta release. &lt;br /&gt; Renamed &quot;Aurora 5.0 Alpha 2&quot; build to test release channel switching for users on the Aurora-Channel.&lt;ref&gt;{{cite web|url=https://developer.mozilla.org/devnews/index.php/2011/05/04/aurora-channel-switcher-testing/ |title=Aurora channel-switcher-testing |publisher=Mozilla Developer News |date=2011-05-04 |accessdate=2011-07-06}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:#ffc0cb;&quot;| 5.0b2
+| ''Firefox 5.0 Beta 2''
+| May 20, 2011
+| First Firefox 5.0 Beta release.&lt;ref&gt;{{cite web|url=http://www.mozilla.com/en-US/firefox/5.0beta/releasenotes/ |title=Mozilla Firefox 5.0 Beta Release Notes |publisher=Mozilla |date=2011-05-20 |accessdate=2011-07-06}}&lt;/ref&gt;&lt;ref&gt;{{cite web|url=http://blog.mozilla.com/futurereleases/2011/05/20/firefoxbeta/ |title=Mozilla Firefox 5.0 Beta Release Announcement |publisher=The Mozilla Blog |date=2011-05-20 |accessdate=2011-07-06}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:#ffc0cb;&quot;| 5.0b3
+| ''Firefox 5.0 Beta 3''
+| June 1, 2011
+| Second Firefox 5.0 Beta release.
+|-
+| style=&quot;white-space:nowrap;background:#ffc0cb;&quot;| 5.0b5&lt;ref group=t&gt;Builds of version 5.0b4 were created, but not released.&lt;/ref&gt;
+| ''Firefox 5.0 Beta 5''
+| June 9, 2011
+| Third Firefox 5.0 Beta release.
+|-
+| style=&quot;white-space:nowrap;background:#ffc0cb;&quot;| 5.0b6
+| ''Firefox 5.0 Beta 6''
+| June 14, 2011
+| Fourth Firefox 5.0 Beta release.
+|-
+| style=&quot;white-space:nowrap;background:#ffc0cb;&quot;| 5.0b7
+| ''Firefox 5.0 Beta 7''
+| June 15, 2011
+| Fifth Firefox 5.0 Beta release.
+|-
+| style=&quot;white-space:nowrap;background:salmon;&quot;| 5.0
+| ''Firefox 5.0''
+| June 21, 2011
+| Official Firefox 5.0 release.&lt;ref&gt;{{cite web|url=http://www.mozilla.com/en-US/firefox/5.0/releasenotes/ |title=Mozilla Firefox 5.0 Release Notes |publisher=Mozilla |date=2011-06-21 |accessdate=2011-07-10}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:salmon;&quot;| 5.0.1
+| ''Firefox 5.0.1''
+| July 11, 2011
+| Off-cycle stability update. Worked around issue in Mac OS X 10.7 that caused Firefox to crash, and issue caused by Apple's &quot;Java for Mac OS X 10.6 Update 5&quot; that prevented Java plugin from loading. No changes made on Windows side.&lt;ref&gt;{{cite web|url=http://www.mozilla.com/en-US/firefox/5.0.1/releasenotes/ |title=Mozilla Firefox 5.0.1 Release Notes |publisher=Mozilla |date=2011-07-11 |accessdate=2011-07-12}}&lt;/ref&gt; [https://wiki.mozilla.org/RapidRelease#4.0.x_and_Previous_Releases_.5Bjoduinn.2C_.5D End-of-life 5.0.x product line] ''on August 16, 2011''.
+|-
+| rowspan=&quot;10&quot; style=&quot;vertical-align:top;&quot;| '''[[Firefox 6]]'''
+| rowspan=&quot;10&quot; | 6.0
+| style=&quot;white-space:nowrap;background:#ffc0cb;&quot;| 6.0a1
+| ''Firefox 6.0 Nightly''
+| April 13, 2011
+| First Firefox 6.0 Nightly build.&lt;ref name=&quot;newdevchannels&quot;/&gt;&lt;ref&gt;{{cite web|url=http://ftp.mozilla.org/pub/mozilla.org/firefox/nightly/2011/04/2011-04-13-03-mozilla-central-debug/ |title=Mozilla Firefox 6.0 - First Nightly build |publisher=Mozilla |date=2011-05-13 |accessdate=2011-07-11}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:#ffc0cb;&quot;| 6.0a2
+| ''Firefox 6.0 Aurora''
+| May 25, 2011
+| First Firefox 6.0 Aurora build.&lt;ref&gt;{{cite web|url=http://ftp.mozilla.org/pub/mozilla.org/firefox/nightly/2011/05/2011-05-25-03-mozilla-aurora-debug/ |title=Mozilla Firefox 6.0 - First Aurora build |publisher=Mozilla |date=2011-05-25 |accessdate=2011-07-11}}&lt;/ref&gt;&lt;ref&gt;{{cite web|url=http://blog.mozilla.com/futurereleases/2011/05/27/firefoxaurora/ |title=Mozilla Firefox 6.0 Aurora Release Announcement |publisher=The Mozilla Blog |date=2011-05-27 |accessdate=2011-07-10}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:#ffc0cb;&quot;| 6.0b1
+| ''Firefox 6.0 Beta 1''
+| July 8, 2011
+| First Firefox 6.0 Beta release.&lt;ref&gt;{{cite web|url=http://www.mozilla.com/en-US/firefox/6.0beta/releasenotes/ |title=Mozilla Firefox 6.0 Beta Release Notes |publisher=Mozilla |date=2011-07-08 |accessdate=2011-07-11}}&lt;/ref&gt;&lt;ref&gt;{{cite web|url=http://blog.mozilla.com/futurereleases/2011/07/08/firefoxbeta6-0-2/ |title=Mozilla Firefox 6.0 Beta Release Announcement |publisher=The Mozilla Blog |date=2011-07-08 |accessdate=2011-07-11}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:#ffc0cb;&quot;| 6.0b2
+| ''Firefox 6.0 Beta 2''
+| July 16, 2011
+| Second Firefox 6.0 Beta release.
+|-
+| style=&quot;white-space:nowrap;background:#ffc0cb;&quot;| 6.0b3
+| ''Firefox 6.0 Beta 3''
+| July 26, 2011
+| Third Firefox 6.0 Beta release.
+|-
+| style=&quot;white-space:nowrap;background:#ffc0cb;&quot;| 6.0b4
+| ''Firefox 6.0 Beta 4''
+| August 1, 2011
+| Fourth Firefox 6.0 Beta release.
+|-
+| style=&quot;white-space:nowrap;background:#ffc0cb;&quot;| 6.0b5
+| ''Firefox 6.0 Beta 5''
+| August 5, 2011
+| Fifth Firefox 6.0 Beta release.
+|-
+| style=&quot;white-space:nowrap;background:salmon;&quot;| 6.0
+| ''Firefox 6.0''
+| August 16, 2011
+| Official Firefox 6.0 release.&lt;ref&gt;{{cite web|url=http://www.mozilla.com/en-US/firefox/6.0/releasenotes/ |title=Mozilla Firefox 6.0 Release Notes |publisher=Mozilla |date=2011-08-16 |accessdate=2011-08-17}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:salmon;&quot;| 6.0.1
+| ''Firefox 6.0.1''
+| August 30, 2011
+| Off-cycle security update. Blacklisted a compromised HTTPS certificate.&lt;ref&gt;{{cite web|url=http://www.mozilla.com/en-US/firefox/6.0.1/releasenotes/ |title=Mozilla Firefox 6.0.1 Release Notes |publisher=Mozilla |date=2011-08-30 |accessdate=2011-08-31}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:salmon;&quot;| 6.0.2
+| ''Firefox 6.0.2''
+| September 6, 2011
+| Off-cycle security update.&lt;ref&gt;{{cite web|url=http://www.mozilla.com/en-US/firefox/6.0.2/releasenotes/ |title=Mozilla Firefox 6.0.2 Release Notes |publisher=Mozilla |date=2011-09-06 |accessdate=2011-09-06}}&lt;/ref&gt; [https://wiki.mozilla.org/RapidRelease#4.0.x_and_Previous_Releases_.5Bjoduinn.2C_.5D End-of-life 6.0.x product line] ''on September 27, 2011''.
+|-
+| rowspan=&quot;9&quot; style=&quot;vertical-align:top;&quot;| '''[[Firefox 7]]'''
+| rowspan=9 | 7.0
+| style=&quot;white-space:nowrap;background:#ffc0cb;&quot;| 7.0a1
+| ''Firefox 7.0 Nightly''
+| May 25, 2011
+| First Firefox 7.0 Nightly build.&lt;ref&gt;{{cite web|url=http://ftp.mozilla.org/pub/mozilla.org/firefox/nightly/2011/05/2011-05-25-03-mozilla-central-debug/ |title=Mozilla Firefox 7.0 - First Nightly build |publisher=Mozilla |date=2011-05-25 |accessdate=2011-07-11}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:#ffc0cb;&quot;| 7.0a2
+| ''Firefox 7.0 Aurora''
+| July 6, 2011
+| First Firefox 7.0 Aurora build.&lt;ref&gt;{{cite web|url=http://ftp.mozilla.org/pub/mozilla.org/firefox/nightly/2011/07/2011-07-06-04-20-05-mozilla-aurora/ |title=Mozilla Firefox 7.0 - First Aurora build |publisher=Mozilla |date=2011-07-06 |accessdate=2011-07-11}}&lt;/ref&gt;&lt;ref&gt;{{cite web|url=http://blog.mozilla.com/futurereleases/2011/07/07/firefoxaurora7/ |title=Mozilla Firefox 7.0 Aurora Release Announcement |publisher=The Mozilla Blog |date=2011-07-07 |accessdate=2011-07-11}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:#ffc0cb&quot;| 7.0b1
+| ''Firefox 7.0 Beta 1''
+| August 18, 2011
+| First Firefox 7.0 Beta release.&lt;ref&gt;{{cite web|url=http://www.mozilla.com/en-US/firefox/7.0beta/releasenotes/ |title=Mozilla Firefox 7.0 Beta Release Notes |publisher=Mozilla |date=2011-08-18 |accessdate=2011-08-20}}&lt;/ref&gt;&lt;ref&gt;{{cite web|url=http://blog.mozilla.com/futurereleases/2011/08/18/firefoxbeta7/ |title=Mozilla Firefox 7.0 Beta Release Announcement |publisher=The Mozilla Blog |date=2011-08-18 |accessdate=2011-08-20}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:#ffc0cb;&quot;| 7.0b2
+| ''Firefox 7.0 Beta 2''
+| August 26, 2011
+| Second Firefox 7.0 Beta release.
+|-
+| style=&quot;white-space:nowrap;background:#ffc0cb;&quot;|7.0b4 &lt;ref group=t&gt;Builds of version 7.0b3 were created, but not released.&lt;/ref&gt;
+| ''Firefox 7.0 Beta 4''
+| September 6, 2011
+| Third Firefox 7.0 Beta release.
+|-
+| style=&quot;white-space:nowrap;background:#ffc0cb;&quot;| 7.0b5
+| ''Firefox 7.0 Beta 5''
+| September 9, 2011
+| Fourth Firefox 7.0 Beta release.
+|-
+| style=&quot;white-space:nowrap;background:#ffc0cb;&quot;| 7.0b6
+| ''Firefox 7.0 Beta 6''
+| September 19, 2011
+| Fifth Firefox 7.0 Beta release.
+|-
+| style=&quot;white-space:nowrap;background:salmon;&quot;| 7.0
+| ''Firefox 7.0''
+| September 27, 2011
+| Official Firefox 7.0 release.&lt;ref&gt;{{cite web|url=http://www.mozilla.com/en-US/firefox/7.0/releasenotes/ |title=Mozilla Firefox 7.0 Release Notes |publisher=Mozilla |date=2011-09-27 |accessdate=2011-09-27}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:salmon;&quot;| 7.0.1
+| ''Firefox 7.0.1''
+| September 29, 2011
+| Off-cycle stability update. Fixed a rare issue that hid one or more add-ons after a Firefox update.&lt;ref&gt;{{cite web|url=http://www.mozilla.com/en-US/firefox/7.0.1/releasenotes/ |title=Mozilla Firefox 7.0.1 Release Notes |publisher=Mozilla |date=2011-09-29 |accessdate=2011-09-30}}&lt;/ref&gt; [https://wiki.mozilla.org/RapidRelease#4.0.x_and_Previous_Releases_.5Bjoduinn.2C_.5D End-of-life 7.0.x product line] ''on November 8, 2011''.
+|-
+| rowspan=&quot;10&quot; style=&quot;vertical-align:top;&quot;| '''[[History of Firefox#Version 8.0|Firefox 8]]'''
+| rowspan=10 | 8.0
+| style=&quot;white-space:nowrap;background:#ffc0cb;&quot;| 8.0a1
+| ''Firefox 8.0 Nightly''
+| July 6, 2011
+| First Firefox 8.0 Nightly build.&lt;ref&gt;{{cite web|url=http://ftp.mozilla.org/pub/mozilla.org/firefox/nightly/2011/07/2011-07-06-03-08-33-mozilla-central/ |title=Mozilla Firefox 8.0 - First Nightly build |publisher=Mozilla |date=2011-07-06 |accessdate=2011-07-11}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:#ffc0cb;&quot;| 8.0a2
+| ''Firefox 8.0 Aurora''
+| August 19, 2011
+| First Firefox 8.0 Aurora build.&lt;ref&gt;{{cite web|url=http://ftp.mozilla.org/pub/mozilla.org/firefox/nightly/2011/08/2011-08-17-04-20-04-mozilla-aurora/ |title=Mozilla Firefox 8.0 - First Aurora build |publisher=Mozilla |date=2011-08-17 |accessdate=2011-08-20}}&lt;/ref&gt;&lt;ref&gt;{{cite web|url=http://blog.mozilla.com/futurereleases/2011/08/19/firefoxaurora8/ |title=Mozilla Firefox 8.0 Aurora Release Announcement |publisher=The Mozilla Blog |date=2011-08-19 |accessdate=2011-08-20}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:#ffc0cb&quot;| 8.0b1
+| ''Firefox 8.0 Beta 1''
+| September 29, 2011
+| First Firefox 8.0 Beta release.&lt;ref&gt;{{cite web|url=http://www.mozilla.com/en-US/firefox/8.0beta/releasenotes/ |title=Mozilla Firefox 8.0 Beta Release Notes |publisher=Mozilla |date=2011-09-29 |accessdate=2011-09-30}}&lt;/ref&gt;&lt;ref&gt;{{cite web|url=http://blog.mozilla.com/futurereleases/2011/09/30/firefoxbeta8/ |title=Mozilla Firefox 8.0 Beta Release Announcement |publisher=The Mozilla Blog |date=2011-09-30 |accessdate=2011-09-30}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:#ffc0cb&quot;| 8.0b2
+| ''Firefox 8.0 Beta 2''
+| October 10, 2011
+| Second Firefox 8.0 Beta release.
+|-
+| style=&quot;white-space:nowrap;background:#ffc0cb;&quot;| 8.0b3
+| ''Firefox 8.0 Beta 3''
+| October 13, 2011
+| Third Firefox 8.0 Beta release.
+|-
+| style=&quot;white-space:nowrap;background:#ffc0cb;&quot;| 8.0b4
+| ''Firefox 8.0 Beta 4''
+| October 19, 2011
+| Fourth Firefox 8.0 Beta release.
+|-
+| style=&quot;white-space:nowrap;background:#ffc0cb;&quot;| 8.0b5
+| ''Firefox 8.0 Beta 5''
+| October 27, 2011
+| Fifth Firefox 8.0 Beta release. Removed support for new tab animation due to incompatibilities with some extensions.
+|-
+| style=&quot;white-space:nowrap;background:#ffc0cb;&quot;| 8.0b6
+| ''Firefox 8.0 Beta 6''
+| November 1, 2011
+| Sixth Firefox 8.0 Beta release.
+|-
+| style=&quot;white-space:nowrap;background:salmon;&quot;| 8.0
+| ''Firefox 8.0''
+| November 8, 2011
+| Official Firefox 8.0 release.&lt;ref&gt;{{cite web|url=http://www.mozilla.com/en-US/firefox/8.0/releasenotes/ |title=Mozilla Firefox 8.0 Release Notes |publisher=Mozilla |date=2011-11-08 |accessdate=2011-11-10}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:#a0e75a;&quot;| 8.0.1
+| ''Firefox 8.0.1''
+| November 21, 2011
+| Off-cycle stability update.&lt;ref&gt;{{cite web|url=http://www.mozilla.com/en-US/firefox/8.0.1/releasenotes/ |title=Mozilla Firefox 8.0.1 Release Notes |publisher=Mozilla |date=2011-11-21 |accessdate=2011-11-25}}&lt;/ref&gt; [https://wiki.mozilla.org/RapidRelease#4.0.x_and_Previous_Releases_.5Bjoduinn.2C_.5D End-of-life 8.0.x product line] ''on December 20, 2011''. 
+|-
+| rowspan=&quot;7&quot; style=&quot;vertical-align:top;&quot;| '''[[History of Firefox#Future releases|Firefox 9]]'''
+| rowspan=&quot;7&quot; | 9.0
+| style=&quot;white-space:nowrap;background:#ffc0cb;&quot;| 9.0a1
+| ''Firefox 9.0 Nightly''
+| August 17, 2011
+| First Firefox 9.0 Nightly build.&lt;ref&gt;{{cite web|url=http://ftp.mozilla.org/pub/mozilla.org/firefox/nightly/2011/08/2011-08-17-06-11-21-mozilla-central/ |title=Mozilla Firefox 9.0 - First Nightly build |publisher=Mozilla |date=2011-08-17 |accessdate=2011-08-20}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:#ffc0cb;&quot;| 9.0a2
+| ''Firefox 9.0 Aurora''
+| September 28, 2011
+| First Firefox 9.0 Aurora build.&lt;ref&gt;{{cite web|url=http://ftp.mozilla.org/pub/mozilla.org/firefox/nightly/2011/09/2011-09-28-04-20-14-mozilla-aurora/ |title=Mozilla Firefox 9.0 - First Aurora build |publisher=Mozilla |date=2011-09-28 |accessdate=2011-09-28}}&lt;/ref&gt;&lt;ref&gt;{{cite web|url=http://blog.mozilla.com/futurereleases/2011/09/30/firefoxaurora9/ |title=Mozilla Firefox 9.0 Aurora Release Announcement |publisher=The Mozilla Blog |date=2011-09-30 |accessdate=2011-11-03}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:#ffc0cb;&quot;| 9.0b1
+| ''Firefox 9.0 Beta 1''
+| November 10, 2011
+| First Firefox 9.0 Beta release.
+|-
+| style=&quot;white-space:nowrap;background:#ffc0cb;&quot;| 9.0b2
+| ''Firefox 9.0 Beta 2''
+| November 17, 2011
+| Second Firefox 9.0 Beta release.
+|-
+| style=&quot;white-space:nowrap;background:#ffc0cb;&quot;| 9.0b3
+| ''Firefox 9.0 Beta 3''
+| November 24, 2011
+| Third Firefox 9.0 Beta release.
+|-
+| style=&quot;white-space:nowrap;background:gold;&quot;| 9.0b4
+| ''Firefox 9.0 Beta 4''
+| December 1, 2011
+| Fourth Firefox 9.0 Beta release.
+|-
+|style=&quot;white-space:nowrap;background:skyBlue;&quot;| 9.0 
+|''Firefox 9.0''
+|December 20, 2011
+|Official Firefox 9.0 release. End-of-life 9.0 product line ''on January 31, 2012''.
+|- 
+| rowspan=&quot;4&quot; style=&quot;vertical-align:top;&quot;| '''[[History of Firefox#Future releases|Firefox 10]]'''
+| rowspan=4 | 10.0
+| style=&quot;white-space:nowrap;background:#ffc0cb;&quot;| 10.0a1
+| ''Firefox 10.0 Nightly''
+| September 28, 2011
+| First Firefox 10.0 Nightly build.&lt;ref&gt;{{cite web|url=http://ftp.mozilla.org/pub/mozilla.org/firefox/nightly/2011/09/2011-09-28-03-08-55-mozilla-central/ |title=Mozilla Firefox 10.0 - First Nightly build |publisher=Mozilla |date=2011-09-28 |accessdate=2011-09-28}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:gold;&quot;| 10.0a2
+| ''Firefox 10.0 Aurora''
+| November 8, 2011
+| First Firefox 10.0 Aurora build.&lt;ref&gt;{{cite web|url=http://ftp.mozilla.org/pub/mozilla.org/firefox/nightly/2011/11/2011-11-09-04-20-32-mozilla-aurora/ |title=Mozilla Firefox 10.0 - First Aurora build |publisher=Mozilla |date=2011-11-09 |accessdate=2011-11-10}}&lt;/ref&gt;&lt;ref&gt;{{cite web|url=http://blog.mozilla.com/futurereleases/2011/11/11/firefoxaurora10/ |title=Mozilla Firefox 10.0 Aurora Release Announcement |publisher=The Mozilla Blog |date=2011-11-11 |accessdate=2011-11-12}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:#d6b4f1;&quot;| 10.0b1
+| ''Firefox 10.0 Beta 1''
+| December 20, 2011
+| First Firefox 10.0 Beta release.
+|-
+| style=&quot;white-space:nowrap;background:skyBlue;&quot;| 10.0
+| ''Firefox 10.0''
+| January 31, 2012
+| Official Firefox 10.0 release.
+|- 
+| rowspan=&quot;4&quot; style=&quot;vertical-align:top;&quot;| '''[[History of Firefox#Future releases|Firefox 11]]'''
+| rowspan=4 | 11.0
+| style=&quot;white-space:nowrap;background:gold;&quot;| 11.0a1
+| ''Firefox 11.0 Nightly''
+| November 9, 2011
+| First Firefox 11.0 Nightly build.&lt;ref&gt;{{cite web|url=http://ftp.mozilla.org/pub/mozilla.org/firefox/nightly/2011/11/2011-11-09-03-11-11-mozilla-central/ |title=Mozilla Firefox 11.0 - First Nightly build |publisher=Mozilla |date=2011-11-09 |accessdate=2011-11-10}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;background:#d6b4f1;&quot;| 11.0a2
+| ''Firefox 11.0 Aurora''
+| December 20, 2011
+| First Firefox 11.0 Aurora build.
+|-
+| style=&quot;white-space:nowrap;background:#d6b4f1;&quot;| 11.0b1
+| ''Firefox 11.0 Beta 1''
+| January 31, 2012
+| First Firefox 11.0 Beta release.
+|-
+| style=&quot;white-space:nowrap;background:skyBlue;&quot;| 11.0
+| ''Firefox 11.0''
+| March 13, 2012
+| Official Firefox 11.0 release.
+|- 
+! Browser name
+! Gecko version
+! Version
+! Codename
+! Release date&lt;ref name=&quot;FFReleases&quot; /&gt;&lt;ref&gt;https://wiki.mozilla.org/RapidRelease/Calendar&lt;/ref&gt;
+! Significant changes
+|}
+
+{{Reflist|group=Note|refs=
+''[[Three Kings, New Zealand|Three Kings]]'', ''[[Royal Oak, New Zealand|Royal Oak]]'', ''[[One Tree Hill, New Zealand|One Tree Hill]]'', ''[[Mission Bay, New Zealand|Mission Bay]]'', and ''[[Greenlane, New Zealand|Greenlane]]'' are all suburbs in [[Auckland]], [[New Zealand]]; ''[[Whangamata]]'' is a small seaside town on the [[Coromandel Peninsula]] in New Zealand. The codenames were chosen from these suburb names by [[Ben Goodger]], who grew up in Auckland. The other codenames included in the Firefox roadmap are derived from an actual roadmap of a journey through [[California]] to [[Phoenix, Arizona|Phoenix]], [[Arizona]]. Gran Paradiso is an Italian mountain.
+}}
+
+&lt;references group=t /&gt;
+
+== Release compatibility ==
+{{Template:Firefox release compatibility}}
+
+== Localizations ==
+{{main|Mozilla localizations}}
+The number of localizations of Firefox has increased steadily. The first official release in November 2004 was distributed in 28 languages, including [[British English|British]]/[[American English|American]] [[English language|English]], [[Peninsular Spanish|European]]/[[Argentine Spanish|Argentine]] [[Spanish language|Spanish]], and [[Standard Chinese|Chinese]] in [[Traditional Chinese characters|Traditional]]/[[Simplified Chinese characters|Simplified]] characters, while Firefox 4.0 is available in over 80 languages.&lt;ref&gt;http://www.mozilla.com/en-US/firefox/all.html&lt;/ref&gt;
+
+== See also ==
+{{Portal|Free software}}
+*[[GNU IceCat]]
+*[[History of Free Software]]
+*[[History of Mozilla Application Suite]]
+*[[Mozilla Corporation software rebranded by the Debian project]]
+
+== Notes ==
+{{reflist|2}}
+
+==References==
+{{Refbegin}}
+* [[Brendan Eich|Eich, Brendan]] (2005). [https://wiki.mozilla.org/Global:1.9_Trunk_1.8_Branch_Plan Branch Plan]. In ''Mozilla Wiki''. Retrieved December 21, 2005.
+{{Refend}}
+
+==External links==
+* [http://www.mozilla.com/en-US/firefox/releases/ Mozilla Firefox release notes] for each version
+* [http://www.squarefree.com/burningedge/releases/ Indistinguishable from Jesse, Jesse Ruderman], unofficial changelogs for Firefox releases
+* [http://weblogs.mozillazine.org/ben/archives/009698.html MozillaZine Weblogs], Where Did Firefox Come From?
+* [https://wiki.mozilla.org/ReleaseRoadmap MozillaWiki], MozillaWiki - ReleaseRoadmap
+* [http://news.bbc.co.uk/2/hi/technology/6078016.stm BBC News], Firefox browser for web 2.0 age
+
+{{Mozilla}}
+
+{{DEFAULTSORT:History Of Firefox}}
+
+[[Category:Firefox]]
+[[Category:History of web browsers|Mozilla Firefox History]]
+
+[[ca:HistÃ²ria del Mozilla Firefox]]
+[[de:Versionsgeschichte von Mozilla Firefox]]
+[[es:Anexo:Historia de Mozilla Firefox]]
+[[fr:Historique des sorties de Mozilla Firefox]]
+[[hu:A Mozilla Firefox tÃ¶rtÃ©nete]]
+[[ja:Mozilla Firefoxã®ãã¼ã¸ã§ã³ã®å¤é·]]
+[[ka:Mozilla Firefox áá¡á¢áá áá]]
+[[mr:à¤«à¤¾à¤¯à¤°à¤«à¥à¤à¥à¤¸à¤à¤¾ à¤à¤¤à¤¿à¤¹à¤¾à¤¸]]
+[[ru:ÐÑÑÐ¾ÑÐ¸Ñ Mozilla Firefox]]
+[[tr:Mozilla Firefox'un geÃ§miÅi]]
+[[vi:Lá»ch sá»­ cá»§a Mozilla Firefox]]
+[[zh:Mozilla Firefoxæ­·å²]]</rev></revisions></page></pages></query></api>

@@ -1,0 +1,74 @@
+<?xml version="1.0"?><api><query><redirects><r from="Thinstall 3.3 Virtualization Suite" to="VMware ThinApp" /></redirects><pages><page pageid="17661658" ns="0" title="VMware ThinApp"><revisions><rev xml:space="preserve">{{Infobox Software
+| name                   = VMware ThinApp
+| logo                   = [[File:VMware ThinApp logo 01.png|64px]]
+| screenshot             = [[File:VMware ThinApp.png|300px]]
+| caption                =
+| collapsible            =
+| author                 = Jitit Inc.
+| developer              = [[VMware]]
+| released               =
+| latest release version = 4.6.2
+| latest release date    = {{Start date and age|2011|08|25}}&lt;ref&gt;{{Cite web
+  |url = https://www.vmware.com/support/thinapp4/doc/releasenotes_thinapp462.html
+  |title = VMware ThinApp 4.6.2 Release Notes
+  |publisher = VMware, Inc
+  |date = August 24, 2011
+  |accessdate = June 1, 2011
+ }}&lt;/ref&gt;&lt;ref&gt;{{Cite web
+  |url = http://blogs.vmware.com/thinapp/2011/08/vmware-thinapp-462-whats-new.html
+  |title = VMware ThinApp 4.6.2 â Whatâs new?
+  |work = VMware ThinApp Blog
+  |publisher = VMware, Inc
+  |date = August 25, 2011
+  |accessdate = June 1, 2011
+ }}&lt;/ref&gt;
+| latest preview version = 
+| latest preview date    = 
+| programming language   =
+| operating system       = [[Microsoft Windows]]
+| platform               =
+| size                   = 34&amp;nbsp;[[Megabytes|MB]]
+| language               =
+| genre                  = [[Application virtualization]]&lt;br /&gt;[[Portable application creator]]
+| license                = [[Shareware]]
+| website                = {{URL|http://www.vmware.com/products/thinapp}}
+}}
+
+'''VMware ThinApp''' (formerly ''Thinstall'') is an [[application virtualization]] and [[portable application creator]] suite by [[VMware]] that can package conventional applications so that they become [[portable application]]s. According to VMware, the product has a success rate of about 90-95% in packaging applications.&lt;ref&gt;http://blogs.vmware.com/thinapp/2009/12/top-10-questions-on-thinapp.html&lt;/ref&gt;
+
+== History ==
+ThinApp (previously known as Thinstall) was originally developed by Jitit Inc. and was acquired by [[VMware]] on January 15, 2008.&lt;ref&gt;{{cite press release|url=http://www.vmware.com/company/news/releases/thinstall.html|title=VMware to Expand Desktop Virtualization Solution with Acquisition of Thinstall|date=January 15, 2008|accessdate=2008-06-11|publisher=[[VMware]]}}&lt;/ref&gt; VMware later used the code name ''VMware Project North Star'' while the product was in [[Software release life cycle#Beta|beta]].&lt;ref&gt;{{cite web|url=http://communities.vmware.com/community/beta/northstar|title=VMware ThinApp (Project North Star/Thinstall) Release Candidate|date=June 10, 2008|accessdate=2008-06-11|publisher=[[VMware]]}}&lt;/ref&gt; On June 10, 2008, VMware announced that the final name for the product was going to be ''VMware ThinApp''.&lt;ref&gt;{{cite press release|url=http://www.vmware.com/company/news/releases/thinapp_4.html|title=VMware Launches ThinApp 4.0 to Run Virtually Any Application on Any Windows Operating System without Conflict|date=June 10, 2008|accessdate=2008-06-11|publisher=[[VMware]]}}&lt;/ref&gt; The trial version of ''Thinstall'' was initially available only to corporations,&lt;ref&gt;{{cite web|url=http://www.thinstall.com/products/virtualization_suite_dl.php |title=VMware ThinApp Application Virtualization Platform: IT Management Solutions |publisher=Thinstall.com |date= |accessdate=2009-10-22}}&lt;/ref&gt; however VMware now offers a public trial version.&lt;ref&gt;{{cite web|url=http://www.vmware.com/go/trythinapp|title=Evaluate VMware ThinApp|publisher=[[VMware]]|accessdate=2008-08-09}}&lt;/ref&gt;
+
+== Technology ==
+VMware ThinApp is an [[application virtualization]] solution.&lt;ref&gt;{{cite web|url=http://www.vmware.com/pdf/thinapp_intro.pdf|title=Introduction to VMware ThinApp|date=2008-06-26|accessdate=2008-08-05|publisher=[[VMware]]}}&lt;/ref&gt; ThinApp is able to execute applications without them being installed in the traditional sense by virtualizing resources such as environment variables, files and [[Windows Registry]] keys. The virtual environment presented to the client is a merged view of the underlying physical and virtual resources, thereby allowing the virtualization layer to fool the application into thinking that it is running as if it were fully installed. ThinApp does not have any pre-installed components and does not require the installation of device drivers allowing applications to run from USB keys or network shares without ever requiring Administrator rights. ThinApp converts standard application installers such as .msi files into self-contained EXE files which includes everything required to run. Also it is able to scan a system before and after an applications installation and create a portable executable based upon changes made to the systems files and registry. Unlike self-extracting ZIP files, ThinApp does not extract files to disk or require system registry changes in order to run applications. ThinApp supports all released x86-based Windows systems from Windows NT4, 2000, XP (64/32), Vista (64/32),  Server 2003, Server 2008 (64), Server 2008 R2 (64), and Windows 7 (64/32).
+
+==Editions==
+The most &quot;basic&quot; version of ThinApp is &quot;VMware ThinApp Starter Edition&quot;, offered for free with any purchase of [[VMware Workstation]]&lt;ref&gt;http://www.vmware.com/products/workstation/thinapp-starter-edition.html&lt;/ref&gt;&lt;ref&gt;http://blogs.vmware.com/workstation/2010/11/buy-vmware-workstation-7-get-vmware-thinapp-starter-edition-for-free.html&lt;/ref&gt;, while the most &quot;advanced&quot; version is &quot;VMware ThinApp Enterprise Edition&quot;, which adds support for ''AppSync updating'', ''Active Directory integration'' and allows usage by multiple users (both for the ''ThinApp Packager'' and ''ThinApp Client'').&lt;ref&gt;http://www.vmware.com/products/workstation/thinapp-starter-edition.html&lt;/ref&gt;
+
+== Software compatibility ==
+Many Windows applications can be packaged and made portable with VMware ThinApp, with the following notable exceptions:
+* Any software that installs and requires a [[device driver]] to function. Applications that use pre-installed device drivers can function without issues.&lt;ref&gt;[http://www.thinstall.com/sales/demo.php Thinstall product demos (in German)] (the first one)&lt;/ref&gt;
+* Some software with [[copy protection]] based on [[hardware]]. ThinApp will virtualize some hardware properties such as harddrive serial numbers but applications that bind to things like ethernet MAC address or CPU-ID may not run when moved to another PC.
+
+== See also ==
+* [[Application Virtualization]]
+* [[Portable application creators]]
+* [[Windows To Go]]
+* [[Software appliance]]
+
+== References ==
+{{reflist}}
+
+== External links ==
+* {{Official website|http://www.vmware.com/products/thinapp/}}
+
+[[Category:VMware]]
+[[Category:Virtualization software]]
+[[Category:Windows software]]
+
+[[de:VMware ThinApp]]
+[[es:VMware ThinApp]]
+[[ja:VMware ThinApp]]
+[[pt:VMware ThinApp]]
+[[ru:VMware ThinApp]]
+[[simple:VMware ThinApp]]</rev></revisions></page></pages></query></api>

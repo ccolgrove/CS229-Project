@@ -1,0 +1,91 @@
+<?xml version="1.0"?><api><query><pages><page pageid="2550813" ns="0" title="Windows Preinstallation Environment"><revisions><rev xml:space="preserve">{{Refimprove|date=June 2008}}
+
+[[Image:winpe.png|thumb|180px|right|WinPE 3.0 (based on Windows 7) running the shell (command prompt) with several of the built in programs, [[Notepad (Windows)|Notepad]], [[Windows registry|Registry Editor]], and the [[Task Manager|Windows Task Manager]]. ]]
+
+'''Windows Preinstallation Environment''' (aka '''Windows PE''', '''WinPE''') is a lightweight version of [[Windows XP]], [[Windows Server 2003]], [[Windows Vista]], [[Windows 7]], or [[Windows Server 2008 R2]] that is used for the deployment of workstations and servers.  It is intended as a [[32-bit]] or [[64-bit]] replacement for [[MS-DOS]] during the installation phase of Windows, and can be [[booting|booted]] via [[Preboot Execution Environment|PXE]], [[CD-ROM]], [[USB flash drive]], or [[hard disk]].  Traditionally used by large corporations and [[Original Equipment Manufacturer|OEM]]s (to [[preinstall]] Windows client operating systems to PCs during manufacturing), it is now widely available free of charge via the [[Windows Automated Installation Kit]] (WAIK).
+
+== Overview ==
+[[Image:WinPE2005.png|thumb|180px|left|WinPE 2005, immediately after boot, running the Factory.exe application, which can be used to install drivers on the system.]]
+WinPE was originally intended to be used only as a pre-installation platform for deploying Microsoft Windows operating systems, specifically to replace [[DOS]] in this respect. WinPE has the following uses:
+
+* Deployment of workstations and servers in large corporations as well as pre-installation by system builders of workstations and servers to be sold to end users.
+* Recovery platform to run 32-bit or 64-bit recovery tools such as [[Sysinternals|Winternals]] ERD Commander or the [[Windows Recovery Environment]] (Windows RE).
+* Platform for running 3rd party 32-bit or 64-bit [[disk cloning]] utilities.
+
+The package can be used for developer testing or as a recovery [[CD]]/[[DVD]] for system administrators. Many customized WinPE boot CDs packaged with third-party applications for different uses are now available from volunteers via the Internet.
+
+The package can also be used as the base of a forensics investigation to either capture a disk image or run analysis tools without mounting any available disks and thus changing state.&lt;ref&gt;{{cite web | title=WinPE 3.0 &amp; Forensics | url=http://praetorianprefect.com/archives/2010/04/winpe-3-0-forensics/ | work=WinPE 3.0 &amp; Forensics | date=2010-04-12 | accessdate=2010-04-16}}&lt;/ref&gt;
+
+Version 2.0 introduced a number of improvements&lt;ref&gt;{{cite web | title=Adding XML Parser support into WinPE | url=http://capitalhead.com/articles/adding-xml-parser-support-into-winpe.aspx | work=Adding XML Parser support into WinPE | date=1900-1-0 | accessdate=2009-06-16}}&lt;/ref&gt; and extended the availability of WinPE to all customers, not just corporate enterprise customers by downloading and installing Microsoft's Windows Automated Installation Kit (WAIK).
+
+The newest version is 3.1, based on the [[Windows 7 SP1]] [[Kernel (computer science)|kernel]].
+
+It was originally designed and built by a small team of engineers in Microsoft's Windows Deployment team, including Vijay Jayaseelan, Ryan Burkhardt, and Richard Bond.&lt;ref&gt;
+{{cite web
+| url=http://www.google.com/patents?id=cDJ4AAAAEBAJ
+| title=WinPE Patent Filing
+| date=2001-07-24
+| accessdate=2008-05-14
+| publisher=USPTO
+}}&lt;/ref&gt;
+
+== Versions ==
+The following versions are known to exist:
+
+; Windows PE 1.0: The first release of Windows Preinstallation Environment.
+
+; Windows PE 1.1: Built from [[Windows XP|Windows XP Professional]] with Service Pack 1 (SP1).
+
+; Windows PE 1.2: Built from [[Windows Server 2003]] family.
+
+; Windows PE 2004 (1.5): Built from [[Windows XP|Windows XP Professional]] with Service Pack 2 (SP2).
+
+; Windows PE 2005 (1.6): Built from [[Windows Server 2003]] with Service Pack 1 (SP1).
+
+; Windows PE 2.0: Built from the first edition of [[Windows Vista]]. This version differs from the other versions  since it doesn't need the disc to load all the files.{{Citation needed|date=October 2009}} This means that the download is now 900MB in size instead of 60MB from the previous versions. It's possible to modify the default startup disc to have access to a few plug-ins like [[WMI]], [[Windows Scripting Host]], additional drivers and other 32-bit applications (or 64-bit applications for 64-bit versions). Other new features include the capability for a rewritable [[RAM disk]] since WinPE version 1.x only has a recordable RAM disk.
+
+; Windows PE 2.1: Built from [[Windows Server 2008]], this version uses the same codebase as Windows Vista SP1.
+
+; Windows PE 2.2: Built from [[Windows Server 2008]] SP2, this version has the same codebase as Windows Vista SP2.
+
+; Windows PE 3.0: Built from [[Windows 7]] code base. It is included in [[Windows Automated Installation Kit|WAIK]] 2.0.
+
+; Windows PE 3.1: Built from [[Windows 7 SP1]] code base. It is included in Windows Automated Installation Kit (AIK) Supplement for Windows 7 SP1 available from Microsoft's website.
+
+== See also ==
+* [[Live CD]]
+* [[WinBuilder]], a tool for creating Windows PE-based live CD/DVD or USB boot disks in a modular way
+* [http://www.wintobootic.com WiNToBootic], a free one-click-tool for creating bootable USB flash drive (NTFS) and burning/extracting Windows 7 based ISO (supports WinPE 2/3 and original Win7 installation ISO as well)
+* [[VistaPE]], free tool for creating Vista live CDs (Windows PE 2.x)
+* [[nLite and vLite]], applications that create customized installation CDs of some Windows Systems.
+* [[BartPE]], a free third-party alternative to WinPE based on Windows XP
+* [[Windows To Go]], upcoming feature in [[Windows 8]]
+
+== References ==
+{{reflist|2}}
+
+== External links ==
+* [http://technet.microsoft.com/en-us/library/dd744322(WS.10).aspx Windows PE Technical Reference]
+* [http://technet.microsoft.com/en-us/library/dd799303(WS.10).aspx Create a Bootable Windows PE CD-ROM]
+* [http://www.microsoft.com/downloads/details.aspx?familyid=696DD665-9F76-4177-A811-39C26D3B3B34&amp;displaylang=en Windows Automated Installation Kit for Windows 7 (contains Windows PE 3.0)]
+* [http://www.itbully.com/articles/booting-windows-pe-usb-drive-walkthrough How to create a bootable USB WinPE flash drive]
+
+{{Microsoft Windows family}}
+
+[[Category:Windows administration]]
+[[Category:Microsoft software]]
+[[Category:Package management systems]]
+
+[[cs:Windows Preinstallation Environment]]
+[[da:Windows PE]]
+[[de:Microsoft Windows PE]]
+[[es:Windows Preinstallation Environment]]
+[[fr:Environnement de prÃ©-installation Windows]]
+[[ko:ìë ì¬ì  ì¤ì¹ íê²½]]
+[[it:Windows Preinstallation Environment]]
+[[ja:Windows ãã¬ã¤ã³ã¹ãã¼ã«ç°å¢]]
+[[pl:Microsoft Windows PE]]
+[[pt:Windows Preinstallation Environment]]
+[[ru:Ð¡ÑÐµÐ´Ð° Ð¿ÑÐµÐ´ÑÑÑÐ°Ð½Ð¾Ð²ÐºÐ¸ Windows]]
+[[vi:WinPE]]
+[[zh:Windowsé åå®è£ç°å¢]]</rev></revisions></page></pages></query></api>

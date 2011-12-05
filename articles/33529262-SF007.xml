@@ -1,0 +1,91 @@
+<?xml version="1.0"?><api><query><redirects><r from="Connectifi" to="Connectify" /></redirects><pages><page pageid="33064807" ns="0" title="Connectify"><revisions><rev xml:space="preserve">{{Infobox software
+| name                   = Connectify
+| logo                   = [[Image:connectify-logo blue.png|frameless]]
+| screenshot             =
+| caption                =
+| author                 =
+| developer              = Connectify
+| latest_release_version = 3.0.0
+| latest_release_date    = {{release date and age|2011|08|22}}
+| released               = December 2009 &lt;ref&gt;{{cite web |url=http://www.techspot.com/news/37410-wifi-sharing-utility-connectify-10-launches-remains-free.html |title=Wi-Fi sharing utility Connectify 1.0 launches, remains free |author=Vilches, Jose |date=22 December 2009}}&lt;/ref&gt;
+| frequently updated     = yes &lt;!-- Release version update? Don't edit this page, just click on the version number! --&gt;
+| programming language   =
+| operating system       = Windows
+| language               = English
+| status                 = Active
+| genre                  = [[Software router]] &lt;br /&gt; [[SoftAP]]
+| license                = [[Closed source]] (Windows)
+| website                = {{URL|http://www.connectify.me/}} &lt;!-- WARNING! If you attempt to insert your own referral link in here, you WILL be reported to Connectify. Any referrals gained WILL be invalidated, and repeat offenses WILL result in a full account ban. --&gt;
+}}
+'''Connectify''' is a [[Microsoft Windows|Windows]] software application developed by [http://www.connectify.me/about-us/ ''Connectify''] that creates a software-only [[Hotspot (Wi-Fi)|hotspot]] ([[wireless access point|Access Point]]) on a Windows PC with Wi-Fi device. This enables [[User (computing)|users]] to share files, printers, and internet connections between multiple PCs or other computing devices, without the need for a separate physical access point or [[router (computing)|router]]. 
+
+Simple personal area networking via [[Wireless ad-hoc network|ad-hoc]] mode has been built-in to Windows since Windows XP.&lt;ref&gt;{{cite web |url=http://www.microsoft.com/download/en/details.aspx?displaylang=en&amp;id=13190 |title=Ad Hoc Internet Sharing with Microsoft Windows XP}}&lt;/ref&gt; Other competing products that offer this kind of capability include [http://virtualrouter.codeplex.com Virtual Router] and [http://www.wmwifirouter.com WM WifiRouter].
+
+== History ==
+
+According to Connectify CEO and founder [[Alex Gizis]], back in 2009, the development team was testing wireless networking hardware at an Army base. Their hardware technology was driving Humvees wirelessly over miles, but the team itself was juggling USB drives to [[sneakernet]] files between Windows laptops. For the next trip out, they brought a hardware router, but the bulk of that extra gear, and the need to plug it in, became an issue. To address this need, they developed the original Connectify application.&lt;ref&gt;{{cite web |url=http://www.connectify.me/about-us |title=The Birth of Connectify}}&lt;/ref&gt;
+
+== Business Model ==
+
+Connectify is released on the [[Freemium]] model, similar to the sales strategies used by [[Dropbox]], [[Evernote]], and [[Pandora Radio]].&lt;ref&gt;{{cite web |url=http://gigaom.com/2010/03/26/case-studies-in-freemium-pandora-dropbox-evernote-automattic-and-mailchimp |author=Liz Gannes |title=Case Studied in Freemium: Pandora, Dropbox, Evernote, Automattic and MailChimp}}&lt;/ref&gt; 
+
+The free Connectify &quot;Lite&quot; license delivers basic Wi-Fi Hotspot functionality. Some things are limited; for example, the [[Service set (802.11 network)#Service set identifier (SSID)|SSID]] name of a free hotspot will always start with &quot;Connectify-&quot;. Additional paid &quot;Pro&quot; features include wireless repeater capability, more complete 3G/4G network sharing, automatic configuration features, firewall controls, and priority tech support.
+
+== Technology ==
+=== Virtual Access Point ===
+
+Connectify creates an [[Wireless network interface controller#Infrastructure Mode|infrastructure mode]] personal area network by creating an [[Wireless access point|access point]] using a PC's own [[Wi-Fi]] device. This functions the same as any dedicated access point/router, but as a Windows application, may be easier for the average person to use. In addition, Connectify can be set up to route internet traffic from the personal area network though one of that PC's interfaces. 
+
+The limitation is that this must be a Window 7 PC with a current [[WHQL Testing|WHQL]] driver certified for Windows 7. Older drivers or older versions of Windows will not permit the Wifi device to operate in AP mode. Windows 7 PCs without current drivers can use Connectify via a supported USB Wi-Fi device, if necessary.
+
+=== Sharing Wifi to Wifi ===
+
+Connectify takes advantage of Windows 7's [[Virtual Wifi]] &lt;ref&gt;{{cite web |url=http://gigaom.com/2009/10/29/connectify-is-early-evidence-of-why-win7s-virtual-wi-fi-matters |title=Connectify Is Early Evidence of Why Win7's &quot;Virtual Wi-Fi&quot; Matters |author=Rupley, Sebastian |date=29 October 2009 |accessdate=12 September 2011}}&lt;/ref&gt; mechanism, allowing a single Wifi connection to be split into two virtual networks, one the local access point, one the backhaul to the internet. This, however, requires a Wifi device with virtual Wifi support. As with access point support, this is a feature new to Windows 7.
+
+== Reception ==
+
+Connectify has been well generally well reviewed by the press. Positive reviews have appeared in [[Lifehacker]],&lt;ref&gt;http://lifehacker.com/5395199/connectify-restores-wi+fi-hotspot-powers-to-windows-7&lt;/ref&gt;
+[[PC World]],&lt;ref&gt;{{cite web |url=http://www.pcworld.com/article/181046/unfinished_windows_7_feature_turns_laptops_into_wifi_hotspots.html |title=Unfinished Windows 7 Feature Turns Laptops Into Wi-Fi Hotspots |author=Gregg Keizer}}&lt;/ref&gt; [[GigaOM]],&lt;ref&gt;http://gigaom.com/2009/10/29/connectify-is-early-evidence-of-why-win7s-virtual-wi-fi-matters/&lt;/ref&gt; [[Engadget]],&lt;ref&gt;http://www.engadget.com/2009/11/02/unfinished-windows-7-feature-exploited-for-virtual-wifi-hotspots/&lt;/ref&gt; [[ReadWriteWeb]],&lt;ref&gt;http://www.readwriteweb.com/archives/how_to_turn_your_windows_7_computer_into_a_wireles.php&lt;/ref&gt;
+[[TechRepublic]],&lt;ref&gt;{{cite web |url=http://www.techrepublic.com/blog/networking/create-a-wi-fi-access-point-using-connectify/2591 |title=Create a Wi-Fi Access Point using Connectify |first=Paul |last=Mah}}&lt;/ref&gt; 
+[[Maximum PC]],&lt;ref&gt;{{cite web |url=http://www.maximumpc.com/article/howtos/howto_turn_your_windows_7_pc_wireless_access_point |author=Mark Edward Soper |title=How-To: Turn Your Windows 7 PC into a Wireless Access Point}}&lt;/ref&gt; 
+[http://www.itreviews.com IT Reviews],&lt;ref&gt;{{cite web |url=http://www.itreviews.com/software/utilities-and-tools/connectify-connectify-11 |title=Connectify - Connectify 1.1 review |author=Kelvyn Taylor}}&lt;/ref&gt; and
+[[Makeuseof|MakeUseOf]].&lt;ref&gt;{{cite web |url=http://www.makeuseof.com/tag/create-mobile-wifi-hotspot-connectify-windows-7-laptop |author=Simon Slangen |title=Create A Mobile Wi-Fi Hotspot Using Connectify &amp; A Windows 7 Laptop}}&lt;/ref&gt; Most users seem to be fairly happy with it as well.&lt;ref&gt;{{cite web |url=http://download.cnet.com/Connectify/3000-18508_4-75024171.html |title=CNET:Connectify User Reviews}}&lt;/ref&gt;
+
+Some general criticism is that Connectify potentially does an end run around IT Department policies by allowing unauthorized devices access to a secure wireless network, albeit through an authorized device. Similar issues have been raise around Connectify being used to allow multiple devices onto a single paid Wi-Fi connection. 
+
+Some articles have complained about the non-support of some wireless devices, including many Intel cards,&lt;ref&gt;{{cite web |url=http://www.mobilityminded.com/5788/connectify-review-turn-your-windows-7-laptop-into-a-wi-fi-hotspot |author=Remo Knops |title=Connectify review - Turn your Windows 7 laptop into a Wi-Fi hotspot}}&lt;/ref&gt; though no instance of a fully WHQL Windows 7 device not being supported was stated (note: this might be fixed by now, by Intel&lt;ref&gt;{{cite web |url=http://www.istartedsomething.com/20091106/latest-intel-drivers-windows-7-virtual-wifi-support |title=Latest Intel drivers add Windows 7 Virtual WiFi support |author=Long Zheng}}&lt;/ref&gt;). 
+
+User complaints include: limitations of the free version (particularly, the SSID naming rule), lack of support for older security models like WEP and WPA, or lack of any no-security option (Connectify supports only WPA2). Windows XP and Vista users complain that it only works in Ad-Hoc mode. Some gamers on the Sony Playstation 3 and older Nintendo devices have had problems. Another complaint is that the SSID cannot be hidden.&lt;ref&gt;{{cite web |url=http://www.facebook.com/connectify |title=Connectify Facebook Forum}}&lt;/ref&gt; 
+Some users reported crashing/BSOD, particularly with older versions.&lt;ref&gt;{{cite web |url=http://download.cnet.com/Connectify/3000-18508_4-75024171.html |title=CNET: Connectify}}&lt;/ref&gt; More typical problems seem to be interaction/blockage by PC-based firewalls.&lt;ref&gt;{{cite web |url=http://connectifyhowto.blogspot.com/2011/02/firewalls-and-connectify.html |title=Firewalls and Connectify}}&lt;/ref&gt;
+
+== See also ==
+* [http://www.virtualwifirouter.com Virtual WiFi Router]
+* [http://virtualrouter.codeplex.com Virtual Router]
+* [http://www.wmwifirouter.com WM WifiRouter]
+* [http://www.microsoft.com/download/en/details.aspx?displaylang=en&amp;id=13190 Ad Hoc Internet Sharing with Microsoft Windows XP]
+* [http://www.bzeek.com/static/index.html Bzeek]
+* [http://alternativeto.net/software/connectify Connectify Alternatives and Similar Software]
+
+== References ==
+&lt;!--- See http://en.wikipedia.org/wiki/Wikipedia:Footnotes on how to create references using &lt;ref&gt;&lt;/ref&gt; tags which will then appear here automatically --&gt;
+{{Reflist}}
+
+== Further reading ==
+* [http://www.techrepublic.com/blog/networking/create-a-wi-fi-access-point-using-connectify/2591 Tech Republic]
+* [http://lifehacker.com/5395199/connectify-restores-wi+fi-hotspot-powers-to-windows-7 Lifehacker]
+* [http://www.makeuseof.com/tag/create-mobile-wifi-hotspot-connectify-windows-7-laptop MakeUseOf]
+* [http://www.pcworld.com/article/181046/unfinished_windows_7_feature_turns_laptops_into_wifi_hotspots.html PC World]
+
+== External links ==
+* [http://www.connectify.me Connectify Home Page]
+* [http://www.twitter.com/connectifyme Connectify on Twitter]
+* [http://www.facebook.com/connectify Connectify on Facebook]
+
+&lt;!--- Categories ---&gt;
+
+
+
+
+
+[[Category:Articles created via the Article Wizard]]
+[[Category:Windows software]]</rev></revisions></page></pages></query></api>

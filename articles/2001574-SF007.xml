@@ -1,0 +1,126 @@
+<?xml version="1.0"?><api><query><pages><page pageid="2001574" ns="0" title="Java Web Start"><revisions><rev xml:space="preserve">In [[computing]], '''Java Web Start''' (also known as '''JavaWS''', '''javaws''' or '''JAWS''') is a [[Software framework|framework]] developed by [[Sun Microsystems]] (now [[Oracle Corporation|Oracle]]) that allows users to start [[application software]] for the [[Java Platform]] directly from the [[Internet]] using a [[web browser]].
+
+== Functionality ==
+Unlike [[Java applet]]s, Web Start applications do not run inside the browser. However by default they run in the same [[sandbox (computer security)|sandbox]] as applets, with several minor extensions like allowing to load and save the file that is explicitly selected by the user through the file selection dialog. Only signed applications can be configured to have additional or even all permissions.
+
+Web Start has an advantage over applets in that it overcomes many compatibility problems with browsers' Java [[Plug-in (computing)|plugin]]s and different [[Java virtual machine|JVM]] versions. On the other hand, Web Start programs are no longer part of the web page. They are independent applications that run in separate frame.
+
+Web Start can also launch unmodified applets that are packaged inside .jar files, by writing the appropriate JNLP file. This file can also pass the applet parameters. Such applets also run in a separate frame. Applet launcher may not support some specific cases like loading class as resource.
+
+Same as applets, Java Web Start is cross platform. Open source implementation, if preferred, is available as part of the [[OpenJDK]].
+
+== Implementation ==
+[[Image:Java WebStartApplicationMan.png|thumb|250px|Early versions of Java Web Start came with an application manager where, e.g., Sun's demo applications could be launched]]
+
+The developer prepares a special XML file with JNLP extension. This file describes the application requirements, code location, parameters and additional permissions (if any). The browser downloads this file as any other and (following its [[MIME type]], &lt;code&gt;application/x-java-jnlp-file&lt;/code&gt;) opens it with Web Start tool. Web Start tool downloads all necessary resources and launches the application.
+
+Java Web Start provides a series of [[Class (computer science)|class]]es in the &lt;code&gt;[http://java.sun.com/products/javawebstart/docs/javadoc/index.html javax.jnlp]&lt;/code&gt; [[Java package|package]] which provide various services to the application. Sun designed most of these services with the aim of allowing carefully controlled access to resources (such as files and the system clipboard) while restricting the application to authorized operations.
+
+Sun introduced version 1.0 of Web Start in March 2001&lt;ref&gt;
+[http://www.sun.com/smi/Press/sunflash/2001-03/sunflash.20010314.1.html Java Web Start 1.0 press release]
+&lt;/ref&gt;, while 64-bit Windows support added only in Java 6&lt;ref name=&quot;win64&quot;&gt;[http://bugs.sun.com/view_bug.do?bug_id=4802695 Bug ID 4802695, Support 64-bit Java Plug-in and Java webstart on Windows/Linux on AMD64]&lt;/ref&gt; (later than 64-bit Java was first available). Since [[Java Platform, Standard Edition|J2SE]] 1.4 Web Start comes as a default part of [[Java Runtime Environment]] (JRE) called &lt;code&gt;javaws&lt;/code&gt;, and computer administrators no longer have to install it separately.
+
+== Java Network Launching Protocol (JNLP) ==
+
+Programmers often speak of the '''Java Network Launching Protocol''' ('''JNLP''') interchangeably with the term &quot;Web Start&quot;. The JNLP protocol, defined with an [[XML]] schema, specifies how to launch Java Web Start applications. JNLP consists of a set of rules defining how exactly to implement the launching mechanism. JNLP files include information such as the location of the [[Jar (file format)|jar]] package file and the name of the main class for the application, in addition to any other parameters for the program. A properly configured browser passes JNLP files to a Java Runtime Environment (JRE) which in turn downloads the application onto the user's machine and starts executing it. The development of JNLP took place under the [[Java Community Process]] as JSR 56.  It includes the original 1.0 release, the subsequent 1.5 maintenance release, and {{as of | 2006 | lc = on}}, the pending 6.0 maintenance release. JNLP comes free of charge; developers need not pay a license fee in order to use it in programs.
+
+Important Web Start features include the ability to automatically download and install a JRE in the case where the user does not have Java installed, and for programmers to specify which JRE version a given program needs in order to execute.  The user does not have to remain connected to the Internet to execute the downloaded programs, because they execute from a locally-maintained [[cache]]. Updates of the software download from the Web become available when the user has a connection to the Internet, thus easing the burden of deployment.
+
+Any computer user can use JNLP by simply installing a JNLP client (most commonly Java Web Start). The installation can occur automatically such that the end user sees the client launcher downloading and installing the Java application when first executed.
+
+JNLP works in a similar fashion to how HTTP/HTML works for the web. For rendering a HTML [[webpage]], after the user clicks on a weblink, the browser submits a URL to a [[webserver]], which replies with an HTML file. The browser then requests the resources referred to by this file (images, [[cascading style sheets|css]]), and finally renders the page once it has received enough information. Page rendering usually starts before all resources have downloaded; some resources not critical to the layout of the page (such as images), can follow on afterwards â or on request if the &quot;Load Images Automatically&quot; browser-setting remains unset.
+
+JNLP mirrors this process; in the same way that a Web browser renders a webpage,  a JNLP client &quot;renders&quot; a [[Java application|Java app]].  After the user clicks on a weblink the browser submits a URL to a webserver, which replies with a JNLP file (instead of a HTML file) for the application. The JNLP client parses this file, requests the resources specified (jar files), waits for the retrieval of all required resources, and then launches the application. The JNLP file can list resources as &quot;lazy&quot;, which informs the JNLP client that the application does not need those resources to start, but can retrieve them later on when/if the application requests them.
+
+== Example ==
+The example below describes a simple JNLP to launch the applet, specifying code base, source, main class and window size. Such file contains all necessary references and is self-sufficient to launch the application. As no permissions are requested, the code will run in a sandbox. JNLP also states that this application can run offline (if already cached) and should be updated in a background. 
+
+&lt;source lang='xml'&gt;
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;jnlp spec=&quot;1.0+&quot; codebase=&quot;http://ultrastudio.org/upload&quot; href=&quot;&quot;&gt;
+    &lt;information&gt;
+        &lt;title&gt;Launch applet with Web Start&lt;/title&gt;
+        &lt;vendor&gt;Foo Bar Inc.&lt;/vendor&gt;
+        &lt;offline-allowed/&gt;
+    &lt;/information&gt;
+    &lt;resources&gt;
+        &lt;j2se version=&quot;1.5+&quot; href=&quot;http://java.sun.com/products/autodl/j2se&quot;/&gt;
+        &lt;jar href=&quot;Ray-2.3-4ca60e46-0956-3f22-983c-e3ed986dfd03.jar&quot; main=&quot;true&quot; /&gt;
+    &lt;/resources&gt;
+    &lt;applet-desc
+         name=&quot;Ray diagram applet&quot; main-class=&quot;raydiagramsapplet.Main&quot;
+         width=&quot;300&quot; height=&quot;200&quot;&gt;
+    &lt;/applet-desc&gt;
+  &lt;update check=&quot;background&quot;/&gt;
+&lt;/jnlp&gt;
+&lt;/source&gt;
+
+== Pack200 compression ==
+To reduce the size of a Java Web Start application Sun Microsystems introduced a compression system called [[Pack200]] in Java 1.5.0. It reduces byte counts so efficiently that it can compress a large jar file to one-ninth of its original size if it contains only Java classes.&lt;ref&gt;[http://java.sun.com/javase/6/docs/technotes/guides/deployment/deployment-guide/pack200.html#pack200_compression Pack200 and Compression for Network Deployment]&lt;/ref&gt;
+
+Java Web Start has supported Pack200 since it first appeared, but initially this feature required server-side cooperation and a certain amount of expertise to set up. When Sun introduced Java SE 6u10, Pack200 support became available without the need for special server support. Application designers can enable or disable this feature within JNLP files.
+
+On slow connections Pack200 gives a performance boost in application startup time and download time.
+
+== Signed Web Start applications ==
+
+By default, Java Web Start applications run &quot;restricted&quot;, which means that they do not have access to some system resources such as local files. But publishers can remove these restrictions by signing their Web Start applications with the &lt;code&gt;jarsigner&lt;/code&gt; tool that comes with the [[Java Development Kit|JDK]].
+
+== Well-known applications ==
+* [[ArgoUML]] &amp;ndash; an [[Unified Modeling Language|UML]] diagramming application.
+* [http://antaki.ca/bloom/ Bloom] a desktop app to easily upload photos and videos to [[Facebook]] 
+* [[CrossFTP]] &amp;ndash; a user friendly FTP client and server.
+* [[Genie Workbench]] &amp;ndash; a set of film production automation tools.
+* [[Genevestigator]], access engine to the curated bioinformatical database.
+* [[Jake2]] &amp;ndash; A Java port of Quake 2.
+* [http://jshot.info/jshot/webstart/jshot.jnlp [JShot]] A Java-based screenshot capture application and image editor with integrated upload to image hosting sites
+* [[JabRef]] a reference management software that uses [[BibTeX]] as its native format
+* [[muCommander]] A file Manager and Norton Commander clone with SSH and ftp features
+* [[PowerFolder]] &amp;ndash; a popular network sync and sharing freeware.
+* [[PowerTeacher]] &amp;ndash; a gradebook program for student scores: part of the [[PowerSchool]] student information system used by schools.
+* [[PoxNora]] &amp;ndash; a [[3/4 perspective]], [[turn-based strategy]], [[collectible card game]].
+* [http://www.tropiceuro.com Tropic Euro] &amp;ndash; an online adaptation of the board game ''[[Puerto Rico (board game)|Puerto Rico]]''.
+* [[Wurm Online]] &amp;ndash; a 3D Massively Multiplayer Online Fantasy Simulator.
+* [http://www.havenandhearth.com Haven &amp; Hearth] &amp;ndash; is a MMORPG set in a fictional world loosely inspired by Slavic and Germanic myth and legend.
+
+== See also ==
+{{Portal|Java}}
+* [[Java applets]], another Java application deployment technology.
+* [[Zero Install]], a similar system which works for non-Java applications.
+* [[ClickOnce]], [[Microsoft]] [[.NET Framework|.NET]]'s similar framework.
+* [[RUNZ]].
+
+==References==
+{{Reflist}}
+
+==External links==
+* [http://www.oracle.com/technetwork/java/javase/javawebstart/index.html Java Web Start product page]
+* {{dmoz|/Computers/Programming/Languages/Java/Development_Tools/Deployment/Java_Web_Start_and_JNLP|Java Web Start and JNLP}}
+* [http://java.sun.com/developer/technicalArticles/Programming/jnlp/ Deploying Software with JNLP and Java Web Start]
+* [http://www.oracle.com/technetwork/java/javase/download-spec-142476.html Java Web Start Architecture JNLP Specification &amp; API Documentation]
+* [http://download.oracle.com/javase/6/docs/technotes/guides/javaws/developersguide/contents.html Java Web Start Developer Guide (6.0)]
+* [http://www.jcp.org/en/jsr/detail?id=56 JSR 56] (JNLP 1.0, 1.5 and 6.0)
+* [http://www.connectandwork.com/external Startdirectory Connect and Work]
+* [http://articles.techrepublic.com.com/5100-3513-6120125.html Java Web Start tutorial]
+* [http://today.java.net/pub/a/today/2005/08/11/webstart.html Getting Started with Java Web Start]
+* JNLP implementations other than Sun's reference implementation:
+** [http://sourceforge.net/projects/openjnlp/ OpenJNLP]
+** [http://jnlp.sourceforge.net/netx/ netx]
+** [http://xito.sourceforge.net/ xito]
+
+{{Java (Sun)}}
+
+[[Category:Java platform|Web Start]]
+[[Category:Java specification requests|Web Start]]
+[[Category:2001 introductions]]
+
+[[ca:Java Web Start]]
+[[cs:Java Web Start]]
+[[de:Java Web Start]]
+[[es:Java Web Start]]
+[[fr:Java Web Start]]
+[[he:Java Web Start]]
+[[nl:Java Web Start]]
+[[ja:Java Web Start]]
+[[pl:Java Web Start]]
+[[ru:Java Web Start]]</rev></revisions></page></pages></query></api>

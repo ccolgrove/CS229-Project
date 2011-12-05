@@ -1,0 +1,124 @@
+<?xml version="1.0"?><api><query><pages><page pageid="288311" ns="0" title="Web application"><revisions><rev xml:space="preserve">{{For|applications accessed through the web that are executed client-side|Rich Internet application}}
+
+{{Ref-improve|date=January 2010}}
+[[Image:Gcalendar.png|thumb|250px|[[Google Calendar]] is a contact- and time-management web application offered by [[Google]].]]
+[[Image:Horde-portal.png|thumb|250px|[[Horde (software)|Horde]] [[groupware]] is an [[open source]] web application.]]
+
+A '''web application''' is an [[Application software|application]] that is accessed over a network such as the [[Internet]] or an [[intranet]]. The term may also mean a computer software application that is coded in a browser-supported language (such as [[JavaScript]], combined with a browser-rendered [[markup language]] like [[HTML]]) &lt;!-- Removed &quot;[[ASP]], [[PHP]], [[Perl]], [[Python (programming language)|Python]]&quot; and replaced with &quot;[[JavaScript]], [[AJAX]], [[Java (programming language)|Java]]&quot;. Reason: ASP, PHP, Perl, and Python are server-side executed languages and are therefore are not executed by the browser. JavaScript. AJAX, and Java are. ~Eleclion --&gt;and reliant on a common web browser to render the application [[executable]].
+
+Web applications are popular due to the [[Omnipresence|ubiquity]] of web browsers, and the convenience of using a web browser as a [[client (computing)|client]], sometimes called a [[thin client]]. The ability to update and maintain web applications without distributing and installing software on potentially thousands of client computers is a key reason for their popularity, as is the inherent support for cross-platform compatibility.  Common web applications include [[webmail]], online retail sales, [[online auction]]s, [[wiki]]s and many other functions.
+
+==History==
+In earlier computing models, e.g. in client-server, the load for the application was shared between code on the server and code installed on each client locally.  In other words, an application had its own client program which served as its [[user interface]] and had to be separately installed on each user's [[personal computer]]. An upgrade to the server-side code of the application would typically also require an upgrade to the client-side code installed on each user workstation, adding to the [[technical support|support]] cost and decreasing [[productivity]].
+
+In contrast, web applications use [[web document]]s written in a standard format such as [[HTML]] and [[JavaScript]], which are supported by a variety of web browsers. Web applications can be considered as a specific variant of client-server software where the client software is downloaded to the client machine when visiting the relevant web page, using standard procedures such as [[Http]]. Client web software update may happen each time the web page is visited. During the session, the web browser interprets and displays the pages, and acts as the ''universal'' client for any web application.
+
+In the early days of the [[Web]] each individual web page was delivered to the client as a static document, but the sequence of pages could provide an interactive experience, as user input is returned through web [[Form (web)|form]] elements embedded in the page markup.
+
+In 1995 [[Netscape]] introduced a [[client-side scripting]] language called [[JavaScript]] allowing programmers to add some [[Dynamic_HTML|dynamic elements]] to the user interface that ran on the client side. So instead of sending data to the server in order to generate an entire web page, the embedded scripts of the downloaded page can perform various tasks such as input validation or showing/hiding parts of the page.
+
+In 1996, Macromedia introduced [[Adobe Flash|Flash]], a [[vector graphics|vector animation]] player that could be added to browsers as a [[plug-in (computing)|plug-in]] to embed animations on the web pages. It allowed the use of a scripting language to program interactions on the client side with no need to communicate with the server.
+
+In 1999, the &quot;web application&quot; concept was introduced in the Java language in the Servlet Specification version 2.2. [2.1?].&lt;ref name=&quot;jgurufaq&quot;&gt;{{cite web | url = http://www.jguru.com/faq/view.jsp?EID=129328 | title = What is a web application (or &quot;webapp&quot;)? | author = Alex Chaffee | date = 2000-08-17 | accessdate = 2008-07-27}}&lt;/ref&gt;&lt;ref&gt;{{cite book | url = http://java.sun.com/products/servlet/download.html | title = Java Servlet Specification (&quot;Specification&quot;) Version: 2.2 Final Release | author = James Duncan Davidson, Danny Coward | publisher = [[Sun Microsystems]] | pages = 43â46 | date = 1999-12-17 | accessdate = 2008-07-27}}&lt;/ref&gt; At that time both [[JavaScript]] and [[XML]] had already been developed, but [[Ajax (programming)|Ajax]] had still not yet been coined and the [[XMLHttpRequest]] object had only been recently introduced on Internet Explorer 5 as an ActiveX object.&lt;ref name=&quot;apple&quot;&gt;{{cite web |url = http://developer.apple.com/internet/webcontent/xmlhttpreq.html | title = Dynamic HTML and XML: The XMLHttpRequest Object | publisher = Apple Inc | accessdate = 2008-06-25}}&lt;/ref&gt;
+
+In 2005, the term [[Ajax (programming)|Ajax]] was coined, and applications like [[Gmail]] started to make their client sides more and more interactive. A web page script is able to contact the server for storing/retrieving data without downloading an entire web page.
+
+In 2011 [[HTML5]] was created, which provides graphic and multimedia capabilities without the need of client side [[Plug-in (computing)|plugins]]. HTML5 also enriched the semantic content of documents. The APIs and [[Document_object_model|document object model (DOM)]] are no longer afterthoughts, but are fundamental parts of the HTML5 specification. [[WebGL]] API paved the way for advanced 3D graphics based on HTML5 canvas and JavaScript language. These have significant importance in creating truly platform and browser independent [[Rich Internet application|rich web applications]].
+
+==Interface==
+
+Through [[Java (Sun)|Java]], [[JavaScript]], [[DHTML]], [[Adobe Flash|Flash]], [[Microsoft Silverlight|Silverlight]] and other technologies, application-specific methods such as drawing on the screen, playing audio, and access to the keyboard and mouse are all possible. Many services have worked to combine all of these into a more familiar interface that adopts the appearance of an operating system. General purpose techniques such as [[drag and drop]] are also supported by these technologies. Web developers often use client-side scripting to add functionality, especially to create an interactive experience that does not require page reloading. Recently, technologies have been developed to coordinate client-side scripting with server-side technologies such as [[PHP]]. [[Ajax (programming)|Ajax]], a web development technique using a combination of various technologies, is an example of technology which creates a more interactive experience.
+
+==Structure==
+Applications are usually broken into logical chunks called &quot;tiers&quot;, where every tier is assigned a role.&lt;ref name=&quot;ntiered&quot; /&gt; Traditional applications consist only of 1 tier, which resides on the client machine, but web applications lend themselves to a n-tiered approach by nature.&lt;ref name=&quot;ntiered&quot; /&gt; Though many variations are possible, the most common structure is the [[Three-tier (computing)|three-tiered]] application.&lt;ref name=&quot;ntiered&quot; /&gt; In its most common form, the three tiers are called ''presentation'', ''application'' and ''storage'', in this order. A web browser is the first tier (presentation), an engine using some dynamic Web content technology (such as [[Active Server Pages|ASP]], [[ASP.NET]], [[Common Gateway Interface|CGI]], [[ColdFusion]], [[Java Servlet|JSP/Java]], [[PHP]], [[Perl]], [[Python (programming language)|Python]], [[Ruby on Rails]] or [[Struts2]]) is the middle tier (application logic), and a database is the third tier (storage).&lt;ref name=&quot;ntiered&quot; /&gt; The web browser sends requests to the middle tier, which services them by making queries and updates against the database and generates a user interface.
+
+For more complex applications, a 3-tier solution may fall short, and it may be beneficial to use an n-tiered approach, where the greatest benefit is breaking the business logic, which resides on the application tier, into a more fine-grained model.&lt;ref name=&quot;ntiered&quot; /&gt; Another benefit may be adding an integration tier that separates the data tier from the rest of tiers by providing an easy-to-use interface to access the data.&lt;ref name=&quot;ntiered&quot; /&gt; For example, the client data would be accessed by calling a &quot;list_clients()&quot; function instead of making an SQL query directly against the client table on the database. This allows the underlying database to be replaced without making any change to the other tiers.&lt;ref name=&quot;ntiered&quot; /&gt;
+
+There are some who view a web application as a two-tier architecture. This can be a &quot;smart&quot; client that performs all the work and queries a &quot;dumb&quot; server, or a &quot;dumb&quot; client that relies on a &quot;smart&quot; server.&lt;ref name=&quot;ntiered&quot; /&gt; The client would handle the presentation tier, the server would have the database (storage tier), and the business logic (application tier) would be on one of them or on both.&lt;ref name=&quot;ntiered&quot; /&gt; While this increases the scalability of the applications and separates the display and the database, it still doesn't allow for true specialization of layers, so most applications will outgrow this model.&lt;ref name=&quot;ntiered&quot;&gt;{{cite web | title = Benefits of using the n-tiered approach for web applications | author = Jeremy Petersen | url = http://www.adobe.com/devnet/coldfusion/articles/ntier.html }}&lt;/ref&gt;
+
+==Business use==
+&lt;!-- Image with inadequate rationale removed: [[Image:Google Docs.png|thumb|250px|[[Google Docs]] is a Web-based [[word processor]], [[spreadsheet]], [[presentation]] and form application offered as a part of [[Google Apps]].]] --&gt;&lt;!-- Image with inadequate rationale removed: [[Image:Google Docs - example document.png|thumb|250px|Document editing interface of [[Google Docs]].]] --&gt;
+An emerging strategy for application software companies is to provide web access to software previously distributed as local applications.  Depending on the type of application, it may require the development of an entirely different browser-based interface, or merely adapting an existing application to use different presentation technology. These programs allow the user to pay a monthly or yearly fee for use of a software application without having to install it on a local hard drive. A company which follows this strategy is known as an [[application service provider]] (ASP), and ASPs are currently receiving much attention in the software industry.
+
+In [[cloud computing]] model web applications are [[Software_as_a_Service|Software as a Service (SaaS)]]. There are business applications provided as SaaS for enterprises for fixed or usage dependent fee. Other web applications are offered free of charge, often generating income from advertisements shown in web application interface.
+
+==Writing web applications==
+There are many [[web application framework]]s which facilitate [[rapid application development]] by allowing the programmer to define a high-level description of the program.&lt;ref&gt;{{cite web | url=http://docforge.com/wiki/Web_application_framework | title=Web application framework | author=Multiple (wiki) | work=Docforge | accessdate=2010-03-06 }}&lt;/ref&gt; In addition, there is potential for the development of applications on [[Internet operating system]]s, although currently there are not many viable platforms that fit this model.
+
+The use of web application frameworks can often reduce the number of errors in a program, both by making the code simpler, and by allowing one team to concentrate just on the framework. In applications which are exposed to constant [[Hacker (computer security)|hacking]] attempts on the Internet, security-related problems can be caused by errors in the program. Frameworks can also promote the use of best practices&lt;ref&gt;{{cite web | url=http://docforge.com/wiki/Framework | title=Framework | author=Multiple (wiki) | work=Docforge | accessdate=2010-03-06 }}&lt;/ref&gt; such as [[Post/Redirect/Get|GET after POST]].
+
+== Applications ==
+Examples of browser applications are simple office software ([[word processor]]s, [[List of online spreadsheets|online spreadsheets]], and [[Web based presentation tools|presentation tools]]), but can also include more advanced applications such as project management, [[computer-aided design]], [[video editing]] and point-of-sale.
+
+== Benefits ==
+{{Original research|date=April 2011}}
+* Web applications do not require any complex &quot;roll out&quot; procedure to deploy in large organizations. A compatible web browser is all that is needed;
+* Browser applications typically require little or no disk space on the client;
+* They require no upgrade procedure since all new features are implemented on the server and automatically delivered to the users;
+* Web applications integrate easily into other server-side web procedures, such as email and searching.
+* They also provide cross-platform compatibility in most cases (i.e., Windows, Mac, Linux, etc.) because they operate within a web browser window.
+* With the advent of [[HTML5]], programmers can create richly interactive environments natively within browsers. Included in the list of new features are native audio, video and animations, as well as improved error handling.
+
+== Drawbacks ==
+{{Original research|date=April 2011}}
+* In practice, web interfaces, compared to thick clients, typically force significant sacrifice to user experience and basic usability.
+* Web applications absolutely require compatible web browsers. If a browser vendor decides not to implement a certain feature, or abandons a particular platform or operating system version, this may affect a huge number of users;
+* Standards compliance is an issue with any non-typical office document creator, which causes problems when file sharing and collaboration becomes critical;
+* Browser applications rely on application files accessed on remote servers through the Internet. Therefore, when connection is interrupted, the application is no longer usable. However, if it uses [[HTML5]] API's such as Offline Web application caching,&lt;ref&gt;{{cite web | url=http://www.whatwg.org/specs/web-apps/current-work/multipage/offline.html | title=Offline Web applications - HTML5 | author=Multiple | work=WHATWG | accessdate=2010-08-09 }}&lt;/ref&gt; it can be downloaded and installed locally, for offline use. [[Google Gears]], although no longer in active development, is a good example of a third party plugin for web browsers that provides additional functionality for creating web applications;
+* Since many web applications are not [[open source]], there is also a loss of flexibility, making users dependent on third-party servers, not allowing customizations on the software and preventing users from running applications [[offline]] (in most cases). However, if [[software license|licensed]], [[proprietary software]] can be customized and run on the preferred server of the rights owner;
+* They depend entirely on the availability of the server delivering the application. If a company goes bankrupt and the server is shut down, the users have little recourse. Traditional installed software keeps functioning even after the demise of the company that produced it (though there will be no updates or customer service);
+* Likewise, the company has much greater control over the software and functionality. They can roll out new features whenever they wish, even if the users would like to wait until the bugs have been worked out before upgrading. The option of simply skipping a weak software version is often not available. The company can foist unwanted features on the users or cut costs by reducing bandwidth. Of course, companies will try to keep the good will of their customers, but the users of web applications have fewer options in such cases unless a competitor steps in and offers a better product and easy migration;
+* The company can theoretically track anything the users do. This can cause privacy problems.
+
+==See also==
+*[[Software as a service|Software as a service (SaaS)]]
+*[[Web 2.0]]
+*[[Web service]]s
+*[[Web widget]]
+
+==References==
+
+{{reflist}}
+
+==External links==
+{{Commons category|Internet applications}}
+*[http://www.whatwg.org/specs/web-apps/current-work/multipage/ HTML 5 Draft recommendation],  changes to HTML and related APIs to ease authoring of web-based applications.
+*[http://www.paulgraham.com/road.html The Other Road Ahead] &amp;mdash; An article arguing that the future lies on the server, not rich interfaces on the client
+*{{dmoz|Computers/Internet/On_the_Web/Web_Applications|Web Applications}}
+*[http://www.w3.org/2008/webapps/ Web Applications Working Group] at the [http://www.w3.org/ World Wide Web Consortium] (W3C)
+
+{{DEFAULTSORT:Web Application}}
+[[Category:Software architecture]]
+[[Category:Web applications| ]]
+[[Category:Web development]]
+
+[[ar:ØªØ·Ø¨ÙÙ ÙÙØ¨]]
+[[ca:AplicaciÃ³ Web]]
+[[cs:WebovÃ¡ aplikace]]
+[[de:Webanwendung]]
+[[el:ÎÎ¹Î±Î´Î¹ÎºÏÏÎ±ÎºÎ® ÎµÏÎ±ÏÎ¼Î¿Î³Î®]]
+[[es:AplicaciÃ³n web]]
+[[eu:Web aplikazio]]
+[[fa:Ø¨Ø±ÙØ§ÙÙ Ú©Ø§Ø±Ø¨Ø±Ø¯Û ÙØ¨]]
+[[fr:Application web]]
+[[ko:ì¹ ì íë¦¬ì¼ì´ì]]
+[[hy:ÕÕ¡Õ¶ÖÕ« Õ¯Õ«ÖÕ¡Õ¼Õ¡Õ¯Õ¡Õ¶ Õ®ÖÕ¡Õ£Õ«Ö]]
+[[id:Aplikasi web]]
+[[it:Applicazione Web]]
+[[he:×××©×× ×××]]
+[[nl:Webapplicatie]]
+[[ja:ã¦ã§ãã¢ããªã±ã¼ã·ã§ã³]]
+[[no:Webapplikasjon]]
+[[pl:Aplikacja internetowa]]
+[[pt:AplicaÃ§Ã£o Web]]
+[[ru:ÐÐµÐ±-Ð¿ÑÐ¸Ð»Ð¾Ð¶ÐµÐ½Ð¸Ðµ]]
+[[sq:Ueb aplikacionet]]
+[[simple:Web application]]
+[[sk:WebovÃ¡ aplikÃ¡cia]]
+[[fi:Web-sovellus]]
+[[sv:Webbapplikation]]
+[[ta:à®µà®²à¯à®à¯ à®à¯à®¯à®²à®¿]]
+[[th:à¹à¸à¸£à¹à¸à¸£à¸¡à¸à¸£à¸°à¸¢à¸¸à¸à¸à¹à¸à¸à¹à¸§à¹à¸]]
+[[uk:ÐÐµÐ±-Ð·Ð°ÑÑÐ¾ÑÑÐ½Ð¾Ðº]]
+[[vi:á»¨ng dá»¥ng web]]
+[[zh:ç½ç»åºç¨ç¨åº]]</rev></revisions></page></pages></query></api>

@@ -1,0 +1,99 @@
+<?xml version="1.0"?><api><query><pages><page pageid="11437198" ns="0" title="Zonbu"><revisions><rev xml:space="preserve">{{Cleanup|date=October 2008}}
+{{More footnotes|date=July 2008}}
+{{Infobox Company
+|name             = Zonbu
+|logo             = [[Image:Zonbu logo.png]]
+|type             = Private Startup
+|genre            = Computer
+|foundation       = 2006&lt;!--modifies &quot;Founded&quot; entry--&gt;
+|founder          = GrÃ©goire Gentil and Alain Rossmann
+|location_city    = Palo Alto, California
+|location_country = USA
+|location         =   &lt;!--modifies &quot;Headquarters&quot; entry--&gt;
+|industry         = [[Personal computer|PC]]
+|products         = Zonbu Box and Subscription
+|slogan           = Green doesn't have to make you Blue!
+|homepage         = [http://www.zonbu.com/ Zonbu.com]
+}}
+'''Zonbu''' is a technology company that sells a computing platform which combines a web-centric service, a [[small form factor]] [[Personal computer|PC]], and an [[open source]] based software architecture. Zonbu was founded by Alain Rossmann (previously Founder and CEO of [[Openwave]]) and Gregoire Gentil (previously co-founder of [[Twingo Systems]]).
+
+==Hardware==
+[[Image:zonbu box.jpg|250px|thumb|right|Zonbu Mini PC.]]
+The first-generation Zonbox hardware was the eBox-4854&lt;ref name=ebox&gt;{{cite web|url=http://compactpc.com.tw/ebox-4854.htm|title=DMP's ebox-4854}}&lt;/ref&gt; sold by DMP Electronics of Taiwan.
+Called the Zonbu Mini, it was a [[nettop]] computer measuring 6 Â¾â Ã 4 Â¾â Ã 2 Â¼â.  It is [[flash memory|flash]] based, [[fanless]], and thus effectively silent. The official specifications for the device in 2007 were:&lt;ref&gt;{{cite web |title= Zonbu: Good things come in small packages |work= Official website |url=http://www.zonbu.com/device/ |deadurl=yes |archiveurl= http://web.archive.org/web/20071002204430/http://zonbu.com/device/ |archivedate=  October 2, 2007 |accessdate= October 16, 2011 }} (Mini no longer on website) &lt;/ref&gt;
+* 1.2 GHz [[VIA Technologies|Via]] [[VIA Eden|Eden]] [[Central processing unit|CPU]] ([[VIA C7|C7 Esther]] core)
+* 512 MB RAM
+* [[Ethernet over twisted pair]] 10/100 Mbit/s
+* PS/2 keyboard and mouse ports, VGA display port and 6 [[Universal Serial Bus|USB]] 2.0 ports
+* 4 GB [[CompactFlash]] local storage
+* Graphics up to 2048 x 1536 with 16 million colors â hardware graphics and MPEG2 acceleration
+
+Disassembly by Zonbu owners has shown that the Zonbu includes options for internal expansion:&lt;ref&gt;{{cite web|title=Zonbu Live enthusiast site|url=http://www.zonbulive.net/?p=10}}&lt;/ref&gt;
+* [[Mini PCI]] slot (for an optional [[wireless card]])
+* [[Integrated Drive Electronics|IDE]] connector, with room in the case for a 2.5&quot; [[hard drive]]
+* [[serial port|serial]] and [[parallel port|parallel]] ports
+
+== Service ==
+The Zonbu subscription plans&lt;ref&gt;{{cite web|url=http://www.zonbu.com/plans/|title=Zonbu official website}}&lt;/ref&gt; include online storage (using [[Amazon S3]]), automatic upgrades, online support and remote file access. The subscription service is promoted as  reducing the hassle of typical computer maintenance tasks, such as hardware repair, software installation, updates and upgrades, and malicious software removal.
+
+==Software architecture==
+{{Unreferenced section|date=July 2008}}
+[[Image:zonbu architecture.jpg|thumb|right|Zonbu disk architecture.]]
+The Zonbu OS is a customized version of [[Linux]] based on the [[Gentoo Linux|Gentoo distribution]] using the [[Xfce]] desktop environment. It is geared towards non-technical users, and the [[user interface]] focuses more on simplicity than advanced features.
+
+The filesystem architecture combines a [[UnionFS|transparent overlay filesystem]] (pioneered by Linux [[Live Distro|Live Distributions]]) with an [[Remote backup service|on-line backup]] service. User data is locally cached on Compact Flash Card, then transparently encrypted with [[Key size|128-bit encryption]] and transferred to remote storage servers at [[Amazon S3]].
+
+==Applications==
+Zonbu comes pre-loaded with a number of software applications.&lt;!-- 20 applications including 30 games? --&gt;&lt;ref&gt;{{cite web |url=http://gizmodo.com/gadgets/exclusive-hands_on/22-things-to-know-about-the-99-zonbu-linux-pc-262952.php|title=22 Things to Know About the $99 Zonbu Linux PC|last=Lam|first=Brian}}&lt;/ref&gt;  These include the [[Mozilla Firefox|Firefox]] [[web browser]], [[OpenOffice.org|OpenOffice]] productivity suite and [[Skype]] IP phone service, and 30 casual games.
+
+With the default OS, the user is not allowed to install any third-party software. The default set of applications is supposed to fit the needs of non-technical users or of a second home PC. However, Zonbu provides instructions to unlock the operating system and install additional software.&lt;ref&gt;http://www.zonbu.com/doc/doku.php?id=developer_edition&lt;/ref&gt; The procedure is technical and intended for a minority of users (Standard for many linux users, unlocking GRUB, root, and install with emerge/portage)&lt;!-- obvious? --&gt;.
+
+==Environmental benefits==
+{{Unreferenced section|date=July 2008}}
+Zonbu consumes less than 10 watts on average and 15 watts under full load, compared to 175 watts for a typical desktop PC. It is a [[carbon neutral]] computer thanks to this low power design and regulatory grade [[carbon offset]] purchased by Zonbu from [[Climate Trust]], a [[carbon offset provider]]. These offsets take into account the energy used by the manufacturing process and by the device over its expected lifespan, but not the remote storage service.
+
+The Zonbu manufacturing process complies with the standard of the [[Restriction of Hazardous Substances Directive|European RoHS Directive]].
+
+The company also offers a free take-back program to minimize environmental [[e-waste]].
+
+==See also==
+* [[Everex]], provider of the hardware used on some Zonbu models&lt;ref&gt;http://www.linuxdevices.com/news/NS9053954642.html&lt;/ref&gt;
+* [[Linutop]] Linux PC
+* [[Linpus Linux]]
+* [[XO-1 (laptop)|OLPC laptop]]
+* [[gOS (operating system)|gOS]]
+
+==References==
+&lt;references/&gt;
+
+==External links==
+* [http://www.zonbu.com/ Zonbu official website]
+* [http://www.epatec.com/ EPATec, distributor of same hardware in Germany and Spain]
+* [http://www.youtube.com/watch?v=FT1CJd7jFo0 Zonbu First Look Video]
+* [http://www.climatetrust.org/ Climate Trust]
+* [http://www.norhtec.com/products/mcjr/index.html Norhtec MicroClient Jr.]
+
+=== Media ===
+* [http://linuxdevices.com/articles/AT6425549202.html Zonbu Notebook review by LinuxDevices]
+* [http://www.pcworld.com/article/140093/zonbu_launches_subscription_laptops.html Zonbu Launches Subscription Laptops]
+* [http://www.nytimes.com/2007/12/13/technology/personaltech/13laptop.html?8cir&amp;emc=cir A Holiday Helper for the Computer Savvy]
+* [http://www.forbes.com/forbes/2007/1015/056.html Hassle-Free PC]
+* [http://www.nytimes.com/2007/07/16/technology/16cheap.html?_r=1&amp;adxnnl=1&amp;oref=slogin&amp;adxnnlx=1184644840-Nk6c8KcWSXtdMQBrgU%2FkDg A PC That Uses Less Energy, but Charges a Monthly Fee]
+* [http://www.engadget.com/2007/07/18/zonbu-launches-subscription-based-pc-service-plans Engadget: Zonbu launches subscription-based PC, service plans]
+* [http://www.pcmag.com/article2/0,2817,2153829,00.asp Zonbu Desktop Mini]
+* [http://www.pcmag.com/article2/0,2817,2259165,00.asp Everex Zonbu Notebook]
+* [http://www.pcmag.com/article2/0,1895,2136254,00.asp Sneak Peek at the Zonbu PC]
+
+{{Linux mini computers}}
+{{Cloud computing}}
+
+[[Category:Computer companies of the United States]]
+[[Category:Information technology and development]]
+[[Category:Linux-based devices]]
+[[Category:Cloud clients]]
+
+[[es:Zonbu]]
+[[fr:Zonbu]]
+[[ko:ì¡´ë¶]]
+[[ru:Zonbu]]
+[[zh:Zonbu]]</rev></revisions></page></pages></query></api>

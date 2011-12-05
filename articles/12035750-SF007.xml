@@ -1,0 +1,73 @@
+<?xml version="1.0"?><api><query><pages><page pageid="12035750" ns="0" title="Sandboxie"><revisions><rev xml:space="preserve">{{Infobox Software
+| name                   = Sandboxie
+| logo                   = [[Image:Sandboxie logo.png|50px|Sandboxie logo]]
+| screenshot             = [[Image:Sandboxie screenshot.png|200px]]
+| caption                = Sandboxie 3.60
+| collapsible            = 
+| author                 = 
+| developer              = Ronen Tzur&lt;ref name=TechRepublic/&gt;
+| released               = 
+| latest release version = 3.62&lt;ref name=Downloads&gt;{{cite web |url= http://www.sandboxie.com/index.php?DownloadSandboxie|title= Sandboxie - Download Sandboxie|accessdate=2010-10-17}}&lt;/ref&gt;
+| latest release date    = {{release date|2011|11|23}}
+| latest preview version = 
+| latest preview date    = 
+| frequently updated     = Weekly (Beta versions)
+| programming language   = [[C++]]
+| operating system       = [[Microsoft Windows|Windows]]
+| platform               = Windows 2000; XP (32 bit only); Vista &amp; 7 (32 bit and 64 bit)
+| size                   = 
+| language               = English, Albanian, Arabic, Chinese (Simplified and Traditional), Czech, Danish, Estonian, Finnish, French, German, Greek, Hebrew, Indonesian, Italian, Japanese, Korean, Macedonian, Polish, Portuguese (Brasil and Portugal), Russian, Spanish, Swedish, and Turkish. 
+| status                 = Active
+| genre                  = Security
+| license                = Shareware&lt;ref name=pcauthority&gt;{{cite web |url= http://downloads.pcauthority.com.au/article/2198-sandboxie |title= Sandboxie 3.60|accessdate=2011-10-14 |publisher= PCAuthority}}&lt;/ref&gt;&lt;ref name=pcworld2&gt;{{cite web |url= http://www.pcworld.com/downloads/file/fid,64708-order,4-page,4/reviews.html |title= Sandboxie 2.64|accessdate=2009-02-11 |publisher= [[PC World (magazine)|PCWorld]]}}&lt;/ref&gt;, Nagware
+| website                = [http://www.sandboxie.com/ www.sandboxie.com]
+}}
+'''Sandboxie''' is a [[Proprietary software|proprietary]] [[Sandbox (computer security)|sandbox-based isolation]] [[Computer program|program]] developed by Ronen Tzur, for 32- and 64-bit [[Windows NT|Windows NT-based]] operating systems.&lt;ref name=TechRepublic&gt;{{cite web |url= http://blogs.techrepublic.com.com/security/?p=693|title= Use free sandboxing software to isolate risky behavior|accessdate=2009-02-11 |last= Olzak |first= Tom |date= December 15th, 2008 |publisher= TechRepublic}}&lt;/ref&gt;&lt;ref name=TechRepublic2&gt;{{cite web |url= http://blogs.techrepublic.com.com/networking/?p=801|title= Minimize risk when downloading from the Internet|accessdate=2009-02-11 |last= Kassner |first= Michael |date= January 20th, 2009 |publisher= TechRepublic}}&lt;/ref&gt;&lt;ref name=pcworld&gt;{{cite web |url= http://www.pcworld.com/businesscenter/article/151706-5/sandbox_security_versus_the_evil_web.html |title= Sandbox Security Versus the Evil Web |accessdate=2009-02-11 |last= Grimes |first= Roger A. |date= December 15th, 2008 |publisher= [[PC World (magazine)|PCWorld]]}}&lt;/ref&gt; It creates a sandbox-like isolated operating environment in which applications can be run or installed without permanently modifying the local or mapped drive.&lt;ref name=TechRepublic/&gt;&lt;ref name=lifehacker&gt;{{cite web|url=http://lifehacker.com/software/featured-windows-download/safely-test-new-software-with-sandboxie-258255.php|title=Featured Windows Download: Safely test new software with Sandboxie |publisher=lifehacker.com|date= May 7th, 2007 |accessdate=2009-03-04|last=Pash|first=Adams}}&lt;/ref&gt;An isolated virtual environment allows controlled testing of untrusted programs and web surfing. &lt;ref name=lifehacker/&gt;&lt;ref name=ghacks&gt;{{cite web|url=http://www.ghacks.net/2008/12/06/ghacks-christmas-giveaway-sandboxie/|title=Ghacks Christmas Giveaway: Sandboxie|publisher=www.ghacks.net|accessdate=2009-03-04|last=Martin|first=}}&lt;/ref&gt;&lt;ref name=pcworld3&gt;{{cite web|url=http://www.pcworld.com/businesscenter/article/160300/how_to_defend_against_driveby_downloads.html
+|title=How to Defend Against Drive-By Downloads - Business Center - PC World
+|publisher=www.pcworld.com|accessdate=2009-03-04|last=Horowitz|first=Michael}}&lt;/ref&gt;
+
+==History==
+Version 3.36 of Sandboxie added partial 32-bit Windows 7 compatibility, for build 7000. Version 3.38 adds additional Windows 7 support, for build 7100. Version 3.40 adds full support for Windows 7, as well as security improvements and minor fixes. Version 3.42 improves on Windows 7 support, adds new settings, and improves compatibility with 3rd party software. Version 3.46 addresses over 100 issues, including improvements to Win 7 64-bit support.
+Version 3.48 introduces a new activation process to Sandboxie, to combat the piracy of Sandboxie registration codes.
+A Product Key replaces the previous registration code, and Sandboxie must now be activated every 180 days online or offline. Otherwise it falls back to the limited unregistered mode.
+
+Version 3.50 adds additional compatibility settings, bug fixes, and improvements to the GUI.
+Version 3.54 makes some necessary changes for SP1 on Win 7, as well as a recent Windows Update for XP.
+
+==64-bit Windows==
+Version 3.44 reintroduced support for 64-bit Windows Vista SP1 and Windows 7, albeit not as robust as for 32-bit Windows.&lt;ref name=64Bit&gt;{{cite web |url= http://www.sandboxie.com/index.php?NotesAbout64BitEdition|title=Sandboxie - Notes About 64-Bit Edition|accessdate=2010-02-16}}&lt;/ref&gt;
+
+In the past, Sandboxie halted support for 64-bit editions of Windows, and the developer had no plans to support future 64-bit Windows versions.&lt;ref name=TechRepublic/&gt; Before then, Sandboxie was usable on 64-bit editions of Windows XP, provided that the user bypassed [[Patchguard]].  However, an updated and revised [[Patchguard]] included in hotfix &quot;KB932596&quot; makes this impossible. Although uninstalling the hotfix will allow a user to run an older 64-bit version of Sandboxie as before, doing so could expose the kernel to unauthorized modifications (like 32-bit versions do).
+
+As of version 3.56, the 64-bit version contains a new feature called &quot;Experimental Protection&quot; which improves the protection offered by Sandboxie.  The result is protection similar to that of the 32-bit version, but it uses unofficial kernel interfaces and Sandboxie acknowldeges that &quot;there is a small chance that a future update to the Windows kernel could render the feature inoperable and might even cause system crashes.&quot;&lt;ref name=ExperimentalProtection&gt;{{cite web |url= http://www.sandboxie.com/index.php?ExperimentalProtection|title=Sandboxie - Experimental Protection|accessdate=2011-07-07}}&lt;/ref&gt;
+
+==License==
+Sandboxie is released under a proprietary End-User License Agreement (EULA). Certain functions of the software such as parallel usage of multiple sandboxes are [[Crippleware|blocked]] in the free unregistered version of Sandboxie.&lt;ref name=pcworld3/&gt; After a 30 day period, users of the unregistered free version will encounter [[Nagware|popups advising the user to register (buy) the product]] when loading.&lt;ref name=TechRepublic/&gt;
+
+==See also==
+* [[Sandbox (computer security)]]
+* [[Deep Freeze (software)|Deep Freeze]]
+* [[iCore Virtual Accounts]]
+* [[Windows SteadyState]]
+{{clear}}
+
+==References==
+{{Reflist|2}}
+
+==External links==
+* {{official website|http://www.sandboxie.com/}}
+* {{cite web| url=http://esecurityplanet.com/features/article.php/3842331/Sandboxie-Blocking-Web-Based-Malware-From-Your-PC.htm| title=Sandboxie: Blocking Web-Based Malware From Your PC| publisher=esecurityplanet.com| date=2009-10-05| accessdate=2010-12-16}}
+* [http://cleanbytes.net/sandboxie-one-of-the-best-security-tool Example of using a Sandboxie add-on]
+* [http://vallejo.cc/?p=48#more-48 Sandboxie Internals]
+[[Category:Computer security software]]
+[[Category:Spyware removal]]
+[[Category:Windows software]]
+[[Category:Windows-only software]]
+[[Category:Shareware]]
+[[Category:Windows-only shareware]]
+
+[[de:Sandboxie]]
+[[es:Sandboxie]]
+[[it:Sandboxie]]
+[[nl:Sandboxie]]
+[[ru:Sandboxie]]</rev></revisions></page></pages></query></api>

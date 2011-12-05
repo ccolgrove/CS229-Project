@@ -1,0 +1,27 @@
+<?xml version="1.0"?><api><query><pages><page pageid="5366082" ns="0" title="EFI System partition"><revisions><rev xml:space="preserve">The '''EFI System partition''' is a [[partition (computing)|partition]] on a [[data storage device]] that is used by machines that adhere to the [[Extensible Firmware Interface]]. It contains the [[boot loader]] programs for all operating systems installed (in other partitions) on the device, device driver files (used by the [[firmware]] at boot time) for other devices, and system utility programs that are intended to be run before an [[operating system]] is booted.&lt;ref&gt;EFI specification, version 0.99&lt;/ref&gt;
+
+The EFI System Partition is formatted using a variant of the [[File Allocation Table|FAT]] format. The [[Globally Unique Identifier]] for the EFI System Partition in the [[GUID Partition Table]] scheme is &lt;tt&gt;C12A7328-F81F-11D2-BA4B-00A0C93EC93B&lt;/tt&gt;.  Its ID in the [[master boot record|MBR Partition Table]] scheme is 0xEF. Whether a disk contains an EFI System Partition is unrelated to the partition table scheme (GUID or MBR) that it uses.
+
+== Usage ==
+=== Windows ===
+Microsoft recommends that when partitioning a disk, the EFI System Partition be the first partition on the disk.&lt;ref&gt;{{cite web|url=http://www.microsoft.com/whdc/device/storage/GPT_FAQ.mspx|work=Windows and GPT FAQ|title=EFI System Partition}}&lt;/ref&gt; This is not a requirement of the EFI specification itself. On [[Windows XP]] 64-Bit Edition and later, access to the EFI System Partition is obtained by running the &lt;tt&gt;mountvol /s&lt;/tt&gt; command.
+
+=== AppleâIntel ===
+On [[AppleâIntel architecture]] [[Macintosh]] computers, the EFI partition is initially blank and not used for booting.&lt;ref&gt;[http://refit.sourceforge.net/myths/ rEFIt: Myths and Facts About Intel Macs â Myth: Mac OS X requires a hidden EFI System Partition]&lt;/ref&gt; However, the EFI partition is used as a staging area for firmware updates;&lt;ref&gt;{{cite web|url=http://support.apple.com/kb/HT2434|work=Apple Knowledgebase|title=Firmware updates for Intel-based Macs require a GUID partition scheme}}&lt;/ref&gt; specifically, it places a firmware flash utility (EFI binary) and data file (FD â &quot;Firmware Device&quot;&lt;ref&gt;[http://download.intel.com/technology/efi/docs/pdfs/Fall07_EFIS002.pdf Zero to OS in a Flash]: &quot;Firmware device (FD) is a persistent physical repository that contains firmware code and data.&quot;&lt;/ref&gt;) in the directory &lt;tt&gt;EFI/APPLE/FIRMWARE&lt;/tt&gt; which is then run when rebooting the system in &quot;flash firmware&quot; mode.&lt;ref&gt;[http://ubuntuforums.org/showthread.php?t=563052 ubunto forums: iMac EFI Firmware Update 1.2], September 29th, 2007&lt;/ref&gt;
+
+If deleted, the system will still boot, and the boot manager will still allow users to choose whether to start a [[Boot Camp (software)|Boot Camp]] partition or the default [[Mac OS X]], but firmware updates will fail.
+
+== See also==
+*[[BIOS Boot partition]]
+*[[System partition and boot partition]]
+*[[Windows To Go]]
+
+== References ==
+{{reflist|2}}
+
+== External links ==
+* {{cite web|url=http://www.uefi.org/specs/esp_registry|title=EFI System Partition Subdirectory Registry|work=UEFI}} &amp;mdash; a registry of the subdirectories that lie below the &lt;code&gt;/EFI&lt;/code&gt; directory on an EFI System Partition
+
+{{DEFAULTSORT:Efi System Partition}}
+[[Category:Computer file systems]]
+[[Category:Booting]]</rev></revisions></page></pages></query></api>

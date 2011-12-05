@@ -1,0 +1,415 @@
+<?xml version="1.0"?><api><query><pages><page pageid="200698" ns="0" title="Apache Tomcat"><revisions><rev xml:space="preserve">{{ Infobox Software
+| name                   = Apache Tomcat
+| logo                   = [[Image:Tomcat-logo.svg|200px|Apache Tomcat Logo]]
+| screenshot             = [[Image:Apache-tomcat-frontpage-epiphany-browser.jpg|250px]]
+| caption                = Apache Tomcat Default Page
+| collapsible            = yes
+| developer              = [[Apache Software Foundation]]
+| status                 = Active
+| latest release version = 7.0.22&lt;ref&gt;{{cite web | url=http://tomcat.apache.org/tomcat-7.0-doc/changelog.html | title=Apache Tomcat 7.0 - Changelog | accessdate=2011-09-02}}&lt;/ref&gt;
+| latest release date    = {{release date and age|2011|10|01}}
+| latest preview version = 
+| latest preview date    = 
+| operating system       = [[Cross-platform]]
+| programming language   = [[Java (programming language)|Java]]
+| genre                  = [[Java Servlet#Servlet containers|Servlet container]]&lt;br /&gt;[[Hypertext Transfer Protocol|HTTP]] [[web server]]
+| license                = [[Apache License]] 2.0
+| website                = http://tomcat.apache.org
+| file_ext               = .war
+}}
+'''Apache Tomcat''' (or '''Jakarta Tomcat''' or simply '''Tomcat''') is an [[open source]] [[web server]] and [[Java Servlet#Servlet containers|servlet container]] developed by the [[Apache Software Foundation]] (ASF). Tomcat implements the [[Java Servlet]] and the [[JavaServer Pages]] (JSP) specifications from [[Oracle Corporation]], and provides a &quot;pure [[Java (programming language)|Java]]&quot; [[Hypertext Transfer Protocol|HTTP]] [[web server]] environment for [[Java (programming language)|Java]] code to run.
+
+Tomcat should not be confused with the [[Apache HTTP Server|Apache web server]], which is a [[C (programming language)|C]] implementation of an HTTP web server; these two web servers are not bundled together, although they are frequently used together as part of a server [[solution stack|application stack]]. Apache Tomcat includes tools for configuration and management, but can also be configured by editing [[XML]] configuration files.
+
+==Components==
+Tomcat version 4.x was released with Catalina ( servlet container), Coyote (an [[HTTP connector]]) and Jasper (a [[JSP engine]]).
+
+===Catalina===
+Catalina is  a Tomcat's  [[Web container|servlet container]]. Catalina implements [[Sun Microsystems]]' specifications for [[Java servlet|servlet]] and [[JavaServer Pages]] (JSP). In Tomcat, a [[Realm]] element represents a &quot;database&quot; of usernames, passwords, and roles (similar to [[Unix group]]s) assigned to those users. Different implementations of Realm allow Catalina to be integrated into environments where such authentication information is already being created and maintained, and then utilize that information to implement Container Managed Security as described in the Servlet Specification...&lt;ref&gt;http://tomcat.apache.org/tomcat-5.5-doc/config/realm.html&lt;/ref&gt;
+
+===Coyote===
+Coyote is Tomcat's HTTP Connector component that supports the HTTP 1.1 protocol for the web server or application container. Coyote listens for incoming connections on a specific [[Transmission Control Protocol|TCP]] port on the server and forwards the request to the Tomcat Engine to process the request and send back a response to the requesting client.
+
+===Jasper===
+Jasper is Tomcat's JSP Engine. Tomcat 5.x uses Jasper 2, which is an implementation of the [[Sun Microsystems]]'s [[JavaServer Pages]] 2.0 specification. Jasper parses JSP files to compile them into Java code as servlets (that can be handled by Catalina). At runtime, Jasper detects changes to JSP files and recompiles them.
+
+====Jasper 2====
+From Jasper to Jasper 2, important features were added:
+* JSP Tag library pooling - Each tag markup in JSP file is handled by a tag handler class. Tag handler class objects can be pooled and reused in the whole JSP servlet.
+* Background JSP compilation - While recompiling modified JSP Java code, the older version is still available for server requests. The older JSP servlet is deleted once the new JSP servlet has finished being recompiled.
+* Recompile JSP when included page changes - Pages can be inserted and included into a JSP at runtime. The JSP will not only be recompiled with JSP file changes but also with included page changes.
+* JDT Java compiler - Jasper 2 can use the Eclipse JDT (Java Development Tools) Java compiler instead of [[Apache Ant|Ant]] and &lt;code&gt;[[javac]]&lt;/code&gt;.
+
+== Features ==
+Tomcat 7.x implements the Servlet 3.0 and JSP 2.2 specifications.&lt;ref&gt;{{cite web|url=http://tomcat.apache.org/whichversion.html|title=Apache Tomcat Versions|accessdate=2011-11-12}}&lt;/ref&gt; It requires Java version 1.6, although previous versions have run on Java 1.1 through 1.5. Versions 5 through 6 saw improvements in [[Garbage collection (computer science)|garbage collection]], JSP parsing, performance and scalability. Native wrappers, known as &quot;Tomcat Native&quot;, are available for [[Microsoft Windows]] and Unix for platform integration.
+
+== Deployment ==
+Experienced users can build and install Tomcat manually from source code after installing such dependencies as the [[Java Development Kit]] and the [[Apache Ant]] build tool. 
+
+Depending on the usage requirements, Tomcat may either be deployed as a standalone pure-Java web server or as a component in a more complex configuration in which it serves as a back-end which handles requests passed to it from a general purpose web server such as [[Apache HTTP Server|Apache]], using a connector such as [[mod_jk]] supplied by the Apache Tomcat team, or [[mod_proxy]] an optional module for the Apache HTTP Server supplied by the Apache HTTP Server team.
+
+== History ==
+
+Tomcat started off as a servlet [[reference implementation (computing)|reference implementation]] by [[James Duncan Davidson]], a software architect at Sun Microsystems. He later helped make the project [[open source]] and played a key role in its donation by Sun to the Apache Software Foundation. The [[Apache Ant]] software build automation tool was developed as a side-effect of the creation of Tomcat as an open source project.
+
+Davidson had initially hoped that the project would become open sourced and, since many open source projects had [[O'Reilly Media|O'Reilly]] books associated with them featuring an animal on the cover, he wanted to name the project after an animal. He came up with ''[[Tomcat]]'' since he reasoned the animal represented something that could fend for itself. Although the tomcat was already in use for another O'Reilly title, his wish to see an animal cover eventually came true when O'Reilly published their Tomcat book with a [[snow leopard]] on the cover.&lt;ref&gt;{{Citation |title=Tomcat: The Definitive Guide |url=http://www.oreilly.com/catalog/tomcat/ |author=Jason Brittain, Ian F. Darwin |publisher=O'Reilly Books |isbn=0-596-00318-8 |page=322 |postscript=&lt;!--none--&gt;}}&lt;/ref&gt;
+
+===Releases===
+{| class=&quot;wikitable sortable&quot;  style=&quot;margin:auto; margin:0 0 0 2em;&quot;
+|+ Apache Tomcat versions
+|-
+! Version
+! Release Date
+! Description
+|-
+| 3.0.x. (initial release)
+| 1999
+| Merger of donated Sun Java Web Server code and ASF and Implements Servlet 2.2 and JSP 1.1 specifications.
+|-
+| 3.3.2
+| 2004-03-09
+| Latest 3.x release.
+|-
+| 4.1.31
+| 2004-10-11
+|
+|-
+| 4.1.36
+| 2008-03-24
+|
+|-
+| 4.1.39
+| 2008-12-03
+|
+|-
+| 4.1.40
+| 2009-06-25
+| Latest 4.x release.
+|-
+| 5.0.0
+| 2002-10-09
+|
+|-
+| 5.0.23
+|
+|
+|-
+| 5.0.24
+| 2004-05-09
+|
+|-
+| 5.0.28
+| 2004-08-28
+| 
+|-
+| 5.0.30
+| 2004-08-30
+| Latest 5.0.x release
+|-
+| 5.5.0
+| 2004-08-31
+|
+|-
+| 5.5.1
+| 2004-09-07
+|
+|-
+| 5.5.4
+| 2004-11-10
+|
+|-
+| 5.5.7
+| 2005-01-30
+|
+|-
+| 5.5.9
+| 2005-04-11
+|
+|-
+| 5.5.12
+| 2005-10-09
+|
+|-
+| 5.5.15
+| 2006-01-21
+|
+|-
+| 5.5.16
+| 2006-03-16
+|
+|-
+| 5.5.17
+| 2006-04-28
+|
+|-
+| 5.5.20
+| 2006-09-01
+|
+|-
+| 5.5.23
+| 2007-03
+|
+|-
+| 5.5.25
+| 2007-09
+|
+|-
+| 5.5.26
+| 2008-02
+|
+|-
+| 5.5.27
+| 2008-09-08
+|
+|-
+| 5.5.28
+| 2009-09-04
+|
+|-
+| 5.5.30
+| 2010-07-09
+| 
+|-
+| 5.5.31
+| 2010-09-16
+| 
+|-
+| 5.5.32
+| 2011-02-01
+| 
+|-
+| 5.5.33
+| 2011-02-10
+| 
+|-
+| 5.5.34
+| 2011-09-22
+| Latest 5.5.x release
+|-
+| 6.0.0
+| 2006-12-01
+|
+|-
+| 6.0.10
+| 2007-03-01
+|
+|-
+| 6.0.13
+| 2007-05-15
+|
+|-
+| 6.0.14
+| 2007-08-13
+|
+|-
+| 6.0.16
+| 2008-02-07
+|
+|-
+| 6.0.18
+| 2008-07-31
+|
+|-
+| 6.0.20
+| 2009-06-03
+|
+|-
+| 6.0.24
+| 2010-01-21
+|
+|-
+| 6.0.26
+| 2010-03-11
+|
+|-
+| 6.0.28
+| 2010-07-09
+| 
+|-
+| 6.0.29
+| 2010-07-22
+| 
+|-
+| 6.0.30
+| 2011-01-13
+|  
+|-
+| 6.0.32
+| 2011-02-03
+| 
+|-
+| 6.0.33
+| 2011-08-18
+| Latest 6.x release.
+|-
+| 7.0.0 beta
+| 2010-06-29
+| First Apache Tomcat release to support the [[Java Servlet|Servlet 3.0]], [[JavaServer Pages|JSP 2.2]], and [[Expression Language|EL 2.2]] specifications.
+|-
+| 7.0.4 beta
+| 2010-10-21
+| 
+|-
+| 7.0.5 beta
+| 2010-12-01
+| 
+|-
+| 7.0.6
+| 2011-01-14
+| 
+|-
+| 7.0.8
+| 2011-02-05
+| 
+|-
+| 7.0.10
+| 2011-03-07
+| 
+|-
+| 7.0.11
+| 2011-03-11
+| 
+|-
+| 7.0.12
+| 2011-04-06
+| 
+|-
+| 7.0.14
+| 2011-05-12
+|
+|-
+| 7.0.16
+| 2011-06-17
+| 
+|-
+| 7.0.19
+| 2011-07-19
+| 
+|-
+| 7.0.20
+| 2011-08-11
+| Fourth stable version.
+|-
+| 7.0.21
+| 2011-09-01
+| 
+|-
+| 7.0.22
+| 2011-10-01
+| Current stable version.
+|}
+
+== Communities ==
+
+Apache software is built in a community process, with both user and developer [http://tomcat.apache.org/lists.html mailing lists]. The developer list is where discussion on building and testing the next release takes place, while the user list is where users can discuss their problems with the developers and other users. 
+
+A number of free Apache Tomcat resources and communities have developed in 2010 including [http://www.tomcatexpert.com/ Tomcatexpert.com], a [[SpringSource]] sponsored community for developers and operators who are running Apache Tomcat in large-scale production environments, and MuleSoft's [http://www.mulesoft.com/understanding-apache-tomcat/ Apache Tomcat Resource Center], where you can find instructional guides on installing, updating, configuring, monitoring, troubleshooting and securing various versions of Tomcat.
+
+==Apache TomEE==
+Apache TomEE (pronounced &quot;Tommy&quot;) is the [[Java Enterprise Edition]] of Apache Tomcat (Tomcat + Java EE = TomEE) that combines several Java enterprise projects including [[Apache OpenEJB]], Apache OpenWebBeans, [[Apache OpenJPA]], [[Apache MyFaces]] and others.&lt;ref&gt;{{cite web|url=http://openejb.apache.org/apache-tomee.html|title=Apache TomEE|publisher=[[Apache OpenEJB]]}}&lt;/ref&gt; In October 2011, the project obtained certification by [[Oracle Corporation]] as a compatible implementation of the Java EE 6 Web Profile.&lt;ref&gt;{{cite web|url=http://www.marketwatch.com/story/the-apache-software-foundation-announces-apache-tomee-certified-as-java-ee-6-web-profile-compatible-2011-10-04|title=The Apache Software Foundation Announces Apache TomEE Certified as Java EE 6 Web Profile Compatible|publisher=[[MarketWatch]]|date=4 Oct. 2011}}&lt;/ref&gt;&lt;ref&gt;{{cite web|url=http://www.infoworld.com/d/application-development/apache-tomee-web-stack-gains-approval-175341|title=Apache TomEE Web stack gains approval|publisher=[[InfoWorld]]|datedate=7 Oct. 2011}}&lt;/ref&gt;
+
+== See also ==
+* [[Apache Geronimo]], an application server that can use Tomcat as its web container
+* [[Resin Server]] Application Server from [[Caucho Technology]]
+* [[Comparison of web server software|Comparison of web servers]]
+* [[JBoss]] Application Server
+* [[Jetty (web server)]]
+* [[JOnAS]], application server that can use Tomcat as its web container
+* [[OpenEJB]], can be added to Tomcat to turn it into a JavaEE server
+* [[SpringSource tc Server]], a commercially-supported enterprise Tomcat server from [[SpringSource]]
+
+== References ==
+{{reflist}}
+
+==Bibliography==
+{{refbegin}}
+*{{citation
+| first1     = Jason
+| last1      = Brittain
+| first2     = Ian 
+| last2      = Darwin
+| date       = October 23, 2007
+| title      = Tomcat: The Definitive Guide
+| edition    = 2nd
+| publisher  = [[O'Reilly Media]]
+| page      = 494 
+| isbn       = 978-0596101060
+| url        = http://oreilly.com/catalog/9780596101060/
+| accessdate        = 2009-10-08
+| postscript     = &lt;!--none--&gt;
+}}
+*{{citation
+| first1     = Vivek 
+| last1      = Chopra 
+| first2     = Sing
+| last2      = Li
+| first3     = Jeff
+| last3      = Genender
+| date       = August 13, 2007
+| title      = Professional Apache Tomcat 6
+| edition    = 1st
+| publisher  = [[Wrox Press|Wrox]]
+| page      = 629 
+| isbn       = 978-0471753612
+| url        = http://www.wrox.com/WileyCDA/WroxTitle/productCd-0471753610.html
+| accessdate        = 2009-10-08
+| postscript     = &lt;!--none--&gt;
+}}
+*{{citation
+| first1     = Matthew
+| last1      = Moodie
+| first2     = Kunal
+| last2      = Mittal (Ed.)
+| date       = March 22, 2007
+| title      = Pro Apache Tomcat 6
+| edition    = 1st
+| publisher  = [[Apress]]
+| page      = 325
+| isbn       = 978-1590597859
+| url        = http://www.apress.com/book/view/9781590597859
+| accessdate        = 2009-10-08
+| postscript     = &lt;!--none--&gt;
+}}
+{{refend}}
+
+== External links ==
+{{Commonscat|Apache Tomcat}}
+* [http://tomcat.apache.org/ Official site]
+* [http://wiki.apache.org/tomcat/ Project Wiki]
+* [http://www.turnkeylinux.org/tomcat Pre-integrated Tomcat appliance]
+* [http://www.mulesoft.com/understanding-apache-tomcat Apache Tomcat Resource Center]
+* [http://www.tomcatexpert.com/ Enterprise Tomcat Community site]
+* [http://www.coreservlets.com/Apache-Tomcat-Tutorial/ Tutorial - Configuring &amp; Using Tomcat 6 and Tomcat 7]
+
+{{apache}}
+
+[[Category:Apache Software Foundation|Tomcat]]
+[[Category:Java enterprise platform]]
+[[Category:Free software programmed in Java]]
+[[Category:Free web server software]]
+[[Category:Free cross-platform software]]
+
+[[ca:Apache Tomcat]]
+[[cs:Apache Tomcat]]
+[[de:Apache Tomcat]]
+[[es:Tomcat]]
+[[eo:Apache Tomcat]]
+[[fr:Apache Tomcat]]
+[[ko:ìíì¹ í°ìº£]]
+[[it:Apache Tomcat]]
+[[lt:Tomcat]]
+[[hu:Apache Tomcat]]
+[[ml:à´à´ªàµà´ªà´¾à´àµà´àµ à´àµà´à´àµà´¯à´¾à´±àµà´±àµ]]
+[[nl:Apache Tomcat]]
+[[ja:Apache Tomcat]]
+[[no:Apache Tomcat]]
+[[pl:Apache Tomcat]]
+[[pt:Apache Tomcat]]
+[[ru:Apache Tomcat]]
+[[sv:Apache Tomcat]]
+[[ta:à®à®ªà¯à®ªà®¾à®à¯à®à®¿ à®à®¾à®®à¯à®à¯à®à¯]]
+[[te:à°à°ªà°¾à°à± à°à°¾à°à°à±à°¯à°¾à°à±]]
+[[th:à¸­à¸°à¹à¸à¸à¸µ à¸à¸­à¸¡à¹à¸à¸]]
+[[uk:Apache Tomcat]]
+[[vi:Apache Tomcat]]
+[[zh:Apache Tomcat]]</rev></revisions></page></pages></query></api>

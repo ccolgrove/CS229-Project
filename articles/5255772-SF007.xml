@@ -1,0 +1,619 @@
+<?xml version="1.0"?><api><query><redirects><r from="Ubuntu Women" to="Ubuntu (operating system)" tofragment="Response" /></redirects><pages><page pageid="990298" ns="0" title="Ubuntu (operating system)"><revisions><rev xml:space="preserve">{{Infobox OS
+| name                   = Ubuntu
+| logo                   = [[File:Ubuntu logo.svg|Ubuntu logo|200px]]
+| screenshot             = [[File:Ubuntu 11.10 Final.png|300px]]
+| caption                = Ubuntu 11.10 (Oneiric Ocelot)
+| developer              = [[Canonical Ltd.]] / [[Ubuntu Foundation]]
+| family                 = [[Unix-like]]&lt;!--- Do not add Linux or Debian here. They are not families. --&gt;
+| working_state          = Current
+| source_model           = [[Free and open source software]] (with exceptions)&lt;ref name=&quot;fsf-kernelblobs&quot;&gt;{{cite web |url=http://fsfla.org/svnwiki/selibre/linux-libre/ |title=Free Software Foundation Latin America |work=FSF Latin America |publisher=Free Software Foundation |accessdate=4 February 2011}}&lt;/ref&gt;&lt;ref name=&quot;ubuntuwiki-kernelblobs&quot;&gt;{{cite web |url=https://wiki.ubuntu.com/Kernel/Firmware |title=Kernel/Firmware |publisher=Ubuntu Project wiki |accessdate=1 March 2011}}&lt;/ref&gt;
+| released               = {{Start date and age|2004|10|20|df=yes}}
+| latest_release_version = 11.10 (Oneiric Ocelot)&lt;!-- If you update this, remember to also update [[Comparison of Linux distributions]]. --&gt;
+| latest_release_date    = {{Start date and age|2011|10|13|df=yes}}&lt;ref&gt;{{cite web |url=http://www.ubuntu-news.net/2011/10/13/ubuntu-11-10-oneiric-ocelot-released/
+|title=Ubuntu 11.10 is released |date=13 October 2011 |work=Ubuntu-News |accessdate=13 October 2011}}&lt;/ref&gt;
+| latest_preview_version = 12.04 (Precise Pangolin) Alpha 1
+| latest_preview_date    = {{Start date and age|2011|12|01|df=yes}}&lt;ref&gt;https://lists.ubuntu.com/archives/ubuntu-devel-announce/2011-December/000915.html&lt;/ref&gt;
+| language               = Multilingual (more than 55)
+| updatemodel            = [[Advanced Packaging Tool|APT]] (front-ends available)
+| package_manager        = [[dpkg]] (front-ends like [[Synaptic (software)|Synaptic]] available)
+| supported_platforms    = [[X86|i386]], [[X86-64|AMD64]], [[ARM architecture|ARM]]&lt;ref&gt;{{cite web|url=http://www.theinquirer.net/inquirer/news/2115929/ubuntu-1110-support-arm-chips-fight-red-hat |title=Ubuntu 11.10 will support arm processors to take on red hat |publisher=The Inquirer |date= |accessdate=2011-10-20}}&lt;/ref&gt;&lt;ref&gt;{{cite web|url=http://www.zdnet.com/blog/open-source/ubuntu-linux-bets-on-the-arm-server/9445 |title=Ubuntu Linux bets on the ARM server |publisher=ZDNet |date= |accessdate=2011-10-20}}&lt;/ref&gt;
+| kernel_type            = [[Linux kernel|Linux]] ([[Monolithic kernel|Monolithic]])
+| userland               = [[GNU Core Utilities|GNU]]
+| ui                     = 4.10 to 10.10: [[GNOME Panel]] 2.x &lt;br&gt;11.04: [[Unity (user interface)|Unity]] shell on top of [[GNOME]] 2.x&lt;br&gt;11.10: Unity shell on top of GNOME 3.x
+| license                = Mainly the [[GNU General Public License|GNU GPL]] and various other free software licenses / plus proprietary [[binary blob]]s.&lt;ref name=&quot;fsf-kernelblobs&quot; /&gt;&lt;ref name=&quot;ubuntuwiki-kernelblobs&quot; /&gt;
+| website                = {{URL|www.ubuntu.com}}
+}}
+'''Ubuntu''' ({{IPAc-en|icon|Ê|Ë|b|Ê|n|t|uË}}&lt;!--the ubuntu.com source has it as &quot;oÇ'boÇntoÅ&quot;--&gt; {{Respell|oo|BOON|too}})&lt;ref&gt;{{cite video |people=Nelson Mandela |date=11 January 2006 |title=The Ubuntu Experience (Nelson Mandela Interview) |url=http://www.youtube.com/watch?v=ODQ4WiDsEBQ |medium=Motion picture}}&lt;/ref&gt;&lt;ref&gt;{{cite web|url=http://www.ubuntu.com/project/about-ubuntu |title=About Ubuntu |publisher=Ubuntu.com |date= |accessdate=2011-05-27}}&lt;/ref&gt; is a computer [[operating system]] based on the [[Debian]] [[Linux distribution]] and distributed as [[free and open source software]]. It is named after the [[Southern Africa]]n philosophy of ''[[Ubuntu (philosophy)|Ubuntu]]'' (&quot;humanity towards others&quot;).&lt;ref&gt;{{cite web |url=https://help.ubuntu.com/10.10/about-ubuntu/C/about-ubuntu-name.html |title=About the Name |work=Official Ubuntu Documentation |publisher=Canonical |accessdate=8 November 2010}}&lt;/ref&gt; Ubuntu is designed primarily for use on [[personal computer]]s, although a [[Server (computing)|server]] edition also exists.
+
+Ubuntu is sponsored by the UK-based company [[Canonical Ltd.]], owned by [[South Africa]]n entrepreneur [[Mark Shuttleworth]]. Canonical generates revenue by selling [[technical support]] and services related to Ubuntu, while the operating system itself is entirely free of charge.  The Ubuntu project is entirely committed to the principles of free software development; people are encouraged to use free software, improve it, and pass it on.&lt;ref&gt;{{cite web |url=http://www.ubuntu.com/project|title=The project | Ubuntu |publisher=ubuntu.com |accessdate=13 October 2011}}&lt;/ref&gt;
+
+==History and development process==
+Ubuntu is a [[fork (software development)|fork]] of the [[Debian]] project's [[codebase]]. The original aim of the Ubuntu team was to create an easy-to-use Linux desktop with new releases scheduled on a predictable six-month basis, resulting in a more frequently updated system.&lt;ref name=&quot;history&quot;&gt;{{cite web |url=http://www.ubuntu.com/project/about-ubuntu |title=About Ubuntu. The Ubuntu Story. |publisher=Canonical |accessdate=24 November 2010}}&lt;/ref&gt;&lt;ref&gt;{{cite web |url=https://wiki.ubuntu.com/TimeBasedReleases |title=Time Based Releases |work=Ubuntu Wiki |accessdate=2 June 2008}}&lt;/ref&gt;
+
+Ubuntu's first release was on 20 October 2004. Since then, Canonical has released new versions of Ubuntu every six months&lt;ref name=&quot;releases&quot;&gt;{{cite web |url=https://wiki.ubuntu.com/Releases |title=Releases |work=Ubuntu Wiki |accessdate=24 November 2010}}&lt;/ref&gt; with commitment to support each release for eighteen months by providing security fixes, [[Patch (computing)|patches]] to critical bugs and minor updates to programs. It was decided that every fourth release, issued on a two-year basis, would receive long-term support (LTS).&lt;ref name=&quot;history&quot; /&gt; LTS releases were traditionally supported for three years on the desktop and five years on the server.&lt;ref name=&quot;releases&quot; /&gt; However with the upcoming release of Ubuntu LTS 12.04, desktop support is to be extended to a period of five years (April 2017) for LTS releases. Support was extended to better accommodate business and corporate IT users of Ubuntu who operate on longer release cycles and are more conscious of the costs associated with frequent software upgrades.&lt;ref name=&quot;5yearDesktop&quot;&gt;{{cite web |url=http://www.canonical.com/content/ubuntu-1204-feature-extended-support-period-desktop-users |title=5yearDesktop |work=Canonical |accessdate=21 October 2011}}&lt;/ref&gt;
+
+The latest LTS release is Ubuntu 10.04 ([[List of Ubuntu releases#Ubuntu 10.04 LTS .28Lucid Lynx.29|Lucid Lynx]]), released on 29 April 2010, while the latest normal release is Ubuntu 11.10 ([[List of Ubuntu releases|Oneiric Ocelot]]), released on 13 October 2011.
+
+Ubuntu packages are based on packages from Debian's [[Debian#Distributions|unstable branch]]: both distributions use Debian's [[deb (file format)|deb]] [[Software package (installation)|package]] format and package management tools ([[Advanced Packaging Tool|APT]] and [[Synaptic Package Manager|Synaptic]]). Debian and Ubuntu packages are not necessarily [[binary compatible]] with each other, however, and sometimes .deb packages may need to be rebuilt from [[Source code|source]] to be used in Ubuntu.&lt;ref&gt;{{cite web |url=https://wiki.ubuntu.com/MarkShuttleworth#What%20about%20binary%20compatibility%20between%20distributions? |title=Mark Shuttleworth: What about binary compatibility between distributions? |work=Ubuntu Team Wiki |accessdate=4 February 2011}}&lt;/ref&gt; Many Ubuntu developers are also maintainers of key packages within Debian. Ubuntu cooperates with Debian by pushing changes back to Debian,&lt;ref name=autogenerated1&gt;{{cite web |url=https://bugs.launchpad.net/ubuntu-website/+bug/154274 |title=Website does not reference Debian visibly |work=Ubuntu in Launchpad |accessdate=31 August 2010}}&lt;/ref&gt; although there has been criticism that this does not happen often enough. In the past, [[Ian Murdock]], the founder of Debian, has expressed concern about Ubuntu packages potentially diverging too far from Debian to remain compatible.&lt;ref name=&quot;forking&quot;&gt;{{cite web |url=http://ianmurdock.com/debian/ubuntu-vs-debian-reprise/ |title=Ubuntu vs. Debian, reprise |date=20 April 2005 |accessdate=21 October 2007}}&lt;/ref&gt; Before release, packages are imported from [[Unstable (Debian)|Debian Unstable]] continuously and merged with Ubuntu-specific modifications. A month before release, imports are [[Feature freeze|frozen]], and packagers then work to ensure that the frozen features interoperate well together.
+
+Ubuntu is currently funded by Canonical Ltd. On 8 July 2005, [[Mark Shuttleworth]] and Canonical Ltd. announced the creation of the [[Ubuntu Foundation]] and provided an initial funding of US$10&amp;nbsp;million. The purpose of the foundation is to ensure the support and [[Software development|development]] for all future versions of Ubuntu. Mark Shuttleworth describes the foundation as an &quot;emergency fund&quot; (in case Canonical's involvement ends).&lt;ref&gt;{{cite web |url=https://lists.ubuntu.com/archives/ubuntu-announce/2005-July/000025.html |title=Announcing Launch of ($10&amp;nbsp;m) Ubuntu Foundation |author=Benjamin Mako Hill |date=8 July 2005 |accessdate=19 August 2008}}&lt;/ref&gt;
+
+On 12 March 2009, Ubuntu announced developer support for 3rd party [[Cloud computing|cloud]] management platforms, such as for those used at [[Amazon EC2]].&lt;ref&gt;{{cite web |url=http://www.ubuntu.com/news/rightscale-cloud-management |title=RightScale Adds Full Support for Ubuntu Server to its Cloud Management Platform |date=12 March 2009 |work=Ubuntu |publisher=Canonical |accessdate=4 February 2011}}&lt;/ref&gt;
+
+==Features==
+Ubuntu is composed of many software packages, the vast majority of which are distributed under a [[free software license]]. The only exceptions are some [[Proprietary software|proprietary]] [[hardware drivers]].&lt;ref name=&quot;Ubuntu Licensing&quot;&gt;{{cite web |url=http://www.ubuntu.com/project/about-ubuntu/licensing |title=About Ubuntu. Licensing |work=Ubuntu |publisher=Canonical |accessdate=26 July 2011}}&lt;/ref&gt; The main license used is the [[GNU General Public License]] (GNU GPL) which, along with the [[GNU Lesser General Public License]] (GNU LGPL), explicitly declares that users are free to run, copy, distribute, study, change, develop and improve the software. On the other hand, there is also proprietary software available that can run on Ubuntu. Ubuntu focuses on [[usability]], security and stability.&lt;ref&gt;{{cite web |url=http://www.canonical.com/news/UbuntuFoundation |title=New Ubuntu Foundation Announced |publisher=Canonical |accessdate=3 September 2010}}&lt;/ref&gt; The Ubiquity installer allows Ubuntu to be installed to the hard disk from within the [[Live CD]] environment, without the need for restarting the computer prior to installation. Ubuntu also emphasizes [[accessibility]] and [[internationalization]] to reach as many people as possible. Beginning with 5.04, [[UTF-8]] became the default [[character encoding]],&lt;ref&gt;{{cite web |url=https://wiki.ubuntu.com/HoaryGoals |title=HoaryGoals |work=Ubuntu Wiki |publisher=Canonical |accessdate=3 September 2010}}&lt;/ref&gt; which allows for support of a variety of non-Roman scripts. As a security feature, the [[sudo]] tool is used to assign temporary privileges for performing administrative tasks, allowing the root account to remain locked, and preventing inexperienced users from inadvertently making catastrophic system changes or opening security holes.&lt;ref&gt;{{cite web |url=https://wiki.ubuntu.com/RootSudo?highlight=%28sudo%29 |title=RootSudo |accessdate=19 August 2008}}&lt;/ref&gt; [[PolicyKit]] is also being widely implemented into the desktop to further [[Security focused operating system|harden]] the system through the [[principle of least privilege]].
+
+Ubuntu Desktop includes a graphical [[desktop environment]]. In versions prior to 11.04 the default GUI was [[GNOME Panel]] but it was dropped in favor of [[Unity (desktop environment)|Unity]], a graphical interface Canonical first developed for the [[Ubuntu Netbook Edition]].&lt;ref&gt;{{cite news |title=Is Unity the Right Interface for Desktop Ubuntu? |author=Katherine Noyes |url=http://www.networkworld.com/news/2010/102610-is-unity-the-right-interface.html |work=PC World |date=26 October 2010  |accessdate=28 October 2010}}&lt;/ref&gt;
+
+Ubuntu comes installed with a wide range of software that includes [[LibreOffice]] ([[OpenOffice.org|OpenOffice]] in versions prior to 11.04), [[Mozilla Firefox|Firefox]], [[Mozilla Thunderbird]] ([[Evolution (software)|Evolution]] in versions prior to 11.10), [[Empathy (software)|Empathy]] ([[Pidgin (software)|Pidgin]] in versions before 9.10), [[Transmission (BitTorrent client)|Transmission]], [[GIMP]] (in versions prior to 10.04), and several lightweight games (such as [[Sudoku]] and [[chess]]). Additional software that is not installed by default can be downloaded and installed using the [[Ubuntu Software Center]]&lt;ref&gt;{{cite web |url=http://www.ubuntu.com/desktop/features |title=Ubuntu Desktop Features |accessdate=3 September 2010}}&lt;/ref&gt; or the [[package management system|package manager]] [[Synaptic (software)|Synaptic]], which come pre-installed in versions prior to 11.10. Ubuntu allows [[TCP and UDP port|networking ports]] to be closed using its [[Firewall (computing)|firewall]], with customized port selection available. End-users can install [[Gufw]] (GUI for Uncomplicated Firewall) and keep it enabled.&lt;ref&gt;{{cite web |url=https://help.ubuntu.com/community/Gufw |title=Gufw |work=Ubuntu Documentation |accessdate=4 February 2011}}&lt;/ref&gt; [[GNOME]] (the former default desktop) offers support for more than 46 languages.&lt;ref&gt;{{cite web |url=http://library.gnome.org/misc/release-notes/2.22/#rni18 |title=GNOME 2.22 Release Notes - Internationalization |publisher=[[GNOME Foundation]] |accessdate=2 June 2008}}&lt;/ref&gt; Ubuntu can also run many programs designed for [[Microsoft Windows]] (such as [[Microsoft Office]]), through [[Wine (software)|Wine]] or using a Virtual Machine (such as [[VMware Workstation]] or [[VirtualBox]]).
+
+Ubuntu, unlike Debian, compiles their packages using [[GNU Compiler Collection|gcc]] features such as [[Position-independent code|PIE]] and [[Buffer overflow protection]] to [[Hardening (computing)|harden]] their software.&lt;ref&gt;{{cite web |url=https://wiki.ubuntu.com/CompilerFlags |title=Ubuntu Wiki CompilerFlags |work=Ubuntu |publisher=Canonical |accessdate=31 January 2011}}&lt;/ref&gt; These extra features greatly increase security at the performance expense of 1% in [[X86|32 bit]] and 0.01% in [[X86-64|64 bit]].&lt;ref&gt;{{cite web |url=http://d-sbd.alioth.debian.org/www/ |title=Debian Secure by Default |publisher=Debian: Secure by Default Project |accessdate=31 January 2011}}&lt;/ref&gt;
+
+===System requirements===
+The desktop version of Ubuntu currently supports the x86 [[X86|32 bit]] and [[X86-64|64 bit]] architectures. Unofficial support is available for the [[PowerPC]],&lt;ref&gt;{{cite web |url=https://lists.ubuntu.com/archives/ubuntu-announce/2007-February/000098.html |title=Technical Board Decision - February 2007 |month=February |year=2007 |accessdate=13 June 2008}}&lt;/ref&gt; [[Itanium|IA-64 (Itanium)]] and [[PlayStation 3]] architectures (note however that [[Sony]] officially removed support for [[OtherOS]] on the PS3 with firmware 3.21, released on 1 April 2010), as well as ARM mobile processors (see [[HTC HD2]]).&lt;ref&gt;{{cite web |url=http://news.cnet.com/8301-13506_3-10471356-17.html |title=Say good-bye to Linux on the PS3 &amp;#124; The Digital Home - CNET News |author=Don Reisinger |date=29 March 2010 |publisher=news.cnet.com |accessdate=24 July 2010}}&lt;/ref&gt; A supported [[Graphics processing unit|GPU]] is required to enable [[Compositing window manager|desktop visual effects]], including the Unity shell. In case such a GPU is not available the GUI falls back to a 2D version of Unity.
+
+{| class=&quot;wikitable&quot;  style=&quot;margin:auto; text-align:center;&quot;
+|-
+! Current Minimum Requirements&lt;ref name=&quot;SystemRequirements&quot;&gt;{{cite web |url=https://help.ubuntu.com/community/Installation/SystemRequirements |title=Ubuntu System Requirements |work=Ubuntu Community Documentation |accessdate=21 June 2011}}&lt;/ref&gt;&lt;ref name=&quot;SysReqServer&quot;&gt;{{cite web |url=https://help.ubuntu.com/11.04/serverguide/C/preparing-to-install.html |title=Ubuntu Server Guide: Preparing to Install |work=Ubuntu Official Documentation |publisher=Ubuntu Documentation Team |accessdate=21 June 2011}}&lt;/ref&gt;&lt;ref name=&quot;SysReqDesktop&quot;&gt;{{cite web |url=https://help.ubuntu.com/11.04/installation-guide/i386/minimum-hardware-reqts.html |title=Ubuntu Installation Guide: Meeting Minimum Hardware Requirements |work=Ubuntu Official Documentation |publisher=Ubuntu Documentation Team |accessdate=19 April 2010}}&lt;/ref&gt;&lt;ref&gt;{{cite web |url=https://wiki.ubuntu.com/NattyNarwhal/ReleaseNotes |title=Ubuntu 11.04 (Natty Narwhal) Release Notes |publisher=Ubuntu Wiki |accessdate=21 June 2011}}&lt;/ref&gt;
+! [[Server (computing)|Server]]
+! [[Desktop environment|Desktop]]
+|-
+! [[Central processing unit|Processor]] ([[IA-32|x86]]) with the [[i686]] instruction set&lt;ref&gt;{{cite web |title=Ubuntu 10.10 (Maverick Meerkat) ReleaseNotes |url=https://wiki.ubuntu.com/MaverickMeerkat/ReleaseNotes |publisher=Ubuntu Wiki |accessdate=20 April 2011}}&lt;/ref&gt;
+| 300&amp;nbsp;MHz
+| 700&amp;nbsp;MHz
+|-
+! [[RAM|Memory (RAM)]]
+| 128&amp;nbsp;[[Mebibyte|MiB]]
+| 384&amp;nbsp;MiB
+|-
+! [[Hard disk drive|Hard Drive]] (free space)
+| 1&amp;nbsp;[[gigabyte|GB]]
+| 5&amp;nbsp;GB
+|-
+! [[Computer monitor|Monitor]] [[Display resolution|Resolution]]
+| 640Ã480
+| 1024Ã768
+|}
+
+Tests reveal that among the four major [[desktop environments]], a default installation of Ubuntu has the lowest possible memory utilization when used with [[LXDE]] 0.5, with [[Xfce]] 4.6 ranking second and [[GNOME]] 2.29 third, while the desktop with the highest RAM usage is [[KDE Software Compilation|KDE]] 4.4.&lt;ref&gt;{{cite web|last=Larabel|first=Michael|title=[Phoronix] Power &amp; Memory Usage Of GNOME, KDE, LXDE &amp; Xfce|url=http://www.phoronix.com/scan.php?page=article&amp;item=linux_desktop_vitals&amp;num=1|publisher=Phoronix|accessdate=30 July 2011}}&lt;/ref&gt;
+
+===Installation===
+[[File:Ubuntu Desktop 11.04 Live CD - Welcome screen.png|thumb|Ubuntu Desktop 11.04 Live CD]]
+
+[[File:Ubuntu 11.04 Installation SS.png|thumb|Ubuntu Desktop 11.04 started from the Live CD with the Install window open]]
+
+Installation of Ubuntu is generally performed with the [[Live CD]] or can be installed via a [[Live USB]] drive. The Ubuntu OS can be run directly from the CD (sometimes with a significant performance loss), allowing a user to &quot;test-drive&quot; the OS for hardware compatibility and driver support. The CD also contains the [[Ubiquity (software)|Ubiquity installer]],&lt;ref name=&quot;livecdinstall&quot;&gt;{{cite web |url=http://www.easy-ubuntu-linux.com/ubuntu-installation-606-2.html |title=Installing Ubuntu from the Live CD |publisher=Integrity Enterprises |accessdate=19 August 2008}}&lt;/ref&gt; which can then guide the user through the permanent installation process. [[CD image]]s of all current and past versions are available for download at the Ubuntu web site.&lt;ref&gt;{{cite web |url=http://www.ubuntu.com/desktop/get-ubuntu/download |title=Get Ubuntu Desktop Edition Download |accessdate=4 February 2011}}&lt;/ref&gt; Installing from the CD requires a minimum of 256&amp;nbsp;[[MiB]] of [[Random Access Memory|RAM]].
+
+Users can download a disk image (.iso) of the CD, which can then either be written to a physical medium (CD or DVD), or optionally run directly from a hard drive (via [[UNetbootin]] or [[GRUB]]). Ubuntu is also available on [[ARM architecture|ARM]], [[PowerPC]], [[SPARC]], and [[IA-64]] platforms, although none are officially supported.&lt;ref&gt;{{cite web |url=http://cdimage.ubuntu.com/ports/releases/lucid/release/ |title=Ubuntu 10.04 LTS (Lucid Lynx) |publisher=cdimage.ubuntu.com |accessdate=24 July 2010}}&lt;/ref&gt;
+
+Canonical offered Ubuntu&lt;ref name=&quot;shipit-ubuntu&quot;&gt;{{cite web |url=https://shipit.ubuntu.com/ |title=Requesting an Ubuntu CD |accessdate=17 April 2009 |quote=A CD of the latest version (9.10 (Karmic Koala)) with no extra cost, but delivery may take up to ten weeks.}}&lt;/ref&gt; and Kubuntu&lt;ref name=&quot;shipit-kubuntu&quot;&gt;{{cite web |url=https://shipit.kubuntu.org/ |title=Requesting CDs from ShipIt |accessdate=17 April 2009 |quote=Pre-order CDs of Kubuntu 9.10 (Jaunty Jackalope).}}&lt;/ref&gt; Live installation CDs of the latest distribution of the operating system at no cost (though discontinued as of April 2011), including paid postage for destinations in most countries around the world (via a service called ShipIt). Various third-party programs such as [[remastersys]] and [[Reconstructor]] are available to create customised copies of the Ubuntu Live CDs.
+
+A [[Microsoft Windows]] migration tool, called Migration Assistant (introduced in April 2007),&lt;ref&gt;{{cite web |url=http://www.easy-ubuntu-linux.com/ubuntu-feisty-installation.html |title=Ubuntu 7.04 Adds a Migration Tool |publisher=Integrity Enterprises |accessdate=19 August 2008}}&lt;/ref&gt; can be used to import bookmarks, [[Computer wallpaper|desktop background]] (wallpaper), and various settings from an existing MS Windows installation into a new Ubuntu installation.&lt;ref&gt;{{cite web |url=https://launchpad.net/migration-assistant |title=Migration Assistant in Launchpad |publisher=Launchpad |accessdate=2 June 2008}}&lt;/ref&gt;
+
+Ubuntu and Kubuntu can be booted and run from a [[USB Flash drive]] (as long as the [[BIOS]] supports booting from USB), with the option of saving settings to the flashdrive. This allows a portable installation that can be run on any PC which is capable of booting from a USB drive.&lt;ref name=&quot;pendriveinstall&quot;&gt;{{cite web |url=http://www.pendrivelinux.com/ubuntu-810-persistent-flash-drive-install-from-live-cd/ |title=Ubuntu 8.10 Persistent Flash Drive Installation |publisher=Pendrivelinux |accessdate=5 September 2009}}&lt;/ref&gt; In newer versions of Ubuntu, the [[Ubuntu Live USB creator|USB creator]] program is available to install Ubuntu on a [[Live USB|USB drive]] (with or without a LiveCD disc).
+
+[[Wubi (installer)|Wubi]], which is included as an option on the Live CD,&lt;ref&gt;{{cite web |url=http://wubi.sourceforge.net/faq.php |title=Wubi - Ubuntu Installer for Windows |publisher=wubi.sourceforge.net |accessdate=14 May 2008}}&lt;/ref&gt; allows Ubuntu to be installed and run from within a virtual Windows [[loop device]] (as a large image file that is managed like any other Windows program via the [[Control Panel (Windows)|Windows Control Panel]]). This method requires no [[disk partition|partitioning]] of a Windows user's [[hard drive]]. Wubi also makes use of the Migration Assistant to import users' settings. It also incurs a slight performance loss.
+
+==Package classification and support==
+Ubuntu divides all software into four domains to reflect differences in licensing and the degree of support available.&lt;ref name=&quot;Ubuntu Licensing&quot;/&gt; Some unsupported applications receive updates from community members, but not from [[Canonical Ltd.]]
+
+{| class=&quot;wikitable&quot;  style=&quot;margin:auto; text-align:center;&quot;
+|-
+!!! Free software
+! Non-free software
+|-
+| style=&quot;text-align:right;&quot;| '''Supported''' || Main || Restricted
+|-
+| style=&quot;text-align:right;&quot;| '''Unsupported''' || Universe || Multiverse
+|}
+
+Free software includes only software that has met the Ubuntu licensing requirements,&lt;ref name=&quot;Ubuntu Licensing&quot;/&gt; which roughly correspond to the [[Debian Free Software Guidelines]]. Exceptions, however, include [[firmware]] and [[Computer font|fonts]], in the Main category, because although they are not allowed to be modified, their distribution is otherwise unencumbered.{{Citation needed|date=September 2010}}
+
+Non-free software is usually unsupported (Multiverse), but some exceptions (Restricted) are made for important non-free software. Supported non-free software includes device drivers that can be used to run Ubuntu on some current hardware, such as binary-only [[graphics card]] [[Device driver|drivers]]. The level of support in the Restricted category is more limited than that of Main, because the developers may not have access to the [[source code]]. It is intended that Main and Restricted should contain all software needed for a complete desktop environment.&lt;ref name=&quot;Ubuntu Licensing&quot;/&gt; Alternative programs for the same tasks and programs for specialized applications are placed in the Universe and Multiverse categories.
+
+In addition to the above, in which the software [[Feature freeze|does not receive new features]] after an initial release, ''Ubuntu Backports'' is an officially recognized repository for [[backport]]ing newer software from later versions of Ubuntu.&lt;ref&gt;{{cite web |url=https://help.ubuntu.com/community/UbuntuBackports |title=UbuntuBackports |work=Ubuntu Documentation |accessdate=24 September 2010}}&lt;/ref&gt; The repository is not comprehensive; it consists primarily of user-requested packages, which are approved if they meet quality guidelines. Backports receives no support at all from Canonical, and is entirely community-maintained.
+
+The ''-updates'' repository provides stable release updates (SRU) of Ubuntu and are generally installed through update-manager. Each release is given its own -updates repository (e.g. intrepid-updates). The repository is supported by Canonical Ltd. for packages in main and restricted, and by the community for packages in universe and multiverse. All updates to the repository must meet certain requirements and go through the ''-proposed'' repository before being made available to the public.&lt;ref&gt;{{cite web |url=https://wiki.ubuntu.com/StableReleaseUpdates |title=StableReleaseUpdates |publisher=Canonical |accessdate=2 April 2009}}&lt;/ref&gt; Updates will continue to be available until the end of life for the release.
+
+In addition to the -updates repository, the unstable ''-proposed'' repository contains uploads which must be confirmed before being copied into -updates. All updates must go through this process to ensure that the patch does truly fix the bug and there is no risk of [[Software regression|regression]].&lt;ref&gt;{{cite web |url=https://wiki.ubuntu.com/StableReleaseUpdates#Verification |title=SRU Verification |publisher=Canonical |accessdate=2 April 2009}}&lt;/ref&gt; Updates in -proposed are confirmed by either Canonical or members of the community.
+
+Canonical's ''partner'' repository lets vendors of proprietary software deliver their products to Ubuntu users at no cost through the same familiar tools for installing and upgrading software.&lt;ref name=&quot;partner packaging&quot;&gt;{{cite web |url=http://www.canonical.com/engineering-services/certification/application-packaging |title=Application packaging |publisher=Canonical |accessdate=15 August 2010}}&lt;/ref&gt; The software in the partner repository is officially supported with security and other important updates by its respective vendors. Canonical supports the packaging of the software for Ubuntu&lt;ref name=&quot;partner_packaging&quot; /&gt;&lt;ref&gt;{{cite web |url=http://ubuntuforums.org/showthread.php?t=723804 |title=Partner Repository Forum FAQ |author=Brian Thomason |accessdate=15 August 2010}}&lt;/ref&gt;&lt;ref&gt;{{cite web |url=http://www.canonical.com/support/services/support-features |title=Desktop support features |publisher=Canonical |accessdate=15 August 2010}}&lt;/ref&gt; and provides guidance to vendors.&lt;ref name=&quot;partner packaging&quot; /&gt; The partner repository is disabled by default and can be enabled by the user.&lt;ref&gt;{{cite web |url=https://help.ubuntu.com/community/Repositories/Ubuntu#Adding%20Canonical%20Partner%20Repositories |title=RepositoriesUbuntu |accessdate=4 February 2011}}&lt;/ref&gt; Some popular products distributed via the partner repository {{As of|2010|8|lc=on}} are [[Adobe Flash Player]], [[Adobe Acrobat|Adobe Reader]], [[Skype]] and [[Java (software platform)|Sun Java]].
+
+===Availability of third-party software===
+{{See also|Medibuntu|GetDeb}}
+Ubuntu has a certification system for third party software.&lt;ref&gt;{{cite web |url=http://www.ubuntu.com/partners/softwareprogramme |title=Partners/certification/software |publisher=Canonical |accessdate=16 March 2006}}&lt;/ref&gt; Some third-party software that does not limit distribution is included in Ubuntu's multiverse component. The package ''[[ubuntu-restricted-extras]]'' additionally contains software that may be legally restricted, including support for [[MP3]] and [[DVD-Video|DVD]] playback, [[mscorefonts|Microsoft TrueType core fonts]], [[Sun Microsystems|Sun's]] [[Java Virtual Machine|Java runtime environment]], [[Adobe Systems|Adobe's]] [[Adobe Flash Player|Flash Player]] plugin, many common audio/video [[codec]]s, and unrar, an unarchiver for files [[Data compression|compressed]] in the [[RAR (file format)|RAR file format]].
+
+Additionally, third party application suites are available for purchase through the [[Canonical Ltd.|Canonical]] web-based store,&lt;ref&gt;{{cite web|url=http://shop.canonical.com/index.php?cPath=19 |title=Canonical Store |publisher=Shop.canonical.com |date= |accessdate=2011-05-27}}&lt;/ref&gt; including software for DVD playback and media codecs.
+
+==Releases==
+{{Main|List of Ubuntu releases}}
+&lt;!-- Keep the table short and tidy. If you want more information go to the main article for releases. Otherwise the table will get deleted again. --&gt;
+{| class=&quot;wikitable&quot; style=&quot;float:right; text-align:center; margin-left:1em; margin-right:0&quot;
+|-
+! rowspan=2 | Version
+! rowspan=2 | Code name
+! rowspan=2 | Release date
+! colspan=2 | Supported until
+|-
+! Desktop
+! Server
+|-
+| [[Warty Warthog|4.10]]
+| Warty Warthog
+| 2004-10-20
+| colspan=&quot;2&quot; style=&quot;background:salmon;&quot;| 2006-04-30
+|-
+| [[Hoary Hedgehog|5.04]]
+| Hoary Hedgehog
+| 2005-04-08
+| colspan=&quot;2&quot; style=&quot;background:salmon;&quot;| 2006-10-31
+|-
+| [[Breezy Badger|5.10]]
+| Breezy Badger
+| 2005-10-13
+| colspan=&quot;2&quot; style=&quot;background:salmon;&quot;| 2007-04-13
+|-
+| [[Ubuntu 6.06|6.06 LTS]]
+| Dapper Drake
+| 2006-06-01
+| style=&quot;background:salmon;&quot;| 2009-07-14
+| style=&quot;background:salmon;&quot;| 2011-06-01
+|-
+| [[Ubuntu 6.10|6.10]]
+| Edgy Eft
+| 2006-10-26
+| colspan=&quot;2&quot; style=&quot;background:salmon;&quot;| 2008-04-25
+|-
+| [[Feisty Fawn|7.04]]
+| Feisty Fawn
+| 2007-04-19
+| colspan=&quot;2&quot; style=&quot;background:salmon;&quot;| 2008-10-19
+|-
+| [[Gutsy Gibbon|7.10]]
+| Gutsy Gibbon
+| 2007-10-18
+| colspan=&quot;2&quot; style=&quot;background:salmon;&quot;| 2009-04-18
+|-
+| [[Ubuntu 8.04 Hardy Heron|8.04 LTS]]
+| Hardy Heron
+| 2008-04-24
+| style=&quot;background:salmon;&quot;| 2011-05-12
+| style=&quot;background:#90EE90&quot; | 2013-04
+|-
+| [[Ubuntu 8.10 Intrepid Ibex|8.10]]
+| Intrepid Ibex
+| 2008-10-30
+| colspan=&quot;2&quot; style=&quot;background:salmon;&quot;| 2010-04-30
+|-
+| [[Ubuntu 9.04 jaunty jackalope|9.04]]
+| Jaunty Jackalope
+| 2009-04-23
+| colspan=&quot;2&quot; style=&quot;background:salmon;&quot;| 2010-10-23
+|-
+| [[Ubuntu 9.10 Karmic Koala|9.10]]
+| Karmic Koala
+| 2009-10-29
+| colspan=&quot;2&quot; style=&quot;background:salmon;&quot;| 2011-04-30
+|-
+| [[Ubuntu 10.04 Lucid Lynx|10.04 LTS]]
+| Lucid Lynx
+| 2010-04-29
+| style=&quot;background:#90EE90&quot; | 2013-04
+| style=&quot;background:#90EE90&quot; | 2015-04
+|-
+| [[Ubuntu 10.10 Maverick Meerkat|10.10]]
+| Maverick Meerkat
+| 2010-10-10
+| colspan=&quot;2&quot; style=&quot;background:#90EE90&quot; | 2012-04
+|-
+| [[Ubuntu 11.04 Natty Narwhal|11.04]]
+| Natty Narwhal
+| 2011-04-28
+| colspan=&quot;2&quot; style=&quot;background:#90EE90&quot; | 2012-10
+|-
+| [[Ubuntu 11.10 Oneiric Ocelot|11.10]]
+| Oneiric Ocelot
+| 2011-10-13
+| colspan=&quot;2&quot; style=&quot;background:#90EE90;&quot;| 2013-04
+|-
+| [[Ubuntu 12.04 Precise Pangolin|12.04 LTS]]
+| Precise Pangolin
+| 2012-04-26
+| style=&quot;background:skyBlue;&quot;| 2017-04
+| style=&quot;background:skyBlue;&quot;| 2017-04
+|-
+! colspan=&quot;2&quot; | Colour
+! colspan=&quot;3&quot; | Meaning
+|-
+| colspan=&quot;2&quot; style=&quot;background:salmon;&quot;| Red
+| colspan=&quot;3&quot; | Release no longer supported
+|-
+| colspan=&quot;2&quot; style=&quot;background:#90EE90&quot; | Green
+| colspan=&quot;3&quot; | Release still supported
+|-
+| colspan=&quot;2&quot; style=&quot;background:skyBlue;&quot;| Blue
+| colspan=&quot;3&quot; | Future Release
+|}
+
+Each Ubuntu release has a [[Software versioning|version number]] that consists of the year and month number of the release.&lt;ref&gt;{{cite web |url=https://help.ubuntu.com/community/CommonQuestions#Ubuntu%20Releases%20and%20Version%20Numbers |title=CommonQuestions. Ubuntu Releases and Version Numbers. |work=Ubuntu Community Documentation |publisher=Canonical |accessdate=24 November 2010}}&lt;/ref&gt; For example, the first release was Ubuntu 4.10 as it was released on 20 October 2004. Version numbers for future versions are provisional; if the release is delayed the version number changes accordingly.
+
+Ubuntu releases are also given [[Alliteration|alliterative]] [[code name]]s, using an adjective and an animal (e.g., &quot;Dapper Drake&quot; and &quot;Intrepid Ibex&quot;). With the exception of the first three releases, code names are in consecutive alphabetical order, allowing a quick determination of which release is newer. &quot;We might skip a few letters, and we'll have to wrap eventually.&quot; says Mark Shuttleworth while describing the naming scheme.&lt;ref name=development&gt;{{cite web|title=DevelopmentCodeNames|url=https://wiki.ubuntu.com/DevelopmentCodeNames|publisher=ubuntu.com|accessdate=8 April 2011}}&lt;/ref&gt; Commonly, Ubuntu releases are referred to using only the adjective portion of the code name.&lt;ref name=development/&gt;
+
+Releases are timed to be approximately one month after GNOME releases (which in turn are about one month after releases of [[X.org]]). Consequently, every Ubuntu release comes with an updated version of both GNOME and X.
+
+Upgrades between releases have to be done from one release to the next release (e.g. Ubuntu 10.04 to Ubuntu 10.10) or from one LTS release to the next LTS release (e.g. Ubuntu 8.04 LTS to Ubuntu 10.04 LTS).&lt;ref&gt;{{cite web |url=https://help.ubuntu.com/community/UpgradeNotes |title=UpgradeNotes. General Upgrade Information |work=Ubuntu Community Documentation |publisher=Canonical |accessdate=26 October 2010}}&lt;/ref&gt;
+
+[[List of Ubuntu releases#Ubuntu 10.10|Ubuntu 10.10 (Maverick Meerkat)]], was released on 10 October 2010 (10/10/10). This is a departure from the traditional schedule of releasing at the end of October to get &quot;the perfect 10&quot;,&lt;ref&gt;{{cite web |url=http://www.markshuttleworth.com/archives/336 |title=Shooting for the Perfect 10.10 with Maverick Meerkat |publisher=Mark Shuttleworth |date=2 April 2010 |accessdate=8 June 2010}}&lt;/ref&gt; and a playful reference to ''[[The Hitchhiker's Guide to the Galaxy]]'', since, in [[Binary numeral system|binary]], 101010 is equal to [[Answer to the Ultimate Question of Life, the Universe and Everything|the number 42]], the &quot;Answer to the Ultimate Question of Life, the Universe and Everything&quot; within the series.&lt;ref&gt;{{cite web |url=https://lists.ubuntu.com/archives/ubuntu-marketing/2010-May/003987.html |title=ubuntu-marketing: 10.10.10 |author=Mark Shuttleworth |date=11 May 2010 |work=lists.ubuntu.com |accessdate=4 February 2011}}&lt;/ref&gt;
+
+Ubuntu 11.04 was released on 28 April 2011, and is code named &quot;Natty Narwhal&quot;.&lt;ref&gt;{{cite web |url=http://www.markshuttleworth.com/archives/478 |title=N-imal? |author=Mark Shuttleworth |date=17 August 2010 |accessdate=17 August 2010}}&lt;/ref&gt;&lt;ref&gt;{{cite web |url=http://digitalanalog.in/2010/12/03/ubuntu-11-04-natty-narwhal-alpha-released/ |title=Ubuntu 11.04 Natty Narwhal Alpha released |date=3 December 2010 |work=DigitalAnalog |accessdate=4 February 2011}}&lt;/ref&gt; The desktop interface of this release significantly differs from the previous releases because [[Unity (desktop environment)|Unity]] was introduced as the default GUI. It is possible to switch into &quot;classic&quot; GUI ([[GNOME Shell]]) but this feature was initially buggy.&lt;ref&gt;[http://scottlinux.com/2011/03/05/ubuntu-11-04-change-from-unity-to-classic-gnome/?replytocom=76 http://scottlinux.com/] Ubuntu 11.04 Change From Unity To Classic Gnome&lt;/ref&gt; The new GUI has received strong criticism from some users as too different from and less capable than GNOME,&lt;ref&gt;[http://www.theregister.co.uk/2011/04/01/ubuntu1004_beta_review/ Scott Gilbertson (2011)] ''Natty Narwhal with Unity: Worst Ubuntu beta ever. Nightmare KDE 4 scenario replayed''. The Register.&lt;/ref&gt; while other users have found they prefer the new approach and the minimalism compared to the older desktop paradigm.&lt;ref&gt;[http://ubuntuforums.org/showthread.php?t=1735385] ''Unity - I love it, so far.''. Ubuntu Forums.&lt;/ref&gt;
+
+==Variants==
+{{See also|List of Linux distributions#Ubuntu-based|l1=List of Ubuntu-based Linux distributions}}
+Official Ubuntu editions, which are created and maintained by Canonical and the Ubuntu community and receive full support from Canonical, its partners and the Community, are the following:&lt;ref name=&quot;ubuntu derivatives&quot;&gt;{{cite web |url=http://www.ubuntu.com/project/derivatives |title=Ubuntu derivatives |publisher=Canonical |accessdate=10 September 2010}}&lt;/ref&gt;&lt;ref name=&quot;DerivativeTeam/Derivatives&quot;&gt;{{cite web |url=https://wiki.ubuntu.com/DerivativeTeam/Derivatives |title=DerivativeTeam/Derivatives |work=Ubuntu Wiki |accessdate=10 September 2010}}&lt;/ref&gt;
+
+* '''Ubuntu Desktop''', designed for desktop and laptop PCs. (Formerly there was also [[Ubuntu Netbook Edition]], designed for netbooks and other ultra-portables with screens up to 10&quot;, but it was discontinued as its user interface and functionality was integrated into the desktop edition.) The desktop edition can be also installed using the '''alternate install CD''' which uses the debian-installer and allows performing certain specialist installations of Ubuntu: setting up automated deployments, upgrading from older installations without network access, LVM and/or RAID partitioning, installs on systems with less than about 256 MiB of RAM (although note that low-memory systems may not be able to run a full desktop environment reasonably).&lt;ref&gt;{{cite web |url=http://releases.ubuntu.com/natty/ |title=Ubuntu 11.04 (Natty Narwhal). Alternate install CD |work=Ubuntu Releases |accessdate=2011-07-02 }}&lt;/ref&gt;
+
+* '''Ubuntu Server''', made for use in servers.&lt;ref&gt;{{cite web |url=http://www.ubuntu.com/server |title=Ubuntu Server Edition |publisher=Canonical |accessdate=10 September 2010}}&lt;/ref&gt; The server install CD allows the user to install Ubuntu permanently on a computer for use as a server. It will not install a graphical user interface.
+
+[[File:Kubuntu 10.10 main menu.png|thumb|left|[[Kubuntu]] is an official variant of the Ubuntu distribution which uses the [[KDE Plasma Workspaces]].]]
+
+There are many [[Ubuntu variants]] (or derivatives) based on the official Ubuntu editions. These Ubuntu variants install a set of packages that differ from the official Ubuntu distributions.
+
+The variants recognized by Canonical as contributing significantly towards the Ubuntu project are the following:&lt;ref name=&quot;ubuntu derivatives&quot; /&gt;
+*[[Edubuntu]], a GNOME-based subproject and add-on for Ubuntu, designed for school environments and home users.&lt;ref&gt;{{cite web |url=http://www.edubuntu.org/about |title=About Edubuntu |accessdate=10 September 2010}}&lt;/ref&gt;
+*[[Kubuntu]], a desktop distribution using the [[KDE Plasma Workspaces]] desktop environment rather than [[GNOME]].
+*[[Lubuntu]], a lightweight distribution using the [[LXDE]] desktop environment.
+*[[Mythbuntu]], designed for creating a home theater PC with [[MythTV]] and uses the [[Xfce]] desktop environment.
+*[[Ubuntu Studio]], a distribution made for professional video and audio editing, comes with higher-end free editing software and is a DVD .iso image unlike the Live CD the other Ubuntu distributions use.
+*[[Xubuntu]], a distribution based on the [[Xfce]] desktop environment instead of GNOME, designed to run more efficiently on low-specification computers.
+
+Mythbuntu, Ubuntu Studio, Xubuntu and Gobuntu are not commercially supported by Canonical.&lt;ref&gt;{{cite web |url=http://releases.ubuntu.com/ |title=Ubuntu Releases |publisher=Canonical |accessdate=13 September 2010}}&lt;/ref&gt;
+
+Other variants are created and maintained by individuals and organizations outside of Canonical and they are self governed projects that work more or less closely with the Ubuntu community.&lt;ref name=&quot;DerivativeTeam/Derivatives&quot; /&gt;
+
+===Ubuntu Server Edition===
+{{Update after|2011|06|27}}
+Ubuntu also offers its operating system in a server edition.  The current version is Ubuntu 10.04 Long Term Support (LTS) release, which will receive continued updates until April 2015. These include updates to support new features of the latest computing hardware, security patches and updates to the 'Ubuntu stack' (cloud computing infrastructure).&lt;ref name=&quot;Morgan&quot;&gt;{{cite web|last=Morgan|first=Timothy|title=Ubuntu Server Primed For The Bigtime|url=http://www.theregister.co.uk/2010/04/20/ubuntu_server_10_04/|publisher=The Register|accessdate=10 April 2011}}&lt;/ref&gt;
+
+[[File:ServerScreenshot.jpg|thumb|A screenshot of the Ubuntu Server installation boot menu]]
+Ubuntu 10.04 Server Edition will also run on [[VMware ESX Server]], Oracle's [[VirtualBox]] and VM, Citrix Systems XenServer hypervisors, as well as [[Kernel-based Virtual Machine]]. Ubuntu uses [[AppArmor]] security module for the [[Linux kernel]] which is turned on by default on key software packages, and the firewall is extended to common services used by the operating system. The home and Private directories are also encrypted. The 10.04 server version includes MySQL 5.1, Tomcat 6, OpenJDK 6, Samba 3.4, Nagios 3, PHP 5.3, Python 2.6. Many of its services only take 30 minutes to configure.&lt;ref name=&quot;Morgan&quot;/&gt;
+
+Ubuntu 10.04 LTS Server Edition supports two major architectures: Intel x86 and AMD64. The server edition provides features such file/print services, web hosting, email hosting, etc. There are a few differences between the Ubuntu Server Edition and the Ubuntu Desktop Edition although both use the same apt repositories. The main difference between the two editions is the lack of a default installation of a X window environment in the server edition, although GUIs can be installed like GNOME/Unity (Ubuntu 11.04), KDE (Kubuntu 11.04), XFCE, (Xubuntu 11.04), as well as more resource-economical GUIs such as Fluxbox, Openbox and Blackbox. Kernel versions also differ. The server edition uses a screen mode character based interface for the installation, instead of a graphical installation process. The server CD also has the option of installing Ubuntu enterprise cloud.&lt;ref&gt;{{cite web|title=Why use Ubuntu for servers?|url=http://www.ubuntu.com/business/server/overview|publisher=Ubuntu|accessdate=5 April 2011}}&lt;/ref&gt;
+
+Ubuntu Server is also distributed free of charge. Users can choose to pay for consulting and technical support. Annual support contract with 9x5 business hour support is about $750 per server, and a contract covering 24x7 over a year costs $1,200.&lt;ref name=&quot;Morgan&quot;/&gt;
+
+===Cloud computing===
+[[File:Eucalyptus full.jpg|thumb|Eucalyptus full]]
+Ubuntu Server Edition offers technology and resources to make a [[Cloud computing|private or public cloud]]. Ubuntu Enterprise Cloud (UEC) provides virtualization capability, applications and flexibility to help deploy a cloud within an organization. It consists of the [[open core]] [[Eucalyptus (computing)|Eucalyptus]], [[libvirt]], [[Kernel-based Virtual Machine|KVM]] or [[Xen]] virtualization technology.&lt;ref&gt;{{cite web|title=Cloud|url=http://www.ubuntu.com/business/server/cloud|publisher=Ubuntu|accessdate=15 April 2011}}&lt;/ref&gt;
+
+Ubuntu 11.04 adds support for [[OpenStack]], and Eucalyptus to OpenStack migration tools will be released by Canonical in Ubuntu Server 11.10.&lt;ref&gt;{{cite web|url=http://www.zdnet.com/blog/open-source/canonical-switches-to-openstack-for-ubuntu-linux-cloud/8875 |title=Canonical switches to OpenStack for Ubuntu Linux cloud |publisher=Zdnet.com |date=2011-05-10 |accessdate=2011-10-10}}&lt;/ref&gt;&lt;ref&gt;{{cite web|last=Prickett |first=Timothy |url=http://www.theregister.co.uk/2011/05/10/canonical_ubuntu_openstack/ |title=Ubuntu eats OpenStack for clouds |publisher=Theregister.co.uk |date=2011-05-10 |accessdate=2011-10-10}}&lt;/ref&gt;
+
+==Development==
+[[File:20110512-144509-UDSOneiric.jpg|thumb|300px|UDS group photo]]
+
+The Ubuntu Developer Summit (UDS) is a gathering of software developers which occurs prior to the release of a new public version of Ubuntu.&lt;ref&gt;{{cite web|url=http://summit.ubuntu.com/ |title=Ubuntu Developer Summit |publisher=Summit.ubuntu.com |date= |accessdate=2011-05-27}}&lt;/ref&gt;
+
+At the beginning of a new development cycle, Ubuntu developers from around the world gather to help shape and scope the next release of Ubuntu. The summit is open to the public, but it is not a conference, exhibition or other audience-oriented event. Rather, it is an opportunity for Ubuntu developers, who usually collaborate online, to work together in person on specific tasks.
+
+==Reception==
+=== Installed base ===
+Chris Kenyon, vice president for OEM at [[Canonical Ltd.]], indicates that because of a lack of registration, any numbers provided for Ubuntu distributions should be treated as estimates.&lt;ref name=&quot;Michael Kerner&quot;&gt;{{cite web |url=http://www.linuxplanet.com/linuxplanet/reports/7032/1/ |title=Ubuntu Claims 12 Million Users as Lucid Linux Desktop Nears |author=Michael Kerner |date=7 April 2010 |publisher=Linux Planet |accessdate=7 April 2010}}&lt;/ref&gt; Nevertheless, a number of estimates and the results of surveys have been provided. In January 2009, [[The New York Times]] reported that Ubuntu had over ten million users. In June 2009 [[ZDNet]] reported, &quot;Worldwide, there are 13 million active Ubuntu users with use growing faster than any other distribution.&quot;,&lt;ref&gt;{{cite news |title=A Software Populist Who Doesn't Do Windows |author=Ashlee Vance |newspaper=The New York Times |date=10 January 2009 |url=http://www.nytimes.com/2009/01/11/business/11ubuntu.html?_r=2&amp;th&amp;emc=th |accessdate=22 February 2009}}&lt;/ref&gt;&lt;ref&gt;{{cite web |url=http://education.zdnet.com/?p=2709 |title=Ubuntu a minor player? Not outside the States. |author=Christopher Dawson |date=17 June 2009 |accessdate=18 June 2009}}&lt;/ref&gt; though Kenyon provided a more conservative estimate of 12 million users in April 2010.&lt;ref name=&quot;Michael Kerner&quot; /&gt; In fall 2011 Canonical estimated that Ubuntu holds a global usage of more than 20 million users.&lt;ref&gt;{{cite web|url=http://www.computerworlduk.com/news/operating-systems/3310952/canonical-launches-ubuntu-1110-update/?page=0,0 |title=Canonical launches Ubuntu 11.10 update |publisher=Computerworld UK |date=14 October 2011 |accessdate=18 October 2011}}&lt;/ref&gt; According to an independent survey by W3Techs.com Ubuntu is fourth most popular on web servers&lt;ref&gt;{{cite web|last=Gelbmann|first=Matthias|title=Highlights of web technology surveys, February 2011: Ubuntu increases its market share on web servers|url=http://w3techs.com/blog/entry/highlights_of_web_technology_surveys_february_2011|publisher=w3Techs|accessdate=1 July 2011}}&lt;/ref&gt; and rapidly increasing in popularity as web server, according to queries by BuiltWith.&lt;ref&gt;{{cite web |url=http://trends.builtwith.com/Server/Ubuntu|title=Ubuntu Usage Statistics |publisher=builtwith.com |accessdate=19 April 2010}}&lt;/ref&gt;
+
+==== Known large scale deployments ====
+The public sector has also made use of Ubuntu. The Ministry of Education and Science of [[Republic of Macedonia]] deployed more than 180,000 Ubuntu GNU/Linux based classroom desktops, and has encouraged every student in the country to use Ubuntu-powered computer workstations.&lt;ref&gt;{{cite web |url=http://www.ubuntu.com/news/macedonia-school-computers |title=Every Student in the Republic of Macedonia to Use Ubuntu-Powered Computer Workstations |date=20 November 2007 |publisher=Ubuntu |accessdate=2 December 2010}}&lt;/ref&gt; In the beginning of 2008, having successfully deployed 13,000 [[Fedora (operating system)|Fedora Linux]] systems in schools in the [[Philippines]], ASI, an independent Linux consultant company, was contracted to provide 10,000 Ubuntu systems for schools.&lt;ref&gt;{{cite web |url=http://www.computerworld.com.au/article/204950/23_000_linux_pcs_forge_education_revolution_philippines/ |title=23,000 Linux PCs forge education revolution in Philippines |author=Rodney Gedda |date=29 January 2008 |work=Computerworld |publisher=IDG |pages=1â3 |accessdate=2 December 2010}}&lt;/ref&gt; The [[France|French]] police, having already started using open source software in 2005 by replacing [[Microsoft Office]] with [[OpenOffice.org]], decided to transition to Ubuntu from [[Windows XP]] after the release of [[Windows Vista]] in 2006.&lt;ref name=FrPol&gt;{{cite web |url=http://arstechnica.com/open-source/news/2009/03/french-police-saves-millions-of-euros-by-adopting-ubuntu.ars |title=French police: we saved millions of euros by adopting Ubuntu |author=Ryan Paul |date=11 March 2009 |work=Ars Technica |publisher=[[CondÃ© Nast Publications|CondÃ© Nast]] |accessdate=2 December 2010}}&lt;/ref&gt; By March 2009, the [[National Gendarmerie|Gendarmerie Nationale]] had already switched 5000 workstations to Ubuntu.&lt;ref name=&quot;FrPol&quot; /&gt; Based on the success of that transition, it planned to switch 15,000 more over by the end of 2009 and to have switched all 90,000 workstations over by 2015.&lt;ref name=&quot;FrPol&quot; /&gt; Lt. Colonel Guimard announced that the move was very easy and allowed for a 70% saving on the IT budget without having to reduce its capabilities.&lt;ref name=&quot;FrPol&quot; /&gt;
+
+According to [[Softpedia]], Ubuntu 10.04 was adopted by the Indian Justice system in 2011.&lt;ref&gt;{{cite web|url=http://news.softpedia.com/news/India-s-Justice-Sytem-Switches-to-Ubuntu-10-04-228451.shtml |title=India's Justice Sytem Switches to Ubuntu 10.04 - Softpedia |publisher=News.softpedia.com |date= |accessdate=2011-10-21}}&lt;/ref&gt;
+
+=== Reception by critics ===
+Ubuntu was awarded the Reader Award for best Linux distribution at the 2005 [[LinuxWorld Conference and Expo]] in London,&lt;ref&gt;{{cite web |url=http://w3.linux-magazine.com/issue/61/Linuxworld_London_UK_2005.pdf |title=LinuxWorld Expo UK 2005 |author=John Masters |month=June |year=2005 |work=Linux Magazine |publisher=Linux New Media |format=PDF |accessdate=19 June 2008}}&lt;/ref&gt; received favorable reviews in online and print publications,&lt;ref&gt;{{cite web |url=http://www.linuxjournal.com/article/8253 |title=Linux in Government: Linux Desktop Reviews, Part 6 - Ubuntu |author=Tom Adelstein |date=19 April 2005 |publisher=Linux Journal |accessdate=2 December 2010}}&lt;/ref&gt;&lt;ref&gt;{{citation |author=Neil McAllister |title=Gutsy Gibbon: Desktop Linux OS Made Easy |volume=26 |month=January |year=2008 |publisher=PC World |page=84}}&lt;/ref&gt; and has won [[InfoWorld]]'s 2007 Bossie Award for ''Best Open Source Client OS''.&lt;ref&gt;{{cite web |url=http://www.infoworld.com/t/platforms/best-open-source-in-platforms-and-middleware-129 |title=Best of open source in platforms and middleware |author=Paul Venenzia |date=10 September 2007 |work=InfoWorld |publisher=[[IDG]] |accessdate=2 December 2010}}&lt;/ref&gt; In early 2008 ''[[PC World (magazine)|PC World]]'' named Ubuntu the &quot;best all-around Linux distribution available today&quot;, though it criticized the lack of an integrated desktop effects manager.&lt;ref&gt;{{cite web |url=http://www.pcworld.com/article/146400/desktop_linux_faceoff_ubuntu_804_vs_fedora_9.html |title=Desktop Linux Face-Off: Ubuntu 8.04 vs. Fedora 9 |author=Robert Strohmeyer |date=2 June 2008 |work=PC World |publisher=IDG |accessdate=19 August 2008}}&lt;/ref&gt;
+
+In an August 2007 survey of 38,500 visitors on DesktopLinux.com, Ubuntu was the most popular distribution with 30.3% of respondents claiming to use it.&lt;ref&gt;{{cite web |url=http://www.desktoplinux.com/cgi-bin/survey/survey.cgi?view=archive&amp;id=0813200712407 |title=2007 Desktop Linux Market survey |date=21 August 2007 |work=DesktopLinux |publisher=eWeek |accessdate=19 August 2008}}&lt;/ref&gt; Based on [[page impression]]s on [[DistroWatch]], up to April 2011 Ubuntu was ranked as the most popular distribution. Later that year it fell to second place in popularity, after [[Linux Mint]] which is mostly based on Ubuntu.&lt;ref&gt;{{cite web|url=http://distrowatch.com/stats.php?section=popularity|title=Linux Distributions - Facts and Figures|publisher=distrowatch.com|accessdate=09 November 2011}}&lt;/ref&gt;
+
+In 2008, [[Jamie Hyneman]], co-host of the American television series ''[[Mythbusters]]'', advocated Linux (specifically giving the example of Ubuntu) as an alternative operating system, citing [[software bloat]] as a major hurdle in Microsoft Windows.&lt;ref&gt;{{cite web |url=http://www.popularmechanics.com/technology/upgrade/4243994.html?page=3 |title=MythBusters: 7 Tech Headachesâand How to Fix Them |author=Jamie Hyneman |date=18 February 2008 |work=Popular Mechanics |publisher=[[Hearst Corporation|Hearst]] |accessdate=2 December 2010}}&lt;/ref&gt; Other celebrity users of Ubuntu include science fiction writer and open content proponent [[Cory Doctorow]].&lt;ref name=&quot;Thomas&quot;&gt;{{Cite book
+| publisher = Apress
+| isbn = 9781430219996
+| last = Thomas
+| first = K.
+| coauthors = A. Channelle, J. Sicam
+| title = Beginning Ubuntu Linux
+| year = 2009
+| page=xxxii
+}}&lt;/ref&gt;
+
+==Local Communities (LoCos)==
+In an effort to reach out to users who are less technical, and to foster a sense of community around the distribution, Local Communities,&lt;ref&gt;{{cite web |url=https://wiki.ubuntu.com/LoCoTeams |title=Ubuntu Local Community Teams}}&lt;/ref&gt; better known as &quot;LoCos&quot;, have been established throughout the world.  Originally, each country had one LoCo Team.  However, in some areas, most notably the United States, each state or province may establish a team.  A LoCo Council approves teams based upon their efforts to aid in either the development or the promotion of Ubuntu.
+
+==Vendor support==
+A number of vendors offer computers with Ubuntu pre-installed, including [[Hasee]], [[Dell]],&lt;ref&gt;{{cite web |url=http://www.ubuntu.com/dell |title=Ubuntu on Dell |publisher=Canonical |accessdate=24 February 2008}}&lt;/ref&gt; [[Tesco]], OP3, Gliese IT, System76, Ohava Computers,&lt;ref&gt;{{cite web |url=http://www.ohava.com/linux |title=Amazing Linux |publisher=Ohava Computers |accessdate=16 November 2011}}&lt;/ref&gt; Lotus Computers,&lt;ref&gt;{{cite web  |url=http://www.lotuspc.net/us/index.php |title=Lotus Computers |publisher=Lotus Computers |accessdate=16 November 2011}}&lt;/ref&gt;&lt;ref&gt;{{cite web |url=http://www.dell.com/content/topics/segtopic.aspx/linux_3x?c=us&amp;cs=19&amp;l=en&amp;s=dhs |title=Ubuntu Customers |publisher=[[Dell]] |accessdate=19 August 2008}}&lt;/ref&gt; [[Sharp Corporation]]&lt;ref&gt;{{cite web |url=http://www.liliputing.com/2009/08/sharp-netwalker-pc-z1-what-you-get-when-you-shrink-a-netbook.html |title=Sharp NetWalker PC-Z1: What you get when you shrink a netbook |publisher=Liliputing |accessdate=26 March 2010}}&lt;/ref&gt; and the South African company Bravium Computers.&lt;ref&gt;{{cite web |url=http://bravium.co.za/about |title=Ubuntu Computers |publisher=Bravium Computers |accessdate=23 April 2009}}&lt;/ref&gt;{{Dead link|date=July 2011}} Dell and System76 customers are able to choose between 30-day, three-month, and yearly Ubuntu support plans through Canonical.&lt;ref&gt;{{cite web |url=http://www.ubuntu.com/news/system76-certified-servers |title=System76 announces servers with Ubuntu 7.10 and Canonical support services |publisher=Canonical |accessdate=5 March 2008}}&lt;/ref&gt; Dell computers (running Ubuntu 10.04) include extra support for [[ATI]] Video Graphics, Dell Wireless, [[Fingerprint Readers]], [[HDMI]], [[Bluetooth]], [[DVD-Video|DVD]] playback (using [[LinDVD]]), and [[MP3]]/[[Windows Media Audio|WMA]]/[[Windows Media Video|WMV]].&lt;ref&gt;{{cite web |url=http://yourblog.dell.com/2008/07/18/dell-upgrades-consumer-linux-pcs-to-ubuntu-804/ |title=Your Blog &quot; Blog Archive &quot; Dell Upgrades Consumer Linux PCs to Ubuntu 8.04 |publisher=Dell |accessdate=13 September 2008}}&lt;/ref&gt; [[Asus]] is also selling some [[Asus Eee PC]]s with Ubuntu pre-installed, namely the [http://commercial.asus.com/product/detail/102 1001PXD], [http://www.asus.com/Eee/Eee_PC/Eee_PC_1011PX/ 1011PX] and [http://www.asus.com/Eee/Eee_PC/Eee_PC_1015PX/ 1015PX] models, announcing that &quot;many more&quot; Eee PC models running Ubuntu will be available in 2011.&lt;ref&gt;{{cite web|url=http://www.theinquirer.net/inquirer/news/2075819/asus-preload-ubuntu-linux-eee-pcs |title=Asus will preload ubuntu linux on three eee pcs |publisher=The Inquirer |date= |accessdate=2011-06-15}}&lt;/ref&gt;&lt;ref&gt;{{cite web|last=Woods |first=Ben |url=http://www.zdnet.co.uk/blogs/tech-tech-boom-10017860/asus-preloads-eee-pc-models-with-ubuntu-10022619/ |title=Asus preloads Eee PC models with Ubuntu &amp;#124; ZDNet UK |publisher=Zdnet.co.uk |date=2011-06-03 |accessdate=2011-06-15}}&lt;/ref&gt;&lt;ref&gt;{{cite web|url=http://www.tomshardware.com/news/Ubuntu-Eee-PC-Seashell-Netbooks-Canonical,12878.html |title=Asus Launching Eee PC Netbooks with Ubuntu |publisher=Tomshardware.com |date= |accessdate=2011-06-15}}&lt;/ref&gt; [[Vodafone]] has made available a notebook for the South-African market called &quot;Webbook&quot;.&lt;ref&gt;{{cite web|url=http://www.engadget.com/2011/10/19/vodafone-brings-arm-and-ubuntu-together-for-south-african-webboo/ |title=Vodafone brings ARM and Ubuntu together for South African Webbook |publisher=Engadget |date= |accessdate=2011-10-20}}&lt;/ref&gt;&lt;ref&gt;{{cite web|url=http://www.omgubuntu.co.uk/2011/10/the-ubuntu-powered-vodafone-webbook-launches-tomorrow/ |title=The Ubuntu Powered âVodafone Webbookâ Launched |publisher=Omgubuntu.co.uk |date= |accessdate=2011-10-20}}&lt;/ref&gt;&lt;ref&gt;{{cite web|url=http://news.softpedia.com/news/Ubuntu-11-10-Powered-Webbook-Sells-at-190-229168.shtml |title=Ubuntu 11.10 Powered Webbook Sells at $190 - Softpedia |publisher=News.softpedia.com |date= |accessdate=2011-10-21}}&lt;/ref&gt;
+&lt;!--Cleanup Required--&gt;
+
+==See also==
+{{Portal box|Free software|Linux|Computer Science|Information technology}}
+*[[Computer technology for developing areas]]
+*[[Free culture movement]]
+*[[Linux User Group]]
+*[[List of Linux distributions]]
+*[[List of Ubuntu-based distributions]]
+*[[Open-source software]]
+*[[Ubuntu Certified Professional]]
+
+{{-}}
+
+==References==
+{{Reflist|colwidth=30em}}
+
+==Bibliography==
+{{refbegin}}
+* {{cite book
+| first1      = Marcel
+| last1       = Gagne
+| date        = 27 August 2006
+| title       = Moving to Ubuntu Linux
+| publisher   = [[Addison-Wesley Professional]]
+| edition     = 1st
+| page       = 496
+| isbn        = 032142722X
+| url         = http://www.informit.com/store/product.aspx?isbn=032142722X
+}}
+* {{cite book
+| first1      = Rickford
+| last1       = Grant
+| first2      = Phil
+| last2       = Bull
+| date        = 7 July 2010
+| title       = Ubuntu for Non-Geeks: A Pain-Free, Get-Things-Done Guide
+| publisher   = [[No Starch Press]]
+| edition     = 4th
+| page       = 496
+| isbn        = 978-1593272579
+| url         = http://www.nostarch.com/ubuntu4.htm
+}}
+* {{cite book
+| author     = Benjamin Mako Hill
+| coauthors  = Jono Bacon, Corey Burger, Jonathan Jesse, Ivan Krstic
+| date       = 21 August 2006
+| title      = The Official Ubuntu Book
+| publisher  = [[Prentice Hall]]
+| edition    = 1st
+| page      = 448
+| isbn       = 0132435942
+| url        = http://www.informit.com/store/product.aspx?isbn=0132435942
+}}
+*{{Cite book
+| first1     = Andrew
+| last1      = Hudson
+| first2     = Paul
+| last2      = Hudson
+| first3     = Matthew
+| last3      = Helmke
+| first4     = Ryan
+| last4      = Troy
+| title      = Ubuntu Unleashed 2010 Edition: Covering 9.10 and 10.4
+| date       = 25 December 2009
+| publisher  = [[SAMS Publishing|Sams]]
+| edition    = 5th
+| page      = 864
+| isbn       = 0672331098
+| url        = http://www.informit.com/store/product.aspx?isbn=0672331098
+}}
+*{{Cite book
+| first1     = Thomas
+| last1      = Keir
+| title      = Beginning Ubuntu Linux: From Novice to Professional
+| publisher  = [[Apress]]
+| edition    =
+| page      = 608
+| date       = 15 March 2006
+| isbn       = 1590596277
+| url        = http://apress.com/book/view/1590596277
+}}
+*{{Cite book
+| author     = Jonathan Oxer
+| coauthors  = Kyle Rankin, Bill Childers
+| title      = Ubuntu Hacks: Tips &amp; Tools for Exploring, Using, and Tuning Linux
+| publisher  = [[O'Reilly Media]]
+| edition    = 1st
+| page      = 448
+| date       = 14 June 2006
+| isbn       = 0596527209
+| url        = http://oreilly.com/catalog/9780596527204
+}}
+*{{Cite book
+| first1     = William
+| last1      = von Hagen
+| title      = Ubuntu Linux Bible
+| publisher  = [[John Wiley &amp; Sons|Wiley]]
+| edition    = 1st
+| page      = 936
+| date       = 3 January 2007
+| isbn       = 0470038993
+| url        = http://eu.wiley.com/WileyCDA/WileyTitle/productCd-0470038993.html
+}}
+{{refend}}
+
+==External links==
+{{Commons category|Ubuntu Linux}}
+{{Sister project links|Ubuntu|q=no|s=no}}
+*{{Official website|http://www.ubuntu.com/}}
+*{{Dmoz|Computers/Software/Operating_Systems/Linux/Distributions/Ubuntu|Ubuntu}}
+&lt;!--======================== {{No more links}} ============================
+    | PLEASE BE CAUTIOUS IN ADDING MORE LINKS TO THIS ARTICLE. Wikipedia  |
+    | is not a collection of links nor should it be used for advertising. |
+    |                                                                     |
+    |           Excessive or inappropriate links WILL BE DELETED.         |
+    | See [[Wikipedia:External links]] &amp; [[Wikipedia:Spam]] for details.  |
+    |                                                                     |
+    | If there are already plentiful links, please propose additions or   |
+    | replacements on this article's discussion page, or submit your link |
+    | to the relevant category at the Open Directory Project (dmoz.org)   |
+    | and link back to that category using the {{dmoz}} template.         |
+    ======================= {{No more links}} =============================--&gt;
+
+{{Ubuntu}}
+{{Linux distributions}}
+{{Linux}}
+{{Operating system}}
+
+{{Good article}}
+
+{{Use dmy dates|date=February 2011}}
+
+{{DEFAULTSORT:Ubuntu (Operating System)}}
+[[Category:2004 software]]
+[[Category:Debian-based distributions]]
+[[Category:X86-64 Linux distributions]]
+[[Category:PowerPC operating systems]]
+[[Category:Operating system distributions bootable from read-only media]]
+[[Category:Launchpad consumers]]
+[[Category:Ubuntu (operating system)| ]]
+
+{{Link GA|es}}
+{{Link GA|da}}
+{{Link GA|no}}
+{{Link GA|ru}}
+{{Link FA|bs}}
+{{Link FA|de}}
+{{Link FA|it}}
+{{Link FA|ml}}
+{{Link FA|tt}}
+{{Link FA|uk}}
+
+[[af:Ubuntu (Linux)]]
+[[als:Ubuntu Linux]]
+[[am:á¡á¡áá±]]
+[[ang:Ubuntu]]
+[[ar:Ø£ÙØ¨ÙÙØªÙ]]
+[[as:à¦à¦à¦¬à¦¾à¦£à§à¦à§]]
+[[ast:Ubuntu]]
+[[gn:Ubuntu]]
+[[ay:Ubuntu]]
+[[az:Ubuntu]]
+[[bm:Ubuntu]]
+[[bn:à¦à¦¬à§à¦¨à§à¦à§ (à¦²à¦¿à¦¨à¦¾à¦à§à¦¸ à¦¡à¦¿à¦¸à§à¦à§à¦°à¦¿à¦¬à¦¿à¦à¦¶à¦¨)]]
+[[zh-min-nan:Ubuntu]]
+[[ba:Ubuntu]]
+[[be:Ubuntu]]
+[[be-x-old:Ubuntu]]
+[[bcl:Ubuntu]]
+[[bs:Ubuntu (Linux distribucija)]]
+[[br:Ubuntu]]
+[[bg:Ubuntu Linux]]
+[[ca:Ubuntu]]
+[[cv:Ubuntu]]
+[[cs:Ubuntu]]
+[[cbk-zam:Ubuntu]]
+[[cy:Ubuntu]]
+[[da:Ubuntu]]
+[[de:Ubuntu]]
+[[dsb:Ubuntu]]
+[[et:Ubuntu]]
+[[el:Ubuntu]]
+[[es:Ubuntu]]
+[[eo:Ubuntu (linukso)]]
+[[eu:Ubuntu (Linux banaketa)]]
+[[ee:Ubuntu]]
+[[fa:Ø§ÙØ¨ÙÙØªÙ]]
+[[fo:Ubuntu]]
+[[fr:Ubuntu]]
+[[fy:Ubuntu Linux]]
+[[ga:Ubuntu]]
+[[gl:Ubuntu (GNU/Linux)]]
+[[glk:Ubuntu]]
+[[ko:ì°ë¶í¬ (ë¦¬ëì¤ ë°°í¬í)]]
+[[hy:ÕÖÕ¢Õ¸ÖÕ¶Õ¿Õ¸Ö]]
+[[hi:à¤à¤¬à¤£à¥à¤à¥]]
+[[hr:Ubuntu]]
+[[ig:Ubuntu]]
+[[ilo:Ubuntu]]
+[[id:Ubuntu]]
+[[ia:Ubuntu]]
+[[ie:Ubuntu]]
+[[os:Ubuntu]]
+[[zu:Ubuntu]]
+[[is:Ubuntu]]
+[[it:Ubuntu]]
+[[he:××××× ×× ××× ××§×¡]]
+[[jv:Ubuntu]]
+[[kn:à²à²¬à³à²à²à³]]
+[[ka:Ubuntu]]
+[[csb:Ubuntu Linux]]
+[[rw:Ubuntu]]
+[[ky:Ð£Ð±ÑÐ½ÑÑ]]
+[[kg:Ubuntu]]
+[[ht:Ubuntu]]
+[[ku:Ubuntu GNU/Linux]]
+[[lo:àº­àº¸àºàº¸àºàºàº¹]]
+[[la:Ubuntu]]
+[[lv:Ubuntu Linux]]
+[[lb:Ubuntu]]
+[[lt:Ubuntu]]
+[[jbo:ubuntus]]
+[[lmo:Ubuntu]]
+[[hu:Ubuntu (Linux-disztribÃºciÃ³)]]
+[[mk:Ubuntu]]
+[[mg:Ubuntu]]
+[[ml:à´à´¬àµà´£àµà´àµ]]
+[[mr:à¤à¤¬à¥à¤à¤à¥]]
+[[ms:Ubuntu]]
+[[cdo:Ubuntu]]
+[[mn:Ò®Ð±Ò¯Ð½ÑÒ¯]]
+[[my:á¦á¸áá½ááºá¸áá¯]]
+[[na:Ubuntu]]
+[[nl:Ubuntu (Linuxdistributie)]]
+[[nds-nl:Ubuntu (Linux)]]
+[[ne:à¤à¤¬à¥à¤¨à¥à¤à¥]]
+[[ja:Ubuntu]]
+[[ce:Ubuntu]]
+[[no:Ubuntu (operativsystem)]]
+[[nn:Ubuntu Linux]]
+[[nov:Ubuntu]]
+[[oc:Ubuntu]]
+[[or:à¬à¬¬à¬£à­à¬à­ (à¬à¬ªà¬°à­à¬à¬¿à¬à­à¬ à¬¸à¬¿à¬·à­à¬à¬®)]]
+[[om:Ubuntu]]
+[[uz:Ubuntu (Linux distributivi)]]
+[[pag:Ubuntu]]
+[[km:Ubuntu]]
+[[tpi:Ubuntu]]
+[[nds:Ubuntu]]
+[[pl:Ubuntu]]
+[[pt:Ubuntu]]
+[[crh:Ubuntu]]
+[[ty:Ubuntu]]
+[[ro:Ubuntu]]
+[[rm:Ubuntu]]
+[[ru:Ubuntu]]
+[[sm:Ubuntu]]
+[[sc:Ubuntu]]
+[[stq:Ubuntu]]
+[[sq:Ubuntu]]
+[[scn:Ubuntu (Linux)]]
+[[si:à¶à¶¶à·à¶±à·à¶§à· (à¶´à¶»à·à¶à¶«à¶ à¶¸à·à·à·à¶ºà·à¶¸à· à¶´à¶¯à·à¶°à¶­à·à¶º)]]
+[[simple:Ubuntu]]
+[[sd:Ubuntu]]
+[[sk:Ubuntu]]
+[[sl:Ubuntu]]
+[[ckb:Ø¦ÙØ¨ÙÙØªÙ]]
+[[sr:Ubuntu]]
+[[sh:Ubuntu (Linux distribucija)]]
+[[su:Ubuntu]]
+[[fi:Ubuntu]]
+[[sv:Ubuntu]]
+[[tl:Ubuntu]]
+[[ta:à®à®ªà¯à®£à¯à®à¯ à®²à®¿à®©à®à¯à®à¯]]
+[[tt:Ubuntu]]
+[[te:à°à°¬à±à°à°à±]]
+[[th:à¸­à¸¹à¸à¸¸à¸à¸à¸¹]]
+[[tr:Ubuntu]]
+[[udm:Ubuntu]]
+[[uk:Ubuntu]]
+[[ur:Ø§ÙØ¨ÙÙ¹Ù]]
+[[vec:Ubuntu]]
+[[vi:Ubuntu]]
+[[zh-classical:çé¦å]]
+[[vls:Ubuntu]]
+[[war:Ubuntu]]
+[[zh-yue:Ubuntu]]
+[[diq:Ubuntu]]
+[[zea:Ubuntu]]
+[[bat-smg:Ubuntu]]
+[[zh:Ubuntu]]</rev></revisions></page></pages></query></api>

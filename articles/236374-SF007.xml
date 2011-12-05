@@ -1,0 +1,57 @@
+<?xml version="1.0"?><api><query><pages><page pageid="236374" ns="0" title="AOLserver"><revisions><rev xml:space="preserve">{{Refimprove|date=April 2011}}
+{{Infobox Software
+|name = AOLserver
+|screenshot =
+|logo =
+|caption =
+|developer = [[AOL]]
+|latest_release_version = 4.5.1
+|latest_release_date = February 2, 2009
+|latest_preview_version =
+|latest_preview_date =
+|operating_system = [[Cross-platform]]
+|genre = [[HTTP web server]]
+|license = [[AOLserver Public License]] / [[Mozilla Public License|MPL]] / [[GNU General Public License|GNU GPL]]
+|website = [http://www.aolserver.com/ www.aolserver.com]
+}}
+'''AOLserver''' is [[America Online]]'s [[open source]] [[web server]]. AOLserver is
+multithreaded, [[Tcl]]-enabled, and used for large scale, dynamic web sites.
+
+AOLserver is distributed under the [[Mozilla Public License]].&lt;ref&gt;[http://aolserver.com/license/ AOLserver's license page] and [http://sourceforge.net/projects/aolserver/ AOLserver's] [[SourceForge]] page&lt;/ref&gt;
+
+AOLserver was originally developed by [[NaviSoft]] under the name &quot;NaviServer&quot;, but changed names when [[AOL]] bought the company in 1995.  [[Philip Greenspun]] convinced America Online to open-source the program in 1999.&lt;ref&gt;[http://philip.greenspun.com/wtr/aolserver/introduction-1.html Introduction to AOLserver, Part 1&lt;!-- Bot generated title --&gt;]&lt;/ref&gt;
+
+AOLserver was the first HTTP server program to combine [[Thread (computer science)|multithreading]], a built-in scripting language, and the pooling of persistent database connections.  For database-backed Web sites, this enabled performance improvements of 100X compared to the standard practices at the time of CGI scripts that opened fresh database connections on every page load.  Eventually other HTTP server programs were able to achieve similar performance with a similar architecture, but AOLserver was several years ahead of the competition.
+
+AOLserver is a key component in the Open Architecture Community System ([[OpenACS]]) which is an advanced open-source toolkit for developing web applications.
+
+In Sept 2007, a port of AOLserver for the [[iPhone]] was made available and later [[fork (software development)|fork]]ed under the name &quot;Joggame Server&quot;. This fork is described on its [[Sourceforge]] project page as being a spin-off of AOLserver for devices.&lt;ref&gt;[http://sourceforge.net/projects/joggame/ Joggame Server project page at Sourceforge]&lt;/ref&gt;
+
+[[NaviServer]] (also hosted on SourceForge) is a fork of AOLserver.
+
+== See also ==
+* [[Comparison of web servers]]
+
+== References ==
+&lt;references/&gt;
+
+== External links ==
+* [http://www.aolserver.com/ www.aolserver.com]
+* [http://sourceforge.net/projects/aolserver/ SourceForge Project: AOLserver]
+* [http://pywx.idyll.org/ Python for AOLserver]
+* [http://panoptic.com/wiki/aolserver/AOLserver_Wiki AOLserver Wiki]
+** [http://panoptic.com/wiki/aolserver/How_to_set_up_PHP_under_AOLserver PHP on AOLserver]
+* [http://aolserver.com/license/ AOLserver Public License]
+* [http://naviserver.sourceforge.net/ NaviServer Fork Project Homepage]
+
+{{DEFAULTSORT:Aolserver}}
+[[Category:Free web server software]]
+[[Category:AOL]]
+[[Category:Cross-platform software]]
+
+
+{{network-software-stub}}
+
+[[de:AOLserver]]
+[[es:AOLserver]]
+[[ru:AOLServer]]</rev></revisions></page></pages></query></api>

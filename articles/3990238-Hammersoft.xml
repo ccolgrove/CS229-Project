@@ -1,0 +1,140 @@
+<?xml version="1.0"?><api><query><pages><page pageid="3990238" ns="0" title="MODAF"><revisions><rev xml:space="preserve">{{Infobox Government agency
+|agency_name     = United Kingdom &lt;br&gt; Ministry of Defence
+|type          = Department
+|logo_width      =
+|logo_caption    =
+|seal            =
+|seal_width      =
+|seal_caption    =
+|formed          = 1964 (As modern department)
+|preceding2      =
+|dissolved       =
+|superseding     =
+|jurisdiction    = [[United Kingdom]]
+|headquarters    = [[Whitehall]], [[City of Westminster|Westminster]], [[London]]&lt;ref&gt;{{coord|51|30|14|N|0|7|30|W|type:landmark|display=inline}}
+&lt;/ref&gt;
+|employees       = over 80,000 civilian staff&lt;ref name=&quot;Employees&quot;&gt;{{cite web|url=http://www.mod.uk/DefenceInternet/AboutDefence/Organisation/KeyFactsAboutDefence/DefenceInTheCommunity.htm|title=Defence in the Community|publisher=Ministry of Defence|accessdate=22 March 2010}}&lt;/ref&gt;
+|budget          = Â£35.165 billion (2009/10)&lt;ref name=&quot;Budget&quot;&gt;{{cite web|url=http://www.mod.uk/DefenceInternet/AboutDefence/Organisation/KeyFactsAboutDefence/DefenceSpending.htm|title=Defence Spending|publisher=Ministry of Defence|accessdate=22 March 2010}}&lt;/ref&gt;
+|minister1_name  = [[Philip Hammond|The Rt Hon Philip Hammond, MP]]
+|minister1_pfo   = [[Secretary of State for Defence]]
+|chief1_name     = [[David Richards (British Army officer)|General Sir David Richards]]
+|chief1_position = [[Chief of the Defence Staff (United Kingdom)|Chief of the Defence Staff]]
+|chief2_name     = [[Ursula Brennan]]
+|chief2_position = [[Permanent Under Secretary|Permanent Secretary]]
+|website         = http://www.mod.uk
+}}
+
+The '''British Ministry of Defence Architecture Framework''' ('''MODAF''') is an [[Enterprise Architecture framework|Architecture Framework]] which defines a standardised way of conducting [[Enterprise Architecture]], originally developed by the [[British Ministry of Defence|UK Ministry of Defence]].
+
+Initially the purpose of MODAF was to provide rigour and structure to support the definition and integration of MOD equipment capability, particularly in support of [[Network Enabled Capability]] (NEC).
+
+More recently, MOD has additionally been using MODAF to underpin the use of the [[Enterprise Architecture]] approach to the capture of the information about the business to identify the processes and resources required to deliver the vision expressed in the strategy.
+
+== Overview ==
+MODAF is an internationally recognised [[enterprise architecture]]  framework developed by the [[Ministry of Defence (United Kingdom)|MOD]] to support Defence planning and change management activities. It does this by enabling the capture and presentation of information in a rigorous, coherent and comprehensive way that aids the understanding of complex issues, thereby providing managers with the key factors they should consider when making decisions about changes to the business. It is used extensively in Defence acquisition to support systems engineering, particularly in support of [[Network Enabled Capability]] (NEC], âwhich is about the coherent integration of sensors, decision-makers, weapon systems and support capabilities to achieve the desired effect.â
+
+With the publication of the MOD Information Strategy (MODIS)&lt;ref&gt;http://www.mod.uk/DefenceInternet/AboutDefence/CorporatePublications/PolicyStrategyandPlanning/ModInformationStrategy2009.htm&lt;/ref&gt;  and its [[Enterprise Architecture]] (EA) Sub-Strategy, the MOD has recognised the utility of EA to support business improvement. MODAF is central to the use of EA in MOD.
+
+MODAF is managed and maintained by staff working for the MODâs Chief Information Officer&lt;ref&gt;http://www.publications.parliament.uk/pa/cm200809/cmhansrd/cm090113/text/90113w0004.htm&lt;/ref&gt;(CIO), as part of their role to provide Information Policy and Standards.  Additional support is provided by the MODâs System Engineering and Integration Group, as part of their role in developing the System of Systems Approach (SOSA)&lt;ref&gt;http://www.aof.mod.uk/aofcontent/tactical/engineering/content/systems_guidance/se_systemofsystems.htm&lt;/ref&gt;, a common set of principles, rules, and standards to enable the delivery of better interoperability between systems.
+
+MOD is working closely with its International Allies to ensure coherence with their architecture frameworks to enable the sharing of information about capabilities fielded in coalition operations in-order to support interoperability. MODAF was developed from the US [[Department of Defense Architecture Framework]] (DoDAF) version 1.0, but has been extended and modified to meet MOD requirements by the addition of Strategic, Acquisition and Service Oriented Viewpoints and the provision of the M3.
+
+MODAF version 1.0 was released in 2005, following development work by the MODAF Partners, a collaborative team of MOD staff and contractors from a number of industry partners and has been continuously improved since Version 1.0, the latest release, version 1.2.004, was released in May 2010
+
+== History ==
+
+MODAF was initially developed for MOD from two parallel work strands, an MOD-funded research programme undertaken by [[QinetiQ]] (formerly the Defence Evaluation Research Agency) and a separate DoDAF-based development by MODAF Partners, a consortium of Cornwell Management Consulting (now [[Serco Group]]) and [[PA Consulting Group]] with [http://www.modelfutures.com Model Futures] providing the technical input, and extended by other key suppliers such as [[Logica]] and [[Vega Group|Vega]] through work for the MOD Integration Authority (as of April 2008 the System Engineering Integration Group (SEIG)). The initial version of MODAF combined the metamodel developed from the QinetiQ research programme and the views developed by MODAF Partners.
+
+== Framework ==
+
+MODAF is a set of templates (called âViewsâ) that provide a standard notation for the capture of information about a business in order to identify ways to improve the business. Each MODAF View offers a different perspective on the business to support different stakeholder interests, presented in a format, usually graphical, that aids understanding of how a business operates.
+
+The Views are divided into seven categories (Viewpoints):
+
+* Strategic Viewpoint (StV) defines the desired business outcome, and what capabilities are required to achieve it;
+
+* Operational Viewpoint (OV) defines (in abstract rather than physical terms) the processes, information and entities needed to fulfil the capability requirements;
+
+* Service Orientated Viewpoint (SOV) describes the services, (i.e. units of work supplied by providers to consumers), required to support the processes described in the operational Views;
+
+* Systems Viewpoint (SV) describes the physical implementation of the Operational and Service Orientated Views and, thereby, define the solution;
+
+* Acquisition Viewpoint (AcV) describes the dependencies and timelines of the projects that will of deliver the solution;
+
+* Technical Viewpoint (TV) defines the standards that are to be applied to the solution;
+
+* All Viewpoint (AV) provides a description and glossary of the contents of the architecture.
+
+The relationship between the data in the MODAF Views is defined in the MODAF Meta Model, known as the M3. The M3 provides a logical structure for the storage of the data in a database and, subsequent, provides the necessary coherence for the data to be shared with other MODAF architectures.
+
+== Functionality of Framework ==
+
+In MOD, MODAF has primarily been used in acquisition domains, programmes and delivery teams to support the delivery of military capability, particularly NEC. A number of MODAF architectures directly support operations in [[Afghanistan]].   In addition, MODAF is widely used by its industry partners, such as [[BAE Systems]], [[Thales]], [[Lockheed Martin]], [[Boeing]] and [[Serco]]. It is also used by other government departments and agencies, such as [[GCHQ]], and external bodies such as the [[National Air Traffic Services]] (NATS). MODAF is used by the Swedish Armed Forces to support the development of military capability, and it has been adapted by [[NATO]] to form the core of the [[NATO Architecture Framework]] (NAF).
+
+== Harmonisation ==
+MODAF will continue in its current form for the foreseeable future. However, [[Ministry of Defence (United Kingdom)|MOD]] is working closely with the [[United States Department of Defense]], the [[Canadian Department of National Defence]], the [[Australian Department of Defence]], and the [[Swedish Armed Forces]] to develop the [[IDEAS Group|International Defence Enterprise Architecture Specification]] (IDEAS). Although the focus for [[IDEAS Group|IDEAS]] has been the ability to provide a mechanism to better enable the exchange of architecture information between Nations, the [[IDEAS Group|IDEAS Management Group]] are also actively considering how their architecture frameworks should converge, perhaps into a single unified architecture framework.
+
+== Tools and Tooling ==
+MOD is âagnosticâ about which software tools should or should not be used to develop MODAF architectures.  The key requirement is that they should correctly implement the [[MODAF Meta-Model|M3]]&lt;ref&gt;[http://www.mod.uk/DefenceInternet/AboutDefence/CorporatePublications/InformationManagement/MODAF/ModafMetaModel.htm]&lt;/ref&gt; with downloads in Sparx Systems [[Enterprise Architect (Visual Modeling Platform)|Enterprise Architect]]; [[HTML]] and [[XMI]] formats. to provide a coherent structure against which architecture information can be exchanged. A number of tools offer this functionality.
+
+MOD has been working with the [[Object Management Group]] (OMG) to develop the Unified Profile for [[DoDAF]] and MODAF ([[UPDM]]), a standard specification that provides an accurate representation of the [[MODAF Meta-Model|M3]] for tools based on the [[Unified Modelling Language]] (UML) or [[Systems Modeling Language|Systems Modelling Language]] (SysML)
+
+==Terminology==
+An &quot;architectural framework&quot; or &quot;architecture framework&quot; is a specification of how to organise and present architectural models. An architectural framework consists of a standard set of views, which each have a specific purpose.
+
+An &quot;architectural description&quot; is a contiguous, coherent model of an enterprise. An architectural description comprises &quot;architectural products&quot;. MODAF is not an architectural description.
+
+A &quot;view&quot; is a specification of a way to present an aspect of the enterprise. Views are defined with one or more purposes in mind - e.g., showing the logical topology of the enterprise, describing a process model, defining a data model, etc.
+
+An &quot;architectural product&quot; is a model of some aspect of the enterprise. An architectural product conforms to a &quot;view&quot;
+
+A &quot;viewpoint&quot; is a collection of &quot;views.&quot; Viewpoints are usually categorized by domain - e.g., in MODAF there are seven viewpoints.
+
+== Applications ==
+Although originally developed by the [[British Ministry of Defence|UK Ministry of Defence]], MODAF is the standard architecture framework for other organisations, such as:
+
+* [[GCHQ]]
+* [[Swedish Armed Forces]]
+* [[National Air Traffic Services]]
+* MooD International use MODAF Solutions (built using their MooD Technology) for the Defence and National Security Sectors - see http://www.moodinternational.com/
+* [[BAE Systems]] use MODAF on a number of internal programmes, most notably their TRAiDE environment
+* [[EADS]] use MODAF as part of the Modelling and Simulation process for NetCOS their Synthetic Environment
+* [[Thales Group]] use MODAF in their work for UK MOD
+* [[Avolution]] use MODAF widely within the UK Defence and Security sectors
+* Niteworks use MODAF extensively on problem solving and warfighter experimentation for the UK MOD - See http://www.niteworks.net
+* Centric Labs use MODAF as part of the Modelling process for the [[Swedish Armed Forces]]
+* [[BAA Limited]] - see http://www.centriclabs.se/
+* Model Futures Ltd. uses MODAF, and were part of the original team that developed the framework for MOD - see http://www.modelfutures.com
+
+In addition, revision 3 of the [[NATO Architecture Framework]] (NAF) is identical to MODAF at its core, but extends the framework by adding views for Bandwidth Analysis, SOA and Standards configurations.
+
+MODAF is also the basis for other frameworks such as [[TRAK]], a domain-free framework, which is based on MODAF 1.2
+
+== See also ==
+
+* [[Department of Defense Architecture Framework|DoDAF]]
+* [[IDEAS Group]]
+* [[MOD Ontology]]
+* [[UPDM]]
+* [[AGATE (architecture framework)|AGATE]]
+* [http://www.img-ggi.forces.gc.ca/pub/af-ca/index-eng.asp DNDAF]
+
+== References ==
+{{reflist}}
+{{Primary sources|date=February 2011}}
+
+== External links ==
+* [http://www.mod.uk/DefenceInternet/AboutDefence/CorporatePublications/PolicyStrategyandPlanning/ModInformationStrategy2009.htm MOD Information Strategy (MODIS) 2009]
+* [http://www.aof.mod.uk/aofcontent/tactical/engineering/content/systems_guidance/se_systemofsystems.htm DE&amp;S Systems of Systems Approach (SOSA)]
+* [http://www.mod.uk/DefenceInternet/AboutDefence/WhatWeDo/InformationManagement/MODAF MOD Site for MODAF]
+* [http://www.mod.uk/DefenceInternet/AboutDefence/CorporatePublications/InformationManagement/MODAF/ModafMetaModel.htm MODAF Meta-Model]
+* [http://www.zachmaninternational.us/ Zachman International]
+* [http://www.integrated-ea.com/Previous-Years Integrated EA] Various Presentations on MODAF from Integrated EA Conferences 2008-2010
+
+{{United Kingdom Ministry of Defence}}
+{{Use dmy dates|date=February 2011}}
+
+{{DEFAULTSORT:Modaf}}
+[[Category:Enterprise architecture]]
+
+[[fr:Ministry of Defense Architecture Framework]]</rev></revisions></page></pages></query></api>

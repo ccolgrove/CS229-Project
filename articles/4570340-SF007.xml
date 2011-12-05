@@ -1,0 +1,92 @@
+<?xml version="1.0"?><api><query><pages><page pageid="4570340" ns="0" title="Tivoization"><revisions><rev xml:space="preserve">'''Tivoization''' (pronounced &quot;Teevo-ization&quot;) is a [[Neologism|coined term]] to describe the creation of a system that incorporates [[software]] under the terms of a [[copyleft]] [[software license]] (like the [[GPL]]), but uses [[hardware restrictions]] to prevent users from running modified versions of the software on that hardware.  [[Richard Stallman]] coined the term and believes this practice denies users some of the freedom that the [[GNU General Public License]] (GNU GPL) was designed to protect.&lt;ref&gt;[http://gplv3.fsf.org/pipermail/info-gplv3/2006-February/000001.html &lt;nowiki&gt;[&lt;/nowiki&gt;Info-gplv3&lt;nowiki&gt;]&lt;/nowiki&gt; âGPLv3 Update #2â by John Sullivan, FSF on 2006-02-08]&lt;/ref&gt; The term came about in reference to [[TiVo]]'s use of GNU GPL licensed software on the TiVo brand [[digital video recorder|digital video recorders (DVR)]] which actively blocks users from running modified software on its hardware by design.&lt;ref&gt;http://www.gnu.org/licenses/gpl-faq.html#Tivoization GNU.org Frequently Asked Questions about the GNU Licenses&lt;/ref&gt;&lt;ref&gt;http://www.gnu.org/licenses/quick-guide-gplv3.html A Quick Guide to GPLv3&lt;/ref&gt;
+
+==Overview==
+TiVo's software incorporates the [[Linux kernel]] and [[GNU]] software, both of which are licensed under version 2 of the [[GNU General Public License]] (GPLv2).  GPLv2 requires distributors to make the corresponding [[source code]] available to each person who receives the software.  The goal of this requirement is to allow users of GPL'd software to modify the software to better suit their purposes.&lt;ref&gt;{{cite web
+|url=http://www.gnu.org/philosophy/free-sw.html
+|title=The Free Software Definition
+|quote=...The freedom to study how the program works, and adapt it to your needs...
+|}}&lt;/ref&gt;
+
+However, Stallman believes TiVo circumvented this goal by making their products run programs only if the program's [[digital signature]] matches those authorized by the manufacturer of the TiVo.&lt;ref&gt;[http://www.gratisoft.us/tivo/bigdisk.html âUsing large disks with TiVoâ at www.gratisoft.us]&lt;/ref&gt;  So while TiVo has complied with the GPL v2 requirement to release the source code for others to modify, any modified software will not run on TiVo's hardware.
+
+On the other hand, [[Linus Torvalds]], the original author of the Linux kernel, has argued that it is appropriate for TiVo to use digital signatures to limit what software may run on the systems that they sell.  Torvalds has stated that he believes the use of private digital signatures on software is a beneficial security tool.  Torvalds also believes that software licenses should attempt to control only software, not the hardware on which it runs.  So, as long as one has access to the software, and can modify it to run on some other hardware, Torvalds believes there is nothing unethical about using digital signatures to prevent running modified copies of Linux.&lt;ref&gt;[http://groups.google.com/group/fa.linux.kernel/browse_frm/thread/2f93510ff38d9089 fa.linux.kernel: Linus Torvalds: Flame Linus to a crisp! on 2003-04-24]&lt;/ref&gt; Other Linux developers, including [[Alan Cox]],&lt;ref&gt;[http://news.zdnet.co.uk/software/0,1000000121,39249913,00.htm âUK Linux guru backs GPL 3â on news.zdnet.co.uk on 2006-01-31]&lt;/ref&gt; have expressed divergent opinions.
+
+Stallman and the Free Software Foundation have attempted to respond to some of these concerns.  They have stated that their goal is for GPLv3 to allow private digital signatures for security purposes, but to still prevent Tivoization.
+
+==Response==
+In 2006, [[Free Software Foundation]] (FSF) decided to combat TiVo's technical system of blocking users from running modified software.  The practice was tackled by creating a new version of the [[GNU General Public License#Version 3|GNU General Public License (GPL v3)]] prohibiting this activity.&lt;ref&gt;{{cite web|url=http://fsfeurope.org/projects/gplv3/brussels-rms-transcript#tivoisation|title=Richard Stallman explains the new GPL provisions to block &quot;tivoisation&quot;}}&lt;/ref&gt;  The operating system kernel included in the TiVo is distributed under the terms of the GPL, and the FSF's goal is to ensure that all recipients of software licensed under the new GPL are not restricted by hardware constraints on the modification of distributed software. This new license provision was acknowledged by TiVo in its April 2007 [[SEC filing]]: &quot;''we may be unable to incorporate future enhancements to the GNU/Linux operating system into our software, which could adversely affect our business''&quot;.&lt;ref&gt;{{cite web
+|url=http://www.informationweek.com/industries/showArticle.jhtml?articleID=199900263|title=InformationWeek: TiVo Warns Investors New Open Source License Could Hurt Business}}&lt;/ref&gt; Regardless, the Linux kernel has not been changed to use GPL v3.
+
+==GPLv3==
+One of the goals of [[GPL#Version 3|GPL Version 3]] is to prevent &quot;Tivoization&quot;.  According to [[Eben Moglen]], &quot;the licence should prohibit technical means of evasion of its rules, with the same clarity that it prohibits legal evasion of its rules.&quot;&lt;ref&gt;{{cite web
+|url=http://www.fsfeurope.org/projects/gplv3/barcelona-moglen-transcript.en.html#drm
+|title=Eben Moglen, speaking about GPLv3 in Barcelona
+|}}&lt;/ref&gt;
+
+Draft 2 of GPLv3 attempted to clarify this.&lt;ref&gt;[http://gplv3.fsf.org/drm-dd2.html Opinion on Digital Restrictions Management â GPLv3&lt;!-- Bot generated title --&gt;]&lt;/ref&gt;  However, some Linux kernel developers were still concerned that draft 2 GPLv3 may still prohibit beneficial uses of digital signatures.&lt;ref&gt;[http://groups.google.com/group/linux.kernel/msg/36ad030397f575f5 linux.kernel: âGPLv3 Position Statementâ by James Bottomley on 2006-09-22]&lt;/ref&gt;  
+
+In the third and fourth discussion drafts of GPLv3, released March 28, 2007 and May 31, 2007 respectively, the anti-tivoization clause was limited so as not to apply when the software is distributed to a business.&lt;ref&gt;{{cite web
+|url=http://gplv3.fsf.org/dd3-faq
+|title=GPLv3 FAQ, with explanation of Section 6's limits
+|}}&lt;/ref&gt;  Thus, medical devices and voting machines would not be covered. The final, official GPLv3 was published on June 29, 2007 with no major changes in respect to tivoization relative to the fourth draft.  
+
+[[Linus Torvalds]] said he was &quot;pretty pleased&quot; with the new draft's stance on [[Digital Rights Management|DRM]].&lt;ref&gt;{{cite web
+|url=http://news.com.com/2061-10795_3-6171300.html
+|title=Torvalds 'pretty pleased' about new GPL 3 draft
+|publisher=CNet news.com
+|}}&lt;/ref&gt; However, he still does not support relicensing the Linux kernel under GPLv3:
+
+{{cquote|[Stallman] calls it &quot;tivoization&quot;, but that's a word he has made up, and a term I find offensive, so I don't choose to use it. It's offensive because Tivo never did anything wrong, and the FSF even acknowledged that. The fact that they do their hardware and have some DRM issues with the content producers and thus want to protect the integrity of that hardware.
+
+The kernel license covers the *kernel*. It does not cover boot loaders and hardware, and as far as I'm concerned, people who make their own hardware can design them any which way they want. Whether that means &quot;booting only a specific kernel&quot; or &quot;sharks with lasers&quot;, I don't care.|||Linus Torvalds&lt;ref&gt;Linus Torvalds. &quot;Re: Dual-Licensing Linux Kernel with GPL V2 and GPL V3&quot;, Message to the Linux Kernel Mailing List dated Wed, 13 Jun 2007 14:33:07 -0700 (PDT)&lt;/ref&gt;}}
+
+In any case, changing the license of the Linux kernel would likely be infeasible due to its very large number of copyright holders. Unlike most GPL software, the kernel is licensed only under GPLv2 without the wording &quot;or, at
+your option, any later version&quot;, therefore the agreement of all copyright holders would be required to relicense under a new version.&lt;ref&gt;http://blogs.fsfe.org/ciaran/?p=58&lt;/ref&gt;
+
+Some other projects widely used in Tivoized embedded systems, such as [[Busybox]], have also declined to move to GPLv3.&lt;ref&gt;{{cite web
+|title=http://lwn.net/Articles/202106/
+|url=http://lwn.net/Articles/202106/
+|publisher=LWN
+|}}&lt;/ref&gt;
+
+==References==
+{{reflist|2}}
+
+==See also==
+* [[TiVo]]
+* [[GNU General Public License|GPL (GNU General Public License)]]
+* [[Free Software Foundation]]
+* [[Vendor lock-in]]
+
+==External links==
+*[http://www.gnu.org/licenses/gpl-faq.html#Tivoization Free Software Foundation definition of &quot;Tivoization&quot;]
+*[http://www.linfo.org/tivoization.html An Introduction to Tivoization] by The Linux Information Project (LINFO)
+*[http://www.mail-archive.com/blinuxforum@lists.freearchive.org/msg00592.html Stallman, Torvalds, Moglen share views on DRM and GPLv3] - by Shashank Sharma August 09, 2006, from [[Newsforge]]
+*[http://www.tivo.com/linux/ TiVo's GPL-required modifications] to the [[Linux kernel]], [[glibc]], and other software
+*Richard Stallman's explanations of &quot;tivoisation&quot;:
+**[http://www.fsfeurope.org/projects/gplv3/torino-rms-transcript.en.html#drm Italy, March 2006]
+**[http://www.fsfeurope.org/projects/gplv3/fisl-rms-transcript.en.html#tivoisation Brazil, April 2006]
+**[http://www.fsfeurope.org/projects/gplv3/barcelona-rms-transcript.en.html#tivoisation Spain, June 2006]
+**[http://www.fsfeurope.org/projects/gplv3/bangalore-rms-transcript.en.html#tivoisation India, August 2006]
+**[http://fsfeurope.org/projects/gplv3/tokyo-rms-transcript#tivoisation Japan, November 2006]
+**[[commons:Category:Richard_Stallman_and_Bruce_Perens_at_Hi!_Tech_Festival | Stallman and Bruce Perens debating about GPL and tivoization (on Wikimedia Commons)]]
+*[[Eben Moglen]]'s explanations:
+**[http://www.fsfeurope.org/projects/gplv3/barcelona-moglen-transcript.en.html#drm Spain, June 2006]
+*[[CiarÃ¡n O'Riordan]]'s explanations:
+**[http://fsfeurope.org/projects/gplv3/tokyo-ciaran-transcript#tivoisation-and-freedom Japan, November 2006]
+**[http://fsfe.org/en/fellows/ciaran/ciaran_s_free_software_notes/tivoisation_explained_implementation_and_harms Tivoisation explained - implementation and harms] (article)
+*[http://linuxdevices.com/articles/AT3899346728.html &quot;Using a hypervisor to reconcile GPL and proprietary embedded code&quot; article] with a focus on Tivoization
+{{FOSS}}
+[[Category:Free software culture and documents]]
+[[Category:Technology neologisms]]
+
+[[da:Tivoisering]]
+[[de:Tivoisierung]]
+[[es:TivoizaciÃ³n]]
+[[fr:Tivoisation]]
+[[ko:í°ë³´ì´ì ì´ì]]
+[[it:Tivoization]]
+[[ja:TiVoå]]
+[[pl:Tiwoizacja]]
+[[ro:Tivoizare]]
+[[ru:Ð¢Ð¸Ð²Ð¾Ð¸Ð·Ð°ÑÐ¸Ñ]]</rev></revisions></page></pages></query></api>

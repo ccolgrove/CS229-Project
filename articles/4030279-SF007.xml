@@ -1,0 +1,212 @@
+<?xml version="1.0"?><api><query><pages><page pageid="4030279" ns="0" title="Shebang (Unix)"><revisions><rev xml:space="preserve">[[File:Poundexclam.svg|thumb|right|A &quot;shebang&quot; or &quot;hashbang&quot; character sequence]]
+
+In [[computing]], a '''shebang''' (also called a '''hashbang''') is the character sequence consisting of the characters [[number sign]] and [[exclamation point]] (&lt;tt&gt;#!&lt;/tt&gt;), when it occurs as the first two characters on the first line of a text file. In this case, the [[Loader (computing)|program loader]] in [[Unix-like]] operating systems parses the rest of the first line as an [[interpreter directive]] and invokes the program specified after the character sequence with any command line options specified as parameters. The name of the file being executed is passed as the final argument.&lt;ref&gt;{{cite web|title=execve(2) - Linux man page|url=http://linux.die.net/man/2/execve|accessdate=2010-10-21}}&lt;/ref&gt;
+
+For example, a file starting with the line:
+
+:&lt;code&gt;#!/bin/sh&lt;/code&gt;
+
+invokes the [[Bourne shell]] or a compatible shell. This is the standard starting line of a [[shell script]].
+
+The contents of the shebang line will be automatically ignored by the interpreter, because the ''#'' character is a comment marker in many scripting languages.  Some language interpreters that do not use the hash mark to begin comments, such as [[Scheme (programming language)|Scheme]], still may ignore the shebang line.&lt;ref&gt;[http://srfi.schemers.org/srfi-22/ SRFI 22]&lt;/ref&gt;
+
+The ''shebang'' or ''hashbang'' name is also sometimes used of state-preserving [[fragment identifier]]s in Ajax applications; [[Google Webmaster Tools|Google Webmaster Central]] specifies that fragment identifiers starting with an exclamation point (...url#!state...) are indexed specially by the Googlebot.
+
+==Syntax==
+The syntax of feature consists of the character sequence &lt;tt&gt;#!&lt;/tt&gt;, i.e. the [[number sign]] and an [[exclamation point]] character. This initiating character sequence may be followed by whitespace, then followed by the (absolute) [[Path (computing)|path]] to the interpreter program that will provide the interpretation. The shebang is looked for and used when a script is invoked directly (as with a regular executable), and largely to the end of making scripts look and act like regular executables, to the operating system and to the user.
+
+==Etymology and name history==
+The name ''shebang'' comes from an inexact [[contraction (grammar)|contraction]] of ''[[sharp (music)|SHArp]] [[Exclamation Mark|bang]]'' or ''haSH bang'', referring to the two typical Unix names of the two characters. Unix jargon uses ''sharp'' or ''hash'' (and sometimes, even, ''mesh'') to refer to the number sign character and ''bang'' to refer to the exclamation point, hence ''shebang''. Another theory on ''sh'' in shebang's name is from default shell &lt;code&gt;sh&lt;/code&gt;, usually invoked with shebang.&lt;ref&gt;{{cite web|url=http://catb.org/jargon/html/S/shebang.html |title=Jargon File entry for shebang |publisher=Catb.org |date= |accessdate=2010-06-16}}&lt;/ref&gt;
+
+The initial two characters, &quot;#!&quot; of the interpreter directive have a range of jargon terms.  One, &quot;shebang&quot;,&lt;ref&gt;http://www.catb.org/~esr/jargon/html/S/shebang.html The Jargon File: shebang&lt;/ref&gt; is representative (with an American bias) but far from universal.  An executable file starting with an interpreter directive is simply called a script, often prefaced with the name or general classification of the intended interpreter.
+
+When asked about what he would call his feature (i.e.
+&quot;What do you personally call that first line&quot;),
+[[Dennis Ritchie]] answered:
+
+&lt;blockquote&gt;&lt;pre&gt;
+From: &quot;Ritchie, Dennis M (Dennis)** CTR **&quot; &lt;dmr@[redacted]&gt;
+To: &lt;[redacted]@talisman.org&gt;
+Date: Thu, 19 Nov 2009 18:37:37 -0600
+Subject: RE: What do -you- call your #!&lt;something&gt; line?
+
+ I can't recall that we ever gave it a proper name.
+It was pretty late that it went in--I think that I
+got the idea from someone at one of the UCB conferences
+on Berkeley Unix; I may have been one of the first to
+actually install it, but it was an idea that I got
+from elsewhere.
+
+As for the name: probably something descriptive like
+&quot;hash-bang&quot; though this has a specifically British flavor, but
+in any event I don't recall particularly using a pet name
+for the construction.
+
+   Regards,
+   Dennis
+&lt;/pre&gt;&lt;/blockquote&gt;
+
+== History ==
+The shebang was introduced by [[Dennis Ritchie]] between [[Version 7 Unix|Edition 7]] and [[Version 8 Unix|8]] at Bell Laboratories. It was also added to the [[BSD]] releases from Berkeley's Computer Science Research (present at 2.8BSD&lt;ref&gt;http://www.mckusick.com/csrg CSRG Archive CD-ROMs&lt;/ref&gt; and activated by default by 4.2BSD).&lt;ref&gt;{{cite web|url=http://www.in-ulm.de/~mascheck/various/shebang/sys1.c.html |title=extracts from 4.0BSD /usr/src/sys/newsys/sys1.c |publisher=In-ulm.de |date= |accessdate=2010-06-16}}&lt;/ref&gt;  As AT&amp;T Bell Laboratories Edition 8 Unix, and later editions, were not released to the public, the first widely known appearance of this feature was on BSD.
+
+The lack of an interpreter directive, but support for shell scripts, is apparent in the documentation from [[Version 7 Unix]] in 1979,
+&lt;ref&gt;http://cm.bell-labs.com/7thEdMan/v7vol2a.pdf UNIX TIME-SHARING SYSTEM: UNIX PROGRAMMERâS MANUAL Seventh Edition, Volume 2A,
+January, 1979&lt;/ref&gt; which describes instead a facility of the Bourne shell where files with execute permission would be handled specially by the shell, which would (sometimes depending on initial characters in the script, such as &quot;:&quot; or &quot;#&quot;) spawn a subshell which would interpret and run the commands contained in the file.  In this model, scripts would only behave as other commands if called from within a Bourne shell.  An attempt to directly execute such a file via the operating system's own exec() system trap would fail, preventing scripts from behaving uniformly as normal system commands.
+
+In later versions of Unix-like systems, this inconsistency was removed.  [[Dennis Ritchie]] introduced kernel support for interpreter directives in January 1980, for [[Version 8 Unix]], with the following description:&lt;ref&gt;http://www.in-ulm.de/~mascheck/various/shebang/sys1.c.html The '#!' magic - details about the shebang mechanism on various Unix flavours&lt;/ref&gt;&lt;ref&gt;http://www.mckusick.com/csrg CSRG Archive CD-ROMs&lt;/ref&gt;
+
+&lt;blockquote&gt;&lt;pre&gt;
+From uucp Thu Jan 10 01:37:58 1980
+&gt;From dmr Thu Jan 10 04:25:49 1980 remote from research
+The system has been changed so that if a file being executed
+begins with the magic characters #! , the rest of the line is understood
+to be the name of an interpreter for the executed file.
+Previously (and in fact still) the shell did much of this job;
+it automatically executed itself on a text file with executable mode
+when the text file's name was typed as a command.
+Putting the facility into the system gives the following
+benefits.
+
+1) It makes shell scripts more like real executable files,
+because they can be the subject of 'exec.'
+
+2) If you do a 'ps' while such a command is running, its real
+name appears instead of 'sh'.
+Likewise, accounting is done on the basis of the real name.
+
+3) Shell scripts can be set-user-ID.
+
+4) It is simpler to have alternate shells available;
+e.g. if you like the Berkeley csh there is no question about
+which shell is to interpret a file.
+
+5) It will allow other interpreters to fit in more smoothly.
+
+To take advantage of this wonderful opportunity,
+put
+
+	#! /bin/sh
+
+at the left margin of the first line of your shell scripts.
+Blanks after ! are OK.  Use a complete pathname (no search is done).
+At the moment the whole line is restricted to 16 characters but
+this limit will be raised.
+&lt;/pre&gt;&lt;/blockquote&gt;
+
+Kernel support for interpreter directives spread to other versions of Unix, and one modern implementation can be seen in the Linux kernel source in &lt;tt&gt;fs/binfmt_script.c&lt;/tt&gt;.&lt;ref&gt;http://www.linuxjournal.com/article/2568 Playing with Binary Formats, January 1998&lt;/ref&gt;
+
+This mechanism allows scripts to be used in virtually any context normal compiled programs can be, including as full system programs, and even as interpreters of other scripts.  As a caveat, though, some early versions of kernel support limited the length of the interpreter directive to roughly 32 characters (just 16 in its first implementation), would fail to split the interpreter name from any parameters in the directive, or had other quirks.  Additionally, some modern systems allow the entire mechanism to be constrained or disabled for security purposes (for example, set-user-id support has been disabled for scripts on many systems).
+
+Note that, even in systems with full kernel support for the &lt;code&gt;#!&lt;/code&gt; [[Magic number (programming)|magic number]], some scripts lacking interpreter directives (although usually still requiring execute permission) are still runnable by virtue of the legacy script handling of the Bourne shell, still present in many of its modern descendants.
+
+==Examples==
+Some typical shebang lines:
+* &lt;code&gt;#!/bin/sh&lt;/code&gt; â Execute the file using sh, the [[Bourne shell]], or a compatible shell
+* &lt;code&gt;#!/bin/csh&lt;/code&gt; â Execute the file using csh, the [[C shell]], or a compatible shell
+* &lt;code&gt;#!/usr/bin/perl -T&lt;/code&gt; â Execute using [[Perl]] with the option for ''taint'' checks
+* &lt;code&gt;#!/usr/bin/python -O&lt;/code&gt; â Execute using [[Python (programming language)|Python]] with optimizations to code
+* &lt;code&gt;#!/usr/bin/php&lt;/code&gt; â Execute the file using the [[PHP]] command line interpreter
+
+On many systems, &lt;code&gt;/bin/sh&lt;/code&gt; is a symbolic or [[hard link]] to [[Bash (Unix shell)|bash]]. When invoked in this manner, many features of bash are disabled, to comply with POSIX.&lt;ref name=&quot;man_bash&quot;&gt;GNU bash [http://www.cs.sunysb.edu/documentation/bash/bash.html manual page]: &quot;If  bash  is  invoked  with  the name sh, it tries to mimic the startup behavior of historical versions of sh as  closely  as  possible,  while conforming  to the POSIX standard as well. ''[...]'' When invoked as sh, bash enters posix mode after the startup files are read.&quot;&lt;/ref&gt;
+
+Shebang lines may include specific options that are passed to the interpreter (see the [[Perl]] example above).  However, implementations vary in the parsing behavior of options.
+
+==Purpose==
+Interpreter directives allow scripts and data files to be used as system commands, hiding the details of their implementation from users and other programs, by removing the need to prefix scripts with their interpreter on the command line.
+
+Hence, assuming a [[Bourne shell]] script in &lt;tt&gt;/usr/local/bin/foo&lt;/tt&gt; with a first line of
+ &lt;code&gt;#!/bin/sh -x&lt;/code&gt;
+...which is run from the command line with the following (where &quot;$&quot; is just one possible prompt):
+ $ &lt;code&gt;foo bar&lt;/code&gt;
+...the result would be actual command execution equivalent (except for argv[0] being set to the filename) to:
+ $ &lt;code&gt;/bin/sh -x /usr/local/bin/foo bar&lt;/code&gt;
+Since &lt;code&gt;sh&lt;/code&gt; reads commands from a filename provided on its command line (instead of from the user, as it would normally), the end result is that all the shell commands in &lt;tt&gt;/usr/local/bin/foo&lt;/tt&gt; are run automatically, with '''bar''' provided as a parameter, &lt;code&gt;$1&lt;/code&gt;, to those commands to use as they see fit.
+
+Since the initial [[number sign]] is also the character introducing comments in the [[Bourne shell]] and many other interpreters, that interpreter directive itself is considered by the interpreter to be merely a comment, and skipped.
+However, it is up to the interpreter to ignore the shebang line; thus a script consisting of the following two lines:
+ #!/bin/cat
+ Hello world!
+will echo ''both'' lines to [[standard output]].
+
+== Portability ==
+Shebangs must specify [[absolute path]]s to system executables; this can cause problems on systems that have a non-standard file system layout. Even when systems have fairly standard paths, it is quite possible for variants of the same operating system to have different locations for the desired interpreter. [[Python (programming language)|Python]], for example, might be in &lt;tt&gt;/usr/bin/python&lt;/tt&gt;, &lt;tt&gt;/usr/local/bin/python&lt;/tt&gt;, or even something like &lt;tt&gt;/home/''username''/bin/python&lt;/tt&gt; if being tested by a user.
+
+Because of this it is common to need to edit the shebang line after copying a [[script (computer programming)|script]] from one computer to another because the path that was coded into the script may not apply on a new machine, depending on the consistency in past convention of placement of the interpreter.  For this and other reasons, [[POSIX]] does not standardize the feature.
+
+Often, the program [[env|/usr/bin/env]] can be used to circumvent this limitation by introducing a level of indirection. &lt;tt&gt;#!&lt;/tt&gt; is followed by
+&lt;tt&gt;/usr/bin/env&lt;/tt&gt;,
+followed by the desired command without full path,
+as in this example:
+ &lt;code&gt;#!/usr/bin/env sh&lt;/code&gt;
+
+This mostly works because the path &lt;tt&gt;/usr/bin/env&lt;/tt&gt; is commonly used for the utility,
+and &lt;tt&gt;env&lt;/tt&gt; invokes the first &lt;tt&gt;sh&lt;/tt&gt; found in the user's $PATH, typically &lt;tt&gt;/bin/sh&lt;/tt&gt;, if the user's path is correctly configured.
+
+This approach may introduce vulnerabilities that expose information or gain unauthorized root access and does not grant complete portability.&lt;ref&gt;{{cite web|url=http://www.dwheeler.com/secure-programs/Secure-Programs-HOWTO/environment-variables.html#ENV-VAR-SOLUTION |title=Secure Programs HowTo - Environment Variables |publisher=Dwheeler.com |date=2003-03-03 |accessdate=2010-11-18}}&lt;/ref&gt; There are still some portability issues with OpenServer 5.0.6 and Unicos 9.0.2 which have only /bin/env and no /usr/bin/env.&lt;ref&gt;{{cite web|url=http://www.in-ulm.de/~mascheck/various/shebang/ |title=Details about '#!' |publisher=In-ulm.de |date= |accessdate=}}&lt;/ref&gt;
+
+Another portability problem is the interpretation of the command arguments.
+Some systems, including Linux, do not split up the arguments&lt;ref&gt;{{cite web|url=http://mail-index.netbsd.org/netbsd-users/2008/11/09/msg002388.html |title=/usr/bin/env behaviour |publisher=Mail-index.netbsd.org |date=2008-11-09 |accessdate=2010-11-18}}&lt;/ref&gt;; for example, when running the script with the first line like,
+ #!/usr/bin/env python -c
+That is, ''python -c'' will be passed as one argument to /usr/bin/env, rather than two arguments. [[Cygwin]] also behaves this way. Some other systems handle the arguments differently.{{or|date=October 2010}}
+
+Another common problem is scripts containing a [[carriage return]] character immediately after the shebang, perhaps as a result of being edited on a system that uses DOS [[newline|line break]]s, such as [[Microsoft Windows]]. Some systems interpret the carriage return character as part of the [[Interpreter (computing)|interpreter]] command, resulting in an error message.
+
+POSIX requires that &lt;code&gt;sh&lt;/code&gt; is a shell capable of a syntax similar to the [[Bourne shell]], although it does not require it to be located at &lt;code&gt;/bin/sh&lt;/code&gt;; for example, some systems such as Solaris have the POSIX-compatible shell at &lt;code&gt;/usr/xpg4/bin/sh&lt;/code&gt;.&lt;ref&gt;{{cite web|url=http://pubs.opengroup.org/onlinepubs/9699919799/utilities/sh.html#tag_20_117_16|title=The Open Group Base Specifications Issue 7|date=2008|accessdate=2010-04-05}}&lt;/ref&gt; In many [[Linux]] systems and recent releases of [[Mac OS X]], &lt;code&gt;/bin/sh&lt;/code&gt; is a hard or [[symbolic link]] to &lt;code&gt;/bin/bash&lt;/code&gt;, the [[Bash (Unix shell)|Bourne Again shell]]. 
+
+Using [[bashism|syntax specific to bash]] while maintaining a shebang pointing to the Bourne shell is not portable.&lt;ref&gt;[http://www.pixelbeat.org/programming/shell_script_mistakes.html pixelbeat.org: Common shell script mistakes] &quot;It's much better to test scripts directly in a POSIX compliant shell if possible. The `bash --posix` option doesn't suffice as it still accepts some 'bashisms'&quot;&lt;/ref&gt;
+
+==Magic number==
+The shebang is actually a human-readable instance of a [[Magic number (programming)|magic number]] in the executable file, the magic byte string being &lt;code&gt;0x23 0x21&lt;/code&gt;, the two-character encoding in [[ASCII]]. (Executable files that do not require an interpreter program start with other magic combinations. See [[File format]] for more details of magic numbers.)
+
+Nonetheless, interpreted text files using the shebang are still text files, not binary files; a [[text editor]] that introduces superfluous leading bytes will break the constructions as the file would not start with &lt;code&gt;0x23 0x21&lt;/code&gt;. In particular, [[UTF-8]]âthe standard character encoding for text files on many [[Unix-like]] systemsâis ASCII-compatible, assigning all characters in the ASCII character set to the same one-byte codes; but UTF-8 files on Windows usually begin with a three-byte [[byte order mark]] (&lt;code&gt;0xEF 0xBB 0xBF&lt;/code&gt;). These bytes change the magic number and thus the interpreter will not be run (unless this other magic number is also recognized). For this and other reasons, use of the byte order mark is strongly recommended against on [[POSIX]] (Unix-like) systems.&lt;ref&gt;{{cite web|title = FAQ - UTF-8, UTF-16, UTF-32 &amp; BOM: Can a UTF-8 data stream contain the BOM character (in UTF-8 form)? If yes, then can I still assume the remaining UTF-8 bytes are in big-endian order?|url = http://unicode.org/faq/utf_bom.html#bom5|accessdate = 2009-01-04}}&lt;/ref&gt;&lt;ref&gt;{{cite web|url=http://www.cl.cam.ac.uk/~mgk25/unicode.html#ucsutf|title=UTF-8 and Unicode FAQ for Unix/Linux: What different encodings are there?|author=Markus Kuhn|accessdate=20 January 2009|year=2007|quote=Adding a UTF-8 signature at the start of a file would interfere with many established conventions such as the kernel looking for â#!â at the beginning of a plaintext executable to locate the appropriate interpreter. }}&lt;/ref&gt; A byte order mark is unneeded for UTF-8 (as opposed to [[UTF-16]]) since UTF-8 can reliably be recognised as such by a simple algorithm.
+
+There have been rumors that some old versions of UNIX look for the normal shebang followed by a space and a slash (&quot;&lt;tt&gt;#! /&lt;/tt&gt;&quot;), but this appears to be untrue.&lt;ref&gt;{{cite web|url=http://www.in-ulm.de/~mascheck/various/shebang/#details |title=32 bit shebang myth |publisher=In-ulm.de |date= |accessdate=2010-06-16}}&lt;/ref&gt;
+
+On Unix-like operating systems, new image files are started by the &quot;[[exec (operating system)|exec]]&quot; family functions. This is where the operating system will detect that an image file is either a script or an executable binary. The presence of the shebang will result in the execution of the specified (usually script language) executable. This is described on the Solaris and Linux man page &quot;execve&quot;.
+
+==Security issues==
+{{original research|date=October 2010}}
+On some systems, scripts can be marked with the [[setuid]] attribute, set-user-ID, a Unix feature which means that a program is executed with the access rights of the program file's owner instead of the rights of the user running it.  Although this mechanism may be safe for compiled code, the extra step introduced by the interpreter directive provides a extra window of opportunity of attack&lt;ref&gt;http://docstore.mik.ua/orelly/other/puis3rd/0596003234_puis3-chp-6-sect-5.html&lt;/ref&gt; along the following lines:
+
+# An attacker makes a symbolic link in, say, &lt;tt&gt;/tmp/sneaky&lt;/tt&gt; to a system shell script with [[setuid]] enabled, say &lt;tt&gt;/usr/bin/admintool&lt;/tt&gt; (a hypothetical example).
+# The attacker then runs &lt;tt&gt;/tmp/sneaky&lt;/tt&gt;, but pauses its execution immediately
+# If the new process had already gotten as far as opening &lt;tt&gt;sneaky&lt;/tt&gt;, stop and start over, otherwise:
+# The new process has already set its user ID to the owner of &lt;tt&gt;/usr/bin/admintool&lt;/tt&gt;, so it's probably now running as [[root]] with full system rights (if not, start over)
+# The attacker now removes the [[symbolic link]] pointing to &lt;tt&gt;/usr/bin/admintool&lt;/tt&gt;
+# The attacker creates a new script at &lt;tt&gt;/tmp/sneaky&lt;/tt&gt; but with his own illicit commands therein
+# The attacker now resumes the paused process, and the shell then opens &lt;tt&gt;sneaky&lt;/tt&gt; and executes the illicit command file with root access rights.
+
+This problem has been corrected on some modern systems, namely those supporting the &lt;tt&gt;/dev/fd&lt;/tt&gt; filesystem can support the change, by opening the script first, producing a [[file descriptor]] which is safe from attack, then invoking the interpreter with that safe file descriptor as input.  However, the discovery of the problem led many system administrators and developers to the conclusion that scripts couldn't be made secure, a case made more compelling by issues with the shell's [[internal field separator]] (also since corrected on modern systems); as a result, [[setuid]] functionality is often made unavailable to scripts.
+
+As a result of these issues, setuid scripts are unsafe on older Unix-like systems, which comprise the majority of such installations. Appropriate research into the security implications of setuid scripts is therefore necessary before permitting their use. The [[sudo]] command is a widely-used alternative for providing similar functionality.
+
+==Strengths==
+When compared to the use of global association lists between command name extensions and the interpreting applications, the interpreter directive method allows users to use interpreters not known at a global system level, and without administrator rights. It also allows specific selection of interpreter, without overloading the [[filename extension]] [[namespace]], and allows the implementation language of a script to be changed without changing its invocation syntax by other programs.
+
+== See also ==
+* [[CrunchBang Linux|Crunchbang GNU/Linux]] distribution, commonly referred to as &quot;#!&quot;.
+* [[interpreter directive]]
+* [[binfmt misc|binfmt_misc]]
+* [[File association]]&lt;!-- which I believe is similar, but on a system-wide scale --&gt;
+* [[Special Characters]]&lt;!-- per Feb 2009 comment on target page &quot;Please introduce links to this page from other articles related to it.&quot; --&gt;
+
+== References ==
+{{Reflist}}
+
+== External links ==
+* [http://www.in-ulm.de/~mascheck/various/shebang/ Details about the shebang mechanism on various Unix flavours]
+* [http://homepages.cwi.nl/~aeb/std/hashexclam.html #! - the Unix truth as far as I know it] (a more generic approach)
+* [http://foldoc.org/index.cgi?query=shebang&amp;action=Search FOLDOC shebang article]
+{{Use dmy dates|date=October 2010}}
+
+[[Category:Unix]]
+
+[[ca:Shebang]]
+[[de:Shebang]]
+[[es:Shebang]]
+[[fr:Shebang]]
+[[it:Shabang]]
+[[ja:ã·ãã³ (Unix)]]
+[[pl:Shebang]]
+[[pt:Shebang]]
+[[zh:Shebang]]</rev></revisions></page></pages></query></api>

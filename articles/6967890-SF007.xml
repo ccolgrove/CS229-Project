@@ -1,0 +1,163 @@
+<?xml version="1.0"?><api><query><pages><page pageid="6967890" ns="0" title="Timeline of virtualization development"><revisions><rev xml:space="preserve">{{Cleanup|date=August 2010}}
+{{Cleanup-rewrite|Content dealing with recent events is hard to understand, not a timeline, strangely formatted, and contains unsourced speculations and hopes.|date=May 2009}}
+
+== Timelines ==
+
+'''Note:''' This timeline is missing data for important historical systems, including: [[Atlas C(Manchester)]], [[GE 645]], Burroughs [[B5000]]
+
+* 1964
+** IBM [[Cambridge Scientific Center]] begins development of [[IBM CP-40|CP-40]].
+* 1965
+** [[IBM M44/44X]], experimental paging system, in use at [[Thomas J. Watson Research Center]].
+** IBM announces the [[IBM System/360-67]], a 32-bit CPU with virtual memory hardware (August 1965).
+* 1966
+** IBM ships the S/360-67 computer in June 1966
+** IBM begins work on CP-67, a reimplementation of CP-40 for the S/360-67.
+* 1967
+** CP-40 (January) and CP-67 (April) go into production time-sharing use.
+* 1968
+** [[CP/CMS]] installed at eight initial customer sites.
+** CP/CMS submitted to [[IBM Type-III Library]] by MIT's [[Lincoln Laboratory]], making system available to all IBM S/360 customers at no charge in source code form.
+** Resale of CP/CMS access begins at [[time-sharing]] vendor [[National CSS]] (becoming a distinct version, eventually renamed [[VP/CSS]]).
+* 1970
+** IBM [[System/370]] announced (June) &amp;ndash; ''without'' virtual memory.
+** Work begins on CP-370, a complete reimplementation of CP-67, for use on the System/370 series.
+* 1971
+** First [[System/370]] shipped: S/370-155 (January).
+* 1972
+** Announcement of virtual memory added to [[System/370]] series.
+** [[VM (operating system)|VM/370]] announced &amp;ndash; and running on announcement date. VM/370 includes the ability to run VM under VM (previously implemented both at IBM and at user sites under CP/CMS, but not made part of standard releases).
+* 1973
+** First shipment of announced virtual memory S/370 models (April: -158, May: -168).
+* 1974-1998
+** [ongoing history of [[VM (operating system)|VM]] family and [[VP/CSS]].]
+* 1985
+** October 9, 1985: Announcement of the [[Intel 80286]]-based [[AT&amp;T Computer Systems|AT&amp;T 6300+]] with [[Merge (software)|Simultask]], a [[virtual machine monitor]] developed by [[Locus Computing Corporation]] in collaboration with [[AT&amp;T]], that enabled the direct execution of an [[Intel 8086]] guest operating system under a host [[Unix_System_V#SVR2|Unix System V Release 2 OS]].  Although the product was marketed with [[Microsoft MS-DOS]] as the guest OS, in fact the Virtual Machine could support any [[realmode]] operating system or standalone program (such as [[Microsoft Flight Simulator]]) that was written using only valid 8086 instructions (not instructions introduced with the 80286).  Locus subsequently developed this technology into their &quot;Merge&quot; product line.
+* 1987
+** January 1987:  A &quot;product evaluation&quot; version of [[Merge (software)|Merge/386]] from [[Locus Computing Corporation]] was made available to OEMs.  [[Merge (software)|Merge/386]] made use of the [[Virtual 8086 mode]] provided by the [[Intel 80386]] processor, and supported multiple simultaneous [[virtual machine|virtual 8086 machines]].  The virtual machines supported unmodified guest operating systems and standalone programs such as [[Microsoft Flight Simulator]]; but in typical usage the guest was MS-DOS with a Locus proprietary [[Network redirector|redirector]] (also marketed for networked PCs as &quot;PC-Interface&quot;) and a &quot;network&quot; driver that provided communication with a regular user-mode file server process running under the host operating system on the same machine.
+** October 1987:  Retail Version 1.0 of Merge/386 began shipping, offered with [[Microport]] [[Unix_System_V#SVR3|Unix System V Release 3]].
+* 1988
+** [[SoftPC]] 1.0 for Sun was introduced in 1988 by Insignia Solutions [http://computing-dictionary.thefreedictionary.com/Insignia+Solutions,+Inc.]
+** [[SoftPC]] appears in its first version for Apple Macintosh. These versions (Sun and Macintosh) have only support for DOS.
+* 1997
+** First version of [[Virtual PC]] for Macintosh platform was released in June 1997 by [[Connectix]]
+* 1998
+** October 26, 1998, [[VMware]] filed for a patent on their techniques, which is granted as U.S. Patent 6,397,242 [http://patft.uspto.gov/netacgi/nph-Parser?patentnumber=6,397,242]
+* 1999
+** February 8, 1999, VMware introduced VMware Virtual Platform for the Intel IA-32 architecture.
+* 2000
+** FreeBSD 4.0 is released [[History of FreeBSD]], including initial implementation of FreeBSD jails [[FreeBSD jail]]
+** IBM announces [[z/VM]], new version of [[VM (operating system)|VM]] for IBM's 64-bit [[z/Architecture]]
+* 2001
+** June, Connectix launches its first version of Virtual PC for Windows.[http://www.sfgate.com/cgi-bin/article.cgi?file=/chronicle/archive/2001/04/30/BU186669.DTL&amp;type=business]
+** July, VMware created the first [[x86]] server virtualization product.[http://www.vmware.com/news/releases/gsx_win_release.html]
+** Egenera, Inc. launches their Processor Area Network (PAN Manager) software and BladeFrame chassis which provide hardware virtualization of processing blade's (pBlade) internal disk, network interface cards, and serial console.[http://www.egenera.com/company-overview.htm]
+* 2003
+** First release of first open-source [[x86]] hypervisor, [[Xen]] [http://www.brianmadden.com/blogs/gabeknuth/archive/2007/08/16/a-brief-history-of-xen-and-xensource.aspx]
+** February 18, 2003, Microsoft acquired virtualization technologies (Virtual PC and unreleased product called &quot;Virtual Server&quot;) from Connectix Corporation. [http://www.microsoft.com/presspass/press/2003/Feb03/02-19PartitionPR.mspx]
+** Late 2003, EMC acquired VMware for $635 million.
+** Late 2003, VERITAS acquired Ejascent for $59 million.
+** [http://www.microsoft.com/presspass/press/2003/nov03/11-10VPC2004RTMPR.mspx November 10, 2003] [[Microsoft]] releases [[Microsoft Virtual PC]], which is machine-level virtualization technology, to ease the transition to Windows XP.
+* 2005
+** HP releases [[Integrity Virtual Machines]] 1.0 and 1.2 which ran only [[HP-UX]]
+** [http://www.vmware.com/news/releases/player_beta.html October 24, 2005] VMware releases [[VMware Player]], a free player for virtual machines, to the masses.
+** Sun releases [[Solaris (operating system)]] 10, including [[Solaris Zones]], for both x86/x64 and SPARC systems
+* 2006
+** [http://www.vmware.com/news/releases/server.html July 12, 2006] VMware releases [[VMware Server]], a free machine-level virtualization product for the server market.
+** Microsoft Virtual PC 2006 is released as a free program, also in July.
+** [http://www.microsoft.com/presspass/press/2006/jul06/07-17SoftricityPR.mspx July 17, 2006] [[Microsoft]] bought [[Softricity]].
+** [http://www.vmware.com/news/releases/uvac_winners.html August 16, 2006] VMware announces of the winners of the virtualization appliance contest.
+** [http://biz.yahoo.com/prnews/060926/sftu096.html?.v=70 September 26, 2006] [[moka5]] delivers [[LivePC]] technology.
+** HP releases [[Integrity Virtual Machines]] Version 2.0, which supports Windows Server 2003, CD and DVD burners, tape drives and VLAN.
+** [http://www.virtualiron.com/news_events/releaseDate-121106_Version3_1.cfm December 11, 2006] [[Virtual Iron]] releases Virtual Iron 3.1, a free bare metal virtualization product for enterprise server virtualization market.
+* 2007
+** [http://www.virtualbox.org/wiki/News January 15, 2007] [http://www.innotek.de/ innoTek] released [[VirtualBox]] Open Source Edition (OSE), the first professional PC virtualization solution released as open source under the GNU General Public License ([[GPL]]). It includes some code from the [[Qemu]] project.
+** Sun releases [[Solaris Containers#Branded zones|Solaris 8 Containers]] to enable migration of a Solaris 8 computer into a Solaris Container on a Solaris 10 system - for SPARC only
+* 2008
+** [http://www.vmware.com/company/news/releases/thinstall.html January 15, 2008] [http://www.vmware.com/ VMware, Inc.] announced it has entered into a definitive agreement to acquire [http://www.thinstall.com/ Thinstall], a privately-held [[application virtualization]] software company.
+** [http://www.sun.com/aboutsun/pr/2008-02/sunflash.20080212.1.xml February 12, 2008] [[Sun Microsystems]] announced that it had entered into a stock purchase agreement to acquire [http://www.innotek.de/ innotek], makers of [[VirtualBox]].
+** In April, [[VMware]] releases [[VMware Workstation]] 6.5 beta, the first program for Windows and Linux to enable DirectX 9 accelerated graphics on Windows XP guests [http://www.vmware.com/products/beta/ws/releasenotes_ws65_beta.html].
+
+=== Year 1960 ===
+{{Main|IBM CP-40|CP/CMS|History of CP/CMS|IBM System/360-67}}
+In the mid 1960s, IBM's [[Cambridge Scientific Center]] developed [[IBM CP-40|CP-40]], the first version of [[CP/CMS]]. It went into production use in January 1967. From its inception, [[IBM CP-40|CP-40]] was intended to implement [[full virtualization]]. Doing so required hardware and microcode customization on a S/360-40, to provide the necessary address translation and other virtualization features. Experience on the [[IBM CP-40|CP-40]] project provided input to the development of the [[IBM System/360-67]], announced in 1965 (along with its ill-starred operating system, [[TSS/360]]). [[IBM CP-40|CP-40]] was reimplemented for the S/360-67 as CP-67, and by April 1967, both versions were in daily production use. [[CP/CMS]] was made generally available to IBM customers in source code form, as part of the unsupported [[IBM Type-III Library]], in 1968.
+
+=== Year 1970 ===
+{{Main|System/370|VM (operating system)|History of CP/CMS|hypervisor}}
+IBM announced the [[System/370]] in 1970. To the disappointment of [[CP/CMS]] users &amp;ndash; as with the [[System/360]] announcement &amp;ndash; the series would not include [[virtual memory]]. In 1972, IBM changed direction, announcing that the option would be made available on all S/370 models, and also announcing several virtual storage operating systems, including [[VM (operating system)|VM/370]]. By the mid-1970s, [[CP/CMS]], VM, and the maverick [[VP/CSS]] were running on a numerous large IBM mainframes. By the late 80s, there were reported to be more VM licenses than [[MVS]] licenses.
+
+=== Year 1999 ===
+{{Main|x86 virtualization}}
+On February 8, 1999, VMware introduced the first [[x86 virtualization]] product, ''VMware Virtual Platform'', based on earlier research by its founders at [[Stanford University]].
+
+=== Year 2005 ===
+==== Free desktop virtualization ====
+Previously, a substantial licensing fee was required for the use of VMware's Workstation product.  VMware decided to provide high quality virtualization technology to everyone for free.  They omitted the ability to create virtual machines and did not distribute the acceleration tools that come with VMware workstation.  This early corporate play to encourage consumer applications of virtualization went largely unnoticed.
+
+=== Year 2006 ===
+This year virtualization has a new level of playing field in [[application virtualization]] and [[application streaming]].
+
+===Year 2008===
+[[VMware]] releases [[VMware Workstation]] 6.5 beta, the first program for Windows and Linux to enable DirectX 9 accelerated graphics on Windows XP guests [http://www.vmware.com/products/beta/ws/releasenotes_ws65_beta.html].
+
+==== Overview ====
+As an overview, there are three levels of virtualization:
+* At the [[Comparison of platform virtual machines|hardware level]], the VMs can run multiple guest OSes. This is best used for testing and training that require networking interoperability between more than one OSes, since not only the guest OS can be different than the host OS, it can run as many guest OS as long as there is enough CPU, RAM and HDD space. [[IBM]] introduced this around 1990 under the name [[logical partitioning]] (LPAR), at first only in the mainframe field.
+* At the [[Operating system-level virtualization|operating system level]], it can only virtualize one OS: the guest OS is the host OS. This is similar to having many [[Terminal Services|terminal server]] sessions without locking down the desktop. Thus, this is the best of both worlds, having the speed of a [[Terminal Services|TS]] session with the benefit of full access to the desktop as a virtual machine, where the user can still control the '''quotas''' for CPU, RAM and HDD. Similar to the hardware level, this is still considered a '''Server Virtualization''' where each guest OS has its own IP address, so it can be used for networking applications such as [[VPS ISP|web hosting]].
+* At the [[Comparison of Application Virtual Machines|application level]], it is running on the Host OS directly, without any guest OS, which can be in a locked down desktop, including in a [[Terminal Services|terminal server]] session. This is called Application Virtualization or Desktop Virtualization, which virtualizes the front-end, whereas Server Virtualization virtualizes the back-end. Now, Application Streaming refers to delivering applications directly onto the desktop and running them locally. Traditionally in [[terminal server|terminal server computing]], the applications are running on the server, not locally, and streaming the screenshots onto the desktop.
+
+==== Application virtualization ====
+[[Application virtualization]] solutions such as [[VMware ThinApp]], [http://www.softricity.com Softricity], and [http://www.trigence.com/ Trigence] attempt to separate application specific files and settings from the host operating system, thus allowing them to run in more-or-less isolated sandboxes without installation and without the memory and disk overhead of full machine virtualization. Application virtualization is tightly tied to the host OS and thus does not translate to other operating systems or hardware. VMware ThinApp and Softricity are Intel Windows centric, while Trigence supports Linux and Solaris. Unlike machine virtualization, Application virtualization does not use code emulation or translation so CPU related benchmarks run with no changes, though fileystem benchmarks may experience some performance degradation. On Windows, VMware ThinApp and Softricity essentially work by intercepting filesystem and registry requests by an application and redirecting those requests to a preinstalled isolated sandbox, thus allowing the application to run without installation or changes to the local PC. Though VMware ThinApp and Softricity both began independent development around 1998, behind the scenes VMware ThinApp and Softricity are implemented using different techniques:
+* VMware ThinApp works by packaging an application into a single &quot;packaged&quot; EXE which includes the runtime plus the application data files and registry. VMware ThinAppâs runtime is loaded by Windows as a normal Windows application, from there the runtime replaces the Windows loader, filesystem, and registry for the target application and presents a merged image of the host PC as if the application had been previously installed. VMware ThinApp replaces all related API functions for the host application, for example the ReadFile API supplied to the application must pass through VMware ThinApp before it reaches the operating system. If the application is reading a virtual file, VMware ThinApp handles the request itself otherwise the request will be passed on to the operating system. Because VMware ThinApp is implemented in user-mode without device drivers and it does not have a client that is preinstalled, applications can run directly from USB Flash or network shares without previously needing elevated security privileges.
+* Softricity (acquired by Microsoft) operates on a similar principle using device drivers to intercept file request in ring0 at a level closer to the operating system.  Softricity installs a client in Administrator mode which can then be accessed by restricted users on the machine.  An advantage of virtualizing at the kernel level is the Windows Loader (responsible for loading EXE and DLL files) does not need to be reimplemented and greater application compatibility can be achieved with less work (Softricity claims to support most major applications). A disadvantage for ring0 implementation is it requires elevated security privileges to be installed and crashes or security defects can occur system wide rather than being isolated to a specific application.
+Because Application Virtualization runs all application code natively, it can only provide security guarantees as strong as the host OS is able to provide. Unlike full machine virtualization, Application virtualization solutions currently do not work with device drivers and other code that runs at ring0 such as virus scanners.  These special applications must be installed normally on the host PC in order to function.
+
+==== Managed runtimes ====
+
+Another technique sometimes referred to as virtualization, is portable byte code execution using a standard portable native runtime (aka Managed Runtimes).  The two most popular solutions today include [[Java (programming language)|Java]] and [[.NET Framework|.NET]].  These solutions both use a process called [[JIT]] (Just in time) compilation to translate code from a virtual portable machine language into the local processorâs native code.  This allows applications to be compiled for a single architecture and then run on many different machines.  Beyond machine portable applications, an additional advantage to this technique includes strong security guarantees.  Because all native application code is generated by the controlling environment, it can be checked for correctness (possible security exploits) prior to execution.  Programs must be originally designed for the environment in question or manually rewritten and recompiled to work for these new environments.  For example, one cannot automatically convert or run a Windows / Linux native app on .NET or Java.  Because portable runtimes try to present a common API for applications for a wide variety of hardware, applications are less able to take advantage of OS specific features.  Portable application environments also have higher memory and CPU overheads than optimized native applications, but these overheads are much smaller compared with full machine virtualization.  Portable Byte Code environments such as Java have become very popular on the server where a wide variety of hardware exist and the set of OS-specific APIs required is standard across most Unix and Windows flavors.  Another popular feature among managed runtimes is garbage collection, which automatically detects unused data in memory and reclaims the memory without the developer having to explicitly invoke free(ing) operations.
+
+==== Neutral view of application virtualization ====
+Given the [http://en.wikipedia.org/w/index.php?title=Virtualization_Development&amp;oldid=76696530 industry-biased in the past], to be more neutral, there are also two other ways to look at the Application Level:
+* The first type is '''application packagers''' (VMware ThinApp, Softricity) whereas the other is '''application compilers''' (Java and .NET). Because it is a packager, it can be used to stream applications without modifying the source code, whereas the latter can only be used to compile the source code.
+* Another way to look at it is from the [[Hypervisor]] point of view. The first one is &quot;hypervisor&quot; in '''user mode''', whereas the other is &quot;hypervisor&quot; in '''runtime mode'''. The hypervisor was put in quotation, because both of them have similar behavior in that they intercept system calls in a different mode: user mode; and runtime mode. The user mode intercepts the system calls from the runtime mode before going to kernel mode. The '''real hypervisor''' only needs to intercept the system call using [http://wiki.xensource.com/xenwiki/hypercall hypercall] in kernel mode. Hopefully, once Windows have a [[Hypervisor]], [[Virtual machine monitor]], there may even be no need for JRE and CLR. Moreover, in the case of Linux, maybe the [[JRE]] can be modified to run on top of the Hypervisor as a [[loadable kernel module]] running in [[Linux Kernel|kernel]] mode, instead of the having slow legacy runtime in user mode. Now, if it were running on top of the [[Linux Hypervisor]] directly, then it should be called [[Java OS]], not just another '''runtime mode''' [[Just-in-time compilation|JIT]].
+* [[Mendel Rosenblum]]&lt;ref&gt;[http://acmqueue.com/modules.php?name=Content&amp;pa=showpage&amp;pid=168 The Reincarnation of Virtual Machines] ACM Queue vol. 2, no. 5 - July/August 2004 -- by Mendel Rosenblum, Stanford University and VMWare&lt;/ref&gt; called the '''runtime mode''' a High-level language virtual machine in August 2004. However, at that time, the first type, intercepting system calls in user mode, was irresponsible and unthinkable, so he didn't mention it in his article. Hence, [[Application Streaming]] was still mysterious in 2004.&lt;ref&gt;[http://www.zdnetasia.com/insight/software/0,39044822,39175522,00.htm Application streaming anyone?]
+By Brien M. Posey MCSE, Special to ZDNet Asia Wednesday, April 14, 2004 03:55 PM.&lt;/ref&gt; Now, when the [[JVM]], no longer High-level language virtual machines, becomes [[Java OS]] running on [[Linux Hypervisor]], then Java Applications will have a new level of playing field, just as Windows Applications already has with [[Softricity]].
+* In summary, the first one is virtualizing the [[Binary Code]] so that it can be '''installed once and run anywhere''', whereas the other is virtualizing the [[Source Code]] using [[Byte code]] or [[Managed code]] so that it can be '''written once and run anywhere'''. Both of them are actually partial solutions to the twin portability problems of: application portability; and source code portability. Maybe it is time to combine the two problems into one complete solution at the [[hypervisor]] level in the [[Kernel (computer science)|kernel]] mode.
+
+====Further development====
+
+[[Microsoft]] bought [[Softricity]] on [http://www.microsoft.com/presspass/press/2006/jul06/07-17SoftricityPR.mspx July 17, 2006] and popularized [[Application Streaming]], giving traditional Windows applications a level playing field with Web and Java applications with respect to the ease of distribution (i.e. no more setup required, just click and run). Soon every [[Java Runtime Environment|JRE]] and [[Common Language Runtime|CLR]] can run virtually in user mode, without kernel mode drivers being installed, such that there can even be multiple versions of [[Java Runtime Environment|JRE]] and [[Common Language Runtime|CLR]] running concurrently in RAM.
+
+The integration of the [[Linux Hypervisor]] into the [[Linux Kernel]] and that of the [[Windows Hypervisor]] into the [[Windows Kernel]] may make [[rootkit]] techniques such as the [[filter driver]]&lt;ref&gt;[http://www.microsoft.com/whdc/driver/filterdrv/default.mspx File System Filter Driver]&lt;/ref&gt; obsolete{{Failed verification|date=August 2010}}.
+This may take a while as the Linux Hypervisor is still waiting for the Xen [[Hypervisor]] and VMware [[Hypervisor]] to be [http://www.eweek.com/article2/0,1895,1994793,00.asp fully compatible with each other] as [[Oracle Corporation|Oracle]] [http://www.eweek.com/article2/0%2C1895%2C1996904%2C00.asp impatiently pounding at the door] to let the Hypervisor come into the Linux Kernel so that it can '''full steam ahead''' with its [[Grid Computing]] life. Meanwhile, [[Microsoft]] have decided to be fully compatible with the Xen [[Hypervisor]]
+[http://www.eweek.com/article2/0,1895,1990366,00.asp]. IBM, of course, doesn't just [http://news.zdnet.com/2100-3513_22-5588129.html sit idle] as it is working with VMware for the x86 servers, and possibly helping Xen to move from x86 into [[IBM POWER|IBM's POWER]] using the open source [[rHype]].
+Now, to make the [[Hypervisor]] party into a full house, [[Intel VT-x]] and [[AMD-V]] are hoping to ease and speed up paravirtualization so that a guest OS can be run unmodified. {{Update after|2010|11|13|date=November 2010}} {{Clarify|date=August 2010}}
+
+== See also ==
+* [[Comparison of platform virtual machines]]
+* [[Comparison of application virtual machines]]
+* [[Emulator]]
+* [[Hypervisor]]
+* [[IBM SAN Volume Controller]]
+* [[Operating system-level virtualization]]
+* [[Physical-to-Virtual]]
+* [[Virtual machine monitor]]
+* [[Virtual tape library]]
+* [[X86 virtualization]]
+
+== References ==
+&lt;references/&gt;
+
+== External links ==
+*[http://networkcomputing.com/article/printFullArticle.jhtml;jsessionid=UIMHZ2V1NMPRKQSNDLRSKHSCJUNN2JVN?articleID=192202544  Application Virtualization: Streamlining Distribution] August 31, 2006âBy James Drews
+* [http://www.microsoft.com/whdc/system/platform/virtual/default.mspx Windows Virtualization] from Microsoft
+* [http://www.vmware.com/pdf/virtualization.pdf#search=%22hypervisor%20VMware%20virtualization%20layer%22 Virtualization Overview] from VMware
+* [http://www.kernelthread.com/publications/virtualization/ An introduction to Virtualization]
+* [http://rentzsch.com/notes/virtualizationAsAnAntivirus Weblog post] on the how virtualization can be used to implement [[Mandatory Access Control]].
+* [http://research.ihost.lv/osihpa-hensbergen.pdf The Effect of Virtualization on OS Interference] in PDF format.
+* [http://www.beagle-ears.com/lars/engineer/comphist/ibm360.htm VM/360 history]
+* [http://www.multicians.org/thvv/360-67.html  VM/360 history]
+
+{{DEFAULTSORT:Timeline Of Virtualization Development}}
+[[Category:Technology timelines]]
+[[Category:Virtualization software]]</rev></revisions></page></pages></query></api>

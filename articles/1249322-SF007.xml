@@ -1,0 +1,268 @@
+<?xml version="1.0"?><api><query><redirects><r from="Texas Instruments OMAP" to="OMAP" /></redirects><pages><page pageid="2725303" ns="0" title="OMAP"><revisions><rev xml:space="preserve">{{linkrot|date=September 2011}}
+{{Refimprove|date=September 2009}}
+[[File:BeagleBoard described.jpg|300px|thumb|TI OMAP3530 on [[BeagleBoard]] described]]
+[[File:PandaBoard described.png|300px|thumb|TI OMAP4430 on [[PandaBoard]] described]]
+
+'''OMAP''' developed by '''[[Texas Instruments]]''' is a category of proprietary [[system on chip]]s (SoCs) for portable and mobile [[multimedia]] [[application software|applications]]. OMAP devices generally include a general-purpose [[ARM architecture]] processor core plus one or more specialized [[co-processor]]s. Earlier OMAP variants commonly featured a variant of the [[Texas Instruments TMS320]] series [[digital signal processor]].
+
+==OMAP family==
+[[File:Galaxy Nexus smartphone.jpg|150px|thumb|The [[Galaxy Nexus]], example of smartphone with a OMAP 4460 ARM Cortex-A9]]
+The OMAP family consists of three product groups classified by performance and intended application: 
+* High-performance applications processors
+* Basic multimedia applications processors
+* Integrated modem and applications processors
+
+Further, two main distribution channels exist, and not all parts are available in both channels.  The genesis of the OMAP product line is from partnership with cell phone vendors, and the main distribution channel involves sales directly to such ''wireless handset'' vendors.  Parts developed to suit evolving cell phone requirements are flexible and powerful enough to support sales through less specialized ''catalog'' channels; some OMAP&amp;nbsp;1 parts, and many OMAP&amp;nbsp;3 parts, have catalog versions with different sales and support models.  Parts that are obsolete from the perspective of handset vendors may still be needed to support products developed using catalog parts and distributor-based inventory management.
+
+Recently, the catalog channels have received more focus, with OMAP35x and OMAP-L13x parts being marketed for use with various applications where capable and power-efficient processors are useful.
+
+===High-performance applications processors===
+These are parts originally intended for use as application processors in [[smartphone]]s, with processors powerful enough to run significant [[operating system]]s (such as [[Linux]], [[Android (operating system)|Android]] or [[Symbian]]), support connectivity to personal computers, and support various audio and video applications.
+
+==== OMAP 1 ====
+The OMAP 1 family started with a TI-enhanced [[ARM architecture|ARM]] core, and then changed to a standard ARM926 core.  It included many variants, most easily distinguished according to manufacturing technology (130&amp;nbsp;nm except for the OMAP171x series), CPU, peripheral set, and distribution channel (direct to large handset vendors, or through catalog-based distributors).  In March 2009, the OMAP1710 family chips are still available to handset vendors.
+
+Products using OMAP&amp;nbsp;1 processors include hundreds of cell phone models, and the [[Nokia 770]] [[Internet tablet]]s.
+
+*OMAP171x - 220&amp;nbsp;MHz ARM926EJ-S + [[Texas Instruments TMS320|C55x]] DSP, low-voltage 90&amp;nbsp;nm technology
+*OMAP162x - 204&amp;nbsp;MHz ARM926EJ-S + C55x DSP + 2 MB internal SRAM, 130&amp;nbsp;nm technology
+*OMAP5912 - catalog availability version of OMAP1621 (or OMAP1611b in older versions)
+*OMAP161x - 204&amp;nbsp;MHz ARM926EJ-S + C55x DSP, 130&amp;nbsp;nm technology
+*OMAP1510 - 168&amp;nbsp;MHz ARM925T (TI-enhanced) + C55x DSP
+*OMAP5910 - catalog availability version of OMAP 1510
+
+==== OMAP 2 ====
+These parts were only marketed to handset vendors. Products using these include both Internet tablets and [[mobile phone]]s:
+*OMAP2431 - 330&amp;nbsp;MHz ARM1136 + 220&amp;nbsp;MHz C64x DSP
+*OMAP2430 - 330&amp;nbsp;MHz ARM1136 + 220&amp;nbsp;MHz C64x DSP + [[PowerVR]] MBX lite GPU
+*OMAP2420 - 330&amp;nbsp;MHz ARM1136 + 220&amp;nbsp;MHz C55x DSP + PowerVR MBX GPU
+
+==== OMAP 3 ====
+
+The 3rd generation OMAP, The OMAP&amp;nbsp;3&lt;ref&gt;[http://focus.ti.com/general/docs/wtbu/wtbuproductcontent.tsp?templateId=6123&amp;navigationId=11989&amp;contentId=4682 OMAP34xx series in TI Web site]&lt;/ref&gt; is broken into 3 distinct groups: the OMAP34x, the OMAP35x, and the OMAP36x. OMAP34x and OMAP36x are distributed directly to large handset (such as cell phone) manufacturers.  OMAP35x is a variant of OMAP34x intended for catalog distribution channels.  The OMAP36x is a 45&amp;nbsp;nm version of the 65&amp;nbsp;nm OMAP34x with higher clock speed.&lt;ref&gt;[http://linuxdevices.com/news/NS8848023892.html OMAP36x]&lt;/ref&gt;
+
+The video technology in the higher end OMAP&amp;nbsp;3 parts is derived in part from the [[Texas Instruments DaVinci|DaVinci]] product line, which first packaged higher end C64x+ DSPs and image processing controllers with ARM9 processors last seen in the older OMAP&amp;nbsp;1 generation or ARM Cortex-A8&lt;ref&gt;http://www.ti.com/product/dm3730&lt;/ref&gt;.
+
+Not highlighted in the list below is that each OMAP&amp;nbsp;3 SoC has an &quot;Image, Video, Audio&quot; (IVA2) accelerator.  These units do not all have the same capabilities.  Most devices support 12 megapixel camera images, though some support 5 or 3 megapixels.  Some support HD imaging.
+
+{| class=&quot;wikitable&quot;
+|-
+! Model number !! Semiconductor technology !! CPU instruction set !! CPU !! GPU !! Utilizing devices
+|-
+| OMAP3410
+| 65&amp;nbsp;nm
+| ARMv7
+| 600&amp;nbsp;MHz [[ARM Cortex-A8]]
+| [[PowerVR]] SGX530
+| [[Motorola Charm]], [[Motorola Flipout]], Motorola Flipside
+|-
+| OMAP3420
+| 65&amp;nbsp;nm
+| ARMv7
+| 600&amp;nbsp;MHz ARM Cortex-A8
+| PowerVR SGX530
+|
+|-
+| OMAP3430
+| 65&amp;nbsp;nm
+| ARMv7
+| 600&amp;nbsp;MHz ARM Cortex-A8
+| PowerVR SGX530
+| [[Motorola Droid|Motorola Droid/Milestone]], [[Palm Pre]], [[Samsung i8910]], [[Nokia N900]]
+|-
+| OMAP3440
+| 65&amp;nbsp;nm
+| ARMv7
+| 800&amp;nbsp;MHz ARM Cortex-A8
+| PowerVR SGX530
+| [[Motorola Milestone XT720|Motorola XT720]], [[Archos Generation 7|Archos 5 (Gen 7)]], Samsung SHW-M100S Galaxy A, Motorola Titanium XT800
+|-
+| OMAP3503
+| 65&amp;nbsp;nm
+| ARMv7
+| 600&amp;nbsp;MHz ARM Cortex-A8
+| N/A
+| [[Gumstix]] Overo Earth
+|-
+| OMAP3515
+| 65&amp;nbsp;nm
+| ARMv7
+| 600&amp;nbsp;MHz ARM Cortex-A8
+| PowerVR SGX530
+| 
+|-
+| OMAP3525
+| 65&amp;nbsp;nm
+| ARMv7
+| 600&amp;nbsp;MHz ARM Cortex-A8
+| N/A
+| 
+|-
+| OMAP3530
+| 65&amp;nbsp;nm
+| ARMv7
+| 720&amp;nbsp;MHz ARM Cortex-A8
+| PowerVR SGX530
+| [http://www.phytec.com/products/som/Cortex-A8/phyCARD-L-CortexA8-OMAP3525.html phyCARD-L System on Module], [[BeagleBoard]], [[Gumstix]], [[IGEPv2]], Alico's Kinetic 3500,&lt;ref&gt;http://www.alicosystems.com/Alico%20FSDK%203500%200311A.pdf&lt;/ref&gt; OSWALD, Overo Water, [[Pandora (console)|Pandora]], [[Touch Book]], [http://www.armkits.com/Product/devkit8000.asp Embest DevKit8000], [http://www.opensourcemid.org OpenSourceMID]
+|-
+| OMAP3611&lt;ref&gt;The 3611 is the same die as 3621 but with restricted access to the DSP part&lt;/ref&gt;
+| 45&amp;nbsp;nm
+| ARMv7
+| 800&amp;nbsp;MHz ARM Cortex-A8
+| PowerVR SGX530
+| [[Cybook Odyssey]]
+|-
+| OMAP3621(OMAP3622)
+| 45&amp;nbsp;nm
+| ARMv7
+| 3621: 800&amp;nbsp;MHz, 3622: 1&amp;nbsp;GHz; ARM Cortex-A8
+| PowerVR SGX530
+| [[Nook Color]], [[Nook Simple Touch]]
+|-
+| OMAP3630
+| 45&amp;nbsp;nm
+| ARMv7
+| 600&amp;nbsp;MHz~1.2&amp;nbsp;GHz ARM Cortex-A8
+| PowerVR SGX530
+| 3630-800: Motorola Bravo, [[Motorola Defy]];&lt;ref&gt;http://focus.ti.com/pdfs/wtbu/OMAP36xx_ES1.x_PUBLIC_TRM_vN.zip&lt;/ref&gt; 
+3630-1000: [[Nokia N9]], Nokia N950, Motorola Milestone 2,Motorola Cliq 2, Motorola Defy+, [[Pre 2]], [[Droid X]], [[Droid 2]], [[Archos 101]], [[Archos 70]], [[Archos 43]], Archos 32, Archos 28, LG Optimus Black, [[:ja:L-07C|LG Optimus bright L-07C]], Samsung I9003 Galaxy S(C)L, SAMSUNG GALAXY 7 TAB (P1010) Wifi Only, LG-LU3000 Optimus Mach, [[:ja:P-07C|Panasonic P-07C]], Panasonic Sweety 003P
+
+3630-1200: Motorola Droid 2 Global
+|-
+|}
+
+==== OMAP 4 ====
+The 4th generation OMAPs, OMAP 4430, 4460 (formerly named 4440),&lt;ref&gt;http://www.linuxfordevices.com/c/a/News/Variscite-VARSOMOM44/ Computer module taps 1.5GHz, dual-core OMAP4460 SoC&lt;/ref&gt; and 4470 all use [[dual-core]] [[ARM Cortex-A9]]s.  The 4470 additionally contains two [[ARM Cortex-M3]]s running at 266&amp;nbsp;MHz to offload the A9s in less computionally intensive tasks to increase power efficiency.&lt;ref name=&quot;focus.ti.com&quot;&gt;http://focus.ti.com/pdfs/wtbu/OMAP4430_ES2.x_Public_TRM_vK.zip&lt;/ref&gt;&lt;ref&gt;[http://focus.ti.com/pdfs/wtbu/OMAP4460_ES1.0_PUBLIC_TRM_vE.zip &quot;OMAP4460 Public TRM vE (pdf)&quot;]&lt;/ref&gt;&lt;ref&gt;http://www.engadget.com/2011/06/02/texas-instruments-announces-multi-core-1-8ghz-omap4470-arm-proc/&lt;/ref&gt; 4430 and 4460 use a [[PowerVR]] SGX540 [[Graphics processing unit|integrated 3D graphics accelerator]] which runs at a clock frequency of 304 and 384&amp;nbsp;MHz respectively compared to prior versions of SGX540 typically at 200&amp;nbsp;MHz making them theoretically much faster.&lt;ref&gt;http://www.anandtech.com/show/4413/ti-announces-omap-4470-and-specs-powervr-sgx544-18-ghz-dual-core-cortexa9&lt;/ref&gt; 4470 has a PowerVR SGX544 GPU that supports DirectX 9 which enables it for use in [[Windows 8]] as well as a dedicated 2D graphics core for increased power efficiency. All OMAP 4 comes with an IVA3 multimedia hardware accelerator with a programmable DSP that enables 1080p Full HD and multi-standard video encode/decode.&lt;ref&gt;[http://focus.ti.com/general/docs/wtbu/wtbuproductcontent.tsp?templateId=6123&amp;navigationId=12843&amp;contentId=53243 OMAP44xx series in TI Web site]&lt;/ref&gt;&lt;ref&gt;http://www.linuxfordevices.com/c/a/News/TI-OMAP4430-and-OMAP4440/ TI speeds up its OMAP&amp;nbsp;4 for 3D video&lt;/ref&gt;&lt;ref&gt;http://www.engadget.com/2010/02/02/tis-omap4-prototype-drives-three-independent-displays-without-b/ TI's OMAP&amp;nbsp;4 prototype drives three independent displays without breaking a sweat&lt;/ref&gt;&lt;ref&gt;http://www.engadget.com/2009/02/17/tis-omap-4-bringing-1080p-support-to-smartphones-and-mids/ TI's OMAP 4 bringing 1080p support to smartphones and MIDs&lt;/ref&gt;&lt;ref&gt;http://www.engadget.com/2010/02/15/texas-instruments-introduces-arm-based-omap-4-soc-blaze-develop/ Texas Instruments introduces ARM-based OMAP&amp;nbsp;4 SOC, Blaze development platform&lt;/ref&gt; OMAP&amp;nbsp;4 uses ARM-[[Cortex A9]]s with ARMs SIMD engine (Media Processing Engine, aka NEON) which may have a significant performance advantage in some cases over [[Nvidia Tegra]] 2s Cortex-A9s with non-vector floating point units.&lt;ref&gt;http://www.anandtech.com/show/4098/nvidias-tegra-2-take-two-more-architectural-details-and-design-wins/2&lt;/ref&gt; It also uses a dual-channel LPDDR2 memory controller compared to Nvidia Tegra 2s single-channel memory controller.
+
+{| class=&quot;wikitable&quot;
+|-
+! Model number !! Semiconductor technology !! CPU instruction set !! CPU !! GPU !! Memory technology !! Availability !! Utilizing devices
+|-
+| OMAP4430
+| 45&amp;nbsp;nm
+| ARMv7
+| 1-1.2&amp;nbsp;GHz dual-core ARM [[Cortex-A9]]
+| [[PowerVR]] SGX540 @ 304&amp;nbsp;MHz
+| Dual-channel LPDDR2 memory controller
+| Q1 2011
+| [http://www.phytec.com/products/som/Cortex-A8-A9/phyCORE-OMAP4430.html phyCORE-OMAP4430 System on Module], [[PandaBoard]], [[Research In Motion|RIM]] [[BlackBerry Playbook]]&lt;ref&gt;http://www.telegraph.co.uk/technology/blackberry/8400612/Blackberry-confirms-PlayBook-specs-and-launch-date.html&lt;/ref&gt;, [[LG Optimus 3D P920]], [[Motorola Droid 3|Motorola Droid/Milestone 3]], [[Motorola Droid Bionic]], Toshiba AT200 Excite, [[:ja:F-01D|Fujitsu ARROWS Tab LTE F-01D]], [[:ja:ISW11F|Fujitsu ARROWS Z ISW11F]], [[:ja:F-05D|Fujitsu ARROWS X LTE F-05D]], [[:ja:T-01D|Fujitsu REGZA Phone T-01D]], [[Kindle Fire]], [[:ja:P-02D|Panasonic LUMIX Phone P-02D]], Panasonic LUMIX Phone 101P, Archos 101(Gen 9), Archos 80(Gen 9), Barnes and Noble Nook tablet[[Motorola Droid RAZR]]&lt;ref&gt;http://developer.motorola.com/products/droid-razr-xt912/&lt;/ref&gt;, [[:ja:SH-01D|SHARP AQUOS PHONE SH-01D]], [[:ja:SoftBank 102SH|SHARP AQUOS PHONE 102SH]]
+|-
+| OMAP4460
+| 45&amp;nbsp;nm
+| ARMv7
+| 1.2-1.5&amp;nbsp;GHz dual-core ARM Cortex-A9
+| PowerVR SGX540 @ 384&amp;nbsp;MHz
+| Dual-channel LPDDR2 memory controller
+| Q4 2011
+| [[:ja:SoftBank 104SH|SHARP AQUOS PHONE 104SH]], [[Galaxy Nexus]], Archos 101 Turbo(Gen 9), Archos 80 Turbo(Gen 9)[http://www.variscite.com/products/item/76-var-som-om44-ti-omap4460 Variscite VAR-SOM-OM44 System on Module]
+|-
+| OMAP4470
+| 45&amp;nbsp;nm
+| ARMv7
+| 1.5-1.8&amp;nbsp;GHz dual-core ARM Cortex-A9
+| PowerVR SGX544 @ 384&amp;nbsp;MHz + dedicated 2D graphics core
+| Dual-channel LPDDR2 memory controller, 466&amp;nbsp;MHz 
+| Q2 2012
+|
+|-
+|}
+
+==== OMAP 5 ====
+
+The 5th generation OMAP, OMAP&amp;nbsp;5 [[SoC]] uses a dual-core [[ARM Cortex-A15 MPCore|ARM Cortex-A15]] CPU with two additional [[ARM architecture#ARM cores|ARM Cortex-M4]] cores to offload the A15s in less computionally intensive tasks to increase power efficiency, two [[PowerVR]] SGX544MP graphics cores and a dedicated TI 2D BitBlt graphics accelerator, a multi-pipe display sub-system and a signal processor.&lt;ref name='TI 11-02-07'&gt;{{cite web | url = http://newscenter.ti.com/Blogs/newsroom/archive/2011/02/07/not-just-a-faster-horse-ti-s-omap-5-platform-transforms-the-concept-of-mobile-615064.aspx | title = Not Just a Faster Horse: TIâs OMAP 5 Platform Transforms the Concept of âMobileâ | accessdate = 2011-02-09 | date = 11-02-07 | publisher = [[Texas Instruments]] | quote = The OMAP 5 processor leverages two ARM Cortex-A15 MPCores [...] [It] also includes two ARM Cortex-M4 processors [...]}}&lt;/ref&gt; They respectively support 24 and 20 megapixel cameras for front and rear 3D HD video recording. The chip also supports up to 8 GB of dual channel DDR3 memory, output to four HD 3D displays and 3D HDMI 1.4 video output. OMAP&amp;nbsp;5 also includes 3 USB 2.0 ports and a SATA 2.0 controller.
+
+{| class=&quot;wikitable&quot;
+|-
+! Model number !! Semiconductor technology !! CPU instruction set !! CPU !! GPU !! Memory technology !! Availability
+|-
+| OMAP5430
+| 28&amp;nbsp;nm
+| ARMv7
+| 2&amp;nbsp;GHz dual-core [[ARM architecture|ARM]] [[ARM Cortex-A15 MPCore|Cortex-A15]]
+| Dual-core [[PowerVR]] SGX544MP + dedicated 2D graphics accelerator
+| Dual-channel [[package on package]] LPDDR2
+| Q3 2012
+|-
+| OMAP5432
+| 28&amp;nbsp;nm
+| ARMv7
+| 2&amp;nbsp;GHz dual-core ARM Cortex-A15
+| Dual-core PowerVR SGX544MP + dedicated 2D graphics accelerator
+| Dual-channel [[DDR3]] controller
+| Q3 2012
+|}
+
+===Basic multimedia applications processors===
+
+These are marketed only to handset manufacturers. They are intended to be highly integrated, low cost chips for consumer products. The OMAP-DM series are intended to be used as digital media coprocessors for mobile devices with high megapixel digital still and video cameras.
+
+*OMAP331 - [[ARM architecture|ARM9]]
+*OMAP310 - ARM9
+*OMAP-DM270 - ARM7 + [[Texas Instruments TMS320|C54x]] DSP
+*OMAP-DM299 - ARM7 + ISP + stacked mDDR SDRAM
+*OMAP-DM500 - ARM7 + ISP + stacked mDDR SDRAM
+*OMAP-DM510 - ARM926 + ISP + 128 MB stacked mDDR SDRAM
+*OMAP-DM515 - ARM926 + ISP + 256 MB stacked mDDR SDRAM
+*OMAP-DM525 - ARM926 + ISP + 256 MB stacked mDDR SDRAM
+
+===Integrated modem and applications processors===
+[[File:OMAP-850.jpg|thumb|150px|right|An OMAP 850 in a [[HTC Wizard]]]]
+These are marketed only to handset manufacturers.  Many of the newer versions are highly integrated for use in very low cost cell phones.
+
+*OMAPV1035 - single-chip EDGE (was discontinued in 2009 as TI announced baseband chipset market withdrawal).
+*OMAPV1030 - EDGE digital baseband
+*OMAP850 - 200&amp;nbsp;MHz ARM926EJ-S + GSM/GPRS digital baseband + stacked EDGE co-processor
+*OMAP750 - 200&amp;nbsp;MHz ARM926EJ-S + GSM/GPRS digital baseband + DDR Memory support
+*OMAP733 - 200&amp;nbsp;MHz ARM926EJ-S + GSM/GPRS digital baseband + stacked SDRAM
+*OMAP730 - 200&amp;nbsp;MHz ARM926EJ-S + GSM/GPRS digital baseband + SDRAM Memory support
+*OMAP710 - 133&amp;nbsp;MHz ARM925 + GSM/GPRS digital baseband
+
+===OMAP L-1x===
+
+The OMAP L-1x parts are marketed only through catalog channels, and have a different technological heritage than the other OMAP parts.  Rather than deriving directly from cell phone product lines, they grew from the video-oriented [[Texas Instruments DaVinci|DaVinci]] product line by removing the video-specific features while using upgraded DaVinci peripherals.  A notable feature is use of a ''floating point'' DSP, instead of the more customary fixed point one.
+
+The [[Hawkboard]] uses the OMAP-L138
+
+*OMAP-L137 - 300&amp;nbsp;MHz ARM926EJ-S + C674x floating point DSP
+*OMAP-L138 - 300&amp;nbsp;MHz ARM926EJ-S + C674x floating point DSP
+
+==Products using OMAP processors==
+Many [[mobile phone]]s use OMAP SoCs, including the [[Nokia]] N90, N91, N92, N95, N82, E61, E62, E63, E90, N800, N810 and [[N900]] [[Internet tablet]]s, [[Motorola Droid]],  [[Motorola Droid X|Droid X]], and [[Motorola Droid 2|Droid 2]]. The [[Palm Pre]], [[Pandora (console)|Pandora]], [[Touch Book]] also use an OMAP SoC (the OMAP3430). Others to use an OMAP [[system-on-a-chip|SoC]] include the Sony Ericsson Satio, the Sony Ericsson Vivaz, the Samsung [[Omnia HD]], [[Sony Ericsson Idou]], the [[Nook Color]], [[Kindle Fire]], and some [[Archos]] tablets (such as Archos 80 gen 9 and Archos 101 gen 9).
+
+OMAP SoCs are also used as the basis for a number of hobbyist and prototyping boards, such as the [[Beagle Board]] and [[Panda Board]].
+
+==Similar platforms==
+* [[Snapdragon (System on Chip)|Snapdragon]] by [[Qualcomm]]
+* [[Nvidia Tegra|Tegra]] by [[Nvidia]]
+* [[Exynos]] by [[Samsung]]
+* [[Apple Ax|Ax]] by [[Apple]]
+* [[NovaThor]] by [[ST-Ericsson]]
+
+==References==
+{{Reflist}}
+
+==External links==
+* [http://www.ti.com/omap OMAP Application Processors]
+* [http://www.omapworld.org/ OMAPWorld]
+* [http://www.omappedia.org/wiki/Main_Page OMAPpedia]
+* [http://www.spinics.net/lists/linux-omap/ Linux OMAP Mailing List Archive]
+* [http://wiki.omap.com/index.php/OMAP3_Boards OMAP3 Boards]
+* [http://wiki.omap.com/index.php/OMAP4_Boards OMAP4 Boards]
+
+[[Category:Embedded microprocessors]]
+[[Category:Digital signal processors]]
+[[Category:ARM architecture]]
+[[Category:Texas Instruments hardware]]
+
+[[de:Open Multimedia Application Platform]]
+[[es:OMAP]]
+[[fr:OMAP]]
+[[ko:OMAP]]
+[[it:OMAP]]
+[[ja:Texas Instruments OMAP]]
+[[pl:Texas Instruments OMAP]]
+[[ru:Texas Instruments OMAP]]
+[[fi:OMAP]]
+[[sv:Texas Instruments OMAP]]
+[[tr:Omap]]
+[[zh:OMAP]]</rev></revisions></page></pages></query></api>

@@ -1,0 +1,119 @@
+<?xml version="1.0"?><api><query><pages><page pageid="5368671" ns="0" title="FreeNAS"><revisions><rev xml:space="preserve">{{Infobox Software
+| name                   = FreeNAS
+| screenshot             = [[Image:Freenasgui.png|250px]]
+| logo                   = 
+| caption                = Screenshot of FreeNAS WebGUI
+| developer              = Olivier Cochard-Labbe &lt;br /&gt; Daisuke Aoyama &lt;br /&gt; Michael Zoon &lt;br /&gt; Volker Theile
+| latest release version = 
+| latest release date    = &lt;nowiki&gt;{{release date|YYYY|MM|DD}}&lt;/nowiki&gt;
+| frequently updated     = yes
+| operating system       = [[FreeBSD]]
+| platform               = [[i386]]/[[IA-32]] and [[x86-64]]
+| genre                  = [[Computer storage]]
+| license                = [[BSD licenses|BSD license]]
+| language               = [[Chinese language|Chinese Simplified]] &lt;br /&gt;[[Traditional Chinese|Chinese Traditional]] &lt;br /&gt;[[Czech language|Czech]] &lt;br /&gt;[[Dutch language|Dutch]]&lt;br /&gt;[[English language|English]] &lt;br /&gt;[[French language|French]] &lt;br /&gt;[[German language|German]] &lt;br /&gt;[[Greek language|Greek]] &lt;br /&gt;[[Hungarian language|Hungarian]] &lt;br /&gt;[[Italian language|Italian]] &lt;br /&gt;[[Japanese language|Japanese]]&lt;br /&gt; [[Latvian language|Latvian]] &lt;br /&gt;[[Polish language|Polish]] &lt;br /&gt;[[Romanian language|Romanian]] &lt;br /&gt;[[Russian language|Russian]] &lt;br /&gt;[[Slovak language|Slovak]] &lt;br /&gt;[[Slovenian language|Slovenian]] &lt;br /&gt;[[Spanish language|Spanish]]
+| website                = {{url|http://freenas.org}}
+}}
+'''FreeNAS''' is a free [[network-attached storage]] server, supporting: [[CIFS]] ([[Samba (software)|Samba]]), [[File Transfer Protocol|FTP]], [[Network File System (protocol)|NFS]], [[rsync]], [[Apple Filing Protocol|AFP]] protocols, [[internet SCSI|iSCSI]], [[Self-Monitoring, Analysis, and Reporting Technology|S.M.A.R.T.]],  local user authentication, and software [[RAID]] (0,1,5), with a web-based configuration interface. FreeNAS takes less than 64 MB once installed on [[CompactFlash]], [[hard drive]] or [[Universal Serial Bus|USB]] [[USB flash drive|flash drive]]. FreeNAS is currently distributed as an [[ISO image]] and in [[Source code|source]] form. Through version 7.x, it was possible to run FreeNAS from a [[Live CD]], with the configuration files stored on an MS-DOS-formatted floppy disk or USB thumb drive. There is also a [[VMware]] disk image available (Last updated in 2006)&lt;ref&gt;[http://www.vmware.com/appliances/directory/168 FreeNAS on the VMWare Application Marketplace]&lt;/ref&gt;. With the release of 8.x, Live CD isn't currently supported.  FreeNas 8.x needs to be installed on a Compact Flash, USB, or dedicated hard drive.  Using the dedicated hard drive will use that drive just for the operating system, and files cannot be stored on it.
+
+The minimal [[FreeBSD]] 7.2 distribution, web interface, [[PHP]] scripts, and documentation are based on [[m0n0wall]]. FreeNAS is released under the [[BSD licenses|BSD license]]. It was reported December 2009 that [[FreeBSD]] based development would be halted and put into 'maintenance-only mode' with [[Debian Linux]] as the new development target [[OS]].&lt;ref&gt;{{cite web
+  | title =  FreeNAS Switching From FreeBSD To Debian Linux
+  | publisher = Slashdot.com
+  | url = http://linux.slashdot.org/story/09/12/06/152205/FreeNAS-Switching-From-FreeBSD-To-Debian-Linux?from=rss&amp;utm_source=feedburner&amp;utm_medium=feed&amp;utm_campaign=Feed%3A+Slashdot%2Fslashdot+(Slashdot)
+  | accessdate = 2009-12-07}}&lt;/ref&gt;
+This decision was reverted shortly afterwards, when [[iXsystems]] offered to sponsor the further development of FreeNAS.&lt;ref&gt;{{cite web
+  | title =  FreeNAS ready for the next step !
+  | publisher = FreeNAS Blog
+  | url = http://blog.freenas.org/2009/12/freenas-ready-for-next-step.html
+  | accessdate = 2009-12-10}}&lt;/ref&gt;&lt;ref&gt;{{cite web
+  | title = Rumours of FreeNAS Death Greatly Exaggerated
+  | publisher = FreeNAS blog
+  | url = http://www.learnfreenas.com/blog/2009/12/05/rumours-of-freenas-death-greatly-exaggerated/
+  | accessdate = 2009-12-05}}&lt;/ref&gt;
+
+== Features ==
+* Protocols: [[Server Message Block|CIFS]] (via [[Samba (software)|Samba]]), [[Trivial File Transfer Protocol|TFTP]], [[FTP]], [[Network File System (protocol)|NFS]], [[Secure Shell|SSH]], [[rsync]], [[Apple Filing Protocol|AFP]], [[UPnP]], [[BitTorrent (protocol)]] and [[iTunes]].
+* Extensions (plug-ins) for: [[SlimServer]], [[XBMC|Xbox Media Stream Protocol]].
+* [[rsync]] server, client and local sync.
+* [[Unison (file synchronizer)|Unison]] support.
+* [[ISCSI#Targets|iSCSI targets]] feature to create virtual disks.
+* [[ISCSI#iSCSI_terminology_and_how_iSCSI_can_be_used_by_an_OS|iSCSI initiator]].
+* Dynamic DNS client for: [[DynDNS]], [[ZoneEdit]], [[No-Ip]], and [[freedns.afraid.org]].
+* File systems: [[ZFS]], [[Unix File System|UFS]] and [[ext2]]/[[ext3]] are fully supported, [[NTFS]] read/write and [[File Allocation Table|FAT32]] read/write supported.
+* Hard drive: [[Parallel ATA|P-ATA]]/[[Serial ATA|S-ATA]], [[SCSI]], [[iSCSI]], [[Universal Serial Bus|USB]] and [[FireWire]].
+* [[GUID Partition Table|GPT]]/[[Extensible Firmware Interface|EFI]] partitioning for hard drives larger than 2 Terabytes.
+* Network cards: All wired and wireless cards supported by [[FreeBSD]] 7.2.
+* Boot from HDD, USB key, CompactFlash, CD-ROM + floppy disk, or USB flash.
+* Hardware [[RAID]] cards: All those supported by FreeBSD 7.2.
+* Software RAID levels: [[RAID0|0]], [[RAID1|1]], [[RAID5|5]], [[JBOD]], [[RAID50|5+0]], 5+1, 0+1, 1+0, etc. (using [[GEOM]] and [[Geom raid5|g_raid5]]). Also [[RAID-Z]] and RAID-Z2 (as part of [[ZFS]]).
+* 4KB sector formatting support for hard drives using [[Advanced Format|advanced formats]] such as Western Digital WD10EARS, WD15EARS, WD20EARS, and WD30EZRS. &lt;!-- removed WD30EARS, no such model --&gt;
+* Disk encryption with [[Geli (software)|geli]].
+* Management of groups and users (Local User authentication or [[Windows Server domain|Microsoft Domains]]).
+* [[Self-Monitoring, Analysis, and Reporting Technology|S.M.A.R.T.]] support.
+* Remote [[syslogd]] forwarding.
+* [[Simple Network Management Protocol|SNMP]] monitoring (Netgraph and MibII).
+* Email log and reporting notification.
+* [[VLAN]] support
+* [[Link aggregation]] and [[Fail over|link failover]] interface
+* [[Uninterruptible power supply|UPS (Uninterruptible power supply)]] support
+* [[Time Machine (Mac OS)|Apple Time Machine]] support
+
+== Awards ==
+* VMware - &quot;Ultimate Virtual Appliance Challenge, Consumer&quot;&lt;ref&gt;{{cite web
+  | title = FreeNAS is a Network-Attached Storage (NAS) server
+  | publisher = VMware, Inc.
+  | url = http://www.vmware.com/appliances/directory/168
+  | accessdate = 2008-02-28}}&lt;/ref&gt;
+* sourceforge.net - Project of the Month January 2007&lt;ref&gt;{{cite web
+  | title = Project of the Month January 2007
+  | publisher = SourceForge, Inc.
+  | url = http://sourceforge.net/potm/potm-2007-01.php
+  | accessdate = 2008-02-28}}&lt;/ref&gt;
+* InfoWorld - Best of open source in storage&lt;ref&gt;{{cite web
+  | title = Best of open source in storage - 2007
+  | publisher = InfoWorld
+  | url = http://www.infoworld.com/slideshow/2007/09/117-best_of_open_so-3.html
+  | accessdate = 2008-02-28}}&lt;/ref&gt;
+
+== See also ==
+* [[Comparison of iSCSI targets]]
+* [[OpenMediaVault]] - an out-of-the-box Linux NAS solution developed by a former FreeNAS developer, based upon Debian Linux (previous name: CoreNAS)
+* [[NASLite]] - another low-cost commercial NAS operating system from the developers of NanoNAS
+* [[Nexenta]] -  Open source OS and enterprise class NAS with kernel based ZFS
+* [[Open-E]] - Unified file and block storage management software that supports NAS, iSCSI, InfiniBand, Fibre Channel, SAN and Failover
+* [[Openfiler]]
+* [[Zentyal]]
+
+== References ==
+{{refs}}
+
+== External links ==
+{{commonscat}}
+* [http://freenas.org/ FreeNAS Homepage]
+* [http://blog.patyuen.com/lessons/technology/idiot%E2%80%99s-guide-to-installing-freenas/ Step by step installation guide for FreeNAS]
+*[http://www.learnfreenas.com/ Learn FreeNAS]
+* Radio World - Aug 11, 2009 - [http://www.radioworld.com/article/85170 FreeNAS: A Simple Data Storage Solution]
+* Washington Post/PC World - Aug 27, 2008 [http://www.washingtonpost.com/wp-dyn/content/article/2008/08/26/AR2008082600237.html Network-Attached Storage on the Cheap]
+* Videotutorial with German Translator Falk at sysops.tv - Nov 5, 2010 [http://www.sysops.tv/2010/11/05/079-freenas-entfesselt/ 079 â FreeNAS entfesselt]
+
+{{FreeBSD}}
+
+[[Category:Free file transfer software]]
+[[Category:FreeBSD]]
+[[Category:Network-attached storage]]
+[[Category:Home_servers]]
+
+[[bs:FreeNAS]]
+[[cs:FreeNAS]]
+[[de:FreeNAS]]
+[[es:FreeNAS]]
+[[fr:FreeNAS]]
+[[it:FreeNAS]]
+[[nl:FreeNAS]]
+[[ja:FreeNAS]]
+[[pl:FreeNAS]]
+[[ro:FreeNAS]]
+[[ru:FreeNAS]]
+[[simple:FreeNAS]]
+[[uk:FreeNAS]]
+[[zh:FreeNAS]]</rev></revisions></page></pages></query></api>

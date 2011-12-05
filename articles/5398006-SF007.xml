@@ -1,0 +1,104 @@
+<?xml version="1.0"?><api><query><pages><page pageid="5398006" ns="0" title="PulseAudio"><revisions><rev xml:space="preserve">{{Infobox software
+|name                   = PulseAudio
+|logo                   = [[File:PulseAudio-logo.png|250px|PulseAudio logo]]
+|collapsible            =
+|author                 =
+|developer              = [[Lennart Poettering]], Pierre Ossman, Shahms E. King, Tanu Kaskinen, Colin Guthrie
+|released               =
+|latest release version = 1.1
+|latest release date    = {{release date and age|2011|10|20}}
+|latest preview version =
+|latest preview date    =
+|frequently updated     =
+|programming language   = [[C (programming language)|C]]&lt;ref name=&quot;ohloh&quot;&gt;{{cite web |url=http://www.ohloh.net/p/pulseaudio |publisher=[[Ohloh]] |work=Analysis Summary |title=PulseAudio |archiveurl=http://www.webcitation.org/5kcZM6U9w |archivedate=2009-10-18 |accessdate=16-06-2011}}&lt;/ref&gt;
+|operating system       = [[FreeBSD]], [[NetBSD]], [[OpenBSD]], [[Linux]], [[Solaris (operating system)|Solaris]], [[Mac OS X]], and [[Windows]]
+| platform =  [[ARM architecture|ARM]], [[PowerPC|PPC (PowerPC)]], [[x86 architecture|x86]] / [[IA-32]], [[x86-64]], and [[MIPS architecture]]
+|language               =
+|status                 =
+|genre                  = [[Sound server]]
+|license                = [[GNU Lesser General Public License]] 2.1&lt;ref name=&quot;license&quot; /&gt;
+|website                = {{url|http://pulseaudio.org}}
+}}
+'''PulseAudio''' (formerly ''Polypaudio'') is a [[cross-platform]], networked [[sound server]] commonly used on the [[Linux]]-based and [[FreeBSD]] operating systems.
+
+PulseAudio runs under [[Microsoft Windows]], [[Mac OS X]], and [[POSIX]]-compliant platforms, such as [[Linux]] and [[FreeBSD]]. PulseAudio is [[free software]] released under the terms of the [[GNU Lesser General Public License]] 2.1.&lt;ref name=&quot;license&quot;&gt;{{Cite web |url=http://git.0pointer.de/?p=pulseaudio.git;a=blob_plain;f=LICENSE |title=License |publisher=[[freedesktop.org]] |work=PulseAudio git |accessdate=16-06-2011}}&lt;/ref&gt;
+
+==Design==
+{{Unreferenced section|date=January 2010}}
+[[File:Pulseaudio-diagram.svg|thumb|300px|PulseAudio operational flow chart]]
+
+PulseAudio is a sound server, a background process accepting sound input from one or more ''sources'' (processes or capture devices) and redirecting it to one or more ''sinks'' (sound cards, remote network PulseAudio servers, or other processes).
+
+One of the goals of PulseAudio is to reroute all sound streams through it, including those from processes that attempt to directly access the hardware (like legacy [[Open Sound System|OSS]] applications). PulseAudio achieves this by providing adapters to applications using other audio systems, like [[aRts]] and [[Enlightened Sound Daemon|ESD]].
+
+In a typical installation scenario under Linux, the user configures [[Advanced Linux Sound Architecture|ALSA]] to use a virtual device provided by PulseAudio. Thus, applications using ALSA will output sound to PulseAudio, which then uses [[Advanced Linux Sound Architecture|ALSA]] itself to access the real sound card. PulseAudio also provides its own native interface to applications that want to support PulseAudio directly, as well as a legacy interface for [[Enlightened Sound Daemon|ESD]] applications, making it suitable as a drop-in replacement for [[Enlightened Sound Daemon|ESD]].
+
+For [[Open Sound System|OSS]] applications, PulseAudio provides the &lt;code&gt;padsp&lt;/code&gt; utility, which replaces device files such as &lt;code&gt;/dev/dsp&lt;/code&gt;, tricking the applications into believing that they have exclusive control over the sound card. In reality, their output is rerouted through PulseAudio.
+
+==Features==
+The main PulseAudio features include:
+
+* Per-application volume controls&lt;ref&gt;{{cite web |url=http://fedoraproject.org/wiki/Interviews/LennartPoettering |title=Interviews/LennartPoettering - FedoraProject |publisher=FedoraProject |date= |accessdate=2009-07-03}}&lt;/ref&gt;
+* An extensible plugin architecture with support for loadable modules
+* Compatibility with many popular audio applications&lt;ref&gt;{{cite web |url=http://pulseaudio.org/wiki/PerfectSetup#ThirdPartyApplications |title=Pulse Audio wiki |publisher=PulseAudio |archiveurl=http://www.webcitation.org/5kcZc9icl |archivedate=2009-10-18 |accessdate=2009-07-19}}&lt;/ref&gt;
+* Support for multiple audio sources and sinks
+* Low-[[Latency (audio)|latency]] operation{{Citation needed|date=December 2008}} and support for latency measurement
+* A [[zero-copy]] memory architecture for processor resource efficiency
+* Ability to discover other computers using PulseAudio on the local network and play sound through their speakers directly
+* Ability to change which output device an application plays sound through while the application is playing sound (without the application needing to support this, and indeed without even being aware that this happened)
+* A command-line interface with scripting capabilities
+* A sound daemon with command line reconfiguration capabilities
+* Built-in sample conversion and resampling capabilities
+* The ability to combine multiple [[sound card]]s into one
+* The ability to synchronize multiple playback streams
+* Bluetooth audio devices with dynamic detection
+* The ability to enable system wide [[equalization]]
+
+==Adoption==
+PulseAudio is used in recent versions of several major linux distributions such as [[Fedora (operating system)|Fedora]], [[Ubuntu (operating system)|Ubuntu]], [[Mandriva Linux|Mandriva]], [[Linux Mint]], [[openSUSE]], and [[OpenWrt]]&lt;ref&gt;http://wiki.openwrt.org/doc/howto/pulseaudio&lt;/ref&gt;. There is also growing support for PulseAudio in the [[GNOME]] project. Starting with version 4.5 (and further enhanced in 4.6) PulseAudio is also integrated into [[Plasma Workspaces]] primarily by PulseAudio contributor Colin Guthrie, adding support to [[Phonon (KDE)|Phonon]] (the [[KDE]] multimedia framework) and [[KMix]] (the integrated mixer application) as well as writing a new &quot;Speaker Setup&quot; GUI to aid the configuration of multi-channel speakers.
+
+PulseAudio is being used as audio system on various [[Linux]] based mobile devices, including [[Nokia N900]], [[Nokia N9]] and the [[Palm Pre]].&lt;ref&gt;{{Citation |url=http://www.techworld.com.au/article/320807/open_source_identity_pulseaudio_creator_lennart_poettering |title=Open source identity: PulseAudio creator Lennart Poettering |work=TechWorld |date=8 October 2009 }}.&lt;/ref&gt;
+
+===Early Adoption===
+When first adopted by the distributions, PulseAudio developer [[Lennart Poettering]] described it as &quot;the software that currently breaks your audio&quot;.&lt;ref&gt;{{cite web |url=http://lwn.net/Articles/299211/ |title=LPC: Linux audio: it's a mess |archiveurl=http://www.webcitation.org/5kcZfOb4l |archivedate=2009-10-18 |publisher=Lwn.net |date= |accessdate=2009-07-03}}&lt;/ref&gt;  Poettering later claimed that &quot;Ubuntu didn't exactly do a stellar job. They didn't do their homework&quot; in adopting PulseAudio&lt;ref&gt;{{cite web |url=http://0pointer.de/blog/projects/jeffrey-stedfast.html |title=PulseAudio FUD |author=Lennart Poettering |archiveurl=http://www.webcitation.org/5kcZiAcoS |archivedate=2009-10-18 |publisher=0pointer.de |date=18 July 2008 |accessdate=2009-12-30}}&lt;/ref&gt; for [[Ubuntu (operating system)|Ubuntu]] &quot;Hardy Heron&quot; (8.04), a problem which was then improved with subsequent Ubuntu releases.&lt;ref&gt;{{cite web|url=http://ubuntuforums.org/showthread.php?t=789578|title=HOWTO: PulseAudio Fixes &amp; System-Wide Equalizer Support |date=2008-05-10 |publisher=Ubuntu Forums |accessdate=2009-10-18 |archiveurl=http://www.webcitation.org/5kcZp2FZL |archivedate=2009-10-18 }}&lt;/ref&gt; However, on October 2009, Poettering reported that he was still not happy with Ubuntu's integration of PulseAudio.&lt;ref&gt;{{Cite web |url=http://0pointer.de/blog/projects/pa-in-ubuntu.html |title=I'll Break Your Audio |publisher=Lennart Poettering Blog |date=19 October 2009 |accessdate=26 December 2009 }}&lt;/ref&gt;
+
+Certain programs, such as [[Adobe Flash]] for Linux, caused instability in PulseAudio.&lt;ref&gt;{{cite web |url=http://ubuntuforums.org/showthread.php?t=772632 |title=No sound after running Flash, YouTube, etc. (pulseaudio solution) |publisher=Ubuntu Forums |accessdate=2009-10-18 |archiveurl=http://www.webcitation.org/5kcZukzEL |archivedate=2009-10-18}}&lt;/ref&gt;&lt;ref&gt;{{cite web |url=https://wiki.ubuntu.com/PulseAudio |title=PulseAudio - Ubuntu Wiki |publisher=Ubuntu Wiki |accessdate=2009-10-18 |archiveurl=http://www.webcitation.org/5kcZznLCM |archivedate=2009-10-18}}&lt;/ref&gt; Newer implementations of Flash plugins do not require the conflicting elements, and as a result Flash and PulseAudio are now compatible.
+
+==Alternatives==
+* [[Advanced Linux Sound Architecture|ALSA]] provides a software mixer called dmix, which was developed prior to PulseAudio. This is available on almost all Linux distributions and is a simpler PCM audio mixing solution. It does not provide the advanced features (such as device aggregation, timer-based scheduling, and network audio) of PulseAudio. On the other hand, ALSA offers, when combined with corresponding sound cards, extremely low latencies.
+* [[JACK Audio Connection Kit|JACK]] is a professional sound server, which provides real-time, [[low latency]] (i.e. 5 milliseconds or less) audio performance and, since JACK2, supports efficient load balancing by utilizing [[symmetric multiprocessing]], that is the load of all audio clients can be distributed among several processors. Audio clients can be arbitrarily connected with each other. The graph, that is all connections among JACK clients, can be visualized and edited at runtime with various applications (e.g. [[Qjackctl]]), providing a means to overview the overall audio control flow and to modify the routing of all audio applications and hardware at any time. JACK is the preferred sound server for professional audio applications such as [[Ardour (software)|Ardour]], [[Rezound]], and [[LinuxSampler]].
+* [[Open Sound System|OSS]]. This was the original sound system used in Linux, but was deprecated after the 2.5 kernel.&lt;ref&gt;[http://www.linux.com/archive/articles/113775 ''&quot;OSS is available not only for Linux but also for BSD OSes and other Unixes. That may be its only advantage, because this system is not very powerful and was officially replaced by ALSA in 2.5 kernels...&quot;''], 2004, Linux.com &lt;/ref&gt; Proprietary development was continued by [[4Front Technologies]] - who in July 2007 released sources for OSS under [[CDDL]] for [[OpenSolaris]] and [[GPL]] for [[Linux]].&lt;ref name=&quot;OSS-liberated-2007&quot;&gt;{{cite web |url=http://www.linuxpr.com/releases/9766.html |title=4Front technologies releases the source code for open sound system }}&lt;/ref&gt; The modern implementations Open Sound System v4, provide software mixing, resampling, and changing of the volume on a per-application basis; in contrast to PulseAudio, these features are implemented within the kernel. 
+
+PulseAudio can also inter-operate with existing legacy sound systems, including those that were designed to exclusively lock the sound card (e.g. OSS v3).
+
+==See also==
+{{Portal|Free software}}
+* [[JACK Audio Connection Kit]]
+* [[aRts]]
+* [[Network Audio System]]
+* [[List of Linux audio software]]
+
+==References==
+{{Reflist|colwidth=30em}}
+
+==External links==
+* [http://pulseaudio.org/ Official website]
+* [http://0pointer.de/blog/projects/pulse.html The Project Formerly Known as Polypaudio], a blog entry by one of the PulseAudio developers discussing the name change
+{{Use dmy dates|date=April 2011}}
+
+{{DEFAULTSORT:Pulseaudio}}
+[[Category:Free audio software]]
+[[Category:Free software programmed in C]]
+[[Category:Audio libraries]]
+
+[[de:PulseAudio]]
+[[es:PulseAudio]]
+[[fr:PulseAudio]]
+[[it:PulseAudio]]
+[[nl:PulseAudio]]
+[[ja:PulseAudio]]
+[[nn:PulseAudio]]
+[[pl:PulseAudio]]
+[[pt:PulseAudio]]
+[[ru:PulseAudio]]
+[[zh:PulseAudio]]</rev></revisions></page></pages></query></api>

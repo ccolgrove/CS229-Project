@@ -1,0 +1,95 @@
+<?xml version="1.0"?><api><query><pages><page pageid="17581319" ns="0" title="Inssider"><revisions><rev xml:space="preserve">{{ref improve|date=August 2011}}
+{{Infobox Software
+| name                   = inSSIDer
+| logo                   = [[Image:Inssider logo.png]]
+| screenshot             = [[Image:Inssider screenshot.png|250px]]
+| caption                = 
+| collapsible            = 
+| author                 = 
+| developer              = MetaGeek, LLC
+| released               = 
+| latest release version = 2.0.7.0126
+| latest release date    = {{release date|2011|1|26}}
+| latest preview version = 
+| latest preview date    = 
+| frequently updated     = 
+| programming language   = C#
+| operating system       = [[Microsoft Windows|Windows]], [[Linux]] (Beta)
+| platform               = [[.NET Framework]]
+| size                   = 
+| language               = 
+| status                 = development/current
+| genre                  = Wi-Fi network scanner
+| license                = [[Open-Source]] ([[Apache License]] v2)
+| website                = [http://www.metageek.net/products/inssider www.metageek.net/products/inssider]
+}}
+
+'''inSSIDer''' is a [[Wi-Fi]] [[network scanner]] for [[Microsoft Windows|Windows]].  It received a 2008 [[Infoworld Bossie Awards|Infoworld Bossie Award]] for &quot;Best of open source software in networking&quot;.&lt;ref&gt;[http://akamai.infoworld.com/about/bossies/bossies_pr08.pdf IDGâs InfoWorld Names the Winners of the Best of Open Source Software for 2008]&lt;/ref&gt;
+
+==History==
+inSSIDer began as a replacement for the aging [[NetStumbler]], which had not been actively developed for several years. In addition, MetaGeek heard complaints that NetStumbler did not work with modern 64-bit operating systems or even [[Windows Vista]].  It was then decided to build an open-source Wi-Fi network scanner designed for the current generation of Windows operating systems that surpassed the capability and overall quality of NetStumbler, which had been the standard Windows Wi-Fi scanner for several years.
+
+==Development==
+This project was inspired by [[Charles Putney]] on The Code Project. Norman Rasmussen modified it to use the Managed Wi-Fi C# wrapper for the Native Wi-Fi API.
+
+==Features==
+* Works with internal Wi-Fi radio
+* Wi-Fi network information ([[SSID]], [[MAC address|MAC]], Access point vendor, data rate, signal strength, security, etc.)
+* Graph signal strength over time
+* Shows how Wifi networks overlap
+* Open source (Apache License, Version 2.0)
+* [[GPS]] Support
+* Export to Netstumbler(*.ns1) files
+* [[KML]] Logging
+
+==Version 2.0==
+Version 2.0 is a complete re-write of inSSIDer. Beta 1 was released September 8, 2010.
+
+===New Features in 2.0===
+* A new more stable codebase
+* A news tab to replace the ad
+* More stable GPX and KML logging
+* New Time Graph
+** Stale access points fade out over time
+* Graphs are now in tabs
+** Separate graphs for 2.4 and 5&amp;nbsp;GHz channels
+* A filtering system that allows you to only show networks that meet certain criteria
+** Great for hunting down hotspots
+* A GPS status tab
+** Shows detailed GPS data(like location, speed, altitude, etc.)
+** Also shows signal levels of satellites in view(up to 12)
+* Fullscreen mode
+* Mini mode
+** Mini mode is designed for ''extremely'' small screens  that may otherwise feel cramped with the full interface
+** All points of data are in tabs
+** Default reduced number of columns visible in data grid
+** 5&amp;nbsp;GHz channel view is broken into 2 graphs for lower(33-64) and upper(100-165) channels
+** Switching between full and mini mode preserves scan data and scan state
+*** You can be scanning in Full mode and switch to mini to keep scanning without interruption
+* Better paring of 802.11n data
+** Shows actual extended data rate
+** Channel graphs show 40&amp;nbsp;MHz secondary channel, if any
+
+==System requirements==
+===Windows===
+* Windows XP SP2, Vista, or Windows 7 (32- or 64-bit)
+* Microsoft .Net framework 2.0 or higher
+** inSSIDer 2.0 requires .Net 3.5 or higher
+* 1024 x 600 [[screen resolution]] minimum recommended
+** If using lower than 1024 x 600 (like 800 x 480), mini mode is recommended
+===Linux&lt;ref&gt;https://github.com/metageek-llc/inSSIDer-2-Cross-Platform/wiki/Installation-instructions-+-Troubleshooting-+-FAQ-for-inSSIDer-Beta-0.1.1.0429&lt;/ref&gt;===
+*libwebkit1.1-cil
+*libmono-system-web2.0-cil
+
+==External links==
+*[http://www.metageek.net/products/inssider Official website]
+
+==References==
+{{reflist}}
+
+[[Category:Wireless networking]]
+
+
+{{free-software-stub}}
+
+[[el:Inssider]]</rev></revisions></page></pages></query></api>

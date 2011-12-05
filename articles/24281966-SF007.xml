@@ -1,0 +1,94 @@
+<?xml version="1.0"?><api><query><redirects><r from=".cpio" to="Cpio" /></redirects><pages><page pageid="2864712" ns="0" title="Cpio"><revisions><rev xml:space="preserve">{{lowercase|cpio}}
+{{Infobox Software
+| name                 = Cpio
+| developer            = [[GNU Project]]
+| frequently updated   = yes
+| operating_system     = [[Unix-like]]
+| programming language = [[C (programming language)|C]]
+| genre                = [[File archiver]]
+| license              = [[GNU General Public License|GPL]]
+| website              = {{URL|http://www.gnu.org/software/cpio/}}
+}}
+
+'''cpio''' is a general [[file archiver]] utility and its associated [[file format]]. It is primarily installed on [[Unix-like]] computer operating systems. The [[software utility]] was originally intended as a tape archiving program as part of the Programmer's Workbench ([[PWB/UNIX]]), and has been a component of virtually every Unix operating system released thereafter. Its name is derived from the phrase ''copy in and out'', in close description of the program's use of [[standard input]] and [[standard output]] in its operation.
+
+All variants of Unix also support other backup and archiving programs, such as [[tar (file format)|tar]] that has become more widely recognized.&lt;ref name=&quot;PRL97&quot;&gt;Peek, J; O'Reilly, T; Loukides, M. (1997). ''Unix Power Tools''. p. 38.13. O'Reilly &amp; Associates, Inc. ISBN 1-56592-260-3.&lt;/ref&gt; The use of cpio by the [[RPM Package Manager]], in the [[initramfs]] program of [[Linux kernel]] 2.6, and  in Apple Computer's [[Installer (Mac OS X)|Installer]] ([[pax (Unix)|pax]]) make cpio an important archiving tool.
+
+Since its original design, cpio and its archive file format have undergone several, sometimes incompatible, revisions. Most notable is the change, now an operational option, from the use of a binary format of archive file meta information to an ASCII-based representation.
+
+==Operation and archive format==
+Cpio was originally designed to store backup file archives on a tape device in a sequential, contiguous manner. Cpio does not compress any content, but resulting archives are often compressed using [[gzip]] or other external compressors.
+
+===Archive creation===
+When creating archives during the ''copy-out'' operation, initiated with the ''-o'' command line flag,  cpio reads file and directory path names from its standard input channel and writes the resulting archive byte stream to its standard output. Cpio is therefore typically used with other utilities that generate the list of files to be archived, such as the [[find]] program.
+
+The resulting cpio archive is a sequence of files and directories concatenated into a single archive, separated by header sections with file meta information, such as filename, inode number, ownership, permissions, and timestamps.  The file name of an archive is conventionally usually chosen with a &lt;code&gt;.cpio&lt;/code&gt; file extension.
+
+Example using ''find'' to archive an entire directory tree:
+&lt;pre&gt;
+$ find . -depth -print | cpio -o &gt;archive.cpio
+&lt;/pre&gt;
+
+===Extraction===
+During the ''copy-in'' operation, initiated by the ''-i'' command line flag, cpio reads an archive from its standard input and recreates the archived files in the operating system's file system.
+
+&lt;pre&gt;
+$ cpio -id &lt;archive.cpio
+&lt;/pre&gt;
+The ''-d'' flag tells cpio to construct directories as necessary. The ''-v'' flag can be used to have file names listed as files are extracted.
+
+Any command line arguments (not option flags) are shell-like [[globbing]]-patterns; only files in the archive whose names match one or more of those patterns are copied from the archive. The following example extracts etc/fstab from the archive.
+&lt;pre&gt;
+$ cpio -id etc/fstab &lt;archive.cpio
+&lt;/pre&gt;
+
+===List===
+The files contained in a cpio archive may be listed with this invocation:
+&lt;pre&gt;
+$ cpio -it &lt; archive.cpio
+&lt;/pre&gt;
+List may be useful since a cpio archive may contain absolute rather than relative paths (e.g., /bin/ls vs. bin/ls).
+
+===Copy===
+Cpio supports a third type of operation which [[file copying|copies files]], initiated with the ''pass'' option (''-p'').  This mode combines the copy-out and copy-in steps without actually storing any archive in a file.  In this mode, cpio reads path names on standard input like the ''copy-out'' operation, but instead of creating an archive, it recreates the directories and files at a different location in the file system, as specified by path given as a command line argument.
+
+&lt;pre&gt;
+$ find . -depth -print0 | cpio --null -pduv new-dir
+&lt;/pre&gt;
+
+==POSIX standardization==
+The ''cpio'' utility was standardized in [[POSIX]].1-1988. It was dropped from later revisions, starting with ''POSIX.1-2001'' because of its 8 GB file size limit. The POSIX standardized [[pax (program)|pax]] utility can be used to read and write cpio archives instead.
+
+==Implementations==
+Most [[Linux]] distributions provide the GNU version of cpio.&lt;ref&gt;[http://www.gnu.org/software/cpio/cpio.html &quot;Cpio&quot;]. GNU.org.&lt;/ref&gt; [[FreeBSD]] and [[Mac OS X]] use the BSD-licensed cpio provided with libarchive&lt;ref&gt;[http://code.google.com/p/libarchive/ &quot;libarchive&quot;]. Google Code.&lt;/ref&gt;
+
+==See also==
+* [[List of Unix programs]]
+* [[List of archive formats]]
+
+==References==
+{{Reflist|2}}
+
+== External links ==
+* [http://man.freebsd.org/cpio FreeBSD cpio(1) manual]
+* [http://www.gnu.org/software/cpio/manual/html_mono/cpio.html GNU cpio manual]
+* [http://www.gnu.org/software/cpio/cpio.html GNU cpio web site]
+* [http://rightsock.com/~kjw/Ramblings/tar_v_cpio.html TAR vs. CPIO]
+* [http://people.freebsd.org/~kientzle/libarchive/man/cpio.5.txt Format of CPIO Archives]
+
+{{GNU}}
+{{Archive formats}}
+
+[[Category:Unix archivers and compression-related utilities]]
+[[Category:Free backup software]]
+[[Category:Archive formats]]
+[[Category:Package management systems]]
+
+[[de:Cpio]]
+[[es:Cpio]]
+[[fr:Cpio]]
+[[ja:Cpio]]
+[[pl:Cpio]]
+[[ru:Cpio]]
+[[fi:Cpio]]
+[[zh:Cpio]]</rev></revisions></page></pages></query></api>

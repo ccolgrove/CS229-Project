@@ -1,0 +1,148 @@
+<?xml version="1.0"?><api><query><pages><page pageid="14703407" ns="0" title="OpenGEU"><revisions><rev xml:space="preserve">{{Cleanup|date=March 2009}}
+{{Out of date|article|date=May 2011}}
+{{ infobox OS
+| name                   = OpenGEU
+| screenshot             = [[Image:OpenGEU Morning Sunshine.gth.png|200px]]
+| logo                   = [[Image:Sunshine logo.png|200px]]
+| caption                = An ''OpenGEU'' 9.10 Quarto di Luna Morning Sunshine Screenshot
+| developer              = [http://thedarkmaster.wordpress.com Luca De Marini (AKA TheDarkMaster)]
+| family                 = Derivative of [[Ubuntu (operating system)|Ubuntu]]
+| source_model           = [[Open source]]
+| language               = [[#Multilingual|multilingual]]
+| kernel_type            = [[Monolithic kernel|Monolithic]]
+| ui                     = [[Enlightenment (window manager)|Enlightenment]] plus [[GNOME]]
+| working_state          = Active
+| website                = [http://opengeu.intilinux.com/ opengeu.intilinux.com]
+| supported_platforms    = [[IA-32]], [[x86-64]]
+| updatemodel            =
+}}
+
+'''OpenGEU''' is a free computer [[operating system]] based upon the popular [[GNU/Linux distribution]], [[Ubuntu (operating system)|Ubuntu]], which in turn is based on [[Debian Linux]].
+
+OpenGEU's aim is to successfully combine the power and ease of use of [[GNOME]] [[desktop environment]] with the lightweight, and graphical [[eye candy]] features of the [[Enlightenment window manager]] into a unique and user-friendly desktop.  While OpenGEU is originally derived from Ubuntu, the design of the user interface makes it appear significantly different to the user.  OpenGEU's developers continue to create their own set of original art themes, software, and tools.
+
+The next release is going to be based on Debian, breaking their tradition of releasing on an Ubuntu base.
+
+==OpenGEU and Geubuntu==
+OpenGEU is an unofficial re-working of Ubuntu and was initially called Geubuntu (a portmanteau of GNOME, Enlightenment and Ubuntu). The distribution changed its name from Geubuntu to OpenGEU on 21 January 2008 in order to remove the &quot;-buntu&quot; suffix from its name. This was done in respect for Ubuntu's own trademark policies, which require all officially recognized Ubuntu derivatives to be based upon software found only in the official Ubuntu repositoriesâa criterion not met by OpenGEU.&lt;ref&gt;[http://www.ubuntu.com/aboutus/trademarkpolicy '''(EN)''' Ubuntu Trademark Policies]&lt;/ref&gt;
+
+==Installation==
+[[Image:OpenGEU LC m01.jpg|thumb|right|230px|OpenGEU Luna Crescente Moonlight theme]]
+[[Image:OpenGEU LC M02 1.jpg|thumb|right|230px|OpenGEU Luna Crescente Moonlight theme with a few windows open]]
+
+Installation of OpenGEU is generally performed with the [[Live CD]], which allows the user to first test OpenGEU on their system prior to installation (albeit with a performance limit from loading applications off the disk). This is particularly useful for testing hardware compatibility and driver support.  The CD also contains the Ubiquity installer, which guides the user through the permanent installation process.  Due to the fact that OpenGEU uses &quot;Ubiquity,&quot; the installation process is nearly identical to that of Ubuntu.&lt;ref&gt;[http://fullcirclemagazine.org/issue-9/ '''(EN)''' Full Circle Magazine issue 9]&lt;/ref&gt; Alternatively, users can download a disk image of the CD from an online source which can then be written to a physical medium or run from a hard drive via [[UNetbootin]].  Another option is to add the OpenGEU repositories to an established Ubuntu-based system and install OpenGEU via the [[Advanced Packaging Tool|package manager]].
+
+==Programs==
+
+===Default Environment===
+As described above, OpenGEU includes software from both the GNOME and Enlightenment projects.  Unlike Ubuntu, which uses [[Metacity]] or [[Compiz]] 3D, OpenGEU uses [[Enlightenment DR17]] as its primary window manager for its rich two-dimensional features, such as real transparency and desktop animation options.  Starting with OpenGEU 8.10 Luna Serena, a port of Compiz called [[Compositing window manager#List of compositing window managers|Ecomorph]] has been available for 3D effects, as well.
+
+===OpenGEU Themes Manager===
+Starting with OpenGEU 8.04.1 Luna Crescente, the GEUTheme application is a default in the distribution.  This is a tool capable of showing a list of installed OpenGEU themes to the user, enabling the user to browse through them and select one with one-click ease. GEUTheme is capable of fetching new themes from the internet or from an expansion CD for the user. The tool has some advanced customization abilitiesâit helps the user to install and customize many aspects of their OpenGEU desktop environment (including [[Computer icon|icon]] themes, [[GTK+]], &lt;abbr title=&quot;Enlightenment ToolKit&quot;&gt;ETK&lt;/abbr&gt;, [[Enlightenment DR17|E17]], &lt;abbr title=&quot;Enlightened Widget Library&quot;&gt;EWL&lt;/abbr&gt; themes, wallpapers, fonts, etc). It is also possible for the user to create new OpenGEU themes, as well as to export, import, and share them. The creation of this tool marks the first availability of a Desktop Effects Manager, similar to that of Ubuntu, for an Enlightenment desktop. This tool is incorporated into the GEUTheme application.
+
+===Additional Components===
+Since the distribution is an Ubuntu derivative, the range of available software is almost identical to that of Ubuntu and the other related Ubuntu projects.  Additional repositories have been created by the OpenGEU development team, and they are pre-enabled for the distribution's use. Enlightenment 17 software has been compiled, re-packaged in the [[Deb (file format)|.deb]] packaging format, and uploaded to the repositories and a number of new software packages have been developed by the OpenGEU team itself: the OpenGEU Themes Manager, eTray, e17-settings-daemon and several E17 modules.
+
+==OpenGEU themes==
+The E17 window manager uses a number of different libraries to render [[GUI]] applications. To ensure every application shares the same look on the desktop, it was necessary to develop themes for various libraries that utilize the same [[art]] and [[graphics]]. This is a difficult and time-consuming task compared to that of GNOME, where all the GTK+ applications use the same default [[GTK+]] libraries to [[Rendering (computer graphics)|render]] [[GUI widget|widgets]].  OpenGEU has therefore developed a way to allow easy switching from one theme to another, and accordingly change the graphics of every desktop component at the same time. Every OpenGEU theme is also capable of changing the look of icon sets and wallpapers.  In other words, OpenGEU themes are just a set of sub-themes for all of the different libraries used in the distribution (Edje, ETK, EWL, GTK+), designed so that the user will notice any change in the appearance when opening their various chosen applications.
+
+===Sunshine and Moonlight===
+The two main signature themes of OpenGEU are Sunshine and Moonlight. While Sunshine and Moonlight are considered the primary themes, there is also a number of alternative themes which are now available and more are in development for the next release.
+
+OpenGEU is presented as an artistic distribution and the continued development of these themes is likely to be a primary feature in OpenGEU's future.
+
+==Project Focus==
+OpenGEU's focus is on reducing minimum hardware requirements, such as by providing two alternative methods to enable [[Compositing window manager|compositing]] effects without any particular hardware or driver requirement.
+
+The primary OpenGEU concept is that of building a complete and universally accessible E17 desktopâfilling all of the missing parts in E17 with GNOME tools, while always concentrating on the speed of the distributionâfor usability on any system.
+
+==Remixes==
+
+'''OpenGeeeU 8.10 Luna Serena''' was released March 23, 2009. It's a version of OpenGEU modified to work on the [[Asus EeePC]]. OpenGeeeU 8.10 uses [[EasyPeasy]] as its platform, so it is optimized for [[Netbook|netbooks]] and it includes all of the drivers and fixes needed for EeePC to work out of the box.&lt;ref&gt;[http://opengeu.intilinux.com/news/opengeeeu-8-04-1-live-cd-for-eeepc-released  OpenGeeeU 8.04.1 Live CD for EeePC released]&lt;/ref&gt;
+
+==Release Notes==
+{| width=&quot;100%&quot; summary=&quot;History of OpenGEU releases&quot;
+|-
+! scope=&quot;col&quot; | Version
+! scope=&quot;col&quot; width=&quot;20%&quot; | Name
+! scope=&quot;col&quot; width=&quot;20%&quot; | Release Date
+! scope=&quot;col&quot; | Features and description
+|-
+! scope=&quot;row&quot; style=&quot;background-color: #ffcccc&quot; | 7.04
+| Geubuntu Prima Luna
+| 18 September 2007
+| The first version ever released. The main innovation of this distro was the idea of using a big number of system and configuration tools taken from the Gnome world, together with the Enlightenment Window Manager. Geubuntu 7.04 included [[GNOME Panel]] and [[Nautilus (file manager)|Nautilus]].&lt;ref&gt;[http://thedarkmaster.wordpress.com/2007/09/18/geubuntu-704-prima-luna-has-been-released]&lt;/ref&gt;
+|-
+! scope=&quot;row&quot; style=&quot;background-color: #ffcccc&quot; rowspan=&quot;2&quot; | 7.10
+| Geubuntu Luna Nuova
+| 6 December 2007
+| The second GEUbuntu release came with brand new (and original) Sunshine and Moonlight themes and it focused much more than the first release on eye-candy and speed. It adopted [[Thunar]] instead of the Nautilus File Manager and XFCE 4 Panel instead of the GNOME Panel.&lt;ref&gt;[http://opengeu.intilinux.com/news/geubuntu-luna-nuova-released]&lt;/ref&gt;
+|-
+| OpenGEU Luna Nuova
+| 21 January 2008
+| This version was released shortly after the release of Geubuntu Luna Nuova and with this version Geubuntu changed its name to OpenGEU.  Using the name change as an opportunity for releasing a new version, OpenGEU Luna Nuova is released and is a far more stable distribution, many [[Software bug|bugs]] have been fixed. Another change was the use of [[FBPanel]] instead than XFCE Panel as the additional panel of the distribution.&lt;ref&gt;[http://opengeu.intilinux.com/news/opengeu-luna-nuova-released]&lt;/ref&gt;
+|-
+! scope=&quot;row&quot; style=&quot;background-color: #ffcccc&quot; | 8.04
+| OpenGEU Luna Crescente
+| 8 September 2008
+| OpenGEU Luna Crescente is based on [[Ubuntu 8.04|Ubuntu 8.04.1 â Hardy Heron]]. It introduced a lot of new software directly developed by the distribution team, like the OpenGEU Themes Manager (GEUTheme), an application called eTray (a system tray for Enlightenment, which lacked this kind of tool) some E17 modules like the Trash Bin (there was no trash bin whatsoever in Enlightenment before this) and Extramenu (a module that enables the user to add a custom menu, with submenus, to the standard E17 menu). With this release the OpenGEU team started compiling and managing their own repositories both for Enlightenment and the rest of the newly developed software. OpenGEU uses the default Ubuntu repositories too. With every OpenGEU release, new Sunshine and Moonlight themes have been developed and are used by default. With the release of GEUTheme, a lot more OpenGEU themes have been created and are available for download from the official repositories.&lt;ref&gt;[http://opengeu.intilinux.com/news/opengeu-8-04-1-live-cd-released]&lt;/ref&gt;
+|-
+! scope=&quot;row&quot; style=&quot;background-color: #d8ff84&quot; | 8.10
+| OpenGEU Luna Serena
+| 12 February 2009
+| Luna Serena featured ''Ecomorph'' (modified [[Compiz]] for [[Enlightenment (window manager)#E17|E17]]) - an optional compositing window manager for computers running 3D graphics cards, and a new settings manager and places menu.&lt;ref&gt;[http://opengeu.intilinux.com/news/opengeu-luna-serena-packages-version-released]&lt;/ref&gt;
+|-
+! scope=&quot;row&quot; style=&quot;background-color: #99ccff&quot; | 9.10
+| OpenGEU Quarto di Luna
+| 27 January 2010
+| This is the current release, although there are currently no means of downloading it. According to the release announcement, one can install Quarto di Luna via [[APT]] repositories into an existing [[Ubuntu 9.10]] installation.&lt;ref&gt;[http://opengeu.intilinux.com/news/opengeu-9-10-quarto-di-luna-repos-are-online]&lt;/ref&gt;
+|}
+
+{| align=&quot;center&quot; summary=&quot;Used Colors Legend&quot;
+! colspan=&quot;3&quot; | Used Colors Legend
+|-
+| width=&quot;33%&quot; bgcolor=&quot;#ffcccc&quot; | Release no longer supported
+| width=&quot;33%&quot; bgcolor=&quot;#d8ff84&quot; | Release still supported
+| bgcolor=&quot;#99ccff&quot; | Future Version
+|}
+
+==Reviews and Citations==
+
+OpenGEU has been independently reviewed by a number of on- and off-line Linux magazines:
+
+* [http://gnulinuxmag.com GNU Linux Magazine (FR)] issue 84, '''(IT)''' GNU Linux Magazine issue 93, '''(IT)''' Linux Pro issue 72 '''(EN)'''
+* [[Full Circle Magazine]]&lt;ref&gt;Luca de Marini. &quot;Flavor of the Month&quot;. [http://fullcirclemagazine.org/issue-9/ '''(EN)''' ''Full Circle Magazine'', issue 9], 2008, p. 6.&lt;/ref&gt;
+* [[Softpedia]]&lt;ref&gt;[http://news.softpedia.com/news/Testing-OpenGEU-8-04-Beta-92148.shtml &quot;Testing OpenGEU 8.04 Beta&quot;. 20 August 2008]&lt;/ref&gt;&lt;ref&gt;[http://news.softpedia.com/news/OpenGEU-8-04-1-Faster-Desktop-Experience-Great-Looks-93374.shtml &quot;OpenGEU 8.04.1: Faster Desktop Experience, Great Looks&quot;. 11 September 2008]&lt;/ref&gt;
+* [[Linux.com]]&lt;ref&gt;[http://www.linux.com/feature/123494 &quot;When Enlightenment met Ubuntu&quot;. 4 January 2008]&lt;/ref&gt;
+* [[DistroWatch]]&lt;ref&gt;[http://distrowatch.com/weekly.php?issue=20071210#review &quot;First look at Geubuntu 7.10&quot;]&lt;/ref&gt;
+* [http://dedoimedo.com Dedoimedo.com]&lt;ref&gt;[http://www.dedoimedo.com/computers/opengeu_overview.html  &quot;OpenGEU â sunny Ubuntu â Overview &amp; short tutorial&quot;]&lt;/ref&gt;
+
+==See also==
+{{Portal|Free software}}
+* [[GNOME]]
+* [[Bodhi Linux]]
+* [[Ubuntu (operating system)|Ubuntu]]
+* [[Enlightenment (window manager)]]
+* [[Ecomorph (window manager)]]
+
+==Notes==
+{{reflist}}
+
+== External links==
+{{Commons category-inline}}
+*[http://opengeu.intilinux.com '''(EN)''' opengeu.intilinux.com] â Official OpenGEU Home Page
+* {{DistroWatch|opengeu|NAME=OpenGEU}}
+*[https://launchpad.net/opengeu OpenGEU's page on Launchpad]
+
+{{Enlightenment desktop}}
+{{Ubuntu-distro}}
+{{Linux distributions}}
+
+{{DEFAULTSORT:Opengeu}}
+[[Category:Ubuntu (operating system) derivatives]]
+
+[[es:OpenGeu]]
+[[fr:OpenGEU]]
+[[it:OpenGEU]]
+[[pl:OpenGEU]]
+[[ru:OpenGEU]]</rev></revisions></page></pages></query></api>

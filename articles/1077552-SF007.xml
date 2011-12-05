@@ -1,0 +1,108 @@
+<?xml version="1.0"?><api><query><pages><page pageid="1077552" ns="0" title="Video for Windows"><revisions><rev xml:space="preserve">[[Image:Am microsoft media player.png|thumb|right|Screenshot of [[Media Player (Microsoft)|Media Player]], one of the components of Video for Windows]]
+
+'''Video for Windows''' (VfW, also referred to as Video Compression Manager (VCM)) was a [[multimedia framework]] developed by [[Microsoft]] that allowed [[Microsoft Windows]] to play [[digital video]].
+
+==Overview==
+Video for Windows was first introduced in November 1992. Video for Windows was developed as a reaction to [[Apple Computer]]'s [[QuickTime]] technology, which added digital video to the [[Apple Macintosh|Macintosh]] platform. Costing around $200,&lt;ref name='Issue 80'&gt;{{cite book | last = Future Publishing | first = | authorlink = | coauthors = | title = PC Plus | publisher = | date = May 1993 | location =  | url = | doi = | id = | isbn =| page = 61 }}&lt;/ref&gt; the software included editing and encoding programs for use with video input boards. A runtime version for viewing videos only was also made available. Originally released as a free add-on to [[Windows 3.1x|Windows 3.1]] and Windows 3.11, it then became an integral component of [[Windows 95]] and later.
+Like QuickTime there were three components in Video for Windows. The technology introduced a file format designed to store digital video, [[Audio Video Interleave]] (AVI). The technology provided an [[application programming interface]] that allowed [[software developer]]s working on the Windows platform to add the ability to play or manipulate [[digital video]] to their own applications. Lastly, it included a suite of software for playing and manipulating digital video:
+*[[Media Player (Microsoft)|Media Player]]
+*VidCap
+*VidEdit
+*BitEdit
+*PalEdit
+*WaveEdit
+
+The original version had a number of limitations including a maximum resolution of 320 pixels by 240 pixels and a maximum framerate of 30 frames per second.
+
+The Video for Windows technology was mostly replaced by the July 1996 release of its [[Component Object Model|COM]]-based successor - [[ActiveMovie]] - first released as a beta version along with the second beta of Internet Explorer 3.0.&lt;ref&gt;{{cite web | url=http://www.microsoft.com/presspass/press/1996/jul96/actvinpr.mspx | title=Microsoft Delivers ActiveMovie for Microsoft Internet Explorer 3.0 | author=Microsoft | date=July 16, 1996 | work=Microsoft PressPass | accessdate=2006-12-31}}&lt;/ref&gt; ActiveMovie was also released as a free download, either standalone or bundled with a version of [[Internet Explorer]]. One component that was not replaced with ActiveMovie was video capture, which still required an install of Video for Windows until the release of [[Windows Driver Model|WDM]] capture drivers, which only started to become popular in 2000.
+
+In 1995 Video for Windows became an issue in a [[San Francisco Canyon Company|lawsuit Apple filed]] against Microsoft, Intel, and the [[San Francisco Canyon Company]], regarding the alleged theft of several thousand lines of [[QuickTime]] source code to improve the performance of Video for Windows.&lt;ref&gt;Markoff, John. [http://select.nytimes.com/gst/abstract.html?res=F60611FB3D550C738DDDAB0894DD494D81 &quot;Intel and Microsoft Added to Apple Lawsuit&quot;], New York Times, February 10, 1995&lt;/ref&gt;&lt;ref&gt;Duncan, Geoff. [http://www.tidbits.com/tb-issues/tidbits-263.html#lnk3 &quot;Apple Sues Intel, Microsoft - Again'], TidBITS, February 13, 1995&lt;/ref&gt;&lt;ref&gt;Mace, Michael. [http://web.archive.org/web/20010605082836/www.pa.msu.edu/~hamlin/facts/1stltr.html &quot;An Open Letter to the Computing Community&quot;], archived from apple.com, February 9, 1995&lt;/ref&gt;&lt;ref&gt;Mace, Michael. [http://web.archive.org/web/20001012140945/http://www.pa.msu.edu/~hamlin/facts/2ndltr.html &quot;Second open letter from Apple&quot;], archived from apple.com&lt;/ref&gt;  This lawsuit was ultimately settled in 1997, when Apple agreed to make Internet Explorer the default browser over Netscape, and Microsoft agreed to continue developing Office and other software for the Mac for the next 5 years, and purchase $150 million of non-voting Apple stock.&lt;ref&gt;Kawamoto, Dawn; Heskett, Ben; Ricciuti, Mike. [http://news.com.com/MS+to+invest+150+million+in+Apple/2100-1001_3-202143.html &quot;MS to invest $150 million in Apple&quot;], CNET News, August 6, 1997&lt;/ref&gt;&lt;ref&gt;[http://contracts.corporate.findlaw.com/agreements/apple/microsoft.1997.08.05.html &quot;Preferred Stock Purchase Agreement&quot;], FindLaw, August 5, 1997&lt;/ref&gt;
+
+In March 1997, Microsoft announced that ActiveMovie would become part of the [[DirectX|DirectX 5]] suite of technologies,&lt;ref&gt;{{cite web | url=http://www.microsoft.com/presspass/press/1997/mar97/mmapipr.mspx | title=Microsoft Unveils First Unified Multimedia API Strategy | author=Microsoft | date=March 31, 1997 | work=Microsoft PressPass | accessdate=2006-12-31}}&lt;/ref&gt; and around July started referring to it as [[DirectShow]].&lt;ref&gt;{{cite web | url=http://www.microsoft.com/presspass/press/1997/Jul97/pronetpr3_95.mspx | title=Microsoft and Progressive Networks Collaborate on Streaming Media | author=Microsoft | date=July 21, 1997 | work=Microsoft PressPass | accessdate=2006-12-31}}&lt;/ref&gt;
+
+==Version history==
+{| class=&quot;wikitable&quot;
+|-
+! Release Date
+! Version
+! Notes
+|-
+|November 1992||Video for Windows 1.0||First public release. Including Microsoft's [[Run-length encoding|RLE]] and [[Video1]] codecs.
+|-
+|&amp;nbsp;||Video for Windows 1.1||Added [[Cinepak]] codec
+|-
+|&amp;nbsp;||Video for Windows 1.1a||&amp;nbsp;
+|-
+|&amp;nbsp;||Video for Windows 1.1b||&amp;nbsp;
+|-
+|&amp;nbsp;||Video for Windows 1.1c||&amp;nbsp;
+|-
+|&amp;nbsp;||Video for Windows 1.1d||Included [[Indeo]] 3.2 (Allegedly included source code from Apple's QuickTime for Windows)
+|-
+|March 1995||Video for Windows 1.1e||Last version for Windows 3.1x
+|-
+|August 1995||Video for Windows 95||Bundled with Windows 95
+|-
+|July 1996||Video for Windows NT||32-bit version bundled with Windows NT 4.0
+|-
+|July 1996||ActiveMovie 1.0||The successor to Video for Windows. Added support for [[MPEG-1]] and QuickTime file formats
+|-
+|March 1997||DirectShow 1.0||The successor to Active Movie.
+|}
+
+== Example ==
+This sample source code shows skeleton of video codec in VfW:
+&lt;source lang=&quot;c&quot;&gt;
+#include &lt;vfw.h&gt;
+â¦
+LRESULT WINAPI DriverProc(
+	DWORD dwDriverId, 
+	HDRVR hdrvr,
+	UINT msg,
+	LONG lParam1, 
+	LONG lParam2)
+{
+	switch(msg)
+	{
+â¦
+		case ICM_COMPRESS:
+			// compress frame
+			return Compress((ICCOMPRESS*)lParam1, (DWORD)lParam2);
+â¦
+		case ICM_DECOMPRESS:
+			// decompress frame
+			return Decompress((ICDECOMPRESS*)lParam1, (DWORD)lParam2);
+â¦
+	}
+}
+â¦
+&lt;/source&gt;
+
+==See also==
+* [[Audio Video Interleave]]
+* [[DirectShow]]
+* [[QuickTime]]
+* [[Video4Linux]]
+
+==References==
+&lt;div class=&quot;references-small&quot;&gt;
+&lt;!--See http://en.wikipedia.org/wiki/Wikipedia:Footnotes for an explanation of how to generate footnotes using the &lt;ref(erences/)&gt; tags--&gt;
+&lt;references/&gt;
+&lt;/div&gt;
+{{Microsoft APIs}}
+
+{{DEFAULTSORT:Video For Windows}}
+[[Category:Computer-related introductions in 1992]]
+[[Category:Microsoft Windows multimedia technology]]
+[[Category:Multimedia frameworks]]
+[[Category:Discontinued Microsoft software]]
+[[Category:Discontinued Windows components]]
+
+[[cs:Video for Windows]]
+[[de:Video for Windows]]
+[[es:Video for Windows]]
+[[ko:ë¹ëì¤ í¬ ìë]]
+[[nl:Video for Windows]]
+[[ja:Video for Windows]]
+[[pl:Video for Windows]]
+[[zh:Video for Windows]]</rev></revisions></page></pages></query></api>

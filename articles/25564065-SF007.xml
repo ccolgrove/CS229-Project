@@ -1,0 +1,47 @@
+<?xml version="1.0"?><api><query><pages><page pageid="25564065" ns="0" title="Klibc"><revisions><rev xml:space="preserve">{{Infobox software
+ |name = klibc
+ |logo =
+ |caption =
+ |screenshot =
+ |developer = [[H. Peter Anvin]]
+ |latest_release_version = 1.5.25
+ |latest_release_date = August 23, 2011 &lt;ref&gt;[http://www.kernel.org/pub/linux/libs/klibc/1.5/ klibc version 1.5 releases]&lt;/ref&gt;
+ |operating_system = [[Linux]]
+ |genre = [[C standard library]]
+ |license = [[GNU General Public License]] or [[BSD licence]]
+ |website =
+}}
+In [[computing]], '''klibc''' is a minimalistic subset of the [[C standard library|standard C library]] developed by [[Peter Anvin|H. Peter Anvin]]. It was developed mainly to be used during the [[Linux startup process]], and it is part of the [[early user space]], i.e. components used during kernel startup, but which do not run in [[kernel mode]].&lt;ref name=readme&gt;http://free-electrons.com/kerneldoc/latest/early-userspace/README&lt;/ref&gt; These components do not have access to the standard library (usually [[GNU C Library|glibc]]) used by normal [[userspace]] programs.
+
+The development of klibc library was part of the 2002 effort to move some Linux initialization code out of the kernel.&lt;ref&gt;[[Jonathan Corbet]], (November 2002) [http://lwn.net/Articles/14776/ Initramfs arrives], [[LWN.net]]&lt;/ref&gt;&lt;ref&gt;{{cite web |url=http://marc.info/?l=linux-kernel&amp;m=103622506919278&amp;w=2 |title=initramfs merge, part 1 of N  |date=2002-02-11  }}&lt;/ref&gt;&lt;ref&gt;{{cite web |url= http://marc.info/?l=linux-kernel&amp;m=103626389507412&amp;w=2 |title= Re: initramfs merge, part 1 of N  |date=2002-02-11  }}&lt;/ref&gt; According to its documentation, the klibc library is optimized for correctness and small size.&lt;ref name=readme/&gt; Because of its design, klibc is also technically suitable for [[embedded software]] in general, and even some full-featured programmes such as the [[Korn_shell#Variants|MirBSD Korn Shell]]. Unlike many other [[open source]] libraries, klibc is licensed under the full [[GNU General Public License|GPL]] license, which (unlike [[LGPL]]) imposes itself on any code linked with it. (This only applies to klibc as a whole due to embedding some Linux kernel derived files; most of the library source code is actually&lt;ref&gt;[http://git.kernel.org/?p=libs/klibc/klibc.git;a=blob;f=usr/klibc/LICENSE;h=aa6d7a7e37015f95f852ceb29cc417519919d806;hb=75216b5c62b3b3635ae0c6cf7ee47757d7d99100 usr/klibc/LICENSE as of klibc-1.5.18]&lt;/ref&gt; available under [[BSD licenses|a BSD licence]] from UCB or the [[Historical Permission Notice and Disclaimer]].) This may limit its applicability to commercial embedded software.&lt;ref name=p286&gt;Hagen, p. 286&lt;/ref&gt;
+
+During the Linux startup process, klibc is loaded from within a temporary [[tmpfs|RAM file system]], [[initramfs]]. It is incorporated by default into initial RAM file systems that are created by the &lt;code&gt;mkinitramfs&lt;/code&gt; script in [[Debian]] &lt;ref&gt;[http://packages.debian.org/source/lenny/klibc Debian Lenny Klibc] retrieved February 2010.&lt;/ref&gt; and [[Ubuntu (operating system)|Ubuntu]]. Furthermore it has a set of small Unix utilities that are useful in [[early user space]]: [[cpio]], [[Debian Almquist shell|dash]], fstype, [[mkdir]], [[mknod]], mount, nfsmount, run-init, etc. all using the ''klibc'' library. &lt;ref&gt;{{cite web |url=http://git.kernel.org/?p=libs/klibc/klibc.git;a=tree;f=usr;h=f3224b691ca990bed5081ea31106bed47ce23653;hb=HEAD|title=libs/klibc/klibc.git / tree }}&lt;/ref&gt;.  An alternate strategy is to include everything in one executable, like [[BusyBox]], which determines the program via arguments or a [[Symbolic_link|symlink]].
+
+{{Portal|Free software}}
+
+== Other klibc ==
+
+[http://svn.netlabs.org/libc kLIBC and kNIX] appears to be a SUS/C99 environment for OS/2.
+
+==References==
+{{Reflist}}
+'''General references'''
+*{{cite book |author=Hagen, William W. |title=The Definitive Guide to GCC, Second Edition |publisher=APress |location=Berkeley, CA |year=2006 |pages=286â289 |isbn=1-59059-585-8 }}
+
+==External links==
+* [ftp://ftp.kernel.org/pub/linux/libs/klibc/ Source archive]
+* [http://www.kernel.org/git/?p=libs/klibc/klibc.git;a=summary Browsable development tree]
+* [http://www.zytor.com/mailman/listinfo/klibc/ Mailing list]
+* [http://lwn.net/Articles/191004/ initramfs and where user space truly begins] - LWN, [[Jonathan Corbet]], July 11, 2006.
+{{DISPLAYTITLE:klibc}}
+{{CProLang}}
+
+[[Category:C Standard Library]]
+[[Category:Free boot loaders]]
+[[Category:Linux]]
+
+
+{{linux-stub}}
+
+[[pl:Klibc]]
+[[zh:Klibc]]</rev></revisions></page></pages></query></api>

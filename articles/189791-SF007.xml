@@ -1,0 +1,99 @@
+<?xml version="1.0"?><api><query><pages><page pageid="189791" ns="0" title="WorldWideWeb"><revisions><rev xml:space="preserve">{{About|the first web browser|the distributed hypertext system|World Wide Web}}
+{{Infobox software
+| name                   = WorldWideWeb
+| logo                   = [[Image:WorldWideWeb Icon.png]]
+| screenshot             = [[File:WorldWideWeb FSF GNU.png|250px]]
+| caption                = WorldWideWeb, c.1993
+| developer              = [[Tim Berners-Lee]] for [[CERN]]
+| released               = {{start date and age|1990|12|23}}&lt;ref name=&quot;faq-www&quot; /&gt;
+| frequently updated     = yes
+| discontinued           = yes
+| programming language   = [[Objective-C]]&lt;ref name=&quot;faq-www&quot; /&gt;
+| operating system       = [[NeXTSTEP]]&lt;ref name=&quot;faq-www&quot; /&gt;
+| language               = English
+| genre                  = [[Web browser]], web [[authoring tool]]
+| license                = [[Public domain]]
+| website                = [http://www.w3.org/People/Berners-Lee/WorldWideWeb.html www.w3.org/.../WorldWideWeb.html]
+}}
+'''WorldWideWeb''', later renamed to '''Nexus''' to avoid confusion between the [[software]] and the [[World Wide Web]], was the first [[web browser]]&lt;ref name=&quot;faq-www&quot;&gt;{{cite web|title=The WorldWideWeb browser|url=http://www.w3.org/People/Berners-Lee/WorldWideWeb|publisher=[[World Wide Web Consortium]]|accessdate=23 July 2010|authorlink=Tim Berners-Lee|first=Tim|last=Berners-Lee}}&lt;/ref&gt; and editor.&lt;ref name=&quot;IEEE&quot; /&gt; When it was written, WorldWideWeb was the only way to view the Web.&lt;ref name=&quot;faq-www&quot; /&gt;
+
+The [[source code]] was released into the [[public domain]] in 1993.&lt;ref&gt;{{cite web|title=Index of /History/1991-WWW-NeXT/Implementation|url=http://www.w3.org/History/1991-WWW-NeXT/Implementation|publisher=World Wide Web Consortium|accessdate=18 August 2010}}&lt;/ref&gt;&lt;ref name=&quot;faq&quot; /&gt; Some of the code still resides on [[Tim Berners-Lee]]'s [[NeXTcube]] in the CERN museum and has not been recovered due to the computer's status as a historical artifact.{{Citation needed|date=May 2010}}
+
+==History==
+Berners-Lee wrote WorldWideWeb on a [[NeXT Computer]]&lt;ref name=&quot;faq&quot;&gt;{{cite web|title=Frequently asked questions - What were the first WWW browsers?|url=http://www.w3.org/People/Berners-Lee/FAQ.html#browser|publisher=[[World Wide Web Consortium]]|accessdate=22 July 2010|last=Berners-Lee|first=Tim|authorlink=Tim Berners-Lee}}&lt;/ref&gt; during the second half of 1990, while working for [[CERN]]. The first successful build was completed on December 25, 1990, after only two months of development.&lt;ref name=&quot;timblhistory&quot;&gt;{{cite web|last=Berners-Lee|first=Tim|title=A Brief History of the Web|url=http://www.w3.org/DesignIssues/TimBook-old/History.html|publisher=[[World Wide Web Consortium]]|accessdate=17 August 2010|authorlink=Tim Berners-Lee|year=ca 1993/1994}}&lt;/ref&gt; Successive builds circulated among Berners-Lee's colleagues at CERN before being released to the public, by way of Internet [[newsgroups]], in August 1991.&lt;ref name=&quot;timblhistory&quot; /&gt; By this time, several others, including Bernd Pollermann, [[Robert Cailliau]], Jean-FranÃ§ois Groff,&lt;ref name=&quot;upgrade&quot;&gt;{{cite web|title=NeXT editor upgrade proposal|url=http://www.w3.org/History/1991-WWW-NeXT/Implementation/Upgrade.html|publisher=[[World Wide Web Consortium]]|author=Jean-FranÃ§ois Groff|accessdate=21 June 2010}}&lt;/ref&gt; and graduate student [[Nicola Pellow]] â who wrote the [[Line Mode Browser]]  â were involved in the project.&lt;ref name=&quot;timblhistory&quot; /&gt;
+
+The team created so called &quot;passive browsers&quot; which don't have the editing prospects because it was hard to [[Porting|port]] the ability editing pages like on the NeXT system to other [[operating system]]s.&lt;ref name=&quot;IEEE&quot; /&gt; The port to the [[X Window System]] (X) wasn't possible as nobody on the team had experience with X.&lt;ref name=&quot;IEEE&quot; /&gt; 
+
+Berners-Lee and Groff later adapted many of WorldWideWeb's components into a [[C (programming language)|C programming language]] version, creating the [[libwww]] [[Application programming interface|API]].&lt;ref&gt;{{cite web|title=Web Browser History|url=http://www.livinginternet.com/w/wi_browse.htm|publisher=Living Internet|first=Bill|last=Stewart|accessdate=2 June 2010}}&lt;/ref&gt;
+
+A number of early browsers appeared, notably [[ViolaWWW]]. They were all eclipsed by [[Mosaic (web browser)|Mosaic]] in terms of popularity, which by 1993, had replaced the WorldWideWeb program. Those involved in its creation had moved on to other tasks, such as defining standards and guidelines for the further development of the World Wide Web â e.g. [[HTML]], various [[communication protocol]]s, etc.
+
+On April 30, 1993, the CERN directorate released the source code of WorldWideWeb into the public domain, making it [[free software]]. Several versions of the software are still available to download from [http://browsers.evolt.org/?worldwideweb/NeXT evolt.org's browser archive]. Berners-Lee initially considered releasing it under the [[GNU General Public License]], but eventually opted for public domain to maximize corporate support.&lt;ref&gt;{{cite web|url=http://www.governingwithcode.org/case_studies/pdf/NCSAmosaic.pdf|title=History of Libwww|page=3|format=PDF}}&lt;/ref&gt;&lt;ref&gt;{{cite web|last=Berners-Lee|first=Tim|title=Policy|url=http://www.w3.org/History/19921103-hypertext/hypertext/WWW/Policy.html|publisher=[[World Wide Web Consortium]]|accessdate=1 September 2010|authorlink=Tim Berners-Lee}}&lt;/ref&gt;
+
+==Technical information==
+Since WorldWideWeb was developed on and for the NeXTSTEP platform, the program used many of NeXTSTEP's components â WorldWideWeb's [[layout engine]] was built around NeXTSTEP's Text [[class (computer science)|class]].&lt;ref name=&quot;faq-www&quot; /&gt;
+
+===Features===
+WorldWideWeb was capable of displaying basic [[style sheet (web development)|style sheets]],&lt;ref name=&quot;faq&quot; /&gt; downloading and opening any file type supported by the NeXT system ([[PostScript]],&lt;ref name=&quot;IEEE&quot;&gt;{{cite web|last1=Petrie|first1=Charles|title=Interview  Robert Cailliau on the WWW Proposal: &quot;How It Really Happened.&quot;|url=http://www.computer.org/portal/web/computingnow/ic-cailliau|publisher=[[Institute of Electrical and Electronics Engineers]]|accessdate=18 August 2010|authorlink2=Robert Cailliau|first2=Robert|last2=Cailliau|date=November 1997}}&lt;/ref&gt;&lt;ref name=&quot;faq&quot; /&gt; movies &lt;ref name=&quot;faq&quot; /&gt; and sounds&lt;ref name=&quot;faq&quot; /&gt;), browsing [[newsgroup]]s, and [[spell checker|spellchecking]]. At first, images were displayed in separate windows, until NeXTSTEP's Text class supported Image objects.&lt;ref name=&quot;faq&quot; /&gt;
+
+The browser was also a [[WYSIWYG]] editor.&lt;ref name=&quot;faq-www&quot; /&gt;&lt;ref name=&quot;IEEE&quot; /&gt; It allowed the simultaneous editing and linking of many pages in different windows. The functions &quot;Mark Selection&quot;, which created an anchor, and &quot;Link to Marked&quot;, which made the selected text an anchor linking to the last marked anchor, allowed the creation of links. Editing pages remotely was not yet possible, as the [[HTTP#Request methods|HTTP PUT]] [[method (computer science)|method]] had not yet been implemented.&lt;ref name=&quot;faq-www&quot; /&gt; Files would be edited in a local file system which was in turn served onto the Web by an HTTP server.
+
+WorldWideWeb's navigation panel contained Next and Previous buttons that would automatically navigate to the next or previous link on the last page visited, similar to [[Opera (web browser)|Opera]]'s Rewind and Fast Forward buttons; i.e., if one navigated to a page from a table of links, the Previous button would cause the browser to load the previous page linked in the table.&lt;ref name=&quot;faq-www&quot; /&gt; This was useful for web pages which contained lists of links. Many still do, but the user interface link-chaining was not adopted by other browser writers, and it disappeared until it was later picked up by later web browsers. An equivalent functionality is nowadays provided by connecting web pages with explicit navigation buttons repeated on each webpage among those links, or with [[typed link]]s in the headers of the page. This places more of a burden on web site designers and developers, but allows them to control the presentation of the navigation links.
+
+WorldWideWeb didn't have features like [[Bookmark (World Wide Web)|bookmarks]], but a similar feature was presented in the browser: if a link should be saved for later use linking it to the user's own home page (start page), the link would be remembered in the same fashion as a bookmark. The ability to create more home pages were implemented, similar to folders in the actual web browsers bookmarks.&lt;ref name=&quot;IEEE&quot; /&gt;
+
+Later versions were also able to display inline images.&lt;ref name=&quot;faq-www&quot; /&gt;
+
+WorldWideWeb was able to use different protocols: [[File Transfer Protocol|FTP]],&lt;ref name=&quot;faq-www&quot; /&gt; [[Hypertext Transfer Protocol|HTTP]],&lt;ref name=&quot;faq-www&quot; /&gt; [[Network News Transfer Protocol|NNTP]],&lt;ref name=&quot;faq-www&quot; /&gt; and [[file URI scheme|local files]]&lt;ref name=&quot;faq-www&quot; /&gt;
+
+==Naming==
+Berners-Lee proposed different names for his new application: ''The Mine of Information''&lt;ref name=&quot;cern&quot;&gt;{{cite web|title=Welcome to info.cern.ch|url=http://info.cern.ch/|publisher=CERN|accessdate=25 July 2010}}&lt;/ref&gt; and ''The Information Mesh''&lt;ref name=&quot;cern&quot; /&gt; were proposals. At the end ''WorldWideWeb'' was chosen,&lt;ref name=&quot;cern&quot; /&gt; but later renamed to ''Nexus'' to avoid confusion between the World Wide Web and the web browser.&lt;ref name=&quot;faq-www&quot; /&gt;
+
+== See also ==
+{{Portal|Free software}}
+*[[History of the World Wide Web]]
+
+==References==
+{{Reflist|2}}
+
+==External links==
+*[http://www.w3.org/People/Berners-Lee/WorldWideWeb.html Tim Berners-Lee: WorldWideWeb]
+*[http://www.w3.org/History.html A Little History of the World Wide Web]
+*[http://dig.csail.mit.edu/breadcrumbs/blog/4 Berners-Lee's blog]
+*''Weaving the Web'' (ISBN 0-06-251587-X), Berners-Lee's book about the conception of the Web
+*Nexus [http://browsers.evolt.org/?worldwideweb/ binaries] and [http://www.w3.org/History/1991-WWW-NeXT/Implementation/ source]
+*[http://info.cern.ch/ CERN, Where the Web Was &quot;WWW&quot; born]
+
+{{HTML editors}}
+{{Early web browsers}}
+
+{{DEFAULTSORT:Worldwideweb}}
+[[Category:Free web browsers]]
+[[Category:Free software programmed in Objective-C]]
+[[Category:NeXT]]
+[[Category:Public domain software]]
+[[Category:1990 software]]
+[[Category:Discontinued web browsers]]
+[[Category:History of web browsers]]
+[[Category:Free HTML editors]]
+
+[[cs:WorldWideWeb]]
+[[da:WorldWideWeb]]
+[[de:WorldWideWeb]]
+[[et:WorldWideWeb]]
+[[el:WorldWideWeb]]
+[[es:WorldWideWeb]]
+[[fr:WorldWideWeb]]
+[[ko:ìëìì´ëì¹]]
+[[id:WorldWideWeb]]
+[[it:WorldWideWeb]]
+[[he:WorldWideWeb]]
+[[mk:WorldWideWeb]]
+[[ja:WorldWideWeb]]
+[[no:WorldWideWeb]]
+[[pl:WorldWideWeb]]
+[[pt:WorldWideWeb]]
+[[ru:WorldWideWeb]]
+[[sl:WorldWideWeb]]
+[[th:à¹à¸§à¸´à¸¥à¸à¹à¹à¸§à¸à¹à¹à¸§à¹à¸ (à¹à¸§à¹à¸à¹à¸à¸£à¸²à¸§à¹à¹à¸à¸­à¸£à¹)]]
+[[zh:WorldWideWeb]]</rev></revisions></page></pages></query></api>

@@ -1,0 +1,208 @@
+<?xml version="1.0"?><api><query><pages><page pageid="383472" ns="0" title="Moodle"><revisions><rev xml:space="preserve">{{Infobox software
+  |name = Moodle
+  |[[logo]] = [[File:Moodle-logo.svg|125px]]
+  |screenshot = [[File:Moodle 2.0 on Firefox 4.0.png|thumb]]
+  |caption = Moodle course screenshot with [[Mozilla Firefox|Firefox]]
+  |author = [[Martin Dougiamas]]
+  |developer = [[Martin Dougiamas]]&lt;br /&gt;Moodle HQ&lt;br /&gt;Moodle Community
+  |latest_release_version = 2.1.2
+  |latest_release_date = {{Start date and age|2011|10|10}}&lt;ref&gt;{{cite web|title=Standard Moodle Packages |work=Moodle.org |url=http://download.moodle.org/}}&lt;/ref&gt;
+  |operating_system = [[Cross-platform]]
+  |programming language = [[PHP]]
+  |genre = [[Course Management System]]
+  |license = [[GPLv3]]+&lt;ref name=license&gt;{{cite web |url=http://git.moodle.org/gw?p=moodle.git;a=blob;f=COPYING.txt;h=94a9ed024d3859793618152ea559a168bbcbb5e2;hb=HEAD |title=Moodle License}}&lt;/ref&gt;
+  |website = [http://moodle.org moodle.org]
+}}
+
+'''Moodle''' (abbreviation for ''[[Modular]] [[Object-oriented programming|Object-Oriented]] [[Dynamic programming|Dynamic]] [[Virtual learning environment|Learning Environment]]'') is a [[free source software|free source]] [[e-learning]] [[software]] platform, also known as a Course Management System, [[Learning Management System]], or [[Virtual Learning Environment]] (VLE). {{As of|2010|October}} it had a user base of 49,952 registered and verified sites, serving 37 million users in 3.7 million courses.&lt;ref&gt;{{cite web|title=Moodle stats page | url=http://moodle.org/stats |publisher=Moodle.org}}&lt;/ref&gt; 
+
+Moodle was originally developed by [[Martin Dougiamas]] to help educators create online courses with a focus on interaction and collaborative construction of content, and is in continual evolution.
+
+The Moodle project comprises several distinct but related elements, namely
+* the [[software]].
+* [http://moodle.com/ Moodle Pty Ltd] (also known as Moodle Headquarters or the Moodle Trust, based in [[Perth, Western Australia]]), an Australian company which performs the majority of the development of the core Moodle platform.
+* the Moodle Community, an open network of over one million registered users who interact through the [http://moodle.org Moodle community website] to share ideas, code, information and free support. This community also includes a large number of non-core developers, with Moodle's free source license and modular design allowing any developer to create additional modules and features that has allowed Moodle to become a truly global, collaborative project in scope.
+* the Moodle Partner network, which forms the commercial arm of the Moodle environment and provides the bulk of the funding to Moodle Pty Ltd through the payment of royalties.
+
+== Features ==
+Moodle has several features considered typical of an e-learning platform, plus some original innovations (like its filtering system).&lt;ref&gt;{{cite web
+| accessdate = 2011-03-01
+| location = http://www.cpce-polyu.edu.hk/itu/new/
+| publisher = Information Technology Unit (itu)
+| title = E-learning
+| quote = Moodle is a well-known e-learning platform in tertiary institutions. Many universities and colleges use Moodle as the online learning system in their daily teaching and learning. Moodle is a free source software it means developer can make modification based on their needs. CPCE decides to use Moodle as a e-learning platform for HKCC and SPEED from 2009/10 academic year onwards.
+| url = http://www.cpce-polyu.edu.hk/itu/new/index.php?option=com_content&amp;task=view&amp;id=58&amp;Itemid=149
+}}&lt;/ref&gt; Moodle is very similar to a learning management system. Moodle can be used in many types of environments such as in education, training and development, and business settings.
+
+Some typical features of Moodle are&lt;ref&gt;{{cite web
+| title = E-Learning Features
+| accessdate = 2011-03-01
+| publisher = Information Technology Unit (itu)
+| location = http://www.cpce-polyu.edu.hk/itu/new/
+| url = http://www.cpce-polyu.edu.hk/itu/new/index.php?option=com_content&amp;task=view&amp;id=58&amp;Itemid=149
+| quote = Moodle serves as an online e-learning platform to facilitate the communications between teachers and students. Some typical features provided by Moodle are listed below.
+}}&lt;/ref&gt;
+
+* Assignment submission
+* Discussion forum
+* Files download
+* Grading
+* Moodle instant messages
+* Online calendar
+* Online news and announcement (College and course level)
+* Online quiz
+* Wiki
+
+Developers can extend Moodle's modular construction by creating plugins for specific new functionality. Moodle's infrastructure supports many types of [[plug-in (computing)|plug-in]]s:
+
+* activities (including word and math games)
+* resource types
+* question types (multiple choice, true and false, fill in the blank, etc)
+* data field types (for the database activity)
+* graphical themes
+* authentication methods (can require username and password accessibility)
+* enrollment methods
+* content filters
+
+Many freely-available third-party Moodle plugins make use of this infrastructure.&lt;ref&gt;{{cite web |url=http://moodle.org/mod/data/view.php?id=6009 |title=Modules and Plugins |publisher=Moodle.org}}
+&lt;/ref&gt;
+
+Moodle users can use [[PHP]] to write and contribute new modules. Moodle's development has been assisted by the work of open source programmers.&lt;ref&gt;{{cite web|title=About Moodle |work=Moodle.org Documentation |url=http://docs.moodle.org/en/About_Moodle}}&lt;/ref&gt; This has contributed towards its rapid development and rapid bug fixes.
+
+By default Moodle includes the [[TCPDF]] library that allows the generation of [[PDF]] documents from pages.
+
+== Deployment ==
+
+Users can install Moodle from source, but this requires more technical proficiency than other automated approaches such as installing from a [[Debian]] package, deploying a ready-to-use [[TurnKey Linux Virtual Appliance Library|TurnKey]] Moodle appliance&lt;ref&gt;{{cite web |url=http://www.turnkeylinux.org/moodle|title=Moodle Appliance|publisher=[[TurnKey Linux Virtual Appliance Library]]}}&lt;/ref&gt; or using the [[Bitnami]] installer.
+
+Some free Moodle hosting providers allow educators to create Moodle-based online classes without installation or server knowledge. Some paid Moodle hosting providers provide value-added services like customization and content-development.
+
+==Interoperability==
+
+Moodle runs without modification on [[Unix]], [[Linux]], [[FreeBSD]], [[Microsoft Windows|Windows]], [[Mac OS X]], [[NetWare]] and any other systems that support [[PHP]] and a database, including most webhost providers.
+
+Data goes in a single database. Moodle version 1.6 could use [[MySQL]] or [[PostgreSQL]]. Version 1.7, released November 2006, makes full use of database abstraction so that installers can choose one from many types of database servers such as [[Oracle database|Oracle]] and [[Microsoft SQL Server]].
+
+E-learning systems can have many dimensions of interoperability. Moodle's interoperability features include:
+
+* authentication, using [[Lightweight Directory Access Protocol|LDAP]], [[Shibboleth (Internet2)|Shibboleth]], or various other standard methods (e.g. [[Internet Message Access Protocol|IMAP]])
+* enrollment, using [[IMS Global|IMS Enterprise]] among other standard methods, or by direct interaction with an external database
+* quizzes and quiz questions, allowing import/export in a number of formats: GIFT (moodle's own format), IMS [[QTI]], [[XML]] and  [[XHTML]] ''(NB although export works very well, import is currently not complete)''. Moodle provides various types of questions - Calculated, Description, Essay, Matching, Embedded Answers, Multiple Choice, Short Answer, Numerical, Random Short-Answer Matching, True/False.
+* resources, using [[IMS Global|IMS Content Packaging]], [[SCORM]], [[Aviation Industry Computer-Based Training Committee|AICC (CBT)]], [[LAMS]]
+* integration with other [[Content Management System]]s such as [[Drupal]] or [[Postnuke]] (via third-party extensions)
+* syndication, using RSS or Atom [[newsfeed]]s - external newsfeeds can be displayed in a course, and forums, blogs, and other features can be made available to others as newsfeeds.
+
+Moodle also has import features for use with other specific systems, such as importing quizzes or entire courses from [[Blackboard Learning System|Blackboard]] or WebCT. These import tools are not, however perfect. At the time of writing (Feb 2010), Moodle will not import Blackboard courses due apparently to some change in php code-releases.
+
+== Background ==
+=== Origins ===
+Martin Dougiamas, who has graduate degrees in [[computer science]] and [[education]], wrote the first version of Moodle. Dougiamas started a [[Doctor of Philosophy|Ph.D.]] to examine &quot;The use of [[Open Source software]] to support a [[social constructionist]] [[epistemology]] of teaching and learning within Internet-based communities of reflective inquiry&quot;. Although how exactly social constructionism makes Moodle different from other eLearning platforms is difficult to show, it has been cited as an important factor by Moodle adopters.&lt;ref&gt;{{Cite document|last=Weller | first=M. | title=VLE 2.0 and future directions in learning environments | publisher=Proceedings of the first LAMS Conference, Sydney|year=2006|postscript=&lt;!--None--&gt;}}&lt;/ref&gt;&lt;ref&gt;{{cite web|last=McMulli &amp; Munroe | title=VMoodle at DCU | url=http://odtl.dcu.ie/wp/2004/odtl-2004-01.html|year=2004|postscript=&lt;!--None--&gt;}}&lt;/ref&gt; Other Moodle adopters, such as the [[Open University]] in the UK, have pointed out that Learning Management Systems can equally be seen as &quot;relatively pedagogy-neutral&quot;.&lt;ref&gt;{{Cite document|last=Sclater| first=Neil | title=A Large-scale Open Source eLearning Systems at the Open University|publisher=Educase |url=http://connect.educause.edu/Library/Abstract/LargeScaleOpenSourceELear/46878 |year=2008|postscript=&lt;!--None--&gt;}}&lt;/ref&gt;
+
+=== Pedagogical approach ===
+The stated philosophy of Moodle&lt;ref&gt;[http://docs.moodle.org/en/Philosophy Moodle Philosophy]&lt;/ref&gt; includes a [[Constructivism (pedagogical)|constructivist]] and [[Social constructionism|social constructionist]] approach to education, emphasizing that learners (and not just teachers) can contribute to the educational experience. Moodle supports an outcomes-oriented learning environment. {{Citation needed|date=November 2009}}
+
+=== Origin of the name ===
+The acronym ''Moodle'' stands for ''Modular Object-Oriented Dynamic Learning Environment'' (in the early years the &quot;M&quot; stood for &quot;Martin's&quot;, named after Martin Dougiamas, the original developer). As well as being an acronym, the name was chosen because of the dictionary definition of Moodle&lt;ref&gt;{{cite web|url=http://www.allwords.com/word-moodle.html|title=Moodle definition|publisher=All Words}}&lt;/ref&gt; and to correspond to an available domain name.&lt;ref&gt;{{cite web|url=http://moodle.org/mod/forum/discuss.php?d=27533#129848|title=The chicken or the egg|publisher=Moodle.org Lounge}}&lt;/ref&gt;
+
+&quot;Moodle&quot; is a [[trademark]] in many countries around the World registered to Martin Dougiamas. Only [[Moodle Partner]]s may legally use the trademark to advertise any Moodle-related services such as hosting, customization, training and so on.
+
+==Moodle statistics and market share==
+
+By 31 August 2011:
+
+* Moodle had a user-base of 55,110 registered sites with 44,966,541 users in 4,763,446 courses in 214 countries and in more than 75 languages.&lt;ref&gt;[http://moodle.org/stats Current Moodle Statistics]&lt;/ref&gt;
+* The site with the most users, moodle.org, has 66 courses and 1,090,234 users. Following a Â£5 million investment in 2005, The [[Open University]], UK is the second-largest Moodle deployment by user-base, with 714,310 users and 6,093 courses. A comprehensive list of the top ten Moodle sites (by courses and by users) is maintained at moodle.org.&lt;ref&gt;[http://moodle.org/stats/ Moodle Statistics]&lt;/ref&gt;
+
+== Development ==
+Moodle has continued to evolve since 1999 (since 2001 with the current architecture). Major improvements in [[Website accessibility|accessibility]] and display flexibility were developed in 1.5. The {{as of|2010|alt = current}} version is 2.0, which was released in November, 2010. It has been translated into 82 different languages. 
+
+Not having to pay license fees or to limit growth, an institution can add as many Moodle servers as needed. The [[Open University]] of the UK is currently building a Moodle installation for their 200,000 users.&lt;ref&gt;{{cite web|url=http://www.egovmonitor.com/node/3460 |title=A Policy Dialogue Platform &amp;#124; Promoting Better Governance |publisher=eGov monitor |date=2005-11-08 |accessdate=2009-06-27}}&lt;/ref&gt; It is often known for individual departments of institutions to use the unlimited feature, such as the maths department of the [[University of York]].
+
+The development of Moodle continues as a free software project supported by a team of programmers and an international user community, drawing upon contributions posted to the online Moodle Community website that encourages debate and invites criticism.
+
+Users can freely distribute and modify the software under the terms of the [[GNU General Public License]] version 2 or any later version.&lt;ref name=license /&gt;
+
+== Certification ==
+Since 2006 there has been an official certification available for teachers using Moodle. Initially called the Moodle Teacher Certificate (MTC) this was renamed in 2008 to the Moodle Course Creator Certificate (MCCC).
+
+MCCC is available only through Moodle Partners, and through [http://www.moodlebites.com/mod/resource/view.php?id=238 Central Certification Services].  MCCC for Moodle version 2.0 will be available from early in 2011. Discussion is ongoing regarding an official Moodle Administrators Certificate.
+
+== Moodle conferences ==
+MoodleMoot is the name given to the meetings held by the Moodle community.&lt;ref&gt;[http://docs.moodle.org/20/en/MoodleMoot MoodleMoot at moodle.org]&lt;/ref&gt; Such conferences take place regularly all over the world and are normally hosted by a [[university]] or other [[institution]]. They are typically supported by a [[Moodle Partner]] and some are preceded by a technical [[Unconference]].
+
+Moodle Conference Center&lt;ref&gt;[http://moodle.org/course/view.php?id=33 The Conference Center at moodle.org]&lt;/ref&gt; has announcements of Annual Meetings and open MoodeMoots.
+
+== See also ==
+{{Portal|Free software}}
+* [[Learning management system]]
+* [[List of applications with iCalendar support]]
+* [[Online learning community]]
+
+==References==
+{{reflist|colwidth=30em}}
+
+==External links==
+{{Commons category}}
+{{Wikiversity}}
+
+===Moodle===
+* [http://moodle.org/ Moodle]
+* [http://moodle.org/plugins Moodle plugin list]
+* [http://moodle.org/course/view.php?id=48 Moodle Course Creator Certificate (MCCC) area on Moodle.org]
+* [https://pedtek.isi.edu/moodle/blog/index.php?userid=650 Example of Moodle]
+
+===Other===
+* [http://www.moodlenews.com/ Moodle news]
+* [http://www.moodlesocial.com Free learning/teaching moodle community]
+* [http://wik.ed.uiuc.edu/index.php/Moodle Moodle on WikEd]
+* [http://www.moodlebites.com/mod/resource/view.php?id=238/ Official teacher certification - the Moodle]
+* [http://www.maflt.org/products/poodle Poodle (Portable Moodle)]
+&lt;!--Interwikies--&gt;
+[[Category:Assistive technology]]
+[[Category:Cross-platform software]]
+[[Category:Educational technology]]
+[[Category:Free educational software]]
+[[Category:Free learning management systems]]
+[[Category:Free learning support software]]
+[[Category:Free software programmed in PHP]]
+[[Category:Learning management systems]]
+[[Category:Open source content management systems]]
+[[Category:Virtual learning environments]]
+
+[[ar:ÙÙÙØ¯Ù]]
+[[bs:Moodle]]
+[[ca:Moodle]]
+[[cs:Moodle]]
+[[da:Moodle]]
+[[de:Moodle]]
+[[el:Moodle]]
+[[es:Moodle]]
+[[eo:Moodle]]
+[[eu:Moodle]]
+[[fr:Moodle]]
+[[gl:Moodle]]
+[[ko:ë¬´ë¤]]
+[[hr:Moodle]]
+[[id:Moodle]]
+[[is:Moodle]]
+[[it:Moodle]]
+[[he:Moodle]]
+[[kn:à²®à³à²¡à²²à³]]
+[[lt:Moodle]]
+[[hu:Moodle]]
+[[nl:Moodle]]
+[[ja:ã ã¼ãã«]]
+[[no:Moodle]]
+[[pl:Moodle]]
+[[pt:Moodle]]
+[[ro:Moodle]]
+[[ru:Moodle]]
+[[sl:Moodle]]
+[[sr:ÐÑÐ´Ð»]]
+[[fi:Moodle]]
+[[sv:Moodle]]
+[[ta:à®®à¯à®à¯à®³à¯]]
+[[tr:Moodle]]
+[[uk:Moodle]]
+[[vi:Moodle]]
+[[zh:Moodle]]</rev></revisions></page></pages></query></api>

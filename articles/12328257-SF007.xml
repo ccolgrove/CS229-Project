@@ -1,0 +1,66 @@
+<?xml version="1.0"?><api><query><pages><page pageid="12328257" ns="0" title="MacWWW"><revisions><rev xml:space="preserve">{{Infobox software
+| name                   = MacWWW
+| logo                   = [[File:MacWWW.gif]]
+| screenshot             = [[File:MacWWWscreenshot.gif|250px]]
+| caption                = Screenshot of MacWWW
+| developer              = [[Robert Cailliau]], [[Nicola Pellow]]&lt;ref name=&quot;w3c-overview&quot;&gt;{{Cite web|last=Berners-Lee|first=Tim|date=3 November 1992|title=Macintosh Browser|url=http://www.w3.org/History/19921103-hypertext/hypertext/WWW/Macintosh/Overview.html|publisher=[[World Wide Web Consortium]]|accessdate=2 June 2010}}&lt;/ref&gt;
+| released               = December 1992&lt;ref name=&quot;w3c-status&quot;&gt;{{Cite web|last=Berners-Lee|first=Tim|title=Macintosh Browser|date=3 November 1992|url=http://www.w3.org/History/19921103-hypertext/hypertext/WWW/Macintosh/Status.html|publisher=[[World Wide Web Consortium]]|accessdate=2 June 2010}}&lt;/ref&gt;
+| frequently_updated     = no
+| status                 = discontinued
+| discontinued           = yes
+| latest_release_version = 1.03&lt;ref name=&quot;wwwunleashed&quot;&gt;{{cite book|pages=229â233|title=The World Wide Web Unleashed|first1=John|last1=December|first2=Neil|last2=Randall|publisher=[[Sams Publishing]]|year=1994|isbn=0672306174}}&lt;/ref&gt;
+| latest_release_date    = &lt;!--{{start date and age|1994|1|14}} --&gt;&lt;!--Don't know; at the moment not found--&gt;
+| programming language   = [[THINK C]]&lt;ref name=&quot;w3c-overview&quot; /&gt;
+| operating system       = [[Mac OS]]&lt;ref name=&quot;w3c-overview&quot; /&gt; [[System 6|System 6.0.5]],&lt;ref name=&quot;hoary&quot;&gt;{{Cite web|last=Evans|first=Peter|title=Optimized for no one, but  pretty much OK with . . .|url=http://hoary.org/browse/|accessdate=3 June 2010|date=7 September 2003}}&lt;/ref&gt; [[System 7]]&lt;ref name=&quot;hoary&quot; /&gt;
+| platform               =
+| language               = English
+| genre                  = [[Web browser]]
+| license                =
+| website                =
+}}
+'''MacWWW''', also known as '''Samba''',&lt;ref name=&quot;faq&quot;&gt;{{Cite web|title=Frequently asked questions - Robert Cailliau's role|url=http://www.w3.org/People/Berners-Lee/FAQ.html#Cailliau|publisher=[[World Wide Web Consortium]]|accessdate=22 July 2010|author=[[Tim Berners-Lee]]}}&lt;/ref&gt;&lt;ref name=&quot;tidbits&quot;&gt;{{Cite web|last=Engst|first=Adam C.|title=Chapter 25: Other Web-related Programs|url=http://www.tidbits.com/iskm/iskm3html/pt4/ch25/ch25c.html#aa12|accessdate=3 June 2010|date=24 January 2000}}&lt;/ref&gt;&lt;ref name=&quot;living&quot;&gt;{{Cite web|first=Bill|last=Stewart|title=Web Browser History|url=http://www.livinginternet.com/w/wi_browse.htm|publisher=Living Internet|accessdate=2 June 2010}}&lt;/ref&gt; is an early minimalist [[web browser]] from 1992 meant to run on [[Macintosh]] computers. It was the first web browser for the [[Mac OS]] platform, and the first for any non-[[Unix]] [[operating system]]. MacWWW tries to emulate the design of [[WorldWideWeb]].&lt;ref name=&quot;faq&quot; /&gt; Unlike modern browsers it opens each link in a new window only after a double-click.&lt;ref name=&quot;wwwunleashed&quot; /&gt; It was a commercial product from [[CERN]] and cost 50 [[European Currency Unit]]s&lt;ref name=&quot;tidbits&quot; /&gt;
+
+The browser is no longer available from its original ftp location, but can still be downloaded from mirrors.&lt;ref group=&quot;A&quot;&gt;The original ftp location at ftp://info.cern.ch/pub/www/bin/mac/ is no longer available.&lt;/ref&gt;
+
+==History==
+It was written at [[CERN]] by [[Robert Cailliau]] and later [[Nicola Pellow]] helped with the development.&lt;ref name=&quot;faq&quot; /&gt;&lt;ref name=&quot;living&quot; /&gt; Pellow worked original on the [[Line Mode Browser]] and both browsers shared some parts of the [[source code]] after her switching.&lt;ref name=&quot;w3c-overview&quot;/&gt;
+Pre-alpha version were available, but this version worked only on &quot;coliur mac but not on big black and white ones it seems.&quot;&lt;ref name=&quot;w3c-status&quot; /&gt;
+
+Version 1.00 was released on 12 May 1993 with the commentary: &quot;We know there is much to be improved, but it works well on system 7 and system 6.0.5&quot;.&lt;ref name=&quot;hoary&quot; /&gt;
+
+==Features==
+{{quotebox|width=350px|Clearly, this is a browser of limit usefulness, and one that was overtaken so quickly by every other graphical browser that loading it today is almost like stepping back into the dark ages. Interesting, but only as a curiosity.&lt;ref name=&quot;wwwunleashed&quot; /&gt;}}
+The MacWWW which was a minimalist browser displayed only text, no images nor lists.&lt;ref name=&quot;Inc1994&quot;&gt;{{cite journal|last=Inc|first=IDG Network World|title=Internet|journal=Network World|url=http://books.google.com/books?id=URcEAAAAMBAJ&amp;pg=PA36-IA5|accessdate=23 January 2011|date=1994-08-22|publisher=IDG Network World Inc|pages=36â}}&lt;/ref&gt;&lt;ref name=&quot;wwwunleashed&quot; /&gt;
+*Implemented in [[THINK C]] using its human interface objects.
+*Uses much code in common with the Line Mode browser.&lt;ref name=&quot;w3c-overview&quot; /&gt; This code later became [[libwww]].&lt;ref name=&quot;w3c-status&quot; /&gt;
+*[[Bookmark (World Wide Web)|bookmarks]]&lt;ref name=&quot;wwwunleashed&quot; /&gt;
+*For the hypertext object, the THINK C text object was modified to allow multifont capability, and to allow anchors to be encoded in the styles.&lt;ref name=&quot;w3c-overview&quot; /&gt;
+It was criticized that within a year the browser became obsolete because [[Mosaic (web browser)|Mosaic]] and [[MacWeb]] were much more feature richness., for example that there is no loading status.&lt;ref name=&quot;wwwunleashed&quot; /&gt; Without the mouse and MacOS support MacWWW would be a [[text-mode browser]].&lt;ref name=&quot;wwwunleashed&quot; /&gt;
+
+==See also==
+*[[List of old Macintosh software]]
+
+==Annotations==
+{{reflist|group=A}}
+
+==References==
+{{Reflist}}
+
+==External links==
+* [http://www.tidbits.com/iskm/iskm3html/pt4/ch25/ch25c.html#aa12 MacWWW description and screenshot]
+* [http://browsers.evolt.org/?macwww/ evolt.org] - This browser archive has version 1.03 for download
+
+{{Early web browsers}}
+{{web browsers}}
+
+{{Use dmy dates|date=September 2010}}
+
+{{DEFAULTSORT:Macwww}}
+[[Category:Mac OS web browsers]]
+[[Category:Mac OS-only web browsers]]
+[[Category:1992 software]]
+[[Category:Discontinued web browsers]]
+[[Category:Free software programmed in Think C]]
+
+[[de:MacWWW]]
+[[pl:MacWWW]]</rev></revisions></page></pages></query></api>

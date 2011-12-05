@@ -1,0 +1,587 @@
+<?xml version="1.0"?><api><query><pages><page pageid="23715667" ns="0" title="GNOME"><revisions><rev xml:space="preserve">{{about|the GNOME project and desktop environment||Gnome (disambiguation)}}
+{{Infobox software
+| name                   = GNOME
+| logo                   = [[File:Gnomelogo.svg|80px|GNOME logo]]
+| screenshot             = [[File:Gnome 3.2 shell.png|300px]]
+| caption                = A GNOME 3.2.0 desktop installed from the [[Arch Linux]] [[software repository]].
+| developer              = The GNOME Project
+| released               = {{Start date|1999|3|3|df=yes}}
+| frequently updated     = yes
+| programming language   = [[C (programming language)|C]], [[C++]], [[C Sharp (programming_language)|C#]]
+| operating system       = [[Unix-like]] with [[X11]]
+| genre                  = [[Desktop environment]]
+| status                 = Active
+| language               = 175 languages&lt;ref name=&quot;languages&quot;&gt;{{citation
+|url        = http://l10n.gnome.org/languages/
+|title      = GNOME Languages
+|work       = The GNOME Project
+|publisher  = [[Canonical Ltd.]]
+|accessdate = 2011-12-03
+}}&lt;/ref&gt; 
+| license                = [[GNU Lesser General Public License|GNU LGPL]], [[GNU General Public License|GNU GPL]]
+| website                = {{URL|http://www.gnome.org}}
+| working state          = Current
+}}
+
+'''GNOME''' (pronounced {{IPAc-en|Ë|n|ou|m}}&lt;ref&gt;{{citation
+|url        = http://www.youtube.com/watch?v=lepXx1kDelo
+|title      = GNOME 3: Fewer interruptions
+|first      = Jason D.
+|last       = Clinton
+|work       = The GNOME Project
+|publisher  = [[YouTube]]
+|date       = 2011-04-02
+|accessdate = 2011-04-07
+}}&lt;/ref&gt; or {{IPAc-en|É¡|É|Ë|n|oÊ|m}}&lt;ref&gt;{{citation
+|url        = http://news.zdnet.co.uk/software/0,1000000121,2071014,00.htm
+|title      = LinuxWorld: Linux readies its desktop assault
+|first      = Lisa M.
+|last       = Bowman
+|work       = [[ZDNet]]
+|date       = 1999-03-04
+|accessdate = 2008-10-02
+}}&lt;/ref&gt;) is a [[desktop environment]] and graphical user interface that runs on top of a computer operating system. It is composed entirely of [[free and open source software]]. It is an international project that includes creating software development frameworks, selecting application software for the desktop, and working on the programs that manage application launching, file handling, and window and task management.
+
+GNOME is part of the [[GNU Project]] and can be used with various [[Unix-like]] operating systems, most notably [[Linux]] and as part of [[OpenSolaris Desktop]].
+
+== History ==
+{{See also|History of free software#Desktop}}
+In 1996, the [[KDE]] project was started. KDE itself was [[free and open source software|free and open source]] from the start, but members of the GNU project were concerned with KDE's dependence on the (then) non-GPL [[Qt (toolkit)|Qt]] toolkit, then owned by [[Trolltech]]. In August 1997, two projects were started in response to this issue: the [[Harmony (toolkit)|Harmony]] toolkit, a free replacement for the Qt libraries, and GNOME, a different desktop not using Qt&lt;ref&gt;{{citation
+|url        = http://linuxtoday.com/news_story.php3?ltsn=2000-09-05-001-21-OP-LF-KE
+|title      = Stallman on Qt, the GPL, KDE, and GNOME
+|first      = Richard
+|last       = Stallman
+|authorlist = Richard Stallman
+|date       = 2000-09-05
+|accessdate = 2005-09-09
+}}&lt;/ref&gt; but built on [[GTK+]] licensed under  the [[GNU Lesser General Public License]] (LGPL), a free software license that allows GPL-incompatible software to link to it. The GNOME desktop itself is licensed under the LGPL for its libraries, and the GPL for applications that are part of the GNOME project. Having the toolkit and libraries under the LGPL allowed applications written for GNOME to use a much wider set of licenses (including [[proprietary software]] licenses).&lt;ref&gt;{{citation
+|url        = http://www.gnu.org/licenses/why-not-lgpl.html
+|title      = Why you shouldn't use the Lesser GPL for your next library
+|work       = [[Free Software Foundation]]
+|accessdate=2008-01-20
+}}&lt;/ref&gt;
+The initial project leaders and founders for GNOME were two Mexican programmers [[Miguel de Icaza]] and [[Federico Mena]].
+
+In 2000, Qt was made available under the GNU GPL terms.&lt;ref&gt;{{citation
+|url        = http://qt.nokia.com/about/news/archive/00000043
+|title      = Trolltech offers a choice in licensing with the addition of GPL licensing for the upcoming release of Qt
+|work       = [[Trolltech]]
+|date       = 2000-09-05
+|accessdate = 2010-07-27
+}}&lt;/ref&gt; Trolltech offered [[Multi-licensing|dual-licensing]] under both [[QPL]] terms and GNU GPL terms and granted exceptions to other specific licenses like the [[Apache License]]. Qt's GNU GPL-derived license, however, continued to restrict linking Qt with arbitrary proprietary software at no charge; GTK+'s [[LGPL]] license did not impose this restriction and differentiated it from Qt. At the end of 2000, the Harmony Project ceased, as KDE no longer depended on non-GPL software; the development of GNOME continues ({{as of|2011|lc=on}}).  In March 2009, after Trolltech was bought by Nokia, Qt 4.5 was released and added an LGPL licensing as a third option.
+
+The California startup [[Eazel]] developed the [[Nautilus (file manager)|Nautilus file manager]] from 1999 to 2001.  De Icaza and [[Nat Friedman]] founded Helix Code (later [[Ximian]]) in 1999 in Massachusetts.  The company developed GNOME's infrastructure and applications, and in 2003 was purchased by [[Novell]].
+
+=== Name ===
+The name âGNOMEâ is an acronym of '''GNU Network Object Model Environment'''. It refers to GNOMEâs original intention of creating a [[distributed object]] framework similar to [[Microsoft]]âs [[Object Linking and Embedding|OLE]].&lt;ref&gt;{{citation
+|url         = http://developer.gnome.org/doc/GGAD/ggad.html
+|title       = GTK+ / Gnome Application Development
+|last        = Pennington
+|first       = Havoc
+|authorlink  = Havoc Pennington
+|chapter     = What is Gnome?
+|chapter-url = http://web.archive.org/web/20100514071800/http://developer.gnome.org/doc/GGAD/z2.html
+|year        = 1999
+|archiveurl  = http://web.archive.org/web/20100824183314/http://developer.gnome.org/doc/GGAD/ggad.html
+|archivedate = 2010-08-24
+}}&lt;/ref&gt; This no longer reflects the core vision of the GNOME project, and the full expansion of the name is now considered obsolete. As such, some members of the project advocate dropping the acronym and re-naming &quot;GNOME&quot; to &quot;Gnome&quot;.&lt;ref name=&quot;naming&quot;&gt;{{cite mailing list
+|url         = http://mail.gnome.org/archives/desktop-devel-list/2006-April/msg00436.html
+|title       = Re: Gnome 2 infinity and beyond &amp;#91;was Re: Tango and 2.16&amp;#93;
+|first       = Alan
+|last        = Horkan
+|mailinglist = desktop-devel
+|date        = 2006-04-23
+|accessdate  = 2006-05-07
+}}&lt;/ref&gt;
+
+=== Controversy over supported platforms ===
+In May 2011 [[Lennart Poettering]] proposed [[systemd]] as a dependency for further releases of GNOME.&lt;ref&gt;{{cite mailing list
+|url         = http://mail.gnome.org/archives/desktop-devel-list/2011-May/msg00427.html
+|title       = systemd as external dependency
+|first       = Lennart
+|last        = Poettering
+|authorlink  = Lennart Poettering
+|mailinglist = desktop-devel
+|date        = 2011-05-18
+|accessdate  = 2011-10-05
+}}&lt;/ref&gt; As systemd is available only on Linux, the proposal led to discussion of possibility to drop other platforms support in future GNOME releases. While some met the proposal with criticism&lt;ref&gt;{{cite mailing list
+|url         = http://mail.gnome.org/archives/desktop-devel-list/2011-May/msg00436.html
+|title       = Re: systemd as external dependency
+|first       = Josselin
+|last        = Mouette
+|mailinglist = desktop-devel
+|date        = 2011-05-18
+|accessdate  = 2011-10-05
+}}&lt;/ref&gt;&lt;ref&gt;{{cite mailing list
+|url         = http://mail.gnome.org/archives/desktop-devel-list/2011-May/msg00437.html
+|title       = Re: systemd as external dependency
+|first       = Dave
+|last        = Neary
+|mailinglist = desktop-devel
+|date        = 2011-05-18
+|accessdate  = 2011-10-05
+}}&lt;/ref&gt; others evolved the idea to GNOME Operating System on top of Linux kernel.&lt;ref&gt;{{cite mailing list
+|url         = http://mail.gnome.org/archives/desktop-devel-list/2011-May/msg00439.html
+|title       = Re: systemd as external dependency
+|first       = William Jon
+|last        = McCann
+|mailinglist = desktop-devel
+|date        = 2011-05-18
+|accessdate  = 2011-10-05
+}}&lt;/ref&gt;
+
+While the discussion on mailing list ended with no conclusive result, the GNOME 3.2 Release Notes state that systemd will be used in GNOME 3.4 release.&lt;ref name=&quot;release-notes-3.2&quot;&gt;{{citation
+|url        = http://library.gnome.org/misc/release-notes/3.2/
+|title      = GNOME 3.2 Release Notes
+|first1     = Olav
+|last1      = Vitters
+|first2     = AndrÃ©
+|last2      = Klapper
+|first3     = Allan
+|last3      = Day
+|work       = The GNOME Project
+|accessdate = 2011-10-05
+}}&lt;/ref&gt;
+
+== Community ==
+{{Undue-section|date=December 2011}}
+GNOME holds several community programs annually and globally.  The events are usually tailored to local users and developers.
+
+=== GNOME Foundation ===
+In August 2000, the [[GNOME Foundation]] was set up to deal with administrative tasks and press interest, and to act as a contact point for companies interested in developing GNOME software. While not directly involved in technical decisions, the Foundation does coordinate releases and decide which projects will be part of GNOME. Membership is open to anyone who has made a non-trivial contribution to the project.&lt;ref&gt;{{citation
+|url        = http://foundation.gnome.org/membership/
+|title      = Membership of the GNOME foundation
+|work       = [[GNOME Foundation]]
+|accessdate = 2005-09-08
+}}&lt;/ref&gt; Members of the Foundation elect a board of directors every November, and candidates for the positions must be members themselves.
+
+=== GUADEC ===
+GNOME hosts the [[GNOME Users And Developers European Conference]] (GUADEC) annually. The idea of GUADEC events is attributed to the GNOME developers' and users' Paris meeting of 1998,&lt;ref name=&quot;guadec-about&quot;&gt;{{Citation
+|url        = http://guadec.expectnation.com/public/content/about
+|title      = About
+|work       = [[GNOME Users And Developers European Conference|GUADEC]]
+|accessdate = 2011-12-03
+}}&lt;/ref&gt;. The main topic of GUADEC is the development and progress of GNOME.&lt;ref&gt;{{citation
+|url        = https://live.gnome.org/GUADEC
+|title      = GUADEC
+|publisher  = The GNOME Project
+|accessdate = 2011-12-03
+}}&lt;/ref&gt;  The next GUADEC is planned to be held in A CoruÃ±a, Spain.&lt;ref&gt;{{citation
+|url        = http://www.guadec.org/?q=node/1
+|title      = Dates announcement
+|work       = [[GNOME Users And Developers European Conference|GUADEC]]
+|date       = 2011-11-07
+|accessdate = 2011-12-03
+}}&lt;/ref&gt;
+
+=== Outreach for Women Program ===
+Among GNOME's community programs is the Outreach for Women Program.  The goals for the program are as follows:
+
+* To improve the resources available to all newcomers for getting involved in GNOME
+* To reach more women with the information about how exciting, varied and valuable work on GNOME or any other Free Software can be
+* To encourage women to contribute to GNOME
+* To enable several women to work on a GNOME project with a mentor and receive a stipend
+* To provide the background for women to start their own Free Software projects or pursue careers in the Free Software industry&lt;ref&gt;{{citation
+|url        = http://projects.gnome.org/outreach/women/
+|title      = Support women participation in GNOME!
+|work       = The GNOME Project
+|accessdate = 2011-12-03
+}}&lt;/ref&gt;
+
+=== Desktop Summit ===
+GNOME participates in the Desktop Summit.  [[The Desktop Summit]] is a joint conference organised by the GNOME and KDE communities that is held annually in Europe.  The last Desktop Summit was held in Berlin, Germany, 6 - 12 August 2011 at the Humboldt University.&lt;ref&gt;{{citation
+|url        = http://www.phoronix.com/scan.php?page=news_item&amp;px=OTczOA
+|title      = Desktop Summit 2011: Copyright Assignment, Wayland &amp; Beer
+|first      = Michael
+|last       = Larabel
+|authorlink = Michael Larabel
+|work       = [[Phoronix]]
+|date       = 2011-08-02
+|accessdate = 2011-12-03
+}}&lt;/ref&gt;
+
+== Project goals ==
+
+According to the GNOME website:
+
+{{quote|The GNOME project provides two things: The GNOME desktop environment, an intuitive and attractive desktop for users, and the GNOME development platform, an extensive framework for building applications that integrate into the rest of the desktop and mobile user interface.&lt;ref&gt;{{cite web
+|url        = http://live.gnome.org/SWOT
+|title      = GNOME Quick SWOT Analysis
+|work       = The GNOME Project
+|accessdate = 2011-06-03
+}}&lt;/ref&gt;}}
+
+The GNOME project puts heavy emphasis on simplicity, usability, and making things âjust workâ (see ''[[KISS principle]]''). The other aims of the project are:
+
+* Freedom â to create a desktop environment with readily-available source code for re-use under a [[free software license]].
+* [[Computer accessibility|Accessibility]] â to ensure the desktop can be used by anyone, regardless of technical skill or physical circumstances.
+* [[Internationalization and localization]] â to make the desktop available in many languages. At the moment, GNOME is being translated to 175 languages.&lt;ref name=&quot;languages&quot; /&gt;
+* Developer-friendliness â to ensure ease of writing software that integrates smoothly with the desktop, and allow developers a free choice of programming language.
+* Organization â to adhere to a regular release cycle and maintain a disciplined community structure.
+* Support â to ensure backing from other institutions beyond the GNOME community.
+
+=== Look and feel ===
+Up until the release of GNOME 3.x, GNOME was designed around the traditional computing [[desktop metaphor]]. Users can change the appearance of their desktop through the use of themes, which usually consist of an icon set, a window manager border and GTK+ theme engine and parameters. The current default theme is [[Adwaita (GTK+ theme)|Adwaita]]. The Human Interface Guidelines helps developers to produce applications that look and behave similarly to each other, which provides a cohesive GNOME experience.
+
+GNOME 2.x (the previous major release of GNOME) was very similar to a conventional desktop interface, featuring a simple desktop in which users could interact with virtual objects, such as windows, icons, and files.  GNOME 2.x used [[Metacity]] as its default window manager.   The handling of windows, applications, and files in GNOME 2 is similar to that of contemporary desktop operating systems. In the default configuration of GNOME 2, the desktop has a launcher menu for quick access to installed programs and file locations; open windows may be accessed by a taskbar along the bottom of the screen, and the top-right corner features a notification area for programs to display notices while running in the background. However, these features can be moved to almost any position or orientation the user desires, replaced with other functions or removed altogether.
+
+GNOME 3.x has evolved from a traditional desktop metaphor to a new interface.  The redesigned GNOME experience features several main changes:  Released as the new interface for Gnome 3, [[GNOME Shell]] replaces the original [[GNOME Panel]]; [[Mutter_(window_manager)|Mutter]] replaces Metacity as the default window manager; The minimize and maximize buttons are no longer placed on the titlebar by default.  With the release of GNOME 3.0, the default look and feel has moved from the traditional computer desktop metaphor towards a user interface where switching between different tasks and virtual workspaces takes place in a new area called the overview. Many of the [[List of GNOME applications#Official applications|default GNOME applications]] have also gone through redesigns to provide a more consistent and unified user experience.
+
+In the default configuration of GNOME 3, the desktop has a top panel holding (from left to right) an activities button, clock, system status area and user menu. Clicking on the activities button or moving one's mouse to the top-left hot corner, brings one to the overview. The system status area holds various system indicators, such as those for volume, Bluetooth, network, battery, and accessibility. The user menu holds a chat availability indicator, shortcuts to system settings, as well as session actions such as logging out, switching users, locking the screen, or suspending the computer.  The overview (accessed by clicking on the activities button in the top panel, or touching the top-left hot corner) shows the window picker,the workspace changer on the right, the dash on the left, a windows button, an applications button, and a search bar. While in the overview, users can click on the windows and application buttons just under the top panel to switch between the window picker and the application picker. The window picker provides a way to switch to other open windows; a convenient way to close multiple windows easily; and gives users a quick overview of current activities. The application picker replaces the GNOME 2.x applications menu, and provides an easy way to launch applications.  The dash houses shortcuts to favorite applications and open windows.  Also in the default interface are a new system for notifications.  In GNOME 3, notifications popup from the bottom of the screen, as opposed to showing in the top-right of the screen as in GNOME 2.x.&lt;ref&gt;{{Citation
+|url        = https://live.gnome.org/GnomeShell/Design
+|title      = GNOME Shell Design
+|work       = The GNOME Project
+|accessdate = 2011-12-03
+}}&lt;/ref&gt;
+
+=== Usability ===
+{{See also|Controversy over GNOME 3}}
+Since GNOME 2.0, a key focus of the project has been usability. To this end, the GNOME [[Human Interface Guidelines]] (HIG) were created. Following the guide, developers can create high-quality, consistent, and usable GUI programs, as it addresses everything from GUI design to recommended pixel-based layout of widgets.
+
+During the 2.0 rewrite, many settings were deemed to be of little or no value to the majority of users and were removed. For instance, the preferences section of the Panel was reduced from a dialog of six tabs to one with two tabs. [[Havoc Pennington]] summarized the usability work in his 2002 essay &quot;Free Software UI&quot;, emphasizing the idea that all preferences have a cost, and it is better to &quot;unbreak the software&quot; than to add a UI preference to do that:
+
+{{quotation2|A traditional free software application is configurable so that it has the union of all features anyone's ever seen in any equivalent application on any other historical platform. Or even configurable to be the union of all applications that anyone's ever seen on any historical platform (Emacs *cough*). &lt;!-- THAT PART IS IN THE QUOTE.  PLEASE DO NOT DELETE IT. --&gt;
+
+Does this hurt anything? Yes it does. It turns out that preferences have a cost. Of course, some preferences also have important benefits - and can be crucial interface features. But each one has a price, and you have to carefully consider its value. Many users and developers don't understand this, and end up with a lot of cost and little value for their preferences dollar.|[[Havoc Pennington]]&lt;ref&gt;{{citation
+|url        = http://ometer.com/free-software-ui.html
+|title      = Free Software UI
+|first      = Havoc
+|last       = Pennington
+|authorlink = Havoc Pennington
+|year       = 2002
+|month      = April
+|accessdate = 2011-12-04
+}}&lt;/ref&gt;}}
+
+Since the release of GNOME 3 the traditional [[desktop metaphor]] was abandoned in favor of [[GNOME Shell]]. This move received mixed reaction from community, though the outcome is not yet clear.
+
+== Adoption ==
+{{for2|Linux distributions using GNOME by default|{{Section link|comparison of Linux distributions|Features}}}}
+GNOME is available in most [[Linux distribution]]s and [[Berkeley Software Distribution#Significant BSD descendants|BSDs]] and is the default desktop environment for several Linux distributions. It is also installed with [[Solaris (operating system)|Solaris]] as part of [[OpenSolaris Desktop]] (previously known as ''Java Desktop System'') since the Solaris Express 10/04 release.&lt;ref&gt;{{citation
+|url        = http://docs.sun.com/app/docs/doc/817-0547
+|title      = Desktop Enhancements
+|work       = Solaris 10 What's New
+|publisher  = [[Sun Microsystems]]
+|year       = 2009
+|accessdate = 2011-12-04
+}}&lt;/ref&gt;
+
+== Development ==
+As with most free software projects, the GNOME project is loosely-managed. Discussion chiefly occurs on a number of public mailing lists.&lt;ref&gt;{{citation
+|url        = http://mail.gnome.org
+|title      = GTK+ and GNOME Mailing Lists
+|work       = The GNOME Project
+|accessdate = 2011-12-04
+}}&lt;/ref&gt; Developers and users of GNOME gather at an annual meeting known as [[GUADEC]] to discuss the current state of the project and its future direction.&lt;ref name=&quot;guadec-about&quot; /&gt;
+
+GNOME often incorporates standards from [[freedesktop.org]] to allow GNOME applications to better [[Interoperability|interoperate]] with other desktops, encouraging both cooperation and competition.
+
+=== Major subprojects ===
+GNOME relies upon a large number of different projects:
+* [[GNOME Shell]] â a user interface of GNOME 3.
+* [[GSettings]] â a configuration storage system (replacing [[GConf]] in older GNOME versions).
+* [[GVFS]] â a [[virtual file system]].
+* [[GNOME Keyring]] â backend for storing [[encryption]] keys and security information. [[Seahorse (software)|Seahorse]] is a common frontend.
+* GNOME Translation Project â for translating documentation and applications into different languages.
+* [[GTK+]] â a widget toolkit used for constructing graphical applications. The use of GTK+ as the base widget toolkit allows GNOME to benefit from certain features such as theming (the ability to change the look of an application) and smooth anti-aliased graphics. Sub-projects of GTK+ provide [[object-oriented programming]] support ([[GObject]]), extensive support of international character sets and text layout ([[Pango]]) and accessibility ([[Accessibility Toolkit|ATK]]). GTK+ reduces the amount of work required to [[Porting|port]] GNOME applications to other platforms such as Windows and [[Mac OS X]].
+* [[Human interface guidelines]] (HIG) â research and documentation on building easy-to-use GNOME applications.
+* [[LibXML]] â an XML library.
+
+A number of [[language binding]]s are available, allowing applications to be written in a variety of programming languages, such as [[C++]] ([[gtkmm]]), [[Java (programming language)|Java]] ([[java-gnome]]), [[Ruby programming language|Ruby]] ([[ruby-gnome2]]), [[C Sharp (programming language)|C#]] ([[Gtk Sharp|Gtk#]]), [[Python (programming language)|Python]] ([[PyGTK]]), [[Perl]] ([[gtk2-perl]]), [[Tcl]] ([[Gnocl]]) and many others. The only languages currently used in applications that are part of an official GNOME desktop release are C, C++, C#, Python and [[Vala (programming language)|Vala]].&lt;ref&gt;{{cite mailing list
+|url         = http://mail.gnome.org/archives/desktop-devel-list/2006-April/msg00332.html
+|title       = Mono bindings a blessed dependency? &amp;#91;Was: Tomboy in 2.16&amp;#93;
+|first       = Elijah
+|last        = Newren
+|mailinglist = desktop-devel
+|date        = 2006-04-20
+|accessdate  = 2007-09-20
+}}&lt;/ref&gt;
+
+=== Release cycle ===
+
+Each of the component software products in the GNOME project has its own version number and [[Software release life cycle|release schedule]]. However, individual module maintainers coordinate their efforts to create a full GNOME stable release on an approximately six-month schedule.
+
+Some experimental projects are excluded from these releases.
+
+GNOME releases are made to the main FTP server in the form of [[source code]] with [[configure (computing)|configure]] scripts, which are compiled by operating system vendors and integrated with the rest of their systems before distribution. Most vendors use only stable and tested versions of GNOME, and provide it in the form of easily-installed, pre-compiled packages. The source code of every stable and development version of GNOME is stored in the GNOME [[Git (software)|Git]] [[source code repository]].
+
+A number of build-[[Scripting programming language|scripts]] (such as [[Jhbuild]] or [[GARNOME]]) are available to help automate the process of compiling the source code.
+
+== Release history ==
+=== Current release ===
+
+GNOME 3.2 was released on September 28, 2011 and is currently the latest version of the GNOME desktop. This version brought more stability to the GNOME Shell and the underlying technologies, as well as improvements on the GNOME applications.  New features include the ability to add online accounts, which allows the integration of services such as Google Docs, Google Calendar, and Google Contacts into GNOME; as well as an updated user menu.  GNOME 3.2 also brings new applications, such as GNOME Contacts, GNOME Documents and the GNOME Sushi file previewer, as well as web application support in Epiphany 3.2.&lt;ref name=&quot;release-notes-3.2&quot; /&gt;
+
+=== Previous release ===
+
+GNOME 3.0 was released on April 6, 2011.&lt;ref name=&quot;release-notes-3.0&quot;&gt;{{citation
+|url        = http://library.gnome.org/misc/release-notes/3.0/
+|title      = GNOME 3.0 Release Notes
+|publisher  = The GNOME Project
+|accessdate = 2011-04-07
+}}&lt;/ref&gt; It was announced at the July 2008 [[GUADEC]] conference in Istanbul. The code name ''ToPaZ'' (standing for ''Three Point Zero'') was introduced around 2005&lt;ref&gt;[http://www.figuiere.net/hub/blog/?2005/06/12/220-guadec-pics-take-3 figuiere.net]&lt;/ref&gt; and for a long time was only a playground for vague ideas. Quite a few mock-ups were created as part of several ToPaZ brainstorming processes.&lt;ref&gt;{{cite web |url=http://www.gnome-look.org/index.php?xcontentmode=185 |title=Eyecandy for your GNOME-Desktop |accessdate=October 31, 2010}}&lt;/ref&gt;
+
+Though the philosophy around GNOME mandates that changes are incremental, the desktop received a major overhaul with the [[GNOME Shell]].&lt;ref&gt;{{citation
+|url        = http://arstechnica.com/news.ars/post/20080714-gnome-3-0-officially-announced-and-explained.html
+|title      = GNOME 3.0 officially announced... and explained
+|first      = Paul
+|last       = Ryan
+|authorlink = Paul Ryan
+|work       = [[Ars Technica]]
+|date       = 2008-07-14
+|accessdate = 2008-08-02
+}}&lt;/ref&gt;
+
+=== Past releases ===
+The last 2.x release was version 2.32, which was released in September 2010. It included improvements to the [[Empathy (software)|Empathy IM client]], [[Evince]], and the [[Nautilus (file manager)|Nautilus file manager]].
+
+2.32 was the last major release planned before 3.0.&lt;ref name=&quot;rel2.32&quot;/&gt;
+
+Tests reveal that GNOME 2 (version 2.29) has lower memory utilization compared to [[KDE Software Compilation|KDE]] 4.4, but higher than [[Xfce]] 4.6 and [[LXDE]] 0.5 (which are also based on [[GTK+]] like GNOME).&lt;ref&gt;{{citation
+|url        = http://www.phoronix.com/scan.php?page=article&amp;item=linux_desktop_vitals
+|title      = Power &amp; Memory Usage Of GNOME, KDE, LXDE &amp; Xfce
+|first      = Michael
+|last       = Larabel
+|authorlink = Michael Larabel
+|work       = [[Phoronix]]
+|date       = 2010-03-08
+|accessdate = 2011-07-30
+}}&lt;/ref&gt;
+
+{{clear}}
+{{Gallery
+|title=Screenshots of GNOME milestone releases
+|lines=2
+|File:GNOME-escritorio-1.x.png|GNOME 1, March 1999
+|File:Gnome-2.6-en.png|GNOME 2.6, March 2004
+|File:Gnome-2.20-en.png|GNOME 2.20, September 2007
+|File:Gnome2.30.0.png|GNOME 2.30, March 2010
+|File:GNOME Shell.png|GNOME 3.0, April 2011
+}}
+
+{{clear}}
+{| class=&quot;wikitable&quot;
+|-
+!Version
+!Date
+!Information
+|-
+!
+|August 1997
+|GNOME development announced&lt;ref&gt;{{cite web | url = http://primates.ximian.com/~miguel/gnome-history.html | title = The story of the GNOME project | first = Miguel | last = de Icaza }}&lt;/ref&gt;
+|-
+!1.0
+|March 1999
+|First major GNOME release&lt;ref&gt;{{cite web |url=http://www.gnome.org/press/releases/gnome10.html |title=GNOME press release for version 1.0 |accessdate=October 31, 2010}}&lt;/ref&gt;
+|-
+!1.2
+|May 2000
+|&quot;Bongo&quot;&lt;ref&gt;{{cite web |url=http://www.gnome.org/press/releases/gnome12.html |title=GNOME press release for version 1.2 |accessdate=October 31, 2010}}&lt;/ref&gt;
+|-
+!1.4
+|April 2001
+|&quot;Tranquility&quot;&lt;ref&gt;{{cite web |url=http://www.gnome.org/press/releases/gnome14.html |title=GNOME press release for version 1.4 |accessdate=October 31, 2010}}&lt;/ref&gt;
+|-
+!2.0
+|June 2002
+|Major upgrade based on GTK2. Introduction of the [[Human Interface Guidelines]].&lt;ref&gt;{{cite mailing list |url=http://mail.gnome.org/archives/desktop-devel-list/2002-June/msg00592.html |title=GNOME 2.0 Desktop and Developer Platform Released! |date=2002-06-27 |accessdate=2007-09-20 |mailinglist=desktop-devel |last=Waugh |first=Jeff |authorlink= }}&lt;/ref&gt;
+|-
+!2.2
+|February 2003
+|Multimedia and file manager improvements.&lt;ref&gt;{{cite web |url=http://www.gnome.org/press/releases/gnome22.html |title=GNOME press release for version 2.2 |accessdate=October 31, 2010}}&lt;/ref&gt;
+|-
+!2.4
+|September 2003
+|&quot;Temujin&quot;: [[Epiphany (web browser)|Epiphany]], accessibility support.&lt;ref&gt;{{cite mailing list |url=http://mail.gnome.org/archives/gnome-announce-list/2003-September/msg00062.html |title=Announcing the GNOME 2.4.0 Desktop &amp; Developer Platform |date=2003-09-11 |accessdate=2007-09-20 |mailinglist=gnome-announce |last=Waugh |first=Jeff |authorlink= }}&lt;/ref&gt;
+|-
+!2.6
+|March 2004
+|[[Nautilus (file manager)|Nautilus]] changes to a [[spatial file manager]], and a new GTK+ [[file dialog]] is introduced. A short-lived fork of GNOME, GoneME, is created as a response to the changes in this version.&lt;ref&gt;{{cite mailing list |url=http://mail.gnome.org/archives/gnome-announce-list/2004-March/msg00131.html |title=Announcing the GNOME 2.6.0 Desktop &amp; Developer Platform |date=2004-03-31 |accessdate=2007-09-20 |mailinglist=gnome-announce |last=Sobala |first=Andrew |authorlink= }}&lt;/ref&gt;
+|-
+!2.8
+|September 2004
+|Improved removable device support, adds [[Novell Evolution|Evolution]].&lt;ref&gt;{{cite web |url=http://www.gnome.org/press/releases/gnome28.html  |title=GNOME press release for version 2.8 |accessdate=October 31, 2010}}&lt;/ref&gt;
+|-
+!2.10
+|March 2005
+|Lower memory requirements and performance improvements. Adds: new panel applets (modem control, drive mounter and trashcan); and the [[Totem (media player)|Totem]] and [[Sound Juicer]] applications.&lt;ref&gt;{{cite web |url=http://www.gnome.org/press/releases/gnome210_press_release.html |title=GNOME press release for version 2.10 |accessdate=October 31, 2010}}&lt;/ref&gt;
+|-
+!2.12
+|September 2005
+|Nautilus improvements; improvements in cut/paste between applications and freedesktop.org integration. Adds: [[Evince]] PDF viewer; New default theme: Clearlooks; menu editor; keyring manager and admin tools. Based on GTK+ 2.8 with cairo support.&lt;ref&gt;{{cite web |url=http://library.gnome.org/misc/release-notes/2.12/ |title=GNOME 2.12 Release Notes |accessdate=October 31, 2010}}&lt;/ref&gt;
+|-
+!2.14
+|March 2006
+|Performance improvements (over 100% in some cases); usability improvements in user preferences; GStreamer 0.10 multimedia framework. Adds: [[Ekiga]] [[video conferencing]] application; Deskbar search tool; Pessulus lockdown editor; [[Fast user switching]]; Sabayon system administration tool.&lt;ref&gt;{{cite web |url=http://library.gnome.org/misc/release-notes/2.14/ |title=GNOME 2.14 Release Notes |accessdate=October 31, 2010}}&lt;/ref&gt;
+|-
+!2.16
+|September 2006
+|Performance improvements. Adds: [[Tomboy (software)|Tomboy]] notetaking application; [[Baobab (software)|Baobab]] disk usage analyser; [[Orca (assistive technology)|Orca]] screen reader; GNOME Power Manager (improving laptop battery life); improvements to Totem, Nautilus; [[compositing]] support for Metacity; new icon theme. Based on GTK+ 2.10 with new print dialog.&lt;ref&gt;{{cite mailing list |url=http://mail.gnome.org/archives/gnome-announce-list/2006-September/msg00042.html |title=Celebrating the release of GNOME 2.16! |date=2006-09-06 |accessdate=2007-09-20 |mailinglist=gnome-announce |last=Newren |first=Elijah |authorlink= }}&lt;/ref&gt;
+|-
+!2.18
+|March 2007
+|Performance improvements. Adds: [[Seahorse (software)|Seahorse]] [[GNU Privacy Guard|GPG]] security application, allowing encryption of emails and local files; Baobab disk usage analyser improved to support ring chart view; Orca screen reader; improvements to Evince, Epiphany and GNOME Power Manager, Volume control; two new games, GNOME Sudoku and glchess. MP3 and AAC audio encoding.&lt;ref&gt;{{cite mailing list |url=http://mail.gnome.org/archives/gnome-announce-list/2007-March/msg00056.html |title=Celebrating the release of GNOME 2.18! |date=2007-03-14 |accessdate=2007-09-20 |mailinglist=gnome-announce |last=Newren |first=Elijah |authorlink= }}&lt;/ref&gt;
+|-
+!2.20
+|September 2007
+|Tenth anniversary release. Evolution backup functionality; improvements in Epiphany, EOG, GNOME Power Manager; password [[keyring]] management in Seahorse. Adds: PDF forms editing in Evince; integrated search in the file manager dialogs; automatic multimedia [[codec]] installer.&lt;ref&gt;{{citation
+|url        = http://arstechnica.com/news.ars/post/20070919-gnome-2-20-officially-released.html
+|title      = GNOME 2.20 officially released
+|first      = Paul
+|last       = Ryan
+|authorlink = Paul Ryan
+|work       = [[Ars Technica]]
+|date       = 2007-09-19
+|accessdate = 2007-09-20
+}}&lt;/ref&gt;
+|-
+!2.22
+|March 2008
+|Addition of [[Cheese (software)|Cheese]], a tool for taking photos from webcams and [[Vinagre|Remote Desktop Viewer]]; basic window compositing support in [[Metacity]]; introduction of [[GVFS]]; improved playback support for DVDs and [[YouTube]], [[MythTV]] support in [[Totem (media player)|Totem]]; internationalised clock applet; Google Calendar support and message tagging in [[Evolution (software)|Evolution]]; improvements in [[Evince]], [[Tomboy (software)|Tomboy]], [[Sound Juicer]] and Calculator.&lt;ref&gt;{{cite mailing list |url=http://mail.gnome.org/archives/gnome-announce-list/2008-March/msg00060.html
+|title=Celebrating the release of GNOME 2.22! |date=2008-03-12 |accessdate=2008-03-12 |mailinglist=gnome-announce-list
+|last=Untz |first=Vincent |authorlink= }}&lt;/ref&gt;
+|-
+!2.24
+|September 2008
+|Addition of the [[Empathy (software)|Empathy]] instant messenger, [[Ekiga]] 3.0, tabbed browsing in [[Nautilus (file manager)|Nautilus]], better multiple screens support and improved digital TV support.&lt;ref&gt;{{cite mailing list |url=http://mail.gnome.org/archives/gnome-announce-list/2008-September/msg00132.html
+|title=Celebrating the release of GNOME 2.24! |date=2008-09-24 |accessdate=2008-09-27 |mailinglist=gnome-announce-list
+|last=Untz |first=Vincent}}&lt;/ref&gt;
+|-
+!2.26
+|March 2009
+|New Disc Burning application [[Brasero (software)|Brasero]], simpler file sharing, media player improvements, support for [[Multi-monitor|multiple monitors]] and [[fingerprint reader]] support.&lt;ref&gt;{{cite mailing list |url=http://mail.gnome.org/archives/gnome-announce-list/2009-March/msg00091.html
+|title=Celebrating the release of GNOME 2.26! |date=2009-03-18 |accessdate=2009-03-18 |mailinglist=gnome-announce-list
+|last=Untz |first=Vincent}}&lt;/ref&gt;
+|-
+!2.28
+|September 2009
+|Addition of GNOME Bluetooth module. Improvements to [[Epiphany (web browser)|Epiphany]] web browser, [[Empathy (software)|Empathy]] instant messenger, Time Tracker, and accessibility. Upgrade to [[GTK+]] version 2.18.&lt;ref&gt;{{cite web
+|url=http://www.osnews.com/story/22224/GNOME_2_28_Released
+|title=GNOME 2.28 Released
+|last=Holwerda
+|first=Thom
+|publisher=[[OSNews]]
+|date=2009-09-24
+|accessdate=2009-04-05}}&lt;/ref&gt;
+|-
+!2.30
+|March 2010
+|Improvements to [[Nautilus (file manager)|Nautilus]] file manager, [[Empathy (software)|Empathy IM client]], [[Tomboy (software)|Tomboy]], [[Evince]], Time Tracker, [[Epiphany (web browser)|Epiphany]], and [[Vinagre]]. iPod and iPod Touch devices are now partially supported via [[gvfs]] through libimobiledevice. Uses [[GTK+]] 2.20.&lt;ref&gt;{{cite web
+|url=http://www.osnews.com/story/23092/GNOME_2_30_Released
+|title=GNOME 2.30 Released
+|last=Holwerda
+|first=Thom
+|publisher=[[OSNews]]
+|date=2010-03-31
+|accessdate=2010-04-04}}&lt;/ref&gt;
+|-
+!2.32
+|September 2010
+|Addition of Rygel and GNOME Color Manager. Improvements to [[Empathy (software)|Empathy IM client]], [[Evince]], [[Nautilus (file manager)|Nautilus]] file manager and others. 3.0 was intended to be released in September 2010, so a large part of the development effort since 2.30 went towards 3.0.&lt;ref name=&quot;rel2.32&quot;&gt;{{cite web |url=http://library.gnome.org/misc/release-notes/2.32/ |title=GNOME 2.32 Release Notes |accessdate=October 31, 2010}}&lt;/ref&gt;
+|-
+!3.0
+|April 2011
+|Introduction of [[GNOME Shell]]. A redesigned settings framework with fewer, more focused options. Topic-oriented help based on the [[Mallard (documentation)|Mallard markup language]]. Side-by-side window tiling. A new visual theme and default font. Adoption of GTK+ 3.0 with its improved language bindings, theming, touch, and multiplatform support. Removal of long-deprecated development APIs.&lt;ref name=&quot;release-notes-3.0&quot; /&gt;
+|-
+!3.2
+|September 2011
+|Online Accounts support. Web Applications support. Contacts manager. Documents and Files manager. Quick Preview of Files in the File Manager. Greater Integration. Better documentation. Enhanced looks and Various performance improvements. &lt;ref name=&quot;release-notes-3.2&quot; /&gt;
+|}
+
+== See also ==
+{{Portal|Free software}}
+* [[Comparison of X Window System desktop environments]]
+* [[GNOME Mobile &amp; Embedded Initiative]]
+* [[KDE Plasma Desktop]]
+* [[List of GNOME applications]]
+
+==References==
+{{Reflist|2}}
+
+==External links==
+{{Wikibooks|Using GNOME}}
+{{Commons|GNOME}}
+* [http://www.gnome.org/ The GNOME website]
+* [http://live.gnome.org/ Official GNOME Live Wiki]
+* [http://news.gnome.org/ GNOME News]
+* [http://www.gnomedesktop.org/ FootNotes] â a news site and discussion forum
+* [http://www.gnomejournal.org/ GNOME Journal] â an online magazine devoted to the GNOME Desktop
+* [http://www.gnome.asia GNOME.Asia Summit (www.gnome.asia)]
+* [http://library.gnome.org/devel/gdp-style-guide/stable/ The GNOME Development Site] - These are the l10n style guides given to translators by Sun when they are translating Sun software. These are actually Sun's Solaris style guides but they should be generic enough to apply to any project (including GNOME)
+
+{{GNOME}}
+{{GNU}}
+{{X desktop environments and window managers}}
+{{FLOSS}}
+
+{{DEFAULTSORT:Gnome}}
+[[Category:1999 software]]
+[[Category:GNU Project software]]
+[[Category:GNOME| ]]
+[[Category:X Window System]]
+[[Category:Free software programmed in C]]
+
+{{Link GA|ru}}
+[[af:GNOME]]
+[[als:GNOME]]
+[[ar:Ø¬ÙÙÙ]]
+[[ast:GNOME]]
+[[bn:à¦à¦¨à§à¦®]]
+[[bar:GNOME]]
+[[bs:GNOME]]
+[[bg:GNOME]]
+[[ca:GNOME]]
+[[cv:GNOME]]
+[[cs:GNOME]]
+[[da:GNOME]]
+[[de:Gnome]]
+[[et:GNOME]]
+[[el:GNOME]]
+[[es:GNOME]]
+[[eo:GNOME]]
+[[eu:GNOME]]
+[[fa:Ú¯ÙÙÙ]]
+[[fr:GNOME]]
+[[ga:GNOME]]
+[[gl:GNOME]]
+[[ko:ê·¸ë]]
+[[hr:GNOME]]
+[[id:GNOME]]
+[[is:GNOME]]
+[[it:GNOME]]
+[[he:GNOME]]
+[[jv:GNOME]]
+[[ku:GNOME]]
+[[lv:GNOME]]
+[[lt:GNOME]]
+[[lmo:GNOME]]
+[[hu:GNOME]]
+[[mk:GNOME]]
+[[ml:à´àµà´¨àµà´]]
+[[ms:GNOME]]
+[[nl:GNOME]]
+[[ja:GNOME]]
+[[no:GNOME]]
+[[nn:GNOME]]
+[[pl:GNOME]]
+[[pt:GNOME]]
+[[ro:GNOME]]
+[[ru:GNOME]]
+[[sq:GNOME]]
+[[simple:GNOME]]
+[[sk:GNOME]]
+[[sl:GNOME]]
+[[sr:ÐÑÐ¾ÑÐµÐºÐ°Ñ ÐÐ½Ð¾Ð¼]]
+[[sh:GNOME]]
+[[fi:Gnome]]
+[[sv:GNOME]]
+[[ta:à®à¯à®¨à¯à®®à¯]]
+[[tt:GNOME]]
+[[te:GNOME]]
+[[th:à¸à¸°à¹à¸à¸¡]]
+[[tr:GNOME]]
+[[uk:GNOME]]
+[[ur:(Ú¯)ÙÙÙ]]
+[[vec:GNOME]]
+[[vi:GNOME]]
+[[zh:GNOME]]</rev></revisions></page></pages></query></api>

@@ -1,0 +1,144 @@
+<?xml version="1.0"?><api><query><redirects><r from="FreeWRT" to="OpenWrt" tofragment="Derivatives" /></redirects><pages><page pageid="30863145" ns="0" title="OpenWrt"><revisions><rev xml:space="preserve">{{Infobox OS
+| logo               =
+| screenshot         = [[File:Openwrt-login.svg|250px]]
+| caption            = OpenWrt 10.03.1-RC5 (&quot;Backfire&quot;)
+| developer          = [https://dev.openwrt.org/wiki/people OpenWrt Project]
+| family             = [[Unix-like]]
+| working_state      = Current
+| source_model       = [[Free and open source software]]
+| released           = {{Start date|df=yes|2004|01}}
+|latest release version= OpenWrt 10.03 'Backfire'
+|latest release date={{release date|2010|04|07}}&lt;ref&gt;{{cite web | url= https://dev.openwrt.org/milestone/Backfire%2010.03 | title=Milestone Backfire 10.03 | date=2010-04-07&lt;!-- 09:00:00 --&gt;| accessdate=2010-08-24}}&lt;/ref&gt;
+| latest_preview_version = OpenWrt 10.03.1-RC6 'Backfire'
+| latest_preview_date    = {{release date|2011|11|01}}
+| frequently_updated = yes
+| language           = 18 languages&lt;ref&gt;{{cite web|url=http://i18n.luci.subsignal.org/ |title=LuCI Translation Portal |date=2004-09-01 |accessdate=2010-11-12}}&lt;/ref&gt;
+| updatemodel        = [[opkg]]
+| package_manager    = [[opkg]]
+| supported_platforms = 50 different platforms using the following CPU architectures: [[AVR32]], [[ARM architecture|ARM]], [[ETRAX CRIS|CRIS]], [[Motorola 68000 family|m68k]], [[MIPS architecture|MIPS]], [[PowerPC]], [[SPARC]], [[SuperH]], [[Ubicom|Ubicom32]], [[x86]], [[x86-64]]&lt;ref&gt;https://dev.openwrt.org/browser/trunk/target/Config.in&lt;/ref&gt;
+| kernel_type        = [[Monolithic kernel|Monolithic]] ([[Linux kernel|Linux]])
+| userland           = [[BusyBox]], [[GNU Core Utilities|GNU]]
+| ui                 = [[Command-line interface|CLI]], WebUIs
+| license            = [[Free software]], mainly the [[GNU GPL]], and other licenses
+| website            = {{URL|openwrt.org}}
+}}
+'''OpenWrt''' is a [[Linux distribution]] primarily targeted at [[router (computing)|routing]] on [[embedded system|embedded devices]]. It comprises a set of about 2000 [[software package (installation)|software packages]], installed and uninstalled via the [[opkg]] package management system. OpenWrt can be configured using the command-line interface of [[BusyBox]] [[Almquist shell|ash]], or the web interface [[LuCI (webinterface)|LuCI]].
+
+OpenWrt can be run on [[Customer-premises equipment|CPE]] routers, [[residential gateway]]s, [[smartphone]]s (e.g. [[Neo FreeRunner]]), [[pocket computer]]s (e.g. [[Ben NanoNote]]), and small [[laptop]]s (e.g. [[One Laptop per Child]] (OLPC). But it is also possible to run on ordinary computers (e.g. [[x86]]).
+
+The project incorporates a [[wiki]],&lt;ref&gt;{{cite web|url=http://wiki.openwrt.org/ |title=OpenWrt Wiki |publisher=wiki.openwrt.org |date= |accessdate=2011-07-21}}&lt;/ref&gt; a [[Internet forum|forum]]&lt;ref&gt;{{cite web |url=https://forum.openwrt.org/ |title=OpenWrt forum}}&lt;/ref&gt;, [[Apache Subversion|SVN]] source version control&lt;ref&gt;{{cite web |url=https://dev.openwrt.org/ |title=OpenWrt development center}}&lt;/ref&gt; and [[Trac]] for project management, bug-tracking, and code development. Additional technical support is also provided via [[Internet Relay Chat]] (IRC).
+
+== Features ==
+The features include:
+
+* A writable [[root directory|root file system]], enabling users to add, remove or modify any file. This is accomplished by using [http://lwn.net/Articles/135283/ mini_fo] to overlay&lt;ref&gt;{{cite web |url=http://wiki.openwrt.org/doc/techref/flash.layout#partitioning.of.squashfs-images |title=OpenWrt partition layout}} &lt;/ref&gt; a read-only compressed [[SquashFS]] file system with a writable [[JFFS2]] file system in a [[copy-on-write]] fashion.
+* Flash [[wear leveling]] using JFFS2.
+* The package manager ''opkg'', similar to [[dpkg]] or [[Pacman (package manager)|pacman]], allowing users to install and remove software. This contrasts with Linux-based firmwares based on a read-only file systems that offers efficient compression but no way to modify the installed software without rebuilding and flashing a complete firmware image.
+* A package repository containing about 2,000 packages, chiefly ones suited for an environment with limited resources.
+* ''Sysupgrade'', preserving selected configuration files on firmware upgrade.
+* a set of scripts called UCI (unified configuration interface) intended to unify and simplify the configuration of the entire system&lt;ref&gt;{{cite web |url=http://wiki.openwrt.org/doc/uci |title=OpenWrt Unified Configuration Interface}}&lt;/ref&gt;
+* extensible configuration of your network involving [[VLAN]] with exhaustive possibilities to configure the [[routing]] itself
+* customizable methods to filter, manipulate, delay and rearrange network packets:
+** [[Firewall (computing)|Firewall]]
+** [[Port Forwarding]] of external traffic to computers behind [[Network address translation|NAT]] inside the [[Local area network|LAN]]
+** [[Quality of Service]] for simultaneous use of applications such as [[VoIP]], [[online game|online gaming]], and [[streaming media]]
+** [[Traffic shaping]] to ensure fair distribution of bandwidth among users
+** Load balancing for use with multiple ISPs
+** IP tunneling
+** Realtime [[network monitoring]] and statistics
+* Static [[DHCP]] leases
+* [[UPnP]] and [[NAT-PMP]] for dynamically configured port forwarding
+* Use of [[Dynamic DNS]] services to maintain a fixed domain name with an [[Internet service provider|ISP]] that does not provide a static [[IP address]]
+* On devices with [[USB]] ports only:
+**[[Wireless modem|3G modem support]]
+** [[print server|Printer sharing]]
+** Windows-compatible [[file sharing]] (via [[SAMBA]])
+** File sharing via [[Network File System (protocol)|NFS]] and [[FTP]]
+** Audio/Video streaming via [[DLNA]]/[[UPnP]] AV
+** [[iTunes]] ([[Digital Audio Access Protocol|DAAP]]) server
+** [[Webcam]] streaming
+** USB audio
+* An extensive [[Ajax (programming)|Ajax]]-enabled [[web interface]], thanks to the LuCI project&lt;ref name=&quot;LuCI&quot; /&gt;
+* Configuration of the device as a [[wireless repeater]], [[wireless access point]], [[wireless bridge]], or a combination of these
+* [[Mesh network]]ing
+* User-configurable hardware buttons
+* Regular [[bug fix]]es and updates, even for devices no longer supported by their manufacturers
+
+=== Web interface ===
+[[File:Openwrt-luci-firewall.png|thumb|A screenshot of the LuCI web interface used by version 10.03.1-RC5 of OpenWrt.  Here it is being used to configure the firewall.]]
+Before release 8.09, OpenWrt had a minimal web interface. In release 8.09 a new, more capable web interface is included.&lt;ref&gt;[http://downloads.openwrt.org/kamikaze/8.09/release.txt OpenWrt 8.09 release notes]  ''OpenWrt download page for 8.09.'.' Retrieved February 23, 2009.&lt;/ref&gt; This interface is based on LuCI, an [[Modelâviewâcontroller|MVC]] framework written in [[Lua (programming language)|Lua]].&lt;ref name=&quot;LuCI&quot;&gt;{{cite web |url=http://luci.subsignal.org/ |title=LuCI project |accessdate=February 28, 2009}}&lt;/ref&gt;
+
+The [[X-Wrt]] project provides an alternate web interface, webifÂ², for current and previous version of OpenWrt.  It has more than 40 control and status pages.
+
+== History ==
+The project came into being after Linksys built the [[firmware]] for their [[Linksys WRT54G series|WRT54G]] wireless router from publicly-available code licensed under the [[GNU General Public License|GPL]]. Under the terms of that license, they were required to make the source code of their modified version available under the same license, enabling independent developers to create additional derivative versions.  Support was originally limited to the WRT54G series, but has since been expanded to include many other chipsets, manufacturers and device types, including [[Plug Computer]]s and [[Openmoko]] mobile phones.
+
+Using this code as a base and later as a reference, developers created a distribution that offers many features not previously found in consumer-level routers. Some features formerly required proprietary software. Before the introduction of OpenWrt 8.09, using Linux 2.6.25, and the ''b43'' kernel module, WLAN for many [[Broadcom]]-based routers was only available through the proprietary wl.o module that was also only provided for Linux 2.4.
+
+=== Sveasoft controversy ===
+On 2006-03-11, the OpenWrt developers publicly announced that [[Sveasoft]] had violated its GPL license terms, and that Sveasoft's continuing distribution of OpenWrt was prohibited.&lt;ref&gt;{{cite web |url=http://openwrt.org/?p=27|archiveurl=http://web.archive.org/web/20060619234857/http://openwrt.org/?p=27 |archivedate=2006-06-19|title=Notice of License Termination |publisher=OpenWrt |date=March 11, 2006 |accessdate=2007-08-09}}&lt;/ref&gt; In return, Sveasoft claimed that OpenWrt was illegally redistributing software copyrighted by Sveasoft and [[Broadcom]] and placing them under the GPL without being authorized to do so by the copyright holders.&lt;ref&gt;{{cite web|url=http://forum.openwrt.org/viewtopic.php?pid=22625#p22625|title=sveasoft post to forum.openwrt.org|date=12 March 2006|accessdate=2007-08-07|publisher=OpenWrt}}&lt;/ref&gt;  Each group denies the other's allegations.
+
+== Naming ==
+Several major versions of OpenWrt were named after [[alcoholic beverage]]s, usually including their recipes in the SSH login screen as well.
+
+* 0.9: [[White Russian (cocktail)|White Russian]] - ''legacy'' - 2007 January
+* 7.06: [[Kamikaze (cocktail)|Kamikaze]] - 2007 June
+* 7.07: Kamikaze - 2007 July
+* 7.09: Kamikaze - 2007 September
+* 8.09: Kamikaze - 2008 September
+* 8.09.1: Kamikaze - 2009 June
+* 8.09.2: Kamikaze - 2010 January
+* 10.03: [[Backfire (cocktail)|Backfire]] - '''current stable''' - 2010 April
+* 10.03.1: Backfire '''next stable''' - not released&lt;ref&gt;https://dev.openwrt.org/milestone/Backfire%2010.03.1&lt;/ref&gt;
+* Bleeding edge: [[Attitude Adjustment (cocktail)|Attitude Adjustment]] - ''development''
+
+The bleeding edge development [http://wiki.openwrt.org/about/latest trunk] was confusingly also called [http://wiki.openwrt.org/about/history Kamikaze] until February 2011 but with r25514 it was renamed as &quot;Attitude Adjustment&quot;.
+
+== Derivatives ==
+* Chillifire - OpenWrt-based firmware with focus on wireless hotspot management{{Citation needed|date=June 2011}}
+* Coova - OpenWrt-based with focus on wireless hotspots.
+* [[Midge Linux]]
+* [[PacketProtector]] - OpenWrt-based security distribution that includes [[Intrusion detection system|IDS]], [[Internet Provider Security|IPS]], [[Virtual private network|VPN]], and web antivirus capabilities.
+* [[Freifunk]] - German software supports wireless mesh networks with [[OLSR]], based on OpenWrt, available in several languages.
+* [[RO.B.IN]] - ROBIN (ROuting Batman INside) is an FOSS [[Mesh networking|mesh network]] project, deployed on top of OpenWrt kamikaze, running on any Atheros AP51 routers and using the [[B.A.T.M.A.N.]] routing algorithm.
+* [[Gargoyle (router firmware)|Gargoyle]]&lt;ref name=&quot;Gargoyle&quot;&gt;{{cite web |url=http://www.gargoyle-router.com |title=Gargoyle Router Management Utility |accessdate=August 21, 2011}}&lt;/ref&gt; - A web interface for OpenWrt with a strong emphasis on usability. It was originally available as a set of packages for OpenWrt. As the author of Gargoyle started to make modifications to the base system layout of OpenWrt, the package system was dropped and the only currently available downloads are full firmware images. Gargoyle makes extensive use of JavaScript, to offload as much work as possible to the client computer, and is focused on ease of use, striving to reach a level comparable to the appliance feel of commercial router firmware.
+* FreeWRT - A fork of the OpenWrt project.
+* [http://wiki.buenosaireslibre.org/Obelisco/ Obelisco] - (Website in Spanish)
+* [[FON]] - OpenWrt-based wireless routers acting as hotspots. Sources and toolchain available on fonosfera.org
+* Flukso - Wireless sensor nodes using an Atheros AR2317 chipset running a patched OpenWrt OS for communication. Sources and hardware schematics available on Github.
+* LibreWRT - OpenWrt-based GNU/Linux-libre distribution for computers with minimal resources, such as the [[Ben Nanonote]], ath9k based wifi routers, and other hardware.
+* OpenWRT/MLPPP - A fork of OpenWrt and Linux/MLPPP. Offers a better than stock MLPPP implementation (to avoid DPI-based throttling and for line bonding) by using Linux/MLPPP code. Developed by Canadian ISP's Acanac and Caneris, it also features web interface tweaks (mostly to make initial setup and basic configuration easier on the average user) and comes pre-packaged with consumer-oriented features like USB support for their most popular hardware and QoS scripts.
+* [[X-Wrt]] - Enhancements to the OpenWrt web interface.
+* CeroWrt&lt;ref&gt;{{cite web |url=http://cero2.bufferbloat.net/cerowrt/about.html |title=About CeroWrt |accessdate=2011-10-25}}&lt;/ref&gt; - CeroWrt purpose is to complement the debloat-testing kernel tree and provide a platform for real-world testing of [[bufferbloat]] fixes.&lt;ref&gt;http://lwn.net/Articles/429943/&lt;/ref&gt;
+
+== See also ==
+{{Portal|Free software}}
+*[[List of wireless router firmware projects]]
+
+==References==
+{{Reflist|2}}
+
+==External links==
+*{{Official website|openwrt.org}}
+*[http://luci.subsignal.org/ LuCI project]
+*[http://homesupport.cisco.com/en-us/gplcodecenter Cisco Home Products GPL Code Center (formerly Linksys)]
+
+{{Routing software}}
+
+[[Category:Free routing software]]
+[[Category:Aftermarket firmware]]
+[[Category:Lua-scriptable software]]
+[[Category:Embedded Linux distributions]]
+
+[[da:OpenWrt]]
+[[de:OpenWrt]]
+[[es:OpenWrt]]
+[[fr:OpenWrt]]
+[[ko:OpenWrt]]
+[[it:OpenWrt]]
+[[he:OpenWrt]]
+[[ja:OpenWrt]]
+[[pl:OpenWrt]]
+[[ru:OpenWrt]]
+[[fi:OpenWRT]]
+[[zh:OpenWrt]]</rev></revisions></page></pages></query></api>

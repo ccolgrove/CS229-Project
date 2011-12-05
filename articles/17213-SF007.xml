@@ -1,0 +1,150 @@
+<?xml version="1.0"?><api><query><pages><page pageid="17213" ns="0" title="Korn shell"><revisions><rev xml:space="preserve">{{Infobox programming language
+| name                   = Korn shell
+| logo                   = 
+| paradigm               = [[imperative programming|imperative]], [[pipeline programming|pipeline]]
+| year                   = 1983&lt;ref name=Gomes&gt;
+{{Cite newsgroup
+| author     = Ron Gomes
+| title      = Toronto USENIX Conference Schedule (tentative)
+| date       = Jun 9 1983
+| newsgroup  = net.usenix
+| url        = http://groups.google.com/group/net.usenix/msg/fa6e1f7de3b63bba?hl=en
+| accessdate = Dec 29 2010
+}}&lt;/ref&gt;&lt;ref name=Harris&gt;
+{{Cite newsgroup
+| author     = Guy Harris
+| title      = csh question
+| date       = Oct 10 1983
+| newsgroup  = net.flame
+| url        = http://groups.google.com/group/net.flame/msg/4f868085b65af530?hl=en
+| accessdate = Dec 29 2010
+}}&lt;/ref&gt;
+| designer               = [[David Korn (computer scientist)|David Korn]]
+| developer              = [[Bell Labs|AT&amp;T Bell Laboratories]]
+| latest_release_version = 
+| latest_release_date    = 
+| latest_test_version    = 
+| latest_test_date       = 
+| typing                 = 
+| implementations        = ksh88, ksh93, dtksh, tksh, pdksh, mksh, SKsh, MKS Korn shell
+| dialects               = 
+| influenced_by          = [[Bourne shell]], [[C shell]]
+| influenced             = [[zsh]], [[Bash (Unix shell)|bash]], [[Windows PowerShell]]
+| operating_system       = [[Cross-platform]]
+| license                = [[Common Public License]] (AT&amp;T ksh), [[MirOS Licence]] (mksh), mostly Public Domain with some [[GPL]] (pdksh)
+| website                =
+}}
+{{infobox software
+| name = ksh
+| latest_release_version = ksh93u
+| latest_release_date = {{release date|2011|02|08}}&lt;ref&gt;http://www2.research.att.com/sw/download/release.2011-02-08.2010-08-26.html&lt;/ref&gt;
+}}
+{{infobox software
+| name = mksh 
+| latest_release_version = R40&lt;ref&gt;http://freshmeat.net/projects/mksh&lt;/ref&gt;
+| latest_release_date = {{release date|2011|06|12}}&lt;ref&gt;http://article.gmane.org/gmane.os.miros.cvs/23625&lt;/ref&gt;
+}}
+{{infobox software
+| name = oksh 
+| latest_release_version = 0.4.1
+| latest_release_date = {{release date|2010|08|28}}&lt;ref&gt;http://freshmeat.net/projects/oksh&lt;/ref&gt;
+}}
+The '''Korn shell''' ('''ksh''') is a [[Unix shell]] which was developed by [[David Korn (computer scientist)|David Korn]] ([[Bell Labs|AT&amp;T Bell Laboratories]]) in the early 1980s and announced at [[USENIX Annual Technical Conference|USENIX]] on July 14, 1983.&lt;ref name=Gomes/&gt;&lt;ref name=Harris/&gt;  Other early contributors were AT&amp;T Bell Labs developers Mike Veach, who wrote the [[emacs]] code, and Pat Sullivan, who wrote the [[vi]] code.&lt;ref&gt;
+{{Cite book
+  | last = Bolsky
+  | first = Morris I.
+  | last2 = Korn
+  | first2 = David G.
+  | title = The KornShell Command and Programming Language
+  | publisher = Prentice Hall
+  | year = 1989
+  | location = Englewood Cliffs, NJ
+  | chapter = Acknowledgements
+  | pages = ''xii''
+  | url = 
+  | doi = 
+  | id = 
+  | isbn = 0-13-516972-0
+}}
+&lt;/ref&gt;  ksh is backwards-compatible with the [[Bourne shell]] and includes many features of the [[C shell]] as well, such as a [[command history]], which was inspired by the requests of Bell Labs users.
+
+== Design ==
+
+The main advantage of ksh over the traditional Unix shell is in its use as a programming language.  Since its conception, several features were gradually added, while maintaining strong backwards compatibility with the [[Bourne shell]].
+
+The ''ksh93'' version supports [[associative array]]s and built-in [[floating point|floating point arithmetic]].
+
+For interactive use, ksh provides the ability to edit the command line in a [[WYSIWYG]] fashion, by hitting the appropriate cursor-up or previous-line key-sequence to recall a previous command, and then edit the command as if the users were in edit line mode.  Three modes are available, compatible with &lt;code&gt;[[vi]]&lt;/code&gt;, &lt;code&gt;[[emacs]]&lt;/code&gt; and &lt;code&gt;[[XEmacs]]&lt;/code&gt;.
+
+ksh aims to respect the ''Shell Language Standard'' ([[POSIX]] 1003.2 &quot;Shell and Utilities Language Committee&quot;).
+
+== History ==
+
+Until 2000, Korn Shell remained AT&amp;T's [[proprietary software]]. Since then it has been [[open source software]], originally under a license particular to AT&amp;T but, since the 93q release in early 2005, it has been licensed under the [[Common Public License]]. Korn Shell is available as part of the AT&amp;T Software Technology (AST) Open Source Software Collection.  As ksh was initially only available through a proprietary license from AT&amp;T, a number of free and open source alternatives were created. These include the public domain ''pdksh'' and its actively developed successor [http://www.mirbsd.org/mksh.htm mksh], the [[Free Software Foundation]]'s  ''Bourne-Again-Shell'' [[Bash (Unix shell)|bash]], and [[zsh]].
+
+The functionality of the original Korn Shell (known as ksh88 from the year of its introduction) was used as a basis for the [[POSIX]] shell standard.
+
+Although the ''ksh93'' version added many improvements ([[associative array]]s, [[floating point arithmetic]], etc.), some vendors still ship their own version of the older ''ksh88'' as &lt;code&gt;/bin/ksh&lt;/code&gt;, sometimes with extensions. ksh93 is still maintained by its author. Releases of ksh93 are versioned by appending a letter to the name; the current version is ksh93u (released 2011-02-08); the previous version was ksh93t+ (released 2009-05-01) following ksh93t (released 2008-06-24). Some intermediate bug-fix versions are released without changes to this version string.&lt;ref&gt;http://www2.research.att.com/sw/download/notes.html&lt;/ref&gt;
+
+As &quot;Desktop KornShell&quot;, ''dtksh'', the ksh93 was distributed as part of the [[Common Desktop Environment]] with several Unix systems, including [[Solaris (operating system)|Solaris]], [[AIX]], and [[HP-UX]].&lt;ref name=&quot;RosenblattRobbins2002&quot;&gt;{{cite book|author1=Bill Rosenblatt|author2=Arnold Robbins|title=Learning the Korn Shell|url=http://books.google.com/books?id=5nMCY272chUC&amp;pg=PR8|year=2002|publisher=O'Reilly Media, Inc.|isbn=9780596001957|pages=viiiâix|edition=2}}&lt;/ref&gt; This version also provide shell-level mappings for [[Motif (widget toolkit)|Motif]] widgets. It was intended as competitor to [[tcl/tk]].&lt;ref name=&quot;Pendergrast1995&quot;&gt;{{cite book|author=J. Stephen Pendergrast|title=Desktop KornShell graphical programming|url=http://books.google.com/books?id=O6xQAAAAMAAJ|year=1995|publisher=Addison-Wesley|isbn=9780201633757|page=359}}&lt;/ref&gt;
+
+== Uses and variants ==
+
+There are also two modified versions of ksh93 which add features for manipulating the [[graphical user interface]]: ''dtksh'' which is part of [[Common Desktop Environment|CDE]] and ''tksh'' which provides access to the [[Tk (computing)|Tk]] [[widget toolkit]].
+
+''mksh'' ([[MirOS BSD|MirBSD]] [[ksh|Korn Shell]]) is an actively developed, [[MirOS Licence|BSDish-licensed]], flavour of ''ksh''. It is a direct descendant from the [[OpenBSD]]'s ''/bin/ksh'' and heir of [[pdksh]]. ''mksh'' development focuses on code portability, security fixes, [[UTF-8]] support, and tries to avoid [[feature creep]].&lt;ref&gt;{{cite web|url=http://www.mirbsd.org/mksh_old.htm#contrib |title=mksh development |publisher=mirbsd.org |date= |accessdate=2011-06-21}}&lt;/ref&gt; It will, however, track POSIX closely and implement many ''ksh93'' and some ''bash'' or ''zsh'' extensions. It is available for many [[unix-like]] operating systems&lt;ref&gt;{{cite web|url=http://www.mirbsd.org/mksh_bld.htm |title=mksh tested on various platforms |publisher=mirbsd.org |date= |accessdate=2011-06-21}}&lt;/ref&gt; and is a default shell of [[MirOS BSD]], [[FreeWRT]], [[MidnightBSD]], Android-x86, [[Android (operating system)|Android]] 3.0 (Honeycomb) and possibly the not-yet-released Android 4 (Ice Cream).
+
+''oksh'' is a port of [[OpenBSD]]'s ''/bin/ksh'' to GNU/Linux which only contains enough modifications so that the code can compile 
+under a GNU/Linux system. It is used as the default shell in [[DeLi Linux]].
+
+''SKsh'' is an [[AmigaOS]] version, that offers several Amiga-specific features such as [[ARexx]] interoperability.
+
+[[MKS Inc.]]'s ''MKS Korn shell'' is another proprietary ksh reimplementation. It was included with [[Microsoft]]'s [[Microsoft Windows Services for UNIX|Services for Unix]] (SFU) up to version 2.0. According to David Korn, the MKS Korn shell was not fully compatible with his own Korn shell implementation in 1998.&lt;ref&gt;{{cite web|url=http://slashdot.org/articles/01/02/06/2030205.shtml |title=David Korn Tells All |publisher=Slashdot |date= |accessdate=2009-10-22}}&lt;/ref&gt;&lt;ref&gt;{{cite web|url=http://lists.blu.org/pipermail/discuss/1998-August/002393.html |title=Jerry Feldman&amp;nbsp;â USENIX NT/LISA NT conference attendee |publisher=Lists.blu.org |date= |accessdate=2009-10-22}}&lt;/ref&gt;
+
+With the introduction of [[Microsoft Windows Services for UNIX|SFU]] Version 3.0, Microsoft has replaced the ''MKS Korn shell'' with a new and fully POSIX compliant Korn shell as part of the new native [[Interix]] subsystem technology.&lt;ref&gt;{{cite web|url=http://technet.microsoft.com/de-de/library/bb463204(en-us).aspx |title=Windows Services for UNIX Version 3.0 |publisher=Technet.microsoft.com |date= |accessdate=2009-10-22}}&lt;/ref&gt; It is supported on [[Windows NT 4.0]] SP6a+, [[Windows 2000]], [[Windows XP]] Professional and [[Windows Server 2003]]. It is also available in the [[Subsystem for UNIX-based Applications]] (SUA) of [[Windows Vista]] and [[Windows Vista|7]] Enterprise and Ultimate Editions only and [[Windows Server 2008]].&lt;ref&gt;{{cite web|url=http://technet2.microsoft.com/WindowsServer/en/library/695ac415-d314-45df-b464-4c80ddc2b3bc1033.mspx?mfr=true |title=Welcome to Subsystem for UNIX-based Applications |publisher=Technet2.microsoft.com |date=2006-03-13 |accessdate=2009-10-22}}&lt;/ref&gt;&lt;ref&gt;{{cite web|url=http://www.microsoft.com/downloadS/details.aspx?FamilyID=93ff2201-325e-487f-a398-efde5758c47f&amp;displaylang=en |title=Download details: Utilities and SDK for Subsystem for UNIX-based Applications in Microsoft Windows Vista SP1/Windows Server 2008 RTM |publisher=Microsoft.com |date= |accessdate=2009-10-22}}&lt;/ref&gt;&lt;ref&gt;{{cite web|url=http://www.microsoft.com/downloads/en/details.aspx?FamilyID=dc03485b-629b-49a6-b5ef-18617d1a9804
+|title=Utilities and SDK for Subsystem for UNIX-based Applications in Microsoft Windows 7 and Windows Server 2008 R2
+|publisher=Microsoft.com |date=2008-04-03 |accessdate=2010-10-19}}&lt;/ref&gt; It is the default shell (/bin/sh) for SUA.&lt;ref&gt;http://www.suacommunity.com/SUA_Tools_Env_Start.htm&lt;/ref&gt; The Korn shell is also included in [[UWIN]], a separate Unix compatibility package created by Korn himself;&lt;ref name=&quot;Olczak2001&quot;&gt;{{cite book|author=Anatole Olczak|title=The Korn shell: Unix and Linux programming manual|url=http://books.google.com/books?id=dCIJv94vXUMC&amp;pg=PA4|year=2001|publisher=Addison-Wesley Professional|isbn=9780201675238|pages=4}}&lt;/ref&gt; however, UWIN only explicitly support versions of Windows up to XP, included.
+
+The original Korn shell (ksh88) is the default shell on [[AIX]] since AIX version 4.&lt;ref name=&quot;CannonTrent1999&quot;&gt;{{cite book|author1=Casey Cannon|author2=Scott Trent|author3=Carolyn Jones|title=Simply AIX 4.3|year=1999|publisher=Prentice Hall PTR|isbn=9780130213440|page=21}}&lt;/ref&gt;&lt;ref&gt;http://publib.boulder.ibm.com/infocenter/aix/v6r1/index.jsp?topic=/com.ibm.aix.cmds/doc/aixcmds5/sh.htm&lt;/ref&gt; with ksh93 available separately.&lt;ref&gt;http://publib.boulder.ibm.com/infocenter/aix/v6r1/index.jsp?topic=/com.ibm.aix.baseadmn/doc/baseadmndita/korn_shell_enhanced.htm&lt;/ref&gt;
+
+== See also ==
+
+* [[Comparison of computer shells]]
+* [[test (Unix)]]
+
+== References ==
+{{reflist}}
+
+== Further reading ==
+* {{cite book|author1=Morris I. Bolsky|author2=David G. Korn|title=The new KornShell command and programming language|year=1995|publisher=Prentice Hall PTR|isbn=9780131827004}}
+* David G. Korn, Charles J. Northrup and Jeffery Korn [http://www.linuxjournal.com/article/1273 The New KornShell&amp;mdash;ksh93], [[Linux Journal]], Issue 27, July 1996
+
+== External links ==
+* [http://www.kornshell.com Korn shell home page (AT&amp;T ksh)]
+* [http://www.research.att.com/~gsf/man/man1/ksh.html ksh93 man page]
+* [http://www.research.att.com/sw/download/man/man1/ksh88.html ksh88 man page]
+* [http://web.cs.mun.ca/~michael/pdksh/ Public Domain Korn shell (pdksh)]
+* [http://www.mirbsd.org/mksh.htm MirBSD Korn Shell (mksh)]
+* [http://www.mirbsd.org/man1/mksh mksh man page] (also as [http://www.mirbsd.org/MirOS/dist/mir/mksh/mksh.pdf PDF] in DIN A4 [[paper size]])
+
+{{Unix Shells}}
+
+[[Category:Cross-platform software]]
+[[Category:Free software programmed in C]]
+[[Category:Scripting languages]]
+[[Category:Unix shells]]
+
+[[ca:Korn shell]]
+[[cs:Korn shell]]
+[[de:Korn-Shell]]
+[[el:Ksh]]
+[[es:Korn Shell]]
+[[fr:Korn shell]]
+[[it:Korn shell]]
+[[ja:Korn Shell]]
+[[pl:Korn shell]]
+[[pt:Korn Shell]]
+[[ru:Korn shell]]
+[[fi:Korn shell]]
+[[uk:Korn-shell]]
+[[zh:Korn shell]]</rev></revisions></page></pages></query></api>

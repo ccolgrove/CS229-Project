@@ -1,0 +1,61 @@
+<?xml version="1.0"?><api><query><pages><page pageid="217500" ns="0" title="Dialog box"><revisions><rev xml:space="preserve">[[Image:Dialog1.png|thumb|right|300px|Example of a dialog box of [[gedit]].]]
+In a [[graphical user interface]] of [[computers]], a '''dialog box''' is a type of [[Window (computing)|window]] used to enable [[wiktionary:reciprocal|reciprocal]] communication or &quot;[[wiktionary:dialog|dialog]]&quot; between a computer and its user. It may communicate information to the user, prompt the user for a response, or both. A dialog box is most often used to provide the user with the means for specifying how to implement a [[command (computing)|command]], or to respond to a question or an &quot;alert&quot; (see below).
+
+Dialog boxes are classified as &quot;[[Modal window|modal]]&quot; or &quot;modeless&quot;, depending on whether or not they block interaction with the [[software]] that initiated the dialog. The type of dialog box displayed is dependent upon the desired [[user interaction]].
+
+The simplest type of dialog box is the [[Alert dialog box|alert]], which displays a message and may require an acknowledgment that the message has been read, usually by clicking &quot;OK&quot;, or a decision as to whether or not an action should proceed, by clicking &quot;OK&quot; or &quot;Cancel&quot;. Alerts are also used to display a &quot;termination notice&quot;&amp;mdash;sometimes requesting confirmation that the notice has been read&amp;mdash;in the event of either an intentional closing or unintentional closing (&quot;[[crash (computing)|crash]]&quot;) of an [[application (computing)|application]] or the [[operating system]]. ([[wiktionary:e.g.|E.g.]], &quot;[[Gedit]] has encountered an error and must close.&quot;) Although this is a frequent [[Interaction design pattern|interaction pattern]] for modal dialogs, it is also criticized by [[usability]] experts as being ineffective for its intended use, which is to protect against errors caused by destructive actions,&lt;ref&gt;{{Cite book|last=Raskin|first=Jef |title=The Humane Interface |publisher=Addison Wesley |year=2000  |isbn= 0201379376 }}&lt;/ref&gt; and for which better alternatives exist.&lt;ref&gt;{{Cite book|last=Cooper |first=Alan |title=About Face 2.0: The Essentials of Interaction Design |publisher=Wiley |date=March 17, 2003  |isbn=0764526413 }}&lt;/ref&gt;
+
+== Modeless ==
+''Non-modal'' or ''[[modeless]]'' dialog boxes are used when the requested information is not essential to continue, and so the window can be left open while work continues elsewhere.  A type of modeless dialog box is a [[toolbar]] which is either separate from the main application, or may be detached from the main application, and items in the toolbar can be used to select certain features or functions of the application.
+
+In general, good software design calls for dialogs to be of this type where possible, since they do not force the user into a particular mode of operation. An example might be a dialog of settings for the current document, e.g. the background and text colors. The user can continue adding text to the main window whatever color it is, but can change it at any time using the dialog. (This isn't meant to be an example of the ''best'' possible interface for this; often the same functionality may be accomplished by toolbar buttons on the application's main window).
+
+== Application modal ==
+{{Main|Modal window}}
+''Modal'' dialog boxes are those which temporarily halt the program in that the user cannot continue until the dialog has been closed: the program may require some additional information before it can continue, or may simply wish to confirm that the user wants to proceed with a potentially dangerous course of action ([[confirmation dialog box]]). Modal dialogs are generally regarded as bad design solutions by usability practitioners since they are prone to produce [[mode error]]s. Dangerous actions should be undoable wherever possible; a modal alert dialog that appears unexpectedly or which is dismissed automatically (because the user has developed a [[habituation|habit]]) will not protect from the dangerous action.&lt;ref&gt;[[Aza Raskin]], A List Apart: [http://www.alistapart.com/articles/neveruseawarning Never Use a Warning When you Mean Undo]&lt;/ref&gt;
+
+The main [[workflow]] is interrupted when a modal dialog is shown. This effect has either been sought because it focuses on the completion of the task at hand or rejected because it prevents the user from changing to a different task when needed.
+
+== Document modal ==
+The concept of a ''document modal'' dialog has recently been used, most notably in [[Mac OS X]] and [[Opera Browser]]. In the first case, they are shown as ''sheets'' attached to a parent window. These dialogs block only that window until the user dismisses the dialog, permitting work in other windows to continue, even within the same application.
+
+&lt;!--  Commented out because image was deleted: [[image:Sheet dialog.jpg|right|400px|thumb|The &quot;save file&quot; dialog box on [[Mac OS X]].]]
+To the left is an example of a window-modal (sheet) dialog used in Mac OS X. Here, the underlying document is being saved. --&gt;
+In OS X, dialogs appear to emanate from a slot in their parent window, and are shown with a reinforcing animation. This helps to let the user understand that the dialog is attached to the parent window, not just shown in front of it. No work can be done in the underlying document itself while the dialog is displayed, but the parent window can still be moved, re-sized, and minimized, and other windows can be brought in front so the user can work with them:
+
+The same type of dialog box can be compared with the &quot;standard&quot; modal dialog boxes used in Windows and other operating systems.
+
+Similarities include:
+* the parent window is frozen when the dialog box opens, and one cannot continue to work with the underlying document in that window
+* no work can be done with the underlying document in that window.
+The differences are that
+* the dialog box may open anywhere in the parent window
+* depending on where the parent window is located, the dialog box may open virtually anywhere on screen
+* the dialog box may be moved (in almost all cases), in some cases may be resizable, but usually cannot be minimized, and
+* no changes to the parent window (cannot be resized, moved or minimized) are possible  while the dialog box is open.{{Clear}}
+
+Both mechanisms have shortcomings:
+* The Windows dialog box locks the parent window which can hide other windows the user may need to refer to while interacting with the dialog, though this may be mitigated since other windows are available through the [[task bar]].
+* The OS X dialog box blocks the parent window, preventing the user from referring to it while interacting with the dialog. This may require the user to close the dialog to access the necessary information, then re-open the dialog box to continue.
+
+== References ==
+{{Reflist}}
+
+{{GUI widgets}}
+
+{{DEFAULTSORT:Dialog Box}}
+[[Category:Graphical user interface elements]]
+
+[[az:Dialoq qutucuÄu]]
+[[de:Dialogfenster]]
+[[eo:Dialogujo]]
+[[fr:BoÃ®te de dialogue]]
+[[ko:ëí ìì]]
+[[it:Dialog box]]
+[[kk:Ð¢ÑÐ»ÒÐ°ÑÑÑÑ ÑÐµÑÐµÐ·ÐµÑÑ]]
+[[ja:ãã¤ã¢ã­ã°ããã¯ã¹]]
+[[mhr:ÐÐ°ÑÐºÑÐ»ÑÓ§ÑÐ·Ð°]]
+[[pl:Okno dialogowe]]
+[[ru:ÐÐ¸Ð°Ð»Ð¾Ð³Ð¾Ð²Ð¾Ðµ Ð¾ÐºÐ½Ð¾]]
+[[uk:ÐÑÐ°Ð»Ð¾Ð³Ð¾Ð²Ðµ Ð²ÑÐºÐ½Ð¾]]
+[[zh:å¯¹è¯æ¡]]</rev></revisions></page></pages></query></api>

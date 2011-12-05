@@ -1,0 +1,94 @@
+<?xml version="1.0"?><api><query><pages><page pageid="15606102" ns="0" title="PackageKit"><revisions><rev xml:space="preserve">{{primary sources|date=September 2011}}
+{{Infobox software
+| name                   = PackageKit
+| logo                   = [[File:packagekit.png]]
+| screenshot             = [[File:PackageKit on Fedora.png|300px]]
+| caption                = ''gnome-packagekit'', a front-end for PackageKit, running on [[Fedora (operating system)|Fedora]]
+| collapsible            =
+| author                 =
+| developer              = Richard Hughes
+| released               =
+| frequently updated     = Yes
+| programming language   = [[C (programming language)|C]], [[C++]], [[Python (programming language)|Python]]
+| operating system       = [[Linux]]
+| platform               =
+| size                   =
+| language               =
+| status                 = Active
+| genre                  = [[Package management system]]
+| license                = [[GNU General Public License]]
+| website                = [http://www.packagekit.org/ www.packagekit.org]
+}}
+
+'''PackageKit''' is an [[open source]] and free suite of [[software application]]s designed to provide a consistent and high-level [[front end]] for a number of different [[package management system]]s. PackageKit was created by Richard Hughes.
+
+The suite is ostensibly [[cross-platform]], though it is primarily targeted at [[Linux distribution]]s which follow the interoperability standards set out by the [[freedesktop.org]] group. It uses the [[software libraries]] provided by the [[D-Bus]] and [[PolicyKit]] projects to handle [[inter-process communication]] and [[computer privilege]] negotiation.
+
+==History==
+PackageKit was created by Richard Hughes and first proposed in a series of [[blog]] posts in 2007&lt;ref&gt;{{cite web |title=Installing and Updating Software Blows Goats |url=http://blogs.gnome.org/hughsie/2007/07/27/installing-and-updating-software-blows-goats/ |publisher=Richard Hughes |accessdate=18 January 2011}}&lt;/ref&gt;&lt;ref&gt;{{cite web |title=Robert Hughes' blog posts about PackageKit |url=http://blogs.gnome.org/hughsie/?s=PackageKit |publisher=Richard Hughes |accessdate=18 January 2011}}&lt;/ref&gt;, and is now developed by a small team of developers. [[Fedora (operating system)|Fedora]] 9 was the first operating system to use it as default front end for [[Yellow dog Updater, Modified|yum]]. It has undergone many updates in Fedora 10 and Fedora 11.
+
+==Design==
+[[Image:Kpackagekit.png|thumb|250px|''KPackageKit'', the [[KDE]]-based front-end, integrates directly with KDE's System Settings modules. It is now called Apper as of 0.64+.&lt;ref&gt;{{cite web |url=http://polishlinux.org/kde/kpackagekit-interview/ |title=KpackageKit: future of package managers on your desktop |publisher=polishlinux.org |accessdate=10 July 2009}}&lt;/ref&gt;]]
+PackageKit itself is a system activated [[daemon (computer software)|daemon]] called &lt;code&gt;packagekitd&lt;/code&gt;, that abstracts out differences between the different systems. A library called libpackagekit also allows other programs to interact with PackageKit.&lt;ref&gt;{{cite web |title=PackageKit Reference Manual |url=http://www.packagekit.org/gtk-doc/PkClient.html |publisher=packagekit.org |accessdate=10 July 2009}}&lt;/ref&gt;
+
+Features include:
+* Installing local files, ServicePack media and from remote sources.
+* Authorization using [[PolicyKit]].
+* Does not replace existing packaging tools.
+* Multi-user system aware â will not allow shutdown in critical parts of the transaction.
+* A system activated daemon so exits when not in use.
+
+===Front-ends===
+There are three [[front-end]]s for PackageKit:
+* '''gnome-packagekit''' to be used in the [[GNOME]] desktop.
+* '''[[Apper]]''' to be used in the [[KDE]] desktop.
+* '''pkcon''' to be used on the [[command line]].
+
+===Back-ends===
+A number of different [[package management system]]s (known as back-ends) support different abstract methods and signals that are used by the front-end tools.&lt;ref&gt;{{cite web |title=Frequently asked questions |url=http://www.packagekit.org/pk-faq.html#how-complete |publisher=packagekit.org |accessdate=10 July 2009}}&lt;/ref&gt; Back-ends supported include:
+
+* [[Advanced Packaging Tool]] (APT),
+* [[Arch Linux]] [[Pacman (package manager)|Package Management]] ([http://www.archlinux.org/pacman/libalpm.3.html ALPM]),
+* box,
+* [[Conary (package manager)|Conary]],
+* [[Sabayon Linux|Sabayon Linux's]] [http://wiki.sabayonlinux.org/index.php?title=En:Entropy Entropy],
+* [[Opkg]],
+* [[PiSi]],
+* [http://poldek.pld-linux.org/ poldek],
+* [[Portage (software)|Portage]],
+* [http://github.com/krh/razor/tree/master razor],
+* [[Smart Package Manager]],
+* [[Yellowdog Updater, Modified|YUM]],
+* [[ZYpp]].
+* [[urpmi]].
+
+==See also==
+{{Portal|Free software}}
+
+* [[PolicyKit]]
+* [[AppStream]]
+
+==References==
+{{Reflist}}
+
+==External links==
+* [http://www.packagekit.org/ Website of PackageKit]
+
+{{Freedesktop.org}}
+
+{{DEFAULTSORT:Packagekit}}
+[[Category:Free package management systems]]
+[[Category:Applications using D-Bus]]
+[[Category:Software that uses Qt]]
+
+{{free-software-stub}}
+
+[[de:PackageKit]]
+[[es:PackageKit]]
+[[fr:PackageKit]]
+[[ko:í¨í¤ì§í·]]
+[[it:PackageKit]]
+[[ja:PackageKit]]
+[[pl:PackageKit]]
+[[pt:PackageKit]]
+[[simple:PackageKit]]</rev></revisions></page></pages></query></api>

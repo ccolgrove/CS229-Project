@@ -1,0 +1,47 @@
+<?xml version="1.0"?><api><query><redirects><r from="APT on CD" to="APTonCD" /></redirects><pages><page pageid="18490857" ns="0" title="APTonCD"><revisions><rev xml:space="preserve">{{Infobox Software
+| name                   = APTonCD
+| logo                   = 
+| screenshot             = [[Image:APTonCD.png|250px]]
+| caption                = 
+| collapsible            = 
+| author                 = 
+| developer              = Laudeci Oliveira (aka Pretto)&lt;ref&gt;http://aptoncd.sourceforge.net/develop.html#people&lt;/ref&gt;
+| released               = 
+| latest release version = 0.1-1
+| latest release date    = 
+| latest preview version = 
+| latest preview date    = 
+| frequently updated     = 
+| programming language   = 
+| operating system       = [[Linux]] ([[Debian]]/[[Ubuntu (operating system)|Ubuntu]])
+| platform               = 
+| size                   = 
+| language               = 
+| status                 = 
+| genre                  = offline repository
+| license                = [[GNU GPL]] Version 2
+| website                = http://aptoncd.sourceforge.net/
+}}
+
+'''APTonCD''' is a tool that can create one or more [[.iso|ISO]]s, CDs or DVDs with all of the packages the user downloaded via APT-GET or APTITUDE, creating a removable repository that the user can use on other computers.
+APTonCD will also allow the user to automatically create media with all of the [[.deb]] packages located in one specific repository, so that the user can install them into other computers without the need for an internet connection.
+
+==Limitations==
+Since APTonCD just copies the deb files on the cache, it will not save files that are downloaded when the .deb packages are installed, this causes packages like &quot;[[ubuntu-restricted-extras]]&quot; or the flash plugin to fail when installing them on a computer with no internet access.
+
+== See also ==
+* [[Advanced Packaging Tool]]
+* [[SuperDeb]]
+* [[RUNZ]]
+
+==References==
+{{reflist}}
+http://sites.google.com/site/vysakhp/articles/using-aptoncd
+
+[[Category:Linux package management-related software]]
+
+{{linux-stub}}
+{{Install-software-stub}}
+
+[[pt:APTonCD]]
+[[simple:APTonCD]]</rev></revisions></page></pages></query></api>

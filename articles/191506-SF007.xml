@@ -1,0 +1,105 @@
+<?xml version="1.0"?><api><query><pages><page pageid="191506" ns="0" title="86-DOS"><revisions><rev xml:space="preserve">{{Infobox OS
+|name=86-DOS
+|logo=[[File:86-DOS logo.svg|235px]]
+|screenshot=[[File:86dos.png]] 
+|caption=A sample 86-DOS session (simulated). Note that the prompt is a colon rather than a '&gt;' sign.
+|developer=[[Seattle Computer Products]] / [[Tim Paterson]]
+|source_model=[[Closed source]]
+|kernel_type=[[Monolithic kernel]]
+|supported_platforms=[[x86]]
+|ui=[[Command line interface]]
+|family=[[DOS]]
+|released=1980
+|latest_release_version=86-DOS v1.14
+|latest_release_date=July 1981
+|marketing_target=?
+|programmed_in=[[Intel 8086|8086]]-[[Assembly language]]
+|prog_language=[[Intel 8086|8086]]-[[Assembly language]]
+|language=[[English language|English]]
+|updatemodel=
+|package_manager=N/A
+|working_state=Historic
+|license=[[Proprietary software|Proprietary]]
+|website=
+}}
+
+'''86-DOS''' was an operating system developed and marketed by [[Seattle Computer Products]] for its [[Intel 8086]]-based computer kit. Initially known as '''QDOS''' ('''[[Quick-and-dirty|Quick and Dirty]] Operating System''') the name was changed to 86-DOS once SCP started licensing the operating system.
+
+86-DOS had a command structure and [[application programming interface]] that imitated that of [[Digital Research]]'s (abbreviated DR or DRI) [[CP/M]] operating system, which made it easy to [[porting|port]] programs from the latter. The system was purchased by [[Microsoft]] and developed further as [[PC-DOS]] and [[MS-DOS]].
+
+==Origins==
+{{unreferenced section|date=April 2010}}
+
+86-DOS was created because sales of the Seattle Computer Products (SCP) 8086 [[electronic kit|computer kit]], demonstrated in June 1979 and shipped in November, were languishing due to the absence of an operating system. The only software which SCP could sell with the board was the stand-alone [[Microsoft BASIC]]-86, which Microsoft had developed on a prototype of SCP's hardware. SCP wanted to offer the 8086 version of [[CP/M]] that Digital Research had announced, but its release date was uncertain. This was not the first time Digital Research had lagged behind hardware developments; two years earlier it had been slow to adapt CP/M for new [[floppy disk]] formats and [[hard disk]]s. In April 1980 SCP assigned 24-year-old [[Tim Paterson]] to develop a substitute for [[CP/M-86]]. 
+
+Paterson designed 86-DOS with an [[application programming interface|API]] that was compatible with [[Legacy system|legacy]] CP/M programs. At the same time he made a number of changes and enhancements to address what he saw as CP/M's shortcomings. CP/M [[cache]]d [[file system]] information in memory for speed, but this required a user to force an update to a disk before removing it; if the user forgot, the disk would be corrupt. Paterson took the safer but slower approach of updating the disk with each operation. CP/M's [[Peripheral Interchange Program|PIP]] command, which copied files, supported several special file names that referred to hardware devices such as [[printer (computing)|printer]]s and [[communication port]]s. Paterson built these names into the operating system as [[device file]]s so that any program could use them. He gave his copying program the more intuitive name [[copy (command)|COPY]]. Rather than implementing CP/M's [[file system]], he used BASIC-86's [[FAT filesystem|FAT]] filesystem to maintain compatibility with systems that SCP had already shipped.
+
+==IBM interest==
+In October 1980, [[IBM]] was developing what would become the original [[IBM Personal Computer]]. CP/M was by far the most popular operating system in use at the time, and IBM felt it needed CP/M in order to compete. IBM's representatives visited Digital Research and discussed [[licensing]] with Digital Research's licensing representative, Dorothy McEwen Kildall, who hesitated to sign IBM's [[non-disclosure agreement]]. Although the NDA was later accepted, Digital Research would not accept IBM's proposal of $250,000 in exchange for as many copies as IBM could sell, insisting on the usual [[Royalties|royalty]]-based plan.&lt;ref&gt;{{cite book|last=Freiberger|first=Paul|coauthors=Michael Swaine|title=Fire in the Valley: The Making of the Personal Computer|origyear=1984|url= http://www.fireinthevalley.com/|edition=2nd|year=2000|publisher=McGraw-Hill|location=New York|isbn= 0-07-135892-7|pages=332â333}}&lt;/ref&gt; In later discussions between IBM and [[Bill Gates]], Gates mentioned the existence of 86-DOS and IBM representative Jack Sams told him to get a license for it.{{fact|date=July 2011}}
+
+==Creation of PC-DOS==
+Microsoft purchased a nonexclusive license for 86-DOS from Seattle Computer Products in December 1980 for $25,000. In May 1981, it hired Tim Paterson to port the system to the IBM-PC, which used the slower and less expensive [[Intel 8088]] processor and had its own specific family of peripherals. IBM watched the developments daily, submitted over 300 [[change request]]s before it accepted the product and wrote the user manual for it.
+
+In July 1981, a month before the PC's release, Microsoft purchased all rights to 86-DOS from SCP for $50,000. It met IBM's main criteria: it looked like CP/M, and it was easy to adapt existing 8-bit CP/M programs to run under it, notably thanks to the TRANS command which would translate source files from 8080 to 8086 machine instructions. Microsoft licensed 86-DOS to IBM, and it became PC-DOS 1.0. This license also permitted Microsoft to sell DOS to other companies, which it did. The deal was spectacularly successful, and SCP later claimed in court that Microsoft had concealed its relationship with IBM in order to purchase the operating system cheaply. SCP ultimately received a 1 million dollar settlement payment.
+
+==Intellectual property dispute==
+When Digital Research founder [[Gary Kildall]] examined PC-DOS and found that it duplicated CP/M's programming interface, he wanted to sue IBM, which at the time claimed that PC-DOS was its own product. However, Digital Research's attorney did not believe that the relevant law was clear enough to sue. Nonetheless, Kildall confronted IBM and persuaded them to offer CP/M-86 with the PC in exchange for a release of liability.
+
+Controversy has continued to surround the similarity between the two systems. Perhaps the most sensational claim comes from [[Jerry Pournelle]], who claims that Kildall personally demonstrated to him that DOS contained CP/M code by entering a command in DOS that displayed Kildall's name;&lt;ref&gt;{{cite podcast|url=http://www.twit.tv/73|title=this WEEK in TECH|website=The TWiT Netcast Network| date=2006-10-16|accessdate=2006-11-28}}&lt;/ref&gt; as of 2006 Pournelle has not revealed the command and nobody has come forward to corroborate his story. A 2004 book about Kildall says that he used such an encrypted message to demonstrate that other manufacturers had copied CP/M, but does not say that he found the message in DOS;&lt;ref&gt;{{cite book|last=Evans|first=Harold|coauthors=Gail Buckland, and David Lefer|year=2004|title=They Made America|publisher=Little, Brown and Co| isbn=0-316-27766-5}}&lt;/ref&gt; instead Kildall's memoir (a source for the book) pointed to the well-known interface similarity. Paterson insists that the 86-DOS software was his original work, and has denied referring to or otherwise using CP/M code while writing it.&lt;ref&gt;{{cite journal|last= Paterson|first=Tim|date=1994-10-03|title=The Origins of DOS|journal=[[Microprocessor Report]]| volume=8|issue=13|issn=0899-9341|url=http://www.ece.umd.edu/courses/enee759m.S2000/papers/paterson1994-kildall.pdf}}&lt;/ref&gt;
+After the 2004 book appeared, he sued the authors and publishers for [[defamation]].&lt;ref&gt;{{cite news
+|agency=Associated Press|date=2005-02-03|title=Programmer sues author over role in Microsoft history
+|work=USA Today|url=http://www.usatoday.com/tech/news/2005-03-02-ms-coding-dis_x.htm|accessdate= 2006-11-28}}&lt;/ref&gt; The court ruled in [[summary judgement]] that no defamation had occurred, as the book's claims were opinions based on research or were not provably false.&lt;ref&gt;[http://seattletimes.nwsource.com/ABPub/2007/07/26/2003806592.pdf Order] (2007-07-25). ''Paterson v. Little, Brown, and Co., et al.'' [[United States District Court for the Western District of Washington|W. D. Wash.]]. Retrieved on 2007-08-03.&lt;/ref&gt;
+
+===EDLIN===
+By 1982, when IBM asked Microsoft to release a version of DOS that was compatible with a [[hard disk]], PC-DOS 2.0 was an almost complete rewrite of DOS, so by March 1983, very little of QDOS remained. The most enduring element of 86-DOS was its primitive line editor, [[Edlin|EDLIN]], which remained the only editor supplied with Microsoft versions of DOS until the June 1991 release of MS-DOS 5.0, which included a [[Text user interface|TUI]]-based editor, [[MS-DOS Editor]] based on [[QBasic]]. EDLIN can still be used on contemporary machines, since it is bundled with the emulated DOS environment up to Windows 7.
+
+==Versions==
+{| class=&quot;wikitable&quot;
+|-
+| QDOS v0.1  || July 1980       || Roughly half completed version of the OS.&lt;ref name=&quot;The Roots of DOS&quot;/&gt;
+|-
+| QDOS v0.11 || August 1980     || Bug fix.&lt;ref name=&quot;The Roots of DOS&quot;/&gt;
+|-
+| 86-DOS v0.33 || December 1980 || First version distributed to [[Original equipment manufacturer|OEM]]s and Microsoft.&lt;ref name=&quot;The Roots of DOS&quot;/&gt;
+|-
+| 86-DOS v0.60 ||               || The file '''DOSIO.ASM''' found in v1.00 mentions that it is the &quot;I/O System for 86-DOS version 0.60 and later.&quot;&lt;ref&gt;http://www.86dos.org/downloads/86DOS_FILES.ZIP, A [[ZIP (file format)|ZIP]] file containing all the files from 86-DOS v1.00&lt;/ref&gt;
+|-
+| 86-DOS v1.00&lt;ref name=&quot;shortHistory&quot;/&gt; || April 1981 || Modified system calls.&lt;ref name=&quot;The Roots of DOS&quot;/&gt;
+|-
+| 86-DOS v1.14                 || July 1981&lt;ref name=&quot;shortHistory&quot;&gt;{{cite journal|last=Paterson|first=Tim|date=June 1983|title=A Short History of MS-DOS|journal=[[Byte (magazine)|Byte]]|issn= 0360-5280|url= http://www.patersontech.com/Dos/Byte/History.html}}&lt;/ref&gt; || Renamed MS-DOS as of July 27, 1981.
+|}
+
+==Quotes==
+{{quotefarm|date=November 2011}}
+{{quotation|&quot;We needed an operating system at Seattle Computer for our own computers and I wanted to do one. So we decided to go for it. I was waiting for Digital [Research] to come out with CP/M-86. I thought they would have it real soon. If they had beat me I wouldn't have taken the trouble. I had always wanted to write my own operating system. I've always hated CP/M and thought I could do it a lot better.&quot;| [[Tim Paterson]]
+&lt;ref name=&quot;The Roots of DOS&quot;/&gt;}}
+
+{{quotation|&quot;IBM wanted [[CP/M]] prompts. It made me throw up.&quot;| [[Tim Paterson]]
+&lt;ref name=&quot;The Roots of DOS&quot;&gt;{{cite journal|first=David|last=Hunter|title=The Roots of DOS|year= 1983|journal=[[Softalk]] for the IBM Personal Computer|issn=0724-9629|url= http://www.patersontech.com/Dos/Softalk/Softalk.html}}&lt;/ref&gt;}}
+
+==References==
+{{Reflist}}
+
+==External links==
+*[http://www.patersontech.com/Dos/Byte/History.html Tim Paterson's brief history] of QDOS/86-DOS (1979â1983)
+*[http://www.patersontech.com/Dos/Manuals.aspx 86-DOS documentation] from Paterson Technology
+*[http://www.86dos.org/index.htm Run 86-DOS 1.0] in the SIMH simulator
+
+{{DEFAULTSORT:86-Dos}}
+
+[[Category:Microcomputer software]]
+[[Category:Disk operating systems]]
+[[Category:DOS issues]]
+[[Category:Floppy disk-based operating systems]]
+[[Category:Discontinued operating systems]]
+[[Category:Proprietary operating systems]]
+[[Category:1979 software]]
+
+{{Link GA|es}}
+
+[[fr:86-DOS]]
+[[hr:86-DOS]]
+[[it:86-DOS]]
+[[pt:86-DOS]]
+[[ru:86-DOS]]
+[[sl:86-DOS]]</rev></revisions></page></pages></query></api>

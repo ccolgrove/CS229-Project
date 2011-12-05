@@ -1,0 +1,83 @@
+<?xml version="1.0"?><api><query><redirects><r from="Jkdefrag" to="JkDefrag" /></redirects><pages><page pageid="24055963" ns="0" title="JkDefrag"><revisions><rev xml:space="preserve">{{Infobox software
+| name                   = JkDefrag
+| logo                   = [[Image:JkDefragIcon.gif|64px|JkDefrag Icon]]
+| screenshot             = [[Image:JkDefragScreen.png|250px|JkDefrag Screenshot]] |
+| caption                = Image of drive during defrag.
+| author                 = Jeroen Kessels
+| developer              = 
+| released               = 
+| latest release version = 3.36.0.2
+| latest release date    = {{release date and age|2008|08|31}}
+| latest preview version = 
+| latest preview date    = 
+| operating system       = [[Windows 2000]]&lt;br&gt;[[Windows Server 2003]]&lt;br&gt;[[Windows XP]]&lt;br&gt;[[Windows XP Professional x64 Edition|Windows XP x64 Edition]]&lt;br&gt;[[Windows Vista]]
+| platform               = 
+| programming language   = Microsoft Visual C++ 2005
+| status                 = unmaintained/discontinued
+| genre                  = [[Defragmentation]] program
+| license                = [[GNU GPL]]
+| website                = [http://www.kessels.com/JkDefrag/ www.kessels.com/JkDefrag/]
+}}
+'''JkDefrag''' is a free [[open source]] [[Defragmentation|disk defragmenting]] [[Utility software|utility]] [[computer program]] for [[Microsoft Windows|Windows]]. It was developed by Jeroen Kessels beginning in 2004&lt;ref&gt;Information obtained from product release notes: history.txt file&lt;/ref&gt; and is released under the [[GNU]] [[GPL|General Public License]]. The &quot;Jk&quot; part of the utility name is taken from the developer's name, Jeroen Kessels. In 2008, from version 4, much changed from previous versions; JkDefrag was renamed [[MyDefrag]] by its developer, and JkDefrag was discontinued, although still available. MyDefrag is [[closed source]] [[freeware]].
+
+== Operation ==
+
+JkDefrag has many options. If run without options it groups files into 3 zones with the intention of optimizing speed: 
+# Directories and system files
+# Regular files
+# Large files referred to as &quot;space hogs&quot; in the documentation
+Files outside their zone are moved to their zone. Directories are perhaps the most accessed data on disk, so zone 1 is placed at the beginning of the drive. After the directories comes a free space area, then zone 2 with regular files, another free area, and then zone 3 with &quot;space hogs&quot;, which are large files, archives, recycle bin contents, service pack files, and other infrequently accessed data.&lt;ref&gt;{{cite web | url = http://www.kessels.nl/JkDefrag/index.html | title = JkDefrag v3.36 | first = Jeoren | last = Kessels}}&lt;/ref&gt;
+
+JkDefrag characteristics:
+* Both command-line &amp; graphical executable programs, about 500kbytes total size;
+* Automated operation;
+* A range of [[command line interface]] options, allowing for scheduled defragmentation with administrator scripts;
+* No need for installation; runs with default options by opening JkDefrag.exe;
+* [[Screensaver]] defragmentation, with the option to run another screensaver when done;
+* Source code (Microsoft Visual C++ 2005) available;
+* A DLL [[library (computer science)|library]] (for use in programming) licensed using the [[LGPL]]; 
+* Support for [[Windows XP Professional x64 Edition|64]]-bit versions of Windows XP and Vista with native x64 binaries;
+* Documentation available on the web site.
+
+JkDefrag runs on the Windows 2000/XP/2003/Vista Operating Systems, and defragments both [[File Allocation Table|FAT]] and [[NTFS]] filesystems. It uses the standard Windows defragmentation [[API]]. User support was provided through web-based forums.
+
+== Related software ==
+
+There are several [[GUI|graphical user interface]] utilities designed to work with JkDefrag:
+
+* ''JKDefrag Option GUI'' by Emiel Wieldraaijer includes support for 26 languages, and has support for [[BartPE]] and U3 implementations.&lt;ref&gt;{{cite web | url=http://www.freewaregenius.com/2007/07/31/jkdefrag-gui/ | title=JkDefrag GUI | work=Software Genius | date=31 July 2007 | first = Samer | last = Kurdi}}&lt;/ref&gt; It was also nominated &quot;Repair Tool of the Week&quot; in ''TechNibble'' in August 2007.&lt;ref&gt;{{cite web | url = http://www.technibble.com/repair-tool-of-the-week-jkdefrag-gui/ | title = Repair Tool of the Week: JkDefrag GUI | work = Technibble | date = 7 August 2007 | first = Bryce | last = Whitty}}&lt;/ref&gt;
+* ''JkDefragGUI'' by Markus HÃ¶rl is portable, includes support for 10(+30) languages, and there is a setup version.
+* ''ScanDefrag'' supports JkDefrag and allows it to run during Windows startup.
+
+The only other Windows-based defrag program with a [[GNU]] [[GPL]] is [[UltraDefrag]].
+
+== See also ==
+{{Portal|Free software}}
+*[[Defragmentation]]
+*[[File system fragmentation]]
+*[[List of defragmentation software]]
+
+== Notes ==
+{{Reflist|1}}
+
+== References ==
+
+* {{cite journal | title = Boxed Utility Blowout | journal = [[Computer Power User]] | url = http://www.computerpoweruser.com/editorial/article.asp?article=articles%2Farchive%2Fc0709%2F31c09%2F31c09.asp | month = September | year = 2007 | pages = 66â68 | volume = 7 | issue = 9}}
+* {{cite web | title = Freeware/Open Source for Windows Weekly Summary | first = Todd | last = Ogasawara | work = O'Reilly Windows Devcentre | url = http://www.oreillynet.com/windows/blog/2007/07/freewareopen_source_for_window_33.html | date = 12 July 2007}}
+* {{cite web | title = Defragmentation freeware outpaces native tools in Windows | first = Serdar | last = Yegulalp  | url = http://searchwindowsserver.techtarget.com/tip/0,289483,sid68_gci1247255,00.html | date = 13 March 2007 | work = SearchWindowsServer.com}}
+* {{cite journal | title = Must-have Windows utilities for 20 essential tasks | first = Serdar | last = Yegulalp | url = http://www.computerworld.com/s/article/9025855/Must_have_Windows_utilities_for_20_essential_tasks | journal = [[Computerworld]] | date = 12 July 2007}}
+* {{cite web | title = Two top defraggers speed your disk accesses | first = Scott | last = Spanbauer | work = Windows Secrets | date = 12 June 2008 | url = http://windowssecrets.com/2008/06/12/05-Two-top-defraggers-speed-your-disk-accesses}}
+
+== External links ==
+* [http://www.kessels.com/JkDefrag/ JkDefrag official website]
+
+{{DEFAULTSORT:Jkdefrag}}
+[[Category:2004 software]]
+[[Category:Windows software]]
+[[Category:Free defragmentation software]]
+[[Category:Windows-only free software]]
+
+[[cs:JkDefrag]]
+[[es:JkDefrag]]
+[[pl:JkDefrag]]
+[[pt:JkDefrag]]</rev></revisions></page></pages></query></api>

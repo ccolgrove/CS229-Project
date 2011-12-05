@@ -1,0 +1,296 @@
+<?xml version="1.0"?><api><query><pages><page pageid="8577251" ns="0" title="Linux Mint"><revisions><rev xml:space="preserve">{{Infobox OS
+| name                   = Linux Mint
+| logo                   = [[File:Linux Mint Official Logo.svg|200px]]
+| screenshot             = [[File:Linux Mint Lisa.png|300px]]
+| caption                = Linux Mint 12 (&quot;Lisa&quot;)
+| family                 = [[Unix-like]] (based on [[Ubuntu (operating system)|Ubuntu]]) and (Debian Edition (LMDE) from September 2010)
+| source model           = [[Free and open source software]] and [[proprietary software]]
+| developer              = Linux Mint team
+| released               = 27 August 2006
+| latest release version = Linux Mint 12 (&quot;Lisa&quot;) &lt;!-- If you update this, remember to also update [[Comparison of Linux distributions]]--&gt;
+| latest release date    = {{release date and age|2011|11|26}}
+| latest preview version = 
+| latest preview date    = 
+| language               = Multilingual
+| kernel type            = [[Monolithic kernel|Monolithic]] ([[Linux kernel|Linux]])
+| ui                     = 1.0: [[KDE]] &lt;br&gt; 2.0 to 11: [[GNOME]] 2.x (Main edition) &lt;br&gt; 12 onwards: [[MGSE]] on top of [[GNOME]] 3 and [[Mate (desktop environment)|Mate]]
+| working state          = Current
+| website                = http://www.linuxmint.com
+| supported platforms    = [[IA-32]], [[x86-64]]
+| updatemodel            = [[Advanced Packaging Tool|APT]]
+| package manager        = [[dpkg]]
+| license                = Mainly the [[GPL]], and various others
+}}
+
+'''Linux Mint''' is a [[Linux kernel|Linux-based]] [[personal computer|computer]] [[operating system]] best known for its [[usability]] and ease of installation, particularly for users with no previous [[GNU]]/[[Linux]] experience.&lt;ref&gt;{{cite web|url=http://cristalinux.blogspot.com/2010/05/review-linux-mint-9-isadora.html |title=Linux Mint 9 &quot;Isadora&quot; Review}}&lt;/ref&gt;&lt;ref name=&quot;Joe Brockmeier&quot;&gt;{{cite web |url=http://www.linux-mag.com/id/7942 |title=Linux Mint Debian Edition 10: Rolling Release Nirvana |author=Joe Brockmeier |date=12 Jan 2011 |accessdate=13 January 2011}}&lt;/ref&gt; It is available in several [[#Editions|editions]] with different [[codebases]], nearly all of which are based on [[Ubuntu (operating system)|Ubuntu]],&lt;ref&gt;{{cite web |url=http://blog.linuxmint.com/?p=1708 |title=Linux Mint Xfce RC (201104) released!}}&lt;/ref&gt; which is itself based on [[Debian]].
+
+Linux Mint is composed of many [[Software package (installation)|software packages]], of which the vast majority are distributed under a [[free software license]]. The main license used is the [[GNU General Public License]] (GNU GPL) which, along with the [[GNU Lesser General Public License]] (GNU LGPL), explicitly declares that users are free to run, copy, distribute, study, change, develop and improve the software. But Linux Mint also includes proprietary software, such as Picasa, Skype, the Opera browser, the [[Adobe Flash]] plugin (the libre alternatives being [[Gnash]] and [[swfdec]]), and uses a Linux kernel that contains non-free [[binary blob]]s. Linux Mint is funded by its community of users. Individual users and companies using the operating system act as donors,&lt;ref&gt;{{cite web|url=http://www.linuxmint.com/donors.php |title=Linux Mint Donors}}&lt;/ref&gt; sponsors&lt;ref&gt;{{cite web|url=http://www.linuxmint.com/sponsors.php |title=Linux Mint Sponsors}}&lt;/ref&gt; and partners&lt;ref&gt;{{cite web|url=http://www.linuxmint.com/partners.php |title=Linux Mint Partners}}&lt;/ref&gt; of the distribution.
+
+==Origin and development process==
+Linux Mint uses primarily [[free and open source software]] (FOSS), making exceptions for some [[Proprietary software|proprietary]] [[hardware drivers]], non-free firmware in the kernel and some other widely used software, such as the proprietary [[Adobe Flash|Adobe's Flash]] plugin and [[RAR]] compression/decompression utilities. Unlike many other [[Linux distribution]]s, Linux Mint does not strive to commit itself to software freedom.
+
+Linux Mint started in 2006 with a beta release called 1.0 &quot;Ada&quot;. The project wasn't well known at the time and this version was never released as stable. With the release of 2.0 &quot;Barbara&quot; a few months later, the distribution caught the attention of many people within the Linux community and started to build an audience. Using the feedback given from its new community, the distribution released a quick succession of releases between 2006 and 2008. 5 versions were released as follows: 2.1 &quot;Bea&quot;, 2.2 &quot;Bianca&quot;, 3.0 &quot;Cassandra&quot;, 3.1 &quot;Celena&quot; and 4.0 &quot;Daryna&quot;.
+
+Version 2.0 &quot;Barbara&quot; was based on [[Ubuntu (operating system)|Ubuntu]] 6.10, using its package repositories and using it as a [[codebase]]. From there, Linux Mint followed its own codebase, building each release from its previous one but it continued to use the package repositories from the latest Ubuntu release. As such the distribution never really [[Fork (software development)|forked]]. This resulted in making the base between the two systems almost identical and it guaranteed full compatibility between the two operating systems.
+
+In 2008, Linux Mint adopted the same release cycle as Ubuntu and dropped its minor version number before releasing version 5 &quot;Elyssa&quot;. The same year, in an effort to increase the compatibility between the two systems, Linux Mint decided to abandon its code-base and changed the way it built its releases. Starting with version 6 &quot;Felicia&quot; each release was now completely based on the latest Ubuntu release, built directly from it, timed for approximately one month after the corresponding Ubuntu release (i.e. usually in May and November).
+
+In 2010 Linux Mint released a [[#Editions|Debian Edition]].&lt;ref name=&quot;Joe Brockmeier&quot;/&gt; Unlike the other Ubuntu-based editions, this is based directly on [[Debian]], and hence is not tied to Ubuntu packages or release schedule.
+
+==Features==
+Linux Mint focuses on [[usability]]. The Ubiquity installer allows Linux Mint to be installed to the hard disk from within the [[Live CD]] [[Run-time system|environment]], without the need for restarting the computer prior to installation. Linux Mint also emphasizes [[accessibility]] and [[internationalization]] to reach as many people as possible. [[UTF-8]] is the default [[character encoding]] and allows for support of a variety of non-[[Roman type|Roman]] [[Script (Unicode)|scripts]]. As a security feature, the [[sudo]] tool is used to assign temporary privileges for performing administrative tasks, allowing users to administer the system without using the [[Superuser|root account]].
+
+Linux Mint comes installed with a wide range of software that includes [[LibreOffice]], [[Mozilla Firefox|Firefox]], [[Mozilla Thunderbird|Thunderbird]], [[Xchat|XChat]], [[Pidgin (software)|Pidgin]], [[Transmission (BitTorrent client)|Transmission]] and [[GIMP]].  Additional software that is not installed by default can be downloaded using the package manager.  Linux Mint allows [[TCP and UDP port|networking ports]] to be closed using its [[Firewall (computing)|firewall]], with customized port selection available. GNOME 3 (the current default desktop) offers support for more than 46 languages. Linux Mint can also run many programs designed for [[Microsoft Windows]] (such as [[Microsoft Office]]), through [[Wine (software)|Wine]] or using a Virtual Machine (such as [[VMware Workstation]] or [[VirtualBox]]).
+
+===Installation===
+Installation of Linux Mint is generally performed with the [[Live CD]].&lt;ref&gt;[http://www.happysysadm.com/2011/06/installing-linux-mint-11.html Happysysadm.com ''Installing Linux Mint'' ]&lt;/ref&gt; The Linux Mint OS can be run directly from the CD (albeit with a significant performance loss), allowing a user to &quot;test-drive&quot; the OS for hardware compatibility and driver support. The CD also contains the [[Ubiquity (software)|Ubiquity installer]], which then can guide the user through the permanent installation process. [[CD image]]s of all current and past versions are available for download at the Linux Mint web site.&lt;ref&gt;[http://www.linuxmint.com/oldreleases.php CD images of all current and past versions are available for download at the Linux Mint web site].&lt;/ref&gt; Installing from the CD requires a minimum of 512&amp;nbsp;MB [[Random Access Memory|RAM]].
+
+Users can download a disk image (.iso) of the CD, which can then either be written to a physical medium (CD or DVD), or optionally run directly from a hard drive (via [[UNetbootin]] or [[GRUB]]). The main edition of Linux Mint is available in 32 and 64-bit.
+
+Installation CDs can be purchased from 3rd party vendors.&lt;ref&gt;{{cite web|url=http://www.osdisc.com|title=OSDisc.com|year= 2010|accessdate= 12 May 2010}}&lt;/ref&gt;&lt;ref&gt;{{cite web|url=http://www.on-disk.com|title= On-Disk.com|year= 2010|accessdate= 12 May 2010}}&lt;/ref&gt;
+
+A [[Microsoft Windows]] migration tool, called Migration Assistant (introduced in April 2007), can be used to import bookmarks, [[Computer wallpaper|desktop background]] (wallpaper), and various settings from an existing MS Windows installation into a new Linux Mint installation.
+
+Linux Mint can be booted and run from a [[USB Flash drive]] (as long as the [[BIOS]] supports booting from USB), with the option of saving settings to the flashdrive. This allows a portable installation that can be run on any PC which is capable of booting from a USB drive. In newer versions of Linux Mint, the [[Ubuntu Live USB creator|USB creator]] program is available to install Linux Mint on a [[Live USB|USB drive]] (with or without a LiveCD disc).
+
+The Windows installer &quot;Mint4Win&quot;, which is based on [[Wubi (installer)|Wubi]], is included on the Live CD and allows Linux Mint to be installed from within Microsoft Windows. The operating system can then be removed similar to any other Windows software using the [[Control Panel (Windows)|Windows Control Panel]]. This method requires no [[disk partition|partitioning]] of a Windows user's [[hard drive]]. It is only useful for Windows users; it is not meant for permanent installations because it incurs a slight performance loss.
+
+==Package classification and support==
+Linux Mint divides its software repositories into four components to reflect differences in their nature and in their origin.
+
+*;main: component only includes software that is developed by Linux Mint.
+
+*;upstream: component includes software which is present in Ubuntu but patched or modified by Linux Mint. As a result, the software present in this component behaves differently in each distribution. Notable examples are Grub, Plymouth, Ubiquity, Xchat, USB Creator and Yelp (the help system).
+
+*;import: component includes software that is not available in Ubuntu or for which no recent versions are available in Ubuntu. Notable examples are Opera, Picasa, Skype, Songbird, the 64-bit Adobe Flash plugin and Frostwire.
+
+*;romeo: component is not enabled by default. It is used by Linux Mint to test packages before they are included in other components. As such it represents the unstable branch of Linux Mint.
+
+In addition to the above, there is a &quot;backport&quot; component in the Linux Mint repositories. This component is there to port newer software to older releases without affecting the other components. It is not enabled by default.
+
+==Releases==
+&lt;!--Keep the table short and tidy. If you want more information go to the main article for releases. Otherwise the table will get deleted again.--&gt;
+{| class=&quot;wikitable&quot; style=&quot;float:right; width:39%; margin-left:0.5em&quot;
+|-
+! Version !! Code name !! Release date
+|-
+| 1.0 || Ada || 2006-08-27
+|-
+| 2.0 || Barbara || 2006-11-13
+|-
+| 2.1 || Bea || 2006-12-20
+|-
+| 2.2 || Bianca || 2007-02-20
+|-
+| 3.0 || Cassandra || 2007-05-30
+|-
+| 3.1 || Celena || 2007-09-24
+|-
+| 4.0 || Daryna || 2007-10-15
+|-
+| 5 || Elyssa || 2008-06-08
+|-
+| 6 || Felicia || 2008-12-15
+|-
+| 7 || Gloria || 2009-05-26
+|-
+| 8 || Helena || 2009-11-28
+|-
+| 9 || Isadora || 2010-05-18&lt;ref&gt;{{cite web|url=http://www.linuxmint.com/blog/?p=1403|title= Linux Mint 9 &quot;Isadora&quot; released!|year= 2010|accessdate= 18 May 2010}}&lt;/ref&gt;
+|-
+| 10 || Julia || 2010-11-12&lt;ref&gt;{{cite web|url=http://blog.linuxmint.com/?p=1581|title= Linux Mint 10 &quot;Julia&quot; released!|year=2010|accessdate= 12 November 2010}}&lt;/ref&gt;
+|-
+| 11 || Katya || 2011-05-26&lt;ref&gt;{{cite web|url=http://blog.linuxmint.com/?p=1665|title= Linux Mint 11 &quot;Katya&quot;!|year=2011|accessdate= 22 February 2011}}&lt;/ref&gt;
+|-
+| 12 || Lisa || 2011-11-26&lt;ref&gt;{{cite web|url=http://blog.linuxmint.com/?p=1889|title= Linux Mint 12 &quot;Lisa&quot;!|year=2011|accessdate= 16 November2011}}&lt;/ref&gt;
+|}
+{{Main|List of Linux Mint releases}}
+
+There are two Linux Mint releases per year. Each release is given a new version number and a [[code name]], using a female first name starting with the letter whose alphabetical index corresponds to the version number and ending with the letter &quot;a&quot; (e.g., &quot;Elyssa&quot; for version 5, &quot;Felicia&quot; for version 6).
+
+Releases are timed to be approximately one month after Ubuntu releases (which in turn are about one month after Gnome releases and two months after [[X.Org Server|X.org]] releases). Consequently, every Linux Mint release comes with an updated version of both GNOME and X and features some of the improvements brought in the latest Ubuntu release. Selected releases (such as Linux Mint 5 and Linux Mint 9) are labeled as Long Term Support (LTS) versions, indicating that they are supported (with updates) for three years, as compared to the 18-month support period for other releases.
+
+The current release is Linux Mint 12 &quot;Lisa&quot;, released on 26 November 2011.
+
+==Editions==
+As of version 12, Linux Mint gives users the choice between [[GNOME|GNOME 3]] and a fork of [[GNOME|GNOME 2]] called [[Mate_(desktop_environment)|Mate]]&lt;ref&gt;{{cite web|title=New features in Linux Mint 12|url=http://www.linuxmint.com/rel_lisa_whatsnew.php#gnome3|work=Linux Mint Blog|accessdate=2 December 2011}}&lt;/ref&gt;  as their default desktop environment in the main release edition, with [[Ubuntu (operating system)|Ubuntu]] as its base. The following Ubuntu derived editions are also available:
+* [[KDE Software Compilation]] based on [[Kubuntu]]
+* [[LXDE]] Edition based on  [[Lubuntu]]
+Linux Mint Debian Edition uses straight [[Debian]] instead of Ubuntu. Its main release also uses the GNOME desktop environment.&lt;ref&gt;{{cite web|url=http://blog.linuxmint.com/?p=1527|title=Linux Mint Debian (201009) released on Tuesday, September 7th, 2010 @ 12:37 pm}}&lt;/ref&gt; Also available is an [[Xfce]] edition&lt;ref&gt;{{cite web|url=http://www.linuxmint.com/download_lmde.php|title=Download-Linux Mint}}&lt;/ref&gt;
+
+All editions of Linux Mint are available in both 32-bit and 64-bit.
+
+The distribution also provides an &quot;OEM Edition&quot;&lt;ref&gt;{{cite web|url=http://www.linuxmint.com/release.php?id=13|title=Editions for Linux Mint 9 &quot;Isadora&quot;|year= 2010|accessdate= 17 July 2010}}&lt;/ref&gt; (previously called the &quot;Universal Edition&quot;&lt;ref&gt;{{cite web|url=http://www.linuxmint.com/release.php?id=12|title=Editions for Linux Mint 8 &quot;Isadora&quot;|year= 2009|accessdate= 17 July 2010}}&lt;/ref&gt;) which is targeted at distributors and companies operating in countries where legislation allows for software patents (The USA, Japan and to a lesser extent, Australia and the UK) and does not include some patented technologies, such as DVD playback.
+
+Starting with Linux Mint 9 &quot;Isadora&quot;, the distribution provided Live CD, Live DVD, OEM and US/Japan installation images for its main edition in both 32-bit and 64-bit.
+
+On September 7, 2010, the Linux Mint Debian Edition was announced. The goal of this edition is to be as close to the main (GNOME) edition as possible, but based on Debian (as opposed to Ubuntu). Another notable difference is the [[rolling release]] distribution cycle. On April 6, 2011, the [[XFCE]] version of Mint Debian was released.
+
+==System requirements==
+Linux Mint currently supports the [[Intel x86]] and [[AMD64]] architectures.
+
+{| class=&quot;wikitable&quot; style=&quot;text-align:center;&quot;
+|-
+!
+! Minimum
+! Recommended
+|-
+![[Central processing unit|Processor]] ([[IA-32|x86]])
+| 600&amp;nbsp;[[Hertz|MHz]]
+| 1&amp;nbsp;GHz
+|-
+![[RAM|Memory]]
+| 256&amp;nbsp;[[Megabyte|MB]]
+| 512&amp;nbsp;MB
+|-
+![[Hard disk drive|Hard Drive]] (free space)
+| 5&amp;nbsp;[[Gigabyte|GB]]
+| 10&amp;nbsp;GB
+|-
+![[Computer monitor|Monitor]] [[Display resolution|Resolution]]
+| 800Ã600
+| 1024Ã768
+|}
+
+Note: If [[Compositing window manager|visual effects]] are desired, a supported [[Graphics processing unit|GPU]] is required.
+
+Installation does '''not''' support [[Logical Volume Manager (Linux)|LVM]] or [[disk encryption]].
+
+==Development==
+Linux Mint relies on user feedback to make decisions and orient its development. The official blog often features discussions where users are asked to voice their opinion about the latest features or decisions implemented for upcoming releases. Ideas can be submitted, commented and rated by users via the Linux Mint Community Website.&lt;ref&gt;{{cite web|url=http://community.linuxmint.com/idea|title=Linux Mint Community Website - Idea module|year= 2010|accessdate= 12 May 2010}}&lt;/ref&gt;
+
+The community of Linux Mint users use [[Launchpad (website) | Launchpad]] to participate in translating the operating system and in reporting bugs..&lt;ref&gt;{{cite web|url=https://launchpad.net/linuxmint|title=Linux Mint on Launchpad|year= 2010|accessdate= 12 May 2010}}&lt;/ref&gt;
+
+Most extraneous development is done in Python and organized on-line on GitHub.com, making it easy for developers to provide patches, to implement additional features or even to fork Linux Mint sub-projects (for example The Linux Mint menu was ported to [[Fedora (operating system)|Fedora]]). With each release, features are added that are developed by the community. In Linux Mint 9 for instance, the ability to edit menu items is a feature that was contributed by a Linux Mint user.&lt;ref&gt;{{cite web|url=http://github.com/linuxmint/mintmenu/commit/5f419d81f72eda682a3f1591d56e432f7ba92939|title= Example of a user-contributed feature|year= 2010|accessdate= 12 May 2010}}&lt;/ref&gt;
+
+The members of the development team are spread around the World and they communicate through private forums, emails and IRC.
+
+Linux Mint reviews are tracked by the distribution and discussed by the development team and the community of users.&lt;ref&gt;{{cite web|url=http://www.linuxmint.com/reviews.php|title=Linux Mint reviews and discussions page|year= 2010|accessdate= 12 May 2010}}&lt;/ref&gt;
+
+===Development team===
+
+Linux Mint is developed and maintained by the following people:
+
+* Clement Lefebvre - Founder, project leader, developer and maintainer of the Main, Universal and x64 editions
+* Don Cosner - Release manager and internal tester
+* Jamie Boo Birse - Maintainer of the KDE edition
+* merlwiz79 - Maintainer of the Xfce edition
+* Shane Joe Lazar - Maintainer of the Fluxbox edition (for versions 5 and 6 of Mint)
+* Kendall Weaver - Maintainer of the Fluxbox and LXDE editions (version 8)
+
+Ikey Doherty was the original developer and maintainer of the Debian edition. But left the project for personal reasons.
+
+A full listing is available on the distribution's website: http://www.linuxmint.com/teams.php, http://www.linuxmint.com/about.php
+
+===Software developed by Linux Mint===
+
+[[Image:Mintupdate.png|thumb|The Linux Mint Update Manager.]]
+[[Image:Mint-Software-Manager.png|thumb|The Linux Mint Software Manager allows users to view and install programs from the Software Portal directly from their desktop.]]
+
+Linux Mint actively develops software for its operating system. Most of the development is done in Python and the source code is available on GitHub.&lt;ref&gt;{{cite web|url=http://www.github.com/linuxmint |title=The Linux Mint GitHub repository |accessdate=2010-05-12}}&lt;/ref&gt;
+
+* '''Software Manager''': Lets you run .mint files, which are files containing instructions to install packages. As of Linux Mint 6, this tool has been revamped, and now lets you view all the applications on the Mint Software Portal offline, provided you have an Internet connection to download the information first. Also allows you to install any of the programs listed directly from the desktop, instead of going to the site. The option to use the old MintInstall program is available, where you can go to the Ubuntu Repositories or the Getdeb.net website from a search.
+* '''Update Manager''': Designed to prevent inexperienced users from installing updates that are unnecessary or require a certain level of knowledge to configure properly. It assigns updates a safety-level (from 1 to 5), based on the stability and necessity of the update. Updates can be set to notify users (as is normal), be listed but not notify, or be hidden by default. In addition to including updates specifically for the Linux Mint [[Linux distribution|distribution]], the development team tests all package-wide updates.
+* '''Main Menu''' (MintMenu): An advanced menu, featuring filtering, installation and removal of software, system and places links, favorites, session management, editable items, custom places and many configuration options. Also ported to MATE in Linux Mint 12 (Lisa).&lt;ref&gt;{{cite web |url=http://blog.linuxmint.com/?p=1875 |title=Misc. News |accessdate=20 November 2011}}&lt;/ref&gt;
+* '''Backup tool''': Lets you backup and restore your files, your settings and your software selection to easily upgrade to newer releases by performing fresh installations.
+* '''Upload Manager''': Lets you define upload services for [[FTP]], [[SSH File Transfer Protocol|SFTP]] and [[Secure copy|SCP]] servers. Services are then available in the system tray and provide zones where you can drag and drop files for them to be automatically uploaded to their corresponding destinations.
+* '''Domain Blocker''': A basic domain blocking parental control tool. Lets you manually add domains to be blocked system wide. This tool was introduced with the release of Linux Mint 6.
+* '''Desktop Settings''': A desktop configuration tool for easy configuration of the Gnome desktop.
+* '''Welcome screen''': Introduced in Linux Mint 7, an application that starts on the first login of any new account. It shows a dialogue window welcoming the user to Linux Mint, and providing links to the Linux Mint website, user guide and community website.
+* '''Mint Gnome Shell Extensions''' (MGSE): A desktop layer on top of GNOME 3 to make it feel like GNOME 2. Includes a bottom panel, an application menu, the window list, task-centric desktop (i.e. switches between windows, not applications) and system tray icons. It is designed to give users a traditional desktop environment. This is included in Linux Mint from version 12 (Lisa) onwards &lt;ref&gt;http://blog.linuxmint.com/?p=1851&lt;/ref&gt;&lt;ref&gt;{{cite web |url=http://www.linuxmint.com/rel_lisa_whatsnew.php#gnome3 |title=New features in Linux Mint 12 |accessdate=13 November 2011}}&lt;/ref&gt;
+
+==Popularity==
+As of the second half of 2011, Linux Mint's website has had the most hits among popular Linux distribution websites according to [[DistroWatch]].&lt;ref&gt;{{cite web|url=http://distrowatch.com/stats.php?section=popularity|title=Linux Distributions - Facts and Figures|publisher=distrowatch.com|accessdate=09 November 2011}}&lt;/ref&gt;
+
+==Comparison with Ubuntu==
+=== Debian Edition ===
+Linux Mint released a [[Debian]] Edition (LMDE) on September 7, 2010, in addition to its other, [[Ubuntu (operating system)|Ubuntu]]-based editions. Unlike Mint's Ubuntu-based editions, LMDE is based directly on Debian-testing (as opposed to Ubuntu) and retains a [[rolling release]] schedule as done by Debian-testing. The last releases of Debian Mint were on September 17, 2011 for GNOME 3 and Xfce.&lt;ref&gt;http://www.linuxmint.com/rel_debian_whatsnew.php&lt;/ref&gt;
+
+LMDE is shipped in versions with both a [[GNOME]] and an [[Xfce]] desktop, and is available for both 32 bit and 64 bit architectures.&lt;ref&gt;http://blog.linuxmint.com/?p=1527&lt;/ref&gt;&lt;ref&gt;http://www.linuxmint.com/download_lmde.php&lt;/ref&gt;
+
+=== Ubuntu-based editions ===
+Linux Mint's Ubuntu-based editions have much in common with their parent Ubuntu releases, from the  [[Computer software|software]] repositories of which they build.&lt;ref name=&quot;aboutmint&quot;&gt;{{cite web |url=http://www.linuxmint.com/about.php |title=About |publisher=Linux Mint |date=2007-09-24 |accessdate=2009-07-16}}&lt;/ref&gt; For instance, release 6 (&quot;Felicia&quot;) uses the package pools of Ubuntu 8.10 (&quot;Intrepid Ibex&quot;).&lt;ref&gt;{{cite web|url=http://www.linuxmint.com/blog/?p=560 |title=The Linux Mint Blog Â» Blog Archive Â» Mint 6 Review: Dedoimedo |publisher=Linuxmint.com |date=2009-01-19 |accessdate=2009-07-16}}&lt;/ref&gt;
+
+Linux Mint has a stated focus on elegance, and it includes a number of applications that are not available in Ubuntu, and vice versa.  Mint has a number of design differences from Ubuntu, including:
+
+* A distinct user interface, including a custom main menu.
+* A different approach to update management.
+* A collection of system applications designed to make system management and administration easier for end users.
+* A different software selection installed by default and a number of differences in the configuration of the system.
+* A shell extension for GNOME 3 is available to allow a desktop environment similar to GNOME 2.&lt;ref&gt;{{cite web|url=http://www.linuxmint.com/rel_lisa_whatsnew.php#gnome3|title=New features in Linux Mint 12|accessdate=20 November 2011}}&lt;/ref&gt;
+* MATE (fork of GNOME 2.x) is available from Mint Lisa (12) onwards.&lt;ref&gt;{{cite web|url=http://www.linuxmint.com/rel_lisa_whatsnew.php#mate|title=New features in Linux Mint 12|accessdate=20 November 2011}}&lt;/ref&gt;
+
+The Main version of Linux Mint has often been cited as a better beginner's Linux distribution than Ubuntu, due to the out-of-box readiness created by its default application choices and inclusion of restricted [[codec]]s (such as MP3 support and Flash).&lt;ref name=&quot;Lifehacker&quot;&gt;{{cite web|url=http://lifehacker.com/5469575/why-linux-mint-might-be-a-better-beginners-linux-than-ubuntu|title=Why Linux Mint Might Be a Better Beginner's Linux Than Ubuntu|last=Purdy|first=Kevin|date=11 February 2010|publisher=Lifehacker|accessdate=22 April 2010}}&lt;/ref&gt;
+
+From a project point of view, the main differences are:
+
+* Unlike Ubuntu, Linux Mint does not communicate release dates. Releases are announced &quot;when ready&quot;; they can be released early when the distribution is ahead of schedule or late when critical bugs are found.
+* Unlike Ubuntu, the philosophy of the Linux Mint project is compatible with the use of proprietary software. Linux Mint favors Open Source technology but also considers proprietary alternatives, the user experience of the desktop being the main concern with licensing coming second. For instance, most editions of Linux Mint come with Adobe's Flash plug-in installed by default.
+* Ubuntu and Linux Mint adopt radically different update strategies. Ubuntu recommends its users update all packages and upgrade to newer versions using an APT-based upgrade method. Resulting problems and regressions are regarded as temporary issues that can be fixed by further updates. In comparison, Linux Mint recommends not to update packages that can affect the stability of the system and recommends the use of its Backup Tool and fresh installations to upgrade computers to newer releases.&lt;ref&gt;{{cite web|url=http://community.linuxmint.com/tutorial/view/2|title=Recommended way to upgrade Linux Mint|accessdate=2010-05-12}}&lt;/ref&gt;
+*Linux Mint is completely community driven, while Ubuntu takes input from both its community and its parent company, [[Canonical Ltd.|Canonical]].
+
+==See also==
+{{Portal box|Free software|Linux}}
+* [[List of Linux distributions]]
+* [[List of Linux Mint releases]]
+
+==References==
+{{Reflist|colwidth=30em}}
+
+==External links==
+{{Commons}}
+* {{Official website|http://www.linuxmint.com/}}
+* {{DistroWatch|mint|NAME=Linux Mint}}
+
+{{LXDE}}
+{{Linux distributions}}
+
+[[Category:Ubuntu (operating system) derivatives]]
+[[Category:Debian-based distributions]]
+
+[[af:Linux mint]]
+[[ar:ÙÙÙÙØ³ ÙÙÙØª]]
+[[bn:à¦²à¦¿à¦¨à¦¾à¦à§à¦¸ à¦®à¦¿à¦¨à§à¦]]
+[[be:Mint]]
+[[be-x-old:Linux Mint]]
+[[bg:Linux Mint]]
+[[bs:Linux Mint]]
+[[ca:Linux Mint]]
+[[cs:Linux Mint]]
+[[da:Linux Mint]]
+[[de:Linux Mint]]
+[[el:Linux Mint]]
+[[es:Linux Mint]]
+[[eo:Linukso Mint]]
+[[fa:ÙÛÙÙÚ©Ø³ ÙÛÙØª]]
+[[fr:Linux Mint]]
+[[ga:Linux mint]]
+[[ko:ë¦¬ëì¤ ë¯¼í¸]]
+[[hi:à¤²à¤¿à¤¨à¤à¥à¤¸ à¤®à¤¿à¤£à¥à¤]]
+[[hr:Linux Mint]]
+[[id:Linux Mint]]
+[[ia:Linux Mint]]
+[[it:Linux Mint]]
+[[he:××× ××§×¡ ××× ×]]
+[[lt:Linux Mint]]
+[[hu:Linux Mint]]
+[[ml:à´²à´¿à´¨à´àµà´¸àµ à´®à´¿à´¨àµà´±àµ]]
+[[nl:Linux Mint]]
+[[ja:Linux Mint]]
+[[no:Linux Mint]]
+[[pl:Linux Mint]]
+[[pt:Linux Mint]]
+[[ro:Linux Mint]]
+[[rm:Linux Mint]]
+[[ru:Linux Mint]]
+[[scn:Linux Mint]]
+[[simple:Linux Mint]]
+[[sk:Linux Mint]]
+[[sr:Linux Mint]]
+[[fi:Linux Mint]]
+[[sv:Linux Mint]]
+[[te:à°²à°¿à°¨à°à±à°¸à± à°®à°¿à°à°à±]]
+[[tr:Linux Mint]]
+[[uk:Linux Mint]]
+[[vi:Linux Mint]]
+[[zh:Linux Mint]]</rev></revisions></page></pages></query></api>

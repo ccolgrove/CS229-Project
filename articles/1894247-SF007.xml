@@ -1,0 +1,316 @@
+<?xml version="1.0"?><api><query><pages><page pageid="1894247" ns="0" title="Apache Harmony"><revisions><rev xml:space="preserve">{{Infobox software
+| name                   = Apache Harmony
+| logo                   =
+| screenshot             =
+| caption                =
+| collapsible            = yes
+| developer              = [[Apache Software Foundation]]
+| status                 = Discontinued&lt;ref&gt;{{cite news |url=http://www.h-online.com/open/news/item/The-end-of-Apache-Harmony-1371819.html |title=The end of (Apache) Harmony |publisher=The H |date=4 November 2011}}&lt;/ref&gt;
+| latest release version = 5.0M15&lt;br/&gt;6.0M3
+| latest release date    = {{Start date and age|2010|09|15}}
+| latest preview version =
+| latest preview date    =
+| operating system       = [[Microsoft Windows|Windows]], [[Linux]]
+| programming language   = [[C++]], [[Java (programming language)|Java]]
+| genre                  = [[Java Virtual Machine]], Java [[Library (computer science)|Library]]
+| license                = [[Apache License]] 2.0
+| website                = {{URL|harmony.apache.org}}
+}}
+'''Apache Harmony''' was an [[open source]], [[free Java implementations|free Java implementation]], developed by the [[Apache Software Foundation]]&lt;ref&gt;{{cite web
+| url=http://harmony.apache.org/faq.html
+| title=Original FAQ Questions from Project Launch
+| publisher=harmony.apache.org
+|quote=''We are starting with Java SE 5, as that is the first version of Java SE for which the licensing allows an open source implementation, but we'll continue with Java SE 6 and any subsequent versions that follow.''
+| accessdate=2011-02-27}}&lt;/ref&gt;. It was announced in early May 2005 and on October 25, 2006, the Board of Directors voted to make Apache Harmony a top-level project. The Harmony project achieved (as of February 2011)  99% completeness for [[J2SE 5.0|JDK 5.0]], and 97% for [[Java SE 6]].&lt;ref name=&quot;completeness&quot;&gt;{{cite web
+| url=http://harmony.apache.org/subcomponents/classlibrary/status.html
+| title=Class Library Component Status
+| publisher=harmony.apache.org
+| accessdate=2011-02-27}}&lt;/ref&gt;
+
+In 2011-10-29 a vote was started by the project lead Tim Ellison whether to retire the project. The outcome was 20:2 in favor&lt;ref name=&quot;atticproposal&quot;&gt;{{cite web |url=http://mail-archives.apache.org/mod_mbox/harmony-dev/201111.mbox/browser |title=Move Apache Harmony to the Attic (updated)|first=Tim |last=Ellison |publisher=org.apache.harmony.dev |date=2011-11-03}}&lt;/ref&gt;, and the project was retired on November 16, 2011&lt;ref name=&quot;retired&quot;&gt;{{cite web |url=http://mail-archives.apache.org/mod_mbox/harmony-dev/201111.mbox/browser |title=Board accepted attic resolution |first=Tim |last=Ellison |publisher=org.apache.harmony.dev |date=2011-11-16|accessdate=2011-11-27}}&lt;/ref&gt;.
+
+== History ==
+=== Initiation ===
+The Harmony project was initially conceived as an effort to unite all developers of the [[free Java implementations]]. Many [[software developer|developers]] expected that it would be the project above the [[GNU]], [[Apache Software Foundation|Apache]] and other communities. GNU developers were invited into and participated during the initial, preparatory planning.&lt;ref&gt;{{cite web| url=http://article.gmane.org/gmane.comp.java.classpath.devel/5521| title=Harmony!| author=Mark Wielaard| date=2005-05-09| quote=''Apache has setup a proposal for discussion around a full free j2se implementation. Which they call &quot;Harmony&quot;. This is (at the moment) not about code, but about finding out a direction for getting to such a beast. Dalibor, Tom, Jeroen and I were asked to help them in that discussion and possibly show them how to setup a good architecture for it.''}}&lt;/ref&gt;
+
+=== Incompatibility with GNU Classpath ===
+Despite the impression given by the preparatory planning, it was decided not to use the code from [[GNU Classpath]], and that Harmony would use an incompatible license; therefore blocking the collaboration between Harmony and existing free Java projects.&lt;ref&gt;{{cite web| url=http://lwn.net/Articles/135111/| title=A proposal for a free Java implementation| author=Geir Magnusson Jr.| date=2006-05-24| publisher=[[Apache Software Foundation|Apache]]}}&lt;/ref&gt; Apache developers would then [[rewrite (programming)|write the needed classes from scratch]] and expect necessary large code donations from [[software company|software companies]]. Various misunderstandings at the start of the project, and the fact that major companies like [[IBM]] proposed to give large amount of existing code, created some confusion in the free Java community about the real objectives of the project.&lt;ref name=&quot;towardfree&quot;&gt;{{cite web| url=http://lwn.net/Articles/184967/| title=Toward a free Java| author=Mark Wielaard| date=2006-05-24| publisher=[[LWN.net]]|quote=''All this means that, despite the fact that there is now some code available donated by Intel, there is no practical cooperation between the original free software projects backing Harmony and the project now known as Apache Harmony. All this made some people think of Harmony as a company consortium in the guise of an ASF project and not a full community project.''}}&lt;/ref&gt;
+
+One major point of incompatibility between the GNU Classpath and Apache Harmony projects was their incompatible licenses: Classpath's [[GNU General Public License]] with the [[GPL linking exception|linking exception]] versus Harmony's [[Apache License]].&lt;ref name=towardfree/&gt;
+
+===Difficulties to obtain a TCK license from Sun===
+{{See also|Technology Compatibility Kit}}
+
+On April 10, 2007, the [[Apache Software Foundation]] sent a letter to [[Sun Microsystems]] [[Chief executive officer|CEO]], [[Jonathan I. Schwartz|Jonathan Schwartz]] regarding their inability to acquire an acceptable license for the Java SE 5 [[Technology Compatibility Kit]] (TCK), a test kit needed by the project to demonstrate compatibility with the Java SE 5 specification, as needed by the [[Sun Microsystems|Sun]] specification license for Java SE 5.&lt;ref&gt;[http://www.apache.org/jcp/sunopenletter.html Open Letter to Sun Microsystems]&lt;/ref&gt; What makes the license unacceptable for [[Apache Software Foundation|ASF]] is the fact that it imposes rights restrictions through limits on the &quot;field of use&quot; available to users of Harmony, not compliant with the [[Java Community Process]] rules.&lt;ref&gt;According to ASF, 1) a specification lead cannot ''impose any contractual condition or covenant that would limit or restrict the right of any licensee to create or distribute such Independent Implementations'' (section 5.C.III), and 2) ''a specification lead must license all necessary IP royalty-free to any compatible implementation of a specification'' (section 5.B).&lt;/ref&gt;
+
+Sun answered on a company blog [http://blogs.sun.com/ontherecord/][http://java.sys-con.com/read/360602.htm] that it intended to create an open source implementation of the Java platform under [[GPL]], including the TCK, but that their current priority was to make the [[Java (software platform)|Java Platform]] accessible to the [[Linux|GNU/Linux]] community under [[GPL]] as quickly as possible.
+
+This answer triggered some reactions, either criticizing [[Sun Microsystems|Sun]] for not responding &quot;in a sufficiently open manner&quot; to an open letter [http://ianskerrett.wordpress.com/2007/04/16/the-silence-from-an-open-sun/], or rather [[Apache Software Foundation]]; some think that ASF acted unwisely to aggressively demand something they could have obtained with more diplomacy from Sun, especially considering the timescale of the opening class library.[http://gnu.wildebeest.org/diary/2007/04/21/openjck/] &lt;ref&gt;{{cite web
+| url=http://jroller.com/page/dgilbert?entry=five_reasons_why_apache_will
+| title=Five Reasons Why Apache Will Regret That Open Letter
+| last=Gilbert|first=Dave
+| date=2007-04-16
+| accessdate=2008-03-08}}&lt;/ref&gt;
+
+Since Sun's release of [[OpenJDK]], [[Sun Microsystems|Sun]] has released a specific license to allow to run the TCK in the OpenJDK context for any [[GNU General Public License|GPL]] implementation deriving substantially from OpenJDK.&lt;ref&gt;{{cite web
+| url=http://openjdk.java.net/legal/openjdk-tck-license.pdf
+| title=OpenJDK Community TCK License Agreement V 1.1
+| publisher=[[Sun Microsystems]]
+|quote=''Subject to and conditioned upon its Licensee Implementation being substantially derived from OpenJDK Code and, if such Implementation has or is to be distributed to a third party, its being distributed under the GPL License, Sun hereby grants to Licensee, to the extent of Sun's Intellectual Property Rights in the TCK, a worldwide, personal, non-exclusive, non-transferable, limited license to use the TCK internally and solely for the purpose of developing and testing Licensee Implementation.''
+| accessdate=2008-03-08|format=PDF}}&lt;/ref&gt;
+
+On December 9, 2010, the Apache Software Foundation resigned from the Java Community Process Executive Committee,&lt;ref&gt;{{cite web | url=https://blogs.apache.org/foundation/entry/the_asf_resigns_from_the | title=The ASF Resigns From the JCP Executive Committee | publisher=Apache Software Foundation}}&lt;/ref&gt; in protest over the difficulty in obtaining a license acceptable to Apache for use with the Harmony project.&lt;ref&gt;{{Cite web | url=http://arstechnica.com/open-source/news/2010/12/apache-resigns-from-jcp-in-protest-of-oracle-governance-failures.ars | title=Apache quits Java governance group in protest of Oracle abuses | publisher=Ars Technica }}&lt;/ref&gt;
+
+===Use in Android SDK===
+[[Dalvik virtual machine|Dalvik]], the Virtual Machine used in [[Google]]'s [[Android (operating system)|Android]] platform, uses a subset of Harmony for the core of its [[Java Class Library|Class Library]].&lt;ref&gt;{{cite web
+| url=http://www.infoq.com/news/2007/11/android-java
+| title=Google's Android SDK Bypasses Java ME in Favor of Java Lite and Apache Harmon
+| publisher=infoq.com
+| date=2007-11-12
+| quote=''Instead of providing a full version of the Java SE or Java ME Google has diverged on two fronts. First, a limited subset of the core Java packages is provided. (...) By going this route Android is following in the footsteps of another Google project GWT which uses Java as its development language but does not support the full JDK.''
+| accessdate=2009-05-31}}&lt;/ref&gt; However, Dalvik does not align to [[Java Platform, Standard Edition|Java SE]] nor [[Java Platform, Micro Edition|Java ME]] [[Java Class Library|Class Library]] profiles (for example [[Java Platform, Micro Edition|J2ME]] classes, [[Abstract Window Toolkit|AWT]] and [[Swing (Java)|Swing]] are not supported). Instead it uses its own library,&lt;ref&gt;{{cite web
+| url=http://developer.android.com/reference/packages.html
+| title=Package Index
+| publisher=[[Open Handset Alliance]]
+| accessdate=2009-05-31}}&lt;/ref&gt; built on a subset of Harmony.
+
+===Disengagement from IBM===
+On 11 October 2010, [[IBM]], by far the biggest participant in the project, decided to join [[Oracle Corporation|Oracle]] on the [[OpenJDK]] project, effectively shifting its efforts from Harmony to the [[Oracle Corporation|Oracle]] reference implementation.&lt;ref&gt;{{cite web
+| url=http://www.marketwire.com/press-release/Oracle-and-IBM-Collaborate-to-Accelerate-Java-Innovation-Through-OpenJDK-NASDAQ-ORCL-1332855.htm
+| title=Oracle and IBM Collaborate to Accelerate Java Innovation Through OpenJDK
+| publisher=[[Oracle Corporation]]
+| accessdate=2010-10-22}}&lt;/ref&gt;&lt;ref&gt;{{cite web
+| url=http://arstechnica.com/open-source/news/2010/10/ibm-joins-openjdk-as-oracle-shuns-apache-harmony.ars
+| title=Java wars: IBM joins OpenJDK as Oracle shuns Apache Harmony
+|author=Ryan Paul
+| publisher=[[Ars Technica]]
+| accessdate=2010-10-22}}&lt;/ref&gt; Bob Sutor, IBM's head of Linux and open source, blogged that &quot;IBM will be shifting its development effort from the Apache Project Harmony to OpenJDK&quot;.&lt;ref&gt;{{cite web
+| url=http://www.sutor.com/c/2010/10/ibm-joins-the-openjdk-community/
+| title=IBM joins the OpenJDK community, will help unify open source Java efforts
+|author=Bob Sutor
+|quote=''IBM will be shifting its development effort from the Apache Project Harmony to OpenJDK. For others who wish to do the same, weâll work together to make the transition as easy as possible. IBM will still be vigorously involved in other Apache projects.''
+| accessdate=2010-10-22}}&lt;/ref&gt;
+
+On March 2011, [[IBM]]'s Tim Ellison, announced that he resigned as Project Management Chair for Harmony, a move which brings questions about the future of the project.&lt;ref&gt;{{cite web
+| url=http://harmony.markmail.org/message/ah5f42h4p2bhub6o
+| title=Rebooting the Harmony project
+| author=Tim Ellison
+| date=2011-03-14
+| accessdate=2011-03-20}}&lt;/ref&gt;&lt;ref&gt;{{cite web
+| url=http://www.infoq.com/news/2011/03/apache-harmony
+| title=What is the Future of Apache Harmony?
+| publisher=infoq.com
+| date=2011-03-14
+| accessdate=2011-03-20}}&lt;/ref&gt;. Since the beginning of 2011, there has been almost no more development on the project, nor discussions on the mailing list&lt;ref&gt;{{cite web
+| url=http://mail-archives.apache.org/mod_mbox/harmony-dev/
+| title=Mailing list archives: dev@harmony.apache.org
+| publisher=apache.org
+| accessdate=2011-09-11}}&lt;/ref&gt;.
+
+===End of the project===
+In 2011-10-29 a vote was started by the project lead Tim Ellison whether to retire the project. The outcome was 20:2 in favor&lt;ref name=&quot;atticproposal&quot; /&gt;, and the project was retired on November 16, 2011&lt;ref name=&quot;retired&quot; /&gt;.
+
+== Development team ==
+At the start, Apache Harmony received some large code contributions from several companies. Development discussions have taken place on open mailing lists.  Later, the Apache Software foundation mentors put a lot of effort
+into bringing the development process more in line with &quot;the Apache way,&quot;&lt;ref&gt;{{cite web| url=http://article.gmane.org/gmane.comp.java.harmony.devel/10742| title=We would like all the development to happen right here|author=Leo Simons| date=2006-07-24}}&lt;/ref&gt;&lt;ref&gt;{{cite web| url=http://incubator.apache.org/learn/theapacheway.html| title=The Apache Way}}&lt;/ref&gt; and it seems that their efforts were successful. On November 1, 2006, the current team of committers consisted of 16 developers, 12 of them from IBM and Intel.&lt;ref&gt;{{cite web| url=http://incubator.apache.org/harmony/contributors.html| title=List of Apache Harmony Committers}}&lt;/ref&gt;
+
+== Last development status ==
+Apache Harmony was accepted among the official Apache projects on 29 October 2006.
+
+=== Architecture ===
+&lt;!--  Commented out because image was deleted: [[Image:DRL structure.gif|300px|thumb|Major Dynamic Runtime Layer Components and their interfaces]] --&gt;
+The Dynamic Runtime Layer virtual machine consists of the following components:
+
+#'''The VM core:''' with its subcomponents concentrates most of the JVM control functions.
+#'''The porting layer''': hides platform-specific details from other VM components behind a single interface and is based on the [[Apache Portable Runtime]] layer.
+#'''The [[garbage collection (computer science)|garbage collector]]''': allocates Java objects in the heap memory and reclaims unreachable objects using various algorithms
+#'''Execution Manager''': selects the execution engine for compiling a method, handles profiles and the dynamic recompilation logic.
+#'''Class Library''':  is a Java standard library.
+#'''The thread manager''' that handle operating system threading
+#'''The execution engine:''' consists of the following:
+##The [[just-in-time compiler]] for compilation and execution of method code.
+##The [[interpreter (computing)|interpreter]] for easier debugging.
+
+===Support platform and operating system===
+The project provided a portable implementation that ease development on many platforms and operating systems. The main focus was on [[Microsoft Windows|Windows]] and [[Linux]] operating systems on x86 and x86-64 architectures.&lt;ref&gt;[http://harmony.apache.org/supported_platforms.html Apache Harmony supported platforms and operating systems]&lt;/ref&gt;
+{| class=&quot;wikitable&quot;
+|-
+!
+! [[Windows 2000]]
+! [[Microsoft Windows|Windows]] [[Windows XP|XP]], [[Windows Server 2003|Server 2003]], [[Windows Vista|Vista]]
+! [[Linux]] [[RHEL]], [[SUSE Linux Enterprise Server|SLES]], [[Debian]], [[Gentoo Linux|Gentoo]], [[Fedora (operating system)|Fedora]]
+! [[FreeBSD]]
+! [[AIX]]
+! [[Mac OS X]]
+|-
+| '''[[IA-32]] (Pentium III or better)'''
+| {{No}}
+| {{Yes}}
+| {{Yes}}
+| {{No}}
+| {{n/a}}
+| {{n/a}}
+|-
+| '''[[x86-64]] (Intel 64, AMD64)'''
+| {{n/a}}
+| {{Yes}}
+| {{Yes}}
+| {{n/a}}
+| {{n/a}}
+| {{n/a}}
+|-
+| '''[[Itanium]] (IA64, IPF)'''
+| {{n/a}}
+| {{No}}
+| {{Yes}}
+| {{n/a}}
+| {{n/a}}
+| {{n/a}}
+|-
+| '''[[PowerPC|PowerPC 32-bit]]'''
+| {{n/a}}
+| {{n/a}}
+| {{No}}
+| {{n/a}}
+| {{n/a}}
+| {{n/a}}
+|-
+| '''[[ppc64|PowerPC 64-bit]]'''
+| {{n/a}}
+| {{n/a}}
+| {{No}}
+| {{n/a}}
+| {{No}}
+| {{n/a}}
+|-
+| '''[[IBM System z|zSeries]] 31-bit'''
+| {{n/a}}
+| {{n/a}}
+| {{No}}
+| {{n/a}}
+| {{n/a}}
+| {{n/a}}
+|}
+
+=== Class library coverage ===
+
+The expected donations from software companies were actually received. The Apache Harmony now contains the working code, including the [[Swing (Java)|Swing]], [[Abstract Window Toolkit|AWT]] and [[Java 2D]] code which were contributed by [[Intel]].
+
+The Harmony project currently achieve (as of February 2011)  99% completeness for [[J2SE 5.0|JDK 5.0]], and 97% for [[Java SE 6]].&lt;ref name=completeness/&gt;
+
+The progress of the Apache Harmony project can be tracked against J2SE 1.4 and Java SE 5.0.&lt;ref&gt;[http://people.apache.org/~chunrong/latest-harmony-japi.html Apache Harmony Library Coverage against Java SE 5.0]&lt;/ref&gt; Also, there is a branch for Harmony v6.0 in development for Java SE 6.0.
+
+Apache Harmony developers integrate several existing, field-tested open-source projects to meet their goal (not [[reinventing the wheel]]). Many of these projects are mature and well known and other parts of the library needed to be written from scratch.
+
+This is a list of existing open source components that are used in the Apache Harmony project; some of them were in use before the project started.
+
+{| class=&quot;wikitable&quot;
+! Component
+! Description
+|-
+| [[International Components for Unicode|ICU]]
+| Mature C/C++ and Java libraries for [[Unicode]] support, software [[internationalization]] and software [[globalization]]
+|-
+| [[Apache Xalan]]
+| [[XSLT]] stylesheet processor for [[Java (programming language)|Java]], [[C++]] which implements [[XPath]] language
+|-
+| [[Apache Xerces]]
+| [[XML parser]] library for Java, C++, [[Perl]]
+|-
+| [[Apache Portable Runtime]]
+| [[Cross-platform]] abstraction library, provides platform independence
+|-
+| [[Apache CXF]]
+| Robust, high performance [[Web service]]s framework work over protocols such as [[SOAP]], XML/HTTP, [[Representational State Transfer|RESTful]] HTTP, [[CORBA]]
+|-
+| [[Byte Code Engineering Library|BCEL]]
+| Libraries to decompose, modify, and recompose binary Java classes, i.e., [[bytecode]]
+|-
+| [[MX4J]]
+| [[Java Management Extensions]] (JMX) tools to manage and monitor applications, system objects, devices and service oriented networks
+|-
+| [[Jikes RVM#VM Magic|VM Magic]]
+| Set of extensions to Java language to facilitate systems programming in Java by adding direct memory operations, etc.
+|-
+| [[Bouncy Castle (cryptography)|Bouncy Castle]]
+| Libraries collection of lightweight cryptography for Java and [[C Sharp (programming language)|C#]]
+|-
+| [[ANTLR]]
+| Language tool, provides a framework to construct recognizers, interpreters, compilers, and translators from grammatical descriptions containing actions in many target languages
+|}
+
+=== Documentation ===
+Harmony is currently less documented than the alternative free Java implementations. For instance, in GNU Classpath every method of the central [[CORBA]] class (ORB) has the explaining comment both in the standard abstract API class [http://cvs.savannah.gnu.org/viewcvs/*checkout*/classpath/org/omg/CORBA/ORB.java?rev=1.2.2.12&amp;root=classpath] and implementation [http://cvs.savannah.gnu.org/viewcvs/*checkout*/classpath/gnu/CORBA/OrbFunctional.java?rev=1.6&amp;root=classpath]. In the [http://incubator.apache.org/yoko/ Yoko] project, used by Harmony,[http://www.mail-archive.com/yoko-dev@incubator.apache.org/msg01428.html] most methods both in the standard declaration [http://svn.apache.org/repos/asf/incubator/yoko/trunk/yoko-spec-corba/src/main/java/org/omg/CORBA/ORB.java] and implementing class [http://svn.apache.org/repos/asf/incubator/yoko/trunk/core/src/main/java/org/apache/yoko/orb/OBCORBA/ORB_impl.java] were undocumented at the end of October, 2006. Also, GNU Classpath supported both older and current CORBA features (same as Sun's implementation). Harmony, differently, left the central method of the older standard (ORB.connect(Object)) fully unimplemented.
+
+=== Tools ===
+A complete implementation of the Java platform also needs a [[compiler]] that translates Java source code into [[bytecode]]s, a program that manages [[JAR (file format)|JAR files]], a [[debugger]], and an [[applet]] viewer and [[web browser]] [[Plug-in (computing)|plugin]], to name a few. Harmony currently has the compiler, appletviewer, jarsigner, javah, javap, keytool, policytool, and unpack200 [http://incubator.apache.org/harmony/roadmap.html#General].
+
+=== Virtual machine support ===
+Harmony currently has seven [[virtual machine]] implementations that run Harmony Class Library, all of which were donations by external groups:
+* JC Harmony Edition VM, &quot;JCHEVM,&quot; based on the [[JC virtual machine|JCVM's]] [[interpreter (computing)|interpreter]], contributed by the author, Archie Cobbs.
+* BootJVM, a simple [[bootstrapping (computing)|bootstrapping]] virtual machine, contributed by Daniel Lydick.
+* [[SableVM]], an advanced, portable interpreter, contributed by authors from the [[Sable Research Group]]; and the Dynamic Runtime Layer Virtual Machine.
+* [[DRLVM]], a [[just-in-time compiler]] contributed by [[Intel]].
+* BEA announced the availability of an evaluation version of JRockit VM running Apache Harmony Class Library.&lt;ref&gt;[http://mail-archives.apache.org/mod_mbox/harmony-dev/200701.mbox/%3C1D7F0297-B0C5-4B05-AD27-B457B309C425@pobox.com%3E BEA JRockit VM under a binary, evaluation-only license]&lt;/ref&gt;
+* [[JikesRVM]], an open-source [[meta-circular evaluator|meta-circular]] JVM that use the Apache Harmony Class Library.&lt;ref&gt;[http://mail-archives.apache.org/mod_mbox/harmony-dev/200808.mbox/%3cb1e4cffb0808070820u2554f4faw4d98aa5059b5b425@mail.gmail.com%3e Announcing Jikes RVM 3.0 + Apache Harmony]&lt;/ref&gt;
+* [[Ja.NET SE]], an open source project providing a Java 5 JDK (class libraries, tools, etc.) that run on the [[.NET Framework]] CLR. Ja.NET SE is based on the Apache Harmony Class Libraries.&lt;ref&gt;[http://www.janetdev.org/ Ja.NET SE an open source  project is providing a Java 5 JDK running on the .NET CLR]&lt;/ref&gt;
+In the end of November, 2006, the language support provided by these virtual machine was still incomplete, and the build instructions recommended to use [[IBM]]'s [[proprietary software|proprietary]] J9 instead to run the class library test suite. However, this is not necessary anymore (as of July 2007).
+
+As for the rest of the project, DRLVM [[virtual machine]] development has now stalled (as of May 2011).&lt;ref name=&quot;jiracommits&quot;&gt;{{cite web
+| url=https://issues.apache.org/jira/browse/HARMONY#selectedTab=com.atlassian.jira.plugin.ext.subversion%3Asubversion-project-tab
+| title=Subversion Commits
+| publisher=harmony.apache.org
+| accessdate=2011-05-28}}&lt;/ref&gt;
+
+==Application status==
+Since its conception, Harmony has steadily grown in its ability to execute non-trivial Java applications (see [http://wiki.apache.org/harmony/Application_Status here]). {{as of|2007|7}}, supported applications include:
+* [[Eclipse (software)|Eclipse]]: 99.3% of the 36000 [[reference implementation (computing)|reference implementation]] (RI) test pass on Harmony's DRLVM + class library.[http://wiki.apache.org/harmony/Eclipse_Unit_Tests_Pass_on_DRLVM#PassRate_2007]
+* [[Apache Tomcat]]: 100% of the RI tests pass.[http://wiki.apache.org/harmony/Apache_Tomcat]
+* [[JUnit]]: 100% of the RI tests pass.[http://wiki.apache.org/harmony/JUnit]
+* [[Apache Ant]]: 97% of the RI tests pass.[http://wiki.apache.org/harmony/Apache_Ant]
+* Other applications pass with a high success rate, such as [[Apache Derby]], [[Apache Axis]], [[Log4j]], [[Apache Velocity]], [[Apache Cocoon]], [[jEdit]], and [[Apache Commons]].
+
+However, Harmony's incomplete library prevented it from launching some other applications:
+* [[ArgoUML]]: because it needs a [[Java applet]] implementation, which was still unavailable in Harmony.
+* [[Apache Geronimo]] runs on Apache Harmony with some issues and workarounds.&lt;ref&gt;[http://cwiki.apache.org/confluence/display/GMOxDOC20/Apache+Harmony Running Geronimo on Harmony]&lt;/ref&gt;
+* [[Vuze]], formerly Azureus, because of unimplemented security classes.
+
+==See also==
+{{Portal box|Free software|Java}}
+
+*[[GNU Classpath]]
+*[[List of Java virtual machines]]
+*[[Free Java implementations]]
+*[[Java Class Library]]
+*[[OpenJDK]]
+*[[IcedTea]]
+
+==References==
+{{Reflist|2}}
+
+==External links==
+* {{official website|harmony.apache.org}}
+*[http://mail-archives.apache.org/mod_mbox/incubator-general/200505.mbox/%3CE3603144-2C26-4C31-896D-6CC7445A63EB@apache.org%3E Apache Harmony FAQ]
+*[http://svn.apache.org/viewvc/harmony/?root=Apache-SVN Apache Harmony source code repository]
+*[http://developers.sun.com/learning/javaoneonline/2006/coreplatform/TS-3752.html JavaOne 2006 Online Harmony Session]
+*[http://developers.sun.com/learning/javaoneonline/j1sessn.jsp?sessn=TS-7820&amp;yr=2007&amp;track=6 JavaOne 2007 Online Harmony Session]
+*[http://parleys.com/display/PARLEYS/Apache+Harmony?showComments=true Apache Harmony] by Geir Magnusson Jr at JavaPolis 2006
+*[http://www.osnews.com/story.php?news_id=10806 The Java open source debate - a good summary of the debate]
+*[http://www.infoq.com/news/2011/03/apache-harmony What is the Future of Apache Harmony?]
+*[http://www.h-online.com/open/news/item/Apache-Harmony-loses-project-manager-1210343.html Apache Harmony loses project manager]
+
+{{Java Virtual Machine}}
+{{Java (Sun)}}
+{{apache}}
+
+[[Category:Apache Software Foundation|Harmony]]
+[[Category:Java virtual machine]]
+[[Category:Java libraries]]
+[[Category:Java programming language]]
+
+[[de:Apache Harmony]]
+[[fa:Ø¢Ù¾Ø§ÚÛ ÙØ§Ø±ÙÙÙÛ]]
+[[ja:Apache Harmony]]
+[[ru:Apache Harmony]]
+[[uk:Apache Harmony]]
+[[zh:Apache Harmony]]</rev></revisions></page></pages></query></api>

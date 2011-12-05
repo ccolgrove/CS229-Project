@@ -1,0 +1,62 @@
+<?xml version="1.0"?><api><query><redirects><r from=".rle" to="Run-length encoding" /></redirects><pages><page pageid="26392" ns="0" title="Run-length encoding"><revisions><rev xml:space="preserve">{{Unreferenced|date=July 2010}}
+
+'''Run-length encoding''' ('''RLE''') is a very simple form of [[data compression]] in which ''runs'' of data (that is, sequences in which the same data value occurs in many consecutive data elements) are stored as a single data value and count, rather than as the original run.  This is most useful on data that contains many such runs: for example, simple graphic images such as icons, line drawings, and animations. It is not useful with files that don't have many runs as it could greatly increase the file size.
+
+RLE also refers to a little-used image format in [[Windows 3.x]], with the extension '''rle''', which is a Run Length Encoded Bitmap, used to compress the Windows 3.x startup screen.
+
+==Example==
+For example, consider a screen containing plain black text on a solid white background.  There will be many long runs of white [[pixel]]s in the blank space, and many short runs of black pixels within the text.  Let us take a hypothetical single [[scan line]], with B representing a black pixel and W representing white:
+
+: &lt;code&gt;WWWWWWWWWWWWBWWWWWWWWWWWWBBBWWWWWWWWWWWWWWWWWWWWWWWWBWWWWWWWWWWWWWW&lt;/code&gt;
+
+If we apply the run-length encoding (RLE) data
+compression algorithm to the above hypothetical scan line, we get the following:
+
+: &lt;code&gt;12W1B12W3B24W1B14W&lt;/code&gt;
+
+This is to be interpreted as twelve Ws, one B, twelve Ws, three Bs, etc.
+
+The run-length code represents the original 67 characters in only 18.  Of course, the actual format used for the storage of images is generally binary rather than [[ASCII]] characters like this, but the principle remains the same.  Even binary data files can be compressed with this method; file format specifications often dictate repeated bytes in files as padding space.  However, newer compression methods such as [[DEFLATE]] often use [[LZ77]]-based algorithms, a generalization of run-length encoding that can take advantage of runs of strings of characters (such as &lt;code&gt;BWWBWWBWWBWW&lt;/code&gt;).
+
+==Applications==
+Run-length encoding performs [[lossless data compression]] and is well suited to [[Palette (computing)|palette]]-based iconic images.  It does not work well at all on continuous-tone images such as photographs, although [[JPEG]] uses it quite effectively on the coefficients that remain after transforming and [[Quantization (image processing)|quantizing]] image blocks.
+
+Common formats for run-length encoded data include [[Truevision TGA]], [[PackBits]], [[PCX]] and [[ILBM]].
+
+Run-length encoding is used in [[fax]] machines (combined with other techniques into [[Modified Huffman coding]]).  It is relatively efficient because most faxed documents are mostly white space, with occasional interruptions of black.
+
+== See also ==
+* [[Look-and-say sequence]]
+* [[Comparison of graphics file formats]]
+* [[Golomb coding]]
+* [[Modified Huffman coding]]
+* [[Burrows-Wheeler transform]]
+* [[Run Length Limited]]
+* [[Bitmap index]]
+* [[ForsythâEdwards Notation]], which uses run-length-encoding for empty spaces in chess positions.
+
+== External links ==
+* [http://rosettacode.org/wiki/Run-length_encoding Run-length encoding implemented in different programming languages] (on [[Rosetta Code]])
+* [http://www.daniel-lemire.com/blog/archives/2009/11/24/run-length-encoding-part-i/ Variations on Run-length encoding] by Daniel Lemire
+
+{{Compression Methods}}
+{{Compression Formats}}
+
+[[Category:Lossless compression algorithms]]
+
+[[ca:CodificaciÃ³ Run-length]]
+[[cs:Run-length encoding]]
+[[de:LauflÃ¤ngenkodierung]]
+[[el:Run-length encoding]]
+[[es:Run-length encoding]]
+[[fr:Run-length encoding]]
+[[ko:ë°ë³µ ê¸¸ì´ ë¶í¸í]]
+[[it:Run-length encoding]]
+[[nl:Run-length encoding]]
+[[ja:é£é·å§ç¸®]]
+[[pl:RLE]]
+[[pt:CodificaÃ§Ã£o run-length]]
+[[ru:ÐÐ¾Ð´Ð¸ÑÐ¾Ð²Ð°Ð½Ð¸Ðµ Ð´Ð»Ð¸Ð½ ÑÐµÑÐ¸Ð¹]]
+[[fi:RLE]]
+[[sv:SkurlÃ¤ngdskodning]]
+[[zh:æ¸¸ç¨ç¼ç ]]</rev></revisions></page></pages></query></api>

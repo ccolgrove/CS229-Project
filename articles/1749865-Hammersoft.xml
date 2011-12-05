@@ -1,0 +1,129 @@
+<?xml version="1.0"?><api><query><pages><page pageid="1749865" ns="0" title="WinHelp"><revisions><rev xml:space="preserve">{{Infobox file format
+| name                   = Microsoft WinHelp
+| icon                   = 
+| logo                   = 
+| screenshot             =  
+| caption                = Help File
+| extension              = .hlp
+| mime                   = 
+| type code              = 
+| uniform type           = 
+| magic                  = 
+| owner                  = [[Microsoft]]
+| released               = 1990
+| latest release version = 
+| latest release date    = 
+| genre                  = 
+| container for          = [[Rich Text Format|RTF]]
+| contained by           = 
+| extended from          = 
+| extended to            = 
+| standard               = No
+| url                    = 
+}}
+{{Infobox Windows component
+| name                   = Microsoft WinHelp
+| type                   = Help system
+| included_with          = [[Windows 3.0]]
+| replaced_by            = [[Microsoft Compiled HTML Help]]
+}}
+'''Microsoft WinHelp''' is a proprietary format for [[online help]] files that can be displayed by the Microsoft Help browser ''winhelp.exe'' or ''winhlp32.exe''. The file format is based on [[Rich Text Format]] (RTF). It remained a popular Help platform from [[Windows 3.0]] platform through [[Windows XP]]. WinHelp was removed in [[Windows Vista]] to discourage software developers from using the obsolete format and encourage use of newer help formats.
+
+==History==
+* 1990 - WinHelp 1.0 shipped with [[Windows 3.0]].
+* 1995 - WinHelp 4.0 shipped with [[Windows 95]] / [[Windows NT]].
+* 2006 - Microsoft announced its intentions to phase out WinHelp as a supported platform. WinHelp will not be a part of [[Windows Vista]] out-of-the-box. WinHelp files come in 16 bit and 32 bit types. Vista treats these two files types differently. When starting an application which uses the 32 bit .hlp format, Windows displays a warning saying the format is not supported any more. A downloadable viewer for viewing 32 bit .hlp files is available from the Microsoft Download Center.&lt;ref&gt;[http://www.microsoft.com/downloads/details.aspx?familyid=6ebcfad9-d3f5-4365-8070-334cd175d4bb&amp;displaylang=en Download WinHelp Viewer for Windows Vista]&lt;/ref&gt;&lt;ref name=&quot;KB917607&quot; /&gt; The 16 bit WinHelp files continue to display in Windows Vista (32 bit only) without the viewer download.
+* October 14, 2009 - Microsoft announced the downloadability of Windows Help program (WinHlp32.exe) for Windows 7 at the Microsoft Download Center.&lt;ref name=&quot;DownloadWinHlp32Windows7&quot;&gt;{{cite web
+| title = Windows Help program (WinHlp32.exe) for Windows 7
+| publisher = Microsoft
+| date = October 14, 2009
+| url = http://www.microsoft.com/downloads/details.aspx?displaylang=en&amp;FamilyID=258aa5ec-e3d9-4228-8844-008e02b32a2c
+| accessdate = October 20, 2009 }}&lt;/ref&gt;
+
+==File format==
+A WinHelp file has a &quot;.hlp&quot; suffix. It can be accompanied by an optional table of contents (.cnt) file if the help developer created one. When Windows opens a WinHelp file, it creates a .gid file in the same directory, containing information about the .hlp file such as the window size and location. If the user clicks the &quot;Find&quot; tab and enables keyword indexing, Windows creates an index file with a .fts (full text search) extension. 
+
+A WinHelp file can also be decompiled, providing copies of its source documents (HPJ, CNT, [[Rich Text Format|RTF]], [[Bitmap|BMP]], [[Segmented Hyper Graphics|SHG]]), using a number of software tools. An HPJ file is the project file that is created and edited in the Help Workshop (or a third party help authoring tool). The HPJ contains information about what RTF files to compile into the help, the MAP IDs and Aliases that provide links from a calling application to the help file, and help file appearance (window size, default buttons, color schemes, etc.). The CNT file provides the Table of Contents for the help file. An SHG file is a &quot;SHED&quot; graphics file that essentially creates an image map of help calls for a graphic file (e.g., a BMP).
+
+There are number of tools which can read and explore these files (see for example [http://www.herdsoft.com/catalog/ehlp2rtf.html Help to RTF], [http://www.herdsoft.com/linux/themen/online_publishing_winhelp.html winhelpcgi]).
+
+==Source files and compilation==
+The source files required to compile a .hlp file consist of one or more documents with the extension .rtf and a help project file with the extension .hpj, along with any image files (.bmp, .wmf, or .shg) that are used within the Help file.  An optional Table of Contents file with the extension .cnt can also be created for use with the .hlp file.
+
+Within the .rtf files, topics are separated by page breaks.  Each topic will have a series of [[footnotes]] which contain information for the help compiler:  # footnotes contain the topic ID (used to create links to that topic); $ footnotes contain the topic name as it will be displayed in the table of contents, index, and other locations; K footnotes contain keywords for the index; A footnotes contain See Also keywords; * footnotes contain build tags; + footnotes contain browse sequence information; and ! footnotes contain topic entry macros.  Only the # footnote is required; all others are optional.
+
+The text within each topic can contain limited types of formatting, including [[bold]] text, [[italics]], and colors, etc. (Superscript and subscript are not allowed.) Jumps between topics in the same Help file usually appear in the source document as double-underlined text (green by default, although this can be overridden) followed by a topic ID in hidden text.  Popup links appear in the source document as text with a single underline (also green by default) followed by a topic ID in hidden text.  (In the .hlp file, the jumps will show up as green text with a single underline, and popups will show up as green text with a dotted underline.)
+
+Images can be added using codes such as {bmc image.bmp}.  Supported image formats include [[.bmp]], [[.wmf]], and .shg (used for image maps, which can contain jumps or popups that are triggered by clicking on specific parts of the image).
+
+After the source files have been created, the help file can be compiled using a WinHelp compiler such as HCW.exe or by using a commercial software program such as [[RoboHelp]] or [http://www.solutionsoft.com/hlpbrz.htm HelpBreeze], most of which (included the two cited here) also use hcw.exe as the [[backend]] compiler.
+
+==WinHelp appearance and features==
+Depending on how it has been launched and what settings the Help author has chosen, a WinHelp file will open either to its default topic, its Table of Contents, or its Index.
+
+A topic in a WinHelp file opens in a separate window, the size and initial position of which can be chosen by the Help author.  Users can resize or reposition the window if they choose.  The Help author can control whether the Help file will remember the user's settings between sessions or whether it will always open with its default size and position.
+
+When a topic is open, a title bar at the top of the Help window displays the title that the Help author has given to the file.  Below that is a row of [[menu (computing)|menus]] ('''File''', '''Edit''', '''Bookmark''', '''Options''', and '''Help''') which can be used to control various aspects of the file.  A row of [[button (computing)|buttons]] usually appears below the menus.  The Help author controls which buttons, if any, appear. Typical buttons include '''Contents''', '''Index''', '''Back''', and '''Print''', along with '''&lt;&lt;''' and '''&gt;&gt;''' buttons to browse through the file.  Help authors can also create custom buttons to jump to specific topics or perform other actions.
+
+Below the buttons is the main text area of the window.  Typically, the text begins with a heading, often bold or in a larger font than the rest of the text.  This heading may sometimes be in what's called a non-scrolling region - an area of the window which will not move up or down if the user moves the scrollbar at the side of the window.  Non-scrolling regions can only be used at the beginning of a topic.  If a non-scrolling region is used, the Help author can control the size and background color of it.
+
+Help authors can also control the background color of the main text area, where the actual text of the topic appears.  This text can be formatted and arranged in many ways.  Within the text, jumps will appear as green text with a single [[underline]].  Single-clicking on a jump will open a different topic.  Some jumps may open secondary Help windows to display their information.  Popups appear in the text as green text with a dotted underline. Single-clicking on a popup will open a small window with no menus, buttons, or scrollbars, sized to fit the text it contains.  Often, popups are used to provide short definitions of key terms or other supplemental information about the main text.  The popup will automatically disappear the next time the user clicks anywhere or presses any key.
+
+Many, though not all, Help topics will have '''See Also''' jumps at the end of the text.  Depending on the Help author's preference, this feature may be a simple list of jumps under the heading See Also, or it may be a small button which, when clicked, brings up a dialog box displaying all the relevant topics. Clicking on the name of a topic in that [[dialog box]] then clicking '''Display''' will open that topic.
+
+Most Help files also contain a Table of Contents and an Index to help users locate the information they need.  These feature appear in a separate, tabbed window.  Clicking on the '''Contents''' tab will open the Table of Contents, in which users can click on headings to see the topics available for them.  Often the headings are marked with icons that look like small books, while the topics have icons that look like pages.  Double-clicking on a topic (or clicking on a topic then clicking '''Display''') will open that topic. Clicking on the '''Index''' tab will open the index, which has a typing field and an alphabetical list of keywords.  Typing in the typing field will automatically scroll the list of keywords to the closest match for what you typed.  Double-clicking on a keyword (or clicking on a keyword then clicking '''Display''') will display the topic associated with that keyword (if there is only one) or bring up a list of all the topics associated with it (if there is more than one).  The index is a very important tool in helping users locate the information they need.  Sometimes Help files also have a '''Find''' tab, which allows the user to search for any word used in the text of the file, not just for keywords.
+
+WinHelp also supports a feature known as [[context-sensitive help]]. Context-sensitive help is assistance that is appropriate to where the user is in the software application, and what they are trying to do.
+
+A rather security critical feature is that one can also include a [[Dynamic-link library|DLL]] file containing custom code and associating it with WinHelp topics. Effectively this makes .HLP files equivalent to executables.
+
+==End of support==
+At the 2006 WritersUA conference, Microsoft announced its intentions to phase out WinHelp as a supported platform. Ted Dworkin (Partner Director of WinHelp Experience) stated, &quot;WinHelp does not meet the code standards established for Vista. These standards include security, reliability, and performance. WinHelp is architected in such a way that we would have to rewrite it from the ground up to meet the Vista code standards. And that approach doesn't make sense given that we have two other Help systems in Vista.&quot;
+
+The updated licensing agreement prohibits application developers from packaging the WinHelp libraries with their installers.  What this means is that WinHelp manuals for legacy applications will never be readable on a clean Windows Vista PCâin order to read them, the end-user must obtain the 32-bit WinHelp viewer from [http://support.microsoft.com/kb/917607 Microsoft's website] and manually install it (which requires [[Windows Genuine Advantage|WGA &quot;activation&quot;]] and an account with administrative rights).
+
+===Windows 7 support===
+Microsoft published [http://www.microsoft.com/downloads/details.aspx?displaylang=en&amp;FamilyID=258aa5ec-e3d9-4228-8844-008e02b32a2c Windows Help program (WinHlp32.exe) for Windows 7] on October 14, 2009, a week before the scheduled October 22 deadline.&lt;ref name=&quot;DownloadWinHlp32Windows7&quot; /&gt;&lt;ref name=&quot;Windows7Release&quot;&gt;{{cite web
+| title = Microsoft Releases Windows Help Program (WinHlp32.exe) for Windows 7 x64 and Windows 7 x86
+| publisher = Komeil Bahmanpour
+| date = October 15, 2009
+| url = http://blog.komeil.com/2009/10/winhlp32-exe-for-windows-7-microsoft.html
+| accessdate = October 20, 2009 }}&lt;/ref&gt; Microsoft has recently announced that separate downloads for [[Windows 7]] and [[Windows Server 2008 R2]] will be offered after the [[Release to manufacture|RTM]] versions of these products are available to public.&lt;ref name=&quot;KB917607&quot;&gt;{{cite web
+| title = I cannot open Help files that require the Windows Help (WinHlp32.exe) program
+| publisher = Microsoft
+| date = July 8, 2009 
+| url = http://support.microsoft.com/kb/917607
+| accessdate = August 28, 2009 }}&lt;/ref&gt;&lt;ref name=&quot;Windows7RTM&quot;&gt;{{cite web
+| title = Windows Help Program (WinHlp32.exe) for Windows 7 x64 and Windows 7 x86
+| date = June 14, 2009
+| url = http://blog.komeil.com/2009/06/windows-help-program-winhlp32exe-for.html
+| accessdate = August 28, 2009 }}&lt;/ref&gt;
+
+==Other Documentation File Formats==
+Although documentation ''can'' be maintained entirely in a vendor-specific presentation format such as WinHelp, it is more often the case that documentation will need to be published in several different presentation formats at once:  [[Microsoft Compiled HTML Help]] (CHM), WinHelp, [[HTML]] pages, Java Help, [[PDF]], ''etc.''  It would be very expensive and error-prone to maintain each format separately.
+
+For this reason, documentation is often maintained in an industry-standard, vendor-neutral authoring format, such as [[DocBook]], from which several different presentation formats (including WinHelp) can be ''generated.''{{fact|date=April 2011}}  All of the various presentation files thus produced (WinHelp or otherwise) will always be consistent with one another because all of them were generated from the same sources.
+
+==See also==
+* [[Microsoft Compiled HTML Help]] (&lt;tt&gt;.chm&lt;/tt&gt; file extension)
+* [[Microsoft Help 2]]
+* [[Microsoft Help Viewer]]
+* [[OS/2]]'s [[Information Presentation Facility|INF Help]] (also known as IPF or [[Information Presentation Facility]])
+
+==References==
+{{reflist}}
+
+==External links==
+*[http://www.help-info.de Help-Info:] Information around Online Help (Microsoft), Examples, etc.
+*[http://www.helpmaster.info HelpMaster:] Largest selection of WinHelp, HTMLHelp and HTML related files and hints
+
+[[Category:Windows administration]]
+[[Category:Online help]]
+[[Category:Discontinued Windows components]]
+
+[[de:Microsoft Help]]
+[[fr:Microsoft WinHelp]]
+[[ko:ìë ëìë§]]
+[[ja:Microsoft WinHelp]]
+[[pl:WinHelp]]
+[[ru:WinHelp]]</rev></revisions></page></pages></query></api>

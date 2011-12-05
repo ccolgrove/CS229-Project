@@ -1,0 +1,195 @@
+<?xml version="1.0"?><api><query><redirects><r from="UIDL" to="Post Office Protocol" /></redirects><pages><page pageid="23062" ns="0" title="Post Office Protocol"><revisions><rev xml:space="preserve">{{Refimprove|date=November 2007}}
+{{IPstack}}
+
+In computing, the '''Post Office Protocol''' ('''POP''') is an [[application layer|application-layer]] [[Internet standard]] [[protocol (computing)|protocol]] used by local [[e-mail client]]s to retrieve [[e-mail]] from a remote [[mail server|server]] over a [[Internet protocol suite|TCP/IP]] connection.&lt;ref name=&quot;Network+ Guide to Networks&quot;&gt;{{cite book | last = Dean | first = Tamara | title = Network+ Guide to Networks | publisher = Delmar | year = 2010 | location = | pages = 519 | url = http://books.google.com/books?id=UD0h_GqgbHgC&amp;printsec=frontcover&amp;dq=network%2B+guide+to+networks&amp;hl=en&amp;src=bmrr&amp;ei=hMnATfmmA8j00gGMsOC2Cg&amp;sa=X&amp;oi=book_result&amp;ct=result&amp;resnum=1&amp;ved=0CE8Q6AEwAA#v=onepage&amp;q&amp;f=false}}&lt;/ref&gt;  POP and [[IMAP]] (Internet Message Access Protocol) are the two most prevalent [[Internet]] standard protocols for e-mail retrieval.&lt;ref name=&quot;Red Hat&quot;&gt;{{cite book | last = Komarinski | first = Mark | title = Red Hat Linux System Administration Handbook | publisher = Prentice Hall | year = 2000 | location = | pages =179Â | url = http://books.google.com/books?id=UD0h_GqgbHgC&amp;printsec=frontcover&amp;dq=network%2B+guide+to+networks&amp;hl=en&amp;src=bmrr&amp;ei=hMnATfmmA8j00gGMsOC2Cg&amp;sa=X&amp;oi=book_result&amp;ct=result&amp;resnum=1&amp;ved=0CE8Q6AEwAA#v=onepage&amp;q&amp;f=false}}&lt;/ref&gt; Virtually all modern e-mail clients and [[Server (computing)|servers]] support both. The POP protocol has been developed through several versions, with version 3 (POP3) being the current standard. Like IMAP, POP3 is supported by most [[webmail]] services such as [[Hotmail]], [[Gmail]] and [[Yahoo! Mail]].
+
+==Overview==
+POP supports simple download-and-delete requirements for access to remote mailboxes (termed maildrop in the POP [[Request for Comments|RFC]]'s).&lt;ref name=&quot;Windows to Linux&quot;&gt;{{cite book | last = Allen | first = David | title = Windows to Linux | publisher = Prentice Hall | year = 2004 | location = | pages =192Â | url = http://books.google.com/books?id=UD0h_GqgbHgC&amp;printsec=frontcover&amp;dq=network%2B+guide+to+networks&amp;hl=en&amp;src=bmrr&amp;ei=hMnATfmmA8j00gGMsOC2Cg&amp;sa=X&amp;oi=book_result&amp;ct=result&amp;resnum=1&amp;ved=0CE8Q6AEwAA#v=onepage&amp;q&amp;f=false}}&lt;/ref&gt; Although most POP clients have an option to leave mail on server after download, e-mail clients using POP generally connect, retrieve all messages, store them on the user's PC as new messages, delete them from the server, and then disconnect. Other protocols, notably IMAP, ([[Internet Message Access Protocol]]) provide more complete and complex remote access to typical [[Email box|mailbox operations]]. Many e-mail clients support POP as well as IMAP to retrieve messages; however, fewer [[Internet Service Provider]]s (ISPs) support IMAP{{Citation needed|date=May 2011}}.
+
+A POP3 server listens on [[List of TCP and UDP port numbers|well-known port]] 110. [[encryption|Encrypted]] communication for POP3 is either requested after protocol initiation, using the STLS command, if supported, or by POP3S, which connects to the server using [[Transport Layer Security]] (TLS) or [[Secure Sockets Layer]] (SSL) on well-known TCP port 995 (e.g. [[Google]] Gmail).
+&lt;!--STLS versus POP3S comments?--&gt;
+
+Available messages to the client are fixed when a POP session opens the maildrop, and are identified by message-number local to that session or, optionally, by a unique identifier assigned to the message by the POP server. This unique identifier is permanent and unique to the maildrop and allows a client to access the same message in different POP sessions. Mail is retrieved and marked for deletion by message-number. When the client exits the [[Session (computer science)|session]], the mail marked for deletion is removed from the maildrop.
+
+==History==
+POP (POP1) is specified in RFC 918 (1984), POP2 by RFC 937 (1985). The original specification of POP3 is RFC 1081 (1988). Its current specification is RFC 1939, updated with an extension mechanism, RFC 2449 and an authentication mechanism in RFC 1734.
+
+POP2 has been assigned [[List of TCP and UDP port numbers|well-known port]] 109.
+
+The original POP3 specification supported only an unencrypted USER/[[password|PASS]] [[login]] mechanism or Berkeley [[Rlogin|.rhosts]] access control. POP3 currently supports several [[authentication]] methods to provide varying levels of protection against illegitimate access to a user's e-mail. Most are provided by the POP3 extension mechanisms. POP3 clients support [[Simple Authentication and Security Layer|SASL]] authentication methods via the AUTH extension. [[Massachusetts Institute of Technology|MIT]] [[Project Athena]] also produced a [[Kerberized]] version.
+
+RFC 1460 introduced APOP into the core protocol. APOP is a [[challenge/response]] protocol which uses the [[MD5]] [[cryptographic hash function|hash function]] in an attempt to avoid [[replay attack]]s and disclosure of the [[shared secret]]. Clients implementing APOP include [[Mozilla Thunderbird]], [[Opera Mail]], [[Eudora (e-mail client)|Eudora]], [[KMail]], [[Novell Evolution]], RimArts' [[Becky!]],&lt;ref&gt;{{ja icon}}, [http://journal.mycom.co.jp/special/2001/onlinenote/005.html (Becky! tutorial)], 2001/04/26&lt;/ref&gt; [[Windows Live Mail]], PowerMail, and [[Mutt (e-mail client)|Mutt]].
+
+An informal proposal had been outlined for a ''&quot;POP4&quot;'' specification, complete with a working server implementation. This ''&quot;POP4&quot;'' proposal added basic folder management, multipart message support, as well as message flag management, allowing for a light protocol which supports some popular IMAP features which POP3 currently lacks. However, in doing so, it shared with IMAP the embedding in a communication protocol a specific model of a mailbox, which, although common, is not universal. No progress has been observed in this ''&quot;POP4&quot;'' proposal since 2003.&lt;ref&gt;{{cite web
+|url=http://www.pop4.org/pop4/pop4spec.html
+|title=POP4 specification
+|year=2003
+|accessdate=2011-10-17}}&lt;/ref&gt;
+
+==Extensions==
+An extension mechanism was proposed in RFC 2449 to accommodate general extensions as well as announce in an organized manner support for optional commands, such as TOP and UIDL. The RFC did not intend to encourage extensions, and reaffirmed that the role of POP3 is to provide simple support for mainly download-and-delete requirements of mailbox handling.
+
+The extensions are termed capabilities and are listed by the CAPA command. Except for APOP, the optional commands were included in the initial set of capabilities. Following the lead of ESMTP (RFC 5321), capabilities beginning with an X signify local capabilities.
+
+====STARTTLS====
+The STARTTLS extension allows the use of [[Transport Layer Security]] (TLS) or [[Secure Sockets Layer]] (SSL) to be negotiated using the ''STLS'' command, on the standard POP3 port, rather than an alternate. Some clients and servers, such as Google Gmail, instead use the deprecated alternate-port method, which uses TCP port 995 (POP3S).
+
+====SDPS====
+[[Demon Internet]] introduced extensions to POP3 that allow multiple accounts per domain, and has become known as ''Standard Dial-up POP3 Service'' (SDPS).[http://e.demon.net/helpdesk/producthelp/mail/sdps-tech.html/] To access each account, the username includes the hostname, as ''john@hostname'' or ''john+hostname''.
+
+Google Apps uses the [http://mail.google.com/support/bin/answer.py?answer=34383 same method.]
+
+==Comparison with IMAP==
+Clients that leave mail on servers generally use the UIDL command to get the current association of message-numbers to message identified by its [[unique identifier]]. The unique identifier is arbitrary, and might be repeated if the mailbox contains identical messages. In contrast, IMAP uses a 32-bit unique identifier (UID) that is assigned to messages in ascending (although not necessarily consecutive) order as they are received.  When retrieving new messages, an IMAP client requests the UIDs greater than the highest UID among all previously-retrieved messages, whereas a POP client must fetch the entire UIDL map.  For large mailboxes, this can require significant processing.
+
+&lt;!--I'm not too sure what this paragraph means.--&gt;
+[[MIME]] serves as the standard for attachments and non-[[ASCII]] text in e-mail.  Although neither POP3 nor SMTP require MIME-formatted e-mail, essentially all non-ASCII Internet e-mail comes MIME-formatted, so POP clients must also understand and use MIME.  IMAP, by design, assumes MIME-formatted e-mail.
+
+==Dialog example==
+The APOP usage is a direct example from [http://tools.ietf.org/html/rfc1939#page-19 RFC 1939 page 18].
+
+RFC 1939 APOP support indicated by &lt;font color=blue&gt;&amp;lt;1896.697170952@dbc.mtview.ca.us&amp;gt;&lt;/font&gt; here:
+
+ &lt;font color=red&gt;S: &lt;wait for connection on TCP port 110&gt;&lt;/font&gt;
+ C: &lt;open connection&gt;&lt;/font&gt;
+ &lt;font color=blue&gt;S:    +OK POP3 server ready &lt;1896.697170952@dbc.mtview.ca.us&gt;&lt;/font&gt;
+ C:    APOP mrose c4c9334bac560ecc979e58001b3e22fb&lt;/font&gt;
+ &lt;font color=blue&gt;S:    +OK mrose's maildrop has 2 messages (320 octets)&lt;/font&gt;
+ C:    STAT&lt;/font&gt;
+ &lt;font color=blue&gt;S:    +OK 2 320&lt;/font&gt;
+ C:    LIST&lt;/font&gt;
+ &lt;font color=blue&gt;S:    +OK 2 messages (320 octets)&lt;/font&gt;
+ &lt;font color=blue&gt;S:    1 120&lt;/font&gt;
+ &lt;font color=blue&gt;S:    2 200&lt;/font&gt;
+ &lt;font color=blue&gt;S:    .&lt;/font&gt;
+ C:    RETR 1&lt;/font&gt;
+ &lt;font color=blue&gt;S:    +OK 120 octets&lt;/font&gt;
+ &lt;font color=blue&gt;S:    &lt;the POP3 server sends message 1&gt;&lt;/font&gt;
+ &lt;font color=blue&gt;S:    .&lt;/font&gt;
+ C:    DELE 1&lt;/font&gt;
+ &lt;font color=blue&gt;S:    +OK message 1 deleted&lt;/font&gt;
+ C:    RETR 2&lt;/font&gt;
+ &lt;font color=blue&gt;S:    +OK 200 octets&lt;/font&gt;
+ &lt;font color=blue&gt;S:    &lt;the POP3 server sends message 2&gt;&lt;/font&gt;
+ &lt;font color=blue&gt;S:    .&lt;/font&gt;
+ C:    DELE 2&lt;/font&gt;
+ &lt;font color=blue&gt;S:    +OK message 2 deleted&lt;/font&gt;
+ C:    QUIT&lt;/font&gt;
+ &lt;font color=blue&gt;S:    +OK dewey POP3 server signing off (maildrop empty)&lt;/font&gt;
+ C:  &lt;close connection&gt;&lt;/font&gt;
+ &lt;font color=red&gt;S:  &lt;wait for next connection&gt;&lt;/font&gt;
+
+POP3 servers without the optional APOP command expect the client to log in with the USER and PASS commands:
+
+ C:    USER mrose
+ &lt;font color=blue&gt;S:    +OK User accepted&lt;/font&gt;
+ C:    PASS tanstaaf
+ &lt;font color=blue&gt;S:    +OK Pass accepted&lt;/font&gt;
+
+==Server implementations==
+&lt;!-- If it doesn't have a Wikipedia article, DON'T ADD IT! Thank you. --&gt;
+* [[Apache James]]
+* [[Citadel/UX]]
+* [[Courier Mail Server]]
+* [[Cyrus IMAP server]]
+* [[Dovecot (software)|Dovecot]]
+* [[Eudora Internet Mail Server]]
+* [[Mailtraq]]
+* [[Nginx]]
+* [[qmail|qmail-pop3d]]
+* [[Qpopper]]
+* [[RePOP]]
+* [[UW IMAP]]
+* [[WinGate]]
+* [[Zimbra]]
+
+==Related requests for comments (RFCs)==
+* RFC 918 â POST OFFICE PROTOCOL
+* RFC 937 â POST OFFICE PROTOCOL â VERSION 2
+* RFC 1081 â Post Office Protocol â Version 3
+* RFC 1939 â Post Office Protocol â Version 3 (STD 53)
+* RFC 1957 â Some Observations on Implementations of the Post Office Protocol (POP3)
+* RFC 2195 â IMAP/POP AUTHorize Extension for Simple Challenge/Response
+* RFC 2384 â POP URL Scheme
+* RFC 2449 â POP3 Extension Mechanism
+* RFC 2595 â Using TLS with IMAP, POP3 and ACAP
+* RFC 3206 â The SYS and AUTH POP Response Codes
+* RFC 5034 â The Post Office Protocol (POP3) Simple Authentication and Security Layer (SASL) Authentication Mechanism
+
+==See also==
+* [[Internet Message Access Protocol]] (IMAP)
+* [[Simple Mail Transfer Protocol]] (SMTP)
+* [[Simple Mail Access Protocol]] (SMAP)
+* [[E-mail client]]
+* [[webmail]]
+* POP3 clients: [[getmail]], [[fetchmail]]  &lt;!-- these are INTERNAL links to POP3 clients --&gt;
+* [[email encryption]]
+
+==References==
+{{Reflist}}
+
+==Further reading==
+* {{cite book | last=Hughes | first=L | title=Internet e-mail Protocols, Standards and Implementation | publisher=Artech House Publishers | year=1998 | isbn=0890069395}}
+* {{cite book | last=Johnson | first=K | title=Internet Email Protocols: A Developer's Guide | publisher=Addison-Wesley Professional | year=2000 | isbn=0201432889}}
+* {{cite book | last=Loshin | first=P | title=Essential Email Standards: RFCs and Protocols Made Practical | publisher=John Wiley &amp; Sons | year=1999 | isbn=0471345970}}
+* {{cite book | last=Rhoton | first=J | title=Programmer's Guide to Internet Mail: SMTP, POP, IMAP, and LDAP | publisher=Elsevier | year=1999 | isbn=1555582125}}
+* {{cite book | last=Wood | first=D | title=Programming Internet Mail | publisher=O'Reilly | year=1999 | isbn=1565924797}}
+
+==External links==
+* [http://www.iana.org/assignments/port-numbers IANA port number assignments]
+* [http://www.eventhelix.com/RealtimeMantra/Networking/POP3.pdf POP3 Sequence Diagram] (PDF)
+
+{{E-mail clients}}
+
+[[Category:Internet mail protocols]]
+
+[[ar:Ø¨Ø±ÙØªÙÙÙÙ ÙÙØªØ¨ Ø§ÙØ¨Ø±ÙØ¯]]
+[[az:POP3]]
+[[bg:Post Office Protocol]]
+[[bs:Post Office Protocol]]
+[[ca:Post Office Protocol]]
+[[cv:Post Office Protocol]]
+[[cs:Post Office Protocol]]
+[[da:POP3]]
+[[de:Post Office Protocol]]
+[[et:Postkontoriprotokoll]]
+[[el:Post Office Protocol]]
+[[es:Post Office Protocol]]
+[[eo:POP3]]
+[[eu:POP]]
+[[fa:Ù¾Ø§Ù¾ (Ù¾Ø±ÙØªÚ©Ù)]]
+[[fr:Post Office Protocol]]
+[[gl:POP3]]
+[[ko:POP3]]
+[[hr:POP3]]
+[[id:Post Office Protocol versi 3]]
+[[it:Post Office Protocol]]
+[[he:Post Office Protocol]]
+[[ku:POP3]]
+[[lv:Post Office Protocol]]
+[[lt:POP3]]
+[[hu:POP3]]
+[[mk:Post Office Protocol]]
+[[ml:à´ªàµà´ªàµà´ªàµ 3]]
+[[ms:Protokol Pejabat Pos]]
+[[nl:Post Office Protocol]]
+[[ja:Post Office Protocol]]
+[[no:POP3]]
+[[nn:POP3]]
+[[mhr:POP3]]
+[[pl:POP3]]
+[[pt:Post Office Protocol]]
+[[ro:POP3]]
+[[ru:POP3]]
+[[simple:Post Office Protocol]]
+[[sk:Post Office Protocol]]
+[[sl:POP3]]
+[[sr:POP3]]
+[[fi:POP3]]
+[[sv:POP3]]
+[[th:Post Office Protocol]]
+[[tr:POP3]]
+[[uk:POP3]]
+[[vi:POP3]]
+[[yo:Post Office Protocol]]
+[[zh:POP3]]</rev></revisions></page></pages></query></api>

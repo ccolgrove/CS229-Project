@@ -1,0 +1,118 @@
+<?xml version="1.0"?><api><query><redirects><r from="Wubi (Linux installer)" to="Wubi (Ubuntu installer)" /></redirects><pages><page pageid="9905630" ns="0" title="Wubi (Ubuntu installer)"><revisions><rev xml:space="preserve">{{Infobox software
+| name                   = Wubi
+| logo                   = [[File:Wubi-logo-text.svg|100px|Wubi logo]]
+| screenshot             = [[File:Ubuntu Wubi 11.10.PNG|300px|Wubi Installer for Ubuntu 11.10 on Windows Developer Preview]]
+| caption                = Wubi, installing Ubuntu 11.10
+| collapsible            =
+| author                 =
+| developer              = Agostino Russo, Geza Kovacs, Oliver Mattos, Ecology2007
+| released               = {{Start date|2008|04|24}} &lt;!-- 8.04 was the first non-beta release --&gt;
+| latest release version = 11.10
+| latest release date    = {{Release date and age|2011|10|13}}
+| latest preview version =
+| latest preview date    =
+| frequently updated     =
+| programming language   = [[Nullsoft Scriptable Install System|NSIS script]], [[C++]], [[Python (programming language)|Python]]
+| operating system       = [[Microsoft Windows]]
+| platform               =
+| size                   = 2.37 [[MiB]]
+| language               = Over 50 Languages
+| status                 = active development
+| genre                  = [[Ubuntu (operating system)|Ubuntu]] installer
+| license                = [[GNU General Public License|GNU GPL v.2 or later]] &lt;ref name=&quot;WubiFAQ&quot;&gt;{{cite web | url=https://wiki.ubuntu.com/WubiGuide | title=Wubi - FAQ | publisher=Ubuntu | accessdate=2010-11-27}}&lt;/ref&gt;
+| website                = http://www.ubuntu.com/desktop/get-ubuntu/windows-installer
+}}
+
+'''Wubi''' ('''''W'''indows-based '''UB'''untu '''I'''nstaller'') is an official [[Microsoft Windows|Windows]]-based [[free software]] installer for [[Ubuntu (operating system)|Ubuntu]].
+
+Wubi was born as an independent project and as such versions 7.04 and 7.10 were unofficial releases.&lt;ref name=&quot;LH1&quot;&gt;{{cite web|url=http://lifehacker.com/software/featured-windows-download/take-ubuntu-for-a-non+invasive-test-drive-with-wubi-258936.php |title=Take Ubuntu for a non-invasive test drive with Wubi |accessdate=2008-05-30 |last=Broida |first=Rick |date=2007-05-09 |publisher=[[Lifehacker]] }}&lt;/ref&gt; Since 8.04 the code has been merged within Ubuntu and since 8.04 alpha 5, Wubi can also be found in the Ubuntu Live CD.&lt;ref name=&quot;WubiFAQ&quot; /&gt;
+
+The project's aim is to enable existing Windows users, unacquainted with [[Linux]], to try Ubuntu without risking any data loss (due to disk [[Disk formatting|formatting]] or [[Disk partitioning|partitioning]] mistakes).&lt;ref name=&quot;LH1&quot;/&gt; It can also safely [[Uninstaller|uninstall]] Ubuntu from within Windows.
+
+It is not a [[virtual machine]], but creates a stand-alone installation within a [[loop device|loopmounted device]], also known as a [[disk image]], like [[Topologilinux]] does. It is not a [[Linux distribution]] of its own, but rather an installer for [[Ubuntu (operating system)|Ubuntu]].&lt;ref name=&quot;WubiFAQ&quot;/&gt;
+
+While Wubi does not install Ubuntu directly to its own [[Disk partitioning|partition]] this can also be accomplished by using LVPM, the Loopmounted Virtual Partition Manager, to transfer the Wubi-generated Ubuntu installation to a dedicated real partition, including a bootable [[USB keydrive]].&lt;ref name=&quot;WubiFAQ&quot;/&gt;  The advantage of this setup is that users can test the operating system and install the drivers before they install it to a dedicated partition (and avoid booting and functioning risks).
+
+Wubi adds an entry to the Windows boot menu which allows the user to run [[Linux_kernel|Linux]]. Ubuntu is installed within a file in the Windows file system (c:\ubuntu\disks\root.disk), as opposed to being installed within its own [[Disk partitioning|partition]]. This file is seen by [[Linux_kernel|Linux]] as a real hard disk.&lt;ref name=&quot;WubiFAQ&quot; /&gt; Wubi also creates a [[swap file]] in the Windows file system (c:\ubuntu\disks\swap.disk), in addition to the [[Random Access Memory|memory]] of the host machine. This file is seen by Ubuntu as additional [[Random Access Memory|RAM]].&lt;ref name=&quot;WubiFAQ&quot;/&gt;
+
+A related project, [[Lubi]], uses Linux as the host system instead of Windows.&lt;ref name=&quot;WubiFAQ&quot; /&gt;  A version for the [[Mac OS]] as host, Mubi, &quot;will eventually be supported.&quot;&lt;ref name=&quot;WubiFAQ&quot;/&gt;
+
+==Desktops==
+Users can select the desktop environment within Wubi. But, because each desktop environment is also available as an application package, it is recommended that users install Ubuntu (default option) and from there install the other desktop environments. When users [[log in]], they can choose the desktop environment to use.&lt;ref name=&quot;WubiFAQ&quot; /&gt;
+
+==Limitations==
+Compared with a regular installation, a Wubi installation faces some limitations. Hibernation is not supported and the filesystem is more vulnerable to [[Rebooting_(computing)#Hard_reboot|hard reboots]]&lt;ref name=&quot;WubiFAQ&quot; /&gt;. Also, if the Windows drive is unmounted uncleanly (Windows crash, power failure, etc.), Ubuntu will not be able to mount the Windows drive and boot until Windows has successfully booted and shut down. If the Windows system cannot be booted after the crash, the user also cannot boot Ubuntu.
+
+Performance related to hard-disk access is also slightly slower, more so if the disk image file is fragmented, on a Wubi install compared to a normal one.&lt;ref name=&quot;WubiFAQ&quot; /&gt;
+
+==Influences==
+Wubi relies on other open source projects: [[Debian installer]], [[Migration-Assistant]], [[Grub4Dos]], [[NTFS-3G]], [[Nullsoft Scriptable Install System|NSIS]] and [[Metalink]].&lt;ref name=&quot;WubiFAQ&quot; /&gt;&lt;ref&gt;[http://bazaar.launchpad.net/~ubuntu-installer/wubi/trunk/files/head%3A/src/]&lt;/ref&gt;
+
+==Development==
+The lead developers are Agostino Russo, Geza Kovacs, Oliver Mattos and Ecology2007.&lt;ref name=&quot;WubiFAQ&quot;/&gt;  The main development occurs at [[Launchpad (website)|Launchpad]] and is led by the Lupin Team (Lupin is the [[Loop device|loop]]-installer, handles everything that happens after reboot)&lt;ref&gt;{{cite web | url=https://launchpad.net/~lupin-team| title=The Lupin Team in Launchpad | publisher=Launchpad | accessdate=2007-06-23}}&lt;/ref&gt; through the original Ubuntu blueprint page &lt;ref&gt;{{cite web | url=https://blueprints.launchpad.net/ubuntu/+spec/windows-installer | title=Windows installer for ubuntu using loopmounted EXT3 filesystem on NTFS | publisher=Launchpad | accessdate=2007-06-23}}&lt;/ref&gt; and the new Wubi,&lt;ref&gt;{{cite web | url=https://launchpad.net/wubi | title=Wubi, Windows Ubuntu Installer in Launchpad | publisher=Launchpad | accessdate=2007-06-23}}&lt;/ref&gt; Lubi,&lt;ref name=&quot;Lubi&quot;&gt;{{cite web | url=https://launchpad.net/lubi | title=Linux-based Ubuntu Installer in Launchpad | publisher=Launchpad | accessdate=2007-06-23}}&lt;/ref&gt; Lupin,&lt;ref&gt;{{cite web | url=https://launchpad.net/lupin | title=Lupin, the loop installer in Launchpad | publisher=Launchpad | accessdate=2007-06-23}}&lt;/ref&gt; and LVPM&lt;ref&gt;{{cite web | url=https://launchpad.net/lvpm | title=Loopmounted Virtual Partition Manager in Launchpad | publisher=Launchpad | accessdate=2007-06-23}}&lt;/ref&gt; project pages.&lt;ref name=&quot;WubiFAQ&quot;/&gt;
+
+==Hardware support==
+Both the i386 (32-bit [[x86]]) and [[x86-64]] releases of Ubuntu are supported by Wubi and Lubi, although this was a recent change.&lt;ref name=&quot;WubiFAQ&quot;/&gt; In versions before 8.04, only the x86 release of Ubuntu was supported.
+
+==History==
+A number of Linux distributions, including [[Red Hat Linux]] and [[ZipSlack|Slackware's ZipSlack]], provided a similar solution in the mid 1990s, using [[SYSLINUX|syslinux]] and the [[UMSDOS]] filesystem driver. Later, [[SUSE Linux distributions|SuSE]] provided something similar using [[SYSLINUX|syslinux]] and loop-mounted disk images on FAT filesystems. During the late 90's [[BeOS]] used a similar system to install the OS in a folder in Windows.
+
+The idea for Wubi was drafted by Agostino Russo taking inspiration from [[Topologilinux]], which provided a loopmounted installation, and Instlux, that provided a simple Windows frontend. The idea&lt;ref&gt;{{cite web | url=https://launchpad.net/ubuntu/+spec/ubuntu-setup.exe | title=Ubuntu setup executable for windows users | author=Agostino Russo (ago) | publisher=Launchpad | accessdate=2007-09-02}}&lt;/ref&gt; was to merge the two concepts having a Windows installer that would loopmount an image of Ubuntu. Geza Kovacs later refined the specification&lt;ref&gt;{{cite web | url=https://blueprints.launchpad.net/ubuntu/+spec/windows-installer | title=Windows installer for ubuntu using loopmounted EXT3 filesystem on NTFS | author=Geza Kovacs (tuxcantfly) | publisher=Launchpad | accessdate=2007-09-02}}&lt;/ref&gt; and provided the first prototypes&lt;ref&gt;{{cite web | url=http://ubuntuforums.org/showthread.php?t=305109 | publisher=Ubuntuforums | author=Geza Kovacs (tuxcantfly) | title=Idea: Install via windows on loopmounted ntfs? | accessdate=2007-08-02}}&lt;/ref&gt; to show that the concept was sound. Oliver Mattos wrote the original user interface in [[Nullsoft Scriptable Install System|NSIS]].
+
+Agostino Russo then refined the loop-installation concept, moving from a simple loopmounted pre-made image file to an image created on the fly using a dynamically patched version of the Debian installer, thus providing an experience which was closer to a real installation while addressing several other issues of the early prototypes. Lupin project was thus born and Agostino Russo wrote and implemented most of its code with some contributions from Geza Kovacs.
+
+Agostino Russo and Ecology2007 later redesigned and rewrote the current Windows front-end. Hampus Wessman contributed the new downloader and the translation scripts. Bean123 and Tinybit also helped to debug and fix bootloader issues. Lubi and LVPM were subsequently created by Geza Kovacs.&lt;ref name=&quot;WubiFAQ&quot;/&gt;
+
+The project has inspired the creation of other Windows-based Linux installers, such as [[Win32-loader (Debian)|Win32-loader]].
+
+==See also==
+{{Portal|Free software}}
+
+* [[Cooperative Linux]] - allows Linux to run within Windows, and is used by [[Topologilinux]] (Slackware-based) and [[andLinux]]
+* [[Instlux]], included on [[openSUSE]] since the 10.3 release.&lt;ref&gt;[http://en.opensuse.org/Instlux Instlux - openSUSE&lt;!-- Bot generated title --&gt;]&lt;/ref&gt;
+* [[Win32-loader (Debian)|Win32-Loader]] - uses a similar chain-booting mechanism to install Debian without a CD.
+* [[UNetbootin]] - uses a similar approach to do a standard Linux installation (or create a [[Live USB]]) without a CD.
+* [http://sourceforge.net/projects/grubed/ BEeN GRUBed] - &quot;A universal Operating System Installer for Windows&quot; can install various Linux distributions from inside Windows.
+
+==References==
+{{Reflist|2}}
+
+==External links==
+*[http://wubi.sourceforge.net/ Wubi official website]
+*[https://wiki.ubuntu.com/WubiGuide WubiGuide in the official Ubuntu Wiki]
+*[http://lubi.sourceforge.net/ Lubi/LVPM/UNetbootin project website]
+*[[FLOSS Weekly]] [http://www.twit.tv/floss63 63: Wubi] with Agostino Russo, the lead developer of Wubi
+
+{{Ubuntu}}
+
+{{DEFAULTSORT:Wubi (Ubuntu Installer)}}
+[[Category:Free software programmed in C++]]
+[[Category:Free system software]]
+[[Category:Linux installation software]]
+[[Category:Windows-only free software]]
+[[Category:Ubuntu (operating system)]]
+
+[[af:Wubi]]
+[[ar:ÙÙØ¨Ù]]
+[[ast:Wubi (Ubuntu)]]
+[[bn:à¦à¦à¦¬à¦¿ (à¦à¦¬à§à¦¨à§à¦à§ à¦à¦¨à¦¸à§à¦à¦²à¦¾à¦°)]]
+[[ca:Wubi]]
+[[cs:Wubi]]
+[[de:Wubi (Ubuntu)]]
+[[el:Wubi]]
+[[es:Wubi (Ubuntu)]]
+[[eu:Wubi]]
+[[fr:Wubi (Ubuntu)]]
+[[ko:ì°ë¹ (ì¸ì¤í¨ë¬)]]
+[[it:Wubi]]
+[[ml:à´µàµà´¬à´¿]]
+[[my:Wubi (Ubuntu)]]
+[[nl:Wubi]]
+[[ja:Wubi]]
+[[pl:Wubi]]
+[[pt:Wubi]]
+[[ru:Wubi]]
+[[simple:Wubi (installer)]]
+[[sv:Wubi (Ubuntu)]]
+[[uk:Wubi]]
+[[zh:Wubi]]</rev></revisions></page></pages></query></api>

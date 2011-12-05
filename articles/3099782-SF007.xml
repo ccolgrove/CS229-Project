@@ -1,0 +1,51 @@
+<?xml version="1.0"?><api><query><pages><page pageid="3099782" ns="0" title="IMG (file format)"><revisions><rev xml:space="preserve">{{Merge to|IMA (file format)|date=June 2011}}
+{{Unreferenced|date=December 2009}}
+The '''IMG file format''' is one of the following files:
+
+# A CD or DVD image file, essentially equivalent to an ISO file. On such a file, simply changing the extension from IMG to ISO can make it usable as the latter by most programs.
+# An [[archive format]] used for creating a [[disk image]] of floppy disks and HDDs.  This allows for digital storage, transmission, and replication of floppy disks and HDDs. Files created using this format typically use the &quot;.IMG&quot; [[file extension]]. There are different, incompatible image formats which use the .IMG extension.
+# A file in the ''[[Macintosh Disk Image]]'' format used by [[Aladdin Systems]] (now [[Allume Systems]]) [[ShrinkWrap]] and [[Apple Disk Copy]] for [[Mac OS]] although they share the same file extension.
+# The IMG file format, also known as ''GEM IMG'', is an image file format used to store bitmap digital images on [[Graphical Environment Manager]].
+# A graphics image format used in various ways by many different graphics software packages.
+
+==IMG formats==
+The IMG file extension is used by files which are standardised raw dumps of a disk, and by files in various formats created by different imaging programs.
+
+* A raw [[dump]] of the content of a disk is usually saved with the extension .IMG.  This format is not compatible with the [[Disk Copy Fast]]  and [[DiskDupe]] format but is supported by multiple software vendors and conventions. It contains the same data as the [[IMA (file format)|IMA]] file format. In this case the image typically begins with a [[File Allocation Table#Boot_Sector|FAT boot sector]], where the first byte is normally hexadecimal EB (code for a 8bit short jump, offset in the 2nd byte) with third byte 90 (code for a NOP), or rarely EA (code for a 16bit jump, offset in 2nd and 3rd byte). The file size will always be a multiple of the sector size &amp;mdash; generally 512 bytes, but other sizes such as 128 and 1024 existed. More precisely the file size corresponds to &lt;tt&gt;&lt;abbr title=&quot;CHS&quot;&gt;Cylinders&amp;times;Heads&amp;times;(Sectors per track)&lt;/abbr&gt;&lt;/tt&gt;, e.g., &lt;tt&gt;1440KB=80&amp;times;2&amp;times;18&amp;times;512&lt;/tt&gt; for 80 cylinders (tracks) and 2 heads (sides) with 18 sectors per track.
+
+* Files with the .IMG extension files are created by MS-DOS tools such as [[HDCopy]] which store the contents of a disk in a usually compressed form, different for different imaging programs: the .IMG extension is not standardised for other than raw images, and .IMG files created by different programs are not necessarily compatible. The first few bytes of the file may identify the imaging program that created it; as the file is compressed its size depends upon the contents of the image.
+
+==Support and development==
+The raw IMG file format is currently supported by [[GNU Project|GNU]] [[RaWrite]] &amp; [[RaWrite2]], and [[RawWrite for Windows]]. It is utilized by [[Qemu]], [[VirtualBox]] and [[WinImage]].
+
+[[Nero Burning ROM]] prior to 6.0 supported reading IMG file for creating [[bootable CD]], but since then calls them [[IMA (file format)|IMA]].
+
+Image files with the .IMG extension but not in raw image format are produced by several imaging programs, and are not necessarily compatible with each other, or with programs which handle raw images. There are programs which will convert between the image formats used by various programs, including raw format; one such is ''dsktrans'' from the the ''LibDsk''&lt;ref&gt;[http://www.seasip.demon.co.uk/Unix/LibDsk/ LibDsk suite of tools for accessing discs and disc image files]&lt;/ref&gt; suite of command-line tools for [[Linux]], [[MS-DOS]], and [[Microsoft Windows]].
+
+Programs such as ImDisk and [http://vfd.sourceforge.net/ Virtual Floppy Drive] can mount a raw image of a floppy disk to emulate a floppy drive under Windows.
+
+==Use==
+IMG files are used for:
+* Digital storage, transmission,  and replication of floppy disks.
+* Mounting virtual floppy disk volumes.
+
+==See also==
+* [[mtools]]
+
+==References==
+{{reflist}}
+
+== External links ==
+* [http://www.imgtoiso.com img to iso] Convert IMG disk image to ISO disk image
+
+{{Disk images}}
+
+{{DEFAULTSORT:Img (File Format)}}
+[[Category:Computer file formats]]
+[[Category:Archive formats]]
+
+
+{{software-type-stub}}
+
+[[fr:IMG (format de fichier)]]
+[[zh:.img]]</rev></revisions></page></pages></query></api>

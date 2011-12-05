@@ -1,0 +1,39 @@
+<?xml version="1.0"?><api><query><pages><page pageid="11973369" ns="0" title="Apple Software Restore"><revisions><rev xml:space="preserve">{{Infobox Software
+| name = Apple Software Restore
+| logo = 
+| screenshot = 
+| caption = 
+| author = 
+| developer = [[Apple Computer]]
+| released = 
+| latest release version = 100
+| latest release date = 
+| latest preview version = 
+| latest preview date = 
+| operating system = [[Mac OS X]]
+| platform = 
+| language = 
+| status = 
+| genre = [[disk image]] deployment
+| license = 
+| website = 
+}}
+'''asr''' or '''Apple Software Restore''' is a [[command line]] [[software utility|utility]] in [[Mac OS X]] used to apply a DMG [[disk image]] to a selected volume or [[mount point]] on a [[file system]]. It is often used for cloning large numbers of [[Macintosh]] computers. ''Apple Software Restore'' can read an image locally or from a server via [[HTTP]] or its own multicast asr:// [[URI]].
+
+'''asr''' has two methods it can use to restore an image to a volume: it can either copy items in a file-by-file mode, or it can copy the image as a (optionally compressed) stream of bytes. As the latter method does not need to go through a complicated filesystem it is much faster, typically being limited only by the speeds of the drives or network connections involved. But in order to use this faster method the dmg involved must be checksummed, and in some cases the files re-ordered inside the image. This is also done by the same binary.
+
+The graphical [[Disk Utility]] uses asr processes in the background to perform restores.&lt;ref&gt;http://www.informit.com/articles/article.aspx?p=169576&amp;seqNum=10&lt;/ref&gt;
+
+==See also==
+* [[Disk cloning]]
+* [[List of disk cloning software]]
+
+==References==
+&lt;references/&gt;
+
+{{mac-stub}}
+
+{{Mac OS X}}
+
+[[Category:Mac OS X]]
+[[Category:Disk cloning]]</rev></revisions></page></pages></query></api>

@@ -1,0 +1,130 @@
+<?xml version="1.0"?><api><query><pages><page pageid="335605" ns="0" title="Audacity"><revisions><rev xml:space="preserve">{{About|the audio software|the meaning of the term and other uses}}
+{{Infobox software
+| name                 = Audacity
+| logo                 = [[File:Audacity.svg|80px]]
+| screenshot           = [[File:Audacity Ubuntu.png|250px]]
+| caption              = Audacity 1.3.12 Beta
+| developer            = [http://audacity.sourceforge.net/about/credits The Audacity Team]
+| released             = 28 May 2000&lt;ref name=&quot;irelease&quot;&gt;{{cite web|url=http://audacity.sourceforge.net/about/credits|title=Audacity: Credits|accessdate=2008-08-15}}&lt;/ref&gt;
+| frequently_updated   = yes&lt;!-- Release version update? Don't edit this page, just click on the version number! --&gt;
+| programming language = [[C (programming language)|C]] and [[C++]] (using the [[wxWidgets]] [[Widget toolkit|toolkit]])&lt;ref name=&quot;SourceForgeJul04&quot;&gt;{{cite web|url = http://sourceforge.net/potm/potm-2004-07.php|title =Project of the Month July 2004 - Audacity |accessdate = 2008-11-27|last = SourceForge|authorlink = |year = 2004|month = July}}&lt;/ref&gt;&lt;ref name=&quot;UN2004&quot;&gt;{{cite web|url = http://www.unctad.org/en/docs/ecdr2004ch3_en.pdf|title =E-Commerce and Development Report 2004|accessdate = 2008-11-27|last =United Nations Conference on Trade and Development|authorlink = |year = 2004}}&lt;/ref&gt;
+| operating system     = [[Microsoft Windows]], [[Mac&amp;nbsp;OS&amp;nbsp;X]], [[Linux]], [[Unix]]
+| language             = [[Audacity#Language support|Over 20 languages]]
+| genre                = [[Digital audio editor]]
+| license              = [[GNU GPL]] v2+&lt;ref name='gplv3'&gt;
+{{cite web
+| url         = http://audacity.sourceforge.net/about/license
+| title       = License, and Advice for Vendors and Distributors
+| author      = Audacity Team
+| accessdate  = 2010-02-23
+}}&lt;/ref&gt;
+| website              = [http://audacity.sourceforge.net/ audacity.sourceforge.net]
+}}
+'''Audacity''' is a [[free software]], [[cross-platform]] [[digital audio editor]] and recording application. It is available for [[Microsoft Windows|Windows]], [[Mac&amp;nbsp;OS&amp;nbsp;X]], [[Linux]] and [[Berkeley Software Distribution|BSD]].
+
+Audacity was created by Dominic Mazzoni while he was a graduate student at [[Carnegie Mellon University]]. Mazzoni now works at [[Google]], but is still the main developer and maintainer of Audacity, with help from many others around the world.
+
+The latest release of Audacity is 1.3.13, a [[Software release life cycle#Beta|beta]], released on 11 April 2011.&lt;ref&gt;http://audacity.sourceforge.net/ Retrieved 2011-04-11.&lt;/ref&gt; As of 10 October 2011, it was the 11th most popular download from [[SourceForge.net]], with 76.5 million downloads.&lt;ref&gt;{{cite web |url=http://sourceforge.net/top/topalltime.php?type=downloads |title=SourceForge.net: All-Time Top Downloads |accessdate=29 October 2010}}&lt;/ref&gt; Audacity won the [[SourceForge.net]] 2007 Community Choice Award for Best Project for Multimedia.&lt;ref&gt;{{cite web |url=http://sourceforge.net/community/index.php/landing-pages/cca07/ |title=SourceForge.net: 2007 Community Choice Awards |accessdate=2008-01-19}}&lt;/ref&gt;
+
+==Features and usage==
+Audacity can also be used for post-processing of all types of audio, including [[podcast]]s by adding effects such as normalization, trimming, and fading in and out.&lt;ref&gt;{{cite web |url=http://www.packtpub.com/article/podcasting-with-linux-command-line-tools-and-audacity |title=Podcasting with Linux Command Line Tools and Audacity |accessdate=2008-01-19}}&lt;/ref&gt; Audacity has also been used to record and mix entire albums, such as by [[tUnE-yArDs]].&lt;ref&gt;{{cite news |url=http://www.newyorker.com/arts/critics/musical/2011/05/02/110502crmu_music_frerejones |title = World of Wonder |work=[[The New Yorker]] |date=May 2, 2011}}&lt;/ref&gt; It is also currently used in the [[OCR (examination board)|OCR]] National Level 2 [[information communication technology|ICT]] course for the sound creation unit.
+
+Audacity's features include the following:
+*Importing and exporting of [[WAV]], [[Audio Interchange File Format|AIFF]], [[MP3]] (via the [[LAME]] encoder, downloaded separately), [[Ogg]] [[Vorbis]], and all [[file format]]s supported by [[libsndfile]] library.  Versions 1.3.2 and later support [[Free Lossless Audio Codec]] (FLAC).&lt;ref&gt;{{cite web |url=http://audacity.sourceforge.net/about/news?id=2006-10-30/1.3.2-release&amp;lang=en |title=Audacity 1.3.2 a 1.2.5 released |author=Audacity development team |date=2006-10-30 |accessdate=2010-01-19}}&lt;/ref&gt;  Version 1.3.6 and later also support additional formats such as [[Windows Media Audio|WMA]], [[Advanced Audio Coding|AAC]], [[Adaptive Multi-Rate audio codec|AMR]] and [[AC3]] via the optional [[FFmpeg]] library.
+*Recording and playing back sounds
+*Editing via [[Cut, copy, and paste|Cut, Copy and Paste]] (with unlimited levels of [[Undo]])
+*Multitrack mixing
+*A large array of digital effects and plug-ins. Additional effects can be written with [[Nyquist (programming language)|Nyquist]]
+*Built-in [[LADSPA]] plug-in support. [[Virtual Studio Technology|VST]] support available through an optional VST Enabler.&lt;ref&gt;{{citeweb|url=http://audacity.sourceforge.net/download/plugins |title=Audacity: Plug-Ins and Libraries |author=Audacity development team |accessdate=2011-01-28}}&lt;/ref&gt;
+*Amplitude envelope editing
+*Noise Removal based on sampling the noise to be removed. Surface noise from records, for example, can be removed with hardly any discernable effect on the music.
+*Audio [[spectrum analysis]] using the [[Fourier transformation]] algorithm
+*Support for multi-channel modes with [[sampling rate]]s up to 96&amp;nbsp;kHz with 32 bits per sample
+*Precise adjustments to the audio's speed while maintaining pitch (Audacity calls it changing [[tempo]]), in order to synchronize it with video or run for a predetermined length of time
+*Changes to the audio's pitch without changing the speed
+*Features of modern multi-track audio software&lt;ref&gt;{{cite web|url=http://kellysmusic.ca/chart/compchart.asp?chartid=6 |title=Compare Sequencing &amp; Multi-track Recording - Kelly's Music &amp; Computers Comparison Charts |publisher=Kellysmusic.ca |date= |accessdate=2009-12-16}}&lt;/ref&gt; including navigation controls, zoom and single track edit, project pane and XY project navigation, non-destructive and destructive effect processing, audio file manipulation (cut, copy, paste)
+*Conversion of cassette tapes or records into digital tracks by automatically splitting the audio source into multiple tracks based on silences in the source material
+*Support for multiple platforms â Audacity works on Windows, Mac&amp;nbsp;OS&amp;nbsp;X, and [[Unix-like]] systems (including [[Linux]] and [[Berkeley Software Distribution|BSD]]), among others
+**The latest stable version supports Windows 98/ME/2000/XP/Vista, but Windows 95 and NT are not supported. Windows 7 support is still provisional. For Windows 7, the developers recommend the latest 1.3.x Beta&lt;ref name=&quot;Windows&quot;&gt;{{cite web|url = http://audacity.sourceforge.net/download/windows|title = Audacity - Windows|accessdate = 2008-10-11|last = Audacity|authorlink = |year = undated}}&lt;/ref&gt;
+*Audacity uses the [[wxWidgets]] software [[library (computer science)|library]] to provide a similar [[graphical user interface]] on several different [[operating system]]s.
+
+==Limitations==
+A plug-in is required for [[Virtual Studio Technology|VST]] plug-ins in Audacity 1.2.x.&lt;ref&gt;{{cite web|url=http://www.audacityteam.org/manual/index.php?title=FAQ:Installation_and_Plug-Ins |title=FAQ:Installation and Plug-Ins - Audacity Manual |publisher=Audacityteam.org |date=2009-11-25 |accessdate=2009-12-16}}&lt;/ref&gt; Audacity lacks dynamic equalizer controls, real time effects and support for scrubbing.&lt;ref name=&quot;FeatureRequests&quot;&gt;{{cite web|url = http://audacityteam.org/wiki/index.php?title=Feature_Requests|title = Audacity Feature Requests|accessdate = 2008-11-08|last = Audacity Project|authorlink = |year = 2008|month = November}}&lt;/ref&gt; [[MIDI]] files can only be displayed.&lt;ref&gt;{{cite web|url=http://www.audacityteam.org/manual/index.php?title=Quick_Guide |title=Quick Guide - Audacity Manual |publisher=Audacityteam.org |date= |accessdate=2009-12-16}}&lt;/ref&gt;
+
+Only &quot;provisional&quot; support is provided for Windows 7, although the program can be made to run under it with certain known issues, involving launching the application, recording and playback and the interface. Development of the Audacity 1.3 beta series is focusing on providing full Windows 7 support.&lt;ref&gt;[http://wiki.audacityteam.org/index.php?title=Windows_7_OS Windows 7 OS]&lt;/ref&gt;
+
+Audacity does not currently support WMA, AAC, or most other proprietary or restricted file formats.&lt;ref&gt;[http://audacity.sourceforge.net/about/features Audacity Features]&lt;/ref&gt;
+
+==Language support==
+In addition to [[English language]] help, the [[ZIP (file format)|ZIP file]] of the downloadable Audacity software program includes help files for [[Afrikaans]], [[Arabic language|Arabic]], [[Basque language|Basque]], [[Bulgarian language|Bulgarian]], [[Catalan language|Catalan]], [[Chinese (simplified)]], [[Chinese (traditional)]], [[Czech language|Czech]], [[Danish language|Danish]], [[Dutch language|Dutch]], [[Finnish language|Finnish]], [[French language|French]], [[Galician language|Galician]], [[German language|German]], [[Greek language|Greek]], [[Hungarian language|Hungarian]], [[Irish language|Irish]], [[Italian language|Italian]], [[Japanese language|Japanese]], [[Lithuanian language|Lithuanian]], [[Macedonian language|Macedonian]], [[Norwegian language|Norwegian]] ([[BokmÃ¥l]]), [[Polish language|Polish]], [[Portuguese language|Portuguese]], [[Romanian language|Romanian]], [[Russian language|Russian]], [[Slovak language|Slovak]], [[Slovenian language|Slovenian]], [[Spanish language|Spanish]], [[Swedish language|Swedish]], [[Turkish language|Turkish]], [[Ukrainian language|Ukrainian]] and [[Welsh language|Welsh]] in its user interface. A partial [[Bengali language|Bengali]] help file is also included.&lt;ref&gt;[http://wiki.audacityteam.org/index.php?title=Changing_the_current_language Changing the current language]&lt;/ref&gt;
+
+The Audacity website also provides [[tutorial]]s in several languages.&lt;ref&gt;[http://wiki.audacityteam.org/wiki/MultiLingual MultiLingual]&lt;/ref&gt;
+
+==See also==
+{{Portal|Free software}}
+* [[List of free software for audio]]
+* [[List of Linux audio software]]
+* [[Multitrack recording]]
+
+==References==
+{{Reflist|colwidth=30em}}
+
+==External links==
+{{Commons|Audacity}}
+{{Wikiversity}}
+*{{Official|http://audacity.sourceforge.net/}}
+*[http://audacityteam.org/wiki/index.php?title=Main_Page Audacity Wiki]
+*[http://arstechnica.com/guides/tweaks/linux-audio.ars/3 Editing audio in Linux:Audacity]
+
+{{Audio editors}}
+{{FLOSS}}
+
+&lt;!--Please don't add less specific categories to this article, such as &quot;Category:Audio editors&quot; as these are already covered in sub categories such as &quot;Category: Free audio editors&quot;--&gt;
+
+[[Category:2000 software]]
+[[Category:Digital audio recording]]
+[[Category:Free audio editors]]
+[[Category:Free cross-platform software]]
+[[Category:Free music software]]
+[[Category:Free software programmed in C]]
+[[Category:Free software programmed in C++]]
+[[Category:Mac OS X software]]
+[[Category:Podcasting software]]
+[[Category:Software that uses wxWidgets]]
+
+[[af:Audacity]]
+[[ca:Audacity]]
+[[cs:Audacity]]
+[[da:Audacity]]
+[[de:Audacity]]
+[[et:Audacity]]
+[[el:Audacity]]
+[[es:Audacity]]
+[[eu:Audacity]]
+[[fa:Ø§ÙØ¯Ø³ÛØªÛ]]
+[[fr:Audacity]]
+[[gl:Audacity]]
+[[ko:Audacity]]
+[[id:Audacity]]
+[[it:Audacity]]
+[[hu:Audacity]]
+[[lij:Audacity]]
+[[mk:Audacity]]
+[[ml:à´à´¡à´¾à´¸à´¿à´±àµà´±à´¿]]
+[[nl:Audacity]]
+[[ja:Audacity]]
+[[no:Audacity]]
+[[nn:Audacity]]
+[[pl:Audacity]]
+[[pt:Audacity]]
+[[ru:Audacity]]
+[[scn:Audacity]]
+[[simple:Audacity]]
+[[sk:Audacity]]
+[[fi:Audacity (ohjelma)]]
+[[sv:Audacity]]
+[[th:à¸­à¸­à¹à¸à¸à¸´à¸à¸µ]]
+[[tr:Audacity]]
+[[uk:Audacity]]
+[[vi:Audacity]]
+[[zh:Audacity]]</rev></revisions></page></pages></query></api>

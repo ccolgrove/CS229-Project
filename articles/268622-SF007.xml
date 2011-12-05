@@ -1,0 +1,256 @@
+<?xml version="1.0"?><api><query><pages><page pageid="268622" ns="0" title="Antivirus software"><revisions><rev xml:space="preserve">{{Redirect|Antivirus|antiviral medication|Antiviral drug}}
+{{Primary sources|date=February 2011}}
+{{pp-move-indef}}
+
+'''Antivirus''' or '''anti-virus''' '''[[software]]''' is used to prevent, detect, and remove [[malware]], including but not limited to [[computer virus]]es, [[computer worm]], [[Trojan horse (computing)|trojan horses]], [[spyware]] and [[adware]]. This page talks about the software used for the prevention and removal of such [[threat (computer)|threats]], rather than [[computer security]] implemented by software methods.
+
+A variety of strategies are typically employed. Signature-based detection involves searching for known patterns of data within [[executable code]]. However, it is possible for a computer to be infected with new malware for which no signature is yet known. To [[countermeasure (computer)|counter]] such so-called [[zero-day virus|zero-day threats]], [[Heuristics#Computer_science|heuristics]] can be used. One type of heuristic approach, generic signatures, can identify new viruses or variants of existing viruses by looking for known malicious code, or slight variations of such code, in files. Some antivirus software can also predict what a file will do by running it in a [[sandbox (computer security)|sandbox]] and analyzing what it does to see if it performs any malicious actions.
+
+No matter how useful antivirus software can be, it can sometimes have drawbacks. Antivirus software can impair a [[computer performance|computer's performance]]. Inexperienced users may also have trouble understanding the prompts and decisions that antivirus software presents them with. An incorrect decision may lead to a security breach. If the antivirus software employs heuristic detection, success depends on achieving the right balance between [[false positive]]s and [[false negative]]s. False positives can be as destructive as false negatives.&lt;ref&gt;{{cite web | title=Softpedia Exclusive Interview: Avira 10 | url=http://news.softpedia.com/news/Avira-s-New-Anti-Malware-Fleet-139829.shtml| work=Ionut Ilascu | publisher=Softpedia | date=14 April 2010  | accessdate=2011-09-11}}&lt;/ref&gt; Finally, antivirus software generally runs at the highly trusted [[kernel (computing)|kernel]] level of the [[operating system]], creating a potential avenue of [[attack (computer)|attack]].&lt;ref&gt;{{cite web | title=Norton AntiVirus ignores malicious WMI instructions | url=http://www.zdnet.com.au/news/security/soa/Norton-AntiVirus-ignores-malicious-WMI-instructions/0,130061744,139163678,00.htm | work=Munir Kotadia | publisher=CBS Interactive | date=21 October 2004  | accessdate=2009-04-05}}&lt;/ref&gt;
+
+== History ==
+[[Image:ClamTK3.08.jpg|thumb|right|An example of free antivirus software: [[Clam AntiVirus|ClamTk 3.08]].]]
+{{See also|Timeline of notable computer viruses and worms}}
+Most of the computer viruses written in the early and mid 1980s were limited to self-reproduction and had no specific damage routine built into the code.&lt;ref&gt;[http://csrc.nist.gov/publications/nistir/threats/subsubsection3_3_1_1.html History of viruses]&lt;/ref&gt; That changed when more and more programmers became acquainted with virus programming and created viruses that manipulated or even destroyed data on infected computers.
+
+There are competing claims for the innovator of the first antivirus product. Possibly the first publicly documented removal of a computer virus in the wild was performed by [[Bernd Fix]] in 1987.&lt;ref&gt;[http://www.viruslist.com/en/viruses/encyclopedia?chapter=153311150 Kaspersky Lab Virus list]&lt;/ref&gt;&lt;ref&gt;{{cite web
+ | url = http://www.research.ibm.com/antivirus/timeline.htm | publisher = [[IBM]] | title = Virus timeline | first = Joe | last = Wells | date = 1996-08-30 | accessdate = 2008-06-06}}&lt;/ref&gt; There were also two antivirus applications for the [[Atari ST]] platform developed in 1987. The first one was [[G Data]] &lt;ref name=&quot;Gdata&quot;&gt; {{Cite web|url = http://www.gdatasoftware.co.uk/security-labs/news/news-details/article/1532-g-data-presents-security-first.html|title = G Data presents security firsts at CeBIT 2010|accessdate = 22 August 2011|last = G Data Software AG |year = 2011}}&lt;/ref&gt; and second was [[UVK 2000]]&lt;ref name=&quot;UniqueNameOfRef&quot;&gt; {{Cite web|url = http://www.42nd.net/uvk/|title = The ultimate Virus Killer UVK 2000|accessdate = 22 August 2011|last = Karsmakers |first = Richard |authorlink = |year = 2010|month = January}}&lt;/ref&gt;.
+
+[[Fred Cohen]], who published one of the first academic papers on computer viruses in 1984,&lt;ref&gt;[http://www.eecs.umich.edu/%7Eaprakash/eecs588/handouts/cohen-viruses.html Fred Cohen 1984 &quot;Computer Viruses â Theory and Experiments&quot;]&lt;/ref&gt; began to develop strategies for antivirus software in 1988&lt;ref&gt;[http://portal.acm.org/citation.cfm?id=51535 Fred Cohen 1988 &quot;On the implications of Computer Viruses and Methods of Defense&quot;]&lt;/ref&gt; that were picked up and continued by later antivirus software developers.
+
+Also in 1988 a mailing list named VIRUS-L&lt;ref&gt;[http://securitydigest.org/virus/mirror/www.phreak.org-virus_l/ VIRUS-L mailing list archive]&lt;/ref&gt; was started on the [[BITNET]]/[[European Academic Research Network|EARN]] network where new viruses and the possibilities of detecting and eliminating viruses were discussed. Some members of this mailing list like [[John McAfee]] or [[Eugene Kaspersky]] later founded software companies that developed and sold commercial antivirus software.
+
+Before [[internet]] connectivity was widespread, viruses were typically spread by infected [[floppy disk]]s. Antivirus software came into use, but was updated relatively infrequently. During this time, virus checkers essentially had to check executable files and the boot sectors of floppy disks and hard disks. However, as internet usage became common, viruses began to spread online.&lt;ref&gt;{{cite web|url = http://www.pandasecurity.com/homeusers/media/press-releases/viewnews?noticia=4974&amp;entorno=&amp;ver=&amp;pagina=&amp;producto=|title = (II) Evolution of computer viruses|accessdate = 2009-06-20|last = Panda Security|authorlink = |year = 2004 |month = April}}&lt;/ref&gt;
+
+Over the years it has become necessary for antivirus software to check an increasing variety of files, rather than just executables, for several reasons:
+* Powerful [[macro (computer science)|macro]]s used in [[word processor]] applications, such as [[Microsoft Word]], presented a risk. Virus writers could use the macros to write viruses embedded within documents. This meant that computers could now also be at risk from infection by opening documents with hidden attached macros.&lt;ref&gt;{{Harvnb|Szor|2005|pp=66â67}}&lt;/ref&gt;
+* The possibility of embedding executable objects inside otherwise non-executable file formats can make opening those files a risk.&lt;ref&gt;{{cite web|url = http://news.cnet.com/2100-1001-271267.html|title = New virus travels in PDF files|accessdate = 2011-10-29 |date=7 August 2001 }}&lt;/ref&gt;
+* Later email programs, in particular Microsoft's [[Outlook Express]] and [[Microsoft Outlook|Outlook]], were [[vulnerability (computing)|vulnerable]] to viruses embedded in the email body itself. A user's computer could be infected by just opening or previewing a message.&lt;ref&gt;{{cite web|url = http://www.slipstick.com/outlook/antivirus.htm|title = Protecting Microsoft Outlook against Viruses|accessdate = 2009-06-18|last =  Slipstick Systems|authorlink = |year = 2009|month = February}}&lt;/ref&gt;
+
+As always-on broadband connections became the norm, and more and more viruses were released, it became essential to update virus checkers more and more frequently. Even then, a new [[zero-day virus]] could become widespread before antivirus companies released an update to protect against it.
+
+== Identification methods ==
+[[Image:MalwarebytesMainGUI.png|thumb|right|[[Malwarebytes]]' [[Malwarebytes' Anti-Malware|Anti-Malware]] version 1.46 - a proprietary [[freeware]]  antimalware product]]
+There are several methods which antivirus software can use to identify malware.
+
+'''Signature based detection''' is the most common method. To identify viruses and other malware, antivirus software compares the contents of a file to a [[associative array|dictionary]] of virus signatures. Because viruses can embed themselves in existing files, the entire file is searched, not just as a whole, but also in pieces.&lt;ref name=&quot;About2009&quot;&gt;{{cite web|url = http://antivirus.about.com/od/whatisavirus/a/virussignature.htm|title = What is a Virus Signature? |accessdate = 2009-06-18|last = Landesman|first = Mary|authorlink = |year = 2009}}&lt;/ref&gt;
+
+'''[[Heuristic]]-based detection''', like malicious activity detection, can be used to identify unknown viruses.
+
+'''File emulation''' is another heuristic approach. File emulation involves executing a program in a [[virtual machine|virtual environment]] and logging what actions the program performs. Depending on the actions logged, the antivirus software can determine if the program is malicious or not and then carry out the appropriate disinfection actions.&lt;ref&gt;{{Harvnb|Szor|2005|pp=474â481}}&lt;/ref&gt;
+
+=== Signature-based detection ===
+Traditionally, antivirus software heavily relied upon signatures to identify malware. This can be very effective, but cannot defend against malware unless samples have already been obtained and signatures created. Because of this, signature-based approaches are not effective against new, unknown viruses.
+
+As new viruses are being created each day, the signature-based detection approach requires frequent updates of the virus signature dictionary. To assist the antivirus software companies, the software may allow the user to upload new viruses or variants to the company, allowing the virus to be analyzed and the signature added to the dictionary.&lt;ref name=&quot;About2009&quot; /&gt;
+
+Although the signature-based approach can effectively contain virus outbreaks, virus authors have tried to stay a step ahead of such software by writing &quot;[[oligomorphic code|oligomorphic]]&quot;, &quot;[[polymorphic code|polymorphic]]&quot; and, more recently, &quot;[[Metamorphic code|metamorphic]]&quot; viruses, which encrypt parts of themselves or otherwise modify themselves as a method of disguise, so as to not match virus signatures in the dictionary.&lt;ref&gt;{{Harvnb|Szor|2005|pp=252â288}}&lt;/ref&gt;
+
+=== Heuristics ===
+Some more sophisticated antivirus software uses [[heuristic (computer science)|heuristic]] analysis to identify new malware or variants of known malware.
+
+Many viruses start as a single infection and through either [[Mutation (genetic algorithm)|mutation]] or refinements by other attackers, can grow into dozens of slightly different strains, called variants. Generic detection refers to the detection and removal of multiple threats using a single virus definition.&lt;ref&gt;{{cite web |url= http://www.viruslist.com/en/viruses/glossary?glossid=189210517|title=Generic detection |accessdate=2009-02-24 |work= |publisher=Kaspersky |date= }}&lt;/ref&gt;
+
+For example, the [[Vundo]] [[trojan horse (computing)|trojan]] has several family members, depending on the antivirus vendor's classification. [[Symantec]] classifies members of the Vundo family into two distinct categories, ''Trojan.Vundo'' and ''Trojan.Vundo.B''.&lt;ref&gt;{{cite web|url = http://www.symantec.com/security_response/writeup.jsp?docid=2004-112111-3912-99|title = Trojan.Vundo|accessdate = 2009-04-14|last = Symantec Corporation|authorlink = |year = 2009|month = February}}&lt;/ref&gt;&lt;ref&gt;{{cite web|url = http://www.symantec.com/security_response/writeup.jsp?docid=2005-042810-2611-99|title = Trojan.Vundo.B|accessdate = 2009-04-14|last = Symantec Corporation|authorlink = |year = 2007|month = February}}&lt;/ref&gt;
+
+While it may be advantageous to identify a specific virus, it can be quicker to detect a virus family through a generic signature or through an inexact match to an existing signature. Virus researchers find common areas that all viruses in a family share uniquely and can thus create a single generic signature. These signatures often contain non-contiguous code, using [[wildcard character]]s where differences lie. These wildcards allow the scanner to detect viruses even if they are padded with extra, meaningless code.&lt;ref&gt;{{cite web |url=http://www.extremetech.com/article2/0,2845,1154648,00.asp |title=Antivirus Research and Detection Techniques |accessdate=2009-02-24 |work= |publisher= ExtremeTech|date= }}&lt;/ref&gt; A detection that uses this method is said to be &quot;heuristic detection.&quot;
+
+=== Rootkit detection ===
+{{Main|Rootkit}}
+Anti-virus software can attempt to scan for rootkits; a [[rootkit]] is a type of [[malware]] that is designed to gain administrative-level control over a computer system without being detected. Rootkits can change how the [[operating system]] functions and in some cases can tamper with the anti-virus program and render it ineffective. Rootkits are also difficult to remove, in some cases requiring a complete re-installation of the operating system.&lt;ref name=&quot;zsecurity.com&quot;&gt;[http://www.zsecurity.com/articles-rootkits.php Rootkit: Definition, Prevention and Removal]&lt;/ref&gt;&lt;ref&gt;[http://www.f-secure.com/en_EMEA/security/virus-removal/virus-information/encyclopedia/encyclopedia_rootkit.html Rootkit]&lt;/ref&gt;
+
+== Issues of concern ==
+=== Unexpected renewal costs ===
+Some commercial antivirus software [[end-user license agreement]]s include a clause that the [[subscription]] will be automatically renewed, and the purchaser's credit card automatically billed, at the renewal time without explicit approval. For example, [[McAfee]] requires users to unsubscribe at least 60 days before the expiration of the present subscription&lt;ref&gt;{{cite web|url = http://michaelkelly.blogs.com/buyingdangerously/2006/10/bad_mcafee_on_a.html|title = Buying Dangerously|accessdate = 2009-11-29|last = Kelly|first = Michael|authorlink = |year = 2006|month = October}}&lt;/ref&gt; while [[BitDefender]] sends notifications to unsubscribe 30 days before the renewal.&lt;ref&gt;{{cite web|url = http://www.bitdefender.com/site/KnowledgeBase/consumer/#542|title = Automatic Renewal|accessdate = 2009-11-29|last = Bitdefender|authorlink = |year = 2009}}&lt;/ref&gt; [[Norton Antivirus]] also renews subscriptions automatically by default.&lt;ref&gt;{{cite web|url = http://www.symantecstore.com/dr/sat1/ec_main.entry25?page=OnGoingProtection&amp;client=Symantec&amp;sid=49997&amp;CUR=840&amp;DSP=&amp;PGRP=0&amp;ABCODE=&amp;CACHE_ID=189236|title = Ongoping Protection|accessdate = 2009-11-29|last = [[Symantec]]|authorlink = |year = undated}}&lt;/ref&gt;
+
+=== Rogue security applications ===
+{{main|Rogue security software}}
+Some apparent antivirus programs are actually [[malware]] masquerading as legitimate software, such as [[WinFixer]], [[MS Antivirus]], and [[Mac Defender]].&lt;ref&gt;{{cite web|url = http://www.spywarewarrior.com/rogue_anti-spyware.htm|title = Rogue/Suspect Anti-Spyware Products &amp; Web Sites|accessdate = 2009-11-29 |last = SpywareWarrior |authorlink = |year = 2007}}&lt;/ref&gt;
+
+=== Problems caused by false positives ===
+A &quot;false positive&quot; is when antivirus software identifies a non-malicious file as a virus.  When this happens, it can cause serious problems.  For example, if an antivirus program is configured to immediately delete or quarantine infected files, a false positive in an essential file can render the [[operating system]] or some applications unusable.&lt;ref&gt;{{cite web|url=http://arstechnica.com/microsoft/news/2008/11/avg-incorrectly-flags-user32-dll-in-windows-xp-sp2sp3.ars|title=AVG incorrectly flags user32.dll in Windows XP SP2/SP3|accessdate=2011-02-24|author=Emil Protalinski|date=November 11, 2008|publisher=''[[Ars Technica]]''}}&lt;/ref&gt;  In May 2007, a faulty virus signature issued by [[Symantec]] mistakenly removed essential operating system files, leaving thousands of PCs unable to [[boot]].&lt;ref&gt;{{cite web|title=Flawed Symantec update cripples Chinese PCs|url=http://news.cnet.com/Flawed-Symantec-update-cripples-Chinese-PCs/2100-1002_3-6186271.html|author=Aaron Tan|publisher=''[[CNET Networks]]''|date=May 24, 2007|accessdate=2009-04-05}}&lt;/ref&gt;  Also in May 2007, the [[Executable|executable file]] required by [[Pegasus Mail]] was falsely detected by [[Norton AntiVirus]] as being a Trojan and it was automatically removed, preventing Pegasus Mail from running. Norton anti-virus had falsely identified three releases of Pegasus Mail as malware, and would delete the Pegasus Mail installer file when that happened.&lt;ref name=&quot;v45x&quot;&gt;{{cite web|url=http://www.pmail.com/v45x.htm|title=January 2010 - Pegasus Mail v4.52 Release|accessdate=2010-05-21|author=David Harris|date=June 29, 2009|publisher=''[[Pegasus Mail]]''}}&lt;/ref&gt; In response to this Pegasus Mail stated:
+
+{{cquote|On the basis that Norton/Symantec has done this for every one of the last three releases of Pegasus Mail, we can only condemn this product as too flawed to use, and recommend in the strongest terms that our users cease using it in favour of alternative, less buggy anti-virus packages.&lt;ref name=&quot;v45x&quot; /&gt;}}
+
+In April 2010, [[McAfee VirusScan]] detected svchost.exe, a normal Windows binary, as a virus on machines running Windows XP with Service Pack 3, causing a reboot loop and loss of all network access.&lt;ref&gt;{{cite news|url=http://isc.sans.org/diary.html?storyid=8656|title=McAfee DAT 5958 Update Issues|date=21 April 2010|accessdate=22 April 2010}}&lt;/ref&gt;&lt;ref&gt;{{cite news|url=http://www.engadget.com/2010/04/21/mcafee-update--shutting-down-xp-machines/|title=Botched McAfee update shutting down corporate XP machines worldwide|date=21 April 2010|accessdate=22 April 2010}}&lt;/ref&gt;
+
+In December 2010, a faulty update on the [[AVG (software)|AVG]] anti-virus suite damaged 64-bit versions of Windows 7, rendering it unable to boot, due to an endless boot loop created.&lt;ref&gt;{{cite web|url=http://www.theregister.co.uk/2010/12/02/avg_auto_immune_update/|title=Horror AVG update ballsup bricks Windows 7|author=John Leyden|publisher=''[[The Register]]''|accessdate=2010-12-02|date=December 2, 2010}}&lt;/ref&gt;
+
+In October 2011, [[Microsoft Security Essentials]] removed the [[Google Chrome]] browser, rival to Microsoft's own [[Internet Explorer]]. MSE flagged Chrome as a [[Zeus (trojan horse)|Zbot banking trojan]].&lt;ref&gt;{{cite|url=http://www.theinquirer.net/inquirer/news/2113892/mse-false-positive-detection-forces-google-update-chrome|title=MSE false positive detection forces Google to update Chrome|accessdate=Monday, 3 October 2011}}&lt;/ref&gt;
+
+When Microsoft Windows becomes damaged by faulty anti-virus products, fixing the damage to Microsoft Windows incurs technical support costs and businesses can be forced to close whilst remedial action is undertaken.&lt;ref&gt;{{cite|url=http://www.zdnet.co.uk/news/security-management/2010/04/27/mcafee-to-compensate-businesses-for-buggy-update-40088779/|title=McAfee to compensate businesses for buggy update|accessdate=Thursday, 2 December 2010}}&lt;/ref&gt;&lt;ref&gt;{{cite|url=http://news.cnet.com/8301-1009_3-20003074-83.html|title=Buggy McAfee update whacks Windows XP PCs|accessdate=Thursday, 2 December 2010}}&lt;/ref&gt;
+
+=== System and interoperability related issues ===
+Running multiple antivirus programs concurrently can degrade performance and create conflicts.&lt;ref&gt;{{cite web|url = http://support.microsoft.com/default.aspx?scid=http://support.microsoft.com:80/support/kb/articles/Q189/2/64.ASP&amp;NoWebContent=1|title = Plus! 98: How to Remove McAfee VirusScan|accessdate = 2009-11-29|last = [[Microsoft]]|authorlink = |year = 2007|month = January}}&lt;/ref&gt; However, using a concept called [[multiscanning]], several companies (including [[G Data]]&lt;ref&gt;{{cite web|title=G-Data Internet Security 2010|url=http://www.pcworld.com/article/165600/gdata_internet_security_2010.html|author=Robert Vamosi|date=May 28, 2009|publisher=''[[PC World (magazine)|PC World]]|accessdate=2011-02-24}}&lt;/ref&gt; and [[Microsoft]]&lt;ref&gt;{{cite web|url=http://www.darkreading.com/vulnerability_management/security/antivirus/showArticle.jhtml?articleID=224700879|title=New Microsoft Forefront Software Runs Five Antivirus Vendors' Engines|publisher=''Darkreading''|author=Kelly Jackson Higgins|date=May 5, 2010|accessdate=2011-02-24}}&lt;/ref&gt;) have created applications which can run multiple engines concurrently.
+
+It is sometimes necessary to temporarily disable virus protection when installing major updates such as Windows Service Packs or updating graphics card drivers.&lt;ref&gt;{{cite web|url = http://support.microsoft.com/kb/950717|title = Steps to take before you install Windows XP Service Pack 3|accessdate = 2009-11-29|last = [[Microsoft]]|authorlink = |year = 2009|month = April}}&lt;/ref&gt; Active antivirus protection may partially or completely prevent the installation of a major update.
+
+A minority of software programs are not compatible with anti-virus software. For example, the [[TrueCrypt]] troubleshooting page reports that anti-virus programs can conflict with TrueCrypt and cause it to malfunction.&lt;ref&gt;{{cite web|url=http://www.truecrypt.org/docs/?s=troubleshooting|title=Troubleshooting|accessdate=2011-02-17}}&lt;/ref&gt;
+
+Support issues also exist around antivirus application interoperability with common solutions like [[VPN|SSL VPN remote access]] and [[network access control]] products.&lt;ref&gt;[http://www.cisco.com/en/US/ts/fn/632/fn63204.html Field Notice: FN - 63204 - Cisco Clean Access has Interoperability issue with Symantec Anti-virus - delays Agent start-up]&lt;/ref&gt; These technology solutions often have policy assessment applications which require that an up to date antivirus is installed and running. If the antivirus application is not recognized by the policy assessment, whether because the antivirus application has been updated or because it is not part of the policy assessment library, the user will be unable to connect.
+
+===Effectiveness===
+Studies in December 2007 showed that the effectiveness of antivirus software had decreased in the previous year, particularly against unknown or [[zero day attack]]s. The computer magazine ''[[c't]]'' found that detection rates for these threats had dropped from 40-50% in 2006 to 20-30% in 2007. At that time, the only exception was the [[NOD32]] antivirus, which managed a detection rate of 68 percent.&lt;ref&gt;{{cite web|publisher=''[[The Register|Channel Register]]''|url=http://www.channelregister.co.uk/2007/12/21/dwindling_antivirus_protection/|author=Dan Goodin|title=Anti-virus protection gets worse|date=December 21, 2007|accessdate=2011-02-24}}&lt;/ref&gt;
+
+The problem is magnified by the changing intent of virus authors. Some years ago it was obvious when a virus infection was present. The viruses of the day, written by amateurs, exhibited destructive behavior or [[pop-up ad|pop-up]]s. Modern viruses are often written by professionals, financed by [[Organized crime|criminal organization]]s.&lt;ref&gt;{{cite web|url=http://www.computerweekly.com/Articles/2007/07/13/225537/hacking-poses-threats-to-business.htm|title=Hacking poses threats to business|accessdate=2009-11-15|author=Dan Illett|publisher=''[[Computer Weekly]]''|date=July 13, 2007}}&lt;/ref&gt;
+
+Independent testing on all the major virus scanners consistently shows that none provide 100% virus detection. The best ones provided as high as 99.6% detection, while the lowest provided only 81.8% in tests conducted in February 2010. All virus scanners produce false positive results as well, identifying benign files as malware.&lt;ref&gt;{{cite web|url = http://www.av-comparatives.org/images/stories/test/ondret/avc_report25.pdf|title = Anti-Virus Comparative No. 25 |accessdate = 18 April 2010|last = AV Comparatives |authorlink = |year = 2010|month = February}}&lt;/ref&gt;
+
+Although methodologies may differ, some notable independent quality testing agencies include AV-Comparatives, [[ICSA Labs]], West Coast Labs, [[Virus Bulletin|VB100]] and other members of the Anti-Malware Testing Standards Organization.&lt;ref&gt;[http://www.computerworld.com/s/article/9178037/Guidelines_released_for_antivirus_software_tests Guidelines released for antivirus software tests]&lt;/ref&gt;
+
+===New viruses===
+Anti-virus programs are not always effective against new viruses, even those that use non-signature-based methods that should detect new viruses. The reason for this is that the virus designers test their new viruses on the major anti-virus applications to make sure that they are not detected before releasing them into the wild.&lt;ref&gt;{{cite web|url = http://www.zdnet.com.au/why-popular-antivirus-apps-do-not-work-139264249.htm?omnRef=NULL|title = Why popular antivirus apps 'do not work'|accessdate = 14 April 2010|last = Kotadia|first = Munir |authorlink = |year = 2006|month = July}}&lt;/ref&gt;
+
+Some new viruses, particularly [[Ransomware (malware)|ransomware]], use [[polymorphic code]] to avoid detection by virus scanners. Jerome Segura, a security analyst with [[ParetoLogic]], explained:&lt;ref name=&quot;CBC16Apr10&quot;&gt;{{cite news|url = http://www.cbc.ca/consumer/story/2010/04/16/con-adult-video-virus.html|title = Internet scam uses adult game to extort cash|accessdate = 17 April 2010|last = [[The Canadian Press]] |authorlink = |year = 2010|month = April | work=CBC News}}&lt;/ref&gt;
+
+{{cquote|It's something that they miss a lot of the time because this type of [ransomware virus] comes from sites that use a polymorphism, which means they basically randomize the file they send you and it gets by well-known antivirus products very easily. I've seen people firsthand getting infected, having all the pop-ups and yet they have antivirus software running and it's not detecting anything. It actually can be pretty hard to get rid of, as well, and you're never really sure if it's really gone. When we see something like that usually we advise to reinstall the operating system or reinstall backups.&lt;ref name=&quot;CBC16Apr10&quot; /&gt; }}
+
+A [[proof of concept]] virus has used the [[Graphics Processing Unit]] (GPU) to avoid detection from anti-virus software. The potential success of this involves bypassing the [[Central processing unit|CPU]] in order to make it much harder for security researchers to analyse the inner workings of such malware.&lt;ref&gt;[http://www.theregister.co.uk/2010/09/28/gpu_assisted_malware/ Researchers up evilness ante with GPU-assisted malware - Coming to a PC near you, by Dan Goodin]&lt;/ref&gt;
+
+===Rootkits===
+Detecting [[rootkit]]s is a major challenge for anti-virus programs. Rootkits have full administrative access to the computer and are invisible to users and hidden from the list of running processes in the [[task manager]]. Rootkits can modify the inner workings of the [[operating system]]&lt;ref&gt;[http://www.grc.com/sn/sn-009.txt GIBSON RESEARCH CORPORATION SERIES: Security Now!]&lt;/ref&gt; and tamper with antivirus programs.&lt;ref name=&quot;zsecurity.com&quot;/&gt;
+
+===Damaged files===
+Files which have been damaged by computer viruses are normally damaged beyond recovery.  Anti-virus software removes the virus code from the file during disinfection, but this does not always restore the file to its undamaged state.  In such circumstances, damaged files can only be restored from existing backups; installed software that is damaged requires re-installation.&lt;ref&gt;{{cite web|url=http://www-cs-faculty.stanford.edu/~eroberts/cs201/projects/viruses/anti-virus.html|title=How Anti-Virus Software Works|accessdate=2011-02-16}}&lt;/ref&gt;
+
+=== Firmware issues ===
+Active anti-virus software can interfere with a [[firmware]] update process.&lt;ref&gt;{{cite web
+|url=http://www.stevelarkins.freeuk.com/bthomehub_softwareupgrade.htm
+|title=BT Home Hub Firmware Upgrade Procedure
+|accessdate=2011-03-06
+}}&lt;/ref&gt;  Any writeable firmware in the computer can be infected by malicious code.&lt;ref&gt;{{cite web
+|url=http://www.techrepublic.com/blog/10things/the-10-faces-of-computer-malware/881
+|title=The 10 faces of computer malware
+|accessdate=2011-03-06
+|date=July 17, 2009
+}}&lt;/ref&gt;  This is a major concern, as an infected [[BIOS]] could require the actual BIOS chip to be replaced to ensure the malicious code is completely removed.&lt;ref&gt;{{cite web
+|url=http://www.tomshardware.co.uk/bios-virus-rootkit-security-backdoor,news-30759.html
+|title=New BIOS Virus Withstands HDD Wipes
+|accessdate=2011-03-06
+|date=Friday 27 March 2009
+}}&lt;/ref&gt;  Anti-virus software is not effective at protecting firmware and the [[motherboard]] BIOS from infection.&lt;ref&gt;{{cite web
+|url=http://www.phrack.com/archives/66/p66_0x07_Persistent%20BIOS%20infection_by_aLS%20and%20Alfredo.txt
+|title=Phrack Inc.  Persistent BIOS Infection
+|accessdate=2011-03-06
+|date=June 1, 2009
+}}&lt;/ref&gt;
+
+==Other methods==
+[[File:ClamAV0.95.2.png|right|thumb|A command-line virus scanner, [[ClamAV|Clam AV 0.95.2]], running a virus signature definition update, scanning a file and identifying a Trojan]]
+Installed antivirus software running on an individual computer is only one method of guarding against viruses. Other methods are also used, including cloud-based antivirus, firewalls and on-line scanners.
+
+===Cloud antivirus===
+Cloud antivirus is a technology that uses lightweight agent software on the protected computer, while offloading the majority of data analysis to the provider's infrastructure.&lt;ref&gt;{{cite web|url = http://blog.zeltser.com/post/1256199682/what-is-cloud-anti-virus|title = What Is Cloud Anti-Virus and How Does It Work?|accessdate = 2010-10-26|last = Zeltser|first = Lenny|authorlink = |year = 2010|month = October}}&lt;/ref&gt;
+
+One approach to implementing cloud antivirus involves scanning suspicious files using multiple antivirus engines. This approach was proposed by an early implementation of the cloud antivirus concept called CloudAV. CloudAV was designed to send programs or documents to a [[cloud computing|network cloud]] where multiple antivirus and behavioral detection programs are used simultaneously in order to improve detection rates. Parallel scanning of files using potentially incompatible antivirus scanners is achieved by spawning a virtual machine per detection engine and therefore eliminating any possible issues. CloudAV can also perform &quot;retrospective detection,&quot; whereby the cloud detection engine rescans all files in its file access history when a new threat is identified thus improving new threat detection speed. Finally, CloudAV is a solution for effective virus scanning on devices that lack the computing power to perform the scans themselves.&lt;ref&gt;{{cite web|url=http://www.informationweek.com/blog/main/archives/2008/08/antivirus_softw.html|title=Antivirus Software Heads for the Clouds|author=Jon Erickson|publisher=''[[Information Week]]''|authorlink = |date=August 6, 2008|accessdate=2010-02-24}}&lt;/ref&gt;
+
+===Network firewall===
+
+[[Firewall (computing)|Network firewalls]] prevent unknown programs and processes from accessing the system. However, they are not antivirus systems and make no attempt to identify or remove anything. They may protect against infection from outside the protected computer or [[LAN|network]], and limit the activity of any malicious software which is present by blocking incoming or outgoing requests on certain TCP/IP ports. A firewall is designed to deal with broader system threats that come from network connections into the system and is not an alternative to a virus protection system.
+
+===Online scanning===
+Some antivirus vendors maintain websites with free online scanning capability of the entire computer, critical areas only, local disks, folders or files. Periodic online scanning is a good idea for those that run antivirus applications on their computers because those applications are frequently slow to catch threats. One of the first things that malicious software does in an attack is disable any existing antivirus software and sometimes the only way to know of an attack is by turning to an online resource that isn't already installed on the infected computer.&lt;ref&gt;{{cite web|title=Online Anti-Virus Scans: A Free Second Opinion|author=Brian Krebs|url=http://voices.washingtonpost.com/securityfix/2007/03/online_antivirus_scans_a_free.html|date=March 9, 2007|publisher=''[[Washington Post]]''|accessdate=2011-02-24}}&lt;/ref&gt;
+
+===Specialist tools===
+[[Image:Rkhunter Ubuntu.png|thumb|right|Using [[rkhunter]] to scan for [[rootkit]]s on an [[Ubuntu (operating system)|Ubuntu]] [[Linux]] computer.]]
+Virus removal tools are available to help remove stubborn infections or certain types of infection. Examples include [[Trend Micro]]'s ''Rootkit Buster'',&lt;ref&gt;{{cite web|url=http://www.zdnet.com/blog/security/trend-micro-ships-free-rootkit-buster/14|title=Trend Micro ships free 'rootkit buster'|accessdate=2011-02-24|author=Ryan Naraine|date=February 2, 2007|publisher=''[[ZDNet]]''}}&lt;/ref&gt; and [[rkhunter]] for the detection of [[rootkit]]s, [[Avira]]'s ''AntiVir Removal Tool'',&lt;ref name=&quot;antivir&quot;&gt;{{cite web|url=http://www.pcmag.com/article2/0,2817,2361868,00.asp|title=Avira AntiVir Personal 10|accessdate=2011-02-24|author=Neil J. Rubenking|date=March 26, 2010|publisher=''[[PC Magazine]]''}}&lt;/ref&gt; ''[[PC Tools (company)|PCTools]] Threat Removal Tool'',&lt;ref&gt;{{cite web|url=http://www.pcmag.com/article2/0,2817,2369067,00.asp|title=PC Tools Spyware Doctor with AntiVirus 2011|accessdate=2011-02-24|publisher=''[[PC Magazine]]''|author=Neil J. Rubenking|date=September 16, 2010}}&lt;/ref&gt; and [[AVG (software)|AVG]]'s Anti-Virus Free 2011.&lt;ref&gt;{{cite web|title=AVG Anti-Virus Free 2011|url=http://www.pcmag.com/article2/0,2817,2370108,00.asp|author=Neil J. Rubenking|date=October 4, 2010|publisher=''[[PC Magazine]]''|accessdate=2011-02-24}}&lt;/ref&gt;
+
+A rescue disk that is bootable, such as a CD or USB storage device, can be used to run antivirus software outside of the installed operating system, in order to remove infections while they are dormant. A bootable antivirus disk can be useful when, for example, the installed operating system is no longer bootable or has malware that is resisting all attempts to be removed by the installed antivirus software. Examples of some of these bootable disks include the ''[[Avira]] AntiVir Rescue System'',&lt;ref name=&quot;antivir&quot;/&gt; ''[[PC Tools (company)|PCTools]] Alternate Operating System Scanner'',&lt;ref&gt;{{cite web|url=http://www.pcmag.com/article2/0,2817,2356097,00.asp|title=PC Tools Internet Security 2010|accessdate=2011-02-24|author=Neil J. Rubenking|date=November 19, 2009|publisher=''[[PC Magazine]]''}}&lt;/ref&gt; and ''[[AVG (software)|AVG]] Rescue CD''.&lt;ref name=&quot;avgcd&quot;&gt;{{cite web|url=http://www.pcworld.com/article/192414/avg_offers_free_emergency_boot_cd.html|title=AVG Offers Free Emergency Boot CD|accessdate=2011-02-24|author=Carrie-Ann Skinner|publisher=''[[PC World (magazine)|PC World]]|date=March 25, 2010}}&lt;/ref&gt; The AVG Rescue CD software can also be installed onto a USB storage device, that is bootable on newer computers.&lt;ref name=&quot;avgcd&quot;/&gt;
+
+== Popularity ==
+According to an FBI survey, major businesses lose $12 million annually dealing with virus incidents.&lt;ref&gt;{{cite web
+ | title=FBI estimates major companies lose $12m annually from viruses
+ | url=http://www.chattanoogan.com/articles/article_100752.asp
+ | date=30 January 2007
+ | accessdate=20 February 2011
+}}&lt;/ref&gt; A survey by [[Symantec]] in 2009 found that a third of small to medium sized business did not use antivirus protection at that time, whereas more than 80% of home users had some kind of antivirus installed.&lt;ref&gt;{{cite web|url=http://www.staysafeonline.org/blog/small-and-medium-size-businesses-are-vulnerable|title=Small and Medium Size Businesses are Vulnerable|publisher=''National Cyber Security Alliance''|author=Michael Kaiser|date=April 17, 2009|accessdate=2011-02-24}}&lt;/ref&gt;
+
+== See also ==
+{{Portal|Computer security}}
+* [[EICAR]], the European Institute for Computer Antivirus Research
+* [[Linux malware]]
+* [[List of antivirus software]]
+* [[List of computer viruses]]
+* [[List of trojan horses]]
+* [[Quarantine technology]]
+* [[Sandbox (computer security)]]
+* [[Timeline of notable computer viruses and worms]]
+* [[Virus hoax]]
+
+== References ==
+{{reflist|30em}}
+
+==Bibliography==
+{{refbegin}}
+* {{citation|last = Szor|first = Peter|title = The Art of Computer Virus Research and Defense|publisher = [[Addison-Wesley]]|year = 2005|isbn = 0-32-130454-3}}
+{{refend}}
+
+== External links ==
+&lt;!--===========================({{NoMoreLinks}})===============================--&gt;
+&lt;!--| DO NOT ADD MORE LINKS TO THIS ARTICLE. WIKIPEDIA IS NOT A COLLECTION OF |--&gt;
+&lt;!--| LINKS. If you think that your link might be useful, do not add it here, |--&gt;
+&lt;!--| but put it on this article's discussion page first or submit your link  |--&gt;
+&lt;!--| to the appropriate category at the Open Directory Project (www.dmoz.org)|--&gt;
+&lt;!--| and link back to that category using the {{dmoz}} template.             |--&gt;
+&lt;!--|                                                                         |--&gt;
+&lt;!--|           Links that have not been verified WILL BE DELETED.            |--&gt;
+&lt;!--|  See [[Wikipedia:External links]] and [[Wikipedia:Spam]] for details    |--&gt;
+&lt;!--===========================({{NoMoreLinks}})===============================--&gt;
+* {{Dmoz|Computers/Security/Malicious_Software/Viruses/Products/|Antivirus software}}
+{{malware}}
+
+{{DEFAULTSORT:Antivirus Software}}
+[[Category:Antivirus software]]
+
+[[ar:ÙØ¶Ø§Ø¯ Ø§ÙÙÙØ±ÙØ³Ø§Øª]]
+[[az:Antivirus proqramÄ±]]
+[[bn:à¦à§à¦¯à¦¾à¦¨à§à¦à¦¿à¦­à¦¾à¦à¦°à¦¾à¦¸ (à¦à¦®à§à¦ªà¦¿à¦à¦à¦¾à¦°)]]
+[[be:ÐÐ½ÑÑÐ²ÑÑÑÑ]]
+[[be-x-old:ÐÐ½ÑÑÐ²ÑÑÑÑ]]
+[[bs:Antivirusni program]]
+[[bg:ÐÐ½ÑÐ¸Ð²Ð¸ÑÑÑÐµÐ½ ÑÐ¾ÑÑÑÐµÑ]]
+[[ca:Antivirus]]
+[[cs:AntivirovÃ½ program]]
+[[cy:Gwrth-firws]]
+[[da:Antivirus-program]]
+[[de:Antivirenprogramm]]
+[[et:ViirustÃµrjeprogramm]]
+[[es:Antivirus]]
+[[eo:KontraÅ­virusilo]]
+[[eu:Antibirus]]
+[[fa:Ø¶Ø¯ÙÛØ±ÙØ³ (Ø±Ø§ÛØ§ÙÙ)]]
+[[fr:Logiciel antivirus]]
+[[gl:Antivirus]]
+[[ko:ë°ì´ë¬ì¤ ê²ì¬ ìíí¸ì¨ì´]]
+[[hr:Antivirusni program]]
+[[id:Perangkat lunak antivirus]]
+[[it:Antivirus]]
+[[he:×× ××-×××¨××¡]]
+[[kk:ÐÐ¸ÑÑÑÒÐ° ÒÐ°ÑÑÑ Ð±Ð°ÒÐ´Ð°ÑÐ»Ð°Ð¼Ð°Ð»ÑÒ Ð¶Ð°ÑÐ°ÒÑÐ°Ð¼Ð°]]
+[[lv:PretvÄ«rusu programmatÅ«ra]]
+[[lt:AntivirusinÄ programa]]
+[[lmo:Antivirus]]
+[[hu:VÃ­rusirtÃ³]]
+[[mk:ÐÐ½ÑÐ¸Ð²Ð¸ÑÑÑ]]
+[[ml:à´à´¨àµà´±à´¿à´µàµà´±à´¸àµ]]
+[[nl:Antivirussoftware]]
+[[ja:ã¢ã³ãã¦ã¤ã«ã¹ã½ããã¦ã§ã¢]]
+[[no:Antivirusprogram]]
+[[mhr:ÐÐ½ÑÐ¸Ð²Ð¸ÑÑÑ]]
+[[uz:Antiviruslar]]
+[[pl:Program antywirusowy]]
+[[pt:AntivÃ­rus]]
+[[ro:Antivirus]]
+[[ru:ÐÐ½ÑÐ¸Ð²Ð¸ÑÑÑÐ½Ð°Ñ Ð¿ÑÐ¾Ð³ÑÐ°Ð¼Ð¼Ð°]]
+[[simple:Antivirus software]]
+[[sk:AntivÃ­rusovÃ½ softvÃ©r]]
+[[sr:ÐÐ½ÑÐ¸Ð²Ð¸ÑÑÑ]]
+[[fi:Virustorjunta]]
+[[sv:Antivirusprogram]]
+[[ta:à®¨à®à¯à®à¯à®¨à®¿à®°à®²à¯à®¤à®à¯à®ªà¯à®ªà®¿]]
+[[th:à¹à¸à¸£à¹à¸à¸£à¸¡à¸à¹à¸­à¸à¸à¸±à¸à¹à¸§à¸£à¸±à¸ª]]
+[[tk:Antiwirus]]
+[[uk:ÐÐ½ÑÐ¸Ð²ÑÑÑÑÐ½Ð° Ð¿ÑÐ¾Ð³ÑÐ°Ð¼Ð°]]
+[[vec:Antivirus]]
+[[vi:Pháº§n má»m diá»t virus]]
+[[zh:ææ¯è½¯ä»¶]]</rev></revisions></page></pages></query></api>

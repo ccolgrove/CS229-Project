@@ -1,0 +1,156 @@
+<?xml version="1.0"?><api><query><pages><page pageid="17392" ns="0" title="Konqueror"><revisions><rev xml:space="preserve">''Not to be confused with the [[Conqueror_Browser |Conqueror]] web browser.''
+{{multiple issues|refimprove=July 2008|NOT=October 2011|cleanup=October 2011|tone=October 2011}}
+
+{{Infobox web browser
+| name                   = KDE Software   Compilation 4 &lt;!-- name of Software Compilation (Note: If you don't put the right thing here it breaks the latest release / latest preview fields when &quot;frequently updated&quot; is enabled. If you want the title at the top of the infobox to be different than the software templates, use the &quot;title&quot; parameter instead.) --&gt;
+| title                  = Konqueror
+| logo                   = [[File:Konqueror 4 Oxygen.svg|80px]]
+| screenshot             = [[File:Konqueror 4 4 2.png|300px]]
+| caption                = A screenshot of Konqueror 4.4.2 showing the default homepage
+| developer              = [[KDE]]
+| released               = {{Start date and age|1996|10|14|df=yes}}&lt;ref&gt;{{ cite newsgroup | title = New Project: Kool Desktop Environment (KDE) |url=http://groups.google.com/group/de.comp.os.linux.misc/msg/cb4b2d67ffc3ffce |first= Matthias |last=Ettrich  |newsgroup= de.comp.os.linux.misc |id=53tkvv$b4j@newsserv.zdv.uni-tuebingen.de |date=14 October 1996 |accessdate=2006-12-29}}&lt;/ref&gt;
+| frequently updated     = yes &lt;!-- Release version update? Don't edit this page, just click on the version number! --&gt;
+| programming language   = [[C++]] ([[Qt (framework)|Qt]])
+| operating system       = [[Linux]], [[Mac OS X]], [[Unix-like]], [[Microsoft Windows|Windows]][http://windows.kde.org/news.php#itemAnewbrowseratthewindowsheaven]
+| engine                 = [[KHTML]]/[[WebKit]]
+| language               = Multilingual
+| genre                  = [[Web browser]], [[File browser]]
+| license                = [[GPLv2]]
+| website                = [http://www.konqueror.org/ www.konqueror.org]
+}}
+'''Konqueror''' is a [[web browser]] and [[file manager]] that provides [[file viewer|file-viewer]] functionality for file systems such as local files, files on a remote ftp server and files in a disk image. It is a core part of the [[KDE]] [[desktop environment]]. Konqueror is developed by volunteers and can run on most [[Unix-like]] [[operating system]]s and on [[Windows]] systems. Konqueror, along with the rest of the components in the [[KDEBase]] package, is licensed and distributed under the [[GNU General Public License]] version 2.
+
+The name &quot;Konqueror&quot; is a reference to the two primary competitors at the time of the browser's first release: &quot;first comes the [[Netscape Navigator|Navigator]], then [[Internet Explorer|Explorer]], and then the Konqueror&quot;. It also follows the [[KDE]] naming convention: the names of most KDE programs begin with the letter K.&lt;ref&gt;[http://docs.kde.org/stable/en/kdebase/faq/webbrowser.html#id2556978 K Desktop Environment (KDE)]&lt;/ref&gt;
+
+Konqueror was released with version 2 of KDE on October 23, 2000.&lt;ref&gt;[http://www.kde.org/announcements/announce-2.0.php K Desktop Environment - KDE 2.0 Release Announcement&lt;!-- Bot generated title --&gt;]&lt;/ref&gt; It replaces its predecessor, KFM (KDE file manager).&lt;ref&gt;[http://konqueror.kde.org/faq/#WheredoesthenameiKonqueroricomefrom Konqueror - Konqueror FAQ&lt;!-- Bot generated title --&gt;]&lt;/ref&gt; With the release of KDE4, the file manager functionality of Konqueror was replaced by [[Dolphin (software)|Dolphin]].
+
+==Major supported protocols==
+* FTP and SFTP/SSH browser
+* SAMBA (Microsoft file-sharing) browser
+* HTTP browser
+* IMAP mail client
+* ISO (cd image) viewer
+* VNC viewer
+A complete list is available in the KDE Info Center's Protocols section.
+
+==User interface==
+Konqueror's [[user interface]] is somewhat reminiscent of [[Microsoft]]'s [[Internet Explorer]] (in turn [[design]]ed after [[Netscape Navigator]] and [[Mosaic (web browser)|NCSA Mosaic]]), though it is more customizable. It works extensively with &quot;panels&quot;, which can be rearranged or added. For example, one could have an [[Internet bookmarks]] panel on the left side of the browser [[window (computing)|window]], and by clicking a bookmark, the respective [[web page]] would be viewed in the larger panel to the right. Alternatively, one could display a hierarchical list of [[folder (computing)|folder]]s in one panel and the content of the selected folder in another. Panels are quite flexible and can even include, among other [[KParts,components]], a console window, a text editor, a media player. Panel configurations can be saved, and there are some default configurations. (For example, &quot;[[Midnight Commander]]&quot; displays a screen split into two panels, where each one contains a folder, Web site, or file view.)
+
+Navigation functions (back, forward, history, etc.) are available during all operations. Most keyboard shortcuts can be remapped using a graphical configuration, and navigation can be conducted through an assignment of letters to nodes on the active file by pressing the control key. The address bar has extensive autocompletion support for local directories, past [[Uniform Resource Locator|URL]]s, and past search terms.
+
+The application uses a [[tabbed document interface]], wherein a window can contain multiple documents in tabs. [[Multiple document interface]]s are not supported, however it is possible to recursively divide a window to view multiple documents simultaneously, or simply open another window.
+
+==Web browser==
+[[File:Wikipedia main page in Konqueror 3.5.8.png|thumb|Konqueror displaying the Wikipedia Main page]]
+Konqueror has been developed as an autonomous [[web browser]] project. It uses [[KHTML]] as its [[layout engine]], which is compliant with [[HTML]] and supports [[JavaScript]], [[Java applet]]s, [[Cascading Style Sheets|CSS]], [[Transport Layer Security|SSL]], and other relevant [[open standard]]s. An alternative layout engine, ''kwebkitpart'', is available from the [[Extragear]].&lt;ref&gt;{{cite web |url=http://techbase.kde.org/Projects/WebKit/Part |title=Projects/WebKit/Part - KDE TechBase |accessdate=2010-03-30 |publisher=KDE TechBase}}&lt;/ref&gt;
+
+While KHTML is the default web-rendering engine, Konqueror is a modular application and other rendering engines are and have been available. Especially the WebKitPart that uses the KHTML-derived [[WebKit]] engine has seen a lot of support in the KDE 4 series.
+
+Konqueror integrates several customizable [[Web search engine|search services]] which can be accessed by entering the service's abbreviation code (for example, &lt;tt&gt;gg:&lt;/tt&gt; for [[Google]]) followed by the search term(s). One can add their own search service; for instance, to retrieve [[Wikipedia]] articles, a shortcut may be added with the URL &lt;code&gt;&lt;nowiki&gt;http://en.wikipedia.org/wiki/Special:Search?search=\{@}&amp;go=Go&lt;/nowiki&gt;&lt;/code&gt;. Alternatively, you can right-click on any search field and click, &quot;Create Web Shortcut&quot; in the context menu, which will fill in the above URL automatically and prompt you for a shortcut or shortcuts.
+
+KHTML's rendering speed is on par with that of competing browsers, but sites with customized JavaScript are often problematic due to KHTML's much smaller mind- and market-share.
+
+As of version 10.10, [[Kubuntu]]'s default browser switched from Konqueror to [[rekonq]].&lt;ref&gt;{{cite web|last=Laishram|first=Ricky|title=Rekonq To Be The Default Web Browser In Kubuntu 10.10|url=http://techie-buzz.com/foss/rekonq-to-be-the-default-web-browser-in-kubuntu-10-10.html|publisher=Techie Buzz|accessdate=7 May 2011}}&lt;/ref&gt;
+
+==File manager==
+[[File:4.2 Konqueror Filebrowser.png|thumb|right|Konqueror's file manager profile]]
+[[File:Konqi-audiocd.png|thumb|right|Konqueror displaying the contents of an audio CD]]
+[[Image:Konqueror in Windows.png|thumb|right|Konqueror displaying Wikipedia in Microsoft [[Windows Vista]]]]
+
+Konqueror also allows browsing the local directory hierarchyâeither by entering locations in the address bar, or by selecting items in the file browser window. It allows browsing in different views, which differ in their usage of [[icon]]s and layout. Files can also be [[execution (computers)|execute]]d, viewed, copied, moved, and deleted.
+
+The user can also open an embedded version of [[Konsole]] in which they can directly execute shell commands.
+
+Although this functionality is not removed from it, in KDE 4 Konqueror is replaced by [[Dolphin (software)|Dolphin]] as the default file manager. Dolphin can - like Konqueror - divide each window or tab into multiple panes. Konqueror makes more powerful use of this feature, allowing as many vertically and horizontally divided panes as desired. Each can link to different content or even remote locations, so that Konqueror is a powerful graphical tool to manage content on multiple servers all in one window, &quot;drag and dropping&quot; files between locations.
+
+In order to make folders open in Konqueror by default, open System Settings, then navigate to, &quot;Default Applications&quot;. Here is a section called, &quot;File Manager&quot;, where you can choose Konqueror, Dolphin or another file manager of your choice.
+
+==File viewer==
+Using the [[KParts]] [[object model]], Konqueror executes components that are capable of viewing (and sometimes editing) specific [[filetype]]s and embeds their client area directly into the Konqueror panel in which the respective files have been opened. This makes it possible to, for example, view an [[OpenDocument]] (via [[KOffice]]) or [[Portable Document Format|PDF]] document directly from within Konqueror. Any application that implements the [[KParts]] model correctly can be embedded in this fashion.
+
+KParts can also be used to embed certain types of multimedia content into HTML pages; for example, [[Konqueror Media Player|KMPlayer]]'s KPart enables Konqueror to show embedded video on web pages.
+
+==KIO==
+{{details|KIO}}
+
+In addition to browsing files and web sites, Konqueror utilizes [[KIO]] plugins to extend its capabilities well beyond those of other browsers and file managers. It uses components of KIO, the Konqueror I/O plugin system, to access different protocols such as [[HTTP]] and [[File Transfer Protocol|FTP]] (support for these is built-in).
+
+Similarly, Konqueror can use KIO plugins (called IOslaves) to access [[ZIP (file format)|ZIP file]]s and other archives, smb (Windows) shares, to process ed2k links (edonkey/emule), or even to browse [[CD|audio CDs]], (&quot;audiocd:/&quot;) and [[ripping|rip]] them via [[drag-and-drop]]. The FISH (&quot;fish://user@host&quot;) IOslave allows Konqueror up to and including version 4.2.x to manage files on remote [[secure shell]] servers; this is replaced in Konqueror 4.3.x and later by the SFTP (&quot;sftp://user@host&quot;) IOslave.[http://osdir.com/ml/kubuntu-users/2009-06/msg00729.html]  Likewise, the &quot;man:&quot; and &quot;info:&quot; IOslaves are handy for fetching nicely formatted documentation.
+
+==See also==
+{{Portal|Free software}}
+*[[Comparison of file managers]]
+*[[Comparison of web browsers]]
+*[[KHTML]]
+*[[KDE's JavaScript engine|KJS]]
+*[[Konqueror Embedded]]
+*[[KSVG]]
+*[[List of web browsers]]
+*[[rekonq]]
+
+==References==
+{{Reflist}}
+
+==External links==
+*[http://konqueror.kde.org Konqueror homepage]
+
+{{KDE}}
+{{Web browsers}}
+{{file managers}}
+
+[[Category:KDE software]]
+[[Category:Free file managers]]
+[[Category:Free software programmed in C++]]
+[[Category:POSIX web browsers]]
+[[Category:Mac OS X web browsers]]
+[[Category:Free web browsers]]
+[[Category:Applications using D-Bus]]
+[[Category:1996 software]]
+[[Category:Windows web browsers]]
+[[Category:Software that uses Qt]]
+
+[[ar:ÙÙÙØ±Ø±]]
+[[ast:Konqueror]]
+[[az:Konqueror]]
+[[bar:Konqueror]]
+[[bg:Konqueror]]
+[[ca:Konqueror]]
+[[cs:Konqueror]]
+[[da:Konqueror]]
+[[de:Konqueror]]
+[[et:Konqueror]]
+[[es:Konqueror]]
+[[eo:Konqueror]]
+[[eu:Konqueror]]
+[[fa:Ú©Ø§ÙÚ©Ø±ÙØ±]]
+[[fr:Konqueror]]
+[[fy:Konqueror]]
+[[gl:Konqueror]]
+[[ko:ìºì»¤ë¬]]
+[[hr:Konqueror]]
+[[id:Konqueror]]
+[[it:Konqueror]]
+[[he:Konqueror]]
+[[csb:Konqueror]]
+[[ku:Konqueror]]
+[[lb:Konqueror]]
+[[lt:Konqueror]]
+[[hu:Konqueror]]
+[[nl:Konqueror]]
+[[ja:Konqueror]]
+[[no:Konqueror]]
+[[nn:Konqueror]]
+[[pl:Konqueror]]
+[[pt:Konqueror]]
+[[ro:Konqueror]]
+[[ru:Konqueror]]
+[[sk:Konqueror]]
+[[sl:Konqueror]]
+[[fi:Konqueror]]
+[[sv:Konqueror]]
+[[th:à¸à¸­à¸à¹à¸à¸­à¹à¸£à¸­à¸£à¹]]
+[[tr:Konqueror]]
+[[uk:Konqueror]]
+[[ur:Konqueror]]
+[[vi:Konqueror]]
+[[zh:Konqueror]]</rev></revisions></page></pages></query></api>

@@ -1,0 +1,36 @@
+<?xml version="1.0"?><api><query><pages><page pageid="15865847" ns="0" title="BIOS Boot partition"><revisions><rev xml:space="preserve">The '''BIOS Boot partition''' is a [[partition (computing)|partition]] on a [[data storage device]] that may be used by standard [[BIOS]]-based machines in order to boot when the partition table of the device is a [[GUID Partition Table|GPT]] label.
+
+The [[Globally Unique Identifier]] for the BIOS Boot partition in the GPT scheme is &lt;tt&gt;21686148-6449-6E6F-744E-656564454649&lt;/tt&gt; (stored on disk as &quot;Hah!IdontNeedEFI&quot; if interpreted as [[ASCII]]). The formation of this &quot;GUID&quot; does not follow the GUID definition; such formation of &quot;GUID&quot; value breaks down the guaranteed uniqueness of GUID. In the context of GPT on a BIOS-based computer, a BIOS Boot partition is similar in some respects to the [[EFI System partition]], which is used by systems based on [[Extensible Firmware Interface|EFI]]. The EFI System partition, however, holds a filesystem and files used by the EFI, whereas the BIOS Boot partition is accessed without a filesystem and holds raw binary code.
+
+When used, it contains the second stage of the [[boot loader]] program (the first being the code that is within the MBR). Use of this partition is not the only way BIOS-based boot can be performed on GPT labels; however, complex boot loaders such as [[GRUB 2]] cannot fit entirely within the confines of the MBR's 440 or 446 bytes of space and so need an ancillary storage space. On MBR disks, such boot loaders typically use the sectors immediately following the MBR for this storage. On GPT disks, no equivalent space exists, and the BIOS Boot partition is a way to officially allocate such space for use by the boot loader. BIOS Boot partitions are used primarily by [[GRUB 2]].
+
+The BIOS Boot partition is typically quite small. It can be as small as about 30 KiB; however, future boot loaders might require more space, so creating a larger BIOS Boot partition is advisable. Because of the 1 MiB partition alignment policies used by most modern disk partitioning tools to provide optimum performance with [[Advanced Format]] disks, [[Solid-state drive|SSD devices]], and some types of [[RAID]] configurations, 1 MiB is a logical size for a BIOS Boot partition.
+
+The following utilities are known to support BIOS Boot partitions:
+
+*[[GRUB 2]] (1.97~beta1 or later): when a BIOS Boot partition is found during installation, GRUB will embed itself in it.
+*[[GNU Parted]] (2.0 or later).
+*[[GParted]]
+*gpt(8) partition editor in [[NetBSD]] (5.0 or later).
+*[http://www.rodsbooks.com/gdisk/ gdisk]: GPT fdisk
+
+==Creating a BIOS Boot Partition==
+
+A BIOS Boot partition can be created using any of several different disk utilities:
+
+*In GParted, create a partition (an unformatted one works fine), then right-click it and select Manage Flags. Check the &lt;tt&gt;bios_grub&lt;/tt&gt; flag, click Close, and apply your changes.
+*In GNU Parted (&lt;tt&gt;parted&lt;/tt&gt;), create a partition, then type &lt;tt&gt;set 1 bios_grub on&lt;/tt&gt;, changing &lt;tt&gt;1&lt;/tt&gt; to the number of the partition you want to mark as a BIOS Boot partition.
+*In GPT fdisk (&lt;tt&gt;gdisk&lt;/tt&gt;), create a partition and give it a type code of &lt;tt&gt;EF02&lt;/tt&gt;.
+
+==See also==
+*[[EFI System partition]]
+*[[Windows To Go]]
+
+==External links==
+*[http://grub.enbug.org/BIOS_Boot_Partition BIOS Boot Partition] in official GRUB wiki
+*[http://www.freelists.org/post/haiku-development/Defining-the-Haiku-UUID-for-GPT-and-other-uses Hah!IdontneedEFI]
+*[http://www.funtoo.org/wiki/GUID_Booting_Guide The Funtoo Linux GUID Booting Guide]
+*The [http://www.rodsbooks.com/gdisk/booting.html Booting from GPT page] in the GPT fdisk documentation
+
+[[Category:BIOS]]
+[[Category:Booting]]</rev></revisions></page></pages></query></api>

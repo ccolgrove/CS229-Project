@@ -1,0 +1,251 @@
+<?xml version="1.0"?><api><query><pages><page pageid="7557321" ns="0" title="Deluge (software)"><revisions><rev xml:space="preserve">{{Infobox software
+| name                   = Deluge
+| logo                   = [[File:Deluge-Logo.svg|92px|Deluge Logo]]
+| screenshot             = [[File:Deluge1.0-Screenshot.png|250px|Deluge Screenshot]]
+| caption                = Screenshot of Deluge downloading a torrent
+| developer              = Andrew Resch, Damien Churchill, John Garland
+| released               = {{Start date|2006|09|25}}
+| frequently updated     = yes &lt;!-- Release version update? Don't edit this page, just click on the version number! --&gt;
+| programming language   = [[Python (programming language)|Python]]
+| operating system       = [[Linux]], [[Microsoft Windows]], [[Mac OS X]] (through [[MacPorts]]), [[FreeBSD]] (as a [[FreeBSD Ports|port]])
+| genre                  = [[BitTorrent (protocol)|BitTorrent]] [[Client (computing)|client]]
+| license                = [[GNU General Public License#Version 3|GNU General Public License version 3]]
+| website                = [http://deluge-torrent.org/ deluge-torrent.org]
+}}
+'''Deluge''' is a [[free software]] [[cross-platform]] [[BitTorrent client]] [[graphical user interface]] written with [[Python (programming language)|Python]] and [[GTK+]]. The program uses [[libtorrent (Rasterbar)|libtorrent-rasterbar]] [[C++]] library for the torrent back-end (network communication) functionality through the project's official Python [[language binding|bindings]].
+
+== Features ==
+{{See|Comparison of BitTorrent clients}}
+[[Image:Deluge screenshot.png|right|thumb|Older version of Deluge]]
+Deluge aims to be a lightweight,&lt;ref&gt;{{cite web |url=http://www.linux.com/archive/feature/123253 |title=After torrents? Try Deluge! |first=Federico |last=Kereki |date=December 27, 2007 |work=Linux.com |publisher=SourceForge, Inc. |accessdate=December 10, 2010 |archiveurl=http://web.archive.org/web/20090531184331/http://www.linux.com/archive/feature/123253 |archivedate=2009-05-31}}&lt;/ref&gt; secure,&lt;ref&gt;{{cite web |url=http://torrentfreak.com/deluge-torrent-client-aims-to-thwart-isp-traffic-shaping/ |title=Deluge Torrent Client Aims to Thwart ISP Traffic Shaping |author=enigmax |date=June 14, 2007 |work=TorrentFreak |accessdate=December 10, 2010}}&lt;/ref&gt; and feature-rich&lt;ref&gt;{{cite web |url=http://www.chinwong.com/index.php?/site/comments/good_karma/ |title=Good Karma |first=Chin |last=Wong |date=November 9, 2009 |work=Digital Life |accessdate=December 10, 2010}}&lt;/ref&gt; client. To help achieve this, most of its features are part of plugin modules which were written by various developers.
+
+Starting with version 1.0, Deluge separated its [[daemon (computing)|daemon (server/core)]] from its interface, allowing users to remotely manage the application over the web.&lt;ref&gt;{{cite web |url=http://forum.deluge-torrent.org/viewtopic.php?f=8&amp;t=9875 |title=Deluge 1.0.0 - &quot;Sharks Are Bulletproof&quot; Released! |author=andar |date=September 28, 2008 |work=Deluge |accessdate=December 10, 2010}}&lt;/ref&gt; It has been one of the first clients to support [[Magnet URI scheme|magnet links]], introducing this feature with version 1.1.0 released on January 2009.&lt;ref name=&quot;oldchangelog&quot;&gt;{{cite web |url=http://svn.deluge-torrent.org/branches/1.1.0_RC/ChangeLog |title=Deluge 1.1.0_RC/ChangeLog |date=June 15, 2009 |work=Deluge |format=plain text |accessdate=December 10, 2010}}&lt;/ref&gt;
+
+==Portable==
+A portable version for MS Windows is also offered that doesn't require installation.&lt;ref&gt;{{cite web |url=http://portableapps.com/node/23566 |title=DelugePortable |author=sleepwalker.int |work=Deluge |publisher=PortableApps.com |accessdate=February 13, 2011}}&lt;/ref&gt;
+
+==History==
+Deluge was started by two members of ubuntuforums.org, Zach Tibbitts and Alon Zakai, who previously hosted and maintained the project at [[Google Code]], but have now moved it to its own website.
+
+In its first stages, Deluge was originally titled gTorrent, to reflect that it was targeted for the [[GNOME]] desktop environment. When the first version was released on September 25, 2006, it was renamed to Deluge due to an existing project named ''gtorrent'' on [[SourceForge]], in addition to the fact that it was finally coded to work not only on GNOME but on any platform which could support GTK+.&lt;ref&gt;{{cite web |url=http://linuxlookup.com/2006/sep/25/gtorrent_becomes_deluge_version_0_1_0_released |title=gTorrent becomes Deluge: Version 0.1.0 Released |author=Ty |date=September 26, 2006 |work=Deluge |publisher=Ubuntu Forums |accessdate=December 20, 2010}}&lt;/ref&gt;
+
+The 0.5.x release marked a complete rewrite from the 0.4.x code branch. The 0.5.x branch added support for encryption, [[peer exchange]], [[binary prefix]], and [[Universal Plug and Play|UPnP]].
+
+Nearing the time of the 0.5.1 release, the two original developers effectively left the project, leaving Marcos &quot;markybob&quot; Pinto and Andrew &quot;andar&quot; Resch to continue Deluge's development.
+
+Version 0.5.4.1 saw support for both [[Mac OS X]] (via [[MacPorts]]) and Windows being introduced.
+
+Around this time, Deluge became notable for its resistance to [[Comcast#Network neutrality|Comcast's bandwidth throttling]] without a change in code, while clients like [[Vuze|Vuze (Azureus)]] and [[Î¼Torrent]] had to borrow the method implemented by Deluge.&lt;ref&gt;{{cite web |url=http://forum.utorrent.com/viewtopic.php?pid=294272#p294141 |title=Re: Better encryption |author=amc1 |date=January 3, 2008 |publisher=uTorrent.com |page=4 |accessdate=December 10, 2010 |quote=If there's anyone out there willing to help - we (Azureus devs) worked with alus to see what Deluge was doing differently to avoid being throttled... we've made changes as well, but we don't have anyone to test with. So if there's anyone who belongs to one of the affected ISPs, and they're willing to spend a few minutes helping us test our changes, that'd be appreciated.}} &lt;!--This WAS stated by a developer of Vuze (Az) on a forum/IRC/something Archive a year ago, I finally dug up the exact quote. --&gt;&lt;/ref&gt;
+
+From version 1.1.1 through version 1.1.3, Windows installers were temporarily unavailable due to the Windows packager leaving the project.
+
+Following 1.1.3, packages for all operating systems were no longer provided by the developers; instead, source [[Tar (file format)|tars]] and community provided packages were released.
+
+== Release history ==
+
+&lt;div style=&quot;float:left;&quot;&gt;
+{| class=&quot;wikitable&quot; style=&quot;font-style:italic; font-size:80%;&quot;
+|-
+! colspan=2| Key
+|-
+| style=&quot;background-color:#fa8072;&quot; | Red
+| Release no longer supported
+|-
+| style=&quot;background-color:#A0E75A;&quot; | Green
+| Current Release
+|-
+| style=&quot;background-color:#87ceec;&quot; | Blue
+| Future Release
+|}
+'''References:'''&lt;br /&gt;
+&lt;ref name=&quot;oldchangelog&quot;/&gt;&lt;ref&gt;
+
+{{cite web
+| url         = http://dev.deluge-torrent.org/wiki/ChangeLog
+| title       = Deluge Change Log
+| work        = Deluge
+| accessdate  = December 10, 2010
+}}
+
+&lt;/ref&gt;&lt;ref&gt;
+
+{{cite web
+| url         = http://download.deluge-torrent.org/source/
+| title       = Index of source/
+| work        = Deluge
+| publisher   = Oregon State University Open Source Lab
+| accessdate  = December 10, 2010
+}}
+
+&lt;/ref&gt;&lt;ref&gt;
+
+{{cite web
+| url         = http://ubuntuforums.org/showthread.php?p=1679759#post1679759
+| title       = Re: gTorrent: A Bittorrent client for GNOME
+| author      = CarpKing
+| date        = October 28, 2006
+| publisher   = Ubuntu Forums
+| page        = 11
+| accessdate  = December 10, 2010
+}}
+
+&lt;/ref&gt;&lt;ref&gt;
+
+{{cite web
+| url         = http://ubuntuforums.org/showthread.php?t=288952
+| title       = Deluge Bittorrent client v0.3.0 released
+| author      = kripkenstein
+| date        = October 30, 2006
+| publisher   = Ubuntu Forums
+| accessdate  = December 10, 2010
+}}
+
+&lt;/ref&gt;&lt;ref&gt;
+
+{{cite web
+| url         = http://nixbit.com/cat/communications/filesharing/deluge/
+| title       = Deluge 0.4.0
+| author      = Zach Tibbitts.Alon Zakai
+| work        = Deluge
+| publisher   = nixbit
+| accessdate  = December 10, 2010
+}}
+
+&lt;/ref&gt;&lt;ref&gt;
+
+{{cite web
+| url         = http://dev.deluge-torrent.org/wiki/ReleaseNotes/1.3.3
+| title       = Deluge 1.3.3 Release Notes
+| author      = Andrew &quot;andar&quot; Resch
+| work        = Deluge
+| publisher   = Andrew &quot;andar&quot; Resch
+| accessdate  = Juli 25, 2011
+}}
+
+&lt;/ref&gt;
+
+&lt;/div&gt;
+
+{| class=&quot;wikitable&quot;
+! Major Version
+! Minor Version
+! Release Date
+! width=&quot;300&quot; | Significant Changes
+! [[Libtorrent (Rasterbar)|Libtorrent]] Version
+|-
+!style=&quot;white-space: nowrap;background-color:#A0E75A;&quot; rowspan=4|1.3
+|style=&quot;white-space: nowrap;&quot;| 1.3.3
+|style=&quot;white-space: nowrap;&quot;| 2011-07-23
+| Another big bug fix release
+|style=&quot;white-space: nowrap;&quot; rowspan=4| 0.14 / 0.15
+|-
+|style=&quot;white-space: nowrap;&quot;| 1.3.2
+|style=&quot;white-space: nowrap;&quot;| 2011-05-24
+| Many bug fixes
+|-
+|style=&quot;white-space: nowrap;&quot;| 1.3.1
+|style=&quot;white-space: nowrap;&quot;| 2010-10-31
+| -
+|-
+|style=&quot;white-space: nowrap;&quot;| 1.3.0
+|style=&quot;white-space: nowrap;&quot;| 2010-09-18
+| WebUI much more efficient
+|-
+!style=&quot;white-space: nowrap;background-color:#fa8072;&quot; rowspan=2|1.2
+|style=&quot;white-space: nowrap;&quot;| 1.2.3
+|style=&quot;white-space: nowrap;&quot;| 2010-03-27
+|Support for libtorrent 0.15
+| 0.14 / 0.15
+|-
+|style=&quot;white-space: nowrap;&quot;| 1.2.0
+|style=&quot;white-space: nowrap;&quot;| 2010-01-12
+|XMLRPC was replaced by DelugeRPC, WebUI was rewritten from the outset
+| 0.14
+|-
+!style=&quot;background-color:#fa8072;&quot; rowspan=2| 1.1
+|style=&quot;white-space: nowrap;&quot;| 1.1.9
+|style=&quot;white-space: nowrap;&quot;| 2009-06-15
+| -
+|style=&quot;white-space: nowrap;&quot; rowspan=2| 0.13 trunk
+|-
+|style=&quot;white-space: nowrap;&quot;| 1.1.0
+|style=&quot;white-space: nowrap;&quot;| 2009-01-11
+|Support for [[Magnet URI]]
+|-
+!style=&quot;white-space: nowrap;background-color:#fa8072;&quot; rowspan=2|1.0 &lt;br /&gt;&lt;small&gt;(Formerly 0.6)&lt;/small&gt;
+|style=&quot;white-space: nowrap;&quot;| 1.0.7
+|style=&quot;white-space: nowrap;&quot;| 2008-12-11
+|UI, libtorrent fixes
+|style=&quot;white-space: nowrap;&quot; rowspan=2| 0.12
+|-
+|style=&quot;white-space: nowrap;&quot;| 1.0.0
+|style=&quot;white-space: nowrap;&quot;| 2008-09-22 &lt;!--completed 2008-09-21, see ref in comment below--&gt;
+|Stable Release. Codenamed &quot;Sharks are Bulletproof.&quot; &lt;!-- ref: http://svn.deluge-torrent.org/branches/1.0.0_RC/ChangeLog --&gt;
+|-
+!style=&quot;white-space: nowrap;background-color:#fa8072;&quot; rowspan=6|Pre 1.0 version
+|style=&quot;white-space: nowrap;&quot;| 0.5.9.4
+|style=&quot;white-space: nowrap;&quot;| 2008-07-22
+| -
+| 0.12 / 0.13 custom build
+|-
+|style=&quot;white-space: nowrap;&quot;| 0.5.1.0
+|style=&quot;white-space: nowrap;&quot;| 2007-06-11
+|Peer exchange, encryption, UPnP + NATPMP, Improved user interface
+|style=&quot;white-space: nowrap;&quot; rowspan=5| ?
+|-
+|style=&quot;white-space: nowrap;&quot;| 0.4.0
+|style=&quot;white-space: nowrap;&quot;| 2007-01-27
+| -
+|-
+|style=&quot;white-space: nowrap;&quot;| 0.3.0
+|style=&quot;white-space: nowrap;&quot;| 2006-10-30
+| -
+|-
+|style=&quot;white-space: nowrap;&quot;| 0.2.0
+|style=&quot;white-space: nowrap;&quot;| 2006-10-04
+| -
+|-
+|style=&quot;white-space: nowrap;&quot;| 0.1.0
+|style=&quot;white-space: nowrap;&quot;| 2006-09-25
+|First release of Deluge (as gTorrent)
+|-
+|}
+
+== See also ==
+{{Portal|Free software}}
+* [[Comparison of BitTorrent clients]]
+* [[Usage share of BitTorrent clients]]
+
+==References==
+{{Reflist}}
+
+==External links==
+* [http://deluge-torrent.org Deluge Homepage]
+* [http://forum.deluge-torrent.org Deluge Forum]
+* [http://dev.deluge-torrent.org Trac Page]
+* [http://forum.deluge-torrent.org/viewtopic.php?f=13&amp;t=34649 Installing instructions for Deluge 1.3.1 on Mac OS X]
+
+{{BitTorrent}}
+{{File sharing}}
+
+{{DEFAULTSORT:Deluge (Software)}}
+[[Category:Free BitTorrent clients]]
+[[Category:Windows software]]
+[[Category:Unix internet software]]
+[[Category:Linux BitTorrent clients]]
+[[Category:Free software programmed in Python]]
+[[Category:GTK+]]
+[[Category:Cross-platform software]]
+
+[[ast:Deluge]]
+[[cs:Deluge]]
+[[de:Deluge]]
+[[es:Deluge]]
+[[fr:Deluge (logiciel)]]
+[[it:Deluge]]
+[[ml:à´¡àµàµ½à´¯àµà´àµ (à´¸àµà´«àµà´±àµà´±àµâà´µàµà´¯àµ¼)]]
+[[pl:Deluge]]
+[[ru:Deluge]]
+[[sv:Deluge]]
+[[uk:Deluge]]
+[[zh:Deluge]]</rev></revisions></page></pages></query></api>

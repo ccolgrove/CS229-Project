@@ -1,0 +1,163 @@
+<?xml version="1.0"?><api><query><pages><page pageid="55380" ns="0" title="Disk partitioning"><revisions><rev xml:space="preserve">{{refimprove|date=September 2010}}
+[[Image:GParted.png|thumb|300px|[[GParted]] is a popular utility used for disk partitioning]]
+
+'''Disk partitioning''' is the act of dividing a [[hard disk drive]] into multiple logical storage units referred to as ''partitions'', to treat one physical disk drive as if it were multiple disks. Partitions are also termed &quot;[[slice (disk)|slices]]&quot; for operating systems based on [[BSD]], [[Solaris (operating system)|Solaris]] or [[GNU Hurd]]. A [[partition editor]] software program can be used to create, resize, delete, and manipulate these partitions on the hard disk.
+
+== Benefits of multiple partitions ==
+{{Prose|date=March 2011}}
+Creating more than one partition has the following advantages:
+
+* Separation of the [[operating system]] (OS) and program files from user files. This allows [[disk image|image]] [[backup]]s (or [[disk cloning|clones]]) to be made of only the operating system and installed software.
+* Having a separate area for operating system [[virtual memory]] [[paging|swapping/paging]].
+* Keeping frequently used programs and data near each other.
+* Having cache and log files separate from other files. These can change size dynamically and rapidly, potentially making a file system full.
+* Use of [[multi-boot]] setups, which allow users to have more than one operating system on a single computer. For example, one could install [[Linux]], [[BSD]], Mac OS X, Microsoft Windows or other operating systems on different partitions of the same hard disk and have a choice of booting into any compatible operating system at power-up.
+* Protecting or isolating files, to make it easier to recover a corrupted file system or operating system installation. If one partition is corrupted, other file systems may not be affected. 
+
+&lt;!-- although NTFS does a better job in terms of recoverability, 
+a system that becomes unbootable due to virus or single disk error in a critical windows file can be rescued without loosing user data in other partitions. ~~~~
+
+This is not a valid consideration for modern file systems like [[NTFS]], as those store file system administration areas for each single partition in mutiple instances on different disk locations, which practically can't get all corrupted at the same time. Also, the chance of a single piece of data (for ex. a single file's contents) getting corrupted is statistically not lowered by having multiple partitions, and if the drive itself fails, all the partitions fail and their contents get lost, regardless of their number. Having a separate partition for [[read-only]] data reduces the chances of the file system on this partition becoming corrupted.
+--&gt;
+* Raising overall computer performance on systems where smaller file systems are more efficient. For instance, large hard drives with only one [[NTFS]] file system typically have a very large [[sequential access|sequentially accessed]] [[Master File Table]] (MFT) and it generally takes more time to read this MFT than the smaller MFTs of smaller partitions.
+* &quot;Short Stroking&quot;, which aims to minimize performance-eating head repositioning delays by reducing the number of tracks used per hard drive.&lt;ref&gt;[http://www.tomshardware.com/reviews/short-stroking-hdd,2157.html Accelerate Your Hard Drive By Short Stroking]&lt;/ref&gt; The basic idea is that you make one partition approx. 20-25% of the total size of the drive. This partition is expected to: occupy the outer tracks of the hard drive, and offer more than double the throughput â less than half the access time. If you limit capacity with short stroking, the minimum throughput stays much closer to the maximum. This technique, however, is not related to creating multiple partitions, but generally just creating a partition lesser size than available on the disk.
+:* For example a 1 TB disk might have an access time of 12 ms at 200 [[IOPS]] (at a limited [http://publib.boulder.ibm.com/infocenter/svc/ic/index.jsp?topic=%2Fcom.ibm.storage.svc.console.doc%2Fsvc_configrecforlrgsans_1dcuwe.html queue depth]) with an average throughput of 100 MB/s. When it is partitioned to 100 GB (and the rest left unallocated) you '''''might''''' end up with an access time of 6 ms at 300 IOPS (with a bigger queue depth) with an average throughput of 200 MB/s.
+
+== Disadvantages of multiple partitions ==
+Creating more than one partition has the following disadvantages, as compared to having a single partition spanning the same disk area:
+
+* Reduces the total space available for user storage on the disk, as it forces the operating system to duplicate certain file system administration areas on the disk for each partition.
+* Reduces overall disk performance on systems where data is accessed regularly and in parallel on multiple partitions, because it forces the disk's read/write head to move back and forth on the disk to access data on each partition&lt;ref&gt;[http://www.pcguide.com/ref/hdd/perf/perf/ext/filePart-c.html]&lt;/ref&gt;&lt;ref&gt;http://www.computorcompanion.com/LPMArticle.asp?ID=326&lt;/ref&gt; and to maintain and update file system administration areas on each partition. It also prevents disk optimizers from moving all frequently accessed files closer to each other on the disk, which could reduce the number and distance of required head movements. Files can still be moved closer to each other on each partition, but those areas themselves will still be far apart on the disk. (See &quot;short stroking&quot; considerations above.) This issue does not apply to [[Solid-state drive|SSD drive]]s as access times on those are neither affected by nor dependant upon relative sector positions.
+* Increases disk fragmentation because it lowers the average size of continuous free blocks on each partition - as compared to a single partition of the same overall size - after the same amount of data has been written to them.
+* May prevent using the whole disk capacity, because it may break free capacities apart&lt;ref&gt;http://books.google.co.uk/books?id=OuPtI5fHhBoC&amp;lpg=PA172&amp;ots=YFbyBztASR&amp;pg=PA178#v=onepage&lt;/ref&gt;. For example, if you have a disk with two partitions, each with 3 GBs free (hence 6GBs in total), you can't copy a 4GB DVD image file on that disk, because none of the partitions will actually provide enough space for that - even though you have more than enough free capacity in total on the disk. If the same files on those two partitions would have been stored on a single partition spanning the whole disk, then the 4GB file could be easily stored in the 6GB of free space.
+* Slows down moving data between different parts of the same physical disk&lt;ref&gt;http://superuser.com/questions/36378/advantages-disadvantages-of-partitioning-a-drive/36381#36381&lt;/ref&gt;. When moving data from one partition to other, the operating system actually has to copy the contents of the data file, even though it still remains on the same device in a single copy/instance. When using a single partition, moving data between directories will only require altering the file system administration areas, and the actual contents of the file will not be copied or moved inside the disk/device, thus resulting in a significantly faster completion of the operation.
+* Hurts portability and might impose constraints on how entities might be linked together inside the file system. For example: the NTFS file system allows [[hard link|hard links]] to be created only as long as both the link and the referenced file reside inside the same volume/partition&lt;ref&gt;http://technet.microsoft.com/en-us/library/dd560753(WS.10).aspx#BKMK_UnderstandHardlinkMig&lt;/ref&gt;. Also under Windows if you're referencing a file on another partition, you can do that only by specifying the partition's assigned drive letter - which, however, might change with time and depending on the drives installed. This renders references invalid and dependent on actual drive letter assignment, which is not an issue if you have to reference files/directories only on the same partition, as in this case you can use directory-relative or root-relative references, without including the drive/partition letter.
+
+== PC partition types ==
+This section describes the [[master boot record]] (MBR) partitioning scheme, as used in [[DOS]], [[Microsoft Windows]] and [[Linux]] among others on [[PC compatible]] computer systems. For examples of partitioning schemes used in other operating systems, see the general article on [[partition table|partition tables]].
+
+The total data storage space of a PC hard disk can be divided into at most four ''primary partitions'', or alternatively three primary partitions and an ''[[#Extended partition|extended partition]]''. These partitions are described by 16-byte entries that constitute the ''Partition Table'', located in the master boot record.
+
+The ''partition type'' is identified by a 1-byte code found in its partition table entry. Some of these codes (such as &lt;tt&gt;0x05&lt;/tt&gt; and &lt;tt&gt;0x0F&lt;/tt&gt;) may be used to indicate the presence of an [[extended boot record|extended partition]]. Most are used by an operating system's bootloader (that examines partition tables) to decide if a partition contains a file system that can be used to ''mount / access'' for reading or writing data.
+
+==== Primary partition ====
+A primary  partition contains one file system. In [[DOS]] and earlier versions of [[Microsoft Windows]] systems, the [[system partition]] was required to be the first partition. More recent Windows operating systems (Win7, XP, etc.) can be located on any partition, but the boot files (bootmgr, ntldr, etc.) must be on a primary partition.  However, other factors, such as a PC's [[BIOS]] (see [[booting#Boot sequence on standard PC (IBM-PC compatible)|Boot sequence on standard PC]]) may also impart specific requirements as to which partition must contain the primary OS.
+
+The partition type ''code'' for a primary partition can either correspond to a file system contained within (e.g. &lt;tt&gt;0x07&lt;/tt&gt; means either an [[NTFS]] or an OS/2 [[HPFS]] file system) or indicate that the partition has a special use (e.g. code &lt;tt&gt;0x82&lt;/tt&gt; usually indicates a Linux ''swap'' partition). The [[File Allocation Table|FAT16 and FAT32]] file systems have made use of a number of partition type codes due to the limits of various DOS and Windows OS versions. Though a Linux operating system may recognize a number of different file systems ([[ext4]], [[ext3]], [[ext2]], [[ReiserFS]], etc.), they have all consistently used the same partition type code: &lt;tt&gt;0x83&lt;/tt&gt; ([[file system#File systems under Linux|Linux native file system]]).
+
+:{{see|Partition type}}
+
+=== Extended partition ===
+A hard disk may contain only one extended partition; the extended partition can be subdivided into multiple ''logical partitions''. In DOS/Windows systems, each logical partition may then be assigned an additional drive letter. 
+
+:{{see|Extended Boot Record}}
+
+== Partitioning schemes ==
+=== DOS, Windows, and OS/2 ===
+With [[DOS]], [[Microsoft Windows]], and [[OS/2]], a common practice is to use one primary partition for the active [[file system]] that will contain the operating system, the page/swap file, all utilities, applications, and user data. On most Windows consumer computers, the [[drive letter assignment|drive letter]] C: is routinely assigned to this primary partition. Other partitions may exist on the hard disk that may or may not be visible as drives, such as recovery partitions or partitions with diagnostic tools or data. (Microsoft drive letters do not correspond to partitions in a one-to-one fashion, so there may be more or fewer drive letters than partitions.)
+
+Microsoft [[Windows 2000]], [[Windows XP|XP]], [[Windows Vista|Vista]], and [[Windows 7]] include a '[[Logical Disk Manager|Disk Management]]' program which allows for the creation, deletion and resizing of FAT and NTFS partitions. The Windows 7/Vista Disk Manager is [[Logical_Disk_Manager#Compatibility_problems|not compatible]] with Windows 2000, XP and many other non-Microsoft operating systems.
+
+==== Unix, Linux, and Mac OS X====
+
+On [[Unix]]-based and [[Unix-like]] operating systems such as [[Linux]] or [[Mac OS X]], it is possible to use multiple partitions on a disk device. Each partition can be formatted with a [[file system]] or as a [[swap partition]].
+
+Multiple partitions allow directories such as [[/tmp]], [[/usr]], [[/var]], or [[/home]] to be allocated their own filesystems. Such a scheme has a number of advantages:
+*If one file system gets corrupted, the data outside that filesystem/partition may stay intact, minimizing data loss.
+*Specific file systems can be mounted with different parameters e.g. [[read-only]], or with the execution of [[setuid]] files disabled.
+*A runaway program may use up all available space on a non-system filesystem does not fill up critical filesystems.
+
+A common default for Linux desktop systems is to use two partitions: one holding a file system mounted on &quot;/&quot; (the [[root directory]]) and a [[swap partition]].
+
+By default, Mac OS X systems also use a single partition for the entire filesystem and use a [[swap file]] inside the file system (like Windows) rather than a swap partition.
+
+=== Multi-boot and mixed-boot systems ===
+{{Main|Multi-boot}}
+[[File:GRUB with ubuntu and windows vista.png|thumb|400px|A [[GNU GRUB|GRUB]] startup menu showing [[Ubuntu (operating system)|Ubuntu]] Linux (with three different boot modes) and [[Windows Vista]] options]]
+Multi-boot systems are computers where the user can boot into one of two or more distinct operating systems (OS) stored in separate storage devices or in separate partitions of the same storage device. In such systems a menu at [[booting|startup]] gives a choice of which OS to boot/start (and only one OS at a time is loaded).
+
+This is distinct from [[virtual machine|virtual operating systems]], in which one operating system is run as a self-contained virtual &quot;program&quot; within another already-running operating system. (An example is a Linux OS &quot;virtual machine&quot; running from within a Windows OS).
+
+== Partition recovery ==
+When a partition is deleted, its entry is removed from a table and the data is no longer accessible. The data remains on the disk until being overwritten. [[undeletion|Specialized recovery utilities]], (such as [[TestDisk]] and [[gpart]]), may be able to locate ''lost'' file systems and recreate a partition table which includes entries for these recovered file systems. Some disk utilities may overwrite a number of beginning sectors of a partition they delete. For example, if Windows Disk Management (Windows 2000/XP, etc.) is used to delete a partition, it will overwrite the first sector (relative sector 0) of the partition before removing it. It still may be possible to restore a [[File Allocation Table|FAT32]] or [[NTFS]] partition if a backup boot sector is available.
+
+== Compressed disks ==
+Hard disks can be compressed to create additional space.  In DOS and early Microsoft Windows, programs such as [[Stac Electronics|Stacker]] (DR-DOS except 6), SuperStor (DR-DOS 6), [[DoubleSpace]], or [[DriveSpace]] (Windows 95) were used. This compression was done by creating a very large file on the partition, then storing the disk's data in this file. At startup, device drivers opened this file and assigned it a separate letter. Frequently, to avoid confusion, the original partition and the compressed drive had their letters swapped, so that the compressed disk is C:, and the uncompressed area (often containing system files) is given a higher name.
+
+Versions of [[Microsoft Windows|Windows]] using the NT kernel, including the most recent versions, XP and Vista, contain intrinsic disk compression capability. The use of separate disk compression utilities has declined sharply.
+
+==See also==
+{{wikibooks|Guide to Unix|Explanations/Partitioning Disks|Partitioning Disks}}
+* [[GUID Partition Table]]
+* [[File System]]
+* [[Slice (disk)]]
+* [[RAID]], [[JBOD]]
+* [[Disk formatting]]
+* [[Master boot record]] covers the partition table layout  
+* [[Extended boot record]] covers a [[Linux]] partition naming convention 
+* [[Amiga Rigid Disk Block]]
+* [[List of disk partitioning software]]
+
+==References==
+&lt;references/&gt;
+
+== Further reading ==
+* {{cite paper|url=http://www.jensolsson.se/downloads/AODPS/AODPS.html|title=The Alt-OS-Development Partition Specification (AODPS)|date=2002-11-02|author=StÃ©phane Martineau, Jens Olsson, Nick Roberts|version=0.4}}
+* {{cite paper|url=http://www.win.tue.nl/~aeb/partitions/partition_types-1.html|author=[[Andries Brouwer]]|title=List of partition identifiers for PCs|date=1995&amp;ndash;2004}}
+* {{cite paper|url=http://www.win.tue.nl/~aeb/partitions/partition_tables.html|title=Minimal Partition Table Specification|date=1999-09-16|author=Andries Brouwer}}
+* {{cite paper|url=http://www.ranish.com/part/primer.htm|title=partitioning primer|date=1998-08-05|publisher=Ranish}}
+* {{cite paper|url=http://www.allensmith.net/Storage/HDDlimit/Address.htm|title=ATA (EIDE) Drive Capacity and Addressing|author=Allen Smith}}
+* {{cite paper|url=http://www.microsoft.com/whdc/device/storage/GPT-on-x64.mspx|author=Microsoft|date=2005-06-03|title=Using GPT Drives}}
+* {{kb|69912|MS-DOS Partitioning Summary}}
+
+== External links ==
+&lt;!--========================({{No More Links}})============================
+    | PLEASE BE CAUTIOUS IN ADDING MORE LINKS TO THIS ARTICLE. WIKIPEDIA  |
+    | IS NOT A COLLECTION OF LINKS NOR SHOULD IT BE USED FOR ADVERTISING. |
+    |                                                                     |
+    |           Excessive or inappropriate links WILL BE DELETED.         |
+    | See [[Wikipedia:External links]] &amp; [[Wikipedia:Spam]] for details.  |
+    |                                                                     |
+    | If there are already plentiful links, please propose additions or   |
+    | replacements on this article's discussion page, or submit your link |
+    | to the relevant category at the Open Directory Project (dmoz.org)   |
+    | and link back to that category using the {{dmoz}} template.         |
+    =======================({{No More Links}})=============================--&gt;
+* [http://home.pacbell.net/dbk4297/fdiskformat.html FDISK and FORMAT instructions for any hard drive] Simple partition instructions.
+* [http://tldp.org/HOWTO/Partition/index.html Linux Partition HOWTO]
+* [http://www.linfo.org/partition.html Partition Definition] - by The Linux Information Project (LINFO)
+* [http://ubuntuguide.org/wiki/Multiple_OS_Installation Multiple OS Installation in multiple partitions] -- guide to using chainloaded bootloaders to enable multiple OSs to coexist
+* [http://www.lissot.net/partition/partition-03.html Partition Types]
+* [http://www.win.tue.nl/~aeb/partitions/partition_types.html Properties of partition tables]
+* [http://www.viralpatel.net/taj/tutorial/partition_table.php List of partition tables file system codes.]
+*[http://partition.radified.com/ Guide with advantages and disadvantages to disk partitioning]
+
+{{DEFAULTSORT:Disk Partitioning}}
+[[Category:Disk file systems]]
+[[Category:DOS on IBM PC compatibles]]
+[[Category:IBM PC compatibles]]
+
+[[ca:ParticiÃ³ de disc]]
+[[cs:DiskovÃ½ oddÃ­l]]
+[[de:Partition (Informatik)]]
+[[el:ÎÎ±ÏÎ¬ÏÎ¼Î·ÏÎ· Î´Î¯ÏÎºÎ¿Ï]]
+[[es:ParticiÃ³n de disco]]
+[[eu:Disko-partizio]]
+[[fr:Partition de disque dur]]
+[[ko:ëì¤í¬ íí°ì]]
+[[id:Partisi (sistem berkas)]]
+[[it:Partizione (informatica)]]
+[[he:××××¦× (×××©×)]]
+[[hu:PartÃ­ciÃ³]]
+[[nl:Partitie (informatica)]]
+[[ja:ãã¼ãã£ã·ã§ã³]]
+[[no:Partisjon]]
+[[pl:Partycja (informatyka)]]
+[[pt:PartiÃ§Ã£o]]
+[[ru:Ð Ð°Ð·Ð´ÐµÐ» Ð´Ð¸ÑÐºÐ°]]
+[[simple:Disk partitioning]]
+[[sk:Oddiel (disk)]]
+[[fi:Kiintolevyn osiointi]]
+[[sv:Diskpartitionering]]
+[[tr:BÃ¶lÃ¼mlere ayÄ±rma]]
+[[zh:ç¡¬çååº]]</rev></revisions></page></pages></query></api>

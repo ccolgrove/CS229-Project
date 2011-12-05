@@ -1,0 +1,29 @@
+<?xml version="1.0"?><api><query><pages><page pageid="6507929" ns="0" title="Self-extracting archive"><revisions><rev xml:space="preserve">{{unreferenced|date=May 2010}}
+A '''self-extracting archive''' ('''SFX''' for short) is a computer [[application software|application]] which contains a [[archive file|file archive]], as well as programming to extract this information. Such file archives do not require a second executable file or program to extract from the archive, as archive files usually require. The files in an archive can thus be extracted by anyone, whether they possess the appropriate decompression program or not, as long as the program can run on their [[computer platform]].
+
+The original purpose for the self-extracting archive was to allow the distribution of tools for extracting (and adding) member files to an archive file.  The situation otherwise, in effect, represents a &quot;chicken and egg&quot; problem: in order to use an archive file, the user requires a de-archiver program, which they have to be able to get onto their computer.  If the de-archiver program was simply a single executable with no other files, it would be possible to simply download that one file, then execute it.  But if the means to unarchive files required, say, an executable program and several libraries, there would be no way to obtain them as a single download or executable which could be installed unless the unarchiver program itself (along with accompanying files) were a self-extracting archive.
+
+Several programs can create self-extracting archives. For [[Microsoft Windows|Windows]] there are [[WinZip]], [[WinRAR]], [[7-Zip]], [[KGB Archiver]], and the built-in [[IExpress]] wizard. For [[Macintosh]] there are [[StuffIt]], [[The Unarchiver]], and 7zX. There are also programs that create self-extracting archives on [[Unix]] as [[shell scripts]] which utilizes programs like tar and gzip (which must be present in destination system). Others (like [[7-Zip]] or [[RAR]]) can create self-extracting archives as regular executables in [[Executable and linkable format|ELF]] format. An early example of a self-extracting archive was the Unix [[shar]] archive, in which one or more text files were combined into a shell script that when executed recreated the original files.
+
+==Downsides==
+The main downside of self-extracting archives is that running executables downloaded from the Internet may pose a security risk. With a regular archive, one could open it with an unarchiver without running any foreign code. However, with an executable, it is not possible to clearly verify whether an archive contains a malicious program.
+
+Another issue with self-extracting archives is that they are platform-specific. For example, a self-extracting archive for Windows will not run on Mac OS X.
+
+Self-extracting archives also include additional code in order to properly run and to display any user messages for the installation. While this amount of extra data is usually small, it could defeat the purpose of compressing [[lossy]] file types, such as a group of .jpeg images. The small amount of data that would have been saved by compressing the .jpeg files would be cancelled out by the addition of extra programming code in order for the executable file to self-extract properly.
+
+==See also==
+*[[Installer]]
+*[[Shar]]
+*[[Kolmogorov complexity]], a theoretical lower bound on the size of a self-extracting archive
+
+{{Compu-soft-stub}}
+[[Category:Data compression]]
+
+[[de:Selbstextrahierendes Archiv]]
+[[fr:Auto-extractible]]
+[[ko:ìì²´ ìì¶ íë¦¼]]
+[[pl:Plik samorozpakowujÄcy]]
+[[ru:Ð¡Ð°Ð¼Ð¾ÑÐ°ÑÐ¿Ð°ÐºÐ¾Ð²ÑÐ²Ð°ÑÑÐ¸Ð¹ÑÑ Ð°ÑÑÐ¸Ð²]]
+[[uk:Ð¡Ð°Ð¼Ð¾ÑÐ¾Ð·Ð¿Ð°ÐºÑÐ²Ð°Ð»ÑÐ½Ð¸Ð¹ Ð°ÑÑÑÐ²]]
+[[zh:èªè§£å£ç¸®æª]]</rev></revisions></page></pages></query></api>

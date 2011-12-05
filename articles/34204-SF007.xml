@@ -1,0 +1,98 @@
+<?xml version="1.0"?><api><query><pages><page pageid="34204" ns="0" title="XEmacs"><revisions><rev xml:space="preserve">{{Infobox software
+| name                   = XEmacs
+| logo                   = [[Image:XEmacs logo.png|194px]]
+| screenshot             = [[File:Xemacs-21.5.b29.png|222px]]
+| caption                = XEmacs 21.5.29 (beta), featuring [[antialiased font]]s
+| developer              = XEmacs community
+| latest_release_version = 21.4.22
+| latest_release_date    = January 30, 2009
+| operating_system       = [[Cross-platform]]
+| genre                  = [[Text editor]]
+| license                = [[GPLv2]]+
+| website                = http://www.xemacs.org/
+}}
+
+'''XEmacs''' is a [[graphical user interface|graphical]]- and [[text terminal|console]]-based [[text editor]] which runs on almost any [[Unix-like]] [[operating system]] as well as [[Microsoft Windows]].  XEmacs is a [[fork (software)|fork]], based on a version of [[GNU Emacs]] from the late 1980s. Any user can download, use, and modify XEmacs as [[free software]] available under the [[GNU General Public License]] version 2 or any later version.
+
+==History==
+Between 1987 and 1993 significant delays occurred in bringing out a new version of [[GNU Emacs]].&lt;ref&gt;[http://www.jwz.org/doc/emacs-timeline.html Emacs Timeline&lt;!-- Bot generated title --&gt;]&lt;/ref&gt;
+In the late 1980s, [[Richard P. Gabriel]]'s [[Lucid Inc.]] faced a requirement to ship Emacs to support the '''Energize''' [[C++]] [[Integrated Development Environment|IDE]]. So Lucid recruited a team to improve and extend the code,&lt;ref&gt;[http://commandline.org.uk/2007/history-of-emacs-and-xemacs/ Command Line Warriors : /command-line/history-of-emacs-and-xemacs-2007-03-25-02-24.html&lt;!-- Bot generated title --&gt;]&lt;/ref&gt;
+with the intention that their new version, released in 1991, would form the basis of GNU Emacs version 19. However, they did not have time to wait for their changes to be accepted by the [[Free Software Foundation]] (FSF).&lt;ref&gt;[http://foldoc.org/?Lucid+Emacs from FOLDOC&lt;!-- Bot generated title --&gt;]&lt;/ref&gt;
+Lucid continued developing and maintaining their version of Emacs, while the FSF released version 19 of Emacs a year later, while merging some of the code and adapting some other parts.&lt;ref&gt;[http://stallman.org/articles/xemacs.origin RMS Article: xemacs.origin]&lt;/ref&gt;
+
+When Lucid went out of business in 1994, other developers picked up the code.&lt;ref&gt;[http://www.xemacs.org/About/index.html XEmacs: History of XEmacs&lt;!-- Bot generated title --&gt;]&lt;/ref&gt;
+Companies such as [[Sun Microsystems]] wanted to carry on shipping Lucid Emacs, however, using the trademark had become legally ambiguous because no one knew who would eventually control the trademark &quot;Lucid&quot;. Accordingly the &quot;X&quot; in XEmacs represents a compromise among the parties involved in developing XEmacs.&lt;ref&gt;[http://www.xemacs.org/Documentation/21.5/html/internals_3.html#SEC11 XEmacs Internals Manual: A History of Emacs&lt;!-- Bot generated title --&gt;]&lt;/ref&gt;
+
+The &quot;X&quot; in XEmacs is thus not related to the [[X Window System]]. XEmacs has always supported text-based terminals and windowing systems other than X11. Installers can compile both XEmacs and GNU Emacs with and without X support. For a period of time XEmacs even had some terminal-specific features, such as [[Syntax highlighting|coloring]], that GNU Emacs lacked.
+
+The software community generally refers to GNU Emacs, XEmacs (and a number of other similar editors) collectively or individually as ''emacsen'' (by analogy with [[wikt:boxen|boxen]]) or as ''emacs'', respectively, since they both take their inspiration from the original [[Text Editor and Corrector|TECO]] Emacs.
+
+==Features==
+XEmacs text-editing features commands to manipulate [[Word (linguistics)|word]]s and [[paragraph]]s (deleting them, moving them, moving through them, and so forth), [[syntax highlighting]] for making [[source code]] easier to read, and &quot;keyboard macros&quot; for performing arbitrary batches of editing commands defined by the user.
+
+XEmacs has comprehensive online help, as well as five manuals available from the XEmacs website. XEmacs supports many [[Language|human languages]] as well as editing-modes for many programming and markup-languages. XEmacs runs on many operating systems including [[Unix]]/[[Linux]], [[Berkeley Software Distribution|BSDs]] and [[Mac OS X]].  Running on Mac OS requires [[X11.app|X11]]; while development has {{As of|2007|alt= started}} on a native [[Carbon (computing)|Carbon]] version. Two versions of XEmacs for the Microsoft Windows environment exist: a native installer and a [[Cygwin]] package.
+
+Users can reconfigure almost all of the functionality in the editor by using the [[Emacs Lisp]] language.  Changes to the Lisp code do not require the user to restart or recompile the editor. Programmers have made available many pre-written Lisp extensions.
+
+Many packages exist to extend and supplement the capabilities of XEmacs.  Users can apply them in bulk using the xemacs-sumo package or &quot;sumo tarballs&quot;.&lt;ref&gt;
+&quot;They are called 'Sumo Tarballs' for good reason. They are currently about 21MB and 6MB (gzipped) respectively.&quot; â http://www.xemacs.org/Documentation/packageGuide.html Retrieved 2007-08-03
+&lt;/ref&gt;
+
+==Development==
+From the project's beginnings, the developers of XEmacs aimed to have a frequent release-cycle: {{As of|2007|alt= currently}} 2 to 3 releases appear per year, which is a slowdown from earlier years.&lt;ref name=&quot;XEmacs: Release Notice Archive&quot;&gt;[http://www.xemacs.org/Releases/index.html XEmacs: Release Notice Archive&lt;!-- Bot generated title --&gt;]&lt;/ref&gt;
+They also aimed for more openness to experimentation, and XEmacs often offers new features before other emacsen â pioneering (for example) inline images, variable fonts and [[terminal coloring]]. Over the years, the developers have extensively rewritten the code in order to improve consistency and to follow modern programming conventions stressing data abstraction. XEmacs has a unique packaging system for independently-maintained Lisp packages. The {{As of|2007|alt= latest}} version has [[GTK+]] support&lt;ref&gt;[http://www.us.xemacs.org/Releases/Public-21.2/projects/gtk.html XEmacs: XEmacs on the GTK platform&lt;!-- Bot generated title --&gt;]&lt;/ref&gt;
+and a native Carbon port for Mac OS X.&lt;ref&gt;http://web.archive.org/web/20070914152342/http://members.shaw.ca/akochoi-xemacs/Carbon+XEmacs/Home.html&lt;/ref&gt;
+
+XEmacs has always had a very open development-environment, including anonymous [[Concurrent Versions System|CVS]], later [[Mercurial (software)|Mercurial]] access and publicly accessible development [[mailing list|mailing-list]]s. XEmacs comes with a 500+ page internals manual (Wing, et al., 2004).
+
+The XEmacs project has a policy of maintaining compatibility with the GNU Emacs [[Application Programming Interface|API]]. For example, it provides a [[compatibility layer|compatibility-layer]] implementing overlays via the native extent functionality. &quot;[T]he XEmacs developers strive to keep their code compatible with GNU Emacs, especially on the Lisp level.&quot;&lt;ref&gt;[http://www.xemacs.org/Documentation/21.5/html/xemacs-faq_2.html#SEC53 Frequently asked questions about XEmacs: Introduction&lt;!-- Bot generated title --&gt;]&lt;/ref&gt;
+
+Support for [[Unicode]] has become a problem for XEmacs. As of 2005, the released version depends on the unmaintained package called [[MULE|Mule]]-UCS to support Unicode, while the development branch of XEmacs has had robust native support for external Unicode encodings since May 2002, but the internal Mule character sets lack completeness, and development seems stalled as of September 2005.&lt;ref&gt;[http://calypso.tux.org/pipermail/xemacs-beta/2006-January/008297.html Mule-on-Windows, full Unicode support XEmacs&lt;!-- Bot generated title --&gt;]&lt;/ref&gt;
+
+XEmacs development features three branches: stable, gamma, and beta,&lt;ref name=&quot;XEmacs: Release Notice Archive&quot;/&gt;
+with beta getting new features first, but potentially having less testing, stability and security. The developers released version 20.0 on 9 February 1997, and version 21.0 on 12 July 1998. As of January 2009, the stable branch had reached version 21.4.22 and the beta branch version 21.5.28. No gamma releases exist {{as of|2007|lc = on}}. With the release of XEmacs 21.4.0, version numbers follow a scheme whereby an odd second number signals a development-version, and an even second number indicates a stable release.
+
+==XEmacs and GNU Emacs==
+Several of XEmacs's principal developers have published accounts of the split between XEmacs and GNU Emacs, for example, Stephen Turnbull's  [http://www.xemacs.org/About/XEmacsVsGNUemacs.html summary] of the arguments from both sides.  One of the main disagreements involves different views of copyright-assignment. The FSF sees copyright-assignment to the FSF as necessary to allow it to defend the code against GPL-violations,&lt;ref&gt;[http://www.fsf.org/licensing/licenses/why-assign.html Why the FSF gets copyright assignments from contributors - Free Software Foundation&lt;!-- Bot generated title --&gt;]&lt;/ref&gt;
+while the XEmacs-developers have argued that the lack of copyright-assignment has allowed major companies to get involved, as sometimes companies can license their code but due to a cautious attitude  concerning [[Fiduciary|fiduciary duties]] to shareholders, companies may have trouble in getting permission to assign away code completely. The [[Free Software Foundation]] holds [[copyright]] of much of the XEmacs code because of prior copyright-assignment during merge-attempts and cross-development.  Whether a piece of new XEmacs code enters GNU Emacs often depends on the willingness of that individual contributor to assign the code to the FSF.
+
+New features in either editor usually show up in the other sooner or later.  Furthermore, many developers contribute to both projects; in particular, many major Lisp subsystems, such as [[Gnus]] and [[Dired]], undergo development to work with both.
+
+==See also==
+{{Portal|Free software}}
+
+*[[List of Unix programs]]
+*[[Comparison of text editors]]
+
+==References==
+{{reflist}}
+
+==External links==
+* [http://www.xemacs.org/ The XEmacs Project's website].
+* [http://www.xemacs.org/Documentation/index.html Downloadable XEmacs manuals]
+* [http://www.jwz.org/doc/lemacs.html Lucid Emacs history] from the view of its original maintainer, [[Jamie Zawinski]].
+* [http://stallman.org/articles/xemacs.origin The Origin of XEmacs, according to Richard Stallman]
+* [http://commandline.org.uk/2007/history-of-emacs-and-xemacs/ The History of Emacs and XEmacs]
+* [http://www.xemacs.org/About/index.html The History of XEmacs]
+* [http://www.ews.uiuc.edu/software/tutorial/xemacs.html Concise XEmacs tutorial]
+* [http://refcards.com/docs/wingb/xemacs/xemacs-refcard-a4.pdf Printable XEmacs Reference Card (PDF)]
+
+{{EmacsNavbox}}
+
+{{DEFAULTSORT:Xemacs}}
+[[Category:Unix text editors]]
+[[Category:Mac OS X text editors]]
+[[Category:Windows text editors]]
+[[Category:Emacs]]
+[[Category:Free text editors]]
+[[Category:Software forks]]
+[[Category:Cross-platform software]]
+[[Category:Free software programmed in C]]
+
+[[de:XEmacs]]
+[[es:XEmacs]]
+[[fr:XEmacs]]
+[[it:XEmacs]]
+[[pl:XEmacs]]
+[[ru:XEmacs]]
+[[zh:XEmacs]]</rev></revisions></page></pages></query></api>

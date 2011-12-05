@@ -1,0 +1,392 @@
+<?xml version="1.0"?><api><query><pages><page pageid="28290" ns="0" title="Slackware"><revisions><rev xml:space="preserve">{{Infobox OS
+| name                   = Slackware
+| logo                   = [[File:Slackware web logo.svg|200px]]
+| screenshot             = [[File:Slackware.png|300px]]
+| caption                = Slackware 13.37
+| developer              = [[Patrick Volkerding]]
+| family                 = [[Unix-like]]
+| source_model           = [[Free and open source software]]
+| working_state          = Current
+| released               = 16 July 1993
+| language               = Multilingual
+| latest_release_version = 13.37 &lt;!-- If you update this, don't forget to update [[Comparison of Linux distributions]]--&gt;
+| latest_release_date    = {{Release date|2011|04|27}}
+| kernel_type            = [[Monolithic kernel|Monolithic]] ([[Linux kernel|Linux]])
+| supported_platforms    = [[IA-32]], [[x86-64]], [[ARM architecture|ARM]], [[IBM ESA/390|S/390]]
+| license                = [[GNU General Public License]]
+| updatemodel            = pkgtools, [[slackpkg]]
+| package_manager        = pkgtools, [[slackpkg]]
+| ui                     = [[GNU Bash]], [[KDE Plasma Workspaces|KDE Plasma Desktop]] or [[Xfce]]
+| website                = [http://www.slackware.com/ www.slackware.com]
+}}
+
+'''Slackware''' is a [[free and open source software|free and open source]] [[Linux]]-based [[operating system]]. It was one of the earliest operating systems to be built on top of the [[Linux kernel]] and is the oldest currently being maintained.&lt;ref&gt;{{cite web |url=http://distrowatch.com/dwres.php?resource=major |title=Top Ten Distributions |author=Distrowatch.com}}&lt;/ref&gt; Slackware was created by [[Patrick Volkerding]] of '''Slackware Linux, Inc.''' in [[1993]]. The current stable version is 13.37, released on April 27, 2011.
+
+Slackware aims for design stability and simplicity, and to be the most &quot;[[Unix-like]]&quot; [[Linux distribution]], making as few modifications as possible to software packages from [[upstream (software development)|upstream]] and using plain text files and a small set of [[shell (computing)|shell ]] scripts for configuration and administration.&lt;ref name=&quot;info-page&quot;&gt;[http://slackware.com/info General Information] at Slackware's website&lt;/ref&gt;
+
+==Name==
+The name &quot;Slackware&quot; stems from the fact that the distribution started as a private side project with no intended commitment. To prevent it from being taken too seriously at first, Volkerding gave it a humorous name, which stuck even after Slackware became a serious project.&lt;ref name=&quot;interview&quot;&gt;{{cite web | url=http://www.linuxjournal.com/article/2750 | title=Interview with Patrick Volkerding | accessdate=2007-07-03 | last=Hughes | first=Phil | date=1994-04-01 | work=[[Linux Journal]] }}&lt;/ref&gt;
+
+Slackware refers to the &quot;pursuit of slack&quot;, a tenet of the [[Church of the Subgenius]]. Certain aspects of Slackware logos reflect this: the pipe which Tux is smoking, and the image of [[J. R. &quot;Bob&quot; Dobbs]]' head.
+
+A humorous reference to the Church of the Subgenius can be found in many versions of the ''install.end'' text files, which indicate the end of a software series to the setup program. In recent versions, including Slackware release 13.37, the text is [[rot-13]] obfuscated.&lt;ref&gt;[http://www.ibiblio.org/pub/historic-linux/distributions/slackware/1.1.2/a3/install.end Slackware version 1.1.2 ''install.end'' file]&lt;/ref&gt;&lt;ref&gt;[ftp://mirrors.unixsol.org/slackware/slackware-13.37/slackware/ap/install.end Slackware version 13.37 ''install.end'' file]&lt;/ref&gt;
+
+==History==
+
+Slackware was originally descended from the [[Softlanding Linux System]] (SLS), the most popular of the original Linux distributions and the first to offer a comprehensive software collection that comprised more than just the kernel and basic utilities.&lt;ref&gt;[http://lwn.net/Articles/91371/ A Short History of Linux Distributions] at LWN.net&lt;/ref&gt;  
+
+Being a student at that time, Patrick Volkerding was asked by his [[artificial intelligence]] professor at the [[Minnesota State University Moorhead]] (MSUM) to make SLS installations for the computer lab. First Volkerding made notes on bug fixes and modifications of the system's configuration, to be applied after the installation was complete. Later he incorporated the changes directly into the SLS install disks &quot;so that new machines would have these fixes right away&quot;. He changed parts of the original SLS installation scripts and added a mechanism that installed important packages like the shared libraries and the kernel image automatically.&lt;ref name=&quot;interview&quot;&gt;&lt;/ref&gt;
+
+Volkerding had no intentions to provide his modified SLS version for the public, assuming that &quot;SLS would be putting out a new version that included these things soon enough&quot;. But seeing that this was not the case and that many SLS users were asking on the Internet for a new SLS release, he made a post entitled âAnyone want an SLS-like 0.99pl11A system?â, which he received a lot of response for. As also his friends at MSUM urged him to put his SLS modifications onto an FTP server, he made them publicly available on one of the university's anonymous [[File Transfer Protocol|FTP]] servers.&lt;ref name=&quot;interview&quot;&gt;&lt;/ref&gt;This first Slackware release, version 1.00, was distributed on July 16, 1993, being supplied as 24 3Â½&quot; floppy disk images.&lt;ref&gt;[http://www.slackware.com/announce/1.0.php Slackware Release Announcement], The Slackware Linux Project&lt;/ref&gt; 
+
+Version 2.1, released in October 1994, already consisted of 73 floppy disks, showing the rapid growth of the distribution.&lt;ref&gt;[http://ftp.df.lth.se/pub/slackware/slackware-2.1/README.210 README.210 Slackware Release 2.1]&lt;/ref&gt;   
+
+With version 3.0, released in November 1995, Slackware made the transition to the ELF executable format. It was also the first release offering a CD-ROM based installation.&lt;ref&gt;[http://slackware.cs.utah.edu/pub/slackware/slackware-3.0/00_CDROM.TXT CDROM.txt file in the Slackware 3.0 repository]&lt;/ref&gt;
+
+In 1999, Slackware's release number jumped from 4 to 7. Patrick Volkerding explained this as a [[marketing]] effort to show that Slackware was as up-to-date as other Linux distributions, many of which had release numbers of 6 at the time, and Volkerding expected them to reach version 7 by the time of the jump.&lt;ref&gt;[http://www.slackware.com/faq/do_faq.php?faq=general#0 Frequently Asked Questions], The Slackware Linux Project&lt;/ref&gt;
+
+In 2005, the [[GNOME]] desktop environment was removed from the pending future release (starting with 10.2), and turned over to community support and distribution.&lt;ref&gt;[ftp://ftp.slackware.com/pub/slackware/slackware-10.2/ChangeLog.txt ChangeLog for Slackware v.10.2]&lt;/ref&gt; The removal of GNOME was seen by some in the Linux community as significant because the desktop environment is found in many Linux distributions. In lieu of this, several community-based projects began offering complete GNOME distributions for Slackware.
+
+==Design philosophy==
+Many design choices in Slackware can be seen as a heritage of the simplicity of traditional Unix systems and as examples of the [[KISS principle]].  &lt;ref&gt;[http://www.slackbasics.org/html/chap-intro.html#chap-intro-slackware Chapter 2. An introduction to Slackware Linux&lt;!-- Bot generated title --&gt;]&lt;/ref&gt; In this context, &quot;simple&quot; refers to the viewpoint of system design, rather than ease of use. Thus users with less knowledge of command line interfaces and classic Unix tools may experience a steep learning curve using Slackware, whereas users with a Unix background may benefit from a less abstract system environment.
+
+In the spirit of purity most software in Slackware uses the configuration mechanisms supplied by the software's original authors. Only for some administrative tasks distribution-specific configuration tools are delivered. 
+
+Its core design decisions lead to features that set Slackware apart from most other modern Linux distributions:
+
+===Installer===
+Slackware ships without a graphical installer. Like most distribution-specific tools the Slackware installation program is an [[ncurses]]-driven shell script. Probably the biggest potential barrier for inexperienced users stems from the lack of a guided hard disk partitioning tool within the installer. Prior to starting an installation the user is prompted to partition the host system with [[cfdisk]] or [[fdisk]].
+
+===Boot loader===
+While most Linux distributions have switched to the more advanced [[GRUB]], Patrick Volkerding decided to stick with [[LILO]], a simplistic Linux boot loader. 
+
+===Init system===
+In contrast to most other Linux distributions which employ a [[System V]]-like init system (or newer init replacements like [[Upstart]] or [[systemd]]), Slackware uses a less complex [[BSD]]-style [[init]] system. However, starting with version 7, Slackware also includes System V init compatibility &lt;ref&gt;http://www.slackware.com/config/init.php&lt;/ref&gt;. The main purpose of adding System V compatibility was to improve interoperability with commercial software packages which may install System V init scripts. At the end of the BSD-style init, the script rc.sysvinit is executed, that does an optional runlevel based initialization comparable to most other Linux distributions.
+
+===User environment===
+The default user environment is the command line interface provided by the user's shell. Whereas the majority of Linux systems boot into a graphical environment, Slackware's default [[runlevel]] puts the user into a textual shell. This behavior can easily be changed by editing a configuration file, still it reflects both the Unix tradition and the fact that some users may decide to not install a graphical subsystem at all.
+
+===Administration===
+Strictly speaking Slackware offers no [[GUI]]-based administration utilities. The set of administration tools consists of shell scripts which either utilize a GUI-like ncurses-based [[dialog]] interface (e.g. netconfig, liloconfig, pkgtool, xwmconfig) or rely on a pure CLI script (e.g. adduser). 
+
+===32-bit compatibility libraries===
+The 64-bit Slackware distribution does not ship with 32-bit compatibility libraries. This is in marked contrast with other common distributions. On the &quot;downside&quot;, this means that some applications will have larger memory footprints than on other systems. On the &quot;upside&quot;, the lack of compatibility libraries and 32-bit applications reduces the complexity of the overall system.
+
+==Development model==
+===Non-open development===
+Slackware follows a non-open development paradigm, in the sense that there is no formal [[Bug tracking system|bug tracking]] facility (like e.g. [[bugzilla]]) and no official procedure to become a code contributor or developer. As a consequence the project does not maintain a public code repository. Bug reports and contributions, while being essential to the project, are managed in an informal way. All the final decisions about what is going to be included in a Slackware release are strictly remaining with Slackware's [[Benevolent Dictator For Life]], Patrick Volkerding.&lt;ref name=&quot;tdose2009&quot;&gt;&lt;/ref&gt;
+
+===Development team===
+The first versions of Slackware have been developed by Patrick Volkerding alone. Only beginning with version 4.0, the official Slackware announce files list David Cantrell and Logan Johnson as part of the &quot;Slackware team&quot;&lt;ref&gt;[ftp://ftp.slackware-brasil.com.br/slackware-4.0/ANNOUNCE.TXT Announcement of Slackware 4.0]&lt;/ref&gt;. Later announce statements, up to release version 8.1, also include Chris Lumens.&lt;ref&gt;[ftp://ftp.slackware-brasil.com.br/slackware-8.1/ANNOUNCE.8_1 Announcement of Slackware 8.1]&lt;/ref&gt; Lumens, Johnson and Cantrell are also the authors of the first edition of &quot;Slackware Linux Essentials&quot;, the official guide to Slackware Linux.&lt;ref&gt;[http://www.slackbook.org/ Official Slackware Book]&lt;/ref&gt; The Slackware website mentions Chris Lumens and David Cantrell as being &quot;Slackware Alumni&quot;, who &quot;worked full-time on the Slackware project for several years.&quot;&lt;ref&gt;[http://www.slackware.com/about/ Slackware Alumni]&lt;/ref&gt;
+
+The two following Slackware versions - 9.0 and 9.1 - appear to have been again the sole effort of Patrick Volkerding. 
+
+In his release notes for Slackware 10.0 and 10.1 Volkerding thanks Eric Hameleers for &quot;his work on supporting USB, PCI, and Cardbus wireless cards&quot;&lt;ref&gt;[ftp://ftp.slackware.at/slackware-10.0/RELEASE_NOTES Release notes of Slackware 10.0]&lt;/ref&gt;&lt;ref&gt;[ftp://ftp.slackware.at/slackware-10.1/RELEASE_NOTES Release notes of Slackware 10.1]&lt;/ref&gt;. Starting with version 12.0 there is, for a second time, a team building around Volkerding. According to the release notes of 12.2, the development team consists of seven persons. Successive versions bring even further additions to the team.&lt;ref&gt;[ftp://ftp.slackware.at/slackware-12.0/RELEASE_NOTES Release notes of Slackware 12.0]&lt;/ref&gt;&lt;ref&gt;[ftp://ftp.slackware.at/slackware-12.2/RELEASE_NOTES Release notes of Slackware 12.2]&lt;/ref&gt;
+
+Finally, since version 13.0 the Slackware team seems to be a more or less constant core. Eric Hameleers' essay on the &quot;History of Slackware Development&quot;, written in October 3-4, 2009, hence shortly after the release of version 13.0, names (with only one exception) the same core team members as Volkerdings's release notes for the current version 13.37.&lt;ref&gt;[ftp://ftp.slackware.at/slackware-13.37/RELEASE_NOTES Release notes of Slackware 13.37]&lt;/ref&gt;&lt;ref name=&quot;tdose2009&quot;&gt;&lt;/ref&gt; 
+
+The Slackware &quot;core team&quot; is made up of the following individuals (at times, the parenthesized alias names are used in ''changelog'' files): Patrick Volkerding, Eric Hameleers (AlienBob)&lt;ref&gt;[http://alien.slackbook.org/blog/ Blog of Eric Hameleers]&lt;/ref&gt;, Piter Punk&lt;ref&gt;[http://piterpunk.unitednerds.org/ Website of Piter Punk]&lt;/ref&gt;, Robby Workman&lt;ref&gt;[http://rlworkman.net/ Website of Robby Workman]&lt;/ref&gt;, Stuart Winter&lt;ref&gt;[http://www.interlude.org.uk/ Website of Stuart Winter]&lt;/ref&gt;, Mark Post, Erik Jan Tromp (Alphageek), Fred Emmott, Vincent Batts, John Jenkins (MrGoblin), Heinz Wiesinger, Alan Hicks, Amritpal Bath, Karl Magnus KolstÃ¸ and Leopold Midha (NetrixTardis). With the help of the changelog search tool of Niels Horn, particular contributions can be easily related to individual developers.&lt;ref&gt;[http://nielshorn.net/slackware/slack_versions_search.php Changelog search tool]&lt;/ref&gt; Measured by the number of entries in the changelogs, the most intense contributors are Eric Hameleers, Piter Punk and Robby Workman, and with some distance, Stuart Winter.
+
+==Package management==
+[[Image:Slackware-mascot.png|thumb|The Slackware mascot: [[Tux]] smoking a pipe]]
+
+Slackware's package management system can install, upgrade, and remove packages from local sources and over a network. 
+
+As of Slackware 12.2, [[slackpkg]] has been added as the official network-capable package manager, complementing the traditional package tools suite that only operates locally.&lt;ref&gt;[http://slackware.mirrors.tds.net/pub/slackware/slackware-12.2/CHANGES_AND_HINTS.TXT Info about changes in Slackware 12.2] at Slackware's website&lt;/ref&gt;  
+
+Slackware packages are [[tar (file format)|tarballs]]. Prior to version 13.0, the compression method was [[DEFLATE]] ([[gzip]]) with filenames ending in &lt;tt&gt;.tgz&lt;/tt&gt;. Beginning with version 13.0, the compression method for packages is based on the [[LZMA]] algorithm, indicated by the .txz extension.&lt;ref&gt;[http://www.slackware.com/changelog/stable.php?cpu=i386 The Slackware Linux Project: Slackware Changelog&lt;!-- Bot generated title --&gt; See entry dated Fri May 8 18:49:03 CDT 2009]&lt;/ref&gt; Since the change in compression methods, the package filename extensions comprise &lt;tt&gt;.tgz&lt;/tt&gt;,&lt;tt&gt;.txz&lt;/tt&gt;,&lt;tt&gt;.tbz&lt;/tt&gt; and &lt;tt&gt;.tlz&lt;/tt&gt;.
+
+The package contains the files that form part of the software being installed, as well as additional [[metadata]] files for the benefit of the Slackware package manager. The files containing the very software are organized in a hierarchical way that reflects their respective locations in the [[root directory]] of the destination system. 
+
+The metadata files are placed under the &lt;tt&gt;install/&lt;/tt&gt; directory of the package. Two files are commonly found there: &lt;tt&gt;slack-desc&lt;/tt&gt; and &lt;tt&gt;doinst.sh&lt;/tt&gt;. The &lt;tt&gt;slack-desc&lt;/tt&gt; file is a simple text file which contains a description of the package being installed. It is used when viewing packages with the package manager. The &lt;tt&gt;doinst.sh&lt;/tt&gt; file is a [[shell script]] which is run at the end of the installation of a package and usually executes commands or makes changes which could not be best made by changing the contents of the package.&lt;ref&gt;{{ cite web | url = http://www.linuxpackages.net/howto.php?page=package&amp;title=Package+Howto | title = Building a Slackware Package }}&lt;/ref&gt;
+
+==Dependency resolution==
+The package management system does not track or manage ''dependencies'', instead it relies on the user to ensure that the system has all the supporting system libraries and programs required by the new package. If any of these are missing, there may be no indication until the newly installed software is used.
+
+While Slackware itself does not incorporate tools to resolve dependencies for the user by automatically downloading and installing them, some community supported software tools do provide this function, similar to the way [[Advanced Packaging Tool|APT]] does for [[Debian]] and its derivatives.
+
+==Alternative packaging tools==
+[[Swaret]] was included as an extra package in Slackware version 9.1, but was not installed by default.&lt;ref&gt;[http://slackware.com/announce/9.1.php The Slackware Linux Project: Slackware Release Announcement&lt;!-- Bot generated title --&gt;]&lt;/ref&gt; It has been removed from the distribution as of Slackware 10.0 but is still available as a community supported package.  
+
+[http://slackins.sourceforge.net/ SlackIns] is a complete and simple Qt-based graphical user interface for installing packages.
+
+[[Slapt-get]] is a command line utility that functions in a similar way to [[Advanced Packaging Tool|APT]].  While slapt-get does provide a framework for dependency resolution, it does not provide dependency resolution for packages included within the Slackware distribution.  However, several community package sources and Slackware based distributions take advantage of this functionality. [http://www.jaos.org/ Gslapt] is a graphical interface to slapt-get.
+
+[[NetBSD]]'s [[pkgsrc]] provides support for Slackware, among other Unix-like operating systems. pkgsrc provides dependency resolution for both binary and source packages. The project [http://code.google.com/p/pkgsrc-on-slack/ pkgsrc-on-slack] has the goal to promote the use of pkgsrc on Linux, and expand Slackware (and derivative distributions) with additional packages.
+
+[http://tukaani.org/pkgtools/ Tukaani pkgtools] replaces the Slackware pkgtools (installpkg, upgradepkg, etc.) with enhanced versions that provide network downloading capabilities and an early version of the alternative compression support now found in Slackware pkgtools.
+
+[http://www.sbopkg.org/ Sbopkg] is an original concept using slackbuilds.org repository to provide an automated package creation. Slackbuilds are all-in-one scripts that handle the whole compilation-to-package process. Slackbuilds' scripts deliver ready-to-install packages.
+
+==Releases==
+&lt;div style=&quot;float: right&quot;&gt;
+&lt;timeline&gt;
+Define $dx = 25 # shift text to right side of bar
+Define $dy = -3 # shift text to right side of bar
+Define $now = 01/05/2011
+Define $start = 16/07/1993
+
+ImageSize  = width:160 height:550
+PlotArea   = width:50 height:530 left:50 bottom:10
+
+DateFormat = dd/mm/yyyy
+Period     = from:$start till:$now
+TimeAxis   = orientation:vertical
+ScaleMajor = unit:year increment:1 start:1995
+
+PlotData=
+  bar:Leaders color:red width:25 mark:(line,white) align:left fontsize:S
+
+  from:16/07/1993 till:$now
+
+  from:16/07/1993 till:16/07/1993 shift:($dx,$dy) fontsize:XS text:1.0
+  from:05/11/1993 till:05/11/1993 shift:($dx,$dy) fontsize:XS text:1.1.0
+  from:05/02/1994 till:05/02/1994 shift:($dx,$dy) fontsize:XS text:1.1.2
+  from:02/07/1994 till:02/07/1994 shift:($dx,$dy) fontsize:XS text:2.0
+  from:31/10/1994 till:31/10/1994 shift:($dx,$dy) fontsize:XS text:2.1
+  from:30/03/1995 till:30/03/1995 shift:($dx,-4) fontsize:XS text:2.2
+  from:24/05/1995 till:24/05/1995 shift:($dx,-2) fontsize:XS text:2.3
+  from:30/11/1995 till:30/11/1995 shift:($dx,$dy) fontsize:XS text:3.0
+  from:03/07/1996 till:03/07/1996 shift:($dx,$dy) fontsize:XS text:3.1
+  from:17/02/1997 till:17/02/1997 shift:($dx,$dy) fontsize:XS text:3.2
+  from:11/06/1997 till:11/06/1997 shift:($dx,$dy) fontsize:XS text:3.3
+  from:14/10/1997 till:14/10/1997 shift:($dx,$dy) fontsize:XS text:3.4
+  from:09/06/1998 till:09/06/1998 shift:($dx,$dy) fontsize:XS text:3.5
+  from:28/10/1998 till:28/10/1998 shift:($dx,$dy) fontsize:XS text:3.6
+  from:10/05/1999 till:10/05/1999 shift:($dx,$dy) fontsize:XS text:3.9
+  from:17/05/1999 till:17/05/1999 shift:(40,$dy) fontsize:XS text:4.0
+  from:25/10/1999 till:25/10/1999 shift:($dx,$dy) fontsize:XS text:7.0
+  from:22/06/2000 till:22/06/2000 shift:($dx,$dy) fontsize:XS text:7.1
+  from:01/07/2001 till:01/07/2001 shift:($dx,$dy) fontsize:XS text:8.0
+  from:18/06/2002 till:18/06/2002 shift:($dx,$dy) fontsize:XS text:8.1
+  from:19/03/2003 till:19/03/2003 shift:($dx,$dy) fontsize:XS text:9.0
+  from:26/09/2003 till:26/09/2003 shift:($dx,$dy) fontsize:XS text:9.1
+  from:23/06/2004 till:23/06/2004 shift:($dx,$dy) fontsize:XS text:10.0
+  from:02/02/2005 till:02/02/2005 shift:($dx,$dy) fontsize:XS text:10.1
+  from:14/09/2005 till:14/09/2005 shift:($dx,$dy) fontsize:XS text:10.2
+  from:02/10/2006 till:02/10/2006 shift:($dx,$dy) fontsize:XS text:11.0
+  from:01/07/2007 till:01/07/2007 shift:($dx,$dy) fontsize:XS text:12.0
+  from:02/05/2008 till:02/05/2008 shift:($dx,$dy) fontsize:XS text:12.1
+  from:10/12/2008 till:10/12/2008 shift:($dx,$dy) fontsize:XS text:12.2
+  from:26/08/2009 till:26/08/2009 shift:($dx,$dy) fontsize:XS text:13.0
+  from:24/05/2010 till:24/05/2010 shift:($dx,$dy) fontsize:XS text:13.1
+  from:27/04/2011 till:27/04/2011 shift:($dx,$dy) fontsize:XS text:13.37
+&lt;/timeline&gt;
+{| class=&quot;toccolours collapsible collapsed&quot; align=right style=&quot;margin-left: 1em;&quot;
+|+ x86 release history
+|-
+! version
+! date
+|-
+|1.0
+|July 16, 1993
+|-
+|1.1.0
+|November 5, 1993
+|-
+|1.1.2
+|February 5, 1994
+|-
+|2.0
+|July 2, 1994
+|-
+|2.1
+|October 31, 1994
+|-
+|2.2
+|March 30, 1995
+|-
+|2.3
+|May 24, 1995
+|-
+|3.0
+|November 30, 1995
+|-
+|3.1
+|June 3, 1996
+|-
+|3.2
+|February 17, 1997
+|-
+|3.3
+|June 11, 1997
+|-
+|3.4
+|October 14, 1997
+|-
+|3.5
+|June 9, 1998
+|-
+|3.6
+|October 28, 1998
+|-
+|3.9
+|May 10, 1999
+|-
+|4.0
+|May 17, 1999
+|-
+|7.0
+|October 25, 1999
+|-
+|7.1
+|June 22, 2000
+|-
+|8.0
+|July 1, 2001
+|-
+|8.1
+|June 18, 2002
+|-
+|9.0
+|March 19, 2003
+|-
+|9.1
+|September 26, 2003
+|-
+|10.0
+|June 23, 2004
+|-
+|10.1
+|February 2, 2005
+|-
+|10.2
+|September 14, 2005
+|-
+|11.0
+|October 2, 2006
+|-
+|12.0
+|July 1, 2007
+|-
+|12.1
+|May 2, 2008
+|-
+|12.2
+|December 10, 2008
+|-
+|13.0
+|August 26, 2009
+|-
+|13.1
+|May 24, 2010
+|-
+|13.37
+|April 27, 2011
+|}
+&lt;/div&gt;
+Slackware's release policy can be said to follow a feature and stability based release cycle in contrast to the time-bound (e.g. Debian, [[Ubuntu (operating system)|Ubuntu]]) or [[rolling release]] (e.g. [[Gentoo Linux]]) schemes of other Linux distributions. 
+
+As stated by Patrick Volkerding, &quot;it's usually our policy not to speculate on release dates, since that's what it is -- pure speculation. It's not always possible to know how long it will take to make the upgrades needed and tie up all the related loose ends. As things are built for the upcoming release, they'll be uploaded into the -current tree.&quot;&lt;ref&gt;[http://www.slackware.com/faq/do_faq.php?faq=general#5 Slackware General FAQ]&lt;/ref&gt;
+
+Despite this conservative development paradigm the Slackware team aims to deliver up-to-date software, on at least an annual basis.&lt;ref name=&quot;tdose2009&quot;&gt;[http://connie.slackware.com/~alien/tdose2009/t-dose-slackware.pdf History of Slackware Development]&lt;/ref&gt; Thus, new versions are released continuously and within a reasonably foreseeable time frame. Since its inception, at least one Slackware version has been put out every year. Release activity peaked in the years 1994, 1995, 1997 and 1999, when three versions had been released in each year. Starting with version 7.1 (June 22, 2000) the release progression has become more stable, with biannual releases only in the years 2003, 2005 and 2008 respectively. 
+
+Slackware's latest stable i386 and x86_64 releases are at version 13.37&lt;ref name=&quot;13.37-announcement&quot;&gt;[http://www.slackware.com/announce/13.37.php The Slackware Linux Project: Slackware Release Announcement&lt;!-- Bot generated title --&gt;]&lt;/ref&gt; (as of 2011-04-27), which include support for [[Linux (kernel)|Linux]] 2.6.37.6, [[GNU Compiler Collection|GCC]] 4.5.2, [[GNU C Library]] 2.13, [[Perl]] 5.12.3, [[Apache HTTP Server|Apache]] 2.2.17, [[KDE]] 4.5.5, [[Xfce]] 4.6.2, [[Firefox 4]], [[Gimp]] 2.6.11.&lt;ref name=&quot;13.37-announcement&quot;/&gt;
+
+There is also a testing/developmental version of Slackware called '-current'&lt;ref&gt;[http://slackware.com/changelog/ The Slackware Linux Project: Slackware ChangeLogs&lt;!-- Bot generated title --&gt;]&lt;/ref&gt; that can be used for a more [[bleeding edge]] configuration.
+
+==Support term==
+Slackware has no officially stated support term policy. As of August 7, 2011 the oldest release supported with security patches is version 8.1 (release date: June 18, 2002).&lt;ref&gt;[ftp://ftp.slackware.com/pub/slackware/slackware-8.1/ChangeLog.txt Slackware 8.1 ChangeLog]&lt;/ref&gt;
+
+==Hardware architectures==
+Slackware has traditionally concentrated solely on 32-bit architecture and previous releases were available as 32-bit only. Users wanting 64-bit were required to use unofficial ports such as slamd64. As of Slackware 13.0, a 64-bit variant is available and officially supported in symmetrical development with the 32-bit platform.
+
+Slackware is also available for the [[ARM architecture]] in the form of Slackware ARM (formally ARMedslack) and for [[IBM ESA/390|S/390]]. Both ports have been declared &quot;official&quot; by Patrick Volkerding,&lt;ref&gt;[http://www.armedslack.org Website of ArmedSlack]&lt;/ref&gt; &lt;ref&gt;[http://www.slackware.com/ports/ The Slackware Project: Ports]&lt;/ref&gt; but the ARM port is at the same version as the X86 and AMD64 versions, while the S/390 port is still at version 10.0 for the stable version and 11.0 for the testing/developmental version, and has had no updates since 2009.&lt;ref&gt;[ftp://distro.ibiblio.org/slack390/slack390-current/ChangeLog.txt Slack390 Changelog]&lt;/ref&gt; &lt;ref&gt;[ftp://distro.ibiblio.org/slack390/slack390x-11.0/ChangeLog.txt Slack390x Changelog]&lt;/ref&gt;
+
+==Community-supported software==
+Repositories of community-maintained and -supported binary Slackware packages are provided by [http://linuxpackages.net linuxpackages.net] and [http://www.slacky.eu slacky.eu].  These projects may include more recent versions of software or software not provided by Slackware Linux.
+
+[http://slackbuilds.org SlackBuilds.org] is a community-supported project offering so called SlackBuilds to build extra software not included with Slackware. A SlackBuild mainly provides a shell script that builds a particular package on the user's system. This build process is nearly identical to the way Slackware's official packages are built. SlackBuilds have several advantages over pre-built packages: Since they build from the original author's source code, the user does not have to trust a third-party packager; furthermore the local compilation process allows for machine-specific optimization. In comparison to manual compilation and installation, they assure better integration into the user's system, inasmuch as they utilize Slackware's package system. 
+
+[http://slackfind.net/en/ SlackFind] is a package search service for Slackware.
+
+Since [[GNOME]] was dropped from Slackware Linux,&lt;ref&gt;[http://slackware.mirrors.tds.net/pub/slackware/slackware-10.2/ChangeLog.txt Slackware version 10.2 ChangeLog] - see entry dated Sat Mar 26 23:04:41 PST 2005&lt;/ref&gt; several community projects now provide GNOME binary packages and Slackbuilds for Slackware Linux.  These include [[Dropline GNOME]],&lt;ref&gt;[http://www.droplinegnome.org Dropline GNOME's official website]&lt;/ref&gt; [http://gnomeslackbuild.org GSB: GNOME SlackBuild], [http://www.gware.org GWARE], [http://www.slacky.eu/index.php?option=com_content&amp;task=view&amp;id=2475 Gnome-Slacky], and [http://slackbot.sourceforge.net SlackBot].
+
+Since Slackware has migrated in recent releases from [[KDE]] 3.5.x to the 4.x branch, there is an alternative for Slackware users who prefer using KDE 3.5.x using the [[K_Desktop_Environment_3#Forking | Trinity desktop]].&lt;ref&gt;[http://www.trinitydesktop.org/installation.php#slackware Trinity desktop and Slackware]&lt;/ref&gt;
+
+== Popularity and relevance ==
+
+The popularity - in the sense of actual ''usage'' - of any Linux operating system cannot be determined on reliable statistical terms, due to the lack of scientific measurement methods and strategies. Yet some websites provide statistical material on page hits and search terms, which both allow to at least outline coarse-grained trends and relative distribution patterns of interest.
+
+===Global popularity===
+The website [[DistroWatch]].com provides information and download links concerning different Unix-like operating systems, as well as a compilation of respective page hits. The DistroWatch statistics, tracking page hits since 2002, show a decreasing but still substantial visitor's interest regarding Slackware: In 2002 the Slackware page was ranked as number 7, but dropped to number 10 by 2005. In 2006 it reached number 9, whereas since then being constantly below the ten most popular pages. Slackware had its lowest rank (13) in 2009. Since then it has been listed as number 11.
+
+A website specifically dedicated to the accumulation of data regarding the usage of Linux-based operating systems is the [[Linux Counter]] project, which gathers its data via a webform that is filled out by registered visitors. As of Aug 11, 2011, the web site claims a Slackware share of 6,31%, based upon 119.372 registrations and 122.340 values.&lt;ref&gt;[http://counter.li.org/reports/machines.php Linux Counter statistics]&lt;/ref&gt; 
+
+===Regional popularity===
+The search engine [[Google]].com offers an &quot;Insights for Search&quot; service&lt;ref&gt;[http://www.google.com/insights/search/#q=slackware&amp;cmpt=q Google - Insights for Search for &quot;Slackware&quot;]&lt;/ref&gt;, that gives information about the geographical distribution of search terms for the period &quot;2004 - present&quot;. According to these statistics the search term &quot;slackware&quot; was most often used in Bulgaria. Of the 10 countries listed, 7 are located in Eastern Europe, the remaining 3 being Brazil, Indonesia and Italy.
+
+===Relevance===
+Slackware is considered to have been the most widespread Linux distribution in the early years following its inception. While this general opinion cannot be evidenced by historical sources, Slackware's impact can be inferred from the large number of Linux distributions that are derived from it. Most notably, early versions of the [[SuSE]] operating system were based on Slackware. As to the number of descended distributions, Slackware had an influence that is only surpassed by Debian and Fedora/[[Red Hat Linux]].
+
+==See also==
+{{Portal|Free software}}
+
+* [[List of Linux distributions#Slackware-based|List of Slackware-based Linux distributions]]
+
+==References==
+{{Reflist|2}}
+
+==External links==
+{{Commons|Slackware}}
+{{wikibooks|Slackersbible}}
+* [http://www.slackware.com/ Slackware website]
+* [http://www.slackbook.org/ Official Slackware Book]
+* [http://slackwiki.org/ Unofficial Slackware Wiki]
+* {{DistroWatch|slackware|NAME=Slackware}}
+* [http://slackworld.berlios.de/ The Slack World (Magazine)]
+* [http://www.nielshorn.net/slackware/slack_versions.php Slackware - A complete overview of all versions]
+* [http://www.slackdown.co.uk/history.html Unofficial History of Slackware releases]
+* [http://theage.com.au/articles/2002/10/04/1033538761935.html Interview with Slackware founder Patrick Volkerding, 2002]
+* [http://tllts.org/audio/tllts_164-10-25-06.ogg Linux Link Tech Show interview with Patrick Volkerding (audio), 2006]
+* {{dmoz|Computers/Software/Operating_Systems/Linux/Distributions/Slackware}}
+* [http://www.linuxquestions.org/questions/slackware-14/ Slackware forum]
+{{Linux distributions}}
+
+[[Category:KDE]]
+[[Category:Slackware| ]]
+[[Category:X86-64 Linux distributions]]
+
+[[ar:Ø³ÙØ§ÙÙÙØ±]]
+[[bg:Slackware]]
+[[bar:Slackware]]
+[[bs:Slackware]]
+[[ca:Slackware]]
+[[cs:Slackware]]
+[[da:Slackware]]
+[[de:Slackware]]
+[[et:Slackware]]
+[[el:Slackware]]
+[[es:Slackware]]
+[[eu:Slackware]]
+[[fa:Ø§Ø³ÙÚ©ÙØ±]]
+[[fr:Slackware]]
+[[ko:ì¬ëì¨ì´]]
+[[hr:Slackware]]
+[[id:Slackware]]
+[[is:Slackware]]
+[[it:Slackware]]
+[[he:×¡×××§×××¨]]
+[[csb:Slackware]]
+[[lt:Slackware]]
+[[hu:Slackware]]
+[[ml:à´¸àµà´²à´¾à´àµà´àµ à´µàµàµ¼â]]
+[[ms:Slackware]]
+[[nl:Slackware Linux]]
+[[ja:Slackware]]
+[[no:Slackware]]
+[[nn:Slackware]]
+[[pl:Slackware]]
+[[pt:Slackware Linux]]
+[[ro:Slackware]]
+[[ru:Slackware]]
+[[simple:Slackware]]
+[[sk:Slackware]]
+[[sl:Slackware]]
+[[sr:Slackware]]
+[[fi:Slackware]]
+[[sv:Slackware]]
+[[th:à¸ªà¹à¸¥à¸à¹à¸§à¸£à¹]]
+[[tr:Slackware]]
+[[uk:Slackware]]
+[[zh:Slackware Linux]]</rev></revisions></page></pages></query></api>

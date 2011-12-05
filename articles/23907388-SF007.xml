@@ -1,0 +1,96 @@
+<?xml version="1.0"?><api><query><redirects><r from="Backup HDDVD" to="BackupHDDVD" /></redirects><pages><page pageid="8645116" ns="0" title="BackupHDDVD"><revisions><rev xml:space="preserve">{{good article}}
+{{Infobox Software
+| name                    = BackupHDDVD
+| logo                    = 
+| screenshot              = 
+| caption                 = Output of the original BackupHDDVD utility by Muslix64 during a backup operation.
+| collapsible             = 
+| author                  = Muslix64
+| developer               = 
+| released                = &lt;!-- {{Start date|YYYY|MM|DD}} --&gt;
+| discontinued            = 
+| latest release version  = 
+| latest release date     = &lt;!-- {{Start date and age|YYYY|MM|DD}} --&gt;
+| latest preview version  = 
+| latest preview date     = &lt;!-- {{Start date and age|YYYY|MM|DD}} --&gt;
+| frequently updated      = 
+| programming language    = 
+| operating system        = [[Microsoft Windows|Windows]]
+| platform                = 
+| size                    = 
+| language                = 
+| status                  = 
+| genre                   = 
+| license                 = [[source available]] / No license provided
+| website                 = 
+}}
+'''BackupHDDVD''' is a small [[computer software]] [[utility program]] available in [[command line interface|command line]] and [[Graphical user interface|GUI]] versions which aids in the [[cryptography|decryption]] of commercial [[HD DVD]] discs protected by the [[Advanced Access Content System]]. It is used to [[backup|back up]] discs, often to enable playback on hardware configurations without full support for [[HDCP]].  The program's [[source code]] was posted online, but no licence information was given.
+
+Written by an anonymous programmer using the [[user (computing)|handle]] Muslix64, BackupHDDVD is distributed with none of the cryptographic keys necessary for decryption. Users wanting to use the software to decrypt a protected disc's contents must obtain the appropriate keys separately, a task with which neither the original author nor his or her versions of BackupHDDVD assist.&lt;ref name=&quot;Techtree&quot;&gt;{{cite web|url=http://www.techtree.com/India/News/Took_Eight_Days_to_Crack_HD_DVD/551-78152-581.html|title=Took Eight Days to Crack HD DVD!|date=2006-12-28|publisher=''Techtree''|accessdate=2007-01-02}}&lt;/ref&gt;&lt;ref name=&quot;PCMag1&quot;&gt;{{cite web|url=http://www.pcmag.com/article2/0,1895,2078016,00.asp|title= 	
+Next-Gen DVD DRM HackedâMaybe| author=Gardiner, Bryan| publisher=''PC Magazine''| date=2006-12-29| accessdate=2007-01-02}}&lt;/ref&gt;
+
+BackupHDDVD represented the first known successful attack against AACS. The utility circumvents content protection by decrypting video files directly with [[Advanced Encryption Standard|AES]], the underling cryptographic cipher used by AACS. Using this technique, BackupHDDVD is able to completely bypass the AACS chain of trust, rendering it immune to revocation. The cost of this immunity is that users are forced to rely on keys leaking from commercial player software to use BackupHDDVD with new discs.&lt;ref name=&quot;Infoworld&quot;&gt;{{cite web|url=http://www.infoworld.com/article/06/12/29/HNdrmhacked_1.html|title=Hacker: Blu-ray, HD DVD copy protection cracked|author=Robert McMillan|publisher=''InfoWorld''|date=2006-12-29|accessdate=2007-05-08}}&lt;/ref&gt;&lt;ref&gt;{{cite web|url=http://www.dailytech.com/article.aspx?newsid=5498&amp;ref=y|author=Gabriel Ikram|publisher=''DailyTech''|title= 	
+Hackers Claim HD DVD Encryption Circumvented|date=2006-12-28| accessdate=2007-01-02}}&lt;/ref&gt;
+
+== History ==
+[[Image:BackupHDDVD GUI Screenshot.png|thumb|right|Version of BackupHDDVD modified to include a GUI in use on a [[Windows XP]] system.]]
+According to the creator of BackupHDDVD, he or she first set out to circumvent AACS to bypass a restriction in software HD DVD players which reduced the quality of AACS restricted [[1080p]] [[High-definition video|high definition]] video to that of standard definition DVD video or refused to play outright unless an HDCP compliant chain of video hardware was present.&lt;ref name=&quot;Techtree&quot; /&gt; At the time only a few [[computer monitor]]s and [[video card]]s supported HDCP. As a result, configurations that would have allowed high-definition HD DVD viewing in software players were exceptionally rare.&lt;ref name=&quot;PCWNoHDCP&quot;&gt;{{cite web|url=http://www.pcworld.com/article/id,126345-page,1/article.html|publisher=''PC World''|author=Tom Mainelli|title=GeekTech: Want to View HD Content on Your PC? Upgrade Wisely|date=2006-07-13|accessdate=2007-05-04}}&lt;/ref&gt;&lt;ref name=&quot;ArsVistaHDCP&quot;&gt;{{cite web|url=http://arstechnica.com/news.ars/post/20060214-6177.html|publisher=''Ars Technica''|author=Ken Fisher|title=The truth behind HDCP and video card support|date=2006-02-14|accessdate=2007-05-04}}&lt;/ref&gt;
+
+On December 18, 2006, a video which showed BackupHDDVD being used to decrypt and copy the film ''[[Full Metal Jacket]]'' to a hard drive was uploaded to [[YouTube]].&lt;ref name=&quot;Yahoo&quot;&gt;{{cite web|url=http://news.yahoo.com/s/nf/20061230/tc_nf/49022|title= 	
+Hacker Cracks High-Def DVD Encryption System|date=2006-12-30| accessdate=2007-01-02}} {{Dead link|date=September 2010|bot=H3llBot}}&lt;/ref&gt; Two days after the video was uploaded, the initial version of the utility along with its [[source code]] and documentation was uploaded to a file hosting service. A link to the file was then posted by the utility's creator on the forums of [[Doom9]], a website devoted to DVD backup. The utility's documentation, along with the forum post, contained little information as to how necessary keys could be obtained. The author elaborated in another forum post, claiming that keys could be obtained by exploiting the necessity for them to be held in [[RAM|memory]] to allow playback in player software.
+
+On January 2, 2007, the author posted the 1.0 version of the BackupHDDVD utility, which included support for the decoding of discs using volume keys.&lt;ref&gt;{{cite web|url=http://effectu.com/index.php?option=com_content&amp;task=view&amp;id=363|author=Michael O'Connor|title= BackupHDDVD v1.00 Released|date=2007-01-02| accessdate=2007-01-02}}&lt;/ref&gt; For several weeks following the utility's release no success using the author's key extraction technique was reported.&lt;ref name=&quot;Engadget&quot;&gt;{{cite web|url=http://www.engadget.com/2006/12/27/aacs-drm-cracked-by-backuphddvd-tool/|title= 	
+AACS DRM cracked by BackupHDDVD tool?| author=Block, Ryan|publisher=''Engadget''|date=2006-12-27| accessdate=2007-01-02}}&lt;/ref&gt;&lt;ref name=&quot;Ars&quot;&gt;{{cite web|url=http://arstechnica.com/news.ars/post/20061228-8510.html|title= 	
+HD DVD reportedly cracked, but difficult to verify|author=Ken Fisher|publisher=''Ars Technica''|date=2006-12-28| accessdate=2007-01-02}}&lt;/ref&gt; In mid-January 2007, a volume key was published by another member of the Doom9 forum along with an explanation of the technique used to obtain it. Other forum members quickly discovered keys for different titles. Keys for many discs are now readily available on the internet.
+
+Further development of BackupHDDVD was being hosted on [[SourceForge]] until the site received a [[DMCA]] [[takedown notice]] alleging a violation in late February. In compliance with the notice, the project was immediately removed. Several versions of BackupHDDVD have been released by individuals other than the original author, including some versions with GUIs and the ability to locate keys on the internet or scan for them in memory automatically. HDDecrypter, a port of BackupHDDVD to [[C (programming language)|C]] with a native Windows GUI is also available. This version supports multiple CPU threads and runs faster than its Java counterparts. While development of BackupHDDVD has ceased, a commercial HD DVD decryption utility called [[Slysoft]] [[AnyDVD HD]] exists which relies on [[AACS encryption key controversy|compromised AACS processing or media keys]] to allow for the backup or unrestricted viewing of any AACS-protected discs without the need for title or volume keys.&lt;ref name=&quot;Dailytech&quot;&gt;{{cite web|url=http://www.dailytech.com/article.aspx?newsid=6065|title=All Blu-ray Disc and HD DVD Encryption Defeated by Single Key|author=Marcus Yam|publisher=''DailyTech''|date=2007-02-13|accessdate=2007-02-16}}&lt;/ref&gt;&lt;ref name=&quot;PCMag&quot;&gt;{{cite web|url=http://www.pcmag.com/article2/0,1895,2094932,00.asp|title=Beta Software to Copy HD DVDs Released|author=Mark Hachman|publisher=''PC Magazine''|date=2006-02-14|accessdate=2007-02-20}}&lt;/ref&gt;
+
+== Background ==
+
+[[Image:AACS dataflow.svg|right|thumb|Typical AACS decryption chain.]]
+
+{{main|Advanced Access Content System}}
+
+The AACS Licensing Authority (LA) assigns a series of 253 unique [[cryptographic key]]s to device manufacturers. When an AACS protected disc is manufactured, a series of up to 64 keys called title keys are generated and the video content on the disc is encrypted using these keys. The title keys are stored on the disc and themselves encrypted with another key called the volume unique key. The volume unique key for any disc can be calculated by all authorized devices using another key called a processing key, which is derived from a media key block stored on each disc. Authorized devices use one or more of the manufacturer's assigned device keys to decrypt the media key block, yielding a processing key and enabling further decryption of the volume and title keys, and finally the content.&lt;ref name=&quot;arnezami&quot;&gt;{{cite web|url=http://forum.doom9.org/showthread.php?t=122363|title=Understanding AACS (including Subset-Difference)|author=arnezami|date=2007-02-17|accessdate=2007-03-18}}&lt;/ref&gt;
+
+If a device key is to be revoked, the media key blocks on all discs manufactured after the time of revocation are encrypted in a way which does not enable the revoked device to obtain a valid processing key.&lt;ref name=&quot;AACS-cce&quot;&gt;{{cite web|url=http://www.aacsla.com/specifications/specs091/AACS_Spec_Common_0.91.pdf|title=Introduction and Common Cryptographic Elements|author=AACS-LA|format=PDF|accessdate=2007-03-22}}&lt;/ref&gt; Users trying to view new content on a revoked player would be forced to upgrade their player software to a more secure version, thereby limiting the scope of the compromise each time an exploit is discovered.&lt;ref name=&quot;Betanews&quot;&gt;{{cite web|url=http://www.betanews.com/article/Studios_Take_Claims_of_AACS_Crack_Seriously/1167427818|title= 
+Studios Take Claims of AACS Crack Seriously|date=2006-12-29|author=Scott M. Fulton, III|publisher=''BetaNews''| accessdate=2007-01-02}}&lt;/ref&gt;&lt;ref name=&quot;Reghardware&quot;&gt;{{cite web|url=http://www.reghardware.co.uk/2006/12/28/hddvd_crypto_cracked/|title= 	
+HD DVD anti-rip encryption cracked|date=2006-12-28|author=Tony Smith|publisher=''The Register''| accessdate=2007-01-02}}&lt;/ref&gt; While a compromised device or processing key could be used to decrypt a large number of discs, BackupHDDVD does not use these keys because they can be revoked by AACS LA. Because the AACS revocation system works by preventing a given device or player from calculating a valid volume unique key, BackupHDDVD circumvents the system entirely by relying on volume or title keys leaked from authorized players. With these keys BackupHDDVD is not subject to device revocation and is able to decrypt the content directly, bypassing the key exchange and verification process.&lt;ref name=&quot;arnezami&quot; /&gt;&lt;ref name=&quot;RegisterBeyondRevo&quot;&gt;{{cite web|url=http://www.theregister.co.uk/2007/05/04/aacs_crack/|title=Latest AACS crack 'beyond revocation'|author=John Leyden|publisher=''The Register''|date=2007-04-04|accessdate=2007-05-05}}&lt;/ref&gt;&lt;ref name=&quot;ArsCantHack&quot;&gt;{{cite web|url=http://arstechnica.com/news.ars/post/20070415-aacs-cracks-cannot-be-revoked-says-hacker.html|title=New AACS cracks cannot be revoked, says hacker|author=Jeremy Reimer|publisher=''Ars Technica''|date=2007-03-15|accessdate=2007-05-05}}&lt;/ref&gt;
+
+== Features and limitations ==
+Users must have either found decryption keys themselves or obtained them elsewhere for most versions of BackupHDDVD to work. The utility reads a text file containing volume or title keys and attempts to find a set of corresponding keys for the inserted disc. Through a standard AES [[library (software)|library]], it then decrypts each video file on the disc using the appropriate keys and writes the results to a location specified by the user. Direct file decryption allows the utility's functionality to remain unaffected by device key revocation and its performance unencumbered with AACS overhead.&lt;ref name=&quot;PCMag1&quot; /&gt;
+
+Originally intended to be a [[proof of concept]], BackupHDDVD is severely limited in its ability to produce fully functional copies of commercial discs. Early versions were unable to properly decrypt discs which used the [[HD DVD#Interactive content|in-movie experience]] technology. New versions work around this limitation by excluding interactive content from decrypted copies. The utility cannot process HD DVD navigation functionality which enables menus, chapters, secondary audio tracks and subtitles, so these features are inaccessible in copies created by BackupHDDVD. Most versions provide no validation for keys and will still attempt to decrypt a disc's contents with an incorrect key, resulting in corrupt files.&lt;ref name=&quot;Ars&quot; /&gt;
+
+== Legality ==
+Under United States anti-circumvention law created by the [[Digital Millennium Copyright Act]], BackupHDDVD may qualify as a device primarily intended to &quot;circumvent a technological measure that effectively controls access to a [protected] work.&quot; If identified as such, it would be illegal to use or distribute. Because DMCA laws do not affect interpreted fair use provisions in U.S. copyright law, the utility is exempt from anti-circumvention provisions if used for cryptography or interoperability research, or in the making of a backup copy for personal use.&lt;ref name=&quot;Infoworld&quot; /&gt;&lt;ref&gt;{{cite web|title=09 f9: A Legal Primer|url=http://www.eff.org/deeplinks/archives/005229.php|author=Fred von Lohmann|publisher=''Electronic Frontier Foundation''|date=2007-05-02|accessdate=2007-05-08}}&lt;/ref&gt;&lt;ref&gt;{{cite web|url=http://www.law.cornell.edu/uscode/html/uscode17/usc_sec_17_00001201----000-.html|title=US CODE: Title 17,1201. Circumvention of copyright protection systems|publisher=''Cornell Law School''|accessdate=2007-05-08}}&lt;/ref&gt;
+
+== Reaction ==
+Reaction to the utility by Doom9 forum members, [[blog]]gers, and mainstream media has ranged from supportive to intensely hostile. By some, the circumvention of AACS was seen as a reaffirmation of fair use. Others felt that the utility was no more than a piracy tool and would bring about group punishment against consumers in the form of player revocation. One article compared proponents of BackupHDDVD to terrorists.&lt;ref&gt;{{cite web|url=http://www.dvdfile.com/index.php?option=com_content&amp;task=view&amp;id=5932&amp;Itemid=11|title=The HD Disc Hacks|date=2007-02-21|accessdate=2007-03-18|archiveurl = http://web.archive.org/web/20070316113644/http://www.dvdfile.com/index.php?option=com_content&amp;task=view&amp;id=5932&amp;Itemid=11 |archivedate = March 16, 2007|deadurl=yes}}&lt;/ref&gt; When the release of the tool was first publicized, several articles claimed that AACS had been cracked.&lt;ref name=&quot;Techtree&quot; /&gt;&lt;ref name=&quot;Yahoo&quot; /&gt; In fact no cryptographic weaknesses constituting a crack have yet been found in [[Advanced Encryption Standard|AES]], the underlying cryptographic system of AACS. Keys are actually obtained through a [[side-channel attack]].&lt;ref name=&quot;AACSLA&quot; /&gt;
+
+Initially, it was thought that the compromise of HD DVD's security would entice some studios into adopting the competing [[Blu-Ray]] format, but Blu-Ray's AACS implementation has since been circumvented using a similar method. However, Blu-Ray offers an additional layer of protection called [[BD+]].
+
+There was some speculation that the player used by the utility's author to obtain keys would be [[Certificate revocation list|revoked]]. [[Cyberlink]], which sells the PowerDVD player software, was quick to deny that its software could be used to obtain keys.&lt;ref&gt;{{cite web|url=http://www.engadgethd.com/2007/01/02/cyberlink-responds-to-backuphddvd-crack-it-wasnt-us/|author=Richard Lawler|publisher=''Engadget HD''|title= 
+Cyberlink responds to BackupHDDVD crack: It wasn't us|date=2007-01-02| accessdate=2007-01-02}}&lt;/ref&gt; [[Corel]] was silent about the role its [[WinDVD]] software had played in the leaking of volume and title keys. Both companies have since released updates for their player software.&lt;ref name=&quot;AACSLA&quot; /&gt;
+
+The consortium behind the HD DVD format and the studios delivering films on the format did not release an official statement beyond that they were investigating the utility.&lt;ref name=&quot;NYTimes&quot;&gt;Markoff, John. &quot;[http://www.nytimes.com/2007/01/01/technology/01hack.html Studios' DVDs Face a Crack in Security]&quot;, ''New York Times'', 2007-01-01. Retrieved on 2007-03-22.&lt;/ref&gt; On January 24, 2007 AACS LA issued a statement acknowledging that AACS security had been compromised while urging software vendors to limit the availability of keys in memory.&lt;ref name=&quot;AACSLA&quot;&gt;{{cite web|url=http://www.aacsla.com/press| title=RESPONSE TO REPORTS OF ATTACKS ON AACS TECHNOLOGY| date=2007-01-24| accessdate=2007-01-31}}&lt;/ref&gt; Beginning with discs manufactured in late April, versions of PowerDVD and WinDVD responsible for leaking keys have been revoked and free updates are available to owners of affected versions.&lt;ref&gt;{{cite web|url=http://arstechnica.com/news.ars/post/20070407-corel-updates-windvd-to-stop-aacs-hackers.html| title=Corel updates WinDVD to stop AACS hackers| author=Reimer, Jeremy|publisher=''Ars Technica''|date=2007-04-07| accessdate=2007-04-15}}&lt;/ref&gt;
+
+== Notes ==
+{{Reflist|2}}
+
+== External links ==
+* [http://forum.doom9.org/showthread.php?t=119871 Original post] at Doom9
+
+[[Category:2006 software]]
+[[Category:Cryptographic software]]
+[[Category:Digital rights management]]
+[[Category:DVD]]
+[[Category:Cryptanalytic software]]
+
+[[es:BackupHDDVD]]
+[[it:BackupHDDVD]]
+[[ja:BackupHDDVD]]
+[[no:BackupHDDVD]]
+[[ru:BackupHDDVD]]
+[[fi:BackupHDDVD]]
+[[sv:BackupHDDVD]]</rev></revisions></page></pages></query></api>

@@ -1,0 +1,90 @@
+<?xml version="1.0"?><api><query><pages><page pageid="316480" ns="0" title="Angband (video game)"><revisions><rev xml:space="preserve">{{Primary sources|article|date=December 2007}}
+{{Infobox VG|title=Angband
+|image=[[Image:Angband.gif|256px]]
+|caption=Town level of ''Angband''.
+|aspect ratio=
+|resolution=
+|developer=
+|publisher=
+|distributor=
+|license=[[Moria/Angband license]]/[[GNU General Public License|GPL]] dual-license
+|series=Moria, Rogue, NetHack
+|engine=
+|version=
+|released=
+|genre=[[Roguelike]]
+|modes=[[Single-player]]
+|ratings=
+|platforms=[[Cross-platform]]
+|media=Download
+|requirements=
+|input=[[Keyboard (computing)|Keyboard]]
+|designer=Angband Development Team
+|writer=
+|artist=
+|composer=
+|latest release version=3.3.2
+|latest release date={{release date and age|2011|10|15}}
+|latest preview version=
+|latest date=
+}}
+'''''Angband''''' is a [[dungeon crawl|dungeon-crawling]] [[roguelike]] [[Personal computer game|computer game]] derived from ''[[Moria (computer game)|Umoria]]''.  It is based on the writings of [[J. R. R. Tolkien]], in which [[Angband]] is the fortress of [[Morgoth]].  The current version of ''Angband'' is available for all major operating systems, including [[Unix]], [[Microsoft Windows|Windows]], [[Mac OS X]], and [[Android_(operating_system)|Android]].
+
+==Gameplay==
+The game revolves around exploring a 100-[[level (computer and video games)|level]] dungeon, in which the player seeks to amass enough power and equipment to ultimately defeat [[Morgoth]]. A new level is [[Random dungeon|randomly generated]] each time the player changes levels, which gives ''Angband'' great [[replay value]]: no two games are the same.
+
+''Angband'' gameplay is combat and tactics based, with inventory management as an important aspect of gameplay. ''Angband'' games can last for weeks.
+
+==History==
+The first version of ''Angband'' was created by Alex Cutler and Andy Astrand at the [[University of Warwick]] in 1990. They wanted to expand the game ''Umoria'' by adding items, monsters, and features. After Cutler and Astrand, the [[source code]] was maintained at the University of Warwick by Geoff Hill and Sean Marsh. They released &quot;2.4.frog_knows&quot;, which was enhanced by others and widely ported to non-Unix platforms.
+
+Following their departure, the later principals of ''Angband'' have included Charles Swiger, Ben Harrison, and Robert RÃ¼hlmann. Harrison was the maintainer responsible for the &quot;Great Code Cleanup&quot;, modularizing, extending, and greatly improving the readability of the ''Angband'' source code. This in turn led to the large number of variants currently available, as well as the rather large number of ports.  Like other maintainers, he eventually moved on to other interests, passing the title to Robert RÃ¼hlmann in 2000.
+
+RÃ¼hlmann's contributions included releasing version 3.0, which included many monster and object changes contributed by Jonathan Ellis. He also introduced [[Lua programming language|Lua]], a lightweight scripting language, with the intention of simplifying development of both the main game and its variants.  The ''Angband'' community, however, did not generally embrace the addition of scripting, with many expressing confusion over its usage, and as such it was later removed.
+
+While RÃ¼hlmann was maintainer, he started the Angband Open Source Initiative, designed to place ''Angband'' under a [[Free Software]] license. Although the original license (Moria/Angband license) allows distribution of the game, it only does so if &quot;not for profit&quot;, which precludes packaging with many [[Linux]] distributions or inclusion within a magazine cover disc. The license also does not explicitly allow code modification, something which is in practice ignored by the ''Angband'' community. In light of these perceived issues, an effort to re-license ''Angband'' under the [[GNU GPL]]&lt;ref name=rephial-opensource&gt;{{cite web|url= http://rephial.org/wiki/OpenSource|title=OpenSource|accessdate=2007-12-24|last=|first= |coauthors=|date=|work=Play Angband|publisher=}}&lt;/ref&gt; was started in 2000&lt;ref name=rr9-opensource-start&gt;{{cite web|url=http:// groups.google.co.uk/group/rec.games.roguelike.angband/msg/f391c73356981524?dmode=source |title=Angband OpenSource Initiative|date=2000-06-07|first=Robert|last=RÃ¼hlmann}}&lt;/ref&gt; and completed on January 9, 2009.&lt;ref&gt;{{cite web|url =http://groups.google.com/group/rec.games.roguelike.angband/msg/2db2fc9961d41c50|title=Re: Angband 3.1.0 beta released|last=Sidwell|first=Andi|date=2009-01-09|accessdate=2009-01-09}}&lt;/ref&gt;
+
+RÃ¼hlmann stepped down in October 2005,&lt;ref name=rgra-stepdown2005&gt;{{cite web|url= http://groups.google.com/group/rec.games.roguelike.angband/browse_thread/thread/b23070da01b64866/1a7ace090a5ff90c|title=Stepping down as ''Angband'' Maintainer|accessdate=2007-12-24|last=Ruehlmann |first=Robert|coauthors=|date=2005-10-09|work=rec.games.roguelike.angband|publisher=}}&lt;/ref&gt; leading to a brief period of uncertainty.&lt;ref name=rgra-whois&gt;{{cite web|url= http://groups.google.com/group/rec.games.roguelike.angband/browse_thread/thread/b48557204d3843c7/fa720195b0bc4190#fa720195b0bc4190 |title=So Who is the New Maintainer?|accessdate=2007-12-24|last= |first=|coauthors=|date=2005-11-18|work=rec.games.roguelike.angband|publisher=}}&lt;/ref&gt; However, Julian Lighton was soon announced as the new maintainer in March 2006, but did not release a new version of the game.&lt;ref name=rgra-stepdown2006&gt;{{cite web|url=http://angband.oook.cz/rgra.php?showpost=72226|title=Stepping down as ''Angband'' Maintainer|accessdate=2007-12-24|last=Ruehlmann |first=Robert|coauthors=|date=2006-03-05|work=rec.games.roguelike.angband|publisher=}}&lt;/ref&gt;  Due to the absence of Julian, Andi Sidwell assumed maintainership, with the support of the community, in December 2007.&lt;ref name=rgra-nom&gt;{{cite web|url=http://angband.oook.cz/rgra.php?showpost=93663 |title=Re: ''Angband'' Maintainer|accessdate=2007-12-24|last=Sidwell|first=Andrew|coauthors= |date=2007-03-23|work=rec.games.roguelike.angband|publisher=}}&lt;/ref&gt;  Under their watch, other developers have come on board and the game has seen significant gameplay and internal code changes.
+
+==Community==
+The [[Usenet newsgroup]] &lt;tt&gt;rec.games.roguelike.angband&lt;/tt&gt; and the Angband Forum are the loci of the ''Angband'' community, places to discuss all aspects of the game. An [[IRC]] channel, #angband, exists on the [[WorldIRC]] network, and another, #angband-dev exists on the [[freenode]] network.
+
+==Variants==
+''Angband'' has spawned many derivatives. A family of around sixty variants exist, of which roughly half a dozen are active.&lt;ref name=variants&gt;{{cite web|url= http://angband.oook.cz/variants.php?ordrd=1|title=Angband variant list|accessdate=2009-01-18}}&lt;/ref&gt; Each differs in purpose and degree of alteration. The multiplayer variant ''MAngband'' was developed in 1997; it includes real-time elements to support simultaneous gameplay. ''ZAngband'' (''Zelazny Angband''), is largely based on [[Roger Zelazny]]'s ''[[The Chronicles of Amber]]''. Topi Ylinen initiated development, though the project involved others, including Robert RÃ¼hlmann.&lt;ref name=zangband&gt;{{cite web|url=http://www.zangband.org/|title=zangband.org |accessdate=2009-01-17}}&lt;/ref&gt;  Most development ceased in 2006.&lt;ref name=zangband-cvs&gt;{{cite web |url=http://zangband.cvs.sourceforge.net/viewvc/zangband/zangband/src/?sortby=date#dirlist |title=/zangband/src CVS listing at sourceforge.net|accessdate=2009-01-17}}&lt;/ref&gt; Formerly Tolkien-flavoured variant ''Tales of Middle Earth'' (''ToME'') was originally derived from the ''ZAngband'' code base,&lt;ref&gt;{{cite web|url= http://www.gamesetwatch.com/2008/01/play_angband_at_last.php|title=COLUMN: @Play: Angband - At Last!|author=Harris, John|work=GameSetWatch|date= January 19, 2008|accessdate=2010-01-28}}&lt;/ref&gt; but was rewritten from scratch for version 4.0.0, and no longer uses a Tolkien setting as it now has its own original fantasy setting.
+
+==References==
+{{reflist}}
+
+==External links==
+*{{Official website|http://rephial.org/}}, with wiki and development information
+*[http://angband.oook.cz/ ''Angband'' at oook.cz], with forum, spoilers, and other resources
+*{{Usenet|rec.games.roguelike.angband|Angband}}
+*[http://roguebasin.roguelikedevelopment.org/index.php?title=Angband Angband at RogueBasin] - overview, history, licensing, links
+*[http://tome.te4.org/ ToME - The Fourth Age (Official site)]
+{{open source video games}}
+{{DEFAULTSORT:Angband (Video Game)}}
+[[Category:1990 video games]]
+[[Category:Amiga games]]
+[[Category:BeOS games]]
+[[Category:DOS games]]
+[[Category:Linux games]]
+[[Category:Mac OS games]]
+[[Category:Mac OS X games]]
+[[Category:Middle-earth video games]]
+[[Category:OS/2 games]]
+[[Category:Roguelikes]]
+[[Category:Free, open source roguelikes]]
+[[Category:Video games based on novels]]
+[[Category:Windows games]]
+[[Category:Curses (programming library)]]
+[[Category:Cross-platform software]]
+[[de:Angband]]
+[[es:Angband (videojuego)]]
+[[fr:Angband (jeu vidÃ©o)]]
+[[io:Angband]]
+[[it:Angband (videogioco)]]
+[[ja:Angband]]
+[[pl:Angband (gra komputerowa)]]
+[[pt:Angband (jogo de computador)]]
+[[ru:Angband (ÐºÐ¾Ð¼Ð¿ÑÑÑÐµÑÐ½Ð°Ñ Ð¸Ð³ÑÐ°)]]
+[[fi:Angband (tietokonepeli)]]</rev></revisions></page></pages></query></api>

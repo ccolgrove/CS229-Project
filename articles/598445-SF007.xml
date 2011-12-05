@@ -1,0 +1,165 @@
+<?xml version="1.0"?><api><query><pages><page pageid="598445" ns="0" title="UNIX System V"><revisions><rev xml:space="preserve">{{Refimprove|date=April 2010}}
+
+'''Unix System V''', commonly abbreviated '''SysV''' (and usually pronouncedâthough rarely writtenâas &quot;System Five&quot;), is one of the first commercial versions of the [[Unix]] [[operating system]]. It was originally developed by [[American Telephone &amp; Telegraph]] (AT&amp;T) and first released in 1983. Four major versions of System V were released, termed Releases 1, 2, 3 and 4.  System V Release 4, or SVR4, was commercially the most successful version, being the result of an effort, marketed as ''Unix System Unification'', which solicited the collaboration of the major Unix vendors. It was the source of several common commercial Unix features.
+
+While AT&amp;T sold their own hardware that ran System V (see [[AT&amp;T Computer Systems]]), most customers ran a version from a reseller, based on AT&amp;T's [[reference implementation]]. A standards document called the [[System V Interface Definition]] outlined the default features and behavior of implementations. The most widely used versions of System V today are [[IBM]]'s [[AIX operating system|AIX]], based on System V Release 3, and [[Sun Microsystems|Sun]]'s [[Solaris Operating System|Solaris]] and [[Hewlett-Packard]]'s [[HP-UX]], both based on System V Release 4.
+
+In the 1980s and early-1990s, System V was considered one of the two major &quot;flavors&quot; of UNIX, the other being [[Berkeley Software Distribution|Berkeley Unix]] (BSD). During the period of the [[Unix wars]] System V was known for being the primary choice of manufacturers of large [[multiuser systems]], in opposition to [[BSD]]'s dominance of desktop workstations. However, with standardization efforts such as [[POSIX]] and the commercial success of [[Linux]], this generalization is not as accurate as it once was.
+
+[[Image:Unix history-simple.svg|thumb|300px|right|Unix history tree]]
+
+== Releases ==
+===SVR1===
+{{Refimprovesect|date=January 2008}}
+System V succeeded AT&amp;T's previous commercial Unix called [[UNIX System III|System III]] in January, 1983&lt;ref name=&quot;levenez&quot;&gt;{{cite web
+| url         = http://www.levenez.com/unix/
+| title       = Unix History (Unix Timeline)
+| first       = Ãric
+| last        = LÃ©vÃ©nez
+| archiveurl  = http://www.webcitation.org/5vLcAHDQ6
+| archivedate = 2010-12-29
+| accessdate  = 2010-12-29
+}}&lt;/ref&gt;
+(there was never an external release of System IV).&lt;ref&gt;{{Citation |title=Modern Operating Systems |last=Tanenbaum |first=Andrew S. |quote=Whatever happened to System IV is one of the great unsolved mysteries of computer science. |location=Upper Saddle River, NJ |publisher=Prentice Hall |edition=2nd |year=2001 |pages=675 |isbn=0130313580 }}&lt;/ref&gt;
+This first release of System V (called System V.0, System V Release 1, or SVR1) was developed by AT&amp;T's UNIX Support Group (USG) and based on the Bell Labs internal USG UNIX 5.0. System V also included features such as the [[vi]] editor and [[curses (programming library)|curses]] from release 4.1 of the [[Berkeley Software Distribution]] of UNIX developed at the [[University of California, Berkeley]] (UCB); it also improved performance by adding buffer and [[inode]] caches. System V ran on the DEC [[VAX]] and [[PDP-11]] machines. It also added support for [[inter-process communication]] using messages, [[semaphore (programming)|semaphore]]s, and [[shared memory]].
+
+===SVR2===
+System V Release 2 was released in April, 1984.&lt;ref name=&quot;levenez&quot;/&gt; It added [[Unix shell|shell]] functions and the [[SVID]].  New kernel features included record and [[file locking]], [[demand paging]], and [[copy on write]].&lt;ref&gt;{{Citation 
+|last=Goodheart
+|first=Berny
+|authorlink = Berny Goodheart
+|coauthors=James Cox
+|title=The Magic Garden Explained
+|publisher=Prentice Hall
+|year=1994
+|pages=11
+|isbn=0-13-098138-9}}&lt;/ref&gt;
+The concept of the &quot;porting base&quot; was formalized, and the DEC VAX 11/780 was named for this Release.  The &quot;porting base&quot; is the so-called original version of a Release, from which all porting efforts for other machines emanate. Maurice J. Bach's ''The Design of the UNIX Operating System''&lt;ref&gt;{{Citation
+|last=Bach
+|first=Maurice
+|title=The Design of the UNIX Operating System
+|publisher=Prentice Hall
+|year=1986
+|isbn=0-13-201799-7}}&lt;/ref&gt; is the definitive description of the System V Release 2 kernel.
+
+[[Apple Computer]]'s [[A/UX]] operating system was initially based on this release. The first release of [[HP-UX]] was also an SVR2 derivative.&lt;ref&gt;Rosen, p. 33.&lt;/ref&gt;
+
+=== SVR3 ===
+{{Refimprovesect|date=January 2008}}
+System V Release 3 was released in 1986.&lt;ref name=&quot;levenez&quot;/&gt;&lt;ref&gt;
+{{Citation
+ |title=UNIX System V Network Programming
+ |publisher=Addison-Wesley Professional
+ |first=Stephan A.
+ |last=Rargo
+ |date=April 10, 1993
+ |isbn=978-0201563184
+}}
+&lt;/ref&gt;
+It included [[STREAMS]], the [[Remote File System]] (RFS), the File System Switch (FSS) [[virtual file system]] mechanism, a restricted form of [[shared library|shared libraries]], and the [[Transport Layer Interface]] (TLI) network [[application programming interface|API]].  The final version was Release 3.2 in 1988, which added binary compatibility to Xenix on Intel platforms; [[SCO OpenServer]] was based upon 3.2, as was [[INTERACTIVE Systems Corporation]] (ISC) [[INTERACTIVE UNIX|386/ix]]. The [[3B Computers|AT&amp;T 3B2]] became the official &quot;porting base&quot;. [[IBM]]'s [[AIX operating system]] is an SVR3 derivative.
+
+===SVR4=== &lt;!-- This section is linked from [[SVR4]] --&gt;
+System V Release 4.0 was announced on October 18, 1988&lt;ref&gt;{{cite press release
+ |title=  SEVERAL MAJOR COMPUTER AND SOFTWARE COMPANIES ANNOUNCE STRATEGIC COMMITMENT TO AT&amp;T'S UNIX SYSTEM V, RELEASE 4.0
+ |publisher= Amdahl, Control Data Corporation, et al.
+ |date= October 18, 1988
+ |url= http://groups.google.com/group/comp.unix.questions/msg/2e02a599c5c62848
+ |accessdate= 2007-01-01
+  }}&lt;/ref&gt; and was incorporated into a variety of commercial Unix products from early 1989 onwards.&lt;ref name=&quot;levenez&quot;/&gt;  A joint project of [[Unix System Laboratories]] and [[Sun Microsystems]], it combined technology from Release 3 as well as [[Berkeley Software Distribution|4.3BSD]], [[Xenix]], and [[SunOS]]. New features included:
+* From BSD: [[TCP/IP]] support, sockets, [[Unix File System|UFS]], support for multiple groups, [[C shell]];
+* From SunOS: the [[virtual file system]] interface (replacing the File System Switch in System V release 3), [[Network File System (protocol)|NFS]], new virtual memory system including support for [[mmap|memory mapped]] files, an improved shared library system based on the SunOS 4.x model, the [[OpenWindows]] [[GUI]] environment, [[External Data Representation]] (XDR) and [[ONC RPC]];
+* From Xenix: x86 [[device driver]]s, binary compatibility with Xenix (in the x86 version of System V);
+* [[Korn shell]];
+* [[C (programming language)#ANSI C and ISO C|ANSI X3J11 C]] compatibility;
+* Multi-National Language Support (MNLS);
+* Better [[internationalization and localization|internationalization]] support;
+* An [[application binary interface]] (ABI);
+* Support for standards such as [[POSIX]] and [[X/Open]].
+
+The primary platforms for SVR4 were [[x86 architecture|Intel x86]] and [[SPARC]]; the SPARC version, called Solaris 2 (or, internally, [[SunOS]] 5.x), was developed by Sun. The relationship between Sun and AT&amp;T was terminated after the release of SVR4, meaning that later versions of Solaris did not inherit features of later SVR4.x releases. Sun would in 2005 release most of the source code for Solaris 10 (SunOS 5.10) as the [[open source]] [[OpenSolaris]] project, creating the only open-source (heavily modified) System V implementation available. The &quot;Principal Publisher&quot; for SVR4 on the Intel platform was [[INTERACTIVE Systems Corporation|ISC]].
+
+Many versions of SVR4 appeared, because of hardware vendors ([[HP-UX|HP]], [[IRIX|SGI]]) adapting it to their platform, and because porting houses (SCO, [[Microport]], ESIX, UHC)&lt;ref&gt;[[Eric S. Raymond]], [http://www.catb.org/~esr/faqs/clone-unix-guide.txt A buyer's guide to UNIX versions for PC-clone hardware], posted to [[Usenet]] November 16, 1994.&lt;/ref&gt; sold enhanced and supported x86 versions. SVR4 was even ported to the [[Amiga]] as [[Amiga Unix]] and [[Atari]] as [[ASV SVR4 Unix]] 1991. Other popular SysV derivatives include [[Dell]] SVR4&lt;ref&gt;
+{{Citation
+ |title=Technologists notes - A brief history of Dell UNIX 
+ |url=http://technologists.com/notes/2008/01/10/a-brief-history-of-dell-unix/ 
+ |date=10 January 2008 
+ |accessdate=2009-02-18
+}}
+&lt;/ref&gt; and [[Groupe Bull|Bull]] SVR4. A consortium of Intel based resellers including [[Unisys]], [[International Computers Limited|ICL]], [[NCR Corporation]], and [[Olivetti]] developed SVR4.0MP with [[multiprocessing]] capability (allowing system calls to be processed from any processor, but interrupt servicing only from a &quot;master&quot; processor).&lt;ref&gt;
+{{Citation
+ |title=Unix Internatl. and USL release early version of SVR4 multiprocessing software
+ |url=http://www.allbusiness.com/technology/computer-software/165194-1.html
+ |date=17 June 1991
+ |accessdate=2009-04-22
+}}
+&lt;/ref&gt;
+Release 4.1 ES (Enhanced Security) added security features required for [[Trusted Computer System Evaluation Criteria|Orange Book]] B2 compliance and [[Access Control List]]s and support for dynamic loading of kernel modules.&lt;ref&gt;
+{{Citation
+ |title=UNIX INTERNATIONAL REVIEWS THE UNIX SYSTEM V.4 STORY SO FAR
+ |url=http://www.cbronline.com/news/unix_international_reviews_the_unix_system_v4_story_so_far
+ |date=13 August 1992
+ |accessdate=2008-10-31
+}}
+&lt;/ref&gt;&lt;ref&gt;
+{{Citation
+ |title=Computer Security
+ |first=Matt
+ |last=Bishop
+ |publisher=Addison Wesley
+ |date=December 2, 2002
+ |isbn=0201440997
+ |page=505
+}}
+&lt;/ref&gt;
+
+In 1992, AT&amp;T USL engaged in a joint venture with [[Novell]], called [[Univel]]. That year saw the release System V.4.2 as Univel [[UnixWare]], featuring the [[VERITAS File System]]. Other vendors included UHC and Consensys. Release 4.2MP, completed late 1993, added support for multiprocessing and It was released as UnixWare 2 in 1995.&lt;ref&gt;
+{{Citation
+ |url=http://www.novell.com/news/press/archive/1995/03/pr00026.html
+ |title=UnixWare 2 Product Announcement Questions&amp; Answers
+ |year=1995
+}}
+&lt;/ref&gt;
+
+=== SVR5 ===
+The [[Santa Cruz Operation]] (SCO), developers of Xenix, eventually acquired the UnixWare trademark and the distribution rights to the System V Release 4.2 codebase from Novell, while other vendors (Sun, IBM, HP) continued to use and extend System V Release 4. Novell transferred ownership of the Unix trademark to [[The Open Group]].  Any operating system that meets the [[Single Unix Specification]] (SUS), effectively a successor to the System V Interface Definition, may be granted Unix rights. The SUS is met by Apple's [[Mac OS X]], a BSD derivative, as well as several other operating systems not derived from either BSD or System V.
+
+System V Release 5 was developed in 1997 by the [[Santa Cruz Operation]] (SCO) as a merger of [[SCO OpenServer]] (an SVR3-derivative) and UnixWare, with a focus on large-scale servers.&lt;ref&gt;Kenneth H. Rosen (1999). ''UNIX: The Complete Reference''. McGraw-Hill Professional, pp. 23, 32.&lt;/ref&gt; It was released as SCO UnixWare 7. SCO's successor, [[The SCO Group]], also based [[SCO OpenServer]] 6 on SVR5, but the codebase is not used by any other major developer or reseller.
+
+=== SVR6 ===
+System V Release 6 was announced by SCO to be released by the end of 2004, but was apparently cancelled.&lt;ref&gt;[http://www.infoworld.com/t/platforms/sco-updates-unix-openserver-product-plans-798 SCO updates Unix, OpenServer product plans] InfoWorld, August 19 2003&lt;/ref&gt; It was supposed to support 64-bit systems.&lt;ref&gt;[http://www.scobenelux.com/roadmap.php SCO UNIX Roadmap]&lt;/ref&gt;
+
+== References ==
+{{Reflist|colwidth=30em}}
+
+==External links==
+*[http://www.catb.org/~esr/faqs/clone-unix-guide.txt PC-clone UNIX Software Buyer's Guide] by [[Eric S. Raymond]] (posted to [[USENET]] in [[1994]])
+*[http://www.faqs.org/faqs/unix-faq/faq/part6/ Unix FAQ - history]
+*[http://www.levenez.com/unix/ A Unix History Diagram] - The original and continuously updated version of the Unix history, as published by [[O'Reilly]]
+
+{{unix-like}}
+
+{{DEFAULTSORT:Unix System V}}
+&lt;!-- [[Category:Discontinued operating systems]] Not yet (as of 2009-01-07 --&gt;
+[[Category:System V| ]]
+[[Category:1983 software]]
+
+[[ar:ÙØ¸Ø§Ù ÙÙÙÙØ³ Ø§ÙØ®Ø§ÙØ³]]
+[[ca:System V]]
+[[cs:UNIX System V]]
+[[de:System V]]
+[[es:System V]]
+[[fr:UNIX System V]]
+[[ko:ì ëì¤ ìì¤í V]]
+[[ilo:System V]]
+[[it:Unix System V]]
+[[hu:UNIX System V]]
+[[nl:System V]]
+[[ja:UNIX System V]]
+[[no:UNIX System V]]
+[[pl:System V]]
+[[pt:UNIX System V]]
+[[ru:UNIX System V]]
+[[sv:System V]]
+[[tr:UNIX System V]]
+[[uk:UNIX System V]]
+[[zh:System V]]</rev></revisions></page></pages></query></api>

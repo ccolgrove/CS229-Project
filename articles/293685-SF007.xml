@@ -1,0 +1,98 @@
+<?xml version="1.0"?><api><query><pages><page pageid="293685" ns="0" title="GNUnet"><revisions><rev xml:space="preserve">{{Infobox software
+| name                   = GNUnet
+| logo                   = [[File:GNUnet logo.svg|96px]]
+| screenshot             = [[File:Gnunet-gtk-0.7.0.png|300px]]
+| caption                = GNUnet with the [[GTK+]] user interface
+| developer              = GNUnet developers
+| released               = November 6, 2001
+| status                 = Active
+| latest release version = 0.9.0
+| latest release date    = {{Release date|2011|11|30}}&lt;ref&gt;{{cite web |url=https://gnunet.org/gnunet090 |title=GNUnet 0.9.0 released |date=30 November 2011 |accessdate=1 December 2011}}&lt;/ref&gt;
+| operating system       = [[Cross-platform]]
+| programming language   = [[C (programming language)|C]]
+| genre                  = [[Anonymous P2P]], [[Friend-to-friend]]
+| license                = [[GNU General Public License]]
+| website                = http://www.gnunet.org/
+}}
+'''GNUnet''' is a [[free software]] framework for [[decentralization|decentralized]], [[peer-to-peer]] [[Computer network|networking]].  The framework offers [[link encryption]], [[peer discovery]] and [[resource allocation]].
+
+The primary codebase is written in [[C (programming language)|C]], but with [[Freeway (computer program)|Freeway]] there is an effort to produce a [[computer compatibility|compatible]] version written in [[Java (programming language)|Java]].  GNUnet currently runs on [[GNU]]/[[Linux]], [[Berkeley Software Distribution|BSD]], [[Mac OS X]], [[Solaris (operating system)|Solaris]] and [[Microsoft Windows|Windows]].
+
+It is an official part of the [[GNU project]].
+
+[[File:Gnunet-qt-fs-stats.png|250px|thumb|Services running on GNUnet]]
+
+== File sharing ==
+
+The primary application at this point is [[anonymity|anonymous]], [[censorship]]-resistant file-sharing, allowing users to anonymously publish or retrieve information of all kinds.
+
+The file sharing service uses GNUnet's anonymity protocol for routing queries and replies. Forwarded query messages
+are used to search for content and blocks of data. Depending on load of the forwarding node, messages are forwarded to 0 or more nodes. When a node is under stress it drops requests from its neighbor nodes having lower internal trust value.
+
+GNUnet offers a &quot;[[Friend-to-friend|F2F topology]]&quot; option for restricting connections to only the users' trusted friends. The users' friends' own friends (and so on) can then indirectly exchange files with the users' computer, never using its IP address directly.
+
+== URIs ==
+
+GNUnet uses [[Uniform Resource Identifier]]s (not approved by [[Internet Assigned Numbers Authority|IANA]]). The URI notation has changed along with new GNUnet versions. The following notation is used since version 0.7.0.
+
+The GNUnet URIs consist of two major parts: the module and the module specific identifier. A GNUnet URI is of form ''gnunet://module/identifier'' where ''module'' is the module name and ''identifier'' is a module specific string.
+
+=== The ECRS module ===
+
+Files shared with GNUnet are ECRS (An Encoding for Censorship-Resistant Sharing) coded. The ''ecrs'' module ''identifier'' consists of either ''chk'', ''sks'', ''ksk'' or ''loc'' followed by a slash and a category specific value.
+
+* ''chk'' identifies files, typically: &lt;nowiki&gt;gnunet://ecrs/chk/[file hash, using 0-9A-V].[query hash, using 0-9A-V].[file size in bytes]&lt;/nowiki&gt;
+* ''sks'' identifies files within namespaces, typically: &lt;nowiki&gt;gnunet://ecrs/sks/NAMESPACE/IDENTIFIER&lt;/nowiki&gt;
+* ''ksk'' identifies search queries, typically: &lt;nowiki&gt;gnunet://ecrs/ksk/KEYWORD[+KEYWORD]*&lt;/nowiki&gt;
+* ''loc'' identifies a datum on a specific machine, typically: &lt;nowiki&gt;gnunet://ecrs/loc/PEER/QUERY.TYPE.KEY.SIZE&lt;/nowiki&gt;
+
+==== Examples ====
+
+A type of GNUnet filesharing URI pointing to a specific copy of [[GNU GPL]] license text:
+ gnunet://ecrs/chk/9E4MDN4VULE8KJG6U1C8FKH5HA8C5CHSJTILRTTPGK8MJ6VH\
+ ORERHE68JU8Q0FDTOH1DGLUJ3NLE99N0ML0N9PIBAGKG7MNPBTT6UKG.1I823C58O3L\
+ KS24LLI9KB384LH82LGF9GUQRJHACCUINSCQH36SI4NF88CMAET3T3BHI93D4S0M5CC\
+ 6MVDL1K8GFKVBN69Q6T307U6O.17992
+
+Another type of GNUnet filesharing URI, pointing to the search results of a search with keyword &quot;gpl&quot;:
+ gnunet://ecrs/ksk/gpl
+
+=== Chat ===
+
+A trivial chat module has been implemented more as a test than as a serious application, but it is usable.
+
+== See also ==
+{{portal|Free software}}
+
+* [[Anonymous P2P]]
+* [[Comparison of file sharing applications]]
+* [[Friend-to-friend]]
+* Anonymous network software : [[Freenet]], [[I2P]], [[Tor (anonymity network)]]
+* File sharing software : [[Share (P2P)|Share]], [[Winny]]
+
+== References ==
+{{Reflist}}
+
+== External links ==
+
+* {{official website|http://gnunet.org/}}
+* [https://gnunet.org/svn/GNUnet-docs/WWW/download/ecrs.pdf Paper describing ECRS (pdf file)]
+* [https://gnunet.org/compare A comparison of GNUnet with other peer-to-peer networking]
+
+{{File sharing protocols}}
+{{GNU}}
+
+[[Category:GNU Project software]]
+[[Category:Free file sharing software]]
+[[Category:Anonymous file sharing networks]]
+[[Category:Free software programmed in C]]
+[[Category:Free cross-platform software]]
+
+[[de:GNUnet]]
+[[es:GNUnet]]
+[[fa:Ú¯ÙÙ ÙØª]]
+[[fr:GNUnet]]
+[[hu:GNUnet]]
+[[pl:GNUnet]]
+[[ru:GNUnet]]
+[[fi:GNUnet]]</rev></revisions></page></pages></query></api>

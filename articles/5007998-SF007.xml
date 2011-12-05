@@ -1,0 +1,565 @@
+<?xml version="1.0"?><api><query><pages><page pageid="5007998" ns="0" title="Metalink"><revisions><rev xml:space="preserve">{{Infobox file format
+| icon = [[file:Metalink logo.svg|240px|Metalink logo]]
+| extension = &lt;code&gt;.meta4&lt;/code&gt;&lt;br/&gt;&lt;code&gt;.metalink&lt;/code&gt;
+| mime = application/metalink4+xml&lt;br/&gt;application/metalink+xml
+| owner = 
+| creatorcode = 
+| genre = File distribution
+| containerfor = 
+| containedby = 
+| extendedfrom = [[Extensible Markup Language|XML]], [[Hypertext Transfer Protocol|HTTP]]
+| extendedto = 
+}}
+
+{{about|the open standard|the telecommunication company|Metalink Broadband}}
+
+'''Metalink''' is a cross-platform and cross-application [[Internet standard]]/framework/file format for programs that download, including [[download manager]]s, [[BitTorrent client|BitTorrent]] clients, Web browsers, FTP clients, and [[Peer-to-peer|P2P]] programs. For increased convenience, the multiple download locations for a file ([[File Transfer Protocol|FTP]]/[[Hypertext Transfer Protocol|HTTP]]/[[Peer-to-peer|P2P]]) and other [[metadata]] in [[List of HTTP header fields|HTTP header fields]] and/or an [[Extensible Markup Language|XML]] file with the extension &lt;tt&gt;.meta4&lt;/tt&gt; or &lt;tt&gt;.metalink&lt;/tt&gt;. The duplicate download locations provide reliability in case one method fails. Some clients also achieve faster download speeds by allowing different chunks/segments of each file to be downloaded from multiple resources at the same time ([[segmented downloading]]).
+
+Other features include automatic hash verification of finished downloads, automatic repair of downloads with errors, listing multiple files to be added to a download queue, and automatic OS/language selection.
+
+Metalink is extensible, and supports listing multiple partial and full file [[Cryptographic hash function|hashes]] along with [[Pretty Good Privacy|PGP]] signatures. Most clients only support verifying [[MD5]], [[SHA-1]], &amp; [[SHA-256]], however. Besides FTP and HTTP [[Mirror (computing)|mirror]] locations and [[rsync]], it also supports listing the P2P methods [[BitTorrent (protocol)|BitTorrent]], [[Ed2k: URI scheme|ed2k]], [[Magnet URI scheme|magnet link]] or any other that uses a [[Uniform Resource Identifier|URI]].
+
+== Development History ==
+Metalink 3.0 was publicly released in 2005. It was designed to aid in downloading Linux [[ISO image]]s and other large files on release day, when servers would be overloaded (each server would have to be tried manually) and to repair large downloads by replacing only the parts with errors instead of fully re-downloading them. It was initially adopted by [[download manager]]s, and was used by [[open source]] projects such as [[OpenOffice.org]] and [[Linux distribution]]s. A community developed around it, more download programs supported it (including proprietary ones) and it saw commercial adoption. In 2008, the community took their work to the [[Internet Engineering Task Force]] which resulted in Metalink 4.0 in 2010, described in a Standards Track [[Request for Comments|RFC]]. Metalink 3.0 (with the extension &lt;tt&gt;.metalink&lt;/tt&gt;) and Metalink 4.0 (with the extension &lt;tt&gt;.meta4&lt;/tt&gt;) are incompatible because they have a slightly different format. In 2011, another Standards Track [[Request for Comments|RFC]] described Metalink in [[List of HTTP header fields|HTTP header fields]].
+
+== Client programs ==
+* [[aria2]] (GPL) is a Unix/Windows command line download utility that supports BitTorrent and Metalink (HTTP/FTP/BitTorrent) 
+* [[DownThemAll]] ([[GNU General Public License|GPL]]), a Firefox extension and download manager that has basic Metalink support.
+* [[FlashGot]] ([[GNU General Public License|GPL]]), a Firefox extension for integrating with many Download Managers, supports Metalink.
+* [[Free Download Manager]] ([[GNU General Public License|GPL]]), a Windows Download Manager, supports Metalink (HTTP/FTP) in version 2.5.
+* [[GetRight]] 6, a Windows Download Manager, supports Metalink (HTTP/FTP/BitTorrent).
+* [[jDownloader]] is an open source download manager written in [[Java (software platform)|Java]].
+* [[KGet]] ([[GNU General Public License|GPL]]), [[KDE]]'s native download manager, supports Metalink in [[KDE 4]].
+* [[Net Transport]], a Windows Download Manager, supports Metalink.
+* [[Orbit Downloader]], a Windows Download Manager, supports Metalink (HTTP/FTP).
+* [[Phex]] ([[GNU General Public License|GPL]]), a Mac/Unix/Windows [[gnutella]] client, supports Metalink downloads along with exporting a library to Metalink for sharing between users.
+* [http://www.halogenware.com/software/retriever.html Retriever] is a closed source cross platform Java download manager that supports Metalink and BitTorrent.
+* [[SmartFTP]], a Windows GUI FTP client, supports Metalink for adding files to an FTP transfer queue and hash verification.
+* [[VeryCD]]'s easyMule (version 1 is [[GNU General Public License|GPLed]], ver.2 may be GPL-Violation) is a version of [[eMule]] with Metalink support.
+* [[wxDownload Fast]] (GPL) is a Mac/Unix/Windows download manager that supports Metalink (HTTP/FTP).
+* [[Yellow dog Updater, Modified|yum]], an [[open source software|open source]] [[command line interface|command line]] [[package management system|package management]] utility for [[RPM Package Manager|RPM]]-compatible [[Linux]] [[operating system]]s, uses Metalink internally, invisible to the user.
+* [[ZYpp]], the [[package management]] engine that powers [[YaST2]] and [[Zypper]], supports Metalink for downloading. It uses aria2 internally.
+
+{{seealso|Comparison of download managers}}
+
+== In use ==
+[[Mandriva Linux]] has integrated Metalink into package management with [[urpmi]] and aria2.
+[[Fedora (operating system)|Fedora]] has integrated Metalink into package management with [[Yellow dog Updater, Modified|yum]]. [[openSUSE]] has integrated Metalink into package management with [[ZYpp]] and aria2.
+
+[[Wubi (installer)|Wubi]], the Windows-based [[Ubuntu (operating system)|Ubuntu]] installer, uses [http://hampus.vox.nu/metadl/ Metadl] ([[LGPL]]) to download Ubuntu [[ISO image]]s and takes advantage of Metalink's features of higher availability and increased reliability. If there are errors in the download, they are repaired, instead of restarting the large download.
+
+[http://www.nabber.org/projects/appupdater/ Appupdater] ([[GNU General Public License|GPL]]) for Windows &quot;is similar to apt-get or yum on Linux. It automates the process of installing and maintaining up to date versions of programs.&quot;
+
+Currently, [[OpenOffice.org]] uses Metalinks to distribute their free office suite. [[cURL]] offers Metalinks of their downloads. [[UniProt]] Consortium also provides a Metalink for their large protein database. [[Dofus]], a Flash [[MMORPG]] uses Metalinks for downloads and so does [[Sage (mathematics software)|Sage]], the open-source mathematical software.
+
+The software hosting and collaboration platform [http://origo.ethz.ch Origo] generates Metalinks for all hosted releases.
+
+The following [[Linux]] distributions use Metalink for [[ISO image]] distribution: [[64 Studio]], [[Adios]], [[Bayanihan Linux]], [[BeleniX]], [[Berry Linux]], [[BLAG Linux and GNU]], [[Bluewhite64 Linux]], [[Damn Small Linux]], [[Fedora (operating system)|Fedora]], [[GoboLinux]], [[Granular Linux]], [[KateOS]], [[Linux Mint]], [[openSUSE]], [[Pardus (operating system)|Pardus Linux]], [[PCLinuxOS]], [[PuppyLinux]], [[Sabayon Linux]], StartCom Enterprise Linux, [[SUSE Linux]], [[Ubuntu (operating system)|Ubuntu]].
+
+The following [[FreeBSD]] based distributions use Metalink for [[ISO image]] distribution: [[DesktopBSD]], [[MidnightBSD]], [[PC-BSD]] and [[TrueBSD]].
+
+File based search engine [http://www.findthatfile.com/ findthatfile] provides search for Metalinks.
+
+== Metalink client feature comparison ==
+A guide to which clients support which Metalink features:
+{| style=&quot;font-size: 85%; text-align: center;&quot; class=&quot;wikitable&quot;
+!
+! [[aria2]]
+! [[DownThemAll]]
+! [[Free Download Manager]]
+! [[GetRight]]
+! [[KGet]]
+! Metadl
+! [http://metalinks.svn.sourceforge.net/viewvc/metalinks/checker/metalink.py?view=markup Metalink Checker]
+! [[Orbit Downloader]]
+! [[Phex]]
+! [http://www.halogenware.com/software/retriever.html Retriever]
+! [[SmartFTP]]
+! [[Speed Download]]
+! [[TheWorld]]
+! [[wxDownload Fast]]
+|-
+
+! [[Software licensing|License]]
+| [[Free Software]] ([[GNU General Public License]])
+| [[Free Software]] ([[GNU General Public License]])
+| [[Free Software]] ([[GNU General Public License]])
+| Proprietary / $29.95 for Standard, $49.95 for Pro
+| [[Free Software]] ([[GNU General Public License]])
+| [[Free Software]] ([[GNU Lesser General Public License]])
+| [[Free Software]] ([[GNU General Public License]])
+| Proprietary / [[Freeware]]
+| [[Free Software]] ([[GNU General Public License]])
+| Proprietary / [[Freeware]]
+| Proprietary / [[Freeware]] for personal, $36.95 commercial
+| Proprietary / $25
+| Proprietary / [[Freeware]]
+| [[Free Software]] ([[GNU General Public License]])
+|-
+
+! Interface
+| CLI, [[XML-RPC]]
+| GUI
+| GUI
+| GUI
+| GUI
+| GUI
+| CLI
+| GUI
+| GUI
+| GUI
+| GUI
+| GUI
+| GUI
+| GUI
+|-
+
+! Metalink 4.0
+| {{yes}}
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{yes}}
+| {{no}}
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{yes}}
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{no}}
+|-
+
+! Runs on [[Linux]]
+| {{yes}}
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{yes}}
+| {{no}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{yes}}
+|-
+
+! Runs on [[Microsoft Windows|Windows]]
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{no}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{no}}
+| {{yes}}
+| {{yes}}
+|-
+
+! Runs on [[Mac OS X]]
+| {{yes}}
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{yes}}
+| {{no}}
+| {{yes}}
+| {{yes}}
+| {{no}}
+| {{yes}}
+| {{no}}
+| {{no}}
+|-
+
+! Resume Downloads
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+|-
+
+! Segmented Downloads
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{no}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{no}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+|-
+
+! Multiple File support
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+|-
+
+! &quot;location&quot;
+| {{yes}}
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+|-
+
+! OS
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{yes}}
+| {{no}}
+| {{yes}}
+| {{no}}
+| {{no}}
+|-
+
+! Language
+| {{yes}}
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{yes}}
+| {{yes}}
+| {{no}}
+| {{yes}}
+| {{no}}
+| {{yes}}
+| {{no}}
+| {{no}}
+|-
+
+! HTTP with Transparent Negotiation
+| {{yes}}
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+|-
+
+! HTTP
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{no}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+|-
+
+! FTP
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{no}}
+| {{yes}}
+|-
+
+! BitTorrent
+| {{yes}}
+| {{no}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+|-
+
+! magnet
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{yes}}
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+|-
+
+! MD5 Hashes
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| ?
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{no}}
+| {{yes}}
+|-
+
+! SHA-1 Hashes
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{no}}
+| {{yes}}
+|-
+
+! SHA-256 Hashes
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+|-
+
+! Piece Hashes
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{yes}}
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+|-
+
+! PGP Signatures
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+|-
+|}
+
+No clients support [[rsync]] at this time.
+
+== Metalink generation ==
+Metalink is XML so they can be hand crafted or XML tools can be used for automation. These tools are specifically for Metalink.
+* [http://wiki.osuosl.org/display/Bouncer/Home Bouncer] is &quot;database driven mirror management app that has three main components - a bounce script, a sentry script to check mirrors and files for integrity and a set of web-based administration tools.&quot; Bouncer supports Metalink via a patch that has not yet been integrated upstream.
+* [http://sourceforge.net/projects/geomcfly Geo McFly] ([[GNU General Public License|GPL]]) is an on the fly generator of metalinks based on the downloader's geographical location, written in [[Python (programming language)|Python]].
+* [http://hampus.vox.nu/metalink/ Metalink Editor] (GPL) is a Cross Platform GUI Metalink editor written in Python which allows you to create and edit Metalinks.
+* [http://code.google.com/p/metalink-library/ Metalink Library] (GPL) is a Cross Platform Metalink library for Python and PHP based on Metalink Editor with many automatic features and an easy command-line interface to generate Metalink and Torrent files.
+* [http://www.metalinker.org/generator/ Metalink Generator] can also be used to create Metalinks by filling out a Web form.
+* [https://sourceforge.net/apps/trac/metalinks/wiki/ Metalink tools] (GPL) Unix/Windows command line tools for generating Metalinks with hashes and mirror/p2p lists.
+* [http://www.dynmirror.net/ Dynamic online metalinks] based on metadata. Automatically created metalinks based on metadata published by each mirror.
+* [https://hosted.fedoraproject.org/projects/mirrormanager MirrorManager] ([[MIT X11 license]]) is used by the [[Fedora Project]] for dynamically listing mirrors.
+* [http://mirrorbrain.org/ The MirrorBrain] ([[GNU General Public License|GPL]], [[Apache License]]) is a real-time Metalink generator and download redirector. It can either return Metalinks, or automatically redirect non-Metalink clients (per HTTP redirection) to a mirror server near them. Advanced features, as transparent negotiation of Metalinks, or embedding of PGP signatures, are fully supported. It is used by [[openSUSE]], [[OpenOffice.org]], and other projects.
+* [http://origo.ethz.ch/ Origo] is a new and easy to use software development and hosting platform for open and closed source projects. Among many features, it has easy release management and mirroring with automatic metalink generation.
+
+== Example Metalink 4.0 .meta4 file ==
+Metalink 4.0 files have the extension &lt;tt&gt;.meta4&lt;/tt&gt; and are [[Extensible Markup Language|XML]] text files. They are served with the application/metalink4+xml [[Internet media type]].
+
+&lt;source lang=&quot;xml&quot;&gt;
+ &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+ &lt;metalink xmlns=&quot;urn:ietf:params:xml:ns:metalink&quot;&gt;
+   &lt;published&gt;2009-05-15T12:23:23Z&lt;/published&gt;
+   &lt;file name=&quot;example.ext&quot;&gt;
+     &lt;size&gt;14471447&lt;/size&gt;
+     &lt;identity&gt;Example&lt;/identity&gt;
+     &lt;version&gt;1.0&lt;/version&gt;
+     &lt;language&gt;en&lt;/language&gt;
+     &lt;description&gt;
+     A description of the example file for download.
+     &lt;/description&gt;
+     &lt;hash type=&quot;sha-256&quot;&gt;3d6fece8033d146d8611eab4f032df738c8c1283620fd02a1f2bfec6e27d590d&lt;/hash&gt;
+     &lt;url location=&quot;de&quot; priority=&quot;1&quot;&gt;ftp://ftp.example.com/example.ext&lt;/url&gt;
+     &lt;url location=&quot;fr&quot; priority=&quot;1&quot;&gt;http://example.com/example.ext&lt;/url&gt;
+     &lt;metaurl mediatype=&quot;torrent&quot; priority=&quot;2&quot;&gt;http://example.com/example.ext.torrent&lt;/metaurl&gt;
+   &lt;/file&gt;
+ &lt;/metalink&gt;
+&lt;/source&gt;
+
+== Example Metalink/HTTP header fields ==
+Metalink in HTTP header fields makes use of existing standard [[List of HTTP header fields|HTTP header fields]] such as [[HTTP ETag|ETags]], Link header fields (for mirrors and P2P), and Instance Digests (for hashes).
+
+&lt;pre&gt;
+Etag: &quot;thvDyvhfIqlvFe+A9MYgxAfm1q5=&quot;
+Link: &lt;http://www2.example.com/example.ext&gt;; rel=duplicate
+Link: &lt;ftp://ftp.example.com/example.ext&gt;; rel=duplicate
+Link: &lt;http://example.com/example.ext.torrent&gt;; rel=describedby; type=&quot;application/x-bittorrent&quot;
+Link: &lt;http://example.com/example.ext.meta4&gt;; rel=describedby; type=&quot;application/metalink4+xml&quot;
+Link: &lt;http://example.com/example.ext.asc&gt;; rel=describedby; type=&quot;application/pgp-signature&quot;
+Digest: SHA-256=MWVkMWQxYTRiMzk5MDQ0MzI3NGU5NDEyZTk5OWY1ZGFmNzgyZTJlODYzYjRjYzFhOTlmNTQwYzI2M2QwM2U2MQ==
+&lt;/pre&gt;
+
+== Example Metalink 3.0 .metalink file ==
+Metalink 3.0 files have the extension &lt;tt&gt;.metalink&lt;/tt&gt; and are [[Extensible Markup Language|XML]] text files.
+
+&lt;source lang=&quot;xml&quot;&gt;
+ &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+ &lt;metalink version=&quot;3.0&quot; xmlns=&quot;http://www.metalinker.org&quot;&gt;
+   &lt;files&gt;
+     &lt;file name=&quot;example.ext&quot;&gt;
+       &lt;verification&gt;
+         &lt;hash type=&quot;md5&quot;&gt;example-md5-hash&lt;/hash&gt;
+         &lt;hash type=&quot;sha1&quot;&gt;example-sha1-hash&lt;/hash&gt;
+         &lt;signature type=&quot;pgp&quot;/&gt;
+       &lt;/verification&gt;
+       &lt;resources&gt;
+         &lt;url type=&quot;ftp&quot; location=&quot;us&quot; preference=&quot;90&quot;&gt;ftp://ftp.example.com/example.ext&lt;/url&gt;
+         &lt;url type=&quot;ftp&quot; location=&quot;uk&quot; preference=&quot;90&quot;&gt;ftp://ftp.example.net/example.ext&lt;/url&gt;
+         &lt;url type=&quot;http&quot; location=&quot;us&quot; preference=&quot;90&quot;&gt;http://example.com/example.ext&lt;/url&gt; 
+         &lt;url type=&quot;http&quot; location=&quot;de&quot; preference=&quot;90&quot;&gt;http://example.net/example.ext&lt;/url&gt;
+         &lt;url type=&quot;bittorrent&quot; preference=&quot;100&quot;&gt;http://example.org/example.ext.torrent&lt;/url&gt;
+         &lt;url type=&quot;rsync&quot;/&gt;
+         &lt;url type=&quot;magnet&quot;/&gt;
+         &lt;url type=&quot;ed2k&quot;/&gt;
+       &lt;/resources&gt;
+     &lt;/file&gt;
+   &lt;/files&gt;
+ &lt;/metalink&gt;
+&lt;/source&gt;
+
+== See also ==
+* [[Magnet URI scheme]]
+
+== References ==
+&lt;references/&gt;
+
+== External links ==
+* [http://www.metalinker.org/ Metalink project official homepage]
+* [http://www.osresources.com/3_18_en.html Making Metalinks] article
+'''Metalink standard'''
+*RFC 5854 - &quot;The Metalink Download Description Format&quot;
+*RFC 6249 - &quot;Metalink/HTTP: Mirrors and Hashes&quot;
+* [http://www.metalinker.org/Metalink_3.0_Spec.pdf Metalink 3.0 Specification]
+
+{{Download managers}}
+
+
+[[Category:Distributed data storage]]
+[[Category:Download managers]]
+[[Category:Internet Protocol based network software]]
+[[Category:XML-based standards]]
+
+[[de:Metalink]]
+[[es:Metalink]]
+[[fr:Metalink]]
+[[it:Metalink]]
+[[pl:Metalink]]
+[[pt:Metalink]]
+[[ru:Metalink]]</rev></revisions></page></pages></query></api>

@@ -1,0 +1,60 @@
+<?xml version="1.0"?><api><query><pages><page pageid="1331598" ns="0" title="SlipKnot (web browser)"><revisions><rev xml:space="preserve">{{Refimprove|date=May 2011}}
+{{Infobox software
+| name                   = SlipKnot
+| logo                   = [[Image:Slipknot browser logo.png]]
+| screenshot             = [[Image:Slipknot browser.gif|260px]]
+| caption                = The SlipKnot [[Terminal emulator|Terminal]]
+| developer              = [[MicroMind, Inc]]
+| released               = {{start date|1994|11|}}
+| frequently_updated     = no
+| programming language   =
+| operating system       = [[Microsoft Windows]]
+| platform               =
+| language               = [[English language|English]]
+| genre                  = [[Web browser]]
+| license                = [[Proprietary software|Proprietary]] [[EULA]]
+| website                = [http://www.micromind.com/slipknot.htm SlipKnot Home Page]
+}}
+'''SlipKnot''' was one of the earliest [[World Wide Web]] [[web browser|browsers]], available to [[Microsoft Windows]] users between November 1994 and January 1998.  It was created by Peter Brooks of MicroMind, Inc. to provide a fully graphical view of the web for users without a [[SLIP]] or other [[TCP/IP]] connection to the net, hence the name - SLIP...not. SlipKnot provided a graphical web experience through what would otherwise be a text-only [[Unix shell account]].&lt;ref&gt;[[The Washington Post]] ''How to SLIP or SlipKnot Through the Wonders of the Web'' Margot Williams February 13, 1995&lt;/ref&gt; SlipKnot version 1.0 was released on November 22, 1994, approximately 3 weeks before [[Netscape Communications Corporation|Netscape]]'s [[Netscape Navigator]] version 1.0 came out.  It was designed to serve a significant fraction of [[PC compatible|PC]]/Windows-based [[Internet]] users who could not use [[Mosaic (web browser)|Mosaic]] or Netscape at that time. ([[Internet Explorer]] was released in the following year after SlipKnot, in August 1995.)
+
+==History==
+In 1994 and 1995, the majority of home PC users who were interested in accessing the World Wide Web had to do so using terminal-based software.  These users usually had [[dial-up]] [[shell account]]s with their employers' [[Unix]] machines or with commercial UNIX [[internet service provider|ISP]]s (e.g. [[Netcom (USA)|Netcom]]).  They would run a [[terminal emulator]] program on their PCs, temporarily turning the machines into [[Unix shell|black screen terminals]], dial into the Unix server, and then run text-based internet software such as [[pine (e-mail client)|pine]] and [[elm (e-mail client)|elm]] for [[e-mail]], [[Gopher (protocol)|gopher]] for file retrieval, and [[lynx (browser)|lynx]] or [[Line-Mode Browser|www]] for a text-based browsing experience of the new World Wide Web.  While this text-based browsing was fine while web pages were text-only, Mosaic changed the browser and web-page landscape in 1993 by displaying and therefore encouraging graphical, multimedia and multifont web pages.  It also pioneered the point-and-click navigation for web browsing that had been a standard for prior [[hypertext]] applications, like Windows Help.
+
+Mosaic had been developed by university programmers who had access to full TCP/IP connections and high-speed transmissions.  This was evident in the design of the programâfor instance, after clicking on a hypertext link, the user had to wait until all parts of the page had been retrieved by the browser before anything showed on the screen.  High-speed connections allowed TCP/IP's ability to do multiple retrievals at once, and for the delay between the user's request for a page and its appearance to be short.  Therefore, not only could Mosaic not be used by most home users because of their lack of TCP/IP connections, but even if they had TCP/IP, the low speed of home [[modem]]s would bring out the problems in the Mosaic design for slower speed connections (typically 9600 and 14.4k [[baud]]).
+
+In 1994, some ISPs started to offer TCP/IP connections via dial-in modems, with protocols like [[SLIP]] and [[Point-to-point protocol|PPP]].  But this was leading-edge technology, and so it was extraordinarily difficult to set up and maintain a home TCP/IP connection.  Therefore, a large fraction of home users were stuck with dial-up Unix shell connections, and could not use Mosaic, or Netscape, or any of the other TCP/IP-based browsers that business- and academia-based users enjoyed.
+
+Having seen Mosaic late in 1993 and been captivated by its potential, Peter Brooks set out in April 1994 to create a fully graphic, multifont web browser for home PC users.
+
+==Browser==
+SlipKnot version 1.0 was completed and released as [[shareware]] in November 1994, thus making
+it the first purchasable browser on the market.  Its name is a play on the term '''[[slip knot]]''' (a type of knot) against '''SLIP''' (Serial Line Internet Protocol) -- an early version of TCP/IP over modem linesâand '''not''' after the fact that, unlike Mosaic and Netscape browser offerings, a SLIP connection was '''not''' necessary to view graphical web content.
+
+SlipKnot was given the Best Communications Shareware Program of 1995 Award by [[Ziff-Davis]] and was runner-up for the Best Overall Shareware Program of 1995.
+
+By mid-1996 when further development ceased, the majority of home internet users were able to obtain TCP/IP connections that were easy to install, and all new internet software development was dependent upon that protocol.
+
+==Technical==
+SlipKnot's rendering engine was written in [[C (programming language)|C]], and its [[user interface]] in [[Visual Basic]].  Because it had only a Unix commandline to communicate with, it &quot;drove&quot; the Unix host by sending characters to its commandline as if a person were typing them (as a &quot;bot&quot;). First, SlipKnot would request the retrieval of individual parts of a desired web pageâthe text, and then each pictureâinto files on the Unix host.  This was done by executing the text-based web browser &quot;lynx&quot; on the Unix host with command-line arguments indicating which [[Uniform Resource Locator|URL]] to retrieve, and the filename to create on the Unix host when the data was finally retrieved.  This retrieval, from web page host to Unix host, was usually very fast, since these machines were connected by high speed communications lines.  After the URL contents were moved to the Unix host, they had to be moved down to the PC.  This was done by executing the communications program [[zmodem]] (sending the zmodem command to the Unix command-line) and then instantly placing the PC into receive mode.
+
+Once the text ([[HTML]]) portion of a web page had been retrieved (it was always retrieved first), the page would be displayed by SlipKnot and could be read by the user, after which the pictures
+were retrieved in the background and eventually the page fixed up to display them.
+
+==References==
+===Notes===
+{{Reflist}}
+
+==External links==
+*[http://www.micromind.com/slipknot.htm SlipKnot's original Home Page]
+
+{{Gopher clients}}
+{{Early web browsers}}
+
+{{DEFAULTSORT:Slipknot (Web Browser)}}
+[[Category:Gopher clients]]
+[[Category:Windows web browsers]]
+[[Category:1994 software]]
+[[Category:Discontinued web browsers]]
+
+[[es:SlipKnot]]
+[[nl:SlipKnot]]</rev></revisions></page></pages></query></api>

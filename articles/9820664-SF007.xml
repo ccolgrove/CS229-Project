@@ -1,0 +1,114 @@
+<?xml version="1.0"?><api><query><pages><page pageid="9820664" ns="0" title="Trisquel"><revisions><rev xml:space="preserve">{{ infobox OS
+| name                   = Trisquel
+| logo                   = [[File:trisquel-logo-compact.svg|200px]]
+| screenshot             = [[File:Trisquel-5-desktop.png|250px]]
+| caption                = Trisquel 5.0 desktop
+| developer              = [http://trisquel.info/en/about Trisquel community] and [http://sognus.com Sognus, S.L.U.]
+| family                 = [[Unix-like]]
+| source_model           = [[Free Software]]
+| latest_release_version = 5.0&lt;ref&gt;{{cite web | url = https://trisquel.info/en/trisquel-50-release-announcement | title = Trisquel 5.0 Release announcement | accessdate = 2011-03-28}}&lt;/ref&gt; &lt;!-- If you update this, remember to also update [[Comparison of Linux distributions]]--&gt;
+| latest_release_date    = {{release date and age|2011|09|17}}
+| latest_preview_version = 
+| latest_preview_date    = 
+| kernel_type            = [[Monolithic kernel|Monolithic]] 
+| ui                     = [[GNOME]]
+| license                = [[Free software]] licenses, mainly [[GPL]]
+| working_state          = Current
+| website                = [http://trisquel.info/ trisquel.info]
+| supported_platforms    = [[x86]], [[AMD64]]
+| updatemodel            = [[Advanced Packaging Tool|APT]]
+| package_manager        = [[dpkg]]
+}}
+
+'''Trisquel GNU/Linux''' is a [[Linux distribution]] using a free version of the [[Linux kernel]] as distributed by the [[Linux-libre]] project. The main goals of the project are the production of a fully [[free software]] (free as in free speech) system that must be easy to use, complete, and with good language support.
+
+Trisquel's name comes from the Celtic symbol [[triskelion]], or triskele in English, consisting of three interlocked spirals. The project's logo depicts a triskelion made of the union of three Debian swirls as a sign of recognition to the project on which it is based.
+
+The project began in 2004 with the sponsorship of the [[University of Vigo]], and officially presented in April 2005 with [[Richard Stallman]], founder of the [[GNU Project]], as a special guest.&lt;ref&gt;{{cite web | url = http://www.lavozdegalicia.es/hemeroteca/2005/04/28/3679855.shtml | title = Richard Stallman, defensor del software libre, sorprendiÃ³ a los universitarios | language = Spanish | publisher = La voz de Galicia | accessdate=2008-11-26 }}&lt;/ref&gt; It was originally developed as a [[Debian]]-based distribution, but the repositories were changed to Ubuntu with the 2.0 release, in the summer of 2008. The project hosts its own repositories which are derivatives of Ubuntu's main and universe components, but with all [[proprietary software]] removed. The differences include the removal of all non-free packages, the substitution of the original [[Linux]] [[Linux kernel|kernel]] with the [[binary blob|blob]]-free version [[linux-libre]], and the addition of several packages.
+
+By December 11, 2008, Trisquel GNU/Linux was included by the Free Software Foundation in its list of free Linux distributions.&lt;ref&gt;{{cite web | url = http://www.gnu.org/links/links.html#FreeGNULinuxDistributions | title = Free GNU/Linux distributions list| publisher = GNU website | Free GNU/Linux distributions list |accessdate = 2008-11-11}}&lt;/ref&gt; According to [[DistroWatch]], Trisquel was the most popular Linux-libre operating system in October 2011{{Citation needed|date=October 2011}} and ranked 78th overall in popularity in the previous six months.&lt;ref name=&quot;DW&quot;&gt; {{Cite web|url = http://distrowatch.com/stats.php?section=popularity|title = Linux Distributions - Facts and Figures|accessdate = 31 October 2011|last = [[DistroWatch]]|date = 31 October 2011}}&lt;/ref&gt;
+
+== Differences from Ubuntu ==
+
+The main difference is the strict filter that Trisquel applies to what software packages should be distributed, endorsing the [[Free Software Foundation]] [[Free software|four freedoms]] rule to exclude non-free software. This commitment leads to the removal of [[binary blob|firmware blobs]] and other pieces of software, as well as to the fact that no support is given to non-free software within the project's forums and documentation.
+From a practical point of view, the most noticeable changes are the focused set of pre-installed software, the non-standard desktop configuration using only one deskbar instead of [[GNOME]] defaults, and the original artwork, designed to be clean and elegant. Also, since version 3.5, [[XFS]] is the default file system for the home directory, and [[Ext4]] the default for the rest of the partition, to maximize performance.
+
+==Versions==
+
+There are six different versions of the system so far:
+* 2.x ''Robur'', Long Term Support
+* 3.x ''Dwyn'', Short Term Support
+* 3.5.x ''Awen'', STS
+* 4.x ''Taranis'' LTS
+* 4.5.x ''Slaine'' STS - based on Ubuntu 10.10 &lt;ref&gt;[https://trisquel.info/en/trisquel-45-slaine-released Trisquel 4.5 &quot;Slaine&quot; released]&lt;/ref&gt;
+* 5.x ''Dagda'' STS - based on Ubuntu 11.04 &lt;ref&gt;[https://trisquel.info/en/forum/trisquel-50-lts-alpha-images-ready-testing Trisquel 5.0 LTS alpha images ready for testing]&lt;/ref&gt;
+
+All versions include this common software:
+* [[Linux-libre]] [[Linux kernel|kernel]], 2.6.24 in ''Robur'', 2.6.28 in ''Dwyn'', 2.6.31 in ''Awen'', 2.6.32 in ''Taranis'', 2.6.35 in ''Slaine'', and 2.6.38 in ''Dagda''.
+* [[GNOME]] desktop environment, 2.22 in ''Robur'', 2.26 in ''Dwyn'', 2.28 in ''Awen'', 2.30 in ''Taranis'', 2.32 in ''Slaine'', and 2.32 in ''Dagda''.
+* A version of the [[Mozilla Firefox]] that never suggests non-free [[Plug-in (computing)|add-ons]], and includes no [[trademark]]ed art or names.
+
+== LTS Editions ==
+
+There are three main editions of the Long Term Support edition available for download. The one called simply ''Trisquel'' is intended for home and personal use. There is ''Trisquel Edu'', for classrooms and schools, and ''Trisquel Pro'', for small businesses. All of them are available in 32 and 64 bit [[CD-ROM|iso]] images, all of them recordable on a standard [[CD-R]] except for the Pro Editions, which due to their size must be recorded on a [[DVD-R]].
+
+=== Trisquel ===
+The main edition of the distribution is designed for home use, including networking, multimedia, design and office productivity software, as well as some games. It includes a media center application with the ability to play DVDs and most video and audio formats out of the box.
+
+=== Trisquel Edu ===
+
+[[Image:Trisquel-edu.jpg|thumb|right|Trisquel LTSP classroom server, managed via iTALC]]
+
+On September 21, 2008, the first release candidate of this educational tool was made public. It was based upon the project's previous experiences in educational software (due to its origins as a university sponsored project, early versions of Trisquel included a large amount of scientific, engineering and teaching tools), and includes several school oriented technologies, such as the [[Linux Terminal Server Project|LTSP]] environment and the [http://italc.sourceforge.net/ iTALC] classroom management system. It has also support for low-cost [[digital whiteboard]]s, using an [[LCD projector]] and a [[Nintendo]] [[Wii Remote]], with customized free software that allows for the replacement of costly hardware solutions.
+
+=== Trisquel Pro ===
+''Trisquel Pro'' is a small business oriented operating system. It includes a pack of enterprise management software, including Abanq, OpenbravoPOS, and [[GNUCash]] among others. It is mainly intended for the Spanish market, as some of the accounting software included is designed to match the Spanish tax regulations, but most of the applications included can be used worldwide. The application collection is completed with several all-purpose tools including a graphical [[Firewall (computing)|firewall]], [[antivirus software|antivirus]] for the scanning of Windows partitions and [[wine (software)|Wine]] applications- and an automated backup system.
+It was officially released at the international multimedia and communications show [[SIMO]] on November [[2007]].&lt;ref&gt;{{cite web | url = http://www.hermestrans.com/en/images/descargas/medios/Extra%20SIMO_06-11-2007.pdf | title= SIMO 2007, p.6 | language = Spanish | publisher = El PaÃ­s | accessdate = 2008-11-26 }}&lt;/ref&gt;
+
+== Other Editions ==
+=== Trisquel 4.1-Sugar ===
+Trisquel 4.1-sugar is the trisquel 4.1 version of sugar-desktop with sugar sweets 0.88.1
+It runs on Ubuntu 10.10 with the [[Sugar (desktop environment)|Sugar]] desktop environment.
+Sugar is Collaborative Educational Software as used on the [[OLPC]] (One Laptop Per Child) Laptop.
+Developed by Sugar Labs Volunteers and Supporters.
+
+=== Trisquel Mini ===
+
+Trisquel Mini is an alternative to the mainline Trisquel, designed to run well on [[netbooks]] and [[legacy computer|aging hardware]].&lt;ref&gt;[http://trisquel.info/en/wiki/suggestions-trisquel-mini Trisquel Mini]&lt;/ref&gt;  It uses a low-resource environment like [[LXDE]] and lightweight [[GTK+]] and [[X11]] alternatives to more commonly used [[GNOME]] and [[Qt (framework)|Qt]]/[[KDE]] applications.
+
+=== Trisquel Gamer ===
+
+Trisquel Gamer is an independent edition maintained by David Zaragoza. It is filled with games and booted from a LiveDVD or USB drive.&lt;ref&gt;[http://trisquel.info/en/forum/trisquel-gamer-live-dvd-full-free-software-games-boot-and-play Trisquel Gamer DVD]&lt;/ref&gt; Although numerous similar distributions exist, Trisquel Gamer is unique among these because it shares Trisquel's firm policy of including only 100% [[free software]] in the distribution.
+
+==Installation==
+Trisquel is installable to hard disk from a graphical installer selected on boot or from within the live CD environment.
+
+== See also ==
+{{Portal|Free software}}
+
+* [[List of Linux distributions endorsed by the Free Software Foundation]]
+
+==References==
+{{reflist}}
+
+== External links ==
+{{commonscat}}
+* [http://trisquel.info/en/ Official Web site]
+* [http://devel.trisquel.info/sugar/ Trisquel 4.1-sugar Downloads]
+* [http://wiki.sugarlabs.org/go/Emulator_image_files/Trisquel#Trisquel-4.1-sugar Trisquel-4.1-sugar Virtual Box Appliance]
+* {{DistroWatch|trisquel|NAME=Trisquel}}
+{{ES-FreeSoftwareDistro}}
+
+{{Linux distributions}}
+
+[[Category:Ubuntu (operating system) derivatives]]
+
+[[ar:ØªØ±Ø³ÙÙ]]
+[[br:Trisquel]]
+[[es:Trisquel GNU/Linux]]
+[[fr:Trisquel]]
+[[gl:Trisquel GNU/Linux]]
+[[it:Trisquel GNU/Linux]]
+[[pt:Trisquel]]
+[[ro:Trisquel GNU/Linux]]
+[[tr:Trisquel]]</rev></revisions></page></pages></query></api>

@@ -1,0 +1,114 @@
+<?xml version="1.0"?><api><query><pages><page pageid="293363" ns="0" title="SecurID"><revisions><rev xml:space="preserve">'''SecurID''', now known as '''RSA SecurID''', is a mechanism developed by Security Dynamics (later RSA Security and now [[RSA, The Security Division of EMC]]) for performing [[two-factor authentication]] for a user to a network resource.
+
+{{infobox brand
+| logo           = [[File:RSA_SecurID_logo.gif|RSA SecurID logo]]
+| name           = RSA SecurID
+| image          = 
+| type           = 
+| currentowner   = 
+| origin         = 
+| introduced     = 
+| discontinued   = 
+| related        = 
+| markets        = 
+| previousowners = 
+| trademarkregistrations = 
+| ambassador     = 
+| tagline        =
+| website        = [http://www.rsa.com/node.aspx?id=1156 http://www.rsa.com/node.aspx?id=1156]
+}}
+
+== Description ==
+[[File:RSA SecurID Token Old.jpg|thumbnail|RSA SecurID token (older style, model SD600)]]
+[[File:SecureID token new.JPG|thumbnail|RSA SecurID token]]
+[[File:RSA SecurID SID800.jpg|thumbnail|RSA SecurID (new style, SID800 model with smartcard functionality)]]
+The RSA SecurID authentication mechanism consists of a &quot;[[security token|token]]&quot; â either hardware (e.g. a USB dongle) or software (a [[software token|soft token]]) â which is assigned to a computer user and which generates an authentication code at fixed intervals (usually 60 seconds) using a built-in clock and the card's factory-encoded random [[Key (cryptography)|key]] (known as the &quot;seed&quot;. The seed is different for each token, and is loaded into the corresponding RSA SecurID server (RSA Authentication Manager, formerly ACE/Server) as the tokens are purchased&lt;ref name=&quot;totp&quot;&gt;[http://tools.ietf.org/html/draft-mraihi-totp-timebased-00 TOTP: Time-based One-time Password Algorithm]&lt;/ref&gt;. 
+
+The token hardware is designed to be [[tamper resistance|tamper-resistant]] to deter [[reverse engineering]]. When software implementations of the same algorithm (&quot;software tokens&quot;) appeared on the market, public code has been developed by the security community allowing a user to emulate RSA SecurID in software, but only if they have access to a current RSA SecurID code, and the original RSA SecurID seed file introduced to the server.&lt;ref&gt;[http://seclists.org/bugtraq/2000/Dec/459 Sample SecurID Token Emulator with Token Secret Import]&lt;/ref&gt; In the RSA SecurID authentication scheme, the seed record is the secret key used to generate [[one-time password]]s. &lt;!-- Previously this article has OTP capitalized (using a piped wikilink), for no good reason. That would make &quot;OTP&quot; a proper noun, which in this context it isn't.  Just because something has an acronym doesn't mean its expansion should be capitalized. --&gt; 
+Newer versions also feature a USB connector, which allows the token to be used as a [[smart card]]-like device for securely storing [[Public key certificate|certificates]].&lt;ref&gt;[http://www.rsa.com/products/securid/datasheets/9651_SID800_DS_0908-lowres.pdf RSA SecurID SID800 Hardware Authenticator]{{dead link|date=June 2011}}&lt;/ref&gt;
+
+A user authenticating to a network resourceâsay, a dial-in server or a firewallâneeds to enter both a [[personal identification number]] and the number being displayed ''at that moment'' on their RSA SecurID token. Some systems using RSA SecurID disregard PIN implementation altogether, and rely on password/RSA SecurID code combinations. The server, which also has a real-time clock and a database of valid cards with the associated seed records, computes what number the token is supposed to be showing at that moment in time, checks it against what the user entered, and makes the decision to allow or deny access.{{Citation needed|date=January 2009}}
+
+On systems implementing PINs, a &quot;duress PIN&quot; may be usedâan alternate code which creates a security event log showing that a user was forced to enter their PIN, while still providing transparent authentication.{{Citation needed|date=January 2009}}
+
+While the RSA SecurID system adds a strong layer of security to a network, difficulty can occur if the authentication server's clock becomes out of sync with the clock built in to the authentication tokens. However, typically the RSA Authentication Manager automatically corrects for this without affecting the user. It is also possible to resync a token manually in the RSA Authentication Manager. Providing authentication tokens to everyone who might need to access a resource can be expensive (about $15 per year + licencing costs), particularly since tokens are programmed to &quot;expire&quot; at a fixed time, usually three years, requiring purchase of a new token.{{Citation needed|date=January 2009}}
+
+RSA Security has pushed forth an initiative called &quot;Ubiquitous Authentication&quot;, partnering with device manufacturers such as [[IronKey]], [[SanDisk]], [[Motorola]], [[Freescale Semiconductor]], [[Redcannon]], [[Broadcom]] and [[BlackBerry]] to embed the SecurID software into everyday devices such as USB flash drives and cell phones, to reduce cost and the number of objects that the user must carry.&lt;ref&gt;[http://www.highbeam.com/doc/1G1-142107014.html RSA Security to enable ubiquitous authentication as RSA SecurID(r) technology reaches everyday devices and software;. - M2 Presswire | HighBeam Research: Online Press Releases&lt;!-- Bot generated title --&gt;]&lt;/ref&gt;
+
+== Theoretical vulnerabilities ==
+
+The most simple practical vulnerability with any password containers is just losing the special key device or the activated smart phone with the integrated key function. Such vulnerability cannot be healed with any single token container device within the pre-set time span of activation. All further consideration presumes loss prevention, e.g. by additional [[electronic leash]] or body sensor and alarm.
+
+While RSA SecurID tokens offer a level of protection against password [[replay attack|replay attacks]], they are not designed to offer protection against [[Man-in-the-middle attack|man in the middle]] type attacks. If the attacker manages to block the authorised user from authenticating to the server until the next token code will be valid, he will be able to log in to the server. RSA SecurID does not prevent [[Man in the Browser]] (MitB) based attacks.&lt;ref&gt;{{cite web |url=https://www.owasp.org/index.php/Testing_Multiple_Factors_Authentication_(OWASP-AT-009) |title=Testing Multiple Factors Authentication (OWASP-AT-009)}}&lt;/ref&gt;
+
+SecurID authentication server tries to prevent password sniffing and simultaneous login by declining both authentication requests, if two valid credentials are presented within a given time frame. This has been documented in an unverified [http://malpaso.ru/securid/brainard.htm post by John G. Brainard]. If the attacker removes from the user the ability to authenticate however, the SecurID server will assume that it is the user who is actually authenticating and hence will allow the attacker's authentication through. Under this attack model, the system security can be improved using encryption/authentication mechanisms such as SSL.
+
+Although soft tokens may be more convenient, critics indicate that the [[tamper resistance|tamper-resistant]] property of [http://securology.blogspot.com/2007/11/soft-tokens-arent-tokens-at-all.html hard tokens is unmatched in soft token implementations], which could potentially allow seed record secret keys to be duplicated and user impersonation to occur.
+
+Hard tokens on the other hand can be physically stolen (or acquired via [[Social engineering (security)|social engineering]]) from end users. The small form factor makes hard token theft much more viable than laptop/desktop scanning. A user will typically wait more than one day before reporting the device as missing {{Citation needed|date=September 2010}}, giving the attacker plenty of time to breach the unprotected system.
+
+== Reception and competing products ==
+As of 2003, RSA SecurID commanded over 70% of the two-factor authentication market&lt;ref&gt;{{cite web|url=http://www.rsa.com/press_release.aspx?id=5028 |title=RSA SecurID Solution Named Best Third-Party Authentication Device by Windows IT Pro Magazine Readersâ Choice 2004 |work=RSA.com |date=2004-09-16 |accessdate=2011-06-09}}&lt;/ref&gt; and 25 million devices have been produced to date.{{Citation needed|date=June 2011}} A number of competitors, such as [[VASCO Data Security International|VASCO]], make similar [[security token]]s, mostly based on the open [[Initiative For Open Authentication|OATH HOTP]] standard. A study on OTP published by [[Gartner]] in 2010 mentions OATH and SecurID as the only competitors.&lt;ref&gt;{{cite web
+ | work = Burton Group | year = 2010
+ | first = Mark | last = Diodati
+ | title = Road Map: Replacing Passwords with OTP Authentication
+ | url = http://www.burtongroup.com/Research/PublicDocument.aspx?cid=2107
+ | quote = [[Gartner]]'s expectation is that the hardware [[One-time password|OTP]] form factor will continue to enjoy modest growth while [[smartphone]] OTPs will grow and become the default hardware platform over time. ...  If the organization does not need the extensive platform support, then OATH-based technology is likely a more cost-effective choice.
+}}&lt;/ref&gt;
+
+Other network authentication systems, such as [[OPIE Authentication System|OPIE]] and [[S/Key]] (sometimes more generally known as [[One-time password|OTP]], as S/Key is a trademark of [[Telcordia Technologies]], formerly [[Bellcore]]) attempt to provide the &quot;something you have&quot; level of authentication without requiring a hardware token.{{Citation needed|date=January 2009}}
+
+== March 2011 system compromise ==
+On 17 March 2011, RSA announced that they had been victims of &quot;an extremely sophisticated cyber attack&quot;.&lt;ref&gt;{{cite web | url=http://www.rsa.com/node.aspx?id=3872 | title= Open Letter to RSA Customers}}&lt;/ref&gt; Concerns were raised specifically in reference to the SecurID system, saying that &quot;this information could potentially be used to reduce the effectiveness of a current two-factor authentication implementation&quot;. However, their formal [[Form 8-K|SEC 8K]] submission&lt;ref&gt;{{cite web |url=http://www.sec.gov/Archives/edgar/data/790070/000119312511070159/d8k.htm |title=EMC / RSA 8K filing |publisher=The United States Securities and Exchange Commission |work=Form 8-K |date=17 March 2011}}&lt;/ref&gt; indicates that they do not believe the breach will have a &quot;material impact on its financial results&quot;.
+&lt;p&gt;
+The breach into RSA's network was carried out by hackers who sent [[phishing]] emails to two targeted, small groups of employees of RSA.&lt;ref&gt;{{cite web|last=Rivner|first=Uri|title=Anatomy of an Attack|url=http://blogs.rsa.com/rivner/anatomy-of-an-attack/|work=Speaking of Security - The RSA Blog and Podcast|date=1 April 2011}}&lt;/ref&gt;  Attached to the email was an Excel file containing [[malware]]. When an RSA employee opened the Excel file, the malware exploited a backdoor in Adobe Flash. The [[Exploit_(computer_security)|exploit]] allowed the hackers to use Poison Ivy [[Remote Administration Tool]] to gain control of machines and access servers in RSA's network.&lt;ref&gt;{{cite web|last=Mills|first=Elinor|date=5 April 2011|title=Attack on RSA used zero-day Flash exploit in Excel|url=http://news.cnet.com/8301-27080_3-20051071-245.html|work=CNET}}&lt;/ref&gt;  
+&lt;/p&gt;
+There are some hints that the breach involved the theft of RSA's database mapping token serial numbers to the secret token &quot;seeds&quot; that were injected to make each one unique.&lt;ref&gt;{{cite web |title=RSA won't talk? Assume SecurID is broken |first=Dan |last=Goodin |publisher=The Register |date=24 May 2011 |url=http://www.theregister.co.uk/2011/03/24/rsa_securid_news_blackout/}}&lt;/ref&gt; Reports of RSA executives telling customers to &quot;ensure that they protect the serial numbers on their tokens&quot;&lt;ref&gt;{{cite web |title=Did hackers nab RSA SecurID's secret sauce? |first=Ellen |last=Messmer |publisher=Network World |date=18 March 2011 |url=http://www.networkworld.com/news/2011/031811-rsa-breach-reassure.html}}&lt;/ref&gt; lend credibility to this hypothesis.
+
+
+In a 21 March 2011 email to customers, RSA essentially admitted that the information stolen from their internal network would allow an attacker to compromise a SecurID-protected system without having physical possession of the token:
+
+&lt;blockquote&gt;7. Have my SecurID token records been taken?&lt;br&gt;
+For the security of our customers, we are not releasing any additional information about what was taken. It is more important to understand all the critical components of the RSA SecurID solution.
+&lt;br&gt;
+The breach into RSA's network was carried out by the hackers sending phishing emails to employees of RSA.  Attached to the email was an Excel file  containing malware. When an employee opened the Excel file, the malware exploited a backdoor security hole in Adobe Flash. The exploit allowed the hackers to use Poison Ivy remote access tool to pull and execute commands at servers at RSA.  
+&lt;br&gt;
+To compromise any RSA SecurID deployment, the attacker needs to possess multiple pieces of information about the token, the customer, the individual users and their PINs. Some of this information is never held by RSA and is controlled only by the customer. In order to mount a successful attack, someone would need to have possession of all this information.&lt;/blockquote&gt;
+
+
+Barring a fatal weakness in the cryptographic implementation of the token code generation algorithm (which is unlikely, since it involves the simple and direct application of the extensively scrutinized [[AES-128]] [[block cipher]]), the only circumstance under which an attacker could mount a successful attack without physical possession of the token is if the token seed records themselves had been leaked.{{Citation needed|date=June 2011}}
+
+On 6 June 2011, RSA admitted that all 40 million tokens need to be replaced, saying that it did not release details about the extent of the attack in order not to give potential attackers information they could use in figuring out how to attack the system.&lt;ref&gt;{{cite web |last=Bright |first=Peter |title=RSA finally comes clean: SecurID is compromised |publisher=Ars Technica |date=6 June 2011 |url=http://arstechnica.com/security/news/2011/06/rsa-finally-comes-clean-securid-is-compromised.ars}}&lt;/ref&gt; In spite of the resulting breaches, company chairman Art Coviello said that &quot;We believe and still believe that the customers are protected&quot;.&lt;ref&gt;{{cite news |title=RSA forced to replace nearly all of its millions of tokens after security breach |publisher=News Limited |date=7 June 2011 |url=http://www.theaustralian.com.au/business/rsa-forced-to-replace-nearly-all-of-its-millions-of-tokens-after-security-breach/story-e6frgak6-1226071087832}}&lt;/ref&gt;
+
+=== Resulting Attacks ===
+In April 2011, unconfirmed rumors cited [[L-3 Communications]] as having been attacked as a result of the RSA compromise.&lt;ref&gt;{{cite news |last=Mills |first=Elinor |title=China linked to new breaches tied to RSA |publisher=CNet |date=6 June 2011 |url=http://news.cnet.com/8301-27080_3-20068836-245/china-linked-to-new-breaches-tied-to-rsa/}}&lt;/ref&gt;
+
+In May 2011, this information was used to attack [[Lockheed Martin]] systems.&lt;ref&gt;{{cite news |last=Leyden |first=John |title=Lockheed Martin suspends remote access after network 'intrusion' |publisher=The Register |date=27 May 2011 |url=http://www.channelregister.co.uk/2011/05/27/lockheed_securid_hack_flap/}}&lt;/ref&gt;&lt;ref&gt;{{cite news |title=Stolen Data Is Tracked to Hacking at Lockheed |publisher=New York Times |date=3 June 2011 |url=http://www.nytimes.com/2011/06/04/technology/04security.html?_r=4&amp;scp=2&amp;sq=RSA%20breach&amp;st=cse}}&lt;/ref&gt; However Lockheed Martin claims that due to &quot;aggressive actions&quot; by the company's information security team, &quot;No customer, program or employee personal data&quot; was compromised by this &quot;significant and tenacious attack&quot;.&lt;ref&gt;{{cite news |url=http://www.google.com/hostednews/afp/article/ALeqM5hO0TYWRsxt1CKUUEXKd04BQwsdGQ?docId=CNG.377fe057126251044306fe73e1e5ae83.401 |title=Lockheed Martin confirms attack on its IT network |publisher=AFP |date=28 May 2011}}&lt;/ref&gt; The [[Department of Homeland Security]] and the [[US Defense Department]] have offered to help determine the scope of the attack.&lt;ref&gt;{{cite news |last=Wolf |first=Jim |url=http://uk.reuters.com/article/2011/05/28/us-usa-defense-hackers-idUKTRE74Q6VY20110528 |title=Lockheed Martin hit by cyber incident, U.S. says |publisher=Reuters |date=28 May 2011}}&lt;/ref&gt;
+
+== References ==
+{{Reflist|2}}
+
+== External links ==
+* [http://www.rsa.com/node.aspx?id=1156 Official website]
+;Technical details
+* [http://seclists.org/bugtraq/2000/Dec/459 Sample SecurID Token Emulator with token Secret Import] I.C.Wiener, Bugtraq post.
+* [http://www.homeport.org/~adam/dimacs.html Apparent Weaknesses in the Security Dynamics Client/Server Protocol] Adam Shostack, 1996.
+* [https://groups.google.com/group/comp.security.misc/browse_frm/thread/e00fa564dc6aba5a/1f8529e8df4e02dc?tvc=1&amp;hl=en#1f8529e8df4e02dc Usenet thread discussing new SecurID details] Vin McLellan, et al., ''comp.security.misc''.
+* [http://tech.groups.yahoo.com/group/securid-users/ Unofficial SecurID information and some reverse-engineering attempts] Yahoo Groups ''securid-users''.
+* [http://intrepidusgroup.com/insight/2011/03/risk-posed-by-securid-hack Analysis of possible risks from 2011 compromise]
+* [http://www.hbarel.com/blog?itemid=62 Understanding the Impact of the RSA SecurID Breach (2011)]
+
+;Published attacks against the SecurID hash function
+* [http://eprint.iacr.org/2003/162.pdf Cryptanalysis of the Alleged SecurID Hash Function] (PDF) [[Alex Biryukov]], [[Joseph Lano]], and [[Bart Preneel]].
+* [http://eprint.iacr.org/2003/205.pdf Improved Cryptanalysis of SecurID] (PDF) Scott Contini and Yiqun Lisa Yin.
+* [http://palms.ee.princeton.edu/PALMSopen/contini04fast.pdf Fast Software-Based Attacks on SecurID] (PDF) Scott Contini and Yiqun Lisa Yin.
+
+{{DEFAULTSORT:Securid}}
+
+[[Category:Password authentication]]
+[[Category:EMC Corporation]]
+[[Category:Advanced Encryption Standard]]
+
+[[de:SecurID]]
+[[fr:SecurID]]
+[[ja:SecurID]]</rev></revisions></page></pages></query></api>

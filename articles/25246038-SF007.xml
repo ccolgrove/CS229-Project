@@ -1,0 +1,271 @@
+<?xml version="1.0"?><api><query><redirects><r from="Video tag HTML" to="HTML5" /></redirects><pages><page pageid="7966125" ns="0" title="HTML5"><revisions><rev xml:space="preserve">{{Infobox file format
+|                   name = HTML5&lt;br /&gt;({{small|{{nowrap|HyperText Markup Language}}}})
+|                   logo = [[File:HTML5-logo.svg|120px]]
+|              extension = .html, .htm
+|                   mime = text/html
+|              type code = TEXT
+|           uniform type = public.html
+|                  owner = [[World Wide Web Consortium]] and [[WHATWG]]
+|                  genre = [[Markup language]]
+|            Predecessor = [[HTML4]]
+|          container for =
+|           contained by =
+|          extended from = [[SGML]]
+|            extended to = XHTML5
+|               standard =
+|                   free = Yes
+|                    url = {{URL|whatwg.org/html}}&lt;br /&gt;{{URL|www.w3.org/TR/html5}}
+}}
+{{Infobox file format
+|                   name = XHTML5
+|              extension = .xhtml, .xht, .xml, .html, .htm
+|                   mime = application/xml, application/xhtml+xml
+|                  owner = [[World Wide Web Consortium]] and [[WHATWG]]
+|            creatorcode =
+|                  genre = [[Markup language]]
+|            predecessor =  [[XHTML 2.0]]
+|          container for =
+|           contained by =
+|          extended from = [[XML]], HTML5
+|            extended to =
+|               standard =
+|                   free = Yes
+|                    url = {{URL|http://www.whatwg.org/specs/web-apps/current-work/multipage/the-xhtml-syntax.html}}
+}}
+{{HTML|width=250px}}
+&lt;!-- The correct spelling is &quot;HTML5&quot;, not &quot;HTML 5&quot;. &quot;HTML 5&quot; is only used in outdated documents, such as the September 2009 Working Draft. All recent documents use &quot;HTML5&quot;, e.g.: &lt;http://dev.w3.org/html5/spec/Overview.html&gt; (note date). --&gt;
+
+'''HTML5''' is a language for structuring and presenting content for the [[World Wide Web]], and is a core technology of the [[Internet]] originally proposed by [[Opera Software]].&lt;ref&gt;http://dev.w3.org/html5/spec/introduction.html#history-1&lt;/ref&gt;  It is the fifth revision of the [[HTML]] standard (created in 1990 and standardized as HTML4 as of 1997)&lt;ref name=HTML5-20110405/&gt; and {{as of|2011|November|lc=y}} is still under development. Its core aims have been to improve the language with support for the latest multimedia while keeping it easily readable by humans and consistently understood by computers and devices ([[web browser]]s, [[parsing|parser]]s,Â etc.). HTML5 is intended to subsume not only [[HTML&amp;nbsp;4]], but [[XHTML]]&amp;nbsp;1 and [[Document Object Model|DOM2HTML]] (particularly [[JavaScript]]) as well.&lt;ref name=HTML5-20110405&gt;{{cite web|title= HTML5 Differences from HTML4 |url= http://www.w3.org/TR/2011/WD-html5-diff-20110405/ |work=Working Draft |date=5 April 2011 |publisher= [[World Wide Web Consortium]] |accessdate=30 April 2011 |quote= HTML&amp;nbsp;4 became a W3C Recommendation in 1997. While it continues to serve as a rough guide to many of the core features of HTML, it does not provide enough information to build implementations that interoperate with each other and, more importantly, with a critical mass of deployed content. The same goes for XHTML1, which defines an XML serialization for HTML4, and DOM Level 2 HTML, which defines [[JavaScript]] [[API]]s for both HTML and XHTML. HTML5 will replace these documents.| at= Introduction}}&lt;/ref&gt;
+
+Following its immediate predecessors HTML&amp;nbsp;4.01 and XHTML&amp;nbsp;1.1, HTML5 is a response to the observation that the HTML and XHTML in common use on the World Wide Web are a mixture of features introduced by various specifications, along with those introduced by software products such as web browsers, those established by common practice, and the many [[syntax error]]s in existing [[web document]]s. It is also an attempt to define a single [[markup language]] that can be written in either HTML or XHTML syntax. It includes detailed processing models to encourage more interoperable implementations; it extends, improves and rationalises the markup available for documents, and introduces markup and [[application programming interfaces]] (APIs) for complex [[web application]]s.&lt;ref name=&quot;HTML5diffHTML4&quot;&gt;{{cite web|title=HTML5 Differences from HTML4|url=http://www.w3.org/TR/html5-diff/|publisher= [[World Wide Web Consortium]]|accessdate=4 December 2010|date=19 October 2010}}&lt;/ref&gt; For the same reasons, HTML5 is also a potential candidate for cross-platform mobile applications. Many features of HTML5 have been built with the consideration of being able to run on low-powered devices such as smartphones and tablets.
+
+In particular, HTML5 adds many new [[Syntax (programming languages)|syntactical]] features. These include the &lt;code&gt;&amp;lt;video&gt;&lt;/code&gt;, &lt;code&gt;&amp;lt;audio&gt;&lt;/code&gt;, &lt;code&gt;&amp;lt;header&gt;&lt;/code&gt; and &lt;code&gt;[[Canvas element|&amp;lt;canvas&gt;]]&lt;/code&gt; [[HTML element|elements]], as well as the integration of [[Scalable Vector Graphics|SVG]] content that replaces the uses of generic &lt;code&gt;&amp;lt;object&amp;gt;&lt;/code&gt; tags.  These features are designed to make it easy to include and handle [[multimedia]] and [[2D computer graphics|graphical]] content on the web without having to resort to proprietary [[Plug-in (computing)|plugins]] and [[Application programming interface|API]]s. Other new elements, such as &lt;code&gt;&amp;lt;section&gt;&lt;/code&gt;, &lt;code&gt;&amp;lt;article&gt;&lt;/code&gt;, &lt;code&gt;&amp;lt;header&gt;&lt;/code&gt; and &lt;code&gt;&amp;lt;nav&gt;&lt;/code&gt;, are designed to enrich the [[Semantic web|semantic]] content of documents. New [[HTML attribute|attributes]] have been introduced for the same purpose, while some elements and attributes have been removed. Some elements, such as &lt;code&gt;&amp;lt;a&gt;&lt;/code&gt;, &lt;code&gt;&amp;lt;cite&gt;&lt;/code&gt; and &lt;code&gt;&amp;lt;menu&gt;&lt;/code&gt; have been changed, redefined or standardized. The APIs and [[document object model]] (DOM) are no longer afterthoughts, but are fundamental parts of the HTML5 specification.&lt;ref name=&quot;HTML5diffHTML4&quot;/&gt; HTML5 also defines in some detail the required processing for invalid documents so that syntax errors will be treated uniformly by all conforming browsers and other [[user agent]]s.&lt;ref&gt;{{cite web|title=1.9.2 Syntax Errors|url=http://dev.w3.org/html5/spec/Overview.html#syntax-errors|work=HTML5|accessdate=4 December 2010|date=16 November 2010}}&lt;/ref&gt;
+
+== History ==
+The [[Web Hypertext Application Technology Working Group]] (WHATWG) began work on the new standard in 2004, when the [[World Wide Web Consortium]] (W3C) was focusing future developments on [[XHTML#XHTML 2.0|XHTML&amp;nbsp;2.0]], and HTML&amp;nbsp;4.01 had not been updated since 2000.&lt;ref&gt;{{cite web|title=HTML&amp;nbsp;4 Errata|url=http://www.w3.org/MarkUp/html4-updates/errata|publisher= [[World Wide Web Consortium]] |accessdate=4 December 2010}}&lt;/ref&gt; In 2009, the W3C allowed the XHTML 2.0 Working Group's charter to expire and decided not to renew it. W3C and WHATWG are currently working together on the development of HTML5.&lt;ref&gt;{{cite web|title=Frequently Asked Questions (FAQ) About the Future of XHTML|url=http://www.w3.org/2009/06/xhtml-faq.html|publisher= [[World Wide Web Consortium]] |accessdate=4 December 2010}}&lt;/ref&gt;
+
+Even though HTML5 has been well known among web developers for years, it became the topic of mainstream media in AprilÂ 2010&lt;ref&gt;[http://www.foxnews.com/scitech/2010/04/29/flash-iphone-apples-steve-jobs-finally-explains/ FOX News: No Flash on the iPhone? Apple's Steve Jobs Finally Explains Why]&lt;/ref&gt;&lt;ref&gt;[http://techland.time.com/2010/04/29/steve-jobs-flash-is-no-longer-necessary-and-other-musings/ TIME: Steve Jobs: âFlash is No Longer Necessaryâ and Other Musings]&lt;/ref&gt;&lt;ref&gt;[http://www.cbsnews.com/8301-501465_162-20003744-501465.html CBS News: Steve Jobs: Why Apple Banned Flash]&lt;/ref&gt;&lt;ref&gt;[http://www.fastcompany.com/1633336/steve-jobs-flash-adobe-apple-iphone-os-mac-software-open-standards-proprietary-open-letter FastCompany: Steve Jobs: Adobe's Flash Is Old PC History, Open Web Is the Future]&lt;/ref&gt; after [[Apple Inc]]'s then-CEO [[Steve Jobs]] issued a public letter titled &quot;Thoughts on Flash&quot; where he concludes that [[Adobe Systems|Adobe]] &quot;[[Adobe Flash|Flash]] is no longer necessary to watch video or consume any kind of web content&quot; and that &quot;new open standards created in the mobile era, such as HTML5, will win&quot;.&lt;ref&gt;[http://www.apple.com/hotnews/thoughts-on-flash/ &quot;Thoughts on Flash&quot;, by Steve Jobs, CEO of Apple, Inc.]&lt;/ref&gt; This sparked a debate in web development circles where some suggested that while HTML5 provides enhanced functionality, developers must consider the varying browser support of the different parts of the standard as well as other [[Comparison of HTML5 and Flash|functionality differences between HTML5 and Flash]].&lt;ref&gt;[http://www.lyquix.com/blog/122-is-html5-replacing-flash Is HTML5 Replacing Flash?]&lt;/ref&gt;  In early November 2011 Adobe announced that it will discontinue development of Flash for mobile devices and reorient its efforts in developing tools utilizing HTML 5.&lt;ref&gt;[http://blogs.adobe.com/flashplatform/2011/11/flash-to-focus-on-pc-browsing-and-mobile-apps-adobe-to-more-aggressively-contribute-to-html5.html]&lt;/ref&gt;
+
+== W3C standardization process ==
+WHATWG started work on the specification in JuneÂ 2004 under the name Web Applications 1.0.&lt;ref&gt;{{cite web|url=http://lists.whatwg.org/htdig.cgi/whatwg-whatwg.org/2004-June/000005.html |title=[whatwg&amp;#93; WHAT open mailing list announcement |publisher=lists.whatwg.org Mailing Lists |date= |accessdate=4 March 2010}}&lt;/ref&gt; {{As of|2011|01}}, the specification is in the Draft Standard state at the WHATWG, and in [[W3c#Recommendations and Certifications|Working Draft]] state at the W3C. [[Ian Hickson]] of [[Google]] is the editor of HTML5.&lt;ref&gt;{{cite web | url = http://dev.w3.org/html5/spec/ | title = HTML5: A vocabulary and associated APIs for HTML and XHTML (Editor's Draft). | publisher = [[World Wide Web Consortium]] | accessdate =12 April 2010 }}&lt;/ref&gt;
+
+The HTML5 specification was adopted as the starting point of the work of the new HTML working group of the World Wide Web Consortium (W3C) in 2007. This working group published the First Public Working Draft of the specification on 22 January 2008.&lt;ref name=&quot;HTML5&quot;&gt;{{cite web | url = http://www.w3.org/TR/html5/ | title = HTML5: A vocabulary and associated APIs for HTML and XHTML. | publisher = [[World Wide Web Consortium]] | accessdate =28 January 2009 }}&lt;/ref&gt; The specification is an ongoing work, and is expected to remain so for many years, although parts of HTML5 are going to be finished and implemented in browsers before the whole specification reaches final Recommendation status.&lt;ref name=&quot;when&quot;&gt;{{cite web | url = http://wiki.whatwg.org/wiki/FAQ#When_will_HTML5_be_finished.3F | title = When Will HTML5 Be Finished? | publisher = WHATWG Wiki | accessdate =10 September 2009 | work = WHATWG }}&lt;/ref&gt;
+
+According to the W3C timetable, it was estimated that HTML5 would reach W3C Recommendation by late 2010. However, the First Public Working Draft estimate was missed by eightÂ months, and Last Call and Candidate Recommendation were expected to be reached in 2008,&lt;ref&gt;{{cite web|url=http://www.w3.org/2007/03/HTML-WG-charter.html#deliverables |title=HTML Working Group |publisher= [[World Wide Web Consortium]] |date= |accessdate=4 March 2010}}&lt;/ref&gt; but {{as of|2011|1|lc=on}} HTML5 is still at Working Draft stage in the W3C.&lt;ref&gt;{{cite web|url=http://www.w3.org/TR/html5/ |title=HTML5 |publisher= [[World Wide Web Consortium]] |date=25 August 2009 |accessdate=4 March 2010}}&lt;/ref&gt; HTML5 has been at Last Call in the WHATWG since OctoberÂ 2009.&lt;ref name=&quot;whatwg1&quot;&gt;{{cite web|url=http://lists.whatwg.org/pipermail/whatwg-whatwg.org/2009-October/023849.html |title=[whatwg&amp;#93; HTML5 at Last Call (at the WHATWG) |publisher=Lists.whatwg.org |date= |accessdate=4 March 2010}}&lt;/ref&gt;&lt;ref name=&quot;HTML5 Up &amp; Running&quot;&gt;{{cite web|url=http://diveintohtml5.ep.io/ |title= Dive Into HTML5}}&lt;/ref&gt;
+
+&lt;!--
+THE DATES 2012 AND 2022 ARE CORRECT.  THEY ARE NOT A TYPO.  DO NOT CHANGE THEM JUST BECAUSE YOU THINK THEY'RE IMPOSSIBLE, LOOK AT THE SOURCE GIVEN.  Thank you.
+
+--&gt;Ian Hickson, editor of the HTML5 specification, expects the specification to reach the [[W3C recommendation#Candidate Recommendation (CR)|Candidate Recommendation]] stage during 2012.&lt;ref name=&quot;W3Crec&quot;&gt;{{cite web
+|url=http://wiki.whatwg.org/wiki/FAQ#When_will_HTML5_be_finished.3F
+|title= When Will HTML5 Be Finished?
+|work=FAQ
+|publisher=WHAT Working Group
+|accessdate=29 November 2009}}&lt;/ref&gt; The criterion for the specification becoming a [[W3C recommendation#W3C Recommendation (REC)|W3C Recommendation]] is âtwo 100% complete and fully interoperable implementationsâ.&lt;ref name=&quot;W3Crec&quot; /&gt;
+In an interview with TechRepublic, Hickson guessed that this would occur in the year &lt;!-- NOT 2012, READ THE SOURCE --&gt;2022&lt;!-- NOT 2012, READ THE SOURCE --&gt; or later.&lt;ref name=&quot;techrepublicref&quot;&gt;{{cite web
+|url=http://blogs.techrepublic.com.com/programming-and-development/?p=718
+|title=HTML 5 Editor Ian Hickson Discusses Features, Pain Points, Adoption Rate, and More
+|accessdate=21 June 2010}}&lt;/ref&gt; However, many parts of the specification are stable and may be implemented in products:
+
+{{Quotation|Some sections are already relatively stable and there are implementations that are already quite close to completion, and those features can be used today (e.g. &lt;canvas&gt;).|WHAT Working Group|When will HTML5 be finished?&lt;ref name=&quot;W3Crec&quot; /&gt;|FAQ}}
+
+In DecemberÂ 2009, WHATWG switched to an unversioned development model for the HTML5 specification.&lt;ref&gt;{{cite web
+|url=http://lists.whatwg.org/pipermail/whatwg-whatwg.org/2009-December/024477.html
+|title=WHATWG: Switching to an Unversioned Development Model
+|author=Hickson, Ian
+|accessdate=21 January 2011}}&lt;/ref&gt; W3C will still continue with publishing a snapshot of the HTML5 specification.&lt;ref&gt;{{cite web
+|url=http://blog.whatwg.org/html-is-the-new-html5
+|title=HTML Is the New HTML5
+|author=Hickson, Ian
+|accessdate=21 January 2011}}&lt;/ref&gt;
+
+On 14 February 2011, the W3C extended the charter of its HTML Working Group with clear milestones for HTML5. The Working Group is expected to advance HTML5 to &quot;Last Call&quot;, an invitation to communities inside and outside W3C to confirm the technical soundness of the specification, in MayÂ 2011. The group will then shift focus to gathering implementation experience. W3C is also developing a comprehensive test suite to achieve broad interoperability for the full specification by 2014, which is now the target date for Recommendation.&lt;ref name=&quot;w3c2014&quot;&gt;{{cite web
+|url=http://www.w3.org/2011/02/htmlwg-pr.html
+|title=W3C Confirms May 2011 for HTML5 Last Call, Targets 2014 for HTML5 Standard
+|publisher= [[World Wide Web Consortium]]
+|accessdate=18 February 2011
+|date=14 February 2011}}&lt;/ref&gt;
+
+{{Quotation|Even as innovation continues, advancing HTML5 to Recommendation provides the entire Web ecosystem with a stable, tested, interoperable standard. The decision to schedule the HTML5 Last Call for May 2011 was an important step in setting industry expectations. Today we take the next step, announcing 2014 as the target for Recommendation.|Jeff Jaffe, Chief Executive Officer, [[World Wide Web Consortium]]&lt;ref name=&quot;w3c2014&quot;/&gt;}}
+
+=== Markup ===
+HTML5 introduces a number of new [[HTML element|elements]] and attributes that reflect typical usage on modern [[website]]s. Some of them are [[semantic web|semantic]] replacements for common uses of generic block ({{tag|div|open}}) and inline ({{tag|span|open}}) elements, for example {{tag|nav|open}} (website navigation block), {{tag|footer|open}} (usually referring to bottom of web page or to last lines of HTML code), or {{tag|audio|open}} and [[HTML5 video|{{tag|video|open}}]] instead of {{tag|object|open}}.&lt;ref&gt;Introduction to HTML5 [http://dev.opera.com/articles/view/introduction-html5-video/ video]&lt;/ref&gt;&lt;ref&gt;IBM Developer Works [http://www.ibm.com/developerworks/library/x-html5/?ca=dgr-lnxw01NewHTML New elements in HTML5: Structure and semantics]&lt;/ref&gt;&lt;ref&gt;ICAMD.org [http://www.amazon.com/dp/B003H05Q18 Finalcut Silverlight Films that Videographers share Quicktime in a Flash : Video on the Web using HTML5 and other Codecs]&lt;/ref&gt;
+Some deprecated elements from [[HTML&amp;nbsp;4.01]] have been dropped, including purely presentational elements such as {{tag|font|open}} and {{tag|center|open}}, whose effects are achieved using [[Cascading Style Sheet]]s. There is also a renewed emphasis on the importance of [[DOM scripting]] (e.g., JavaScript) in Web behavior.
+
+The HTML5 syntax is no longer based on [[Standard Generalized Markup Language|SGML]] despite the similarity of its markup. It has, however, been designed to be backward compatible with common parsing of older versions of HTML. It comes with a new introductory line that looks like an SGML [[document type declaration]], &lt;code style=&quot;white-space:nowrap;&quot;&gt;&amp;lt;!DOCTYPE html&amp;gt;&lt;/code&gt;, which triggers the standards-compliant [[quirks mode|rendering mode]].&lt;ref&gt;InstantShift [http://www.instantshift.com/2010/04/26/html5-worth-the-hype/] HTML5: Worth the Hype?&lt;/ref&gt;
+As of 5 January 2009, HTML5 also includes ''Web Forms 2.0'', a previously separate [[WHATWG]] specification.
+
+=== New APIs ===
+In addition to specifying markup, HTML5 specifies scripting [[application programming interfaces]] (APIs).&lt;ref&gt;[http://www.w3.org/html/wg/html5/diff/#apis &quot;HTML5 Differences from HTML4&amp;nbsp;â APIs&quot;].  [[World Wide Web Consortium]].&lt;/ref&gt; Existing [[document object model]] (DOM) interfaces are extended and ''[[de facto]]'' features documented. There are also new APIs, such as:
+
+{{multicol}}
+* The [[canvas element]] for [[immediate mode]] 2D drawing. See Canvas 2D API Specification 1.0 specification&lt;ref&gt;[http://dev.w3.org/html5/2dcontext/ &quot;HTML Canvas 2D Context&quot;].  [[World Wide Web Consortium]].&lt;/ref&gt;
+* Timed media playback
+* [[Web Storage|Offline storage database]] (offline web applications)&lt;ref&gt;[http://dev.w3.org/html5/webstorage/ &quot;Web Storage Specification&quot;].  [[World Wide Web Consortium]].&lt;/ref&gt;
+* Document editing
+{{col-break}}
+* [[Drag-and-drop]]
+* [[Cross-document messaging]]&lt;ref&gt;[http://dev.w3.org/html5/postmsg/ &quot;HTML5 Web Messaging&quot;].  [[World Wide Web Consortium]].&lt;/ref&gt;
+* Browser history management
+* [[MIME type]] and protocol handler registration
+* [[Microdata (HTML5)|Microdata]]
+{{col-end}}
+
+Not all of the above technologies are included in the W3C HTML5 specification, though they are in the WHATWG HTML specification.&lt;ref&gt;http://www.whatwg.org/specs/web-apps/current-work/multipage/introduction.html#is-this-html5?&lt;/ref&gt; Some related technologies, which are not part of either the W3C HTML5 or the WHATWG HTML specification, are as follows. The W3C publishes specifications for these separately.
+
+{{multicol}}
+* [[W3C Geolocation API|Geolocation]]
+* [[Web SQL Database]], a local SQL Database (no longer maintained).&lt;ref&gt;[http://dev.w3.org/html5/webdatabase/ &quot;Web SQL Database&quot;]. [[World Wide Web Consortium]].&lt;/ref&gt;
+* The [[Indexed Database API]], an indexed hierarchical key-value store (formerly WebSimpleDB).&lt;ref&gt;[http://www.w3.org/TR/IndexedDB/ &quot;Indexed Database&quot;]. [[World Wide Web Consortium]].&lt;/ref&gt;
+* [[Web Storage]], a key-value pair storage framework that provides enhanced behaviour similar to [[HTTP Cookie|Cookies]] but with larger storage capacity and improved API.
+{{col-break}}
+* [http://www.w3.org/TR/FileAPI/ File API], Handle file uploads and file manipulation.&lt;ref&gt;[http://www.w3.org/TR/FileAPI/ &quot;File API&quot;].  [[World Wide Web Consortium]].&lt;/ref&gt;
+* [http://www.w3.org/TR/file-system-api/ Directories and System]. This API is intended to satisfy client-side-storage use cases not well served by databases.&lt;ref&gt;[http://www.w3.org/TR/file-system-api/ &quot;Filesystem API&quot;].  [[World Wide Web Consortium]].&lt;/ref&gt;
+* [http://www.w3.org/TR/file-writer-api/ File Writer]. An API for writing to files from web applications.&lt;ref&gt;[http://www.w3.org/TR/file-writer-api/ &quot;File API: Writer&quot;]. [[World Wide Web Consortium]].&lt;/ref&gt;
+{{col-end}}
+
+A common misconception is that HTML5 can provide animation within web pages, which is untrue. Either [[JavaScript]] or [[Cascading Style Sheets#CSS 3|CSS3]] is necessary for animating HTML elements. Animation is also possible using JavaScript and HTML 4&lt;ref&gt;&quot;What HTML5 is (and what it isn't)&quot;, ''HTML5 First Look'', (lynda.com, 2010), &lt;http://www.lynda.com/home/DisplayCourse.aspx?lpk2=67161&gt;&lt;/ref&gt;{{Failed verification|date=January 2011}}, and within SVG elements through [[SMIL]], although browser support of the latter remains uneven as of 2011.
+
+=== XHTML5 ===
+'''XHTML5''' is the [[XML]] [[serialization]] of HTML5. XML documents must be served with an XML [[Internet media type]] such as &lt;code&gt;application/xhtml+xml&lt;/code&gt; or &lt;code&gt;application/xml&lt;/code&gt;.&lt;ref&gt;{{cite web|last=Anne|first=van Kesteren|title=HTML5 differences from HTML4&amp;nbsp;â W3C Working Draft 19 October 2010|url=http://dev.w3.org/html5/html4-differences/#syntax|publisher= [[World Wide Web Consortium]] |accessdate=2 November 2010}}&lt;/ref&gt; XHTML5 requires XML's strict, well-formed syntax. The choice between HTML5 and XHTML5 boils down to the choice of a MIME/content type: the media type you choose determines what type of document should be used.&lt;ref&gt;Sergey Mavrody &quot;Sergey's HTML5 &amp; CSS3 Quick Reference&quot;. Belisso Corp., 2010. ISBN 978-0615433219&lt;/ref&gt; In XHTML5 the HTML5 [[doctype]] &lt;code&gt;html&lt;/code&gt; is optional and may simply be omitted.&lt;ref&gt;{{cite web|url=http://www.whatwg.org/specs/web-apps/current-work/multipage/the-xhtml-syntax.html#writing-xhtml-documents | title=The XHTML syntax â HTML5 | publisher=[[Web Hypertext Application Technology Working Group]] | accessdate=1 September 2009}}&lt;/ref&gt; HTML that has been written to conform to both the HTML and XHTML specificationsâand which will therefore produce the same DOM tree whether parsed as HTML or XMLâis termed &quot;[[polyglot markup]]&quot;.&lt;ref name=&quot;w3c&quot;&gt;[http://www.w3.org/TR/2011/WD-html-polyglot-20110405/#dfn-polyglot-markup Polyglot Markup: HTML-Compatible XHTML Documents], W3C Working Draft 5 April 2011&lt;/ref&gt;
+
+=== Error handling ===
+An HTML5 (text/html) browser will be flexible in handling incorrect [[syntax]]. HTML5 is designed so that old browsers can safely ignore new HTML5 constructs. In contrast to HTML 4.01, the HTML5 specification gives detailed rules for [[lexing]] and [[parsing]], with the intent that different compliant browsers will produce the same result in the case of incorrect syntax.&lt;ref name=&quot;whatfaq&quot;&gt;{{cite web |url= http://wiki.whatwg.org/wiki/FAQ#Why_does_this_new_HTML_spec_legitimise_tag_soup.3F |title=FAQ â WHATWG Wiki |accessdate=26 August 2011 |work=WHATWG }}&lt;/ref&gt; Although HTML5 now defines a consistent behavior for &quot;[[tag soup]]&quot; documents, those documents are not regarded as conforming to the HTML5 standard.&lt;ref name=&quot;whatfaq&quot;/&gt;
+
+== Popularity ==
+According to a report released on 30 September 2011, 34 of the world's top 100 Web sites were using HTML5{{ndash}} the adaptation led by search engines and social networks.&lt;ref&gt;{{cite web||title=Percentage of Web sites Using HTML5|url=http://www.binvisions.com/articles/how-many-percentage-web-sites-using-html5|publisher=binvisions|accessdate=21 October 2011}}&lt;/ref&gt;
+
+== Differences from HTML&amp;nbsp;4.01 and XHTML&amp;nbsp;1.x ==
+The following is a cursory list of differences and some specific examples.
+{{multicol}}
+* New [[parsing]] rules: oriented towards flexible parsing and compatibility; not based on SGML
+* Ability to use inline [[SVG]] and [[MathML]] in &lt;code&gt;text/html&lt;/code&gt;
+* New [[HTML element|elements]]: &lt;code&gt;article&lt;/code&gt;, &lt;code&gt;aside&lt;/code&gt;, &lt;code&gt;audio&lt;/code&gt;, &lt;code&gt;bdo&lt;/code&gt;, &lt;code&gt;[[canvas element|canvas]]&lt;/code&gt;, &lt;code&gt;command&lt;/code&gt;, &lt;code&gt;datalist&lt;/code&gt;, &lt;code&gt;details&lt;/code&gt;, &lt;code&gt;embed&lt;/code&gt;, &lt;code&gt;figcaption&lt;/code&gt;, &lt;code&gt;figure&lt;/code&gt;, &lt;code&gt;footer&lt;/code&gt;, &lt;code&gt;header&lt;/code&gt;, &lt;code&gt;hgroup&lt;/code&gt;, &lt;code&gt;keygen&lt;/code&gt;, &lt;code&gt;mark&lt;/code&gt;, &lt;code&gt;meter&lt;/code&gt;, &lt;code&gt;nav&lt;/code&gt;, &lt;code&gt;output&lt;/code&gt;, &lt;code&gt;progress&lt;/code&gt;, &lt;code&gt;rp&lt;/code&gt;, &lt;code&gt;rt&lt;/code&gt;, &lt;code&gt;[[Ruby (annotation markup)|ruby]]&lt;/code&gt;, &lt;code&gt;section&lt;/code&gt;, &lt;code&gt;source&lt;/code&gt;, &lt;code&gt;summary&lt;/code&gt;, &lt;code&gt;time&lt;/code&gt;, &lt;code&gt;[[HTML5 video|video]]&lt;/code&gt;, &lt;code&gt;wbr&lt;/code&gt;
+{{col-break}}
+* New types of form controls: &lt;code&gt;dates and times&lt;/code&gt;, &lt;code&gt;email&lt;/code&gt;, &lt;code&gt;url&lt;/code&gt;, &lt;code&gt;search&lt;/code&gt;, &lt;code&gt;number&lt;/code&gt;, &lt;code&gt;range&lt;/code&gt;, &lt;code&gt;tel&lt;/code&gt;, &lt;code&gt;color&lt;/code&gt;&lt;ref&gt;{{cite web|url=http://dev.w3.org/html5/markup/input.html |title=HTML5: The Markup Language Reference: Input Control |publisher= [[World Wide Web Consortium]] |date= |accessdate=17 February 2011}}&lt;/ref&gt;
+* New [[HTML#Attributes|attributes]]: &lt;code&gt;charset&lt;/code&gt; (on &lt;code&gt;meta&lt;/code&gt;), &lt;code&gt;async&lt;/code&gt; (on &lt;code&gt;script&lt;/code&gt;)
+* Global attributes (that can be applied for every element): &lt;code&gt;id&lt;/code&gt;, &lt;code&gt;tabindex&lt;/code&gt;, &lt;code&gt;hidden&lt;/code&gt;, &lt;code&gt;data-*&lt;/code&gt; (custom data attributes)
+* Deprecated elements will be dropped altogether: &lt;code&gt;acronym&lt;/code&gt;, &lt;code&gt;applet&lt;/code&gt;, &lt;code&gt;basefont&lt;/code&gt;, &lt;code&gt;big&lt;/code&gt;, &lt;code&gt;center&lt;/code&gt;, &lt;code&gt;dir&lt;/code&gt;, &lt;code&gt;font&lt;/code&gt;, &lt;code&gt;frame&lt;/code&gt;, [[Framing (World Wide Web)|&lt;code&gt;frameset&lt;/code&gt;]], &lt;code&gt;isindex&lt;/code&gt;, &lt;code&gt;noframes&lt;/code&gt;, &lt;code&gt;strike&lt;/code&gt;, &lt;code&gt;tt&lt;/code&gt;
+{{col-end}}
+
+dev.w3.org provides the latest ''Editors Draft'' (last dated ''4 August 2011'') of &quot;HTML5 differences from HTML4&quot;,&lt;ref&gt;{{cite web
+|url=http://dev.w3.org/html5/html4-differences/
+|title=HTML5 Differences from HTML4
+|work=FAQ
+|publisher= [[World Wide Web Consortium]]
+|date= 13 January 2011
+|accessdate=23 January 2011}}&lt;/ref&gt; which provides a complete outline of additions, removals and changes between HTML5.
+
+== The HTML5 logo ==
+[[File:HTML5-logo.svg|thumb|120px|The W3C HTML5 logo]]
+On 18 January 2011, the W3C introduced a logo to represent the use of or interest in HTML5. Unlike other badges previously issued by the W3C, it does not imply validity or conformance to a certain standard. As of 1 April 2011, this logo is official.&lt;ref name=&quot;logo-faq&quot;&gt;{{cite web | url = http://www.w3.org/html/logo/faq.html | title = W3C HTML5 Logo FAQ | publisher = [[World Wide Web Consortium]] | accessdate =21 January 2011 |quote = Is this W3C's &quot;official&quot; logo for HTML5? Yes, as of 1 April 2011.}}&lt;/ref&gt;
+
+When initially presenting it to the public, the W3C announced the HTML5 logo as a &quot;general-purpose visual identity for a broad set of open web technologies, including HTML5, [[Cascading Style Sheets|CSS]], [[Scalable Vector Graphics|SVG]], [[Web Open Font Format|WOFF]], and others&quot;.&lt;ref name=&quot;waspopenletter&quot;&gt;{{cite web | url = http://www.webstandards.org/2011/01/18/regarding-the-html5-logo | title = HTML5 Logo: Be Proud, But Don't Muddy the Waters! | publisher = [[The Web Standards Project]] | accessdate =22 January 2011 }}&lt;/ref&gt; Some web standard advocates, including The Web Standards Project, criticised that definition of &quot;HTML5&quot; as an umbrella term, pointing out the blurring of terminology and the potential for miscommunication.&lt;ref name=&quot;waspopenletter&quot;/&gt; Three days later, the W3C responded to community feedback and changed the logo's definition, dropping the enumeration of related technologies.&lt;ref&gt;{{cite web | url = http://www.w3.org/QA/2011/01/the_html5_logo_conversation.html | title = The HTML5 Logo Conversation | publisher = World Wide Web Consortium | accessdate =21 January 2011 }}&lt;/ref&gt; The W3C then said the logo &quot;represents HTML5, the cornerstone for modern Web applications&quot;.&lt;ref name=&quot;logo-faq&quot;/&gt;
+
+== See also ==
+{{portal box|Computer science|Internet}}
+{{multicol|80%}}
+* [[Adobe Edge|Adobe Edge HTML5 Timeline Editor]]
+* [[Cache manifest in HTML5]]
+* [[Comparison of layout engines (HTML5)]]
+* [[Cascading Style Sheets#CSS3|CSS3]]
+* [[HTML5 in mobile devices]]
+{{col-break}}
+* [[HTML5 video]]
+* [[HTTP(P2P)]]
+* [[Microdata (HTML5)]]
+* [[WebGL]]
+{{col-end}}
+
+== References ==
+{{Reflist|2}}
+
+== Further reading ==
+* {{Cite web
+ | url        = http://blogs.msdn.com/b/tims/archive/2010/10/03/html5-a-specification-or-a-platform.aspx
+ | title      = HTML5: A Specification or a Platform?
+ | work       = Musings of a Client Platform Guy
+ | publisher  = [[Microsoft]]
+ | date       = 3 October 2010
+ | accessdate =18 October 2010
+ | last       = Sneath
+ | first      = Tim
+}}
+* {{Cite web
+ | url        = http://www.w3avenue.com/2010/05/07/html5-unleashed-tips-tricks-and-techniques/
+ | title      = HTML5 Unleashed: Tips, Tricks and Techniques
+ | publisher  = W3Avenue
+ | date       = 7 May 2010
+ | accessdate =18 October 2010
+ | first      = Saud
+ | last       = Khan
+}}
+
+== External links ==
+{{Commonscat|HTML5}}
+{{multicol|70%}}
+* [http://www.w3.org/TR/html5/ W3C's Working Draft of HTML5]
+* [http://www.whatwg.org/ Web Hypertext Application Technology Working Group (WHATWG)]
+* [http://www.w3.org w3.org], [[World Wide Web Consortium]]'s official website
+** [http://www.w3.org/html/wg/ HTML Working Group]
+** [http://dev.w3.org/html5/spec/ HTML5 Editor's draft]
+** [http://dev.w3.org/html5/markup/ HTML5: The Markup Language]
+** [http://dev.w3.org/html5/html-author/ HTML 5 Reference]
+** [http://dev.w3.org/html5/html-design-principles/ HTML Design Principles]
+** [http://dev.w3.org/html5/html4-differences/ HTML5 differences from HTML4]
+** [http://www.w3.org/html/logo/ HTML5 Logo]
+{{col-break}}
+* [https://demos.mozilla.org/en-US/ Mozilla's Web O'(pen) Wonder{{ndash}} HTML5 Demonstrations]
+* [http://www.coreservlets.com/html5-tutorial/input-types.html Interactive test of HTML5 input elements]
+* [http://w3c-test.org/html/tests/reporting/report.htm HTML5 Conformance test by W3C]
+* [http://channel9.msdn.com/Events/TechEd/Australia/Tech-Ed-Australia-2011/WEB304?WT.mc_id=soc-n-au-loc--wiki Alex Mackey on HTML5{{ndash}} The Useful Bits]
+* [http://www.html5rocks.com/ HTML5 Rocks] by [[Google]]
+* [http://www.html5libs.com/ HTML5libs - A Comparison Matrix of HTML5-oriented Software]
+* [http://html5center.sourceforge.net/ The HTML5 Center]
+{{col-end}}
+
+{{W3C Standards}}
+{{Use dmy dates|date=June 2011}}
+{{Rich Internet applications}}
+
+{{DEFAULTSORT:Html5}}
+[[Category:Emerging standards]]
+[[Category:HTML5| ]]
+[[Category:Markup languages]]
+[[Category:World Wide Web Consortium standards]]
+[[Category:XML-based standards]]
+
+[[ar:Ø¥ØªØ´ ØªÙ Ø¥Ù Ø¥Ù 5]]
+[[bg:HTML5]]
+[[ca:HTML 5]]
+[[cs:HTML5]]
+[[da:HTML5]]
+[[de:HTML5]]
+[[et:HTML5]]
+[[el:HTML5]]
+[[es:HTML5]]
+[[fa:Ø§ÚâØªÛâØ§ÙâØ§ÙÛµ]]
+[[fr:HTML5]]
+[[ko:HTML5]]
+[[hi:à¤à¤à¤à¥à¤à¤®à¤à¤² à¤«à¤¾à¤à¤µ]]
+[[hsb:HTML 5]]
+[[id:HTML5]]
+[[is:HTML5]]
+[[it:HTML5]]
+[[hu:HTML5]]
+[[ml:à´à´àµà´àµ.à´à´¿.à´à´.à´àµ½. 5]]
+[[ms:HTML5]]
+[[nl:HTML5]]
+[[ja:HTML5]]
+[[km:HTML5]]
+[[pl:HTML 5]]
+[[pt:HTML5]]
+[[ro:HTML5]]
+[[ru:HTML5]]
+[[fi:HTML5]]
+[[sv:HTML5]]
+[[te:à°¹à±à°à±âà°à°¿à°à°®à±à°à°²à±5(HTML5)]]
+[[th:HTML5]]
+[[tr:HTML5]]
+[[uk:HTML 5]]
+[[zh:HTML5]]</rev></revisions></page></pages></query></api>

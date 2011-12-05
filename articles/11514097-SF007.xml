@@ -1,0 +1,143 @@
+<?xml version="1.0"?><api><query><pages><page pageid="11514097" ns="0" title="Gears (software)"><revisions><rev xml:space="preserve">{{Infobox software
+| name                   = Gears
+| logo                   = [[Image:Gearslogo.png]]
+| screenshot             = &lt;!-- [[File: ]] --&gt;
+| caption                = 
+| collapsible            = 
+| author                 = 
+| developer              = [[Google]]
+| released               = 31 May 2007
+| discontinued           = 
+| latest release version = 
+| latest release date    = &lt;!-- {{Start date and age|YYYY|MM|DD}} --&gt;
+| latest preview version = 
+| latest preview date    = &lt;!-- {{Start date and age|YYYY|MM|DD}} --&gt;
+| frequently updated     = no&lt;!-- Release version update? Don't edit this page, just click on the version number! --&gt;
+| programming language   = 
+| operating system       = [[Microsoft Windows|Windows]] [[Windows XP|XP]], [[Windows Vista|Vista]], [[Windows 7|7]], [[Windows Mobile 5]], [[Windows Mobile 6|6]], [[Mac OS X]], [[Linux]] 32bit
+| platform               = 
+| size                   = 
+| language               = 
+| status                 = Discontinued (see [[Gears (software)#End of life|End of life]] section)
+| genre                  = 
+| license                = Open source ([[BSD licenses|BSD]])
+| website                = {{URL|http://gears.google.com}}
+}}
+
+'''Gears''', formerly '''Google Gears''',&lt;ref name=&quot;birthday-rename&quot;&gt;{{cite web|url=http://googleblog.blogspot.com/2008/05/happy-birthday-google-gears.html|title=Happy birthday, &lt;s&gt;Google&lt;/s&gt; Gears!|date=2008-05-28|publisher=Official Google Blog|accessdate=2008-06-11}}&lt;/ref&gt; is software offered by [[Google]] that &quot;enables more powerful web applications, by adding new features to your web browser. It allows some online files to be used offline&quot;.&lt;ref&gt;{{cite web|url=http://gears.google.com/|title=Gears|accessdate=2008-09-01}}&lt;/ref&gt; Released under the [[BSD licenses|BSD license]],&lt;ref&gt;{{cite web|url=http://code.google.com/p/gears/|title=Google Code project for Gears|accessdate=2008-02-26}}&lt;/ref&gt; Gears is [[free and open source software]].
+
+In late November 2009, numerous online news sources reported that Google is going to migrate to use [[Web Storage]] rather than Gears in the future. A Google spokesman later clarified that Google will, however, continue to support Gears so as not to break sites using it.&lt;ref name=&quot;gears-html5&quot;&gt;{{cite web|url=http://latimesblogs.latimes.com/technology/2009/11/google-gears.html|title=What's powering Web apps: Google waving goodbye to Gears, hello to HTML5 |date=2009-11-30|publisher=Los Angeles Times|accessdate=2009-12-02}}&lt;/ref&gt; On 22 November 2011, Google announced that on 1 December 2011, Gears support would be removed from Gmail and Google Calendar&lt;ref&gt;http://googleblog.blogspot.com/2011/11/more-spring-cleaning-out-of-season.html&lt;/ref&gt;.
+
+==Components==
+There are several major [[Application programming interface|API]] components to Gears:
+* A Database module (powered by [[SQLite]]), which can store data locally.&lt;ref&gt;{{cite web|url=http://code.google.com/apis/gears/api_database.html|title=Database Module API|accessdate=2007-05-31 }}&lt;/ref&gt;
+* A WorkerPool module, which provides parallel execution of JavaScript code.&lt;ref&gt;{{cite web|url=http://code.google.com/apis/gears/api_workerpool.html|title=WorkerPool Module API|accessdate=2007-05-31  }}&lt;/ref&gt;
+* A LocalServer module, which caches and serves application resources (HTML, JavaScript, images, etc).&lt;ref&gt;{{cite web|url=http://code.google.com/apis/gears/api_localserver.html|title=LocalServer Module API|accessdate=2007-05-31 }}&lt;/ref&gt;
+* A Desktop module, which lets web applications interact more naturally with the desktop.&lt;ref&gt;{{cite web|url=http://code.google.com/apis/gears/api_desktop.html|title=Desktop Module API|accessdate=2007-05-31  }}&lt;/ref&gt;
+* A Geolocation module, which lets web applications detect the geographical location of their users.&lt;ref&gt;{{cite web|url=http://code.google.com/apis/gears/api_geolocation.html|title=Geolocation Module API|accessdate=2008-08-27 }}&lt;/ref&gt;
+
+==Version history==
+{| class=&quot;wikitable&quot;
+! Version !! Date !! Description
+|-
+| 0.1|| 2007-05-31 || Initial release as Google Gears.  &lt;ref&gt;http://computemagazine.com/google-gears-could-revolutionize-the-online-application-user-experience/&lt;/ref&gt; || 
+|-
+| 0.2 ||2008-02-22 &lt;ref&gt;http://gearsblog.blogspot.com/2008/02/gears-02-released.html&lt;/ref&gt; || 
+|-
+| -  || 2008-05-28 &lt;ref name=&quot;birthday-rename&quot; /&gt; || Project renamed to Gears to reflect the [[open source]], collaborative nature of the project.
+|-
+| 0.3 || 2008-06-11 &lt;ref&gt;http://gearsblog.blogspot.com/2008/06/fly-gears-03.html&lt;/ref&gt; || Introduced ability to add [[Computer icon|desktop icons]], support for [[Mozilla Firefox 3]].
+|-
+| 0.4|| 2008-08-22 &lt;ref&gt;http://gearsblog.blogspot.com/2008/08/gears-04-is-here.html&lt;/ref&gt; || [[Geolocation]] [[application programming interface|API]] / Event handling for upload / download transfer progress, localization in 40 languages
+|-
+| 0.5|| 2008-11-24 &lt;ref&gt;http://code.google.com/apis/gears/history.html&lt;/ref&gt; || 
+Updated [[SQLite]], Geolocation can now get data from [[WiFi]] antennas, Improved API to manage data blobs on LocalServer
+|}
+
+==Support==
+Several web applications from a variety of companies have used Gears at some point, including Google ([[Gmail]], [[YouTube]], [[Google Docs|Docs]], [[Google Reader|Reader]], [[Picasa]] for mobile, [[Google Calendar|Calendar]], [[Google Wave|Wave]]), [[MySpace]] (Mail Search), [[Zoho]] ([[Zoho Writer|Writer]], [[Zoho Mail|Mail]]), [[Remember The Milk]], and [[Buxfer]].&lt;ref&gt;{{cite web
+|url=http://code.google.com/p/gears/wiki/GearsHistory
+|title=Gears History
+|accessdate=2008-06-28
+}}&lt;/ref&gt; [[WordPress|WordPress 2.6]] added support for Gears, to speed up the administrative interface and reduce server hits.&lt;ref&gt;{{cite web | url=http://trac.wordpress.org/ticket/6965 | title=WordPress Trac ticket - Gears Support}}&lt;/ref&gt; However, after Google announced in FebruaryÂ 2010 that there would be no further development of Gears (see [[Gears (software)#End of life|End of life]] section), several of these applications have discontinued their support for Gears, including Google Reader&lt;ref&gt;{{cite web | url=http://googlereader.blogspot.com/2010/05/spring-cleaning-comments-offline-and.html | title=Google Reader blog - end of offline support}}&lt;/ref&gt; and WordPress&lt;ref&gt;{{cite web | url=http://codex.wordpress.org/Tools_Tools_SubPanel | title=WordPress documentation - Tools Subpanel}}&lt;/ref&gt;
+
+Gears can be enabled on sites where it is otherwise unsupported, by using a [[Greasemonkey]] user script one of the Gears engineers has created.&lt;ref&gt;{{cite web|url=http://code.google.com/apis/gears/articles/gearsmonkey.html|title=Gearsmonkey: Gears + Greasemonkey|accessdate=2009-08-13}}&lt;/ref&gt;
+
+Gears is supported on [[Google Chrome]] and [[Internet Explorer|Internet Explorer 6 and Internet Explorer 8]] on Windows XP, Vista and Seven, [[Internet Explorer Mobile|Internet Explorer Mobile 4.01 and later]] on Windows Mobile, [[Safari (web browser)|Safari 3.1.1 and later]] on Mac OS X 10.4 and later&lt;ref&gt;{{cite web
+|url=http://groups.google.com/group/gears-users/browse_thread/thread/36537d4f47c5495c/59c3950739b83da6?show_docid=59c3950739b83da6
+|title=Gears for Safari beta
+|publisher=[[Google]]
+|accessdate=2008-08-26}}&lt;/ref&gt; (though not with [[Safari 4]] on [[Mac OS X 10.6 Snow Leopard]]; with no sign of a fix anytime soon&lt;ref&gt;{{cite web
+|url=http://code.google.com/p/gears/issues/detail?id=847
+|title=Issue 847: Mac: Gears not working Safari 4 - Snow Leopard
+|publisher=[[Google Code]]
+|accessdate=2009-09-05
+}}&lt;/ref&gt;), and [[Mozilla Firefox|Firefox 1.5 and later]] on multiple platforms.&lt;ref&gt;http://code.google.com/support/bin/answer.py?answer=69201&amp;topic=11629&lt;/ref&gt; There is only limited 64Â bit support from 3rd parties. 
+
+Gears does not support attachment files with sizes greater than 2Â GB under Mac OS X Leopard or Snow Leopard currently due to a bug in the Blob handling code.&lt;ref&gt;http://code.google.com/p/gears/issues/detail?id=960&amp;q=snow%20leopard&amp;colspec=Version%20Milestone%20Owner%20ID%20Summary%20Component&lt;/ref&gt;&lt;ref&gt;http://code.google.com/p/gears/issues/detail?id=958&amp;q=snow%20leopard&amp;colspec=Version%20Milestone%20Owner%20ID%20Summary%20Component&lt;/ref&gt;
+
+On MayÂ 29,Â 2008, [[Opera Software|Opera Software ASA]] announced that [[Opera Mobile|Opera Mobile 9.5]] would support Gears.&lt;ref&gt;{{cite web
+|url=http://www.opera.com/pressreleases/en/2008/05/29/
+|title=Opera extends Gears support
+|publisher=[[Opera Software]]
+|accessdate=2008-05-29
+}}&lt;/ref&gt;
+The technology preview release of the browser was published on FebruaryÂ 20,Â 2009.&lt;ref&gt;{{cite web
+|url=http://labs.opera.com/news/2009/02/20/
+|title=Technology preview: Gears-enabled Opera Mobile 9.5
+|publisher=[[Opera Software]]
+|accessdate=2009-02-21
+}}&lt;/ref&gt;
+It is currently available for touch-screen devices on Windows Mobile 5 &amp; 6 only.&lt;ref&gt;{{cite web
+|url=http://www.opera.com/mobile/download/?man=Windows+Mobile+5.0+Pocket+PC&amp;ver=9.51b2_gears&amp;heading=Windows%20Mobile%205/6%20Pocket%20PC&amp;img=/bitmaps/products/mobile/platform/951b2.gif&amp;extra=Touchscreen-based%20devices%20only.%20Visit%20http://gears.google.com%20to%20download%20the%20Gears%20plugin%20for%20Opera%20Mobile.%20Last%20updated:%2019.%202.%202009
+|title=Gears-enabled Opera Mobile 9.51b2 download page
+|publisher=[[Opera Software]]
+|accessdate=2009-02-21
+}}&lt;/ref&gt; Gears is not built into browsers other than [[Google Chrome]] and must be downloaded separately.
+
+The [[Ruby on Rails]] framework supports interfaces to Gears without needing to understand the Google Gears API.&lt;ref&gt;{{cite web
+|url=http://www.eweek.com/c/a/Application-Development/Google-Gears-takes-Ruby-on-Rails-Offline/
+|title=Google Gears Takes Ruby on Rails Offline
+|publisher=[[eWeek]]
+|accessdate=2008-07-15
+}}&lt;/ref&gt;
+
+==End of life==
+On February 19, 2010, the Gears team at Google announced that the development of Google Gears had stopped, as they are working on bringing all of the Gears capabilities into web standards like HTML5. Although development of new features has ceased, Google is planning to continue supporting Gears until they have developed a &quot;simple, comprehensive&quot; method for users' data to be migrated to HTML5 features.&lt;ref&gt;{{cite web | url=http://gearsblog.blogspot.com/2010/02/hello-html5.html | title=Hello HTML5}}&lt;/ref&gt; Google Gears was removed from the Google Chrome stable as of June 7, 2011. &lt;ref&gt;{{cite web | url=http://googlechromereleases.blogspot.com/2011/06/chrome-stable-release.html | title=Chrome Stable Release}}&lt;/ref&gt;
+
+==See also==
+* [[Microsoft Silverlight]]
+* [[Rich Internet application]]
+* [[Adobe Integrated Runtime|Adobe AIR]]
+
+== References ==
+{{reflist|2}}
+
+== External links ==
+*{{Official|http://gears.google.com}}
+
+{{Google Inc.}}
+
+{{DEFAULTSORT:Gears (Software)}}
+[[Category:Web 2.0]]
+[[Category:Google software]]
+[[Category:Mozilla add-ons]]
+
+[[ca:Google Gears]]
+[[de:Gears]]
+[[es:Gears]]
+[[fr:Gears]]
+[[id:Google Gears]]
+[[it:Google Gears]]
+[[nl:Gears]]
+[[ja:Gears (ã½ããã¦ã§ã¢)]]
+[[no:Google Gears]]
+[[nn:Google Gears]]
+[[pl:Gears]]
+[[pt:Google Gears]]
+[[ru:Gears]]
+[[th:à¹à¸à¸µà¸¢à¸£à¸ªà¹]]
+[[tr:Google Gears]]
+[[uk:Gears]]
+[[vi:Google Gears]]
+[[zh:Gears]]</rev></revisions></page></pages></query></api>

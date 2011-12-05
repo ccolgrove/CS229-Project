@@ -1,0 +1,48 @@
+<?xml version="1.0"?><api><query><pages><page pageid="691774" ns="0" title="Recovery Is Possible"><revisions><rev xml:space="preserve">&lt;!-- Deleted image removed: [[Image:Rip.png|thumb|right|240px|RIP running in X11 resizing Linux partitions and viewing Wikipedia|{{deletable image-caption|1=Saturday, 5 July 2008}}]] --&gt;
+'''Recovery Is Possible''' ('''RIPLinux''') is a small, specialized [[Linux distribution]] based on [[Slackware]]{{Ref label|Distrowatch|2|a}} that includes system maintenance and recovery applications on a [[Live CD|live CD or USB flash drive]]{{Ref label|Freshmeat|1|a}}{{Ref label|Distrowatch|2|a}}. The RIP disc comes in two flavors: one with the [[X Window System]] and one without.  The X-capable version does not require X to be started at boot-up; it can be started at any time after booting without the server.  The main purpose of X under RIP is to provide the capability to run [[GParted]], a [[disk partition]] management program, and [[Mozilla Firefox]], a [[web browser]]. [[Xine]] is also included for watching movies on DVD.
+
+Common uses of RIP include: {{Ref label|Linuxmagazine|3|a}}
+* [[TestDisk]] to recover deleted partitions, by ignoring the [[master boot record|MBR]] and checking cylinders for known filesystem structures (such as FAT, NTFS, ext2/3/4, ReiserFS 3/4, XFS, etc.)
+* [[PhotoRec]] to recover deleted files (not only photos) by ignoring the filesystem and checking disk blocks for known file types
+* [[fdisk]], [[cfdisk]], [[parted]], and [[GParted]] (with the X11 version) for partition management
+* [[ntfsprogs]] ([[ntfsresize]], [[ntfsclone]], ntfsfix, mkntfs, etc.) in order to resize, backup/restore, schedule a [[CHKDSK]] at Windows boot-up, and perform other operations on NTFS filesystems
+* GNU [[ddrescue]] to recover data from failed media by copying data from one file or block device (hard disk, CD-ROM, floppy, etc.) to another, trying hard to rescue data in case of read errors.
+
+== External links ==
+* [http://www.tux.org/pub/people/kent-robotti/looplinux/rip/ RIPLinux home site] &amp;mdash; official website
+
+==References==
+* {{note label|Freshmeat|1|a}} {{cite web
+ | title = Recovery Is Possible! 
+ | publisher = Freshmeat
+ | url = http://freshmeat.net/projects/recoveryispossible/
+ | year = 2009
+ | accessdate = 2009-12-04
+ }}
+* {{note label|Distrowatch|2|a}} {{cite web
+ | title = Distrowatch: RipLinuX
+ | publisher = Distrowatch.com
+ | url = http://distrowatch.com/table.php?distribution=rip
+ | year = 2011
+ | accessdate = 2011-10-17
+ }}
+* {{note label|Linuxmagazine|3|a}} {{cite web
+ | title = RIP 6.6 Rescue System Has New Drivers and a Forum
+ | publisher = Linux-magazine.com
+ | url = http://www.linux-magazine.com/Online/News/RIP-6.6-Rescue-System-Has-New-Drivers-and-a-Forum?category=13417
+ | year = 2008
+ | accessdate = 2009-12-04
+ }}
+
+{{Linux distributions}}
+
+[[Category:Operating system distributions bootable from read-only media]]
+[[Category:Mini Linux distributions]]
+[[Category:Slackware]]
+
+
+{{linux-distro-stub}}
+
+[[es:Linux RIP]]
+[[ro:Recovery Is Possible Linux]]
+[[ru:Recovery Is Possible]]</rev></revisions></page></pages></query></api>

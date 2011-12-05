@@ -1,0 +1,110 @@
+<?xml version="1.0"?><api><query><pages><page pageid="428420" ns="0" title="Splint (programming tool)"><revisions><rev xml:space="preserve">{{notability|Products|date=September 2010}}
+{{refimprove|date=September 2010}}
+{{Other uses|Splint (disambiguation)}}
+{{Infobox software
+| name                   = Splint
+| screenshot             =
+| caption                =
+| developer              = [http://sourceforge.net/project/memberlist.php?group_id=34302 The Splint Developers]
+| latest release version = 3.1.2
+| latest release date    = {{release_date|2007|07|12}}
+| operating system       = [[Cross-platform]]
+| genre                  = [[Static code analysis]]
+| license                = [[GPL]]
+| website                = http://splint.org
+}}
+
+'''Splint''', short for '''Secure Programming Lint''', is a [[programming tool]] for [[Static code analysis|statically checking]] [[C (programming language)|C programs]] for security [[vulnerability (computer science)|vulnerabilities]] and coding mistakes. Formerly called LCLint, it is a modern version of the [[Unix]] [[lint programming tool|lint]] tool.
+
+Splint has the ability to interpret special annotations to the [[source code]], which gives it stronger checking than is possible just by looking at the source alone.
+
+Splint is [[free software]] released under the terms of the [[GNU General Public License]].
+
+Recent development activity on Splint has slowed significantly.  According to the [[Concurrent Versions System|CVS]] at [[SourceForge]], as of January 2009 the most recent change in the repository was in August 2008. The whole year 2008 had only two write accesses to the repository.&lt;ref&gt;{{cite web|accessdate=2009-01-15|url=http://sourceforge.net/project/stats/detail.php?group_id=34302&amp;ugn=splint&amp;type=cvs&amp;mode=12months|title=Splint project CVS statistics}}&lt;/ref&gt;  The maintainer has said that development is stagnant and the project needs new volunteers.&lt;ref&gt;{{cite web|url=http://www.cs.virginia.edu/pipermail/splint-discuss/2007-July/000994.html|title=splint-discuss: Moving to Google Code}}&lt;/ref&gt;
+
+On the Splint homepage, the latest release is version 3.1.2 on July 12, 2007.
+
+==Example==
+&lt;source lang=&quot;c&quot;&gt;
+#include &lt;stdio.h&gt;
+int main()
+{
+    char c;
+    while (c != 'x');
+    {
+        c = getchar();
+        if (c = 'x')
+            return 0;
+        switch (c) {
+        case '\n':
+        case '\r':
+            printf(&quot;Newline\n&quot;);
+        default:
+            printf(&quot;%c&quot;,c);
+        }
+    }
+    return 0;
+}
+&lt;/source&gt;
+
+Splint's output:
+&lt;pre&gt;&lt;nowiki&gt;
+Variable c used before definition
+Suspected infinite loop.  No value used in loop test (c) is modified by test or loop body.
+Assignment of int to char: c = getchar()
+Test expression for if is assignment expression: c = 'x'
+Test expression for if not boolean, type char: c = 'x'
+Fall through case (no preceding break)
+&lt;/nowiki&gt;&lt;/pre&gt;
+
+Fixed source:
+&lt;source lang=&quot;c&quot;&gt;
+#include &lt;stdio.h&gt;
+int main()
+{
+    char c = (char) 0;  // Added an initial assignment definition.
+
+    while (c != 'x') {
+        c = (char) getchar();  // Type-cast to char.
+        if (c == 'x') // Fixed the assignment error to make it a comparison operator.  
+            return 0;
+        switch (c) {
+        case '\n':
+        case '\r':
+            printf(&quot;Newline\n&quot;);
+            break;  // Added break statement to prevent fall-through.
+        default:
+            printf(&quot;%c&quot;,c);
+            break;  //Added break statement to default catch, out of good practice.
+        }
+    }
+    return 0;
+}
+&lt;/source&gt;
+
+==See also==
+{{Portal|Free software}}
+
+*[[Buffer overflow]]
+*[[Memory debugger]]
+*[[Software testing]]
+*[[List of tools for static code analysis]]
+
+==References==
+{{Reflist}}
+
+==External links==
+*[http://www.splint.org/ Home page]
+*[http://splint.org/pubs.html Publications about checking techniques]
+*[http://sourceforge.net/projects/splint/ SourceForge project page]
+*[http://www.cs.virginia.edu/pipermail/splint-discuss/ splint-discuss mailing list archive]
+
+{{DEFAULTSORT:Splint (Programming Tool)}}
+[[Category:Static program analysis tools]]
+[[Category:Free memory management software]]
+[[Category:Cross-platform software]]
+
+
+{{programming-software-stub}}
+
+[[de:Splint (Software)]]</rev></revisions></page></pages></query></api>

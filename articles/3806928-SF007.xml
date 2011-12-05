@@ -1,0 +1,130 @@
+<?xml version="1.0"?><api><query><pages><page pageid="3806928" ns="0" title="Finnix"><revisions><rev xml:space="preserve">{{Infobox_OS
+| name = Finnix
+| logo = [[Image:Finnix-72pt-72dpi.png|100px|Finnix logo]]
+| screenshot = [[Image:Finnix 100 boot.png|250px]]
+| caption = Finnix 100 boot screen
+| developer = Ryan Finnie
+| family = [[Linux]]
+| source_model = [[Open source]]
+| working_state = Current
+| released = {{start date and years ago|2000|03|22}}
+| latest_release_version = 103
+| latest_release_date = {{release date|2011|10|23}}
+| language = [[English language|English]]
+| kernel_type = [[Monolithic kernel|Monolithic]] ([[Linux kernel|Linux]])
+| supported_platforms = [[i386]], [[x86-64]], [[PowerPC]], [[User-mode Linux|UML]], [[Xen]]
+| updatemodel = [[Advanced Packaging Tool|APT]]
+| package_manager = [[dpkg]]
+| ui = [[Virtual console (PC)|Console]]
+| license = Various
+| website = [http://www.finnix.org www.finnix.org]
+}}
+[[File:Finnix 102 started.png|thumb|Finnix 102 default startup on an x86_64 system]]
+'''Finnix''' is a [[Debian]]-based [[Live CD]] [[operating system]], developed by Ryan Finnie and intended for system administrators for tasks such as filesystem recovery, network monitoring and OS installation.&lt;ref&gt;[http://tldp.org/HOWTO/Linux-Complete-Backup-and-Recovery-HOWTO/distributionspecificnotes.html Linux Complete Backup Recovery and HOWTO]&lt;/ref&gt;&lt;ref&gt;{{cite book
+  | last = Smith
+  | first = Roderick
+  | title = Linux Samba Server Administration
+  | edition = First
+  | publisher = [[Sybex]]
+  | year = 2000
+  | isbn = 0782127401
+  | page = 463 }}&lt;/ref&gt;  Finnix is a relatively small distribution, with an ISO download size of approximately 100&amp;nbsp;MiB, and is available for the [[x86]], [[x86-64]] and [[PowerPC]] architectures, and [[Paravirtualization|paravirtualized]] ([[User Mode Linux]] and [[Xen]]) systems.  Finnix can be run off a bootable CD, a [[USB flash drive]], a hard drive, or network boot ([[Preboot Execution Environment|PXE]]).
+
+==History==
+Finnix development first began in 1999, making it one of the oldest distributions released with the intent of being run completely from a bootable CD (the other Live CD around at the time was the [[Linuxcare]] Bootable Business Card CD, first released in 1999).&lt;ref&gt;[http://www.linux.com/articles/22044 Linux.com - A tale of two Linux bootable business cards]&lt;/ref&gt; Finnix 0.01 was based on [[Red Hat Linux]] 6.0, and was created to help with administration and recovery of other Linux workstations around Finnie's office. The first public release of Finnix was 0.03, and was released in early 2000, based on an updated Red Hat Linux 6.1.  Despite its 300&amp;nbsp;MiB ISO size and requirement of 32&amp;nbsp;MiB RAM (which, given RAM prices and lack of high-speed Internet proliferation at the time, was prohibitive for many), Finnix enjoyed moderate success, with over 10,000 downloads.&lt;ref&gt;[http://www.finnix.org/old/ Original Finnix site archive]&lt;/ref&gt;&lt;ref&gt;[http://sourceforge.net/project/showfiles.php?package_id=3868&amp;group_id=3892 SourceForge Finnix 0.03 download page]&lt;/ref&gt;  After version 0.03, development ceased, and Finnix was left unmaintained until 2005.
+
+On 23 October 2005, Finnix 86.0 was released.  Earlier unreleased versions (84, and 85.0 through 85.3) were &quot;[[Knoppix]] remasters&quot;, with support for Linux [[Logical Volume Manager (Linux)|LVM]] and [[dm-crypt]] being the main reason for creation.  However, 86.0 was a departure from Knoppix, and was derived directly from the Debian &quot;testing&quot; tree.&lt;ref&gt;[http://www.finnix.org/Project_history Finnix project history]&lt;/ref&gt;
+
+==Usage==
+Finnix is released as a small bootable CD ISO. A user can download the ISO, burn the image to CD, and boot into a text mode Linux environment. Finnix requires at least 32&amp;nbsp;MiB RAM to run properly, but can use more if present. Most hardware devices are detected and dealt with automatically, such as hard drives, network cards and USB devices.&lt;ref name=Surie2007&gt;{{cite journal
+ | url = http://doi.ieeecomputersociety.org/10.1109/MPRV.2007.84
+ | doi = 10.1109/MPRV.2007.84
+ | author = Surie, A.; Perrig, A.; Satyanarayanan, M.; Farber, D.J.
+ | journal = IEEE Pervasive Computing
+ | pages = 24â30 (27)
+ | year = 2007
+ | title = Rapid Trust Establishment for Pervasive Personal Computing
+ | volume = 6
+ | issue = 4
+ | quote = Finnix provides both excellent support for devices and automatic hardware detection. It's suitable for our purposes because it boots quickly and has a small footprint.
+ | accessdate = 2008-06-28
+}}&lt;/ref&gt; A user can modify files nearly anywhere on the running CD via a [[union mount]] filesystem ([[UnionFS]] or [[AUFS]], depending on the Finnix release), stacking a read-write filesystem (in this case, a dynamic ramdisk) on top of a read-only filesystem (the CD media). Any changes made during the Finnix session are transparently written to RAM and discarded upon shutdown. In addition, Finnix uses [[SquashFS]] to keep distribution size low.&lt;ref&gt;[http://www.finnix.org/Frequently_asked_questions Finnix frequently asked questions]&lt;/ref&gt;
+
+Finnix can be run completely within RAM, provided the system has at least 192&amp;nbsp;MiB RAM available. If a &quot;toram&quot; option is passed to Finnix, most of the contents of the CD are copied to a [[RAM disk]], and the CD is ejected, freeing the CD-ROM drive for other purposes.&lt;ref&gt;[http://www.finnix.org/Cheat_codes Finnix &quot;cheat codes&quot;]&lt;/ref&gt;  Finnix can also be placed on a bootable USB thumb drive, or installed permanently on a hard drive (though still functioning as if it were a LiveCD).
+
+[[File:Finnix 102 Xen demo.png|thumb|Finnix 102 running as a [[Paravirtualization|paravirtualized]] [[Xen]] guest]]
+Finnix is available for several processor architectures. The primary architecture is [[x86]], with an additional [[x86-64]] kernel included. [[PowerPC]] support is available with most releases as a separate CD,&lt;ref&gt; {{cite web | url = http://blog.finnix.org/2005/11/21/finnix-861-for-x86powerpcumlxen-released/ | title = Finnix 86.1 for x86/PowerPC/UML/Xen Released | accessdate = 2010-10-28 | last = Finnie | first = Ryan | date = 2005-11-21 | work = Finnix Blog}}&lt;/ref&gt; released concurrently with its x86 counterpart.  In addition, Finnix is aware of both the [[User Mode Linux]] and [[Xen]] virtualization systems.  UML and Xen [[Virtual private server]] providers such as [[Linode]] can provide Finnix as a recovery/maintenance distribution to their customers.&lt;ref&gt;[http://www.linode.com/forums/viewtopic.php?t=1971 Finnix available for use with Linode]&lt;/ref&gt;
+
+==Versions==
+New versions of Finnix are released every 3 months on average, with updated software from the Debian &quot;testing&quot; tree, along with new Finnix-specific functionality.  Versions 86.0 through 93.0 used a [[Software versioning|major/minor]] versioning scheme, with major releases usually including major functionality changes, and minor releases including minor fixes and Debian updates to bring Finnix's packages up to date with Debian's &quot;testing&quot; tree. Beginning with version 100, releases are numbered as a simple incrementing integer.&lt;ref name=&quot;finnix-100&quot;&gt; {{cite web | url = http://blog.finnix.org/2010/10/28/finnix-100-released/ | title = Finnix 100 released | accessdate = 2010-10-28 | last = Finnie | first = Ryan | date = 2010-10-28 | work = Finnix Blog}}&lt;/ref&gt;  Development builds are named after cities and towns in [[Wisconsin]].
+
+{| class=&quot;wikitable&quot;
+!Version !! Release date !! Kernel !! Packages !! Code name
+|-----------------------------------
+| [http://www.finnix.org/Finnix_0.03_release_notes 0.03] || 22 March 2000 || 2.2.12 || 242 || ''none''
+|----
+| [http://www.finnix.org/Finnix_86.0_release_notes 86.0] || 23 October 2005 || 2.6.13 || 336 || ''none''
+|----
+| [http://www.finnix.org/Finnix_86.1_release_notes 86.1] || 21 November 2005 || 2.6.14 || 346/336 || ''none''
+|----
+| [http://www.finnix.org/Finnix_86.2_release_notes 86.2] || 8 January 2006 || 2.6.15 || 343/336 || ''none''
+|----
+| [http://www.finnix.org/Finnix_87.0_release_notes 87.0] || 31 March 2006 || 2.6.16 || 356/347 || ''none''
+|----
+| [http://www.finnix.org/Finnix_88.0_release_notes 88.0] || 2 August 2006 || 2.6.17 || 359/349 || [[Pulaski, Wisconsin|Pulaski]]
+|----
+| [http://www.finnix.org/Finnix_89.0_release_notes 89.0] || 22 January 2007 || 2.6.18 || 366/359 || [[Oshkosh, Wisconsin|Oshkosh]]
+|----
+| [http://www.finnix.org/Finnix_89.1_release_notes 89.1] || 13 April 2007 || 2.6.18 || 365/359 || [[Sheboygan, Wisconsin|Sheboygan]]
+|----
+| [http://www.finnix.org/Finnix_89.2_release_notes 89.2] || 27 July 2007 || 2.6.18 || 365/359 || [[Crivitz, Wisconsin|Crivitz]]
+|----
+| [http://www.finnix.org/Finnix_90.0_release_notes 90.0] || 23 October 2007 || 2.6.22 || 367/362 || [[Kaukauna, Wisconsin|Kaukauna]]
+|----
+| [http://www.finnix.org/Finnix_91.0_release_notes 91.0] || 29 January 2008 || 2.6.24 || 370/366 || [[Seymour, Wisconsin|Seymour]]
+|----
+| [http://www.finnix.org/Finnix_91.1_release_notes 91.1] || 4 March 2008 || 2.6.24 || 364/354 || [[Crivitz, Wisconsin|Crivitz]]
+|----
+| [http://www.finnix.org/Finnix_92.0_release_notes 92.0] || 28 June 2008 || 2.6.25 || 360/352 || [[Shawano, Wisconsin|Shawano]]
+|----
+| [http://www.finnix.org/Finnix_92.1_release_notes 92.1] || 3 December 2008 || 2.6.26 || 366/356 || [[Crandon, Wisconsin|Crandon]]
+|----
+| [http://www.finnix.org/Finnix_93.0_release_notes 93.0] || 11 August 2009 || 2.6.30 || 367/356 || [[Neenah, Wisconsin|Neenah]]
+|----
+| [http://www.finnix.org/Finnix_100_release_notes 100] || 28 October 2010 || 2.6.32 || 371 || [[Oconto, Wisconsin|Oconto]]
+|----
+| [http://www.finnix.org/Finnix_101_release_notes 101] || 25 December 2010 || 2.6.36 || 365/359 || [[Wausau, Wisconsin|Wausau]]
+|----
+| [http://www.finnix.org/Finnix_102_release_notes 102] || 23 July 2011 || 3.0 || 371/365 || [[Algoma, Wisconsin|Algoma]]
+|----
+| [http://www.finnix.org/Finnix_103_release_notes 103] || 23 October 2011 || 3.0.6 || 378/372 || [[Peshtigo, Wisconsin|Peshtigo]]
+|}
+
+'''Notes:'''
+* &quot;Code names&quot; in Finnix refer to the development cycle leading up to the release, and not the release itself.  Releases are signified by version number.
+* Versions with two package counts in the table above represent x86 and PowerPC package counts, respectively.
+
+== References ==
+&lt;references/&gt;
+
+==External links==
+*[http://www.finnix.org/ Finnix homepage]
+*{{DistroWatch|finnix|NAME=Finnix}}
+
+{{linux-distro}}
+
+[[Category:2000 software]]
+[[Category:Debian-based distributions]]
+[[Category:X86-64 Linux distributions]]
+[[Category:PowerPC operating systems]]
+[[Category:Operating system distributions bootable from read-only media]]
+[[Category:Mini Linux distributions]]
+[[Category:LiveDistro]]
+[[Category:Live USB]]
+
+[[es:Finnix]]
+[[fa:ÙÛÙÛÚ©Ø³ (Ø³ÛØ³ØªÙâØ¹Ø§ÙÙ)]]
+[[ko:íëì¤]]
+[[ro:Finnix]]
+[[ru:Finnix]]
+[[simple:Finnix]]</rev></revisions></page></pages></query></api>

@@ -1,0 +1,99 @@
+<?xml version="1.0"?><api><query><pages><page pageid="5466488" ns="0" title="KBFX (KDE)"><revisions><rev xml:space="preserve">{{Infobox software
+| name                   = KBFX
+| screenshot             = [[Image:Kbfx KDE original.png|200px]]
+| caption                = KBFX 0.4.9 running on [[KDE]] 3.5
+| developer              = Siraj Razick, PhobosK, Mensur Zahirovic, Nathanael Gogniat, Johnny Henry SÃ¡enz AcuÃ±a
+| latest_release_version = 0.4.9.3.1
+| latest_release_date    = 16 May 2007
+| programming_language   = [[C++]] ([[Qt (framework)|Qt]])
+| platform               = [[Cross-platform]]
+| language               = Multilingual
+| operating_system       = [[Linux]], [[BSD]], other [[Unix-like]]
+| genre                  = [[Kicker (KDE)|Kicker applet]]
+| license                = [[GNU General Public License|GPL v2]]
+| website                = http://www.kbfx.net
+}}
+'''KBFX''' is an application written in [[C++]]/[[Qt (framework)|Qt]] for [[KDE]] 3.2+ and offers an alternative to the default K Logo menu.
+
+It improves users' experience by replacing the Win95-like K-Logo button and menu with a larger and thus more visible start button and menu. It does however keep the traditional KDE menu as an option. It is fully [[Skin (computing)|skinable]].
+
+== Features ==
+Main KBFX features:
+#Using [[Plug-in (computing)|Plugin]]s.
+#Selecting an Application Group.
+#Scroll up and down the application list.
+#Type and locate an [[Application software|Application]].
+#Logout of the Desktop.
+#Lock the Desktop.
+#Launch the KBFX Configurator (the KBFX settings manager).
+
+Extra KBFX features:
+#Double buffered Widgets to minimize flicker.
+#Animated scroll bars.
+#New Tooltip.
+#New Control Manager.
+#Drag &amp; Drop Applications' Items support.
+
+== History ==
+KBFX was started on June 5, 2005 as a hobbyist project by [[Siraj Razick]], born out of a spontaneous idea.
+
+The reason was that Siraj didn't like the old K-Menu, which was quite a clone of the old Win95 Start menu. So he started coding. The first step provided merely the possibility to call the K-Menu via a button, that could have a different shape and size than the original K-Menu button, which has always been an icon of a square size. To change the default KBFX button, one still had to copy an image file to a certain location. After the first post in mid-June 5, KBFX has spread rapidly and it was nice to see that until end of June, there were already a dozen posts on kde-look with buttons and builds.
+
+'''Mensur Zahirovic''' (called Nookie) joined Siraj on 5 August, after Siraj met him on yahoo. Nookie is responsible for the web-development and the Q&amp;A. He also arranged the site [http://www.kbfx.net www.kbfx.net], that replaces the previous site [http://www.linuxlots.com/~siraj/plugin/kde www.linuxlots.com/~siraj/plugin/kde].
+
+After that, things began to speed up. Now KBFX is no longer just another button design for the K-Menu, but provides an alternative to it, that is in fact more sophisticated than the XP-Start menu.
+
+== Development ==
+KBFX version 0.4.9.3 is a complete rewrite of the old KBFX code eliminating all the negative points of the previous versions.
+
+KBFX has been tested to work with all [[GNU Compiler Collection|GCC]] 3.x and [[GNU Compiler Collection|GCC]] 4.x compilers. It has been tested on systems running the distributions of [[Gentoo Linux|Gentoo]], [[Debian]], [[Ubuntu (operating system)|Ubuntu]], [[SUSE Linux|Suse]], [[Slackware]], Mango, [[Mandriva Linux|Mandriva (formerly Mandrake)]], and [[Fedora (Linux distribution)|Fedora core]]. Unfortunately, compiling on [[FreeBSD]] systems is yet to be tested.
+
+== Concepts ==
+The KBFX Spinx Menu does not try to copy the WinXP Start menu. It is based on a different approach and concept. Following, the concepts of the traditional hierarchical structure and the new, flat indexed menu are described and compared, although the new menu structure is quite intuitive.
+
+=== Hierarchical (Traditional) menu structure ===
+The [[KDE]] K-Menu is a good example of a flat [[Hierarchy|hierarchical]] menu. It organizes [[Computer shortcut|application shortcuts]] in a tree link structure, where it can expand and open a [[Menu (computing)|submenu]], with entries displayed based on some logical order. This order may be task oriented, type oriented or just ordered alphabetically. To find and launch an application, the user needs to navigate through the submenus, until he reaches the leaf (leaf node). This approach is a direct adoption of the [[Microsoft Windows]] Start Menu. They introduced it with Windows 95/98/ME/NT/2000. This was certainly a huge usability advantage compared to the Windows 3.1 System with the program manager, but a lot has changed since these days. The [[Windows XP]] Start Menu is still based on this concept, although it is enhanced by the functionalities to pin applications to the left column and the automatically pinned most used applications. But still, a user must move the mouse over the half screen, if his menu has many submenus with other submenus, and the application is not one of his most used or pinned applications.
+
+=== Flat indexed menu structure ===
+The KBFX Sphinx Menu uses a different approach: the flat indexed menu. With this type of menu it's very easy to navigate. On the left hand side, you are given the application categories. They can be task oriented or type oriented. On the right (middle) side of the menu, there are all the available applications listed that belong to the activated category. The advantage is evident - the menu reduces the mouse paths, so you can locate your applications very fast. The user sees all the categories at a glance and he can pick it without having to travel along a long list until he finds the end leaf. The speed of use is further enhanced by moving the most used and recently used applications on the top index, so that the most used applications are just one click away.
+
+== Tips and Tricks ==
+=== Showing the KBFX menu with the keyboard's WinKey ===
+KBFX has been criticized for not providing an option to launch the menu using the keyboard start button (WinKey), but it can be done the following way:
+
+* Open the KDE Control Center ([[KControl|kcontrol]])
+* Select the &quot;Input Actions&quot; option in the &quot;Regional &amp; Accessibility&quot; tab.
+* Click &quot;New Action&quot;
+* In the panel to the right select &quot;Keyboard Shortcut -&gt; DCOP Call (Simple)&quot;
+* In the &quot;Keyboard Shortcut&quot; tab assign the WinKey as the shortcut.
+* In the DCOP call settings type the following:
+   Remote Application &quot;kicker&quot;
+   Remote Object &quot;KBFXInterface&quot;
+   Called Function &quot;showMenu()&quot;
+* Click on the Apply button.
+
+Now pressing the keyboard's WinKey should launch the KBFX menu.
+
+== See also ==
+* [[List of KDE applications]]
+*[[Siraj Razick]]
+
+{{Portal|Free software}}
+
+==External links==
+*[http://www.kbfx.net KBFX Homepage]
+*[http://www.kde-apps.org/content/show.php?content=24898 KBFX on KDE-Apps.org]
+*[http://sourceforge.net/projects/kbfx KBFX on SourceForge.net]
+*[http://www.kbfx.net/help/kbfx/index.html KBFX Help Documentation]
+*[http://www.kbfx.net/forum KBFX Forum]
+*[http://bugs.kbfx.net Report KBFX Bugs]
+*[http://www.kbfx.net/staticpages/index.php?page=20060224124718988 KBFX Developers]
+*[http://art4linux.org/catalog/33 KBFX Themes on art4linux.org]
+*[http://www.kde-look.org/index.php?xcontentmode=62 KBFX Themes on KDE-Look.org]
+
+{{DEFAULTSORT:Kbfx (Kde)}}
+{{KDE}}
+[[Category:KDE software]]
+[[Category:Application launchers]]
+
+[[es:KBFX (KDE)]]</rev></revisions></page></pages></query></api>

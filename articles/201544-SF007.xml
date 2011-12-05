@@ -1,0 +1,116 @@
+<?xml version="1.0"?><api><query><pages><page pageid="201544" ns="0" title="Xvid"><revisions><rev xml:space="preserve">{{Infobox software
+| name                   = Xvid
+| logo                   = [[Image:Xvid logo.svg|Xvid logo|150px]]
+| latest_release_version = 1.3.2
+| latest_release_date    = {{Start date and age|2011|05|31}}
+| latest preview version = 
+| latest preview date    = 
+| operating_system       = [[Cross-platform]]
+| genre                  = [[Video codec]]
+| license                = [[GNU General Public License]]
+| website                = [http://www.xvid.org/ www.xvid.org]
+}}
+
+'''Xvid''' (formerly &quot;'''XviD'''&quot;) is a [[video codec]] [[library (computing)|library]] following the [[MPEG-4]] standard, specifically [[MPEG-4 Part 2|MPEG-4 Part 2 Advanced Simple Profile (ASP)]]. It uses ASP features such as [[b-frame]]s, global and quarter pixel [[motion compensation]], [[lumi masking]], [[trellis quantization]], and [[H.263]], MPEG and custom [[quantization (image processing)|quantization matrices]].
+
+Xvid is a primary competitor of the [[DivX]] Pro Codec. [[Comparison of open source and closed source|In contrast]] with the DivX codec, which is [[proprietary software]] developed by [[DivX, Inc.]], Xvid is [[free software]] distributed under the terms of the [[GNU General Public License]].&lt;ref&gt;{{cite web
+|title=Xvid.org FAQ
+|url=http://www.xvid.org/FAQ.14.0.html
+|quote=Xvid is Free Software and published under the GNU GPL license.
+}}&lt;/ref&gt; This also means that unlike the DivX codec, which is only available for a limited number of platforms,&lt;ref&gt;{{cite web
+|title=DivX download page
+|url=http://www.divx.com/divx/
+}}&lt;/ref&gt; Xvid can be used on all platforms and operating systems for which the source code can be compiled.
+
+== History ==
+
+In January 2001, [[DivXNetworks]] founded ''OpenDivX'' as part of [[Project Mayo]] which was intended to be a home for open source multimedia projects. OpenDivX was an open-source MPEG-4 video codec based on a stripped down version of the MoMuSys reference MPEG-4 encoder. The source code, however, was placed under a restrictive license and only members of the DivX Advanced Research Centre (DARC) had write access to the project [[Concurrent Versions System|CVS]]. In early 2001, DARC member Sparky wrote an improved version of the encoding core called encore2. This was updated several times before, in April, it was removed from CVS without warning. The explanation given by Sparky was ''&quot;We (our bosses) decided that we are not ready to have it in public yet.&quot;''&lt;ref&gt;[http://linuxfr.org/2004/06/11/16509.html DLFP: Interview de l'Ã©quipe XviD et sortie de la version 1.0.1&lt;!-- Bot generated title --&gt;]&lt;/ref&gt;
+
+In July 2001, developers started complaining about a lack of activity in the project; the last CVS commit was several months old, bugfixes were being ignored, and promised documentation had not been written. Soon after, DARC released a beta version of their closed-source commercial DivX 4 codec, which was based on encore2, saying that ''&quot;what the community really wants is a [[Winamp]], not a [[Linux]].&quot;''&lt;ref&gt;[http://lists.xiph.org/pipermail/vorbis/2001-August/004220.html [vorbis&amp;#93; Vorbis ACM codec&lt;!-- Bot generated title --&gt;]&lt;/ref&gt; It was after this that a [[fork (software)|fork]] of OpenDivX was created, using the latest version of encore2 that was downloaded before it was removed. Since then, all the OpenDivX code has been replaced and Xvid has been published under the [[GNU General Public License]].
+
+== Patent issues ==
+
+As an implementation of [[MPEG-4 Part 2]], Xvid uses many patented technologies.&lt;ref&gt;[http://www.mpegla.com/m4v/M4VCrossRef.pdf MPEG-4 Visual Patent Portfolio License Cross-Reference Chart (PDF)]&lt;/ref&gt;  For this reason, Xvid 0.9.x versions were not licensed in countries where these [[software patent]]s are recognized. With the 1.0.x releases, a GNU GPL v2 license is used with no explicit geographical restriction. However, the legal usage of Xvid may still be restricted by local laws.&lt;ref&gt;See mailing list discussions [http://list.xvid.org/pipermail/xvid-devel/2002-September/000827.html], [http://list.xvid.org/pipermail/xvid-devel/2002-November/001316.html], [http://list.xvid.org/pipermail/xvid-devel/2002-November/001318.html].&lt;/ref&gt;
+
+== Sigma Designs controversy ==
+
+In July 2002, [[Sigma Designs]] released an MPEG-4 video codec called the REALmagic MPEG-4 Video Codec. Before long, people testing this new codec found that it contained considerable portions of Xvid code. Sigma Designs was contacted and confirmed that a programmer had based REALmagic on Xvid, but assured that all GPL code would be replaced to avoid copyright infringement. When Sigma Designs released the supposedly rewritten REALmagic codec, the Xvid developers immediately disassembled it and concluded that it still contained Xvid code, only rearranged in an attempt to [[Obfuscated code|disguise]] its presence. The Xvid developers decided to stop work and go public to force Sigma Designs to respect the terms of the GPL. After articles were published in [[Slashdot]]&lt;ref&gt;[http://slashdot.org/articles/02/08/22/193237.shtml?tid=117 Slashdot | Sigma Designs Accused of Copyright Infringement&lt;!-- Bot generated title --&gt;]&lt;/ref&gt; and [[The Inquirer]],&lt;ref&gt;[http://www.theinquirer.net/inquirer/news/663/1029663/xvid-asks-sigma-to-stop-copyright-breach XVID asks Sigma to stop copyright breach - The INQUIRER&lt;!-- Bot generated title --&gt;]&lt;/ref&gt; in August 2002 Sigma Designs agreed to publish their source code.&lt;ref&gt;[http://web.archive.org/web/20060314130242/http://www.sigmadesigns.com/news/press_releases/pr_pdf/020822.pdf SIGMA MAKES SOURCE CODE AVAILABLE FOR ITS MPEG-4 VIDEO CODEC] archived (PDF)&lt;/ref&gt;
+
+== Playing Xvid encoded files ==
+[[Image:Xvid config in Wine.png|thumb|250px|right|Encoder and decoder configuration dialog]]
+
+Primarily due to concerns over patents, the official Xvid web site does not provide binary versions of the Xvid codec. However, it does link to supporting web sites that provide [[Video for Windows]] codecs (and [[DirectShow]] decoding filters) for Microsoft Windows.&lt;ref name=&quot;xvidorgdownloads&quot;&gt;[http://www.xvid.org/Downloads.15.0.html Xvid.org: Downloads]. Accessed on May 25, 2009.&lt;/ref&gt;
+
+Xvid is not a [[video format]] â it is a ''program'' (codec) for compressing and decompressing to the MPEG-4 ASP format. Since Xvid uses [[MPEG-4]] Advanced Simple Profile (ASP) compression, any video that is encoded with it is termed &quot;MPEG-4 ASP video&quot; â not &quot;Xvid video&quot; â and can therefore be decoded with all MPEG-4 ASP compliant decoders. This includes a large number of media players and decoders, in particular all the ones based on the free/open source [[libavcodec]] library from [[FFmpeg]] (for example, [[MPlayer]], [[VLC media player|VLC]], [[ffdshow]] or [[Perian]]).
+
+Xvid encoded files can be written to a [[CD]] or [[DVD]] and played in some (not all) DivX compatible [[DVD players]] and [[media player (application software)|media players]]. However, Xvid can optionally encode video with advanced MPEG-4 features that most DivX Certified set-top players do not support. Files encoded with [[global motion compensation]], [[Qpel]], MPEG [[Quantization (image processing)|quantization]], multiple [[B-frame]]s or files that exceed the [[Video buffering verifier|VBV]] limitations may not play back properly on DivX Certified hardware devices.
+
+For example, Xvid specifies three warp points for its implementation of global motion compensation as opposed to the single warp point implementation of DivX. Enabling some of the more advanced encoding features can compromise player compatibility. Some issues exist with the custom quantization matrices used in tools such as [[AutoGK]] that automate encoding with Xvid. This can (depending on the decoder chipset of the set-top player in question) produce videos that have unstable playback and artifacts. However, most recent model DivX compatible [[DVD players]] have improved support for custom quantization matrices.
+
+{{See also|Comparison_of_video_player_software#Video_format_capability}}
+
+== Encoding applications ==
+
+{|{| class=&quot;wikitable&quot; style=&quot;text-align: center; width: 100%; font-size: normal;&quot;
+|-
+! Operating systems
+! Software
+! Comment
+|-
+| [[Microsoft Windows|Windows]]
+| [[VirtualDub]], [[DVDx]], [[xvid encraw]], [[AutoGK]] etc.
+| And all other applications that support encoding through the [[Video for Windows|VfW]] framework.
+|-
+| [[Mac OS X]], [[Linux]], [[Berkeley Software Distribution|BSD]], and [[Windows]]
+| [[MEncoder]], [[Transcode (software)|Transcode]], [[Avidemux]], [[VLC media player|VLC]],&lt;ref&gt;[http://mailman.videolan.org/pipermail/vlc/2004-November/009603.html vlc and xvid encoding]&lt;/ref&gt; etc.
+| These platform and framework independent applications access the Xvid library directly.
+|}
+
+== See also ==
+{{Portal|Free software}}
+
+* [[Xvid Qf]]
+* [[List of codecs]]
+* [[Comparison of video codecs]]
+
+==References==
+
+{{Reflist}}
+
+==External links==
+* [http://www.xvid.org/ Xvid.org web site]
+* [http://www.divx-digest.com/articles/xvid_setup.html Xvid Setup/Reference Guide] @ Digital Digest
+* [http://www.xvid.org/Downloads.15.0.html Xvid Binary Download Page] - Links to Windows/Linux binaries on the official site
+* [http://www.xvid.org/Downloads.43.0.html Xvid Source Code Download Page] - includes daily snapshots on the official site
+* [http://n.ethz.ch/%7Enaegelic/index.php Xvid QuickTime Component] - unofficial Xvid component for MacOS X
+
+{{Compression Software Implementations}}
+{{Compression Formats}}
+
+[[Category:Video codecs]]
+[[Category:Free multimedia codecs, containers, and splitters]]
+[[Category:Cross-platform software]]
+
+[[ca:XviD]]
+[[cs:Xvid]]
+[[da:Xvid]]
+[[de:Xvid]]
+[[et:XviD]]
+[[es:Xvid]]
+[[fr:Xvid]]
+[[gl:Xvid]]
+[[ko:Xvid]]
+[[hr:XviD]]
+[[it:Xvid]]
+[[hu:XviD]]
+[[nl:XviD]]
+[[ja:Xvid]]
+[[no:Xvid]]
+[[pl:Xvid]]
+[[pt:XviD]]
+[[ru:Xvid]]
+[[fi:XviD]]
+[[sv:MPEG-4#XviD]]
+[[tr:XviD]]
+[[vi:XviD]]
+[[zh:Xvid]]</rev></revisions></page></pages></query></api>

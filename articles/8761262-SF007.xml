@@ -1,0 +1,188 @@
+<?xml version="1.0"?><api><query><pages><page pageid="8761262" ns="0" title="Criticism of Linux"><revisions><rev xml:space="preserve">{{Infobox 
+|title   = Criticism of Linux
+|image   = [[File:Linux-x86-under-qemu.png|250px]]
+|caption = Linux kernel 2.6.25.17 booting
+}}
+
+The '''criticism of Linux''' focuses on issues concerning use of operating systems which use the [[Linux]] kernel.
+
+== Desktop use ==
+
+{{Main|Criticism of Desktop Linux}}
+The usefulness of Linux as a desktop operating system has been questioned and criticized throughout its existence, mostly with the increasing adoption of the operating system for desktop use in recent years.
+
+It is criticized for the fairly small number of native [[video game]]s and native versions of widely used commercial applications (such as [[Adobe Photoshop]]&lt;ref&gt;http://www.junauza.com/2010/02/how-to-install-adobe-photoshop-on.html&lt;/ref&gt; and [[Microsoft Word]]).&lt;ref name=&quot;LinuxFontsNarod&quot;&gt;{{cite web| url=http://linuxfonts.narod.ru/why.linux.is.not.ready.for.the.desktop.current.html |title= Why Linux is not yet ready for desktop |date=2011-05-11|first=Artem S.|last= Tashkinov |accessdate=2011-07-29}}&lt;/ref&gt;&lt;ref name=&quot;GanterSoundsDesktopWarning&quot;&gt;{{cite web|url=http://www.zdnet.co.uk/news/application-development/2005/09/09/gartner-sounds-desktop-linux-warning-39217113/|title=Gartner sounds desktop Linux warning
+|first=Andy|last=McCue|publisher=zdnet.co.uk|date=2005-09-09|accessdate=2011-07-29}}&lt;/ref&gt;
+
+Desktop Linux has also been criticized by developers for lack of standardization regarding [[Graphical User Interface|GUI]] [[Application Programming Interface|API]].&lt;ref name=&quot;LinuxFontsNarod&quot; /&gt;
+
+== Directory structure ==
+
+The traditional [[Filesystem Hierarchy Standard|directory structure]], which is a heritage from Linux's Unix roots in the 1970s, has been criticized for many reasons. Adam Scheinberg, in his article &quot;If I Had My Own Distro&quot;, identified problems in the non-intuitive named directories for the users, and indicated that he would rename them all to improve user experience:
+
+{{quote|The file system is a nightmare for a normal user. This has been covered in exhaustive detail by hundreds of articles &amp;hellip;&lt;ref name=&quot;ifihadmyowndistro&quot;/&gt;}}
+
+Hisham Muhammad, the creator of [[GoboLinux]], started that distribution because of the limitations of the directory structure for simple and flexible user application installations:
+
+{{quote|Unfortunately, not all programs have the flexibility to be installed anywhere. Occasionally, hardcoded paths creep in, even in programs that belong in userland (which should, at least theoretically, allow themselves to be installed inside a user's home directory).&lt;ref name=&quot;gobolinux&quot;/&gt;}}
+
+Pim van Riezen also criticized the Unix approach of predefined directories in application installations:
+
+{{quote|Why, in the name of all the creatures in Richard Stallman's beard, are we still compiling applications with all kinds of absolute path references in this enlightened 21st century? Do we actively hate our users, do we want them to suffer figuring out whether we want our mandatory configuration files installed in &lt;tt&gt;/etc&lt;/tt&gt;, &lt;tt&gt;/usr/local/etc&lt;/tt&gt;, &lt;tt&gt;/usr/local/application/etc&lt;/tt&gt; or whatever other evil place our nerdy little brains can come up with? We should find better things to do with our lives.&lt;ref name=&quot;absolutpaths&quot;/&gt;}}
+
+== Hardware support ==
+
+Hardware developers have often been reluctant to provide Linux support for their products. This has meant that a Linux user had to carefully hand pick the hardware that made up the system to ensure functionality and compatibility. These problems have largely been addressed:&lt;ref name=&quot;Wallen2008pg2&quot;&gt;{{cite web|url = http://resources.zdnet.co.uk/articles/features/0,1000002000,39483863-2,00.htm|title = Ten key differences between Linux and Windows, page two|accessdate = 2009-02-20|last = Wallen|first = Jack|authorlink = |year = 2008|month = September}}&lt;/ref&gt;
+
+{{quote|Years ago, if you wanted to install Linux on a machine, you had to make sure you hand-picked each piece of hardware or your installation would not work 100 percent &amp;hellip; This is not so much the case now. You can grab a PC (or laptop) and most likely get one or more Linux distributions to install and work nearly 100 percent. But there are still some exceptions; for instance, hibernate/suspend remains a problem with many laptops, although it has come a long way.&lt;ref name=&quot;Wallen2008pg2&quot;/&gt;}}
+
+At one time, Linux systems required removable media, such as [[floppy disc]]s and [[CD-ROM]]s, to be manually mounted before they could be accessed. Mounting media is now automatic in nearly all distributions, with the development of the [[HAL (software)|HAL daemon]].&lt;ref name=&quot;Wallen2008pg3&quot;&gt;{{cite web|url = http://resources.zdnet.co.uk/articles/features/0,1000002000,39483863-3,00.htm|title = Ten key differences between Linux and Windows, page three|accessdate = 2009-02-20|last = Wallen|first = Jack|authorlink = |year = 2008|month = September}}&lt;/ref&gt;
+
+Some companies, such as [[EmperorLinux]], have addressed the problems of laptop hardware compatibility by mating modified Linux distributions with specially selected hardware to ensure compatibility from delivery.&lt;ref name=&quot;ELHome&quot;&gt;{{cite web|url = http://www.EmperorLinux.com/|title = EmperorLinux|accessdate = 2009-05-27|last = EmperorLinux|authorlink = |year = 2009}}&lt;/ref&gt;
+
+== Distributions ==
+
+Another common complaint leveled against Linux is the abundance of distributions available. As of January, 2010, [[DistroWatch]] lists 306 major distributions.&lt;ref name=&quot;DistroWatch11jan10&quot;/&gt; While Linux advocates have defended the number as an example of freedom of choice, other critics cite the large number as cause for confusion and lack of standardization in Linux operating systems. Alexander Wolfe wrote in [[InformationWeek]]:
+
+{{quote|Remember the 1980s worries about how the &quot;forking&quot; of Unix could hurt that operating system's chances for adoption? That was nothing compared to the mess we've got today with Linux, where upwards of 300 distributions vie for the attention of computer users seeking an alternative to Windows.&lt;ref name=&quot;InformationWeek.com&quot;/&gt;}}
+
+Caitlyn Martin from [http://linuxdevcenter.com/ LinuxDevCenter.com] has been critical of the number of Linux distributions:
+
+{{quote|We don't need to keep reinventing Linux, creating distributions that put critical bits in interesting and inventive if unusual places. An application written for Linux should be relatively simple to install on any Linux distribution. It ain't so. Do we really need hundreds of general purpose distributions, all with different tools, different filesystem layouts, variations on three major software package management schemes and a host of oddball ones, and so on? Do we need yet more to crop up?&lt;ref name=&quot;toomany&quot;/&gt;}}
+
+== Kernel performance ==
+
+At LinuxCon 2009, Linux creator [[Linus Torvalds]] said that the Linux kernel has become &quot;bloated and huge&quot;:
+
+{{quote|We're getting bloated and huge. Yes, it's a problem &amp;hellip; Uh, I'd love to say we have a plan &amp;hellip; I mean, sometimes it's a bit sad that we are definitely not the streamlined, small, hyper-efficient kernel that I envisioned 15 years ago &amp;hellip; The kernel is huge and bloated, and our &lt;tt&gt;icache&lt;/tt&gt; footprint is scary. I mean, there is no question about that. And whenever we add a new feature, it only gets worse.&lt;ref name=&quot;bloated&quot;/&gt;&lt;ref name=&quot;bloated2&quot;/&gt;&lt;ref name=&quot;bloated3&quot;/&gt;}}
+
+== Criticism by Microsoft ==
+
+In 2004, [[Microsoft]] initiated its [[Studies related to Microsoft|Get the Facts]] campaign, which specifically criticized Linux server usage.&lt;ref&gt;{{cite web | url = http://www.microsoft.com/windowsserver/facts/default.mspx | work= Microsoft website | title = Get the Facts Home | accessdate = 2007-04-14}}&lt;/ref&gt; In particular, it claimed that the vulnerabilities of Windows are fewer in number than those of Linux distributions,&lt;ref&gt;{{cite web | url = http://www.microsoft.com/windowsserver/facts/topics/security.mspx | title = Get the Facts on Linux and Windows: Security | work= Microsoft website | accessdate = 2007-04-14 }}&lt;/ref&gt; that Windows is more reliable and secure than Linux,&lt;ref&gt;{{cite web | url = http://www.microsoft.com/windowsserver/facts/topics/reliability.mspx | title = Get the Facts on Linux and Windows: Reliability | work= Microsoft website | accessdate = 2007-04-14 }}&lt;/ref&gt;&lt;ref&gt;{{cite news|title=Windows v Linux security: the real facts|url=http://www.theregister.co.uk/2004/10/22/linux_v_windows_security/|publisher=The Register|date=22 October 2004}}&lt;/ref&gt; that the [[total cost of ownership]] of Linux is higher (due to complexity, acquisition costs, and support costs),&lt;ref&gt;{{cite web | url = http://www.microsoft.com/windowsserver/facts/topics/tco.mspx | title = Get the Facts on Linux and Windows: Total Cost of Ownership | work= Microsoft website | accessdate = 2007-04-14 }}&lt;/ref&gt; that use of Linux places a burden of liability on businesses, and that &quot;Linux vendors provide little, if any indemnification coverage.&quot;&lt;ref&gt;{{cite web | url = http://www.microsoft.com/windowsserver/facts/topics/ipi.mspx | work= Microsoft website | title = Get the Facts on Linux and Windows: Intellectual Property Indemnification | accessdate = 2007-04-14 }}&lt;/ref&gt; In addition, the corporation published various studies in an attempt to prove this &amp;ndash; the factuality of which has been heavily disputed&lt;ref&gt;{{ cite news | url = http://os.newsforge.com/article.pl?sid=05/06/23/2027229&amp;from=rss | author = Joe Barr | date = 24 June 2005 | title = The facts behind the &quot;Get the Facts&quot; ad campaign | work = Newsforge | accessdate = 2007-04-14 }}&lt;/ref&gt;&lt;ref&gt;{{cite news | url = http://www.theregister.co.uk/security/security_report_windows_vs_linux/ | author = Nicholas Petreley | date = 22 October 2004 | title = Security Report: Windows vs Linux | accessdate = 2007-05-12}}&lt;/ref&gt; by different authors who claim that Microsoft's comparisons are flawed. Many Linux distributors now offer indemnification to customers.&lt;ref&gt;[http://www.novell.com/licensing/ntap/#indemnification Novell Indemnification Program]&lt;/ref&gt;&lt;ref&gt;[http://www.redhat.com/promo/believe/ What is Red Hat's Open Source Assurance program?]&lt;/ref&gt;&lt;ref&gt;[http://www.theregister.co.uk/2010/06/07/canonical_ubuntu_services/ Canonical rejigs Ubuntu support services, Tiered support gets tiered pricing By Timothy Prickett Morgan, The Register]&lt;/ref&gt;
+
+Internal Microsoft reports from the [[Microsoft Halloween documents leak|Halloween documents leak]] have presented conflicting views. Particularly documents from 1998 and 1999 ceded that &quot;Linux &amp;hellip; is trusted in mission critical applications, and &amp;ndash; due to its open source code &amp;ndash; has a long term credibility which exceeds many other competitive OS's&quot;, &quot;An advanced Win32 GUI user would have a short learning cycle to become productive [under Linux]&quot;, &quot;Long term, my simple experiments do indicate that Linux has a chance at the desktop market &amp;hellip;&quot;,&lt;ref name=&quot;halloween&quot;/&gt; and &quot;Overall respondents felt the most compelling reason to support OSS was that it 'Offers a low total cost of ownership (TCO)'.&quot;&lt;ref name=&quot;halloween2&quot;/&gt;
+
+== Con Kolivas' criticism of kernel politics==
+[[Con Kolivas]], a former [[Linux kernel|kernel]] developer, tried to optimize the kernel [[Scheduling (computing)|scheduler]] for interactive desktop use. He finally dropped the support for his patches due to the lack of appreciation for his development. In the 2007 interview ''Why I quit: kernel developer Con Kolivas'' he stated:{{quote|If there is any one big problem with kernel development and Linux it is the complete disconnection of the development process from normal users. You know, the ones who constitute 99.9% of the Linux user base. The Linux kernel mailing list is the way to communicate with the kernel developers. To put it mildly, the Linux kernel mailing list (lkml) is about as scary a communication forum as they come. Most people are absolutely terrified of mailing the list lest they get flamed for their inexperience, an inappropriate bug report, being stupid or whatever. ... I think the kernel developers at large haven't got the faintest idea just how big the problems in userspace are.&lt;ref name=&quot;ConKolivas&quot;/&gt;}}
+
+== Responses to criticism ==
+
+The Linux community has had mixed responses to these and other criticisms. As mentioned above, while some criticism has led to new features and better user-friendliness, the Linux community as a whole has a reputation for being resistant to criticism.&lt;ref name=&quot;Thomas02Apr09&quot;/&gt; Writing for [[PC World (magazine)|PC World]], Keir Thomas, noted that, &quot;Most of the time the world of Linux tends to be anti-critical. If anybody in the community dares be critical, they get stomped upon.&quot;&lt;ref name=&quot;Thomas02Apr09&quot;/&gt;
+
+== See also ==
+
+* [[Linux]]
+* [[Criticism of Desktop Linux]]
+* [[Criticism of Microsoft Windows]]
+* [[Unix-haters handbook]]
+
+== References ==
+
+{{reflist|2|refs=
+&lt;ref name=&quot;ifihadmyowndistro&quot;&gt;{{cite web
+| last = Scheinberg
+| first = Adam
+| title = If I Had My Own Distro
+| publisher = www.osnews.com
+| date = 2003-02-24
+| url = http://www.osnews.com/story/3431
+| accessdate = 2010-04-30}}&lt;/ref&gt;
+&lt;ref name=&quot;gobolinux&quot;&gt;{{cite web
+| url = http://www.kuro5hin.org/story/2003/5/9/05015/62649
+| title = The Unix tree rethought: an introduction to GoboLinux
+| accessdate = 2010-06-03
+| publisher = www.kuro5hin.org
+| last=Muhammad
+| first=Hisham
+| date=2003-05-09}}&lt;/ref&gt;
+&lt;ref name=&quot;absolutpaths&quot;&gt;{{cite web
+| last = van Riezen
+| first = Pim
+| title = Designing object extensions for the Unix Operating Systems
+| publisher = www.kuro5hin.org/story
+| date = 2003-02-24
+| url = http://www.kuro5hin.org/story/2003/2/23/115919/628
+| accessdate = 2010-06-03}}&lt;/ref&gt;
+&lt;ref name=&quot;DistroWatch11jan10&quot;&gt;{{cite web
+| url = http://distrowatch.com/stats.php?section=popularity
+| title = Linux Distributions - Facts and Figures
+| accessdate = 2010-01-11
+| last = [[DistroWatch]]
+| year = 2010
+| month = January}}&lt;/ref&gt;
+&lt;ref name=&quot;InformationWeek.com&quot;&gt;{{cite web
+| url = http://www.informationweek.com/blog/main/archives/2007/07/too_many_linux.html
+| title = Too Many Linux Distros Make For Open Source Mess
+| accessdate = 2010-01-11|publisher = InformationWeek.com
+| last=Wolfe
+| first=Alexander
+| date = 2007-07-18
+}}&lt;/ref&gt;
+&lt;ref name=&quot;toomany&quot;&gt;{{cite web
+| last = Martin
+| first = Caitlyn
+| title = So Many Distros, So Little Time
+| publisher =www.oreillynet.com
+| date = 2007-01-16
+| url = http://www.oreillynet.com/linux/blog/2007/01/so_many_distros_so_little_time.html
+| accessdate = 2010-05-30}}&lt;/ref&gt;
+&lt;ref name=&quot;bloated&quot;&gt;{{cite web
+| last = Austin
+| first = Modine
+| title = Linus calls Linux 'bloated and huge'
+| publisher =www.theregister.co.uk
+| date = 2009-09-22
+| url = http://www.theregister.co.uk/2009/09/22/linus_torvalds_linux_bloated_huge/
+| accessdate = 2010-07-01}}&lt;/ref&gt;
+&lt;ref name=&quot;bloated2&quot;&gt;{{cite web
+| title = LinuxCon Roundtable in Torvalds Quotes
+| publisher =www.tuxradar.com
+| date = 2009-09-22
+| url = http://www.tuxradar.com/content/linuxcon-rountable-torvalds-quotes
+| accessdate = 2010-07-01}}&lt;/ref&gt;
+&lt;ref name=&quot;bloated3&quot;&gt;{{cite web
+| last =
+| first = Ravi
+| title = Is Linux kernel getting bloated ? Linus Torvalds says Yes!
+| publisher =linuxhelp.blogspot.com
+| date = 2009-09-24
+| url = http://linuxhelp.blogspot.com/2009/09/is-linux-kernel-getting-bloated-linus.html
+| accessdate = 2010-07-01}}&lt;/ref&gt;
+&lt;ref name=&quot;halloween&quot;&gt;{{cite web
+| url=http://www.catb.org/~esr/halloween/halloween2.html
+| date=2006-10-12
+| first=Eric S.
+| authorlink = Eric S. Raymond
+| last=Raymond
+| title=Halloween Document II (Version 1.7)
+| publisher=www.catb.org/~esr}}&lt;/ref&gt;
+&lt;ref name=&quot;halloween2&quot;&gt;{{cite web
+| url=http://www.catb.org/~esr/halloween/halloween7.html
+| date=2002-11-05
+| first=Eric S.
+| last=Raymond
+| authorlink = Eric S. Raymond
+| title=Halloween VII: Survey Says
+| publisher=www.catb.org/~esr}}&lt;/ref&gt;
+&lt;ref name=&quot;Thomas02Apr09&quot;&gt;{{cite web
+| url = http://www.pcworld.com/businesscenter/article/162457/linux_needs_critics.html
+| title = Linux Needs Critics
+| publisher=www.pcworld.com
+| accessdate = 2010-01-22
+| last = Thomas
+| first = Keir
+| year = 2009
+| month = April}}&lt;/ref&gt;
+&lt;ref name=&quot;ConKolivas&quot;&gt;{{cite web
+| last = Mills
+| first = Ashton
+| authorlink =
+| title = Why I quit: kernel developer Con Kolivas
+| publisher = apcmag.com
+| date = 2007-07-24
+| url = http://apcmag.com/why_i_quit_kernel_developer_con_kolivas.htm
+| accessdate = 2010-07-13}}&lt;/ref&gt;}}
+
+{{Linux}}
+
+[[Category:Operating system criticisms|Linux]]</rev></revisions></page></pages></query></api>

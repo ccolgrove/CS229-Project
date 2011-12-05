@@ -1,0 +1,460 @@
+<?xml version="1.0"?><api><query><pages><page pageid="49627" ns="0" title="Universal Disk Format"><revisions><rev xml:space="preserve">{{Refimprove|date=March 2010}}
+{{Original research|date=March 2010}}
+{{Infobox filesystem
+|name = UDF
+|full_name = Universal Disk Format
+|developer =  [[International Organization for Standardization|ISO]]/[[Ecma International|ECMA]]/[[Optical Storage Technology Association|OSTA]]
+|introduction_os = 
+|introduction_date = 1995
+|partition_id = 
+|directory_struct = 
+|file_struct = 
+|bad_blocks_struct = 
+|max_filename_size = 255 bytes (path 1023 bytes&lt;ref name=&quot;note-43&quot;&gt;This restriction might be lifted in newer versions.&lt;/ref&gt;)
+|max_files_no = 
+|max_volume_size = ?
+|max_file_size = 16 [[Exabyte|EB]]
+|filename_character_set = Any [[Unicode]] except NUL&lt;!-- '/' ?? --&gt;
+|dates_recorded = creation, archive, modification (mtime), attribute modification (ctime), access (atime)&lt;!--double check--&gt;
+|date_range = 
+|date_resolution = 
+|forks_streams =
+|attributes = 
+|file_system_permissions = POSIX
+|compression = No
+|directory_struct =
+|encryption = 
+|OS = [[FreeBSD]], Linux, BSD, MS-Windows, Mac OS X, etc..
+}}
+&lt;!--
+Stores file owner=Y
+POSIX file permissions = Y
+Creation timestamps = Y
+Last access/ read timestamps = Y
+Last content modification timestamps = ?
+This copy created = ?
+Last metadata change timestamps = Y
+Last archive timestamps = Y
+Access control lists = 	Y
+Security/ MAC labels = N
+Extended attributes/ Alternate data streams/ forks = Y
+Checksum/ECC = N
+
+Hard links = Y
+Symbolic links=Y 	
+Block journaling=Y 
+Metadata-only journaling=Y 	
+Case-sensitive=Y 	
+Case-preserving=Y
+File Change Log=Y 
+Snapshot=Y 
+XIP=N 
+Encryption=N 	
+COW=N 
+integrated LVM = N
+Data deduplication = N
+Volumes are resizeable = ?
+
+Block suballocation=N
+Variable file block size=N
+Extents=Y
+Allocate-on-flush=Depend
+Sparse files=N
+Transparent compression=N
+--&gt;
+{{Optical disc authoring}}
+'''Universal Disk Format''' ('''UDF''') is an implementation of the specification known as '''ISO/IEC 13346''' and '''[[Ecma International|ECMA]]-167''' and is an [[open format|open]] vendor-neutral [[file system]] for [[computer data storage]] for a broad range of media. In practice, it has been most widely used for [[DVD]]s and newer [[optical disc]] formats, supplanting [[ISO 9660]]. Due to its design, it is very well suited for incremental updates on both recordable or (re)writable [[Optical disc|optical media]]. UDF is developed and maintained by the [[Optical Storage Technology Association]] (OSTA).
+
+Normally, [[optical disc authoring software|authoring software]] will master a UDF file system in a batch process and write it to optical media in a single pass. But when [[packet writing]] to rewriteable media, such as [[CD-RW]], UDF allows files to be created, deleted and changed on-disc just as a general-purpose [[filesystem]] would on removable media like [[floppy disk]]s and [[USB flash drive|flash drive]]s. This is also possible on write-once media, such as [[CD-R]], but in that case the space occupied by the deleted files cannot be reclaimed (and instead becomes inaccessible).
+
+Multi-session mastering is also possible in UDF, though some implementations may be unable to read disks with multiple sessions.&lt;ref&gt;Multi-session mastering has always been part of the UDF specification. See [UDF 2.01/6.10.1], though earlier documents were not very clear that the anchor offsets are specified to be from the last session.&lt;/ref&gt;
+
+== History ==
+
+The [[Optical Storage Technology Association]] standardized the UDF file system to form a common file system for all optical media. The goal was to make a common file system for [[read-only]] media and optical media that are re-writable. When first standardized, the UDF file system was intended to replace [[ISO-9660]], allowing support for both read-only and writable media.  After the first version of UDF was released, it was adopted by the [[DVD Consortium]] as the official file system for [[DVD Video]] and [[DVD Audio]].&lt;ref name=&quot;OSTA - UDF Specifications&quot;&gt;[http://www.osta.org/specs OSTA - UDF Specifications]&lt;/ref&gt;
+
+=== Revisions ===
+Multiple revisions of UDF have been released:&lt;ref name=&quot;OSTA - UDF Specifications&quot;/&gt;&lt;ref&gt;[http://homepage.mac.com/wenguangwang/myhome/udf.html Wenguang's Introduction to Universal Disk Format (UDF)]&lt;/ref&gt;
+* Revision 1.02 (August 30, 1996). This format is used by [[DVD-Video]] discs.
+* Revision 1.50 (February 4, 1997). Added support for (virtual) rewritability on CD-R/DVD-R media by introducing the VAT structure. Added sparing tables for defect management on rewritable media such as CD-RW, and DVD-RW and DVD+RW.
+* Revision 2.00 (April 3, 1998). Added support for Stream Files and real-time files (for DVD recording) and simplified directory management. VAT support was extended.
+* Revision 2.01 (March 15, 2000) is mainly a bugfix release to UDF 2.00. Many of the UDF standard's ambiguities were resolved in version 2.01.
+* Revision 2.50 (April 30, 2003). Added the Metadata Partition facilitating metadata clustering, easier crash recovery and optional duplication of file system information: All metadata like nodes and directory contents are written on a separate partition which can optionally be mirrored.
+* Revision 2.60 (March 1, 2005). Added Pseudo OverWrite method for drives supporting pseudo overwrite capability on sequentially recordable media.
+
+== Universal Disk Format builds ==
+
+[[Universal Disk Format builds]] are as follows:
+* '''Plain''' (Random Read/Write Access). This is the original format supported in all UDF revisions
+* '''Virtual Allocation Table a.k.a. VAT''' (Incremental Writing). Used specifically for writing to CD-R and (write-once) media
+* '''Spared''' (Limited Random Write Access). Used specifically for writing to CD-RW and DVD-RW (rewritable) media
+
+== Packet writing ==
+[[Packet writing]] was introduced in Revision 1.50. For write-once media, the entire disk is virtualized, making the write-once nature transparent for the user; the disk can be treated the same way one would treat a rewritable disc, but with steadily decreasing available space. For rewritable media, addresses are virtualized so that defect management (sector relocation) can be performed. However, UDF defect management does not apply to systems that already implement another form of defect management, such as [[Mount Rainier (packet writing)|Mount Rainier]] for optical discs, or a disk controller for a hard drive.
+
+Incorrect or incomplete implementations of Revision 1.50 (or above) may result in compatibility problems due to improper virtualization in reading or writing the disk.
+
+==Compatibility==
+Many [[DVD player]]s do not support any UDF revision other than version 1.02. Discs created with a newer revision may still work in these players if the ISO 9660 bridge format is used.
+As some popular [[DVD authoring|DVD burning programs]] default to UDF version 1.5 when burning video DVDs, users have found it necessary to avoid using the [[Wizard (software)|software wizard]] and instead manually configure the burn to version 1.02.
+Even if an [[operating system]] claims to be able to read UDF 1.50, it still may only support the ''plain'' build and not necessarily either the ''VAT'' or ''Spared'' [[Universal Disk Format builds]].
+
+[[Mac OS X]] 10.4.5 claims to support Revision 1.50 (see ''man mount_udf''), yet it can only mount disks of the ''plain'' build properly and provides no virtualization support at all. It cannot mount UDF disks with VAT, as seen with the Sony Mavica issue.&lt;ref&gt;{{cite web |url=http://docs.info.apple.com/article.html?artnum=75503 |title=Sony Mavica problem |author= |date= |work= |publisher=apple.com |accessdate= }}&lt;/ref&gt; Releases before 10.4.11 mount disks with Sparing Table but does not read its files correctly. Version 10.4.11 fixes this problem.&lt;ref&gt;{{cite web |url=http://www.apple.com/downloads/macosx/apple/macosx_updates/macosx10411comboupdateintel.html |title=Intel update |author= |date= |work= |publisher=apple.com |accessdate=}}&lt;/ref&gt;&lt;ref&gt;{{cite web |url=http://www.apple.com/downloads/macosx/apple/macosx_updates/macosx10411comboupdateppc.html |title=PowerPC update |author= |date= |work= |publisher=apple.com |accessdate= }}&lt;/ref&gt;
+
+Similarly, [[Microsoft Windows XP]] Service Pack 2 (SP2) cannot read DVD-RW disks that use the Universal Disk Format (UDF) 2.00 defect management system.&lt;ref&gt;{{cite web |url=http://support.microsoft.com/kb/321640/en-us |title=Microsoft Windows UDF Read Troubleshooting |author= |date= |work= |publisher=microsoft.com |accessdate= }}&lt;/ref&gt; This problem occurs if the UDF defect management system creates a sparing table that spans more than one sector on the DVD-RW disk. Windows XP SP2 can recognize that a DVD is using UDF. but, Windows Explorer displays the contents of a DVD as an empty folder. A hotfix is available for this&lt;ref&gt;{{cite web |url=http://support.microsoft.com/kb/899527 |title=Windows XP UDF hotfix |author= |date= |work= |publisher=microsoft.com |accessdate= }}&lt;/ref&gt; and is included in Service Pack 3.
+&lt;ref&gt;{{cite web |url=http://support.microsoft.com/kb/321640/en-us |title=MS Windows and UDF optical disks |author= |date= |work= |publisher= |accessdate= }}&lt;/ref&gt;
+
+=== Table of operating systems ===
+'''Terminology:'''
+:* Unless otherwise noted, '''''read''''' and '''''write''''' support means that only the ''plain'' UDF build is supported, but not the ''VAT'' and ''spared'' build.
+:* Support for '''''read''''' means that a UDF formatted disk can be mounted by the system. It enables the user to read files from the UDF volume using the same interface that is used to access files on other disks connected to the computer.
+:* Support for '''write''' means that, in addition to reading files from a mounted UDF volume, data such as files can be modified, added, or deleted.
+
+{| class=&quot;wikitable&quot;
+|-
+!
+! colspan=&quot;5&quot; | UDF version
+! colspan=&quot;2&quot; | Non-plain
+!
+!
+|-
+! Operating system
+! 1.02
+! 1.50
+! 2.0x
+! 2.50
+! 2.60
+! VAT
+! Sparing Tables
+! Write
+! Note
+|-
+| [[AIX operating system|AIX]] 5.2, 5.3, 6.1
+|
+| {{yes}}
+| {{yes}}
+| {{no}}
+| {{no}}
+|
+|
+| {{yes}}
+| (1.5 is default)&lt;ref&gt;{{cite web |url=http://publib.boulder.ibm.com/infocenter/aix/v6r1/index.jsp |title=Welcome to the AIX 6.1 Information Center |author= |date= |work= |publisher=IBM |accessdate=25 September 2010}}&lt;/ref&gt;
+|-
+| [[AmigaOS]] 4.0
+| {{yes}}
+| {{yes}}
+|
+|
+|
+|
+|
+|
+|
+|-
+| [[BeOS]]/[[magnussoft ZETA]]/[[Haiku (operating system)|Haiku]]
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+|
+|
+| {{yes}}
+|
+|-
+| [[DOS]]/[[FreeDOS]], [[Windows 3.11]] or older
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| No native support.
+|-
+| [[eComStation]]/[[OS/2]]
+|
+|
+| {{yes}}
+|
+|
+|
+|
+| {{yes}}
+| Additional fee drivers on OS/2.
+|-
+| [[FreeBSD]] 5/6/7
+| {{yes}}
+| {{yes}}
+|
+|
+|
+| {{no}}
+| {{yes}}
+|
+|
+|-
+| [[Linux]] 2.2
+| {{yes}}
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+| [[Linux]] 2.4
+| {{yes}}
+| {{yes}}&lt;ref name=&quot;debudft&quot;&gt;README.Debian from udftools 1.0.0b3-14 in Debian GNU/Linux&lt;/ref&gt;
+|
+|
+|
+|
+|
+|
+|
+|-
+| Linux 2.6
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes|Yes&lt;ref name=&quot;debudft&quot; /&gt; (2.6.26+)}}
+| {{yes|Yes&lt;ref name=&quot;debudft&quot; /&gt; (2.6.26+)}}
+| {{yes|Yes&lt;ref name=&quot;debudft&quot; /&gt; (2.6.26+)}}
+| {{yes}}
+| partly (only up to Version 2.01)
+| Version before 2.6.10 supported fewer media types.  Features requiring 2.6.26 {{Clarify|date=February 2011}} weren't fully automatic until 2.6.30 of the kernel.
+|-
+| [[Mac OS 9]]
+| {{yes}}
+| {{yes}}&lt;ref name=&quot;debudft&quot; /&gt;
+|
+|
+|
+|
+|
+| {{yes}}
+|
+|-
+| [[Mac OS X]] 10.4
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| only with [[Roxio Toast|Toast]] 9+ [http://www.roxio.com/enu/products/toast9/plugin/overview.html HD Plugin]
+| only with [[Roxio Toast|Toast]] 9+ [http://www.roxio.com/enu/products/toast9/plugin/overview.html HD Plugin]
+|
+|
+|
+| Can create UDF 1.50 (plain build) volumes using the &lt;code&gt;drutil&lt;/code&gt; utility.
+|-
+| Mac OS X 10.5
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| To create, use &lt;code&gt;newfs_udf&lt;/code&gt; utility.
+|-
+| Mac OS X 10.6
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| To create, use &lt;code&gt;newfs_udf&lt;/code&gt; utility.
+|-
+| [[NetBSD]] 4.0
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+|
+| Reading multi-session VAT, spared and metapartition variants&lt;br&gt; from all CD, DVD and BD variants as well as HDD and Flash media.
+|-
+| [[NetBSD]] 5.0
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| Write support for all builds and media including multi-session VAT.&lt;ref&gt;{{cite web |url=http://www.netbsd.org/releases/formal-5/NetBSD-5.0.html |title=NetBsd 5 release notes |author= |date= |work= |publisher=NetBSD |accessdate= }}&lt;/ref&gt; Create new with &lt;code&gt;newfs_udf&lt;/code&gt;.&lt;br&gt;Limited writing on 2.50/2.60 (due to needing pre-allocated, fixed sized metadata partition).&lt;ref&gt;{{cite web |url=http://netbsd.gw.com/cgi-bin/man-cgi?mount_udf+8+NetBSD-5.0 |title=NetBSD System Manager's Manual |author= |date= |work= |publisher= |accessdate=25 September 2010}}&lt;/ref&gt;
+|-
+| [[Novell NetWare]] 5.1
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+| Novell NetWare 6
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+| [[OpenBSD]] 4.7
+| {{yes}}
+| {{yes}}
+|
+| {{yes}}&lt;ref name=&quot;udfopenbsd&quot;&gt;{{cite web |url=http://www.openbsd.org/47.html |title=The OpenBSD 4.7 Release |author= |date= |work= |publisher=OpenBSD |accessdate=25 September 2010}}
+&lt;/ref&gt;
+| {{yes}}&lt;ref name=&quot;udfopenbsd&quot;/&gt;
+| {{no}}
+| {{yes}}
+|
+|
+|-
+| [[Solaris Operating Environment|Solaris]] 7 11/99+
+| {{yes}}
+| {{yes}}
+|
+|
+|
+|
+|
+|
+|
+|-
+| Solaris 8/9/10
+| {{yes}}
+| {{yes}}
+|
+|
+|
+|
+|
+| {{yes}}
+|
+|-
+| [[Windows 95]] OSR2+/[[Windows 98]]/[[Windows Me|Me]]
+| {{yes}}&lt;ref name=&quot;debudft&quot; /&gt;
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+|
+|
+| {{no}}
+|
+|-
+| [[Windows 2000]]
+| {{yes}}
+| {{yes}}&lt;ref name=&quot;debudft&quot; /&gt;
+| {{no}}
+| {{no}}
+| {{no}}
+|
+|
+| {{no}}
+|
+|-
+| [[Windows XP]]/[[Windows Server 2003|Server 2003]]
+| {{yes}}
+| {{yes}}
+| {{yes}}&lt;ref name=&quot;debudft&quot; /&gt;
+| {{yes}}&lt;ref name=&quot;thdudf&quot;&gt;TOSHIBA UDF2.5 Reader File System Driver (TOSHIBA HD DVD File System Driver)&lt;/ref&gt;
+| {{no}}
+|
+|
+| {{no}}
+| Write support available with third party utilities such as [[Drive Letter Access|DLA]] and [[InCD]].
+|-
+| [[Windows Vista]]
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| Referred to by Microsoft as [[Live File System]].
+|-
+| [[Windows 7]]
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+|
+|}
+
+== Character set ==
+The specification allows for nine character encodings: one by agreement, one specified by [[Ecma International|ECMA]]-6 (also known as [[ASCII]]), three subsets of ASCII, a subset of ECMA-94 ([[Latin-1]]), and various other graphical characters.&lt;ref&gt;{{cite web |url=http://www.osta.org/specs/pdf/udf102.pdf |title=OSTA Univeral Disk Format Specification Revision 1.02 |author= |date= |work= |publisher=Osta |accessdate=25 September 2010}}&lt;/ref&gt;&lt;ref&gt;{{cite web |url=http://www.osta.org/specs/pdf/udf201.pdf |title=Universal Disk Format Specification |author= |date= |work= |publisher=Osta |accessdate=25 September 2010}}&lt;/ref&gt;
+
+== See also ==
+* [[Comparison of file systems]]
+* [[DVD authoring|DVD Authoring]]
+* [[ISO 13490|ISO/IEC 13490]] (also known as '''[[Ecma International|ECMA]]-168''')
+* [[Universal Disk Format builds]]
+
+== References ==
+{{reflist}}
+
+==Further reading==
+* ISO/IEC 13346 standard, also known as [http://www.ecma-international.org/publications/files/ECMA-ST/Ecma-167.pdf ECMA-167].
+
+== External links ==
+* [http://www.osta.org/ OSTA home page]
+* [http://homepage.mac.com/wenguangwang/myhome/udf.html Wenguang Wang's UDF Introduction]
+* [http://sourceforge.net/projects/linux-udf/ Linux UDF support]
+* [http://support.microsoft.com/kb/321640/en-us Microsoft Windows UDF Read Troubleshooting]
+* [http://www.osta.org/specs/pdf/udf260.pdf UDF Revision 2.60] March 1, 2005
+* [http://publib.boulder.ibm.com/infocenter/systems/index.jsp?topic=/com.ibm.aix.baseadmn/doc/baseadmndita/cdromudfs.htm AIX - CD-ROM file system and UDFS]
+
+{{Filesystem}}
+{{Ecma International Standards}}
+
+[[Category:Disk file systems]]
+[[Category:ISO standards]]
+[[Category:IEC standards]]
+[[Category:Ecma standards]]
+[[Category:Windows components]]
+
+[[ca:Universal Disk Format]]
+[[cs:Universal Disk Format]]
+[[da:UDF]]
+[[de:Universal Disk Format]]
+[[es:Universal Disk Format]]
+[[fr:Universal Disk Format]]
+[[ko:ì ëë²ì¤ ëì¤í¬ í¬ë§·]]
+[[it:Universal Disk Format]]
+[[lt:UDF]]
+[[ms:Universal Disk Format]]
+[[nl:Universal Disk Format]]
+[[ja:ã¦ããã¼ãµã«ãã£ã¹ã¯ãã©ã¼ããã]]
+[[pl:Universal Disk Format]]
+[[pt:Universal Disk Format]]
+[[ru:Universal Disk Format]]
+[[sk:Universal Disk Format]]
+[[sr:UDF]]
+[[sv:Universal Disk Format]]
+[[uk:UDF]]
+[[zh:éç¨åç¢æ ¼å¼]]</rev></revisions></page></pages></query></api>

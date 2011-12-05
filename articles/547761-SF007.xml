@@ -1,0 +1,93 @@
+<?xml version="1.0"?><api><query><pages><page pageid="547761" ns="0" title="MkLinux"><revisions><rev xml:space="preserve">{{Infobox OS
+|name = MkLinux
+|developer = [[Open Software Foundation|OSF]] Research Institute, [[Apple Computer]], MkLinux Developers Association
+|family = [[Unix-like]]
+|source_model = [[Open source]]
+|latest_release_version = Pre-R2
+|latest_release_date = 2002-08-05
+|kernel_type = [[Microkernel]]
+|license = [[GNU General Public License]]
+|working_state = Legacy / discontinued
+|website = http://mklinux.org/
+|supported_platforms = [[PowerPC]]
+}}
+
+'''MkLinux''' is an [[open source]] computer [[operating system]] started by the [[Open Software Foundation|OSF]] Research Institute and [[Apple Computer]] in February 1996 to port [[Linux]] to the [[PowerPC]] platform, and [[Macintosh]] computers. The effort was spearheaded by Brett Halle at Apple and development split between Michael Burg (device drivers and distribution) at Apple in Cupertino, California, and Nick Stephen (Mach porting &amp; development) at the OSF in [[Grenoble]], France. Other key individuals to work on the project included FranÃ§ois Barbou (OSF), Vicki Brown (Apple) and Gilbert Coville (Apple).
+
+MkLinux was officially announced at The 1996 [[World Wide Developers Conference]] (WWDC). A free CD containing a binary distribution of MkLinux was handed out to the attendees.
+
+In the summer of 1998, the community-led MkLinux Developers Association took over development of the operating system. MkLinux is short for &quot;Microkernel Linux,&quot; which refers to the project's adaptation of the [[Linux kernel]] to run as a server hosted atop the [[Mach (kernel)|Mach]] [[microkernel]]. MkLinux is based on version 3.0 of Mach.
+
+==History==
+MkLinux started as a project sponsored by Apple Computer and OSF Research Institute, to get &quot;Linux on Mach&quot; ported to the Macintosh computer and for Apple to explore alternative kernel technologies on the Mac platform. At the time, there was no officially sponsored PowerPC port of Linux, and none specifically for Macintosh hardware. The OSF Institute, owner of the Mach [[microkernel]] and several other [[Unix]]-based technologies, was interested in promoting Mach on other platforms. Unlike the much later [[Mac OS X]], MkLinux was specifically meant to take full advantage of the Mach microkernel. OS X instead takes the [[NextStep]] approach and runs a hybrid system where the BSD kernel is grafted on top of Mach running in a single kernel address space.
+
+The MkLinux distribution was much too large for casual users to download via [[Plain old telephone service|POTS]], even using 56k modems. However, the official CDs were available in a book from Prime Time Freeware.&lt;ref&gt;{{cite book|first=Rich|last=Morin|title=Mklinux: Microkernel Linux for the Power Macintosh|publisher=Prime Time Freeware|date=March 1997|isbn=978-1-881957-24-9}}&lt;/ref&gt;
+
+As time went on, and Apple released the [[Open Firmware]]-based Power Macs, an official PowerPC branch of the Linux kernel was created and was spearheaded by the LinuxPPC project. MkLinux and LinuxPPC developers traded a lot of ideas back and forth as both worked on their own ways of running Linux. [[Debian]] also released a traditional monolithic kernel distribution for PowerPC, as did [[SUSE Linux distributions|SUSE]], and [[Terra Soft Solutions]] with [[Yellow Dog Linux]].
+
+When Apple dropped support for MkLinux, the developer community struggled to improve the Mach kernel, and support various Power Macintosh hardware. MkLinux continued to be the only option for Macintosh [[NuBus]] computers until June 2000, when PPC/Linux for NuBus Power Macs was released.
+
+==Legacy==
+MkLinux was the first attempt by Apple to support a [[free and open source software]] project. The work done with the Mach 3.0 kernel was extremely helpful in bringing up NeXTSTEP on the Mac platform, which would later become OS X.&lt;ref&gt;[http://developer.apple.com/documentation/Darwin/Conceptual/KernelProgramming/About/About.html#//apple_ref/doc/uid/TP30000905-CH204-CHDHDDGC Kernel Programming Guide: Mach API Reference]&lt;/ref&gt;
+
+==Versions==
+{| class=&quot;wikitable&quot; border=&quot;1&quot;
+|-
+!Version
+!Approx Date
+!Notes
+|-
+|DR1
+|May 1996
+|Linux 1.3
+|-
+|DR2
+|September 1996
+|Numerous bug fixes 
+|-
+|DR2.1
+|May 1997
+|Linux 2.0; support for PCI machines
+|-
+|DR3
+|July 1998
+|
+|-
+|R1
+|December 1999
+|
+|-
+|pre-R2
+|August 2002
+|
+|}
+
+==See also==
+*[[Darwin (operating system)]]
+
+==References==
+{{reflist}}
+
+==External links==
+*[http://www.mklinux.org/ MkLinux home page]
+*[http://gate.crashing.org/doc/ppc/doc003.htm History of Linux for the PowerPC]
+*[http://bat8.inria.fr/~lang/hotlist/free/licence/fsf96/mklinux.html Linux on the OSF Mach3 microkernel]
+
+{{Mac OS History}}
+{{Apple Inc. operating systems}}
+{{Linux distributions}}
+
+[[Category:Apple Inc. operating systems]]
+[[Category:Discontinued Linux distributions]]
+[[Category:PowerPC operating systems]]
+[[Category:Microkernel-based operating systems]]
+
+[[de:MkLinux]]
+[[es:MkLinux]]
+[[fr:MkLinux]]
+[[ja:MkLinux]]
+[[ko:MkLinux]]
+[[pl:MkLinux]]
+[[pt:MkLinux]]
+[[ro:MkLinux]]
+[[ru:MkLinux]]</rev></revisions></page></pages></query></api>

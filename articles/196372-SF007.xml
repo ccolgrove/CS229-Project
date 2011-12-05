@@ -1,0 +1,40 @@
+<?xml version="1.0"?><api><query><pages><page pageid="196372" ns="0" title="SimPy"><revisions><rev xml:space="preserve">{{About||the [[Python (programming language)|Python]] symbolic mathematics library|SymPy|the social bookmarking service|Simpy}}
+{{Infobox software
+| name                   = SimPy
+| title                  = 
+| logo                   = [[File:SimPy Logo.png]]
+| screenshot             = &lt;!-- [[File: ]] --&gt;
+| caption                = 
+| collapsible            = 
+| author                 = 
+| developer              = SimPy developer community
+| released               = 2002&lt;!-- {{Start date|YYYY|MM|DD|df=yes/no}} --&gt;
+| discontinued           = 
+| latest release version = 2.2
+| latest release date    = {{Start date and age|2011|09|28|df=yes/no}}
+| latest preview version = 
+| latest preview date    = &lt;!-- {{Start date and age|YYYY|MM|DD|df=yes/no}} --&gt;
+| frequently updated     = &lt;!-- DO NOT include this parameter unless you know what it does --&gt;
+| programming language   = [[Python (programming language)|Python]]
+| operating system       = [[Cross-platform]]
+| platform               = 
+| size                   = 
+| language               = 
+| status                 = 
+| genre                  = [[Discrete event simulation]]
+| license                = [[LGPL]]
+| website                = {{URL|simpy.sourceforge.net}}
+}}
+'''SimPy''' is a process-based, [[object-oriented]] discrete-event [[simulation language]]. It is implemented in standard [[Python (programming language)|Python]] and released as [[open source]] software under the [[ GNU Lesser General Public License]] (LGPL). It provides the modeller with components for building a [[simulation]] model including ''Processes'', for active entities like customers, messages, and vehicles, and ''Resources'', for passive components that form limited capacity congestion points like servers, checkout counters, and tunnels. There are two varieties of ''Buffer'' classes, ''Level''s to hold stored quantities and ''Store''s to hold sets of objects. It has commands to aid interaction between entities. It provides ''Monitor'' and ''Tally'' objects to aid in gathering statistics and uses the standard Python random module to generate random variates. 
+
+Because it is implemented in Python, SimPy is platform-independent. It simulates parallel processes by an efficient implementation of [[coroutines]] using Python's generators capability. It is based on ideas from [[Simula]] and [[SIMSCRIPT II.5]]. 
+
+The first version  was released in December 2002.
+
+== External links ==
+* {{sourceforge|simpy}}
+
+[[Category:Simulation programming languages]]
+[[Category:Python libraries]]
+[[Category:Free science software]]
+[[Category:Cross-platform software]]</rev></revisions></page></pages></query></api>

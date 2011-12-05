@@ -1,0 +1,49 @@
+<?xml version="1.0"?><api><query><redirects><r from="WindowsToGo" to="Windows To Go" /></redirects><pages><page pageid="33089070" ns="0" title="Windows To Go"><revisions><rev xml:space="preserve">[[File:Windows To Go USB Drive.png|thumb|One of the USB flash drives offered by Microsoft at the BUILD conference with Windows To Go pre-installed]]
+
+'''Windows To Go''' is a feature in [[Windows 8]] that allows the entire system to run from [[USB]] [[mass storage device]]s such as [[flash drive]]s and external [[Hard disk drive#External removable drives|hard drive]]s.&lt;ref&gt;{{cite web|author=Gregg Keizer |url=http://www.computerworld.com/s/article/9220004/Windows_8_will_run_from_USB_thumb_drive |title=Windows 8 will run from USB thumb drive |publisher=Computerworld |date=2011-09-14 |accessdate=2011-09-25}}&lt;/ref&gt;
+
+Windows To Go is intended to allow enterprise administrators to provide users with an imaged version of Windows 8 that reflects the corporate desktop. Windows To Go is to be aimed at enterprises; licensing details were not discussed when Windows To Go was announced&lt;ref&gt;[http://mcpmag.com/articles/2011/09/16/microsoft-unveils-windows-to-go-for-the-enterprise.aspx Microsoft Certified Professional Magazine: Windows 8 Will Run On Thumb Drive, 16 September 2011]&lt;/ref&gt;. Creation of Windows To Go drives was not supported by the preview versions of Windows 8&lt;ref name=zdnet/&gt;, although Windows To Go flash drives set up by Microsoft were distributed to those who attended their September 2011 Build Conference.
+
+==History==
+[[File:Portable Workspace Creator.png|thumb|''Portable Workspace Creator'' on Windows 8 build 7955]]
+According to ZDNet, the last time Windows included a similar feature was [[Windows 3.11]]'s execute in place ROM option,&lt;ref name=zdnet&gt;[http://www.zdnet.co.uk/blogs/zdnet-uk-first-take-10013312/windows-8-windows-to-go-10024384/ ZDNet - Windows 8: Windows To Go] &quot;[Functionality of WTG] last seen with Windows 3.11's execute in place ROM option&quot;, &quot;Sadly it's [Windows To Go] not part of either the Windows 8 client or server previews&quot;&lt;/ref&gt; although [[Windows Embedded Standard 7]] also includes a method to boot from USB mass storage devices.&lt;ref&gt;http://msdn.microsoft.com/en-us/library/ff793778%28v=winembedded.60%29.aspx&lt;/ref&gt;&lt;ref&gt;http://msdn.microsoft.com/en-us/library/ff794931%28v=winembedded.60%29.aspx&lt;/ref&gt;
+
+In April 2011, after the leak of Windows 8 build 7850,&lt;ref&gt;{{cite web|url=http://www.engadget.com/2011/04/13/windows-8-leaked-caught-looking-a-lot-like-windows-7/ |title=Windows 8 leaked, caught looking a lot like Windows 7 |publisher=Engadget |date= |accessdate=2011-09-25}}&lt;/ref&gt; some users noticed that those builds included a program called &quot;Portable Workspace Creator&quot;, indicating it was intended to create bootable USB drives of Windows 8.&lt;ref&gt;{{cite web|url=http://www.winrumors.com/windows-8-portable-workspace-allows-you-to-run-windows-from-a-usb-device/ |title=Windows 8: Portable Workspace allows you to run Windows from a USB device |publisher=WinRumors |date=2011-04-15 |accessdate=2011-09-25}}&lt;/ref&gt;&lt;ref&gt;{{cite web|url=http://www.engadget.com/2011/04/15/windows-8-to-feature-usb-runnable-portable-workspaces-sales-of/ |title=Windows 8 to feature USB-runnable Portable Workspaces, sales of 16GB thumb drives set to soar |publisher=Engadget |date= |accessdate=2011-09-25}}&lt;/ref&gt;
+
+In September 2011 Microsoft officially announced ''Windows To Go'' at the [http://www.buildwindows.com/ Build Conference], and distributed bootable 32GB USB flash drives with Windows To Go pre-installed.&lt;ref&gt;{{cite web|last=Take |first=First |url=http://www.zdnet.co.uk/blogs/zdnet-uk-first-take-10013312/windows-8-windows-to-go-10024384/ |title=Windows 8: Windows To Go &amp;#124; ZDNet UK |publisher=Zdnet.co.uk |date=2011-09-20 |accessdate=2011-09-25}}&lt;/ref&gt;
+
+==Safety and security features==
+As a safety measure designed to prevent data loss, Windows &quot;freezes&quot; the entire system if the USB drive is removed, and continues to operate immediately if the drive is inserted in the next 60 seconds after removal. If the drive is not inserted in that time-frame, the computer shuts down after those 60 seconds to prevent possible confidential or sensitive information being displayed on the screen or stored on [[Random-access memory|RAM]].&lt;ref name=&quot;arstechnica1&quot;&gt;{{cite web|last=Bright |first=Peter |url=http://arstechnica.com/microsoft/news/2011/09/making-the-lives-of-it-easier-windows-8-refresh-reset-and-windows-to-go.ars |title=Making the lives of IT easier: Windows 8 Refresh, Reset, and Windows To Go |publisher=Arstechnica.com |date=2011-09-18 |accessdate=2011-09-25}}&lt;/ref&gt; It is also possible to encrypt a Windows To Go drive using [[BitLocker]].&lt;ref&gt;{{cite web|url=http://news.softpedia.com/news/Windows-8-Running-on-a-USB-Windows-To-Go-221470.shtml |title=Windows 8 Running on a USB â Windows To Go - Softpedia |publisher=News.softpedia.com |date= |accessdate=2011-09-25}}&lt;/ref&gt;
+
+==Technical details==
+According to Microsoft, a Windows To Go drive can be deployed, once created, with Windows tools such as [[Windows Imaging Format#ImageX|ImageX]].&lt;ref name=&quot;arstechnica1&quot;/&gt;
+
+Windows To Go works both on [[USB 2.0]] and [[USB 3.0]] connections, and both on legacy [[BIOS]] and [[UEFI]] firmware.&lt;ref&gt;{{cite web|url=http://techie-buzz.com/microsoft/windows-8-usb-to-go-demo.html |title=Microsoft Demonstrates Windows To Go (Run Windows 8 From USB On Any PC) |publisher=Techie-buzz.com |date= |accessdate=2011-09-16}}&lt;/ref&gt;
+
+The first time Windows To Go boots on a particular computer, it installs the drivers for that particular hardware and no reboot is required. Subsequent booting operations go straight into Windows 8.&lt;ref name=&quot;arstechnica1&quot;/&gt;
+
+==See also==
+*[[Live USB]]
+
+== References ==
+{{reflist}}
+
+==External links==
+*[http://channel9.msdn.com/Events/BUILD/BUILD2011/HW-245T Running Windows from an external USB drive with Windows To Go - Official Microsoft Presentation at BUILD]
+*[http://download.microsoft.com/download/1/E/4/1E455D53-C382-4A39-BA73-55413F183333/Windows_Developer_Preview-Windows8_guide.pdf Windows Developer Preview Guide (brief mention of ''Windows To Go'' in page 36)]
+
+{{software-stub}}
+
+[[Category:Windows administration]]
+[[Category:Microsoft software]]
+[[Category:USB]]
+[[Category:Live USB]]
+[[Category:Upcoming software]]
+[[Category:Microsoft Windows]]
+[[Category:Windows 8]]
+
+[[es:Windows To Go]]
+[[ko:ìë í¬ ê³ ]]
+[[it:Windows To Go]]
+[[pt:Windows To Go]]
+[[simple:Windows To Go]]</rev></revisions></page></pages></query></api>

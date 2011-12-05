@@ -1,0 +1,143 @@
+<?xml version="1.0"?><api><query><pages><page pageid="311819" ns="0" title="RAR"><revisions><rev xml:space="preserve">{{About||the Java format|Resource Adapter|other uses|RAR (disambiguation)}}
+
+{{Primary sources|date=October 2008}}
+{{Infobox file format
+| name        = RAR
+| icon        = [[File:WinRAR-Logo.png|48px]]
+| screenshot  =
+| caption     = 
+| extension   = &lt;code&gt;.rar&lt;/code&gt;, &lt;code&gt;.rev&lt;/code&gt;, &lt;code&gt;.r00&lt;/code&gt;, &lt;code&gt;.r01&lt;/code&gt;. 
+| mime        = application/x-rar-compressed
+| magic       = Rar! 0x1A 0x07 0x00
+| owner       = [[Eugene Roshal]]
+| released    = March 1993&lt;ref&gt;{{cite web |url=http://www.compression.ru/arctest/descript/roshal.htm |title=Interview by correspondence |date=1997â2002 (see under 1997) |language=Russian |accessdate=26 April 2010}}&lt;/ref&gt;
+| creatorcode =
+| genre = [[archive format]]
+| container for =
+| contained by =
+| extended from =
+| extended to =
+| standard =
+| free                   = No
+| url                    =
+}}
+
+'''RAR''' stands for  '''''R'''''oshal '''''AR'''''chive.  It is a [[proprietary format|proprietary]]&lt;ref name=&quot;rar_eula&quot;&gt;. The RAR Archiver EULA (End user license agreement) - embedded in installation files - [http://www.rarlabs.com/download.htm][http://www.buyrar.com/Prices.asp?Type=License] - Quotation: ''Neither RAR binary code, WinRAR binary code, UnRAR source or UnRAR binary code may be used or reverse engineered to (.rar was first created by William Jones) re-create the RAR compression algorithm, which is proprietary, without written permission of the author.''&lt;/ref&gt; [[archive file format]] that supports [[data compression]], [[error recovery]], and [[file spanning]]. It was developed by a Russian software engineer, [[Eugene Roshal]] (the first letter of his surname contributing to the name of the archive format), and is currently licensed by ''win.rar GmbH''.&lt;ref&gt;[http://www.win-rar.com/contact.html Contact to win.rar GmbH]&lt;/ref&gt;
+
+The [[filename extension]] used by RAR is &lt;code&gt;.rar&lt;/code&gt; for the data volume set and &lt;code&gt;.rev&lt;/code&gt; for the recovery volume set. In previous versions, if a RAR-archive was split into many smaller files (a &quot;multi-volume archive&quot;), the smaller files used the extensions &lt;code&gt;.rar&lt;/code&gt;, &lt;code&gt;.r00&lt;/code&gt;, &lt;code&gt;.r01&lt;/code&gt;, &lt;code&gt;.r02&lt;/code&gt; etc. 
+
+Version 1 and 2 archive files were often used in conjunction with a [[parchive]] [[file archiver]] to create [[parity file]]s for [[error recovery]] when using less-than-perfect file transmission and storage media such as newsgroups, satellite transmission, and [[optical disc]]s.  Version 3 has eliminated the need for third party post-processing.
+
+== Compression algorithm ==
+The RAR compression utility is proprietary, with a closed algorithm. RAR is owned by Alexander L. Roshal,&lt;ref name=&quot;rar_eula&quot; /&gt; the elder brother of [[Eugene Roshal]]. Version 3 of RAR is based on [[LZ77 and LZ78|Lempel-Ziv]] ([[LZSS]]) and [[prediction by partial matching]] (PPM) compression, specifically the PPMd implementation of PPMII by Dmitry Shkarin.&lt;ref&gt;{{cite web|url=http://www.unrarlib.org/faq.html|title=unrarlib [[FAQ]]|author=Christian Scheurer|date=2006-12-17}}&lt;/ref&gt;
+
+==Versions==
+Several versions of the RAR format have been noted by third party developers:
+*RAR1.3 (original, doesn't have Rar! signature)
+*RAR1.5
+*RAR2
+*RAR3 (current) - implemented by developers of Rarlab WinRAR version 2.9 and released in WinRAR version 3.00.  Many changes including:
+**File extensions changed from ''{volume name}.rar, {volume name}.r00, {volume name}.r01, etc.'' to ''{volume name}.part001.rar, {volume name}.part002.rar, etc.''
+**Encryption [[algorithm]] is changed to [[Advanced Encryption Standard|AES]] (Advanced Encryption Standard) with 128 bit key length.
+**Encryption of both file data and file headers.
+**Improved compression algorithm using 4MB dictionary size, Dmitry Shkarin's [[Prediction by Partial Matching|PPMII algorithm]] for file data, and selective preprocessing algorithms based on platform and source file type.
+**Optional creation of &quot;recovery volumes&quot; (.rev files) with redundancy data which can be used to reconstruct missing files in a volume set.
+**Support for archive files larger than 9 GB.
+**Support for Unicode names.
+
+== Software ==
+RAR files may be created only with commercial software [[WinRAR]], RAR, and software that has permission from the licensor Alexander Roshal (Eugene's brother).&lt;ref name=&quot;rar_eula&quot; /&gt; RAR for Pocket PC is the only [[freeware]] for creating RAR files.{{Citation needed|date=October 2011}}
+
+Third-party programs that can only read (unpack) RAR files include: [[WinZip]] (Windows), [http://download.cnet.com/RarZilla-Free-Unrar/3000-2250_4-10647724.html RarZilla] (Windows), [[7-Zip]] (multiplatform), [[IZArc]] (Windows), [[PeaZip]] (Windows, Linux), [[Zipeg]] (Windows, Mac OS X), [[ALZip]] (Windows) and [[PowerArchiver]] (Windows), along with the [[Free software|free]] version of [[unrar]] (which is available for Linux and FreeBSD). [[Mac OS X]] readers include [[StuffIt Expander]], [[The Unarchiver]], [[UnRarX]], and [[Zipeg]]. Stuffit Expander is also available for [[Mac OS Classic]] with RAR support for this platform.
+
+=== WinRAR ===
+{{Main|WinRAR}}
+[[WinRAR]] is commercial software (or 40-day trial)&lt;ref name=&quot;rar_eula&quot; /&gt; available for [[Microsoft Windows]]. It is the only graphical tool that can write modern RAR files (RAR version 3). WinRAR's command line equivalent, RAR, is also commercial software (or 40-day trial), available for Windows, [[Linux]], [[Mac OS X]], [[MS-DOS]], [[OS/2]], and [[FreeBSD]]. Additionally, the [[unrar]] tool from the same distributor can be used on the aforementioned platforms to extract RAR files but not to write them.
+
+Roshal created the RAR file format and developed programs for packing and unpacking RAR files, originally for [[DOS]] in 1993, which were later [[porting|ported]] to other [[Platform (computing)|platforms]]. The main [[Microsoft Windows|Windows]] version of the [[File archiver|archiver]], known as [[WinRAR]], is distributed as trialware, requiring payment after 40 days (although it can still be used after this period, albeit with nags{{Citation needed|date=December 2010|reason=can? as in you're allowed or as in you're not stopped by the software?}}); [[shareware]] versions of this program are also available for [[GNU/Linux]], [[Mac OS X]], [[DOS]], [[OS/2]], and [[FreeBSD]], though they are all called simply &quot;RAR&quot;.
+
+RARLAB distributes the source code and binaries for a freeware command-line &quot;unrar&quot; program,&lt;ref&gt;http://www.rarlab.com/rar_add.htm - freeware UnRAR source and binaries download&lt;/ref&gt; although it is not under a [[free software]] license. This program can only decompress/extract, not create RAR files.
+
+=== Other software ===
+* There is a free software decompression library called &quot;[http://www.unrarlib.org/ unrarlib]&quot;, licensed under the [[GNU General Public License|GPL]], based on an old version of unrar with permission from the author Eugene Roshal, but it can only decompress archives created by RAR versions up to 2.x. Archives created by RAR 2.9 and later (which are most RAR archives found today) use a different format which is not supported by the free library.
+
+* [[Stuffit Expander]] (freeware associated with the paid-for [[Stuffit]] compression program) also decodes RAR files.
+* [http://www.free-rar-extract-frog.com/free_rar_extract_frog.php Free RAR Extract Frog] (Windows freeware with instructions in 50+ languages) also decodes RAR files.
+
+* The [[open source software]] archiver [[7-Zip]] decompresses newer RAR files using a closed-source, free-of-charge plug-in under the &quot;unRAR license&quot;;&lt;ref&gt;[http://www.rarlab.com/rar_add.htm WinRAR and RAR archiver addons]&lt;/ref&gt; the license makes the plug-in [[source-available]] but not [[free software]].
+
+* [[The Unarchiver]] is another open source unarchiver which can decompress newer RAR files.
+
+* The free software Linux archivers [[File Roller]], [[Ark (computing)|Ark]], and [[Xarchiver]] can use the non-free [[unrar]] program to decompress RAR files, if they are found in the system path.
+
+* [http://sites.google.com/site/sharpimg/viewer Sharp IMG Viewer] is a resource explorer developed using [[.NET Framework]] for [[Microsoft Windows]] which can decompress RAR and other compressed file formats.
+
+=== UnRAR.dll ===
+UnRAR.Dll is a free of charge [[dynamic-link library]] (DLL) that can be downloaded from the official WinRAR site. It is found under &quot;Extras&quot;.
+
+== Comparison to other compression algorithms ==
+{{Main|Comparison of file archivers}}
+RAR compression operations are typically slower than compressing the same data with early compression algorithms like [[ZIP (file format)|ZIP]] but with a moderately better rate of compression.&lt;ref&gt;{{cite web|url=http://compressionratings.com/comp.cgi?winrar+3.93+-m3+pigz+2.1.4+-5|title=WinRAR vs zip}}&lt;/ref&gt;
+
+[[7z]]'s [[LZMA]] algorithm reaches a higher compression ratio than RAR, except for &quot;multimedia&quot; files like .wav and .bmp files where RAR uses specialized routines that outperform LZMA.&lt;ref&gt;{{cite web|url=http://compressionratings.com/comp.cgi?winrar+3.93+-m5+7-zip+9.12b+-mx%20-md48m|title=WinRAR vs 7-Zip}}&lt;/ref&gt; Other free compression software such as [[NanoZip]] and [[FreeArc]] usually outperform WinRAR.&lt;ref&gt;{{cite web|url=http://compressionratings.com/comp.cgi?winrar+3.93+-m5+freearc+0.60+-mex3+freearc+0.60+-mex5+nanozip+0.07a+-m.5g%20-cD+nanozip+0.07a+-m.5g%20-cO|title=WinRAR vs FreeArc vs NanoZip}}&lt;/ref&gt;
+
+Optional creation of &quot;recovery volumes&quot; (.rev files) with redundancy data which can be used to reconstruct missing files in a volume set.
+
+== RAR file limitations ==
+The minimum size of a RAR file is 20 bytes. The maximum size of a RAR file is 9,223,372,036,854,775,807 (2&lt;sup&gt;63&lt;/sup&gt;-1) bytes, which is 8 exabytes.
+
+== See also ==
+* [[Comparison of archive formats]]
+* [[List of archive formats]]
+* [[Comparison of file archivers]]
+* [[Unrar]]
+
+== Further reading ==
+* [http://www.rararchiver.com/rar-archiver-rar-archiver.html ''RAR Archiver Frequently Asked Questions'' by Eugene Roshal]
+* [http://www.win-rar.com/index.php?id=24&amp;kb_article_id=162 RAR File format by WinRAR]
+* [http://www.lampdocs.com/home-personal/using-rar-archiver-in-linux/ LAMPdocs: quick guide with annotation of the advantages of RAR in comparison to other file archivers]
+
+== External links ==
+* [http://www.rarlab.com/ Official RAR site]
+* [http://www.openrarfile.com/ Subscription Online tool for opening rar files without software]
+* [http://www.raropener.com/ Freeware tool for opening rar files]
+
+== References ==
+{{Reflist}}
+
+{{Archive formats}}
+{{Compression Software Implementations}}
+
+{{DEFAULTSORT:Rar}}
+[[Category:1993 introductions]]
+[[Category:Archive formats]]
+[[Category:Russian inventions]]
+
+[[ar:Ø±Ø§Ø±]]
+[[be-x-old:RAR]]
+[[ca:RAR]]
+[[cs:RAR]]
+[[de:RAR (Dateiformat)]]
+[[el:RAR]]
+[[es:RAR]]
+[[fr:RAR (format de fichier)]]
+[[ko:RAR (íì¼ í¬ë§·)]]
+[[it:RAR (formato di file)]]
+[[he:RAR]]
+[[mr:à¤°à¤¾à¤°]]
+[[nl:RAR]]
+[[ja:RAR]]
+[[pl:RAR]]
+[[pt:RAR]]
+[[ru:RAR]]
+[[simple:RAR]]
+[[sk:RAR (formÃ¡t)]]
+[[sl:DatoteÄni format RAR]]
+[[sr:RAR (fajl format)]]
+[[sh:RAR]]
+[[fi:RAR]]
+[[sv:RAR]]
+[[tr:RAR]]
+[[uk:RAR]]
+[[vec:RAR]]
+[[zh:RAR]]</rev></revisions></page></pages></query></api>

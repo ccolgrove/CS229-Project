@@ -1,0 +1,263 @@
+<?xml version="1.0"?><api><query><pages><page pageid="14032417" ns="0" title="History of Linux"><revisions><rev xml:space="preserve">{{lead too short|date=July 2011}}
+The '''History of Linux''' began in 1991 with the commencement of a personal project by a [[Finland|Finnish]] student, [[Linus Torvalds]], to create a new operating system kernel.
+
+Since then the resulting [[Linux kernel]] has been marked by constant growth throughout its history. Since the initial release of its [[source code]] in 1991, it has grown from a small number of [[C Programming Language|C]] files under a license prohibiting commercial distribution to its state in 2009 of over 370&amp;nbsp;[[megabyte]]s of source under the [[GNU General Public License]].&lt;ref&gt;{{cite web|url=http://www.linuxhq.com/kernel/|title=Linux Headquarters' kernel page|accessdate=2008-12-25}}&lt;/ref&gt;
+
+==Events leading to creation==
+The [[Unix]] operating system was conceived and implemented by Ken Thompson and Dennis Ritchie (both of [[AT&amp;T Bell Laboratories]]) in 1969  and first released in 1970. Its availability and [[software portability|portability]] caused it to be widely adopted, copied and modified by academic institutions and businesses. Its design became influential to authors of other systems.{{Citation needed|date=July 2011}}
+
+In 1983, [[Richard Stallman]] started the [[GNU project]] with the goal of creating a [[free software|free]] [[UNIX-like]] operating system.&lt;ref&gt;[http://www.gnu.org/gnu/initial-announcement.html Initial Announcement] of the [[GNU Project]], 1983&lt;/ref&gt;  As part of this work, he wrote the [[GNU General Public License]] (GPL).  By the early 1990s there was almost enough available software to create a full operating system. However, the GNU [[Kernel (computer science)|kernel]], called [[GNU Hurd|Hurd]], failed to attract enough attention from developers leaving GNU incomplete.
+
+Another free operating system project, initially released in 1977, was the [[Berkeley Software Distribution]] (BSD). This was developed by [[UC Berkeley]] from the [[Version 6 Unix|6th edition of Unix]] from AT&amp;T. Since  BSD contained Unix code that AT&amp;T owned, AT&amp;T filed a lawsuit ([[USL v. BSDi]]) in the early 1990s against the University of California. This strongly limited the development and adoption of BSD.&lt;ref&gt;{{cite web | url = http://www.coe.berkeley.edu/labnotes/history_unix.html |title=Berkeley UNIX and the Birth of Open-Source Software }}&lt;/ref&gt;&lt;ref&gt;{{cite web | url = http://oreilly.com/catalog/opensources/book/kirkmck.html |title=Twenty Years of Berkeley Unix From AT&amp;T-Owned to Freely Redistributable |author=Marshall Kirk McKusick }}&lt;/ref&gt;
+
+In 1985, [[Intel]] released the [[80386]], the first [[x86|x86 microprocessor]] with [[32-bit]] [[instruction set]] and [[Memory management unit|MMU]] with [[paging]].&lt;ref&gt;[http://intel80386.com Intel 80386]&lt;/ref&gt;
+
+In 1986, Maurice J. Bach, of [[Bell Labs|AT&amp;T Bell Labs]], published ''The Design of the UNIX Operating System''.&lt;ref&gt;{{Citation
+|last=Bach
+|first=Maurice
+|title=The Design of the UNIX Operating System
+|publisher=Prentice Hall
+|year=1986
+|isbn=0-13-201799-7}}&lt;/ref&gt; This definitive description principally covered the [[System V#SVR2|System V Release 2]] kernel, with some new features from Release 3 and [[BSD]].
+
+[[MINIX]], a Unix-like system intended for academic use, was released by [[Andrew S. Tanenbaum]] in 1987. While source code for the system was available, modification and redistribution were restricted. In addition, MINIX's [[16-bit]] design was not well adapted to the [[32-bit]] features of the increasingly cheap and popular [[Intel 386]] architecture for personal computers.
+
+These factors and the lack of a widely adopted, [[Free software|free]] kernel provided the impetus for Torvalds's starting his project. He has stated that if either the [[GNU]] or [[386BSD]] kernels were available at the time, he likely would not have written his own.&lt;ref&gt;{{cite web | url = http://www.dina.dk/~abraham/Linus_vs_Tanenbaum.html  | title = Linus vs. Tanenbaum debate }}&lt;/ref&gt;&lt;ref&gt;{{cite web | url = http://gondwanaland.com/meta/history/interview.html |title=The Choice of a GNU Generation - An Interview With Linus Torvalds }}&lt;/ref&gt;
+
+==The creation of Linux==
+[[Image:Linus Torvalds.jpeg|thumb|Linus Torvalds in 2002]]
+In 1991, in [[Helsinki]], Linus Torvalds began a project that later became the [[Linux kernel]].  It was initially a [[terminal emulator]], which Torvalds used to access the large UNIX servers of the university. He wrote the program specifically for the hardware he was using and independent of an operating system because he wanted to use the functions of his new PC with an 80386 processor. &lt;!-- Commenting out this sentence because, well, what the fuck does it mean? &quot;This is still among the standard today, optimally.&quot; --&gt; Development was done on [[MINIX]] using the [[GNU Compiler Collection|GNU C compiler]], which is still the main choice for compiling Linux today (although the code can be built with other compilers, such as the [[Intel C Compiler]]).{{Citation needed|date=October 2007}}
+
+As Torvalds wrote in his book ''[[Just for Fun]]'',&lt;ref name=&quot;fun&quot;&gt;Torvalds, Linus and David Diamond, ''Just for Fun: The Story of an Accidental Revolutionary'', 2001, ISBN 0-06-662072-4&lt;/ref&gt; he eventually realized that he had written an operating system kernel. On 25 August 1991, he announced this system in a [[Usenet]] posting to the [[newsgroup]] &quot;comp.os.minix.&quot;:&lt;ref name=&quot;groups.google.com&quot;&gt;{{cite web|url = http://groups.google.com/group/comp.os.minix/msg/b813d52cbc5a044b|title = comp.os.minix|accessdate = 2009-09-06|last = Torvalds|first = Linus Benedict|authorlink = |year = 1991|month = August}}&lt;/ref&gt;
+
+{{quote|
+Hello everybody out there using minix -
+
+I'm doing a (free) operating system (just a hobby, won't be big and professional like gnu) for 386(486) AT clones. This has been brewing since april, and is starting to get ready. I'd like any feedback on things people like/dislike in minix, as my OS resembles it somewhat (same physical layout of the file-system (due to practical reasons) among other things).
+
+I've currently ported [[Bash (Unix shell)|bash(1.08)]] and [[GNU Compiler Collection|gcc(1.40)]], and things seem to work. This implies that I'll get something practical within a few months, and I'd like to know what features most people would want. Any suggestions are welcome, but I won't promise I'll implement them :-)
+
+Linus (torvalds@kruuna.helsinki.fi)
+
+PS. Yes â it's free of any minix code, and it has a multi-threaded fs. It is NOT portable&lt;!--sic--&gt; (uses 386 task switching etc), and it probably never will support anything other than AT-harddisks, as that's all I have :-(.|Linus Torvalds &lt;ref name=&quot;Torvalds_Ankuendigung&quot;&gt;Torvalds, Linus: ''[http://groups.google.com/group/comp.os.minix/msg/b813d52cbc5a044b?dmode=source What would you like to see most in minix?]'' [[Usenet]] group comp.os.minix, August 25, 1991.&lt;/ref&gt;}}
+
+==The name==
+
+[[Image:Linux 0 12.jpg|thumb|[[Floppy disc]]s holding a very early version of Linux]]
+Linus Torvalds had wanted to call his invention Freax, a [[portmanteau]] of &quot;freak&quot;, &quot;free&quot;, and &quot;x&quot; (as an allusion to Unix). During the start of his work on the system, he stored the files under the name &quot;Freax&quot; for about half of a year. Torvalds had already considered the name &quot;Linux,&quot; but initially dismissed it as too egotistical.&lt;ref name=&quot;fun&quot; /&gt;
+
+In order to facilitate development, the files were uploaded to the [[File Transfer Protocol|FTP server]] (ftp.funet.fi) of [[FUNET]] in September 1991. [[Ari Lemmke]], Torvald's coworker at the [[Helsinki University of Technology]] (HUT) who was one of the volunteer administrators for the FTP server at the time, did not think that &quot;Freax&quot; was a good name. So, he named the project &quot;Linux&quot; on the server without consulting Torvalds.&lt;ref name=&quot;fun&quot; /&gt; Later, however, Torvalds consented to &quot;Linux&quot;.
+
+To demonstrate how the word &quot;Linux&quot; should be pronounced ({{IPA-en|ËlÉªnÉks}} {{respell|LIN|Éks}}), Torvalds included an audio guide ({{Audio|Linus-linux.ogg|listen}}) with the kernel source code.&lt;ref name=&quot;Pronounce&quot;&gt;{{cite web|url = http://www.kernel.org/pub/linux/kernel/SillySounds|title = Index of /pub/linux/kernel/SillySounds|accessdate = 2009-08-03|last = Torvalds|first = Linus|authorlink = |year = 1994|month = March}}&lt;/ref&gt;
+
+==Linux under the GNU GPL==
+Torvalds first published the Linux kernel under its own licence, which had a restriction on commercial activity.
+
+The software to use with the kernel was software developed as part of the [[GNU project]] licensed under the [[GNU General Public License]], a [[free software]] license. The first release of the Linux kernel, Linux 0.01, included a binary of GNU's [[Bash (Unix shell)|Bash shell]].&lt;ref name=&quot;Linux001&quot;&gt;Torvalds, Linus: ''[http://www.kernel.org/pub/linux/kernel/Historic/old-versions/RELNOTES-0.01 Notes for linux release 0.01]'' kernel.org, 1991.&lt;/ref&gt;
+
+In the &quot;Notes for linux release 0.01&quot;, Torvalds lists the GNU software that is required to run Linux:&lt;ref name=&quot;Linux001&quot;/&gt;
+
+{{quote|Sadly, a kernel by itself gets you nowhere. To get a working system you need a shell, compilers, a library etc. These are separate parts and may be under a stricter (or even looser) copyright. Most of the tools used with linux are [[GNU|GNU software]] and are under the GNU [[copyleft]]. These tools aren't in the distribution - ask me (or GNU) for more info.&lt;ref name=&quot;Linux001&quot;/&gt;}}
+
+In 1992, he suggested releasing the kernel under the [[GNU General Public License]]. He first announced this decision in the release notes of version 0.12.&lt;ref&gt;{{cite web
+|url = http://www.kernel.org/pub/linux/kernel/Historic/old-versions/RELNOTES-0.12
+|title = RELEASE NOTES FOR LINUX v0.12
+|first = Linus
+|last = Torvalds
+|authorlink = Linus Torvalds
+|date = 1992-01-05
+|accessdate = 2007-07-23
+|publisher = Linux Kernel Archives
+|quote = The Linux copyright will change: I've had a couple of requests to make it compatible with the GNU copyleft, removing the &quot;you may not distribute it for money&quot; condition. I agree. I propose that the copyright be changed so that it confirms to GNU - pending approval of the persons who have helped write code. I assume this is going to be no problem for anybody: If you have grievances (&quot;I wrote that code assuming the copyright would stay the same&quot;) mail me. Otherwise The GNU copyleft takes effect as of the first of February. If you do not know the gist of the GNU copyright - read it.
+|archiveurl = http://web.archive.org/web/20110721105526/http://www.kernel.org/pub/linux/kernel/Historic/old-versions/RELNOTES-0.12 
+|archivedate = 21 July 2011
+}}&lt;/ref&gt; In the middle of December 1992 he published version 0.99 using the GNU GPL.&lt;ref name=&quot;gpl_version&quot;&gt;''[ftp://ftp.kernel.org/pub/linux/kernel/Historic/v0.99/linux-0.99.tar.Z z-archive of Linux version 0.99]'', kernel.org, December 1992&lt;/ref&gt;
+
+Linux and GNU developers worked to integrate GNU components with Linux to make a fully functional and free operating system.&lt;ref name=&quot;Overview of GNU&quot;&gt;''[http://www.gnu.org/gnu/gnu-history.html]''&lt;/ref&gt;
+
+Torvalds has stated, âmaking Linux GPL'd was definitely the best thing I ever did.â&lt;ref name=&quot;Yamagata_Interview&quot;&gt;Hiroo Yamagata: [http://www.tlug.jp/docs/linus.html ''The Pragmatist of Free Software'', Linus Torvalds Interview], 05.08.1997&lt;/ref&gt;
+
+==GNU/Linux naming controversy==
+{{Details|GNU/Linux naming controversy}}
+The designation &quot;Linux&quot; was initially used by Torvalds only for the Linux kernel. The kernel was, however, frequently used together with other software, especially that of the GNU project. This quickly became the most popular adoption of GNU software. In June 1994 in GNU's bulletin, Linux was referred to as a &quot;free UNIX clone&quot;, and the [[Debian]] project began calling its product ''Debian GNU/Linux''. In May 1996, Richard Stallman published the editor [[Emacs]] 19.31, in which the type of system was renamed from Linux to Lignux. This spelling was intended to refer specifically to the combination of GNU and Linux, but this was soon abandoned in favor of &quot;GNU/Linux&quot;.&lt;ref&gt;[http://www.gnu.org/gnu/linux-and-gnu.html Linux and GNU - GNU Project - Free Software Foundation (FSF)&lt;!-- Bot generated title --&gt;]&lt;/ref&gt;
+
+This name garnered varying reactions. The GNU and Debian projects use the name, although most people simply use the term &quot;Linux&quot; to refer to the combination.&lt;ref name=&quot;OSWeekly&quot;&gt;{{cite web|url = http://www.osweekly.com/index.php?option=com_content&amp;Itemid=&amp;task=view&amp;id=2242|title = The &quot;GNU/Linux&quot; and &quot;Linux&quot; Controversy|accessdate = 26 October 2008|last = Govind|first = Puru|authorlink = |year = 2006|month = May|archiveurl = http://replay.waybackmachine.org/20090225043053/http://www.osweekly.com/index.php?option=com_content&amp;Itemid=&amp;task=view&amp;id=2242 |archivedate = 25 February 2009}}&lt;/ref&gt;
+
+==Official mascot==
+{{Main|Tux}}
+[[Image:Tux.svg|100px|thumb|[[Tux]]]]
+Torvalds announced in 1996 that there would be a mascot for Linux, a penguin. This was due the fact when they were about to select the mascot, Torvalds did mention he was bitten by a Little Penguin on a visit to the National Zoo &amp; Aquarium, Canberra, Australia.&lt;!-- the quote used here was kind of shitty (in readability; if you want to mention this, it would be best to paraphrase) --&gt; [[Larry Ewing]] provided the original draft of today's well known mascot based on this description.  The name [[Tux]] was suggested by James Hughes as derivative of ''Torvalds' UniX''.&lt;ref name= fun /&gt;
+
+==New development==
+===Kernel===
+There are many other well-known maintainers for the Linux kernel beside Torvalds such as [[Alan Cox]] and [[Marcelo Tosatti]]. Cox maintained version 2.2 of the kernel until it was discontinued at the end of 2003. Likewise, Tosatti maintained version 2.4 of the kernel until the middle of 2006. [[Andrew Morton (computer programmer)|Andrew Morton]] steers the development and administration of the 2.6 kernel, which was released on 18 December 2003 in its first stable incarnation. Also the older branches are still constantly improved.
+
+===Community===
+The largest part of the work on Linux is performed by the community: the thousands of programmers around the world that use Linux and send their suggested improvements to the maintainers. Various companies have also helped not only with the development of the Kernels, but also with the writing of the body of auxiliary software, which is distributed with Linux.
+
+It is released both by organized projects such as [[Debian]], and by projects connected directly with companies such as [[Fedora (Linux distribution)|Fedora]] and [[openSUSE]]. The members of the respective projects meet at various conferences and fairs, in order to exchange ideas. One of the largest of these fairs is the [[LinuxTag]] in [[Germany]] (currently in [[Berlin]]), where about 10,000 people assemble annually, in order to discuss Linux and the projects associated with it.
+
+===Open Source Development Lab and Linux Foundation===
+The Open Source Development Lab (OSDL) was created in the year 2000, and is an independent nonprofit organization which pursues the goal of optimizing Linux for employment in data centers and in the carrier range. It served as sponsored working premises for Linus Torvalds and also for Andrew Morton (until the middle of 2006 when Morton transferred to Google). Torvalds works full-time on behalf of OSDL, developing the Linux Kernels.
+
+On January 22, 2007, OSDL and the [[Free Standards Group]] merged to form [[The Linux Foundation]], narrowing their respective focuses to that of promoting [[Linux|GNU/Linux]] in competition with [[Microsoft Windows]].&lt;ref&gt;{{cite press release
+ |title=New Linux Foundation Launches â Merger of Open Source Development Labs and Free Standards Group
+ |publisher=The Linux Foundation
+ |date=January 22, 2007
+ |url=http://linux-foundation.org/weblogs/press/2007/01/21/new-linux-foundation-launches-%e2%80%93-merger-of-open-source-development-labs-and-free-standards-group/
+ |accessdate=2007-01-21
+ |quote=&quot;Computing is entering a world dominated by two platforms: Linux and Windows.&quot;
+}}&lt;/ref&gt;
+
+===Companies===
+Despite being open-source, a few companies profit from Linux. These companies, most of which are also members of the Open Source Development Lab, invest substantial resources into the advancement and development of Linux, in order to make it suited for various application areas. This includes hardware donations for driver developers, cash donations for people who develop Linux software, and the employment of Linux programmers at the company. Some examples are IBM and HP, which use Linux on their own servers, and Red Hat, which maintains its own distribution. Likewise [[Nokia]] supports Linux by the development and LGPL licensing of Qt, which makes the development of [[KDE]] possible, and by employing some of the X and KDE developers.
+
+==Controversy over Linux==
+Linux has been surrounded by controversy repeatedly since its inception.
+
+=== &quot;Linux is obsolete&quot; ===
+{{Main|TanenbaumâTorvalds debate}}
+In 1992 [[Andrew S. Tanenbaum]], recognized computer scientist and author of the [[Minix]] [[microkernel]] system, wrote a Usenet article on the newsgroup comp.os.minix with the title &quot;Linux is obsolete&quot;,&lt;ref&gt;{{Cite newsgroup
+ | author = A. S. Tanenbaum
+ | title = LINUX is obsolete
+ | date = January 29, 1992
+ | newsgroup = comp.os.minix
+ | id = 12595@star.cs.vu.nl
+ | url = http://groups.google.com/group/comp.os.minix/browse_thread/thread/c25870d7a41696d2/f447530d082cd95d?tvc=2
+ | accessdate = 2008-07-16
+}}&lt;/ref&gt; which marked the beginning of a famous debate about the structure of the then-recent Linux kernel. Among the most significant criticisms were that:
+
+* The kernel was [[monolithic kernel|monolithic]] and thus old-fashioned.
+* The lack of [[Porting|portability]], due to the use of exclusive features of the Intel 386 processor. &quot;Writing a new operating system that is closely tied to any particular piece of hardware, especially a weird one like the Intel line, is basically wrong.&quot;&lt;ref&gt;{{Cite newsgroup
+ | author = A. S. Tanenbaum
+ | title = Re: LINUX is obsolete
+ | date = January 30, 1992
+ | newsgroup = comp.os.minix
+ | id = 12615@star.cs.vu.nl
+ | url = http://groups.google.com/group/comp.os.minix/browse_thread/thread/c25870d7a41696d2/625c4a78723eeef5?#625c4a78723eeef5
+ | accessdate = 2008-07-16
+}}&lt;/ref&gt;
+* There was no strict control of the source code by any individual person.&lt;ref name=&quot;Tanenbaum05Feb92&quot;&gt;{{cite web|url = http://web.archive.org/web/20090605091222/http://www.educ.umu.se/~bjorn/mhonarc-files/obsolete/msg00088.html|title = Re: Unhappy campers|accessdate = 2008-10-19|last = Tanenbaum|first = Andy|authorlink = |year = 1992|month = February}}&lt;/ref&gt;
+* Linux employed a set of features which were useless (Tanenbaum believed that multithreaded [[file system]]s were simply a &quot;performance hack&quot;).&lt;ref name=&quot;Tanenbaum_Usenet&quot;&gt;Andrew Tanenbaum, Linus Torvalds and others: ''[http://web.archive.org/web/20100503140306/http://www.educ.umu.se/~bjorn/mhonarc-files/obsolete/msg00009.html Linux is obsolete]'' Usenet post, 29.01.1992&lt;/ref&gt;
+
+Tanenbaum's prediction that Linux would become outdated within a few years and replaced by [[GNU Hurd]] (which he considered to be more modern) proved incorrect. Linux has been ported to all major platforms and its open development model has led to an exemplary pace of development. In contrast, GNU Hurd has not yet reached the level of stability that would allow it to be used on a production server.&lt;ref name=&quot;Hurd_Project&quot;&gt;''[http://www.gnu.org/software/hurd/hurd.html#status The GNU Hurd Project]''&lt;/ref&gt; His dismissal of the Intel line of 386 processors as 'weird' has also proven short-sighted, as the [[x86]] series of processors and the [[Intel Corporation]] would later become near ubiquitous in personal computers.
+
+===Samizdat===
+In his unpublished book ''[[Samizdat (book)|Samizdat]]'', [[Kenneth Brown (author)|Kenneth Brown]] claims that Torvalds illegally copied code from MINIX. These claims have been refuted by Tanenbaum:&lt;ref name=&quot;ast_brown&quot;&gt;{{cite web
+ | url = http://www.cs.vu.nl/~ast/brown/
+ | title = Some Notes on the &quot;Who wrote Linux&quot; Kerfuffle, Release 1.5
+ | last = Tanenbaum
+ | first = Andrew S.
+ | authorlink = Andrew S. Tanenbaum
+ | accessdate = 2009-10-22
+}}&lt;/ref&gt;
+
+{{quote|
+He [Kenneth Brown] wanted to go on about the ownership issue, but he was also trying to avoid telling me what his real purpose was, so he didn't phrase his questions very well. Finally he asked me if I thought Linus wrote Linux. I said that to the best of my knowledge, Linus wrote the whole kernel himself, but after it was released, other people began improving the kernel, which was very primitive initially, and adding new software to the system--essentially the same development model as MINIX. Then he began to focus on this, with questions like: &quot;Didn't he steal pieces of MINIX without permission.&quot; I told him that MINIX had clearly had a huge influence on Linux in many ways, from the layout of the file system to the names in the source tree, but I didn't think Linus had used any of my code.}}
+
+The book's claims, methodology and references were seriously questioned and in the end it was never released and was delisted from the distributor's site.
+
+===Competition from Microsoft===
+Although Torvalds has said that Microsoft's feeling threatened by Linux in the past was of no consequence to him, the Microsoft and Linux camps had a number of antagonistic interactions between 1997 and 2001. This became quite clear for the first time in 1998, when the first [[Halloween document]] was brought to light by [[Eric S. Raymond]]. This was a short essay by a Microsoft developer that sought to lay out the threats posed to Microsoft by [[free software]] and identified strategies to counter these perceived threats. However the [[Free Software Foundation]] issued a statement that Microsoft's production of [[proprietary software]] is bad for software users because it denies users &quot;their rightful freedom.&quot;&lt;ref&gt;{{cite web
+|url = http://www.gnu.org/philosophy/microsoft.html
+|title = Is Microsoft the Great Satan?
+|accessdate = 2007-08-14
+|author = Free Software Foundation
+|authorlink = Free Software Foundation
+|date = 2007-06-19
+|work = Philosophy of the GNU Project
+|quote = We see that Microsoft is doing something that is bad for software users: making software proprietary and thus denying users their rightful freedom. But Microsoft is not alone in this; almost all software companies do the same thing to the users. If other companies manage to dominate fewer users than Microsoft, that is not for lack of trying.
+}}&lt;/ref&gt;
+
+Competition entered a new phase in the beginning of 2004, when [[Microsoft]] published results from customer case studies evaluating the use of Windows vs. Linux under the name âGet the Factsâ on its own web page. Based on inquiries, research analysts, and some Microsoft sponsored investigations, the  case studies claimed that enterprise use of Linux on servers compared unfavorably to the use of Windows in terms of reliability, security, and [[total cost of ownership]].&lt;ref&gt;{{cite web| title = Get the Facts| publisher = Microsoft| year = 2004| url = http://www.microsoft.com/windowsserversystem/facts/default.mspx| accessdate = 2006-11-24}}&lt;/ref&gt;
+
+In response, commercial Linux distributors produced their own studies, surveys and testimonials to counter Microsoft's campaign. [[Novell]]'s web-based campaign at the end of 2004 was entitled âUnbending the truthâ and sought to outline the advantages as well as dispelling the widely publicized legal liabilities of Linux deployment (particularly in light of the [[#SCO|''SCO v IBM'' case]]). Novell particularly referenced the Microsoft studies in many points. IBM also published a series of studies under the title âThe Linux at IBM competitive advantageâ to again parry Microsoft's campaign. Red Hat had a campaign called âTruth Happensâ aimed at letting the performance of the product speak for itself, rather than advertising the product by studies.{{Citation needed|date=December 2007}}
+
+&lt;!-- to be fixed later --&gt;
+&lt;!-- Most members of the Linux community, handled the issue [but?] calmly and stichelten with jokes like &quot;Linux and your PC is never blue&quot; or &quot;Sooner or later we will migrate.&quot; Among other things, the magazine also published LinuxUser a not-quite-serious review of Windows XP under the criticisms of a typical Linux distribution.
+--&gt;
+In the autumn of 2006, [[Novell#Agreement with Microsoft|Novell and Microsoft announced an agreement]] to co-operate on software interoperability and patent protection.&lt;ref&gt;{{cite web| title = Open Letter to Community from Novell| publisher = Novell| year = 2006| url = http://www.novell.com/linux/microsoft/community_open_letter.html| accessdate = 2007-03-23}}&lt;/ref&gt; This included an agreement that customers of either Novell or Microsoft may not be sued by the other company for patent infringement. This patent protection was also expanded to non-free software developers&lt;!--  non-commercial free software developers? --&gt;. The last part was criticized because it only included non-commercial developers.
+
+In July 2009, Microsoft submitted 22,000 lines of source code to the Linux kernel under the GPLV2 license, which were subsequently accepted. Although this has been referred to as &quot;an historic move&quot; and as a possible bellwether of an improvement in Microsoft's corporate attitudes toward Linux and open-source software, the decision was not altogether altruistic, as it promised to lead to significant competitive advantages for Microsoft and avoided legal action against Microsoft. Microsoft was actually compelled to make the code contribution when [[Vyatta]] principal engineer and Linux contributor Stephen Hemminger discovered that Microsoft had incorporated a Hyper-V network driver, with GPL-licenced open source components, statically linked to closed-source binaries in contravention of the GPL licence. Microsoft contributed the drivers to rectify the licence violation, although the company attempted to portray it as a charitable act, rather than one to avoid legal action against it. In the past Microsoft had termed Linux a &quot;cancer&quot; and &quot;communist&quot;.&lt;ref&gt;{{cite web
+|url=http://www.networkworld.com/news/2009/072009-microsoft-linux-source-code.html?hpg1=bn
+|title=Microsoft stuns Linux world, submits source code to kernel
+|author=John Fontana
+|authorlink=Network World online magazine
+|accessdate=2009-07-20
+|quote=In an historic move, Microsoft Monday submitted driver source code for inclusion in the Linux kernel under a GPLv2 license. [...] Greg Kroah-Hartman, the Linux driver project lead and a Novell fellow, said he accepted 22,000 lines of Microsoft's code at 9 a.m.PST Monday. Kroah-Hartman said the Microsoft code will be available as part of the next Linux public tree release in the next 24 hours. The code will become part of the 2.6.30.1 stable release. [...] ''Then the whole world will be able to look at the code,'' he said.
+}}
+&lt;/ref&gt;&lt;ref name=&quot;Paul20Jul09&quot;&gt;{{cite web|url = http://arstechnica.com/microsoft/news/2009/07/microsoft-aims-at-vm-market-with-linux-kernel-code-offering.ars|title = Microsoft aims at VM market with Linux kernel code offering|accessdate = 2009-07-22|last = Paul|first = Ryan|authorlink = |year = 2009|month = July}}&lt;/ref&gt;&lt;ref name=&quot;Holwerda23Jul09&quot;&gt;{{cite web|url = http://www.osnews.com/story/21882/Microsoft_s_Linux_Kernel_Code_Drop_Result_of_GPL_Violation|title = Microsoft's Linux Kernel Code Drop Result of GPL Violation|accessdate = 2009-07-23|last = Holwerda|first = Thom|authorlink = |year = 2009|month = July}}&lt;/ref&gt;&lt;ref name=&quot;MicrosoftPressRelease20Jul09&quot;&gt;{{cite web|url = http://www.microsoft.com/presspass/features/2009/Jul09/07-20LinuxQA.mspx|title = Microsoft Contributes Linux Drivers to Linux Community|accessdate = 2009-07-23|last = [[Microsoft]]|authorlink = |year = 2009|month = July}}&lt;/ref&gt;&lt;ref name=&quot;FSMJuly09&quot;&gt;{{cite web|url = http://www.freesoftwaremagazine.com/columns/yes_linus_microsoft_hating_disease_and_its_pandemic|title = Yes Linus, Microsoft hating is a disease. And it's a pandemic|accessdate = 2009-08-01|last = Richmond|first = Gary|authorlink = |year = 2009|month = August}}&lt;/ref&gt;
+
+===SCO===
+{{Main|SCO-Linux controversies}}
+In March 2003, the [[SCO Group]] accused IBM of violating their copyright on UNIX by transferring code from UNIX to Linux. SCO claims ownership of the copyrights on UNIX and a lawsuit was filed against IBM. Red Hat has countersued and SCO has since filed other related lawsuits. At the same time as their lawsuit, SCO began selling Linux licenses to users who did not want to risk a possible complaint on the part of SCO. Since [[Novell]] also claims the copyrights to UNIX, it filed suit against SCO.
+
+SCO has since filed for bankruptcy.&lt;ref&gt;{{cite web|url=http://www.news.com/8301-13580_3-9778778-39.html|title=SCO Group files for bankruptcy protection|date=2007-09-14|accessdate=2008-01-14|publisher=CNet News.com}}&lt;/ref&gt;
+
+===Trademark rights===
+In 1994 and 1995, several people from different countries attempted to register the name &quot;Linux&quot; as a trademark. Thereupon requests for royalty payments were issued to several Linux companies, a step with which many developers and users of Linux did not agree. Linus Torvalds clamped down on these companies with help from [[Linux International]] and was granted the [[trademark]] to the name, which he transferred to Linux International. Protection of the trademark was later administered by a dedicated foundation, the non-profit [[Linux Mark Institute]]. In 2000, Linus Torvalds specified the basic rules for the assignment of the licenses. This means that anyone who offers a product or a service with the name ''Linux'' must possess a license for it, which can be obtained through a unique purchase.
+
+In June 2005, a new controversy developed over the use of royalties generated from the use of the Linux trademark. The Linux Mark Institute, which represents Linus Torvalds' rights, announced a price increase from 500 to 5,000 dollars for the use of the name. This step was justified as being needed to cover the rising costs of trademark protection.
+
+In response to this increase, the community became displeased, which is why Linus Torvalds made an announcement on 21 August 2005, in order to dissolve the misunderstandings. In an e-mail he described the current situation as well as the background in detail and also dealt with the question of who had to pay license costs:
+
+{{quote|[...] And letâs repeat: somebody who doesnât want to _protect_ that name would never do this. You can call anything &quot;MyLinux&quot;, but the downside is that you may have somebody else who _did_ protect himself come along and send you a cease-and-desist letter. Or, if the name ends up showing up in a trademark search that LMI needs to do every once in a while just to protect the trademark (another legal requirement for trademarks), LMI itself might have to send you a cease-and-desist-or-sublicense it letter.
+
+At which point you either rename it to something else, or you sublicense it. See? Itâs all about whether _you_ need the protection or not, not about whether LMI wants the money or not.
+
+[...] Finally, just to make it clear: not only do I not get a cent of the trademark money, but even LMI (who actually administers the mark) has so far historically always lost money on it. Thatâs not a way to sustain a trademark, so theyâre trying to at least become self-sufficient, but so far I can tell that lawyers fees to _give_ that protection that commercial companies want have been higher than the license fees. Even pro bono lawyers charge for the time of their costs and paralegals etc.|Linus Torvalds
+&lt;ref name=&quot;Torvalds_Markenrechte&quot;&gt;Linus Torvalds: ''[http://marc.info/?l=linux-kernel&amp;m=112458521702385&amp;w=2 Linus trademarks Linux?!!]'' from the linux-Kernel mailing list, 21.08.2005&lt;/ref&gt;}}
+
+The Linux Mark Institute has since begun to offer a free, perpetual worldwide sublicense.&lt;ref&gt;{{cite web
+ | url = http://www.linuxmark.org
+ | title = Linux Mark Institute
+ | accessdate = 2008-02-24
+ | quote = LMI has restructured its sublicensing program. Our new sublicense agreement is: Free â approved sublicense holders pay no fees; Perpetual â sublicense terminates only in breach of the agreement or when your organization ceases to use its mark; Worldwide â one sublicense covers your use of the mark anywhere in the world
+}}&lt;/ref&gt;
+
+==Chronology==
+{{See also|Linux adoption}}
+*1983: Richard Stallman creates the GNU project with the goal of creating a free operating system.
+*1989: Richard Stallman writes the first version of the [[GNU General Public License]].
+*1991: The Linux kernel is publicly announced on 25 August by the 21 year old Finnish student Linus Benedict Torvalds.&lt;ref name=&quot;groups.google.com&quot;/&gt;
+*1992: The Linux kernel is relicensed under the GNU GPL. The first so called âLinux distributionsâ are created.
+*1993: Over 100 developers work on the Linux kernel. With their assistance the kernel is adapted to the GNU environment, which creates a large spectrum of application types for Linux. The oldest currently existing Linux distribution, [[Slackware]], is released for the first time. Later in the same year, the [[Debian]] project is established. Today it is the largest community distribution.
+*1994: In March Torvalds judges all components of the kernel to be fully matured: he releases version 1.0 of Linux. The [[XFree86]] project contributes a graphic user interface (GUI). In this year the companies [[Red Hat]] and [[SUSE Linux distributions|SUSE]] publish version 1.0 of their Linux distributions.
+*1995: Linux is ported to the [[DEC Alpha]] and to the [[Sun SPARC]]. Over the following years it is ported to an ever greater number of platforms.
+*1996: Version 2.0 of the Linux kernel is released. The kernel can now serve several processors at the same time, and thereby becomes a serious alternative for many companies.
+*1998: Many major companies such as IBM, Compaq and Oracle announce their support for Linux. In addition a group of programmers begins developing the graphic user interface [[KDE]].
+*1999: A group of developers begin work on the graphic environment [[GNOME]], which should become a free replacement for KDE, which depended on the then proprietary [[Qt (toolkit)|Qt toolkit]]. During the year IBM announces an extensive project for the support of Linux.
+*2004: The [[XFree86]] team splits up and joins with the existing X Window standards body to form the [[X.Org Foundation]], which results in a substantially faster development of the [[X.Org Server|X Window Server]] for Linux.
+*2005: The project openSUSE begins a free distribution from Novell's community. Also the project OpenOffice.org introduces version 2.0 that now supports OASIS OpenDocument standards in October.
+*2006: Oracle releases its own distribution of Red Hat. Novell and Microsoft announce a cooperation for a better interoperability.
+*2007: Dell starts distributing laptops with [[Ubuntu (operating system)|Ubuntu]] pre-installed in them.
+*2011: Version 3.0 of the Linux kernel is released.
+
+==See also==
+{{Portal|Free software}}
+*[[History of free software]]
+
+{{clear}}
+
+==References==
+{{Reflist|colwidth=30em}}
+
+==External links==
+*[http://netfiles.uiuc.edu/rhasan/linux History of Linux]
+*[http://www.cs.cmu.edu/~awb/linux.history.html LINUX's History by Linus Torvalds]
+{{Linux}}
+{{FLOSS}}
+
+{{DEFAULTSORT:History Of Linux}}
+[[Category:Linux kernel|*]]
+[[Category:History of software|Linux kernel]]
+[[Category:Free software culture and documents]]
+
+{{Link FA|de}}
+[[ca:HistÃ²ria de Linux]]
+[[de:Geschichte von Linux]]
+[[es:Historia de Linux]]
+[[ml:à´²à´¿à´¨à´àµà´¸à´¿à´¨àµà´±àµ à´à´°à´¿à´¤àµà´°à´]]
+[[pt:HistÃ³ria do Linux]]
+[[ru:ÐÑÑÐ¾ÑÐ¸Ñ Linux]]
+[[zh:Linuxåå²]]</rev></revisions></page></pages></query></api>

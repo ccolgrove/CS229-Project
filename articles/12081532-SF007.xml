@@ -1,0 +1,51 @@
+<?xml version="1.0"?><api><query><pages><page pageid="12081532" ns="0" title="SkoleSYS"><revisions><rev xml:space="preserve">{{Orphan|date=October 2011}}
+
+{{Infobox OS
+|name = SkoleSYS
+|logo = &lt;!-- Unsourced image removed: [[Image:Skolesys_logo.png|right|thumbnail|The SkoleSYS logo]] --&gt;
+|screenshot = 
+|caption = 
+|developer = SkoleSYS / [[Jakob Simon-Gaarde]]
+|family = [[Linux]]
+|source_model = [[free software]]
+|latest_release_version = 
+|latest_release_date = 
+|kernel_type = [[Monolithic kernel]]
+|operating_system = Any (web based application)
+| genre                  = [[Student Information System]], [[Enterprise resource planning|ERP]]
+|license = GPL
+|platform = [[Python]]
+|ui = [[KDE]]/[[Gnome]]
+|working_state = Current
+|website = [http://www.skolesys.dk www.skolesys.dk]
+}}
+
+'''SkoleSYS''' is a [[GPL]] licensed, free [[student information system]] developed to target small schools with limited financial resources. The project features a mainserver which acts as gateway, file server and user account database. The system is built for ([[Kubuntu|k]])[[Ubuntu (operating system)|Ubuntu]] based distributions but should not be difficult to implement support for other [[Linux distribution]]s.
+
+==SkoleSYS Features==
+
+There are three [[debian]] packages skolesys-seeder, skolesys-mainserver, skolesys-client. The seeder is an intermidiate package which is used to install on new hosts and then execute one of following: ss_seed_mainserver, ss_seed_ltspserver, ss_seed_workstation. skolesys-client is used for both [[Linux Terminal Server Project|LTSP]] servers and workstations as they are both clients of a mainserver.
+
+SkoleSYS is '''not''' a [[learning management system]] (LMS), such as [[Moodle]].
+
+{{Python (programming language)}}
+{{Python Web Application Frameworks}}
+{{FOSS}}
+
+{{DEFAULTSORT:Skolesys}}
+[[Category:2004 software]]
+[[Category:Edubuntu]]
+[[Category:Educational technology]]
+[[Category:Free cross-platform software]]
+[[Category:Free educational software]]
+[[Category:Free software projects]]
+[[Category:Open source content management systems]]
+[[Category:Python (programming language)| ]]
+[[Category:School-administration software]]
+[[Category:Ubuntu (operating system) derivatives]]
+[[Category:Free software programmed in Python]]
+
+
+
+{{web-stub}}
+{{cms-software-stub}}</rev></revisions></page></pages></query></api>

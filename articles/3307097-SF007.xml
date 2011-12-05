@@ -1,0 +1,50 @@
+<?xml version="1.0"?><api><query><pages><page pageid="3307097" ns="0" title="Loadlin"><revisions><rev xml:space="preserve">{{lowercase}}
+{{Infobox Software
+| name                   = loadlin
+| logo                   =
+| screenshot             =
+| caption                =
+| developer              = Hans Lermen, Samuel Thibault
+| released               =
+| latest release version = 1.6e
+| latest release date    = {{Start date and age|2010|08|25}}
+| latest preview version =
+| latest preview date    =
+| operating system       = [[DOS]], [[Microsoft Windows|Windows]]
+| status                 = Active
+| genre                  = [[Booting|Bootloader]]
+| license                = [[GNU General Public License]]
+| website                = [http://youpibouh.thefreecat.org/loadlin/ Official website]
+}}
+
+'''loadlin''' is a [[Linux]] [[boot loader]] that runs under [[DOS]] or [[Microsoft Windows]] ([[Windows 95|95]], [[Windows 98|98]] or [[Windows Me|Me]] only). It allows the Linux system to load and replace the running DOS/Windows without altering existing DOS/Windows system files.
+
+loadlin and the [[Linux kernel]] are both files on a file system accessible to DOS/Windows. It loads the Linux [[kernel (computer science)|kernel]] into memory from a file.  It also places various configuration parameters into memory, and transfers control to the kernel. The kernel reads these parameters, initializes and runs, replacing DOS/Windows completely.
+
+Optionally, it can be configured to supply the kernel with a [[RAM disk]], loaded into memory before transferring control to the Linux kernel.  It passes to the kernel information about the RAM disk and its location.  Furthermore, parameters can be passed to the Linux kernel that make it use that RAM disk as its root file system.  The startup programs in that file system often cause Linux to mount another file system (perhaps on a fixed disk) and switch to using that as its root file system.
+
+loadlin operates as a separate program and does not modify the [[master boot record]], which can be useful for situations where there are concerns about modifying the MBR (which could lead to an unbootable system if done incorrectly). Due to its structure, loadlin only works on DOS-based operating systems, and will not work on NT-based versions of Windows.
+
+==See also==
+{{Portal|Free software}}
+*[[GNU GRUB]]
+*[[LILO (boot loader)]]
+*[[GAG (boot loader)|GAG]] (Gestor de Arranque GrÃ¡fico)
+*[[SYSLINUX]]
+
+==External links==
+*[http://tldp.org/HOWTO/Loadlin+Win95-98-ME.html HOWTO] at the [[Linux Documentation Project]]
+*[http://tldp.org/HOWTO/Install-Strategies/x349.html HOWTO] at the [[Linux Documentation Project]]
+
+===Download===
+*http://youpibouh.thefreecat.org/loadlin/
+
+
+
+{{Linux-stub}}
+
+[[Category:Free boot loaders]]
+
+[[de:Loadlin]]
+[[pl:Loadlin]]
+[[ru:Loadlin]]</rev></revisions></page></pages></query></api>

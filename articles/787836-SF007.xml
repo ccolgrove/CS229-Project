@@ -1,0 +1,150 @@
+<?xml version="1.0"?><api><query><pages><page pageid="787836" ns="0" title="Fstab"><revisions><rev xml:space="preserve">{{lowercase|fstab}}
+The '''fstab''' (/etc/fstab) (or ''[[file system]]s table'') file is a system [[computer configuration|configuration]] file commonly found on [[Unix]] systems. The fstab file typically lists all available disks and disk [[partition (computing)|partition]]s, and indicates how they are to be initialized or otherwise integrated into the overall system's file system. fstab is still used for basic system configuration, notably of a system's main hard drive and startup file system, but for other uses has been superseded in recent years by automatic mounting.
+
+The fstab file is most commonly used by the &lt;code&gt;[[mount (Unix)|mount]]&lt;/code&gt; command, which reads the fstab file to determine which options should be used when mounting the specified device. It is the duty of the [[system administrator]] to properly create and maintain this file.
+
+The file has other names on some versions of [[Unix]]; for instance, it is &lt;code&gt;/etc/vfstab&lt;/code&gt; on [[Solaris (operating system)|Solaris]].
+
+== Modern use ==
+Traditionally, the fstab was only read by programs, and not automatically written (it is instead manually written by the sysadmin). However, some administration tools can automatically build and edit fstab, or act as graphical editors for it, such as the Kfstab graphical configuration utility available for [[KDE]].
+
+Modern [[Linux]] systems use [[udev]] as an [[automounter]] to handle [[hot swapping]] devices instead of rewriting the fstab file on the fly, and thus fstab is less important than in the past. Programs such as [[pmount]] allow non-root users to mount and unmount filesystems without a corresponding fstab entry; traditional Unix has always allowed privileged users to [[Mount_(Unix) | mount]] or unmount without an fstab entry.
+
+==Example==
+The following is an example of an fstab file on a typical [[Linux]] system:
+
+&lt;source lang=bash&gt;
+# device name   mount point     fs-type      options                                             dump-freq pass-num
+LABEL=/         /               ext3         defaults                                            1 1
+/dev/hda6       swap            swap         defaults                                            0 0
+none            /dev/pts        devpts       gid=5,mode=620                                      0 0
+none            /proc           proc         defaults                                            0 0
+none            /dev/shm        tmpfs        defaults                                            0 0
+
+# Removable media
+/dev/cdrom      /mount/cdrom    udf,iso9660  noauto,owner,kudzu,ro                               0 0
+/dev/fd0        /mount/floppy   auto         noauto,owner,kudzu                                  0 0
+
+# NTFS Windows XP partition
+/dev/hda1       /mnt/WinXP      ntfs-3g      quiet,defaults,locale=en_US.utf8,umask=0,noexec	0 0
+
+# Partition shared by Windows and Linux
+/dev/hda7       /mnt/shared     vfat         umask=000                                           0 0
+
+# mounting tmpfs
+tmpfs           /mnt/tmpfschk   tmpfs        size=100m                                           0 0
+
+# mounting cifs
+//pingu/ashare  /store/pingu    cifs         credentials=/root/smbpass.txt                       0 0
+
+# mounting NFS
+pingu:/store    /store          nfs          rw                                                  0 0
+&lt;/source&gt;
+
+The columns are as follows:
+
+# The ''device name'' or other means of locating the partition or data source.  
+# The ''mount point'', where the data is to be attached to the filesystem.  
+# The ''filesystem type'', or the algorithm used to interpret the filesystem.  
+# ''Options'', including if the filesystem should be [[Mount (computing)|mount]]ed at boot.  (''kudzu'' is an option specific to [[Red Hat Linux|Red Hat]] and [[Fedora (operating system)|Fedora Core]].)
+# ''dump-freq'' adjusts the archiving schedule for the partition (used by [[dump (program)|dump]]).  
+# ''pass-num'' Controls the order in which fsck checks the device/partition for errors at boot time. The root device should be 1. Other partitions should be either 2 (to check after root) or 0 (to disable checking for that partition altogether).
+
+A value of zero in either of the last 2 columns disables the corresponding feature. For the whitespace character in paths the character code &quot;\040&quot; is used.
+
+==Common options to all filesystems==
+As the filesystems in /etc/fstab will eventually be mounted using mount(8) it is not surprising that the options field simply contains a comma-separated list of options which will be passed directly to mount when it tries to mount the filesystem.
+
+The options common to all filesystems are:
+
+; &lt;code&gt;atime / noatime / relatime / strictatime (Linux-specific)&lt;/code&gt;
+:The Unix [[stat (Unix)|stat]] structure records when files are last accessed (atime), modified (mtime), and created (ctime). One result is that [[atime (Unix)|atime]] is written every time a file is ''read,'' which has been heavily criticized for causing performance degradation and increased wear. However, atime is used by some applications and desired by some users, and thus is configurable as atime (update on access), noatime (do not update), or (in Linux) relatime (update atime if older than mtime). Through Linux 2.6.29, atime was the default; as of 2.6.30 (9 June 2009), relatime is the default.&lt;ref&gt;[http://kernelnewbies.org/Linux_2_6_30 Linux 2 6 30] at Linux Kernel Newbies&lt;/ref&gt;
+; &lt;code&gt;auto / noauto&lt;/code&gt;
+: With the auto option, the device will be mounted automatically at bootup or when the mount -a command is issued. auto is the default option. If you do not want the device to be mounted automatically, use the noauto option in /etc/fstab. With noauto, the device can be only mounted explicitly.
+; &lt;code&gt;dev / nodev&lt;/code&gt;
+: Interpret/do not interpret block special devices on the filesystem.
+; &lt;code&gt;exec / noexec&lt;/code&gt;
+: exec lets you execute binaries that are on that partition, whereas noexec does not let you do that. noexec might be useful for a partition that contains no binaries, like /var, or contains binaries you do not want to execute on your system, or that cannot even be executed on your system. Last might be the case of a Windows partition.
+; &lt;code&gt;ro&lt;/code&gt;
+: Mount read-only.
+; &lt;code&gt;rw&lt;/code&gt;
+: Mount the filesystem read-write. Again, using this option might alleviate confusion on the part of new Linux users who are frustrated because they cannot write to their floppies, Windows partitions, or other media.
+; &lt;code&gt;sync / async&lt;/code&gt;
+: How the input and output to the filesystem should be done. sync means it is done synchronously. If you look at the example fstab, you will notice that this is the option used with the floppy. In plain English, this means that when you, for example, copy a file to the floppy, the changes are physically written to the floppy at the same time you issue the copy command.
+; &lt;code&gt;suid / nosuid&lt;/code&gt;
+: Permit/Block the operation of [[setuid|suid]], and [[setgid|sgid]] bits.
+; &lt;code&gt;user / users / nouser&lt;/code&gt;
+: &lt;code&gt;user&lt;/code&gt; permits any user to mount the filesystem. This automatically implies noexec, nosuid, nodev unless overridden. If &lt;code&gt;nouser&lt;/code&gt; is specified, only root can mount the filesystem. If &lt;code&gt;users&lt;/code&gt; is specified, every user in group ''users'' will be able to unmount the volume.
+; &lt;code&gt;owner&lt;/code&gt; (This is Linux-specific)
+: Permit the owner of device to mount.
+; &lt;code&gt;defaults&lt;/code&gt;
+: Use default settings. Default settings are defined per file system at the file system level. For ext3 file systems these can be set with the tune2fs command. The normal default for Ext3 file systems is equivalent to &lt;code&gt;rw,suid,dev,exec,auto,nouser,async&lt;/code&gt;(no acl support). Modern Red Hat based systems set acl support as default on the root file system but not on user created Ext3 file systems. Some file systems such as XFS enable acls by default. Default file system mount attributes can be over ridden in /etc/fstab.
+
+==Filesystem specific options==
+
+There are many options for the specific filesystems supported by mount. Listed below are some of the more commonly used. The full list may be found in the documentation for mount. Note that these are for Linux; traditional UNIX-like systems have generally provided similar functionality but with slightly different syntax.
+
+===ext2===
+; &lt;code&gt;check={none, normal, strict}&lt;/code&gt;
+: Sets the fsck checking level.
+; &lt;code&gt;debug&lt;/code&gt;
+: Print debugging info on each remount .
+; &lt;code&gt;sb=n&lt;/code&gt;
+: n is the block which should be used as the superblock for the fs.
+
+===fat===
+; &lt;code&gt;check={r[elaxed], n[ormal], s[trict]}&lt;/code&gt;
+: Not the same as ext2, but rather deals with allowed filenames. See mount(8).
+; &lt;code&gt;conv={b[inary], t[ext], a[uto]}&lt;/code&gt;
+: Performs DOS &lt;---&gt; UNIX text file conversions automatically. See mount(8).
+; &lt;code&gt;uid=n, gid=n&lt;/code&gt;
+: Sets the user identifier, [[User identifier (Unix)|uid]], and group identifier, [[Group identifier (Unix)|gid]], for all files on the filesystem.
+; &lt;code&gt;umask=nnn, dmask=nnn, fmask=nnn&lt;/code&gt;
+: Sets the  user file creation mode mask, [[umask]], the same for directories only, [[dmask]] and for files only, [[fmask]].
+
+===iso9660===
+; &lt;code&gt;norock&lt;/code&gt;
+: Disables [[Rock Ridge]] extensions.
+
+More detailed information about the fstab file can be found in the [[Manual page (Unix)|man page]] about [http://www.die.net/doc/linux/man/man5/fstab.5.html Linux fstab]; for other systems see below.
+
+==Mounting all filesystems==
+ mount -a
+This command will mount all (not-yet-mounted) filesystems mentioned in fstab and is used in system script startup during booting. Note that this command will ignore all those entries containing &quot;&lt;code&gt;noauto&lt;/code&gt;&quot; in the options section.
+
+==See also==
+* [[mount (unix)]], [[mount (computing)]]
+* [[mtab]]
+
+==References==
+{{reflist}}
+{{Refimprove|date=March 2010}}
+{{refbegin}}
+{{refend}}
+
+==External links==
+* [http://www.openbsd.org/cgi-bin/man.cgi?query=fstab&amp;apropos=0&amp;sektion=0&amp;manpath=OpenBSD+Current&amp;arch=i386&amp;format=html fstab man page] via [[OpenBSD]]
+* [http://netbsd.gw.com/cgi-bin/man-cgi?fstab++NetBSD-current fstab man page] by [[NetBSD]]
+* [http://www.freebsd.org/cgi/man.cgi?query=fstab&amp;apropos=0&amp;sektion=0&amp;manpath=FreeBSD+5.4-RELEASE+and+Ports&amp;format=html fstab man page] via [[FreeBSD]]
+* [http://man.he.net/?topic=fstab&amp;section=all fstab man page] from [[Linux]]
+* {{man|5|fstab}}
+* [http://manpages.ubuntu.com/manpages/karmic/en/man5/fstab.5.html fstab (5)] - on a [http://manpages.ubuntu.com/ Ubuntu Manpage Repository]
+* [http://www.tuxfiles.org/linuxhelp/fstab.html How to edit and understand /etc/fstab]
+* [http://maketecheasier.com/getting-to-know-your-fstab/2010/07/13 Getting to Know Your fstab]
+* [http://kfstab.sourceforge.net/ Kfstab]
+
+[[Category:Computer file systems]]
+[[Category:Configuration files]]
+[[Category:Unix]]
+
+[[cs:Fstab]]
+[[de:Fstab]]
+[[es:Fstab]]
+[[fr:Fstab]]
+[[it:Fstab]]
+[[mk:Fstab]]
+[[pl:Fstab]]
+[[ru:Fstab]]
+[[sk:Fstab]]
+[[sv:Fstab]]
+[[uk:Fstab]]</rev></revisions></page></pages></query></api>

@@ -1,0 +1,43 @@
+<?xml version="1.0"?><api><query><redirects><r from="LD LIBRARY PATH" to="Dynamic linker" /></redirects><pages><page pageid="3600079" ns="0" title="Dynamic linker"><revisions><rev xml:space="preserve">{{primarysources|date=March 2011}}
+In [[computing]], a '''dynamic [[Linker (computing)|linker]]''' is the part of an [[operating system]] (OS) that loads and links the [[shared libraries]] for an executable when it is executed. The specific operating system and executable format determine how the dynamic linker functions and how it is implemented. Linking is often referred to as a process that is performed at [[compile time]] of the executable while a dynamic linker is in actuality a special loader that loads external shared libraries into a running process and then binds those shared libraries dynamically to the running process. The specifics of how a dynamic linker functions is operating system dependent.
+
+== Implementations ==
+=== Microsoft Windows ===
+For the [[Microsoft Windows]] platform see the more detailed article titled [[Dynamic-link library]].
+
+===ELF-based Unix-like systems===
+In most [[Unix-like]] systems that use [[Executable and Linkable Format|ELF]] for executable images and dynamic libraries, most of the machine code that makes up the dynamic linker is actually an external executable that the operating system kernel loads and executes first in a newly constructed process address space.  At compile time an executable has the path of the dynamic linker that should be used embedded into the &lt;code&gt;.interp&lt;/code&gt; section. The operating system kernel reads this while creating the new process and in turn loads then executes this other executable binary.  That binary then loads the executable image and all the dynamically-linked libraries on which it depends, and starts the executable.  In Unix-like operating systems using ELF, dynamically-loaded shared libraries can be identified by the filename suffix &lt;tt&gt;.so&lt;/tt&gt;.
+
+The dynamic linker can be influenced into modifying its behavior during either the program's execution or the program's linking. Examples of this can be seen in the run-time linker manual pages for various Unix-like systems&lt;ref&gt;{{man|1|ld.so.1|Solaris|Solaris dynamic linker/loader}}&lt;/ref&gt;&lt;ref&gt;{{man|8|ld-linux.so|Linux||GNU libc dynamic linker/loader}}&lt;/ref&gt;&lt;ref&gt;{{man|1|rtld|FreeBSD|FreeBSD dynamic linker/loader}}&lt;/ref&gt;&lt;ref&gt;{{man|1|ld.elf_so|NetBSD|NetBSD dynamic linker/loader}}&lt;/ref&gt;&lt;ref&gt;{{man|1|ld.so|OpenBSD|OpenBSD dynamic linker/loader}}&lt;/ref&gt;. A typical modification of this behavior is the use of the '''LD_LIBRARY_PATH''' and '''LD_PRELOAD''' [[environment variables]]. These variables adjust the runtime linking process by searching for shared libraries at alternative locations and by forcefully loading and linking libraries that would otherwise not be loaded and linked, respectively.
+
+==== GNU/Linux ====
+The [[GNU]]/[[Linux]] based operating systems implement a dynamic linker model where a portion of the executable includes a very simple linker stub which causes the operating system to load an external library into memory. This linker stub is added at compile time for the target executable. The linker stub's purpose is to load the real dynamic linker machine code into memory and start the dynamic linker process by executing that newly loaded dynamic linker machine code. While the design of the operating system is to have the executable load the dynamic linker before the target executable's main function is started it however is implemented differently. The operating system knows the location of the dynamic linker and in turn loads that in memory during the process creation. Once the executable is loaded into memory the dynamic linker is already there and linker stub simply executes that code. The reason for this change is due to the fact that ELF binary format was designed for multiple [[Unix-like]] operating systems and not just the GNU/Linux operating system.&lt;ref&gt;''Understanding the Linux Kernel, O'REILLY, 3rd Edition, Chapter 20''&lt;/ref&gt;
+
+The source code for the GNU/Linux linker is part of the [[glibc]] project and can be downloaded at [http://www.gnu.org the GNU website]. The entire source code is available under the GNU [[LGPL]].
+
+=== Mac OS X and iOS ===
+The Apple [[Darwin (operating system)|Darwin]] operating system, and the [[Mac OS X]] and [[iOS (Apple)|iOS]] operating systems built atop it, implement a dynamic linker model where most of the machine code that make up the dynamic linker is actually an external executable that the operating system [[kernel (computing)|kernel]] loads and executes first in a newly constructed process address space. At compile time an executable has the path of the dynamic linker that should be used embedded into one of the [[Mach-O]] load commands. The operating system kernel reads this while creating the new process and in turn loads then executes this other executable binary. The dynamic linker not only links the target executable to the shared libraries but also places machine code functions at specific address points in memory that the target executable knows about at link time. When an executable wishes to interact with the dynamic linker it simply executes the machine specific call or jump instruction to one of those well known address points. Unlike other operating systems the executables on the Apple Mac OS X platform often interact with the dynamic linker during the execution of the process, it is even known that an executable will interact with the dynamic linker causing it to load more libraries and resolve more symbols hours after the initial launch of the executable. The reason a Mac OS X program interacts with the dynamic linker so often is due to Apple's Cocoa API and the language in which it is implemented, Objective-C. See the [[Cocoa (API)|Cocoa]] main article for more information. On the Darwin-based operating systems, the dynamic loaded shared libraries can be identified by either the filename suffix &lt;tt&gt;.dylib&lt;/tt&gt; or by its placement inside the [[Application bundle|bundle]] for a framework.
+
+The dynamic linker can be coerced into modifying some of its behavior, however unlike other Unix-like operating systems, these modifications are hints that can beâand sometimes areâignored by the dynamic linker. Examples of this can be seen with the dyld manual page &lt;ref&gt;{{man|1|dyld|Darwin|Darwin/Mac OS X dynamic linker/loader}}&lt;/ref&gt;. A typical modification of this behavior is the use of the '''DYLD_FRAMEWORK_PATH''' and '''DYLD_PRINT_LIBRARIES''' environment variables. The previously-mentioned variables adjust the executables' search path for the shared libraries, while another displays the names of the libraries as they are loaded and linked.
+
+The source code for Apple's Mac OS X dynamic linker is open source and released as part of [[Darwin (operating system)|Darwin]] and can be found in the dyld project at Apple's open source web site &lt;ref&gt;http://www.opensource.apple.com/&lt;/ref&gt;
+
+== See also ==
+* [[Dynamic loading]]
+* [[Direct binding]]
+* [[Linker (computing)]]
+* [[Loader (computing)]]
+* [[Compile time]]
+* [[Dynamic-link library]]
+* [[DLL Hell]]
+
+==References==
+{{Reflist}}
+
+[[Category:Computer libraries]]
+[[Category:Computer security exploits]]
+[[Category:Unix]]
+
+[[ca:EnllaÃ§at dinÃ mic]]
+[[he:××§×©×¨ ××× ××]]
+[[pl:Konsolidator dynamiczny]]</rev></revisions></page></pages></query></api>

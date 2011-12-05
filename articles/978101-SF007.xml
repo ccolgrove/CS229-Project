@@ -1,0 +1,91 @@
+<?xml version="1.0"?><api><query><pages><page pageid="978101" ns="0" title="Computer wallpaper"><revisions><rev xml:space="preserve">{{Multiple issues
+|tone=January 2009
+|original research=November 2009
+|weasel=November 2009}}
+{{Infobox 
+|title   = Computer wallpaper
+|image   = [[File:Ubuntu 10.10 Maverick Meerkat.png|250px]]
+|caption = [[Ubuntu 10.10 Maverick Meerkat]] desktop showing its wallpaper design.
+}}
+'''Wallpaper''' (also '''desktop picture''' and '''desktop background''') is an image used as a background of a [[graphical user interface]] on a computer screen or mobile communications device. On a computer it is usually for the [[desktop metaphor|desktop]], while for a [[mobile phone]] it is usually the background for the 'home' or 'idle' screen. Though most devices comes with a default picture, the user can usually change it to a file of their choosing.&lt;ref&gt;{{cite web |url=http://changemydesktopbackground.com/ |title=Change Background |author= |date=1/5/11 |work= |publisher= |accessdate=5 January 2011}}&lt;/ref&gt; 
+
+&quot;Wallpaper&quot; is the term used in [[Microsoft Windows]] before [[Windows Vista]] (where it is called the Desktop &quot;Background&quot;), while [[Mac OS X]] calls it a &quot;desktop picture&quot; (previously, the term '''desktop pattern''' was used to refer to a small pattern that was repeated to fill the screen).
+
+==History==
+[[Image:original-wallpaper.png|frame|Original computer wallpaper pattern, as used in Xerox's Officetalk and [[Xerox Star|Star]]; actual size.]]
+
+The [[X Window System]] was one of the earliest systems to include support for an arbitrary image as wallpaper via the xsetroot program, which at least as early as the X10R3 release in 1985 could tile the screen with any solid color or any [[binary-image]] [[X BitMap]] file.&lt;ref&gt;X10R3, [http://www.x.org/wiki/Releases/Download X.org downloads], &lt;code&gt;X10R3/X.V10R3/xsetroot/xsetroot.c&lt;/code&gt;:  xsetroot program attributed to &quot;Tony Della Fera, DEC&quot;, dated &quot;28-Nov-84&quot;.&lt;/ref&gt;  In 1989, a [[free software]] program called xgifroot was released that allowed an arbitrary color [[GIF]] image to be used as wallpaper,&lt;ref&gt;Bob Paauwe, [http://groups.google.com/group/comp.sources.x/browse_frm/thread/bf373e77c4664d2b/b859ed8f8ef843ff v05i026: xgifroot - use gif images to set root background, Part01/01], comp.sources.x [[Usenet]] group (12 November, 1989).&lt;/ref&gt; and in the same year the free xloadimage program was released which could display a variety of image formats (including color images in [[Sun Microsystems|Sun]] Rasterfile format) as the desktop background.&lt;ref&gt;Jim Frost, [http://groups.google.com/group/comp.sources.x/msg/c5e7339748df1a5f v05i027: xloadimage, Part01/02], comp.sources.x [[Usenet]] group (Nov 13 1989).&lt;/ref&gt; Subsequently a number of programs were released that added wallpaper support for additional image formats and other features, such as the xpmroot program (released in 1993 as part of [[fvwm]]&lt;ref&gt;[ftp://ftp.fvwm.org/pub/fvwm/version-1/ fvwm version 1 source code], &lt;code&gt;fvwm-1.24r/xpmroot/xpmroot.c&lt;/code&gt;: ''This is an all new program to set the root window to an Xpm pixmap'', dated ''Copyright 1993, Rob Nation''.&lt;/ref&gt;) and the [[xv (software)|xv]] software (released in 1994).
+
+The original Macintosh operating system only allowed a selection of 8&amp;times;8-pixel binary-image tiled patterns; the ability to use small color patterns was added in [[System 5]] in 1987.&lt;ref&gt;Robert R. Wiggins, &quot;All systems go. (Software Review) (System Tools 5.0 with MultiFinder.)&quot;, ''MacUser'' (1 March 1988). ''Many of the cdev modules that come with System Tools 5.0 are for the Macintosh II, including a new one called &quot;Color&quot; that allows you to change the highlight color, the color used as a background when text or an icon is selected. The General cdev also adds the ability to set the desktop pattern color on a Macintosh II.''&lt;/ref&gt;  [[MacOS 8]] in 1997 was the first Macintosh version to include built-in support for using arbitrary images as desktop pictures, rather than small repeating patterns.&lt;ref&gt;Franklin N. Tessler, &quot;Mac OS 8 arrives,&quot; ''Macworld'' (1 September 1997). ''Desktop Pictures. A new control panel lets you display your favorite picture on the desktop, with options to scale, center, or tile the image (see the label &quot;Desktop Pictures&quot; on the combination screen shot). And if you'd prefer to stick with desktop patterns, Mac OS 8 provides 40 to choose from.''&lt;/ref&gt;
+
+[[Windows 3.0]] in 1990 was the first version of Microsoft Windows to come with support for wallpaper customization, and used the term &quot;wallpaper&quot; for this feature.&lt;ref&gt;Gus Venditto, &quot;Windows 3.0 brings icons, multitasking, and ends DOS's 640k program limit,&quot; ''PC Magazine'' (1 July 1990). ''There are so many customizable options, though, it's hard not to love the program. Even the background screen (which Microsoft calls &quot;wallpaper&quot;) can be changed to display a custom design, so you can have your company logo on the opening screen with a .PCX file and a 5-minute change to the default settings.''&lt;/ref&gt; Although Windows 3.0 only came with 7 small patterns (2 black-and-white and 5 16-color), the user could supply other images in the [[BMP file format]] with up to [[8-bit color]] (although the system was theoretically capable of handling [[24-bit color]] images, it did so by [[dithering]] them to an 8-bit [[Palette (computing)|palette]]).&lt;ref&gt;Charles Petzold, &quot;Working with 24-bit color bitmaps for Windows,&quot; ''PC Magazine'' (10 September 1991). ''Every user gets seven device-independent bitmap (DIB) files with the retail package of Microsoft Windows. You can use these DIBs as wallpaper to decorate the Windows desktop. Five of the seven bitmaps have 4 bits per pixel to represent the 16 standard VGA colors. The other two are monochrome bitmaps that use 1 bit per pixel. Enterprising Windows users who frequent CompuServe can dig up some 8-bit (256-color) DIBs from the data libraries. Generally, these have been converted from existing files that were in the Compu-Serve Graphics Interchange Format (GIF). These 256-color DIBs are usable as wall-paper on the IBM 8514/A adapter and on those Super VGA boards that support 256 colors under Windows. Windows will use the colors in the DIB color table to set a palette for the wallpaper display.'' [...] ''If you think about it, though, the poor performance is entirely understandable. Windows or more precisely, the device driver for the video adapter must convert each 24-bit pixel into an 8-bit pixel-bit value that's an index into the system palette.''&lt;/ref&gt;  In the same year, third-party [[freeware]] was available for the Macintosh&lt;ref&gt;Roger Gilbert, &quot;33 unsung shareware programs&quot;, ''MacUser'' (1 October 1990). ''Are you envious of a colorful background picture on someone else's desktop? Start using ColorDesk, an advanced version of the INITs that allow illustrations to replace the background patterns. ColorDesk is a cdev that allows a color PICT image to serve as a background scene and lets users change the image at any time with a new picture located in any folder on a hard disk. Author: Paul Mercer. Free.''&lt;/ref&gt; and [[OS/2]]&lt;ref&gt;Christopher Stetson, &quot;Screen Savers: Longer life for the monitor and a feast for the eyes,&quot; ''PC Magazine'' (25 September 1990). ''In OS/2 and now Windows 3.0, where memory limitations are not as critical, animated screen savers are beginning to appear. For example, John Ridges's public-domain program for the OS/2 Presentation Manager, Deskpic, combines a screen saver with a desktop picture program.''&lt;/ref&gt; to provide similar wallpaper features otherwise lacking in those systems.  A wallpaper feature was added in a [[beta release]] of OS/2 2.0 in 1991.&lt;ref&gt;Wendy Goldman, &quot;New version may tiop scales in IBM's favor over DOS, Windows: A look at OS/2 2.0,&quot; ''Computer Reseller News'' (24 June 1991). ''A new group called Tools and Games has been introduced in OS/2 2.0. This group contains the new and improved Enhanced Editor; Seek and Scan Files; Icon Editor; Wallpaper (for creating a variety of OS/2 backgrounds); [...]''.&lt;/ref&gt;
+
+==Live wallpaper==
+A 'live wallpaper' is a type of application that works on a mobile device using the [[Android (operating system)|Android operating system]]. The application works as a wallpaper â providing the background image for the home screenâbut also works as a conventional application since it can provide user-interaction with the touch screen (allowing the image to change dynamically, for example) and access other hardware and software features within the device (accelerometer, GPS, network access, etc.).
+
+&lt;ref&gt;{{cite web|title=Live Wallpapers (Technical Article)|url=http://developer.android.com/resources/articles/live-wallpapers.html|work=developer.android.com|accessdate=5 November 2010}}&lt;/ref&gt;
+
+
+There are also applications for changing automatically the Desktop Wallpaper like the [http://wall-changer.sourceforge.net/ Wallch], [http://drapes.mindtouchsoftware.com/ Desktop Drapes'''] and [http://www.becrux.com/index.php?page=projects&amp;name=wally Wally]. &lt;!-- Note that this is the official Wally webpage --&gt;
+
+Similar functionality could be found in the [[Active Desktop]] feature of [[Windows 98]] and later versions.
+
+==Dynamic backgrounds==
+===In Mac OS X===
+[[Mac OS X]] has built-in support, via the Desktop &amp; Screen Saver panel in its System Preferences, for cycling through a folder collection of images on a timed interval or when logging in or waking from sleep.
+
+Additionally, OS X has the native ability to run a [[screen savers|screen saver]] on the desktop; in this configuration, the screen saver appears beneath the desktop icons in place of the system wallpaper. However, OS X does not come with a built-in interface to do this; it must be done through [[Apple Terminal|Terminal]] commands or various third-party applications.&lt;ref&gt;http://www.macosxtips.co.uk/index_files/set-screen-saver-to-desktop-background.html&lt;/ref&gt;
+
+===In Windows 7===
+Similarly, Windows 7 can also be set to cycle through pictures from a folder at regular intervals. If fully animated backgrounds are wanted, third party software would need to be installed.
+
+===In GNOME===
+[[GNOME]] 2 also can be set to cycle through pictures from a folder at regular intervals, similarly to Windows 7.
+
+===In Enlightenment===
+[[Enlightenment (window manager)|Enlightenment]] v17 supports image sequences, animated and interactive desktop backgrounds in its default configuration.
+
+==See also==
+{{Commons|Computer wallpaper|Computer wallpaper}}
+{{Commons category|Commons featured desktop backgrounds}}
+{{Commons category|Commons featured widescreen desktop backgrounds}}
+* [[Bliss (image)|Bliss]]
+* [[Digital Blasphemy]]
+* [[Caedes]]
+* [[VRML]] wallpaper
+* [[Wallpaper group]]
+
+==References==
+{{Reflist}}
+
+==External links==
+{{Wikibooks}}
+&lt;!--======================== {{No more links}} ============================
+    | PLEASE BE CAUTIOUS IN ADDING MORE LINKS TO THIS ARTICLE. Wikipedia  |
+    | is not a collection of links nor should it be used for advertising. |
+    |                                                                     |
+    |           Excessive or inappropriate links WILL BE DELETED.         |
+    | See [[Wikipedia:External links]] &amp; [[Wikipedia:Spam]] for details.  |
+    |                                                                     |
+    | If there are already plentiful links, please propose additions or   |
+    | replacements on this article's discussion page, or submit your link |
+    | to the relevant category at the Open Directory Project (dmoz.org)   |
+    | and link back to that category using the {{dmoz}} template.         |
+    ======================= {{No more links}} =============================--&gt;
+*{{dmoz|Computers/Software/Desktop_Customization/Wallpaper/Free|Computer Wallpaper}}
+
+{{DEFAULTSORT:Computer Wallpaper}}
+[[Category:Graphical user interface elements]]
+
+[[ar:Ø®ÙÙÙØ© Ø­Ø§Ø³ÙØ¨]]
+[[cs:Wallpaper]]
+[[es:Fondo de pantalla]]
+[[fa:Ø¯ÛÙØ§Ø±Ø¨Ø±Ú¯ (Ø±Ø§ÛØ§ÙÙ)]]
+[[fr:Fond d'Ã©cran]]
+[[it:Wallpaper]]
+[[nl:Bureaubladachtergrond]]
+[[ja:ãã¹ã¯ãããã®èæ¯]]
+[[pl:Tapeta (komputer)]]
+[[pt:Papel de parede (informÃ¡tica)]]
+[[ru:ÐÐ±Ð¾Ð¸ (ÐºÐ¾Ð¼Ð¿ÑÑÑÐµÑ)]]
+[[zh:é»è¦å£ç´]]</rev></revisions></page></pages></query></api>

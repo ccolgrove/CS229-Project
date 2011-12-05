@@ -1,0 +1,262 @@
+<?xml version="1.0"?><api><query><pages><page pageid="13055" ns="0" title="Galeon"><revisions><rev xml:space="preserve">{{About|the web browser|the type of sailing ship|Galleon||Galleon (disambiguation)}}
+{{Infobox software
+| name                   = Galeon
+| logo                   = [[Image:Galeon logo.png|48px|Galeon logo]]
+| screenshot             = [[Image:Galeon screenshot ubuntu.png|250px|Screenshot of Galeon]]
+| caption                = A screenshot of Galeon
+| author                 = Marco Pesenti Gritti
+| developer              = Philip Langdale&lt;br /&gt;Tommi Komulainen&lt;br /&gt;Ricardo FernÃ¡ndez Pascual&lt;br /&gt;Yanko Kaneti&lt;br /&gt;Crispin Flowerday
+| released               = June 2000
+| programming language   = [[C (programming language)|C]]
+| operating system       = [[Unix-like]] operating systems
+| language               =
+| latest release version = 2.0.7&lt;ref name=&quot;sourceforge-releases&quot; /&gt;
+| latest release date    = {{Start date and age|2008|09|27|df=yes}}
+| discontinued           = yes
+| genre                  = [[Web browser]]
+| license                = [[GNU General Public License|GPL]]
+| website                = [http://galeon.sourceforge.net/ galeon.sourceforge.net]
+}}
+'''Galeon''' is a [[web browser]] for [[GNOME]] based on [[Mozilla]]âs [[Gecko (layout engine)|Gecko layout engine]].&lt;ref name=&quot;mozilla&quot;/&gt; Galeonâs self-declared mission was to deliver ''the web and only the web''. Galeon was discontinued in September 2008.
+
+Galeon was the first mainstream graphical web browser which specifically focused on the reduction of peripheral functionality. Galeon is also notable for introducing [[smart bookmark]]s, bookmarks that take an argument and can be used as toolbar buttons with a text field used to enter the value for the argument.
+
+== Features ==
+Galeon made use of Gecko's features including configuration options and standards support. Apart from that, Galeon had several features that were uncommon in browsers at that time:&lt;ref name=&quot;galeon-history&quot; /&gt;&lt;ref name=&quot;extraprefs-file&quot; /&gt;&lt;ref name=&quot;galeon-glance&quot; /&gt;
+*mouse [[gestures]]
+*configurable [[user agent]] string
+*configurable display of [[favicon]]s
+*customizable [[toolbar]]s
+*configurable position of [[tab (GUI)|tab bar]]
+*[[smart bookmark]]s with search history
+*ability to specify own fonts and colors for web content
+*configurable [[MIME]] types handler
+*configurable history expiry
+*[[page zooming]]
+
+== Development history ==
+The project was started by [[Marco Pesenti Gritti]] with the goal of creating a web browser that would be fast and consistent with the [[GNOME]] desktop environment.&lt;ref name=&quot;galeon-history&quot; /&gt;
+
+=== On the rise ===
+The first releases of Galeon were criticised for lacking such basic features as cookie and proxy support.&lt;ref name=&quot;looking-at-the-galeon&quot; /&gt;, though the browser added some new features with every release.&lt;ref name=&quot;galeon-history&quot; /&gt; Version 1.2 of Galeon introduced many new features that drew attention from the general public.&lt;ref name=&quot;galeon-history&quot; /&gt;
+
+At the time of Galeonâs creation, the most popular [[Linux]] browsers, including [[Netscape (web browser)|Netscape]] and [[Mozilla Application Suite|Mozilla]], were large multi-functional programs. This made them slow to start and often impractical due to their high memory usage and processor requirements. The [[Opera (web browser)|Opera]] was a way faster, but it was [[proprietary software]] distributed in [[trialware]] and [[adware]] versions, both of which lacked some of the functionality of [[Microsoft Windows]] version.&lt;ref name=&quot;2002-linux-web-browsers&quot; /&gt;
+
+Galeon was widely seen as one the best Linux browsers available.&lt;ref name=&quot;2002-linux-web-browsers&quot; /&gt;&lt;ref name=&quot;browser-comparison&quot; /&gt; The polls revealed the substantial usage share of Galeon,&lt;ref name=&quot;osnews-gecko-poll&quot; /&gt; though its popularity was regarded as owing to lack of stability evident in [[Mozilla]]'s browsers.&lt;ref name=&quot;firefox-won-me&quot; /&gt;
+
+=== Split of the development team ===
+{{Main|Epiphany (web browser)}}
+With the release of new version of the [[GTK+]] widget toolkit, which was used to construct the user interface of Galeon, the team decided to write a new version of Galeon from scratch. That effectively meant that all the previous features of the browser had to be reimplemented in order to find their way to the new release.{{Citation needed|date=November 2011}}
+
+At the same time the GNOME project has adopted its new [[Human Interface Guidelines]], which promoted simplicity and uniform design.&lt;ref name=&quot;ghig&quot; /&gt; The development team had differing opinions on the new guidelines. The author and lead developer, Marco Pesenti Gritti, endorsed them and saw the rewrite as an opportunity to make Galeon simpler. Many other developers believed that reducing the number of preferences and simplifying the user interface would harm the project.&lt;ref name=&quot;galeon-history&quot; /&gt;&lt;ref name=&quot;FSM&quot; /&gt;
+
+As the result of several discussions on the topic Gritti made the decision to [[fork (software)|fork]] the project and started development of a HIG-compliant web browser he called ''[[Epiphany (web browser)|Epiphany]]''.&lt;ref name=&quot;mozillazine-epiphany-fork&quot; /&gt;&lt;ref name=&quot;FSM&quot; /&gt;
+
+=== After the split ===
+As Gritti no longer controlled the development of Galeon, the previous functionality was restored in subsequent releases and some new features were added.&lt;ref name=&quot;interview&quot; /&gt; After the split development slowed due to the lack of developers' time.&lt;ref name=&quot;galeon-history&quot; /&gt; At the same time the rising popularity of Firefox, its status of the default browser in major distribution and the overwhelming number of [[List of Firefox extensions|its extensions]] led to decline of Galeon's user base.&lt;ref name=&quot;firefox-won-me&quot; /&gt;&lt;ref name=&quot;FSM&quot; /&gt;
+
+Eventually the Galeon developers announced plans to halt development of Galeon, saying &quot;the current approach is unsustainable&quot; regarding the resources required to maintain it. Instead, they planned to develop a set of extensions for Epiphany to provide similar functionality.&lt;ref name=&quot;future-of-galeon&quot; /&gt;&lt;ref name=&quot;FSM&quot; /&gt;
+
+== Reception ==
+Galeon was praised for its flexibility&lt;ref name=&quot;2002-linux-web-browsers&quot; /&gt; and speed,&lt;ref name=&quot;galeon-glance&quot; /&gt; as compared to [[Netscape Navigator]]&lt;ref name=&quot;looking-at-the-galeon&quot; /&gt; and [[Firefox]],&lt;ref name=&quot;geeky-fun&quot; /&gt; though [[Konqueror]] and [[Opera (web browser)|Opera]] were still faster on older hardware.&lt;ref name=&quot;2002-linux-web-browsers&quot; /&gt; Galeon was noted for its session handling and crash recovery.&lt;ref name=&quot;2002-linux-web-browsers&quot; /&gt;&lt;!-- check other refs, some more sources cited this --&gt;
+
+In November 2002 [[OSNews]] conducted a poll to determine the most popular [[Gecko (layout engine)|Gecko]]-based browser, which included several browsers for [[Microsoft Windows]], [[MacOS]] and [[Linux]], but didn't include [[Netscape Navigator]] and [[Mozilla Suite]]. The Linux-only Galeon was the second most popular, after cross-platform Firefox, at that time known as [[History of Firefox#Naming|Phoenix]].&lt;ref name=&quot;osnews-gecko-poll&quot; /&gt;
+
+Critics noted Galeon's lack of [[online banking]] support&lt;ref name=&quot;online-banking&quot; /&gt; and tricky plugin installation.&lt;ref name=&quot;galeon-glance&quot; /&gt;
+
+== See also ==
+* [[Comparison of web browsers]]
+
+==References==
+{{reflist|refs=
+
+&lt;!-- *** Please, keep the references in the same order as they appear in the section *** --&gt;
+
+&lt;ref name=&quot;sourceforge-releases&quot;&gt;{{citation
+|title      = Galeon Downloads
+|url        = http://sourceforge.net/projects/galeon/files/galeon%202.x/
+|publisher  = [[SourceForge]]
+|accessdate = 2011-11-15
+}}&lt;/ref&gt;
+
+&lt;ref name=&quot;mozilla&quot;&gt;{{citation
+|url        = http://www.mozilla.org/projects/embedding/examples/galeon.html
+|title      = Galeon: GtkMozEmbed browser
+|publisher  = [[Mozilla Foundation]]
+|accessdate = 2011-05-03
+}}&lt;/ref&gt;
+
+&lt;ref name=&quot;galeon-history&quot;&gt;{{citation
+|title      = Galeon History
+|url        = http://galeon.sourceforge.net/links/history.php
+|first      = Chris
+|last       = DeRosia
+|date       = 2003-07-29
+|accessdate = 2011-11-15
+}}&lt;/ref&gt;
+
+&lt;ref name=&quot;extraprefs-file&quot;&gt;{{citation
+|title      = ''README.ExtraPrefs'' file
+|url        = http://git.gnome.org/browse/galeon/tree/README.ExtraPrefs
+|publisher  = The [[GNOME]] [[git (software)|git repository]]
+|accessdate = 2011-11-16
+}}&lt;/ref&gt;
+
+&lt;ref name=&quot;galeon-glance&quot;&gt;{{citation
+|title      = Galeon at a glance
+|url        = http://www.freeos.com/articles/4163/
+|publisher  = FreeOS.com
+|date       = 2001-06-15
+|accessdate = 2011-11-16
+}}&lt;/ref&gt;
+
+&lt;ref name=&quot;looking-at-the-galeon&quot;&gt;{{citation
+|title      = Looking at the Galeon
+|url        = http://www.linuxplanet.com/linuxplanet/previews/2080/2
+|first      = Michael
+|last       = Hall
+|publisher  = [[Linux Planet]]
+|date       = 2000-07-18
+|accessdate = 2011-11-16
+}}&lt;/ref&gt;
+
+&lt;ref name=&quot;2002-linux-web-browsers&quot;&gt;{{citation
+|title       = 2002 Â­ Linux Web Browser Review
+|url         = http://www.robval.com/linux/2002/browsers.html
+|first       = Rob
+|last        = Valliere
+|date        = 2002-03-01
+|archiveurl  = http://web.archive.org/web/20020306005514/http://www.robval.com/linux/2002/browsers.html
+|archivedate = 2002-03-06
+|accessdate  = 2011-11-16
+}}&lt;/ref&gt;
+
+&lt;ref name=&quot;browser-comparison&quot;&gt;{{citation
+|title       = Browser Comparison
+|url         = http://www.linuxjournal.com/article/5413
+|journal     = [[Linux Journal]]
+|issue       = 95
+|year        = 2000
+|month       = March
+|first       = Ralph
+|last        = Krause
+|accessdate  = 2011-11-17
+}}&lt;/ref&gt;
+
+&lt;ref name=&quot;osnews-gecko-poll&quot;&gt;{{citation
+|title      = Poll: Vote for the Best Mozilla/Gecko-based Browser
+|url        = http://www.osnews.com/story/2054
+|first      = Eugenia
+|last       = Loli-Queru
+|publisher  = [[OSNews]]
+|date       = 2002-11-01
+|accessdate = 2011-11-16
+}}&lt;/ref&gt;
+
+&lt;ref name=&quot;firefox-won-me&quot;&gt;{{citation
+|title      = Firefox 0.8 is the release that won me over
+|url        = http://lxer.com/module/newswire/view/2000/index.html
+|first      = Dave
+|last       = Whitinger
+|publisher  = [[LXer]]
+|date       = 2004-02-09
+|accessdate = 2011-11-16
+}}&lt;/ref&gt;
+
+&lt;ref name=&quot;ghig&quot;&gt;{{citation
+|title         = http://interface.free.fr/Archives/hig-gnome-1.0.pdf
+|url           = GNOME Human Interface Guidelines
+|edition       = 1.0
+|first1        = Calum
+|last1         = Benson
+|first2        = Adam
+|last2         = Elman
+|first3        = Seth
+|last3         = Nickell
+|first4        = Colin Z.
+|last4         = Robertson
+|lastauthoramp = yes
+|year          = 2002
+|publisher     = The GNOME Usability Project
+}}&lt;/ref&gt;
+
+&lt;ref name=&quot;FSM&quot;&gt;{{citation
+|title       = Epiphany, the ultimate Gnome browser|accessdate = 2008-11-07
+|url         = http://www.freesoftwaremagazine.com/books/ubuntu_applications/epiphany
+|first       = Andrew
+|last        = Min
+|publisher   = [[Free Software Magazine]]
+|work        = The Ubuntu Applications book (under construction)
+|accessdate  = 2011-11-16
+}}&lt;/ref&gt;
+
+&lt;ref name=&quot;mozillazine-epiphany-fork&quot;&gt;{{citation
+|title      = Former Galeon Maintainer Starts New Epiphany Browser Project
+|url        = http://www.mozillazine.org/talkback.html?article=2916
+|date       = 2003-02-19
+|accessdate = 2011-11-16
+}}&lt;/ref&gt;
+
+&lt;ref name=&quot;interview&quot;&gt;{{citation
+|title      = Galeon Developer Interview
+|url        = http://galeon.sourceforge.net/links/interview_2003-07.php
+|author     = Topher The Web Guy
+|date       = 2003-07-26
+|accessdate = 2011-11-16
+}}&lt;/ref&gt;
+
+&lt;ref name=&quot;future-of-galeon&quot;&gt;{{citation
+|title      = The future of Galeon
+|url        = http://gnomedesktop.org/node/2450
+|first      = Philip
+|last       = Langdale
+|date       = 2005-10-22
+|accessdate = 2011-11-15
+}}&lt;/ref&gt;
+
+&lt;ref name=&quot;geeky-fun&quot;&gt;{{citation
+|title      = GEEKY FUN: Galeon Web Browser
+|url        = http://everyjoe.com/technology/geeky-fun-galeon-web-browser/
+|author     = Jon
+|date       = 2005-10-16
+|accessdate = 2011-11-16
+}}&lt;/ref&gt;
+
+&lt;ref name=&quot;online-banking&quot;&gt;{{citation
+|title      = Online Banking And Browser Support
+|url        = http://slashdot.org/story/02/10/26/2028224/online-banking-and-browser-support
+|author     = robbo
+|publisher  = [[Slashdot|/.]]
+|date       = 2002-10-26
+|accessdate = 2011-11-16
+}}&lt;/ref&gt;
+
+}}
+
+{{Portal|Free software}}
+{{gopher clients}}
+{{Web browsers}}
+
+[[Category:GNOME]]
+[[Category:Gopher clients]]
+[[Category:Gecko-based software]]
+[[Category:POSIX web browsers]]
+[[Category:Mac OS X web browsers]]
+[[Category:Free web browsers]]
+[[Category:Discontinued web browsers]]
+
+[[ca:Galeon]]
+[[cs:Galeon]]
+[[de:Galeon]]
+[[es:Galeon]]
+[[eo:Galeon]]
+[[fr:Galeon]]
+[[it:Galeon]]
+[[csb:Galeon]]
+[[nl:Galeon]]
+[[ja:Galeon]]
+[[pl:Galeon (przeglÄdarka)]]
+[[pt:Galeon]]
+[[ru:Galeon]]
+[[sv:Galeon (webblÃ¤sare)]]
+[[zh:Galeon]]</rev></revisions></page></pages></query></api>

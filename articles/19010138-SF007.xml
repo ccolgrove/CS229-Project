@@ -1,0 +1,211 @@
+<?xml version="1.0"?><api><query><redirects><r from="Ssh -X" to="Secure Shell" /></redirects><pages><page pageid="28814" ns="0" title="Secure Shell"><revisions><rev xml:space="preserve">'''Secure Shell''' ('''SSH''') is a [[network protocol]] for secure data communication, remote shell services or command execution and other secure network services between two networked computers that it connects via a [[secure channel]] over an insecure network: a server and a client (running [[SSH server]] and [[SSH client]] programs, respectively).&lt;ref name=&quot;rfc&quot;&gt;
+  Network Working Group of the IETF,
+  January 2006,
+  RFC 4252, 
+  The Secure Shell (SSH) Authentication Protocol
+&lt;/ref&gt; The protocol specification distinguishes two major versions that are referred to as SSH-1 and SSH-2.
+
+The best-known application of the protocol is for access to [[shell account]]s on [[Unix-like]] operating systems. It was designed as a replacement for [[Telnet]] and other [[Computer security|insecure]] remote [[Shell (computing)|shell]] protocols such as the Berkeley [[Remote Shell|rsh]] and [[Remote Process Execution|rexec]] protocols, which send information, notably [[password]]s, in [[plaintext]], rendering them susceptible to interception and disclosure using [[Packet analyzer|packet analysis]].&lt;ref&gt;[http://www.serverwatch.com/news/print.php/3551081 SSH Hardens the Secure Shell], Serverwatch.com&lt;/ref&gt;  The [[encryption]] used by SSH is intended to provide confidentiality and integrity of data over an unsecured network, such as the [[Internet]].
+
+{{IPstack}}
+
+==Definition==
+SSH uses [[public-key cryptography]] to [[authentication|authenticate]] the remote computer and allow it to authenticate the user, if necessary.&lt;ref name=&quot;rfc&quot; /&gt; Anyone can produce a matching pair of different keys (public and private). The public key is placed on all computers that must allow access to the owner of the matching private key (the owner keeps the private key secret). While authentication is based on the private key, the key itself is never transferred through the network during authentication.
+
+SSH only verifies if the same person offering the public key also owns the matching private key. Hence, in all versions of SSH it is important to verify unknown [[public key]]s before accepting them as valid. Accepting an attacker's public key without validation would simply authorize an unauthorized attacker as a valid user.
+
+== Key management ==
+On [[Unix-like]] systems, the list of authorized keys is stored in the home folder of the user that is allowed to log in remotely, in the file ~/.ssh/authorized_keys.&lt;ref&gt;[http://wiki.qnap.com/wiki/How_To_Set_Up_Authorized_Keys SSH setup manual]&lt;/ref&gt; This file is only respected by ssh if it is not writable by anything apart from the owner and root. When the public key is present on one side and the matching private key is present on another side, typing in the password is no longer required (some software like [[Message Passing Interface|MPI]] stack may need this password-less access to run properly). However, for additional security the private key itself can be locked with a passphrase.
+
+The private key can also be looked for in standard places, but its full path can also be specified as a command line setting (the switch ''-i'' for ssh). The [[ssh-keygen]] utility produces the public and private keys, always in pairs.
+
+SSH also supports password-based authentication that is encrypted by automatically generated keys. In this case the attacker could imitate the legitimate side, ask for the password and obtain it ([[man-in-the-middle attack]]). However this is only possible if the two sides have never authenticated before, as SSH remembers the key that the remote side once used. Password authentication can be disabled.
+
+== Usage ==
+SSH is typically used to log into a remote machine and execute commands, but it also supports [[tunneling protocol|tunneling]], [[Port forwarding|forwarding]] [[TCP and UDP port|TCP ports]] and [[X11]] connections; it can transfer files using the associated [[SSH file transfer protocol|SSH file transfer]] (SFTP) or [[secure copy]] (SCP) protocols.&lt;ref name=&quot;rfc&quot; /&gt; SSH uses the [[client-server]] model.
+
+The [[list of well-known ports (computing)|standard TCP port]] 22 has been assigned for contacting SSH servers,&lt;ref&gt;[http://www.iana.org/assignments/port-numbers &lt;cite&gt;port-numbers assignments&lt;/cite&gt;] at iana.org&lt;/ref&gt; though administrators frequently change it to a non-standard port as an additional security measure.
+
+An SSH [[client (computing)|client]] program is typically used for establishing connections to an SSH [[daemon (computer software)|daemon]] accepting remote connections. Both are commonly present on most modern [[operating systems]], including [[Mac OS X]], most distributions of [[GNU/Linux]], [[OpenBSD]], [[FreeBSD]], [[Solaris (operating system)|Solaris]] and [[OpenVMS]]. [[proprietary software|Proprietary]], [[freeware]] and [[Open-source software|open source]] versions of various levels of complexity and completeness exist.
+
+==History and development==
+=== Version 1.x ===
+In 1995, [[Tatu YlÃ¶nen]], a researcher at [[Helsinki University of Technology]], Finland, designed the first version of the protocol (now called '''SSH-1''') prompted by a password-[[Packet analyzer|sniffing]] attack at his [[university network]]. The goal of SSH was to replace the earlier [[rlogin]], [[TELNET]] and [[Remote Shell|rsh]] protocols, which did not provide strong authentication nor guarantee confidentiality. YlÃ¶nen released his implementation as [[freeware]] in July 1995, and the tool quickly gained in popularity. Towards the end of 1995, the SSH user base had grown to 20,000 users in fifty countries.
+
+In December 1995, YlÃ¶nen founded [[SSH Communications Security]] to market and develop SSH. The original version of the SSH software used various pieces of [[free software]], such as [[GNU Multi-Precision Library|GNU libgmp]], but later versions released by SSH Secure Communications evolved into increasingly [[proprietary software]].
+
+It is estimated that, {{As of|2000|lc=on}}, there were 2 million users of SSH.&lt;ref name=&quot;Nicholas Rosasco and David Larochelle&quot;&gt;{{cite web
+ | author=Nicholas Rosasco and David Larochelle
+ | title=How and Why More Secure Technologies Succeed in Legacy Markets: Lessons from the Success of SSH
+ | publisher=Dept. of Computer Science, Univ. of Virginia
+ |date=
+ | work=Quoting Barrett and Silverman, ''SSH, the Secure Shell: The Definitive Guide,'' O'Reilly &amp; Associates (2001)
+ | url=http://www.cs.virginia.edu/~drl7x/sshVsTelnetWeb3.pdf
+ | accessdate=2006-05-19
+}}&lt;/ref&gt;
+
+==== Notable vulnerabilities ====
+In 1998 a vulnerability was described in SSH 1.5 which allowed the unauthorized insertion of content into an encrypted SSH stream due to insufficient data integrity protection from [[CRC-32]] used in this version of the protocol.&lt;ref&gt;[http://www.coresecurity.com/content/ssh-insertion-attack SSH Insertion Attack]&lt;/ref&gt;&lt;ref&gt;[http://www.kb.cert.org/vuls/id/13877 Weak CRC allows packet injection into SSH sessions encrypted with block ciphers], US-CERT&lt;/ref&gt; A fix known as SSH Compensation Attack Detector&lt;ref&gt;[http://www.securityfocus.com/bid/2347/discuss SSH CRC-32 Compensation Attack Detector Vulnerability], SecurityFocus&lt;/ref&gt; was introduced into most implementations. Many of these updated implementations contained a new integer overflow vulnerability&lt;ref&gt;[http://www.kb.cert.org/vuls/id/945216 SSH CRC32 attack detection code contains remote integer overflow], US-CERT&lt;/ref&gt; that allowed attackers to execute arbitrary code with the privileges of the SSH daemon, typically root.
+
+In January 2001 a vulnerability was discovered that allows attackers to modify the last block of an IDEA-encrypted session.&lt;ref&gt;[http://www.kb.cert.org/vuls/id/315308 Weak CRC allows last block of IDEA-encrypted SSH packet to be changed without notice], US-CERT&lt;/ref&gt; The same month, another vulnerability was discovered that allowed a malicious server to forward a client authentication to another server.&lt;ref&gt;[http://www.kb.cert.org/vuls/id/684820 SSH-1 allows client authentication to be forwarded by a malicious server to another server], US-CERT&lt;/ref&gt;
+
+Since SSH-1 has inherent design flaws which make it vulnerable, it is now generally considered obsolete and should be avoided by explicitly disabling fallback to SSH-1. Most modern servers and clients support SSH-2.
+
+=== Version 1.99 ===
+In January 2006, well after version 2.1 was established, RFC 4253 specified that an SSH server which supports both 2.0 and prior versions of SSH should identify its protoversion as 1.99.&lt;ref&gt;[http://tools.ietf.org/html/rfc4253#section-5.1 RFC 4253, section 5. Compatibility With Old SSH Versions], IETF&lt;/ref&gt;  This is not an actual version but a method to identify [[backward compatibility]].
+
+=== OpenSSH and OSSH ===
+{{Ref improve section|date=June 2010}}
+In 1999, developers wanting a free software version to be available went back to the older 1.2.12 release of the original SSH program, which was the last released under an [[open source]] license. [[BjÃ¶rn GrÃ¶nvall]]'s [[OSSH]] was subsequently developed from this codebase. Shortly thereafter, [[OpenBSD]] developers [[fork (software development)|fork]]ed GrÃ¶nvall's code and did extensive work on it, creating [[OpenSSH]], which shipped with the 2.6 release of OpenBSD. From this version, a &quot;portability&quot; branch was formed to port OpenSSH to other operating systems. {{As of|2005}}, [[OpenSSH]] was the single most popular SSH implementation, coming by default in a large number of operating systems. OSSH meanwhile has become obsolete.&lt;ref&gt;[https://www.kb.cert.org/vuls/id/MIMG-6L4LBL OSSH Information for VU#419241&lt;!-- Bot generated title --&gt;]&lt;/ref&gt; OpenSSH continued to be maintained and now supports both 1.x and 2.0 versions.
+
+=== Version 2.x ===
+&quot;Secsh&quot; was the official [[Internet Engineering Task Force|Internet Engineering Task Force's]] (IETF) name for the IETF working group responsible for version 2 of the SSH protocol.&lt;ref&gt;
+[http://www.vandyke.com/technology/drafts.html Secsh Protocol Documents], VanDyke Software, Inc.&lt;/ref&gt; In 2006, a revised version of the protocol, '''SSH-2''', was adopted as a standard. This version is incompatible with SSH-1. SSH-2 features both security and feature improvements over SSH-1. Better security, for example, comes through [[Diffie-Hellman key exchange]] and strong [[integrity]] checking via [[message authentication code]]s. New features of SSH-2 include the ability to run any number of [[Shell (computing)|shell]] sessions over a single SSH connection.&lt;ref&gt;[http://www.snailbook.com/faq/ssh-1-vs-2.auto.html SSH Frequently Asked Questions]&lt;/ref&gt;
+
+==== Vulnerabilities ====
+In November 2008, a vulnerability was discovered for all versions of SSH which allowed recovery of up to 32 bits of plaintext from a block of ciphertext that was encrypted using what was then the standard default encryption mode, [[Block_cipher_modes_of_operation#Cipher-block_chaining_.28CBC.29|CBC]].&lt;ref&gt;[http://www.kb.cert.org/vuls/id/958563 SSH CBC vulnerability], US-CERT&lt;/ref&gt;
+
+== Internet standard documentation==
+The following [[Request for Comments|RFC]] publications by the [[IETF]] &quot;secsh&quot; [[working group]] document SSH-2 as a proposed [[Internet standard]].
+* RFC 4250, The Secure Shell (SSH) Protocol Assigned Numbers
+* RFC 4251, The Secure Shell (SSH) Protocol Architecture
+* RFC 4252, The Secure Shell (SSH) Authentication Protocol
+* RFC 4253, The Secure Shell (SSH) Transport Layer Protocol
+* RFC 4254, The Secure Shell (SSH) Connection Protocol
+* RFC 4255, Using DNS to Securely Publish Secure Shell (SSH) Key Fingerprints
+* RFC 4256, Generic Message Exchange Authentication for the Secure Shell Protocol (SSH)
+* RFC 4335, The Secure Shell (SSH) Session Channel Break Extension
+* RFC 4344, The Secure Shell (SSH) Transport Layer Encryption Modes
+* RFC 4345, Improved Arcfour Modes for the Secure Shell (SSH) Transport Layer Protocol
+
+It was later modified and expanded by the following publications.
+* RFC 4419, Diffie-Hellman Group Exchange for the Secure Shell (SSH) Transport Layer Protocol (March 2006)
+* RFC 4432, RSA Key Exchange for the Secure Shell (SSH) Transport Layer Protocol (March 2006)
+* RFC 4462, Generic Security Service Application Program Interface (GSS-API) Authentication and Key Exchange for the Secure Shell (SSH) Protocol (May 2006)
+* RFC 4716, The Secure Shell (SSH) Public Key File Format (November 2006)
+* RFC 5656, Elliptic Curve Algorithm Integration in the Secure Shell Transport Layer (December 2009)
+
+==Uses==
+[[File:X11 ssh tunnelling.png|right|250px|thumb|Example of tunneling an X11 application over SSH: the user 'josh' has SSHed from the local machine 'foofighter' to the remote machine 'tengwar' to run [[xeyes]].]]
+[[File:OpenWrtPuTTY.png|right|250px|thumb|Logging into [[OpenWrt]] via SSH using [[PuTTY]] running on [[Microsoft Windows|Windows]].]]
+SSH is a protocol that can be used for many applications across many platforms including [[Unix]], [[Microsoft Windows]], [[Apple Inc|Apple's]] [[Mac OS X]], and [[Linux]]. Some of the applications below may require features that are only available or compatible with specific SSH clients or servers. For example, using the SSH protocol to implement a [[VPN]] is possible, but presently only with the [[OpenSSH]] server and client implementation.
+* For login to a shell on a remote host (replacing [[Telnet]] and [[rlogin]])
+* For executing a single command on a remote host (replacing [[Remote shell|rsh]])
+* Secure file transfer
+* In combination with [[rsync]] to back up, copy and mirror files efficiently and securely
+* For [[Port forwarding|forwarding]] or [[Tunneling protocol|tunneling]] a port (not to be confused with a VPN which [[VPN#Routing|routes]] packets between different networks or [[VPN#OSI Layer 1 services|bridges]] two [[broadcast domain]]s into one).
+* For using as a full-fledged encrypted VPN. Note that only [[OpenSSH]] server and client supports this feature.
+* For forwarding [[X Window System|X]] from a remote [[Host (network)|host]] (possible through multiple intermediate hosts)
+* For browsing the web through an encrypted proxy connection with SSH clients that support the [[SOCKS|SOCKS protocol]].
+* For securely mounting a directory on a remote server as a [[File system|filesystem]] on a local computer using [[SSHFS]].
+* For automated remote monitoring and management of servers through one or more of the mechanisms discussed above.
+* For development on a mobile or embedded device that supports SSH.
+
+=== File transfer protocols using SSH ===
+There are multiple mechanisms for transferring files using the Secure Shell protocols.
+* [[Secure copy]] (SCP), which evolved from [[rcp (Unix)|RCP]] protocol over SSH
+* [[SSH File Transfer Protocol]] (SFTP), a secure alternative to [[File Transfer Protocol|FTP]] (not to be confused with [[File_Transfer_Protocol#FTP_over_SSH_.28not_SFTP.29|FTP over SSH]])
+* [[Files transferred over shell protocol]] (a.k.a. FISH), released in 1998, which evolved from [[Unix shell]] commands over SSH
+
+==Architecture==
+[[File:Ssh binary packet alt.svg|right|250px|thumb|Diagram of the SSH-2 binary packet.]]
+
+The SSH-2 protocol has an internal architecture (defined in RFC 4251) with well-separated layers. These are:
+* The ''transport'' layer (RFC 4253). This layer handles initial key exchange as well as server authentication, and sets up encryption, compression and integrity verification. It exposes to the upper layer an interface for sending and receiving plaintext packets with sizes of up to 32,768 bytes each (more can be allowed by the implementation). The transport layer also arranges for key re-exchange, usually after 1 GB of data has been transferred or after 1 hour has passed, whichever is sooner.
+* The ''user authentication'' layer (RFC 4252). This layer handles client authentication and provides a number of authentication methods. Authentication is ''client-driven'': when one is prompted for a password, it may be the SSH client prompting, not the server. The server merely responds to the client's authentication requests. Widely used user authentication methods include the following:
+** ''password'': a method for straightforward password authentication, including a facility allowing a password to be changed. This method is not implemented by all programs.
+** ''publickey'': a method for [[Public-key cryptography|public key-based authentication]], usually supporting at least [[Digital Signature Algorithm|DSA]] or [[RSA (algorithm)|RSA]] keypairs, with other implementations also supporting [[X.509]] certificates.
+** ''keyboard-interactive'' (RFC 4256): a versatile method where the server sends one or more prompts to enter information and the client displays them and sends back responses keyed-in by the user. Used to provide [[one-time password]] authentication such as [[S/Key]] or [[SecurID]]. Used by some OpenSSH configurations when [[Pluggable authentication modules|PAM]] is the underlying host authentication provider to effectively provide password authentication, sometimes leading to inability to log in with a client that supports just the plain ''password'' authentication method.
+** [[Generic Security Services Application Program Interface|GSSAPI]] authentication methods which provide an extensible scheme to perform SSH authentication using external mechanisms such as [[Kerberos (protocol)|Kerberos 5]] or [[NTLM]], providing [[single sign on]] capability to SSH sessions. These methods are usually implemented by commercial SSH implementations for use in organizations, though OpenSSH does have a working GSSAPI implementation.
+* The ''connection'' layer (RFC 4254). This layer defines the concept of channels, channel requests and global requests using which SSH services are provided. A single SSH connection can host multiple channels simultaneously, each transferring data in both directions. Channel requests are used to relay out-of-band channel specific data, such as the changed size of a terminal window or the exit code of a server-side process. The SSH client requests a server-side port to be forwarded using a global request. Standard channel types include:
+** ''shell'' for terminal shells, SFTP and exec requests (including SCP transfers)
+** ''direct-tcpip'' for client-to-server forwarded connections
+** ''forwarded-tcpip'' for server-to-client forwarded connections
+* The [[SSHFP]] DNS record (RFC 4255) provides the public host key fingerprints in order to aid in verifying the authenticity of the host.
+
+This open architecture provides considerable flexibility, allowing SSH to be used for a variety of purposes beyond a secure shell. The functionality of the transport layer alone is comparable to [[Transport Layer Security]] (TLS); the user authentication layer is highly extensible with custom authentication methods; and the connection layer provides the ability to multiplex many secondary sessions into a single SSH connection, a feature comparable to [[BEEP]] and not available in TLS.
+
+==New enhancements to SSH==
+These are geared towards performance enhancements of SSH products:
+* SCTP: an enhancement over TCP for connection oriented transport layer protocol.
+* ECDSA: an enhancement over DSA or RSA for signing.
+* ECDH: an enhancement over DH (Plain Diffie Hellman KEX) for encryption key exchange.
+* UMAC: an enhancement over HMAC for MAC/integrity.
+
+==See also==
+{{Portal|Cryptography}}
+* [[Ident]]
+* [[Web-based SSH]] â Access to SSH servers through standard web browsers
+* [[Autossh]] - a tool to maintain a constant SSH connection, restarting it as necessary
+* [[Comparison of SSH clients]]
+* [[Comparison of SSH servers]]
+* [[Corkscrew (program)|Corkscrew]] â a tool that enables a user to run SSH over [[HTTPS]] [[proxy server]]s
+
+==References==
+{{Reflist|2}}
+
+==Further reading==
+* [[Daniel J. Barrett]], Richard E. Silverman, and Robert G. Byrnes, ''SSH: The Secure Shell (The Definitive Guide)'', O'Reilly 2005 (2nd edition). ISBN 0-596-00895-3
+* Michael Stahnke, ''Pro OpenSSH'', Apress 2005 ISBN 1-59059-476-2
+* {{cite news|url=http://groups.google.com/group/comp.security.unix/msg/67079d812a19f499?dmode=source&amp;hl=en 
+|author=Tatu YlÃ¶nen 
+|title=Announcement: Ssh (Secure Shell) Remote Login Program 
+|publisher=comp.security.unix 
+|date=12 July 1995 }} Original announcement of Ssh
+* Himanshu Dwivedi; ''Implementing SSH'', Wiley 2003. ISBN 978-0-471-45880-7
+* {{FOLDOC}}
+
+==External links==
+{{wikibooks|Internet Technologies/SSH}}
+* [http://www.ietf.org/html.charters/OLD/secsh-charter.html Old homepage for IETF 'secsh' working group, which has concluded] (for SSH-2)
+* [http://www.snailbook.com/protocols.html SSH Protocols]
+
+{{URI scheme}}
+
+[[Category:Secure Shell| ]]
+
+[[af:Secure Shell]]
+[[ar:ÙØ´Ø±Ø© Ø¢ÙÙØ©]]
+[[bg:SSH]]
+[[bs:Secure Shell]]
+[[ca:Secure Shell]]
+[[cs:Secure Shell]]
+[[da:SSH]]
+[[de:Secure Shell]]
+[[et:Turvakest]]
+[[es:Secure Shell]]
+[[eo:SSH]]
+[[eu:Secure Shell]]
+[[fa:Ù¾ÙØ³ØªÙ Ø§ÙÙ]]
+[[fr:Secure Shell]]
+[[gl:SSH]]
+[[ko:ìíì´ ì¸]]
+[[hr:Secure Shell]]
+[[id:SSH]]
+[[it:Secure shell]]
+[[he:Secure Shell]]
+[[kk:SSH]]
+[[lv:Secure Shell]]
+[[lt:SSH]]
+[[hu:Secure Shell]]
+[[mk:Secure Shell]]
+[[nl:Secure Shell]]
+[[ja:Secure Shell]]
+[[no:Secure Shell]]
+[[pl:Secure Shell]]
+[[pt:SSH]]
+[[ro:SSH]]
+[[ru:SSH]]
+[[sq:Secure Shell]]
+[[simple:Secure Shell]]
+[[sk:Secure shell]]
+[[sl:Secure shell]]
+[[sr:SSH]]
+[[fi:SSH]]
+[[sv:SSH]]
+[[th:Secure Shell]]
+[[tr:SSH]]
+[[uk:SSH]]
+[[vi:SSH]]
+[[yo:Secure Shell]]
+[[zh:SSH]]</rev></revisions></page></pages></query></api>

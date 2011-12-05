@@ -1,0 +1,188 @@
+<?xml version="1.0"?><api><query><pages><page pageid="6147126" ns="0" title="K-Multimedia Player"><revisions><rev xml:space="preserve">{{Distinguish|Konqueror Media Player}}
+{{Use dmy dates|date=August 2010}}
+{{Infobox software
+| name                   = K-Multimedia Player
+| logo                   = [[Image:The KMPlayer Logo.png]]
+| screenshot             = [[Image:The KMPlayer screenshot.png|300px]]
+| caption                = K-Multimedia Player v2.9.3.1433 Beta
+| author                 = Kang Yong-Huee
+| developer              = [[Pandora TV]]
+| released               = {{start date and age|2002|10|1|df=yes}}&lt;ref name=&quot;developer&quot; /&gt;
+| frequently_updated     = yes&lt;!-- Release version update? Don't edit this page, just click on the version number! --&gt;
+| programming language   = [[CodeGear Delphi|Delphi]], [[C++Builder]], [[Netwide Assembler]] and [[Visual C++]]&lt;ref&gt;{{cite web
+  |url         = http://www.kutil.com.ne.kr/basicinfo.htm
+  |title       = ê¸°ë³¸ì¤ëª (Basic information)
+  |last        = Yong-Huee
+  |first       = Kang
+  |publisher   = Kang Yong-Huee Homepage
+  |accessdate  = 20 May 2010
+  |quote       = ì ìì¸ì´/ì ìíê²½ [...] ë¸íì´ 7 [...] C++ Builder 6 [...] NASM [...] DJGPP(GCC 3.2) [...] VC++ 6.0 (Translation: Authoring language / authoring environment [...] Delphi 7 C++ Builder 6 [...] NASM [...] DJGPP(GCC 3.2) [...] VC++ 6.0)
+  }}&lt;/ref&gt;
+| operating system       = [[Microsoft Windows]]
+| language               = English, Albanian, Arabic, Belarusian, Brazilian Portuguese, Bulgarian, Chinese, Czech, Dutch, Finnish, French, German, Hebrew, Hungarian, Italian, Japanese, Korean (Default), Persian, Polish, Portuguese, Romanian, Russian, Spanish, Swedish, Thai, Turkish, Ukrainian and Vietnamese
+| genre                  = [[Media player (application software)|Media player]]
+| license                = [[Freeware]]
+| website                = {{URL|www.kmplayer.com/forums}}
+}}
+
+'''K-Multimedia Player''' (commonly known as '''The KMPlayer''', '''KMPlayer''' or '''KMP'''&lt;ref&gt;{{citation
+  |title = Software License Agreement
+  |work = The KMPlayer 2.9.4.1435
+  |publisher = kmplayer.com
+  |accessdate = 13 June 2010
+  |quote = Its full name is K-Multimedia Player. But, it is also called as KMP, KMPlayer, KMP Player or kmp player.}}&lt;/ref&gt;&lt;ref&gt;{{cite web
+  |url = http://download.pandora.tv/?mode=kmp&amp;tab=1
+  |title = KMPlayer 1434 Official
+  |work = Download Center
+  |publisher = [[Pandora TV]]
+  |accessdate = 13 June 2010}}&lt;/ref&gt;) is a [[Media player (application software)|media player software]] for [[Microsoft Windows]] which can play a large number of [[Container format (digital)|formats]] including [[Video CD|VCD]], [[DVD]], [[Audio Video Interleave|AVI]], [[MKV]], [[Ogg]], [[OGM]], [[3GP]], [[MPEG]]-1/2/4, [[WMV]], [[RealMedia]], [[FLV]] and [[QuickTime]]. It has a significant user base and has received strong ratings and reviews on major independent download sites.&lt;ref name=cnet&gt;{{cite web |url=http://download.cnet.com/The-KMPlayer/3000-13632_4-10659939.html |title=The KMPlayer 2.9.4.1437 CNET editors' review |date=2008-11-06 |publisher=[[CNET]] [[Download.com]] }}&lt;/ref&gt;&lt;ref name=softpedia&gt;{{cite web |url=http://www.softpedia.com/reviews/windows/KMPlayer--Review-77374.shtml |title=Uber Configurable Video Player |date=2008-01-28 |publisher=[[Softpedia]] }}&lt;/ref&gt;&lt;ref name=majorgeeks&gt;{{cite web |url=http://majorgeeks.com/KMPlayer_d5484.html |title=KMPlayer 3.0.0.1438 Final |date=2010-09-15 |publisher=[[MajorGeeks.com]] }}&lt;/ref&gt;
+
+== Features ==
+The player handles a wide range of audio, video and [[Subtitle (captioning)|subtitles]] formats and allows one to capture audio, video, and [[screenshot]]s. It provides both internal and external filters with a fully controlled environment in terms of connections to other splitters, [[Codec|decoders]], audio/video transform filters and [[Rendering (computer graphics)|renderers]] without grappling with the [[DirectShow]] merit system (a system of selecting and prioritizing codecs across the entire Windows operating system&lt;ref&gt;{{Cite web
+ |url = http://msmvps.com/blogs/chrisl/articles/40395.aspx merit system
+ |title = Understanding DirectShow Merits
+ |work = Chris Lanier Blog
+ |publisher = Microsoft Corporation
+ |first = Chris |last = Lanier
+ |date = 31 March 2005
+ |accessdate = 18 January 2011
+}}&lt;/ref&gt;). Internal filters are not registered into the system's registry to prevent the operating system from confusing system filters with K-Multimedia Player's filters
+
+The player can set many [[Audio signal processing|audio]] and [[Image processing|video]] effects, slow down or increase  [[Audio timescale-pitch modification|playback speed]], select parts of a [[video]] as favorites, do various A-B repeats, remap the keys of remote interface for HTPC including overlay screen controls, and change a skin dynamically depending on a media type playing. KMP is completely customizable thanks to a wide selection of skins  and color schemes, as well extensive the configuration options.&lt;ref&gt;{{cite web|title=Skins|url=http://www.kmplayer.com/forums/downloads.php?do=cat&amp;id=2|work=The KMPlayer's Forums|publisher=Pandora TV|accessdate=3 August 2011}}&lt;/ref&gt;
+
+== Supported files and devices ==
+{{Cleanup-list|section|date=April 2011}}
+{{Prose|section|date=April 2011}}
+* Incomplete/damaged AVI files (the player can skip damaged frames)
+* the player can handle Locked media files while downloading or sharing (with real-time index rebuilding under certain conditions: AVI downloading in consecutive order)
+* the player supports [[HTTP streaming|incoming streams delivered via HTTP]] (ASF/OGG/MP3/AAC/MPEG PS/MPEG TS: only work with internal splitters)
+* the player supports [[DirectShow]] playback ([[Audio Video Interleave|AVI]], [[WMV]], [[Matroska|MKV]], [[MOV]], [[MP4]], [[Ogg|Ogg theora]], [[ogm]], [[rmvb]], [[MPEG-1|mpeg1]], [[mpeg2]], [[Hypertext Transfer Protocol|http://]] etc. including almost every audio format playable via other supported decoders)
+** the player features an Async File Source(network) filter for memory caching
+** Compressed Audio Album Support (zip, rar)
+** [[Shoutcast]] (Including NSV), [[Icecast]]
+** [[Digital Theater System|DTS Wave]], [[Dolby Digital|AC3]], [[Advanced Audio Coding|AAC]], [[Ogg]], [[Monkey's Audio|Ape]], [[MusePack|MPC]], [[FLAC]], [[Adaptive Multi-Rate|AMR]], [[Apple Lossless|ALAC]], [[Shorten|SHN]], [[WavPack|WV]], [[Module file|Module]] (MOD, S3M, MTM, UMX, XM and IT), etc.
+** [[Google Video]] (GVI), [[Flash Video]] (FLV), [[Nullsoft Streaming Video]] (NSV), [[3GP]], [http://www.kmplayer.com/forums/showthread.php?t=2665 PMP], [[VOB]]
+* Real Engine + DirectShow (needs [[RealPlayer]] or [[Real Alternative]] or [http://www.kmplayer.com/forums/showthread.php?t=357 its decoders])
+* QuickTime engine + DirectShow (needs [[QuickTime]] or [[QuickTime Alternative|Alternative]] or [http://www.kmplayer.com/forums/showthread.php?t=357 its decoders])
+* the [[MPlayer]] engine is supported, but is not shipped with the package.
+* WinAmp input plugin support
+* [[DVD]] playback, [[ratDVD]] support (needs ratDVD filters)
+* [[Red Book (audio CD standard)|Audio CD]] (2000, XP only)
+* [[Video CD]]/[[SVCD]]/[[XCD]]: CDXA Format (2000, XP only)
+* VCD image file (BIN/ISO/IMG/NRG)
+* [[Windows driver model|WDM]] device support like TV/HDTV/Camera/Cam etc.
+* [[Adobe Flash]]/FLC/FLI
+* Various image files like [[Portable Network Graphics|png]], [[gif]], etc.
+* Video containers: AVI, ASF, WMV, AVS, FLV, MKV, MOV, 3GP, MP4, MPG, MPEG, DAT, OGM, VOB, RM, RMVB, TS, TP, IFO, NSV
+* Audio containers: MP3, AAC, WAV, WMA, CDA, FLAC, M4A, MID, MKA, MP2, MPA, MPC, APE, OFR, OGG, RA, WV, TTA, AC3, DTS
+* Pictures: BMP, GIF, JPEG/JPG, PNG
+* Playlists: ZIP/RAR (Audio archive only), LNK, ASX, WAX, M3U, M3U8, PLS, KPL, LNK, CUE, WVX, WMX
+* Subtitles: RT, SMI, SMIL, SUB, IDX, ASS, SSA, PSB, SRT, S2K, USF, SSF, TXT, LRC
+* Others: DVR-MS, DIVX, M4V, M2V, PART, VP6, RAM, RMM, SWF, TRP, FLC, FLI
+
+== Covered codecs/filters ==
+&lt;!-- Deleted image removed: [[Image:Kmpconfig.png|thumb|250px|right|Filter Control (F2)]] --&gt;
+K-Multimedia Player includes many essential [[Codec|decoders]] required for media playback. For formats these decoders support in limited fashion, several types of external decoders can be specified, so that users can specify exactly what types of decoders play virtually any file format supported. Even though the KMP is based primarily upon [[DirectShow]], it supports [[Winamp]], [[Real Media]] and [[Quick Time]] internally. .
+
+* [[Video codec]]s: [[DivX]], [[XviD]], [[Theora]], [[WMV]], [[MPEG-1]], [[MPEG-2]], [[MPEG-4]], [[VP3]], [[VP5]], [[VP6]], [[H.263]](+), [[H.264/MPEG-4 AVC|H.264(AVC1)]], CYUY, ASV1/2, [[Sorenson codec|SVQ1/3]], [[Video1|MSVIDC]], [[Cinepak]], [http://wiki.multimedia.cx/index.php?title=Microsoft_MPEG-4 MS MPEG4 V1/2/3], FFV1, VCR1, FLV1, [[run-length encoding|MSRLE, QTRLE]] [[Huffyuv]], [[DV|Digital Video]], [[Indeo]]3, [[MJPEG]], [[Snow (codec)|SNOW]], TSCC, [[Dirac (codec)|Dirac]], [[VC-1]], [[RealVideo]], etc.
+
+* [[Audio Codec]]s: [[AC3]], [[DTS Coherent Acoustics|DTS]], [[LPCM]], [[MPEG-1 Audio Layer II|MP2]], [[MP3]], [[Vorbis]], [[Advanced Audio Coding|AAC]], [[Windows Media Audio|WMA]], [[Apple Lossless|ALAC]], [[Adaptive Multi-Rate|AMR]], [[QDesign|QDM2]], [[FLAC]], [[TTA (codec)|TTA]], [[Interactive Multimedia Association|IMA]] [[ADPCM]], [[QCELP]], [[EVRC]], [[RealAudio]], etc.
+
+* External Codecs
+** Media Priority to Connect among decoder types: DirectShow, Real, QuickTime, WinAmp and MPlayer
+** Custom Filter Manager to force or block external filters
+** System Filter Manager to manage (reregister or unregister) external filters
+
+== Subtitles ==
+&lt;!-- Deleted image removed: [[Image:SubtitleExplorer.png|thumb|250px|right|Subtitle Explorer (Alt+Q)]] --&gt;
+* [[Unicode]] text subtitles
+* [[SAMI]] (.sami, .smi): [[Ruby character|Ruby tag]] support including almost every attributes
+* [[SubRip]]Text (.srt), [[MicroDVD]] (.sub), [[Synchronized Multimedia Integration Language|SMIL/RealText]]
+* [[SubStation Alpha|SSA]], [[SubStation Alpha#Advanced SubStation Alpha|ASS]], [[Universal Subtitle Format|USF]] (Ruby support)
+* [[VobSub]], [[Closed captioning|closed captions]]
+* [[Sasami 2K]] (S2k)
+* Embedded subtitles of [[Advanced Systems Format|ASF]], [[Matroska|MKV]], [[Ogg Media|OGM]], [[MPEG-4 Part 14|MP4]], [[MOV]], [[VOB]], [[3GP]]
+* [[Text-to-speech]] for reading subtitles
+* Supports up to three sets of subtitles simultaneously
+
+== Plugins ==
+K-Multimedia Player supports the following types of Winamp v2/v5 plugins: input, DSP/effect, visualization and general-purpose. The path in which these plugins can be found and their corresponding settings can be specified.
+* [[Winamp]] plugins: input, DSP (can stack), visual (can stack), general plugins (media library etc. support)
+* KMP video plugins by SDK (can stack)
+* [[DScaler]] filter support (can stack)
+
+== History ==
+K-Multimedia Player was originally developed by Kang Young-Huee and was first released on 1 October 2002.&lt;ref name=&quot;developer&quot;&gt;{{cite web
+  |url         = www.delmadang.com/community/bbs_view.asp?bbsNo=21&amp;indx=208397
+  |publisher   = íêµ­ ë¸íì´ ëí¸í ë¸ë§ë¹ (Korea Delphi Club delmadang)
+  |title       = ìµê°ì ë¯¸ëì´ íë ì´ì´ KMPlayer Build 300 (The ultimate media player KMPlayer Build 300)
+  |accessdate  = 20 May 2010
+  |date        = 1 October 2002
+  |language    = Korean
+  }}&lt;/ref&gt; On 5 March 2008, The KMPlayer's Forum announced that the KMPlayer had been acquired by [[Pandora TV]] (a Korean streaming video company) in August 2007.&lt;ref&gt;{{cite web
+  |url        = http://www.kmplayer.com/forums/showthread.php?t=8927?c=3
+  |title      = To all KMPlayer users
+  |publisher  = The KMPlayer's Forums
+  |date       = 5 March 2008
+  |accessdate = 20 May 2010
+  |quote      = In order to develop the KMPlayer to the next level to accommodate growing needs from all over the world, Pandora TV, the largest video streaming company in Korea has acquired the technology including the source code and core engine for the KMPlayer from the original developer, Kang Yong-Huee on August, 2007.}}&lt;/ref&gt;
+
+=== Product names ===
+K-Multimedia Player is known under several names. In version 3.0.0.1438,&lt;ref name=majorgeeks /&gt; the player is labeled both KMPlayer and KMP on its main user interface. The About page refers to it as &quot;The KMPlayer Professional Media Player&quot; and &quot;The KMPlayer&quot;. The version page refers to it as &quot;KMPlayer&quot;. The license page says: 
+
+{{quote|Introduction of KMP K-MultimediaPlayer (Hereinafter, referred to as KMP) : KMP is a freeware. Its full name is K-Multimedia Player. But, it is also called as KMP, KMPlayer, KMP Player or kmp player.}}
+
+The player is distributed on international download sites under the names &quot;The KMPlayer&quot;&lt;ref name=cnet /&gt; and &quot;KMPlayer&quot;.&lt;ref name=softpedia /&gt;&lt;ref name=majorgeeks /&gt; Its official forums refer to it as &quot;The KMPlayer&quot;,&lt;ref name=officialforums&gt;{{cite web
+ |url=http://www.kmplayer.com/forums/
+ |title=The KMPlayer's Forums
+ |accessdate=2010-11-08
+ |publisher=KMPlayer.com
+}}&lt;/ref&gt; while its PandoraTV site calls it &quot;KMPlayer&quot;.&lt;ref name=officialsite&gt;{{cite web
+ |url=http://download.pandora.tv/?mode=kmp&amp;tab=1
+ |title=KMPlayer 1434 Official
+ |accessdate=2010-11-08
+ |publisher=[[Pandora TV]]
+}}&lt;/ref&gt;
+
+=== Alleged license violations ===
+Gabest, original author of [[Media Player Classic]] claimed that KMP was violating the [[GNU General Public License | GNU General Public License (GPL)]] by using GPLed code written by both him and others in a closed-source program. The development team has denied this allegation; they maintain that player did not actually include the mentioned GPL code in the executable, and thus was not breaking any GPL rules.&lt;ref&gt;[http://sourceforge.net/forum/forum.php?thread_id=1387859&amp;forum_id=462894 GPL violation post] in SourceForge, posted 23 Apr 2005 by Gabest.&lt;/ref&gt;&lt;ref&gt;[http://www.kmplayer.com/forums/showthread.php?t=141 Do not believe bad rumors spread in networks.] in KMP Forum, posted 19 Nov 2005 by Z.&lt;/ref&gt; Controversially, player was bundled with a GPL component, although when the authors were notified they deleted the GPL breaching part bundled with the program.&lt;ref&gt;[http://www.kmplayer.com/forums/showthread.php?p=481#post481 RadGTSplitter.ax being removed from the player bundle, including the GPL license.]&lt;/ref&gt;
+K-Multimedia Player is listed on [[FFmpeg]]'s Hall of Shame indicating that it is violating FFmpeg's license terms by distributing binaries of software under GPL or [[LGPL]] without source.&lt;ref&gt;[http://ffmpeg.mplayerhq.hu/shame.html FFmpeg Hall of Shame]&lt;/ref&gt;
+
+==Reception==
+KMPlayer has been listed as one of the five best multimedia players by [[Lifehacker]].&lt;ref&gt;http://lifehacker.com/5333275/five-best-video-players&lt;/ref&gt; KMPlayer 2.9 is reviewed by [[Softpedia]] editors and has received a score of 4 out of 5 plus the Softpedia Pick award.&lt;ref&gt;{{cite web|title=Uber Configurable Video Player|url=http://www.softpedia.com/reviews/windows/KMPlayer--Review-77374.shtml|work=[[Softpedia]]|publisher=SoftNews NET SRL|accessdate=3 August 2011|format=28 January 2008}}&lt;/ref&gt; Seth Rosenblatt of [[CNET]]'s [[Download.com]] also reviewed KMPlayer 3.0 and gave it a score of 5 out of 5 but mentioned a lack of [[online help]] or documentation as a shortcoming.&lt;ref&gt;{{cite web|last=Rosenblatt|first=Seth|title=KMPlayer|url=http://download.cnet.com/KMPlayer/3000-13632_4-10659939.html|work=[[Download.com]]|publisher=[[CNET]]|accessdate=3 August 2011|date=6 November 2008}}&lt;/ref&gt;
+
+== See also ==
+* [[Comparison of video player software]]
+* [[Comparison of media players]]
+
+== References ==
+{{Reflist|30em}}
+
+== External links ==
+* [http://download.pandora.tv/?mode=kmp&amp;tab=1 Official website]
+* [http://www.kmplayer.com/forums/ Official forum]
+* [http://www.kmplayer.com/forums/showthread.php?t=63 Full Feature lists]
+
+{{DEFAULTSORT:K-Multimedia Player}}
+[[Category:2002 software]]
+[[Category:Windows media players]]
+[[Category:Windows-only freeware]]
+
+[[ar:ÙÙ Ø¥Ù Ø¨ÙØ§ÙØ±]]
+[[ca:The KMPlayer]]
+[[cs:The KMPlayer]]
+[[de:The KMPlayer]]
+[[es:The KMPlayer]]
+[[fa:Ú©ÛâØ§Ù Ù¾ÙÛØ±]]
+[[fr:The KMPlayer]]
+[[ko:K-ë©í°ë¯¸ëì´ íë ì´ì´]]
+[[hu:KMPlayer]]
+[[ja:K-Multimedia Player]]
+[[pt:The KMPlayer]]
+[[ro:The KMPlayer]]
+[[ru:The KMPlayer]]
+[[sk:K-Multimedia Player]]
+[[th:The KMPlayer]]
+[[tr:KMPlayer]]
+[[vi:K-Multimedia Player]]
+[[zh:The KMPlayer]]</rev></revisions></page></pages></query></api>

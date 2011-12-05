@@ -1,0 +1,89 @@
+<?xml version="1.0"?><api><query><pages><page pageid="583514" ns="0" title="Automatic Terminal Information Service"><revisions><rev xml:space="preserve">{{unreferenced|date=August 2009}}
+'''Automatic Terminal Information Service''', or '''ATIS''', is a continuous broadcast of recorded ''noncontrol'' information in busier [[Airport terminal|terminal]] (i.e. airport) areas. ATIS broadcasts contain essential information, such as [[METAR|weather information]], which runways are active, available approaches, and any other information required by the pilots, such as important [[NOTAM]]s. Pilots usually listen to an available ATIS broadcast before contacting the local control unit, in order to reduce the controllers' workload and relieve frequency congestion.
+
+The recording is updated in fixed intervals or when there is a significant change in the information, like a change in the active runway. It is given a letter designation (e.g. ''bravo''), from the [[ICAO spelling alphabet]]. The letter progresses down the alphabet with every update and starts at Alpha after a break in service of 12 hours or more. When contacting the local control unit, a pilot will indicate he/she has &quot;information&quot; and the ATIS identification letter to let the controller know that the pilot is up to date with all current information.
+
+==Example of an ATIS system - demo==
+
+Air Traffic Controllers who use an ATIS system need to make weather updates through software located on a host computer in the control tower. This user interface can receive weather data directly from an AWOS or ASOS system (see [[Automated airport weather station]]), through a network AFTN (see [[Aeronautical Fixed Telecommunication Network]]), or AMHS connection (see [[Aeronautical Message Handling System]]), or through templates within the software. ATIS systems use the weather data feed to process the data where it can then be fed to pilots in airplanes.
+
+
+Real-world ATIS demo system: http://www.speechtech.com/products/ATIS/Demo.php
+
+==Sample message - audio==
+{{Listen|filename=ATIS_Schiphol.ogg|title=Sample ATIS Message from Amsterdam Schiphol}}
+{| class=&quot;wikitable&quot;
+! Message || Explanation
+|-
+| This is Schiphol arrival information Kilo || Indicates the broadcast is for aircraft inbound to Schiphol, and the bulletin's identification letter.
+|-
+| Main landing runway 18 Right || Main [[runway]] used for landing is 18R
+|-
+| Transition level 50 || Lowest usable flight level is 50. See [[Flight level#Transition altitude|Transition altitude]].
+|-
+| Two zero zero degrees, one one knots || Wind direction &amp;#91;MAGNETIC&amp;#93; '''from''' [[azimuth]] 200 degrees &amp;#91;MAGNETIC&amp;#93; (south-southwest), average 11 [[Knot (unit)|knots]]
+|-
+| Visibility 10 kilometres || General visibility 10 kilometers or more
+|-
+| Few 1300 feet, scattered 1800 feet broken 2200 feet || Cloud layers at the indicated altitude above the airport
+|-
+| Temperature 15, dewpoint 13 || Temperature and dewpoint in degrees Celsius.
+|-
+| QNH 995 hectopascal || [[QNH]] 995 [[hectopascal]].
+|-
+| No Significant change || No significant change in weather expected.
+|-
+| Contact Approach and Arrival callsign only || When instructed to contact the Approach and Arrival controller, check in with callsign only (for the sake of brevity)
+|-
+| End of information Kilo || End of bulletin, and the bulletin's identification letter again.
+|}
+
+See [[METAR]] for a more in-depth explanation of aviation weather messages and terminology.
+
+==Sample message - text==
+On tuning to an ATIS frequency, a pilot might hear:
+
+:''Vancouver International information Bravo one three five five Zulu weather. Wind three zero zero at eight, visibility five. Five hundred few, one thousand two hundred scattered, ceiling three thousand overcast, temperature one five, dew-point eight. Altimeter two niner eight seven. [[Instrument flight rules|IFR]] approach is ILS or visual, runway two six left and runway two six right. Simultaneous parallel ILS approaches in use. Departures, runway two six left. GPS approaches available. [[Visual flight rules|VFR]] aircraft say direction of flight. All aircraft read back all hold short instructions. Advise controller on initial contact that you have Bravo. ''
+
+This translates to:
+
+:[[Vancouver International Airport]], the information Bravo is issued at 13:55 [[UTC]]. The winds are from 300 (~northwest) at 8 [[Knot (unit)|Knots]]. Five statute miles visibility. At 500 feet there are few clouds, at 1,200 there are scattered clouds, at 3,000 feet there is an overcast [[flight ceiling]]. The temperature is 15Â°C (some airports don't include this due to variability). The [[dew point]] is 8Â°C. The [[altimeter]] setting is 29.87 [[Inch of mercury|inches of mercury]] (however this could also be expressed in [[millibars]] or [[hectopascal]]s.) Visual and simultaneous [[Instrument Landing System|ILS]] landings available using [[Instrument Flight Rules]], using runways 26L and 26R, while departures may use runway 26L. You can conduct an approach via a [[GPS]] system. When you first contact air traffic control, inform them your direction of flight if you are using [[Visual Flight Rules]]. Any &quot;hold short&quot; instructions the controller gives you need to be read back to the controller to confirm you have received them properly. Finally, inform the controller that you have information Bravo (i.e. this information).
+
+==System operation==
+The ATIS at an airport is usually given by an automated voice, this allows a busy air traffic controller to quickly type a new ATIS message instead of making a time-consuming voice recording. Most airports in a certain country will often have the same ATIS format or layout with the same automated voice. For example all ATIS information at major airports in the United Kingdom such as Heathrow, Gatwick, Manchester, Birmingham, Edinburgh and even smaller ones such as East Midlands and Newcastle and many more have a similar format or layout and are all given by the same automated voice. Below shows the same ATIS information for two UK airports which have the same automated voice as nearly all other UK airports. Some airports will give information that others do not even within the same country.
+
+'''Luton information oscar, time 1250. Runway in use 26. Expect an ILS approach. Surface wind 230 8 knots. Visibility 10 kilometers or more. Scattered 2,800 feet, broken 3,500 feet. Temperature +18. Dewpoint +10. QNH 1016. Threshold QFE 1005. Departing aircraft should make initial contact with Luton ground on 121.750. Acknowledge receipt of information oscar and advise aircraft type on first contact.'''
+
+'''Stansted information oscar, time 1250. Runway in use 22. Expect an ILS approach. Ground is open. Delivery is closed. Surface wind 230 8 knots. Visibility 10 kilometers or more. Scattered 2,800 feet, broken 3,500 feet. Temperature +18. Dewpoint +10. QNH 1016. Acknowledge receipt of information oscar and advise aircraft type on first contact.'''
+
+As Heathrow and Manchester airports both have two runways and both airports use one for arrivals and the other for departures, they have two ATIS frequencies, one for arrivals and one for departures. Manchester only uses its second runway part-time however both ATIS frequencies still remain active when only one runway is active, both ATIS services will have a recorded message saying &quot;single runway operations&quot; after it gives the runway in use when this is the case.
+
+==Technical background==
+ATIS systems can be classified as Solid-State and PC-based. Solid-State ATIS systems are microcontroller-powered devices that incorporate speech synthesis and data processing in a single piece of proprietary equipment, while PC-ATIS systems are based on [[Commercial off-the-shelf|COTS]]-Hardware, like normal rack-mounted PCs with multiple high-performance soundcards.
+
+Many high-capacity airports employ the use of Digital ATIS (or ''dATIS''). dATIS is a transcribed, digitally transmitted version of the ATIS audio broadcast, usually accessed from a digital display such as an [[Electronic flight bag|EFB]] or an [[Flight management system|FMS]]. dATIS may be incorporated into the core ATIS system, or be realized as a separate system with a data interface between voice ATIS and dATIS.
+
+==See also==
+* [[METAR]]
+* [[Air Traffic Control]]
+
+==External links==
+* [http://dxinfocentre.com/airportinfo.htm Canada ATIS frequencies]
+* [http://www.javiation.co.uk/vu.html UK ATIS frequencies]
+* [http://www.amfly.com/KPIE_atis.htm St.Petersburg/Clearwater Int'l ATIS]
+* [http://www.airservices.gov.au/brief/html.asp?/cgi-bin/avreq?met=YSSY Sydney Australia live web-based ATIS]
+
+[[Category:Air traffic control]]
+[[Category:Airport infrastructure]]
+
+[[de:Automatic Terminal Information Service]]
+[[es:ATIS]]
+[[fr:ATIS]]
+[[lb:Automatic Terminal Information Service]]
+[[nl:ATIS (luchtvaart)]]
+[[ja:ATIS]]
+[[pl:ATIS]]
+[[ru:ÐÐ¢ÐÐ¡]]
+[[fi:ATIS]]
+[[sv:Automatic Terminal Information Service]]
+[[zh:èªå¨ç»ç«¯ææ¥æå¡]]</rev></revisions></page></pages></query></api>

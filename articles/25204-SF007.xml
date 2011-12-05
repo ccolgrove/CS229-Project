@@ -1,0 +1,948 @@
+<?xml version="1.0"?><api><query><pages><page pageid="25204" ns="0" title="Qt (framework)"><revisions><rev xml:space="preserve">{{Use mdy dates|date=November 2011}}
+{{Infobox software
+| name                   = Qt
+| logo                   = [[File:Qt-logo.svg|100px]]
+| screenshot             = [[File:Qt Designer 4 4 3.png|300px]]
+| caption                = The Qt designer used for GUI designing
+| collapsible            =
+| developer              = [http://qt-project.org/ Qt Project], [[Nokia]], [[Digia]], [[KDE]]
+| released               = {{Start date and age|1992}}
+| latest_release_version = 4.7.4&lt;ref&gt;{{cite web |url=http://labs.qt.nokia.com/2011/09/01/qt-4-7-4-released/ |title=Qt 4.7.4 released |date=September 1, 2011 |accessdate=2011-09-02 }}&lt;/ref&gt;
+| latest_release_date    = {{Start date and age|2011|09|01}}
+| latest_preview_version = 4.8.0 RC1&lt;ref&gt;{{cite web |url=http://labs.qt.nokia.com/2011/10/13/qt-4-8-0-release-candidate-available/ |title=Qt 4.8.0 Release Candidate available |date=October 13, 2011 |accessdate=2011-10-24 }}&lt;/ref&gt;
+| latest_preview_date    = {{Start date and age|2011|10|13}}
+| programming language   = [[C++]]
+| operating system       = [[Embedded Linux]], [[Mac OS X]], [[Microsoft Windows]], [[Linux]]/X11, [[Windows CE]], [[Symbian]], [[MeeGo]], [[Haiku (operating system)|Haiku]], [[Amiga OS]]
+| platform               = [[Cross-platform]]
+| size                   =
+| status                 = Active
+| genre                  = [[Application framework]]
+| license                = [[GNU GPL]]&lt;ref name=&quot;Qt GNU GPL v. 3.0 Version&quot;&gt;{{cite web 
+|url=http://qt.nokia.com/products/licensing/licensing#qt-gnu-gpl-v 
+|title=Qt GNU GPL v. 3.0 Version
+}}&lt;/ref&gt; 3, with Qt special exception &lt;br&gt;[[GNU LGPL|GNU Lesser General Public License (LGPL v2.1)]] (Qt open-source version)&lt;ref name=&quot;Qt GNU LGPL v. 2.1 Version&quot;&gt;{{cite web 
+|url=http://qt.nokia.com/products/licensing/licensing#qt-gnu-lgpl-v 
+|title=Qt GNU LGPL v. 2.1 Version}}&lt;/ref&gt;&lt;br&gt;[[Proprietary software|Qt Commercial License]] (Qt Commercial version)&lt;ref name=&quot;Qt Commercial Developer License&quot;&gt;{{cite web 
+|url=http://qt.nokia.com/products/licensing/licensing#qt-commercial-license 
+|title=Qt Commercial version under the Qt Commercial License
+}}&lt;/ref&gt;
+| website                = {{URL|http://qt.nokia.com/}}
+}}
+'''Qt''' (pronounced officially as ''cute'' {{IPA-en|ËkjuËt|}}, though often unofficially pronounced as ''Q.T.'' {{IPA-en|ËkjuËËtiË|}}&lt;ref&gt;{{cite web |url=http://bits.blogs.nytimes.com/2010/02/16/that-smartphone-is-so-qt/ |title=That Smartphone Is So Qt |date=February 16, 2010 |work=Ashlee Vance|work=The New York Times |accessdate=2010-02-19 }}&lt;/ref&gt;&lt;ref&gt;{{cite web |url=http://video.google.com/videoplay?docid=-1435432529445611697 |title=The Qt 4 Dance |format=video |accessdate=2010-02-19 }}&lt;/ref&gt;) is a [[cross-platform]] [[application framework]] that is widely used for developing [[application software]] with a [[graphical user interface|graphical user interface (GUI)]] (in which cases Qt is classified as a ''[[widget toolkit]]''), and also used for developing non-GUI programs such as [[command-line tool]]s and consoles for servers. Qt is most notably used in [[Autodesk]] [[Autodesk Maya|Maya]],&lt;ref&gt;{{cite web 
+|url=http://qt.nokia.com/qt-in-use/autodesk/ 
+|title= Qt in Autodesk
+}}&lt;/ref&gt;&lt;ref&gt;{{cite web 
+|url=http://qt.nokia.com/qt-in-use/qt-in-visual-effects 
+|title= Qt in visual effects
+}}&lt;/ref&gt; [[Adobe Photoshop Elements]], [[OPIE user interface|OPIE]], [[Skype]], [[VLC media player]],&lt;ref&gt;{{cite web |url=http://qt.nokia.com/qt-in-use/story/app/vlc-player/ |title= Qt in VideoLan Player}}&lt;/ref&gt; [[VirtualBox]], and [[Mathematica]],&lt;ref&gt;{{cite web 
+|url=http://qt.nokia.com/qt-in-use/story/customer/mathematica-by-wolfram-research/ 
+|title= Qt delivered advanced, cross-platform C++ GUI for Mathematicaâs development team }}&lt;/ref&gt; and by the [[European Space Agency]],&lt;ref&gt;{{cite web 
+|url=http://qt.nokia.com/qt-in-use/story/customer/esa-european-space-agency 
+|title= Qt in the European Space Agency
+}}&lt;/ref&gt; [[DreamWorks]],&lt;ref&gt;{{cite web 
+|url=http://qt.nokia.com/learning/online/talks/developerdays2010/keynotes/behind-the-scenes-at-dreamworks-animation-making-the-apps-that-make-the-movies/
+|title= Behind the Scenes at DreamWorks Animation: Making the Apps that Make the Movies 
+}}&lt;/ref&gt;&lt;ref&gt;{{cite web 
+|url=http://developer.qt.nokia.com/videos/watch/ui_system_design_challenges_for_the_nxg_lighting_tool
+|title= UI &amp; System Design Challenges for the NxG Lighting Tool
+}}&lt;/ref&gt; [[Google]], [[Hewlett-Packard|HP]],&lt;ref&gt;{{cite web 
+|url=http://developer.qt.nokia.com/videos/watch/developing_innovative_desktop_and_embedded_hp_products_with_qt
+|title= Developing Innovative Desktop and Embedded HP Products with Qt
+}}&lt;/ref&gt; [[KDE]],&lt;ref&gt;{{cite web|url=http://kde.org/developerplatform/ |title= The KDE development platform}}&lt;/ref&gt; [[Lucasfilm]],&lt;ref&gt;{{cite web 
+|url=http://qt.nokia.com/qt-in-use/story/app/lucasfilm-entertainment-company-ltd/
+|title= Lucasfilm Entertainment Company Ltd.
+}}&lt;/ref&gt; [[Panasonic]],&lt;ref&gt;{{cite web 
+|url=http://qt.nokia.com/about/news/panasonic-selects-qt-for-hd-video-system 
+|title= Panasonic selects Qt for HD video system 
+}}&lt;/ref&gt; [[Philips]],&lt;ref&gt;{{cite web 
+|url=http://qt.nokia.com/qt-in-use/qt-in-ip-communications 
+|title= Qt in IP Communications
+}}&lt;/ref&gt; [[Samsung]],&lt;ref&gt;{{cite web 
+|url=http://qt.nokia.com/qt-in-use/qt-in-home-media 
+|title= Qt in Home Media
+}}&lt;/ref&gt; [[Siemens]],&lt;ref&gt;{{cite web 
+|url=http://qt.nokia.com/qt-in-use/story/customer/siemens 
+|title= Qt helped Siemens deliver a C++ development platform for manufacturing software GUIs
+}}&lt;/ref&gt; [[Volvo]],&lt;ref&gt;{{cite web |url=http://qt.nokia.com/qt-in-use/story/customer/volvo-mobility-systems |title= Volvo Mobility Systems }}&lt;/ref&gt; and [[Walt Disney Animation Studios]].&lt;ref&gt;{{cite web |url=http://qt.nokia.com/qt-in-use/story/customer/walt-disney-feature-animation 
+|title= Qt helped Walt Disney reduce development time spent on its cross-platform feature film production application
+}}&lt;/ref&gt;
+
+It is currently produced by [[Nokia]]'s [[Qt Development Frameworks]] division, which came into being after Nokia's acquisition of the [[Norway|Norwegian]] company [[Trolltech]], the original producer of Qt.&lt;ref&gt;[http://qt.nokia.com/about/the-nokia-acquisition Qt Software â Nokia acquired Trolltech]{{dead link|date=November 2011}}&lt;/ref&gt; Nokia announced that it is going to drop  [[Symbian]] technologies and base their future smartphones on [[Microsoft]] platform instead in February 2011. One month later Nokia announced the sale of Qt's commercial licensing and professional services to [[Digia PLC]], although Nokia will remain the main development force behind the framework.&lt;ref name=&quot;Nokia and Digia&quot;&gt;{{cite web |url=http://blog.qt.nokia.com/2011/03/07/nokia-and-digia-working-together/ |title=Nokia and Digia working together to grow the Qt community |date=2011-03-07 |accessdate=2011-03-08 |first=Sebastian |last=Nystrom}}&lt;/ref&gt; On May 9, it was announced on the Qt Labs website that the groundwork was being laid for the next major version of Qt, with the expectation that Qt 5 would be released in 2012.&lt;ref name=&quot;Thoughts about Qt 5&quot;&gt;{{cite web |url=http://labs.qt.nokia.com/2011/05/09/thoughts-about-qt-5/ |title=Thoughts about Qt 5 |date=2011-05-09 |accessdate=2011-05-09 |first=Lars |last=Knoll}}&lt;/ref&gt;
+
+Qt uses standard [[C++]] but makes extensive use of a special code generator (called the ''Meta Object Compiler'', or ''moc'') together with several macros to enrich the language. Qt can also be used in several other [[programming language]]s via [[language binding]]s. It runs on the major desktop platforms and some of the mobile platforms. It has extensive [[internationalization]] support. Non-GUI features include [[SQL]] database access, [[XML]] parsing, [[Thread (computer science)|thread]] management, network support, and a unified cross-platform [[application programming interface|API]] for file handling.
+
+Distributed under the terms of the [[GNU]] [[Lesser General Public License]] (among others), Qt is [[free software|free]] and [[open source software]].  All editions support a wide range of compilers, including the [[GNU Compiler Collection|GCC]] C++ compiler and the [[Microsoft Visual Studio|Visual Studio]] suite.
+
+==Platforms==
+
+Qt is released by Nokia on the following platforms:
+* '''Linux/X11''' â Qt for [[X Window System]] ([[GNU/Linux]], [[FreeBSD]], HP-UX, Solaris, AIX, etc.)&lt;ref&gt;{{cite web|url=http://developer.qt.nokia.com/wiki/Support_for_Linux_X11 |title=Qt Wiki â Support for Linux/X11 |publisher=Developer.qt.nokia.com |date=August 12, 2011 |accessdate=November 13, 2011}}&lt;/ref&gt;
+* '''Mac OS X''' â Qt for Apple [[Mac OS X]]. Support for applications on top of Cocoa APIs&lt;ref&gt;{{cite web|url=http://developer.qt.nokia.com/wiki/Support_for_Mac_OS_X |title=Qt Wiki â Support for Mac OS X |publisher=Developer.qt.nokia.com |date=August 14, 2011 |accessdate=November 13, 2011}}&lt;/ref&gt;
+* '''Windows''' â Qt for [[Microsoft Windows]]&lt;ref&gt;{{cite web|url=http://developer.qt.nokia.com/wiki/Support_for_Windows |title=Qt Wiki â Support for Windows |publisher=Developer.qt.nokia.com |date=August 11, 2011 |accessdate=November 13, 2011}}&lt;/ref&gt;
+* '''Embedded Linux''' â Qt for embedded platforms ([[Personal Digital Assistant|PDA]], [[Smartphone]], etc.)&lt;ref&gt;{{cite web|url=http://developer.qt.nokia.com/wiki/Support_for_Embedded_Linux |title=Qt Wiki â Support for Embedded Linux |publisher=Developer.qt.nokia.com |date=August 12, 2011 |accessdate=November 13, 2011}}&lt;/ref&gt;
+* '''Windows CE / Mobile ''' â Qt for [[Windows CE]]/[[Windows Mobile]]&lt;ref&gt;{{cite web|url=http://developer.qt.nokia.com/wiki/Support_for_Windows_CE_and_Windows_Mobile |title=Qt Wiki â Support for Windows CE and Windows Mobile |publisher=Developer.qt.nokia.com |date=August 12, 2011 |accessdate=November 13, 2011}}&lt;/ref&gt;
+*  '''Symbian''' â Qt for the [[Symbian platform]].&lt;ref&gt;{{cite web|url=http://developer.qt.nokia.com/wiki/Support_for_Symbian |title=Qt Wiki â Support for Symbian |publisher=Developer.qt.nokia.com |accessdate=November 13, 2011}}&lt;/ref&gt;&lt;ref&gt;[http://www.nokia.com/A4136001?newsid=1261033 Nokia â Nokia enriches application development with Qt for S60]{{dead link|date=November 2011}}&lt;/ref&gt;&lt;ref&gt;{{cite web|url=http://wiki.forum.nokia.com/index.php/Qt_for_S60 |title=Qt for S60 â Forum Nokia Wiki |publisher=Wiki.forum.nokia.com |accessdate=November 13, 2011}}&lt;/ref&gt;&lt;ref&gt;[http://www.symbian.com/news/cn/2008/cn200810131.html Symbian â Nokia enriches application development with Qt for S60]{{dead link|date=November 2011}}&lt;/ref&gt;&lt;ref&gt;{{cite web|url=http://www.allaboutsymbian.com/news/item/8312_Nokia_Announce_Technology_prev.php |title=Nokia Announce Technology preview of Qt on S60 |publisher=All About Symbian |date=October 20, 2008 |accessdate=November 13, 2011}}&lt;/ref&gt;&lt;ref&gt;{{cite web|last=Paul |first=Ryan |url=http://arstechnica.com/news.ars/post/20081020-nokia-releases-first-qt-preview-for-symbian-s60.html |title=Nokia releases first Qt preview for Symbian S60 |publisher=ars technica |date=October 20, 2008 |accessdate=November 13, 2011}}&lt;/ref&gt;&lt;ref&gt;{{cite web|author=Espen Riskedal |url=http://labs.trolltech.com/blogs/2008/10/20/were-porting-qt-to-s60/ |title=Qt Labs Blogs â Weâre porting Qt to S60! |publisher=Labs.trolltech.com |date=October 20, 2008 |accessdate=November 13, 2011}}&lt;/ref&gt;&lt;ref&gt;{{cite web|url=http://trolltech.com/developer/technical-preview-qt-for-s60 |title=Qt Software â Technology Preview â Qt for S60 |publisher=Trolltech.com |accessdate=November 13, 2011}}&lt;/ref&gt;&lt;ref&gt;[http://trolltech.com/products/device-creation/videos/how-to-get-qt-running-on-your-s60-phone Qt Software â How to get Qt running on your S60 phone]{{dead link|date=November 2011}}&lt;/ref&gt; Qt is to replace Nokia's Avkon as the supported UI SDK for the development of Symbian applications.&lt;ref&gt;{{cite web|url=http://tamss60.tamoggemon.com/2009/08/04/david-wood-s60-avkon-are-dead/ |title=David Wood: S60 / Avkon are dead |publisher=Tamss60.tamoggemon.com |accessdate=November 13, 2011}}&lt;/ref&gt; The [http://wiki.forum.nokia.com/index.php/Category:Qt_for_Symbian Qt for Symbian] development group has many quality-controlled articles available.
+*  '''Maemo/MeeGo''' â Qt for [[Maemo]], merged with [[Moblin]] to [[MeeGo]].&lt;ref&gt;{{cite web|url=http://developer.qt.nokia.com/wiki/Support_for_Maemo |title=Qt Wiki â Qt on Maemo/MeeGo |publisher=Developer.qt.nokia.com |date=August 14, 2011 |accessdate=November 13, 2011}}&lt;/ref&gt; There are many applications already written for [[Maemo]] based on the previous [[Internet tablet]]s. The [[Nokia N900]] also supports Qt. The [http://wiki.forum.nokia.com Forum Nokia Wiki] has quality-controlled articles that support [http://wiki.forum.nokia.com/index.php/Category:Qt Qt development]. The Maemo operating system has a development group on the [http://wiki.forum.nokia.com Forum Nokia Wiki] at [http://wiki.forum.nokia.com/index.php/Category:Maemo Forum Nokia Wiki Maemo].
+* '''Wayland''' â Qt for [[Wayland (display server)|Wayland display server]]. Qt applications can switch between graphical backends like X and Wayland at [[Run time (program lifecycle phase)|run time]] with the -platform command line option.&lt;ref&gt;{{cite web
+| url = http://developer.qt.nokia.com/wiki/Getting_Started_With_Lighthouse
+| title = Getting started with Lighthouse
+| accessdate = November 25, 2011
+}}&lt;/ref&gt;&lt;ref&gt;{{cite web
+| url = http://qt.gitorious.org/+qt-developers/qt/lighthouse/commit/6c5ea196ff086b92687033208f15e36591dc70f6
+| author = Kristian HÃ¸gsberg
+| date = January 25, 2011
+| title = Add wayland lighthouse plugin
+}}&lt;/ref&gt;
+
+===External ports===
+Since Nokia opened the Qt source code to the community on [[Gitorious]] various ports have been appearing.
+Here are some of them:
+* '''Qt for OpenSolaris''' â Qt for [[OpenSolaris]]&lt;ref&gt;{{cite web|url=http://hub.opensolaris.org/bin/view/Project+kde/ |title=KDE on OpenSolaris |publisher=Hub.opensolaris.org |date=October 26, 2009 |accessdate=November 13, 2011}}&lt;/ref&gt;
+* '''Qt for Haiku''' â Qt for [[Haiku (operating system)|Haiku]]&lt;ref&gt;{{cite web|url=http://qt-haiku.ru |title=Qt Applications and UI Framework for Haiku |publisher=Qt-haiku.ru |accessdate=November 13, 2011}}&lt;/ref&gt;
+* '''Qt for OS/2''' â Qt for [[EComStation|OS/2 eCS platform]].&lt;ref&gt;{{cite web|url=http://svn.netlabs.org/qt4 |title=Qt 4 Application and UI Framework for eCS |publisher=Svn.netlabs.org |date=September 15, 2011 |accessdate=November 13, 2011}}&lt;/ref&gt;
+* '''Qt for Amiga OS4''' â Qt for [[Amiga OS4]]&lt;ref&gt;{{cite web|url=http://os4depot.net/?function=showfile&amp;file=development/cross/qt-user.tar.gz |title=OS4Depot page for &quot;First Alpha release of Qt 4.7 for AmigaOS Native&quot; |publisher=Os4depot.net |accessdate=November 13, 2011}}&lt;/ref&gt;
+* '''Qt-iPhone''' â Experimental development of Qt for the [[iPhone]].&lt;ref&gt;{{cite web|url=http://gitorious.org/+qt-iphone |title=Experimental development of qt for the iPhone |publisher=Gitorious.org |accessdate=November 13, 2011}}&lt;/ref&gt;&lt;ref&gt;{{cite web|url=http://www.qt-iphone.com/ |title=Qt-iPhone project |publisher=Qt-iphone.com |accessdate=November 13, 2011}}&lt;/ref&gt;
+* '''Qt for webOS''' â Experimental development of Qt for [[webOS]] on [[Palm Pre]].&lt;ref&gt;[http://gitorious.org/~darronb/qt/qt-palm-pre.git Qt webOS port]&lt;/ref&gt;&lt;ref&gt;{{cite web|author=darron |url=http://www.griffin.net/2010/02/qt-on-the-palm-pre.html |title=Blog: Qt on the Palm Pre |publisher=Griffin.net |date=February 25, 2010 |accessdate=November 13, 2011}}&lt;/ref&gt;
+* '''Qt for Amazon Kindle DX''' â Experimental development of Qt for [[Kindle DX|Amazon Kindle DX]].&lt;ref&gt;{{cite web|author=darron |url=http://www.griffin.net/2010/01/hacking-the-amazon-kindle-dx-part-2-qt-and-sudoku.html |title=Blog: Qt on Amazon Kindle DX |publisher=Griffin.net |date=January 30, 2010 |accessdate=November 13, 2011}}&lt;/ref&gt;
+* '''Necessitas''' â Qt for [[Android (operating system)|Android]]&lt;ref&gt;{{cite web|url=http://sourceforge.net/p/necessitas/home/ |title=Necessitas project |publisher=Sourceforge.net |accessdate=November 13, 2011}}&lt;/ref&gt;&lt;ref&gt;{{cite web|url=http://mobile.slashdot.org/story/11/02/22/0119247/First-Alpha-of-Qt-For-Android-Released|title=First Alpha of Qt For Android Released|date=February 22, 2011|publisher=[[Slashdot]]|accessdate=February 22, 2011}}&lt;/ref&gt;
+* '''Qt for BlackBerry''' â Qt for [[BlackBerry]].&lt;ref&gt;{{cite web|author=nratelle |url=https://github.com/blackberry/Qt |title=Github project |publisher=Github.com |accessdate=November 13, 2011}}&lt;/ref&gt;
+
+==Editions==
+
+There are three editions of Qt available on each of these platforms, namely:
+* '''GUI Framework''' â commercial entry level GUI edition, stripped of network and database support (formerly known as &quot;Desktop Light&quot;)
+* '''Full Framework''' â complete commercial edition
+* '''Open Source''' â complete Open Source edition
+
+Qt is available under the following copyright licenses:
+
+* [[GNU LGPL]]&lt;ref name=&quot;Qt GNU LGPL v. 2.1 Version&quot;/&gt; 2.1 Version
+* [[GNU GPL]]&lt;ref name=&quot;Qt GNU GPL v. 3.0 Version&quot;/&gt; 3.0 Version with Qt special exception
+* [[Proprietary software|Commercial Developer License]]&lt;ref name=&quot;Qt Commercial Developer License&quot;/&gt;
+
+==Current==
+Trolltech released Qt 4.0 on June 28, 2005 and introduced five new technologies in the framework:
+
+* '''''Tulip''''' A set of template container [[Class (computer science)|classes]].
+* '''''Interview''''' A [[ModelâViewâController|model/view]] architecture for item views.
+* '''''Arthur''''' A 2D painting framework.
+* '''''Scribe''''' A Unicode text renderer with a public API for performing low-level text layout.
+* '''''MainWindow''''' A modern action-based main window, toolbar, menu, and docking architecture.
+
+{|class=&quot;wikitable&quot;
+|-
+! Version || Release Date || New Features
+|-
+| 4.1 || December 20, 2005 &lt;ref&gt;[http://qt.nokia.com/about/news/archive/00000229 Trolltech Releases Qt 4.1], qt.nokia.com, retrieved November 27 2011.&lt;/ref&gt; || Introduced integrated [[Scalable Vector Graphics|SVG]] Tiny support, a [[Portable Document Format|PDF]] backend to Qt's printing system, and [http://www.trolltech.com/newsroom/announcements/00000229.html a few other features].
+|-
+| 4.2 || October 4, 2006 &lt;ref&gt;[http://labs.qt.nokia.com/2006/10/04/qt-420-released/ Qt 4.2.0 released] by Harald Fernengel, labs.qt.nokia.com, retrieved November 27 2011.&lt;/ref&gt; || Introduced [[Windows Vista]] support, introduced native CSS support for widget styling, as well as the QGraphicsView framework for efficient rendering of thousands of 2D objects onscreen, to replace Qt 3.x's QCanvas class.
+|-
+| 4.3 || May 30, 2007 &lt;ref&gt;[http://labs.qt.nokia.com/2007/05/30/qt-430-released/ Qt 4.3.0 released] by Girish Ramakrishnan, labs.qt.nokia.com, retrieved November 27 2011.&lt;/ref&gt; || Improved [[Windows Vista]] support, improved [[OpenGL]] engine, [[SVG]] file generation, added [[QtScript]] ([[ECMAScript]] scripting engine based on QSA).&lt;ref name=&quot;Qt4.3WhatsNew&quot;&gt;[http://trolltech.com/products/qt/whatsnew/whatsnew-qt43 Trolltech: ''Whatâs New in Qt 4.3'']{{dead link|date=November 2011}}&lt;/ref&gt;
+|-
+| 4.4 || May 6, 2008 &lt;ref&gt;[http://labs.qt.nokia.com/2008/05/06/qt-440-fully-released/ Qt 4.4.0 fully released] by Thiago Macieira, labs.qt.nokia.com, retrieved November 27 2011.&lt;/ref&gt; || Features included are improved multimedia support using [[Phonon (KDE)|Phonon]], enhanced [[XML]] support, a concurrency framework to ease the development of [[Thread (computer science)|multi-threaded]] applications, an [[Inter-process communication|IPC]] framework with a focus on shared memory, and [[WebKit]] integration.
+|-
+| 4.5 || March 3, 2009 &lt;ref&gt;[http://labs.qt.nokia.com/2009/03/03/qt-45-hits-the-virtual-shelves/ Qt 4.5 hits the (virtual) shelves] by Jason McDonald, labs.qt.nokia.com, retrieved November 27 2011.&lt;/ref&gt; || Major included features are [[QtCreator]], improved graphical engine, improved integration with [[WebKit]], [[OpenDocument]] Format write support and new licensing options, as well as Mac OS X Cocoa framework support.
+|-
+| 4.6 || December 1, 2009 &lt;ref&gt;[http://labs.qt.nokia.com/2009/12/01/qt-460-released-early-due-to-good-behaviour/ Qt 4.6.0 Released Early due to Good Behaviour] by Jason McDonald, labs.qt.nokia.com, retrieved November 27 2011.&lt;/ref&gt; || New APIs are Framework Animation, Gestures, Multi-touch. Now supports (as Tier 1) Symbian and (as Tier 2) Windows 7 and Mac OS X 10.6, support extended for some UNIX systems. Improvements have also been made to overall performance.
+|-
+| 4.7 || September 21, 2010 &lt;ref&gt;[http://labs.qt.nokia.com/2010/09/21/qt-4-7-0-now-available/ Qt 4.7.0 now available] by Jason McDonald, labs.qt.nokia.com, retrieved November 27 2011.&lt;/ref&gt; || [[QML]] and [[Qt Quick]].
+|}
+
+==Design==
+The innovation of Qt when it was first released relied on a few key concepts.
+
+===Modules===
+
+* Modules for general software development
+** The '''QtCore''' module contains the core non-GUI classes, including the event loop and Qt's signal and slot mechanism. It also includes platform independent abstractions for [[Unicode]], threads, mapped files, shared memory, [[regular expressions]], and user and application settings.
+** The '''QtGui''' module contains the majority of the GUI classes. These include a number of table, tree and list classes based on the [[Modelâviewâcontroller|model-view-controller]] design pattern. Also provided is a sophisticated [[2D computer graphics|2D]] canvas widget capable of storing thousands of items including ordinary widgets.
+** The '''QtMultimedia''' module implements low-level multimedia functionality.
+** The '''QtNetwork''' module contains classes for writing [[User Datagram Protocol|UDP]] and [[Transmission Control Protocol|TCP]] clients and servers. It includes classes that implement [[FTP]] and [[HTTP]] clients and support [[Domain Name System|DNS]] lookups. Network events are integrated with the event loop making it very easy to develop networked applications.
+** The '''QtOpenGL''' module contains classes that enable the use of [[OpenGL]] in rendering [[3D computer graphics|3D]] graphics.
+** The '''QtOpenVG''' module is a plugin that provides support for [[OpenVG]] painting.
+** The '''[[QtScript]]''' module is an [[ECMAScript]]-based scripting engine
+** The '''QtScriptTools''' module provides additional components for applications that use QtScript.
+** The '''QtSql''' module contains classes that integrate with open-source and proprietary SQL databases. It includes editable data models for database tables that can be used with GUI classes. It also includes an implementation of [[SQLite]].
+** The '''QtSvg''' module contains classes for displaying the contents of SVG files. It supports the static features of SVG 1.2 Tiny.
+** The '''QtWebKit''' module provides a [[WebKit]]-based [[layout engine]] as well as classes to render and interact with web content.
+** The '''QtXml''' module implements [[Simple API for XML|SAX]] and [[Document Object Model|DOM]] interfaces to Qt's XML parser.
+** The '''QtXmlPatterns''' module provides support for [[XPath]], [[XQuery]], [[XSLT]] and [[XML]] Schema validation.
+** The [[Phonon (KDE)|'''Phonon''']] multimedia [[API]] provides simple multimedia control.
+** The '''Qt3Support''' module provides classes that ease porting from Qt 3 to Qt 4.
+** The '''Qt Declarative'''&lt;ref&gt;{{cite web|url=http://doc.qt.nokia.com/4.7-snapshot/qtdeclarative.html |title=Qt 4.7: Qt Declarative Module |publisher=Doc.qt.nokia.com |accessdate=November 13, 2011}}&lt;/ref&gt; module is a declarative framework for building fluid user interfaces in [[QML]]
+
+* Modules for working with Qt's tools
+** '''QtDesigner'''
+** '''QtUiTools'''
+** '''QtHelp'''
+** '''QtTest'''
+
+* Modules for Unix developers
+** The '''QtDBus''' module is a library that you can use to perform Inter-Process Communication using the [[D-Bus]] protocol.
+
+* Modules for Windows developers
+** The '''QAxContainer''' module is an extension for accessing ActiveX controls and COM objects.
+** The '''QAxServer''' module is a static library that you can use to turn a standard Qt binary into a COM server.
+
+===Use of native UI-rendering APIs===
+Qt used to emulate the native look of its intended platforms, which occasionally led to slight discrepancies where that emulation was imperfect. Recent versions of Qt use the native style APIs of the different platforms to query the platform for the desired appearance of the Qt controls, and so do not suffer from such issues as much.&lt;ref&gt;[http://qt.nokia.com/products/qt/index.html Products â Qt â A cross-platform application and UI framework] 'Qt uses the native graphics APIs of each platform it supports, taking full advantage of system resources and ensuring that applications have native look and feel.'&lt;/ref&gt;
+
+One should note that on some platforms (such as MeeGo and KDE) Qt ''is'' the native API.
+
+===Metaobject compiler===
+The [[metaobject]] compiler, termed ''moc'', is a tool that is run on the sources of a Qt program. It interprets certain macros from the C++ code as annotations, and uses them to generate additional C++ code with &quot;Meta Information&quot; about the classes used in the program. This meta information is used by Qt to provide programming features not available natively in C++: the [[signals and slots|signal/slot system]], [[Type introspection|introspection]] and asynchronous function calls.
+
+===QtScript ECMAScript interpreter===
+[[QtScript]] is a cross-platform toolkit that allows developers to make their Qt/C++ applications scriptable using an interpreted scripting language: Qt Script (based on ECMAScript/[[JavaScript]]).
+
+From Qt 4.3.0 onward, the scripting API,&lt;ref&gt;{{cite web|url=http://doc.trolltech.com/4.3/qtscript.html |title=Qt 4.3: QtScript Module |publisher=Doc.trolltech.com |accessdate=November 13, 2011}}&lt;/ref&gt; which is based on QSA,&lt;ref&gt;{{cite web|url=http://doc.trolltech.com/qsa-1.2.2/ |title=QSA 1.2: Qt Script for Applications |publisher=Doc.trolltech.com |accessdate=November 13, 2011}}&lt;/ref&gt; is integrated as a core part of Qt and is no longer a separate library.
+
+===Bindings===
+As shown in the table below, Qt has a range of [[Language binding|bindings]] for various languages&lt;ref&gt;{{cite web|url=http://qt.nokia.com/products/programming-language-support |title=QT Language Bindings |publisher=Qt.nokia.com |accessdate=November 13, 2011}}&lt;/ref&gt; that implement some or all of its feature set.
+
+{| class=&quot;wikitable sortable&quot; style=&quot;font-size: 90%;&quot;
+|+ style=&quot;font-size: 1.25em;&quot; | '''Qt language bindings'''
+|-
+! [[Programming language|Language]]
+! Name â description of binding
+! QtCore
+! QtDesigner
+! QtGui
+! Equivalent for uic
+! QtNetwork
+! QtOpenGL
+! QtSql
+! QtScript
+! QtSvg
+! QtTest
+! QtUiTools
+! QtWebKit
+! QtXml
+! [[Software license|License]] for [[Open source|open-source]] apps
+! [[Software license|License]] for [[Proprietary software|proprietary]] applications
+|-
+| [[Ada (programming language)|Ada]]
+| [http://www.qtada.com/en/index.html QtAda]
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{no}}
+| {{no}}&lt;ref&gt;[http://www.qtada.com/en/supported_modules.html] Supported Qt modules in QtAda&lt;/ref&gt;
+| {{yes}}
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{yes}}
+| {{no}}
+| {{yes}}
+| {{GPL-lic}}
+| {{Proprietary|[[GMGPL]]}} + fee
+|-
+| [[C++]]
+| [http://qt.nokia.com Qt] â native C++
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{free|[[GPL]] or [[LGPL]]}}
+| {{partial|[[LGPL]] or Proprietary + fee}}
+|-
+| [[C Sharp (programming language)|C#]] &amp; [[.NET Framework|.NET]]
+| [https://projects.kde.org/projects/kde/kdebindings/csharp/qyoto Qyoto] â See also [https://projects.kde.org/projects/kde/kdebindings/csharp/kimono Kimono] for [[KDE]]
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}} ([https://projects.kde.org/projects/kde/kdebindings/csharp/qyoto/repository/revisions/master/show/tools/uics uics])
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+|
+|
+|-
+| C# &amp; .NET
+| [http://code.google.com/p/qt4dotnet/ qt4dotnet]
+| {{yes}}
+|
+| {{yes}}
+| WIP&lt;ref&gt;{{cite web|url=http://code.google.com/p/qt4dotnet/#Known_problems_/_missing_features |title=qt4dotnet â Qt bindings for .NET â Google Project Hosting |publisher=Google  |accessdate=November 13, 2011}}&lt;/ref&gt;
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{free|[[LGPL]]}}
+| {{free|[[LGPL]]}}
+|-
+| [[D (programming language)|D]]
+| [http://www.dsource.org/projects/qtd QtD]
+|{{yes}}
+|{{yes}}
+|{{yes}}
+|{{yes}} (duic)
+|{{yes}}
+|{{yes}}
+|{{No}}
+|{{No}}
+|{{yes}}
+|{{No}}
+|{{No}}
+|{{yes}}
+|{{yes}}
+| {{free|Boost Software License+[[GPL]]}}
+| {{free|Boost Software License+[[GPL]]}}
+|-
+| [[Haskell (programming language)|Haskell]]
+| [http://qthaskell.berlios.de/ Qt Haskell]
+|
+|
+|
+| {{No}}
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+| [[Harbour (software)|Harbour]]
+| [http://www.harbour-project.org/ hbqt]
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}} (hbmk2)
+| {{yes}}
+| {{No}}
+| {{yes}}
+| {{No}}
+| {{No}}
+| {{No}}
+| {{No}}
+| {{yes}}
+| {{No}}
+| {{GPL-lic}}
+| {{free|[[LGPL]]}} like
+|-
+| [[Java (programming language)|Java]]
+| [[Qt Jambi]]
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}} (juic)
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{free|[[LGPL]]}}
+| {{free|[[LGPL]]}}
+|-
+| [[Lisp (programming language)|Lisp]]
+| [http://common-lisp.net/project/commonqt/ CommonQt] â Bindings for [[Common Lisp]]
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{no}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{free|[[BSD License]]}}
+| {{free|[[BSD License]]}}
+|-
+| [[Lua (programming language)|Lua]]
+| [http://code.google.com/p/lqt lqt] â Bindings
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{no}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{no}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{free|[[MIT License|MIT]]}}
+| {{free|[[MIT License|MIT]]}}
+|-
+| Lua
+| [http://www.nongnu.org/libqtlua QtLua] â Bindings and script engine
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|{{free|[[LGPL]]}}
+|{{free|[[LGPL]]}}
+|-
+| [[Pascal (programming language)|Pascal]]
+| [http://wiki.freepascal.org/Qt_Interface FreePascal Qt4]
+| {{yes}}
+| {{yes}} (lazarus RAD IDE)
+| {{yes}}
+| {{no}}
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{yes}}
+| {{yes}}
+| {{free|[[LGPL]]}}
+| {{free|[[LGPL]]}}
+|-
+| [[Perl]]
+| [https://projects.kde.org/projects/kde/kdebindings/perl/perlqt PerlQt] â See also [https://projects.kde.org/projects/kde/kdebindings/perl/perlkde PerlKDE ] for KDE
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}} (puic)
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{GPL-lic}}
+| {{No}}
+|-
+| [[PHP]]
+| [[PHP-Qt]]
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| WIP
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{free|[[LGPL]]}}
+| {{free|[[LGPL]]}}
+|-
+| [[Python (programming language)|Python]]
+| [[PyQt]]
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}} (pyuic)
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{GPL-lic}}
+| {{Proprietary}} + fee
+|-
+| Python
+| [[PySide]] â from OpenBossa (a subsidiary of Nokia).
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}} (pysideuic)
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+|
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{free|[[LGPL]]}}
+| {{free|[[LGPL]]}}
+|-
+| Python
+| [http://pythonqt.sourceforge.net/ PythonQt]
+|
+|
+|
+| {{N/A}}
+|
+|
+|
+|
+|
+|
+|
+|
+|
+| {{free|[[LGPL]]}}
+| {{free|[[LGPL]]}}
+|-
+| [[QML]]
+| QML â It is part of the Qt
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{N/A}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{free|[[LGPL]]}}
+| {{partial|LGPL or Proprietary + fee}}
+|-
+| [[R (programming language)|R]]
+| [https://r-forge.r-project.org/projects/qtinterfaces qtbase]
+| {{yes}}
+| {{yes}}
+| {{yes}}
+|
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{free|[[GPL]]}}
+| {{No}}
+|-
+| [[Ruby (programming language)|Ruby]]
+| [[QtRuby]]
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}} (rbuic)
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{free|[[LGPL]]}}
+| {{free|[[LGPL]]}}
+|-
+| [[Scheme (programming language)|Scheme]]
+| [http://wiki.call-cc.org/eggref/4/qt Qt Egg] for [[Chicken (Scheme implementation)|Chicken Scheme]]
+| {{no}}
+| {{yes}}
+| {{yes}}
+| {{no}}
+| {{yes}}
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{free|[[BSD License]]}}
+| {{free|[[BSD License]]}}
+|-
+| [[Tcl]]
+| [http://sourceforge.net/projects/qtcl/ qtcl]
+|
+|
+|
+| {{No}}
+|
+|
+|
+|
+|
+|
+|
+|
+|
+| {{GPL-lic}}
+| {{No}}
+|-
+! [[Programming language|Language]]
+! Name â description of binding
+! QtCore
+! QtDesigner
+! QtGui
+! Equivalent for uic
+! QtNetwork
+! QtOpenGL
+! QtSql
+! QtScript
+! QtSvg
+! QtTest
+! QtUiTools
+! QtWebKit
+! QtXml
+! [[Software license|License]] for [[Open source|open-source]] apps
+! [[Software license|License]] for [[Proprietary software|proprietary]] applications
+|}
+
+===Qt hello world===
+&lt;source lang=&quot;cpp&quot;&gt;
+#include &lt;QtGui&gt;
+
+int main(int argc, char *argv[])
+{
+    QApplication app(argc, argv);
+    QLabel label(&quot;Hello, world!&quot;);
+    label.show();
+    return app.exec();
+}
+&lt;/source&gt;
+
+===Compiling and executing Qt hello world program===
+
+1. Create a [[folder (computing)|folder]] named  ''Hello'' (or any other name) &lt;br /&gt;
+2. Copy and paste the above program as file ''Hello.cpp'' in directory ''Hello''&lt;br /&gt;
+3. With ''Hello'' as the current directory, run
+  a. qmake -project
+  b. qmake Hello.pro (or whatever the file is named)
+  c. make/gmake/nmake â as needed by OS and compiler environment
+4. Execute ./release/Hello (Or release\Hello.exe in Windows)
+
+==Tools==
+
+* [[Qt Creator]], a cross-platform [[Integrated development environment|IDE]] for C++ and [[QML]]
+* [[qmake]], a tool that automates the generation of Makefiles for development project across different platforms
+* Qt Designer
+* Qt Assistant
+* Qt Linguist
+* lupdate
+* lrelease
+* lconvert
+* QVFb
+* makeqpf
+* uic (User Interface Compiler)
+* rcc (Resource Compiler)
+* qtconfig
+* qconfig
+* qtdemo
+* qt3to4
+* qdbusxml2cpp
+* D-Bus Viewer
+* Qt Visual Studio Add-in
+* Qt Eclipse Integration
+* Qt Simulator
+* Nokia Smart Installer for Symbian
+* qmlviewer
+* [[Qt Quick]], a [[QML]] based user interface development kit
+
+===Migration tools===
+* [http://qt.nokia.com/products/appdev/add-on-products/catalog/4/Windows/qtwinmigrate/ Qt/MFC Migration Framework] â For migration of Windows [[Microsoft Foundation Class Library]] based code
+* [http://qt.nokia.com/products/appdev/add-on-products/catalog/4/Migration/qtmotifextension/ Qt Motif extension] â For migration of [[Motif (widget toolkit)|Motif]] applications
+
+==History==
+[[Haavard Nord]] and [[Eirik Chambe-Eng]] (the original developers of Qt and the CEO and President, respectively, of [[Trolltech]]) began development of &quot;Qt&quot; in 1991, three years before the company was incorporated as Quasar Technologies, then changed the name to Troll Tech and then to Trolltech.
+
+The toolkit was called Qt because the letter [[Q]] looked appealing in Haavard's [[Emacs]] font, and &quot;t&quot; was inspired by [[Intrinsics|Xt]], the X toolkit.&lt;ref&gt;{{cite web|url=http://safari.oreilly.com/0131872494/pref04|title=A Brief History of Qt|accessdate= 2007-12-20}}&lt;/ref&gt;
+
+The first two versions of Qt had only two flavors: Qt/X11 for Unix and Qt/Windows for Windows. The Windows platform was only available under a proprietary license, which meant free/open source applications written in Qt for X11 could not be ported to Windows without purchasing the proprietary edition.
+
+At the end of 2001, Trolltech released Qt 3.0, which added support for Mac OS X. The Mac OS X support was available only in the proprietary license until June 2003, when Trolltech released Qt 3.2 with Mac OS X support available under the GPL.
+
+In June 2005, Trolltech released Qt 4.0.&lt;ref&gt;{{cite web|url=http://dot.kde.org/2005/06/28/trolltech-releases-qt-40 |title=Trolltech Releases Qt 4.0 &amp;#124; KDE.news |publisher=Dot.kde.org |accessdate=November 13, 2011}}&lt;/ref&gt;
+
+Nokia acquired Trolltech ASA on June 17, 2008 and changed the name first to Qt Software, then to Qt Development Frameworks.
+Since then it focused on Qt development to turn it into the main development platform for its devices, including a port to the [[Symbian]] [[S60 (software platform)|S60 platform]]. Version 1.0 of the Nokia Qt SDK was released on June 23, 2010.&lt;ref&gt;{{cite web|author=Niels Weber |url=http://labs.trolltech.com/blogs/2010/06/23/nokia-qt-sdk-10-released/ |title=Nokia Qt SDK 1.0 released |publisher=Labs.trolltech.com |date=June 23, 2010 |accessdate=November 13, 2011}}&lt;/ref&gt; The source code was made available over [[Gitorious]], a community oriented [[Git (software)|git]] source code repository, in order to gather an even broader community that is not only using Qt but also helping to improve it.
+
+===Licensing ===
+
+At all times, Qt was available under a commercial license that allows the development of proprietary applications without restrictions on licensing. In addition, Qt has been gradually made available under a number of increasingly free licenses.
+
+Until version 1.45, source code for Qt was released under the FreeQt license. This was viewed as not compliant with the open source principle by the [[Open Source Initiative]] and the free software definition by [[Free Software Foundation]] because while the source was available, it did not allow the redistribution of modified versions.
+
+Controversy erupted around 1998 when it became clear that [[KDE|KDEâs]] [[KDE Software Compilation]] was going to become one of the leading [[desktop environment]]s for [[Linux]]. As it was based on Qt, many people in the [[free software movement]] worried that an essential piece of one of their major operating systems would be proprietary.
+
+With the release of version 2.0 of the toolkit, the license was changed to the [[Q Public License]] (QPL), a [[free software]] license but one regarded by the [[Free Software Foundation]] as incompatible with the GPL. Compromises were sought between KDE and Trolltech whereby Qt would not be able to fall under a more restrictive license than the QPL, even if Trolltech was bought out or went bankrupt. This led to the creation of the [http://www.kde.org/community/whatiskde/kdefreeqtfoundation.php KDE Free Qt foundation], which guarantees that Qt would fall under a [[BSD-style license]] should no free/open source version of Qt be released during 12 months.
+
+In 2000, Qt 2.2 was released under the GPL v2,&lt;ref&gt;{{cite web|url=http://qt.nokia.com/about/news/archive/00000043 |title=Trolltech offers a choice in licensing with the addition of GPL licensing for the upcoming release of Qt |publisher=Qt.nokia.com |accessdate=November 13, 2011}}&lt;/ref&gt; ending all controversy regarding GPL compatibility.
+
+In 2002, members of the [[KDE on Cygwin]] project began porting the GPL licensed Qt/X11 code base to Windows.&lt;ref&gt;[http://qtwin.sourceforge.net/qt3-win32/history.php Q../Windows Edition history], June 5, 2006&lt;/ref&gt; This was in response to Trolltech's refusal to license Qt/Windows under the GPL on the grounds that Windows was not a free/open source software platform.&lt;ref&gt;[http://lists.kde.org/?l=kde-cygwin&amp;m=104431728920022&amp;w=2 E-mail to the kde-cygwin mailing list] by Chris January, February 4, 2003
+&lt;/ref&gt;&lt;ref&gt;[http://web.archive.org/web/20031005175911/http://www.trolltech.com/developer/faqs/noncomm.html Qt Non-commercial FAQ], October 5, 2003&lt;/ref&gt; The project achieved reasonable success although it never reached production quality.
+
+This was resolved when Trolltech released Qt/Windows 4 under the GPL in June 2005. Qt&amp;nbsp;4 now supports the same set of platforms in the free software/open source editions as in the proprietary edition, so it is now possible to create GPL-licensed free/open source applications using Qt on all supported platforms.  The GPL v3 with special exception&lt;ref&gt;{{cite web|url=http://doc.trolltech.com/4.4/license-gpl-exceptions.html |title=Nokia Corporation Qt GPL Exception Version 1.3 |publisher=Doc.trolltech.com |date=July 22, 1999 |accessdate=November 13, 2011}}&lt;/ref&gt; was later added as an additional licensing option. The GPL exception allows the final application to be licensed under various GPL-incompatible [[free software license|free software]]/[[open source license|open source]] licenses such as the [[Mozilla Public License]].
+
+On January 14, 2009, Qt version 4.5 added another option, the [[LGPL]],&lt;ref&gt;[http://www.qtsoftware.com/about/news/lgpl-license-option-added-to-qt LGPL License Option Added to Qt] January 14, 2009&lt;/ref&gt; which should make Qt even more attractive for non-GPL open source projects and for closed applications.&lt;ref&gt;{{cite web|url=http://www.ics.com/files/docs/Qt_LGPL.pdf |title=ICS Whitepaper on the Implications of Qt under LGPL for Commercial and Government users |format=PDF |accessdate=November 13, 2011}}&lt;/ref&gt;
+
+==Uses==
+=== UI Environments===
+
+* [[KDE Plasma Workspaces]], a popular  Cross-platform graphical environment
+* [[MeeGo]], Linux-based open source mobile operating system
+* [[Motorola A760]], uses Qt/Embedded in its UI
+* [[OPIE user interface|OPIE]]
+* [[Qt Extended Improved]]
+* [[Razor-qt]], a toolbox-like desktop environment&lt;ref&gt;{{cite web 
+|url=http://razor-qt.sf.net
+|title=Razor-qt Project 
+}}&lt;/ref&gt;
+* [[Unity (desktop environment)|Unity]]
+
+=== Window Managers for the X Window system ===
+
+The following [[window manager]]s utilize the Qt toolkit:
+
+* [[EggWM]]&lt;ref&gt;{{cite web|url=http://qt-apps.org/content/show.php/Egg+Window+Manager?content=136862 |title=Egg Window Manager |publisher=Qt-apps.org |accessdate=November 13, 2011}}&lt;/ref&gt;
+* [[integrity (window manager)|integrity]]
+* [[KWin]]
+* [[qlwm]]
+
+===Applications===
+{{Main category|Software that uses Qt}}
+
+===Software libraries===
+* [[Advanced Component Framework]]
+* [[KDE Platform]]
+* LibQxt
+* [http://www.devmachines.com/ Nokia's Qt Third-Party Widgets &amp; Components]
+* [http://www.devmachines.com/products/qtitanribbon.html QtitanRibbon] â Implementation Microsoft's RibbonUI for Qt
+* Qt Mobility
+* Qt Solutions
+* [[Qwt]]
+* ORM libraries (see [[List of object-relational mapping software#C++|List of object-relational mapping software for C++]])
+
+==See also==
+
+===Other widget toolkits===
+
+* [[Wt â Web toolkit|Wt]], a C++ library and application server for developing and deploying web applications. It resembles Qt, using also a widget tree and event-driven signal/slot programming model.
+* [[GTK+]], another widely used open-source widget toolkit.
+* [[wxWidgets]] â cross platform open source C++ widgets toolkit developed by community
+
+==References==
+===Notes===
+{{Reflist|colwidth=30em}}
+
+===Bibliography===
+{{Refbegin|colwidth=30em}}
+*{{Citation
+| first1    = Mark
+| last1     = Summerfield
+| title     = Advanced Qt Programming: Creating Great Software with C++ and Qt 4
+| edition   = 1st
+| date      = August 23, 2010
+| publisher = [[Addison-Wesley]]
+| page     = 550
+| isbn      = 978-0321635907
+| url       = http://www.qtrac.eu/aqpbook.html
+}}
+*{{Citation
+| first1    = Frank H. P.
+| last1     = Fitzek
+| first2    = Tommi
+| last2     = Mikkonen
+| first3    = Tony
+| last3     = Torp
+| title     = Qt for Symbian
+| edition   = 1st
+| date      = May 17, 2010
+| publisher = [[John Wiley &amp; Sons|Wiley]]
+| page     = 160
+| isbn      = 0470750103
+| url       = http://eu.wiley.com/WileyCDA/WileyTitle/productCd-0470750103.html
+}}
+*{{Citation
+| first1    = Jasmin
+| last1     = Blanchette
+| first2    = Mark
+| last2     = Summerfield
+| title     = C++ GUI Programming with Qt 4
+| edition   = 2nd
+| date      = February 14, 2008
+| publisher = [[Prentice Hall]]
+| page     = 752
+| isbn      = 978-0132354165
+| url       = http://www.informit.com/store/product.aspx?isbn=0132354160
+}}
+*{{Citation
+| first1    = Mark
+| last1     = Summerfield
+| title     = Rapid GUI Programming with Python and Qt
+| edition   = 1st
+| date      = October 28, 2007
+| publisher = [[Prentice Hall]]
+| page     = 648
+| isbn      = 978-0132354189
+| url       = http://www.qtrac.eu/pyqtbook.html
+}}
+*{{Citation
+| first1    = Daniel
+| last1     = Molkentin
+| title     = The Book of Qt 4: The Art of Building Qt Applications
+| edition   = 1st
+| date      = July 19, 2007
+| publisher = [[No Starch Press]]
+| page     = 440
+| isbn      = 978-1593271473
+| url       = http://nostarch.com/qt4.htm
+}}
+*{{Citation
+| first1    = Johan
+| last1     = Thelin
+| title     = Foundations of Qt Development
+| edition   = 1st
+| date      = August 3, 2007
+| publisher = [[Apress]]
+| page     = 528
+| isbn      = 978-1590598313
+| url       = http://www.apress.com/book/view/9781590598313
+}}
+*{{Citation
+| first1    = Matthias
+| last1     = Dalheimer
+| title     = Programming with Qt
+| edition   = 2nd
+| date      = January 2002
+| publisher = [[O'Reilly Media]]
+| page     = 512
+| isbn      = 978-0596000646
+| url       = http://oreilly.com/catalog/9780596000646/
+}}
+*{{Citation
+| first1    = Alan
+| last1     = Ezust
+| first2    = Paul
+| last2     = Ezust
+| title     = An Introduction to Design Patterns in C++ with Qt 4
+| edition   = 1st
+| date      = September 10, 2006
+| publisher = [[Prentice Hall]]
+| page     = 656
+| isbn      = 978-0131879058
+| url       = http://www.informit.com/store/product.aspx?isbn=0131879057
+}}
+{{Refend}}
+
+==External links==
+{{Commons category|Qt}}
+{{Wikibooks|Qt}}
+* {{Official website|http://qt.nokia.com/}}
+* [http://www.qtcentre.org/ Qt Centre â English community]
+* [http://qt.developpez.com/ Qt.Developpez.com â French community]
+* [http://www.qt-italia.org/ Qt Italia â Italian community]
+* [http://www.qtforum.de/ Qt Forum â German community]
+* [http://developer.qt.nokia.com/ Developer Network]
+* [http://blog.qt.nokia.com The Qt blog]
+* [http://labs.qt.nokia.com/ Qt Labs Blog]
+* [http://qt.nokia.com/doc/ Online reference documentation]
+* [http://planetqt.org/ Planet Qt]
+* [http://qtcentre.org/ Qt Centre]
+* [http://qt-apps.org/ Qt-Apps.org], Free Qt applications
+* [http://qt-prop.org/ Qt-Prop.org], Proprietary Qt applications
+* [http://www.qtrac.eu/C++-GUI-Programming-with-Qt-4-1st-ed.zip C++ GUI Programming with Qt 4/first edition]. The complete book (PDF in a ZIP); suitable for those who can already program in C++, but no GUI programming experience necessary.
+* [http://cartan.cas.suffolk.edu/oopdocbook/opensource/index.html An Introduction to Design Patterns in C++ with Qt4]. The full book from a Prentice Hall edition teaching C++ programming from the ground up, using Qt 4.1
+
+{{Qt}}
+{{KDE}}
+{{Widget toolkits}}
+{{Nokia software}}
+
+{{DEFAULTSORT:Qt (Toolkit)}}
+[[Category:Qt (toolkit)]]
+[[Category:KDE]]
+[[Category:Widget toolkits]]
+[[Category:X-based libraries]]
+[[Category:Free development toolkits and libraries]]
+[[Category:Embedded Linux]]
+[[Category:Free software programmed in C++]]
+[[Category:Formerly proprietary software]]
+[[Category:Application programming interfaces]]
+[[Category:Cross-platform software]]
+[[Category:S60 (software platform)]]
+[[Category:C++ libraries]]
+[[Category:Articles with example C++ code]]
+[[Category:1992 software]]
+[[Category:Nokia software products]]
+
+[[ar:ÙÙÙØª]]
+[[ca:Qt]]
+[[cs:Qt (knihovna)]]
+[[de:Qt (Bibliothek)]]
+[[es:Qt (biblioteca)]]
+[[eu:Qt]]
+[[fa:Ú©ÛÙØª]]
+[[fr:Qt]]
+[[ko:Qt (í´í·)]]
+[[hi:à¤à¥à¤¯à¥à¤]]
+[[id:Qt toolkit]]
+[[it:Qt (toolkit)]]
+[[he:Qt (×¢×¨××ª ××××)]]
+[[lt:Qt]]
+[[hu:Qt]]
+[[ml:à´àµà´¯àµà´àµà´à´¿]]
+[[nl:Qt-toolkit]]
+[[ja:Qt]]
+[[no:Qt]]
+[[nn:Qt]]
+[[pl:Qt]]
+[[pt:Qt]]
+[[ro:Qt]]
+[[ru:Qt]]
+[[sl:Qt]]
+[[sr:Qt]]
+[[fi:Qt]]
+[[sv:Qt]]
+[[th:à¸à¸´à¸§à¸à¹]]
+[[tr:Qt (ÃalÄ±Åma AlanÄ±)]]
+[[uk:Qt]]
+[[vi:Qt]]
+[[zh:Qt]]</rev></revisions></page></pages></query></api>

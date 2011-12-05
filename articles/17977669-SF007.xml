@@ -1,0 +1,73 @@
+<?xml version="1.0"?><api><query><redirects><r from="Lightning UK!" to="ImgBurn" /></redirects><pages><page pageid="3730453" ns="0" title="ImgBurn"><revisions><rev xml:space="preserve">{{Infobox software
+| name                   = ImgBurn
+| logo                   = [[File:ImgBurn logo.png|50px|ImgBurn Logo]]
+| screenshot             = [[File:ImgBurn screenshot.png|250px]]
+| developer              = Lightning UK!
+| caption                = ImgBurn screenshot
+| latest_release_version = 2.5.6.0
+| latest_release_date    = {{Start date and age|2011|10|04|df=yes}}&lt;ref&gt;{{cite web|url=http://www.imgburn.com/index.php?act=changelog|title=ImgBurn Change log}}&lt;/ref&gt;
+| operating_system       = [[Microsoft Windows]]&lt;br&gt;[[Wine (software)|Wine]] officially supported&lt;ref&gt;http://wiki.winehq.org/AppsThatSupportWine&lt;/ref&gt;
+| genre                  = [[CD/DVD authoring]]
+| language               = Multilingual
+| license                = [[Freeware]]
+| website                = [http://www.imgburn.com www.imgburn.com]
+}}
+'''ImgBurn''' is a [[freeware]] program that allows the [[CD recorder|recording]] of many types of [[CD]]/[[DVD]] images to recordable media ([[Cue_sheet (computing)|.cue]] files are supported as of version 2.4.0.0).&lt;ref&gt;[http://www.imgburn.com/ The Official ImgBurn Website]&lt;/ref&gt; Starting with version 2.0.0.0, ImgBurn can also burn files and data directly to CD/DVD. It supports padding DVD-Video files so the layer break occurs on a proper cell boundary (where possible).  As of version 2.5.1.0, ImgBurn includes optional [[adware]] in the installer.&lt;ref&gt;http://www.ghacks.net/2010/03/17/dvd-burning-software-imgburn-updated-turns-adware/&lt;/ref&gt;
+
+==History==
+ImgBurn is an [[optical disc authoring]] software created by Lightning UK, the author of  [[DVD Decrypter]], after he was forced to stop development of DVD Decrypter in response to a [[cease and desist]] order from [[Macrovision]].&lt;ref&gt;{{cite web |last=Mennecke |first=Thomas |title=Macrovision Forces Removal of DVD Decrypter |publisher=Slyck |date=2005-11-24 |url=http://www.slyck.com/story1007.html |accessdate=2007-05-18}}&lt;/ref&gt;
+
+ImgBurn is based on the optical disc burning engine of DVD Decrypter; however, it does not have the ability to circumvent copy protections of encrypted DVDs. As of version 2.3.0.0, ImgBurn can create image files from unencrypted CDs/DVDs. It cannot, however, remove [[Content Scramble System|CSS encryption]] or any other [[copy protection]]. It is possible to use third-party software such as [[DVD43]], an intermediate driver that operates between the hardware and software, for such purpose.
+
+== Features ==
+
+*Supported formats: BIN, CUE, DI, DVD, GI, IMG, ISO, MDS, NRG, PDI and more.
+*Ability to build DVD Video discs (from a VIDEO_TS folder), HD DVD Video discs (from a HVDVD_TS folder) and Blu-ray Video discs (from a BDAV / BDMV folder).
+*Full [[unicode]] folder/file name support.
+*Supported environments: Windows 95, 98, Me, NT4, 2000, XP, 2003, Vista, 2008, 7 and 2008 R2 (including all the 64-bit versions). It also officially supports [[Wine (software)|Wine]].
+*[http://www.imgburn.com/index.php?act=screenshots#isowrite_queue Image queue] provides support for burning several images with minimum interaction.
+*ImgBurn is relatively lightweight (compared to [[List of optical disc authoring software|similar]] programs); under 1.8MB for all installed features.
+
+== Limitations ==
+
+*Does not support RAW disk ripping or burning&lt;ref name=&quot;imgburn_forum&quot;&gt;{{cite web | url = http://forum.imgburn.com/index.php?showtopic=3343&amp;st=60&amp;p=39221&amp;#entry39221 | title = ImgBurn v2.2.0.0 Released! | accessdate =2009-08-01 | date = 2007-02-19 | name = LIGHTNING UK}}&lt;/ref&gt;
+*Does not support multi-session discs&lt;ref name=&quot;imgburn_multisession&quot;&gt;{{cite web | url = http://forum.imgburn.com/index.php?showtopic=3433&amp;view=findpost&amp;p=39535| title = Multisession Disk Where is the option?? | accessdate =2010-04-24 | date = 2007-02-22 | name = LIGHTNING UK}}&lt;/ref&gt;
+*Cannot read or write CD [[Compact disc subcode|subchannel data]]&lt;ref name=&quot;imgburn_forum&quot; /&gt;
+*Cannot copy discs directly, without first creating an image file. &lt;ref name=&quot;imgburn_copy_disc&quot;&gt;{{cite web | url = http://forum.imgburn.com/index.php?showtopic=6380 | title = How to copy a disc using Imgburn | accessdate = 2011-02-12 | date = 2008-03-20 | name = LIGHTNING UK!}}&lt;/ref&gt;
+
+== Hardware interface support ==
+ImgBurn supports numerous low level drive access interfaces. This allows it to operate on almost all Windows platforms. ImgBurn can use any of the following interfaces:
+
+*[[Advanced SCSI programming interface|ASPI]] - WNASPI32.DLL ([[Adaptec]])
+*ASAPI - ASAPI.DLL (VOB Computersysteme/[[Pinnacle Systems]])
+*[[SCSI Pass Through Interface]] - [[Microsoft]]
+*ElbyCDIO - Elaborate Bytes
+* Patin-Couffin - VSO Software
+
+==See also==
+*[[List of ISO image software]]
+*[[List of optical disc authoring software]]
+*[[Digital Millennium Copyright Act]]
+*[[AnyDVD]]
+
+==References==
+{{Reflist|1}}
+
+==External links==
+*[http://www.imgburn.com/ ImgBurn website]
+*[http://filehippo.com/download_imgburn/  Archive of downloads for all versions of ImgBurn]
+*[http://www.afterdawn.com/software/cdr_software/cdr_tools/imgburn.cfm Another archive of ImgBurn all versions]
+
+{{Optical disc image software}}
+
+[[Category:Optical disc authoring software]]
+[[Category:Windows-only freeware]]
+[[Category:Portable software]]
+
+[[es:ImgBurn]]
+[[ja:ImgBurn]]
+[[pt:ImgBurn]]
+[[ru:ImgBurn]]
+[[sv:ImgBurn]]
+[[uk:ImgBurn]]
+[[zh:ImgBurn]]</rev></revisions></page></pages></query></api>

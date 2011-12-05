@@ -1,0 +1,73 @@
+<?xml version="1.0"?><api><query><pages><page pageid="16454957" ns="0" title="Tinyproxy"><revisions><rev xml:space="preserve">{{Infobox software
+| name                   = Tinyproxy
+| developer              = [[Banu (company)|Banu]]
+| released               = 1998
+| frequently_updated     = yes &lt;!-- Release version update? Don't edit this page, just click on the version number! --&gt;
+| programming language   = [[C (programming language)|C]]
+| platform               = [[Cross-platform]]
+| operating_system       = [[POSIX]]
+| status                 = Active
+| license                = [[GNU General Public License]]
+| genre                  = [[proxy server]]
+| website                = http://banu.com/tinyproxy/
+}}
+
+'''Tinyproxy''' is a [[Hypertext Transfer Protocol|HTTP]] [[proxy server]] [[daemon (computer software)|daemon]] for [[POSIX]] [[operating systems]]. Designed to be fast and small, it is useful when an HTTP/HTTPS proxy is required, but the system resources for a larger proxy are unavailable. Because of this reason, it has been put to uses such as a tether on the iPhone&lt;ref&gt;{{cite web |title = Tethering the iPhone for OS X |url = http://dragonforged.com/blog/2007/09/tethering-the-iphone-for-os-x.html}}{{Dead link|date=June 2011}}&lt;/ref&gt;, and on the OpenWrt&lt;ref&gt;{{cite web |title = Tinyproxy on OpenWrt |url = http://wiki.openwrt.org/oldwiki/proxy.tinyproxy}}&lt;/ref&gt;.
+
+Tinyproxy is primarily designed to run on [[Unix-like]] systems. Released under the [[GNU General Public License]], Tinyproxy is [[free software]]&lt;ref&gt;{{cite web |title = Tinyproxy in the FSF's Free Software Directory |url = http://directory.fsf.org/project/tinyproxy/}}&lt;/ref&gt; and has been developed for a number of years. It is currently being maintained at [[Banu (company)|Banu]] as a publicly accessible project. [[Ohloh]] analyses it to be a project with &quot;mature, well-established codebase and increasing year-over-year development activity.&quot;&lt;ref&gt;{{cite web |title = Ohloh analysis of Tinyproxy project |url = http://www.ohloh.net/projects/12555}}&lt;/ref&gt;
+
+== Features ==
+
+* '''Anonymous mode''': Allows specification of individual HTTP headers that should be allowed through, and which should be blocked.
+* '''HTTPS support''': Tinyproxy allows forwarding of HTTPS connections without modifying traffic in any way.
+* '''Remote monitoring''': Tinyproxy can be monitored remotely to view logs and access details.
+* '''Load average monitoring''': Tinyproxy can be configured to refuse connections after the server load reaches a certain point.
+* '''Access control''': Tinyproxy can be configured to only allow connections from certain subnets or IP addresses.
+* '''Secure''': With some configuration, Tinyproxy can be made to run without any special privileges, thus minimizing the chance of system compromise. Furthermore, it was designed with an eye towards preventing buffer overflows.{{Citation needed|date=December 2008}}
+* '''Small footprint''': Tinyproxy requires very little in the way of system resources - the memory footprint tends to be around 2MB with glibc, and the CPU load increases linearly with the number of simultaneous connections (depending on the speed of the connection). Therefore, Tinyproxy can be run on a spare, older machine without any impact on performance.
+* '''URL based filtering''': Tinyproxy allows domain and URL-based black- and whitelisting.
+* '''Transparent proxying''': Tinyproxy supports being configured as a [[transparent proxy]], so that a proxy can be used without requiring any client-side configuration.
+* '''Proxy chaining''': Tinyproxy can use an upstream proxy server for outbound connections, instead of direct connections to the target server, creating a so-called ''proxy chain''.
+
+== Availability in OS distributions ==
+
+Tinyproxy is available in various operating systems such as
+[[Debian]]&lt;ref&gt;{{cite web |title = Tinyproxy in packages.debian.org |url = http://packages.debian.org/tinyproxy}}&lt;/ref&gt;,
+[[Fedora (operating system)| Fedora]]&lt;ref&gt;{{cite web |title = Tinyproxy in Fedora package database |url = https://admin.fedoraproject.org/pkgdb/acls/name/tinyproxy}}&lt;/ref&gt;,
+[[FreeBSD]]&lt;ref&gt;{{cite web |title = FreeBSD port description of Tinyproxy  |url = http://www.freebsd.org/cgi/cvsweb.cgi/ports/www/tinyproxy/}}&lt;/ref&gt;,
+[[Gentoo Linux]]&lt;ref&gt;{{cite web |title = Tinyproxy in packages.gentoo.org |url = http://packages.gentoo.org/package/net-proxy/tinyproxy}}&lt;/ref&gt;,
+[[OpenBSD]]&lt;ref&gt;{{cite web |title = OpenBSD port description of Tinyproxy | url =
+http://www.openbsd.org/cgi-bin/cvsweb/ports/www/tinyproxy/}}&lt;/ref&gt; and
+[[Ubuntu (operating system)|Ubuntu]]&lt;ref&gt;{{cite web |title = Tinyproxy on Ubuntu LaunchPad |url = https://launchpad.net/ubuntu/+source/tinyproxy}}&lt;/ref&gt;,
+
+== See also ==
+{{Portal|Free software}}
+
+'''''Overview &amp; Discussions'''''
+* [[Web accelerator]] which discusses host-based HTTP acceleration
+* [[Proxy server]] which discusses client-side proxies
+* [[Reverse proxy]] which discusses origin-side proxies
+
+'''''Proxy-Servers'''''
+* [[Apache HTTP Server]]
+* [[lighttpd]] - open-source web server, optimized for speed-critical environments
+* [[Nginx]] - lightweight, high-performance web server, reverse proxy and e-mail proxy (IMAP/POP3)
+* [[Polipo]] - lightweight pipelining, multiplexing proxy server and daemon for a small number of users
+* [[Pound (networking)|Pound reverse proxy]]
+* [[Privoxy]] - privacy enhancing proxy
+* [[Squid cache]] - a proxy server and web cache daemon
+* [[Varnish (software)|Varnish]] - a performance-focused open source reverse proxy
+* [[Ziproxy]] - lightweight forwarding, non-caching, HTTP proxy for traffic optimization
+
+== References ==
+
+{{reflist}}
+
+== External links ==
+
+* [http://banu.com/tinyproxy/ Tinyproxy project homepage]
+
+[[Category:Unix network-related software]]
+[[Category:HTTP]]
+[[Category:Proxy_servers]]
+[[Category:Reverse_proxy]]</rev></revisions></page></pages></query></api>

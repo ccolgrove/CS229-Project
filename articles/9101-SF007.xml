@@ -1,0 +1,224 @@
+<?xml version="1.0"?><api><query><pages><page pageid="9101" ns="0" title="Device driver"><revisions><rev xml:space="preserve">{{Refimprove|date=October 2011}}
+{{OS}}
+
+In computing, a  '''device driver''' or '''software driver''' is a [[computer program]] allowing higher-level computer programs to interact with a hardware device.
+
+A driver typically communicates with the [[Peripheral|device]] through the [[computer bus]] or communications subsystem to which the hardware connects. When a calling program invokes a [[subroutine|routine]] in the driver, the driver issues commands to the device. Once the device sends data back to the driver, the driver may invoke routines in the original calling program. Drivers are hardware-dependent and [[operating system|operating-system]]-specific. They usually provide the [[interrupt]] handling required for any necessary asynchronous time-dependent hardware interface.
+
+==Purpose==
+A device driver simplifies programming by acting as  translator between a hardware device and the applications or [[operating system]]s that use it.  Programmers can write the higher-level application code independently of whatever specific hardware device.
+
+==Design==
+Device drivers can be abstracted into [[logical]] and [[physical layer]]s. Logical layers process data for a class of devices such as [[Ethernet]] ports or disk drives. Physical layers communicate with specific device instances. For example, a [[serial port]] needs to handle standard communication protocols such as [[XON| XON/XOFF]] that are common for all serial port hardware. This would be managed by a serial port logical layer. However, the physical layer needs to communicate with a particular serial port chip. [[16550 UART]] hardware differs from PL-011. The physical layer addresses these chip-specific variations. Conventionally, OS requests go to the logical layer first. In turn, the logical layer calls upon the physical layer to implement OS requests in terms understandable by the hardware. Inversely, when a hardware device needs to respond to the OS, it uses the physical layer to speak to the logical layer.
+
+In [[Linux kernel|Linux]] environments, programmers can build device drivers either as parts of the [[Linux kernel|kernel]] or separately as loadable [[loadable kernel module|module]]s. [[Makedev]] includes a list of the devices in Linux: ttyS (terminal), lp ([[parallel port]]), hd (disk), loop ([[loopback disk device]]), sound  (these include [[Sound card mixer|mixer]], [[Music sequencer|sequencer]], [[Digital signal processor|dsp]], and audio)...&lt;ref&gt;{{cite web
+ | url = http://linux.about.com/od/commands/l/blcmdl8_MAKEDEV.htm
+ | title = MAKEDEV&amp;nbsp;â Linux Command&amp;nbsp;â Unix Command
+ | publisher = Linux.about.com
+ | date = 2009-09-11
+ | accessdate = 2009-09-17
+}}&lt;/ref&gt;
+
+The [[Microsoft Windows]] .sys files and Linux .ko modules contain loadable device drivers. The advantage of loadable device drivers is that they can be loaded only when necessary and then unloaded, thus saving kernel memory.
+
+==Development==
+Writing a device driver requires an in-depth understanding of how the hardware and the software of a given [[Computing platform|platform]] function.  Drivers operate in a highly [[privilege (computing)|privilege]]d environment and can cause disaster if they get things wrong.&lt;ref&gt;{{cite web
+ | url = http://www.linux-tutorial.info/modules.php?name=Tutorial&amp;pageid=255
+ | title = Device Driver Basics
+}}&lt;/ref&gt; In contrast, most user-level software on modern [[operating system]]s can be stopped without greatly affecting the rest of the system.  Even drivers executing in [[user mode]] can crash a system if the device is erroneously programmed. These factors make it more difficult and dangerous to diagnose problems.
+
+Thus the task of writing drivers usually falls to [[software engineer]]s who work for hardware-development companies. This is because they have better information than most outsiders about the design of their hardware. Moreover, it was traditionally considered in the hardware [[manufacturer]]'s interest to guarantee that their clients can use their hardware in an optimum way. Typically, the ''logical device driver'' (LDD) is written by the operating system vendor, while the ''physical device driver'' (PDD) is implemented by the device vendor. But in recent years non-vendors have written numerous device drivers, mainly for use with [[free and open source software|free and open source]] [[operating system]]s. In such cases, it is important that the hardware manufacturer provides information on how the device communicates.  Although this information can instead be learned by [[reverse engineering]], this is much more difficult with hardware than it is with software.
+
+[[Microsoft]] has attempted to reduce system instability due to poorly written device drivers by creating a new framework for driver development, called [[Windows Driver Foundation]] (WDF).  This includes [[User-Mode Driver Framework]] (UMDF) that encourages development of certain types of drivers&amp;nbsp;â primarily those that implement a [[message-based protocol]] for communicating with their devices&amp;nbsp;â as user mode drivers.  If such drivers malfunction, they do not cause system instability.  The [[Kernel-Mode Driver Framework]] (KMDF) model continues to allow development of kernel-mode device drivers, but attempts to provide standard implementations of functions that are well known to cause problems, including cancellation of I/O operations, power management, and plug and play device support.
+
+Apple has an open-source framework for developing drivers on [[Mac OS X]] called the [[I/O Kit]].
+
+==Kernel-mode vs user-mode==
+Device drivers, particularly on {{as of | 2009 | alt = modern}} [[Microsoft Windows]] platforms, can run in [[CPU modes|kernel-mode]] ([[Ring (computer security)|Ring 0 on x86 CPUs]]) or in [[user space|user-mode]] (Ring 3 on x86 CPUs).&lt;ref&gt;{{cite web
+ | url = http://technet2.microsoft.com/windowsserver/en/library/eb1936c0-e19c-4a17-a1a8-39292e4929a41033.mspx?mfr=true
+ | title = User-mode vs. Kernel-mode Drivers
+ | publisher = [[Microsoft]]
+ | date = 2003-03-01
+ | accessdate = 2008-03-04
+}}&lt;/ref&gt; The primary benefit of running a driver in user mode is improved stability, since a poorly written user mode device driver cannot crash the system by overwriting kernel memory.&lt;ref&gt;{{cite web
+ | url = http://blogs.msdn.com/iliast/archive/2006/10/10/Introduction-to-the-User_2D00_Mode-Driver-Framework.aspx
+ | title = Introduction to the User-Mode Driver Framework (UMDF)
+ | date = 2006-10-10
+ | accessdate = 2008-03-04
+ | publisher = [[Microsoft]]
+}}&lt;/ref&gt; On the other hand, user/kernel-mode transitions usually impose a considerable performance overhead, thereby prohibiting user mode-drivers for low latency and high throughput requirements.
+
+Kernel space can be accessed by user module only through the use of system calls.
+End user programs like the UNIX  shell or other GUI based applications are part of the user space. These applications interact with hardware through kernel supported functions.
+
+==Applications==
+Because of the diversity of {{as of | 2009 | alt = modern}} [[hardware]] and operating systems, drivers operate in many different environments. Drivers may [[interface (computer science)|interface]] with:
+* [[Computer printer|printers]]
+* [[Video card|video adapters]]
+* [[Network interface controller|network cards]]
+* [[sound card]]s
+* local [[Computer bus|buses]] of various sorts&amp;nbsp;â in particular, for [[bus mastering]] on modern systems
+* low-[[bandwidth (computing)|bandwidth]] [[input/output|I/O]] buses of various sorts (for [[pointing device]]s such as [[Computer mouse|mice]], [[Computer keyboard|keyboard]]s, [[Universal Serial Bus|USB]], etc.)
+* [[computer storage]] devices such as [[Hard disk drive|hard disk]], [[CD-ROM]] and [[floppy disk]] buses ([[Advanced Technology Attachment|ATA]], [[Serial ATA|SATA]], [[SCSI]])
+* implementing support for different [[file system]]s
+* [[image scanner]]s
+* [[digital camera]]s
+
+Common levels of abstraction for device drivers include:
+* for hardware:
+** interfacing directly
+** writing to or reading from a [[device control register]]
+** using some higher-level interface (e.g. [[Video BIOS]])
+** using another lower-level device driver (e.g. file system drivers using disk drivers)
+** simulating work with hardware, while doing something entirely different{{Citation needed|date=September 2009}}
+* for software:
+** allowing the operating system direct access to hardware resources
+** implementing only [[primitive (computer science)|primitive]]s
+** implementing an interface for non-driver software (e.g. [[TWAIN]])
+** implementing a language, sometimes quite high-level (e.g. [[PostScript]])
+
+Choosing and installing the correct device drivers for given hardware is often a key component of computer system configuration.{{Citation needed|date=September 2009}}
+
+==Virtual device drivers==
+Virtual device drivers represent a particular variant of device drivers. They are used to emulate a hardware device, particularly in [[virtual machine|virtualization]] environments, for example when a [[DOS]] program is run on a [[Microsoft Windows]] computer or when a guest [[operating system]] is run on, for example, a [[Xen]] host. Instead of enabling the guest operating system to dialog with hardware, virtual device drivers take the opposite role and emulate a piece of hardware, so that the guest operating system and its drivers running inside a [[virtual machine]] can have the illusion of accessing real hardware. Attempts by the guest operating system to access the hardware are routed to the virtual device driver in the host operating system as e.g. [[function call]]s. The virtual device driver can also send simulated processor-level events like [[interrupt]]s into the virtual machine.
+
+Virtual devices may also operate in a non-virtualized environment. For example a virtual [[Network interface controller|network adapter]] is used with a [[virtual private network]], while a virtual [[Hard disk drive|disk]] device is used with [[iSCSI]].
+The best example for virtual device drivers can be &quot;Daemon Tools&quot;
+
+==Open drivers==
+* Printers: [[CUPS]]
+* RAIDs: CCISS&lt;ref&gt;
+{{cite web
+| url         = http://sourceforge.net/projects/cciss/
+| title       = CCISS
+| year        = 2010
+| work        = [[SourceForge]]
+| accessdate  = 2010-08-11
+| quote       = Drivers for the HP (previously Compaq) Smart Array controllers which provide hardware RAID capability.
+}}
+&lt;/ref&gt; (Compaq Command Interface for SCSI-3 Support&lt;ref&gt;
+{{cite web
+|url         = http://www.redbooks.ibm.com/redbooks/pdfs/sg246852.pd
+|title       = Abbreviations and acronyms
+|first       = Steve
+|last        = Russell
+|coauthors   = ''et al.''
+|date        = 2003-10-21
+|work        = Server Consolidation with the IBM eserver xSeries 440 and VMware ESX Serve
+|publisher   = IBM International Technical Support Organization
+|page        = 207
+|pages       = 218
+|isbn        = 0738426849
+|accessdate  = 2011-08-14
+}}
+&lt;/ref&gt;)
+* Scanners: [[Scanner Access Now Easy|SANE]]
+* Video: [[Vidix]], [[Direct Rendering Infrastructure]]
+
+[[Solaris (operating system)|Solaris]] descriptions of commonly-used device drivers
+* fas: Fast/wide SCSI controller
+* hme: Fast (10/100 Mbit/s) Ethernet
+* isp: Differential SCSI controllers and the SunSwift card
+* glm: (Gigabaud Link Module&lt;ref&gt;{{cite web
+ | title = US Patent 5969841 - Gigabaud link module with received power detect signal
+ | url = http://www.patentstorm.us/patents/5969841.html
+ | publisher = PatentStorm LLC
+ | accessdate = 2009-09-08
+ | quote = An improved Gigabaud Link Module (GLM) is provided for performing bi-directional data transfers between a host device and a serial transfer medium.
+}}&lt;/ref&gt;) UltraSCSI controllers
+* scsi: Small Computer Serial Interface (SCSI) devices
+* sf: soc+ or social Fiber Channel Arbitrated Loop (FCAL)
+* soc: SPARC Storage Array (SSA) controllers
+* social: Serial optical controllers for FCAL (soc+)
+
+==APIs==
+* [[Windows Display Driver Model]] (WDDM) â the graphic display driver architecture for [[Windows Vista]]
+* [[Windows Driver Foundation]] (WDF)
+* [[Windows Driver Model]] (WDM)
+* [[Network Driver Interface Specification]] (NDIS) â a standard [[network card]] driver API
+* [[Advanced Linux Sound Architecture]] (ALSA) â {{as of | 2009 | lc = on}} the standard Linux sound-driver interface
+* [[Scanner Access Now Easy]] (SANE) â a public-domain interface to raster-image scanner-hardware
+* [[I/O Kit]] â an open-source framework from [[Apple Computer|Apple]] for developing [[Mac OS X]] device drivers
+* [[Installable File System]] (IFS) â a [[filesystem API]] for IBM OS/2 and Microsoft Windows NT
+* [[Open Data-Link Interface]] (ODI) â a network card API similar to NDIS
+* [[Uniform Driver Interface]] (UDI) â a cross-platform driver interface project
+* [[Dynax Driver Framework]] (dxd) â C++ open source cross-platform driver framework for KMDF and IOKit
+
+==Identifiers==
+A device on the PCI or USB bus is identified by two ID's which consist of 4 numbers and/or letters A to F. The vendor ID identifies the vendor of the device. The device ID identifies a specific device from that manufacturer/vendor.
+
+A PCI device has often an ID pair for the main chip of the device, and also a subsystem ID pair which identifies the vendor, which may be different from the chip manufacturer.
+
+==See also==
+* [[Class driver]]
+* [[Device driver synthesis and verification]]
+* [[Firmware]]
+* [[Interrupt]]
+* [[Loadable kernel module]]
+* [[Makedev]]
+* [[Open-source hardware]]
+* [[Printer driver]]
+* [[udev]]
+
+==References==
+{{reflist}}
+
+==External links==
+&lt;!-- Please discuss links before adding them here. Due to a tendency to attract spam, undiscussed additional links will be periodically removed. --&gt;
+* [http://www.microsoft.com/whdc Microsoft Windows Hardware Developer Central]
+* [http://www.linux-drivers.org Linux Hardware Compatibility Lists and Linux Drivers]
+* [http://www.rcnp.osaka-u.ac.jp/unix/DOCUMENTATION/HTML/AA-PUBVD-TE_html/TITLE.html Writing Device Drivers for the Digital UNIX operating system: A Tutorial]
+* [http://www.linuxhardware.org/ Linux hardware]
+
+{{Operating System}}
+
+{{DEFAULTSORT:Device Driver}}
+[[Category:Device drivers| ]]
+[[Category:Linux drivers]]
+[[Category:Operating system technology]]
+[[Category:Computing terminology]]
+
+[[ar:ÙØ´ØºÙ (Ø¨Ø±ÙØ§ÙØ¬ Ø­Ø§Ø³ÙØ¨Ù)]]
+[[az:SÃ¼rÃ¼cÃ¼]]
+[[bs:Drajver]]
+[[ca:Controlador de dispositiu]]
+[[cs:OvladaÄ zaÅÃ­zenÃ­]]
+[[da:Hardwaredriver]]
+[[de:GerÃ¤tetreiber]]
+[[et:Seadmedraiver]]
+[[es:Controlador de dispositivo]]
+[[eo:Pelilo]]
+[[fa:Ø±Ø§ÙâØ§ÙØ¯Ø§Ø²]]
+[[fr:Pilote informatique]]
+[[ko:ì¥ì¹ ëë¼ì´ë²]]
+[[hsb:ÄÄrjak (informatika)]]
+[[id:Pemacu peranti]]
+[[is:Rekill (tÃ¶lvunarfrÃ¦Ã°i)]]
+[[it:Driver]]
+[[he:×× ×× ××ª×§×]]
+[[kk:ÐÑÐ°Ð¹Ð²ÐµÑ]]
+[[lv:Dzinis]]
+[[lb:Driver]]
+[[lt:TvarkyklÄ]]
+[[hu:Hardver-illesztÅprogram]]
+[[ms:Pemacu peranti]]
+[[nl:Stuurprogramma]]
+[[ja:ããã¤ã¹ãã©ã¤ã]]
+[[no:Driver]]
+[[nn:Drivar]]
+[[mhr:ÐÑÐ°Ð¹Ð²ÐµÑ]]
+[[pl:Sterownik urzÄdzenia]]
+[[pt:Driver de dispositivo]]
+[[ro:Driver]]
+[[rue:ÐÑÐ°Ð¹Ð²ÐµÑ]]
+[[ru:ÐÑÐ°Ð¹Ð²ÐµÑ]]
+[[simple:Device driver]]
+[[sk:OvlÃ¡daÄ (informatika)]]
+[[sr:Ð£Ð¿ÑÐ°Ð²ÑÐ°ÑÐºÐ¸ Ð¿ÑÐ¾Ð³ÑÐ°Ð¼]]
+[[fi:Laiteajuri]]
+[[sv:Drivrutin]]
+[[tr:DonanÄ±m sÃ¼rÃ¼cÃ¼sÃ¼]]
+[[uk:ÐÑÐ°Ð¹Ð²ÐµÑ]]
+[[vi:ChÆ°Æ¡ng trÃ¬nh Äiá»u khiá»n]]
+[[zh-yue:é©åç¨å¼]]
+[[zh:é©±å¨ç¨åº]]</rev></revisions></page></pages></query></api>

@@ -1,0 +1,115 @@
+<?xml version="1.0"?><api><query><pages><page pageid="7446289" ns="0" title="Windows Action Center"><revisions><rev xml:space="preserve">{{Stack|&lt;!--Start of stack--&gt;
+{{Infobox Windows component
+| name               = Windows Action Center
+| logo               = Windows security center icon.png
+| screenshot         = Action Center on Windows 7.png
+| screenshot_size    = 300px
+| caption            = Action Center in Windows 7: No issue has been detected
+| type               = Maintenance Application
+| service_name       = wscsvc
+| service_description= Security Center
+| included_with      = [[Windows XP]] (SP2 and SP3) {{-}} [[Windows Vista]] {{-}}[[Windows 7]] (renamed Action center)
+| related_components = [[Backup and Restore Center]] {{-}} [[User Account Control]] {{-}} [[Windows Defender]] {{-}} [[Windows Error Reporting]] {{-}} [[Windows Firewall]] {{-}} [[Windows Management  Instrumentation]] {{-}} [[Windows Update]]
+}}
+{{Infobox image
+| image = [[File:Windows Security Center Vista.png|300px|Windows Security Center in Windows Vista, reporting antivirus protection missing]]
+| caption = Windows Security Center in [[Windows Vista]], reporting antivirus protection missing
+}}
+{{Infobox image
+|image = [[File:Windows Security Center XP SP2.png|300px|Windows Security Center in Windows XP Service Pack 2 reporting no antivirus product is installed]]
+|caption = Windows Security Center in Windows XP Service Pack 2 reporting no antivirus product is installed
+}}
+&lt;!-- End of stack --&gt;}}
+The '''Windows Action Center''' (previously known as ''Windows Security Center'') is a component included with [[Microsoft]]'s [[Windows XP]] (beginning with Service Pack 2), [[Windows Vista]] and [[Windows 7]] [[operating system]]s that provides users with the ability to view the status of [[computer security]] settings and services.  Windows Action Center also continually monitors these security settings, and informs the user via a pop-up [[notification balloon]] if there is a problem. It is renamed to ''Action Center'' in Windows 7, where it covers maintenance as well as security.
+
+== Overview ==
+The Windows Action Center consists of three major components:  A [[Control Panel (Windows)|control panel]], a [[Windows Service]], and an [[application programming interface]] that is provided by [[Windows Management Instrumentation]].
+
+The control panel divides the monitored security settings into categories, the headings of which are displayed with a background color of light blue (green in Vista), yellow, or red.  A category with a blue or green background indicates that the settings in the category are &quot;healthy&quot;. A yellow background typically indicates that some or all of the settings in that category are not being monitored.  A red background indicates that there is a problem that can expose the user's computer to problems.
+
+The current state of these settings is determined by the Windows Service.  This service, named &quot;Security Center&quot;,&lt;ref&gt;The service's real name is &quot;wscsvc&quot;.&lt;/ref&gt; is started automatically when the computer starts, and takes responsibility for continually monitoring the system for changes, and also informs the user via a pop-up notification balloon if there is a problem.  The settings are made available to the system through a [[Windows Management Instrumentation]] provider.
+
+The primary interface which third-party anti-virus, anti-malware and firewall software vendors use to register with Windows Action Center is through the WMI provider. In Windows Vista, some [[Windows API]] calls were added to let applications retrieve the aggregate health status of Windows Action Center, and to receive notifications when the health status changes.  Microsoft has offered suggestions that these new calls could be used by any application that wants to confirm that the system is in a healthy state before engaging in certain actions.  An example they give is that a [[computer game]] could ensure that a firewall is running before connecting to a multi-player online game.
+
+==Version history==
+===Windows XP SP2===
+Microsoft learned from discussions with customers that there was confusion as to whether users were taking appropriate steps to protect their systems, or if the steps they were taking were effective.&lt;ref name=&quot;vistawp&quot;&gt;{{cite web
+|url=http://www.microsoft.com/downloads/details.aspx?FamilyID=90ec8abb-08c7-4706-b730-9a1f9fcf2d9f&amp;DisplayLang=en
+|title=Microsoft Windows Security Center: The Voice of Security for Windows Vista
+|date={{date|2006-10-06}}
+|accessdate={{date|2009-11-16}}
+|publisher=Microsoft
+}}&lt;/ref&gt;  From this research, Microsoft made the decision to include a visible control panel with [[Windows XP|Windows XP Service Pack 2]] that would provide a consolidated view of the most important security features. Service Pack 2, released in August 2004, includes the first version of Security Center. This initial version provides monitoring of [[Windows Update]], [[Windows Firewall]], and the availability of an [[anti-virus software]] package.  Third-party providers of firewall and anti-virus software packages were encouraged to make use of the Windows Action Center [[application programming interface]] to ensure that their software would be recognized.
+
+===Windows Vista===
+[[Windows Vista]] adds anti-[[malware]] software detection, monitoring of [[User Account Control]], and monitoring of several [[Internet Explorer]] security settings.  [[Windows Defender]], Microsoft's anti-malware product, is included with Windows Vista by default, which Windows Action Center will monitor; a third-party anti-malware product can replace this.  Another feature of the Windows Vista version is that it includes the ability to display logos of third-party products that have been registered with the Security Center.
+
+Unlike Windows XP, in the beta versions of Windows Vista the Windows Action Center could not be disabled or overridden. Security software maker [[Symantec]] spoke out against this, noting that it would cause a great deal of consumer confusion because any security problems would be reported by both Windows Action Center and Symantec's tools at the same time.&lt;ref&gt;{{cite news
+|url=http://arstechnica.com/news.ars/post/20060927-7851.html
+|title=Symantec says Vista will &quot;reduce consumer choice&quot; 
+|author=Jeremy Reimer
+|date=2006-09-27
+|accessdate=2006-10-14
+|publisher=Ars Technica
+}}&lt;/ref&gt; [[McAfee]], another large security software vendor, lodged similar complaints,&lt;ref&gt;{{cite news
+|url=http://www.eweek.com/article2/0,1895,2023909,00.asp
+|title=McAfee Chides Microsoft Over Vista Security Policies
+|last=Hines
+|first=Matt
+|date=2006-10-03
+|publisher=eWeek
+}}&lt;/ref&gt; and in the end Microsoft allowed Windows Security Center to be disabled in the release version of Vista.&lt;ref&gt;{{cite news
+|url=http://www.eweek.com/c/a/Security/Microsoft-Caves-on-Vista-Security/1/
+|title=Microsoft Caves on Vista Security
+|last=Seltzer
+|first=Larry
+|publisher=[[eWeek]]
+|date=2006-10-16
+|accessdate=2008-08-13
+}}&lt;/ref&gt;
+
+===Windows 7===
+{{see also|Features new to Windows 7}}
+In [[Windows 7]], the Windows Action Center has been renamed the ''Action Center'' (''Windows Solution Center'' and ''Windows Health Center'' in earlier builds) and encompasses both security and maintenance of the computer. Yellow indicates that there is a message that requires attention. Red indicates that there is an important message for the user to solve.
+
+==PC Magazine criticism==
+On {{date|2004-08-25}}, [[PC Magazine]] published an article in their Security Watch newsletter titled &quot;Windows XP SP2  Security Center Spoofing Threat&quot; which outlined a design vulnerability which could allow a malware to manipulate Security Center into displaying the fake security status that it desires, regardless of the true security status. To do so, the malware requires [[System administrator|Administrative privileges]].&lt;ref&gt;{{Cite web
+|url=http://www.pcmag.com/print_article2/0,1217,a%253D133959,00.asp
+|title=Security Watch Special: Windows XP SP2 Security Center Spoofing Threat
+|author=Jay Munro
+|date={{date|2004-08-25}}
+|accessdate={{date|2009-11-16}}
+|work=Security Watch newsletter
+|publisher=[[PC Magazine]]
+}}&lt;/ref&gt;
+
+== See also ==
+* [[List of Microsoft Windows components]]
+* [[Microsoft Security Essentials]]
+
+== References ==
+&lt;references /&gt;
+
+== External links ==
+* [http://support.microsoft.com/kb/883792 MSKB 883792: Frequently asked questions about Windows Security Center]
+* [http://msdn2.microsoft.com/en-us/library/bb963845.aspx MSDN: Windows Security Center API]
+
+{{Windows Components}}
+
+{{DEFAULTSORT:Security Center}}
+[[Category:Microsoft Windows security technology]]
+[[Category:Windows administration]]
+[[Category:Windows Vista]]
+[[Category:Windows XP]]
+[[Category:Windows components]]
+
+[[de:Windows-Sicherheitscenter]]
+[[fr:Centre de sÃ©curitÃ© Windows]]
+[[ko:ìë ê´ë¦¬ ì¼í°]]
+[[nl:Windows Beveiligingscentrum]]
+[[ja:Windowsã»ã­ã¥ãªãã£ã»ã³ã¿ã¼]]
+[[pl:Centrum zabezpieczeÅ systemu Windows]]
+[[pt:Central de SeguranÃ§a do Windows]]
+[[ru:Ð¦ÐµÐ½ÑÑ Ð¾Ð±ÐµÑÐ¿ÐµÑÐµÐ½Ð¸Ñ Ð±ÐµÐ·Ð¾Ð¿Ð°ÑÐ½Ð¾ÑÑÐ¸]]
+[[fi:Windowsin tietoturvakeskus]]
+[[zh:Windows è³è¨å®å¨ä¸­å¿]]</rev></revisions></page></pages></query></api>

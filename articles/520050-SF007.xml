@@ -1,0 +1,54 @@
+<?xml version="1.0"?><api><query><pages><page pageid="520050" ns="0" title="IRAF"><revisions><rev xml:space="preserve">{{Infobox software
+| name                   = IRAF
+| logo                   = 
+| screenshot             = [[Image:Iraf.png|250px]]
+| developer              = [[NOAO]]
+| latest_release_version = 2.15.1a
+| latest_release_date    = 21 February 2011
+| operating_system       = [[Cross-platform]]
+| platform               = 
+| genre                  = Astronomical Analysis
+| license                = 
+| website                = http://iraf.noao.edu
+}}
+{{Portal|Astronomy}}
+
+'''IRAF''' (an acronym for '''I'''mage '''R'''eduction and '''A'''nalysis '''F'''acility) is a collection of [[software]] written at the [[National Optical Astronomy Observatory]] (NOAO) geared towards the reduction of astronomical images in pixel array form. This is primarily data taken from imaging array detectors such as [[Charge-coupled device|CCDs]]. It is available for all major [[operating system]]s for [[Mainframe computer|mainframes]] and desktop computers. Although written for [[UNIX-like]] operating systems, use on [[Microsoft Windows]] is made possible by [[Cygwin]]. It is primarily used on [[Linux distribution]]s, with a growing share of [[Mac OS X]] users.
+
+IRAF commands (known as tasks) are organized into package structures. Additional packages may be added to IRAF. Packages may contain other packages. There are many packages available by NOAO and external developers often focusing on a particular branch of research or facility. Of particular note are the [[STSDAS]] and TABLES packages by the [[STScI]]. 
+
+==Licensing==
+The licensing status of IRAF is conflicted but generally follows the [[MIT license]] scheme, with some older parts of the code under a different license. Most notably, several functions in the graphics infrastructure are under a non-free software license which does not permit redistribution without permission. As this code is tightly integrated into several of IRAF's tasks, the package as a whole is seen by several projects as non-redistributable and therefore non-free. NOAO seems{{Clarify|date=August 2009}} to have made no effort to clarify this situation, open-source developers concerned with license issues have made no effort to correct this on their own, and so efforts to package the software for drop-in installation in [[Linux|GNU/Linux]] systems have lapsed.
+
+==User-defined tasks==
+IRAF allows users to write their own tasks in two main ways. One is by writing non-compiled procedure scripts. The second is through compiled subset pre-processor (SPP) programs. Tutorial documents exist for both methods.&lt;ref&gt;http://iraf.noao.edu/iraf/web/docs/prog.html&lt;/ref&gt;
+
+==Technical details==
+A full IRAF working environment usually requires two other applications: an extended xterm window with a graphics windows (called xgterm and distributed in a separate X11-IRAF package by NOAO) and an image display program referred to as an &quot;image server&quot;. The two most popular image servers are ''ds9'' (by [[Smithsonian Astrophysical Observatory|SAO]]) and ''ximtool'' (NOAO).
+
+The ''ximtool'' image server supports 24-bit colors and is available for testing.
+
+==See also==
+*[[Astronomical Image Processing System|AIPS]], the Astronomical Image Processing System
+*[[Space Telescope Science Data Analysis System|STSDAS]]
+
+==References==
+{{reflist}}
+
+==External links==
+*[http://www.iraf.net IRAF.Net Forum]
+*[http://iraf.noao.edu IRAF Project Homepage]
+*[http://geco.phys.columbia.edu/~rubab/iraf/iraf_step_by_step_installation IRAF Installation on Ubuntu / Debian]
+*[http://iraf.net/phpBB2/viewtopic.php?p=137456 IRAF on a Knoppix Live CD (ISO-File download)]
+*[http://www.iac.es/sieinvens/siepedia/pmwiki.php?n=HOWTOs.IrafCygwin IRAF installation guide for Windows via Cygwin]
+
+{{DEFAULTSORT:Iraf}}
+[[Category:Astronomy software]]
+[[Category:Cross-platform software]]
+
+[[es:IRAF]]
+[[fr:Image Reduction and Analysis Facility]]
+[[ja:IRAF]]
+[[pl:IRAF]]
+[[pt:IRAF]]
+[[fi:IRAF]]</rev></revisions></page></pages></query></api>

@@ -1,0 +1,75 @@
+<?xml version="1.0"?><api><query><pages><page pageid="5540870" ns="0" title="Gated reverb"><revisions><rev xml:space="preserve">'''Gated reverb''' is an audio processing technique that is applied to recordings of drums (or live sound reinforcement of drums in a [[PA system]]) to make the drums sound powerful and &quot;punchy,&quot; while keeping the overall mix clean and transparent-sounding. The gated reverb effect, which was most popular in the 1980s, is made using a combination of strong [[reverberation|reverb]] and a [[noise gate]].
+
+Unlike most [[reverberation]] or [[delay (audio effect)|delay]] effects, the gated reverb effect does not try to emulate any kind of reverb that occurs in nature.
+
+== History ==
+Perhaps the earliest known use of the gated snare drum technique was on the recording ''[[Mondo Bondage]]'' (first verse only) from the 1975 [[The Tubes (album)|self-titled debut album]] of the [[San Francisco]] rock band [[The Tubes (band)|The Tubes]].{{Dubious|The Tubes|date=June 2011}} The drums were played by [[Prairie Prince]].  Recording produced by [[Al Kooper]] and engineered by Lee Rhett Keifer.
+
+Recording engineer [[Rudy Van Gelder]] used it on many of the songs on the 1976 album ''[[Velvet Darkness]]'' by [[Jazz fusion]] guitarist [[Allan Holdsworth]].{{Citation needed|date=December 2008}} The drummer on this recording was [[Narada Michael Walden]].
+
+Another early use of this technique was on the 1977 [[David Bowie]] album ''[[Low (David Bowie album)|Low]]''. Use of the gated reverb effect spread to popular music during the 1980s. Producer [[Mutt Lange]] was a pioneer at drenching the recorded drum sound in gated reverb. An early and prominent use of gated reverb was in [[Peter Gabriel]], [[Phil Collins]] and [[Hugh Padgham]]'s production of the [[Peter Gabriel (1980 album)|third Peter Gabriel solo album]].&lt;ref&gt;{{cite journal
+| title = Classic Tracks: Phil Collins' &quot;In the Air Tonight&quot;
+| author = Robyn Flans
+| url = http://mixonline.com/mag/audio_phil_collins_air/index.html
+| journal = Mix
+| date = May 1, 2005
+}}&lt;/ref&gt;
+
+== Methods of creation ==
+{{howto|date=June 2009}}
+{| style=&quot;border: 0&quot;
+| style=&quot;vertical-align: top; padding-right: 1.3em&quot; width=&quot;50%&quot; |
+=== &quot;Classic&quot; analogue method ===
+
+The oldest, most &quot;natural&quot; technique can be done with minimal electronic processing. The steps for processing are as follow:
+
+# At least 2 microphones are set up: ''close mic(s)'' (usually [[Microphone#Dynamic microphone|dynamic]], to pick up the hit itself) and ''ambience mic(s)'' (usually [[Microphone#Capacitor or condenser microphones|condenser]], to pick up ambient sound). Usually, there are 2 ambience mics in stereo pair to capture overhead stereo image.
+# The whole drumset and all mics are placed in a very ''live room'' (i.e., one with huge amounts of reverberation and particularly early reflections from its walls, ceiling and floor).
+# High-gain [[Audio level compression|compression]] is applied to ambience mic(s) to capture rich reverb sound.
+# ''Ambience mic(s)'' are fed through a [[noise gate]] with separate external key input.
+# ''Close mic(s)'' are used as an external key for the noise gate.
+# Hold time of noise gate is set to half a second or so (this would be a real duration of hit sound), followed by a fast release time. This causes the gate to allow only the first half second of reverb to pass though after each drum hit, before closing again.
+# Optionally, ''close mic'' sound can be mixed in final result in some proportion to make a hit sound more &quot;solid&quot;.
+
+This results in a very live sounding drum that is rapidly cut off with none of the overpowering secondary reflections associated with reverb. Note that this process is generally used in studio recording environment only: it's hard to reproduce such effect when playing live, though both Phil Collins and Genesis were able to incorporate it into most of their live performances.
+| style=&quot;vertical-align: top; padding-left: 1.3em&quot; width=&quot;50%&quot; |
+
+=== Modern digital method ===
+
+When using digital reverb unit, it is possible to replicate classic scheme in much simpler steps:
+
+# Only 1 microphone is set up: ''close mic''. No real room for ambience is needed, all reverberation is done at [[effects unit]] processor.
+# ''Close mic'' sound is fed to reverberation unit, then to compressor, then to noise gate signal input.
+# Same sound of ''close mic'' is fed to noise gate key input.
+# Optionally, just as in the analog method, original (&quot;dry&quot;) sound can be mixed in some proportion to gated output (&quot;wet&quot;) sound.
+
+Each channel needs its own &quot;reverb+noise gate&quot; unit. Applying the effect on already mixed drums won't work properly. Most modern digital reverb units contain several &quot;Gated reverb&quot; presets, thus removing the need for a separate noise gate, compessor and commutation, effectively making it possible to get gated reverb sound from just single normal close mic or [[drum trigger]]. Also note that such setup does not require &quot;live room&quot; with huge reverberation ambience for the drumset and can be reproduced without major difficulties at [[concert|live gigs]].
+|}
+
+== Usage patterns ==
+Gated reverb is most commonly used for empowering drum sounds, particularly [[snare drum]] and [[bass drum]]. The technique became so popular and the &quot;gated reverb&quot; sound is so recognizable that many [[drum machine]]s and [[sampler (musical instrument)|samplers]] include some sort of &quot;gated drums&quot; setting. These sounds are usually referred to as '''''gated snare''''' and ''gated kick'', omitting the word &quot;reverb&quot; word from the original name.
+
+While [[General MIDI]] does not specify particular sound characteristics for its drum kits, it does include two distinct snare sounds, sometimes referred to as ''acoustic snare'' (38) and ''electric snare'' (40), the latter usually implemented with a &quot;gated snare&quot; sound. Later MIDI standards such as [[Roland GS|GS]] and [[XG (midi)|XG]] include drum kits that specify gated drum sounds, most usually patch #16 (GS #17, with shifted numbering) named &quot;Power drumkit&quot; or &quot;Rock drumkit&quot;, or patch #24 (GS #25) named &quot;Electronic drumkit&quot;. Thus, for example, for snare drum, distinct sounds may be referred to as ''power snare'' or ''rock snare''.
+
+== Notable records ==
+
+Gated reverb as an effect was used on countless drum tracks during the 1980s, to the point that such a sound became a defining characteristic of that decade's popular music.
+
+[[Phil Collins]] used gated reverb extensively in the early to mid-1980s, both in his solo work as well as working with other artists. He first employed it on the [[Peter Gabriel]] song &quot;[[Intruder (song)|Intruder]]&quot;. Examples of Collins's own music include &quot;[[In the Air Tonight]]&quot;, &quot;[[Against All Odds (Take a Look at Me Now)]]&quot;, [[I Don't Care Anymore]], and the [[Genesis (band)|Genesis]] track &quot;[[Mama (Genesis song)|Mama]]&quot;. The British band [[Duran Duran]] also made repeated use of the recording technique, heard prominently on the drums on the 1984 hit single &quot;[[The Wild Boys (song)|The Wild Boys]]&quot; as well as the 1985 [[James_Bond_(film_series)|James Bond]] theme song [[A_View_to_a_Kill_(song)|A View To A Kill]].
+
+== References ==
+
+{{Reflist}}
+
+* {{cite journal
+| first = Paul
+| last = White
+| title = Canyons of The Mind: Psycoacoustics of Reverb
+| journal = Sound On Sound
+| year = 1996
+| month = June
+| url = http://www.soundonsound.com/sos/1996_articles/jun96/reverbeffects.html
+}}
+* [http://www.harmony-central.com/Effects/Articles/Reverb/ Reverb article]{{Dead link|date=July 2011}} on [[Harmony Central]] includes information on gated reverb.
+
+[[Category:Audio effects]]</rev></revisions></page></pages></query></api>

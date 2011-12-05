@@ -1,0 +1,83 @@
+<?xml version="1.0"?><api><query><pages><page pageid="16250276" ns="0" title="ESpeak"><revisions><rev xml:space="preserve">{{lowercase}}
+{{Infobox software
+| name                   = eSpeak
+| logo                   =
+| screenshot             =
+| caption                =
+| collapsible            =
+| author                 =
+| developer              = Jonathan Duddington
+| released               = February 2006
+| latest release version = 1.46.01
+| latest release date    = {{release date and age|2011|11|22}}
+| latest preview version =
+| latest preview date    =
+| frequently updated     =
+| programming language   = [[C (programming language)|C]]
+| operating system       = [[Linux]]&lt;br /&gt;[[Microsoft Windows|Windows]]&lt;br /&gt;[[Mac OS X]]&lt;br /&gt;[[RISC OS]]&lt;br /&gt;[[FreeBSD]]&lt;br /&gt;[[Windows Mobile]]
+| platform               =
+| size                   = ~1600 kbyte
+| language               =
+| status                 =
+| genre                  = [[Speech synthesizer]]
+| license                = [[GNU General Public License|GNU GPL]]v3+
+| website                = http://espeak.sourceforge.net/
+}}
+'''eSpeak''' is a compact open source software [[Speech synthesis|speech synthesizer]] for Linux, Windows, and other platforms.  It uses a [[Speech_synthesis#Formant_synthesis|formant synthesis]] method, providing many languages in a small size.  Much of the programming for eSpeak's languages was based on information found on [[Wikipedia]], with some subsequent feedback from native speakers.&lt;ref&gt;http://espeak.sourceforge.net/add_language.html&lt;/ref&gt; Projects using eSpeak include [[NonVisual Desktop Access|NVDA]], [[Ubuntu]] and [[One Laptop per Child|OLPC]], and it has also been used by [[Google Translate]].
+
+==History==
+
+eSpeak is derived from the &quot;Speak&quot; speech synthesizer for British English for [[RISC OS|Acorn RISC OS]] computers which was originally written in 1995.
+
+A rewritten version for Linux appeared in February 2006 and a [[Speech Application Programming Interface|Windows SAPI 5]] version in January 2007.  Subsequent development has added and improved support for additional languages.
+
+Because of its small size and many languages, it is included as the default speech synthesizer in the [[NonVisual Desktop Access|NVDA]] open source [[Screen Reader|screen reader]] for Windows, and on the [[Ubuntu (Operating System)|Ubuntu]] and other Linux installation discs.
+
+The quality of the language voices varies greatly.  Some have had more work or feedback from native speakers than others.  Most of the people who have helped to improve the various languages are blind users of text-to-speech.
+
+==Synthesis method==
+
+eSpeak provides two methods of synthesis: the original eSpeak synthesizer and a [[Klatt speech synthesizer|Klatt synthesizer]].&lt;ref&gt;{{cite web |author = Dennis H. Klatt |year= 1979 |url=http://www.fon.hum.uva.nl/david/ma_ssp/2010/Klatt-1980-JAS000971.pdf |title=Software for a cascade/parallel formant synthesizer |publisher=J. Acoustical Society of America, 67(3) March 1980 }}&lt;/ref&gt;  In addition, eSpeak can be used as a front-end, providing text-to-phoneme translation and [[Prosody_(linguistics)|prosody]], to [[Mbrola|MBROLA diphone voices]].
+
+The eSpeak and Klatt synthesizers use different types of [[Speech_synthesis#Formant_synthesis|formant synthesis]].
+
+The eSpeak synthesizer creates voiced speech sounds such as vowels and sonorant consonants by adding together sine waves to make the formant peaks.  Unvoiced consonants such as /s/ are made by playing recorded sounds.  Voiced consonants such as /z/ are made by mixing a synthesized voiced sound with a recorded unvoiced sound.
+
+The Klatt synthesizer mostly uses the same formant data as the eSpeak synthesizer. It produces voiced sounds by starting with a waveform which is rich in harmonics (simulating the vibration of the vocal cords) and then applying digital filters in order to produce speech sounds.
+
+==Features==
+
+eSpeak  can be used as a command-line program, or as a shared library.
+
+It supports [[Speech Synthesis Markup Language]] (SSML).
+
+Language voices are identified by the language's [[ISO 639-1]] code.  They can be modified by &quot;voice variants&quot;.  These are text files which can change characteristics such as pitch range, add effects such as echo, whisper and croaky voice, or make systematic adjustments to formant frequencies to change the sound of the voice.  For example, &quot;af&quot; is the Afrikaans voice.  &quot;af+f2&quot; is the Afrikaans voice modified with the &quot;f2&quot; voice variant which changes the formants and the pitch range to give a female sound.
+
+eSpeak uses an ASCII representation of phoneme names which is loosely based on the [[Kirshenbaum]] system.
+
+Phonetic representations can be included within text input by including them within double square-brackets. For example:  &lt;tt&gt;&lt;nowiki&gt; espeak -v en &quot;Hello [[w3:ld]]&quot; &lt;/nowiki&gt;&lt;/tt&gt; will say &quot;Hello world&quot; in English.
+
+== See also ==
+{{Portal|Free software}}
+*[[Festival Speech Synthesis System]]
+*[[Google translate]]
+*[[Microsoft text-to-speech voices]]
+*[[Speech]]
+
+==References==
+
+{{Reflist|3}}
+
+==External links==
+*[http://espeak.sourceforge.net/ Official website]
+*[http://sourceforge.net/projects/espeak/ SourceForge.net project page]
+*[http://tombuntu.com/index.php/2008/04/11/the-espeak-speech-synthesizer/ Tombuntu magazine article about eSpeak]
+*[https://launchpad.net/espeak-gui GUI for eSpeak]
+*[http://rors.org/2010/10/21/espeak-ruby.html Ruby API for eSpeak]
+*[http://lua-espeak.luaforge.net/ Lua API for eSpeak]
+{{Speech synthesis}}
+{{DEFAULTSORT:Espeak}}
+[[Category:Free software programmed in C++]]
+[[Category:Speech synthesis]]
+
+[[ru:ESpeak]]</rev></revisions></page></pages></query></api>

@@ -1,0 +1,106 @@
+<?xml version="1.0"?><api><query><pages><page pageid="669369" ns="0" title="TinyOS"><revisions><rev xml:space="preserve">{{Infobox OS
+| name                   = TinyOS
+| logo                   = [[Image:tos-jwall.jpg]]
+| screenshot             = 
+| caption                = 
+| developer              = TinyOS Alliance
+| source_model           = [[Open source]]
+| kernel_type            = 
+| supported_platforms    = 
+| ui                     = 
+| family                 = [[Embedded operating system]]s
+| released               = 2000
+| latest_release_version = 2.1.1
+| latest_release_date    = April, 2010
+| latest_test_version    = 
+| latest_test_date       = 
+| marketing_target       = [[Wireless sensor network]]s
+| programmed_in          = [[nesC]]
+| prog_language          = [[nesC]]
+| language               = English
+| updatemodel            = 
+| package_manager        = 
+| working_state          = Current
+| license                = [[BSD License]]
+| website                = [http://www.tinyos.net www.tinyos.net]
+}}
+'''TinyOS''' is a [[free software|free]] and [[open source software|open source]] component-based [[operating system]] and platform targeting [[wireless sensor network]]s (WSNs). TinyOS is an embedded operating system written in the [[nesC]] [[programming language]] as a set of cooperating tasks and processes. It is intended to be incorporated into [[smartdust]]. TinyOS started as a collaboration between the [[University of California, Berkeley]] in co-operation with [[Intel Corporation|Intel]] Research and [[Crossbow Technology]], and has since grown to be an international consortium, the TinyOS Alliance.
+
+==Implementation==
+
+TinyOS applications are written in [[nesC]], a dialect of the [[C (programming language)|C language]] optimized for the memory limits of sensor networks. Its supplementary tools are mainly in the form of [[Java (programming language)|Java]] and [[shell script]] front-ends. Associated libraries and tools, such as the NesC compiler and [[Atmel AVR]] binutils toolchains, are mostly written in C.
+
+TinyOS programs are built out of [[component-based software engineering|software component]]s, some of which present hardware abstractions. Components are connected to each other using [[interface (computer science)|interfaces]]. TinyOS provides interfaces and components for common abstractions such as packet communication, routing, sensing, actuation and storage. 
+
+TinyOS is completely [[asynchronous I/O|non-blocking]]: it has one [[call stack|stack]]. Therefore, all [[I/O]] operations that last longer than a few hundred [[microsecond]]s are asynchronous and have a [[callback (computer science)|callback]]. To enable the native [[compiler]] to better optimize across call boundaries, TinyOS uses nesC's features to link these callbacks, called events, statically. While being non-blocking enables TinyOS to maintain high concurrency with one stack, it forces programmers to write complex logic by stitching together many small event handlers. To support larger computations, TinyOS provides tasks, which are similar to a [[Deferred Procedure Call]] and [[interrupt handler]] bottom halves. A TinyOS component can post a task, which the OS will schedule to run later. Tasks are non-[[preemption (computing)|preemptive]] and run in [[FIFO]] order. This simple [[concurrency (computer science)|concurrency]] model is typically sufficient for I/O centric applications, but its difficulty with CPU-heavy applications has led to the development of a [[thread (computer science)|thread]] library for the OS, named TOSThreads.
+
+TinyOS code is statically linked with program code, and compiled into a small binary, using a custom [[GNU toolchain]]. Associated utilities are provided to complete a development platform for working with TinyOS
+
+==History==
+TinyOS began as a project at UC Berkeley as part of the [[DARPA]] NEST program. It has since grown to involve thousands of academic and commercial developers and users worldwide. (list in reverse chronological order)
+* April 2010:  TinyOS 2.1.1 released.
+* August 2008: TinyOS 2.1.0 released.
+* July 2007: TinyOS 2.0.2 released. Work on TinyOS 2.1, which involves slight changes to a few interfaces, begins.
+* April 2007: TinyOS 2.0.1 released at the 4th TinyOS Technology Exchange in Cambridge, MA.
+* November 2006: TinyOS 2.0 released at the SenSys conference in Boulder, CO.
+* July 2006: TinyOS 2.0 beta2 released.
+* February 2006: TinyOS 2.0 beta1 released at the 3rd TinyOS Technology Exchange in Stanford, CA.
+* December 2005: TinyOS 1.1.15, the last 1.1 version, is released.
+* July 2005: NEST project concludes.
+* June 2004: Working group forms on next steps for TinyOS, based on experiences porting to new platforms. Group agrees to start work on 2.0.
+* September 2003 â December 2005: TinyOS begins a periodic minor release process. 
+* August 2003: TinyOS version 1.1 is released, which includes new nesC features including data race detection.
+* September 2002: TinyOS version 1.0, implemented in nesC, is released.
+* April 2002: Work on the nesC programming language begins as a collaboration between Intel Research and UC Berkeley.
+* February 2002: Berkeley distributes 1000 mica nodes to other participants in the NEST project.
+* 2001: Berkeley develops the mica platform and releases TinyOS version 0.6.
+* 2000: Berkeley designs the rene platform and partners with Crossbow, Inc., who mass produces the hardware. TinyOS version 0.43 is made available to the public via SourceForge. Pre-1.0 versions of TinyOS are a mix of C and [[Perl]] scripts.
+* 1999: First TinyOS platform (WeC) and OS implementations are developed at Berkeley.
+
+{{Expand section|date=June 2008}}
+
+==Integrated development environments==
+As of 2010, three [[integrated development environment]]s (IDEs) are available for TinyOS:
+*[http://tos-ide.ethz.ch/wiki/index.php TinyOS Eclipse Plugin &quot;YETI 2&quot;], ETH ZÃ¼rich
+*[http://docs.tinyos.net/index.php/NESCDT-_An_editor_for_nesC_in_Eclipse TinyOS Eclipse Editor Plugin by Rasmus Pedersen], Copenhagen Business School
+*[http://tinydt.sourceforge.net/ TinyDT â TinyOS Plugin for the eclipse platform], Vanderbilt University
+
+==External links==
+{{External links|date=April 2010}}
+*{{official website|http://www.tinyos.net/}}
+*[http://docs.tinyos.net TinyOS Documentation Wiki]
+*[http://www.tinyos.net/tinyos-2.x/doc TinyOS 2.0 Documentation]
+*[http://csl.stanford.edu/~pal/pubs/tinyos-programming.pdf TinyOS Programming] by Philip Levis June 28, 2006
+*{{dmoz|Computers/Software/Operating_Systems/Network/TinyOS}}
+*[http://www.tinyos.or.kr TinyOS Korea Forum Website]
+*[http://tinyos.cvs.sourceforge.net/*checkout*/tinyos/tinyos-2.x-contrib/index.html/ TinyOS Contrib] â Contributed projects
+*[http://www.tinyos8051wg.net/ www.tinyos8051wg.net] â [http://www.tinyos8051wg.net/ Port of TinyOS to mcs51 (8051) based architectures and CC2430 in particular]
+*[http://klueska.doesntexist.com/installing_xubuntos_vm.html XubuntTOS VMWare] â VMWare virtual machine image of XubunTOS
+*[http://www.btnode.ethz.ch/Projects/SensorNetworkMuseum SensorNetworkMuseum] â reference data for sensor network platforms
+* TinyOS Technology Exchange (TTX): annual developer meeting
+**[http://sites.google.com/site/ettx2009 ETTX1] 2009, Cork, Ireland
+**[http://www.eecs.berkeley.edu/~culler/tinyos/ttx/ TTX5] 2008, Univ. of California, Berkeley
+**[http://tinyos.stanford.edu/ttx/2007 TTX4] 2007, M.I.T.
+**[http://www.cs.berkeley.edu/~culler/tinyos/ttx/2006 TTX3] 2006,  Stanford University
+**[http://www.eecs.berkeley.edu/~culler/tinyos/ttx/2005 TTX2] 2005, Univ. of California, Berkeley
+**[http://www.eecs.berkeley.edu/~culler/tinyos/ttx/2004 TTX] 2004, Univ. of California, Berkeley
+*[http://mythicalcomputer.blogspot.com/2008/08/installation-of-tinyos-in-ubuntu.html TinyOs 2.1.0 Installation] Blogfor installation of TinyOS 2.10 in Ubuntu. It provides simple examples for testing the installation and running programs using Avrora
+
+===Video===
+*Presentation
+**[http://vimeo.com/3264574 '''Time to Roll''', ETTX 2009 Keynote, David Culler, UC Berkeley]
+**[http://vimeo.com/3284230 '''T2: What the Second Generation Holds''', ETTX 2009 Tutorial, Phil Levis, Stanford]
+*TinyOS Demonstration
+
+{{Citations missing|date=December 2006}}
+
+{{Wireless Sensor Network}}
+
+[[Category:Embedded operating systems]]
+
+[[de:TinyOS]]
+[[es:TinyOS]]
+[[fr:TinyOS]]
+[[it:TinyOS]]
+[[ru:TinyOS]]
+[[zh:TinyOS]]</rev></revisions></page></pages></query></api>

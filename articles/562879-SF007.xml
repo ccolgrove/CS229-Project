@@ -1,0 +1,146 @@
+<?xml version="1.0"?><api><query><pages><page pageid="562879" ns="0" title="Glasgow Haskell Compiler"><revisions><rev xml:space="preserve">{{Infobox Software
+| name = Glasgow Haskell Compiler
+| developer = [[University of Glasgow]]
+| latest_release_version = 7.2.1
+| latest_release_date = {{release_date|2011|08|09}}
+| operating_system = [[Cross-platform]]
+| genre = [[Compiler]]
+| license = [[BSD license|BSD]]
+| website = [http://www.haskell.org/ghc/ GHC home]
+}}
+
+'''The Glorious Glasgow Haskell Compilation System''',&lt;ref&gt;&lt;tt&gt;ghc --version&lt;/tt&gt;&lt;/ref&gt;&lt;ref name=&quot;manual&quot;&gt;{{cite web
+ | title = The Glorious Glasgow Haskell Compilation System User's Guide, Version 6.6
+ | url=http://www.haskell.org/ghc/docs/latest/html/users_guide/index.html
+ | accessdate = 2007-01-28
+ | authorlink = The GHC Team
+}}&lt;/ref&gt; more commonly known as the '''Glasgow Haskell Compiler''' or '''GHC''', is an [[open source]] [[Machine language|native code]] [[compiler]] for the [[functional programming|functional]] [[Computer programming|programming]] [[Programming language|language]] [[Haskell (programming language)|Haskell]]. &lt;!-- It's also the most popular and used Haskell compiler from what I can tell. Is that mentionable? --&gt; The lead developers are [[Simon Peyton Jones]] and [[Simon Marlow]]. It is distributed along with the [[Haskell Platform]].
+
+==History==
+GHC originally started in 1989 as a prototype, written in [[Lazy ML|LML (Lazy ML)]] by Kevin Hammond at the [[University of Glasgow]]. Later that year, the prototype was completely rewritten in Haskell, except for its [[parser]], by Cordelia Hall, Will Partain, and Simon Peyton Jones. Its first beta release was on April 1, 1991 and subsequent releases added a [[Strictness analysis|strictness analyzer]] as well as language extensions such as [[Monads in functional programming|monadic I/O]], mutable arrays, unboxed data types, concurrent and parallel programming models (such as [[software transactional memory]] and [[data parallelism]]) and a [[Performance analysis|profiler]].&lt;ref name=&quot;history&quot;&gt;{{cite conference
+ | first = P.
+ | last = Hudak
+ | coauthors = Hughes, J.; Peyton Jones, S.; Wadler, P.
+ | title = A history of Haskell: being lazy with class
+ | booktitle = Proc. Third ACM SIGPLAN History of Programming Languages Conference (HOPL-III)
+ | month = June | year = 2007
+ | url = http://research.microsoft.com/~simonpj/papers/history-of-haskell/index.htm
+ }}&lt;/ref&gt;
+
+Peyton Jones, as well as Simon Marlow, later moved to [[Microsoft Research]] in [[Cambridge, England]], where they continue to be primarily responsible for developing GHC. GHC also contains code from more than sixty other contributors.&lt;ref name=&quot;contribs&quot;&gt;{{cite web
+ | title = The GHC Team
+ | url=http://cvs.haskell.org/trac/ghc/wiki/Contributors
+ | accessdate=2007-01-28
+|archiveurl = http://web.archive.org/web/20070208102019/http://cvs.haskell.org/trac/ghc/wiki/Contributors |archivedate = 2007-02-08}}&lt;/ref&gt;
+Since 2009, third-party contributions to GHC have been funded by the [http://industry.haskell.org Industrial Haskell Group].
+
+==Architecture==
+GHC is itself written in Haskell (in a technique known as [[Bootstrapping (compilers)|bootstrapping]]), but the [[Run-time system|runtime system]] for Haskell, essential to run programs, is written in [[C (programming language)|C]] and [[C--]].
+
+GHC's [[front end]] â incorporating the [[lexer]], parser and [[Type system|typechecker]] â is designed to preserve as much information about the source language as possible until after [[type inference]] is complete, toward the goal of providing clear error messages to users.&lt;ref name=&quot;history&quot;/&gt; After type checking, the Haskell code is [[Syntactic sugar|desugared]] into a typed [[intermediate language]] known as &quot;Core&quot; (based on [[System F]], extended with &lt;code&gt;let&lt;/code&gt; and &lt;code&gt;case&lt;/code&gt; expressions). Recently, Core was extended to support [[generalized algebraic datatypes]] in its [[type system]], and is now based on an extension to System F known as System FC.&lt;ref&gt;
+{{cite conference
+ | first = M.
+ | last = Sulzmann
+ | authorlink = M. Sulzmann
+ | coauthors = M. M. T. Chakravarty; S. Peyton Jones; K. Donnelly
+ | title = System F with Type Equality Coercions
+ | booktitle = Proc. Workshop on Types in Language Design and Implementation (TLDI)
+ | month = January | year = 2007
+ | url = http://research.microsoft.com/~simonpj/papers/ext-f/fc-tldi.pdf
+ }}
+&lt;/ref&gt;
+
+In the tradition of type-directed compilation, GHC's simplifier, or &quot;middle end&quot;, where most of the [[Compiler optimization|optimizations]] implemented in GHC are performed, is structured as a series of [[Source code|source-to-source]] [[Program transformation|transformations]] on Core code. The analyses and transformations performed in this compiler stage include demand analysis (a generalization of [[strictness analysis]]), application of user-defined [[rewrite rules]] (including a set of rules included in GHC's standard libraries that performs foldr/build [[Deforestation (computer science)|fusion]]), unfolding (called &quot;[[inlining]]&quot; in more traditional compilers), [[let-floating]], an analysis that determines which function arguments can be unboxed, [[constructed product result analysis]], [[Partial evaluation|specialization]] of [[Type class|overloaded]] functions, as well as a set of simpler local transformations such as [[constant folding]] and [[beta reduction]].&lt;ref name=&quot;comp-by-trans&quot;&gt;{{cite conference
+ | first = S.
+ | last = Peyton Jones
+ | title = Compiling Haskell by program transformation: a report from the trenches
+ | booktitle = Proc. European Symposium on Programming (ESOP)
+ | month = April | year = 1996
+ | url = http://citeseer.ist.psu.edu/peytonjones96compiling.html
+ }}&lt;/ref&gt;
+
+The back end of the compiler transforms Core code into an internal representation of C--, via an intermediate language STG (short for &quot;Spineless Tagless G-machine&quot;).&lt;ref name=&quot;stg&quot;&gt;{{cite journal
+ | first = S.
+ | last = Peyton Jones
+ | title = Implementing lazy functional languages on stock hardware: the Spineless Tagless G-machine, Version 2.5
+ | journal = Journal of Functional Programming
+ | volume = 2
+ | issue = 2
+ | pages = 127â202
+ | month = April | year = 1992
+ | url = http://citeseer.ist.psu.edu/peytonjones92implementing.html
+ | doi = 10.1017/S0956796800000319
+ }}&lt;/ref&gt; The C-- code can then take one of three routes: it is either printed as C code for compilation with [[GNU Compiler Collection|GCC]], converted directly into native machine code (the traditional &quot;[[Code generation (compiler)|code generation]]&quot; phase), or converted to [[Low Level Virtual Machine|LLVM]] virtual machine code for compilation with LLVM.  In all three cases, the resultant native code is finally linked against the GHC runtime system to produce an executable.
+
+==Language==
+GHC complies with the language standard, called ''Haskell 98''.&lt;ref name=&quot;h98&quot;&gt;{{cite web
+ | title = Haskell 98 Language and Libraries: The Revised Report
+ | url = http://www.haskell.org/onlinereport/
+ | accessdate = 2007-01-28
+}}&lt;/ref&gt; It also supports many optional extensions to the Haskell standard: for example, the [[software transactional memory]] (STM) library, which allows for [[Composable Memory Transactions]].
+
+===Extensions to Haskell===
+A number of extensions to Haskell have been proposed.  These extensions provide features not described in the language specification, or they redefine existing constructs.  As such, each extension may not be supported by all Haskell implementations.  There is an ongoing effort&lt;ref&gt;http://hackage.haskell.org/trac/haskell-prime/&lt;/ref&gt; to describe extensions and select those which will be included in future versions of the language specification.
+
+The extensions&lt;ref&gt;http://www.haskell.org/ghc/docs/latest/html/users_guide/ghc-language-features.html&lt;/ref&gt; supported by the Glasgow Haskell Compiler include:
+
+* Unboxed types and operations.  These represent the primitive datatypes of the underlying hardware, without the indirection of a pointer to the [[dynamic allocation|heap]] or the possibility of deferred evaluation.  Numerically intensive code can be significantly faster when coded using these types.
+* The ability to specify [[strict evaluation]] for a value, pattern binding, or datatype field.
+* More convenient syntax for working with modules, patterns, [[list comprehension]]s, operators, records, and tuples.
+* [[Syntactic sugar]] for computing with [[arrow (functional programming)|arrows]] and recursively-defined [[monad (functional programming)|monadic]] values.  Both of these concepts extend the monadic &lt;tt&gt;do&lt;/tt&gt;-notation provided in standard Haskell.
+* A significantly more powerful system of types and typeclasses, described below.
+* [[Template Haskell]], a system for compile-time [[metaprogramming]].  A programmer can write expressions that produce Haskell code in the form of an [[abstract syntax tree]].  These expressions are typechecked and evaluated at compile time; the generated code is then included as if it were written directly by the programmer.  Together with the ability to [[reflection (computer science)|reflect]] on definitions, this provides a powerful tool for further extensions to the language.
+* Quasi-quotation, which allows the user to define new concrete syntax for expressions and patterns.  Quasi-quotation is useful when a metaprogram written in Haskell manipulates code written in a language other than Haskell.
+* [[Generic programming|Generic]] typeclasses, which specify functions solely in terms the algebraic structure of the types they operate on.
+* Parallel evaluation of expressions using multiple CPU cores.  This does ''not'' require explicitly spawning threads.  The distribution of work happens implicitly, based on annotations provided by the programmer.
+* Compiler [[Directive (programming)|pragma]]s for directing optimizations such as [[inline expansion]] and specializing functions for particular types.
+* Customizable rewrite rules.  The programmer can provide rules describing how to replace one expression with an equivalent but more efficiently evaluated expression.  These are used within core datastructure libraries to provide improved performance&lt;ref&gt;http://www.cse.unsw.edu.au/~dons/papers/CLS07.html&lt;/ref&gt; throughout application-level code.
+
+===Type system extensions===
+
+An expressive static type system is one of the major defining features of Haskell.  Accordingly, much of the work in extending the language has been directed towards [[data type|types]] and [[type class]]es.
+
+The Glasgow Haskell Compiler supports an extended type system based on the theoretical System Fc.&lt;ref&gt;http://www.cse.unsw.edu.au/~chak/papers/SCPD07.html&lt;/ref&gt;  Major extensions to the type system include:
+
+* [[Higher-rank_polymorphism#Rank_restrictions|Arbitrary-rank]] and [[Type polymorphism#Impredicative_polymorphism_.28.22first_class.22_polymorphism.29|impredicative]] [[type polymorphism|polymorphism]].  Essentially, a polymorphic function or datatype constructor may require that one of its arguments is itself polymorphic.  Impredicative polymorphism is now considered deprecated, and can be eliminated by declaring a new monomorphic datatype to wrap a polymorphic type.
+* [[Generalized algebraic data type]]s.  Each constructor of a polymorphic datatype can encode information into the resulting type.  A function which pattern-matches on this type can use the per-constructor type information to perform more specific operations on data.
+* [[Existential type]]s.  These can be used to &quot;bundle&quot; some data together with operations on that data, in such a way that the operations can be used without exposing the specific type of the underlying data.  Such a value is very similar to an [[object (computer science)|object]] as found in [[object-oriented programming]] languages.
+* Data types that do not actually contain any values.  These can be useful to represent data in type-level [[metaprogramming]].
+* Type families: user-defined functions from types to types.  Whereas parametric polymorphism provides the same structure for every type instantiation, type families provide ad-hoc polymorphism with implementations that can differ between instantiations.  Use cases include content-aware optimizing containers and type-level metaprogramming.
+* Implicit function parameters that have dynamic [[scope (programming)|scope]].  These are represented in types in much the same way as type class constraints.
+
+Extensions relating to [[type class]]es include:
+
+* A type class may be parametrized on more than one type.  Thus a type class can describe not only a set of types, but an ''n''-ary [[finitary relation|relation]] on types.
+* [[Functional dependencies]], which constrain parts of that relation to be a mathematical [[function (mathematics)|function]] on types.  That is, the constraint specifies that some type class parameter is completely determined once some other set of parameters is fixed.  This guides the process of [[type inference]] in situations where otherwise there would be ambiguity.
+* Significantly relaxed rules regarding the allowable shape of type class instances.  When these are enabled in full, the type class system becomes a [[Turing-complete]] language for [[logic programming]] at compile time.
+* Type families, as described above, may also be associated with a type class.
+* The automatic generation of certain type class instances is extended in several ways.  New type classes for [[generic programming]] and common recursion patterns are supported.  Additionally, when a new type is declared as [[isomorphic]] to an existing type, any type class instance declared for the underlying type may be lifted to the new type &quot;for free&quot;.
+
+==Portability==
+Versions of GHC are available for several [[System platform|platforms]], including [[Microsoft Windows|Windows]] and most varieties of [[Unix]] (such as the numerous [[Linux|GNU/Linux]] flavors, [[FreeBSD]], and [[Mac OS X]]). GHC has also been [[Porting|ported]] to several different [[CPU design|processor architectures]].
+
+==See also==
+* [[Hugs]]
+* [[Yhc]]
+* [[Haskell Platform]]
+
+==References==
+{{Reflist|2}}
+
+==External links==
+* [http://www.haskell.org/ghc/ The GHC homepage]
+
+{{DEFAULTSORT:Ghc}}
+[[Category:Free Haskell implementations]]
+[[Category:Free cross-platform software]]
+[[Category:Free compilers and interpreters]]
+
+[[ca:Glasgow Haskell Compiler]]
+[[cs:Glasgow Haskell Compiler]]
+[[es:Glasgow Haskell Compiler]]
+[[fr:Glasgow Haskell Compiler]]
+[[nl:Glasgow Haskell Compiler]]
+[[pt:Glasgow Haskell Compiler]]
+[[ru:Glasgow Haskell Compiler]]
+[[sv:Glasgow Haskell Compiler]]</rev></revisions></page></pages></query></api>

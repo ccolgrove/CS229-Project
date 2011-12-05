@@ -1,0 +1,30 @@
+<?xml version="1.0"?><api><query><pages><page pageid="1060582" ns="0" title="ZoneCD"><revisions><rev xml:space="preserve">'''ZoneCD''' is a [[Linux distribution]] to easily set up [[Wifi]] [[Hotspot (Wi-Fi)|hotspots]], distributed as a  Live CD. It is derived from [[Knoppix]].
+
+== Design ==
+
+The ZoneCD, utilizing a [[captive portal]], allows hotspot operators to require a customer to login before accessing network resources.  The ZoneCD itself is set up on an unused computer at the hotspot location, routing traffic between the [[wireless access point]].  When a user associates with the access point and tries to reach a website, the captive portal returns a login screen which can be customized to provide information or deliver an advertisement for the venue--such as a library, coffee shop, or restaurant.
+
+It employs a centralized control server which can be customized per hotspot to allow users to self-create accounts, set bandwidth and port restrictions on various user classes, and implement content filtering to reduce young people's access to sex and violence.  Compared to similar projects, the centralized control server aids in usability by removing the need for a hotspot operator to administer an additional server (such as a [[RADIUS]] server) for authentication, administration, and accounting.  Only rudimentary configuration is required at the hotspot, selecting the type of network connection, the type of authentication service, and entering a password for this service.  The configuration is stored on a floppy or USB thumbdrive, because changes to a Live CD filesystem do not otherwise persist between reboots.
+
+== Development ==
+
+The project that produces the ZoneCD is PublicIP.  PublicIP began in 2003, founded by [[Scott Tully]].  The publicip.net project relies on the NoCat captive portal, which interfaces with a [[Java (Sun)|Java]]-based authentication server designed and maintained by Tully, who provides the authentication service free of charge.  In 2005 Tully unveiled a sister project, also using the zoneCD but using a more modern captive portal, [[wifidog]], with a redesigned and upgraded control server.  This project, publicip.com, charges a monthly fee (currently starting at $7.95 for basic service) which includes a &quot;high availability&quot; plan on the control service.  However, PublicIP states that the free publicip.net service will continue to be offered long into the future.
+
+As of March 2009, the Free PublicIP.net system appears to be offline and no longer functional, the subscription service remains fully functional. No warning or feedback was given by the developer or system administrators.
+
+As of February 2010, the subscription service appears to be offline and no longer functional, the purchase system remains fully functional. No warning or feedback was given by the developer or system administrators.
+
+As of August 2011, the subscription service appears to be functioning and open for business with 4 different plans.  Postings found at public-ip blogspot indicate that, after several years of silence, development has resumed.
+
+As of October 12th 2011, the service and website appears to be offline and no longer functional.  No warning or feedback was given by the developer.
+== See also ==
+
+* [[List of Linux distributions]]
+
+== External links ==
+
+* [http://www.publicip.net/ ZoneCD homepage]
+* {{Distrowatch|zonecd|NAME=ZoneCD}}
+
+[[Category:Knoppix]]
+[[Category:Wireless access points]]</rev></revisions></page></pages></query></api>

@@ -1,0 +1,273 @@
+<?xml version="1.0"?><api><query><pages><page pageid="2598929" ns="0" title="Avidemux"><revisions><rev xml:space="preserve">{{Original research|section|date=June 2009}}
+{{More footnotes|date=July 2009}}
+{{Infobox software
+| name                   = Avidemux
+| logo                   = [[Image:Avidemux-logo.png]]
+| screenshot             = [[File:Avidemux 2 5 2.png|300px]]
+| caption                = Avidemux v2.5.2 ([[Qt (framework)|Qt]] interface) on [[Kubuntu]] 10.04
+| developer              = âMeanâ, âGruntsterâ and âFahrâ&lt;ref&gt;''Avidemux 2.5 Change Log'' (included with the Avidemux 2.5.5 for Windows)&lt;/ref&gt;
+| released               =
+| frequently updated     = yes&lt;!-- Release version update? Don't edit this page, just click on the version number! --&gt;
+| programming language   = [[C++]]
+| operating system       = [[Microsoft Windows]]&lt;br/&gt;[[Mac OS X]]&lt;br/&gt;[[Linux]]&lt;br/&gt;[[BSD]]
+| platform               = [[IA-32]] and [[x64]]
+| language               = English, Czech, French, Italian and German
+| genre                  = [[Video editing software]]
+| license                = [[GNU General Public License]]
+| website                = {{URL|http://www.avidemux.org}}
+}}
+
+'''Avidemux''' is a [[free and open-source]] [[video editing software|video editing program]] designed for video editing and [[video processing]]. It is written in [[C++]], and uses either the [[GTK+]] or [[Qt (framework)|Qt]].
+
+== Features ==
+Avidemux is capable of [[Non-linear editing system|non-linear video editing]], applying [[visual effect]]s (called âFiltersâ by Avidemux) to video, and [[transcoding]] video into various formats. Some of the filters were [[Porting|ported]] from [[MPlayer]] and [[Avisynth]]. Avidemux can also insert audio streams into a video file (an action known as [[multiplexing]] or âmuxingâ) or extract audio streams from video files (an action known as âdemuxingâ).
+
+An integral and important part of the design of the program is its '''project system''', which uses the [[SpiderMonkey (JavaScript engine)|SpiderMonkey JavaScript engine]]. Whole projects with all options, configurations, selections, and preferences can be saved into a project file. Like [[VirtualDub]]'s VCF scripting capabilities, Avidemux has advanced scripting available for it both in its [[GUI]] and command line modes. It also supports a non-project system just like VirtualDub, where users can simply create all of their configurations and save the video directly without making a project file. A project queue system is also available.
+
+Avidemux has built-in subtitle processing, both for [[Optical Character Recognition]] of DVD subtitles and for rendering hard subtitle. Avidemux supports various subtitle formats, including [[MicroDVD]] (.SUB), [[SubStation Alpha]] (.SSA), [[Advanced SubStation Alpha]] (.ASS) and [[SubRip]] (.SRT).
+
+While it is primarily a [[GUI]] program, Avidemux can also be run from the [[command line]].
+
+=== Components ===
+Avidemux was written from scratch, but additional code from [[FFmpeg]], [[MPlayer]], [[Transcode (software)|Transcode]] and [[Avisynth]] has been used on occasion as well. Nonetheless it is a completely standalone program that does not require any other programs to read, decode, or encode other than itself. The built-in libavcodec library from the FFmpeg project is used for decoding and encoding of various audio and video formats such as MPEG-4 ASP. The primary (though not the only) Avidemux programmer is a person known as Mean, who often frequents the Avidemux.&lt;ref&gt;{{Cite web
+ |url = http://www.avidemux.org/smf/
+ |title = Messages by &quot;Mean&quot;
+ |work = Avidemux forum
+ |accessdate = 19 November 2011
+}}&lt;/ref&gt; The Avidemux project is open to user input and many suggestions from its users have already been implemented as fully written features.
+
+=== Multithreading ===
+Multithreading has been implemented in the following areas of Avidemux (some partially through libavcodec):
+* Encoding
+** [[H.264/MPEG-4 AVC]] (using [[x264]])
+** [[MPEG-1]] and [[MPEG-2]] (using [[libavcodec]])
+** [[MPEG-4 Part 2]] (SP/[[Advanced Simple Profile|ASP]], using libavcodec or [[Xvid]])
+*** Xvid requires the latest version from the CVS
+* Decoding
+** MPEG-1 and MPEG-2 (using libavcodec)
+** MPEG-4 Part 2 (SP/ASP, using libavcodec)
+
+==Versions and ports==
+The current stable version of Avidemux is 2.5.3. Compared to the 2.3 and earlier versions, Avidemux 2.4 offers 3 user interfaces: [[GTK+]], shell and [[Qt (toolkit)|Qt]] 4.
+
+Avidemux is available for almost all distributions of [[Linux]] that are capable of compiling C++, GTK+ and the [[SpiderMonkey (JavaScript engine)|SpiderMonkey JavaScript engine]]. A [[Win32]] version of this program is also available for [[Microsoft Windows]] users, as well as [[Mac OS X]], [[FreeBSD]], [[NetBSD]] and [[OpenBSD]] ports and packages.&lt;ref&gt;{{cite web
+  | url=http://www.freebsd.org/cgi/cvsweb.cgi/ports/multimedia/avidemux2/
+  | title=FreeBSD Avidemux port
+  | accessdate=2 July 2010
+}}&lt;/ref&gt;&lt;ref&gt;{{cite web
+  | url=ftp://ftp.netbsd.org/pub/pkgsrc/current/pkgsrc/multimedia/avidemux/README.html
+  | title=The NetBSD Packages Collection: multimedia/avidemux
+  | accessdate=2 July 2010
+}}&lt;/ref&gt;&lt;ref&gt;{{cite web
+  | url=http://www.openbsd.org/4.6_packages/i386.html
+  | title=OpenBSD Packages
+  | accessdate=2 July 2010
+}}&lt;/ref&gt;
+
+==Supported formats==
+Avidemux supports the following file formats:
+{| class=&quot;wikitable&quot;
+|+ [[Container format (digital)|Multimedia container formats]]&lt;ref name=&quot;input_formats&quot;&gt;{{Cite web
+  |url = http://www.avidemux.org/admWiki/doku.php?id=general:input_formats
+  |title = Supported input formats
+  |work = Avidemux wiki documentation
+  |publisher = Avidemux
+  |date = 16 April 2010
+  |accessdate = 23 May 2011
+}}&lt;/ref&gt;&lt;ref name=&quot;output_formats&quot;&gt;{{Cite web
+  |url = http://www.avidemux.org/admWiki/doku.php?id=general:output_formats
+  |title = Supported output formats
+  |work = Avidemux wiki documentation
+  |publisher = Avidemux
+  |date = 15 April 2010
+  |accessdate = 23 May 2011
+}}&lt;/ref&gt;
+|-
+! Name                        || File extension      || As input|| As output
+|-
+| [[Audio Video Interleave]]  || .AVI                || {{Yes}} || {{Yes}}
+|-
+| [[Advanced Systems Format]] || .ASF, .WMV and .WMA || {{Yes}} || {{No}}
+|-
+| [[Flash Video]]             || .FLV                || {{Yes}} || {{Yes}}
+|-
+| [[Matroska]]                || .MKV                || {{Yes}} || {{Yes}}
+|-
+| MPEG [[elementary stream]]  || {{N/A}}             || {{Yes}} || {{No}}
+|-
+| [[MPEG program stream]]     || .MPG and .MPEG      || {{Yes}} || {{Yes}}&lt;ref group=&quot;Note&quot;&gt;Can create files that are compatible with [[Video CD]], [[SVCD]] or [[DVD Video]]&lt;/ref&gt;
+|-
+| [[MPEG transport stream]]   || .TS                 || {{Yes}} || {{No}}
+|-
+| [[MPEG-4 Part 14]]          || .MP4                || {{Yes}} || {{Yes}}
+|-
+| NuppelVideo                 || .NUV                || {{Yes}} || {{No}}
+|-
+| [[Ogg#OGM|OGM]]             || .OGM                || {{Yes}} || {{Yes}}
+|-
+| [[QuickTime]]               || .MOV                || {{Yes}} || {{No}}
+|-
+| [[3GP and 3G2|3GP]]         || .3GP                || {{Yes}} || {{No}}
+|}
+
+{| class=&quot;wikitable&quot;
+|+ Image formats&lt;ref name=&quot;input_formats&quot; /&gt;&lt;ref name=&quot;output_formats&quot; /&gt;
+|-
+! Name                        || File extension      || As input|| As output
+|-
+| [[Windows bitmap]]          || .BMP                || {{Yes}} || {{No}}
+|-
+| [[JPEG]]                    || .JPG and .JPEG      || {{Yes}} || {{No}}
+|}
+
+{| class=&quot;wikitable&quot;
+|+ Video formats&lt;ref&gt;{{Cite web
+  |url = http://www.avidemux.org/admWiki/doku.php?id=general:video_decoders
+  |title = Video decoders
+  |work = Avidemux wiki documentation
+  |publisher = Avidemux
+  |date = 16 April 2010
+  |accessdate = 23 May 2011
+}}&lt;/ref&gt;&lt;ref&gt;{{Cite web
+  |url = http://www.avidemux.org/admWiki/doku.php?id=general:video_encoders
+  |title = Video encoders
+  |work = Avidemux wiki documentation
+  |publisher = Avidemux
+  |date = 15 April 2010
+  |accessdate = 23 May 2011
+}}&lt;/ref&gt;
+|-
+! Name || As Input || As Output
+|-
+| [[Cinepak]] || {{Yes}} || {{No}}
+|-
+| [[DV]] || {{Yes}} || {{No}}
+|-
+| [[FFV1]] || {{Yes}} || {{Yes}}
+|-
+| [[H.263]] || {{Yes}} || {{Yes}}
+|-
+| [[H.264/MPEG-4 AVC]] || {{Yes}} || {{Yes}}&lt;ref group=&quot;Note&quot;&gt;Using [[x264]]&lt;/ref&gt;
+|-
+| [[HuffYUV]] || {{Yes}} || {{Yes}}
+|-
+| [[MPEG-1]] || {{Yes}} || {{Yes}}
+|-
+| [[MPEG-2]] || {{Yes}} || {{Yes}}
+|-
+| [[MPEG-4 Part 2]]&lt;ref group=&quot;Note&quot;&gt;Both ''Simple Profile'' and ''Advanced Simple Profile''&lt;/ref&gt;
+| {{Yes}}&lt;ref group=&quot;Note&quot;&gt;Supported codec [[FourCC]]s: DIVX, DX50, XVID, FMP4, M4S2&lt;/ref&gt;
+| {{Yes}}&lt;ref group=&quot;Note&quot;&gt;Using [[FFmpeg]] or [[Xvid]]&lt;/ref&gt;
+|-
+| [[Motion JPEG]] || {{Yes}} || {{Yes}}
+|-
+| MSMPEG-4 v2&lt;ref group=&quot;Note&quot;&gt;FourCC: DIV3&lt;/ref&gt; || {{Yes}} || {{No}}
+|-
+| Raw video â [[RGB]] || {{Yes}} || {{No}}
+|-
+| Raw video â [[YV12]] || {{Yes}} || {{No}}
+|-
+| Snow || {{No}} || {{Yes}}
+|-
+| [[Sorenson codec|Sorenson Video 3 (SVQ3)]] || {{Yes}} || {{No}}
+|-
+| [[VC-1]]&lt;ref group=&quot;Note&quot;&gt;FourCC: WMV3&lt;/ref&gt; || {{Yes}} || {{No}}
+|-
+| [[VP3]] || {{Yes}} || {{No}}
+|-
+| [[VP6]] || {{Yes}}&lt;ref group=&quot;Note&quot;&gt;Through [[libavcodec]]&lt;/ref&gt; || {{No}}
+|-
+| [[Windows Media Video|Windows Media Video 8]]&lt;ref group=&quot;Note&quot;&gt;FourCC: WMV2&lt;/ref&gt; || {{Yes}} || {{No}}
+|-
+| Y800 &lt;!-- Whatever it is --&gt; || {{Yes}} || {{Yes}}
+|}
+
+{| class=&quot;wikitable&quot;
+|+ Audio formats&lt;ref&gt;{{Cite web
+  |url = http://www.avidemux.org/admWiki/doku.php?id=general:audio_decoders
+  |title = Audio decoders
+  |work = Avidemux wiki documentation
+  |publisher = Avidemux
+  |date = 16 April 2010
+  |accessdate = 23 May 2011
+}}&lt;/ref&gt;&lt;ref&gt;{{Cite web
+  |url = http://www.avidemux.org/admWiki/doku.php?id=general:audio_encoders
+  |title = Audio encoders
+  |work = Avidemux wiki documentation
+  |publisher = Avidemux
+  |date = 15 April 2010
+  |accessdate = 23 May 2011
+}}&lt;/ref&gt;
+|-
+! Name || As Input || As Output
+|-
+| [[Adaptive Multi-Rate audio codec|Adaptive Multi-Rate â Narrow Band]] (AMR-NB)|| {{Yes}} || {{No}}
+|-
+| [[Advanced Audio Coding]] (AAC) || {{Yes}} || {{Yes}}
+|-
+| [[Dolby Digital|AC-3]] || {{Yes}} || {{Yes}}
+|-
+| [[DTS (sound system)|DTS]] || {{Yes}} || {{No}}
+|-
+| [[Linear pulse code modulation]] (LPCM) || {{No}} || {{Yes}}
+|-
+| [[MPEG-1 Audio Layer II|MP2]] || {{Yes}} || {{Yes}}
+|-
+| [[MP3]] || {{Yes}} || {{Yes}}
+|-
+| [[Pulse-code modulation]] (PCM) || {{No}} || {{Yes}}
+|-
+| [[Vorbis]] || {{Yes}} || {{Yes}}
+|}
+
+== Comparison ==
+{{Unreferenced section|date=July 2010}}
+Avidemux can be compared with [[VirtualDub]] or [[VirtualDubMod]]. While it cannot do everything that VirtualDub can, Avidemux can do things that its Windows-only counterpart cannot. It has native support for OGM, MP4 and Matroska files, direct read input for various types of [[MPEG]] files, and many other video formats and containers. It offers [[MPEG]] editing and requantization. It also has built-in subtitle handling.
+
+Avidemux's features and functions are comparable to VirtualDub, but it has also been criticized for a poor user interface. Due to Avidemux's [[Thread (computer science)|multithreading]] features and native support for [[x86-64]], it was capable of outperforming VirtualDub in certain respects for several years.
+
+Avidemux primarily uses its GUI to perform tasks. This means that it is capable of doing many things that non-[[GUI]] users would otherwise have to do using command line tools such as [[MEncoder]] or [[Transcode (software)|Transcode]].
+
+== See also ==
+{{Portal|Free software}}
+* [[List of video editing software]]
+* [[Comparison of free video converters]]
+* [[Non-linear editing system]]
+* [[FFmpeg]]
+
+
+==Notes==
+{{Reflist|group=&quot;Note&quot;}}
+
+==References==
+{{Reflist}}
+
+==Further reading==
+*{{cite book |last=Rankin |first=Kyle |year=2006 |title=Linux Multimedia Hacks |publisher=O'Reilly Media, Inc |isbn=9780596100766 |pages=189â190, 221â222}}
+*{{cite book |last=Montabone |first=Sebastian |year=2010 |title=Beginning Digital Image Processing: Using Free Tools for Photographers |publisher=Apress |isbn=9781430228417 |pages=235â253 |chapter=Chapter 10: Movie Editing}}
+
+==External links==
+{{commonscat|Avidemux}}
+*{{Official|http://www.avidemux.org}}
+{{Video editors}}
+
+[[Category:Free video software]]
+[[Category:Video editing software]]
+[[Category:GTK+]]
+[[Category:Free software programmed in C++]]
+[[Category:Cross-platform software]]
+[[Category:Software that uses Qt]]
+
+[[ca:Avidemux]]
+[[de:Avidemux]]
+[[es:Avidemux]]
+[[fr:Avidemux]]
+[[ko:Avidemux]]
+[[it:Avidemux]]
+[[nl:Avidemux]]
+[[ja:Avidemux]]
+[[pt:Avidemux]]
+[[ru:Avidemux]]
+[[sv:Avidemux]]
+[[uk:Avidemux]]
+[[zh:Avidemux]]</rev></revisions></page></pages></query></api>

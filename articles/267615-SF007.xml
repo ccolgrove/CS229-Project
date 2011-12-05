@@ -1,0 +1,81 @@
+<?xml version="1.0"?><api><query><pages><page pageid="267615" ns="0" title="Procmail"><revisions><rev xml:space="preserve">{{lowercase|procmail}}
+{{Infobox software
+| name = procmail
+| logo =
+| screenshot =
+| caption =
+| author = Stephen R. van den Berg
+| developer = Philip A. Guenther
+| released = December 7, 1990
+| latest release version = 3.22
+| latest release date = September 10, 2001
+| latest preview version =
+| latest preview date =
+| operating system = Any [[Unix-like]]
+| platform = [[Cross-platform]]
+| genre = [[Mail filter]]
+| license = [[GNU General Public License|GPL]] or [[Artistic License]]
+| website = [http://www.procmail.org/ www.procmail.org]
+| status = Mothballed
+}}
+{{Portal|Free software}}
+'''procmail''' is a [[mail delivery agent]] (MDA) capable of sorting incoming mail into various directories and [[mail filter|filtering out]] spam messages. Procmail is widely used on [[Unix]]-based systems and stable, but no longer maintained; users who wish a maintained program are advised to use an alternative MDA, such as [[maildrop]].
+
+==Invocation==
+The procmail [[mail delivery agent]] is generally not started from the command line, but is usually invoked by mail delivery subsystems, such as a [[mail transport agent]] (like [[Sendmail]] or [[Postfix (software)|Postfix]]), or from a [[mail retrieval agent]] (such as [[fetchmail]]).
+This makes the mail processing event-driven.  The companion-tool '''formail''' allows procmail to be used in batch-processing on mail that already is in a user's mailbox.
+
+==Recipes==
+The procmail agent uses '''recipes''', to determine where to deliver the various mail messages.
+
+===Elements of a recipe===
+Each recipe that procmail uses consists of:
+* mode
+* conditions
+* action
+
+===Recipes can be conditional or unconditional===
+Recipes used by procmail can be conditional or unconditional. If the conditions are left out, the recipe is unconditional.
+
+===Types of recipes===
+Procmail has two kinds of recipes:
+* Delivering recipes
+* Non-delivering recipes
+
+===Processing of recipes===
+Recipes are read from top to bottom. The first delivering recipe terminates the delivery process (unless the mode flag specifies otherwise).
+
+==Conditions==
+Conditions are usually extended [[regular expressions]], although there are other forms of condition also.
+
+==Basic operation==
+The procmail tool reads mail messages given to it from standard input. The procmail tool will process the recipes before distributing the mail messages into the appropriate mailboxes.
+
+==Other operations==
+Other common operations carried out with procmail include filtering and sorting of emails into different folders according to keywords in from, to, subject, text of the mail, or sending autoreplies, but more sophisticated operations
+are also possible.
+
+===Spam filtering===
+A common practice is to let procmail call an external [[Anti-spam techniques (e-mail)|spam filter program]], such as [[SpamAssassin]]. This method can allow for spam to be filtered or even deleted.
+
+=== Managing mailing lists ===
+The procmail developers have built a [[mailing list manager]] called [[SmartList]] on top of procmail.
+
+==Further reading==
+* Martin McCarthy, ''The Procmail Companion'', Addison-Wesley, S. 256, November 2001, ISBN 0-201-73790-6
+
+==External links==
+*[http://www.procmail.org/ Official website]
+*[http://procmail.markmail.org/ Searchable procmail mailing list archives]
+
+[[Category:Mail delivery agents]]
+[[Category:Cross-platform software]]
+
+{{Unix-stub}}
+{{network-software-stub}}
+
+[[de:Procmail]]
+[[fr:Procmail]]
+[[it:Procmail]]
+[[li:Procmail]]
+[[ru:Procmail]]</rev></revisions></page></pages></query></api>

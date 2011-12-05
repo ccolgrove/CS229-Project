@@ -1,0 +1,145 @@
+<?xml version="1.0"?><api><query><pages><page pageid="431270" ns="0" title="Digital audio workstation"><revisions><rev xml:space="preserve">{{no footnotes|date=November 2010}}
+A '''digital audio workstation''' ('''DAW''') is an electronic system designed solely or primarily for recording, editing and playing back digital audio.  DAWs were originally [[Magnetic tape|tape]]-less, [[microprocessor]]-based systems such as the [[Synclavier]] and [[Fairlight CMI]]. Modern DAWs are software running on computers with audio interface hardware.&lt;ref&gt;[http://www.samash.com/opencms/opencms/samash/buyers-guides/recording-software-digital-audio-workstation.html?cm_sp=Buyers+Guides-_-Home+Recording+Buyers+Guides-_-DAW+Software/ Digital Audio Workstations (DAW) Software] Sam Ash Resource Center{{Better citation|reason= commercial website; a published source would be better}}&lt;/ref&gt;
+
+===Integrated DAW===
+{{See also|hard disk recorder}} An integrated DAW consists of a [[mixing console]], control surface, audio converter, and data storage in one device. Integrated DAWs were more popular before personal computers became powerful enough to run DAW software. As computer power increased and price decreased, the popularity of the costly integrated systems with [[console automation]] dropped. Systems such as the Orban [[Audicy]] once flourished at [[radio station]]s and [[television station]]. Today, some systems still offer computer-less arranging and recording features with a full [[graphical user interface]] (GUI).
+
+===Software DAW===
+{{See also|Audio sequencer|Music sequencer}}
+A computer-based DAW has four basic components: a [[computer]], a [[sound converter]] (also called a sound card or [[audio interface]]), a [[digital audio editor]] software, and at least one input device for adding or modifying musical note data.  This could be as simple as a mouse, and as sophisticated as a MIDI controller keyboard, or an automated fader board for mixing track volumes. The computer acts as a host for the sound card and software and provides processing power for audio editing. The sound card (if used) or external audio interface typically converts analog audio signals into digital form, and for playback converting digital to analog audio; it may also assist in further processing the audio. The software controls all related hardware components and provides a user interface to allow for recording, editing, and playback. Most computer-based DAWs have extensive [[MIDI]] recording, editing, and playback capabilities, and some even have minor video-related features.
+
+Simple [[smartphone]]-based DAWs, called Mobile Audio Workstation (MAWs), are also available, used for example by journalists for recording and editing on location.
+
+===Common functionality===
+As software systems, DAWs could be designed with any user interface, but generally they are based on a [[multitrack tape recorder]] metaphor, making it easier for [[recording engineer]]s and [[musicians]] already familiar with using tape recorders to become familiar with the new systems. Therefore, computer-based DAWs tend to have a standard layout which includes transport controls (play, rewind, record, etc.), track controls and/or a mixer, and a [[waveform]] display.  In single-track DAWs, only one ([[monaural|mono]] or [[stereophonic sound|stereo]] form) sound is displayed at a time.
+
+[[Multitrack recording|Multitrack]] DAWs support operations on multiple tracks at once. Like a [[mixing console]], each track typically has controls that allow the user to adjust the overall [[loudness|volume]] and stereo balance (pan) of the sound on each track. In a traditional recording studio additional processing is physically plugged in to the audio signal path. However, a DAW can also route in software or use software [[plugins]] to process the sound on a track.
+
+DAWs are capable of many of the same functions as a traditional tape-based studio setup, and in recent years have almost completely replaced them.  Modern advanced recording studios may have multiple types of DAWs in them and it is not uncommon for a sound engineer and/or musician to travel with a portable laptop-based DAW, although interoperability between different DAWs is poor.
+
+Perhaps the most significant feature available from a DAW that is not available in analogue recording is the ability to 'undo' a previous action.  Undo makes it much easier to avoid accidentally permanently erasing or recording over a previous recording.  If a mistake is made, the undo command is used to conveniently revert the changed data to a previous state.  Cut, Copy, Paste, and Undo are familiar and common computer commands and usually available in DAWs in some form.
+
+Commonly DAWs feature some form of [[automation]], often performed through &quot;[[Envelope (disambiguation)|envelopes]]&quot;.  Envelopes are procedural line segment-based or curve-based interactive graphs.  The lines and curves of the automation graph are joined by or comprise adjustable points.  By creating and adjusting multiple points along a waveform or control events, the user can specify parameters of the output over time (e.g., volume or pan).  Automation data may also be directly derived from human gestures recorded by a [[control surface]] or [[Controller (computing)|controller]].  MIDI is a common data protocol used for transferring such gestures to the DAW.
+
+MIDI recording, editing, and playback is increasingly incorporated into modern DAWs of all types, as is [[Synchronization]] with other audio and/or video tools.
+
+===History===
+The earliest attempts at creating digital audio workstations in the 1970s and 80s were limited by factors such as the high price of storage, vastly smaller slower processing and disk speeds available.  But in the face of this, the company [[Soundstream]] (who previously came to prominence in the early days of digital audio by releasing one of the first commercially available digital audio tape recorders in 1977), built what could be considered the first digital audio workstation in 1978, using some of the most current computer hardware of the time.  The ''Digital Editing System'', as Soundstream called it, consisted of a [[Digital Equipment Corporation|DEC]] [[PDP-11|PDP-11/60]] [[minicomputer]] running a custom software package called DAP (Digital Audio Processor), a [[Braegen]] 14&quot;-platter hard disk drive, a storage oscilloscope to display audio waveforms to be edited, a [[video display terminal]] for controlling the system, and interface cards that plugged into the PDP-11's [[Unibus]] slots (the ''Digital Audio Interface'', or ''DAI'') that provided analog and digital audio input and output for interfacing to both Soundstream's digital recorders and conventional analog tape recorders as well.  The DAP software could perform edits to the audio recorded on the system's hard disks, as well as provide effects such as crossfades.
+
+By the late 1980s, a number of consumer level computers such as the [[Apple Macintosh]], [[Atari ST]] and the [[Commodore Amiga]] began to have enough power to handle the task of digital audio editing.  [[Macromedia]]'s Soundedit, with Microdeal's [[Replay Professional]] and [[Digidesign]]'s &quot;Sound Tools&quot; and &quot;Sound Designer&quot; were used to edit audio samples for sampling keyboards like the [[E-mu Emulator#The Emulator II|E-mu Emulator II]] and the [[Akai S900]], and soon went on to be used for simple two track audio editing and [[CD]] [[mastering]] purposes. In 1994, a company in [[California]] called OSC produced a 4 track editing-recorder application called DECK that ran on Digidesign's hardware system, and which was employed in the production of [[The Residents]]' &quot;Freakshow&quot; LP; this combination of audio software and hardware was one of the earliest examples of what we today would call a DAW.
+
+Many major [[recording studios]] finally &quot;went digital&quot; after [[Digidesign]] introduced its Pro Tools software, modelled after the traditional method and signal flow present in almost all analog recording devices. At this time, most of the DAWs were Apple Mac based (e.g. Pro Tools, Studer Dyaxis, [[Sonic Solutions]]). Around 1992, the first Windows based DAWs started to emerge from companies such as [[Soundscape Digital Technology]] (which was later acquired by [[Mackie]] then by [[Solid State Logic|SSL]]), [[SADiE]], [[Echo Digital Audio]] and Spectral Synthesis. All the systems at this point used dedicated hardware for their audio processing.
+
+The first Windows based software-only product, introduced in 1993, was Samplitude Studio (which already existed in 1992 as an audio editor for the Commodore Amiga).
+
+In 1996, German company [[Steinberg]] introduced [[Cubase]] [[Virtual Studio Technology|VST]], which could record and play back up to 32 tracks of digital audio on an Apple Macintosh without need of any external [[Digital signal processor|DSP]] hardware. Cubase not only modelled a tape-like interface for recording and editing, but also modelled the entire mixing desk and effects rack common in analog studios. This revolutionised the DAW world, both in features and price tag, and was quickly imitated by most other contemporary DAW systems.
+
+===Free and open source software===
+[[Image:Qtractor-screenshot4.png|thumb|right|[[Qtractor]] screenshot]]
+
+There are many [[free and open-source software]] programs that can facilitate a DAW. These are often designed to run on a variety of [[operating system]]s and are usually developed non-commercially.
+
+The development of digital audio for [[Linux]] and [[BSD]] fostered technologies such as [[Advanced Linux Sound Architecture|ALSA]], which drives audio hardware, and [[JACK Audio Connection Kit|JACK]]. JACK allows any JACK-aware audio software to connect to any other audio software running on the system, such as connecting an ALSA- or [[Open Sound System|OSS]]-driven soundcard to a mixing and editing front-end, like [[Ardour]] or [[Rosegarden]]. In this way, JACK acts as a virtual audio [[patch bay]], and it can be configured to use a computer's resources in [[Real-time computing|real time]], with [[Flat memory model|dedicated memory]], and with various options that minimize the DAW's [[latency (audio)|latency]]. This kind of abstraction and configuration allows [[DJ]]s to use multiple programs for editing and synthesizing audio streams, or [[Computer multitasking|multitasking]] and [[duplexing]], without the need for analogue conversion, or [[asynchronous]] saving and reloading files, and ensures a high level of [[High fidelity|audio fidelity]].
+
+*[[Audacity]] is a free and open-source digital audio editor that can run on [[Mac OS X]], [[Microsoft Windows]], and Linux; it is particularly popular in the [[podcast]] community, and also has a large following among the visually impaired due to its keyboard interface.
+*[[Macaw music software|Macaw]] is a public domain source code music program that runs on [[Microsoft Windows]]. It features a large number of built in instrument synthesizers and effects, and it can load and play [[SoundFont]]s.
+*[[Rosegarden]] is a multi-featured audio application that includes [[audio mixing (recorded music)|audio mixing]] plugins, a [[Music notation|notation editor]], and [[MIDI]] [[matrix editor]]. The [[MusE]] Sequencer is a similarly featured audio application that includes an [[audio mixer]] and a [[MIDI sequencer]].
+Other open-source programs include [[Softsynth|virtual synthesizers]] and [[MIDI controller]]s, such as those provided by [[FluidSynth]] and [[TiMidity]]. Both can load SoundFonts to expand the voices and instruments available for synthesis and expand the ports and channels available to synthesizers. Such virtualization allows users to expand the traditional limitations of ADC-DAC hardware.
+
+The Linux Audio Development (LAD) mailing list is a major driving force in developing [[standardization|standards]], such as the [[LADSPA]], [[DSSI]] and [[LV2]] plugin architectures. The [[Virtual Studio Technology]] (VST) plugin standard is supported as an option by some such programs but is generally implemented as a separate plugin, not a built-in option, due to Steinberg's licensing scheme. Among others, the creators of Audacity provide an optional, somewhat minimalist, VST-to-LADSPA bridge plugin for their software, but it is a separate download.
+
+===Commercial systems===
+{{Div col|cols=3}}
+*[[Ableton Live]]
+*[[ACID Pro]]
+*[[Adobe Audition]]
+*[[AMS Neve]] Audiofile SCX
+*[[Cakewalk SONAR]]
+*[[Chaotic Daw]]
+*[[Dub Turbo]]
+*[[Digital Performer]]
+*[[Energy XT]]
+*[[FL Studio]]
+*[[GarageBand]]
+*[[Logic Pro]]
+*[[MadTracker]]
+*[[MAGIX Samplitude]]
+*[[MAGIX Sequoia]]
+*[[Mixcraft]]
+*[[MU.LAB]] (free version available)
+*[[MultitrackStudio]]
+*[[n-Track Studio]]
+*[[Orion Platinum]]
+*[[PreSonus Studio One]]
+*[[Pro Tools]]
+*[[Pyramix (music software)|Pyramix]]
+*[[REAPER]]
+*[[Renoise]]
+*[[Reason (software)|Reason]]
+*[[SAWStudio]]
+*[[Soundtrack Pro]]
+*[[SSL Soundscape]]
+*[[Steinberg Cubase]]
+*[[Steinberg Nuendo]]
+*[[Tracktion]]
+*[[Usine]]
+*[[Zynewave Podium]] (free version available)
+*[[Z-Maestro]]
+{{Div col end}}
+
+===Free and open source systems===
+
+*[[Ardour (software)|Ardour]]
+*[[Audacity]]
+*[[LMMS]]
+*[[MusE]]
+*[[Psycle]]
+*[[Qtractor]]
+*[[Rosegarden]]
+*[[Traverso DAW]]
+
+===See also===
+{{Portal|Computer Science}}
+&lt;!-- please keep list in alphabetical order --&gt;
+*[[Audio restoration]]
+*[[Broadcast automation]]
+*[[Comparison of digital audio editors]]
+*[[Console automation]]
+*[[Multitrack recording]]
+*[[Multitrack recording software]]
+*[[Music Workstation]]
+*[[Radio software]]
+
+===References===
+{{Reflist}}
+
+===External links===
+*[http://www.sweetwater.com/feature/daw/daw_defined.php Introduction to DAW]
+*[http://www.wikirecording.org/DAW WikiRecording's Guide to Digital Audio Workstations (DAWs)]
+*[http://synth.tk/daw/ A list of software DAWs, Sequencers, Hosts, etc.]
+*[http://daw-computers.com/ A basic explanation of a DAW system.]
+
+{{Music technology}}
+{{Digital audio workstations}}
+
+{{DEFAULTSORT:Digital Audio Workstation}}
+[[Category:Digital audio]]
+[[Category:Computer workstations]]
+[[Category:Workstations]]
+[[Category:Digital audio workstation software| ]]
+[[Category:Sound production technology]]
+
+[[ar:ÙØ­Ø·Ø© Ø¹ÙÙ ØµÙØªÙØ§Øª Ø±ÙÙÙØ©]]
+[[ca:EstaciÃ³ de treball d'Ã udio digital]]
+[[de:Digital Audio Workstation]]
+[[es:EstaciÃ³n de trabajo de audio digital]]
+[[fr:Station audio-numÃ©rique]]
+[[ko:ëì§í¸ ì¤ëì¤ ìí¬ì¤íì´ì]]
+[[it:Digital Audio Workstation]]
+[[nl:Digitaal audiomontagesysteem]]
+[[ja:ãã¸ã¿ã«ã»ãªã¼ãã£ãªã»ã¯ã¼ã¯ã¹ãã¼ã·ã§ã³]]
+[[pt:Digital audio workstation]]
+[[ru:Ð¦Ð¸ÑÑÐ¾Ð²Ð°Ñ Ð·Ð²ÑÐºÐ¾Ð²Ð°Ñ ÑÐ°Ð±Ð¾ÑÐ°Ñ ÑÑÐ°Ð½ÑÐ¸Ñ]]
+[[sv:Digital Audio Workstation]]
+[[tr:Dijital Ses Ä°Åleme Ä°stasyonu]]
+[[uk:Ð¦Ð¸ÑÑÐ¾Ð²Ð° Ð·Ð²ÑÐºÐ¾Ð²Ð° ÑÐ¾Ð±Ð¾ÑÐ° ÑÑÐ°Ð½ÑÑÑ]]</rev></revisions></page></pages></query></api>

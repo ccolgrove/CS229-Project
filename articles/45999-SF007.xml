@@ -1,0 +1,767 @@
+<?xml version="1.0"?><api><query><pages><page pageid="45999" ns="0" title="Gecko (layout engine)"><revisions><rev xml:space="preserve">{{Infobox software
+| name                   = Gecko
+| latest_release_version = 8.0
+| latest_release_date    = {{release date and age|2011|11|08}} &lt;ref&gt;http://www.mozilla.com/en-US/firefox/8.0/releasenotes/&lt;/ref&gt;
+| latest_preview_version = 10.0a2
+| latest_preview_date    = {{release date and age|2011|11|11}} &lt;ref&gt;http://blog.mozilla.com/futurereleases/2011/11/11/firefoxaurora10/&lt;/ref&gt;
+| developer              = [[Mozilla Foundation]] / [[Mozilla Corporation]]
+| programming_language   = [[C++]]
+| operating_system       = [[Cross-platform]]
+| genre                  = [[Layout engine]]
+| license                = [[Mozilla Public License|MPL]]/[[GNU General Public License|GPL]]/[[GNU Lesser General Public License|LGPL]]
+| website                = [[devmo:Gecko]]
+}}
+{{Portal|Free software}}
+
+'''Gecko''' is a [[free and open source]] [[layout engine]] used in many applications developed by [[Mozilla Foundation]] and the [[Mozilla Corporation]] (notably the [[Mozilla Firefox|Firefox]] web browser), as well as in many other open source software projects.
+
+It is designed to support [[Open standard|open]] [[web standards|Internet standards]], and is used by different applications to display [[web page]]s and, in some cases, an application's [[user interface]] itself (by rendering [[XML User Interface Language|XUL]]). Gecko offers a rich programming [[application programming interface|API]] that makes it suitable for a wide variety of roles in Internet-enabled applications, such as [[web browsers]], content presentation, and [[client/server]].&lt;ref&gt;[http://www.mozilla.org/projects/embedding/ Embedding Mozilla]&lt;/ref&gt;
+
+Gecko is written in [[C++]] and is [[cross-platform]], and runs on various [[operating system]]s including [[Berkeley Software Distribution|BSD]]s, [[Linux]], [[Mac OS X]], [[Solaris (operating system)|Solaris]], [[OS/2]], [[AIX]], [[OpenVMS]], and [[Microsoft Windows]]. Its development is now overseen by the Mozilla Foundation and is licensed by a [[tri-license]] of the [[Mozilla Public License]] (MPL), [[GNU General Public License]] (GPL) and [[GNU Lesser General Public License]] (LGPL).
+
+Gecko is the third most-common layout engine on the [[World Wide Web]], after [[Trident (layout engine)|Trident]] (used by [[Internet Explorer]] for Windows since [[Internet Explorer 4|version 4]]) and [[WebKit]] (used by [[Safari (web browser)|Safari]] and [[Google Chrome]]), and followed by [[Presto (layout engine)|Presto]] (used by [[Opera (web browser)|Opera]]).&lt;ref&gt;{{cite web
+ | url       = http://www.statowl.com/web_browser_render_engine.php
+ | title     = Render Engine Market Share
+ | publisher = StatOwl.com
+}}&lt;/ref&gt;&lt;ref&gt;{{cite web
+ | url       = http://netmarketshare.com/browser-market-share.aspx?qprid=0&amp;qpcustomd=0
+ | title     = Desktop Browser Market Share
+ | publisher = Net Applications
+}}&lt;/ref&gt;
+
+
+
+
+
+==History==
+Development of the layout engine now known as Gecko began at [[Netscape Communications Corporation|Netscape]] in 1997, following the company's purchase of [[DigitalStyle]]. The existing Netscape rendering engine, originally written for [[Netscape Navigator]] 1.0 and upgraded through the years, was widely considered to be inferior to the one used in Microsoft Internet Explorer. It was slow, did not comply well with W3C standards, had limited support for [[dynamic HTML]] and lacked features such as incremental reflow (when the layout engine rearranges elements on the screen as new data is downloaded and added to the page). The new layout engine was developed in parallel with the old, with the intention being to integrate it into Netscape Communicator when it was mature and stable. At least one more major revision of Netscape was expected to be released with the old layout engine before the switch.
+
+After the launch of the Mozilla project in early 1998, the new layout engine code was released under an open-source license. Originally unveiled as ''Raptor'', the name had to be changed to ''NGLayout'' (next generation layout) due to [[trademark]] problems. Netscape later rebranded NGLayout as ''Gecko''. While [[Mozilla Organization]] (the forerunner of the [[Mozilla Foundation]]) initially continued to use the NGLayout name (Gecko was a Netscape trademark),&lt;ref&gt;[http://www.mozilla.org/newlayout/gecko.html nglayout project: identity crisis]&lt;/ref&gt; eventually the Gecko branding won out.
+
+In October 1998, Netscape announced that its next browser would use Gecko (which was still called NGLayout at the time) rather than the old layout engine, requiring large parts of the application to be rewritten. While this decision was popular with web standards advocates, it was largely unpopular with Netscape developers, who were unhappy with the six months given for the rewrite.&lt;ref&gt;[http://arstechnica.com/articles/columns/linux/collins-interview.ars/2 Ars Technica interviews Scott Collins]&lt;/ref&gt; It also meant that most of the work done for [[Netscape 5|Netscape Communicator 5.0]] (including development on the [[Mariner (layout engine)|Mariner]] improvements to the old layout engine) had to be abandoned. Netscape 6, the first Netscape release to incorporate Gecko, was released in November 2000 (the name Netscape 5 was never used).
+
+As Gecko development continued, other applications and embedders began to make use of it. [[America Online]], by this time Netscape's parent company, eventually adopted it for use in [[CompuServe]] 7.0 and AOL for Mac OS X (these products had previously embedded Internet Explorer). However, with the exception of a few [[development stage|betas]], Gecko was never used in the main [[Microsoft Windows]] AOL client.
+
+On July 15, 2003, AOL laid off the remaining Gecko developers and the Mozilla Foundation (formed on the same day) became the main steward of Gecko development. Today, Gecko is developed by employees of the [[Mozilla Corporation]], employees of companies that contribute to the Mozilla project, and volunteers.
+
+==Standards support==
+{{Firefox TOC}}
+
+From the outset, Gecko was designed to support open Internet standards. Some of the standards Gecko supports include:
+
+*[[HTML]]4 (partial support for [[HTML5]])
+*[[Cascading Style Sheets|CSS]] Level 2.1 (partial support for CSS 3)&lt;ref&gt;[https://developer.mozilla.org/en/docs/Mozilla_CSS_support_chart Mozilla CSS support chart]&lt;/ref&gt;
+*[[JavaScript]] 1.8 ([[ECMAScript]] 3, and partial support for ECMAScript 5), implemented in [[SpiderMonkey]]
+*[[Document Object Model|DOM]] Level 1 and 2 (partial support for DOM 3)
+*[[XML]] 1.0
+*[[XHTML]] 1.0
+*[[XSLT]] and [[XPath]], implemented in [[TransforMiiX]]
+*[[MathML]]
+*[[XForms]] (via an official extension)
+*[[Resource Description Framework|RDF]]
+
+Gecko also partially supports [[Scalable Vector Graphics|SVG]] 1.1.&lt;ref name=&quot;svg1.1support&quot;&gt;The SVG font, color profile, animation, view, and cursor modules are yet to be implemented and the filter and text modules are only partially implemented. The extensibility module is also implemented but is currently disabled&lt;/ref&gt;&lt;ref&gt;[http://www.mozilla.org/projects/svg/status.html Mozilla SVG Status]&lt;/ref&gt;
+
+In order to support [[web page]]s designed for legacy versions of Netscape and Internet Explorer, Gecko supports [[document type declaration|DOCTYPE]] switching. Documents with a modern DOCTYPE are rendered in standards compliance mode, which follows the [[W3C]] standards strictly. Documents that have no DOCTYPE or an older DOCTYPE are rendered in [[quirks mode]], which emulates some of the non-standard oddities of [[Netscape Communicator]] 4.x; however, some of the 4.x features (such as [[Layer (HTML tag)|layers]]) are not supported.
+
+Gecko also has limited support for some non-standard Internet Explorer features, such as the [[marquee element]] and the &lt;code&gt;document.all&lt;/code&gt; property (though pages explicitly testing for &lt;code&gt;document.all&lt;/code&gt; will be told it is not supported). While this increases compatibility with many documents designed only for Internet Explorer, some purists argue that it harms the cause of standards [[Technology evangelist|evangelism]].
+
+==Usage==
+Gecko is primarily used in [[web browser]]s, the earliest being [[Netscape 6]] and [[Mozilla Application Suite]] (later renamed [[SeaMonkey]]). It is also used in other Mozilla web browser derivatives such as [[Mozilla Firefox|Firefox]], [[Camino]], [[Flock (web browser)|Flock]],  [[K-Meleon]] and the implementation of [[Internet Explorer]] that is part of [[Wine (software)|Wine]].&lt;ref name=&quot;IE Wine Gecko&quot;&gt;{{cite web |url=http://wiki.winehq.org/Gecko |title=IE Uses Gecko Under Wine
+|publisher=Wine Wiki |accessdate=2009-09-14}}&lt;/ref&gt;
+
+Google's picture-organization software [[Picasa]] (for Linux) is based on Gecko.&lt;ref name=&quot;picasa&quot;&gt;{{cite web |url=http://picasa.google.com/linux/download.html#picasa30 |title=Picasa 3.0 for Linux |publisher=Google |accessdate=2008-12-28}}&lt;/ref&gt;
+
+[[DevHelp]], a GTK+/GNOME browser for API documentation, uses Gecko for rendering docs.&lt;ref name=&quot;DevHelp&quot;&gt;{{cite web |url=http://packages.debian.org/lenny/devhelp |title=Official package devhelp (0.19.1-6 and others) on Debian Lenny |publisher=Debian Project |date= |accessdate=2009-08-12}}&lt;/ref&gt;
+
+Other products not included in the table include [[Swiftfox]], [[Mozilla Firefox, Portable Edition|Portable Firefox]], [[Firefox for mobile|Fennec]], [[Conkeror]], [[Classilla]], [[TenFourFox]], [[Hewlett-Packard|HP]] Secure Web Browser, Oxygen, [[Minimo]], [[My Internet Browser]], Sylera (for mobile), [[Mozilla Thunderbird|Thunderbird (email)]], [[Mozilla Sunbird|Sunbird (calendar)]] and [http://www.instantbird.com/ Instantbird].
+
+Gecko is also used by [[Sugar (GUI)|Sugar]] for the [[OLPC XO-1]] computer.&lt;ref name=&quot;sugarui&quot;&gt;{{Cite news |url=http://www.infoworld.com/article/07/01/03/Hnsugarinterface_1.html
+|title=One Laptop Per Child readies 'Sugar' interface |last=Martens |first=China |publisher=IDG News Service |date=2007-01-03 |accessdate=2007-12-28}}&lt;/ref&gt; Gecko is used as a complete implementation of the [[XUL]] ([[XML]] User Interface Language). Gecko currently defines the XUL specification.
+
+The following table compares the different versions of Gecko:
+{| class=&quot;wikitable&quot; style=&quot;width: 70%; text-align: left&quot;
+|-
+! rowspan=&quot;2&quot; | Gecko version
+! colspan=&quot;7&quot; | All platforms
+! colspan=&quot;4&quot; | Windows only
+!| Mac only
+! colspan=&quot;3&quot; | [[*nix]] only
+!| [[*nix]] mobile
+|-
+| [[Mozilla Firefox|Firefox]]
+| [[Netscape]] &lt;ref name=&quot;discontinued&quot; group=&quot;u&quot; /&gt;
+| [[Mozilla Application Suite|Mozilla]] &lt;ref name=&quot;discontinued&quot; group=&quot;u&quot; /&gt;
+| [[SeaMonkey]]
+| [[Flock (web browser)|Flock]]
+&lt;ref name=&quot;discontinued&quot; group=&quot;u&quot; /&gt;
+| [[Songbird (software)|Songbird]]
+| [[Beonex Communicator|Beonex]]
+&lt;ref name=&quot;discontinued&quot; group=&quot;u&quot; /&gt;
+| [[Lunascape (web browser)|Lunascape]] &lt;ref name=&quot;webkit_alt&quot; group=&quot;u&quot; /&gt;&lt;ref name=&quot;trident_alt&quot; group=&quot;u&quot; /&gt;
+| [[K-Meleon]]
+| [[My Internet Browser]]
+| [[Pale Moon (web browser)|Pale Moon]]
+| [[Camino]]
+| [[Galeon]]
+&lt;ref name=&quot;discontinued&quot; group=&quot;u&quot; /&gt;
+| [[Epiphany (browser)|Epiphany]] &lt;ref name=&quot;dropped&quot; group=&quot;u&quot; /&gt;&lt;ref name=&quot;webkit_alt&quot; group=&quot;u&quot; /&gt;
+| [[Kazehakase]] &lt;ref name=&quot;webkit_alt&quot; group=&quot;u&quot; /&gt;
+| [[MicroB]]
+|-
+| 0.6
+|
+| [[Netscape 6|6.0]]
+| 0.6
+|
+|
+|
+| 0.6&lt;ref name=&quot;newsarchive&quot; /&gt;
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+| 0.8
+|
+|
+| 0.8
+|
+|
+|
+|
+|
+| 0.3
+|
+|
+|
+|
+|
+|
+|
+|-
+| 0.9.2
+|
+| 6.1
+| 0.9.2
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+| 0.9.4
+|
+| 6.2
+| 0.9.4
+|
+|
+|
+|
+|
+| 0.5
+|
+|
+|
+|
+|
+|
+|
+|-
+| 0.9.4.1
+|
+| 6.2.2
+| 0.9.4.1
+|
+|
+|
+| 0.7&lt;ref name=&quot;newsarchive&quot; /&gt;
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+| 0.9.5
+|
+|
+| 0.9.5
+|
+|
+|
+|
+|
+| 0.6
+|
+|
+|
+|
+|
+|
+|
+|-
+| 0.9.7
+|
+|
+| 0.9.7
+|
+|
+|
+|
+|
+|
+|
+|
+|
+| 1.0.2
+|
+|
+|
+|-
+| 1.0.1
+|
+| [[Netscape (version 7)|7.0]]
+| 1.0.1
+|
+|
+|
+| 0.8.1&lt;ref&gt;{{cite web|url=http://www.beonex.com/communicator/version/0.8/release-notes/security-alert/081.html|title=0.8.1|first=Ben|accessdate=29 January 2011|last=Bucksch}}&lt;/ref&gt;
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+| 1.0.2
+|
+| 
+| 1.0.2
+|
+|
+|
+| 0.8.2&lt;ref&gt;{{cite web|url=http://www.beonex.com/communicator/version/0.8/release-notes/|title=Release-notes|first=Ben|accessdate=29 January 2011|last=Bucksch}}&lt;/ref&gt;
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+| 1.1
+|
+|
+| 1.1
+|
+|
+|
+| 0.9pre&lt;ref name=&quot;newsarchive&quot;&gt;{{cite web|url=http://www.beonex.com/support/announce/news.html|title=News|first=Ben|last=Bucksch|accessdate=29 January 2011|date=12 March 2003}}&lt;/ref&gt;
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+| 1.2b
+| 0.1
+|
+| 1.2b
+|
+|
+|
+|
+|
+| 0.7
+|
+|
+|
+|
+|
+|
+|
+|-
+| 1.3a
+| 0.5
+|
+| 1.3a
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+| 1.4
+|
+| 7.1
+| 1.4
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+| 1.4.1
+|
+|
+| 1.4.1
+|
+|
+|
+|
+|
+|
+|
+|
+|
+| 1.0.4
+|
+|
+|
+|-
+| 1.5
+| 0.7
+|
+| 1.5
+|
+|
+|
+|
+|
+| 0.8
+|
+|
+|
+|
+|
+|
+|
+|-
+| 1.7
+| 1.0
+|
+| 1.7
+|
+|
+|
+|
+|
+|
+|
+|
+|
+| 2.0
+|
+| 0.2.8
+|
+|-
+| 1.7.2
+|
+| 7.2
+| 1.7.2
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+| 1.7.5
+|
+| [[Netscape Browser|8.0.2]]&lt;ref name=&quot;trident_alt&quot; group=&quot;u&quot; /&gt;
+| 1.7.5
+|
+|
+|
+|
+|
+| 0.9
+|
+|
+|
+|
+|
+|
+|
+|-
+| 1.8.0
+| 1.5
+|
+|
+| 1.0
+| 0.7
+| 0.2
+|
+|
+| 1.0
+| 1.0
+|
+| 1.0
+|
+|
+|
+|
+|-
+| 1.8.1
+| [[Mozilla Firefox 2|2.0]]
+| [[Netscape 9|9.0]]
+|
+| 1.1
+| 1.0
+|
+|
+| 4.8
+| 1.1, 1.5
+| 2.0
+|
+| 1.6.5
+|
+| 2.16
+|
+|
+|-
+| 1.9.0
+| [[Mozilla Firefox 3|3.0]]
+|
+|
+|
+| 2.0 - 2.6
+| 0.5 - 1.4
+|
+|
+|
+| 2.2
+|
+| 2.0
+|
+| 2.22
+|
+|
+|-
+| 1.9.1
+| [[Mozilla Firefox 3.5|3.5]]
+|
+|
+| 2.0
+|
+|
+|
+| 5.0
+| 1.6
+| 3.0
+| 3.5
+|
+|
+|
+|
+|
+|-
+| 1.9.2
+| [[Mozilla Firefox 3.6|3.6]]
+|
+|
+|
+|
+| 1.9.3
+|
+| 6.3
+| 1.7
+| 4.0
+| 3.6&lt;ref name=&quot;continued&quot; group=&quot;u&quot; /&gt;
+| 2.1a1 &lt;ref&gt;{{cite web|url=http://wiki.caminobrowser.org/Releases:2.1a1:Notes|title=Camino 2.1a1 Release Notes|accessdate=2 February 2011}}&lt;/ref&gt;
+|
+|
+|
+| 1.7.4.8 &lt;ref name=&quot;MicroB_1748&quot; group=&quot;u&quot; /&gt;
+|-
+| 2.0&lt;ref name=&quot;gecko_2.0&quot; group=&quot;u&quot; /&gt;
+| [[Mozilla Firefox 4|4.0]]
+|
+|
+| 2.1
+|
+|
+|
+|
+|
+|
+| 4.0
+|
+|
+|
+|
+|
+|-
+| 5.0&lt;ref name=&quot;urm&quot; group=&quot;u&quot; /&gt;
+| [[Mozilla Firefox 5|5.0]]
+|
+|
+| 2.2
+|
+|
+|
+|
+|
+|
+| 5.0
+|
+|
+|
+|
+|
+|-
+| 6.0&lt;ref name=&quot;urm&quot; group=&quot;u&quot; /&gt;
+| [[Mozilla Firefox 6|6.0]]
+|
+|
+| 2.3
+|
+|
+|
+|
+|
+|
+| 6.0
+|
+|
+|
+|
+|
+|-
+| 7.0&lt;ref name=&quot;urm&quot; group=&quot;u&quot; /&gt;
+| [[Mozilla Firefox 7|7.0]]
+|
+|
+| 2.4
+|
+|
+|
+|
+|
+|
+| 7.0
+|
+|
+|
+|
+|
+|-
+| 8.0&lt;ref name=&quot;urm&quot; group=&quot;u&quot; /&gt;
+| [[Mozilla Firefox 8|8.0a2]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+| 9.0&lt;ref name=&quot;urm&quot; group=&quot;u&quot; /&gt;
+| [[Mozilla Firefox 9|9.0a1]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+
+|-
+! rowspan=&quot;2&quot; | Gecko version
+| [[Mozilla Firefox|Firefox]]
+| [[Netscape]] &lt;ref name=&quot;discontinued&quot; group=&quot;u&quot; /&gt;
+| [[Mozilla Application Suite|Mozilla]] &lt;ref name=&quot;discontinued&quot; group=&quot;u&quot; /&gt;
+| [[SeaMonkey]]
+| [[Flock (web browser)|Flock]]
+&lt;ref name=&quot;discontinued&quot; group=&quot;u&quot; /&gt;
+| [[Songbird (software)|Songbird]]
+| [[Beonex Communicator|Beonex]]
+&lt;ref name=&quot;discontinued&quot; group=&quot;u&quot; /&gt;
+| [[Lunascape (web browser)|Lunascape]] &lt;ref name=&quot;webkit_alt&quot; group=&quot;u&quot; /&gt;&lt;ref name=&quot;trident_alt&quot; group=&quot;u&quot; /&gt;
+| [[K-Meleon]]
+| [[My Internet Browser]]
+| [[Pale Moon (web browser)|Pale Moon]]
+| [[Camino]]
+| [[Galeon]]
+&lt;ref name=&quot;discontinued&quot; group=&quot;u&quot; /&gt;
+| [[Epiphany (browser)|Epiphany]] &lt;ref name=&quot;dropped&quot; group=&quot;u&quot; /&gt;&lt;ref name=&quot;webkit_alt&quot; group=&quot;u&quot; /&gt;
+| [[Kazehakase]] &lt;ref name=&quot;webkit_alt&quot; group=&quot;u&quot; /&gt;
+| [[MicroB]]
+|-
+! colspan=&quot;7&quot; | All platforms
+! colspan=&quot;4&quot; | Windows only
+!| Mac only
+! colspan=&quot;3&quot; | [[*nix]] only
+!| [[*nix]] mobile
+|}
+
+{{Reflist|group=&quot;u&quot;|refs=
+&lt;ref name=&quot;discontinued&quot;&gt;Browser development has been discontinued.&lt;/ref&gt;
+&lt;ref name=&quot;dropped&quot;&gt;Browser has dropped the Gecko layout engine.&lt;/ref&gt;
+&lt;ref name=&quot;webkit_alt&quot;&gt;Browser also includes WebKit as an alternative rendering engine.&lt;/ref&gt;
+&lt;ref name=&quot;trident_alt&quot;&gt;Browser also includes Trident as an alternative rendering engine.&lt;/ref&gt;
+&lt;ref name=&quot;MicroB_1748&quot;&gt;Uses Gecko 1.9.2.3pre on [[Maemo 5|Fremantle 1.3]].&lt;/ref&gt;
+&lt;ref name=&quot;gecko_2.0&quot;&gt;Alpha and Nightly builds until June 28, 2010 used Firefox version 3.7 and Gecko version 1.9.3.&lt;/ref&gt;
+&lt;ref name=&quot;urm&quot;&gt;Starting with Firefox 5, the Gecko version numbering [https://developer.mozilla.org/en/Gecko#Versions_of_Gecko will be the same as the Firefox version number].&lt;/ref&gt;
+&lt;ref name=&quot;continued&quot;&gt;Development of this branch/version actively continued.&lt;/ref&gt;
+}}
+
+==Criticism==
+{{Expand section|date=September 2009}}
+One of the primary reasons for slower market share adoption is the complexity of the Gecko code  which aims to provide much more than just an HTML renderer for [[web browser]].&lt;ref name=&quot;shaver&quot;&gt;{{cite web
+ | url         = http://off.net/~shaver/diary/archives/2003_01.html#000145
+ | archiveurl  = http://www.webcitation.org/5jaol2a4W
+ | title       = Designate contact sierra-five
+ | work        = Shaver: Noise from signal
+ | author      = Mike Shaver
+ | publisher   = self-published
+ | date        = 2003-01-08
+ | archivedate = 2009-09-06
+ | accessdate  = 2009-09-06
+ | authorlink  = Mike Shaver
+}}&lt;/ref&gt;&lt;ref name=&quot;dbaron-complexity&quot;&gt;{{cite web
+ | url         = http://dbaron.org/log/2003-01#l20030109
+ | archiveurl  = http://www.webcitation.org/5jaomCQBC
+ | title       = Thursday 2003-01-09
+ | work        = David Baron's weblog
+ | author      = David Baron
+ | publisher   = self-published
+ | date        = 2003-01-09
+ | archivedate = 2009-09-06
+ | accessdate  = 2009-09-06
+}}&lt;/ref&gt;&lt;ref name=&quot;apple-snub-stings-mozilla&quot;&gt;{{cite web
+ | url         = http://news.cnet.com/2100-1023-980492.html
+ | archiveurl  = http://www.webcitation.org/5jaojY2P3
+ | title       = Apple snub stings Mozilla
+ | author      = Paul Festa
+ | publisher   = [[CNET Networks]]
+ | date        = 2003-01-14
+ | archivedate = 2009-09-06
+ | accessdate  = 2009-09-06
+ | authorlink  = Paul Festa
+}}&lt;/ref&gt; The Gecko engine also provides a versatile XML-based user interface rendering framework called [[XUL]] that was used extensively in mail, newsgroup, and other programs. Another reason for much of the complexity in Gecko is the use of [[XPCOM]], a [[cross-platform]] [[software componentry|component model]].&lt;ref&gt;{{cite web
+ | url       = http://arstechnica.com/open-source/news/2004/06/collins-interview.ars
+ | title     = Ars Technica sits down with Scott Collins from Mozilla.org
+ | author    = Jorge O. Castro
+ | publisher = Ars Technica
+ | date      = June 15, 2004
+}}&lt;/ref&gt;
+{{Clear}}
+
+==References==
+{{Reflist|2}}
+
+==External links==
+*[https://developer.mozilla.org/en/docs/Gecko Gecko - Mozilla Developer Center]
+*[https://wiki.mozilla.org/Gecko:Home_Page Gecko development wiki (wiki.mozilla.org)]
+*[http://redivide.com/blog/gecko-reflow-awesome-visualization-of-web-page-layout/ Gecko Layout Engine - Real-time Reflow Videos]
+*[http://cbeard.typepad.com/mozilla/2005/11/mozilla_product.html Mozilla Product Strategy Proposal (DRAFT)]
+*[http://www.webdevout.net/browser_support.php Web Browser Standards Support]
+*[http://jrex.mozdev.org/ JRex] ([[Java (programming language)|Java]] API for Gecko)
+
+{{Mozilla projects}}
+{{Netscape}}
+{{Web browser engines}}
+
+{{DEFAULTSORT:Gecko (Layout Engine)}}
+[[Category:Free layout engines]]
+[[Category:Mozilla]]
+[[Category:Cross-platform software]]
+[[Category:Gecko-based software]]
+
+[[ar:Ø¬ÙÙÙ]]
+[[zh-min-nan:Gecko]]
+[[ca:Gecko]]
+[[cs:Gecko]]
+[[da:Gecko (layout engine)]]
+[[de:Gecko (Software)]]
+[[et:Gecko]]
+[[es:Gecko (motor de renderizado)]]
+[[fa:Ú¯Ú©Ù]]
+[[fr:Gecko (moteur de rendu)]]
+[[ko:ê²ì½ (ë ì´ìì ìì§)]]
+[[id:Gecko]]
+[[it:Gecko]]
+[[ka:Gecko]]
+[[hu:Gecko]]
+[[ml:à´àµà´àµà´àµ (à´¸àµà´«àµà´±àµà´±àµâà´µàµà´¯àµ¼)]]
+[[mr:à¤à¥à¤à¥]]
+[[ms:Gecko (enjin susun atur)]]
+[[nl:Gecko]]
+[[ja:Gecko]]
+[[no:Gecko]]
+[[uz:Gecko]]
+[[pl:Gecko]]
+[[pt:Gecko (Mozilla)]]
+[[ru:Gecko]]
+[[fi:Gecko]]
+[[sv:Gecko (renderingsmotor)]]
+[[th:à¹à¸à¸à¹à¸]]
+[[tr:Gecko]]
+[[uk:Gecko]]
+[[zh:Gecko]]</rev></revisions></page></pages></query></api>

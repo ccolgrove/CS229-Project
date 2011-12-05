@@ -1,0 +1,237 @@
+<?xml version="1.0"?><api><query><redirects><r from="Cross-platform software" to="Cross-platform" tofragment="Cross-platform software" /></redirects><pages><page pageid="81193" ns="0" title="Cross-platform"><revisions><rev xml:space="preserve">{{For|a type of interchange between different lines in a metro system|cross-platform interchange}}
+{{Multiple issues
+ | refimprove=July 2009
+ | cleanup=February 2010
+ | No footnotes=August 2010
+}}
+
+In [[computing]], '''cross-platform''', or '''multi-platform''', is an attribute conferred to [[computer software]] or computing methods and concepts that are implemented and inter-operate on multiple [[computer platform]]s.&lt;ref name=&quot;Sun-Web-00&quot;&gt;{{cite web | url=http://java.sun.com/products/jlf/ed1/dg/higq.htm | title=Design Guidelines: Glossary | accessdate=2011-10-19 | publisher=java.sun.com}}&lt;/ref&gt;  Cross-platform software may be divided into two types; one requires individual building or compilation for each platform that it supports, and the other one can be directly run on any platform without special preparation, e.g., software written in an [[interpreted language]] or pre-compiled portable [[bytecode]] for which the interpreters or run-time packages are common or standard components of all platforms. &lt;ref name=&quot;pcmag_cross_platform&quot;&gt;{{cite web | url=http://www.pcmag.com/encyclopedia_term/0,2542,t=cross+platform&amp;i=40495,00.asp#fbid=aHfb3ldkqPq | title=Encyclopedia &gt; cross platform | accessdate=2011-10-19 | publisher=PC MAgazine Encyclopedia}}&lt;/ref&gt;
+
+For example, a cross-platform [[application software|application]] may run on [[Microsoft Windows]] on the [[x86 architecture]], [[Linux]] on the [[x86 architecture]] and [[Mac OS X]] on either the [[PowerPC]] or [[x86]] based [[Apple Macintosh]] systems.  A cross-platform [[application software|application]] may run on as many as all existing platforms, or on as few as two platforms.
+
+{{TOC limit|limit=3}}
+
+== Platforms ==
+{{Main|Platform (computing)}}
+A platform is a combination of hardware and software used to run software applications.  A platform can be described simply as an operating system or computer architecture, or it could be the combination of both. Probably the most familiar platform is [[Microsoft Windows]] running on the [[x86 architecture]]. Other well-known desktop computer platforms include [[Linux]]/[[Unix]] and [[Mac OS X]] (both of which are themselves cross-platform). There are, however, many devices such as [[cellular telephones]] that are also effectively computer platforms but less commonly thought about in that way.  [[Application software]] can be written to depend on the features of a particular platformâeither the hardware, operating system, or virtual machine it runs on.  The [[Java Platform|Java platform]] is a [[virtual machine]] platform which runs on many operating systems and hardware types, and is a common platform for software to be written for.
+
+=== Hardware platforms ===
+A '''hardware platform''' can refer to a computerâs [[computer architecture|architecture]] or [[processor architecture]].  For example, the [[x86]] and [[x86-64]] [[CPU]]s make up one of the most common [[computer architecture]]s in use in general-purpose home computers today{{Citation needed|date=June 2009}}.  These machines often run one version of [[Microsoft Windows]]&lt;ref name=&quot;Net Marketshare&quot;&gt;[http://www.netmarketshare.com/os-market-share.aspx?qprid=9 On the Net Marketshare website], Windows (all variants) has ~ 89% market share as of March 2011&lt;/ref&gt;, though they can run other [[operating system]]s as well, including [[Linux]], [[OpenBSD]], [[NetBSD]], [[Mac OS X]] and [[FreeBSD]].
+
+An [[ARM architecture]] is common on [[smartphone|smartphones]] and [[tablet computer|tablet computers]], which run [[Android (operating system)|Android]], [[IOS (Apple)|IOS]] and other [[mobile operating system|mobile operating systems]].
+
+=== Software platforms ===
+Software platforms can either be an [[operating system]] or programming environment, though more commonly it is a combination of both.  A notable exception to this is [[Java (programming language)|Java]], which uses an [[operating system]] independent [[virtual machine]] for its [[compiled]] code, known in the world of Java as [[bytecode]].  Examples of software platforms include:
+
+* [[AmigaOS]] ([[m68k]]), [[AmigaOS 4]] (PowerPC), [[AROS]] (x86, PowerPC, m68k), [[MorphOS]] (PowerPC)
+* [[BSD]], very cross platform (see [[NetBSD]], for example)
+* [[Java (programming language)|Java]]
+* [[Linux]] (x86, x86-64, [[PowerPC]], and other architectures)
+* [[Mac OS X]] (PowerPC, x86, x86-64)
+* [[Microsoft Windows]] ([[x86]], [[x86-64]])
+* [[MS-DOS]] and compatibles on the [[x86]]: MS-DOS, [[DR-DOS]], [[FreeDOS]], etc.
+* [[OS/2]], [[eComStation]]
+* [[Solaris (operating system)|Solaris]] ([[SPARC]], x86, x86-64)
+* The [[Common Language Infrastructure|CLI]], also known by the implementation names [[.NET Framework]] (from [[Microsoft]]) and [[Mono (software)|Mono]] (from [[Novell]])
+
+==== Java platform ====
+{{Main|Java platform}}
+As previously noted, the [[Java platform]] is an exception to the general rule that an [[operating system]] is a software platform.  The Java language requires a [[virtual machine]], or a âvirtual CPUâ which runs all of the code that is written for the language.  This enables the same [[executable]] [[binary file|binary]] to run on all systems,  supporting the Java software, through the use of a [[Java Virtual Machine]].  Java executables do not run natively on the [[operating system]]; that is, neither [[Microsoft Windows|MSWindows]] nor [[Linux]] execute Java programs directly.
+
+Even though Java code does not run natively, the [[Java Virtual Machine|JVM]] is fully capable of providing OS related services, like disk I/O and network access, if the appropriate privileges are granted.  The JVM allows users to decide the appropriate protection level, depending on an [[Access Control List|ACL]].  For example, disk and network access is usually enabled for desktop applications, but not for browser based [[Applets]].
+
+[[Java Native Interface|JNI]] can also be used to enable access to [[Operating System]] specific functions.  Currently, Java programs can run on the [[Microsoft Windows]], [[Mac OS X]], [[Linux]], and [[Solaris Operating System|Solaris]] operating systems.  For mobile applications, browser [[plugins]] are used for Windows and Mac based devices, and [[Android (operating system)|Android]] has built-in support for Java.
+
+== Cross-platform software ==
+In order for software to be considered '''cross-platform''', it must be able to function on more than one [[computer architecture]] or [[operating system]].  This can be a time-consuming task given that different [[operating system]]s have different [[application programming interface]]s or [[application programming interface|API]]s (for example, [[Linux]] uses a different [[application programming interface|API]] for [[application software]] than [[Microsoft Windows|Windows]] does).
+
+Just because a particular [[operating system]] may run on different [[computer architecture]]s, that does not mean that the software written for that operating system will automatically work on all [[computer architecture|architecture]]s that the operating system supports.  One example as of August, 2006 was [[OpenOffice.org]], which did not natively run on the [[AMD64]] or [[Intel 64]] lines of processors implementing the [[x86-64]] [[64-bit]] standards for computers; this has since been changed, and the OpenOffice.org suite of software is âmostlyâ ported to these 64-bit systems [http://wiki.services.openoffice.org/wiki/Porting_to_x86-64_(AMD64,_EM64T)]. This also means that just because a program is written in a popular programming language such as [[C (programming language)|C]] or [[C++]], it does not mean it will run on all [[operating systems]] that support that [[programming language]]âor even on the same operating system on a different architecture.
+
+=== Web applications ===
+[[Web application]]s are typically described as cross-platform because, ideally, they are accessible from any of various [[web browser]]s within different operating systems. Such applications generally employ a [[clientâserver]] system architecture, and vary widely in complexity and functionality. This wide variability significantly complicates the goal of cross-platform capability, which is routinely at odds with the goal of advanced functionality.
+
+==== Basic applications ====
+Basic web applications perform all or most processing from a [[Stateless server|stateless]] [[web server]], and pass the result to the client web browser. All user interaction with the application consists of simple exchanges of data requests and server responses. These types of applications were the norm in the early phases of [[World Wide Web]] application development. Such applications follow a simple [[Transaction processing|transaction]] model, identical to that of serving [[static web page]]s.  Today, they are still relatively common, especially where cross-platform compatibility and simplicity are deemed more critical than advanced functionalities. hence this is basic application
+
+==== Advanced applications ====
+Prominent examples of advanced web applications include the Web interface to [[Gmail]], [[A9.com]], and the maps.live.com website, part of the [[Live Search]] service from Microsoft. Such advanced applications routinely depend on additional features found only in the more recent versions of popular web browsers. These dependencies include [[Ajax (programming)|Ajax]], [[JavaScript]], [[Dynamic HTML|âDynamicâ HTML]], [[SVG]], and other components of [[rich internet application]]s. Older versions of popular browsers tend to lack support for certain features.
+
+==== Design strategies ====
+Because of the competing interests of cross-platform compatibility and advanced functionality, numerous alternative web application design strategies have emerged.
+
+Such strategies include:
+
+=====Graceful degradation=====
+Graceful degradation attempts to provide the same or similar functionality to all users and platforms, while diminishing that functionality to a âleast common denominatorâ for more limited client browsers. For example, a user attempting to use a limited-feature browser to access Gmail may notice that Gmail switches to âBasic Mode,â with reduced functionality. Some view this strategy as a lesser form of cross-platform capability.
+
+=====Separation of functionality=====
+Separation of functionality attempts to simply omit those subsets of functionality that are not capable from within certain client browsers or operating systems, while still delivering a âcompleteâ application to the user. (see also [[Separation of concerns]]).
+
+=====Multiple codebase=====
+Multiple codebase applications present different versions of an application depending on the specific client in use. This strategy is arguably the most complicated and expensive way to fulfill cross-platform capability, since even different versions of the same client browser (within the same operating system) can differ dramatically between each other. This is further complicated by the support for âpluginsâ which may or may not be present for any given installation of a particular browser version.
+
+=====Third party libraries=====
+Third party libraries attempt to simplify cross-platform capability by âhidingâ the complexities of client differentiation behind a single, unified API.
+
+==== Testing strategies ====
+One complicated aspect of cross-platform web application design is the need for [[software testing]]. In addition to the complications mentioned previously, there is the additional restriction that some browsers prohibit installation of different versions of the same browser on the same operating system. Techniques such as [[full virtualization]] are sometimes used as a workaround for this problem.
+
+=== Traditional applications ===
+
+Although web applications are becoming increasingly popular, many computer users still use traditional [[application software]] which does not rely on a client/web-server architecture.
+The distinction between âtraditionalâ and âwebâ applications is not always unambiguous, however, because applications have many different features, installation methods and architectures; and some of these can overlap and occur in ways that blur the distinction. Nevertheless, this simplifying distinction is a common and useful generalization.
+
+==== Binary software ====
+Traditionally in modern computing, application software has been distributed to end-users as '''binary images''', which are stored in [[executable]]s, a specific type of [[binary file]].  Such [[executable]]s only support the [[operating system]] and [[computer architecture]] that they were built forâwhich means that making a âcross-platform executableâ would be something of a massive task, and is generally not done.
+
+For software that is distributed as a [[binary file|binary]] [[executable]], such as software written in [[C (programming language)|C]] or [[C++]], the programmer must [[software build|build the software]] for each different [[operating system]] and [[computer architecture]].  For example, [[Mozilla]] [[Mozilla Firefox|Firefox]], an open-source web browser, is available on [[Microsoft Windows]], [[Mac OS X]] (both [[PowerPC]] and [[x86]] through something Apple calls a '''[[Universal binary]]'''), and [[Linux]] on multiple computer architectures.  The three platforms (in this case, [[Microsoft Windows|Windows]], [[Mac OS X]], and [[Linux]]) are separate [[executable]] distributions, although they come from the same [[source code]].
+
+In the context of binary software, cross-platform programs are written in the source code and then âtranslatedâ to each system that it runs on through compiling it on different platforms.  Also, software can be [[porting|ported]] to a new [[computer architecture]] or [[operating system]] so that the program becomes more cross-platform than it already is.  For example, a program such as Firefox, which already runs on Windows on the x86 family, can be modified and re-built to run on Linux on the x86 (and potentially other architectures) as well.
+
+As an alternative to porting, cross-platform virtualization allows applications compiled for one CPU and operating system to run on a system with a different CPU and/or operating system, without modification to the source code or binaries. As an example, [[Apple Computer|Apple's]] [[Rosetta (software)|Rosetta]] software, which is built into [[Intel]]-based Apple Macintosh computers, runs applications compiled for the previous generation of Macs that used [[PowerPC]] CPUs. Another example is IBM [[Lx86|PowerVM Lx86]], which allows Linux/x86 applications to run unmodified on the Linux/Power operating system.
+
+==== Scripts and interpreted languages ====
+A script can be considered to be cross-platform if the [[scripting language]] is available on multiple platforms and the script only uses the facilities provided by the language.  That is, a script written in [[Python (programming language)|Python]] for a [[Unix-like]] system will likely run with little or no modification on [[Microsoft Windows|Windows]], because Python also runs on [[Microsoft Windows|Windows]]; there is also more than one implementation of Python that will run the same scripts (e.g., [[IronPython]] for [[.NET Framework|.NET]]).  The same goes for many of the [[open source]] [[programming language]]s that are available and are [[scripting language]]s.
+
+Unlike [[binary file|binary]] [[executable]]s, the same script can be used on all computers that have software to interpret the script.  This is because the script is generally stored in [[plain text]] in a [[text file]].  There may be some issues, however, such as the type of [[newline|new line character]] that sits between the lines.  Generally, however, little or no work has to be done to make a script written for one system, run on another.
+
+Some quite popular cross-platform scripting or [[interpreted language]]s are:
+* [[Bash (Unix shell)|bash]]âA [[Unix shell]] commonly run on [[Linux]] and other modern [[Unix-like]] systems, as well as on [[Microsoft Windows|Windows]] via the [[Cygwin]] [[POSIX]] compatibility layer.
+* [[Perl]]âA scripting language first released in 1987.  Used for [[Common Gateway Interface|CGI]] [[WWW]] programming, small [[system administration]] tasks, and more.
+* [[PHP]]âA [[scripting language]] most popular in use on the [[WWW]] for [[web application]]s.
+* [[Python (programming language)|Python]]âA modern [[scripting language]] where the focus is on [[rapid application development]] and ease-of-writing, instead of program run-time efficiency.
+* [[Ruby (programming language)|Ruby]]âA scripting language whose purpose is to be object-oriented and easy to read. Can also be used on the web through [[Ruby on Rails]].
+* [[Tcl]] - A dynamic programming language, suitable for a wide range of uses, including web and desktop applications, networking, administration, testing and many more.
+
+==== Video games ====
+Cross-platform is a term that can also apply to [[video game]]s released on a range of [[video game console]]s, specialized [[computer]]s dedicated to the task of playing games. Examples of cross-platform games include:
+
+* ''[[Miner 2049er]]''
+* ''[[Phantasy Star Online]]''
+* ''[[Tomb Raider: Legend]]''
+* ''[[FIFA Series]]''
+
+Each has been released across a variety of gaming platforms, such as the [[Nintendo Wii]], [[PlayStation 3]], [[Xbox 360]], [[personal computer]]s (PCs), and [[mobile devices]].
+
+The characteristics of a particular system may lengthen the time taken to implement a video game across multiple platforms.  So, a video game may initially be released on a few platforms and then later released on remaining platforms. Typically, this situation occurs when a new gaming system is released, because [[video game developer]]s need to acquaint themselves with the hardware and software associated with the new console.
+
+Some games may not become cross-platform because of licensing agreements between developers and video game console manufacturers that limit development of a game to one particular console. As an example, [[Disney]] could create a game with the intention of release on the latest [[Nintendo]] and [[Sony]] game consoles. Should Disney license the game with Sony first, Disney may in exchange be required to release the game solely on Sonyâs console for a short time or indefinitely â effectively prohibiting a cross-platform release for the duration.&lt;!--an actual example would work better here--&gt;
+
+Several developers have implemented means to play games online while using different platforms. [[Epic Games]], [[Microsoft]], and [[Valve Software]] all possess technology that allows [[Xbox 360]] and [[PlayStation 3]] gamers to play with PC gamers, leaving the decision of which platform to use to consumers. The first game to allow this level of interactivity between PC and console games was ''[[Quake 3]]''.{{Citation needed|date=October 2008}}
+
+Games that feature cross-platform online play include:
+
+*''[[Kane &amp; Lynch: Dead Men]]''{{Citation needed|date=July 2011}}
+*''[[Lost Planet: Colonies]]''
+*''[[Phantasy Star Online]]''
+*''[[Shadowrun (2007 video game)|Shadowrun]]''
+*''[[Uno (video game)|Uno]]''
+*''[[Final Fantasy XI Online]]''
+*''[[Universe at War: Earth Assault]]''
+*''[[Game Room]]''
+*''[[Team Fortress 2]]'' &lt;ref&gt;{{Cite web | url = http://www.youtube.com/watch?v=CeKeLDfj-hE&amp;feature=channel_video_title | title = Team Fortress 2 Now available on OS X | publisher = [[Valve Corporation]] }}&lt;/ref&gt;
+*''[[Portal 2]]''
+*''[[Counter-Strike: Global Offensive]]''
+*''[[Dust 514]]'' with ''[[Eve Online]]''{{Citation needed|date=August 2011}}
+
+== Platform-independent software ==
+{{Unreferenced section|date=August 2010}}
+Software that is platform independent does not rely on any special features of any single platform, or, if it does, handles those special features such that it can deal with multiple platforms.{{Citation needed|date=February 2010}}
+
+== Cross-platform programming ==
+Cross-platform programming is the practice of actively writing software that will work on more than one platform.
+
+=== Approaches to cross-platform programming ===
+There are different ways of approaching the problem of writing a cross-platform application program.  One such approach is simply to create multiple versions of the same program in different ''source trees''âin other words, the [[Microsoft Windows|Windows]] version of a program might have one set of source code files and the [[Apple Macintosh|Macintosh]] version might have another, while a [[FOSS]] [[*nix]] system might have another.  While this is a straightforward approach to the problem, it has the potential to be considerably more expensive in development cost, development time, or both, especially for the corporate entities.  The idea behind this is to create more than two different programs that have the ability to behave similarly to each other.  It is also possible that this means of developing a cross-platform application will result in more problems with bug tracking and fixing, because the two different ''source trees'' would have different programmers, and thus different defects in each version.  The smaller the programming team, the quicker the bug fixes tend to be.
+
+Another approach that is used is to depend on pre-existing software that hides the differences between the platformsâcalled [[Abstraction layer|abstraction]] of the platformâsuch that the program itself is unaware of the platform it is running on.  It could be said that such programs are ''platform agnostic''.  Programs that run on the [[Java (Sun)|Java]] [[Virtual Machine]] ([[Java Virtual Machine|JVM]]) are built in this fashion.
+
+Some applications mix various methods of cross-platform programming to create the final application.  An example of this is the [[Firefox]] [[web browser]], which uses [[Abstraction layer|abstraction]] to build some of the lower-level components, separate source subtrees for implementing platform-specific features (like the GUI), and the implementation of more than one [[scripting language]] to help facilitate ease of portability.  [[Firefox]] implements [[XUL]], [[Cascading Style Sheets|CSS]] and [[JavaScript]] for extending the browser, in addition to classic [[Netscape]]-style browser plugins.  Much of the browser itself is written in XUL, CSS, and JavaScript, as well.
+
+=== Cross-platform programming toolkits and environments ===
+There are a number of tools&lt;ref name=&quot;TheGUIToolkit&quot;&gt;[http://web.archive.org/web/20091026132520/http://geocities.com/SiliconValley/Vista/7184/guitool.html  The GUI Toolkit, Framework Page]&lt;/ref&gt;&lt;ref name=&quot;PlatformIndependentFAQ&quot;&gt;[http://www.zeta.org.au/~rosko/pigui.htm Platform Independent FAQ]&lt;/ref&gt; which are available to help facilitate the process of cross-platform programming:
+
+* [[Cairo (graphics)|Cairo]]: A [[free software]] library used to provide a vector graphics-based, device-independent API. It is designed to provide primitives for 2-dimensional drawing across a number of different backends. Cairo is written in C and has bindings for many programming languages.
+* [[Eclipse IDE|Eclipse]]: An open source cross platform development environment. Implemented in Java with a configurable architecture which supports many tools for software development. Add-ons are available for several languages, including Java and C++.
+* [[FLTK]]: Another open source cross platform toolkit, but more lightweight because it restricts itself to the GUI.
+* [[fpGUI]]: An open source widget toolkit that is completely implemented in Object Pascal. It currently supports Linux, Windows and a bit of Windows CE.
+* [[GTK+]]: An open source widget toolkit for Unix-like systems with X11 and Microsoft Windows.
+* [[haXe]]: An open source cross-platform language.
+* [[Juce]]: An application framework written in C++, used to write native software on numerous systems (Microsoft Windows, POSIX, Mac OS X), with no change to the code.
+* [[LiveCode]]: a RAD IDE developed by Runtime Revolution, compiles binaries to MacOS X, Windows, Linux, iOS, Android, and can be used as a server-side scripting language to produce web applications.
+* [[Mono (software)|Mono]] (an open source version of [[Microsoft .NET]]): A cross-platform framework for applications and programming languages.
+* [[MonoCross]] is an open source [[Model-view-controller]] design pattern where the model and controller are shared cross-platform but the view is platform-specific.
+* [[MoSync]] is an open source SDK for mobile platform app development in the C++ family.
+* [[Mozilla application framework|Mozilla]]: An open source platform for building Mac, Windows and Linux applications.
+* [[OpenGL]]: A cross-platform 3D graphics library.
+* [[Qt (toolkit)|Qt]]âAn application framework and [[widget toolkit]] for [[Unix-like]] systems with [[X11]], Microsoft Windows, Mac OS X, and other systemsâavailable under both [[open source]] and proprietary licenses.
+* [[Real_Studio|RealStudio]]: a RAD IDE developed by Real Software, uses an object-oriented dialect of the BASIC programming language, and produces compiled binaries for Macintosh, Windows and Linux, as wells as being able to produce cgi-based web applications.
+* Simple and Fast Multimedia LibraryâA multimedia C++ [[Application programming interface|API]] that provides low and high level access to graphics, input, audio, etc.
+* [[Simple DirectMedia Layer]]âAn [[open source]] cross-platform multimedia library written in C that creates an abstraction over various platformsâ graphics, sound, and input [[Application programming interface|API]]s. It runs on many operating systems including Linux, Windows and Mac OS X and is aimed at games and multimedia applications.
+* [[Smartface|Smartface Platform]]: A cross platform tool for Windows used to create mobile applications for J2ME, Symbian S60, BlackBerry and Android, using [[Drag and drop|drag-and-drop]] tools and action editing.
+* [[Tcl/Tk]]
+* [[wxWidgets]]: An open source widget toolkit that is also an [[application framework]].&lt;ref name=&quot;wxwidgets&quot;&gt;[http://wxwidgets.org/ WxWidgets Description]&lt;/ref&gt; It runs on [[Unix-like]] systems with [[X11]], Microsoft Windows and Mac OS X. It permits applications written to use it to run on all of the systems that it supports, if the application does not use any [[operating system]]-specific programming in addition to it.
+* [[XVT]]: A cross-platform toolkit for creating desktop applications in C/C++ on Windows, Linux and Unix (Solaris, HPUX, AIX), and Mac.
+* [[XPower++]] is a cross-platform IDE for Windows, Linux, Mac OSX, and Mobile operating systems.
+* [[Ultimate++]]: is a C++ cross-platform rapid application development framework focused on programmers productivity. It includes a set of libraries (GUI, SQL, etc..), and an integrated development environment. It supports Windows and Unix-like OS-s. The U++ competes with popular scripting languages while preserving C/C++ runtime characteristics. It has its own integrated development environment, TheIDE, which features BLITZ-build technology to speedup C++ rebuilds up to 4 times.
+
+==Challenges to cross-platform development==
+There are certain issues associated with cross-platform development.  Some of these include:
+
+* Testing cross-platform applications may be considerably more complicated, since different platforms can exhibit slightly different behaviors or subtle bugs.  This problem has led some developers to deride cross-platform development as âWrite Once, Debug Everywhereâ, a take on Sunâs [[Write once, run anywhere|âWrite Once, Run Anywhereâ]] marketing slogan.
+* Developers are often restricted to using the [[lowest common denominator]] subset of features which are available on all platforms.  This may hinder the application's performance or prohibit developers from using platformsâ most advanced features.
+* Different platforms often have different user interface conventions, which cross-platform applications do not always accommodate.  For example, applications developed for Mac OS X and [[GNOME]] are supposed to place the most important button on the right-hand side of windows and dialogs, whereas Microsoft Windows and [[KDE]] have the opposite convention.  Though many of these differences are subtle, a cross-platform application which does not conform appropriately to these conventions may feel clunky or alien to the user. When working quickly, such opposing conventions may even result in [[data loss]], such as in a [[dialog box]] confirming whether the user wants to save or discard changes to a file.
+* Scripting languages and virtual machines must be translated into native executable code each time the application is executed, imposing a performance penalty.  This performance hit can be alleviated using advanced techniques like [[just-in-time compilation]]; but even using such techniques, some performance overhead may be unavoidable.
+* Different platforms require the use of native package formats such as [[RPM Package Manager|RPM]] and [[Windows Installer|MSI]]. Multiplatform installers such as [[InstallBuilder]] and [[IzPack]] address this need.
+* Cross-platform execution environments may suffer cross-platform security flaws, creating a fertile environment for cross-platform malware.
+
+== See also ==
+* [[List of widget toolkits]]
+* [[Platform virtualization]]
+* [[Java Platform]]
+* [[GeneXus]]
+
+== References ==
+&lt;references/&gt;
+
+{{DEFAULTSORT:Cross-Platform}}
+[[Category:Computing platforms]]
+
+[[af:Kruisplatform]]
+[[ar:ÙØªØ¹Ø¯Ø¯ Ø§ÙÙÙØµØ§Øª]]
+[[ast:Multiplataforma]]
+[[ca:Multiplataforma]]
+[[cs:MultiplatformnÃ­ software]]
+[[da:PlatformsuafhÃ¦ngighed]]
+[[de:PlattformunabhÃ¤ngigkeit]]
+[[el:ÎÎ½ÎµÎ¾Î¬ÏÏÎ·ÏÎ¿ ÏÎ»Î±ÏÏÏÏÎ¼Î±Ï (Î»Î¿Î³Î¹ÏÎ¼Î¹ÎºÏ)]]
+[[es:Multiplataforma]]
+[[eo:Plursistema]]
+[[eu:Plataforma-anitz]]
+[[fa:ÚÙØ¯Ø³Ú©ÙÛÛ]]
+[[fr:Multiplate-forme]]
+[[gl:Multiplataforma]]
+[[ko:í¬ë¡ì¤ íë«í¼]]
+[[hr:ViÅ¡e-platformski]]
+[[id:Lintas platform]]
+[[it:Multipiattaforma]]
+[[lv:VairÄkplatformu programmatÅ«ra]]
+[[hu:PlatformfÃ¼ggetlensÃ©g]]
+[[ms:Rentas-pelantar]]
+[[nl:Multiplatform]]
+[[ja:ã¯ã­ã¹ãã©ãããã©ã¼ã ]]
+[[no:Multiplattform]]
+[[pl:WieloplatformowoÅÄ]]
+[[pt:Multiplataforma]]
+[[ro:MultiplatformÄ]]
+[[ru:ÐÑÐ¾ÑÑÐ¿Ð»Ð°ÑÑÐ¾ÑÐ¼ÐµÐ½Ð½Ð¾Ðµ Ð¿ÑÐ¾Ð³ÑÐ°Ð¼Ð¼Ð½Ð¾Ðµ Ð¾Ð±ÐµÑÐ¿ÐµÑÐµÐ½Ð¸Ðµ]]
+[[sq:NdÃ«r-platformik]]
+[[simple:Cross-platform]]
+[[sk:ViacplatformovÃ½ softvÃ©r]]
+[[fi:Alustariippumattomuus]]
+[[sv:Multiplattform]]
+[[th:à¸«à¸¥à¸²à¸¢à¸£à¸°à¸à¸à¸à¸à¸´à¸à¸±à¸à¸´à¸à¸²à¸£]]
+[[tr:Ãapraz platform yazÄ±lÄ±mlarÄ±]]
+[[uk:ÐÐ°Ð³Ð°ÑÐ¾Ð¿Ð»Ð°ÑÑÐ¾ÑÐ¼Ð½ÑÑÑÑ]]
+[[vi:Äa ná»n táº£ng]]
+[[zh:è·¨å¹³å°]]</rev></revisions></page></pages></query></api>

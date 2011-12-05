@@ -1,0 +1,89 @@
+<?xml version="1.0"?><api><query><pages><page pageid="682298" ns="0" title="Security-focused operating system"><revisions><rev xml:space="preserve">This is an alphabetical list of [[operating system]]s with a sharp [[computer security|security]] focus. Their order does not imply rank.
+
+In our context, &quot;Security-focused&quot; means that the project is devoted to increasing the security as a major goal.  As such, something can be secure without being &quot;security-focused.&quot;  For example, almost all of the operating systems mentioned here are faced with security bug fixes in their lifetime; however, they do all strive to consistently approach all generic security flaws inherent in their design with new ideas in an attempt to create a secure computing environment. Note it doesn't mean [[security-evaluated operating system]], which mean operating systems that have achieved certification from an external security-auditing organization. An operating system that provides sufficient support for multilevel security and evidence of correctness to meet a particular set of government requirements is [[Trusted operating system]] instead.
+
+==BSD==
+[[Berkeley Software Distribution|BSD]] is a family of [[Unix]] variants derived from a code base originating at the [[University of California, Berkeley]]. All derived BSD operating systems are released under the terms of a [[BSD license|BSD-style license]]. There are several BSD variants, with only one being heavily focused on security.
+
+===OpenBSD===
+[[OpenBSD]] is an open source [[BSD]] operating system that is known to be concerned heavily with security. The project has completed rigorous manual reviews of the code and addressed issues most systems have not. OpenBSD also supplies an executable space protection scheme known as [[W^X]] (memory is writable [[xor]] executable), as well as a [[ProPolice]] compiled executable base.
+
+===TrustedBSD===
+[[TrustedBSD]] is a sub-project of [[FreeBSD]] designed to add trusted operating system extensions, targeting the [[Common Criteria]] for Information Technology Security Evaluation (see also [[TCSEC|Orange Book]]). Its main focuses are working on [[access control list]]s, event auditing, extended attributes, [[mandatory access control]]s, and fine-grained [[Capability (computers)|capabilities]]. Since access control lists are known to be confronted with the [[confused deputy problem]], capabilities are a different way to avoid this issue. As part of the TrustedBSD project, there is also a port of the NSA's FLASK/TE implementation to run on FreeBSD. Many of these trusted extensions have been integrated into the main FreeBSD branch starting at 5.x.
+
+==Linux==
+[[Linux]] itself is inherently security-focused; however, many distributions and projects attempt to make Linux more secure.
+
+===Annvix===
+[[Annvix]] was originally forked from [[Mandriva]] to provide a security-focused server distribution that employs [[ProPolice]] protection, hardened configuration, and a small footprint. There have been plans to include full support for the [[RSBAC]] [[Mandatory access control]] system. However, Annvix seems to be a dormant operating system with the last version being released December 30, 2007.
+
+===EnGarde Secure Linux===
+[[EnGarde Secure Linux]] is a secure platform designed for servers. It has boasted a browser-based tool for [[Mandatory access control|MAC]] using SELinux since 2003. Additionally, it can be accompanied with Web, DNS, and Email enterprise applications, specifically focusing on security without any unnecessary software. The community platform of [[EnGarde Secure Linux]] is the bleeding-edge version freely available for download.
+
+===Fedora===
+[[Fedora (operating system)|Fedora]] is a free, [[Red Hat]] sponsored community developed [[Linux distribution]]. It is one of those mainstream Linux distribution, with a concentrated effort to improve system security,&lt;ref&gt;{{cite web|title=SELinux: Ð±ÑÐ¾Ð½ÐµÐ¶Ð¸Ð»ÐµÑ Ð´Ð»Ñ ÐºÐ¾ÑÐ¿Ð¾ÑÐ°ÑÐ¸Ð²Ð½Ð¾Ð³Ð¾ Ð¿Ð¸Ð½Ð³Ð²Ð¸Ð½Ð°|trans_title=SELinux: bullet-proof vest for corporate penguin|url=http://www.xakep.ru/post/56714/|work=|accessdate=26 October 2011|date=06 September 2011|language=Russian}}&lt;/ref&gt; as a consequence it boasts a fully integrated [[SELinux]] [[Mandatory access control|MAC]] and fine-grained executable memory permission system ([[Exec Shield]]) and all binaries compiled with [[GNU Compiler Collection|GCC]]'s standard stack-smashing protection, as well as focusing on getting security updates into the system in a timely manner.
+
+===Hardened Gentoo===
+[[Hardened Gentoo]] is a subproject of the [[Gentoo Linux]] project. Hardened Gentoo offers a [[ProPolice]] protected and Position Independent Executable base using exactly the same package tree as Gentoo. Executable space protection in Hardened Gentoo is handled by [[PaX]]. The Hardened Gentoo project is an extremely modular project, and also provides subprojects to integrate other [[Intrusion-detection system|intrusion-detection]] and [[Mandatory access control]] systems into Gentoo. All of these can be optionally installed in any combination, with or without [[PaX]] and a [[ProPolice]] base.
+
+===Hardened Linux===
+Hardened Linux is a small distribution for firewalls, [[intrusion detection system]]s, VPN-gateways and authentication jobs that is still under heavy development. It includes GRSecurity, PaX and GCC stack smashing protection.
+
+===Immunix===
+[[Immunix]] is a commercial distribution of Linux focused heavily on security. They supply many systems of their own making, including [[StackGuard]]; cryptographic signing of executables; race condition patches; and format string exploit guarding code. Immunix traditionally releases older versions of their distribution free for non-commercial use. Note that the Immunix distribution itself is licensed under two licenses: The Immunix commercial and non-commercial licenses. Many tools within are GPL, however; as is the kernel.
+
+===Openwall Project===
+[[Openwall Project|Owl]] by a developer known as [[Solar Designer]] was the first distribution to have a [[Executable space protection|non-executable]] [[userspace]] [[Call stack|stack]], /tmp [[race condition]] protection and [[access control]] restrictions to /procdata, by way of a [[kernel (computer science)|kernel]] [[patch (computing)|patch]]. It also features a per-user tmp directory via the pam_mktemp [[Pluggable Authentication Modules|PAM]] module, and supports [[Blowfish (cipher)|Blowfish]] password encryption.
+
+===Red Hat Enterprise Linux===
+[[Red Hat Enterprise Linux]] - offers the same security benefits as Fedora with the additional support of back-porting security fixes to the released versions of the packages (particularly the kernel) so the sys-admin does not have to perform a significant (and risky) upgrade to get a security fix.
+
+===Ubuntu===
+Like Fedora and Red Hat Enterprise Linux, [[Ubuntu (operating system)|Ubuntu]] provides security fixes for stable releases. It also has [[AppArmor]] installed by default and supports [[SELinux]]. Ubuntu locks the root account by default.[https://help.ubuntu.com/community/RootSudo] but use user password for root tasks.
+
+==Solaris==
+[[Solaris (operating system)|Solaris]] is a [[Unix]] variant created by [[Sun Microsystems]].  Solaris itself is not inherently security-focused. Majority of Solaris source code has been released via the [[OpenSolaris]] project, mostly under the [[CDDL|Common Development and Distribution License]]. Enhancements to OpenSolaris, both security related and others, are [[Backporting|backported]] to the official Solaris when Sun certifies their quality.
+
+===Trusted Solaris===
+[[Trusted Solaris]] is a security-focused version of the Solaris Unix operating system. Aimed primarily at the government computing sector, Trusted Solaris adds detailed auditing of all tasks, pluggable [[authentication]], mandatory [[access control]], additional physical authentication devices, and fine-grained access control.  Trusted Solaris is [[Common Criteria]] certified. (See [http://web.archive.org/web/20041013000439/http://wwws.sun.com/software/security/securitycert/trustedsolaris.html] and [http://web.archive.org/web/20070312070621/http://www.sun.com/software/security/securitycert/images/TSol8_7-03CMS.jpg])
+The most recent version, Trusted Solaris 8 (released 2000), received the EAL4 certification level augmented by a number of protection profiles. Telenet was vulnerable for 11 years until patched in Jan 2011 &lt;ref&gt;{{cite web |url=http://www.rapid7.com/vulndb/lookup/sunpatch-113431 |title=Sun Patch: Trusted Solaris 8 4/01: in.telnet patch |author= |date=19 January 2011 |work= |publisher= |accessdate=26 October 2011 }}&lt;/ref&gt;
+
+===Solaris 10 and trusted functionality===
+Trusted Solaris functionality has now been added to the mainstream version of Solaris.  In the 11/06 update to Solaris 10, the ''Solaris Trusted Extensions'' feature adds mandatory access control and labelled security.  Introduced in the same update, the ''Secure by Default Networking '' feature implements less services on by default compared to most previous releases which had most services enabled.  RBAC, found in both mainstream Solaris and Trusted Solaris, dramatically lessens the need for using root directly by providing a way for fine grained control over various administrative tasks.
+
+==Object-Capability systems==
+
+These operating systems are all engineered around a different paradigm of security, [[Object-capability model|object-capabilities]], where instead of having the system deciding if an access request should be granted (usually through one or several access control lists), the bundling of authority and designation makes it impossible to request anything not legitimate.
+
+* [[KeyKOS]]
+* [[EROS (microkernel)|EROS]]
+* [[CapROS]]
+* [[L4 microkernel family|seL4]]
+
+==See also==
+* [[Common Criteria]]
+* [[Trusted Computer System Evaluation Criteria|Orange Book]]
+* [[Comparison of operating systems]]
+* [[Capability (computers)]]
+* [[Computer security#Capabilities vs. ACLs|Capabilities vs. ACLs]]
+* [[Computer security]]
+* [[IX (operating system)]]
+* [[OpenBSM]]
+* [[Security-evaluated operating system]]
+* [[Security engineering]]
+* [[Trusted operating system]]
+
+==External links==
+*[http://www.openbsd.org OpenBSD]
+*[http://hardenedlinux.sourceforge.net/ Hardened Linux]
+*[http://qubes-os.org/Architecture.html Qubes]
+*[http://www-128.ibm.com/developerworks/linux/library/l-sppriv.html?ca=dgr-lnxw04Privileges Security mechanisms in newer operating systems]
+
+==References==
+{{Reflist}}
+
+{{DEFAULTSORT:Security-Focused Operating System}}
+[[Category:Operating system security]]
+
+[[cs:BezpeÄnostnÄ zamÄÅenÃ½ operaÄnÃ­ systÃ©m]]
+[[fr:SystÃ¨me d'exploitation basÃ© sur la sÃ©curitÃ©]]</rev></revisions></page></pages></query></api>

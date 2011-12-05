@@ -1,0 +1,65 @@
+<?xml version="1.0"?><api><query><pages><page pageid="1980775" ns="0" title="MEncoder"><revisions><rev xml:space="preserve">{{Infobox software
+| name                   = MEncoder
+| logo                   =
+| screenshot             =
+| caption                =
+| developer              =
+| released               =
+| frequently_updated     =
+| programming language   =
+| operating system       = [[Cross-platform]]
+| language               =
+| genre                  = Audio/video [[transcode]]r
+| license                = [[GNU General Public License]]
+| website                = [http://www.mplayerhq.hu www.mplayerhq.hu]
+}}
+{{Wikibooks|Mplayer#Mencoder}}
+
+'''MEncoder''' is a [[free software|free]] [[command line interface|command line]] video decoding, encoding and filtering tool released under the [[GNU General Public License]]. It is a close sibling to [[MPlayer]] and can convert all the formats that MPlayer understands into a variety of compressed and uncompressed formats using different [[codec]]s.&lt;ref&gt;[http://www.mplayerhq.hu/DOCS/codecs-status.html MPlayer and MEncoder Status of codecs support], Retrieved on 2009-07-19&lt;/ref&gt;
+
+MEncoder is included in the MPlayer distribution.
+
+==Capabilities==
+As it is built from the same code as MPlayer, it can read from every source which MPlayer can read, decode all media which MPlayer can decode and it supports all filters which MPlayer can use. MPlayer can also be used to view the output of most of the filters (or of a whole pipeline of filters) before running MEncoder. If the system is not able to process this in realtime, audio can be disabled using -nosound to allow a smooth review of the video filtering results.
+
+It is also possible to copy audio and/or video unmodified into the output file to avoid quality loss because of re-encoding for example, to only modify the audio or video, or to simply put the audio/video data unmodified into a different [[Container format (digital)|container format]].
+
+Since it uses the same code as MPlayer, it also features the same huge number of highly-configurable video and audio filters to transform the video and audio stream: Filters include [[Cropping (image)|Cropping]], [[Scaling]], Vertical Flipping, horizontal mirroring, expanding to create [[letterbox]]es, rotating, [[brightness]]/[[contrast (vision)|contrast]], changing the [[aspect ratio (image)|aspect ratio]] of the video's pixels, [[colorspace]] conversion, [[hue]]/[[saturation]], color-specific [[Gamma correction]], filters for reducting the visibility of compression artifacts caused by MPEG compression (deblocking, deringing), automatic brightness/contrast enhancement (autolevel), [[sharpness]]/[[Focus (optics)|blur]], denoising filters, several different ways of [[deinterlacing]], and [[telecine#Reverse telecine|reversing telecine]].
+
+===Frame rate conversions and slow-motion===
+Also, changing the frame rate is possible using the &lt;tt&gt;-ofps&lt;/tt&gt; or &lt;tt&gt;-speed&lt;/tt&gt; options and, in addition, by using the framestep filter for skipping frames. Reducing the frame rate can be used to create fast-motion &quot;speed&quot; effects which are sometimes seen in films.
+
+Doubling the frame rate of interlaced footage without duplicating or morphing frames is possible using the tfields filter to create two different frames from each of the two fields in one frame of interlaced video. This allows playback on progressive displays, while preserving the full resolution and framerate of interlaced video, unlike other [[deinterlacing]] methods.  It also makes the footage more usable for framerate conversion, and creating [[slow-motion]] scenes from footage taken at standard video/TV frame rates, e.g. using cheap consumer [[camcorders]]. If the filter gets wrong information about the top/bottom field order, the resulting output video will have juddering motion, because the two frames created would be displayed in the wrong order.
+
+==See also==
+{{Portal|Free software}}
+* [[MPlayer]], the media player built from the same [[source code]] as MEncoder
+* [[FFmpeg]], similar to MEncoder
+* [[MediaCoder]], a media transcoding application for Windows OSs, uses MEncoder as one of its backends
+* [[Transcode (software)|Transcode]], a command-line transcoding application for [[Unix-like]] OSs
+* [[B:Mplayer|MPlayer Wikibook]]- almost all decoding-related and filtering arguments are shared with mencoder
+* [[RetroCode]], a universal mobile content encoder/decoder
+
+==References==
+&lt;references /&gt;
+
+==External links==
+* [http://www.mplayerhq.hu/ MEncoder and MPlayer Official site]
+* [http://www.mplayerhq.hu/DOCS/man/en/mplayer.1.txt MEncoder and MPlayer manual]
+* [http://www.mplayerhq.hu/DOCS/HTML/en/encoding-guide.html Comprehensive MEncoder guide]
+
+{{DEFAULTSORT:Mencoder}}
+[[Category:Free cross-platform software]]
+[[Category:Free software programmed in C]]
+[[Category:Free video conversion software]]
+
+[[ar:ÙÙÙÙÙØ¯Ø±]]
+[[de:MEncoder]]
+[[es:MEncoder]]
+[[id:MEncoder]]
+[[nl:MEncoder]]
+[[ja:MEncoder]]
+[[pt:MEncoder]]
+[[ru:MEncoder]]
+[[sv:MEncoder]]
+[[tr:MEncoder]]</rev></revisions></page></pages></query></api>

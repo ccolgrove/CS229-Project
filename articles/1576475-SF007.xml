@@ -1,0 +1,85 @@
+<?xml version="1.0"?><api><query><pages><page pageid="1576475" ns="0" title="Thawte"><revisions><rev xml:space="preserve">{{Infobox Brand
+|logo=[[Image:Thawte.svg|250px|Thawte Logo]]
+|name=Thawte
+|image=
+|type=[[Public key certificate]]s
+|currentowner=[[Symantec]]
+|origin={{flagcountry|South Africa}}
+|discontinued=
+|related=
+|markets=World
+|previousowners=
+|trademarkregistrations=
+|website=http://www.thawte.com/
+}}
+'''Thawte Consulting''' is a [[certificate authority]] (CA) for [[X.509]] certificates. Thawte was founded in 1995 by [[Mark Shuttleworth]] in [[South Africa]] and is the second largest public CA on the [[Internet]].
+
+==Origins==
+Thawte was originally run from [[Mark Shuttleworth|Shuttleworth]]'s parents' garage. Shuttleworth's original project was to produce a secure server not fettered by the restrictions on the [[export of cryptography]] which had been imposed by the U.S. The server, Sioux, was an adaptation of the [[Apache HTTP server]]; it was later integrated with the [[Stronghold (software)|Stronghold]] web server as Thawte began to concentrate more on their certification activities.
+
+==Sale==
+In 1999 [[VeriSign]] acquired Thawte in a stock purchase from Shuttleworth for [[United States dollar|US$]]575 million.&lt;ref name=acquisition&gt;{{cite web | url=http://www.infoworld.com/articles/en/xml/99/12/21/991221enverisign.html | title=VeriSign acquires Thawte, Signio for more than $1.2 billion | accessdate=2008-09-18 |date=1999-12-21 }} {{Dead link|date=October 2010|bot=H3llBot}}&lt;/ref&gt; Both VeriSign and Thawte had certificates in the first [[Netscape]] browsers, and were thus 'grandfathered' into all other [[web browser]]s. Before VeriSign's purchase, they each had about 50% of the market. VeriSign's [[Public key certificate|certificate]] rollover was due to take place on 1 January 2000 &amp;mdash; an unfortunate choice considering the imminent [[Y2K]] bug. (Thawte had a similar rollover in July 1998.) The purchase of Thawte ensured there would be no business loss over Y2K {{Citation needed|date=August 2010}}.
+
+Proceeds from the sale enabled Shuttleworth to become the second [[space tourism|space tourist]],&lt;ref name=spacetourist&gt;{{cite web | url=http://www.space.com/missionlaunches/soyuz_dock_020427.html | title=Soyuz Docks as Shuttleworth and Crew Begin Week-Long Stay at Station | accessdate=2008-01-02 |date=2002-04-27 |work=SPACE.com}}&lt;/ref&gt; and to found the [[Ubuntu (operating system)|Ubuntu]] project.&lt;ref name=ubuntu&gt;{{cite web | url=http://www.ubuntu.com/community/ubuntustory | title=The Ubuntu Story | accessdate=2007-10-21}}&lt;/ref&gt;
+
+In August 2010, [[Symantec]] acquired VeriSign's security business; thus, Thawte is now owned by Symantec.&lt;ref name=symantec-acquisition&gt;{{cite web | url=http://www.symantec.com/content/en/us/enterprise/other_resources/b-verisign_customer_faq.en-us.pdf | title=VeriSignâs Security Business is Now Part of Symantec | accessdate=2010-08-09 |date=2010-08-09 }}&lt;/ref&gt;
+
+==Web of trust==
+The Thawte Web of trust was discontinued on 16 November 2009.&lt;ref&gt;{{cite web | url=https://search.thawte.com/support/ssl-digital-certificates/index?page=content&amp;id=SO12658 | title=Frequently Asked Questions for the EOL of WOT / Class One | accessdate=2009-07-24 }}&lt;/ref&gt; Thawte used to issue free email certificates and the Thawte Web of trust was the optional identity verification mechanism for it. To obtain a free Thawte email certificate, a person needed to sign up for a Thawte FreeMail account which allowed a person to create as many certificates as they want.  Although each certificate was associated with exactly one email address, multiple email addresses could have been associated with a single Thawte FreeMail account. So if a person has more than one email address, they could have created a different certificate for each of them through the same account.
+
+Associating the Thawte FreeMail account with the real identity of the person owning was based on a [[Web of trust]] model (similar to [[CAcert.org]]). The person's identity was assured by meeting face-to-face with one or more ''Thawte Notaries'' who needed to see identification and keep a copy of it (for at least five years). Points were assigned by the notaries. The number of points a notary could have assigned ranges from 10 to 35. In general, the more experienced a notary was the more points they could have assigned (see table below). Notaries who were directly verified by Thawte, through events Thawte attended or held, automatically could have issued 35 points without needing to gain experience.
+
+The number of points determined what that person's account can do. With less than 50 points, the certificates issued had &quot;Thawte Freemail Member&quot; in the name field. With 50 or more points, the certificates had the person's name in it.  The presence of the person's real name in the certificate can be useful for identifying the certificate (e.g. when stored in a key store) and to help the recipient to recognize and trust the certificate. For the purposes of signing and encrypting both types of certificates could be used in the same way, because both types of certificates had the person's email address in it.
+
+With 100 or more points, a person became a Thawte Notary. When a person becomes a notary, they were initially listed underneath their country. They could then change that location and add text to advertise the services they offer. Changes to the advertising text were approved by Thawte and the notary was placed in a pending state while it waits approval. The approval process could take several weeks, during which the person's advertisement was not published and the system did not let them access it as a notary. Cross notarization was not allowed: a notary could not notarize a person who had notarized them.
+
+{| class=&quot;wikitable sortable&quot;
+|-
+! Assertions made&lt;br /&gt; by the notary
+! Maximum points that&lt;br /&gt;the notary may award
+|-
+| 0
+| 10
+|-
+| 5
+| 15
+|-
+| 10
+| 20
+|-
+| 15
+| 25
+|-
+| 25
+| 30
+|-
+| 35
+| 35
+|-
+|}
+
+===After end of life===
+Thawte Notaries have been submitting minimal information to the [http://www.gswot.org/ Gossamer Spider Web of Trust] (&quot;GSWoT&quot;; a grass-roots [[Pretty Good Privacy#OpenPGP |OpenPGP]] [[public key infrastructure|PKI]]) for safe-keeping in hopes to increase the longevity of their earned trust points. The collaborative effort aims to bind Thawte Notary names and email addresses to their now-existing entry on Thawte's Web of Trust Notary Map. Thawte Notaries from within and without GSWoT are performing the validations. The initiative will bear no fruit if Thawte Notaries fail to find or create a WoT that will recognize their former status as a Thawte Web of Trust Notary. The Thawte WoT Notaries List on GSWoT was maintained until November 16, 2010.
+
+==See also==
+* [[Cryptography]]
+* [[Public key certificate]]
+* [[Secure Sockets Layer|SSL]]
+* [[Transport Layer Security]]
+
+== References ==
+{{reflist|1}}
+
+==External links==
+*[http://www.thawte.com/ Thawte Consulting - World-Wide web site]
+*[http://www.thawte.com/secure-email/web-of-trust-wot/index.html Thawte's Web of Trust]
+
+[[Category:Certificate authorities]]
+[[Category:Companies established in 1995]]
+[[Category:Certificate authorities]]
+[[Category:Companies established in 2001]]
+
+[[ca:Thawte]]
+[[de:Thawte]]
+[[es:Thawte]]
+[[fr:Thawte]]</rev></revisions></page></pages></query></api>

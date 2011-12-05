@@ -1,0 +1,74 @@
+<?xml version="1.0"?><api><query><pages><page pageid="2785391" ns="0" title="Microsoft Virtual Server"><revisions><rev xml:space="preserve">{{Infobox Software 
+| name                   = Microsoft Virtual Server 
+| screenshot             = &lt;!-- Deleted image removed: [[Image:Virtual Server 2005 R2.PNG|250px]]  --&gt;
+| caption                = Virtual Server 2005 running a [[Windows Server 2003]] guest on a [[Windows XP]] host machine. 
+| developer              = [[Microsoft]] 
+| latest_release_version = Virtual Server 2005 R2 SP1 
+| latest_release_date    = {{release date|2007|06|11}}
+| operating_system       = [[Microsoft Windows]] 
+| genre                  = [[Virtual machine]] 
+| license                = [[Proprietary software|Proprietary]] 
+| website                = [http://www.microsoft.com/windowsserversystem/virtualserver/default.aspx Microsoft Virtual Server 2005 R2]
+}}
+'''Microsoft Virtual Server''' is a virtualization solution that facilitates the creation of [[virtual machines]] on the [[Windows XP]], [[Windows Vista]] and [[Windows Server 2003]] [[operating systems]]. Originally developed by [[Connectix]], it was acquired by [[Microsoft]] prior to release.  [[Microsoft Virtual PC|Virtual PC]] is Microsoft's related desktop virtualization software package.
+
+[[Virtual machine]]s are created and managed through an [[Internet Information Services|IIS]] web-based interface or through a Windows client application tool called VMRCplus. 
+
+The current version is Microsoft Virtual Server 2005 R2 SP1. New features in R2 SP1 include [[Linux]] guest operating system support, Virtual Disk Precompactor, [[Symmetric multiprocessing|SMP]] (but not for the Guest OS), [[x86-64]] (x64) Host OS support (but not Guest OS support), the ability to mount virtual hard drives on the host OS and additional operating systems, including [[Windows Vista]]. It also provides a Volume Shadow Copy writer which enables live backups of the Guest OS on a [[Windows Server 2003]] or [[Windows Server 2008]] Host. A utility to mount VHD images is also included since SP1. Virtual Machine Additions for Linux are downloadable [http://www.microsoft.com/downloads/details.aspx?FamilyId=BF12642F-77DC-4D45-AE4E-E1B05E0A2674 here.] Officially supported Linux guest operating systems include [[Red Hat Enterprise Linux]] versions 2.1-5.0, [[Red Hat Linux]] 9.0, [[SUSE Linux]] and [[SUSE Linux Enterprise Server]] versions 9 and 10.&lt;ref&gt;[http://www.microsoft.com/technet/virtualserver/downloads/linuxguestsupport.mspx Linux Guest Support for Virtual Server 2005 R2 SP1]&lt;/ref&gt;
+
+Virtual Server has been superseded by [[Hyper-V]].
+
+==Version history==
+Microsoft acquired an unreleased Virtual Server from Connectix in February 2003.
+The initial release of Microsoft's Virtual Server, general availability, was announced on September 13, 2004.&lt;ref&gt;{{cite web |url=http://www.microsoft.com/presspass/press/2004/sep04/09-13availabilityvs2005pr.mspx |title=Virtual Server 2005 |date=2004-09-13 |accessdate=2009-07-02 |publisher=Microsoft Press Release}}&lt;/ref&gt;
+
+Virtual Server 2005, was available in two editions: Standard and Enterprise. The Enterprise edition supported more processors.
+
+On 2006-04-03, Microsoft made Virtual Server 2005 R2 Enterprise Edition a free download,&lt;ref name=&quot;Microsoft TechNet FAQ&quot;&gt;{{cite web |url=http://www.microsoft.com/windowsserversystem/virtualserver/software/faq.mspx#EIB |title=Virtual Server 2005 R2 SP1 Download Frequently Asked Questions |date=2007-06-11 |accessdate=2007-10-15 |publisher=Microsoft TechNet}}&lt;/ref&gt; in order to better compete with the free virtualization offerings from [[VMware]] and [[Xen]], and discontinued the Standard Edition.&lt;ref&gt;[http://blogs.msdn.com/virtual_pc_guy/archive/2006/04/03/566267.aspx Microsoft Virtual Server is now free]&lt;/ref&gt;
+
+Microsoft Virtual Server R2 SP1 added support for both Intel VT (IVT) and AMD Virtualization (AMD-V).&lt;ref&gt;{{cite web |url=http://www.microsoft.com/technet/virtualserver/evaluation/vsoverview.mspx#EMC |title=Virtual Server 2005 R2 SP1 Product Overview |date=2007-06-11 |accessdate=2007-08-24 |publisher=Microsoft TechNet}}&lt;/ref&gt;
+== Benefits of using Microsoft virtual server: ==
+Rolling out new software to check for compatibility issues 
+
+Testing software updates and patches
+
+To solve compatibility issues between software packages
+
+To solve software legacy issues
+
+== Limitations ==
+Known limitations of Virtual Server, {{As of|2007|alt=as of September 2007}}, include the following:
+
+* Although Virtual Server 2005 R2 can run on hosts with [[x86-64]] processors, it cannot run x64 guests that require x86-64 processors (guests cannot be 64-bit).&lt;ref name=&quot;Microsoft TechNet FAQ&quot; /&gt;
+* It also makes use of [[Symmetric multiprocessing|SMP]], but does not virtualize it (it does not currently allow guests to use more than 1 CPU each).&lt;ref name=&quot;Microsoft TechNet FAQ&quot; /&gt;
+* Performance may suffer due to the way the instruction set is virtualized in this platform, with very limited direct interaction with the host hardware.&lt;ref name=virtsh&gt;{{cite web | title=Benchmarking VMware ESX Server 2.5 vs Microsoft Virtual Server 2005 Enterprise Edition | url=http://capitalhead.com/articles/benchmarking-vmware-esx-server-25-vs-microsoft-virtual-server-2005-enterprise-edition.aspx | work=Virtualization Benchmark Review | date=2006-04-19 | accessdate=2009-06-11}}&lt;/ref&gt;&lt;ref&gt;{{cite web | title=Benchmarking Microsoft Virtual Server 2005 | url=http://capitalhead.com/articles/benchmarking-microsoft-virtual-server-2005.aspx | work=Benchmarking Microsoft Virtual Server 2005 | date=1900-1-0 | accessdate=2009-06-16}}&lt;/ref&gt;
+
+== See also ==
+* [[Hypervisor]]
+* [[Virtual disk image]]
+* [[Virtual appliance]]
+* [[x86 virtualization]]
+
+== References ==
+{{reflist}}
+
+== External links ==
+* [http://www.microsoft.com/windowsserversystem/virtualserver/default.mspx Microsoft Virtual Server 2005 R2 SP1]
+* [http://www.microsoft.com/technet/prodtechnol/virtualserver/2005/proddocs/vs_deploy_reqs.mspx?mfr=true System requirements for Microsoft Virtual Server 2005]
+*[http://capitalhead.com/articles/benchmarking-vmware-esx-server-25-vs-microsoft-virtual-server-2005-enterprise-edition.aspx Benchmarking VMware ESX Server 2.5 vs Microsoft Virtual Server 2005 Enterprise Edition]
+* [http://www.hyperadmin.com/index.php?ref=5 HyperAdmin: Microsoft Virtual Server Management]
+* [http://www.microsoft.com/systemcenter/scvmm/default.mspx System Center Virtual Machine Manager]
+* [http://www.microsoft.com/MSPress/books/10622.aspx Microsoft Virtual Server 2005 R2 Resource Kit Book]
+* [http://capitalhead.com/articles/benchmarking-microsoft-virtual-server-2005.aspx Benchmarking Microsoft Virtual Server 2005]
+* [http://www.microsoft.com/industry/government/solutions/Server_Virtualization/default.aspx Microsoft Server Virtualization for government agencies]
+
+[[Category:Virtualization software]]
+[[Category:Microsoft server technology|Virtual Server]]
+
+[[ar:Ø§ÙÙÙÙÙ Ø§ÙØ§ÙØªØ±Ø§Ø¶Ù]]
+[[de:Microsoft Virtual Server]]
+[[es:Microsoft Virtual Server]]
+[[fr:VirtualServer]]
+[[ko:ë§ì´í¬ë¡ìíí¸ ë²ì¶ì¼ ìë²]]
+[[it:Microsoft Virtual Server]]
+[[ja:Microsoft Virtual Server]]</rev></revisions></page></pages></query></api>

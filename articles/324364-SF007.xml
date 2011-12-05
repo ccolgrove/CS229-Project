@@ -1,0 +1,179 @@
+<?xml version="1.0"?><api><query><pages><page pageid="324364" ns="0" title="GNU C Library"><revisions><rev xml:space="preserve">{{Redirect-distinguish|glibc|glib|gnulib}}
+{{Infobox software
+| name                   = GNU C Library
+| logo                   = [[Image:Heckert GNU white.svg|125px]]
+| screenshot             =
+| caption                =
+| developer              = [[GNU Project]]
+| latest release version = 2.14.1
+| latest release date    = {{release date|2011|10|17}}&lt;ref&gt;{{Citation/make link|http://ftp.gnu.org/gnu/glibc/|Glibc 2.14 release}}&lt;/ref&gt;
+| programming language   = [[C (programming language)|C]]
+| operating system       = [[Cross-platform]]
+| language               =
+| status                 = Active
+| genre                  = [[Runtime library]]
+| source model           = [[Open source]]
+| license                = [[GNU Lesser General Public License]]
+| website                = http://www.gnu.org/software/libc
+}}
+The '''GNU C Library''', commonly known as '''glibc''', is the [[C standard library]] released by the [[GNU Project]]. Originally written by the [[Free Software Foundation]] (FSF) for the [[GNU]] operating system, the library's development has been overseen by a committee since 2001,&lt;ref&gt;{{cite web
+|url=http://www.gnu.org/software/libc/
+|title=glibc homepage
+|quote=In 2001 The GNU C Library Steering Committee ..., was formed and currently consists of Mark Brown, Paul Eggert, Andreas Jaeger, Jakub Jelinek, Roland McGrath and Andreas Schwab.
+}}&lt;/ref&gt; with [[Ulrich Drepper]] from [[Red Hat]] as the lead contributor and maintainer.
+
+Released under the [[GNU Lesser General Public License]], glibc is [[free software]].
+
+==History==
+glibc was initially written mostly by [[Roland McGrath]], working for the FSF in the 1980s.
+
+In February 1988, FSF described glibc as having nearly completed the functionality required by ANSI C.&lt;ref&gt;{{ cite web | url = http://www.gnu.org/bulletins/bull4.html | title = http://www.gnu.org/bulletins/bull4.html | quote = Most libraries are done. Roland McGrath [...] has a nearly complete set of ANSI C library functions. We hope they will be ready some time this spring. }}&lt;/ref&gt; By 1992, it had the ANSI C-1989 and POSIX.1-1990 functions implemented and work was under way on POSIX.2.&lt;ref&gt;{{ cite web | url = http://www.gnu.org/bulletins/bull12.html | title = GNU's Bulletin, vol. 1 no. 12 | quote = It now contains all of the ANSI C-1989 and POSIX.1-1990 functions, and work is in progress on POSIX.2 and Unix functions (BSD and System V) }}&lt;/ref&gt;
+
+===A temporary fork===
+In the early 1990s, the developers of the [[Linux kernel]] [[fork (software development)|forked]] glibc. Their fork, called &quot;Linux libc&quot;, was maintained separately for years and released versions 2 through 5.
+
+When FSF released glibc 2.0 in January 1997, it had much more complete POSIX standards support, better internationalisation/multilingual support, support for [[IPv6]], 64-bit data access, support for multithreaded applications, future version compatibility support, and the code was more portable.&lt;ref&gt;{{ cite web | url = http://people.redhat.com/~sopwith/old/glibc-vs-libc5.html  | title = A Technical Comparison of glibc 2.x With Legacy System Libraries| author = Elliot Lee | year = 2001 |archiveurl = http://web.archive.org/web/20040411191201/http://people.redhat.com/~sopwith/old/glibc-vs-libc5.html |archivedate = 11 April 2004}}&lt;/ref&gt; At this point, the Linux kernel developers discontinued their fork and returned to using FSF's glibc.&lt;ref&gt;{{ cite web | url = http://www.linux.com/archive/feature/3874 | title = Forking: it could even happen to you | quote = the split between GNU LIBC and the Linux LIBC -- it went on for years while Linux stabilized, and then the forks re-merged into one project }}&lt;/ref&gt;
+
+The last used version of Linux libc used the internal name ([[soname]]) &lt;tt&gt;libc.so.5&lt;/tt&gt;. Following on from this, glibc 2.x on Linux uses the soname &lt;tt&gt;libc.so.6&lt;/tt&gt;&lt;ref&gt;{{ cite web | url = http://linuxmafia.com/faq/Licensing_and_Law/forking.html | title = Fear of Forking essay, see &quot;6. glibc --&gt; Linux libc --&gt; glibc&quot; }}&lt;/ref&gt; ([[DEC Alpha|Alpha]] and [[Itanium|IA64]] architectures now use &lt;tt&gt;libc.so.6.1&lt;/tt&gt;, instead). The soname is often abbreviated as libc6 (for example in the package name in [[Debian]]) following the normal conventions for libraries.
+
+According to [[Richard Stallman]], the changes that had been made in Linux libc could not be merged back into glibc because the authorship status of that code was unclear and the GNU project is quite strict about recording copyright and authors.&lt;ref&gt;{{ cite web | url = http://linuxmafia.com/faq/Licensing_and_Law/forking.html#foot25 | title = Fear of Forking, footnote on Stallman's merge comments }}&lt;/ref&gt;
+
+=== Version history ===
+This version history uses dates from the ChangeLog files packaged in the 2.13 release.
+{| class=&quot;wikitable&quot;
+|-
+! Version !! Date !! Notes
+|-
+| 2.14 || June 2011 ||
+|-
+| 2.13 || January 2011 ||
+|-
+| 2.12 || May 2010 || Used in [[Red Hat Enterprise Linux|RHEL 6]]
+|-
+| 2.11 || October 2009 || Used in [[SUSE Linux Enterprise Server|SLES 11]]
+|-
+| 2.10 || May 2009 ||
+|-
+| 2.9 || November 2008 ||
+|-
+| 2.8 || April 2008 ||
+|-
+| 2.7 || October 2007 ||
+|-
+| 2.6 || May 2007 ||
+|-
+| 2.5 || September 2006 || Used in RHEL 5
+|-
+| 2.4 || March 2006 || Standard for [[Linux Standard Base|LSB 4.0]], Used in SLES 10
+|-
+| 2.3.4 || December 2004 || Standard for LSB 3.0
+|-
+| 2.3.3 || December 2003 ||
+|-
+| 2.3.2 || February 2003 ||
+|-
+| 2.3.1 || October 2002 ||
+|-
+| 2.3 || October 2002 ||
+|-
+| 2.2.4 || July 2001 ||
+|-
+| 2.2.3 || March 2001 ||
+|-
+| 2.2.2 || February 2001 ||
+|-
+| 2.2.1 || January 2001 ||
+|-
+| 2.2 || November 2000 ||
+|-
+| 2.1.1 || March 1999 ||
+|-
+| 2.1 || February 1999 ||
+|-
+| 2.0.95 || July 1998 ||
+|-
+| 2.0.91 || December 1997 ||
+|-
+| 2.0.2 || February 1997 ||
+|-
+| 2.0.1 || January 1997 ||
+|-
+| 2.0 || January 1997 ||
+|-
+| 1.90 â 1.102 || May 1996 â January 1997 ||
+|-
+| 1.01 â 1.09.3 || March 1992 â December 1994 ||
+|-
+| 1.0 || February 1992 ||
+|-
+| 0.1 â 0.6 || Oct 1991 â February 1992 ||
+|}
+
+==Supported hardware and kernels==
+Glibc is used in systems that run many different [[kernel (computer science)|kernels]] and different [[Computer hardware|hardware]] architectures. Its most common use is in systems using the [[Linux kernel]] on [[x86]] hardware, however, officially supported hardware includes: [[x86]], [[68k|Motorola 680x0]], [[DEC Alpha]], [[PowerPC]], [[ETRAX CRIS]], [[zSeries|s390]], and [[SPARC]]. It officially supports the [[GNU Hurd|Hurd]] and [[Linux kernel|Linux]] kernels. Additionally, there are heavily patched versions that run on the kernels of [[FreeBSD]] and [[NetBSD]] (from which [[GNU variants#Debian GNU/kFreeBSD|Debian GNU/kFreeBSD]] and [[GNU variants#Debian GNU/NetBSD|Debian GNU/NetBSD]] systems are built, respectively), as well as the kernel of [[OpenSolaris]].&lt;ref&gt;{{cite web|url=http://csclub.uwaterloo.ca/~dtbartle/opensolaris/|title=GNU/kOpenSolaris (GNU libc/base + OpenSolaris kernel)|last=Bartley|first=David|coauthors=Michael Spang|accessdate=2008-12-16}}&lt;/ref&gt; It is also used (in an edited form) and named &lt;tt&gt;libroot.so&lt;/tt&gt; in [[BeOS]] and [[Haiku (operating system)|Haiku]].
+
+==Functionality==
+glibc provides the functionality required by the [[Single UNIX Specification]], [[POSIX]] (1c, 1d, and 1j) and some of the functionality required by [[International Organization for Standardization|ISO]] [[C99]], [[Berkeley Unix]] (BSD) interfaces, the [[System V Interface Definition]] (SVID) and the [[X/Open Portability Guide]] (XPG), Issue 4.2, with all extensions common to XSI ([[X/Open System Interface]]) compliant systems along with all X/Open UNIX extensions.
+
+In addition, glibc also provides extensions that have been deemed useful or necessary while developing [[GNU]].
+
+==Use in small devices==
+glibc has been criticized as being &quot;bloated&quot; and slower than other libraries in the past, e.g. by [[Linus Torvalds]]&lt;ref&gt;Linus Torvalds: [http://ecos.sourceware.org/ml/libc-alpha/2002-01/msg00079.html Posting to the glibc mailing list], 9 January 2002 19:02:37&lt;/ref&gt; and [[embedded Linux]] programmers. For this reason, several alternative C standard libraries have been created which emphasize a smaller footprint.  Among them are [[Bionic (software)|Bionic]] (based mostly on [[BSD libc|libc from BSD]] and used in [[Android (operating system)|Android]]&lt;ref&gt;[http://android.git.kernel.org/?p=platform/bionic.git;a=blob_plain;f=libc/README;hb=HEAD]&lt;/ref&gt;), [[dietlibc]], [[uClibc]], [[Newlib]], [[Klibc]], and [[EGLIBC]] (used in [[Debian]], [[Ubuntu (operating system)|Ubuntu]] and [[ArkLinux]]).&lt;ref&gt;[http://www.eglibc.org EGLIBC]&lt;/ref&gt;
+
+However, many small-device projects use GNU libc over the smaller alternatives because of its application support, standards compliance, and completeness.  Examples include [[Openmoko]]&lt;ref&gt;{{cite web
+|url=http://wiki.openmoko.org/wiki/OpenMoko
+|title=OpenMoko components
+|quote=We will use glibc (not uClibC) ... The alternatives may save more space and be more optimized, but are more likely to give us integration headaches
+}}&lt;/ref&gt; and [[Familiar Linux]] for iPaq handhelds (when using the [[GPE]] display software).&lt;ref&gt;{{cite web
+|url=http://marc.info/?l=familiar&amp;m=118666899424374&amp;w=2
+|title=Re: &amp;#x5B;Familiar&amp;#x5D; Which glibc for Familiar 0.8.4  ?
+|quote=Question: which version of the GLIBC was used to build the Familiar 0.8.4 ? Answer: 2.3.3
+}}&lt;/ref&gt;
+
+==See also==
+{{Portal|Free software}}
+* [[Gnulib]]
+* [[EGLIBC]]
+* [[uClibc]]
+* [[dietlibc]]
+
+==References==
+{{Reflist|2}}
+
+==External links==
+* [http://www.gnu.org/software/libc/ GNU libc homepage]
+* [http://sources.redhat.com/glibc/ GNU libc developers' page]
+
+{{CProLang}}
+{{GNU}}
+
+{{Use dmy dates|date=November 2010}}
+
+{{DEFAULTSORT:Gnu C Library}}
+[[Category:C libraries]]
+[[Category:GNU Project software|C Library]]
+[[Category:C Standard Library]]
+[[Category:Free development toolkits and libraries]]
+[[Category:Free cross-platform software]]
+[[Category:Free software programmed in C]]
+
+[[ar:ÙÙØªØ¨Ø© Ø¬ÙÙ ÙÙØ³Ù]]
+[[cs:GNU C Library]]
+[[de:GNU-C-Bibliothek]]
+[[et:Glibc]]
+[[el:GNU C Î²Î¹Î²Î»Î¹Î¿Î¸Î®ÎºÎ·]]
+[[es:Glibc]]
+[[eu:Glibc]]
+[[fa:Ú©ØªØ§Ø¨Ø®Ø§ÙÙ Ø³Û Ú¯ÙÙ]]
+[[fr:GNU C Library]]
+[[ko:GNU C ë¼ì´ë¸ë¬ë¦¬]]
+[[hy:Glibc]]
+[[it:GNU C Library]]
+[[nl:GNU C Library]]
+[[ja:GNU Cã©ã¤ãã©ãª]]
+[[no:GNU C Library]]
+[[pl:GNU C Library]]
+[[pt:GNU C Library]]
+[[ru:Glibc]]
+[[uk:Glibc]]
+[[zh:GNU C å½å¼åº«]]</rev></revisions></page></pages></query></api>

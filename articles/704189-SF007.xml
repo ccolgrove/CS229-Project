@@ -1,0 +1,87 @@
+<?xml version="1.0"?><api><query><pages><page pageid="704189" ns="0" title="Cedega (software)"><revisions><rev xml:space="preserve">{{Infobox software
+|  name = Cedega
+|  screenshot =&lt;!-- Deleted image removed:  [[Image:Oblivioncedega60.jpg|250px]] --&gt;
+|  caption = Cedega 6.0 running The Elder Scrolls IV: Oblivion
+|  developer = [[TransGaming Technologies]]
+|  latest_release_version = 7.3
+|  latest_release_date = {{release date|2009|06|02}}
+|  operating_system = [[Linux]]
+|  genre = [[Compatibility layer]]
+|  license = [[Cedega (software)#Controversy|See main article]]
+|  website = [http://www.transgaming.com www.transgaming.com]
+}}
+
+'''Cedega''' (formerly known as '''WineX''') was [[TransGaming Technologies]]' [[proprietary software|proprietary]] [[Fork (software development)|fork]] of [[Wine (software)|Wine]] (from the last version of [[Wine (software)|Wine]] under the [[X11 license]] before switching to [[GNU Lesser General Public License|GNU LGPL]]), designed specifically for running [[personal computer game|game]]s created for [[Microsoft Windows]] under [[Linux]]. As such, its primary focus was implementing the [[DirectX]] [[application programming interface|API]]. WineX was renamed to Cedega on the release of version 4.0 on June 22, 2004.
+
+Cedega Gaming Service was retired on February 28, 2011. TransGaming announced that development will continue under the [[GameTree Linux]] Developer Program. &lt;ref&gt;{{cite web | url = http://www.cedega.com/ | title = Official announcement about retirement of Cedega}}&lt;/ref&gt;
+
+==Licenses==
+Though Cedega is mainly [[proprietary software]], Transgaming does make part of the source publicly available via [[Concurrent Versions System|CVS]], under a mix of licenses.&lt;ref&gt;[http://www.transgaming.com/license.php?source=1 licenses]{{Dead link|date=January 2009}}&lt;/ref&gt; Though this is mainly done to allow a means for non-TG staff to view and submit fixes to the code, it is also frequently used as a means to obtain a quasi-demonstration version of Cedega. Transgaming released a proper demo of Cedega because of complaints of the difficulty of building a usable version of the program from the public CVS, as well as its outdated nature. The demo released by Cedega gave users a 14-day trial of a reasonably current version of the product with a watermark of the Cedega logo which faded from almost transparent to fully opaque every few seconds. This demo was removed without comment.
+
+While the licenses under which the code is released do permit non-commercial redistribution of precompiled public-CVS versions of the software, Transgaming strongly discourages this, openly warning that the license of TG-copyrighted sections of code will be changed if they feel abuse is occurring or otherwise threatened. Transgaming similarly discourages source-based distributions like [[Gentoo Linux]] from creating automated tools to let people build their own version of Cedega from the public CVS.&lt;ref&gt;{{cite web | url = http://www.gentoo.org/news/en/gwn/20030804-newsletter.xml#doc_chap1_sect4 | publisher = Gentoo | title = Newsletter notice about removal of Cedega CVS}}&lt;/ref&gt;
+
+The Wine project originally released Wine under the same MIT License as the X Window System, but owing to concern about proprietary versions of Wine (WineX) and not contributing their changes back to the core project, work as of March 2002 has used the LGPL for its licensing.
+
+==Functionality==
+In some cases it closely mimics the experience that Windows users have (insert disc, run Setup.exe, play).  In other cases some amount of user tweaking is required to get the game installed and/or in a state of playability. Cedega 5.2 introduced a feature called the Games Disc Database (GDDB) that simplifies many of these settings and adds auto-game detection when a CD is inserted so that settings are applied for the inserted game automatically.
+
+A basic list of features:
+
+* Some types of [[copy protection]]
+* Pixel Shaders 3.0
+* Vertex Shaders 3.0
+* DirectX 9.0
+* Joystick support including remapping axes
+* The ability to run some Windows games
+
+== History ==
+Cedega subscribers have been reducing constantly and have expressed a number of complaints&lt;ref&gt;{{cite web | url = http://www.cedega.com/forum/viewtopic.php?t=8924 | publisher = Transgaming | title = Your users are LEAVING}}&lt;/ref&gt; due to lack of updates, fatal problems with supported games and with Wine having achieved a number of features that were unique to Cedega, giving even better compatibility in some cases. Users attribute the apparent lack of interest from TransGaming on Cedega to their focus on [[TransGaming Technologies#Cider|Cider]], a similar MS-Win32, WINE based API layer for Mac OS X systems, supported by [[Electronics Arts]] to bring their Windows native games to Mac.&lt;ref&gt;{{cite web | url = http://www.transgaming.com/news/?id=50 | title = TransGaming to Develop EA Titles for Mac OS X}}&lt;/ref&gt;
+
+On November 13, 2007's Development Status report, Transgaming explained that a number of modification have been made to Cedegaâs code to add Wine's implementation of the [[MSI]] installation system and to be able to incorporate more of Wineâs codebase.&lt;ref name = &quot;Cider&quot;&gt;{{cite web | url = http://www.cedega.com/theden/?p=6 | publisher = Cedega | title = Cider}}&lt;/ref&gt; It has not been confirmed if these changes are in conformance with Wine's new license (GNU [[LGPL]]).
+
+Also on the November 13, 2007 report, it was announced that all of the work done on Cider will be merged back into Cedega (since both share the same code). Among the new features are ânew copy protection, 2.0 shader updates, a head start on shader model 3.0, performance upgrades, a self updating user interfaceâ and others.&lt;ref name = &quot;Cider&quot; /&gt;
+On September 23, Cedega officially presented the new version 6.1
+
+Cedega Gaming Service was retired on February 28, 2011. &lt;ref&gt;{{cite web | url = http://www.cedega.com/ | title = Official announcement about retirement of Cedega}}&lt;/ref&gt;
+
+== Controversy ==
+Transgamingâs business practice of benefiting financially from the Wine project, without contributing anything back to it has drawn criticism. Transgaming obtained the source to the original Wine project when it was under the [[MIT License]] and this license placed no requirements on how Transgaming published their software. TransGaming decided to release their software as proprietary software.&lt;ref&gt;[http://www.maximumpc.com/article/howtos/how_run_windows_games_linux How to run Windows games on Linux] - [[Maximum PC]]&lt;/ref&gt; Transgaming does release portions of the source code via CVS; however, it attaches legal restrictions which mean that it is not free software. Cedega includes licensed support for several types of CD-based copy protection (notably SecuROM and SafeDisc), the code for which TransGaming say they are under contract not to disclose.
+
+In reaction,{{Citation needed|date=June 2009}} the Wine project changed its license to the GNU Lesser General Public License (LGPL). This means that anyone who publishes a modified version of Wine must publish the source code under an LGPL-compatible (and therefore free software) license. TransGaming halted using code contributed to Wine when the license was changed, though this has resumed recently with TransGaming integrating certain LGPL portions of Wine into Cedega and placing those portions of the source code on their public servers.{{Citation needed|date=June 2009}}
+
+TransGaming offers a CVS tree for Cedega without copy protection related code and texture compression through its own [http://cvs.transgaming.org/cgi-bin/viewcvs.cgi repositories] with mixed [[LGPL]], [[AFPL]] and bstring licensing.&lt;ref name = &quot;License&quot;&gt;{{cite web | url = http://www.cedega.com/license.php?source=1 | publisher = TransGaming | title = Software License}}&lt;/ref&gt; [http://cedegawiki.sweetleafstudios.com/wiki/Point2Play Point2Play] graphical frontend for Cedega is also not found on the CVS.
+
+[http://ubuntuforums.org/showthread.php?t=193814/ Scripts] and [http://www.linux-gamers.net/modules/wiwimod/index.php?page=howto%20cedega%20cvs guides] have been made by the community to facilitate building Cedega from the source tree.
+
+== See also ==
+{{Portal|Video games}}
+* [[Wine (software)|Wine]] â the [[free software]]/[[open source software]] on which Cedega is based.
+* [[CrossOver]] â another commercial proprietary Wine-based product, targeted at running productivity/business applications and, recently, games.
+
+==References==
+{{Reflist|2}}
+
+==External links==
+*[http://www.cedega.com/ Cedega Homepage]
+*[http://www.cedega.com/development/ Developers Page]
+*[http://www.cedegawiki.net/ Unofficial Transgaming Wiki] â User-maintained database of games that work and donât work with Cedega, along with game-specific setup instructions and tweaks
+*[http://showmedo.com/videos/series?name=LinuxCadieuxCedega Screencast for installing and testing] Cedega on SuSE Linux at [[showmedo]]
+
+[[Category:Compatibility layers]]
+[[Category:Software derived from or incorporating Wine]]
+[[Category:Software forks]]
+
+[[cs:Cedega]]
+[[de:Cedega]]
+[[es:Cedega]]
+[[fr:Cedega]]
+[[ko:Cedega]]
+[[it:Cedega]]
+[[nl:Cedega]]
+[[no:Cedega]]
+[[pl:Cedega]]
+[[pt:Cedega]]
+[[ru:Cedega]]
+[[fi:Cedega]]
+[[sv:Cedega]]
+[[vi:Cedega]]</rev></revisions></page></pages></query></api>

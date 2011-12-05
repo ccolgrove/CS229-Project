@@ -1,0 +1,556 @@
+<?xml version="1.0"?><api><query><pages><page pageid="312015" ns="0" title="Windows Virtual PC"><revisions><rev xml:space="preserve">{{about|the virtualization software by Microsoft|the generic term|Virtual machine}}
+{{Use mdy dates|date=August 2010}}
+{{Infobox software
+| name                   = Windows Virtual PC
+| logo                   = [[File:Virtual pc icon.png|64px]]
+| screenshot             = [[File:Windows virtual pc.png|300px]]
+| caption                = Windows Virtual PC running Windows XP Mode on a [[Windows 7]] host
+| developer              = [[Microsoft]]
+| released               = {{start date|2009|September|19}}&lt;ref name=&quot;wvpc-download&quot;&gt;{{cite web
+  |url = http://www.microsoft.com/downloads/details.aspx?familyid=2B6D5C18-1441-47EA-8309-2545B08E11DD&amp;displaylang=en
+  |title = Download details: Windows Virtual PC
+  |work = Microsoft Download Center
+  |publisher = Microsoft corporation
+  |date = September 19, 2009
+  |accessdate = June 5, 2010
+  }}&lt;/ref&gt;
+| latest_release_version = 6.1.7600.16393&lt;!-- If you update this, don't forget to update [[Comparison of platform virtual machines]]--&gt;
+| latest_release_date    = {{start date and age|2011|February|10}}&lt;ref name=&quot;wvpc-KB977206&quot;&gt;{{cite web
+  |url = http://www.microsoft.com/downloads/en/details.aspx?FamilyID=2b6d5c18-1441-47ea-8309-2545b08e11dd
+  |title = Windows Virtual PC
+  |work = Microsoft Download Center
+  |publisher = Microsoft corporation
+  |date = March 17, 2010
+  |accessdate = February 2, 2011
+  }}&lt;/ref&gt;
+| operating_system       = [[Windows 7]] - All editions except Starter&lt;!--
+  NOT TO BE CONFUSED WITH XP MODE WHICH RUNS ONLY ON SELECT EDITIONS
+  --&gt;&lt;ref name=&quot;wvpc-desc&quot;&gt;{{cite web
+  |url = http://support.microsoft.com/?kbid=958559
+  |title = Description of Virtual PC for Windows 7
+  |work = Microsoft support
+  |publisher = Microsoft Corporation
+  |date = April 1, 2010
+  |accessdate = June 5, 2010
+  }}&lt;/ref&gt;
+| genre                  = [[Virtual machine]]
+| size                   = '''32-bit:''' 9.1 [[Megabytes|MB]]&lt;br /&gt;'''64-bit:''' 9.9&amp;nbsp;MB&lt;ref name=&quot;wvpc-download&quot;/&gt;
+| license                = [[Proprietary software|Proprietary]]&lt;ref name=&quot;wvpc-desc&quot;/&gt;
+| website                = [http://www.microsoft.com/windows/virtualpc/ microsoft.com/windows/virtualpc/]
+}}
+
+'''Windows Virtual PC''' (successor to '''Microsoft Virtual PC 2007''', '''Microsoft Virtual PC 2004''', and '''Connectix Virtual PC''') is a [[Platform virtualization|virtualization]] program for [[Microsoft Windows]]. In July 2006 Microsoft released the Windows-hosted version as a free product.&lt;ref&gt;{{cite web
+| url = http://blogs.msdn.com/virtual_pc_guy/archive/2006/07/12/662535.aspx
+| title = Virtual PC is free!
+| date = July 12, 2006
+| accessdate = 14 October 2009}}&lt;/ref&gt; In August 2006 Microsoft announced the Macintosh-hosted version would not be ported to Intel-based Macintosh computers, effectively discontinuing the product as PowerPC-based Macintosh computers are no longer manufactured. The newest release, Windows Virtual PC, does not run on versions of Windows earlier than [[Windows 7]], and does not officially run MS-DOS or operating systems earlier than Windows XP SP3 Professional.&lt;ref name=&quot;wvpc-desc&quot; /&gt; The older versions, which support a wider range of host and guest operating systems, remain available.
+
+Virtual PC virtualizes a standard [[IBM PC compatible|PC]] and its associated hardware. Supported Windows operating systems can run inside Virtual PC. Other operating systems such as [[Linux]] may run, but are not officially supported, and Microsoft does not provide the necessary drivers (called &quot;Virtual Machine Additions&quot;) for Linux.&lt;ref name=freecountry&gt;[http://www.thefreecountry.com/emulators/pc.shtml Thefreecountry: Free PC/Intel x86 Emulators and Virtual Machines]&lt;/ref&gt;
+
+== History ==
+Connectix Virtual PC, Microsoft Virtual PC 2004, Microsoft Virtual PC 2007, and Windows Virtual PC are successive versions of the same software. Windows Virtual PC runs only under Windows 7 and is only designed to run operating systems from XP Professional on, but the earlier Microsoft versions which run under older versions of Windows are still available, and can run operating systems older than Windows XP.
+
+=== Virtual PC by Connectix ===
+[[File:Virtual PC 3 for Mac OS running Windows 95.png|thumb|[[Connectix]] Virtual PC version 3 in [[Mac OS 9]], running a [[Brazilian Portuguese]] edition of [[Windows 95]]]]
+
+Virtual PC was originally developed for the Macintosh and released by Connectix in June 1997. The first version of Virtual PC designed for Windows-based systems, version 4.0, was released in June 2001. Connectix sold versions of Virtual PC bundled with a variety of guest operating systems, including Windows, [[OS/2]], and [[Red Hat Linux]]. As virtualization's importance to enterprise users became clear, Microsoft took interest in the sector and acquired Virtual PC and [[Microsoft Virtual Server|Virtual Server]] (unreleased at the time) from Connectix in February 2003.
+
+Earlier versions of Virtual PC supported the following features: (now removed in Microsoft Virtual PC 2004, 2007, and Windows Virtual PC):
+* Older versions of Virtual PC (v5.0 or earlier) may have the hard disk formatted after creating the [[VHD (file format)|Virtual Hard Disk]] file. Newer versions must partition and format the [[VHD (file format)|Virtual Hard Disk]] file manually.
+* A ''Virtual Switch'' available in Virtual PC version 4.1 or earlier allows adding multiple network adapters.
+* Older operating systems are supported with Virtual Machine additions.
+* Older versions of Virtual PC for Macintosh can run on Mac OS 9.2.2 or earlier. Support of Apple [[System 7|System 7.5]] are dropped in version 3.
+
+Under agreement with Connectix, Innotek GmbH (makers of [[VirtualBox]], now part of [[Sun Microsystems]] which is itself owned by [[Oracle Corporation|Oracle]]) ported version 5.0 to run on an OS/2 host.&lt;ref&gt;[http://www.bityard.com/article.php?sid=100 Innotek/Connectix Virtual PC]&lt;/ref&gt; This version also included guest extensions (VM additions) for OS/2 guests, which could run on Windows, OS/2 or Mac OS X hosts using Virtual PC versions 5, 6 or 7. A new version of the guest extensions was later included with Microsoft's Virtual PC 2004.
+
+=== Microsoft Virtual PC ===
+{{Refimprove section|date=March 2011}}
+[[File:Virtualpc.png|thumb|Virtual PC 6.1 for Macintosh]]
+On July 12, 2006, Microsoft released Virtual PC 2004 SP1 for Windows free of charge, but the Mac version was not made free. The equivalent version for Mac, version 7, was the final version of Virtual PC for Mac. It ran on [[Mac OS X]] 10.2.8 or later for [[PowerPC]] and was a [[Proprietary software|Proprietary]] [[commercial software]] product.&lt;ref name=&quot;vpc-mac-main&quot;&gt;{{cite web
+  | url = http://www.microsoft.com/australia/office/mac/virtualpc7/default.aspx
+  | title = Virtual PC 7 for Mac
+  | work = Microsoft for Mac - Australian website
+  | publisher = Microsoft corporation
+  | accessdate = June 10, 2010
+}}&lt;/ref&gt;
+
+Virtual PC 2007 was released only for the Windows platform, with public [[Development stage#Beta|beta]] testing beginning October 11, 2006, and production release on February 19, 2007. It added support for [[x86 virtualization|hardware virtualization]], viewing virtual machines on multiple monitors and support for Windows Vista as both host and guest. (The [[Windows Aero]] interface is disabled on Windows Vista guests due to limitations of the emulated video hardware; however, Aero effects can be rendered by connecting to the guest via [[Remote Desktop Connection]] from an Aero-enabled Vista host.)&lt;ref name=aero_savill/&gt;
+
+On May 15, 2008, Microsoft released Virtual PC 2007 Service Pack 1, which added support for both Windows XP SP3 and Vista SP1 as guest and host OSes, as well as [[Windows Server 2008]] Standard as a guest OS.&lt;ref&gt;[http://arstechnica.com/journals/microsoft.ars/2008/05/15/microsoft-drops-some-details-on-upcoming-virtual-pc-2007-sp1 Microsoft releases Virtual PC 2007 SP1]&lt;/ref&gt;&lt;ref&gt;{{cite web | title = Virtual PC 2007 SP1 Release Notes | publisher = Microsoft | date = 2008-05-15 | url = http://www.microsoft.com/downloads/details.aspx?FamilyID=9f3d3eb5-5e03-4712-999c-e96f91bdf128&amp;displaylang=en | accessdate = 2009-06-28}}&lt;/ref&gt; A [[hotfix]] rollup for Virtual PC 2007 SP1, released February 20, 2009, solved networking issues and enhanced the maximum screen resolution to 2048Ã1920 (32-bit),&lt;ref&gt;[http://support.microsoft.com/kb/958162 KB958162]&lt;/ref&gt; enabling 16:9 resolutions such as 1920Ã1080. A security update was released on 14 July 2009 to address an elevation of privilege vulnerability in guest operating systems.&lt;ref&gt;[http://www.microsoft.com/technet/security/bulletin/MS09-033.mspx MS09-033]&lt;/ref&gt;
+
+{| class=&quot;wikitable&quot;
+|+ Release dates of Microsoft Virtual PC 2007
+|-
+! Date !! Version !! Description
+|-
+| 2006-10-11 || 6.0.122 || [[Software release life cycle#Beta|Beta]]
+|-
+| 2007-01-02 || 6.0.142 || [[Software release life cycle#Release candidate|Release Candidate]] 1
+|-
+| 2007-02-22 || 6.0.156 || [[Software release life cycle#RTM|Release to Manufacturing]]
+|-
+| 2008-05-15 || 6.0.192 || [[Service Pack]] 1&lt;ref&gt;{{Cite web |url = http://www.microsoft.com/downloads/en/details.aspx?familyid=28C97D22-6EB8-4A09-A7F7-F6C7A1F000B5&amp;displaylang=en |title = Download details: Microsoft Virtual PC 2007 SP1 |work = Microsoft Download Center |publisher = Microsoft Corporation |date = May 5, 2005 |accessdate = April 1, 2011}}&lt;/ref&gt;
+|-
+| 2009-02-20 || 6.0.210 || Update&lt;ref&gt;{{Cite web |url = http://support.microsoft.com/kb/958162 |title = Description of the hotfix rollup package for Virtual PC 2007 Service Pack 1: February 20, 2009 (Revision: 1.2) |date = February 20, 2009 |accessdate = April 1, 2011 |work = Microsoft Support |publisher = Microsoft Corporation}}&lt;/ref&gt;
+|-
+| 2009-07-14 || {{N/A}}   || Security Update MS09-33&lt;ref&gt;{{Cite web |url = http://www.microsoft.com/technet/security/bulletin/MS09-033.mspx |title = Vulnerability in Virtual PC and Virtual Server Could Allow Elevation of Privilege (969856) |work = [[Microsoft TechNet]] |publisher = Microsoft Corporation |date = July 14, 2009 |accessdate = April 1, 2011}}&lt;/ref&gt;
+|}
+
+=== Windows Virtual PC ===
+Windows Virtual PC entered public beta testing on April 30, 2009,&lt;ref&gt;{{cite web
+| last = Hachman
+| first = Mark
+| title = Microsoft Posts Windows Virtual PC Beta
+| work = [[PC Magazine]]
+| publisher = [[Ziff-Davis]]
+| date = 30 April 2009
+| url = http://www.pcmag.com/article2/0,2817,2346296,00.asp
+| accessdate = June 28, 2009
+}}&lt;/ref&gt; and was released alongside Windows 7.&lt;ref name=&quot;MS_WVPC&quot;&gt;{{cite web
+| title = Windows Virtual PC
+| publisher = Microsoft.com
+| url = http://www.microsoft.com/windows/virtual-pc/default.aspx
+}}&lt;/ref&gt;  Unlike its predecessors, this version supports only Windows 7 host operating systems.&lt;ref name=&quot;wvpc-desc&quot; /&gt; It originally required [[X86 virtualization#Hardware support|hardware virtualization support]] but on March 19, 2010, Microsoft released an update to Microsoft Virtual PC which allows it to run on PCs without hardware support.&lt;ref name=&quot;wvpc-KB977206&quot; /&gt;
+
+Windows Virtual PC is available free of charge for certain editions of Windows 7,&lt;ref name=&quot;wvpc-desc&quot; /&gt; either pre-installed by [[Original equipment manufacturer|OEMs]] or via download from the Microsoft website.&lt;ref name=&quot;wvpc-download&quot; /&gt;
+
+====New features&lt;ref&gt;{{cite web
+| title = Compare some of the many features of Virtual PC 2007 to Windows Virtual PC
+| publisher = Microsoft corporation
+| url = http://www.microsoft.com/windows/virtual-pc/features/compare.aspx
+}}&lt;/ref&gt;====
+* USB support and redirection â connect peripherals such as flash drives and digital cameras, and print from the guest to host OS [[Printer (computing)|printers]]. However, USB isochronous transfer mode is not supported &lt;ref&gt;[http://www.acommit.ch/Portals/0/Windows%207%20RC%20Partnerevent%20Mischa%20Faden.pdf Selling Windows 7 to the Enterprise: Microsoft Switzerland Technology Specialist presentation]&lt;/ref&gt;
+* Seamless application publishing and launching â run [[#Windows XP Mode|Windows XP Mode]] applications directly from the Windows 7 desktop
+* Support for [[Multithreading (computer hardware)|multithreading]] â run multiple virtual machines concurrently, each in its own thread for improved stability and performance
+* [[Smart card]] redirection â use smart cards connected to the host
+* Integration with [[Windows Explorer]] â manage all VMs from a single Explorer folder (%USER%\Virtual Machines)
+
+==== Removed features ====
+* The Virtual Machine console is replaced by an integrated ''Virtual Machines'' shell folder. Several options from the console have been removed such as ''Restore at start'', CPU time performance settings, muting sound in inactive virtual machines, full-screen resolution related options, configuring the host key, mouse capture options and settings for requiring administrator permissions.&lt;ref&gt;[http://social.technet.microsoft.com/Forums/en-US/w7itprovirt/thread/38fa2da8-5a22-4dad-8521-d4e108b0f2df/ Are Windows Virtual PC &quot;Options&quot; Still available ?]&lt;/ref&gt;
+* Official guest support for operating systems earlier than Windows XP Professional
+* Drag-and-drop file sharing between the guest and the host&lt;ref name=&quot;DnD-unsupported&quot;&gt;{{cite web
+| url = http://blogs.technet.com/windows_vpc/archive/2009/08/04/windows-virtual-pc.aspx#3273920
+| title = Windows Virtual PC
+| work = Windows Virtual PC blog
+| publisher = Microsoft corporation
+| date = August 4, 2009
+| accessdate = 9 June 2010
+| quote = @EnricoG: Drag and Drop is not a supported feature in WVPC. Clipboard sharing (for cut, copy and paste) and drive/folder sharing are supported.
+}} {{Verify credibility|reason = This information is given in the comments section, not in the blog post itself.|date=June 2010}}&lt;/ref&gt;
+* Direct sharing of folders between host and guest operating system (Only volumes may be shared between operating systems)&lt;ref name=&quot;Volume-sharing&quot;&gt;{{cite web
+| url = http://blogs.technet.com/b/windows_vpc/archive/2009/12/22/folder-sharing-between-windows-7-and-vm.aspx
+| title = Folder Sharing between Windows 7 and VM
+| work = Windows Virtual PC blog
+| publisher = Microsoft corporation
+| date = December 21, 2009
+| accessdate = August 20, 2010
+}}&lt;/ref&gt;
+* Ability to commit changes in undo disks upon turning off virtual machines (Doing so is now only possible through virtual machine ''Settings'' dialog box)&lt;ref&gt;{{cite web
+| url = http://blogs.msdn.com/virtual_pc_guy/archive/2009/08/18/windows-virtual-pc-and-undo-disks.aspx
+| title = Windows Virtual PC and Undo Disks
+| work = Virtual PC Guy's Blog
+| publisher = Microsoft corporation
+| date = September 18, 2009
+| accessdate = June 9, 2010
+| last = Armstrong
+| first = Ben
+}}&lt;/ref&gt;
+* Ability to use physical and virtual Parallel ports&lt;ref&gt;{{cite web
+| url = http://blogs.msdn.com/virtual_pc_guy/archive/2009/06/26/creating-virtual-hard-disks-with-windows-virtual-pc.aspx#9831105
+| work = Virtual PC Guy's Blog
+| publisher = Microsoft corporation
+| title = Creating Virtual Hard Disks with Windows Virtual PC
+| date = June 26, 2009
+| accessdate = June 9, 2010
+| first = Ben
+| last = Armstrong
+| quote = Windows Virtual PC does not support parallel ports.  As Tom mentions, you will have to use a USB adapter if you want this functionality.
+}}&lt;/ref&gt;
+* User interface controls for using virtual [[floppy disk]]s (Virtual floppy disk functionality, however, is still supported and may be accessed using a [[Script (computing)|script]])&lt;ref&gt;{{cite web
+| url = http://blogs.msdn.com/virtual_pc_guy/archive/2009/10/01/using-floppy-disks-with-windows-virtual-pc.aspx
+| title = Using Floppy Disks with Windows Virtual PC
+| work = Virtual PC Guy's Blog
+| publisher = Microsoft corporation
+| date = October 1, 2009
+| accessdate = June 9, 2010
+| first = Ben
+| last = Armstrong
+}}&lt;/ref&gt;
+* Virtual PC additions for guest operating systems no longer supported have been removed. However, installing Virtual Machine Additions from an older Microsoft virtualization product works for some guest OSes.&lt;ref&gt;[http://blogs.msdn.com/b/virtual_pc_guy/archive/2007/10/30/installing-dos-additions-under-vpc-2007.aspx Installing DOS additions under VPC 2007]&lt;/ref&gt;&lt;ref&gt;[http://blogs.msdn.com/b/virtual_pc_guy/archive/2010/05/27/installing-windows-98-on-windows-virtual-pc.aspx Installing Windows 98 on Windows Virtual PC]&lt;/ref&gt;&lt;ref&gt;[http://blogs.msdn.com/b/cjacks/archive/2010/07/19/using-virtual-pc-2004-additions-to-enhance-the-windows-2000-guest-experience-on-windows-virtual-pc.aspx Using Virtual PC 2004 Additions to Enhance the Windows 2000 Guest Experience on Windows Virtual PC]&lt;/ref&gt;
+* Properties of the Virtual Machine like Guest OS, processor, processor features, video mode, Video RAM, code cache, IDE controller reads and writes, ethernet reads and writes, video frame rate and command line options can no longer be viewed.{{Citation needed|date=February 2011}}
+
+== System requirements ==
+System requirements for Windows Virtual PC:&lt;ref&gt;http://www.microsoft.com/windows/virtual-pc/support/requirements.aspx&lt;/ref&gt;&lt;ref name=&quot;MS_XPM_brochure&quot;&gt;{{cite web
+| title = Windows XP Mode for Windows 7 brochure
+| publisher = Microsoft corporation
+| url = http://download.microsoft.com/download/7/5/A/75A2C993-BFCC-47D0-8B6C-7C8CE2BA9833/Windows%20XP%20Mode%20for%20Windows%207_brochure.pdf
+| year = 2009
+| accessdate = June 28, 2009
+}}&lt;/ref&gt;
+* Computer running Windows 7 (all editions except Starter)
+* 1+ GHz processor (32- or 64-bit)
+* 1.25&amp;nbsp;GB [[RAM|memory]] required, 2&amp;nbsp;GB recommended
+* Additional 15&amp;nbsp;GB of hard disk space per virtual Windows environment recommended
+* Optional: if the processor supports hardware-assisted virtualization technology such as AMD-V or Intel-VT, it will be used. Before March 19, 2010, such a processor was mandatory.
+
+== Windows XP Mode ==
+[[File:Windows 7 XP Mode.png|thumb|right|Internet Explorer versions 6, 7, and 8 run concurrently on a Windows 7 Release Candidate desktop using ''Windows XP Mode''.]]
+'''Windows XP Mode''' ('''XPM''')&lt;ref&gt;{{Cite web
+  | title=Windows XP Mode in Windows 7 and Virtual PC - Part 1: Maintaining Application Compatibility
+  | url=http://capitalhead.com/articles/windows-xp-mode-in-windows-7-and-virtual-pc---part-1-maintaining-application-compatibility.aspx
+  | work=Windows XP Mode in Windows 7 and Virtual PC - Part 1: Maintaining Application Compatibility
+  | accessdate=2009-06-16
+}}&lt;/ref&gt; is a virtual machine package for Windows Virtual PC containing a pre-installed, licensed copy of [[Windows XP Professional]] with Service Pack 3 as its guest OS. Previously, both the CPU and motherboard of the host had to support hardware virtualization,&lt;ref name=freecountry/&gt; but an update in early 2010 eliminated this requirement.&lt;ref name=&quot;ms-vpc-faq&quot;&gt;{{Cite web
+  |url = http://www.microsoft.com/windows/virtual-pc/support/faq.aspx
+  |title = Windows Virtual PC: FAQ
+  |work = Windows Virtual PC website
+  |publisher = Microsoft Corporation
+  |accessdate = 22 November 2010
+}}&lt;/ref&gt; Pre-installed integration components allow applications running within the virtualized environment to appear as if running directly on the host,&lt;ref name=&quot;MS_WVPC&quot; /&gt;&lt;ref&gt;[http://community.winsupersite.com/blogs/paul/archive/2009/04/24/secret-no-more-revealing-virtual-windows-xp-for-windows-7.aspx Secret No More: Revealing Windows XP Mode for Windows 7 - SuperSite Blog]&lt;/ref&gt; sharing the native desktop and [[Start Menu]] of Windows 7 as well as participating in file type associations. Windows XP Mode applications run in a [[Terminal Services]] session in the virtualized Windows XP, and are accessed via [[Remote Desktop Protocol]] by a client running on the Windows 7 host.&lt;ref name=&quot;WVPCandXPM_Download&quot;&gt;{{Cite web
+  | url = http://www.microsoft.com/windows/virtual-pc/download.aspx
+  | title = Download Windows Virtual PC and Windows XP Mode
+}}&lt;/ref&gt;&lt;ref&gt;{{Cite web
+  | url = http://www.withinwindows.com/2009/04/28/windows-xp-mode-internals-part-2-application-publishing-magic/
+  | author = Rafael Rivera
+  | title = Windows XP Mode Internals â Part 2 (Application Publishing Magic)
+  | accessdate = 2009-04-30
+  | publisher = WithinWindows.com}}&lt;/ref&gt;
+
+Applications running in Windows XP Mode do not have compatibility issues, as they are actually running inside a Windows XP virtual machine and redirected using RDP to the Windows 7 host. For 64-bit editions of Windows 7, XP Mode may be used to run 16-bit applications; it includes [[NTVDM]].
+
+Windows XP Mode is available free of charge to users of Windows 7 Professional, Enterprise, and Ultimate.&lt;ref name=&quot;MS_XPM_brochure&quot;/&gt; Users of other editions of Windows 7 are not eligible to download and use it.&lt;ref name=&quot;ms-vpc-faq&quot; /&gt;&lt;ref&gt;{{Cite web
+  | url = http://www.microsoft.com/windows/virtual-pc/download.aspx
+  | title = Download Windows XP Mode
+  | work = Windows Virtual PC website
+  | publisher = Microsoft Corporation
+  | accessdate = 22 November 2010
+  | quote = (After selecting an inappropriate edition of Windows 7) You are not eligible to download Windows XP Mode. You must have Windows 7 Professional, Enterprise, or Ultimate to run Windows XP Mode.
+}}&lt;/ref&gt; This restriction does not apply to Windows Virtual PC itself.
+
+Windows XP Mode can also be run with the [[VMware Player]] and [[VMware Workstation]]. However, VMware products only import Windows XP Mode on Windows 7 Professional, Enterprise, or Ultimate to adhere with Microsoft licensing requirements.&lt;ref&gt;{{Cite web
+  |url = http://www.mydigitallife.info/2010/05/13/run-xp-mode-in-vmware-workstation-or-player-with-activation-intact/
+  |title =  Run XP Mode in VMware Workstation or Player with Activation Intact
+  |work = My Digital Life
+  |date = May 13, 2010
+  |accessdate = June 17, 2011
+}}&lt;/ref&gt;
+
+== Emulated environment ==
+Virtual PC emulates the following environments:&lt;ref&gt;{{cite web|work=Microsoft.com|title=Overview of the technical specifications of virtual machines in Virtual PC 2004|date=2004-10-27|accessdate=2010-05-23|url=http://support.microsoft.com/kb/833144}}&lt;/ref&gt;
+* [[Intel]] [[Pentium II]] ([[32-bit]]) processor (but virtualizes the host processor on Windows versions) with an [[Intel]] [[Intel 440BX|440BX]] chipset.
+* Standard [[SVGA]] [[VESA]] [[graphics card]] ([[S3 Trio]] 32 [[Peripheral Component Interconnect|PCI]] with 4 [[megabyte|MB]] [[video RAM]], adjustable in later versions up to 16&amp;nbsp;MB by manually editing a virtual machine's settings file).
+* System [[BIOS]] from [[American Megatrends]] (AMI).
+* [[Creative Labs]] [[Sound Blaster]] 16 [[Industry Standard Architecture|ISA]] [[Plug and Play|PnP]]. (When Vista is installed as both the host (main) and guest (virtual) operating systems, settings are synchronized with the host and audio configuration is not required.)
+* [[Digital Equipment Corporation|DEC]] 21041 (DEC 21140 in newer versions) [[Ethernet]] [[computer network|network]] card.
+* Microsoft Virtual PC 2007 and earlier do not have the ability to redirect USB devices to the guest machine, although devices connected to the host OS via USB can be used as normal by Virtual PC{{Clarify|date=November 2010}}.
+* Programs using undocumented features of hardware, exotic timings, or unsupported [[opcodes]] may not work.
+
+Implementation:
+* The [[Apple Macintosh|Macintosh]] version of Virtual PC uses [[dynamic recompilation]] to translate the [[x86]] code used by PCs into equivalent [[PowerPC]] code for Macs.
+* The Windows version of Virtual PC also uses dynamic recompilation, but only to translate x86 [[kernel mode]] and [[real mode]] code into x86 [[user mode]] code; original user mode and [[virtual 8086 mode]] code run natively.
+* Guest call traps are used, especially for guest extensions, to accelerate emulation or offer additional features, such as integration with the host environment.
+* Virtual PC and [[Microsoft Virtual Server|Virtual Server]] encapsulate virtual hard disks in the [[VHD (file format)|Virtual Hard Disk]] (VHD) file format, for which Microsoft has made all documentation available under the [[Microsoft Open Specification Promise|Open Specification Promise]].
+
+Earlier versions of Virtual PC supported the following features: (now removed in Microsoft Virtual PC 2004, 2007, and Windows Virtual PC):
+* Older versions of Virtual PC (v5.0 or earlier) may have the hard disk formatted after creating the [[VHD (file format)|Virtual Hard Disk]] file. Newer versions must partition and format the [[VHD (file format)|Virtual Hard Disk]] file manually.
+* A ''Virtual Switch'' available in Virtual PC version 4.1 or earlier allows adding multiple network adapters.
+* Older operating systems are supported with Virtual Machine additions.
+* Older versions of Virtual PC for Macintosh can run on Mac OS 9.2.2 or earlier. Support of Apple [[System 7|System 7.5]] was dropped in version 3.
+
+== Virtual machine integration components ==
+Windows Virtual PC may enable guest operating systems running inside virtual machines to interact with their host operating system beyond what is feasible between two physical computers, such as sharing physical hardware components or exchanging data. To do so however, ''integration components'' must be installed on the guest operating systems. When no integration component is installed, the only mean of communicating between two machines (either virtual or physical) is through a virtual network interface. Even the mouse cursor can only be controlled by one operating system (either real or virtual) at any given time. However, once the Integration Components are installed on the guest operating systems, the following features are automatically activated:&lt;ref name = &quot;UMVS2&quot;&gt;{{Cite book
+| last = Tulloch
+| first = Mitch
+| year = 2010
+| title = Understanding Microsoft Virtualization Solutions, From the Desktop to the Datacenter
+| edition = 2nd
+| publisher = Microsoft Press
+| location = Redmond, WA
+| pages = 133â136
+| url = http://download.microsoft.com/download/5/B/4/5B46A838-67BB-4F7C-92CB-EABCA285DFDD/693821ebook.pdf
+}}&lt;/ref&gt;
+* Mouse cursor sharing: Mouse cursor can be move freely between the machines.
+* Host-initiated shutdown: Virtual machine can be shut down, restarted or put into standby or hibernation via a set of [[API]] functions.
+* Time synchronization: The virtual machine's clock will be automatically synchronized with the host operating system's clock.
+* Process responsiveness monitoring: Host operating system will be able to detect whether the software on the guest operating system is responsive or hung.
+* Dynamic screen resolution: The screen resolution of the guest operating system can simply be changed by resizing the window into which it is running.
+
+In addition to features described above, guest operating systems may also take advantage of the following integration features but only when the administrator activates them:&lt;ref name = &quot;UMVS2&quot; /&gt;
+* Audio sharing: Audio played on the guest operating system may be brought to the host operating system and played on it.
+* Clipboard sharing: Contents such as text, picture or everything that is cut or copied to [[Clipboard (software)|Windows Clipboard]] maybe pasted in other machines.
+* Printer sharing: Guest operating systems may print on the host operating system's printer . This feature should not be confused with File and Printer Sharing over an emulated network connection.
+* Smart card sharing: [[Smart card]]s connected to host operating system may be accessed on guest operating systems.
+* File sharing: Windows Virtual PC can also share [[disk partition]]s and [[disk drive]]s of the host operating system with guest operating systems.&lt;ref name=&quot;DnD-unsupported&quot; /&gt;&lt;ref name=&quot;Volume-sharing&quot; /&gt; This includes USB mass storage devices that are connected later.&lt;ref&gt;{{cite web
+| url = http://blogs.technet.com/b/windows_vpc/archive/2009/12/14/usb-architecture-in-windows-virtual-pc.aspx
+| title = USB Architecture in Windows Virtual PC
+| work = Windows Virtual PC blog
+| publisher = Microsoft corporation
+| date = December 13, 2009
+| accessdate = August 20, 2010
+}}&lt;/ref&gt;
+
+In Windows Virtual PC, enabling integration features automatically makes the virtual machine user account accessible using [[Remote Desktop Connection]].&lt;ref name = &quot;UMVS2&quot; /&gt;
+
+== Supported host and guest operating systems {{Anchor|Host operating systems}} {{Anchor|Guest operating systems}} ==
+
+Virtual PC allows multiple guest operating systems to run virtualized on a single physical host. Although a number of popular host and guest operating systems lack official Microsoft support, there are sometimes few, if any, technical obstacles impeding installation. Instead, a configuration may be unsupported due to Microsoft's own [[EULA|licensing]] restrictions,&lt;ref name=bergstein/&gt;&lt;ref name=vista_eula_orig/&gt; or a decision to focus testing and support resources elsewhere, especially when production use of a [[Legacy software#Legacy support|legacy]] product fades.&lt;ref name=vguy_win95/&gt;&lt;ref name=vguy_dosadd/&gt;
+
+A program manager on Microsoft's core virtualization team explains what official support entails:
+{{quote|With each release of Virtual PC we spend a significant amount of time trying to decide which (guest) operating system should be officially supported.  While Virtual PC is capable of running many operating systems, official support for an operating system means that we will test it thoroughly, not ship Virtual PC if an issue exists with that operating system, and provide full support for customers who encounter problems while running these operating systems under Virtual PC.&lt;ref name=vguy_win95&gt;{{cite web | last = Armstrong | first = Ben | title = Why won't the Virtual PC 2007 Virtual Machine Additions load on Windows 95? | work = [http://blogs.msdn.com/virtual_pc_guy/ Virtual PC Guy's Weblog] | publisher = [[MSDN Blogs]] | date = 2007-01-03 | url = http://blogs.msdn.com/virtual_pc_guy/archive/2007/01/03/why-won-t-the-virtual-pc-2007-virtual-machine-additions-load-on-windows-95.aspx | accessdate = 2009-07-10}}&lt;/ref&gt;|Ben Armstrong, &quot;Virtual PC Guy&quot;}}
+
+As a product positioned for desktop use, Virtual PC provides official support for a different set of operating systems than its server-oriented counterpart, [[Microsoft Virtual Server]] and the more advanced [[Hyper-V]].&lt;ref&gt;{{cite web | title = Microsoft Virtualization Technologies | work = Infrastructure Planning and Design | publisher = [[Microsoft TechNet]] | date = 2008-02-25 [First published 2007-11-12] | url = http://technet.microsoft.com/en-us/library/bb897466.aspx | accessdate = 2009-07-10}}&lt;/ref&gt;&lt;ref name=vpc2004_comparo/&gt; While the latter products support a range of server operating systems,&lt;ref name=vs2005_faq/&gt;&lt;ref name=hyperv_guests&gt;{{cite web | title = Virtualization with Hyper-V: Supported Guest Operating Systems | work = Windows Server 2008 â Product Information | publisher = [[Microsoft.com]] | date = &lt;!-- 2008? --&gt; | url = http://www.microsoft.com/windowsserver2008/en/us/hyperv-supported-guest-os.aspx | accessdate = 2009-07-10}}&lt;/ref&gt; Virtual PC 2007 supports only one variety as host and another as guest;&lt;ref name=vpc2007sp1_rel_notes/&gt; its successor, Windows Virtual PC, supports none.&lt;ref name=wvpc_tips/&gt; And, whereas Virtual Server and Hyper-V have officially supported select [[Linux]] guests since 2006&lt;ref name=vguy_linuxvs&gt;{{cite web | last = Armstrong | first = Ben | title = Linux is now supported under Virtual Server | work = [http://blogs.msdn.com/virtual_pc_guy/ Virtual PC Guy's Weblog] | publisher = [[MSDN Blogs]] | date = 2006-04-03 | url = http://blogs.msdn.com/virtual_pc_guy/archive/2006/04/03/566273.aspx | accessdate = 2009-07-10}}&lt;/ref&gt; and 2008,&lt;ref name=earp_linuxhyperv/&gt; respectively, {{as of|2009|lc=on}}, no Microsoft release of Virtual PC has officially supported Linux. Nonetheless, a number of [[Linux distribution]]s&lt;ref name=earp_linuxhyperv&gt;{{cite web | last = Earp | first = Sean | title = Linux on Hyper-V | work = [http://blogs.technet.com/seanearp/default.aspx The Sean Blog] | publisher = [[Microsoft TechNet]] | date = 2008-06-29 | url = http://blogs.technet.com/seanearp/archive/2008/06/29/linux-on-hyper-v.aspx | accessdate = 2009-07-10}} (Also links to individual posts on installing various Linux distributions in Virtual PC 2007.)&lt;/ref&gt; do run successfully in Virtual PC 2007, and can be used with the [[#Virtual Machine Additions|Virtual Machine Additions]] from Virtual Server (see [[#Linux guests|below]]).&lt;ref name=vguy_linux07/&gt;&lt;ref name=vs_vma&gt;{{cite web | title = Virtual Machine Additions for Linux | work = Microsoft Download Center | publisher = [[Microsoft.com]] | date = 2007-10-24 | url = http://www.microsoft.com/downloads/details.aspx?FamilyID=bf12642f-77dc-4d45-ae4e-e1b05e0a2674&amp;DisplayLang=en | accessdate = 2009-07-10}}&lt;/ref&gt; Lastly, while 64-bit host support was introduced with Virtual PC 2007, {{as of|2009|alt=no}} release has been able to virtualize a 64-bit guest;&lt;ref&gt;{{cite web | last = Cummings | first = Joanne | title = Microsoft Virtual PC: Good Enough â for the Price | work = [http://redmondmag.com/ Redmondmag.com] | publisher = 1105 Media | date = 2006-11-01 | url = http://redmondmag.com/Articles/2006/11/01/Microsoft-Virtual-PC-Good-Enough--for-the-Price.aspx?Page=1 | accessdate = 2009-07-10}}&lt;/ref&gt;&lt;ref&gt;{{cite web | last = Woolsey | first = Jeff | title = Microsoft Virtualization and Virtual PC 2007 | work = [http://blogs.technet.com/virtualization/ Microsoft Virtualization Team Blog] | publisher = [[Microsoft TechNet]] | date = 2007-07-10 | url = http://blogs.technet.com/virtualization/archive/2007/07/10/microsoft-virtualization-and-virtual-pc-2007.aspx | accessdate = 2009-07-10}}&lt;/ref&gt;&lt;ref&gt;{{cite web | last = Savill | first = John | title = Does Windows Virtual PC in Windows 7 support 64-bit guest OSs? | work = [[Windows IT Pro]] | publisher = [[Penton Media]] | date = 2009-05-07 | url = http://windowsitpro.com/article/articleid/102040/q-does-windows-virtual-pc-in-windows-7-support-64-bit-guest-oss.html | accessdate = 2009-07-10}}&lt;/ref&gt; Microsoft has thus far reserved this functionality for Hyper-V, which runs only on 64-bit (x64) editions of [[Windows Server 2008]].&lt;ref name=vs2005_faq&gt;{{cite web | title = Virtual Server 2005 Frequently Asked Questions | work = Microsoft Virtual Server | publisher = [[Microsoft.com]] | date = 2008-05-14 [First published 2003-02-20] | url = http://www.microsoft.com/windowsserversystem/virtualserver/evaluation/virtualizationfaq.mspx | accessdate = 2009-07-10}}&lt;/ref&gt;&lt;ref name=hyperv_faq&gt;{{cite web | title = Virtualization with Hyper-V: FAQ | work = Windows Server 2008 â Product Information | publisher = [[Microsoft.com]] | date = &lt;!-- 2008? --&gt; | url = http://www.microsoft.com/windowsserver2008/en/us/hyperv-faq.aspx | accessdate = 2009-07-10}}&lt;/ref&gt;
+
+=== Table of supported operating systems ===
+
+In the following table and notes, &quot;support&quot; refers to official Microsoft support, as described above.
+
+{| style=&quot;background:none; margin:auto&quot;
+|-
+|
+{| style=&quot;text-align:center; font-size:90%; margin:1em auto 0 auto&quot; class=&quot;wikitable&quot;
+|-
+!
+! colspan=&quot;3&quot; style=&quot;padding-bottom:0.6em&quot; | Virtual PC 2004&lt;br /&gt;&lt;ref name=vpc2004_details&gt;{{cite web | title = Microsoft Virtual PC 2004 â Product Details | work = Product Information Center | publisher = [[Microsoft.com]] | date = &lt;!-- circa 2003 Q4 product release? --&gt; | url = http://www.microsoft.com/PRODUCTS/info/product.aspx?view=22&amp;pcid=ba9e68ed-9571-4d10-82d2-b51828c33297&amp;type=ovr#ProductDetails | accessdate = 2009-07-10}}&lt;/ref&gt;&lt;ref name=vpc2004sp1_readme&gt;{{cite web | title = Readme for Microsoft Virtual PC 2004 Service Pack 1 | work = Microsoft Download Center | publisher = [[Microsoft.com]] | date = 2004-10-12 | url = http://download.microsoft.com/download/6/9/d/69de9b67-6498-41fb-9add-95ceab6eb5cc/readmesp1.htm | accessdate = 2009-07-10}} See also [http://www.microsoft.com/downloads/details.aspx?displaylang=en&amp;FamilyID=ef9d823f-3aae-40da-b4e9-dabe2a6b5bf9 download details].&lt;/ref&gt;&lt;ref name=vpc2004_comparo&gt;{{cite journal | last = Davis | first = Megan | editor-last = Blade | editor-first = Tina | title = Virtual PC vs. Virtual Server: Comparison of Features and Uses | work = Microsoft Download Center | publisher = [[Microsoft.com]] | date = 2005-05-24 | url = http://download.microsoft.com/download/1/4/d/14d17804-1659-435d-bc11-657a6da308c0/VSvsVPC.doc | format = [[Microsoft Word]] | accessdate = 2009-07-10}} See also [http://www.microsoft.com/downloads/details.aspx?displaylang=en&amp;FamilyID=8ed0a6cb-0f24-408e-af8f-51edf508d361 download details].&lt;/ref&gt;&lt;ref&gt;{{cite episode | title = Demo: Microsoft Virtual PC 2004 Features | series = Event Review: Microsoft Virtual PC Overview â Session TNT1-103 | url = http://technet.microsoft.com/en-us/bb643127.aspx | network = [[Microsoft TechNet]] | airdate = &lt;!-- page undated --&gt; | format = [[Executable]] installer for [[Windows Media]] | accessdate = 2009-07-10}}&lt;/ref&gt;&lt;ref&gt;{{cite web | title = Download Details: Virtual PC 2004 SP1 | work = Microsoft Download Center | publisher = [[Microsoft.com]] | date = 2006-08-30 | url = http://www.microsoft.com/downloads/details.aspx?displaylang=en&amp;FamilyID=6d58729d-dfa8-40bf-afaf-20bcb7f01cd1 | accessdate = 2009-07-10}}&lt;/ref&gt;
+! colspan=&quot;3&quot; style=&quot;padding-bottom:0.6em&quot; | Virtual PC 2007&lt;br /&gt;&lt;ref name=vpc2007sp1_rel_notes&gt;{{cite web | title = Virtual PC 2007 SP1 Release Notes | work = Microsoft Download Center | publisher = [[Microsoft.com]] | date = 2008-05-15 | url = http://download.microsoft.com/download/8/f/4/8f44a346-1f62-4bb2-b957-7508ea1f7d80/relnotes.htm | accessdate = 2009-07-10}} See also [http://www.microsoft.com/downloads/details.aspx?displaylang=en&amp;FamilyID=9f3d3eb5-5e03-4712-999c-e96f91bdf128 download details].&lt;/ref&gt;&lt;ref name=vpc2007_rel_notes&gt;{{cite web | title = Virtual PC 2007 Release Notes | work = Microsoft Download Center | publisher = [[Microsoft.com]] | date = 2007-02-19 | url = http://download.microsoft.com/download/4/4/c/44ccd131-67fb-4224-a96e-193be1765b43/relnotes.htm | accessdate = 2009-07-10}} See also [http://www.microsoft.com/downloads/details.aspx?displaylang=en&amp;FamilyID=10c298be-d794-4313-801f-04e7c1ad5da0 download details].&lt;/ref&gt;&lt;ref name=vpc2007sp1_hotfix&gt;{{cite web | title = Description of the hotfix rollup package for Virtual PC 2007 Service Pack 1: February 20, 2009 | work = Microsoft Help and Support | publisher = [[Microsoft.com]] | date = 2009-02-20 | url = http://support.microsoft.com/kb/958162 | accessdate = 2009-07-10}}&lt;/ref&gt;
+! colspan=&quot;4&quot; style=&quot;padding-bottom:0.6em&quot; | Windows Virtual PC&lt;br /&gt;&lt;ref name=wvpc_tips&gt;{{cite web | title = Windows Virtual PC Tips | work = Microsoft Download Center | publisher = [[Microsoft]] | date = 2009-05-18 | url = http://www.microsoft.com/downloads/info.aspx?na=90&amp;p=&amp;SrcDisplayLang=en&amp;SrcCategoryId=&amp;SrcFamilyId=ffc6c931-6216-4a1d-bdab-936fef353060&amp;u=http%3a//download.microsoft.com/download/7/D/6/7D686A6A-B0F7-42E5-BB3B-4972A8C42C9F/Windows+Virtual+PC+Tips.pdf | accessdate = 2009-07-10}} See also [http://www.microsoft.com/downloads/details.aspx?displaylang=en&amp;FamilyID=ffc6c931-6216-4a1d-bdab-936fef353060  download details]. (Contains a more precise and complete list of supported operating systems than the [http://www.microsoft.com/windows/virtual-pc/support/requirements.aspx Requirements page] on Microsoft.com.)&lt;/ref&gt;&lt;ref name=wvpc_req&gt;{{cite web | title = Windows Virtual PC â Requirements | publisher = [[Microsoft.com]] | date = &lt;!-- Undated. --&gt; | url = http://www.microsoft.com/windows/virtual-pc/support/requirements.aspx | accessdate = 2009-07-10}}&lt;/ref&gt;&lt;ref&gt;{{cite web | title = Windows Virtual PC â FAQ | publisher = [[Microsoft.com]] | date = &lt;!-- Undated. --&gt; | url = http://www.microsoft.com/windows/virtual-pc/support/faq.aspx | accessdate = 2009-07-10}}&lt;/ref&gt;&lt;ref&gt;{{cite web | title = Windows Virtual PC Beta | work = Microsoft Download Center | publisher = [[Microsoft.com]] | date = 2009-05-04 | url = http://www.microsoft.com/downloads/details.aspx?familyid=65E1C5EB-DF9B-415F-B2D6-27F6EF5DCEB9&amp;displaylang=en | accessdate = 2009-07-10}} {{Dead link|date=September 2010|bot=H3llBot}}&lt;/ref&gt;
+|-
+! rowspan=&quot;2&quot; | Operating system (host or guest?)
+! colspan=&quot;2&quot; | Host || Guest || colspan=&quot;2&quot; | Host || Guest || colspan=&quot;2&quot; | Host || colspan=&quot;2&quot; | Guest
+|-
+! 32-bit || 64-bit || 32-bit || 32-bit || 64-bit || 32-bit || 32-bit || 64-bit || 32-bit || 64-bit
+|-
+! style=&quot;text-align:left&quot; | [[Windows 7 editions#Windows 7 Ultimate|Windows 7 Ultimate]]
+| No || No || No || No&lt;span style=&quot;letter-spacing:0.05em&quot;&gt;{{ref label|Î´|Î´|1}}&lt;/span&gt; || No&lt;span style=&quot;letter-spacing:0.05em&quot;&gt;{{ref label|Î´|Î´|2}}&lt;/span&gt; || No&lt;span style=&quot;letter-spacing:0.05em&quot;&gt;{{ref label|Î´|Î´|3}}&lt;/span&gt; || {{yes}} || {{yes}} || {{yes}} || No
+|-
+! style=&quot;text-align:left&quot; | [[Windows 7 editions#Windows 7 Enterprise|Windows 7 Enterprise]]
+| No || No || No || No&lt;span style=&quot;letter-spacing:0.05em&quot;&gt;{{ref label|Î´|Î´|1}}&lt;/span&gt; || No&lt;span style=&quot;letter-spacing:0.05em&quot;&gt;{{ref label|Î´|Î´|2}}&lt;/span&gt; || No&lt;span style=&quot;letter-spacing:0.05em&quot;&gt;{{ref label|Î´|Î´|3}}&lt;/span&gt; || {{yes}} || {{yes}} || {{yes}} || No
+|-
+! style=&quot;text-align:left&quot; | [[Windows 7 editions#Windows 7 Professional|Windows 7 Professional]]
+| No || No || No || No&lt;span style=&quot;letter-spacing:0.05em&quot;&gt;{{ref label|Î´|Î´|1}}&lt;/span&gt; || No&lt;span style=&quot;letter-spacing:0.05em&quot;&gt;{{ref label|Î´|Î´|2}}&lt;/span&gt; || No&lt;span style=&quot;letter-spacing:0.05em&quot;&gt;{{ref label|Î´|Î´|3}}&lt;/span&gt; || {{yes}} || {{yes}} || {{yes}} || No
+|-
+! style=&quot;text-align:left&quot; | [[Windows 7 editions#Windows 7 Home Premium|Windows 7 Home Premium]]
+| No || No || No || No || No || No || {{yes}}{{ref label|I|I|1}} || {{yes}}{{ref label|I|I|2}} || {{yes}}{{ref label|J|J|none}} || No
+|-
+! style=&quot;text-align:left&quot; | [[Windows 7 editions#Windows 7 Home Basic|Windows 7 Home Basic]]
+| No || No || No || No || No || No || {{yes}}{{ref label|I|I|3}} || {{yes}}{{ref label|I|I|4}} || {{yes}}{{ref label|J|J|none}} || No
+|-
+! style=&quot;text-align:left&quot; | [[Windows 7 editions#Windows 7 Starter|Windows 7 Starter]]
+| No || {{n/a}} || No || No || {{n/a}} || No || No || {{n/a}} || No{{ref label|J|J|none}} || {{n/a}}
+|-
+! style=&quot;text-align:left&quot; | [[Windows Server 2008|Windows Server 2008 Standard]]
+| No || No || No || No || No || {{yes}}{{ref label|E|E|1}} || No || No || No || No
+|-
+! style=&quot;text-align:left&quot; | [[Windows Vista Ultimate]]
+| No || No || No || {{yes}} || {{yes}} || {{yes}}{{ref label|D|D|1}}{{ref label|G|G|1}} || No || No || {{yes}} || No
+|-
+! style=&quot;text-align:left&quot; | [[Windows Vista editions#Windows Vista Enterprise|Windows Vista Enterprise]]
+| No || No || No || {{yes}} || {{yes}} || {{yes}}{{ref label|D|D|2}}{{ref label|G|G|2}} || No || No || {{yes}} || No
+|-
+! style=&quot;text-align:left&quot; | [[Windows Vista editions#Windows Vista Business|Windows Vista Business]]
+| No || No || No || {{yes}} || {{yes}} || {{yes}}{{ref label|D|D|3}}{{ref label|G|G|3}} || No || No || {{yes}} || No
+|-
+! style=&quot;text-align:left&quot; | [[Windows Vista Home Premium]]
+| No || No || No || {{yes}}{{ref label|H|H|1}} || {{yes}}{{ref label|H|H|2}} || {{yes}}{{ref label|D|D|4}}{{ref label|F|F|1}} || No || No || No{{ref label|J|J|none}} || No
+|-
+! style=&quot;text-align:left&quot; | [[Windows Vista editions#Windows Vista Home Basic|Windows Vista Home Basic]]
+| No || No || No || {{yes}}{{ref label|H|H|3}} || {{yes}}{{ref label|H|H|4}} || {{yes}}{{ref label|F|F|2}} || No || No || No{{ref label|J|J|none}} || No
+|-
+! style=&quot;text-align:left&quot; | [[Windows Vista editions#Windows Vista Starter|Windows Vista Starter]]
+| No || {{n/a}} || No || No || {{n/a}} || {{yes}} || No || {{n/a}} || No{{ref label|J|J|none}} || {{n/a}}
+|-
+! style=&quot;text-align:left&quot; | [[Windows Server 2003#Standard Edition|Windows Server 2003 Standard]]
+| {{yes}}{{ref label|B|B|1}} || No || {{yes}} || {{yes}} || {{yes}} || {{yes}} || No || No || No || No
+|-
+! style=&quot;text-align:left&quot; | [[Windows XP Professional]]
+| {{yes}} || No || {{yes}} || {{yes}} || {{yes}} || {{yes}} || No || No || {{yes}} || No
+|-
+! style=&quot;text-align:left&quot; | [[Windows XP Tablet PC Edition]]
+| {{yes}} || {{n/a}} || {{yes}} || {{yes}} || {{n/a}} || {{yes}} || No || {{n/a}} || No{{ref label|J|J|none}} || {{n/a}}
+|-
+! style=&quot;text-align:left&quot; | [[Windows XP Media Centre Edition|Windows XP Media Center Edition]]
+| No || {{n/a}} || No{{ref label|Î³|Î³|1}} || No || {{n/a}} || No || No || {{n/a}} || No{{ref label|J|J|none}} || {{n/a}}
+|-
+! style=&quot;text-align:left&quot; | [[Windows XP Home Edition]]
+| No || {{n/a}} || {{yes}} || {{yes}}{{ref label|H|H|5}} || {{n/a}} || {{yes}}{{ref label|H|H|6}} || No || {{n/a}} || No{{ref label|J|J|none}} || {{n/a}}
+|-
+! style=&quot;text-align:left&quot; | [[Windows XP Starter Edition]]
+| No || {{n/a}} || {{yes}} || No || {{n/a}} || {{yes}} || No || {{n/a}} || No{{ref label|J|J|none}} || {{n/a}}
+|-
+! style=&quot;text-align:left&quot; | [[Windows 2000 Server]]
+| No || {{n/a}} || {{yes}} || No || {{n/a}} || {{yes}} || No || {{n/a}} || No || {{n/a}}
+|-
+! style=&quot;text-align:left&quot; | [[Windows 2000 Professional]]
+| {{yes}} || {{n/a}} || {{yes}} || No || {{n/a}} || {{yes}} || No || {{n/a}} || No || {{n/a}}
+|-
+! style=&quot;text-align:left&quot; | [[Windows Me]]
+| No || {{n/a}} || {{yes}} || No || {{n/a}} || No{{ref label|C|C|1}} || No || {{n/a}} || No || {{n/a}}
+|-
+! style=&quot;text-align:left&quot; | [[Windows 98&amp;nbsp;Second Edition]]
+| No || {{n/a}} || {{yes}} || No || {{n/a}} || {{yes}} || No || {{n/a}} || No || {{n/a}}
+|-
+! style=&quot;text-align:left&quot; | [[Windows 98]] &lt;span style=&quot;font-weight:normal&quot;&gt;(original release)&lt;/span&gt;
+| No || {{n/a}} || {{yes}} || No || {{n/a}} || No{{ref label|C|C|1}} || No || {{n/a}} || No || {{n/a}}
+|-
+! style=&quot;text-align:left&quot; | [[Windows 95]]
+| No || {{n/a}} || {{yes}} || No || {{n/a}} || No{{ref label|C|C|3}}&lt;span style=&quot;letter-spacing:0.05em&quot;&gt;{{ref label|Î²|Î²|1}}&lt;/span&gt; || No || {{n/a}} || No || {{n/a}}
+|-
+! style=&quot;text-align:left&quot; | [[Windows NT 4.0 Workstation]]
+| No || {{n/a}} || {{yes}} || No || {{n/a}} || No{{ref label|C|C|4}} || No || {{n/a}} || No || {{n/a}}
+|-
+! style=&quot;text-align:left&quot; | [[Windows NT 3.51 Workstation]]
+| No || {{n/a}} || No || No || {{n/a}} || No || No || {{n/a}} || No || {{n/a}}
+|-
+! style=&quot;text-align:left&quot; | [[Windows NT 3.1]] | [[Windows NT 3.5|NT 3.5]]
+| No || {{n/a}} || No{{ref label|Îµ|Îµ|1}} || No || {{n/a}} || No{{ref label|Îµ|Îµ|2}} || No || {{n/a}} || No || {{n/a}}
+|-
+! style=&quot;text-align:left&quot; | [[OS2|IBM OS/2]] &lt;span style=&quot;font-weight:normal&quot;&gt;(select editions)&lt;/span&gt;
+| No || {{n/a}} || {{yes}}{{ref label|A|A|1}} || No || {{n/a}} || {{yes}}{{ref label|A|A|2}} || No || {{n/a}} || No || {{n/a}}
+|-
+| colspan=&quot;13&quot; |
+|-
+!
+! colspan=&quot;2&quot; | 16-bit || 16-bit || colspan=&quot;2&quot; | 16-bit || 16-bit || colspan=&quot;2&quot; | 16-bit || colspan=&quot;2&quot; | 16-bit
+|-
+! style=&quot;text-align:left&quot; | [[Windows 3.1]]
+| colspan=&quot;2&quot; | No || No&lt;ref&gt;{{cite web | last = Armstrong | first = Ben | title = Windows 3.11 on Virtual PC | work = [http://blogs.msdn.com/virtual_pc_guy/ Virtual PC Guy's WebLog] | publisher = [[MSDN Blogs]] | date = 2004-10-26 | url = http://blogs.msdn.com/virtual_pc_guy/archive/2004/10/26/247793.aspx | accessdate = 2009-07-10}} (Microsoft manager Ben Armstrong reports that Windows 3.11 installs without a problem in Virtual PC 2004.)&lt;/ref&gt; || colspan=&quot;2&quot; | No || No || colspan=&quot;2&quot; | No || No || {{n/a}}
+|-
+! style=&quot;text-align:left&quot; | [[Windows 3.0]]
+| colspan=&quot;2&quot; | No || No || colspan=&quot;2&quot; | No || No{{ref label|C|C|5}}{{ref label|Î±|Î±|1}} || colspan=&quot;2&quot; | No || No || {{n/a}}
+|-
+! style=&quot;text-align:left&quot; | [[MS-DOS 6.22]]
+| colspan=&quot;2&quot; | No || {{yes}} || colspan=&quot;2&quot; | No || No{{ref label|C|C|5}}{{ref label|Î±|Î±|1}} || colspan=&quot;2&quot; | No || No || {{n/a}}
+|}
+| style=&quot;vertical-align:top&quot; |
+{| style=&quot;text-align:center; font-size:90%; margin: 1em 0 1em 1em&quot; class=&quot;wikitable&quot;
+| colspan=&quot;2&quot; style=&quot;color:gray; height:3em; letter-spacing:0.2em;&quot;| LEGEND
+|-
+! colspan=&quot;2&quot; | Microsoft support
+|-
+| style=&quot;width:4em;&quot; | Yes || style=&quot;text-align:left; padding:0.2em 0.5em&quot; | Supported
+|-
+| No || style=&quot;text-align:left; padding:0.2em 0.5em&quot; | Not supported
+|-
+| {{n/a}} || style=&quot;text-align:left; padding:0.2em 0.5em&quot; | Version nonexistent
+|}
+|}
+
+&lt;p style=&quot;margin-left:1.5em; margin-top:1em&quot;&gt;'''Notes â Details of Microsoft support'''&lt;/p&gt;
+&lt;ol style=&quot;list-style-type:upper-latin; font-size:95%&quot;&gt;
+&lt;li&gt;{{note label|A|A|1}}{{note label|A|A|2}} Supported editions: OS/2 Warp Version 4 Fix Pack&amp;nbsp;15, OS/2 Warp Convenience Pack&amp;nbsp;1, and OS/2 Warp Convenience Pack&amp;nbsp;2.&lt;ref name=vpc2007sp1_rel_notes/&gt;&lt;ref name=vpc2004_details/&gt;&lt;ref name=vpc2007_rel_notes/&gt;&lt;/li&gt;
+
+&lt;li&gt;{{note label|B|B|1}} Support added in Virtual PC 2004 Service Pack&amp;nbsp;1 (SP1) for Windows Server 2003, Standard Edition as a host.&lt;ref name=vpc2004sp1_readme/&gt;&lt;/li&gt;
+
+&lt;li&gt;{{note label|C|C|1}}{{note label|C|C|2}}{{note label|C|C|3}}{{note label|C|C|4}}{{note label|C|C|5}} For Virtual PC 2007, Microsoft designated the following [[legacy system|legacy]] operating systems &quot;compatible&quot;, but discontinued official support: MS-DOS 6.22, Windows NT 4.0 Workstation, Windows 95, the original release of Windows 98 and Windows Me.&lt;ref name=vpc2007sp1_rel_notes/&gt;&lt;ref name=vpc2007_rel_notes/&gt;&lt;/li&gt;
+
+&lt;li&gt;{{note label|D|D|1}}{{note label|D|D|2}}{{note label|D|D|3}}{{note label|D|D|4}} For Windows Vista guests in Virtual PC 2007, the [[Windows Aero]] [[graphical user interface]] is disabled due to limitations of the emulated [[S3 Trio]]&lt;ref name=vguy_whydevices&gt;{{cite web | last = Armstrong | first = Ben | title = Why we emulated the devices that we do? | work = [http://blogs.msdn.com/virtual_pc_guy/ Virtual PC Guy's WebLog] | publisher = [[MSDN Blogs]] | date = 2005-01-26 | url = http://blogs.msdn.com/virtual_pc_guy/archive/2005/01/26/361361.aspx | accessdate = 2009-07-10}}&lt;/ref&gt; graphics card; the interface falls back to the Vista Home Basic theme. However, Aero effects can be rendered by connecting to the guest via [[Remote Desktop Connection]] from an Aero-enabled host.&lt;ref name=aero_savill&gt;{{cite news | last = Savill | first = John | title = Running the Aero UI When Using Virtual PC 2007 | work = [[Windows IT Pro]] | publisher = [[Penton Media]] | year = 2007 | month = June | url = http://windowsitpro.com/article/articleid/95814/running-the-aero-ui-when-using-virtual-pc-2007.html | format = Fee required | accessdate = 2009-07-10}}&lt;/ref&gt;&lt;ref&gt;{{cite web | last = Schweigert | first = Marc | title = Get the Windows Vista Aero theme in a Guest OS using Virtual PC 2007 | work = [http://blogs.msdn.com/publicsector/default.aspx Microsoft Public Sector Developer and Platform Evangelism Team Blog] | publisher = [[MSDN Blogs]] | date = 2007-03-14 | url = http://blogs.msdn.com/publicsector/archive/2007/03/14/get-the-windows-vista-aero-theme-in-a-guest-os-using-virtual-pc-2007.aspx | accessdate = 2009-07-10}}&lt;/ref&gt;&lt;/li&gt;
+
+&lt;li&gt;{{note label|E|E|1}} Support added in Virtual PC 2007 Service Pack&amp;nbsp;1 (SP1) for Windows Server 2008 Standard as a guest.&lt;ref name=vpc2007sp1_rel_notes/&gt;&lt;/li&gt;
+
+&lt;li&gt;{{note label|F|F|1}}{{note label|F|F|2}} Microsoft's January 2008 [[EULA]] supplement&lt;ref name=vista_eula_orig&gt;{{cite web | title = Microsoft Software License Terms | work = [http://www.microsoft.com/about/legal/useterms/ Microsoft Use Terms] | publisher = [[Microsoft]] | year = &lt;!-- undated --&gt; | page = 13 | url = http://download.microsoft.com/documents/useterms/Windows%20Vista_Ultimate_English_36d0fe99-75e4-4875-8153-889cf5105718.pdf | accessdate = 2009-07-10 | quote = If you [install the software within a virtual system], you may not play or access content or use applications protected by any Microsoft digital, information or enterprise rights management technology or other Microsoft rights management services or use BitLocker.}} (The later [http://download.microsoft.com/documents/useterms/Windows%20Vista%20SP1_Ultimate_English_c64c444e-952d-497f-9f69-5811ffdcd774.pdf Vista SP1 EULA] adopted the amended terms of the January 2008 Supplement.)&lt;/ref&gt;&lt;ref name=vista_eula_sup&gt;{{cite web | title = Microsoft Software Supplemental License Terms | work = [http://www.microsoft.com/about/legal/useterms/ Microsoft Use Terms] | publisher = [[Microsoft]] | year = 2008 | month = January | url = http://download.microsoft.com/documents/useterms/Windows%20Vista_Ultimate%20and%20Ultimate%20SP1,%20Supplemental_English_d512375b-79d7-41e5-852d-45f69f7378dd.pdf | accessdate = 2009-07-10}}&lt;/ref&gt; for Windows Vista lifted restrictions&lt;ref name=vguy_vista_announce&gt;{{cite web | last = Armstrong | first = Ben | title = Virtualization Announcements | work = [http://blogs.msdn.com/virtual_pc_guy/ Virtual PC Guy's WebLog] | publisher = [[MSDN Blogs]] | date = 2008-01-22 | url = http://blogs.msdn.com/virtual_pc_guy/archive/2008/01/22/virtualization-announcements.aspx | accessdate = 2009-07-10}}&lt;/ref&gt;&lt;ref name=oiaga&gt;{{cite web | last = Oiaga | first = Marius | title = The Windows Vista Virtualization Doors Are Wide Opened | work = [http://news.softpedia.com/ Softpedia News] | publisher = [[Softpedia]] | date = 2008-01-22 | url = http://news.softpedia.com/news/The-Windows-Vista-Virtualization-Doors-Are-Opened-Wide-76958.shtml | accessdate = 2009-07-10}}&lt;/ref&gt; barring installation of Vista Home Basic and Home Premium as guest operating systems.&lt;ref name=bergstein&gt;{{cite news | last = Bergstein | first = Brian |authorlink=Brian Bergstein | agency = [[Associated Press]] | title = Microsoft puts up roadblocks on Vista for Mac owners | work = [[The New York Times]] | publisher = [[The New York Times Company]] | location = New York | date = 2007-02-28 | url = http://www.nytimes.com/2007/02/28/technology/28iht-ptvista.4752719.html | accessdate = 2009-07-10 | quote = Microsoft says the blockade is necessary for security reasons&amp;nbsp;â¦ Cherry says that what is really going on is that Microsoft wanted to create more differences between the multiple editions of Vista, presumably giving people more reason to buy the most expensive versions.}}&lt;/ref&gt;&lt;ref&gt;{{cite book | author = [https://partner.microsoft.com/licensinghandbook Microsoft Partner Program] | title = Licensing Reseller Handbook for Microsoft Partners | year = 2008 | month = March | publisher = [[Microsoft]] | page = 58 | url = http://download.microsoft.com/download/2/4/f/24f49403-31b4-4cf3-a4f5-6c439f92be24/MS_ReselleRev0308_LoRes.pdf | accessdate = 2009-07-10 | quote = Windows Vista Home Basic and Windows
+Vista Home Premium cannot be used within a virtual (or otherwise emulated) hardware system.}}&lt;/ref&gt;&lt;ref&gt;{{cite web | last = Albro | first = Edward N. | coauthors = Eric Dahl | title = The Most Annoying Things About Windows Vista | work = [[PC World (magazine)|PC World]] | publisher = [[International Data Group]] | date = 2007-02-20 | url = http://www.pcworld.com/article/129126-3/the_most_annoying_things_about_windows_vista.html | accessdate = 2009-07-10 | quote = Well, this is only a licensing provision, so nothing in the software will prevent you from running either Home version in a virtual machine. But that would be wrong.}}&lt;/ref&gt;&lt;ref name=lai_drm/&gt;&lt;/li&gt;
+
+&lt;li&gt;{{note label|G|G|1}}{{note label|G|G|2}}{{note label|G|G|3}} Microsoft's January 2008 [[EULA]] supplement&lt;ref name=vista_eula_orig/&gt;&lt;ref name=vista_eula_sup/&gt; for Windows Vista lifted restrictions&lt;ref name=oiaga/&gt; barring use of [[BitLocker]]&lt;ref&gt;{{cite web | last = Armstrong | first = Ben | title = Using BitLocker under Virtual PC / Virtual Server | work = [http://blogs.msdn.com/virtual_pc_guy/ Virtual PC Guy's WebLog] | publisher = [[MSDN Blogs]] | date = 2008-01-23 | url = http://blogs.msdn.com/virtual_pc_guy/archive/2008/01/23/using-bitlocker-under-virtual-pc-virtual-server.aspx | accessdate = 2009-07-10}} (Instructions were reposted the day after Microsoft released its Vista [[EULA]] Supplement in January 2008.)&lt;/ref&gt;&lt;ref&gt;{{cite web | last = Armstrong | first = Ben | title = Using Vista BitLocker under Virtual PC / Virtual Server | work = [http://blogs.msdn.com/virtual_pc_guy/ Virtual PC Guy's WebLog] | publisher = [[MSDN Blogs]] | date = 2007-04-30 | url = http://blogs.msdn.com/virtual_pc_guy/archive/2007/04/30/using-vista-bitlocker-under-virtual-pc-virtual-server.aspx | accessdate = 2009-07-10}} (Instructions provided in the post were deleted to comply with Microsoft's original Vista [[EULA]]).&lt;/ref&gt;&lt;ref&gt;{{cite web | last = Malach | first = Eyal | title = Encrypting Vista with BitLocker in Virtual PC or Virtual Machine | work = [http://blogs.microsoft.co.il/blogs/eyalm/ Eyal Malach Blog] | publisher = [http://blogs.microsoft.co.il/ Microsoft Blogs â Israel] | date = 2008-02-19 | url = http://blogs.microsoft.co.il/blogs/eyalm/archive/2008/02/19/encrypting-vista-with-bitlocker-in-virtual-pc-or-virtual-machine.aspx | accessdate = 2009-07-10}}&lt;/ref&gt; and Microsoft-[[digital rights management|DRM]]-protected content within virtualized environments.&lt;ref name=bergstein/&gt;&lt;ref name=lai_drm&gt;{{cite web | last = Lai | first = Eric | title = Analysis: DRM may be why Microsoft flip-flopped on Vista virtualization | work = [[Computerworld]] | publisher = [[International Data Group]] | date = 2007-06-22 | url = http://www.computerworld.com/action/article.do?command=viewArticleBasic&amp;articleId=9025466 | accessdate = 2009-07-10}} (Microsoft originally planned to rescind the restrictions in June 2007.)&lt;/ref&gt;&lt;ref&gt;{{cite web | last = Oiaga | first = Marius | title = Install Windows Vista Ultimate in Windows Vista â Vista Virtualization Guidelines | work = [http://news.softpedia.com/ Softpedia News] | publisher = [[Softpedia]] | date = 2007-06-02 | url = http://news.softpedia.com/news/Install-Windows-Vista-Ultimate-IN-Windows-Vista-56273.shtml | accessdate = 2009-07-10}}&lt;/ref&gt;&lt;/li&gt;
+
+&lt;li&gt;{{note label|H|H|1}}{{note label|H|H|2}}{{note label|H|H|3}}{{note label|H|H|4}}{{note label|H|H|5}}{{note label|H|H|6}} Support added in a Virtual PC 2007 Service Pack&amp;nbsp;1 (SP1) [[hotfix]] rollup, dated February 20, 2009, for Windows XP Home as both host and guest, and for all Home editions of Windows Vista as hosts.&lt;ref name=vpc2007sp1_hotfix/&gt;&lt;/li&gt;
+
+&lt;li&gt;{{note label|I|I|1}}{{note label|I|I|2}}{{note label|I|I|3}}{{note label|I|I|4}} The pre-configured [[#Windows XP Mode|XP Mode]] of Windows Virtual PC is restricted to Windows 7 Professional, Enterprise, and Ultimate hosts.&lt;ref name=wvpc_req/&gt; However, an equivalent environment can be configured manually by installing Windows XP SP3 as a guest (requires an XP license and installation media or files) and applying an integration components update (available for download&lt;ref name=rail_xp/&gt; from Microsoft) to enable seamless mode and other Windows 7 integration features.&lt;ref name=wvpc_eval/&gt;&lt;/li&gt;
+
+&lt;li&gt;{{note label|J|J|none}} The integration components enabling seamless mode and other features&lt;ref name=wvpc_eval&gt;{{cite web | title = Windows Virtual PC Evaluation Guide | work = [http://technet.microsoft.com/en-us/library/dd349342%28WS.10%29.aspx Windows 7 Technical Library] | publisher = [[Microsoft TechNet]] | date = 2009-05-04 | url = http://technet.microsoft.com/en-us/library/dd744684%28WS.10%29.aspx | accessdate = 2009-07-10}} Also available for [http://www.microsoft.com/Downloads/details.aspx?familyid=62CD2E63-52F8-4CF5-A7D5-7ABAAB270451&amp;displaylang=en download].&lt;/ref&gt; of Windows Virtual PC support only the following guests: Windows XP Pro Service Pack&amp;nbsp;3 (SP3);&lt;ref name=rail_xp&gt;{{cite web | title = RAIL QFE Beta Windows XP SP3 | work = Microsoft Download Center | publisher = [[Microsoft.com]] | date = 2009-05-04 | url = http://www.microsoft.com/downloads/details.aspx?familyid=943B6AC7-87F2-45DF-A516-21321D559AC3&amp;displaylang=en | accessdate = 2009-07-10}} {{Dead link|date=September 2010|bot=H3llBot}}&lt;/ref&gt; Windows Vista Business SP1, Enterprise SP1, and Ultimate SP1;&lt;ref name=rail_vista&gt;{{cite web | title = RAIL QFE Beta for Vista SP1 | work = Microsoft Download Center | publisher = [[Microsoft.com]] | date = 2009-05-04 | url = http://www.microsoft.com/downloads/details.aspx?familyid=DB29EB2B-F095-4172-8E83-9C5623045D4E&amp;displaylang=en | accessdate = 2009-07-10}} {{Dead link|date=September 2010|bot=H3llBot}}&lt;/ref&gt; and Windows 7 Professional, Enterprise, and Ultimate.&lt;ref name=wvpc_tips/&gt;&lt;ref name=wvpc_req/&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p style=&quot;margin-left:1.5em; margin-top:1em&quot;&gt;'''Notes â Not supported installations'''&lt;/p&gt;
+&lt;ol style=&quot;list-style-type:lower-greek; font-size:95%; margin-bottom:1.5em&quot;&gt;
+&lt;li&gt;{{note label|Î±|Î±|1}} Virtual PC 2007 does not include Virtual Machine Additions for MS-DOS as a self installing disk image (installed using a batch file), however the files are included in the Virtual Machine Additions ISO image file (typically found in the 'Program Files' folder where Virtual PC was installed) and can be extracted by various means (a number of file compression software packages support extracting files from ISO image files) for manual installation, also the DOS additions from Virtual PC 2004 can be used without problem as can the DOS additions from Virtual Server 2005.&lt;ref name=vguy_dosadd&gt;{{cite web | last = Armstrong | first = Ben | title = Installing DOS additions under VPC 2007 | work = [http://blogs.msdn.com/virtual_pc_guy/ Virtual PC Guy's WebLog] | publisher = [[MSDN Blogs]] | date = 2007-10-30 | url = http://blogs.msdn.com/virtual_pc_guy/archive/2007/10/30/installing-dos-additions-under-vpc-2007.aspx | accessdate = 2009-07-10}}&lt;/ref&gt;&lt;/li&gt;
+
+&lt;li&gt;{{note label|Î²|Î²|1}} The Virtual Machine Additions included with Virtual PC 2007 will not install on Windows 95 guests, but the additions from Virtual PC 2004 can be used.&lt;ref name=vguy_win95/&gt;&lt;/li&gt;
+
+&lt;li&gt;{{note label|Î³|Î³|1}} In informal testing, Microsoft virtualization manager Ben Armstrong found XP Media Center 2004 &quot;distorted and unusable&quot; under Virtual PC 2004, but Media Center 2005 worked &quot;beautifully&quot;, sans TV features.&lt;ref&gt;{{cite web | last = Armstrong | first = Ben | title = Windows Media Center 2005 under Virtual PC | work = [http://blogs.msdn.com/virtual_pc_guy/ Virtual PC Guy's WebLog] | publisher = [[MSDN Blogs]] | date = 2004-11-06 | url = http://blogs.msdn.com/virtual_pc_guy/archive/2004/11/06/253225.aspx | accessdate = 2009-07-10}}&lt;/ref&gt;&lt;/li&gt;
+
+&lt;li&gt;{{note label|Î´|Î´|1}}{{note label|Î´|Î´|2}}{{note label|Î´|Î´|3}} [[MSDN Blogs|MSDN blogs]] report that [[Windows 7#Development|pre-release versions]] of Windows 7, similar to the forthcoming Ultimate edition,&lt;ref&gt;{{cite web | title = Windows 7 Release Candidate: FAQ | publisher =[[Microsoft.com]] | year = 2009 | url = http://www.microsoft.com/windows/windows-7/faq.aspx | accessdate = 2009-07-10}}&lt;/ref&gt;{{update after|2010|10|22}} run successfully as both host and guest operating systems on Virtual PC 2007 Service Pack&amp;nbsp;1 (SP1). Integration features provided by [[#Virtual Machine Additions|Virtual Machine Additions]] function normally, but Virtual PC 2007 must be SP1 or later.&lt;ref name=vguy_w7vpcw7&gt;{{cite web | last = Armstrong | first = Ben | title = Windows 7 on Virtual PC on Windows 7 | work = [http://blogs.msdn.com/virtual_pc_guy/ Virtual PC Guy's WebLog] | publisher = [[MSDN Blogs]] | date = 2009-01-13 | url = http://blogs.msdn.com/virtual_pc_guy/archive/2009/01/13/windows-7-on-virtual-pc-on-windows-7.aspx | accessdate = 2009-07-10}}&lt;/ref&gt;&lt;ref&gt;{{cite web | last = Krishnamoorthy | first = Ajoy | title = Installing Virtual PC 2007 SP1 in Windows 7 | work = [http://blogs.msdn.com/ajoyk/default.aspx Ajoyk â Patterns and Practices, VSTS, Process] | publisher = [[MSDN Blogs]] | date = 2009-01-19 | url = http://blogs.msdn.com/ajoyk/archive/2009/01/19/installing-virtual-pc-2007-sp1-in-windows-7.aspx | accessdate = 2009-07-10}}&lt;/ref&gt;&lt;ref&gt;{{cite web | last = Manning | first = James | title = Upgrading to SP1 fixes VM Additions for Win7 Beta! | work = [http://blogs.msdn.com/jmanning/default.aspx James Manning's Blog] | publisher = [[MSDN Blogs]] | date = 2009-01-10 | url = http://blogs.msdn.com/jmanning/archive/2009/01/10/upgrading-to-sp1-fixes-vm-additions-for-win7-beta.aspx | accessdate = 2009-07-10}}&lt;/ref&gt; See [http://blogs.msdn.com/virtual_pc_guy/archive/2009/01/13/windows-7-on-virtual-pc-on-windows-7.aspx &quot;Windows 7 on Virtual PC on Windows 7&quot;] &lt;ref name=vguy_w7vpcw7/&gt; for more caveats.&lt;/li&gt;
+
+&lt;li&gt;{{note label|Îµ|Îµ|1}}{{note label|Îµ|Îµ|2}} Although [[Windows NT 3.1]] and [[Windows NT 3.5|NT 3.5]] refuse to install on newer processors ([[Windows NT 3.51|NT 3.51]] fixes this), it is possible to modify files on the install CD to allow install. &lt;/li&gt;&lt;/ol&gt;
+
+=== Linux guests {{Anchor|Emulating Linux-based environments}} ===
+
+Installing a Linux-based guest environment in Virtual PC is possible.  RedHat and SuSe Linux guests are supported. Linux additions are supported in [[Microsoft Virtual Server]], and these additions should also work in Virtual PC.&lt;ref name=vguy_linux07&gt;{{cite web | last = Armstrong | first = Ben | title = Updated Virtual Machine Additions for Linux available | work = [http://blogs.msdn.com/virtual_pc_guy/default.aspx Virtual PC Guy's WebLog] | publisher = [[MSDN Blogs]]| date = 2007-10-23 | url = http://blogs.msdn.com/virtual_pc_guy/archive/2007/10/23/updated-virtual-machine-additions-for-linux-available.aspx | accessdate = 2009-06-28 | quote = As always â this is only supported on Virtual Server â but should work just fine on Virtual PC.}}&lt;/ref&gt;
+
+Some [[Linux distribution]]s must be installed in text mode, as they do not support Microsoft Virtual PC's emulated graphics chip.  [[Ubuntu (operating system)|Ubuntu]] 8.10 ([[Intrepid Ibex]]) must be installed in SafeMode, but does not require other changes.
+
+Some websites specialize in listing operating systems that run successfully as Virtual PC guests, to help users avoid issues when installing Linux distributions or other operating systems lacking official Microsoft support.&lt;ref&gt;[http://vpc.visualwin.com/ What Works and What Doesn't in Microsoft Virtual PC 2004]&lt;/ref&gt;
+
+=== Intel-based Mac support ===
+[[Microsoft]] announced on August 7, 2006, that Virtual PC for Mac would not be ported to the [[AppleâIntel architecture|Intel Mac]] platform. Microsoft stated, &quot;Alternative solutions offered by Apple and other vendors, combined with a fully packaged retail copy of Windows, will satisfy this need.&quot;&lt;ref name=wwdc&gt;{{cite web |url=http://www.macworld.com/news/2006/08/07/vpc/index.php |title=WWDC: Microsoft kills Virtual PC for Mac |publisher=MacWorld |date=2006-08-07 |accessdate=2007-10-08 |last=Cohen |first=Peter}}&lt;/ref&gt; Similar products available at the time were [[Parallels Desktop]] and [[VMware Fusion]].
+
+== See also ==
+;About Microsoft virtualization technology
+* [[Microsoft Virtual Server]]
+* [[VHD (file format)|Virtual Hard Disk (VHD) file format]]
+* [[Features new to Windows 7#Virtual hard disks|Features new to Windows 7: Virtual hard disks]]
+
+;About virtualization
+* [[Virtual machine]]
+* [[Virtual disk image]]
+* [[x86 virtualization]]
+* [[Hardware virtualization]]
+* [[Application virtualization]]
+
+;About notable virtualization products
+* [[Comparison of platform virtual machines]]
+
+== References ==
+{{Reflist|30em}}
+
+== External links ==
+&lt;!--======================== {{No more links}} ============================
+    | PLEASE BE CAUTIOUS IN ADDING MORE LINKS TO THIS ARTICLE. Wikipedia  |
+    | is not a collection of links nor should it be used for advertising. |
+    |                                                                     |
+    |           Excessive or inappropriate links WILL BE DELETED.         |
+    | See [[Wikipedia:External links]] &amp; [[Wikipedia:Spam]] for details.  |
+    |                                                                     |
+    | If there are already plentiful links, please propose additions or   |
+    | replacements on this article's discussion page, or submit your link |
+    | to the relevant category at the Open Directory Project (dmoz.org)   |
+    | and link back to that category using the {{dmoz}} template.         |
+    ======================= {{No more links}} =============================--&gt;
+* [http://www.microsoft.com/windows/virtual-pc/ Windows Virtual PC for Windows]
+** [http://www.microsoft.com/downloads/details.aspx?familyid=2B6D5C18-1441-47EA-8309-2545B08E11DD&amp;displaylang=en Download Windows Virtual PC]
+** [http://www.microsoft.com/downloads/details.aspx?displaylang=en&amp;FamilyID=fb633e9d-ddbc-4044-bb09-4f99e757064e Download Windows XP Mode]
+** [http://www.microsoft.com/downloads/details.aspx?FamilyID=28c97d22-6eb8-4a09-a7f7-f6c7a1f000b5 Download Microsoft Virtual PC 2007 SP1 for Windows]
+** [http://www.microsoft.com/downloads/details.aspx?FamilyId=6D58729D-DFA8-40BF-AFAF-20BCB7F01CD1&amp;displaylang=en Download Microsoft Virtual PC 2004 SP1 for Windows]
+** [http://go.microsoft.com/fwlink/?LinkId=163321 Hardware Assisted Virtualization Detection Tool]
+* [http://blogs.msdn.com/virtual_pc_guy/ Virtual PC Blog on Microsoft MSDN]
+
+{{Microsoft}}
+
+{{DEFAULTSORT:Microsoft Virtual Pc}}
+[[Category:Mac OS emulation software]]
+[[Category:Mac OS X emulation software]]
+[[Category:Virtualization software]]
+[[Category:Microsoft software|VirtualPC]]
+[[Category:X86 emulators]]
+[[Category:Windows 7]]
+[[Category:Freeware]]
+[[Category:1997 software]]
+
+[[bn:à¦®à¦¾à¦à¦à§à¦°à§à¦¸à¦«à¦ à¦­à¦¾à¦°à§à¦à§à¦¯à¦¼à¦¾à¦² à¦ªà¦¿à¦¸à¦¿]]
+[[cs:Microsoft Virtual PC]]
+[[de:Microsoft Virtual PC]]
+[[es:Windows Virtual PC]]
+[[fa:ÙØ§ÛÚ©Ø±ÙØ³Ø§ÙØª ÙÛØ±ÚÙØ§Ù Ù¾ÛâØ³Û]]
+[[fr:VirtualPC]]
+[[ko:ìë ë²ì¶ì¼ PC]]
+[[id:Microsoft Virtual PC]]
+[[it:Microsoft Virtual PC]]
+[[hu:Microsoft Virtual PC]]
+[[nl:Microsoft Virtual PC]]
+[[ja:Microsoft Virtual PC]]
+[[no:Windows Virtual PC]]
+[[pl:Microsoft Virtual PC]]
+[[pt:Microsoft Virtual PC]]
+[[ru:Microsoft Virtual PC]]
+[[fi:Windows Virtual PC]]
+[[sv:Microsoft Virtual PC]]
+[[ta:à®®à¯à®à¯à®°à¯à®à®¾à®ªà¯à®à¯ à®µà®°à¯à®à¯à®à¯à®µà®²à¯ à®ªà®¿à®à®¿]]
+[[zh:Windows Virtual PC]]
+[[tr:Microsoft Virtual PC]]</rev></revisions></page></pages></query></api>

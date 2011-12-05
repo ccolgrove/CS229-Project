@@ -1,0 +1,85 @@
+<?xml version="1.0"?><api><query><pages><page pageid="10541889" ns="0" title="Microsoft App-V"><revisions><rev xml:space="preserve">'''Microsoft Application Virtualization''' (also known as '''App-V''';&lt;ref&gt;{{cite web | url = http://blogs.technet.com/softgrid/archive/2008/06/12/a-farewell-to-softgrid.aspx | title = A Farewell to SoftGrid | accessdate = 2008-07-10}}&lt;/ref&gt; formerly ''Microsoft SoftGrid'')&lt;ref&gt;{{cite web | url = http://blogs.technet.com/softgrid/archive/2007/11/12/microsoft-application-virtualization-4-5-is-now-available-in-beta.aspx | title = Microsoft Application Virtualization 4.5 is Now Available in Beta! | accessdate = 2007-11-13}}&lt;/ref&gt; is an [[application virtualization]] and [[application streaming]] solution from [[Microsoft]]. It was acquired by Microsoft during the [[List of companies acquired by Microsoft Corporation|acquisition]] of [[Boston, Massachusetts]]-based Softricity (SoftwareWow!) on July 17, 2006.&lt;ref&gt;{{cite web |url=http://www.microsoft.com/presspass/press/2006/jul06/07-17SoftricityPR.mspx |title=Microsoft Presspass - Microsoft Completes Acquisition of Softricity |accessdate=2007-05-02 |work=microsoft.com }}&lt;/ref&gt; Softgrid represents Microsoft's entry to a new avenue of virtualization product, alongside their existing [[Hyper-V]] package, [[Microsoft Virtual Server]], [[Microsoft Virtual PC]], and other products newly announced in 2006, such as [[System Center Virtual Machine Manager]], the latter of which is designed for ''&quot;Datacenter Virtualization&quot;''.&lt;ref&gt;{{cite web |url=http://www.microsoft.com/presspass/features/2006/may06/05-22Virtualization.mspx |title=Microsoft Presspass - Microsoft Extends Virtualization Strategy, Outlines Product Road Map |accessdate=2007-05-02 |work=microsoft.com }}&lt;/ref&gt;
+
+==Overview==
+Microsoft Application Virtualization (MS App-V) platform allows applications to be deployed in real-time to any client from a virtual application server. It removes the need for local installation of the applications. Instead, only the App-v client needs to be installed on the client machines. All application data is permanently stored on the virtual application server. Whichever software is needed is either streamed or locally cached from the application server on demand and run locally. The App-V stack sandboxes the execution environment so that the application does not make changes to the client itself (OS File System and/or Registry). App-V applications are also sandboxed from each other, so that different versions of the same application can be run under App-V concurrently. This  approach enables any application to be delivered without making any changes to its code. 
+
+MS App-V thus allows centralized installation and management of deployed applications. It supports policy based access control; administrators can define and restrict access to the applications by certain users by defining policies governing the usage. App-V can require that applications not be run 'cached' from workstations, or require that 'cached' App-V applications routinely update license information from the App-V server, enforcing license compliance. These policies are centrally applied on the application repository. App-V  also allows copy of the applications across multiple application servers for better scalability and fault tolerance, and also features a tracking interface to track the usage of the virtualized application. 
+
+The App-V client presents the user with a list of applications, to which the user has access. The user can then launch a virtualized instance of the application. Depending on the configuration, the systems administrator can be either notified of the action via email or it can require an explicit confirmation from the administrator for the application to start streaming and initialize or it can just simply check the [[Active Directory]] for the user's rights and stream the application to the user if it is authorized to run the application. The App-V client can also install local shortcuts that bootstrap the process of launching individual virtualized software instances.
+
+==Architecture==
+Although App-V is best known for being deployed using the dedicated App-V Management infrastructure, these days Microsoft offers three deployment options.  These three options are significantly different from an architectural standpoint: Dedicated App-V Management Server, Shared System Center Configuration Manager Architecture, and &quot;Stand-alone&quot; Mode wherein the application may be delivered manually.
+
+===Dedicated App-V management server===
+The App-V system architecture is composed of the following components:
+*'''Microsoft Systems Center Virtual Application Server''', also called '''App-V Application Server''', which hosts virtualized application packages and streams them to the client computers for local execution. It also authorizes requesting clients and logs their application usage. Applications are converted to virtualized packages using the '''App-V Sequencer'''.
+*'''Microsoft Application Virtualization Client for Windows Desktops''' [[Microsoft Desktop Optimization Pack#Desktop Optimization Pack(part|of MDOP)]] or '''Microsoft Application Virtualization Client for Remote Session Hosts''' (i.e. '''Terminal Services'''), which are generally called the '''App-V client''', is the client side runtime which requests the application server to stream some application, receives the streamed virtual application packages, sets up the runtime environment and executes the applications locally.
+*'''App-V Management Console''', the management tool to set up, administer and manage App-V servers. It can be used to define policies that govern the usage of the applications. It can also be used to create, manage, update and replicate virtualized application packages.
+*'''App-V Sequencer''', a tool for preparing applications for virtualization.
+&lt;!-- Deleted image removed: [[File:App-V Architecture.png]] --&gt;
+===Shared ''System Center Configuration Manager''===
+In 2009 Microsoft offered a new way to implement App-V with enhancements to [[System Center Configuration Manager]]. System Center Configuration Manager Architecture consists of the following components:
+*'''System Center Configuration Manager Site Server''', serving as the primary repository for holding system images, application packages created using traditional installers, and virtual applications.
+*'''System Center Configuration Manager Distribution Server''', used to cache and distribute the software on a more local level.
+*'''Microsoft Application Virtualization Client for Windows Desktops''' [[Microsoft Desktop Optimization Pack#Desktop Optimization Pack(part|of MDOP)]] or '''Microsoft Application Virtualization Client for Remote Session Hosts''' (i.e. '''Terminal Services'''), previously described.
+*'''App-V Sequencer''', previously described.
+
+===&quot;Stand-alone&quot; mode===
+The App-V clients may also be used in a [http://www.tmurgent.com/WhitePapers/Microsoft_AppV_Stand-Alone.pdf &quot;stand-alone&quot; mode] without either of the server infrastructures previously described.  In this case, the sequenced packages are delivered using an external technique, such as an Electronic Software Delivery system or manual deployment.
+
+==Operation==
+App-V Application Virtualization is composed mainly of two components â ''SystemGuard'' and ''App-V Sequencer''. SystemGuard tracks and analysis configuration repositories and resources used by the application and intercepts the use of these resources, redirecting them to the virtualized instances of the resources. Virtualized resources include virtualized data such as user profile information and data; virtualized system services, such as [[Component Object Model|COM]] controls, [[windows service]]s and copy/paste abilities; and virtualized configuration repositories like [[Windows registry|registry hives]] and [[INI]] files. Not all applications that run as a service can be virtualized, although these limitations may change in future product versions. The virtualized instances are created in the runtime sandbox which hosts the virtualized instance, representing the resources of the actual client system the application is being executed on. Thus the application is decoupled from the resources of the system the application is installed on. Each application, or multiple instances of the same application, is run in its own virtual sandbox, each with its own set of virtual resources. The SystemGuard runtime environments can include specific dependencies such as DLL files as well. Multiple SystemGuard runtime environments can be in execution simultaneously.
+
+App-V sequencer is the component which packages an application for virtualization and streaming. It analyzes the application for the resources that it requires and creates the SystemGuard runtime environment that it will require. It also packages specific DLL files that it might require at the client side. It then packs all the application code and data into App-V's proprietary format that makes it more suitable for streaming. Individual libraries are packed separately so that each library can be streamed as required, rather than having the client to download the entire application at the beginning. Most importantly, the sequencer translates file and reqistry references into user, machine, and operating system neutral references.  This often allows limited portability of sequenced applications between OS versions.  
+
+At the client, when a streaming request is made to an App-V server, portions of the entire sequencer package are transferred to the client, who unpacks and initializes the SystemGuard environment and hosts the application inside it (with System Center Configuration Manager and the stand-alone client, the entire package contents are transferred). Each package is cached by the client for the duration of the application session. User settings are stored in the local system itself. 
+
+Virtualized application packages can also locally reside at the client computer, thus eliminating the need of application server and streaming. Microsoft [[Systems Management Server]] can be used to push these packages to the client computer in the absence of a virtual application server. In this scenario, the ''App-V SMS Connector'' can be used to locally manage the application packages.
+
+== Limitations ==
+* '''Microsoft Office plug-ins''': Although one can sequence Microsoft Office plug-ins, it is not advised to sequence them due to many technical &amp; usage issues. For example, in a situation where there are more than two plug-ins used by a user, if they are sequenced separately, then the user does not have control over which plug-in sequence starts when he opens a document. The only work around to resolve the issue is by creating a single suite or dynamic suite of all the plug-ins.
+* ''' Application Size''': If the maximum client cache size is set to at least 4 GB (The max can be 64 GB), then the maximum size of application (sft file) which can be streamed on that machine is 4 GB. All applications that have an installed footprint greater than or equal to the max client size, set by the client, should not be sequenced. The maximum application size Softgrid can handle is 4GB, due to the use of the [[FAT32]] file-system.&lt;ref&gt;[http://download.microsoft.com/download/F/7/8/F784A197-73BE-48FF-83DA-4102C05A6D44/App-V/App-V%204.6%20Service%20Pack%201%20Sequencing%20Guide.docx App-V Sequencing Guide - Microsoft Corporation (.docx file)]&lt;/ref&gt;
+* ''' Device Driver''': App-V presently does not support sequencing of kernel-mode device drivers; thus any application that installs a device driver cannot be sequenced.  The only exception to this is when the device driver can be pre-installed locally; in this case, the application is sequenced without the device driver.
+* ''' Shortcuts''': Applications should have minimum of one shortcut. If no shortcuts are present, then the application should be sequenced in a suite along with the application that needs it.  Internet Explorer plugins require a special shortcut to start the browser process under the virtualization layer.
+* ''' Middleware''': Middleware applications may not be good candidates for sequencing as they may be runtime prerequisites for multiple applications.  With later versions of App-V, they can be sequenced into a separate package that other virtual applications are linked to. 
+* ''' Path hard coding''': The application should not have folder/file path [[hard coding|hard coded]] in the application itself. Some applications hard code the path of files in their executables rather than parameterising them. Configuration files such as ini, conf, txt etc. and the Registry are good places to look for application-specific settings.  Failing that, a [[shim (computing)|shim]] can be used to remediate the application where source code or an update is not available.
+* ''' Auto Update''': Applications with automatic updates should not be sequenced if their update mechanism cannot be disabled. Sequenced applications usually fail to update. In addition, allowing auto-update leads to non compliance of application version.
+* ''' Services''': Services can be started when an application starts and shuts down or when an application main executable terminates.  Only user-mode services are suitable candidates for sequencing.
+* ''' COM+''': Some applications which use COM+ might not work properly in a virtual environment.
+* ''' COM DLL''': Some applications that use COM DLL surrogate virtualization, i.e. DLLâs that run in Dllhost.exe, do not work properly in the Softgrid Environment.
+* ''' Licensing Policies''': Applications with licensing enforcement tied to the machine, e.g. the license is tied to the systemâs [[MAC address]] or harddisk serial number. This type of application should not be sequenced if the activation can not be done by the user at the first launch of sequenced application.
+* ''' Internet Explorer &amp; Service Packs''': Microsoft does not support sequencing of any version of Internet Explorer.
+* ''' Roaming Profiles''': The default local cache location is %APPDATA%, this resides inside a folder that travels with roaming profiles, and will cause applications to fail often as files fail to sync using current best practices for roaming profiles in Windows Vista and Windows 7. Users will have to exclude the Softgrid Client folder from their syncing rules, or use an alternative location.
+* ''' LOCALAPPDATA''': Administrators cannot set the local cache location to %LOCALAPPDATA% if they want user changes to the &quot;bubble&quot; filesystem and registry to be available to the application after it has closed. This little documented (although unverified and unconfirmed) bug may cause issues with Office and other applications that rely on user changes or configuration on first start up.
+
+== Similar technologies ==
+* [[VMware ThinApp]]
+* [[Citrix XenApp]]
+* [[Cameyo]]
+* [[RUNZ]]
+* [[Installfree]] Bridge
+* [[Symantec Workspace Streaming]]
+* [[Spoon (software)|Spoon Studio]] (formerly Xenocode Virtual Application)
+* [[Novell ZENworks Application Virtualization]]
+* [[Endeavors Technologies Application Jukebox]]
+
+== References ==
+{{reflist}}
+
+== Further reading ==
+{{refbegin}}
+*[http://www.microsoft.com/systemcenter/appv/default.mspx Microsoft Application Virtualization 4.6]
+*[http://technet.microsoft.com/en-us/appvirtualization/bb676740.aspx Application Virtualization Troubleshooting and Support]
+*[https://sourceforge.net/projects/softgridhelper/files/Documentations/1Microsoft%20Application%20Virtualization%20-%20An%20Introduction%20to%20Sequencing.pdf/download An Introduction to Sequencing]
+{{refend}}
+
+==External links==
+*[http://www.microsoft.com/systemcenter/appv/default.mspx Microsoft Application Virtualization 4.6]
+*[http://blogs.technet.com/softgrid/ SoftGrid Team blog]
+{{Microsoft}}
+
+[[Category:Microsoft software|App-V]]
+[[Category:Virtualization software]]
+
+[[de:Microsoft Application Virtualization]]
+[[es:Microsoft Application Virtualization]]</rev></revisions></page></pages></query></api>

@@ -1,0 +1,141 @@
+<?xml version="1.0"?><api><query><pages><page pageid="322689" ns="0" title="7-Zip"><revisions><rev xml:space="preserve">{{Infobox software
+| name                 = 7-Zip
+| logo                 = [[File:7ziplogo.svg|64px|7-Zip Logo]]
+| screenshot           = [[File:7-Zip.png|280px]]
+| caption              = 7-Zip in [[Windows Vista]]
+| developer            = [[Igor Pavlov (programmer)|Igor Pavlov]]
+| released             = {{Start date|1999|7|18|df=yes}}&lt;ref name=&quot;7zipHistory&quot;&gt;{{cite web |url=http://www.7-zip.org/history.txt |title=HISTORY of the 7-Zip |publisher=www.7-zip.org |date=2010-04-15 |accessdate=2010-04-24}}&lt;/ref&gt; &lt;!-- Original Beta version was released on 2 January 1999. But Release was on 18 July 1999. --&gt;
+| frequently updated   = maybe &lt;!-- Release version update? Don't edit this page, just click on the version number! --&gt;
+| programming language = [[C++]]
+| operating system     = [[Microsoft Windows]], [[Linux]], [[Mac OS X]]
+| language             = 79 languages, including [[Brazilian Portuguese]], [[Czech language|Czech]], [[English language|English]], [[French language|French]], [[German language|German]], [[Italian language|Italian]], [[Japanese language|Japanese]], [[Polish language|Polish]], [[Russian language|Russian]], [[Simplified Chinese]], [[Spanish language|Spanish]] and [[Korean language|Korean]]
+| genre                = [[File archiver]]
+| license              = [[GNU Lesser General Public License|LGPLv2.1+]] with unRAR restriction&lt;ref name=7zipdotorglicensetxt&gt;{{cite web | url=http://www.7-zip.org/license.txt | title=7-Zip License for use and distribution | author=Igor Pavlov |publisher=7-zip.org | year=2010 | accessdate=2010-04-16 }}&lt;/ref&gt;
+| website              = {{URL|http://www.7-zip.org/}}
+}}
+'''7-Zip''' is an [[open source]] [[file archiver]]. 7-Zip operates with the [[7z]] archive format, but can read and write several other archive formats. The program can be used from a [[command line interface]], [[graphical user interface]], or with [[Microsoft Windows]] shell integration. 7-Zip began in 1999&lt;ref name=&quot;7zipHistory&quot; /&gt; and is actively developed by [[Igor Pavlov (programmer)|Igor Pavlov]]. It is related to a [[cross-platform]] port, [[p7zip]].&lt;ref name=&quot;p7ziphome&quot;&gt;{{cite web | url =http://p7zip.sourceforge.net/ | title =P7ZIP | date = | month =February | year =2009 | publisher =SourceForge.net | accessdate =2010-04-16 }}&lt;/ref&gt;
+
+7-Zip is [[free software]] distributed under the [[GNU Lesser General Public License]] (LGPL). It was the winner of the [[SourceForge.net]] 2007 community choice awards for &quot;Technical Design&quot; and for &quot;Best Project&quot;.&lt;ref name=7zipAward2007&gt;{{cite web | url =http://sourceforge.net/blog/cca07/ | title =SourceForge.net: 2007 Community Choice Awards | year =2007 | publisher =SourceForge.net | accessdate =2010-04-16 }}&lt;/ref&gt;
+
+==Formats==
+{{Technical|section|date=June 2011}}
+===The 7z archive format===
+{{Main|7z}}
+By default, 7-Zip creates 7z format archives with a &lt;code&gt;.7z&lt;/code&gt; [[file extension]]. Each archive can contain multiple directories and files. As a ''container'' format, security or size reduction are achieved using a stacked combination of filters. These can consist of pre-processors, compression algorithms, and encryption filters.
+
+The core .7z compression uses a variety of algorithms, the most common of which are [[bzip2]], [[LempelâZivâMarkov chain algorithm|LZMA2]], and [[LempelâZivâMarkov chain algorithm|LZMA]]. Developed by Igor Pavlov, LZMA is a relatively new system, making its debut as part of the 7z format. LZMA consists of a large LZ-based sliding dictionary up to 4 GB in size, backed by a [[Range encoding|range coder]].&lt;ref&gt;{{cite web|last=Diaz|first=Antonio Diaz |title=Lzip|url=http://lzip.nongnu.org/lzip.html |publisher=lzip.nongnu.org |accessdate=29 July 2010}}&lt;/ref&gt;
+
+The native 7z file format is open and modular. All filenames are stored as [[Unicode]].&lt;ref&gt;[http://www.7-zip.org/7z.html 7z format]. 7-zip.org.&lt;/ref&gt;
+
+The official 7z file format specification is distributed with the program's source code. The specification can be found in plain text format in the 'doc' subdirectory of the source code distribution.
+
+===Other supported formats===
+7-Zip supports a number of other compression and non-compression archive formats including:
+
+Packing/unpacking of 7-Zip, [[ZIP (file format)|ZIP]], [[tar (file format)|tar]], and, since version 9.20, [[Windows Imaging Format|WIM]].
+
+Unpacking only: [[Apple Partition Map|APM]], [[ARJ]], [[Cabinet (file format)|CAB]], [[RAR]], MSLZ, [[EXE]], [[SWF]], [[Flash Video|FLV]], [[SquashFS]], [[CramFS]], [[NTFS]], [[File_Allocation_Table|FAT]], [[Virtual Hard Disk|VHD]], [[Master boot record|MBR]], [[compress|Z]], [[LHA (file format)|LHA]], [[cpio]], [[smzip]], [[JAR (file format)|JAR]], [[ISO image|ISO]] CD/DVD images (7-Zip version 4.42 and up), [[Apple Disk Image|DMG]], [[Hierarchical File System|HFS]], [[RPM Package Manager|RPM]], [[onepkg]] and Debian [[deb (file format)|DEB]] archives.
+
+According to the 7-Zip website, since version 4.65 (from 2009-02-03), 7-Zip can unpack the following formats in addition to the formats it fully supports:  [[ARJ]], [[Cabinet (file format)|CAB]], [[Microsoft Compiled HTML Help|CHM]], [[cpio]], [[deb (file format)|DEB]], [[Apple Disk Image|DMG]], [[Hierarchical File System|HFS]], [[ISO image|ISO]], [[LHA (file format)|LZH]], [[LempelâZivâMarkov chain algorithm|LZMA]], [[Windows Installer|MSI]], [[Nullsoft Scriptable Install System|NSIS]], [[RAR]], [[RPM Package Manager|RPM]], [[Universal Disk Format|UDF]], [[Windows Imaging Format|WIM]], [[Xar (archiver)|XAR]], and [[compress|Z]].
+
+7-Zip is able to open some [[Windows Installer|MSI]] files, allowing access to the meta-files within along with the main contents. Some Microsoft CAB ([[LZX (algorithm)|LZX]] compression) and [[Nullsoft Scriptable Install System|NSIS]] (LZMA) installer formats can be opened.  Similarly, some Microsoft executable programs (.EXEs) which are self-extracting archives or otherwise contain archived content (e.g., some setup files) may be opened as archives.
+
+Since the 7-Zip 9.14 beta, 7-Zip can open and view the content of [[VHD (file format)|VHD virtual hard disks]].
+
+When compressing ZIP or gzip files, 7-Zip uses its own [[DEFLATE]] encoder, which is often able to achieve higher compression levels, but at lower speed, than the more common DEFLATE implementation of [[zlib]]. The 7-Zip deflate encoder implementation is available separately as part of the [[AdvanceCOMP]] suite of tools.
+
+==Variants==
+In the form of [[p7zip]], the [[Command line interface|command line]] version has been ported for use on [[Unix-like]] systems including [[Linux]], [[FreeBSD]], [[Mac OS X]] and [[AmigaOS 4]].&lt;ref name=&quot;p7ziphome&quot; /&gt; ''J7Z'' is a GUI front end for p7zip, which runs on [[Windows]] and [[Linux]] under [[Java SE]].&lt;ref&gt;[http://code.google.com/p/k7z/ &quot;K7Z - an alternative 7-zip GUI&quot;]. K7Z on Google Code.&lt;/ref&gt; A GUI front end for p7zip on the [[Mac OS X]] operating system named [[keka]] is also available.&lt;ref&gt;[http://www.kekaosx.com &quot;Keka - the free Mac OS X file archiver&quot;]. kekaosx.com.&lt;/ref&gt;
+
+Two command line versions are provided: 7z.exe, using external libraries; and a standalone executable 7za.exe containing built-in modules. However, 7za's compression/decompression support is limited to [[7z]], [[ZIP (file format)|ZIP]], [[gzip]], [[bzip2]], [[compress|Z]] and [[tar (file format)|tar]] formats. A 64-bit version is available for [[Microsoft Windows#64-bit operating systems|64-bit editions of Windows]], with support for large memory maps leading to faster compression.  All versions support multi-threading.
+
+A repackaged version for Windows is available by [[PortableApps.com]].&lt;ref&gt;{{cite web | url =http://portableapps.com/apps/utilities/7-zip_portable | title =7-Zip Portable | PortableApps.com | year =2009 | publisher =PortableApps.com | accessdate =2010-04-16 }}&lt;/ref&gt;
+
+==Features==
+7-Zip supports:
+* The 256-bit [[Advanced Encryption Standard|AES]] cipher. Encryption can be enabled for both files and the 7z directory structure. When the directory structure is encrypted, users are required to supply a [[password]] to see the filenames contained within the archive.  WinZip-developed zip file AES encryption standard is also available in 7-Zip to encrypt ZIP archives with AES 256-bit, but it does not offer filename encryption as in 7z archives.&lt;ref&gt;[http://www.winzip.com/aes_info.htm &quot;AES Encryption Information: Encryption Specification AE-1 and AE-2&quot;]. ''winzip.com.''  January 30, 2009, WinZip International LLC.&lt;/ref&gt;
+* [[Volume (compression)|Volumes]] of dynamically variable sizes, allowing use for backups on removable media such as writable [[Compact Disc|CDs]] and [[DVD]]s.
+* Usability as a basic [[orthodox file manager]] when used in 2-panel mode.
+* Multiple-core CPU threading settings can be configured.
+* The ability to attempt to open EXE files as archives, allowing the decompression of data from inside many &quot;Setup&quot; or &quot;Installer&quot; or &quot;Extract&quot; type programs without having to launch them.
+* The ability to unpack archives with corrupted filenames, renaming the files as required.
+* The ability to create [[self-extracting archive|self-extracting single- (but not multi-) volume archives]].
+* Command line interface.&lt;ref&gt;[http://sevenzip.sourceforge.jp/chm/cmdline/syntax.htm &quot;Command Line Syntax&quot;]. sevenzip.sourceforge.jp.&lt;/ref&gt;
+
+==Limitations==
+{{unsourced|section|date=July 2011}}
+While 7-Zip supports file sizes of up to 16 exabytes, it has an unusually high overhead allocating memory for files, on top of the memory requirements for performing the actual compression.{{Citation needed|date=January 2011|reason=for whole paragraph}}
+
+Approximately 1 kilobyte is required per file, more if the pathname is very long; the file listing alone can grow to an order of magnitude greater than the memory required to do the actual compression. In real world terms, this means 32-bit systems cannot compress more than a million or so files in one archive, as the memory requirements exceed the 2&amp;nbsp;GB process limit.{{Citation needed|date=July 2011|reason=for whole paragraph}}
+
+64-bit systems do not suffer from the same process size limitation, but still require several gigabytes of RAM to overcome this limitation. Archives created on such systems could not be opened on machines with less memory.{{Citation needed|date=July 2011|reason=for whole paragraph}}
+
+==Reception==
+Snapfiles.com gave 7-zip 4.5 stars out of 5, noting that its &quot;interface and additional features are fairly basic, but the compression ratio is outstanding.&quot;  On [[Tech Republic]], Justin James found the detailed settings for [[File Manager (Windows)|Windows File Manager]] integration were &quot;appreciated,&quot; and called the compression/decompression benchmark utility &quot;neat&quot;. And though the comprehensive archive dialog has settings that &quot;will confuse most users,&quot;, he concluded, &quot;7-Zip fits a nice niche in between the built-in Windows capabilities and the features of the paid products, and it is able to handle a large variety of file formats in the process.&quot;&lt;ref&gt;{{cite web|title= Review: 7-Zip file compression application|first=Justin |last=James |date=November 10, 2009|publisher=[[Tech Republic]] |pages=1â2 |url=http://www.techrepublic.com/blog/products/review-7-zip-file-compression-application/852}}&lt;/ref&gt; The 2011 review of version 9.20 in ''[[PC World (magazine)|PC World]]'' magazine pointed out that 7-Zip can &quot;compress and e-mail files in one easy step&quot;, and although it offers &quot;options that most users should never have to think about ... The default settings are just fine.&quot;&lt;ref&gt;{{cite web |title=Editorial Review of 7-Zip (32-bit version) |date=March 15, 2011 |first=Lincoln |last=Spector |work=[[PC World (magazine)|PC World]]|url=http://www.pcworld.com/downloads/file/fid,62605-order,4/reviews.html?&amp;page=3}}&lt;/ref&gt;
+
+==See also==
+{{Portal|Free software}}
+* [[Comparison of file archivers]]
+* [[FreeArc]]
+
+==References==
+{{Reflist}}
+
+==External links==
+{{Commons category}}
+* [http://www.7-zip.org/ Official website]
+* [http://sourceforge.net/projects/sevenzip/ SourceForge.net: 7-Zip]
+* [http://sevenzipsharp.codeplex.com 7-Zip .NET wrapper]
+* [http://portableapps.com/apps/utilities/7-zip_portable 7-Zip Portable] at [[PortableApps.com]]
+* [http://www.7ztm.de/ 7-Zip Theme Manager]
+
+{{Compression software implementations}}
+{{FOSS}}
+{{Use dmy dates|date=June 2011}}
+
+{{DEFAULTSORT:7-zip}}
+[[Category:1999 software]]
+[[Category:Disk image extractors]]
+[[Category:Free data compression software]]
+[[Category:Free file managers]]
+[[Category:Free software programmed in C]]
+[[Category:Free software programmed in C++]]
+[[Category:Free multilingual software]]
+[[Category:Portable software]]
+[[Category:Windows compression software]]
+
+[[ar:7 Ø²ÙØ¨]]
+[[ast:7-Zip]]
+[[be-x-old:7-Zip]]
+[[bg:7-Zip]]
+[[ca:7-Zip]]
+[[cs:7-Zip]]
+[[da:7-Zip]]
+[[de:7-Zip]]
+[[eo:7-Zip]]
+[[es:7-Zip]]
+[[eu:7-Zip]]
+[[fa:Û·-Ø²ÛÙ¾]]
+[[fi:7-Zip]]
+[[fr:7-Zip]]
+[[gl:7-Zip]]
+[[hu:7-Zip]]
+[[id:7-Zip]]
+[[it:7-Zip]]
+[[ja:7-Zip]]
+[[ko:7-Zip]]
+[[ku:7-Zip]]
+[[lt:7-Zip]]
+[[nl:7-Zip]]
+[[no:7-Zip]]
+[[pl:7-Zip]]
+[[pt:7-Zip]]
+[[ru:7-Zip]]
+[[sk:7-Zip]]
+[[sl:7-Zip]]
+[[sv:7-Zip]]
+[[tr:7-zip]]
+[[uk:7-Zip]]
+[[vi:7-Zip]]
+[[wuu:7-Zip]]
+[[zh:7-Zip]]</rev></revisions></page></pages></query></api>

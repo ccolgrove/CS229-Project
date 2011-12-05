@@ -1,0 +1,219 @@
+<?xml version="1.0"?><api><query><pages><page pageid="230360" ns="0" title="Windows CE"><revisions><rev xml:space="preserve">{{Infobox OS
+|name = Microsoft Windows CE
+|logo = [[File:Windows CE.png|220px|Windows CE brand logo]]
+|caption = Windows CE for Handheld PC 3.0 (WinCE 2.11 core)
+|developer = [[Microsoft]]
+|source_model = [[Closed source software|Closed source]] ([[shared source]] kernel&lt;ref&gt;[http://www.linuxdevices.com/news/NS6932977445.html Microsoft opens full Windows CE kernel source.] Linux Devices' article(Nov. 01, 2006).&lt;/ref&gt;)
+|kernel_type = [[Monolithic kernel|Monolithic]]&lt;br/&gt;[[Hybrid kernel|Hybrid]] 
+|supported_platforms = [[x86]], [[MIPS architecture|MIPS]], [[ARM architecture|ARM]], ([[SuperH]]&lt;ref&gt;{{cite web
+ | url=http://www.emacinc.com/operating_systems/windows_ce.htm
+ | archiveurl=http://web.archive.org/web/20100528144239/http://www.emacinc.com/operating_systems/windows_ce.htm
+ | archivedate=28 May 2011
+ | title=Windows CE overview
+}}&lt;/ref&gt; up to 6.0 R2)
+|ui = 
+|family = Windows CE
+|released = {{start date and age|1996|11|16|df=yes}}
+|latest_release_version = 7.0
+|latest_release_date = {{Start date and age|2011|03|01|df=yes}}
+|latest_test_version = 
+|latest_test_date = 
+|marketing_target = 
+|programmed_in = [[C (programming language)|C]]&lt;ref&gt;{{cite web|url=http://www.windowsfordevices.com/c/a/News/Special-Report-Windows-CE-6-arrives-with-100-kernel-source|title=Special Report: Windows CE 6 arrives with 100% kernel source|publisher=windowsfordevices.com|date=2006-11-01|accessdate= 2011-07-20}}&lt;/ref&gt;
+|prog_language = 
+|language = [[Multilingual]]
+|updatemodel = 
+|package_manager = 
+|working_state = 
+|license = [[Software license agreement|MS-EULA]]
+|website = [http://www.microsoft.com/windowsembedded/ Windows CE]
+}}
+
+'''Microsoft Windows CE''' (now officially known as '''Windows Embedded Compact''' and previously also known as '''Windows Embedded CE''' ,&lt;ref&gt;{{cite web|url=http://www.windowsfordevices.com/news/NS5452934855.html|title=Microsoft renames Windows CE, sets CE 6.0 launch date|publisher= windowsfordevices.com|date=2006-09-22|accessdate=2011-07-20}}&lt;/ref&gt;&lt;ref&gt;{{cite web|url= http://www.microsoft.com/windows/embedded/default.mspx|title=Windows Embedded Homepage|publisher= Microsoft.com|date=|accessdate=2010-11-14}}&lt;/ref&gt; and sometimes abbreviated '''WinCE''') is an [[operating system]] developed by [[Microsoft]] for [[embedded system]]s. Windows CE is a distinct operating system and [[Kernel (computing)|kernel]], rather than a trimmed-down version of desktop Windows.&lt;ref&gt;{{cite web|url=http://blogs.msdn.com/b/ce_base/archive/2007/11/26/how-does-windows-embedded-ce-6.0-start_3f00_.aspx|title=How does Windows Embedded CE 6.0 Start? - Windows CE Base Team Blog - Site Home - MSDN Blogs|publisher=Blogs.msdn.com|date=2007-12-18|accessdate=2010-11-14}}&lt;/ref&gt; It is not to be confused with [[Windows Embedded#Windows Embedded Standard|Windows Embedded Standard]] which is an [[Windows NT|NT]]-based componentized version of desktop [[Microsoft Windows]].
+
+Microsoft licenses Windows CE to [[OEM]]s and device makers. The OEMs and device makers can modify and create their own user interfaces and experiences, while Windows CE provides the technical foundation to do so.
+
+The current version of Windows Embedded Compact supports [[Intel Corporation|Intel]] [[x86]] and compatibles, [[MIPS architecture|MIPS]], and [[ARM architecture|ARM]] processors.
+
+==Features==
+Windows CE is optimized for devices that have minimal storage;  a Windows CE kernel may run in under a megabyte of [[Computer memory|memory]]. Devices are often configured without [[disk storage]], and may be configured as a &quot;closed&quot; system that does not allow for end-user extension (for instance, it can be burned into [[Read-only memory|ROM]]). Windows CE conforms to the definition of a [[real-time operating system]], with a deterministic interrupt latency. From Version&amp;nbsp;3 and onward, the system supports 256&amp;nbsp;priority levels&lt;ref&gt;{{cite web|url= http://msdn.microsoft.com/en-us/library/bb202761.aspx|title=Priority Levels|publisher= Msdn.microsoft.com|date=|accessdate=2010-11-14}}&lt;/ref&gt; and uses [[priority inheritance]] for dealing with [[priority inversion]]. The fundamental unit of execution is the [[Thread (computer science)|thread]]. This helps to simplify the interface and improve execution time.
+
+Microsoft has stated that the &quot;CE&quot; is not an intentional [[Acronym and initialism|initialism]], but many people believe CE stands for &quot;Consumer Electronics&quot; or &quot;Compact Edition&quot;. Microsoft says the letters instead imply a number of Windows CE design precepts, including &quot;Compact, Connectable, Compatible, Companion, and Efficient.&quot;&lt;ref&gt;{{cite web|title=The Meaning of &quot;CE&quot; in Windows CE|work= Q166915|publisher=[[Microsoft]]|date=2002-09-03|url=http://support.microsoft.com/default.aspx?scid=kb;EN-US;Q166915|accessdate=2006-09-15}}&lt;/ref&gt; The first versionâknown during development under the [[code name]] &quot;Pegasus&quot;âfeatured a Windows-like [[Graphical user interface|GUI]] and a number of Microsoft's popular applications, all trimmed down for smaller storage, memory, and speed of the palmtops of the day.
+
+Since then, Windows CE has evolved into a component-based, embedded, real-time operating system. It is no longer targeted solely at hand-held computers.&lt;ref&gt;{{cite web|url=http://www.microsoft.com/windowsembedded/en-us/products/windowsce/technical-specifications.mspx|title=Embedded Platform &amp;#124; Integrated Development Environment (IDE) &amp;#124; Windows CE|publisher=Microsoft.com|date=| accessdate=2010-11-14}}&lt;/ref&gt; Many platforms have been based on the core Windows CE operating system, including Microsoft's [[AutoPC]], [[Pocket PC 2000]], [[Pocket PC 2002]], [[Windows Mobile 2003]], [[Windows Mobile 2003 SE]], [[Windows Mobile 5|Windows Mobile 5.0]], [[Windows Mobile 6.0|Windows Mobile 6]], [[Smartphone|Smartphone 2002]], [[Smartphone|Smartphone 2003]], [[Portable Media Center]], [[Zune]], [[Windows Phone 7|Windows Phone]] and many industrial devices and embedded systems. Windows CE even powered select games for the [[Dreamcast]], was the operating system of the [[Gizmondo]] handheld, and can partially run on modified [[Xbox]] game consoles.
+
+A distinctive feature of Windows CE compared to other Microsoft operating systems is that large parts of it are offered in source code form. First, source code was offered to several vendors, so they could adjust it to their hardware. Then products like Platform Builder (an integrated environment for Windows CE OS image creation and integration, or customized operating system designs based on CE) offered several components in source code form to the general public. However, a number of core components that do not need adaptation to specific hardware environments (other than the CPU family) are still distributed in binary only form.
+
+==Development tools==
+===Visual Studio===
+[[Microsoft Visual Studio]] 2008 and earlier support projects for Windows CE / Windows Mobile, producing executable programs and platform images either as an emulator or attached by cable to an actual mobile device. A mobile device is not necessary to develop a CE program. The [[.NET Compact Framework]] supports a subset of the [[.NET Framework]] with projects in [[C Sharp (programming language)|C#]], and [[Visual Basic .NET|VB.NET]], but not [[Managed Extensions for C++|Managed C++]]. &quot;Managed&quot; applications employing the .NET Compact Framework also require devices with significantly larger memories (8&amp;nbsp;MB or more) while unmanaged applications can still run successfully on smaller devices.
+
+In Visual Studio 2010, the Windows Phone Developer Tools are used as an extension, allowing Windows Phone&amp;nbsp;7 apps to be designed and tested within Visual Studio.
+
+===CodeGear Delphi Prism===
+[[CodeGear]] [[Oxygene (programming language)|Delphi Prism]], which runs in Visual Studio, also supports the .NET Compact Framework and thus can be used to develop mobile applications. It employs the [[Oxygene (programming language)|Oxygene]] compiler created by [[RemObjects]], which targets .NET, the .NET Compact Framework, and [[Mono (software)|Mono]]. Its command-line compiler is available free of charge.
+
+===Free Pascal and Lazarus===
+[[Free Pascal]] introduced the Windows CE port in Version&amp;nbsp;2.2.0, targeting [[ARM architecture|ARM]] and [[x86]] architectures. Later, the Windows CE header files were translated for use with [[Lazarus (software)|Lazarus]], a [[rapid application development]] (RAD) software package based on Free Pascal. Windows CE applications are designed and coded in the Lazarus [[integrated development environment]] (IDE) and compiled with an appropriate [[cross compiler]].&lt;ref&gt;[http://wiki.lazarus.freepascal.org/WinCE_port WinCE port] - Lazarus wiki&lt;/ref&gt;
+
+===Basic4ppc===
+[[Basic4ppc]]âwhich is a [[programming language]] similar to [[Visual Basic]]âtargets the [[.NET Compact Framework]] and supports Windows CE and Windows Mobile devices.
+
+===GLBasic===
+[[GLBasic]] is a very easy to learn and use BASIC dialect that compiles for many platforms, including Windows CE and Windows Mobile. It can be extended by writing inline C/C++ code.
+
+===LabVIEW===
+[[LabVIEW]] is a graphical programming language, supporting many platforms, also windows CE.
+
+===Platform Builder===
+This [[programming tool]] is used for building the platform ([[Board support package|BSP]]&amp;nbsp;+ [[Kernel (computing)|Kernel]]), [[device driver]]s (shared source or custom made) and also the [[application software|application]]. This is a one step environment to get the system up and running. One can also use Platform Builder to export an [[Software development kit|SDK]] (software development kit) for the target [[microprocessor]] ([[SuperH]], [[x86]], [[MIPS architecture|MIPS]], [[ARM architecture|ARM]] etc.) to be used with another associated tool set named below.
+
+===Embedded Visual C++ (eVC)===
+The [[Embedded system|Embedded]] [[Visual C++]] [[programming tool|tool]] is for development of embedded application for Windows CE based devices. This tool can be used standalone using the [[Software development kit|SDK]] exported from Platform Builder or using the Platform Builder using the Platform Manager connectivity setup.
+
+===AutoHotkey===
+A port of the open source macro-creation and automation software utility [[AutoHotkey]] is available for Windows CE, which allows the construction of macros and simple [[GUI]] applications developed by systems analyst Jonathan Maxian Timkang.&lt;ref&gt;[http://www.autohotkey.net/~Micha/AutohotkeyCE/html/index.htm] - AutoHotkeyCE&lt;/ref&gt;
+
+==Relationship to Windows Mobile, Pocket PC, and SmartPhone==
+{{unreferencedsection|date=February 2010}}
+[[Image:Windows CE Timeline.svg|300px|thumb|right|Timeline of Windows CE Development]]
+
+Often Windows CE, [[Windows Mobile]], and [[Pocket PC]] are used interchangeably, in part due to their common origin. This practice is not entirely accurate. Windows CE is a modular/componentized operating system that serves as the foundation of several classes of devices. Some of these modules provide subsets of other components' features (e.g. varying levels of windowing support; [[Distributed Component Object Model|DCOM]] vs [[Component Object Model|COM]]), others which are separate ([[Computer font|Bitmap]] or [[TrueType]] font support), and others which add additional features to another component. One can buy a kit (the Platform Builder) which contains all these components and the tools with which to develop a custom platform. Applications such as [[Microsoft Office Mobile#Excel Mobile|Excel Mobile]]/[[Microsoft Office Mobile|Pocket Excel]] are not part of this kit. The older Handheld PC version of Pocket Word and several other older applications are included as samples, however.
+
+Windows Mobile is best described as a subset of platforms based on a Windows CE underpinning. Currently, Pocket PC (now called Windows Mobile Classic), SmartPhone (Windows Mobile Standard), and Pocket PC Phone Edition (Windows Mobile Professional) are the three main platforms under the Windows Mobile umbrella. Each platform uses different components of Windows CE, plus supplemental features and applications suited for their respective devices.
+
+Pocket PC and Windows Mobile are Microsoft-defined custom platforms for general PDA use, consisting of a Microsoft-defined set of minimum profiles (Professional Edition, Premium Edition) of software and hardware that is supported. The rules for manufacturing a Pocket PC device are stricter than those for producing a custom Windows CE-based platform. The defining characteristics of the Pocket PC are the [[touchscreen]] as the primary [[human interface device]] and its extremely portable size.
+
+CE v3.0 is the basis for Pocket PC 2002. A successor to CE v3.0 is CE.net.&lt;ref name=&quot;2000grad-dpa_henrich_poehls&quot;/&gt; &quot;PocketPC &amp;#91;is&amp;#93; a separate layer of code on top of the core Windows CE OS... Pocket PC is based on Windows CE, but it's a different offering.&quot; And licensees of Pocket PC are forbidden to modify the WinCE part.&lt;ref name=&quot;theregister-030416_pocket_not_wince&quot;&gt;{{cite web| last=Smith|first=Tony|title=Why Pocket PC isn't WinCE|publisher=The Register|date=2003-04-16|url= http://www.theregister.co.uk/2003/04/16/why_pocket_pc_isnt_wince|accessdate=2009-10-24}}&lt;/ref&gt;
+
+The SmartPhone platform is a feature-rich OS and interface for cellular phone handsets. SmartPhone offers productivity features to business users, such as email, and multimedia abilities for consumers. The SmartPhone interface relies heavily on joystick navigation and PhonePad input. Devices running SmartPhone do not include a touchscreen interface. SmartPhone devices generally resemble other cellular handset form factors, whereas most Phone Edition devices use a PDA form factor with a larger display.
+
+==Versions==
+{| class=&quot;wikitable&quot;
+|- 
+!Version !! Changes
+|-
+|1.0 || Released November 18, 1996.&lt;ref&gt;{{cite news|title=Microsoft Announces Broad Availability of Handheld PCs With Windows CE|url=http://www.microsoft.com/presspass/press/1996/Nov96/wincepr.mspx |agency=Microsoft News Center|date=1996-11-18|accessdate=2011-06-20}}&lt;/ref&gt; Codename &quot;Alder&quot;.&lt;ref name=&quot;blogs_msdn-763146&quot;&gt;{{cite web|last=Hall|first=Mike|title=Windows Embedded Blog: CE 6.0 - why the codename &amp;quot;Yamazaki&amp;quot;&amp;nbsp;?|publisher=[[Microsoft Developer Network|MSDN]] [[Microsoft Developer Network#Blogs|Blogs]]|date=2006-09-19|url=http://blogs.msdn.com/mikehall/archive/2006/09/19/763146.aspx|accessdate=2009-10-24}}&lt;/ref&gt;
+*Devices named &quot;handheld PC&quot; (HPC).&lt;ref name=&quot;2000grad-dpa_henrich_poehls&quot;&gt;{{Citation|last=PÃ¶hls| first=Henrich C.|title=Risk Analysis of Mobile Devices with Special Concern of '''Malware''' Contamination|work=Diploma Thesis|publisher=[[University of Hamburg]]|format=PDF|page=27|date= 2003-09-05|url=http://www.2000grad.com/papers/dpa_henrich_poehls.pdf|accessdate=2009-10-24}}&lt;/ref&gt;
+|-
+|2.0 || Released September 29, 1997.&lt;ref&gt;{{cite news|url=http://www.microsoft.com/presspass/press/1997/Sept97/WINCE2PR.mspx|title=Microsoft Announces Release of Windows CE 2.0|agency=Microsoft News Center|date=1997-09-29|accessdate=2011-06-20}}&lt;/ref&gt; Codename &quot;Birch&quot;.&lt;ref name=&quot;blogs_msdn-763146&quot;/&gt;
+*Devices named &quot;Palm-sized PC&quot;.&lt;ref name=&quot;2000grad-dpa_henrich_poehls&quot;/&gt;
+*Real-time deterministic task scheduling.
+*Architectures: ARM, MIPS, PowerPC, StrongARM, SuperH and x86.
+*[[color depth|32-bit]] color screens.
+*SSL 2.0 and SSL 3.0.
+|-
+|[[Windows CE 3.0|3.0]] || Released June 15, 2000.&lt;ref&gt;{{cite news|url=http://www.microsoft.com/presspass/press/2000/Jun00/CELaunchPR.mspx|title=Microsoft Announces Availability of Windows CE 3.0|agency=Microsoft News Center|date=2000-06-15|accessdate=2011-06-20}}&lt;/ref&gt; Codename &quot;Cedar&quot;.&lt;ref name=&quot;blogs_msdn-763146&quot;/&gt;
+*Major recode that made CE hard real time down to the microsecond level.
+*Base for the Pocket PC 2000, Handheld PC 2000, Pocket PC 2002 and Smartphone 2002.&lt;ref name= &quot;2000grad-dpa_henrich_poehls&quot;/&gt;
+*Priority levels was increased from 8 to 256.&lt;ref name=&quot;2000grad-dpa_henrich_poehls&quot;/&gt;
+*Object store was increased from 65,536 to 4.19 million allowed objects.&lt;ref name=&quot;2000grad-dpa_henrich_poehls&quot;/&gt;
+*Restricted access to critical APIs or restricting write access to parts of the registry.&lt;ref name=&quot;2000grad-dpa_henrich_poehls&quot;/&gt;
+|-
+|4.x || Released January 7, 2002.&lt;ref&gt;{{cite news|url=http://www.microsoft.com/presspass/press/2002/jan02/01-07CENetLaunchPR.mspx|title=Microsoft Launches Windows CE .NET|agency=Microsoft News Center|date=2002-01-07|accessdate=2011-06-20}}&lt;/ref&gt; Codename &quot;Talisker/Jameson/McKendric&quot;.&lt;ref name=&quot;blogs_msdn-763146&quot;/&gt;
+Driver structure changed greatly, new features added.
+*Base for &quot;Pocket PC 2003&quot;.&lt;ref name=&quot;2000grad-dpa_henrich_poehls&quot;/&gt;
+*Bluetooth support.&lt;ref name=&quot;2000grad-dpa_henrich_poehls&quot;/&gt;&lt;ref name=&quot;pencomputing_com-dotnet&quot;&gt;{{cite news|last=Walker|first=Geoff|title=Windows CE .net &amp;mdash; Microsoft's successor to Windows CE 3.0|publisher=Pen Computing Magazine|date=2002-01-07|url=http://www.pencomputing.com/WinCE/dotnet.html|accessdate=2009-10-24}}&lt;/ref&gt;
+*TLS (SSL 3.1), IPsec L2TP VPN, or Kerberos.&lt;ref name=&quot;2000grad-dpa_henrich_poehls&quot;/&gt;
+|-
+|[[Windows CE 5.0|5.x]] ||[[File:Wince50.PNG|thumb|right|[[Windows CE 5.0]]]] Released in August 2004.&lt;ref name=&quot;blogs_msdn-763146&quot;/&gt; Adds lots of features. Codename &quot;Macallan&quot;.&lt;ref name= &quot;blogs_msdn-763146&quot;/&gt;
+*Automatic report of bugs to the manufacturer.&lt;ref name=&quot;theregister-040329_readies_wince&quot;&gt;{{cite web|last=Smith|first=Tony|title=MS readies WinCE 5.0 preview|publisher=[[The Register]]|date= 2004-03-29|url=http://www.theregister.co.uk/2004/03/29/ms_readies_wince|accessdate=2009-10-24}}&lt;/ref&gt;
+*[[Direct3D Mobile]], a COM-based version of Windows XP's DirectX multimedia API.&lt;ref name=&quot;theregister-040329_readies_wince&quot;/&gt;
+*DirectDraw for 2D graphics and DirectShow for camera and video digitisation support.&lt;ref name= &quot;theregister-040329_readies_wince&quot;/&gt;
+*Remote Desktop Protocol (RDP) support.&lt;ref name=&quot;seditaville_com-History_MS_Mobile_v2&quot;&gt;{{cite web| title=The History of the PDA|format=[[DOC (computing)|DOC]]|url=http://seditaville.com/academic/summary/The%20History%20of%20Microsoft%20Mobile%20OS(Ver%202).doc}} 090517 seditaville.com&lt;/ref&gt; 
+|-
+|[[Windows Embedded CE 6.0|6.0]] || Released in September 2006. Codename &quot;Yamazaki&quot;.&lt;ref name= &quot;blogs_msdn-763146&quot;/&gt;
+*Process address space is increased from 32&amp;nbsp;MB to 2&amp;nbsp;GB.&lt;ref name=&quot;msdn_ce6_memory&quot;&gt;{{cite web|title=Windows Embedded CE 6.0 Advanced Memory Management|url=http://msdn.microsoft.com/en-us/library/bb331824.aspx}} Retrieved 2011-05-25&lt;/ref&gt;
+*Number of processes has been increased from 32 to 32,768.&lt;ref name=&quot;embedded_net_nz-embedded_intro_ses&quot;&gt;{{cite web|title=Introduction to Microsoft embedded technologies - Session 1| format=[[.ppt|PPT]]|url=http://www.embedded.net.nz/Presentations%20PPT%20%20PDF/Embedded%20Introduction%20-%20Session%201.ppt}} 090517 embedded.net.nz&lt;/ref&gt;
+*User mode and kernel mode device drivers are possible.
+*512&amp;nbsp;MB physically managed memory
+*Device.exe, filesys.exe, GWES.exe has been moved to Kernel mode.
+*SetKMode and set process permissions not possible.
+*System call performance improved.&lt;ref name=&quot;windowsfordevices-AT9457847627&quot;&gt;{{cite web|last=Babu| first=K. Ashok|title=Differences between Windows CE 5.0 and Windows CE 6.0|publisher= WindowsForDevices.com|date=2006-11-22|url=http://www.windowsfordevices.com/articles/AT9457847627.html|accessdate=2009-10-24}}&lt;/ref&gt;
+|-
+|[[Windows Embedded Compact 7|7.0]] || Released in March 2011.
+*Dual-core CPU support (SMP, ARMv7)
+*Wi-Fi Positioning System
+*Bluetooth 3.0 + HS
+*[[Cellcore]]
+*[[Digital Living Network Alliance|DLNA]] (Digital Living Network Alliance)
+*[[Digital rights management|DRM]] technology
+*Media Transfer Protocol
+*Windows Phone&amp;nbsp;7 IE with Flash&amp;nbsp;10.1 support
+*NDIS&amp;nbsp;6.1 support
+*UX C++ XAML API using technologies like Windows Presentation Foundation and Silverlight for attractive and functional user interfaces
+*Advanced touch and gesture input
+*Kernel support for 3&amp;nbsp;GB physical RAM and supports ARMv7 assembly&lt;ref name=&quot;WindowsCE6vs7.asp&quot;&gt;{{cite web|last=Veerabahu|first=Maharajan|title=Comparison between Windows Embedded Compact 7 (WEC7) and Windows CE 6|publisher=e-consystems.com|date=2010-12-24|url=http://www.e-consystems.com/WindowsCE6vs7.asp|accessdate=2010-12-24}}&lt;/ref&gt;
+|}
+
+==See also==
+*[[ActiveSync]]
+*[[Dreamcast]]
+*[[Handheld PC]]
+*[[Handheld PC Explorer]]
+*[[List of Pocket PC Devices|List of Windows CE Devices]]
+*[[Palm-size PC]]
+*[[Pocket PC]]
+*[[Portable Media Center]]
+*[[Microsoft Tablet PC|Tablet PC]]
+*[[Windows CE 3.0]]
+*[[Windows CE 5.0]]
+*[[Windows Embedded CE 6.0]]
+*[[Windows Embedded Compact 7]]
+*[[Windows Mobile]]
+*[[Windows Phone 7]]
+*[[Microsoft Kin]]
+*[[Zune HD]]
+
+==Notes and references==
+{{reflist}}
+
+==External links==
+*[http://www.microsoft.com/windowsembedded/products/windowsce/default.mspx Windows CE Product Page at Microsoft]
+*[http://msdn.microsoft.com/library/default.asp?url=/library/en-us/dncenet/html/benchmarking.asp Benchmarking Real-time Determinism in Microsoft Windows CE]
+*[http://www.hpcfactor.com/qlink/?linkID=20 A Brief History of Windows CE], by HPC:Factor with screenshots of the various versions
+*[http://web.archive.org/web/20050311103022/http://www.hpcarchive.info/ Site hosted by Windows CE], Website hosted by Handheld PC. Unfortunately offline now; only this archived version exists
+*[http://msdn.microsoft.com/library/default.asp?url=/library/en-us/xpehelp/html/xeconAboutWindowsXPEmbeddedTop.asp Windows XP Embedded on MSDN ]
+*[http://geekswithblogs.net/waterbaby Windows CE: C# Applications developer ]
+*[http://www.furrygoat.com/2008/04/22/portable-ce-30/ Portable CE 3.0]
+*[http://goembedded.ksetindia.com/ Go Embedded!] An Embedded Systems blog that devotes a great deal of attention to Windows CE
+*[http://nicolasbesson.blogspot.com/ Technical articles on the Windows CE technology]
+*[http://blogs.msdn.com/mikehall/ Mike Hall's Windows Embedded Blog]
+*[http://www.e-consystems.com/blog e-con's Windows CE Blog]
+*[http://www.microsoft.com/windowsembedded/en-us/products/default.mspx Choosing the correct version of Windows Embedded operating systems]
+*[http://www.microsoft.com/windowsembedded/en-us/partners/find/default.mspx Find windows embedded devices]
+
+{{Microsoft Windows family}}
+{{Microsoft operating systems}}
+{{Real-time operating systems}}
+
+[[Category:Windows CE]]
+
+[[ar:ÙÙÙØ¯ÙØ² Ø³Ù Ø¥Ù]]
+[[az:Windows CE]]
+[[cs:Windows CE]]
+[[de:Microsoft Windows CE]]
+[[el:Windows CE]]
+[[es:Windows CE]]
+[[fr:Windows CE]]
+[[ko:ìë CE]]
+[[id:Windows CE]]
+[[ia:Microsoft Windows CE]]
+[[it:Windows CE]]
+[[ku:Windows CE]]
+[[lt:Windows CE]]
+[[nl:Windows CE]]
+[[ja:Microsoft Windows Embedded CE]]
+[[no:Windows CE]]
+[[uz:Windows CE]]
+[[pl:Microsoft Windows CE]]
+[[pt:Windows CE]]
+[[ru:Windows CE]]
+[[simple:Windows CE]]
+[[sk:Windows CE]]
+[[fi:Windows CE]]
+[[sv:Windows CE]]
+[[tr:Windows CE]]
+[[uk:Windows CE]]
+[[vi:Windows CE]]
+[[zh:Windows Embedded Compact]]</rev></revisions></page></pages></query></api>

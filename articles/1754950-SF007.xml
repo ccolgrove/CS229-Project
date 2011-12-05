@@ -1,0 +1,107 @@
+<?xml version="1.0"?><api><query><pages><page pageid="1754950" ns="0" title="Remote backup service"><revisions><rev xml:space="preserve">{{internet hosting}}
+A '''remote, online, or managed backup service''' is a service that provides users with a system for the [[backup]] and storage of [[computer file]]s. [[List of online backup services|Online backup providers]] are companies that provide this type of service to end users (or clients).
+
+Online backup systems are typically built around a client software program that runs on a schedule, typically once a day, and usually at night while computers aren't in use. This program typically collects, compresses, encrypts, and transfers the data to the remote backup service provider's servers or off-site hardware.
+
+There are many products on the market&amp;nbsp;â all offering different feature sets, service levels, and types of encryption. Providers of this type of service frequently target specific market segments. High-end LAN-based backup systems may offer services such as [[Active Directory]], client remote control, or open file backups. Consumer online backup companies frequently have beta software offerings and/or free-trial backup services with fewer live support options.
+
+== History ==
+In the mid 1980s, the computer industry was in a great state of change with modems at speeds of 1200 to 2400 baud, making transfers of large amounts of data slow (1 mb = 72 minutes). While faster modems and more secure network protocols were in development, tape backup systems gained in popularity. During that same period the need for an affordable, reliable online backup system was becoming clear, especially for businesses with critical data.
+
+Exabyte corporation was the first company to offer a disk-to-disk backup solution for small and medium business and public institutions in the late 1970s. The company itself is defunct now but the concept of online backup was soon started to commercialize in the small business segment by various small backup companies.
+
+More online/remote backup services came into existence during the heyday of the [[dot-com boom]] in the late 1990s. The initial years of these large industry service providers were about capturing market share and understanding the importance and the role that these online backup providers were playing in the web services arena. Today, most service providers of online backup services position their services using the [[SaaS]] (software as a service) strategy and its relevance is predicted to increase exponentially in the years to come as personal and enterprise data storage needs rise. The last few years have also witnessed a healthy rise in the number of independent online backup providers.
+
+== Typical features ==
+; Encryption: Data should be encrypted before it is sent across the internet, and it should be stored in its encrypted state. [[Encryption]]  should be at least 256 bits, and the user should have the option of using his own encryption key, which should never be sent to the server.
+; Network backup: A backup service supporting network backup can back up multiple computers, servers or [[Network Attached Storage]] appliances on a local area network from a single computer or device.
+; [[Continuous backup]] - Continuous Data Protection: Allows the service to back up continuously or on a predefined schedule. Both methods have advantages and disadvantages. Most backup services are schedule-based and perform backups at a predetermined time. Some services provide continuous data backups which are used by large financial institutions and large online retailers. However, there is typically a trade-off with performance and system resources.
+; File-by-File Restore: The ability for users to restore files themselves, without the assistance of a Service Provider by allowing the user select files by name and/or folder. Some services allow users to select files by searching for filenames and folder names, by dates, by file type, by backup set, and by tags.
+; Online access to files: Some services allow you to access backed-up files via a normal web browser. Many services do not provide this type of functionality.
+; Data compression: Data will typically be compressed with a [[lossless compression]] algorithm to minimize the amount of bandwidth used.
+; Differential data compression: A way to further minimize network traffic is to transfer only the binary data that has changed from one day to the next, similar to the open source file transfer service [[Rsync]]. More advanced online backup services use this method rather than transfer entire files.
+; Bandwidth usage: User-selectable option to use more or less [[Bandwidth (computing)|bandwidth]]; it may be possible to set this to change at various times of day.
+; Off-Line Backup: Off-Line Backup allows along with and as part of the online backup solution to cover daily backups in time when network connection is down. at this time the remote backup software must perform backup onto a local media device like a tape drive , a disk or another server . the minute network connection restored remote backup software will update the remote datacenter with the changes coming out of the off-line backup media .
+
+== Common features for business users ==
+;Server backup
+:Many businesses require backups of servers and the special databases that run on them, such as [[groupware]], SQL, and [[directory service]]s.
+;Versioning
+:Keeps multiple past versions of files to allow for rollback to or restoration from a specific point in time.
+;File retention policies
+:Many businesses require a flexible file retention policy that can be applied to an unlimited number of groups of files called &quot;sets&quot;.
+;Regulatory compliance
+:Some businesses are required to comply with government regulations that govern privacy, disclosure, and legal discovery. A service provider that offers this type of service assists customers with proper compliance with and understanding of these laws.
+;Centralized management console
+:Allows for an IT department or staff member to monitor backups for the user.
+;Fully managed services
+:Some services offer a higher level of support to businesses that might request immediate help, proactive monitoring, personal visits from their service provider, or telephone support.
+;Redundancy
+:Multiple copies of data backed up at different locations. This can be achieved by having two or more mirrored data centers, or by keeping a local copy of the latest version of backed up data on site with the business.
+;Seed loading
+:Ability to send a first backup on a portable storage device rather than over the Internet when a user has large amounts of data that they need quickly backed up.
+;Bulk restore
+:A way to restore data from a portable storage device when a full restore over the Internet might take too long.
+
+== Cost factors ==
+Online backup services are usually priced as a function of the following things:
+# The total amount of data being backed up.
+# The number of machines covered by the backup service.
+# The maximum number of versions of each file that are kept.
+# Data retention and archiving period options
+# Managed backups vs. Unmanaged backups
+# The level of service and features available
+
+Some vendors limit the number of versions of a file that can be kept in the system. Some services omit this restriction and provide an unlimited number of versions. Add-on features (plug-ins), like the ability to back up currently open or locked files, are usually charged as an extra, but some services provide this built in.
+
+Most remote backup services reduce the amount of data to be sent over the wire by only backing up changed files. This approach to backing up means that the customers total stored data is reduced. Reducing the amount of data sent and also stored can be further drastically reduced by only transmitting the changed data bits by binary or block level incremental backups. [[List of online backup services|Solutions]] that transmit only these changed binary data bits do not waste bandwidth by transmitting the same file data over and over again if only small amounts change.
+
+== Advantages ==
+Remote backup has advantages over traditional backup methods:&lt;ref&gt;[http://www.memopal.com/en/writable/cms/Guide%20to%20Online%20backup.pdf Guide to Online Backup]&lt;/ref&gt;&lt;ref&gt;[http://www.onlinebackupreseller.com/backup101.html Online Backup 101]&lt;/ref&gt;
+* Perhaps the most important aspect of backing up is that backups are stored in a different location from the original data.  Traditional backup requires manually taking the backup media offsite.
+* Remote backup does not require user intervention.  The user does not have to change tapes, label CDs or perform other manual steps.
+* Unlimited data retention.
+* Backups are automatic.
+* The correct files are backed up. Ordinary backup software is often installed with a list of files to be backed up. This set of files usually represents the state of the system when the software was installed, and often misses critical files, like files that get added later.
+* Some remote backup services will work continuously, backing up files as they are changed.
+* Most remote backup services will maintain a list of versions of your files.
+* Most remote backup services will use a 128 - 448 bit encryption to send data over unsecured links (ie internet)
+* A few remote backup services can reduce backup by only transmitting changed binary data bits
+
+== Disadvantages ==
+Remote backup has some disadvantages over traditional backup methods:
+* Depending on the available network bandwidth, the restoration of data can be slow. Because data is stored offsite, the data must be recovered either via the Internet or via a disk shipped from the online backup service provider.
+* Some backup service providers have no guarantee that stored data will be kept private&amp;nbsp;â for example, from employees. As such, most recommend that files be encrypted.
+* It is possible that a remote backup service provider could go out of business or be purchased, which may affect the accessibility of one's data or the cost to continue using the service.
+* If encryption password is lost, no more data recovery will be possible. However with managed services this should not be a problem.
+* Residential broadband services often have monthly limits that preclude large backups. They are also usually asymmetric; the user-to-network link regularly used to store backups is much slower than the network-to-user link used only when data is restored.
+
+== Managed vs. unmanaged ==
+Some services provide expert backup management services as part of the overall offering. These services typically include:
+* Assistance configuring the initial backup
+* Continuous monitoring of the backup processes on the client machines to ensure that backups actually happen
+* Proactive alerting in the event that any backups fail
+* Assistance in restoring and recovering data
+
+== See also ==
+* [[Comparison of online backup services]]
+* [[Comparison of backup software]] (includes Managed backup providers)
+* [[Off-site data protection]] - The practice of sending data off-site for safe keeping, but not necessarily using a remote backup service.
+* [[Cloud storage]]
+
+== References ==
+&lt;references/&gt;
+
+{{DEFAULTSORT:Remote Backup Service}}
+[[Category:File hosting|Backup service]]
+[[Category:Business continuity and disaster recovery]]
+[[Category:Backup software]]
+[[Category:Online backup services| ]]
+[[Category:Computer backup]]
+
+[[de:Online-Datensicherung]]
+[[es:Servicio de backup remoto]]
+[[it:Backup online]]
+[[pl:Kopia bezpieczeÅstwa online]]
+[[ru:Ð£Ð´Ð°Ð»ÐµÐ½Ð½Ð¾Ðµ ÑÐµÐ·ÐµÑÐ²Ð½Ð¾Ðµ ÐºÐ¾Ð¿Ð¸ÑÐ¾Ð²Ð°Ð½Ð¸Ðµ Ð´Ð°Ð½Ð½ÑÑ]]
+[[zh:å¨çº¿å¤ä»½]]</rev></revisions></page></pages></query></api>

@@ -1,0 +1,75 @@
+<?xml version="1.0"?><api><query><pages><page pageid="170533" ns="0" title="Tcpdump"><revisions><rev xml:space="preserve">{{lowercase|title=tcpdump}}
+{{refimprove|date=September 2010}}
+{{Infobox software
+|name = tcpdump
+|screenshot = [[Image:Tcpdump.png|200px|tcpdump console output]]
+|caption = tcpdump console output
+|developer = The Tcpdump team
+|latest_release_version = 4.1.1
+|latest_release_date = April 7, 2010
+|operating_system = [[Linux]], [[Solaris (operating system)|Solaris]], [[FreeBSD]], [[NetBSD]], [[OpenBSD]], [[Mac OS X]], additional [[Unix-like|*NIX]] systems, [[Microsoft Windows|Windows]]
+|genre = [[Packet analyzer]]
+|license = [[BSD license]]
+|website = [http://www.tcpdump.org/ www.tcpdump.org]
+}}
+'''tcpdump''' is a common [[packet analyzer]] that runs under the [[command line]]. It allows the user to intercept and display [[TCP/IP]] and other packets being transmitted or received over a [[computer network|network]] to which the computer is attached. Distributed under the [[BSD license]],&lt;ref&gt;{{cite web
+|url=http://github.com/mcr/tcpdump/blob/18a28b6e5f4b7f31375779232f0af38b24d031c8/LICENSE
+|title=LICENSE file from source code (public GIT repository)
+}}&lt;/ref&gt; tcpdump is [[free software]].
+
+Tcpdump works on most [[Unix-like]] [[operating system]]s: [[Linux]], [[Solaris (operating system)|Solaris]], [[BSD]], [[Mac OS X]], [[HP-UX]] and [[AIX operating system|AIX]] among others.  In those systems, tcpdump uses the [[libpcap]] library to capture packets. The [[Porting|port]] of tcpdump for [[Microsoft Windows|Windows]] is called WinDump; it uses [[WinPcap]], the Windows port of libpcap.
+
+==History==
+It was originally written in 1987 by [[Van Jacobson]], [[Craig Leres]] and [[Steven McCanne]] who were, at the time, working in the [[Lawrence Berkeley Laboratory]] Network Research Group.
+
+==Common uses==
+Tcpdump analyzes network behavior, performance and applications that generate or receive network traffic.  It can also be used for analyzing the network infrastructure itself by determining whether all necessary [[Router (computing)|routing]] is occurring properly, allowing the user to further isolate the source of a problem.
+
+It is also possible to use tcpdump for the specific purpose of intercepting and displaying the communications of another user or computer. A user with the necessary privileges on a system acting as a [[router (computing)|router]] or [[Gateway (computer networking)|gateway]] through which unencrypted traffic such as [[Telnet]] or [[HTTP]] passes can use tcpdump to view login IDs, passwords, the [[Uniform Resource Locator|URL]]s and content of websites being viewed, or any other unencrypted information.
+
+The user may optionally apply a [[Berkeley Packet Filter|BPF]]-based filter to limit the number of packets seen by tcpdump; this renders the output more usable on networks with a high volume of traffic.
+
+==Privileges required==
+In some [[Unix-like]] [[operating system]]s, a user must have [[superuser]] privileges to use tcpdump because the packet capturing mechanisms on those systems require elevated privileges.  However, the -Z option may be used to drop privileges to a specific unprivileged user after capturing has been set up.  In other Unix-like operating systems, the packet capturing mechanism can be configured to allow non-privileged users to use it; if that is done, superuser privileges are not required.
+
+== See also ==
+{{Portal|Free software}}
+
+*[[Packetsquare]], A protocol field (pcap) editor and replay tool
+*[[Tcptrace]], a tool for analyzing the logs produced by tcpdump
+*[[Etherape|EtherApe]], a network mapping tool that relies on sniffing traffic
+*[[Ngrep]], a tool that can match regular expressions within the network packet payloads
+
+==References==
+{{reflist}}
+
+==External links==
+*[http://www.tcpdump.org/ Official site for tcpdump (and libpcap)]
+*[http://www.winpcap.org/windump/ Official site for WinDump]
+*[http://danielmiessler.com/study/tcpdump/ A tcpdump Tutorial and Primer]
+*[http://ngrep.sourceforge.net/ ngrep, a tcpdump-like tool]
+*[http://microolap.com/products/network/tcpdump/ Portable version of tcpdump for Windows]
+*[http://www.msamir.net/the-art-of-network-debugging-with-tcpdump/ Tutorial video for tcpdump in Linux]
+*[http://blogs.sans.org/windows-security/2009/10/22/windump-color-highlighting/ WinDump Color Highlighting]
+*[http://www.multicorepacketprocessing.com/tcpdump-with-10gbps-traffic/ Fast path based tcpdump for 10 Gbps traffic]
+
+[[Category:Network analyzers]]
+[[Category:Unix network-related software]]
+[[Category:Windows software]]
+[[Category:Free software programmed in C]]
+[[Category:Free cross-platform software]]
+[[Category:Open source network management software]]
+
+[[cs:Tcpdump]]
+[[de:Tcpdump]]
+[[es:Tcpdump]]
+[[fr:Tcpdump]]
+[[it:Tcpdump]]
+[[ka:Tcpdump]]
+[[mk:Tcpdump]]
+[[nl:Tcpdump]]
+[[ja:Tcpdump]]
+[[pl:Tcpdump]]
+[[pt:Tcpdump]]
+[[ru:Tcpdump]]
+[[uk:Tcpdump]]</rev></revisions></page></pages></query></api>

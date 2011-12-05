@@ -1,0 +1,50 @@
+<?xml version="1.0"?><api><query><pages><page pageid="65118" ns="0" title="Poplog"><revisions><rev xml:space="preserve">'''Poplog''' is a powerful multi-[[Programming language|language]], [[Multi-paradigm programming language|multiparadigm]], [[Reflection (computer science)|reflective]], [[dynamic compilation|incrementally compiled]] [[Computer programming|software development]] [[system platform|environment]], originally created in the [[United Kingdom|UK]] for teaching and research in [[Artificial Intelligence]] at the [[University of Sussex]].
+
+==History==
+After an incremental compiler for [[Prolog]] had been added to an implementation of [[POP-11]], the name '''Poplog''' was adopted, to reflect the fact that it supported programming in both languages. The name was retained, as a trade mark of the University of Sussex, when the system was later extended as incremental compilers were added for [[Common Lisp]] and [[Standard ML]]. At first the Poplog system ran only on a [[VAX]] under the [[VMS]] [[operating system]], but was later ported to a variety of [[Unix]] systems, and later to [[Microsoft Windows|Windows]] then [[Linux]]. A partial port to the Apple Mac running [[Mac OS X]] on a [[PowerPC]] was done in 2005.
+
+For some time after 1983, Poplog was sold and supported internationally as a commercial product, by Systems Designers Ltd, whose name changed as ownership changed. (The company is now owned by [http://www.eds.com EDS].) In 1989, it was called SD-Scicon. At that time a management buy-out produced a spin-off company Integral Solutions Ltd (ISL), to sell and support Poplog in collaboration with Sussex University, who retained the rights to the name 'Poplog' and were responsible for most of the software development while it was a commercial product.
+
+ISL and its clients used Poplog for a number of development projects, especially their data-mining system Clementine, mostly implemented in POP-11, using powerful graphical tools implemented also in POP-11 running on the [[X Window System]]. Clementine was so successful that in 1998 ISL was bought by [http://www.spss.com/ SPSS Inc] who had been selling the statistics and data-mining package [[SPSS]] for which they needed a better graphical interface suited to expert and non-expert users. SPSS did not wish to sell and support Poplog as such, so Poplog then became available as a [http://www.cs.bham.ac.uk/research/poplog/freepoplog.html free open source] system, hosted at the [[University of Birmingham]], which had also been involved in development after 1991.
+
+==Supported languages==
+Poplog's core language is [[POP-11]]. It is used to implement the other languages, all of them [[dynamic compilation|incrementally compiled]], with an integrated common editor. In the Linux/Unix versions, POP-11 provides support for 2-D graphics via X.
+
+Poplog supports incrementally compiled versions of [[Common Lisp]] (CL), POP-11, [[Prolog]], and [[Standard ML]]. A separate package implemented by [[Robin Popplestone]] supports a version of [[Scheme (programming language)|Scheme]]. 
+
+Poplog has been used both for academic research and teaching in [[Artificial Intelligence]] and also to develop several commercial products, apart from Clementine. A UK government SMART award was given to ISL in recognition of Poplog exceeding sales of 5 million dollars.
+
+==Platforms==
+POP-11 was at first implemented on a [[Digital Equipment Corporation|DEC]] [[PDP11]] computer in 1976, and was ported to VAX/VMS in 1980. It became Poplog around 1982. Although the first commercial sales were for VAX/VMS, from the mid-1980s the main Poplog development work was done on Sun/[[SPARC]] computers running [[Solaris Operating System|Solaris]], although several different versions were sold, including versions for HPUX and a 64-bit version of Poplog for DEC Alpha running Digital Unix. After about 1999, when Poplog became available as free, open source, most development work was done on the Linux version, including porting to 64-bit Linux.
+
+There is a version for Windows, originally developed to support Clementine, but the Unix/Linux graphical subsystem does not work on Windows Poplog. A possible workaround is to use the linux version of Poplog in virtual machine like [[VMware]] on Windows. The Windows version of Clementine depended on a commercial package that supported [[X Window System|X]] functionality on Windows.
+
+There is also a [[SourceForge.net|SourceForge]] 
+[http://openpoplog.sourceforge.net/ OpenPoplog] 
+project which aims to produce a more platform neutral version of Poplog, including Windows. Latest development by this project includes a web server component for integrating into Poplog applications, and the OpenPoplog Widget Collection for supporting client user interfaces running in a web browser.
+
+Additional information about the history and features of Poplog can be found in the entries for [[POP-2]] and [[POP-11]]. The chief architect of Poplog, responsible for many innovations related to making an incrementally compiled system portable, and providing support for a collection of very different languages was John Gibson, at Sussex University, though the earliest work was done by Steve Hardy. Chris Mellish helped with the initial Prolog implementation in POP-11. John Williams, working under supervision of Jonathan Cunningham implemented the Common Lisp subsystem. Robert Duncan and Simon Nichols added Standard ML. Between about 1980 and 1991 the project was managed by [[Aaron Sloman]], until he went to the [[University of Birmingham]], though he continued to collaborate with Sussex and ISL on Poplog development after that. Since 1999 he has been responsible for the main Poplog [http://www.cs.bham.ac.uk/research/projects/poplog/freepoplog.html web site], as well as some of the extensions to be found there, listed under POP-11.
+
+==Implementation==
+The Prolog subset of Poplog is implemented using the extendable [[incremental compiler]] of [[POP-11]], the core language of Poplog, which is a general purpose Lisp-like language with a more conventional syntax. The implementation required the Poplog Virtual Machine to be extended to provide support for Prolog [[continuations]], Prolog variables, the Prolog ''trail'' (recording undoable variable bindings), and Prolog terms.
+The implementation was constrained by the need to allow data-structures to be shared with the other Poplog languages, especially [[POP-11]] and [[Common Lisp]], thereby providing support for a mixture of programming styles.
+
+==See also==
+*[[POP-11]]
+*[[Prolog]]
+*[[Common Lisp]]
+*[[Standard ML]]
+*[[Programming language]]
+*[[List of integrated development environments|Software development environment]]
+
+==External links==
+*[http://www.cs.bham.ac.uk/research/poplog/freepoplog.html The Free Poplog Portal]
+*[http://openpoplog.sourceforge.net/ OpenPoplog Project]
+*[http://www.cs.bham.ac.uk/research/projects/cogaff/eliza The online Poplog Eliza]
+
+{{Common Lisp}}
+[[Category:Dynamic programming languages]]
+[[Category:Extensible syntax programming languages]]
+[[Category:Stack-oriented programming languages]]
+
+[[ar:Ø¨ÙØ¨ÙÙØ¬]]</rev></revisions></page></pages></query></api>

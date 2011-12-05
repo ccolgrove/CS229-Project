@@ -1,0 +1,61 @@
+<?xml version="1.0"?><api><query><pages><page pageid="17183069" ns="0" title="Computer Online Forensic Evidence Extractor"><revisions><rev xml:space="preserve">'''Computer Online Forensic Evidence Extractor''' ('''COFEE''') is a tool kit, developed by [[Microsoft]], to help [[Computer forensics|computer forensic investigators]] extract evidence from a [[Windows]] [[Personal computer|computer]]. Installed on a [[USB flash drive]] or other [[External hard disk drive|external disk drive]], it acts as an automated forensic tool during a [[Computer forensics#Live analysis|live analysis]]. Microsoft provides COFEE devices and online technical support free to law enforcement agencies. 
+
+==Development and distribution==
+
+COFEE was developed by Anthony Fung, a former [[Hong Kong]] [[police officer]] who now works as a senior investigator on Microsoft's Internet Safety Enforcement Team.&lt;ref name=SmithLETC08 /&gt;  Fung conceived the device following discussions he had at a 2006 law enforcement technology conference sponsored by Microsoft.&lt;ref name=SeaTimes /&gt;  The device is used by more than 2,000 officers in at least 15 countries.&lt;ref name=&quot;ms1&quot; /&gt;
+
+A case cited by Microsoft in April 2008 credits COFEE as being crucial in a [[New Zealand]] investigation into the trafficking of [[child pornography]], producing evidence that led to an arrest.&lt;ref name=SmithLETC08 /&gt;
+
+In April 2009 Microsoft and [[INTERPOL]] signed an agreement under which INTERPOL would serve as principal international distributor of COFEE. University College Dublin's Center for Cyber Crime Investigations in conjunction with INTERPOL develops programs for training forensic experts in using COFEE.&lt;ref name=&quot;interpol&quot; /&gt;  The [[National White Collar Crime Center]] has been licensed by Microsoft to be the sole US domestic distributor of COFEE.&lt;ref&gt;http://www.microsoft.com/industry/government/solutions/cofee/default.aspx&lt;/ref&gt;
+
+===Public leak===
+On November 6, 2009, copies of Microsoft COFEE were leaked onto various BitTorrent websites.&lt;ref name=&quot;crunchgear&quot; /&gt; Analysis of the leaked tool indicates that it is largely a wrapper around other utilities previously available to investigators.&lt;ref name=&quot;prae&quot; /&gt; Microsoft confirmed the leak, however a spokesperson for the firm said &quot;We do not anticipate the possible availability of COFEE for cybercriminals to download and find ways to âbuild around' to be a significant concern&quot;. &lt;ref name=&quot;inq&quot; /&gt;
+
+==Use==
+
+The device is activated by being plugged into a [[Universal Serial Bus|USB]] port. It contains 150 tools and a graphical user interface to help investigators collect data.&lt;ref name=SmithLETC08 /&gt; The software is reported to be made up of three sections. First COFEE is configured in advance with an investigator selecting the data they wish to export, this is then saved to a USB device for plugging into the target computer. A further interface generates reports from the collected data.&lt;ref name=&quot;prae&quot; /&gt; Estimates cited by Microsoft state jobs that previously took 3â4 hours can be done with COFEE in as little as 20 minutes.&lt;ref name=SmithLETC08 /&gt;&lt;ref name=&quot;tgdaily&quot; /&gt;
+
+COFEE includes tools for [[Password cracking|password decryption]], [[Internet]] history recovery and other data extraction.&lt;ref name=SeaTimes /&gt; It also recovers data stored in [[RAM|volatile memory]] which could be lost if the computer were shut down.&lt;ref name=&quot;news.com&quot; /&gt;
+
+==Detect and Eliminate Computer Assisted Forensics (''DECAF'')==
+{{Main|DECAF}}
+
+Detect and Eliminate Computer Assisted Forensics ([[DECAF]]) is a counter intelligence tool specifically created around obstructing COFEE. DECAF provides real-time monitoring of COFEE signatures on USB devices and in running applications. When a COFEE signature is detected, DECAF performs numerous user-defined processes. These may include COFEE log clearing, ejecting USB devices, and contamination or spoofing of MAC addresses.
+
+==See also==
+* [[BackTrack]]
+* [[Knoppix STD]]
+* [[PHLAK]]
+* [[nUbuntu]]
+* [[DECAF]]
+* [[Windows To Go]], bootable USB drive with Windows capable of running data recovery/collection utilities
+* [http://www.superconfigure.com/downloadespressotool.html Espresso] A COFEE plug-in which creates archives of common high-yield PII locations on a Windows PC (IE, Firefox, Amazon, Windows Live Mails).
+
+==References==
+{{Reflist|refs=
+&lt;ref name=&quot;tgdaily&quot; &gt;{{cite web|url=http://www.tgdaily.com/content/view/37305/108/ |title=Microsoft's new product goes against crime: Meet (Hot) COFEE|publisher=Tigervision Media|first=Theo|last=Valich|date=2008-05-07|accessdate=2008-05-19}}&lt;/ref&gt;
+&lt;ref name=SmithLETC08&gt;{{cite web|url=http://www.microsoft.com/presspass/exec/bradsmith/04-28letech.mspx |publisher=[[Microsoft Corporation]]|title=Brad Smith: Law Enforcement Technology Conference 2008|accessdate=2008-05-19|date=2008-04-28}}&lt;/ref&gt;
+&lt;ref name=&quot;ms1&quot; &gt;{{cite web|url=http://www.microsoft.com/presspass/features/2008/apr08/04-28CrantonQA.mspx |publisher=[[Microsoft Corporation]]|title=Microsoft Calls on [[global public-private partnership]]s to Help in the Fight Against Cybercrime (Q&amp;A with Tim Cranton, Associate General Counsel for Microsoft)|accessdate=2008-05-19|date=2008-04-28}}&lt;/ref&gt;
+&lt;ref name=&quot;interpol&quot; &gt;{{cite web|url=http://www.interpol.int/public/ICPO/PressReleases/PR2009/PR200937.asp |publisher=[[INTERPOL]]|title=INTERPOL initiative with Microsoft aims to raise global standards against cybercrime through strategic partnership with IT sector |accessdate=2009-07-16}}&lt;/ref&gt;
+&lt;ref name=&quot;inq&quot; &gt;{{cite web|last=Pullin|first=Alexandra|title=Microsoft's not bothered about COFEE leak|url=http://www.theinquirer.net/inquirer/news/1561911/microsoft-bothered-cofee-leak|publisher=The Inquirer|accessdate=24 August 2010}}&lt;/ref&gt;
+&lt;ref name=&quot;crunchgear&quot; &gt;{{cite web|url=http://www.crunchgear.com/2009/11/06/siren-gif-microsoft-cofee-law-enforcement-tool-leaks-all-over-the-internet/|publisher=[[TechCrunch]]|title=Microsoft COFEE law enforcement tool leaks all over the Internet |accessdate=2009-11-07}}&lt;/ref&gt;
+&lt;ref name=&quot;prae&quot; &gt;{{cite web|url=http://praetorianprefect.com/archives/2009/11/more-cofee-please-on-second-thought/|title=More COFEE Please, on Second Thought|accessdate=2009-11-09}}&lt;/ref&gt;
+&lt;ref name=SeaTimes&gt;{{cite web|url=http://seattletimes.nwsource.com/html/microsoft/2004379751_msftlaw29.html|title=Microsoft device helps police pluck evidence from cyberscene of crime|publisher=[[The Seattle Times]]|date=2008-04-29|accessdate=2008-05-19|last=Romano|first=Benjamin J.}}&lt;/ref&gt;
+&lt;ref name=&quot;news.com&quot; &gt;{{cite web|url=http://www.news.com/8301-10784_3-9930664-7.html |title=Microsoft hosts its own police academy|last=Mills|first=Elinor|publisher=CNet News.com|date=2008-04-29|accessdate=2008-05-19}}&lt;/ref&gt;
+}}
+
+==External links==
+* {{official|https://cofee.nw3c.org/}}
+* {{Cite web|url=http://www.microsoft.com/industry/government/solutions/cofee/default.aspx |publisher=[[Microsoft Corporation]]|title=Microsoft Computer Online Forensic Evidence Extractor (COFEE)|accessdate=2010-06-19}}
+* {{Cite web|url=http://praetorianprefect.com/archives/2009/12/regular-or-decaf-tool-launched-to-combat-cofee/ | publisher=[[Praetorian Prefect]]|title=Regular or Decaf? Tool launched to combat COFEE|accessdate=2009-12-18}}
+* {{Cite web|url=http://praetorianprefect.com/archives/2009/12/reactivating-decaf-in-two-minutes/ | publisher=[[Praetorian Prefect]]|title=Reactivating DECAF in Two Minutes|accessdate=2009-12-18}}
+
+[[Category:Computer forensics]]
+[[Category:Microsoft software]]
+[[Category:Law enforcement techniques]]
+[[Category:Government software]]
+[[Category:Digital forensics software]]
+
+
+[[ja:COFEE]]
+[[ru:COFEE]]</rev></revisions></page></pages></query></api>

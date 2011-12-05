@@ -1,0 +1,46 @@
+<?xml version="1.0"?><api><query><redirects><r from="Blindwrite" to="BlindWrite" /></redirects><pages><page pageid="15352742" ns="0" title="BlindWrite"><revisions><rev xml:space="preserve">{{refimprove|date=May 2009}}
+{{Infobox software
+| name                   = BlindWrite
+| logo                   = [[File:BlindWrite logo.png]]
+| screenshot             = [[File:BlindWrite screenshot.png|300px]]
+| caption                = BlindWrite main interface
+| author                 =
+| developer              = VSO Software
+| released               =
+| latest release version = 6.3.1.6
+| latest release date    = {{release date and age|2009|12|14}}&lt;ref&gt;[http://www.vso-software.fr/download.php]&lt;/ref&gt;
+| latest preview version =
+| latest preview date    =
+| operating system       = [[Microsoft Windows]]
+| platform               =
+| language               = Multilingual (33){{Citation needed|date=August 2011}}
+| genre                  = [[Optical disc authoring]]
+| license                = [[Shareware]]
+| website                = {{URL|http://www.vso-software.fr/products/Blindwrite/}}
+}}
+
+'''BlindWrite''', the successor to BlindRead, is a [[computer program]] that writes to [[recordable CD]]s. The Blindread software, which reads CDs and writes [[CD image]] files, has been discontinued as a separately released product, but BlindRead's code is included in the newer BlindWrite suite of software ''that also code to control''{{Clarify|date=August 2011}} [[CD writer]]s. BlindWrite's most distinctive feature touted over other pre-existing CD writing software was to use the CD images BlindRead made. BlindRead's main features were the use of Sub codes and its willingness to be &quot;blind&quot; to errors and continue the copying process, rather than quitting when encountering reading errors often caused from hardware trouble or disk damage (such as scratches or even intentional &quot;damage&quot; created by the manufacturer as a form of copy protection) that would often cause many other software packages to terminate the reading process.
+
+Support for &quot;Sub codes&quot;, also known as [[Compact Disc subcode|&quot;Sub Channel Data&quot;]], distinguished the files created with BlindRead from other software that created CD image files. The &quot;Sub code&quot; data could be written in *.SUB files added to either of two already-existing popular formats ([[ISO image]] and [[Cue sheet (computing)|Cue sheet]]), or the Sub code data could be written in *.BWS files in BlindRead's native format that consisted of writing a CD image in a group of three files. This format, which has become known more widely as the BlindWrite native format (now that BlindRead is not maintained and distributed as a separate product anymore), has two or three files for a proper image. The *.BWS Sub code image is optional and may or may not get created depending on an option selected in the software that created the image. The *.BWT control file is another relatively small file (that may be a very small number of [[kilobyte]]s when part of a multi-file CD image for a full-sized 650MB CD) that is typically the file referred to in the user interfaces of software that supports this format and chooses just one file extension per CD image for the purposes of filename selection. (This includes VSO's software and [[Daemon Tools]].) The *.BWI file is the large image file.
+
+BlindWrite version 5 has been found using new native files that come in pairs. The files use the extensions *.B5T (a relatively small file) and *.B5I image files.
+
+The BlindRead format has been supported by software other than BlindRead and BlindWrite, including Daemon Tools, which was some of the earliest supporting software (capable of using *.BWT files even before Blindwrite was released). The format was embraced by enthusiasts who were interested in making &quot;more perfect&quot; copies of CDs by using a process that used the Sub code data that other computer software did not support (and so ignored, instead of used).
+
+== Awards ==
+BlindWrite won the [[TopTenReviews]] Bronze Award in 2009.&lt;ref name=&quot;Top10Reviews09&quot;&gt;{{cite web|url=http://game-copy-software-review.toptenreviews.com/blindwrite-review.html|title=BlindWrite Review 2009|date=2009|work=Review|publisher=[[TopTenReviews]]|accessdate=2009-04-14}}&lt;/ref&gt;
+
+== External links ==
+* {{Official website|http://www.vso-software.fr/products/Blindwrite/blindwrite.php}}
+* [http://developer.berlios.de/projects/b5i2iso/ b5i2iso] - open-source tool to convert BlindWrite .B5I images into ISO images
+
+== References ==
+{{Reflist}}
+
+{{Optical disc image software}}
+
+[[Category:Windows-only software]]
+[[Category:Optical disc authoring software]]
+
+[[de:Blindwrite]]
+[[ru:BlindWrite]]</rev></revisions></page></pages></query></api>

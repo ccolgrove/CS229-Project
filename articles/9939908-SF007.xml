@@ -1,0 +1,108 @@
+<?xml version="1.0"?><api><query><pages><page pageid="9939908" ns="0" title="Sun Secure Global Desktop"><revisions><rev xml:space="preserve">'''Oracle Secure Global Desktop''' (SGD) software provides secure access to both published applications and published desktops running on [[Microsoft Windows]], [[Unix]], [[Mainframe computer|mainframe]] and [[System i]] systems via a variety of clients ranging from fat PCs to thin clients such as [[Sun Ray]]s.
+
+==History==
+&lt;!-- Based on material from Tarantella, Inc. Wikipedia article --&gt;
+In 1993 the Santa Cruz Operation (SCO, later [[Tarantella, Inc.]]) acquired [[IXI Limited]], a software company in [[Cambridge]], [[United Kingdom|UK]], best known for its [[X.desktop]] product. In 1994 it then bought [[Visionware]], of [[Leeds]], UK, developers of [[XVision]]. In 1995 the development teams from IXI and Visionware were combined to form '''IXI Visionware''', later the Client Integration Division of SCO.
+
+A development team within this division began work in 1996 on a project codenamed ''Tarantella''. The goal of this project was &quot;any application, any client, anywhere&quot;: access to applications of any type (hosted on back-end [[Server (computing)|server]]s) from any [[client (computing)|client]] device that supported a [[Java platform|Java]]-enabled [[web browser]]. The project codename stuck: it became the final product name. The first public release of Tarantella software was in November 1997. Later version 1.x releases supported more application types (such as Microsoft Windows applications) and client types (including Native Clients to remove the dependency on Java support), and added scalability and security features to better support larger enterprises and secure application access over the Internet.
+
+The product was renamed ''Tarantella Enterprise II'' in late 1999, with a cut-down ''Tarantella Express'' product available on [[Linux]] systems. This renaming was a simple rebrand of the then-current 1.x release: no version 2.x software was released.
+
+In November 2000 version 3.0 of the product was released, including a [[Rewrite (programming)|major rewrite]] of much server-side code in the Java language. The product was rebranded as ''Tarantella Enterprise 3'', with releases for Linux and major UNIX systems. Further 3.x releases followed in subsequent years, adding more integration features in competition with similar software from [[Citrix Systems|Citrix]].
+
+[[Sun Microsystems]] acquired Tarantella, Inc. in July 2005.&lt;ref&gt;{{cite web
+|url= http://www.zdnet.com.au/news/business/soa/Sun_to_buy_Tarantella/0,139023166,139191290,00.htm
+|title= Sun to buy Tarantella
+|accessdate= 2007-05-21
+|author= Dawn Kawamoto
+|date= May 11, 2005
+|work= [[CNET News.com]]
+}}&lt;/ref&gt; The product underwent massive development in the following years.  As of February 2011, the current version is ''Oracle Secure Global Desktop 4.60.911''. It is now a major part of Oracle's Virtual Desktop Infrastructure product ([[Sun VDI]]).
+
+==Overview==
+
+SGD is considered{{whom|date=March 2011}} a competitor to [[Citrix]]'s products for remote application delivery. &lt;!-- Citrix is certainly NOT Windows-only http://www.citrix.com/English/ps2/products/qa.asp?contentID=186&amp;faqID=8150&amp;title=Citrix+Presentation+Server+for+UNIX+Support+FAQ --&gt;
+
+A large range of client devices can connect to a Secure Global Desktop Server, including Microsoft Windows PCs, Solaris desktops, [[Apple Macintoshes]], Linux PCs, thin clients such as those from Sun and [[Wyse]], and [[mobile devices]]. The client requires only a [[web browser]] with a [[JRE|Java Runtime Environment]] installed.
+
+A client device connects to the Secure Global Desktop Server either via a supported [[Java (Sun)|Java]]-enabled browser or via Native Client software (this &quot;native client&quot; can be downloaded from a SGD installation's login page, i.e. instead of logging in and letting the Java applet handle the connection automatically for you, you could instead do it manually by downloading this &quot;native client&quot; from the SGD main login page, install it locally, and then launch it and connect via this). When you connect via a browser the first time as a client, the SGD client (the client-side of the aforementioned Java component) is downloaded so you can then [[Secure Sockets Layer|SSL]]-encrypt your connection. The system officially supports [[Mozilla Firefox]], [[Internet Explorer]], and [[Safari (web browser)|Safari]], but other browsers might work too for as long as they have access to a working [[Java (Sun)|Java]]-plugin. The latest [[Java Runtime Environment]] is recommended but at least version 1.5 is required.
+
+The Desktop Client connects to the Secure Global Desktop Server via the [[Adaptive Internet Protocol]] (AIP). AIP is bandwidth- and latency-aware and can adjust compression and performance dynamically on links as diverse as a 56K modem or a 100Mb [[Local Area Network|LAN]].&lt;ref&gt;[http://www.internetnews.com/dev-news/article.php/1593991 Hosted Windows Apps Coming Online with Linux]&lt;/ref&gt;
+
+Session Resumability and Mobility is a feature allowing remote access to desktop applications from essentially any Java-enabled browser in the world. This makes it possible to run applications in one's office, then go to another location such as a customer site or one's home and transfer your existing desktop session to a computer there.&lt;ref&gt;[http://www.sun.com/sunray/docs/SunRay_atHome033105.pdf &quot;Sun Ray at Home Solution:A Sun IT Project Case Study&quot;]&lt;/ref&gt;
+
+Centralisation is an important feature for organizations concerned with secure data being stored on remote devices such as notebook computers, and the associated risk for theft of the device and its data. Applications accessed via SGD run in the centralised server room, meaning that all data is backed up and secured via the normal datacenter practices of the organization. There is a potential for increased performance and effiiciency, since the actual computation is performed on larger systems with more resources; centralisation also makes resources considerably easier to manage.
+
+Applications can be assigned to users or groups of users using the Object Manager which can automatically present new applications to users dynamically without them needing to log out. Profiles can be created to group similar types of users; these profiles control the applications that a logged-in user is allowed to use. When a new application or an upgrade to an existing application is required, an administrator can just push these changes out to the users. This simplifies Desktop [[Standard Operating Environment|SOE]] migrations.
+
+SGD's password-caching feature, authentication tokens, and ability to integrate with [[Active Directory]] and [[Lightweight Directory Access Protocol|LDAP]] gives it the ability to easily set up [[single sign-on]] to applications: a user logs into SGD once, and then can run applications without having to perform an additional loginâeven if there are usernames and passwords used for the different back-end applications.
+
+With the same SGD infrastructure one can host an organisation's internal desktop applications, but also be able to access desktop applications remotely without the need for expensive [[VPN]] solutions. The Firewall Traversal Feature makes it possible to put an application server in an organisation's [[Demilitarized zone (computing)|DMZ]] with only port 443 ([[HTTPS]]) accessible from the outside world. An SGD server can be accessed via HTTP or HTTPS.
+
+SGD also integrates with the [[Sun Java System Portal Server]] making it possible to deliver desktop applications via a Secure Portal using a [[Portlet]], including the ability to mail, calendar and other Portal features.
+
+[[Sun Java System Identity Manager]] can also manage all user accounts and passwords via one webform, including integration of LDAP, Active Directory, [[Oracle database|Oracle]] or other commercial or home-grown access control repositories.
+
+==Latest features==
+
+*SGD integration into the [[GNOME]] Launch Menu and Windows clients' [[Start Menu]]; clients can connect to an SGD server when they log into their client automatically, without the need to open up a browser. Desktop icons can be created to start applications via SGD without the user being aware of SGD's presence.
+
+*Significantly improved bandwidth utilization and screen rendering, making it considerably faster than the previous version. The screen rendering engine has been rewritten from scratch to be made more bandwidth aware and efficient and also to increase rendering performance of the desktop applications. Sun reports 30% faster screen rendering and 80% improvement of bandwidth efficiency.
+
+*LDAP and Active Directory supported as login authority sources
+
+*Seamless Windows support 
+
+*Support for Client Drive Mapping and Local Printer Mapping
+
+*Support for serial port forwarding
+
+*Oracle Secure Global Desktop Software runs on Solaris 10 ([[SPARC]] and [[x86]]), Solaris 9 and 8 (SPARC only), [[Red Hat Enterprise Linux]] 4 and 5(x86 32-bit), [[Fedora (operating system)|Fedora]] Core 6 (x86 32-bit), [[SUSE Linux Enterprise Server]] 9 and 10 (x86 32-bit)&lt;ref&gt;{{cite web
+|url= http://www.sun.com/software/products/sgd/specs.jsp
+|title= Sun SGD Technical Specifications
+}}&lt;/ref&gt;
+
+*The November 2007 release of version 4.4 most notably introduced a web-based Management Console that replaced the Java-based Object Manager and Array Manager tools that were first introduced in version 3.0.&lt;ref&gt;{{cite web|url= http://wikis.sun.com/display/SecureGlobalDesktop/Release+Information|title=Sun Secure Global Desktop Software Release Information}}&lt;/ref&gt;&lt;ref&gt;{{cite web|url= http://www.bob-o-rama.com/ssgd/sgd4.4-first-looks|title= Sun Secure Global Desktop 4.4 - first looks}}&lt;/ref&gt;
+
+==See also==
+*[[Comparison of remote desktop software]]
+*[[Web desktop]]
+
+==References==
+{{Reflist}}
+
+== External links==
+===Sun===
+
+*[http://www.sun.com/sgd Secure Global Desktop Product Page] and the list of  [http://docs.sun.com/source/820-2548/chapter1.html requirements for 4.4] 
+** Note: Always check the Release Notes for an accurate list of requirements. 
+
+*[http://docs.sun.com/app/docs/doc/820-2550 Documentation for Secure Global Desktop 4.4] 
+
+*[http://www.sun.com/software/products/sgd/get.jsp Download a free 30 Day evaluation copy of Secure Global Desktop]
+
+*[https://sgddemo.sun.com/ Live US demo site] (Requires Java enabled browser)
+
+===Mailing lists and forums===
+
+*[http://forum.java.sun.com/forum.jspa?forumID=815 Sun's Secure Global Desktop forum]
+
+*[http://www.filibeto.org/sun/sgd-users/mailing-list.html SGD-Users mailing list] and [http://www.filibeto.org/sun/sgd-users/ web site]
+
+===Whitepapers and additional information===
+
+*[http://www.sun.com/software/products/sgd/whitepapers/wp_sgd_overview.pdf Sun Secure Global Desktop Overview Whitepaper] 
+
+*[http://www.sun.com/software/sdis/wp_desktop_virtualization_blueprint.pdf Sun Desktop Virtualisation Blueprint]
+
+===Related products===
+
+*[http://www.sun.com/software/sdis/index.xml Sun Desktop Infrastructure Solution]
+
+*[http://www.sun.com/software/products/identity/index.jsp Sun Identity Management Solution]
+
+[[Category:Sun Microsystems software]]
+
+{{Sun Microsystems}}
+
+[[nl:SGD]]</rev></revisions></page></pages></query></api>

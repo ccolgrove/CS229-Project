@@ -1,0 +1,99 @@
+<?xml version="1.0"?><api><query><pages><page pageid="1237399" ns="0" title="CPanel"><revisions><rev xml:space="preserve">{{lowercase|title=cPanel}}
+{{refimprove|date=November 2011}}
+{{Infobox software
+| name                   = cPanel
+| logo                   = [[File:CPanel logo.jpg|150px]]
+| screenshot             = [[File:CPanel screenshot.png|250px]]
+| caption                = A screenshot of the control panel for domain owners.
+| author                 = 
+| developer              = 
+| released               = March 21, 1996
+| latest release version = 11.30.4 (build 6)
+| latest release date    = {{Release date|2011|10|04}}
+| latest preview version = 
+| latest preview date    = 
+| operating system       = [[Linux]], [[BSD]], [[Microsoft Windows|Windows]] (in beta)
+| platform               = 
+| language               = multilingual
+| genre                  = [[Web hosting control panel]]
+| license                = [[Proprietary software|Proprietary]]
+| website                = http://www.cpanel.net/
+}}
+'''cPanel''' is a [[Linux]] based [[web hosting control panel]] that provides a graphical interface and automation tools designed to simplify the process of hosting a web site.   cPanel utilizes a 3 tier structure that provides functionality for administrators, resellers, and end-user website owners to control the various aspects of website and server administration through a standard web browser.
+
+In addition to the GUI interface cPanel also has command line and API based access that allows third party software vendors, [[web hosting]] organizations, and developers to automate standard system administration processes.
+
+cPanel is designed to function either as a [[dedicated server]] or [[virtual private server]] and it supports [[CentOS]], [[Red Hat Linux]], and [[FreeBSD]]. 
+
+Application-based support includes [[Apache HTTP Server|Apache]], [[PHP]], [[MySQL]], [[Postgres]], [[Perl]], and [[BIND]] (DNS).   Email based support includes [[POP3]], [[IMAP]], [[SMTP]] services.  cPanel is commonly accessed on [[TCP and UDP port|port]] 2082, with an SSL-secured server operating on port 2083.
+
+== History ==
+
+cPanel was originally designed as the control panel for Speed Hosting,&lt;ref&gt;[http://www.top10dedicatedhosting.com/en/?p=385 Hosting Control Panel cPanel Features Explained | top10dedicatedhosting.com (September 20, 2008)]&lt;/ref&gt; a now-defunct web hosting company. The original author of cPanel, John Nick Koston, had a stake in Speed Hosting. Web King quickly began using cPanel after their merger with Speed Hosting. After Speed Hosting and Webking merged, the new company moved their servers to Virtual Development Inc. (VDI), a now-defunct hosting facility. Following an agreement between John Nick Koston and VDI, cPanel was only available to customers hosted directly at VDI. At the time there was little competition in the control panel market with the main choices being VDI and Alabanza. cPanel 3 was released in 1999; its main features over cPanel 2 were an automatic upgrade and the [[Web_host_manager#WHM_.28Web_Host_Manager.29|Web Host Manager]].
+
+cPanel 3 tended to be buggy and did not have a good user interface. The interface improved when Carlos Rego of WizardsHosting made what became the default theme of cPanel. Eventually due to internal problems between VDI and John Nick Koston, cPanel split into two separate programs called cPanel and WebPanel. WebPanel was the version run by VDI. Without the lead programmer, VDI was not able to continue any work on cPanel and eventually stopped supporting it completely. John Nick Koston kept working on cPanel while also working at BurstNET. Eventually Nick left BurstNET on good terms to focus fully on cPanel. cPanel has been updated and improved over the years. It is now a stable and reliable control panel.
+
+==cPanel, Inc==
+cPanel, Inc is a State of Texas corporation with primary offices located in the [[Upper Kirby]] neighborhood in Houston, Texas at 3131 West Alabama Street, Suite 100. John N Koston is listed as the President and Director on filings with the Texas Secretary of State. &lt;ref&gt;https://ourcpa.cpa.state.tx.us/coa/servlet/cpa.app.coa.CoaGetTp?Pg=tpid&amp;Search_Nm=CPANEL%2C%20INC.%20&amp;Button=search&amp;Search_ID=32040310495&lt;/ref&gt;
+
+==Add-Ons==
+To the client, cPanel provides front-ends for a number of common operations, including the management of [[Pretty Good Privacy|PGP]] keys, [[crontab]] tasks, mail and [[file transfer protocol|FTP]] accounts, and mailing lists.
+
+Several add-ons exist for an additional fee, the most notable being Auto Installers like [[Installatron]], [[Fantastico (web hosting)|Fantastico]], Softaculous, and WHMSonic(Shoutcast/radio Control Panel Add-on). Auto Installers are a bundle of scripts which automate the installation (and update of) web applications such as [[WordPress]], [[Simple Machines Forum|SMF]], [[phpBB]], [[Drupal]], [[Joomla!]], [[Tiki Wiki CMS Groupware]], [[Moodle]], [[MagicSpam]] [[WHMCS]], and [[ZamFoo]]. Fantastico is a popular Auto Installer but is losing market fast because of lack of updates (see article&lt;ref&gt;[http://drupal.org/forum/fantastico-de-luxe Fantastico De Luxe: an insecure recipe for disaster | drupal.org (Steven - August 1, 2006 - 00:39)]&lt;/ref&gt;) and fewer number of scripts.
+
+cPanel manages some software packages separately from the underlying operating system, applying upgrades to [[Apache HTTP Server|Apache]], [[PHP]], [[MySQL]], and related software packages automatically. This ensures that these packages are kept up-to-date and compatible with cPanel, but makes it more difficult to install newer versions of these packages.
+
+== WHM (Web Host Manager) ==
+[[Image:Web Host Manager - root.PNG|thumb|alt=Web host manager as root |Web host manager as [[root user | root]] ]]
+'''WebHost Manager''' (WHM) is a [[web-based]] tool used by [[system administrator|server administrator]]s and [[reseller]]s to manage [[web hosting|hosting]] accounts on a [[web server]]. WHM listens on [[TCP and UDP port|ports]] 2086 and 2087 by default.
+
+As well as being accessible by the root admin, WHM is also accessible to users with  [[reseller]] privileges. Reseller users of cPanel have a smaller set of features than the root user, generally limited by the server administrator, to features which they determine will affect their customers' accounts rather than the server as a whole.
+From WHM, the server administrator can perform maintenance operations such as compile Apache and upgrade [[RPM Package Manager|RPM]]s installed on the system.
+
+== Enkompass ==
+A version of cPanel for [[Windows|Microsoft Windows]] exists, titled '''Enkompass'''. Primary development has stopped for this product since October 15, 2011. It is now being offered for free. &lt;ref&gt;http://www.cpanel.net/2011/10/cpanel-to-offer-enkompass-for-free.html&lt;/ref&gt;
+
+== References ==
+{{Reflist|1}}
+
+== See More ==
+* [[Web hosting control panel]]
+* [[Comparison of web hosting control panels]]
+
+== External links ==
+&lt;!--========================({{No More Links}})============================
+    | PLEASE BE CAUTIOUS IN ADDING MORE LINKS TO THIS ARTICLE. WIKIPEDIA  |
+    | IS NOT A COLLECTION OF LINKS NOR SHOULD IT BE USED FOR ADVERTISING. |
+    |                                                                     |
+    |           Excessive or inappropriate links WILL BE DELETED.         |
+    | See [[Wikipedia:External links]] &amp; [[Wikipedia:Spam]] for details.  |
+    |                                                                     |
+    | If there are already plentiful links, please propose additions or   |
+    | replacements on this article's discussion page, or submit your link |
+    | to the relevant category at the Open Directory Project (dmoz.org)   |
+    | and link back to that category using the {{dmoz}} template.         |
+    =======================({{No More Links}})=============================--&gt;
+* [http://www.cpanel.net/ Official cPanel Website]
+
+{{WebManTools}}
+
+{{DEFAULTSORT:Cpanel}}
+[[Category:Web applications]]
+[[Category:Website management]]
+[[Category:Web server management software]]
+[[Category:1996 software]]
+
+[[ar:Ø³Ù Ø¨Ø§ÙÙÙ]]
+[[de:CPanel]]
+[[es:CPanel]]
+[[fa:Ø³ÛâÙ¾ÙÙ]]
+[[id:CPanel]]
+[[it:CPanel]]
+[[hu:CPanel]]
+[[nl:CPanel]]
+[[ja:CPanel]]
+[[pl:CPanel]]
+[[pt:CPanel]]
+[[ru:CPanel]]
+[[sr:CPanel]]
+[[tr:CPanel]]</rev></revisions></page></pages></query></api>

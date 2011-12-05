@@ -1,0 +1,71 @@
+<?xml version="1.0"?><api><query><pages><page pageid="19358119" ns="0" title="NimbleX"><revisions><rev xml:space="preserve">{{Cleanup-rewrite|date=May 2009}}
+{{Infobox_OS
+| logo = &lt;!-- to be added [[Image:NimbleX.svg|200px|NimbleX logo]] --&gt;
+| name = NimbleX
+|screenshot =  &lt;!--Do NOT change the screenshot unless there is BIG change in the UI. When taking screenshot, please resize your window (e.g. 640*480), disable your extensions and use the default theme.--&gt; [[Image:Db snapshot41.png|250px]]
+|caption = NimbleX screenshot with Kword and Kspread
+|developer = Bogdan RÄdulescu
+| family = [[Unix-like]]
+| source_model = [[Open source]]
+| working_state = Current
+| released = {{initial release|2004|10|20}}
+| language = English, Romanian, French, Spanish, Chinese, Hindi etc. (a total of 12 languages)
+|latest_release_version = 2008
+|latest_release_date = {{release date|2008|07|22}}
+|kernel_type = [[Monolithic kernel]]
+| ui= [[KDE]], [[IceWM]], [[EDE]], [[Enlightenment (window manager)|Enlightenment]]
+| license = Various, primarily [[GPL]] and [[GFDL]]
+| supported_platforms = [[IA-32]]
+| updatemodel = [[LZMA]]
+| package_manager = 
+| website = [http://www.nimblex.net/ www.nimblex.net]
+}}
+
+'''NimbleX''' is a small [[Slackware]]-based [[Linux distribution]] optimized to run from a [[CD]], [[USB drive]] or a [[Preboot Execution Environment|network environment]]. NimbleX has been praised for how fast it boots, as well as for its small disk footprint, which is considered surprising for a distribution using [[KDE]] as [[desktop environment]].&lt;ref name=linuxdotcom/&gt;&lt;ref name=distrowatch/&gt; NimbleX was also remarked for its web site allows users to generate custom bootable images using just a web browser.&lt;ref&gt;NimbleX Live CD Generator, [[Linux Magazine]] '''88''' March 2008, pages 36-39&lt;/ref&gt;&lt;ref&gt;Serdar Yegulalp
+(January 29, 2008) [http://www.informationweek.com/news/software/showArticle.jhtml?articleID=205917063&amp;pgno=3&amp;queryText=&amp;isPrev= &quot;How To Roll Your Own Linux Distro&quot;], [[InformationWeek]].&lt;/ref&gt; It was also covered in mainstream [[Romanian newspapers|Romanian]] press as the first Linux distribution put together by a Romanian.&lt;ref&gt;{{ro icon}} [http://www.expres.ro/articole/detalii-articol/434923/Nimblex-un-Linux-romanesc/ Nimblex, A Romanian Linux] ([http://www.expres.ro/articole/detalii-articol/435064/Nimblex-A-Romanian--Linux-/ abstract in English]), Expres&lt;!-- Romanian word, not a typo--&gt;, March 19, 2007&lt;/ref&gt;&lt;ref&gt;{{ro icon}} [http://www.expres.ro/articole/detalii-articol/457705/NimbleX-un-sistem-de-operare-facut-de-un-roman/ NimbleX, an operating system made by a Romanian] Expres&lt;!-- Romanian word, not a typo--&gt;, August 28, 2007&lt;/ref&gt;
+
+== Features ==
+NimbleX is reported to boot fast; an important factor in user experience when running from optical media or [[USB]] drives. A review of the 2007 NimbleX edition noted: &quot;Expect it to boot in less than half the time that a live CD from Fedora, Ubuntu, or Knoppix takes.&quot;&lt;ref name=linuxdotcom/&gt; A more recent review of the 2008 edition also noted NimbleX's speed: &quot;It's easily one of the fastest bootups I've seen in a while. I even tried to hinder or cripple it's boot time, and even on a dog slow pendrive or an old as dirt test machine, it still booted amazingly fast. The desktop and applications are also very fast.&quot;&lt;ref name=distrowatch/&gt;
+
+NimbleX is also a very compact distribution. A review of the 2007 edition wondered &quot;how they managed to include KDE, not to mention the other applications&quot;&lt;ref name=&quot;tuxmachines&quot;&gt;[http://www.tuxmachines.org/node/12630 NimbleX 2007 - As the Name Implies...]&lt;/ref&gt;, having included in the size of only 200 MB a window-based graphical user interface (a slimmed down [[KDE]] to fit), the [[Firefox]] web browser, the office documents editor [[KOffice]], a PDF reader, a media player that can play almost all the file formats without the need to install a [[codec]], the photo editing software [[GIMP]], anti-virus and [[Bluetooth]] support integrated to name a few applications included.&lt;ref name=&quot;nimblexdotnet&quot;&gt;[http://www.nimblex.net/index.php?option=com_content&amp;task=view&amp;id=98&amp;Itemid=62 the main things regarding the 200MB NimbleX]&lt;/ref&gt;
+
+As of 2008, the installation process of major Linux distributions can be customized by creating custom installation disks, usually called '''spins''', but creating a spin requires a certain amount of expertise, and creating a spin that can run form the installation media requires further customization. NimbleX makes this process user-friendly by providing a web interface for the process,&lt;ref name=linuxdotcom&gt;Bruce Byfield (August 30, 2007) [http://www.linux.com/feature/118802 Custom NimbleX lives up to its name with do-it-yourself install images] [[Linux.com]]&lt;/ref&gt;&lt;ref name=distrowatch&gt;Steven Lake (July 28, 2008) [http://distrowatch.com/weekly.php?issue=20080728 Review: NimbleX 2008] [[DistroWatch]] Weekly, Issue 263&lt;/ref&gt; which is similar to that of some embedded Linux distributions, e.g. [[FreeWRT]].
+
+These features made the distribution popular early on: &quot;To judge from its forums, NimbleX has attracted a surprisingly large number of users for such a relatively unknown distribution.&quot;&lt;ref name=linuxdotcom/&gt;
+
+== Components ==
+
+NimbleX uses a [[Linux kernel|2.6]] kernel. The default [[GUI]] is [[KDE]], but for slower computers the default desktop environment can be exchanged for one with lower resource usage like [[Fluxbox]] or [[Xfce]]. Typical office, web browsing and messaging components are included, but NimbleX hardly offers any graphical administration tools â most administration tasks, like an adding a new user, have to be performed from the command line. This tradeoff allows NimbleX to have a small installation footprint â a typical installation is under 400 megabytes.&lt;ref name=distrowatch/&gt; Additional applications can be installed using the graphical installer [[Gslapt]] (or &lt;code&gt;slapt-get&lt;/code&gt; from the command line), which brings automatic resolution of dependencies to [[Slackware]] packages. A text-mode hard driver installer is available (&lt;code&gt;nxinst&lt;/code&gt;), but this was considered beta quality in the 2008 edition.&lt;ref name=distrowatch/&gt;
+
+The 2008 edition comes in three standard install images: a 200MB and two smaller even ones at 100 and 69MB. The installers do not allow customizations of the packets during installation however. NimbleX 2008 uses KDE 3.5.9, and the user can also enable [[compiz fusion]] via a link on the desktop, but [[OpenOffice.org]] is not included; instead, [[KOffice]] is provided for an office suite.&lt;ref name=linuxdotcom2008&gt;Bruce Byfield (August 18, 2008) [http://www.linux.com/feature/144180 NimbleX 2008 is speedy but flawed] [[Linux.com]]&lt;/ref&gt;
+
+NimbleX has included in the 200 MB package some very useful applications like FireFox web browser, KOffice, PDF reader, [[Kopete]] instant messenger, [[KlamAV]] anti-virus, [[GIMP]] photo editor, BlueTooth support, remote connection to other PC.
+
+Other important software that are supported in a bigger NimbleX package are [[OpenOffice]], [[Java (programming language)|Java]], [[Python (programming language)|Python]], [[Samba (software)|Samba]], [[Wine (software)|Wine]] Windows applications emulator, and many other applications are compiled by the community to be included in this distribution.
+
+== Criticism ==
+
+NimbleX 2008 was criticized as &quot;irresponsible&quot;&lt;ref name=linuxdotcom2008/&gt; for lacking some common security features out of the box. Even though the [[ClamAV]] anti-virus and the [[Guarddog]] firewall are installed by default, no (non-root) user account is created during the installation, no root password is required to log on to the desktop, and the default root password is displayed on NimbleX's web site.
+
+Another problem is that some NimbleX packages are created by repackaging Slackware packages. Since NimbleX installs fewer libraries, this sometimes results in uninstallable or unusable packages.&lt;ref name=linuxdotcom2008/&gt;
+
+==References==
+{{reflist}}
+
+==External links==
+*[http://nimblex.net NimbleX website]
+*[http://custom.nimblex.net Create your own custom Nimblex ISO]
+*[http://distrowatch.com/table.php?distribution=nimblex DistroWatch section on NimbleX]
+
+'''Reviews'''
+*[http://www.linuxloop.com/news/2008/07/24/nimblex-2008-mini-review/ '''Linux Loop''' about NimbleX 2008]
+*[http://www.tuxmachines.org/node/12630 '''Tuxmachines.org''' about NimbleX 2007]
+
+{{linux-distro}}
+
+[[Category:Slackware]]
+[[Category:Operating system distributions bootable from read-only media]]
+[[Category:Live USB]]
+
+[[cs:NimbleX]]
+[[ro:NimbleX]]</rev></revisions></page></pages></query></api>

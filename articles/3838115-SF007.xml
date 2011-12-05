@@ -1,0 +1,112 @@
+<?xml version="1.0"?><api><query><pages><page pageid="3838115" ns="0" title="Metasploit Project"><revisions><rev xml:space="preserve">{{Infobox software
+| name                   = Metasploit
+| screenshot             = [[Image:Metasploit-Community.png|thumb|center]]
+| caption                = Metasploit Community showing three hosts, two of which were compromised by an exploit
+| developer              = [[Rapid7]] LLC
+| latest release version = 4.1
+| latest release date    = {{release date|2011|10|18}}
+| operating system       = [[Cross-platform]]
+| status                 = Active
+| genre                  = [[Computer security|Security]]
+| license                = [[BSD License|BSD]]
+| website                = {{URL|http://www.metasploit.com/}}
+}}
+The '''Metasploit Project''' is an [[open-source]], [[computer security]] project which provides information about [[Vulnerability (computer science)|security vulnerabilities]] and aids in [[penetration test]]ing and [[Intrusion-detection system|IDS signature]] development.
+Its most well-known sub-project is the '''Metasploit Framework''', a tool for developing and executing [[Exploit (computer security)|exploit]] code against a remote target machine.  Other important sub-projects include the Opcode Database, [[shellcode]] archive, and security research.
+
+The Metasploit Project is also well known for [[Anti-computer forensics|anti-forensic]] and evasion tools, some of which are built into the Metasploit Framework.
+
+Metasploit was created by [[HD Moore]] in 2003 as a portable network tool using the [[Perl]] scripting language.  Later, the Metasploit Framework was then completely rewritten in the [[Ruby (programming language)|Ruby]] programming language.&lt;ref&gt;[http://www.metasploit.com/learn-more/history/ Metasploit History]&lt;/ref&gt; In addition, it is a tool for third-party security researchers to investigate potential vulnerabilities. On October 21, 2009 the Metasploit Project announced&lt;ref&gt;[http://www.rapid7.com/metasploit-announcement.jsp Rapid7 Acquires Metasploit]&lt;/ref&gt; that it had been acquired by [[Rapid7]], a security company that provides unified vulnerability management solutions.
+
+Like comparable commercial products such as Immunity's Canvas or Core Security Technologies' [[Core Impact]], Metasploit can be used to test the vulnerability of computer systems to protect them, and it can be used to break into remote systems. Like many information security tools, Metasploit can be used for both legitimate and unauthorized activities. Since the acquisition of the Metasploit Framework, Rapid7 has added two [[open core]] proprietary editions called Metasploit Express and Metasploit Pro.
+
+Metasploit's emerging position as the [[de facto]] exploit development framework&lt;ref&gt;[http://sectools.org/sploits.html Sectools.org survey showing Metasploit as #1 exploit tool]&lt;/ref&gt; has led in recent times to the release of software vulnerability advisories often accompanied by a third party Metasploit exploit module that highlights the exploitability, risk, and remediation of that particular bug.&lt;ref name=&quot;VMwareNAT&quot;&gt;{{cite news | url = http://archives.neohapsis.com/archives/vulnwatch/2005-q4/0074.html| title = ACSSEC-2005-11-25-0x1 VMWare Workstation 5.5.0 &lt;= build-18007 GSX Server Variants And Others | date = December 20, 2005}}&lt;/ref&gt;&lt;ref name=&quot;MOKB-11-11-2006&quot;&gt;{{cite news | url = http://projects.info-pull.com/mokb/MOKB-11-11-2006.html| title = Month of Kernel Bugs - Broadcom Wireless Driver Probe Response SSID Overflow| date = November 11, 2006}}&lt;/ref&gt;
+Metasploit 3.0 (Ruby language) is also beginning to include [[fuzzing]] tools, to discover software vulnerabilities, rather than merely writing exploits for currently public bugs. This new avenue has been seen with the integration of the [[lorcon]] wireless (802.11) toolset into Metasploit 3.0 in November 2006. Metasploit 4.0 was released in August 2011.
+
+==Metasploit Framework==
+The basic steps for exploiting a system using the Framework include -
+# Choosing and configuring an ''exploit'' (code that enters a target system by taking advantage of one of its [[Software bug|bugs]]; about 300 different exploits for [[Microsoft Windows|Windows]], [[Unix]]/[[Linux]] and [[Mac OS X]] systems are included);
+# Checking whether the intended target system is susceptible to the chosen exploit (optional);
+# Choosing and configuring a ''[[Payload (software)|payload]]'' (code that will be executed on the target system upon successful entry; for instance, a remote shell or a [[Virtual Network Computing|VNC server]]);
+# Choosing the encoding technique to encode the payload so that the [[intrusion-prevention system]] (IPS) will not catch the encoded payload;
+# Executing the exploit.
+
+This modularity of allowing to combine any exploit with any payload is the major advantage of the Framework: it facilitates the tasks of attackers, exploit writers, and payload writers.
+
+Versions of the Metasploit Framework since v3.0 are written in the [[Ruby (programming language)|Ruby programming language]]. The previous version 2.7, was implemented in [[Perl]]. It runs on all versions of Unix (including Linux and Mac OS X), and also on Windows. It includes two [[command-line interface]]s, a web-based interface and a native GUI. The web interface is intended to be run from the attacker's computer. The Metasploit Framework can be extended to use external add-ons in multiple languages.
+
+To choose an exploit and payload, some information about the target system is needed such as operating system version and installed network services. This information can be gleaned with [[port scanning]] and [[OS fingerprinting]] tools such as [[nmap]]. Vulnerability scanners such as [[NeXpose]] or [[Nessus (software)|Nessus]] can detect the target system [[Vulnerability (computer science)|vulnerabilities]]. Metasploit can import vulnerability scan data and compare the identified vulnerabilities to existing exploit modules for accurate exploitation.&lt;ref&gt;[http://www.metasploit.com/download Metasploit installer download page]&lt;/ref&gt;
+
+==Metasploit Community Edition==
+In October 2011, Rapid7 released Metasploit Community Edition, a free, web-based user interface for Metasploit.&lt;ref&gt;[http://www.rapid7.com/news-events/press-releases/2011/2011-metasploit-community.jsp Press release &quot;Rapid7 Launches New Metasploit Community Edition for Free and Simple Vulnerability Verification&quot;]&lt;/ref&gt; Metasploit Community is based on the commercial functionality of the paid-for editions with a reduced set of features, including network discovery, module browsing and manual exploitation. Metasploit Community is included in the main installer. 
+
+==Metasploit Express==
+In April 2010, Rapid7 released Metasploit Express, an open-core commercial edition for security teams who need to verify vulnerabilities.&lt;ref&gt;[http://www.rapid7.com/news-events/press-releases/2010/2010-metasploit-express.jsp Press Release: Rapid7 Takes Penetration Testing Mainstream With Metasploit Express]&lt;/ref&gt;
+Built on the Metasploit Framework, it offers a graphical user interface, integrates [[nmap]] for discovery, and adds smart bruteforcing as well as automated evidence collection.&lt;ref&gt;[http://www.rapid7.com/products/metasploit-express/ Metasploit Express product page]&lt;/ref&gt;
+
+==Metasploit Pro==
+In October 2010, Rapid7 added Metasploit Pro, an open-core commercial Metasploit edition for penetration testers.&lt;ref&gt;[http://www.rapid7.com/news-events/press-releases/2010/2010-introduces-metasploit-pro.jsp Rapid7 Introduces Metasploit Pro - The Worldâs First Penetration Testing Solution that Achieves Unrestricted Remote Network Access Through Firewalls]&lt;/ref&gt;
+Metasploit Pro includes all features of Metasploit Express and adds web application scanning and exploitation, [[Social engineering (security)|social engineering]] campaigns, and VPN pivoting.&lt;ref&gt;[http://www.rapid7.com/products/metasploit-pro.jsp Metasploit Pro product page]&lt;/ref&gt;
+Metasploit Pro is available as a 7-day trial.&lt;ref&gt;[http://www.rapid7.com/downloads/metasploit-pro.jsp Metasploit Pro trial registration]&lt;/ref&gt;
+
+==Payloads==
+Metasploit offers many types of [[Payload (software)|payloads]], including:
+* '''Command shell''' enables users to run collection scripts or run arbitrary commands against the host.
+* '''Meterpreter''' enables users to control the screen of a device using VNC and to browse, upload and download files.
+
+==Opcode Database==
+The Opcode Database is an important resource for writers of new exploits. [[Buffer overflow]] exploits on Windows often require precise knowledge of the position of certain machine language [[opcode]]s in the attacked program or included [[Dynamic-link library|DLLs]]. These positions differ in the various versions and patch-levels of a given operating system, and they are all documented and conveniently searchable in the Opcode Database. This allows one to write buffer overflow exploits which work across different versions of the target operating system.
+
+==Shellcode Database==
+The Shellcode database contains the payloads (also known as [[shellcode]]) used by the Metasploit Framework. These are written in [[assembly language]] and full [[source code]] is available.
+
+==See also==
+{{Portal|Free software}}
+*[[Full disclosure]]
+*[[HD Moore]]
+*[[Rapid7]]
+*[[w3af]]
+
+==References==
+{{Reflist|2}}
+
+==Further reading==
+*''[http://searchsecurity.techtarget.com/originalContent/0,289142,sid14_gci1135581,00.html Powerful payloads: The evolution of exploit frameworks]'', searchsecurity.com, 2005-10-20
+* Chapter 12: Writing Exploits III from ''Sockets, Shellcode, Porting &amp; Coding: Reverse Engineering Exploits and Tool Coding for Security Professionals'' by James C. Foster (ISBN 1-59749-005-9). Written by Vincent Liu, chapter 12 explains how to use Metasploit to develop a buffer overflow exploit from scratch.
+*''[http://www.n00bz.net/metasploit-express/ HackMiami Pwn-Off Hack-A-Thon review of Metasploit Express]''
+
+==External links==
+* {{Official website|http://www.metasploit.com/}}
+* [https://community.rapid7.com/community/metasploit Metasploit Community] â The Official Metasploit online community
+* [http://www.metasploit.com/download Metasploit installer downloads] 
+* [http://www.rapid7.com/products/metasploit-express.jsp Metasploit Express] commercial open-core Metasploit edition for security teams
+* [http://www.rapid7.com/products/metasploit-pro.jsp Metasploit Pro] commercial open-core Metasploit edition for penetration testers
+* [http://www.rapid7.com/ Rapid7 LLC] owner of the Metasploit Project
+* {{Freshmeat|msf|Metasploit Framework}}
+* [http://www.ohloh.net/p/metasploit/ Metasploit Framework] at [[Ohloh]]
+* [http://www.offensive-security.com/metasploit-unleashed/ Metasploit Unleashed - Mastering The Framework]
+
+[[Category:Anti-forensic software]]
+[[Category:Computer network security]]
+[[Category:Computer security exploits]]
+[[Category:Computer security software]]
+[[Category:Cryptographic attacks]]
+[[Category:Free and open source software organizations]]
+[[Category:Free cross-platform software]]
+[[Category:Free security software]]
+[[Category:Injection exploits]]
+[[Category:Software testing]]
+[[Category:Web security exploits]]
+[[Category:Windows software]]
+[[Category:Unix network-related software]]
+
+[[bs:Metasploit]]
+[[de:Metasploit]]
+[[es:Metasploit]]
+[[fa:ÙØªØ§Ø§Ø³Ù¾ÙÙÛØª]]
+[[fr:Metasploit]]
+[[gl:Metasploit]]
+[[it:Metasploit Project]]
+[[ja:Metasploit]]
+[[pl:Metasploit]]
+[[ru:Metasploit]]</rev></revisions></page></pages></query></api>

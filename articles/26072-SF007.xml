@@ -1,0 +1,131 @@
+<?xml version="1.0"?><api><query><pages><page pageid="26072" ns="0" title="Red Hat Linux"><revisions><rev xml:space="preserve">{{Redirect|RHL}}
+{{confused|Fedora (operating system){{!}}Fedora Linux|Red Hat Enterprise Linux}}
+{{Infobox OS
+| name = Red Hat Linux
+| logo = [[Image:RedHat.svg|200px|Red Hat logo]]
+| screenshot = [[Image:RedHatLinux9.png|300px]]
+| caption = Red Hat Linux 9's default desktop
+| developer = [[Red Hat]]
+| family = [[Unix-like]]
+| source_model = [[Open source]]
+| working_state = Discontinued
+| released = May 13, 1995
+| latest_release_version = 9 ''alias'' Shrike
+| latest_release_date = March 31, 2003
+| kernel_type = [[Monolithic kernel|Monolithic]] [[Linux kernel]]
+| package_manager = [[RPM Package Manager]]
+| license = Various
+| website = [http://www.redhat.com www.redhat.com]
+}}
+'''Red Hat Linux''', assembled by the company [[Red Hat]], was a popular [[Linux]] based [[operating system]] until its discontinuation in 2004.&lt;ref&gt;{{cite web|title=Free_Versions_of_Red_Hat_Linux_to_be_Discontinued|url=http://www.fusionauthority.com/news/3946-free-versions-of-red-hat-linux-to-be-discontinued.htm|publisher=fusionauthority.com|accessdate=2008-03-02}}&lt;/ref&gt;
+
+Red Hat Linux 1.0 was released on November 3, 1994. It was originally called &quot;Red Hat Commercial Linux&quot;&lt;ref&gt;http://groups.google.com/group/comp.os.linux.announce/browse_thread/thread/3a9b67e29a9616cc/25f1a331d8f04e84&lt;/ref&gt; It was the first Linux distribution to use the [[RPM Package Manager]] as its packaging format, and over time has served as the starting point for several other distributions, such as [[Mandriva Linux]] and [[Yellow Dog Linux]].
+
+Since 2003, Red Hat has discontinued the Red Hat Linux line in favor of [[Red Hat Enterprise Linux]] (RHEL) for enterprise environments. [[Fedora (operating system)|Fedora]], developed by the community-supported [[Fedora Project]] and sponsored by Red Hat, is the free version best suited for home use. Red Hat Linux 9, the final release, hit its official end-of-life on 2004-04-30, although updates were published for it through 2006 by the [[Fedora Legacy]] project until that shut down in early 2007.&lt;ref&gt;{{cite web|title=The Fedora Legacy Project|url=http://www.fedoralegacy.org/|publisher=fedoralegacy.org|accessdate=2008-03-02}}&lt;/ref&gt;
+
+==Features==
+Version 3.0.3 was one of the first Linux distributions to support [[Executable and Linkable Format]] instead of the older [[a.out]] format.&lt;ref&gt;[http://www.linuxjournal.com/article/139 Linux Distributions Compared], LinuxJournal, 1996&lt;/ref&gt;
+
+Red Hat Linux introduced a graphical installer called [[Anaconda (installer)|Anaconda]], intended to be easy to use for novices, and which has since been adopted by some other Linux distributions. It also introduced a built-in tool called ''Lokkit'' for configuring the [[firewall (networking)|firewall]] capabilities.
+
+In version 6 Red Hat moved to [[GNU C Library|glibc]] 2.1, [[GNU Compiler Collection#EGCS|egcs-1.2]], and to the 2.2 kernel.&lt;ref&gt;[http://www.smoogespace.com/documents/behind_the_names.html The Truth Behind Red Hat/Fedora Names&lt;!-- Bot generated title --&gt;]&lt;/ref&gt; It also introduced [[Kudzu (computer daemon)|Kudzu]], a software library for automatic discovery and configuration of hardware.&lt;ref&gt;[http://everything2.com/title/kudzu Various Kudzu facts]&lt;/ref&gt;
+
+Version 7 was released in preparation for the 2.4 kernel, although the first release still used the stable 2.2 kernel. Glibc was updated to version 2.1.92, which was a beta of the upcoming version 2.2 and Red Hat used a patched version of GCC from CVS that they called &quot;2.96&quot;.&lt;ref&gt;[http://lwn.net/2000/1005/dists.php3 LWN - Distributions&lt;!-- Bot generated title --&gt;]&lt;/ref&gt; The decision to ship an unstable GCC version was due to GCC 2.95's bad performance on non-i386 platforms, especially [[DEC Alpha]].&lt;ref&gt;[http://lwn.net/2000/1005/a/rh-tools.php3 a/rh-tools&lt;!-- Bot generated title --&gt;]&lt;/ref&gt; Newer GCCs had also improved support for the [[C++]] standard, which caused much of the existing code not to compile.
+
+In particular, the use of a non-released version of GCC caused some criticism, e.g. from [[Linus Torvalds]]'&lt;ref&gt;[http://www.linuxtoday.com/news_story.php3?ltsn=2000-12-14-002-21-NW-RH-SW Linux Today - Linus Weighs in on Red Hat 7 Compiler Issues&lt;!-- Bot generated title --&gt;]&lt;/ref&gt; and The GCC Steering Committee;&lt;ref&gt;[http://gcc.gnu.org/ml/gcc-announce/2000/msg00003.html Gerald Pfeifer - GCC 2.96&lt;!-- Bot generated title --&gt;]&lt;/ref&gt; Red Hat was forced to defend their decision.&lt;ref&gt;[http://features.slashdot.org/article.pl?sid=00/10/12/163218&amp;mode=thread An Open Letter From Bob Young], Slashdot.org, Thu October 12, 2000 12:52 PM&lt;/ref&gt;
+GCC 2.96 failed to compile the Linux kernel, and some other software used in Red Hat, due to stricter checks. It also had an incompatible C++ [[Application binary interface|ABI]] with other compilers. The distribution included a previous version of GCC for compiling the kernel, called &quot;kgcc&quot;.
+
+As of Red Hat Linux 8.0, [[UTF-8]] was enabled as the default [[character encoding]] for the system. This had little effect on [[English Language|English]]-speaking users, but enabled much easier [[Internationalization and localization|internationalisation]] and seamless support for multiple languages, including [[Ideogram|ideographic]], [[bi-directional text|bi-directional]] and [[Complex text layout|complex script]] languages along with [[Languages of Europe|European languages]]. However, this did cause some negative reactions among existing [[Western Europe]]an users, whose legacy [[ISO/IEC 8859|ISO-8859]]-based setups were broken by the change{{Citation needed|date=February 2008}}.
+
+Version 8.0 was also the second to include the [[Bluecurve]] [[Theme (computing)|desktop theme]]. It used a common theme for GNOME-2 and KDE 3.0.2 desktops, as well as OpenOffice-1.0. KDE members did not appreciate the change, claiming that it was not in the best interests of KDE.&lt;ref&gt;http://www.theregister.co.uk/2002/09/17/red_hat_nullifies_kde_gnome/&lt;/ref&gt;
+
+Version 9 supported the [[Native POSIX Thread Library]], which was ported to the 2.4 series kernels by Red Hat.&lt;ref&gt;[http://www.redhat.com/docs/manuals/linux/RHL-9-Manual/release-notes/x86/ Red Hat Linux 9 Release Notes&lt;!-- Bot generated title --&gt;]&lt;/ref&gt;
+
+Red Hat Linux lacked many features due to possible [[copyright]] and [[patent]] problems. For example, [[MP3]] support was disabled in both [[Rhythmbox]] and [[XMMS]]; instead, Red Hat recommended using [[Vorbis|Ogg Vorbis]], which has no patents. MP3 support, however, could be installed afterwards, although [[royalties]] are required everywhere MP3 is patented.{{Citation needed|date=May 2008}} Support for Microsoft's [[NTFS]] [[file system]] was also missing, but could be freely installed as well.
+
+==Fedora==
+{{Main|Fedora (operating system)}}
+
+Red Hat Linux was originally developed exclusively inside Red Hat, with the only feedback from users coming through bug reports and contributions to the included software packages â not contributions to the distribution as such. This was changed in late 2003 when Red Hat Linux merged with the [[Virtual community|community]]-based [[Fedora Project]]. The new plan is to draw most of the codebase from Fedora when creating new Red Hat Enterprise Linux distributions. Fedora replaces the original Red Hat Linux download and retail version. The model is similar to the relationship between [[Netscape Communicator]] and [[Mozilla]], or [[StarOffice]] and [[OpenOffice.org]], although in this case the resulting commercial product is also fully [[free software]].
+
+==Nomenclature==
+The official name of the Red Hat Linux distribution is ''Red Hat Linux'' (often abbreviated to ''RHL''). The first part, ''Red Hat'', is that of the Red Hat software company.  The second word ''Linux'' refers to the underlying [[Linux kernel]] written by [[Linus Torvalds]] and associated open source software.
+
+==Version history==
+[[File:redhat 5.2 box.jpg|thumb|Box cover shot of Red Hat Linux 5.2]]
+[[File:Redhat 5 0 cds.jpeg|thumb|Red Hat 5.0 CDROMs]]
+Release dates drawn from announcements on ''comp.os.linux.announce''. Version names are chosen as to be cognitively related to the prior release, yet not related in the same way as the release before that.&lt;ref&gt;{{cite web|title= The Truth Behind Red Hat/Fedora Names|url=http://www.smoogespace.com/documents/behind_the_names.html|publisher=smoogespace.com|accessdate=2008-03-02}}&lt;/ref&gt;
+
+*1.0 (Mother's Day), November 3, 1994 (Linux 1.2.8)
+*1.1 (Mother's Day+0.1), August 1, 1995 (Linux 1.2.11)
+*2.0, September 20, 1995 (Linux 1.2.13-2)
+*2.1, November 23, 1995 (Linux 1.2.13)
+*3.0.3 (Picasso), May 1, 1996 (Linux 1.2.X) - first release supporting [[DEC Alpha]]
+*4.0 (Colgate), October 3, 1996 (Linux 2.0.18) - first release supporting [[SPARC]]
+*4.1 (Vanderbilt), February 3, 1997 (Linux 2.0.27)
+*4.2 (Biltmore), May 19, 1997 (Linux 2.0.30-2)
+*5.0 (Hurricane), December 1, 1997 (Linux 2.0.32-2)
+*5.1 (Manhattan), May 22, 1998 (Linux 2.0.34-0.6)
+*5.2 (Apollo), November 2, 1998 (Linux 2.0.36-0.7)
+*6.0 (Hedwig), April 26, 1999 (Linux 2.2.5-15)
+*6.1 (Cartman), October 4, 1999 (Linux 2.2.12-20)
+*6.2 (Zoot), April 3, 2000 (Linux 2.2.14-5.0)
+*7 (Guinness), September 25, 2000 (this release is labeled &quot;7&quot; not &quot;7.0&quot;) (Linux 2.2.16-22)
+*7.1 (Seawolf), April 16, 2001 (Linux 2.4.2-2)
+*7.2 (Enigma), October 22, 2001 (Linux 2.4.7-10, Linux 2.4.9-21smp)
+*7.3 (Valhalla), May 6, 2002 (Linux 2.4.18-3)
+*8.0 (Psyche), September 30, 2002 (Linux 2.4.18-14)
+*9 (Shrike), March 31, 2003 (Linux 2.4.20-8) (this release is labeled &quot;9&quot; not &quot;9.0&quot;)
+*
+The Fedora and Red Hat Projects were merged on September 22, 2003.&lt;ref&gt;{{cite web|title= Fedora and Red Hat to Merge|url=http://www.linuxjournal.com/article/7169|accessdate=2008-08-02}}&lt;/ref&gt;
+* See [[List of Fedora versions]]
+
+{{Portal|Free software}}
+
+==References==
+{{Reflist|2}}
+
+==External links==
+{{Commons category}}
+*Fedora Project â [http://fedoraproject.org/wiki/History History of Red Hat Linux]
+*Red Hat, Inc. â [https://www.redhat.com/docs/ Linux documentation]
+* Linux Kernel Organization â [http://archive.kernel.org/redhat-archive/redhat/linux/ Red Hat Archive]
+* {{Distrowatch|redhat|NAME=Red Hat Linux}}
+*[http://unixgods.org/~tilo/redhat_versions.html Mapping of RedHat Versions and Code Names to LINUX Kernel Versions]
+
+{{Red Hat}}
+{{Linux-distro}}
+
+[[Category:Discontinued Linux distributions]]
+[[Category:RPM-based Linux distributions]]
+[[Category:Red Hat|Linux]]
+
+[[ar:Ø±ÙØ¯ÙØ§Øª ÙÙÙÙØ³]]
+[[bg:Red Hat Linux]]
+[[cs:Red Hat Linux]]
+[[da:Red Hat Linux]]
+[[de:Red Hat Linux]]
+[[es:Red Hat Linux]]
+[[eo:Red Hat Linux]]
+[[eu:Red Hat Linux]]
+[[fa:ÙÛÙÙÚ©Ø³ Ø±Ø¯ÙØª]]
+[[fr:Red Hat Linux]]
+[[gl:Red Hat Linux]]
+[[ko:ë ëí ë¦¬ëì¤]]
+[[hr:Red Hat]]
+[[id:Red Hat Linux]]
+[[it:Red Hat Linux]]
+[[he:Red Hat Linux]]
+[[hu:Red Hat Linux]]
+[[nl:Red Hat Linux]]
+[[ja:Red Hat Linux]]
+[[no:Red Hat Linux]]
+[[pl:Red Hat Linux]]
+[[pt:Red Hat Linux]]
+[[ro:Red Hat Linux]]
+[[ru:Red Hat Linux]]
+[[simple:Red Hat Linux]]
+[[fi:Red Hat Linux]]
+[[sv:Red Hat Linux]]
+[[uk:Red Hat Linux]]
+[[zh:Red Hat Linux]]</rev></revisions></page></pages></query></api>

@@ -1,0 +1,147 @@
+<?xml version="1.0"?><api><query><pages><page pageid="7122853" ns="0" title="Beryl (window manager)"><revisions><rev xml:space="preserve">{{Merge to|Compiz|date=March 2009}}
+{{Cleanup-laundry|date=January 2008}}
+
+{{Infobox software
+| name                   = Beryl
+| logo                   = [[Image:Beryl logo.svg|100px|Beryl logo]]
+| screenshot             = [[Image:Fc6-beryl-2.png|300px]]
+| caption                = Screenshot of [[Fedora (operating system)|Fedora Core]] 6 using Beryl
+| developer              = ''QuinnStorm'', ''iXce'' and others
+| released               = ?
+| frequently_updated     = yes&lt;!-- Release version update? Don't edit this page, just click on the version number! --&gt;
+| programming language   = almost entirely written in C, frontends can be written in C or python.
+| operating system       = [[Unix-like]]
+| language               = English
+| genre                  = [[Compositing window manager]]
+| license                = [[GPL]]
+| website                = [http://www.beryl-project.org/ www.beryl-project.org]
+}}
+'''Beryl''' was a [[compositing window manager]] for the [[X Window System]] which [[Fork (software development)|forked]] from [[Compiz]] in September 2006 and was re-merged in 2007&lt;ref name=&quot;BerylCompizMerge&quot;&gt;{{cite web|url=http://lists.freedesktop.org/archives/compiz/2007-April/001809.html|title=&lt;nowiki&gt;[compiz]&lt;/nowiki&gt; Compiz and Beryl are Reuniting|accessdate=2007-04-04|author=freedesktop.org}}&lt;/ref&gt;, under the name of [[Compiz Fusion]].
+
+==Origin==
+'''Beryl''' was the project name for the '''Quinnstorm''' branch of [[Compiz]], announced on 19 September 2006 after Quinnstorm and the development team decided that the fork had come too far from the original Compiz started by [[Novell]] (&lt;tt&gt;compiz-vanilla&lt;/tt&gt;). After the Novell XGL/Compiz team (mostly [[David Reveman]]) refused the proposition to merge the Quinnstorm changes with compiz-vanilla, the decision was made to make a real differentiation.&lt;ref&gt;{{cite web | url = http://forum.beryl-project.org/topic-4562-1.html | title = Compiz.net forums - &quot;Announcing the Beryl Project&quot; | accessdate = 2006-09-19}}{{Dead link|date=July 2010}}&lt;/ref&gt;&lt;ref&gt;{{cite web | url = http://forum.beryl-project.org/topic-4591-beryl-informations-announcement | title=Compiz.net forums - Information on Beryl | accessdate = 2006-09-19}}{{Dead link|date=July 2010}}&lt;/ref&gt; In 2007, they remerged into Compiz-Fusion.
+
+==Differences==
+Notable differences between Compiz and Beryl were the following:
+
+* The window decorator, formerly known as [[cgwd]], was renamed emerald. A cgwd theme could be ported to emerald by changing the extension from .cgwd to .emerald.
+* Beryl used a flat file backend instead of [[gconf]], no [[GNOME]] dependency.
+* Initially had a large variety of extra plugins, and enhanced features in other plugins, later however most of the functionality had been ported to the ''compiz-extra'' package&lt;ref&gt;[http://www.anykeysoftware.co.uk/compiz/plugins/ Compiz Plugins&lt;!-- Bot generated title --&gt;]{{Dead link|date=July 2010}}&lt;/ref&gt;&lt;ref&gt;http://go-compiz.org/index.php?title=Porting_Plugins{{Dead link|date=July 2010}}&lt;/ref&gt;
+* Contained three themeable decorators: &lt;tt&gt;Emerald&lt;/tt&gt;, &lt;tt&gt;Heliodor&lt;/tt&gt;, and &lt;tt&gt;Aquamarine&lt;/tt&gt;.
+* It had a theme manager called &lt;tt&gt;emerald-theme-manager&lt;/tt&gt;.
+* Created by the community at [http://forum.beryl-project.org Beryl Project Forums].
+
+== Window decorators ==
+
+[[Image:Beryl wobbly.png|thumb|300px|&quot;Wobbly Windows&quot; made windows move like [[gelatin|jelly]] ]]
+
+Like [[Compiz]] and unlike traditional window managers, Beryl delegated the drawing of window borders to a separate process, called a window decorator. There were three of them, all named after varieties of [[beryl]], although only Emerald was considered stable.
+*'''[[Emerald (window decorator)|Emerald]]''', the default window decorator and a continuation of [[cgwd]], had its own theme format and supported effects like alpha transparency, a fork of Compiz's gtk-window-decorator.
+*'''Heliodor''', another fork of Compiz's ''gtk-window-decorator'', supported [[Metacity]] themes.
+*'''[[Aquamarine (window decorator)|Aquamarine]]''' supported [[KWin]] themes.
+
+== System requirements ==
+According to the Beryl [[FAQ]], Beryl ran acceptably well on a [[GeForce 3 Series|GeForce 3]]/[[Intel GMA|Intel i855]]/[[Radeon|Radeon 7500]], 256MB of RAM, and a 1.2&amp;nbsp;GHz processor, although the processor is not a strong requirement {{Citation needed|date=April 2008}}. Version 7.1 of [[X.Org Server|Xorg]] and a recent version of [[Mesa 3D]] was recommended. [http://www.beryl-project.org/faq.php#gq5]
+
+== Plugins ==
+Included in the 0.1.4 release were the following plugins. As of the 0.1.4 release plugins were sorted into groups. Also introduced in 0.1.4 was a new plugin configuration interface that was more intuitive. Plugins were sorted into groups and the actual options for each plugin were also sorted more intuitively.
+[[Image:GnomeVista.png|right|310px|thumb|Beryl using &quot;Glass&quot; window borders.]]
+* '''General Options''': Configure general core settings (Rendering options, basic window manager settings, etc.)
+* '''Accessibility''': Plugins that provide accessibility features
+** '''Input Enabled Zoom''': Zoom accessibility tool with keyboard and mouse input capabilities
+** '''Negative''': Can turn the whole screen or single windows negative
+** '''Opacify''': Made windows easily visible when mouse is hovering over them
+** '''Zoom Desktop''': Older version of Input Enabled Zoom without the option for mouse or keyboard input
+* '''Desktop''': Plugins related to the desktop in general
+** '''Clone Output''': Output clone handler
+** '''Desktop Cube''': Represent multi-desktop workspaces as a cube
+** '''Desktop Plane''': Represent multi-desktop workspaces as a flat plane
+** '''Rotate Cube''': Added ability to rotate the multi-desktop cube
+** '''Fade to Desktop''': Hide all windows with a smooth fade
+** '''Show Desktop''': Hide all windows through use of a hotkey
+* '''Development''': Plugins that are generally only useful for developers
+** '''Crash Handler''': Launch a fall-back window manager if Beryl crashes
+* '''Image Format''': Plugins to providing support for loading and saving various image formats
+** '''PNG''': [[Portable Network Graphics|PNG]] image loader
+** '''SVG''': [[SVG]] image loader
+** '''JPEG''': [[JPEG]] image loader
+** '''Text''': Text based image loader
+* '''Extras''': Plugins with little utility
+** '''Annotate''': Allow the user to draw on the screen
+** '''Benchmark''': Simple performance measurement utility
+** '''D-Bus''': Allow effects to be controlled via [[D-Bus]] commands
+** '''Screenshot''': Allow the user to take a screen shot
+** '''Snow''': Turn your desktop into a blizzard
+** '''Splash''': Show a splash screen on startup
+** '''Water Effect''': Create rain on the screen and other water effects
+** '''Window Previews''': Create live previews of windows when the mouse hovers over their window list entry
+* '''Visual Effects''': Plugins to provide visual effects
+** '''3D Effects''': When rotating the desktop cube windows are stacked in 3D space representing their depth
+** '''Animations''': Animates windows at different times (minimization, closing, opening, etc.)
+** '''Blur Effects''': Blurring of transparent windows and motion blur effects
+** '''Fading Windows''': Fade windows on creation and destruction
+** '''Trailfocus''': Windows fade out based on inactivity
+** '''Window Decorations''': Draw window borders
+** '''Wobbly Windows''': Make windows move like Jelly
+* '''Window Management''': Plugins that provide window management related functionality
+** '''Application Switcher''': Similar to MS Windows alt-tab window switching
+** '''Group and Tab Windows''': Enable logical grouping of windows into tabs with live previews
+** '''Move Window''': Basic moving of window ability
+** '''Place Windows''': Locates windows in an appropriate position when created
+** '''Put''': Move windows around the screen and desktops through shortcut keys
+** '''Resize Window''': Basic window resizing ability
+** '''Ring Window Switcher''': Enable a wheel style window switcher through shortcut keys
+** '''Scale''': Similar to the [[ExposÃ© (Mac OS X)|ExposÃ©]] window selector
+** '''Snapping Windows''': Enable window snapping and edge resistance without the wobbly plugin
+** '''Set Window Attribs by Various Criteria''': Allow setting attributes of windows permanently based on program name, window class or window title. (e.g.: &lt;code&gt;c:konsole:80&lt;/code&gt; on the ''&quot;Window Opacity&quot;'' control would set the opacity of all instances of [[Konsole]] to 80%)
+** '''Tile''': Used to tile windows with keyboard shortcuts
+
+== Releases ==
+The first official release of the project (Version 0.1.0) along with Emerald and Beryl-manager came on 29 September 2006. The second 'stable' release (Version 0.2.0) came on 15 March 2007&lt;ref&gt;[http://blog.beryl-project.org/?p=29 Beryl 0.2.0 Release Announcement]{{Dead link|date=July 2010}}&lt;/ref&gt;, shortly followed by an almost identical Version 0.2.1, the only changes being to update licensing and where the source code was stored&lt;ref&gt;[http://blog.beryl-project.org/?p=31 Beryl 0.2.1 Release Announcement]{{Dead link|date=July 2010}}&lt;/ref&gt;.
+
+== Beryl-Compiz merge ==
+As of March 30, 2007, Beryl and [[Compiz]] have decided to merge their projects back into one&lt;ref&gt;[http://forum.beryl-project.org/viewtopic.php?f=34&amp;t=5484 Merge Announcement]&lt;/ref&gt;. The Beryl project has been shut down in favor of the new merged project [[Compiz Fusion]]&lt;ref&gt;{{cite web | url = http://forums.opencompositing.org/viewtopic.php?f=4&amp;t=825 | title = OpenCompositing forums - CompComm has a real name! &quot;Compiz Fusion&quot; | accessdate = 2007-06-21}}&lt;/ref&gt;; its main activities will be focused on installation, configuration and additional plugins for addition to the core functionalities of Compiz, which will be responsible for core and base plugins.
+
+== See also ==
+{{Portal|Free software}}
+*[[Compiz]]
+*[[OpenGL]]
+*[[Xgl]]
+*[[VirtualGL]]
+*[[AIGLX]]
+*[[Kwin]]
+*[[DeskSpace]]
+* Nimi Visuals
+
+==References==
+&lt;!--See http://en.wikipedia.org/wiki/Wikipedia:Footnotes for an explanation of how to generate footnotes using the &lt;ref(erences/)&gt; tags--&gt;
+{{Reflist}}
+
+==External links==
+{{Commons and category|Compiz|Beryl (window manager)}}
+* [http://www.youtube.com/watch?v=ZD7QraljRfM Youtube video of Beryl installed on Ubuntu 6.10]
+
+{{Window Managers}}
+{{Compiz}}
+
+{{DEFAULTSORT:Beryl (Window Manager)}}
+[[Category:Free X window managers]]
+[[Category:Compositing window managers]]
+[[Category:Freedesktop.org]]
+
+[[ca:Beryl]]
+[[cs:Beryl (software)]]
+[[de:Beryl]]
+[[es:Compiz#Beryl]]
+[[fr:Beryl]]
+[[it:Beryl]]
+[[nl:Beryl (windowmanager)]]
+[[ja:Beryl]]
+[[no:Beryl]]
+[[pl:Beryl (menedÅ¼er okien)]]
+[[pt:Beryl (gerenciador de janelas)]]
+[[ru:Beryl]]
+[[sk:Beryl (softvÃ©r)]]
+[[sv:Beryl]]
+[[th:Beryl]]
+[[tr:Beryl]]</rev></revisions></page></pages></query></api>

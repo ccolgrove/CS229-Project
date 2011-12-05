@@ -1,0 +1,339 @@
+<?xml version="1.0"?><api><query><pages><page pageid="5144840" ns="0" title="Pentium"><revisions><rev xml:space="preserve">{{Refimprove|date=August 2007}}
+{{Infobox CPU
+| name        = Pentium
+| image       = Intel PentiumDC 2009.png
+| image_size  = 123px
+| caption     = 
+| produced-start = 1993
+| produced-end   = current
+| slowest     = 60  | slow-unit     = MHz
+| fastest     = 3.8  | fast-unit     = GHz
+| fsb-slowest = 60  | fsb-slow-unit = MHz
+| fsb-fastest = 1333  | fsb-fast-unit = MT/s
+| manuf1      = Intel
+| size-from   = 0.8 Âµm
+| size-to     = [[32 nm]]
+| arch        = [[x86]], [[x86-64]]
+| microarch = [[P5 (microarchitecture)|P5]]&lt;br&gt;[[P6 (microarchitecture)|P6]]&lt;br&gt;[[NetBurst]]&lt;br&gt;[[Core (microarchitecture)|Core]]&lt;br&gt;[[Nehalem (microarchitecture)|Nehalem]]&lt;br&gt;[[Sandy Bridge]]
+| sock1       = Various
+| numcores    = 1-2
+| core1       = Various
+}}
+'''Pentium''' is a brand used for a series of [[x86 architecture|x86]]-compatible [[microprocessor]]s produced by [[Intel]].  In its most current form, a Pentium processor is a consumer-level product with a two-star rating&lt;ref&gt;{{cite web|title=Intel Processor Rating|url=http://www.intel.com/en_uk/consumer/products/processors/ratings.htm|accessdate=2011-11-21}}&lt;/ref&gt;, above the low-end [[Intel Atom|Atom]] and [[Celeron]] products but below the faster [[Intel Core|Core i3, i5 and i7]] lines as well as the high-end [[Xeon]] processors.
+
+The name Pentium is originally derived from the [[Greek language|Greek]] word ''pente'' (ÏÎ­Î½ÏÎµ), meaning 'five' (as the series was Intel's 5th generation  [[microarchitecture]], the [[P5 (microarchitecture)|P5]]), and the [[Latin]] ending ''[[Latin declension#Third declension i-stem nouns|-ium]]''. The current Pentium processors only share the name but are in fact based on the same processor chips that are used in the [[Intel Core]] but are typically used with a lower [[clock frequency]], a partially disabled [[CPU cache|L3 cache]] and some of the advanced features such as [[Hyper-threading]] and [[Intel VT|Virtualization]] disabled.
+
+== Overview ==
+{{See also|List of Intel Pentium microprocessors}}
+During development Intel generally identifies processors with [[codename]]s, such as ''Prescott'', ''Willamette'', ''Coppermine'', ''Katmai'', ''Klamath'' or ''Deschutes''. These usually become widely known,&lt;ref&gt;[http://www.ece.iastate.edu/~morris/cs570/name.html Names of processors]&lt;/ref&gt; even after the processors are given official names on launch.
+
+{| class=wikitable
+! Brand !! Microarchitecture !! Desktop !! Laptop !! Server
+|-
+! [[P5 (microarchitecture)|Pentium]]&lt;br&gt;[[Pentium OverDrive]]
+| rowspan=2|[[P5 (microarchitecture)|P5]] || colspan=2| [[P5 (microprocessor)|P5]] (0.8&amp;nbsp;Âµm)&lt;br&gt;[[P54C (microprocessor)|P54C]] (0.6&amp;nbsp;Âµm)&lt;br&gt;[[P54CS (microprocessor)|P54CS]] (0.35&amp;nbsp;Âµm) || rowspan=2|
+|-
+! [[Pentium MMX]]&lt;br&gt;[[Pentium OverDrive MMX]]
+| colspan=2| [[P55C (microprocessor)|P55C]] (0.35&amp;nbsp;Âµm)&lt;br&gt;[[Tillamook (microprocessor)|Tillamook]] (0.25&amp;nbsp;Âµm)
+|-
+! [[Pentium Pro]]
+| rowspan=3|[[P6 (microarchitecture)|P6]] || || || P6 (0.5&amp;nbsp;Âµm)&lt;br&gt;P6 (0.35&amp;nbsp;Âµm)
+|-
+! [[Pentium II]]&lt;br&gt;[[Pentium II Xeon]]&lt;br&gt;[[Pentium II OverDrive]]&lt;br&gt;[[Mobile Pentium II]]
+| [[Klamath (microprocessor)|Klamath]] (0.35&amp;nbsp;Âµm)&lt;br&gt;[[Deschutes (microprocessor)|Deschutes]] (0.25&amp;nbsp;Âµm) || [[Tonga (microprocessor)|Tonga]] (0.25&amp;nbsp;Âµm)&lt;br&gt;[[Dixon (microprocessor)|Dixon]] (0.25&amp;nbsp;Âµm) || [[Drake (microprocessor)|Drake]] (0.25&amp;nbsp;Âµm)
+|-
+! [[Pentium III]]&lt;br&gt;[[Pentium III Xeon]]&lt;br&gt;[[Mobile Pentium III]]&lt;br&gt;[[Pentium III M]]
+| [[Katmai (microprocessor)|Katmai]] (0.25&amp;nbsp;Âµm)&lt;br&gt;[[Coppermine (microprocessor)|Coppermine]] (180&amp;nbsp;nm)&lt;br&gt;[[Tualatin (microprocessor)|Tualatin]] (130&amp;nbsp;nm) || [[Coppermine (microprocessor)|Coppermine]] (180&amp;nbsp;nm)&lt;br&gt;[[Tualatin (microprocessor)|Tualatin]](130&amp;nbsp;nm) || [[Tanner (microprocessor)|Tanner]] (0.25&amp;nbsp;Âµm)&lt;br&gt;[[Cascades (microprocessor)|Cascades]] (180&amp;nbsp;nm)
+|-
+! [[Pentium 4]]&lt;br&gt;[[Pentium 4 Extreme Edition]]
+| rowspan=2 | [[NetBurst (microarchitecture)|NetBurst]] ||  Willamette (180&amp;nbsp;nm)&lt;br&gt;Northwood (130&amp;nbsp;nm)&lt;br&gt;Gallatin (130&amp;nbsp;nm)&lt;br&gt;Prescott-2M (90&amp;nbsp;nm)&lt;br&gt;Prescott (90&amp;nbsp;nm)&lt;br&gt;Cedar Mill (65&amp;nbsp;nm) || Northwood (130&amp;nbsp;nm)&lt;br&gt;Prescott (90&amp;nbsp;nm) || rowspan=8|Rebranded as [[Xeon]]
+|-
+! [[Pentium D]]&lt;br&gt;[[Pentium Extreme Edition]]
+| Smithfield (90&amp;nbsp;nm)&lt;br&gt;Presler (65&amp;nbsp;nm)  ||
+|-
+! [[Pentium M]]
+| rowspan=2|[[Pentium M (microarchitecture)|P6]] based || || [[Banias (microprocessor)|Banias]] (90&amp;nbsp;nm)&lt;br&gt;[[Dothan (microprocessor)|Dothan]] (65&amp;nbsp;nm)
+|-
+! rowspan=2|[[Pentium Dual-Core]]
+| || [[Yonah (microprocessor)|Yonah]] (65&amp;nbsp;nm)
+|-
+|  rowspan=2 |[[Core (microarchitecture)|Core]] || [[Conroe (microprocessor)#Allendale|Allendale]] (65&amp;nbsp;nm)&lt;br&gt;[[Wolfdale (microprocessor)|Wolfdale-3M]] (45&amp;nbsp;nm) || [[Merom (microprocessor)|Merom-2M]] (65&amp;nbsp;nm)
+|-
+! rowspan=3|[[Pentium (brand)|Pentium]]
+|     Wolfdale-3M (45&amp;nbsp;nm) || [[Penryn (microprocessor)|Penryn-3M]] (45&amp;nbsp;nm)
+|-
+| [[Nehalem (microarchitecture)|Nehalem]] || [[Clarkdale (microprocessor)|Clarkdale]] (32&amp;nbsp;nm) || [[Arrandale (microprocessor)|Arrandale]]&quot; (32 nm)
+|-
+|  [[Sandy Bridge]] || Sandy Bridge (32&amp;nbsp;nm) || 
+|-
+|}
+
+== History ==
+The original Pentium branded CPUs were expected to be named 586 or i586, to follow the naming convention of previous generations ([[Intel 80286|286]], [[Intel 80386|i386]], [[Intel 80486|i486]]).  However, as the company wanted to prevent their competitors from branding their processors with similar names, as AMD had done with their [[Am486]], Intel attempted to file a [[trademark]] on the name in the United States, only to be denied because a series of numbers was not considered [[Trademark distinctiveness|distinct]].
+
+Following Intel's previous series of [[8086]], [[80186]], [[80286]], [[80386]], and [[80486]] microprocessors, the company's first P5-based processor was released as the [[Intel P5|original Intel Pentium]] on March 22, 1993. Due to its success, the Pentium brand would continue through several generations of high-end processors beyond the original. In 2006, the Pentium brand briefly disappeared from Intel's [[Technology roadmap|roadmaps]],&lt;ref&gt;{{cite news |title=Intel &quot;Conroe-L&quot; Details Unveiled |url=http://www.dailytech.com/article.aspx?newsid=4252 |publisher=DailyTech |accessdate=2007-08-16}}&lt;/ref&gt;&lt;ref&gt;[http://asia.cnet.com/reviews/pcperipherals/0,39051168,61998152-8,00.htm The multicore era is upon us - CNET Asia]&lt;/ref&gt; only to re-emerge in 2007.&lt;ref&gt;{{cite news |title=Intel to unify product naming scheme |url=http://www.tgdaily.com/content/view/33234/122/ |publisher=TG Daily |accessdate=2007-08-12}}&lt;/ref&gt;
+
+In 1998, Intel introduced the [[Celeron]]&lt;ref name=&quot;intel.com&quot;&gt;{{cite web |title=Microprocessor Hall of Fame |url=http://www.intel.com/museum/online/hist%5Fmicro/hof/ |publisher=Intel |accessdate=2007-08-11 |archiveurl = http://web.archive.org/web/20070706032836/http://www.intel.com/museum/online/hist_micro/hof/ &lt;!-- Bot retrieved archive --&gt; |archivedate = 2007-07-06}}&lt;/ref&gt; brand for low-priced microprocessors. With the 2006 introduction of the [[Intel Core]] brand as the company's new flagship line of processors, the Pentium series was to be discontinued. However, due to a demand for mid-range dual-core processors, the Pentium brand was re-purposed to be Intel's mid-range processor series, in between the Celeron and Core series, continuing with the [[Pentium Dual-Core]] line.&lt;ref name=&quot;asia.cnet.com&quot;&gt;{{cite web | last=Brown | first=Rich |coauthors=Michelle Thatcher | title=The multicore era is upon us: How we got here â Where we stand today | url=http://asia.cnet.com/reviews/pcperipherals/0,39051168,61998152-5,00.htm | date=23 April 2008 | work=CNET Asia | publisher= | accessdate=2009-04-18 }}&lt;/ref&gt; &lt;ref name=&quot;xbitlabs.com&quot;&gt;{{cite news |title=Intel Readies Pentium E2000-Series Processors |url=http://www.xbitlabs.com/news/cpu/display/20061115223825.html |last=Shilov |first=Anton |publisher=X-bit labs |accessdate=2007-08-15}}&lt;/ref&gt;&lt;ref name=&quot;tgdaily.com&quot;&gt;{{cite news |title=Intel to unify product naming scheme |url=http://www.tgdaily.com/content/view/33234/122/ |publisher=TG Daily |accessdate=2007-08-15}}&lt;/ref&gt;
+
+In 2009, the &quot;Dual-Core&quot; suffix was dropped, and new x86 microprocessors started carrying the plain ''Pentium'' name again.
+
+==Pentium-branded processors==
+=== [[P5 (microarchitecture)|P5 microarchitecture]] based ===
+The original '''[[Intel P5|Pentium]]''' and '''[[Pentium MMX]]''' processors were the [[superscalar]] follow-on to the [[80486]] processor and were marketed from 1993 to 1999. Some versions of these were available as [[Pentium OverDrive]] that would fit into older CPU sockets.
+
+==== [[Pentium (brand)|Pentium]] ====
+{{Main|List of Intel Pentium microprocessors}}
+{| class=wikitable
+! Core !! Process !! Frequency !! [[CPU cache|L1 Cache]] !! [[Front-side bus|FSB]] !! [[CPU Socket|Socket]] !!  Release date
+|-
+| [[P5 (microprocessor)|P5]] || 0.8&amp;nbsp;Âµm || 60â66&amp;nbsp;MHz || 16 KiB || 60â66&amp;nbsp;MHz || [[Socket 4]] || March 1993
+|-
+| [[P54C (microprocessor)|P54C]] || 0.6&amp;nbsp;Âµm || 75â120&amp;nbsp;MHz || 16 KiB || 50â66&amp;nbsp;MHz || [[Socket 5]] || October 1994
+|-
+| [[P54CS (microprocessor)|P54CS]] || 0.35&amp;nbsp;Âµm || 133â200&amp;nbsp;MHz || 16 KiB || 60â66&amp;nbsp;MHz || [[Socket 7]] || June 1995
+|-
+| [[P55C (microprocessor)|P55C]] || 0.35&amp;nbsp;Âµm || 120â233&amp;nbsp;MHz || 32 KiB || 60â66&amp;nbsp;MHz || Socket 7 || March 1995
+|-
+| [[Tillamook (microprocessor)|Tillamook]] || 0.25&amp;nbsp;Âµm || 166â300&amp;nbsp;MHz || 32 KiB || 66&amp;nbsp;MHz || Socket 7 || August 1997
+|}
+
+=== [[P6 (microarchitecture)|P6 microarchitecture]] based ===
+In parallel with the P5 microarchitecture, Intel developed the '''P6 microarchitecture''' and started marketing it as the '''[[Pentium Pro]]''' for the high-end market in 1995. It introduced [[out-of-order execution]] and an integrated [[CPU cache|second level cache]] on dual-chip processor package.
+The second P6 generation replaced the original P5 with the '''[[Pentium II]]''' and rebranded the high-end version as '''[[Pentium II Xeon]]'''. It was followed by a third version called the '''[[Pentium III]]''' and '''[[Pentium III Xeon]]''', respectively. The Pentium II line added the [[MMX (instruction set)|MMX]] instructions that were also present in the Pentium MMX.
+
+Versions of these processors for the Laptop marked were initially called '''Mobile Pentium II''' and '''Mobile Pentium III''', later versions were called '''Pentium III-M'''. Starting with the Pentium II, the [[Celeron]] brand was used for low-end versions of most Pentium processors with a reduced feature set such as a smaller cache or missing power management features.
+
+==== [[Pentium Pro]] ====
+{{Main|List of Intel Pentium Pro microprocessors}}
+{| class=wikitable
+! Core !! Process !! Frequency !! [[CPU cache|L2 Cache]] !! [[Front-side bus|FSB]] !! [[CPU Socket|Socket]] !! Release date
+|-
+|P6 || 0.5&amp;nbsp;Âµm || 150&amp;nbsp;MHz || 256 KiB || 60â66&amp;nbsp;MHz || [[Socket 8]] || November 1995
+|-
+|P6 || 0.35&amp;nbsp;Âµm || 166â200&amp;nbsp;MHz || 256â1024 KiB || 60â66&amp;nbsp;MHz || Socket 8 ||
+|}
+
+==== [[Pentium II]] ====
+{{Main|List of Intel Pentium II microprocessors}}
+{| class=wikitable
+! Core !! Process !! Frequency !! [[CPU cache|L2 Cache]] !! [[Front-side bus|FSB]] !! [[CPU Socket|Socket]] !! Release date
+|-
+| [[Klamath (microprocessor)|Klamath]] || 0.35&amp;nbsp;Âµm || 233â300&amp;nbsp;MHz || 512 KiB || 66&amp;nbsp;MHz || [[Slot 1]] || May 1997
+|-
+| [[Deschutes (microprocessor)|Deschutes]] || 0.25&amp;nbsp;Âµm || 266â450&amp;nbsp;MHz || 512 KiB || 66â100&amp;nbsp;MHz || Slot 1 || January 1998
+|-
+| [[Tonga (microprocessor)|Tonga]] || 0.25&amp;nbsp;Âµm || 233â300&amp;nbsp;MHz || 512 KiB || 66&amp;nbsp;MHz || MMC-2 || April 1998
+|-
+| [[Dixon (microprocessor)|Dixon]] || 0.25&amp;nbsp;Âµm || 266â366&amp;nbsp;MHz || 256 KiB || 66&amp;nbsp;MHz || MMC-2 ||
+|}
+
+==== [[Pentium III]] ====
+{{Main|List of Intel Pentium III microprocessors}}
+{| class=wikitable
+! Core !! Process !! Frequency !! [[CPU cache|L2 Cache]] !! [[Front-side bus|FSB]] !! [[CPU Socket|Socket]] !! Release date
+|-
+| [[Katmai (microprocessor)|Katmai]] || 0.25&amp;nbsp;Âµm || 450â600&amp;nbsp;MHz || 512 KiB || 100â133&amp;nbsp;MHz || [[Slot 1]] || February 1999
+|-
+| [[Coppermine (microprocessor)|Coppermine]] || 0.18&amp;nbsp;Âµm || 400â1130&amp;nbsp;MHz || 256 KiB || 100â133&amp;nbsp;MHz || Slot 1, [[Socket 370]], [[BGA2]], [[Micro-PGA2|ÂµPGA2]] || October 1999
+|-
+| [[Tualatin (microprocessor)|Tualatin]] || 0.13&amp;nbsp;Âµm || 700â1400&amp;nbsp;MHz || 512 KiB|| 100â133&amp;nbsp;MHz || Socket 370, BGA2, ÂµPGA2 ||
+|}
+
+=== [[NetBurst (microarchitecture)|Netburst microarchitecture]] based ===
+In 2000, Intel introduced a new microarchitecture called '''NetBurst''', with a much longer pipeline enabling higher clock frequencies than the P6 based processors. Initially, these were called '''[[Pentium 4]]''' and the high-end versions have since been called just [[Xeon]]. As with Pentium III, there are both '''Mobile Pentium 4''' and '''Pentium 4 M''' processors for the laptop market, with Pentium 4 M denoting the more power-efficient versions. Enthusiasts version of the Pentium 4 with the highest clock frequency were called '''[[Pentium 4#Gallatin .28Extreme Edition.29|Pentium 4 Extreme Edition]]'''.
+
+The '''[[Pentium D]]''' was the first [[multi-core]] Pentium, integrating two Pentium 4 chips in one package and was also available as the enthusiast '''[[Pentium Extreme Edition]]'''.
+
+==== [[Pentium 4]] ====
+{{Main|List of Intel Pentium 4 microprocessors}}
+{| class=wikitable
+! Core !! Process !! Clock Speeds !! L2 Cache !! FSB Speeds !! Socket !! Release Date
+|-
+| Willamette || 180&amp;nbsp;nm || 1.3â2.0&amp;nbsp;GHz || 256 KiB || 400&amp;nbsp;MT/s || Socket 423, Socket 478 || November 2000
+|-
+| Northwood || 130&amp;nbsp;nm || 1.6â3.4&amp;nbsp;GHz || 512 KiB || 400â800&amp;nbsp;MT/s || Socket 478 || January 2002
+|-
+| Gallatin || 130&amp;nbsp;nm || 3.2â3.46&amp;nbsp;GHz || 512 KiB + 2 MiB L3 || 800â1066&amp;nbsp;MT/s || Socket 478, LGA 775 || November 2003
+|-
+| Prescott || 90&amp;nbsp;nm || 2.4â3.8&amp;nbsp;GHz || 1 MiB || 533â800&amp;nbsp;MT/s || Socket 478, LGA 775 || February 2004
+|-
+| Prescott-2M || 90&amp;nbsp;nm || 2.8â3.8&amp;nbsp;GHz || 2 MiB || 800â1066&amp;nbsp;MT/s || LGA 775 || February 2005
+|-
+| Cedar Mill || 65&amp;nbsp;nm || 3.0â3.6&amp;nbsp;GHz || 2 MiB || 800&amp;nbsp;MT/s || LGA 775 || January 2006
+|}
+
+==== [[Pentium D]] ====
+{{Main|List of Intel Pentium D microprocessors}}
+{| class=wikitable
+! Core !! Process !! Clock Speeds !! L2 Cache !! FSB Speeds !! Socket !! Release Date
+|-
+| Smithfield || 90&amp;nbsp;nm || 2.66â3.2&amp;nbsp;GHz || 2 MiB || 533â800&amp;nbsp;MT/s || Socket T || May, 2005
+|-
+| Smithfield XE || 90&amp;nbsp;nm || 3.2&amp;nbsp;GHz || 2 MiB || 800&amp;nbsp;MT/s || Socket T || May, 2005
+|-
+| Presler || 65&amp;nbsp;nm || 2.8â3.6&amp;nbsp;GHz || 4 MiB || 800&amp;nbsp;MT/s || Socket T|| January, 2006
+|-
+| Presler XE || 65&amp;nbsp;nm || 3.46â3.73&amp;nbsp;GHz || 4 MiB || 1066&amp;nbsp;MT/s || Socket T || January, 2006
+|}
+
+=== [[Pentium M (microarchitecture)|Pentium M microarchitecture]] based ===
+In 2003, Intel introduced a new processor based on the P6 microarchitecture called '''[[Pentium M]]''', which was much more power efficient than the Mobile Pentium 4, Pentium 4 M and Pentium III M. Dual-core version of the Pentium M was developed under the code name [[Yonah (microprocessor)|Yonah]] and sold under the marketing names [[Intel Core#Core Duo|Core Duo]] and '''[[Pentium Dual-Core]]'''. Unlike Pentium D, it integrated both cores on a single chip. From this point, the [[Intel Core]] brand name was used for the mainstream Intel processors and the Pentium brand became a low-end version between Celeron and Core. All Pentium M based designs including Yonah  are for the mobile market.
+
+==== [[Pentium M]] ====
+{{Main|List of Intel Pentium M microprocessors}}
+{| class=wikitable
+! Core !! Process !! Frequency !! [[CPU cache|L1 Cache]] !! [[CPU cache|L2 Cache]] !! [[Front-side bus|FSB]] !! [[CPU Socket|Socket]] !! Release date
+|-
+| [[Banias (microprocessor)|Banias]] || 130&amp;nbsp;nm || 900â1700&amp;nbsp;MHz || 64 KiB || 1 MiB || 400&amp;nbsp;MT/s || [[Socket 479]] || March 2003
+|-
+| [[Dothan (microprocessor)|Dothan]] || 90&amp;nbsp;nm || 1.00â2.26&amp;nbsp;GHz || 64 KiB || 2 MiB || 400â533&amp;nbsp;MT/s || [[FC-uBGA]] || June 2004
+|}
+
+=== [[Core (microarchitecture)|Core microarchitecture]] based ===
+The '''[[Pentium Dual-Core]]''' name continued to be used when the Yonah design was extended with 64 bit support, now called the '''Core microarchitecture'''. This microarchitecture eventually replaced all NetBurst based processors across the four brands, Celeron, Pentium, Core and Xeon.
+Pentium Dual-Core processors based on the Core microarchitecture use the [[Conroe (microprocessor)#Allendale|Allendale]] and [[Wolfdale (microprocessor)|Wolfdale-3M]] designs for desktop processors and [[Merom (microprocessor)|Merom-2M]] for mobile processors.
+
+==== [[Pentium Dual-Core]] ====
+{{Main|List of Intel Pentium Dual-Core microprocessors}}
+{| class=wikitable
+! Core !! Process !! Clock Speeds !! [[CPU cache|L1 Cache]]  !! L2 Cache !! FSB Speeds !! Socket !! Release date
+|-
+| [[Yonah (microprocessor)|Yonah]] || 65&amp;nbsp;nm || 1.6â1.86&amp;nbsp;GHz || 64 KiB || 1 MiB || 533&amp;nbsp;MT/s || Socket M || January 2007
+|-
+| [[Merom (microprocessor)#Merom-2M|Merom-2M]] || 65&amp;nbsp;nm || 1.46â2.16&amp;nbsp;GHz || 64 KiB || 1 MiB || 533â667&amp;nbsp;MT/s || Socket P || Q4 2007
+|-
+| [[Conroe (microprocessor)#Allendale|Allendale]] || 65&amp;nbsp;nm || 1.6â2.4&amp;nbsp;GHz || 64 KiB || 1 MiB || 800&amp;nbsp;MT/s || Socket 775 || June 2007
+|-
+| [[Wolfdale (microprocessor)#Wolfdale-3M|Wolfdale-3M]] || 45&amp;nbsp;nm || 2.2â2.7&amp;nbsp;GHz || 64 KiB || 2 MiB || 800&amp;nbsp;MT/s || Socket 775 || August 2008
+|}
+
+==== Pentium (2009) ====
+{{Main|List of Intel Pentium microprocessors}}
+{| class=wikitable
+! Core !! Process !! Clock Speeds !! [[CPU cache|L1 Cache]]  !! L2 Cache !! FSB Speeds !! Socket !! Release date
+|-
+| [[Wolfdale (microprocessor)#Wolfdale-3M|Wolfdale-3M]] || 45&amp;nbsp;nm || 2.8â3.2&amp;nbsp;GHz || 64 KiB || 2 MiB || 1066&amp;nbsp;MT/s || Socket 775 || May 2009
+|-
+| [[Penryn (microprocessor)#Penryn-3M|Penryn-3M]] || 45&amp;nbsp;nm || 2.0â2.3&amp;nbsp;GHz || 64 KiB || 1 MiB || 800&amp;nbsp;MT/s || Socket P || January 2009
+|-
+| [[Penryn (microprocessor)#Penryn-3M|Penryn-3M]] ULV || 45&amp;nbsp;nm || 1.3â1.5&amp;nbsp;GHz || 64 KiB || 2 MiB || 800&amp;nbsp;MT/s || BGA 956 || September 2009
+|-
+| [[Penryn (microprocessor)#Penryn-L|Penryn-L]] ULV &lt;sup id=&quot;fn_1_back&quot;&gt;[[#fn 1|1]]&lt;/sup&gt; || 45&amp;nbsp;nm || 1.3â1.4&amp;nbsp;GHz || 64 KiB || 2 MiB || 800&amp;nbsp;MT/s || BGA 956 || May 2009
+|}
+
+{| class=&quot;wikitable&quot;
+! Codename !! Brand Name !! Model (list) !! Cores !! L2 Cache !! Socket || TDP
+|-
+! [[Conroe (microprocessor)#Allendale|Allendale]]
+| [[Pentium Dual-Core]]
+| [[List of Intel Pentium Dual-Core microprocessors#&quot;Allendale&quot; (65 nm)|E2xxx]] || 2 || 1 MB || LGA 775 || 65 W
+|-
+! Merom-2M
+| Mobile [[Pentium Dual-Core]]
+| [[List of Intel Pentium Dual-Core microprocessors#&quot;Merom-2M&quot; (65 nm)|T2xxx&lt;br&gt;T3xxx]] || 2 || 1 MB || Socket P || 35 W
+|-
+! rowspan=3|Wolfdale-3M
+| rowspan=2|[[Pentium Dual-Core]]
+| [[List of Intel Pentium Dual-Core microprocessors#&quot;Wolfdale-3M&quot; (45 nm)|E2xxx]] || rowspan=3|2 || 1 MB ||rowspan=3| LGA 775 || rowspan=3|65 W
+|-
+| [[List of Intel Pentium Dual-Core microprocessors#&quot;Wolfdale-3M&quot; (45 nm)|E5xxx]] || rowspan=2|2 MB
+|-
+|  '''Pentium''' || [[List of Intel Pentium Dual-Core microprocessors#&quot;Wolfdale-3M&quot; (45 nm)|E6xxx]]
+|-
+! rowspan=2 | Penryn-3M
+| rowspan=3 | Mobile '''Pentium'''
+| [[List of Intel Pentium microprocessors#&quot;Penryn-3M&quot; (standard voltage, 45 nm)|T4xxx]]|| rowspan=2 | 2 || 1 MB || Socket P || 35 W
+|-
+| [[List of Intel Pentium microprocessors#&quot;Penryn-3M&quot; (ultra-low voltage, 45 nm)|SU4xxx]] || rowspan=2|2 MB || rowspan=2|ÂµFC-BGA 956|| 10  W
+|-
+! Penryn-L
+| [[List of Intel Pentium microprocessors#&quot;Penryn-L&quot; (ultra-low voltage, 45 nm)|SU2xxx]]  || 1 || 5.5 W
+|}
+
+In 2009, Intel changed the naming system for Pentium processors, renaming the Wolfdale-3M based processors to '''Pentium''', without the Dual-Core name and introduced new single- and dual-core processors based on [[Penryn (microprocessor)|Penryn]] under the Pentium name.
+
+The Penryn core is the successor to the Merom core and Intel's 45&amp;nbsp;nm version of their mobile series of Pentium microprocessors. The FSB is increased from 667&amp;nbsp;MHz to 800&amp;nbsp;MHz and the voltage is lowered. Intel released the first Penryn Core, the Pentium T4200, in December, 2008. In June 2009, Intel released the first single-core processor to use the Pentium name, a [[Consumer Ultra-Low Voltage]] (CULV) Penryn core called the Pentium SU2700.
+
+In September 2009, Intel introduced the Pentium SU4000 series together with the Celeron SU2000 and Core 2 Duo SU7000 series, which are dual-core CULV processors based on Penryn-3M and using 800&amp;nbsp;MHz FSB. The Pentium SU4000 series has 2 MB L2 cache but is otherwise basically identical to the other two lines.
+
+=== [[Nehalem (microarchitecture)|Nehalem]] microarchitecture based ===
+The Nehalem microarchitecture was introduced in late 2008 as a successor to the Core microarchitecture, and in early 2010, a new '''Pentium''' G6950 processor based on the '''[[Clarkdale (microprocessor)|Clarkdale]]''' design was introduced based on the '''[[Nehalem (microarchitecture)#Westmere|Westmere]]''' refresh of Nehalem, which were followed by the mobile P6xxx
+based on [[Arrandale (microprocessor)|Arrandale]] a few months later.
+
+{{Main|List of Intel Pentium microprocessors}}
+{| class=wikitable
+! Core !! Process !! Clock Speeds !! [[CPU cache|L2 Cache]]  !! L3 Cache !! I/O Bus !! Socket !! Release date
+|-
+| [[Clarkdale (microprocessor)|Clarkdale]] || 32&amp;nbsp;nm || 2.8 GHz || 512 KiB || 3 MiB || DMI || Socket 1156 || January 2010
+|-
+| [[Arrandale (microprocessor)|Arrandale]] || 32&amp;nbsp;nm || 1.2-1.86 GHz || 512 KiB || 3 MiB || DMI || Socket 988&lt;br&gt;BGA || Q2 2010
+|}
+
+{| class=&quot;wikitable&quot;
+! Codename !! Brand name !! L3 Cache !! Socket || TDP || Features
+|-
+! [[Clarkdale (microprocessor)|Clarkdale]]
+| Pentium [[List of Intel Pentium microprocessors#&quot;Clarkdale&quot; (32 nm)|G6xxx]] || 3 MB || [[LGA 1156]] || 73 W || Integrated [[Graphics processing unit|GPU]]
+|-
+! rowspan=2|[[Arrandale (microprocessor)|Arrandale]]
+| Pentium [[List of Intel Pentium microprocessors#&quot;Arrandale&quot; (32 nm)|P6xxx]] || rowspan=2|3 MB || [[LGA 1156]] || 35 W || rowspan=2|Integrated [[Graphics processing unit|GPU]]
+|-
+| Pentium [[List of Intel Pentium microprocessors#&quot;Arrandale&quot; (32 nm)|U5xxx]] ||                   BGA          || 18 W
+|}
+
+On January 7, 2010, Intel launched a new Pentium model using the Clarkdale chip in parallel with other desktop and mobile CPUs based on their new Westmere microarchitecture. The first model in this series is the Pentium G6950. The Clarkdale chip is also used in the Core i3-5xx and Core i5-6xx series and features a 32&amp;nbsp;nm process (as it is based on the Westmere microarchitecture), integrated memory controller and 45&amp;nbsp;nm graphics controller and a third-level cache. In the Pentium series, some features of Clarkdale are disabled. Compared to Core i3, it lacks [[Hyper-Threading]] and the graphics controller in the Pentium runs at 533&amp;nbsp;MHz, while in the Core i3 i3-5xx series they run at 733&amp;nbsp;MHz. Dual Video Decode that enables Blu-ray picture-in picture hardware acceleration is disabled as well as Deep Color and [[xvYCC]] support{{Citation needed|date=July 2010}}. The memory controller in the Pentium supports DDR3-1066 max and the Core i3 i3-5xx series supports DDR3-1333 max. The L3 cache is also 1 MB less than in the Core i3-5xx series.
+
+=== [[Sandy Bridge]] microarchitecture based ===
+The Sandy Bridge microarchitecture was released in the Pentium line on May 22nd, 2011.
+
+*&lt;sup&gt;a&lt;/sup&gt;All models share the following details: 2 cores, 2 logical processors (4 on Pentium 3xx with [[Hyper-threading]]),	CPUID signature 206A7, family 6 (06h), model 42 (02Ah), stepping 7 (07h)
+*&lt;sup&gt;b&lt;/sup&gt;[[Translation lookaside buffer|TLB]] / [[Cache]] 64-byte Prefetching; Data TLB0 2-MB or 4-MB pages, 4-way associative, 32 entries; Data TLB 4-KB Pages, 4-way set associative, 64 entries; Instruction TLB 4-KB Pages, 4-way set associative, 128 entries, L2 TLB 1-MB, 4-way set associative, 64-byte line size; Shared 2nd-level TLB 4 KB pages, 4-way set associative, 512 entries.
+*&lt;sup&gt;c&lt;/sup&gt;All models feature: On-chip [[Floating Point]] Unit, Enhanced Intel [[SpeedStep]] Technology (EIST), [[X86-64#Intel 64|Intel 64]], XD bit (an [[NX bit]] implementation), [[x86 virtualization#Intel virtualization .28VT-x.29|Intel VT-x]], Smart Cache.''
+*&lt;sup&gt;d&lt;/sup&gt;All models support: ''[[MMX (instruction set)|MMX]], [[Streaming SIMD Extensions|SSE]], [[SSE2]], [[SSE3]], [[SSSE3]], [[SSE4.1]], [[SSE4.2]]
+*&lt;sup&gt;e&lt;/sup&gt;[[HD Graphics]] (Sandy Bridge) contain 6 [[Execution unit|EUs]] as well as HD Graphics 2000, but does not support the following technologies: [[Intel Quick Sync Video]], InTru 3D, Clear Video HD, Wireless Display, and it doesn't support 3D Video or 3D graphics acceleration. 
+
+{| class=&quot;wikitable&quot;
+! Codename !! Brand name&lt;sup&gt;a&lt;/sup&gt; !! L3 Cache&lt;sup&gt;b&lt;/sup&gt; !! Socket !! TDP !! Features&lt;sup&gt;c&lt;/sup&gt;,&lt;sup&gt;d&lt;/sup&gt;
+|-
+! rowspan=5|[[Sandy Bridge]]
+| Pentium 3xx || 3 MB || [[LGA 1155]] || 15 W || [[Hyper-threading]], [[ECC]]
+|-
+| Pentium B9xx || 2 MB || rPGA988B || 35 W || Integrated [[GPU]]
+|-
+| Pentium [[List_of_Intel_Pentium_microprocessors#Sandy_Bridge_based_Pentiums |G6xxT]]&lt;ref&gt;{{cite web|title=CPU ID: SR05T Intel Pentium Dual-Core G620T|url=http://www.cpu-world.com/sspec/SR/SR05T.html|publisher=cpu-world.com|accessdate=5 August 2011}}&lt;/ref&gt; ||  rowspan=2|3 MB 8-way set associative Line size 64 bytes ||  rowspan=3|[[LGA 1155]] ||  35 W ||  rowspan=3 |Integrated [[Graphics processing unit|GPU]]&lt;sup&gt;e&lt;/sup&gt;
+|-
+| Pentium [[List_of_Intel_Pentium_microprocessors#Sandy_Bridge_based_Pentiums |G6xx]]&lt;ref&gt;{{cite web|title=SR05R Intel Pentium Dual-Core G620|url=http://www.cpu-world.com/sspec/SR/SR05R.html|publisher=cpu-world.com|accessdate=6 August 2011}}&lt;/ref&gt;  ||  rowspan=2|65 W
+|-
+| Pentium [[List_of_Intel_Pentium_microprocessors#Sandy_Bridge_based_Pentiums|G8xx]]&lt;ref&gt;{{cite web|title=SR05P Intel Pentium Dual-Core G840|url=http://www.cpu-world.com/sspec/SR/SR05P.html|publisher=cpu-world.com|accessdate=6 August 2011}}&lt;/ref&gt; &lt;ref&gt;{{cite web|title=SR05Q (Intel Pentium Dual-Core G850)|url=http://www.cpu-world.com/sspec/SR/SR05Q.html|publisher=cpu-world.com|accessdate=6 August 2011}}&lt;/ref&gt;  ||| 3 MB 12-way set associative Line size 64 bytes 
+|}
+
+== Pentium compatible Intel processors ==
+Due to its prominence, the term &quot;[[Pentium compatible processor|Pentium compatible]]&quot; is often used to describe any x86 processor that supports the [[IA-32]] instruction set and architecture. Even though they do not use the Pentium name, Intel also manufacturers other processors based on the Pentium series for other markets. Most of these processors share the core design with one of the Pentium processor lines, usually differing in the amount of [[CPU cache]], power efficiency or other features. The notable exception is the Atom line, which is an independent design.
+
+*[[Celeron]], a low-end version
+*[[Intel Core|Core]], the mainstream version including Core 2 and Core i7, now placed above Pentium
+*[[Xeon]], a high-end version used in servers and workstations
+*[[Intel A100|A100]] (discontinued), an ultra-mobile version of Pentium M
+*[[EP80579]], A system-on-a-chip based on Pentium M
+*[[Intel Atom|Atom]], current ultra-mobile processors
+
+== See also ==
+*[[List of Intel Pentium microprocessors]]
+* [[List of Intel Pentium Dual-Core microprocessors]]
+*[[Pentium Bug]], a well-publicized flaw in the original processor
+*[[Performance Rating]], informally referred to as ''Pentium Rating''
+*&quot;[[It's All About the Pentiums]]&quot;, a song by &quot;Weird Al&quot; Yankovic
+
+==References==
+
+{{Reflist}}
+
+{{Intel processors}}
+
+{{DEFAULTSORT:Pentium (Brand)}}
+[[Category:Intel x86 microprocessors]]
+[[Category:Brands]]
+
+[[fr:Pentium (marque)]]
+[[th:à¹à¸à¸à¹à¸à¸µà¸¢à¸¡]]
+[[zh:å¥é¨°]]</rev></revisions></page></pages></query></api>

@@ -1,0 +1,493 @@
+<?xml version="1.0"?><api><query><redirects><r from="Comparison of free disk cloning software" to="Comparison of disk cloning software" /></redirects><pages><page pageid="17473433" ns="0" title="Comparison of disk cloning software"><revisions><rev xml:space="preserve">{{mergefrom|List of disk imaging software|List of disk cloning software|discuss=Talk:Comparison of disk cloning software#Merger proposal|date=February 2010}}
+
+This is a comparison of [[disk cloning]] software.  See also: [[List of disk cloning software]]
+
+==Table==
+
+{| class=&quot;wikitable sortable&quot;
+|-
+! rowspan=2 | Name
+! rowspan=2 | Interface
+! colspan=4 class=&quot;unsortable&quot;| Usage
+! rowspan=2 | Based on
+! rowspan=2 | Raw copying&lt;ref name=&quot;RawSmart&quot;&gt;Raw copying means a possibility to perform sector-by-sector copying of a whole partition, while smart copying means here a possibility to distinguish which portions of the partition really contain data and to copy these only.&lt;/ref&gt;
+! rowspan=2 | Mountable and/OR explorable Backups
+! colspan=4 class=&quot;unsortable&quot;| Smart copying&lt;ref name=&quot;RawSmart&quot;/&gt;
+! colspan=2 class=&quot;unsortable&quot;| Architecture
+! rowspan=2 colspan=2 | License
+|-
+! | Provides Live USB (approx. size)
+! | Provides Live CD (approx. size)
+! | Boots from floppies (count)
+! |Live copying&lt;ref name=&quot;LiveCopy&quot;&gt;Live copying means that a drive or volume can be copied/imaged while it is in use (commonly using [[Shadow Copy]] techniques), avoiding the need for booting into a separate [[operating system]] or [[Live CD]].&lt;/ref&gt;
+! |[[Ext2]]/[[Ext3]]
+! |[[FAT32]]
+! |[[NTFS]]
+! |[[HFS+]]
+! |Without server
+! |Client/server
+|-
+| [[Clonezilla|Clonezilla Live]]
+| [[Text user interface|text-mode]]
+| {{yes}} (108.2 MB)
+| {{yes}} (109.1 MB)
+| {{no}}
+| {{no}}
+| [[partimage]], [[ntfsclone]], [[dd (Unix)|dd]], partclone[http://partclone.sf.net]
+| {{yes}}
+| {{no}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}} (Clonezilla server edition)
+| [[GNU General Public License|GPL]]
+|-
+| [http://www.feyrer.de/g4u/ g4u]
+| [[Command line interface|command-line]]
+| ?
+| {{yes}} (3 MB)
+| {{yes}} (2 floppies)
+| {{no}}
+| NetBSD
+| {{yes}}
+| ?
+| {{no}}
+| {{no}}
+| {{no}}
+| {{yes}}
+| requires FTP server
+| {{yes}}
+| [[BSD license|BSD]]
+|-
+| [[PING (Partimage Is Not Ghost)]]
+| [[Text user interface|text-mode]]
+| ?
+| {{yes}} (31 MB)
+| {{no}}
+| {{no}}
+| [[partimage]]?, [[zsplit]]
+| {{yes}}
+| ?
+| {{yes}}
+| {{yes}}
+| {{partial}}&lt;ref name=&quot;ExperimentalNTFS&quot;/&gt;
+| ?
+| {{yes}}
+| {{yes}}
+| [[GNU General Public License|GPL]]
+|-
+| [http://sourceforge.net/projects/g4l G4L]
+| [[Text user interface|text-mode]]
+| ?
+| {{yes}} (80 MB)
+| {{no}}
+| ?
+| g4u&lt;ref&gt;[http://www.feyrer.de/g4u/g4l.html g4u/g4l Copyright Infringement Analyzis, by g4u author]&lt;/ref&gt;&lt;ref&gt;[ftp://amd64gcc.dyndns.org/g4l0.38alpha/g4l0.37-documentation7.pdf g4l documentation, PDF, see page 102 &quot;Disclaim file that discusses issues between early version of G4L and G4U.&quot;]&lt;/ref&gt;, [[partimage]], [[ntfsclone]]
+| {{yes}}
+| ?
+| {{no}}
+| {{no}}
+| {{no}}
+| ?
+| {{no}}
+| {{no}}
+| [[GNU General Public License|GPL]]
+|-
+| [[partimage]]
+| [[Text user interface|text-mode]]
+| ?
+| {{partial}} &lt;ref&gt;There is no Live CD dedicated specially to [[partimage]]. However [[partimage]] is present on several rescue CD's together with other software.&lt;/ref&gt;
+| {{no}}
+| ?
+|
+| {{no}}
+| ?
+| {{yes}}
+| {{yes}}
+| {{partial}} &lt;ref name=&quot;ExperimentalNTFS&quot;&gt;At the current time support of NTFS in [[partimage]] is experimental [http://www.partimage.org/Supported-Filesystems].&lt;/ref&gt;
+| ?
+| {{yes}}
+| {{yes}}
+| [[GNU General Public License|GPL]]
+|- 
+| [[ntfsclone]]
+| [[Command line interface|command-line]]
+| ?
+| {{partial}} &lt;ref&gt;There is no Live CD dedicated specially to [[ntfsclone]]. However [[ntfsclone]] is present on several rescue CD's together with other software.&lt;/ref&gt;
+| {{no}}
+| ?
+|
+| {{no}}
+| ?
+| {{no}}
+| {{no}}
+| {{yes}}
+| ?
+| {{yes}}
+| {{no}}
+| [[GNU General Public License|GPL]]
+|-
+| [[SelfImage]]
+| [[Graphical user interface|GUI]]
+| {{no}}
+| {{no}}
+| {{no}}
+| {{yes}}
+| ?
+| {{yes}}
+| ?
+| {{yes}}
+| ? &lt;ref&gt;To spite the manual seems to only do raw.&lt;/ref&gt;
+| {{yes}}
+| ?
+| {{yes}}
+| {{no}}
+| [[GNU General Public License|GPL]]
+|-
+| [http://www.osforensics.com/tools/create-disk-images.html OSFClone]
+| [[Command line interface|command-line]]
+| {{yes}} (26 MB)
+| {{yes}} (27 MB)
+| {{no}}
+| {{no}}
+| dc3dd 
+| {{yes}}
+| ?
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{yes}}
+| {{no}}
+| [[GNU General Public License|GPL]]
+|-
+| [[Mondo Rescue]]
+| [[Text user interface|text-mode]]
+| ?
+| {{no}}
+| {{no}}
+| {{yes}}
+| [[partimage]]?
+| {{yes}}?
+| ?
+| {{yes}}
+| {{yes}}
+| ?
+| ?
+| {{yes}}
+| ?
+| [[GNU General Public License|GPL]]
+|-
+| [http://odin-win.sourceforge.net/ ODIN]&lt;ref name=&quot;ODIN&quot;&gt;ODIN is in early beta stage and not recommended for primary use. Currently only supports copying a partition to an identically sized partition.&lt;/ref&gt;
+| GUI
+| ?
+| {{yes}} WinPE
+| {{no}}
+| {{yes}}
+| 
+| {{yes}}
+| ?
+| {{no}}
+| {{yes}}
+| {{yes}}
+| {{no}}
+| {{yes}}
+| {{no}}
+| [[GNU General Public License|GPL]]
+|-
+| [[Linbox Rescue Server]] (GPL edition)
+| [[Graphical user interface|GUI]]
+| ?
+| {{yes}} (187 MB)
+| {{no}}
+| ?
+| ?
+| {{no}}&lt;ref name=&quot;LRS-GPL&quot;/&gt;
+| ?
+| {{yes}}
+| {{no}}&lt;ref name=&quot;LRS-GPL&quot;&gt;LRS has proprietary and GPL editions; LRS GPL edition cannot handle [[File Allocation Table|FAT]] and [[NTFS]] [http://lrs.linbox.org/wiki/FAQ][http://www.linbox.com/ucome.rvt/any/en/Produits/LRS/llrs/comparaison.tmpl]&lt;/ref&gt;
+| {{no}}&lt;ref name=&quot;LRS-GPL&quot;/&gt;
+| ?
+| {{no}}
+| {{yes}}
+| [[GNU General Public License|GPL]]
+|-
+| [http://sourceforge.net/projects/freeghost/ FOG]
+| [[Graphical user interface|GUI]]
+| ?
+| {{no}}
+| {{no}}
+| ?
+| [[partimage]]
+| {{yes}}
+| ?
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| ?
+| {{no}}
+| {{yes}}
+| [[GNU General Public License|GPL]]
+|-
+| [[zsplit|zsplit/unzsplit]]
+| command-line
+| ?
+| {{Partial}} &lt;ref&gt;zsplit/unzsplit are available on DeviceImage-Live CD, however DeviceImage-Live CD is not available for free download [http://www.device-image.de/livecd.htm].&lt;/ref&gt;
+| {{no}}
+| ?
+|
+| {{yes}}
+| ?
+| {{no}}
+| {{no}}
+| {{no}}
+| ?
+| {{yes}}
+| {{no}}
+| [[GNU General Public License|GPL]]
+|-
+| [http://www.runtime.org/driveimage-xml.htm DriveImage XML]
+| [[Graphical user interface|GUI]]
+| ?
+| {{yes|Yes, using WinPE}}
+| ?
+| {{yes}}
+|
+| {{yes}}
+| ?
+| {{no}}
+| {{yes}}
+| {{yes}}
+| {{no}}
+| {{yes}}
+| {{yes|Can access networked drives}}
+| Free for private use
+|-
+| [http://damien.guibouret.free.fr/ Partition Saving]
+| [[Text user interface|text-mode]]
+| ?
+| {{yes}} (4 MB)
+| {{yes}} (1 floppies)
+| ?
+|
+| {{yes}}
+| ?
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{no}}
+| {{yes}}
+| {{no}}
+| [[Freeware]]
+|-
+| [[Acronis True Image]]
+| [[GUI]]
+| {{yes}} (64 MB)
+| {{yes}}
+| {{no}}
+| {{yes}}
+|
+| {{yes}}
+| ?
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{no}}
+| {{yes}}
+| {{yes}}
+| [[Proprietary software|Proprietary]]
+|-
+| [[Ghost (software)|Ghost]] 11.5
+| GUI and Commandline
+| ?
+| {{yes}} WinPE or Linux
+| {{yes}} (3 floppies)
+| {{yes}}
+| 
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{no}}
+| {{yes}}
+| {{yes}}
+| [[Proprietary software|Proprietary]]
+|-
+| [[R-Drive Image]]
+| [[GUI]] and command-line
+| {{yes}}
+| {{yes}}
+| {{yes}} (2 floppies)
+| {{yes}}
+|
+| {{yes}}
+| ?
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{no}}
+| [[Proprietary software|Proprietary]]
+|-
+| [[Paragon Backup &amp; Recovery]]
+| [[GUI]]
+| {{yes}}
+| {{yes}}
+| ?
+| {{yes}}
+|
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| Has some network functionality
+| [[Proprietary software|Proprietary]] with a free version for home use
+|-
+| [http://www.cloudnucleus.com/products.htm StorCube PC/Server Backup &amp; Recovery]
+| [[GUI]] and command-line
+| {{No}}
+| {{yes}}
+| {{No}}
+| {{Yes}}
+|
+| {{No}}
+| ?
+| {{No}}
+| {{yes}}
+| {{yes}}
+| {{No}}
+| {{No}}
+| Has some network functionality
+| [[Proprietary software|Proprietary]] with a free version for Migration(StorCube Virtual Converter)
+|-
+| [[Macrium Reflect]]
+| [[GUI]]
+| ?
+| {{yes}} (6 MB)
+| ?
+| {{no}} 
+| 
+| {{yes}}
+| ?
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| ?
+| ?
+| ?
+| [[Proprietary software|Proprietary]] (with a slimmed down free version for personal use)
+|-
+| [[Kleo Bare Metal Backup|Kleo Bare Metal Backup for Servers]]
+| [[GUI]]
+| {{Yes}} (570 MB)
+| {{yes}} (570 MB)
+| {{no}}
+| {{no}} 
+| [[partimage]]
+| {{yes}}
+| ?
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| [[Freeware]]
+|-
+| [[HDClone 3.9]]
+| [[GUI]]
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{no}} 
+| 
+| {{no}}
+| ?
+| {{yes 2/3/4}}
+| {{yes}}
+| {{yes}}
+| {{no}}
+| {{?}}
+| {{?}}
+| [[Freeware with advanced paid versions also]]
+|-
+| [http://wiki.systemimager.org/ SystemImager]
+| [[text-mode]]
+| ?
+| ?
+| ?
+| ?
+| ?
+| ?
+| ?
+| ?
+| ?
+| ?
+| ?
+| {{no}}
+| {{yes}}
+| [[GNU General Public License|GPL v2]]
+|-
+| [http://www.smartdeploy.com/ SmartDeploy]
+| [[GUI]]
+| {{no}}
+| {{yes}}
+| {{no}}
+| {{yes}} 
+| 
+| {{no}}
+| ?
+| {{no}}
+| {{yes}}
+| {{yes}}
+| {{no}}
+| {{yes}}
+| {{yes}}
+| [[Proprietary software|Proprietary]]
+|}
+
+
+
+=== Notes ===
+{{Reflist}}
+
+=== Creating a Live USB ===
+Any application that can be booted from a CD or floppy can also be booted from a USB drive if the system's bios supports booting from USB. To create a bootable USB drive you will need to install a boot-loader such as [[grub4dos]] (freeware) which is related to [[GNU Grub]].
+
+== Other disk cloning applications ==
+&lt;!-- Copied from List of disk cloning software, please keep in Alphabetical Order --&gt;
+* [[Altiris]] - Deployment Solutions
+* [[Apple Software Restore]] and [[Disk Utility]] (included with [[Mac OS X]])
+* [[dd (Unix)]]
+* [[Rollback Rx]]
+* [[Scriptlogic]] - Desktop Authority Image Center
+* [[Trinity Rescue Kit]]
+
+== Recovery [[Live CD]]s &amp; [[Live USB]]s that include disk-cloning utilities ==
+* [http://www.PartedMagic.com PartedMagic] Includes [[PartImage]] and [http://sourceforge.net/projects/g4l/ G4L] (G4L includes [[ntfsclone]]).
+* [[SystemRescueCD]]. Includes [[PartImage]] and [[ntfsclone]] and [[fsarchiver]].
+* [[Trinity Rescue Kit]]. Includes [[PartImage]] and [[ntfsclone]].
+* [[Recovery Is Possible]]. Includes [[PartImage]] and [[ntfsclone]].
+* [http://www.ultimatebootcd.com/ Ultimate Boot-CD] includes several cloning programs.
+* [http://www.clonezilla.org/clonezilla-live/ Clonezilla Live]
+* [http://sourceforge.net/projects/g4l/ G4L - Disk Imaging] Includes [[ntfsclone]] and [[fsarchiver]] and [[testdisk]]
+
+&lt;!--==References==
+* [http://www.clonezilla.org/ Clonezilla home page] (includes supported filesystems and other info)
+* [http://www.feyrer.de/g4u/ g4u manual]
+* [http://ping.windowsdream.com/ping/howto-2.01.html PING HowTo] and [http://ping.windowsdream.com/ping/doc-2.01/annex.html PING FAQ]
+* [http://downloads.sourceforge.net/g4l/g4lmod0.16.pdf Some PDF about g4l]
+* [http://lrs.linbox.org/wiki/WikiStartEn Linbox Rescue Server wiki] and [http://www.linbox.com/ucome.rvt/any/en/Produits/LRS/llrs/comparaison.tmpl Comparison between the GPL and proprietary edition of the LRS]
+* [http://www.partimage.org/Main_Page Partimage home page] and [http://www.partimage.org/Supported-Filesystems Partimage supported filesystems]
+* [http://www.linux-ntfs.org/doku.php?id=ntfsclone About ntfsclone] and [http://man.linux-ntfs.org/ntfsclone.8.html ntfsclone(8) man page]
+* [http://freeghost.no-ip.org/index.php?option=com_content&amp;task=view&amp;id=25&amp;Itemid=36 FOG Overview] and [http://freeghost.no-ip.org/wiki/index.php/FOGUserGuide FOG user guide] and [http://freeghost.no-ip.org/index.php?option=com_content&amp;task=view&amp;id=94&amp;Itemid=1 Release note] (includes supported filesystems)--&gt;
+
+[[Category:Lists of software]]
+[[Category:Disk cloning]]</rev></revisions></page></pages></query></api>

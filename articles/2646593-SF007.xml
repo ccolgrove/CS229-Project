@@ -1,0 +1,89 @@
+<?xml version="1.0"?><api><query><pages><page pageid="2646593" ns="0" title="NDISwrapper"><revisions><rev xml:space="preserve">{{Infobox software
+| name                   = NDISwrapper
+| screenshot             = [[Image:Ndiswrapper.png|290px]]
+| caption                = ndiswrapper [[command line]]
+| developer              = Jan Kiszka, Giridhar Pemmasani, Pontus Fuchs
+| latest release version = 1.56
+| latest release date    = {{release date|2010|02|11}}
+| operating system       = [[Linux]] on [[IA-32]] and [[x86-64]] architectures only
+| genre                  = [[driver wrapper]]
+| license                = [[GNU GPL]]
+| website                = [http://ndiswrapper.sourceforge.net/ The NDISwrapper wiki], [http://sourceforge.net/projects/ndiswrapper/ NDISwrapper Download Area]
+}}
+'''NDISwrapper''', is a [[free software]] [[driver wrapper]] that enables the use of [[Windows XP]] drivers for network devices ([[PCI card]]s, [[USB modem]]s, and [[router (computing)|router]]s), on Linux only operating systems. NDISwrapper works by implementing the Windows [[kernel (computer science)|kernel]] and [[Network Driver Interface Specification|NDIS]] [[API]]s, and dynamically linking the Windows drivers to this implementation.  It therefore works only on systems based on the [[instruction set architecture|architecture]]s supported by Windows, namely [[IA-32]] or [[x86-64]].
+
+Native NDIS drivers for Linux are not available for some network adapters, as manufacturers supply neither drivers nor the information required to write them. NDISwrapper allows to use Windows drivers available for virtually all adapters under Linux.
+
+== Use ==
+NDISwrapper requires at least the &quot;.inf&quot; and the &quot;.sys&quot; files invariably supplied as parts of the Windows driver.  For example, if the driver is called &quot;mydriver&quot;, with the files mydriver.inf and mydriver.sys and vendorid:productid 0000:0000, then NDISwrapper installs the driver to /etc/ndiswrapper/mydriver/.  This directory contains three files:
+* 0000:0000.conf, which contains information extracted from the inf file
+* mydriver.inf (the original inf file)
+* mydriver.sys (the driver file)
+
+== Graphical frontends ==
+[[Image:Ndisgtk.png|thumb|300px|Ndisgtk graphical interface]]
+There are graphical frontends to NDISwrapper, such as Ndisgtk and NdisConfig, which allow NDISwrapper to be installed using a [[graphical user interface]] rather than console commands.
+
+== Architecture ==
+NDISwrapper enables a Unix-like system to use Windows drivers of type NDIS and WIFI.
+It was useful at a time where there were no Linux WIFI drivers for common WIFI cards.
+It works only on X86 computers because it uses Windows drivers which are only developed for X86 at the moment.
+It is composed of:
+* An NDIS driver, which is a kind of overlay for Ethernet drivers.
+* A WIFI manager, to control the radio and security part of the WIFI card.
+* A USB manager and a PnP manager to make it possible to use WIFI card embedded in USB sticks. The USB manager is composed of two parts, first a tiny USBD implementation (USB stack) then a simple WDM USB driver that is itself composed of two parts: The front part will receive calls from the NDISWrapper USB stack (in fact from calls coming from the original Windows driver that were normally intended to go to the Windows USB stack) and the rear part is using Linux USB stack.
+* A minimal Ntoskrnl simulating the DDK for:
+** managing calls from the Windows driver.
+** managing IRP to the Windows driver (WDM only at the moment)
+** managing filter drivers in a simplistic way
+** loading/unloading Windows drivers
+* A wrapper converting Linux calls to Windows and the other way round, also managing results and error codes
+
+== How it works ==
+When a Linux application calls a device which is registered on Linux as an NDISwrapper device, the NDISwrapper determines which Windows driver is targeted. It then converts the Linux query into Windows parlance, it calls the Windows driver, waits for the result and translates it into Linux parlance then sends the result back to the Linux application.
+It's possible from a Linux driver (NDISwrapper is a Linux driver) to call a Windows driver because they both execute in the same address space (the same as the Linux kernel).
+If the Windows driver is composed of layered drivers (for example one for Ethernet above one for USB) it's the upper layer driver which is called, and this upper layer will create new calls (IRP in Windows parlance) by calling the &quot;mini ntoskrnl&quot;. So the &quot;mini ntoskrnl&quot; must know there are other drivers, it must have registered them in its internal database a priori by reading the Windows &quot;.inf&quot; files.
+
+== Similar programs ==
+
+[http://www.linuxant.com/driverloader/ DriverLoader] is a commercial tool produced by Linuxant for Linux which seems to provide the same functionality as NDISwrapper.
+
+Independently of but roughly simultaneously with the NDISwrapper project, [[Bill Paul (computer science)|Bill Paul]] of [[Wind River Systems]] developed a similar system, known as '''Project Evil''' or '''The NDISulator''', for [[FreeBSD]].  It has since been ported to [[DragonFly BSD]] and [[NetBSD]].
+
+== Limitations ==
+* Since NDISWrapper relies on Windows drivers it only supports i386 and x86_64 architectures&lt;ref&gt;{{cite web|url=http://sourceforge.net/apps/mediawiki/ndiswrapper/index.php?title=FAQ#Does_ndiswrapper_work_on_PowerPC_architecture.3F |title=Sourceforge.net: FAQ - ndiswrapper|publisher=ndiswrapper.sourceforge.net|date=2010-01-20|accessdate=2011-08-05}}&lt;/ref&gt;.
+
+* NDISwrapper does not implement [[Network Driver Interface Specification | NDIS ]] 6 (Windows Vista version) yet, limiting drivers to Windows XP&lt;ref&gt;{{cite web|url=http://ndiswrapper.sourceforge.net/joomla/index.php?/component/option,com_openwiki/Itemid,33/id,faq/ |title=SourceForge.net: ndiswrapper |publisher=Ndiswrapper.sourceforge.net |date=2009-07-12 |accessdate=2009-09-21}}&lt;/ref&gt;. While it is not a major problem for the x86 architecture because of the popularity of Windows XP x86-32, many vendors choose to make 64-bit driver versions only for Windows Vista â which means that Linux systems using the x86-64 architecture are unable to use such networking devices (either NDIS5 32 bits because they are 64bits systems or NDIS6 64bit drivers because they can't use NDIS6). It's possible to use Windows XP 64 bit drivers which implement NDIS5&lt;ref&gt;http://sourceforge.net/projects/ndiswrapper/forums/forum/323168/topic/3755985&lt;/ref&gt;, however, there are fewer available drivers for xp64 (NDIS5/64 bit) than for XP32(NDIS5/32 bit). An implementation of NDIS 6 is underway, under the name of ndis6wrapper, but it is not close to being functional.&lt;ref&gt;{{cite web|url=https://bugs.launchpad.net/ubuntu/+source/ndiswrapper/+bug/105013 |title=Ubuntu Bug #105013|accessdate=2011-08-28}}&lt;/ref&gt;
+
+== See also ==
+* [[OpenWrt]]
+* [[Linux Unified Kernel]]
+* [[ReactOS]]
+
+== References ==
+
+{{Reflist}}
+
+== External links ==
+* [http://ndiswrapper.sourceforge.net/ The NDISwrapper wiki]
+* [http://sourceforge.net/projects/ndiswrapper/ NDISwrapper Download Area]
+*[http://linuxtutorialvideos.blogspot.com/2009/01/ndiswrapper.html NDISwrapper Installation] â An easy to follow video showing how to install NDISwrapper and get started with it.
+* [http://jak-linux.org/projects/ndisgtk/ Ndisgtk]
+* [http://code.google.com/p/ndisconfig/ NdisConfig]
+* [http://lists.freebsd.org/pipermail/freebsd-current/2004-January/019486.html Project Evil: The Evil Continues], 2004-01-24, Bill Paul on a [[FreeBSD]] mailing list
+* [http://lists.freebsd.org/pipermail/freebsd-hardware/2005-April/002464.html Too Evil, Too Furious], 2005-04-25, Bill Paul on a [[FreeBSD]] mailing list
+* [http://netbsd-soc.sourceforge.net/projects/ndis/ NetBSD NDIS Driver Port]
+
+[[Category:Device drivers]]
+[[Category:Compatibility layers]]
+
+[[ca:NdisWrapper]]
+[[de:NDISwrapper]]
+[[es:NDISwrapper]]
+[[fr:NdisWrapper]]
+[[it:NDISwrapper]]
+[[hu:Ndiswrapper]]
+[[ja:NdisWrapper]]
+[[pl:Ndiswrapper]]
+[[pt:NDISwrapper]]
+[[ru:NDISwrapper]]</rev></revisions></page></pages></query></api>

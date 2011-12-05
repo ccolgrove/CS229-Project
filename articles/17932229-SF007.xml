@@ -1,0 +1,754 @@
+<?xml version="1.0"?><api><query><redirects><r from="HDD Thermometer" to="Hard disk drive" /></redirects><pages><page pageid="13777" ns="0" title="Hard disk drive"><revisions><rev xml:space="preserve">{{Redirect|Hard drive}}
+{{Technical|date=October 2011}}
+{{Use dmy dates|date=September 2011}}
+{{Infobox computer hardware generic
+| image       = Hard disk platters and head.jpg
+| caption     = Mechanical interior of a modern hard disk drive
+| invent-date = 24 December 1954 &lt;ref&gt;This is the original filing date of the application which led to US Patent 3,503,060, generally accepted as the definitive disk drive patent; see, Kean, David W., &quot;IBM San Jose, A quarter century of innovation&quot;, 1977.&lt;/ref&gt; &lt;!--The public announcement date was 13 Sep not 4 Sep. see http://chmhdd.wetpaint.com/page/IBM+350+RAMAC --&gt;
+| invent-name = [[IBM]] team led by [[Reynold B. Johnson|Rey Johnson]]
+}}
+[[File:HardDisk1.ogg|thumb|Video of exposed hard disk drive (HDD)]]
+
+A '''hard disk drive''' ('''HDD'''; also '''hard drive''' or '''hard disk''')&lt;ref&gt;Further terms used to describe hard disk drives include ''disk drive'', ''disk file'', ''[[direct access storage device]]'' (DASD), ''fixed disk'', ''CKD disk'', and ''Winchester Disk Drive'' (after the [[Early IBM disk storage|IBM 3340]]). The term ''DASD'' includes other devices besides disks.&lt;/ref&gt; is a [[non-volatile storage|non-volatile]], [[random access]] digital [[Magnetic storage|magnetic]] [[data storage device]]. It features rotating [[hard disk platters|rigid platters]] on a motor-driven [[Hard disk drive#Spindle|spindle]] within a protective enclosure. Data is [[magnetically]] read from and written to the platter by [[Disk read-and-write head|read/write heads]] that float on a film of air above the platters. Introduced by [[IBM]] in 1956, hard disk drives have decreased in cost and physical size over the years while dramatically increasing in capacity.
+
+Hard disk drives have been the dominant device for [[computer data storage#Secondary storage|secondary storage]] of data in [[History of general purpose CPUs|general purpose computers]] since the early 1960s.&lt;ref name=&quot;Mee&quot;&gt;Magnetic Storage Handbook 2nd Ed., Section 2.1.1, Disk File Technology, Mee and Daniel, (c)1990,&lt;/ref&gt; They have maintained this position because advances in their recording density have kept pace with the requirements for secondary storage.&lt;ref name=&quot;Mee&quot; /&gt; Today's HDDs operate on high-speed serial interfaces; i.e., [[serial ATA]] (SATA) or [[serial attached SCSI]] (SAS).
+
+==History==
+{{Main|History of hard disk drives}}
+
+Hard disk drives were introduced in 1956 as data storage for an IBM real time transaction processing computer&lt;ref&gt;{{cite web|url=http://www-03.ibm.com/ibm/history/exhibits/storage/storage_350.html|title=IBM&amp;nbsp;350 disk storage unit|publisher=[[IBM]]|accessdate=24 June 2010}}&lt;/ref&gt; and were developed for use with general purpose [[mainframe computer|mainframe]] and [[minicomputer|mini]] computers.
+
+As the 1980s began, hard disk drives were a rare and very expensive additional feature on personal computers (PCs); however by the late '80s, hard disk drives were standard on all but the cheapest PC.
+
+Most hard disk drives in the early 1980s were sold to PC end users as an add on subsystem, not under the drive manufacturer's name but by systems integrators such as the Corvus Disk System or the systems manufacturer such as the Apple ProFile. The IBM PC/XT in 1983 included an internal standard 10MB hard disk drive, and soon thereafter internal hard disk drives proliferated on personal computers.
+
+External hard disk drives remained popular for much longer on the Apple Macintosh. Every Mac made between 1986 and 1998 has a SCSI port on the back, making external expansion easy; also, &quot;toaster&quot; Compact Macs did not have easily accessible hard drive bays (or, in the case of the Mac Plus, any hard drive bay at all), so on those models, external SCSI disks were the only reasonable option.
+
+Driven by areal density doubling every two to four years since their invention, HDDs have changed in many ways. A few highlights include:
+&lt;!-- If you change any one bullet below, please make sure you change all related values.  For example, a change to the Capacity per HDD bullet should also change the Price bullet. See talk page for discussion of what belongs in this list ---&gt;
+*Capacity per HDD increasing from 3.75 megabytes to greater than 1 terabyte, a greater than 270-thousand-to-1 improvement.
+*Size of HDD decreasing from 87.9 cubic feet (a double wide refrigerator) to 0.002 cubic feet (2Â½-inch form factor, a pack of cards), a greater than 44-thousand-to-1 improvement.
+*Price decreasing from about $15,000 per megabyte to less than $0.0001 per megabyte ($100/1 terabyte), a greater than 150-million-to-1 improvement.&lt;ref&gt;{{cite web|last=Scotia|first=Nova|title=Cost of Hard Drive storage Space|url=http://ns1758.ca/winch/winchest.html|accessdate=12 March 2011}}&lt;/ref&gt;
+*Average access time decreasing from greater than 0.1 second to a few thousandths of a second, a greater than 40-to-1 improvement.
+*Market application expanding from general purpose computers to most computing applications including consumer applications.
+
+==Technology==
+===Magnetic recording===
+{{see also|Magnetic storage}}
+
+[[Image:Hard drive-en.svg|thumb|350px|Diagram labeling the major components of a computer hard disk drive]]
+
+HDDs record data by magnetizing [[ferromagnetism|ferromagnetic]] material directionally. Sequential changes in the direction of magnetization represent patterns of [[Bit|binary data bits]]. The data are read from the disk by detecting the transitions in magnetization and decoding the originally written data. Different encoding schemes, such as [[modified frequency modulation]], [[group code recording]], [[run-length limited]] encoding, and others are used.
+
+{{anchor|Spindle}}
+
+A typical HDD design consists of a '''spindle'''&lt;ref&gt;In storage engineering, the term spindle also refers to a single drive that can only handle one or a limited number of I/O operations making it a point of focus in scheduling operations to an array of drives.&lt;/ref&gt; that holds flat circular disks, also called [[hard disk platter|platters]], which hold the recorded data. The platters are made from a non-magnetic material, usually aluminum alloy, glass, or ceramic, and are coated with a shallow layer of magnetic material typically 10â20 [[nanometer|nm]] in depth, with an outer layer of carbon for protection.&lt;ref&gt;{{cite web |url=http://www.escotal.com/harddrive.html |title=Hard Drives |publisher=escotal.com |accessdate=2011-07-16}}&lt;/ref&gt;&lt;ref&gt;{{cite web |url=http://www.data-master.com/HeadCrash-explain-hard-disk-drive-fail_Q18.html |title=What is a &quot;head-crash&quot; &amp; how can it result in permanent loss of my hard drive data? |publisher=data-master.com |accessdate=2011-07-16}}&lt;/ref&gt;&lt;ref&gt;{{cite web |url=http://www.hard-drive-help.com/technology.html |title=Hard Drive Help |publisher=hardrivehelp.com |accessdate=2011-07-16}}&lt;/ref&gt; For reference, a standard piece of copy paper is {{convert|0.07|-|0.18|mm|nm}}.&lt;ref&gt;{{cite web |url=http://hypertextbook.com/facts/2001/JuliaSherlis.shtml |title=Thickness of a Piece of Paper |last=Elert |first=Glenn|publisher=HyperTextbook.com |accessdate=2011-07-09}}&lt;/ref&gt;
+
+[[Image:magneticMedia.png|thumb|350px|Magnetic cross section &amp; [[frequency modulation]] encoded binary data]]
+[[Image:Aufnahme einzelner Magnetisierungen gespeicherter Bits auf einem Festplatten-Platter..jpg|thumb|350px|Recording of single magnetisations of bits on an hdd-platter (recording made visible using CMOS-MagView)&lt;ref&gt;[http://www.matesy.de/index.php?option=com_content&amp;view=article&amp;id=84&amp;Itemid=80&amp;lang=en CMOS-MagView] is an instrument that visualizes magnetic field structures and strengths.&lt;/ref&gt;.]]
+[[File:Perpendicular Recording Diagram.svg|thumb|350px|Longitudinal recording (standard) &amp; perpendicular recording diagram]]
+
+The platters in contemporary HDDs are spun at speeds varying from 4200 rpm in energy-efficient portable devices, to 15,000 rpm for high performance servers.&lt;ref&gt;{{cite web |url=http://www.hitachigst.com/tech/techlib.nsf/techdocs/33c6a76df9338b0a86256d34007054c0/%24file/why7200mobilehdds.pdf |title=Why 7200 RPM Mobile Hard Disk Drives? |first=Walker C. |last=Blount |date=November 2007 |accessdate=2011-07-17}} The source states 3600 RPM drives were available in the past, but as of November 2007, 4200 was the lowest available from Hitachi.&lt;/ref&gt; The first hard drives spun at 1200 rpm &lt;ref&gt;See [[History of IBM magnetic disk drives]]&lt;/ref&gt;, and for many years, 3600 rpm was the norm.&lt;ref&gt;''www.pcguide.com/ref/hdd/op/'''spin'''_'''Speed'''.htm''&lt;/ref&gt; Information is written to, and read from a platter as it rotates past devices called [[disk read-and-write head|read-and-write head]]s that operate very close (tens of nanometers in new drives) over the magnetic surface. The read-and-write head is used to detect and modify the magnetization of the material immediately under it. In modern drives there is one head for each magnetic platter surface on the spindle, mounted on a common arm. An actuator arm (or access arm) moves the heads on an arc (roughly radially) across the platters as they spin, allowing each head to access almost the entire surface of the platter as it spins. The arm is moved using a [[voice coil]] actuator or in some older designs a [[stepper motor]].
+
+The magnetic surface of each platter is conceptually divided into many small sub-[[micrometer]]-sized magnetic regions referred to as [[magnetic domains]]. In older disk designs the regions were oriented horizontally and parallel to the disk surface, but beginning about 2005, the orientation was changed to [[perpendicular recording|perpendicular]] to allow for closer magnetic domain spacing. Due to the [[polycrystal]]line nature of the magnetic material each of these magnetic regions is composed of a few hundred magnetic [[crystallite|grains]]. Magnetic grains are typically 10&amp;nbsp;nm in size and each form a single [[Magnetic domains|magnetic domain]]. Each magnetic region in total forms a [[magnetic dipole]] which generates a [[magnetic field]].
+
+For reliable storage of data, the recording material needs to resist self-demagnetization, which occurs when the magnetic domains repel each other. Magnetic domains written too densely together to a weakly magnetizable material will degrade over time due to physical rotation of one or more domains to cancel out these forces. The domains rotate sideways to a halfway position that weakens the readability of the domain and relieves the magnetic stresses. Older hard disks used [[iron(III) oxide]] as the magnetic material, but current disks use a [[cobalt]]-based alloy.&lt;ref&gt;{{cite web|url=http://www.zdnetasia.com/a-divide-over-the-future-of-hard-drives-39393818.htm|title=A divide over the future of hard drives|author=Kanellos, Michael|publisher=CNETNews.com|date=24 August 2006 |accessdate=24 June 2010}}&lt;/ref&gt;
+
+A write head magnetizes a region by generating a strong local magnetic field. Early HDDs used an [[electromagnet]] both to magnetize the region and to then read its magnetic field by using [[electromagnetic induction]]. Later versions of inductive heads included metal in Gap (MIG) heads and [[thin film]] heads. As data density increased, read heads using [[magnetoresistance]] (MR) came into use; the electrical resistance of the head changed according to the strength of the magnetism from the platter. Later development made use of [[spintronics]]; in these heads, the magnetoresistive effect was much greater than in earlier types, and was dubbed [[giant magnetoresistance|&quot;giant&quot; magnetoresistance]] (GMR). In today's heads, the read and write elements are separate, but in close proximity, on the head portion of an actuator arm. The read element is typically [[giant magnetoresistance|magneto-resistive]] while the write element is typically thin-film inductive.&lt;ref&gt;{{cite web|url=https://www1.hitachigst.com/hdd/technolo/gmr/gmr.htm|title=IBM OEM MR Head &amp;#124; Technology &amp;#124; The era of giant magnetoresistive heads |publisher=Hitachigst.com|date=27 August 2001|accessdate=4 September 2010}}&lt;/ref&gt;
+
+The heads are kept from contacting the platter surface by the air that is extremely close to the platter; that air moves at or near the platter speed. The record and playback head are mounted on a block called a slider, and the surface next to the platter is shaped to keep it just barely out of contact. This forms a type of air bearing.
+
+In modern drives, the small size of the magnetic regions creates the danger that their magnetic state might be lost because of thermal effects. To counter this, the platters are coated with two parallel magnetic layers, separated by a 3-atom layer of the non-magnetic element [[ruthenium]], and the two layers are magnetized in opposite orientation, thus reinforcing each other.&lt;ref&gt;Brian Hayes, [http://www.americanscientist.org/template/AssetDetail/assetid/14750 Terabyte Territory], ''[[American Scientist]]'', Vol 90 No 3 (MayâJune 2002) p. 212&lt;/ref&gt; Another technology used to overcome thermal effects to allow greater recording densities is [[perpendicular recording]], first shipped in 2005,&lt;ref&gt;{{cite web|url=http://www.toshiba.co.jp/about/press/2004_12/pr1401.htm |title=Press Releases December&amp;nbsp;14, 2004 |publisher=Toshiba |accessdate=13 March 2009}}&lt;/ref&gt; and as of 2007 the technology was used in many HDDs.&lt;ref&gt;{{cite web|url=http://www.seagate.com/www/en-us/products/laptops/momentus/|title=Seagate Momentus 2Â½&quot; HDDs per webpage Jan 2008 |publisher=Seagate.com |date=24 October 2008 |accessdate=13 March 2009}}&lt;/ref&gt;&lt;ref&gt;{{cite web|url=http://www.seagate.com/www/en-us/products/desktops/barracuda_hard_drives/|title=Seagate Barracuda 3Â½&quot; HDDs per webpage January 2008 |publisher=Seagate.com |accessdate=13 March 2009}}&lt;/ref&gt;&lt;ref&gt;{{cite web|url=http://www.wdc.com/en/company/investor/q108remarks.asp|title=Western Digital Scorpio 2Â½&quot; and Greenpower 3Â½&quot; HDDs per quarterly conference, July 2007|publisher=Wdc.com|accessdate=13 March 2009}}&lt;/ref&gt;
+
+===Components===
+[[Image:Hard disk dismantled.jpg|thumb|left|350px|HDD with disks and motor hub removed exposing copper colored stator coils surrounding a bearing in the center of the spindle motor. Orange stripe along the side of the arm is thin printed-circuit cable, spindle bearing is in the center and the actuator is in the upper left.]]
+
+A typical hard disk drive has two electric motors; a disk motor that spins the disks and an actuator (motor) that positions the read/write head assembly across the spinning disks.
+
+The disk motor has an external rotor attached to the disks; the stator windings are fixed in place.
+
+Opposite the actuator at the end of the head support arm is the  read-write head (near center in photo); thin printed-circuit cables connect the read-write heads to amplifier electronics mounted at the pivot of the actuator. A flexible, somewhat U-shaped, ribbon cable, seen edge-on below and to the left of the actuator arm continues the connection to the controller board on the opposite side.
+
+The head support arm is very light, but also stiff; in modern drives, acceleration at the head reaches 550 [[g-force|''g'']].
+
+The silver-colored structure at the upper left of the first image is the top plate of the actuator, a permanent-magnet and moving coil motor that swings the heads to the desired position (it is shown removed in the second image). The plate supports a squat [[neodymium magnet|neodymium-iron-boron]] (NIB) high-flux [[magnet]]. Beneath this plate is the moving coil, often referred to as the ''[[voice coil]]'' by analogy to the coil in [[loudspeaker]]s, which is attached to the actuator hub, and beneath that is a second NIB magnet, mounted on the bottom plate of the motor (some drives only have one magnet).
+
+[[Image:HardDiskAnatomy.jpg|350px|thumb|left|A disassembled and labeled 1997 hard drive. All major components were placed on a mirror, which created the symmetrical reflections.]]
+
+The voice coil itself is shaped rather like an arrowhead, and made of doubly coated copper [[magnet wire]]. The inner layer is insulation, and the outer is thermoplastic, which bonds the coil together after it is wound on a form, making it self-supporting. The portions of the coil along the two sides of the arrowhead (which point to the actuator bearing center) interact with the [[magnetic field]], developing a tangential force that rotates the actuator. Current flowing radially outward along one side of the arrowhead and radially inward on the other produces the [[magnetic field#Force on a charged particle|tangential force]]. If the magnetic field were uniform, each side would generate opposing forces that would cancel each other out. Therefore the surface of the magnet is half N pole, half S pole, with the radial dividing line in the middle, causing the two sides of the coil to see opposite magnetic fields and produce forces that add instead of canceling. Currents along the top and bottom of the coil produce radial forces that do not rotate the head.
+
+===Error handling===
+Modern drives also make extensive use of [[Error Correcting Code]]s (ECCs), particularly [[ReedâSolomon error correction]]. These techniques store extra bits for each block of data that are determined by mathematical formulas. The extra bits allow many errors to be fixed. While these extra bits take up space on the hard drive, they allow higher recording densities to be employed, resulting in much larger storage capacity for user data.&lt;ref&gt;[http://www.storagereview.com/guide2000/ref/hdd/geom/errorECC.html Error Correcting Code], Storage Review&lt;/ref&gt; In 2009, in the newest drives, [[low-density parity-check code]]s (LDPC) are supplanting Reed-Solomon. LDPC codes enable performance close to the [[Shannon Limit]] and thus allow for the highest storage density available.&lt;ref&gt;[http://www.hitachigst.com/tech/techlib.nsf/techdocs/FB376A33027F5A5F86257509001463AE/$file/IDRC_WP_final.pdf &quot;Iterative Detection Read Channel Technology in Hard Disk Drives&quot;], Hitachi&lt;/ref&gt;
+
+Typical hard drives attempt to &quot;remap&quot; the data in a physical sector that is going bad to a spare physical sectorâhopefully while the errors in that bad sector are still few enough that the ECC can recover the data without loss. The [[S.M.A.R.T.]] system counts the total number of errors in the entire hard drive fixed by ECC, and the total number of remappings, in an attempt to predict hard drive failure.
+
+===Future development===
+Due to bit-flipping errors and other issues, perpendicular recording densities may be supplanted by other magnetic recording technologies. Toshiba is promoting [[bit-patterned recording]] (BPR),&lt;ref&gt;{{cite web|url=http://www.pcmag.com/article2/0,2817,2368023,00.asp |title=Will Toshiba's Bit-Patterned Drives Change the HDD Landscape?|publisher=PC Magazine|date=19 August 2010|accessdate=21 August 2010}}&lt;/ref&gt; while Xyratex are developing [[heat-assisted magnetic recording]] (HAMR).&lt;ref&gt;{{cite web|url=http://www.theregister.co.uk/2010/05/24/xyratex_hamr/ |title=Xyratex no-go for bit-patterned media |publisher=The Register |date=24 April 2010 |accessdate=21 August 2010}}&lt;/ref&gt;{{-}}
+
+October 2011: [[TDK]] has developed a special laser that heats up a hard's disk's surface with a precision of a few dozen nanometers. TDK also used the new material in the magnetic head and redesigned its structure to expand the recording density. This new technology apparently makes it possible to store one [[terabyte]] on one platter and for the initial hard drive TDK plans to include two platters.&lt;ref&gt;{{cite web |url=http://techcrunch.com/2011/10/04/report-tdk-technology-more-than-doubles-capacity-of-hdds/?utm_source=feedburner&amp;utm_medium=feed&amp;utm_campaign=Feed%3A+Techcrunch+%28TechCrunch%29 |title=Report: TDK Technology &quot;More Than Doubles&quot; Capacity Of HDDs |accessdate=October 4, 2011}}&lt;/ref&gt;
+
+==Capacity==
+The capacity of an HDD may appear to the end user to be a different amount than the amount stated by a drive or system manufacturer due to amongst other things, different units of measuring capacity, capacity consumed in formatting the drive for use by an operating system and/or redundancy.
+&lt;!-- not sure this is accurate and/or relevant -tom94022
+* The total number of sectors and the size of the sectors
+* computer filesystems must allocate space for tracking disk sector usage, storing file names, and keeping track of a directory structure
+
+Absolute physical characteristics such as [[areal density]] are not reliable for determining storage capacity, and actual capacity is usually lower:
+* Modern hard drives store special servo information scattered amongst the user's data, for accurate positioning of the heads
+* There is some magnetic leakage along the sides of the write heads. A gap is typically required between tracks so that the process of writing data does not destabilize or overwrite data on adjacent tracks
+* Modern hard drives typically have extra maintenance tracks which cannot be accessed by the end user. These are used to replace defective disk sectors that may appear in other locations.
+* For marketing purposes, manufacturers have sometimes created smaller-capacity drives sold at a lower cost than large capacity drives, simply by leaving some platters unused, or by putting fewer platters in the enclosure.
+--&gt;
+
+===Units of storage capacity===
+{{see also|Binary prefix}}
+{|class=&quot;wikitable infobox&quot; width=&quot;60%&quot; style=&quot;margin: 0.5em 0em 0em 1.5em&quot;
+! colspan=2 rowspan=2 | Advertised capacity &lt;br&gt;by manufacturer &lt;br&gt;(using [[SI_prefix#List_of_SI_prefixes|decimal&amp;nbsp;multiples]])
+! colspan=2 rowspan=2 | Expected capacity &lt;br&gt;by consumers in class action &lt;br&gt;(using [[binary prefix|binary&amp;nbsp;multiples]])
+! colspan=2 | Reported capacity
+|-
+! rowspan=2 | [[Windows]]&lt;br&gt;(using binary &lt;br&gt;multiples)
+! rowspan=2 | [[Mac&amp;nbsp;OS&amp;nbsp;X]] 10.6+ &lt;br&gt;(using decimal&lt;br&gt;multiples)
+|-
+! With prefix
+! Bytes
+! Bytes
+! Diff.
+|- align=right
+| 100&amp;nbsp;[[Megabyte|MB]]
+| 100,000,000
+| 104,857,600
+| 4.86%
+| 95.4&amp;nbsp;MB
+| 100.0&amp;nbsp;MB
+|- align=right
+| 100&amp;nbsp;[[Gigabyte|GB]]
+| 100,000,000,000
+| 107,374,182,400
+| 7.37%
+| 93.1&amp;nbsp;GB, 95,367&amp;nbsp;MB
+| 100.00 GB
+|- align=right
+| 1&amp;nbsp;[[Terabyte|TB]]
+| 1,000,000,000,000
+| 1,099,511,627,776
+| 9.95%
+| 931&amp;nbsp;GB, 953,674&amp;nbsp;MB
+| 1000.00&amp;nbsp;GB, 1000,000&amp;nbsp;MB
+|}
+The capacity of hard disk drives is given by manufacturers in [[megabyte]]s (1&amp;nbsp;MB&amp;nbsp;=&amp;nbsp;1,000,000 bytes), [[gigabyte]]s (1&amp;nbsp;GB&amp;nbsp;=&amp;nbsp;1,000,000,000 bytes) or [[terabyte]]s (1&amp;nbsp;TB&amp;nbsp;=&amp;nbsp;1,000,000,000,000 bytes).&lt;ref name=&quot;WD&quot;&gt;[http://wdc.custhelp.com/app/answers/detail/a_id/615/session/L2F2LzIvc25vLzEvdGltZS8xMzAyMjgxMDM1L3NpZC9NRjNaWFpxaw%3D%3D Drive displays a smaller capacity than the indicated size on the drive label]&lt;/ref&gt;&lt;ref&gt;i.e. see [http://www.hitachigst.com/tech/techlib.nsf/techdocs/B259B4A73296DA628625751600058A80/$file/ProductBrochureMarch2009.pdf HGST], [http://www.samsung.com/global/business/hdd/faqView.do?b2b_bbs_msg_id=167 Samsung], [http://www.seagate.com/docs/pdf/whitepaper/storage_solutions_guide.pdf Seagate], [http://sdd.toshiba.com/techdocs/MKxx33GSG_MK1235GSL_r1.pdf Toshiba] and [http://www.wdc.com/en/library/2579-001028.pdf Western Digital] websites&lt;/ref&gt; This numbering convention, where prefixes like ''mega-'' and ''giga-'' denote ''powers of 1000'', is also used for data transmission rates and DVD capacities. However, the convention is different from that used by manufacturers of [[Main memory|memory]] ([[random-access memory|RAM]], [[read-only memory|ROM]]) and CDs, where prefixes like ''kilo-'' and ''mega-'' mean ''powers of 1024''.
+
+When the [[SI prefix|unit prefixes]] like ''kilo-'' denote ''powers of 1024'' in the measure of memory capacities, the 1024&lt;sup&gt;''n''&lt;/sup&gt; progression (for ''n'' = 1, 2, â¦) is as follows:&lt;ref name=&quot;WD&quot;&gt;See also [http://www.seagate.com/docs/pdf/whitepaper/storage_solutions_guide.pdf Seagate] and  [http://sdd.toshiba.com/techdocs/MKxx33GSG_MK1235GSL_r1.pdf Toshiba]&lt;/ref&gt;
+*''kilo''&lt;span style=&quot;margin-left:1em&quot;&gt; = 2&lt;sup&gt;10&lt;/sup&gt; = 1024&lt;sup&gt;1&lt;/sup&gt; = 1024&lt;/span&gt;,
+*''mega'' = 2&lt;sup&gt;20&lt;/sup&gt; = 1024&lt;sup&gt;2&lt;/sup&gt; = 1,048,576,
+*''giga''&lt;span style=&quot;margin-left:0.65em&quot;&gt; = 2&lt;sup&gt;30&lt;/sup&gt; = 1024&lt;sup&gt;3&lt;/sup&gt; = 1,073,741,824&lt;/span&gt;,
+*''tera''&lt;span style=&quot;margin-left:0.8em&quot;&gt; = 2&lt;sup&gt;40&lt;/sup&gt; = 1024&lt;sup&gt;4&lt;/sup&gt; = 1,099,511,627,776&lt;/span&gt;,
+and so forth.
+
+The practice of using prefixes assigned to ''powers of 1000'' within the hard drive and computer industries dates back to the early days of computing.&lt;ref&gt;{{cite web|url=http://www-03.ibm.com/ibm/history/exhibits/650/650_pr2.html|title=650 RAMAC announcement}}IBM Press Release, 13 September 1956, announcing the IBM 305 RAMAC. The first disk drive invented by IBM in 1956 was described by IBM using the descriptive noun ''million'', as in &quot;... a built-in 5-million-digit disk memory&quot;&lt;/ref&gt; By the 1970s million, mega and M were consistently being used in the ''powers of 1000'' sense to describe HDD capacity.&lt;ref&gt;Mulvany, R.B., &quot;Engineering Design of a Disk Storage Facility with Data Modules.&quot; IBM JRD, November 1974&lt;/ref&gt;&lt;ref&gt;Introduction to IBM Direct Access Storage Devices, M. Bohl, IBM publication SR20-4738 &amp;copy;1981.&lt;/ref&gt;&lt;ref&gt;[http://www.bitsavers.org/pdf/cdc/discs/brochures/ProductLine_Oct74.pdf CDC Product Line Card], October 1974&lt;/ref&gt;  As HDD sizes grew the industry adopted the prefixes âGâ for giga and âTâ for tera denoting 1,000,000,000 and 1,000,000,000,000 bytes of HDD capacity respectively.
+
+Likewise, the practice of using prefixes assigned to ''powers of 1024'' within the computer industry also traces its roots to the early days of computing&lt;ref&gt;{{cite journal
+| author=G. M. Amdahl et. al.
+| title = Architecture of the IBM System/360
+| journal=IBM JRD
+| year = 1964
+| volume = 8
+| issue = 2
+|quote = Capacity 8 bit Bytes â 1K = 1024}}&lt;/ref&gt;  By the early 1970s using the prefix âKâ in a ''powers of 1024'' sense to describe memory was common within the industry.&lt;ref&gt;{{Citation
+|title= IBM System/360 Operating System: Storage Estimates, 12th ed.
+|url= http://www.bitsavers.org/pdf/ibm/360/os/R20.0_Jan71/GC28-6551-12_OS_StorageEstimates_R20_Jan71.pdf
+|year= 1971
+|month = January
+|publisher=IBM Corp.
+|id = GC28-6551-12
+|page= 21
+|quote= Model 40 with 64K bytes of storage and storage protection
+}} This document contains approximately 468 usages of K meaning 1024&lt;/ref&gt;&lt;ref&gt;{{Citation
+|title= PDP11/05/10/30/40 Processor Handbook
+|url= http://www.bitsavers.org/pdf/dec/pdp11/handbooks/PDP1105-40_Handbook_1973.pdf
+|year= 1973
+|publisher=Digital Equipment Corp.
+|page= 1-1
+|quote= ... direct addressing of 32K 16-bit words or 64K 8-bit bytes (K = 1024)
+}}  This document contains approximately 80 instances of K meaning 1024.&lt;/ref&gt;  As memory sizes grew the industry adopted the prefixes âMâ for mega and âGâ for giga denoting 1,048,576 and 1,073,741,824 bytes of memory respectively.
+
+Computers do not internally represent HDD or memory capacity in ''powers of 1024''; reporting it in this manner is just a convention.&lt;ref name=&quot;Apple&quot;&gt;{{cite web|url=http://reviews.cnet.com/8301-13727_7-10330509-263.html|title=Snow Leopard changes how file and drive sizes are calculated|author=Topher Kessler|publisher=cnet Reviews}} &quot;Altering this convention to agree with English could have been done at any time; however, for some reason it just stuck this way for a lot of the computing industry&quot;.&lt;/ref&gt; Creating confusion, operating systems report HDD capacity in different ways. Most operating systems, including the [[Microsoft Windows]] operating systems use the ''powers of 1024'' convention when reporting HDD capacity, thus an HDD offered by its manufacturer as a 1 TB drive is reported by these OSes as a 931 GB HDD.  Apple's current OSes, beginning with [[Mac OS&amp;nbsp;X]] 10.6 (â[[Mac OS X Snow Leopard|Snow Leopard]]â), use ''powers of 1000'' when reporting HDD capacity, thereby avoiding any discrepancy between what it reports and what the manufacturer advertises.
+
+In the case of âmega-,â there is a nearly 5% difference between the ''powers of 1000'' definition and the ''powers of 1024'' definition. Furthermore, the difference is compounded by 2.4% with each incrementally larger prefix (gigabyte, terabyte, etc.) The discrepancy between the two conventions for measuring capacity was the subject of several [[Binary prefix#Legal disputes|class action suits against HDD manufacturers]]. The plaintiffs argued that the use of decimal measurements effectively misled consumers&lt;ref name=&quot;WDSettle&quot;&gt;[http://www.foxnews.com/story/0,2933,201269,00.html Western Digital Settles Hard-Drive Capacity Lawsuit, Associated Press 28 June 2006 retrieved 2010 Nov 25]&lt;/ref&gt;&lt;ref&gt;[http://www.bit-tech.net/news/bits/2007/10/26/seagate_lawsuit_concludes_settlement_announced/1 Seagate lawsuit concludes, settlement announced]&lt;/ref&gt; while the defendants denied any wrongdoing or liability, asserting that their marketing and advertising complied in all respects with the law and that no Class Member sustained any damages or injuries.&lt;ref&gt;[http://www.xtremesystems.org/forums/showthread.php?t=93512 Western Digital â Notice of Class Action Settlement email]&lt;/ref&gt;
+
+In December 1998, an international [[standards organization]] attempted to address these dual definitions of the conventional prefixes by proposing unique [[binary prefixes]] and prefix symbols to denote multiples of 1024, such as â[[mebibyte]] (MiB)â, which exclusively denotes 2&lt;sup&gt;20&lt;/sup&gt; or 1,048,576 bytes.&lt;ref&gt;{{cite web|url=http://physics.nist.gov/cuu/Units/binary.html|title=Prefixes for binary multiples|author=[[National Institute of Standards and Technology]]}} &quot;In December 1998 the [[International Electrotechnical Commission]] (IEC) [...] approved as an IEC International Standard names and symbols for prefixes for binary multiples for use in the fields of data processing and data transmission.&quot;&lt;/ref&gt; In the over{{nbhyph}}{{Time ago|1 Dec 1998|min_magnitude=years|ago=}} that have since elapsed, the proposal has seen little adoption by the computer industry and the conventionally prefixed forms of âbyteâ continue to denote slightly different values depending on context.&lt;ref&gt;''Upgrading and Repairing PCs'', Scott Mueller, Pg. 596, ISBN 0789729741&lt;/ref&gt;&lt;ref&gt;''The silicon web: physics for the Internet age'', Michael G. Raymer, Pg. 40, ISBN 9781439803110&lt;/ref&gt;
+
+=== HDD formatting ===
+{{Main|Disk formatting}}
+
+The presentation of an HDD to its host is determined by its [[disk controller|controller]]. This may differ substantially from the drive's native [[interface (computing)|interface]] particularly in [[mainframe computer|mainframes]] or [[server computer|servers]].
+
+Modern HDDs, such as SAS&lt;ref name=&quot;SAS&quot;&gt;{{epigraph | quote = The LBAs on a logical unit shall begin with zero and shall be contiguous up to the last logical block on the logical unit. | cite = Information technology â Serial Attached SCSI â 2 (SAS-2), INCITS 457 Draft 2, 8 May 2009, chapter 4.1 Direct-access block device type model overview }}&lt;/ref&gt;
+and SATA&lt;ref name=&quot;SATA&quot;&gt;ISO/IEC 791D:1994, AT Attachment Interface for Disk Drives (ATA-1), section 7.1.2&lt;/ref&gt;
+drives, appear at their interfaces as a contiguous set of logical blocks; typically 512 bytes long but the industry is in the process of changing to 4,096 byte logical blocks; see [[Advanced Format]].&lt;ref&gt;[http://www.anandtech.com/show/2888 Western Digital's Advanced Format: The 4K Sector Transition Begins]&lt;/ref&gt;
+
+The process of initializing these logical blocks on the physical disk platters is called ''low level formatting'' which is usually performed at the factory and is not normally changed in the field.&lt;ref&gt;See: [http://www.pcguide.com/ref/hdd/geom/formatLow-c.html Low-Level Formatting]. However, some enterprise SAS drives (e.g. [http://www.seagate.com/docs/pdf/datasheet/disc/ds_constellation_es.pdf Seagate Constellation ES]) have other block sizes such as 520, 524 and 528 bytes which can be changed in the field.&lt;/ref&gt;
+
+''High level formatting'' then writes the [[file system]] structures into selected logical blocks to make the remaining logical blocks available to the host [[Operating system|OS]] and its applications.&lt;ref&gt;[http://www.pcguide.com/ref/hdd/geom/formatHigh-c.html High-Level Formatting]&lt;/ref&gt;  The operating system [[file system]] uses some of the disk space to organize files on the disk, recording their file names and the sequence of disk areas that represent the file.  Examples of data structures stored on disk to retrieve files include the [[MS DOS]] [[file allocation table]] (FAT), and [[UNIX]]  [[inodes]], as well as other operating system data structures. As a consequence not all the space on a hard drive is available for user files. This file system overhead is usually less than 1% on drives larger than 100 MB.
+
+===Redundancy===
+In modern HDDs spare capacity for defect management is not included in the published capacity; however in many early HDDs a certain number of sectors were reserved for spares, thereby reducing capacity available to end users.
+
+In some systems, there may be hidden [[Disk partitioning|partitions]] used for system recovery that reduce the capacity available to the end user.
+
+For [[RAID]] drives, data integrity and fault-tolerance requirements also reduce the realized capacity. For example, a RAID1 drive will be about half the total capacity as a result of data mirroring. For RAID5 drives with x drives you would lose 1/x of your space to parity. RAID drives are multiple drives that appear to be one drive to the user, but provides some fault-tolerance.  Most RAID vendors use some form of [[checksum]]s to improve data integrity at the block level. For many vendors, this involves using HDDs with sectors of 520 bytes per sector to contain 512 bytes of user data and 8 checksum bytes or using separate 512 byte sectors for the checksum data.&lt;ref&gt;[http://blogs.netapp.com/efficiency/2009/08/measuring-storage-efficiency-part-ii-taxes.html How to Measure Storage Efficiency â Part II â Taxes]&lt;/ref&gt;
+
+===HDD parameters to calculate capacity===
+[[Image:Hard drive capacity over time.svg|thumb|[[personal computer|PC]] hard disk drive capacity (in [[gigabytes|GB]]) over time. The vertical axis is [[logarithmic scale|logarithmic]], so the fit line corresponds to [[exponential growth]].]]
+
+Because modern disk drives appear to their interface as a contiguous set of logical blocks their gross capacity can be calculated by multiplying the number of blocks by the size of the block.  This information is available from the manufacturers specification and from the drive itself through use of special utilities invoking low level commands&lt;ref name=&quot;SAS&quot; /&gt;&lt;ref name=&quot;SATA&quot; /&gt;
+
+The gross capacity of older HDDs can be calculated by multiplying for each [[Zone bit recording|zone]] of the drive the number of [[Cylinder (disk drive)|cylinders]] by the number of heads by the number of [[Disk sector|sectors/zone]] by the number of bytes/sector (most commonly 512) and then summing the totals for all zones. Some modern [[Serial ATA|ATA]] drives will also report [[Cylinder-head-sector|cylinder, head, sector]] (C/H/S) values to the CPU but they are no longer actual physical parameters since the reported numbers are constrained by historic operating-system interfaces.
+
+The old C/H/S scheme has been replaced by [[logical block addressing]]. In some cases, to try to &quot;force-fit&quot; the C/H/S scheme to large-capacity drives, the number of heads was given as 64, although no modern drive has anywhere near 32 platters.
+
+==Form factors==
+[[Image:5.25 inch MFM hard disk drive.JPG|thumb|5Â¼â³ full height 110&amp;nbsp;MB HDD&lt;br /&gt;2Â½â³ (8.5&amp;nbsp;mm) 6495&amp;nbsp;MB HDD]]
+[[Image:EBSamsung hard disk.JPG|thumb|2.5&quot; [[SATA]] HDD from a [[Sony VAIO]] laptop]]
+[[Image:SixHardDriveFormFactors.jpg|thumb|Six hard drives with 8â³, 5.25â³, 3.5â³, 2.5â³, 1.8â³, and 1â³ hard disks with a ruler to show the length of platters and read-write heads.]]
+
+Mainframe and minicomputer hard disks were of widely varying dimensions, typically in free standing cabinets the size of washing machines (e.g. [[HP 7935]] and [http://www.columbia.edu/acis/history/rp06.html DEC RP06] Disk Drives) or designed so that dimensions enabled placement in a [[19 inch rack|19&quot; rack]] (e.g. [http://www.digibarn.com/stories/bill-pentz-story/docs/Diablo%2030%20PB%20197201xx.pdf Diablo Model 31]). In 1962, [[IBM]] introduced its [[IBM magnetic disk drives#IBM_1311|model 1311]] disk, which used 14&amp;nbsp;inch (nominal size) platters. This became a standard size for mainframe and minicomputer drives for many years,&lt;ref&gt;Emerson W. Pugh, Lyle R. Johnson, John H. Palmer ''IBM's 360 and early 370 systems'' MIT Press, 1991 ISBN 0262161230, page 266&lt;/ref&gt; but such large platters were never used with microprocessor-based systems.
+
+With increasing sales of microcomputers having built in [[floppy disk|floppy-disk drives (FDDs)]], HDDs that would fit to the FDD mountings became desirable, and this led to the evolution of the market towards drives with certain '''Form factors''', initially derived from the sizes of 8-inch, 5.25-inch, and 3.5-inch floppy disk drives. Smaller sizes than 3.5&amp;nbsp;inches have emerged as popular in the marketplace and/or been decided by various industry groups.
+
+*'''8&amp;nbsp;inch:''' {{val|9.5|u=in}} Ã {{val|4.624|u=in}} Ã {{val|14.25|u=in}} ({{val|241.3|u=mm}} Ã {{val|117.5|u=mm}} Ã {{val|362|u=mm}})&lt;br/&gt;In 1979, [[Shugart Associates]]' SA1000 was the first form factor compatible HDD, having the same dimensions and a compatible interface to the 8â³ FDD.
+*'''5.25&amp;nbsp;inch:''' 5.75&amp;nbsp;in Ã 3.25&amp;nbsp;in Ã 8&amp;nbsp;in (146.1&amp;nbsp;mm Ã 82.55&amp;nbsp;mm Ã 203&amp;nbsp;mm)&lt;br/&gt;This smaller form factor, first used in an HDD by Seagate in 1980,&lt;ref&gt;{{cite book|title=The Innovator's Dilemma|last=Christensen|first=Clayton M.|year=1997|publisher=HarperBusiness|location=New York, New York|isbn=0-06-662069-4|page=19|pages=252}}&lt;/ref&gt; was the same size as full-height {{convert|5+1/4|in|mm|adj=mid|-diameter}} FDD, 3.25-inches high. This is twice as high as &quot;half height&quot;; i.e., 1.63&amp;nbsp;in (41.4&amp;nbsp;mm). Most desktop models of drives for optical 120&amp;nbsp;mm disks (DVD, CD) use the half height 5Â¼â³ dimension, but it fell out of fashion for HDDs. The [[Quantum Bigfoot]] HDD was the last to use it in the late 1990s, with &quot;low-profile&quot; (â25&amp;nbsp;mm) and &quot;ultra-low-profile&quot; (â20&amp;nbsp;mm) high versions.
+*'''3.5&amp;nbsp;inch:''' 4&amp;nbsp;in Ã 1&amp;nbsp;in Ã 5.75&amp;nbsp;in (101.6&amp;nbsp;mm Ã 25.4&amp;nbsp;mm Ã 146&amp;nbsp;mm) = 376.77344&amp;nbsp;cmÂ³&lt;br/&gt;This smaller form factor is similar to that used in an HDD by [[Rodime]] in 1983,&lt;ref&gt;{{cite journal|date=March 1983|title=Winchester has 3.5-inch diameter|journal=Electronics|page=184}}&lt;/ref&gt;, which was the same size as the &quot;half height&quot; 3Â½â³ FDD, i.e., 1.63&amp;nbsp;inches high. Today, the 1-inch high (&quot;slimline&quot; or &quot;low-profile&quot;) version of this form factor is the most popular form used in most desktops.
+*'''2.5&amp;nbsp;inch:''' {{val|2.75|u=in}} Ã 0.275â{{val|0.59|u=in}} Ã {{val|3.945|u=in}} ({{val|69.85|u=mm}} Ã 7â{{val|15|u=mm}} Ã {{val|100|u=mm}}) = 48.895â{{val|104.775|u=cm3}}&lt;br/&gt;This smaller form factor was introduced by PrairieTek in 1988;&lt;ref&gt;{{cite journal|author=Chandler, Doug|date=26 September 1988|title=Startup Ships 2.5-Inch Hard Disk Aimed for Portables, Laptops|journal=PC Week|page =6}}&lt;/ref&gt; there is no corresponding FDD. It is widely used today for [[SSD|solid-state drives]] and for hard disk drives in mobile devices (laptops, music players, etc.) and as of 2008 replacing 3.5&amp;nbsp;inch enterprise-class drives.&lt;ref&gt;{{cite web|url=http://www.tomshardware.co.uk/enterprise-storage-sas-hdd,review-31891.html|title=3.5&quot; Vs. 2.5&quot; SAS HDDs: In Storage, Size Matters|author=schmid, Patrick and Achim Roos|publisher=Tomshardware.com|date=8 May 2010|accessdate=25 June 2010}}&lt;/ref&gt; It is also used in the [[Playstation 3]]&lt;ref&gt;{{cite web|url=http://www.ifixit.com/Teardown/PlayStation-3-Slim/1121/1|title=Playstation 3 Slim Teardown |date=25 August 2009 |accessdate=15 November 2010}}&lt;/ref&gt; and [[Xbox 360]]{{Citation needed|date=November 2010}} video game consoles. Today, the dominant height of this form factor is 9.5&amp;nbsp;mm for laptop drives (usually having two platters inside), but higher capacity drives have a height of 12.5&amp;nbsp;mm (usually having three platters). Enterprise-class drives can have a height up to 15&amp;nbsp;mm.&lt;ref&gt;{{cite web|url=http://www.tomshardware.com/reviews/2.5-inch-12.5-mm-9.5-mm,2623.html|title=9.5 Versus 12.5 mm: Which Notebook HDD Is Right For You? |author=Schmid, Patrick and Achim Roos|publisher=Tomshardware.com|date=22 May 2010 |accessdate=22 June 2010}}&lt;/ref&gt; Seagate released a 7mm drive aimed at entry level laptops and high end netbooks in December 2009.&lt;ref&gt;{{cite web|url=http://www.physorg.com/news180118264.html |title=Seagate Unveils World's Thinnest 2.5-Inch Hard Drive For Slim Laptop Computers |publisher=physorg.com |date=15 December 2009 |accessdate=15 December 2009}}&lt;/ref&gt;
+*'''1.8&amp;nbsp;inch:''' 54&amp;nbsp;mm Ã 8&amp;nbsp;mm Ã 71&amp;nbsp;mm = 30.672&amp;nbsp;cmÂ³&lt;br/&gt;This form factor, originally introduced by Integral Peripherals in 1993, has evolved into the ATA-7 LIF with dimensions as stated. It was increasingly used in digital audio players and [[subnotebook]]s, but is rarely used today. An original variant exists for 2â5GB sized HDDs that fit directly into a [[PC card]] expansion slot. These became popular for their use in iPods and other HDD based MP3 players.
+*'''1&amp;nbsp;inch:''' 42.8&amp;nbsp;mm Ã 5&amp;nbsp;mm Ã 36.4&amp;nbsp;mm&lt;br/&gt;This form factor was introduced in 1999 as [[IBM]]'s [[Microdrive]] to fit inside a [[Compact Flash|CF]] Type II slot. Samsung calls the same form factor '''&quot;1.3&amp;nbsp;inch&quot; drive''' in its product literature.&lt;ref&gt;[http://www.samsung.com/global/system/business/hdd/prdmodel/2008/1/25/2469101.3_Inch_Spec_PATA_rev.2.3.pdf 1.3â³ HDD Product Specification], Samsung, 2008&lt;/ref&gt;
+*'''0.85&amp;nbsp;inch:''' 24&amp;nbsp;mm Ã 5&amp;nbsp;mm Ã 32&amp;nbsp;mm&lt;br/&gt;[[Toshiba]] announced this form factor in January 2004&lt;ref&gt;[http://www.toshiba.co.jp/about/press/2004_01/pr0801.htm Toshiba's 0.85-inch HDD is set to bring multi-gigabyte capacities to small, powerful digital products], Toshiba press release, 8 January 2004&lt;/ref&gt; for use in mobile phones and similar applications, including [[Secure Digital card|SD]]/[[MultiMediaCard|MMC]] slot compatible HDDs optimized for video storage on [[4G]] handsets. Toshiba currently sells a 4&amp;nbsp;GB (MK4001MTD) and 8&amp;nbsp;GB (MK8003MTD) version [http://www3.toshiba.co.jp/storage/english/spec/hdd/mk4001.htm]{{dead link|date=November 2010}} and holds the [[Guinness World Record]] for the smallest hard disk drive.&lt;ref&gt;[http://www.toshiba.co.jp/about/press/2004_03/pr1601.htm Toshiba enters Guinness World Records Book with the world's smallest hard disk drive], Toshiba press release, 16 March 2004&lt;/ref&gt;
+
+3.5-inch and 2.5-inch hard disks currently dominate the market.
+
+By 2009 all manufacturers had discontinued the development of new products for the 1.3-inch, 1-inch and 0.85-inch form factors due to falling prices of [[flash memory]],&lt;ref&gt;[http://www.eetasia.com/ART_8800474064_499486_NT_3335be30.HTM Flash price fall shakes HDD market], EETimes Asia, 1 August 2007.&lt;/ref&gt;&lt;ref&gt;[http://www.samsung.com/global/business/hdd/newsView.do?b2b_bbs_msg_id=143 In 2008 Samsung] introduced the 1.3-inch SpinPoint A1 HDD but by March 2009 the family was listed as [http://www.samsung.com/global/business/hdd/products/Product_EOLProducts.html End Of Life Products] and new new 1.3-inch models were not available in this size.&lt;/ref&gt; which is slightly more stable and resistant to damage from impact and/or dropping.
+
+The inch-based nickname of all these form factors usually do not indicate any actual product dimension (which are specified in millimeters for more recent form factors), but just roughly indicate a size relative to disk diameters, in the interest of historic continuity.
+
+===Current hard disk form factors===
+{| class=&quot;wikitable&quot; border=&quot;1&quot;
+|-
+! Form factor
+! Width (mm)
+! Height (mm)
+! Largest capacity
+! Platters (Max)
+|-
+| 3.5â³
+| 102
+| 19 or 25.4
+| 4 [[Terabyte|TB]]&lt;ref name=&quot;BrandExternal&quot;&gt;Branded external only.&lt;/ref&gt;&lt;ref name=&quot;FourTB&quot;&gt;{{cite web |url=http://techjost.com/seagate%e2%80%99s-4tb-goflex-breaks-the-hard-drive-capacity-ceiling/ |title=Seagateâs 4TB GoFlex Breaks the Hard Drive Capacity Ceiling
+  |date=2011-09-07|accessdate=2011-09-07}}&lt;/ref&gt;&lt;ref&gt;[http://www.legitreviews.com/article/1704/ Seagate FreeAgent GoFlex 4TB Desk External Drive Review]&lt;/ref&gt;&lt;ref&gt;750 GB for IDE-based barebone, 3 TB for SATA-based barebone.&lt;/ref&gt; (2011)
+| 5
+|-
+|2.5â³
+| 69.9
+| 7&lt;ref&gt;[http://www.seagate.com/ww/v/index.jsp?locale=en-US&amp;name=Momentus_Thin_Drive&amp;vgnextoid=9749bad462085210VgnVCM1000001a48090aRCRD Proving that 2.5 inch hard disk drive with height of 7 mm exists.]&lt;/ref&gt;, 9.5&lt;ref&gt;Most common.&lt;/ref&gt;, 11.5&lt;ref&gt;750 GB, 1 TB, or 1.5 TB only.&lt;/ref&gt;, or 15
+| 1.5&amp;nbsp;TB&lt;ref name=&quot;BrandExternal&quot;/&gt;&lt;ref&gt;http://www.engadget.com/photos/seagate-1-5tb-goflex-usb-3-0-external-hard-drive/#3374569/&lt;/ref&gt;&lt;ref&gt;http://www.pcworld.idg.com.au/review/servers_storage/seagate/freeagent_goflex_ultra-portable_drive_1_5tb/362043&lt;/ref&gt;&lt;ref&gt;320 GB for IDE-based barebone, 1 TB for SATA-based barebone.&lt;/ref&gt; (2010)
+| 4
+|-
+| 1.8â³
+| 54
+| 5 or 8
+| 320&amp;nbsp;GB&lt;ref&gt;{{cite web|title=Toshiba Storage Solutions â MK3233GSG|url=http://www.toshiba.co.jp/about/press/2009_11/pr0501.htm}}&lt;/ref&gt; (2009)
+| 3
+|}
+
+===Obsolete hard disk form factors===
+{| class=&quot;wikitable&quot; border=&quot;1&quot;
+|-
+! Form factor
+! Width (mm)
+! Largest capacity
+! Platters (Max)
+|-
+| 5.25â³ [[drive bay#Full-height|FH]]
+| 146
+| 47&amp;nbsp;[[gigabyte|GB]]&lt;ref&gt;Seagate Elite 47, shipped 12/97 per 1998 Disk/Trend Report â Rigid Disk Drives&lt;/ref&gt; (1998)
+| 14
+|-
+| 5.25â³ [[Drive bay#Half-height|HH]]
+| 146
+| 19.3&amp;nbsp;GB&lt;ref&gt;Quantum Bigfoot TS, shipped 10/98 per 1999 Disk/Trend Report â Rigid Disk Drives&lt;/ref&gt; (1998)
+| 4&lt;ref&gt;The Quantum Bigfoot TS used a maximum of 3 platters, other earlier and lower capacity product used up to 4 platters in a 5.25â³ HH form factor, e.g. Microscience HH1090 circa 1989.&lt;/ref&gt;
+|-
+| 1.3â³
+| 43
+| 40&amp;nbsp;GB&lt;ref&gt;{{cite web|url=http://www.sdk.co.jp/aa/english/news/2008/aanw_08_0812.html |title=SDK Starts Shipments of 1.3-Inch PMR-Technology-Based HD Media |publisher=Sdk.co.jp |date=10 January 2008 |accessdate=13 March 2009}}&lt;/ref&gt; (2007)
+| 1
+|-
+| 1â³ (CFII/ZIF/IDE-Flex)
+| 42
+| 20&amp;nbsp;GB (2006)
+| 1
+|-
+| 0.85â³
+| 24
+| 8&amp;nbsp;GB&lt;ref&gt;[http://digitaljournal.com/article/117340 Proving that 8 GB, 0.85 inch hard disk drive exists.]&lt;/ref&gt;&lt;ref&gt;[http://www.toshiba.co.jp/about/press/2004_03/pr1601.htm Toshiba Enters Guinness World Records Book with the World's Smallest Hard Disk Drive.]&lt;/ref&gt; (2004)
+| 1
+|}
+
+==Performance characteristics==
+{{main|Disk drive performance characteristics}}
+&lt;!-- Nearly all of the content in this section has been migrated to its own section and now we need to greatly condense this section. --&gt;
+
+===Access time===
+The factors that limit the time to access the data on a hard disk drive ([[Access time]]) are mostly related to the mechanical nature of the rotating disks and moving heads. [[Seek time]] is a measure of how long it takes the head assembly to travel to the track of the disk that contains data. [[Disk drive performance characteristics#Rotational latency|Rotational latency]] is incurred because the desired disk sector may not be directly under the head when data transfer is requested. These two delays are on the order of milliseconds each. The [[bit rate]] or data transfer rate once the head is in the right position creates delay which is a function of the number of blocks transferred; typically relatively small, but can be quite long with the transfer of large contiguous files. Delay may also occur if the drive disks are stopped to save energy, see [[Hard_disk_drive#Power_management|Power management]].
+
+An HDD's '''Average Access Time''' is its average [[Seek time]] which technically is the time to do all possible seeks divided by the number of all possible seeks, but in practice is determined by statistical methods or simply approximated as the time of a seek over one-third of the number of tracks&lt;ref&gt;[http://www.wdc.com/en/company/glossaryofterms/wdglossarycontent.asp Western Digital definition of ''average access time'']&lt;/ref&gt;
+
+[[Defragmentation]] is a procedure used to minimize delay in retrieving data by moving related items to physically proximate areas on the disk.&lt;ref name=&quot;itworld-2001-04-18&quot;&gt;
+{{cite news
+|title=How to defrag
+|first=Dave
+|last=Kearns
+|date=18 April 2001
+|newspaper=ITWorld
+|url=http://www.itworld.com/NWW01041100636262
+}}&lt;/ref&gt; Some computer operating systems perform defragmentation automatically. Although automatic defragmentation is intended to reduce access delays, the procedure can slow response when performed while the computer is in use.&lt;ref&gt;
+{{cite news
+|title=Turning Off Disk Defragmenter May Solve a Sluggish PC
+|first=Rick
+|last=Broida
+|newspaper=PCWorld
+|date=10 April 2009
+|url=http://www.pcworld.com/article/162955/turning_off_disk_defragmenter_may_solve_a_sluggish_pc.html
+}}&lt;/ref&gt;
+
+[[Access time]] can be improved by increasing rotational speed, thus reducing latency and/or by decreasing seek time.  Increasing areal density increases [[throughput]] by increasing data rate and by increasing the amount of data under a set of heads, thereby potentially reducing seek activity for a given amount of data. Based on historic trends, analysts predict a future growth in HDD areal density (and therefore capacity) of about 40% per year.&lt;ref&gt;{{cite web|url=http://www.hardwarezone.com.ph/articles/view.php?cid=1&amp;id=1805&amp;pg=2|title=Seagate Outlines the Future of Storage :: Articles :: www.hardwarezone.com|publisher=hardwarezone.com|date=27 January 2006|accessdate=13 March 2009}}{{Dead link|date=July 2011}}&lt;/ref&gt; Access times have not kept up with throughput increases, which themselves have not kept up with growth in storage capacity.
+
+====Interleave====
+[[Image:IBM PC XT 10 meg MFM low level format.jpg|thumb|200px|Low-level formatting software to find highest performance interleave choice for 10 [[megabyte|MB]] IBM PC XT hard disk drive.]]
+
+Sector interleave is a mostly obsolete device characteristic related to access time, dating back to when computers were too slow to be able to read large continuous streams of data. Interleaving introduced gaps between data sectors to allow time for slow equipment to get ready to read the next block of data. Without interleaving, the next logical sector would arrive at the read/write head before the equipment was ready, requiring the system to wait for another complete disk revolution before reading could be performed.
+
+However, because interleaving introduces intentional physical delays into the drive mechanism, setting the interleave to a ratio higher than required causes unnecessary delays for equipment that has the performance needed to read sectors more quickly. The interleaving ratio was therefore usually chosen by the end-user to suit their particular computer system's performance capabilities when the drive was first installed in their system.
+
+Modern technology is capable of reading data as fast as it can be obtained from the spinning platters, so hard drives usually have a fixed sector interleave ratio of 1:1, which is effectively no interleaving being used.
+
+====Seek time====
+Average [[seek time]] ranges from 3&amp;nbsp;[[millisecond|ms]]&lt;ref name=&quot;WD-VRaptor Specs&quot;&gt;{{cite web|date=June 2010|url=http://www.wdc.com/en/products/products.aspx?id=20|title=WD VelicoRaptor: Drive Specifications|publisher=[[Western Digital]]|accessdate=15 January 2011}}&lt;/ref&gt; for high-end server drives, to 15&amp;nbsp;ms for mobile drives, with the most common mobile drives at about 12&amp;nbsp;[[Millisecond|ms]]&lt;ref name=&quot;WD-Scorpio Blue-specs&quot;&gt;{{cite web|date=June 2010|url=http://www.wdc.com/en/products/products.aspx?id=140|title=WD Scorpio Blue Mobile: Drive Specifications|publisher=[[Western Digital]]|accessdate=15 January 2011}}&lt;/ref&gt; and the most common desktop type typically being around 9&amp;nbsp;ms.
+The [http://www-03.ibm.com/ibm/history/exhibits/storage/storage_350.html first HDD] had an average seek time of about 600 ms and by the middle 1970s HDDs were available with seek times of about [http://www-03.ibm.com/ibm/history/exhibits/storage/storage_3350.html 25 ms]. Some early PC drives used a [[stepper motor]] to move the heads, and as a result had seek times as slow as 80â120&amp;nbsp;ms, but this was quickly improved by [[voice coil]] type actuation in the 1980s, reducing seek times to around 20&amp;nbsp;ms. Seek time has continued to improve slowly over time.
+
+Some desktop and laptop computer systems allow the user to make a tradeoff between seek performance and drive noise. Faster seek rates typically require more energy usage to quickly move the heads across the platter, causing loud noises from the pivot bearing and greater device vibrations as the heads are rapidly accelerated during the start of the seek motion and decelerated at the end of the seek motion. Quiet operation reduces movement speed and acceleration rates, but at a cost of reduced seek performance.
+
+====Rotational latency====
+{| class=&quot;wikitable&quot; align=&quot;right&quot;
+|-
+!Rotational speed&lt;br&gt;[rpm]!!Average&lt;br&gt;latency [ms]
+|-
+|15000||2
+|-
+|10000||3
+|-
+|7200||4.16
+|-
+|5400||5.55
+|-
+|4800||6.25
+|}
+
+Latency is the delay for the rotation of the disk to bring the required [[disk sector]] under the read-write mechanism. It depends on rotational speed of a disk, measured in [[revolutions per minute]] (rpm). Average rotational latency is shown in the table below, based on the empirical relation that the average latency in milliseconds for such a drive is one-half the rotational period.
+
+====Data transfer rate====
+As of 2010, a typical 7200 rpm desktop hard drive has a sustained &quot;disk-to-[[disk buffer|buffer]]&quot; data transfer rate up to 1030
+Mbits/sec.&lt;ref&gt;[http://www.seagate.com/www/en-us/support/before_you_buy/speed_considerations &quot;Speed Considerations&quot;], ''Seagate website''. Retrieved 22 January 2011.&lt;/ref&gt;
+This rate depends on the track location, so it will be higher for data on the outer tracks (where there are more data sectors) and lower toward the inner tracks (where there are fewer data sectors); and is generally somewhat higher for 10,000 rpm drives. A current widely used standard for the &quot;buffer-to-computer&quot; interface is 3.0 Gbit/s SATA, which can send about 300 megabyte/s (10 bit encoding) from the buffer to the computer, and thus is still comfortably ahead of today's disk-to-buffer transfer rates. Data transfer rate (read/write) can be measured by writing a large file to disk using special file generator tools, then reading back the file. Transfer rate can be influenced by [[file system fragmentation]] and the layout of the files.&lt;ref name=&quot;itworld-2001-04-18&quot;/&gt;
+
+HDD data transfer rate depends upon the rotational speed of the platters and the data recording density. Because heat and vibration limit rotational speed, advancing density becomes the main method to improve sequential transfer rates.{{Citation needed|date=November 2010}} While areal density advances by increasing both the number of tracks across the disk and the number of sectors per track, only the latter will increase the data transfer rate for a given rpm. Since data transfer rate performance only tracks one of the two components of areal density, its performance improves at a lower rate.
+
+===Power consumption===
+[[Power consumption]] has become increasingly important, not only in mobile devices such as laptops but also in server and desktop markets. Increasing data center machine density has led to problems delivering sufficient power to devices (especially for spin up), and getting rid of the waste heat subsequently produced, as well as environmental and electrical cost concerns (see [[green computing]]). Heat dissipation is tied directly to power consumption, and as drives age, disk [[failure rate]]s increase at higher drive temperatures.&lt;ref name=&quot;xbit-2007-12-06&quot;&gt;
+{{cite news
+|newspaper=Xbit Laboratories
+|title=Hard Disk Drive Power Consumption Measurements: X-bitâs Methodology
+|date=6 December 2007
+|first=Oleg
+|last=Artamonov
+|url=http://www.xbitlabs.com/articles/storage/display/hdd-power-cons.html
+}}&lt;/ref&gt; Similar issues exist for large companies with thousands of desktop PCs. Smaller form factor drives often use less power than larger drives. One interesting development in this area is actively controlling the seek speed so that the head arrives at its destination only just in time to read the sector, rather than arriving as quickly as possible and then having to wait for the sector to come around (i.e. the rotational latency).&lt;ref&gt;e.g. Western Digital's [http://www.wdc.com/en/flash/index.asp?family=intelliseek Intelliseek]&lt;/ref&gt; Many of the hard drive companies are now producing Green Drives that require much less power and cooling. Many of these Green Drives spin slower (&lt;5400 rpm compared to 7200, 10,000 or 15,000 rpm) thereby generating less heat. Power consumption can also be reduced by parking the drive heads when the disk is not in use reducing friction, adjusting spin speeds,&lt;ref&gt;[http://www.xbitlabs.com/news/storage/display/20071022123416.html Hitachi Unveils Energy-Efficient Hard Drive with Variable Spindle Speed.]&lt;/ref&gt; and disabling internal components when not in use.&lt;ref&gt;
+{{cite book
+|title=Green tech: how to plan and implement sustainable IT solutions
+|first=Lawrence
+|last=Webber
+|first2=Michael
+|last2=Wallace
+|isbn=081441446X
+|year=2009
+|url=http://books.google.com/books?id=BKTALNq5ceAC&amp;lpg=PA62&amp;dq=green%20disk%20drive&amp;pg=PA62#v=onepage&amp;q=green%20disk%20drive&amp;f=false
+|page=62
+}}&lt;/ref&gt;
+
+Also in systems where there might be multiple hard disk drives, there are various ways of controlling when the hard drives spin up since the highest current is drawn at that time.
+
+*On SCSI hard disk drives, the SCSI controller can directly control spin up and spin down of the drives.
+
+*On [[Parallel ATA]] (PATA) and [[Serial ATA]] (SATA) hard disk drives, some support [[power-up in standby]] or PUIS. The hard disk drive will not spin up until the controller or system BIOS issues a specific command to do so. This limits the power draw or consumption upon power on.
+
+*Some SATA II hard disk drives support [[Spin-up#Staggered_spin-up]], allowing the computer to spin up the drives in sequence to reduce load on the power supply when booting.&lt;ref&gt;
+{{cite news
+|title=Hitachi Deskstar 7K500 500GB HDD: As fast as it's big?
+|author=Trusted Reviews
+|date=31 August 2005
+|url=http://www.theregister.co.uk/2005/08/31/review_hitachi_7k500/
+}}&lt;/ref&gt;
+
+====Power management====
+Most hard disk drives today support some form of power management which uses a number of specific power modes that save energy by reducing performance.  When implemented an HDD will change between a full power mode to one or more power saving modes as a function of drive usage.  Recovery from the deepest mode, typically called Sleep, may take as long as several seconds.&lt;ref&gt;[http://www.almaden.ibm.com/almaden/mobile_hard_drives.html#2 Adaptive Power Management for Mobile Hard Drives]&lt;/ref&gt;
+
+===Audible noise===
+Measured in [[A-weighting|dBA]], audible noise is significant for certain applications, such as [[digital video recorder|DVR]]s, digital audio recording and [[quiet PC|quiet computers]]. Low noise disks typically use [[fluid bearing]]s, slower rotational speeds (usually 5400&amp;nbsp;rpm) and reduce the seek speed under load ([[Automatic Acoustic Management|AAM]]) to reduce audible clicks and crunching sounds. Drives in smaller form factors (e.g. 2.5&amp;nbsp;inch) are often quieter than larger drives.
+
+===Shock resistance===
+Shock resistance is especially important for mobile devices. Some laptops now include [[active hard drive protection]] that parks the disk heads if the machine is dropped, hopefully before impact, to offer the greatest possible chance of survival in such an event. Maximum shock tolerance to date is 350 [[Gravitational acceleration|g]] for operating and 1000 g for non-operating.&lt;ref&gt;[http://www.seagate.com/ww/v/index.jsp?vgnextoid=5fb658a3fd20a110VgnVCM100000f5ee0a0aRCRD Momentus 5400.5 SATA 3Gb/s 320-GB Hard Drive]&lt;/ref&gt;
+
+==Access and interfaces==
+{{Refimprove section|date=July 2009}}
+
+Hard disk drives are accessed over one of a number of bus types, including parallel [[Advanced Technology Attachment|ATA]] (PATA, also called IDE or [[AT Attachment#EIDE and ATA-2|EIDE]]), [[Serial ATA]] (SATA), [[SCSI]], [[Serial Attached SCSI]] (SAS), and [[Fibre Channel]]. Bridge circuitry is sometimes used to connect hard disk drives to buses with which they cannot communicate natively, such as [[IEEE 1394 interface|IEEE&amp;nbsp;1394]], [[Universal Serial Bus|USB]] and [[Small Computer System Interface|SCSI]].
+
+For the [[ST-506]] interface, the data [[encoder|encoding]] scheme as written to the disk surface was also important. The first ST-506 disks used [[Modified Frequency Modulation]] (MFM) encoding, and transferred data at a rate of 5&amp;nbsp;[[megabit]]s per second. Later controllers using 2,7&amp;nbsp;[[Run Length Limited|RLL]] (or just &quot;RLL&quot;) encoding caused 50% more data to appear under the heads compared to one rotation of an MFM drive, increasing data storage and data transfer rate by 50%, to 7.5&amp;nbsp;megabits per second.
+
+Many ST-506 interface disk drives were only specified by the manufacturer to run at the 1/3 lower MFM data transfer rate compared to RLL, while other drive models (usually more expensive versions of the same drive) were specified to run at the higher RLL data transfer rate. In some cases, a drive had sufficient margin to allow the MFM specified model to run at the denser/faster RLL data transfer rate (not recommended nor guaranteed by manufacturers). Also, any RLL-certified drive could run on any MFM controller, but with 1/3 less data capacity and as much as 1/3 less data transfer rate compared to its RLL specifications.
+
+[[Enhanced Small Disk Interface]] (ESDI) also supported multiple data rates (ESDI disks always used 2,7&amp;nbsp;RLL, but at 10, 15 or 20&amp;nbsp;megabits per second), but this was usually negotiated automatically by the disk drive and controller; most of the time, however, 15 or 20&amp;nbsp;megabit ESDI disk drives were not downward compatible (i.e. a 15 or 20&amp;nbsp;megabit disk drive would not run on a 10&amp;nbsp;megabit controller). ESDI disk drives typically also had jumpers to set the number of sectors per track and (in some cases) sector size.
+
+Modern hard drives present a consistent interface to the rest of the computer, no matter what data encoding scheme is used internally. Typically a [[Digital signal processor|DSP]] in the electronics inside the hard drive takes the raw analog voltages from the read head and uses [[Partial Response Maximum Likelihood|PRML]] and [[ReedâSolomon error correction]]&lt;ref&gt;[http://gaussianwaves.blogspot.com/2008/06/reed-solomon-codes-introduction.html &quot;Reed Solomon Codes â Introduction&quot;] &lt;!-- I wish I had a better reference --&gt;&lt;/ref&gt; to decode the sector boundaries and sector data, then sends that data out the standard interface. That DSP also watches the error rate detected by [[error detection and correction]], and performs [[bad sector]] remapping, data collection for [[Self-Monitoring, Analysis, and Reporting Technology]], and other internal tasks.
+
+[[SCSI]] originally had just one signaling frequency of 5&amp;nbsp;[[Hertz|MHz]] for a maximum data rate of 5 [[megabyte]]s/second over 8 parallel conductors, but later this was increased dramatically. The SCSI bus speed had no bearing on the disk's internal speed because of buffering between the SCSI bus and the disk drive's internal data bus; however, many early disk drives had very small buffers, and thus had to be reformatted to a different interleave (just like ST-506 disks) when used on slow computers, such as early [[Amiga#Peripherals|Commodore Amiga]], [[IBM PC compatible]]s and [[Apple Macintosh]]es.
+
+ATA disks have typically had no problems with interleave or data rate, due to their controller design, but many early models were incompatible with each other and could not run with two devices on the same physical cable in a master/slave setup. This was mostly remedied by the mid-1990s, when ATA's specification was standardized and the details began to be cleaned up, but still causes problems occasionally (especially with CD-ROM and DVD-ROM disks, and when mixing [[Ultra DMA]] and non-UDMA devices).
+
+Serial ATA does away with master/slave setups entirely, placing each disk on its own channel (with its own set of I/O ports) instead.
+
+FireWire/IEEE&amp;nbsp;1394 and USB(1.0/2.0/3.0) hard drives consist of enclosures containing generally ATA or Serial ATA disks with built-in adapters to these external buses. 
+
+===Disk interface families used in personal computers===
+[[Image:Pata hdds.jpg|thumb|300px|Several Parallel ATA hard disk drives]]
+
+Historical '''bit serial interfaces''' connect a hard disk drive (HDD) to a hard disk controller (HDC) with two cables, one for control and one for data. (Each drive also has an additional cable for power, usually connecting it directly to the power supply unit). The HDC provided significant functions such as serial/parallel conversion, data separation, and track formatting, and required matching to the drive (after formatting) in order to assure reliability. Each control cable could serve two or more drives, while a dedicated (and smaller) data cable served each drive.
+* ST506 used [[Modified Frequency Modulation|MFM]] (Modified Frequency Modulation) for the data encoding method.
+* ST412 was available in either MFM or [[Run Length Limited|RLL]] (Run Length Limited) encoding variants.
+* [[Enhanced Small Disk Interface]] (ESDI) was an industry standard interface similar to ST412 supporting higher data rates between the processor and the disk drive.
+
+Modern '''bit serial interfaces''' connect a hard disk drive to a host bus interface adapter (today typically integrated into the &quot;[[Southbridge (computing)|south bridge]]&quot;) with one data/control cable. (As for historical ''bit serial interfaces'' above, each drive also has an additional power cable, usually direct to the power supply unit.)
+* [[Fibre Channel]] (FC) is a successor to parallel SCSI interface on enterprise market. It is a serial protocol. In disk drives usually the [[Fibre Channel Arbitrated Loop]] (FC-AL) connection topology is used. FC has much broader usage than mere disk interfaces, and it is the cornerstone of [[storage area network]]s (SANs). Recently other protocols for this field, like [[iSCSI]] and [[ATA over Ethernet]] have been developed as well. Confusingly, drives usually use ''copper'' twisted-pair cables for Fibre Channel, not fibre optics. The latter are traditionally reserved for larger devices, such as servers or [[disk array controller]]s.
+* [[Serial ATA]] (SATA). The SATA data cable has one data pair for differential transmission of data to the device, and one pair for differential receiving from the device, just like [[EIA-422]]. That requires that data be transmitted serially. A similar [[differential signaling]] system is used in [[RS485]], [[LocalTalk]], [[USB]], [[Firewire]], and differential [[SCSI]].
+* [[Serial Attached SCSI]] (SAS). The SAS is a new generation serial communication protocol for devices designed to allow for much higher speed data transfers and is compatible with SATA. SAS uses a mechanically identical data and power connector to standard 3.5-inch SATA1/SATA2 HDDs, and many server-oriented SAS RAID controllers are also capable of addressing SATA hard drives. SAS uses serial communication instead of the parallel method found in traditional SCSI devices but still uses SCSI commands.
+
+[[File:Seagate ST33232A hard disk inner view.jpg|thumb|right|Inner view of a 1998 [[Seagate Technology|Seagate]] hard disk drive which used [[Parallel ATA]] interface]]
+'''Word serial interfaces''' connect a hard disk drive to a host bus adapter (today typically integrated into the &quot;[[Southbridge (computing)|south bridge]]&quot;) with one cable for combined data/control. (As for all ''bit serial interfaces'' above, each drive also has an additional power cable, usually direct to the power supply unit.) The earliest versions of these interfaces typically had a 8&amp;nbsp;bit parallel data transfer to/from the drive, but 16-bit versions became much more common, and there are 32&amp;nbsp;bit versions. Modern variants have serial data transfer. The word nature of data transfer makes the design of a host bus adapter significantly simpler than that of the precursor HDD controller.
+* [[Integrated Drive Electronics]] (IDE), later renamed to ATA, with the alias P-ATA or PATA (&quot;parallel ATA&quot;) retroactively added upon introduction of the new variant [[Serial ATA]]. The original name reflected the innovative integration of HDD controller with HDD itself, which was not found in earlier disks. Moving the HDD controller from the interface card to the disk drive helped to standardize interfaces, and to reduce the cost and complexity. The 40-pin IDE/ATA connection transfers 16&amp;nbsp;bits of data at a time on the data cable. The data cable was originally 40-conductor, but later higher speed requirements for data transfer to and from the hard drive led to an &quot;ultra DMA&quot; mode, known as [[AT Attachment#Parallel ATA interface|UDMA]]. Progressively swifter versions of this standard ultimately added the requirement for a 80-conductor variant of the same cable, where half of the conductors provides [[ground (electricity)|grounding]] necessary for enhanced high-speed signal quality by reducing [[crosstalk (electronics)|cross talk]]. The interface for 80-conductor only has 39 pins, the missing pin acting as a key to prevent incorrect insertion of the connector to an incompatible socket, a common cause of disk and controller damage.
+* EIDE was an unofficial update (by Western Digital) to the original IDE standard, with the key improvement being the use of [[direct memory access]] (DMA) to transfer data between the disk and the computer without the involvement of the [[central processing unit|CPU]], an improvement later adopted by the official ATA standards. By directly transferring data between memory and disk, DMA eliminates the need for the CPU to copy byte per byte, therefore allowing it to process other tasks while the data transfer occurs.
+* [[Small Computer System Interface]] (SCSI), originally named SASI for Shugart Associates System Interface, was an early competitor of ESDI. SCSI disks were standard on servers, workstations, [[Amiga#Peripherals|Commodore Amiga]], and [[Apple Macintosh]] computers through the mid-1990s, by which time most models had been transitioned to IDE (and later, SATA) family disks. Only in 2005 did the capacity of SCSI disks fall behind IDE disk technology, though the highest-performance disks are still available in SCSI, SAS and Fibre Channel only. The range limitations of the data cable allows for external SCSI devices. Originally SCSI data cables used single ended (common mode) data transmission, but server class SCSI could use differential transmission, either [[low-voltage differential signaling|low voltage differential]] (LVD) or [[Differential signaling#High-voltage differential signaling|high voltage differential]] (HVD). (&quot;Low&quot; and &quot;High&quot; voltages for differential SCSI are relative to SCSI standards and do not meet the meaning of low voltage and high voltage as used in general electrical engineering contexts, as apply e.g. to statutory electrical codes; both LVD and HVD use low voltage signals (3.3 V and 5 V respectively) in general terminology.)
+
+{| class=&quot;wikitable&quot; border=&quot;1&quot;
+|-
+! [[Acronym]] or abbreviation !! Meaning !! Description
+|-
+| [[Shugart Associates System Interface|SASI]] ||Shugart Associates System Interface ||Historical predecessor to SCSI.
+|-
+| [[SCSI]]||Small Computer System Interface || [[Computer bus|Bus]] oriented that handles [[concurrency (computer science)|concurrent]] operations.
+|-
+| [[Serial attached SCSI|SAS]] || Serial Attached SCSI||Improvement of SCSI, uses serial communication instead of parallel.
+|-
+| [[ST-506]] || Seagate Technology || Historical Seagate interface.
+|-
+| [[ST-412]] || Seagate Technology || Historical Seagate interface (minor improvement over ST-506).
+|-
+| [[Enhanced Small Disk Interface|ESDI]] || Enhanced Small Disk Interface || Historical; backwards compatible with ST-412/506, but faster and more integrated.
+|-
+| [[Advanced Technology Attachment|ATA]] (PATA)|| Advanced Technology Attachment || Successor to ST-412/506/ESDI by integrating the disk controller completely onto the device. Incapable of concurrent operations.
+|-
+| [[Serial ATA|SATA]] || Serial ATA || Modification of ATA, uses serial communication instead of parallel.
+|}
+
+==Integrity==
+
+[[Image:Hard disk head.jpg|thumb|left|Close-up HDD head resting on disk platter]]
+
+Due to the extremely close spacing between the heads and the disk surface, hard disk drives are vulnerable to being damaged by a [[head crash]]âa [[hard disk failure|failure]] of the disk in which the head scrapes across the platter surface, often grinding away the thin magnetic film and causing data loss. Head crashes can be caused by electronic failure, a sudden power failure, physical shock, contamination of the drive's internal enclosure, wear and tear, [[corrosion]], or poorly manufactured platters and heads.
+
+The HDD's spindle system relies on air pressure inside the [[disk enclosure]] to support the heads at their proper ''flying height'' while the disk rotates. Hard disk drives require a certain range of air pressures in order to operate properly. The connection to the external environment and pressure occurs through a small hole in the enclosure (about 0.5&amp;nbsp;mm in breadth), usually with a filter on the inside (the ''breather filter'').&lt;ref&gt;[http://www.alasir.com/books/hards/022-024.html Micro House PC Hardware Library Volume I: Hard Drives, Scott Mueler, Macmillan Computer Publishing]&lt;/ref&gt; If the air pressure is too low, then there is not enough lift for the flying head, so the head gets too close to the disk, and there is a risk of head crashes and data loss. Specially manufactured sealed and pressurized disks are needed for reliable high-altitude operation, above about 3,000&amp;nbsp;m (10,000&amp;nbsp;feet).&lt;ref&gt;[http://www.waea.org/committees/technology/other_tech_documents/harddisk.pdf Waea.org], Ruggedized Disk Drives for Commercial Airborne Computer Systems&lt;/ref&gt; Modern disks include temperature sensors and adjust their operation to the operating environment.
+Breather holes can be seen on all disk drivesâthey usually have a sticker next to them, warning the user not to cover the holes. The air inside the operating drive is constantly moving too, being swept in motion by friction with the spinning platters. This air passes through an internal recirculation (or &quot;recirc&quot;) filter to remove any leftover contaminants from manufacture, any particles or chemicals that may have somehow entered the enclosure, and any particles or outgassing generated internally in normal operation.
+Very high humidity for extended periods can corrode the heads and platters.
+
+For [[giant magnetoresistive effect|giant magnetoresistive]] (GMR) heads in particular, a minor head crash from contamination (that does not remove the magnetic surface of the disk) still results in the head temporarily overheating, due to friction with the disk surface, and can render the data unreadable for a short period until the head temperature stabilizes (so called &quot;thermal asperity&quot;, a problem which can partially be dealt with by proper electronic filtering of the read signal).
+
+===Actuation of moving arm===
+{{Refimprove section|date=November 2010}}
+[[File:Kopftraeger WD2500JS-00MHB0.jpg|thumb|Head stack with an actuator coil on the left and read/write heads on the right]]
+
+The hard drive's electronics control the movement of the actuator and the rotation of the disk, and perform reads and writes on demand from the [[disk controller]]. Feedback of the drive electronics is accomplished by means of special segments of the disk dedicated to servo feedback. These are either complete concentric circles (in the case of dedicated servo technology), or segments interspersed with real data (in the case of embedded servo technology). The servo feedback optimizes the signal to noise ratio of the GMR sensors by adjusting the voice-coil of the actuated arm. The spinning of the disk also uses a servo motor. Modern disk firmware is capable of scheduling reads and writes efficiently on the platter surfaces and remapping sectors of the media which have failed.
+
+===Landing zones and load/unload technology===
+[[Image:Rwheadmacro.jpg|thumb|Read/write head from circa-1998 [[Fujitsu]] 3.5&quot; hard disk (approx. 2.0 mm x 3.0 mm)]]
+[[Image:Rwheadmicro.JPG|thumb|[[Micrograph|Microphotograph]] of an older generation hard disk drive head and slider (1990's)]]
+
+During normal operation heads in HDDs fly above the data recorded on the disks.  Modern HDDs prevent power interruptions or other malfunctions from landing its heads in the data zone by either physically moving ('''parking''') the heads to a special '''landing zone''' on the platters that is not used for data storage, or by physically locking the heads in a suspended ('''unloaded''') position raised off the platters.
+Some early PC HDDs did not park the heads automatically when power was prematurely disconnected and the heads would land on data. In some other early units the user manually parked the heads by running a program to park the HDD's heads.
+
+==== Landing zones ====
+A '''landing zone''' is an area of the platter usually near its inner diameter (ID), where no data are stored. This area is called the Contact Start/Stop (CSS) zone. Disks are designed such that either a [[spring (device)|spring]] or, more recently, rotational [[inertia]] in the platters is used to park the heads in the case of unexpected power loss. In this case, the [[brushless DC electric motor|spindle motor]] temporarily acts as a [[electrical generator|generator]], providing power to the actuator.
+
+Spring tension from the head mounting constantly pushes the heads towards the platter. While the disk is spinning, the heads are supported by an air bearing and experience no physical contact or wear. In CSS drives the sliders carrying the head sensors (often also just called ''heads'') are designed to survive a number of landings and takeoffs from the media surface, though wear and tear on these microscopic components eventually takes its toll. Most manufacturers design the sliders to survive 50,000 contact cycles before the chance of damage on startup rises above 50%. However, the decay rate is not linear: when a disk is younger and has had fewer start-stop cycles, it has a better chance of surviving the next startup than an older, higher-mileage disk (as the head literally drags along the disk's surface until the air bearing is established). For example, the Seagate Barracuda 7200.10 series of desktop hard disks are rated to 50,000 start-stop cycles, in other words no failures attributed to the head-platter interface were seen before at least 50,000 start-stop cycles during testing.&lt;ref&gt;[http://www.seagate.com/support/disc/manuals/sata/100402371a.pdf Barracuda 7200.10 Serial ATA Product Manual]&lt;/ref&gt;
+
+Around 1995 IBM pioneered a technology where a landing zone on the disk is made by a precision laser process (''Laser Zone Texture'' = LZT) producing an array of smooth nanometer-scale &quot;bumps&quot; in a landing zone,&lt;ref&gt;[http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=490199 IEEE.org], Baumgart, P.; Krajnovich, D.J.; Nguyen, T.A.; Tam, A.G.; IEEE Trans. Magn.&lt;/ref&gt; thus vastly improving [[stiction]] and wear performance. This technology is still largely in use today (2011), predominantly in desktop and enterprise (3.5&amp;nbsp;inch) drives. In general, CSS technology can be prone to increased stiction (the tendency for the heads to stick to the platter surface), e.g. as a consequence of increased humidity. Excessive stiction can cause physical damage to the platter and slider or spindle motor.
+
+==== Unloading ====
+'''Load/Unload''' technology relies on the heads being lifted off the platters into a safe location, thus eliminating the risks of wear and stiction altogether. The first HDD [[IBM 305 RAMAC|RAMAC]] and most early disk drives used complex mechanisms to load and unload the heads. Modern HDDs use ramp loading, first introduced by [[Memorex]] in 1967,&lt;ref&gt;Pugh et al.; &quot;IBM's 360 and Early 370 Systems&quot;; MIT Press, 1991, pp.270&lt;/ref&gt; to load/unload onto plastic &quot;ramps&quot; near the outer disk edge.
+
+All HDDs today still use one of these two technologies listed above. Each has a list of advantages and drawbacks in terms of loss of storage area on the disk, relative difficulty of mechanical tolerance control, non-operating shock robustness, cost of implementation, etc.
+
+Addressing shock robustness, [[International Business Machines|IBM]] also created a technology for their [[ThinkPad]] line of laptop computers called the Active Protection System. When a sudden, sharp movement is detected by the built-in [[accelerometer]] in the Thinkpad, internal hard disk heads automatically unload themselves to reduce the risk of any potential data loss or scratch defects. [[Apple Inc.|Apple]] later also utilized this technology in their [[PowerBook]], [[iBook]], [[MacBook Pro]], and [[MacBook]] line, known as the [[Sudden Motion Sensor]]. [[VAIO|Sony]],&lt;ref&gt;{{cite web|url=http://b2b.sony.com/Solutions/lpage.do?page=/vaio_smb/index.html&amp;name=VAIO%20SMB|title=Sony &amp;#124; For Business &amp;#124; VAIO SMB|publisher=B2b.sony.com|accessdate=13 March 2009}}&lt;/ref&gt; HP with their HP 3D DriveGuard&lt;ref&gt;[http://www.hp.com/sbso/solutions/pc_expertise/professional_innovations/hp-3d-drive-guard.pdf HP.com]&lt;/ref&gt; and [[Toshiba]]&lt;ref&gt;[http://eu.computers.toshiba-europe.com/Contents/Toshiba_teg/EU/WORKSHOP/files/EXP-2005-04-HDD-Protection-EN.pdf Toshiba HDD Protection measures.]&lt;/ref&gt; have released similar technology in their notebook computers.&lt;!-- Now if manufacturers could agree on a common name.. *whish* --&gt;
+
+==={{anchor|Disk failures and their metrics}}Failures and metrics=== &lt;!-- NOTE: Some articles link to this exact section name. Do not change the anchor template. --&gt;
+Most major hard disk and motherboard vendors now support [[S.M.A.R.T.]] (Self-Monitoring, Analysis, and Reporting Technology), which measures drive characteristics such as [[operating temperature]], spin-up time, data error rates, etc. Certain trends and sudden changes in these parameters are thought to be associated with increased likelihood of drive failure and data loss.
+
+However, not all failures are predictable. Normal use eventually can lead to a breakdown in the inherently fragile device, which makes it essential for the user to periodically back up the data onto a separate storage device. Failure to do so can lead to the loss of data. While it may sometimes be possible to recover lost information, it is normally an extremely costly procedure, and it is not possible to guarantee success. A 2007 study published by [[Google]] suggested very little correlation between failure rates and either high temperature or activity level; however, the correlation between manufacturer/model and failure rate was relatively strong. Statistics in this matter is kept highly secret by most entities. Google did not publish the manufacturer's names along with their respective failure rates,&lt;ref name=google&gt;
+{{cite conference|author=Eduardo Pinheiro, Wolf-Dietrich Weber and Luiz AndrÃ© Barroso|year=2007|month=February|title=Failure Trends in a Large Disk Drive Population|conference=5th USENIX Conference on File and Storage Technologies (FAST 2007)|conferenceurl=http://www.usenix.org/event/fast07/|url=http://labs.google.com/papers/disk_failures.html|booktitle=[[USENIX]] Conference on File and Storage Technologies|accessdate=15 September 2008}}&lt;/ref&gt; though they have since revealed that they use Hitachi Deskstar drives in some of their servers.&lt;ref&gt;[http://news.cnet.com/8301-1001_3-10209580-92.html CNet.com]&lt;/ref&gt; While several S.M.A.R.T. parameters have an impact on failure probability, a large fraction of failed drives do not produce predictive S.M.A.R.T. parameters.&lt;ref name=google/&gt; S.M.A.R.T. parameters alone may not be useful for predicting individual drive failures.&lt;ref name=google/&gt;
+
+A common misconception is that a colder hard drive will last longer than a hotter hard drive.
+The Google study seems to imply the reverseâ&quot;lower temperatures are associated with higher failure rates&quot;. Hard drives with S.M.A.R.T.-reported average temperatures below 27&amp;nbsp;Â°C (80.6&amp;nbsp;Â°F) had higher failure rates than hard drives with the highest reported average temperature of 50&amp;nbsp;Â°C (122&amp;nbsp;Â°F), failure rates at least twice as high as the optimum S.M.A.R.T.-reported temperature range of 36&amp;nbsp;Â°C (96.8&amp;nbsp;Â°F) to 47&amp;nbsp;Â°C (116.6&amp;nbsp;Â°F).&lt;ref name=google/&gt;
+
+[[Small Computer System Interface|SCSI]], [[Serial attached SCSI|SAS]], and [[Fibre Channel|FC]] drives are typically more expensive and are traditionally used in [[server (computing)|server]]s and [[disk array]]s, whereas inexpensive ATA and SATA drives evolved in the [[home computer]] market and were perceived to be less reliable. This distinction is now becoming blurred.
+
+The [[mean time between failures]] (MTBF) of SATA drives is usually about 600,000 hours (some drives such as [[Western Digital Raptor]] have rated 1.4&amp;nbsp;million hours MTBF),&lt;ref&gt;[http://www.wdc.com/wdproducts/library/SpecSheet/ENG/2879-701284.pdf WD VelociRaptor Drive Specification Sheet (PDF)]&lt;/ref&gt; while SCSI drives are rated for upwards of 1.5&amp;nbsp;million hours.{{Citation needed|date=July 2007}} However, independent research indicates that MTBF is not a reliable estimate of a drive's longevity.&lt;ref&gt;{{cite web|url=http://storagemojo.com/?p=383|title=Everything You Know About Disks Is Wrong|publisher=StorageMojo|date=20 February 2007|accessdate=29 August 2007}}&lt;/ref&gt; MTBF is conducted in laboratory environments in test chambers and is an important metric to determine the quality of a disk drive before it enters high volume production. Once the drive product is in production, the more valid metric is [[annualized failure rate]] (AFR).{{Citation needed|date=October 2007}} AFR is the percentage of real-world drive failures after shipping.
+
+SAS drives are comparable to SCSI drives, with high MTBF and high reliability.{{Citation needed|date=July 2007}}
+
+Enterprise S-ATA drives designed and produced for enterprise markets, unlike standard S-ATA drives, have reliability comparable to other enterprise class drives.&lt;ref&gt;{{cite web|url=http://www.synology.com/wiki/index.php/Differences_between_an_Enterprise-Class_HDD_and_a_Desktop-Class_HDD|title=Differences between an Enterprise-Class HDD and a Desktop-Class HDD|publisher=Synology.com|date=4 September 2008|accessdate=13 March 2009}}&lt;/ref&gt;&lt;ref&gt;[http://download.intel.com/support/motherboards/server/sb/enterprise_class_versus_desktop_class_hard_drives_.pdf Intel Whitepaper on Enterprise-class versus Desktop-class Hard Drives]&lt;/ref&gt;
+
+Typically enterprise drives (all enterprise drives, including SCSI, SAS, enterprise SATA, and FC) experience between 0.70%â0.78% annual failure rates from the total installed drives.{{Citation needed|date=October 2007}}
+
+Eventually all mechanical hard disk drives fail, so to mitigate loss of data, some form of redundancy is needed, such as [[Redundant Array of Independent Disks|RAID]]&lt;ref name=&quot;NotEnuf&quot;&gt;As discussed in their articles neither [[RAID]] nor [[backup]] are fool proof.&lt;/ref&gt; or a regular [[backup]]&lt;ref name=&quot;NotEnuf&quot; /&gt; system.
+
+==External removable drives==
+{{multiple image
+&lt;!-- Essential parameters --&gt;
+| align     = right
+| direction = vertical 
+| width     = &lt;!-- Digits only; no &quot;px&quot; suffix, please --&gt;
+
+| image1    = Toshiba 1 TB External USB Hard Drive.jpg
+| width1    = 250
+| alt1      = 
+| caption1  = [[Toshiba]] 1 [[Terabyte|TB]] 2.5&quot; external [[USB 2.0]] hard disk drive
+
+| image2    = External hard drives.jpg
+| width2    = 250
+| alt2      = 
+| caption2  = 3.0 [[Terabyte|TB]] 3.5&quot; [[Seagate FreeAgent|Seagate FreeAgent GoFlex]] [[plug and play]] external [[USB 3.0]]-[[Computer compatibility|compatible]] drive (left), 750 [[Gigabyte|GB]] 3.5&quot; [[Seagate Technology]] [[push-button]] external [[USB 2.0]] drive (right), and a 500 [[Gigabyte|GB]] 2.5&quot; [[generic brand]] [[plug and play]] external [[USB 2.0]] drive (front).
+
+| header            = 
+| header_align      = &lt;!-- left/right/center --&gt;
+| header_background = 
+| footer            = 
+| footer_align      = &lt;!-- left/right/center --&gt;
+| footer_background = 
+| background color  = 
+}}
+
+External removable hard disk drives offer independence from [[system integration]], establishing communication via connectivity options, such as [[USB]]. 
+
+[[Plug and play]] drive functionality offers system compatibility, and features large volume data storage options, but maintains a portable design. 
+
+These drives with an ability to function and be removed simplistically, have had further applications due their flexibility. These include:
+
+* [[Disk cloning]]
+
+* [[Data storage]]
+
+* [[Data recovery]]
+
+* [[Backup]] of files and information
+
+* Storing and running [[virtual machines]]
+
+* [[Scratch disk]] for [[video editing]] applications and [[personal video recorder|video recording]]
+
+* Booting [[operating systems]] (e.g. [[Linux]], [[Microsoft Windows|Windows]], [[Windows To Go]] â a.k.a. [[Live USB]])
+
+External hard disk drives are available in two main sizes (physical size), 2.5&quot; and 3.5&quot;.&lt;ref&gt;[http://www.helpwithpcs.com/buy-guides/external-hard-drives.html External Hard Drives | Buying guide for external hard drives, including portable and desktop devices â helpwithpcs.com]&lt;/ref&gt;
+
+Features such as biometric security or multiple interfaces are available at a higher cost.&lt;ref&gt;[http://biometricsecurityproducts.org/biometric-safe/back-up-your-important-data-to-external-hard-disk-drive.html Back Up Your Important Data to External Hard disk drive | Biometric Safe | Info and Products Reviews about Biometric Security Device â Biometricsecurityproducts.org]&lt;/ref&gt;
+
+==Market segments==
+*{{As of|2011|September}}, the highest capacity consumer HDDs is 4&amp;nbsp;[[terabyte|TB]].&lt;ref name=&quot;FourTB&quot;/&gt;
+*'''&quot;[[desktop computer|Desktop]] HDDs&quot;''' typically store between 250 [[gigabyte|GB]] and 2 TB and rotate at 5400 to 10,000&amp;nbsp;[[revolutions per minute|rpm]], and have a media transfer rate of 0.5 Gbit/s or higher. (1&amp;nbsp;GB = 10&lt;sup&gt;9&lt;/sup&gt; bytes; 1&amp;nbsp;Gbit/s = 10&lt;sup&gt;9&lt;/sup&gt; bit/s)
+*'''Enterprise HDDs''' are typically used with multiple-user computers running [[enterprise software]]. Examples are
+**transaction processing databases;
+**internet infrastructure (email, webserver, e-commerce);
+**scientific computing software;
+**nearline storage management software.
+:The fastest enterprise HDDs spin at 10,000 or 15,000&amp;nbsp;rpm, and can achieve sequential media transfer speeds above 1.6&amp;nbsp;Gbit/s.&lt;ref name = &quot;erwpnw&quot;&gt;[http://www.seagate.com/docs/pdf/datasheet/disc/ds_cheetah_15k_5.pdf Seagate Cheetah 15K.5]&lt;/ref&gt; and a sustained transfer rate up to 1&amp;nbsp;Gbit/s.&lt;ref name = &quot;erwpnw&quot;/&gt; Drives running at 10,000 or 15,000&amp;nbsp;rpm use smaller platters to mitigate increased power requirements (as they have less [[air drag]]) and therefore generally have lower capacity than the highest capacity desktop drives.
+:Enterprise drives commonly operate continuously (&quot;24/7&quot;) in demanding environments while delivering the highest possible performance without sacrificing reliability. Maximum capacity is not the primary goal, and as a result the drives are often offered in capacities that are relatively low in relation to their cost.&lt;ref&gt;[http://www.articlesbase.com/data-recovery-articles/enterprise-hard-drives-825563.html Enterprise Hard Drives]&lt;/ref&gt;
+* '''Mobile HDDs''' or laptop HDDs, smaller than their desktop and enterprise counterparts, tend to be slower and have lower capacity. A typical mobile HDD spins at either 4200 rpm, 5200 rpm, 5400 rpm, or 7200 rpm, with 5400 rpm being the most prominent. 7200 rpm drives tend to be more expensive and have smaller capacities, while 4200 rpm models usually have very high storage capacities. Because of smaller platter(s), mobile HDDs generally have lower capacity than their greater desktop counterparts.
+
+The [[exponential growth|exponential]] increases in disk space and data access speeds of HDDs have enabled the commercial viability of consumer products that require large storage capacities, such as [[digital video recorder]]s and digital audio players.&lt;ref&gt;{{cite news|first=Chip|last=Walter|url=http://www.sciam.com/article.cfm?articleID=000B0C22-0805-12D8-BDFD83414B7F0000&amp;ref=sciam&amp;chanID=sa006|title=Kryder's Law|work=Scientific American|publisher=Verlagsgruppe Georg von Holtzbrinck GmbH|date=25 July 2005|accessdate=29 October 2006}}&lt;/ref&gt; In addition, the availability of vast amounts of cheap storage has made viable a variety of web-based services with extraordinary capacity requirements, such as free-of-charge web search, [[web archiving]], and video sharing ([[Google]], [[Internet Archive]], YouTube, etc.).
+
+==Sales==
+Worldwide revenue from shipments of HDDs is expected to reach $27.7&amp;nbsp;billion in 2010, up 18.4% from $23.4&amp;nbsp;billion in 2009&lt;ref&gt;[http://www.informationweek.com/news/storage/data_protection/showArticle.jhtml?articleID=223800072 Storage Demand, Revenue On The Rise]&lt;/ref&gt; corresponding to a 2010 unit shipment forecast of 674.6&amp;nbsp;million compared to 549.5&amp;nbsp;million units in 2009.&lt;ref&gt;[http://www.emsnow.com/npps/story.cfm?pg=story&amp;id=42187 RSS iSuppli issues fast facts on Seagate's earnings]&lt;/ref&gt;
+
+==Icons==
+HDDs are traditionally symbolized as a stylized stack of platters or as a cylinder and are found in diagrams or on lights to indicate hard drive access.
+
+In most modern [[operating systems]], hard drives are represented by an illustration or photograph of the drive enclosure, as shown in the examples below.
+
+&lt;gallery widths=&quot;250&quot;&gt;
+File:Hdd icon.svg|HDDs are commonly symbolized with a drive icon
+File:RAID 0.svg|[[RAID]] diagram icon symbolizing the [[disk array|array]] of disks
+File:DysanRemovableDiskPack.agr.jpg|1970s vintage disk pack with the cover removed
+&lt;/gallery&gt;
+
+==Manufacturers==
+{{see also|History of hard disk drives|List of defunct hard disk manufacturers}}
+More than 200 companies have manufactured hard disk drives over time. {{As of|2010|12}}, most hard drives are made by:&lt;ref&gt;{{cite web |url=http://www.servethehome.com/storage-news-roundup-q42010-hard-drive-market-analysis/ |title=Storage New Roundup: Q4'2010 Hard drive Market Analysis |date=11 February 2011 |accessdate=2011-07-24}}&lt;/ref&gt;
+* [[Western Digital]] (31.2%)
+* [[Seagate Technology|Seagate]] (29.2%)
+* [[Hitachi GST]] (18.1%) (Western Digital is acquiring their HDD business)
+* [[Toshiba]] (10.8%)
+* [[Samsung]] (10.7%) (Seagate is acquiring their HDD business)
+
+== See also ==
+{{portal box|Electronics|Information Technology}}
+
+* [[Automatic acoustic management]]
+* [[Cleanroom]]
+* [[Click of death]]
+* [[Data erasure]]
+* [[Drive mapping]]
+* [[Hybrid drive]]
+* [[S.M.A.R.T.]]
+* [[Solid-state drive]]
+* [[Write precompensation]]
+
+== Further reading ==
+* {{cite book|last=Mueller|first=Scott|authorlink=Scott Mueller|year=2011|title=Upgrading and Repairing PCs|edition=20th|publisher=Que|isbn=0789747103|ref=harv}}
+* {{cite book|last=Messmer|first=Hans-Peter|year=2001|title=The Indispensable PC Hardware Book|edition=4th|publisher=Addison-Wesley|isbn=0201596164|ref=harv}}
+
+== Notes and references ==
+{{Reflist|30em}}
+
+==External links==
+{{wikibooks|Minimizing hard disk drive failure and data loss}}
+{{Commons|Hard disk}}
+
+*[http://chmhdd.wetpaint.com/ Computer History Museum's HDD Working Group Website]
+*[http://hddscan.com/doc/HDD_Tracks_and_Zones.html HDD Tracks and Zones]
+*[http://hddscan.com/doc/HDD_from_inside.html HDD from inside]
+*[http://www.smarthdd.com/en/help.htm Hard Disk Drives Encyclopedia]
+*[http://www.hardstoragetech.com Hard Disk Drive Technology and Utility Tutorials]
+*[http://www.engineerguy.com/videos/video-harddrive.htm Video showing an opened HD working]
+
+{{Magnetic storage media}}
+{{Hard disk drive manufacturers}}
+{{Basic computer components}}
+
+{{DEFAULTSORT:Hard Disk Drive}}
+[[Category:Computer storage devices]]
+[[Category:Hard disk drives| ]]
+[[Category:Non-volatile memory]]
+[[Category:Computer storage media]]
+[[Category:File system management]]
+[[Category:Computer peripherals]]
+
+{{Link GA|de}}
+{{Link FA|af}}
+
+[[af:Hardeskyf]]
+[[ar:ÙØ±Øµ ØµÙØ¨]]
+[[an:Disco duro]]
+[[bn:à¦¹à¦¾à¦°à§à¦¡ à¦¡à¦¿à¦¸à§à¦]]
+[[ba:Ò Ð°ÑÑ Ð´Ð¸ÑÐº]]
+[[be:Ð¦Ð²ÑÑÐ´Ñ Ð´ÑÑÐº]]
+[[be-x-old:Ð¦ÑÐ²ÑÑÐ´Ñ Ð´ÑÑÐº]]
+[[bg:Ð¢Ð²ÑÑÐ´ Ð´Ð¸ÑÐº]]
+[[bs:Tvrdi disk]]
+[[br:Pladenn galet]]
+[[ca:Disc dur]]
+[[cs:PevnÃ½ disk]]
+[[cy:Disgyrrwr caled]]
+[[da:Harddisk]]
+[[de:Festplattenlaufwerk]]
+[[et:KÃµvaketas]]
+[[el:Î£ÎºÎ»Î·ÏÏÏ Î´Î¯ÏÎºÎ¿Ï]]
+[[es:Disco duro]]
+[[eo:Diskaparato]]
+[[eu:Disko gogor]]
+[[fa:Ø¯ÛØ³Ú© Ø³Ø®Øª]]
+[[fr:Disque dur]]
+[[fy:FÃªste skiif]]
+[[fur:Disc dÃ»r]]
+[[gl:Disco rÃ­xido]]
+[[ko:íë ëì¤í¬]]
+[[hi:à¤¹à¤¾à¤°à¥à¤¡ à¤¡à¤¿à¤¸à¥à¤ à¤¡à¥à¤°à¤¾à¤à¤µ]]
+[[hr:Tvrdi disk]]
+[[id:Cakram keras]]
+[[ia:Disco dur]]
+[[is:HarÃ°ur diskur]]
+[[it:Disco rigido]]
+[[he:××× × ×§×©××]]
+[[jv:Cakram Padhet]]
+[[kn:à²¹à²¾à²°à³à²¡à³ à²¡à²¿à²¸à³à²à³ââ à²¡à³à²°à³à²µà³]]
+[[ka:áá§áá á ááá¡áá]]
+[[kk:Ð¢Ò±ÑÒÑÐ»ÑÒÑÑ Ð´Ð¸ÑÐºÑ]]
+[[sw:Kiendeshi diski kuu]]
+[[la:Discus fixus]]
+[[lv:Cietais disks]]
+[[lt:Standusis diskas]]
+[[ln:Diski ebÃ³mbelo enÃ©ne]]
+[[lmo:Disch dÃ¼r]]
+[[hu:Merevlemez]]
+[[mk:Ð¢Ð²ÑÐ´ Ð´Ð¸ÑÐº]]
+[[mg:Kapila mangirana]]
+[[ml:à´¹à´¾à´°àµâà´¡àµ à´¡à´¿à´¸àµà´àµ à´¡àµà´°àµà´µàµ]]
+[[ms:Cakera keras]]
+[[mn:Ð¥Ð°ÑÑÑ Ð´Ð¸ÑÐº]]
+[[nl:Harde schijf]]
+[[ne:à¤¹à¤¾à¤°à¥à¤¡ à¤¡à¤¿à¤¸à¥à¤]]
+[[ja:ãã¼ããã£ã¹ã¯ãã©ã¤ã]]
+[[no:Platelager]]
+[[nn:Platelager]]
+[[oc:Disc dur]]
+[[mhr:Ð¢Ð°Ò¥Ð³Ð° Ð´Ð¸ÑÐº]]
+[[pnb:ÛØ§Ø±Ú ÚØ³Ú©]]
+[[nds:Fastplaat]]
+[[pl:Dysk twardy]]
+[[pt:Disco rÃ­gido]]
+[[ro:Disc dur]]
+[[rue:Ð¢Ð²ÐµÑÐ´ÑÐ¹ Ð´ÑÑÐº]]
+[[ru:ÐÑÑÑÐºÐ¸Ð¹ Ð´Ð¸ÑÐº]]
+[[sah:ÐÑÑÐ°Ð°Ð½Ð°Ñ Ð´Ð¸ÑÐº]]
+[[sq:Hard disk]]
+[[scn:Hard disk]]
+[[simple:Hard disk]]
+[[sk:PevnÃ½ disk]]
+[[sl:Trdi disk]]
+[[ckb:ÙÛÚ¯ÛÚØ®ÛØ±Û Ø¯ÛØ³Ú©Û ÚÛÙ]]
+[[sr:Ð¢Ð²ÑÐ´Ð¸ Ð´Ð¸ÑÐº]]
+[[sh:Tvrdi disk]]
+[[fi:Kiintolevy]]
+[[sv:HÃ¥rddisk]]
+[[tl:Hard disk drayb]]
+[[ta:à®µà®©à¯à®¤à®à¯à®à¯ à®¨à®¿à®²à¯ à®¨à®¿à®©à¯à®µà®à®®à¯]]
+[[kab:Aá¸ebsi aquran]]
+[[te:à°¹à°¾à°°à±à°¡à± à°¡à°¿à°¸à±à°à± à°¡à±à°°à±à°µà±]]
+[[th:à¸®à¸²à¸£à¹à¸à¸à¸´à¸ªà¸à¹]]
+[[tg:Ò²Ð¾ÑÐ¸Ð·Ð°]]
+[[tr:Sabit disk]]
+[[uk:Ð¢Ð²ÐµÑÐ´Ð¸Ð¹ Ð´Ð¸ÑÐº]]
+[[ur:ÙØ±Øµ Ú©Ø«ÛÙÛ ÙÛØ§Ø¯Û]]
+[[vec:Disco duro]]
+[[vi:á» ÄÄ©a cá»©ng]]
+[[war:Hard disk]]
+[[yi:×××¨××¢×¨ ×××¡×§]]
+[[zh-yue:ç¡¬ç¢]]
+[[diq:Hard disk]]
+[[bat-smg:StÄrnasÄs dÄskos]]
+[[zh:ç¡¬ç]]</rev></revisions></page></pages></query></api>

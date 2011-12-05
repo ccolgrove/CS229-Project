@@ -1,0 +1,497 @@
+<?xml version="1.0"?><api><query><pages><page pageid="22194" ns="0" title="Operating system"><revisions><rev xml:space="preserve">{{OS}}
+{{Refimprove|date=October 2011}}
+An '''operating system''' ('''OS''') is a set of [[Computer program|programs]] that  manage [[computer hardware]] resources and provide common services for [[application software]]. The operating system is the most important type of [[system software]] in a computer system. A user cannot run an application program on the computer without an operating system, unless the application program is self booting.
+
+Time-sharing operating systems schedule tasks for efficient use of the system and may also include accounting for cost allocation of processor time, mass storage, printing, and other resources. 
+
+For hardware functions such as input and output and [[dynamic memory allocation|memory allocation]], the operating system acts as an intermediary between application programs and the computer hardware,&lt;ref&gt;{{cite book | last = Stallings | title = Operating Systems, Internals and Design Principles | publisher = Prentice Hall | year = 2005 | location = Pearson |page=6}}&lt;/ref&gt;&lt;ref&gt;{{cite book | last = Dhotre| first = I.A.| title = Operating Systems. | publisher = Technical Publications | year = 2009 |page=1}}&lt;/ref&gt; although the application code is usually executed directly by the hardware and will frequently call the OS or be interrupted by it. Operating systems are found on almost any device that contains a computerâfrom [[cellular phone]]s and [[video game console]]s to [[supercomputers]] and [[web servers]].
+
+Examples of popular modern operating systems include &lt;!--Ordered alphabetically per discussion consensus; please do not re-order without discussing it on the talk page; see http://en.wikipedia.org/wiki/Talk:Operating_system#Market_share_changes.3B_the_alphabet_doesn.27t --&gt; [[Android (operating system)|Android]], [[iOS (Apple)|iOS]], [[Linux]], [[Mac OS X]], all of which have their roots in [[Unix]], and [[Microsoft Windows]].&lt;ref name=&quot;netapplications&quot;&gt;{{cite web| url=http://marketshare.hitslink.com/operating-system-market-share.aspx?qprid=10| title=Operating System Market Share| publisher=Net Applications}}&lt;/ref&gt;
+
+==Types==
+
+;Real-time
+:A [[real-time operating system]] is a multitasking operating system that aims at executing real-time applications. Real-time operating systems often use specialized scheduling algorithms so that they can achieve a deterministic nature of behavior. The main objective of real-time operating systems is their quick and predictable response to events. They have an event-driven or time-sharing design and often aspects of both. An event-driven system switches between tasks based on their priorities or external events while time-sharing operating systems switch tasks based on clock interrupts.
+
+;Multi-user vs. Single-user
+:A multi-user operating system allows multiple users to access a computer system concurrently. Time-sharing system can be classified as multi-user systems as they enable a multiple user access to a computer through the sharing of time. Single-user operating systems, as opposed to a multi-user operating system, are usable by a single user at a time. Being able to have multiple accounts on a Windows operating system does not make it a multi-user system. Rather, only the network administrator is the real user. But for a Unix-like operating system, it is possible for two users to login at a time and this capability of the OS makes it a multi-user operating system.
+
+;Multi-tasking vs. Single-tasking
+:When only a single program is allowed to run at a time, the system is grouped under a single-tasking system. However, when the operating system allows the execution of multiple tasks at one time, it is classified as a multi-tasking operating system. Multi-tasking can be of two types: pre-emptive or co-operative. In pre-emptive multitasking, the operating system slices the CPU time and dedicates one slot to each of the programs. Unix-like operating systems such as Solaris and Linux support pre-emptive multitasking. Cooperative multitasking is achieved by relying on each process to give time to the other processes in a defined manner. MS Windows prior to Windows 2000 used to support cooperative multitasking.
+
+;Distributed
+:A distributed operating system manages a group of independent computers and makes them appear to be a single computer. The development of networked computers that could be linked and communicate with each other gave rise to distributed computing. Distributed computations are carried out on more than one machine. When computers in a group work in cooperation, they make a distributed system.
+
+;Embedded
+:[[Embedded system|Embedded]] operating systems are designed to be used in embedded computer systems. They are designed to operate on small machines like PDAs with less autonomy. They are able to operate with a limited number of resources. They are very compact and extremely efficient by design. Windows CE and Minix 3 are some examples of embedded operating systems.
+
+==Summary==
+Early computers were built to perform a series of single tasks, like a calculator. Operating systems did not exist in their modern and more complex forms until the early 1960s.&lt;ref&gt;{{Cite book |title= Classic Operating Systems|editor1-first= Per Brinch|editor1-last= Hansen|year= 2001|publisher= Springer|location= |isbn= 038795113X|pages=4â7|url= http://books.google.com/?id=-PDPBvIPYBkC&amp;lpg=PP1&amp;pg=PP1#v=onepage&amp;q}}&lt;/ref&gt; Some operating system features were developed in the 1950s, such as monitor programs that could automatically run different application programs in succession to speed up processing.  Hardware features were added that enabled use of [[Runtime library|runtime libraries]], [[Programmable Interrupt Controller|interrupts]], and [[parallel processing]]. When personal computers by companies such as [[Apple Inc.]], [[Atari]], [[IBM]] and [[Amiga]] became popular in the 1980s, vendors added operating system features that had previously become widely used on mainframe and mini computers.  Later, many features such as [[graphical user interface]] were developed specifically for personal computer operating systems.
+
+An operating system consists of many parts. One of the most important components is the [[kernel (computing)|kernel]], which controls low-level processes that the average user usually cannot see: it controls how memory is read and written, the order in which processes are executed, how information is received and sent by devices like the monitor, keyboard and mouse, and decides how to interpret information received from networks. The [[user interface]] is a component that interacts with the computer user directly, allowing them to control and use programs. The user interface may be [[Graphical User Interface|graphical with icons and a desktop]], or [[Command-line interface|textual, with a command line]]. [[Application programming interface]]s provide services and code libraries that let applications developers write modular code reusing well defined programming sequences in user space libraries or in the operating system itself. Which features are considered part of the operating system is defined differently in various operating systems. For example, Microsoft Windows considers its user interface to be part of the operating system, while many versions of Linux do not.
+
+==History==
+{{Main|History of operating systems}}
+In the 1940s, the earliest electronic digital systems had no operating systems.  Electronic systems of this time were so primitive compared to those of today that instructions were often entered into the system one bit at a time on rows of mechanical switches or by jumper wires on plug boards.  These were special-purpose systems that, for example, generated ballistics tables for the military or controlled the printing of payroll checks from data on punched paper cards.  After programmable general purpose computers were invented, machine languages (consisting of strings of the binary digits 0 and 1 on punched paper tape) were introduced that speed up the programming process (Stern, 1981).
+[[Image:IBM360-65-1.corestore.jpg|thumb|[[OS/360]] was used on most IBM mainframe computers beginning in 1966, including the computers that helped NASA put a man on the moon.]]
+
+In the early 1950s, a computer could execute only one program at a time.  Each user had sole use of the computer for a limited period of time and would arrive at a scheduled time with program and data on punched paper cards and/or punched tape. The program would be loaded into the machine, and the machine would be set to work until the program completed or crashed. Programs could generally be debugged via a front panel using toggle switches and panel lights. It is said that [[Alan Turing]] was a master of this on the early [[Manchester Mark 1]] machine, and he was already deriving the primitive conception of an operating system from the principles of the [[Universal Turing machine]].{{Citation needed|date=June 2010}}
+
+Later machines came with libraries of [[Computer software|software]], which would be linked to a user's program to assist in operations such as input and output and generating [[Machine code|computer code]] from human-readable [[Assembly language|symbolic code]]. This was the genesis of the modern-day operating system. However, machines still ran a single job at a time.  At Cambridge University in England the job queue was at one time a washing line from which tapes were hung with different colored clothes-pegs to indicate job-priority.{{citation needed|date=September 2010}}
+
+===Mainframes===
+{{see also|History of IBM mainframe operating systems}}
+
+Through the 1950s, many major features were pioneered in the field of operating systems, including [[batch processing]], input/output [[interrupt]], [[Data buffer|buffer]]ing, [[Computer multitasking|multitasking]], [[spooling]], [[runtime library|runtime libraries]], [[Linker (computing)|link-loading]], and programs for [[Sorting algorithm|sorting records]] in files. These features were included or not included in application software at the option of application programmers, rather than in a separate operating system used by all applications.  In 1959 the [[SHARE Operating System]] was released as an integrated utility for the [[IBM 704]], and later in the [[IBM 709|709]] and [[IBM 7090|7090]] mainframes, although it was quickly supplanted by [[IBM 7090/94 IBSYS|IBSYS]]/IBJOB on the 709, 7090 and 7094.
+
+During the 1960s, IBM's [[OS/360]] introduced the concept of a single OS spanning an entire product line, which was crucial for the success of the System/360 machines.  [[IBM]]'s current mainframe operating systems are [[History of IBM mainframe operating systems|distant descendants]] of this original system and applications written for OS/360 can still be run on modern machines.{{Citation needed|date=June 2010}} 
+
+[[OS/360]] also pioneered the concept that the operating system keeps track of all of the system resources that are used, including program and data space allocation in main memory and file space in secondary storage, and [[file locking]] during update. When the process is terminated for any reason, all of these resources are re-claimed by the operating system.
+
+The alternative [[CP-67]] system for the [[IBM System/360 Model 67|S/360-67]] started a whole line of IBM operating systems focused on the concept of [[virtual machine]]s. Other operating systems used on IBM S/360 series mainframes included systems developed by IBM: COS/360 (Compatabililty Operating System), [[DOS/360]] (Disk Operating System), [[TSS/360]] (Time Sharing System), [[TOS/360]] (Tape Operating System), [[BOS/360]] (Basic Operating System), and [[IBM Airline Control Program|ACP]] (Airline Control Program), as well as a few non-IBM systems: [[Michigan Terminal System|MTS]] (Michigan Terminal System), [[MUSIC/SP|MUSIC]] (Multi-User System for Interactive Computing), and [[ORVYL]] (Stanford Timesharing System).
+
+[[Control Data Corporation]] developed the [[SCOPE (software)|SCOPE]] operating system in the 1960s, for [[batch processing]]. In cooperation with the University of Minnesota, the [[CDC Kronos|Kronos]] and later the [[NOS (software)|NOS]] operating systems were developed during the 1970s, which supported simultaneous batch and timesharing use. Like many commercial timesharing systems, its interface was an extension of the Dartmouth BASIC operating systems, one of the pioneering efforts in timesharing and programming languages. In the late 1970s, Control Data and the University of Illinois developed the [[PLATO]] operating system, which used plasma panel displays and long-distance time sharing networks. Plato was remarkably innovative for its time, featuring real-time chat, and multi-user graphical games.
+[[Burroughs Corporation]] introduced the [[B5000]] in 1961 with the [[Master Control Program|MCP]], ([[MCP (Burroughs Large Systems)|Master Control Program]]) operating system. The [[B5000]] was a [[stack machine]] designed to exclusively support high-level languages with no machine language or assembler, and indeed the [[Master Control Program|MCP]] was the first OS to be written exclusively in a high-level language â [[ESPOL]], a dialect of [[ALGOL]]. [[Master Control Program|MCP]] also introduced many other ground-breaking innovations, such as being the first commercial implementation of [[virtual memory]]. During development of the [[AS400]], [[IBM]] made an approach to Burroughs to licence MCP to run on the AS400 hardware. This proposal was declined by Burroughs management to protect its existing hardware production. [[Master Control Program|MCP]] is still in use today in the [[Unisys]] [[ClearPath/MCP]] line of computers.
+
+UNIVAC, the first commercial computer manufacturer, produced a series of EXEC operating systems. Like all early main-frame systems, this was a batch-oriented system that managed magnetic drums, disks, card readers and line printers. In the 1970s, UNIVAC produced the Real-Time Basic (RTB) system to support large-scale time sharing, also patterned after the Dartmouth BC system.
+
+General Electric and MIT developed General Electric Comprehensive Operating Supervisor (GECOS), which introduced the concept of ringed security privilege levels. After acquisition by Honeywell it was renamed to [[General Comprehensive Operating System]] (GCOS).
+
+Digital Equipment Corporation developed many operating systems for its various computer lines, including [[TOPS-10]] and [[TOPS-20]] time sharing systems for the 36-bit PDP-10 class systems. Prior to the widespread use of UNIX, TOPS-10 was a particularly popular system in universities, and in the early [[ARPANET]] community.
+
+In the late 1960s through the late 1970s, several hardware capabilities evolved that allowed similar or ported software to run on more than one system. Early systems had utilized microprogramming to implement features on their systems in order to permit different underlying architecture to appear to be the same as others in a series. In fact most 360s after the 360/40 (except the 360/165 and 360/168) were microprogrammed implementations. But soon other means of achieving application compatibility were proven to be more significant.
+
+The enormous investment in software for these systems made since 1960s caused most of the original computer manufacturers to continue to develop compatible operating systems along with the hardware. The notable supported mainframe operating systems include:
+* [[MCP (Burroughs Large Systems)|Burroughs MCP]] â [[Burroughs large systems|B5000]], 1961 to [[Unisys]] Clearpath/MCP, present.
+* IBM [[OS/360]] â [[IBM System/360]], 1966 to IBM [[z/OS]], present.
+* IBM [[CP-67]] â [[IBM System/360]], 1967 to IBM [[z/VM]], present.
+* UNIVAC [[EXEC 8]] â [[UNIVAC 1108]], 1967, to [[Unisys OS 2200 operating system|OS 2200]] [[Unisys]] Clearpath Dorado, present.
+
+===Microcomputers===
+[[Image:PC-DOS 1.10 screenshot.png|thumb|256px|PC-DOS was an early personal computer OS that featured a command line interface.]]
+[[Image:Apple Macintosh Desktop.png|thumb|256px|Mac OS by [[Apple Computer]] became the first widespread OS to feature a [[graphical user interface]]. Many of its features such as windows and icons would later become commonplace in GUIs.]]
+The first [[microcomputer]]s did not have the capacity or need for the elaborate operating systems that had been developed for mainframes and minis; minimalistic operating systems were developed, often loaded from [[Read-only memory|ROM]] and known as ''Monitors''. One notable early disk-based operating system was [[CP/M]], which was supported on many early microcomputers and was closely imitated by [[Microsoft]]'s [[MS-DOS]], which became wildly popular as the operating system chosen for the [[IBM PC]] (IBM's version of it was called IBM DOS or [[PC-DOS|PC DOS]]). In the '80s, Apple Computer Inc. (now [[Apple Inc.]]) abandoned its popular [[Apple II]] series of microcomputers to introduce the [[Apple Macintosh]] computer with an innovative [[Graphical User Interface]] (GUI) to the [[Mac OS]].
+
+The introduction of the [[Intel 80386]] [[CPU]] chip with [[32-bit]] architecture and [[paging]] capabilities, provided personal computers with the ability to run [[Computer multitasking|multitasking]] operating systems like those of earlier [[minicomputers]] and [[mainframes]]. Microsoft responded to this progress by hiring [[Dave Cutler]], who had developed the [[OpenVMS|VMS]] operating system for [[Digital Equipment Corporation]]. He would lead the development of the [[Windows NT]] operating system, which continues to serve as the basis for Microsoft's operating systems line. [[Steve Jobs]], a co-founder of [[Apple Inc.]], started [[NeXT]] Computer Inc., which developed the [[Unix-like]] [[NEXTSTEP]] operating system. NEXTSTEP would later be acquired by [[Apple Inc.]] and used, along with code from [[FreeBSD]] as the core of Mac OS X.
+
+The [[GNU Project]] was started by activist and programmer [[Richard Stallman]] with the goal of a complete [[free software]] replacement to the proprietary [[UNIX]] operating system. While the project was highly successful in duplicating the functionality of various parts of UNIX, development of the [[GNU Hurd]] kernel proved to be unproductive. In 1991, Finnish computer science student [[Linus Torvalds]], with cooperation from volunteers collaborating over the Internet, released the first version of the [[Linux kernel]]. It was soon merged with the GNU [[user space]] components and [[system software]] to form a complete operating system. Since then, the combination of the two major components has usually been referred to as simply &quot;Linux&quot; by the software industry, a naming convention that Stallman and the [[Free Software Foundation]] remain opposed to, preferring the name GNU/Linux. The Berkeley Software Distribution, known as [[BSD (operating system)|BSD]], is the UNIX derivative distributed by the University of California, Berkeley, starting in the 1970s. Freely distributed and [[ported]] to many minicomputers, it eventually also gained a following for use on PCs, mainly as [[FreeBSD]], [[NetBSD]] and [[OpenBSD]].
+
+==Examples of operating systems==
+===Unix and Unix-like operating systems===
+&lt;imagemap&gt;
+File:Unix history-simple.png|256px|thumb|Evolution of [[Unix]] systems
+default [[Image:Unix history-simple.svg]]
+&lt;/imagemap&gt;
+{{Main|Unix}}
+[[Ken Thompson]] wrote [[B (programming language)|B]], mainly based on [[BCPL]], which he used to write Unix, based on his experience in the [[MULTICS]] project. B was replaced by [[C (programming language)|C]], and Unix developed into a large, complex family of inter-related operating systems which have been influential in every modern operating system (see [[History of operating systems|History]]).
+
+The ''[[Unix-like]]'' family is a diverse group of operating systems, with several major sub-categories including [[System V]], [[BSD (operating system)|BSD]], and [[GNU/Linux]]. The name &quot;[[UNIX]]&quot; is a trademark of [[The Open Group]] which licenses it for use with any operating system that has been shown to conform to their definitions. &quot;Unix-like&quot; is commonly used to refer to the large set of operating systems which resemble the original Unix.
+
+Unix-like systems run on a wide variety of machine architectures. They are used heavily for [[server (computing)|servers]] in business, as well as [[workstation]]s in academic and engineering environments. [[Free software|Free]] Unix variants, such as [[GNU/Linux]] and [[Berkeley Software Distribution|BSD]], are popular in these areas.
+
+Four operating systems are certified by the [[The Open Group]] (holder of the Unix trademark) as Unix. HP's [[HP-UX]] and IBM's [[AIX operating system|AIX]] are both descendants of the original System V Unix and are designed to run only on their respective vendor's hardware. In contrast, [[Sun Microsystems|Sun Microsystems's]] [[Solaris Operating System]] can run on multiple types of hardware, including [[x86]] and [[Sparc]] servers, and PCs. Apple's [[Mac OS X]], a replacement for Apple's earlier (non-Unix) Mac OS, is a [[hybrid kernel]]-based BSD variant derived from [[NeXTSTEP]], [[Mach (kernel)|Mach]], and [[FreeBSD]].
+
+Unix interoperability was sought by establishing the [[POSIX]] standard. The POSIX standard can be applied to any operating system, although it was originally created for various Unix variants.
+
+====BSD and its descendants====
+[[Image:First Web Server.jpg|thumb|right|256px|The [[CERN httpd|first server]] for the [[World Wide Web]] ran on NeXTSTEP, based on BSD.]]
+{{Main|Berkeley Software Distribution}}
+A subgroup of the Unix family is the [[Berkeley Software Distribution]] family, which includes [[FreeBSD]], [[NetBSD]], and [[OpenBSD]]. These operating systems are most commonly found on [[webserver]]s, although they can also function as a personal computer OS. The Internet owes much of its existence to BSD, as many of the protocols now commonly used by computers to connect, send and receive data over a network were widely implemented and refined in BSD. The [[world wide web]] was also first demonstrated on a number of computers running an OS based on BSD called [[NextStep]].
+
+BSD has its roots in Unix. In 1974, [[University of California, Berkeley]] installed its first Unix system. Over time, students and staff in the computer science department there began adding new programs to make things easier, such as text editors. When Berkely received new [[VAX]] computers in 1978 with Unix installed, the school's undergraduates modified Unix even more in order to take advantage of the computer's hardware possibilities. The [[Defense Advanced Research Projects Agency]] of the US [[United States Department of Defense|Department of Defense]] took interest, and decided to fund the project. Many schools, corporations, and government organizations took notice and started to use Berkeley's version of Unix instead of the official one distributed by AT&amp;T.
+
+[[Steve Jobs]], upon leaving Apple Inc. in 1985, formed [[NeXT|NeXT Inc.]], a company that manufactured high-end computers running on a variation of BSD called [[NeXTSTEP]]. One of these computers was used by [[Tim Berners-Lee]] as the first webserver to create the World Wide Web.
+
+Developers like [[Keith Bostic]] encouraged the project to replace any non-free code that originated with Bell Labs. Once this was done, however, AT&amp;T sued. Eventually, after two years of legal disputes, the BSD project came out ahead and spawned a number of free derivatives, such as [[FreeBSD]] and [[NetBSD]].
+
+=====Mac OS X=====
+
+[[File:Mac OSX Lion screen.png|256px|thumb|The standard user interface of Mac OS X]]
+{{Main|Mac OS X}}
+Mac OS X is a line of [[open core]] graphical operating systems developed, marketed, and sold by [[Apple Inc.]], the latest of which is pre-loaded on all currently shipping [[Macintosh]] computers. Mac OS X is the successor to the original [[Mac OS]], which had been Apple's primary operating system since 1984. Unlike its predecessor, Mac OS X is a [[UNIX]] operating system built on technology that had been developed at [[NeXT]] through the second half of the 1980s and up until Apple purchased the company in early 1997.
+
+The operating system was first released in 1999 as [[Mac OS X Server 1.0]], with a desktop-oriented version ([[Mac OS X v10.0]]) following in March 2001. Since then, six more distinct &quot;client&quot; and &quot;server&quot; editions of Mac OS X have been released, the most recent being [[Mac OS X Lion|Mac OS X 10.7]], which was first made available on July 20, 2011. Releases of Mac OS X are named after [[big cat]]s; the current version of Mac OS X is &quot;Lion&quot;.
+
+The server edition, [[Mac OS X Server]], is [[software architecture|architecturally]] identical to its desktop counterpart but usually runs on Apple's line of Macintosh [[server (computing)|server]] hardware. Mac OS X Server includes work group management and administration software tools that provide simplified access to key [[network service]]s, including a [[mail transfer agent]], a [[samba software|Samba server]], an [[LDAP]] server, a [[Domain Name System|domain name server]], and others. In [[Mac OS X Lion|Mac OS X v10.7 Lion]], all server aspects of Mac OS X Server have been integrated into the client version.&lt;ref&gt;http://www.apple.com/macosx/lion/&lt;/ref&gt;
+
+====Plan 9====
+{{Main|Plan 9 from Bell Labs}}
+[[Ken Thompson]], [[Dennis Ritchie]] and [[Douglas McIlroy]] at [[Bell Labs]] designed and developed the C programming language to build the operating system Unix. Programmers at Bell Labs went on to develop [[Plan 9 from Bell Labs|Plan 9]] and [[Inferno (operating system)|Inferno]], which were engineered for modern distributed environments. Plan 9 was designed from the start to be a networked operating system, and had graphics built-in, unlike Unix, which added these features to the design later. It is currently released under the [[Lucent Public License]]. Inferno was sold to [[Vita Nuova Holdings]] and has been released under a GPL/MIT license.
+
+====Linux and GNU====
+{{Main|GNU|Linux|Linux kernel}}
+[[File:Ubuntu_11.10_Final.png|thumb|250px|[[Ubuntu (operating system)|Ubuntu]], a [[Unity (user interface) |Unity]] desktop [[Linux distribution]]]]
+Linux (or [[GNU/Linux]]) is a Unix-like operating system that was developed without any actual Unix code, unlike BSD and its variants. Linux can be used on a wide range of devices from supercomputers to wristwatches. The [[Linux kernel]] is released under an open source license, so anyone can read and modify its code. It has been modified to run on a large variety of electronics. Although estimates suggest that Linux is used on 1.82% of all personal computers,&lt;ref&gt;[[Usage share of operating systems]]&lt;/ref&gt;&lt;ref name=&quot;StatCounter&quot;&gt;{{cite web |title=Top 5 Operating Systems from January to April 2011 |url=http://gs.statcounter.com/#os-ww-monthly-201101-201104-bar |publisher=StatCounter |date=October 2009 |accessdate=November 5, 2009}}&lt;/ref&gt; it has been widely adopted for use in servers&lt;ref&gt;[http://www.idc.com/about/viewpressrelease.jsp?containerId=prUS22360110&amp;sectionId=null&amp;elementId=null&amp;pageType=SYNOPSIS IDC report into Server market share]&lt;/ref&gt; and embedded systems&lt;ref&gt;[http://www.linuxdevices.com/news/NS4920597981.html GNU/Linux still top embedded OS]&lt;/ref&gt; (such as cell phones). Linux has superseded Unix in most places{{Which?|date=July 2010}}, and is used on the 10 most powerful supercomputers in the world.&lt;ref&gt;[http://www.top500.org/list/2010/11/100 TOP500 List â November 2010 (1â100) | TOP500 Supercomputing Sites]&lt;/ref&gt; The Linux kernel is used in some popular distributions, such as [[Red Hat]],  [[Debian]], [[Ubuntu (operating system)|Ubuntu]], [[Linux Mint]] and [[Google]]'s [[Android (operating system)|Android]].
+
+The GNU project is a mass collaboration of programmers who seek to create a completely free and open operating system that was similar to Unix but with completely original code. It was started in 1983 by [[Richard Stallman]], and is responsible for many of the parts of most Linux variants. For this reason, some claim that the combined product of the Linux kernel and the GNU software collection is more correctly called [[GNU/Linux]]. Thousands of pieces of software for virtually every operating system are licensed under the [[GNU General Public License]]. Meanwhile, the Linux kernel began as a side project of [[Linus Torvalds]], a university student from Finland. In 1991, Torvalds began work on it, and posted information about his project on a newsgroup for computer students and programmers. He received a wave of support and volunteers who ended up creating a full-fledged kernel. Programmers from GNU took notice, and members of both projects worked to integrate the finished GNU parts with the Linux kernel in order to create a full-fledged operating system.
+
+=====Google Chrome OS=====
+{{Main|Google Chrome OS}}
+Chrome is an operating system based on the Linux kernel and designed by [[Google]].  Since Chrome OS targets computer users who spend most of their time on the Internet, it is mainly a [[web browser]] with no ability to run applications. It relies on [[Internet application]]s (or [[Web app]]s) used in the web browser to accomplish tasks such as word processing and media viewing, as well as [[online storage]] for storing most files.
+
+===AmigaOS===
+{{Main|AmigaOS}}
+AmigaOS is the default native operating system of the [[Amiga]] personal computer. It was developed first by the [[Amiga Corporation]] then sold to [[Commodore International]], and initially introduced in 1985 with the [[Amiga 1000]]. Early versions (1.0-3.9) run on the Motorola 68k series of 16-bit and 32-bit microprocessors, while the newer AmigaOS 4 runs only on PowerPC microprocessors.
+On top of a preemptive multitasking kernel called Exec, it includes an abstraction of the Amiga's unique hardware, a disk operating system called AmigaDOS, a windowing system API called Intuition and a graphical user interface called Workbench. A command line interface called AmigaShell is also available and integrated into the system. The GUI and the CLI complement each other and share the same privileges.
+The current holder of the Amiga intellectual properties is [[Amiga Inc]]. They oversaw the development of [[AmigaOS 4]] but did not develop it themselves, contracting it instead to Hyperion Entertainment. On 20 December 2006, Amiga Inc terminated Hyperion's license to continue development of [[AmigaOS 4]]. However, in 30 September 2009, Hyperion was granted an exclusive, perpetual, worldwide right to [[AmigaOS 3.1]] in order to use, develop, modify, commercialize, distribute and market AmigaOS 4.x and subsequent versions of AmigaOS (including AmigaOS 5).&lt;ref&gt;http://www.hyperion-entertainment.biz/&lt;/ref&gt;
+
+===Microsoft Windows===
+{{Main|Microsoft Windows}}
+[[File:Windows To Go USB Drive.png|thumb|Bootable [[Windows To Go]] USB flash drive|link=Windows To Go]]
+Microsoft Windows is a family of [[proprietary software|proprietary]] operating systems designed by [[Microsoft Corporation]] and primarily targeted to Intel architecture based computers, with an estimated 88.9 percent total usage share on Web connected computers.&lt;ref name=&quot;StatCounter&quot;/&gt;&lt;ref&gt;{{cite news|title=Global Web Stats|url=http://marketshare.hitslink.com/operating-system-market-share.aspx?qprid=8|date=May 2011 |publisher=Net Market Share, Net Applications |accessdate=2011-05-07}}&lt;/ref&gt;&lt;ref name=&quot;w3cstats&quot;&gt;{{cite news|title=Global Web Stats|url=http://www.w3counter.com/globalstats.php|date=September 2009|publisher=W3Counter, Awio Web Services|accessdate=2009-10-24}}&lt;/ref&gt;&lt;ref&gt;{{cite web |title=Operating System Market Share |url=http://marketshare.hitslink.com/operating-system-market-share.aspx?qprid=8 |publisher=Net Applications |date=October 2009 |accessdate=November 5, 2009}}&lt;/ref&gt; The newest version is [[Windows 7]] for workstations and [[Windows Server 2008 R2]] for servers. Windows 7 recently overtook Windows XP as most used OS.&lt;ref name=&quot;w3schoolsOSStats&quot;&gt;{{cite web|title=w3schools.com OS Platform Statistics|url=http://www.w3schools.com/browsers/browsers_os.asp|accessdate=October 30, 2011}}&lt;/ref&gt;&lt;ref name=&quot;gstats2011&quot;&gt;{{cite web|title=Stats Count Global Stats Top Five Operating Systems|url=http://gs.statcounter.com/#os-ww-monthly-201010-201110|accessdate=October 30, 2011}}&lt;/ref&gt;
+
+Microsoft Windows originated in 1985 as an application running on top of [[MS-DOS]], which was the standard operating system shipped on most Intel architecture personal computers at the time. In 1995, [[Windows 95]] was released, combining MS-DOS 7.0 with Windows on the same medium, removing the need of getting a separate MS-DOS license. Keeping much legacy, it could run real-mode MS-DOS&lt;ref&gt;http://support.microsoft.com/kb/130179/EN-US&lt;/ref&gt;&lt;ref&gt;http://support.microsoft.com/kb/134748/en&lt;/ref&gt; and 16 bits Windows 3.x&lt;ref&gt;http://support.microsoft.com/kb/163354/en&lt;/ref&gt; drivers. [[Windows Me]], released in 2000, was the latest version of Windows of the Windows 95 family. Later versions have all been based on the [[Windows NT]] [[kernel (computing)|kernel]]. Current versions of Windows run on [[IA-32]] and [[x86-64]] [[microprocessors]], although Windows 8 will support ARM architecture.  In the past, Windows NT supported a few non-Intel architectures.
+
+Server editions of Windows are widely used. In recent years, Microsoft has expended significant capital in an effort to promote the use of Windows as a server operating environment. However, Windows' usage on servers is not as widespread as on personal computers, as Windows competes against Linux and BSD for server market share.&lt;ref&gt;{{cite web|url=http://news.netcraft.com/SSL-Survey/CMatch/osdv_all|title=Operating System Share by Groups for Sites in All Locations January 2009}}&lt;/ref&gt;&lt;ref&gt;{{cite web|url = http://blogs.zdnet.com/microsoft/?p=5408|title=Behind the IDC data: Windows still No. 1 in server operating systems|date=2010-02-26|publisher=ZDNet}}&lt;/ref&gt;
+
+===Other===
+Older operating systems which are still used in niche markets include [[OS/2]] from IBM and Microsoft; [[Mac OS]], the non-Unix precursor to Apple's Mac OS X; [[BeOS]]; [[XTS-400|XTS-300]]. Some, most notably [[Haiku (operating system)|Haiku]], [[RISC OS]], [[MorphOS]] and [[FreeMint]] continue to be developed as minority platforms for enthusiast communities and specialist applications. [[OpenVMS]] formerly from [[Digital Equipment Corporation|DEC]], is still under active development by [[Hewlett-Packard]]. Yet other operating systems are used almost exclusively in academia, for operating systems education or to do research on operating system concepts. A typical example of a system that fulfills both roles is [[MINIX]], while for example [[Singularity (operating system)|Singularity]] is used purely for research.
+
+==Components==
+The components of an operating system all exist in order to make the different parts of a computer work together. All softwareâfrom financial databases to film editorsâneeds to go through the operating system in order to use any of the hardware, whether it be as simple as a mouse or keyboard or complex as an Internet connection.
+
+===Kernel===
+[[Image:Kernel Layout.svg|thumb|A kernel connects the application software to the hardware of a computer.]]
+{{Main|Kernel (computing)}}
+With the aid of the [[firmware]] and [[device drivers]], the kernel provides the most basic level of control over all of the computer's hardware devices. It manages memory access for programs in the [[RAM]], it determines which programs get access to which hardware resources, it sets up or resets the CPU's operating states for optimal operation at all times, and it organizes the data for long-term [[non-volatile storage]] with [[file systems]] on such media as disks, tapes, flash memory, etc.
+
+====Program execution====
+{{Main|Process (computing)}}
+The operating system provides an interface between an application program and the computer hardware, so that an application program can interact with the hardware only by obeying rules and procedures programmed into the operating system.  The operating system is also a set of services which simplify development and execution of application programs. Executing an application program involves the creation of a process by the operating system [[kernel (computer science)|kernel]] which assigns memory space and other resources, establishes a priority for the process in multi-tasking systems, loads program binary code into memory, and initiates execution of the application program which then interacts with the user and with hardware devices.
+
+====Interrupts====
+{{Main|Interrupt}}
+[[Interrupts]] are central to operating systems, as they provide an efficient way for the operating system to interact with and react to its environment.  The alternative â having the operating system &quot;watch&quot; the various sources of input for events (polling) that require action â can be found in older systems with very small [[Call stack|stack]]s (50 or 60 bytes) but are unusual in modern systems with large stacks. [[Interrupt]]-based programming is directly supported by most modern CPUs. Interrupts provide a computer with a way of automatically saving local register contexts, and running specific code in response to events. Even very basic computers support hardware interrupts, and allow the programmer to specify code which may be run when that event takes place.
+
+When an interrupt is received, the computer's hardware automatically suspends whatever program is currently running, saves its status, and runs computer code previously associated with the interrupt; this is analogous to placing a bookmark in a book in response to a phone call.  In modern operating systems, interrupts are handled by the operating system's [[kernel (computer science)|kernel]]. Interrupts may come from either the computer's hardware or from the running program.
+
+When a hardware device triggers an interrupt, the operating system's kernel decides how to deal with this event, generally by running some processing code. The amount of code being run depends on the priority of the interrupt (for example: a person usually responds to a smoke detector alarm before answering the phone). The processing of hardware interrupts is a task that is usually delegated to software called [[device drivers|device driver]], which may be either part of the operating system's kernel, part of another program, or both. Device drivers may then relay information to a running program by various means.
+
+A program may also trigger an interrupt to the operating system. If a program wishes to access hardware for example, it may interrupt the operating system's kernel, which causes control to be passed back to the kernel. The kernel will then process the request.  If a program wishes additional resources (or wishes to shed resources) such as memory, it will trigger an interrupt to get the kernel's attention.
+
+====Modes====
+{{Main|Protected mode|Supervisor mode}}
+[[Image:Priv rings.svg|300px|thumb|right|Privilege rings for the [[x86]] available in [[protected mode]]. Operating systems determine which processes run in each mode.]]
+Modern CPUs support multiple modes of operation. [[CPU]]s with this capability use at least two modes: [[protected mode]] and [[supervisor mode]]. The supervisor mode is used by the operating system's kernel for low level tasks that need unrestricted access to hardware, such as controlling how memory is written and erased, and communication with devices like graphics cards. Protected mode, in contrast, is used for almost everything else. Applications operate within protected mode, and can only use hardware by communicating with the kernel, which controls everything in supervisor mode. [[CPU]]s might have other modes similar to protected mode as well, such as the virtual modes in order to emulate older processor types, such as 16-bit processors on a 32-bit one, or 32-bit processors on a 64-bit one.
+
+When a computer first starts up, it is automatically running in [[supervisor mode]]. The first few programs to run on the computer, being the [[BIOS]] or [[Extensible Firmware Interface|EFI]], [[bootloader]], and the operating system have unlimited access to hardware - and this is required because, by definition, initializing a protected environment can only be done outside of one. However, when the operating system passes control to another program, it can place the CPU into [[protected mode]].
+
+In [[protected mode]], programs may have access to a more limited set of the CPU's instructions. A user program may leave [[protected mode]] only by triggering an interrupt, causing control to be passed back to the [[kernel (computer science)|kernel]]. In this way the operating system can maintain exclusive control over things like access to hardware and memory.
+
+The term &quot;protected mode resource&quot; generally refers to one or more CPU registers, which contain information that the running program isn't allowed to alter. Attempts to alter these resources generally causes a switch to supervisor mode, where the operating system can deal with the illegal operation the program was attempting (for example, by killing the program).
+
+====Memory management====
+{{Main|Memory management}}
+Among other things, a multiprogramming operating system [[kernel (computer science)|kernel]] must be responsible for managing all system memory which is currently in use by programs. This ensures that a program does not interfere with memory already in use by another program. Since programs time share, each program must have independent access to memory.
+
+Cooperative memory management, used by many early operating systems, assumes that all programs make voluntary use of the [[kernel (computer science)|kernel]]'s memory manager, and do not exceed their allocated memory. This system of memory management is almost never seen any more, since programs often contain bugs which can cause them to exceed their allocated memory. If a program fails, it may cause memory used by one or more other programs to be affected or overwritten. Malicious programs or viruses may purposefully alter another program's memory, or may affect the operation of the operating system itself. With cooperative memory management, it takes only one misbehaved program to crash the system.
+
+[[Memory protection]] enables the [[kernel (computer science)|kernel]] to limit a process' access to the computer's memory. Various methods of memory protection exist, including [[memory segmentation]] and [[paging]]. All methods require some level of hardware support (such as the [[80286]] MMU), which doesn't exist in all computers.
+
+In both segmentation and paging, certain [[protected mode]] registers specify to the CPU what memory address it should allow a running program to access. Attempts to access other addresses will trigger an interrupt which will cause the CPU to re-enter [[supervisor mode]], placing the [[kernel (computer science)|kernel]] in charge. This is called a [[segmentation violation]] or Seg-V for short, and since it is both difficult to assign a meaningful result to such an operation, and because it is usually a sign of a misbehaving program, the [[kernel (computer science)|kernel]] will generally resort to terminating the offending program, and will report the error.
+
+Windows 3.1-Me had some level of memory protection, but programs could easily circumvent the need to use it. A [[general protection fault]] would be produced, indicating a segmentation violation had occurred; however, the system would often crash anyway.
+
+====Virtual memory====
+{{Main|Virtual memory}}
+{{See|Page fault}}
+[[File:Virtual memory.svg|thumb|250px|Many operating systems can &quot;trick&quot; programs into using memory scattered around the hard disk and RAM as if it is one continuous chunk of memory, called virtual memory.]]
+
+The use of virtual memory addressing (such as paging or segmentation) means that the kernel can choose what memory each program may use at any given time, allowing the operating system to use the same memory locations for multiple tasks.
+
+If a program tries to access memory that isn't in its current range of accessible memory, but nonetheless has been allocated to it, the kernel will be interrupted in the same way as it would if the program were to exceed its allocated memory. (See section on memory management.) Under UNIX this kind of interrupt is referred to as a [[page fault]].
+
+When the kernel detects a page fault it will generally adjust the virtual memory range of the program which triggered it, granting it access to the memory requested. This gives the kernel discretionary power over where a particular application's memory is stored, or even whether or not it has actually been allocated yet.
+
+In modern operating systems, memory which is accessed less frequently can be temporarily stored on disk or other media to make that space available for use by other programs. This is called [[paging|swapping]], as an area of memory can be used by multiple programs, and what that memory area contains can be swapped or exchanged on demand.
+
+&quot;Virtual memory&quot; provides the programmer or the user with the perception that there is a much larger amount of RAM in the computer than is really there.&lt;ref name=&quot;Operating System&quot;&gt;{{cite book|last=Stallings|first=William|title=Computer Organization &amp; Architecture|year=2008|publisher=Prentice-Hall of India Private Limited|location=New Delhi|isbn=978-81-203-2962-1|pages=267}}&lt;/ref&gt;
+
+====Multitasking====
+{{Main|Computer multitasking|Process management (computing)}}
+{{See|Context switch|Preemptive multitasking|Cooperative multitasking}}
+
+[[Computer multitasking|Multitasking]] refers to the running of multiple independent computer programs on the same computer; giving the appearance that it is performing the tasks at the same time. Since most computers can do at most one or two things at one time, this is generally done via time-sharing, which means that each program uses a share of the computer's time to execute.
+
+An operating system [[kernel (computer science)|kernel]] contains a piece of software called a [[scheduling (computing)|scheduler]] which determines how much time each program will spend executing, and in which order execution control should be passed to programs. Control is passed to a process by the kernel, which allows the program access to the [[Central processing unit|CPU]] and memory. Later, control is returned to the kernel through some mechanism, so that another program may be allowed to use the CPU. This so-called passing of control between the kernel and applications is called a [[context switch]].
+
+An early model which governed the allocation of time to programs was called [[cooperative multitasking]]. In this model, when control is passed to a program by the kernel, it may execute for as long as it wants before explicitly returning control to the kernel. This means that a malicious or malfunctioning program may not only prevent any other programs from using the CPU, but it can hang the entire system if it enters an [[infinite loop]].
+
+Modern operating systems extend the concepts of application preemption to device drivers and kernel code, so that the operating system has preemptive control over internal run-times as well.
+
+The philosophy governing [[preemptive multitasking]] is that of ensuring that all programs are given regular time on the CPU. This implies that all programs must be limited in how much time they are allowed to spend on the CPU without being interrupted. To accomplish this, modern operating system kernels make use of a timed interrupt. A [[protected mode]] timer is set by the kernel which triggers a return to supervisor mode after the specified time has elapsed. (See above sections on Interrupts and Dual Mode Operation.)
+
+On many single user operating systems cooperative multitasking is perfectly adequate, as home computers generally run a small number of well tested programs. [[Windows NT]] was the first version of [[Microsoft Windows]] which enforced preemptive multitasking, but it didn't reach the home user market until [[Windows XP]] (since [[Windows NT]] was targeted at professionals).
+
+====Disk access and file systems====
+{{Main|Virtual file system}}
+[[File:Dolphin FileManager.png|thumb|256px|Filesystems allow users and programs to organize and sort files on a computer, often through the use of directories (or &quot;folders&quot;)]]
+Access to data stored on disks is a central feature of all operating systems. Computers store data on [[Hard disk drives|disks]] using [[computer files|files]], which are structured in specific ways in order to allow for faster access, higher reliability, and to make better use out of the drive's available space. The specific way in which files are stored on a disk is called a [[file system]], and enables files to have names and attributes. It also allows them to be stored in a hierarchy of directories or folders arranged in a [[directory tree]].
+
+Early operating systems generally supported a single type of disk drive and only one kind of file system. Early file systems were limited in their capacity, speed, and in the kinds of file names and directory structures they could use. These limitations often reflected limitations in the operating systems they were designed for, making it very difficult for an operating system to support more than one file system.
+
+While many simpler operating systems support a limited range of options for accessing storage systems, operating systems like [[UNIX]] and [[GNU/Linux]] support a technology known as a [[virtual file system]] or VFS. An operating system such as UNIX supports a wide array of storage devices, regardless of their design or [[file system]]s, allowing them to be accessed through a common [[application programming interface]] (API). This makes it unnecessary for programs to have any knowledge about the device they are accessing. A VFS allows the operating system to provide programs with access to an unlimited number of devices with an infinite variety of file systems installed on them, through the use of specific [[device driver]]s and file system drivers.
+
+A connected [[data storage device|storage device]], such as a [[hard drive]], is accessed through a [[device driver]]. The device driver understands the specific language of the drive and is able to translate that language into a standard language used by the operating system to access all disk drives. On UNIX, this is the language of [[block devices]].
+
+When the kernel has an appropriate device driver in place, it can then access the contents of the disk drive in raw format, which may contain one or more file systems. A file system driver is used to translate the commands used to access each specific file system into a standard set of commands that the operating system can use to talk to all file systems. Programs can then deal with these file systems on the basis of filenames, and directories/folders, contained within a hierarchical structure. They can create, delete, open, and close files, as well as gather various information about them, including access permissions, size, free space, and creation and modification dates.
+
+Various differences between file systems make supporting all file systems difficult. Allowed characters in file names, [[case sensitivity]], and the presence of various kinds of [[file attribute]]s makes the implementation of a single interface for every file system a daunting task. Operating systems tend to recommend using (and so support natively) file systems specifically designed for them; for example, [[NTFS]] in Windows and [[ext3]] and [[ReiserFS]] in GNU/Linux. However, in practice, third party drives are usually available to give support for the most widely used file systems in most general-purpose operating systems (for example, NTFS is available in GNU/Linux through [[NTFS-3g]], and ext2/3 and ReiserFS are available in Windows through [http://www.fs-driver.org FS-driver] and [http://p-nand-q.com/download/rfstool.html rfstool]).
+
+Support for file systems is highly varied among modern operating systems, although there are several common file systems which almost all operating systems include support and drivers for. Operating systems vary on file system support and on the disk formats they may be installed on. Under Windows, each file system is usually limited in application to certain media; for example, CDs must use [[ISO 9660]] or [[Universal Disk Format|UDF]], and as of [[Windows Vista]], [[NTFS]] is the only file system which the operating system can be installed on.  It is possible to install GNU/Linux onto many types of file systems. Unlike other operating systems, GNU/Linux and UNIX allow any file system to be used regardless of the media it is stored in, whether it is a hard drive, a disc (CD,DVD...), a USB flash drive, or even contained within a file located on another file system.
+
+====Device drivers====
+{{Main|Device driver}}
+
+A [[device driver]] is a specific type of computer software developed to allow interaction with hardware devices. Typically this constitutes an interface for communicating with the device, through the specific computer bus or communications subsystem that the hardware is connected to, providing commands to and/or receiving data from the device, and on the other end, the requisite interfaces to the operating system and software applications. It is a specialized hardware-dependent computer program which is also operating system specific that enables another program, typically an operating system or applications software package or computer program running under the operating system kernel, to interact transparently with a hardware device, and usually provides the requisite interrupt handling necessary for any necessary asynchronous time-dependent hardware interfacing needs.
+
+The key design goal of device drivers is [[abstraction]]. Every model of hardware (even within the same class of device) is different. Newer models also are released by manufacturers that provide more reliable or better performance and these newer models are often controlled differently. Computers and their operating systems cannot be expected to know how to control every device, both now and in the future. To solve this problem, operating systems essentially dictate how every type of device should be controlled. The function of the device driver is then to translate these operating system mandated function calls into device specific calls. In theory a new device, which is controlled in a new manner, should function correctly if a suitable driver is available. This new driver will ensure that the device appears to operate as usual from the operating system's point of view.
+
+Under versions of Windows before Vista and versions of Linux before 2.6, all driver execution was co-operative, meaning that if a driver entered an infinite loop it would freeze the system. More recent revisions of these operating systems incorporate kernel preemption, where the kernel interrupts the driver to give it tasks, and then separates itself from the process until it receives a response from the device driver, or gives it more tasks to do.
+
+===Networking===
+{{Main|Computer network}}
+Currently most operating systems support a variety of networking protocols, hardware, and applications for using them. This means that computers running dissimilar operating systems can participate in a common [[computer network|network]] for sharing resources such as [[remote procedure call|computing]], files, printers, and scanners using either wired or wireless connections. Networks can essentially allow a computer's operating system to access the resources of a remote computer to support the same functions as it could if those resources were connected directly to the local computer. This includes everything from simple communication, to using networked file systems or even sharing another computer's graphics or sound hardware. Some network services allow the resources of a computer to be accessed transparently, such as [[Secure Shell|SSH]] which allows networked users direct access to a computer's command line interface.
+
+Client/server networking allows a program on a computer, called a client, to connect via a network to another computer, called a server. Servers offer (or host) various services to other network computers and users. These services are usually provided through ports or numbered access points beyond the server's [[network address]]{{Disambiguation needed|date=June 2011}}. Each port number is usually associated with a maximum of one running program, which is responsible for handling requests to that port. A daemon, being a user program, can in turn access the local hardware resources of that computer by passing requests to the operating system kernel.
+
+Many operating systems support one or more vendor-specific or open networking protocols as well, for example, [[Systems Network Architecture|SNA]] on [[IBM]] systems, [[DECnet]] on systems from [[Digital Equipment Corporation]], and Microsoft-specific protocols ([[Server message block|SMB]]) on Windows. Specific protocols for specific tasks may also be supported such as [[Network File System (protocol)|NFS]] for file access. Protocols like [[ESound]], or esd can be easily extended over the network to provide sound from local applications, on a remote system's sound hardware.
+
+===Security===
+{{Main|Computer security}}
+A computer being secure depends on a number of technologies working properly. A modern operating system provides access to a number of resources, which are available to software running on the system, and to external devices like networks via the kernel.
+
+The operating system must be capable of distinguishing between requests which should be allowed to be processed, and others which should not be processed. While some systems may simply distinguish between &quot;privileged&quot; and &quot;non-privileged&quot;, systems commonly have a form of requester ''identity'', such as a user name. To establish identity there may be a process of ''authentication''. Often a username must be quoted, and each username may have a password. Other methods of authentication, such as magnetic cards or biometric data, might be used instead. In some cases, especially connections from the network, resources may be accessed with no authentication at all (such as reading files over a network share). Also covered by the concept of requester '''identity''' is ''authorization''; the particular services and resources accessible by the requester once logged into a system are tied to either the requester's user account or to the variously configured groups of users to which the requester belongs.
+
+In addition to the allow/disallow model of security, a system with a high level of security will also offer auditing options. These would allow tracking of requests for access to resources (such as, &quot;who has been reading this file?&quot;). Internal security, or security from an already running program is only possible if all possibly harmful requests must be carried out through interrupts to the operating system kernel. If programs can directly access hardware and resources, they cannot be secured.
+
+External security involves a request from outside the computer, such as a login at a connected console or some kind of network connection. External requests are often passed through device drivers to the operating system's kernel, where they can be passed onto applications, or carried out directly. Security of operating systems has long been a concern because of highly sensitive data held on computers, both of a commercial and military nature. The United States [[Government of the United States|Government]] [[United States Department of Defense|Department of Defense]] (DoD) created the ''[[Trusted Computer System Evaluation Criteria]]'' (TCSEC) which is a standard that sets basic requirements for assessing the effectiveness of security. This became of vital importance to operating system makers, because the TCSEC was used to evaluate, classify and select computer systems being considered for the processing, storage and retrieval of sensitive or [[classified information]].
+
+Network services include offerings such as file sharing, print services, email, web sites, and [[file transfer protocol]]s (FTP), most of which can have compromised security. At the front line of security are hardware devices known as [[firewall (networking)|firewalls]] or intrusion detection/prevention systems. At the operating system level, there are a number of software firewalls available, as well as intrusion detection/prevention systems. Most modern operating systems include a software firewall, which is enabled by default. A software firewall can be configured to allow or deny network traffic to or from a service or application running on the operating system. Therefore, one can install and be running an insecure service, such as Telnet or FTP, and not have to be threatened by a security breach because the firewall would deny all traffic trying to connect to the service on that port.
+
+An alternative strategy, and the only [[sandbox (computer security)|sandbox]] strategy available in systems that do not meet the [[Popek and Goldberg virtualization requirements]], is the operating system not running user programs as native code, but instead either [[emulator|emulates]] a processor or provides a host for a [[p-code machine|p-code]] based system such as Java.
+
+Internal security is especially relevant for multi-user systems; it allows each user of the system to have private files that the other users cannot tamper with or read. Internal security is also vital if auditing is to be of any use, since a program can potentially bypass the operating system, inclusive of bypassing auditing.
+
+===User interface===
+[[File:Command line.png|thumb|256px|A screenshot of the [[Bash (Unix shell)|Bourne Again Shell]] command line. Each command is typed out after the 'prompt', and then its output appears below, working its way down the screen. The current command prompt is at the bottom.]]
+{{Main|User interface}}
+Every computer that is to be operated by an individual requires a [[user interface]]. The user interface is not actually a part of the operating system&amp;mdash;it generally runs in a separate program usually referred to as a [[shell (computing)|shell]], but is essential if human interaction is to be supported.  The user interface requests services from the operating system that will acquire data from [[input device|input hardware devices]], such as a [[keyboard (computing)|keyboard]], [[mouse (computing)|mouse]] or [[credit card|credit card reader]], and requests operating system services to display [[Command-line interface#Command prompt|prompt]]s, [[status message]]s and such on [[output device|output hardware devices]], such as a [[computer monitor|video monitor]] or [[printer (computing)|printer]]. The two most common forms of a user interface have historically been the [[command-line interface]], where computer commands are typed out line-by-line, and the [[graphical user interface]], where a visual environment (most commonly with windows, buttons, icons and a [[mouse pointer]]) is present.
+
+====Graphical user interfaces====
+[[File:KDE 4.png|thumb|left|256px|A screenshot of the [[K Desktop Environment|KDE]] graphical user interface. Programs take the form of images on the screen, and the files, folders (directories), and applications take the form of icons and symbols. A mouse is used to navigate the computer.]]
+Most of the modern computer systems support [[graphical user interface]]s (GUI), and often include them. In some computer systems, such as the original implementation of [[Mac OS]], the GUI is integrated into the [[kernel (computer science)|kernel]].
+
+While technically a graphical user interface is not an operating system service, incorporating support for one into the operating system kernel can allow the GUI to be more responsive by reducing the number of [[context switch]]es required for the GUI to perform its output functions. Other operating systems are [[modularity (programming)|modular]], separating the graphics subsystem from the kernel and the Operating System. In the 1980s UNIX, VMS and many others had operating systems that were built this way. GNU/Linux and Mac OS X are also built this way. Modern releases of Microsoft Windows such as [[Windows Vista]] implement a graphics subsystem that is mostly in user-space; however the graphics drawing routines of versions between [[Windows NT 4.0]] and [[Windows Server 2003]] exist mostly in kernel space.  [[Windows 9x]] had very little distinction between the interface and the kernel.
+
+Many computer operating systems allow the user to install or create any user interface they desire. The [[X Window System]] in conjunction with [[GNOME]] or [[KDE]] is a commonly found setup on most Unix and [[Unix-like]]  (BSD, GNU/Linux, Solaris) systems. A number of [[Windows shell replacement]]s have been released for Microsoft Windows, which offer alternatives to the included [[Windows shell]], but the shell itself cannot be separated from Windows.
+
+Numerous Unix-based GUIs have existed over time, most derived from X11. Competition among the various vendors of Unix (HP, IBM, Sun) led to much fragmentation, though an effort to standardize in the 1990s to [[Common Open Software Environment|COSE]] and [[Common Desktop Environment|CDE]] failed for  various reasons, and were eventually eclipsed by the widespread adoption of GNOME and KDE. Prior to [[free software]]-based toolkits and desktop environments, Motif was the prevalent toolkit/desktop combination (and was the basis upon which CDE was developed).
+
+Graphical user interfaces evolve over time. For example, Windows has modified its user interface almost every time a new major version of Windows is released, and the Mac OS GUI changed dramatically with the introduction of Mac OS X in 1999.&lt;ref name=&quot;intro-date&quot;&gt;Poisson, Ken. [http://www.islandnet.com/~kpolsson/compsoft/soft1998.htm &quot;Chronology of Personal Computer Software&quot;]. Retrieved on 2008-05-07. Last checked on 2009-03-30.&lt;/ref&gt;
+
+==Real-time operating systems==
+{{Main|Real-time operating system}}
+
+A real-time operating system (RTOS) is a multitasking operating system intended for applications with fixed deadlines ([[real-time computing]]). Such applications include some small [[embedded system]]s, automobile engine controllers, industrial robots, spacecraft, industrial control, and some large-scale computing systems.
+
+An early example of a large-scale real-time operating system was [[Transaction Processing Facility]] developed by [[American Airlines]] and [[International Business Machines|IBM]] for the [[Sabre Airline Reservations System]].
+
+Embedded systems that have fixed deadlines use a [[real-time operating system]] such as [[VxWorks]], [[PikeOS]], [[eCos]], [[QNX]], [[MontaVista Linux]] and [[RTLinux]].  [[Windows CE]] is a [[real-time operating system]] that shares similar APIs to desktop Windows but shares none of desktop Windows' codebase{{Citation needed|date=March 2009}}. [[Symbian OS]] also has an RTOS kernel (EKA2) starting with version 8.0b.
+
+Some embedded systems use operating systems such as [[Palm OS]], [[BSD (operating system)|BSD]], and [[GNU/Linux]], although such operating systems do not support real-time computing.
+
+==Operating system development as a hobby==
+Operating system development is one of the most complicated activities in which a computing hobbyist may engage. A hobby operating system may be classified as one whose code has not been directly derived from an existing operating system, and has few users and [[software development|active developers]].
+&lt;ref&gt;
+{{cite web
+|url=http://www.osnews.com/story/22638/My_OS_Is_Less_Hobby_than_Yours
+|work=Osnews
+|title=My OS is less hobby than yours
+|date=December 21, 2009
+|accessdate=December 21, 2009}}
+&lt;/ref&gt;
+
+In some cases, hobby development is in support of a &quot;[[homebrew]]&quot; computing device, for example, a simple [[single-board computer]] powered by a [[6502 microprocessor]].  Or, development may be for an architecture already in widespread use.  Operating system development may come from entirely new concepts, or may commence by modeling an existing operating system.  In either case, the hobbyist is his/her own developer, or may interact with a small and sometimes unstructured group of individuals who have like interests.
+
+Examples of a hobby operating system include [[ReactOS]] and [[Syllable (operating system)|Syllable]].
+
+==Diversity of operating systems and portability==
+Application software is generally written for use on a specific operating system, and sometimes even for specific hardware. When porting the application to run on another OS, the functionality required by that application may be implemented differently by that OS (the names of functions, meaning of arguments, etc.) requiring the application to be adapted, changed, or otherwise  [[software maintenance|maintained]]. &lt;!--There really ought to be a discussion of ''software modules'' somewhere, such as those that are neither API's nor Plug-Ins (not sure what those are), but which are either hard (on cartridge), soft (on diskette), or otherwise installable by downloading). --&gt;
+
+This cost in supporting operating systems diversity can be avoided by instead writing applications against [[software platform]]s like [[Java (software platform)|Java]], or [[Qt (toolkit)|Qt]] for web browsers. These abstractions have already borne the cost of adaptation to specific operating systems and their [[system library|system libraries]].
+
+Another approach is for operating system vendors to adopt standards. For example, [[POSIX]] and [[Operating System Abstraction Layer|OS abstraction layer]]s provide commonalities that reduce porting costs.
+
+==See also==
+{{Portal box|Computer Science|Information technology|Computer networking}}
+{{div col|colwidth=30em}}
+* [[Comparison of operating systems]]
+* [[Usage share of operating systems]]
+* [[Computer systems architecture]]
+* [[Disk operating system]]
+* [[Electronic medical record]]
+* [[Handheld computers]]
+* [[History of IBM mainframe operating systems]]
+* [[Interruptible operating system]]
+* [[List of operating systems]]
+* [[Microcontroller]]
+* [[Network operating system]]
+* [[Operating System Projects]]
+* [[List of important publications in computer science#Operating systems|Operating systems]]
+* [[Object-oriented operating system]]
+* [[PCjacking]]
+* [[System call]]
+* [[System image]]
+* [[Timeline of operating systems]]
+* [[Trusted operating system]]
+* [[Hypervisor]]
+{{div col end}}
+
+==References==
+{{Reflist|colwidth=30em}}
+
+==Further reading==
+{{Refbegin}}
+* {{cite journal | last =Auslander | first =Marc A.| coauthors = Larkin, David C.; Scherr, Allan L.| title = The evolution of the MVS Operating System | publisher = IBM J. Research &amp; Development | year=1981 | url=http://www.research.ibm.com/journal/rd/255/auslander.pdf }}
+* {{cite book | last = Deitel | first = Harvey M. | coauthors = Deitel, Paul; Choffnes, David | title = Operating Systems | publisher = Pearson/Prentice Hall | year = | isbn = 978-0-13-092641-8 }}
+* {{cite book | last = Bic| first = Lubomur F. | coauthors = Shaw, Alan C. | title = Operating Systems | publisher = [[Prentice Hall]] | year = 2003 | location = Pearson  }}
+* {{cite book | last = Silberschatz | first = Avi | coauthors = Galvin, Peter; Gagne, Greg | title = Operating Systems Concepts | publisher = [[John Wiley &amp; Sons]] | year = 2008 | isbn = 0-470-12872-0 }}
+{{Refend}}
+
+==External links==
+{{Wiktionary}}
+{{Commons category|Screenshots by operating system|Screenshots of operating systems}}
+{{Wikiversity|at=Topic:Operating systems|Operating Systems}}
+* {{dmoz|Computers/Software/Operating_Systems|Operating Systems}}
+* [http://www.cbi.umn.edu/iterations/haigh.html Multics History] and the history of operating systems
+* [http://computer.howstuffworks.com/operating-system.htm How Stuff Works - Operating Systems]
+* [http://whatsmyos.com Help finding your Operating System type and version]
+
+{{Operating System}}
+{{Systems}}
+
+{{DEFAULTSORT:Operating System}}
+[[Category:Operating systems|*]]
+
+{{Link GA|no}}
+
+[[ace:OS]]
+[[af:Bedryfstelsel (inligtingstegnologie)]]
+[[als:Betriebssystem]]
+[[am:á¨á²áµá°á á á°áª]]
+[[ar:ÙØ¸Ø§Ù ØªØ´ØºÙÙ]]
+[[an:Sistema operativo]]
+[[ast:Sistema operativu]]
+[[az:ÆmÉliyyat sistemlÉri]]
+[[bn:à¦à¦ªà¦¾à¦°à§à¦à¦¿à¦ à¦¸à¦¿à¦¸à§à¦à§à¦®]]
+[[zh-min-nan:Chok-giaÌp hÄ-thÃ³ng]]
+[[ba:ÐÐ¿ÐµÑÐ°ÑÐ¸Ð¾Ð½ ÑÐ¸ÑÑÐµÐ¼Ð°]]
+[[be:ÐÐ¿ÐµÑÐ°ÑÑÐ¹Ð½Ð°Ñ ÑÑÑÑÑÐ¼Ð°]]
+[[be-x-old:ÐÐ¿ÑÑÐ°ÑÑÐ¹Ð½Ð°Ñ ÑÑÑÑÑÐ¼Ð°]]
+[[bg:ÐÐ¿ÐµÑÐ°ÑÐ¸Ð¾Ð½Ð½Ð° ÑÐ¸ÑÑÐµÐ¼Ð°]]
+[[bs:Operativni sistem]]
+[[br:Reizhiad korvoiÃ±]]
+[[ca:Sistema operatiu]]
+[[cv:ÐÐ¿ÐµÑÐ°ÑÐ¸ ÑÐ¸ÑÑÐµÐ¼Ð¸]]
+[[cs:OperaÄnÃ­ systÃ©m]]
+[[cy:System weithredu]]
+[[da:Styresystem]]
+[[de:Betriebssystem]]
+[[et:OperatsioonisÃ¼steem]]
+[[el:ÎÎµÎ¹ÏÎ¿ÏÏÎ³Î¹ÎºÏ ÏÏÏÏÎ·Î¼Î±]]
+[[es:Sistema operativo]]
+[[eo:Operaciumo]]
+[[eu:Sistema eragile]]
+[[fa:Ø³ÛØ³ØªÙâØ¹Ø§ÙÙ]]
+[[fr:SystÃ¨me d'exploitation]]
+[[fur:Sisteme operatÃ®f]]
+[[ga:CÃ³ras oibriÃºchÃ¡in]]
+[[gl:Sistema operativo]]
+[[ko:ì´ì ì²´ì ]]
+[[hy:ÕÕºÕ¥ÖÕ¡ÖÕ«Õ¸Õ¶ Õ°Õ¡Õ´Õ¡Õ¯Õ¡ÖÕ£]]
+[[hi:à¤ªà¥à¤°à¤à¤¾à¤²à¤¨ à¤¤à¤¨à¥à¤¤à¥à¤°]]
+[[hsb:DÅºÄÅowy system]]
+[[hr:Operacijski sustav]]
+[[io:Funcionanta sistemo]]
+[[ilo:Sistema ti panangpaandar]]
+[[id:Sistem operasi]]
+[[ia:Systema de operation]]
+[[is:StÃ½rikerfi]]
+[[it:Sistema operativo]]
+[[he:××¢×¨××ª ××¤×¢××]]
+[[jv:Sistem operasi komputer]]
+[[kn:à²à²¾à²°à³à²¯à²¨à²¿à²°à³à²µà²¹à²£ à²¸à²¾à²§à²¨]]
+[[ka:áááá ááªáá£áá á¡áá¡á¢ááá]]
+[[csb:ÃperacjowÃ´ systema]]
+[[kk:ÐÐ¿ÐµÑÐ°ÑÐ¸ÑÐ»ÑÒ Ð¶Ò¯Ð¹ÐµÐ»ÐµÑ]]
+[[sw:Mfumo wa uendeshaji]]
+[[ku:Pergala xebitandinÃª]]
+[[lo:àº¥àº°àºàº»àºàºàº°àºàº´àºàº±àºàºàº²àº]]
+[[la:Systema administrativum computatrale]]
+[[lv:OperÄtÄjsistÄma]]
+[[lb:Betribssystem (Computer)]]
+[[lt:OperacinÄ sistema]]
+[[ln:LitÃ¡mbwisi-mokonzi]]
+[[lmo:Sistema uperatif]]
+[[hu:OperÃ¡ciÃ³s rendszer]]
+[[mk:ÐÐ¿ÐµÑÐ°ÑÐ¸Ð²ÐµÐ½ ÑÐ¸ÑÑÐµÐ¼]]
+[[mg:Mpandrindra milina]]
+[[ml:à´à´ªàµà´ªà´±àµà´±àµà´±à´¿à´àµà´àµâ à´¸à´¿à´¸àµà´±àµà´±à´]]
+[[mr:à¤¸à¤à¤à¤¾à¤²à¤¨ à¤ªà¥à¤°à¤£à¤¾à¤²à¥]]
+[[arz:ÙØ¸Ø§Ù ØªØ´ØºÙÙ]]
+[[ms:Sistem pengendalian]]
+[[mn:Ò®Ð¹Ð»Ð´Ð»Ð¸Ð¹Ð½ ÑÐ¸ÑÑÐµÐ¼]]
+[[my:áá½ááºáá»á°áá¬ áááºáááºáááºáá±á¸ ááááº]]
+[[nl:Besturingssysteem]]
+[[new:à¤à¤ªà¤°à¥à¤à¤¿à¤ à¤¸à¤¿à¤¸à¥à¤à¤®]]
+[[ja:ãªãã¬ã¼ãã£ã³ã°ã·ã¹ãã ]]
+[[no:Operativsystem]]
+[[nn:Operativsystem]]
+[[oc:SistÃ¨ma operatiu]]
+[[mhr:ÐÐ¿ÐµÑÐ°ÑÐ¸Ð¾Ð½Ð»Ð¾ ÑÐ¸ÑÑÐµÐ¼Ðµ]]
+[[uz:Ishlatuv tizimi]]
+[[pnb:Ø§ÙÙ¾Ø±ÛÙ¹ÙÚ¯ Ø³Ø³Ù¹Ù]]
+[[nds:Bedriefssystem]]
+[[pl:System operacyjny]]
+[[pt:Sistema operativo]]
+[[kaa:Operatsion sistema]]
+[[ksh:Bedriefsystem]]
+[[ro:Sistem de operare]]
+[[qu:Llamk'aykuna llika]]
+[[rue:ÐÐ¿ÐµÑÐ°ÑÐ½Ð° ÑÑÑÑÐµÐ¼Ð°]]
+[[ru:ÐÐ¿ÐµÑÐ°ÑÐ¸Ð¾Ð½Ð½Ð°Ñ ÑÐ¸ÑÑÐµÐ¼Ð°]]
+[[sah:ÐÐ¿ÐµÑÐ°ÑÐ¸ÑÐ»ÑÑÑ ÑÐ¸ÑÑÐµÐ¼Ð°]]
+[[sq:Sistemi operativ]]
+[[si:à¶¸à·à·à·à¶ºà·à¶¸à· à¶´à¶¯à·à¶°à¶­à·]]
+[[simple:Operating system]]
+[[sk:OperaÄnÃ½ systÃ©m]]
+[[sl:Operacijski sistem]]
+[[ckb:Ø³ÛØ³ØªÛÙÛ Ú©Ø§Ø±]]
+[[sr:ÐÐ¿ÐµÑÐ°ÑÐ¸Ð²Ð½Ð¸ ÑÐ¸ÑÑÐµÐ¼]]
+[[sh:Operativni sistem]]
+[[su:Sistim Operasi]]
+[[fi:KÃ¤yttÃ¶jÃ¤rjestelmÃ¤]]
+[[sv:Operativsystem]]
+[[tl:Sistemang operatibo]]
+[[ta:à®à®¯à®à¯à®à¯ à®¤à®³à®®à¯]]
+[[kab:A nagraw n w'ammud]]
+[[tt:ÐÐ¿ÐµÑÐ°ÑÐ¸Ð¾Ð½ ÑÐ¸ÑÑÐµÐ¼Ð°]]
+[[te:à°à°ªà°°à±à°à°¿à°à°à± à°¸à°¿à°¸à±à°à°®à±]]
+[[th:à¸£à¸°à¸à¸à¸à¸à¸´à¸à¸±à¸à¸´à¸à¸²à¸£]]
+[[tg:Ð¡Ð¸ÑÑÐµÐ¼Ð°Ð¸ Ð°Ð¼Ð°Ð»Ó£]]
+[[tr:Ä°Åletim sistemi]]
+[[uk:ÐÐ¿ÐµÑÐ°ÑÑÐ¹Ð½Ð° ÑÐ¸ÑÑÐµÐ¼Ð°]]
+[[ur:Ø§Ø´ØªØºØ§ÙÛ ÙØ¸Ø§Ù]]
+[[vec:Sistema operativo]]
+[[vi:Há» Äiá»u hÃ nh]]
+[[fiu-vro:OpÃµrats'oonisÃ¼stem]]
+[[wa:Sistinme d' operance]]
+[[war:Sistema operatibo]]
+[[wo:Nosteg doxiin]]
+[[yi:××¤×¢×¨××¨× ×¡××¡××¢×]]
+[[yo:SÃ­stáº¹ÌmÃ¹ Ã¬á¹£iá¹£áº¹Ì ká»ÌmpÃºtÃ ]]
+[[zh-yue:ä½æ¥­ç³»çµ±]]
+[[diq:Sistemo operatif]]
+[[bat-smg:UoperacÄnÄ sÄstema]]
+[[zh:æä½ç³»ç»]]</rev></revisions></page></pages></query></api>

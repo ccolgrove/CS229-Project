@@ -1,3 +1,5 @@
+package take_two;
+
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
@@ -8,6 +10,8 @@ import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+
+import bagofwords.MultinomialNaiveBayes;
 
 public class Main {
   public static final String TEST_DIR = "../../../articles/";

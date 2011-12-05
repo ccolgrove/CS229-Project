@@ -1,0 +1,62 @@
+<?xml version="1.0"?><api><query><pages><page pageid="582146" ns="0" title="OpenMosix"><revisions><rev xml:space="preserve">[[Image:OpenMosix.svg|thumb|right|300px|Transfers in an openMosix cluster.]]
+{{Lowercase|title=openMosix}}
+'''openMosix''' was a [[free software|free]] [[computer cluster|cluster]] management system that provided [[single-system image]] (SSI) capabilities, e.g. automatic work distribution among [[node (networking)|nodes]]. It allowed program [[process (computing)|processes]] (not [[thread (computer science)|threads]]) to migrate to machines in the node's [[computer network|network]] that would be able to run that process faster ([[process migration]]). It was particularly useful for running parallel and intensive [[input/output]] (I/O) applications. It was released as a [[Linux kernel]] patch, but was also available on specialized [[Live CD]]s. openMosix development has been halted by its developers, but the [[LinuxPMI]] project is continuing development of the former openMosix code.
+
+==History==
+
+openMosix was originally [[forked]] from [[MOSIX]] by [[Moshe Bar (investor)|Moshe Bar]] on February 10, 2002 when MOSIX became [[proprietary software]].
+
+openMosix was considered stable on [[Linux kernel]] 2.4.x for the [[x86 architecture]], but porting to Linux 2.6 kernel remained in the alpha stage. Support for the 64-bit [[AMD64]] architecture only started with the 2.6 version.
+
+On July 15, 2007, Bar announced that the openMOSIX project would reach its [[end-of-life (product)|end of life]] on March 1, 2008, due to the decreasing need for SSI clustering as low-cost multi-core processors increase in availability.&lt;ref&gt;{{ cite web
+  | url = http://sourceforge.net/forum/forum.php?forum_id=715406
+  | title = openMosix Project End of Life Announcement
+  | last = Bar
+  | first = Moshe
+  | authorlink = Moshe Bar
+  | accessdate = 2007-07-18
+  | date = 2007-07-15
+  | publisher = SourceForge.net
+}}&lt;/ref&gt;
+
+OpenMosix used to be distributed as a [[Gentoo Linux]] kernel choice, but it was removed from Gentoo Linux's [[Portage (software)|''Portage tree'']] in February 2007.&lt;ref name='GWN 1007-02-19'&gt;{{cite news |first=Chris |last=Gianelloni |coauthors= Mark Kowarsky, Donnie Berkholz, Daniel Black, Diego PettenÃ², Kieth Gable |title=Gentoo package moves |date=2007-02-19 |publisher= Gentoo Foundation, Inc. |url= http://www.gentoo.org/news/en/gwn/20070219-newsletter.xml#doc_chap6 |work= Gentoo Weekly Newsletter |pages= |accessdate= 2007-10-12 |language= }}&lt;/ref&gt;
+
+As of March 1, 2008, openMosix read-only source code is still hosted at SourceForge.&lt;ref&gt;{{cite web | url = http://openmosix.sourceforge.net/ | title = the openMosix Project | date = 2008-03-01 | accessdate = 2008-03-01}}&lt;/ref&gt; The [[LinuxPMI]] project is continuing development of the former openMosix code.
+
+==See also==
+{{Portal|Free software}}
+*[[Kerrighed]]
+*[[OpenSSI]]
+
+===Live CDs===
+[[Linux]] [[Live CD]]s with openMosix include:
+*[[CHAOS (Linux distribution)|CHAOS]] (a very small boot CD)
+*[[clusterKnoppix]] (not maintained anymore)
+*[[dyne:bolic]]
+*[[Quantian]], a scientific distribution based on clusterKnoppix
+
+==References==
+{{Reflist}}
+
+==External links==
+*{{official|http://openmosix.sourceforge.net/}}
+*[http://openmosix.sourceforge.net/wiki.html openMosixWiki]
+
+===openMosix cluster sites===
+*[http://www.cluster.kiev.ua/eng/ Cluster at National Taras Shevchenko University of Kyiv]
+*[http://www.iasi.cnr.it/~hydra/ Hydra]
+*[http://www.mbg.duth.gr/~glykos/cluster/index.html MBG Cluster]
+
+{{DEFAULTSORT:Openmosix}}
+[[Category:Cluster computing]]
+[[Category:Internet Protocol based network software]]
+[[Category:Parallel computing]]
+
+[[es:OpenMosix]]
+[[fr:OpenMosix]]
+[[it:OpenMosix]]
+[[nl:OpenMosix]]
+[[pl:OpenMosix]]
+[[pt:OpenMosix]]
+[[ru:OpenMosix]]
+[[vi:OpenMosix]]</rev></revisions></page></pages></query></api>

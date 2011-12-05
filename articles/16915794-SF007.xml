@@ -1,0 +1,52 @@
+<?xml version="1.0"?><api><query><pages><page pageid="16915794" ns="0" title="Macrium Reflect"><revisions><rev xml:space="preserve">{{Infobox_Software|
+ name = Macrium reflect
+|developer = Paramount Software UK Ltd
+|latest_release_version = 5.0.4118
+|latest_release_date = {{release date and age|09|11|2011}} 
+|operating_system = [[Microsoft Windows|Window XP, Vista, 7, Server 2003, Server 2008]]
+|genre = [[Backup software]]
+|license = Commercial Use [[Shareware]]&lt;br&gt; Home Use [[Freeware]]
+|website = [http://www.macrium.com www.macrium.com]
+}}
+
+'''Macrium Reflect''' is a [[backup]] and [[disk imaging]] software program for [[Microsoft Windows]] developed by Paramount Software UK Ltd in 2006. It creates [[disk images]] and file backup archives using Microsoft [[Volume Shadow Copy Service]] to ensure 'point in time' data accuracy.
+
+{{As of|2011|November}}, the latest version supports [[Windows XP]], [[Windows Vista]], [[Windows 7]], [[Windows Server 2003]] and [[Windows Server 2008]], both in 32- and 64-bit editions. The application has a [[VBScript]] generator that uses [[Windows Script Host]] WSH to enable system administrators to handle complex backup scenarios. Backup definitions can be saved as [[XML]] files for simple editing and re-running. Macrium Reflect also offers [[Windows Preinstallation Environment]] 3.1, and [[Linux]] based system recovery solutions.
+
+==Disk Imaging==
+Macrium Reflect can create full, [[incremental backup|incremental]] and [[differential backup]] images to optimize speed and storage requirements. Data is compressed in real time using [[Abraham Lempel]] LZ based compression algorithms. Images can be [[mount (computing)|mounted]] as a drive letter in [[Windows Explorer]] and restored using a custom [[Live CD]].
+
+==File Backup==
+Macrium Reflect can also backup files and folders into a compressed [[virtual drive]]. This can be [[mount (computing)|mounted]] as a drive letter in [[Windows Explorer]] for file recovery using copy and paste. Full, [[incremental backup]] and [[differential backup]] files are supported as well as data compression.
+
+==System Recovery==
+The Windows [[System partition]] cannot be restored whilst Windows is running. To overcome this issue the PC has to be started with another operating system using a [[Live CD]]. There are typically three ways to do this:
+
+1. A customized [[Linux kernel]] can be used to load the restore software and overwrite the Windows [[system partition]].  The [[Linux kernel]] is booted from CD/DVD and completely loaded into main memory. This enables any partition on local hard disks to be freely accessed for update. This is the option used by [[Acronis True Image]] Home and others.
+
+2. [[Microsoft]] provides a cut-down version of Windows called [[Windows Preinstallation Environment]] or Windows PE. This also creates a [[Live CD]] but is proprietary and needs to be licensed from Microsoft before distribution. This option is used by the current version of [[Norton Ghost]].
+
+3. There is a &quot;free to create&quot; version of Windows PE called [[BartPE]]. This requires building the Windows PE disc from existing Windows system files. There are no licensing issues with BartPE as the required files are included with Windows. [[BartPE]] is only compatible with Windows XP and Server 2003 32 bit. [[BartPE]] plug-ins are provided by Acronis and other backup software vendors.
+
+Macrium Reflect v5 offers Linux and Windows PE as standard. 
+
+==See also==
+*[[List of backup software]]
+
+==References==
+{{Reflist}}
+
+==Further reading==
+*[http://kb.macrium.com/KnowledgebaseArticle50074.aspx How to create a disk image with Macrium Reflect]
+*[http://kb.macrium.com/KnowledgebaseArticle50079.aspx How to restore a backup image]
+*[http://kb.macrium.com/KnowledgebaseArticle50081.aspx How To clone a disk]
+*[http://www.tucows.com/article/1809 Review of Macrium Reflect by Dr FileFinder]
+
+==External links==
+*[http://www.macrium.com Macrium Reflect official website]
+*[http://www.macrium.com/reflectfree.aspx Free Version for Home Use]
+
+[[Category:Shareware]]
+
+
+{{software-stub}}</rev></revisions></page></pages></query></api>

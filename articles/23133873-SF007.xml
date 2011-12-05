@@ -1,0 +1,122 @@
+<?xml version="1.0"?><api><query><redirects><r from="Dev build" to="Software release life cycle" tofragment="Software Development Stages" /></redirects><pages><page pageid="220901" ns="0" title="Software release life cycle"><revisions><rev xml:space="preserve">{{cite}}
+
+A '''software release life cycle''' refers to the phases of development and maturity for a piece of [[computer software]]âranging from its initial development, to its eventual release, and updated versions of the released version to help improve software or fix [[Software bug|bugs]] still present in the software.
+
+==Stages of development==
+
+=== Pre-alpha ===
+Pre-alpha refers to all activities performed during the software project prior to [[software testing|testing]]. These activities can include [[requirements analysis]], [[software design]], [[software development]] and [[unit testing]].
+
+In typical [[open source]] development, there are several types of pre-alpha versions. '''Milestone''' versions include specific sets of functions and are released as soon as the functionality is complete.
+
+=== Alpha === &lt;!-- Many pages link to this section. Please take care if renaming or moving it. --&gt;
+The alpha phase of the release life cycle is the first phase to begin [[software testing]] (alpha is the first letter of the [[Greek alphabet]], used as the number 1).  In this phase, developers generally test the software using [[white-box testing|white box techniques]]. Additional validation is then performed using [[black-box testing|black box]] or [[Grey_box_testing#Grey_box_testing|gray box]] techniques, by another [[Software testing|testing team]]. Moving to black box testing inside the organization is known as ''alpha release''.&lt;ref name=alphadef&gt;{{cite web|url=http://www.pcmag.com/encyclopedia_term/0,2542,t=alpha+version&amp;i=37675,00.asp|title=Encyclopedia definition of alpha version|work=[[PC Magazine]]|accessdate=12 January 2011}}&lt;/ref&gt;
+
+Alpha software can be unstable and could cause crashes or data loss. The exception to this is when the alpha is available publicly (such as a pre-order bonus), in which developers normally push for stability so that their testers can test properly. External availability of alpha software is uncommon in [[proprietary software]]. However, [[FOSS|open source software]], in particular, often have publicly available alpha versions, often distributed as the raw [[source code]] of the software.
+
+The alpha phase usually ends with a [[Freeze (software engineering)|feature freeze]], indicating that no more features will be added to the software.  At this time, the software is said to be [[feature complete]].
+
+=== Beta === &lt;!-- Many pages link to this section. Please take care if renaming or moving it. --&gt;
+Beta (named after the second letter of the Greek alphabet) is the software development phase following alpha. It generally begins when the software is [[feature complete]]. The focus of beta testing is reducing impacts to users, often incorporating [[usability testing]].  The process of delivering a beta version to the users is called '''beta release''' and this is typically the first time that the software is available outside of the organization that developed it.
+
+The users of a beta version are called ''beta testers''. They are usually customers or prospective customers of the organization that develops the software, willing to test the software without charge, often receiving the final software free of charge or for a reduced price.
+
+Beta version software is often useful for demonstrations and previews within an organization and to prospective customers. Some developers refer to this stage as a '''preview''', '''prototype''', '''technical preview''' ('''TP'''), or '''early access'''.
+
+Some software is kept in [[perpetual beta]]âwhere new features and functionality is continually added to the software without establishing a firm &quot;final&quot; release.
+
+==== Open and closed beta ====
+&lt;!-- Closed beta test redirects here --&gt;
+Developers release either a '''closed beta''' or an '''open beta'''; closed beta versions are released to a select group of individuals for a user test and are invitation only, while open betas are from a larger group to the general public and anyone interested. The testers report any bugs that they find, and sometimes suggest additional features they think should be available in the final version.
+Examples of a major public beta test are:
+* In September 2000 a ''boxed version'' of [[Apple Inc.|Apple]]'s [[Mac OS X Public Beta]] operating system was released.&lt;ref&gt;{{cite press release|title=Apple Releases Mac OS X Public Beta|publisher=Apple Inc.|url=http://www.apple.com/pr/library/2000/sep/13macosx.html|accessdate=22 February 2011|date=13 September 2000}}&lt;/ref&gt;
+* [[Microsoft]]'s release of '''community technology preview'''s ('''CTP'''s) for [[Windows Vista|&quot;Longhorn&quot;]] in January 2005.&lt;ref&gt;{{cite press release|url=http://www.microsoft.com/presspass/newsroom/winxp/WinVistaCTPFS.mspx|title=Microsoft Windows Vista October Community Technology Preview Fact Sheet|month=October|year=2005|accessdate=22 February 2011|publisher=Microsoft}}&lt;/ref&gt;
+
+Open betas serve the dual purpose of demonstrating a product to potential consumers, and testing among an extremely wide user base likely to bring to light obscure errors that a much smaller testing team may not find.
+
+=== Release candidate ===
+The term '''release candidate''' ('''RC''') refers to a version with potential to be a final product, which is ready to release unless fatal [[computer bug|bugs]] emerge. In this stage of product stabilization, all product features have been designed, coded and tested through one or more beta cycles with no known showstopper-class bug.
+
+A release is called '''code complete''' when the development team agrees that no entirely new source code will be added to this release. There may still be source code changes to fix defects. There may still be changes to documentation and data files, and to the code for test cases or utilities. New code may be added in a future release.
+
+== Release ==
+=== RTM {{Anchor|RTM|Release to manufacturing|Release to marketing|RTM_or_RTW}} ===
+The term &quot;'''release to manufacturing'''&quot; or &quot;'''release to marketing'''&quot; (both abbreviated RTM, initials also commonly used for the quite different &quot;return to manufacturer&quot; of faulty goods)âalso known as &quot;[[Golden master|going gold]]&quot;âis a term used when software is ready for or has been delivered or provided to the customer.  It is typically used in certain retail mass-production software contextsâas opposed to a specialized software production or project in a commercial or government production and distributionâwhere the software is sold as part of a bundle in a related computer hardware sale and typically where the software and related hardware is ultimately to be available and sold on mass/public basis at retail stores to indicate that the software has met a defined quality level and is ready for mass retail distribution. RTM could also mean in other contexts that the software has been delivered or released to a client or customer for installation or distribution to the related hardware end user computers or machines.  The term does ''not'' define the delivery mechanism or volume; it only states that the quality is sufficient for mass distribution. The deliverable from the engineering organization is frequently in the form of a [[Golden master|'''gold''' master]] CD used for duplication or to produce the image for the web.
+
+RTM precedes general availability (GA) when the product is released to the public.
+
+=== General availability (GA) {{Anchor|GA|General availability}} ===
+'''General availability''' or '''general acceptance''' ('''GA''') is the point where all necessary commercialization activities have been completed and the software has been made available to the general market either via the web or physical media. Another term with a meaning almost identical to GA is '''first customer shipment''' ('''FCS'''). Some companies (such as Sun Microsystems and Cisco) use FCS to describe a software version that has been shipped for revenue.
+
+Commercialization activities could include but are not limited to the availability of media world wide via dispersed distribution centers, marketing collateral is completed and available in as many languages as deemed necessary for the target market, the finishing of security and compliance tests, etc.  The time between RTM and GA can be from a week to months in some cases before a generally available release can be declared because of the time needed to complete all commercialization activities required by GA.
+
+It is also at this stage that the software is considered to have &quot;gone live&quot;. The '''production''', '''live''' version is the final version of a particular product. A live release is considered to be very stable and relatively bug-free with a quality suitable for wide distribution and use by end users. In commercial software releases, this version may also be [[Code signing|signed]] (used to allow end-users to verify that code has not been modified since the release).  The expression that a software product &quot;has gone live&quot; means that the code has been completed and is ready for distribution.  Other terms for the live version include ''live master'', ''live release'', and ''live build''.
+
+In some areas of software development it is at this stage that the release is referred to as a '''gold''' release; this seems to be confined mainly to game software though Apple also refer to GM (gold master) releases.
+
+Some release versions might be classified as a long term support (LTS) release, which should guarantee the ability to upgrade to the next LTS release and will be supported/updated/patched for a longer time than a non-LTS release.
+
+== Support ==
+
+During its supported lifetime, software is sometimes subjected to service releases, or [[service pack]]s, sometimes also called âinterim releasesâ. As a well used example, Microsoft's [[Windows XP]] has currently had three major [[Windows XP#Service packs|Service Packs]], and [[Windows 7]] was at service pack 1 as of April 2011.
+
+Such service releases contain a collection of updates, fixes and/or enhancements, delivered in the form of a single installable package. They may also contain entirely new features.
+
+Certain software is released with the expectation of regular support. Classes of software that generally involve protracted support as the norm include [[Antivirus software|anti-virus suites]] and [[massively multiplayer online game]]s.
+
+=== End-of-life {{Anchor|EOL|End of life}} ===
+{{See also|End-of-life (product)}}
+When software is no longer sold or supported, the product is said to have end-of-life, to be discontinued or obsolete, but user loyalty may continue its existence for some time, even long after its platform is obsoleteâe.g., the [[Atari ST]] and [[Commodore International|Commodore]]âs [[Amiga]].
+
+== Impact of the World Wide Web ==
+
+As the Internet has allowed for rapid and inexpensive distribution of software, companies have begun to take a more loose approach to use of the word &quot;beta&quot;.&lt;ref&gt;{{cite web|url=http://www.tidbits.com/tb-issues/TidBITS-328.html |title=Waiting with Beta'd Breath ''TidBITS'' #328 (May 13, 1996) |archiveurl = http://web.archive.org/web/20060515093203/http://www.tidbits.com/tb-issues/TidBITS-328.html |archivedate = 2006-05-15}}&lt;/ref&gt; [[Netscape Communications]] was infamous for releasing alpha level versions of its [[Netscape (web browser)|Netscape web browser]] to the public and calling them &quot;beta&quot; releases.{{Citation needed|date=April 2010}} In February 2005, [[ZDNet]] published an article about the recent phenomenon of a beta version often staying for years and being used as if it were in production level, disparagingly called â[[perpetual beta]]â. It noted that [[Gmail]] and [[Google News]], for example, had been in beta for a long period of time and were not expected to drop the beta status despite the fact that they were widely used; however, Google News did leave beta in January 2006, followed by [[Google Apps]], including Gmail, in July 2009.&lt;ref&gt;{{cite web|url=http://googleblog.blogspot.com/2009/07/google-apps-is-out-of-beta-yes-really.html|title=Google Apps is out of beta (yes, really)|publisher=[[Google]]|work=Google Blog|date=7 July 2009|accessdate=12 January 2011}}&lt;/ref&gt; This technique may also allow a developer to delay offering full support and/or responsibility for remaining issues. In the context of [[Web 2.0]], people even talk of [[perpetual beta]]s to signify that some software is meant to stay in beta state. Also, &quot;beta&quot; is sometimes used to indicate something more like a [[Software release life cycle#Release candidate|release candidate]], or as a form of time limited demo, or marketing technique.&lt;ref&gt;[http://www.gamesradar.com/f/the-inconvenient-truths-behind-betas/a-2010051712402686048 The inconvenient truths behind betas]&lt;/ref&gt;
+
+Some users disparagingly refer to release candidates and even final &quot;point oh&quot; releases as &quot;gamma test&quot; software, suggesting that the developer has chosen to use its customers to test software that is not truly ready for general release. Beta testers, if privately selected, will often be credited for using the release candidate as though it were a finished product.
+
+=== Web release ===
+A '''web release''' is a means of software delivery that utilizes the Internet for distribution.  No physical media are produced in this type of release mechanism by the manufacturer. This is sometimes also referred to as ''release to web'' (RTW).
+&lt;!-- Per [[Help:Section#Section_linking_and_redirects]], this is to inform that &quot;Sims 3&quot; article has a direct link to this header caption.  Please leave as is. --&gt;
+Web releases seem to be more common nowadays due to the fact that you can get the software out to the consumer much more quickly. An individual can buy the software online and download it from the website, vice having to go out to a store to buy it or ordering it and having it delivered to oneâs home.
+
+== See also ==
+*[[Paper launch]]
+*[[Release engineering]]
+*[[Release management]]
+*[[Rolling release]]
+*[[Software maintenance]]
+*[[Software testing]]
+*[[Software versioning]]
+*[[Software deployment]]
+*[[Vaporware]]
+
+== References ==
+{{Reflist}}
+
+== Further reading ==
+* ''Continuous Delivery: Reliable Software Releases through Build, Test, and Deployment Automation'' by Jez Humble, David Farley; ISBN 0-321-60191-2
+
+== External links ==
+*[http://www.tldp.org/HOWTO/Software-Proj-Mgmt-HOWTO/users.html#ALPHABETA Free Software Project Management HOWTO]
+*[http://www.se-cure.ch/Publications.html Software Release Decisions]
+*[http://www.methodsandtools.com/archive/archive.php?id=55 A Methodology to Support Software Release Decisions]
+*[http://www.editorial.co.in/software/software-testing-life-cycle.php Software Testing Life Cycle]
+*[http://semver.org/ Semantic versioning]
+
+{{DEFAULTSORT:Software Release Life Cycle}}
+[[Category:Software development process]]
+
+[[ar:Ø¯ÙØ±Ø© Ø­ÙØ§Ø© Ø¥ØµØ¯Ø§Ø± Ø§ÙØ¨Ø±ÙØ¬ÙØ§Øª]]
+[[bn:Software release life cycle]]
+[[de:Entwicklungsstadium (Software)]]
+[[et:Tarkvara vÃ¤ljalaske elutsÃ¼kkel]]
+[[es:Fases del desarrollo de software]]
+[[fa:ÚØ±Ø®ÙÙ Ø§Ø±Ø§Ø¦ÙÙ ÙØ±ÙâØ§ÙØ²Ø§Ø±]]
+[[hu: SzoftverkiadÃ¡s_Ã©letciklusa]]
+[[it:Ciclo di vita del software]]
+[[pl:Cykl Å¼ycia programu]]
+[[pt:LiberaÃ§Ã£o de software]]
+[[ru:Ð¡ÑÐ°Ð´Ð¸Ð¸ ÑÐ°Ð·ÑÐ°Ð±Ð¾ÑÐºÐ¸ Ð¿ÑÐ¾Ð³ÑÐ°Ð¼Ð¼Ð½Ð¾Ð³Ð¾ Ð¾Ð±ÐµÑÐ¿ÐµÑÐµÐ½Ð¸Ñ]]
+[[sl:programska izdaja]]
+[[sv:Programvaruutveckling]]
+[[zh:è»ä»¶åºçé±æ]]</rev></revisions></page></pages></query></api>

@@ -1,0 +1,168 @@
+<?xml version="1.0"?><api><query><pages><page pageid="19726" ns="0" title="Mercury (programming language)"><revisions><rev xml:space="preserve">{{For|Mercury Autocode|Autocode}}
+{{Infobox programming language
+| name                   = Mercury
+| logo                   = [[Image:Mercury logo.jpg]]
+| paradigm               = [[logic programming|Logic]], [[Functional programming|functional]]
+| year                   = 1995
+| designer               = [[Zoltan Somogyi|ZoltÃ¡n Somogyi]]
+| developer              = [[University of Melbourne]]
+| latest_release_version = 11.01
+| latest_release_date    = 27 April 2011
+| typing                 = [[Strongly-typed programming language|Strong]], [[Static typing|static]], [[Type polymorphism|polymorphic]]
+| implementations        = Melbourne Mercury Compiler
+| dialects               = 
+| influenced_by          = [[Prolog]], [[Haskell (programming language)|Haskell]]
+| influenced             =
+| operating_system       = [[Cross-platform]] ([[Unix]], [[Mac OS X]], [[Microsoft Windows|Windows]])
+| license                = [[GPL]] for compiler, [[LGPL]] for standard library
+| website                = {{url|http://www.mercury.csse.unimelb.edu.au/}}
+}}
+'''Mercury''' is a [[Functional programming|functional]] [[logic programming|logic]] [[programming language]] geared towards real-world applications. It is developed at the [[University Of Melbourne]] Computer Science department under the supervision of [[Zoltan Somogyi]]. The first version was developed by [[Fergus Henderson (computer scientist)|Fergus Henderson]], Thomas Conway and Zoltan Somogyi and was released on April 8, 1995.
+
+Mercury is a purely [[Declarative programming|declarative]] [[Logic programming|logic language]]. It is related to both [[Prolog]] and [[Haskell (programming language)|Haskell]].&lt;ref name=&quot;motivation&quot;&gt;[http://www.mercury.csse.unimelb.edu.au/information/motivation.html The Mercury Project - Motivation]&lt;/ref&gt; It features a strong, static, polymorphic [[type system]], as well as a strong mode and determinism system.
+
+The official implementation, the Melbourne Mercury Compiler, is available for most [[Unix]] platforms, including [[Mac OS X]], as well as for [[Microsoft Windows]] (in Windows, it requires one of the [[Cygwin]] or [[MinGW]] toolsets, and can be compiled either with [[GNU Compiler Collection|GCC]] or [[Visual C++|Microsoft Visual C++]]).
+
+== Overview ==
+
+Mercury is based on the logic programming language [[Prolog]]. It has the same syntax, and the same basic concepts such as the [[SLD resolution]] algorithm. It can ostensibly be viewed as a pure subset of Prolog with strong types and modes. As such, it is often compared to its predecessor, both in terms of features, and run-time efficiency.
+
+The language is designed with [[software engineering]] principles in mind. Unlike the original implementations of Prolog, it has a separate [[compiler|compilation]] phase, rather than being directly interpreted, which allows a much wider range of errors to be caught before running a program. It features a sophisticated, strict [[Data type|type]] and mode system, which its authors claim makes it much easier to write robust software.&lt;ref name=&quot;motivation&quot;/&gt; Mercury's module system enables division into self-contained units, a problem for past logic programming languages. 
+
+Due to the use of information obtained at compile time (such as type and mode information), programs written in Mercury typically perform significantly faster than equivalent programs written in Prolog.&lt;ref name=&quot;benchmarks&quot;&gt;[http://www.mercury.csse.unimelb.edu.au/information/benchmarks.html The Mercury Project - Benchmarks]&lt;/ref&gt;&lt;ref name=&quot;jlp&quot;&gt;{{cite journal
+  | last = Somogyi
+  | first = Zoltan
+  | authorlink = 
+  | coauthors = Henderson, Fergus and Conway, Thomas
+  | title = The execution algorithm of Mercury: an efficient purely declarative logic programming language
+  | journal = Journal of Logic Programming
+  | volume = 29
+  | issue = 1â3
+  | pages = 17â64
+  | publisher = 
+  | location = 
+  | date = OctoberâDecember 1996
+  | url = http://www.mercury.csse.unimelb.edu.au/information/papers.html#jlp
+  | doi = 10.1016/S0743-1066(96)00068-4
+  | id = 
+  | accessdate = 2008-08-30}}&lt;/ref&gt; The authors claim that Mercury is the fastest logic language in the world, by a wide margin.&lt;ref name=&quot;motivation&quot;/&gt;
+
+Mercury is a purely [[Declarative programming|declarative]] language, unlike [[Prolog]], since it lacks &quot;extra-logical&quot; Prolog statements such as &quot;cut&quot; and [[imperative programming|imperative]] [[I/O]]. This enables advanced program [[Optimization (computer science)|optimization]], but can make certain programming constructs (such as a switch over a number of options, with a default{{Dubious|Examples_of_difficulties_introduced_by_declarativeness.3F|date=February 2009}}) harder to express. (Note that while Mercury does allow impure functionality, it is not necessary in most software, and serves primarily as a way of calling foreign language code. Also, all impure code must be explicitly marked.)
+
+Operations which would typically be impure (such as [[input/output]]) are expressed using pure constructs in Mercury using [[Linear type system|linear types]], by threading a dummy &quot;world&quot; value through all relevant code.
+
+Notable programs written in Mercury include the Mercury compiler itself and the [[Prince XML]] formatter.  Mission Critical IT [http://www.missioncriticalit.com/], a software company, has also been using Mercury since 2000 to develop enterprise applications.
+
+== Back-ends ==
+Mercury has several back-ends, which means it is possible to compile Mercury code into the following languages and code-styles:
+
+'''Production level''':
+*Low-level [[C (programming language)|C]] for [[GNU Compiler Collection|GCC]] (the original Mercury back-end)
+*High-level C
+*[[Java (programming language)|Java]] bytecode for the [[Java virtual machine|JVM]]
+
+'''Beta quality''':
+*[[Erlang (programming language)|Erlang]]
+
+'''Alpha quality''' (may not work well, or even be completely broken):
+*[[Common Intermediate Language|IL]] for [[.NET Framework|Microsoft's .NET]]
+*[[Assembly language|Assembly]] via the GCC back-end
+
+'''Past back-ends''':
+* Aditi, a deductive database system also developed at the [[University of Melbourne]].  Mercury-0.12.2 is the last version of Mercury that will support Aditi.
+
+This makes Mercury a useful high-level language for targeting multiple platforms, or for linking with code written using multiple back-ends.
+
+Mercury also has a strong foreign language interface, allowing code in other languages (depending on the chosen back-end) to be linked with Mercury code. The following foreign languages are possible:
+{| class=&quot;wikitable&quot;
+! Back-end !! Foreign language(s)
+|-
+| C (both levels)
+| [[C (programming language)|C]]
+|-
+| Java
+| [[Java (programming language)|Java]]
+|-
+| Erlang
+| [[Erlang (programming language)|Erlang]]
+|-
+| IL
+| [[Common Intermediate Language|IL]] or [[C Sharp (programming language)|C#]]
+|}
+
+Other languages can then be interfaced to by calling them from these languages.  However, this means that foreign language code may need to be written several times for the different backends, otherwise portability between backends will be lost.
+
+The most commonly used back-end is the original low-level C back-end.  As both C backends are considered production quality, this means that you will not lose a great deal of portability using foreign-language C code.
+
+== Examples ==
+[[Hello world program|Hello World]]:
+&lt;pre&gt;
+ :- module hello.
+ :- interface.
+ :- import_module io.
+ :- pred main(io::di, io::uo) is det.
+
+ :- implementation.
+ main(!IO) :-
+ 	io.write_string(&quot;Hello, World!\n&quot;, !IO).
+&lt;/pre&gt;
+
+Calculating the 10th [[Fibonacci number]] (in the most obvious way)&lt;ref name=&quot;tutorial&quot;&gt;Adapted from [http://www.mercury.cs.mu.oz.au/tutorial/book/book.pdf Ralph Becket's Mercury tutorial]&lt;/ref&gt;:
+&lt;pre&gt;
+ :- module fib.
+ :- interface.
+ :- import_module io.
+ :- pred main(io::di, io::uo) is det.
+ 
+ :- implementation.
+ :- import_module int.
+
+ :-func fib(int) = int.
+ fib(N) = (if N =&lt; 2 then 1 else fib(N - 1) + fib(N - 2)).
+
+ main(!IO) :-
+        io.write_string(&quot;fib(10) = &quot;, !IO),
+        io.write_int(fib(10), !IO),
+        io.nl(!IO).
+        % Could instead use io.format(&quot;fib(10) = %d\n&quot;, [i(fib(10))], !IO).
+&lt;/pre&gt;
+
+==Release schedule==
+The Mercury project has a new 6 monthly release cycle.  Releases are named according to the year and month of the release.
+The current release is 11.01 (April 2011).
+Previously releases were numbered 0.12, 0.13, etc. and the period between stable releases was very large (3 years).
+
+The Mercury project also makes a snapshot release daily.  The snapshot release is the latest development snapshot of the system and has all the latest features and bug fixes added to the last stable release.
+
+==See also==
+{{Portal|Free software}}
+* [[Alice (programming language)|Alice]] programming language
+* [[Logtalk]]
+* [[Oz (programming language)|Oz/Mozart]] programming language and compiler
+* [[Visual Prolog]] programming language
+
+==References==
+&lt;references/&gt;
+
+==External links==
+* {{official|http://www.mercury.csse.unimelb.edu.au/}}
+* [http://en.literateprograms.org/Category:Programming_language:Mercury Literate Programs (examples) in Mercury]
+* [http://www.mercury.csse.unimelb.edu.au/information/papers.html Papers And Presentations About Mercury]
+
+{{DEFAULTSORT:Mercury (Programming Language)}}
+[[Category:Free cross-platform software]]
+[[Category:Functional languages]]
+[[Category:Functional logic programming languages]]
+[[Category:Logic programming languages]]
+[[Category:.NET programming languages]]
+[[Category:1995 in computer science]]
+
+[[ca:Mercury]]
+[[de:Mercury (Programmiersprache)]]
+[[es:Mercury (lenguaje)]]
+[[ko:ë¨¸íë¦¬ (íë¡ê·¸ëë° ì¸ì´)]]
+[[it:Mercury (linguaggio)]]
+[[pl:Merkury (jÄzyk programowania)]]
+[[ru:Mercury (ÑÐ·ÑÐº Ð¿ÑÐ¾Ð³ÑÐ°Ð¼Ð¼Ð¸ÑÐ¾Ð²Ð°Ð½Ð¸Ñ)]]
+[[fi:Mercury (ohjelmointikieli)]]
+[[tg:Mercury]]</rev></revisions></page></pages></query></api>

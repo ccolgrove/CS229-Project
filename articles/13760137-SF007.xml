@@ -1,0 +1,45 @@
+<?xml version="1.0"?><api><query><pages><page pageid="13760137" ns="0" title="VMmark"><revisions><rev xml:space="preserve">{{Infobox_Software
+| name = VMmark
+| logo = 
+| screenshot = 
+| caption = 
+| developer = [[VMware|VMware, Inc.]]
+| latest_release_version = 2.1
+| latest release date = {{release date|2011|02|9}} [http://www.vmware.com/download/vmmark/]
+| latest_preview_version = 
+| latest_preview_date = 
+| operating_system = [[Microsoft Windows]]&lt;br&gt;[[SUSE Linux]]
+| platform = [[x86 architecture|x86]]-compatible
+| genre = Benchmark software
+| license = [[Proprietary software|Proprietary]]/[[Open source]]
+| website = [http://www.vmware.com/products/vmmark/ VMmark at VMware.com]
+}}
+'''VMmark''' is a freeware [[virtual machine]] [[Benchmark (computing)|benchmark]] software suite from [[VMware]], Inc., a division of [[EMC Corporation]].  The suite measures the performance of virtualized servers while running under load on a set of physical hardware.  VMmark was independently developed by VMware.
+
+== Technical overview ==
+In order to measure the efficiency of the virtualization layer - the [[hypervisor]] - the suite must run several virtual machines (VMs) simultaneously.  Each VM is configured according to a template, three of which are provided with the VMmark software.  The templates mimic typical software applications found in corporate [[data center]]s, such as [[Mail transfer agent|email server]]s, [[database server]]s, and [[Web server]]s.  The VMmark software collects performance statistics that are relevant to each type of application, such as commits per second for database servers, or page accesses per second for web servers.&lt;ref name=vmmark_wp_vmw&gt;{{Cite web |url=http://www.vmware.com/pdf/vmmark_intro.pdf |title=VMmark: A Scalable Benchmark for Virtualized Systems |format=PDF |publisher=VMware, Inc. |pages=6&amp;ndash;7 |date=2006-09-25 |accessdate=2007-10-16}}&lt;/ref&gt;
+
+VMs are grouped into logical units called &quot;tiles&quot;.  When evaluating a system's performance, the VMmark software first calculates a score for each tile, culled from the performance statistics produced by each VM, and aggregates the per-tile scores into a final number.&lt;ref name=vmmark_wp_vmw /&gt;
+
+== Software components ==
+VMmark uses a mixture of [[free software|free/open source]] and [[proprietary software]] in its virtual machine templates, such as [[Apache HTTP Server]] for Web servers and [[Microsoft Exchange Server]] for email servers.&lt;ref&gt;{{Cite web |title=VMmark System Requirements - Software Licensing Considerations |url=http://www.vmware.com/products/vmmark/requirements.html |publisher=VMware, Inc. |accessdate=2007-10-16}}&lt;/ref&gt;
+
+== Industry reception ==
+{{As of|2008|alt=As of May 2008}}, four computer system vendors ([[Dell|Dell Computer]], [[Hewlett-Packard]], [[IBM]], and [[Sun Microsystems]]) have submitted VMmark benchmark results to VMware.&lt;ref&gt;{{cite web |url=http://www.vmware.com/products/vmmark/results.html |title=VMmark Results |publisher=VMware, Inc. |accessdate=2008-05-06}}&lt;/ref&gt;  Additionally, Dell&lt;ref&gt;{{Cite web |title=Virtualization Performance of Dell PowerEdge Servers using the VMmark benchmark |publisher=Dell, Inc. |accessdate=2007-10-18 |format=PDF |url=http://www.dell.com/downloads/global/solutions/poweredge_vmmark_final.pdf}}&lt;/ref&gt; and Sun&lt;ref&gt;{{Cite web |url=http://www.sun.com/servers/x64/x4600/VMScaling-Final3.pdf |title=Proven Virtualization Scalability With The Sun Fire X4600 Server |publisher=Sun Microsystems |accessdate=2007-10-18 |format=PDF}} {{Dead link|date=November 2010|bot=H3llBot}}&lt;/ref&gt; have separately published whitepapers with VMmark results obtained on their respective computer systems.  [[SWsoft]], one of VMware's competitors in the [[x86 virtualization]] market, has levied criticisms against VMmark regarding the realism of the simulated workloads and the choice of software platforms.&lt;ref&gt;{{Cite web |title=VMmark â comments |url=http://virtuozzoblog.swsoft.com/2007/08/vmmark-comments.html |last=Baimetov |first=Ilya |publisher=SWsoft |accessdate=2007-10-18 |date=2007-08-15}}&lt;/ref&gt;
+
+By October 2009 that had increased to 10 vendors (HP, NEC, IBM, Unisys, Sun, Dell, [[Inspur]], Lenovo, Fujitsu and Cisco)
+
+== See also ==
+* [[List of VMware software]]
+
+== References ==
+{{Reflist|1}}
+
+== External links ==
+* [http://www.vmware.com/products/vmmark/overview.html VMmark product page] - VMware, Inc.
+* [http://www.vmware.com/pdf/vmmark_intro.pdf VMmark white paper] - VMware, Inc.
+* [http://www.spec.org/specvirtualization/ Virtualization committee] - SPEC
+
+[[Category:VMware]]
+[[Category:Computer benchmarks]]
+[[Category:Virtualization software]]</rev></revisions></page></pages></query></api>

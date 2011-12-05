@@ -1,0 +1,102 @@
+<?xml version="1.0"?><api><query><pages><page pageid="4202850" ns="0" title="BeleniX"><revisions><rev xml:space="preserve">{{Primary sources|date=July 2009}}
+{{Infobox OS
+ |name = BeleniX
+ |screenshot = [[Image:Belenix logo.png]]
+ |caption = Belenix logo
+ |developer = 
+ |family = [[Unix]]
+ |latest_release_version = 0.7.1
+ |latest_release_date = July 19, 2008
+ |kernel_type = 
+| ui = [[KDE]] 
+ |license = [[Common Development and Distribution License|CDDL]]
+ |working_state = In production
+ |website = http://www.belenix.org/
+|}}
+'''BeleniX''' is an operating system distribution built using the [[OpenSolaris]] source base.  It can be used as a [[Live CD]] as well as installed to [[hard disk]]. From the information provided on the BeleniX website, it may appear that currently,  BeleniX is compiled only for 32-bit execution (at i586/Pentium op-code based). This is compounded by the lack of clarity on the Belenix site as to whether the BeleniX distribution supports true 64-bit (i.e., [[x86-64|x86-64/AMD64]]) Solaris kernel and userland. However, oblique references from the BeleniX team members have indicated that as of BeleniX 0.7, their live CD contains both 32-bit and 64-bit installation files&lt;ref&gt;http://freshmeat.net/projects/belenix/releases&lt;/ref&gt;. Initially developed as a Live CD along the lines of [[Knoppix]] to showcase OpenSolaris technologies, Belenix went on to become the initial base for Sun's OpenSolaris distribution.&lt;ref&gt;[http://blogs.sun.com/moinakg/entry/project_indiana_internals_short_overview Project Indiana internals short overview]&lt;/ref&gt; A number of technologies pioneered in the Belenix project have gone on to become full projects in their own right within the OpenSolaris ecosystem.
+
+BeleniX is focused on using [[KDE]] for its [[desktop environment]], although [[XFCE]] has also been supported since the beginning of the distribution. An upcoming release will also include first-class support for [[GNOME]]. The BeleniX dev team focuses on technology and on innovation, and aims at working with all communities, including other OpenSolaris based distros such as [[MilaX]], [[Nexenta OS]], and [[SchilliX]]. The name and logo are references to the Celtic god of light, [[Belenus]].
+
+== Design and principles ==
+BeleniX aims to have the latest stable revisions of most software, and packages are continuously pushed in the package repository with this aim in mind.  However, in many cases bleeding-edge software is pushed out to help validate it and try out new features. Due to these reasons BeleniX also includes a lot of third-party drivers that may not be found in the official OpenSolaris distribution from [[Sun Microsystems|Sun]].
+
+While the focus of BeleniX is on the developer desktop, it is also stable and scalable enough to work as a workstation or development server environment. This is mainly due to the quality of the underlying OpenSolaris kernel and userland environment.
+
+BeleniX thus is also a first-class OpenSolaris development environment and is completely self-hosting. Every package included in BeleniX is built on BeleniX itself, including the OpenSolaris kernel. BeleniX aims to be an easy-to-use distribution that gently exposes the power of OpenSolaris.  The Live CD format makes OpenSolaris more easily approachable, and boots within two to three minutes from a CD-ROM.  It also aims to encourage innovation by bringing in new features and usability enhancements and increasing community participation.
+
+== History ==
+After the announcement of the OpenSolaris project, BeleniX was started as a private project by a few Sun employees working at Sun's India Engineering Centre in Bangalore, India, in the year 2005. Their aim was to have something along the lines of Knoppix to showcase OpenSolaris to end users. In a few weeks' time, an [[ISO image]] was ready for people to make use of.
+
+Over a period of time, BeleniX was developed further and grew in popularity.  Non-Sun contributors also joined in the effort developing it into a [[Free software|FOSS]] community project. BeleniX was the first OpenSolaris distribution to bundle a complete working [[Xorg]] X11 GUI environment.
+
+Over the years a number of critical innovations sprung out of the BeleniX project which were later incorporated into the OpenSolaris distributions from Sun. In fact the first beta release of Sun's OpenSolaris distro was largely based on BeleniX. BeleniX was the second OpenSolaris distribution to appear, after [[SchilliX]], and the first to provide an auto-configuring Xorg based [[GUI]]. It introduced various missing technologies in OpenSolaris. Some of the important innovations include:
+
+* Auto-Configuration of interfaces prior to [[Network Auto-Magic|NWAM]]
+* Complete working Xorg X11 environment, which later resulted in the Fully Open X project&lt;ref&gt;[http://www.opensolaris.org/os/project/fox/ Fully Open X]&lt;/ref&gt;
+* On-The-Fly Loopback Decompression of CD contents&lt;ref&gt;[http://www.belenix.org/?q=compression On-The-Fly Loopback Decompression]&lt;/ref&gt;
+* New Algorithm for file placement optimization leveraging [[DTrace]] profiling
+* Implementation of read-ahead and I/O scheduling in the HSFS(ISO9660) filesystem in OpenSolaris
+* Live CD built toolkit
+* First OpenSolaris distro to provide a NTFS and Ext2fs mount capability
+* First OpenSolaris distro to provide advanced [[Xorg]] auto-configuration capability
+* First OpenSolaris distro to be able to run a fully functional [[Java (software platform)|Java]] 5/6 environment
+* First OpenSolaris distro to provide a basic port of [[GNU Parted]]
+* First OpenSolaris distro to provide a complete KDE 3.5.x environment
+
+[[Project Indiana]] has leveraged all these technologies and has served as a starting point for it.&lt;ref&gt;[http://www.belenix.org/content/LiveCD-Architecture-Overview LiveCD Architecture Overview diagram]&lt;/ref&gt; Taking this and other technologies developed for Indiana in account, the future focus for BeleniX has been set to evolve and grow as a source-level Indiana derivate with focus on the KDE desktop, and to make a fully featured and functional OpenSolaris distro based on KDE.&lt;ref&gt;[http://thread.gmane.org/gmane.os.solaris.opensolaris.indiana/832 Future of BeleniX Discussed on the mailing list]&lt;/ref&gt;
+
+Check the LiveCD Features Timeline&lt;ref&gt;[http://www.belenix.org/content/LiveCD-Features-Timeline LiveCD Features Timeline]&lt;/ref&gt; in References to see a chronological account of BeleniX development till the release of the OpenSolaris distro by Sun in 2008.
+
+== Software and toolchain ==
+The BeleniX team aims to ensure that all packages co-exist on the same system, while ensuring that the latest versions of the package are built with the latest compilers. As a result, Belenix has so far had KDE 3.5.9 built with [[GNU Compiler Collection|GCC]] 3.4.3, newer packages including KDE4 being increasingly built with Gcc 4.4. There are some packages, especially the GNOME components derived from the [[Java Desktop System|JDS]] project, that are being built with [[Sun Studio (software)|Sun Studio]] 12. These are being actively migrated to Gcc 4.4. The team aims to eventually have all of BeleniX built on the completely FOSS toolchain Gcc.
+
+== Desktop environments ==
+Belenix has so far positioned itself as a KDE distribution, while also providing XFCE. Upcoming releases will also provide GNOME.
+
+* [[KDE]] 3.x and 4.2.4(upcoming)
+* [[XFCE]]
+* [[GNOME]]
+
+== Installation ==
+BeleniX today uses the same Caiman Installer&lt;ref&gt;[http://www.opensolaris.org/os/project/caiman/ Project Caiman]&lt;/ref&gt; and libraries that are used in Sun's OpenSolaris distro. Going forward there are plans to re-implement the Installer GUI in [[Qt4]] while still using the underlying Caiman Installer libraries.
+
+== Packaging ==
+The Belenix team presently continues to use SVR4 packaging, which is what [[Solaris (operating system)|Solaris]] has provided to date. The team does not intend to use [[Image Packaging System|IPS]] in its present state due to various technical reasons, and is considering alternatives including the [[deb (file format)|deb]] format and the [[RPM Package Manager|RPM5]] format along with the [[Smart Package Manager]].
+
+== References ==
+{{reflist}}
+
+== External links ==
+* [http://www.belenix.org/ BeleniX Home Page] ''
+* {{Distrowatch|belenix|NAME=BeleniX}}
+* [http://www.genunix.org/wiki/index.php/Belenix_FAQ BeleniX FAQ on ''Genunix OpenSolaris Wiki'']
+* [http://www.mail-archive.com/opensolaris-discuss@opensolaris.org/msg08525.html Linux Format Magazine based its initial review of the OpenSolaris Platform on BeleniX]
+* [http://www.linuxformat.co.uk/content/lxf-guide-opensolaris-distros?op=modload&amp;name=News&amp;file=article&amp;sid=779 Another review of OpenSolaris distributions from Linux Format]
+* The OpenSolaris Distributions are mentioned in the OpenSolaris Bible with credit given to BeleniX for its contributions:[http://www.amazon.com/dp/0470385480], [http://www.amazon.com/s?url=search-alias%3Daps&amp;field-keywords=belenix&amp;x=0&amp;y=0]
+* [http://www.phoronix.com/scan.php?page=article&amp;item=729&amp;num=1 Phoronix review of BeleniX 0.6]
+* [http://www.phoronix.com/scan.php?page=article&amp;item=belenix_07&amp;num=1 Phoronix review of BeleniX 0.7]
+* BeleniX was one of the top 20 winners of the FOSS India Award 2008:[http://blogs.sun.com/jimgris/entry/belenix_wins_foss_in_award], [http://www.efytimes.com/efytimes/24867/news.htm]
+* [http://infotech.indiatimes.com/articleshow/1798092.cms The initial BeleniX team was in the primary Times Of India newspaper]
+* [http://timesofindia.indiatimes.com/Cities/Bangalore/Carry_hard_disk_in_a_pen_drive/articleshow/532732.cms An early BeleniX developer Anil Gulecha who put BeleniX on a thumb drive was featured in the front page of Times Of India]
+* [http://blogs.sun.com/jonathan/entry/corporate_compassion SUN's CEO Jonathan Schwartz linked to Anil's and others TV interview video]
+* [http://www.serverwatch.com/tutorials/article.php/3647306 Serverwatch article on BeleniX]
+* [http://blogs.sun.com/josephgeorge/entry/el_reg_speaks_about_belenix BeleniX mentioned in ElReg]
+* Linux.COM articles on BeleniX:[http://www.linux.com/archive/feature/50315], [http://www.linux.com/archive/feature/114309]
+* [http://www.eweek.com/c/a/Linux-and-Open-Source/OpenSolaris-Options-Show-Promise/ Eweek Article mentioning BeleniX]
+* [http://www.hindu.com/2006/12/03/stories/2006120300051200.htm BeleniX mentioned] in [http://www.hindu.com/ The Hindu]
+* [http://src.opensolaris.org/source/search?q=belenix&amp;defs=&amp;refs=&amp;path=&amp;hist=&amp;project=%2Fcaiman BeleniX 0.4.1 was the basis for Project Indiana/Caiman]
+
+{{Solaris}}
+
+{{DEFAULTSORT:Belenix}}
+[[Category:KDE]]
+[[Category:OpenSolaris]]
+
+[[ar:Ø¨ÙÙÙÙÙØ³]]
+[[ca:Belenix]]
+[[cs:BeleniX]]
+[[es:BeleniX]]
+[[fr:BeleniX]]
+[[pl:BeleniX]]
+[[ru:BeleniX]]
+[[tr:BeleniX]]</rev></revisions></page></pages></query></api>

@@ -1,0 +1,119 @@
+<?xml version="1.0"?><api><query><pages><page pageid="224128" ns="0" title="Phoebe (computer)"><revisions><rev xml:space="preserve">{{Technical|reason=The Specifications section may be too complicated to be understood by someone not familiar with computer hardware terms.|date=February 2011|section=Specifications}}{{Infobox computer
+|Name         = Phoebe 2100
+|Logo         =  
+|Photo        = [[File:Acorn-Phoebe-Case.jpg|150px]]
+|Caption      = The distinctive yellow case of the Acorn Phoebe 2100.
+|Type         = [[32-bit]] [[microcomputer]]
+|Developer    = [[Acorn Computers]]
+|Released     = Cancelled before launch in late 1998
+|Processor    = [[Intel]] [[StrongARM]] SA110
+|Frequency    = 233&amp;nbsp;MHz
+|Memory       = up to 512&amp;nbsp;MiB of [[SDRAM]]
+|Media        = [[floppy disk]], [[hard disk]], [[CD-ROM]]
+|Graphics     =
+|Display      = [[VGA]]
+|Input        = Keyboard, Mouse, Joystick
+|Connectivity = 2 x [[RS-232]] [[serial port|serial]], printer [[parallel port|parallel]]
+|OS           = [[RISC OS]] 4
+|Baseprice    = Â£1760 (inc [[VAT]]) in 1998
+}}
+
+The '''Phoebe 2100''' (or ''Risc PC 2'') was to be [[Acorn Computers]]' next generation [[Risc PC]], slated for release in late 1998. However in September 1998 Acorn cancelled the project as part of a restructuring of the company.
+
+==Specification&lt;ref&gt;[http://www.marutan.net/wikiref/Acorn%20Registered%20Developer%20Docs/HARDWARE/PHOEBE/FUNCSPEC.HTM Acorn Computers - Phoebe (RISC PC II) Functional Specification]&lt;/ref&gt;==
+:233 [[Megahertz|MHz]] [[Intel]] [[StrongARM]] SA110 Revision S [[Central processing unit|CPU]]. Support for multiple CPUs on daughter cards available, but multiple CPU support was not available in [[RISC OS]]
+:64&amp;nbsp;MHz [[front side bus]]
+:up to 512&amp;nbsp;[[MiB]] of [[SDRAM]]
+:IOMD2 [[I/O]] Controller
+::[[PLX Technology]] [[PCI Bridge]] PCI9080
+:::4 PCI slots (33MHz)
+::PC Style Joystick/Game Port
+::3 Acorn Podule expansion sockets
+::SMC37672 [[SuperIO]] chip supporting
+:::PS/2 Keyboard and Mouse
+:::Two [[Advanced Technology Attachment|EIDE]] channels supporting up to four devices (6.4 [[Gigabyte|GB]] unit supplied)
+:::Two [[serial port]]s
+:::Parallel Port
+:::Single Floppy drive
+:VIDC20 Revision R [[Video controller]] supporting
+::4&amp;nbsp;[[Megabyte|MiB]] of EDO [[Video RAM|VRAM]] running at 200&amp;nbsp;MHz
+:[[NLX (motherboard form factor)|NLX form factor]] Tower case with a custom yellow front panel
+:[[Compact Disc player#Slot loading|Slot loading]] [[CD-ROM]] drive
+:5.25&quot; [[drive bay]]s
+:230 W [[Power supply|PSU]] unit.
+
+==Development==
+
+In November 1996, the design of what was to become Phoebe 2100 was started. The design took into account a number of perceived weaknesses of the [[Risc PC]] design, a slow memory architecture, limited I/O capability, limited expansion, and not adhering to industry standards.&lt;ref name=&quot;clan-aug-1998&quot;/&gt; To overcome these weakness a number of design objectives were created; Harness the full potential of the [[StrongARM]] CPU, support multiple processors, add support for [[Conventional PCI|PCI]] expansion, offer the best possible graphics, run existing RISC OS applications and to provide enhanced RISC OS functionality. An additional design objective of reusing the same case as the [[Risc PC]] was dropped due to power supply requirements and electrical interference problems.&lt;ref name=&quot;clan-aug-1998&quot;/&gt;
+
+To provide for these new capabilities Acorn had to design two new support chips for the system;
+
+* '''VIDC20R''', a new revision of the VIDC20 video chip used in the [[Risc PC]]. Using a shrink of the process to [[600 nanometer|0.6 Âµm]], a 100% performance increase was gained. Due to this being logically the same chip as the previous generation there would be no issues with software compatibility.&lt;ref name=&quot;clan-aug-1998&quot;/&gt;&lt;ref name=&quot;dev-19971112&quot;/&gt;
+
+* '''IOMD2''', the new IO chip had to support multiple processors, included message passing and multiple bus mastering, and was manufactured using a [[350 nanometer|0.35 Âµm process]]. Throughout development and prototyping the IOMD2 were developed on a large [[FPGA]].&lt;ref name=&quot;clan-aug-1998&quot;/&gt;
+
+During 1997 and 1998 Acorn regularly took prototype and mock-up hardware to various Acorn computer shows, including Acorn World October 1997&lt;ref name=&quot;dev-19971112&quot;&gt;[http://www.marutan.net/wikiref/Acorn%20Registered%20Developer%20Docs/DSNEWS/ART/1997/1997_11.12 Dave Walker - Acorn Developer News 12/11/97] Acorn World Aftermath, Clan Beta CDs, Phoebe, Tons of Other Stuff&lt;/ref&gt;, Wakefield Acorn Spring Show May 1998&lt;ref&gt;[http://acorn.chriswhy.co.uk/docs/Acorn/PR/Pheobe_2100.pdf Acorn Computers - Acorn previews Phoebe at Wakefield Show]&lt;/ref&gt; and the Acorn Southeast Show June 1998.&lt;ref name=&quot;clan-aug-1998&quot;&gt;[http://www.iconbar.com/forums/viewthread.php?newsid=1082#cn5 Acorn Clan Newsletter - August 1998]&lt;/ref&gt;
+
+By May 1998 Acorn started to offer their 'Registered Developer' scheme members the chance to pre-order a pre-launch prototype for testing and development, these were offered at a Â£950 (ex [[VAT]])&lt;ref&gt;[http://www.marutan.net/wikiref/Acorn%20Registered%20Developer%20Docs/DSNEWS/ART/1998_05.13 Dave Walker - Acorn Developer News 13/05/98] Phoebe availability, Java 1.2 JDK, etc etc&lt;/ref&gt; a significant discount on the public price of Â£1500 (ex VAT) revealed in June.&lt;ref&gt;[http://acorn.chriswhy.co.uk/docs/Acorn/Clan/Acorn_Clan_Phoebe2100NewAcornWorkstation.pdf Acorn Computers - Phoebe 2100 - The New Acorn Workstation]&lt;/ref&gt;.
+
+On 15 September 1998, the first Phoebe 2100 motherboards with silicon (rather than FPGA) based IOMD2 chips were powered up. They successfully ran at the full [[front side bus]] speed of 64&amp;nbsp;MHz, and the improved performance of the video chip was also seen, however various bugs in the sound DMA were reported and general system instability was noted. As such, no shippable prototypes were yet available to send to the 'Registered Developers'.&lt;ref&gt;[http://www.marutan.net/wikiref/Acorn%20Registered%20Developer%20Docs/DSNEWS/ART/1998_09.15 Dave Walker - Acorn Developer News 15/09/98] Stop Press: &quot;She's Alive!&quot;, Server availability problems, Softloadable Ursula Bugs, Use on A7000+, MIDI Manager specs, etc etc&lt;/ref&gt;
+
+Two days later, on 17 September 1998, the development of Phoebe 2100 was cancelled.
+
+Development was expected to cost Â£2.1 million.&lt;ref name=&quot;clan-aug-1998&quot;/&gt;
+
+==Operating System==
+
+During the years following the release of the [[Risc PC]], Acorn had discussed using an alternative to [[RISC OS]] as their next operating system, using [[TAOS]]{{citation needed|date=February 2011}} or writing their own [[microkernel]]-based operating system &quot;Galileo&quot;&lt;ref&gt;[http://www.iconbar.com/forums/viewthread.php?newsid=1082#cn2 Acorn Clan Newsletter - A7000+]&lt;/ref&gt;. However for the launch of Phoebe 2100 an enhanced version of [[RISC OS]] would be developed, called RISC OS 4 (codenamed 'Ursula'&lt;ref name='ROOL Acorn project codenames'&gt;{{cite web | url = http://www.riscosopen.org/wiki/documentation/pages/Acorn%20Project%20Codenames | title = Acorn Project Codenames | accessdate = 2011-02-03 | quote = Ursula, RISC OS 4.00 (crippled developer release retroversioned as 3.8, see branch Ursula_RiscPC), 1997-8}}&lt;/ref&gt;). RISC OS wouldn't support the multiple processor daughter cards that had been included in the Phoebe 2100 hardware specification.&lt;ref name=&quot;dev-19971112&quot;/&gt;
+
+RISC OS 4 had to support the new hardware of Phoebe 2100 which wasn't present in Acorn's earlier machines;
+
+* PCI expansion slots&lt;ref&gt;[http://www.marutan.net/wikiref/Acorn%20Registered%20Developer%20REFERNC/RO4/API/HTML/PCI.HTM Acorn Computers - Ursula PCI Manager - Functional Specification]&lt;/ref&gt;
+* Support for multiple serial ports&lt;ref&gt;[http://www.marutan.net/wikiref/Acorn%20Registered%20Developer%20REFERNC/RO4/API/HTML/SERIAL.HTM Acorn Computers - Serial Interface Specification]&lt;/ref&gt;
+* The PC style [[game port]], supporting joystick&lt;ref&gt;[http://www.marutan.net/wikiref/Acorn%20Registered%20Developer%20REFERN/RO4/API/JOYSTICK.TXT Acorn Computers - Joystick Module for Ursula]&lt;/ref&gt; and MIDI&lt;ref&gt;[http://www.marutan.net/wikiref/Acorn%20Registered%20Developer%20REFERNC/RO4/API/MIDIMGR.TXT Acorn Computers - MIDI Manager module 0.00 Functional Specification]&lt;/ref&gt;
+
+In addition several new features were to be added to the core of RISC OS;
+
+* A better file system, increasing the number of items in directory from 77 to approx 88,000 and increasing the max length of a filename from 10 characters to 255&lt;ref name=&quot;clan-aug-1998&quot;/&gt;&lt;ref&gt;[http://www.marutan.net/wikiref/Acorn%20Registered%20Developer%20REFERNC/RO4/API/HTML/FILECORE.HTM Acorn Computers - FileCore - Phase 1 Functional Specification]&lt;/ref&gt;
+* A plugin based system configuration utility.&lt;ref&gt;[http://www.marutan.net/wikiref/Acorn%20Registered%20Developer%20REFERNC/RO4/API/HTML/CONFIGUR.HTM Acorn Computers - Ursula !Configure Changes Functional Specification]&lt;/ref&gt;
+* A new screensaver API&lt;ref&gt;[http://www.marutan.net/wikiref/Acorn%20Registered%20Developer%20REFERNC/RO4/API/HTML/SCREENSA.HTM Acorn Computers - Ursula Screensaver Functional Specification]&lt;/ref&gt;
+* An enhanced window manager&lt;ref&gt;[http://www.marutan.net/wikiref/Acorn%20Registered%20Developer%20REFERNC/RO4/API/HTML/WIMP.HTM Acorn Computers - Ursula Window Manager Changes Functional Specification]&lt;/ref&gt;
+* An updated interactive help application&lt;ref&gt;[http://www.marutan.net/wikiref/Acorn%20Registered%20Developer%20REFERNC/RO4/API/HTML/HELP.HTM Acorn Computers - Ursula Interactive Help Functional Specification]&lt;/ref&gt;
+* A redesigned set of icons
+
+To prepare developers for the changes to the OS, Acorn released to its 'Registered Developer' program RISC OS 3.80, designed to load on Acorn's previous generation [[Risc PC]] and [[Acorn A7000|A7000]] computers. This would enable developers to test that their software would be compatible with Phoebe 2100, provided it didn't require any of the new hardware features. RISC OS 3.80 was limited, it only ran on ARM6 and ARM7 Risc PCs and not [[StrongARM]] based ones&lt;ref&gt;[http://www.marutan.net/wikiref/Acorn%20Registered%20Developer%20Docs/DSNEWS/ART/1998_09.04 Dave Walker - Acorn Developer News 04/09/1998] Softloadable Ursula Image, UrsulaBugs Alias, Updated Tools, etc&lt;/ref&gt;. Testing of hardware compatibility would have to wait until an initial run of 100 or so pre-production machines was made available to Registered Developers.&lt;ref&gt;[http://www.marutan.net/wikiref/Acorn%20Registered%20Developer%20Docs/DSNEWS/ART/1998_04.17 Dave Walker - Acorn Developer News 17/04/98] Spec Review Aftermath, Developer Conference, UrsMod Tool, Prototype Phoebes, etc&lt;/ref&gt;
+
+==Code names==
+
+The Phoebe 2100 project used a series of names inspired by characters from the TV series '[[Friends]]' as [[Code_name#Project_code_name|code names]] for the components.&lt;ref&gt;[http://www.houseofmabel.com/puters/Phoebe/index.html House of Mable - Computers: Phoebe]&lt;/ref&gt;&lt;ref&gt;[http://iconbar.com/forums/viewthread.php?threadid=407 Iconbar - Acorn Codenames Exposed and Explained]&lt;/ref&gt;.
+
+*[[Phoebe Buffay|Phoebe]] - The Machine itself, name carried over to launch title '''Phoebe 2100'''
+*[[Characters of Friends#Introduced in Season 1|Ursula]] - The operating system, RISC OS 4, that it was to run
+*[[Chandler Bing|Chandler]] - The IOMD2 chip
+*[[Rachel Green|Rachel]] - Processor card
+*[[Monica Geller|Monica]] - PCI Bridge
+
+==Cancellation==
+
+On 17 September 1998, Acorn finished a review of its business and decided to close the 'Workstation Division', the department developing Phoebe 2100, and all work stopped.&lt;ref name=&quot;jaffasoft.co.uk&quot;&gt;[http://www.jaffasoft.co.uk/feature/phoebe.html Jaffa Software - Phoebe: Risc PC 2 No More]&lt;/ref&gt;&lt;ref&gt;[http://atterer.org/sites/atterer/files/2010-04/acorn-arm/acorn-black-thursday.txt Stuart Halliday - Acorn Cybervillage Announcement - Workstation Division to close, Risc PC 2 work stopped, Acorn World Show postponed]&lt;/ref&gt;&lt;ref&gt;[http://www.theregister.co.uk/1998/09/17/acorn_scrubs_risc_pc/ The Register - Acorn scrubs Risc PC 2]&lt;/ref&gt;
+
+Acorn Computers CEO, Stan Boland said ''&quot;There is not a big enough market for the PC (Risc PC 2), which is largely for home use and games. It's an enthusiast's product. We are going to resize the rest of the company and concentrate on becoming a digital TV and thin client company&quot;''&lt;ref&gt;[http://www.acorn-gaming.org.uk/index.php3?p=News/Sep98 Acorn Gaming - News Sept 98]&lt;/ref&gt;, and Computerworld Online News reported an Acorn spokesman saying ''&quot;The problem was that it would have had a retail cost about twice as high as for a comparable PC.&quot;''.&lt;ref&gt;[http://www.computing.co.uk/ctg/analysis/1839304/press-watch-what-papers Computing.co.uk - 06/10/1998 - Press watch: What other papers said this week]&lt;/ref&gt;
+
+After cancellation it came to light that as few as 150 to 300 pre-orders had been placed.&lt;ref&gt;[https://groups.google.com/group/comp.sys.acorn.misc/msg/b9a80dc6f547290a?hl=en Robert Todd  - comp.sys.acorn.misc - PHOEBE IS COMING - IF YOU WANT HER!!!]&lt;/ref&gt;&lt;ref&gt;[https://groups.google.com/group/comp.sys.acorn.misc/msg/b9a80dc6f547290a?hl=en Ross Tierney - comp.sys.acorn.misc - PHOEBE IS COMING - IF YOU WANT HER!!!]&lt;/ref&gt;
+
+==Aftermath==
+
+In the aftermath of the cancellation of Phoebe 2100 and Acorn Computers' change in direction from general computing to Set-Top-Box development and DSP silicon design&lt;ref name=&quot;e14-q&amp;a&quot;&gt;[http://web.archive.org/web/19990506183321/www.acorn.co.uk/acorn/news/press/e14qa.html Element 14 - Acorn and Element 14 - Questions and Answers.]&lt;/ref&gt; there were several attempts to resurrect some or all of the Phoebe 2100 hardware or RISC OS 4 development.&lt;ref name=&quot;jaffasoft.co.uk&quot;/&gt;
+
+Of these, the only successful group was the Steering Group who after initially being interested in releasing the Phoebe 2100, realised it would be financially prohibitive and set about creating a new company '''[[RISCOS Ltd]]'''.&lt;ref name=&quot;jaffasoft.co.uk&quot;/&gt; In March 1999 RISCOS Ltd negotiated a license with Element 14, the recently renamed Acorn Computers&lt;ref&gt;[http://www.riscos.com/news/news_items/PR050399.htm RISCOS Ltd - PRESS RELEASE 5th March 1999] RISCOS Ltd acquires license to develop and release RISC OS 4&lt;/ref&gt;, and set about finishing the development of RISC OS 4. In July 1999 RISCOS Ltd launched RISC OS 4 to the public, it supported Acorn's [[Risc PC]] and [[Acorn A7000|A7000/+]] machines.&lt;ref&gt;[http://www.riscos.com/news/news_items/PR070799.htm RISCOS Ltd - PRESS RELEASE 7th July 1999] RISC OS 4 Launched&lt;/ref&gt;
+
+In addition, after the cancellation, excess numbers of the Phoebe 2100 yellow NLX case were sold by CTA Direct&lt;ref&gt;[http://www.iconbar.com/articles/Phoebe_cases_on_sale/index37.html Iconbar.com - Phoebe cases on sale]&lt;/ref&gt;, sometimes including an NLX compatible PC.&lt;ref&gt;[https://groups.google.com/group/comp.sys.acorn.announce/msg/2fc61db1ec6a11ce?hl=en Special Offers from CTA Direct - comp.sys.acorn.announce]&lt;/ref&gt;
+
+==References==
+
+{{reflist|2}}
+
+{{Acorn computers}}
+
+[[es:Acorn Phoebe]]
+[[it:Phoebe (computer)]]</rev></revisions></page></pages></query></api>

@@ -1,0 +1,602 @@
+<?xml version="1.0"?><api><query><pages><page pageid="15881" ns="0" title="Java (programming language)"><revisions><rev xml:space="preserve">{{Redirect|Java language|the natural language from the Indonesian island of Java|Javanese language}}
+{{Distinguish|JavaScript}}
+{{Infobox programming language
+| name                   = Java
+| logo                   = [[File:Java logo.svg|100px]]
+| paradigm               = [[Object-oriented programming|Object-oriented]], [[Structured programming|structured]], [[Imperative programming|imperative]]
+| year                   = 1995
+| designer               = [[James Gosling]] and&lt;br&gt;[[Sun Microsystems]]
+| developer              = [[Oracle Corporation]]
+| latest_release_version = Java Standard Edition 7 Update 1(1.7.1)
+| latest_release_date    = {{Start date and age|2011|10|18}}
+| latest_test_version    =
+| latest_test_date       =
+| turing-complete        = Yes
+| typing                 = [[Type system|Static, strong, safe]], [[Nominative type system|nominative]], [[Manifest typing|manifest]]
+| implementations        = [[OpenJDK]], [[HotSpot]], [[:Category:Java virtual machine|many others]]
+| influenced_by          = [[Ada (programming language)|Ada 83]], [[C++]], [[C Sharp (programming language)|C#]],&lt;ref&gt;Java 5.0 added several new language features (the [[foreach|enhanced for loop]], [[autoboxing]], [[variadic function|varargs]] and [[Java annotation|annotations]]), after they were introduced in the similar (and competing) [[C Sharp (programming language)|C#]] language [http://www.barrycornelius.com/papers/java5/][http://www.levenez.com/lang/]&lt;/ref&gt; [[Object Pascal|Delphi Object Pascal]],&lt;ref&gt;{{cite web|url=http://java.sun.com/docs/white/delegates.html|title=About Microsoft's &quot;Delegates&quot;|accessdate=2010-01-11|quote=We looked very carefully at [[Object Pascal|Delphi Object Pascal]] and built a working prototype of bound method references in order to understand their interaction with the Java programming language and its APIs. [...] Our conclusion was that bound method references are unnecessary and detrimental to the language. This decision was made in consultation with Borland International, who had previous experience with bound method references in [[Object Pascal|Delphi Object Pascal]].}}&lt;/ref&gt; [[Eiffel (programming language)|Eiffel]],&lt;ref&gt;{{cite web |author=Gosling, James; and McGilton, Henry |title=The Java Language Environment |date=May 1996 |url=http://java.sun.com/docs/white/langenv/Intro.doc1.html#943 }}&lt;/ref&gt; [[Generic Java]], [[Mesa (programming language)|Mesa]],&lt;ref&gt;{{cite web |author=Gosling, James; Joy, Bill; Steele, Guy; and Bracha, Gilad |title=The Java Language Specification, 2nd Edition |url= http://java.sun.com/docs/books/jls/second_edition/html/intro.doc.html#237601 }}&lt;/ref&gt; [[Modula-3]],&lt;ref&gt;{{cite web |url=http://www.computerworld.com.au/index.php/id;1422447371;pp;3;fp;4194304;fpid;1 |title=The A-Z of Programming Languages: Modula-3 |publisher=Computerworld.com.au |accessdate=2010-06-09 }}&lt;/ref&gt; [[Oberon (programming language)|Oberon]],&lt;ref&gt;[[Niklaus Wirth]] stated on a number of public occasions, e.g. in a lecture at the Polytechnic Museum, Moscow in September, 2005 (several independent first-hand accounts in Russian exist, e.g. one with an audio recording: {{cite web |author=Filippova, Elena|title=Niklaus Wirth's lecture at the Polytechnic Museum in Moscow|date=September 22, 2005|url=http://www.delphikingdom.com/asp/viewitem.asp?catalogid=1155}}), that the Sun Java design team licenced the Oberon compiler sources a number of years prior to the release of Java and examined it: a (relative) compactness, type safety, garbage collection, no multiple inheritance for classes -- all these key overall design features are shared by Java and Oberon.&lt;/ref&gt; [[Objective-C]],&lt;ref&gt;[[Patrick Naughton]] cites [[Objective-C]] as a strong influence on the design of the Java programming language, stating that notable direct derivatives include Java interfaces (derived from Objective-C's [[Objective-C#Protocols|protocol]]) and primitive wrapper classes. [http://cs.gmu.edu/~sean/stuff/java-objc.html]&lt;/ref&gt; [[UCSD Pascal]],&lt;ref&gt;{{cite web |url=http://www.fscript.org/prof/javapassport.pdf |quote=The project went ahead under the name &quot;green&quot; and the language was based on an old model of [[UCSD Pascal]], which makes it possible to generate interpretive code |title=History of Java |work=Java Application Servers Report |author=TechMetrix Research |year=1999 }}&lt;/ref&gt;&lt;ref&gt;{{cite web |url=http://queue.acm.org/detail.cfm?id=1017013 |title=A Conversation with James Gosling â ACM Queue |publisher=Queue.acm.org |date=2004-08-31 |accessdate=2010-06-09 }}&lt;/ref&gt; [[Smalltalk]]
+| influenced             = [[Ada (programming language)|Ada&amp;nbsp;2005]], [[BeanShell]], [[C Sharp (programming language)|C#]], [[Clojure]], [[D (programming language)|D]], [[ECMAScript]], [[Groovy (programming language)|Groovy]], [[J Sharp|J#]], [[JavaScript]], [[PHP]], [[Python (programming language)|Python]], [[Scala (programming language)|Scala]], [[Vala (programming language)|Vala]]
+| dialects = [[Generic Java]], [[Pizza (programming language)|Pizza]]
+| operating_system       = [[Cross-platform|Cross-platform (multi-platform)]]
+| license                = [[GNU General Public License]]&amp;nbsp;/ [[Java Community Process]]
+| website                = [http://www.oracle.com/technetwork/java/ For Java Developers]
+| file_ext               = .java, .class, .jar
+| wikibooks              = Java Programming
+}}
+
+'''Java''' is a [[programming language]] originally developed by [[James Gosling]] at [[Sun Microsystems]] (which has since merged into [[Oracle Corporation]]) and released in 1995 as a core component of Sun Microsystems' [[Java (software platform)|Java platform]]. The language derives much of its [[syntax (programming languages)|syntax]] from [[C (programming language)|C]] and [[C++]] but has a simpler [[object model]] and fewer [[Low-level programming language|low-level]] facilities. Java applications are typically [[compiler|compiled]] to [[Java bytecode|bytecode]] ([[Class (file format)|class file]]) that can run on any [[Java Virtual Machine]] (JVM) regardless of [[computer architecture]].
+Java is a general-purpose, concurrent, class-based, object-oriented language that is specifically designed to have as few implementation dependencies as possible. It is intended to let application developers &quot;write once, run anywhere.&quot; Java is currently one of the most popular programming languages in use, particularly for client-server web applications.&lt;ref&gt;{{cite web |url=http://www.langpop.com/ |title=Programming Language Popularity |year=2009 |accessdate=2009-01-16 }}&lt;/ref&gt;&lt;ref&gt;{{cite web |url=http://www.tiobe.com/index.php/content/paperinfo/tpci/index.html |title=TIOBE Programming Community Index |year=2009 |accessdate=2009-05-06 }}&lt;/ref&gt;
+
+The original and [[reference implementation (computing)|reference implementation]] Java [[compiler]]s, virtual machines, and [[library (computing)|class libraries]] were developed by Sun from 1995. As of May 2007, in compliance with the specifications of the [[Java Community Process]], Sun relicensed most of its Java technologies under the [[GNU General Public License]]. Others have also developed alternative implementations of these Sun technologies, such as the [[GNU Compiler for Java]] and [[GNU Classpath]].
+
+==History==
+{{See also|Java (software platform)#History}}
+
+[[File:Wave.svg|thumb|150px|Duke, the Java mascot]]
+[[James Gosling]], Mike Sheridan, and [[Patrick Naughton]] initiated the Java language project in June 1991.&lt;ref&gt;{{cite web |url=http://java.sun.com/features/1998/05/birthday.html |archiveurl=http://web.archive.org/web/20050420081440/http://java.sun.com/features/1998/05/birthday.html |archivedate=2005-04-20 |title=Java technology: The early years |last=Byous |first=Jon |date=ca. 1998 |work=Sun Developer Network |publisher=[[Sun Microsystems]] |accessdate=2005-04-22 |archivedate=April 20, 2005 }}&lt;/ref&gt; Java was originally designed for interactive television, but it was too advanced for the digital cable television industry at the time.&lt;ref&gt;{{cite web |url=http://www.java.com/en/javahistory/ |title=The History of Java Technology |date=ca. 1995 |work=Sun Developer Network |accessdate=2010-04-30 }}&lt;/ref&gt; The language was initially called ''[[Oak (programming language)|Oak]]'' after an [[Oak|oak tree]] that stood outside Gosling's office; it went by the name ''Green'' later, and was later renamed ''Java'', from Java coffee, said to be consumed in large quantities by the language's creators.&lt;ref&gt;{{cite web |url=http://www.thefreedictionary.com/Java |title=Java - definition of Java by the Free Online Dictionary, Thesaurus and Encyclopedia. |date=2003-06-15 |accessdate=2011-07-30 }}&lt;/ref&gt; Gosling aimed to implement a [[virtual machine]] and a language that had a familiar [[C (programming language)|C]]/[[C++]] style of notation.&lt;ref&gt;Kabutz, Heinz; [http://www.artima.com/weblogs/viewpost.jsp?thread=7555 ''Once Upon an Oak'']. Artima. Retrieved April 29, 2007.&lt;/ref&gt;
+
+Sun Microsystems released the first public implementation as Java 1.0 in 1995. It promised &quot;[[Write once, run anywhere|Write Once, Run Anywhere]]&quot; (WORA), providing no-cost run-times on popular [[Computing platform|platforms]]. Fairly secure and featuring configurable security, it allowed network- and file-access restrictions. Major web browsers soon incorporated the ability to run Java ''[[applet]]s'' within web pages, and Java quickly became popular. With the advent of ''Java 2'' (released initially as J2SE 1.2 in December 1998â1999), new versions had multiple configurations built for different types of platforms. For example, ''J2EE'' targeted enterprise applications and the greatly stripped-down version ''J2ME'' for mobile applications (Mobile Java). ''J2SE'' designated the Standard Edition. In 2006, for marketing purposes, Sun renamed new ''J2'' versions as ''[[Java Platform, Enterprise Edition|Java EE]]'', ''[[Java Platform, Micro Edition|Java ME]]'', and ''[[Java Platform, Standard Edition|Java SE]]'', respectively.
+
+In 1997, Sun Microsystems approached the [[ISO/IEC JTC1]] standards body and later the [[Ecma International]] to formalize Java, but it soon withdrew from the process.&lt;ref&gt;[http://www.open-std.org/JTC1/SC22/JSG/ Java Study Group]; [http://csdl2.computer.org/comp/proceedings/hicss/2001/0981/05/09815015.pdf Why Java Was â Not â Standardized Twice]; [http://techupdate.zdnet.com/techupdate/stories/main/0,14179,2832719,00.html What is ECMAâand why Microsoft cares]&lt;/ref&gt; Java remains a ''[[de facto]]'' standard, controlled through the [[Java Community Process]].&lt;ref&gt;{{cite web |url=http://www.jcp.org/en/home/index |title=Java Community Process website |publisher=Jcp.org |date=2010-05-24 |accessdate=2010-06-09 }}&lt;/ref&gt; At one time, Sun made most of its Java implementations available without charge, despite their [[proprietary software]] status. Sun generated revenue from Java through the selling of licenses for specialized products such as the Java Enterprise System. Sun distinguishes between its [[Software development kit|Software Development Kit (SDK)]] and [[HotSpot|Runtime Environment (JRE)]] (a subset of the SDK); the primary distinction involves the JRE's lack of the compiler, utility programs, and header files.
+
+On November 13, 2006, Sun released much of Java as [[free and open source software]], (FOSS), under the terms of the [[GNU General Public License]] (GPL). On May 8, 2007, Sun finished the process, making all of Java's core code available under [[free software]]/open-source distribution terms, aside from a small portion of code to which Sun did not hold the copyright.&lt;ref&gt;{{cite web |url=http://open.itworld.com/4915/070508opsjava/page_1.html |title=JAVAONE: Sun â The bulk of Java is open sourced |publisher=open.itworld.com |accessdate=2010-06-09 }}&lt;/ref&gt;
+
+Sun's vice-president Rich Green said that Sun's ideal role with regards to Java was as an &quot;evangelist.&quot;&lt;ref&gt;{{cite web
+|url=http://onjava.com/pub/a/onjava/2002/04/17/evangelism.html
+|title=Sunâs Evolving Role as Java Evangelist
+|publisher=[[O'Reilly Media]]}}&lt;/ref&gt; Following [[Oracle Corporation]]'s acquisition of Sun Microsystems in 2009â2010, Oracle has described itself as the &quot;steward of Java technology with a relentless commitment to fostering a community of participation and transparency&quot;.&lt;ref&gt;{{cite web
+|url=http://www.oracle.com/us/technologies/java/index.html |title=Oracle and Java |work=oracle.com |publisher=Oracle Corporation |accessdate=2010-08-23 
+|quote=Oracle has been a leading and substantive supporter of Java since its emergence in 1995 and takes on the new role as steward of Java technology with a relentless commitment to fostering a community of participation and transparency. }}&lt;/ref&gt; Java software runs on [[laptop]]s to [[data center]]s, [[Video game console|game consoles]] to scientific [[supercomputer]]s. There are 930 million [[Java (software platform)|Java Runtime Environment]] downloads each year and 3 billion [[mobile phone]]s run Java.&lt;ref&gt;{{cite web|title=Learn About Java Technology|url=http://www.java.com/en/about/|publisher=Oracle|accessdate=21 November 2011}}&lt;/ref&gt; On April 2, 2010, James Gosling resigned from Oracle.&lt;ref&gt;{{cite web|url=http://nighthacks.com/roller/jag/entry/time_to_move_on|title=Time to move on...|last=Gosling|first=James|date=April 9, 2010|work=On a New Road|accessdate=2011-11-16|authorlink=James Gosling}}&lt;/ref&gt;
+
+=== Principles ===
+There were five primary goals in the creation of the Java language:&lt;ref&gt;{{cite web |url=http://java.sun.com/docs/white/langenv/Intro.doc2.html |title=1.2 Design Goals of the Java&lt;sup&gt;TM&lt;/sup&gt; Programming Language |publisher=http://java.sun.com/docs/white/langenv/Intro.doc2.html |date=1999-01-01 |accessdate=2010-06-09 }}&lt;/ref&gt;
+&lt;!--NOTE: THESE 5 ARE QUOTED DIRECTLY FROM THE SOURCE. DON'T REMOVE ANY OR ADD &quot;NEW&quot; ONES!--&gt;
+# It should be &quot;simple, object-oriented and familiar&quot;
+# It should be &quot;robust and secure&quot;
+# It should be &quot;architecture-neutral and portable&quot;
+# It should execute with &quot;high performance&quot;
+# It should be &quot;interpreted, threaded, and dynamic&quot;
+&lt;!--NOTE: THESE 5 ARE QUOTED DIRECTLY FROM THE SOURCE. DON'T REMOVE ANY OR ADD &quot;NEW&quot; ONES!--&gt;
+
+=== Versions ===
+{{main|Java version history}}
+Major release versions of Java, along with their release dates:
+* JDK 1.0 (January 23, 1996)
+* JDK 1.1 (February 19, 1997)
+* J2SE 1.2 (December 8, 1998)
+* J2SE 1.3 (May 8, 2000)
+* J2SE 1.4 (February 6, 2002)
+* J2EE 5.0 (September 30, 2004)
+* Java SE 6 (December 11, 2006)
+* Java SE 7 (July 28, 2011)
+
+== Practices ==
+=== Java Platform ===
+{{Main|Java (software platform)|Java Virtual Machine}}
+&lt;!-- we apparently have two main sections for what seems to be the same thing. Merge needed?  --&gt;
+
+One characteristic of Java is portability, which means that computer programs written in the Java language must run similarly on any hardware/operating-system platform.
+This is achieved by compiling the Java language code to an intermediate representation called [[Java bytecode]], instead of directly to platform-specific [[machine code]]. Java bytecode instructions are analogous to machine code, but are intended to be [[Interpreter (computing)|interpreted]] by a [[virtual machine]] (VM) written specifically for the host hardware. [[End-user]]s commonly use a [[Java Virtual Machine|Java Runtime Environment]] (JRE) installed on their own machine for standalone Java applications, or in a Web browser for Java [[applet]]s.
+
+Standardized libraries provide a generic way to access host-specific features such as graphics, [[thread (computer science)|threading]], and [[Computer network|networking]].
+
+A major benefit of using bytecode is porting. However, the overhead of interpretation means that interpreted programs almost always run more slowly than programs compiled to native executables would. Just-in-Time compilers were introduced from an early stage that compile bytecodes to machine code during runtime.
+
+==== Implementations ====
+
+{{update|type=section|date=September 2011}}
+
+[[Sun Microsystems]] officially licensed the Java Standard Edition platform for [[Linux]],&lt;ref&gt;{{cite web |url=http://www.internetnews.com/dev-news/article.php/3606656 |title=Sun Embraces Linux With New Java License |publisher=Web Media Brands |work=Internet News |author=Patrizio, Andy |year=2006 |accessdate=2009-09-29 }}&lt;/ref&gt; [[Mac OS X]],&lt;ref&gt;{{cite web |url=http://developer.apple.com/java/ |title=Java for Mac OS X |publisher=Apple |work=Apple Developer Connection |accessdate=2009-09-29 }}&lt;/ref&gt; and [[Solaris (operating system)|Solaris]]. In the past Sun licensed Java to Microsoft but the license expired without renewal.&lt;ref&gt;{{cite web |url=http://www.microsoft.com/mscorp/java/default.mspx |title=Microsoft Java Virtual Machine Support |publisher=Microsoft.com |accessdate=2010-06-09 }}&lt;/ref&gt; Because Windows does not ship with a Java software platform, a network of third-party vendors and licensees&lt;ref&gt;{{cite web |url=http://java.sun.com/javase/licensees.jsp |title=Java SE â Licensees |publisher=Java.sun.com |date=2008-08-12 |accessdate=2010-06-09 }}&lt;/ref&gt; develop them for Windows and other operating system/hardware platforms.
+
+Sun's trademark license for usage of the Java brand insists that all implementations be &quot;compatible&quot;. This resulted in a legal dispute with [[Microsoft]] after Sun claimed that the Microsoft implementation did not support [[Java remote method invocation|RMI]] or [[Java Native Interface|JNI]] and had added platform-specific features of their own. Sun sued in 1997, and in 2001 won a settlement of US$20 million, as well as a court order enforcing the terms of the license from Sun.&lt;ref&gt;{{cite news |author=Niccolai, James |title=Sun, Microsoft settle Java lawsuit |url=http://www.javaworld.com/javaworld/jw-01-2001/jw-0124-iw-mssuncourt.html |work=JavaWorld |publisher=[[IDG]] |date=January 23, 2001 |accessdate=2008-07-09 }}&lt;/ref&gt; As a result, Microsoft no longer ships Java with [[Microsoft Windows|Windows]], and in recent versions of Windows, [[Internet Explorer]] cannot support Java applets without a third-party plugin. Sun, and others, have made available free Java run-time systems for those and other versions of Windows.
+
+Platform-independent Java is essential to the [[Java Platform, Enterprise Edition|Java EE]] strategy, and an even more rigorous validation is required to certify an implementation. This environment enables portable server-side applications, such as [[Web service]]s, [[Java Servlet]]s, and [[Enterprise JavaBean]]s, as well as with [[embedded system]]s based on [[OSGi]], using [[Embedded Java]] environments. Through the [[GlassFish]] project, Sun is working to create a fully functional, unified [[open source]] implementation of the Java EE technologies.
+
+Sun also distributes a superset of the JRE called the [[Java Development Kit]] (commonly known as the JDK), which includes development tools such as the [[Java compiler]], [[Javadoc]], [[JAR (file format)|Jar]], and [[debugger]].
+
+==== Performance ====
+{{Main|Java performance}}
+
+Programs written in Java have a reputation for being slower and requiring more memory than those written in [[C (programming language)|C]].&lt;ref&gt;{{cite web |url=http://www.jelovic.com/articles/why_java_is_slow.htm |title=Why Java will always be slower than C++ |last=Jelovic |first=Dejan| accessdate=2008-02-15 }}&lt;/ref&gt; However, Java programs' execution speed improved significantly with the introduction of [[Just-in-time compilation]] in 1997/1998 for [[Java version history|Java 1.1]],&lt;ref&gt;{{cite web |url=http://www.symantec.com/about/news/release/article.jsp?prid=19970407_03 |title=Symantec's Just-In-Time Java Compiler To Be Integrated Into Sun JDK 1.1 }}&lt;/ref&gt; the addition of language features supporting better code analysis (such as inner classes, StringBuffer class, optional assertions, etc.), and optimizations in the [[Java Virtual Machine]] itself, such as [[HotSpot]] becoming the default for Sun's JVM in 2000. Currently (November 2011), Java 2.0 code has approximately half the performance of C code.&lt;ref&gt;http://shootout.alioth.debian.org/u32q/which-programming-languages-are-fastest.php?gcc=on&amp;javasteady=on&amp;java=on&amp;csharp=on&amp;javaxint=on&amp;calc=chart&lt;/ref&gt;
+
+Some platforms offer direct hardware support for Java; there are microcontrollers that can run Java in hardware instead of a software JVM, and [[ARM]] based processors can have hardware support for executing Java bytecode through its [[Jazelle]] option.
+
+=== Automatic memory management ===
+Java uses an [[Garbage collection (computer science)|automatic garbage collector]] to manage memory in the [[object lifetime|object lifecycle]]. The programmer determines when objects are created, and the Java runtime is responsible for recovering the memory once objects are no longer in use. Once no references to an object remain, the [[unreachable memory]] becomes eligible to be freed automatically by the garbage collector. Something similar to a [[memory leak]] may still occur if a programmer's code holds a reference to an object that is no longer needed, typically when objects that are no longer needed are stored in containers that are still in use. If methods for a nonexistent object are called, a &quot;null pointer exception&quot; is thrown.&lt;ref&gt;{{cite web |url=http://java.sun.com/j2se/1.4.2/docs/api/java/lang/NullPointerException.html |title=NullPointerException |publisher=Java.sun.com |accessdate=2010-06-09 }}&lt;/ref&gt;&lt;ref&gt;{{cite web |url=http://www.artima.com/designtechniques/exceptions.html |title=Exceptions in Java |publisher=Artima.com |accessdate=2010-08-10 }}&lt;/ref&gt;
+
+One of the ideas behind Java's automatic memory management model is that programmers can be spared the burden of having to perform manual memory management. In some languages, memory for the creation of objects is implicitly allocated on the [[stack (data structure)|stack]], or explicitly allocated and deallocated from the [[Dynamic memory allocation|heap]]. In the latter case the responsibility of managing memory resides with the programmer. If the program does not deallocate an object, a [[memory leak]] occurs.   If the program attempts to access or deallocate memory that has already been deallocated, the result is undefined and difficult to predict, and the program is likely to become unstable and/or crash. This can be partially remedied by the use of [[smart pointer]]s, but these add overhead and complexity. Note that garbage collection does not prevent &quot;logical&quot; memory leaks, i.e. those where the memory is still referenced but never used.
+
+Garbage collection may happen at any time. Ideally, it will occur when a program is idle. It is guaranteed to be triggered if there is insufficient free memory on the heap to allocate a new object; this can cause a program to stall momentarily. Explicit memory management is not possible in Java.
+
+Java does not support C/C++ style [[pointer (computing)|pointer arithmetic]], where object addresses and unsigned integers (usually long integers) can be used interchangeably. This allows the garbage collector to relocate referenced objects and ensures type safety and security.
+
+As in [[C++]] and some other object-oriented languages, variables of Java's [[primitive data type]]s are not objects. Values of primitive types are either stored directly in fields (for objects) or on the [[Stack-based memory allocation|stack]] (for methods) rather than on the heap, as commonly true for objects (but see [[Escape analysis]]). This was a conscious decision by Java's designers for performance reasons. Because of this, Java was not considered to be a pure object-oriented programming language. However, as of Java 5.0, [[autoboxing]] enables programmers to proceed as if primitive types were instances of their wrapper class.
+
+Java contains multiple types of garbage collectors. By default, HotSpot uses the [[Concurrent Mark Sweep collector]], also known as the CMS Garbage Collector. However, there are also several other garbage collectors that can be used to manage the Heap. For 90% of applications in Java, the CMS Garbage Collector is good enough.&lt;ref&gt;http://www.oracle.com/technetwork/java/javase/tech/vmoptions-jsp-140102.html&lt;/ref&gt;
+
+== Syntax ==
+{{Main|Java syntax}}
+
+The syntax of Java is largely derived from [[C++]]. Unlike C++, which combines the syntax for structured, generic, and object-oriented programming, Java was built almost exclusively as an object-oriented language. All code is written inside a class, and everything is an object, with the exception of the primitive data types (integers, floating-point numbers, boolean values, and characters), which are not classes for performance reasons.
+
+Unlike C++, Java does not support [[Operator (programming)|operator]] [[operator overloading|overloading]] or [[multiple inheritance]] for ''classes''.  This simplifies the language and aids in preventing potential errors and [[anti-pattern]] design.
+
+Java uses similar commenting methods to C++. There are three different styles of comments: a single line style marked with two slashes (&lt;code&gt;//&lt;/code&gt;), a multiple line style opened with &lt;code&gt;/*&lt;/code&gt; and closed with &lt;code&gt;*/&lt;/code&gt;, and the [[Javadoc]] commenting style opened with &lt;code&gt;/**&lt;/code&gt; and closed with &lt;code&gt;*/&lt;/code&gt;. The Javadoc style of commenting allows the user to run the Javadoc executable to compile documentation for the program.
+
+'''Example:'''
+
+&lt;source lang=&quot;java&quot;&gt;
+// This is an example of a single line comment using two slashes
+
+/* This is an example of a multiple line comment using the slash and asterisk.
+   This type of comment can be used to hold a lot of information or deactivate
+   code but it is very important to remember to close the comment. */
+
+/**
+ * This is an example of a Javadoc comment; Javadoc can compile documentation
+ *  from this text.
+ */
+&lt;/source&gt;
+
+== Examples ==
+=== Hello world ===
+The traditional [[Hello world program]] can be written in Java as:&lt;ref&gt;{{cite web |url=http://download.oracle.com/javase/tutorial/getStarted/application/index.html |title=Lesson: A Closer Look at the &quot;Hello World!&quot; Application |work=The Javaâ¢ Tutorials &gt; Getting Started |publisher=[[Oracle Corporation]] |accessdate=2011-04-14 }}&lt;/ref&gt;
+&lt;!--
+NOTE:
+PLEASE *don't* change the example code; it's written in Sun's recommended style. That includes the brace style.
+ --&gt;
+&lt;source lang=&quot;java&quot;&gt;
+class HelloWorldApp {
+    public static void main(String[] args) {
+        System.out.println(&quot;Hello World!&quot;); // Display the string.
+    }
+}
+&lt;/source&gt;
+To compare this to other programming languages see the list of [[hello world program examples]].
+
+Source files must be named after the public class they contain, appending the suffix &lt;code&gt;.java&lt;/code&gt;, for example, &lt;code&gt;HelloWorldApp.java&lt;/code&gt;. It must first be compiled into bytecode, using a [[Java compiler]], producing a file named &lt;code&gt;HelloWorldApp.class&lt;/code&gt;. Only then can it be executed, or 'launched'. The Java source file may only contain one public class but can contain multiple classes with less than public access and any number of public [[inner class]]es.
+
+A &lt;code&gt;'''class'''&lt;/code&gt; that is not declared &lt;code&gt;'''public'''&lt;/code&gt; may be stored in any .java file. The compiler will generate a class file for each class defined in the source file. The name of the class file is the name of the class, with ''.class'' appended. For class file generation, [[anonymous class]]es are treated as if their name were the concatenation of the name of their enclosing class, a ''$'', and an integer.
+
+The [[List of Java keywords|keyword]] &lt;code&gt;'''public'''&lt;/code&gt; denotes that a method can be called from code in other classes, or that a class may be used by classes outside the class hierarchy.  The class hierarchy is related to the name of the directory in which the .java file is located.
+
+The keyword &lt;code&gt;'''static'''&lt;/code&gt; in front of a method indicates a [[Method (computer science)#Static methods|static method]], which is associated only with the class and not with any specific instance of that class. Only static methods can be invoked without a reference to an object. Static methods cannot access any class members that are not also static.
+
+The keyword &lt;code&gt;'''void'''&lt;/code&gt; indicates that the main method does not return any value to the caller. If a Java program is to exit with an error code, it must call System.exit() explicitly.
+
+The method name &quot;&lt;code&gt;main&lt;/code&gt;&quot; is not a keyword in the Java language. It is simply the name of the method the Java launcher calls to pass control to the program. Java classes that run in managed environments such as applets and [[Enterprise JavaBean]] do not use or need a &lt;code&gt;main()&lt;/code&gt; method. A Java program may contain multiple classes that have &lt;code&gt;main&lt;/code&gt; methods, which means that the VM needs to be explicitly told which class to launch from.
+
+The main method must accept an [[array data type|array]] of '''{{Javadoc:SE|java/lang|String}}''' objects. By convention, it is referenced as &lt;code&gt;'''args'''&lt;/code&gt; although any other legal identifier name can be used. Since Java 5, the main method can also use [[variadic function|variable arguments]], in the form of &lt;code&gt;public static void main(String... args)&lt;/code&gt;, allowing the main method to be invoked with an arbitrary number of &lt;code&gt;String&lt;/code&gt; arguments. The effect of this alternate declaration is semantically identical (the &lt;code&gt;args&lt;/code&gt; parameter is still an array of &lt;code&gt;String&lt;/code&gt; objects), but allows an alternative syntax for creating and passing the array.
+
+The Java launcher launches Java by loading a given class (specified on the command line or as an attribute in a [[JAR (file format)|JAR]]) and starting its &lt;code&gt;public static void main(String[])&lt;/code&gt; method. Stand-alone programs must declare this method explicitly. The &lt;code&gt;String[] args&lt;/code&gt; parameter is an [[array data type|array]] of {{Javadoc:SE|java/lang|String}} objects containing any arguments passed to the class. The parameters to &lt;code&gt;main&lt;/code&gt; are often passed by means of a [[command-line interface|command line]].
+
+Printing is part of a Java standard library: The '''{{Javadoc:SE|java/lang|System}}''' class defines a public static field called '''{{Javadoc:SE|name=out|java/lang|System|out}}'''. The &lt;code&gt;out&lt;/code&gt; object is an instance of the {{Javadoc:SE|java/io|PrintStream}} class and provides many methods for printing data to [[standard streams|standard out]], including '''{{Javadoc:SE|name=println(String)|java/io|PrintStream|println(java.lang.String)}}''' which also appends a new line to the passed string.
+
+The string &quot;Hello, world!&quot; is automatically converted to a String object by the compiler.
+
+=== A more comprehensive example ===
+&lt;source lang=&quot;java&quot;&gt;
+// OddEven.java
+import javax.swing.JOptionPane;
+
+public class OddEven
+{
+    /**
+     * &quot;input&quot; is the number that the user gives to the computer
+     */
+    private int input; // a whole number(&quot;int&quot; means integer)
+
+    /**
+     * This is the constructor method. It gets called when an object of the OddEven type
+     * is being created.
+     */
+    public OddEven()
+    {
+    /*
+     * In most Java programs constructors can initialize objects with default values, or create
+     * other objects that this object might use to perform its functions. In some Java programs, the
+     * constructor may simply be an empty function if nothing needs to be initialized prior to the
+     * functioning of the object.  In this program's case, an empty constructor would suffice, even if
+     * it is empty. A constructor must exist, however if the user doesn't put one in then the compiler
+     * will create an empty one.
+     */
+    }
+
+    /**
+     * This is the main method. It gets called when this class is run through a Java interpreter.
+     * @param args command line arguments (unused)
+     */
+    public static void main(final String[] args)
+    {
+        /*
+         * This line of code creates a new instance of this class called &quot;number&quot; (also known as an
+         * Object) and initializes it by calling the constructor.  The next line of code calls
+         * the &quot;showDialog()&quot; method, which brings up a prompt to ask you for a number
+         */
+        OddEven number = new OddEven();
+        number.showDialog();
+    }
+
+    public void showDialog()
+    {
+        /*
+         * &quot;try&quot; makes sure nothing goes wrong. If something does,
+         * the interpreter skips to &quot;catch&quot; to see what it should do.
+         */
+        try
+        {
+            /*
+             * The code below brings up a JOptionPane, which is a dialog box
+             * The String returned by the &quot;showInputDialog()&quot; method is converted into
+             * an integer, making the program treat it as a number instead of a word.
+             * After that, this method calls a second method, calculate() that will
+             * display either &quot;Even&quot; or &quot;Odd.&quot;
+             */
+            this.input = Integer.parseInt(JOptionPane.showInputDialog(&quot;Please Enter A Number&quot;));
+            this.calculate();
+        }
+        catch (final NumberFormatException e)
+        {
+            /*
+             * Getting in the catch block means that there was a problem with the format of
+             * the number. Probably some letters were typed in instead of a number.
+             */
+            System.err.println(&quot;ERROR: Invalid input. Please type in a numerical value.&quot;);
+        }
+    }
+
+    /**
+     * When this gets called, it sends a message to the interpreter.
+     * The interpreter usually shows it on the command prompt (For Windows users)
+     * or the terminal (For *nix users).(Assuming it's open)
+     */
+    private void calculate()
+    {
+        if ((this.input % 2) == 0)
+        {
+            JOptionPane.showMessageDialog(null, &quot;Even&quot;);
+        }
+        else
+        {
+            JOptionPane.showMessageDialog(null, &quot;Odd&quot;);
+        }
+    }
+}
+&lt;/source&gt;
+
+* The '''[[List of Java keywords#import|import]]''' statement imports the '''{{Javadoc:SE|javax/swing|JOptionPane}}''' class from the '''{{Javadoc:SE|package=javax.swing|javax/swing}}''' [[Java package|package]].
+* The &lt;code&gt;'''OddEven'''&lt;/code&gt; class declares a single &lt;code&gt;'''[[wikibooks:Java Programming/Classes, Objects and Types|private]]'''&lt;/code&gt; [[Field (computer science)|field]] of type &lt;code&gt;'''int'''&lt;/code&gt; named &lt;code&gt;'''input'''&lt;/code&gt;. Every instance of the &lt;code&gt;OddEven&lt;/code&gt; class has its own copy of the &lt;code&gt;input&lt;/code&gt; field. The private declaration means that no other class can access (read or write) the &lt;code&gt;input&lt;/code&gt; field.
+* &lt;code&gt;'''OddEven()'''&lt;/code&gt; is a &lt;code&gt;'''public'''&lt;/code&gt; [[Constructor (object-oriented programming)|constructor]]. Constructors have the same name as the enclosing class they are declared in, and unlike a method, have no [[return type]]. A constructor is used to initialize an [[Object (computer science)|object]] that is a newly created instance of the class.
+* The &lt;code&gt;'''calculate()'''&lt;/code&gt; method is declared without the &lt;code&gt;static&lt;/code&gt; keyword. This means that the method is invoked using a specific instance of the &lt;code&gt;OddEven&lt;/code&gt; class. (The [[Reference (computer science)|reference]] used to invoke the method is passed as an undeclared parameter of type &lt;code&gt;OddEven&lt;/code&gt; named &lt;code&gt;'''[[this (computer science)|this]]'''&lt;/code&gt;.) The method tests the expression &lt;code&gt;input % 2 == 0&lt;/code&gt; using the &lt;code&gt;'''[[Java keywords#if|if]]'''&lt;/code&gt; keyword to see if the remainder of dividing the &lt;code&gt;input&lt;/code&gt; field belonging to the instance of the class by two is zero. If this expression is true, then it prints '''Even'''; if this expression is false it prints '''Odd'''. (The &lt;code&gt;input&lt;/code&gt; field can be equivalently accessed as &lt;code&gt;this.input&lt;/code&gt;, which explicitly uses the undeclared &lt;code&gt;this&lt;/code&gt; parameter.)
+* &lt;code&gt;'''OddEven number = new OddEven();'''&lt;/code&gt; declares a local object [[Reference (computer science)|reference]] variable in the &lt;code&gt;main&lt;/code&gt; method named &lt;code&gt;number&lt;/code&gt;. This variable can hold a reference to an object of type &lt;code&gt;OddEven&lt;/code&gt;. The declaration initializes &lt;code&gt;number&lt;/code&gt; by first creating an instance of the &lt;code&gt;OddEven&lt;/code&gt; class, using the &lt;code&gt;'''[[List of Java keywords#new|new]]'''&lt;/code&gt; keyword and the &lt;code&gt;OddEven()&lt;/code&gt; constructor, and then assigning this instance to the variable.
+* The statement &lt;code&gt;'''number.showDialog();'''&lt;/code&gt; calls the calculate method. The instance of &lt;code&gt;OddEven&lt;/code&gt; object referenced by the &lt;code&gt;number&lt;/code&gt; [[local variable]] is used to invoke the method and passed as the undeclared &lt;code&gt;this&lt;/code&gt; parameter to the &lt;code&gt;calculate&lt;/code&gt; method.
+* &lt;code&gt;'''input = Integer.parseInt(JOptionPane.showInputDialog(&quot;Please Enter A Number&quot;));'''&lt;/code&gt; is a statement that converts the type of '''String''' to the [[primitive data type]] '''int''' by using a utility function in the [[primitive wrapper class]] '''Integer'''.
+
+== Special classes ==
+=== Applet ===
+{{Main|Java applet}}
+
+Java applets are programs that are embedded in other applications, typically in a Web page displayed in a [[Web browser]].
+
+&lt;source lang=&quot;java&quot;&gt;
+// Hello.java
+import javax.swing.JApplet;
+import java.awt.Graphics;
+
+public class Hello extends JApplet
+{
+    public void paintComponent(final Graphics g)
+    {
+        g.drawString(&quot;Hello, world!&quot;, 65, 95);
+    }
+}
+&lt;/source&gt;
+
+The &lt;code&gt;'''import'''&lt;/code&gt; statements direct the [[Java compiler]] to include the '''{{Javadoc:SE|package=javax.swing|javax/swing|JApplet}}''' and '''{{Javadoc:SE|package=java.awt|java/awt|Graphics}}''' classes in the compilation. The import statement allows these classes to be referenced in the [[source code]] using the ''simple class name'' (i.e. &lt;code&gt;JApplet&lt;/code&gt;) instead of the ''fully qualified class name'' (i.e. &lt;code&gt;javax.swing.JApplet&lt;/code&gt;).
+
+The &lt;code&gt;Hello&lt;/code&gt; class &lt;code&gt;'''extends'''&lt;/code&gt; ([[subclass (computer science)|subclasses]]) the &lt;code&gt;'''JApplet'''&lt;/code&gt; (Java Applet) class; the &lt;code&gt;JApplet&lt;/code&gt; class provides the framework for the host application to display and control the [[Object lifetime|lifecycle]] of the applet. The &lt;code&gt;JApplet&lt;/code&gt; class is a JComponent (Java Graphical Component) which provides the applet with the capability to display a [[graphical user interface]] (GUI) and respond to user [[event-driven programming|events]].
+
+The &lt;code&gt;Hello&lt;/code&gt; class [[Method overriding|overrides]] the '''{{Javadoc:SE|name=paintComponent(Graphics)|java/awt|Container|paint(java.awt.Graphics)}}''' method (additionally indicated with the [[Java annotation|annotation]], supported as of JDK 1.5, &lt;code&gt;Override&lt;/code&gt;) inherited from the {{Javadoc:SE|java/awt|Container}} [[superclass (computer science)|superclass]] to provide the code to display the applet. The &lt;code&gt;paintComponent()&lt;/code&gt; method is passed a &lt;code&gt;'''Graphics'''&lt;/code&gt; object that contains the graphic context used to display the applet. The &lt;code&gt;paintComponent()&lt;/code&gt; method calls the graphic context '''{{Javadoc:SE|name=drawString(String, int, int)|java/awt|Graphics|drawString(java.lang.String,%20int,%20int)}}''' method to display the '''&quot;Hello, world!&quot;''' string at a [[pixel]] offset of (&lt;code&gt;'''65, 95'''&lt;/code&gt;) from the upper-left corner in the applet's display.
+
+&lt;source lang=&quot;html4strict&quot;&gt;
+&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01//EN&quot;
+&quot;http://www.w3.org/TR/html4/strict.dtd&quot;&gt;
+&lt;!-- Hello.html --&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Hello World Applet&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;applet code=&quot;Hello.class&quot; width=&quot;200&quot; height=&quot;200&quot;&gt;
+    &lt;/applet&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+&lt;/source&gt;
+
+An applet is placed in an [[HTML]] document using the '''&lt;code&gt;&lt;applet&gt;&lt;/code&gt;''' [[HTML element]]. The &lt;code&gt;applet&lt;/code&gt; tag has three attributes set: '''&lt;code&gt;code=&quot;Hello&quot;&lt;/code&gt;''' specifies the name of the &lt;code&gt;JApplet&lt;/code&gt; class and '''&lt;code&gt;width=&quot;200&quot; height=&quot;200&quot;&lt;/code&gt;''' sets the pixel width and height of the applet. Applets may also be embedded in HTML using either the &lt;code&gt;object&lt;/code&gt; or &lt;code&gt;embed&lt;/code&gt; element,&lt;ref&gt;{{cite web |url=http://download.oracle.com/javase/1.5.0/docs/guide/plugin/developer_guide/using_tags.html |title=Using applet, object and embed Tags |publisher=oracle.com |accessdate=2010-10-14 }}&lt;/ref&gt; although support for these elements by Web browsers is inconsistent.&lt;ref&gt;{{cite web |url=http://download.oracle.com/javase/1.5.0/docs/guide/plugin/developer_guide/using_tags.html#mixed |title=Deploying Applets in a Mixed-Browser Environment |publisher=oracle.com |accessdate=2010-10-14 }}&lt;/ref&gt; However, the &lt;code&gt;applet&lt;/code&gt; tag is deprecated, so the &lt;code&gt;object&lt;/code&gt; tag is preferred where supported.
+
+The host application, typically a Web browser, instantiates the '''&lt;code&gt;Hello&lt;/code&gt;''' applet and creates an {{Javadoc:SE|java/applet|AppletContext}} for the applet. Once the applet has initialized itself, it is added to the AWT display hierarchy. The &lt;code&gt;paintComponent()&lt;/code&gt; method is called by the AWT [[event dispatching thread]] whenever the display needs the applet to draw itself.
+
+=== Servlet ===
+{{Main|Java Servlet}}
+
+Java Servlet technology provides Web developers with a simple, consistent mechanism for extending the functionality of a Web server and for accessing existing business systems. Servlets are [[server-side]] Java EE components that generate responses (typically [[HTML]] pages) to requests (typically [[Hypertext Transfer Protocol|HTTP]] requests) from [[client (computing)|clients]]. A servlet can almost be thought of as an applet that runs on the server sideâwithout a face.
+
+&lt;source lang=&quot;java&quot;&gt;
+// Hello.java
+import java.io.*;
+import javax.servlet.*;
+
+public class Hello extends GenericServlet
+{
+    public void service(final ServletRequest request,final ServletResponse response)
+            throws ServletException, IOException
+     {
+       response.setContentType(&quot;text/html&quot;);
+       final PrintWriter pw = response.getWriter();
+       try
+       {
+           pw.println(&quot;Hello, world!&quot;);
+       }
+       finally
+       {
+           pw.close();
+       }
+   }
+}
+&lt;/source&gt;
+
+The '''&lt;code&gt;import&lt;/code&gt;''' statements direct the Java compiler to include all of the public classes and [[interface (Java)|interfaces]] from the '''{{Javadoc:SE|package=java.io|java/io}}''' and '''{{Javadoc:EE|package=javax.servlet|javax/servlet}}''' packages in the compilation.
+
+The &lt;code&gt;'''Hello'''&lt;/code&gt; class &lt;code&gt;'''extends'''&lt;/code&gt; the '''{{Javadoc:EE|javax/servlet|GenericServlet}}''' class; the &lt;code&gt;GenericServlet&lt;/code&gt; class provides the interface for the [[server (computing)|server]] to forward requests to the servlet and control the servlet's lifecycle.
+
+The &lt;code&gt;Hello&lt;/code&gt; class overrides the '''{{Javadoc:EE|name=service(ServletRequest, ServletResponse)|javax/servlet|Servlet|service(javax.servlet.ServletRequest,javax.servlet.ServletResponse)}}''' method defined by the {{Javadoc:EE|javax/servlet|Servlet}} [[Interface (Java)|interface]] to provide the code for the service request handler. The &lt;code&gt;service()&lt;/code&gt; method is passed a '''{{Javadoc:EE|javax/servlet|ServletRequest}}''' object that contains the request from the client and a '''{{Javadoc:EE|javax/servlet|ServletResponse}}''' object used to create the response returned to the client. The &lt;code&gt;service()&lt;/code&gt; method declares that it &lt;code&gt;'''throws'''&lt;/code&gt; the [[exception handling|exceptions]] {{Javadoc:EE|javax/servlet|ServletException}} and {{Javadoc:SE|java/io|IOException}} if a problem prevents it from responding to the request.
+
+The '''{{Javadoc:EE|name=setContentType(String)|javax/servlet|ServletResponse|setContentType(java.lang.String)}}''' method in the response object is called to set the [[MIME]] content type of the returned data to '''&quot;text/html&quot;'''. The '''{{Javadoc:EE|name=getWriter()|javax/servlet|ServletResponse|getWriter()}}''' method in the response returns a '''{{Javadoc:SE|java/io|PrintWriter}}''' object that is used to write the data that is sent to the client. The '''{{Javadoc:SE|name=println(String)|java/io|PrintWriter|println(java.lang.String)}}''' method is called to write the '''&quot;Hello, world!&quot;''' string to the response and then the '''{{Javadoc:SE|name=close()|java/io|PrintWriter|close()}}''' method is called to close the print writer, which causes the data that has been written to the stream to be returned to the client.
+
+=== JavaServer Pages ===
+{{Main|JavaServer Pages}}
+
+JavaServer Pages (JSP) are [[server-side]] Java EE components that generate responses, typically [[HTML]] pages, to [[Hypertext Transfer Protocol|HTTP]] requests from [[client (computing)|clients]]. JSPs embed Java code in an HTML page by using the special [[delimiter]]s &lt;code lang-java&quot;&gt;&lt;%&lt;/code&gt; and &lt;code lang-java&quot;&gt;%&gt;&lt;/code&gt;. A JSP is compiled to a Java ''servlet'', a Java application in its own right, the first time it is accessed. After that, the generated servlet creates the response.
+
+=== Swing application ===
+{{Main|Swing (Java)}}
+
+[[Swing (Java)|Swing]] is a graphical user interface [[library (computing)|library]] for the Java SE platform. It is possible to specify a different look and feel through the [[pluggable look and feel]] system of Swing. Clones of [[Microsoft Windows|Windows]], [[GTK+]] and [[Motif (widget toolkit)|Motif]] are supplied by Sun. [[Apple Inc.|Apple]] also provides an [[Aqua (user interface)|Aqua]] look and feel for [[Mac OS X]]. Where prior implementations of these looks and feels may have been considered lacking, Swing in Java SE 6 addresses this problem by using more native [[GUI widget]] drawing routines of the underlying platforms.
+
+This example Swing application creates a single window with &quot;Hello, world!&quot; inside:
+
+&lt;source lang=&quot;java&quot;&gt;
+// Hello.java (Java SE 5)
+import javax.swing.*;
+
+public class Hello extends JFrame
+{
+    public Hello()
+    {
+        super(&quot;hello&quot;);
+        super.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+        super.add(new JLabel(&quot;Hello, world!&quot;));
+        super.pack();
+        super.setVisible(true);
+    }
+
+    public static void main(final String[] args)
+    {
+        new Hello();
+    }
+}
+&lt;/source&gt;
+
+The first '''&lt;code&gt;import&lt;/code&gt;''' includes all of the public classes and interfaces from the '''{{Javadoc:SE|package=javax.swing|javax/swing}}''' package.
+
+The &lt;code&gt;'''Hello'''&lt;/code&gt; class &lt;code&gt;'''extends'''&lt;/code&gt; the '''{{Javadoc:SE|javax/swing|JFrame}}''' class; the &lt;code&gt;JFrame&lt;/code&gt; class implements a [[window (computing)|window]] with a [[title bar]] and a close [[GUI widget|control]].
+
+The &lt;code&gt;'''Hello()'''&lt;/code&gt; [[constructor (object-oriented programming)|constructor]] initializes the frame by first calling the superclass constructor, passing the parameter &lt;code&gt;&quot;hello&quot;&lt;/code&gt;, which is used as the window's title. It then calls the '''{{Javadoc:SE|name=setDefaultCloseOperation(int)|javax/swing|JFrame|setDefaultCloseOperation(int)}}''' method inherited from &lt;code&gt;JFrame&lt;/code&gt; to set the default operation when the close control on the title bar is selected to '''{{Javadoc:SE|javax/swing|WindowConstants|EXIT_ON_CLOSE}}''' â this causes the &lt;code&gt;JFrame&lt;/code&gt; to be disposed of when the frame is closed (as opposed to merely hidden), which allows the JVM to exit and the program to terminate. Next, a '''{{Javadoc:SE|javax/swing|JLabel}}''' is created for the string '''&quot;Hello, world!&quot;''' and the '''{{Javadoc:SE|name=add(Component)|java/awt|Container|add(java.awt.Component)}}''' method inherited from the {{Javadoc:SE|java/awt|Container}} superclass is called to add the label to the frame. The '''{{Javadoc:SE|name=pack()|java/awt|Window|pack()}}''' method inherited from the {{Javadoc:SE|java/awt|Window}} superclass is called to size the window and lay out its contents.
+
+The &lt;code&gt;'''main()'''&lt;/code&gt; method is called by the JVM when the program starts. It [[Object (computer science)|instantiates]] a new '''&lt;code&gt;Hello&lt;/code&gt;''' frame and causes it to be displayed by calling the '''{{Javadoc:SE|name=setVisible(boolean)|java/awt|Component|setVisible(boolean)}}''' method inherited from the {{Javadoc:SE|java/awt|Component}} superclass with the boolean parameter &lt;code&gt;'''true'''&lt;/code&gt;. Once the frame is displayed, exiting the &lt;code&gt;main&lt;/code&gt; method does not cause the program to terminate because the AWT [[event dispatching thread]] remains active until all of the Swing top-level windows have been disposed.
+
+=== Generics ===
+{{Main|Generics in Java}}
+
+In 2004, [[generic programming|generics]] were added to the Java language, as part of J2SE 5.0. Prior to the introduction of generics, each variable declaration had to be of a specific type. For container classes, for example, this is a problem because there is no easy way to create a container that accepts only specific types of objects. Either the container operates on all subtypes of a class or interface, usually &lt;code&gt;Object&lt;/code&gt;, or a different container class has to be created for each contained class. Generics allow compile-time type checking without having to create a large number of container classes, each containing almost identical code.
+
+==Criticism==
+{{main|Criticism of Java}}
+A number of criticisms have been leveled at Java for various design choices in the language and platform. Such criticisms include the implementation of generics&lt;ref&gt;{{cite web |last=Arnold |first=Ken |title=Generics Considered Harmful |url=http://weblogs.java.net/blog/arnold/archive/2005/06/generics_consid_1.html |publisher=java.net |accessdate=4 July 2011 }}&lt;/ref&gt;, the handling of unsigned numbers&lt;ref&gt;{{cite web |last=Owens |first=Sean R. |url=http://darksleep.com/player/JavaAndUnsignedTypes.html |archiveurl=http://web.archive.org/web/20090220171410/http://darksleep.com/player/JavaAndUnsignedTypes.html |archivedate=2004-11-09 |title=Java and unsigned int, unsigned short, unsigned byte, unsigned long, etc. (Or rather, the lack thereof) |accessdate=2011-07-04 }}&lt;/ref&gt;, the implementation of floating-point arithmetic&lt;ref&gt;{{cite web |last=Kahan |first=William |title=How Javaâs Floating-Point Hurts Everyone Everywhere |url=http://www.cs.berkeley.edu/~wkahan/JAVAhurt.pdf |publisher=Electrical Engineering &amp; Computer Science, University of California at Berkeley |accessdate=4 June 2011 }}&lt;/ref&gt;, and security vulnerabilities.{{Clarify|date=May 2011}}
+
+== Class libraries ==
+&lt;!-- Deleted image removed: [[Image:JavaPlatform.png|350px|thumb|Java Platform and Class libraries diagram]] --&gt;
+* The [[Java Class Library]] are the compiled [[bytecode]]s of [[source code]] developed by the JRE implementor to support application development in Java. Examples of these libraries  are:
+** The core libraries, which include:
+*** [[Java collections framework|Collection libraries]] that implement [[data structure]]s such as [[List (computing)|lists]], [[associative array|dictionaries]], [[tree structure|trees]], [[Set (computer science)|sets]], [[Queue (data structure)|queues]] and [[double-ended queue]], or [[Stack (data structure)|stacks]]
+*** [[XML]] Processing (Parsing, Transforming, Validating) libraries
+*** Security
+*** [[Internationalization and localization]] libraries
+** The integration libraries, which allow the application writer to communicate with external systems. These libraries include:
+*** The [[Java Database Connectivity]] (JDBC) [[Application programming interface|API]] for database access
+*** [[Java Naming and Directory Interface]] (JNDI) for lookup and discovery
+*** [[Java remote method invocation|RMI]] and [[Common Object Request Broker Architecture|CORBA]] for distributed application development
+*** [[Java Management Extensions|JMX]] for managing and monitoring applications
+** [[User interface]] libraries, which include:
+*** The (heavyweight, or [[native mode|native]]) [[Abstract Window Toolkit]] (AWT), which provides [[graphical user interface|GUI]] components, the means for laying out those components and the means for handling events from those components
+*** The (lightweight) [[Swing (Java)|Swing]] libraries, which are built on AWT but provide (non-native) implementations of the AWT widgetry
+*** APIs for audio capture, processing, and playback
+* A platform dependent implementation of [[Java Virtual Machine]] (JVM) that is the means by which the byte codes of the Java libraries and third party applications are executed
+* Plugins, which enable [[Java applet|applets]] to be run in [[Web browser]]s
+* [[Java Web Start]], which allows Java applications to be efficiently distributed to [[end-user]]s across the [[Internet]]
+* Licensing and documentation.
+
+== Documentation ==
+{{Main|Javadoc}}
+[[Javadoc]] is a comprehensive documentation system, created by [[Sun Microsystems]], used by many Java developers.  It provides developers with an organized system for documenting their code. Javadoc comments have an extra asterisk at the beginning, i.e. the tags are /** and */, whereas the normal multi-line comment tags comments in Java and [[C (programming language)|C]] are set off with /* and */.
+
+== Editions ==
+{{See also|Free Java implementations#Class library}}
+
+{{Java platforms}}
+
+Sun has defined and supports four editions of Java targeting different application environments and segmented many of its [[application programming interface|APIs]] so that they belong to one of the platforms. The platforms are:
+
+* [[Java Card]] for smartcards.
+* [[Java Platform, Micro Edition]] (Java ME) â targeting environments with limited resources.
+* [[Java Platform, Standard Edition]] (Java SE) â targeting workstation environments.
+* [[Java Platform, Enterprise Edition]] (Java EE) â targeting large distributed enterprise or Internet environments.
+
+The [[Class (computer science)|classes]] in the Java APIs are organized into separate groups called [[Java package|packages]]. Each package contains a set of related [[Interface (Java)|interfaces]], classes and [[exception handling|exceptions]]. Refer to the separate platforms for a description of the packages available.
+
+The set of APIs is controlled by Sun Microsystems in cooperation with others through the [[Java Community Process]] program. Companies or individuals participating in this process can influence the design and development of the APIs. This process has been a subject of controversy.
+
+Sun also provided an edition called [[PersonalJava]] that has been superseded by later, standards-based Java ME configuration-profile pairings.
+
+== Notes ==
+{{Reflist|2}}
+
+== See also ==
+{{Wikiversity|Topic:Java|Java Programming}}
+{{Portal|Java}}
+
+* [[Comparison of programming languages]]
+* [[Comparison of Java and C++]]
+* [[Comparison of Java and C Sharp|Comparison of Java and C#]]
+* [[C Sharp (programming language)|C#]]
+* [[JavaOne]]
+* [[Javapedia]]
+* [[List of Java virtual machines]]
+* [[List of Java APIs]]
+* [[List of JVM languages]]
+* [[Java version history]]
+
+==References==
+{{Refbegin}}
+* [[James Gosling|Gosling, James]], [https://duke.dev.java.net/green/ ''A brief history of the Green project''].{{Dead link|date=June 2011}} Java.net, no date [ca. Q1/1998]. Retrieved April 29, 2007.
+* {{cite book |last1=Gosling |first1=James |last2=Joy |first2=Bill |authorlink2=Bill Joy |last3=Steele |first3=Guy L., Jr. |authorlink3=Guy L. Steele, Jr. |first4=Gilad |last4=Bracha |authorlink4=Gilad Bracha |title=The Java Language Specification |url=http://java.sun.com/docs/books/jls/index.html |edition=3rd |year=2005 |publisher=Addison-Wesley |isbn=0-321-24678-0 }}
+* {{cite book |last1=Lindholm |first1=Tim |last2=Yellin |first2=Frank |title=The Java Virtual Machine Specification |url=http://java.sun.com/docs/books/vmspec/2nd-edition/html/VMSpecTOC.doc.html |edition=2nd |year=1999 |publisher=Addison-Wesley |isbn=0-201-43294-3 }}
+{{Refend}}
+
+==External links==
+{{Wiktionary|Java}}
+{{Wikibooks|Java Programming}}
+{{Wikiversity|Java}}
+{{Commons category|Java (programming language)}}
+* [http://www.java.com/ java.com] - Java for end-users
+* Oracle's [http://www.oracle.com/technetwork/java/ Developer Resources for Java Technology].
+* {{Javadoc:SE}}
+* Oracle's [http://download.oracle.com/javase/tutorial/index.html Beginner's tutorial for Java SE Programming]
+* [https://duke.dev.java.net/green/ A Brief History of the Green Project]
+* Michael O'Connell: [http://sunsite.uakom.sk/sunworldonline/swol-07-1995/swol-07-java.html Java: The Inside Story], SunWord, July 1995.
+* Patrick Naughton: [http://cs.gmu.edu/~sean/stuff/java-objc.html Java Was Strongly Influenced by Objective-C] (no date).
+* David Bank: [http://www.wired.com/wired/archive/3.12/java.saga.html The Java Saga], ''Wired'' Issue 3.12 (December 1995).
+* Shahrooz Feizabadi: [http://ei.cs.vt.edu/~wwwbtb/book/chap1/java_hist.html A history of Java] in: Marc Abrams, ed., ''World Wide Web â Beyond the Basics'', Prentice Hall, 1998.
+* Patrick Naughton: [http://www.blinkenlights.com/classiccmp/javaorigin.html The Long Strange Trip to Java], March 18, 1996.
+* Open University (UK): [http://computing.open.ac.uk/m254/ M254 Java Everywhere] (free open content documents).
+* is-research GmbH: [http://www.is-research.de/info/vmlanguages/ List of programming languages for a Java Virtual Machine].
+* [http://www.eecs.berkeley.edu/~wkahan/JAVAhurt.pdf How Java's Floating-Point Hurts Everyone Everywhere], by W. Kahan and Joseph D. Darcy, [[University of California, Berkeley]].
+
+{{Java (Sun)}}
+{{Sun Microsystems}}
+{{FOSS}}
+
+&lt;!--Categories--&gt;
+{{DEFAULTSORT:Java (Programming Language)}}
+[[Category:C programming language family]]
+[[Category:Class-based programming languages]]
+[[Category:Concurrent programming languages]]
+[[Category:Cross-platform software]]
+[[Category:Java platform|Programming language]]
+[[Category:Java programming language| ]]
+[[Category:Java specification requests|Programming language]]
+[[Category:JVM programming languages]]
+[[Category:Object-oriented programming languages]]
+[[Category:Programming languages created in 1995]]
+[[Category:Sun Microsystems]]
+
+{{Link GA|zh}}
+{{Link FA|ml}}
+
+&lt;!--Interwikis--&gt;
+[[my:Java_(programming_language)]]
+[[ace:Java]]
+[[af:Java (programmeertaal)]]
+[[am:áá« (java)]]
+[[ar:Ø¬Ø§ÙØ§ (ÙØºØ© Ø¨Ø±ÙØ¬Ø©)]]
+[[az:Java]]
+[[bn:à¦à¦¾à¦­à¦¾ (à¦ªà§à¦°à§à¦à§à¦°à¦¾à¦®à¦¿à¦ à¦­à¦¾à¦·à¦¾)]]
+[[be:Java]]
+[[be-x-old:Java]]
+[[bs:Java programski jezik]]
+[[bg:Java]]
+[[ca:Java (llenguatge de programaciÃ³)]]
+[[cv:Java (ÐºÐ¾Ð¼Ð¿ÑÑÑÐµÑ ÑÄÐ»ÑÐ¸)]]
+[[cs:Java (programovacÃ­ jazyk)]]
+[[co:Java]]
+[[cy:Java (iaith rhaglennu)]]
+[[da:Java (programmeringssprog)]]
+[[de:Java (Programmiersprache)]]
+[[et:Java]]
+[[el:Java]]
+[[es:Java (lenguaje de programaciÃ³n)]]
+[[eo:Java (programlingvo)]]
+[[eu:Java (programazio lengoaia)]]
+[[fa:Ø¬Ø§ÙØ§ (Ø²Ø¨Ø§Ù Ø¨Ø±ÙØ§ÙÙâÙÙÛØ³Û)]]
+[[fr:Java (langage)]]
+[[ga:Java]]
+[[gl:Linguaxe Java]]
+[[ko:ìë° (íë¡ê·¸ëë° ì¸ì´)]]
+[[hy:ÕÕ¡Õ¾Õ¡]]
+[[hi:à¤à¤¾à¤µà¤¾ à¤ªà¥à¤°à¥à¤à¥à¤°à¤¾à¤®à¤¿à¤à¤ à¤­à¤¾à¤·à¤¾]]
+[[hr:Java (programski jezik)]]
+[[id:Java]]
+[[ia:Java (linguage de programmation)]]
+[[is:Java (forritunarmÃ¡l)]]
+[[it:Java (linguaggio)]]
+[[he:Java]]
+[[ka:Java (áá ááá áááá áááá¡ ááá)]]
+[[ht:Java]]
+[[la:Java (lingua programmandi)]]
+[[lv:Java (valoda)]]
+[[lt:Java (kalba)]]
+[[lij:Java (lenguazzo)]]
+[[hu:Java (programozÃ¡si nyelv)]]
+[[mk:ÐÐ°Ð²Ð° (Ð¿ÑÐ¾Ð³ÑÐ°Ð¼ÑÐºÐ¸ ÑÐ°Ð·Ð¸Ðº)]]
+[[ml:à´à´¾à´µ (à´ªàµà´°àµà´àµà´°à´¾à´®à´¿à´àµ à´­à´¾à´·)]]
+[[mr:à¤à¤¾à¤µà¤¾ (à¤ªà¥à¤°à¥à¤à¥à¤°à¥à¤®à¤¿à¤à¤ à¤­à¤¾à¤·à¤¾)]]
+[[ms:Java]]
+[[cdo:Java]]
+[[mn:Java (ÐÑÐ¾Ð³ÑÐ°Ð¼Ð¼ÑÐ»Ð°Ð»ÑÐ½ ÑÑÐ»)]]
+[[nl:Java (programmeertaal)]]
+[[ja:Java]]
+[[no:Java (programmeringssprÃ¥k)]]
+[[nn:ProgrammeringssprÃ¥ket Java]]
+[[uz:Java]]
+[[pa:à¨à¨¾à¨µà¨¾ à¨ªà©à¨°à©à¨à¨°à¨¾à¨®à¨¿à©°à¨ à¨­à¨¾à¨¸à¨¼à¨¾]]
+[[pl:Java]]
+[[pt:Java (linguagem de programaÃ§Ã£o)]]
+[[kaa:Java (programmalastÄ±rÄ±w tili)]]
+[[ro:Java (limbaj de programare)]]
+[[ru:Java]]
+[[sah:Java]]
+[[sq:Java (gjuhÃ« programimi)]]
+[[si:à¶¢à·à·à· (à¶´à¶»à·à¶à¶«à¶ à¶à·âà¶»à¶¸à¶½à·à¶à¶± à¶¶à·)]]
+[[simple:Java (programming language)]]
+[[sk:Java]]
+[[sl:Programski jezik java]]
+[[sr:ÐÐ°Ð²Ð° (Ð¿ÑÐ¾Ð³ÑÐ°Ð¼ÑÐºÐ¸ ÑÐµÐ·Ð¸Ðº)]]
+[[sh:Java (programski jezik)]]
+[[fi:Java]]
+[[sv:Java (programsprÃ¥k)]]
+[[tl:Java (wikang pamprograma)]]
+[[ta:à®à®¾à®µà®¾ à®¨à®¿à®°à®²à®¾à®à¯à® à®®à¯à®´à®¿]]
+[[te:à°à°¾à°µà°¾]]
+[[th:à¸ à¸²à¸©à¸²à¸à¸²à¸§à¸²]]
+[[tg:Java]]
+[[tr:Java (programlama dili)]]
+[[bug:Java]]
+[[uk:Java]]
+[[vec:Java]]
+[[vi:Java (ngÃ´n ngá»¯ láº­p trÃ¬nh)]]
+[[wuu:ç¨åºç¼å¶è¨è¯Java]]
+[[zh-yue:Javaç¨å¼èªè¨]]
+[[bat-smg:Java]]
+[[zh:Java]]
+[[ka:á¯ááá (áá ááá áááá áááá¡ ááá)]]</rev></revisions></page></pages></query></api>

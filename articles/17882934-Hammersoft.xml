@@ -1,0 +1,687 @@
+<?xml version="1.0"?><api><query><pages><page pageid="17882934" ns="0" title="GeForce 200 Series"><revisions><rev xml:space="preserve">{{Infobox GPU
+|name     = GeForce 200 Series
+|image    = GeForce newlogo.png
+|img_w    = 200px
+|codename = G92a/b, GT200a/b, GT215, GT216, GT218
+|created  = 2008/2009
+|entry    = 210, GT 220
+|midrange = GT 240, GTS 250
+|highend  = GTX 260, GTX 260 Core 216, GTX 275, GTX 280, GTX 285, GTX 295
+|d3dversion = 10.0, Shader Model 4.0 (GTS250, GTX 260-295)&lt;br/&gt; 10.1, Shader Model 4.1 (210/G210, GT 220, GT 240)
+|openglversion = 3.3
+|predecessor = [[GeForce 100 Series]]
+|successor   = [[GeForce 300 Series]]
+}}
+The '''GeForce 200 Series''' is the 10th generation of [[Nvidia]]'s [[GeForce]] [[graphics processing unit]]s. The series also represents the continuation of the company's [[Unified Shader Architecture|unified shader architecture]] introduced with the [[GeForce 8 Series]] and the [[GeForce 9 Series]]. Its primary competition came from [[ATI]]'s [[Radeon]] [[Radeon R700|HD 4000 series]].
+
+The GeForce GTX 280 and GTX 260 are based on the same processor core. During the manufacturing process, GTX chips are binned and separated through defect testing of the core's logic functionality. Those that fail to meet the GTX 280 hardware specification are re-tested and binned as GTX 260 (which is specified with fewer stream processors, less [[Render_Output_Processor|ROPs]] and a narrower memory bus).  In late 2008, in order to create more parity between the GTX 260 and the competing HD 4870, Nvidia re-released the GTX 260 with 216 stream processors, up from 192. Effectively, there are two GTX 260 cards in production with non-trivial performance differences.
+
+The GeForce 200 series GPUs (GT200a/b GPU), excluding GeForce GTS 250, GTS 240 GPUs (these are older G92b GPUs), have [[Double precision floating-point format|double precision]] support for use in [[GPGPU]] applications. GT200 GPUs also have improved performance in [[Geometry shader|geometry shading]].
+
+{{As of|2008|6}}, the GT200 is the largest commercial GPU ever constructed. It consists of 1.4 billion transistors covering a 576&amp;nbsp;mm&lt;sup&gt;2&lt;/sup&gt; die surface area built on a 55&amp;nbsp;nm process. To date, the GT200 is the largest [[CMOS]]-logic chip that has been fabricated at the [[TSMC|TSMC foundry]].  The [[GeForce 400 Series]] have since superseded the GT200 chips in transistor count, but the original GT200 dies still exceed the GF100 die size. 
+
+Nvidia officially announced and released the retail version of the previously OEM only GeForce 210 (GT218 GPU) and GeForce GT 220 (GT216 GPU) on October 12, 2009. Nvidia officially announced and released the GeForce GT 240 (GT215 GPU) on November 17, 2009. The new 40nm GPUs feature the new [[Nvidia PureVideo|PureVideo]] HD VP4 decoder hardware in them, the older GeForce 8 and 9 GPUs only have PureVideo HD VP2 or VP3(G98). They also support Compute Capability 1.2, whereas older GeForce 8 and 9 GPUs only supported Compute Capability 1.1. All GT21x GPUs also contain an audio processor inside and support 8 channel LPCM output through HDMI.
+
+==Products==
+[[File:Gtx280.jpg|thumb|NVIDIA GeForce GTX 280]]
+* &lt;sup&gt;1&lt;/sup&gt; [[Unified shader model|Unified Shaders]] ([[Vertex shader]] / [[Geometry shader]] / [[Pixel shader]]) : [[Texture mapping unit]] : [[Render Output unit]]
+* &lt;sup&gt;2&lt;/sup&gt; The theoretical shader performance in single-precision floating point operations [''FLOPS&lt;sub&gt;sp&lt;/sub&gt;'', [[FLOPS|GFLOPS]]] of the graphics card with shader count [''n''] and shader frequency [''f'', GHz], is estimated by the following: ''FLOPS&lt;sub&gt;sp&lt;/sub&gt;'' â f Ã n Ã 3.
+* &lt;sup&gt;3&lt;/sup&gt; This table does not include OEM video cards that are only included in prebuilt PCs, such as the GTS 240, which are technically part of the GeForce 200 family. 
+
+{| class=&quot;wikitable&quot; style=&quot;font-size: 85%; text-align: center; width: auto;&quot;
+|-
+! rowspan=2 | Model
+! rowspan=2 | [[Year]]
+! rowspan=2 | [[Code name]]
+! rowspan=2 | Fab ([[Nanometer|nm]])
+! rowspan=2 | Transistors (billion)
+! rowspan=2 | Die size (mm&lt;sup&gt;2&lt;/sup&gt;)
+! rowspan=2 | [[Computer bus|Bus]] [[I/O interface|interface]]
+! rowspan=2 | Memory min ([[Mebibyte|MiB]])
+! rowspan=2 | Config core &lt;sup&gt;1&lt;/sup&gt; 
+! colspan=3 style=&quot;text-align:center;&quot; | Reference clock rate 
+! colspan=2 style=&quot;text-align:center;&quot; | [[Fillrate]]
+! colspan=3 style=&quot;text-align:center;&quot; | Reference memory configuration
+! colspan=2 style=&quot;text-align:center;&quot; | Graphics library support (version)
+! rowspan=2 | GFLOPS&lt;sup&gt;2&lt;/sup&gt; (MADD+MUL)
+! rowspan=2 | TDP (watts)
+! rowspan=2 | Prices (as of Q4 2009)
+|-
+! Core ([[Hertz|MHz]])
+! Shader ([[Hertz|MHz]])
+! Memory  ([[Hertz|MHz]])
+! Pixel ([[Pixel|GP]]/s)
+! Texture ([[Texel (graphics)|GT]]/s)
+! Bandwidth ([[Gigabyte|GiB]]/s)
+! DRAM type
+! Bus width ([[bit]])
+! [[Direct3D]]
+! [[OpenGL]]
+|-
+! style=&quot;text-align:left;&quot;| GeForce 210 
+| October 12, 2009 
+| GT218
+| 40
+| 0.260
+| 57
+| PCIe x16 2.0
+| 1724
+| 16:8:4
+| 589
+| 1402
+| 1000
+| 4.1
+| 4.712
+| 8
+| DDR2&lt;/br&gt;DDR3
+| 64
+| 10.1
+| 3.3
+| 69
+| 30
+| $50 USD
+|-
+! style=&quot;text-align:left;&quot;| GeForce GT 220 
+| October 12, 2009 
+| GT216
+| 40
+| 0.486
+| 100
+| PCIe x16 2.0
+| 512/1024
+| 48:16:8
+| 625
+| 1360
+| 1580
+| 5
+| 10
+| 25.3
+| DDR2&lt;/br&gt;DDR3
+| 128
+| 10.1
+| 3.3
+| 192
+| 58
+| $70 USD
+|-
+! style=&quot;text-align:left;&quot;| GeForce GT 240 
+| November 17, 2009
+| GT215
+| 40
+| 0.727
+| 139
+| PCIe x16 2.0
+| 512/1024
+| 96:32:8
+| 550
+| 1340
+| 1800&lt;/br&gt;2000&lt;/br&gt;3400
+| 8.8
+| 17.6
+| 28.8&lt;/br&gt;32&lt;/br&gt;54.4
+| DDR3&lt;/br&gt;GDDR3&lt;/br&gt;GDDR5
+| 128
+| 10.1
+| 3.3
+| 385
+| 69
+| $99 USD
+|-
+! style=&quot;text-align:left;&quot;| GeForce GTS 250 
+| March 3, 2009
+| G92b
+| 55
+| 0.754
+| 230
+| PCIe x16 2.0
+| 512&lt;/br&gt;1024
+| 128:64:16
+| 738
+| 1836
+| 2200
+| 11.808
+| 47.232
+| 70.4
+| GDDR3
+| 256
+| 10.0
+| 3.3
+| 705
+| 150
+| $140 USD
+|-
+! style=&quot;text-align:left;&quot;| GeForce GTX 260 
+| June 26, 2008
+| GT200
+| 65
+| 1.4
+| 576
+| PCIe x16 2.0
+| 896/1792
+| 192:64:28
+| 576
+| 1242
+| 1998
+| 16.128
+| 36.864
+| 111.9
+| GDDR3
+| 448 32x14
+| 10.0
+| 3.3
+| 715
+| 182
+| $214 USD
+|-
+! style=&quot;text-align:left;&quot;| GeForce GTX 260 Core 216
+| September 16, 2008
+| GT200
+| 65
+| 1.4
+| 576
+| PCIe x16 2.0
+| 896/1792
+| 216:72:28
+| 576
+| 1242
+| 1998
+| 16.128
+| 41.472
+| 111.9
+| GDDR3
+| 448 32x14
+| 10.0
+| 3.3
+| 805
+| 182
+| $150 USD
+|-
+! style=&quot;text-align:left;&quot;| GeForce GTX 260 Core 216 
+| July 16, 2009
+| GT200b
+| 55
+| 1.4
+| 487
+| PCIe x16 2.0
+| 896/1792
+| 216:72:28
+| 576
+| 1242
+| 1998
+| 17.5
+| 40.0
+| 111.9
+| GDDR3
+| 448 32x14
+| 10.0
+| 3.3
+| 874.8
+| 171
+| $150 USD
+|-
+! style=&quot;text-align:left;&quot;| GeForce GTX 275 
+| April 2, 2009
+| GT200b
+| 55
+| 1.4
+| 470
+| PCIe x16 2.0
+| 896/1792
+| 240:80:28
+| 633
+| 1404
+| 2268
+| 17.724  
+| 40.5
+| 127.0
+| GDDR3
+| 448 32x14
+| 10.0
+| 3.3
+| 1010.88
+| 219
+| $210 USD
+|-
+! style=&quot;text-align:left;&quot;| GeForce GTX 280 
+| June 17, 2008
+| GT200
+| 65
+| 1.4
+| 576
+| PCIe x16 2.0
+| 1024
+| 240:80:32
+| 602
+| 1296
+| 2214
+| 19.264
+| 48.16
+| 141.7
+| GDDR3
+| 512 32x16
+| 10.0
+| 3.3
+| 933
+| 236
+| $320 USD
+|-
+! style=&quot;text-align:left;&quot;| GeForce GTX 285
+| January 15, 2009
+| GT200b
+| 55
+| 1.4
+| 470
+| PCIe x16 2.0
+| 1024/2048
+| 240:80:32
+| 648
+| 1476
+| 2484 (2322 2GB version)
+| 20.736
+| 51.8
+| 159.0 (148.6 2GB version)
+| GDDR3
+| 512 32x16
+| 10.0
+| 3.3
+| 1062.72
+| 204
+| $340 USD
+|-
+! style=&quot;text-align:left;&quot;| GeForce GTX 295
+| January 8, 2009
+| GT200b
+| 55
+| 2x 1.4
+| 2x 470
+| PCIe x16 2.0
+| 2x 896
+| 2x 240:80:28
+| 576
+| 1242
+| 1998
+| 2x 16.128
+| 2x 46.08
+| 2x 111.9
+| GDDR3
+| 2x 448 32x14
+| 10.0
+| 3.3
+| 1788.48
+| 289
+| $470 USD
+|-
+|}
+
+The GTS 250 is basically a 55nm G92b based 9800 GTX+ GPU on a new P361 PCB and internally Nvidia calls it D10P2. The differences are mainly on the power design; the core and memory speeds are identical to the 9800 GTX+ but power consumption has been lowered. However, not all GTS 250's have these improvements. Some of the earlier GTS 250's were merely rebadged 9800 GTX+ video cards. All of the GTX 200 series cards and 40nm GeForce 210, GeForce GT 220 &amp; GeForce GT 240 support OpenGL 3.3. There is also a version of the GTS250 with the G92b core called the &quot;green&quot; edition, marketed as such because of low-power consumption and reduced core and memory clocks. Another version of the GTS 250 was released by [[Gigabyte Technology]], with a slightly altered chip layout and an attached Zalman fan.
+
+Nvidia released a single PCB version of the GTX 295 graphics card with performance specifications identical to the dual PCB version. Improvements however, are slightly better power consumption, better thermal performance as well as cheaper manufacturing costs. The card allows Quad-SLI and is able to connect to both single and dual PCB versions of the GTX 295.
+
+===OEM GeForce 200===
+A second wave of OEM cards for pre-built systems has been released by Nvidia and is currently listed on the Nvidia website. Current cards include the G210, GT 220, and the GTS 240. The G210 &amp; GT 220 are 40nm GT218 &amp; GT216 GPUs with DirectX 10.1 support.
+
+{| class=&quot;wikitable&quot; style=&quot;font-size: 85%; text-align: center; width: auto;&quot;
+|-
+! rowspan=2 | Model
+! rowspan=2 | [[Year]]
+! rowspan=2 | [[Code name]]
+! rowspan=2 | Fab ([[Nanometer|nm]])
+! rowspan=2 | Transistors (Billion)
+! rowspan=2 | Die Size (mm &lt;sup&gt;2&lt;/sup&gt;)
+! rowspan=2 | [[Computer bus|Bus]] [[I/O interface|interface]]
+! rowspan=2 | Memory min ([[Mebibyte|MiB]])
+! rowspan=2 | Config core &lt;sup&gt;1&lt;/sup&gt; 
+! colspan=3 style=&quot;text-align:center;&quot; | Reference clock rate 
+! colspan=2 style=&quot;text-align:center;&quot; | [[Fillrate]]
+! colspan=3 style=&quot;text-align:center;&quot; | Reference Memory Configuration
+! colspan=2 style=&quot;text-align:center;&quot; | Graphics library support (version
+! rowspan=2 | GFLOPS&lt;sup&gt;2&lt;/sup&gt; (MADD+MUL)
+! rowspan=2 | TDP (Watts)
+! rowspan=2 | Prices (As of Oct 2009)
+|-
+! Core ([[Hertz|MHz]])
+! Shader ([[Hertz|MHz]])
+! Memory  ([[Hertz|MHz]])
+! Pixel ([[Pixel|GP]]/s)
+! Texture ([[Texel (graphics)|GT]]/s)
+! Bandwidth ([[Gigabyte|GiB]]/s)
+! DRAM type
+! Bus width ([[bit]])
+! [[Direct3D]]
+! [[OpenGL]]
+|-
+! style=&quot;text-align:left;&quot;| GeForce G210 
+| July 10, 2009 
+| GT218
+| 40
+| 0.260
+| 57
+| PCIe 2.0 x16
+| 512
+| 16:8:4
+| 589
+| 1402
+| 500
+| ?
+| ?
+| 8
+| DDR2
+| 64
+| 10.1
+| 3.3
+| 69
+| 30
+| OEM
+|-
+! style=&quot;text-align:left;&quot;| GeForce GT 220 
+| July 10, 2009 
+| GT216
+| 40
+| 0.486
+| 100
+| PCIe 2.0 x16
+| 1024
+| 48:16:8
+| 615
+| 1335
+| 790
+| ?
+| ?
+| 25
+| GDDR3
+| 128
+| 10.1
+| 3.3
+| 192
+| 58
+| OEM
+|-
+! style=&quot;text-align:left;&quot;| GeForce GTS 240 
+| July 24, 2009 
+| G92b
+| 55
+| 0.754
+| 230
+| PCIe 2.0 x16
+| 1024
+| 112:56:16
+| 675
+| 1620
+| 1100
+| 10.8
+| 37.8
+| 70.4
+| GDDR3
+| 256
+| 10.0
+| 3.3
+| 544
+| 140
+| OEM
+|-
+|}
+
+===GeForce 200M (2xxM) series===
+The GeForce 200M series was made for notebook architecture.
+* &lt;sup&gt;1&lt;/sup&gt; [[Unified shader model|Unified Shaders]] ([[Vertex shader]]/[[Geometry shader]]/[[Pixel shader]]) : [[Texture mapping unit]] : [[Render Output unit]]
+{| class=&quot;wikitable&quot; style=&quot;font-size: 85%; text-align: center; width: auto;&quot;
+|-
+! rowspan=2 | Model
+! rowspan=2 | [[Year]]
+! rowspan=2 | [[Code name]]
+! rowspan=2 | Fab ([[Nanometer|nm]])
+! rowspan=2 | [[Computer bus|Bus]] [[I/O interface|interface]]
+! rowspan=2 | Memory max ([[Mebibyte|MiB]])
+! colspan=3 style=&quot;text-align:center;&quot; | Clock speed
+! rowspan=2 | Config core&lt;sup&gt;1&lt;/sup&gt;
+! rowspan=2 | [[Fillrate]] max ([[Texel (graphics)|GT]]/s)
+! colspan=3 style=&quot;text-align:center;&quot; | Memory
+! colspan=2 style=&quot;text-align:center;&quot; | Graphics library support (version)
+! rowspan=2 | GFLOPs (MADD/MUL)
+! rowspan=2 | TDP (Watts)
+! rowspan=2 | Features
+|-
+! Core ([[Hertz|MHz]])
+! Shader ([[Hertz|MHz]])
+! Memory ([[Hertz|MHz]])
+! Bandwidth max ([[Gigabyte|GB]]/s)
+! Bus type
+! Bus width ([[bit]])
+! [[DirectX]]
+! [[OpenGL]]
+|-
+! style=&quot;text-align:left;&quot; | GeForce G210M
+| June 15, 2009
+| GT218
+| 40
+| PCIe 2.0 x16
+| 512
+| 625
+| 1500
+| 1600
+| 16:8:4
+| ?
+| 12.8
+| GDDR3
+| 64
+| 10.1
+| 3.3
+| 72
+| 14
+|
+|-
+! style=&quot;text-align:left;&quot; | GeForce GT 220M
+| 2009?
+| G96M
+| 65
+| PCIe 2.0 x16
+| 1024
+| 500
+| 1250
+| 800
+| ?
+| ?
+| ??
+| GDDR3
+| 128
+| 10.0
+| 3.3
+| ?
+| 23
+| 
+|-
+! style=&quot;text-align:left;&quot; | GeForce GT 230M
+| June 15, 2009
+| GT216
+| 40
+| PCIe 2.0 x16
+| 1024
+| 500
+| 1100
+| 1600
+| 48:16:8
+| ?
+| 25.6
+| GDDR3
+| 128
+| 10.1
+| 3.3
+| 158
+| 23
+|
+|-
+! style=&quot;text-align:left;&quot; | GeForce GT 240M
+| June 15, 2009
+| GT216
+| 40
+| PCIe 2.0 x16
+| 1024
+| 550
+| 1210
+| 1600
+| 48:16:8
+| ?
+| 25.6
+| GDDR3
+| 128
+| 10.1
+| 3.3
+| 174
+| 23
+|
+|-
+! style=&quot;text-align:left;&quot; | GeForce GTS 250M
+| June 15, 2009
+| GT215
+| 40
+| PCIe 2.0 x16
+| 1024
+| 500
+| 1250
+| 3200
+| 96:32:8
+| ?
+| 51.2
+| GDDR5
+| 128
+| 10.1
+| 3.3
+| 360
+| 28
+|
+|-
+! style=&quot;text-align:left;&quot; | GeForce GTS 260M
+| June 15, 2009
+| GT215
+| 40
+| PCIe 2.0 x16
+| 1024
+| 550
+| 1375
+| 3600
+| 96:32:8
+| ?
+| 57.6
+| GDDR5
+| 128
+| 10.1
+| 3.3
+| 396
+| 38
+|
+|-
+! style=&quot;text-align:left;&quot; | GeForce GTX 260M
+| March 3, 2009
+| G92b
+| 55
+| PCIe 2.0 x16
+| 1024
+| 550
+| 1375
+| 1900
+| 112:56:16
+| 30.8
+| 60.8
+| GDDR3
+| 256
+| 10.0
+| 3.3
+| 462
+| 65
+|
+|-
+! style=&quot;text-align:left;&quot; | GeForce&amp;nbsp;GTX&amp;nbsp;280M
+| March 3, 2009
+| G92b
+| 55
+| PCIe 2.0 x16
+| 1024
+| 585
+| 1463
+| 1900
+| 128:64:16
+| 37.44
+| 60.8
+| GDDR3
+| 256
+| 10.0
+| 3.3
+| 562
+| 75
+|
+|-
+! style=&quot;text-align:left;&quot; | GeForce&amp;nbsp;GTX&amp;nbsp;285M
+| January 29, 2010
+| G92b
+| 55
+| PCIe 2.0 x16
+| 1024
+| 600
+| 1500
+| 2000
+| 128:64:16
+| 38.4
+| 64.0
+| GDDR3
+| 256
+| 10.0
+| 3.3
+| 576
+|
+|
+|-
+|}
+
+The GeForce GT 220M is basically a rebadged GeForce 9600M GT, and the GTX 260M, GTX 280M and GTX 285M all use the previous generation's G92b core.
+
+==See also==
+* [[Comparison of Nvidia graphics processing units]]
+* [[GeForce 8 Series]]
+* [[GeForce 9 Series]]
+* [[GeForce 400 Series]]
+* [[GeForce 500 Series]]
+* [[Nvidia Quadro]] - Nvidia's workstation graphics solution
+* [[Nvidia Tesla]] - Nvidia's first dedicated general purpose GPU (graphical processor unit)
+
+==References==
+{{Reflist}}
+
+==External links==
+{{Commons|Category:Nvidia GeForce 200 series video cards|GeForce 200 series}}
+* [http://www.nvidia.com/object/product_geforce_gtx_295_us.html GeForce GTX 295]
+* [http://www.nvidia.com/object/product_geforce_gtx_285_us.html GeForce GTX 285]
+* [http://www.nvidia.com/object/product_geforce_gtx_280_us.html GeForce GTX 280]
+* [http://www.nvidia.com/object/product_geforce_gtx_275_us.html GeForce GTX 275]
+* [http://www.nvidia.com/object/product_geforce_gtx_260_us.html GeForce GTX 260]
+* [http://www.nvidia.com/object/product_geforce_gts_250_us.html GeForce GTS 250]
+* [http://www.nvidia.com/object/product_geforce_gts_240_us.html GeForce GTS 240 (OEM)]
+* [http://www.nvidia.com/object/product_geforce_gt_240_us.html GeForce GT 240]
+* [http://www.nvidia.com/object/product_geforce_gt_220_us.html GeForce GT 220]
+* [http://www.nvidia.com/object/product_geforce_210_us.html GeForce 210]
+* [http://www.nvidia.com/object/product_geforce_205_us.html GeForce 205]
+* [http://www.nvidia.com/object/product_geforce_gtx_285m_us.html GeForce GTX 285M]
+* [http://www.nvidia.com/object/product_geforce_gtx_280m_us.html GeForce GTX 280M]
+* [http://www.nvidia.com/object/product_geforce_gtx_260m_us.html GeForce GTX 260M]
+* [http://www.nvidia.com/object/product_geforce_gts_260m_us.html GeForce GTS 260M]
+* [http://www.nvidia.com/object/product_geforce_gts_250m_us.html GeForce GTS 250M]
+* [http://www.nvidia.com/object/product_geforce_gt_240m_us.html GeForce GT 240M]
+* [http://www.nvidia.com/object/product_geforce_gt_230m_us.html GeForce GT 230M]
+* [http://www.nvidia.com/object/product_geforce_g210m_us.html GeForce G210M]
+* [http://developer.nvidia.com/nvidia-parallel-nsight Nvidia Parallel Nsight]
+
+{{Nvidia}}
+
+{{DEFAULTSORT:Geforce 200 Series}}
+[[Category:2008 introductions]]
+[[Category:Nvidia]]
+[[Category:Video cards]]
+
+[[cs:GeForce 200]]
+[[de:Nvidia-Geforce-200-Serie]]
+[[ko:ì§í¬ì¤ 200 ìë¦¬ì¦]]
+[[he:GeForce 200]]
+[[pl:GeForce GTX 200]]
+[[pt:GeForce 200]]
+[[ru:GeForce 200]]
+[[uk:GeForce 200]]
+[[zh:GeForce 200]]</rev></revisions></page></pages></query></api>

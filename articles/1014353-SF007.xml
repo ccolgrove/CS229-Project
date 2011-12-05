@@ -1,0 +1,141 @@
+<?xml version="1.0"?><api><query><pages><page pageid="1014353" ns="0" title="TeamSpeak"><revisions><rev xml:space="preserve">{{ infobox software
+| logo                   = [[Image:TeamSpeak Logo.png|250px]]
+| screenshot             = [[Image:teamspeak2.jpg|250px]]&lt;br /&gt;[[Image:Teamspeak server.png|250px]]
+| caption                = TeamSpeak 2 Client and Server Software
+| author                 = [[TeamSpeak Systems GmbH]]
+| developer              = Ralf Ludwig&lt;br /&gt;Peter Kirk&lt;br /&gt;Niels Werensteijn&lt;br /&gt;Peter Strempel&lt;br /&gt;Rico Huber
+| released               = 26 Aug 2002
+| latest release date    = 10 Aug 2011
+| latest preview date    = 16 Dec 2010
+| latest preview version = 3.0.0-rc2 (Client)&lt;br /&gt;3.0.0-rc1 (Server)
+| latest release version = 3.0.2 (Client) / Oct 2011&lt;br /&gt;3.0.0 (Server)
+| operating system       = [[Microsoft Windows]], [[Linux]], [[Mac OS X]], [[iOS]], [[FreeBSD]]
+| genre                  = [[Voice over IP]]
+| license                = [[Proprietary software|Proprietary]] [[freeware]]
+| website                = http://www.teamspeak.com/
+}}
+
+ {{Update|type=article|date=December 2010}}
+
+'''TeamSpeak''' is a [[proprietary software|proprietary]] [[Voice over IP]] software that allows users to speak on a chat channel with other users, much like a telephone [[conference call]]. A TeamSpeak user will often wear a [[headphones|headset]] with an integrated [[microphone]]. Users use the TeamSpeak client software to connect to a TeamSpeak server of their choice, from there they can join chat channels.
+
+The target audience for TeamSpeak is [[gamer]]s, who can use the software to communicate with other players on the same team of a [[multiplayer game]]. Communicating by voice gives a competitive advantage by allowing players to keep their hands on the controls.&lt;ref&gt;{{Cite news
+| last = Bary
+| first = Hiawatha
+| title = Game On; Players Add Verbal Jabs To Online Arsenal
+| work = The Boston Globe
+| date = October 29, 2003
+}}&lt;/ref&gt;
+
+==Server==
+
+The TeamSpeak server currently supports [[Microsoft Windows]], [[Mac OS X]] and [[Linux]] and uses a web based or [[telnet]] interface to control server administration and settings. The server runs as a [[dedicated server]] separate from the client.
+
+TeamSpeak 2 supports [[virtual server]] instancing. This allows up to 75 server instances to be contained in one process on the server. Additional server processes can be run to increase this further.&lt;ref&gt;[http://www.goteamspeak.com/?page=tutorial_c Running Multiple TeamSpeak 2 Instances]&lt;/ref&gt;
+
+===User types===
+When logging into the web server there are two types of accounts that can be given access to the administrative interface: Server Admins and Super Server Admins. Super Server Admins have full access to all virtual TeamSpeak servers hosted on that server instance (more than one server instance can run on one physical server). Server Admins are limited to the [[virtual server]] their account is associated with.
+
+===Permissions===
+The permissions system received a massive upgrade from TeamSpeak 2 to TeamSpeak 3.  From originally being limited to just six groups (Server Admin, Channel Admin, Operator, Voiced, Registered and Anonymous), a server operator is now able to create an unlimited amount of his or her own permission groups from an extensive selection of permissions.
+
+===Licensing===
+The TeamSpeak 3 [[EULA]] for the server allows private hosts to create their own server for free as long as the maximum number of servers and slot counts configured on each server does not exceed any one of the following configurations:&lt;ref&gt;[http://teamspeak.com/?page=faq&amp;cat=ts3&amp;rate=186#ts3_license_models TeamSpeak FAQs]&lt;/ref&gt;  
+
+*Non-profit license (Unregistered), 1 virtual server not exceeding 32 slots
+*Non-profit license (Registered), 10 virtual servers, 512 slots overall
+
+If the server operator is generating profit from TeamSpeak then the host must register for a &quot;Commercial License for ATHPs&quot; (billed monthly) with TeamSpeak's official sales &amp; licensing provider [[Triton CI &amp; Associates, Inc]].
+
+Commercial entities who are not gaining profit from TeamSpeak itself, but use TeamSpeak as a means to conduct business must obtain a &quot;Commercial License: Annual Activation&quot; (billed annually) with TeamSpeak's official sales &amp; licensing provider [[Triton CI &amp; Associates, Inc]].
+
+Typically issued to commercial entities, the &quot;SDK Integration License&quot; is a license which may require a one-time fee, recurring fees, or other pre-determined fees.  It is used for persons wishing to utilize TeamSpeak software to create customized or integrated applications as part of an existing product or service.
+
+===Legal Intercept===
+TeamSpeak 2 lacks any form of [[Lawful interception]]. This may make the service unsuitable for some hosting providers, depending on local legal requirements.
+
+==Client==
+&lt;!-- Deleted image removed: [[File:TeamSpeak Classic, Two, And Three.jpg|thumb|A side-by side comparison of all three clients of the TeamSpeak franchise. (From left to right: TeamSpeak Classic, TeamSpeak 2, and TeamSpeak 3)]] --&gt;
+The TeamSpeak client is used to modify some server settings such as creation and deletion of channels and registration of users. However, the client is primarily used for its voice chat function. The client is able to join servers by connecting to a specified [[IP address]] or using its built in server browser. The server browser is able to quickly find the desired server by using multiple filters to locate the destination server or reduce the total number of displayed servers.
+
+===Channels===
+From the client an infinite number of channels can be created if server permissions permit the user to create channels.  There are four different types of channels: Temporary, Semi-Permanent, Permanent, and Default.  Each of those channels can have different characteristics such as moderation and sound quality.
+
+A temporary channel will automatically be deleted once it has zero occupants.  A semi-permanent channel will remain with zero occupants, but it will not be saved in a server restart.  A permanent channel will be saved indefinitely -- until it is deleted by someone who has permissions to do so.  The default channel is automatically permanent, and it is the channel that users will enter when they join the server.
+
+====Moderated channels====
+Moderated channels give the channel admin more control over their channel than any other type of channel. In moderated channels the channel operator or an admin has to grant any users that enter the channel voice privileges before they can speak on the channel.
+
+====Sub-channels====
+&lt;!-- Deleted image removed: [[File:Sub-Channels In TeamSpeak 3.jpg|thumb|This is an example of what sub-channels look like within TeamSpeak 3.  &quot;Classroom 1&quot; and &quot;Classroom 2&quot; are both sub-channels of the &quot;Training Department&quot; channel.]] --&gt;
+Sub-channels are part of a hierarchy system with other channels.  A sub-channel ''can'' exist within another sub-channel.
+
+===Registration of users===
+Users can be registered for pseudo-servers from either the client or from the [[telnet]] interface.
+
+==Third party add-ons==
+
+Via the official site of TeamSpeak, third party applications are available for download. The common features that these applications provide are TeamSpeak in-game [[overlay]] (for [[Client (computing)|client]]) and server listings and advanced management (for [[server (computing)|server]]).
+
+==TeamSpeak 3==
+The current version of TeamSpeak&lt;ref&gt;{{cite web
+  | title = TeamSpeak 3
+  | publisher = TeamSpeak Systems GmbH
+  | url = http://www.teamspeak.com/?page=teamspeak3
+  | accessdate = 2008-07-14 }}&lt;/ref&gt; has been in development since 2004.
+It is a complete rewrite with many new features, but has had infrequent updates on the development blog, and was first estimated to be released in mid 2006. The first public release of the TeamSpeak 3 SDK&lt;ref&gt;{{cite press release
+  | title = Guild Software and TeamSpeak announce the Integration of TeamSpeak 3 within Vendetta Online
+  | publisher = Florence Espinoza
+  | date = 2008-07-01
+  | url = http://www.teamspeak.com/?page=press&amp;ident=20080701
+  | accessdate = 2008-07-14 }}&lt;/ref&gt; was on June 5, 2008, with the integrated solution in the MMO game ''[[Vendetta Online]]''.&lt;ref&gt;{{cite web
+  | title = Now featuring.. Voice Chat!
+  | publisher = Guild Software
+  | date = 2008-06-05
+  | url = http://www.vendetta-online.com/h/news.html
+  | accessdate = 2008-07-14 }}
+&lt;/ref&gt;
+Open beta for TeamSpeak 3 released on December 19, 2009. .&lt;ref&gt;http://www.teamspeak.com/?page=newsarchive&amp;ident=20101230&lt;/ref&gt; Open beta was closed on August 10, 2011 and replaced with Teamspeak 3.0.0 Final, which is the first stable release of Teamspeak 3. .&lt;ref&gt;http://forum.teamspeak.com/showthread.php/66932-TeamSpeak-3-Final-iOS-Android-Released&lt;/ref&gt;
+
+=== TeamSpeak 3 Updates ===
+
+TeamSpeak 3 uses an improved update system that updates only the files necessary which means faster updates without needing to redownload the entire program or 'Application'.
+
+==In popular culture==
+TeamSpeak was mentioned numerous times within [[South Park]]'s episode titled &quot;[[Make Love, Not Warcraft]]&quot; which aired October 4th 2006 on [[Comedy Central]].&lt;ref&gt;http://www.teamspeak.com/?page=newsarchive&amp;ident=20060911&lt;/ref&gt;
+
+== See also ==
+
+* [[Ventrilo]]
+* [[Mohawk Voice]]
+* [[Mumble (software)|Mumble]]
+* [[Roger Wilco (software)|Roger Wilco]]
+* [[Xfire]]
+* [[Comparison of VoIP software]]
+
+==References==
+{{Reflist}}
+TeamSpeak User
+== External links ==
+* {{Official|http://www.teamspeak.com/}}
+
+{{DEFAULTSORT:Teamspeak}}
+[[Category:Software that uses Qt]]
+[[Category:Web conferencing]]
+
+[[bg:TeamSpeak]]
+[[cs:TeamSpeak]]
+[[da:TeamSpeak]]
+[[de:TeamSpeak]]
+[[es:TeamSpeak]]
+[[fr:TeamSpeak]]
+[[it:TeamSpeak]]
+[[lmo:TeamSpeak]]
+[[nl:TeamSpeak]]
+[[ja:TeamSpeak]]
+[[no:TeamSpeak]]
+[[pl:Teamspeak]]
+[[pt:TeamSpeak]]
+[[ru:TeamSpeak]]
+[[sv:Teamspeak]]
+[[zh:TeamSpeak]]</rev></revisions></page></pages></query></api>

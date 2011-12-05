@@ -1,0 +1,178 @@
+<?xml version="1.0"?><api><query><pages><page pageid="1107856" ns="0" title="Free Java implementations"><revisions><rev xml:space="preserve">'''Free Java implementations''' are software projects that implement Oracle's [[Java (software platform)|Java]] technologies and are distributed under [[free software licences]], thus making them [[free software]].  Sun released most of its Java source code as free software in May 2007, so it can now almost be considered a free Java implementation.
+
+Java implementations include compilers, runtimes, class libraries, etc.
+
+Advocates of free and open source software refer to free or open source [[Java virtual machine]] software as '''free runtimes''' or '''free Java runtimes'''.
+
+Some advocates in this movement prefer not to use the term &quot;Java&quot; as it has [[trademark]] issues associated with it. Hence, even
+though it is a &quot;free Java movement&quot;, the term &quot;free Java runtimes&quot; is avoided by them.
+
+==Mid-90s to 2006==
+Probably the first free project to offer substantial parts of Java platform functionality was guavac, which began some time before November 1995.&lt;ref&gt;{{cite web
+|url=http://www.ccs.neu.edu/research/demeter/course/f96/hw/1/guavac-info
+|title=Announcing: guavac 0.2.5, A free compiler for the Java language
+|date=1996-09-07
+|accessdate=2007-06-24
+}}&lt;/ref&gt;&lt;ref&gt;{{cite web
+|url=http://fresh.t-systems-sfr.com/unix/src/www/guavac-1.2.tar.gz:a/guavac-1.2/compiler/ChangeLog
+|title=Changelog of guavac, showing the first release happening in January 1996
+|quote=Wed Nov 22 05:43:07 1995 [...] CompilerMain.C, Compiler. C, Compiler.h, lexer.l, parser.y: Initial revision
+}}&lt;/ref&gt;
+
+Since then, the [[free software movement]] developed other java compilers, most notably the [[GNU Compiler for Java]].  Others include ECJ the [[Eclipse (software)|Eclipse]] Java Compiler, which is maintained by the [[Eclipse Foundation]], and [[Jikes]], which is no longer actively maintained.  Since the [[GNU Compiler Collection|GCC 4.3]] release, GCJ (its Java compiler) is using the ECJ [[Parsing|parser]] front-end for parsing Java.&lt;ref&gt;{{cite web
+|url=http://gcc.gnu.org/gcc-4.3/changes.html
+|title=GCC 4.3 Release Series -- Changes, New Features, and Fixes
+|accessdate=2007-10-08
+}}&lt;/ref&gt;
+
+Examples of free [[List of Java virtual machines|runtime environments]] include [[Kaffe]], [[SableVM]], and [[gcj]].
+
+[[GNU Classpath]] is the main free software [[Java Class Library|class library]] for Java.  Most free runtimes use GNU Classpath as their class library.
+
+In May 2005, [[Apache Harmony]] was announced, however, the project chose the Apache License, which was at the time incompatible with all existing free Java implementations.
+
+Another event in May 2005 was the announcement that [[OpenOffice.org#Java controversy|OpenOffice.org]] 2.0 would depend on Java features which free software implementations couldn't provide.  Red Hat solved this problem by extending the free software implementations to be adequate for their purposes.
+
+Notable applications that already worked with free software Java implementations before November 2006 include [[OpenOffice.org]] and [[Vuze]], both of which work when compiled with GCJ.
+
+==Sun's November 2006 announcement==
+
+In 13 November 2006, Sun released its compiler, [[javac]], under the [[GNU General Public License]].
+
+As of September 2007, as well as javac, Sun has released the code of [[HotSpot]] (the [[virtual machine]]) and almost all the [[Java Class Library]] as free software.
+
+Following their promise to release a fully buildable [[Java Development Kit|JDK]] based almost completely on free and open source code in the first half of 2007,&lt;ref&gt;[http://www.sun.com/software/opensource/java/faq.jsp#b4 OpenJDK FAQ]&lt;/ref&gt; Sun released the complete [[source code]] of the Class library under the GPL on May 8, 2007, except some limited parts that were licensed by Sun from 3rd parties who did not want their code to be released under a free software licence.&lt;ref&gt;{{cite web
+| url=http://mail.openjdk.java.net/pipermail/announce/2007-May.txt
+| title=Open JDK is here!
+| publisher=Sun Microsystems
+| date=2007-05-08
+| accessdate=2007-05-09}}&lt;/ref&gt;  Sun has stated that it aims to replace the parts that remain proprietary and closed source with alternative implementations and make the class library completely free and open source. Since there's some [[Proprietary software|encumbered code]] in the JDK, Sun will continue to use that code in commercial releases until it's replaced by fully functional free and open-source alternatives.
+
+==After the May 2007 code release==
+{{See also|OpenJDK}}
+
+As of May 2008, the only part of the Class library that remains proprietary  (4% as of May 2007 for OpenJDK 7,
+&lt;ref name=&quot;openJDK_plan&quot;&gt;{{cite web
+| url=http://weblogs.java.net/blog/robogeek/archive/2007/10/openjdk_encumbr.html
+| title=Plans for OpenJDK
+|last=Herron|first=David
+| date=2007-10-04
+| accessdate=2007-10-09}}&lt;/ref&gt;
+&lt;ref&gt;{{cite web
+| url=http://fitzsim.org/blog/?p=17
+| title=Plans for OpenJDK
+| last=Fitzsimmons|first=Thomas
+| date=2007-05-18
+| accessdate=2007-05-22}}&lt;/ref&gt;
+and less than 1% as of May 2008 in OpenJDK 6
+&lt;ref name=&quot;fedora9la&quot;&gt;{{cite web
+| url=http://langel.wordpress.com/2008/03/13/openjdk-in-fedora-9/
+| title=OpenJDK to replace IcedTea in Fedora 9
+| last=Angel|first=Lillian
+| date=2008-03-13
+| accessdate=2008-04-05}}&lt;/ref&gt;
+&lt;ref name=&quot;fedora9redhat&quot;&gt;{{cite web
+| url=http://developer.redhatmagazine.com/2008/03/12/openjdk-to-replace-icedtea-in-fedora-9/
+| title=OpenJDK in Fedora 9!
+| last=Wade|first=Karsten
+| publisher=redhatmagazine.com
+| quote=''Thomas Fitzsimmons updated the Fedora 9 release notes source pages to reflect that Fedora 9 would ship with OpenJDK 6 instead of the IcedTea implementation of OpenJDK 7. Fedora 9 (Sulphur) is due to release in May 2008.''
+| date=2008-03-13
+| accessdate=2008-04-05}}&lt;/ref&gt;)
+is the [[Simple Network Management Protocol|SNMP]] implementation.
+&lt;ref name=&quot;openJDK_b10&quot;&gt;{{cite web
+|url=http://mail.openjdk.java.net/pipermail/jdk6-dev/2008-May/000058.html
+|title=OpenJDK 6 b10 source posted
+|date=2008-05-30
+|accessdate=2008-06-01
+}}&lt;/ref&gt;
+
+Since the first May 2007 release, [[Sun Microsystems]], with the help of the community, has released as free software or replaced with free software alternatives almost all the encumbered code:
+* All the audio engine code, including the [[Musical Instrument Digital Interface|software synthetizer]], has been released as open-source.&lt;ref name=&quot;openJDK_b10&quot;/&gt;&lt;ref&gt;[http://openjdk.java.net/projects/audio-engine/ audio-engine project page]&lt;/ref&gt; The closed-source software synthesizer has been replaced by a new synthesizer developed specifically for OpenJDK called ''Gervill'',&lt;ref&gt;{{cite web
+|url=https://gervill.dev.java.net/
+|title=Gervill - Software Synthesizer
+|accessdate=2008-06-01
+}}&lt;/ref&gt;
+* All [[cryptography]] classes used in the Class library have been released as free software,&lt;ref&gt;{{cite web
+|url=http://mail.openjdk.java.net/pipermail/security-dev/2007-September/000015.html
+|title=Crypto has been added to OpenJDK
+|date=2007-09-27
+|accessdate=2007-10-07
+}}&lt;/ref&gt;
+* The code that scales and [[Rasterisation|rasterizes]] [[Computer font|fonts]] has been replaced by [[FreeType]] &lt;ref&gt;[http://openjdk.java.net/projects/font-scaler/ font-scaler projectpage]&lt;/ref&gt;&lt;ref name=&quot;2dproject&quot;&gt;[http://openjdk.java.net/groups/2d/ Java2D project page]&lt;/ref&gt;&lt;ref&gt;{{cite web
+|url=http://mail.openjdk.java.net/pipermail/font-scaler-dev/2007-August/000011.html
+|title=Freetype font rasteriser
+|date=2007-08-07
+|accessdate=2007-11-24
+}}&lt;/ref&gt;
+* The native [[color management]] system has been replaced by [[LittleCMS]].&lt;ref name=&quot;2dproject&quot;/&gt; There is a pluggable layer in the JDK, so that the commercial version can use the old color management system and OpenJDK can use LittleCMS.
+* The [[anti-aliasing]] graphics [[Rasterisation|rasterizer]] code has been replaced by the open-sourced Pisces renderer used in the [[phoneME]] project.&lt;ref name=&quot;2dproject&quot;/&gt;&lt;ref&gt;[https://phoneme.dev.java.net/ phoneme.dev.java.net/]&lt;/ref&gt;&lt;ref&gt;[http://openjdk.java.net/projects/graphics-rasterizer/ graphics-rasterizer project page]&lt;/ref&gt; This code is fully functional, but still needs some performance enhancements,&lt;ref&gt;{{cite web
+| url=http://mail.openjdk.java.net/pipermail/2d-dev/2007-October/000078.html
+| title=Open Source rasterizer
+| publisher=Sun Microsystems
+|last=Graham|first=Jim
+| date=2007-10-03
+| accessdate=2007-05-09}}&lt;/ref&gt;
+* The [[Javascript]] plugin has been open-sourced (the [[Rhino (JavaScript engine)|JavaScript engine]] itself was open-sourced from the beginning).&lt;ref&gt;{{cite web
+| url=http://icedtea.classpath.org/bugzilla/show_bug.cgi?id=85
+| title=Javascript is encumbered and there is no javascript plugin support.
+|publisher=[[IcedTea]]
+| quote=''Changing Summary. JavaScript is no longer encumbered, but we still need liveconnect support.''
+| date=2008-03-11
+| accessdate=2008-06-01}}&lt;/ref&gt;
+
+Because of these previously encumbered components, it was not possible to build [[OpenJDK]] only with free software components. In order to be able to do this before the whole [[Java Class Library|class library]] is made free, and to be able to bundle [[OpenJDK]] in  [[Fedora (operating system)|Fedora Core]] and other free [[Linux]] distributions, a project called [[IcedTea]] has been  started by [[Red Hat]]. It is basically an OpenJDK/[[GNU Classpath]] hybrid that can be used to bootstrap OpenJDK using only free software.&lt;ref&gt;{{cite web
+| url=http://article.gmane.org/gmane.comp.java.openjdk.distro-packaging.devel/5
+| title=Experimental Build Repository at icedtea.classpath.org
+| date=2007-06-07
+|last=Andrew|first=Haley
+| accessdate=2007-06-09}}&lt;/ref&gt;&lt;ref&gt;{{cite web
+| url=http://developer.classpath.org/pipermail/classpath/2007-June/002109.html
+| title=Experimental Build Repository at icedtea.classpath.org
+|last=Mark|first=Wielaard
+| date=2007-06-07
+| accessdate=2007-06-09}}&lt;/ref&gt;
+
+As of March 2008, the [[Fedora (operating system)|Fedora 9]] distribution has been released with OpenJDK 6 instead of IcedTea.&lt;ref name=&quot;fedora9redhat&quot; /&gt; Some of the stated reasons for this changes are:
+* Sun has replaced most of the encumbrances for which IcedTea was providing replacements (there is less than 1% of encumbered code in the [[Java Class Library|class library]], and this code is not necessary to run OpenJDK).
+* OpenJDK 6 is a stable branch, whereas OpenJDK 7 is unstable and not expected to ship a stable release until 2009.
+* Sun has licensed the OpenJDK trademark for use in Fedora.
+
+On June 2008, it was announced that [[IcedTea|IcedTea6]] (as the packaged version of OpenJDK on [[Fedora (operating system)|Fedora 9]]) has passed the [[Technology Compatibility Kit]] tests and can claim to be a fully compatible Java 6 implementation.&lt;ref&gt;{{cite web
+|url=http://blog.softwhere.org/archives/196
+|title=Java is finally Free and Open
+|date=2008-06-19
+|last=Sharples|first=Rich}}
+&lt;/ref&gt;
+
+==See also==
+{{Portal box|Free software|Java}}
+
+* [[Java (software platform)]]
+* [[Javac]]
+* [[HotSpot]]
+* [[Apache Harmony]]
+* [[OpenJDK]]
+* [[GNU Classpath]], [[GCJ]], and [[GNU Interpreter for Java|GIJ]]
+* [[IcedTea]]
+* [[IKVM.NET]]
+* [[List of Java virtual machines]]
+
+==References==
+{{Reflist|2}}
+
+==External links==
+*[http://www.gnu.org/philosophy/java-trap.html Free But Shackled - The Java Trap]
+*[http://developer.classpath.org/support/ Escaping the Java Trap: A practical road map to the Free Software and Open Source alternatives]
+*[http://www.infoq.com/news/2007/06/openjdk-hybrids Hybrids Combine GNU Classpath and OpenJDK]
+*[http://meetings-archive.debian.net/pub/debian-meetings/2007/debconf7/low/115_State_of_the_Coffee_Cup.ogg Hour long 2007 video of a workshop with Sun, GGJ, and GNU Classpath developers]
+*[http://wiki.debian.org/Java/ResolveJavaNaming Java Trademark Issues]
+
+{{Java Virtual Machine}}
+{{Java (Sun)}}
+
+{{DEFAULTSORT:Free Java Implementations}}
+[[Category:Java virtual machine]]
+[[Category:Free virtualization software]]
+
+[[de:Freie Java-Implementierung]]</rev></revisions></page></pages></query></api>

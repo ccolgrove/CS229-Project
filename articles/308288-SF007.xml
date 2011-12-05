@@ -1,0 +1,110 @@
+<?xml version="1.0"?><api><query><pages><page pageid="308288" ns="0" title="Portage (software)"><revisions><rev xml:space="preserve">{{Infobox software
+| name                   = Portage
+| logo                   =
+| screenshot             = [[Image:Portage-oppdatering.png|250px]]
+| caption                = Portage in action
+| author                 =
+| developer              =
+| released               =
+| latest release version = [http://packages.gentoo.org/package/sys-apps/portage 2.1.10.3]
+| latest release date    = 14 June 2011
+| latest preview version = [http://packages.gentoo.org/package/sys-apps/portage 2.2.0 alpha 58]
+| latest preview date    = 15 September 2011
+| operating system       = [[Gentoo Linux]] and [[Gentoo/FreeBSD]]
+| platform               = [[POSIX]]-compatible/[[Python (programming language)|Python]]-capable
+| genre                  = [[Package management system]]
+| programming language   = [[Python (programming language)|Python]]
+| license                = [[GNU General Public License]] [[GNU General Public License#Version 2|v2]]
+| website                = http://www.gentoo.org/proj/en/portage/
+}}
+
+'''Portage''' is a [[package management system]] used by [[Gentoo Linux]], based on the concept of [[ports collection]]s. Gentoo is sometimes referred to as a ''meta-distribution'' due to the extreme flexibility of Portage, which makes it [[operating system|operating-system]]-independent.&lt;ref&gt;[http://www.gentoo.org/main/en/about.xml Gentoo Linux - About Gentoo&lt;!-- Bot generated title --&gt;]&lt;/ref&gt;&lt;ref&gt;[http://tom.acrewoods.net/writing/gentoo-workstation My Workstation OS: Gentoo | Tom Chance's website&lt;!-- Bot generated title --&gt;]&lt;/ref&gt;&lt;ref&gt;[http://www.linuxdevcenter.com/pub/a/linux/2002/10/10/intro_gentoo.html LinuxDevCenter.com - Gentoo Linux Reloaded&lt;!-- Bot generated title --&gt;]&lt;/ref&gt;&lt;ref&gt;[http://www.osnews.com/story.php/1080/Interview-with-Gentoos-Daniel-Robbins/ Interview with Gentoo's Daniel Robbins&lt;!-- Bot generated title --&gt;]&lt;/ref&gt; The [[Gentoo/Alt]] project is concerned with using Portage to manage other operating systems, such as [[BSD]]s, [[Mac OS X]] and [[Solaris (operating system)|Solaris]]. The most notable of these implementations is the [[Gentoo/FreeBSD]] project.
+
+There is an ongoing effort called the Package Manager Specification project (PMS)&lt;ref&gt;[http://www.gentoo.org/proj/en/qa/pms.xml Gentoo's official Package Manager Specification (PMS) project]&lt;/ref&gt; to standardise and document the behaviour of Portage, allowing the ebuild tree and Gentoo system packages to be used with alternate package managers such as [[Paludis]] and [[pkgcore]]. Its goal is to specify the exact set of features and behaviour of package managers and ebuilds, serving as an authoritative reference for Portage.
+
+==Overview==
+===Accessing Portage===
+[[Image:Porthole-screenshot.png|thumb|180px|right|Porthole graphical frontend.]]
+Portage is similar to the [[Berkeley Software Distribution|BSD]]-style [[package management system|package management]] known as [[Ports collection|ports]], and was originally designed with [[FreeBSD]]'s ports in mind.&lt;ref&gt;[http://www.gentoo.org/doc/en/articles/making-the-distro-p3.xml Gentoo Linux Documentation - Making the distribution, Part 3&lt;!-- Bot generated title --&gt;]&lt;/ref&gt; Portage is written in the [[Python (programming language)|Python programming language]], and is the main utility that defines Gentoo. Although the system itself is known as Portage, it consists of two main parts, the ''[[ebuild]]'' system and ''emerge''. The ebuild system takes care of the actual work of building and installing packages, while emerge provides an interface to ebuild: managing an ebuild repository, resolving dependencies and similar issues. (These two therefore have roughly the same relation as [[RPM Package Manager|rpm]] has with [[Yellow dog Updater, Modified|yum]], or [[dpkg]] has with [[Advanced Packaging Tool|APT]].)
+
+Two [[GTK+]]-based GUIs, '''Porthole''' and '''Portato''', are available for working with Portage.
+There is also the '''Himerge''' GUI, which stands for &quot;Haskell Interface for eMerge&quot;.
+
+===Functions provided===
+Portage is characterized by its main function: [[Compiler|compiling]] from [[source code]] the packages the user wishes to install. In doing so it allows customization of compiler and target-application options to fit the system's specifications and the user's own wishes. Functionalities related to system management include: allowing parallel package-version installation, tracking cross-package [[Coupling (computer science)|dependencies]], managing a database of installed packages, providing a local ebuild repository, and synchronizing of the local Portage tree with remote repositories. Functionalities related to individual package installation include: specifying compilation settings for the target machine and choosing package components.
+
+Portage distinguishes between three levels of stability in ebuilds: ''stable'' (e.g., the software works as intended with no known [[Software security|security issues]] at time of release), ''keyword masked'' (mainly for packages that have not been sufficiently [[Software testing|tested]] on the target system architecture to be considered stable) and ''hard masked'' (broken or very insecure) packages.
+
+==Features==
+===Emerge===
+The '''emerge''' command-line tool is the heart of Portage. The command is customizable with many options and modifiers. The emerge tool is the most important utility for accessing the features of Portage from the [[command line]].
+
+The program calculates and manages dependencies, executes ebuilds and maintains the local Portage [[Tree structure|tree]] and database of installed packages. The compilation settings used by ebuilds can be changed through the [[CFLAGS]] [[environment variable]], based on the specifications of the individual computer and on the user's desire for optimization. The emerge utility executes ebuilds in a [[sandbox (security)|sandbox]] environment. This way the system is protected from software executed by the ebuild and resulting binaries are only merged after a successful build and sandboxed install.
+
+What emerge installs as dependencies is affected by the USE flag-settings. They decide which optional features will be included when installing or upgrading an application. The emerge command can also be used to download and install precompiled binary files.
+
+===USE flags===
+The Portage system offers the use of &quot;USE flags&quot;, which allows users to indicate which software features they would like to include (and exclude) while building packages. For example, there is a USE flag to include [[DVD]] support, where available, in packages compiled with the flag enabled. The USE flags affect which [[Coupling (computer science)|dependencies]] are required, generally affecting which optional features will be built into a given program when it is compiled. For example, in packages which use a [[configure script]], the USE flag &lt;code&gt;feature&lt;/code&gt; would translate to &lt;code&gt;./configure --with-feature&lt;/code&gt;.
+
+The specification of USE flags is the usual way to configure programs on Gentoo. USE flags may be set manually, or via user-friendly tools such as 'ufed' (USE flag editor), which lists flags along with their description. A list of available USE flags is available in the [http://www.gentoo.org/dyn/use-index.xml &quot;Gentoo Linux Use Variable Descriptions&quot; page of the Gentoo website].
+
+===ebuild===
+{{Main|ebuild}}
+
+Gentoo does not, by default, use binary packages as other [[package management system]]s do (like [[RPM Package Manager|RPM]]), employing instead a format known as the ebuild. Whereas RPMs are precompiled [[binaries]], ebuilds are [[shell script]]s with variables and functions which contain a description of the software, and instructions on how to obtain, configure, [[compile]], and install it, more closely akin to (but more powerful than) the [[RPM Package Manager#Spec file|.spec files]] distributed in [[SRPM]]s. There are over 27,000 ebuilds available, the majority of which are distributed by the Gentoo [[Mirror (computing)|mirrors]]. New and updated ebuilds can be obtained by synchronizing the local ebuild repository with the mirrors. This is done by executing the command &lt;tt&gt;emerge â-sync&lt;/tt&gt;. Historically, Gentoo has provided pre-compiled binary packages for many common programs, especially those which are lengthy to compile, such as [[Mozilla Firefox]] and [[OpenOffice.org]]. These are still installed with emerge, just by appending a &quot;-bin&quot; to the package name to instead install the binary version.
+
+===Binary packages===
+Gentoo does have a binary packaging format, which is a ''.tbz2'' file ([[tar (file format)|tar]] with [[bzip2]] compression) with additional [[metadata]]. This feature enables the building of binary packages on one system (using Portage's &lt;tt&gt;buildpkg&lt;/tt&gt; or &lt;tt&gt;quickpkg&lt;/tt&gt;) followed by quick installation on other, identical systems (with Portage's &lt;tt&gt;getbinpkg&lt;/tt&gt; or &lt;tt&gt;emerge -K&lt;/tt&gt;). See [http://www.gentoo.org/doc/en/handbook/handbook-x86.xml?part=2&amp;chap=3#doc_chap4 Portage Features in the Gentoo Linux Handbook] for more information.
+
+===Masking===
+''Masking'' is how Gentoo determines which packages are suitable for a system. Ebuilds designed for different architectures or experimental software are usually masked in a manner which prevents a stable system from installing them without user intervention.
+
+Packages that generally just require some testing but will often work fine are said to be ''keyword masked'' (i.e. they are available for systems with an ACCEPT_KEYWORDS make.conf entry starting with the character &lt;tt&gt;~&lt;/tt&gt;, such as &lt;tt&gt;~x86&lt;/tt&gt;, &lt;tt&gt;~amd64&lt;/tt&gt;, &lt;tt&gt;~ppc&lt;/tt&gt;). The standard way to unmask an individual ''keyword masked'' package is by adding a file with the full package name and keyword to &lt;tt&gt;/etc/portage/package.keywords/&lt;/tt&gt;. Users can make subdirectories here as well, allowing for custom organization. For example, if a masked package had multiple masked dependencies, the user could make a directory with the name of the original masked package, and put all the mask files for the package and its dependencies in that directory. This scheme replaces the older scheme of having &lt;tt&gt;/etc/portage/package.keywords&lt;/tt&gt; as a text file list.
+
+Packages with known problems or not considered mature enough to be candidates for stable are ''hard masked'' by one of the various package.mask files in /usr/portage/profiles, and such entries are generally accompanied by a comment from developers explaining the reason for the mask.
+
+==See also==
+{{Portal|Free software}}
+* [[pkgsrc]]
+
+==References==
+&lt;references /&gt;
+
+==External links==
+; Official documentation
+* [http://www.gentoo.org/doc/en/handbook/handbook-x86.xml?part=2&amp;chap=3 Gentoo Portage Features]
+* [http://www.gentoo.org/doc/en/handbook/handbook-x86.xml?part=2&amp;chap=1 Gentoo Portage Introduction]
+* [http://www.gentoo.org/doc/en/handbook/handbook-x86.xml?part=3 Working with Portage]
+* [http://packages.gentoo.org/ Gentoo Packages], information about currently available ebuilds
+; Unofficial documentation
+* [http://www.gentoo-portage.com/ Gentoo-Portage], alternate presentation of current ebuild information
+* [http://wiki.kaspersandberg.com/doku.php?id=howtos:portage Using Portage]
+* [http://forums.gentoo.org/viewtopic.php?t=125553 Installing portage on other Linux distros]
+; Similar software
+* [http://emerde.freaknet.org/ Emerde, portage-like project for Slackware]
+* [http://www.pkgcore.org Pkgcore], bsd re-implementation of portage
+* [http://paludis.pioto.org/ Paludis], another package manager that uses ebuilds
+* [https://wiki.archlinux.org/index.php/Arch_Build_System Arch Build System] a ports-like system for [http://www.archlinux.org/ Arch Linux]
+
+[[Category:Gentoo Linux]]
+[[Category:Free package management systems]]
+[[Category:Linux package management-related software]]
+[[Category:Free software programmed in Python]]
+
+[[ar:Ø¨ÙØ±ØªØ§Ø¬]]
+[[cs:Portage]]
+[[es:Portage (software)]]
+[[eu:Portage]]
+[[fr:Portage (Gentoo)]]
+[[ko:í¬í°ì§ (ìíí¸ì¨ì´)]]
+[[it:Portage (software)]]
+[[mr:à¤ªà¥à¤°à¥à¤à¥à¤ (à¤¸à¥à¤«à¥à¤à¤µà¥à¤à¤°)]]
+[[nl:Portage (pakketbeheer)]]
+[[ja:Portage]]
+[[pl:Portage (program)]]
+[[pt:Portage (software)]]
+[[ru:Portage]]
+[[fi:Portage]]
+[[sv:Portage]]
+[[uk:Portage]]
+[[zh:Portage]]</rev></revisions></page></pages></query></api>

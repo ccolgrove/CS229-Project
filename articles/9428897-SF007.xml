@@ -1,0 +1,157 @@
+<?xml version="1.0"?><api><query><pages><page pageid="9428897" ns="0" title="Ubuntu Studio"><revisions><rev xml:space="preserve">&lt;!-- If you update this article, please remember to update other Ubuntu derivatives, which include, but are not limited to: Ubuntu, Kubuntu, Edubuntu, Xubuntu, Gobuntu. --&gt;
+{{Infobox OS
+|name         = Ubuntu Studio
+|logo         = [[File:Ubuntustudio v3 logo-alt.svg|200px|Logo]]
+|screenshot   = [[File:UbuntuStudio910.png|300px]]
+|caption      = Ubuntu Studio 10.04
+|developer    = [[Canonical Ltd.]]&amp;nbsp;/ [[Ubuntu Foundation]] 
+|family       = Variant of [[Ubuntu (operating system)|Ubuntu]]
+|source_model = [[Open source]]
+|latest_release_version = 11.10 (Oneiric Ocelot)
+|latest_release_date    = {{release date|2011|04|29}}
+|latest_test_version    = 
+|latest_test_date       = 
+|marketing_target    = Multimedia enthusiasts
+|language            = [[English language|English]], [[French language|French]], [[Spanish language|Spanish]], [[Portuguese language|Portuguese]]
+|kernel_type         = [[Monolithic kernel|Monolithic]] [[Linux kernel]]
+|ui                  = [[GNOME]]
+|license             = Mainly the [[GNU GPL]] / various others
+|working_state       = Current
+|supported_platforms = [[IA-32]], [[x86-64]]
+|updatemodel     = 
+|package_manager = [[Advanced Packaging Tool]] (APT)
+|website         = [http://ubuntustudio.org/ ubuntustudio.org]
+}}
+[[File:Ubuntu studio login screen.png|thumb|The login screen of Ubuntu Studio 8.04]]
+
+'''Ubuntu Studio''' is an officially recognized derivative&lt;ref name=&quot;Ubuntu Derivatives&quot;&gt;[http://www.ubuntu.com/products/whatisubuntu/derivatives Ubuntu Derivatives], Canonical Ltd., Retrieved on 24 May 2008&lt;/ref&gt; of the [[Ubuntu (operating system)|Ubuntu]] [[Linux distribution]], which is explicitly geared to general [[multimedia]] production. The original version, based on Ubuntu 7.04, was released on May 10, 2007.
+
+== Features ==
+===Real-time kernel===
+The real-time [[kernel (computing)|kernel]], first included with Ubuntu Studio 8.04, was modified for intensive audio, video or graphics work. The 8.10 release lacks this real-time kernel. It has been reimplemented in the 9.04 release and stabilized with the release of 9.10. 10.04, in contrast, does not include the real-time kernel by default. As of version 10.10, the real-time kernel is no longer available in the repositories.
+
+Typically, computers used as audio workstations rely on hardware monitoring which may provide low latency, but does not allow the live signal to be manipulated beyond available hardware effects.  To manipulate a live signal, software processing of the signal is necessary, which most audio work stations can only achieve with latencies greater than several tens of milliseconds.  Thus, a notable advantage of the Linux real-time kernel is being able to achieve software processing with latencies well below the human perception threshold of 5 to 10ms.
+
+The scheduler allows applications to request immediate [[CPU]] time, which can drastically reduce audio [[Latency (audio)|latency]]&lt;ref name=&quot;trumm&quot;&gt;{{Citation
+ | last=Trumm
+ | first=Aaron
+ | title=The Linux-Based Recording Studio
+ | journal=Linux Journal
+ | volume=2004
+ | issue=121
+ | year=2004
+ | url=http://portal.acm.org/citation.cfm?id=982972.982977
+ }}&lt;/ref&gt;. 
+In 9.10, the &quot;Ubuntu Studio Controls&quot; provided under System&gt;Administration permit the user to &quot;Enable Nice,&quot; allowing the use of wireless networking and proprietary graphics cards drivers while maintaining low audio latency free of XRUNs (audio drop-outs) in JACK.  A more negative value entered for &quot;Nice&quot; reserves more CPU time for real-time audio processes.
+
+===Appearance and sound theme===
+Ubuntu Studio also includes custom artwork and a blue-on-black theme, as opposed to Ubuntu's default purple and orange.  As with the main distribution of Ubuntu, if an [[GPU|accelerated graphics card]] and appropriate driver are used, the advanced desktop effects can be enabled.  More advanced Compiz effects are available in the Synaptic Package Manager (i.e., Ubuntu repositories).  In Karmic 9.10, a fresh sound theme replaces the default Ubuntu theme, with a reverberating melody at startup, and an occasional knock or ping from a button or prompt.
+
+===Access to Ubuntu repositories===
+An important advantage of Ubuntu Studio over most other Linux distributions employing the real-time kernel is access to the same repositories available to the main Ubuntu distributions through the Update Manager, Synaptic Package Manager, as well as through the Add/Remove Applications prompt.  This allows for much more frequent operating system updates, and access to a much wider range of software. 
+
+== Installation==
+There is currently no [[Live Distro|live]] version available of Ubuntu Studio, and no graphical installer. In addition, the disk image is about 1.8 GB, too large to fit on a standard [[CD]], and as a result the recommended installation medium for Ubuntu Studio is a [[DVD]] or [[USB flash drive]]. Ubuntu Studio can also be installed on a pre-existing Ubuntu installation by installing the &quot;ubuntustudio-desktop&quot; package from [[Advanced Packaging Tool]].
+
+In 9.10, the package &quot;ubuntustudio-audio,&quot; shown during installation (and also available in the Synaptic Package Manager), cannot be installed without a working Internet connection.
+
+A readily available internet connection is required after installation to maintain system components.
+
+== Software included ==
+[[File:UbuntuStudio9.10_Multitasking.png|thumb|alt=Ubuntu Studio 9.10 screen shot|Screen shot of Ubuntu Studio 9.10 running JACK Audio Connection Kit - Qt GUI Interface 0.3.4, Ardour 2.8.2, Patchage 0.2.3, Hydrogen 0.9.3 and Blender.]]
+
+===Audio===
+* [[a2jmidid]] â a2jmidid is a daemon for exposing legacy ALSA sequencer applications in JACK MIDI system.
+* [[Ardour (audio processor)|Ardour]] â a hard disk recorder and digital audio workstation application (Works with JACK).
+* [[Audacious (software)|Audacious]] â a lightweight audio player.
+* [[Audacity]] â a digital audio editor application.
+* BEAST â music composition and modular synthesis application.
+* [[Creox]] â A real-time guitar effects program (works with JACK).
+* [[FluidSynth]] â Software Wavetable Synthesizer (Works with JACK). 
+* [[Hydrogen (software)|Hydrogen]] â an advanced drum machine (Works with JACK).
+* [[JACK Audio Connection Kit]] â a sound server daemon that provides low latency connections between applications for both audio and MIDI data.
+* [[Jack Rack]] â Virtual rackmount of [[LADSPA]] DSP effects plugins (Works with JACK).  
+* [[JAMin]] â the JACK Audio Connection Kit Audio Mastering interface (Works with JACK).
+* [[LilyPond]] â a program for engraving sheet music
+* [[Mixxx]] â a digital [[DJ]]-style mixing program
+* [[MusE]] â a MIDI/Audio sequencer using [[JACK Audio Connection Kit|JACK]] and [[Advanced Linux Sound Architecture|ALSA]]
+* [[MuseScore]] â a music scorewriter for Linux, Microsoft Windows and Mac
+* [[Patchage]] â GUI access to patch MIDI and Audio software together for JACK. 
+* [[Pure Data]] â a programming environment for multimedia (Works with Jack).
+* [[Rosegarden]] â a digital audio workstation program (works with JACK). (Not included in latest release â it must be installed)
+* [[Tapiir]] â a  software  multitap  delay  with realtime audio I/O. (works with JACK).
+* [[Timemachine]] â Records the last 30 seconds of sound to the hard drive, so a 'one off' sound can be captured (Works with JACK).
+* [[TiMidity++]] â a software synthesizer that is able to convert from MIDI to various formats.
+* [[Xwax]] â a vinyl record emulator.
+* [[ZynAddSubFX]] â a complex yet easy to use subtractive, additive, FM synthesizer with DSP effects, and exceptional software synthesizer  (Works with JACK).
+
+===Video===
+* [[PiTiVi]] â a video editing program (not included in latest release)
+* [[Kino (software)|Kino]] â a non-linear digital video editor
+* Stopmotion â a stop-motion animation movie creator
+* [[VLC media player]] â a media player
+* [[Xjadeo]] â a simple video player that gets sync from JACK transport
+
+===Graphics===
+* Agave â a color scheme generator
+* [[Blender (software)|Blender]] â a 3D animation program
+* [[Enblend]] â an image compositing program
+* [[FontForge]] â a typeface (font) editor program
+* [[GIMP]] â a raster graphics editor
+* [[Hugin_(software) | Hugin]] â photo stitching and HDR merging program
+* [[Inkscape]] â a vector graphics editor
+* [[Scribus]] â a desktop publishing application
+* [[Synfig]] â a 2D vector graphics and timeline-based animation program
+
+==See also==
+* [[64 Studio]] â a multimedia production-oriented distribution based on [[Debian]]
+* [[Planet CCRMA]] â a set of [[Red Hat]] packages of multimedia production software
+* [[Dyne:bolic]] â a multimedia creation oriented Live CD
+* [[Puredyne]] â a multimedia oriented Live CD
+
+==References==
+{{reflist}}
+
+== External links ==
+{{Commons category|Ubuntu Studio}}
+* [http://ubuntustudio.org/ Ubuntu Studio homepage]
+* [https://help.ubuntu.com/community/UbuntuStudio/Applications Ubuntu Studio applications]
+* [https://wiki.ubuntu.com/UbuntuStudio Ubuntu Wiki]
+* [http://www.boingboing.net/2007/01/21/ubuntu-studio-linux.html Boing Boing - ''Ubuntu studio - Linux for multimedia creation''] (2007-01-21)
+* {{DistroWatch|ubuntustudio|NAME=Ubuntu Studio}} listing of distributions and applications with links
+* [http://linuxmusicians.com Linux Musicians community]
+
+{{Ubuntu}}
+{{Linux distributions}}
+{{FOSS}}
+
+[[Category:Ubuntu (operating system) derivatives]]
+[[Category:Linux media creation distributions]]
+
+[[ar:Ø£ÙØ¨ÙÙØªÙ Ø³ØªÙØ¯ÙÙ]]
+[[ast:Ubuntu Studio]]
+[[bn:à¦à¦¬à§à¦¨à§à¦à§ à¦¸à§à¦à§à¦¡à¦¿à¦]]
+[[ca:Ubuntu Studio]]
+[[cs:Ubuntu Studio]]
+[[da:Ubuntu Studio]]
+[[de:Ubuntu#Ubuntu Studio]]
+[[es:Ubuntu Studio]]
+[[fr:Ubuntu Studio]]
+[[ko:ì°ë¶í¬ ì¤íëì¤]]
+[[it:Ubuntu Studio]]
+[[hu:Ubuntu Studio]]
+[[nl:Ubuntu Studio]]
+[[ja:Ubuntu Studio]]
+[[no:Ubuntu Studio]]
+[[nn:Ubuntu Studio]]
+[[pl:Ubuntu Studio]]
+[[pt:Ubuntu Studio]]
+[[ro:Ubuntu Studio]]
+[[ru:Ubuntu Studio]]
+[[simple:Ubuntu Studio]]
+[[sk:Ubuntu Studio]]
+[[fi:Ubuntu Studio]]
+[[sv:Ubuntu studio]]
+[[tr:Ubuntu Studio]]
+[[uk:Ubuntu Studio]]
+[[zh:Ubuntu Studio]]</rev></revisions></page></pages></query></api>

@@ -1,0 +1,440 @@
+<?xml version="1.0"?><api><query><redirects><r from="About:robots" to="About URI scheme" /></redirects><pages><page pageid="1260694" ns="0" title="About URI scheme"><revisions><rev xml:space="preserve">{{refimprove|date=September 2010}}
+{{redirect|about:blank|the spyware variant &quot;aboutblank&quot;|CoolWebSearch#Variants}}
+&lt;div class=&quot;dablink&quot;&gt;&quot;About:&quot; redirects here. For other uses, see [[about]]&lt;span class=&quot;plainlinks selfreference&quot;&gt;; for the Wikipedia &quot;about&quot; page, see [[Wikipedia:about]]&lt;/span&gt;.&lt;/div&gt;&lt;!--
+ * Note to editors - matching the empty string for inline with &quot;|=&quot; is important!
+--&gt;
+
+{{lowercase|about URI scheme}}
+'''about''' is an internal [[URI scheme]] (also known as a &quot;[[Uniform Resource Locator|URL]] scheme&quot; or, erroneously, &quot;[[protocol (computing)|protocol]]&quot;)  in various [[web browser]]s to display certain built-in functions.  It is not an officially registered scheme, and has no standard syntax.
+
+In early versions of [[Netscape Navigator|Netscape]], any address beginning &lt;code&gt;about:&lt;/code&gt; which wasn't recognised as a built-in command would simply result in the text after the colon being displayed. Similarly, in early versions of [[Internet Explorer]], &lt;code&gt;about:&lt;/code&gt; followed by a string of [[HTML]] (e.g. &lt;code&gt;&lt;nowiki&gt;about:&amp;lt;em&amp;gt;hello world&amp;lt;/em&amp;gt;&lt;/nowiki&gt;&lt;/code&gt;) would render that string as though it were the source of the page - thus providing a similar (though more limited) facility to the [[data: URI scheme]] defined by RFC 2397. Still other versions of Netscape would return various phrases in response to an unknown &lt;code&gt;about&lt;/code&gt; address, including &quot;Whatchew talkin' 'bout, Willis?&quot; (a catch phrase from the TV show ''[[Diff'rent Strokes]]'') or &quot;Homey don't play dat!&quot; (from a recurring [[Sketch comedy|skit]] on the TV show ''[[In Living Color]]'').
+
+The most commonly implemented &lt;tt&gt;about&lt;/tt&gt; URIs are &lt;code&gt;about:blank&lt;/code&gt;, which displays a blank HTML document, and simply &lt;code&gt;about:&lt;/code&gt;, which may display information about the browser. [[Opera (web browser)|Opera]] uses URIs beginning with &lt;tt&gt;opera&lt;/tt&gt; for similar purposes, and many &lt;tt&gt;about&lt;/tt&gt; URIs will be translated into an appropriate &lt;tt&gt;opera&lt;/tt&gt; URI if entered; an exception is &lt;code&gt;about:blank&lt;/code&gt;, which is not translated.
+
+&lt;blockquote&gt;'''''Note:''' In more recent versions of Internet Explorer, many of the following do not work or have been removed.''&lt;/blockquote&gt;
+
+==Standardisation==
+In 2010, and onwards, there were efforts to standardise the about URI scheme, and define the processing requirements for some specific URIs{{ref|abouturischeme}}.  Note that Opera ASA, the proponents, had long used and advocated alternative browser specific URIs{{ref|http://www.opera.com/docs/specs/opera6/}}.  The about URIs that are known to be defined for specific purposes are listed below.
+
+{| class=&quot;wikitable&quot;
+!Address
+!Purpose
+|-
+!about:blank{{ref|abouturischeme}}
+|Returns a blank HTML document with the media type text/html and character encoding UTF-8. This is widely used to load blank pages into browsing contexts, such as iframes within HTML, which may then be modified by scripts.
+|-
+!about:legacy-compat
+|A reserved, though unresolvable address defined within [[HTML5]] intended for use in the DOCTYPE designed for compatibility with some legacy authoring tools, such as XSLT, which may not be capable of outputting the more common, shorter alternative that lacks both the PUBLIC and SYSTEM identifiers.  &lt;code&gt;&amp;lt;!DOCTYPE html SYSTEM &quot;about:legacy-compat&quot;&amp;gt;&lt;/code&gt;.
+|-
+!about:srcdoc
+|A reserved, though unresolvable address defined within [[HTML5]] intended to be the address navigated to within iframes whose content comes from the srcdoc attribute
+|}
+
+==Common about: addresses==
+{| class=&quot;wikitable&quot;
+|+'''Common about: addresses'''
+!  Addresses
+!  [[Mozilla Application Suite|Mozilla]] / [[SeaMonkey]]
+!  [[Mozilla Firefox]]
+!  [[Google Chrome]]
+!  [[Konqueror]]
+!  [[Opera (web browser)|Opera]]
+!  [[Safari (web browser)|Safari]]
+!  [[Internet Explorer]]
+!  [[MSN Explorer]] 
+|-
+| '''about:'''
+| colspan=&quot;3&quot; | Shows version information and copyright information
+| Translated to &quot;about:konqueror&quot;
+| Translated to &quot;opera:about&quot;
+| rowspan=&quot;2&quot;| 
+| rowspan=&quot;2&quot;| 
+| Shows a blank page
+|-
+| '''about:about'''
+| colspan=&quot;3&quot; | Lists all the about: addresses &lt;br/&gt; (Firefox since version 4.0)
+| Translated to &quot;about:konqueror&quot;
+| Translated to &quot;opera:about&quot;
+| Shows nothing but the text:&quot;about&quot;
+|-
+| '''about:blank'''{{ref|aboutblank}}
+| colspan=&quot;7&quot; align=&quot;center&quot; | Shows a blank HTML document
+| rowspan=&quot;4&quot;| 
+|-
+| '''about:plugins'''
+| colspan=&quot;4&quot; | Shows the filename, [[MIME type]], description, suffix, and status of all installed plug-ins
+| Translated to &quot;opera:plugins&quot;
+| rowspan=&quot;3&quot; | 
+| rowspan=&quot;2&quot;| 
+|-
+| '''about:cache'''
+| colspan=&quot;2&quot; | Shows information about the Cache Service.
+| Lists the URIs of pages stored within the cache, with each linking to &lt;code&gt;view-cache:&lt;var&gt;uri&lt;/var&gt;&lt;/code&gt; that provides more information about its content.
+| Translated to &quot;about:konqueror&quot;
+| Translated to &quot;opera:cache&quot;
+|-
+| '''about:mozilla'''
+| colspan=&quot;2&quot; | Shows a page from the fictional ''[[The Book of Mozilla|Book of Mozilla]]''. In some versions of Netscape, also replaced the meteors in the standard Netscape [[throbber]] with a large fire-breathing lizard.
+|
+| Translated to &quot;about:konqueror&quot;
+|
+| The Windows version of IE showed a blank HTML document with [[blue]] background color. Possibly a joke reference to the &quot;[[Blue Screen of Death]].&quot; Removed in [[Windows XP]] [[Service pack|SP2]] but it can still be shown by typing &quot;''res://mshtml.dll/about.moz''&quot; instead.
+|-
+|}
+
+==Mozilla-specific about: addresses==
+&lt;!-- Deleted image removed: [[Image:BookofMozilla.PNG|thumb|The Book of Mozilla can be viewed using '''about:mozilla''']] --&gt;
+Many of these can also be used in Thunderbird, by setting them as the &quot;Mail Start Page&quot;. Also, some extensions define additional about: addresses not listed here.
+{| class=&quot;wikitable&quot;
+|+'''Mozilla-specific about: addresses'''
+!  Addresses
+!  [[Mozilla Application Suite]] / [[SeaMonkey]]
+!  [[Mozilla Firefox]]
+|-
+| '''about:bloat'''
+|
+| Displays [https://developer.mozilla.org/en/Debugging_memory_leaks#BloatView BloatView] output (disabled in release builds). Superseded by '''about:memory''' on Gecko 1.9.2&lt;ref name=&quot;mozdev leaks&quot;&gt;[https://developer.mozilla.org/en/Debugging_memory_leaks MDN Debugging memory leaks]&lt;/ref&gt;
+|-
+| '''about:blocked'''
+| 
+| Shows the [[malware]] protection page used when the browser identifies a page as not safe for viewing. '''Firefox 3+'''
+|-
+| '''about:addons'''
+| colspan=&quot;2&quot; | Shows installed addons, plugins, themes, and provides an interface for installing new addons. '''Firefox 4+, SeaMonkey 2.1+'''
+|-
+| '''about:buildconfig'''
+| colspan=&quot;2&quot; | Shows the arguments and options used to compile the build in use
+|-
+| '''about:cache'''
+| colspan=&quot;2&quot; | Shows information about the Cache Service. Number of entries, location of cache, size of cache, etc. for both memory and disk cache.
+|-
+| '''about:cache?device=memory'''
+| colspan=&quot;2&quot; | Shows individual entries in memory
+|-
+| '''about:cache?device=disk'''
+| colspan=&quot;2&quot; | Shows individual entries on disk
+|-
+| '''about:cache?device=offline'''
+| colspan=&quot;2&quot; | Shows individual entries for offline viewing. '''Gecko 1.9+'''
+|-
+| '''about:cache-entry'''
+| colspan=&quot;2&quot; | Shows information about a cache entry. Used in about:cache links. Requires parameters.
+|-
+| '''about:certerror'''
+| colspan=&quot;2&quot; | Shows the error page used when an [[Transport Layer Security|SSL/TLS]] certificate is untrusted or otherwise invalid.
+|-
+| '''about:config'''
+| colspan=&quot;2&quot; | Shows an interface for viewing and setting a wide variety of configuration variables, many of which are not otherwise accessible through the [[graphical user interface|GUI]] (options panels)
+|-
+| '''about:crashes'''
+| colspan=&quot;2&quot; | Shows details of crashes submitted by Mozilla's crash reporter. '''Firefox 3+, SeaMonkey 2.0+'''
+|-
+| '''about:credits'''
+| colspan=&quot;2&quot; | Shows a list of all those who contributed to Mozilla
+|-
+| '''about:feeds'''
+| colspan=&quot;2&quot; | Shows the page used when clicking the rss feed icon in the address bar.
+|-
+| '''about:home'''
+| 
+| Shows the Firefox 4 default home page.
+|-
+|'''about:jetpack'''
+|
+| Shows an interface for viewing and setting the JetPack extension  [https://jetpack.mozillalabs.com/]
+|-
+| '''about:licence'''
+| colspan=&quot;2&quot; | In the British English [[Internationalization and localization|localised]] version, shows the content of '''about:license''' but with all occurrences of ''license'' used as a [[noun]] replaced with ''licence'' (see [[American and British English spelling differences]]). '''Not available in Firefox 4'''
+|-
+| '''about:license'''
+| colspan=&quot;2&quot; | Shows the [[Mozilla Public License]] (and the [[Netscape Public License]]) for the piece of software. '''Gecko 1.8+'''
+|-
+| '''about:logo'''
+| colspan=&quot;2&quot; | Shows the logo used on the '''about:''' screen
+|-
+|'''about:memory'''
+| colspan=&quot;2&quot; | Shows memory usage. '''Firefox 3.6+'''
+|-
+| '''about:mozilla'''
+| colspan=&quot;2&quot; | Easter egg: Shows a verse from [[The Book of Mozilla]]
+|-
+| '''about:neterror'''
+| colspan=&quot;2&quot; | Shows the error page used when the browser could not access the requested path.
+|-
+|'''about:permissions'''
+|
+| Shows permissions for sites on Firefox 6.0a1.
+|-
+| '''about:plugins'''
+| colspan=&quot;2&quot; | Shows installed, currently enabled plug-ins.
+|-
+|'''about:privatebrowsing'''
+|
+| Can be used to switch to private browsing mode, shows a message indicating that Firefox will not remember any history for the current session. Note: It does not show URI on the address bar.
+|-
+| '''about:rights'''
+| colspan=&quot;2&quot; | Shows licensing information.
+|-
+| '''about:robots'''
+|
+|  Easter egg, beginning with March 8, 2008 trunk builds. The title of a window contains a citation from The Day the Earth Stood Still. [https://bugzilla.mozilla.org/show_bug.cgi?id=417302]
+|-
+|'''about:sessionrestore'''
+| colspan=&quot;2&quot; | Shows an interface for viewing about last session
+|-
+|'''about:support'''
+| colspan=&quot;2&quot; | Shows troubleshooting information. '''Firefox 3.6+, SeaMonkey 2.1+'''
+|}
+
+==Flock-specific about: addresses==
+Beginning in Flock 0.9, Flock introduced a feature called My World, a place where the user's favorites, RSS feeds and favorite media can be found.
+{| class=&quot;wikitable&quot;
+!  Address
+!  [[Flock (web browser)|Flock]]
+|-
+| '''about:myworld'''
+| Shows the My World page.
+|-
+| '''about:tutorial'''
+| Shows the Flock tutorial page.
+|-
+| '''about:mozilla'''
+| Shows a different version of [[The Book of Mozilla]] against a blue screen.
+|-
+|}
+
+==Opera-specific about: addresses==
+about is an alias for opera, therefore all these addresses also work with about prefixed. User [[JavaScript]] is disabled for all addresses in the about or opera URI schemes as a security feature. These pages can, however, be styled using local [[Cascading Style Sheets|stylesheets]].
+
+None of these functions, except the about:blank combination, work in the [[Nintendo DS]] version of the Opera browser, the [[Nintendo DS Browser]].
+
+{| class=&quot;wikitable&quot;
+|+'''Opera-specific about: addresses'''
+!  Addresses
+!  [[Opera (web browser)|Opera]]
+|-
+| '''opera:blank'''
+| Maps to about:blank
+|-
+| '''opera:about'''
+| Provides info about the browser and the configured paths.
+|-
+| '''about:opera'''
+| Maps to opera:about
+|-
+| '''opera:cache'''
+| Shows the content of the cache.
+|-
+| '''opera:config'''
+| (Opera 9.0 and newer) Shows a page that allows changing of numerous browser preferences, many of which cannot be accessed through the normal Preferences window 
+|-
+| '''opera:drives'''
+| (Operating system specific) Shows the local drives of the host system.
+|-
+| '''opera:history'''
+| Shows the content of the browser history.
+|-
+| '''opera:historysearch'''
+| (Opera 9.5 and newer) Shows the start page of internal search engine for the browser history.
+|-
+| '''opera:plugins'''
+| Shows installed plug-ins. Opera 11 and newer allow you to disable individual plug-ins from this page.
+|-
+| '''opera:button'''
+| Defines a custom button as a set of Opera actions. (Note: This does not work directly, you need to specify all button parametres as on [http://operawiki.info/CustomButtons CustomButtons].)
+|-
+| '''opera:help'''
+| Shortcut to the help directory. This can be either local or external.
+|-
+| '''opera:debug'''
+| (Opera 9.5 and newer) Shows a page that allows changing of settings for remote debug of Opera via [[Opera Dragonfly]]
+|-
+| '''opera:memdebug'''
+| (Opera 9.5 and newer) Shows debug information about memory usage.
+|-
+| '''opera:webstorage'''
+| (Opera 10.5 and newer) Shows information Web Storage (see [[HTML5]]).
+|-
+| '''opera:webdatabases'''
+| (Opera 10.5 and newer) Shows information Web Storage databases (see [[HTML5]]).
+|-
+|}
+
+==Internet Explorer-specific about: addresses==
+Internet Explorer about addresses are configurable in [[Microsoft Windows|Windows]]. It is therefore possible that some of the listed addresses will not work on a particular computer. For example &quot;[[The Book of Mozilla|about:mozilla]]&quot; was removed in SP2 (although the page can still be found at &quot;res://mshtml.dll/about.moz&quot;). &lt;!-- To configure about addresses, open the Registry Editor and browse to: &quot;HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\AboutURLs&quot;. --&gt; These about addresses are sometimes used for spyware and adware, most notably in [[CoolWebSearch]], which made about:blank display advertisements.
+{| class=&quot;wikitable&quot;
+!  Address
+!  [[Internet Explorer#Version 6|Internet Explorer 6 (SP2)]]
+!  [[Internet Explorer 7]]
+!  [[Internet Explorer 8]]
+|-
+! about:home
+| colspan=&quot;3&quot; | Displays the user's home page.
+|-
+! about:blank
+| colspan=&quot;3&quot; | Displays the blank page.
+|-
+! about:desktopitemnavigationfailure
+| colspan=&quot;3&quot; | Displays &quot;navigation cancelled&quot; page.
+|-
+! about:navigationcanceled
+| colspan=&quot;3&quot; | Displays &quot;navigation cancelled&quot; page.
+|-
+! about:navigationfailure
+| colspan=&quot;3&quot; | Displays &quot;navigation cancelled&quot; page.
+|-
+! about:noadd-ons
+|
+| colspan=&quot;2&quot; | Displays information page when add-ons are disabled.
+|-
+! about:noadd-onsinfo
+|
+| colspan=&quot;2&quot; | Displays information page about the effects when you use add-ons.
+|-
+! about:offlineinformation
+| colspan=&quot;3&quot; | Informs the user that the current page can not be viewed off line.
+|-
+! about:postnotcached
+| colspan=&quot;3&quot; | Informs the user that to refresh the current page, information entered in a form will have to be re-posted.
+|-
+! about:securityrisk
+| colspan=&quot;3&quot; | Informs the user not to browse with the current security settings because they may be harmful to the computer.
+|-
+! about:tabs
+|
+| colspan=&quot;2&quot; | Informs the user about [[tabbed browsing]]. It is also loaded when a new tab is created if the &quot;Open home page for new tabs instead of a blank page&quot; setting is enabled
+|-
+!about:inprivate
+| colspan=&quot;2&quot; |
+| Informs the user about [[InPrivate Browsing]]. It is loaded when InPrivate Browsing is initiated.
+|}
+
+==Google Chrome-specific about: addresses==
+{| class=&quot;wikitable&quot;
+!  Address
+!  [[Google Chrome]]
+|-
+| '''about:cache'''
+| Shows the content of the cache.
+|-
+| '''about:crash'''
+| Displays &quot;Aw, snap!&quot; crash notification page.
+|-
+| '''about:credits'''
+| Displays the list of free and open source software used in the browser, and their associated licences.
+|-
+| '''about:dns'''
+| Displays the DNS records
+|-
+| '''about:flags'''
+| See '''about:labs'''
+|-
+| '''about:histograms'''
+| Displays histograms
+|-
+| '''about:inducebrowsercrashforrealz'''
+| Crashes the Google Chrome browser. This is designed for developers to test what happens when the Google Chrome browser crashes.
+|-
+| '''about:internets'''
+| Displays a page entitled &quot;[[Series of tubes|Don't Clog the Tubes!]]&quot; which renders a page with an animation of the [[Microsoft Windows]] &quot;3D Pipes&quot; screensaver. Does not work on [[Windows Vista]] due to the pipes screen saver no longer being supported for releases after the 2.0.169.1 release.
+|-
+| '''about:kill'''
+| Same as '''about:crash''', but with a violet background color and the message &quot;He's Dead, Jim!&quot; Occurs when the OS runs out of memory or the browser is killed by an external cause, such as the OS shutting down.
+|-
+| '''about:labs'''
+| Displays a page for testing features. Moved to '''about:flags''' in Chrome Dev channel 8.0.552.11
+|-
+| '''about:memory'''
+| Displays the process manager
+|-
+| '''about:net-internals'''
+| Provides an interface for monitoring the network usage and performance statistics
+|-
+| '''about:plugins'''
+| Shows installed plug-ins.
+|-
+| '''about:stats'''
+| Displays statistics about processes. At the top of the page, it states &quot;Shhh! This page is secret!&quot;
+|-
+| '''about:shorthang'''
+| Hangs the tab's process, making it become unresponsive. This is designed for testing the hanging protection.
+|-
+| '''about:version'''
+| Displays version information, same as '''about:'''
+|}
+'''Note:''' Any &quot;about:&quot; URI is accepted, but only a page with a blank source is returned, as with the &quot;about:blank&quot; of other browsers. Similar to [[About: URI scheme#Safari|Safari]].
+
+==Konqueror==
+'''Note:''' Any &lt;code&gt;about&lt;/code&gt; URI except &lt;code&gt;about:blank&lt;/code&gt; and &lt;code&gt;about:plugins&lt;/code&gt; redirects to &lt;code&gt;about:konqueror&lt;/code&gt;.
+{| class=&quot;wikitable&quot;
+!  Address
+!  [[Konqueror]]
+|-
+| '''about:konqueror'''
+| Shows a friendly 'start' and navigation page
+|-
+|}
+
+==Epiphany==
+
+'''Note''': When [[Epiphany (web browser)|Epiphany]] used [[Gecko (layout engine)|Gecko]] as its layout engine, the [[#Common about: addresses|general]] and [[#Mozilla-specific about: addresses|Mozilla-specific]] &lt;tt&gt;about:&lt;/tt&gt; addresses worked as in [[Mozilla Firefox]]. Since [[WebKit]] became Epiphany's layout engine, only these addresses are supported:{{cn|date=November 2011}}
+
+{| class=&quot;wikitable&quot;
+|-
+! Address
+! [[Epiphany (web browser)|Epiphany]]
+|-
+| '''about:blank'''
+| Displays the blank page.
+|-
+| '''about:plugins'''
+| Shows installed plug-ins.
+|-
+| '''about:epiphany'''
+| Displays the following message:{{cn|date=November 2011}}
+{{quotation|&amp;nbsp;&amp;nbsp;&amp;nbsp;Il semble que la perfection soit atteinte non quand il n'y a plus rien Ã  ajouter, mais quand il n'y a plus rien Ã  retrancher.&lt;ref&gt;''It seems that perfection is attained not when there remains nothing to add, but when there remains nothing to remove.''&lt;/ref&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;|[[Antoine de Saint-ExupÃ©ry]]&amp;nbsp;&amp;nbsp;&amp;nbsp;}}
+|-
+| '''about:applications'''
+| interface for managing [[Epiphany (web browser)#Web Applications Mode|web applications]], supported since release 3.2, to be removed in release 3.4.&lt;ref&gt;{{citation
+|url        = http://git.gnome.org/browse/epiphany/plain/NEWS
+|title      = ''NEWS'' file
+|publisher  = The GNOME Project's [[Git (software)|git repository]]
+|accessdate = 2011-10-17
+}}&lt;/ref&gt;
+|}
+
+==Netscape (historic)==
+*Older versions of the [[Netscape]] browser have an &lt;tt&gt;about:people&lt;/tt&gt; URL that was similar to &lt;tt&gt;about:credits&lt;/tt&gt; above, but it would redirect to Netscape's active employee listing.  In addition, &lt;tt&gt;about:''username''&lt;/tt&gt;, where ''username'' is the username of a Netscape employee, would redirect to the Netscape homepage of the employee specified.  For example, &lt;tt&gt;about:jwz&lt;/tt&gt; would redirect to '''&lt;nowiki&gt;http://people.netscape.com/jwz/&lt;/nowiki&gt;''' (not an active link) [http://www.yikes.com/netscape/people.html] [http://www.jwz.org/gruntle/blowme.html].
+*Not all employee pages were accessible through this scheme.  Only developers who knew which file in the source tree and the encoding scheme used to obfuscate the directory of employee about entries could add their names.{{citation needed|date=March 2010}}
+*Many other about: easter eggs existed, including the famous about:mozilla, and other less known ones that showed pictures of the Netscape mascot Mozilla in various foreign garb, such as ''about:deutsch'' showing Mozilla in Lederhosen.&lt;ref name=&quot;benoit&quot;&gt;[http://www.rigaut.com/benoit/CERN/about/ The hidden features of Netscape Navigator ouuups Mozilla !]&lt;/ref&gt;
+*Some versions of Netscape would display the browser history for the &lt;tt&gt;about:global&lt;/tt&gt; address&lt;ref name=&quot;benoit&quot; /&gt;
+
+==Internet Explorer for Mac OS 5 (historic)==
+In the [[Internet Explorer for Mac]] 5 was an offline [[Easter egg (media)|Easter egg]], accessible by typing 'about:[[tasman (layout engine)|tasman]]', showing the [[Acid1]] test with the text replaced by the names of the developers.&lt;ref&gt;{{citation|url=http://www.eeggs.com/items/14448.html|title=Internet Explorer Easter Egg - IE5 Mac Team|publisher=The Easter Egg Archive |date=2000-06-19}}&lt;/ref&gt;&lt;!--Can somebody provide a screenshot of that and publish it also in the Acid1 article?--&gt;
+
+==Safari==
+Any &lt;code&gt;about&lt;/code&gt; URI is accepted, but only a page with a blank source is returned, as with the &lt;code&gt;about:blank&lt;/code&gt; of other browsers.
+
+==Microsoft Outlook==
+In [[Microsoft Outlook]], an additional &lt;code&gt;[[Outlook URI Scheme|outlook:today]]&lt;/code&gt; URI was added, which showed the Outlook Today Screen (it shows messages, tasks and appointments and is also accessible from IE). Also, although about:blank is supported, anything else (including about:about) typed after about: would show that text as a web page in the browser.
+
+==External links==
+*[http://tools.ietf.org/html/draft-holsten-about-uri-scheme IETF draft specification for the about: URI scheme]
+*[http://kb.mozillazine.org/About_protocol_links About protocol links] in Mozilla and Mozilla Firefox.
+*[http://lxr.mozilla.org/seamonkey/source/docshell/build/nsDocShellModule.cpp#138 about redirectors' source code] in Firefox
+
+==Notes and References==
+# {{note|abouturischeme}} [http://tools.ietf.org/html/draft-holsten-about-uri-scheme The 'about' URI scheme (IETF draft)]
+# {{note|aboutblank}} The term &quot;about:blank&quot; is also the generic name for a group of variants of the [[CoolWebSearch]] [[malware]] program group.
+&lt;references /&gt;
+
+{{URI scheme}}
+
+[[Category:Web browsers]]
+[[Category:Mozilla]]
+[[Category:URI schemes]]
+
+[[es:About:]]
+[[fr:About:]]
+[[pl:About:]]
+[[ru:About: URI]]</rev></revisions></page></pages></query></api>

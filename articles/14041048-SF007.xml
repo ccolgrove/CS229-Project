@@ -1,0 +1,292 @@
+<?xml version="1.0"?><api><query><pages><page pageid="14041048" ns="0" title="Microsoft Open Specification Promise"><revisions><rev xml:space="preserve">The '''Microsoft Open Specification Promise''' (or '''OSP'''), is a [[promise]] by [[Microsoft]], published in September 2006, to not assert legal rights over certain Microsoft patents on implementations of an included list of technologies.&lt;ref name=&quot;osp&quot;&gt;{{cite web 
+| url=http://www.microsoft.com/interop/osp/
+| title=Microsoft Open Specification Promise
+| accessdate=2007-11-02
+}}&lt;/ref&gt;
+
+The OSP is an example of free [[Fair, Reasonable and Non Discriminatory terms]] for patents, also known as a Covenant Not to Sue.
+
+The OSP licensing covers any use and any implementations of an appended list of covered specifications. It is limited for implementations to the extent that they conform to those specifications. This allows for conformance to be partial and does not require the conformance to be perfect.&lt;ref&gt;{{cite web
+| url=http://port25.technet.com/archive/2008/07/25/osp.aspx
+| title=The OSP and You
+| author=Richard Wilder (Associate General Counsel for Intellectual Property Policy at Microsoft)
+| date=2008-07-25
+| publisher=Port 25 (Microsoft's open source portal)
+| accessdate=2008-07-25}}&lt;/ref&gt;
+
+==Compatibility with open source licensing==
+The OSP is effectively a [[patent]] sublicense to everyone limited to use with certain formats and required technology to implement OSP licensed formats.
+
+Open source licenses, in general, deal with licensing of [[copyright]]s of contributors to the software. [[GPLv2]] is an example of such copyright licensing. GPLv2 does not grant you 3rd party (patent) rights.
+
+The open source software (OSS) licensing deals with copyrights on the [[source code]] created by the contributors. Source code based on an OSP licenced format specification has its own copyrights and is therefore sublicensable by the contributors themselves. The OSP is only about patent rights. It grants additional rights to implementers and users to the OSS licensing.
+
+Because Microsoft through the OSP grants patent rights to anybody that implements or uses technology required for OOXML there is no need for sublicensing of patent rights through the GPL. OSS users and implementers get the same rights automatically.
+
+An OSS implementer that uses GPL software which implements an OSP licensed format, is granted certain copyrights on the software through his GPL license, which are granted by the prior software contributors. In addition to that he is allowed to use Microsoft patents for required format related technology through the OSP license.
+
+Several standards and OSS licensing experts have expressed support of the OSP in 2006.  An article in Cover Pages quotes [[Lawrence Rosen]], an attorney and lecturer at Stanford Law School, as saying, 
+
+&lt;blockquote&gt;&quot;I'm pleased that this OSP is compatible with free and open source licenses.&quot;&lt;ref&gt;{{cite web
+| url=http://xml.coverpages.org/ni2006-09-12-a.html
+| title=Microsoft's Open Specification Promise Eases Web Services Patent Concerns.
+| date=2006-09-12
+| publisher=xml.coverpages.org}}&lt;/ref&gt;&lt;/blockquote&gt;
+
+In 2006 [[Mark Webbink]]; a lawyer and member of the board of the Software Freedom Law Center, and former employee of Linux vendor [[Red Hat]]; said,
+
+&lt;blockquote&gt;&quot;Red Hat believes that the text of the OSP gives sufficient flexibility to implement the listed specifications in software licensed under free and open source licenses. We commend Microsoftâs efforts to reach out to representatives from the open source community and solicit their feedback on this text, and Microsoft's willingness to make modifications in response to our comments.&quot;&lt;ref&gt;{{cite web
+|url=http://www.microsoft.com/interop/osp/default.mspx#EOHAC
+|title=Microsoft Open Specification Promise}}&lt;/ref&gt;&lt;ref&gt;{{cite web
+|url=http://www.computerbuyer.co.uk/buyer/news/93789/microsoft-promises-to-hang-patent-fire-over-web-services.html
+|title=Microsoft promises to hang patent fire over web services
+|date=2006-09-12}}&lt;/ref&gt;&lt;/blockquote&gt;
+
+Standards lawyer Andy Updegrove said in 2006 the Open Specification Promise was
+
+&lt;blockquote&gt;&quot;what I consider to be a highly desirable tool for facilitating the implementation of open standards, in particular where those standards are of interest to the open source community.&quot;&lt;ref&gt;{{cite web
+| url=http://www.devsource.com/c/a/Architecture/Microsoft-Promises-Not-to-Sue-over-Web-Services-Specs/
+| title=Microsoft Promises Not to Sue over Web Services Specs
+| author=Peter Galli
+| date=2006-09-12}}&lt;/ref&gt;&lt;/blockquote&gt;
+
+===Scope limitation===
+The [[Software Freedom Law Center]], which provides services to protect and advance free software and open source software, has warned of problems with the Open Specification Promise for use in [[free software| free software / open source software]] projects. In a published analysis of the promise it states that&lt;ref&gt;{{cite web
+| url=http://www.softwarefreedom.org/news/2008/mar/12/osp-gpl/
+| title=Software Freedom Law Center Publishes Analysis of Microsoft's Open Specification Promise
+| publisher=[[Software Freedom Law Center]]
+| date=March 12, 2008}}&lt;/ref&gt;
+:&quot;...it permits implementation under free software licenses so long as the resulting code isn't used freely.&quot;&lt;ref name=&quot;SFLC report&quot;&gt;{{cite web |title=Microsoft's Open Specification Promise: No Assurance for GPL |url=http://www.softwarefreedom.org/resources/2008/osp-gpl.html |date=2008-03-12
+|publisher=Software Freedom Law Center |accessdate=2008-03-30}}&lt;/ref&gt;
+
+On March 12, 2008 the [[Software Freedom Law Center]] warned over a possible inconsistency with GPL&lt;ref name=&quot;SFLC report&quot;/&gt; and in specific the limited scope of the OSP. This applies specifically to the patent promise scope being limited to conforming implementations of covered specifications only.
+
+Effectively when an implementer owns a patent and builds that patent technology in GPL3 licensed code, the implementer grants those first party rights patent rights downline to all re-users of that code.&lt;ref&gt;{{cite web |title=GNU General Public License (Version 3, 29 June 2007) |url=http://www.fsf.org/licensing/licenses/gpl.html |publisher=Free Software Foundation |date=2008-02-12}} See section 11 for patents.&lt;/ref&gt; If you use third party OSP protected patents in GPL3 code, you cannot sublicense those, and the OSP scope is limited to required (normative) parts of the covered specification. This means that when the code is reused, the OSP only applies as long as the reuse of that code is limited to implementing the covered specifications. If the OSP was not limited in that way, you could implement all patented technology in a GPL3 code implementation after which the code patented technology could be reused freely for all other possible implementations. The limitations of a one-sided patent promise only applying to covered specifications is also present in the IBM [http://www-03.ibm.com/linux/ossstds/isplist.html Interoperability Specifications Pledge] (ISP) and Sun Microsystems' [http://www.oasis-open.org/committees/office/ipr.php OpenDocument Patent Statement].
+
+This means, for example, that use of the required Sun patented StarOffice-related technology for OpenDocument should be protected by the Sun Covenant, but reuse of the code with the patented technology for non-OpenDocument implementations is no longer protected by the related Sun covenant.
+
+The OSP similarly can be used to freely implement any of the covered specifications in OSS but its scope is limited to the covered specifications and cannot be used to transfer Microsoft patent rights to other implementations of non covered specifications for instance by using the technology in code that has a patent transferring software license.
+
+For this reason the SFLC has stated:
+&lt;blockquote&gt;&quot;The OSP cannot be relied upon by GPL developers for their implementations not because its provisions conflict with GPL, but because it does not provide the freedom that the GPL requires.&quot;&lt;ref name=&quot;SFLC report&quot;/&gt;&lt;/blockquote&gt;
+
+The SFLC specifically point out:
+* new versions of listed specifications could be issued at any time by Microsoft, and be excluded from the OSP.
+* any code resulting from an implementation of one of the covered specifications could not safely be used outside the very limited field of use defined by Microsoft in the OSP.&lt;ref name=&quot;SFLC report&quot;/&gt;
+
+The Microsoft OSP itself mentions the GPL in two of its FAQs. In one it says,
+&lt;blockquote&gt;&quot;we canât give anyone a legal opinion about how our language relates to the GPL or other OSS licenses&quot;&lt;/blockquote&gt;
+
+In another, it specifically only mentions the &quot;developers, distributors, and users of Covered Implementations&quot;, so excluding downstream developers, distributors, and users of code later derived from these &quot;Covered Implementations&quot;&lt;ref name=&quot;SFLC report&quot;/&gt; and it specifically does not mention which version of the GPL is addressed, leading some commentators to conclude that the current GPL 3 may be excluded.&lt;ref&gt;{{cite web
+|url=http://farstarnet.com/jfbilodeau/labels/fud.html
+|quote=Use the GNU GPL 3: Most free software is released under the GNU GPL 2 or 3, which is incompatible with Microsoft's OSP (Open Specification Promise) and the Ms-PL (Microsoft Public License). This is not an accident. Microsoft does not want software written using their technology to spread to other platform. Again, it's vendor lock-in. If Microsoft truly wanted to work with the Open Source community, they should abandon the OSP and the Ms-PL for the GPL, or another OSI certified license.
+|last=Bilodeau
+|first=J-F
+|date=March 19, 2008
+|title=Three Things Microsoft Should Do
+|accessdate=2009-09-16
+}} {{Dead link|date=October 2010|bot=H3llBot}}&lt;/ref&gt;
+&lt;blockquote&gt;Q: I am a developer/distributor/user of software that is licensed under the GPL, does the Open Specification Promise apply to me?&lt;br&gt;A: Absolutely, yes. The OSP applies to developers, distributors, and users of Covered Implementations without regard to the development model that created such implementations, or the type of copyright licenses under which they are distributed, or the business model of distributors/implementers. The OSP provides the assurance that Microsoft will not assert its Necessary Claims against anyone who make, use, sell, offer for sale, import, or distribute any Covered Implementation under any type of development or distribution model, including the GPL.&lt;ref&gt;[http://www.microsoft.com/interop/osp/default.mspx#ELPAC Microsoft Open Specification Promise - Frequently Asked Questions]&lt;/ref&gt;&lt;/blockquote&gt;
+
+==Licensed technologies==
+Technologies on which the Open Specification Promise applies are:&lt;ref name=&quot;osp&quot; /&gt;&lt;ref&gt;[http://www.microsoft.com/interop/docs/officebinaryformats.mspx Microsoft Office Binary (doc, xls, ppt) File Formats]&lt;/ref&gt;
+
+===Web Services===
+{{col-begin}}
+{{col-2}}
+*[[Devices Profile for Web Services]] (DPWS)
+*[[Identity Selector]] Interoperability Profile v1.0
+*Identity Selector Interoperability Profile v1.5
+*[[Remote Shell Web Services Protocol]]
+*[[SOAP (protocol)|SOAP]]
+*SOAP 1.1 Binding for [[MTOM]] 1.0
+*SOAP MTOM / [[XML-binary Optimized Packaging|XOP]]
+*[[SOAP-over-UDP]]
+*[[Web Single Sign-On Interoperability Profile]]
+*[[Web Single Sign-On Metadata Exchange Protocol]]
+*[[WS-Addressing]]
+*WS-Addressing End Point References and Identity
+*[[WS-Atomic Transaction|WS-AtomicTransaction]]
+*[[WS-BusinessActivity]]
+*[[WS-Coordination]]
+*[[Web Services Dynamic Discovery|WS-Discovery]]
+*[[Web Services Description Language|WSDL]]
+*WSDL 1.1 Binding Extension for SOAP 1.2
+*[[WS-Enumeration]]
+*[[WS-Eventing]]
+*[[WS-Federation]]
+{{col-2}}
+*[[WS-Federation Active Requestor Profile]]
+*[[WS-Federation Passive Requestor Profile]]
+*[[WS-I Basic Profile]]
+*[[WS-Management]]
+*[[WS-Management Catalog]]
+*[[WS-MetadataExchange]]
+*[[WS-Policy]]
+*[[WS-PolicyAttachment]]
+*[[WS-ReliableMessaging]]
+*[[WS-RM Policy]]
+*[[WS-SecureConversation]]
+*[[WS-Security]]: [[Web Services Security Kerberos Binding|Kerberos Binding]]
+*WS-Security: [[Kerberos Token Profile]]
+*WS-Security: [[Rights Expression Language]] (REL) Token Profile
+*WS-Security: [[Security Assertion Markup Language|SAML]] Token profile
+*WS-Security: [[SOAP Message Security]]
+*WS-Security: [[UsernameToken Profile]]
+*WS-Security: [[X.509]] Certificate Token Profile
+*[[WS-SecurityPolicy]]
+*[[WS-Transfer]]
+*[[WS-Trust]]
+{{col-end}}
+
+===Web===
+*OpenService Format Specification (a.o. [[Internet Explorer 8#Accelerators|Accelerator]])
+*[[Web Slice]] Format Specification introduced with [[Internet Explorer 8]]
+*XML Search Suggestions Format Specification
+
+===Virtualization Specifications===
+*[[VHD (file format)|Virtual Hard Disk]] (VHD) Image Format Specification
+*[[Microsoft Application Virtualization]] File Format Specification v1
+*[[Hyper-V]] Functional Specification&lt;ref&gt;[http://www.microsoft.com/downloads/details.aspx?FamilyID=91e2e518-c62c-4ff2-8e50-3a37ea4100f5&amp;displaylang=en Hypervisor Functional Specification]&lt;/ref&gt;
+
+===Security===
+*RFC 4406 â [[Sender ID]]: Authenticating E-Mail
+*RFC 4408 â [[Sender Policy Framework]]: Authorizing Use of Domains in âMail Fromâ
+*RFC 4407 â Purported Responsible Address in E-Mail Messages
+*RFC 4405 â SMTP Service Extension for Indicating the Responsible Submitter of an E-Mail Message
+*[[U-Prove]] Cryptographic Specification V1.0
+*U-Prove Technology Integration into the Identity Metasystem V1.0
+
+===Office file formats===
+====XML file formats====
+*[[Microsoft Office XML formats|Office 2003 XML Reference Schemas]]
+*[[Office Open XML]] 1.0 â Ecma-376
+*Office Open XML ISO/IEC 29500:2008
+*OpenDocument Format for Office Applications v1.0 OASIS
+*OpenDocument Format for Office Applications v1.0 ISO/IEC 26300:2006
+*OpenDocument Format for Office Applications v1.1 OASIS
+
+====Binary file formats====
+*Word 97-2007 Binary File Format ([[DOC (computing)|.doc]]) Specification
+*PowerPoint 97-2007 Binary File Format ([[Microsoft PowerPoint#File formats|.ppt]]) Specification
+*Excel 97-2007 Binary File Format ([[Microsoft Excel#File formats|.xls]]) Specification
+*Excel 2007 Binary File Format ([[Microsoft Excel#File formats|.xlsb]]) Specification
+*Office Drawing 97-2007 Binary Format Specification
+
+=====Structure specifications=====
+*[MS-DOC]: Word Binary File Format (.doc) Structure Specification
+*[MS-PPT]: PowerPoint Binary File Format (.ppt) Structure Specification
+*[MS-XLS]: Excel Binary File Format (.xls) Structure Specification
+*[MS-XLSB]: Excel Binary File Format (.xlsb) Structure Specification
+*[MS-ODRAW]: Office Drawing Binary File Format Structure Specification
+*[MS-CTDOC]: Word Custom Toolbar Binary File Format Structure Specification
+*[MS-CTXLS]: Excel Custom Toolbar Binary File Format Structure Specification
+*[MS-OFORMS]: Office Forms Binary File Format Structure Specification
+*[MS-OGRAPH]: Office Graph Binary File Format Structure Specification
+*[MS-OSHARED]: Office Common Data Types and Objects Structure Specification
+*[MS-OVBA]: [[Visual Basic for Applications|Office VBA File Format]] Structure Specification
+*[MS-OFFCRYPTO]: Office Document Cryptography Structure Specification
+
+===Windows compound formats===
+*Windows Compound Binary File Format Specification
+
+===Graphics formats===
+*[[Windows Metafile]] Format (.wmf) Specification
+*[[Ink Serialized Format]] (ISF) Specification
+
+===Microsoft computer languages===
+*[MS-XAML]: [[Extensible Application Markup Language|XAML]] Object Mapping Specification 2006 (Draft v0.1)
+*[MS-XAML]: XAML Object Mapping Specification 2006 (v1.0)
+*[MS-WPFXV]: [[Windows Presentation Foundation|WPF]] XAML Vocabulary Specification 2006 (Draft v0.1)
+*[MS-WPFXV]: WPF XAML Vocabulary Specification 2006 (v1.0)
+*[MS-SLXV]: [[Microsoft Silverlight|Silverlight]] XAML Vocabulary Specification 2008 (Draft v0.9)
+
+===Robotics===
+*Decentralized Software Services Protocol â [[Decentralized Software Services|DSSP]]/1.0
+
+===Synchronization===
+*[[FeedSync]] v1.0, v1.0.1
+
+===Windows Rally Technologies===
+*[[Windows Rally|Windows Connect Now]]â [[USB flash drive|UFD]] and Windows Vista 
+*Windows Connect Now â UFD for Windows XP
+
+===Published protocols===
+The Open Specification Promise applies to a long list of communication and internet protocols including:
+{{col-begin}}
+{{col-2}}
+* [[AppleTalk]]
+* [MC-BUP]: [[Background Intelligent Transfer Service]] (BITS) Upload Protocol Specification
+* [MC-CCFG]: [[Server Cluster]]: Configuration (ClusCfg) Protocol Specification
+* [MC-COMQC]: [[Component Object Model#COM+|Component Object Model Plus]] (COM+) Queued Components Protocol Specification
+* [MC-FPSEWM]: [[FrontPage Server Extensions]]: Website Management Specification
+* [MC-SMP]: Session Multiplex Protocol Specification
+* [MC-SQLR]: SQL Server Resolution Protocol Specification
+* [[Serial Bus Protocol 2|1394 Serial Bus Protocol 2]]
+* [[NetBEUI|IBM NetBIOS Extended User Interface (NetBEUI) v 3.0]]
+* [[IEC 61883|IEC 61883-1]]
+* [[IEEE 1284|IEEE 1284 â Interface - Parallel]]
+* [[IEEE 802.1X|IEEE 802.1x - 2004]]
+* [[Infrared Data Association|Infrared Data Association (IrDA) Published Standards]]
+* [[Preboot Execution Environment|Intel Preboot Execution Environment (PXE)]]
+* [[Internetwork Packet Exchange|Novell Internetwork Packet Exchange (IPX)]]
+* [[IPX/SPX|Novell Sequenced Packet Exchange (SPX)]]
+* [[Service Advertising Protocol|Novell Service Advertising Protocol (SAP)]]
+* RFC 1001 and RFC 1002 â [[NetBIOS over TCP/IP|NetBIOS over TCP (NETBT)]]
+* [[Serial Line Internet Protocol|RFC 1055 â Serial Line Internet Protocol (SLIP)]]
+* RFC 1058, RFC 1723, and RFC 2453 â [[Routing Information Protocol]] 1.0, 2.0 (RIP)
+* RFC 1112, RFC 2236, and RFC 3376 â [[Internet Group Management Protocol]] (IGMP) v1, v2, and v3
+* RFC 1155, RFC 1157, RFC 1213, RFC 1289, RFC 1901, RFC 1902, RFC 1903, RFC 1904, RFC 1905, RFC 1906, RFC 1907, and RFC 1908: [[Simple Network Management Protocol]] v2 (SNMP)
+* RFC 1179 â [[Line Printer Daemon protocol|Line Printer Daemon (LPD)]]
+* RFC 1191, RFC 1323, RFC 2018, and RFC 2581 â TCP/IP Extensions
+* RFC 1256 â [[Internet Control Message Protocol|ICMP Router Discovery Messages]]
+{{col-2}}
+* RFC 1258 and RFC 1282 â Remote LOGIN ([[rlogin]])
+* RFC 1332 and RFC 1877 â [[Internet Protocol Control Protocol]] (IPCP)
+* RFC 1334 â [[Password Authentication Protocol]] (PAP)
+* RFC 1393 â [[Traceroute]]
+* RFC 1436 â [[Internet Gopher]]
+* RFC 1483, RFC 1755, and RFC 2225 â Internet Protocol over Asynchronous Transfer Mode (IP over ATM)
+* RFC 1510 and RFC 1964 â [[Kerberos]] Network Authentication Service (v5)
+* RFC 1552 â PPP Internetwork Packet Exchange Control Protocol (IPXCP)
+* RFC 1661 â [[Point-to-Point Protocol]] (PPP)
+* RFC 1739 Section 2.2 â [[Packet Internet Groper]] (ping)
+* RFC 1889 and RFC 3550 â [[Real-time Transport Protocol|Real-Time Transport Protocol]] (RTP)
+* RFC 1939 and RFC 1734 â [[Post Office Protocol]], v3(POP3)
+* RFC 1962 â Compression Control Protocol (CCP)
+* RFC 1990 â Multilink Protocol (MP)
+* RFC 1994 â [[MD5]] [[Challenge-handshake authentication protocol|Challenge Handshake Authentication Protocol]] (MD5-CHAP)
+* RFC 2097 â [[NetBIOS]] Frames Control Protocol (NBFCP)
+* RFC 2118 â Microsoft Point-to-Point Compression (MPPC)
+* RFC 2125 â Bandwidth Allocation Protocol (BAP)
+* RFC 2131, RFC 2132, and RFC 3361 â [[Dynamic Host Configuration Protocol]] (DHCP)
+* RFC 2205, RFC 2209, and RFC 2210 â Resource Reservation Setup (RSVP)
+* RFC 2222 â [[Simple Authentication and Security Layer]] (SASL)
+* RFC 2225 â [[Asynchronous Transfer Mode]]
+* [[SunRPC|Sun Microsystems Remote Procedure Call (SunRPC)]]
+* [[T.120]]
+* [[Tabular Data Stream]] (TDS) v7.1, 7.2, 7.3 
+* [[Universal Plug and Play]] (UPnP)
+* [[Universal Serial Bus]] (USB) Revision 2.0
+{{col-end}}
+
+==See also==
+*[[Microsoft]]
+*[[List of patent legal concepts]]
+
+==References==
+{{reflist|2}}
+
+==External links==
+*[http://www.microsoft.com/interop/osp/ Microsoft Open Specification Promise] â Microsoft page describing the OSP and listing the specifications covered by it.
+*[http://www.consortiuminfo.org/standardsblog/article.php?story=20060912140103877 Analysis of OSP] by standards lawyer Andy Updegrove
+*[http://www.softwarefreedom.org/resources/2008/osp-gpl.html Analysis of OSP] by [[Software Freedom Law Center]].  [http://blogs.technet.com/gray_knowlton/archive/2008/03/13/a-disappointing-surprise-from-the-sflc.aspx Rebuttal] by Gray Knowlton, group product manager for Microsoft Office.
+*[http://msdn.microsoft.com/en-us/library/cc203350.aspx MSDN Library: Open Specifications] â Documentation for the covered specifications.
+
+{{FOSS}}
+
+[[Category:Microsoft initiatives]]
+[[Category:Patent law]]
+
+[[de:Microsoft Open Specification Promise]]
+[[pt:Microsoft Open Specification Promise]]</rev></revisions></page></pages></query></api>

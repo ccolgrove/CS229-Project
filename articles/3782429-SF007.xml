@@ -1,0 +1,29 @@
+<?xml version="1.0"?><api><query><pages><page pageid="3782429" ns="0" title="Multi categories security"><revisions><rev xml:space="preserve">{{Unreferenced|date=October 2007}}
+{{Portal box|Computer security|Linux}}
+'''Multi Categories Security''' ('''MCS''') is an [[access control]] method in [[Security-Enhanced Linux]] that uses categories attached to objects (files) and granted to subjects (processes, â¦) at the operating system level. The current implementation in [[Fedora (operating system)|Fedora Core]] 5 is advisory because there is nothing stopping a process from increasing its access.  The eventual aim is to make MCS a hierarchical [[mandatory access control]] system.  Currently, MCS controls access to files and to ''ptrace'' or ''kill'' processes. It has not yet decided what level of control it should have over access to directories and other file system objects.  It is still evolving. {{Citation needed|date=October 2007}}
+
+MCS access controls are applied after the Domain-Type access controls and after regular DAC (Unix permissions).  In the default policy, it is possible to manage up to 256 categories (c0 to c255).  It is possible to recompile the policy with a much larger number of categories if required.
+
+As part of the [[Multi-Level Security]] (MLS) development work applications such as the CUPs print server will understand the MLS sensitivity labels, CUPs will use them to control printing and to label the printed pages according to their sensitivity level.  The MCS data is stored and manipulated in the same way as MLS data, therefore any program which is modified for MCS support will also be expected to support MLS.  This will increase the number of applications supporting MLS and therefore make it easier to run MLS (which is one of the reasons for developing MCS).
+
+Note that MCS is not a sub-set of MLS, the [[BellâLaPadula model]] is not applied.  If a process has a clearance that dominates the classification of a file then it gets both read and write access.  For example in a commercial environment you might use categories to map to data from different departments.  So you could have '''c0''' for HR data and '''c1''' for Financial data.  If a user is running with categories '''c0''' and '''c1''' then they can read HR data and write it to a file labeled for Financial data.  In a corporate environment this is usually regarded as acceptable, if a user is trusted with both HR and Financial access then their integrity and skills are trusted to ensure that the data is not mistakenly released to the wrong file.  For secret military data this is regarded as unacceptable and the [[BellâLaPadula model]] prevents such accidental or malicious relabeling of data.
+
+==Tips==
+For FC5 linux with SELinux
+
+COMMAND&lt;br /&gt;
+semanage translation -l gives:
+&lt;pre&gt;
+Level                     Translation
+s0
+s0-s0:c0.c255             SystemLow-SystemHigh
+s0:c0.c255                SystemHigh
+&lt;/pre&gt;
+
+COMMAND&lt;br /&gt;
+e.g., â&lt;code&gt;ls âZ MyFile&lt;/code&gt;â gives:
+&lt;pre&gt;
+-rw-r--r--  me     me     user_u:object_r:tmp_t:SystemHigh MyFile
+&lt;/pre&gt;
+
+[[Category:Linux security software]]</rev></revisions></page></pages></query></api>

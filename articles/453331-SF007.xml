@@ -1,0 +1,107 @@
+<?xml version="1.0"?><api><query><pages><page pageid="453331" ns="0" title="Apache Struts"><revisions><rev xml:space="preserve">{{Redirect|Struts||Strut (disambiguation)}}
+{{More footnotes|date=April 2009}}
+{{ Infobox Software
+| name                   = Apache Struts
+| logo                   = [[Image:Struts logo.gif|150px|Apache Struts Logo]]
+| developer              = [[Apache Software Foundation]] 
+| latest release version = 2.2.3.1
+| latest release date    = {{release date|2011|09|07}}
+| operating system       = [[Cross-platform]]
+| programming language   = [[Java (programming language)|Java]]
+| genre                  = [[Web application framework]]
+| license                = [[Apache License]] 2.0
+| website                = http://struts.apache.org/
+}}
+
+'''Apache Struts''' is an [[open-source]] [[web application framework]] for developing [[Java EE]] [[web application]]s. It uses and extends the [[Java Servlet]] [[application programming interface|API]] to encourage developers to adopt a [[model-view-controller]] (MVC) architecture. It was originally created by [[Craig McClanahan]] and donated to the [[Apache Foundation]] in May, 2000. Formerly located under the Apache [[Jakarta Project]] and known as '''Jakarta Struts''', it became a top-level Apache project in 2005.
+
+==Design goals and overview==
+In a standard [[Java Platform, Enterprise Edition|Java EE]] web application, the client will typically submit information to the server via a [[form (web)|web form]]. The information is then either handed over to a [[Java Servlet]] that processes it, interacts with a database and produces an [[HyperText Markup Language|HTML]]-formatted response, or it is given to a [[JavaServer Pages]] (JSP) document that intermingles HTML and Java code to achieve the same result. 
+Both approaches are often considered inadequate for large projects because they mix application logic with presentation and make maintenance difficult.
+
+The goal of Struts is to separate the ''model'' (application logic that interacts with a database) from the ''view'' (HTML pages presented to the client) and the ''controller'' (instance that passes information between view and model). Struts provides the controller (a servlet known as &lt;code&gt;ActionServlet&lt;/code&gt;) and facilitates the writing of templates for the view or presentation layer (typically in JSP, but [[eXtensible Markup Language|XML]]/[[extensible Stylesheet Language Transformations|XSLT]] and [[Jakarta Velocity|Velocity]] are also supported). The web application programmer is responsible for writing the model code, and for creating a central configuration file &lt;code&gt;struts-config.xml&lt;/code&gt; that binds together model, view and controller.
+
+Requests from the client are sent to the controller in the form of &quot;Actions&quot; defined in the configuration file; if the controller receives such a request it calls the corresponding Action class that interacts with the application-specific model code. The model code returns an &quot;ActionForward&quot;, a string telling the controller what output page to send to the client. Information is passed between model and view in the form of special [[JavaBeans]]. A powerful custom tag library allows it to read and write the content of these beans from the presentation layer without the need for any embedded Java code.
+
+Struts is categorized as a request-based web application framework.&lt;ref&gt;{{cite web|first = Tony|last = Shan|year = 2006|accessdate = 2010-10-10|url = http://portal.acm.org/citation.cfm?id=1190953|title = Taxonomy of Java Web Application Frameworks|publisher = Proceedings of 2006 IEEE International Conference on e-Business Engineering (ICEBE 2006)}}&lt;/ref&gt; 
+
+Struts also supports [[Internationalization and localization|internationalization]] by web forms, and includes a template mechanism called &quot;Tiles&quot; that (for instance) allows the presentation layer to be composed from independent header, footer, and content components.
+
+== Struts2 features ==
+
+* Simple [[POJO]] based Actions
+* Simplified testability
+* Thread Safe
+* [[AJAX]] Support
+:* jQuery Plugin
+:* Dojo Plugin (deprecated)
+:* AJAX Client Side Validation
+* Template Support
+* Support for different result types
+* Easy to extend with Plugins
+:* [[REST]] Plugin (REST based Actions, Extension-less URLs)
+:* Convention Plugin (Action Configuration via Conventions and Annotations)
+:* Spring Plugin ([[Dependency Injection]])
+:* Hibernate Plugin
+:* JFreechart Plugin (Charts)
+:* jQuery Plugin (AJAX Support, UI Widgets, Dynamic Table, Charts)
+:* Rome Plugin (RSS Feeds)
+
+== Competing MVC frameworks ==
+Although Struts is a well-documented, mature, and popular framework for building front ends to Java applications, there are other frameworks categorized as &quot;lightweight&quot; [[Model-view-controller|MVC]] frameworks such as [[Spring Framework (Java)|Spring MVC]], [[Stripes (framework)|Stripes]], [[Apache Wicket|Wicket]], [[Play Framework|Play!]], and [[Tapestry (programming)|Tapestry]]. The new [[XForms]] standards and frameworks may also be another option to building complex web Form validations with Struts in the future.
+
+The [[WebWork]] framework spun off from Apache Struts aiming to offer enhancements and refinements while retaining the same general architecture of the original Struts framework. However, it was announced in December 2005 that Struts would re-merge with [[WebWork]]. WebWork 2.2 has been adopted as Apache Struts2, which reached its first full release in February 2007.
+
+In 2004, Sun launched an addition to the Java platform, called [[JavaServer Faces]] (JSF). Aside from the original Struts framework, the Apache project previously offered a JSF-based framework called [[Shale Framework (software)|Shale]], which was retired in May 2009.&lt;ref&gt;http://shale.apache.org/&lt;/ref&gt;
+
+Other MVC frameworks that are Java based include [[WebObjects]] and [[Grails (framework)|Grails]].
+
+==See also==
+* [[Model-view-controller]]
+* [[Jakarta Project]]
+* [[Java Platform, Enterprise Edition|Java EE]]
+* [[JavaServer Faces]]
+* [[Stripes (framework)|Stripes]]
+* [[Comparison of web application frameworks]]
+* [[ZK Framework]]
+
+==References==
+{{Reflist}}
+
+==Bibliography==
+{{Refbegin}}
+* [[James Holmes (programmer)|James Holmes]]: &lt;cite&gt;Struts: The Complete Reference&lt;/cite&gt;, McGraw-Hill Osborne Media, ISBN 0-07-223131-9
+* Bill Dudney and Jonathan Lehr: &lt;cite&gt;Jakarta Pitfalls&lt;/cite&gt;, Wiley, ISBN 978-0-471-44915-7
+* [[Bill Siggelkow]]: &lt;cite&gt;Jakarta Struts Cookbook&lt;/cite&gt;, O'Reilly, ISBN 0-596-00771-X
+* [[James Goodwill]], [[Richard Hightower]]: &lt;cite&gt;Professional Jakarta Struts&lt;/cite&gt;, [[Wrox Press]], ISBN 0-7645-4437-3
+* John Carnell and [[Rob Harrop]]: &lt;cite&gt;Pro Jakarta Struts, Second Edition&lt;/cite&gt;, Apress, ISBN 1-59059-228-X
+* John Carnell, [[Jeff Linwood]] and [[Maciej Zawadzki]]: &lt;cite&gt;Professional Struts Applications: Building Web Sites with Struts, ObjectRelationalBridge, Lucene, and Velocity&lt;/cite&gt;, Apress, ISBN 1-59059-255-7
+* [[Ted Husted]], etc.: &lt;cite&gt;Struts in Action&lt;/cite&gt;, Manning Publications Company, ISBN 1-930110-50-2
+* [http://www.softwaresummit.com/2003/speakers/AshleyStrutsView.pdf Struts View Assembly and Validation], (PDF format).
+* Stephan Wiesner: &lt;cite&gt;Learning Jakarta Struts 1.2&lt;/cite&gt;, Packt Publishing, 2005 ISBN 1-904811-54-X
+{{Refend}}
+
+ platform|Struts]]
+[[Category:Web application frameworks|Struts]]
+
+&lt;!-- Interwikis --&gt;
+[[ar:Ø£Ø¨Ø§ØªØ´Ù Ø³ØªØ±ØªØ³]]
+[[ca:Apache Struts]]
+[[cs:Struts]]
+[[de:Struts]]
+[[es:Apache Struts]]
+[[fr:Apache Struts]]
+[[ko:ìíì¹ ì¤í¸ë¿ì¸ ]]
+[[it:Apache Struts]]
+[[ms:Apache Struts]]
+[[nl:Jakarta Struts]]
+[[ja:Apache Struts]]
+[[pl:Struts]]
+[[pt:Apache Struts]]
+[[ru:Apache Struts]]
+[[sv:Apache Struts]]
+[[ta:à®à®ªà¯à®ªà®¾à®à¯à®à®¿ à®à®à¯à®à¯à®°à®à¯à®à¯]]
+[[te:à°¸à±à°à±à°°à°à±à°¸à±]]
+[[uk:Apache Struts]]
+[[vi:Struts]]
+[[zh:Struts]]</rev></revisions></page></pages></query></api>

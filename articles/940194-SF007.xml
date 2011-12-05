@@ -1,0 +1,267 @@
+<?xml version="1.0"?><api><query><pages><page pageid="940194" ns="0" title="GNU Core Utilities"><revisions><rev xml:space="preserve">{{refimprove|date=June 2011}}
+{{Infobox software
+| name                 = GNU Core Utilities
+| logo                 =
+| screenshot           =
+| caption              =
+| developer            = [[GNU Project]]
+| frequently updated   = yes
+| operating system     = [[Unix-like]]
+| programming language = [[C (programming language)|C]]
+| genre                = Miscellaneous Utilities
+| license              = [[GNU General Public License|GNU GPL]]
+| website              = http://www.gnu.org/software/coreutils/
+}}
+
+The '''GNU Core Utilities''' or '''coreutils''' is a [[Software package (installation)|package]] of [[GNU]] [[software]] containing many of the basic tools, such as [[cat (Unix)|cat]], [[ls]], and [[rm (Unix)|rm]], needed for [[Unix-like]] [[operating system]]s. It is a combination of a number of earlier packages, including '''textutils''', '''shellutils''', and '''fileutils''', along with some other miscellaneous utilities.
+
+==GNU coreutils capabilities==
+The GNU core utilities support [[Command-line argument|long options]] as [[Command line interface|parameters]] to the commands, as well as (unless the &lt;tt&gt;POSIXLY_CORRECT&lt;/tt&gt; environment variable is set) the relaxed convention allowing options even after the regular arguments. Note that this environment variable enables a different functionality in BSD.
+
+==Programs included in coreutils==
+{| class=&quot;wikitable&quot;
+|+ The list spans the programs from coreutils 7.0.
+|-
+! colspan=&quot;2&quot; | File Utilities
+|-
+| &lt;code&gt;[[chcon]]&lt;/code&gt; || Change file security context ([[SELinux]])
+|-
+| &lt;code&gt;[[chgrp]]&lt;/code&gt; || Changes file group ownership
+|-
+| &lt;code&gt;[[chown]]&lt;/code&gt; || Changes file ownership
+|-
+| &lt;code&gt;[[chmod]]&lt;/code&gt; || Changes the permissions of a file or directory
+|-
+| &lt;code&gt;[[cp (Unix)|cp]]&lt;/code&gt; || Copies a file or directory
+|-
+| &lt;code&gt;[[dd (Unix)|dd]]&lt;/code&gt; || Copies and converts a file
+|-
+| &lt;code&gt;[[df (Unix)|df]]&lt;/code&gt; || Shows disk free space on filesystems
+|-
+| &lt;code&gt;[[ls|dir]]&lt;/code&gt; || Is exactly like &quot;&lt;code&gt;ls -C -b&lt;/code&gt;&quot;. (Files are by default listed in columns and sorted vertically.)
+|-
+| &lt;code&gt;[[dircolors (Unix)|dircolors]]&lt;/code&gt; || Setup color for &lt;code&gt;ls&lt;/code&gt;
+|-
+| &lt;code&gt;[[install (Unix)|install]]&lt;/code&gt; || Copies files and set attributes
+|-
+| &lt;code&gt;[[ln (Unix)|ln]]&lt;/code&gt; || Creates a link to a file
+|-
+| &lt;code&gt;[[ls]]&lt;/code&gt; || Lists the files in a directory
+|-
+| &lt;code&gt;[[mkdir]]&lt;/code&gt; || Creates a directory
+|-
+| &lt;code&gt;[[mkfifo]]&lt;/code&gt; || Makes [[named pipe]]s (FIFOs)
+|-
+| &lt;code&gt;[[mknod]]&lt;/code&gt; || Makes [[device node|block or character special files]]
+|-
+| &lt;code&gt;[[mktemp]]&lt;/code&gt; || Create a [[temporary file]] or directory
+|-
+| &lt;code&gt;[[mv]]&lt;/code&gt; || Moves files or rename files
+|-
+| &lt;code&gt;[[rm (Unix)|rm]]&lt;/code&gt; || Removes (deletes) files
+|-
+| &lt;code&gt;[[rmdir]]&lt;/code&gt; || Removes empty directories
+|-
+| &lt;code&gt;[[shred (Unix)|shred]]&lt;/code&gt; || Overwrites a file to hide its contents, and optionally delete it
+|-
+| &lt;code&gt;[[sync (Unix)|sync]]&lt;/code&gt; || Flushes file system buffers
+|-
+| &lt;code&gt;[[touch (Unix)|touch]]&lt;/code&gt; || Changes file timestamps
+|-
+| &lt;code&gt;[[truncate]]&lt;/code&gt; || Shrink or extend the size of a file to the specifed size
+|-
+| &lt;code&gt;[[ls|vdir]] || Is exactly like &quot;&lt;code&gt;ls -l -b&lt;/code&gt;&quot;. (Files are by default listed in long format.)
+|-
+! colspan=&quot;2&quot; | Text utilities
+|-
+| &lt;code&gt;[[base64]] || base64 encode/decode data and print to standard output
+|-
+| &lt;code&gt;[[cat (Unix)|cat]]&lt;/code&gt; || Concatenates and prints files on the standard output
+|-
+| &lt;code&gt;[[cksum]]&lt;/code&gt; || Checksums and count the bytes in a file
+|-
+| &lt;code&gt;[[comm]]&lt;/code&gt; || Compares two sorted files line by line
+|-
+| &lt;code&gt;[[csplit (Unix)|csplit]]&lt;/code&gt; || Splits a file into sections determined by context lines
+|-
+| &lt;code&gt;[[cut (Unix)|cut]]&lt;/code&gt; || Removes sections from each line of files
+|-
+| &lt;code&gt;[[expand (Unix)|expand]]&lt;/code&gt; || Converts tabs to spaces
+|-
+| &lt;code&gt;[[fmt (Unix)|fmt]]&lt;/code&gt; || Simple optimal text formatter
+|-
+| &lt;code&gt;[[fold (Unix)|fold]]&lt;/code&gt; || Wraps each input line to fit in specified width
+|-
+| &lt;code&gt;[[head (Unix)|head]]&lt;/code&gt; || Outputs the first part of files
+|-
+| &lt;code&gt;[[join (Unix)|join]]&lt;/code&gt; || Joins lines of two files on a common field
+|-
+| &lt;code&gt;[[md5sum (Unix)|md5sum]]&lt;/code&gt; || Computes and checks MD5 message digest
+|-
+| &lt;code&gt;[[nl (Unix)|nl]]&lt;/code&gt; || Numbers lines of files
+|-
+| &lt;code&gt;[[od (Unix)|od]]&lt;/code&gt; || Dumps files in octal and other formats
+|-
+| &lt;code&gt;[[paste (Unix)|paste]]&lt;/code&gt; || Merges lines of files
+|-
+| &lt;code&gt;[[ptx (Unix)|ptx]]&lt;/code&gt; || Produces a [[permuted index]] of file contents
+|-
+| &lt;code&gt;[[pr (Unix)|pr]]&lt;/code&gt; || Converts text files for printing
+|-
+| &lt;code&gt;[[sha1sum (Unix)|sha1sum]]&lt;/code&gt;,&lt;br /&gt;&lt;code&gt;sha224sum&lt;/code&gt;,&lt;br /&gt;&lt;code&gt;sha256sum&lt;/code&gt;,&lt;br /&gt;&lt;code&gt;sha384sum&lt;/code&gt;,&lt;br /&gt;&lt;code&gt;sha512sum&lt;/code&gt; || Computes and checks [[SHA-1]], SHA-224/256/384/512 message digest
+|-
+| &lt;code&gt;[[shuf]]&lt;/code&gt; || generate random permutations
+|-
+| &lt;code&gt;[[sort (Unix)|sort]]&lt;/code&gt; || sort lines of text files
+|-
+| &lt;code&gt;[[split (Unix)|split]]&lt;/code&gt; || split a file into pieces
+|-
+| &lt;code&gt;[[sum (Unix)|sum]]&lt;/code&gt; || Checksums and counts the blocks in a file
+|-
+| &lt;code&gt;[[tac (Unix)|tac]]&lt;/code&gt; || Concatenates and prints files in reverse
+|-
+| &lt;code&gt;[[tail (Unix)|tail]]&lt;/code&gt; || Outputs the last part of files
+|-
+| &lt;code&gt;[[tr (Unix)|tr]]&lt;/code&gt; || Translates or deletes characters
+|-
+| &lt;code&gt;[[tsort (Unix)|tsort]]&lt;/code&gt; || Performs a [[topological sort]]
+|-
+| &lt;code&gt;[[unexpand]]&lt;/code&gt; || Converts spaces to tabs
+|-
+| &lt;code&gt;[[uniq]]&lt;/code&gt; || Removes duplicate lines from a sorted file
+|-
+| &lt;code&gt;[[wc (Unix)|wc]]&lt;/code&gt; || Prints the number of bytes, words, and lines in files
+|-
+! colspan=&quot;2&quot; | Shell utilities
+|-
+| &lt;code&gt;[[uname|arch]]&lt;/code&gt; || print machine hardware name (same as uname -m)
+|-
+| &lt;code&gt;[[basename]]&lt;/code&gt; || Removes the path prefix from a given pathname
+|-
+| &lt;code&gt;[[chroot (Unix)|chroot]]&lt;/code&gt; || Changes the root directory
+|-
+| &lt;code&gt;[[date (Unix)|date]]&lt;/code&gt; || Prints/sets the system date and time
+|-
+| &lt;code&gt;[[dirname]]&lt;/code&gt; || Strips non-directory suffix from file name
+|-
+| &lt;code&gt;[[du (Unix)|du]]&lt;/code&gt; || Shows disk usage on file systems
+|-
+| &lt;code&gt;[[echo (command)|echo]]&lt;/code&gt; || Displays a specified line of text
+|-
+| &lt;code&gt;[[env]]&lt;/code&gt; || Displays and modifies [[environment variable]]s
+|-
+| &lt;code&gt;[[expr (Unix)|expr]]&lt;/code&gt; || Evaluates expressions
+|-
+| &lt;code&gt;[[factor (Unix)|factor]]&lt;/code&gt; || [[Integer factorization|Factors numbers]]
+|-
+| &lt;code&gt;[[false (Unix)|false]]&lt;/code&gt; || Does nothing, but exits unsuccessfully
+|-
+| &lt;code&gt;[[groups (Unix)|groups]]&lt;/code&gt; || Prints the [[group identifier (Unix)|groups]] of which the user is a member
+|-
+| &lt;code&gt;[[hostid (Unix)|hostid]]&lt;/code&gt; || Prints the numeric identifier for the current host
+|-
+| &lt;code&gt;[[id (Unix)|id]]&lt;/code&gt; || Prints real/effective [[user identifier|UID]] and [[group identifier (Unix)|GID]]
+|-
+| &lt;code&gt;[[link (Unix)|link]]&lt;/code&gt; || Creates a [[hard link|link]] to a file
+|-
+| &lt;code&gt;[[logname (Unix)|logname]]&lt;/code&gt; || Print the user's login name
+|-
+| &lt;code&gt;[[nice (Unix)|nice]]&lt;/code&gt; || Modifies [[scheduling (computing)|scheduling]] priority
+|-
+| &lt;code&gt;[[nohup]]&lt;/code&gt; || Allows a command to continue running after logging out
+|-
+| &lt;code&gt;[[pathchk (Unix)|pathchk]]&lt;/code&gt; || Checks whether file names are valid or portable
+|-
+| &lt;code&gt;[[pinky (Unix)|pinky]]&lt;/code&gt; || A lightweight version of [[finger protocol|finger]]
+|-
+| &lt;code&gt;[[printenv]]&lt;/code&gt; || Prints [[environment variable]]s
+|-
+| &lt;code&gt;[[printf]]&lt;/code&gt; || Formats and prints data
+|-
+| &lt;code&gt;[[pwd]]&lt;/code&gt; || Prints the [[current working directory]]
+|-
+| &lt;code&gt;[[readlink (Unix)|readlink]]&lt;/code&gt; || Displays value of a [[symbolic link]]
+|-
+| &lt;code&gt;[[runcon]]&lt;/code&gt; || Run command with specified security context
+|-
+| &lt;code&gt;[[seq (Unix)|seq]]&lt;/code&gt; || Prints a sequence of numbers
+|-
+| &lt;code&gt;[[sleep (Unix)|sleep]]&lt;/code&gt; || Delays for a specified amount of time
+|-
+| &lt;code&gt;[[stat (Unix)|stat]]&lt;/code&gt; || Returns useful data about an [[inode]]
+|-
+| &lt;code&gt;[[stty (Unix)|stty]]&lt;/code&gt; || Changes and prints terminal line settings
+|-
+| &lt;code&gt;[[su (Unix)|su]]&lt;/code&gt; || Run a shell or command with substitute user and group IDs
+|-
+| &lt;code&gt;[[tee (command)|tee]]&lt;/code&gt; || Sends output to multiple files
+|-
+| &lt;code&gt;[[test (Unix)|test]]&lt;/code&gt; || Evaluates an expression
+|-
+| &lt;code&gt;[[Timeout (computing)|timeout]]&lt;/code&gt; || Run a command with a time limit
+|-
+| &lt;code&gt;[[true (Unix)|true]]&lt;/code&gt; || Does nothing, but exits successfully
+|-
+| &lt;code&gt;[[tty (Unix)|tty]]&lt;/code&gt; || Prints terminal name
+|-
+| &lt;code&gt;[[uname]]&lt;/code&gt; || Prints system information
+|-
+| &lt;code&gt;[[unlink (Unix)|unlink]]&lt;/code&gt; || Removes the specified file using the &lt;code&gt;unlink&lt;/code&gt; function
+|-
+| &lt;code&gt;[[uptime]]&lt;/code&gt; || Tell how long the system has been running
+|-
+| &lt;code&gt;[[users (Unix)|users]]&lt;/code&gt; || Prints the user names of users currently logged in to the current host
+|-
+| &lt;code&gt;[[who (Unix)|who]]&lt;/code&gt; || Prints a list of all users currently logged in.
+|-
+| &lt;code&gt;[[whoami (command)|whoami]]&lt;/code&gt; || Prints the effective [[userid]]
+|-
+| &lt;code&gt;[[yes (Unix)|yes]]&lt;/code&gt; || Prints a string repeatedly
+|-
+! colspan=&quot;2&quot; | Other Utilities
+|-
+| &lt;code&gt;&lt;nowiki&gt;[&lt;/nowiki&gt;&lt;/code&gt;|| A synonym for [[test (Unix)|test]], this program permits expressions like &lt;nowiki&gt;[&lt;/nowiki&gt; ''expression'' &lt;nowiki&gt;]&lt;/nowiki&gt;.
+|-
+! colspan=&quot;2&quot; | System Utilities
+|-
+|-
+|-
+|}
+
+==See also==
+{{Portal|Free software}}
+* [[List of Unix programs]]
+* [[BusyBox]], a coreutils-like package for embedded Linux
+* [[GNU Binary Utilities]]
+
+==References==
+{{Reflist}}
+
+==External links==
+* [http://www.gnu.org/software/coreutils/ GNU coreutils homepage]
+* [http://www.gnu.org/software/coreutils/faq/coreutils-faq.html The coreutils FAQ]
+* [http://www.gnu.org/software/coreutils/manual/ The coreutils manual]
+* [http://commandline.org.uk/command-line/2007/jan/6/ten-cool-coreutils-commands/ Top Ten Cool Coreutils Commands]
+* [http://heirloom.sourceforge.net/tools.html Alternative set of utilities with unicode support]
+* [http://beatex.org/web/advancedcopy.html GNU cp mod that adds a progress bar]
+
+{{Unix commands}}
+{{GNU}}
+
+{{DEFAULTSORT:Gnu Core Utilities}}
+[[Category:Unix software]]
+[[Category:GNU Project software]]
+[[Category:Free software programmed in C]]
+[[Category:Free system software]]
+
+[[ar:Ø§Ø¯ÙØ§Øª Ø¬ÙÙ Ø§ÙØ§Ø³Ø§Ø³ÙØ©]]
+[[cs:GNU Core Utilities]]
+[[de:GNU core utilities]]
+[[et:Coreutils]]
+[[el:ÎÎµÎ½ÏÏÎ¹ÎºÎ¬ ÎµÏÎ³Î±Î»ÎµÎ¯Î± GNU]]
+[[es:GNU Coreutils]]
+[[fr:GNU Core Utilities]]
+[[ja:Coreutils]]
+[[pl:GNU Coreutils]]
+[[pt:GNU Core Utilities]]
+[[ru:GNU Coreutils]]</rev></revisions></page></pages></query></api>

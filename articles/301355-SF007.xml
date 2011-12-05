@@ -1,0 +1,99 @@
+<?xml version="1.0"?><api><query><pages><page pageid="301355" ns="0" title="Liquid War"><revisions><rev xml:space="preserve">{{Infobox Software
+| name = Liquid War
+| logo =
+| screenshot = [[Image:Liquid War 5.6.3 screenshot.PNG|250px]]
+| caption = ''Liquid War'' in play with six teams. On the right is an information bar showing the relative size of the armies and a clock showing the time until the game expires.
+| author = Christian Mauduit
+| developer =
+| released =
+| latest release version = 5.6.4
+| latest release date = {{Start date and age|2007|10|17}}
+| latest preview version = Liquid War 6 0.0.11beta
+| latest preview date = {{Start date and age|2011|10|04}}&lt;ref&gt;[http://download.savannah.gnu.org/releases/liquidwar6/0.0.10beta/ Download Liquid War 6, 0.0.10beta]&lt;/ref&gt;
+| operating system =
+| platform = [[Cross-platform]]
+| language =
+| status =
+| genre = [[Video game|Game]]
+| license = [[GNU General Public License]]
+| website = [http://www.ufoot.org/liquidwar/ www.ufoot.org/liquidwar/]
+}}
+
+'''''Liquid War''''' is a unique multi-player [[action game]]. It is based on an original [[Pathfinding|shortest path]] algorithm and core concept by Thomas Colcombet and programmed by Christian Mauduit.
+
+==Description==
+Gameplay takes place on a 2D battlefield, usually with some obstacles. Each player (2 to 6, computer or human) has an army of particles and a cursor. The objective of the game is to assimilate all enemy particles. The players can only move their cursors and cannot directly control the particles. Each particle follows the [[Pathfinding|shortest path]] around the obstacles to its team's cursor. A player may have several thousands particles at a time, giving the collection of particles a look of a liquid blob. When a particle moves into a particle from a different team, it will fight and if the opponent particle fails to fight back (it is not moving in the opposite direction) it will eventually be [[Assimilation (biology)|assimilated]] by its attacker. As particles cannot die but only change teams, the total number of particles on the map remains constant. Since a particle can only fight in one direction at a time (towards its team's cursor), a player that surrounds its opponents will have a distinct advantage. The game ends when one player controls all of the particles or when the time runs out. When the time runs out, the player with the most particles wins.
+
+There are multiple maps which affect the obstacles in the battlefield. These obstacles may affect the strategies of the game.
+
+''Liquid War'' is a [[multiplayer]] game and can be played by up to 6 people on one computer, or over the [[Internet]] or a [[LAN]]. A single player mode is available in which the opponents are controlled by the computer. The computer [[Game artificial intelligence|AI]]'s &quot;strategy&quot; is to constantly choose a random point in the enemy and move its cursor to it.
+
+==History==
+The ''Liquid War'' shortest path algorithm was invented by Thomas Colcombet before the game itself. The game came as a result of the algorithm, when he realized its applicability to gaming. Colcombet's friend, Christian Mauduit, enhanced the algorithm and coded the game.
+
+''Liquid War'' 3.0 was released on 1 July 1995. It was a &quot;barely usable&quot;&lt;ref&gt;release information in âChanges.txtâ&lt;/ref&gt; [[DOS]] game with no network support. Version 5.0 was released on 26 September 1998. It was a complete rewrite and used the [[Allegro library]]. Network support was introduced in version 5.4.0, released on 7 July 2001. In [[2002]], ''Liquid War'' received the ''Most Original Linux Game'' award by [[The Linux Game Tome]],&lt;ref&gt;{{cite web |url=http://www.happypenguin.org/forums/viewtopic.php?t=549 |title=And the winners are... |accessdate=2007-10-21 |author= |date=28 January 2003 |publisher=Happypenguin.org}}&lt;/ref&gt; and in [[2003]] it was nominated for the [[Les TrophÃ©es du Libre]], an International [[Free Software]] Competition.&lt;ref&gt;{{cite web |url=http://www.tropheesdulibre.com/2003-First-competition.html |title=2003 - First competition |accessdate=2008-07-24 |work= |publisher=Les TrophÃ©es du Libre |language=French |date= }}&lt;/ref&gt; {{As of|2008|alt=As of July 2008}}, the current version is 5.6.4 and is available under DOS, [[Microsoft Windows]], [[Mac OS X]], [[Linux]] and [[FreeBSD]]. Its author, Christian Mauduit, has announced that a complete rewrite is in progress to produce version 6.0, which will abandon the [[Allegro library]] used for 5.x releases for a full [[OpenGL]] implementation. Version 6.0 is a part of the [[GNU]] project and was expected to be released in [[2008]]. Version 0.0.7 beta, a testing version, was released in October 2009. Version 0.0.8 beta has been released in 2010. While there still isn't network support, most parts of the game and engine are finished and playing [[Hotseat (multiplayer mode)|hotseat]] and/or against bots works fine, just like version 5.x.
+
+== Notes ==
+
+{{reflist}}
+
+==References==
+*{{cite web
+| url = http://www.ufoot.org/liquidwar/v5/doc
+| title = Liquid war 5 documentation
+| accessdate = 2007-04-10
+| last = Mauduit
+| first = Christian
+| date =
+| year =
+| month =
+| format =
+| work =
+| publisher =
+| pages =
+| language =
+| archiveurl =
+| archivedate =
+| quote =
+}}
+*{{cite web
+| url = http://www.gnu.org/software/liquidwar6/manual/
+| title = Liquid war 6 documentation
+| accessdate = 2007-04-10
+| last = Mauduit
+| first = Christian
+| date =
+| year =
+| month =
+| format =
+| work =
+| publisher =
+| pages =
+| language =
+| archiveurl =
+| archivedate =
+| quote =
+}}
+*{{cite news |first=Joe |last=Barr |authorlink= |author= |coauthors= |title=	
+Procrastinate with these Linux games |url=http://archives.cnn.com/2000/TECH/computing/07/21/linux.fun.games.idg/index.html |work= |publisher=CNN |id= |pages= |page= |date=21 July 2000 |accessdate=2007-10-21 |language= |quote= |archiveurl= |archivedate= }}
+
+== External links ==
+* [http://www.ufoot.org/liquidwar/ ''Liquid War'' website]
+* [http://www.gnu.org/software/liquidwar6/ ''Liquid War 6'' website]
+
+{{open source video games}}
+
+[[Category:Allegro games]]
+[[Category:Free, open source video games]]
+[[Category:DOS games]]
+[[Category:Linux games]]
+[[Category:Windows games]]
+[[Category:Mac OS X games]]
+[[Category:GP2X games]]
+[[Category:Video games developed in France]]
+[[Category:Cross-platform software]]
+
+[[es:Liquid War]]
+[[fr:Liquid War]]
+[[pt:Liquid War]]
+[[zh:Liquid War]]</rev></revisions></page></pages></query></api>

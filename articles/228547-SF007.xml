@@ -1,0 +1,228 @@
+<?xml version="1.0"?><api><query><pages><page pageid="228547" ns="0" title="Mozilla Thunderbird"><revisions><rev xml:space="preserve">{{Infobox software
+| name                   = Mozilla Thunderbird
+| logo                   = [[Image:Mozilla Thunderbird logo.png|center]]
+| screenshot             = [[Image:Thunderbird5.png|300px]]
+| caption                = Mozilla Thunderbird 5.0
+| developer              = [[Mozilla Foundation]] (formerly [[Mozilla Messaging]])
+| released               = {{initial-release|July 28, 2003}}
+| frequently_updated     = yes&lt;!-- Release version update? Don't edit this page, just click on the version number! --&gt;
+| programming language   = [[C++]], [[XUL]], [[XBL]], [[JavaScript]], [[Cascading Style Sheets|CSS]]
+| operating system       = [[Cross-platform]]
+| language               = [http://www.mozilla.com/en-US/thunderbird/all.html 53 languages]
+| genre                  = [[E-mail client]], [[news client]] and [[feed reader]]
+| license                = [[Mozilla Public License|MPL]]/[[GNU General Public License|GPL]]/[[GNU Lesser General Public License|LGPL]] tri-license{{Citation needed|date=October 2010}}
+| website                = [http://www.mozilla.org/thunderbird/ mozilla.org/thunderbird]
+}}
+
+'''Mozilla Thunderbird''' {{IPA-en|mÉËzÉªlÉ ËÎ¸ÊndÉrbÉrd|}} is a [[Free software|free]],&lt;ref name=&quot;lwn_trademark_issues&quot;&gt;{{cite web|url=http://lwn.net/Articles/118268/|title=Debian and Mozilla - a study in trademarks|work=[[LWN.net]]|accessdate=18 September 2010}}&lt;/ref&gt; [[open source]], [[cross-platform]] [[e-mail client|e-mail]] and [[news client]] developed by the [[Mozilla Foundation]]. The project strategy is modeled after [[Mozilla Firefox]], a project aimed at creating a [[web browser]]. On December 7, 2004, version 1.0 was released, and received over 500,000 downloads in its first three days of release, and 1,000,000 in 10 days.&lt;ref&gt;[http://weblogs.mozillazine.org/asa/archives/007074.html thunderbird breaks half a million downloads in three days], Mozilla Weblog (2004-12-10)&lt;/ref&gt;&lt;ref&gt;[http://weblogs.mozillazine.org/asa/archives/007119.html thunderbird 1.0 reaches 1,000,000 downloads in just 10 days!], Mozilla Weblog (2004-12-18)&lt;/ref&gt;
+
+==Features==
+Thunderbird aims to be a simple e-mail, newsgroup and news feed client. The [[Vanilla software|vanilla]] version is not a [[personal information manager]], although the [[Mozilla Lightning]] extension adds PIM functionality. Additional features, if needed, are often available via other [[Add-on (Mozilla)|extension]]s.
+
+===Message management===
+Thunderbird can manage multiple e-mail, newsgroup and news feed accounts and supports multiple identities within accounts. Features like quick search, saved search folders (&quot;virtual folders&quot;), advanced message [[filter (software)|filter]]ing, message grouping, and labels help manage and find messages. On [[Linux]]-based systems, system mail ([[movemail]]) accounts are supported.
+A still unsolved problem regards the possibility to archive email messages on disk. When exporting a message, by saving or dragging and dropping, the timestamp of the exported file given by Thunderbird is that of the moment in which the file was exported. For archiving reasons it would be necessary that exported file had the timestamp corresponding to the moment in which it was sent or received.
+
+===Junk filtering===
+Thunderbird incorporates a [[Bayesian spam filtering|Bayesian]] [[e-mail spam|spam]] filter, a [[whitelist]] based on the included address book, and can also understand classifications by server-based filters such as [[SpamAssassin]].&lt;ref&gt;{{cite web|url=http://forums.mozillazine.org/viewtopic.php?t=367638&amp;highlight=spamassassin |title=Mozillazine Forums |publisher=Forums.mozillazine.org |date= |accessdate=2009-06-18}}&lt;/ref&gt;
+
+===Extensions and themes===
+Extensions allow the addition of features through the installation of [[XPInstall]] modules (known as &quot;XPI&quot; or &quot;zippy&quot; installation) via the add-ons website which also features an update functionality to update the extentions. An example of a popular extention is [[Mozilla Lightning|Lightning]], which adds calendar functionality to Thunderbird.
+
+Thunderbird supports a variety of [[skin (computing)|theme]]s for changing its overall look and feel. These packages of [[Cascading Style Sheets|CSS]] and [[digital image|image]] files can be downloaded via the add-ons website at[https://addons.mozilla.org/en-US/thunderbird/browse/type:2 Mozilla Add-ons].
+
+===Standards support===
+Thunderbird supports [[Post Office Protocol|POP]] and [[Internet Message Access Protocol|IMAP]]. It also supports [[Lightweight Directory Access Protocol|LDAP]] address completion. The built-in [[RSS (file format)|RSS]]/[[Atom (standard)|Atom]] reader can also be used as a simple [[news aggregator]]. Thunderbird supports the [[S/MIME]] standard, extensions such as [[Enigmail]] and support for the [[OpenPGP]] standard.
+
+List of supported IMAP extensions: https://wiki.mozilla.org/MailNews:Supported_IMAP_extensions
+
+===File formats supported===
+* [[mbox]]&amp;nbsp;â Unix mailbox format
+* [[Mork (file format)|Mork]]&amp;nbsp;â used for internal database
+* [[SQLite]]&amp;nbsp;â also used for internal database (since version 3)
+
+===Cross-platform support===
+Thunderbird runs on a wide variety of platforms. Releases available on the primary distribution site support the following operating systems:&lt;ref&gt;[http://www.mozillamessaging.com/en-US/thunderbird/system-requirements/ Thunderbird System Requirements]. ''Mozillamessaging.com''.&lt;/ref&gt;
+
+*[[Microsoft Windows|Windows]]
+*[[Linux]]
+*[[Mac OS X]]
+*[[OS/2]] and [[eComStation]] &lt;ref&gt;[http://www.mozilla.org/ports/os2/ WarpZilla] - Mozilla for OS/2&lt;/ref&gt;
+*[[OpenSolaris]]
+
+The source code is freely available and can be compiled to be ran on a variety of other architectures and operating systems.
+
+===Internationalization and localization===
+Thunderbird does not yet support UTF8SMTP (RFC 5336) or [[E-mail address#Internationalization|Email Address Internationalization]].
+
+With contributors all over the world, the client is translated into at least 52 languages.&lt;ref&gt;[http://www.mozilla.com/en-US/thunderbird/all.html Download by language], retrieved on 2011-01-20&lt;/ref&gt;
+
+===Security===
+Thunderbird provides enterprise and government-grade security features such as [[Transport Layer Security|SSL/TLS]] connections to [[IMAP]] and [[Smtp|SMTP]] servers. It also offers native support for [[S/MIME]] secure email ([[digital signature|digital signing]] and message [[encryption]] using [[public key certificate|certificate]]s). Any of these security features can take advantage of [[Smart cards|smartcards]] with the installation of additional extensions.
+
+Other security features can be added through extensions. For instance, [[Enigmail]] offers [[Pretty Good Privacy|PGP]] signing, encryption, and decryption.
+
+Optional security protections also include disabling loading of remote images within messages, enabling only specific media types (sanitizer), and disabling [[JavaScript]].
+
+The [[French military]] uses Thunderbird and contributes to its security features, which are claimed to match the requirements for [[NATO]]'s closed messaging system.&lt;ref&gt;{{cite web|url=http://www.pcmag.com/article2/0,2817,2356958,00.asp|title=French Military Donated Code to Mozilla Thunderbird|publisher=''[[Reuters]]''|date=December 10, 2009|accessdate=2011-04-24|author=Marcel Michelson}}&lt;/ref&gt;
+
+==History==
+{{Main|History of Mozilla Thunderbird}}
+Originally launched as ''Minotaur'' shortly after ''[[History of Mozilla Firefox#Naming|Phoenix]]'' (the original name for [[Mozilla Firefox]]), the project failed to gain momentum.  With the success of the latter, however, demand increased for a mail client to go with it, and the work on Minotaur was revived under the new name of Thunderbird, and migrated to the new toolkit developed by the Firefox team.
+
+Significant work on Thunderbird restarted with the announcement that from version 1.5 onwards, the main Mozilla suite would be designed around separate applications using this new toolkit. This contrasts with the previous all-in-one approach, allowing users to mix and match the Mozilla applications with alternatives. The original Mozilla Suite continues to be developed as [[SeaMonkey]].
+
+On December 23, 2004, [[Lightning (software)|Project Lightning]] was announced which tightly integrated [[calendar]] functionality (scheduling, tasks, etc.) into Thunderbird, and which is now available as an extension.
+
+On October 11, 2006, [[Qualcomm]] and the Mozilla Foundation announced that &quot;future versions of [[Eudora (e-mail client)|Eudora]] will be based upon the same technology platform as the open source Mozilla Thunderbird email program.&quot;&lt;ref&gt;[http://www.eudora.com/press/2006/eudora-mozilla_final_10.11.06.html Qualcomm Press Release] - QUALCOMM Launches Project in Collaboration with Mozilla Foundation to Develop Open Source Version of Eudora Email Program (2006-10-11)&lt;/ref&gt; The project is code-named [[Penelope (e-mail client)|Penelope]].
+
+In late 2006, [[Debian]] rebranded Thunderbird as [[Mozilla Corporation software rebranded by the Debian project#Icedove|Icedove]] due to trademark and copyright reasons.  This was the second product to be rebranded.&lt;ref name=&quot;lwn_trademark_issues&quot;/&gt;&lt;ref name=&quot;debian_bugs&quot;&gt;{{cite web|url=http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=354622|title=Uses Mozilla Firefox trademark without permission - Debian Bug Tracker|work=[[Debian]]|accessdate=18 September 2010}}&lt;/ref&gt;
+
+On July 26, 2007, the [[Mozilla Foundation]] announced that Thunderbird would be developed by an independent organization, because the [[Mozilla Corporation]] (a subsidiary of the foundation) was focusing on Mozilla Firefox development.&lt;ref&gt;{{cite news |first=Thomas |last=Claburn |title=Mozilla Gives Thunderbird E-Mail The Boot |url=http://www.informationweek.com/story/showArticle.jhtml?articleID=201201609 |work=Internet section |publisher=[[InformationWeek]] |date=27 July 2007 |accessdate=2007-07-31 }}&lt;/ref&gt;
+
+On September 17, 2007, the [[Mozilla Foundation]] announced the funding of a new internet communications initiative with Dr. David Ascher of ActiveState. The purpose of this initiative was &quot;to develop Internet communications software based on the Thunderbird product, code and brand&quot;.&lt;ref&gt;{{cite web|url=http://www.mozilla.com/en-US/press/mozilla-2007-09-17.html |title=Mozilla Launches Internet Mail and Communications Initiative |publisher=Mozilla.com |date=2007-09-17 |accessdate=2009-06-18}}&lt;/ref&gt;
+
+On February 19, 2008, [[Mozilla Messaging]] started operations as a subsidiary of the Mozilla Foundation responsible for the development of email and similar communications. Its initial focus was on the then upcoming version of Thunderbird 3. Alpha Preview releases of Thunderbird 3 were codenamed &quot;Shredder&quot;.
+
+On April 4, 2011, Mozilla Messaging was merged into the Mozilla Labs group of the Mozilla Foundation.&lt;ref name=&quot;merge&quot;&gt;{{cite web|url=http://arstechnica.com/open-source/news/2011/04/thunderbird-returns-to-nest-as-mozilla-messaging-rejoins-mozilla.ars|title=Thunderbird returns to nest as Mozilla Messaging rejoins Mozilla|last=Paul|first=Ryan|publisher=Ars Technica|date=5 April 2011|accessdate=2011-04-05}}&lt;/ref&gt;
+{{As of|2011|10|24}}, the current version is Thunderbird 7.0.1.&lt;ref&gt;http://www.mozilla.org/en-US/thunderbird/7.0.1/releasenotes/&lt;/ref&gt;
+Thunderbird 3 no longer supports versions of Windows prior to Windows 2000 (i.e., Windows 95, 98, ME and NT) and Mac OS X versions prior to 10.4 Tiger.&lt;ref&gt;[http://www.mozillamessaging.com/en-US/thunderbird/3.0/releasenotes/]&lt;/ref&gt;
+
+Similar to the release schedule of Firefox, corresponding development stages Beta, Aurora and Nightly of Firefox for Thunderbird is called Beta, Earlybird and Daily. The release dates and Gecko versions are exactly the same as Firefox, for example, Firefox 7 and Thunderbird 7 was both released on September 27, 2011 and was both based on Gecko 7.0.
+
+===Releases===
+{{Main|History of Mozilla Thunderbird}}
+{{Timeline Mozilla Thunderbird}}
+
+==System requirements==
+===Thunderbird 2===
+;Windows
+:Operating System: Windows 98, ME, NT 4.0, XP, Server 2003, Vista&lt;br&gt;Minimum Hardware: 64 MB RAM
+
+;Mac
+:Operating System: Mac OS X 10.2 and later&lt;br&gt;Minimum Hardware: 128 MB RAM
+
+;Linux
+:Minimum Hardware: 64 MB RAM
+
+===Thunderbird 3===
+''This Release no longer supports versions of Windows prior to Windows 2000 (e.g., Windows 95, 98, ME and NT) and Mac OS X versions prior to 10.4 Tiger.&lt;ref&gt;{{cite web|title=Thunderbird Release Notes|url=http://www.mozillamessaging.com/en-US/thunderbird/3.0/releasenotes/}}&lt;/ref&gt;
+
+====Thunderbird 3.1====
+;Windows
+:Operating system: Windows 2000, XP, Server 2003, Vista, 7 &lt;br&gt; Minimum Hardware: Pentium 233 MHz (Recommended: Pentium 500MHz or greater) &lt;br&gt; Windows 7, Windows Vista, Windows XP: 768 MB RAM (Recommended: 1GB RAM or greater) &lt;br&gt; Windows 2000: 256 MB RAM (Recommended: 512 MB RAM or greater)&lt;br&gt; 52 MB hard drive space
+
+;Mac
+:Operating system: Mac OS X 10.4, 10.5, 10.6 &lt;br&gt; Minimum Hardware: A Macintosh computer with an Intel x86 or PowerPC G3, G4, or G5 processor &lt;br&gt; 256 MB RAM (Recommended: 512 MB RAM or greater) &lt;br&gt; 200 MB hard drive space
+
+;Linux
+:Software requirements: &lt;br&gt; Note: Linux distributors may provide packages for the respective distribution which have different requirements.&lt;br&gt; The following packages and libraries are required for Thunderbird to run: &lt;br&gt; - [[GTK+]] 2.10 or higher &lt;br&gt; - [[Pango]] 1.14 or higher &lt;br&gt; - [[GLib]] 2.12 or higher &lt;br&gt; - [[X.Org Server|X.Org]] 1.0 or higher &lt;br&gt; &lt;br&gt; The following packages and libraries are recommended for optimal functionality:&lt;br&gt;- [[NetworkManager]] 0.7 or higher &lt;br&gt; - [[HAL (software)|HAL]] 0.5.8 or higher &lt;br&gt; - [[DBus]] 1.0 or higher &lt;br&gt; - [[GNOME]] 2.16 or higher
+
+===Thunderbird 4===
+This version number was skipped in order to match the versioning number to Firefox for the combined release plan, wherein the new versions of both are released simultaneously.
+
+===Thunderbird 5 to Thunderbird 8===
+;Windows
+:Operating system: Windows 2000, XP, Server 2003, Vista, 7 &lt;br&gt; Recommened Hardware: Pentium 4 or newer (with support for SSE2),  &lt;br&gt; 1GB RAM or greater &lt;br&gt; 200 MB hard drive space
+
+;Mac
+:Operating system: Mac OS X 10.5, 10.6 &lt;br&gt; Minimum Hardware: A Macintosh computer with an Intel x86 processor (PowerPC support was dropped in Thunderbird 5) &lt;br&gt; 512 MB RAM  &lt;br&gt; 200 MB hard drive space
+
+;Linux
+:Software requirements: &lt;br&gt; Note: Linux distributors may provide packages for the respective distribution which have different requirements.&lt;br&gt; The following packages and libraries are required for Thunderbird to run: &lt;br&gt; - [[GTK+]] 2.10 or higher &lt;br&gt; - [[Pango]] 1.14 or higher &lt;br&gt; - [[GLib]] 2.12 or higher &lt;br&gt; - [[X.Org Server|X.Org]] 1.0 or higher (version 1.7 is recommended)&lt;br&gt; &lt;br&gt; The following packages and libraries are recommended for optimal functionality:&lt;br&gt;- [[NetworkManager]] 0.7 or higher &lt;br&gt; - [[HAL (software)|HAL]] 0.5.8 or higher &lt;br&gt; - [[DBus]] 1.0 or higher &lt;br&gt; - [[GNOME]] 2.16 or higher
+
+==See also==
+{{Portal|Free software}}
+{{Commons category|Screenshots of Mozilla Thunderbird}}
+{{Wikinews|category:Mozilla}}
+
+* [[Penelope (e-mail client)]]
+* [[Mozilla Calendar Project]]
+* Mozilla's [[Lightning (software)|Lightning]] Calendar Extension
+* [[Mozilla Corporation software rebranded by the Debian project]], including Icedove
+* [[List of e-mail clients]]
+* [[Comparison of e-mail clients]]
+* [[List of news clients]]
+* [[Comparison of feed aggregators]]
+
+==References==
+{{Reflist|2}}
+
+==External links==
+* [http://www.mozilla.org/thunderbird/ Mozilla Thunderbird homepage]
+* [https://developer.mozilla.org/en/Thunderbird Mozilla Thunderbird project page]&amp;nbsp;â For developers.
+* [http://www.rumblingedge.com/ Rumbling Edge - Tracking developments in Mozilla Thunderbird builds]&amp;nbsp;â For developers.
+
+{{E-mail clients}}
+{{Mozilla projects}}
+{{FreeCollabManageSoftware}}
+{{FLOSS}}
+{{Aggregators}}
+
+[[Category:Mozilla Thunderbird| ]]
+[[Category:Free Usenet clients]]
+[[Category:Linux email clients]]
+[[Category:Mac OS X email clients]]
+[[Category:Mac OS X software]]
+[[Category:Windows email clients]]
+[[Category:Windows software]]
+[[Category:Free email software]]
+[[Category:Unix internet software]]
+[[Category:OS/2 software]]
+[[Category:News aggregators]]
+[[Category:Portable software]]
+[[Category:Free software programmed in C++]]
+[[Category:Free cross-platform software]]
+[[Category:Free multilingual software]]
+[[Category:2003 software]]
+
+[[ar:ÙÙØ²ÙÙØ§ Ø«ÙØ¯Ø±Ø¨Ø±Ø¯]]
+[[ast:Mozilla Thunderbird]]
+[[bn:à¦®à§à¦à¦¿à¦²à¦¾ à¦¥à¦¾à¦¨à§à¦¡à¦¾à¦°à¦¬à¦¾à¦°à§à¦¡]]
+[[ca:Mozilla Thunderbird]]
+[[cs:Mozilla Thunderbird]]
+[[da:Mozilla Thunderbird]]
+[[de:Mozilla Thunderbird]]
+[[dsb:Mozilla Thunderbird]]
+[[et:Mozilla Thunderbird]]
+[[el:Mozilla Thunderbird]]
+[[es:Mozilla Thunderbird]]
+[[eo:Mozilla Thunderbird]]
+[[eu:Mozilla Thunderbird]]
+[[fa:ÙÙØ²ÛÙØ§ ØªØ§ÙØ¯Ø±Ø¨Ø±Ø¯]]
+[[fr:Mozilla Thunderbird]]
+[[gl:Mozilla Thunderbird]]
+[[ko:ëª¨ì§ë¼ ì ëë²ë]]
+[[hsb:Mozilla Thunderbird]]
+[[hr:Mozilla Thunderbird]]
+[[id:Mozilla Thunderbird]]
+[[it:Mozilla Thunderbird]]
+[[he:Mozilla Thunderbird]]
+[[ku:Mozilla Thunderbird]]
+[[lt:Mozilla Thunderbird]]
+[[hu:Mozilla Thunderbird]]
+[[mk:Mozilla Thunderbird]]
+[[ml:à´®àµà´¸à´¿à´²àµà´² à´¤à´£àµà´àµ¼à´¬àµà´¡àµ]]
+[[mr:à¤®à¥à¤à¤¿à¤²à¤¾ à¤¥à¤à¤¡à¤°à¤¬à¤°à¥à¤¡]]
+[[ms:Mozilla Thunderbird]]
+[[nl:Mozilla Thunderbird]]
+[[ja:Mozilla Thunderbird]]
+[[no:Mozilla Thunderbird]]
+[[nn:Mozilla Thunderbird]]
+[[uz:Mozilla Thunderbird]]
+[[pl:Mozilla Thunderbird]]
+[[pt:Mozilla Thunderbird]]
+[[ro:Mozilla Thunderbird]]
+[[ru:Mozilla Thunderbird]]
+[[simple:Mozilla Thunderbird]]
+[[sk:Mozilla Thunderbird]]
+[[sl:Mozilla Thunderbird]]
+[[sr:ÐÐ¾Ð·Ð¸Ð»Ð° ÑÐ°Ð½Ð´ÐµÑÐ±ÐµÑÐ´]]
+[[fi:Mozilla Thunderbird]]
+[[sv:Mozilla Thunderbird]]
+[[ta:à®®à¯à®à®¿à®²à¯à®²à®¾ à®¤à®£à¯à®à®°à¯à®ªà¯à®°à¯à®à¯]]
+[[th:à¸¡à¸­à¸à¸´à¸¥à¸¥à¸² à¸à¸±à¸à¹à¸à¸­à¸£à¹à¹à¸à¸´à¸£à¹à¸]]
+[[tr:Mozilla Thunderbird]]
+[[uk:Mozilla Thunderbird]]
+[[vi:Mozilla Thunderbird]]
+[[zh:Mozilla Thunderbird]]</rev></revisions></page></pages></query></api>

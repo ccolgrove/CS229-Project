@@ -1,0 +1,118 @@
+<?xml version="1.0"?><api><query><pages><page pageid="2694626" ns="0" title="SUSE Linux Enterprise Server"><revisions><rev xml:space="preserve">{{See also|SUSE Linux distributions}}
+{{Infobox OS
+| name                   = SUSE Linux Enterprise Server Edition
+| logo                   = [[Image:Suse logo.svg|100px|SLES logo]]
+| screenshot             = [[Image:OS11.2-menu-dolphin.png|300px]]
+| caption                = SUSE Linux 11 with KDE 4.3
+| website                = [http://www.suse.com/products/server/ SUSE Linux Enterprise Server]
+| developer              = [[SUSE]]
+| family                 = [[Linux]]
+| source_model           = [[Open source]]
+| released               = March {{birth year and age|1994}}
+| latest_release_version = 11 SP1
+| latest_release_date    = {{release date|2010|5|19}}&lt;ref name=&quot;SLES11sp1&quot; /&gt;
+| latest_test_version    = &lt;!--11.1 RC1--&gt;
+| latest_test_date       = &lt;!--{{release date|2008|11|27}}&lt;ref&gt;[http://news.opensuse.org/2008/11/27/development-release-opensuse-111-rc-1-now-available/ Development Release: openSUSE 11.1 RC 1 Now Available]&lt;/ref&gt;--&gt;
+| marketing_target       = [[business|commercial]] market (include [[Mainframe computer|Mainframes]], [[Server (computing)|Server]]s, [[Workstation]]s, [[Supercomputer]]s)
+| language               = Multilingual
+| kernel_type            = [[Monolithic kernel|Monolithic]] ([[Linux kernel|Linux]])
+| userland               = [[GNU Core Utilities|GNU]]
+| ui                     = [[KDE Plasma Workspaces|KDE Plasma Desktop]], [[GNOME]]
+| license                = [[GNU General Public License]] and Various.
+| working_state          = Current
+| supported_platforms    = [[IA-32]], [[x86-64]], [[s390x]], [[PowerPC]], [[Itanium]]
+| updatemodel            = [[Zypper]]/[[YaST2]]
+| package_manager        = [[RPM Package Manager]]
+}}
+
+'''SUSE Linux Enterprise Server''' ('''SLES''') is a [[Linux distribution]] supplied by [[SUSE]] and targeted at the business market. It is targeted for [[server (computing)|server]]s, [[Mainframe computer|mainframe]]s, and [[workstation]]s but can be installed on [[desktop computer]]s for testing as well. New major versions are released at an interval of 3-4 years, while minor versions (called service packs) are released about every 18 months. SUSE Linux Enterprise products, including SUSE Linux Enterprise Server, receive much more intense testing than the [[openSUSE]] community product, with the intention that only mature, stable versions of the included components will make it through to the released enterprise product.
+
+The current version is SLES 11 SP1, released May 19, 2010, which is developed from a common codebase with [[SUSE Linux Enterprise Desktop]] and other SUSE Linux Enterprise products.
+
+==History==
+SLES has been developed based on SUSE Linux by a small team led by Marcus Kraft and Bernhard Kaindl as principal developer who was supported by Joachim SchrÃ¶der. It was first released on 31 October 2000 as a version for [[IBM]] [[S/390]] mainframe machines.&lt;ref&gt;SuSE: [http://web.archive.org/web/20010605154144/www.suse.de/en/produkte/susesoft/s390/S390release.html &quot;SuSE Linux for S/390 available today&quot;]&lt;/ref&gt; In December 2000, the first enterprise client ([[TeliaSonera|Telia]]) was made public.&lt;ref&gt;silicon.com: [http://hardware.silicon.com/desktops/0,39024645,11021413,00.htm &quot;Linux mainframe ousts Sun servers at Telia&quot;]&lt;/ref&gt;
+In April 2001, the first SLES for [[x86]] was released.
+
+'''SLES version 9''' was released in August 2004. Service Pack 4 was released in December 2007. It is supported by the major hardware vendorsâ[[IBM]], [[Hewlett-Packard|HP]], [[Sun Microsystems]], [[Dell, Inc.|Dell]], [[Silicon Graphics|SGI]], [[Lenovo]], and [[Fujitsu Siemens Computers]].
+
+SLES 9 is installed on [[NASA]]'s [[supercomputer]] ''[[Columbia (supercomputer)|Columbia]]''.&lt;ref&gt;[http://www.nas.nasa.gov/Resources/Systems/columbia.html NAS Computing Resources - Columbia Supercomputer]&lt;/ref&gt;
+
+'''SUSE Linux Enterprise Server 10''' was released in July 2006&lt;ref&gt;[http://www.novell.com/news/press/item.jsp?id=1031 &quot;Novell Delivers Next-Generation Platform for the Open Enterprise&quot;]&lt;/ref&gt;, and is also supported by the major hardware vendors. Service pack 4 was released in April 2011. &lt;ref&gt;[http://www.novell.com/news/press/2011/4/novell-offers-industrys-longest-enterprise-linux-support-program-.html Novell Offers Industry's Longest Enterprise Linux Support Program]&lt;/ref&gt;SLES 10 shares a common codebase with [[SUSE Linux Enterprise Desktop|SUSE Linux Enterprise Desktop 10]]âNovell's desktop distribution for business useâand other SUSE Linux Enterprise products.
+
+The front node of [[JUGENE]], a petaflops supercomputer at the [[JÃ¼lich Research Centre]] in [[Germany]], uses SLES 10 as its operating system.
+[[File:Suse 11.JPG|thumb|left|Enterprise Server 11 installation discs]]
+'''SUSE Linux Enterprise Server 11''' was released on March 24, 2009 &lt;ref name=&quot;SLES11&quot;&gt;[http://www.novell.com/news/press/2009/3/novell-ships-suse-linux-enterprise-11.html Novell Ships SUSE Linux Enterprise 11]&lt;/ref&gt; and include [[Linux kernel|Linux kernel 2.6.27]], [[Oracle Cluster File System]] 2, support for the [[OpenAIS]] cluster communication protocol for server and storage clustering, and [[Mono (software)|Mono]] 2.0.&lt;ref&gt;{{cite news |first=Timothy Prickett |last=Morgan |authorlink= |coauthors= |title=Novell Previews Features in SUSE Linux Enterprise 11 |url=http://www.itjungle.com/tlb/tlb032508-story01.html |work=The Linux Beacon |publisher= |date=2008-03-25 |accessdate= }}&lt;/ref&gt; SLES 11 SP1 (released May 2010) rebased the kernel version to 2.6.32.&lt;ref name=&quot;SLES11sp1&quot;&gt;[http://www.novell.com/news/press/novell-announces-suse-linux-enterprise-11-service-pack-1/ Novell Announces SUSE Linux Enterprise 11 Service Pack 1]&lt;/ref&gt;
+
+IBM's [[Watson_(artificial_intelligence_software)|Watson]] was built on IBM's [[Power7]] systems using SLES. &lt;ref&gt;{{cite | title=IBM Watson runs SUSE Linux Enterprise Server | url=http://www.novell.com/promo/suse/ibm-watson.html | date=2011-02-15 | accessdate=2011-02-15 | publisher = Novell, Inc. }}&lt;/ref&gt;
+{{Clear}}
+
+==Version history==
+
+Release dates of SUSE Linux Enterprise Server versions.&lt;ref name=&quot;lifecycle&quot;&gt;{{cite web | url=http://support.novell.com/lifecycle/ |title=Novell Support Lifecycle |accessdate=2011-08-11}}&lt;/ref&gt;
+
+* SUSE Linux Enterprise Server 9
+** Initial release, 2004-08-03
+** SP1, 2005-01-19
+** SP2,	2005-07-07
+** SP3, 2005-12-22
+** SP4, 2007-12-12
+
+* SUSE Linux Enterprise Server 10
+** Initial release, 2006-06-17
+** SP1, 2007-06-18
+** SP2, 2008-05-19
+** SP3, 2009-10-12
+** SP4, 2011-04-12
+
+* SUSE Linux Enterprise Server 11
+** Initial release, 2009-03-24
+** SP1, 2010-06-02
+
+==Product integration and bundles==
+SLES is also an important part of [[Novell Open Enterprise Server]], which brings all the networking services that were previously available only on [[NetWare]] to the Linux platform.
+
+==Hypervisor kernels supported==
+SLES 10:
+*[[Xen]] 3.2
+
+SLES 11 SP1:
+*[[Xen]] 4.0
+*kvm is also supported
+
+==See also==
+{{Portal|Free software}}
+* [[SUSE Linux distributions]]
+* [[Linux on zSeries]]
+* [[List of Linux distributions]]
+* [[Comparison of Linux distributions]]
+* [[Red Hat Enterprise Linux]]
+
+==References==
+{{Reflist}}
+
+==Further reading==
+*{{cite book|last=Jason Eckert|title=SUSE Linux Enterprise Server Administration (Course 3037)|pages=760|isbn=978-1418837310}}
+*{{cite book|last=Jason Eckert|title=Advanced SUSE Linux Enterprise Server Administration (Course 3038)|pages=432|isbn=978-1418837327}}
+*{{cite book |last= Eckert|first= Jason |authorlink= |coauthors= |title= SUSE Linux Enterprise Server Security |year= 2007 |publisher= Course Technology |location= |isbn= 978-1-4283-2223-3 }}
+*{{cite book |last= Kuo |first= Peter |authorlink= |coauthors= Jacques Beland |title= SUSE LINUX Enterprise Server 9 Administrator's Handbook |year= 2005 |publisher= [[Novell Press]] |location= |isbn= 978-0-672-32735-3 }}
+*{{cite book |last= van Vugt |first= Sander |authorlink= |coauthors= |title= The Definitive Guide to SUSE Linux Enterprise Server |year= 2006 |publisher= [[Apress]] |location= |isbn= 978-1-59059-708-8 }}
+*{{cite book |last= Harris |first= Jeffrey |authorlink= |coauthors= Mike Latimer |title= Novell Open Enterprise Server Administrator's Handbook, SUSE LINUX Edition |year= 2005 |publisher= [[Novell Press]] |location= |isbn= 978-0-672-32749-0 }}
+
+==External links==
+*[http://www.novell.com/products/server/ SUSE Linux Enterprise Server product page]
+*[http://www.novell.com/coolsolutions/sles/ SUSE Linux Enterprise Server Cool Solutions] â tips &amp; tricks, guides, tools and other resources submitted by the SUSE Linux Enterprise community
+
+{{Novell}}
+
+{{DEFAULTSORT:Suse Linux Enterprise Server}}
+
+[[Category:Novell operating systems]]
+[[Category:SUSE Linux]]
+[[Category:RPM-based Linux distributions]]
+[[Category:Enterprise Linux distributions]]
+[[Category:X86-64 Linux distributions]]
+
+[[cs:SUSE Linux Enterprise Server]]
+[[de:SUSE Linux Enterprise Server]]
+[[sk:SUSE Linux Enterprise Server]]
+[[sv:SUSE Linux Enterprise Server]]</rev></revisions></page></pages></query></api>

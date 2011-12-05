@@ -1,0 +1,3607 @@
+<?xml version="1.0"?><api><query><pages><page pageid="9160497" ns="0" title="Comparison of BitTorrent clients"><revisions><rev xml:space="preserve">{{Redirect|BitTorrent client|the client created by [[Bram Cohen]]|BitTorrent (software)}}
+{{List dispute|date=June 2011}}
+{{Refimprove|date=September 2009}}
+A '''BitTorrent client''' is a [[computer program]] that manages [[uploading and downloading|downloads and uploads]] using the [[BitTorrent (protocol)|BitTorrent protocol]].
+
+The first [[client (computing)|client]], known as [[BitTorrent (software)|BitTorrent]], was created by [[Bram Cohen]], in October 2002.
+
+Many subsequent clients have been at least partially based on it. Not all clients were originally built for BitTorrent, having added support for the protocol later on. There have been attempts to package [[malware]] as BitTorrent clients, probably due to the availability of many legitimate clients and users' willingness to try new ones.
+
+The following tables compare general and technical information for a number of applications supporting the [[BitTorrent (protocol)|BitTorrent protocol]]. They are neither all-inclusive nor necessarily up to date.
+
+== Applications ==
+''Note: Clients in blue are no longer in development.''
+
+===General===
+{| style=&quot;font-size: 85%; text-align: center;&quot; class=&quot;wikitable sortable&quot;
+|-
+! BitTorrent client
+! First public release date
+! Latest stable
+! [[Free and open source software|FOSS]]&lt;br&gt;
+! [[Software license]]
+! Cost&lt;br&gt;([[United States dollar|USD]])
+! [[Spyware]], [[Adware]], [[Malware]]-free &lt;ref name=&quot;malware&quot;&gt;Unless otherwise noted, programs marked &quot;Yes&quot; without other inline citations have been tested 100% Free or 100% Clean by [[Softpedia]]&lt;/ref&gt;
+! [[Usage share of BitTorrent clients|Usage]]&lt;ref name=&quot;Unique-peer_id-statistics&quot;&gt;https://ezrss.it/stats/all/index.html ({{start date and age|2009|12|04}}) Unique peer_id statistics from Combined (Pure Unique) over a 1 week period. Retrieved {{start date and age|2010|01|18}}.&lt;/ref&gt;&lt;br&gt;
+|-
+! {{rh2}} | [[ABC (Yet Another BitTorrent Client)|ABC]]
+| {{start date and age|2003|08|19}}&lt;ref&gt;{{cite web|url=http://sourceforge.net/projects/pingpong-abc/ |title=ABC (Yet Another Bittorrent Client) at SourceForge.net |publisher=[http://pingpong-abc.sourceforge.net/ ABC].[[SourceForge]].net |date=2003-08-19  |accessdate=2010-01-21}}&lt;/ref&gt;
+| {{Latest stable software release/ABC}}
+| {{yes}}
+| {{free|[[Python Software Foundation License]]}}
+| {{free}}
+| {{yes}}
+| {{Nts|{{#expr:(264833+5372)/3573017.3round6}}}}%
+|-
+! {{rh}} | [[Acquisition (software)|Acquisition]]
+| {{?}}
+| {{Latest stable software release/Acquisition}}
+| {{partial}}
+| {{Proprietary}}&lt;br&gt;[[Shareware]]
+| {{nonfree|$25}}
+| {{yes}}
+| {{?}}
+|-
+! {{rh2}} | Arctic Torrent&lt;ref&gt;{{cite web|url=http://int64.org/projects/arctic-torrent |title=Arctic Torrent - When 4GiB just isn't enough |publisher=int64.org |date= |accessdate=2010-11-24}}&lt;/ref&gt;
+| {{?}}
+| 1.2.3&lt;br&gt;&lt;small&gt;({{Start date and age|2004|9|4}})&lt;/small&gt;
+| {{yes}}
+| {{free|[[MIT License]]}}
+| {{free}}
+| {{yes}}
+| {{Nts|{{#expr:2170/3573017.3round6}}}}%
+|-
+! {{rh}} | Aria2 &lt;ref&gt;{{cite web|url=http://aria2.sourceforge.net/ |title=Aria2 project |publisher=[[SourceForge]] |date= |accessdate=2009-11-28}}&lt;/ref&gt;
+| {{?}}
+| 1.11.2&lt;br&gt;&lt;small&gt;({{start date and age|2011|5|22}})&lt;ref&gt;{{cite web|url=http://sourceforge.net/projects/aria2/|title=Aria2 - CLI Metalink/BitTorrent client at SourceForge.net|publisher=[http://aria2.sourceforge.net/ Aria2].[[SourceForge]].net}}&lt;/ref&gt;&lt;/small&gt;
+| {{yes}}
+| {{free|[[GPL]]}}
+| {{free}}
+| {{yes}}
+| {{Nts|{{#expr:2967/3573017.3round6}}}}%
+|-
+! {{rh}} | [[BitComet]]
+| {{start date and age|2003|08|06}}
+| {{Latest stable software release/BitComet}}
+| {{no}}
+| {{Proprietary}}
+| {{free}}
+| {{no|Ad-supported}}: Optionally sets your browser homepage to google.atcomet.com&lt;ref&gt;{{cite web|url=http://www.softpedia.com/get/Internet/File-Sharing/BitComet.shtml |title=BitComet Latest Beta / Latest Final |accessdate=2010-09-04 | work=softpedia}}&lt;/ref&gt;
+| {{Nts|{{#expr:(14341918+1061482)/3573017.3round6}}}}%
+|-
+! {{rh}} | Bitflu &lt;ref&gt;{{cite web|url=http://bitflu.workaround.ch/ |title=Bitflu |publisher=Bitflu.workaround.ch |date= |accessdate=2009-11-28}}&lt;/ref&gt;
+| {{?}}
+| {{Latest stable software release/Bitflu}}
+| {{yes}}
+| {{free|[[Artistic License]]}}
+| {{free}}
+| {{yes}}
+| {{Nts|{{#expr:90/3573017.3round6}}}}%
+|-
+! {{rh}} | [[BitLet]]
+| {{?}}
+| {{?}}
+| {{no}}
+| {{Proprietary}}
+| {{free}}
+| {{?}}
+| {{Nts|{{#expr:22086/3573017.3round6}}}}%
+|-
+! {{rh2}} | [[BitLord]]
+| {{?}}
+| {{Latest stable software release/BitLord}}
+| {{no}}
+| {{Proprietary}}&lt;br&gt;[[Adware]]
+| {{free}}
+| {{no|[[Adware]]: [[WhenU SaveNow]]}}
+| {{?}}
+|-
+! {{rh2}} | [[Bits on Wheels]]
+| {{?}}
+| {{Latest stable software release/Bits on Wheels}}
+| {{no}}
+| {{Proprietary}}&lt;br&gt;[[Freeware]]
+| {{free}}
+| {{yes}}
+| {{Nts|{{#expr:21375/3573017.3round6}}}}%
+|-
+! {{rh}} | [[BitSpirit]] &lt;ref name=&quot;bitspirit.cc&quot;&gt;{{cite web|author=BitSpirit |url=http://www.bitspirit.cc/en/ |title=BitSpirit &amp;#124; a powerful &amp; easy-to-use BitTorrent client |publisher=Bitspirit.cc |date=2010-10-25 |accessdate=2010-11-24}}&lt;/ref&gt;
+| {{start date and age|2003}}
+| {{Latest stable software release/BitSpirit}}
+| {{no}}
+| {{Proprietary}}
+| {{free}}
+| {{yes}}
+| {{Nts|{{#expr:7132119/3573017.3round6}}}}%
+|-
+! {{rh}} | [[BitThief]]
+| {{?}}
+| {{Latest stable software release/BitThief}}
+| {{no}}
+| {{Proprietary}}&lt;br&gt;[[Freeware]]
+| {{free}}
+| {{no|Spyware}}&lt;ref&gt;{{cite web|url=http://torrentfreak.com/bitthief-spies-on-their-users/|title=BitThief Spies on their Users|accessdate=2009-02-16|author=Ernesto|date=2007-01-16|work=TorrentFreak}}&lt;/ref&gt;
+| {{?}}
+|-
+! {{rh2}} | [[BitTornado]]
+| {{?}}
+| {{Latest stable software release/BitTornado}}
+| {{yes}}
+| {{free|[[MIT License]]}}
+| {{free}}
+| {{yes}}
+| {{Nts|{{#expr:533900/3573017.3round6}}}}%
+|-
+! {{rh2}} | [[BitTorrent (software)|BitTorrent 5]]
+| {{Start date and age|2001|7|2}}&lt;ref name=BC&gt;{{cite web|last=Cohen|first=Bram|url=http://finance.groups.yahoo.com/group/decentralization/message/3160|title=BitTorrent&amp;nbsp;- a new P2P app|work=[http://finance.groups.yahoo.com/group/decentralization/messages/3160?xm=1&amp;m=p&amp;tidx=1 decentralization : Messages : 1985-3160]|publisher=[[Yahoo! Groups]] [http://finance.dir.groups.yahoo.com/dir/Business___Finance : Directory : Business &amp;amp; Finance]|date=Monday July 2, 2001 11:30 pm|accessdate=April 15, 2007}}&lt;span style=&quot;font-size:0.95em; font-weight:bold; color:#555;&quot;&gt;([[HTTP cookie]]s required)&lt;/span&gt;&lt;/ref&gt;
+| {{Latest stable software release/BitTorrent (software)}}
+| {{yes}}
+| {{free|[[BitTorrent Open Source License]], [[GPL]]}}
+| {{free}}
+| {{Adware}}
+| {{Nts|{{#expr:(17207544-(10120793+3299280+2027068+268762+205421+123459+83749+60321+50677+15+4+3+3+3+3+2+2+2+2+2+1+1+1))/3573017.3round6}}}}%
+|-
+! {{rh}} | [[BitTorrent (software)|BitTorrent 7]]
+| {{start date and age|2007|09|18}}
+| {{Latest stable software release/BitTorrent (software)}}
+| {{no}}
+| {{Proprietary}}
+| {{free}}
+| {{no|Adware: Optionally installs Ask toolbar.}} &lt;ref&gt;{{cite web|url=http://www.softpedia.com/get/Internet/File-Sharing/BitTorrent.shtml|title=BitTorrent Latest|accessdate=2010-09-04|work=Softpedia}}&lt;/ref&gt;
+| {{Nts|{{#expr:(10120793+3299280+2027068+268762+205421+123459+83749+60321+50677+15+4+3+3+3+3+2+2+2+2+2+1+1+1)/3573017.3round6}}}}%
+|-
+! {{rh2}} | [[BitTyrant]]
+| {{start date and age|2007|01|02}}
+| {{Latest stable software release/BitTyrant}}
+| {{yes}}
+| {{free|[[GPL]]}}
+| {{free}}
+| {{?}}
+| {{Nts|{{#expr:794218/3573017.3round6}}}}%
+|-
+! {{rh2}} | [[Blog Torrent]]
+| {{?}}
+| {{Latest stable software release/Blog Torrent}}
+| {{yes}}
+| {{free|[[GPL]]}}
+| {{free}}
+| {{?}}
+| {{?}}
+|-
+! {{rh}} | BTG &lt;ref&gt;{{cite web|url=http://btg.berlios.de/ |title=BTG |publisher=Btg.berlios.de |date=2009-11-08 |accessdate=2009-11-28}}&lt;/ref&gt;
+| {{?}}
+| 0.9.9
+| {{yes}}
+| {{free|[[GPL]]}}
+| {{free}}
+| {{?}}
+| {{Nts|{{#expr:2/3573017.3round6}}}}%
+|-
+! {{rh}} | BTPD &lt;ref&gt;{{cite web|url=https://github.com/btpd/btpd/wiki/ |title=BTPD |date=2011-01-13 |accessdate=2011-01-13}}&lt;/ref&gt;
+| {{start date and age|2005|06|24}}
+| 0.16
+| {{yes}}
+| {{free|[[Simplified BSD License]]}}
+| {{free}}
+| {{yes}}
+| {{Nts|{{#expr:116/3573017.3round6}}}}%
+|-
+! {{rh}} | [[Deluge (software)|Deluge]]
+| {{start date and age|2006|09|25}}
+| {{Latest stable software release/Deluge}}
+| {{yes}}
+| {{free|[[GPL]]}}
+| {{free}}
+| {{yes}}
+| {{Nts|{{#expr:149073/3573017.3round6}}}}%
+|-
+! {{rh}} | [[FlashGet]]
+| {{?}}
+| {{Latest stable software release/FlashGet}}
+| {{no}}
+| {{Proprietary}}
+| {{free}}
+| {{no|Adware}} &lt;ref&gt;{{cite web|url=http://www.softpedia.com/get/Internet/Download-Managers/FlashGet.shtml|title=FlashGet Latest Beta / Latest Stable|accessdate=2009-02-16|work=Softpedia}}&lt;/ref&gt;
+| {{Nts|{{#expr:3882628/3573017.3round6}}}}%
+|-
+! {{rh}} | Flush
+| {{start date and age|2009|01|01}}
+| {{Latest stable software release/Flush}}
+| {{yes}}
+| {{free|[[GPL]]}}
+| {{free}}
+| {{yes}}
+| {{?}}
+|-
+! {{rh}} | Folx
+| {{start date and age|2010}}
+| 1.0.591.456
+| {{no}}
+| {{Proprietary}}
+| {{free}}
+| {{?}}
+| {{?}}
+|-
+! {{rh}} | [[Free Download Manager]]
+| {{start date and age|2004}}
+| {{Latest stable software release/Free Download Manager}}
+| {{yes}}
+| {{free|[[GPL]]}}
+| {{free}}
+| {{no|Adware}}: Optional Software Informer &lt;ref&gt;{{cite web|title=general forum|url=http://freedownloadmanager.org/board/viewtopic.php?f=1&amp;t=15458&amp;p=32510&amp;hilit=informer#p32510|accessdate=15 July 2011}}&lt;/ref&gt; 
+| {{?}}
+|-
+! {{rh}} | [[FrostWire]]
+| {{start date and age|2004}}
+| {{Latest stable software release/FrostWire}}
+| {{yes}}
+| {{free|[[GPL]]}}
+| {{free}}
+| {{no|Adware}}; Optional Ask.com toolbar
+| {{?}}
+|-
+! {{rh2}} | G3 Torrent &lt;ref&gt;{{cite web|url=http://g3torrent.sourceforge.net/ |title=G3 Torrent|publisher=[[SourceForge]]}}&lt;/ref&gt;
+| {{?}}
+| {{Latest stable software release/G3 Torrent}}
+| {{yes}}
+| {{free|[[MIT License]]}}
+| {{free}}
+| {{yes}}
+| {{Nts|{{#expr:4203/3573017.3round6}}}}%
+|-
+! {{rh}} | Global Downloader&lt;ref&gt;[actysoft.com http://www.actysoft.com]&lt;/ref&gt;
+| {{start date and age|2005}}
+|
+| {{no}}
+| {{Proprietary}}
+| {{nonfree|$24.95}}
+| {{yes}}
+| {{?}}
+|-
+! {{rh2}} | [[Gnome BitTorrent]]
+| {{?}}
+| {{?}}
+| {{yes}}
+| {{free|[[Python Software Foundation License]]}}
+| {{free}}
+| {{?}}
+| {{?}}
+|-
+! {{rh}} | [[Hadouken (software)|Hadouken]]
+| {{start date and age|2011|09}}
+| 0.3.17&lt;br&gt;&lt;small&gt;({{Start date and age|2011|11|06}})&lt;/small&gt;
+| {{yes}}
+| {{free}}
+| {{free}}
+| {{yes}}
+| {{?}}
+|-
+! {{rh}} | Halite
+| {{?}}
+| {{Latest stable software release/Halite}}
+| {{yes}}
+| {{free|[[Boost Software License]]}}
+| {{free}}
+| {{yes}}
+| {{Nts|{{#expr:9197/3573017.3round6}}}}%
+|-
+! {{rh}} | [[KGet]]
+| {{?}}
+| {{Latest stable software release/KDE Software Compilation 4}}
+| {{yes}}
+| {{free|[[GPL]]}}
+| {{free}}
+| {{yes}}
+| {{?}}
+|-
+! {{rh}} | [[KTorrent]]
+| {{?}}
+| {{Latest stable software release/KTorrent}}
+| {{yes}}
+| {{free|[[GPL]]}}
+| {{free}}
+| {{yes}}
+| {{Nts|{{#expr:8768/3573017.3round6}}}}%
+|-
+! {{rh2}} | [[LimeWire]]
+| {{start date and age|2006|10|30}}&lt;ref&gt;http://wiki.limewire.org/index.php?title=Changelog {{dead link|date=November 2010}}&lt;/ref&gt;&lt;ref&gt;[http://torrentfreak.com/limewire-now-supports-bittorrent-downloads/ Announcement] at [[TorrentFreak]] of [[Limewire]]'s support of BitTorrent protocol as of version 4.13 (2006-10-30). Retrieved 2009-12-04.&lt;/ref&gt;
+| {{Latest stable software release/LimeWire}}
+| {{yes}}
+| {{free|[[GPL]]}}
+| {{nonfree|Free-main&lt;br&gt;$35-Pro}}
+| {{no|Adware}}
+| {{Nts|{{#expr:(135667+970)/3573017.3round6}}}}%
+|-
+! {{rh2}} | Localhost
+| {{?}}
+| {{?}}
+| {{yes}}
+| {{free|[[GPL]]}}
+| {{free}}
+| {{yes}}
+| {{?}}
+|-
+! {{rh}} | [[Meerkat Bittorrent Client]]
+| {{?}}
+| {{Latest stable software release/Meerkat Bittorrent Client}}
+| {{no}}
+| {{Proprietary}}&lt;br&gt;[[Freeware]]
+| {{free}}
+| {{yes}}
+| {{?}}
+|-
+! {{rh}} | [[Miro (software)|Miro]]
+| 0.8.0-rc4&lt;br&gt;{{Start date and age|2006|02|21}}&lt;ref&gt;{{cite web|url=http://ftp.osuosl.org/pub/pculture.org/Miro/osx/ |title=ftp.osuosl.org :: Oregon State University Open Source Lab |publisher=[http://pculture.org/ Participatory Culture Foundation] |date=2006-02-21 |accessdate=2010-01-21}}&lt;/ref&gt;
+| {{Latest stable software release/Miro}}
+| {{yes}}
+| {{free|[[GPL]]}}
+| {{free}}
+| {{no|Adware}}: Optional [[Bing (search engine)#Toolbars|Bing toolbar]];&lt;br /&gt;Sets Bing and/or MiroStart &lt;small&gt;(a Miro start page&lt;br /&gt;powered by Bing)&lt;/small&gt; as default web browser search.
+| {{Nts|{{#expr:94692/3573017.3round6}}}}%
+|-
+! {{rh}} | [[MLDonkey]]
+| {{start date and age|2001|12}}
+| {{Latest stable software release/MLDonkey}}
+| {{yes}}
+| {{free|[[GPL]]}}
+| {{free}}
+| {{yes}}
+| {{Nts|{{#expr:14838/3573017.3round6}}}}%
+|-
+! {{rh}} | [[MP3 Rocket]]
+| {{start date and age|2005|12}}
+| {{Latest stable software release/MP3 Rocket}}
+| {{yes}}
+| {{free|[[GPL]]}}
+| {{free}}
+| {{no|Adware}}&lt;ref&gt;{{cite web|url=http://www.softpedia.com/get/Internet/File-Sharing/MP3-Rocket.shtml|title=MP3 Rocket 5.1.9|accessdate=2009-02-16|work=Softpedia}}&lt;/ref&gt;
+| {{?}}
+|-
+! {{rh}} | [[ÂµTorrent]]
+| {{start date and age|2005|09|19}}&lt;ref&gt;{{cite web|url=https://forum.utorrent.com/viewtopic.php?id=11 |title=ÂµTorrent 1.1 BETA (build 88) - Forums - ÂµTorrent - The Lightweight and Efficient BitTorrent Client |publisher=Forum.utorrent.com |date=2005-09-19 |accessdate=2009-11-28}}&lt;/ref&gt;
+| {{Latest stable software release/ÂµTorrent}}
+| {{no}}&lt;ref&gt;{{cite web|url=https://www.utorrent.com/faq.php#faq2 |title=General - FAQ - ÂµTorrent - a (very) tiny BitTorrent client |publisher=www.utorrent.com |date= |accessdate=2009-11-28}}&lt;/ref&gt;
+| {{Proprietary}} [[Freeware]]
+| {{free}}
+| {{no|Adware}}; Optional [[Ask.com toolbar]]&lt;ref name=&quot;softpedia1&quot;&gt;{{cite web|url=http://www.softpedia.com/get/Internet/File-Sharing/uTorrent.shtml|title=ÂµTorrent Latest Alpha / Latest Beta / Latest Stable|accessdate=2009-05-07|work=Softpedia}}&lt;/ref&gt;&lt;ref name=&quot;utorrent1&quot;&gt;{{cite web|url=https://forum.utorrent.com/viewtopic.php?id=56428 |title=Browser search toolbars - Forums - ÂµTorrent - The Lightweight and Efficient BitTorrent Client |publisher=Forum.utorrent.com |date= |accessdate=2009-11-28}}&lt;/ref&gt;
+| {{Nts|{{#expr:92086035/3573017.3round6}}}}%
+|-
+! {{rh}} | [[OneSwarm]]
+| {{start date and age|2008}}
+| {{Latest stable software release/OneSwarm}}
+| {{yes}}
+| {{free|[[GPL]]}}
+| {{free}}
+| {{yes}}
+| {{?}}
+|-
+| {{rh}} | [[Opera (web browser)|Opera]]
+| {{start date and age|2006|06|20}}&lt;ref&gt;{{cite web |url=http://www.opera.com/docs/history/index.dml |title=Opera version history |publisher=[[Opera Software]] |accessdate=2010-01-18}}&lt;/ref&gt;
+| {{Latest stable software release/Opera}}
+| {{no}}
+| {{Proprietary}}
+| {{free}}
+| {{yes}}
+| {{Nts|{{#expr:556902/3573017.3round6}}}}%
+|-
+! {{rh}} | QTorrent &lt;ref&gt;{{cite web|url=http://thegraveyard.org/qtorrent.php |title=QTorrent - A Qt BitTorrent client}}&lt;/ref&gt;
+| {{?}}
+| 0.9.5
+| {{yes}}
+| {{free|[[MIT License]]}}
+| {{free}}
+| {{yes}}
+| {{?}}
+|-
+! {{rh}} | [[qBittorrent]]
+| {{start date and age|2006|03|22}}&lt;ref&gt;{{cite web|url=http://sourceforge.net/projects/qbittorrent/ |title=qBittorrent at SourceForge.net |publisher=[http://qbittorrent.sourceforge.net/ qBittorrent].[[SourceForge]].net |date=2006-03-22 |accessdate=2010-01-21}}&lt;/ref&gt;
+| {{Latest stable software release/qBittorrent}}
+| {{yes}}
+| {{free|[[GPL]]}}
+| {{free}}
+| {{yes}}
+| {{Nts|{{#expr:27014/3573017.3round6}}}}%
+|-
+! {{rh}} | [[rTorrent]]
+| {{start date and age|2004|07|15}}&lt;ref name=&quot;rakshasa-timeline&quot;&gt;http://libtorrent.rakshasa.no/timeline&lt;/ref&gt;
+| {{Latest stable software release/rTorrent}}
+| {{yes}}
+| {{free|[[GPL]]}}
+| {{free}}
+| {{yes}}
+| {{Nts|{{#expr:702498/3573017.3round6}}}}%
+|-
+! {{rh2}} | Rufus
+| {{?}}
+| {{?}}
+| {{yes}}
+| {{free|[[MIT License]]}}
+| {{free}}
+| {{yes}}
+| {{Nts|{{#expr:7956/3573017.3round6}}}}%
+|-
+! {{rh}} | [[Shareaza]]
+| {{start date and age|2002|07|01}}{{Citation needed|date=August 2008}}
+| {{Latest stable software release/Shareaza}}
+| {{yes}}
+| {{free|[[GPL]]}}
+| {{free}}
+| {{yes}}
+| {{Nts|{{#expr:(411067+38789)/3573017.3round6}}}}%
+|-
+! {{rh}} | SKDownloader
+| {{?}}
+| 3.4.1 (November 25th, {{When|date=June 2011}}){{Citation needed|date=June 2011}}
+| {{no}}
+| {{Proprietary}}
+| {{free}}
+| {{No|Adware}}
+| {{?}}
+|-
+! {{rh}} | SoMud
+| {{start date and age|2010|06|01}}
+| 1.3.1&lt;br&gt;&lt;small&gt;({{start date and age|2011|05|25}})&lt;/small&gt;
+| {{no}}
+| {{Proprietary}} [[Freeware]]
+| {{free}}
+| {{yes}}
+| {{?}}
+|-
+! {{rh}} | [[SymTorrent]]
+| {{?}}
+| 1.50&lt;br&gt;&lt;small&gt;({{start date and age|2011|3|11}}&lt;ref&gt;{{cite web|url=http://amorg.aut.bme.hu/projects/symtorrent |title=SymTorrent - AMORG |publisher=[http://amorg.aut.bme.hu/ Applied Mobile Research Group] |date=2008-11-26 |accessdate=2010-01-21}}&lt;/ref&gt;)&lt;/small&gt;
+| {{yes}}
+| {{free|[[GPL]]}}
+| {{free}}
+| {{yes}}
+| {{Nts|{{#expr:23573/3573017.3round6}}}}%
+|-
+! {{rh}} | Tixati &lt;ref name=&quot;tixati.com&quot;&gt;http://www.tixati.com/&lt;/ref&gt;
+| {{start date and age|2009|06|24}}
+| 1.74&lt;br&gt;&lt;small&gt;({{start date and age|2011|10|01}})&lt;/small&gt;
+| {{no}}
+| {{Proprietary}}
+| {{free}}
+| {{yes}}
+| {{Nts|{{#expr:3214/3573017.3round6}}}}%
+|-
+! {{rh2}} | [[Tomato Torrent]]
+| {{?}}
+| {{Latest stable software release/Tomato Torrent}}
+| {{yes}}
+| {{free|[[BitTorrent open source License]]}}
+| {{free}}
+| {{yes}}
+| {{?}}
+|-
+! {{rh}} | [[Tonido|Tonido Torrent]]
+| {{start date and age|2009|10|1}}
+| {{Latest stable software release/Tonido}}
+| {{no}}
+| {{Proprietary}}
+| {{free}}
+| {{yes}}
+| {{?}}
+|-
+! {{rh2}} | Torium
+| {{start date and age|2008}}
+| 0.4.2&lt;br&gt;&lt;small&gt;({{start date and age|2009|04|18}})&lt;/small&gt;
+| {{yes}}
+| {{free|[[ISC license|ISCL]]}}
+| {{free}}
+| {{?}}
+| {{?}}
+|-
+! {{rh2}} | [[Torrent Swapper]]
+| {{start date and age|2006|07|27}}&lt;ref&gt;{{cite web|url=http://sourceforge.net/projects/bit-torrent/ |title=Torrent Swapper at SourceForge.net |publisher=[http://bit-torrent.sourceforge.net/ bit-torrent].[[SourceForge]].net |date=2006-08-10 |accessdate=2010-01-21}}&lt;/ref&gt;
+| {{Latest stable software release/Torrent Swapper}}
+| {{yes}}
+| {{free|[[MIT License]]}}
+| {{free}}
+| {{yes}}
+| {{?}}
+|-
+! {{rh2}} | [[TorrentFlux]]
+| {{start date and age|2004|11|12}}&lt;ref&gt;{{cite web|url=http://sourceforge.net/projects/torrentflux/ |title=TorrentFlux - PHP Torrent Client at SourceForge.net |publisher=[http://www.torrentflux.com/ TorrentFlux].[[SourceForge]].net |date=2004-11-12 |accessdate=2010-01-21}}&lt;/ref&gt;
+| {{Latest stable software release/TorrentFlux}}
+| {{yes}}
+| {{free|[[GPL]]}}
+| {{free}}
+| {{yes}}
+| {{?}}
+|-
+! {{rh2}} | TorrentVolve
+| {{?}}
+| 1.4&lt;br&gt;&lt;small&gt;({{start date and age|2007|01|05}})&lt;/small&gt;
+| {{yes}}
+| {{free|[[GPL]]}}
+| {{free}}
+| {{yes}}
+| {{?}}
+|-
+! {{rh}} | [[Transmission (BitTorrent client)|Transmission]]
+| {{start date and age|2005|09|15}}&lt;ref&gt;http://trac.transmissionbt.com/wiki/Changes&lt;/ref&gt;
+| {{Latest stable software release/Transmission (BitTorrent client)}}
+| {{yes}}
+| {{free|[[GPL]]/[[MIT License]]}}
+| {{free}}
+| {{yes}}
+| {{Nts|{{#expr:11637110/3573017.3round6}}}}%
+|-
+! {{rh}} | [[Tribler]]
+| {{start date and age|2006|02|26}}{{Citation needed|date=September 2009}}
+| {{Latest stable software release/Tribler}}
+| {{yes}}
+| {{free|[[LGPL]]}}
+| {{free}}
+| {{yes}}
+| {{Nts|{{#expr:10296/3573017.3round6}}}}%
+|-
+! {{rh}} | [[Vuze]] &lt;small&gt;(formerly Azureus)&lt;/small&gt;
+| {{start date and age|2003|06|24}}&lt;ref&gt;{{cite web|url=http://sourceforge.net/projects/azureus/ |title=Azureus / Vuze at SourceForge.net |publisher=[http://azureus.sourceforge.net/ Azureus].[[SourceForge]].net |date=2003-06-24 |accessdate=2010-01-21}}&lt;/ref&gt;
+| {{Latest stable software release/Vuze}}
+| {{partial}}
+| {{Proprietary}} (platform)/&lt;br&gt;[[GPL]] (core engine)
+| {{nonfree|Free-main&lt;br&gt;$10-mobile&lt;br&gt;Vuze Plus-$24.99 for 1 year}}
+| {{no|Adware}}; Optional Vuze [[Toolbar]]:&lt;br&gt;powered by [[Bing]]&lt;ref&gt;{{cite web|url=http://www.softpedia.com/get/Internet/File-Sharing/Azureus.shtml|title=Download Vuze (formerly Azureus) Latest Beta / Latest Stable|accessdate=2009-02-16|work=Softpedia}}&lt;/ref&gt;&lt;ref&gt;{{cite web|url=http://faq.vuze.com/?CategoryID=30 |title=Vuze FAQ / Toolbar |publisher=Faq.vuze.com |date= |accessdate=2009-11-28}}&lt;/ref&gt;
+| {{Nts|{{#expr:86055354/3573017.3round6}}}}%
+|-
+! {{rh}} | [[Wyzo]]
+| {{?}}
+| 3.6.4&lt;br&gt;&lt;small&gt;({{start date and age|2010|09|24}})&lt;/small&gt;
+| {{no}}
+| {{Proprietary}}
+| {{free}}
+| {{?}}
+| {{?}}
+|-
+! {{rh}} | [[Xunlei]]
+| {{?}}
+| {{Latest stable software release/Xunlei}}
+| {{no}}
+| {{Proprietary}}
+| {{free}}
+| {{No|Adware}}
+| {{Nts|{{#expr:104717386/3573017.3round6}}}}%
+|-
+! {{rh2}} | [[ZipTorrent]]
+| {{?}}
+| {{Latest stable software release/ZipTorrent}}
+| {{no}}
+| {{?}}
+| {{?}}
+| {{yes}}
+| {{Nts|{{#expr:18/3573017.3round6}}}}%
+|- class=&quot;sortbottom&quot;
+! BitTorrent client
+! First public release date
+! Latest stable
+! [[Free and open source software|FOSS]]
+! [[Software license]]
+! Cost ([[United States dollar|USD]])
+! [[Spyware]], [[Adware]], [[Malware]]-free &lt;ref name=&quot;malware&quot;/&gt;
+! [[Usage share of BitTorrent clients|Usage]]&lt;ref name=&quot;Unique-peer_id-statistics&quot;/&gt;
+|}
+
+=== Operating system support ===
+BitTorrent clients are [[compiled]] to run on certain [[operating system]]s, without [[emulator|emulation]]. For a given client/OS combination, client support status can be one of six possibilities:
+* ''No'' means that it does not exist or was never released.
+* ''Partial'' means that the BitTorrent client works, but lacks important functionality or is very unstable compared to versions for other OSs, that is to say it has roughly [[development stage#Alpha|alpha]] or [[development stage#Pre-alpha|pre-alpha]] quality, and it is still being developed.
+* ''Beta'' means that a version of the BitTorrent client is fully functional and has been released, but is still in development, e.g., for stability.
+* ''Yes'' means that the BitTorrent client has been officially released in a fully functional, stable version.
+* ''Dropped'' means that the latest stable version of the BitTorrent client does not work on the operating system, although an older version is available that does. The number in parentheses is the last known stable version which was officially released for that OS.
+* ''Included'' means that the BitTorrent client comes pre-packaged as part of or has been integrated into the operating system.
+This list is not exhaustive, but rather reflects the most common OSs today but does not include the growing appliance segment (for example, the [[Opera (web browser)|Opera]] web browser has gained a leading role for use in mobile phones, smartphones, the Nintendo DS and Wii, and Personal Digital Assistants, and is also used in Interactive televisions).
+Both the BitTorrent client and OS means most recent version, example: Windows 7 with ÂµTorrent 3.
+&lt;!--MAJOR/NOTABLE ONLY or else under OTHER--&gt;
+{| style=&quot;font-size: 85%; text-align: center;&quot; class=&quot;wikitable sortable&quot;
+|-
+! BitTorrent client
+! [[Microsoft Windows]] OS family
+! [[Mac OS X]]
+! [[Linux]]
+! Other [[Unix]]
+|-
+! {{rh2}} | [[ABC (Yet Another BitTorrent Client)|ABC]]
+| {{yes}}
+| {{no}}
+| {{dropped|Obsolete}}
+| {{no}}
+|-
+! {{rh}} | [[Acquisition (software)|Acquisition]]
+| {{no}}
+| {{yes}}
+| {{no}}
+| {{no}}
+|-
+! {{rh2}} | Arctic Torrent
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{no}}
+|-
+! {{rh}} | Aria2
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes|[[FreeBSD]], [[Solaris (operating system)|Solaris]]}}
+|-
+! {{rh}} | [[BitComet]]
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{no}}
+|-
+! {{rh}} | Bitflu
+| {{no}}
+| {{yes}}
+| {{yes}}
+| {{yes|[[FreeBSD]]}}
+|-
+! {{rh}} | [[BitLet]]
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{no}}
+|-
+! {{rh2}} | [[BitLord]]
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{no}}
+|-
+! {{rh}} | BitSpirit
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{no}}
+|-
+! {{rh}} | [[BitThief]]
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{no}}
+|-
+! {{rh2}} | [[BitTornado]]
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{no}}
+|-
+! {{rh2}} | [[BitTorrent (software)|BitTorrent 5 / Mainline]]
+| {{terminated}} (5.2.2)
+| {{dropped|Obsolete}} (4.27.2)
+| {{terminated}} (5.3)
+| {{no}}
+|-
+! {{rh}} | [[BitTorrent (software)|BitTorrent 7]]
+| {{yes}}
+| {{yes}}
+| {{no}}
+| {{no}}
+|-
+! {{rh2}} | [[Bits on Wheels]]
+| {{no}}
+| {{yes}}
+| {{no}}
+| {{no}}
+|-
+! {{rh2}} | [[BitTyrant]]
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes|[[FreeBSD]]}}
+|-
+! {{rh2}} | [[Blog Torrent]]
+| {{yes}}
+| {{yes}}
+| {{no}}
+| {{no}}
+|-
+! {{rh}} | BTG
+| {{no}}
+| {{yes}}
+| {{yes}}
+| {{no}}
+|-
+! {{rh}} | BTPD
+| {{no}}
+| {{yes}}
+| {{yes}}
+| {{yes|[[FreeBSD]]}}
+|-
+! {{rh}} | [[Deluge (software)|Deluge]]
+| {{yes}}
+| {{dropped|Source only}}&lt;ref name=&quot;deluge-old&quot;&gt;Official packages for ports are no longer available.&lt;/ref&gt;
+| {{yes}}
+| {{yes|[[FreeBSD]], [[Solaris (operating system)|Solaris]]}}
+|-
+! {{rh}} | [[FlashGet]]
+| {{Yes}}
+| {{no}}
+| {{no}}
+| {{no}}
+|-
+! {{rh2}} | Flush
+| {{no}}
+| {{no}}
+| {{yes}}
+| {{no}}
+|-
+! {{rh}} | Folx
+| {{No}}
+| {{yes}}
+| {{No}}
+| {{no}}
+|-
+! {{rh}} | [[Free Download Manager]]
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{no}}
+|-
+! {{rh2}} | G3 Torrent
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{no}}
+|-
+! {{rh}} | Global Downloader
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{no}}
+|-
+! {{rh2}} | [[Gnome BitTorrent]]
+| {{no}}
+| {{no}}
+| {{yes}}
+| {{no}}
+|-
+! {{rh}} | [[Hadouken (software)|Hadouken]]
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{no}}
+|-
+! {{rh}} | Halite
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{no}}
+|-
+! {{rh}} | [[KGet]]
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes|[[FreeBSD]]}}
+|-
+! {{rh}} | [[KTorrent]]
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes|[[FreeBSD]]}}
+|-
+! {{rh2}} | [[LimeWire]]
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes|[[Java (software platform)|Any OS that supports Java]]}}
+|-
+! {{rh2}} | Localhost
+| {{yes}}
+| {{no}}
+| {{yes}}
+| {{no}}
+|-
+! {{rh2}} | [[Meerkat Bittorrent Client]]
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{no}}
+|-
+! {{rh}} | [[Miro (software)|Miro]]
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes|[[FreeBSD]]}}
+|-
+! {{rh}} | [[MLDonkey]]
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes |[[FreeBSD]], [[OpenBSD]], [[Solaris (operating system)|Solaris]], [[MorphOS]] }}
+|-
+! {{rh}} | [[MP3 Rocket]]
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{no}}
+|-
+! {{rh}} | [[ÂµTorrent]]
+| {{yes}}
+| {{yes}}&lt;!--ref&gt;{{cite web |url=https://www.utorrent.com/downloads/mac |title=Download - &amp;micro;Torrent - a (very) tiny BitTorrent client |date=2010-06-28 10:10:37 |publisher=www.utorrent.com |accessdate=2010-06-28 17:59:22}}&lt;/ref--&gt;
+| {{Partial}}
+| {{no}}
+|-
+! {{rh}} | [[OneSwarm]]
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{no}}
+|-
+| {{rh}} | [[Opera (web browser)|Opera]]
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes|[[FreeBSD]], [[Solaris (operating system)|Solaris]]}}
+|-
+! {{rh}} | QTorrent
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes|[[FreeBSD]]}}
+|-
+! {{rh}} | [[qBittorrent]]
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes|[[FreeBSD]], [[eComStation]]}}
+|-
+! {{rh}} | [[rTorrent]]
+| {{no}}
+| {{yes}}
+| {{yes}}
+| {{yes|[[FreeBSD]], [[OpenBSD]], [[Solaris (operating system)|Solaris]]}}
+|-
+! {{rh2}} | Rufus
+| {{yes}}
+| {{no}}
+| {{yes}}
+| {{no}}
+|-
+! {{rh}} | [[Shareaza]]
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{no}}
+|-
+! {{rh}} | SKDownloader
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{no}}
+|-
+! {{rh}} | SoMud
+| {{yes}}
+| {{yes}}
+| {{no}}
+| {{no}}
+|-
+! {{rh2}} | [[SymTorrent]]
+| {{no}}
+| {{no}}
+| {{no}}
+| {{yes|[[Symbian OS]]}}
+|-
+! {{rh}} | Tixati
+| {{yes}}
+| {{no}}
+| {{yes}}
+| {{no}}
+|-
+! {{rh2}} | [[Tomato Torrent]]
+| {{no}}
+| {{yes}}
+| {{no}}
+| {{no}}
+|-
+! {{rh}} | [[Tonido| Tonido Torrent]]
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+|-
+
+! {{rh2}} | Torium
+| {{Partial}}
+| {{no}}
+| {{yes}}
+| {{no}}
+|-
+! {{rh2}} | [[Torrent Swapper]]
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes|[[FreeBSD]]}}
+|-
+! {{rh2}} | [[TorrentFlux]]
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes|[[FreeBSD]]}}
+|-
+! {{rh2}} | TorrentVolve
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes|[[FreeBSD]]}}
+|-
+! {{rh}} | [[Transmission (BitTorrent client)|Transmission]]
+| {{no}}
+| {{yes}}
+| {{yes}}
+| {{yes|[[FreeBSD]], [[NetBSD]], [[OpenBSD]], [[Solaris (operating system)|Solaris]], [[OpenWrt]]}}
+|-
+! {{rh}} | [[Tribler]]
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes|[[FreeBSD]]}}
+|-
+! {{rh}} | [[Vuze]] &lt;small&gt;(formerly Azureus)&lt;/small&gt;
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes|[[FreeBSD]]}}
+|-
+! {{rh}} | [[Wyzo]]
+| {{yes}}
+| {{yes}}
+| {{no}}
+| {{no}}
+|-
+! {{rh2}} | [[ZipTorrent]]
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{no}}
+|- class=&quot;sortbottom&quot;
+! BitTorrent client
+! [[Microsoft Windows]]
+! [[Mac OS X]]
+! [[Linux]]
+! Other [[Unix]]
+|}
+
+=== Interface and programming ===
+
+{| style=&quot;font-size: 85%; text-align: center;&quot; class=&quot;wikitable sortable&quot;
+|-
+! BitTorrent client
+! [[Graphical user interface|GUI]]
+! web
+! [[Command-line interface|CLI]]
+! other
+! [[Programming language]]
+! Based on
+! [[IPv6]]&lt;ref name=&quot;ipv6&quot;&gt;Clients that have been seen in the real world to actually work with IPv6, see [http://www.sixxs.net/tools/tracker/clients/ IPv6 BitTorrent Clients]&lt;/ref&gt;
+! [[Micro Transport Protocol|ÂµTP]]
+|-
+! {{rh2}} | [[ABC (Yet Another BitTorrent Client)|ABC]]
+| {{yes}}
+| {{yes}}
+| {{no}}
+| {{no}}
+| [[Python (programming language)|Python]]
+| BitTornado
+| {{partial|buggy}}&lt;ref name=&quot;ipv6announcebug&quot;&gt;Announcements to the tracker are made via [[IPv6]] if possible, but the client doesn't listen on the respective port.&lt;/ref&gt;
+| {{no}}
+|-
+! {{rh}} | [[Acquisition (software)|Acquisition]]
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{no}}
+| [[Objective-C]] and [[Cocoa (software)|Cocoa]]
+| Limewire
+| {{?}}
+| {{no}}
+|-
+! {{rh2}} | Arctic Torrent
+| {{yes}}
+| {{yes}}
+| {{no}}
+| {{no}}
+| [[C++]]
+| [[libtorrent (Rasterbar)]]
+| {{no}}
+| {{no}}
+|-
+! {{rh}} | Aria2
+| {{no}}
+| {{yes}}
+| {{yes}}
+| {{yes|[[Daemon (computer software)|Daemon]], XML over HTTP remote control API}}
+| [[C++]]
+| -
+| {{yes}} &lt;ref&gt;http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=448390#20&lt;/ref&gt;
+| {{no}}
+|-
+! {{rh}} | [[BitComet]]
+| {{yes}}
+| {{yes}}
+| {{Partial}} &lt;ref&gt;BitComet command line interface see [http://wiki.bitcomet.com/BitComet_Command_Line BitComet Command Line - BitComet Wiki]&lt;/ref&gt;
+| {{no}}
+| [[C++]]
+| -
+| {{no}}
+| {{no}}
+|-
+! {{rh}} | Bitflu
+| {{no}}
+| {{yes}}
+| {{yes}}
+| {{yes|[[Telnet]]}}
+| [[Perl]]
+| -
+| {{yes}}
+| {{no}}
+|-
+! {{rh}} | [[BitLet]]
+| {{no}}
+| {{yes}}
+| {{no}}
+| {{no}}
+| [[Java (programming language)|Java]] Applet
+| -
+| {{?}}
+| {{no}}
+|-
+! {{rh2}} | [[BitLord]]
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{no}}
+| [[C++]]
+| BitComet
+| {{no}}
+| {{no}}
+|-
+! {{rh}} | BitSpirit
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{no}}
+| [[C++]]
+| -
+| {{yes}}
+| {{no}}
+|-
+! {{rh}} | [[BitThief]]
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{no}}
+| [[Java (programming language)|Java]]
+| {{?}}
+| {{?}}
+| {{no}}
+|-
+! {{rh2}} | [[BitTornado]]
+| {{yes}}
+| {{no}}
+| {{partial}}
+| {{no}}
+| [[Python (programming language)|Python]]
+| BitTorrent
+| {{yes}}
+| {{no}}
+|-
+! {{rh2}} | [[BitTorrent (software)|BitTorrent 5 / Mainline]]
+| {{yes}}
+| {{no}}
+| {{partial}}
+| {{no}}
+| [[Python (programming language)|Python]]
+| -
+| {{no}}
+| {{no}}
+|-
+! {{rh}} | [[BitTorrent (software)|BitTorrent 6]]
+| {{yes}}
+| {{yes}}
+| {{partial}}
+| {{no}}
+| [[C++]]
+| ÂµTorrent
+| {{yes}}
+| {{yes}}
+|-
+! {{rh2}} | [[Bits on Wheels]]
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{no}}
+| [[Objective-C]] and [[Cocoa (software)|Cocoa]]
+| -
+| {{yes}}
+| {{no}}
+|-
+! {{rh2}} | [[BitTyrant]]
+| {{yes}}
+| {{yes}}
+| {{partial}}
+| {{yes|Telnet, XML over HTTP remote control API}}
+| [[Java (programming language)|Java]] and [[Standard Widget Toolkit|SWT]]
+| Azureus
+| {{yes}}
+| {{no}}
+|-
+! {{rh2}} | [[Blog Torrent]]
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{?}}
+| {{?}}
+| {{?}}
+| {{no}}
+|-
+! {{rh}} | BTG
+| {{yes}}
+| {{yes}}
+| {{partial}}
+| {{no}}
+| [[C++]]
+| [[libtorrent (Rasterbar)]]
+| {{partial}}
+| {{no}}
+|-
+! {{rh}} | BTPD
+| {{no}}
+| {{yes2|Third Party}}
+| {{yes}}
+| {{no}}
+| [[C (programming language)|C]]
+| -
+| {{partial}}
+| {{no}}
+|-
+! {{rh}} | [[Deluge (software)|Deluge]]
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes|[[Daemon (computer software)|Daemon]]}}
+| [[Python (programming language)|Python]] and [[C++ (programming language)|C++]]
+| [[libtorrent (Rasterbar)]]
+| {{yes}} &lt;ref&gt;{{cite web|url=http://dev.deluge-torrent.org/ticket/335 |title=#335 (can not connect to ipv6 only tracker) â Deluge |publisher=Dev.deluge-torrent.org |date= |accessdate=2009-11-28}}&lt;/ref&gt;
+| {{no}}
+|-
+! {{rh}} | [[FlashGet]]
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{?}}
+| {{?}}
+| {{no}}
+| {{no}}
+|-
+! {{rh2}} | Flush
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{no}}
+| [[C++]]
+| [[libtorrent (Rasterbar)]]
+| {{yes}}
+| {{no}}
+|-
+! {{rh}} | Folx
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{?}}
+| {{?}}
+| {{no}}
+| {{no}}
+|-
+! {{rh}} | [[Free Download Manager]]
+| {{yes}}
+| {{yes}}
+| {{partial}}
+| {{no}}
+| [[C++]]
+| [[libtorrent (Rasterbar)]]
+| {{?}}
+| {{no}}
+|-
+! {{rh2}} | G3 Torrent
+| {{yes}}
+| {{yes}}
+| {{no}}
+| {{no}}
+| [[Python (programming language)|Python]]
+| BitTorrent
+| {{?}}
+| {{no}}
+|-
+! {{rh2}} | [[Gnome BitTorrent]]
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{no}}
+| [[Python (programming language)|Python]]
+| {{?}}
+| {{?}}
+| {{no}}
+|-
+! {{rh}} | [[Hadouken (software)|Hadouken]]
+| {{no}}
+| {{no}}
+| {{no}}
+| {{yes|[[Daemon (computer software)|Daemon]]}}
+| [[C Sharp (programming language)|C#]]
+| [[MonoTorrent]]
+| {{?}}
+| {{no}}
+|-
+! {{rh}} | Halite
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{no}}
+| [[C++]]
+| [[libtorrent (Rasterbar)]]
+| {{?}}
+| {{no}}
+|-
+! {{rh}} | [[KGet]]
+| {{yes}}
+| {{yes}}
+| {{Partial}} &lt;ref&gt;[[Qdbus]] interface&lt;/ref&gt;
+| {{no}}
+| [[C++]]
+| -
+| {{yes}}
+| {{no}}
+|-
+! {{rh}} | [[KTorrent]]
+| {{yes}}
+| {{yes}}
+| {{partial}}
+| {{no}}
+| [[C++]]
+| -
+| {{yes}}
+| {{yes}}&lt;ref&gt;{{cite web|url=http://ktorrent.org/?q=node/42 |title=KTorrent 4.0 is out |publisher=KTorrent |date= |accessdate=2010-05-24}}&lt;/ref&gt;
+|-
+! {{rh2}} | [[LimeWire]]
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{no}}
+| [[Java (programming language)|Java]]
+| [[libtorrent (Rasterbar)]]
+| {{no}}
+| {{no}}
+|-
+! {{rh2}} | Localhost
+| {{no}}
+| {{yes}}
+| {{no}}
+| {{no}}
+| [[Java (programming language)|Java]] and [[Standard Widget Toolkit|SWT]]
+| Azureus
+| {{?}}
+| {{no}}
+|-
+! {{rh2}} | [[Meerkat Bittorrent Client]]
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{no}}
+| [[C++]]
+| -
+| {{no}}
+| {{no}}
+|-
+! {{rh}} | [[Miro (software)|Miro]]
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{no}}
+| [[C++]]
+| [[libtorrent (Rasterbar)]]
+| {{?}}
+| {{no}}
+|-
+! {{rh}} | [[MLDonkey]]
+| {{yes|Network GUI}}
+| {{yes}}
+| {{partial}}
+| {{yes|Telnet}}
+| [[Ocaml]]
+| -
+| {{no}}
+| {{no}}
+|-
+! {{rh}} | [[MP3 Rocket]]
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{no}}
+| [[Java (programming language)|Java]]
+| -
+| {{no}}
+| {{no}}
+|-
+! {{rh}} | [[ÂµTorrent]]
+| {{yes}}
+| {{yes}}
+| {{no}}&lt;ref&gt;{{cite web|url=https://forum.utorrent.com/viewtopic.php?id=53988 |title=uTorrent command line options - Forums - ÂµTorrent - The Lightweight and Efficient BitTorrent Client |publisher=Forum.utorrent.com |date= |accessdate=2009-11-28}}&lt;/ref&gt;
+| {{no}}
+| [[C++]]&lt;ref&gt;{{cite web|url=https://www.utorrent.com/faq.php#How_can_.C2.B5Torrent_be_so_small_and_so_fast.3F |title=General - FAQ - ÂµTorrent - a (very) tiny BitTorrent client |publisher=www.utorrent.com |date= |accessdate=2009-11-28}}&lt;/ref&gt;
+| -
+| {{yes}}&lt;ref&gt;{{cite web|url=https://forum.utorrent.com/viewtopic.php?id=44003 |title=ÂµTorrent 1.8 released |publisher=Forum.utorrent.com |date= |accessdate=2009-11-28}}&lt;/ref&gt;
+| {{yes}}&lt;ref&gt;{{cite web|url=https://forum.utorrent.com/viewtopic.php?id=49813 |title=ÂµTorrent 1.9 alpha 13485 |publisher=Forum.utorrent.com |date= |accessdate=2008-11-24}}&lt;/ref&gt;
+|-
+! {{rh}} | [[OneSwarm]]
+| {{partial}}
+| {{yes}}
+| {{partial|No/Partial}}
+| {{no}}
+| [[Java (programming language)|Java]]
+| Azureus
+| {{yes}}
+| {{no}}
+|-
+| {{rh}} | [[Opera (web browser)|Opera]]
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{no}}
+| [[C++]]
+| -
+| {{yes}}
+| {{no}}
+|-
+! {{rh}} | QTorrent
+| {{yes|[[Qt (toolkit)]]}}
+| {{no}}
+| {{no}}
+| {{no}}
+| [[C++]]/[[PyQt]]
+| BitTornado
+| {{?}}
+| {{no}}
+|-
+! {{rh}} | [[qBittorrent]]
+| {{yes|[[Qt (toolkit)]]}}
+| {{yes}}
+| {{partial}}
+| {{no}}
+| [[C++]]
+| [[libtorrent (Rasterbar)]]
+| {{yes}}
+| {{no}}
+|-
+! {{rh}} | [[rTorrent]]
+| {{no}}
+| {{yes2|Third Party}}
+| {{yes}}
+| {{yes|[[SCGI]]}}
+| [[C++]]
+| [[libTorrent (Rakshasa)]]
+| {{no}}&lt;ref&gt;{{cite web|url=http://libtorrent.rakshasa.no/ticket/1111 |title=#1111 (Support for IPv6?) â The libTorrent and rTorrent Project |publisher=Libtorrent.rakshasa.no |date=2009-07-20 |accessdate=2009-11-28}}&lt;/ref&gt;
+| {{no}}
+|-
+! {{rh2}} | Rufus
+| {{yes}}
+| {{yes}}
+| {{no}}
+| {{no}}
+| [[Python (programming language)|Python]]
+| G3 Torrent
+| {{no}}
+| {{no}}
+|-
+! {{rh}} | [[Shareaza]]
+| {{yes}}
+| {{yes}}
+| {{partial}}
+| {{no}}
+| [[C++]]
+| -
+| {{no}}
+| {{no}}
+|-
+! {{rh}} | SKDownloader
+| {{yes}}
+| {{yes}}
+| {{no}}
+| {{no}}
+| [[Java (programming language)|Java]]
+| -
+| {{yes}}
+| {{no}}
+|-
+! {{rh}} | SoMud&lt;ref&gt;[http://www.somud.com SoMud Homepage]&lt;/ref&gt;
+| {{yes}}&lt;ref&gt;[http://www.somud.com/index.php/screenshots SoMud GUI Screenshots]&lt;/ref&gt;
+| {{no}}
+| {{partial}}
+| {{no}}
+| [[C++]]
+| ?
+| {{yes}}
+| {{no}}
+|-
+! {{rh2}} | [[SymTorrent]]
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{?}}
+| {{?}}
+| {{?}}
+| {{no}}
+|-
+! {{rh}} | Tixati
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{no}}
+| [[C++]]
+| -
+| {{yes}}
+| {{no}}
+|-
+! {{rh2}} | [[Tomato Torrent]]
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{no}}
+| [[Cocoa (API)|Cocoa]]
+| BitTorrent
+| {{no}}
+| {{no}}
+|-
+! {{rh}} | [[Tonido|Tonido Torrent]]
+| {{no}}
+| {{yes}}
+| {{no}}
+| {{no}}
+| [[C++]]
+| [[libtorrent (Rasterbar)]]
+| {{no}}
+| {{no}}
+|-
+! {{rh2}} | Torium
+| {{yes|[[gtkmm]]}}
+| {{no}}
+| {{no}}
+| {{yes|directory monitoring (ssh,sftp)}}
+| [[C++]]
+| [[libtorrent (Rasterbar)]]
+| {{Partial}}
+| {{no}}
+|-
+! {{rh2}} | [[Torrent Swapper]]
+| {{yes}}
+| {{yes}}
+| {{no}}
+| {{no}}
+| [[Python (programming language)|Python]]
+| BitTorrent
+| {{partial|buggy}}&lt;ref name=&quot;ipv6announcebug&quot; /&gt;
+| {{no}}
+|-
+! {{rh2}} | [[TorrentFlux]]
+| {{no}}
+| {{yes}}
+| {{no}}
+| {{no}}
+| [[PHP]]
+| BitTornado
+| {{no}}
+| {{no}}
+|-
+! {{rh2}} | TorrentVolve
+| {{no}}
+| {{yes}}
+| {{no}}
+| {{no}}
+| [[PHP]]
+| Azureus
+| {{partial}} &lt;ref name=&quot;torrentvolve&quot;&gt;When Azureus module is used&lt;/ref&gt;
+| {{no}}
+|-
+! {{rh}} | [[Transmission (BitTorrent client)|Transmission]]
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes|Daemon, JSON-RPC over HTTP remote control API}}
+| [[C (programming language)|C]]
+| -
+| {{yes}}
+| {{yes|From 2.30}}
+|-
+! {{rh}} | [[Tribler]]
+| {{yes}}
+| {{no}}
+| {{partial}}
+| {{no}}
+| [[Python (programming language)|Python]]
+| ABC
+| {{yes}}
+| {{no}}
+|-
+! {{rh}} | [[Vuze]] &lt;small&gt;(formerly Azureus)&lt;/small&gt;
+| {{yes}}
+| {{yes}}
+| {{partial}}
+| {{yes|Telnet, XML over HTTP remote control API}}
+| [[Java (programming language)|Java]] and [[Standard Widget Toolkit|SWT]]
+| -
+| {{yes}}
+| {{yes}}
+|-
+! {{rh2}} | [[ZipTorrent]]
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{no}}
+| [[C++]]
+| [[libtorrent (Rasterbar)]]
+| {{no}}
+| {{no}}
+|- class=&quot;sortbottom&quot;
+! BitTorrent client
+! [[Graphical user interface|GUI]]
+! web
+! [[Command-line interface|CLI]]
+! other
+! [[Programming language]]
+! Based on
+! [[IPv6]]&lt;ref name=&quot;ipv6&quot;/&gt;
+! [[Micro Transport Protocol|ÂµTP]]
+|}
+
+=== Features I ===
+
+{| style=&quot;font-size: 85%; text-align: center;&quot; class=&quot;wikitable sortable&quot;
+|-
+! BitTorrent client
+! [[Magnet URI]]
+! [[Super-seeding]]
+! [[BitTorrent tracker|Embedded tracker]]
+! [[Universal Plug and Play|UPnP]]&lt;ref name=&quot;upnp&quot;&gt;Automatically configure port forwarding (requires [[Router (computing)|Router]] with [[Universal Plug and Play|UPnP]] support)&lt;/ref&gt;
+! [[NAT Port Mapping Protocol]]
+! [[NAT traversal]]&lt;ref name=&quot;udp_nat&quot;&gt;Many clients claim to support this, but just uPnP calls for opening a TCP port is not effective and disabled by factory default in most new hardware. &quot;UDP NAT Traversal&quot; is the proper working solution, supported by just a few.&lt;/ref&gt;
+! [[Distributed hash table|DHT]]&lt;ref name=&quot;dht&quot;&gt;DHT permits use of trackerless torrents (with supporting clients) to resume normal torrents when their tracker is down. However, some trackers that register their users for keeping tabs on fair usage (such as a ratio of bytes downloaded to uploaded) may not reliably measure and update usage for users employing DHT.&lt;/ref&gt;
+! [[Peer exchange]]
+! [[BitTorrent protocol encryption|Encryption]]
+! [[UDP tracker]]
+! [[Local Peer Discovery|LPD]]
+! [[Proxy]]
+|-
+! {{rh2}} | [[ABC (Yet Another BitTorrent Client)|ABC]]
+| {{no}}
+| {{no}}
+| {{yes}}
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+|-
+! {{rh}} | [[Acquisition (software)|Acquisition]]
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+|-
+! {{rh2}} | Arctic Torrent
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+|-
+! {{rh}} | Aria2
+| {{yes}}
+| {{no}}
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{no}}
+|-
+! {{rh}} | [[BitComet]]
+| {{yes}}
+| {{yes}}
+| {{yes2}} Separate download
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{no}}
+| {{yes|HTTP 1.1,SOCKS4/4a/5}}
+|-
+! {{rh}} | Bitflu
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{yes}}
+| {{yes}}
+| {{no}}
+| {{yes}}
+| {{no}}
+| {{no}}
+|-
+! {{rh}} | [[BitLet]]
+| {{no}}
+| {{no}}
+| {{no}}
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+|-
+! {{rh2}} | [[BitLord]]
+| {{no}}
+| {{no}}
+| {{no}}
+| {{yes}}
+| {{no}}
+| {{yes}}
+| {{no}}
+| {{yes}}
+| {{no}}
+| {{yes}}
+| {{no}}
+| {{yes|HTTP 1.1, SOCKS4/4a/5}}
+|-
+! {{rh}} | BitSpirit &lt;ref name=&quot;bitspirit.cc&quot;/&gt;
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{no}}
+| {{no}}
+|-
+! {{rh}} | [[BitThief]]
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+|-
+! {{rh2}} | [[BitTornado]]
+| {{no}}
+| {{yes}}
+| {{yes}}&lt;ref name=&quot;linuxtracker&quot;&gt;Tracker included with Linux binaries and with source, but not with Windows binary&lt;/ref&gt;
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{no}}
+|-
+! {{rh2}} | [[BitTorrent (software)|BitTorrent 5 / Mainline]]
+| {{no}}
+| {{no}}
+| {{yes}}&lt;ref name=&quot;linuxtracker&quot; /&gt;
+| {{yes}}
+| {{yes}}
+| {{no}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{yes}}
+|-
+! {{rh}} | [[BitTorrent (software)|BitTorrent 6]]
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}&lt;ref name=&quot;exchange&quot;&gt;Exchanging with BT 6 and ÂµTorrent clients (and now MooPolice)&lt;/ref&gt;
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes|HTTP(S),SOCKS4/5}}
+|-
+! {{rh2}} | [[Bits on Wheels]]
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+|-
+! {{rh2}} | [[BitTyrant]]
+| {{no}}
+| {{yes}}{{Citation needed|date=December 2008}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}&lt;ref&gt;It's UDP based, an experimental feature and only supported by other Azureus based clients&lt;/ref&gt;
+| {{yes}}&lt;ref name=&quot;dht_not_compatible&quot;&gt;Has its own DHT, a mainline-DHT compatible implementation is available as plugin&lt;/ref&gt;
+| {{yes}}
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{no}}
+|-
+! {{rh2}} | [[Blog Torrent]]
+| {{no}}
+| {{no}}
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+|-
+! {{rh}} | BTG
+| {{no}}
+| {{no}}
+| {{no}}
+| {{yes}}
+| {{yes}}
+| {{no}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{no}}
+| {{no}}
+|-
+! {{rh}} | BTPD
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+|-
+! {{rh}} | [[Deluge (software)|Deluge]]
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes|HTTP(S), SOCKS4/5}}
+|-
+! {{rh}} | [[FlashGet]]
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{yes}}
+| {{no}}
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{no}}
+|-
+! {{rh}} | Flush
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{yes}}
+| {{yes}}
+| {{no}}
+| {{yes}}
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{yes}}
+| {{no}}
+|-
+! {{rh}} | Folx
+| {{no}}
+| {{no}}
+| {{no}}
+| {{yes}}
+| {{yes}}
+| {{no}}
+| {{yes}}
+| {{yes}}
+| {{no}}
+| {{yes}}
+| {{no}}
+| {{no}}
+|-
+! {{rh}} | [[Free Download Manager]]
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{yes}}
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+|-
+! {{rh2}} | G3 Torrent
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+|-
+! {{rh2}} | [[Gnome BitTorrent]]
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+|-
+! {{rh}} | [[Hadouken (software)|Hadouken]]
+| {{no}}
+| {{yes}}
+| {{no}}
+| {{yes}}
+| {{yes}}
+| {{no}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{no}}
+|-
+! {{rh}} | Halite
+| {{no}}
+| {{no}}
+| {{no}}
+| {{yes}}
+| {{yes}}
+| {{no}}
+| {{yes}}
+| {{no}}
+| {{yes}}
+| {{no}}&lt;ref name=&quot;test&quot;&gt;[http://www.binarynotions.com/halite-bittorrent-client/halite-feature-request-poll], list of features not yet added.&lt;/ref&gt;
+| {{no}}
+| {{no}}
+|-
+! {{rh}} | [[KTorrent]]
+| {{yes}}
+| {{yes}}
+| {{no}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{partial}}
+| {{yes|HTTP,SOCKS4/5}}
+|-
+! {{rh2}} | [[LimeWire]]
+| {{partial}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{no}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{no}}
+| {{no}}
+|-
+! {{rh2}} | Localhost
+| {{no}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{no}}
+| {{yes}}
+| {{yes}} &lt;ref name=dht_localhosts&gt;Localhost uses a DHT protocol called [[Kademlia]] to connect to peers that are running Localhost. Each peer has an index of directories and files that it shares with peers that it is connected to. No one peer is responsible for storing the entire directory structure, it is distributed among everyone. It is collaboratively maintained, edited and built upon by all users in a popularity based system.&lt;/ref&gt;
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+|-
+! {{rh}} | [[Meerkat Bittorrent Client]]
+| {{no}}
+| {{yes}}
+| {{no}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{no}}
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{no}}
+|-
+! {{rh}} | [[MLDonkey]]
+| {{no}}
+| {{no}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{no}}
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{yes}}
+| {{no}}
+| {{no}}
+|-
+! {{rh}} | [[ÂµTorrent]]
+| {{yes}}
+| {{yes}}&lt;ref&gt;{{cite web|url=https://forum.utorrent.com/viewtopic.php?id=11463 |title=ÂµTorrent 1.6 released |publisher=Forum.utorrent.com |date= |accessdate=2009-11-28}}&lt;/ref&gt;
+| {{yes}}&lt;ref&gt;{{cite web|url=http://filesharefreak.com/tutorials/utorrent-make-your-own-bittorrent-tracker/ |title=uTorrent: Make Your Own BitTorrent Tracker |publisher=Filesharefreak.com |date= |accessdate=2009-11-28}}&lt;/ref&gt;
+| {{yes}}&lt;ref&gt;{{cite web|url=https://www.utorrent.com/setup_guide.php |title=Setting up ÂµTorrent for your internet connection |publisher=www.utorrent.com |date= |accessdate=2009-11-28}}&lt;/ref&gt;
+| {{yes}}
+| {{yes}}&lt;ref name=&quot;ÂµTorrent 2.0 beta&quot;&gt;[https://forum.utorrent.com/viewtopic.php?id=60602] ÂµTorrent 2.0 beta&lt;/ref&gt;
+| {{yes}}&lt;ref&gt;ÂµTorrent's [https://www.utorrent.com/faq.php#What_is_DHT.3F] DHT implementation is the same as Mainline and BitComet's, but unfortunately this is incompatible with Azureus's implementation.&lt;/ref&gt;
+| {{yes}}&lt;ref name=&quot;exchange&quot;/&gt;
+| {{yes}}&lt;ref&gt;{{cite web|url=http://torrentfreak.com/how-to-encrypt-bittorrent-traffic/ |title=How To Encrypt BitTorrent Traffic |publisher=Torrentfreak.com |date=2006-04-16 |accessdate=2009-11-28}}&lt;/ref&gt;
+| {{yes}}
+| {{yes}}&lt;ref&gt;{{cite web|url=https://forum.utorrent.com/viewtopic.php?id=25655|date=2007-06-28|title= Announcements Â» ÂµTorrent 1.7 Release Candidate 6|accessdate=2009-12-12}}&lt;/ref&gt;
+| {{partial|HTTP(S), SOCKS4/5}}&lt;ref name=&quot;ÂµTorrent-proxy-Mac&quot;&gt;Mac versions of ÂµTorrent (as of beta version 1.1) do not support proxy.&lt;/ref&gt;
+|-
+! {{rh}} | [[OneSwarm]]
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{no}}
+| {{no}}
+|-
+| {{rh}} | [[Opera (web browser)|Opera]]
+| {{no}}
+| {{no}}
+| {{yes}}&lt;ref name=opera1&gt;{{cite web|url=http://my.opera.com/desktopteam/blog/show.dml/251672 |title=Weekly - Desktop Team - by Opera Desktop Team |publisher=My.opera.com |date=2007-02-27 |accessdate=2009-11-28}}&lt;/ref&gt;
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{yes}}&lt;ref name=opera2&gt;{{cite web|url=http://www.opera.com/docs/changelogs/windows/950b1/ |title=Opera 9.5 Beta 1 for Windows Changelog |publisher=Opera.com |date= |accessdate=2009-11-28}}&lt;/ref&gt;
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+|-
+! {{rh}} | QTorrent
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+|-
+! {{rh}} | [[qBittorrent]]
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes|HTTP(S),SOCKS4/5}}
+|-
+! {{rh}} | [[rTorrent]]
+| {{yes}}&lt;ref&gt;aided with a shell script documented in {{cite web|url=http://libtorrent.rakshasa.no/ticket/2100 |title=That magnet uri ticket thing reincarnated |publisher=libtorrent.rakshasa.no |date= |accessdate=2011-07-04}}&lt;/ref&gt;
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{no}}&lt;ref name=ticket&gt;{{cite web|url=http://libtorrent.rakshasa.no/ticket/1188 |title=local peer discovery |publisher=libtorrent.rakshasa.no |date= |accessdate=2010-04-17}}&lt;/ref&gt;
+| {{no}}
+|-
+! {{rh2}} | Rufus
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+|-
+! {{rh}} | [[Shareaza]]
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{yes}}
+| {{yes}}
+| {{n/a}}
+| {{yes}}&lt;ref&gt;It's not a DHT network, but Shareaza uses [[Gnutella2]] to find other Shareaza clients.&lt;/ref&gt;
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+|-
+! {{rh}} | SoMud
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+|-
+! {{rh2}} | [[SymTorrent]]
+| {{no}}
+| {{no}}
+| {{no}}
+| {{n/a}}
+| {{n/a}}
+| {{n/a}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+|-
+! {{rh}} | Tixati &lt;ref name=&quot;tixati.com&quot;/&gt;
+| {{yes}}
+| {{yes}}
+| {{no}}
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{partial}}
+| {{yes}}
+|-
+! {{rh2}} | [[Tomato Torrent]]
+| {{no}}
+| {{no}}
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+|-
+! {{rh}} | [[Tonido|Tonido Torrent]]
+| {{no}}
+| {{no}}
+| {{no}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+|-
+! {{rh2}} | Torium
+| {{no}}
+| {{no}}
+| {{no}}
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+|-
+! {{rh2}} | [[Torrent Swapper]]
+| {{no}}
+| {{yes}}
+| {{yes}}&lt;ref name=&quot;linuxtracker&quot;/&gt;
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+|-
+! {{rh2}} | [[TorrentFlux]]
+| {{no}}
+| {{yes}}
+| {{no}}
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{no}}
+|-
+! {{rh2}} | TorrentVolve
+| {{no}}
+| {{partial}} &lt;ref name=&quot;torrentvolve&quot; /&gt;
+| {{no}}
+| {{partial}} &lt;ref name=&quot;torrentvolve&quot; /&gt;
+| {{partial}} &lt;ref name=&quot;torrentvolve&quot; /&gt;
+| {{partial}} &lt;ref name=&quot;torrentvolve&quot; /&gt;
+| {{partial}} &lt;ref name=&quot;torrentvolve&quot; /&gt;
+| {{partial}} &lt;ref name=&quot;torrentvolve&quot; /&gt;
+| {{partial}} &lt;ref name=&quot;torrentvolve&quot; /&gt;
+| {{partial}} &lt;ref name=&quot;torrentvolve&quot; /&gt;
+| {{no}}
+| {{partial}} &lt;ref name=&quot;torrentvolve&quot; /&gt;
+|-
+! {{rh}} | [[Transmission (BitTorrent client)|Transmission]]
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}&lt;ref&gt;Exchanges with ÂµTorrent and Azureus peers.&lt;/ref&gt;
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{no}} &lt;ref&gt;Proxy support was removed in version 2.12: {{cite web|url=https://trac.transmissionbt.com/ticket/3688 |title=Ticket #3688 |publisher=trac.transmissionbt.com |date= |accessdate=2011-06-11}}&lt;/ref&gt;
+|-
+! {{rh}} | [[Tribler]]
+| {{yes}}
+| {{no}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{no}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{no}}
+|-
+! {{rh}} | [[Vuze]] &lt;small&gt;(formerly Azureus)&lt;/small&gt;
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}&lt;ref&gt;Since version 2.5.0.2. It's UDP based, an experimental feature and only supported by other Azureus clients&lt;/ref&gt;
+| {{yes}}&lt;ref name=&quot;dht_not_compatible&quot;/&gt;
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{no}}
+| {{yes|HTTP(S)?, SOCKS4/4a/5}}
+|-
+! {{rh2}} | [[ZipTorrent]]
+| {{no}}
+| {{no}}
+| {{no}}
+| {{yes}}
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+|- class=&quot;sortbottom&quot;
+! BitTorrent client
+! [[Magnet URI]]
+! [[Super-seeding]]
+! [[BitTorrent tracker|Embedded tracker]]
+! [[Universal Plug and Play|UPnP]]&lt;ref name=&quot;upnp&quot;/&gt;
+! [[NAT Port Mapping Protocol]]
+! [[NAT traversal]]&lt;ref name=&quot;udp_nat&quot;/&gt;
+! [[Distributed hash table|DHT]]&lt;ref name=&quot;dht&quot;/&gt;
+! [[Peer exchange]]
+! [[BitTorrent protocol encryption|Encryption]]
+! [[UDP tracker]]
+! [[Local Peer Discovery|LPD]]
+! [[Proxy]]
+|}
+
+=== Features II ===
+
+{| style=&quot;font-size: 85%; text-align: center;&quot; class=&quot;wikitable sortable&quot;
+|-
+! BitTorrent client
+! [[Cache]]&lt;ref name=&quot;cache&quot;&gt;Reduces disk usage, file fragmentation (in case it is not preallocated) and latencies due to larger written blocks and cached data for hash checking finished pieces.&lt;/ref&gt;
+! [[Webseeding|Web seeding]]&lt;ref name=&quot;webseed&quot;&gt;Recently implemented (unofficial) web seeding feature, see [http://www.bittornado.com/docs/webseed-spec.txt HTTP-Based Seeding Specification]&lt;/ref&gt;
+! [[Broadcatching]] ([[RSS]])
+! Prioritization
+! Selective downloads
+! [[SOCKS]]
+! Tracker exchange &lt;ref name=&quot;tex&quot;&gt;http://www.bittorrent.org/beps/bep_0028.html&lt;/ref&gt;
+! Remote control via web
+! [[BitTorrent (protocol)#Indexing|Search Engine]]
+! Auto updates
+! Notes
+! Video Streaming (linear stream)
+|-
+! {{rh2}} | [[ABC (Yet Another BitTorrent Client)|ABC]]
+| {{no}}
+| {{yes}}
+| {{no}}
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{yes}}
+| {{yes2}} Separate download
+| {{no}}
+|
+|-
+! {{rh}} | [[Acquisition (software)|Acquisition]]
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| 3 torrents max, infinity when registered
+|-
+! {{rh2}} | Arctic Torrent
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+|
+|-
+! {{rh}} | Aria2
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{yes}}
+| {{yes}}
+| {{no}}
+| {{yes}}
+| {{no}}
+| {{no}}
+|
+|-
+! {{rh}} | [[BitComet]]
+| {{yes}}
+| {{yes}} &lt;ref&gt;Supports the [http://www.getright.com/seedtorrent.html Getright Webseeding spec] since v1.14, see [http://wiki.bitcomet.com/Making_torrents_with_BitComet#Web_Seeding BitComet Wiki]&lt;/ref&gt;
+| {{beta}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{no}}
+| {{yes}}
+|{{partial|Built-in Web browser}}
+| {{yes}}
+| Portable USB version available
+|-
+! {{rh}} | Bitflu
+| {{partial}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{yes}}
+| {{no}}
+| {{no}}
+| No built-in Cache-Disk cache but a Delayed commit
+|-
+! {{rh}} | [[BitLet]]
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{yes}}
+|
+|-
+! {{rh2}} | [[BitLord]]
+| {{yes}}
+| {{no}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{partial|Built-in Web browser}}
+| {{yes}}
+|
+|-
+! {{rh2}} | [[Bits on Wheels]]
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+|
+|-
+! {{rh}} | BitSpirit &lt;ref name=&quot;bitspirit.cc&quot;/&gt;
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{yes}}
+| {{yes}}
+|
+|-
+! {{rh}} | [[BitThief]]
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| Originally designed to exploit the BitTorrent protocol. Has option to prevent any uploads.
+|-
+! {{rh2}} | [[BitTornado]]
+| {{yes}}
+| {{yes}}
+| {{no}}
+| {{yes}}
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{yes2}} via [[package management system]]
+|
+|-
+! {{rh2}} | [[BitTorrent (software)|BitTorrent 5 / Mainline]]
+| {{no}}
+| {{yes}}
+| {{no}}
+| {{yes}}
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{yes}}
+| {{yes}}
+|-
+! {{rh}} | [[BitTorrent (software)|BitTorrent 6]]
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{no}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+|-
+
+! {{rh2}} | [[BitTyrant]]
+| {{yes}}
+| {{yes}} &lt;ref name=&quot;getrightseed&quot;&gt;Supports the [http://www.getright.com/seedtorrent.html Getright Webseeding spec] in addition to the [[Bittornado]] spec [http://bittornado.com/docs/webseed-spec.txt]&lt;/ref&gt;
+| {{yes2}} Plugin
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{no}}
+| {{yes2}} Plugin&lt;ref name=&quot;azweb&quot;&gt;Provides a [[Java (programming language)|Java]]-based and a simple [[HTML]]/[[JavaScript|JS]] based WebUI&lt;/ref&gt;
+| {{partial|3rd party plugins}}
+| {{yes}}
+| Upload priority optimized according to a series of research papers.
+|-
+! {{rh2}} | [[Blog Torrent]]
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+|
+|-
+! {{rh}} | BTG
+| {{yes}}
+| {{yes}}
+| {{no}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{no}}
+| {{yes}}
+| {{no}}
+| {{no}}
+|
+|-
+! {{rh}} | BTPD
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{partial|3rd party}}
+| {{no}}
+| {{no}}
+|
+|-
+! {{rh}} | [[Deluge (software)|Deluge]]
+| {{yes}}
+| {{yes}}
+| {{yes2}} Plugin&lt;ref&gt;FlexRSS plugin not supported in current 1.2 release: http://dev.deluge-torrent.org/wiki/Plugins/FlexRSS&lt;/ref&gt;
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{no}}
+| {{yes}}
+| {{no}}
+| {{yes2}} Notification, and update via [[package management system]]
+|
+|-
+! {{rh}} | [[FlashGet]]
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| [[FlashGet]](standalone application) is ''not'' [[FlashGot]](Firefox Plug-in)
+|-
+! {{rh}} | Flush
+| {{no}}
+| {{no}}
+| {{no}}
+| {{yes}}
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+|
+|-
+! {{rh}} | Folx
+| {{no}}
+| {{yes}}
+| {{no}}
+| {{yes}}
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{yes}}
+| {{yes}}
+|
+|-
+! {{rh}} | [[Free Download Manager]]
+| {{no}}
+| {{no}}
+| {{no}}
+| {{yes}}
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{yes}}
+| {{no}}
+| {{Optional}}
+|
+|-
+! {{rh2}} | G3 Torrent
+| {{no}}
+| {{no}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{yes}}
+| {{no}}
+| {{no}}
+|
+|-
+! {{rh2}} | [[Gnome BitTorrent]]
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+|
+|-
+! {{rh}} | [[Hadouken (software)|Hadouken]]
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{yes}}
+| {{no}}
+| {{no}}
+| Plugin support
+|-
+! {{rh}} | Halite
+| {{no}}
+| {{no}}
+| {{no}}
+| {{yes}}
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| Have a stand-alone version
+|-
+! {{rh}} | [[KTorrent]]
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{no}}
+| {{yes}}
+| {{partial|Built-in Web browser}}
+| {{yes2}} via [[package management system]]
+|
+|-
+! {{rh2}} | [[LimeWire]]
+| {{yes}}
+| {{yes}}
+| {{no}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{yes}}
+|
+|-
+! {{rh2}} | Localhost
+| {{yes}}
+| {{no}}
+| {{yes2}} Plugin
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{no}}
+| {{yes2}} Plugin&lt;ref name=&quot;azweb&quot;/&gt;
+| {{yes}}
+| {{no}}
+| DHT are required by Localhost
+|-
+! {{rh}} | [[Meerkat Bittorrent Client]]
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+|-
+! {{rh}} | [[MLDonkey]]
+| {{yes}}
+| {{no}}
+| {{partial|3rd party [[Bash (Unix shell)|bash]] script}}
+| {{yes}}
+| {{no}}
+| {{no}}&lt;ref&gt;See [http://savannah.nongnu.org/task/?func=detailitem&amp;item_id=4401 task #4401 Socks Proxy]; however, http proxy is supported.&lt;/ref&gt;
+| {{no}}
+| {{yes}}
+| {{partial|Built-into Web browser}}
+| {{yes2}} via [[package management system]]
+|
+|-
+! {{rh}} | [[ÂµTorrent]]
+| {{yes}}
+| {{yes}}&lt;ref&gt;{{cite web|url=http://torrentfreak.com/utorrent-17-stable-finally-released/ |title=uTorrent 1.7 Stable Finally Released |publisher=TorrentFreak |date=2007-07-13 |accessdate=2009-11-28}}&lt;/ref&gt;
+| {{yes}}&lt;ref&gt;{{cite web|url=http://torrentfreak.com/how-to-use-rss-bittorrent-to-download-tv-shows/ |title=How to use RSS &amp; BitTorrent to download TV shows |publisher=TorrentFreak |date=2006-10-14 |accessdate=2009-11-28}}&lt;/ref&gt;
+| {{yes}}&lt;ref&gt;{{cite web|url=http://www.download.com/uTorrent/3000-2196_4-10528327.html |title=uTorrent - Free software downloads and software reviews - CNET |language={{fa icon}} |publisher=Download.com |date= |accessdate=2009-11-28}}&lt;/ref&gt;
+| {{yes}}
+| {{yes}}
+| {{no}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| Versions are already portable
+| for preview stream ( don't linear ! )  &lt;ref&gt;http://www.utorrent.com/forum/viewtopic.php?pid=289346#p289346&lt;/ref&gt;
+|-
+! {{rh}} | [[OneSwarm]]
+| {{yes}}
+| {{yes}}
+| {{no}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{yes}}
+| Based on Azureus, has all BitTyrant features
+|-
+! {{rh}} | [[Opera (web browser)|Opera]]
+| {{no}}
+| {{no}}
+| {{yes}}{{r|group=Note|
+OperaRSS}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{partial|Built-into Web browser}}
+| {{yes}}, on Windows and Mac OS X only. (via [[package management system]] on Linux)
+|
+|-
+! {{rh}} | QTorrent
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+|
+|-
+! {{rh}} | [[qBittorrent]]
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}&lt;ref&gt;Integrated&lt;/ref&gt;
+| {{yes2}} via [[package management system]]
+|
+| %100  linear  video  stream
+|-
+! {{rh}} | [[rTorrent]]
+| {{partial}}
+| {{no}}
+| {{yes2}}3rd party utility &lt;ref name=rtorrent_rss&gt;3rd party utility [http://code.google.com/p/rssdler/ RSSDler]&lt;/ref&gt;
+| {{yes}}
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{yes}}
+| {{no}}
+| {{yes2}} via [[package management system]]
+| No built-in Cache-Disk cache but a Delayed sync
+|-
+! {{rh2}} | Rufus
+| {{no}}
+| {{no}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{yes}}
+| {{no}}
+| {{yes}}
+|
+|-
+! {{rh}} | [[Shareaza]]
+| {{yes}}
+| {{yes}}
+| {{no}}
+| {{yes}}
+| {{yes}}&lt;ref&gt;Since [[Shareaza]] v2.4.0.2 r7924&lt;/ref&gt;
+| {{no}}
+| {{yes|since&amp;nbsp;v2.5.3.1}}&lt;br /&gt;&lt;ref&gt;[http://shareaza.svn.sourceforge.net/viewvc/shareaza?view=revision&amp;revision=8803 Shareazas SVN changes in r8803] on [[Sourceforge.net]]&lt;/ref&gt;&lt;ref&gt;Shareaza also uses [[Gnutella2|G2]] to transmit download metadata, such as BitTorrent trackers to other G2 clients.&lt;/ref&gt;
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| &lt;ref&gt;Max. number of active torrents depends on respective user settings and is limited to 31.&lt;/ref&gt;
+|-
+! {{rh}} | SoMud
+| {{yes}}
+| {{yes}}
+| {{no}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{no}}
+| {{yes}}
+| {{yes}}
+| Support extra features such as web video download, desktop screen recording, video converter etc.&lt;ref&gt;[http://www.somud.com/index.php/features SoMud Features]&lt;/ref&gt;
+|-
+! {{rh2}} | [[SymTorrent]]
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| BitTorrent client for cell phones.
+|-
+! {{rh}} | Tixati &lt;ref name=&quot;tixati.com&quot;/&gt;
+| {{yes}}
+| {{no}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{yes}}
+| Portable USB version available
+|-
+! {{rh2}} | [[Tomato Torrent]]
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| supports [[AppleScript]]
+|-
+! {{rh}} | [[Tonido|Tonido Torrent]]
+| {{no}}
+| {{no}}
+| {{no}}
+| {{yes}}
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{yes|Remote Access without port forwarding}}
+| {{no}}
+| {{yes}}
+|
+|-
+! {{rh2}} | Torium
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{yes}}
+| {{no}}
+|
+|-
+! {{rh2}} | [[Torrent Swapper]]
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{yes}}
+| {{partial|Built-in Web browser}}
+| {{yes}}
+|
+|-
+! {{rh2}} | [[TorrentFlux]]
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{yes}}
+| {{yes}}
+| {{no}}
+|
+|-
+! {{rh2}} | TorrentVolve
+| {{yes2}} &lt;ref name=&quot;torrentvolve&quot; /&gt;
+| {{no}}
+| {{no}}
+| {{yes}}
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{yes}}
+| {{no}}
+| {{yes2}} &lt;ref name=&quot;torrentvolve&quot; /&gt;
+|
+|-
+! {{rh}} | [[Transmission (BitTorrent client)|Transmission]]
+| {{yes}}
+| {{yes}}
+| {{no}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{no}}
+| {{yes}}
+| {{no}}
+| {{yes}}
+|
+|-
+! {{rh}} | [[Tribler]]
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{yes}}
+| {{yes}}
+| Fully distributed keyword search; integrated anti-spam measures&lt;ref&gt;{{cite web|url=http://torrentfreak.com/truly-decentralized-bittorrent-downloading-has-finally-arrived-101208/ |title=Truly Decentralized BitTorrent Downloading Has Finally Arrived |publisher=TorrentFreak |date=2010-12-08 |accessdate=2010-12-16}}&lt;/ref&gt;
+|-
+! {{rh}} | [[Vuze]] &lt;small&gt;(formerly Azureus)&lt;/small&gt;
+| {{yes}}
+| {{yes}} &lt;ref name=&quot;getrightseed&quot;/&gt;
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{no}}
+| {{yes2}} Plugin&lt;ref name=&quot;azweb&quot;/&gt;
+| {{yes}}
+| {{yes}}
+|
+|-
+! {{rh2}} | [[ZipTorrent]]
+| {{no}}
+| {{no}}
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{yes}}
+| {{no}}
+|
+|- class=&quot;sortbottom&quot;
+! BitTorrent client
+! [[Cache]]&lt;ref name=&quot;cache&quot;/&gt;
+! [[Webseeding|Web seeding]]&lt;ref name=&quot;webseed&quot;/&gt;
+! [[Broadcatching]] ([[RSS]])
+! Prioritization
+! Selective downloads
+! [[SOCKS]]
+! Tracker exchange &lt;ref name=&quot;tex&quot;/&gt;
+! Remote control via web
+! [[BitTorrent (protocol)#Indexing|Search Engine]]
+! Auto updates
+! Notes
+|}
+{{reflist|group=Note|refs=
+&lt;ref name=OperaRSS&gt;Opera has a feed aggregator that displays feeds like emails.&lt;/ref&gt;
+}}
+
+===Vulnerabilities===
+This comparison of unpatched publicly known vulnerabilities in latest stable version clients is based on vulnerabilities reports by [http://www.securityfocus.com/ SecurityFocus] and [https://secunia.com/ Secunia]. See [[Computer security#unpatched|computer security]] for more details about the importance of unpatched known flaws.
+{| class=&quot;wikitable&quot; style=&quot;font-size: 85%; text-align:center; width: auto;&quot;
+|-
+! rowspan=&quot;3&quot; | BitTorrent client
+! colspan=&quot;6&quot; | Known unpatched vulnerabilities
+|-
+! colspan=&quot;5&quot; | Secunia !! SecurityFocus
+|-
+!style=&quot;width:12em&quot;|Extremely critical&lt;br&gt;(number / oldest)!!style=&quot;width:12em&quot;|Highly critical&lt;br&gt;(number / oldest)!!style=&quot;width:12em&quot;|Moderately critical&lt;br&gt;(number / oldest)!!style=&quot;width:12em&quot;|Less critical&lt;br&gt;(number / oldest)!!style=&quot;width:12em&quot;|Not critical&lt;br&gt;(number / oldest)!!style=&quot;width:12em&quot;|Total&lt;br&gt;(number / oldest)
+|-
+! {{rh2}} | Arctic Torrent 1
+| {{Good|}}[https://secunia.com/product/11375/ 0]
+| {{Good|}}[https://secunia.com/product/11375/ 0]
+| {{Good|}}[https://secunia.com/product/11375/ 0]
+| {{Good|}}[https://secunia.com/product/11375/ 0]
+| {{Good|}}[https://secunia.com/product/11375/ 0]
+| {{unk| }}[http://www.securityfocus.com/ Unknown]
+|-
+! {{rh}} | Aria2 1
+| {{Good|}}[https://secunia.com/product/27414/ 0]
+| {{Good|}}[https://secunia.com/product/27414/ 0]
+| {{Good|}}[https://secunia.com/product/27414/ 0]
+| {{Good|}}[https://secunia.com/product/27414/ 0]
+| {{Good|}}[https://secunia.com/product/27414/ 0]
+| {{unk| }}[http://www.securityfocus.com/ Unknown]
+|-
+! {{rh}} | [[BitComet]] 1
+| {{Good|}}[https://secunia.com/product/19152/ 0]
+| {{Good|}}[https://secunia.com/product/19152/ 0]
+| {{Good|}}[https://secunia.com/product/19152/ 0]
+| {{Good|}}[https://secunia.com/product/19152/ 0]
+| {{Good|}}[https://secunia.com/product/19152/ 0]
+| {{Good|}}[http://www.securityfocus.com/cgi-bin/index.cgi?c=12&amp;vendor=BitComet&amp;title=BitComet&amp;version=%201.20 0]
+|-
+! {{rh}} | Bitflu 0
+| {{Good|}}[https://secunia.com/product/17048/ 0]
+| {{Good|}}[https://secunia.com/product/17048/ 0]
+| {{Good|}}[https://secunia.com/product/17048/ 0]
+| {{Good|}}[https://secunia.com/product/17048/ 0]
+| {{Good|}}[https://secunia.com/product/17048/ 0]
+| {{Good|}}[http://www.securityfocus.com/cgi-bin/index.cgi?c=12&amp;vendor=Bitflu&amp;title=Bitflu&amp;version=%200.42 0]
+|-
+! {{rh2}} | [[BitLord]] 1
+| {{Good|}}[https://secunia.com/product/7578/ 0]
+| {{Good|}}[https://secunia.com/product/7578/ 0]
+| {{Good|}}[https://secunia.com/product/7578/ 0]
+| {{Good|}}[https://secunia.com/product/7578/ 0]
+| {{Good|}}[https://secunia.com/product/7578/ 0]
+| {{unk| }}[http://www.securityfocus.com/ Unknown]
+|-
+! {{rh}} | BitSpirit 3
+| {{Good|}}[https://secunia.com/product/17784/ 0]
+| {{Good|}}[https://secunia.com/product/17784/ 0]
+| {{Good|}}[https://secunia.com/product/17784/ 0]
+| {{Good|}}[https://secunia.com/product/17784/ 0]
+| {{Good|}}[https://secunia.com/product/17784/ 0]
+| {{unk| }}[http://www.securityfocus.com/ Unknown]
+|-
+! {{rh2}} | [[BitTornado]] 0
+| {{Good|}}[https://secunia.com/product/27087/ 0]
+| {{Good|}}[https://secunia.com/product/27087/ 0]
+| {{Good|}}[https://secunia.com/product/27087/ 0]
+| {{Good|}}[https://secunia.com/product/27087/ 0]
+| {{Good|}}[https://secunia.com/product/27087/ 0]
+| {{unk| }}[http://www.securityfocus.com/ Unknown]
+|-
+! {{rh}} | [[BitTorrent (software)|BitTorrent 7]]
+| {{Good|}}[https://secunia.com/product/31870/ 0]
+| {{Good|}}[https://secunia.com/product/31870/ 0]
+| {{Good|}}[https://secunia.com/product/31870/ 0]
+| {{Good|}}[https://secunia.com/product/31870/ 0]
+| {{Good|}}[https://secunia.com/product/31870/ 0]
+| {{Good|}}[http://www.securityfocus.com/cgi-bin/index.cgi?c=12&amp;vendor=BitTorrent&amp;title=BitTorrent&amp;version=6.0.3 0]
+|-
+! {{rh}} | [[BitTorrent (software)#BitTorrent DNA|BitTorrent DNA 2]]
+| {{Good|}}[https://secunia.com/product/18543/ 0]
+| {{Good|}}[https://secunia.com/product/18543/ 0]
+| {{Good|}}[https://secunia.com/product/18543/ 0]
+| {{Good|}}[https://secunia.com/product/18543/ 0]
+| {{Good|}}[https://secunia.com/product/18543/ 0]
+| {{Good|}}[http://www.securityfocus.com/cgi-bin/index.cgi?c=12&amp;vendor=BitTorrent&amp;title=BitTorrent&amp;version=6.0.3 0]
+|-
+! {{rh2}} | [[BitTyrant]] 2
+| {{Good|}}[https://secunia.com/product/35577/ 0]
+| {{Good|}}[https://secunia.com/product/35577/ 0]
+| {{Good|}}[https://secunia.com/product/35577/ 0]
+| {{Good|}}[https://secunia.com/product/35577/ 0]
+| {{Good|}}[https://secunia.com/product/35577/ 0]
+| {{unk| }}[http://www.securityfocus.com/ Unknown]
+|-
+! {{rh}} | [[Deluge (software)|Deluge 1]]
+| {{Good|}}[https://secunia.com/product/25679/ 0]
+| {{Good|}}[https://secunia.com/product/25679/ 0]
+| {{Good|}}[https://secunia.com/product/25679/ 0]
+| {{Good|}}[https://secunia.com/product/25679/ 0]
+| {{Good|}}[https://secunia.com/product/25679/ 0]
+| {{Good|}}[http://www.securityfocus.com/cgi-bin/index.cgi?c=12&amp;vendor=Deluge%20Team&amp;title=Deluge&amp;version=0.5.9%20.3 0]
+|-
+! {{rh}} | [[FlashGet]] 3
+| {{Good|}}[https://secunia.com/product/26223/ 0]
+| {{Good|}}[https://secunia.com/product/26223/ 0]
+| {{Good|}}[https://secunia.com/product/26223/ 0]
+| {{Good|}}[https://secunia.com/product/26223/ 0]
+| {{Good|}}[https://secunia.com/product/26223/ 0]
+| {{Bad| }}[http://www.securityfocus.com/cgi-bin/index.cgi?c=12&amp;vendor=FlashGet&amp;title=FlashGet&amp;version=%201.9 1]&lt;br&gt;[http://www.securityfocus.com/bid/30685 {{Start date and age|df=yes|2008|8|13|br=yes}}]
+|-
+! {{rh}} | Folx 1
+| {{Good|}}[https://secunia.com/product/34863/ 0]
+| {{Good|}}[https://secunia.com/product/34863/ 0]
+| {{Good|}}[https://secunia.com/product/34863/ 0]
+| {{Good|}}[https://secunia.com/product/34863/ 0]
+| {{Good|}}[https://secunia.com/product/34863/ 0]
+| {{unk| }}[http://www.securityfocus.com/ Unknown]
+|-
+! {{rh}} | [[Free Download Manager]] 3
+| {{Good|}}[https://secunia.com/product/21004/ 0]
+| {{Good|}}[https://secunia.com/product/21004/ 0]
+| {{Good|}}[https://secunia.com/product/21004/ 0]
+| {{Good|}}[https://secunia.com/product/21004/ 0]
+| {{Good|}}[https://secunia.com/product/21004/ 0]
+| {{Good|}}[http://www.securityfocus.com/cgi-bin/index.cgi?c=12&amp;vendor=Free%20Download%20Manager&amp;title=Free%20Download%20Manager&amp;version=%203.0.Build%20852 0]
+|-
+! {{rh}} | [[FrostWire]] 4
+| {{Good|}}[https://secunia.com/product/15685/ 0]
+| {{Good|}}[https://secunia.com/product/15685/ 0]
+| {{Good|}}[https://secunia.com/product/15685/ 0]
+| {{Good|}}[https://secunia.com/product/15685/ 0]
+| {{Good|}}[https://secunia.com/product/15685/ 0]
+| {{unk| }}[http://www.securityfocus.com/ Unknown]
+|-
+! {{rh}} | Halite 0
+| {{Good|}}[https://secunia.com/product/19461/ 0]
+| {{Good|}}[https://secunia.com/product/19461/ 0]
+| {{Good|}}[https://secunia.com/product/19461/ 0]
+| {{Good|}}[https://secunia.com/product/19461/ 0]
+| {{Good|}}[https://secunia.com/product/19461/ 0]
+| {{unk| }}[http://www.securityfocus.com/ Unknown]
+|-
+! {{rh}} | [[KTorrent]] 3
+| {{Good|}}[https://secunia.com/product/20248/ 0]
+| {{Good|}}[https://secunia.com/product/20248/ 0]
+| {{Good|}}[https://secunia.com/product/20248/ 0]
+| {{Good|}}[https://secunia.com/product/20248/ 0]
+| {{Good|}}[https://secunia.com/product/20248/ 0]
+| {{Good|}}[http://www.securityfocus.com/cgi-bin/index.cgi?c=12&amp;vendor=KTorrent&amp;title=KTorrent&amp;version=3.1.4 0]
+|-
+! {{rh}} | [[Libtorrent (Rasterbar)]] 0
+| {{Good|}}[https://secunia.com/product/17426/ 0]
+| {{Good|}}[https://secunia.com/product/17426/ 0]
+| {{Good|}}[https://secunia.com/product/17426/ 0]
+| {{Good|}}[https://secunia.com/product/17426/ 0]
+| {{Good|}}[https://secunia.com/product/17426/ 0]
+| {{Good|}}[http://www.securityfocus.com/cgi-bin/index.cgi?c=12&amp;vendor=Rasterbar%20Software&amp;title=libtorrent&amp;version=0.14.4 0]
+|-
+! {{rh2}} | [[LimeWire]] 5
+| {{Good|}}[https://secunia.com/product/28011/ 0]
+| {{Good|}}[https://secunia.com/product/28011/ 0]
+| {{Good|}}[https://secunia.com/product/28011/ 0]
+| {{Good|}}[https://secunia.com/product/28011/ 0]
+| {{Good|}}[https://secunia.com/product/28011/ 0]
+| {{Good|}}[http://www.securityfocus.com/cgi-bin/index.cgi?c=12&amp;vendor=Lime%20Wire%20LLC&amp;title=Lime%20Wire&amp;version=4.8.1 0]
+|-
+! {{rh}} | [[Miro (software)|Miro 4]]
+| {{Good|}}[https://secunia.com/product/36075/ 0]
+| {{Good|}}[https://secunia.com/product/36075/ 0]
+| {{Good|}}[https://secunia.com/product/36075/ 0]
+| {{Good|}}[https://secunia.com/product/36075/ 0]
+| {{Good|}}[https://secunia.com/product/36075/ 0]
+| {{Bad| }}[http://www.securityfocus.com/cgi-bin/index.cgi?c=12&amp;vendor=Miro&amp;title=Miro&amp;version=%201.1 1]&lt;br&gt;[http://www.securityfocus.com/bid/28007 {{Start date and age|df=yes|2008|2|26|br=yes}}]
+|-
+! {{rh}} | [[MLDonkey]] 2
+| {{Good|}}[https://secunia.com/product/2483/ 0]
+| {{Good|}}[https://secunia.com/product/2483/ 0]
+| {{Good|}}[https://secunia.com/product/2483/ 0]
+| {{Good|}}[https://secunia.com/product/2483/ 0]
+| {{Bad| }}[https://secunia.com/product/2483/ 1]&lt;br&gt;[https://secunia.com/advisories/10134/ {{Start date and age|df=yes|2003|11|5|br=yes}}]
+| {{Bad| }}[http://www.securityfocus.com/cgi-bin/index.cgi?c=12&amp;vendor=Mldonkey&amp;title=Mldonkey&amp;version=2.9.7 1]&lt;br&gt;[http://www.securityfocus.com/bid/33865 {{Start date and age|df=yes|2009|2|23|br=yes}}]
+|-
+! {{rh}} | [[%CE%9CTorrent|ÂµTorrent for Mac 1]]
+| {{Good|}}[https://secunia.com/product/37771/ 0]
+| {{Good|}}[https://secunia.com/product/37771/ 0]
+| {{Good|}}[https://secunia.com/product/37771/ 0]
+| {{Good|}}[https://secunia.com/product/37771/ 0]
+| {{Good|}}[https://secunia.com/product/37771/ 0]
+| {{Good|}}[http://www.securityfocus.com/cgi-bin/index.cgi?c=12&amp;vendor=uTorrent&amp;title=uTorrent%20&amp;version=%202.0.4 0]
+|-
+! {{rh2}} | [[%CE%9CTorrent|ÂµTorrent for Windows 2]]
+| {{Good|}}[https://secunia.com/product/28955/ 0]
+| {{Good|}}[https://secunia.com/product/28955/ 0]
+| {{Good|}}[https://secunia.com/product/28955/ 0]
+| {{Bad| }}[https://secunia.com/product/28955/ 1]&lt;br&gt;[https://secunia.com/advisories/39192/ {{Start date and age|df=yes|2010|4|5|br=yes}}]
+| {{Good|}}[https://secunia.com/product/28955/ 0]
+| {{Good|}}[http://www.securityfocus.com/cgi-bin/index.cgi?c=12&amp;vendor=uTorrent&amp;title=uTorrent%20&amp;version=%202.0.4 0]
+|-
+! {{rh}} | [[%CE%9CTorrent|ÂµTorrent for Windows 3]]
+| {{Good|}}[https://secunia.com/product/36366/ 0]
+| {{Good|}}[https://secunia.com/product/36366/ 0]
+| {{Good|}}[https://secunia.com/product/36366/ 0]
+| {{Good|}}[https://secunia.com/product/36366/ 0]
+| {{Good|}}[https://secunia.com/product/36366/ 0]
+| {{Good|}}[http://www.securityfocus.com/cgi-bin/index.cgi?c=12&amp;vendor=uTorrent&amp;title=uTorrent%20&amp;version=%202.0.4 0]
+|-
+! {{rh}} | [[%CE%9CTorrent|ÂµTorrent Portable 1]]
+| {{Good|}}[https://secunia.com/product/33667/ 0]
+| {{Good|}}[https://secunia.com/product/33667/ 0]
+| {{Good|}}[https://secunia.com/product/33667/ 0]
+| {{Good|}}[https://secunia.com/product/33667/ 0]
+| {{Good|}}[https://secunia.com/product/33667/ 0]
+| {{Good|}}[http://www.securityfocus.com/cgi-bin/index.cgi?c=12&amp;vendor=uTorrent&amp;title=uTorrent%20&amp;version=%202.0.4 0]
+|-
+| {{rh}} | [[Opera (web browser)|Opera 11]]
+| {{Good|}}[https://secunia.com/product/33328/ 0]
+| {{Good|}}[https://secunia.com/product/33328/ 0]
+| {{Good|}}[https://secunia.com/product/33328/ 0]
+| {{Good|}}[https://secunia.com/product/33328/ 0]
+| {{Good|}}[https://secunia.com/product/33328/ 0]
+| {{Good|}}[http://www.securityfocus.com/cgi-bin/index.cgi?c=12&amp;vendor=Opera%20Software&amp;version=%2011.50&amp;title=Opera%20Web%20Browser 0]
+|-
+! {{rh}} | [[Shareaza]] 2
+| {{Good|}}[https://secunia.com/product/9422/ 0]
+| {{Good|}}[https://secunia.com/product/9422/ 0]
+| {{Good|}}[https://secunia.com/product/9422/ 0]
+| {{Good|}}[https://secunia.com/product/9422/ 0]
+| {{Good|}}[https://secunia.com/product/9422/ 0]
+| {{Good|}}[http://www.securityfocus.com/cgi-bin/index.cgi?c=12&amp;vendor=Shareaza&amp;title=Shareaza&amp;version=%202.3.1.0 0]
+|-
+! {{rh}} | SoMud 1
+| {{Good|}}[https://secunia.com/product/32097/ 0]
+| {{Bad| }}[https://secunia.com/product/32097/ 1]&lt;br&gt;[https://secunia.com/advisories/41413/ {{Start date and age|df=yes|2010|9|14|br=yes}}]
+| {{Good|}}[https://secunia.com/product/32097/ 0]
+| {{Good|}}[https://secunia.com/product/32097/ 0]
+| {{Good|}}[https://secunia.com/product/32097/ 0]
+| {{Bad| }}[http://www.securityfocus.com/cgi-bin/index.cgi?c=12&amp;vendor=SoMud&amp;title=SoMud&amp;version=%201.2.8 1]&lt;br&gt;[http://www.securityfocus.com/bid/43195 {{Start date and age|df=yes|2010|9|13|br=yes}}]
+|-
+! {{rh2}} | [[Tomato Torrent]] 1
+| {{Good|}}[https://secunia.com/product/34244/ 0]
+| {{Good|}}[https://secunia.com/product/34244/ 0]
+| {{Good|}}[https://secunia.com/product/34244/ 0]
+| {{Good|}}[https://secunia.com/product/34244/ 0]
+| {{Good|}}[https://secunia.com/product/34244/ 0]
+| {{unk| }}[http://www.securityfocus.com/ Unknown]
+|-
+! {{rh2}} | [[TorrentFlux]] 2
+| {{Good|}}[https://secunia.com/product/12225/ 0]
+| {{Good|}}[https://secunia.com/product/12225/ 0]
+| {{Bad| }}[https://secunia.com/product/12225/ 1]&lt;br&gt;[https://secunia.com/advisories/29935/ {{Start date and age|df=yes|2008|4|23|br=yes}}]
+| {{Good|}}[https://secunia.com/product/12225/ 0]
+| {{Good|}}[https://secunia.com/product/12225/ 0]
+| {{Bad| }}[http://www.securityfocus.com/cgi-bin/index.cgi?c=12&amp;vendor=TorrentFlux&amp;title=TorrentFlux&amp;version=%202.3 2]&lt;br&gt;[http://www.securityfocus.com/bid/28846 {{Start date and age|df=yes|2008|4|18|br=yes}}]
+|-
+! {{rh}} | [[Transmission (BitTorrent client)|Transmission 2]]
+| {{Good|}}[https://secunia.com/product/34117/ 0]
+| {{Good|}}[https://secunia.com/product/34117/ 0]
+| {{Good|}}[https://secunia.com/product/34117/ 0]
+| {{Good|}}[https://secunia.com/product/34117/ 0]
+| {{Good|}}[https://secunia.com/product/34117/ 0]
+| {{Good|}}[http://www.securityfocus.com/cgi-bin/index.cgi?c=12&amp;vendor=Transmission%20Project&amp;title=Transmission&amp;version=%201.92 0]
+|-
+! {{rh}} | [[Vuze]] &lt;small&gt;(formerly Azureus)&lt;/small&gt; 4
+| {{Good|}}[https://secunia.com/product/29502/ 0]
+| {{Good|}}[https://secunia.com/product/29502/ 0]
+| {{Good|}}[https://secunia.com/product/29502/ 0]
+| {{Good|}}[https://secunia.com/product/29502/ 0]
+| {{Good|}}[https://secunia.com/product/29502/ 0]
+| {{Bad| }}[http://www.securityfocus.com/cgi-bin/index.cgi?c=12&amp;vendor=Azureus&amp;title=Azureus&amp;version=2.4%20.2 1]&lt;br&gt;[http://www.securityfocus.com/bid/18596 {{Start date and age|df=yes|2006|6|22|br=yes}}]
+|-
+! {{rh}} | [[Wyzo]] 3
+| {{Good|}}[https://secunia.com/product/32145/ 0]
+| {{Good|}}[https://secunia.com/product/32145/ 0]
+| {{Good|}}[https://secunia.com/product/32145/ 0]
+| {{Good|}}[https://secunia.com/product/32145/ 0]
+| {{Good|}}[https://secunia.com/product/32145/ 0]
+| {{unk| }}[http://www.securityfocus.com/ Unknown]
+|-
+! {{rh}} | [[Xunlei]] 5
+| {{Good|}}[https://secunia.com/product/15874/ 0]
+| {{Bad| }}[https://secunia.com/product/15874/ 2]&lt;br&gt;[https://secunia.com/advisories/26964/ {{Start date and age|df=yes|2007|9|28|br=yes}}]
+| {{Good|}}[https://secunia.com/product/15874/ 0]
+| {{Good|}}[https://secunia.com/product/15874/ 0]
+| {{Good|}}[https://secunia.com/product/15874/ 0]
+| {{Bad| }}[http://www.securityfocus.com/cgi-bin/index.cgi?c=12&amp;vendor=Xunlei&amp;title=Thunder&amp;version=5.7.4%20.401 1]&lt;br&gt;[http://www.securityfocus.com/bid/26536 {{Start date and age|df=yes|2007|11|17|br=yes}}]
+|-
+! {{rh2}} | [[ZipTorrent]] 1
+| {{Good|}}[https://secunia.com/product/5607/ 0]
+| {{Good|}}[https://secunia.com/product/5607/ 0]
+| {{Good|}}[https://secunia.com/product/5607/ 0]
+| {{Bad| }}[https://secunia.com/product/5607/ 1]&lt;br&gt;[https://secunia.com/advisories/16542/ {{Start date and age|df=yes|2005|8|24|br=yes}}]
+| {{Good|}}[https://secunia.com/product/5607/ 0]
+| {{Bad| }}[http://www.securityfocus.com/cgi-bin/index.cgi?c=12&amp;vendor=ZipTorrent&amp;title=ZipTorrent&amp;version=1.3.7%20.3 1]&lt;br&gt;[http://www.securityfocus.com/bid/14645 {{Start date and age|df=yes|2005|8|23|br=yes}}]
+|-
+! rowspan=&quot;3&quot; | BitTorrent client
+!Extremely critical&lt;br&gt;(number / oldest)!!Highly critical&lt;br&gt;(number / oldest)!!Moderately critical&lt;br&gt;(number / oldest)!!Less critical&lt;br&gt;(number / oldest)!!Not critical&lt;br&gt;(number / oldest)!!Total&lt;br&gt;(number / oldest)
+|-
+! colspan=&quot;5&quot; | Secunia !! SecurityFocus
+|-
+! colspan=&quot;6&quot; | Known unpatched vulnerabilities
+|}
+
+== Libraries ==
+''Note: Libraries in purple are no longer in development.''
+; General
+
+{| style=&quot;font-size: 85%; text-align: center;&quot; class=&quot;wikitable sortable&quot;
+|-
+! BitTorrent Library
+! First public release date
+! Latest stable
+! [[Free and open source software|FOSS]]&lt;br&gt;
+! [[Software license]]
+! Cost ([[United States dollar|USD]])
+! [[Spyware]], [[Adware]], [[Malware]] -free &lt;!--CITATION NEEDED IF ASSERTING TRUE UNLESS OBVIOUS IF GOOGLED--&gt;
+! [[Usage share of BitTorrent clients|Usage]]&lt;ref name=&quot;Unique-peer_id-statistics&quot;/&gt;&lt;br&gt;
+|-
+! {{rh2}} | [[BTSharp (library)|BTSharp]]
+| {{start date and age|2004}}
+| {{Latest stable software release/BTSharp (.NET Library)}}
+| No
+| {{Proprietary}}
+| {{nonfree|[http://btsharp.com/Buy.aspx Subscription-based]&lt;br&gt;(non-profit&amp;nbsp;use&amp;nbsp;=&amp;nbsp;free)}}
+| {{yes}}
+| {{?}}
+|-
+! {{rh}} | [[Libtorrent (Rakshasa)]]
+| {{start date and age|2004|07|15}}&lt;ref name=&quot;rakshasa-timeline&quot;/&gt;
+| {{Latest stable software release/rTorrent}}
+| Yes
+| {{free|[[GPL]]}}
+| {{free}}
+| {{yes}}
+| {{Nts|{{Rnd|{{#expr:702498/3573017.3}}|6}}}}%
+|-
+! {{rh}} | [[Libtorrent (Rasterbar)]]
+| {{start date and age|2005|09|08}}&lt;ref&gt;http://sourceforge.net/projects/libtorrent/files/&lt;/ref&gt;
+| {{Latest stable software release/libtorrent}}
+| Yes
+| {{free|[[BSD License|BSD]]}}
+| {{free}}
+| {{yes}}
+| {{Nts|{{Rnd|{{#expr:(1822833+2170+220+8639+116+149073+1037+9197+40+135667+970+94692+68+27014)/3573017.3}}|6}}}}%
+&lt;!--Libtorrent+ArcticTorrent+BitPump+BitRocket+BTG+Deluge+firetorrent+Halite+LeechCraft+LimeWire(2 parts)+Miro+MooPolice+qBittorrent
+http://www.rasterbar.com/products/libtorrent/projects.html--&gt;
+|-
+! {{rh}} | [[MonoTorrent]]
+| {{start date and age|2006|09}}
+| {{Latest stable release/MonoTorrent}}
+| Yes
+| {{free|[[MIT License|MIT/X11]]}}
+| {{free}}
+| {{yes}}
+| {{Nts|{{Rnd|{{#expr:1549/3573017.3}}|6}}}}%
+|-
+! {{rh}} | [http://turn.github.com/ttorrent ttorrent]
+| {{start date and age|2011|06|27}}
+| 1.0.3&lt;ref&gt;https://github.com/turn/ttorrent/tree/ttorrent-1.0.3&lt;/ref&gt;
+| Yes
+| {{free|[[Apache Software License]]}}
+| {{free}}
+| {{yes}}
+| {{?}}
+|- class=&quot;sortbottom&quot;
+! BitTorrent Library
+! First public release date
+! Latest stable
+! [[Free and open source software|FOSS]]
+! [[Software license]]
+! Cost ([[United States dollar|USD]])
+! [[Spyware]], [[Adware]], [[Malware]] -free
+! [[Usage share of BitTorrent clients|Usage]]&lt;ref name=&quot;Unique-peer_id-statistics&quot;/&gt;
+|}
+
+; OS Support and Programming Language
+
+{| style=&quot;font-size: 85%; text-align: center;&quot; class=&quot;wikitable sortable&quot;
+|-
+! BitTorrent Library
+! [[Linux]]/[[Unix]]
+! [[Microsoft Windows|Windows]]
+! [[Mac OS X]]
+! [[Application programming interface|API]]
+! [[Programming language]]
+|-
+! {{rh2}} | [[BTSharp (library)|BTSharp]]
+| {{no}} || {{yes}} || {{no}} || {{yes}}
+| [[C Sharp (programming language)|C#]]
+|-
+! {{rh}} | [[Libtorrent (Rakshasa)]]
+| {{yes}} || {{no}} || {{yes}} || {{yes}}
+| [[C++]]
+|-
+! {{rh}} | [[Libtorrent (Rasterbar)]]
+| {{yes}} || {{yes}} || {{yes}} || {{yes}}
+| [[C++]]
+|-
+! {{rh}} | [[MonoTorrent]]
+| {{yes}} || {{yes}} || {{yes}} || {{yes}}
+| [[C Sharp (programming language)|C#]]
+|-
+! {{rh}} | [http://turn.github.com/ttorrent ttorrent]
+| {{yes}} || {{yes}} || {{yes}} || {{yes}}
+| [[Java (programming language)|Java]]
+|- class=&quot;sortbottom&quot;
+! BitTorrent Library
+! [[Linux]]/[[Unix]]
+! [[Microsoft Windows|Windows]]
+! [[Mac OS X]]
+! [[Application programming interface|API]]
+! [[Programming language]]
+|}
+
+; Supported Features I
+
+{| style=&quot;font-size: 85%; text-align: center;&quot; class=&quot;wikitable sortable&quot;
+|-
+! BitTorrent Library
+! [[Super-seeding]]
+! [[BitTorrent tracker|Tracker]]
+! [[Universal Plug and Play|UPnP]]&lt;ref name=&quot;upnp&quot;/&gt;
+! [[NAT Port Mapping Protocol]]
+! [[NAT traversal]]&lt;ref name=&quot;udp_nat&quot;/&gt;
+! [[Distributed hash table|DHT]]&lt;ref name=&quot;dht&quot;/&gt;
+! [[Peer exchange]]
+! [[BitTorrent protocol encryption|Encryption]]
+! [[UDP tracker]]
+! [[Local Peer Discovery|LPD]]
+! [[Fast Extensions]]
+! [[Magnet URI]]
+|-
+! {{rh2}} | [[BTSharp (library)|BTSharp]]
+| {{no}} || {{yes}} || {{yes}} || {{no}} || {{no}} || {{no}} || {{no}} || {{no}} || {{?}} || {{?}} || {{no}} || {{no}}
+|-
+! {{rh}} | [[Libtorrent (Rakshasa)]]
+| {{yes}} || {{yes}} || {{no}} || {{?}} || {{?}} || {{yes}} || {{yes}} || {{yes}} || {{yes}} || {{?}} || {{no}} || {{yes}}
+|-
+! {{rh}} | [[Libtorrent (Rasterbar)]]
+| {{yes}} || {{yes}} || {{yes}} || {{yes}} || {{yes}} || {{yes}} || {{yes}} || {{yes}} || {{yes}}
+| {{yes}}&lt;ref&gt;{{cite web|url=http://www.rasterbar.com/products/libtorrent/features.html|title=libtorrent manual: features|accessdate=2009-12-12}}&lt;/ref&gt; || {{yes}} || {{yes}}
+|-
+! {{rh}} | [[MonoTorrent]]
+| {{yes}} || {{yes}} || {{yes}} || {{yes}} || {{no}} || {{yes}} || {{yes}} || {{yes}} || {{yes}} || {{yes}} || {{yes}} || {{yes}}
+|-
+! {{rh}} | [http://turn.github.com/ttorrent ttorrent]
+| {{no}} || {{yes}} || {{no}} || {{no}} || {{no}} || {{no}} || {{no}} || {{no}} || {{no}} || {{no}} || {{no}} || {{no}}
+|- class=&quot;sortbottom&quot;
+! BitTorrent Library
+! [[Super-seeding]]
+! [[BitTorrent tracker|Tracker]]
+! [[Universal Plug and Play|UPnP]]&lt;ref name=&quot;upnp&quot;/&gt;
+! [[NAT Port Mapping Protocol]]
+! [[NAT traversal]]&lt;ref name=&quot;udp_nat&quot;/&gt;
+! [[Distributed hash table|DHT]]&lt;ref name=&quot;dht&quot;/&gt;
+! [[Peer exchange]]
+! [[BitTorrent protocol encryption|Encryption]]
+! [[UDP tracker]]
+! [[Local Peer Discovery|LPD]]
+! [[Fast Extensions]]
+! [[Magnet URI]]
+|}
+
+; Supported Features II
+
+{| style=&quot;font-size: 85%; text-align: center;&quot; class=&quot;wikitable sortable&quot;
+|-
+! BitTorrent Library
+! [[Cache]]&lt;ref name=&quot;cache&quot;/&gt;
+! [[Webseeding|Web seeding]]&lt;ref name=&quot;webseed&quot;/&gt;
+! [[Broadcatching]] ([[RSS]])
+! Prioritization
+! Selective downloads
+! [[SOCKS]]
+! Remote control via web
+! [[BitTorrent (protocol)#Indexing|Engine]]
+! Notes
+|-
+! {{rh2}} | [[BTSharp (library)|BTSharp]]
+| {{yes}} || {{no}} || {{no}} || {{no}} || {{no}} || {{no}} || {{no}} || {{no}} ||
+|-
+! {{rh}} | [[Libtorrent (Rakshasa)]]
+| {{partial}} || {{no}} || {{no}} || {{yes}} || {{yes}} || {{no}} || {{yes}} || {{no}} || No built-in Cache-Disk cache but a Delayed sync
+|-
+! {{rh}} | [[Libtorrent (Rasterbar)]]
+| {{yes}} || {{yes}} || {{no}} || {{yes}} || {{yes}} || {{yes}} || {{yes}} || {{?}} ||
+|-
+! {{rh}} | [[MonoTorrent]]
+| {{yes}} || {{yes}} || {{yes}} || {{yes}} || {{yes}} || {{no}} || {{yes}} || {{no}} ||
+|-
+! {{rh}} | [http://turn.github.com/ttorrent ttorrent]
+| {{partial}} || {{no}} || {{no}} || {{no}} || {{no}} || {{no}} || {{no}} || {{no}} ||
+|- class=&quot;sortbottom&quot;
+! BitTorrent Library
+! [[Cache]]&lt;ref name=&quot;cache&quot;/&gt;
+! [[Webseeding|Web seeding]]&lt;ref name=&quot;webseed&quot;/&gt;
+! [[Broadcatching]] ([[RSS]])
+! Prioritization
+! Selective downloads
+! [[SOCKS]]
+! Remote control via web
+! [[BitTorrent (protocol)#Indexing|Engine]]
+! Notes
+|}
+
+== Notes ==
+{{Reflist|2}}
+
+== See also ==
+{{refbegin|2}}
+* [[Anonymous P2P]]
+* [[BitTorrent (protocol)]]
+* [[BitTorrent tracker]]
+* [[BitTorrent tracker software]]
+* [[Comparison of BitTorrent sites]]
+* [[Comparison of file sharing applications]]
+* [[Disk sharing]]
+* [[File sharing]]
+* [[File sharing timeline]]
+* [[File-sharing program]]
+* [[Open Music Model]]
+{{refend}}
+
+== External links ==
+*[http://www.customseedbox.com List of seedbox providers]
+*[http://sourceforge.net/softwaremap/trove_list.php?form_cat=622 SourceForge's &quot;Bittorrent&quot; section]
+*[http://www.zeropaid.com/software/file-sharing/bittorrent/ User-ranked list of bittorrent clients]
+*{{Dmoz|Computers/Internet/File_Sharing/BitTorrent|BitTorrent}}
+*[http://torrentfreak.com/utorrent-gains-popularity-azureus-loses-ground-071216/ Article suggesting that a BitTorrent client is installed on more than 13% of Windows desktop PCs]
+
+{{BitTorrent}}
+
+{{DEFAULTSORT:Comparison Of Bittorrent Clients}}
+[[Category:BitTorrent]]
+[[Category:BitTorrent clients| ]]
+[[Category:Software comparisons|BitTorrent clients]]
+
+[[bg:Ð¡ÑÐ°Ð²Ð½ÐµÐ½Ð¸Ðµ Ð½Ð° BitTorrent Ð¿ÑÐ¾Ð³ÑÐ°Ð¼Ð¸ÑÐµ]]
+[[da:Sammenligning af torrent-software]]
+[[de:Liste von BitTorrent-Clients]]
+[[es:Anexo:Clientes BitTorrent]]
+[[fr:Liste de clients BitTorrent]]
+[[id:Perbandingan klien BitTorrent]]
+[[it:BitTorrent#Client]]
+[[ms:Pelanggan BitTorrent]]
+[[pt:Anexo:ComparaÃ§Ã£o dos clientes de BitTorrent]]
+[[ru:Ð¡ÑÐ°Ð²Ð½ÐµÐ½Ð¸Ðµ BitTorrent-Ð¿ÑÐ¾Ð³ÑÐ°Ð¼Ð¼]]
+[[simple:List of BitTorrent clients]]
+[[vi:So sÃ¡nh cÃ¡c pháº§n má»m BitTorrent]]
+[[zh:BitTorrentå®¢æ·ç«¯]]</rev></revisions></page></pages></query></api>

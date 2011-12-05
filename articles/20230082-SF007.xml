@@ -1,0 +1,429 @@
+<?xml version="1.0"?><api><query><redirects><r from="Python code" to="Python (programming language)" /></redirects><pages><page pageid="23862" ns="0" title="Python (programming language)"><revisions><rev xml:space="preserve">{{Infobox programming language
+| name                   = Python
+| logo                   = [[File:Python logo.svg|200px|Official Python Logo]]
+| paradigm               = [[Multi-paradigm programming language|multi-paradigm]]: [[Object-oriented programming|object-oriented]], [[Imperative programming|imperative]], [[Functional programming|functional]], [[Procedural programming|procedural]], [[Reflective programming|reflective]]
+| year                   = 1991
+| designer               = [[Guido van Rossum]]
+| developer              = [[Python Software Foundation]]
+| latest_release_version = 3.2.2/ {{release date|mf=yes|2011|09|04}}&lt;br /&gt;2.7.2/ {{release date|mf=yes|2011|06|11}}
+| latest_preview_version = 3.3a0 &lt;ref&gt;{{cite web |url=http://docs.python.org/dev/|title= dev/Python v3.3a0 documentation}}&lt;/ref&gt;
+| typing                 = [[duck typing|duck]], [[dynamic typing|dynamic]], [[strong typing|strong]]
+| implementations        = '''[[CPython]]''', [[IronPython]], [[Jython]], [[Python for S60]], [[PyPy]] 
+| dialects               = [[Cython]], [[RPython]], [[Stackless Python]]
+| influenced_by          = [[ABC programming language|ABC]],&lt;ref name=&quot;faq-created&quot;/&gt; [[ALGOL 68]],&lt;ref name=&quot;98-interview&quot;&gt;{{cite web |url=http://www.amk.ca/python/writing/gvr-interview |title=Interview with Guido van Rossum (1998)|last=Kuchling|first=Andrew M.|work=amk.ca|date=22 Dec 2006 |accessdate=29 2007}}&lt;/ref&gt; [[C (programming language)|C]],&lt;ref&gt;{{cite journal|last=van Rossum|first=Guido|year=1993|title=An Introduction to Python for UNIX/C Programmers|journal=Proceedings of the NLUUG najaarsconferentie (Dutch UNIX users group)|quote=even though the design of C is far from ideal, its influence on Python is considerable.|url=http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.38.2023}}&lt;/ref&gt; [[C++ (programming language)|C++]],&lt;ref&gt;{{cite web |url=http://docs.python.org/tutorial/classes.html |title=9. Classes - Python v2.7.1 documentation |quote=It is a mixture of the class mechanisms found in C++ and Modula-3}}&lt;/ref&gt; [[Haskell (programming language)|Haskell]], [[Icon programming language|Icon]], [[Java (programming language)|Java]], [[Lisp programming language|Lisp]], [[Modula-3]], [[Perl]]
+| influenced             = [[Boo programming language|Boo]], [[Cobra (programming language from Cobra Language LLC)|Cobra]], [[D (programming language)|D]], [[Falcon (programming language)|Falcon]], [[Groovy (programming language)|Groovy]], [[JavaScript]], [[Ruby programming language|Ruby]]
+| operating_system       = [[Cross-platform]]
+| license                = [[Python Software Foundation License]]
+| website                = [http://www.python.org/ python.org]
+| file_ext               = .py, .pyw, .pyc, .pyo, .pyd
+| wikibooks              = Python Programming
+}}
+'''Python''' is a [[General-purpose programming language|general-purpose]], [[high-level programming language]]&lt;ref&gt;{{cite web |url= http://docs.python.org/faq/general.html#what-is-python-good-for|title= What is Python Good For?|accessdate=2008-09-05 |work= General Python FAQ|publisher= Python Software Foundation}}&lt;/ref&gt; whose design philosophy emphasizes code readability.&lt;ref&gt;{{cite web | url = http://www.python.org/doc/essays/blurb/ | title = What is Python? Executive Summary | publisher = Python Software Foundation | work = Python documentation | accessdate = 2007-03-21 }}&lt;/ref&gt; Python claims to &quot;[combine] remarkable power with very clear syntax&quot;,&lt;ref&gt;{{cite web|url=http://www.python.org/doc/faq/general/#what-is-python|title=General Python FAQ|work=python.org|publisher=Python Software Foundation|accessdate=2009-06-27}}&lt;/ref&gt; and its [[standard library]] is large and comprehensive. Its [[Off-side rule|use of indentation for block delimiters]] is unique among popular programming languages.
+
+Python supports multiple [[programming paradigm]]s, primarily but not limited to [[Object-oriented programming|object-oriented]], [[Imperative programming|imperative]] and, to a lesser extent, [[functional programming]] styles. It features a fully [[dynamic type]] system and automatic [[memory management]], similar to that of [[Scheme (programming language)|Scheme]], [[Ruby (programming language)|Ruby]], [[Perl]], and [[Tcl]].  Like other [[dynamic language]]s, Python is often used as a [[scripting language]], but is also used in a wide range of non-scripting contexts.  Using third-party tools, Python code can be packaged into standalone executable programs. Python interpreters are available for many operating systems.
+
+The [[reference implementation (computing)|reference implementation]] of Python ([[CPython]]) is [[free and open source software]] and has a community-based development model, as do all or nearly all of its alternative implementations. CPython is managed by the non-profit [[Python Software Foundation]].
+
+==History==
+{{Main|History of Python}}
+
+[[Image:Guido van Rossum.jpg|thumb|upright=0.7|right|[[Guido van Rossum]], the creator of Python]]
+
+Python was conceived in the late 1980s&lt;ref name=&quot;venners-interview-pt-1&quot;&gt;{{cite web|url = http://www.artima.com/intv/pythonP.html|title = The Making of Python|accessdate = 2007-03-22|publisher = Artima Developer}}&lt;/ref&gt; and its implementation was started in December 1989&lt;ref name=&quot;timeline-of-python&quot;&gt;{{cite web|url = http://python-history.blogspot.com/2009/01/brief-timeline-of-python.html|title = A Brief Timeline of Python|accessdate = 2009-01-20|publisher = Guido van Rossum}}&lt;/ref&gt; by [[Guido van Rossum]] at [[Centrum Wiskunde &amp; Informatica|CWI]] in the [[Netherlands]] as a successor to the [[ABC (programming language)|ABC programming language]] (itself inspired by [[SETL]])&lt;ref&gt;{{cite mailing list |url=http://mail.python.org/pipermail/python-dev/2000-August/008881.html |title=SETL (was: Lukewarm about range literals) |date=August 29, 2000 |accessdate=2011-03-13 |mailinglist=Python-Dev |last=van Rossum |first=Guido |authorlink=Guido van Rossum}}&lt;/ref&gt; capable of [[exception handling]] and interfacing with the [[Amoeba distributed operating system|Amoeba operating system]].&lt;ref name = &quot;faq-created&quot;&gt;{{cite web | url = http://www.python.org/doc/faq/general/#why-was-python-created-in-the-first-place | title = General Python FAQ | work=Python Programming Language â Official Website | publisher = Python Software Foundation | accessdate = 2007-03-22}}&lt;/ref&gt; Van Rossum is Python's principal author, and his continuing central role in deciding the direction of Python is reflected in the title given to him by the Python community, [[Benevolent Dictator For Life|''Benevolent Dictator for Life'' (BDFL)]].
+
+Python 2.0 was released on 16 October 2000, with many major new features including a full [[Garbage collection (computer science)|garbage collector]] and support for [[Unicode]]. However, the most important change was to the development process itself, with a shift to a more transparent and community-backed process.&lt;ref name=&quot;newin-2.0&quot;&gt;{{cite web|url = http://www.amk.ca/python/2.0/|title = What's New in Python 2.0|author = A.M. Kuchling and Moshe Zadka|accessdate = 2007-03-22}}&lt;/ref&gt; Python 3.0 (also known as Python 3000 or py3k), a major, backwards-incompatible release, was released on 3 December 2008&lt;ref name=&quot;3.0-release&quot;&gt;{{cite web|url=http://python.org/download/releases/3.0/|title=Python 3.0 Release|publisher=Python Software Foundation|accessdate=2009-07-08}}&lt;/ref&gt; after a long period of testing. Many of its major features have been [[backporting|backport]]ed to the backwards-compatible Python 2.6 and 2.7.&lt;ref name=&quot;pep-3000&quot;&gt;{{cite web|url=http://www.python.org/dev/peps/pep-3000/|title=PEP 3000 -- Python 3000|last=van Rossum|first=Guido|date=5 April 2006 | publisher = Python Software Foundation | accessdate = 2009-06-27 }}&lt;/ref&gt; Python has twice been awarded as [[Tiobe index|TIOBE]] Programming Language of the Year (2007, 2010), which is given to the language with the greatest growth in popularity over the course of the year (as measured by the TIOBE index).&lt;ref&gt;{{cite web|url=http://www.tiobe.com/index.php/content/paperinfo/tpci/index.html|title=TIOBE Programming Community Index for January 2011|date=January 2010|publisher=TIOBE Software|accessdate=2011-01-10}}&lt;/ref&gt;
+
+==Programming philosophy==
+Python is a [[multi-paradigm programming language]]. Rather than forcing programmers to adopt a particular style of programming, it permits several styles: [[object-oriented programming]] and [[structured programming]] are fully supported, and there are a number of language features which support [[functional programming]] and [[aspect-oriented programming]] (including by [[metaprogramming]]&lt;ref&gt;{{cite web|url=http://www.python.org/community/pycon/dc2004/papers/24/metaclasses-pycon.pdf|archiveurl=http://www.webcitation.org/5lubkaJRc|archivedate=2009-12-10|format=PDF|title=Python Metaclasses: Who? Why? When?|last=The Cain Gang Ltd.|accessdate=2009-06-27}}&lt;/ref&gt; and by [[Metaobject|magic methods]]).&lt;ref&gt;{{cite web|url=http://docs.python.org/3.0/reference/datamodel.html#special-method-names|title=3.3. Special method names|work=The Python Language Reference|publisher=Python Software Foundation|accessdate=2009-06-27}}&lt;/ref&gt; Many other paradigms are supported using extensions, such as pyDBC&lt;ref&gt;{{Citation |url=http://www.nongnu.org/pydbc/ |title=Contracts for Python |accessdate=September 24, 2011}}&lt;/ref&gt; and Contracts for Python&lt;ref&gt;{{Citation |url=http://www.wayforward.net/pycontract/ |title=Contracts for Python |accessdate=September 24, 2011}}&lt;/ref&gt; which allow [[design by contract]].
+
+Python uses [[dynamic typing]] and a combination of [[reference counting]] and a cycle-detecting [[Garbage collection (computer science)|garbage collector]] for [[memory management]]. An important feature of Python is dynamic [[name resolution]] ([[late binding]]), which binds method and variable names during program execution.
+
+Rather than requiring all desired functionality to be built into the language's core, Python was designed to be highly extensible. New built-in modules can be easily written in [[C (programming language)|C]], [[C++]] or [[Cython]]. Python can also be used as an extension language for existing modules and applications that need a programmable interface. This design of a small core language with a large standard library and an easily extensible interpreter was intended by Van Rossum from the very start because of his frustrations with [[ABC (programming language)|ABC]] (which espoused the opposite mindset).&lt;ref name=&quot;venners-interview-pt-1&quot;/&gt;
+
+The design of Python offers only limited support for [[functional programming]] in the [[Lisp programming language|Lisp]] tradition.  However, Python's design philosophy exhibits significant similarities to those of minimalistic Lisp-family languages, such as [[Scheme (programming language)|Scheme]].{{Citation needed|date=November 2009}}  The language has map(), reduce() and filter() functions, and the [[list comprehension|list comprehensions]] added in Python 2.0 have since been extended with comprehensions for dictionaries and sets, as well as generator expressions. The standard library has two modules (itertools and functools) that implement functional tools borrowed from [[Haskell (programming language)|Haskell]] and [[Standard ML]].&lt;ref&gt;{{cite web|url=http://docs.python.org/lib/module-itertools.html |title=6.5 itertools - Functions creating iterators for efficient looping |publisher=Docs.python.org |date= |accessdate=2008-11-24}}&lt;/ref&gt;
+
+While offering choice in coding methodology, the Python philosophy rejects exuberant syntax, such as in [[Perl]], in favor of a sparser, less-cluttered grammar. Python's developers expressly promote a particular &quot;culture&quot; or ideology based on what they want the language to be, favoring language forms they see as &quot;beautiful&quot;, &quot;explicit&quot; and &quot;simple&quot;. As [[Alex Martelli]] put it in his ''Python Cookbook'' (2nd ed., p.&amp;nbsp;230): &quot;To describe something as clever is NOT considered a compliment in the Python culture.&quot; Python's philosophy rejects the Perl &quot;[[there is more than one way to do it]]&quot; approach to language design in favor of &quot;there should be oneâand preferably only oneâobvious way to do it&quot;.&lt;ref name=&quot;PEP20&quot;&gt;{{cite web|url=http://www.python.org/dev/peps/pep-0020/ |title=PEP 20 - The Zen of Python |publisher=Python Software Foundation |date=2004-08-23 |accessdate=2008-11-24}}&lt;/ref&gt;
+
+Python's developers eschew [[Optimization (computer science)#When to optimize|premature optimization]], and moreover, reject patches to non-critical parts of CPython which would offer a marginal increase in speed at the cost of clarity.&lt;ref&gt;[http://www.python.org/dev/culture/ Python Culture]{{dead link|date=April 2011}}&lt;/ref&gt; Python is sometimes described as &quot;slow&quot;.&lt;ref&gt;{{Citation |url=http://peter.mapledesign.co.uk/weblog/archives/python-is-slow |title=Python is... slow? |accessdate=September 24, 2011 |date=December 21st, 2004}}&lt;/ref&gt; However most problems and sections of programs are not speed critical.{{Citation needed|date=September 2011}} When speed is important, Python programmers tend to try using a JIT compiler such as [[Psyco]] or using an alternative language implementation such as [[PyPy]]. When pure Python code is not fast enough, time-critical functions can be rewritten in &quot;closer to the metal&quot; languages such as C, or by translating (a dialect of) Python code to C code using tools like [[Cython]].&lt;ref&gt;{{cite web|url=http://www.python.org/doc/essays/list2str.html |title=Python Patterns - An Optimization Anecdote |publisher=Python.org |date= |accessdate=2011-04-19}}&lt;/ref&gt;
+
+The core philosophy of the language is summarized by the document &quot;PEP 20 (The Zen of Python)&quot;.&lt;ref name=&quot;PEP20&quot;/&gt;
+
+==Name and neologisms==
+An important goal of the Python developers is making Python fun to use. This is reflected in the origin of the name (based on the television series ''[[Monty Python's Flying Circus]]''), in the common practice of using Monty Python references in example code, and in an occasionally playful approach to tutorials and reference materials.&lt;ref&gt;{{cite web|url=http://docs.python.org/tut/node3.html |title=Python Tutorial |publisher=Docs.python.org |date= |accessdate=2011-04-19}}&lt;/ref&gt;&lt;ref&gt;{{cite web|url=http://learnpythonthehardway.org |title=Learn Python the Hard Way |publisher=learnpythonthehardway.org |date= |accessdate=2011}}&lt;/ref&gt; For example, the [[Metasyntactic_variable#Python|metasyntactic variables]] often used in Python literature are [[Spam (Monty Python)|''spam'' and ''eggs'']],&lt;ref&gt;For example, see the Python docs such as {{cite web
+|url=http://docs.python.org/tut/node3.html
+|title=Python Tutorial
+|publisher=docs.python.org
+|date=
+|accessdate=2011-05-06}} and other examples such as {{cite web
+|url=http://stackoverflow.com/questions/5033906/in-python-should-i-use-else-after-a-return-in-an-if-block
+|title=Stack overflow, Python question
+|publisher=stackoverflow.com
+|date=
+|accessdate=2011-05-06}}
+&lt;/ref&gt; instead of the traditional [[foobar|''foo'' and ''bar'']].
+
+A common [[neologism]] in the Python community is ''pythonic'', which can have a wide range of meanings related to program style. To say that code is pythonic is to say that it uses Python idioms well, that it is natural or shows fluency in the language. Likewise, to say of an interface or language feature that it is pythonic is to say that it works well with Python idioms, that its use meshes well with the rest of the language.
+
+In contrast, a mark of ''unpythonic'' code is that it attempts to write C++ (or Lisp, Perl, or Java) code in Pythonâthat is, provides a rough transcription rather than an idiomatic translation of forms from another language. The concept of pythonicity is tightly bound to Python's minimalist philosophy of readability and avoiding the &quot;there's more than one way to do it&quot; approach. Unreadable code or incomprehensible idioms are unpythonic.
+
+Users and admirers of Pythonâmost especially those considered knowledgeable or experiencedâare often referred to as ''Pythonists'', ''Pythonistas'', and ''Pythoneers''.&lt;ref&gt;{{cite web|url=http://python.net/~goodger/projects/pycon/2007/idiomatic/handout.html|title=Code Like a Pythonista: Idiomatic Python|author=David Goodger}}; {{cite web|url=http://python.net/crew/mwh/hacks/objectthink.html|title=How to think like a Pythonista}}&lt;/ref&gt;
+
+The prefix ''Py'' can be used to show that something is related to Python. Examples of the use of this prefix in names of Python applications or libraries include [[Pygame]], a [[Language binding|binding]] of [[Simple DirectMedia Layer|SDL]] to Python (commonly used to create games); [[PyS60]], an implementation for the [[Symbian Series 60]] [[Symbian OS|Operating System]]; [[PyQt]] and [[PyGTK]],  which bind [[Qt (toolkit)|Qt]] and [[GTK]], respectively, to Python; and [[PyPy]], a Python implementation written in Python. The prefix is also used outside of naming software packages: the major Python [[Academic conference|conference]] is named [[PyCon]].
+
+==Usage==
+{{Main|Python software}}
+
+Python is often used as a [[scripting language]] for [[web application]]s, e.g. via [[mod_wsgi]] for the [[Apache web server]]. With [[Web Server Gateway Interface]], a standard API has been developed to facilitate these applications. [[Web application framework]]s like [[Django (web framework)|Django]], [[Pylons (web framework)|Pylons]], [[TurboGears]], [[web2py]], [[Flask (programming)|Flask]] and [[Zope]] support developers in the design and maintenance of complex applications. Libraries like [[NumPy]], [[SciPy]] and [[Matplotlib]] allow Python to be used effectively in scientific computing.
+
+Python has been successfully embedded in a number of software products as a scripting language, including in [[finite element method]] software such as [[Abaqus]], 3D animation packages such as [[Houdini (software)|Houdini]], [[Maya (software)|Maya]], [[MotionBuilder]], [[Softimage XSI|Softimage]], [[Cinema 4D]], [[modo (software)|modo]] and [[Blender (software)|Blender]] and 2D imaging programs like [[GIMP]], [[Inkscape]], [[Scribus]] and [[Paint Shop Pro]].&lt;ref&gt;Documentation of the PSP Scripting API can be found at [http://www.jasc.com/support/customercare/articles/psp9components.asp ''JASC Paint Shop Pro 9: Additional Download Resources'']&lt;/ref&gt; [[GNU]] [[GDB]] uses Python as a pretty printer to show complex structures such as C++ containers. [[ESRI]] is now promoting Python as the best choice for writing scripts in [[ArcGIS]].&lt;ref&gt;{{cite web|title=GIS job market and programming? | url=http://whygeo.com/questions/56/gis-job-market-and-programming | year=2010 | month=November | accessdate=Oct 2010}}&lt;/ref&gt;&lt;ref&gt;{{cite web|title=About getting started with writing geoprocessing scripts | url=http://webhelp.esri.com/arcgisdesktop/9.2/index.cfm?TopicName=About_getting_started_with_writing_geoprocessing_scripts | year=2006 | month=November | accessdate=April 2007}}&lt;/ref&gt; It has even been used in several video games,&lt;ref&gt;{{cite web|url=http://myeve.eve-online.com/devblog.asp?a=blog&amp;bid=488|title=Stackless Python 2.5|publisher=[[CCP Games]]|date=2007-07-23|author=porkbelly|work=Eve Insider Dev Blog|quote=As you may well know, your favorite space-game owes its existence to the programming language Python|archiveurl=http://www.webcitation.org/5ru5w3vSR|archivedate=2010-08-10}}&lt;/ref&gt;&lt;ref&gt;{{cite web|url=http://www.2kgames.com/civ4/blog_03.htm|title=Modding Sid Meier's Civilization IV|last=Caudill|first=Barry|date=2005-09-20|publisher=[[Firaxis Games]]|archiveurl=http://www.webcitation.org/5ru5VItfv|archivedate=2010-08-10|work=Sid Meier's Civilization IV Developer Blog|quote=we created three levels of tools ... The next level offers Python and XML support, letting modders with more experience manipulate the game world and everything in it.}}&lt;/ref&gt; and has been adopted as first of the three available [[programming language]]s in [[Google App Engine]] (as of May 2011), the other two being [[Java (software platform)|Java]] and [[Go (programming language)|Go]].&lt;ref&gt;{{cite web|url=http://code.google.com/apis/documents/docs/1.0/developers_guide_python.html|title=Python Language Guide (v1.0)|work=Google Documents List Data API v1.0|publisher=[[Google]]|archiveurl=http://www.webcitation.org/5ru5FHxfV|archivedate=2010-08-10}}&lt;/ref&gt;
+
+Because of its similarities to Lisp, Python has also been used in [[Artificial Intelligence]] (AI).&lt;ref&gt;{{cite web 
+| title=AI in Python
+| url=http://www.ainewsletter.com/newsletters/aix_0508.htm#python_ai_ai}}&lt;/ref&gt;&lt;ref&gt;{{cite web 
+| title=PyAIML, an interpreter package for AIML, the Artificial Intelligence Markup Language
+| url=http://pypi.python.org/pypi/PyAIML}}&lt;/ref&gt;&lt;ref&gt;{{cite web 
+| title=Artificial Intelligence: A Modern Approach
+| url=http://aima.cs.berkeley.edu/}}&lt;/ref&gt;
+
+For many operating systems, Python is a standard component; it ships with most [[Linux distribution]]s, [[FreeBSD]], [[NetBSD]], [[OpenBSD]] and with [[Mac OS X]] and can be used from the terminal. A number of Linux distributions use installers written in Python: [[Ubuntu (operating system)|Ubuntu]] uses the [[ubiquity (software)|Ubiquity]] installer, while [[Red Hat Linux]] and [[Fedora (operating system)|Fedora]] use the [[Anaconda (installer)|Anaconda]] installer. [[Gentoo Linux]] uses Python in its [[package management]] system, [[Portage (software)|Portage]] and the standard tool to access it, [[Portage (software)#Emerge|emerge]]. [[Pardus (operating system)|Pardus]] uses it for administration and during system boot.&lt;ref&gt;{{cite web|url=http://www.pardus.org.tr/eng/projects/comar/PythonInPardus.html |title=Pardus: [[Scientific and Technological Research Council of Turkey|TÃBÄ°TAK]]/[[Turkish National Research Institute of Electronics and Cryptology|UEKAE]] |publisher=pardus.org.tr |date= |accessdate=2008-11-24}}&lt;/ref&gt;
+
+Python has also seen extensive use in the [[information security]] industry, including exploit development.&lt;ref&gt;Products and discussion of this use of Python include {{cite web|url=http://www.immunitysec.com/products-immdbg.shtml|title=Welcome to Immunity Debugger |publisher=immunitysec.com |date= |accessdate=2008-11-24}}; {{cite web |url=http://oss.coresecurity.com/ |title=CORE Security Technologies' open source software repository |publisher=immunitysec.com}}&lt;/ref&gt;&lt;ref&gt;{{cite web|url=http://wapiti.sourceforge.net/ |title=Wapiti - Web application security auditor |publisher=wapiti.sourceforge.net |date= |accessdate=2008-11-24}}&lt;/ref&gt;&lt;ref&gt;[http://www.theartoffuzzing.com/joomla/]{{dead link|date=September 2011}}&lt;/ref&gt;&lt;ref&gt;[http://fist.immunitysec.com/pipermail/dailydave/2004-September/000851.html]{{dead link|date=September 2011}}&lt;/ref&gt;
+
+Among the users of Python are [[YouTube]]&lt;ref&gt;{{cite web|url=http://sayspy.blogspot.com/2006/12/youtube-runs-on-python.html |title=Coder Who Says Py: YouTube runs on Python! |publisher=Sayspy.blogspot.com |date=December 12, 2006 |accessdate=2008-11-24}}&lt;/ref&gt; and the original [[BitTorrent (software)|BitTorrent client]].&lt;ref&gt;{{Citation |url=http://www.onlamp.com/pub/a/python/2003/7/17/pythonnews.html |title=Review of original BitTorrent software |accessdate=September 24, 2011}}&lt;/ref&gt; Large organizations that make use of Python include [[Google]],&lt;ref&gt;{{cite web|url=http://python.org/about/quotes/ |title=Quotes about Python |publisher=Python.org |date= |accessdate=2008-11-24}}&lt;/ref&gt; [[Yahoo!]],&lt;ref&gt;{{cite web|url=http://wiki.python.org/moin/OrganizationsUsingPython |title=Organizations Using Python |publisher=Python.org |date= |accessdate=2009-01-15}}&lt;/ref&gt; [[CERN]],&lt;ref&gt;{{cite web|url=http://cdsweb.cern.ch/record/974627?ln=no |title=CERN Document Server: Record#974627: Python : the holy grail of programming |publisher=Cdsweb.cern.ch |date= |accessdate=2011-04-19}}&lt;/ref&gt; [[NASA]],&lt;ref&gt;{{cite web|url=http://www.python.org/about/success/usa/ |title=Python Success Stories |publisher=Python.org |date= |accessdate=2008-11-24}}&lt;/ref&gt; [[Industrial Light &amp; Magic|ILM]],&lt;ref&gt;{{cite web|url=http://www.python.org/about/success/ilm/ | title=Python Success Stories|publisher=Python.org| date=2003-01-17}}&lt;/ref&gt; and [[ITA Software|ITA]].&lt;ref&gt;{{Citation |url=http://www.eweek.com/c/a/Application-Development/Python-Slithers-into-Systems/ |title=eweek.com |accessdate=September 24, 2011}}&lt;/ref&gt; Most of the [[Sugar (GUI)|Sugar]] software for the [[One Laptop per Child]] XO, now developed at [[Sugar Labs]], is written in Python.&lt;ref&gt;{{cite web|url=http://sugarlabs.org/go/Sugar |title= What is Sugar? - Sugar Labs |publisher=sugarlabs.org |date=2008-05-10 |accessdate=0r-2-11}}&lt;/ref&gt;
+
+==Syntax and semantics==
+[[File:Python_add5_syntax.png|thumb|292px|[[Syntax highlighting|Syntax-highlighted]] Python 2.x code.]]
+{{Main|Python syntax and semantics}}
+
+Python was intended to be a highly readable language. It is designed to have an uncluttered visual layout, frequently using English keywords where other languages use punctuation. Python requires less [[Boilerplate code|boilerplate]] than traditional [[manifest typing|manifestly typed]] structured languages such as [[C (programming language)|C]] or [[Pascal programming language|Pascal]], and has a smaller number of syntactic exceptions and special cases than either of these.&lt;ref&gt;{{cite web | title = Is Python a good language for beginning programmers? | url = http://www.python.org/doc/faq/general/#is-python-a-good-language-for-beginning-programmers | work = General Python FAQ | date = March 7, 2005 | accessdate = 2007-03-21 | publisher = Python Software Foundation }}&lt;/ref&gt;
+For a detailed description of the differences between 2.x and 3.x versions, see [[Python 3000|History of Python]].
+
+===Indentation===
+Python uses [[whitespace (computer science)|whitespace]] indentation, rather than [[curly bracket programming language|curly braces]] or keywords, to delimit [[block (programming)|block]]s (a feature also known as the [[off-side rule]]). An increase in indentation comes after certain statements; a decrease in indentation signifies the end of the current block.&lt;ref&gt;{{cite web|url=http://www.secnetix.de/~olli/Python/block_indentation.hawk |title=Myths about indentation in Python |publisher=Secnetix.de |date= |accessdate=2011-04-19}}&lt;/ref&gt;
+
+===Statements and control flow===
+Python's statements include (among others):
+* The [[if-then-else|&lt;code&gt;if&lt;/code&gt; statement]], which conditionally executes a block of code, along with &lt;code&gt;else&lt;/code&gt; and &lt;code&gt;elif&lt;/code&gt; (a contraction of else-if).
+* The [[Foreach#Python|&lt;code&gt;for&lt;/code&gt; statement]], which iterates over an iterable object, capturing each element to a local variable for use by the attached block.
+* The [[While loop|&lt;code&gt;while&lt;/code&gt; statement]], which executes a block of code as long as its condition is true.
+* The [[Exception handling syntax#Python|&lt;code&gt;try&lt;/code&gt;]] statement, which allows exceptions raised in its attached code block to be caught and handled by &lt;code&gt;except&lt;/code&gt; clauses; it also ensures that clean-up code in a &lt;code&gt;finally&lt;/code&gt; block will always be run regardless of how the block exits.
+* The [[Class (computer programming)|&lt;code&gt;class&lt;/code&gt; statement]], which executes a block of code and attaches its local namespace to a [[class (computer science)|class]], for use in [[object-oriented programming]].
+* The &lt;code&gt;def&lt;/code&gt; statement, which defines a [[function (computing)|function]] or [[method (computing)|method]].
+* The &lt;code&gt;with&lt;/code&gt; statement (from Python 2.5), which encloses a code block within a context manager (for example, acquiring a [[lock (computer science)|lock]] before the block of code is run, and releasing the lock afterwards).
+* The &lt;code&gt;pass&lt;/code&gt; statement, which serves as a [[NOP]] and can be used in place of a code block.
+* The [[assertion (programming)|&lt;code&gt;assert&lt;/code&gt; statement]], used during debugging to check for conditions that ought to apply.
+* The &lt;code&gt;yield&lt;/code&gt; statement, which returns a value from a [[generator (computer science)#Python|generator]] function. (From Python 2.5, &lt;code&gt;yield&lt;/code&gt; is also an operator.  This form is used to implement [[coroutine]]s -- see below.)
+
+Each statement has its own semantics: for example, the &lt;code&gt;def&lt;/code&gt; statement does not execute its block immediately, unlike most other statements.
+
+Python does not support [[first-class continuations]], and according to Guido van Rossum it never will.&lt;ref&gt;{{cite web | title = Language Design Is Not Just Solving Puzzles | url = http://www.artima.com/weblogs/viewpost.jsp?thread=147358 | first = Guido | last = van Rossum | date = February 9, 2006 | accessdate = 2007-03-21 | work = Artima forums | publisher = Artima }}&lt;/ref&gt; However, better support for [[coroutine]]-like functionality is provided in 2.5, by extending Python's [[Generator (computer science)|generators]].&lt;ref&gt;{{cite web | url = http://www.python.org/peps/pep-0342.html | title = Coroutines via Enhanced Generators | date = April 21, 2006 | first = Guido | last = van Rossum | coauthors = Phillip J. Eby | work = Python Enhancement Proposals | publisher = Python Software Foundation | accessdate = 2007-03-21 }}&lt;/ref&gt; Prior to 2.5, generators were [[lazy evaluation|lazy]] [[iterator]]s; information was passed unidirectionally out of the generator. As of Python 2.5, it is possible to pass information back into a generator function.
+
+===Expressions===
+Python expressions are similar to languages such as [[C (programming language)|C]] and [[Java (programming language)|Java]].
+*In Python 2, the &lt;code&gt;/&lt;/code&gt; operator on integers does [[integer division]]: it truncates the result to an integer. Floating-point division on integers can be achieved by converting one of the integers to a float (e.g. &lt;code&gt;float(x) / y&lt;/code&gt;). In Python 3, the result of &lt;code&gt;/&lt;/code&gt; is always a floating-point value, and a new operator &lt;code&gt;//&lt;/code&gt; is introduced to do integer division; this behaviour can be enabled in Python 2.2+ using &lt;code&gt;from __future__ import division&lt;/code&gt;.
+*In Python, &lt;code&gt;==&lt;/code&gt; compares by value, in contrast to Java, where it compares by reference. (Value comparisons in Java use the &lt;code&gt;equals()&lt;/code&gt; method.)  Python's &lt;code&gt;is&lt;/code&gt; operator may be used to compare object identities (comparison by reference).  Comparisons may be chained, for example &lt;code&gt;a &lt;= b &lt;= c&lt;/code&gt;.
+*Python uses the words &lt;code&gt;and&lt;/code&gt;, &lt;code&gt;or&lt;/code&gt;, &lt;code&gt;not&lt;/code&gt; for its boolean operators rather than the symbolic &lt;code&gt;&amp;&amp;&lt;/code&gt;, &lt;code&gt;||&lt;/code&gt;, &lt;code&gt;!&lt;/code&gt; used in C.
+*Python has a type of expression known as a ''[[list comprehension]]''.  Python 2.4 extended list comprehensions into a more general expression known as a ''[[generator (computer science)|generator]] expression''.&lt;ref&gt;{{cite |url=http://www.python.org/dev/peps/pep-0289/ |title=Generator expressions |work=Python enhancement proposals |id=PEP 289 |date=2002-01-30 |publication-date=2009-01-18 |first=Raymond |last=Hettinger |publisher=Python software foundation |accessdate=2011-07-12}}&lt;/ref&gt;
+*[[Anonymous function]]s are implemented using [[lambda expressions]]; however, these are limited in that the body can only be a single expression.
+*Conditional expressions in Python are written as &lt;code&gt;x if c else y&lt;/code&gt;&lt;ref&gt;{{cite |url=http://www.python.org/dev/peps/pep-0308/ |title=Conditional expressions |work=Python enhancement proposals |id=PEP 308 |date=2003-02-07 |publication-date=2007-06-28 |first1=Guido |last1=van Rossum |first2=Raymond |last2=Hettinger |publisher=Python software foundation |accessdate=2011-07-13}}&lt;/ref&gt; (different in order of operands from the &lt;code&gt;[[?:]]&lt;/code&gt; operator common to many other languages).
+*Python makes a distinction between [[list (computer science)|list]]s and [[tuple]]s.  Lists are written as &lt;code&gt;[1, 2, 3]&lt;/code&gt;, are mutable, and cannot be used as the keys of dictionaries (dictionary keys must be [[immutable]] in Python).  Tuples are written as &lt;code&gt;(1, 2, 3)&lt;/code&gt;, are immutable and thus can be used as the keys of dictionaries, provided all elements of the tuple are immutable.  The parentheses around the tuple are optional in some contexts.  Tuples can appear on the left side of an equal sign; hence a statement like &lt;code&gt;x, y = y, x&lt;/code&gt; can be used to swap two variables.
+*Python 2 has a &quot;string format&quot; operator &lt;code&gt;%&lt;/code&gt;.  This functions analogous to &lt;code&gt;[[printf]]&lt;/code&gt; format strings in [[C (programming language)|C]], e.g. &lt;code&gt;&quot;foo=%s bar=%d&quot; % (&quot;blah&quot;, 2)&lt;/code&gt; evaluates to &lt;code&gt;&quot;foo=blah bar=2&quot;&lt;/code&gt;. In Python 3, this was obsoleted in favour of the &lt;code&gt;format()&lt;/code&gt; method of the &lt;code&gt;str&lt;/code&gt; class, e.g. &lt;code&gt;&quot;foo={0} bar={1}&quot;.format(&quot;blah&quot;, 2)&lt;/code&gt;.
+*Python has various kinds of [[string literal]]s:
+**Strings delimited by single or double quotation marks.  Unlike in [[Unix shell]]s, [[Perl]] and Perl-influenced languages, single quotation marks and double quotation marks function similarly.  Both kinds of string use the backslash (\) as an [[escape character]] and there is no implicit [[string interpolation]] such as &lt;code&gt;&quot;$foo&quot;&lt;/code&gt;.
+**Triple-quoted strings, which begin and end with a series of three single or double quotation marks.  They may span multiple lines and function like [[here document]]s in shells, Perl and [[Ruby (programming language)|Ruby]].
+**[[Raw string]] varieties, denoted by prefixing the string literal with an &lt;code&gt;r&lt;/code&gt;.  No escape sequences are interpreted; hence raw strings are useful where literal backslashes are common, such as [[regular expression]]s and [[Microsoft Windows|Windows]]-style paths.  Compare &quot;@-quoting&quot; in [[C Sharp (programming language)|C#]].
+*Python has [[array index|index]] and [[array slicing|slice]] expressions on lists, denoted as &lt;code&gt;a[key]&lt;/code&gt;, &lt;code&gt;a[start:stop]&lt;/code&gt; or &lt;code&gt;a[start:stop:step]&lt;/code&gt;.  Indexes are [[zero-based]], and negative indexes are relative to the end.  Slices take elements from the ''start'' index up to, but not including, the ''stop'' index. The third slice parameter, called ''step'' or ''stride'', allows elements to be skipped and reversed.  Slice indexes may be omitted, for example &lt;code&gt;a[:]&lt;/code&gt; returns a [[shallow copy]] of the entire list.
+
+In Python, a distinction between expressions and statements is rigidly enforced, in contrast to languages such as [[Common Lisp]], [[Scheme (programming language)|Scheme]], or [[Ruby (programming language)|Ruby]].  This leads to some duplication of functionality, e.g.
+*[[list comprehensions]] vs. &lt;code&gt;for&lt;/code&gt;-loops
+*[[conditional (programming)|conditional]] expressions vs. &lt;code&gt;if&lt;/code&gt; blocks
+*The &lt;code&gt;eval()&lt;/code&gt; vs. &lt;code&gt;exec()&lt;/code&gt; built-in functions (in Python 2, &lt;code&gt;exec&lt;/code&gt; is a statement); the former is for expressions, the latter is for statements.
+
+Statements cannot be a part of an expression and so list and other comprehensions or [[lambda expressions]], all being expressions, cannot contain statements. A particular case of this is that an assignment statement such as &lt;code&gt;a = 1&lt;/code&gt; cannot form part of the conditional expression of a conditional statement. This has the advantage of avoiding a classic C error of mistaking an assignment operator &lt;code&gt;=&lt;/code&gt; for an equality operator &lt;code&gt;==&lt;/code&gt; in conditions: &lt;code&gt;if (c = 1) { ... }&lt;/code&gt; is valid C code but &lt;code&gt;if c = 1: ...&lt;/code&gt; causes a syntax error in Python.
+
+===Methods===
+[[Method (programming)|Method]]s on objects are [[function (programming)|function]]s attached to the object's class; the syntax &lt;code&gt;instance.method(argument)&lt;/code&gt; is, for normal methods and functions, [[syntactic sugar]] for &lt;code&gt;Class.method(instance, argument)&lt;/code&gt;. Python methods have an explicit &lt;code&gt;[[This (computer science)|self]]&lt;/code&gt; parameter to access [[instance data]], in contrast to the implicit self in some other object-oriented programming languages (for example, [[Java (programming language)|Java]], [[C++]] or [[Ruby (programming language)|Ruby]]).&lt;ref&gt;{{cite web | url = http://www.python.org/doc/faq/general/#why-must-self-be-used-explicitly-in-method-definitions-and-calls | title = Why must 'self' be used explicitly in method definitions and calls? | work = Python FAQ | publisher = Python Software Foundation }}&lt;/ref&gt;
+
+===Typing===
+Python uses [[duck typing]] and has typed objects but untyped variable names. Type constraints are not checked at [[compile time]]; rather, operations on an object may fail, signifying that the given object is not of a suitable type. Despite being [[Dynamic programming language|dynamically typed]], Python is [[Strongly typed programming language|strongly typed]], forbidding operations that are not well-defined (for example, adding a number to a string) rather than silently attempting to make sense of them.
+
+Python allows programmers to define their own types using [[class (computer science)|class]]es, which are most often used for [[object-oriented programming]]. New [[Object (computer science)|instances]] of classes are constructed by calling the class (for example, &lt;code&gt;SpamClass()&lt;/code&gt; or &lt;code&gt;EggsClass()&lt;/code&gt;), and the classes themselves are instances of the [[metaclass]] &lt;code&gt;type&lt;/code&gt; (itself an instance of itself), allowing [[metaprogramming]] and [[reflection (computer science)|reflection]].
+
+Prior to version 3.0, Python had two kinds of classes: &quot;old-style&quot; and &quot;new-style&quot;.&lt;ref name=&quot;classy&quot;&gt;{{cite web |title=The Python Language Reference, section 3.3. New-style and classic classes, for release 2.7.1 |accessdate=2011-01-12
+|url=http://docs.python.org/reference/datamodel.html#new-style-and-classic-classes}}&lt;/ref&gt; Old-style classes were eliminated in Python 3.0, making all classes new-style. In versions between 2.2 and 3.0, both kinds of classes could be used. The syntax of both styles is the same, the difference being whether the class &lt;code&gt;object&lt;/code&gt; is inherited from, directly or indirectly (all new-style classes inherit from &lt;code&gt;object&lt;/code&gt; and are instances of &lt;code&gt;type&lt;/code&gt;).
+
+Here is a summary of Python 3's built-in types:
+{| class=&quot;wikitable&quot;
+|-
+! Type
+! Description
+! Syntax example
+|-
+| &lt;code&gt;[[String (computer science)|str]]&lt;/code&gt;
+| An [[Immutable object|immutable]] sequence of Unicode codepoints.
+| &lt;code&gt;'Wikipedia'&lt;/code&gt;&lt;br /&gt;&lt;code&gt;&quot;Wikipedia&quot;&lt;/code&gt;&lt;br /&gt;&lt;code&gt;&quot;&quot;&quot;Spanning&lt;br /&gt;multiple&lt;br /&gt;lines&quot;&quot;&quot;&lt;/code&gt;
+|-
+| &lt;code&gt;bytearray&lt;/code&gt;
+| A mutable sequence of bytes
+| &lt;code&gt;bytearray(b'Some ASCII')&lt;code&gt;&lt;br /&gt;&lt;code&gt;bytearray(b&quot;Some ASCII&quot;)&lt;/code&gt;
+|-
+| &lt;code&gt;[[byte]]s&lt;/code&gt;
+| An immutable sequence of bytes
+| &lt;code&gt;b'Some ASCII'&lt;code&gt;&lt;br /&gt;&lt;code&gt;b&quot;Some ASCII&quot;&lt;/code&gt;
+|-
+| &lt;code&gt;[[list (computer science)|list]]&lt;/code&gt;
+| Mutable, can contain mixed types
+| &lt;code&gt;[4.0, 'string', True]&lt;/code&gt;
+|-
+| &lt;code&gt;[[tuple]]&lt;/code&gt;
+| Immutable, can contain mixed types
+| &lt;code&gt;(4.0, 'string', True)&lt;/code&gt;
+|-
+| &lt;code&gt;[[set (computer science)|set]]&lt;/code&gt;, &lt;code&gt;frozenset&lt;/code&gt;
+| Unordered, contains no duplicates. A &lt;code&gt;frozenset&lt;/code&gt; is immutable.
+| &lt;code&gt;{4.0, 'string', True} &lt;/code&gt;&lt;br /&gt;&lt;code&gt;frozenset([4.0, 'string', True])&lt;/code&gt;
+|-
+| &lt;code&gt;[[associative array|dict]]&lt;/code&gt;
+| A mutable group of key and value pairs
+| &lt;code&gt;{'key1': 1.0, 3: False}&lt;/code&gt;
+|-
+| &lt;code&gt;[[integer (computer science)|int]]&lt;/code&gt;
+| An immutable integer of unlimited magnitude.&lt;ref&gt;{{Citation |url=http://www.python.org/dev/peps/pep-0237/ |title=PEP 237 -- Unifying Long Integers and Integers |accessdate=September 24, 2011}}&lt;/ref&gt;
+| &lt;code&gt;42&lt;/code&gt;
+|-
+| &lt;code&gt;[[floating point|float]]&lt;/code&gt;
+| An immutable [[floating point]] number (system-defined precision)
+| &lt;code&gt;3.1415927&lt;/code&gt;
+|-
+| &lt;code&gt;[[complex number|complex]]&lt;/code&gt;
+| An immutable [[complex number]] with real and imaginary parts
+| &lt;code&gt;3+2.7j&lt;/code&gt;
+|-
+|&lt;code&gt;[[truth value|bool]]&lt;/code&gt;
+| An immutable truth value
+|&lt;code&gt;True&lt;/code&gt;&lt;br /&gt;&lt;code&gt;False&lt;/code&gt;
+|}
+
+===Mathematics===
+Python defines the modulus operator so that the result of &lt;code&gt;a % b&lt;/code&gt; is in the [[half-open interval]] [0,''b''), where &lt;code&gt;b&lt;/code&gt; is a positive integer. When &lt;code&gt;b&lt;/code&gt; is negative, the result lies in the interval (''b'',0]. However, this consequently affects how integer division is defined. To maintain the validity of the equation &lt;code&gt; b * (a // b) + a % b == a&lt;/code&gt;, integer division is defined to round towards minus infinity. Therefore &lt;code&gt;7 // 3&lt;/code&gt; is 2, but &lt;code&gt;(â7) // 3&lt;/code&gt; is â3. This is different from many programming languages, where the result of integer division rounds towards zero, and Python's modulus operator is consequently defined in a way that can return negative numbers.&lt;ref&gt;{{cite web|url=http://python-history.blogspot.com/2010/08/why-pythons-integer-division-floors.html |title=Why Python's Integer Division Floors| accessdate=2010-08-25}}&lt;/ref&gt;
+
+Python provides a &lt;code&gt;round&lt;/code&gt; function for [[rounding]] floats to integers. Versions before 3 use round-away-from-zero: &lt;code&gt;round(0.5)&lt;/code&gt; is 1.0, &lt;code&gt;round(-0.5)&lt;/code&gt; is -1.0.&lt;ref&gt;{{cite
+|url=http://docs.python.org/library/functions.html#round |accessdate=2011-08-14
+|title=round |work=The Python standard library, release 2.7, Â§2: Built-in functions
+}}&lt;/ref&gt; Python 3 uses [[Round to even|round-to-even]]: &lt;code&gt;round(1.5)&lt;/code&gt; is 2.0, &lt;code&gt;round(2.5)&lt;/code&gt; is 2.0.&lt;ref&gt;{{cite
+|url=http://docs.python.org/py3k/library/functions.html#round |accessdate=2011-08-14
+|title=round |work=The Python standard library, release 3.2, Â§2: Built-in functions
+}}&lt;/ref&gt; The &lt;code&gt;Decimal&lt;/code&gt; type/class in module &lt;code&gt;decimal&lt;/code&gt; (since version 2.4) provides exact numerical representation and several rounding modes.
+
+Python allows boolean expressions with multiple equality relations in a manner that is consistent with general usage in mathematics. For example, the expression &lt;code&gt;a &lt; b &lt; c&lt;/code&gt; tests whether &lt;code&gt;a&lt;/code&gt; is less than &lt;code&gt;b&lt;/code&gt; and &lt;code&gt;b&lt;/code&gt; is less than &lt;code&gt;c&lt;/code&gt;. C-derived languages interpret this expression differently: in C, the expression would first evaluate &lt;code&gt;a &lt; b&lt;/code&gt;, resulting in 0 or 1, and that result would then be compared with &lt;code&gt;c&lt;/code&gt;.&lt;ref&gt;Python Essential Reference, David M Beazley&lt;/ref&gt;
+
+==Implementations==
+===CPython===
+{{Main|CPython}}
+
+The mainstream Python implementation, known as ''[[CPython]]'', is written in [[C (programming language)|C]] meeting the [[C89 (C version)|C89]] standard.&lt;ref&gt;{{cite web|url=http://www.python.org/dev/peps/pep-0007/ |title=PEP 7 - Style Guide for C Code |publisher=Python.org |date= |accessdate=2008-11-24}}&lt;/ref&gt; CPython compiles Python programs into intermediate [[bytecode]],&lt;ref&gt;{{cite web|url=http://docs.python.org/lib/bytecodes.html |title=CPython byte code |publisher=Docs.python.org |date= |accessdate=2011-04-19}}&lt;/ref&gt; which are then executed by the virtual machine.&lt;ref&gt;{{cite web|url=http://www.troeger.eu/teaching/pythonvm08.pdf |title=Python 2.5 internals |format=PDF |date= |accessdate=2011-04-19}}&lt;/ref&gt; It is distributed with a large standard library written in a mixture of C and Python. CPython ships in versions for many platforms, including [[Microsoft Windows]] and most modern [[Unix-like]] systems. CPython was intended from almost its very conception to be cross-platform; its use and development on esoteric platforms such as [[Amoeba distributed operating system|Amoeba]], alongside more conventional ones like [[Unix]] and [[Mac OS]], has greatly helped in this regard.&lt;ref&gt;{{cite web|url=http://www.oreilly.com/pub/a/oreilly/frank/rossum_1099.html |title=O'Reilly - An Interview with Guido van Rossum |publisher=Oreilly.com |date= |accessdate=2008-11-24}}&lt;/ref&gt;
+
+[[Stackless Python]] is a significant fork of CPython that implements [[microthread]]s; it does not use the C memory stack. It can be expected to run on approximately the same platforms that CPython runs on.
+
+Google started a project called [[Unladen Swallow]] in 2009 with the aims of increasing the speed of the Python interpreter by 5 times by using the [[LLVM]] and improving its multithreading ability to scale to thousands of cores.&lt;ref&gt;{{Citation |url=http://code.google.com/p/unladen-swallow/wiki/ProjectPlan |title=Plans for optimizing Python |accessdate=September 24, 2011}}&lt;/ref&gt;
+
+===Alternative implementations===
+[[Jython]] compiles the Python program into Java byte code, which can then be executed by every [[Java Virtual Machine]] implementation. This also enables the use of Java class library functions from the Python program. [[IronPython]] follows a similar approach in order to run Python programs on the .NET [[Common Language Runtime]]. [[PyPy]] is a fast [[self-hosting]] implementation of Python, written in Python, that can output several types of [[bytecode]], [[object code]] and [[intermediate language]]s. There also exist compilers to high-level [[object language]]s, with either unrestricted Python, a restricted subset of Python, or a language similar to Python as the source language. PyPy is of this type, compiling [[RPython]] to several languages; other examples include [[Pyjamas (software)|Pyjamas]] compiling to [[JavaScript]]; [[Shedskin|Shed Skin]] compiling to [[C++]]; and [[Cython]] and [[Pyrex (programming language)|Pyrex]] compiling to [[C (programming language)|C]].
+
+In 2005 [[Nokia]] released a Python interpreter for the [[Series 60]] [[mobile phone]]s called [[PyS60]]. It includes many of the modules from the CPython implementations and some additional modules for integration with the [[Symbian]] operating system. This project has been kept up to date to run on all variants of the S60 platform and there are several third party modules available. The Nokia [[N900]] also supports Python with [[gtk]] widget libraries, with the feature that programs can be both written and run on the device itself. There is also a Python interpreter for [[Windows CE]] devices (including Pocket PC). It is called PythonCE.&lt;ref&gt;{{cite web|url=http://pythonce.sourceforge.net/ |title=PythonCE |publisher=Pythonce.sourceforge.net |date= |accessdate=2011-04-19}}&lt;/ref&gt; There are additional tools available for easy application and GUI development.
+
+The PyMite virtual machine began in 2000 and made its first public appearance at PyCon 2003.&lt;ref&gt;{{cite web|url=http://wiki.python.org/moin/PyMite |title=PyMite: Python-on-a-chip |publisher=Wiki.python.org |date=2009-04-19 |accessdate=2011-04-19}}&lt;/ref&gt;  PyMite was folded into [http://pythononachip.org/ Python-on-a-Chip] in 2009.&lt;ref&gt;{{cite web|author=|url=http://deanandara.com/PyMite/2010-State.html |title=PyMite |publisher=Deanandara.com |date= |accessdate=2011-04-19}}&lt;/ref&gt;  Python-on-a-Chip (p14p) is a project to develop a reduced Python virtual machine (codenamed PyMite) that runs a significant subset of the Python language on microcontrollers without an OS in as little as 4KB of RAM.&lt;ref&gt;{{cite web|url=http://pythononachip.org/ |title=PyMite |publisher=Python-on-a-Chip |date= |accessdate=2011-04-19}}&lt;/ref&gt;
+
+Around 2004{{Citation needed|date=June 2010}}, the [http://pyastra.sourceforge.net/ Pyastra] project created a specialized translator and assembler that targets resource-constrained [[microcontroller]]s.
+
+''[[ChinesePython]]'' (ä¸­è) is a Python programming language using a Chinese-language lexicon. Besides reserved words and variable names, most data type operations can be coded in Chinese as well.{{Citation needed|date=March 2011}}
+
+Python is available on Android as an option as part of the Android Scripting Environment.&lt;ref&gt;{{Citation |url=http://code.google.com/p/android-scripting/ |title=android-scripting |accessdate=September 24, 2011}}&lt;/ref&gt;
+
+===Interpretational semantics===
+Most Python implementations (including [[#CPython|CPython]]) can function as a [[command line interpreter]], for which the user enters statements sequentially and receives the results immediately. In short, Python acts as a [[shell (computing)|shell]]. While the semantics of the other modes of execution (bytecode compilation, or compilation to native code) preserve the sequential semantics, they offer a speed boost at the cost of interactivity, so they are usually only used outside of a command-line interaction (e.g., when importing a module).
+
+Other shells add capabilities beyond those in the basic interpreter, including [[IDLE (Python)|IDLE]] and [[IPython]]. While generally following the visual style of the Python shell, they implement features like auto-completion, retention of session state, and syntax highlighting.
+
+Some implementations can compile not only to bytecode, but can turn Python code into [[machine code]]. So far, this has only been done for restricted subsets of Python. PyPy takes this approach, naming its restricted compilable version of Python ''[[RPython]]''.
+
+[[Psyco]] is a [[specialising compiler|specialising]] [[just in time compiler]] that integrates with CPython and transforms bytecode to machine code at runtime. The produced code is specialised for certain [[data types]] and is faster than standard Python code. Psyco is compatible with all Python code, not only a subset.&lt;ref&gt;{{cite web|url=http://psyco.sourceforge.net/introduction.html |title=Introduction to Psyco |publisher=Psyco.sourceforge.net |date= |accessdate=2011-04-19}}&lt;/ref&gt;
+
+==Development==
+Python's development is conducted largely through the Python Enhancement Proposal (PEP) process. PEPs are standardized design documents providing general information related to Python, including proposals, descriptions, [[design rationale]]s, and explanations for language features.&lt;ref name=&quot;PepCite000&quot;&gt;{{cite web|url=http://www.python.org/dev/peps/pep-0001/ |title=PEP 1 - PEP Purpose and Guidelines |publisher=Python.org |date= |accessdate=2011-04-19}}&lt;/ref&gt; Outstanding PEPs are reviewed and commented upon by Van Rossum, the Python project's [[BDFL|Benevolent Dictator for Life]] (leader / language architect).&lt;ref name=&quot;PepCite001&quot;&gt;{{cite web|url=http://www.python.org/doc/essays/pepparade.html |title=Parade of the PEPs |publisher=Python.org |date= |accessdate=2008-11-24}}&lt;/ref&gt; CPython's developers also communicate over a mailing list, python-dev, which is the primary forum for discussion about the language's development; specific issues are discussed in the [[Roundup (issue tracker)|Roundup]] [[bug tracker]] maintained at python.org.&lt;ref&gt;{{cite web|url=http://classic-web.archive.org/web/20080229153753/http://www.python.org/dev/intro/|title=Guido, Some Guys, and a Mailing List: How Python is Developed|last=Cannon|first=Brett|work=python.org|publisher=Python Software Foundation|accessdate=2009-06-27}}&lt;/ref&gt; Development takes place at the self-hosted &lt;tt&gt;[[Mercurial|hg]].python.org&lt;/tt&gt;.
+
+CPython's public releases come in three types, distinguished by which part of the version number is incremented:
+* backwards-incompatible versions, where code is expected to break and must be manually [[ported]]. The first part of the version number is incremented. These releases happen infrequentlyâfor example, version 3.0 was released 8 years after 2.0.
+* major or 'feature' releases, which are largely compatible but introduce new features. The second part of the version number is incremented. These releases are scheduled to occur roughly every 18 months, and each major version is supported by bugfixes for several years after its release.&lt;ref name=&quot;release-schedule&quot;&gt;{{cite web|url=http://mail.python.org/pipermail/python-dev/2002-April/022739.html|title=&lt;nowiki&gt;[&lt;/nowiki&gt;Python-Dev&lt;nowiki&gt;]&lt;/nowiki&gt; Release Schedules (was Stability &amp; change) |last=Norwitz|first=Neal|date=8 April 2002|accessdate=2009-06-27}}&lt;/ref&gt;
+* bugfix releases, which introduce no new features but fix bugs. The third and final part of the version number is incremented. These releases are made whenever a sufficient number of bugs have been fixed upstream since the last release, or roughly every 3 months. Security vulnerabilities are also patched in bugfix releases.&lt;ref&gt;{{cite web|url=http://python.org/dev/peps/pep-0006/|title=PEP 6 -- Bug Fix Releases|last=Baxter|first=Anthony|coauthors=Aahz|date=2001-03-15|publisher=Python Software Foundation|accessdate=2009-06-27}}&lt;/ref&gt;
+
+A number of [[beta release|alpha, beta, and release-candidates]] are also released as previews and for testing before the final release is made. Although there is a rough schedule for each release, this is often pushed back if the code is not ready. The development team monitor the state of the code by running the large [[unit test]] suite during development, and using the [[BuildBot]] [[continuous integration]] system.&lt;ref&gt;{{Citation |url=http://python.org/dev/buildbot/ |title=Python Buildbot |accessdate=September 24, 2011}}&lt;/ref&gt;
+
+==Standard library==
+Python has a large standard library, commonly cited as one of Python's greatest strengths,&lt;ref&gt;Przemyslaw Piotrowski, [http://www.oracle.com/technology/pub/articles/piotrowski-pythoncore.html Build a Rapid Web Development Environment for Python Server Pages and Oracle], Oracle Technology Network, July 2006. Retrieved October 21, 2008.&lt;/ref&gt; providing pre-written tools suited to many tasks. This is deliberate and has been described as a &quot;batteries included&quot;&lt;ref&gt;{{cite web|url=http://www.python.org/about/|title=About Python|work=python.org|publisher=Python Software Foundation|accessdate=2009-06-27}}&lt;/ref&gt; Python philosophy. The modules of the standard library can be augmented with custom modules written in either C or Python. [[Boost C++ Libraries]] includes a library, Boost.Python, to enable interoperability between C++ and Python. Because of the wide variety of tools provided by the standard library, combined with the ability to use a lower-level language such as C and C++, which is already capable of interfacing between other libraries, Python can be a powerful [[glue language]] between languages and tools.
+
+The standard library is particularly well tailored to writing Internet-facing applications, with a large number of standard formats and protocols (such as [[MIME]] and [[Hypertext Transfer Protocol|HTTP]]) already supported. Modules for creating [[graphical user interface]]s, connecting to [[relational database]]s, arithmetic with arbitrary precision decimals, manipulating [[regular expression]]s, and doing [[unit testing]] are also included.&lt;ref&gt;{{cite web|url=http://www.python.org/peps/pep-0327.html |title=PEP 327 - Decimal Data Type |publisher=Python.org |date= |accessdate=2008-11-24}}&lt;/ref&gt;
+
+Some parts of the standard library are covered by specifications (for example, the [[Web Server Gateway Interface|WSGI]] implementation &lt;code&gt;wsgiref&lt;/code&gt; follows [http://www.python.org/dev/peps/pep-0333/ PEP 333]), but the majority of the modules are not. They are specified by their code, internal documentation, and test suite (if supplied). However, because most of the standard library is cross-platform Python code, there are only a few modules that must be altered or completely rewritten by alternative implementations.
+
+The standard library is not essential to run Python or embed Python within an application. Blender 2.49 for instance omits most of the standard library.
+
+For [[software testing]], the standard library provides the &lt;code&gt;unittest&lt;/code&gt; and &lt;code&gt;[[doctest]]&lt;/code&gt; modules.
+
+==Influence on other languages==
+Python's design and philosophy have influenced several programming languages, including:
+
+* [[Pyrex programming language|Pyrex]] and its derivative [[Cython]] are code translators that are targeted at writing fast C extensions for the CPython interpreter. The language is mostly Python with syntax extensions for C and C++ features. Both languages produce compilable C code as output.
+* [[Boo (programming language)|Boo]] uses indentation, a similar syntax, and a similar object model. However, Boo uses [[static typing]] and is closely integrated with the [[.NET framework]].&lt;ref&gt;{{cite web|url=http://boo.codehaus.org/Gotchas+for+Python+Users |title=BOO - Gotchas for Python Users |publisher=boo.codehaus.org |date= |accessdate=2008-11-24}}&lt;/ref&gt;
+* [[Cobra (programming language from Cobra Language LLC)|Cobra]] uses indentation and a similar syntax. Cobra's &quot;Acknowledgements&quot; document lists Python first among languages that influenced it.&lt;ref&gt;{{cite web|url=http://cobra-language.com/docs/acknowledgements/|title=Cobra - Acknowledgements|publisher=cobra-language.com |date =|accessdate=2010-04-07}}&lt;/ref&gt; However, Cobra directly supports [[Design by contract|design-by-contract]], [[Unit testing|unit tests]] and optional [[static typing]].&lt;ref&gt;{{cite web|url=http://cobra-language.com/docs/python/|title=Cobra - Comparison to Python|publisher=cobra-language.com |date= |accessdate=2010-04-07}}&lt;/ref&gt;
+* [[ECMAScript]] borrowed [[iterator]]s, [[Generator (computer science)|generators]], and [[list comprehension]]s from Python.&lt;ref&gt;{{cite web|url=http://wiki.ecmascript.org/doku.php?id=proposals:iterators_and_generators |title=Proposals: iterators and generators [ES4 Wiki&amp;#93; |publisher=wiki.ecmascript.org |date= |accessdate=2008-11-24}}&lt;/ref&gt;
+* [[Go (programming language)|Go]] is described as incorporating  the &quot;development speed of working in a dynamic language like Python&quot;.&lt;ref&gt;{{cite news|url=http://www.techcrunch.com/2009/11/10/google-go-language/|title=Googleâs Go: A New Programming Language Thatâs Python Meets C++|last=Kincaid|first=Jason|date=2009-11-10|publisher=TechCrunch|accessdate=2010-01-29}}&lt;/ref&gt;
+* [[Groovy (programming language)|Groovy]] was motivated by the desire to bring the Python design philosophy to [[Java (programming language)|Java]].&lt;ref&gt;{{cite web
+| author = James Strachan
+| date = 2003-08-29
+| title = Groovy - the birth of a new dynamic language for the Java platform
+| url = http://radio.weblogs.com/0112098/2003/08/29.html
+}}&lt;/ref&gt;
+* [[OCaml]] has an optional syntax, called twt (The Whitespace Thing), inspired by Python and [[Haskell (programming language)|Haskell]].&lt;ref&gt;{{cite web
+| author = Mike Lin
+| accessdate = 2009-04-12
+| title = &quot;The Whitespace Thing&quot; for OCaml
+| url = http://people.csail.mit.edu/mikelin/ocaml+twt/
+}}&lt;/ref&gt;
+
+Python's development practices have also been emulated by other languages. The practice of requiring a document describing the rationale for, and issues surrounding, a change to the language (in Python's case, a PEP) is also used in [[Tcl]]&lt;ref&gt;{{cite web|url=http://www.tcl.tk/cgi-bin/tct/tip/3.html |title=TIP #3: TIP Format |publisher=Tcl.tk |date= |accessdate=2008-11-24}}&lt;/ref&gt; and [[Erlang (programming language)|Erlang]]&lt;ref&gt;{{cite web|url=http://www.erlang.org/eeps/eep-0001.html |title=EEP - Erlang Enhancement Proposal |publisher=Erlang.org |date= |accessdate=2011-04-19}}&lt;/ref&gt; because of Python's influence.
+
+==See also==
+{{Portal|Free software|Python}}
+* [[Comparison of command shells]]
+* [[Comparison of programming languages]]
+* [[Comparison of integrated development environments#Python|Comparison of Python integrated development environments]]
+* [[List of programming languages]]
+* [[List of Python software]]
+* [[Scipy]]
+{{clear}}
+
+==References==
+{{Reflist|2}}
+
+==Further reading==
+&lt;!--- THIS IS ''not'' A LIST OF ALL PYTHON BOOKS
+According to [[Wikipedia:Further reading]], criteria for inclusion includes:
+1. Should clearly qualify as WP:RS, as indicated by reviews and citations to it.
+...
+5. There should be guidelines on limiting the number of sources.
+6. To avoid spam, any book included should have received more than one good review in RS - newspapers and scholarly journals being the norm, and the clear balance of RS reviews should be positive. This would avoid self-publish spamming, POV pushing, and attempts by publishers to get books promoted through inclusion on Wikipedia. At the moment &quot;editorial recommendations&quot; as described in the manual smacks of OR.
+7. Neutrality on the part of editors is essential. In terms of major debates, items representing all major positions should be included, with annotations indicating the specific POV of each. We may have to work out rules where topic disputes are irreconcilable.
+
+--&gt;
+*{{Cite book|last=Downey|first=Allen B.|title=Think Python: How to Think Like a Computer Scientist|isbn=978-0521725965|url=http://www.greenteapress.com/thinkpython/html/index.html}}
+*{{Cite news|url=http://www.computerworld.com.au/index.php/id;66665771|title=The A-Z of Programming Languages: Python|last=Hamilton|first=Naomi|date=5 August 2008|work=Computerworld|accessdate=2010-03-31}} â An interview with Guido Van Rossum on Python
+*{{Cite book|last=Lutz|first=Mark|title=Learning Python|publisher=O'Reilly Media|year=2009|edition=4th|isbn=978-0596158064}}
+*{{Cite book|last=Pilgrim|first=Mark|title=Dive Into Python|publisher=Apress|year=2004|isbn=978-1590593561|url=http://diveintopython.net}}
+*{{Cite book|last=Pilgrim|first=Mark|title=Dive Into Python 3|publisher=Apress|year=2009|isbn=978-1430224150|url=http://diveintopython3.net}}
+*{{Cite book|last=Summerfield|first=Mark|title=Programming in Python 3|publisher=Addison-Wesley Professional|year=2009|edition=2nd|isbn=978-0321680563|url=http://www.qtrac.eu/py3book.html}}
+
+==External links==
+{{Wikibooks|Python Programming}}
+{{Wikiversity|at=Topic:Python|Python Programming}}
+{{Wikiquote|Python}}
+{{Commons category}}
+* {{Official website|http://www.python.org}}
+* [news://comp.lang.python comp.lang.python] [[newsgroup]] ([http://groups.google.com/group/comp.lang.python/topics Google Groups archive]) / [http://mail.python.org/mailman/listinfo/python-list python-list mailing list]
+* {{dmoz|Computers/Programming/Languages/Python|Python}}
+
+&lt;!--======================== {{No more links}} ============================
+    | PLEASE BE CAUTIOUS IN ADDING MORE LINKS TO THIS ARTICLE. Wikipedia  |
+    | is not a collection of links nor should it be used for advertising. |
+    |                                                                     |
+    |           Excessive or inappropriate links WILL BE DELETED.         |
+    | See [[Wikipedia:External links]] &amp; [[Wikipedia:Spam]] for details.  |
+    |                                                                     |
+    | If there are already plentiful links, please propose additions or   |
+    | replacements on this article's discussion page, or submit your link |
+    | to the relevant category at the Open Directory Project (dmoz.org)   |
+    | and link back to that category using the {{dmoz}} template.         |
+======================={{No more links}}=====================--&gt;
+{{Python (programming language)}}
+{{Python Web Application Frameworks}}
+{{FOSS}}
+{{good article}}
+
+{{DEFAULTSORT:Python}}
+[[Category:Python (programming language)| ]]
+[[Category:Class-based programming languages]]
+[[Category:Dynamically typed programming languages]]
+[[Category:Free cross-platform software]]
+[[Category:Object-oriented programming languages]]
+[[Category:Scripting languages]]
+[[Category:Text-oriented programming languages]]
+[[Category:Programming languages created in 1991]]
+[[Category:High-level programming languages]]
+{{Link FA|ru}}
+{{Link GA|de}}
+
+[[af:Python]]
+[[als:Python (Programmiersprache)]]
+[[ar:Ø¨Ø§ÙØ«ÙÙ]]
+[[an:Python]]
+[[az:Python (proqramlaÅdÄ±rma dili)]]
+[[bn:à¦ªà¦¾à¦à¦¥à¦¨ (à¦ªà§à¦°à§à¦à§à¦°à¦¾à¦®à¦¿à¦ à¦­à¦¾à¦·à¦¾)]]
+[[bs:Python programski jezik]]
+[[bg:Python]]
+[[ca:Python]]
+[[cs:Python]]
+[[da:Python (programmeringssprog)]]
+[[de:Python (Programmiersprache)]]
+[[et:Python (programmeerimiskeel)]]
+[[el:Python]]
+[[es:Python]]
+[[eo:Python (programlingvo)]]
+[[eu:Python]]
+[[fa:Ù¾Ø§ÛØªÙÙ (Ø²Ø¨Ø§Ù Ø¨Ø±ÙØ§ÙÙâÙÙÛØ³Û)]]
+[[fr:Python (langage)]]
+[[gl:Python]]
+[[ko:íì´ì¬]]
+[[hi:à¤ªà¤¾à¤à¤¥à¤¨ (à¤ªà¥à¤°à¥à¤à¥à¤°à¤¾à¤®à¤¨ à¤­à¤¾à¤·à¤¾)]]
+[[hr:Python]]
+[[id:Python (bahasa pemrograman)]]
+[[ia:Python (linguage de programmation)]]
+[[is:Python (forritunarmÃ¡l)]]
+[[it:Python]]
+[[he:×¤×××ª×× (×©×¤×ª ×ª×× ××ª)]]
+[[ka:áááááá (áá ááá áááá áááá¡ ááá)]]
+[[kk:Python]]
+[[la:Python]]
+[[lv:Python]]
+[[lt:Python]]
+[[jbo:paiton]]
+[[hu:Python (programozÃ¡si nyelv)]]
+[[ml:à´ªàµà´¤àµà´¤àµº (à´ªàµà´°àµà´àµà´°à´¾à´®à´¿à´àµà´àµ à´­à´¾à´·)]]
+[[mr:à¤ªà¤¾à¤¯à¤¥à¥à¤¨]]
+[[ms:Python]]
+[[nl:Python (programmeertaal)]]
+[[ne:à¤ªà¤¾à¤à¤¥à¤¨ à¤ªà¥à¤°à¥à¤à¥à¤°à¤¾à¤®à¤¿à¤à¥à¤ à¤­à¤¾à¤·à¤¾]]
+[[ja:Python]]
+[[no:Python]]
+[[pl:Python]]
+[[pt:Python]]
+[[ro:Python]]
+[[ru:Python]]
+[[sq:Python]]
+[[simple:Python (programming language)]]
+[[si:à¶´à¶ºà·à¶­à¶±à·]]
+[[sk:Python (programovacÃ­ jazyk)]]
+[[sl:Python (programski jezik)]]
+[[sr:ÐÐ°ÑÑÐ¾Ð½ (Ð¿ÑÐ¾Ð³ÑÐ°Ð¼ÑÐºÐ¸ ÑÐµÐ·Ð¸Ðº)]]
+[[sh:Python programski jezik]]
+[[fi:Python]]
+[[sv:Python (programsprÃ¥k)]]
+[[tl:Python (programming language)]]
+[[ta:à®ªà¯à®¤à¯à®¤à¯à®©à¯]]
+[[te:à°ªà±à°¥à°¾à°¨à± (à°à°à°ªà±à°¯à±à°à°°à± à°­à°¾à°·)]]
+[[th:à¸ à¸²à¸©à¸²à¹à¸à¸à¸­à¸]]
+[[tg:Python]]
+[[tr:Python (programlama dili)]]
+[[bug:Python]]
+[[uk:Python]]
+[[vi:Python (ngÃ´n ngá»¯ láº­p trÃ¬nh)]]
+[[zh:Python]]</rev></revisions></page></pages></query></api>

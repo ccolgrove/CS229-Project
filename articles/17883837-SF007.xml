@@ -1,0 +1,68 @@
+<?xml version="1.0"?><api><query><redirects><r from="Virtual Machine File System" to="VMware VMFS" /></redirects><pages><page pageid="8533697" ns="0" title="VMware VMFS"><revisions><rev xml:space="preserve">{{Infobox filesystem
+| name = VMFS
+| developer = [[VMware|VMware, Inc.]]
+| full_name = Virtual Machine File System
+| introduction_date = 
+| introduction_os = 
+| partition_id = 0xfb ([[Master boot record|MBR]]) 
+| directory_struct = 
+| file_struct = 
+| bad_blocks_struct = 
+| max_file_size = 2TB - 512 bytes
+| max_files_no = ~30,720&lt;ref name=&quot;maximums&quot; /&gt;
+| max_filename_size = 
+| max_volume_size = 64 TB&lt;ref name=&quot;maximums&quot; /&gt;
+| dates_recorded = 
+| date_range = 
+| date_resolution =
+| forks_streams = 
+| attributes = 
+| file_system_permissions = 
+| compression = No
+| encryption = No
+| data_deduplication = No
+| copy_on_write=
+| OS = [[VMware ESX]]
+}}
+
+'''VMware VMFS''' (Virtual Machine File System) is [[VMware]], Inc.'s [[cluster file system]]. It is used by [[VMware ESX Server]] and the company's flagship server virtualization suite, [[VMware Infrastructure]].&lt;ref name=vmfs&gt;{{cite web |url=http://www.vmware.com/products/vi/esx/vmfs.html |title=Deliver High-performance Storage for Virtual Machines |accessdate=2007-09-26 |publisher=VMware}}&lt;/ref&gt; It was developed and is used to store [[virtual machine]] disk images, including snapshots. Multiple servers can read/write the same filesystem simultaneously, while individual virtual machine files are locked. VMFS volumes can be logically &quot;grown&quot; (non-destructively increased in size) by spanning multiple VMFS volumes together. It is not mandatory to use VMFS with VMware; an alternative is [[Network File System (protocol)|NFS]].
+
+== Version history ==
+There are three versions of VMFS, corresponding with ESX Server product releases.
+* VMFS version 1 was used by ESX Server v1.x, which is no longer sold. It didn't feature the cluster filesystem properties and was used only by a single server at a time. VMFS1 is a [[File_system#Flat_file_systems|flat filesystem]] with no directory structure. -- Officially named &quot;VMware File System&quot;
+* VMFS version 2 is used by ESX Server v2.x and (in a limited capacity) v3.x. VMFS2 is a flat filesystem with no directory structure. -- Officially named &quot;VMware File System&quot;
+* VMFS version 3 is used by ESX Server v3.x and vSphere (4.x). As a most noticeable feature, it introduced directory structure in the filesystem. Older versions of ESX Server cannot read or write VMFS3 volumes. Beginning from ESX 3 and VMFS3, virtual machine configuration files are stored in the VMFS partition by default. -- Officially named &quot;VMware Virtual Machine File System&quot;
+
+== Features ==
+* Allows access by multiple ESX Servers at the same time by implementing per-file locking. SCSI Reservations are only implemented when [[Logical Unit Number|logical unit number (LUN)]] meta data is updated (e.g. file name change, file size change, etc.)
+* Add or delete an ESX Server from a VMware VMFS volume without disrupting other ESX Server hosts.
+* LVM allows for adaptive block sizing and addressing for growing files allows you to increase a VMFS volume on the fly (by spanning multiple VMFS volumes)
+* With ESX/ESXi4 VMFS volumes also can be expanded using LUN expansion
+* Optimize your virtual machine I/O with adjustable volume, disk, file and block sizes.
+* Recover virtual machines faster and more reliably in the event of server failure with Distributed journaling.
+
+== Limitations ==
+* Can be shared with up to 64 ESX Servers.&lt;ref name=&quot;maximums&quot;&gt;{{cite web |url=http://www.vmware.com/pdf/vsphere4/r41/vsp_41_config_max.pdf |title=Configuration Maximums for VMware vSphere 4.1 |format=PDF |date=2010-07-13 |accessdate=2010-07-13 |publisher=VMware}}&lt;/ref&gt;
+* Can support LUNs with max size of 2TB and a max VMFS size of 64 TB as of version 4 (vSphere).&lt;ref name=&quot;maximums&quot; /&gt;
+* &quot;There is a VMFS-3 limitation where each tree of linked clones can only be run on 8 ESX servers. For instance, if there is a tree of disks off the same base disk with 40 leaf nodes in the tree, all 40 leaf nodes can be simultaneously run but they can only run on up to 8 ESX hosts.&quot;&lt;ref name=linkedclones&gt;{{cite web |url=http://www.vmware.com/support/labmanager25/doc/releasenotes_labmanager251.html |title=VMFS3 Limitation |publisher=VMware}}&lt;/ref&gt;
+* VMFS-3 limits files to 262,144 (2&lt;sup&gt;18&lt;/sup&gt;) blocks, which translates to 256 GB for 1 MB block sizes (the default) up to 2 TB for 8 MB block sizes.&lt;ref name=&quot;maximums&quot;/&gt;
+
+== Open source implementation ==
+An [http://code.google.com/p/vmfs/ open source VMFS driver] which enables read-only access to files and folders on partitions formatted with the Virtual Machine File System (VMFS) is developed and maintained by [http://www.fluidops.com/ fluid Operations] [[Aktiengesellschaft|AG]]. It allows features like offloaded backups of virtual machines hosted on VMware ESX hosts.
+
+== See also ==
+* [[List of VMware software]]
+
+
+== References ==
+{{reflist}}
+
+== External links ==
+* [http://www.vmware.com/pdf/vmfs-best-practices-wp.pdf VMFS Technical Overview and Best Practices] - VMware, Inc.
+* [http://www.vmware.com/products/vi/esx/vmfs.html VMware VMFS product page] - VMware, Inc.
+* [http://code.google.com/p/vmfs/ Open Source VMFS Implementation] - Project vmfs
+
+[[Category:VMware]]
+[[Category:Proprietary software]]
+[[Category:Shared disk file systems]]
+[[Category:Virtualization software]]</rev></revisions></page></pages></query></api>

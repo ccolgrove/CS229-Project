@@ -1,0 +1,214 @@
+<?xml version="1.0"?><api><query><pages><page pageid="2592728" ns="0" title="Joomla"><revisions><rev xml:space="preserve">{{Infobox software
+| name                   = Joomla
+| title                  = 
+| logo                   = [[File:Joomla logo.png|200px|Joomla logo]]
+| screenshot             = [[File:JoomlaAdministrator.jpg|250px]]
+| caption                = Joomla! 1.5 administration backend
+| collapsible            = yes
+| author                 = 
+| developer              = [http://www.joomla.org/about-joomla/the-project/project-teams.html The Joomla Project Team]
+| released               = &lt;!-- {{Start date|YYYY|MM|DD|df=yes/no}} --&gt;
+| discontinued           = 
+| latest release version = 1.7.3
+| latest release date    = {{Start date and age|2011|11|14|df=yes/no}}&lt;ref&gt;[http://www.joomla.org/announcements/release-news/5392-joomla-173-released.html Joomla 1.7.3 released]&lt;/ref&gt;
+| latest preview version =
+| latest preview date    = 
+| frequently updated     = &lt;!-- DO NOT include this parameter unless you know what it does --&gt;
+| programming language   = [[PHP]]
+| operating system       = [[Cross-platform]]
+| platform               = 
+| size                   = 7.8&amp;nbsp;MB (compressed) 20.9&amp;nbsp;MB (uncompressed)
+| language               = 
+| status                 = Active
+| genre                  = [[Content management system]]
+| license                = [[GNU General Public License]]
+| website                = {{URL|www.joomla.org}}
+}}
+'''Joomla''' is a [[free software|free]] and [[open source]] [[content management system]] (CMS) for publishing content on the [[World Wide Web]] and [[intranet]]s and a [[modelâviewâcontroller]] (MVC) [[Web application framework]] that can also be used independently.
+
+Joomla is written in  [[PHP]], uses [[object-oriented programming]] (OOP) techniques and [[software design pattern]]s{{Citation needed|reason=really?|date=September 2011}}, stores data in a [[MySQL]] database, and includes features such as page [[cache|caching]], [[RSS (file format)|RSS feeds]], printable versions of pages, news flashes, [[blogs]], [[opinion poll|polls]], search, and support for [[internationalization and localization|language internationalization]].
+
+Joomla had been downloaded 23 million times.&lt;ref&gt;{{cite web | url=http://techcrunch.com/2011/06/11/joomla-quietly-crosses-23-million-downloads-now-powering-over-2600-government-sites/ | title=Joomla Quietly Crosses 23 Million Downloads, Now Powering Over 2,600 Government Sites | publisher=TechCrunch |accessdate=2011-08-04}}&lt;/ref&gt; Between March 2007 and February 2011 there had been more than 21 million downloads.&lt;ref&gt;{{cite web | title=Gforge Download Reporting | url = http://joomlacode.org/gf/project/joomla/frs/?action=FrsReport }}&lt;/ref&gt;  {{As of|2011|11}}, there are over 8,600 free and commercial [[extension (computing)|extension]]s available from the official Joomla! Extension Directory and more available from other sources.&lt;ref&gt;{{cite web |title=Home â Joomla! Extensions Directory |url=http://extensions.joomla.org/ |work=Joomla.org |publisher=Open Source Matters |accessdate=2011-11-19}}&lt;/ref&gt;&lt;ref&gt;{{cite press release | title=Joomla! CMS Downloaded 25 Millionth Time |url=http://www.marketwatch.com/story/joomla-cms-downloaded-25-millionth-time-2011-09-13 |publisher=Marketwire |date=2011-09-13}}&lt;/ref&gt;
+
+== Development ==
+Joomla was the result of a [[Fork (software development)|fork]] of [[Mambo (software)|Mambo]] on August 17, 2005. At that time, the Mambo name was trademarked by Miro International Pvt Ltd. who formed a [[non-profit]] [[Foundation (charity)|foundation]] with the stated purpose to fund the project and protect it from lawsuits.&lt;ref&gt;{{cite web |date=2006-01-09 |title=Mambo Foundation Web site, Goals and objectives |url=http://www.mambo-foundation.org |accessdate=2007-03-14 }}&lt;/ref&gt; The Joomla development team claimed that many of the provisions of the foundation structure went against previous agreements made by the elected Mambo Steering Committee, lacked the necessary consultation with key stake-holders and included provisions that violated core [[open source software|open source]] values.&lt;ref&gt;{{cite web |date=2007-05-07 |title=Joomla Forum Discussion by Development Team members and Community |url=http://forum.joomla.org/index.php/topic,73.0.html |accessdate=2007-05-07}}&lt;/ref&gt;
+
+The Joomla development team created a Web site called OpenSourceMatters.org to distribute information to users, developers, Web designers and the community in general. Project leader Andrew Eddie wrote a letter&lt;ref&gt;{{cite web |date=2005-08-17 |last=Eddie |first=Andrew |title=Mambo Open Source Development Team&amp;nbsp;â Letter to the community |url=http://forum.mamboserver.com/showthread.php?t=57645 |accessdate=2009-08-31 }}&lt;/ref&gt; that appeared on the announcements section of the public forum at mamboserver.com.  A little more than one thousand people had joined the OpenSourceMatters.org Web site within a day, most posting words of encouragement and support, and the Web site received the [[Slashdot effect]] as a result. Miro CEO Peter Lamont gave a public response to the development team in an article titled &quot;The Mambo Open Source Controversy&amp;nbsp;â 20 Questions With Miro&quot;.&lt;ref&gt;{{cite web |date=2005-08-21 |last=Shreves |first=Ric |title=The Mambo Open Source Controversy&amp;nbsp;â 20 Questions With Miro |url=http://ricshreves.net/content/view/116/47/ |ORIGINAL accessdate=2007-03-14 |archiveurl=http://forum.joomla.org/viewtopic.php?f=48&amp;t=3037 |archivedate=2005-09-01 |accessdate=2010-04-27}}&lt;/ref&gt; This event created controversy within the [[free software community]] about the definition of &quot;open source&quot;. Forums at many other open source projects were active with postings for and against the actions of both sides.
+
+In the two weeks following Eddie's announcement, teams were re-organized, and the community continued to grow. [[Eben Moglen]] and the [[Software Freedom Law Center]] (SFLC) assisted the Joomla core team beginning in August 2005, as indicated by Moglen's blog entry from that date and a related OSM announcement.&lt;ref name=&quot;MoglenAug05&quot;&gt;{{cite web|url = http://emoglen.law.columbia.edu/blog/2005/08/index.html|title = Why I like Open Source Matters (was Why I Like Mambo) |accessdate = 2008-10-08|last = Moglen|first = Eben|authorlink = |year = 2005|month = August}}&lt;/ref&gt;&lt;ref name=&quot;OSM2005&quot;&gt;{{cite web|url = http://www.opensourcematters.com/index.php?option=com_content&amp;task=view&amp;id=41&amp;Itemid=1|title = Award-winning Development Team Welcomes New Arrival&amp;nbsp;â Joomla! |accessdate = 2008-10-08|last = Russell |first = Peter |authorlink = |year = 2005}}&lt;/ref&gt; The SFLC continue to provide legal guidance to the Joomla project.&lt;ref name=&quot;OSMa&quot;&gt;{{cite web|url = http://www.joomla.org/content/view/40/41/ |title=Partners |accessdate=2008-10-08 |publisher=Open Source Matters}}&lt;/ref&gt;
+
+On August 18, Andrew Eddie called for community input on suggested names for the project. The core team indicated that it would make the final decision for the project name based on community input. The core team eventually chose a name that was not on the list of suggested names provided by the community.
+On September 1, the new name, &quot;Joomla!,&quot; was announced.  It is the [[anglicised]] spelling of the [[Swahili language|Swahili]] word {{lang|sw|''jumla''}}  meaning &quot;all together&quot; or &quot;as a whole.&quot;&lt;ref&gt;[http://opensourcematters.org/joomla.html &quot;Joomla!&quot;]. Open Source Matters.&lt;/ref&gt;
+On September 6, the development team called for logo submissions from the community and invited the community to vote on the logo preferred; the team announced the community's decision on September 22. Following the logo selection, brand guidelines, a brand manual, and a set of logo resources were then published on October 2, for the community's use.&lt;ref name=&quot;Joomlab&quot;&gt;{{cite web|url = http://www.joomla.org/about-joomla/the-project/logo-usage-and-brand-guide.html |title = Logo Usage and Brand Guide |accessdate=2008-10-08 |publisher=Open Source Matters}}&lt;/ref&gt;
+
+Joomla won the [[Packt]] Publishing Open Source Content Management System Award in 2006, 2007, and 2011.&lt;ref name=packtpub-award&gt;{{cite web |date=2006-11-14 |title=2006 Open Source Content Management System Award Winner Announced |publisher=Packt Publishing |url=http://www.packtpub.com/article/open-source-content-management-system-award-winner-announced |accessdate=2007-03-08 }}&lt;/ref&gt;&lt;ref name=packtpub-award2&gt;{{cite web |date=2007-10-31 |title=Joomla! Wins Best PHP Open Source Content Management System |publisher=Packt Publishing |url=http://www.packtpub.com/article/joomla-wins-best-php-open-source-content-management-system |accessdate=2007-10-31 }}&lt;/ref&gt;&lt;ref&gt;{{cite web|url=http://www.packtpub.com/blog/2011-open-source-awards-winner-news-open-source-cms|title=2011 Open Source Awards Winner news: Open Source CMS}}&lt;/ref&gt; 
+
+On October 27, 2008, PACKT Publishing announced Johan Janssens the &quot;Most Valued Person&quot; (MVP) for his work as one of the lead developers of the 1.5  Joomla Framework and Architecture. In 2009 Louis Landry received the &quot;Most Valued Person&quot; award for his role as Joomla architect and development coordinator.
+
+== Version history ==
+&lt;div style=&quot;float:right;text-align:center; margin-left:1em;margin-right:0px;&quot;&gt;
+{| class=&quot;wikitable&quot; border=&quot;1&quot;
+|+ List of versions with release and support info
+! scope=&quot;col&quot;| Version
+! scope=&quot;col&quot;| Release date
+! scope=&quot;col&quot;| Supported until
+|-
+! scope=&quot;row&quot; | 1.0
+| 2005-09-16
+| style=&quot;background:#FA8072&quot; | 2009-07-22&lt;sup&gt;{{dagger}}&lt;/sup&gt;
+|-
+! scope=&quot;row&quot; | 1.5 (LTS)
+| 2008-01-22
+| style=&quot;background:#90EE90&quot; | 2012-04-10&lt;sup&gt;{{double-dagger}}&lt;/sup&gt;
+|-
+! scope=&quot;row&quot; | 1.6
+| 2011-01-10
+| style=&quot;background:#FA8072&quot; | 2011-08-19&lt;sup&gt;{{dagger}}&lt;/sup&gt;
+|-
+! scope=&quot;row&quot; | 1.7
+| 2011-07-19
+| style=&quot;background:#90EE90&quot; | 2012-02-10&lt;sup&gt;{{double-dagger}}&lt;/sup&gt;
+|-
+! scope=&quot;row&quot; | 2.5 (LTS)
+| 2012-01-19
+| style=&quot;background:#87CEEB&quot; | 2013-10-19&lt;sup&gt;{{Section-sign}}&lt;/sup&gt;
+|}
+ &lt;div style=&quot;text-align:left; margin-left:2em; margin-right:2em;&quot;&gt;
+ {{Legend|#FA8072|&lt;sup&gt;{{dagger}}&lt;/sup&gt; Release no longer supported}}
+ {{Legend|#90EE90|&lt;sup&gt;{{double-dagger}}&lt;/sup&gt; Release still supported}}
+ {{Legend|#87CEEB|&lt;sup&gt;{{Section-sign}}&lt;/sup&gt; Future release}}
+ &lt;/div&gt;
+&lt;/div&gt;
+
+Joomla 1.0 was released on September 16, 2005. It was a re-branded release of [[Mambo (CMS)|Mambo]] 4.5.2.3  which, itself, was combined with other bug and moderate-level security fixes.
+
+Joomla version 1.5 was released on January 22, 2008. The last release of this version (on November 14, 2011) was 1.5.25.&lt;ref&gt;[http://docs.joomla.org/Joomla_1.5_version_history Joomla 1.5 version history]&lt;/ref&gt; This version is the first to attain long term support (LTS). LTS versions are released each three major or minor releases and are supported until three months after the next LTS version is released.&lt;ref&gt;{{cite web|title=Development Strategy |url=http://developer.joomla.org/strategy.html |work=Joomla.org |publisher=Open Source Matters |accessdate=2011-08-13}}&lt;/ref&gt;
+
+Joomla 1.6.0 was released on January 10, 2011.&lt;ref&gt;{{cite web|title=Joomla! 1.6 Review|url=http://www.cmscritic.com/joomla-1-6-review/ |last=Johnston |first=Mike |date=2011-01-13 |work=CMS Critic}}&lt;/ref&gt;&lt;ref&gt;{{cite web|title=Joomla!Â® 1.6 Has Arrived! |url=http://www.joomla.org/announcements/general-news/5348-joomlar-16-has-arrived.html |work=Joomla.org |publisher=Open Source Matters |date=2011-01-10}}&lt;/ref&gt; This version adds a full [[access control list]] functionality plus, user-defined category hierarchy, and admin interface improvements.&lt;ref name=&quot;Joomla 1.6&quot;&gt;{{cite web|url=http://www.joomla.org/component/content/article/5252.html|title=Joomla 1.6 |accessdate=2010-10-26 |work=Joomla.org |publisher=Open Source Matters}}&lt;/ref&gt;
+
+Joomla 1.7.0 was released on July 19, 2011, six months after 1.6.0.&lt;ref&gt;{{cite web|url=http://www.cmscritic.com/joomla-cms-1-7-released-with-focus-on-enhanced-security/ Joomla! |title=1.7 released with focus on enhanced security. |last=Johnston |first=Mike |date=2011-07-19 |work=CMS Critic}}&lt;/ref&gt; This version adds enhanced security and improved migration tools.&lt;ref&gt;{{cite web|title=Joomla! 1.7 Released] |url=http://www.joomla.org/announcements/release-news/5380-joomla-170-released.html |work=Joomla.org |publisher=Open Source Matters |date=2011-07-19}}&lt;/ref&gt;
+
+Joomla 2.5.0 is planned for release six months after 1.7.0, in January 2012. This version is a long term support (LTS) release. Originally this release was to be 1.8.0, however on August 9 it was announced&lt;ref&gt;{{cite web|title=The Version Votes Are In |url=http://community.joomla.org/blogs/leadership/1479-the-version-votes-are-in.html |work=Joomla.org |publisher=Open Source Matters |accessdate=2011-08-24}}&lt;/ref&gt; that it would be renamed to fit into a new version number scheme in which every LTS release will be an X.5 release.&lt;ref&gt;{{cite web|title=Vote for the Version |url=http://community.joomla.org/blogs/leadership/1472-vote-for-the-version.html |work=Joomla.org |publisher=Open Source Matters |accessdate=2011-08-24}}&lt;/ref&gt;
+
+== Deployment ==
+Joomla can be installed manually from source code on a system running a Web server which supports [[PHP]] applications, from a [[package management system]] or using a [[virtual appliance]], from sources such as the [[TurnKey Linux Virtual Appliance Library]], which comprises the application and its dependencies as a ready-to-use system.&lt;ref&gt;{{cite web |title=Joomla! Appliance |publisher=[[TurnKey Linux Virtual Appliance Library]] |url=http://www.turnkeylinux.org/joomla |accessdate=2009-12-11 }}&lt;/ref&gt;
+
+There are numerous web hosting companies who provide a [[Web hosting control panel|control panel]] which automates the deployment of a basic Joomla Web site.
+
+Joomla can also be installed via the [[Microsoft Web Platform Installer]] which installs the software on [[Windows]] and [[Internet Information Services|IIS]]. The [[Microsoft Web Platform Installer|Web PI]] will automatically detect any missing dependencies such as [[PHP]] or [[MySQL]] then install and configure them before installing Joomla.&lt;ref&gt;{{cite web |title=The Easy Way To Install PHP on Windows |publisher=[[SitePoint]] |url=http://articles.sitepoint.com/article/php-windows-web-platform-installer |accessdate=2009-11-20 }}&lt;/ref&gt;
+
+== Examples ==
+These are examples of popular Web sites based on the Joomla CMS:
+*[http://www.linux.com/ Linux.com]&lt;ref&gt;{{cite web |title=Popular Joomla! Websites |work=Alledia |url=http://www.alledia.com/blog/open-questions/the-most-popular-joomla-sites/ }}&lt;/ref&gt;
+*[http://www.itwire.com/ iTWire.com]&lt;ref&gt;{{cite web |title=most popular independent IT news site in Australia uses Joomla!|url=http://community.joomla.org/blogs/community/1190-itwire.html }}&lt;/ref&gt;
+
+&lt;!--======================== {{No more links}} ============================
+    | PLEASE BE CAUTIOUS IN ADDING MORE LINKS TO THIS ARTICLE. Wikipedia  |
+    | is not a collection of links nor should it be used for advertising. |
+    |                                                                     |
+    |           Excessive or inappropriate links WILL BE DELETED.         |
+    | See [[Wikipedia:External links]] &amp; [[Wikipedia:Spam]] for details.  |
+    |                                                                     |
+    | If there are already plentiful links, please propose additions or   |
+    | replacements on this article's discussion page, or submit your link |
+    | to the relevant category at the Open Directory Project (dmoz.org)   |
+    | and link back to that category using the {{dmoz}} template.         |
+    ======================= {{No more links}} =============================--&gt;
+The official Joomla! site now has a directory of example sites: [http://community.joomla.org/showcase/ Official Community Showcase]
+
+== See also ==
+{{Portal|Free software}}
+* [[List of content management systems]]
+* [[List of web application frameworks]]
+{{-}}
+
+==References==
+{{Reflist|colwidth=30em}}
+
+==External links==
+*{{Official website|www.joomla.org}}
+*{{dmoz|/Computers/Programming/Languages/PHP/Scripts/Content_Management/Joomla/}}
+&lt;!--======================== {{No more links}} ============================
+    | PLEASE BE CAUTIOUS IN ADDING MORE LINKS TO THIS ARTICLE. Wikipedia  |
+    | is not a collection of links nor should it be used for advertising. |
+    |                                                                     |
+    |           Excessive or inappropriate links WILL BE DELETED.         |
+    | See [[Wikipedia:External links]] &amp; [[Wikipedia:Spam]] for details.  |
+    |                                                                     |
+    | If there are already plentiful links, please propose additions or   |
+    | replacements on this article's discussion page, or submit your link |
+    | to the relevant category at the Open Directory Project (dmoz.org)   |
+    | and link back to that category using the {{dmoz}} template.         |
+    ======================= {{No more links}} =============================--&gt;
+
+{{Application frameworks}}
+
+[[Category:Open source content management systems]]
+[[Category:Internet forums]]
+[[Category:Blog software]]
+[[Category:Software forks]]
+[[Category:Free software programmed in PHP]]
+[[Category:PHP Frameworks]]
+[[Category:Web application frameworks]]
+[[Category:Content management systems]]
+[[Category:Cross-platform software]]
+
+[[af:Joomla]]
+[[ar:Ø¬ÙÙØ©!]]
+[[arc:ÜÜÜ¡Ü Ü!]]
+[[bg:Joomla!]]
+[[bs:Joomla!]]
+[[ca:Joomla!]]
+[[cv:Joomla!]]
+[[cs:Joomla!]]
+[[da:Joomla!]]
+[[de:Joomla]]
+[[et:Joomla]]
+[[el:Joomla]]
+[[es:Joomla!]]
+[[eo:Joomla!]]
+[[eu:Joomla!]]
+[[fa:Ø¬ÙÙÙØ§]]
+[[fr:Joomla!]]
+[[gl:Joomla!]]
+[[ko:ì¤ë¼]]
+[[hy:ÕÕ¸ÖÕ´Õ¬Õ¡]]
+[[hi:à¤à¥à¤®à¤²à¤¾]]
+[[hr:Joomla!]]
+[[id:Joomla!]]
+[[it:Joomla!]]
+[[he:×'××××]]
+[[ka:á¯á£ááá]]
+[[kk:Joomla]]
+[[ku:Joomla!]]
+[[lv:Joomla!]]
+[[lt:Joomla!]]
+[[hu:Joomla!]]
+[[mk:Joomla]]
+[[ml:à´àµà´à´²]]
+[[ms:Joomla!]]
+[[my:Joomla]]
+[[nl:Joomla!]]
+[[ja:Joomla!]]
+[[no:Joomla!]]
+[[uz:Joomla!]]
+[[km:Joomla!]]
+[[pl:Joomla!]]
+[[pt:Joomla]]
+[[ro:Joomla!]]
+[[ru:Joomla]]
+[[si:à¶¢à·à¶¸à·à¶½à·]]
+[[sk:Joomla]]
+[[sl:Joomla]]
+[[sr:Joomla!]]
+[[fi:Joomla]]
+[[sv:Joomla]]
+[[ta:à®¯à¯à®®à¯à®²à®¾]]
+[[th:à¸à¸¸à¸¡à¸¥à¸²]]
+[[tg:Joomla!]]
+[[tr:Joomla!]]
+[[uk:Joomla]]
+[[ur:Ø¬ÙÙÛ!]]
+[[vi:Joomla!]]
+[[wuu:Joomla!]]
+[[zh:Joomla!]]</rev></revisions></page></pages></query></api>

@@ -1,0 +1,102 @@
+<?xml version="1.0"?><api><query><pages><page pageid="334641" ns="0" title="Directory service"><revisions><rev xml:space="preserve">{{More footnotes|date=December 2008}}
+A '''directory service''' is the software system that stores, organizes and provides access to information in a [[directory]]. In software engineering, a directory is a map between names and values. It allows the lookup of values given a name, similar to a dictionary. As a word in a dictionary may have multiple definitions, in a directory, a name may be associated with multiple, different pieces of information. Likewise, as a word may have different parts of speech and different definitions, a name in a directory may have many different types of data.
+
+Directories may be very narrow in scope, supporting only a small set of [[Node (computer science)|node]] types and data types, or they may be very broad, supporting an arbitrary or extensible set of types. In a [[telephone directory]], the nodes are names and the data items are telephone numbers. In the [[Domain Name System|DNS]] the nodes are domain names and the data items are IP addresses (and alias, mail server names, etc.). In a directory used by a network operating system, the nodes represent resources that are managed by the OS, including users, computers, printers and other shared resources. Many different directory services have been used since the advent of the Internet but this article focuses mainly on those that have descended from the [[X.500]] directory service.
+
+== Introduction ==
+A simple directory service called a naming service, maps the names of network resources to their respective network addresses. With the name service type of directory, a user doesn't have to remember the physical address of a network resource; providing a name will locate the resource. Each resource on the network is considered an object on the directory server. Information about a particular resource is stored as attributes of that object. Information within objects can be made secure so that only users with the available permissions are able to access it. More sophisticated directories are designed with namespaces as Subscribers, Services, Devices, Entitlements, Preferences, Content and so on. This design process is highly related to [[Identity management]].
+
+A directory service defines the [[Namespace (computer science)|namespace]] for the network. A namespace in this context is the term that is used to hold one or more objects as named entries. The directory design process normally has a set of rules that determine how network resources are named and identified. The rules specify that the names be unique and unambiguous. In [[X.500]] (the directory service standards) and [[Lightweight Directory Access Protocol|LDAP]] the name is called the '''Distinguished name''' (DN) and is used to refer to a collection of attributes (relative distinguished names) which make up the name of a directory entry.
+
+A directory service is a shared information infrastructure for locating, managing, administering, and organizing common items and network resources, which can include volumes, folders, files, printers, users, groups, devices, telephone numbers and other objects. A directory service is an important component of a [[Network operating system|NOS]] (Network Operating System). In the more complex cases a directory service is the central information repository for a [[Service Delivery Platform]]. For example, looking up &quot;computers&quot; using a directory service might yield a list of available computers and information for accessing them.
+
+Replication and Distribution have very distinct meanings in the design and management of a directory service. The term replication is used to indicate that the same directory namespace (the same objects) are copied to another directory server for redundancy and throughput reasons. The replicated namespace is governed by the same authority. The term distribution is used to indicate that multiple directory servers, that hold different namespaces, are interconnected to form a distributed directory service. Each distinct namespace can be governed by different authorities.
+
+== Comparison with relational databases ==
+There are a number of things that distinguish a traditional directory service from a typical [[relational database]]. Of course there are exceptions, but in general: 
+* directory information is read more often than it is written; this makes features related to transactions and rollback less important.
+* data can be redundant if it helps performance.
+
+Directory schemas are defined as object classes, attributes, name bindings and knowledge (namespaces), where an object class has:
+* Must - attributes that each of its instances must have
+* May - attributes that can be defined for an instance, but can be omitted with the absence treated somewhat like NULL in a relational database
+* Attributes are sometimes multi-valued allowing multiple naming attributes at one level such as machine type and serial number concatenated or multiple phone numbers for &quot;work phone&quot;.
+* Attributes and object classes are standardized throughout the industry and formally registered with the [[Internet Assigned Numbers Authority|IANA]] for their object ID. Therefore directory applications seek to reuse much of the standard classes and attributes to maximize the benefit of existing directory server software.
+* Object instances are slotted into namespaces. That is, each object class [[Inheritance (computer science)|inherits]] from its parent object class (and ultimately from the root of the hierarchy) adding attributes to the must/may list.
+* Directory services are often a central component in the [[Computer security|security]] design of an IT system and have a correspondingly fine granularity regarding access control: who may operate in which manner on what information. Also see: [[Access control list|ACLs]]
+
+== Implementations of directory services ==
+Directory services were part of an [[Open Systems Interconnection]] (OSI) initiative to get everyone in the industry to agree to common network standards to provide multi-vendor interoperability. In the 1980s the [[International Telecommunication Union|ITU]] and [[International Organization for Standardization|ISO]] came up with a set of standards - [[X.500]], for directory services, initially to support the requirements of inter-carrier electronic messaging and network name lookup. The Lightweight Directory Access Protocol, [[Lightweight Directory Access Protocol|LDAP]], is based on the directory information services of [[X.500]], but uses the [[Internet protocol suite|TCP/IP stack]] and a string encoding scheme of the [[X.500]] protocol DAP, giving it more relevance on the [[Internet]].
+
+There have been numerous forms of directory service implementations from different vendors. Systems developed before the advent of X.500 include:
+* '''[[Domain Name System]]:''' (DNS), the first directory service on the Internet, which is still used everywhere today.
+* '''[[Hesiod (name service)|Hesiod]]:''' was based on DNS and used at MIT's [[Project Athena]].
+* '''[[Network Information Service]]:''' (NIS), originally named [[Yellow Pages (computing)|Yellow Pages]] (YP), was [[Sun Microsystems]]' implementation of a directory service for [[Unix]] network environments. It served a similar role as Hesiod.
+* '''[[NetInfo]]:''' was developed by NeXT in the late 80s for [[NEXTSTEP]]. After being acquired by Apple, it was released as open source and used as the directory service for [[Mac OS X]] before being deprecated in favor of the LDAP-based Open Directory. Support for NetInfo was completely removed with the release of 10.5 Leopard.
+* '''[[Banyan VINES]]:''' was the first scalable directory services offering.
+* '''[[Windows Server domain|NT Domains]]:''' was developed  by Microsoft to provide directory services for Windows machines prior to the release the LDAP-based Active Directory in Windows 2000. Windows Vista continues to support NT Domains, but only after relaxing the minimum authentication protocols it supports.
+
+Among the LDAP/X.500 based implementations are:
+* '''[[Active Directory]]:''' [[Microsoft]]'s modern directory service for [[Windows]], originating from the X.500 directory it created for use in Exchange Server, first shipped with [[Windows 2000 Server]] and is supported by successive versions of [[Windows]].
+* '''[[Novell eDirectory|eDirectory:]]''' This is [[Novell]]'s implementation of directory services. It supports multiple architectures including [[Microsoft Windows|Windows]], [[NetWare]], [[Linux]] and several flavours of [[Unix]] and has long been used for user administration, configuration management, and software management. eDirectory has evolved into a central component in a broader range of [[Identity management]] products. It was previously known as Novell Directory Services.
+* '''Red Hat Directory Server:''' [[Red Hat]] released a directory service, that it acquired from AOL's '''Netscape Security Solutions''' unit,&lt;ref&gt;[http://www.informationweek.com/story/showArticle.jhtml?articleID=48800390]&lt;/ref&gt; as a commercial product running on top of [[Red Hat Enterprise Linux]] called Red Hat Directory Server and as the community supported [[389 Directory Server]] project.
+* '''Open Directory:''' [[Apple Computer|Apple's]] [[Mac OS X Server]] uses a directory service named [[Apple Open Directory|Open Directory]], which implements [[Lightweight Directory Access Protocol|LDAP]] using a customized build of [[OpenLDAP]] and integrates support for both [[Simple Authentication and Security Layer|SASL]] and [[Kerberos (protocol)|Kerberos]] authentication. It uses a plugins architecture to work with other LDAPv3 directories, including proprietary solutions like Active Directory and eDirectory.
+* '''Apache Directory Server:''' [[Apache Software Foundation]] offers a directory service called [[Apache Directory Server|ApacheDS]].
+* '''Oracle Internet Directory:''' (OID) is [[Oracle Corporation]]'s directory service, which is compatible with LDAP version 3.
+* '''CA Directory:''' CA Directory contains pre-caching engine which can index all attributes that are used in LDAP search filters, and caching all attributes returned in search results.
+* '''Alcatel-Lucent Directory Server:''' CTIA 2009 - 4G Service Creation &amp; Development Award Winner offering enhanced performance, high availability and proven efficiencies&lt;ref&gt;[http://www.alcatel-lucent.com/wps/portal/products/detail?LMSG_CABINET=Solution_Product_Catalog&amp;LMSG_CONTENT_FILE=Products/Product_Detail_000558.xml Alcatel-Lucent 8661 Directory Server]&lt;/ref&gt;
+* '''[[Sun Java System Directory Server]]:''' [[Sun Microsystems]]' current directory service offering&lt;ref&gt;[http://www.sun.com/software/products/directory_srvr_ee/]&lt;/ref&gt;
+* '''[[OpenDS]]:''' An open source directory service implementation from scratch in Java, backed by [[Sun Microsystems]]&lt;ref&gt;[http://opends.dev.java.net/]&lt;/ref&gt;
+* '''[[IBM Tivoli Directory Server]]''' It is a customized build of an old release of [[OpenLDAP]].
+* '''[[Siemens DirX Directory Server]]'''
+* '''Windows [[NT Directory Service]]s (NTDS)''', later renamed [[Active Directory]], replaces the former NT Domain system.
+* '''Critical Path Directory Server'''
+* '''[[OpenLDAP]]''' Derived from the original University of Michigan reference LDAP implementation (as are the Netscape/Red Hat/Fedora/Sun JSDS servers) but significantly evolved. It supports all current computer architectures, including Unix and Unix derivatives, Linux, Windows, z/OS, and a variety of embedded/realtime systems.
+* '''[[Isode Limited]]:''' High performance and high availability LDAP and X.500 servers.
+* [http://www.unboundid.com UnboundID Directory Server]:''' A commercial high-performance Directory Server product produced by the UnboundID Corporation.
+* [[Lotus Domino]]
+
+There are also plenty of [[open-source]] tools to create directory services, including [[OpenLDAP]] and the [[Kerberos (protocol)|Kerberos protocol]], and [[Samba software]] which can act as a Windows Domain Controller with [[Kerberos (protocol)|Kerberos]] and LDAP backends. Administration is done using [[GOsa]] or Samba provided [[Samba software|SWAT]].
+
+== Using name services ==
+=== Unix OSs ===
+
+Name services on Unix systems are typically configured through [[nsswitch.conf]]. Information from name services can be retrieved using [[getent]].
+
+== Notes ==
+{{reflist}}
+
+== See also ==
+* [[Domain name system]]
+* [[LDAP Data Interchange Format]]
+* [[Directory Service Markup Language]]
+* [[MetaDirectory]]
+* [[Virtual directory]]
+* [[Hierarchical database model]]
+
+== References ==
+* {{cite book |last= Carter |first= Gerald |authorlink= |coauthors= |title= LDAP System Administration |year= 2003 |publisher= [[O'Reilly Media]] |location= |isbn= 978-1-56592-491-8 }}
+
+[[Category:Directory services| ]]
+[[Category:Computer access control protocols]]
+[[Category:Computer access control]]
+
+[[cs:AdresÃ¡ÅovÃ¡ sluÅ¾ba]]
+[[de:Verzeichnisdienst]]
+[[es:Servicio de directorio]]
+[[fa:Ø³Ø±ÙÛØ³ Ø¯Ø§ÛØ±Ú©ØªÙØ±Û]]
+[[fr:Annuaire]]
+[[ko:ëë í°ë¦¬ ìë¹ì¤]]
+[[it:Servizio di directory]]
+[[he:Directory service]]
+[[hu:CÃ­mtÃ¡rszolgÃ¡ltatÃ¡sok]]
+[[ja:ãã£ã¬ã¯ããªã»ãµã¼ãã¹]]
+[[pl:UsÅuga katalogowa]]
+[[pt:ServiÃ§o de diretÃ³rio]]
+[[ru:Ð¡Ð»ÑÐ¶Ð±Ð° ÐºÐ°ÑÐ°Ð»Ð¾Ð³Ð¾Ð²]]
+[[ckb:ÚØ§ÚÛÛ Ù¾ÛÚØ³Øª]]
+[[sv:KatalogtjÃ¤nst]]
+[[uk:Ð¡Ð»ÑÐ¶Ð±Ð° ÐºÐ°ÑÐ°Ð»Ð¾Ð³ÑÐ²]]
+[[vi:Dá»ch vá»¥ thÆ° má»¥c]]
+[[yi:Directory Service]]
+[[zh:ç®å½æå¡]]</rev></revisions></page></pages></query></api>

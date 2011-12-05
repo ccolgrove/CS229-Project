@@ -1,0 +1,117 @@
+<?xml version="1.0"?><api><query><pages><page pageid="1054629" ns="0" title="Setuid"><revisions><rev xml:space="preserve">{{lowercase}}
+'''setuid''' and '''setgid''' (short for &quot;'''set''' '''u'''ser '''ID''' upon execution&quot; and &quot;'''set''' '''g'''roup '''ID''' upon execution&quot;, respectively)&lt;ref&gt;William von Hagen ''Ubuntu Linux Bible'' [http://books.google.com/books?id=rsSlrQLB8-gC&amp;lpg=SA3-PA59&amp;dq=set%20user%20ID%20upon%20execution&amp;pg=SA3-PA59#v=onepage&amp;f=false p.3-59]&lt;/ref&gt; are [[Unix]] access rights flags that allow users to run an [[executable]] with the permissions of the executable's owner or group. They are often used to allow users on a computer system to run programs with temporarily elevated privileges in order to perform a specific task.  While the assumed user id or group id privileges provided are not always elevated, at a minimum they are specific.
+
+&lt;code&gt;setuid&lt;/code&gt; and &lt;code&gt;setgid&lt;/code&gt; are needed for tasks that require higher privileges than those which common users have, such as changing their login password.&lt;ref name=&quot;oreilly&quot;&gt;AEleen Frisch ''Essential system administration'' [http://books.google.com/books?id=uRW8V9QOL7YC&amp;lpg=PT67&amp;dq=set%20user%20ID%20upon%20execution&amp;pg=PT375#v=onepage&amp;q=setuid&amp;f=false p.351] O'Reilly&lt;/ref&gt; Some of the tasks that require elevated privileges may not immediately be obvious, though &amp;mdash; such as the &lt;code&gt;[[ping]]&lt;/code&gt; command, which must send and listen for [[Internet Control Message Protocol|control packet]]s on a network interface.
+
+==&lt;code&gt;setuid&lt;/code&gt; on executables==
+
+When an executable file has been given the &lt;code&gt;setuid&lt;/code&gt; attribute, normal users on the system who have permission to execute this file gain the privileges of the user who owns the file (commonly [[superuser|root]]) within the created [[process (computing)|process]].&lt;ref name=&quot;oreilly&quot; /&gt; When root privileges have been gained within the process, the application can then perform tasks on the system that regular users normally would be restricted from doing. The invoking user will be prohibited by the system from altering the new process in any way, such as by using &lt;code&gt;[[ptrace]]&lt;/code&gt;, &lt;code&gt;LD_LIBRARY_PATH&lt;/code&gt; or sending signals to it (signals from the terminal will still be accepted, however). Due to potential race conditions,&lt;ref&gt;http://www.faqs.org/faqs/unix-faq/faq/part4/section-7.html&lt;/ref&gt; many operating systems ignore the &lt;code&gt;setuid&lt;/code&gt; attribute when applied to executable ''[[shell script]]s''.
+
+While this &lt;code&gt;setuid&lt;/code&gt; feature is very useful in many cases, its improper use can pose a security risk&lt;ref name=&quot;oreilly&quot; /&gt; if the &lt;code&gt;setuid&lt;/code&gt; attribute is assigned to [[executable]] programs that are not carefully designed. Users can [[exploit (computer security)|exploit]] vulnerabilities in flawed programs to gain permanent [[Privilege escalation|elevated privileges]], or unintentionally execute a [[Trojan horse (computing)|trojan horse]] program.
+
+The &lt;code&gt;setgid&lt;/code&gt; attribute will allow for changing the group-based privileges within a process, like the &lt;code&gt;setuid&lt;/code&gt; flag does for user-based privileges.
+
+The presence of &lt;code&gt;setuid&lt;/code&gt; executables explains why the &lt;code&gt;[[chroot]]&lt;/code&gt; system call is not available to non-[[superuser|root]] users on Unix. See [[chroot#Limitations|limitations of &lt;code&gt;chroot&lt;/code&gt;]] for more details.
+
+The &lt;code&gt;setuid&lt;/code&gt; and &lt;code&gt;setgid&lt;/code&gt; bits are normally set with the command &lt;code&gt;[[chmod]]&lt;/code&gt; by setting the high-order octal digit to 4 (for &lt;code&gt;setuid&lt;/code&gt;) or 2 (for &lt;code&gt;setgid&lt;/code&gt;). &lt;code&gt;`chmod 6711`&lt;/code&gt; will set the &lt;code&gt;setuid&lt;/code&gt; and &lt;code&gt;setgid&lt;/code&gt; bits (6), make the file read/write/executable for the owner (7), and executable by the group (first 1) and others (second 1). All &lt;code&gt;chmod&lt;/code&gt; flags are octal.
+
+Most implementations of the &lt;code&gt;chmod&lt;/code&gt; command also support finer-grained, symbolic arguments to set these bits. This is shown in the demonstration below as the &lt;code&gt;`chmod ug+s`&lt;/code&gt; command.
+
+The demonstration C program below simply obtains and reveals the [[real user ID|real]] and [[effective user ID|effective user]] and [[group ID]] currently assigned to the process. The commands shown first compile the process as user &lt;code&gt;`bob`&lt;/code&gt; and subsequently use &lt;code&gt;`chmod`&lt;/code&gt; to establish the &lt;code&gt;setuid&lt;/code&gt; and &lt;code&gt;setgid&lt;/code&gt; bits. The &lt;code&gt;`su`&lt;/code&gt; command, itself a client of the &lt;code&gt;setuid&lt;/code&gt; feature, is then used to assume the id of &lt;code&gt;`alice`&lt;/code&gt;. The effectiveness of the &lt;code&gt;`chmod`&lt;/code&gt; command is checked with &lt;code&gt;`ls -l`&lt;/code&gt;, and finally the demonstration program is run, revealing the expected identity change, consistent with the &lt;code&gt;/etc/passwd&lt;/code&gt; file.
+
+Note that the demonstration program listed below will silently fail to change the effective UID if run on a volume mounted with the &lt;code&gt;`nosuid`&lt;/code&gt; option.
+
+=== Demonstration ===
+&lt;source lang=&quot;bash&quot;&gt;
+[bobie]$ cat printid.c
+&lt;/source&gt;
+&lt;source lang=&quot;c&quot;&gt;
+#include &lt;sys/types.h&gt;
+#include &lt;unistd.h&gt;
+#include &lt;stdio.h&gt;
+int main(void) {
+    printf(
+        &quot;         UID           GID  \n&quot;
+        &quot;Real      %d  Real      %d  \n&quot;
+        &quot;Effective %d  Effective %d  \n&quot;,
+             getuid (),     getgid (),
+             geteuid(),     getegid()
+    );
+    return getegid() ;       /* always good to return something */
+}
+&lt;/source&gt;
+&lt;source lang=&quot;bash&quot;&gt;
+[bobie]$ cc printid.c -o printid
+[bobie]$ ./printid
+        UID           GID  
+Real      1008  Real      1008
+Effective 1008  Effective 1008  
+
+[bobie]$ sudo chown root printid     # to change the owner you need to sudo 
+Password:
+[bobie]$ sudo chmod ug+s printid     # SetUID and SetGID flags
+[bobie]$ sudo chmod o-rx printid     # Don't let Others read or execute it
+[bobie]$ ls -l
+-rwsr-s--- 1 root staff 6944 2011-10-06 10:22 printid
+[bobie]$ ./printid 
+        UID              GID  
+Real      1008  Real      1008
+Effective 0   Effective  20
+&lt;/source&gt;
+
+==&lt;code&gt;setuid&lt;/code&gt; and &lt;code&gt;setgid&lt;/code&gt; on directories==
+
+The &lt;code&gt;setuid&lt;/code&gt; and &lt;code&gt;setgid&lt;/code&gt; flags, when set on a directory, have an entirely different meaning.
+
+Setting the &lt;code&gt;setgid&lt;/code&gt; permission on a directory &lt;code&gt;(chmod g+s)&lt;/code&gt; causes new files and subdirectories created within it to '''inherit its group ID''', rather than the primary group ID of the user who created the file (the owner ID is never affected, only the group ID). Newly created subdirectories inherit the &lt;code&gt;setgid&lt;/code&gt; bit. Note that setting the &lt;code&gt;setgid&lt;/code&gt; permission on a directory only affects the group ID of new files and subdirectories created after the &lt;code&gt;setgid&lt;/code&gt; bit is set, and is not applied to existing entities. Setting the &lt;code&gt;setgid&lt;/code&gt; bit on existing subdirectories must be done manually, with a command such as the following:
+
+&lt;code&gt;
+ [root@foo]# find /path/to/directory -type d -exec chmod g+s {} \;&lt;/code&gt;
+
+The &lt;code&gt;setuid&lt;/code&gt; permission set on a directory is ignored on [[UNIX]] and [[Linux]] systems.&lt;ref&gt;{{cite web |last=Bauer |first=Mick |year=2004 |url=http://www.linuxjournal.com/article/7727 |title=Paranoid Penguin - Linux Filesystem Security, Part II |publisher=linuxjournal.com }}&lt;/ref&gt; [[FreeBSD]] can be configured to interpret it analogously to &lt;code&gt;setgid&lt;/code&gt;, namely, to force all files and sub-directories to be owned by the top directory owner.&lt;ref&gt;{{cite web |url=http://www.freebsd.org/cgi/man.cgi?query=chmod&amp;apropos=0&amp;sektion=0&amp;manpath=FreeBSD+6.1-RELEASE&amp;format=html |title=chmod manpage on www.freebsd.org }}&lt;/ref&gt;
+
+In FreeBSD, directories behave as if their &lt;code&gt;setgid&lt;/code&gt; bit was always set, regardless of its actual value. As is stated in [http://www.freebsd.org/cgi/man.cgi?query=open&amp;sektion=2 &lt;code&gt;open(2)&lt;/code&gt;], &quot;When a new file is created it is given the group of the directory which contains it.&quot;
+
+== Security ==
+Programs that use this bit must be carefully designed to be immune to [[buffer overrun]] attacks. Successful buffer overrun attacks on vulnerable applications allow the attacker to execute arbitrary code under the rights of the process being exploited. In the event a vulnerable process uses the &lt;code&gt;setuid&lt;/code&gt; bit to run as &lt;code&gt;root&lt;/code&gt;, the code will be executed with root privileges, in effect giving the attacker root access to the system on which the vulnerable process is running.
+
+==History==
+The &lt;code&gt;setuid&lt;/code&gt; bit was invented by [[Dennis Ritchie]]. His employer, [[AT&amp;T]], applied for a patent in 1972; the patent was granted in 1979 as patent number {{patent|US|4135240|&quot;Protection of data file contents&quot;}}. The patent was later placed in the public domain.&lt;ref&gt;{{cite web |url=http://www.textfiles.com/law/softpat.txt |title=Summary of key software patents }}&lt;/ref&gt;
+
+== See also ==
+* [[User identifier]]
+* [[Group identifier]]
+* [[Process identifier]]
+* &lt;code&gt;[[chmod]]&lt;/code&gt;
+* &lt;code&gt;[[sudo]]&lt;/code&gt;
+* [[Confused deputy problem]]
+* [[PolicyKit]]
+* [[Unix security]]
+* [[File system permissions]]
+* [[Privilege revocation]]
+* [[Privilege separation]]
+* [[Environment variable]]
+
+== References ==
+{{Reflist}}
+
+==External links==
+* Chen, Hao; [[David A. Wagner|Wagner, David]]; and Dean, Drew; [http://www.cs.berkeley.edu/~daw/papers/setuid-usenix02.pdf &lt;cite&gt;Setuid Demystified&lt;/cite&gt;] (pdf)
+* Tsafrir, Dan; Da Silva, Dilma; and Wagner, David; [http://www.eecs.berkeley.edu/~daw/papers/setuid-login08b.pdf &lt;cite&gt;The Murky Issue of Changing Process Identity: Revising Setuid Demystified&lt;/cite&gt;] (pdf)
+* Pollock, Wayne; [http://wpollock.com/AUnix1/FilePermissions.htm Unix File and Directory &lt;cite&gt;Permissions and Modes&lt;/cite&gt;]
+
+[[Category:Articles with example C code]]
+[[Category:Computer security procedures]]
+[[Category:Unix]]
+[[Category:Patents placed into the public domain]]
+
+[[de:Setuid]]
+[[es:Setuid]]
+[[eu:Setuid]]
+[[fr:Setuid]]
+[[it:Setuid e setgid]]
+[[ja:Setuid]]
+[[pl:Setuid]]
+[[pt:Setuid]]
+[[ru:Suid]]
+[[sk:Setuid]]</rev></revisions></page></pages></query></api>

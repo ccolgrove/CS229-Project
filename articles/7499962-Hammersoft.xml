@@ -1,0 +1,128 @@
+<?xml version="1.0"?><api><query><pages><page pageid="7499962" ns="0" title="ZX Spectrum software"><revisions><rev xml:space="preserve">{{orphan|date=July 2010}}
+{{Refimprove|date=February 2011}}
+
+The '''ZX Spectrum software''' library currently consists of more than 21,000 titles.&lt;ref name=&quot;WoS-archive&quot;&gt;{{cite web | url=http://www.worldofspectrum.org/archive.html | work=World of Spectrum | last = Heide | first = Martijn van der | accessdate=2009-10-24 | title=Archive!}}&lt;/ref&gt; Despite the fact that the Spectrum hardware was limited by most standards, its software library was very diverse, including programming language implementations ([[C (programming language)|C]],&lt;ref&gt;{{cite web | url = http://www.worldofspectrum.org/infoseekid.cgi?id=0008252 | title = Sinclair Infoseek: HiSoft C | accessdate = 2006-08-24 | last = Heide | first = Martijn van der | work = World of Spectrum}}&lt;/ref&gt; [[Pascal (programming language)|Pascal]],&lt;ref&gt;{{cite web | url = http://www.worldofspectrum.org/infoseekid.cgi?id=0008255 | title = Sinclair Infoseek: HiSoft Pascal 4 | accessdate = 2006-08-24 | last = Heide | first = Martijn van der | work = World of Spectrum}}&lt;/ref&gt; [[Prolog]],&lt;ref&gt;{{cite web | url = http://www.worldofspectrum.org/infoseekid.cgi?id=0008429 | title = Sinclair Infoseek: Micro-Prolog | accessdate = 2006-08-24 | last = Heide | first = Martijn van der | work = World of Spectrum}}&lt;/ref&gt; [[Forth (programming language)|Forth]]&lt;ref&gt;{{cite web | url = http://www.worldofspectrum.org/infoseekid.cgi?id=0008178 | title = Sinclair Infoseek: Forth | accessdate = 2006-08-24 | last = Heide | first = Martijn van der|work = World of Spectrum}}&lt;/ref&gt;), several [[Zilog Z80|Z80]] [[assembler (computer programming)|assembler]]s/[[disassembler]]s (e.g.: ''OCP Editor/Assembler'', ''[[HiSoft Systems|HiSoft]] Devpac'', ''ZEUS Assembler'', ''Artic Assembler)'', [[Sinclair BASIC]] compilers (e.g.: ''MCoder'', ''COLT, HiSoft BASIC''), Sinclair BASIC extensions (e.g.: ''[[Beta BASIC]]'', ''Mega Basic''), databases (e.g.: ''VU-File''&lt;ref name=&quot;zappowboom&quot;&gt;{{cite journal |last=Pearce |first=Nick |year=1982 |month=October/November |title=Zap! Pow! Boom! |journal=ZX Computing |page=75}}&lt;/ref&gt;), word processors (e.g.: ''[[Tasword]] II''&lt;ref&gt;{{cite journal |last=Wetherill |first=Steven |year=1984 |month=June |title=Tasword Two: The Word Processor |journal=CRASH! |issue=5 |page=126}}&lt;/ref&gt;), spread sheets (e.g.: ''VU-Calc''&lt;ref name=&quot;zappowboom&quot;/&gt;), drawing and painting tools (e.g.: ''[[OCP Art Studio]]''&lt;ref&gt;{{cite journal |last=Gilbert |first=John |year=1985 |month=October |title=Art Studio |journal=Sinclair User |issue=43 |page=28 |url=http://www.sincuser.f9.co.uk/043/sftwreb.htm |accessdate=2007-01-18 }}&lt;/ref&gt;, ''[[The Artist]]'', ''[[Paintbox (software)|Paintbox]]'', ''[[Melbourne Draw]]''), even 3D modelling (''[[VU-3D]]''&lt;ref&gt;{{cite journal |last=Carter |first=Alasdair |year=1983 |month=October/November |title=VU-3D |journal=ZX Computing |pages=76â77}}&lt;/ref&gt;&lt;ref&gt;{{cite web |url=http://www.bioeddie.co.uk/Spectrum/vu-3d.htm |title=Psion Vu-3D |accessdate=2007-01-18}}&lt;/ref&gt;), and, of course, many, many games.
+
+== Software distribution media and copy protection ==
+=== Tape ===
+
+Most Spectrum software was originally distributed on [[audio cassette tape]]s. The software was encoded on tape as a sequence of pulses that may sound similar to the sounds of a modern day [[modem]]. Since ZX Spectrum had only a rudimentary tape interface, data was recorded using an unusually simple and very reliable modulation, similar to [[pulse-width modulation]] but without a constant clock rate. Pulses of different widths (durations) represent 0s and 1s. A &quot;zero&quot; is represented by a ~244&amp;nbsp;[[microsecond|Î¼s]] pulse followed by a gap of the same duration (855 clock ticks each at 3.5&amp;nbsp;[[Hertz|MHz]]) for a total ~489&amp;nbsp;Î¼s;&lt;ref&gt;{{cite web | url = http://www.worldofspectrum.org/tapsamp.html#samplerate | title = Selecting a sample rate | accessdate = 2006-08-24 | last = Heide | first = Martijn van der | coauthors = Kopanske, Martin; and Kac, Tomaz | year = 1997â1999
+| work = Tape decoding with Taper}}&lt;/ref&gt; &quot;one&quot; is twice as long, totaling ~977&amp;nbsp;Î¼s. This allows for 1023 &quot;ones&quot; or 2047 &quot;zeros&quot; to be recorded per second. Assuming an even proportion of each, the resulting average speed was ~1365&amp;nbsp;bit/s. Higher speeds were possible using custom [[machine code]] loaders instead of the [[Read only memory|ROM]] routines.
+
+Naturally, a standard 48K program would take about 5&amp;nbsp;minutes to load: 49152 bytes Ã 8 = 393216 bits; 393216 bits / 1350 [[baud]] â 300&amp;nbsp;seconds = 5&amp;nbsp;minutes. In reality, however, a 48K program usually took between 3â4&amp;nbsp;minutes to load (because of different number of 0s and 1s encoded using pulse-width modulation), and 128K programs could take 12 or more minutes to load. Experienced users could often tell the type of a file, e.g. machine code, BASIC program, or screen image, from the way it sounded on the tape.
+
+During loading and saving processes, the border usually flashes with cyan/red stripes for the pilot signal and yellow/blue stripes for the header and data blocks. Headers had a short file size of about 15 bytes and are generally presented with a message such as &quot;Program: &lt;filename&gt;&quot;, &quot;Bytes: &lt;filename&gt;&quot; and &quot;Character array: &lt;filename&gt;&quot;. Each message displays information and details about the file type. The &quot;Program&quot; message is used for BASIC programs. &quot;Bytes&quot; refers to a program written in machine code (binary file) or the screen display (LOAD&quot;&quot; SCREEN$, LOAD&quot;&quot; CODE 16384,6912). &quot;Character array&quot; refers to an ASCII-encoded file. Pilot signals are usually represented with a thick stripe size; on header and data blocks, the stripes are thinner (depending the baudrate). However, it's possible to alter the border colours by modifying the parameters of many custom loaders and making the border flashing with multicoloured stripes to obtain a fancy border effect during the loading process. The striped border effects can also be found on games written for other 8-bit computers such as the Amstrad CPC 464/664/6128 and the Commodore C64/128.
+
+The Spectrum was intended to work with almost any cassette tape player, and despite differences in audio reproduction fidelity, the software loading process was quite reliable; however all Spectrum users knew and dreaded the &quot;'''R Tape loading error, 0:1'''&quot; message. One common cause was the use of a cassette copy from a tape recorder with a different head [[wikt:alignment|alignment]] to the one being used. This could sometimes be fixed by pressing on the top of the player during loading, or wedging the cassette with pieces of folded paper, to physically shift the tape into the required alignment. A more reliable solution was to realign the head, which was easily accessible on a number of tape players, with a small (jeweller's) [[screwdriver]].
+
+Typical settings for loading were Â¾ volume, 100% treble, 0% bass. Audio filters like loudness and [[Dolby Noise Reduction]] had to be disabled, and it was not recommended to use a [[Hi-Fi]] player to load programs. There were some tape recorders built specially for digital use, such as the [[SDI Technologies|Timex]] Computer 2010 Tape Recorder. The '''ZX Spectrum Plus 2''' and '''2A''' models are fashioned after an [[Amstrad CPC 464]] and feature a built-in tape &quot;datacorder&quot;.
+
+Complex loaders with unusual speeds or encoding were the basis of the ZX Spectrum [[copy protection]] schemes, although other methods were used including asking for a particular word from the documentation included with the game â often a novella â or the notorious [[Lenslok]] system. This had a set of plastic prisms in a fold-out plastic holder: the idea was that a scrambled word would appear on the screen, which could only be read by holding the prisms at a fixed distance from the screen courtesy of the plastic holder. This relied rather too much on everyone using the same size television, and Lenslok became a running joke with Spectrum users.
+
+One very interesting kind of software was copiers.  Most were [[copyright infringement of software|copyright infringement]] oriented, and their function was only tape duplication, but when [[Sinclair Research]] launched the ZX Microdrive, copiers were developed to copy programs from audio tape to microdrive tapes, and later on diskettes.  Best known were the Lerm suite produced by Lerm Software and ''Trans Express'' by Romantic Robot.  As the protections became more complex (e.g. Speedlock) it was almost impossible to use copiers to copy tapes, and the loaders had to be cracked by hand, to produce unprotected versions.  Special hardware, like the Romantic Robot's [[Multiface]] which was able to dump a copy of the ZX Spectrum RAM to disk/tape at the press of a button, was developed, entirely circumventing the copy protection systems.  &quot;Snapshots&quot; generated by these black boxes would later become the original fileteype recognised by emulators - .SNA - although these memory dumps have been generally replaced by more complex files, incorporating original loading features and multi-level options.
+
+=== ZX Microdrive ===
+[[File:Microdrive cart.png|thumb|ZX Microdrive]]
+The [[ZX Microdrive]] system was released in July 1983 and quickly became quite popular with the Spectrum user base due to the low cost of the drives, however, the actual media was very expensive for software publishers to use for mass market releases (by a factor of 10, compared to tape duplication).  Furthermore, the cartridges themselves acquired a reputation  for unreliability, and publishers were reluctant to [[Quality Assurance|QA]] each and every item shipped.&lt;ref name=&quot;CRASH22&quot;&gt;{{cite journal | title = Microdrive revisited | journal = CRASH | year = 1985 | month = November | issue = 22 | url = http://www.crashonline.org.uk/22/opinion.htm|accessdate = 2006-08-10}}&lt;/ref&gt;  Hence the main use became to complement tape releases, usually utilities and niche products like the ''[[Tasword]]'' [[word processing]] software and the aforementioned ''Trans Express''.  No games are known to be exclusively released on Microdrive, but some companies allowed, and even aided, their software to be copied over.  One such example was ''Rally Driver'' by Five Ways Software Ltd.&lt;ref name=&quot;CRASH22&quot; /&gt;
+
+=== Floppy disk ===
+[[Image:Compact Floppy.jpg|right|thumbnail|160px|The CF has a harder casing than a 3Â½-inch floppy; the metal door is opened by a sliding plastic tab on the right side.]]
+Several floppy disk systems were designed for the ZX Spectrum.  The most popular (excepting Eastern Europe,) were the [[DISCiPLE]] and [[+D]] systems released by Miles Gordon Technology in 1987 and 1988 respectively.  Despite becoming popular and being reliable (from using standard [[Shugart]] disk drives), most releases were utility software.  However, both systems had the ability to store memory images onto disk, ''snapshots'', which later on could be loaded back into the ZX Spectrum and execution would commence from the point where they were &quot;snapped&quot;, making them perfect for &quot;backups&quot;.  Both systems were also compatible with the Microdrive command syntax, which made porting existing software simpler.
+
+The ZX Spectrum +3 featured a built-in [[History of the floppy disk#The 3-inch compact floppy disk|3&quot; disk drive]] and enjoyed more success when it came to commercial software releases - more than 700&lt;ref name=&quot;WoS-archive&quot;/&gt; titles were released on disk from 1987 to 1997.
+
+Most Russian releases since 1989 are made for the [[Beta 128]] disc interface, the only system now in use there.
+
+=== Others ===
+
+In addition, software was also distributed through print media, fan magazines and books.  The prevalent language for distribution was the Spectrum's BASIC dialect [[Sinclair BASIC]].  The reader would type the software into the computer by hand, run it, and save it to tape for later use.  The software distributed in this way was in general simpler and slower than its [[assembly language]] counterparts, and lacked graphics.  But soon, magazines were printing long lists of [[checksum]]med [[hexadecimal]] digits with machine code games or tools.  There was a vibrant scientific community built around such software, ranging from [[satellite dish]] alignment programs to school classroom scheduling programs.
+
+One unusual software distribution method were radio or television shows in e.g. [[Croatia]] (Radio 101), [[Serbia]] ([[Ventilator 202]]), [[Slovenia]] (Radio Å tudent), [[Poland]], [[Czechoslovakia]], [[Romania]] or [[Brazil]], where the host would describe a program, instruct the audience to connect a cassette tape recorder to the radio or TV and then broadcast the program over the airwaves in audio format. In former [[Soviet Union]], mostly in [[Russia]] and [[Ukraine]] unauthorised radio operators (so-called radio hooligans) often exchanged software from cassette tapes for Spectrum and other popular computers by broadcasting it.
+
+Another unusual method which was used by some magazines were [[Unusual types of gramophone records#Unusual materials|7&quot; 33â rpm &quot;flexidisc&quot; records]], not the hard [[gramophone record|vinyl]] ones, which could be played on a standard [[Phonograph|record player]]. These disks were known as &quot;[[floppy ROM]]s&quot;.
+
+== Spectrum software in popular music ==
+
+A few pop musicians included Sinclair programs on their records. The [[Buzzcocks]] front man, Pete Shelly, put a Spectrum program including lyrics and other information as the last track on his XL-1 album. The punk band [[Inner City Unit]] put a Spectrum database of band information on their 1984 release, 'New Anatomy'. Also in 1984, the [[Thompson Twins]] released a game on vinyl.&lt;ref&gt;{{cite web | url = http://www.worldofspectrum.org/infoseekid.cgi?id=0007104 | title = Sinclair Infoseek: Thompson Twins Adventure, The | accessdate = 2006-08-24 | last = Heide | first = Martijn van der|work = World of Spectrum}}&lt;/ref&gt; [[The Freshies]] had a brief flirtation with fame and Spectrum games, and the [[Aphex Twin]] included various loading noises on his ''[[Richard D. James Album|Richard D. James]]'' album in 1996âmost notably part of the loading screen from ''[[Sabre Wulf]]'' on Carn Marth. [[Shakin' Stevens]] included his Shaky Game at the end of his ''The Bop Won't Stop'' album. The aim of the game was to guide your character around a maze, while avoiding bats. Upon completion your score would be given in terms of a rank of disc, e.g. &quot;gold&quot; or &quot;platinum&quot;. The game had a minor connection with one of his tracks, ''It's Late''. Scottish band [[Urusei Yatsura (band)|Urusei Yatsura]] included a Spectrum program that showed a satanic message in the beginning of the song ''Thank You'' (from the album ''Everybody Loves Urusei Yatsura'').
+
+There was also a music program for the Spectrum 48K which allowed to play two notes at a time, by rapidly switching between the waveforms of the two separate notes, a big improvement over the [[monaural|mono]] Spectrum sound. The program was branded after the popular '80s pop band [[Wham!]], and some of the biggest hits of this group could be played with the Spectrum. The program was called ''Wham! The Music Box'' and released by [[Melbourne House]], one of the most prolific publishing houses at the time.
+
+== Spectrum software today ==
+
+As audio tapes have a limited shelf-life, most Spectrum software has been digitized in recent years and is available for download in digital form. The legality of this practice is still in question. However, it seems unlikely that any action will ever be taken over such so-called &quot;[[abandonware]]&quot;.
+
+One popular program for digitizing Spectrum software is ''Taper'': it allows connecting a cassette tape player to the [[line in]] port of a [[sound card]] or, through a simple home-built device, to the [[parallel port]] of a PC.&lt;ref&gt;http://www.worldofspectrum.org/taper.html&lt;/ref&gt; Once in digital form, the software can be executed on one of many existing emulators, on virtually any platform available today. Today, the largest on-line archive of ZX Spectrum software is [[World of Spectrum]], with more than 20,000 titles.
+
+The Spectrum enjoys a vibrant, dedicated fan-base. Since it was cheap and simple to learn to use and program, the Spectrum was the starting point for many programmers and technophiles who remember it with nostalgia. The hardware limitations of the Spectrum imposed a special level of creativity on game designers, and for this reason, many Spectrum games are very creative and playable even by today's standards.  Games for ZX Spectrum are developed and released even nowadays.
+
+ZX Spectrum games continue to inspire developers and gamers on modern platforms such as [[iOS (Apple)|iOS]] with many games being produced using similar styles of game-play mechanics to those from the ZX Spectrum era. The game-play style of [[Hunchback (video game)|Hunchback]] can be found in [[iOS (Apple)|iOS]] game The Rescue &lt;ref&gt;[http://daviddennis.org/TheRescue/ Double Dee Games]&lt;/ref&gt; for example.
+
+== Notable titles ==
+=== ''Your Sinclair'' top 10 ===
+
+Between October 1991 and February 1992 ''[[Your Sinclair]]'' published a list of what they considered to be the [[Your Sinclair official top 100|top 100 games]] for the ZX Spectrum. Their top 10 were:&lt;ref&gt;{{cite journal | year = 1992 | month = January | title = The YS Top 100 Speccy Games Of All Time (Ever!) | journal = [[Your Sinclair]] | issue = 73 | pages = 34â36 | url = http://www.ysrnry.co.uk/articles/ystop100_4.htm | accessdate = 2006-08-15}}&lt;/ref&gt;&lt;ref&gt;{{cite journal | year = 1992 | month = February | title = The YS Top 100 Speccy Games Of All Time Pt 5 | journal = Your Sinclair | issue = 74 | page = 45 | url = http://www.ysrnry.co.uk/articles/ystop100_5.htm | accessdate = 2006-08-15}}&lt;/ref&gt;
+
+&lt;ol start=&quot;1&quot;&gt;
+&lt;li&gt;''[[3D Deathchase]]''
+&lt;li&gt;''[[Rebelstar]]''
+&lt;li&gt;''[[All or Nothing (game)|All or Nothing]]''
+&lt;li&gt;''[[Stop the Express]]''
+&lt;li&gt;''[[Head Over Heels (game)|Head Over Heels]]''
+&lt;li&gt;''[[R-Type]]''
+&lt;li&gt;''[[The Sentinel (computer game)|The Sentinel]]''
+&lt;li&gt;''[[Rainbow Islands]]''
+&lt;li&gt;''[[Boulder Dash]]''
+&lt;li&gt;''[[Tornado Low Level]]''
+&lt;/ol&gt;
+
+&lt;gallery&gt;
+Image:3D_Deathchase_screen.gif | ''[[3D Deathchase]]''
+Image:ZX Rebelstar 2.png | ''[[Rebelstar]]''
+Image:All Or Nothing.gif | ''[[All or Nothing (game)|All or Nothing]]''
+&lt;/gallery&gt;
+
+=== CRASH top 10 ===
+
+Between August and December 1991 ''[[CRASH (magazine)|CRASH]]'' published their list of the top 100 ZX Spectrum games, including in the top 10:&lt;ref&gt;{{cite journal | year = 1991 | month = December | title = All Time Encyclopedia Top 100 Speccy Games | journal = CRASH | issue = 94 | pages = 45â48 | url = http://www.crashonline.org.uk/94/top100.htm | accessdate = 2006-08-15}}&lt;/ref&gt;
+
+# ''[[Rainbow Islands]]''
+# ''[[Chase H.Q.]]''
+# ''[[RoboCop computer and video games#RoboCop|RoboCop]]''
+# ''[[RoboCop computer and video games#RoboCop 2|RoboCop 2]]''
+# ''[[Dizzy - The Ultimate Cartoon Adventure|Dizzy]]''
+# ''[[Target: Renegade]]''
+# ''[[Magicland Dizzy]]''
+# ''[[Batman (video game)|Batman: The Movie]]''
+# ''[[Operation Wolf]]''
+# ''[[Midnight Resistance]]''
+
+In CRASH's Top 10 all but the Dizzy games were published by [[Ocean Software]]. All but one of the ''Your Sinclair'' Top 10 games were released in 1987 or before (the conversion of ''Rainbow Islands'' did not appear until 1989, although the original was released in 1987), in comparison to the ''CRASH'' Top 10 which exclusively features games released in 1987 or after. 1987 was the year in which use of the newer 128K architecture and of the newer AY-3-8912 sound chip began to take off.  All of ''CRASH'''s Top 10, with the exception of ''Dizzy'', made use of these new features with enhanced sound and preloaded levels (eliminating the need for a [[multi-load]]), reflecting a difference in the attitudes of the editorship and readership of the two magazines.
+
+=== Additional screenshots ===
+
+&lt;gallery&gt;
+Image:ZXSpectrum elite.gif| ''[[Elite (video game)|Elite]]''
+Image:Manic Miner Screenshot.png| ''[[Manic Miner]]''
+Image:Knight lore 3.gif| ''[[Knight Lore]]''
+Image:ZX Laser Squad.png| ''[[Laser Squad]]''
+Image:RebelstarII.png| ''[[Rebelstar II]]''
+Image:Treasure Island Dizzy.png|''[[Treasure Island Dizzy]]''
+&lt;/gallery&gt;
+
+== Notable Spectrum developers ==
+
+A number of current leading games developers and development companies began their careers on the ZX Spectrum, including [[David Perry (game developer)|David Perry]] of [[Shiny Entertainment]], and  [[Tim Stamper (game artist)|Tim]] and [[Chris Stamper]] (as [[Ultimate Play The Game]], now known as [[Rare (company)|Rare]], maker of many famous titles for [[Nintendo]] game consoles). Other prominent games developers include [[Matthew Smith (games programmer)|Matthew Smith]] (''[[Manic Miner]]'', ''[[Jet Set Willy]]''), [[Jon Ritman]] (''[[Match Day]]'', ''[[Head Over Heels (game)|Head Over Heels]]''), [[Oliver Twins|The Oliver Twins]] (the [[Dizzy series]]) and [[Alan Cox]].&lt;ref&gt;{{cite web | url = http://www.softpanorama.org/People/Cox/index.shtml | title = Alan Cox: and the Art of Making Beta Code Work | accessdate = 2007-01-18 | last = Bezroukov | first = Nikolai | work = Portraits of Open Source Pioneers}}&lt;/ref&gt;
+
+== See also ==
+
+* [[ZX Spectrum demos]]
+* [[List of ZX Spectrum games]]
+
+== References ==
+
+{{Reflist|colwidth=30em}}
+
+[[Category:Home computer software]]
+[[Category:ZX Spectrum|Software]]
+
+[[ru:ÐÑÐ¾Ð³ÑÐ°Ð¼Ð¼Ð½Ð¾Ðµ Ð¾Ð±ÐµÑÐ¿ÐµÑÐµÐ½Ð¸Ðµ ZX Spectrum]]</rev></revisions></page></pages></query></api>

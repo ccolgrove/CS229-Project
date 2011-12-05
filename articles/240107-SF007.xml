@@ -1,0 +1,104 @@
+<?xml version="1.0"?><api><query><pages><page pageid="240107" ns="0" title="Shar"><revisions><rev xml:space="preserve">{{About|the file format|other uses|Shar (disambiguation)}}
+{{lowercase}}
+{{infobox file format
+| name                   = shar
+| icon                   =
+| logo                   =
+| screenshot             =
+| caption                =
+| extension              = .shar
+| mime                   =
+| type code              =
+| uniform type           =
+| magic                  =
+| owner                  =
+| released               =
+| latest release version =
+| latest release date    =
+| genre                  = [[Archive format]], [[shell script]]
+| container for          =
+| contained by           =
+| extended from          =
+| extended to            =
+| standard               =
+| url                    =
+}}
+
+In the [[Unix]] [[operating system]], '''shar''' (an abbreviation of ''shell archive'') is an [[archive format]]. A shar file is a [[shell script]], and executing it will recreate the files. This is a type of [[self-extracting archive]] file. It can be created with the Unix &lt;tt&gt;shar&lt;/tt&gt; utility. To extract the files, only the standard [[Unix]] [[Bourne shell]] ''sh'' is usually required.
+
+== Details ==
+While the shar format has the advantage of being [[plain text]], it poses a risk due to being [[executable]];&lt;ref&gt;{{cite web
+|url=http://developer.apple.com/mac/library/DOCUMENTATION/Darwin/Reference/ManPages/man1/shar.1.html
+|title=Mac OS X Man Page
+|author=Apple
+|date=June 6, 1993
+|publisher=Apple
+|accessdate=2009-11-07}}&lt;/ref&gt;&lt;ref&gt;{{cite web
+|url=http://dictionary.babylon.com/shar
+|title=Babylon Shar definition
+|publisher=Babylon Free Dictionary
+|accessdate=2009-11-07
+}}&lt;/ref&gt; for this reason the older and more general [[Tar (file format)|tar file format]] is usually preferred even for transferring text files. [[GNU]] provides its own version of shar in the [[GNU Sharutils]] collection.
+
+''unshar'' programs have been written for other operating systems but are not always reliable; shar files are shell scripts and can theoretically do anything that a shell script can do (including using incompatible features of enhanced or workalike shells), limiting their utility outside the Unix world.
+
+The drawback of self-extracting shell scripts (any kind, not just shar) is that they rely on a particular implementation of programs; shell archives created with older versions of ''makeself'',&lt;ref&gt;{{cite web|url=http://svn.icculus.org/loki_setup/trunk/makeself/makeself.sh?r1=303&amp;r2=304 |title=makeself âtrapâ command fix |publisher=Svn.icculus.org |date=2000-11-20 |accessdate=2011-08-30}}&lt;/ref&gt; for example the original [[Unreal Tournament]] for Linux installer, fails to run on bash 3.x due to a change in how missing arguments to &lt;code&gt;trap&lt;/code&gt; [[shell builtin|built-in command]] are handled.
+
+== Similar formats ==
+In 1987, Michael Bednarek from [[The Melbourne Institute of Applied Economic and Social Research]] at the [[University of Melbourne]] developed a script for a similar purpose in the [[DIGITAL Command Language]] for the [[OpenVMS|VMS]] operating system under the name &quot;''VMS_Shar version 2''&quot;.&lt;ref&gt;{{cite newsgroup
+|title = shar (sort of) for VMS
+|author = Michael Bednarek
+|date = 9 June 1987
+|newsgroup = comp.os.vms
+|id = 1261@murdu.OZ
+|url = http://groups.google.com.au/groups?selm=1261@murdu.OZ
+|accessdate = 2008-02-09}}&lt;/ref&gt;
+
+The main purpose of this script was to allow the distribution of formatted program code through e-mail and [[Usenet newsgroup]]s because:
+
+# [[Message transfer agent|Mail transfer agents]] and [[Network News Transfer Protocol|NNTP]] server software only allowed printable [[ASCII]] characters (32&amp;ndash;126);
+# They tended to strip leading and trailing blanks and [[Tab key|TAB]] characters;
+# And they usually broke lines longer than 80 characters. VMS_SHAR protected leading blanks, and it split long files into parts of less than 16,000 bytes.
+
+Version 4 introduced the protection of trailing blanks using the [[Text Processing Utility|TPU]] text editor editor which then became the main engine of the script. Version 5 protected control characters like TAB, [[Esc key|ESC]], [[Bell character|BEL]]. In 1988, beginning with version 6, the script was then extended by James A. Gray from [[Xerox]].&lt;ref&gt;{{cite newsgroup
+|title = VMS_SHARE V6.0
+|author = Jim Gray
+|date = 8 May 1988
+|newsgroup = comp.os.vms
+|id = 880508-073131-5929@Xerox
+|url = http://groups.google.com.au/groups?selm=880508-073131-5929@Xerox
+|accessdate = 2008-02-09}}&lt;/ref&gt; Starting with version&amp;nbsp;7, Andy Harper from [[King's College London]] continued the
+development;.&lt;ref&gt;{{cite newsgroup
+|title = VMS_SHARE version 7
+|author = Andy Harper
+|date = 6 July 1989
+|newsgroup = comp.os.vms
+|id = 8907061417.AA16991@ucbvax.Berkeley.EDU
+|url = http://groups.google.com.au/groups?selm=8907061417.AA16991@ucbvax.Berkeley.EDU
+|accessdate = 2008-02-09}}&lt;/ref&gt; The current version (as of 2008) is 8.5 (1994)&lt;ref&gt;{{cite newsgroup
+|title = Announcing VMS_SHARE 8.5
+|author = Andy Harper
+|date = 5 July 1995
+|newsgroup = vmsnet.sources.d
+|id = 1994Jul5.164105.3667@bay.cc.kcl.ac.uk
+|url = http://groups.google.com.au/groups?selm=1994Jul5.164105.3667@bay.cc.kcl.ac.uk
+|accessdate = 2008-02-09}}&lt;/ref&gt;
+
+==See also==
+*[[Archive format]]
+*[[List of Unix utilities]]
+
+==References==
+{{Reflist|2}}
+
+==External links==
+* {{man|1|shar}}
+*[http://lib.stat.cmu.edu/general/shar Information about shar files (Carnegie Mellon)]
+{{Archive formats}}
+
+[[Category:Unix archivers and compression-related utilities]]
+[[Category:Linux archivers and compression-related utilities]]
+[[Category:Archive formats]]
+
+[[es:Shar]]
+[[it:Shar (Unix)]]</rev></revisions></page></pages></query></api>

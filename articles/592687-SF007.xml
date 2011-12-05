@@ -1,0 +1,145 @@
+<?xml version="1.0"?><api><query><pages><page pageid="592687" ns="0" title="Network security"><revisions><rev xml:space="preserve">In the field of networking, the  area of '''network security'''&lt;ref&gt;{{cite journal | doi = 10.1007/978-3-540-30176-9_41 | last = Simmonds | first = A | coauthors = Sandilands, P; van Ekert, L|title = An Ontology for Network Security Attacks | journal = Lecture Notes in Computer Science | volume = 3285 | pages = 317â323 | year = 2004 }}&lt;/ref&gt; consists of the provisions and [[policies]] adopted by the [[network administrator]] to prevent and monitor [[unauthorized]] access, misuse, modification, or denial of the [[computer network]] and network-accessible resources. Network security involves the authorization of access to data in a network, which is controlled by the network administrator. Users choose or are assigned an ID and password or other authenticating information that allows them access to information and programs within their authority.  Network security covers a variety of computer networks, both public and private, that are used in everyday jobs conducting transactions and communications among businesses, government agencies and individuals. Networks can be private, such as within a company, and others which might be open to public access. Network security is involved in organizations, enterprises, and other types of institutions. It does as its title explains: It secures the network, as well as protecting and overseeing operations being done. The most common and simple way of protecting a network resource is by assigning it a unique name and a corresponding  password.
+
+==Network security concepts==
+Network security starts with [[Authentication|authenticating]] the user, commonly with a username and a password. Since this requires just one detail authenticating the user name âi.e. the password, which is something the user 'knows'â this is sometimes termed one-factor authentication. With [[two-factor authentication]], something the user 'has' is also used (e.g. a [[security token]] or 'dongle', an [[ATM card]], or a [[mobile phone]]); and with three-factor authentication, something the user 'is' is also used (e.g. a [[fingerprint]] or [[retinal scan]]).
+
+Once authenticated, a [[Firewall (networking)|firewall]] enforces access policies such as what services are allowed to be accessed by the network users.&lt;ref&gt;A Role-Based Trusted Network Provides [http://newsroom.cisco.com/dlls/2008/ts_010208b.html?sid=BAC-NewsWire Pervasive Security and Compliance] - interview with [[Jayshree Ullal]], senior VP of [[Cisco]]&lt;/ref&gt; Though effective to prevent unauthorized access, this component may fail to check potentially harmful content such as [[computer worm]]s or [[Trojan horse (computing)|Trojan]]s being transmitted over the network. [[Anti-virus software]] or an [[intrusion prevention system]] (IPS)&lt;ref&gt;Dave Dittrich, [http://staff.washington.edu/dittrich/network.html ''Network monitoring/Intrusion Detection Systems (IDS)''], University of Washington.&lt;/ref&gt; help detect and inhibit the action of such [[malware]]. An [[anomaly-based intrusion detection system]] may also monitor the network and [[Deep packet inspection|traffic]] for unexpected (i.e. suspicious) content or behavior and other anomalies to protect resources, e.g. from [[denial of service]] attacks or an employee accessing files at strange times. Individual events occurring on the network may be logged for audit purposes and for later high-level analysis.
+
+Communication between two hosts using a network may be encrypted to [[Virtual private network|maintain privacy]].
+
+[[Honeypot (computing)|Honeypots]], essentially [[decoy]] network-accessible resources, may be deployed in a network as surveillance and early-warning tools, as the honeypots are not normally accessed for legitimate purposes. Techniques used by the attackers that attempt to compromise these decoy resources are studied during and after an attack to keep an eye on new [[Exploit (computer security)|exploitation]] techniques. Such analysis may be used to further tighten security of the actual network being protected by the honeypot.&lt;ref&gt;[http://www.honeypots.net ''Honeypots, Honeynets'']&lt;/ref&gt;
+
+==Security management==
+Security management for networks is different for all kinds of situations. A home or small office may only require basic security while large businesses may require high-maintenance and advanced software and hardware to prevent malicious attacks from [[Hacker (computer security)|hacking]] and [[spamming]]. 
+
+===Homes &amp; Small Businesses===
+* A basic [[Firewall (computing)|firewall]]  or a [[unified threat management]] system.
+* For Windows users, basic [[Antivirus software]].  An anti-spyware program would also be a good idea.  There are many other types of antivirus or anti-spyware programs out there to be considered.
+* When using a wireless connection, use a robust password.  Also try to use the strongest security supported by your wireless devices, such as WPA2 with AES encryption.
+* If using Wireless:  Change the default SSID network name, also disable SSID Broadcast; as this function is unnecessary for home use. (However, many security experts consider this to be relatively useless).&lt;ref&gt;http://blogs.zdnet.com/Ou/index.php?p=43&lt;/ref&gt;
+* Enable MAC Address filtering to keep track of all home network MAC devices connecting to your router. 
+* Assign STATIC IP addresses to network devices.
+* Disable ICMP ping on router.
+* Review router or firewall logs to help identify abnormal network connections or traffic to the Internet.
+* Use passwords for all accounts.
+* For Windows users, Have multiple accounts per family member and use non-administrative accounts for day-to-day activities. 
+* Disable the guest account {{Cn|date=September 2011}}
+* Raise awareness about information security to children.&lt;ref&gt;Julian Fredin, Social software development program Wi-Tech&lt;/ref&gt;
+
+===Medium businesses===
+* A fairly strong [[Firewall (computing)|firewall]] or [[Unified Threat Management]] System
+* Strong [[Antivirus software]] and Internet Security Software.
+* For [[authentication]], use strong passwords and change it on a bi-weekly/monthly basis.
+* When using a wireless connection, use a robust password.
+* Raise awareness about [[physical security]] to employees.
+* Use an optional [[Packet analyzer|network analyzer]] or network monitor.
+* An enlightened administrator or manager.
+*Use a VPN, or Virtual Private Network, to communicate between a main office and satellite offices using the Internet as a connectivity medium. A VPN offers a solution to the expense of leasing a data line while providing a secure network for the offices to communicate. A VPN provides the business with a way to communicate between two in a way mimics a private leased line. Although the Internet is used, it is private because the link is encrypted and convenient to use.  A medium sized business needing a secure way to connect several offices will find this a good choice.&lt;ref&gt;http://www.interhack.net/pubs/network-security/network-security.html#SECTION00073000000000000000&lt;/ref&gt;
+*Clear employee guidelines should be implemented for using the Internet, including access to non-work related websites, sending and receiving information.
+*Individual accounts to log on and access company intranet and Internet with monitoring for accountability.
+*Have a back-up policy to recover data in the event of a hardware failure or a security breach that changes, damages or deletes data.
+*Assign several employees to monitor a group like [[CERT]]&lt;ref&gt;http://www.cert.org&lt;/ref&gt; which studies Internet security vulnerabilities and develops training to help improve security.
+
+===Large businesses===
+* A strong [[Firewall (computing)|firewall]] and [[Proxy server|proxy]] to keep unwanted people out.
+* A strong [[Antivirus software]] package and Internet Security Software package.
+* For [[authentication]], use strong passwords and change it on a weekly/bi-weekly basis.
+* When using a wireless connection, use a robust password.
+* Exercise [[physical security]] precautions to employees.
+* Prepare a [[Network analyzer (electrical)|network analyzer]] or network monitor and use it when needed.
+* Implement [[physical security]] management like [[closed circuit television]] for entry areas and restricted zones.
+* [[Security fencing]] to mark the company's perimeter.
+* Fire extinguishers for fire-sensitive areas like server rooms and security rooms.
+* [[Security guards]] can help to maximize security.
+
+===School===
+* An adjustable [[Firewall (computing)|firewall]] and [[Proxy server|proxy]] to allow authorized users access from the outside and inside.
+* Strong [[Antivirus software]] and Internet Security Software packages.
+* Wireless connections that lead to [[Firewall (computing)|firewalls]]. 
+* [[Children's Internet Protection Act]] compliance. (Only schools in the USA)
+* Supervision of network to guarantee updates and changes based on popular site usage.
+* Constant supervision by teachers, librarians, and administrators to guarantee protection against attacks by both [[internet]] and [[sneakernet]] sources.
+* An enforceable and easy to understand acceptable use policy which differentiates between school owned and personally owned devices
+* FERPA compliance for institutes of higher education
+
+===Large government===
+* A strong [[Firewall (computing)|firewall]] and [[Proxy server|proxy]] to keep unwanted people out.
+* Strong [[antivirus software]] and Internet Security Software suites.
+* Strong [[encryption]].
+* [[Whitelist]] authorized [[wireless connection]], block all else.
+* All [[network hardware]] is in secure zones.
+* All [[Host (network)|hosts]] should be on a [[private network]] that is invisible from the outside.
+* Host web servers in a [[Demilitarized zone (computing)|DMZ]], or a firewall from the outside and from the inside.
+* [[Security fencing]] to mark perimeter and set wireless range to this.
+* Inventory controls of government owned mobile .
+
+===Types of Attacks===
+Networks are subject to [[Attack (computer)|attacks]] from malicious sources.  [[Attack (computer)|Attacks]] can be from two categories &quot;Passive&quot; when a network intruder intercepts data traveling through the network, and &quot;Active&quot; in which an intruder initiates commands to disrupt the networks normal operation.&lt;ref&gt;Wright, Joe; Jim Harmening (2009) &quot;15&quot; Computer and Information Security Handbook Morgan Kaufmann Pubblications Elsevier Inc p. 257&lt;/ref&gt;
+
+Types of attacks include:&lt;ref&gt;http://www.cnss.gov/Assets/pdf/cnssi_4009.pdf&lt;/ref&gt;
+* Passive
+** Network
+*** [[Telephone tapping|wiretapping]]
+*** [[Port scanner]]
+*** [[Idle scan]]
+* Active
+** [[Denial-of-service attack]]
+** [[Spoofing attack|Spoofing]]
+** [[Man-in-the-middle attack|Man in the middle]]
+** [[ARP poisoning]]
+** [[Smurf attack]]
+** [[Buffer overflow]]
+** [[Heap overflow]]
+** [[Format string attack]]
+
+==See also==
+*[[Cloud computing security]]
+*[[Crimeware]]
+*[[Cyber security standards]]
+*[[Data Loss Prevention]]
+*[[Greynet]]
+*[[Information Leak Prevention]]
+*[[Metasploit Project]]
+*[[Netsentron]]
+*[[Network Security Toolkit]]
+*[[TCP Gender Changer]]
+*[[TCP sequence prediction attack]]
+*[[Timeline of hacker history]]
+*[[Wireless LAN Security]]
+
+==References==
+{{reflist}}
+
+== Further reading ==
+*Cisco. (2011). What is network security?. Retrieved from [http://www.cisco.com/cisco/web/solutions/small_business/resource_center/articles/secure_my_business/what_is_network_security/index.html cisco.com]
+*[http://www.pcmag.com/encyclopedia_term/0,2542,t=network+security&amp;i=47911,00.asp pcmag.com]
+*[http://www.cert.org/encyc_article/tocencyc.html Security of the Internet] (''The Froehlich/Kent Encyclopedia of Telecommunications vol. 15''. Marcel Dekker, New York, 1997, pp. 231-255.)
+*[http://www.interhack.net/pubs/network-security ''Introduction to Network Security''], Matt Curtin.
+* [http://www.ciscopress.com/bookstore/product.asp?isbn=1587052709 ''Security Monitoring with Cisco Security MARS''], Gary Halleen/Greg Kellogg, Cisco Press, Jul. 6, 2007.  
+* [http://www.ciscopress.com/bookstore/product.asp?isbn=1587052539 ''Self-Defending Networks: The Next Generation of Network Security''], Duane DeCapite, Cisco Press, Sep. 8, 2006.  
+* [http://www.ciscopress.com/bookstore/product.asp?isbn=1587052601 ''Security Threat Mitigation and Response: Understanding CS-MARS''], Dale Tesch/[http://www.ciscopress.com/authors/bio.asp?a=b411523c-c935-4708-a563-d24de8fcfc71 Greg Abelar], Cisco Press, Sep. 26, 2006.  
+* [http://www.ciscopress.com/bookstore/product.asp?isbn=1587052148 ''Securing Your Business with Cisco ASA and PIX Firewalls''], [http://www.ciscopress.com/authors/bio.asp?a=b411523c-c935-4708-a563-d24de8fcfc71 Greg Abelar], Cisco Press, May 27, 2005.  
+* [http://www.ciscopress.com/bookstore/product.asp?isbn=1587053101 ''Deploying Zone-Based Firewalls''], Ivan Pepelnjak, Cisco Press, Oct. 5, 2006.  
+*''Network Security: PRIVATE Communication in a PUBLIC World'', Charlie Kaufman | Radia Perlman | Mike Speciner, Prentice-Hall, 2002.  ISBN .
+*[http://www.springer.com/computer/communications/book/978-1-4419-0165-1 ''Network Infrastructure Security''], Angus Wong and Alan Yeung, Springer, 2009.
+
+==External links==
+*[http://www.network.cyberwarzone.com Cyber Security Network ]
+*[http://www.deepnines.com/secure-web-gateway/definition-of-network-security Definition of Network Security]
+*[http://www.cisco.com/web/about/ciscoitatwork/case_studies/security.html Cisco IT Case Studies] about Security and VPN
+*[http://www.pcmag.com/encyclopedia_term/0,2542,t=network+security&amp;i=47911,00.asp Definition of Network Security]
+* Debate: The data or the source - which is the real threat to network security? - [http://www.netevents.tv/docuplayer.asp?docid=102 Video]
+*OpenLearn - [http://openlearn.open.ac.uk/course/view.php?id=2587 Network Security]
+
+[[Category:Computer network security| ]]
+
+[[de:Netzwerksicherheit]]
+[[fa:Ø§ÙÙÛØª Ø´Ø¨Ú©Ù]]
+[[ko:ë¤í¸ìí¬ ë³´ì]]
+[[mk:Network security]]
+[[nl:Netwerkbeveiliging]]
+[[ja:ãããã¯ã¼ã¯ã»ã»ã­ã¥ãªãã£]]
+[[pt:SeguranÃ§a de rede]]
+[[ro:Securitatea reÈelelor de calculatoare]]
+[[uk:ÐÐµÐ·Ð¿ÐµÐºÐ° Ð¼ÐµÑÐµÐ¶Ñ]]
+[[zh:ç½ç»å®å¨]]</rev></revisions></page></pages></query></api>

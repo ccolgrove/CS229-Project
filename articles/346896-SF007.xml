@@ -1,0 +1,120 @@
+<?xml version="1.0"?><api><query><pages><page pageid="346896" ns="0" title="Berkeley Open Infrastructure for Network Computing"><revisions><rev xml:space="preserve">{{Infobox software
+| name                   = BOINC
+| logo                   = [[Image:BOINC logo July 2007.svg|164px|BOINC logo]]
+| screenshot             =
+| caption                =
+| developer              = [[University of California, Berkeley]]
+| latest_release_version = [http://boinc.berkeley.edu/download_all.php 6.12.35]
+| latest_release_date    = {{Start date and age|2011|08|11}}
+| latest_preview_version = [http://boinc.berkeley.edu/download_all.php 6.13.12]
+| latest_preview_date    = {{Start date and age|2011|11|14}}
+| operating_system       = [[Linux]], [[Mac OS X]], [[Microsoft Windows|Windows]]
+| genre                  = [[Grid computing]] and [[Volunteer computing]]
+| license                = [[GNU Lesser General Public License|LGPL]] &lt;ref&gt;http://boinc.berkeley.edu/legal.html&lt;/ref&gt;
+| website                = [http://boinc.berkeley.edu/ boinc.berkeley.edu]
+}}
+The '''Berkeley Open Infrastructure for Network Computing''' ('''BOINC''') is an [[open source]] [[middleware]] system for [[volunteer computing|volunteer]] and [[grid computing]]. It was originally developed to support the [[SETI@home]] project before it became useful as a platform for other [[Distributed computing|distributed applications]] in areas as diverse as mathematics, medicine, molecular biology, climatology, and astrophysics. The intent of BOINC is to make it possible for researchers to tap into the enormous [[processing power]] of [[personal computer]]s around the world.
+
+BOINC has been developed by a team based at the [[Space Sciences Laboratory]] (SSL) at the [[University of California, Berkeley]] led by [[David P. Anderson|David Anderson]], who also leads SETI@home.  As a high performance distributed computing platform, BOINC has about 451,260 active computers (hosts) worldwide processing on average 5.612 [[FLOPS|petaFLOPS]] as of June 2011&lt;ref name=&quot;BoincStats&quot;&gt;{{cite web |url=http://www.boincstats.com/stats/project_graph.php?pr=bo |title=BOINCstats â BOINC combined credit overview |accessdate=2011-06-21 |work= |publisher= |date= }}&lt;/ref&gt;. BOINC is funded by the [[National Science Foundation]] (NSF) through awards SCI/0221529,&lt;ref&gt;[http://www.nsf.gov/awardsearch/showAward.do?AwardNumber=0221529 Research and Infrastructure Development for Public-Resource Scientific Computing], The National Science Foundation&lt;/ref&gt; SCI/0438443&lt;ref&gt;[http://www.nsf.gov/awardsearch/showAward.do?AwardNumber=0438443 SCI: NMI Development for Public-Resource Computing and Storage], The National Science Foundation&lt;/ref&gt; and SCI/0721124.&lt;ref&gt;[http://www.nsf.gov/awardsearch/showAward.do?AwardNumber=0721124 SDCI NMI Improvement: Middleware for Volunteer Computing], The National Science Foundation&lt;/ref&gt;
+
+The framework is supported by various operating systems, including [[Microsoft Windows]] and various [[Unix-like]] systems including [[Mac OS X]], [[Linux]] and [[FreeBSD]]. BOINC is [[free software]] which is released under the terms of the [[GNU Lesser General Public License]] (LGPL).
+
+==History==
+BOINC was originally developed to manage the [[SETI@home]] project.
+
+The original SETI client was a non-BOINC software exclusively for SETI@home.  As one of the first volunteer grid computing projects, it was not designed with a high level of security.  Some participants in the project attempted to cheat the project to gain &quot;credits&quot;, while some others submitted entirely falsified work.  BOINC was designed, in part, to combat these security breaches.&lt;ref&gt;{{cite web | last=Anderson | first=David P. | title=Public Computing: Reconnecting People to Science | url=http://boinc.berkeley.edu/madrid.html | accessdate=2007-06-13 }}&lt;/ref&gt;
+
+The BOINC project started in February 2002 and the first version was released on 10 April 2002.  The first BOINC-based project was [[Predictor@home]] launched on 9 June 2004.
+
+==Design and structure==
+{{Main|BOINC clientâserver technology}}
+[[Image:BOINCManager.png|thumb|BOINC Manager [[Icon (computing)|icon]]]]
+BOINC is designed to be a free structure for anyone wishing to start a volunteer computing project. Most BOINC projects are [[nonprofit]] and rely heavily, if not completely, on [[volunteer]]s.{{Citation needed|date=March 2009}}
+
+In essence BOINC is [[software]] that can use the unused [[Central processing unit|CPU]] and [[Graphics processing unit|GPU]] cycles on a [[computer]] to do scientific computingâwhat one individual does not use of his/her computer, BOINC uses. In late 2008, BOINC's official website&lt;ref&gt;[http://boinc.berkeley.edu/cuda.php Use your NVIDIA GPU for scientific computing] (dead link), BOINC official site (December 18, 2008)&lt;/ref&gt; announced that [[NVIDIA]] (a leading GPU manufacturer) had developed a system called [[CUDA]] that uses GPUs for scientific computing. With NVIDIA's assistance, some BOINC-based projects (e.g., [[SETI@home]], [[MilkyWay@home]]) now have applications that run on NVIDIA GPUs using CUDA.   Beginning in October 2009, BOINC added support for the [[ATI Technologies|ATI]]/[[Advanced Micro Devices|AMD]] family of GPUs also.  These applications run from 2x to 10x faster than the former CPU-only versions.
+
+BOINC consists of a [[Server (computing)|server]] system and client software that communicate with each other to distribute, process, and return workunits.
+
+===User interfaces===
+BOINC can be controlled remotely by [[remote procedure call]]s (RPC), from the [[command line]], and from the [[BOINC Account Manager]].
+
+BOINC Manager currently has two &quot;views&quot;: the ''Advanced View'' and the ''Simplified [[GUI]]''. The ''Grid View'' was removed in the 6.6.x clients as it was redundant.
+
+The appearance ([[Skin (computing)|skin]]) of the Simplified GUI is user-customizable, in that users can create their own designs.
+
+===Account managers===
+A BOINC Account Manager is an application that manages multiple BOINC project accounts across multiple computers (CPUs) and operating systems. Account managers were designed for people who are new to BOINC or have several computers participating in several projects.
+The account manager concept was conceived and developed jointly by [[GridRepublic]] and BOINC.  Current account managers include:
+* [http://bam.boincstats.com/ BAM! (BOINC Account Manager)] (The first publicly available Account Manager, released for public use on May 30th 2006)
+* [http://www.gridrepublic.org/ GridRepublic] (Follows the idea of keep it simple and keep it neat when it comes to account management)
+* [http://www.charityengine.com/ Charity Engine] (Non-profit account manager, using lottery to motivate people to join the grid)
+* [https://github.com/Kodomo/Dazzler Dazzler] (Opensource Account Manager, to ease management institutional resources)
+
+===Credit system===
+&lt;!-- Image with unknown copyright status removed: [[Image:Powered by boinc.jpg|frame|powered by BOINC symbol]] --&gt;
+
+The BOINC Credit System is designed to avoid cheating by validating results before granting credit.
+* A credit management system helps to ensure that users are returning results which are both scientifically and statistically accurate.
+* Online distributed computing is almost entirely a volunteer endeavor. For this reason projects are dependent on a complicated and variable mix of new users, long-term users, and retiring users.
+
+== See also ==
+{{Portal|Free software}}
+* [[List of distributed computing projects]]
+* [[United Devices Cancer Research Project]]
+* [[Citizen Cyberscience Centre]]
+* [[Bossa (computing)|Bossa]]
+
+== Notes ==
+
+{{Reflist}}
+
+==References==
+
+{{Refbegin}}
+* {{cite news  | first = Ashlee | last = Vance | title = Sun and UC Berkeley are about to BOINC | url = http://www.theregister.co.uk/content/61/34570.html | publisher = The Register | date=  2003-12-17 | accessdate = 2006-11-13 }}
+{{Refend}}
+
+==External links==
+{{Commons}}
+* {{Official website|http://boinc.berkeley.edu/}}
+* [http://www.romwnet.org/dasblogce/ BOINC developer Rom Walton's Blog]
+* [http://www.efmer.eu/boinc/ TThrottle limit the CPU/GPU temperature and use of BOINC]
+* [http://www.efmer.eu/boinc/boinc_tasks/ BoincTasks the way to view BOINC]
+
+{{BOINC topics}}
+
+{{DEFAULTSORT:Berkeley Open Infrastructure For Network Computing}}
+[[Category:Berkeley Open Infrastructure for Network Computing projects| ]]
+[[Category:Free cross-platform software]]
+[[Category:Free science software]]
+[[Category:Software that uses wxWidgets]]
+
+[[ar:Ø¨ÙÙØ© Ø¨Ø§Ø±ÙÙÙ Ø§ÙØªØ­ØªÙØ© Ø§ÙÙÙØªÙØ­Ø© ÙÙØ­ÙØ³Ø¨Ø© Ø´Ø¨ÙÙØ©]]
+[[bn:à¦¬à¦¾à¦°à§à¦à¦²à¦¿ à¦à¦ªà§à¦¨ à¦à¦¨à¦«à§à¦°à¦¾à¦¸à§à¦à§à¦°à¦¾à¦à¦à¦¾à¦° à¦«à¦° à¦¨à§à¦à¦à¦¯à¦¼à¦¾à¦°à§à¦ à¦à¦®à§à¦ªà¦¿à¦à¦à¦¿à¦]]
+[[be-x-old:BOINC]]
+[[cs:Berkeley Open Infrastructure for Network Computing]]
+[[da:Berkeley Open Infrastructure for Network Computing]]
+[[de:Berkeley Open Infrastructure for Network Computing]]
+[[es:Berkeley Open Infrastructure for Network Computing]]
+[[eu:Berkeley Open Infrastructure for Network Computing]]
+[[fr:Berkeley Open Infrastructure for Network Computing]]
+[[ko:BOINC]]
+[[hr:BOINC]]
+[[id:Berkeley Open Infrastructure for Network Computing]]
+[[it:Berkeley Open Infrastructure for Network Computing]]
+[[lt:BOINC]]
+[[hu:Berkeley Open Infrastructure for Network Computing]]
+[[nl:Berkeley Open Infrastructure for Network Computing]]
+[[ja:Berkeley Open Infrastructure for Network Computing]]
+[[pl:Berkeley Open Infrastructure for Network Computing]]
+[[pt:BOINC]]
+[[ro:Berkeley Open Infrastructure for Network Computing]]
+[[ru:BOINC]]
+[[simple:BOINC]]
+[[sk:Berkeley Open Infrastructure for Network Computing]]
+[[sr:BOINC]]
+[[fi:BOINC]]
+[[sv:Berkeley Open Infrastructure for Network Computing]]
+[[th:Berkeley Open Infrastructure for Network Computing]]
+[[vec:Boinc]]
+[[zh:BOINC]]</rev></revisions></page></pages></query></api>

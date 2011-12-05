@@ -1,0 +1,65 @@
+<?xml version="1.0"?><api><query><pages><page pageid="292223" ns="0" title="WinG"><revisions><rev xml:space="preserve">{{otheruses2|Wing}}
+In computing, '''WinG''' (pronounced ''Win Gee'') is an [[application programming interface]] that provides faster graphics performance on [[Windows 3.x]] [[operating environment]]s, and was positioned as a way to help game developers more easily port their DOS games to [[Microsoft Windows]].&lt;ref name=&quot;gamasutra-hecker&quot;&gt;{{cite web
+|url=http://www.gamasutra.com/view/feature/3199/a_whirlwind_tour_of_wing.php
+|title=A Whirlwind Tour of WinG
+|last=Hecker
+|first=Chris
+|authorlink=Chris Hecker
+|publisher=[[Gamasutra]]
+|date=1 June, 1997
+|accessdate=2009-01-19
+}}&lt;/ref&gt;  The WinG interface was also supported in [[Windows 95]], [[Windows 98]] and [[Windows NT 4.0]], but [[Windows 98]] Second Edition, [[Windows 2000]] and later versions of the operating system did not support it.
+
+==Background==
+The original Windows [[Graphics Device Interface]] (GDI) was designed with static images in mind, making its animation capabilities very limited. The GDI provides an interface to the graphics hardware that is device independent, that is, a program written using the GDI will work on all graphics and printer hardware, provided suitable Windows GDI drivers for the hardware are installed on the system. This means that graphics cannot be written to the physical [[framebuffer]] on the graphics hardware directly and must be written to a logical graphics &quot;device context&quot; (DC) provided by the GDI, which is then translated by the GDI and the device drivers to suit the target hardware device and is written to its physical frame buffer in an appropriate manner.&lt;ref name=&quot;gamasutra-hecker&quot; /&gt;
+
+The major limitation of the GDI DCs was that they were write-only. Data, once written, could not be retrieved. This was because the contents of the DC was device dependent, and data read from it would make no sense to the programmer. In order to do [[animation]] using the GDI DC, all of the animation frames needed to be manipulated in system memory and then each frame needed to be copied into a GDI DC for display on the graphics device. This was a very slow process.
+
+[[Alex St. John]], one of the creators of [[DirectX]], said in a 2000 interview that,
+{{cquote|WinG was a technology being built by [[Chris Hecker]] in the research group, and at the time it was one of the small Microsoft [[Skunkworks project]]s, very low profile and off-the-wall. Basically it was fixing broken Windows drivers to make them run faster and more acceptably. Using it, we were actually able to create a video API that could run DOOM almost as fast under Windows as it did in DOS.&lt;ref&gt;{{cite web
+|url=http://www.firingsquad.com/features/alexstjohn/
+|title=Alex St. John Interview
+|last=Colayco
+|first=Bob
+|date=7 March, 2000
+|publisher=firingsquad.com
+|accessdate=2009-01-19
+}}&lt;/ref&gt;}}
+
+WinG first shipped on September 21, 1994.&lt;ref&gt;{{cite web
+|url=http://craig.theeislers.com/2006/02/directx_then_and_now_part_1.php
+|title=DirectX Then and Now (Part 1)
+|last=Eisler
+|first=Craig
+|date=February 20, 2006
+|accessdate=2008-01-19
+|work=Craig's Musings
+}}&lt;/ref&gt; The success of WinG in enabling high-performance game development on Windows led directly to the inception of [[DirectX]], which became the standard game development platform for Microsoft Windows, and later for the [[Xbox]] and [[Xbox 360]] video game consoles.
+
+==Implementation==
+WinG introduced a new type of DC called a WinGDC,&lt;ref name=&quot;microsoft-125928&quot;&gt;{{cite web
+|url=http://support.microsoft.com/kb/125928
+|title=HOWTO: How to Mix GDI and WinG (MSKB125928)
+|work=Knowledge Base
+|publisher=[[Microsoft]]
+|accessdate=2009-01-19
+}}&lt;/ref&gt; which allowed programmers to both read and write to it directly using [[device-independent bitmap]]s (DIBs) with the wingdib.drv driver. Effectively, it gave programmers the ability to do with Windows what they'd been doing without hardware access limitations in [[DOS]] for years. Programmers could write DIBs to the WinGDC, yet would still have access to the individual bits of the image data. This meant that fast graphics [[algorithms]] could be written to allow fast scrolling, overdraw, dirty rectangles, [[double buffering]], and other animation techniques. WinG also provided much better performance when [[blitting]] graphics data to physical graphics device memory. Since WinG used the DIB format, it was possible to mix original GDI API calls and WinG calls.&lt;ref name=&quot;microsoft-125928&quot;/&gt;
+
+WinG would also perform a graphics hardware/driver profiling test on the first execution of the program in order to determine the best way to manipulate the graphics hardware. This test showed a window full of red curved lines, sections of which would wobble as performance was tested. Once WinG had determined the fastest calls that did not cause graphics corruption, a profile would be saved so that the test would not need to be performed again.
+
+==Support==
+WinG out-of-the-box support (i.e. as a separate API to Win32) was dropped in [[Windows 98]] Second Edition (which integrated [[DirectX]] 6), as it did absolutely nothing but pass through to the Win32 APIs that it was wrapping.  WinG [[Dynamic-link library|DLL]]s were sometimes distributed with an application, at which point it merely became a matter of copying the files wing.dll, wing32.dll, wingde.dll, wingdib.drv and wngpal.wnd to the ''system32'' directory to regain system-wide support.
+
+==See also==
+*[[Windows API]]
+*[[DirectX]], WinG's successor
+
+==References==
+{{reflist}}
+
+[[Category:Microsoft application programming interfaces]]
+[[Category:Discontinued Microsoft software]]
+[[Category:Graphics libraries]]
+
+[[de:WinG]]
+[[ja:WinG]]</rev></revisions></page></pages></query></api>

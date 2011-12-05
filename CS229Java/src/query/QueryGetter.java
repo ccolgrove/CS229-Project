@@ -51,11 +51,11 @@ public class QueryGetter {
     	//downloadRevisionDiffsForPage("1092923", true); // Google
     	//downloadRevisionDiffsForUser("SF007", true);
     	//downloadRevisionDiffsForUser("The_Egyptian_Liberal", true);
-    	downloadNMostRecentlyEditedArticles("Hammersoft", 10);
-    	downloadNMostRecentlyEditedArticles("SF007", 10);
-    	downloadNMostRecentlyEditedArticles("JerryOrr", 10);
-    	downloadNMostRecentlyEditedArticles("Tangledorange", 10);
-    	downloadNMostRecentlyEditedArticles("The_Egyptian_Liberal", 10);
+    	downloadNMostRecentlyEditedArticles("Tangledorange", -1);
+    	downloadNMostRecentlyEditedArticles("Hammersoft", -1);
+    	downloadNMostRecentlyEditedArticles("SF007", -1);
+    	downloadNMostRecentlyEditedArticles("JerryOrr", -1);
+    	downloadNMostRecentlyEditedArticles("The_Egyptian_Liberal", -1);
     }
 	
 	
@@ -193,14 +193,14 @@ public class QueryGetter {
     	HashSet<String> topPageIds = new HashSet<String>();
     	
     	for (Integer i : files.keySet()) {
-    		if (topPageIds.size() >= n) break;
+    		if (n >= 0 && topPageIds.size() >= n) break;
     		File f = files.get(i);
         	DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
     		DocumentBuilder builder = factory.newDocumentBuilder();
     		Document xmlDocument = builder.parse(f);
     		NodeList items = xmlDocument.getElementsByTagName("item");
     		for (int j = 0; j < items.getLength(); j++) {
-    			if (topPageIds.size() >= n) break;
+    			if (n >= 0 && topPageIds.size() >= n) break;
     			NamedNodeMap attributes = items.item(j).getAttributes();
     			String pageId = attributes.getNamedItem("pageid").getNodeValue();
     			topPageIds.add(pageId);

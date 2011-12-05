@@ -1,0 +1,53 @@
+<?xml version="1.0"?><api><query><pages><page pageid="1177284" ns="0" title="W3C Markup Validation Service"><revisions><rev xml:space="preserve">{{Selfref|For validating markup of Wikipedia pages, see [[Help:Markup validation]].}}
+[[File:Valid-xhtml10-v (W3C Markup Validation Service).svg|right|88px]]
+[[File:Valid-css-v (W3C Markup Validation Service).svg|right|88px]]
+The '''Markup Validation Service''' is a [[validator]] by the [[World Wide Web Consortium]] (W3C) that allows [[Internet]] users to check [[HTML]] and [[XHTML]] documents for [[Well-formed element|well-formed]] markup. Markup validation is an important step towards ensuring the technical quality of web pages; however, is not a complete measure of [[Web standards]] conformance.&lt;ref name=&quot;w3.org_about&quot;&gt;{{cite web |url=http://validator.w3.org/about.html |title=About the W3C Markup Validation Service |accessdate=2011-05-20 |work=W3C Markup Validation Service |publisher=World Wide Web Consortium }}&lt;/ref&gt;
+
+==History==
+The Markup Validation Service began as ''The Kinder, Gentler HTML Validator'', a project by Gerald Oskoboiny.&lt;ref name=&quot;w3.org_about&quot;&gt;{{cite web |url=http://validator.w3.org/about.html |title=About the W3C Markup Validation Service |accessdate=2008-06-28 |work=W3C Markup Validation Service |publisher=World Wide Web Consortium }}&lt;/ref&gt; It was developed to be a more intuitive version of the first online HTML validator written by Dan Connolly and Mark Gaither, which was announced on July 13, 1994.&lt;ref name=&quot;www-html_validator&quot;&gt;{{cite mailing list|url=http://lists.w3.org/Archives/Public/www-html/1994Jul/0015|title=ANNOUNCE: HaL Interactive HTML Validation Service|date=1994-07-13|accessdate=2008-06-28|mailinglist=www-html|last= Connolly|first=Dan}}&lt;/ref&gt;
+
+In September 1997, Oskoboiny began working for the W3C, and on December 18, 1997, the W3C announced its ''W3C HTML Validator'' based upon his work.&lt;ref name=&quot;oskoboiny_kgv&quot;&gt;{{cite web |url=http://impressive.net/people/gerald/1996/ugweb/validate/changes.html |title=History of the Kinder, Gentler HTML Validator |accessdate=2008-06-28 |first=Gerald |last=Oskoboiny |date=2003-03-22}}&lt;/ref&gt;
+
+==Method of operation==
+HTML validators operate by comparing the mark-up on a web page to the W3C standards. The standards vary depending upon the declared version and so the validator will start by reading the [[DOCTYPE]] declaration to see which set of standards to apply.&lt;ref name=&quot;Castro&quot;&gt;Castro, Elisabeth: ''HTML, XHTML &amp; CSS, Sixth Edition'', page 345-346. Visual Quickstart Guides, Peachpit Press, 2007. ISBN 0-321-43084-0&lt;/ref&gt;
+
+Once the validator has read the page and determined the applicable standards it looks for such things as missing opening or closing tags, missing quotation marks and other hand-coding errors.&lt;ref name=&quot;Castro&quot;/&gt;
+
+The validator then provides a report indicating that the coding is correct or not. Errors are noted in a list. 
+
+Sometimes, one error, such as neglecting to close a tag, can cause a cascade of errors through the page, producing dozens or even hundreds of noted errors. However when the page author addresses the first error listed it will also eliminate the &quot;cascade errors&quot;.&lt;ref name=&quot;Castro&quot;/&gt;
+
+==Browser accommodation==
+Many major [[Web browser|browsers]] are often tolerant of certain types of error, and may display a document successfully even if it is not syntactically correct. Certain other [[XML]] documents can also be validated if they refer to an internal or external [[Document Type Definition|DTD]].
+
+W3C also offers validation tools for web technologies other than HTML/XHTML, such as [[MathML]] or [[Cascading Style Sheets|CSS]].
+
+==Validator criticism==
+All mark-up validators suffer from an inability to see the &quot;big picture&quot; on a web page.&lt;ref name=&quot;Castro&quot;/&gt; However they excel at picking up missed closing tags and other technicalities. This does not mean that the page will display as the author intended in all browsers.
+
+DTD based validators are also limited in their ability to check attribute values according to many specification documents. For example, using an HTML 4.01 DOCTYPE, bgcolor=&quot;fffff&quot; is accepted as valid for the &quot;body&quot; element even though the value &quot;fffff&quot; is missing a preceding '#' character and contains only 5 (instead of 6) hexadecimal digits. Also, for the &quot;img&quot; element, width=&quot;really wide&quot; is also accepted as valid. DTD based validators are technically not able to test for these types of attribute value problems.
+
+Furthermore, even if validated, all web pages should be tested in as many different browsers as possible to ensure that the limitations of the validator are compensated for and that the page works correctly.&lt;ref name=&quot;Castro&quot;/&gt;
+
+==CSS validation==
+While the W3C and other HTML and XHTML validators will assess pages coded in those formats, a separate validator is needed to confirm that there are no errors in the associated [[Cascading Style Sheet]]. CSS validators work in a similar manner to HTML and XHTML validators in that they apply current CSS standards to referenced CSS documents.&lt;ref name=&quot;Castro&quot;/&gt;
+
+==See also==
+* [[CSE HTML Validator]], an offline [[HTML]] and [[CSS]] validation program for [[Microsoft Windows]]
+* [[HTML Tidy]], an offline markup validation program developed by [[Dave Raggett]] of [[W3C]]
+
+==References==
+{{reflist}}
+
+==External links==
+*[http://validator.w3.org/ The W3C Markup Validation Service]
+*[http://jigsaw.w3.org/css-validator/ The W3C CSS validation Service]
+
+[[Category:Web design]]
+[[Category:World Wide Web Consortium]]
+
+[[da:Markup Validation Service]]
+[[ja:W3C Markup Validation Service]]
+[[pl:W3C Markup Validation Service]]
+[[sv:W3C Markup Validation Service]]
+[[zh:W3Cé©è¨¼æå]]</rev></revisions></page></pages></query></api>

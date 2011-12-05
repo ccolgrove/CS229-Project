@@ -1,0 +1,59 @@
+<?xml version="1.0"?><api><query><pages><page pageid="9557059" ns="0" title="Red Hat cluster suite"><revisions><rev xml:space="preserve">{{confusing|date=August 2011}}
+{{expert-subject|date=August 2011}}
+{{lead too short|date=August 2011}}
+{{wikify|date=August 2011}}
+The '''Red Hat cluster suite''' includes software to create a [[High-availability cluster|high availability]] and [[Load balancing (computing)|load balancing]] cluster, it currently does not contain functionality for distributed computing. The cluster suite itself contains two products. Both can be used on the same system although this use case is unlikely.  Both products have been initiated in the community and repackaged by Red Hat Enterprises. Computational clustering is not part of cluster suite, but instead provided by Red Hat MRG.
+
+===High-availability cluster===
+A '''Red Hat cluster suite''', when configured for high availability, attempts to ensure service availability by monitoring other nodes of the cluster.  All nodes of the cluster must agree on their configuration and shared services state before the cluster is considered [[Quorum_(Distributed_Systems)|Quorate]] and services are able to be started.
+
+The primary form of communicating node status is via a network device (commonly [[Ethernet]]), although in the case of possible network failure, quorum can be decided through secondary methods such as [[Storage area network|shared storage]] or [[multicast]].
+
+Software services, [[filesystem]]s and network status can be monitored and controlled by the cluster suite, services and resources can be failed over to other network nodes in case of failure.
+
+The cluster suite forcibly terminates a cluster node's access to services or resources to ensure the node and data is in a known state.  The node is terminated by removing [[STONITH|power]] or access to the shared storage.
+
+Service locking and control is guaranteed through fencing and [[STONITH]]; more recent versions of Red Hat use a [[Distributed lock manager| distributed lock manager (DLM)]], to allow fine grained locking and no single point of failure.  Earlier versions of the cluster suite relied on GULM (grand unified lock manager) which could be clustered, but still presented a point of failure if the nodes acting as GULM servers were to fail.  GULM was last available in Red Hat Cluster Suite 4.
+
+====Technical details====
+
+* Support for up to 128 nodes ( 16 on Red Hat Enterprise Linux 3 , 4 and 5)
+* NFS (Unix) /CIFS (Windows)/GFS (Multiple Operating systems) File system failover support
+* Service failover support
+* Fully shared storage subsystem
+* Comprehensive data integrity
+* SCSI and fibre channel support
+
+===Load balancing cluster===
+
+Red Hat adapted the Piranha load balancing software to allow for transparent load balancing and failover between servers.  The application being balanced does not require special configuration to be balanced, instead a Red Hat Enterprise Linux server with the load balancer configured, intercepts and routes traffic based on metrics/rules set on the load balancer.
+
+==Support and product life-cycle==
+
+Red Hat cluster suite support is tied to a matching version of Red Hat Enterprise Linux and follows the same maintenance policy.  The product has no activation, time limit or [[remote kill switch]], it will remain working after the support life cycle has ended. It is partially supported running under [[VMware]] Virtual Machine &lt;ref&gt;{{cite web |url=http://kbase.redhat.com/faq/docs/DOC-17345 |title=Can I run Red Hat Enterprise Linux 5 AP Cluster Suite on VMWare? |accessdate=2010-02-02 |date=July 17, 2009 }}&lt;/ref&gt;.
+
+==History==
+
+The cluster suite is available in Red Hat Enterprise Linux 2.1, 3, 4 and 5. Supported [[Global File System]] as a filesystem in 3 and above. The load balancing software was a fork of the open source Piranha load balancing software.
+
+==See also==
+{{Portal|Free software}}
+
+* [[Global File System]]
+* [[Logical Volume Manager (Linux)]]
+
+==References==
+{{Reflist}}
+
+==External links==
+*[http://www.redhat.com/docs/manuals/csgfs/browse/rh-cs-en/s1-config-fence-devices.html Configuring and Managing a Cluster]
+*[http://www.redhat.com/archives/linux-cluster/2006-June/msg00204.html  best how to not presuming/requiring gui]
+*[http://www.redhat.com/mrg/ Red Hat Enterprise MRG]
+
+{{Red Hat}}
+
+[[Category:High-availability cluster computing]]
+[[Category:Cluster computing]]
+[[Category:Red Hat]]
+
+[[pt:Red Hat Cluster Suite]]</rev></revisions></page></pages></query></api>

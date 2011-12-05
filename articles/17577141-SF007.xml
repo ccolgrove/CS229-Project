@@ -1,0 +1,103 @@
+<?xml version="1.0"?><api><query><pages><page pageid="17577141" ns="0" title="Ntfsprogs"><revisions><rev xml:space="preserve">{{Expert-subject|Linux|date=November 2008}}
+{{Expert-subject|Software|date=November 2008}}
+
+{{lowercase}}
+{{Infobox Software
+| name                   = ntfsprogs
+| logo                   =
+| screenshot             =
+| caption                =
+| developer              =
+| latest release version = 2.0.0
+| latest release date    = {{release date|2007|09|29}}
+| latest preview version =
+| latest preview date    =
+| operating system       = [[Unix-like]]
+| platform               =
+| programming language   = [[C (programming language)|C]]
+| genre                  = [[File system]] utilities
+| license                = [[GNU General Public License|GNU GPL]]
+| website                = {{Wayback |url=http://www.linux-ntfs.org/doku.php?id=ntfsprogs |title=www.linux-ntfs.org/doku.php?id=ntfsprogs |date=20080522140207}}
+}}
+
+'''Ntfsprogs''' is a collection of [[Free software|free]] [[Unix]] utilities for managing the [[NTFS]] [[filesystem]] used by [[Windows XP]], [[Windows Server 2003]], [[Windows 2000]], [[Windows NT 4.0]], [[Windows Vista]], [[Windows Server 2008]] and [[Windows 7]] on a [[Partition (computing)|harddisk partition]]. 'ntfsprogs' was the first stable method of writing to NTFS partitions in Linux.&lt;ref&gt;{{Citation
+ | last = Shilliday
+ | first = Barry
+ | publication-date = 2007-04-17
+ | title = Running other operating systems alongside Linux
+ | periodical = [[Personal Computer World]]
+ | url = http://www.pcw.co.uk/personal-computer-world/features/2187957/hands-running-operating-systems
+ | accessdate = 2008-05-29
+}}&lt;/ref&gt;
+
+All NTFS versions are supported, used by 32-bit and 64-bit Windows. ntfsprogs remains a popular way of interacting with NTFS partitions and is included by most [[Linux]] distributions&lt;ref&gt;{{Citation
+ | last = Mathes
+ | first = Steven
+ | publication-date = 2007-02-01
+ | title = The Interoperability Power of Linux-NTFS Tools
+ | periodical = [[Linux Journal]]
+ | url = http://www.linuxjournal.com/article/9327
+ | accessdate = 2008-05-29
+}}&lt;/ref&gt; and on [[Live CD]]s. There are also versions that have been compiled for Windows.
+
+On April 12, 2011 it was announced that Ntfsprogs project was merged with [[NTFS-3G]].&lt;ref&gt;[http://www.tuxera.com/open-source/release-ntfs-3g-ntfsprogs-2011-4-12/]&lt;/ref&gt;
+
+==Included programs==
+* &lt;tt&gt;[[ntfsresize]]&lt;/tt&gt;, used for non-destructively resizing a NTFS Partition
+* &lt;tt&gt;[[ntfsclone]]&lt;/tt&gt;, used for making uncompressed, but space-efficient [[disk cloning|clones]] of NTFS Partitions.  It does not support image verification{{Citation needed|date=February 2011}}.
+* &lt;tt&gt;mkntfs&lt;/tt&gt;, used for creating NTFS partitions
+* &lt;tt&gt;ntfsmount&lt;/tt&gt;, for [[mount (computing)|mounting]] using [[Filesystem in Userspace|FUSE]]
+* &lt;tt&gt;ntfsfix&lt;/tt&gt;, schedules a Windows check of a file system on the next boot
+* &lt;tt&gt;ntfsundelete&lt;/tt&gt;, undeletes a file
+* &lt;tt&gt;ntfsdecrypt&lt;/tt&gt;, decrypts [[Encrypting File System|EFS]]
+* &lt;tt&gt;ntfsck&lt;/tt&gt;, performs a consistency check on the specified volume.  (Note that development appears to be suspended.&lt;ref&gt;{{Citation
+ | last= Altaparmakov
+ | first = Anton
+ | publication-date = 2009-03-12
+ | title = Ntfsprogs - ntfsck
+ | periodical = none
+ | url = http://www.nabble.com/Ntfsprogs---ntfsck-td22472614.html
+ | accessdate = 2009-05-16
+}}&lt;/ref&gt;)
+
+Other programs are included, but are very basic in functionality, and/or intended for developers.
+
+==References==
+{{reflist}}
+* {{Citation
+ | last = Shilliday
+ | first = Barry
+ | publication-date = 2006-12-06
+ | title = It's all write now: NTFS filesystem under Linux
+ | periodical = [[Personal Computer World]]
+ | url = http://www.pcw.co.uk/personal-computer-world/features/2170805/hands-write
+ | accessdate = 2008-05-29
+}}
+* {{Citation
+ | last = Smith
+ | first = Roderick
+ | publication-date = 2008-03-30
+ | title = Communicating With the Other Half: NTFS Support in Linux
+ | periodical = [[Linux Magazine]]
+ | url = http://linux-mag.com/id/5523
+ | accessdate = 2008-05-29
+}}
+
+==See also==
+{{Portal|Free software}}
+* [[NTFS-3G]]
+* [[e2fsprogs]]
+* [[reiserfsprogs]]
+
+==External links==
+* {{Wayback |url=http://www.linux-ntfs.org/doku.php?id=ntfsprogs |title=ntfsprogs homepage |date=20080522140207}}
+
+[[Category:Free storage software]]
+[[Category:Free software programmed in C]]
+[[Category:Disk file systems]]
+[[Category:Unix network-related software]]
+
+{{Linux-stub}}
+{{storage-software-stub}}
+
+[[de:Ntfsprogs]]</rev></revisions></page></pages></query></api>

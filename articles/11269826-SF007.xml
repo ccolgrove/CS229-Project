@@ -1,0 +1,63 @@
+<?xml version="1.0"?><api><query><pages><page pageid="11269826" ns="0" title="Adaptive Internet Protocol"><revisions><rev xml:space="preserve">{{refimprove|date=March 2011}}
+'''Adaptive Internet Protocol''' ('''AIP''') is a multi-channel protocol that allows an application running on any of multiple platforms to be displayed on any of a wide range of client systems. It supports rich remote display and input services with a number of display options to deliver the presentation of the remote applications onto the local display either as a standalone window, or within a contained remote environment delivered full-screen or in a standalone window. The protocol also supports audio, printing, and other device mapping services.&lt;ref&gt;{{cite web
+  |url = http://www.filibeto.org/sun/sgd-users/lib/AIP.pdf
+  |title = Adaptive Internet Protocol Technical White Paper
+  |accessdate = 2011-03-20
+  |date = February 2004
+  |publisher = [[Tarantella, Inc.]]
+}}&lt;/ref&gt;
+
+==Description== 
+
+AIP provides a connection between the client system and remote applications via the [[Sun Microsystems|Sun]] [[Sun Secure Global Desktop|Secure Global Desktop]] Server.  Clients exist for most versions of [[Microsoft Windows|Windows]] (including [[Windows Mobile|handheld versions]]), and other operating systems such as [[Linux]], [[Solaris (operating system)|Solaris]] and [[Mac OS X]].  The server runs on Solaris and Linux platforms; it listens by default on [[Transmission Control Protocol|TCP]] ports 5307 or 3144 but can be configured to operate solely over a single port, usually 443, the so-called &quot;Firewall Forwarding mode&quot;.  The Secure Global Desktop Server additionally connects to back-end servers where the applications run using native display protocols such as [[Remote Desktop Protocol|RDP]], [[Secure Shell|ssh]], [[X11]], [[TN5250]] or [[TN3270]]. These &quot;application server&quot; platforms can be [[Windows 2000]] Server, [[Windows 2000 Advanced Server]], [[Windows 2000 Datacenter Server]] and [[Windows Server 2003]], or Windows client platforms that support RDP such as [[Windows XP]] and [[Windows Vista]], as well as other operating systems such as Linux, Solaris, [[IBM AIX (operating system)|AIX]], [[HP-UX]] and IBM application servers.
+
+The protocol supports rich remote display and input services with a number of display options to deliver the presentation of the remote applications onto the local display alongside local applications using seamless windows, or self contained remote environments delivered full-screen or in a standalone window. The protocol also supports audio, printing, and other device mapping services including drive mapping, serial port access, and [[clipboard (software)|clipboard]] mapping.
+
+== Features ==
+
+* 24-bit color support, giving a palette of 16.7 million colors (8-, 15-, and 16-bit color also supported)
+* 256-bit encryption, using the [[Advanced Encryption Standard|AES]] encryption algorithm (this is the default security; older clients may use encryption of lesser strength.)
+* [[Transport Layer Security]] support
+* Audio - allows users to run an audio program on the remote servers and have the sound redirected to their local computer
+* File System Redirection - allows users to use their local files on a remote desktop within the terminal session.
+* Printer Redirection - allows users to use their local printer within the application session as they would with a locally or network shared printer
+* Port Redirection - allows applications running within the terminal session to access local serial ports directly
+* Clipboard can be shared between the remote computer and the local computer
+
+==Advantages==
+AIP supports the remote display of a wide range of applications to the same client at the same time. The same protocol delivers applications running on [[UNIX]], Windows and other platforms and the associated device services needed by these platforms. It can be configured in a firewall-friendly way (one port); the separation of virtual display layer from application layer provides for greater security and mobility.
+The Adaptive element of the protocol is driven by the dynamic monitoring of performance. Telemetry built into the protocol informs the server as to how best to communicate with the client and can change, for example, compression levels, packet coalescence, and packet pruning.
+
+==Disadvantage==
+Expenses for the licence. 
+
+==Supported operating systems==
+The AIP or Sun Secure Global Desktop Server is supported on:
+* Solaris 10 ([[SPARC]] and [[x86]]); Solaris 8 and 9 (SPARC only) 
+* [[Red Hat Enterprise Linux]] 4 and 5
+* [[SUSE Linux Enterprise Server]] 10
+* [[Fedora (Linux distribution)|Fedora]] Core 6
+
+==Default port and protocol==
+* Default port: 3144 or 5307
+* Protocol type: TCP
+
+==References==
+{{reflist}}
+
+==See also==
+
+* [[Terminal Services|Microsoft Terminal Services]]
+* [[Citrix XenApp]]
+* [[Independent Computing Architecture]]
+* [[rdesktop]] - free open source client for Unix platforms
+* [[tsclient]] - free open source GUI frontend to rdesktop ([[Ubuntu (operating system)|Ubuntu]], [[GNOME]])
+* [[Comparison of remote desktop software]]
+
+==External links==
+* [http://www.oracle.com/us/technologies/virtualization/061996.html Oracle Secure Global Desktop Web site]
+
+{{remote administration software}}
+
+[[Category:Sun Microsystems software]]
+[[Category:Remote desktop]]</rev></revisions></page></pages></query></api>

@@ -1,0 +1,133 @@
+<?xml version="1.0"?><api><query><pages><page pageid="23630990" ns="0" title="KDE Partition Manager"><revisions><rev xml:space="preserve">{{Primary sources|date=July 2009}}
+{{Infobox Software
+| name                    = KDE Partition Manager
+| logo                    = [[Image:PartitionManager icon.svg|70px]]
+| screenshot              = [[Image:KDE Partition Manager screenshot.jpg|300px]]
+| caption                 = Screenshot of KDE Partition Manager 1.0.0alpha1
+| developer               = Volker Lanz
+| released                = 2008-09-18&lt;ref&gt;{{cite web|title=KDE Partition Manager 1.0.0alpha1 release notes|url=https://sourceforge.net/project/shownotes.php?group_id=238970&amp;release_id=627121|accessdate=2009-07-16}}&lt;/ref&gt;
+| latest release version  = 1.0.3
+| latest release date     = {{release date and age|2010|09|01}}
+| status                  = Active
+| programming language    = [[C++]] ([[Qt (framework)|Qt]])
+| platform                =
+| operating system        = [[Cross-platform]]
+| genre                   = [[Partition editor]]
+| language                = Multilingual
+| license                 = [[GNU General Public License]]
+| website                 = http://www.partitionmanager.org
+}}
+
+'''KDE Partition Manager''' is a disk partitioning application for the [[KDE Platform]]. It was first released for [[KDE Software Compilation 4|KDE SC 4.1]]. It is released independently of the central KDE release cycle.
+
+It is used for creating, deleting, resizing, moving, checking and copying [[Partition (computing)|partitions]], and the [[file system]]s on them. This is useful for creating space for new operating systems, reorganizing disk usage, copying data residing on hard disks and mirroring one partition with another (disk imaging). Additionally, KDE Partition Manager can back up file systems to files and restore such backups.
+
+KDE Partition Manager is a standalone application to be launched from a desktop environment's start menu, a [[KPart]] that integrates with operating system installers&lt;ref&gt;{{cite web |title=Chakra Live CD Installer Screenshot |url=http://chakra-project.org/img/slideshow/5.jpg |accessdate=2009-07-16}}&lt;/ref&gt; and a [[KControl]] module available from within KDE's ''[[System Settings]]'' application.
+
+It uses [[GNU Parted|libparted]] to detect and manipulate devices and partition tables while several (optional) file system tools provide support for file systems not included in libparted. These optional packages will be detected at runtime and do not require a rebuild of KDE Partition Manager.
+
+As is the case with most KDE applications, KDE Partition Manager is written in the [[C++]] [[programming language]] and uses the [[Qt (framework)|Qt GUI toolkit]].&lt;ref&gt;{{Cite web |url=http://kde.org/whatiskde/devview.php|title=Developer's View |accessdate=2009-07-16}} {{Dead link|date=October 2010|bot=H3llBot}}&lt;/ref&gt;&lt;ref&gt;{{cite web |url=http://techbase.kde.org/Development/Languages |title=Development/Languages |accessdate=2009-07-16}}&lt;/ref&gt; Released under the [[GNU General Public License]], KDE Partition Manager is [[free software]].
+
+The KDE Partition Manager project provides a live operating system including KDE Partition Manager which can be written to a [[Live CD]], a [[Live USB]] and other media. The operating system is based on the [[OpenSUSE]] Linux distribution.
+
+== Release history ==
+{| class=&quot;wikitable&quot;
+|-
+! Colour
+! Meaning
+|-
+| style=&quot;background-color:#fa8072;&quot; | Red
+| Release no longer supported
+|-
+| style=&quot;background-color:#A0E75A;&quot; | Green
+| Release still supported
+|-
+| style=&quot;background-color:#87CEEB;&quot; | Blue
+| Future release
+|}
+
+{| class=&quot;wikitable&quot;
+! Major Version !! Minor Version !! Release date !! Notes
+|----
+|-
+! 1.0
+| style=&quot;background-color:#fa8072;&quot; | 1.0.0alpha1
+| 18 September 2008
+| Initial release
+|-
+! 1.0
+| style=&quot;background-color:#fa8072;&quot; | 1.0.0alpha2
+| 24 September 2008
+| Important bug fixes.
+|-
+! 1.0
+| style=&quot;background-color:#fa8072;&quot; | 1.0.0beta1a
+| 13 January 2009
+| Crashes and bugs fixed, ext4 support.
+|-
+! 1.0
+| style=&quot;background-color:#fa8072;&quot; | 1.0.0beta2
+| 30 April 2009
+| Bugs fixed. Introduces the KCModule.
+|-
+! 1.0
+| style=&quot;background-color:#fa8072;&quot; | 1.0.0beta3
+| 4 June 2009
+| Bug fixes. Speed and usability improvements.
+|-
+! 1.0
+| style=&quot;background-color:#fa8072;&quot; | 1.0.0rc1
+| 3 August 2009
+| Bug fixes.
+|-
+! 1.0
+| style=&quot;background-color:#fa8072;&quot; | 1.0.0
+| 18 August 2009
+| First stable
+|-
+! 1.0
+| style=&quot;background-color:#fa8072;&quot; | 1.0.1
+| 9 January 2010
+| Bugfix release.
+|-
+! 1.0
+| style=&quot;background-color:#fa8072;&quot; | 1.0.2
+| 24 April 2010
+| Bug fixes. Usability improvement.
+|-
+! 1.0
+| style=&quot;background-color:#A0E75A;&quot; | 1.0.3
+| 1 September 2010
+| Bug fixes. Usability improvements.
+|-
+! 1.1
+| style=&quot;background-color:#87CEEB;&quot; | 1.1.x
+| (unreleased)
+| New features, among them support for 4096 byte sectors.&lt;ref&gt;{{Cite web |url=http://blog.volker-lanz.de/tag/new-in-kpm-1-1/|title=Developer's Series Of Blog Entries About Upcoming 1.1 Release|accessdate=2010-09-17}}&lt;/ref&gt;
+|-
+|}
+
+== See also ==
+{{Portal|Free software}}
+* [[Partition (computing)]]
+* [[List of disk partitioning software]]
+
+== References ==
+{{Reflist}}
+
+== External links ==
+* [http://www.partitionmanager.org/ KDE Partition Manager website]
+* [http://docs.kde.org/development/en/extragear-sysadmin/partitionmanager/index.html The KDE Partition Manager Handbook]
+* [http://www.kde-apps.org/content/show.php/KDE+Partition+Manager?content=89595 KDE Partition Manager on kde-apps.org]
+
+{{KDE}}
+
+{{DEFAULTSORT:Kde Partition Manager}}
+[[Category:KDE Extragear]]
+[[Category:Free software programmed in C++]]
+[[Category:Disk partitioning software]]
+[[Category:Cross-platform software]]
+[[Category:Hard disk software]]
+
+[[es:KDE Partition Manager]]
+[[zh:KDE Partition Manager]]</rev></revisions></page></pages></query></api>

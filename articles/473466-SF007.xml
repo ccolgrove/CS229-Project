@@ -1,0 +1,29 @@
+<?xml version="1.0"?><api><query><pages><page pageid="473466" ns="0" title="Fast user switching"><revisions><rev xml:space="preserve">'''Fast user switching''' is a feature on some modern [[multi-user]] [[operating system]]s such as [[Windows XP]] and newer, [[Mac OS X]], [[Linux]].&lt;ref&gt;{{cite web | url=http://fedoraproject.org/wiki/Desktop/FastUserSwitching | title=Desktop/FastUserSwitching | accessdate=2007-05-13}}&lt;/ref&gt; It allows users to switch between user accounts on a single [[Personal computer|PC]] without quitting applications and logging out.  Analogous functionality was first developed on consumer level hardware by the [[Xenix]] operating system which supported multiple [[Virtual console (computer user-interface)|virtual consoles]]. [[Linux]], [[BSD]], and most other PC Unixes adopted virtual terminals and further developed the user interfaces, including allowing users to optionally run separate graphical [[X Window System]] sessions.
+
+Many [[free software]] environments, such as [[GNOME]] or [[KDE]], support fast user switching with a drop menu, in a way analogous to OS X. For installations with older environments, the functionality must be enabled in the configuration file of the [[X display manager (program type)|X display manager]] (for example [[GNOME Display Manager|GDM]]) then a [[hot key]] sequence such as &lt;code&gt;CTRL-ALT-F8&lt;/code&gt; is pressed.  A separate login window will now appear and the second user can login (or even the first user again).  Alternatively, in the default install, new X sessions can be started at will by using different ''display'' parameters to have them run in different virtual terminals (e.g. &quot;&lt;code&gt;[[startx]] -- :1&lt;/code&gt;&quot; or &quot;&lt;code&gt;X :1 -query localhost&lt;/code&gt;&quot;). Again, hot key sequences allow the user switching to take place.  
+
+Fast user switching may potentially introduce various security-related complications{{Citation needed|date=December 2009}}, and is handled differently among operating systems, each having its advantages and disadvantages.  One possibility, simple and secure, is that only the first user gets ownership of resources.  A second option is to grant ownership of resources to each new user.  The last one to log in takes ownership.  A third is to allow all users access to shared resources.  This is easier and more intuitive, but allows (for example) one user to record another user's conversation. In Windows, shared resources, such as sound, are available to all sessions.  In [[Red Hat Linux]], the default behavior is to give ownership of &quot;console resources&quot; to the first connected session, but it can share resources among groups of console users or be configured to manage console ownership differently.
+
+== Windows implementation ==
+Fast user switching in Windows is based on [[Remote Desktop Services]] technology.&lt;ref&gt; [http://support.microsoft.com/kb/294737 Architecture of Fast User Switching]&lt;/ref&gt; In Windows XP, [[Graphical identification and authentication|GINA]] which is a component of [[Winlogon]], and with which fast user switching interacts, can be programmatically called to automate a fast user switch.&lt;ref&gt; [http://www.remkoweijnen.nl/blog/2008/11/26/executing-a-fast-user-switch-programmatically-part-1/ Executing a Fast User Switch programmatically â part 1]&lt;/ref&gt; A [[Microsoft PowerToys|Powertoy]] known as ''Super fast user switcher'' was offered in 2002 by Microsoft. It allowed fast user switching using a keyboard hotkey (Win+Q) (similar to [[Alt-Tab]]) without even going to the ''Welcome screen.'' &lt;ref&gt; [http://www.pcmag.com/article2/0,2817,10440,00.asp Microsoft PowerToys for Windows XP]&lt;/ref&gt; It was later made unavailable when the original set of powertoys was replaced by updated versions but still works with Windows XP SP3 (32-bit) when running as administrator.
+
+In Windows Vista, GINA is replaced by ''Credential Providers'', however they do not support programmatic initiation of fast user switching.&lt;ref&gt;[http://www.remkoweijnen.nl/blog/2008/11/26/executing-a-fast-user-switch-programmatically-part-2/ Executing a Fast User Switch programmatically â part 2]&lt;/ref&gt;
+
+In Windows XP, fast user switching was unavailable if the computer is on a [[Windows Server domain]] network or if [[Offline Files]] was enabled. [[Windows Vista]] and later no longer have these restrictions&lt;ref&gt;[http://msdn.microsoft.com/en-us/library/aa480152.aspx The Windows Vista and Windows Server 2008 Developer Story: Application Compatibility Cookbook]&lt;/ref&gt;.
+
+== References ==
+
+{{refs}}
+
+== External links==
+* [http://support.microsoft.com/kb/294737 Architecture of Fast User Switching in Windows XP]
+
+[[Category:Operating system technology]]
+[[Category:Windows components]]
+[[Category:Windows software]]
+[[Category:Mac OS X software]]
+[[Category:Linux user management and support-related utilities]]
+[[Category:Linux authentication-related software]]
+
+[[ko:ë¹ ë¥¸ ì¬ì©ì ì í]]
+[[it:Cambio utente rapido]]</rev></revisions></page></pages></query></api>

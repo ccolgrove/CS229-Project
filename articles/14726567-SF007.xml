@@ -1,0 +1,526 @@
+<?xml version="1.0"?><api><query><pages><page pageid="14726567" ns="0" title="List of build automation software"><revisions><rev xml:space="preserve">[[Build automation]] involves scripting or automating the process of compiling computer source code into binary code.  Below is a list of notable tools associated with the build automation process.
+
+==Make-based tools==
+*[ftp://ftp.NetBSD.org/pub/NetBSD/misc/sjg/ bmake], portable version of NetBSD make
+*[http://www.codesynthesis.com/projects/build/ build]
+*[http://ww2.cs.mu.oz.au/~zs/cake.html cake]
+* Clearmake
+*[http://freshmeat.net/projects/distcc/ distcc]
+*[http://distmake.sourceforge.net/pmwiki/pmwiki.php distmake]
+*[http://linux.maruhn.com/sec/dmake.html dmake]
+*[http://javamake.sourceforge.net/ JMake]
+*[http://sourceforge.net/projects/jmk/ JMK]
+*[http://kbuild.sourceforge.net/ kbuild]
+*[[make (software)|make]], a classic Unix build tool
+*[http://sourceforge.net/projects/makelib/ makeLib]
+*[http://makeme.sourceforge.net/ makeme]
+*[http://savannah.nongnu.org/projects/mamo/ MakeModules]
+*[http://makeng.sourceforge.net/ Make:NG]
+*[http://www.annexia.org/freeware/makeplus/ makeplus]
+*[http://makepp.sourceforge.net/ makepp]
+*[http://makeutil.sourceforge.net/ make utilities]
+*[[mk (software)|mk]], developed originally for [[Version 10 Unix]] and [[Plan 9 from Bell Labs|Plan 9]], and ported to Unix as part of [[Plan 9 from User Space|plan9port]]
+*[http://sourceforge.net/projects/mk-configure/ mk-configure], lightweight alternative for GNU autotools, CMake and SCons based on bmake
+*[http://www.mathematik.uni-ulm.de/modula/man/man1/mmm.html mmm]
+*[http://www.diku.dk/hjemmesider/ansatte/makholm/mosmake/ Mosmake]
+*[[Macintosh Programmer's Workshop|MPW Make]], developed for [[Mac OS history|Mac OS Classic]] and similar to but not compatible with Unix make. [[Mac OS X]] comes with both GNU make and BSD make. Available as part of the Macintosh Programmer's Workshop as a free, unsupported download from Apple.
+*[[nmake]], [[Bell Labs]]' nmake, forked into two versions after the AT&amp;T trivestiture: a [http://akpublic.research.att.com/~gsf/nmake/nmake.html research version] from [[AT&amp;T Labs]] and an [[Alcatel-Lucent]] Bell Labs [http://www.bell-labs.com/project/nmake/ supported version]
+*[http://omake.metaprl.org/index.html OMake]
+*[http://www.opussoftware.com/ Opus Make]
+*[http://www.nyx.net/~dminer/pvm/ Paradigm Visual Make]
+*[http://projects.andreaferretti.it/phpmake PHPmake]
+*[http://primemover.sourceforge.net/ Prime Mover]
+*[http://www.xs4all.nl/~carlo17/prototype/ Prototype Makefiles]
+*[http://sourceforge.net/projects/pvmgmake/ PVM Gmake]
+*[http://gridengine.sunsource.net/nonav/source/browse/~checkout~/gridengine/source/3rdparty/qmake/qmake.html Qmake]
+*[[Rake (software)|Rake]], a [[Ruby programming language|Ruby]]-based build tool.
+*[http://the-hut.net/ Sire]
+*[http://directory.fsf.org/project/smake/ smake]
+*[https://github.com/personalcomputer/supermake Supermake]
+*[http://home.gna.org/smk/ SMK]
+*[http://tmk.sourceforge.net/ tmk]
+*[http://yabu.sourceforge.net/ Yabu]
+
+==Non Make-based tools==
+*[[Apache Ant]], popular for [[Java platform|Java]] development and uses an [[XML]] file format.
+*[[Apache Buildr]], an open-source build system based on Rake, giving the programmer the full power of scripting in Ruby and having out-of-box support for most of things one would want a build system to be capable of.
+*[http://ant.apache.org/ivy/ Apache Ivy]
+*[[Apache Maven]], a [[Java platform|Java]] tool for project management and automated software build.
+*[[A-A-P]], a [[Python programming language|Python]]-based build tool.
+*[http://www.boost.org/boost-build2/index.html Boost.Build]
+*[http://bras.berlios.de/ bras]
+*[http://builditis.sourceforge.net/ builditis]
+*[http://buildtool.sourceforge.net/index.html Buildtool]
+*[http://www.haskell.org/cabal/ Cabal], Common architecture for building applications and libraries in the Haskell programming language
+*[http://cake-build.sourceforge.net/ Cake], a [[Python programming language|Python]]-based build tool.
+*[http://miller.emu.id.au/pmiller/software/cook/ cook]
+*[http://sourceforge.net/projects/dev-env/ dev-env]
+*[[Flowtracer]]
+*[http://gconfigure.sourceforge.net/ Gconfigure]
+*[[Gradle]], an open-source build and automation system with a Groovy DSL, combining the advantages of Ant and Maven plus providing many innovative features like a reliable incremental build. 
+*[http://www.cs.york.ac.uk/fp/hmake/ hmake]
+*[http://istrice.sourceforge.net/ Istrice]
+*[[MSBuild]], the Microsoft Build Engine.
+*[http://rubyforge.org/projects/mxx-ru/ mxx-ru]
+*[[NAnt]], a tool similar to Ant for the [[.NET framework]].
+*[https://github.com/martine/ninja ninja]
+*[http://brion.inria.fr/gallium/index.php/Ocamlbuild ocamlbuild]
+*[ftp://ftp.cs.colorado.edu/pub/distribs/odin/ Odin]
+*[http://www.dscpl.com.au/wiki/OSE OSE]
+*[[Perforce Jam]], a generally enhanced, ground-up tool which is similar to make.
+*[http://search.cpan.org/~nkh/PerlBuildSystem-0.44/ PerlBuildSystem]
+*[http://phing.info/ Phing]
+*[http://sourceforge.net/projects/projectbuilder/ ProjectBuilder]
+*[http://rant.rubyforge.org/ Rant]
+*[http://www.schmant.org/ Schmant]
+*[[Simple Build Tool]], a build tool built around a DSL based on Scala.
+*[[SCons]], based around [[Python (programming language)|Python]], with integrated functionality similar to [[autoconf]]/[[automake]], descended from a [[Perl]] build driver called [http://www.dsmit.com/cons/ Cons].
+*[http://s2b.sourceforge.net/ Source 2 Binary]
+*[http://tomleese.github.com/TMake TMake], written in C, but uses Lua for configuration files.
+*[http://www.sweetsoftware.co.nz/build_overview.php Sweet Build], a Lua scriptable build tool.
+*[http://gittup.org/tup/index.html tup] Build system that uses file system monitoring to provide automatic dependency discovery and near-optimal build times.
+*[[Tweaker (build tool)|Tweaker]], allowing task definitions to be written in any languages (or intermixed languages) while providing a consistent interface for them all.
+*[[Visual Build]], a GUI software for software builds.
+*[[Waf]] is a Python-based tool for configuring, compiling and installing applications. It is a replacement for other tools such as Autotools, Scons, CMake or Ant.
+*[http://www.codeproject.com/KB/applications/xmake.aspx XMake]
+*[http://apollo.backplane.com/xmake/ XMAKE]
+*[http://pifpafpuf.de/Yruba/ Yruba], a rule system similar to make or ant for the shell
+
+==Build Script Generation Tools==
+*[http://www.kaffe.org/~mkoch/antiauto/ ANTIAUTO]
+*[[automake]]
+*[http://www.bakefile.org/index.html Bakefile]
+*[http://www.logfish.net/pr/ccbuild/ ccbuild]
+*[[CMake]], a tool that generates files for the native build environment, such as makefiles for Unix or Workspace files for Visual Studio.
+*[http://cmvn.googlecode.com cmvn] - Multi-project configurator and generator of Apache Maven pom.xml files
+*[http://sourceforge.net/apps/trac/confix/wiki/Intro confix]
+*[[GNU Build Tools]], a collection of tools for portable builds.
+*[http://code.google.com/p/gyp GYP] - Created for [[Chromium (web browser)|Chromium]]; it is another tool that generates files for the native build environment.
+*[http://www.kitebird.com/imake-book/ imake]
+*[http://soul.datamax.bg/~cade/away/makemake/ MakeMake]
+*[http://maker.sourceforge.net/ Maker]
+*[http://directory.fsf.org/project/mfg/ mfg]
+*[http://www.tildeslash.com/mmake/mmake.html mmake]
+*[http://www.ociweb.com/products/mpc MPC], a free product that creates build tool files for many versions of Make, Visual Studio, Eclipse, and more.
+*[http://www.openmakesoftware.com/openmake-meister-for-build-management/ OpenMake Meister], build script generation and dependency management engine; also includes continuous integration capabilities.
+*[http://legacy.imatix.com/html/archives.htm Otto]
+*[[Premake]], a Lua based tool for making makefiles, Visual Studio files, Xcode projects, and more.
+*[http://pmk.sourceforge.net/ Pre Make Kit]
+*[http://rpsl.sourceforge.net/ RPSL]
+*[http://sourceforge.net/projects/sdist/ Sdist]
+*[http://solmgr.sourceforge.net/ Sol Manager]
+*[http://tmake.sourceforge.net/ tmake]
+*[http://toc.sourceforge.net/ toc]
+*[http://sourceforge.net/projects/xpj/ XPJ]
+
+==Continuous Integration Tools==
+*[[AnthillPro]], build automation with pipeline support for deployment automation and testing. Platform and language independent.
+*[[Atlassian_bamboo|Bamboo]], Continuous integration software.
+*[[Automated BuildStudio]], a system for automating and managing software build, test and deploy processes, with build scheduling and [[continuous integration]] support.
+*[http://continuum.apache.org/ Apache Continuum]
+*[http://gump.apache.org/ Apache Gump]
+*[http://www.timpanisoftware.com/ BuildBeat]
+*[[BuildBot]], a Python-based software development continuous integration tool which automates the compile/test cycle.
+*[[BuildIT]], a free graphical build or task tool for Windows with an emphasis on simplicity and ease of use.
+*[[BuildMaster]], an integrated build, release, and application lifecycle management system developed by Inedo.
+*[http://www.buildmonkey.com/ BuildMonkey]
+*[[Buildout]], a Python-based build system for creating, assembling and deploying applications from multiple parts.
+*[http://busyb.sourceforge.net/ BusyB]
+*[[CABIE]] Continuous Automated Build and Integration Environment, Open Source, written in Perl.
+*[[Cascade (software)|Cascade]], a continuous integration tool that builds and tests software components after each change is committed to the repository.  Also provides a &quot;checkpointing&quot; facility by which changes can be built and tested before they are committed.
+*[http://freshmeat.net/projects/cruisecontrol/ CruiseControl]
+*[http://public.kitware.com/Dart/HTML/Index.shtml Dart]
+*[http://www.dsource.org/projects/dsss DSSS]
+*[http://www.electric-cloud.com/ Electric Commander]
+*[[FinalBuilder]], for Windows software developers. FinalBuilder provides a graphical IDE to create and run build projects.
+*[[Go (software)|Go]], continuous integration and Agile release management solution, Platform and language independent. 
+*[[Jenkins (software) | Jenkins]], an extensible continuous integration engine.  (Formerly known as [[Hudson (software) | Hudson]].)
+*[http://www-01.ibm.com/software/awdtools/buildforge/enterprise/ IBM Rational Build Forge]
+*[[IKAN ALM]] - Web-based ALM 2.0 platform supporting continuous integration and lifecycle management.
+*[http://lintouch.org/static/qa-tools.html Lintouch]
+*[http://luntbuild.javaforge.com/ Luntbuild]
+*[http://midwatch.sourceforge.net/ MidWatch]
+*[http://www.openmakesoftware.com/openmake-meister-for-build-management/ OpenMake Meister], build script generation and dependency management engine; also includes continuous integration capabilities.
+*[http://www.openmakesoftware.com/mojo-for-continuous-integration/ OpenMake Mojo], free continuous integration server.
+*[http://www.viewtier.com/products/parabuild/index.htm Parabuild]
+* PBS, based around [[Perl (programming language)|Perl]], oriented towards continuous integration of large systems.
+*[http://www.pengutronix.de/software/ptxdist/index_en.html PTXdist]
+*[http://www.jetbrains.com/teamcity/ TeamCity]
+*[http://www.autobuild.org/ Test-AutoBuild]
+*[http://www.qef.com/ QEF]
+
+==Hosted Continuous Integration Tools==
+*[http://projectlocker.com/site/build_locker BuildLocker] - Web-based continuous integration solution for Java and .NET projects. 
+*[http://cifoundry.net/ CI Foundry] - Outsourced Continuous Integration service (Java, .NET and Ruby)
+*[http://www.cloudbees.com/platform-overview.cb CloudBees DEV@cloud] - [[Jenkins (software) | Jenkins]] as a Service
+*[https://continuous.io/ Continuous.io] - Hosted Continuous Integration (mainly for Python, but custom build scripts can be used)
+*[http://www.fazend.com/ FaZend] - Free Hosted Continuous Integration Environment
+*[http://hosted-ci.com/ Hosted CI] - Hosted Continuous Integration for iOS and Mac (based on [[Jenkins (software) | Jenkins]])
+*[https://www.shiningpanda.com/ Shining Panda] - Hosted Continuous Integration for Python (based on [[Jenkins (software) | Jenkins]])
+*[http://travis-ci.org/ Travis CI] - A distributed build system for the open source community
+
+==Configuration Management Tools==
+*[http://www.opscode.com/chef/ chef]
+*[http://www.gnu.org/software/cfengine/cfengine.html cfengine]
+*[http://www.clearcase.com/ ClearCase]
+*[http://git-scm.com/ Git]
+*[http://www2.research.att.com/~gsf/man/man1/iffe.html iffe]
+*[http://www.xs4all.nl/~zippel/lc/ Kconfig]
+*[http://www.perforce.com/ Perforce]
+*[http://www.puppetlabs.com puppet]
+*[http://www.subversion.com Subversion]
+*[http://www.vestasys.org/ Vesta]
+
+==Dependency Generator Tools==
+*[http://autodepend.sourceforge.net/ autodepend]
+*[http://www.daybologic.co.uk/software.php?content=daybodep Daybo Logic Dependency Generator]
+*[http://www.irule.be/bvh/c++/fastdep/ fastdep]
+*[http://sourceforge.net/projects/makedep/ Makedep]
+*[http://sham.sourceforge.net/ sham]
+
+==Other Tools==
+*[[Ellexus Breeze]], a build tracing and debugging tool made by Ellexus Ltd
+*[[Deb Creator]], used to create .deb files.
+*[http://packages.debian.org/testing/devel/dist Debian dist]
+*[[Debian Package Maker]], used to create .deb files.
+*[[checkinstall]], checkinstall is a program that monitors an installation procedure, and creates a standard package for your distribution.
+
+==Comparison of build automation software==
+{{cleanup|date=January 2008}}
+
+{| class=&quot;wikitable sortable&quot; style=&quot;font-size: 80%; text-align: center; width: auto;&quot;
+|-
+! Tool Name
+! Operating System
+! Build Language
+! Description Language
+! License
+|-
+! [[A-A-P]]
+| Unix, Windows, Mac OS X
+| C
+| recipe
+| [[GNU GPL]]
+|-
+! [[Apache Ant|Ant]]
+| OS independent
+| Java
+| XML
+| [[Apache License]] 2.0
+|-
+! [[AnthillPro]]
+| OS independent
+| language independent
+| Wraps Make, Ant, Maven, MsBuild, Nant, etc for controlled build, deploy, test processes. 
+| [[Proprietary software|Proprietary]]
+|-
+! [[Automated BuildStudio]]
+| Windows
+| language independent
+| graphical IDE with support for Ant/NAnt, MSBuild, JScript, VBScript and DelphiScript
+| [[Proprietary software|Proprietary]]
+|-
+! [[Atlassian_bamboo|Bamboo]]
+| OS Independent
+| language independent
+| continuous integration
+| [[Proprietary software|Proprietary]]
+|-
+! [[buildfactory]]
+| Unix, Windows
+| language independent
+| ?
+| [[Proprietary software|Proprietary]]
+|-
+! [[Apache Buildr|Buildr]]
+| OS independent
+| Java
+| Ruby
+| [[Apache License]] 2.0
+|-
+! [[Cake (build system)|Cake]]
+| OS independent
+| language independent
+| Python
+| [[MIT License]]
+|-
+! [[Capistrano]]
+| OS independent
+| Ruby
+| domain specific language for software builds
+| [[MIT License]]
+|-
+! [[CMake]]
+| OS independent
+| language independent
+| uses CMakeLists.txt file
+| [[New BSD License]]
+|-
+! [[Apache Continuum|Continuum]]
+| OS independent
+| Java
+| ?
+| [[Apache License]] 2.0
+|-
+! [[CruiseControl]] 
+| OS independent
+| language independent
+| XML
+| [[BSD license|BSD]]-style license
+|-
+! [[dmake]]
+| Linux, Solaris, Windows
+| OpenOffice, Solaris
+| uses Makefile
+| ?
+|-
+! [[Electric Cloud|ElectricCommander]]
+| OS independent
+| language independent
+| flexible including gmake, bmake, emake and ant scripts
+| [[Proprietary software|Proprietary]]
+|-
+! [[Fabricate (software)|Fabricate]]
+| OS independent
+| language independent
+| Python
+| ?
+|-
+! [[FinalBuilder]]
+| Windows
+| language independent
+| graphical IDE with support for Ant/NAnt, MSBuild, JScript, VBScript, IronPython &amp; PowerShell
+| [[Proprietary software|Proprietary]]
+|-
+! [[Go (software)|Go]]
+| OS independent
+| language independent
+| graphical IDE with support for Ant/NAnt, MSBuild, rake and any tool with a command line interface
+| [[Proprietary software|Proprietary]], cost-free Community edition license
+|-
+! [[Gradle]]
+| OS independent
+| Java/Groovy
+| Groovy based DSL
+| [[Apache License]] 2.0
+|-
+! [[icemake]]
+| OS independent
+| C, C++, Assembly, TeX
+| S-expression based
+| ?
+|-
+! [[IKAN ALM]]
+| OS independent
+| language independent
+| Ant, NAnt, Maven2, Any tool via the API
+| [[Proprietary software|Proprietary]]
+|-
+! [[make (software)|make]]
+| OS independent
+| language independent
+| uses Makefile
+| Various
+|-
+! [[makepp]]
+| OS independent
+| language independent, optimized for C++
+| uses Makefile
+| [[GNU GPL]]
+|-
+! [[mk-configure]]
+| OS independent
+| language independent
+| uses Makefile (bmake dialect)
+| [[BSD license|BSD]]-style license
+|-
+! [[Apache Maven|Maven]]
+| OS independent
+| Java
+| Project Object Model
+| [[Apache License]] 2.0
+|-
+! [[Module::Build]]
+| OS independent
+| Perl
+| ?
+| [[GNU GPL]]
+|-
+! [[Macintosh Programmer's Workshop#Other tools|MPW Make]]
+| Mac OS Classic
+| ?
+| ? 
+| ?
+|-
+! [[MSBuild]]
+| Windows
+| language independent
+| XML
+| [[Proprietary software|Proprietary]] but free to use
+|-
+! [[NAnt]]
+| Windows
+| .NET
+| XML
+| [[GNU GPL]]
+|-
+! [[nmake]]
+| Unix, Linux, Windows/Interix
+| language independent
+| uses Makefile
+| ?
+|-
+! [[OMake (software)|OMake]]
+| Unix, Linux, OS X, Windows
+| language independent
+| custom scripting language with make-like syntax and portable build-in shell
+| [[GNU GPL]]
+|-
+! [[OpenMake Meister]]
+| Unix, Linux, Windows, z/OS
+| language independent
+| XML, Perl, REXX
+| [[Proprietary software|Proprietary]]
+|-
+|-
+! [[OpenMake Mojo]]
+| Unix, Linux, Windows
+| language independent
+| XML, Perl
+| [[Proprietary software|Proprietary]], free edition available
+|-
+! [[ParaBuild]] 
+| ?
+| ?
+| ?
+| [[Proprietary software|Proprietary]] with a free small team edition
+|-
+! [[PBS (software)|PBS]]
+| OS independent
+| language independent
+| Perl
+| Artistic 1 &amp; GPL 1
+|-
+! [[Perforce Jam]]
+| OS independent
+| language independent
+| uses Jamfile
+| [[Proprietary software|Proprietary]] with a free licence for opensource projects
+|-
+! [[Phing]]
+| OS independent
+| PHP
+| XML (Ant clone)
+| [[GNU Lesser General Public License|GNU Lesser GPL]]
+|-
+! [[PyBuild]]
+| ?
+| ?
+| Python
+| [[GNU GPL]]
+|-
+! [[Rake (software)|Rake]]
+| OS independent
+| Ruby
+| Ruby
+| [[MIT License]]
+|-
+! [[SCons]]
+| OS independent
+| language independent
+| Python
+| [[MIT License]]
+|-
+! [[Simple Build Tool]] 
+| OS independent
+| Scala/Java
+| Scala based DSL
+| [[BSD license|BSD]]
+|-
+! [[Speedy Make]] 
+| OS independent
+| language independent
+| XML
+| [[GNU GPL]]
+|-
+! [[Sweet Build]]
+| Microsoft Windows
+| language independent
+| DSL and Lua
+| [[libpng License]]
+|-
+! [http://tomleese.github.com/TMake TMake]
+| Windows, Linux and BSD
+| language independent
+| lua
+| [[GPL license|GPL v3]] 
+|-
+! [[Tweaker (build tool)]]
+| OS independent
+| language independent
+| Any (Ant, bash, batch, C, Erlang, Java, SQL, and VBScript by default, with 3rd party interface for extensions)
+| [[GPL license|GPL v3]] 
+|-
+! [[Visual Build]]
+| Windows
+| language independent
+| XML
+| [[Proprietary software|Proprietary]]
+|-
+! [[Waf]]
+| OS independent
+| language independent
+| Python
+| [[New BSD License]]
+|-
+! [[WANT (software)|WANT]]
+| Windows
+| Delphi
+| XML
+| ?
+|-
+! [[X-Script Generator]]
+| Windows
+| language independent
+| XML
+| ?
+|-
+! [[Yabu (software)|Yabu]]
+| Unix, POSIX
+| language independent
+| uses Buildfile
+| Public domain
+|-class=&quot;sortbottom&quot;
+! Tool Name
+! Operating System
+! Build Language
+! Description Language
+|}
+
+==Debugging and Understanding Build Automation==
+* [http://myblog.chaiware.org/2009/02/ant-explorer-graphical-ant-build-tool.html Ant Explorer]
+* [http://www.oreillynet.com/onjava/blog/2003/07/new_version_of_antgraph.html AntGraph]
+* [http://josefsson.org/autobuild/ Autobuild]
+* [http://www.swag.uwaterloo.ca/btv/ BTV Toolkit]
+* [http://buildaudit.sourceforge.net/ Build audit]
+* [http://bre.klaki.net/programs/colormake/ colormake]
+* [http://continuum.apache.org/ Continuum]
+* [http://www.codefast.com/products/build-analysis.html Coverity Build Analysis]
+* [http://gmd.sourceforge.net/ GNU Make Debugger]
+* [http://gmsl.sourceforge.net/ GNU make Standard Library]
+* [http://sourceforge.net/projects/munit/ GNU make test framework]
+* [http://www.ggtools.net/grand/ Grand]
+* [http://www.softwaresecretweapons.com/jspwiki/linguinemapsforapacheant Linguine Maps]
+* [http://sailhome.cs.queensu.ca/~bram/makao/index.html MAKAO]
+* [http://makepp.sourceforge.net/1.50/makeppgraph.html makeppgraph]
+* [http://directory.fsf.org/project/mtool/ Maketool]
+* [http://sourceforge.net/projects/mkdoxy/ mkDoxy]
+* [http://phil.freehackers.org/pretty-make/index.html Pretty Make]
+* [http://bashdb.sourceforge.net/remake/ Remake]
+* [http://spring-beandoc.sourceforge.net/ Spring BeanDoc]
+* [http://www.samoht.com/wiki/wiki.pl?SpringViz SpringViz]
+* [http://placidsystems.com/virtualant/howitworks.aspx Virtual Ant]
+* [http://vae.berlios.de/index.html Visual Ant Editor]
+* [http://vizant.sourceforge.net/ Vizant].
+
+[[Category:Build automation]]</rev></revisions></page></pages></query></api>

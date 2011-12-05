@@ -1,0 +1,297 @@
+<?xml version="1.0"?><api><query><pages><page pageid="3834804" ns="0" title="Sabayon Linux"><revisions><rev xml:space="preserve">{{One source|date=April 2010}}
+{{Infobox OS
+| name = Sabayon Linux
+| logo = [[File:Sabayon 5.4 logo.svg|100px]]
+| screenshot = [[File:Sabayon 5.2 screenshot.png|300px]]
+| caption = Sabayon Linux 5.2 KDE SC
+| website = [http://www.sabayonlinux.org/ www.sabayon.org]
+| developer = Fabio Erculiani and Team
+| family = [[GNU]]/[[Linux]]
+| source model = Mixed
+| released = {{Start date|2005|11|28}}
+| latest release version = ([[Rolling release]]) 7.0
+| latest release date = {{release date|2011|10|10}}
+| latest preview version =
+| latest preview date =
+| frequently updated =
+| marketing target =
+| language =
+| kernel type = [[Monolithic kernel]]
+| userland = [[GNU]]
+| ui = many
+| license = Various; Mainly [[GNU GPL]]
+| working state = Current
+| supported platforms = [[IA-32]], [[x86-64]]
+| updatemodel = Entropy (Equo, Sulfur) / [[Portage (software)#Emerge|Emerge]]
+| package manager = Entropy (Equo, Sulfur) / [[Portage (software)|Portage]]
+}}
+
+'''Sabayon Linux''' or Sabayon (formerly ''RR4 Linux'' and ''RR64 Linux''), is a [[Gentoo Linux|Gentoo]]-based [[Linux distribution]] created by Fabio Erculiani and the Sabayon development team. Sabayon follows the &quot;[[Out of the box]]&quot; philosophy, aiming to give the user a wide number of applications ready to use and a self-configured operating system. It is named after an Italian dessert, [[zabaione]] which is made from eggs.&lt;ref name=&quot;wiki-info&quot;&gt;[http://wiki.sabayon.org/index.php?title=En:Sabayon_Linux Information about Sabayon Linux â Sabayon Linux Wiki]&lt;/ref&gt; Sabayon's logo is an impression of a hen's foot.
+
+==Core==
+Sabayon is designed to give the computer user an easy-to-use workspace with a captivating look, good hardware detection and a large number of up-to-date software packages installed by default; with additional software available from a repository. It provides both [[x86]] and [[x86-64|AMD64]] distributions. The SpinBase version comes without an X server graphical interface, providing a lighter and faster base system suitable for customization.
+
+===Editions===
+Sabayon has been released since version 4.1 in two different flavors featuring either the [[GNOME]] or [[KDE]] desktop environments, with the ultralight [[Fluxbox]] environment included as well. (In the previous versions all three environments were included in a DVD [[ISO image]]. In addition, a CoreCD edition without X was developed.)
+
+Thanks to the development of a CD/DVD image creation meta-tool named Molecule, Sabayon became the first Linux distribution to have updated images daily, located in the DAILY directory &lt;ref&gt;http://v00d00.net/sabayon-nightly-builds-installer-recruitment&lt;/ref&gt;. These images are available to the Sabayon testers, but are released weekly to the public on the system mirrors containing stable releases. Official releases are simply DAILY versions which have received deeper testing. The adoption of Molecule led the team to change the naming system for releases &lt;ref name=&quot;forum.sabayonlinux.org&quot;&gt;http://forum.sabayonlinux.org/viewtopic.php?f=60&amp;t=8554&lt;/ref&gt;.
+
+Currently available versions are:
+{| class=&quot;wikitable&quot;
+ ! Name
+ ! Desktop Environment
+ ! Availability
+|-
+ | CoreCD  || None || No longer developed
+|-
+ | CoreCDX  || [[Fluxbox]] || DAILY and stable
+|-
+ | G  || [[GNOME]] || DAILY and stable
+|-
+ | K  || [[KDE]] || DAILY and stable
+|-
+ | LXDE  || [[LXDE]] || DAILY and stable
+|-
+ | XFCE  || [[Xfce]] || DAILY and stable
+|-
+ | SpinBase  || None || DAILY and stable
+|-
+ | SpinBase OpenVZ Templates  || None || DAILY and stable
+|}
+
+===Configuration===
+Sabayon uses the same core components as the [[Gentoo Linux]] distribution, including [[OpenRC]] and baselayout2. All of the Gentoo configuration tools, such as &lt;code&gt;etc-update&lt;/code&gt; and &lt;code&gt;eselect&lt;/code&gt; are fully functional. Sabayon also includes additional tools for automatic configuration of various system components such as [[OpenGL]].
+Sabayon provides proprietary video drivers for both [[Nvidia|nVidia]] and [[ATI Technologies|ATI]] hardware &lt;ref&gt;http://distrowatch.com/table.php?distribution=sabayon&lt;/ref&gt;.
+These are enabled if compatible hardware is found; otherwise, the default open-source drivers are used. Because of the automatic driver configuration, the [[Compositing window manager]] [[Compiz Fusion]] and [[KWin]] are used for the [[GNOME]] and KDE editions respectively. The discovery and configuration of network and wireless cards and webcams is similarly automatic. Most printers are detected automatically but require specific manual configuration through the [[Common Unix Printing System|CUPS]] interface.
+
+===Package Management===
+Sabayon Linux relies on two [[package manager]]s. [[Portage (software)|Portage]] is inherited from Gentoo, while Entropy was developed for Sabayon. Portage downloads [[source-code]] and compiles it specifically for the target system, whereas Entropy manages binary files from servers. The binary tarball packages are precompiled using the [[Gentoo Linux]] unstable tree. Entropy clients then pull these tarballs and perform the various post- and pre-compilation calls of the Gentoo [[ebuild]] to set up a package correctly. This means the system is completely binary-compatible with a Gentoo system using the same build configuration. The adoption of two package managers allows expert users to access the full flexibility of the Gentoo system and others to easily and quickly manage software applications and updates. The Entropy software features the ability of allowing users to help generate relevant content by voting and by attaching images, files and web links to a package.
+
+===Applications===
+The number of applications installed by default is higher for DVD editions than for editions small enough to fit on a CD. Their selection is also tailored to the choice between GNOME and KDE. The [[XBMC]] environment can be run without loading the full desktop environment.
+
+The following table summarizes the software included in KDE and GNOME versions:
+
+{| class=&quot;wikitable&quot;
+ ! Type of Program
+ ! Gnome Version
+ ! KDE Version
+|-
+ | [[BitTorrent (protocol)|BitTorrent]] Client  || [[Deluge (software)|Deluge]] || [[KTorrent]]
+|-
+ | [[E-mail]] Client  || [[Evolution (software)|Evolution]] || [[KMail]]
+|-
+ | [[Internet Relay Chat|IRC]] Client  || [[XChat]] || [[Konversation]]
+|-
+ | [[Compositing window manager]]  || [[Compiz]] || [[KWin]]
+|-
+ | Drop down terminal  || [[Guake]] || [[Yakuake]]
+|-
+ | Text editor  || [[gedit]] || [[KWrite]]
+|-
+ | [[Image processing]]  || [[GIMP]] || -
+|-
+ | Archive tool  || [[File Roller]] || [[Ark (software)|Ark]]
+|-
+ | Photo manager  || [[Shotwell (software)|Shotwell]] || [[Kamera]]
+|-
+ | [[Web browser|Browser]]  || [[Mozilla Firefox]] || [[Mozilla Firefox]]
+|-
+ | Burning program  || [[Brasero (software)|Brasero]] || [[K3b]]
+|-
+ | Media Center  || [[Xbox Media Center]] || [[Xbox Media Center]]
+|-
+ | [[Media player (application software)|Media player]]  || [[Totem (media player)|Totem]] and [[VLC media player]] || [[Dragon Player]] and [[VLC media player]]
+|-
+ | Instant messaging  || [[Pidgin (software)|Pidgin]] || [[Kopete]]
+|-
+ | Network Manager  || [[NetworkManager|NM Applet]] || [[KNetworkManager]]
+|-
+ | Music Player  || [[Audacious Media Player|Audacious]] || [[Clementine (software)|Clementine]]
+|-
+ | [[Office suite]]  || [[OpenOffice.org]] || [[OpenOffice.org]]
+|-
+ | [[Virtual terminal]] || [[GNOME Terminal]] || [[Konsole]]
+|-
+ | [[Video game]]  || [[World Of Goo]] || [[World Of Goo]]
+|-
+ | [[Portable Document Format]] viewer  || [[Evince]] || [[Okular]]
+|}
+
+Considerable software is also available in the main repository.
+
+[[Microsoft Windows]] executables are automatically run in [[Wine (software)|Wine]].
+
+Other applications include [[Adobe Reader]], [[Amarok (software)|Amarok]], [[aMSN]], [[Celestia]], [[Chromium]], [[Eclipse (software)|Eclipse]], [[Google Earth]], [[Inkscape]], [[Kdenlive]], [[Mozilla Sunbird]], [[Mozilla Thunderbird]], [[Nero Burning ROM]], [[Opera (browser)|Opera]], [[Picasa]], [[Skype]], [[VirtualBox]], [[Vuze]], [[Wireshark]].
+
+Games (open-source and proprietary) include [[Doom 3]], [[Wolfenstein: Enemy Territory]], [[Nexuiz]], [[Quake (video game)|Quake]], [[Quake 2]], [[Quake 3]], [[Quake 4]], [[Sauerbraten]], [[The Battle for Wesnoth]], [[Unreal]], [[Unreal Tournament]], [[Warsow]] and [[Warzone 2100]].
+
+==Installation==
+Although the distribution is a [[LiveDistro|LiveDVD]] (for XFCE, LXDE, CoreCDX and SpinBase, a LiveCD), it can be installed on a  hard disk once the system is fully booted. Sabayon Linux uses the [[Anaconda (installer)|Anaconda]] installer. In previous releases, the Gentoo Linux Installer was used. Installation is designed to be simpler than is typical for Gentoo, which requires more extensive knowledge of the operating system (particularly for the compilation of the [[Linux kernel]]). Installation takes up to 30 minutes depending on the speed of the DVD drive. Those without a DVD drive can install the GNOME and KDE versions through a USB drive, which can be created with [[Unetbootin]].
+A program plays music during the boot process.
+
+==System requirements==
+=== Minimum requirements for Sabayon 5.2 Gnome and KDE ===
+* [[i686]]-compatibile processor ([[Intel]] [[Pentium II]], [[Pentium III]], [[Celeron]], [[AMD]] [[Athlon]], [[AMD]] [[Duron]])
+* 512MB RAM
+* 6 GB free space
+* 2D X.Org supported graphic card
+* DVD drive
+
+===Recommended requirements for Sabayon 5.2 Gnome and KDE===
+* Dual Core processor (Intel Core 2 Duo or above, AMD Athlon 64 X2 or above)
+* 1024MB RAM
+* 15 GB free space
+* A 3D accelerated video card with X.Org support (Intel, AMD, NVIDIA)
+* DVD drive
+
+==Releases==
+{| class=&quot;wikitable&quot;
+ ! Version
+ ! Release Date
+ ! Notes
+|-
+ | 3.0RC1b miniEdition ||  1 July 2006&lt;ref&gt;http://forum.sabayonlinux.org/viewtopic.php?f=60&amp;t=784&lt;/ref&gt; ||
+|-
+ | 3.0RC2 || 16 August 2006&lt;ref&gt;http://forum.sabayonlinux.org/viewtopic.php?f=60&amp;t=896&lt;/ref&gt; || Distribution name switch from RR4 to Sabayon
+|-
+ | miniEdition 3.0 RC2  || 24 August 2006&lt;ref&gt;http://forum.sabayonlinux.org/viewtopic.php?f=60&amp;t=1027&lt;/ref&gt; ||
+|-
+ | 3.0 || 14 September 2006&lt;ref&gt;http://forum.sabayonlinux.org/viewtopic.php?f=60&amp;t=1278&lt;/ref&gt; ||
+|-
+ | miniEdition 3.0   || 26 September 2006&lt;ref&gt;http://forum.sabayonlinux.org/viewtopic.php?f=60&amp;t=1410&lt;/ref&gt; ||
+|-
+ | miniEdition 3.05   || 4 October 2006&lt;ref&gt;http://forum.sabayonlinux.org/viewtopic.php?f=60&amp;t=1530&lt;/ref&gt; ||
+|-
+ | 3.1 || 10 October 2006&lt;ref&gt;http://forum.sabayonlinux.org/viewtopic.php?f=60&amp;t=1623&lt;/ref&gt; ||
+|-
+ | miniEdition 3.1   || 9 October 2006&lt;ref&gt;http://forum.sabayonlinux.org/viewtopic.php?f=60&amp;t=1613&lt;/ref&gt; ||
+|-
+ | 3.2 || 27 November 2006&lt;ref&gt;http://forum.sabayonlinux.org/viewtopic.php?f=60&amp;t=2245&lt;/ref&gt; ||
+|-
+ | 3.2 miniEdition || 11 December 2006&lt;ref&gt;http://forum.sabayonlinux.org/viewtopic.php?f=60&amp;t=2643&lt;/ref&gt; ||
+|-
+ | 3.25 || 2 January 2007&lt;ref&gt;http://forum.sabayonlinux.org/viewtopic.php?f=60&amp;t=3050&lt;/ref&gt; ||
+|-
+ | 3.26 || 8 January 2007&lt;ref&gt;http://forum.sabayonlinux.org/viewtopic.php?f=60&amp;t=3235&lt;/ref&gt; ||
+|-
+ | 3.3 || 16 March 2007&lt;ref&gt;http://forum.sabayonlinux.org/viewtopic.php?f=60&amp;t=5135&lt;/ref&gt; ||
+|-
+ | 3.3 miniEdition || 25 March 2007&lt;ref&gt;http://forum.sabayonlinux.org/viewtopic.php?f=60&amp;t=5631&lt;/ref&gt; ||
+|-
+ | 3.4 Loop 1 || 13 April 2007&lt;ref&gt;http://forum.sabayonlinux.org/viewtopic.php?f=60&amp;t=6265&lt;/ref&gt; ||
+|-
+ | 3.4 Loop 2 || 18 May 2007&lt;ref&gt;http://forum.sabayonlinux.org/viewtopic.php?f=60&amp;t=7313&lt;/ref&gt; ||
+|-
+ | 3.4 Loop 3 || 26 June 2007&lt;ref&gt;http://forum.sabayonlinux.org/viewtopic.php?f=60&amp;t=8110&lt;/ref&gt; ||
+|-
+ | 1.0 &quot;Business Edition&quot; RE || 15 July 2007&lt;ref name=&quot;forum.sabayonlinux.org&quot;/&gt; ||
+|-
+ | 3.4 || 24 July 2007&lt;ref&gt;http://forum.sabayonlinux.org/viewtopic.php?f=60&amp;t=8743&lt;/ref&gt; ||
+|-
+ | 3.4 Revision E || 6 August 2007&lt;ref&gt;http://forum.sabayonlinux.org/viewtopic.php?f=60&amp;t=9281&lt;/ref&gt; ||
+|-
+ | 3.4 miniEdition || 23 September 2007&lt;ref&gt;http://forum.sabayonlinux.org/viewtopic.php?f=60&amp;t=10483&lt;/ref&gt; ||
+|-
+ | 3.4 Revision F || 7 September 2007&lt;ref&gt;http://forum.sabayonlinux.org/viewtopic.php?f=60&amp;t=10130&lt;/ref&gt; ||
+|-
+ | 1.1 Professional Edition || 23 October 2007&lt;ref&gt;http://forum.sabayonlinux.org/viewtopic.php?f=60&amp;t=11126&lt;/ref&gt; ||
+|-
+ | 3.5 Loop 1 || 24 December 2007&lt;ref&gt;http://forum.sabayonlinux.org/viewtopic.php?f=60&amp;t=11982&lt;/ref&gt; || First release including Entropy
+|-
+ | 3.5 Loop 2 || 17 March 2008&lt;ref&gt;http://forum.sabayonlinux.org/viewtopic.php?f=60&amp;t=12963&lt;/ref&gt; ||
+|-
+ | 3.5 Loop 3 || 15 May 2008&lt;ref&gt;http://forum.sabayonlinux.org/viewtopic.php?f=60&amp;t=13529&lt;/ref&gt; ||
+|-
+ | 3.5 || 1 July 2008&lt;ref&gt;http://forum.sabayonlinux.org/viewtopic.php?f=60&amp;t=13917&lt;/ref&gt; || First stable release including entropy
+|-
+ | Pod 3.5 || 11 July 2008&lt;ref&gt;http://forum.sabayonlinux.org/viewtopic.php?f=60&amp;t=14081&lt;/ref&gt; ||
+|-
+ | 3.5.1 || 9 November 2008&lt;ref&gt;http://forum.sabayonlinux.org/viewtopic.php?f=60&amp;t=15201&lt;/ref&gt; ||
+|-
+ | 4 Revision 1 || 25 December 2008&lt;ref&gt;http://forum.sabayonlinux.org/viewtopic.php?f=60&amp;t=15581&lt;/ref&gt; ||
+|-
+ | 4 LiteMCE || 4 January 2009&lt;ref&gt;http://forum.sabayonlinux.org/viewtopic.php?f=60&amp;t=15828&lt;/ref&gt; ||
+|-
+ | 4.1 GNOME || 13 April 2009&lt;ref&gt;http://forum.sabayonlinux.org/viewtopic.php?f=60&amp;t=16580&lt;/ref&gt; || KDE and GNOME versions split off. ISO size changes from 4.7GB to 1.5-2GB.
+|-
+ | 4.1 KDE || 29 April 2009&lt;ref&gt;http://forum.sabayonlinux.org/viewtopic.php?f=60&amp;t=16766&lt;/ref&gt; ||
+|-
+ | 4.2 GNOME || 30 June 2009&lt;ref&gt;http://forum.sabayonlinux.org/viewtopic.php?f=60&amp;t=17438&lt;/ref&gt; ||
+|-
+ | 4.2 KDE || 6 July 2009&lt;ref&gt;http://forum.sabayonlinux.org/viewtopic.php?f=60&amp;t=17483&lt;/ref&gt; ||
+|-
+ | CoreCD 4.2 || 25 July 2009&lt;ref&gt;http://forum.sabayonlinux.org/viewtopic.php?f=60&amp;t=17678&lt;/ref&gt; ||
+|-
+ | 5.0 GNOME/KDE || 2 October 2009&lt;ref name=&quot;sabayonlinux1&quot;&gt;http://forum.sabayonlinux.org/viewtopic.php?f=60&amp;t=18403&lt;/ref&gt; ||
+|-
+ | 5.1 GNOME/KDE || 12 December 2009&lt;ref name=&quot;sabayonlinux2&quot;&gt;http://forum.sabayonlinux.org/viewtopic.php?f=60&amp;t=19265&lt;/ref&gt; ||
+|-
+ | CoreCD 5.1 || 20 December 2009&lt;ref&gt;http://forum.sabayonlinux.org/viewtopic.php?f=60&amp;t=19364&lt;/ref&gt; ||
+|-
+ | 5.1 x86 GAMING EDITION || 25 December 2009&lt;ref&gt;http://wgo.wolf911.us/?p=304&lt;/ref&gt; || Special Christmas versions containing only games
+|-
+ | 5.2 GNOME/KDE || 26 March 2010&lt;ref name=&quot;forum.sabayon.org&quot;&gt;http://forum.sabayon.org/viewtopic.php?f=60&amp;t=20159&lt;/ref&gt; ||
+|-
+ | 5.3 GNOME/KDE || 5 June 2010&lt;ref name=&quot;sabayon1&quot;&gt;http://forum.sabayon.org/viewtopic.php?f=60&amp;t=20821&lt;/ref&gt; ||
+|-
+ | 5.3 SpinBase || 18 June 2010&lt;ref name=&quot;sabayon2&quot;&gt;http://forum.sabayon.org/viewtopic.php?f=60&amp;t=20991&amp;sid=c3b3c166cbfea285210bd621007ebea8&lt;/ref&gt; || Replaces the CoreCD
+|-
+ | 5.3 CoreCDX || 18 June 2010&lt;ref name=&quot;sabayon2&quot;/&gt; || CoreCD with X and Fluxbox
+|-
+ | 5.3 LXDE/XFCE || 19 July 2010&lt;ref name=&quot;sabayon3&quot;&gt;http://forum.sabayon.org/viewtopic.php?f=60&amp;t=21308&lt;/ref&gt; || First stable version featuring LXDE/XFCE
+|-
+ | 5.3 SpinBase/OpenVZ Templates || 19 July 2010&lt;ref name=&quot;sabayon3&quot;/&gt; || First stable version featuring ready to use [[OpenVZ]] templates
+|-
+ | 5.4 GNOME/KDE || 30 September 2010&lt;ref name=&quot;sabayon4&quot;&gt;http://forum.sabayon.org/viewtopic.php?f=60&amp;t=21876&lt;/ref&gt; ||
+|-
+ | 5.5 GNOME/KDE || 27 January 2011&lt;ref name=&quot;sabayon5.5&quot;&gt;http://www.sabayon.org/pages/show/id/110&lt;/ref&gt; ||
+|-
+ | 6 GNOME/KDE || 23 June 2011&lt;ref name=&quot;sabayon6&quot;&gt;http://forum.sabayon.org/viewtopic.php?f=60&amp;t=24397&lt;/ref&gt; ||
+|-
+ | 7 GNOME/KDE/XFCE || 11 October 2011 ||
+|-
+|}
+
+==See also==
+* [[Gentoo Linux]]
+* [[LiveDistro]]
+
+==References==
+{{Reflist|colwidth=30em}}
+
+==External links==
+* {{Official website|http://www.sabayonlinux.org/}}
+* [http://distrowatch.com/table.php?distribution=sabayon Sabayon Linux on DistroWatch]
+
+{{LXDE}}
+{{Linux distributions}}
+{{Use dmy dates|date=September 2010}}
+
+[[Category:Gentoo Linux derivatives]]
+[[Category:KDE]]
+[[Category:X86-64 Linux distributions]]
+
+[[ar:Ø³Ø§Ø¨ÙÙÙ ÙÙÙÙØ³]]
+[[ca:Sabayon Linux]]
+[[cs:Sabayon Linux]]
+[[de:Sabayon Linux]]
+[[el:Sabayon Linux]]
+[[es:Sabayon Linux]]
+[[fa:Ø³Ø§Ø¨Ø§ÛÙÙ ÙÛÙÙÚ©Ø³]]
+[[fr:Sabayon Linux]]
+[[ko:ì¬ë°ì ë¦¬ëì¤]]
+[[id:Sabayon Linux]]
+[[it:Sabayon Linux]]
+[[ml:à´¸à´¬à´¯àµàµ» à´²à´¿à´¨à´àµà´¸àµ]]
+[[nl:Sabayon Linux]]
+[[ja:Sabayon Linux]]
+[[no:Sabayon]]
+[[pl:Sabayon Linux]]
+[[pt:Sabayon Linux]]
+[[ro:Sabayon Linux]]
+[[ru:Sabayon Linux]]
+[[fi:Sabayon Linux]]
+[[sv:Sabayon Linux]]
+[[tr:Sabayon Linux]]
+[[zh:Sabayon Linux]]</rev></revisions></page></pages></query></api>

@@ -1,0 +1,140 @@
+<?xml version="1.0"?><api><query><pages><page pageid="4807639" ns="0" title="Microsoft Bookshelf"><revisions><rev xml:space="preserve">[[Image:MicrosoftBKSelft2000.JPG|right|120px]]
+
+'''Microsoft Bookshelf''' was a [[Reference work|reference]] collection introduced in 1987 as part of [[Microsoft]]'s extensive work in promoting [[CD-ROM]] technology as a distribution medium for [[electronic publishing]].  The original [[MS-DOS]] version showcased the massive storage capacity of CD-ROM technology, and was accessed while the user was using one of 13 different word processor programs that Bookshelf supported.  Subsequent versions were produced for [[Microsoft Windows|Windows]] and became a commercial success as part of the [[Microsoft Home]] brand.  It was often bundled with [[personal computers]] as a cheaper alternative to the [[Microsoft Encarta|Encarta Suite]]. The Encarta Deluxe Suite / Reference Library versions also bundled Bookshelf.
+
+==Content==
+Microsoft Bookshelf was discontinued in 2000. In later editions of the Encarta suite (Encarta 2000 and onwards), Bookshelf was replaced with a dedicated ''Encarta Dictionary'', a superset of the printed edition. There has been some controversy over the decision, since the dictionary lacks the other books provided in Bookshelf which many found to be a useful reference, such as the dictionary of quotations (replaced with a quotations section in ''Encarta'' that links to relevant articles and people) and the Internet Directory, although the directory is now a [[wikt:moot point|moot point]] since many of the sites listed in offline directories no longer exist.
+
+The original 1987 edition contained ''[[Roget's Thesaurus|The Original Roget's Thesaurus of English Words and Phrases]]'', ''[[The American Heritage Dictionary of the English Language]]'', [[World Almanac]] and Book of Facts, [[Bartlett's Familiar Quotations]], [[The Chicago Manual of Style]] (13th Edition), the U.S. ZIP Code Directory, Houghton Mifflin Usage Alert, [[Houghton Mifflin]] Spelling Verifier and Corrector, Business Information Sources, and Forms and Letters.&lt;ref name=&quot;Bookshelf 87&quot;&gt;{{cite web
+ |title=Computers for Lawyers|work=Chapter 25
+ |first=Paul|last=Bernstein|publisher=ATLA Press 1992 ISBN 0-941916-64-2|year=1992
+ |id=ISBN 0-941916-64-2|accessdate=2006-04-18
+ |url=http://www.cyberbarassociation.net/cfl/book/chpt25.htm}}&lt;/ref&gt; Titles in non-US versions of Bookshelf were different. For example, the 1997 UK edition included the Chambers Dictionary, Bloomsbury Treasury of Quotations, and Hutchinson Concise Encyclopedia.&lt;ref&gt;[http://www.pcpro.co.uk/reviews/software/722/bookshelf-british-reference-collection Bookshelf British Reference Collection]&lt;/ref&gt;
+
+The Windows release of Bookshelf added a number of new reference titles, including ''The Concise [[Columbia Encyclopedia]]'' and an [[Web directory|Internet Directory]]. Other titles were added and some were dropped in subsequent years.  By 1994, the [[English language|English-language]] version also contained the ''[[Columbia Dictionary of Quotations]]''; ''The Concise [[Columbia Encyclopedia]]''; the ''[[Hammond Intermediate World Atlas]]''; and ''[[The People's Chronology]]''.&lt;ref name=&quot;Bookshelf 94&quot;&gt;{{cite web
+ |title=Microsoft Bookshelf 1994
+ |first=Birger|last=Nielsen|author=Birger Nielsen|work=The Tea Page
+ |url=http://www.246.dk/teamsb94.html|year=2006|accessdate=2006-04-18}}&lt;/ref&gt; By 2000, the collection came to include the ''[[Encarta]] Desk Encyclopedia'', the ''Encarta Desk Atlas'', the ''Encarta Style Guide'' and a specialized ''Computer and Internet Dictionary'' by [[Microsoft Press]].
+
+==Technology==
+===Bookshelf 1.0 engine===
+Bookshelf 1.0 used a [[Proprietary software|proprietary]] [[hypertext]] engine that Microsoft acquired when it bought the company Cytation in 1986.&lt;ref name=&quot;Microsoft 1980s&quot;&gt;{{cite web
+ |title=A History of the Personal Computer: The People and the Technology 
+ |work=Chapter 12 Microsoft in the 1980s
+ |first=Roy|last=Allan|publisher=Allan Publishing 2001 ISBN 0-9689108-0-7 |year=2001
+ |id=ISBN 0-9689108-0-7|accessdate=2006-04-18
+ |url=http://www.retrocomputing.net/info/allan/eBook12.pdf
+}}&lt;/ref&gt; Also used for Microsoft Stat Pack and Microsoft Small Business Consultant, it was a [[Terminate and Stay Resident]] (TSR) program that ran alongside a dominant program, unbeknownst to the dominant program. Like Apple's similar [[Hypercard]] reader, Bookshelf engine's files used a single [[compound document]], containing large numbers of subdocuments (&quot;cards&quot; or &quot;articles&quot;).  They both differ from current browsers which normally treat each &quot;page&quot; or &quot;article&quot; as a separate file.
+
+Though similar to Apple's [[Hypercard]] reader in many ways, the Bookshelf engine had several key differences. Unlike Hypercard files, Bookshelf files required compilation and complex markup codes. This made the files more difficult to pirate, addressing a key concern of early electronic publishers. Furthermore, Bookshelf's engine was designed to run as fast as possible on slow first-generation [[CD-ROM]] drives, some of which required as much as a half-second to move the drive head. Such hardware constraints made Hypercard impractical for high-capacity CD-ROMs. Bookshelf also had full text searching capability, which made it easy to find needed information.
+
+===Bookshelf 2.0 engine===
+Collaborating with [[DuPont]], the Microsoft CD-ROM division developed a [[Microsoft Windows|Windows]] version of its engine for applications as diverse as [[Document management system|document management]], [[online help]], and a CD-ROM [[encyclopedia]]. In a [[skunkworks project]], these developers worked secretly with Multimedia Division developers so that the engine would be usable for more ambitious multimedia applications. Thus they integrated a multimedia [[markup language]], [[full text search]], and extensibility using [[software componentry|software objects]],&lt;ref name=&quot;Viewer 2.0&quot;&gt;{{cite book|
+  title=Microsoft Multimedia Viewer How-To Cd: Create Exciting Multimedia With Video, Animation, Music, and Speech for Windows/Book and Cd|
+  last=Pruitt|first=Stephen|publisher=Waite Group Pr|isbn=1-878739-60-3|url=http://www.amazon.com/dp/1878739603/
+}}&lt;/ref&gt; all of which are commonplace in modern internet browsing.
+
+In 1992, Microsoft started selling the Bookshelf engine to third-party developers, marketing the product as Microsoft Multimedia Viewer. The idea was that such a tool would help a burgeoning growth of CD-ROM titles that would spur demand for Windows. Although the engine had multimedia capabilities that would not be matched by Web browsers until the late 1990s, Microsoft Viewer did not enjoy commercial success as a standalone product. However, Microsoft continued to use the engine for its [[Encarta]] and [[WinHelp]] applications, though the multimedia functions are rarely used in Windows help files.
+
+===Viewer 3.0===
+In 1993, the developers who were working on the next generation viewer were moved to the [[Cairo (operating system)|Cairo systems group]] which was charged with delivering [[Bill Gates]]' 'vision' of 'Information at your fingertips'.  This advanced browser was a fully componentized application using what are now known as [[Component Object Model]] objects, designed for hypermedia browsing across large networks and whose main competitor was thought to be [[Lotus Notes]].  Long before Netscape appeared, this team, known as the WEB (web enhanced browser) team had already shipped a network capable hypertext browser capable of doing everything that HTML browsers would not be able to do until the turn of the century.  Nearly all technologies of Cairo shipped.  The WEB browser was not one of them, though it influenced the design of many other common Microsoft technologies.
+
+==Versions==
+* Versions for DOS/Windows/Mac:
+** Bookshelf 1987 Edition
+** Bookshelf 1992 Edition
+** Bookshelf '94
+** Bookshelf '95
+** Bookshelf 1996-'97 Edition (Last version for Windows 3.1) &lt;ref&gt;[http://www.microsoft.com/presspass/press/1996/apr96/bksh96pr.mspx Bookshelf 1996-97 Edition Press Release]&lt;/ref&gt;
+** Bookshelf 98 (Last version for Macintosh)
+** Bookshelf 99
+** Bookshelf 2000 (last English version for Windows)
+** Bookshelf 3.0 Japanese (last version for Windows)
+
+===US version contents===
+
+{| class=&quot;wikitable sortable&quot; border=&quot;1&quot; cellpadding=&quot;1&quot; cellspacing=&quot;0&quot; style=&quot;font-size: 80%; border: gray solid 1px; border-collapse: collapse; text-align: center; width: auto; table-layout: fixed;&quot;
+|- style=&quot;background: #ececec;&quot;
+! style=&quot;width: 12em&quot; | Package
+! [[Dictionary]]
+! [[Thesaurus]]
+! [[Almanac]]
+! [[Chronology]] or [[Timeline]]
+! [[Quotation|Quotation Dictionary]]
+! [[Encyclopedia]]
+! [[Atlas]]
+! [[Web directory]]
+! Other reference materials
+! Other reference materials
+|-
+! style=&quot;text-align: center; background: #ececec;&quot; | Bookshelf 95
+! The American Heritage Dictionary, 3rd Ed.
+! Roget's Thesaurus
+! World Almanac and Book of Facts 1995
+! The People's Chronology
+! Columbia Dictionary of Quotations
+! The Concise Columbia Encyclopedia Third Edition
+! Hammond World Atlas
+! Internet Directory 95
+! ZIP Code and Post Office Directory
+!
+|-
+! style=&quot;text-align: center; background: #ececec;&quot; | Bookshelf 1996-'97 Edition
+! The American Heritage Dictionary, 3rd Ed.
+! Roget's Thesaurus
+! World Almanac and Book of Facts 1996
+! The People's Chronology
+! Columbia Dictionary of Quotations
+! The Concise Columbia Encyclopedia Third Edition
+! Concise Encarta 96 World Atlas
+! Internet Directory 96
+! ZIP Code and Post Office Directory
+!
+|-
+! style=&quot;text-align: center; background: #ececec;&quot; | Bookshelf 98
+! The American Heritage Dictionary, 3rd Ed.
+! Roget's Thesaurus
+! World Almanac and Book of Facts 1997
+! The People's Chronology
+! Columbia Dictionary of Quotations
+! Encarta 98 Desk Encyclopedia
+! Encarta 98 Desk World Atlas
+! Internet Directory 98
+! ZIP Code and Post Office Directory
+! Computer &amp; Internet Dictionary
+|-
+! style=&quot;text-align: center; background: #ececec;&quot; | Bookshelf 99
+! The American Heritage Dictionary, 3rd Ed.
+! Roget's Thesaurus
+! Encarta 98 New World Almanac
+! Encarta New World Timeline
+! Columbia Dictionary of Quotations
+! Encarta 99 Desk Encyclopedia
+! Encarta 99 Desk World Atlas
+!
+! Encarta Grammar &amp; Style Guide
+! Computer &amp; Internet Dictionary
+|-
+! style=&quot;text-align: center; background: #ececec;&quot; | Bookshelf 2000
+! The American Heritage Dictionary, 3rd Ed.
+! Roget's Thesaurus
+! Encarta 2000 New World Almanac
+! Encarta 2000 New World Timeline
+! Columbia Dictionary of Quotations
+! Encarta 2000 Desk Encyclopedia
+! Encarta 2000 Desk World Atlas
+!
+! Encarta Manual of Style &amp; Usage
+! Computer &amp; Internet Dictionary
+|}
+
+==References==
+{{reflist}}
+
+[[Category:Reference works]]
+[[Category:Discontinued Microsoft software|Bookshelf]]
+[[Category:Virtual learning environments]]
+[[Category:Windows software]]
+
+[[it:Microsoft Bookshelf]]
+[[ja:Microsoft Bookshelf Basic]]</rev></revisions></page></pages></query></api>

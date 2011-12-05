@@ -1,0 +1,110 @@
+<?xml version="1.0"?><api><query><pages><page pageid="80312" ns="0" title="UAE (emulator)"><revisions><rev xml:space="preserve">{{Infobox software
+| name                   = UAE
+| title                  = 
+| logo                   = &lt;!-- [[File: ]] --&gt;
+| screenshot             = [[File:E-UAE.png|200px|center]]
+| caption                = E-UAE 0.8.27 configuration and control panel
+| collapsible            = 
+| author                 = 
+| developer              = Bernd Schmidt (UAE)&lt;br /&gt;Toni Wilen (WinUAE)&lt;br /&gt;Richard Drummond (E-UAE)&lt;br /&gt;Mustafa 'GnoStiC' TUFAN (PUAE)
+| released               = 1996&lt;!-- {{Start date|YYYY|MM|DD|df=yes/no}} --&gt;
+| discontinued           = 
+| latest release version = 2.3.2 (WinUAE)
+| latest release date    = {{Start date and age|2011|06|02|df=yes/no}}
+| latest preview version = 0.8.29 (UAE)
+| latest preview date    = &lt;!-- {{Start date and age|YYYY|MM|DD|df=yes/no}} --&gt;
+| frequently updated     = &lt;!-- DO NOT include this parameter unless you know what it does --&gt;
+| programming language   = 
+| operating system       = [[cross-platform]]
+| platform               = 
+| size                   = 
+| language               = 
+| status                 = 
+| genre                  = [[Emulator]]
+| license                = [[GNU General Public License]]
+| website                = {{URL|www.amigaemulator.org}}
+}}
+'''UAE''' is a [[computer]] [[emulator]] which emulates the [[hardware]] of the [[Commodore Amiga]] range of computers. Released under the [[GNU General Public License]], UAE is [[free software]].
+
+==History==
+UAE was released in 1996 and was originally called the ''Unusable Amiga Emulator'', due to its inability to boot.&lt;ref name=amigahistory&gt;{{cite web|url=http://www.amigau.com/aig/emulators/uae.html|title=UAE- Ultimate Amiga Emulator|work=Amiga history guide|year=2002}}&lt;/ref&gt;
+In its early stages, it was known as ''[[Unix]] Amiga Emulator'' and later with other names as well. Since none of the popular expansions fit any more, the abbreviation no longer stands for anything, and the software is simply known as UAE &amp;mdash; this occasionally gets [[backronym]]ed as Universal Amiga Emulator or Ubiquitous Amiga Emulator.
+
+==Features==
+UAE is almost a full featured Amiga emulator. It emulates most of its functions:
+
+* [[Original Amiga chipset|Original Chip Set]] (OCS), [[Enhanced Chip Set]] (ECS) and [[Advanced Graphics Architecture]] (AGA), although AGA emulation remained problematic&lt;ref name=amigahistory/&gt;
+* I/O devices ([[floppy disk]] driver, [[joystick]], [[mouse]] and [[serial ports]])
+* Processor ([[Motorola 68k]])
+
+For software, UAE may use [[disk image]]s made from original Amiga [[floppy disk]]s. These images have the file extension of &quot;[[Amiga Disk File|ADF]]&quot; (Amiga Disk File). Actual Amiga disks cannot be used, because of limitations in the [[floppy controllers]] used in other computers&lt;ref&gt;{{cite web|url=http://web.archive.org/web/20071104132034/www.suite101.com/article.cfm/amiga/25486/2|title=UAE - The Amiga Emulator|last=Chandler|first=John|work=Suite101|p=2|year=1999|accessdate=2009-07-15}}&lt;/ref&gt;
+Images of Amiga [[formatted]] [[hard drive]]s can also be made. UAE also supports mapping [[host operating system]]'s directories to Amiga hard drives.
+
+==Portability==
+UAE has been ported to many host [[operating system]]s, including [[Linux]], [[Mac OS]], [[FreeBSD]], [[DOS]], [[Microsoft Windows]], [[RISC OS]], [[BeOS]], [[Palm OS]], the [[Xbox]] console, the [[PlayStation Portable|PSP]] and [[GP2X]] handhelds, the [[Wii]] console, and even [[AmigaOS]], [[MorphOS]] and [[AROS]], where it allows software that requires the Amiga chipset to be run on [[PowerPC]]-based AmigaOS machines.
+
+==Emulation speed==
+There have been many threads in the past on [[Usenet]] and other public forums where people argued about the possibility of writing an Amiga emulator. Some considered UAE to be attempting the impossible; to be demanding that a system read, process and output 100 MB/s of data when the fastest PC was a 66&amp;nbsp;MHz [[486]], while keeping various emulated chips (the Amiga chipset) all in sync and appearing as they were supposed to appear to software.
+
+For a long time, UAE was almost entirely unusable but slowly and step by step, it fleshed out its support of the Amiga chipset and by 1998 was able to more-or-less emulate an [[Amiga 500]] at full speed.
+
+Today, UAE is usable, thanks partly to the effort taken to develop it and partly to the big improvements in technology that brought computers many times faster than those UAE was initially expected to run on. Many [[Amiga games]] and applications can run smoothly on a [[Pentium II]]-era system. The realization that a useful Amiga emulator could be written contributed to an increase in enthusiasm about emulation, which started or sped-up efforts to write emulators for other and often less popular computer and electronic game architectures.
+
+A major improvement was made in 2000 by Bernd Meyer with the use of [[Just-in-time compilation]],&lt;ref name=amigahistory/&gt; which significantly improved the emulation speed, to the extent that average PCs could now emulate some [[Amiga software]] faster than any real Amiga could run it. UAE can use as much of the host's power in [[native mode]] as possible, or balance it with other requirements of the host OS, or to accurately reflect the original speed, depending on a user's choice. UAE also provides an [[RTG]]-compatible &quot;[[video card]]&quot; for the Amiga side of the emulation which is tailored for display on the host hardware, so as not to be limited to the emulation of the original Amiga video hardware.
+
+==Project development==
+There are currently two main [[fork (software)|fork]]s of the original program:
+
+* '''WinUAE''', designed to run on [[Microsoft Windows|Windows]]
+* '''PUAE''', designed to run on *nix platforms (a fork of the inactive E-UAE) 
+
+Today the most active fork is WinUAE; however, current versions of this still contain some bugs and compatibility issues. WinUAE has reasonable compatibility for most software but, just like a &quot;real&quot; Amiga, for some old games it requires careful configuration in order to match the originally-supported hardware. For example, [[68000]] code could cause an exception on an emulated 68040, just like it would perhaps do on an [[Amiga 4000]]/040.
+
+==See also==
+{{Portal|Free software}}
+
+*[[Amiga Forever]]
+*[[Basilisk II]], [[Apple Macintosh]] emulator which uses UAE to emulate the 68k processor
+*[[Fellow (computing)|Fellow]], another Amiga emulator which was released not too long after the first usable versions of UAE, and generated [[competition]] beneficial to both projects.
+*[[POSE (Palm OS Emulator)|POSE]], [[Palm OS]] emulator that is based on Copilot, which in turn was based on UAE's m68k emulation
+*[[TiEmu]], [[Texas Instruments]] [[calculator]] emulator, which uses UAE for the core m68k emulation
+
+==References==
+{{Reflist}}
+{{Refbegin}}
+* Announcement by Bernd Schmidt on Usenet, Message-ID: &lt;[http://groups.google.com/group/comp.emulators.misc/msg/000d6d55799c8fb2?dmode=source&amp;hl=en 421jqo$91h@news.rwth-aachen.de]&gt;.
+* Announcement by Bernd Meyer of the Just In Time compiler on Usenet, Message-ID: &lt;[http://groups.google.com/group/comp.sys.amiga.advocacy/msg/7641384925acc7e5?dmode=source&amp;utoken=2mXi4zcAAABT3izeGZqQMEyV6xT3IfTXE2QmY8oDF1sAdvcxt9QZTyMa_sdYz5lVn_2UDP88P857iwONH1Yfp8McFSyNlTKa 8nbkst$ta9$1@wombat.cs.monash.edu.au]&gt;.
+{{Refend}}
+
+==External links==
+* [http://www.amigaemulator.org UAE Website]
+* [http://www.winuae.net WinUAE Website]
+* [http://www.rcdrummond.net/uae/ E-UAE Website]
+* [https://github.com/GnoStiC/PUAE PUAE - fork of E-UAE]
+* [http://gbamiga.elowar.com/ Gamebase Amiga] - provides a single click rom starting interface on top of WinUAE
+
+{{AmigaOS}}
+
+{{DEFAULTSORT:Uae (Emulator)}}
+[[Category:Amiga emulators]]
+[[Category:Free emulation software]]
+[[Category:GP2X emulation software]]
+[[Category:Mac OS emulation software]]
+[[Category:Mac OS X emulation software]]
+[[Category:MorphOS emulation software]]
+[[Category:Linux emulation software]]
+[[Category:Unix emulation software]]
+[[Category:Windows emulation software]]
+[[Category:Amiga]]
+[[Category:68k emulators]]
+[[Category:2005 software]]
+[[Category:Cross-platform software]]
+
+[[de:Amiga-Emulator]]
+[[es:Unix Amiga Emulator]]
+[[it:UAE (emulatore)]]
+[[pl:UAE (emulator)]]
+[[ru:UAE]]
+[[fi:UAE]]
+[[sv:UAE (emulator)]]
+[[tr:UAE]]</rev></revisions></page></pages></query></api>

@@ -1,0 +1,382 @@
+<?xml version="1.0"?><api><query><pages><page pageid="21347315" ns="0" title="Linux kernel"><revisions><rev xml:space="preserve">{{Infobox OS
+&lt;!-- The OS template doesn't fit nor the software2 template so we must create a kernel template --&gt;
+| name                 = Linux &lt;!-- This is the name used to transclude the {{Latest stable software release/Linux}} and {{Latest preview software release/Linux}} version templates --&gt;
+| logo                 = [[Image:Tux.svg|50px|Tux]]
+| screenshot           = [[File:Linux 3.0.0 boot.png|frameless]]
+| caption              = Linux kernel 3.0.0 booting
+| author               = [[Linus Torvalds]]
+| developer            = [[Linus Torvalds]] and thousands of collaborators
+| family            = [[Unix-like]]
+| released             = 1991
+| frequently updated   = yes &lt;!-- Release version update? Don't edit this page, just click on the version number! --&gt;
+| programming language = [[C (programming language)|C]]
+| language             = English
+| kernel type          = [[Monolithic kernel|Monolithic]]
+| license              = [[GNU General Public License]] version 2 (only)&lt;ref&gt;{{cite web
+ | author = InfoWorld
+ | url = http://www.infoworld.com/article/06/07/28/HNtorvaldsnofan_1.html
+ | title = Linux creator Torvalds still no fan of GPLv3
+ | accessdate= 2008-10-11
+}}&lt;/ref&gt;&lt;ref name=&quot;COPYING&quot;/&gt; plus various closed source [[binary blob]]s&lt;ref name=&quot;Blobs&quot; /&gt;
+| website              = [http://www.kernel.org/ www.kernel.org]
+}}
+
+The '''Linux kernel''' is an operating system [[kernel (computing)|kernel]] used by the [[Linux]] family of [[Unix-like]] [[operating system]]s.&lt;ref name=&quot;README&quot;&gt;{{cite web|url=http://git.kernel.org/?p=linux/kernel/git/torvalds/linux-2.6.git;a=blob;f=README;h=90a07658ede14840346eee6610648bcf4ec79997;hb=f3b8436ad9a8ad36b3c9fa1fe030c7f38e5d3d0b |title=README |publisher=git.kernel.org |date= |accessdate=2010-11-12}}&lt;/ref&gt; It is one of the most prominent examples of [[free and open source software]].&lt;ref&gt;{{cite web | url=http://lkml.org/lkml/2006/9/25/161 |author=Linus Torvalds |date=2006-09-25 |title=Re: GPLv3 Position Statement}}&lt;/ref&gt;
+
+The Linux kernel is released under the [[GNU General Public License]] version 2 (GPLv2)&lt;ref name=&quot;COPYING&quot;&gt;[http://git.kernel.org/?p=linux/kernel/git/torvalds/linux-2.6.git;a=blob;f=COPYING COPYING]&lt;!--this updates with the kernel, at citation was ;h=ca442d313d86dc67e0a2e5d584b465bd382cbf5c;hb=f3b8436ad9a8ad36b3c9fa1fe030c7f38e5d3d0b--&gt;&lt;/ref&gt; (plus some [[Firmware|firmware images]] with various non-free licenses), and is developed by contributors worldwide. Day-to-day development discussions take place on the [[Linux kernel mailing list]].
+
+The Linux kernel was initially conceived and created by Finnish [[computer science]] student&lt;ref&gt;{{cite web |author=Marjorie Richardson |title=Interview: Linus Torvalds |url=http://www.linuxjournal.com/article/3655 |date=1 November 1999 |publisher=Linux Journal |accessdate=20 August 2009}}&lt;/ref&gt; [[Linus Torvalds]] in 1991. Linux rapidly accumulated developers and users who adapted code from other [[free software]] projects for use with the new operating system.&lt;ref&gt;{{cite web|url=http://www.oreilly.com/openbook/freedom/ch09.html |title=Free as in Freedom by Sam Williams. O'Reilly books, 2002 |publisher=Oreilly.com |date= |accessdate=2010-11-12}}&lt;/ref&gt; The Linux kernel has received contributions from thousands of programmers.&lt;ref&gt;{{cite web |url=http://www.linuxfoundation.org/publications/linuxkerneldevelopment.php |title=Linux Kernel Development: How Fast it is Going, Who is Doing It, What They are Doing, and Who is Sponsoring It |author=Greg Kroah-Hartman |authorlink=Greg Kroah-Hartman |date=April 2008 |quote=Since 2005, over 3700 individual developers from over 200 different companies have contributed to the kernel. |postscript=.}}&lt;/ref&gt; Many [[Linux distribution]]s have been released based upon the Linux kernel.
+
+==History==
+{{See also|History of Linux}}
+
+In April 1991, [[Linus Torvalds]], a 21-year-old student at the [[University of Helsinki]], [[Finland]] started working on some simple ideas for an operating system. He started with a [[Context switch|task switcher]] in [[x86 assembly language|Intel 80386 assembly language]] and a [[Pseudo terminal|terminal driver]]. On 25 August 1991, Torvalds posted the following to ''comp.os.minix'', a [[Usenet newsgroup|newsgroup]] on [[Usenet]]:
+
+{{quote|I'm doing a (free) operating system (just a hobby, won't be big and professional like gnu) for 386(486) AT clones. This has been brewing since April, and is starting to get ready. I'd like any feedback on things people like/dislike in minix, as my OS resembles it somewhat (same physical layout of the file-system (due to practical reasons) among other things).
+
+I've currently ported bash(1.08) and gcc(1.40), and things seem to work. This implies that I'll get something practical within a few months [...] Yes - it's free of any minix code, and it has a multi-threaded fs. It is NOT portable (uses 386 task switching etc), and it probably never will support anything other than AT-harddisks, as that's all I have :-(.''
+
+[...] It's mostly in C, but most people wouldn't call what I write C. It uses every conceivable feature of the 386 I could find, as it was also a project to teach me about the 386. As already mentioned, it uses a [[Memory management unit|MMU]], for both paging (not to disk yet) and segmentation. It's the segmentation that makes it REALLY 386 dependent (every task has a 64Mb segment for code &amp; data - max 64 tasks in 4Gb. Anybody who needs more than 64Mb/task - tough cookies). [...] Some of my &quot;C&quot;-files (specifically mm.c) are almost as much assembler as C. [...] Unlike minix, I also happen to LIKE interrupts, so interrupts are handled without trying to hide the reason behind them.&lt;ref&gt;{{cite newsgroup | id = 1991Aug25.205708.9541@klaava.Helsinki.FI | first = Linus Benedict | last = Torvalds | url = http://groups.google.com/group/comp.os.minix/msg/b813d52cbc5a044b | newsgroup = comp.os.minix | title = What would you like to see most in minix?}}&lt;/ref&gt;}}
+
+After that, many people contributed code to the project. Early on, the [[MINIX]] community contributed code and ideas to the Linux kernel. At the time, the [[GNU Project]] had created many of the components required for a free operating system, but its own kernel, [[GNU Hurd]], was incomplete and unavailable. The [[Berkeley Software Distribution|BSD]] operating system had not yet freed itself from [[Berkeley Software Distribution#Net/2 and legal troubles|legal encumbrances]]. Despite the limited functionality of the early versions, Linux rapidly accumulated developers and users.
+
+By September 1991, Linux version 0.01 was released, uploading it to the FTP server (ftp.funet.fi) of the Finnish University and Research Network (FUNET). It had 10,239 lines of code. In October 1991, Linux version 0.02 was released.&lt;ref&gt;{{cite newsgroup | newsgroup = comp.os.minix | first = Linus Benedict | last = Torvalds | url = http://groups.google.com/group/comp.os.minix/msg/2194d253268b0a1b | title = Free minix-like kernel sources for 386-AT | id = 1991Oct5.054106.4647@klaava.Helsinki.FI }}&lt;/ref&gt;
+
+In December 1991, Linux 0.11 was released. This version was the first to be [[self-hosting|self-hosted]] - Linux 0.11 could be compiled by a computer running Linux 0.11. When he released version 0.12 in February 1992, Torvalds adopted the [[GNU General Public License]] (GPL) over his previous self-drafted license, which had not permitted commercial redistribution.&lt;ref&gt;{{cite web|url=http://www.kernel.org/pub/linux/kernel/Historic/old-versions/RELNOTES-0.12|title=Release Notes for Linux v0.12|first=Linus|last=Torvalds|publisher=The Linux Kernel Archives|accessdate=2007-02-21}}&lt;/ref&gt;
+
+A newsgroup known as ''alt.os.linux'' was started, and on 19 January 1992, the first post to alt.os.linux was made.&lt;ref&gt;{{cite newsgroup | newsgroup = alt.os.linux | newsgroup = comp.os.minix | id = 1992Jan19.085628.18752@cseg01.uark.edu | first = David W | last = Summers | url = http://groups.google.com/group/alt.os.linux/msg/c638df159fa15159 | title = Troubles with Partitions | date = 19 January 1992 | accessdate = 2007-01-07 }}&lt;/ref&gt; On 31 March 1992, alt.os.linux became ''comp.os.linux''.&lt;ref&gt;{{cite newsgroup | newsgroup = comp.os.linux | first = Alan B | last = Clegg | id = 1992Mar31.131811.19832@rock.concert.net | url = http://groups.google.com/group/comp.os.linux/msg/81fe3618c4803d1e | date = 31 March 1992 | accessdate = 2007-01-07 | title = It's here! }}&lt;/ref&gt;
+
+The [[X Window System]] was soon ported to Linux.  In March 1992, Linux version 0.95 was the first to be capable of running X. This large version number jump (from 0.1x to 0.9x) was due to a feeling that a version 1.0 with no major missing pieces was imminent.  However, this proved to be somewhat overoptimistic, and from 1993 to early 1994, 15 development versions of version 0.99 appeared.
+
+On 14 March 1994, Linux 1.0.0 was released, with 176,250 lines of code. In March 1995, Linux 1.2.0 was released (310,950 lines of code).
+
+Version 2 of Linux, released on 9 June 1996, was followed by additional major versions under the version 2 header:
+* 25 January 1999 - Linux 2.2.0 was released (1,800,847 lines of code).
+* 18 December 1999 - [[IBM mainframe]] patches for 2.2.13 were published, allowing Linux to be used on enterprise-class machines.
+* 4 January 2001 - Linux 2.4.0 was released (3,377,902 lines of code).
+* 17 December 2003 - Linux 2.6.0 was released (5,929,913 lines of code).
+
+On 21 July 2011 Linus Torvalds announced the release of Linux 3.0: &quot;Gone are the 2.6.&lt;bignum&gt; days&quot;.&lt;ref name=&quot;Linux 3.0` release&quot;&gt;[https://lwn.net/Articles/452531/ Linux 3.0 release], [[Linus Torvalds]],  [[Linux Kernel Mailing List]], Thu, 21 Jul 2011 19:59:53 -0700&lt;/ref&gt; The version bump  is not about major technological changes when compared to Linux 2.6.39;&lt;ref name=&quot;Linux Kernel Data&quot;&gt;&quot;[http://www.h-online.com/open/features/What-s-new-in-Linux-2-6-39-1242910.html?page=4 Linux Kernel Data].&quot;&lt;/ref&gt; it marks the kernel's 20th anniversary.&lt;ref name=&quot;Mark Hachman&quot;&gt;[http://www.pcmag.com/article2/0,2817,2388926,00.asp Linux 3.0 Released; Linus Torvalds Explains Why You Shouldn't Care] by Mark Hachman, July 22, 2011 01:35pm EST, [[PC Magazine]]&lt;/ref&gt;
+
+==Legal aspects==
+===Licensing terms===
+
+Initially, Torvalds released Linux under a license which forbade any commercial use. This was changed in version 0.12 to the [[GNU General Public License]] (GPL). This license allows distribution and sale of possibly modified and unmodified versions of Linux but requires that all those copies be released under the same license and be accompanied by the complete corresponding source code.
+
+Torvalds has described licensing Linux under the GPL as the &quot;best thing I ever did.&quot;&lt;ref&gt;{{cite web|url=http://hotwired.goo.ne.jp/matrix/9709/5_linus.html|title=The Pragmatist of Free Software|first=Hiroo|last=Yamagata|year=1997|accessdate=2007-02-21|publisher=HotWired |archiveurl = http://web.archive.org/web/20070210224351/http://hotwired.goo.ne.jp/matrix/9709/5_linus.html &lt;!-- Bot retrieved archive --&gt; |archivedate = 2007-02-10}}&lt;/ref&gt;
+
+==== GPL version 3 ====
+{{Main|GNU_General_Public_License#Version_3|l1=GNU General Public License: Version 3}}
+
+Currently, Linux is licensed only under version 2 of the GPL,&lt;ref name=&quot;COPYING&quot;/&gt; without offering the licensee the option to choose &quot;any later version&quot; (unlike much other GPL software), and there is some controversy over how easily it could be changed to use later GPL versions such as version 3 (and whether this is even desirable).&lt;ref&gt;{{cite web|url=http://lwn.net/Articles/169797/|title=GPLv3 and the kernel|publisher=[[LWN.net]]|date=2006-01-31|accessdate=2007-02-21|last=Corbet|first=Jonathan}}&lt;/ref&gt; Torvalds himself specifically indicated upon the release of version 2.4.0 that his own code is only under version 2.&lt;ref&gt;{{cite web|url=http://www.uwsg.iu.edu/hypermail/linux/kernel/0009.1/0096.html|title=Linux-2.4.0-test8|work=Linux-kernel mailing list archive|publisher=Unix Systems Support Group of [[Indiana University]]|last=Torvalds|first=Linus|accessdate=2007-02-21|date=2000-09-08}}&lt;/ref&gt; However, the terms of the GPL state that if no version is specified, then any version may be used, and [[Alan Cox]] pointed out that very few other Linux contributors have specified a particular version of the GPL.&lt;ref&gt;{{cite web|url=http://lwn.net/Articles/169831/|title=Re: GPL V3 and Linux|first=Alan|last=Cox|work=Linux-kernel mailing list archive|publisher=LWN.net|accessdate=2007-02-21|date=2006-01-20}}&lt;/ref&gt; In September 2006, a survey of 29 key kernel programmers indicated 28 preferred GPLv2 to the then-current GPLv3 draft. Torvalds commented, &quot;I think a number of outsiders... believed that I personally was just the odd man out, because I've been so publicly not a huge fan of the GPLv3.&quot;&lt;ref&gt;{{cite web|url=http://news.com.com/Top+Linux+programmers+pan+GPL+3/2100-7344_3-6119372.html|title=Top Linux programmers pan GPL 3|publisher=[[News.com]]|accessdate=2007-02-21|date=25 September 2006|first=Stephen|last=Shankland
+}}&lt;/ref&gt;
+
+===Loadable kernel modules and firmware===
+It is debated whether [[loadable kernel module]]s (LKMs) should be considered [[derivative work]]s under copyright law, and thereby fall under the terms of the GPL. Torvalds has stated his belief that LKMs using only a limited, &quot;public&quot; subset of the kernel interfaces can sometimes be non-derived works, thus allowing some binary-only drivers and other LKMs that are not licensed under the GPL. Not all Linux contributors agree with this interpretation, however, and even Torvalds agrees that many LKMs are clearly derived works, and indeed he writes that &quot;kernel modules ARE derivative 'by default'&quot;.&lt;ref&gt;{{cite web | url = http://lkml.org/lkml/2003/12/10/123 | author = Linus Torvalds | date = 2003-12-10 | title = RE: Linux GPL and binary module exception clause?
+}}&lt;/ref&gt; On the other hand Torvalds has also said that &quot;one gray area in particular is something like a driver that was originally written for another operating system (i.e. clearly not a derived work of Linux in origin). [...] THAT is a gray area, and _that_ is the area where I personally believe that some modules may be considered to not be derived works simply because they weren't designed for Linux and don't depend on any special Linux behaviour.&quot;&lt;ref&gt;{{cite web|author=Linus Torvalds &amp;lt;torvalds@osdl.org&amp;gt; |url=http://www.ussg.iu.edu/hypermail/linux/kernel/0312.0/0670.html |title=Re: Linux GPL and binary module exception clause? |publisher=Ussg.iu.edu |date=2003-12-03 |accessdate=2010-11-12}}&lt;/ref&gt; [[proprietary software|Proprietary]] graphics drivers, in particular, are heavily discussed. Ultimately, it is likely that such questions can only be resolved by a court.
+
+One point of licensing controversy is Linux's use of [[firmware]] &quot;[[binary blob]]s&quot; to support some hardware devices. These files are under a variety of licenses, many of them restrictive and their exact underlying source code is usually unknown. [[Richard Stallman]] claims that these blobs make Linux partially [[non-free software]], and that distributing Linux may even be violating the GPL (which requires &quot;complete corresponding source code&quot; to be available).&lt;ref name=&quot;Blobs&quot;&gt;{{cite web|url=http://www.gnu.org/philosophy/linux-gnu-freedom.html|title=Linux, GNU, and freedom|publisher=[[Free Software Foundation]]|first=Richard|last=Stallman|year=2002|accessdate=2007-02-21}}&lt;/ref&gt; In response, the [[FSFLA]] started a project, [[Linux-libre]], to create a completely free kernel without proprietary objects, which is used by some completely free distributions, such as  [[List of Linux distributions endorsed by the Free Software Foundation|those endorsed by the Free Software Foundation]].&lt;ref&gt;
+{{cite web
+|url=http://www.fsfla.org/svnwiki/selibre/linux-libre/index
+|title=Linux-libre project
+|publisher=www.fsfla.org
+|accessdate=2009-10-05
+|last=
+|first=
+}}
+&lt;/ref&gt;&lt;ref&gt;
+{{cite web
+|url=http://trisquel.info/en/forum/trisquel-gnulinux-libre
+|title=Trisquel GNU/Linux-libre | Trisquel GNU/Linux
+|publisher=trisquel.info
+|accessdate=2009-10-05
+|last=
+|first=
+}}
+&lt;/ref&gt; On December 15, 2010 the [[Debian|Debian Project]] announced that the next Debian stable version would come with a kernel &quot;stripped of all non-free firmware bits&quot;.&lt;ref&gt;[http://debian.org/News/2010/20101215 Debian 6.0 &quot;Squeeze&quot; to be released with completely free Linux Kernel]&lt;/ref&gt;
+
+===Trademark===
+{{See also|Linux#Copyright_and_naming|l1=Linux: Copyright and naming}}
+Linux is a registered [[trademark]] of [[Linus Torvalds]] in the [[United States]] and some other countries. This is the result of an incident in which William Della Croce, Jr., who was not involved in the Linux project, trademarked the name and subsequently demanded [[royalties]] for its use.&lt;ref&gt;{{cite web|url=http://www.linuxjournal.com/article/2425/|title=Linux Trademark Dispute|publisher=[[Linux Journal]]|date=1997-08-01|accessdate=2010-12-08|last=Hughes|first=Phil}}&lt;/ref&gt; Several Linux backers retained legal counsel and filed suit against Della Croce. The issue was settled in August 1997 when the trademark was assigned to Linus Torvalds.&lt;ref name=&quot;Phil Hughes&quot;&gt;[http://www.linuxjournal.com/article/2098 Action Taken on Linux Trademark], Mar 01, 1997 by Phil Hughes, [[Linux Journal]]&lt;/ref&gt;&lt;ref name=&quot;Tonya Gisselberg&quot;&gt;[http://www.gisselberglawfirm.com/downloads/linux.pdf The Trademark History of Linux, the Operating System] by Tonya Gisselberg, 2010&lt;/ref&gt;
+
+===SCO litigation===
+{{details|SCO-Linux controversies}}
+
+In March 2003, the [[SCO Group]] (SCO) filed a [[SCO v. IBM|lawsuit]] against [[IBM]] claiming that IBM had violated copyrights that SCO claimed to hold over the [[Unix]] source code, by contributing portions of that code to Linux. Additionally, SCO sent letters to a number of companies warning that their use of Linux without a license from SCO may be a violation of copyright law, and claimed in the press that they would be suing individual Linux users. IBM then promised to defend its Linux customers on their behalf. This controversy has generated lawsuits by SCO against [[Novell]], [[DaimlerChrysler]] (partially dismissed in July, 2004), and [[AutoZone]], and retaliatory lawsuits by [[Red Hat]] and others against SCO.
+
+In early 2007 SCO filed the specific details of the purported copyright infringement.  Despite previous claims that SCO was the rightful owner of 1 million lines of code, they specified 326 lines of code, most of which were uncopyrightable.&lt;ref&gt;{{cite web | url=http://www.groklaw.net/articlebasic.php?story=20070308014847709 | title=Report from the Courthouse 7 March}} Groklaw article&lt;/ref&gt;
+In August 2007, the court in [[SCO v. Novell|the Novell case]] ruled that SCO did not actually own the Unix copyrights to begin with,&lt;ref&gt;{{cite web | url=http://www.groklaw.net/article.php?story=20070810165237718 | title=Court Rules: Novell owns the UNIX and UnixWare copyrights}} Groklaw article&lt;/ref&gt; though the [[Tenth Circuit Court of Appeals]] ruled in August 2009 that the question of who owned the copyright properly remained for a jury to answer.&lt;ref name=&quot;LinuxJournal26Aug09&quot;&gt;{{cite web|url = http://www.linuxjournal.com/content/sco-will-try-again|title = SCO Will Try Again|accessdate = 2009-08-30|last = Ryan|first = Justin|authorlink = |year = 2009|month = August}}&lt;/ref&gt; The jury case was decided on 30 March 2010 in Novell's favour.&lt;ref&gt;{{cite web
+| url   = http://www.sltrib.com/news/ci_14786202
+| title = Jury says Novell owns Unix copyrights
+| first = Tom | last = Harvey
+| date  = 2010-03-30 | accessdate = 2010-03-30
+| work  = [[The Salt Lake Tribune]] | publisher = [[MediaNews Group]]}}&lt;/ref&gt;
+
+===Hyper-V submission by Microsoft===
+In July 2009 [[Microsoft]] submitted [[Hyper-V]] drivers to the kernel, which improve the performance of virtual Linux guest systems in a [[Microsoft Windows|Windows]] hosted environment. Microsoft was forced to submit the code when it was discovered that Microsoft had incorporated a Hyper-V network driver with GPL-licensed components statically linked to closed-source binaries.&lt;ref name=&quot;Paul20Jul09&quot;&gt;{{cite web|url = http://arstechnica.com/microsoft/news/2009/07/microsoft-aims-at-vm-market-with-linux-kernel-code-offering.ars|title = Microsoft aims at VM market with Linux kernel code offering|accessdate = 2009-07-22|last = Paul|first = Ryan|authorlink = |year = 2009|month = July}}&lt;/ref&gt;&lt;ref name=&quot;Holwerda23Jul09&quot;&gt;{{cite web|url = http://www.osnews.com/story/21882/Microsoft_s_Linux_Kernel_Code_Drop_Result_of_GPL_Violation|title = Microsoft's Linux Kernel Code Drop Result of GPL Violation|accessdate = 2009-07-23|last = Holwerda|first = Thom|authorlink = |year = 2009|month = July}}&lt;/ref&gt;&lt;ref name=&quot;MicrosoftPressRelease20Jul09&quot;&gt;{{cite web|url = http://www.microsoft.com/presspass/features/2009/Jul09/07-20LinuxQA.mspx|title = Microsoft Contributes Linux Drivers to Linux Community|accessdate = 2009-07-23|last = [[Microsoft]]|authorlink = |year = 2009|month = July}}&lt;/ref&gt;&lt;ref name=&quot;FSMJuly09&quot;&gt;{{cite web|url = http://www.freesoftwaremagazine.com/columns/yes_linus_microsoft_hating_disease_and_its_pandemic|title = Yes Linus, Microsoft hating is a disease. And it's a pandemic|accessdate = 2009-08-01|last = Richmond|first = Gary|authorlink = |year = 2009|month = August}}&lt;/ref&gt;&lt;ref name=&quot;Anderson&quot;&gt;{{cite web|url = http://www.prospectmagazine.co.uk/tag/microsoft/ |title = Is Microsoft opening up at last?|accessdate = 2010-02-15|last = Anderson|first = Paul, Prospect Magazine|authorlink = |year = 2009|month = July}}&lt;/ref&gt;
+
+==Technical features==
+Linux supports true [[Computer multitasking#Preemptive multitasking/time-sharing|preemptive multitasking]] (both in [[user mode]] and [[kernel mode]]), [[virtual memory]], [[Library (computer science)|shared libraries]], [[Demand paging|demand loading]], shared [[copy-on-write]] executables, [[memory management]], the [[Internet protocol suite]], and [[Thread (computer science)|threading]].
+
+===Architecture===
+{{see also|vmlinuz}}
+[[Image:Linux kernel map.png|thumb|Linux kernel map, [http://www.makelinux.net/kernel_map_poster and wall poster]]]
+Linux is a [[monolithic kernel]]. [[Device driver]]s and kernel extensions run in [[kernel space]] ([[Ring (computer security)|ring 0]] in many [[CPU]] [[CPU architecture|architectures]]), with full access to the hardware, although some exceptions run in [[user space]], for example filesystems based on [[Filesystem in Userspace|FUSE]]. The [[X Window System|graphics system]] most people use with Linux doesn't run in the kernel, in contrast to that found in [[Microsoft Windows]].
+
+====TanenbaumâTorvalds debate====
+{{Main|TanenbaumâTorvalds debate}}
+
+The fact that Linux is a [[monolithic kernel]] rather than a [[microkernel]] was the topic of the [[TanenbaumâTorvalds debate]] between [[Andrew S. Tanenbaum]], the creator of [[Minix]], and [[Linus Torvalds]].&lt;ref&gt;{{cite web | year = 1999 | url = http://www.oreilly.com/catalog/opensources/book/appa.html | title = The Tanenbaum-Torvalds Debate | publisher = O'Reilly | author = O'Reilly | accessdate = 2006-11-22 }}&lt;/ref&gt; The debate started in 1992 about Linux and kernel architecture in general on the [[Usenet]] discussion group &lt;tt&gt;comp.os.minix&lt;/tt&gt;.&lt;ref&gt;{{cite newsgroup | newsgroup = comp.os.minix | date = 29 January 1992 | id = 12595@star.cs.vu.nl | first = Andy | last = Tanenbaum | url = http://groups.google.com/group/comp.os.minix/msg/f447530d082cd95d | title = LINUX is obsolete | accessdate = 2006-05-10 }}&lt;/ref&gt; Tanenbaum argued that microkernels are superior to monolithic kernels and that therefore [[Linux]] is [[obsolete]]. Unlike traditional monolithic kernels, device drivers in Linux are easily configured as [[loadable kernel module]]s and are loaded or unloaded while running the system. This subject was revisited on 9 May 2006,&lt;ref&gt;{{cite web | date = 9 May 2006 | title = Hybrid kernel, not NT | url = http://www.realworldtech.com/forums/index.cfm?action=detail&amp;id=66630&amp;threadid=66595&amp;roomid=11 | first = Linus | last = Torvalds | accessdate = 2007-01-06 }}&lt;/ref&gt; and on 12 May 2006 Tanenbaum wrote a position statement.&lt;ref&gt;{{cite web | date = 12 May 2006 | url = http://www.cs.vu.nl/~ast/reliable-os/ | title = Tanenbaum-Torvalds Debate: Part II | last = Tanenbaum | first = Andy | accessdate = 2007-01-06 }}&lt;/ref&gt;
+
+====Preemption====
+Linux kernel provides  [[preemption (computing)|preemptive scheduling]]  under certain conditions. Until kernel version 2.4, only processes were preemptive, i.e. in addition to time quantum expiration, an execution of ''current'' process in [[user mode]] would be interrupted if higher dynamic priority processes entered ''TASK_RUNNING'' state.&lt;ref name=&quot;Daniel P. Bovet &amp; Marco Cesati&quot;&gt;[http://oreilly.com/catalog/linuxkernel/chapter/ch10.html Chapter 10], Understanding the Linux Kernel, By Daniel P. Bovet &amp; Marco Cesati, October 2000&lt;/ref&gt; Towards Linux 2.6, an ability to interrupt a task executing [[Kernel mode|kernel code]] was added, although with that not all sections of the kernel code can be preempted.&lt;ref name=&quot;Anand Santhanam&quot;&gt; [http://www.ibm.com/developerworks/linux/library/l-inside/index.html Towards Linux 2.6], A look into the workings of the next new kernel, Anand Santhanam, [[IBM Global Services]], 23 Sep 2003&lt;/ref&gt; Preemption improves [[latency (engineering)|latency]], increases responsiveness, and makes Linux more suitable for real-time applications.
+
+====Portability====
+{{See also|List of Linux supported architectures}}
+[[File:Ipod linux booting kernel.jpg|thumb|[[iPodLinux]] booting Linux]]
+While not originally designed to be [[porting|portable]], Linux is now one of the most widely ported operating system kernels,  running on a diverse range of systems from the [[ARM architecture]] to the IBM [[Z/Architecture]] (a massive [[mainframe computer|mainframe]] server that can run hundreds to thousands of concurrent Linux instances). Linux runs as the main operating system on IBM's [[Blue Gene]] [[supercomputer]]s. {{As of|2011|6}}, Linux is the OS on 91.2% of systems on the [[TOP500]] supercomputers list.&lt;ref&gt;{{cite web|url=http://www.top500.org/stats/list/36/osfam/|title=Operating system Family|publisher=Top 500 Supercomputer Sites|month=November|year=2010}}&lt;/ref&gt; Linux has also been ported to various handheld devices such as [[TuxPhone]], [[Apple Inc.|Apple's]] [[iPod]] and [[iPhone]].&lt;ref name=&quot;linuxoniphone&quot;&gt;{{cite web | url= http://www.pcworld.com/article/195789/android_now_running_on_iphone_3g.html | date = 2010-05-07 | accessdate = 2010-07-11 | title = Android Now Running On iPhone 3G}}&lt;/ref&gt; Some operating systems developed for mobile phones use modified versions of the Linux kernel, including Google [[Android (operating system)|Android]], HP [[webOS]], and Nokia [[Maemo]].&lt;ref name=&quot;hartmann&quot;&gt;{{cite web | url = http://www.kroah.com/log/linux/android-kernel-problems.html | title = Android and the Linux kernel community | date = 2010-02-02 | author=[[Greg Kroah-Hartman]] | quote=''This means that any drivers written for Android hardware platforms, can not get merged into the main kernel tree because they have dependencies on code that only lives in Google's kernel tree, causing it to fail to build in the kernel.org tree. Because of this, Google has now prevented a large chunk of hardware drivers and platform code from ever getting merged into the main kernel tree. Effectively creating a kernel branch that a number of different vendors are now relying on.'' | accessdate = 2010-02-03}}&lt;/ref&gt;&lt;ref name=&quot;hartmann2&quot;&gt;{{cite web | url = http://news.zdnet.com/2100-9595_22-389733.html | title = Linux developer explains Android kernel code removal | date = 2010-02-02 | publisher=[[ZDNet]] | accessdate = 2010-02-03}}&lt;/ref&gt;&lt;ref name=&quot;maemo&quot;&gt;{{cite web | url = http://maemo.org/intro/platform/ | title = Maemo platform described as being based on Linux kernel | date = 2010-04-09 | publisher=Maemo community | accessdate = 2010-04-09}}&lt;/ref&gt;
+
+====Kernel panic====
+[[Image:Kernel-panic.jpg|thumb|Kernel panic]]
+{{Main|Kernel panic}}
+
+In Linux, a &quot;panic&quot; is an unrecoverable system error detected by the kernel, as opposed to similar errors detected by [[user space]] code. It is possible for kernel code to indicate such a condition by calling the &lt;code&gt;panic&lt;/code&gt; function located in the header file &lt;tt&gt;sys/system.h&lt;/tt&gt;. However, most panics are the result of unhandled processor [[Exception handling|exceptions]] in kernel code, such as references to invalid memory addresses. These are typically indicative of a [[Computer bug|bug]] somewhere in the call chain leading to the panic.  They can also indicate a failure of hardware, such as a failed RAM cell or errors in arithmetic functions in the processor caused by a [[Pentium FDIV bug|processor bug]], overheating/damaged processor, or a [[soft error]].
+
+=====Kernel oops=====
+{{Main|Linux kernel oops}}
+A report of a bug in the kernel is called an &quot;OOPS&quot;.&lt;ref&gt;{{cite web|url=http://lkml.indiana.edu/hypermail/linux/kernel/0303.1/0009.html |title=Linux-Kernel Archive: Re: what's an OOPS |publisher=Lkml.indiana.edu |date= |accessdate=2010-10-30}}&lt;/ref&gt; It is automatically collected by the kerneloops software,&lt;ref&gt;{{cite web|url=http://linux.die.net/man/8/kerneloops |title=kerneloops(8) - Linux man page |publisher=Linux.die.net |date= |accessdate=2010-10-30}}&lt;/ref&gt; the abrt kernel oops plugin,&lt;ref&gt;{{cite web|url=http://fedoraproject.org/wiki/Features/ABRTF12 |title=Features/ABRTF12 |publisher=FedoraProject |date=2009-08-03 |accessdate=2010-10-30}}&lt;/ref&gt; or [https://launchpad.net/apport apport]. KernelOops.org collects these reports and publishes statistics on their website.&lt;ref&gt;{{cite web|url=http://kerneloops.org/ |title=Kerneloops.org |publisher=Kerneloops.org |date= |accessdate=2010-11-12}}&lt;/ref&gt;
+
+===Programming languages===
+
+Linux is written in the version of the [[C (programming language)|C programming language]] supported by [[GNU Compiler Collection|GCC]] (which has introduced a number of extensions and changes to standard C), together with a number of short sections of code written in the [[assembly language]] (in GCC's &quot;AT&amp;T-style&quot; syntax) of the target architecture. Because of the extensions to C it supports, [[GNU Compiler Collection|GCC]] was for a long time the only compiler capable of correctly building Linux. In 2004, [[Intel]] claimed to have modified the kernel so that [[Intel C++ Compiler|its C compiler]] also was capable of compiling it.&lt;ref&gt;{{cite web|author=Ingo A. Kubbilun |url=http://www.pyrillion.org/index.html?showframe=linuxkernelpatch.html |title=Linux kernel patch for Intel Compiler |publisher=Pyrillion.org |date=2004-06-02 |accessdate=2010-11-12}}&lt;/ref&gt; There was another such reported success in 2009 with a modified 2.6.22.&lt;ref&gt;{{cite web|url=http://linux.slashdot.org/article.pl?sid=09/02/26/2216241 |title=Slashdot &amp;#124; High Performance Linux Kernel Project â LinuxDNA |publisher=Linux.slashdot.org |date= |accessdate=2010-10-30}}&lt;/ref&gt;&lt;ref&gt;{{cite web|url=http://www.linuxjournal.com/content/linuxdna-supercharges-linux-intel-cc-compiler |title=LinuxDNA Supercharges Linux with the Intel C/C++ Compiler |publisher=Linux Journal |date= |accessdate=2010-10-30}}&lt;/ref&gt;
+
+===Estimated cost to redevelop===
+
+The cost to redevelop the Linux kernel version 2.6.0 in a traditional proprietary development setting has been estimated to be $612 million USD (â¬467 million euro, Â£394 million GBP) in 2004 prices using the [[COCOMO]] man-month estimation model.&lt;ref&gt;{{cite web
+|url = http://www.dwheeler.com/essays/linux-kernel-cost.html
+|title = Linux Kernel 2.6: It's Worth More!
+|author = David A. Wheeler
+}}&lt;/ref&gt; In 2006, a study funded by the European Union put the redevelopment cost of kernel version 2.6.8 higher, at â¬882 million euro ($1.14 billion USD, Â£744 million GBP).&lt;ref&gt;[http://ec.europa.eu/enterprise/sectors/ict/files/2006-11-20-flossimpact_en.pdf Economic impact of FLOSS on innovation and competitiveness of the EU ICT sector], Table 3 on page 50.&lt;/ref&gt;
+
+This topic was revisited in October 2008 by Amanda McPherson, Brian Proffitt and Ron Hale-Evans. Using David A. Wheeler's methodology, they estimated redevelopment of the 2.6.25 kernel now costs $1.3 billion (part of a total $10.8 billion to redevelop Fedora 9).&lt;ref&gt;[http://www.linuxfoundation.org/publications/estimatinglinux.pdf Estimating Total Development Cost Of a Linux Distribution], Table on page 6.&lt;/ref&gt; Again, Garcia-Garcia and Alonso de Magdaleno from University of Oviedo (Spain) estimate that the value annually added to kernel was about 100 million EUR between 2005 and 2007 and 225 million EUR in 2008, it would cost also more than one billion EUR (about 1.4 billion USD) to develop in the European Union.&lt;ref&gt;{{cite web|url=http://linux.slashdot.org/story/10/02/24/155214/The-Billion-Dollar-Kernel |title=The Billion Dollar Kernel |publisher=Linux.slashdot.org |date=2010-02-24 |accessdate=2010-11-12}}&lt;/ref&gt;
+
+As of January 4, 2011, using current LOC (lines of code) and wage numbers with David A. Wheeler's calculations it would cost approximately 3 billion USD (about 2.2 billion EUR) to redevelop the Linux kernel.{{Citation needed|date=December 2011}}
+
+===Feature history===
+
+Version 1.0 of the Linux kernel was released on 14 March 1994.&lt;ref name=&quot;kern1p0-release&quot;&gt;[http://www.kernel.org/pub/linux/kernel/v1.0/ Kernel 1.0 Source Code Release] (last checked 2008-10-27)&lt;/ref&gt;  This release of the Linux kernel only supported [[uniprocessor|single-processor]] [[IA-32|i386]]-based computer systems.  Portability became a concern, and so version 1.2 (released 7 March 1995)&lt;ref name=&quot;kern1p2-release&quot;&gt;[http://www.kernel.org/pub/linux/kernel/v1.2/ Kernel 1.2 Source Code Release] (last checked 2008-10-27)&lt;/ref&gt; gained support for computer systems using processors based on the [[DEC Alpha|Alpha]], [[SPARC]], and [[MIPS architecture|MIPS]] architectures.
+
+Version 2.0 was released 9 June 1996.&lt;ref name=&quot;kern2p0-release&quot;&gt;[http://www.kernel.org/pub/linux/kernel/v2.0/ Kernel 2.0.''x'' Source Code Releases] (last checked 2008-10-27)&lt;/ref&gt;  There were 41 releases in the series.  The major feature of 2.0 was [[Symmetric multiprocessing|SMP]] support (that is, support for multiple processors in a single system) and support for more types of processors.
+
+Version 2.2 (released 26 January 1999)&lt;ref name=&quot;kern2p2-release&quot;&gt;[http://www.kernel.org/pub/linux/kernel/v2.2/ Kernel 2.2.''x'' Source Code Releases] (last checked 2008-10-27&lt;/ref&gt; removed the global [[spinlock]] and provided improved SMP support, and added support for the [[m68k]] and [[PowerPC]] architectures as well as new file systems (including read-only support for [[Microsoft]]âs [[NTFS]]).&lt;ref name=&quot;WWOL22&quot;&gt;[http://kniggit.net/wwol22.html The Wonderful World of Linux 2.2] (last checked 2008-10-27)&lt;/ref&gt;
+
+Version 2.4.0, released on 4 January 2001,&lt;ref name=&quot;kern2p4-release&quot;&gt;[http://www.kernel.org/pub/linux/kernel/v2.4/ Kernel 2.4.''x'' Source Code Releases] (last checked 2008-10-27)&lt;/ref&gt; contained support for [[Industry Standard Architecture|ISA]] [[Plug and Play]], [[USB]], and [[PC Card]]s.&lt;ref name=&quot;WWOL24&quot;&gt;[http://kniggit.net/wwol24.html The Wonderful World of Linux 2.4] (last checked 2008-10-27)&lt;/ref&gt;  It also included support for the [[PA-RISC]] processor from [[Hewlett-Packard]]. Development for 2.4.''x'' changed a bit in that more features were made available throughout the duration of the series, including: support for [[Bluetooth]], [[Logical Volume Manager (Linux)|Logical Volume Manager]] (LVM) version 1, [[RAID]] support, [[InterMezzo (file system)|InterMezzo]] and [[ext3]] file systems.
+
+Version 2.6.0 was released on 18 December 2003.&lt;ref name=&quot;kern2p6-release&quot;&gt;[http://www.kernel.org/pub/linux/kernel/v2.6/ Kernel 2.6.''x''.''y'' Source Code Releases] (last checked 2008-10-27)&lt;/ref&gt; The development for 2.6.''x'' changed further towards including new features throughout the duration of the series. Among the changes that have been made in the 2.6 series are:  integration of [[ÂµClinux]] into the mainline kernel sources, [[Physical Address Extension|PAE]] support, support for several new lines of [[Central processing unit|CPU]]s, integration of [[Advanced Linux Sound Architecture|ALSA]] into the mainline kernel sources, support for up to 2&lt;sup&gt;32&lt;/sup&gt; users (up from 2&lt;sup&gt;16&lt;/sup&gt;), support for up to 2&lt;sup&gt;29&lt;/sup&gt; process IDs (up from 2&lt;sup&gt;15&lt;/sup&gt;), substantially increased the number of device types and the number of devices of each type, improved [[64-bit]] support, support for [[file system]]s of up to 16 [[terabyte]]s, in-kernel [[Preemption (computing)|preemption]], support for the [[Native POSIX Thread Library]] (NPTL), [[User-mode Linux]] integration into the mainline kernel sources, [[Security-Enhanced Linux|SELinux]] integration into the mainline kernel sources, [[InfiniBand]] support, and considerably more.  Also notable are the addition of several file systems throughout the 2.6.''x'' releases: [[Filesystem in Userspace|FUSE]], [[JFS (file system)|JFS]], [[XFS]], [[ext4]] and more.  Details on the history of the 2.6 kernel series can be found in the ChangeLog files on [http://www.kernel.org/pub/linux/kernel/v2.6/ the 2.6 kernel series source code release area] of [http://www.kernel.org/ kernel.org].
+
+Version 3.0 was released 22 Jul 2011.  Torvalds announced that the big change was, &quot;NOTHING. Absolutely nothing.&quot;&lt;ref name=&quot;3.0-rc1&quot;&gt;[http://permalink.gmane.org/gmane.linux.kernel/1147415 Linux 3.0-rc1], [[Linus Torvalds]], 30 May 2011, accessed 31 May 2011&lt;/ref&gt; 30 May 2011 saw Torvalds announce, &quot;...let's
+make sure we really make the next release not just an all new shiny number, but a good kernel too.&quot; After the expected 6â7 week development process, it would be released near the 20th anniversary of Linux.&lt;ref name=&quot;3.0-rc1&quot;/&gt;
+
+===Security===
+
+[[Computer security]] is a much-publicized topic in relation to the Linux kernel, because a large number of bugs in the kernel can be potential security flaws, whether they allow [[privilege escalation]] or create [[denial-of-service attack]] vectors. Over the years, numerous such flaws were found and fixed in the Linux kernel.&lt;ref&gt;{{cite book | url = http://books.google.com/books?id=-kD0sxQ0EkIC&amp;pg=PA14 | title = Linux-- Security, Audit and Control Features | author = K.K. Mookhey, Nilesh Burghate and ISACA | publisher = ISACA | year = 2005 | page = 14 | isbn = 1893209784}}&lt;/ref&gt; New security features are continuously implemented to address [[computer insecurity]] issues in the Linux kernel.&lt;ref&gt;{{cite book | url = http://books.google.com/books?id=f5Vz08spzw8C&amp;pg=PA524 | title = Hacking exposed Linux: Linux security secrets &amp; solutions | page = 524 | author = Brian Hatch | publisher = McGraw Hill Professional | year = 2008 | isbn = 0072262575}}&lt;/ref&gt;&lt;ref&gt;{{cite book | url = http://books.google.com/books?id=P4PYPSv8nBMC&amp;pg=PA122 | title = Operating system security | author = Trent Jaeger | publisher = Morgan &amp; Claypool Publishers | year = 2008 | page = 122 | isbn = 1598292129}}&lt;/ref&gt;
+
+Critics have accused kernel developers of covering up security flaws or at least not announcing them. In response Linus Torvalds in 2008 replied, &quot;I personally consider security bugs to be just 'normal bugs'. I don't cover them up, but I also don't have any reason what-so-ever to think it's a good idea to track them and announce them as something special...one reason I refuse to bother with the whole security circus is that I think it glorifies - and thus encourages - the wrong behavior. It makes 'heroes' out of security people, as if the people who don't just fix normal bugs aren't as important. In fact, all the boring normal bugs are _way_ more important, just because there's a lot more of them. I don't think some spectacular security hole should be glorified or cared about as being any more 'special' than a random spectacular crash due to bad locking.&quot;&lt;ref&gt;{{cite web | url = http://kerneltrap.org/Linux/Security_Bugs_and_Full_Disclosure | title = Security Bugs and Full Disclosure | author = Jeremy Andrews | date = 2008-07-16 | accessdate = 2010-12-31}}&lt;/ref&gt;&lt;ref&gt;{{cite mailing list | url = http://seclists.org/fulldisclosure/2008/Jul/276 | title = Linux's unofficial security-through-coverup policy | author = Brad Spengler | mailinglist = Full-Disclosure | date = 2008-07-16 | accessdate = 2010-12-31}}&lt;/ref&gt;
+
+For example, the [[Splice (system call)|vmsplice]]() local root exploit was a short-lived vulnerability in the Linux kernel that allowed a user with [[shell account|shell access]] to mount a [[privilege escalation]] attack to gain [[root privileges]] against a system running versions of 2.6.17 or later of the kernel.&lt;ref name=&quot;Secunia-vmsplice&quot;&gt;{{cite news | first=Wojciech | last=Purczynskiof | coauthors= qaaz | title= Linux Kernel &quot;vmsplice()&quot; System Call Vulnerabilities | date=2008-02-11  | url =http://secunia.com/advisories/28835/ | work =[[Secunia]] | pages = | accessdate = 2008-04-16 | language = }}&lt;/ref&gt;&lt;ref&gt;{{cite news | first= | last=Dawson | coauthors= | title= Linux Kernel &quot;vmsplice()&quot; System Call Vulnerabilities | date=2008-02-10 | publisher=[[SourceForge]] | url =http://it.slashdot.org/article.pl?sid=08/02/10/2011257 | work =[[Slashdot]] | pages = | accessdate = 2008-04-16 | language = }}&lt;/ref&gt; This was fixed in kernel version 2.6.24.2.&lt;ref name=&quot;Secunia-vmsplice&quot;/&gt;
+
+==Development==
+===Timeline===
+&lt;small&gt;Source: kernel.org&lt;ref&gt;{{cite web|url=http://www.kernel.org/pub/linux/kernel/ |title=Index of /pub/linux/kernel |publisher=Kernel.org |date= |accessdate=2010-10-30}}&lt;/ref&gt;&lt;/small&gt;
+
+{{Timeline Linux Kernel}}
+
+===Development model===
+{{ref improve section|date=March 2011}}
+The current development model of the Linux kernel is such that Linus Torvalds makes the releases of new versions, also called the &quot;vanilla&quot; or &quot;mainline&quot; kernels, meaning that they contain the main, generic branch of development. This branch is officially released as a new version approximately every three months, after Torvalds does an initial round of integrating major changes made by all other programmers, and several rounds of bug-fix pre-releases.
+
+In the current scheme, the main branch of development is not a traditional &quot;stable&quot; branch, instead it incorporates all kinds of changes, both the latest features as well as security and bug fixes. For users who do not want to risk updating to new versions containing code that may not be well tested, a separate set of &quot;stable&quot; branches exist, one for each released version, which are meant for people who just want the security and bug fixes, but not a whole new version. These branches are maintained by the ''stable team'' ([[Greg Kroah-Hartman]], [[Chris Wright (programmer)|Chris Wright]], maybe others).
+
+Most Linux users use a kernel supplied by their [[Linux distribution]]. Some distributions ship the &quot;vanilla&quot; and/or &quot;stable&quot; kernels. However, several Linux distribution vendors (such as [[Red Hat]] and [[Debian]]) maintain another set of Linux kernel branches which are integrated into their products. These are by and large updated at a slower pace compared to the &quot;vanilla&quot; branch, and they usually include all fixes from the relevant &quot;stable&quot; branch, but at the same time they can also add support for drivers or features which had not been released in the &quot;vanilla&quot; version the distribution vendor started basing their branch from.
+
+The development model for Linux 2.6 was a significant change from the development model for Linux 2.5. Previously there was a stable branch (2.4) where only relatively minor and safe changes were merged, and an unstable branch (2.5), where bigger changes and cleanups were allowed. Both of these branches had been maintained by the same set of people, led by Torvalds. This meant that users would always have a well-tested 2.4 version with the latest security and bug fixes to use, though they would have to wait for the features which went into the 2.5 branch. The downside of this was that the &quot;stable&quot; kernel ended up so far behind that it no longer supported recent hardware and lacked needed features.  In the late 2.5.x series kernel some maintainers elected to try and back port their changes to the stable series kernel which resulted in bugs being introduced into the 2.4.x series kernel. The 2.5 branch was then eventually declared stable and renamed to 2.6.  But instead of opening an unstable 2.7 branch, the kernel developers decided to continue putting major changes into the 2.6 branch, which would then be released at a pace faster than 2.4.x but slower than 2.5.x. This had the desirable effect of making new features more quickly available and getting more testing of the new code, which was added in smaller batches and easier to test.
+
+As a response to the lack of a ''stable'' kernel tree where people could coordinate the collection of bug fixes as such, in December 2005 [[Adrian Bunk]] announced that he would keep releasing 2.6.16.y kernels when the stable team moved on to 2.6.17.&lt;ref&gt;{{cite web|author=Jeremy Offline |url=http://kerneltrap.org/node/6930 |title=Linux: 2.6.16.y Lives On |publisher=KernelTrap |date=2001-10-13 |accessdate=2010-10-30}}&lt;/ref&gt; He also included some driver updates, making the maintenance of the 2.6.16 series very similar to the old rules for maintenance of a stable series such as 2.4.&lt;ref&gt;{{cite web|author=Jeremy Offline |url=http://kerneltrap.org/node/6386 |title=Linux: Maintaining A 2.6.16.y Tree |publisher=KernelTrap |date=2001-10-13 |accessdate=2010-10-30}}&lt;/ref&gt; Since then, the &quot;stable team&quot; had been formed, and it would keep updating kernel versions with bug fixes. In October 2008 Adrian Bunk announced that he will maintain 2.6.27 for a few years as a replacement of 2.6.16.&lt;ref name=&quot;marc.info&quot;&gt;{{cite web|url=http://marc.info/?l=linux-kernel&amp;m=122375909403298&amp;w=2 |title='Linux 2.6.27 will be a longtime supported kernel' - MARC |publisher=Marc.info |date=2008-10-11 |accessdate=2010-10-30}}&lt;/ref&gt; The stable team picked up on the idea&lt;ref name=&quot;gregkh-2.6.27&quot;&gt;{{cite mailing list |author=Greg Kroah-Hartman |url=http://marc.info/?l=linux-kernel&amp;m=125245118518458 |title=Re: 2.6.27 maintenance plans after 2.6.32 is released |mailinglist=linux-kernel |date=2009-09-08}}&lt;/ref&gt; and {{as of|2010|lc=on}} they continue to maintain that version and release bug fixes for it, in addition to others.
+
+After the change of the development model with 2.6.x, developers continued to want what one might call an ''unstable'' kernel tree, one that changes as rapidly as new patches come in. [[Andrew Morton (computer programmer)|Andrew Morton]] decided to repurpose his [[mm tree|-mm tree]] from memory management to serve as the destination for all new and experimental code. In September 2007 Morton decided to stop maintaining this tree.&lt;ref&gt;[http://kerneltrap.org/Linux/2.6.23-rc6-mm1_This_Just_Isnt_Working_Any_More 2.6.23-rc6-mm1, &quot;This Just Isn't Working Any More&quot;], from [http://kerneltrap.org KernelTrap]&lt;/ref&gt; In February 2008, Stephen Rothwell created the ''linux-next'' tree to serve as a place where patches aimed to be merged during the next development cycle are gathered.&lt;ref&gt;{{cite web|url=http://lkml.org/lkml/2008/2/11/512 |title=Stephen Rothwell: Announce: Linux-next (Or Andrew's dream :-)) |publisher=LKML |date= |accessdate=2010-10-30}}&lt;/ref&gt;&lt;ref&gt;{{cite web|url=http://lwn.net/Articles/269120/ |title=linux-next and patch management process |publisher=Lwn.net |date=2010-10-21 |accessdate=2010-10-30}}&lt;/ref&gt; Several subsystem maintainers also adopted the suffix ''-next'' for trees containing code which is meant to be submitted for inclusion in the next release cycle.
+
+===Maintenance===
+While Linus Torvalds supervises code changes and releases to the latest kernel versions, he has delegated the maintenance of older versions to other programmers.  Major releases as old as 2.0 (officially made obsolete with the kernel 2.2.0 release in January 1999) are maintained as needed, although at a very slow pace.
+
+{| class=&quot;wikitable&quot;
+|-
+! Kernel series
+! Current version
+! Maintainer
+! Support Model
+|-
+| 2.0 || 2.0.40&lt;ref&gt;{{cite web |author=David Weinehall |url=http://kerneltrap.org/node/2279 |title=&amp;#91;ANNOUNCE&amp;#93; Linux-kernel 2.0.40 aka ``The Moss-covered Tortoise'&amp;#39; |date=2004-02-08}}&lt;/ref&gt; || David Weinehall ||'''[[End-of-life (product)|EOL]]''' (Officially made obsolete with the kernel 2.2.0 release)
+|-
+| 2.2 || 2.2.26&lt;ref&gt;{{cite web |author=Marc-Christian Petersen |url=http://marc.info/?l=linux-kernel&amp;m=107766971215138 |title=Linux 2.2.26 |date=2004-02-25}}&lt;/ref&gt; || [[Marc-Christian Petersen]] (former maintainer [[Alan Cox]]) || '''EOL''' (Unofficially obsolete with the 2.2.27-rc2)&lt;ref&gt;{{cite web |author=Marc-Christian Petersen |url=http://kerneltrap.org/node/4533 |title=Linux 2.2.27-rc2 |date=2005-01-13}}6&lt;/ref&gt;
+|-
+| 2.4 || 2.4.37.11&lt;ref&gt;ftp://ftp.kernel.org/pub/linux/kernel/v2.4/LATEST-IS-2.4.37.11&lt;/ref&gt; || [[Willy Tarreau]] (former maintainer [[Marcelo Tosatti]]) || Will be EOL, if no major bugs reported, by the end of 2011&lt;ref name=&quot;2.4.37.10&quot;&gt;{{cite mailing list |author=Willy Tarreau |url=https://lkml.org/lkml/2010/12/18/73 |title=Linux 2.4.37.11 |mailinglist=linux-kernel |date=2010-12-18}}&lt;/ref&gt;
+|-
+| 2.6.16 || 2.6.16.62&lt;ref&gt;{{cite mailing list |author=Adrian Bunk |url=http://marc.info/?l=linux-kernel&amp;m=122375909403298 |title=Linux 2.6.27 will be a longtime supported kernel |mailinglist=linux-kernel |date=2008-10-11}}&lt;/ref&gt; || [[Adrian Bunk]] || '''EOL''' (was the first '''long-term''' stable release, replaced by 2.6.27.xx)&lt;ref name=&quot;marc.info&quot;/&gt;
+|-
+| 2.6.27 || 2.6.27.59&lt;ref name=&quot;kernel1&quot;&gt;{{cite web|url=http://kernel.org/ |title=The Linux Kernel Archives |publisher=Kernel.org |date= |accessdate=2010-10-30}}&lt;/ref&gt; || [[Willy Tarreau]] (former maintainer [[Greg Kroah-Hartman]]) ||'''long-term''' stable release. From 9 October 2008&lt;ref&gt;{{cite web|url=http://kernelnewbies.org/Linux_2_6_27 |title=Linux 2 6 27 - Linux Kernel Newbies |publisher=Kernelnewbies.org |date= |accessdate=2010-10-30}}&lt;/ref&gt; to  201?
+|-
+| 2.6.32 || 2.6.32.47&lt;ref name=&quot;kernel1&quot;/&gt; || [[Greg Kroah-Hartman]]&lt;ref&gt;{{cite mailing list |author=Greg Kroah-Hartman |url=http://lkml.indiana.edu/hypermail/linux/kernel/1001.2/00858.html |title=Stable kernel tree status, January 18, 2010 |mailinglist=linux-kernel |date=2010-01-18}}&lt;/ref&gt; ||'''long-term''' stable release. From 3 December 2009&lt;ref&gt;{{cite web|url=http://kernelnewbies.org/Linux_2_6_32 |title=Linux 2 6 32 - Linux Kernel Newbies |publisher=Kernelnewbies.org |date= |accessdate=2010-10-30}}&lt;/ref&gt; to 2011 /2012&lt;ref name=&quot;lkml.indiana.edu&quot;&gt;{{cite web|author=Greg KH &amp;lt;greg@kroah.com&amp;gt; |url=http://lkml.indiana.edu/hypermail/linux/kernel/1001.2/00858.html |title=Linux-Kernel Archive: Stable kernel tree status, January 18, 2010 |publisher=Lkml.indiana.edu |date=2010-01-18 |accessdate=2010-10-30}}&lt;/ref&gt;
+|-
+| 2.6.33 || 2.6.33.20&lt;ref name=&quot;kernel1&quot;/&gt; || [[Greg Kroah-Hartman]] ||'''long-term''' stable release. From March 2011 to November 2011 &lt;ref&gt;{{cite web|url=http://article.gmane.org/gmane.linux.kernel/1212299 |title=Linux 2.6.32.47  |publisher=gmane.org |date= |accessdate=2010-11-08}}&lt;/ref&gt;
+|-
+| 2.6.34 || 2.6.34.10&lt;ref name=&quot;kernel1&quot;/&gt; || [[Paul Gortmaker]] ||'''long-term''' stable release. From January 2011 to 20??
+|-
+| 2.6.35 || 2.6.35.14&lt;ref name=&quot;kernel1&quot;/&gt; || [[Andi Kleen]] ||'''long-term''' stable release. From December 2010 to 20??
+|-
+| 2.6  || 2.6.39.4&lt;ref name=&quot;kernel1&quot; /&gt; || [[Linus Torvalds]] ||last stable release of the 2.6 kernel series.
+|-
+| 3.0  || 3.0.8&lt;ref&gt;[http://git.kernel.org/?p=linux/kernel/git/stable/linux-stable.git;a=summary gitweb linux-stable.git summary]&lt;/ref&gt; || [[Linus Torvalds]] ||
+|-
+| 3.1 || 3.1 || || latest stable version [http://git.kernel.org/?p=linux/kernel/git/stable/linux-stable.git;a=summary (releases every two-three months)]
+|-
+| {{nobreak|linux-next}} || next-20110930&lt;ref name=&quot;latest unstable&quot; /&gt; || || latest development version
+|}
+
+Other Linux kernel programmers who maintain subsystems inside the kernel&lt;ref name=&quot;MAINTAINERS&quot;&gt;See the [http://git.kernel.org/?p=linux/kernel/git/torvalds/linux.git;a=blob;f=MAINTAINERS Linux MAINTAINERS file].&lt;/ref&gt; include:
+* [[Robert Love]]: preemptible kernel, inotify
+* [[Ingo MolnÃ¡r]]: x86 architecture, scheduler, locking
+* [[David S. Miller]]: networking, SPARC architecture
+* [[Hans Peter Anvin]]: x86 architecture, kernel automounter
+
+===Revision control===
+
+The Linux kernel source code used to be maintained without the help of an automated [[source code management]] system, mostly because of Linus Torvalds' dislike of centralized SCM systems.
+
+In 2002, Linux kernel development switched to [[BitKeeper]], a SCM system which satisfied Linus Torvalds' technical requirements. BitKeeper was made available to Linus and several others free of charge, but was not [[free software]], which was a source of controversy. The system did provide some interoperability with free SCM systems such as [[Concurrent Versions System|CVS]] and [[Subversion (software)|Subversion]].
+
+In April 2005, however, efforts to reverse-engineer the BitKeeper system by [[Andrew Tridgell]] led BitMover, the company which maintained BitKeeper, to stop supporting the Linux development community. In response, Linus Torvalds and others wrote a new source code control system for the purpose, called [[Git (software)|Git]]. The new system was written within weeks, and in two months the first official kernel release was made using git.&lt;ref&gt;{{cite web |author=Linux Kernel Mailing List |url=http://marc.info/?l=git-commits-head&amp;m=111904216911731 |title=Linux 2.6.12 | date=2005-06-17}}&lt;/ref&gt; Git soon developed into a separate project in its own right and gained wider adoption in the [[free software community]].
+
+===Version numbering===
+The Linux kernel has had three different numbering schemes.
+
+The first version of the kernel was 0.01. This was followed by 0.02, 0.03, 0.10, 0.11, 0.12 (the first GPL version), 0.95, 0.96, 0.97, 0.98, 0.99 and then 1.0.&lt;ref&gt;[http://ftp.cdut.edu.cn/pub/linux/kernel/history/lka-001.html Linux Kernel Archives - Volume 1] (Riley Williams)&lt;/ref&gt; From 0.95 on there were many patch releases between versions.
+
+After the 1.0 release and prior to version 2.6, the version was composed as &quot;'''A.B.C'''&quot;, where the number A denoted the kernel version, the number B denoted the major revision of the kernel, and the number C indicated the minor revision of the kernel. The version was changed only when major changes in the code and the concept of the kernel occurred, thrice in the history of the kernel: In 1994 (version 1.0), in 1996 (version 2.0) and in 2011 (version 3.0). The major revision was used according to the traditional [[Software versioning#Odd-numbered versions for development releases|even-odd system version numbering system]]. The minor revision had been changed whenever security patches, bug fixes, new features or drivers were implemented in the kernel. The third version change (version 3.0) was made in honor of the 20th anniversary of Linux with no major code or concept changes. It brought with it a change in the version numbering to a time-based system.&lt;ref&gt;{{cite web|author=Linus Torvalds |title=Linux 3.0-rc1 |url=https://lkml.org/lkml/2011/5/29/204 |date=2011-05-29 |accessdate=2011-08-16}}&lt;/ref&gt;
+
+Since 2004, after version 2.6.0 was released, the kernel developers held several discussions regarding the release and version scheme&lt;ref&gt;{{cite web|author=Jeremy Offline |url=http://kerneltrap.org/Linux/Kernel_Release_Numbering_Redux |title=Kernel Release Numbering Redux |publisher=KernelTrap |date=2001-10-13 |accessdate=2010-10-30}}&lt;/ref&gt;&lt;ref&gt;{{cite web|url=http://lkml.org/lkml/2005/3/2/247 |title=Linus Torvalds: RFD: Kernel release numbering |publisher=LKML |date= |accessdate=2010-10-30}}&lt;/ref&gt; and ultimately Linus Torvalds and others decided that a much shorter release cycle would be beneficial. Since then, the version has been composed of three or four numbers. The first two numbers, which were unchanged for nearly 7 years, became largely irrelevant, and the third number is the actual version of the kernel. The fourth number accounts for bug and security fixes (only) to the kernel version.
+
+The first use of the fourth number occurred when a grave error, which required immediate fixing, was encountered in 2.6.8's [[Network File System (protocol)|NFS]] code. However, there were not enough other changes to legitimize the release of a new minor revision (which would have been 2.6.9). So, 2.6.8.1 was released, with the only change being the fix of that error. With 2.6.11, this was adopted as the new official versioning policy. Later it became customary to continuously back-port major bug-fixes and security patches to released kernels and indicate that by updating the fourth number.
+
+On 29 May 2011, Linus Torvalds announced&lt;ref&gt;{{cite web|author=Linus Torvalds |url=https://lkml.org/lkml/2011/5/29/204 |title=Linux 3.0-rc1 |date=2011-05-29 |accessdate=2011-08-16}}&lt;/ref&gt; that the kernel version would be bumped to 3.0 for the release following 2.6.39, in honor of the 20th anniversary of Linux.
+
+Regular development pre-releases are titled [[release candidate]]s, which is indicated by appending the suffix 'rc' to the kernel version, followed by an ordinal number.
+
+Also, sometimes the version will have a suffix such as 'tip', indicating another [[Fork (software development)|development branch]], usually (but not always) the initials of a person who made it. For example, 'ck' stands for [[Con Kolivas]], 'ac' stands for [[Alan Cox]], etc. Sometimes, the letters are related to the primary development area of the branch the kernel is built from, for example, 'wl' indicates a wireless networking test build. Also, distributors may have their own suffixes with different numbering systems and for back-ports to their &quot;Enterprise&quot; (i.e. stable but older) distribution versions.
+
+==See also==
+{{Portal|Free software}}
+* [[Comparison of operating system kernels]]
+* [[Git (software)]]
+* [[Kernel.org]]
+* [[Ksplice]] - Linux Kernel Update invented by [[Massachusetts Institute of Technology]]
+* [[Linux architecture]]
+* [[menuconfig]], an [[ncurses]]-based target for the Linux kernel [[make (software)|Makefile]]
+* [[Modprobe]]
+* [[System.map]]
+* [[SystemTap]]
+* [[User space]]
+
+==References==
+{{Reflist|colwidth=30em}}
+{{Refbegin|colwidth=30em}}
+&lt;!-- The following are to be merged into the article. Please use &lt;ref&gt; tags as appropriate and then remove from this list. If the link doesn't contain anything referenced from the article, just remove it. --&gt;
+* {{cite book |last=Torvalds |first=Linus |coauthors=Diamond, David |year=2001 |title=[[Just for Fun]]: The Story of an Accidental Revolutionary |publisher = HarperBusiness |isbn=0-06-662072-4 (hardcover); HarperAudio ISBN 0-694-52539-1 }} (audio tape, abridged ed., read by David Diamond) - on the beginnings of the Linux kernel
+* ''Nikolai Bezroukov'', [http://www.softpanorama.org/People/Torvalds/index.shtml Portraits of Open Source Pioneers.] Ch 4: A benevolent dictator (Softpanorama e-book).
+* {{cite web | url = http://lwn.net/Articles/53780/|title=LinkSys and binary modules | publisher = LWN.net Weekly Edition | date = 16 October 2003 }}
+* [http://fxr.watson.org/ FreeBSD/Linux kernel source code cross-reference].  Browsable Linux (and other operating system) kernel source cross-reference.
+* [http://lxr.linux.no/source/ LXR: The Linux Cross-Reference project].  Browsable Linux kernel source.
+* [http://www.kernelhq.org KernelHQ] - a browsable kernel source tree - with ''all'' versions present, and with browsable [[diff]]s
+* [http://old.lwn.net/2001/features/Timeline/ The LWN 2001 Linux Timeline]
+* [http://www.nd.edu/~ljordan/linux/tuxhistory.html Everyone's Favorite Linux Mascot]
+* [http://www.linuxjournal.com/article.php?sid=6000 Linux Timeline]
+* [https://netfiles.uiuc.edu/rhasan/linux History of Linux]
+* [http://www.codemonkey.org.uk/docs/post-halloween-2.6.txt Upgrade to 2.6 kernel]
+* [http://kniggit.net/wwol26.html The Wonderful World of Linux 2.6]; Joseph Pranevich; December 2003
+* [http://web.archive.org/web/20070929213411/http://josh.trancesoftware.com/linux/ Understanding the Linux 2.6.8.1 CPU Scheduler]; Josh Aas, 17 February 2005
+* [http://wiki.kernelnewbies.org/LinuxChanges LinuxChanges]
+* [http://engineeringproject.net/seminars/linux.htm  Seminar Paper on Linux Kernel 2.6]
+* [http://lwn.net/Kernel/LDD3/ Linux Device Drivers, 3rd Edition]
+* [http://www.oreilly.com/catalog/understandlk/ Understanding the Linux Kernel, 3rd Edition] (Book)
+* [http://kerneltrap.org/node/1735 Linux: The GPL And Binary Modules]
+* [http://www.ibm.com/developerworks/linux/library/l-linux-kernel/ Anatomy of the Linux kernel]
+{{Refend}}
+
+==External links==
+{{Wikibooks|Linux kernel}}
+{{Commons}}
+* {{official website|http://www.kernel.org/}}
+* [http://www.kernel.org/doc/ Linux Kernel documentation index]
+* [http://www.kernel.org/doc/man-pages/ Linux Kernel man pages]
+* [http://kernelnewbies.org/ Kernel Newbies Site - Excellent source of information for people new to kernel]
+* [http://git.kernel.org/?p=linux/kernel/git/torvalds/linux-2.6.git;a=summary Linus' kernel tree for 2.6]
+* [https://bugzilla.kernel.org/ Kernel bugzilla] - [https://bugzilla.kernel.org/show_bug.cgi?id=15790 Regressions for each of recent versions]
+* [http://www.fsfla.org/svnwiki/selibre/linux-libre/ Linux-libre project - Maintains and distributes fully free kernel]
+*[http://www.youtube.com/watch?v=L2SED6sewRw Greg Kroah Hartman on the Linux Kernel at youtube]
+
+{{Linux}}
+
+{{Use dmy dates|date=June 2011}}
+
+{{DEFAULTSORT:Linux Kernel}}
+[[Category:1991 software]]
+[[Category:Free system software]]
+[[Category:Free software programmed in C]]
+[[Category:Linux kernel|*]]
+[[Category:Monolithic kernels]]
+[[Category:Computing timelines]]
+[[Category:Linux]]
+
+{{Link GA|de}}
+
+[[ar:ÙÙØ§Ø© ÙÙÙÙØ³]]
+[[bg:ÐÐ¸Ð½ÑÐºÑ (ÑÐ´ÑÐ¾)]]
+[[ca:Linux (nucli)]]
+[[cs:Linux (jÃ¡dro)]]
+[[de:Linux (Kernel)]]
+[[el:Î ÏÏÎ®Î½Î±Ï Linux]]
+[[es:NÃºcleo Linux]]
+[[fa:ÙØ³ØªÙ ÙÛÙÙÚ©Ø³]]
+[[fr:Noyau Linux]]
+[[ko:ë¦¬ëì¤ ì»¤ë]]
+[[ilo:Linux (kernel)]]
+[[id:Linux (kernel)]]
+[[is:Linux]]
+[[it:Linux (kernel)]]
+[[he:××× ××§×¡ (××××)]]
+[[csb:Linux (jÄdro)]]
+[[lt:Linux (branduolys)]]
+[[hu:Linux (rendszermag)]]
+[[ml:à´²à´¿à´¨à´àµà´¸àµ à´àµà´°àµâà´£à´²àµâ]]
+[[ms:Linux (inti)]]
+[[nl:Linuxkernel]]
+[[ja:Linuxã«ã¼ãã«]]
+[[no:Linux (kjerne)]]
+[[nn:Linux-kjernen]]
+[[oc:NuclÃ¨u Linux]]
+[[pl:Linux (jÄdro)]]
+[[pt:Linux (nÃºcleo)]]
+[[ro:Linux (nucleul)]]
+[[ru:Linux (ÑÐ´ÑÐ¾)]]
+[[scn:Linux (nÃ¹cliu)]]
+[[si:à¶½à·à¶±à¶à·à·à· à¶'à¶±à¶½à¶º]]
+[[sk:Linux (jadro)]]
+[[sr:ÐÐ¸Ð½ÑÐºÑ ÑÐµÐ·Ð³ÑÐ¾]]
+[[fi:Linux (ydin)]]
+[[sv:Linux (kÃ¤rna)]]
+[[ta:à®²à®¿à®©à®à¯à®¸à¯ à®à®°à¯à®©à®¿]]
+[[te:à°²à°¿à°¨à°à±à°¸à± à°à±à°°à±à°¨à°²à±]]
+[[th:à¸¥à¸´à¸à¸¸à¸à¸à¹ à¹à¸à¸­à¸£à¹à¹à¸à¸¥]]
+[[tr:Linux Ã§ekirdeÄi]]
+[[uk:Ð¯Ð´ÑÐ¾ Linux]]
+[[vi:Háº¡t nhÃ¢n Linux]]
+[[zh:Linuxåæ ¸]]</rev></revisions></page></pages></query></api>

@@ -1,0 +1,81 @@
+<?xml version="1.0"?><api><query><pages><page pageid="222427" ns="0" title="Crypto-anarchism"><revisions><rev xml:space="preserve">{{Anarchism sidebar}}
+'''Crypto-anarchism''' expounds the use of strong [[public-key cryptography]] to bring about [[privacy]] and [[Freedom (political)|freedom]]. It was described by [[Vernor Vinge]] as a cyberspatial realization of [[anarchism]].&lt;ref&gt;Vernor Vinge, James Frankel. ''True Names: And the Opening of the Cyberspace Frontier'' (2001), Tor Books, p.44&lt;/ref&gt; Crypto-anarchists aim to create cryptographic [[software]] that can be used to evade prosecution and harassment while sending and receiving information in [[computer network]]s. [[Timothy C. May]] wrote about crypto anarchism in [[Cyphernomicon]]:
+
+{{quote|What emerges from this is unclear, but I think it will be a form of anarcho-capitalist market system I call &quot;crypto-anarchy.&quot;&lt;ref&gt;[[Cyphernomicon]], Section 2.3.4.&lt;/ref&gt;}}
+
+Using such software, the association between the [[identity (social science)|identity]] of a certain user or organisation and the pseudonym they use is difficult to find, unless the user reveals the association. It is difficult to say which country's laws will be ignored, as even the location of a certain participant is unknown. In a sense, the encrypted anonymous networks (the &quot;[[cipherspace]]&quot;) can be regarded as an independent lawless territory or as an [[Permanent Autonomous Zone|autonomous zone]]. However, participants may in theory voluntarily create new laws using [[smart contract]]s or, if the user is [[pseudonymity|pseudonymous]], depend on [[online reputation]].
+
+==Motives==
+One motive of crypto-anarchists is to defend against [[computer surveillance|surveillance]] of computer networks communication. Crypto-anarchists try to protect against things like [[telecommunications data retention]], the [[NSA warrantless surveillance controversy]], [[Room 641A]] and [[National Defence Radio Establishment (Sweden)|FRA]] among other things. Crypto-anarchists consider the development and use of [[cryptography]] to be the main defense against such problems, as opposed to political action.
+
+A second concern is evasion of [[censorship]], particularly [[Internet censorship]], on the grounds of [[freedom of expression]]. The programs used by crypto-anarchists often make it possible to both publish and read information off the internet or other computer networks anonymously. [[Tor (anonymity network)|Tor]], [[I2P]], [[Freenet]] and many similar networks allow for anonymous &quot;hidden&quot; webpages only accessible by users of these programs. This helps [[whistleblowing|whistleblowers]] and political opposition in oppressive nations to spread their information.
+
+Thirdly, the technical challenge in developing these cryptographic systems is tremendous, which interests some programmers into joining the projects.
+
+===Crypto-anarchism and laws===
+Crypto-anarchists argue that without the ability to encrypt messages, personal information and private life would be seriously damaged. A ban on cryptography is equal to the eradication of [[secrecy of correspondence]]. They argue that only a [[Draco (lawgiver)|draconian]] [[police-state]] would criminalize cryptography. In spite of this, it is already illegal to use it in some countries, and export laws are restrictive in others. Citizens in the [[United Kingdom]] must, upon request, give passwords for decryption of personal systems to authorities. Failing to do this can result in imprisonment for up to two years, without evidence of other criminal activity.&lt;ref&gt;[http://rechten.uvt.nl/koops/cryptolaw/ Crypto Law Survey&lt;!--Bot-generated title--&gt;]&lt;/ref&gt;
+
+As processing power increases, this legislative key-surrender tactic can be circumvented using automatic rekeying of secure channels through rapid generation of new, unrelated public and private keys at short intervals. Following rekeying, the old keys can be deleted, rendering previously-used keys inaccessible to the end-user, and thus removing the user's ability to disclose the old key, even if they are willing to do so. Technologies enabling this sort of rapidly rekeyed encryption include [[public-key cryptography]], hardware [[pseudo-random number generator|PRNGs]], [[perfect forward secrecy]], and [[opportunistic encryption]]. The only way to stop this sort of cryptography is to ban it completely â and any such ban would be unenforceable for any government that is not [[totalitarian]], as it would result in massive invasions of privacy, such as blanket permission for physical searches of all computers at random intervals.
+
+To truly ''enforce'' a ban on the use of cryptography is probably impossible,{{Citation needed|date=August 2011}} as cryptography itself can be used to hide even the existence of encrypted messages (see [[steganography]]). It is also possible to [[Encapsulation (networking)|encapsulate]] messages encrypted with illegal strong cryptography inside messages encrypted with legal weak cryptography, thus making it difficult and uneconomical for outsiders to notice the use of illegal encryption.&lt;ref&gt;[http://www.ietf.org/rfc/rfc1984.txt RFC1984]&lt;/ref&gt;
+
+The usage of strong cryptography and anonymizing computer networks makes it difficult to detect any trespassing of the laws.
+
+==Plausible deniability==
+Crypto-anarchism relies heavily on [[plausible deniability]] to avoid censorship. Crypto-anarchists create this deniability by sending encrypted messages to interlinked [[Proxy server|proxies]] in computer networks. With the message a payload of routing information is bundled. The message is encrypted with each one of the proxies and the receiver [[public key cryptography|public keys]]. Each node can only decrypt its own part of the message, and only obtain the information intended for itself. That is, which node is the next hop in the chain. Thus, it is impossible for any node in the chain to know anything else but the previous and next node in the chain or what information they are carrying to the receiver as those parts of the information are hidden. The receiver also does not know who the sender is, except perhaps by [[Onion routing#Reply onions|another destination]], [[digital signature]] or something similar. Who originally sent the information and who is the intended receiver is considered infeasible to detect. See [[onion routing]] for more information.
+
+Thus, with multiple layers of encryption, it is effectively impossible to know who is connected to any particular service or pseudonym. Because [[summary punishment]] for crimes is mostly illegal, it is impossible to stop any potential criminal activity in the network without enforcing a ban on strong cryptography.
+
+[[Deniable encryption]] and anonymizing networks can be used to avoid being detected while sharing illegal or sensitive information, that users are too afraid to share without any protection of their identity. It could be anything from anti-state [[propaganda]], reports of abuse, whistleblowing, and reports from political dissidents.
+
+==Anonymous trading==
+Untraceable, privately issued [[electronic money]] and [[anonymous Internet banking]] exists in these networks. [[Digital Monetary Trust]] and Yodelbank were examples of two such anonymous banks that were later put offline by their creators. [[eCache]] is a bank currently operating in the [[Tor (anonymity network)|Tor]] network, and [[Pecunix]] is an anonymous (submitting personal information when opening an account is optional) gold bank operating on the Internet.
+
+[[Ukash]] is an e-money network. Cash in amounts up to Â£500/â¬750 can be swapped for a 19-digit Ukash voucher in payment terminals and retail outlets. [[Bitcoin]] is a currency generated by peer-to-peer networked computers that maintain a communal record of all transactions within the system that can be used in a crypt-anarchic context.
+
+[[Bitcoin]] is a P2P Digital Currency offering high degree of anonymity.
+
+Anonymous trading is easier to achieve for information services that can be provided over the Internet. Providing physical products is more difficult as the anonymity is more easily broken when crossing into the physical world. Untraceable money makes it possible to ignore some of the [[law]]s of the physical world, as the laws cannot be enforced without knowing people's physical identities. For instance, tax on income for online services provided via the crypto-anarchists networks can be avoided if no government knows the identity of the service provider.
+
+==Linguistics==
+The &quot;crypto&quot; in crypto-anarchism should not be confused with the use of the prefix &quot;[[wikt:crypto|crypto-]]&quot; to indicate an ideology or system with an intentionally concealed or obfuscated &quot;true nature&quot;. For example, some would use the term &quot;[[crypto-fascist]]&quot; to describe an individual or organization that holds [[fascist]] views and subscribes to fascist doctrine but conceals their agenda so long as these doctrines remain socially unacceptable. However, [[Timothy C. May]]'s &quot;[[Cyphernomicon]]&quot;&lt;ref&gt;[http://www.cryptoanarchy.net/index.html Cyphernomicon&lt;!--Bot-generated title--&gt;]&lt;/ref&gt; indicates that the term &quot;crypto-anarchist&quot; was partially intended as a [[pun]] on this usage, even though he did not intend to conceal his beliefs or agenda.
+
+== See also ==
+{{Portal box|Anarchism|Cryptography}}
+{{Div col}}
+* [[Cypherpunk]]
+* Crypto-currency
+* [[Darknet (file sharing)]]
+* [[Data haven]]s
+* [[Digital gold currency]]
+* [[Hacktivism]]
+* [[Infoanarchism]]
+* [[Jim Bell]]
+* [[Technological utopianism]]
+{{Div col end}}
+
+==References==
+{{Reflist}}
+
+== External links ==
+
+* [http://www.swiss.ai.mit.edu/6805/articles/crypto/cypherpunks/cyphernomicon/CP-FAQ ''The Cyphernomicon''] by [[Timothy C. May]]
+* [http://www.eff.org/~barlow/Declaration-Final.html A Declaration of the Independence of Cyberspace] by [[John Perry Barlow]]
+* [http://www.activism.net/cypherpunk/crypto-anarchy.html The Crypto Anarchist Manifesto] by [[Timothy C. May]] ([http://invisiblemolotov.files.wordpress.com/2008/06/cryptoanarchist-manifesto.pdf PDF version] from Invisible Molotov)
+
+{{Anarcho-capitalism}}
+
+{{DEFAULTSORT:Crypto-Anarchism}}
+[[Category:Computer law]]
+[[Category:Applications of cryptography]]
+[[Category:Crypto-anarchism| ]]
+[[Category:Anarcho-capitalism by form]]
+
+[[et:Anarhofuturism]]
+[[es:Criptoanarquismo]]
+[[fr:Crypto-anarchisme]]
+[[pl:Kryptoanarchia]]
+[[pt:Criptoanarquismo]]
+[[ru:ÐÑÐ¸Ð¿ÑÐ¾Ð°Ð½Ð°ÑÑÐ¸Ð·Ð¼]]
+[[sk:Kryptoanarchizmus]]
+[[sv:Kryptoanarkism]]</rev></revisions></page></pages></query></api>

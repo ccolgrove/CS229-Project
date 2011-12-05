@@ -1,0 +1,211 @@
+<?xml version="1.0"?><api><query><pages><page pageid="401135" ns="0" title="Nmap"><revisions><rev xml:space="preserve">{{Infobox software
+| name                   = Nmap Security Scanner
+| logo                   =
+| screenshot             = [[Image:Nmap-5.21.png|260px]]
+| caption                =  results of an Nmap scan
+| author                 = [[Gordon Lyon]] (''Fyodor'')
+| developer              =
+| released               = September, 1997
+| latest release version = 5.51
+| latest release date    = {{release date and age|2011|02|12}}
+| programming language   = [[C (programming language)|C]], [[C++]], [[Python (programming language)|Python]], [[Lua (programming language)|Lua]]
+| operating system       = [[Cross-platform]]
+| platform               =
+| language               = [[English language|English]]
+| status                 = Active
+| genre                  = [[computer security]], [[network management]]
+| license                = [[GNU General Public License]]
+| website                = [http://nmap.org/ nmap.org/]
+}}
+
+'''Nmap''' ('''N'''etwork '''Map'''per) is a security [[Network scanner|scanner]] originally written by [[Gordon Lyon]] (also known by his pseudonym ''Fyodor Vaskovich'') 
+&lt;ref&gt;{{cite news|title=Matrix mixes life and hacking|url=http://news.bbc.co.uk/1/hi/technology/3039329.stm|publisher=''[[BBC News]]''|accessdate=2009-01-14 | date=2003-05-19}}&lt;/ref&gt;
+used to discover [[Host (network)|hosts]] and [[Web service|services]] on a [[computer network]], thus creating a &quot;map&quot; of
+the network. To accomplish its goal, Nmap sends specially crafted [[Packet (information technology)|packets]] to the target host and then analyzes the responses.
+Unlike many simple port scanners that just send packets at some predefined constant rate, Nmap accounts for the
+network conditions ([[Network latency|latency]] fluctuations, [[network congestion]], the target interference with the scan) during the run.
+Also, owing to the large and active user [[community]] providing feedback and contributing to its features, Nmap has been able to extend its discovery capabilities beyond simply figuring out whether a host is up or down and which ports are open and closed; it can determine the [[operating system]] of the target, names and versions of the listening services, estimated uptime, type of device, and presence of a [[firewall (computing)|firewall]].
+
+Nmap runs on [[Linux]], [[Microsoft Windows]], [[Solaris Operating System|Solaris]], [[HP-UX]] and [[BSD]] variants (including [[Mac&amp;nbsp;OS&amp;nbsp;X]]), and also on [[AmigaOS]] and [[SGI IRIX]].&lt;ref&gt;[http://nmap.org/download.html Download the Free Nmap Security Scanner for Linux/Mac/UNIX or Windows]. Nmap.org (2011-03-25). Retrieved on 2011-09-17.&lt;/ref&gt; Linux is the most popular Nmap platform with Windows following it closely.&lt;ref name=&quot;Nmap Installation for Windows&quot;&gt;{{cite web|url=http://nmap.org/install/inst-windows.html|title=Nmap Installation for Windows|publisher=nmap.org|language=en|accessdate=2008-05-14}}&lt;/ref&gt;
+{{TOC_left}}
+{{Clear}}
+
+==Features==
+Nmap features include:
+* Host Discovery â Identifying hosts on a network. For example, listing the hosts which respond to [[ping]]s or have a particular port open.
+* [[port scanner|Port Scanning]] â Enumerating the open [[TCP and UDP port|ports]] on one or more ''target hosts''.
+* Version Detection â Interrogating listening network services listening on remote devices to determine the application name and version number&lt;ref name=&quot;vscan&quot;&gt;[http://nmap.org/vscan Service and Application Version Detection]{{dead link|date=September 2011}}&lt;/ref&gt;.
+* [[OS fingerprinting|OS Detection]] â Remotely determining the [[operating system]] and some hardware characteristics of network devices.
+* Scriptable interaction with the target â using [http://nmap.org/book/nse.html Nmap Scripting Engine] (NSE) and [[Lua (programming language)|Lua]] programming language, customized queries can be made.
+In addition to these, Nmap can provide further information on targets, including reverse [[Domain Name System|DNS]] names, device types, and [[MAC address]]es.&lt;ref&gt;[http://nmap.org/book/man.html Chapter 15. Nmap Reference Guide]. Nmap.org (2011-03-25). Retrieved on 2011-04-23.&lt;/ref&gt;
+
+Typical uses of Nmap:
+* Auditing the security of a device by identifying the network connections which can be made to it.{{Citation needed|date=March 2008}}
+* Identifying open ports on a target host in preparation for auditing&lt;ref&gt;[http://nmap.org/press/computerworld_when_good_scanners_go_bad.txt When Good Scanners Go Bad], From [http://www.computerworld.com/home/print.nsf/all/9903229872], ComputerWorld 22 March 1999&lt;/ref&gt;.
+* Network inventory, [[Network mapping]], maintenance, and asset management.
+* Auditing the security of a network by identifying unexpected new servers.&lt;ref&gt;[http://web.archive.org/web/20090401141545/http://heavyk.org/nmap-audit/nmap-audit-pod.html nmap-audit â Network auditing with Nmap]. heavyk.org&lt;/ref&gt;
+
+==Basic commands working in Nmap==
+* For target specifications:
+    nmap &lt;targets' URL's or IP's with spaces between them (can also use CIDR notation)&gt; 
+    e.g. : scanme.nmap.org, microsoft.com/24, 192.168.0.1; 10.0.0â255.1â254 (The command is nmap scanme.nmap.org and similar)
+* For OS detection:
+    nmap -O &lt;target-host's URL or IP&gt;
+* For Version detection:
+    nmap -sV &lt;target-host's URL or IP&gt;
+* For configuring response timings (-T0 to -T5 :increasing in aggressiveness):
+   nmap -T0 -sV -O &lt;target-host's URL or IP&gt;
+
+==Graphical interfaces==
+'''NmapFE''', originally written by ''Zach Smith'', was Nmap's official [[GUI]] for Nmap versions 2.2 to 4.22.&lt;ref name=&quot;changelog&quot; /&gt; For Nmap 4.50 (originally in the 4.22SOC development series) NmapFE was replaced with '''Zenmap''', a
+new official graphical user interface based on '''UMIT''', developed by ''Adriano Monteiro Marques''.
+
+Various web-based interfaces have also been available for controlling Nmap remotely from a web browser.
+These include LOCALSCAN,&lt;ref&gt;[http://staff.washington.edu/dgreene/localscan/ ]{{dead link|date=April 2011}}&lt;/ref&gt; nmap-web,&lt;ref&gt;[http://www.komar.org/pres/nmap-web/ nmap-web: quick-n-dirty web interface to Nmap]. Komar.org. Retrieved on 2011-09-17.&lt;/ref&gt; and Nmap-CGI.&lt;ref&gt;[http://nmap-cgi.tuxfamily.org/ nmap-cgi homepage]. Nmap-cgi.tuxfamily.org. Retrieved on 2011-09-17.&lt;/ref&gt;
+
+Also some [[Microsoft Windows]] specific GUIs exist. These include NMapWin,&lt;ref&gt;[http://nmapwin.sourceforge.net/ NMapWin v1.2.3]. Nmapwin.sourceforge.net. Retrieved on 2011-09-17.&lt;/ref&gt; which has not been updated since v1.4.0 was released in June 2003, and NMapW&lt;ref&gt;[http://www.syhunt.com/nmapw/ Syhunt Technology: Web Application Security and Testing Tools]. Syhunt.com (2010-10-23). Retrieved on 2011-09-17.&lt;/ref&gt; by [[Syhunt]].
+&lt;center&gt;&lt;gallery&gt;
+Image:Zenmap.png|''Zenmap'', showing results for a port scan against Wikipedia
+Image:Nmapfe screenshot.png|''NmapFE'', showing results for a port scan against Wikipedia
+Image:Xnmap.png|''XNmap'', a Mac OS X GUI.
+&lt;/gallery&gt;&lt;/center&gt;
+
+==Reporting results==
+Nmap provides four possible output formats for the scan results. All but the interactive output is saved to the local file.
+All of the output formats in Nmap can be easily manipulated by text-processing software â like [[awk]], [[sed]], or many others â thus enabling the user to create customized reports.&lt;br /&gt;
+'''Interactive''' â presented and updated real time when a user runs the Nmap from the command line. Various options can be entered during the scan to facilitate monitoring. &lt;br /&gt;
+''' [[XML]] ''' â its [[document type definition]] is located at.&lt;ref&gt;[http://nmap.org/data/nmap.dtd Nmap XML DTD]. Nmap.org (2011-09-09). Retrieved on 2011-09-17.&lt;/ref&gt; Using XML format for results allows later to produce documents suited for the various media. One such use is to create HTML report not available as built-in output format with the help of freely available [[Open source]] [[XSLT]] processors.
+&lt;br /&gt;
+'''Grepable''' â line-oriented output that is tailored to the line-processing tools like [[grep]], [[sed]] or [[awk]].&lt;br /&gt;
+'''Normal''' â the output as seen while running Nmap from the command line, but saved to the file.&lt;br /&gt;
+'''[[Script kiddie]]''' â meant to be the funny way to postformat the interactive output [[l33t|replacing]] letters with their visually alike number representations. For example, ''Interesting ports'' becomes ''Int3rest|ng p0rtz'' .
+
+==History==
+Nmap was first published in September 1997, as an article in [[Phrack Magazine]] with source-code included.&lt;ref&gt;[http://www.phrack.org/issues.html?issue=51&amp;id=11#article Nmap Introduction â Phrack 51, Article 11]. Phrack.org. Retrieved on 2011-09-17.&lt;/ref&gt; With the help and contributions of the computer security community, development continued at an ever increasing pace. Changes to the program included operating system fingerprinting, service fingerprinting,&lt;ref name=&quot;vscan&quot; /&gt; code rewrites ([[C (programming language)|C]] to [[C++]]), additional scan types, protocol support (e.g. [[IPv6]], [[SCTP]]&lt;ref&gt;[http://www.roe.ch/Nmap_SCTP SCTP Support for Nmap]. Roe.ch (2007-01-26). Retrieved on 2011-09-17.&lt;/ref&gt;) and new programs that complement Nmap's core features. Some of the larger changes include:
+
+; December 12, 1998: Nmap 2.00 is released, including Operating System fingerprinting &lt;ref name=&quot;book-history&quot;&gt;[http://nmap.org/book/history-future.html#history The History and Future of Nmap]&lt;/ref&gt;
+; April 11, 1999: NmapFE, a [[GTK+]] front end, is bundled with Nmap&lt;ref name=&quot;book-history&quot; /&gt;
+; December 7, 2000: Nmap ported to Windows&lt;ref name=&quot;changelog&quot;&gt;[http://nmap.org/changelog.html Nmap Change Log]. Nmap.org. Retrieved on 2011-09-17.&lt;/ref&gt;
+; August 28, 2002: Rewrite from C to C++&lt;ref name=&quot;changelog&quot; /&gt;
+; September 16, 2003: Nmap 3.45 the first public release to include service version detection&lt;ref name=&quot;changelog&quot; /&gt;
+; August 31, 2004: Core scan engine rewritten for version 3.70. New engine is called ''ultra_scan''&lt;ref&gt;[http://seclists.org/nmap-hackers/2004/10 Nmap Hackers: Nmap 3.70 Released: Core Scan Engine Rewrite!]. Seclists.org. Retrieved on 2011-09-17.&lt;/ref&gt;
+; Summer 2005: Nmap selected for participation in [[Google Summer of Code]].&lt;ref&gt;[http://seclists.org/nmap-hackers/2005/7 Google sponsors Nmap summer student developers]. Seclists.org. Retrieved on 2011-09-17.&lt;/ref&gt; These and future students contributed major features like Zenmap, NSE, Ncat, and 2nd-generation OS detection.
+; December 13, 2007: Nmap 4.50, the 10th Anniversary Edition, is released. Includes the new Zenmap frontend, 2nd-generation OS detection, and the Nmap Scripting Engine&lt;ref&gt;[http://insecure.org/stf/Nmap-4.50-Release.html Nmap 4.50 Press Release]. Insecure.org. Retrieved on 2011-09-17.&lt;/ref&gt;
+; March 30, 2009: Emergency release of Nmap 4.85BETA5, which leverages NSE to detect [[Conficker]] infections&lt;ref&gt;[http://seclists.org/nmap-dev/2009/q1/870 Nmap Development: Nmap 4.85BETA5: Now with Conficker detection!]. Seclists.org. Retrieved on 2011-09-17.&lt;/ref&gt;
+; July 16, 2009: Nmap 5.00 includes [[netcat]]-replacement Ncat and Ndiff scan comparison tool&lt;ref&gt;[http://nmap.org/5/ Nmap 5.00 Release Notes]. Nmap.org. Retrieved on 2011-09-17.&lt;/ref&gt;
+; January 28, 2011: Nmap 5.50 released, including the new Nping packet generation tool&lt;ref&gt;[http://seclists.org/nmap-hackers/2011/0 Nmap 5.50: Now with Gopher protocol support!]. Seclists.org. Retrieved on 2011-09-17.&lt;/ref&gt;
+
+A full list of the changes in each release is recorded in the Nmap Changelog.&lt;ref name=&quot;changelog&quot; /&gt;
+
+==Purpose==
+Nmap is used to discover computers and services on a computer network, thus creating a âmapâ of the network. Just like many simple port scanners, Nmap is capable of discovering passive services on a network, despite the fact that such services arenât advertising themselves with a service discovery protocol. In addition, Nmap may be able to determine various details about the remote computers.
+
+==Ethical issues and legality==
+Like most tools used in [[computer security]], Nmap can be used for ''[[black hat]]'' hacking,&lt;ref&gt;[http://www.securityfocus.com/news/10011 Hacking tool reportedly draws FBI subpoenas]. Securityfocus.com (2004-11-24). Retrieved on 2011-09-17.&lt;/ref&gt; or attempting to gain unauthorized access to computer systems. It would typically be used to discover open ports which are likely to be running vulnerable services, in preparation for attacking those services with another program.&lt;ref&gt;[http://www.sans.org/resources/idfaq/amap.php SANS Institute â Intrusion Detection FAQ: What is AMap and how does it fingerprint applications?]. Sans.org. Retrieved on 2011-09-17.&lt;/ref&gt;
+
+System administrators often use Nmap to search for unauthorized servers on their network, or for computers which don't meet the organization's minimum level of security.&lt;ref&gt;[http://www.techsupportalert.com/pdf/t04123.pdf 120 - How to conduct a security audit]. (PDF) . Retrieved on 2011-09-17.&lt;/ref&gt;
+
+Nmap is often confused with host vulnerability assessment tools such as [[Nessus (software)|Nessus]], which go further in their exploration of a target by testing for common vulnerabilities in the open ports found.
+
+In some jurisdictions, unauthorized port scanning may be illegal.&lt;ref&gt;{{cite web|title=First ruling by the Supreme Court of Finland on attempted break-in|year=2003|url=http://insecure.org/stf/fin.html|publisher=''[[Osborne Clarke]]''|accessdate=2010-02-21}}&lt;/ref&gt;
+
+==Nmap in popular culture==
+In ''[[The Matrix Reloaded]]'', [[Trinity (Matrix character)|Trinity]] is seen using Nmap to access a power plant's computer system,&lt;ref name=nmapmovies&gt;{{cite web |url=http://nmap.org/movies.html |title=nmap in the movies}}&lt;/ref&gt; allowing [[Neo (The Matrix)|Neo]] to &quot;physically&quot; [[burglary|break in]] to a building. The appearance of Nmap in the film was widely discussed on internet forums and hailed as an unusually realistic example of hacking compared to other movies.&lt;ref&gt;{{cite news |url=http://www.theregister.co.uk/2003/05/16/matrix_sequel_has_hacker_cred/ |title=Matrix Sequel Has Hacker Cred |author=Kevin Poulsen |date=2003-05-16 |publisher=The Register}}&lt;/ref&gt;
+
+Nmap and NmapFE were used in the film [http://www.imdb.com/title/tt0427461/ ''The Listening''], a 2006 movie about a former NSA officer who defects and mounts a clandestine counter-listening station high in the Italian alps.
+
+Some Nmap source code can be seen in the movie ''[[Battle Royale (film)|Battle Royale]]'', as well as brief views of the command line version of Nmap executing in ''[[Live Free or Die Hard]]'' and ''[[Bourne Ultimatum (film)|Bourne Ultimatum]]''.&lt;ref name=nmapmovies /&gt;
+
+==Nmap in academia==
+Nmap has long since become an integral part of academic activities.  It has been used for research involving TCP/IP protocol suite and networking in general, with the security domain being the main beneficiary.&lt;ref&gt;{{cite web |url=http://www.cs.utk.edu/~ltinnel/papers/200301IEEESecurityPrivacy_Validation.pdf | title=Validation of Sensor Alert Correlators}}&lt;/ref&gt; Beyond being the helping tool in researching various topics, Nmap has become the topic of research itself &lt;ref&gt;{{cite web |url=http://www.springerlink.com/content/g37623k636656tu7 | title=A Data Mining Based Analysis of Nmap Operating System Fingerprint Database }}&lt;/ref&gt;
+
+==Output from Nmap==
+{{Pre|
+&lt;br&gt; Command :- nmap -sV -T4 -O -A -v &lt;target_host&gt; 
+&lt;br&gt; Starting Nmap 5.35DC1 &lt;http://nmap.org&gt; at 2010-10-21 01:57 IST
+&lt;br&gt; NSE: Loaded 6 scripts for scanning.
+&lt;br&gt; Nmap scan report for &lt;target_host&gt; (&lt;target_IP&gt;)
+&lt;br&gt; Host is up (0.10s latency).
+&lt;br&gt; Not shown: 998 filtered ports
+&lt;br&gt; PORT      STATE   SERVICE  VERSION
+&lt;br&gt; 80/tcp    open    http     Apache Tomcat/Coyote JSP engine 1.1
+&lt;br&gt; 113/tcp   closed  auth
+
+Running: Linux 2.6.X (96%), Cisco Linux 2.6.X (90%), HP embedded (89%), Riverbed embedded (87%)
+Aggressive OS guesses: Linux 2.6.9 (96%), Linux 2.6.9 â 2.6.27 (96%), Linux 2.6.9 (CentOS 4.4) (95%), Linux 2.6.15 â 2.6.26 (92%), Blue Coat Director (Linux 2.6.10) (92%), Linux 2.6.26 (PCLinuxOS) (91%), Linux 2.6.11 (90%), HP Brocade 4Gb SAN switch (89%), Linux 2.6.22.1â32.fc6 (x86, SMP) (89%), Linux 2.6.28 (88%)
+No exact OS matches for host (test conditions non-ideal).
+Uptime guess: 35.708 days (since Wed Sep 15 08:58:56 2010)
+
+&lt;br&gt; Nmap done: 1 IP address (1 host up) scanned in 19.94 seconds
+&lt;br&gt; Raw packets sent: 2080 (95.732KB) | Rcvd: 24 (1.476KB)
+
+&lt;br&gt; TRACEROUTE (using port 113/tcp)
+&lt;br&gt; HOP RTT     ADDRESS
+&lt;br&gt; 1   2.27 ms 192.168.254.4
+&lt;br&gt; Nmap done: 1 IP address (1 host up) scanned in 19.94 seconds
+&lt;br&gt; Raw packets sent: 2080 (95.732KB) | Rcvd: 24 (1.476KB)
+}}
+
+==See also==
+{{Portal|Free software}}
+*[[Metasploit Framework]]
+*[[Netcat]]
+*[[Snort (software)|Snort]]
+*[[Wireshark]]
+
+==References==
+{{Reflist|2}}
+
+==Bibliography==
+{{Refbegin}}
+* {{Cite book
+| first1      = Gordon
+| last1       = Fyodor Lyon
+| date        = January 1, 2009
+| title       = Nmap Network Scanning: The Official Nmap Project Guide to Network Discovery and Security Scanning
+| publisher   = Insecure.com LLC
+| page       = 468
+| isbn        = 0979958717
+| url         = http://nmap.org/book/
+| postscript      = .
+}}
+{{Refend}}
+
+==External links==
+*[http://nmap.org/ Official website]
+*[http://www.sectools.org/ Sectools.org website by Fyodor, listing most popular hacking tools]
+*[http://www.phrack.org/issues.html?issue=51&amp;id=11#article First release of Nmap in Phrack Magazine]
+*[http://www.youtube.com/watch?v=0TJuipCrjZQ Nmap in ''The Matrix''] YouTube
+*[http://www.sourceforge.net/projects/nmapwin32svn/ Compiled SVN versions of NMap for Windows]
+
+[[Category:Open source network management software]]
+[[Category:Port scanners]]
+[[Category:Unix network-related software]]
+[[Category:Cross-platform software]]
+[[Category:Lua-scriptable software]]
+[[Category:Network analyzers]]
+[[Category:C++ software]]
+[[Category:Python software]]
+[[Category:Linux security software]]
+
+[[bg:Nmap]]
+[[cs:Nmap]]
+[[de:Nmap]]
+[[es:Nmap]]
+[[fr:Nmap]]
+[[ko:Nmap]]
+[[hr:Nmap]]
+[[id:Nmap]]
+[[it:Nmap]]
+[[ka:Nmap]]
+[[lt:Nmap]]
+[[nl:Nmap]]
+[[ja:Nmap]]
+[[pl:Nmap]]
+[[pt:Nmap]]
+[[ru:Nmap]]
+[[simple:Nmap]]
+[[sv:Nmap]]
+[[tr:Nmap]]
+[[uk:Nmap]]
+[[zh:Nmap]]</rev></revisions></page></pages></query></api>

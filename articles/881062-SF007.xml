@@ -1,0 +1,80 @@
+<?xml version="1.0"?><api><query><pages><page pageid="881062" ns="0" title="M0n0wall"><revisions><rev xml:space="preserve">{{nofootnotes|date=June 2011}}
+{{notability|Products|date=June 2011}}
+{{Infobox OS
+|name = m0n0wall
+|logo = [[File:m0n0wall.svg|m0n0wall logo|250px]]
+|screenshot = 
+|caption = 
+|developer = Manuel Kasper
+|family = [[FreeBSD]] (6.4-RELEASE)
+|source model = [[Free software]]
+|latest release version = 1.33
+|latest release date = {{release date|2011|03|16}}
+|kernel type = [[Monolithic kernel]]
+|license = [[BSD licenses|BSD]]
+|working state = Current
+|website = http://m0n0.ch/wall/
+}}
+
+{{lowercase|m0n0wall}}
+{{Refimprove|date=July 2008}}
+
+'''m0n0wall''' is an embedded [[firewall (networking)|firewall]] distribution of [[FreeBSD]], one of the [[Berkeley Software Distribution|BSD]] [[operating system]] descendants. It provides a small image which can be put on [[flash memory|Compact Flash]] cards as well as on [[CDROM]]s and [[hard disk]]s.  It runs on a number of embedded platforms and generic PCs.  The PC version can be run with just a [[Live CD]] and a [[floppy disk]] to store configuration data, or on a single Compact Flash card (with an [[AT Attachment|IDE]] adapter). This eliminates the need for a hard drive, which reduces noise and heat levels.
+
+== Features ==
+
+m0n0wall provides for a [[Internet|web]]-based configuration and uses [[PHP]] exclusively for the [[Graphical user interface|GUI]] and [[booting|bootup]] configuration. Additionally, it adopts a single [[XML]] file for configuration parameters.
+
+Some functions of m0n0wall are:
+
+*Stateful packet filter [[firewall (networking)|firewall]]
+*[[IPsec]] and [[Point-to-point tunneling protocol|PPTP]] [[Virtual private network|VPN]]s
+*Inbound and Outbound [[Network Address Translation]]
+*[[Captive portal]]
+*[[Traffic shaping|Traffic shaper]]
+*Inbound and Outbound port filtering
+*Support for [[802.1q]] compatible VLANs
+*Multiple IP addresses on LAN and WAN ports
+*IPS
+*Replacement for commercial [[router (computing)|router]]
+
+==Inclusion in commercial products==
+m0n0wall is used in some commercial hardware platforms, including [[Netgate]] and [[Logic Supply]].
+
+== Derivatives ==
+* [http://code.google.com/p/m0n0wall-mod/ m0n0wall mod]: Original m0n0wall with additional features (DHCP+PPTP, DHCP+PPPoE, static+PPPoE, L2TP, WAN eth interface).
+* [[AskoziaPBX]]: an embedded telephone system.
+* [[FreeNAS]]: [[Network-attached storage]] distro using FreeBSD 7.2 and the m0n0wall web [[GUI]].
+* [[pfSense]]: Builds off of m0n0wall but focused towards full PC installations rather than the embedded hardware focus of m0n0wall.
+
+==See also==
+*[[Comparison of firewalls]]
+
+==External links==
+* {{official|http://m0n0.ch/wall/}}
+* [http://m0n0wall-cmi.sourceforge.net/ M0n0wall central management interface project]
+* [http://www.linux.com/articles/43495 Review] at [[Linux.com]]
+* [http://code.google.com/p/m0n0wall-mod/ m0n0wall mod]
+
+{{FreeBSD}}
+{{Routing software}}
+{{Firewall software}}
+
+[[Category:FreeBSD]]
+[[Category:Firewall software]]
+[[Category:Free routing software]]
+[[Category:Gateway/routing/firewall distribution]]
+
+{{operating-system-stub}}
+{{network-software-stub}}
+
+[[cs:M0n0wall]]
+[[da:M0n0wall]]
+[[de:M0n0wall]]
+[[fr:M0n0wall]]
+[[it:M0n0wall]]
+[[no:M0n0wall]]
+[[pl:M0n0wall]]
+[[pt:M0n0wall]]
+[[ro:M0n0wall]]
+[[sv:M0n0wall]]</rev></revisions></page></pages></query></api>

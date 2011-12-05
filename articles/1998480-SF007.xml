@@ -1,0 +1,35 @@
+<?xml version="1.0"?><api><query><pages><page pageid="1998480" ns="0" title="BootVis"><revisions><rev xml:space="preserve">&lt;!-- Deleted image removed: [[Image:Bootvis-screenshot.jpg|thumb|right|Screenshot of a BootVis trace]] --&gt;
+'''''BootVis''''' is a [[application software|computer application]] that allows PC manufacturers to check how long a [[Windows XP]] machine takes to [[booting|boot]], and then to [[Optimization (computer science)|optimize]] the boot process&lt;ref&gt;[http://articles.techrepublic.com.com/5100-6346_11-5034622.html TechRepublic: Use BootVis to improve XP boot performance]&lt;/ref&gt;, sometimes considerably reducing the time required. It was formerly a [[Microsoft]] product&lt;ref name=&quot;Microsoft&quot;&gt;{{cite web|title=Fast Boot / Fast Resume Design |url=http://www.microsoft.com/whdc/system/sysperf/fastboot/default.mspx |date=2004-02-12}}&lt;/ref&gt;, but it is no longer available from the company's website. 
+
+==Use==
+BootVis defines boot and resume times as the time from when the power switch is pressed to the time at which the user is able to start a program from a desktop shortcut. The application measures time taken during Windows XP's boot or resume period. BootVis can also invoke the optimization routines built into Windows XP, such as [[defragment]]ing the files accessed during boot, to improve startup performance. This optimization is automatically done by Windows at three day intervals.&lt;ref&gt; {{cite web|title=Benchmarking on Windows XP |url=http://www.microsoft.com/whdc/archive/benchmark.mspx |date=2001-12-04 | accessdate=2008-04-18 }}&lt;/ref&gt;
+
+Because the Global Logger session used by BootVis is triggered by registry entries, it runs every time that the entries appear in the registry, which has resulted in some users seeing hard drive space exponentially decreasing due to the size of the trace.log file (in C:\WINDOWS\System32\LogFiles\WMI). Upon rebooting the file will shrink but will grow again as the computer runs. The user can run BootVis again and click Trace--&gt;Stop Tracing, which will stop the file  from growing and allow it to be safely deleted. &lt;ref&gt;http://www.tweakxp.com/article37538.aspx&lt;/ref&gt;&lt;ref&gt;http://forum.soft32.com/win3/WMI-trace-log-ftopict7221.html&lt;/ref&gt; The Bootvis.exe tool is no longer available from Microsoft.&lt;ref name=&quot;Microsoft&quot; /&gt;
+
+==Similar tools==
+[http://www.soluto.com/About/ Soluto] measures the boot time and lets the user decide if and when a software shall be started automatically. It is using an information database populated by the input from the users.
+
+WinBootInfo logs drivers and applications loaded during system boot, measures Windows boot times, records CPU and I/O activity during the boot.
+
+Boot Log XP troubleshoots boot-up problems in Windows XP, creates a new boot log file.
+
+[http://www.r2.com.au/page/products/show/startdelay r2 Studios' Startup Delayer] allows users to optionally delay or disable applications that would otherwise run during start up.
+
+==References==
+{{reflist}}
+
+==External links==
+*[http://www.microsoft.com/whdc/system/sysperf/fastboot/default.mspx Microsoft's Webpage concerning Bootvis.exe]
+*[http://www.tweakhound.com/xp/bootvis/ TweakHound rebuke - &quot;Bootvis, MS wassup?&quot;]
+*[http://www.softpedia.com/get/Tweak/System-Tweak/BootVis.shtml Softpedia download page]
+* [http://www.clockmod.com/index.php?/products/downloads/winbootinfo_1.0/ WinBootInfo]
+*[http://www.greatis.com/utilities/bootlogxp/index.html Boot Log XP]
+*[http://www.r2.com.au/page/products/show/startdelay r2 Studios' Startup Delayer]
+
+[[Category:Discontinued Microsoft software]]
+[[Category:Windows-only software]]
+[[Category:Computer system optimization software]]
+
+
+[[ko:ë¶í¸ë¹ì¤]]
+[[ru:BootVis]]</rev></revisions></page></pages></query></api>

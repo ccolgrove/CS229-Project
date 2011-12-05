@@ -1,0 +1,70 @@
+<?xml version="1.0"?><api><query><redirects><r from="Vlepld.exe" to="VistaPE" /></redirects><pages><page pageid="17282162" ns="0" title="VistaPE"><revisions><rev xml:space="preserve">{{Infobox software
+| name                   = VistaPE
+| logo                   = [[Image:VistaPE logo.png]]
+| screenshot             = [[Image:VistaPE Live CD.png|300px]]
+| caption                = VistaPE booted off a [[Live CD]]
+| collapsible            =
+| author                 =
+| developer              = nightman
+| released               = December 1, 2006
+| latest release version = 12 RC1
+| latest release date    = 21.10.2008
+| latest preview version = v12RC1
+| latest preview date    = {{release date|2008|10|21}}
+| frequently updated     =
+| programming language   =
+| operating system       =
+| platform               = the Live CD should run on any x86 computer
+| size                   =
+| language               =
+| status                 = continued/under development
+| genre                  =
+| license                =
+| website                = [http://www.vistape.net/ www.vistape.net]
+}}
+'''VistaPE''' is a project (set of scripts) for [[WinBuilder]] to create a [[Live CD]] based on the [[Windows kernel|kernel]] of [[Windows Vista]]. &lt;br&gt;
+VistaPE uses technology from and largely resembles [[Windows Preinstallation Environment]] 2.0 (from Microsoft), but has a graphical shell, expanded set of supported devices and functions, and can run almost any Windows program.
+
+==Features==
+* Possibility to either fully or partially load VistaPE at startup into memory (boot.wim)
+* Support for a large number of SATA/RAID/SCSI/NIC drivers (thanks to the [[DriverPacks]] project).
+* Able to read and write NTFS/FAT32/FAT/Ext2/Ext3 partitions
+* Full networking support
+* Automatic hardware detection (PnP)
+* Booting from CD/HDD/UFD/Network
+* Compatibility with Microsoft Windows Vista
+* A wide range of programs and shells (Explorer, LiteStep, BS Explorer ...)
+* No limits regarding the maximum number of open processes
+* Automatic creation shortcuts for programs
+* Ability to remove VistaPE boot media while VistaPE is running (using boot.wim)
+* Full multilanguage support
+
+==Portable applications==
+It is complicated to install applications on the RAM of a Live CD, and all the changes made to those programs and the installation itself will be lost once the computer is rebooted, so a good alternative is to use [[portable applications]], that can be run from either the Live CD, or from  a [[USB flash drive]] connected to the computer; there is even software dedicated to create those portable applications ([[VMware ThinApp]], [[Virtual Application Studio]] or [[Portable application creators|others]]).
+
+==Notes==
+The default Live CD is less than 200MB in size.{{Citation needed|date=February 2011}}
+
+==Gallery==
+&lt;gallery&gt;
+Image:WinBuilder building VistaPE.png|[[WinBuilder]] building VistaPE
+Image:VistaPE Live CD Boot Screen.png|The Boot Screen of VistaPE Live CD
+Image:VistaPE Live CD loading.png|VistaPE Live CD loading
+&lt;/gallery&gt;
+
+==See also==
+*[[BartPE]]
+*[[Reatogo-X-PE]]
+*[[nLite and vLite]]
+*[[Windows Preinstallation Environment]]
+*[[WinBuilder]]
+*[[Live USB]]
+*[[List of live CDs]]
+*[[VMware Workstation]] or [[VirtualBox]] to use a Live CD without [[Optical disc authoring|burning]] the [[ISO image]].
+*[[Windows To Go]]
+
+[[Category:Operating system distributions bootable from read-only media]]
+
+[[it:VistaPE]]
+[[pt:VistaPE]]
+[[simple:VistaPE]]</rev></revisions></page></pages></query></api>

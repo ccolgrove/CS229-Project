@@ -1,0 +1,180 @@
+<?xml version="1.0"?><api><query><pages><page pageid="650156" ns="0" title="Shared source"><revisions><rev xml:space="preserve">{{primarysources|date=July 2011}}
+'''Shared source''' is an umbrella term covering some of [[Microsoft]]'s legal mechanisms for [[software]] [[source code]] distribution. Microsoft's Shared Source Initiative, launched in May 2001,&lt;ref&gt;[http://www.geekzone.co.nz/content.asp?contentid=4253 Geekzone: Microsoft announces expansion of Shared Source Initiative]&lt;/ref&gt; includes a spectrum of technologies and licenses. Most of its source code offerings are available for download after eligibility criteria are met.
+
+The licenses associated with the offerings range from being closed-source,&lt;ref&gt;{{cite web
+| title = Open vs. Closed Source Software
+| url = http://www.scienceinafrica.co.za/2004/january/software.htm
+| publisher=scienceinafrica.co.za
+| date = January 2004
+}}&lt;/ref&gt;&lt;ref&gt;{{cite web
+| title = ZDNet Definition for: Closed Source
+| publisher=[[ZDNet]]
+| url = http://dictionary.zdnet.com/definition/closed+source.html
+| quote=''Proprietary software owned by one organization. The term is typically used only in discussions that contrast open source software with proprietary software''
+}}&lt;/ref&gt; allowing only viewing of the code for reference, to allowing it to be modified and redistributed for both commercial and non-commercial purposes.
+
+== Overview ==
+
+Shared Source programs allow individuals and organizations to access Microsoft's source code for reference (e.g. when developing complementary systems), for review and auditing from a security perspective (mostly wanted by some large corporations and governments), and for development (academic institutions, OEMs, individual developers).
+
+As part of the framework, Microsoft released 5 licenses for general use. Two of them, [[Microsoft Public License]] and [[Microsoft Reciprocal License]], have been approved by the [[Open Source Initiative]] as [[open source]] licenses&lt;ref&gt;[http://opensource.org/licenses/ms-pl.html Ms-PL]&lt;/ref&gt;&lt;ref&gt;[http://opensource.org/licenses/ms-rl.html Ms-RL]&lt;/ref&gt; and are regarded by the [[Free Software Foundation]] as [[free software]] licenses.&lt;ref name=&quot;FSFLicenseList&quot;&gt;{{cite web
+| title = Licenses - Free Software Foundation
+| url = http://www.fsf.org/licensing/licenses/}}&lt;/ref&gt; Other Shared Source licenses are proprietary, and thus allow the copyright holder to retain tighter control over the use of their product.
+
+Microsoft's Shared Source Initiative has been imitated by other companies such as [[RISC OS Open Ltd]].&lt;ref&gt;[http://www.riscosopen.org/ RISC OS Open]&lt;/ref&gt;
+
+Microsoft also uses specific licenses for some of their products, for example the [[Shared Source Common Language Infrastructure|Shared Source CLI]] License&lt;ref&gt;{{cite web
+| title = Shared Source Common Language Infrastructure License
+| url = http://msdn.microsoft.com/MSDN-FILES/027/002/097/ShSourceCLILicense.htm
+}}&lt;/ref&gt; and the Microsoft [[Windows CE|Windows Embedded CE]] 6.0 Shared Source License.&lt;ref&gt;[http://msdn2.microsoft.com/en-us/embedded/bb190212.aspx Microsoft Windows Embedded CE 6.0 Shared Source License Terms (âLicenseâ)&lt;!-- Bot generated title --&gt;]&lt;/ref&gt;
+
+==Criticism==
+Two specific Shared Source licenses are interpreted as free software and open source licenses by [[Free Software Foundation|FSF]] and [[Open Source Initiative|OSI]].  However, OSI president [[Michael Tiemann]] considers the phrase &quot;Shared Source&quot; itself to be a marketing term created by Microsoft. He argues that it is &quot;an insurgent term that distracts and dilutes the Open Source message by using similar-sounding terms and offering similar-sounding promises&quot;.&lt;ref name=&quot;icaza20110307&quot;&gt;{{Cite web
+ |url=http://opensource.org/node/225
+ |title=Who Is Behind &quot;Shared Source&quot; Misinformation Campaign?
+ |author=[[Michael Tiemann]]
+ |date=2007-11-11
+ |accessdate=2011-03-12
+ |quote=''Shared source is a marketing term created and controlled by Microsoft. Shared source is not open source by another name. Shared source is an insurgent term that distracts and dilutes the Open Source message by using similar-sounding terms and offering similar-sounding promises. And to date, 'shared source' has been a marketing dud as far as Open Source is concerned.''}}&lt;/ref&gt;
+
+==Open Source, Free licenses==
+Two Microsoft Shared Source Licenses are considered as [[Open source license|Open Source]] by the [[Open Source Initiative]]&lt;ref name=&quot;osi-approval&quot;/&gt; and [[Free software license|Free]] by the [[Free Software Foundation]].&lt;ref name=&quot;FSFLicenseList&quot;/&gt;
+
+===Microsoft Public License (Ms-PL)===
+&lt;!-- This section is linked from [[BSD licenses]] --&gt;
+This is the least restrictive of the Microsoft licenses and allows for distribution of ''compiled'' code for either commercial or non-commercial purposes under any license that complies with the Ms-PL. Redistribution of the source code itself is permitted only under the Ms-PL.&lt;ref name=&quot;ms-pl&quot;&gt;{{cite web
+| title = Microsoft Public License (Ms-PL)
+| url = http://www.microsoft.com/opensource/licenses.mspx#Ms-PL
+}}&lt;/ref&gt; Initially titled ''Microsoft Permissive License'', it was renamed to ''Microsoft Public License'' while being reviewed for approval by the [[Open Source Initiative]] (OSI). The license was approved on October 12, 2007 along with the Ms-RL.&lt;ref name=&quot;osi-approval&quot;&gt;{{cite web
+| title = OSI Approves Microsoft License Submissions
+| url = http://opensource.org/node/207
+| date = 2007-10-17
+}}&lt;/ref&gt;
+According to the Free Software Foundation, it is a free software license but not compatible with the [[GNU GPL]].&lt;ref name=&quot;FSFLicenseList&quot;/&gt;
+
+===Microsoft Reciprocal License (Ms-RL)===
+
+This Microsoft license allows for distribution of derived code so long as the modified source files are included and retain the Ms-RL.&lt;ref name=&quot;ms-rl&quot;&gt;{{cite web
+|url=http://www.microsoft.com/opensource/licenses.mspx#Ms-RL
+|title=Microsoft Reciprocal License (Ms-RL)
+}}&lt;/ref&gt; The Ms-RL allows those files in the distribution that do not contain code originally licensed under Ms-RL to be licensed according to the copyright holder's choosing. This is equivalent to the [[CDDL]], [[Eclipse Public License|EPL]] or [[LGPL]] (GPL with a typical &quot;linking exception&quot;).{{Citation needed|date=March 2008}} Initially known as the ''Microsoft Community License'', it was renamed during the OSI approval process.
+
+On December 9, 2005, the Ms-RL license was submitted to the [[Open Source Initiative]] for approval by John Cowan.&lt;ref&gt;{{cite web
+|url=http://www.crynwr.com/cgi-bin/ezmlm-cgi?3:msp:11322:cokmgmoknbgepfbongjn
+|title=For Approval: Microsoft Community License
+|date=2005-12-09
+|publisher=license-discuss mailing list
+|author=John Cowan
+}}&lt;/ref&gt; OSI then contacted Microsoft and asked if they wanted OSI to proceed. Microsoft replied that they did not wish to be reactive and that they needed time to review such a decision.&lt;ref&gt;{{cite news
+|url=http://www.eweek.com/article2/0,1895,2007088,00.asp
+|title=Blogger Can't Tempt Microsoft To Drink OSI Kool-Aid
+|date=2006-08-22
+|publisher=[[eWeek]]
+|author=Peter Galli
+}}&lt;/ref&gt;
+
+At the [[O'Reilly Open Source Convention]] in July 2007, [[Bill Hilf]], director of Microsoft's work with open source projects, announced that Microsoft had formally submitted Ms-PL and Ms-RL to [[Open Source Initiative|OSI]] for approval.&lt;ref&gt;{{cite news
+|url=http://radar.oreilly.com/archives/2007/07/microsoft_to_su_1.html O'Reilly
+|title=Microsoft to Submit Shared Source Licenses to OSI
+|date=2007-07-26
+|publisher=[[O'Reilly Radar]]
+|author=Tim O'Reilly
+}}&lt;/ref&gt; It was approved on October 12, 2007 along with the Ms-PL.&lt;ref name=&quot;osi-approval&quot;/&gt; According to the Free Software Foundation, it is a free software license but not compatible with the [[GNU GPL]].&lt;ref name=&quot;FSFLicenseList&quot;/&gt;
+
+==Non-Open Source, non-Free licenses==
+The other Microsoft Shared Source Licenses have various limitations that make them non-[[Open source license|Open Source]] according to the [[Open Source Initiative]] and non-[[Free software license|Free]] to the [[Free Software Foundation]].
+
+===Microsoft Reference Source License (Ms-RSL) {{anchor|Microsoft Reference License}}===
+
+This is the most restrictive of the Microsoft Shared Source licenses. The source code is made available to view for reference purposes only, mainly to be able to view Microsoft classes source code while debugging.&lt;ref name=&quot;reference&quot;&gt;{{cite web
+| url=http://www.microsoft.com/resources/sharedsource/referencesourcelicense.mspx
+| title=Microsoft Reference Source License
+| publisher=Microsoft
+| date=2008-02-01
+| quote=''&quot;Reference use&quot; means use of the software within your company as a reference, in read only form, for the sole purposes of debugging your products, maintaining your products, or enhancing the interoperability of your products with the software, and specifically excludes the right to distribute the software outside of your company.''
+| accessdate=2008-02-13}}&lt;/ref&gt; Developers may not distribute or modify the code for commercial or non-commercial purposes.&lt;ref&gt;{{cite web
+|url=http://www.microsoft.com/resources/sharedsource/referencesourcelicense.mspx
+|title=Microsoft Reference Source License
+}}&lt;/ref&gt; The license has previously been abbreviated ''Ms-RL'', but ''Ms-RL'' now refers to the ''Microsoft Reciprocal License''.&lt;ref name=&quot;ms-rl&quot;/&gt;
+
+===Microsoft Limited Public License (Ms-LPL)===
+
+This is a version of the Microsoft Public License in which rights are only granted to developers of [[Microsoft Windows]]-based software.&lt;ref&gt;{{cite web
+|url=http://www.microsoft.com/resources/sharedsource/licensingbasics/limitedpubliclicense.mspx
+|title=Microsoft Limited Public License (Ms-LPL)
+}}&lt;/ref&gt;  This license is not open source, as defined by the [[Open Source Initiative|OSI]], because the restriction limiting use of the software to Windows violates the stipulation that open-source licenses must be technology-neutral.&lt;ref name=&quot;OSD&quot;&gt;{{cite web
+|url=http://www.opensource.org/docs/osd
+|title=The Open Source Definition
+|publisher=[[Open Source Initiative]]
+}}&lt;/ref&gt; It is also considered to be non-free by the Free Software Foundation due to this restriction.&lt;ref name=&quot;FSFLicenseList&quot; /&gt;
+
+===Microsoft Limited Reciprocal License (Ms-LRL)===
+
+This is a version of the Microsoft Reciprocal License in which rights are only granted when developing software for a Microsoft Windows platform.&lt;ref&gt;{{cite web
+|url=http://www.microsoft.com/resources/sharedsource/licensingbasics/limitedreciprocallicense.mspx
+|title=Microsoft Limited Reciprocal License (Ms-LRL)
+}}&lt;/ref&gt;  Like the Ms-LPL, this license is not open source because it is not technology-neutral&lt;ref name=&quot;OSD&quot; /&gt; due to its restriction that licensed software must be used on Windows, and is also non-free due to this restriction.&lt;ref name=&quot;FSFLicenseList&quot; /&gt;
+
+==Notable Shared Source programs and projects==
+===Non-free licenses===
+The following projects are under a Shared source license, but are neither [[free software]] according to the [[Free Software Foundation]],&lt;ref name=&quot;FSFLicenseList&quot;/&gt; nor [[Open Source Initiative|OSI]]-approved [[open source]].
+
+;Microsoft Enterprise Source Licensing Program
+Microsoft gives enterprise customers viewing access to some parts of some versions of the [[Microsoft Windows]] [[operating system]]s. The ESLP license agreement is among the most restrictive of the licenses associated with Shared Source programs, allowing no modifications of the code.
+
+;Microsoft Windows Academic Program
+The Windows Academic Program provides universities worldwide with concepts, Windows kernel source code, and projects useful for integrating core Windows kernel technologies into teaching and research.
+
+;Microsoft Government Security Program
+The Microsoft Government Security Program is an effort to assist national governments in evaluating the security of Windows and of other Microsoft products. Participating governments have access to the source code for current versions of Windows and Windows service packs, Windows Embedded CE, and Microsoft Office.&lt;ref&gt;{{cite web
+|url=http://www.microsoft.com/resources/sharedsource/gsp.mspx
+|publisher= Microsoft Corporation
+|title=Government Security Program
+|accessdate=2011-02-20}}&lt;/ref&gt;
+
+;Most Valuable Professionals Source Licensing Program
+Through this program, Microsoft makes Windows source code available to members of their [[Microsoft Most Valuable Professional|&quot;Most Valuable Professional&quot;]] program. MVPs are members of the developer and support community who have made significant public, volunteer contributions, primarily through participation in online forums. The MVP Source Licensing Program allows licensees to use the source code for debugging and support purposes, though it may not be used to aid in the development of a commercial product.&lt;ref&gt;{{cite web
+|url=http://www.microsoft.com/resources/sharedsource/mvp.mspx
+|publisher= Microsoft Corporation
+|title=Most Valuable Professionals Source Licensing Program
+|accessdate=2011-02-20}}&lt;/ref&gt;
+
+;Microsoft Shared Source Common Language Infrastructure
+The first widely-distributed Shared Source program was [[Shared Source Common Language Infrastructure|Shared Source CLI]], the Shared Source implementation of the [[Common Language Infrastructure]]. The licensing permits non-commercial modification and distribution of the source code, as long as all distributions include the original license, or one encompassing the original terms.&lt;ref&gt;As written in the license, examples of commercial purposes would be running business operations, licensing, leasing, or selling the Software, or distributing the Software for use with commercial products&lt;/ref&gt;
+
+===Free licenses===
+The following projects are under a specific Shared source license which is considered [[free software]] according to the [[Free Software Foundation]] and the [[Open Source Initiative]].
+
+;ASP.Net AJAX Control Toolkit
+The [[ASP.NET AJAX]] Control Toolkit is a set of controls and extenders that use AJAX technologies to enable developers to improve the client experience on their web sites. The toolkit is licensed under the Microsoft Public license (MS-PL) and is available on [[CodePlex]], Microsoftâs online community development portal for collaborative software development projects.
+
+==See also==
+* [[Free Software]]
+* [[Open Source Software]]
+
+==References==
+{{reflist|2}}
+
+==External links==
+* [http://www.microsoft.com/opensource/default.aspx Open Source at Microsoft]
+* [http://www.microsoft.com/resources/sharedsource/default.mspx Microsoft Shared Source Initiative Home Page]
+* [http://www.microsoft.com/resources/sharedsource/licensingbasics/default.mspx Microsoft Shared Source Basics]
+* [http://www.microsoft.com/resources/sharedsource/Licensing/default.mspx List of Microsoft Shared Source Licensing Programs]
+
+{{DEFAULTSORT:Shared Source}}
+[[Category:Microsoft initiatives]]
+[[Category:Software licenses]]
+
+[[ca:Shared source]]
+[[cs:Shared Source]]
+[[de:Shared Source]]
+[[es:Shared source]]
+[[eo:Dividita fonto]]
+[[fr:Shared Source]]
+[[it:Shared source]]
+[[ja:ã·ã§ã¢ã¼ãã½ã¼ã¹]]
+[[pl:Shared Source]]
+[[ru:Shared source]]
+[[fi:Jaettu lÃ¤hdekoodi]]
+[[sv:Delad kÃ¤llkod]]
+[[zh:å±äº«æºä»£ç ]]</rev></revisions></page></pages></query></api>

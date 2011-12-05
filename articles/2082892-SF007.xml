@@ -1,0 +1,70 @@
+<?xml version="1.0"?><api><query><pages><page pageid="2082892" ns="0" title="Parallels Workstation"><revisions><rev xml:space="preserve">{{Infobox Software
+| name                   = Parallels Desktop 4 for Windows and Linux
+| logo                   = [[Image:Parallels Workstation logo.png|80px]]
+| screenshot             = [[Image:Ws scr 07.jpg|250px]]
+| caption                = Parallels running [[OS/2|IBM OS/2 Warp Server for e-Business]] and [[Xandros]] on [[Microsoft Windows XP]].
+| developer              = [[Parallels, Inc.]]
+| latest_release_version = 4
+| latest release date    = {{start date and age|2009|01|09}}
+| operating_system       = [[Microsoft Windows]], [[Linux]]
+| platform               = [[x86 architecture|x86-compatible]]
+| genre                  = [[Virtual machine]]
+| license                = [[Commercial software|Commercial]] [[Proprietary software|Proprietary]]
+| website                = [http://www.parallels.com/en/products/workstation/ Parallels Workstation ]
+}} 
+
+'''Parallels Workstation''' is the first commercial software product released by [[Parallels, Inc.]], a developer of desktop and server virtualization software. The Workstation software consists of a [[virtual machine]] suite for [[Intel]] [[x86]]-compatible computers (running [[Microsoft Windows]] or [[Linux]]) (for Mac version, see [[Parallels Desktop for Mac]]) which allows the simultaneous creation and execution of multiple x86 virtual computers. The product is distributed as a download package.
+
+== Implementation ==
+Like other virtualization software, Parallels Workstation uses [[hypervisor]] technology, which is a thin software layer between Primary OS and host computer. The hypervisor directly controls some of the host machine's hardware resources and provides an interface to it for both virtual machine monitors and primary OS. This allows virtualization software to reduce overhead. Parallels Workstation's hypervisor also supports hardware virtualization technologies like [[Intel VT-x]] and [[AMD-V]].
+
+== Functionalities ==
+Parallels Workstation is a hardware emulation virtualization software, in which a virtual machine engine enables each virtual machine to work with its own [[Central Processing Unit|processor]], [[RAM]], [[floppy drive]], [[CD drive]], [[I/O device]]s, and [[hard disk]] â everything a physical computer contains.  Parallels Workstation virtualizes all devices within the virtual environment, including the [[video adapter]], [[network adapter]], and hard disk adapters. It also provides pass-through drivers for [[parallel port]] and [[USB]] devices.
+
+Because all guest virtual machines use the same hardware drivers irrespective of the actual hardware on the host computer, virtual machine instances are highly portable between computers. For example, a running virtual machine can be stopped, copied to another physical computer, and restarted.
+
+Parallels Workstation is able to virtualize a full set of standard PC hardware, including:&lt;ref name=doc_22UsrGuide&gt;{{cite web |url=http://www.parallels.com/files/upload/Parallels_Workstation_2_2_User_Guide.pdf |title=Virtual Machine Equipment |format=PDF |work=Parallels Workstation 2.2 User Guide |publisher=Parallels, Inc |accessdate=2007-09-27}}&lt;/ref&gt;
+
+* A [[Pentium (brand)|Pentium]] or [[AMD Duron]] processor
+* A generic [[motherboard]] compatible with [[Intel]] i815 chipset
+* Up to 1.5&amp;nbsp;GB of [[RAM]] (even though the real i815 only supports 512 MB)
+* [[VGA]] and [[SVGA]] video cards with [[VESA]] [[VESA BIOS Extensions|VBE]] 3.0 support
+* A 1.44 MB [[floppy drive]], which can be mapped to a physical drive or to an image file.
+* Up to four [[Integrated Drive Electronics|IDE]] devices.  This includes virtual hard drives that range in size from 20 MB to 128 GB each and CD/DVD-ROM drives.  IDE devices can be mapped to physical drive or to an image file.
+* Up to four [[serial port]]s that can be mapped to a real port, to a pipe or to an output file.
+* Up to three bi-directional [[parallel port]]s, each of which can be mapped to a real port, to a real printer or to an output file.
+* An [[Ethernet]] virtual network card compatible with Realtek RTL8029(AS).
+* 2-port [[USB]] 1.1 controller. 
+* An [[AC'97]] compatible sound card.
+* A 104-key Windows enhanced keyboard and a PS/2 wheel mouse.
+
+== Known issues ==
+Known limitations of Parallels Workstation, {{As of|2008|alt=as of August 2009}}, include the following:
+
+* Can only run 32-bit operating systems.&lt;ref name=faq_32bitOS&gt;{{cite web |url=http://kb.parallels.com/faq/6/2/417/#417 |title=Does Parallels Workstation 2.2 support 64-bit platforms? |publisher=Parallels, Inc |accessdate=2007-09-27 |work=Parallels FAQ - Getting Parallels Workstation 2.2 installed |archiveurl = http://web.archive.org/web/20080105021738/http://kb.parallels.com/faq/6/2/417/#417 &lt;!-- Bot retrieved archive --&gt; |archivedate = 2008-01-05}}&lt;/ref&gt;  
+* DVD/CD-ROM &quot;pass-through&quot; access has not been implemented, which means that it is impossible to use DVD and CD burners exclusively in guest virtual machines.&lt;ref name=faq_CDDVDburning&gt;{{cite web |url=http://kb.parallels.com/en/4965 |title=How can I use my host CD/DVD recorder inside a guest OS? |publisher=Parallels, Inc |accessdate=2008-08-08 |work=Parallels FAQ - Using hardware devices}}&lt;/ref&gt;
+* Supported memory limit for all virtual machines is 4 GB, and memory limit for a single virtual machine is 1500 MB.
+* Devices such as USB mice, memory keys, webcams, and mobile phones have been cited on the company's support forum as not working correctly{{Fact|date=February 2007}}.
+* Network emulation does not support NAT&lt;ref name=forum_NAT&gt;{{cite web |url=http://forum.parallels.com/showthread.php?p=29315&amp;highlight=NAT |title=Need integrated NAT (internet access) |accessdate=2007-09-27}}&lt;/ref&gt;.
+
+== See also ==
+* [[Comparison of platform virtual machines]] for a list of related virtualization software products
+* [[Hypervisor]]
+* [[Virtual appliance]]
+* [[Virtual machine]]
+* [[x86 virtualization]]
+* [[Virtual disk image]]
+
+== References ==
+{{reflist|2}}
+
+== External links ==
+* [http://www.parallels.com/en/products/workstation/ Official webpage]
+
+[[Category:Virtualization software]]
+[[Category:Proprietary cross-platform software]]
+
+[[de:Parallels Workstation]]
+[[it:Parallels Workstation]]
+[[ja:Parallels Workstation]]
+[[ru:Parallels Workstation]]</rev></revisions></page></pages></query></api>

@@ -1,0 +1,134 @@
+<?xml version="1.0"?><api><query><pages><page pageid="157265" ns="0" title="Exim"><revisions><rev xml:space="preserve">{{About|the electronic mail transfer agent|the U.S. agency &quot;Ex-Im&quot;|Export-Import Bank of the United States}}
+{{Infobox software
+| name                   = Exim
+| title                     = Exim Internet Mailer
+| logo                   = [[Image:Exim-blue-ld-sml.png]]
+| screenshot             =
+| caption                =
+| author                 = [[Philip Hazel]]
+| developer              = The Exim Maintainers
+| latest release version = [http://www.exim.org/version.html 4.77]
+| latest release date    = {{release date|2011|10|10}}
+| platform               = [[Cross-platform]]
+| operating system       = [[Unix-like]]
+| programming language = [[C_(programming_language)|C]]
+| status                 = Active
+| genre                  = [[Mail transfer agent]]
+| license                = [[GNU General Public License]]
+| website                = {{URL|http://www.exim.org/}}
+}}
+
+'''Exim''' is a [[mail transfer agent]] (MTA) used on [[Unix-like]] operating systems. Exim is [[free software]] distributed under the terms of the [[GNU General Public License]], and it aims to be a general and flexible mailer with extensive facilities for checking incoming [[e-mail]].
+
+Exim has been [[porting|ported]] to most Unix-like systems, as well as to [[Microsoft Windows]] using the [[Cygwin]] emulation layer. Exim 4 is currently the default MTA on [[Debian]] [[Linux|GNU/Linux]] systems.
+
+A large number of Exim installations exist, especially within [[Internet service provider]]s&lt;ref&gt;Golanski, Y (2000) [http://www.neverness.org/docs/lsm.pdf The Exim Mail Transfer Agent in a Large Scale Deployment]&lt;/ref&gt; and universities in the [[United Kingdom|UK]]. Exim is also widely used with the [[GNU Mailman]] mailing list manager, and [[cPanel]].
+
+==Origin==
+The first version of Exim was written in 1995 by [[Philip Hazel]] for use in the [[University of Cambridge Computing Service]]âs e-mail systems. The name initially stood for ''EX''perimental ''I''nternet ''M''ailer.&lt;ref&gt;Philip Hazel [http://www.uit.co.uk/exim-book/preface.pdf The Exim SMTP Mail Server (Preface)]&lt;/ref&gt; It was originally based on an older MTA, [[Smail]]-3, but it has since diverged from Smail-3 in its design and philosophy.&lt;ref&gt;[http://people.pwf.cam.ac.uk/ph10/MPD100 Philip Hazel's original thoughts on implementing a future MTA based on Smail]&lt;/ref&gt;&lt;ref&gt;[http://www.weird.com/~woods/projects/smail.html Smail-3 homepage]&lt;/ref&gt;
+
+==Design model==
+Exim, like [[Smail]], still follows the [[Sendmail]] design model, where a [[Executable|single binary]] controls all the facilities of the MTA. This monolithic design is considered by some to be inherently less secure, due to the lack of binary separation between the individual components of the system{{Citation needed|date=December 2007}}. Instead, Exim separates the components out in terms of invocation and has well-defined stages during which it gains or loses privileges.
+
+Eximâs security record has been fairly clean, with only a handful of serious security problems diagnosed over the years &lt;ref&gt;[http://wiki.exim.org/EximSecurity EximSecurity in the Exim wiki]&lt;/ref&gt;. Since the redesigned version 4 was released there have been three remote code execution flaws and one conceptual flaw concerning how much trust it is appropriate to place in the run-time user; the latter was fixed in a security lockdown in revision 4.73, one of the very rare occasions when Exim has broken backwards compatibility with working configurations. This issue would not have been prevented by using a non-monolithic design.
+
+This high degree of cleanliness is probably due to having been written from scratch and with security in mind, by an experienced developer (who was not responsible for two of the three remote code execution flaws).
+
+==Configuration==
+Exim is highly configurable, and therefore has features that are lacking in other MTAs. It has always had substantial facilities for mail policy controls, providing facilities for the administrator to control who may send or relay mail through the system.  In version 4.x this has matured to an [[Access Control List]] based system allowing very detailed and flexible controls. The integration of a framework for content scanning, which allowed for easier integration of [[anti-virus]] and [[anti-spam]] measures, happened in the 4.x releases.  This made Exim very suitable for enforcing diverse mail policies.
+
+The configuration is done through a (typically single) configuration file, which must include the main section with generic settings and variables, as well as the following optional sections:
+* the access control list (ACL) section which defines behaviour during the [[SMTP]] sessions,
+* the routers section which includes a number of processing elements which operate on addresses (the delivery logic), each tried in turn,
+* the transports section which includes processing elements which transmit actual messages to destinations,
+* the retry section where policy on retrying messages that fail to get delivered at the first attempt is defined,
+* the rewrite section, defining if and how the mail system will rewrite addresses on incoming e-mails
+* the authenticators section with settings for [[SMTP AUTH]], a rule per auth mechanism.
+
+The configuration file permits inclusion of other files, which leads to two different configuration styles.
+
+===Configuration styles===
+There are two main schools of configuration style for Exim.  The native school keeps the Exim configuration in one file and external files are only used as data sources; this is strongly influenced by [[Philip Hazel]]'s preferences and notes on performance as the configuration file is re-read at every exec, which involves post-fork for new mails and at delivery.  There is no use of knobs with names starting &lt;tt&gt;dc_&lt;/tt&gt;.
+
+The second commonly encountered style is the [[Debian]] style which is designed to make it easier to have an installed application automatically provide mail integration support without having the administrator edit configuration files.  There are a couple of variants of this and [[Debian]] provide documentation of their approach as part of the packages.  In these approaches, a configuration file is used to build the configuration file, together with templates and directories with configuration fragments.  The meta-config is tuned with variables which have names starting &lt;tt&gt;dc_&lt;/tt&gt;.
+
+Because the Debian approach diverges significantly from the Exim one it is common to find a lack of support for the Debian approach on the regular Exim mailing-lists and users are pointed towards the Debian-specific list.  This can create some awkward situations for users of distributions derived from Debian.
+
+==Documentation==
+Exim has extensive and exhaustive documentation; if a feature or some behaviour is not documented then this is classed as a bug.  The documentation consists of The Exim Specification and two ancillary files: the experimental specification for features that might disappear and &quot;NewStuff&quot;, which tracks very recent changes that might not have been fully integrated into the main specification.  The Exim Specification is available in multiple formats, including online in HTML and in plain-text for fast searching.  The document preparation system ensures that the plain-text format is highly usable.
+
+==Performance==
+Exim has been deployed in busy environments, often handling thousands of emails per hour efficiently. Exim is designed to deliver email immediately, without queueing. However, its queue processing performance is comparatively poor when queues are large (which happens rarely on typical low-traffic sites, but can happen regularly on high-traffic sites).
+
+Unlike [[qmail]], [[Postfix (software)|Postfix]], and [[ZMailer]], Exim does not have a central queue manager (i.e. an equivalent of ''qmail-send'', ''qmgr'', or ''scheduler''). There is thus no centralized load balancing, either of queue processing (leading to disproportionate amounts of time being spent on processing the same queue entries repeatedly) or of system-wide remote transport concurrency (leading to a &quot;thundering herd&quot; problem when multiple messages addressed to a single domain are submitted at once).  In Philip Hazel's own words&lt;ref&gt;[news://news.gmane.org/Pine.SOC.4.61.0412010932030.9481%40draco.cus.cam.ac.uk posting by Philip Hazel]&lt;/ref&gt;:
+
+:&quot;The bottom line is that Exim does not perform particularly well in environments where the queue regularly gets very large. It was never designed for this; deliveries from the queue were always intended to be 'exceptions' rather than the norm.&quot;
+
+However, the interfaces to the spool system are well defined and various people have written their own spool management daemons to use instead of asking the listening daemon to periodically fork queue runners.
+{{Citation needed|reason=need to dig out the mailing-list posts where people have discussed their replacements|date=November 2009}}
+
+In 1997, Philip Hazel replaced Exim's [[POSIX]] [[regular expression]] library written by [[Henry Spencer]] with a new library he developed called [[PCRE]] ([[Perl]] Compatible Regular Expressions).
+Perl regular expressions are much more powerful than POSIX and other common regular expressions, and PCRE has become popular in applications other than Exim.
+
+==Updates==
+Historically, Exim used a peculiar version numbering scheme where the first decimal digit is updated only whenever the main documentation is fully up to date; until that time, changes were accumulated in the file NewStuff.  For this reason, a 0.01 version change can signify important changes, not necessarily fully documented.&lt;ref name=&quot;versions&quot;&gt;[http://lists.exim.org/lurker/message/20030814.082503.499c8332.en.html [Exim&amp;#93; Exim 4.21 released&lt;!-- Bot generated title --&gt;]&lt;/ref&gt; In 2005, changes to Exim's version numbering were on the table of discussion.&lt;ref name=&quot;versions2&quot;&gt;[http://www.uit.co.uk/exim-conference/full-papers/nigel-metheringham/ Exim Development - From The Cathedral Towards The Bizarre&lt;!-- Bot generated title --&gt;]&lt;/ref&gt;
+
+In more recent times, the document preparation system for Exim has been overhauled and changes are much more likely to just go immediately into The Exim Specification.  The 4.70 release just followed on naturally from 4.69 and the 4.6x releases had up-to-date documentation.
+
+[[Philip Hazel]] retired from the University of Cambridge in 2007 and maintenance of Exim transitioned to a team of maintainers.  The release rate since then has slowed, with some lengthy gaps between releases.
+
+
+==Community==
+
+Most discussion about Exim takes place on [http://www.exim.org/maillist.html the Exim mailing-lists]; it is, after all, a mail transfer agent.
+* [https://lists.exim.org/mailman/listinfo/exim-announce Exim-Announce] is a low-volume list, receiving new release announcements, security advisories and conference details.
+* [https://lists.exim.org/mailman/listinfo/exim-users Exim-Users] takes the bulk of the discussion
+* [http://lists.alioth.debian.org/mailman/listinfo/pkg-exim4-users Pkg-Exim4-Users] takes Debian-specific questions
+* [https://lists.exim.org/mailman/listinfo/exim-dev Exim-Dev] takes developer discussion and bug status updates
+* [https://lists.exim.org/mailman/listinfo/exim-cvs Exim-CVS] gets commit messages from the central [[Git_(software)|git]] repo.
+
+There is also an [http://wiki.exim.org/ Exim Wiki], a [http://www.exim-new-users.co.uk/ site for new users] and a [http://serverfault.com/questions/tagged/exim serverfault tag].
+
+== See also ==
+{{Portal|Free software}}
+* [[Comparison of mail servers]]
+* [[List of mail servers]]
+
+==References==
+{{Reflist}}
+
+==Bibliography==
+{{refbegin}}
+* {{cite book
+| first      = Philip 
+| last       = Hazel
+| date       = April 1, 2007
+| title      = The Exim SMTP Mail Server: Official Guide for Release 4
+| publisher  = UIT Cambridge Ltd
+| edition    = Second 
+| pages      = 640 
+| isbn       = 0954452976
+| url        = http://www.uit.co.uk/Authors/PHazel
+}}
+{{refend}}
+
+==External links==
+* [http://www.exim.org/ Exim Internet Mailer]
+* [http://wiki.exim.org/ Exim wiki]
+* [http://www.pcre.org/ PCRE - Perl Compatible Regular Expressions]
+* [http://pkg-exim4.alioth.debian.org/ Debian information on their packaging of Exim]
+
+[[Category:Message transfer agents]]
+[[Category:Free email server software]]
+[[Category:Free email software]]
+[[Category:Cross-platform software]]
+
+[[de:Exim]]
+[[es:Exim]]
+[[fr:Exim]]
+[[hu:Exim]]
+[[ja:Exim]]
+[[pl:Exim]]
+[[pt:Exim]]
+[[ru:Exim]]
+[[sv:Exim]]</rev></revisions></page></pages></query></api>

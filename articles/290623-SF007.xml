@@ -1,0 +1,168 @@
+<?xml version="1.0"?><api><query><pages><page pageid="290623" ns="0" title="Scribus"><revisions><rev xml:space="preserve">{{Infobox software
+| name                   = Scribus
+| logo                   = [[File:Scribus logo.svg|60px]]
+| screenshot             = [[File:Scribus-1.3-Linux.png|250px]]
+| caption                = Scribus under [[Linux Mint]]
+| collapsible            =
+| developer              = The Scribus Team
+| released               = {{Start date|2003|June|26}}
+| discontinued           =
+| latest release version = 1.3.3.14
+| latest release date    = {{Start date and age|2010|01|28}}
+| latest preview version = 1.4.0 RC6
+| latest preview date    = {{Start date and age|2011|10|19}}
+| frequently updated     =
+| programming language   = [[C++]] using [[Qt (toolkit)|Qt]]
+| operating system       = [[Cross-platform]]
+| platform               =
+| size                   =
+| language               = [[Multilingual]]
+| status                 = Active
+| genre                  = [[Desktop publishing]]
+| license                = [[GNU General Public License|GPL]]
+| website                = [http://www.scribus.net www.scribus.net]
+}}
+'''Scribus''' is a [[desktop publishing]] (DTP) application, released under the [[GNU General Public License]] as [[free software]]. It is based on the free [[Qt (toolkit)|Qt]] toolkit, therefore native versions are available for [[Linux]], [[Unix]]-like operating systems, [[Mac OS X]], [[Microsoft Windows]], and [[OS/2]]. It is known for its broad set of page layout features, comparable to leading non-free applications such as [[Adobe PageMaker]], [[PagePlus]], [[QuarkXPress]] or [[Adobe InDesign]].
+
+Scribus is designed for flexible layout and [[typesetting]] and the ability to prepare files for professional quality [[image]] setting equipment. It can also create [[animated]] and [[interactive]] [[Portable Document Format|PDF]] presentations and forms. Example uses include writing small [[newspaper]]s, [[brochure]]s, [[newsletter]]s, [[poster]]s and [[book]]s.
+
+An official Scribus [[User guide|manual]], published through FLES Books,&lt;ref&gt;{{cite web |url=http://www.flesbooks.com/scribus1.3manual/ |archiveurl=http://web.archive.org/web/20100106230447/http://www.flesbooks.com/scribus1.3manual/ |title=Scribus 1.3 Official Manual|year=2009|accessdate=September 30, 2011|archivedate=January 6, 2010|publisher=FLES Books}}&lt;/ref&gt;  has been available since January 19, 2009.&lt;ref&gt;{{cite web|url=http://flesbooks.com/|archiveurl=http://web.archive.org/web/20100117031927/http://www.flesbooks.com/|title=Welcome to FLES Books|year=2009|accessdate=September 30, 2011|archivedate=January 17, 2010|publisher=FLES Books}}&lt;/ref&gt;
+
+==Capabilities==
+Scribus supports most major [[image format]]s including [[Scalable Vector Graphics|scalable vector graphics]] (SVG). Professional type/image setting features include [[CMYK color model|CMYK]] colors and [[International Color Consortium|ICC]] [[color management]]. It has a built-in [[Scripting language|scripting engine]] using [[Python (programming language)|Python]]. It is available in more than 24 languages.
+
+Printing is achieved using its own internal level 3 [[PostScript]] driver, including support for [[font]] embedding and sub-setting with [[TrueType]], [[Type 1 font#Font handling|Type 1]] and [[OpenType]] fonts. The internal driver supports full Level 2 PostScript constructs and a large subset of Level 3 constructs.
+
+[[Portable Document Format|PDF]] support includes transparency, encryption and a large set of the PDF 1.4 spec as well as [[PDF/X]]-3&lt;ref&gt;{{cite web |url=http://docs.scribus.net/index.php?lang=en&amp;page=pdfx3 |title=Scribus PDF/X-3 Overview |accessdate=2011-05-22}}&lt;/ref&gt;, including interactive PDFs form fields, annotations and bookmarks.
+
+The file format, called SLA, is based on [[XML]]. Text can be imported from [[OpenDocument]] text documents, as well as [[SXW|OpenOffice.org Writer]], [[Microsoft Word]] and [[HTML]] formats (although some limitations apply).
+
+Scribus cannot read or write the native file formats of commercial programs like [[QuarkXPress]], [[Microsoft Publisher]], or [[InDesign]]; the developers feel that [[reverse engineering]] those file formats would be prohibitively complex and could risk legal action from the makers of those programs.&lt;ref&gt;[http://docs.scribus.net/index.php?lang=en&amp;page=faq1#15 Scribus FAQ &quot;Why are there no import filters for Quark, Indesign or other commercial DTP applications?&quot;], scribus.net&lt;/ref&gt;
+
+Due to licensing issues, the software package does not include support for the [[Pantone Matching System|Pantone color matching system (PMS)]], which is included in some commercial DTP applications.
+
+Although Scribus supports [[Unicode]] character encoding, it currently does not properly support [[complex text layout|complex script rendering]] and so cannot be used with Unicode text for languages written with [[Arabic language#writing_system|Arabic]], [[Hebrew language#Writing_system|Hebrew]], [[Indic scripts|Indic]] and [[Southeast Asia|South East Asian]] [[writing system]]s.&lt;ref&gt;[http://bugs.scribus.net/view.php?id=3965 Scribus Metabug 3965: Support for non-latin languages ]&lt;/ref&gt;&lt;ref&gt;[http://bugs.scribus.net/view.php?id=1547 Scribus bug 1547: Support for Indic Scripts]&lt;/ref&gt;
+
+==Release History==
+[[Image:Scribus-win.PNG|right|thumb|Scribus 1.3.3.7 in Windows]]
+
+{| class=&quot;wikitable sortable&quot;
+|-
+! Order&lt;br /&gt; !! Release Date&lt;br /&gt; !! Version&lt;br /&gt; !! Branch&lt;br /&gt; !! Notes&lt;br /&gt;
+|-
+| 1 || June 9, 2001 || 0.3 || Development? || First dated release found through archive.org.
+|-
+| 2 || June 26, 2003 || 1.0 || Stable || First stable release.
+|-
+| 3 || August 28, 2004 || 1.2.0 || Stable || First stable release in the 1.2.x.x series.
+|-
+| 4 || July 15, 2005 || 1.3.0 || Development || First version running natively on Windows and Mac OS X.
+|-
+| 5 || NovemberÂ 10,Â 2006 || 1.3.3.5 || Stable || First stable release in the 1.3.x.x series.
+|-
+| 6 || January 9, 2007 || 1.3.3.7 || Stable || First release running on OS/2.
+|-
+| 7 || March 15, 2007 || 1.3.3.8 || Stable ||
+|-
+| 8 || May 30, 2007 || 1.3.4 || Development ||
+|-
+| 9 || January 8, 2008 || 1.3.3.10 || Stable ||
+|-
+| 10 || JanuaryÂ 11,Â 2008 || 1.3.3.11 || Stable ||
+|-
+| 11 || June 23, 2008 || 1.3.3.12 || Stable ||
+|-
+| 12 || April 15, 2009 || 1.3.3.13 || Stable ||
+|-
+| 13 || April 20, 2009 || 1.3.5 || Development ||
+|-
+| 14 || June 4, 2009 || 1.3.5 RC2 || Development ||
+|-
+| 15 || July 6, 2009 || 1.3.5Â RC3 || Development ||
+|-
+| 16 || November 8, 2009 || 1.3.5.1 || Development ||
+|-
+| 17 || January 28, 2010 || 1.3.3.14 || Stable || Confirmed as being the final version in the 1.3.3.x series
+|-
+| 18 || March 22, 2010 || 1.3.6 || Development ||
+|-
+| 19 || June 5, 2010 || 1.3.7 || Development ||
+|-
+| 20 || July 23, 2010 || 1.3.8 || Development ||
+|-
+| 21 || November 30, 2010 || 1.3.9 || Development ||
+|-
+| 22 || February 18, 2011 || 1.4.0 RC1 || Development ||
+|-
+| 23 || March 8, 2011 || 1.4.0 RC2 || Development ||
+|-
+| 24 || March 27, 2011 || 1.4.0 RC3 || Development ||
+|-
+| 25 || May 30, 2011 || 1.4.0 RC4 || Development ||
+|-
+| 26 || October 19, 2011 || 1.4.0 RC6 || Development ||
+|}
+
+==References==
+{{Portal|Free software}}
+{{Reflist|2}}
+
+==External links==
+{{commonscat}}
+{{Wikibooks|Scribus}}
+*[http://www.scribus.net/ Scribus]
+*[http://www.quate.net/newsnet/read.php?id=31 Portable version]
+*[http://showmedo.com/videos/series?name=NfUrduNov Scribus Screencast Video Tutorial] at [[showmedo]]
+
+;Articles
+*Linux Magazine article series: Linux for Layout
+**[http://w3.linux-magazine.com/issue/49/Linux_for_Layout_Part_1_Scribus.pdf Part 1]: A Linux Newspaper â Professional layout in Linux with Scribus
+**[http://w3.linux-magazine.com/issue/50/Linux_for_Layout_Part_2_Scribus.pdf Part 2]: Desktop publishing in Linux â Professional typography and layout with Scribus
+**[http://w3.linux-magazine.com/issue/51/Linux_for_Layout_Part_3_Preparing_for_Press.pdf Part 3]: Desktop publishing in Linux â Putting the finishing touches on our Scribus Linux newspaper
+*[http://www.linuxdevcenter.com/pub/a/linux/2004/09/02/scribus.html?page=1 Scribus: Open Source Desktop Publishing]
+*[http://blog.worldlabel.com/2009/free-desktop-publishing-with-scribus-open-source.html Free Desktop Publishing with Scribus]
+&lt;!-- dead link *[http://www.linux.com/feature/113983 Small-business forms using Scribus and PDF] --&gt;
+&lt;!-- next link doesn't work *[http://www.scotsworld.net/Downloads.html A short Scribus PDF manual] by Scot Blades, with source materials available --&gt;
+&lt;!-- dead link *[http://www.linux.com/feature/52351 Desktop publishing with Writer and Scribus] --&gt;
+
+
+{{Desktop publishing software}}
+
+[[Category:Desktop publishing software]]
+[[Category:Free typesetting software]]
+[[Category:Free PDF software]]
+[[Category:Free software programmed in C++]]
+[[Category:Software that uses Qt]]
+[[Category:Cross-platform software]]
+[[Category:Free desktop publishing software]]
+[[Category:Free multilingual software]]
+
+[[bar:Scribus]]
+[[br:Scribus]]
+[[ca:Scribus]]
+[[cs:Scribus]]
+[[de:Scribus]]
+[[et:Scribus]]
+[[el:Scribus]]
+[[es:Scribus]]
+[[eu:Scribus]]
+[[fr:Scribus]]
+[[gl:Scribus]]
+[[hi:à¤¸à¥à¤à¥à¤°à¤¾à¤à¤¬à¤¸]]
+[[is:Scribus]]
+[[it:Scribus]]
+[[hu:Scribus]]
+[[ml:à´¸àµà´àµà´°àµà´¬à´¸àµ]]
+[[nl:Scribus]]
+[[ja:Scribus]]
+[[pl:Scribus]]
+[[pt:Scribus]]
+[[ro:Scribus]]
+[[ru:Scribus]]
+[[sk:Scribus]]
+[[fi:Scribus]]
+[[sv:Scribus]]
+[[tr:Scribus]]
+[[uk:Scribus]]
+[[vi:Scribus]]
+[[zh:Scribus]]</rev></revisions></page></pages></query></api>

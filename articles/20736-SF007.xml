@@ -1,0 +1,115 @@
+<?xml version="1.0"?><api><query><pages><page pageid="20736" ns="0" title="Pointing device gesture"><revisions><rev xml:space="preserve">[[Image:Opera back mouse gesture.svg|thumb|right|180px|The mouse gesture for &quot;back&quot; in [[Opera (web browser)|Opera]] â the user holds down the right mouse button, moves the mouse left, and releases the right mouse button.]]
+
+In [[computing]], a '''pointing device gesture''' or '''mouse gesture''' is a way of combining [[pointing device]] movements and [[Point-and-click|click]]s which the [[software]] recognizes as a specific command. Pointing device gestures can provide quick access to common functions of a program. They can also be useful for people who have difficulties typing on a [[computer keyboard|keyboard]]. For example, in a [[web browser]], the user could navigate to the previously viewed page by pressing the right pointing device button, moving the pointing device briefly to the left, then releasing the button.
+
+== History ==
+The first pointing device gesture, the &quot;drag,&quot; was introduced by [[Apple Inc.|Apple]] to replace a dedicated &quot;move&quot; button on mice shipped with its Macintosh and Lisa computers. Dragging involves holding down a pointing device button while moving the pointing device; the software interprets this as an action distinct from separate clicking and moving behaviors. Unlike most pointing device gestures, it does not involve the tracing of any particular shape. Although the &quot;drag&quot; behavior has been adopted in a huge variety of software packages, few other gestures have been as successful.
+
+== Current use ==
+{{As of|2005}}, most programs do not support gestures other than the drag operation. Each program that recognizes pointing device gestures does so in its own way, sometimes allowing for very short mouse movement distances to be recognized as gestures, and sometimes requiring very precise emulation of a certain movement pattern (e.g. circle). Some implementations allow users to customize these factors.
+
+Some [[video game]]s have used gestures. For example, in the ''[[Myth (computer game)|Myth]]'' [[real-time tactics]] series, originally created by Bungie Software, players use them to order battlefield units to face in a desired direction. Another game using gestures is [[Lionhead Studios|Lionhead]]'s ''[[Black &amp; White (game)|Black &amp; White]]''. The game ''[[Arx Fatalis]]'' uses mouse gestures for drawing runes in the air to cast spells. Several [[Nintendo]] [[Wii]] games take advantage of such a system. ''[[Åkami]]'' uses a system similar to mouse gestures; the player can enter a drawing mode in which the shape they create (circle, lightning bolt, line, etc.) performs a function in the game such as creating a bomb or changing the time from night to day.
+Another example is [[Silver (video game)|Silver]] where basic mouse gestures actually map attack moves and such in real-time combat.
+
+The [[Opera (web browser)|Opera web browser]] has recognized gestures since version 5.10 (April 2001) but this feature was disabled by default. Opera browser also supports [[mouse chording]] which serves a similar function but doesn't necessitate mouse movement. First browser that used advanced mouse gestures (in 2002) was [[Maxthon]] where highly customizable interface allowed to assign almost every action to one of 52 mouse gestures and few mouse chords. Several mouse gesture extensions are also available for the [[Mozilla Firefox]] browser. These extensions use almost identical gestures as Opera.
+
+Some tools provide mouse gestures support in any application for [[Microsoft Windows]]. [[KDE]] includes universal mouse gesture support since version 3.2.
+
+== Drawbacks ==
+A major drawback of current gesture interaction solutions is the lack of support for two necessary user interface design principles, feedback and visibility (or [[affordance]]). Feedback notification is required to indicate whether the gesture has been entered correctly by indicating the gesture recognized and the corresponding command activated, although Sensiva does approach this to some extent in providing voice notification. The other principle is visibility of gestures, providing the user some means of learning the necessary gestures and the contexts they can be used in. Both Mouse Gestures for Internet Explorer and ALToolbar Mouse Gestures display colored tracers that indicate the current motion that the user is taking to facilitate visual clues for the user. Also [[pie menu]]s and marking menus have been proposed as solutions for both problems, since they support learning of the available options but can also be used with quick gestures. The current version of Opera uses a pie menu to simply and non-obstructively display which mouse gestures are available and how to activate them.
+
+One limitation with gesture interaction is the scope context in which the gestures can be used. For example each gesture has only one corresponding command for each application window.
+
+Holding down buttons while moving the mouse can be awkward and requires some practice, since the downwards action increases friction for the horizontal motion. An optical mouse would be less susceptible to changes in behavior than a ball mouse with increased friction because the sensor does not rely on mechanical contact to sense movement; a touchpad provides no added friction with all its buttons held down with a thumb. However, it was also argued that muscular tension resulting from holding down buttons could be exploited in [[user interface design]] as it gives constant feedback that the user is in a temporary state, or [[Mode (computer interface)|mode]] (Buxton, 1995).
+
+==See also==
+*[[Mouse chording]]
+*[[Computer accessibility]]
+*[[Drag-and-drop]]
+*[[Pie menu]]
+*[[Pen computing]]
+
+==External links to applications==
+Some programs and applications of mouse gestures and similar features:
+
+=== Windows ===
+*[http://justgestures.com/ Just Gestures] (freeware)
+*Sensiva (shareware, has disappeared; last version (3.14) can still be found around the Internet)
+*[http://www.bluemindsoftware.com/ MicePlus] (shareware)
+*[http://www.mouse-gesture.com/ Mouse Gesture Desktop Tools] (shareware)
+*[http://www.amazingbrass.co.uk/ Brass] via Mime plugin (shareware)
+*[http://silentdevelopment.blogspot.com/2008/04/gesture-magic-10-released.html Gesture Magic] (free/open source application launcher)
+*[http://www.handform.net/apps/gmote gMote] (freeware)
+*[http://www.cityzen451.co.uk/ Mojo Sidekick] (shareware)
+*[http://www.tcbmi.com/strokeit/ StrokeIt] (free for non-profit use)
+*[http://powerpro.webeddie.com/ PowerPro] (Freeware - Has a gesture plugin)
+*[http://highsign.codeplex.com/ High Sign] (Freeware/Open Source - Currently in development, Supports plugins)
+*[http://www.zebware.tk/ LiveEdge] (freeware)
+
+=== Mac OS X ===
+*[http://www.bitart.com/CocoaGestures.html CocoaGestures]
+*[http://flyingmeat.com/flygesture/ FlyGesture], a freeware application
+*[http://www.cityzen451.co.uk Mojo Sidekick]
+*[[Quicksilver (software)|Quicksilver]] has a feature for recognizing mouse gestures
+*[http://www.donelleschi.com/sapiens/ Sapiens]
+*[http://stout.hampshire.edu/~bjk02/xGestures/ xGestures] 
+
+=== X11 ===
+*[http://easystroke.wiki.sourceforge.net/#content Easystroke] has packages for [[Ubuntu (operating system)|Ubuntu]] and can be compiled on other Linux distributions
+*[http://gestikk.reichbier.de/ Gestikk]
+*[http://kde-apps.org/content/show.php?content=30108 Freehand Gestures] for KDE
+*[http://to.caltech.edu/manuals/other/fvwm2-2.4.19/fvwm2_33.html Configuring native strokes] in [[FVWM]]
+*[http://docs.kde.org/development/en/kdebase/userguide/kcontrol-regional-and-accessibility.html KHotkeys] provides native gestures support in [[KDE]]
+*[http://www.stressbunny.com/wayv/ wayV]
+*[http://www.cs.bgu.ac.il/~tzachar/xgestures.html xgestures]
+*[http://freshmeat.net/projects/xstroke/ xstroke]
+
+=== SkyOS ===
+* [http://www.skyos.org/?q=node/537 SkyOS Mouse Gestures] SkyOS has native support of mouse gestures
+
+=== Applications ===
+These apps support gestures on their own:
+*[http://www.mouse-gesture.com/products/mgswitch.html Mouse Gesture Task Switcher] for Windows. Use mouse gestures to switch between application windows. By [http://www.mouse-gesture.com/ Encsoft.]
+*[http://www.mouse-gesture.com/products/mglaunch.html Mouse Gesture Application Launcher] for Windows. Use mouse gestures to launch applications, files.
+*[http://www.mouse-gesture.com/products/mgwindow.html Mouse Gesture Window Controller] for Windows. Use mouse gestures to close, maximize, minimize the active window directly.
+*[http://maxthon.neo101.nl/MaxthonGuide/en/ch02.htm Documentation] of mouse gestures in [[Maxthon]].
+*[http://www.opera.com/browser/tutorials/gestures/ Documentation] of mouse gestures in [[Opera (web browser)|Opera browser]].
+*[[Avant Browser]]
+*[http://www.ysgyfarnog.co.uk/utilities/mousegestures/ Mouse Gestures for Internet Explorer]
+*[http://www.ie7pro.com/mouse-gesture.html Mouse Gestures for Internet Explorer 7] by [[IE7pro]]
+*[http://www.altools.com/ALTools/ALToolbar/Features/Mouse-Gestures.aspx Mouse Gestures] in [[ALToolbar]] for Internet Explorer.
+*[http://manuals.info.apple.com/en/Motion_2_Gestures_Reference.pdf Reference] of gestures in [[Apple Motion|Motion]].
+*[http://wiki.rw-designer.com/Mouse_Gestures_in_Image_Editor Mouse gestures in raster editor] of applications based on RealWorld Designer framework.
+*There are many add-ons which add the ability to [[Mozilla Firefox|Firefox]]
+
+=== Software libraries===
+* [http://www.igesture.org iGesture] Open Source Java framework for pen and mouse-based gesture recognition.
+* [http://www.smardec.com/products/mouse.html Java Swing Mouse Gestures] Open source pure Java library for recognition and processing mouse gestures.
+* [http://lipitk.sourceforge.net Lipi Toolkit] Open source toolkit that supports recognition of arbitrary pen and mouse-based gestures as well as handwritten characters.
+* [http://etla.net/libstroke/ LibStroke] is a stroke translation library in C/Java
+* [http://www.codeplex.com/mousegestures Mouse Gestures for .NET] Open source .NET component for mouse gestures recognition
+
+==References==
+* Buxton, W. A. (1995). [http://www.billbuxton.com/chunking.html &quot;Chunking and phrasing and the design of human-computer dialogues&quot;] in ''Human-Computer interaction: Toward the Year 2000'', R. M. Baecker, J. Grudin, W. A. Buxton, and S. Greenberg, Eds. Morgan Kaufmann Publishers, San Francisco, CA, 494-499.
+* [http://users.erols.com/rwservices/pens/penhist.html The Unknown History of Pen Computing] contains a history of pen computing, including touch and gesture technology, from approximately 1917 to 1992.
+* [http://rwservices.no-ip.info:81/biblio.html Annotated bibliography of references to handwriting recognition, gesture user interfaces, and pen computing]
+* L. K. Welbourn and R. J. Whitrow. 1988. [http://portal.acm.org/citation.cfm?id=54696 A gesture based text editor]. In Proceedings of the Fourth Conference of the British Computer Society on People and computers IV, D. M. Jones and R. Winder (Eds.). Cambridge University Press, New York, NY, USA, 363-371. ISBN 0-521-36553-8 
+* Brad A. Myers. &quot;[http://www.cs.cmu.edu/~amulet/papers/uihistory.tr.html A Brief History of Human Computer Interaction Technology].&quot; ACM interactions. Vol. 5, no. 2, March, 1998. pp. 44-54. 
+
+{{DEFAULTSORT:Pointing Device Gesture}}
+[[Category:User interface techniques]]
+
+[[de:Mausgeste]]
+[[fr:Mouvement de la souris]]
+[[ko:ë§ì°ì¤ ì ì¤ì²]]
+[[it:Mouse gesture]]
+[[hu:EgÃ©rmozdulat]]
+[[nl:Muisgebaren]]
+[[ja:ãã¦ã¹ã¸ã§ã¹ãã£ã¼]]
+[[pl:Gesty myszy]]
+[[pt:Gesto no mouse]]
+[[ru:ÐÐµÑÑÑ Ð¼ÑÑÑÑ]]
+[[fi:Hiirieleet]]
+[[sv:Musgest]]
+[[vi:Äiá»u bá» chuá»t (mÃ¡y tÃ­nh)]]
+[[zh:é¼ æ æå¿]]</rev></revisions></page></pages></query></api>

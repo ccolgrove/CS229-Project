@@ -1,0 +1,207 @@
+<?xml version="1.0"?><api><query><pages><page pageid="497506" ns="0" title="ViolaWWW"><revisions><rev xml:space="preserve">{{Infobox software
+| name                   = ViolaWWW
+| logo                   =
+| screenshot             = [[Image:ViolaWWW.png|300px]]
+| caption                = ViolaWWW 3.3
+| developer              = [[Pei-Yuan Wei]]&lt;ref name=&quot;faq&quot;&gt;{{cite web|url=http://www.w3.org/People/Berners-Lee/FAQ.html#browser|title=What were the first WWW browsers?|publisher=[[World Wide Web Consortium]]|author=[[Tim Berners-Lee]]|accessdate=2010-06-15}}&lt;/ref&gt;
+| released               = {{release date and age|1992|03|09}}&lt;ref name=&quot;about&quot; /&gt;
+| frequently updated     = yes
+| discontinued           = yes
+| programming language   = Viola&lt;ref name=&quot;faq&quot; /&gt;&lt;ref&gt;See [http://www.viola.org/viola/book/toc.html Viola in a Nutshell] for details.&lt;/ref&gt;
+| operating system       = [[Unix]]&lt;ref name=&quot;faq&quot; /&gt;
+| language               = English
+| genre                  = [[Web browser]]
+| license                =
+| website                = [http://viola.org/ viola.org]
+}}
+'''ViolaWWW''', first developed in the early 1990s, for [[Unix]] and the [[X Windowing System]],&lt;ref&gt;http://viola.org/viola/README.txt&lt;/ref&gt; was the first popular [[web browser]] (though to a limited audience) which, until [[Mosaic (web browser)|Mosaic]], was the most frequently used web browser for access to the [[World Wide Web]]. It was recommended by [[CERN]] at that time.&lt;ref name=&quot;faq&quot; /&gt;
+
+==Background==
+James Gillies and [[Robert Cailliau]] in ''How the Web was Born'' offer an history of the development of Viola.&lt;ref name=&quot;GilliesCailliau2000&quot;&gt;{{cite book|author1=James Gillies|author2=R. Cailliau|title=How the Web was born: the story of the World Wide Web|url=http://books.google.com/books?id=pIH-JijUNS0C&amp;pg=PA213|year=2000|publisher=Oxford University Press|isbn=9780192862075|pages=213â217}}&lt;/ref&gt; Viola was the invention of [[Pei-Yuan Wei]], who at the time was a student at the ''Experimental Computing Facility'' at the [[University of California, Berkeley]].&lt;ref name=&quot;faq&quot; /&gt;&lt;ref name=&quot;about&quot;&gt;{{cite web|title=ViolaWWW Hypertext Browser|url=http://www.w3.org/History/19921103-hypertext/hypertext/WWW/Viola/violaWWWAbout.html|accessdate=28 July 2010|author=[[Pei-Yuan Wei]]}}&lt;/ref&gt;
+
+===HyperCard===
+His interest in graphically based software began with [[HyperCard]] which he discovered in 1989. Gillies and Cailliau quote Wei on this discovery: &quot;HyperCard was very compelling back then, you know graphically, this hyperlink thing, it was just not very global and it only worked on Mac...and I didn't even have a Mac&quot; (p.&amp;nbsp;213). Only having access to [[X terminal]]s, he (in 1990) created the first version of ''Viola'' for them: &quot;I got a HyperCard manual and looked at it and just basically took the concepts and implemented them in X-windows[sic]&quot; (p.&amp;nbsp;213).
+
+===Viola 0.8===
+He released ''Viola 0.8'' in 1991, and then after graduating began to develop ''Viola'' even further while working with &quot;Berkeley's Experimental Computing Facility&quot; as well as at a few start ups.&lt;ref&gt;{{cite web|title=WWW people|url=http://www.w3.org/History/19921103-hypertext/hypertext/WWW/People.html|publisher=[[World Wide Web Consortium]]|accessdate=28 July 2010}}&lt;/ref&gt;&lt;ref&gt;(p.213)&lt;/ref&gt; Later, he would be funded by [[O'Reilly Books]], the technical publisher, which used the software to help demonstrate its [[Global Network Navigator]] site.&lt;ref&gt;{{cite news| url=http://www.forbes.com/2009/02/22/kindle-oreilly-ebooks-technology-breakthroughs_oreilly.html | work=Forbes | first=Tim | last=O'Reilly | title=Why Kindle Should Be An Open Book | date=23 February 2009}}&lt;/ref&gt;
+
+===The World Wide Web===
+At this time, as Gillies and Cailliau indicate, Pei Wei's major goal was to create a version of ''Viola'' for the Internet:
+
+:''what Pei Wei wanted to do next was run it over the Internet. X-Window [sic] was a Unix-based system so it had TCP/IP built in and the Internet was a logical step.  The question was how to transport his Viola pages across the Internet.  He was on the verge of an independent invention of networked hypertext. 'And that's when I read [[Tim Berners-Lee|Tim's]] [[e-mail]] about the [[World Wide Web]]' he explains 'The [[URL]] was very, very clever, it was perfectly what I needed. He dropped Tim a line saying that he was thinking of writing a browser for X. 'Sounds like a good idea,' said Tim in a reply posted to www-talk on 9 December. Four Days later, Pei Wei told www-talk that he had made a browser&quot; (p.214).''
+
+===ViolaWWW===
+Created in 1992, it was the first browser to add extended functionality such as embedded scriptable objects, stylesheets, and tables. According to Gillies and Cailliau &quot;Viola was to become the first X-browser to make any impact, but even his early versions went down well at [[CERN]]...As this ViolaWWW developed, it was to set the standard for everything to follow it...&quot; (p.&amp;nbsp;214). Ed Kroll also highlighted it in his popular 1992 text, ''[[Whole Internet User's Guide and Catalog]]''.
+
+====Graphics====
+As ViolaWWW developed, it began to look more like HyperCard:
+
+:''It had a bookmark facility so that you could keep track of your favourite pages. It had buttons for going backwards and forwards and a history feature to keep track of the places you had been. As time went on, it acquired tables and graphics and by May 1993 it could even run programs.&quot; (p.214).
+
+===Specifics===
+It was based on the Viola toolkit, which is a tool for the development and support of visual interactive media applications, with a multimedia web browser being a possible application. Viola ran under the [[X Window System]] and could be used to build complex hypermedia applications that were beyond [[HTML]] 3.0 (the latest version of HTML at that time), with features like applets and other interactive content as early as 1992.&lt;ref&gt;http://assets.en.oreilly.com/1/event/51/webexny2010_what-is-web-20.pdf&lt;/ref&gt;
+
+===Ahead of its time===
+Viola was interesting because it was the first web browser to have the following features:&lt;ref name=&quot;timblhistory&quot;&gt;{{cite web|last=Berners-Lee|first=Tim|title=A Brief History of the Web|url=http://www.w3.org/DesignIssues/TimBook-old/History.html|publisher=[[World Wide Web Consortium]]|accessdate=17 August 2010|authorlink=Tim Berners-Lee|year=ca 1993/1994}}&lt;/ref&gt;
+
+* client-side document insertion, predating [[Framing (World Wide Web)|frames]], or syndication via javascript output writing, which are used commonly today.
+
+{| class=&quot;wikitable&quot; style=&quot;width: 100%;&quot;
+|- valign=&quot;top&quot; align=&quot;left&quot;
+! Viola-style document embedding
+! Object method
+|- valign=&quot;top&quot; align=&quot;left&quot;
+! style=&quot;text-align:left&quot; | &lt;pre&gt;&lt;nowiki&gt;
+&lt;INSERT SRC=&quot;a_quote.html&quot;&gt;
+&lt;/nowiki&gt;&lt;/pre&gt;
+! style=&quot;text-align:left&quot; |&lt;pre&gt;&lt;nowiki&gt;
+&lt;object type=&quot;text/html&quot; data=&quot;a_quote.html&quot;&gt;
+&lt;p&gt;This text will appear
+for browsers that don't
+support OBJECTs&lt;/p&gt;
+&lt;/object&gt;
+&lt;/nowiki&gt;&lt;/pre&gt;
+|}
+
+* a simple stylesheet mechanism used for inserting style information such as fonts, color and alignments into a document.  This was implemented in Viola well before [[Cascading Style Sheets|CSS]] was developed in 1998:
+
+{| class=&quot;wikitable&quot; style=&quot;width: 100%;&quot;
+|- valign=&quot;top&quot; align=&quot;left&quot;
+! A viola-style stylesheet
+! A CSS stylesheet
+|- valign=&quot;top&quot; align=&quot;left&quot;
+! style=&quot;text-align:left&quot; | &lt;pre&gt;&lt;nowiki&gt;
+ (BODY,INPUT,P   FGColor=black
+                 BGColor=grey70
+                 BDColor=grey70
+                 align=left
+
+ (H1             FGColor=white
+                 BGColor=red
+                 BDColor=black
+                 align=center
+
+&lt;/nowiki&gt;&lt;/pre&gt;
+! style=&quot;text-align:left&quot; | &lt;pre&gt;&lt;nowiki&gt;
+ body, input, p {
+  color: black;
+  background-color: #707070;
+  text-align: left;
+}
+
+ h1 {
+  color: white;
+  background-color: red;
+  border: solid 1px black;
+  text-align: center;
+}
+&lt;/nowiki&gt;&lt;/pre&gt;
+|}
+
+* a sidebar panel used for displaying &quot;meta&quot; information, intra document navigational links, and other information, similar to (but not as sophisticated as) features found in several modern browsers.
+* a [[scripting language]] that can be accessed from an HTML document, such that an HTML document can embed highly interactive scripts/applets.  This can be seen as the precursor to [[JavaScript]] and [[embedded objects]].
+
+{| class=&quot;wikitable&quot; style=&quot;width: 100%;&quot;
+|- valign=&quot;top&quot; align=&quot;left&quot; style=&quot;font-size: 90%&quot;
+!
+! ViolaWWW method
+! [[JavaScript]] equivalent
+|- valign=&quot;top&quot; align=&quot;left&quot; style=&quot;font-size: 90%&quot;
+! Scripting
+! style=&quot;text-align:left&quot; |&lt;pre&gt;&lt;nowiki&gt;
+\class {txtDisp}
+\name {showTime}
+\script { switch (arg[0]) {
+  case &quot;tick&quot;:
+    set(&quot;content&quot;), date());
+    after(1000, self(), &quot;tick&quot;);
+    return; break;
+  case &quot;init&quot;:
+    after(1000, self(), &quot;tick&quot;);
+    break;
+  }
+  usual();
+}
+\width {100}
+\height {50} \
+&lt;/nowiki&gt;&lt;/pre&gt;
+! style=&quot;text-align:left&quot; |&lt;pre&gt;&lt;nowiki&gt;
+function showTimeInDoc() {
+  var theTime =
+   document.
+    getElementById('theTime');
+  var tDate = new Date();
+  theTime.innerHTML=
+   tDate.getHours()
+   + &quot;:&quot; + tDate.getMinutes()
+   + &quot;:&quot; + tDate.getSeconds();
+  setTimeout(&quot;showTimeInDoc()&quot;,
+   1000);
+}
+&lt;/nowiki&gt;&lt;/pre&gt;
+|- align=&quot;left&quot; valign=&quot;top&quot; style=&quot;font-size: 90%&quot;
+! Embedding a script into a web page
+! style=&quot;text-align:left&quot; | &lt;pre&gt;&lt;nowiki&gt;
+&lt;HTML&gt;
+&lt;HEAD&gt;
+&lt;/HEAD&gt;
+&lt;BODY&gt;
+&lt;P&gt;And, the time now is:
+&lt;LINK REL=&quot;viola&quot;
+HREF=&quot;showTime.v&quot;&gt;
+&lt;/BODY&gt;
+&lt;/HTML&gt;
+
+&lt;/nowiki&gt;&lt;/pre&gt;
+! style=&quot;text-align:left&quot; | &lt;pre&gt;&lt;nowiki&gt;
+&lt;html&gt;
+  &lt;head&gt;
+  &lt;script type=&quot;text/javascript&quot;
+    src=&quot;showTime.js&quot;&gt;
+  &lt;/script&gt;
+  &lt;/head&gt;
+  &lt;body onload=&quot;showTimeInDoc()&quot;&gt;
+    &lt;p id=&quot;theTime&quot;&gt;&amp;nbsp;&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+&lt;/nowiki&gt;&lt;/pre&gt;
+|}
+
+==Mosaic==
+While ViolaWWW opened the door to the World Wide Web,&lt;ref name=&quot;timblhistory&quot; /&gt; its limitations (including the fact that it was only implemented on the X Window System) meant it could not compete with [[Mosaic (web browser)|Mosaic]], the browser which brought the world wide web into the mainstream,&lt;ref&gt;{{cite web|title=Mosaic -- The First Global Web Browser|url=http://www.livinginternet.com/w/wi_mosaic.htm|accessdate=28 July 2010}}&lt;/ref&gt; because it was easier to install on the computers most people were using.&lt;ref name=&quot;timblhistory&quot; /&gt; According to Freedman in the ''Computer Desktop Encyclopedia'', &quot;Mosaic was 'the' application that caused interest in the World Wide Web to explode. Originally developed for [[UNIX]], it was soon ported to [[Microsoft Windows|Windows]]&quot; (p.&amp;nbsp;629).
+
+==Microsoft v. Eolas and ViolaWWW prior art==
+{{Update|date=June 2011}}
+[[Image:ViolaWWW plotDemo.gif|thumb|right|ViolaWWW, developed before the Eolas patent filing, embedding a interactive graphical plotter in a web page]]
+Because of ViolaWWW, Microsoft was allowed a retrial in February 2005 in the '''Microsoft v. Eolas''' case. The original ruling would have cost software giant Microsoft $521 million in damages. [[Eolas Technologies]] and the [[University of California]] sued Microsoft for allegedly infringing patents with the [[Internet Explorer]] web browser. The case revolved around a patent held by Eolas and the University which claims to cover ways of making other software work seamlessly with web browsers.
+
+A retrial was allowed after the first court ruling in ignored two key arguments put forward by Microsoft. Microsoft had wanted to show the court ViolaWWW as [[prior art]], since it was created in 1993 at the University of California, a year before the patent was filed. Microsoft had also suggested that [[Michael David Doyle]], Eolas' founder and a former University of California researcher, had intentionally concealed his knowledge of ViolaWWW when filing the patent claim.&lt;ref&gt;[http://news.bbc.co.uk/1/hi/business/4314989.stm  Court stays $521m Microsoft fine], [[BBC News]], March 3, 2005.&lt;/ref&gt;
+
+==References==
+{{reflist}}
+;Notes
+{{refbegin}}
+*Freedman, Alan. ''Computer Desktop Encyclopedia, 9th Edition.'' New York: Osborne, 2001.
+* Gillies, James &amp; Robert Cailliau. ''How the Web was born: The Story of the World Wide Web.'' Oxford: Oxford University Press, 2000.
+{{refend}}
+
+==External links==
+* [http://viola.org/ The Viola Home Page]
+* [http://web.archive.org/web/20100625180207/http://www.xcf.berkeley.edu/~wei/viola/aboutEolasMicrosoft.html Personal Comments on Eolas vs Microsoft, and the Viola Prior Art]
+* [http://web.archive.org/web/20030926120826/http://www-pcd.stanford.edu/workshop/slides/wei/talk.html Presentation- Extensibility in WWW Browsers]
+* [ftp://ftp.cuhk.hk/pub/packages/info-systems/www/viola/ Download Viola]
+
+{{Early web browsers}}
+{{Internet Explorer}}
+
+{{DEFAULTSORT:Violawww}}
+[[Category:POSIX web browsers]]
+[[Category:History of the Internet]]
+[[Category:1991 software]]
+[[Category:1992 software]]
+[[Category:Discontinued web browsers]]
+
+[[es:ViolaWWW]]
+[[ja:ViolaWWW]]
+[[pt:ViolaWWW]]
+[[fi:ViolaWWW]]</rev></revisions></page></pages></query></api>

@@ -1,0 +1,55 @@
+<?xml version="1.0"?><api><query><pages><page pageid="1067688" ns="0" title="CherryOS"><revisions><rev xml:space="preserve">[[Image:Cherry os logo.png|frame|right|The CherryOS logo]]
+'''CherryOS''' was a [[PearPC]] based [[PowerPC G4]] processor [[emulator]] for [[x86]] [[Microsoft Windows]] platforms, announced on October 12, 2004. It was released to the public on March 9, 2005 and development stopped on May 6, 2005.&lt;ref&gt;[http://www.kryeziu.com/blog_details.aspx?id=0&amp;det=1 Arben Kryeziu's Blog]&lt;/ref&gt; The program was called [[vaporware]] or a hoax, with critics calling the program's existence into question, because of numerous missed deadlines and failure to produce demonstration versions. This ceased when [[Slashdot]] announced that CherryOS brand [[software]] was available for download. Sometimes it disappeared as a downloadable option, and was re-issued with new file sizes and minor changes, perhaps to appease critics.
+
+CherryOS was marketed by [[Maui X-Stream]]. The chief architect was said to be [[Arben Kryeziu]]. According to Maui X-Stream, it allowed users to install and run versions of [[Mac OS X]] on platforms that would not normally support such software, such as [[Pentium (brand)|Pentium]] processor-based systems. It was advertised as being able to reach emulation speeds equalling roughly 80% of the system's total processor speed.
+
+{{As of|2009}}, CherryOS and its website, CherryOS.com, are defunct.
+
+== License issues ==
+Critics have alleged that CherryOS is simply a modification of [[PearPC]].&lt;ref&gt;Slashdot: [http://apple.slashdot.org/apple/04/10/18/2137253.shtml?tid=179&amp;tid=3 CherryOS Not All It's Cracked Up To Be]&lt;/ref&gt; Since PearPC was released under the [[GNU General Public License]] (GPL) and CherryOS was not, this would have been a violation of the GPL. 
+
+CherryOS was re-released on 10 March 2005, with an easy-to-use graphical installation program &amp;mdash; a feature that PearPC lacks.
+
+CherryOS was also alleged to have copied code from [[OpenVPN]] (using it as their network driver) and [[HFVExplorer]] (which was used as the &quot;Drag 'n' Drop&quot; interface).
+
+&lt;!--  Commented out: [[Image:Cherryos.png|thumb|right|The CherryOS's Interface, emulating [[Mac OS X]] on [[Windows XP]]]] --&gt;
+
+== Legal threats ==
+
+In early 2005, college student Kristian Hermansen posted a very rudimentary analysis of CherryOS using IDA Pro software, which easily shows evidence of code reuse from many GPL projects.  This finding caused him to independently investigate the alleged &quot;author&quot; of the code, Arben Kryeziu.  In a brief long distance phone call to Hawaii with the author, under the guise of an interested corporate purchaser, it was immediately apparent that his stories didn't match up to what was being fed to the public media.  This phone conversation was recorded, but the audio was never released.
+
+In order to solidify the claims, Kristian privately consulted the help of Halvar Flake, a widely respected software reverse engineer.  Using a custom tool called BinDiff [http://www.zynamics.com/bindiff.html], Halvar conservatively estimated that over 600 functions in CherryOS were nearly identical or were identical to that of a similar PearPC build.
+
+In retaliation for illegal GPL code reuse, Kristian posted a complete binary of the latest CherryOS installer along with a valid key generator on his website.  This bold action, he hoped, would stifle sales of CherryOS and force the parent company, Maui X-Stream Inc, to stop selling such software.  However, when Maui X-Stream finally realized their software was being made publicly available to all, Kristian was served with a cease and desist order via email from Maui's lawyers, demanding the software be taken down.  He refused to remove the software, and instead sought legal advice from the EFF.  A short time later, Kristian was contacted by [[Eben Moglen]] via telephone, and officially retained him as a lawyer at no charge.
+
+In an ironic twist to the story, the CherryOS lawyers threatened to take action against Kristian in his home state of [[Massachusetts]]. In the end, Maui X-Stream did not seek action against Kristian, and the CherryOS software was finally laid to rest in April 2005.  Kristian removed the CherryOS software from his website a short time later, and instead started to investigate a completely different Maui X-Stream product, VX30.  He has also shown, with help from others, that VX30 contains GPL code as well and should be further analyzed.
+
+== Aftermath ==
+Since the Software Freedom Law Center would not do actions pro-bono, if made in [[Hawaii]], the PearPC team began collecting donations to prepare for a lawsuit against Maui X-Stream and CherryOS.&lt;ref&gt;Slashdot: [http://slashdot.org/article.pl?sid=05/03/30/1552223&amp;tid=98 PearPC Trying to Sue CherryOS]&lt;/ref&gt; As CherryOS withdrew, this money became largely unnecessary, and was later donated to the Software Freedom Law Center, who represented individual developers of PearPC.&lt;ref&gt;Software Freedom Law Center: [http://www.softwarefreedom.org/news/2007/mar/30/pearpc/ PearPC Donates Legal Defense Fund to SFLC]&lt;/ref&gt;
+
+On April 5, 2005, the main page of CherryOS was changed to a simple message that said, &quot;CherryOS is On Hold - until further notice.&quot;.&lt;ref&gt;DrunkenBlog: [http://web.archive.org/web/20080422082225/http://www.drunkenblog.com/drunkenblog-archives/000534.html CherryOS goes offline]&lt;/ref&gt; A day later, the message was changed again to claim that CherryOS, &quot;Due to Overwhelming Demand&quot;, has [[open source]]d itself.&lt;ref&gt;MacWorld: [http://www.macworld.com/news/2005/04/06/cherryos/index.php CherryOS goes open source]&lt;/ref&gt;&lt;ref&gt;EDN: [http://www.edn.com/blog/400000040/post/300000630.html CherryOS: Innovator or Copycat?]&lt;/ref&gt; A re-release was purported to be coming in May according to the site.
+
+Critics raised at the time issues about Maui X-Stream's use of the term &quot;open source&quot;.&lt;ref&gt;DrunkenBlog: [http://web.archive.org/web/20080511203725/www.drunkenblog.com/drunkenblog-archives/000524.html CherryOS and OSS]&lt;/ref&gt; Jim Kartes, president of Maui X-Stream Inc., said to [[eWeek]] that the company &quot;will be charging $14.95 to cover our cost of development and continuing development as well as other costs related to the marketing of the product. Whatever the buyer does with the code is their business as long as they don't embed it into another commercial product.&quot; &lt;ref&gt;eWeeK: [http://www.eweek.com/article2/0,1759,1783808,00.asp CherryOS Opens Up Code to Doubters]&lt;/ref&gt; The position of the critics was that in part six of the [[Open Source Definition]] of the [[Open Source Initiative]], &quot;No Discrimination Against Fields of Endeavor&quot;, there is no allowance for restrictions against commercial use. Part six of the [[Debian Free Software Guidelines]] also does not allow discrimination against fields of endeavor. The [[Free Software Foundation]] also says &quot;A free program must be available for commercial use, commercial development, and commercial distribution.&quot; &lt;ref&gt;GNU's [http://www.gnu.org/philosophy/free-sw.html Free Software Definition]&lt;/ref&gt;
+
+At one point Maui X-Stream had the [[GNU]] logo on the CherryOS homepage, but this has since been removed. More recently, the CherryOS.com website had been taken down reading &quot;CherryOS is no more&quot; with a leaf logo and links to &quot;other emulators&quot; (which did not include [[PearPC]]).  As mentioned above, the page is now expired and run by a generic content provider.
+
+==References==
+{{reflist|2}}
+
+==External links==
+*[http://wired.com/news/mac/0,2125,65323,00.html Wired Article on CherryOS]
+*[http://web.archive.org/web/20080423122201/www.drunkenblog.com/drunkenblog-archives/000501.html The pits in CherryOS]
+*[http://web.archive.org/web/20080422082225/http://www.drunkenblog.com/drunkenblog-archives/000534.html Deconstructing Maui X-Stream]
+*[http://kourge.net/articles/cherryos-fraud Analyzing the Legality of CherryOS]
+
+{{DEFAULTSORT:Cherryos}}
+[[Category:Windows emulation software]]
+[[Category:Virtualization software]]
+[[Category:Vaporware]]
+[[Category:PowerPC emulators]]
+[[Category:Discontinued software]]
+
+[[pt:CherryOS]]
+[[sv:CherryOS]]
+[[uk:CherryOS]]
+[[zh:CherryOS]]</rev></revisions></page></pages></query></api>

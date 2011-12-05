@@ -1,0 +1,472 @@
+<?xml version="1.0"?><api><query><pages><page pageid="193813" ns="0" title="Linux From Scratch"><revisions><rev xml:space="preserve">{{refimprove|date=June 2011}}
+{{Infobox OS
+| name                   = Linux From Scratch
+| logo                   =
+| website                = [http://www.linuxfromscratch.org www.linuxfromscratch.org]
+| developer              = Gerard Beekmans et al.
+| family                 = [[Unix-like]]
+| source_model           = [[Open source]] / [[Free Software]]
+| released               = -
+| latest_release_version = 7.0
+| latest_release_date    = 2011-10-29
+| latest_test_version    = 7.0 RC2
+| latest_test_date       = 2011-10-13
+| marketing_target       =
+| language               =
+| kernel_type            = [[Monolithic kernel|Monolithic]]
+| ui                     = [[Bash (Unix shell)|Bash]]
+| license                = [[Creative Commons licenses]] and [[MIT License]]
+| working_state          = Current
+| supported_platforms    = [[IA-32]], [[x86-64]]
+| updatemodel            = Source-based
+| package_manager        = None (source-based)
+}}
+
+'''''Linux From Scratch''''' ('''LFS''') is a type of a [[Linux]] installation and the name of a book written by [[Gerard Beekmans]] among others. The book gives readers instructions on how to build a Linux system from [[Source code|source]]. The book is available freely from the Linux From Scratch website and is currently in version 7.0.&lt;ref&gt;Gerard Beekmans: Linux from Scratch (Iuniverse Inc, December 2000) ISBN 0595137652 ISBN 978-0595137657&lt;/ref&gt;
+
+''Linux From Scratch'' is a way to install a working [[Linux]] system by building all components of it manually. This is, naturally, a longer process than installing a pre-compiled [[Linux distribution]]. According to the ''Linux From Scratch'' website, the advantages to this method are a compact, flexible and secure system and a greater understanding of the internal workings of the Linux-based operating systems.&lt;ref&gt;http://www.linuxfromscratch.org/lfs/&lt;/ref&gt;
+
+To keep LFS small and focused, the book ''Beyond Linux From Scratch'' (BLFS) was created which presents instructions on how to further develop the basic Linux system that was created in LFS. It introduces and guides the reader through additions to the system including networking, [[X window system|X]], sound, printer and scanner support. Since Release 5.0, the BLFS book version matches the LFS book version.&lt;ref&gt;Gerard Beekmans: Beyond Linux From Scratch, Version 6.3 (August 2008)&lt;/ref&gt;
+
+In addition to the LFS and BLFS books, ''Cross Linux from Scratch'' (CLFS) describes [[cross compiling]] and ''Hardened Linux From Scratch'' (HLFS) focuses on security enhancements like the use of [[Stack-smashing protection]], [[PaX]] and [[Address space layout randomization]] using [[grsecurity]]. Cross Linux from Scratch provides the necessary instructions to build a base, command line only [[Linux distribution]]. While LFS is limited to the [[x86 architecture]], CLFS supports a broader range of [[Central processing unit|processors]]. CLFS addresses advanced techniques not included in the LFS book such as cross-build [[toolchain]]s, multilibrary support (32 &amp; 64-bit [[Library (computing)|libraries]] side-by-side), and alternative [[instruction set architecture]]s such as [[x86-64]], [[Itanium]], [[SPARC]], [[MIPS architecture|MIPS]], and [[DEC Alpha|Alpha]]. Hardened Linux From Scratch focuses on creating a more secure version of the original Linux From Scratch as its main purpose, including embedded systems.
+
+
+
+==Requirements and procedure==
+A clean [[Disk partitioning|partition]] and a working Linux system with a compiler and some essential [[Library (computing)|software libraries]] are required to build LFS. Instead of installing from an existing Linux system, one can also use a Live CD (e.g., the Linux From Scratch Live CD&lt;ref&gt;http://www.linuxfromscratch.org/livecd/&lt;/ref&gt;). The LFS Live CD contains all the source packages (in the full version of the Live CD only), the LFS book, automated building tools and (except for the minimal Live CD version) an [[Xfce]] GUI environment to work in.
+
+First a [[toolchain]] must be compiled consisting of the tools used to compile LFS like [[GNU Compiler Collection|GCC]], [[glibc]], [[binutils]] and other necessary utilities. Then the [[root directory]] must be changed (using [[chroot]]) to the toolchain's [[Disk partitioning|partition]] to start building the final system. One of the first packages to compile is glibc; after that, the toolchain's [[Linker (computing)|linker]] must be adjusted to [[Library (computing)|link]] against the newly built glibc, so that all other packages that will make up the finished system can be linked against it as well. During the [[chroot]] phase, [[Bash (Unix shell)|bash]]'s hashing feature is turned off and the temporary toolchain's bin directory moved to the end of PATH. This way the newly compiled programs come first in PATH and the new system builds on its own new components.
+
+==List of LFS software==
+This is a list of the packages included in LFS version 6.7:
+{| class=&quot;wikitable&quot; width = &quot;100%&quot;
+! Component
+! Description
+! License
+! Version
+|-
+| [[Autoconf]]
+| Tool for producing [[configure script (computing)|configure scripts]] for [[C (programming language)|C]], [[C++]], [[Fortran]], Fortran 77, [[Erlang (programming language)|Erlang]], [[Objective-C]] software on [[Unix-like]] computer systems.
+| [[GNU GPL]]
+| 2.67
+|-
+| [[Automake]]
+|  A [[programming tool]] that produces portable [[makefile]]s for use by the [[make (software)|make]] program, used in compiling software.
+| [[GNU GPL]]
+| 1.11.1
+|-
+| [[Bash (Unix shell)|Bash]]
+| A [[free software]] [[Unix shell]] written for the [[GNU Project]]
+| [[GNU GPL]]
+| 4.1
+|-
+| [[Binutils]]
+| A collection of [[programming tool]]s for the manipulation of [[object code]] in various object file formats.
+| [[GNU GPL]]
+| 2.20.1
+|-
+| [[GNU Bison|Bison]]
+| A [[parser generator]] that is part of the [[GNU Project]]. Bison converts a [[Formal grammar|grammar]] description for a [[context-free grammar]] into source code for a [[C (programming language)|C]], [[C++]] or [[Java (programming language)|Java]] parser.
+| [[GNU GPL]]
+| 2.4.3
+|-
+| [[Bzip2]]
+| A [[free software|free]] and [[open-source software|open source]] [[lossless data compression]] [[algorithm]] and program developed by [[Julian Seward]].
+| [[GNU GPL]]
+| 1.0.5
+|-
+| [[Coreutils]]
+| A [[Software package (installation)|package]] of [[GNU]] [[software]] containing many of the basic tools, such as [[cat (Unix)|cat]], [[ls]], and [[rm (Unix)|rm]], needed for [[Unix-like]] [[operating system]]s.
+| [[GNU GPL]]
+| 8.5
+|-
+| [[DejaGnu|DejaGNU]]
+| A framework for testing other programs. It has a main script called runtest  that goes through a directory looking at configuration files and then runs some tests with given criteria.
+| [[GNU GPL]]
+| 1.4.4
+|-
+| [[Diff]]utils
+| A [[file comparison]] utility that outputs the differences between two files.
+| [[GNU GPL]]
+| 3.0
+|-
+| [[E2fsprogs]]
+| e2fsprogs (sometimes called the e2fs programs)  is a set of utilities for maintaining the [[ext2]], [[ext3]] and [[ext4]] [[file system]]s.
+| [[GNU GPL]]
+| 1.41.12
+|-
+| [[Expect]]
+| Expect is a [[Unix]] automation and testing tool as an extension to the [[Tcl]] scripting language, for interactive [[application software|applications]] such as [[telnet]], [[ftp]], [[Passwd (command)|passwd]], [[fsck]], [[rlogin]], [[tip (unix utility)|tip]], [[Secure Shell|ssh]], and others.
+| [[Public domain]]
+| 5.44.1.15
+|-
+| [[file (command)|File]]
+|
+|
+| 5.04
+|-
+| [[Find]]utils
+|
+|
+| 4.4.2
+|-
+| [[Flex lexical analyser|Flex]]
+| flex (fast [[lexical analyzer]] generator) is a [[free software]] alternative to [[lex programming tool|lex]].
+| [[BSD license]]
+| 2.5.35
+|-
+| [[Gawk (GNU package)|Gawk]]
+| Gawk is a [[programming language]] that is designed for processing text-based data, either in files or data streams
+| [[GNU GPL]]
+|  3.1.8
+|-
+| [[GNU Compiler Collection|GCC]]
+| The GNU Compiler Collection (usually shortened to GCC) is a [[compiler]] system produced by the [[GNU Project]] supporting various [[programming language]]s
+| [[GNU GPL]]
+| 4.5.2
+|-
+| [[dbm|GDBM]]
+| GDBM simple [[database engine]]s
+| [[GNU GPL]]
+| 1.8.3
+|-
+| [[Gettext]]
+| Gettext is the [[GNU]] [[internationalization and localization]] (i18n) library.
+| [[GNU GPL]]
+| 0.18.1.1
+|-
+| [[Glibc]]
+| The GNU C Library, commonly known as glibc, is the [[C standard library]] released by the [[GNU Project]].
+| [[GNU GPL]]
+| 2.12.1
+|-
+| [[GNU Multi-Precision Library|GMP]]
+| The GNU Multiple-Precision Library, also known as GMP, is a [[free software|free]] library for [[arbitrary-precision arithmetic]], operating on signed [[integer]]s, [[rational numbers]], and [[floating point]] numbers.
+| [[GNU GPL]]
+| 5.0.1
+|-
+| [[Grep]]
+| grep is a [[command line interface|command line]] text search utility originally written for [[Unix]].
+| [[GNU GPL]]
+| 2.6.3
+|-
+| [[Groff (software)|Groff]]
+| Groff is the [[GNU]] replacement for the [[troff]] and [[nroff]] [[text formatter]]s.
+| [[GNU GPL]]
+| 1.20.1
+|-
+| [[GRUB]]
+| GNU GRUB (short for GNU GRand Unified Bootloader) is a [[boot loader]] package from the [[GNU Project]].
+| [[GNU GPL]]
+| 1.98
+|-
+| [[Gzip]]
+| Gzip is a [[software application]] used for [[file compression]].  gzip is short for GNU zip
+| [[GNU GPL]]
+| 1.4
+|-
+| Iana-Etc.
+|
+|
+| 2.30
+|-
+| [[Inetutils]]
+|
+|
+| 1.8
+|-
+| [[iproute2|IPRoute2]]
+|
+|
+|  2.6.35
+|-
+| Kbd
+|
+|
+| 1.15.2
+|-
+| [[Less (Unix)|Less]]
+| &lt;code&gt;less&lt;/code&gt; is a [[terminal pager]] [[Computer program|program]] on [[Unix]], [[Microsoft Windows|Windows]] and [[Unix-like]] systems used to view (but not change) the contents of a [[text file]] one screen at a time.
+| Dual: either [[GNU General Public License|GPL]] or [[BSD License|BSD-like License]]
+| 436
+|-
+| LFS-Bootscripts
+|
+|
+| 6.7 (20100627)
+|-
+| [[Libtool]]
+| GNU Libtool is a [[GNU]] [[programming]] tool from the [[GNU build system]] used for creating portable compiled [[library (computer science)|libraries]].
+| [[GNU GPL]]
+| 2.2.10
+|-
+| [[Linux kernel]]
+| The Linux kernel is an operating system [[kernel (computing)|kernel]] used by the [[Linux]] family of [[Unix-like]] [[operating system]]s.
+| [[GNU GPL]]
+| 2.6.35.4
+|-
+| [[GNU m4]]
+| GNU m4 is the [[GNU]] version of the [[m4 (language)|m4]] macro preprocessor.
+| [[GNU GPL]]
+| 1.4.14
+|-
+| [[make (software)|Make]]
+| Make is a [[utility software|utility]] for [[Build Automation|automatically build]]ing executable programs and libraries from [[source code]].
+| [[GNU GPL]]
+| 3.82
+|-
+| Man-DB
+|
+|
+| 2.5.7
+|-
+| [[Man pages|Man-pages]]
+|
+|
+| 3.25
+|-
+| [[Module-Init-Tools]]
+|
+|
+| 3.12
+|-
+| [[MPC]]
+|
+|
+| 0.8.2
+|-
+| [[MPFR]]
+|
+|
+| 3.0.0
+|-
+| [[ncurses]]
+| a programming library for writing text user interfaces in a terminal-independent manner
+|
+| 5.7
+|-
+| [[Patch (Unix)|Patch]]
+|
+|
+| 2.6.1
+|-
+| [[Perl]]
+|
+|
+| 5.12.1
+|-
+| Pkg-config
+|
+|
+| 0.25
+|-
+| Procps
+|
+|
+| 3.2.8
+|-
+| Psmisc
+|
+|
+| 22.12
+|-
+| [[Readline]]
+| GNU readline is a [[software library]] created and maintained by the [[GNU Project]].
+| [[GNU GPL]]
+| 6.1
+|-
+| [[Sed]]
+| sed  (''stream editor'') is a [[Unix]] utility that (a) parses text files and (b) implements a [[programming language]] which can apply textual transformations to such files.
+| [[GNU GPL]]
+| 4.2.1
+|-
+| [[Shadow password|Shadow]]
+|
+|
+| 4.1.4.2
+|-
+| [[Sysklogd]]
+|
+|
+| 1.5
+|-
+| [[Sysvinit]]
+|
+|
+| 2.88dsf
+|-
+| [[tar (file format)|tar]]
+|
+|
+| 1.23
+|-
+| [[Tcl]]
+|
+|
+| 8.5.8
+|-
+| [[Texinfo]]
+|
+|
+| 4.13a
+|-
+| [[Udev]]
+|
+|
+| 161
+|-
+| [[Udev]] Configuration Tarball
+|
+|
+| 6.6 (20100128)
+|-
+| [[util-linux|Util-linux-ng]]
+|
+|
+|  2.18
+|-
+| [[Vim (text editor)|Vim]]
+|
+|
+|  7.3
+|-
+| [[Vim (text editor)|Vim]] [[language]] files (optional)
+|
+|
+| 7.3
+|-
+| [[Zlib]]
+| Zlib is a [[library (computer science)|software library]] used for [[data compression]].
+| [[zlib license]]
+| 1.2.5
+|-
+|}
+This is a list of the packages included in CLFS version 1.1.0. Unless otherwise noted, this list is applicable to all supported architectures.
+{{Col-begin}}
+{{Col-break}}
+*[[Autoconf]] 2.61
+*[[Automake]] 1.10.1
+*[[Bash (Unix shell)|Bash]] 3.2
+*[[Bash (Unix shell)|Bash]] Documentation 3.2
+*[[Bin86]] (x86_64 non-multilib only)
+*[[Binutils]] 2.18
+*[[GNU Bison|Bison]] 2.3
+*[[Bzip2]] 1.0.4
+*CLFS-Bootscripts 1.0pre10
+*[[Coreutils]] 6.9
+*[[DejaGnu|DejaGNU]] 1.4.4
+*[[Diff]]utils 2.8.7
+*[[E2fsprogs]] 1.40.4
+*[[Elftoaout]] 2.3 (Sparc and Sparc64 only)
+*[[Expect]] 5.43.0
+*[[file (command)|File]] 4.23
+*[[Find]]utils 4.2.32
+*[[Flex lexical analyser|Flex]] 2.5.35
+*[[Gawk (GNU package)|Gawk]] 3.1.6
+*[[GNU Compiler Collection|GCC]] 4.2.4
+*[[Gettext]] 0.17
+*[[Glibc]] 2.7
+{{Col-break}}
+*[[Grep]] 2.5.3
+*[[Groff (software)|Groff]] 1.19.2
+*[[GRUB]] 0.97
+*[[Gzip]] 1.3.12
+*[[Hfsutils]] 3.2.6 (PowerPC and PowerPC64 only)
+*Iana-Etc. 2.20
+*Inetutils 1.5
+*[[iproute2|IPRoute2]] 2.6.23
+*Kbd 1.13
+*[[Less]] 418
+*[[LILO]] 22.8 (x86_64 non-multilib only)
+*[[Libtool]] 1.5.26
+*[[Linux kernel|Linux]] 2.6.24.7
+*[[GNU m4]] 1.4.10
+*[[make (software)|Make]] 3.81
+*Man 1.6e
+*[[Man pages|Man-pages]] 3.01
+*Mktemp 1.5
+*Module-Init-Tools 3.4
+*[[Ncurses]] 5.6
+*[[Parted]] 1.8.8 (PowerPC and PowerPC64 only)
+*[[Patch (computing)|Patch]] 2.5.9
+{{Col-break}}
+*[[Perl]] 5.8.8
+*[[PowerPC Utils]] 1.1.3 (PowerPC and PowerPC64 only)
+*Procps 3.2.7
+*Psmisc 22.6
+*[[Readline]] 5.2
+*[[Sed]] 4.1.5
+*[[Shadow password|Shadow]] 4.1.2
+*Silo 1.4.13 (Sparc and Sparc64 only)
+*[[Sysklogd]] 1.5
+*[[Sysvinit]] 2.86
+*[[tar (file format)|tar]] 1.20
+*[[Tcl]] 8.4.16
+*[[Texinfo]] 4.11
+*Tree 1.5.1.1
+*[[Udev]] 124
+*[[Util-linux-ng]] 2.14
+*[[Vim (text editor)|Vim]] 7.1
+*[[Vim (text editor)|Vim]] 7.1 [[language]] files (optional)
+*[[Yaboot]] 1.3.13 (PowerPC and PowerPC64 only)
+*[[Zlib]] 1.2.3
+{{Col-end}}
+
+==Standard build unit==
+A &quot;standard build unit&quot; (&quot;SBU&quot;) is a term used during initial bootstrapping of the system, and represents the amount of time required to build the first package in LFS on a given computer. Its creation was prompted by the long length of time required to build an LFS system, and the desire of many of users to know how long a source tarball will take to build ahead of time.
+
+As of Linux from Scratch version 6.3, the first package built by the user is GNU binutils. When building it, users are encouraged to time that build process using shell constructs and dub that time that system's &quot;standard build unit&quot;. Once this number is known, an estimate of the time required to build later packages is expressed relative to the known SBU.
+
+Several packages built during compilation take much longer to build than binutils, including the GNU C library (rated at 9.5 SBUs). The unit is not a concrete description, and must be interpreted as an approximation; many various and unrelated factors influence the wall-clock time that a package requires to build.
+
+==See also==
+* [[Gentoo Linux]]
+* [[Source Mage GNU/Linux]]
+
+{{Portal|Free software}}
+
+==External links==
+*[http://www.linuxfromscratch.org/ Linux From Scratch]
+*[http://distrowatch.com/table.php?distribution=lfs DistroWatch.com: Linux From Scratch]
+*[http://www.packtpub.com/article/Linux_From_Scratch Interview with Gerard Beekmans]
+*[http://blogs.ittoolbox.com/linux/locutus/archives/its-linux-and-i-did-it-my-way-an-interview-with-gerard-beekmans-19686 Another interview with Gerard Beekmans]
+
+==References==
+&lt;references /&gt;
+# {{Cite web
+  | title =LFS Project Homepage
+  | work =Linux From Scratch
+  | publisher =Gerard Beekmans
+  | date =17 March 2008
+  | url =http://www.linuxfromscratch.org/lfs/
+  | accessdate =17 March 2008  }}
+
+{{Linux}}
+{{Xfce}}
+{{Use dmy dates|date=September 2010}}
+
+[[Category:Linux books]]
+[[Category:Free software]]
+[[Category:Source-based Linux distributions| ]]
+
+[[ar:ÙÙÙÙØ³ ÙÙ Ø§ÙØ¨Ø¯Ø§ÙØ©]]
+[[ca:Linux From Scratch]]
+[[cs:Linux From Scratch]]
+[[da:Linux From Scratch]]
+[[de:Linux From Scratch]]
+[[et:Linux From Scratch]]
+[[es:Linux From Scratch]]
+[[fr:Linux From Scratch]]
+[[ko:ë¦¬ëì¤ íë¡¬ ì¤í¬ëì¹]]
+[[hy:Linux From Scratch]]
+[[it:Linux from Scratch]]
+[[nl:Linux From Scratch]]
+[[ja:Linux from Scratch]]
+[[pl:Linux From Scratch]]
+[[pt:Linux From Scratch]]
+[[ro:Linux From Scratch]]
+[[ru:Linux From Scratch]]
+[[tr:LFS]]
+[[uk:Linux from Scratch]]
+[[vi:Linux From Scratch]]
+[[zh:Linux From Scratch]]</rev></revisions></page></pages></query></api>

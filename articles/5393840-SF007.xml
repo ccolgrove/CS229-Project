@@ -1,0 +1,58 @@
+<?xml version="1.0"?><api><query><pages><page pageid="5393840" ns="0" title="E2fsprogs"><revisions><rev xml:space="preserve">{{lowercase|title=e2fsprogs}}
+{{Infobox software
+| name                   = e2fsprogs
+| logo                   =
+| screenshot             =
+| caption                =
+| developer              = [[Theodore Ts'o]]
+| latest release version = 1.41.14
+| latest release date    = {{release date and age|2010|12|22}}
+| latest preview version = 1.42-WIP-1016
+| latest preview date    = {{release date and age|2011|10|17}}
+| operating system       = [[Unix-like]]
+| platform =
+| programming language   = C
+| genre                  = [[File system]] utilities
+| license                = [[GNU General Public License|GPL]]
+| website                = http://e2fsprogs.sourceforge.net/
+}}
+{{Portal|Free software}}
+'''e2fsprogs''' (sometimes called the '''e2fs programs''')  is a set of utilities for maintaining the [[ext2]], [[ext3]] and [[ext4]] [[file system]]s. Since those file systems are often the default for [[Linux distribution]]s, it is commonly considered to be essential software.
+
+Included with e2fsprogs are:
+* &lt;tt&gt;e2fsck&lt;/tt&gt;, a [[fsck]] program that checks for and corrects inconsistencies
+* &lt;tt&gt;mke2fs&lt;/tt&gt;, used for creating ext2, ext3 and ext4 file systems
+* &lt;tt&gt;resize2fs&lt;/tt&gt;, which can expand and shrink ext2, ext3 and ext4 file systems
+* &lt;tt&gt;tune2fs&lt;/tt&gt;, used to modify file system parameters
+* &lt;tt&gt;dumpe2fs&lt;/tt&gt;, which prints superblock and block group information.
+* &lt;tt&gt;debugfs&lt;/tt&gt;, used to manually view or modify internal structures of the file system
+
+Many of these utilities are based on the &lt;tt&gt;libext2fs&lt;/tt&gt; library.
+
+Despite what its name might suggest, the e2fsprogs work not only with ext2 and ext3 but also with ext4. Although ext3's [[Journaling file system|journaling]] capability can reduce the need to use &lt;tt&gt;e2fsck&lt;/tt&gt;, it is sometimes still necessary to help protect from kernel bugs or bad hardware.
+
+[[File:E2fsck-uninit.svg|thumb|[[fsck]] time/Inode Count([[ext3]] vs. [[ext4]])]]
+
+With ext4 the e2fsck runtime should come down considerably.
+
+As the [[userspace]] companion for the ext2, ext3, and ext4 drivers in the [[Linux kernel]], the e2fsprogs are most commonly used with [[GNU]]/[[Linux]]. However, they have been ported to other systems, such as [[FreeBSD]] and [[Darwin (operating system)|Darwin]].
+
+==External links==
+* [http://e2fsprogs.sourceforge.net/ e2fsprogs home page] at [[SourceForge]]
+* [http://git.kernel.org/?p=fs/ext2/e2fsprogs.git e2fsprogs git repository]
+* [http://web.mit.edu/tytso/www/linux/ext2intro.html Design and Implementation of the Second Extended Filesystem]
+
+[[Category:Disk file systems]]
+[[Category:Free software programmed in C]]
+[[Category:Linux file systems]]
+[[Category:Unix file system-related software]]
+
+
+{{Linux-stub}}
+
+[[es:E2fsprogs]]
+[[fr:E2fsprogs]]
+[[ja:E2fsprogs]]
+[[ru:E2fsprogs]]
+[[vi:E2fsprogs]]
+[[zh:E2fsprogs]]</rev></revisions></page></pages></query></api>

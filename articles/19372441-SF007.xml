@@ -1,0 +1,84 @@
+<?xml version="1.0"?><api><query><pages><page pageid="19372441" ns="0" title="MoinMoin"><revisions><rev xml:space="preserve">{{About|the wiki software|the Frisian greeting from which this software takes its name|Moin|the Nigerian dish|Moin moin}}
+{{advert|date=September 2011}}
+{{primary sources|date=September 2011}}
+{{Infobox software
+| name                   = MoinMoin
+| title                  = 
+| logo                   = [[File:Moinmoin.svg|140px]]
+| screenshot             = &lt;!-- [[File: ]] --&gt;
+| caption                = 
+| collapsible            = 
+| author                 = 
+| developer              = JÃ¼rgen Hermann&lt;br /&gt; Thomas Waldmann
+| released               = &lt;!-- {{Start date|YYYY|MM|DD|df=yes/no}} --&gt;
+| discontinued           = 
+| latest release version = 1.9.3
+| latest release date    = {{Start date and age|2010|06|26|df=yes/no}}
+| latest preview version = 
+| latest preview date    = &lt;!-- {{Start date and age|YYYY|MM|DD|df=yes/no}} --&gt;
+| frequently updated     = &lt;!-- DO NOT include this parameter unless you know what it does --&gt;
+| programming language   = 
+| operating system       = [[Cross-platform]]
+| platform               = 
+| size                   = 
+| language               = 
+| status                 = 
+| genre                  = [[Wiki software]]
+| license                = [[GNU General Public License|GPL]]
+| website                = {{URL|moinmo.in}}
+}}
+'''MoinMoin''' is a [[wiki software|wiki engine]] implemented in [[Python (programming language)|Python]], initially based on the PikiPiki wiki engine. The MoinMoin code is licensed under the [[GNU General Public License]] v2, or (at the user's option) any later version (except some 3rd party modules that are licensed under other Free Software licenses compatible with the GPL)&lt;ref&gt;http://moinmo.in/GPL&lt;/ref&gt;.
+
+A number of organizations use MoinMoin to run public [[wikis]], including notable free software projects [[Ubuntu (operating system)|Ubuntu]], [[Apache Software Foundation|Apache]], [[Debian]], [[FreeBSD]], and others.&lt;ref&gt;
+{{Cite web|url=http://moinmo.in/|title=Other sites using the MoinMoin wiki engine|accessdate=2008-10-01}}
+&lt;/ref&gt;
+
+==Technical details==
+MoinMoin's storage mechanism is based on [[Flat file database|flat files]] and folders, rather than a [[database]]. This makes it easy to manipulate the content in a text editor on the server if necessary, including managing revisions if the wiki gets attacked by spammers. A storage [[abstraction layer]] is currently being worked on, which will allow the server administrator to select between flat file-storage or a relational database.&lt;ref&gt;[http://the-space-station.com/2008/09/07/my-work-on-moinmoins-new-storage-engine-gsoc-2008 New storage possibilities] article from its developer&lt;/ref&gt;
+
+MoinMoin supports [[plugins]] and can be extended via Macros and Actions. It also uses the idea of separate parsers (e.g. for parsing the wiki syntax) and formatters (e.g. for outputting [[HTML]] code) with a [[Simple API for XML|SAX]]-like interface between the two. The idea is that if you want to be able to output [[DocBook]] instead of HTML, you only need to write a docbook-formatter that implements the formatter interface, and all parsers that use the interface will automatically be supported.{{Citation needed|date=September 2008}}
+
+MoinMoin supports [[CamelCase]] linking as well as free links (non-CamelCase linking). The [[CamelCase]] is activated by default and MoinMoin does not allow disabling CamelCase links except on a one-off basis. The workaround to do this is to use a different parser&lt;ref&gt;http://moinmo.in/ParserMarket/NoCamelCase2&lt;/ref&gt; but this option does not work with the WYSIWYG editor.&lt;ref&gt;http://moinmo.in/ParserMarket/NoCamelCase2#Discussion&lt;/ref&gt;
+
+MoinMoin also has extensive support for Access Control Lists ([[Access control list|ACL]]) that greatly increase its usability in a [[content management system]] (CMS). It also has GUI editing capabilities.&lt;ref&gt;[http://moinmo.in/MoinMoinFeatures#Advanced_Features]&lt;/ref&gt;
+
+MoinMoin is able to either use a built-in search engine (rather slow, but no dependencies) or a [[Xapian]] based indexed search engine (faster, and can also search old revisions and attached files).&lt;ref&gt;http://moinmo.in/HelpOnSearching&lt;/ref&gt;
+
+MoinMoin also allows synchronization of contents from instance to instance&lt;ref&gt;[http://moinmo.in/WikiSynchronisation WikiSynchronisation] from the MoinMoinWiki.&lt;/ref&gt; via [[XML-RPC]] and therefore allows distributed offline editing.
+
+The original MoinMoin &quot;DesktopEdition&quot; is significantly easier to use because it uses a built-in web server to display pages, requiring only Python to be installed on the host machine. Since version  1.6.0, the &quot;DesktopEdition&quot; has been integrated into the standard release.{{Citation needed|date=September 2008}} Also in this release a different markup syntax was introduced, which had not been changed much since the early releases.{{Citation needed|date=September 2008}}
+
+==See also==
+{{Portal|Free software}}
+* [[Comparison of wiki software]]
+* [[List of content management systems]]
+
+==References==
+{{Reflist|2}}
+
+==External links==
+* [http://moinmo.in/ MoinMoin-Wiki]
+* [http://moinmo.in/WikiPediaForMoinMoin Wikipedia as virtual pages]
+* [http://moinmo.in/WikiEngineComparison Comparison of wiki engines]
+* [http://8kb.es/como-instalar-un-wiki-en-un-pendrive-en-30-segundos/ Installing MoinMoin in a removable drive] (in Spanish; [http://translate.google.com/translate?u=http%3A%2F%2F8kb.es%2Fcomo-instalar-un-wiki-en-un-pendrive-en-30-segundos%2F&amp;hl=en&amp;ie=UTF8&amp;sl=es&amp;tl=en translation])
+* [http://www.wikimatrix.org/show/MoinMoin WikiMatrix: MoinMoin Features]
+
+{{Wiki software}}
+
+{{DEFAULTSORT:Moinmoin}}
+[[Category:Free wiki software]]
+[[Category:Free software programmed in Python]]
+
+[[ar:ÙÙÙÙ.ÙÙÙÙ]]
+[[de:MoinMoin Wiki]]
+[[es:MoinMoin]]
+[[fa:ÙÙÛÙâÙÙÛÙ]]
+[[fr:MoinMoin]]
+[[ko:ëª¨ì¸ëª¨ì¸]]
+[[it:MoinMoin]]
+[[ja:MoinMoin]]
+[[pt:MoinMoin]]
+[[ru:MoinMoin]]
+[[sk:MoinMoin]]
+[[fi:MoinMoin]]
+[[uk:MoinMoin]]</rev></revisions></page></pages></query></api>

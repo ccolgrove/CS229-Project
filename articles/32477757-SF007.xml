@@ -1,0 +1,51 @@
+<?xml version="1.0"?><api><query><redirects><r from="Android JailBreak" to="Rooting (Android OS)" /></redirects><pages><page pageid="27901292" ns="0" title="Rooting (Android OS)"><revisions><rev xml:space="preserve">[[File:Galaxy Nexus smartphone.jpg|thumb|180px|Phones like the [[Galaxy Nexus]], part of the [[Google Nexus]] series, are designed to allow root access&lt;ref&gt;{{cite web|last=Bray |first=Tim |url=http://android-developers.blogspot.com/2010/12/its-not-rooting-its-openness.html |title=Android Developers Blog: Itâs not ârootingâ, itâs openness |publisher=Android-developers.blogspot.com |date=2010-12-20 |accessdate=2011-11-27}}&lt;/ref&gt;]]
+'''Rooting''' is a process that allows users of [[Mobile phone|mobile phones]] and other devices running the [[Android (operating system)|Android operating system]] to  attain privileged control (known as &quot;[[Superuser|root access]]&quot;) within Android's Linux subsystem with the goal of overcoming limitations that [[Wireless carrier|carriers]] and manufacturers put on some devices. It is analogous to [[iOS jailbreaking|jailbreaking]] on devices running the Apple [[iOS (Apple)|iOS operating system]].
+
+== Description ==
+
+Most retail devices running the Android operating system must be rooted in order to install custom versions of the Android system such as [[CyanogenMod]]. This is because in the stock configuration (unrooted), user-installed applications do not have direct access to the flash memory chip on the device and, thus, are not able to replace or modify the operating system itself.
+Rooting is also necessary for certain applications and widgets that require additional system and hardware rights such as for rebooting the phone, certain backup utilities, and other access to other hardware such as status LEDs. Rooting is also needed to disable or remove manufacturer-installed applications such as [[City ID]]. Rooting the phone typically also includes installing an application called Superuser that supervises which applications are granted root rights.
+
+In contrast to [[iOS jailbreaking]], rooting is not needed to run applications not distributed by the official Android Market (sometimes referred to as &quot;side-loading&quot;). However some [[Telecom company|carriers]], like [[AT&amp;T Mobility|AT&amp;T]], prevent the installation of applications not on the [[Android Market]] in [[firmware]],&lt;ref name=&quot;AT&amp;T Android FAQs&quot;&gt;[http://www.wireless.att.com/cell-phone-service/cell-phone-sales/promotion/androidComingSoon.jsp?status=success&amp;_requestid=281920 The Official AT&amp;T FAQs]&lt;/ref&gt; however the new [[Samsung Infuse 4G]] from [[AT&amp;T Mobility|AT&amp;T]] allows running applications not downloaded from the market.&lt;ref name=&quot;Mobileburn Blog&quot;&gt;[http://www.mobileburn.com/news.jsp?Id=14654 Mobileburn's blog] on &quot;side-loading&quot;&lt;/ref&gt;
+One of the downsides to rooting is that some phone makers consider it to be &quot;modifying&quot; the phone, which violates the warranty. However, as long as the phone is unrooted (the process for doing so varies by phone) before the user tries to use his or her warranty, there isn't an easy way for the warranty provider to know that the phone was previously rooted. Another downside would be the potential risk of [[bricking]] the device. The term &quot;bricking&quot; is used to describe a device which has had its software modified improperly to the point where it is no longer functioning.&lt;ref name=&quot;Droid Lessons&quot;&gt;[http://droidlessons.com/what-is-rooting-on-android-the-advantages-and-disadvantages/ DroidLessons blog] on &quot;Disadvantages of Rooting&quot;&lt;/ref&gt;
+
+== Process ==
+
+The process of rooting varies widely by device. It usually includes [[Exploit (computer security)|exploit]]ing a security weakness in the firmware shipped from the factory. For example, shortly after the [[T-Mobile G1]] was released it was quickly discovered that anything typed using the keyboard was being interpreted as a command in a privileged (root) shell. Although Google quickly released a patch to fix this, a signed image of the old firmware was leaked giving people the ability to downgrade and use the original exploit to gain root access. Once this exploit is found, a custom recovery image that does not check the [[digital signature]] of a firmware update package can be flashed. In turn, using the custom recovery, a modified firmware update can be installed that typically includes the utilities (for example the ''Superuser'' app) needed to run apps as root.
+
+The [[Google Nexus|Google-branded]] Android devices, the [[Nexus One]], [[Nexus S]] and the [[Galaxy Nexus]], can have their boot-loaders unlocked by simply running the command &quot;fastboot oem unlock&quot; from a computer connected to the device while it is in boot-loader mode.&lt;ref&gt;{{cite web |url=http://source.android.com/source/building-devices.html |title=Building for devices |publisher=source.android.com |accessdate=01-11-2011}}&lt;/ref&gt; After accepting a warning the boot-loader will be unlocked so that a new system image can be written directly to flash without the need for an exploit.
+
+Recently, [[Motorola]], [[LG Electronics]] and [[HTC Corporation]] have added security features to their devices at the hardware level in an attempt to prevent retail Android devices from being rooted. For instance, the [[Motorola Droid X]] has a security boot-loader that will put the phone in &quot;recovery mode&quot; if unsigned firmware is loaded onto the device. This protection was defeated 6 days after the Motorola Droid X was released to the general public.&lt;ref&gt;{{cite web |url=http://techie-buzz.com/mobile-news/motorola-droid-x-rooted.html |title=Motorola Droid X Rooted! |publisher=Techie-buzz.com |date=2010-07-22 |accessdate=2011-09-20}}&lt;/ref&gt;
+
+== Legality ==
+=== United States ===
+
+On July 26, 2010, the U.S. Copyright office announced a new exemption making it officially legal&lt;ref name=&quot;U.S. Copyright Office&quot;&gt;{{cite web |url=http://www.copyright.gov/1201/ |title=Rule making on Exemptions from Prohibition on Circumvention of Technological Measures that Control Access to Copyrighted Works |publisher=U.S. Copyright Office |accessdate=04-10-2011}}&lt;/ref&gt; to root a device and run unauthorized third-party applications, as well as the ability to [[SIM lock|unlock any cell phone for use on multiple carriers]].
+
+== See also ==
+* [[Android (operating system)]]
+* [[Google Nexus]]
+* [[Android Dev Phone]]
+* [[CyanogenMod]]
+* [[iOS jailbreaking|Jailbreaking]]
+* [[Hacking of consumer electronics]]
+
+== References ==
+{{Reflist}}
+
+== External links ==
+
+* [http://www.androidpolice.com/2010/04/15/rooting-explained-top-5-benefits-of-rooting-your-android-phone/ Rooting Explained + Top 5 Benefits Of Rooting Your Android Phone - androidpolice.com]
+*[http://androidsocialmedia.com/developments/android-g1-root-access-why-how Android â G1 â Root Access Why &amp; How (Android Social Media)]
+* [http://www.readwriteweb.com/archives/how_to_hack_your_android_phone.php How to Hack Your Android Phone (and Why You Should Bother) - ''Read Write Web'']
+* [http://android-dls.com/wiki/index.php?title=Why_Root Why Root - ''android-dls.com'']
+* [http://lifehacker.com/5342237/five-great-reasons-to-root-your-android-phone ''Five Great Reasons to Root Your Android Phone'' - LifeHacker.com]
+*[http://lifehacker.com/5789397/the-always-up+to+date-guide-to-rooting-any-android-phone &quot;The Always Up-To-Date Guide to Rooting Any Android Phone&quot; - LifeHacker.com]
+
+{{Android}}
+{{DEFAULTSORT:Rooting (Android OS)}}
+{{Tech-stub}}
+
+[[Category:Android (operating system)]]
+
+[[ko:ë£¨í (ìëë¡ì´ë)]]</rev></revisions></page></pages></query></api>

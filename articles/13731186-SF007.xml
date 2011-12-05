@@ -1,0 +1,82 @@
+<?xml version="1.0"?><api><query><pages><page pageid="13731186" ns="0" title="Entropy (computing)"><revisions><rev xml:space="preserve">{{Expert-subject|Cryptography|date=February 2009}}
+
+In [[computing]], '''entropy''' is the [[randomness]] collected by an operating system or application for use in cryptography or other uses that require random data.  This randomness is often collected from hardware sources, either pre-existing ones such as mouse movements or specially provided randomness generators.
+
+== Entropy in the Linux kernel ==
+
+The [[Linux kernel]] generates entropy from [[Keyboard (computing)|keyboard]] timings, [[Mouse (computing)|mouse]] movements, and [[Integrated Drive Electronics|IDE]] timings and makes the random character data available to other operating system processes through the [[special file]]s [[/dev/random]] and /dev/urandom.  This capability was introduced in Linux version 1.3.30.&lt;ref&gt;[http://linux.die.net/man/4/random random(4) - Linux man page] (die.net)&lt;/ref&gt;
+
+There are some Linux kernel patches allowing one to use more entropy sources.&lt;ref&gt;[http://www.robot101.net/2005/09/25/missing-entropy/ Robotic Tendencies Â» Missing entropy&lt;!-- Bot generated title --&gt;]&lt;/ref&gt; The [[audio-entropyd]] project, which is included in some operating systems such as [[Fedora (operating system)|Fedora]], allows audio data to be used as an entropy source.&lt;ref&gt;[https://admin.fedoraproject.org/pkgdb/packages/name/audio-entropyd Fedora Package Database - audio-entropyd&lt;!-- Bot generated title --&gt;]&lt;/ref&gt; Another alternative is to use the [[HAVEGE]] algorithm through [[haveged]] to pool entropy.&lt;ref&gt;{{cite web|title=haveged - A simple entropy daemon|url=http://www.issihosts.com/haveged/|accessdate=3 April 2011}}&lt;/ref&gt;  In some systems, network interrupts can be used as an entropy source as well.&lt;ref&gt;[https://linuxlink.timesys.com/docs/about_entropy Entropy and Random Devices | LinuxLink by TimeSys - Your Embedded Linux Resource&lt;!-- Bot generated title --&gt;]&lt;/ref&gt;
+
+On systems using the Linux kernel, programs needing significant amounts of random data from [[/dev/urandom]] cannot co-exist with programs reading little data from [[/dev/random]], as /dev/urandom depletes /dev/random whenever it is being read.&lt;ref&gt;[http://www.av8n.com/turbid/paper/turbid.htm High-Entropy Randomness Generator&lt;!-- Bot generated title --&gt;]&lt;/ref&gt;
+
+== Entropy in the Hurd kernel ==
+
+A driver ported from the Linux kernel has been made available for the [[Hurd]] kernel.&lt;ref&gt;[http://ibofobi.dk/stuff/hurd-entropy/ /dev/{,u}random driver for GNU/Hurd] (ibofobi.dk)&lt;/ref&gt;
+
+== Entropy in Solaris ==
+
+/dev/random and /dev/urandom have been available as Sun packages or patches for [[Solaris (operating system)|Solaris]] since Solaris 2.6,&lt;ref name=&quot;Solaris_devrandom&quot;&gt;[http://www.cosy.sbg.ac.at/%7Eandi/SUNrand/ Solaris /dev/random through emulation]&lt;/ref&gt; and have been a standard feature since Solaris 9.&lt;ref&gt;[http://docs.sun.com/app/docs/doc/816-5177/random-7d?a=view Solaris /dev/random]&lt;/ref&gt; As of Solaris 10, administrators can remove existing entropy sources or define new ones via the kernel-level cryptographic framework.
+
+A 3rd-party kernel module implementing /dev/random is also available for releases dating back to Solaris 2.4.&lt;ref name=&quot;Solaris_devrandom&quot;/&gt;
+
+== Entropy in OS/2 ==
+
+There is a software package for [[OS/2]] that allows software processes to retrieve random data.&lt;ref&gt;[http://r6.ca/RexxEGD/ Rexx Entropy Gathering Daemon for OS/2]&lt;/ref&gt;
+
+== Entropy in Windows ==
+
+[[Microsoft Windows]] releases newer than 95A feature the [[CryptoAPI]] (CAPI) [[API]] that gathers entropy in a similar fashion to Linux kernel's /dev/random.&lt;ref&gt;[http://lists.gnupg.org/pipermail/gnupg-users/2001-November/010831.html GPL command-line shred alternative for Windows&lt;!-- Bot generated title --&gt;]&lt;/ref&gt;
+
+Windows's CryptoAPI uses the binary [[Windows Registry|registry]] key ''HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Cryptography\RNG\Seed'' to store a seeded value from all of its entropy sources.&lt;ref&gt;[http://www.mail-archive.com/openssl-dev@openssl.org/msg21829.html Source for entropy on Windows platforms with CryptoAPI installed&lt;!-- Bot generated title --&gt;]&lt;/ref&gt;
+
+Because CryptoAPI is [[closed-source]], some [[free and open source software]] applications running on the Windows platform use other measures to get randomness.  For example, GnuPG, as of version 1.06, uses a variety of sources such as the number of free bytes in memory that combined with a random seed generate the desired randomness it needs.&lt;ref&gt;[http://lists.gnupg.org/pipermail/gnupg-users/2002-February/011909.html How does Windows GnuPG generate random numbers on keygen?&lt;!-- Bot generated title --&gt;]&lt;/ref&gt;
+
+Programmers using CAPI can get entropy by calling CAPI's [[CryptGenRandom]](), after properly initialising it.&lt;ref&gt;http://www.cs.berkeley.edu/~daw/rnd/cryptoapi-rand http://archives.seul.org/or/cvs/Mar-2004/msg00078.html&lt;/ref&gt;
+
+== Entropy in other systems ==
+
+There are some software packages that allow one to use a userspace process to gather random characters, exactly what /dev/random does, such as EGD, the Entropy Gathering Daemon.&lt;ref&gt;[http://www.nist.gov/cgi-bin/exit_nist.cgi?url=http://www.dwheeler.com/secure-programs/Secure-Programs-HOWTO/random-numbers.html  Secure Programs HOWTO - Random Numbers]&lt;/ref&gt;
+&lt;!-- the reference we need here is to a secondary source which makes this statement; not to a random bunch of SourceForge projects. --&gt;
+
+== Hardware-originated entropy ==
+
+Modern [[CPU]]s and hardware often features integrated generators that can provide high-quality and high-speed entropy to operating systems.  On systems based on the [[Linux kernel]], one can read the entropy generated from such a device through [[/dev/hw_random]].&lt;ref&gt;[http://lists.kde.org/?l=kroupware&amp;m=116377029100152&amp;w=2 'Re: SSL/TLS entropy problem,' - MARC&lt;!-- Bot generated title --&gt;]&lt;/ref&gt; However, sometimes /dev/hw_random may be slow;&lt;ref&gt;[http://www.redhat.com/archives/rhl-devel-list/2004-August/msg00770.html Re: /dev/hw_random&lt;!-- Bot generated title --&gt;]&lt;/ref&gt; usually around 80K/s.&lt;ref&gt;[http://www.redhat.com/archives/rhl-devel-list/2004-August/msg00786.html Re: /dev/hw_random&lt;!-- Bot generated title --&gt;]&lt;/ref&gt;
+
+There are some companies manufacturing entropy generation devices, and some of them are shipped with drivers for Linux.&lt;ref&gt;http://www.std.com/~reinhold/truenoise.html http://random.com.hr/products/random/hg324.html&lt;/ref&gt;
+
+On [[Debian]], one can install the [http://packages.debian.org/unstable/utils/rng-tools rng-tools] package (apt-get install rng-tools) that supports the [[true random number generator]]s (TRNGs) found in some [[Intel]], [[AMD]], or [[VIA]] [[chipset]]s, effectively increasing the entropy collected into /dev/random and potentially improving the cryptographic potential.  This is especially useful on [[headless system]]s that have no other sources of entropy.
+
+== Practical implications of entropy ==
+
+[[System administrator]]s, especially those supervising Internet servers, have to ensure that the server processes will not halt because of entropy depletion.  Entropy on [[Server (computing)|server]]s utilising the Linux kernel, or any other kernel or userspace process that generates entropy from the console and the storage subsystem, is often less than ideal because of the lack of a mouse and keyboard, thus servers have to generate their entropy from a limited set of resources such as IDE timings.
+
+Entropy in [[Linux]] is viewable through the file ''/proc/sys/kernel/random/entropy_avail'' and should generally be at least 2000.&lt;ref&gt;[http://lists.exim.org/lurker/message/20060217.000128.2064ef9b.en.html Re: [exim&amp;#93; no reply to STARTTLS&lt;!-- Bot generated title --&gt;]&lt;/ref&gt; Entropy changes frequently.
+
+Administrators responsible for systems that have low or zero entropy should not attempt to use [[/dev/urandom]] as a substitute for /dev/random as this may cause SSL/TLS connections to have lower-grade encryption.&lt;ref&gt;[http://lists.kde.org/?l=kroupware&amp;m=116375188915536&amp;w=2 SSL/TLS entropy problem, aka pops timeouts (was: sasl ldap problem)]&lt;/ref&gt;
+
+Some software systems change their [[Diffie-Hellman]] keys often, and this may in some cases help a server to continue functioning normally even with an entropy bottleneck.&lt;ref&gt;[http://www1.ietf.org/mail-archive/web/tls/current/msg01660.html [TLS] Re: Short Ephermal Diffie-Hellman keys, Simon Josefsson] (ietf.org, mailing list)&lt;/ref&gt;
+
+On servers with low entropy, a process can appear hung when it is waiting for random characters to appear in /dev/random (on Linux-based systems).  For example, there was a known problem in [[Debian]] that caused [[exim4]] to hang in some cases because of this.&lt;ref&gt;[http://lists.gnupg.org/pipermail/gnutls-dev/2004-December/000800.html [gnutls-dev&amp;#93; gnutls_rsa_params_init hangs. Is regenerating rsa-params once a day to frequent?&lt;!-- Bot generated title --&gt;]&lt;/ref&gt;
+
+=== Security implications ===
+
+Entropy sources can be used for keyboard timing attacks.&lt;ref&gt;[http://archive.cert.uni-stuttgart.de/bugtraq/2003/08/msg00213.html unix entropy source can be used for keystroke timing attacks - Michal Zalewski]&lt;/ref&gt;
+
+Entropy can affect the [[cryptography]] (TLS/SSL) of a [[Server (computing)|server]]: If it is too low then the regeneration of codes can take much time to complete.
+
+In some cases a [[Hacker (computer security)|cracker]] (malicious attacker) can guess some [[bit]]s of entropy from the output of a [[pseudorandom number generator]] (PRNG), and this happens when not enough entropy is shoved into the PRNG.&lt;ref&gt;[http://osdir.com/ml/encryption.general/2005-01/msg00074.html Re: entropy depletion (was: SSL/TLS passive sniffing)]&lt;/ref&gt;
+
+== Other potential sources for entropy ==
+
+Commonly used entropy sources include the mouse, keyboard, and IDE timings, but there are other potential sources.  For example, one could collect entropy from the computer's [[microphone]], or by building a sensor to measure the [[air turbulence]] inside a [[disk drive]].&lt;ref&gt;[http://www.codeproject.com/internet/YourOwnSecureProtocol.asp?df=100&amp;forumid=316484&amp;exp=0&amp;select=1846294 Build your own cryptographically safe server/client protocol - 4.8.3. Collecting entropy]&lt;/ref&gt; However, microphones are usually not available in servers.
+
+For Unix/BSD derivates there exists a USB based solution that utilizes an ARM Cortex CPU for filtering / securing the bit stream generated by two entropy generator sources in the system&lt;ref&gt;[http://www.entropykey.co.uk/ http://www.entropykey.co.uk]&lt;/ref&gt;.
+
+== References ==
+
+{{refs|2}}
+
+[[Category:Pseudorandom number generators]]
+
+[[ru:ÐÑÑÐ¾ÑÐ½Ð¸Ðº ÑÐ½ÑÑÐ¾Ð¿Ð¸Ð¸]]</rev></revisions></page></pages></query></api>

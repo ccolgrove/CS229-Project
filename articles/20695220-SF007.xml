@@ -1,0 +1,134 @@
+<?xml version="1.0"?><api><query><pages><page pageid="20695220" ns="0" title="AMOLED"><revisions><rev xml:space="preserve">{{Redirect|Amoled|the song|Amoled (song)}}
+{{technical|date=November 2011}}
+[[file:Nexus one screen microscope.jpg|thumb|Magnified image of the AMOLED screen on the [[Nexus One]] smartphone using the RGBG system of the [[PenTile Matrix Family]]]]
+
+'''AMOLED''' ('''active-matrix organic light-emitting diode''') is a display technology for use in mobile devices and televisions. [[Organic LED|OLED]] describes a specific type of thin-film display technology in which [[organic compound]]s form the [[electroluminescence|electroluminescent]] material, and [[active matrix addressing|active matrix]] refers to the technology behind the addressing of pixels.
+
+As of 2011, AMOLED technology is used in [[mobile phone]]s, media players and digital cameras,&lt;ref&gt;{{cite journal|doi=10.1063/1.3400224|title=Improvement of electron injection in inverted bottom-emission blue phosphorescent organic light emitting diodes using zinc oxide nanoparticles|year=2010|last1=Lee|first1=Hyunkoo|last2=Park|first2=Insun|last3=Kwak|first3=Jeonghun|last4=Yoon|first4=Do Y.|last5=Kallmann|first5=Changhee Lee|journal=Applied Physics Letters|volume=96|page=153306}}&lt;/ref&gt; and continues to make progress toward low-power, low-cost and large-size (for example, 40-inch) applications.&lt;ref&gt;{{cite journal|doi=10.1889/1.3256930|title=40 Inch FHD AM-OLED Display with IR Drop Compensation Pixel Circuit|year=2009|last1=Kim|first1=Yang Wan|last2=Kwak|first2=Won Kyu|last3=Lee|first3=Jae Yong|last4=Choi|first4=Wong Sik|last5=Lee|first5=Ki Yong|last6=Kim|first6=Sung Chul|last7=Yoo|first7=Eui Jin|journal=SID Symposium Digest of Technical Papers|volume=40|page=85}}&lt;/ref&gt;&lt;ref&gt;{{cite journal|doi=10.1889/1.3256911|title=Development of 31-Inch Full-HD AMOLED TV Using LTPS-TFT and RGB FMM|year=2009|last1=Lee|first1=Myung Ho|last2=Seop|first2=Song Myoung|last3=Kim|first3=Jong Soo|last4=Hwang|first4=Jung Ho|last5=Shin|first5=Hye Jin|last6=Cho|first6=Sang Kyun|last7=Min|first7=Kyoung Wook|last8=Kwak|first8=Won Kyu|last9=Jung|first9=Sun I|last10=Kim|first10=Chang Soo|last11=Choi|first11=Woong Sik|last12=Kim|first12=Sung Cheol|last13=Yoo|first13=Eu Jin|journal=SID Symposium Digest of Technical Papers|volume=40|page=802}}&lt;/ref&gt;&lt;ref&gt;{{cite journal|doi=10.1889/1.2835033|title=System design for a wide-color-gamut TV-sized AMOLED display|year=2008|last1=Hamer|first1=John W.|last2=Arnold|first2=Andrew D.|last3=Boroson|first3=Michael L.|last4=Itoh|first4=Masahiro|last5=Hatwar|first5=Tukaram K.|last6=Helber|first6=Margaret J.|last7=Miwa|first7=Koichi|last8=Levey|first8=Charles I.|last9=Long|first9=Michael|last10=Ludwicki|first10=John E.|last11=Scheirer|first11=David C.|last12=Spindler|first12=Jeffrey P.|last13=Van Slyke|first13=Steven A.|journal=Journal of the Society for Information Display|volume=16|page=3}}&lt;/ref&gt;
+
+== Design ==
+[[File:AMOLED en.svg|thumb|300px|Schematic of an active matrix OLED display]]
+
+An AMOLED display consists of an [[active matrix]] of OLED pixels that generate light upon [[electricity|electrical]] activation that have been deposited or integrated onto a [[Thin film transistor|thin film transistor (TFT)]] array, which functions as a series of switches to control the current flowing to each individual [[pixel]].&lt;ref&gt;{{cite web|url=http://data.4dsystems.com.au/downloads/micro-OLED/Docs/4D_AMOLED_Presentation.pdf|title=Introduction to OLED Displays&amp;nbsp;â Design Guide for Active Matrix OLED (AMOLED) Displays|publisher=4D Systems|date=2008-05-22|accessdate=2010-09-06}}&lt;/ref&gt;
+
+Typically, this [[continuous current]] flow is controlled by at least two TFTs at each pixel, one to start and stop the charging of a storage [[capacitor]] and the second to provide a [[voltage]] source at the level needed to create a constant current to the pixel and eliminating need for the very high currents required for [[Passive matrix addressing|passive matrix]] OLED operation.&lt;ref&gt;{{cite journal|doi=10.1109/LED.2006.889523|title=A Novel LTPS-TFT Pixel Circuit Compensating for TFT Threshold-Voltage Shift and OLED Degradation for AMOLED|last1=Lin|first1=Chih-Lung|last2=Chen|first2=Yung-Chih|journal=IEEE Electron Device Letters|volume=28|page=129}}&lt;/ref&gt;
+
+TFT [[backplane]] technology is crucial in the fabrication of AMOLED displays. Two primary TFT backplane technologies, namely [[polycrystalline silicon]] (poly-Si) and [[amorphous silicon]] (a-Si), are used today in AMOLEDs. These technologies offer the potential for fabricating the active matrix backplanes at low temperatures (below 150Â°C) directly onto flexible plastic substrates for producing [[Organic light-emitting diode roll-up display|flexible]] AMOLED displays.&lt;ref name=prin&gt;{{cite journal|doi=10.1117/12.497638|title=Active-matrix OLED using 150Â°C a-Si TFT backplane built on flexible plastic substrate (Proceedings Paper)|year=2003|last1=Sarma|first1=Kalluri R.|last2=Chanley|first2=Charles|last3=Dodd|first3=Sonia R.|last4=Roush|first4=Jared|last5=Schmidt|first5=John|last6=Srdanov|first6=Gordana|last7=Stevenson|first7=Matthew|last8=Wessel|first8=Ralf|last9=Innocenzo|first9=Jeffrey|last10=Yu|first10=Gang|last11=O'Regan|first11=Marie B.|last12=MacDonald|first12=W. A.|last13=Eveson|first13=R.|last14=Long|first14=Ke|last15=Gleskova|first15=Helena|last16=Wagner|first16=Sigurd|last17=Sturm|first17=James C.|journal=SPIE Proceedings|volume=5080|page=180}} [http://www.princeton.edu/~sturmlab/pdfs/publications/CP.211.pdf]&lt;/ref&gt;
+
+== Future development ==
+
+Manufacturers have developed in-cell touch panels, integrating the production of capacitive sensor arrays in the AMOLED module fabrication process. In-cell sensor AMOLED fabricators include [[AU Optronics]] and [[Samsung Electronics|Samsung]]. Samsung has marketed their version of this technology as [[Super AMOLED]]. Clear Black Display or CBD is an AMOLED display with a polarized filter on top. Researchers at [[DuPont]] used  computational fluid dynamics (CFD) software to optimize coating processes for a new solution-coated AMOLED display technology that is cost and performance competitive with existing commercial vapor deposition technology. Using custom modeling and analytical approaches, they developed short- and long-range film-thickness control and uniformity that is commercially viable at large glass sizes.&lt;ref&gt;Reid Chesterfield, Andrew Johnson, Charlie Lang, Matthew Stainer, and Jonathan Ziebarth, &quot;[http://www2.dupont.com/OLED/en_US/assets/downloads/pdf/frontline_technology_AMOLED.pdf Solution-Coating Technology for AMOLED Displays]&quot;, Information Display Magazine, January 2011.&lt;/ref&gt;
+
+== Comparison to other technologies ==
+
+AMOLED displays provide higher refresh rates than their passive-matrix OLED counterparts{{Nonspecific|date=November 2011}}, improving response time often to under a millisecond, and they consume significantly less [[Electric power|power]].&lt;ref&gt;{{cite web|last=Freudenrich|first=Craig|publisher=HowStuffWorks| url=http://electronics.howstuffworks.com/oled3.htm| title=How OLEDs work| accessdate= 30 December 2009}}&lt;/ref&gt;{{Verify source|date=November 2011}} This advantage makes active-matrix OLEDs well suited for portable electronics, where power consumption is critical to battery life.
+
+The amount of power the display consumes varies significantly depending on the color and brightness shown. As an example, one commercial [[QVGA]] OLED display consumes 3 watts while showing black text on a white background, but only 0.7 watts showing white text on a black background.&lt;ref name=powerOLED&gt;{{cite journal| author1=Mian Dong| author2=Choi, Y.-S.K| author3=Lin Zhong| month= July| year=2009| title=Power modeling of graphical user interfaces on OLED displays| journal=Design Automation Conference, 2009. DAC '09. 46th ACM/IEEE| pages=652â657| publisher=IEEE}}&lt;/ref&gt; Because the black pixels actually turn off, AMOLED also has contrast ratios that are significantly better than LCD.
+
+AMOLED displays may be difficult to view in direct sunlight compared to LCDs because of their reduced maximum brightness.&lt;ref&gt;[http://www.wired.com/gadgetlab/2010/11/how-super-amoled-displays-work/ How Super AMOLED displays work]&lt;/ref&gt; Samsung's [[Super AMOLED]] technology addresses this issue by reducing the size of gaps between layers of the screen.&lt;ref name=sam&gt;{{cite web|url=http://ars.samsung.com/customer/usa/jsp/faqs/faqs_view_us.jsp?SITE_ID=22&amp;PG_ID=2&amp;PROD_SUB_ID=557&amp;PROD_ID=560&amp;AT_ID=290435|title=What Are The Benefits Of Using The Super AMOLED Display In My SGH-t959 (Vibrant) Phone?|publisher=Samsung|date=2010-07-15|accessdate=2010-09-07}}&lt;/ref&gt;&lt;ref&gt;{{cite web|url=http://digihub.theage.com.au/node/1799|title=Big is beautiful|publisher=The Age|date=2010-08-12|accessdate=2010-09-07}}&lt;/ref&gt;. Additionally, [[PenTile]] technology is sometimes used, rearranging the subpixels for each color and in the case of PenTile RGBW, adding a white subpixel, which lets through more light, thereby increasing brightness, while introducing graininess.
+
+The organic materials used in AMOLED displays are prone to degradation over a period of time. However, technology has been developed to compensate for material degradation.&lt;ref&gt;{{cite journal|doi=10.1109/JDT.2006.890711|title=AMOLED Pixel Circuit With Electronic Compensation of Luminance Degradation|last1=Ashtiani|first1=Shahin J.|last2=Reza Chaji|first2=G.|last3=Nathan|first3=Arokia|journal=Journal of Display Technology|volume=38|page=36}}&lt;/ref&gt;&lt;ref&gt;{{cite patent|country=US|number=7352345|title=Driving apparatus and method for light emitting diode display|inventor=Chun-huai Li|gdate=2008-04-01}}&lt;/ref&gt;
+
+Current demand for AMOLED screens is high and, due to supply shortages of the Samsung-produced displays, certain models of [[HTC Corporation|HTC]] smartphones have been changed to use Sony's [[S-LCD|SLCD]] displays in the future.&lt;ref&gt;{{cite web|url=http://www.ibtimes.com/articles/38429/20100726/htc-ditches-samsung-amoled-display-for-sony-s-super-lcds.htm|title=HTC ditches Samsung AMOLED display for Sony's Super LCDs|publisher=International Business Times|date=2010-07-26|accessdate=2011-01-01}}&lt;/ref&gt; Construction of new production facilities in 2011 will increase the production of AMOLED screens to cope with demand.&lt;ref&gt;{{cite web|url=http://online.wsj.com/article/SB10001424052748703713504575475553352680096.html|title=Samsung Mobile Display to Boost 2011 Production|publisher=Wall Street Journal|date=2010-09-06|accessdate=2011-01-01}}&lt;/ref&gt;
+
+== Uses ==
+{{unreferenced|section|date=November 2011}}
+[[File:Galaxy Nexus smartphone.jpg|thumb|200px|The [[Galaxy Nexus]], example of a smartphone with a HD [[Super AMOLED]] screen&lt;ref&gt;http://www.samsung.com/uk/consumer/mobile-devices/smartphones/android/GT-I9250TSAXEU&lt;/ref&gt;]]
+Commercial devices using AMOLED include:
+
+; Phones:
+* [[Dell Venue Pro]]
+* [[Nexus One]]
+* [[Nexus S]] (Super AMOLED)
+* [[Galaxy Nexus]] (Super AMOLED HD)&lt;ref&gt;http://www.samsung.com/uk/consumer/mobile-devices/smartphones/android/GT-I9250TSAXEU&lt;/ref&gt;
+* [[HTC Desire]]
+* [[HTC Droid Incredible]]
+* [[HTC Legend]]
+* [[LG Franklin Phone]]
+* [[Motorola Droid RAZR]] (Super AMOLED Advanced)
+* [[Nokia 700]]
+* [[Nokia C7-00]]
+* [[Nokia C6-01]] (CBD)
+* [[Nokia E7-00]] (CBD)
+* [[Nokia Lumia 800]]
+* [[Nokia N8]]
+* [[Nokia N85]]
+* [[Nokia N86 8MP]]
+* [[Nokia N9]] (AMOLED ClearBlack)
+* [[Nokia ORO]]
+* [[Nokia X7]]
+* [[Orange San Francisco]] (Initial models)
+* [[Samsung SGH-A877|Samsung SGH-A877 Impression]]
+* [[Samsung AMOLED Beam SPH-W9600]]
+* [[Samsung Epic 4G]]
+* [[Samsung i7500|Samsung i7500 Galaxy]]
+* [[Samsung Haptic Beam SPH-W7900]]
+* [[Samsung SPH-M900|Samsung SPH-m900 Moment]]
+* [[Samsung Omnia HD|Samsung i8910]]
+* [[Samsung Jet]]
+* [[Samsung Omnia 2]]
+* [[Samsung Impression]]
+* [[Samsung SCH-U960|Samsung Rogue]]
+* [[Samsung Transform]]
+* [[Samsung Galaxy Note]] (Super AMOLED HD)
+* [[Samsung Galaxy S]] series (Super AMOLED)
+* [[Samsung Galaxy S II]] (Super AMOLED Plus)
+* [[Samsung Droid Charge]] (Super AMOLED Plus)
+* [[Samsung Wave S8500]] (Super AMOLED)
+* [[Samsung S8600 Wave III]] (Super AMOLED)
+* [[Samsung Stratosphere]]  (Super AMOLED)
+* [[Samsung Focus]] (Super AMOLED)
+* [[Samsung Omnia 7]] (Super AMOLED)
+* [[Samsung Infuse|Samsung Infuse 4G (SGH-i997)]] (Super AMOLED Plus)
+* [[ZTE Blade]] (Initial Models)
+
+; Portable music players:
+* [[Cowon|Cowon S9]]
+* [[Cowon|Cowon J3]]
+* [[Iriver clix|Iriver Clix]]
+* [[Iriver|Iriver Spinn]]
+* [[Zune HD]]
+
+; Games consoles:
+* [[GP2X Wiz]]
+* [[ PlayStation Vita]]
+
+; Music production hardware:
+* [[Dave Smith Instruments]] &quot;Tempest&quot;
+* Teenage Engineering [[OP-1]]
+
+; Digital cameras:
+* [[Olympus XZ-1]]
+* [[Samsung EX1]]
+* [[Samsung NX10]]
+* [[Samsung WB2000]]
+
+== References ==
+
+{{Reflist}}
+
+== External links ==
+
+* [http://electronics.howstuffworks.com/oled3.htm Types of OLEDs: Passive and Active Matrix], HowStuffWorks
+* [http://www.oled-info.com/devices A more comprehensive list of AMOLED devices], OLED-Info
+
+{{Display Technology}}
+
+[[Category:Conductive polymers]]
+[[Category:Display technology]]
+[[Category:Molecular electronics]]
+[[Category:Optical diodes]]
+[[Category:Organic electronics]]
+
+[[ca:AMOLED]]
+[[de:AMOLED]]
+[[et:Aktiivmaatriksiga orgaaniline valgusdiood]]
+[[es:AMOLED]]
+[[fr:AMOLED]]
+[[it:AMOLED]]
+[[nl:Amoled]]
+[[pl:AMOLED]]
+[[pt:AMOLED]]
+[[ru:Active-Matrix OLED]]
+[[vls:Amoled]]
+[[ko:ë¥ëí ì ê¸° ë°ê´ ë¤ì´ì¤ë]]</rev></revisions></page></pages></query></api>

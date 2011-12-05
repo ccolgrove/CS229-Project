@@ -1,0 +1,283 @@
+<?xml version="1.0"?><api><query><pages><page pageid="22409" ns="0" title="OS/2"><revisions><rev xml:space="preserve">{{Infobox OS
+|name=OS/2
+|logo=[[Image:Os2logo.svg|150px]]
+|screenshot=[[Image:Os2W4.png|330px|OS/2 Warp 4]]
+|caption=A typical OS/2 Warp 4 desktop
+|developer=[[IBM]] &amp;amp; [[Microsoft]] (v. 1.0 - 1.2)
+|source_model=[[Closed source]]
+|kernel_type=[[Hybrid kernel]]
+|supported_platforms=[[x86]]
+|ui=[[Workplace Shell]] [[Graphical user interface]]
+|family=OS/2
+|latest_release_version=4.52
+|latest_release_date=December 2001
+|marketing_target=Professionals, servers
+|programmed_in= C/C++
+|released = April 1987
+|prog_language=[[REXX]], [[Object Rexx]], [[Java (programming language)|Java]]
+|language=[[English language|English]], [[French language|French]], [[German language|German]], [[Spanish language|Spanish]], [[Portuguese language|Portuguese]]
+|updatemodel=
+|package_manager=Solid
+|working_state=Historical, now developed as [[eComStation]]
+|license=[[Proprietary software|Proprietary]]
+|website=
+}}
+
+'''OS/2''' is a computer [[operating system]], initially created by [[Microsoft]] and [[IBM]], then later developed by IBM exclusively. The name stands for &quot;Operating System/2,&quot; because it was introduced as part of the same generation change release as IBM's &quot;[[IBM Personal System/2|Personal System/2]] (PS/2)&quot; line of second-generation [[personal computer]]s. OS/2 is no longer marketed by IBM, and IBM standard support for OS/2 was discontinued on 31 December 2006.&lt;ref&gt;{{cite web|title= Changes in support for IBM OS/2 Warp 4 and OS/2 Warp Server for e-business|author=IBM|work=ibm.com| date=12 July 2005|url=http://www-306.ibm.com/fcgi-bin/common/ssi/ssialias?infotype=an&amp;subtype=ca&amp;appname=Demonstration&amp;htmlfid=897/ENUS905-163}}&lt;/ref&gt;
+Currently, Serenity Systems International sells OS/2 under the brand name [[eComStation]].
+
+OS/2 was intended as a [[protected mode]] successor of [[PC-DOS]]. Notably, basic [[system call]]s were modeled after [[MS-DOS]] calls; their names even started with &quot;Dos&quot; and it was possible to create &quot;Family Mode&quot; applications: [[text mode]] applications that could work on both systems.&lt;ref&gt;{{cite web|title=OS/2 1.3: Ten Years Ago|author=Michal Necasek|work=The History of OS/2|date= 2001-09-08|url=http://pages.prodigy.net/michaln/history/os213/index.html}}&lt;/ref&gt; Because of this heritage, OS/2 shares similarities with [[Unix]], [[Xenix]], and [[Microsoft Windows|Windows]] in many ways.
+
+==Development history==
+===Enthusiastic beginnings===
+The development of OS/2 began when IBM and Microsoft signed the Joint Development Agreement in August 1985.&lt;ref&gt;{{cite web|title=Microsoft Operating System/2 With Windows Presentation Manager Provides Foundation for Next Generation of Personal Computer Industry|author=Michal Necasek|work= The History of OS/2|date=2004-06-24|url=http://pages.prodigy.net/michaln/history/pr/87apr_m3592.html}}&amp;nbsp;â a copy of Microsoft's 1987-04-02 press release announcing OS/2&lt;/ref&gt; It was code-named &quot;CP/DOS&quot; and it took two years for the first product to be delivered.
+
+OS/2 1.0 was announced in April 1987 and released in December. The original release was [[textmode]]-only and still lacked the GUI, which was added with OS/2 1.1 about a year later. OS/2 featured a rich [[Application programming interface|API]] for controlling the [[display device|video display]] (VIO) and handling [[computer keyboard|keyboard]] and mouse events so that programmers writing for [[Protected Mode|protected-mode]] no longer had to call the [[BIOS]] or access hardware directly. In addition, development tools included a subset of the video and keyboard APIs as linkable libraries so that family mode programs were able to run under MS-DOS. A task-switcher named Program Selector was available through the Ctrl-Esc [[hotkey]] combination, allowing the user to select among multitasked text-mode sessions (or screen groups; each could run multiple programs).&lt;ref&gt;{{cite web|title=OS/2 1.0|author=Michal Necasek|work=The History of OS/2| date=2001-07-16|url=http://pages.prodigy.net/michaln/history/os210/index.html}}&lt;/ref&gt;
+
+Communications and database-oriented extensions were delivered in 1988, as part of OS/2 1.0 Extended Edition: [[Systems Network Architecture|SNA]], [[X.25]]/[[Advanced Program-to-Program Communication|APPC]]/LU 6.2, [[LAN Manager]], [[Query Management Facility|Query Manager]], SQL.
+
+The promised [[Graphical User Interface]] (GUI), [[Presentation Manager]], was introduced with OS/2 1.1 in October, 1988.&lt;ref name=Both1996&gt;{{cite web|title=A Short History of OS/2|author=David Both|work=DataBook for OS/2 Warp|date=1996-12-19|url=http://www.millennium-technology.com/HistoryOfOS2.html}}&lt;/ref&gt; It had a similar user interface to [[Windows 2.1]]. The interface was replaced in versions 1.2 and 1.3 by a tweaked GUI closer in appearance to [[Windows 3.1]].
+
+The Extended Edition of 1.1, sold only through IBM sales channels, introduced distributed database support to IBM database systems and SNA communications support to IBM mainframe networks.
+
+Version 1.2 introduced Installable Filesystems and notably the [[High Performance File System|HPFS]] [[File system|filesystem]]. HPFS provided a number of improvements over the older [[File Allocation Table|FAT]] filesystem, including long filenames and a form of [[Fork (filesystem)|alternate data streams]] called [[Extended Attributes]].&lt;ref&gt;{{cite web|title=HPFS| author=H. Gilbert|work=Das Boot|publisher=PC Lube and Tune|year=1995|url=http://www.yale.edu/pclt/BOOT/HPFS.htm}}&lt;/ref&gt; In addition, extended attributes were also added to the FAT file system.&lt;ref&gt;{{cite web|title=Implementation of extended attributes on the FAT file system|author =Bob Eager|work=Tavi Systems|date=28 October 2000|url=http://www.tavi.co.uk/os2pages/eadata.html}}&lt;/ref&gt;
+[[Image:MS-OS2-v1.0-diskettes.jpg|right|thumb|200px|Installation Disk A of Microsoft OS/2 1.3 (3.5&quot; floppy disk).]]
+
+The Extended Edition of 1.2 introduced [[TCP/IP]] and [[Ethernet]] support.
+
+OS/2 and Windows-related books of the late 1980s acknowledged the existence of both systems and promoted OS/2 as the system for the future.&lt;ref&gt;{{cite book|last=Iacobucci|first=Ed|authorlink=Ed Iacobucci|coauthors=with foreword by [[Bill Gates]]|title=OS/2 Programmer's Guide|year=1988| publisher=[[McGraw-Hill Osborne Media]]|chapter=Foreword|isbn=0-07-881300-X|quote=I believe OS/2 is destined to be the most important operating system, and possibly program, of all time. As the successor to DOS, which has over 10,000,000 systems in use, it creates incredible opportunities for everyone involved with PCs.}}&lt;/ref&gt;
+
+===Breakup===
+The collaboration between IBM and Microsoft unravelled in 1990, between the releases of [[Windows 3.0]] and OS/2 1.3. During this time, Windows 3.0 became a tremendous success, selling millions of copies in its first year.&lt;ref&gt;{{cite web|title=The Unusual History of the Microsoft Windows|author=Mary Bellis|work=about.com|url=http://inventors.about.com/library/weekly/aa080499b.htm}}&lt;/ref&gt; Much of its success was because Windows 3.0 (along with MS-DOS) was bundled with most new computers.&lt;ref&gt;{{cite web|title=Windows History (1985&amp;ndash;1994)|author=Thomas Hormby |work=osviews.com|date=25 May 2005|url=http://www.osopinion.com/modules.php?op=modload&amp;name=News&amp;file=article&amp;sid=4484}}{{Dead link|date=June 2011}}&lt;/ref&gt; OS/2, on the other hand, was only available as an expensive stand-alone software package. In addition, OS/2 lacked [[device drivers]] for many common devices such as printers, particularly non-IBM hardware.&lt;ref&gt;{{cite web|title=OS/2 1.1 and 1.2: The Early Years|author=Michal Necasek|work=The History of OS/2|date=2001-10-29|url=http://pages.prodigy.net/michaln/history/os211/index.html}}&lt;/ref&gt; Windows, on the other hand, supported a much larger variety of hardware. The increasing popularity of Windows prompted Microsoft to shift its development focus from cooperating on OS/2 with IBM to building a franchise based on Windows.&lt;ref&gt;{{cite web|title=Windows Server 2003: The Road To Gold|author=Paul Thurrott|work=winsupersite.com| date=24 January 2003|url=http://www.winsupersite.com/reviews/winserver2k3_gold1.asp}}&lt;/ref&gt; Several technical and practical reasons contributed to this breakup:
+
+*Differences in culture and vision: Microsoft favored the open hardware system approach that contributed to its success on the PC; IBM sought to use OS/2 to drive sales of its own hardware, including systems that could not support the features Microsoft wanted. Microsoft programmers also became frustrated with IBM's bureaucracy and its use of [[Source lines of code|lines of code]] to measure [[programmer productivity]].&lt;ref&gt;{{cite book|last=Gates|first=Bill|coauthors=[[Nathan Myhrvold]], and [[Peter Rinearson]]|title=The Road Ahead|isbn=0-670-77289-5}}&lt;/ref&gt; IBM developers complained about the terseness and lack of [[comment (computing)|comments]] in Microsoft's code, while Microsoft developers complained that IBM's code was [[code bloat|bloated]].&lt;ref&gt;{{cite book|coauthors=Michael Lee Vasu, Debra W. Stewart, G. David Garson|title=Organizational behavior and public management|page=268|isbn=9780824701352|url=http://books.google.com/books?id=bu2JkldQjXcC&amp;lpg=PA267&amp;dq=IBM%20measure%20lines%20of%20code&amp;pg=PA267#v=onepage&amp;q=IBM%20measure%20lines%20of%20code&amp;f=false}}&lt;/ref&gt;
+
+*Differences in API: OS/2 was announced when [[Windows 2.0]] was near completion, and the Windows API already defined. However, IBM requested that this API be significantly changed for OS/2.&lt;ref&gt;{{cite web|title=&quot;What's happening to OS/2,&quot; a Usenet post by Gordon Letwin from August 1995, the point of view of a Microsoft employee|author=Gordon Letwin|work=Google Groups|url= http://groups.google.com/group/comp.os.ms-windows.misc/msg/d710490b745d5e5e }}&lt;/ref&gt; Therefore, issues surrounding application compatibility appeared immediately. OS/2 designers hoped for source code conversion tools, allowing complete migration of Windows application source code to OS/2 at some point. However, OS/2 1.x did not gain enough momentum to allow vendors to avoid developing for both OS/2 and Windows in parallel. IBM's involvement was much more successful in redefining Windows' visual appearance after the 1.0 release, giving it what is today perceived as the &quot;Windows 3.0 look&quot;.
+
+*OS/2 1.x targeted the 80286 processor: IBM insisted on supporting the [[Intel 80286]] processor, with its 16-bit [[x86 memory segmentation|segmented memory]] mode, due to commitments made to customers who had purchased many 80286-based PS/2's because of IBM's promises surrounding OS/2.&lt;ref&gt;{{cite web|title=Bill Gates Interview|author=David Allison|work=National Museum of American History |url=http://americanhistory.si.edu/collections/comphist/gates.htm}}&lt;/ref&gt; Until release 2.0 in April 1992, OS/2 ran in 16-bit [[protected mode]] and therefore could not benefit from the [[Intel 80386]]'s much simpler [[32-bit]] [[flat memory model]] and [[virtual 8086 mode]] features. This was especially painful in providing support for DOS applications. While, in 1988, [[Windows 2.1x|Windows/386 2.1]] could run several [[cooperative multitasking|cooperatively multitasked]] DOS applications, including [[expanded memory]] (EMS) emulation, OS/2 1.3, released in 1991, was still limited to one {{nowrap|640 kB}} &quot;DOS box&quot;.
+
+Given these issues, Microsoft started to work in parallel on a version of Windows which was more future-oriented and more portable. The hiring of [[Dave Cutler]], former [[OpenVMS|VMS]] architect, in 1988 created an immediate competition with the OS/2 team, as Cutler did not think much of the OS/2 technology and wanted to build on his work at Digital rather than creating a &quot;DOS plus&quot;.  His &quot;NT OS/2,&quot; was a completely new architecture.&lt;ref&gt;{{cite book|author=Microsoft|title=Inside Out, Microsoft&amp;nbsp;â In Our Own Words|year=2000|publisher=Warner Business Books|isbn=0-446-52739-4}}&lt;/ref&gt;
+
+[[Image:OS2 2.0 upgrade box.png|right|thumb|200px|The OS/2 2.0 upgrade box.]]
+
+IBM grew concerned about the delays in development of OS/2 2.0 and the diversion of IBM funds earmarked for OS/2 development towards Windows.{{Citation needed|date=April 2010}} Initially, the companies agreed that IBM would take over maintenance of OS/2 1.0 and development of OS/2 2.0, while Microsoft would continue development of OS/2 3.0. In the end, Microsoft decided to recast NT OS/2 3.0 as [[Windows NT]], leaving all future OS/2 development to IBM. From a business perspective, it was logical to concentrate on a consumer line of operating systems based on DOS and Windows, and to prepare a new high-end system in such a way as to keep good compatibility with existing Windows applications. While waiting for this new high-end system to develop, Microsoft would still receive licensing money from Xenix and OS/2 sales. Windows NT's OS/2 heritage can be seen in its initial support for the [[HPFS filesystem]], text mode OS/2 1.x applications, and OS/2 LAN Manager network support. Some early NT materials even included OS/2 copyright notices embedded in the software.{{Citation needed|date=April 2010}}
+One example of NT OS/2 1.x support is in the WIN2K resource kit. OS/2 support also includes Presentation Manager support with the addition of the Windows NT Add-On Subsystem for Presentation Manager.&lt;ref&gt;[http://www.microsoft.com/technet/prodtechnol/windows2000serv/reskit/prork/pric_run_jzxd.mspx?mfr=true Microsoft Corporation]&lt;/ref&gt;
+
+===32-bit era===
+OS/2 2.0 was released in April 1992. It provided a 32-bit API for native programs, though the OS itself was a mixture of 16-bit and 32-bit code. It included a new GUI environment called the [[Workplace Shell]]. This was a fully object-oriented GUI that was a significant departure from the previous GUI. Rather than merely providing an environment for program windows (such as the Program Manager), the Workplace Shell provided an environment in which a user could manage programs, files and devices by manipulating objects on the screen.
+
+====DOS compatibility====
+OS/2 2.0 was touted by IBM as &quot;a better DOS than DOS and a better Windows than Windows&quot;.&lt;ref&gt;{{cite web|title=Killer Apps: For Apple's Windows Strategy to Work, It Must Replace Microsoft Office and Buy Adobe Systems|author=Robert X. Cringely|work=pbs.org|date=27 April 2006|url= http://www.pbs.org/cringely/pulpit/2006/pulpit_20060427_000894.html}}&lt;/ref&gt; For the first time, OS/2 was able to run more than one DOS application at a time. This was so effective that it allowed OS/2 to actually run a modified copy of Windows 3.0, itself a [[DOS extender]], including Windows 3.0 applications.
+
+Because of the limitations of the [[Intel 80286]] processor, OS/2 1.x could run only one DOS program at a time, and did this in a way that allowed the DOS program to have total control over the computer. A problem in DOS mode could crash the entire computer. In contrast, OS/2 2.0 could benefit from the [[virtual 8086 mode]] of the [[Intel 80386]] processor in order to create a much safer [[virtual machine]] in which to run DOS programs. This included an extensive set of configuration options to optimize the performance and capabilities given to each DOS program. Any real mode operating system (such as [[Xenix]]) could also be made to run using OS/2's virtual machine capabilities, subject to certain direct hardware access limitations.
+
+Like most 32-bit environments, OS/2 could however not run protected-mode DOS programs using the older [[VCPI]] interface, unlike the Standard mode of Windows 3.1; it only supported programs written according to [[DPMI]]. (Microsoft discouraged the use of VCPI under Windows 3.1, however, due to performance degradation.&lt;ref&gt;{{cite web|title=Windows 3.1 Standard Mode and the VCPI|author= Microsoft|work=support.microsoft.com|date=6 November 1999|url=http://support.microsoft.com/kb/82298}}&lt;/ref&gt;)
+
+Unlike Windows NT, OS/2 also always gave DOS programs the possibility of masking real hardware interrupts, so any DOS program could [[deadlock]] the machine this way. OS/2 could however use a hardware [[non-maskable interrupt|watchdog]] on selected machines (notably IBM machines) to break out of such a deadlock. Later, release 3.0 leveraged the enhancements of newer [[Intel 486]] and [[Original Intel Pentium (P5 microarchitecture)|Intel Pentium]] processors&amp;nbsp;â the Virtual Interrupt Flag (VIF), which was part of the Virtual Mode Extensions (VME)&amp;nbsp;â to solve this problem.
+
+====Windows 3.x compatibility====
+Compatibility with Windows 3.0 (and later Windows 3.1) was achieved by adapting Windows user-mode code components to run inside a [[virtual DOS machine]]. Originally, a nearly complete version of Windows code was included with OS/2 itself: Windows 3.0 in OS/2 2.0, and Windows 3.1 in OS/2 2.1. Later, IBM developed versions of OS/2 that would use whatever Windows version the user had installed previously, patching it on the fly, and sparing the cost of an additional Windows license.&lt;ref&gt;{{cite web|title=Team OS/2 Frequently Asked Questions|author=Christian Alice Scarborough|date=15 September 1998|url=http://www.faqs.org/faqs/Team-OS2-FAQ/}}&lt;/ref&gt; It could either run full-screen, using its own set of video drivers, or &quot;seamlessly,&quot; where Windows programs would appear directly on the OS/2 desktop. The process containing Windows was given fairly extensive access to hardware, especially video, and the result was that switching between a full-screen WinOS/2 session and the Workplace Shell could occasionally cause issues.&lt;ref&gt;{{cite web| title=OS/2 Games Setting Archive|work=[[Game Zero magazine]]|date=6 March 1995|url= http://www.gamezero.com/team-0/pc_games/os2.html}}&lt;/ref&gt;
+
+Because OS/2 only ran the user-mode system components of Windows, it was not compatible with Windows device drivers ([[VxD]]s) and applications needing them.
+
+Multiple Windows applications ran in a single Windows session, just as they would under native Windows. To achieve true isolation between Windows 3.x programs, OS/2 could run multiple copies of Windows in parallel. This approach required considerable system resources, especially memory. It was possible to use [[Dynamic Data Exchange|DDE]] between OS/2 and Windows applications, and [[Object Linking and Embedding|OLE]] between Windows applications only.&lt;ref&gt;{{cite web|title=OS/2 Warp Frequently Asked Questions List| author=Timothy F. Sipples|date=20 February 1995|url=http://www.mit.edu/activities/os2/faq/os2faq0103.html}}&lt;/ref&gt;
+
+==={{Anchor|TheWarpYears}}The &quot;Warp&quot; years===
+&lt;!-- Deleted image removed: [[Image:OS2 Warp 3.png|thumb|200px|left|The OS/2 Warp 3 splash screen.]] --&gt;
+
+OS/2 version 3.0, released in 1994, was labelled as '''OS/2 Warp''' to highlight the new performance benefits, and generally to freshen the product image. &quot;Warp&quot; had originally been the internal IBM name for the release: IBM claimed that it had used [[Star Trek]] terms as internal names for past OS/2 releases, and that this one seemed appropriate for external use as well.
+
+At the launch of OS/2 Warp in 1994, [[Patrick Stewart]] was to be the Master of Ceremonies; however [[Kate Mulgrew]]&lt;ref&gt;http://www.imdb.com/name/nm0000550/bio&lt;/ref&gt; of the then-upcoming series ''[[Star Trek: Voyager]]'' was substituted at the last minute.&lt;ref&gt;http://www.insearchofstupidity.com/ch6.htm&lt;/ref&gt;
+
+OS/2 Warp offered a host of benefits over OS/2 2.1, notably broader hardware support, greater multimedia capabilities, [[Internet]]-compatible networking, and it included a basic office application suite known as [[IBM Works]]. It was released in two versions: the less expensive &quot;Red Spine&quot; and the more expensive &quot;Blue Spine&quot; (named for the color of their boxes). &quot;Red Spine&quot; was designed to support [[Microsoft Windows]] applications by finding and using Windows already installed on the computer's hard drive. For this reason, the Red Spine version was also known informally and humorously as the &quot;[[Ferengi]]&quot; version, a reference to the [[Star Trek]] character species, because of this version's &quot;acquisition&quot; of existing MS Windows installations to increase OS/2's usefulness and appeal, much as a Ferengi might do. The nickname was also an homage to its immediate predecessor, &quot;OS/2 for Windows&quot; version 2.1, whose internal IBM codename was indeed &quot;Ferengi&quot;.&lt;ref&gt;[http://www.os2ezine.com/20041016/page_4.html OS/2 E-Zine]&lt;/ref&gt; &quot;Blue Spine&quot; included Windows support in its own installation, and so could support Windows applications without a Windows installation. As most computers were sold with [[Microsoft Windows]] pre-installed, &quot;Red Spine&quot; was the far more popular product. OS/2 Warp Connect&amp;nbsp;â which had full LAN client support built-in&amp;nbsp;â followed in mid-1995. Warp Connect was nicknamed &quot;Grape&quot;.&lt;ref name=Both1996 /&gt;
+
+In OS/2 2.0, most performance-sensitive subsystems, including the graphics (Gre) and multimedia (MMPM/2) systems, were updated to 32-bit code in a fixpack, and included as part of OS/2 2.1. Warp 3 brought about a fully 32-bit Windowing system, while Warp 4 introduced the object-oriented 32-bit GRADD display driver model.
+
+[[Image:OS2 Mozilla 1.7.13.png|thumb|200px|left|Mozilla 1.7.13 for OS/2 Warp 4.]]
+[[Image:Firefox 3.5.4 on OS2 Warp4.png|thumb|200px|right|Firefox 3.5.4 for OS/2 Warp 4.]]
+In 1996, Warp 4 added [[Java (programming language)|Java]] and [[speech recognition]] software. IBM also released server editions of Warp 3 and Warp 4 which bundled IBM's LAN Server product directly into the operating system installation. A personal version of [[Lotus Notes]] was also included, with a number of template databases for contact management, brainstorming, and so forth. The UK-distributed free demo [[CD-ROM]] of OS/2 Warp essentially contained the entire OS and was easily, even accidentally, [[Software cracking|cracked]], meaning that even people who liked it did not have to buy it. This was seen as a backdoor tactic to increase the number of OS/2 users, in the belief that this would increase sales and demand for third-party applications, and thus strengthen OS/2's desktop numbers.{{Citation needed|date=April 2010}} This suggestion was bolstered by the fact that this demo version had replaced another which was not so easily cracked, but which had been released with trial versions of various applications.{{Citation needed|date=April 2010}} In 2000, the July edition of ''[[Australian Personal Computer]]'' magazine bundled software CD-ROMs, included a full version of Warp 4 that required no activation and was essentially a free release.  Special versions of OS/2 2.11 and Warp 4 also included [[symmetric multiprocessing]] (SMP) support.
+
+==={{Anchor|WorkstationOS}}Workstation OS Plan to Replace OS/2===
+
+IBM also worked on a version of OS/2 for [[PowerPC]] to be sold as &quot;Workstation OS&quot;. This was an entirely new product, not a port of the existing OS/2, that borrowed certain sections of code from both the existing OS/2 and AIX products while using an entirely new microkernel code base and adding major features including a system registry and a new driver model. IBM intended to replace the existing OS/2 with this more advanced version that would run exclusively on the [[PowerPC]] platform, forcing users to migrate to proprietary IBM hardware and eventually eliminating the Intel version. Advanced plans for the new code base included a vision of a replacement of the OS/400 operating system and a microkernel product that would have been used in industries such as telecommunications and set-top television receivers. A partial pre-alpha version of the client was demonstrated once at Comdex where a bemused Bill Gates stopped by the booth. However, a project was launched internally to evaluate the looming competitive situation with Microsoft Windows 95, the major code quality issues in the existing OS/2 product (resulting in over 20 service packs, each requiring more diskettes than the original installation), and the ineffective and heavily matrixed development organization in Boca Raton and Austin. That study revealed untenable weaknesses across the board in IBM and a decision was made to cut 95% of the overall budget for OS/2, eliminate the Boca Raton development laboratory, end all sales and marketing efforts of the product, and lay off over 1300 individuals. $900M USD had been spent in the last full year. Warp 4 became the last widely distributed version of OS/2.
+
+[[Microsoft]] [[Windows NT]] provided server support for PowerPC&amp;nbsp;â a chip co-developed and promoted by IBM&amp;nbsp;â for over five years.
+
+===Fading out===
+[[Image:Atm os2warp.jpg|thumb|right|An [[Automated teller machine|ATM]] in Australia running OS/2 Warp.]]
+
+Overall, OS/2 failed to catch on in the mass market and is little used outside certain niches where IBM traditionally had a stronghold. For example, many bank installations, especially [[Automated Teller Machine]]s, run OS/2 with a customized user interface;{{Citation needed|date=June 2011}} French [[SNCF]] national railways used OS/2 1.x in thousands of ticket selling machines.{{Citation needed|date=June 2011}} Telecom companies such as [[Nortel]] use OS/2 in some voicemail systems. Also, OS/2 was used{{when}} for the host PC used to control the [[Public Radio Satellite System|Satellite Operations Support System]] equipment installed at [[NPR]] member stations used to receive their programming via satellite.{{Citation needed|date=June 2011}} Nevertheless, OS/2 still maintains a small and dedicated community of followers.&lt;ref name=&quot;OS2World&quot;&gt;[http://www.os2world.com/forum/]&lt;/ref&gt;
+
+Although IBM began indicating shortly after the release of Warp 4 that OS/2 would eventually be withdrawn, the company did not end support until December 31, 2006.&lt;ref name=&quot;EOL&quot;&gt;{{cite web|title=End of Standard Support|author=IBM|url=http://www-306.ibm.com/software/os/warp/index.html}}&lt;/ref&gt; Sales of OS/2 stopped on 2005-12-23. The latest IBM version is 4.52, which was released for both desktop and server systems in December 2001. Serenity Systems has been reselling OS/2 since 2001, calling it [[eComStation]]. Version 1.2 was released in 2004. After a series of preliminary &quot;release candidates,&quot; version 2.0 GA (General Availability) was released on 15 May 2010. &lt;ref name=&quot;v2release&quot;&gt;[http://www.ecomstation.com/news.phtml?action=fullnews&amp;id=3312&amp;title=eComStation%202.0%20GA%20to%20be%20Released%20for%20Warpstock%20Europe%202010]&lt;/ref&gt; eComStation version 2.1 GA was released on May 20, 2011.&lt;ref name=&quot;v21release&quot;&gt;[http://www.ecomstation.com/news.phtml?action=fullnews&amp;id=3698&amp;title=eComStation%202.1%20GA%20available]&lt;/ref&gt;
+
+IBM is still delivering defect support for a fee.&lt;ref name=&quot;EOL&quot; /&gt;&lt;ref name=&quot;EOL2&quot;&gt;[http://www.ibm.com/common/ssi/ShowDoc.jsp?docURL=/common/ssi/rep_ca/3/897/ENUS905-163/index.html&amp;lang=en_US]&lt;/ref&gt; IBM urges customers to migrate their often highly complex applications to [[Electronic business|e-business]] technologies such as [[Java (programming language)|Java]] in a platform-neutral manner. Once application migration is completed, IBM recommends migration to a different operating system, suggesting [[Linux]] as an alternative.&lt;ref name=&quot;LinuxMigrate&quot;&gt;[http://www.ibm.com/developerworks/ondemand/migrate/linux.html]&lt;/ref&gt;&lt;ref name=&quot;LinuxMigrate2&quot;&gt;[http://www.redbooks.ibm.com/abstracts/sg246631.html?Open]&lt;/ref&gt;&lt;ref name=&quot;JavaMigrate&quot;&gt;[http://ecomstation.ru/projects/reseller/download/cat97_gen.pdf]&lt;/ref&gt;
+
+====Virtualization====
+{{As of|2008}}, support for running OS/2 under [[Platform virtualization|virtualization]] appears to be improving in a number of third-party products. OS/2 has historically been more difficult to run in a virtual machine than most other legacy [[x86]] operating systems because of its extensive reliance on the full set of features of the x86 CPU&lt;ref&gt;{{cite web|title=A Notice to OS/2 Users|author=The VMware Team|url=http://www.vmware.com/support/reference/common/guest_os2_exp.html}}&lt;/ref&gt;. 
+
+During a pre-launch session (ESX3) with [[VMware]] in [[Oslo, Norway]], December 2005, they specifically said that OS/2's use of the CPU's [[ring (computer security)|ring]] 2 was the reason that it would not run in VMware. A beta of VMWare Workstation 2.0 released in January 2000 was the first [[hypervisor]] that could run OS/2 at all. Later, the company decided to drop official OS/2 support.&lt;ref&gt;{{cite web|title=A Notice to OS/2 Users|author=The VMware Team|url= http://www.vmware.com/support/reference/common/guest_os2_exp.html}}&lt;/ref&gt; One can run OS/2 Warp 4 at Fixpack 5, but installing later Fixpacks will make the virtual machine unusable. eComStation 1.2 and 2.0 beta 4 will not install.&lt;ref&gt;checked with VMware Workstation 5.5&lt;/ref&gt;
+
+[[VirtualPC]] from [[Microsoft]] (originally [[Connectix]]) has been able to run OS/2 without hardware virtualization support for many years. It also provided âadditionsâ code which greatly improves host-guest OS interactions in OS/2. The additions are not provided with the current version of VirtualPC, but the version last included with a release may still be used with current releases. At one point, OS/2 was a supported host for VirtualPC in addition to a guest. Note that OS/2 runs only as a guest on those versions of VirtualPC that use virtualization (x86 based hosts) and not those doing full emulation (VirtualPC for Mac).
+
+[[VirtualBox]] from [[Oracle Corporation]] (originally [[InnoTek]], later [[Sun Microsystems|Sun]]) currently supports OS/2 Warp 3, 4 and 4.5 as well as eComStation as guests. However, attempting to run OS/2 and eComStation can still be difficult, if not impossible to run, because of the strict requirements of VT-x/AMD-V hardware-enabled virtualization and only ACP2/MCP2 is reported to work in a reliable manner.&lt;ref&gt;{{cite web|title=VirtualBox Guest_OSes|author=VirtualBox| url=http://www.virtualbox.org/wiki/Guest_OSes}}&lt;/ref&gt;
+
+[[QEMU]] and [[Bochs]] also support running OS/2 as they are full x86 system emulators and not virtualization software, and thus emulates the entire x86 architecture instead of relying on the host CPU, essentially allowing OS/2 unrestricted access to Ring 2, albeit an emulated one.{{Citation needed|date=April 2010}} 
+
+The difficulties in efficiently running OS/2 have, at least once, created an opportunity for a new [[Platform virtualization|virtualization]] company. A large bank in Moscow needed a way to use OS/2 on newer hardware that OS/2 did not support. As virtualization software is an easy way around this, the company desired to run OS/2 under a [[hypervisor]]. Once it was determined that VMware was not a possibility, it hired a group of [[Russian people|Russian]] [[software developer]]s to write a host-based hypervisor that would officially support OS/2. Thus, the [[Parallels, Inc.]] company and their [[Parallels Workstation]] was born.&lt;ref&gt;{{cite web|title= Breaking News--Parallels Joins the PC and Server Virtualization Fray|author=Timothy Prickett Morgan |url=http://www.itjungle.com/breaking/bn090705-story01.html|work=itjungle.com}}&lt;/ref&gt;
+
+====ATMs====
+[[Automated teller machine|ATM]] vendors [[NCR Corporation]] and [[Diebold|Diebold Incorporated]] have both adopted [[Microsoft Windows XP]] as their migration path from OS/2.{{Citation needed|date=June 2011}}
+
+[[Diebold|Diebold Incorporated]] initially shipped XP Embedded Edition exclusively, but following extensive pressure from customer banks to support a common OS, switched to XP Professional to match their primary competitor [[NCR Corporation]].{{Citation needed|date=April 2010}}
+
+===Security niche===
+OS/2 has very few native [[computer virus]]es;&lt;ref&gt;{{cite web|title=the effect of computer viruses on OS/2 and Warp|author=John F. Morar, David M. Chess|url=http://www.research.ibm.com/massive/vb95a.html|work=research.ibm.com}}&lt;/ref&gt; while it is not invulnerable by design, its reduced market share appears to have discouraged virus writers. There are, however, OS/2-based antivirus programs, dealing with DOS viruses and Windows viruses that could pass through an OS/2 server.
+
+===Future===
+{{wikinews|Fans of OS/2 want IBM to release it as open-source software}}
+There is a community of OS/2 users and developers, along with loyal company customers, hoping that IBM will release OS/2 or a significant part of it as [[open source]]. These petitions were held in 2005 and 2007, but IBM refused these petitions, citing legal and technical reasons.&lt;ref&gt;{{cite web| title=Slashdot: IBM Won't Open-Source OS/2|url=http://slashdot.org/article.pl?sid=08/01/22/0258213 }}&lt;/ref&gt; It is unlikely that the entire OS will be open at some point in the future, because it contains third-party code, much of it from [[Microsoft]].
+
+In addition, IBM once made a deal with [[Commodore International|Commodore]] to license [[Amiga]] technology for OS/2 2.0 and above in exchange for the [[REXX]] scripting language.&lt;ref&gt;http://www.os2bbs.com/os2news/OS2Warp.html&lt;/ref&gt; This means OS/2 may have code not written by IBM, which can prevent the OS from being open-sourced in the future.&lt;ref&gt;{{cite web| title=IBM OS/2 Warp History|date=2004-06-24|url=http://www.os2world.com/content/view/15847/1/}}{{Failed verification|date=June 2011}}&lt;/ref&gt;&lt;ref&gt;The Art of Unix Programming p. 66 ISBN 0131429019, 9780131429017&lt;/ref&gt; On the other hand [[IBM]] donated [[Object REXX]] for Windows and OS/2 to the ''Open Object REXX'' project maintained by the ''REXX Language Association'' on [[Sourceforge]].&lt;ref&gt;{{cite web
+|url=http://www.oorexx.org/faq/
+|title=Open Object REXX FAQ
+|accessdate=2011-07-05}}&lt;/ref&gt;  
+
+There is an ongoing petition to open parts of the OS arranged by OS2World.com.&lt;ref&gt;{{cite web|title=OS2World.com Petition|author=OS2World.com Staff|work=OS2World.com|date=April 2005|url=http://www.os2world.com/petition/}}&lt;/ref&gt;
+
+Open source operating systems such as [[Linux]] have already profited from OS/2 indirectly through IBM's release of the improved [[IBM Journaled File System 2 (JFS2)|JFS]] [[file system]] which was ported from the OS/2 code base. As IBM didn't release the source of the OS/2 JFS driver, developers ported the Linux driver back to [[eComStation]] and added the functionality to boot from a JFS partition. This new JFS driver has been integrated into eComStation v2.0, the successor of OS/2.
+
+'''[[OSFree]]''' is an attempt to recreate the OS/2 Operating System (specifically OS/2 Warp 4) from scratch and licensed under the GNU GPL.&lt;ref&gt;http://www.osfree.org/&lt;/ref&gt;
+
+==Technology==
+The graphic system has a layer named Presentation Manager that manages windows, fonts, and icons. This is similar in functionality to a non-networked version of [[X11]] or the Windows GDI. On top of this lies the [[Workplace Shell]] (WPS) introduced in OS/2 2.0. WPS is an [[object-oriented]] [[shell (computers)|shell]] allowing the user to perform traditional computing tasks such as accessing files, printers, launching legacy programs, and advanced object oriented tasks using built-in and third-party application objects that extended the shell in an integrated fashion not available on any other mainstream operating system. WPS follows IBM's [[Common User Access]] user interface standards.
+
+Hardware vendors were reluctant to support device drivers for alternative operating systems including OS/2 and Linux, leaving users with few choices from a select few vendors. To relieve this issue for video cards, IBM licensed a reduced version of the [[UniVBE|Scitech display drivers]], allowing users to choose from a wide selection of cards supported through Scitech's modular driver design.&lt;ref&gt;{{cite web
+|url=https://www.redbooks.ibm.com/redbooks/pdfs/sg246621.pdf
+|format=PDF
+|publisher=[[IBM]] redbook
+|title=OS/2 to Linux Client Transition
+|year=2004
+|page=9
+|accessdate=2011-07-05}}&lt;/ref&gt;
+
+WPS represents objects such as disks, folders, files, program objects, and printers using the [[System Object Model]] (SOM), which allows code to be shared among applications, possibly written in different programming languages. A distributed version called DSOM allowed objects on different computers to communicate. DSOM is based on [[CORBA]]. The object oriented aspect of SOM is similar to, and a direct competitor to, Microsoft's [[Component Object Model]], though it is implemented in a radically different manner; for instance, one of the most notable differences between SOM and COM is SOM's support for inheritance (one of the most fundamental concepts of OO programming)&amp;nbsp;â COM does not have such support. SOM and DSOM are no longer being developed.
+
+OS/2 also includes a radical advancement in application development with compound document technology called [[OpenDoc]], which was developed with Apple. OpenDoc proved interesting as a technology, but was not widely used or accepted by users or developers. OpenDoc is also no longer being developed.
+
+The multimedia capabilities of OS/2 are accessible through [[Media Control Interface]] commands.
+The last update (bundled with the IBM version of [[Netscape Navigator]] plugins) added support for [[MPEG]] files. Support for newer formats like [[Portable Network Graphics|PNG]], [[JPEG|progressive JPEG]], [[DivX]], [[Ogg]], [[MP3]] comes from third parties. Sometimes it is integrated with the multimedia system, but in other offers it comes as standalone applications.
+
+The [[TCP/IP stack]] is based on the [[open source]] [[BSD]] stack as visible with [[Source Code Control System#References|SCCS]] [[List of Unix utilities|what]] compatible tools.
+
+===Problems===
+Some problems were classic subjects of comparison with other operating systems:
+
+*''Synchronous input queue (SIQ)'': if a GUI application was not servicing its ''window messages'', the entire GUI system could get stuck and a reboot was required. This problem was considerably reduced with later Warp 3 fixpacks and refined by Warp 4, by taking control over the application after it had not responded for several seconds.&lt;ref&gt;see IBM Developer Connection for OS/2, Internal Fixpack 12J&lt;/ref&gt;
+*''No unified object handles (OS/2 v2.11 and earlier)'': The availability of threads probably led system designers to overlook mechanisms which allow a single thread to wait for different types of asynchronous events at the same time, for example the keyboard and the mouse in a &quot;console&quot; program. Even though ''select'' was added later, it only worked on network sockets. In case of a console program, dedicating a separate thread for waiting on each source of events made it difficult to properly release all the input devices before starting other programs in the same &quot;session&quot;. As a result, console programs usually polled the keyboard and the mouse alternately, which resulted in wasted CPU and a characteristic &quot;jerky&quot; reactivity to user input. In OS/2 3.0 IBM introduced a new call for this specific problem.&lt;ref&gt;KbdGetConsole() and DosWaitMuxWaitSem(), see ''Control Program Programming Guide and Reference'', IBM OS/2 Toolkit&lt;/ref&gt;
+'''
+
+==Historical uses==
+{{Refimprove section|date=June 2011}}
+OS/2 is widely used in Iran Export Bank (Bank Saderat Iran) in their teller machines, ATMs and local servers (over 30,000 working stations). As of 2011, The bank moved to virtualize and renew their infrastructure by moving OS/2 to Virtual Machines running over Windows.
+
+OS/2 was widely used in [[Brazil]]ian banks. [[Banco do Brasil]] had a peak 10,000 machines running OS/2 Warp in the 1990s. OS/2 was used in [[automated teller machine]]s until 2006. The workstations and [[automated teller machine]]s and attendment computers have been migrated to [[Linux]].&lt;ref&gt;{{cite web|url= http://www.atmmarketplace.com/article.php?id=9929|title=Brazilian banks look to Linux for ATMs}}&lt;/ref&gt;
+
+OS/2 is still used in the banking industry. [[Suncorp]] bank in [[Australia]] still ran its [[Automated teller machine|ATM]] network on OS/2 as late as 2002. [[Automated teller machine|ATMs]] in [[Perisher Blue]] used OS/2 as late as 2009, and even the turn of the decade.&lt;ref&gt;{{cite news|title=NetIQ Manages Over 1000 Windows Servers for One of Australia's Largest Banks; ANZ Bank Completes Roll Out of NetIQ Management Software to 1,300 Servers|work=[[Business Wire]]|date=January 24, 2002| accessdate=2010-01-24|url=http://www.highbeam.com/doc/1G1-82094600.html|format=fee}}&lt;/ref&gt;
+
+OS/2 also was widely adopted by [[accounting]] professionals and [[auditing]] companies. In mid-1990s native 32-bit accounting software were well developed and serving corporate markets.
+
+OS/2 ran the faulty baggage handling system and Denver's new airport to replace Stapleton. The OS was eventually scrapped, but led to massive delays in the opening of the new airport. 
+
+OS/2 was used by radio personality [[Howard Stern]]. He once had a 10 minute on-air rant about OS/2 versus [[Windows 95]] and recommended OS/2. He also used OS/2 on his [[IBM Thinkpad 760|IBM 760CD]] laptop.
+
+OS/2 is still used by Shell New Zealand Petroleum Stations as the main operating system.
+
+OS/2 was used as part of the Satellite Operations Support System (SOSS) for [[National Public Radio|NPR]]'s [[Public Radio Satellite System]].  SOSS was a computer-controlled system using OS/2 that NPR member stations used to receive programming feeds via satellite.  SOSS was introduced in 1994 using OS/2 3.0, and was retired in 2007, when NPR switched over to its successor, the [[Public Radio Satellite System#ContentDepot|ContentDepot]]. 
+
+OS/2 is still used to control the [[SkyTrain (Vancouver)|SkyTrain]] automated light rail system in Vancouver, Canada.
+
+OS/2 was used in the [[London Underground]] [[Jubilee Line Extension]] Signals Control System (JLESCS) in London, UK. This control system delivered by Alcatel was in use from 1999 to 2011 i.e. between abandonment before opening of the line's unimplemented original automatic train control system and the present [[SelTrac]] system. JLESCS did not provide automatic train operation only manual train supervision. Six OS/2 local site computers were distributed along the railway between Stratford and Westminster, the shunting tower at Stratford depot, and several formed the central equipment located at Neasden. It was once intended to cover rest of the line between Green Park and Stanmore but this was never introduced. 
+
+OS/2 is still used by [[The Co-operative Bank]] in the UK for its domestic call centre staff, using a bespoke program created to access customer accounts which cannot easily be migrated to Windows.
+
+OS/2 is still used by the [[Stop &amp; Shop]] supermarket chain (and has been installed in new stores as recently as March 2010). 
+
+OS/2 is still used on ticket machines for [[Croydon Tramlink]] in outer-London (UK).
+
+==See also==
+*[[History of the graphical user interface]]
+*[[Virtual DOS machine]] discusses the OS/2 '''VDM''' and seamless [[Win32s]] integration
+
+==References==
+{{reflist|2}}
+
+==Further reading==
+*{{cite book|author=Harvey M. Deitel and Michael S. Kogan|year=1992|title=The Design of OS/2| publisher=Addison Wesley|isbn=0-201-54889-5}}
+*{{cite book|author=Letwin, Gordon|year=1988|title=Inside OS/2|publisher= Microsoft Press|isbn=1-55615-117-9|authorlink=Gordon Letwin}}
+*{{cite book|author=Pascal, Zachary|year=1994|title=Showstopper! The Breakneck Race to Create Windows NT and the Next Generation at Microsoft.|publisher=Warner Books.|isbn= 0-02-935671-7|authorlink=Pascal Zachary}}
+*{{cite web|title=OS/2 Warp history|author=Steve Wendt|work=missingwork|date=missingdate|url= http://www.os2bbs.com/os2news/OS2Warp.html|publisher=OS2BBS}}
+*{{cite web|title=Some fundamental OS/2 concepts|author=Peter Moylan|date=2004-07-23|work=|url= http://www.pmoylan.org/pages/os2/concepts.html}}
+*{{cite web|title=OS/2 Warp, PowerPC Edition|author=Michal Necasek|work=The History of OS/2|date= 2005-12-03|url=http://pages.prodigy.net/michaln/history/os2ppc/index.html}}&amp;nbsp;â Necasek discusses an aborted port to [[PowerPC]] machines.
+
+==External links==
+*[http://www.os2world.com/ os2world.com - Community of OS/2 users]
+*[http://en.ecomstation.ru/community/?action=interviews ecomstation.ru - Community of eComStation and OS/2 users]
+*[http://www.netlabs.org/ netlabs.org - OpenSource Software for OS/2 and eCS]
+*[http://www.mit.edu/activities/os2/faq/os2faq-toc.html OS/2 FAQ]
+*[http://hobbes.nmsu.edu hobbes.nmsu.edu] The OS/2 software repository
+*[http://www.ecomstation.it/ecsoft2/index.php?language=en eCSoft/2 - The OS/2 and eComstation software guide]
+*[http://www.osfree.org/ osFree an open source project to build an OS/2 clone operating system]
+*[http://voyager.netlabs.org/en/site/index.xml Voyager Project, to re implement OS/2 on modern technology]
+*[http://os2linux.sourceforge.net/ OS/2 to Linux API porting project]
+*[http://i1.dk/ntos2/ Open Source OS/2 API implementation for Windows]
+*[http://www.microsoft.com/technet/archive/ntwrkstn/reskit/os2comp.mspx?mfr=true Microsoft documentation of OS/2 API compatibility with Windows NT]
+*[http://pclt.cis.yale.edu/pclt/OPSYS/OS2.HTM Technical details of OS/2]
+*[http://pages.prodigy.net/michaln/history/ The History of OS/2]
+
+{{IBM}}
+
+{{Microsoft operating systems}}
+{{History of Windows}}
+{{IBM operating systems}}
+{{Operating System}}
+
+{{DEFAULTSORT:Os/2}}
+[[Category:OS/2]]
+[[Category:X86 operating systems]]
+[[Category:Discontinued operating systems]]
+
+[[ar:Ø£Ù Ø¥Ø³/2]]
+[[az:OS/2]]
+[[ca:OS/2]]
+[[cs:OS/2]]
+[[da:OS/2]]
+[[de:OS/2]]
+[[es:OS/2]]
+[[eo:OS/2]]
+[[fa:Ø§ÙØ§Ø³/Û²]]
+[[fr:OS/2]]
+[[gl:OS/2]]
+[[ko:OS/2]]
+[[ilo:OS/2]]
+[[id:IBM OS/2]]
+[[is:OS/2]]
+[[it:OS/2]]
+[[he:OS/2]]
+[[lt:OS/2]]
+[[hu:OS/2]]
+[[nl:OS/2]]
+[[ja:OS/2]]
+[[no:OS/2]]
+[[pl:OS/2]]
+[[pt:OS/2]]
+[[ru:OS/2]]
+[[simple:OS/2]]
+[[sk:OS/2]]
+[[sr:OS/2]]
+[[fi:OS/2]]
+[[sv:OS/2]]
+[[tl:OS/2]]
+[[th:OS/2]]
+[[tr:OS/2]]
+[[uk:OS/2]]
+[[zh:OS/2]]</rev></revisions></page></pages></query></api>

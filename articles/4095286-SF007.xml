@@ -1,0 +1,37 @@
+<?xml version="1.0"?><api><query><pages><page pageid="4095286" ns="0" title="System partition and boot partition"><revisions><rev xml:space="preserve">{{multiple issues|refimprove=June 2011|primarysources=June 2011}}
+In [[Microsoft Windows]], the '''system partition''' and '''boot partition''' refer to:
+
+*The '''system partition''' is a [[Partition (computing)|disk partition]] that contains the [[boot sector]] and files such as &lt;tt&gt;[[NTLDR]]&lt;/tt&gt; that are needed for [[booting]] [[Windows XP]] and earlier.  ([[Windows Vista]] and [[Windows Server 2008]] use a newer boot loader called &lt;tt&gt;bootmgr&lt;/tt&gt; that replaces &lt;tt&gt;[[NTLDR]]&lt;/tt&gt; and is configured using &lt;tt&gt;BCDEdit.exe&lt;/tt&gt;).
+
+*The '''boot partition''' is the disk partition that contains the Windows [[operating system]] files and its support files, but not any files responsible for [[booting]].
+
+The system partition can be different from the boot partition, although they are often on the same partition (drive C:). Windows setup places the initial system partition based on [[motherboard]] [[BIOS]] settings.  [[Bitlocker]] requires a separate, unencrypted system partition for [[booting]].
+
+The [[master boot record]] is located at physical sector 0, just before the [[partition table]], and is therefore not contained inside any of the logical partitions or volumes.
+
+Despite of [[Microsoft]]'s idiosyncratic terminology, it is possible to mark the ''boot partition'' as active and boot into it, if the partition is a primary partition, and the required files such as NTLDR and &lt;tt&gt;boot.ini&lt;/tt&gt; for [[Windows XP]] or older [[Windows NT]] platforms exist on it. In a dual-boot scenario the ''system partition'' could be formatted with a [[File Allocation Table|FAT16]] file system and contain an [[MS DOS]] operating system and a [[Recovery Console]]. The old DOS boot sector of this partition is saved in a file &lt;tt&gt;bootsect.dos&lt;/tt&gt; (or similar), and used as entry in the NTLDR &lt;tt&gt;boot.ini&lt;/tt&gt; file. The new boot sector of this partition looks for and starts NTLDR, while the image of the old DOS boot sector looks for and starts DOS. Note that DOS boot sectors look for different files depending on the [[original equipment manufacturer]] such as [[IBM]] for [[PC DOS]] or [[Microsoft]] for [[MS DOS]].
+
+Generally, newer boot schemes support older schemes; this is the reason why [[Microsoft]] operating systems are typically installed in chronological order (oldest OS first, newest OS last), and why attempts to ''&quot;repair&quot;'' critical sectors with tools designed for older operating systems can cause havoc for newer operating systems. 
+
+The new [[Windows Vista startup process]] supports the same and additional features; its boot sector looks for the new boot manager instead of NTLDR. Old &lt;tt&gt;fixmbr&lt;/tt&gt; tools installing an NTLDR boot sector would destroy the newer boot sector, and therefore newer Windows versions typically use a separate ''system partition''. The recommended layout consists of a primary hidden recovery partition followed by the primary [[NTFS]] ''system partition'' (marked as ''active'' for booting), and a separate  ''boot partition'' (in Microsoft terminology), the latter could be either a primary partition or a logical disk in an extended partition mounted as drive &lt;code&gt;C:&lt;/code&gt;. More convoluted layouts with an OEM partition, or simpler layouts with ''system'' = ''boot'' partition, are possible.
+
+== Other operating systems ==
+It is interesting to note that in operating systems other than Windows and DOS the definitions of boot partition and system partition are just the opposite: the boot partition contains the boot files and the system partitions hold the operating system files.
+
+For example, in the standard [[Linux]] directory layout ([[Filesystem Hierarchy Standard]]), boot files (such as the [[kernel]], [[initrd]], and boot loader [[GRUB]]) are mounted at &lt;code&gt;/boot/&lt;/code&gt; while operating system files are mounted at &lt;code&gt;/&lt;/code&gt; (the [[root directory]]); these may or may not be separate partitions, but they are mounted in the same hierarchy.
+
+== See also ==
+* [[Windows NT Startup Process]]
+* [[Windows Vista Startup Process]]
+* [[EFI System Partition]]
+* [[Windows To Go]]
+
+==External links==
+*[http://support.microsoft.com/kb/100525 Definition of System and Boot Partition (NT)]
+*[http://support.microsoft.com/kb/314470 Definition of System Partition and Boot Partition (XP)]
+
+[[Category:Windows administration]]
+[[Category:Booting]]
+
+
+{{Windows-stub}}</rev></revisions></page></pages></query></api>

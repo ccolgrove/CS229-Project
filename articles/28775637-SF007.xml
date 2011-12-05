@@ -1,0 +1,119 @@
+<?xml version="1.0"?><api><query><pages><page pageid="28775637" ns="0" title="List of software package management systems"><revisions><rev xml:space="preserve">{{merge|Linux package formats|discuss=Talk:Linux package formats#Merger proposal|date=August 2011}}
+This is a list of software [[package management system]]s.
+
+==Binary installation / Precompiled packages==
+===Linux distributions===
+* [[dpkg]], used originally by [[Debian]] and now by other systems, uses the [[deb (file format)|.deb format]] and was the first to have a widely known dependency resolution tool ([[Advanced Packaging Tool|APT]]).
+* The [[RPM Package Manager]] was created by [[Red Hat]], and is now used by a number of other [[Linux distribution]]s. RPM is the [[Linux Standard Base]] packaging format and is the base of a large number of additional tools, including [[apt4rpm]]; Red Hat's [[up2date]]; [[Mandriva]]'s [[urpmi]]; [[openSUSE]]'s [[ZYpp]]; [[PLD Linux Distribution|PLD Linux]]'s [[poldek (software)|poldek]]; and [[Yellow dog Updater Modified|YUM]], which is used by [[Fedora (operating system)|Fedora]], [[Rhel|Red Hat Enterprise Linux 5]],  and [[Yellow Dog Linux]].
+* A simple [[tgz]] package system combines the standard [[Tar file format|tar]] and [[gzip]]. Used by [[Slackware]] Linux and its closer derivates, there are a few higher-level tools that use the same tgz packaging format, including: [[slapt-get]], [[slackpkg]], [[zendo]], [[netpkg]], and [[swaret]].
+* [[Pacman (Arch Linux)|Pacman]] for [[Arch Linux]], [[Frugalware]] and [[DeLi Linux]] uses pre-compiled binaries distributed in a compressed [[Tar file format|Tar]] archive.
+* [[Smart Package Manager]], used by [[CCux Linux]]
+* [[ipkg]], a [[dpkg]]-inspired, very lightweight system targeted at storage-constrained Linux systems such as embedded devices and handheld computers. It is used on [[HP WebOS]].
+* [[opkg]], fork of [[ipkg]]
+* [[pkgutils]], used by [[CRUX]] Linux
+* [[PETget]], used by [[Puppy Linux]]
+* [[Upkg]], used by [[paldo GNU/Linux]] and ExTiX Linux
+* [[PISI]], used by [[Pardus (operating system)|Pardus]]
+* [[Nix package manager]], &quot;a purely functional package manager&quot; which allows multiple versions or variants of a package to be installed; it is similar to Zero Install.
+* [[appbrowser]], a special purpose tool in [[Tiny Core Linux]] for browsing and selecting applications from online repositories.
+* [[Conary (package manager)|Conary]], used by [[Foresight Linux]]
+* Equo, used by [[Sabayon Linux]]
+* Tazpkg- for [[Slitaz]]- uses lzma compressed archives.
+
+===Mac OS X===
+* [[fink]], for [[Mac OS X]], derives partially from dpkg/apt and partially from ports.
+* [[MacPorts]], formerly called DarwinPorts, originated from the [[OpenDarwin]] project.
+* [[Homebrew (package management software)|Homebrew]], with close git integration.
+* [[rudix]], native, binary package-based way to extend the Unix portion of Mac OS X{{Citation needed|date=August 2011}}
+* [[Mac App Store]], official digital distribution platform for Mac OS X applications, part of Mac OS X 10.7 and available as an update for Mac OS X 10.6
+
+===iOS===
+* [[App Store (iOS)|App Store]], official digital distribution platform for iOS applications
+
+===Android===
+* [[Android Market]], online software store developed by Google for Android OS devices that license the proprietary Google Application set.
+* [[GetJar]], an independent mobile phone application store founded in Lithuania in 2004.
+* [[Amazon Appstore]], alternative application store for Android devices.
+* [[SlideME]], alternative application store for Android devices.
+
+===Microsoft Windows===
+* [[Cygwin]] â a free and open source [[software repository]] for the [[Microsoft Windows|Windows]] operating system which provides many GNU/Linux tools and an installation tool with package manager.
+* [http://appsnap.genotrance.com/ Appsnap] â a package manager for Windows written in Python released under the [[GPL]].
+* [http://www.nabber.org/projects/appupdater/ Appupdater] â a package manager for Windows written in Python released under the GPL.
+* Windows-get â a package manager for Windows written in Delphi and PHP released into the public domain.
+* [http://puchisoft.com/GetIt/ GetIt] â uses Appsnap, Appupdater, and Windows-get as sources and combines their repositories into one big catalog. Released under the GPL.
+* Npackd (previously Windows Package Manager)&lt;ref&gt;{{cite web | title=Npackd | url=http://code.google.com/p/windows-package-manager/|publisher=code.google.com/p/windows-package-manager | accessdate=2010-08-20}}&lt;/ref&gt; - a package manager for Windows written in C++ and released under the Apache License 2.0
+* [http://ninite.com/ Ninite] â an automated software installer.
+* [[Steam (software)]] - a commercial package manager used primarily for games
+
+===PC-BSD===
+*[[PC-BSD]] uses files with the [[.pbi]] filename extension which, when double-clicked, brings up an installation wizard program. An autobuild system tracks the [[FreeBSD ports]] collection and generates new PBI's daily
+
+===Solaris===
+* AT&amp;T's [[SysV (package format)|SysV]] format (sometimes called [[pkgadd]] format), used by [[Solaris (operating system)|Solaris]].
+* [[Image Packaging System]], also known as IPS or pkg(5), used by [[OpenSolaris]] and [[Solaris (operating system)|Solaris]].
+* [[OpenCSW]] â a community supported collection of  [[SysV (package format)|SysV]] format packages for SunOS 5.8-5.10 (Solaris 8-10).
+
+===Amiga===
+* AmiUpdate
+* MorphUp ([[MorphOS]] only)
+* Grunch
+
+===Cross platform===
+* [[dpkg]] (mentioned above) is also used as part of [[Debian GNU/kFreeBSD]], and on [[iOS jailbreaking|jailbroken iOS]] as part of [[Cydia]] and [[Icy (application)|Icy]].
+* [[Image Packaging System]], also known as IPS or pkg(5), is a cross platform network repository based system.  In addition to being used as the OS level package management system in [[OpenSolaris]] and [[Solaris (operating system)|Solaris]], the pkg(5) system is available for use by layered applications on [[Microsoft Windows]], [[Linux]], [[Mac OS X]], [[OpenSolaris]], [[Solaris (operating system)|Solaris]] and [[IBM AIX]].
+* [[OpenPKG]] is a cross platform package management system based on the [[RPM Package Manager]]. It works on several Unix-based systems, including [[Linux]], [[BSD]] and [[Solaris (operating system)|Solaris]].
+* [[NetBSD]]'s [[pkgsrc]] works on several [[Unix-like]] [[operating system]]s.
+* [[0install]] available for [[Unix-like]] and [[Microsoft Windows]] operating systems.
+* TWW Tools A cross-platform packaging tool  that sit on top of native P.M.S.
+
+==Sourcecode-based installation / Installing using compile scripts==
+* [[Portage (software)|Portage]] and [[Portage (software)#Emerge|emerge]] are used by [[Gentoo Linux]]. They were inspired by the BSD ports system and use scripts called [[ebuild]]s to install software.
+* A [[recipe]] file contains information on how to download, unpack, compile and install a package in [[GoboLinux]] distribution using its [[GoboLinux#.22Compile.22_program|Compile]] tool.
+* [[apt-build]] is used by distributions which use [[deb (file format)|deb packages]], allowing automatic compiling and installation of software in a deb source repository.
+* [[Sourcemage#Sorcery|Sorcery]] is [[Sourcemage|Sourcemage GNU/Linux]]'s [[Bash (Unix shell)|bash]] based package management program that automatically downloads software from their original site and compiles and installs it on the local machine.
+* [[Arch Build System|ABS]] is used by [[Arch Linux]] to automate binary packages building from source or even other binary archives, with automatic download and dependency checking.
+
+===Hybrid systems===
+* The [[FreeBSD Ports]] Collection, sometimes known simply as ''ports'', uses a system of [[Makefile]]s to install software from sources or binaries. [[MacPorts]] (for Mac OS X), [[NetBSD]]'s ''[[pkgsrc]]'' and [[OpenBSD]]'s [[ports collection]] are similar.
+
+===Meta package managers===
+The following unify package management for several or all Linux and sometimes Unix variants. These, too, are based on the concept of a recipe file.
+* [[Autopackage]] uses .package files.
+* epm, developed by Easy Software Products (creators of [[CUPS]]), is a &quot;meta packager&quot;, that allows creation of native packages for all Linux and Unix operating systems (.deb, .rpm, .tgz for Linux, pkg for Solaris and *BSD, .dmg for OS X,...) controlled from a single *.list file.
+* [[klik (packaging method)|klik]] aims to provide an easy way to get software packages for most major distributions without the dependency problems so common in many other package formats.
+* [http://project-builder.org Project-Builder.org] is a GPL v2 tool designed to help projects developers to easily produce packages for multiple [[operating system|OSs]] and architectures, on a regular basis and from a single source repository.
+* [[Zero Install]] installs each package into its own directory and uses [[environment variable]]s to let each program find its libraries. Package and dependency information is downloaded directly from the software authors' pages in an XML format, similar to an [[RSS Feed]].
+* [[Nix package manager]] manages packages in a [[purely functional]] way.
+* [[PackageKit]] is a set of utilities and libraries for creating applications that can manage packages across multiple package managers using back-ends to call the correct program.
+
+==Proprietary software systems==
+A wide variety of package management systems are in common use today by [[proprietary software]] operating systems, handling the installation of both proprietary and free packages.
+
+* [[installp]] is the [[AIX operating system|AIX]] command to install packages supplied in bff (backup file format) files. It records installed package information in [[Object Data Manager]] (ODM) databases.{{Citation needed|date=August 2011}}
+* [[Software Distributor]] is the [[HP-UX]] package manager.
+* [[Windows Installer]] is an engine for the installation, maintenance, and removal of software on modern Microsoft Windows systems.
+* In the Microsoft [[.NET Framework]] an [[.NET assembly|assembly]] is a partially [[compiler|compiled]] code library for use in deployment, versioning and security.
+
+==Application-level package managers==
+* [[CPAN]] - a programming library and package manager for [[Perl]]
+* [[PHP Extension and Application Repository|PEAR]] - a programming library for [[PHP]]
+* [[RubyGems]] - a programming library for [[Ruby (programming language)|Ruby]]
+* [[Apache Maven|Maven]] - a package manager and build tool for [[Java (programming language)|Java]]
+* [[Apache Ivy|Ivy]] - a package manager for [[Java (programming language)|Java]], integrated into [[Apache Ant|Ant]] build tool
+* [[EasyInstall]] - a programming library and package manager for [[Python (programming language)|Python]] using so called [[Python eggs]]
+* [[Cabal (software)|Cabal]] - a programming library and package manager for [[Haskell (programming language)|Haskell]]
+* [[LuaRocks]] - a programming library and package manager for [[Lua (programming language)|Lua]]
+* [[VI Package Manager]] - a package manager for the [[LabVIEW]] platform and development environment that gives access to the [[OpenG]] programming library
+* [[Perl Archive Toolkit|PAR::Repository]] and [[Perl package manager]] - binary package managers for [[Perl]]
+* [[NuGet]] - a package manager for the [[.NET Framework]]
+* [[npm]] - a programming library and package manager for [[Nodejs|Node.JS]]
+
+==References==
+{{reflist}}
+
+==External links==
+
+[[Category:Computing lists]]
+[[Category:Package management systems]]
+[[Category:Software distribution]]</rev></revisions></page></pages></query></api>

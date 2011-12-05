@@ -1,0 +1,811 @@
+<?xml version="1.0"?><api><query><pages><page pageid="6068" ns="0" title="Common Lisp"><revisions><rev xml:space="preserve">{{More footnotes|date=May 2011}}
+{{Infobox programming language
+| name                   = Common Lisp
+| family                 = [[Lisp (programming language)|Lisp]]
+| paradigm               = [[Multi-paradigm programming language|Multi-paradigm]]: [[procedural programming|procedural]], [[functional programming|functional]], [[object-oriented programming|object-oriented]], [[metaprogramming|meta]], [[reflective programming|reflective]], [[generic programming|generic]]
+| generation             = [[3GL]]
+| released               = 1984, 1994 for ANSI Common Lisp
+| designer               =
+| developer              = ANSI [[X3J13]] committee
+| standard reference     = [[Common Lisp HyperSpec]]
+| latest release version =
+| latest release date    =
+| typing                 = [[Type system#Dynamic typing|dynamic]], [[Strongly-typed programming language|strong]]
+| scope                  = lexical, optionally dynamic
+| implementations        = [[Allegro Common Lisp|Allegro CL]], [[Armed Bear Common Lisp|ABCL]], [[CLISP]], [[Clozure CL]], [[CMUCL]], [[Corman Common Lisp]], [[Embeddable Common Lisp|ECL]], [[GNU Common Lisp|GCL]], [[LispWorks]], [[Movitz]], [[Scieneer Common Lisp|Scieneer CL]], [[SBCL]], [[Genera (operating system)|Symbolics Common Lisp]]
+| dialects               = CLtL1, CLtL2, ANSI Common Lisp
+| influenced_by          = [[Lisp (programming language)|Lisp]], [[Lisp Machine Lisp]], [[MacLisp]], [[Scheme (programming language)|Scheme]], [[InterLisp]]
+| influenced             = [[Clojure]], [[Dylan (programming language)|Dylan]], [[Emacs Lisp]], [[EuLisp]], [[JAVA]], [[ISLISP]], [[Cadence SKILL|SKILL]], Stella, [[SubL]]
+| operating_system       = [[Cross-platform]]
+| license                =
+| website                = {{URL|http://common-lisp.net/}}
+}}
+
+'''Common Lisp''', commonly abbreviated '''CL''', is a dialect of the [[Lisp (programming language)|Lisp]] [[programming language]], published in [[American National Standards Institute|ANSI]] standard document ''ANSI INCITS 226-1994 (R2004)'', (formerly ''X3.226-1994 (R1999))''.&lt;ref&gt;[http://webstore.ansi.org/RecordDetail.aspx?sku=ANSI+INCITS+226-1994+(R2004) Document page] at ANSI website&lt;/ref&gt; From the ANSI Common Lisp standard the [[Common Lisp HyperSpec]] has been derived&lt;ref&gt;[http://www.lispworks.com/documentation/HyperSpec/Front/Help.htm#Authorship Authorship of the Common Lisp HyperSpec]&lt;/ref&gt; for use with web browsers. Common Lisp was developed to standardize the divergent variants of Lisp (though mainly the MacLisp variants) which predated it, thus it is not an implementation but rather a language [[specification]]. Several [[#Implementations|implementations]] of the Common Lisp standard are available, including [[free and open source software]] and proprietary products.
+
+Common Lisp is a general-purpose, [[multi-paradigm programming language]]. It supports a combination of [[procedural programming|procedural]], [[functional programming|functional]], and [[object-oriented]] programming paradigms. As a [[dynamic programming language]], it facilitates evolutionary and [[Iterative and incremental development|incremental software development]], with iterative [[Compiler|compilation]] into efficient run-time programs.
+
+It also supports optional type annotation and casting, which can be added as necessary at the later profiling and optimization stages, to permit the compiler to generate more efficient code. For instance, &lt;code&gt;fixnum&lt;/code&gt; can hold an [[Boxing (computer science)|unboxed]] integer in a range supported by the hardware and implementation, permitting more efficient arithmetic than on big integers or arbitrary precision types.  Similarly, the compiler can be told on a per-module or per-function basis which type safety level is wanted, using ''optimize'' declarations.
+
+Common Lisp includes [[Common Lisp Object System|CLOS]], an [[object system]] that supports [[multimethods]] and method combinations. It is extensible through standard features such as Lisp [[Macro (computer science)|macros]] (compile-time code rearrangement accomplished by the program itself) and reader macros (extension of syntax to give special meaning to characters reserved for users for this purpose).
+
+Though Common Lisp is not as popular as some non-Lisp languages, many of its features have made their way into other, more widely used programming languages and systems (see [[Greenspun's Tenth Rule]]).
+
+==Syntax==
+
+Common Lisp is a dialect of Lisp; it uses [[S-expression]]s to denote both code and data structure. Function and macro calls are written as lists, with the name of the function first, as in these examples:
+
+&lt;source lang=&quot;lisp&quot;&gt;
+ (+ 2 2)           ; adds 2 and 2, yielding 4.
+&lt;/source&gt;
+&lt;source lang=&quot;lisp&quot;&gt;
+ (defvar *x*)      ; Ensures that a variable *x* exists,
+                   ; without giving it a value. The asterisks are part of
+                   ; the name. The symbol *x* is also hereby endowed with
+                   ; the property that subsequent bindings of it are dynamic,
+                   ; rather than lexical.
+ (setf *x* 42.1)   ; sets the variable *x* to the floating-point value 42.1
+&lt;/source&gt;
+&lt;source lang=&quot;lisp&quot;&gt;
+ ;; Define a function that squares a number:
+ (defun square (x)
+   (* x x))
+&lt;/source&gt;
+&lt;source lang=&quot;lisp&quot;&gt;
+ ;; Execute the function:
+ (square 3)        ; Returns 9
+&lt;/source&gt;
+&lt;!--                  I truncated this a bit; in smaller browsers, it runs off the side--&gt;
+&lt;source lang=&quot;lisp&quot;&gt;
+ ;; the 'let' construct creates a scope for local variables. Here
+ ;; the variable 'a' is bound to 6 and the variable 'b' is bound
+ ;; to 4. Inside the 'let' is a 'body', where the last computed value is returned.
+ ;; Here the result of adding a and b is returned from the 'let' expression.
+ ;; The variables a and b have lexical scope, unless the symbols have been
+ ;; marked as special variables (for instance by a prior DEFVAR).
+ (let ((a 6)
+       (b 4))
+   (+ a b))        ; returns 10
+&lt;/source&gt;
+
+==Data types==
+Common Lisp has many data types&amp;mdash;more than many other languages.
+
+===Scalar types===
+''Number'' types include [[integer]]s, [[ratio]]s, [[Floating point|floating-point number]]s, and [[complex number]]s.&lt;ref name=&quot;reddy&quot;&gt;{{cite web
+ | url = http://abhishek.geek.nz/docs/features-of-common-lisp
+ | title = Features of Common Lisp
+ | first = Abhishek | last = Reddy
+ | date = 2008-08-22
+}}&lt;/ref&gt; Common Lisp uses [[Arbitrary-precision arithmetic|bignum]]s to represent numerical values of arbitrary size and precision. The ratio type represents fractions exactly, a facility not available in many languages. Common Lisp automatically coerces numeric values among these types as appropriate.
+
+The Common Lisp ''[[character (computing)|character]]'' type is not limited to [[ASCII]] characters. Most modern implementations allow [[Unicode]] characters.&lt;ref&gt;{{cite web
+ | url = http://www.cliki.net/Unicode%20Support
+ | title = Unicode support | work = The Common Lisp Wiki | accessdate = 2008-08-21
+}}&lt;/ref&gt;
+
+The ''[[Symbol (programming)|symbol]]'' type is common to Lisp languages, but largely unknown outside them. A symbol is a unique, named data object with several parts: name, value, function, property list and package. Of these, ''value cell'' and ''function cell'' are the most important. Symbols in Lisp are often used similarly to identifiers in other languages: to hold value of a variable; however there are many other uses. Normally, when a symbol is evaluated, its value is returned. Some symbols evaluate to themselves, for example all symbols in the keyword package are self-evaluating. Boolean values in Common Lisp are represented by the self-evaluating symbols T and NIL. Common Lisp has namespaces for symbols, called 'packages'.
+
+A number of functions are available for [[rounding]] scalar numeric values in various ways. The function &lt;code&gt;round&lt;/code&gt; rounds the argument to the nearest integer, with halfway cases rounded to even  The functions &lt;code&gt;truncate&lt;/code&gt;, &lt;code&gt;floor&lt;/code&gt;, and &lt;code&gt;ceiling&lt;/code&gt; round towards zero, down, or up respectively.  All these functions return the discarded fractional part as a secondary value. For example, &lt;code&gt;(floor -2.5)&lt;/code&gt; yields -3, 0.5; &lt;code&gt;(ceiling -2.5)&lt;/code&gt;  yields -2, -0.5; &lt;code&gt;(round 2.5)&lt;/code&gt; yields 2, 0.5; and &lt;code&gt;(round 3.5)&lt;/code&gt; yields 4, -0.5.
+
+===Data structures===
+''Sequence'' types in Common Lisp include lists, vectors, bit-vectors, and strings. There are many operations which can work on any sequence type.
+
+As in almost all other Lisp dialects, ''lists'' in Common Lisp are composed of ''conses'', sometimes called ''cons cells'' or ''pairs''. A cons is a data structure with two slots, called its ''car'' and ''cdr''. A list is a linked chain of conses. Each cons's car refers to a member of the list (possibly another list). Each cons's cdr refers to the next consâexcept for the last cons, whose cdr refers to the &lt;tt&gt;nil&lt;/tt&gt; value. Conses can also easily be used to implement trees and other complex data structures; though it is usually advised to use structure
+or class instances instead. It is also possible to create circular data structures with conses.
+
+Common Lisp supports multidimensional ''arrays'', and can dynamically resize arrays if required. Multidimensional arrays can be used for matrix mathematics. A ''vector'' is a one-dimensional array. Arrays can carry any type as members (even mixed types in the same array) or can be specialized to contain a specific type of members, as in a vector of integers. Many implementations can optimize array functions when the array used is type-specialized. Two type-specialized array types are standard: a ''string'' is a vector of characters, while a ''bit-vector'' is a vector of [[bit]]s.
+
+''[[Hash table]]s'' store associations between data objects. Any object may be used as key or value. Hash tables, like arrays, are automatically resized as needed.
+
+''Packages'' are collections of symbols, used chiefly to separate the parts of a program into [[Namespace (computer science)|namespaces]]. A package may ''export'' some symbols, marking them as part of a public interface. Packages can use other packages.
+
+''Structures'', similar in use to [[C (programming language)|C]] structs and [[Pascal (programming language)|Pascal]] records, represent arbitrary complex data structures with any number and type of fields (called ''slots''). Structures allow single-inheritance.
+
+''Classes'' are similar to structures, but offer more dynamic features and multiple-inheritance. (See [[Common Lisp Object System|CLOS]]). Classes have been added late to Common Lisp and there is some conceptual overlap with structures. Objects created of classes are called ''Instances''. A special case are Generic Functions. Generic Functions are both functions and instances.
+
+===Functions===
+Common Lisp supports [[first-class function]]s.  For instance, it is possible to write functions that take other functions as arguments or return functions as well.  This makes it possible to describe very general operations.
+
+The Common Lisp library relies heavily on such higher-order functions. For example, the &lt;code&gt;sort&lt;/code&gt; function takes a [[relational operator]] as an argument and key function as an optional keyword argument. This can be used not only to sort any type of data, but also to sort data structures according to a key.
+
+&lt;source lang=&quot;lisp&quot;&gt;
+ ;; Sorts the list using the &gt; and &lt; function as the relational operator.
+ (sort (list 5 2 6 3 1 4) #'&gt;)   ; Returns (6 5 4 3 2 1)
+ (sort (list 5 2 6 3 1 4) #'&lt;)   ; Returns (1 2 3 4 5 6)
+&lt;/source&gt;
+&lt;source lang=&quot;lisp&quot;&gt;
+ ;; Sorts the list according to the first element of each sub-list.
+ (sort (list '(9 A) '(3 B) '(4 C)) #'&lt; :key #'first)   ; Returns ((3 B) (4 C) (9 A))
+&lt;/source&gt;
+
+The evaluation model for functions is very simple.  When the evaluator encounters a form &lt;code&gt;(F A1 A2...)&lt;/code&gt; then it is to assume that the symbol named F is one of the following:
+
+# A special operator (easily checked against a fixed list)
+# A macro operator (must have been defined previously)
+# The name of a function (default), which may either be a symbol, or a sub-form beginning with the symbol &lt;code&gt;lambda&lt;/code&gt;.
+
+If F is the name of a function, then the arguments A1, A2, ..., An are evaluated in left-to-right order, and the function is found and invoked with those values supplied as parameters.
+
+====Defining functions====
+The [[Defun|macro &lt;code&gt;defun&lt;/code&gt;]] defines functions where a function definition gives the name of the function, the names of any arguments, and a function body:
+
+&lt;source lang=&quot;lisp&quot;&gt;
+ (defun square (x)
+   (* x x))
+&lt;/source&gt;
+
+Function definitions may include ''declarations'', which provide hints to the compiler about optimization settings or the data types of arguments. They may also include ''documentation strings'' (docstrings), which the Lisp system may use to provide interactive documentation:
+
+&lt;source lang=&quot;lisp&quot;&gt;
+ (defun square (x)
+   &quot;Calculates the square of the single-float x.&quot;
+   (declare (single-float x) (optimize (speed 3) (debug 0) (safety 1)))
+   (the single-float (* x x)))
+&lt;/source&gt;
+
+Anonymous functions ([[function literal]]s) are defined using &lt;code&gt;lambda&lt;/code&gt; expressions, e.g. &lt;code&gt;(lambda&amp;nbsp;(x)&amp;nbsp;(*&amp;nbsp;x&amp;nbsp;x))&lt;/code&gt; for a function that squares its argument. Lisp programming style frequently uses higher-order functions for which it is useful to provide anonymous functions as arguments.
+
+Local functions can be defined with &lt;code&gt;flet&lt;/code&gt; and &lt;code&gt;labels&lt;/code&gt;.
+
+&lt;source lang=&quot;lisp&quot;&gt;
+ (flet ((square (x)
+          (* x x)))
+   (square 3))
+&lt;/source&gt;
+
+There are a number of other operators related to the definition and manipulation of functions. For instance, a function may be recompiled with the &lt;code&gt;compile&lt;/code&gt; operator. (Some Lisp systems run functions in an interpreter by default unless instructed to compile; others compile every entered function on the fly).
+
+====Defining generic functions and methods====
+The macro &lt;code&gt;defgeneric&lt;/code&gt; defines generic functions.
+The macro &lt;code&gt;defmethod&lt;/code&gt; defines methods. Generic functions are a collection of methods.
+
+Methods can specialize their parameters over classes or objects.
+
+When a generic function is called, multiple-dispatch will determine the correct method to use.
+
+&lt;source lang=&quot;lisp&quot;&gt;
+ (defgeneric add (a b))
+&lt;/source&gt;
+
+&lt;source lang=&quot;lisp&quot;&gt;
+ (defmethod add ((a number) (b number))
+    (+ a b))
+&lt;/source&gt;
+
+&lt;source lang=&quot;lisp&quot;&gt;
+ (defmethod add ((a vector) (b number))
+    (map 'vector (lambda (n) (+ n b)) a))
+&lt;/source&gt;
+
+&lt;source lang=&quot;lisp&quot;&gt;
+ (defmethod add ((a vector) (b vector))
+    (map 'vector #'+ a b))
+&lt;/source&gt;
+
+&lt;source lang=&quot;lisp&quot;&gt;
+ (add 2 3)                   ; returns 5
+ (add #(1 2 3 4) 7)          ; returns #(8 9 10 11)
+ (add #(1 2 3 4) #(4 3 2 1)) ; returns #(5 5 5 5)
+&lt;/source&gt;
+
+Generic Functions are also a first class data type. There are many more features to Generic Functions and Methods than described above.
+
+====The function namespace====
+&lt;!-- This section name is linked from several places; if you change it, update the links. --&gt;
+
+The namespace for function names is separate from the namespace for data variables. This is a key difference between Common Lisp and [[Scheme (programming language)|Scheme]]. For Common Lisp, operators that define names in the function namespace include &lt;code&gt;defun&lt;/code&gt;, &lt;code&gt;flet&lt;/code&gt;, &lt;code&gt;labels&lt;/code&gt;, &lt;code&gt;defmethod&lt;/code&gt; and &lt;code&gt;defgeneric&lt;/code&gt;.
+
+To pass a function by name as an argument to another function, one must use the &lt;code&gt;function&lt;/code&gt; special operator, commonly abbreviated as &lt;code&gt;#'&lt;/code&gt;. The first &lt;code&gt;sort&lt;/code&gt; example above refers to the function named by the symbol &lt;code&gt;&amp;gt;&lt;/code&gt; in the function namespace, with the code &lt;code&gt;#'&amp;gt;&lt;/code&gt;. Conversely, to call a function passed in such a way, one would use the &lt;code&gt;funcall&lt;/code&gt; operator on the argument.
+
+[[Scheme (programming language)|Scheme's]] evaluation model is simpler: there is only one namespace, and all positions in the form are evaluated (in any order) -- not just the arguments. Code written in one dialect is therefore sometimes confusing to programmers more experienced in the other. For instance, many Common Lisp programmers like to use descriptive variable names such as ''list'' or ''string'' which could cause problems in Scheme, as they would locally shadow function names.
+
+Whether a separate namespace for functions is an advantage is a source of contention in the Lisp community. It is usually referred to as the ''Lisp-1 vs. Lisp-2 debate''. Lisp-1 refers to Scheme's model and Lisp-2 refers to Common Lisp's model. These names were coined in a 1988 paper by [[Richard P. Gabriel]] and [[Kent Pitman]], which extensively compares the two approaches.&lt;ref&gt;{{cite journal |title=Technical Issues of Separation in Function Cells and Value Cells |url=http://www.nhplace.com/kent/Papers/Technical-Issues.html |authors=Richard P. Gabriel, Kent M. Pitman |journal=Lisp and Symbolic Computation |date = June 1988|volume=1 |issue=1 |pages=81â101}}&lt;/ref&gt;
+
+===Other types===
+Other data types in Common Lisp include:
+
+*''Pathnames'' represent files and directories in the [[filesystem]]. The Common Lisp pathname facility is more general than most operating systems' file naming conventions, making Lisp programs' access to files broadly portable across diverse systems.
+*Input and output ''streams'' represent sources and sinks of binary or textual data, such as the terminal or open files.
+*Common Lisp has a built-in [[pseudo-random number generator]] (PRNG). ''Random state'' objects represent reusable sources of pseudo-random numbers, allowing the user to seed the PRNG or cause it to replay a sequence.
+*''Conditions'' are a type used to represent errors, exceptions, and other &quot;interesting&quot; events to which a program may respond.
+*''Classes'' are [[first-class object]]s, and are themselves instances of classes called [[metaclasses|class metaobject classes]].
+*''Readtables'' are a type of object which control how Common Lisp's reader parses the text of source code.  By controlling which readtable is in use when code is read in, the programmer can change or extend the language's syntax.
+
+==Scope==
+
+Like programs in many other programming languages, Common Lisp programs make use of names to refer to variables, functions, and many other kinds of entities. Named references are subject to scope.
+
+The association between a name and the entity which the name refers to is called a binding.
+
+Scope refers to the set of circumstances in which a name is determined to have a particular binding.
+
+===Determiners of scope===
+
+The circumstances which determine scope in Common Lisp include:
+
+* the location of a reference within an expression. If it's the leftmost position of a compound, it refers to a special operator or a macro or function binding, otherwise to a variable binding or something else.
+* the kind of expression in which the reference takes place. For instance, (GO X) means transfer control to label X, whereas (PRINT X) refers to the variable X. Both scopes of X can be active in the same region of program text, since tagbody labels are in a separate namespace from variable names. A special form or macro form has complete control over the meanings of all symbols in its syntax. For instance in (defclass x (a b) ()), a class definition, the (a b) is a list of base classes, so these names are looked up in the space of class names, and x isn't a reference to an existing binding, but the name of a new class being derived from a and b. These facts emerge purely from the semantics of defclass. The only generic fact about this expression is that defclass refers to a macro binding; everything else is up to defclass.
+* the location of the reference within the program text. For instance, if a reference to variable X is enclosed in a binding construct such as a LET which defines a binding for X, then the reference is in the scope created by that binding.
+* for a variable reference, whether or not a variable symbol has been, locally or globally, declared special. This determines whether the reference is resolved within a lexical environment, or within a dynamic environment.
+* the specific instance of the environment in which the reference is resolved. An environment is a run-time dictionary which maps symbols to bindings. Each kind of reference uses its own kind of environment. References to lexical variables are resolved in a lexical environment, et cetera. More than one environment can be associated with the same reference. For instance, thanks to recursion or the use of multiple threads, multiple activations of the same function can exist at the same time. These activations share the same program text, but each has its own lexical environment instance.
+
+To understand what a symbol refers to, the Common Lisp programmer must know what kind of reference is being expressed, what kind of scope it uses if it is a variable reference (dynamic versus lexical scope), and also the run-time situation: in what environment is the reference resolved, where was the binding introduced into the environment, et cetera.
+
+===Kinds of environment===
+====Global====
+
+Some environments in Lisp are globally pervasive. For instance, if a new type is defined, it is known everywhere thereafter. References to that type look it up in this global environment.
+
+====Dynamic====
+
+One type of environment in Common Lisp is the dynamic environment. Bindings established in this environment have dynamic extent, which means that a binding is established at the start of the execution of some construct, such as a &lt;code&gt;LET&lt;/code&gt; block, and disappears when that construct finishes executing: its lifetime is tied to the dynamic activation and deactivation of a block. However, a dynamic  binding is not just visible within that block; it is also visible to all functions invoked from that block.  This type of visibility is known as indefinite scope. Bindings which exhibit dynamic extent (lifetime tied to the activation and deactivation of a block) and indefinite scope  (visible to all functions which are called from that block) are said to have dynamic scope.
+
+Common Lisp has support for dynamically scoped variables, which are also called special variables.  Certain other kinds of bindings are necessarily dynamically scoped also, such as restarts and catch tags.  Function bindings cannot be dynamically scoped using &lt;code&gt;FLET&lt;/code&gt; (which only provides lexically scoped function bindings), but function objects (a first-level object in Common Lisp) can be assigned to dynamically scoped variables, bound using &lt;code&gt;LET&lt;/code&gt; in dynamic scope, then called using &lt;code&gt;FUNCALL&lt;/code&gt; or &lt;code&gt;APPLY&lt;/code&gt;.
+
+Dynamic scope is extremely useful because it adds referential clarity and discipline to [[global variable]]s. Global variables are frowned upon in computer science as potential sources of error, because they can give rise to ad-hoc, covert channels of communication among modules that lead to unwanted, surprising interactions.
+
+In Common Lisp, a special variable which has only a top-level binding behaves just like a global variable in other programming languages. A new value can be stored into it, and that value simply replaces what is in the top-level binding. Careless replacement of the value of a global variable is at the heart of bugs caused by use of global variables. However, another way to work with a special variable is to give it a new, local binding within an expression. This is sometimes referred to as &quot;rebinding&quot; the variable. Binding a dynamically scoped variable temporarily creates a new memory location for that variable, and associates the name with that location. While that binding is in effect, all references to that variable refer to the new binding; the previous binding is hidden. When execution of the binding expression terminates, the temporary memory location is gone, and the old binding is revealed, with the original value intact. Of course, multiple dynamic bindings for the same variable can be nested.
+
+In Common Lisp implementations which support multithreading, dynamic scopes are specific to each thread of execution. Thus special variables serve as an abstraction for thread local storage. If one thread rebinds a special variable, this rebinding has no effect on that variable in other threads. The value stored in a binding can only be retrieved by the thread which created that binding. If each thread binds some special variable &lt;code&gt;*X*&lt;/code&gt;, then &lt;code&gt;*X*&lt;/code&gt; behaves like thread-local storage. Among threads which do not rebind &lt;code&gt;*X*&lt;/code&gt;, it behaves like an ordinary global: all of these threads refer to the same top-level binding of &lt;code&gt;*X*&lt;/code&gt;.
+
+Dynamic variables can be used to extend the execution context with additional context information which is implicitly passed from function to function without having to appear as an extra function parameter. This is especially useful when the control transfer has to pass through layers of unrelated code, which simply cannot be extended with extra parameters to pass the additional data. A situation like this usually calls for a global variable. That global variable must be saved and restored, so that the scheme doesn't break under recursion: dynamic variable rebinding takes care of this. And that variable must be made thread-local (or else a big mutex must be used) so the scheme doesn't break under threads: dynamic scope implementations can take care of this also.
+
+In the Common Lisp library, there are many standard special variables. For instance, the all standard I/O streams are stored in the top-level bindings of well-known special variables. The standard output stream is stored in *standard-output*.
+
+Suppose a function foo writes to standard output:
+
+&lt;source lang=&quot;lisp&quot;&gt;
+  (defun foo ()
+    (format t &quot;Hello, world&quot;))
+&lt;/source&gt;
+
+To capture its output in a character string, *standard-output* can be bound to a string stream and called:
+
+&lt;source lang=&quot;lisp&quot;&gt;
+  (with-output-to-string (*standard-output*)
+    (foo))
+&lt;/source&gt;
+
+  -&gt; &quot;Hello, world&quot; ; gathered output returned as a string
+
+====Lexical====
+
+Common Lisp supports lexical environments. Formally, the bindings in a lexical environment have [[lexical scope]] and may have either indefinite extent or dynamic extent, depending on the type of namespace. [[Lexical scope]] means that visibility is physically restricted to the block in which the binding is established. References which are not textually (i.e. lexically) embedded in that block simply do not see that binding.
+
+The tags in a TAGBODY have lexical scope. The expression (GO X) is erroneous if it is not actually embedded in a TAGBODY which contains a label X. However, the label bindings disappear when the TAGBODY terminates its execution, because they have dynamic extent. If that block of code is re-entered by the invocation of a lexical closure, it is invalid for the body of that closure to try to transfer control to a tag via GO:
+
+&lt;source lang=&quot;lisp&quot;&gt;
+  (defvar *stashed*) ;; will hold a function
+
+  (tagbody
+    (setf *stashed* (lambda () (go some-label)))
+    (go end-label) ;; skip the (print &quot;Hello&quot;)
+   some-label
+    (print &quot;Hello&quot;)
+   end-label)
+  -&gt; NIL
+&lt;/source&gt;
+
+When the TAGBODY is executed, it first evaluates the setf form which stores a function in the special variable *stashed*. Then the (go end-label) transfers control to end-label, skipping the code (print &quot;Hello&quot;). Since end-label is at the end of the tagbody, the tagbody terminates, yielding NIL. Suppose that the previously remembered function is now called:
+
+&lt;source lang=&quot;lisp&quot;&gt;
+  (funcall *stashed*) ;; Error!
+&lt;/source&gt;
+
+This situation is erroneous. One implementation's response is an error condition containing the message, &quot;GO: tagbody for tag SOME-LABEL has already been left&quot;. The function tried to evaluate (go some-label), which is lexically embedded in the tagbody, and resolves to the label. However, the tagbody isn't executing (its extent has ended), and so the control transfer cannot take place.
+
+Local function bindings in Lisp have [[lexical scope]], and variable bindings also have lexical scope by default. By contrast with GO labels, both of these have indefinite extent. When a lexical function or variable binding is established, that binding continues to exist for as long as references to it are possible, even after the construct which established that binding has terminated. References to a lexical variables and functions after the termination of their establishing construct are possible thanks to [[lexical closure]]s.
+
+Lexical binding is the default binding mode for Common Lisp variables. For an individual symbol, it can be switched to dynamic scope, either by a local declaration, by a global declaration. The latter may occur implicitly through the use of a construct like DEFVAR or DEFPARAMETER. It is an important convention in Common Lisp programming that special (i.e. dynamically scoped) variables have names which begin and end with an asterisk [[Sigil (computer programming)|sigil]] &lt;tt&gt;*&lt;/tt&gt; in what is called the â[[earmuff]] conventionâ.&lt;ref&gt;[http://letoverlambda.com/index.cl/guest/chap2.html Chapter 2] of [[Let Over Lambda]]&lt;/ref&gt; If adhered to, this convention effectively creates a separate namespace for special variables, so that variables intended to be lexical are not accidentally made special.
+
+[[Lexical scope]] is useful for several reasons.
+
+Firstly, references to variables and functions can be compiled to efficient machine code, because the run-time environment structure is relatively simple. In many cases it can be optimized to stack storage, so opening and closing lexical scopes has minimal overhead. Even in cases where full closures must be generated, access to the closure's environment is still efficient; typically each variable becomes an offset into a vector of bindings, and so a variable reference becomes a simple load or store instruction with a base-plus-offset [[addressing mode]].
+
+Secondly, lexical scope (combined with indefinite extent) gives rise to the [[lexical closure]], which in turn creates a whole paradigm of programming centered around the use of functions being first-class objects, which is at the root of functional programming.
+
+Thirdly, perhaps most importantly, even if lexical closures are not exploited, the use of lexical scope isolates program modules from unwanted interactions. Due to their restricted visibility, lexical variables are private. If one module A binds a lexical variable X, and calls another module B, references to X in B will not accidentally resolve to the X bound in A. B simply has no access to X. For situations in which disciplined interactions through a variable are desirable, Common Lisp provides special variables. Special variables allow for a module A to set up a binding for a variable X which is visible to another module B, called from A. Being able to do this is an advantage, and being able to prevent it from happening is also an advantage; consequently, Common Lisp supports both lexical and [[dynamic scope]].
+
+==Macros==
+A ''[[Macro (computer science)|macro]]'' in Lisp superficially resembles a function in usage. However, rather than representing an expression which is evaluated, it represents a transformation of the program source code. The macro gets the source it surrounds as arguments, binds them to its parameters and computes a new source form. This new form can also use a macro. The macro expansion is repeated until the new source form does not use a macro. The final computed form is the source code executed at runtime.
+
+Typical uses of macros in Lisp:
+
+* new control structures (example: looping constructs, branching constructs)
+* scoping and binding constructs
+* simplified syntax for complex and repeated source code
+* top-level defining forms with compile-time side-effects
+* data-driven programming
+* embedded domain specific languages (examples: SQL, HTML, Prolog)
+
+Various standard Common Lisp features also need to be implemented as macros, such as:
+
+* the standard &lt;code&gt;SETF&lt;/code&gt; abstraction, to allow custom compile-time expansions of assignment/access operators
+* &lt;code&gt;WITH-ACCESSORS&lt;/code&gt;, &lt;code&gt;WITH-SLOTS&lt;/code&gt;, &lt;code&gt;WITH-OPEN-FILE&lt;/code&gt; and other similar &lt;code&gt;WITH&lt;/code&gt; macros
+* Depending on implementation, &lt;code&gt;IF&lt;/code&gt; or &lt;code&gt;COND&lt;/code&gt; is a macro built on the other, the special operator; &lt;code&gt;WHEN&lt;/code&gt; and &lt;code&gt;UNLESS&lt;/code&gt; consist of macros
+* The powerful &lt;code&gt;LOOP&lt;/code&gt; domain-specific language
+
+Macros are defined by the ''defmacro'' macro. The special operator ''macrolet'' allows the definition of local (lexically scoped) macros. It is also possible to define macros for symbols using ''define-symbol-macro'' and ''symbol-macrolet''.
+
+[[Paul Graham (computer programmer)|Paul Graham]]'s book [[On Lisp]] describes the use of macros in Common Lisp in detail.
+
+===Example using a macro to define a new control structure===
+Macros allow Lisp programmers to create new syntactic forms in the language. One typical use is to create new control structures. The example macro provides an &lt;code&gt;until&lt;/code&gt; looping construct. The syntax is:
+
+&lt;source lang=&quot;text&quot;&gt;
+(until test form*)
+&lt;/source&gt;
+
+The macro definition for ''until'':
+&lt;source lang=&quot;lisp&quot;&gt;
+(defmacro until (test &amp;body body)
+  (let ((start-tag (gensym &quot;START&quot;))
+        (end-tag   (gensym &quot;END&quot;)))
+    `(tagbody ,start-tag
+              (when ,test (go ,end-tag))
+              (progn ,@body)
+              (go ,start-tag)
+              ,end-tag)))
+&lt;/source&gt;
+
+''tagbody'' is a primitive Common Lisp special operator which provides the ability to name tags and use the ''go'' form to jump to those tags. The backquote ''`'' provides a notation that provides code templates, where the value of forms preceded with a comma are filled in. Forms preceded with comma and at-sign are ''spliced'' in. The tagbody form tests the end condition. If the condition is true, it jumps to the end tag. Otherwise the provided body code is executed and then it jumps to the start tag.
+
+An example form using above ''until'' macro:
+&lt;source lang=&quot;lisp&quot;&gt;
+(until (= (random 10) 0)
+  (write-line &quot;Hello&quot;))
+&lt;/source&gt;
+
+The code can be expanded using the function ''macroexpand''. The expansion for above example looks like this:
+&lt;source lang=&quot;lisp&quot;&gt;
+(TAGBODY
+ #:START1136
+ (WHEN (ZEROP (RANDOM 10))
+   (GO #:END1137))
+ (PROGN (WRITE-LINE &quot;hello&quot;))
+ (GO #:START1136)
+ #:END1137)
+&lt;/source&gt;
+
+During macro expansion the value of the variable ''test'' is ''(= (random 10) 0)'' and the value of the variable ''body'' is ''((write-line &quot;Hello&quot;))''. The body is a list of forms.
+
+Symbols are usually automatically upcased. The expansion uses the TAGBODY with two labels. The symbols for these labels are computed by GENSYM and are not interned in any package. Two ''go'' forms use these tags to jump to. Since ''tagbody'' is a primitive operator in Common Lisp (and not a macro), it will not be expanded into something else. The expanded form uses the ''when'' macro, which also will be expanded. Fully expanding a source form is called ''code walking''.
+
+In the fully expanded (''walked'') form, the ''when'' form is replaced by the primitive ''if'':
+&lt;source lang=&quot;lisp&quot;&gt;
+(TAGBODY
+ #:START1136
+ (IF (ZEROP (RANDOM 10))
+     (PROGN (GO #:END1137))
+   NIL)
+ (PROGN (WRITE-LINE &quot;hello&quot;))
+ (GO #:START1136))
+ #:END1137)
+&lt;/source&gt;
+
+All macros must be expanded before the source code containing them can be evaluated or compiled normally.  Macros can be considered functions that accept and return [[abstract syntax tree]]s (Lisp S-expressions).  These functions
+are invoked before the evaluator or compiler to produce the final source code.
+Macros are written in normal Common Lisp, and may use any Common Lisp (or third-party) operator available.
+
+===Variable capture and shadowing===
+Common Lisp macros are capable of what is commonly called ''variable capture'', where symbols in the macro-expansion body coincide with those in the calling context, allowing the programmer to create macros wherein various symbols have special meaning. The term ''variable capture'' is somewhat misleading, because all namespaces are vulnerable to unwanted capture, including the operator and function namespace, the tagbody label namespace, catch tag, condition handler and restart namespaces.
+
+''Variable capture'' can introduce software defects. This happens in one of the following two ways:
+
+* In the first way, a macro expansion can inadvertently make a symbolic reference which the macro writer assumed will resolve in a global namespace, but the code where the macro is expanded happens to provide a local, shadowing definition it which steals that reference. Let this be referred to as type 1 capture.
+
+* The second way, type 2 capture, is just the opposite: some of the arguments of the macro are pieces of code supplied by the macro caller, and those pieces of code are written such that they make references to surrounding bindings. However, the macro inserts these pieces of code into an expansion which defines its own bindings that accidentally captures some of these references.
+
+The Scheme dialect of Lisp provides a macro-writing system which provides the referential transparency that eliminates both types of capture problem. This type of macro system is sometimes called &quot;hygienic&quot;, in particular by its proponents (who regard macro systems which do not automatically solve this problem as unhygienic). {{Citation needed|date=May 2011}}
+
+In Common Lisp, macro hygiene is ensured one of two different ways.
+
+One approach is to use [[gensym]]s: guaranteed-unique symbols which can be used in a macro-expansion without threat of capture. The use of gensyms in a macro definition is a manual chore, but macros can be written which simplify the instantiation and use of gensyms.  Gensyms solve type 2 capture easily, but they are not applicable to type 1 capture in the same way, because the macro expansion cannot rename the interfering symbols in the surrounding code which capture its references. Gensyms could be used to provide stable aliases for the global symbols which the macro expansion needs. The macro expansion would use these secret aliases rather than the well-known names, so redefinition of the well-known names would have no ill effect on the macro.
+
+Another approach is to use packages. A macro defined in its own package can simply use internal symbols in that package in its expansion. The use of packages deals with type 1 and type 2 capture.
+
+However, packages don't solve the type 1 capture of references to standard Common Lisp functions and operators. The reason is that the use of packages to solve capture problems revolves around the use of private symbols (symbols in one package, which are not imported into, or otherwise made visible in other packages).  Whereas the Common Lisp library symbols are external, and frequently imported into or made visible in user-defined packages.
+
+The following is an example of unwanted capture in the operator namespace, occurring in the expansion of a macro:
+
+&lt;source lang=&quot;lisp&quot;&gt;
+ ;; expansion of UNTIL makes liberal use of DO
+ (defmacro until (expression &amp;body body)
+   `(do () (,expression) ,@body))
+
+ ;; macrolet establishes lexical operator binding for DO
+ (macrolet ((do (...) ... something else ...))
+   (until (= (random 10) 0) (write-line &quot;Hello&quot;)))
+&lt;/source&gt;
+
+The &lt;code&gt;UNTIL&lt;/code&gt; macro will expand into a form which calls &lt;code&gt;DO&lt;/code&gt; which is intended to refer to the standard Common Lisp macro &lt;code&gt;DO&lt;/code&gt;. However, in this context, &lt;code&gt;DO&lt;/code&gt; may have a completely different meaning, so &lt;code&gt;UNTIL&lt;/code&gt; may not work properly.
+
+Common Lisp solves the problem of the shadowing of standard operators and functions by forbidding their redefinition. Because it redefines the standard operator &lt;code&gt;DO&lt;/code&gt;, the preceding is actually a fragment of non-conforming Common Lisp, which allows implementations to diagnose and reject it.
+
+==Condition system==
+The ''condition system'' is responsible for [[exception handling]] in Common Lisp. It provides ''conditions'', ''handler''s and ''restart''s. ''Condition''s are objects describing an exceptional situation (for example an error). If a ''condition'' is signaled, the Common Lisp system searches for a ''handler'' for this condition type and calls the handler. The ''handler'' can now search for restarts and use one of these restarts to repair the current problem. As part of a user interface (for example of a debugger), these restarts can also be presented to the user, so that the user can select and invoke one of the available restarts. Since the condition handler is called in the context of the error (without unwinding the stack), full error recovery is possible in many cases, where other exception handling systems would have already terminated the current routine.  The debugger itself can also be customized or replaced using the &lt;code&gt;*DEBUGGER-HOOK*&lt;/code&gt; dynamic variable.
+
+In the following example (using [[Symbolics Genera]]) the user tries to open a file in a Lisp function ''test'' called from the Read-Eval-Print-LOOP ([[REPL]]), when the file does not exist. The Lisp system presents four restarts. The user selects the ''Retry OPEN using a different pathname'' restart and enters a different pathname (lispm-init.lisp instead of lispm-int.lisp). The user code does not contain any error handling code. The whole error handling and restart code is provided by the Lisp system, which can handle and repair the error without terminating the user code.
+
+&lt;source lang=&quot;text&quot;&gt;
+Command: (test &quot;&gt;zippy&gt;lispm-int.lisp&quot;)
+
+Error: The file was not found.
+       For lispm:&gt;zippy&gt;lispm-int.lisp.newest
+
+LMFS:OPEN-LOCAL-LMFS-1
+   Arg 0: #P&quot;lispm:&gt;zippy&gt;lispm-int.lisp.newest&quot;
+
+s-A, &lt;Resume&gt;: Retry OPEN of lispm:&gt;zippy&gt;lispm-int.lisp.newest
+s-B:           Retry OPEN using a different pathname
+s-C, &lt;Abort&gt;:  Return to Lisp Top Level in a TELNET server
+s-D:           Restart process TELNET terminal
+
+-&gt; Retry OPEN using a different pathname
+Use what pathname instead [default lispm:&gt;zippy&gt;lispm-int.lisp.newest]:
+   lispm:&gt;zippy&gt;lispm-init.lisp.newest
+
+...the program continues
+&lt;/source&gt;
+
+==Common Lisp Object System (CLOS)==
+
+{{Main|Common Lisp Object System}}
+
+Common Lisp includes a toolkit for [[object-oriented programming]], the Common Lisp Object System or [[Common Lisp Object System|CLOS]], which is one of the most powerful object systems available in any language. For example [[Peter Norvig]] explains how many [[Design pattern (computer science)|Design Patterns]] are simpler to implement in a dynamic language with the features of CLOS (Multiple Inheritance, Mixins, Multimethods, Metaclasses, Method combinations, etc.).&lt;ref&gt;[http://norvig.com/design-patterns/ppframe.htm Peter Norvig, Design Patterns in Dynamic Programming]&lt;/ref&gt;
+Several extensions to Common Lisp for object-oriented programming have been proposed to be included into the ANSI Common Lisp standard, but eventually CLOS was adopted as the standard object-system for Common Lisp. CLOS is a [[dynamic programming language|dynamic]] object system with [[multiple dispatch]] and [[multiple inheritance]], and differs radically from the OOP facilities found in static languages such as [[C++]] or [[Java (programming language)|Java]]. As a dynamic object system, CLOS allows changes at runtime to generic functions and classes. Methods can be added and removed, classes can be added and redefined, objects can be updated for class changes and the class of objects can be changed.
+
+CLOS has been integrated into ANSI Common Lisp. Generic Functions can be used like normal functions and are a first-class data type. Every CLOS class is integrated into the Common Lisp type system. Many Common Lisp types have a corresponding class. There is more potential use of CLOS for Common Lisp. The specification does not say whether conditions are implemented with CLOS. Pathnames and streams could be implemented with CLOS. These further usage possibilities of CLOS for ANSI Common Lisp are not part of the standard. Actual Common Lisp implementations are using CLOS for pathnames, streams, input/output, conditions, the implementation of CLOS itself and more.
+
+==Compiler and interpreter==
+Several implementations of earlier Lisp dialects provided both an interpreter and a compiler. Unfortunately often the semantics were different. These earlier Lisps implemented lexical scoping in the compiler and dynamic scoping in the interpreter. Common Lisp requires that both the interpreter and compiler use lexical scoping by default. The Common Lisp standard describes both the semantics of the interpreter and a compiler. The compiler can be called using the function ''compile'' for individual functions and using the function ''compile-file'' for files. Common Lisp allows type declarations and provides ways to influence the compiler code generation policy. For the latter various optimization qualities can be given values between 0 (not important) and 3 (most important): ''speed'', ''space'', ''safety'', ''debug'' and ''compilation-speed''.
+
+There is also a function to evaluate Lisp code: ''eval''. ''eval'' takes code as pre-parsed s-expressions and not, like in some other languages, as text strings. This way code can be constructed with the usual Lisp functions for constructing lists and symbols and then this code can be evaluate with ''eval''. Several Common Lisp implementations (like Clozure CL and SBCL) are implementing ''eval'' using their compiler. This way code is compiled, even though it is evaluated using the function ''eval''.
+
+The file compiler is invoked using the function ''compile-file''.  The generated file with compiled code is called a ''fasl'' (from ''fast load'') file. These ''fasl'' files and also source code files can be loaded with the function ''load'' into a running Common Lisp system. Depending on the implementation, the file compiler generates byte-code (for example for the [[Java Virtual Machine]]), [[C (programming language)|C language]] code (which then is compiled with a C compiler) or, directly, native code.
+
+Common Lisp implementations can be used interactively, even though the code gets fully compiled. The idea of an [[Interpreted language]] thus does not apply for interactive Common Lisp.
+
+The language makes distinction between read-time, compile-time, load-time and run-time, and allows user code to also make this distinction to perform the wanted type of processing at the wanted step.
+
+Some special operators are provided to especially suit interactive development; for instance, &lt;code&gt;DEFVAR&lt;/code&gt; will only assign a value to its provided variable if it wasn't already bound, while &lt;code&gt;DEFPARAMETER&lt;/code&gt; will always perform the assignment.  This distinction is useful when interactively evaluating, compiling and loading code in a live image.
+
+Some features are also provided to help writing compilers and interpreters.  Symbols consist of first-level objects and are directly manipulable by user code.  The &lt;code&gt;PROGV&lt;/code&gt; special operator allows to create lexical bindings programmatically, while packages are also manipulable.  The Lisp compiler itself is available at runtime to compile files or individual functions.  These make it easy to use Lisp as an intermediate compiler or interpreter for another language.
+
+==Code examples==
+===Birthday paradox===
+The following program calculates the smallest number of people in a room for whom the probability of completely unique birthdays is less than 50% (the so-called [[birthday paradox]], where for 1 person the probability is obviously 100%, for 2 it is 364/365, etc.). (Answer = 23.)
+
+&lt;source lang=&quot;lisp&quot;&gt;
+(defconstant +year-size+ 365)
+
+(defun birthday-paradox (probability number-of-people)
+  (let ((new-probability (* (/ (- +year-size+ number-of-people)
+                               +year-size+)
+                            probability)))
+    (if (&lt; new-probability 0.5)
+        (1+ number-of-people)
+        (birthday-paradox new-probability (1+ number-of-people)))))
+&lt;/source&gt;
+
+Calling the example function using the [[REPL]] (Read Eval Print Loop):
+&lt;source lang=&quot;text&quot;&gt;
+CL-USER &gt; (birthday-paradox 1.0 1)
+23
+&lt;/source&gt;
+
+===Sorting a list of person objects===
+
+We define a class PERSON and a method for displaying the name and age of a person.
+Next we define a group of persons as a list of PERSON objects.
+Then we iterate over the sorted list.
+
+&lt;source lang=&quot;lisp&quot;&gt;
+(defclass person ()
+  ((name :initarg :name :accessor person-name)
+   (age  :initarg :age  :accessor person-age))
+  (:documentation &quot;The class PERSON with slots NAME and AGE.&quot;))
+
+(defmethod display ((object person) stream)
+  &quot;Displaying a PERSON object to an output stream.&quot;
+  (with-slots (name age) object
+    (format stream &quot;~a (~a)&quot; name age)))
+
+(defparameter *group*
+  (list (make-instance 'person :name &quot;Bob&quot;   :age 33)
+        (make-instance 'person :name &quot;Chris&quot; :age 16)
+        (make-instance 'person :name &quot;Ash&quot;   :age 23))
+  &quot;A list of PERSON objects.&quot;)
+
+(dolist (person (sort (copy-list *group*)
+                      #'&gt;
+                      :key #'person-age))
+  (display person *standard-output*)
+  (terpri))
+&lt;/source&gt;
+
+It prints the three names with descending age.
+&lt;source lang=&quot;text&quot;&gt;
+Bob (33)
+Ash (23)
+Chris (16)
+&lt;/source&gt;
+
+===Exponentiating by squaring===
+
+Use of the LOOP macro is demonstrated:
+
+&lt;source lang=&quot;lisp&quot;&gt;
+(defun power (x n)
+  (loop with result = 1
+        while (plusp n)
+        when (oddp n) do (setf result (* result x))
+        do (setf x (* x x)
+                 n (truncate n 2))
+        finally (return result)))
+&lt;/source&gt;
+
+Example use:
+
+&lt;source lang=&quot;text&quot;&gt;
+CL-USER &gt; (power 2 200)
+1606938044258990275541962092341162602522202993782792835301376
+&lt;/source&gt;
+
+Compare with the built in exponentiation:
+
+&lt;source lang=&quot;text&quot;&gt;
+CL-USER &gt; (= (expt 2 200) (power 2 200))
+T
+&lt;/source&gt;
+
+===Find the list of available shells===
+
+WITH-OPEN-FILE is a macro that opens a file and provides a stream. When the form is returning, the file is automatically closed. FUNCALL calls a function object. The LOOP collects all lines that match the predicate.
+
+&lt;source lang=&quot;lisp&quot;&gt;
+(defun list-matching-lines (file predicate)
+  &quot;Returns a list of lines in file, for which the predicate applied to
+ the line returns T.&quot;
+  (with-open-file (stream file)
+    (loop for line = (read-line stream nil nil)
+          while line
+          when (funcall predicate line)
+          collect it)))
+&lt;/source&gt;
+
+The function AVAILABLE-SHELLS calls above function LIST-MATCHING-LINES with a pathname and an anonymous function as the predicate. The predicate returns the pathname of a shell or NIL (if the string is not the filename of a shell).
+
+&lt;source lang=&quot;lisp&quot;&gt;
+(defun available-shells (&amp;optional (file #p&quot;/etc/shells&quot;))
+  (list-matching-lines
+   file
+   (lambda (line)
+     (and (plusp (length line))
+          (char= (char line 0) #\/)
+          (pathname
+           (string-right-trim '(#\space #\tab) line))))))
+&lt;/source&gt;
+
+An example call using Mac OS X 10.6:
+
+&lt;source lang=&quot;text&quot;&gt;
+CL-USER &gt; (available-shells)
+(#P&quot;/bin/bash&quot; #P&quot;/bin/csh&quot; #P&quot;/bin/ksh&quot; #P&quot;/bin/sh&quot; #P&quot;/bin/tcsh&quot; #P&quot;/bin/zsh&quot;)
+&lt;/source&gt;
+
+==Comparison with other Lisps==
+&lt;!-- needs lots --&gt;
+Common Lisp is most frequently compared with, and contrasted to, [[Scheme (programming language)|Scheme]]&amp;mdash;if only because they are the two most popular Lisp dialects. Scheme predates CL, and comes not only from the same Lisp tradition but from some of the same engineersâ[[Guy L. Steele, Jr.|Guy L. Steele]], with whom [[Gerald Jay Sussman]] designed Scheme, chaired the standards committee for Common Lisp.
+
+Common Lisp is a general-purpose programming language, in contrast to Lisp variants such as [[Emacs Lisp]] and [[AutoLISP]] which are embedded extension languages in particular products. Unlike many earlier Lisps, Common Lisp (like [[Scheme (programming language)|Scheme]]) uses lexical variable [[scope (programming)|scope]] by default for both interpreted and compiled code.
+
+Most of the Lisp systems whose designs contributed to Common Lispâsuch as [[ZetaLisp]] and Franz Lispâused dynamically [[scope (programming)|scoped]] variables in their interpreters and lexically scoped variables in their compilers. Scheme introduced the sole use of lexically scoped variables to Lisp; an inspiration from [[ALGOL 68]] which was widely recognized as a good idea. CL supports dynamically scoped variables as well, but they must be explicitly declared as &quot;special&quot;. There are no differences in scoping between ANSI CL interpreters and compilers.
+
+Common Lisp is sometimes termed a ''Lisp-2'' and Scheme a ''Lisp-1'', referring to CL's use of separate namespaces for functions and variables. (In fact, CL has ''many'' namespaces, such as those for go tags, block names, and &lt;code&gt;loop&lt;/code&gt; keywords). There is a long-standing controversy between CL and Scheme advocates over the tradeoffs involved in multiple namespaces. In Scheme, it is (broadly) necessary to avoid giving variables names which clash with functions; Scheme functions frequently have arguments named &lt;code&gt;lis&lt;/code&gt;, &lt;code&gt;lst&lt;/code&gt;, or &lt;code&gt;lyst&lt;/code&gt; so as not to conflict with the system function &lt;code&gt;list&lt;/code&gt;. However, in CL it is necessary to explicitly refer to the function namespace when passing a function as an argumentâwhich is also a common occurrence, as in the &lt;code&gt;sort&lt;/code&gt; example above.
+
+CL also differs from Scheme in its handling of boolean values. Scheme uses the special values #t and #f to represent truth and falsity. CL follows the older Lisp convention of using the symbols T and NIL, with NIL standing also for the empty list. In CL, ''any'' non-NIL value is treated as true by conditionals, such as &lt;code&gt;if&lt;/code&gt;, whereas in Scheme all non-#f values are treated as true. These conventions allow some operators in both languages to serve both as predicates (answering a boolean-valued question) and as returning a useful value for further computation, but in Scheme the value '() which is equivalent to NIL in Common Lisp evaluates to true in a boolean expression.
+
+Lastly, the Scheme standards documents require [[tail recursion|tail-call optimization]], which the CL standard does not. Most CL implementations do offer tail-call optimization, although often only when the programmer uses an optimization directive. Nonetheless, common CL coding style does not favor the ubiquitous use of recursion that Scheme style prefersâwhat a Scheme programmer would express with tail recursion, a CL user would usually express with an iterative expression in &lt;code&gt;do&lt;/code&gt;, &lt;code&gt;dolist&lt;/code&gt;, &lt;code&gt;loop&lt;/code&gt;, or (more recently) with the &lt;code&gt;iterate&lt;/code&gt; package.
+
+==Implementations==
+
+See the Category [[:Category:Common Lisp implementations|Common Lisp implementations]].
+
+Common Lisp is defined by a specification (like [[Ada (programming language)|Ada]] and [[C (programming language)|C]]) rather than by one implementation (like [[Perl]] before version 6). There are many implementations, and the standard details areas in which they may validly differ.
+
+In addition, implementations tend to come with library packages, which provide functionality not covered in the standard. [[Free and open source software]] libraries have been created to support such features in a portable way, and are most notably found in the repositories of the [http://common-lisp.net/ Common-Lisp.net] and [http://clocc.sourceforge.net/ Common Lisp Open Code Collection] projects.
+
+Common Lisp implementations may use any mix of native code compilation, byte code compilation or interpretation. Common Lisp has been designed to support [[incremental compiler]]s, file compilers and block compilers. Standard declarations to optimize compilation (such as function inlining or type specialization) are proposed in the language specification. Most Common Lisp implementations compile source code to native [[machine code]]. Some implementations can create (optimized) stand-alone applications. Others compile to interpreted [[bytecode]], which is less efficient than native code, but eases binary-code portability. There are also compilers that compile Common Lisp code to C code. The misconception that Lisp is a purely interpreted language is most likely because Lisp environments provide an interactive prompt and that code is compiled one-by-one, in an incremental way. With Common Lisp incremental compilation is widely used.
+
+Some [[Unix]]-based implementations ([[CLISP]], [[SBCL]]) can be used as a [[scripting language]]; that is, invoked by the system transparently in the way that a [[Perl]] or [[Unix shell]] interpreter is.&lt;ref&gt;[http://clisp.cons.org/impnotes/quickstart.html#quickstart-unix CLISP as a scripting language under Unix]&lt;/ref&gt;
+
+===List of implementations===
+==== Commercial implementations ====
+
+; [[Allegro Common Lisp]]: for Microsoft Windows, FreeBSD, Linux, Apple Mac OS X and various UNIX variants. Allegro CL provides an [[integrated development environment|Integrated Development Environment (IDE)]] (for Windows and Linux) and extensive capabilities for application delivery.
+; [[Corman Common Lisp]]: for Microsoft Windows.
+; [[Liquid Common Lisp]]: formerly called [[Lucid Common Lisp]]. Only maintenance, no new releases.
+; [[LispWorks]]: for Microsoft Windows, FreeBSD, Linux, Apple Mac OS X and various UNIX variants. LispWorks provides an [[integrated development environment|Integrated Development Environment (IDE)]] (available for all platforms) and extensive capabilities for application delivery.
+; [[Open Genera]]: for DEC Alpha.
+; [[Scieneer Common Lisp]]: which is designed for high-performance scientific computing.
+
+==== Freely redistributable implementations ====
+
+; [http://common-lisp.net/project/armedbear/ Armed Bear Common Lisp] : A CL implementation that runs on the [[Java Virtual Machine]].&lt;ref&gt;{{cite web | url = http://common-lisp.net/project/armedbear/ | title = Armed Bear Common Lisp }}&lt;/ref&gt; It includes a compiler to [[Java byte code]], and allows access to Java libraries from CL. It was formerly just a component of the [http://sourceforge.net/projects/armedbear-j/ Armed Bear J Editor].
+; [[CLISP]]: A bytecode-compiling implementation, portable and runs on a number of Unix and Unix-like systems (including [[Mac OS X]]), as well as Microsoft Windows and several other systems.
+; [[Clozure CL]] (CCL) : Originally a [[free and open source software|free and open source]] fork of Macintosh Common Lisp. As that history implies, CCL was written for the Macintosh, but Clozure CL now runs on [[Mac OS X]],  [[FreeBSD]], [[Linux]], [[Solaris (operating system)|Solaris]] and [[Microsoft Windows|Windows]]. 32 and 64 bit [[x86]] ports are supported on each platform. Additionally there are Power PC ports for Mac OS and Linux. CCL was previously known as OpenMCL, but that name is no longer used, to avoid confusion with the open source version of Macintosh Common Lisp.
+; [[CMUCL]]: Originally from [[Carnegie Mellon University]], now maintained as [[free and open source software]] by a group of volunteers. CMUCL uses a fast native-code compiler. It is available on [[Linux]] and [[Berkeley Software Distribution|BSD]] for Intel x86; [[Linux]] for Alpha; [[Mac OS X]] for Intel x86 and PowerPC; and Solaris, IRIX, and HP-UX on their native platforms.
+; [[Embeddable Common Lisp]] (ECL) : ECL includes a bytecode interpreter and compiler. It can also compile Lisp code to machine code via a C compiler. ECL then compiles Lisp code to C, compiles the C code with a C compiler and can then load the resulting machine code. It is also possible to embed ECL in [[C (programming language)|C]] programs, and C code into Common Lisp programs.
+; [[GNU Common Lisp]] (GCL) : The [[GNU]] Project's Lisp compiler. Not yet fully ANSI-compliant, GCL is however the implementation of choice for several large projects including the mathematical tools [[Maxima (software)|Maxima]], [[AXIOM]] and [[ACL2]]. GCL runs on [[Linux]] under eleven different architectures, and also under Windows, Solaris, and [[FreeBSD]].
+; [[Macintosh Common Lisp]]: Version 5.2 for Apple Macintosh computers with a PowerPC processor running Mac OS X is open source. RMCL (based on MCL 5.2) runs on Intel-based Apple Macintosh computers using the Rosetta binary translator from Apple.
+; [[Movitz]]: Implements a Lisp environment for [[x86]] computers without relying on any underlying OS.
+; [[Poplog]]: Poplog implements a version of CL, with [[POP-11]], and optionally [[Prolog]], and [[Standard ML]] (SML), allowing mixed language programming. For all, the implementation language is POP-11, which is compiled incrementally. It also has an integrated [[Emacs]]-like editor that communicates with the compiler.
+; [[Steel Bank Common Lisp]] (SBCL) : A branch from [[CMUCL]]. &quot;Broadly speaking, SBCL is distinguished from CMU CL by a greater emphasis on maintainability.&quot;&lt;ref&gt;{{cite web
+ | url = http://sbcl.sourceforge.net/history.html
+ | title = History and Copyright | work = Steel Bank Common Lisp
+}}&lt;/ref&gt; SBCL runs on the platforms CMUCL does, except HP/UX; in addition, it runs on Linux for AMD64, PowerPC, SPARC, and MIPS,&lt;ref&gt;{{cite web
+ | url = http://www.sbcl.org/platform-table.html
+ | title = Platform Table | work = Steel Bank Common Lisp
+}}&lt;/ref&gt; and has experimental support for running on Windows. SBCL does not use an interpreter by default; all expressions are compiled to native code unless the user switches the interpreter on. The SBCL compiler generates fast native code.&lt;ref&gt;[http://shootout.alioth.debian.org/u32q/benchmark.php?test=all&amp;lang=all SBCL ranks above other dynamic language implementations in the 'Computer Language Benchmark Game']&lt;/ref&gt;
+; [[Ufasoft Common Lisp]]: port of CLISP for windows platform with core written in C++.
+
+==== Other (mostly historical) implementations ====
+
+; Austin Kyoto Common Lisp : an evolution of Kyoto Common Lisp
+; Butterfly Common Lisp : an implementation written in Scheme for the [[BBN Butterfly]] multi-processor computer
+; CLICC : a Common Lisp to C compiler
+; CLOE : Common Lisp for PCs by Symbolics
+; Codemist Common Lisp : used for the commercial version of the computer algebra system Axiom
+; ExperCommon Lisp : an early implementation for the Apple Macintosh by ExperTelligence
+; [[Golden Common Lisp]]: an implementation for the PC by GoldHill Inc.
+; Ibuki Common Lisp : a commercialized version of Kyoto Common Lisp
+; [[Kyoto Common Lisp]]: the first Common Lisp compiler that used C as a target language. GCL and ECL originate from this Common Lisp implementation.
+; L : a small version of Common Lisp for embedded systems
+; [[Lucid Common Lisp]]: a once popular Common Lisp implementation for UNIX systems
+; Procyon Common Lisp : an implementation for Windows and Mac OS, used by Franz for their Windows port of Allegro CL
+; Star Sapphire Common LISP : an implementation for the PC
+; [[SubL]]: a variant of Common Lisp used for the implementation of the [[Cyc]] knowledge-based system
+; Top Level Common Lisp : an early implementation for concurrent execution
+; WCL : a shared library implementation
+; [[Vax Common Lisp]]: [[Digital Equipment Corporation]]'s implementation that ran on [[VAX]] systems running [[OpenVMS|VMS]] or [[ULTRIX]]
+
+[[Lisp Machine]]s (from [[Symbolics]], TI and Xerox) provided implementations of Common Lisp in addition to their native Lisp dialect (Lisp Machine Lisp or InterLisp). CLOS was also available. Symbolics provides a version of Common Lisp that is based on ANSI Common Lisp.
+
+==Applications==
+
+See the Category [[:Category:Common Lisp software|Common Lisp software]].
+
+Common Lisp is used to develop research applications (often in Artificial Intelligence), for rapid development of prototypes or for deployed applications.
+
+Common Lisp is used in many commercial applications, including the [[Yahoo!]] Store web-commerce site, which originally involved [[Paul Graham (computer programmer)|Paul Graham]] and was later rewritten in C++ and Perl.&lt;ref name=&quot;doubt-not-corporate-foolishness&quot;&gt;&quot;In January 2003, Yahoo released a new version of the editor written in C++ and Perl. It's hard to say whether the program is no longer written in Lisp, though, because to translate this program into C++ they literally had to write a Lisp interpreter: the source files of all the page-generating templates are still, as far as I know, Lisp code.&quot; [[Paul Graham (computer programmer)|Paul Graham]], [http://www.paulgraham.com/avg.html Beating the Averages]&lt;/ref&gt; Other notable examples include:
+
+* [[ACT-R]], a cognitive architecture used in a large number of research projects.
+* Authorizer's Assistant,&lt;ref&gt;[http://www.aaai.org/Papers/IAAI/1989/IAAI89-031.pdf  Authorizer's Assistant]&lt;/ref&gt;&lt;ref&gt;[http://www.prenhall.com/divisions/bp/app/alter/student/useful/ch9amex.html American Express Authorizer's Assistant]&lt;/ref&gt; a large rule-based system used by American Express, analyzing credit requests.
+* [[Cyc]], a long running project with the aim to create a knowledge-based system that provides a huge amount of common sense knowledge
+* The [[Dynamic Analysis and Replanning Tool]] (DART), which is said to alone have paid back during the years from 1991 to 1995 for all thirty years of [[DARPA]] investments in AI research.
+* [http://www.gensym.com/index.php?option=com_content&amp;view=article&amp;id=47&amp;Itemid=54 G2] from Gensym, a real-time business rules engine (BRE)
+* The development environment for the [[Jak and Daxter]] video game series, developed by [[Naughty Dog]].
+* [[ITA Software]]'s low fare search engine, used by travel websites such as [[Orbitz]] and [[Kayak.com]] and airlines such as [[American Airlines]], [[Continental Airlines]] and [[US Airways]].
+* [[Mirai (software)|Mirai]], a 3d graphics suite. It was used to animate the face of Gollum in the movie Lord of the Rings: The Two Towers.
+* [[Prototype Verification System]] (PVS), a mechanized environment for formal specification and verification.
+* [http://www2.siba.fi/PWGL/ PWGL] is a sophisticated visual programming environment based on Common Lisp, used in [[Computer assisted composition]] and sound synthesis.
+* [http://www.racer-systems.com/ RacerPro], a semantic web reasoning system and information repository.
+* [http://www.stsci.edu/resources/software_hardware/spike/ SPIKE], a scheduling system for earth or space based observatories and satellites, notably the Hubble Space Telescope.
+
+There also exist open-source applications written in Common Lisp, such as:
+
+* [[ACL2]], a full-featured [[theorem prover]] for an [[applicative programming language|applicative]] variant of Common Lisp.
+* [[Axiom (computer algebra system)|Axiom]], a sophisticated [[computer algebra system]].
+* [[Maxima (software)|Maxima]], a sophisticated [[computer algebra system]].
+* [[OpenMusic]] is an object-oriented visual programming environment based on Common Lisp, used in [[Computer assisted composition]].
+* [[Stumpwm]], a tiling, keyboard driven X11 Window Manager written entirely in Common Lisp.
+
+==See also==
+{{Portal|Computer Science}}
+*''[[Common Lisp the Language]]''
+*''[[On Lisp]]''
+*''[[Practical Common Lisp]]''
+
+==References==
+{{Reflist|2}}
+
+== Bibliography ==
+A chronological list of books published (or about to be published) about Common Lisp (the language) or about programming with Common Lisp (especially AI programming).
+{{Refbegin|2}}
+* [[Guy L. Steele]]: ''Common Lisp the Language, 1st Edition'', Digital Press, 1984, ISBN 0-932376-41-X
+* [[Rodney Allen Brooks]]: ''Programming in Common Lisp'', John Wiley and Sons Inc, 1985, ISBN 0-471-81888-7
+* [[Richard P. Gabriel]]: ''Performance and Evaluation of Lisp Systems'', The MIT Press, 1985, ISBN 0-262-57193-5, [http://www.dreamsongs.com/Files/Timrep.pdf PDF]
+* [[Robert Wilensky]]: ''Common LISPcraft'', W.W. Norton &amp; Co., 1986, ISBN 0-393-95544-3
+* [[Eugene Charniak]], [[Christopher K. Riesbeck]], [[Drew V. McDermott]], [[James R. Meehan]]: ''Artificial Intelligence Programming, 2nd Edition'', Lawrence Erlbaum, 1987, ISBN 0-89859-609-2
+* [[Wendy L. Milner]]: ''Common Lisp: A Tutorial'', Prentice Hall, 1987, ISBN 0-13-152844-0
+* [[Deborah G. Tatar]]: ''A Programmer's Guide to Common Lisp'', Longman Higher Education, 1987, ISBN 0-13-728940-5
+* [[Taiichi Yuasa]], [[Masami Hagiya]]: ''Introduction to Common Lisp'', Elsevier Ltd, 1987, ISBN 0-12-774860-1
+* [[Christian Queinnec]], [[Jerome Chailloux]]: ''Lisp Evolution and Standardization'', Ios Pr Inc., 1988, ISBN 90-5199-008-1
+* [[Taiichi Yuasa]], [[Richard Weyhrauch]], [[Yasuko Kitajima]]: ''Common Lisp Drill'', Academic Press Inc, 1988, ISBN 0-12-774861-X
+* [[Wade L. Hennessey]]: ''Common Lisp'', McGraw-Hill Inc., 1989, ISBN 0-07-028177-7
+* [[Tony Hasemer]], [[John Dominque]]: ''Common Lisp Programming for Artificial Intelligence'', Addison-Wesley Educational Publishers Inc, 1989, ISBN 0-201-17579-7
+* [[Sonya E. Keene]]: ''Object-Oriented Programming in Common Lisp: A Programmer's Guide to CLOS'', Addison-Wesley, 1989, ISBN 0-201-17589-4
+* [[David Jay Steele]]: ''Golden Common Lisp: A Hands-On Approach'', Addison Wesley, 1989, ISBN 0-201-41653-0
+* [[David S. Touretzky]]: ''Common Lisp: A Gentle Introduction to Symbolic Computation'', Benjamin-Cummings, 1989, ISBN 0-8053-0492-4. [http://www.cs.cmu.edu/~dst/LispBook/ Web/PDF]
+* [[Christopher K. Riesbeck]], [[Roger C. Schank]]: ''Inside Case-Based Reasoning'', Lawrence Erlbaum, 1989, ISBN 0-89859-767-6
+* [[Patrick Winston]], [[Berthold Horn]]: ''Lisp, 3rd Edition'', Addison-Wesley, 1989, ISBN 0-201-08319-1, [http://people.csail.mit.edu/phw/Books/LISPBACK.HTML Web]
+* [[Gerard Gazdar]], [[Chris Mellish]]: ''Natural Language Processing in LISP: An Introduction to Computational Linguistics'', Addison-Wesley Longman Publishing Co., 1990, ISBN 0-201-17825-7
+* [[Patrick R. Harrison]]: ''The Common Lisp and Artificial Intelligence'', Prentice Hall PTR, 1990, ISBN 0-13-155243-0
+* [[Timothy Koschmann]]: ''The Common Lisp Companion'', John Wiley &amp; Sons, 1990, ISBN 0-471-50308-8
+* [[Molly M. Miller]], [[Eric Benson]]: ''Lisp Style &amp; Design'', Digital Press, 1990, ISBN 1-55558-044-0
+* [[Guy L. Steele]]: ''[[Common Lisp the Language]], 2nd Edition'', Digital Press, 1990, ISBN 1-55558-041-6, [http://www.cs.cmu.edu/Groups/AI/html/cltl/cltl2.html Web]
+* [[Steven L. Tanimoto]]: ''The Elements of Artificial Intelligence Using Common Lisp'', Computer Science Press, 1990, ISBN 0-7167-8230-8
+* [[Peter Lee]]: ''Topics in Advanced Language Implementation'', The MIT Press, 1991, ISBN 0-262-12151-4
+* [[John H. Riley]]: ''A Common Lisp Workbook'', Prentice Hall, 1991, ISBN 0-13-155797-1
+* [[Peter Norvig]]: ''Paradigms of Artificial Intelligence Programming: Case Studies in Common Lisp'', Morgan Kaufmann, 1991, ISBN 1-55860-191-0, [http://norvig.com/paip.html Web]
+* [[Gregor Kiczales]], [[Jim des Rivieres]], [[Daniel G. Bobrow]]: ''The Art of the Metaobject Protocol'', The MIT Press, 1991, ISBN 0-262-61074-4
+* [[Jo A. Lawless]], [[Molly M. Miller]]: ''Understanding CLOS: The Common Lisp Object System'', Digital Press, 1991, ISBN 0-13-717232-X
+* [[Mark Watson]]: ''Common Lisp Modules: Artificial Intelligence in the Era of Neural Networks and Chaos Theory'', Springer Verlag New York Inc., 1991, ISBN 0-387-97614-0
+* [[James L. Noyes]]: ''Artificial Intelligence with Common Lisp: Fundamentals of Symbolic and Numeric Processing'', Jones &amp; Bartlett Pub, 1992, ISBN 0-669-19473-5
+* [[Stuart C. Shapiro]]: ''COMMON LISP: An Interactive Approach'', Computer Science Press, 1992, ISBN 0-7167-8218-9, [http://www.cse.buffalo.edu/pub/WWW/faculty/shapiro/Commonlisp/ Web/PDF]
+* [[Kenneth D. Forbus]], [[Johan de Kleer]]: ''Building Problem Solvers'', The MIT Press, 1993, ISBN 0-262-06157-0
+* [[Andreas Paepcke]]: ''Object-Oriented Programming: The CLOS Perspective'', The MIT Press, 1993, ISBN 0-262-16136-2
+* [[Paul Graham (computer programmer)|Paul Graham]]: ''[[On Lisp]]'', Prentice Hall, 1993, ISBN 0-13-030552-9, [http://www.paulgraham.com/onlisp.html Web/PDF]
+* [[Paul Graham (computer programmer)|Paul Graham]]: ''ANSI Common Lisp'', Prentice Hall, 1995, ISBN 0-13-370875-6
+* [[Otto Mayer]]: ''Programmieren in Common Lisp'', German, Spektrum Akademischer Verlag, 1995, ISBN 3-86025-710-2
+* [[Stephen Slade]]: ''Object-Oriented Common Lisp'', Prentice Hall, 1997, ISBN 0-13-605940-6
+* [[Richard P. Gabriel]]: ''Patterns of Software: Tales from the Software Community'', Oxford University Press, 1998, ISBN 0-19-512123-6, [http://www.dreamsongs.org/Files/PatternsOfSoftware.pdf PDF]
+* [[Taiichi Yuasa]], [[Hiroshi G. Okuno]]: ''Advanced Lisp Technology'', CRC, 2002, ISBN 0-415-29819-9
+* [[David B. Lamkins]]: ''Successful Lisp: How to Understand and Use Common Lisp'', bookfix.com, 2004. ISBN 3-937526-00-5, [http://www.psg.com/~dlamkins/sl/contents.html Web]
+* [[Peter Seibel]]: ''[[Practical Common Lisp]]'', Apress, 2005. ISBN 1-59059-239-5, [http://www.gigamonkeys.com/book/ Web]
+* [[Doug Hoyte]]: ''Let Over Lambda'', Lulu.com, 2008, ISBN 1-4357-1275-7, [http://letoverlambda.com/ Web]
+* [[George F. Luger]], [[William A. Stubblefield]]: ''AI Algorithms, Data Structures, and Idioms in Prolog, Lisp and Java'', Addison Wesley, 2008, ISBN 0-13-607047-7, [http://wps.aw.com/wps/media/objects/5771/5909832/PDF/Luger_0136070477_1.pdf PDF]
+* [[Conrad Barski]]: ''Land of Lisp: Learn to program in Lisp, one game at a time!'', No Starch Press, 2010, ISBN 1-59327-200-6, [http://www.lisperati.com/landoflisp/ Web]
+{{Refend}}
+
+==External links==
+{{Wikibooks}}
+* The [http://www.cliki.net/ CLiki], a Wiki for [[free and open source software|free and open source]] Common Lisp systems running on Unix-like systems.
+* [http://www.common-lisp.net/ Common Lisp software repository].
+* [http://www.cl-user.net/ The Common Lisp directory - information repository for all things Common Lisp].
+* {{cite web | url = http://www.lispworks.com/documentation/HyperSpec/Body/01_ab.htm | title = History | work = [[Common Lisp HyperSpec]] }}
+* [http://www.flownet.com/gat/jpl-lisp.html Lisping at JPL]
+* [http://www.defmacro.org/ramblings/lisp.html The Nature of Lisp] Essay that examines Lisp by comparison with XML.
+* [http://common-lisp.net/~dlw/LispSurvey.html Common Lisp Implementations: A Survey] Survey of maintained Common Lisp implementations.
+
+{{Common Lisp}}
+
+[[Category:Common Lisp]]
+[[Category:Multi-paradigm programming languages]]
+[[Category:Functional languages]]
+[[Category:Dynamically typed programming languages]]
+[[Category:Dynamic programming languages]]
+[[Category:Object-oriented programming languages]]
+[[Category:Class-based programming languages]]
+[[Category:Procedural programming languages]]
+[[Category:Extensible syntax programming languages]]
+[[Category:Lisp programming language family]]
+[[Category:Lisp programming language]]
+[[Category:Articles with example Lisp code]]
+[[Category:Cross-platform software]]
+[[Category:Free cross-platform software]]
+[[Category:Programming languages created in 1984]]
+
+[[cs:Common Lisp]]
+[[da:Common Lisp]]
+[[de:Common Lisp]]
+[[et:Common Lisp]]
+[[es:Common Lisp]]
+[[fa:ÙÛØ³Ù¾ ÙØ¹ÙÙÙÛ]]
+[[fr:Common Lisp]]
+[[gl:Common Lisp]]
+[[ko:ì»¤ë¨¼ ë¦¬ì¤í]]
+[[hr:Common Lisp]]
+[[is:Common Lisp]]
+[[it:Common LISP]]
+[[ja:Common Lisp]]
+[[pl:Common Lisp]]
+[[pt:Common Lisp]]
+[[ro:Common Lisp]]
+[[ru:Common Lisp]]
+[[fi:Common Lisp]]
+[[sv:Common Lisp]]
+[[uk:Common Lisp]]
+[[zh:Common Lisp]]</rev></revisions></page></pages></query></api>

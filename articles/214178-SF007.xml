@@ -1,0 +1,470 @@
+<?xml version="1.0"?><api><query><pages><page pageid="214178" ns="0" title="NetBeans"><revisions><rev xml:space="preserve">&lt;!-- When Updating This Article Please Make Sure The Logo's Version Number Matches that of the attached screenshot. --&gt;
+{{Infobox Software
+| name                   = NetBeans IDE
+| logo                   = [[File:NetBeans.svg|150px]]  
+| screenshot             = [[Image:NetBeansIDE.png|250px]]
+| caption                = NetBeans IDE 6.9 in [[Windows 7|Microsoft Windows 7]].
+| collapsible            = yes
+| developer              = [[Oracle Corporation]]
+| latest release version = 7.0.1
+| latest release date    = {{release date|2011|08|01}}
+| latest preview version = none
+| latest preview date    = 
+| platform               =[[Java SE]]
+| operating system       = [[Cross-platform|Cross-platform (multi-platform)]]  
+| language               = [[#Localization|Multilingual]]
+| programming language   = [[Java (programming language)|Java]]
+| genre                  = [[Integrated development environment|Java IDE]]
+| license                = [[CDDL]] or [[GPL2]] + [http://www.netbeans.org/cddl-gplv2.html &quot;certain source files&quot;] allow [[classpath exception]]
+| website                = [http://www.netbeans.org/ netbeans.org]
+}}
+
+'''NetBeans''' refers to both a [[Platform (computing)|platform]] framework for Java desktop applications, and an [[integrated development environment]] (IDE) for developing with [[Java (programming language)|Java]]&lt;ref name=&quot;Release Notes 7.0&quot;&gt;http://netbeans.org/community/releases/70/relnotes.html&lt;/ref&gt;, [[JavaScript]]&lt;ref name=&quot;Release Notes 7.0&quot; /&gt;, [[PHP]]&lt;ref name=&quot;Release Notes 7.0&quot; /&gt;, [[Python (programming language)|Python]]&lt;ref&gt;http://wiki.netbeans.org/Python&lt;/ref&gt; (no longer supported after NetBeans 7), [[Groovy (programming language)|Groovy]]&lt;ref name=&quot;Release Notes 7.0&quot; /&gt;, [[C (programming language)|C]]&lt;ref name=&quot;Release Notes 7.0&quot; /&gt;, [[C++]]&lt;ref name=&quot;Release Notes 7.0&quot; /&gt;, [[Scala (programming language)|Scala]]{{Citation needed|date=July 2011}}, [[Clojure]]{{Citation needed|date=July 2011}}, and others. The NetBeans IDE 7.0 no longer supports [[Ruby (programming language)|Ruby]] and [[Ruby on Rails]] &lt;ref name=&quot;Release Notes 7.0&quot; /&gt;, but a third party has begun work on a separate plug-in.
+
+The NetBeans IDE is written in Java and can run anywhere a compatible [[Java Virtual Machine|JVM]] is installed, including Windows, Mac OS, Linux, and Solaris. A [[Java Development Kit|JDK]] is required for Java development functionality, but is not required for development in other programming languages.
+
+The NetBeans platform allows applications to be developed from a set of modular [[software component]]s called ''modules''. Applications based on the NetBeans platform (including the NetBeans IDE) can be extended by [[third party developer]]s.&lt;ref&gt;[http://platform.netbeans.org/tutorials/ platform: NetBeans Modules and Rich-Client Applications Learning Trail&lt;!-- Bot generated title --&gt;]&lt;/ref&gt;
+
+== History ==
+&lt;div style=&quot;float: right&quot;&gt;
+&lt;timeline&gt;
+Define $dx = 25 # shift text to right side of bar
+Define $dy = -3 # shift text to right side of bar
+Define $now = 04/27/2011
+Define $start = 06/01/2003
+
+ImageSize  = width:160 height:550
+PlotArea   = width:50 height:530 left:50 bottom:10
+
+DateFormat = mm/dd/yyyy
+Period     = from:$start till:$now
+TimeAxis   = orientation:vertical
+ScaleMajor = unit:year increment:1 start:2004
+
+PlotData=
+  bar:Leaders color:blue width:25 mark:(line,white) align:left fontsize:S
+
+  from:06/01/2003 till:$now
+
+  from:06/01/2003 till:06/01/2003 shift:($dx,$dy) fontsize:XS text:3.5
+  from:04/01/2004 till:04/01/2004 shift:($dx,$dy) fontsize:XS text:3.6
+  from:12/01/2004 till:12/01/2004 shift:($dx,$dy) fontsize:XS text:4.0
+  from:05/01/2005 till:05/01/2005 shift:($dx,$dy) fontsize:XS text:4.1
+  from:01/01/2006 till:01/01/2006 shift:($dx,$dy) fontsize:XS text:5.0
+  from:10/30/2006 till:10/30/2006 shift:($dx,$dy) fontsize:XS text:5.5
+  from:05/24/2007 till:05/24/2007 shift:($dx,$dy) fontsize:XS text:5.5.1
+  from:12/03/2007 till:12/03/2007 shift:($dx,$dy) fontsize:XS text:6.0
+  from:04/28/2008 till:04/28/2008 shift:($dx,$dy) fontsize:XS text:6.1
+  from:11/20/2008 till:11/20/2008 shift:($dx,$dy) fontsize:XS text:6.5
+  from:03/16/2009 till:03/16/2009 shift:($dx,$dy) fontsize:XS text:6.5.1
+  from:06/29/2009 till:06/29/2009 shift:($dx,-6) fontsize:XS text:6.7
+  from:07/27/2009 till:07/27/2009 shift:($dx,0) fontsize:XS text:6.7.1
+  from:12/10/2009 till:12/10/2009 shift:($dx,$dy) fontsize:XS text:6.8
+  from:06/15/2010 till:06/15/2010 shift:($dx,$dy) fontsize:XS text:6.9
+  from:08/04/2010 till:08/04/2010 shift:($dx,$dy) fontsize:XS text:6.9.1
+  from:04/19/2011 till:04/19/2011 shift:($dx,$dy) fontsize:XS text:7.0
+&lt;/timeline&gt;
+
+'''NetBeans IDE Releases'''&lt;ref&gt;http://netbeans.org/community/releases/roadmap.html&lt;/ref&gt;
+{| class=&quot;toccolours  collapsible collapsed&quot; align=right style=&quot;margin-left: 1em;&quot;
+! Version
+! Released
+|-
+| 3.5 || June 2003
+|-
+| 3.6 || April 2004
+|-
+| 4.0 || December 2004
+|-
+| 4.1 || May 2005
+|-
+| 5.0 || January 2006
+|-
+| 5.5 || October 30, 2006
+|-
+| 5.5.1 || May 24, 2007
+|-
+| 6.0 || December 3, 2007
+|-
+| 6.1 || April 28, 2008
+|-
+| 6.5 || November 20, 2008
+|-
+| 6.5.1 || March 16, 2009
+|-
+| 6.7 || June 29, 2009
+|-
+| 6.7.1 || July 27, 2009
+|-
+| 6.8 || December 10, 2009
+|-
+| 6.9 || June 15, 2010
+|-
+| 6.9.1 || August 4, 2010
+|-
+| 7.0 || April 19, 2011
+|-
+|}
+&lt;/div&gt;
+
+=== History ===
+NetBeans began in 1996 as Xelfi (word play on ''[[Borland Delphi|Delphi]]''),&lt;ref&gt;{{cite web
+| url=http://www.xelfi.cz/
+| title=original Xelfi homepage
+| accessdate=2008-05-17}}&lt;/ref&gt;&lt;ref&gt;{{cite web
+| url=http://www.netbeans.org/community/articles/interviews/yarda-tulach.html
+| title= Happy Birthday NetBeans - interview with Jaroslav &quot;Yarda&quot; Tulach
+| publisher=Netbeans.org
+| accessdate=2008-05-17}}&lt;/ref&gt; a Java IDE student project under the guidance of the Faculty of Mathematics and Physics at [[Charles University]] in [[Prague]]. In 1997 Roman StanÄk formed a company around the project and produced commercial versions of the NetBeans IDE until it was bought by [[Sun Microsystems]] in 1999. Sun open-sourced the NetBeans IDE in June of the following year. Since then,  the NetBeans community has continued to grow.&lt;ref&gt;{{cite web
+| url=http://www.netbeans.org/about/history.html
+| title=A Brief History of NetBeans
+| publisher=Netbeans.org
+| accessdate=2008-05-17}}&lt;/ref&gt; In 2010, Sun (and thus NetBeans) [[Sun acquisition by Oracle|was acquired]] by [[Oracle Corporation|Oracle]]. 
+
+=== Current versions ===
+NetBeans IDE 6.0 introduced support for developing IDE modules and rich client applications based on the NetBeans platform, a Java Swing [[GUI]] builder (formerly known as &quot;Project Matisse&quot;), improved [[Concurrent Versions System|CVS]] support, [[WebLogic]] 9 and [[JBoss]] 4 support, and many editor enhancements. NetBeans 6 is available in official repositories of major Linux distributions.
+
+NetBeans IDE 6.5, released in November 2008, extended the existing [[Java Platform, Enterprise Edition|Java EE]] features (including Java Persistence support, EJB 3 and JAX-WS). Additionally, the NetBeans Enterprise Pack supports development of Java EE 5 enterprise applications, including [[Service-oriented architecture|SOA]] visual design tools, XML schema tools, web services orchestration (for BPEL), and [[Unified Modeling Language|UML]] modeling. The [[NetBeans#NetBeans_IDE_Bundle_for_C.2FC.2B.2B|NetBeans IDE Bundle for C/C++]] supports C/C++ and FORTRAN development.
+
+NetBeans IDE 6.8 is the first IDE to provide complete support of Java EE 6 and the [[GlassFish|GlassFish Enterprise Server v3]]. Developers hosting their open-source projects on [[Project Kenai|kenai.com]] additionally benefit from instant messaging and issue tracking integration and navigation right in the IDE, support for web application development with PHP 5.3 and the Symfony framework, and improved code completion, layouting, hints and navigation in JavaFX projects.
+
+NetBeans IDE 6.9, released in June 2010, added support for [[OSGi]], [[Spring Framework]] 3.0, Java EE dependency injection (JSR-299), [[Zend Framework]] for [[PHP]], and easier code navigation (such as &quot;Is Overridden/Implemented&quot; annotations), formatting, hints, and refactoring across several languages.
+
+NetBeans IDE 7.0 was released in April 2011. On August 1, 2011, the NetBeans Team released NetBeans IDE 7.0.1, which has full support for the official release of the [[Java version history#Java SE 7 .28July 28.2C 2011.29|Java SE 7]] platform.&lt;ref&gt;{{cite web
+| url=http://blogs.oracle.com/java/entry/netbeans_ide_7_0_1
+| title=NetBeans IDE 7.0.1 Now Available for Download
+| publisher=Oracle
+| accessdate=2011-09-11}}&lt;/ref&gt;
+
+== NetBeans Platform ==
+
+The '''NetBeans Platform''' is a reusable [[Software framework|framework]] for simplifying the development of [[Java Swing]] desktop applications. The NetBeans IDE bundle for Java SE contains what is needed to start developing NetBeans plugins and NetBeans Platform based applications; no additional SDK is required.
+
+Applications can install modules dynamically. Any application can include the Update Center module to allow users of the application to download [[Digital signature|digitally-signed]] upgrades and new features directly into the running application. Reinstalling an upgrade or a new release does not force users to download the entire application again.
+
+The platform offers reusable services common to desktop applications, allowing developers to focus on the logic specific to their application. Among the features of the platform are:
+* User interface management (e.g. menus and toolbars)
+* User settings management
+* Storage management (saving and loading any kind of data)
+* Window management
+* Wizard framework (supports step-by-step dialogs)
+* NetBeans Visual Library
+*Integrated Development Tools
+
+== NetBeans IDE ==
+'''NetBeans IDE''' is an [[open source|open-source]] integrated development environment. NetBeans IDE supports development of all Java application types ([[Java Platform, Standard Edition|Java SE]] including JavaFX, ([[Java Platform, Mobile Edition|Java ME]], [[Web application|web]], [[EJB]] and [[MIDlet|mobile]] applications) out of the box. Among other features are an [[Apache Ant|Ant]]-based project system, Maven support, [[refactoring]]s, [[Version control system|version control]] (supporting [[Concurrent Versions System|CVS]], [[Subversion (software)|Subversion]], [[Mercurial (software)|Mercurial]] and [[Clearcase]]).
+
+'''Modularity''': All the functions of the IDE are provided by modules. Each module provides a well defined function, such as support for the [[Java (programming language)|Java language]], editing, or support for the [[Concurrent Versions System|CVS]] versioning system, and SVN. NetBeans contains all the modules needed for Java development in a single download, allowing the user to start working immediately. Modules also allow NetBeans to be extended. New features, such as support for other programming languages, can be added by installing additional modules. For instance, [[Sun Studio Compiler Suite|Sun Studio]], Sun Java Studio Enterprise, and [[Sun Java Studio Creator]] from [[Sun Microsystems]] are all based on the NetBeans IDE.
+
+'''License''': From July 2006 through 2007, NetBeans IDE was licensed under Sun's [[Common Development and Distribution License]] (CDDL), a license based on the [[Mozilla Public License]] (MPL). In October 2007, Sun announced that NetBeans would henceforth be offered under a [[dual license]] of the CDDL and the [[GPL]] version 2 licenses, with the [[GPL linking exception]] for [[GNU Classpath]]&lt;ref&gt;[http://www.netbeans.org/gplv2-faqs.html Why dual license Netbeans faq]&lt;/ref&gt;
+
+== Integrated modules ==
+These modules are part of the NetBeans IDE.
+
+=== NetBeans Profiler ===
+The '''NetBeans Profiler'''&lt;ref&gt;{{cite web
+| url=http://profiler.netbeans.org/
+| title=Profiler
+| publisher=Netbeans.org
+| accessdate=2008-05-17}}&lt;/ref&gt; is a tool for the monitoring of Java applications: It helps developers find memory leaks and optimize speed. Formerly downloaded separately, it is integrated into the core IDE since version 6.0.
+
+The [[Profiler (computer science)|Profiler]] is based on a Sun Laboratories research project that was named JFluid. That research uncovered specific techniques that can be used to lower the overhead of profiling a Java application. One of those techniques is dynamic bytecode instrumentation, which is particularly useful for profiling large Java applications. Using dynamic bytecode instrumentation and additional algorithms, the NetBeans Profiler is able to obtain runtime information on applications that are too large or complex for other profilers. NetBeans also support Profiling Points that let you profile precise points of execution and measure execution time.
+
+=== GUI design tool ===
+Formerly known as ''project Matisse'', the GUI design-tool enables developers to prototype and design [[Swing (Java)|Swing]] [[Graphical user interface|GUIs]] by dragging and positioning GUI components.&lt;ref&gt;{{cite web
+| url=http://www.netbeans.org/features/java/swing.html
+| title=Swing GUI Builder (formerly Project Matisse)
+| publisher=Netbeans.org
+| accessdate=2008-05-17}}&lt;/ref&gt;
+
+The GUI builder also has built-in support for JSR 296 ([[Swing Application Framework]]), and JSR 295 (Beans Binding technology).
+
+=== NetBeans JavaScript editor ===
+The NetBeans JavaScript editor provides extended support for [[JavaScript]], Ajax, and [[CSS]].&lt;ref&gt;{{cite web
+| url=http://wiki.netbeans.org/JavaScript
+| title=Javascript
+| publisher=Netbeans wiki
+| date=2007-03-31
+| accessdate=2008-04-19}}&lt;/ref&gt;&lt;ref&gt;{{cite web
+| url=http://www.netbeans.org/features/web/web-app.html
+| title=Java Web Applications
+| publisher=Netbeans.org
+| accessdate=2008-04-19}}&lt;/ref&gt;
+
+JavaScript editor features comprise [[syntax highlighting]], [[Code refactoring|refactoring]], [[Autocomplete|code completion]] for native objects and functions, generation of JavaScript class skeletons, generation of [[Ajax (programming)|Ajax]] [[Callback (computer science)|callbacks]] from a template; and automatic [[JavaScript#Compatibility considerations|browser compatibility]] checks.
+
+CSS editor features comprise [[Autocomplete|code completion]] for styles names, quick navigation through the navigator panel, displaying the CSS rule declaration in a List View and file structure in a Tree View, sorting the outline view by name, type or declaration order (List &amp; Tree), creating rule declarations (Tree only), refactoring a part of a rule name (Tree only).
+
+== NetBeans IDE Download Bundles ==
+Users can choose to download NetBeans IDE bundles tailored to specific development needs. Users can also download and install all other features at a later date directly through the NetBeans IDE.
+
+=== NetBeans IDE Bundle for Web and Java EE === &lt;!-- This section is linked from NetBeans --&gt;
+
+The '''NetBeans IDE Bundle for Web &amp; Java EE'''&lt;ref&gt;{{cite web
+| url=http://www.netbeans.org/features/web/index.html
+| title=Web &amp; Java EE
+| publisher=Netbeans.org
+| accessdate=2008-05-17}}&lt;/ref&gt; provides complete tools for all the latest Java EE 6 standards, including the new Java EE 6 Web Profile, Enterprise Java Beans (EJBs), servlets, Java Persistence API, web services, and annotations. 
+NetBeans also supports the JSF 2.0 (Facelets), JavaServer Pagip pies (JSP), Hibernate, Spring, and Struts frameworks, and the Java EE 5 and J2EE 1.4 platforms. It includes [[GlassFish]] and [[Apache Tomcat]].
+Some of its features with javaEE includes
+*Improved support for CDI, REST services and Java Persistence
+*New support for Bean Validation
+*Support for JSF component libraries, including bundled PrimeFaces library
+*Improved editing for Expression Language in JSF, including code completion, refactoring and hints
+
+=== NetBeans IDE Bundle for Ruby ===
+The '''NetBeans IDE Bundle for Ruby'''&lt;ref&gt;{{cite web
+| url=http://www.netbeans.org/features/ruby/index.html
+| title=Ruby
+| publisher=Netbeans.org
+| accessdate=2008-05-17}}&lt;/ref&gt; Versions prior to 7.0 includes a Ruby editor (with code completion, and syntactic and semantic highlighting), debugger, and full support for the [[Ruby on Rails]] framework. NetBeans supports development with [[Ruby (programming language)|Ruby]] and [[JRuby]], as well as Rails for these two implementations of Ruby.&lt;ref&gt;http://netbeans.org/community/news/show/1015.html&lt;/ref&gt;&lt;ref&gt;http://www.infoworld.com/article/07/03/01/HNsunruby_1.html&lt;/ref&gt;
+
+Netbeans release 7.0 and above no longer supports Ruby (and Rails).&lt;ref&gt;http://netbeans.org/community/news/show/1507.html&lt;/ref&gt;
+
+=== NetBeans IDE Bundle for Java ME ===
+
+The '''NetBeans IDE Bundle for Java ME''' is a tool for developing applications that run on mobile devices; generally mobile phones, but this also includes entry-level [[PDA]]s, and [[Java Card]], among others.
+
+The NetBeans IDE comes bundled with the latest Java ME SDK 3.0 which supports both CLDC and CDC development. One can easily integrate third-party emulators for a robust testing environment. You can download other Java platforms, including the Java Card Platform 3.0, and register them in the IDE.
+
+=== NetBeans IDE Bundle for PHP ===
+Netbeans supports [[PHP]] since version 6.5. The bundle for PHP includes:
+* syntax highlighting, code completion, occurrence highlighting, error highlighting, CVS version control 
+* semantic analysis with highlighting of parameters and unused local variables
+* PHP code debugging with [[xdebug]]
+* PHP Unit testing with [[PHPUnit]] and [[Selenium (software)|Selenium]]
+* Code coverage
+* [[Symfony]] framework support (since version 6.8)
+* [[Zend Framework]] support (since version 6.9)
+* PHP 5.3 namespace and closure support (since version 6.8)
+
+=== NetBeans IDE Bundle for JavaFX ===
+A NetBeans IDE Bundle is also available for [[JavaFX]] since NetBeans 6.5.&lt;ref&gt;{{cite web
+| url=http://www.netbeans.org/features/javafx/index.html
+| title=JavaFX 
+| publisher=Netbeans.org
+| accessdate=2009-03-29}}&lt;/ref&gt; Additional to full Java SE support it provides a JavaFX editor and a JavaFX Composer, and it allows to create, preview and profile JavaFX Desktop or JavaFX Mobile applications.
+
+=== NetBeans IDE Complete Bundle ===
+[[Sun Microsystems]] also releases a version of NetBeans that includes all of the features of the above bundles. This bundle includes:
+* NetBeans Base IDE
+* Java SE, JavaFX
+* Web and Java EE
+* Java ME
+* C/C++
+* PHP (Version 6.5 and later)
+* [[GlassFish]]
+* [[Apache Tomcat]]
+
+Official Ruby support was removed with the release of 7.0
+
+=== NetBeans IDE Starter Kit (DVD) ===
+[[Sun Microsystems]] used to offer a free DVD-ROM which included all of the components needed to run NetBeans. An ISO of the DVD is still available for download.&lt;ref name=DVD&gt;[http://www.netbeans.org/about/media.html NetBeans DVD Starter Kit Program]&lt;/ref&gt;
+
+=== Other NetBeans IDE Bundles ===
+Apart from the above mentioned, a NetBeans IDE Bundle is also available for [[Python (programming language)|Python]]. NetBeans for Python is available as an &quot;early access&quot; download in an IDE bundle form and as a plugin for any NetBeans 6.5 IDE bundle as well.
+
+== Localization ==
+NetBeans IDE is translated into the following languages:&lt;ref&gt;http://netbeans.org/community/releases/69/relnotes.html&lt;/ref&gt;
+* Brazilian [[Portuguese language|Portuguese]] (BR), as of 5.5 &lt;ref name=&quot;nb55l10nbr&quot;&gt;[http://netbeans.org/community/news/show/969.html NetBeans.org Community News: NetBeans 5.5 Multilingual Release Candidate 1]&lt;/ref&gt;
+* [[Japanese language|Japanese]] (JP), as of 3.4&lt;ref name=&quot;nb36l10n&quot;&gt;[http://netbeans.org/community/news/show/244.html NetBeans.org Community News: Japanese version of NetBeans]&lt;/ref&gt;
+* [[Simplified Chinese]] (ZH)
+
+Community translations of the IDE are also available in the following languages:
+
+{| class=&quot;wikitable&quot;
+|+ '''Community translations'''&lt;ref&gt;http://wiki.netbeans.org/TFL10nCommunityStatus&lt;/ref&gt;
+|-
+! Language !! Platform !! Java SE&lt;br&gt;(IDE) !! ALL
+|-
+| [[Afrikaans language|Afrikaans]] || {{yes|As of 6.9}} || {{no}} || {{no}}
+|-
+| [[Albanian language|Albanian]] || {{yes|As of 5.5}} &lt;ref name=&quot;nb55pl10n&quot;&gt;[http://netbeans.org/community/news/show/1086.html NetBeans.org Community News: NetBeans 5.5 Platform in Albanian &amp; Indonesian!]&lt;/ref&gt; || {{no}} || {{no}}
+|-
+| [[Azerbaijani language|Azerbaijani]] || {{yes}} || {{no}} || {{no}}
+|-
+| [[Catalan language|Catalan]] || {{yes|As of 6.7.1}} &lt;ref name=&quot;osolcat&quot;&gt;[http://hub.opensolaris.org/bin/view/Community+Group+int_localization/ca_group?language=en Catalan localization group at OpenSolaris]&lt;/ref&gt;|| {{yes|As of 6.7.1}} &lt;ref name=&quot;osolcat&quot;/&gt; || {{yes|As of 6.9.1}} &lt;ref name=&quot;osolcat&quot; /&gt;
+|-
+| [[Czech language|Czech]] || {{yes|As of 6.0}} &lt;ref&gt;[http://netbeans.org/community/news/show/1129.html NetBeans.org Community News: Translate NetBeans 6 into Your Language!]&lt;/ref&gt;|| {{no}} || {{no}}
+|-
+| [[Dutch language|Dutch]] || {{yes}} || {{yes}}|| {{no}}
+|-
+| [[Filipino language|Filipino]] || {{yes|As of 6.9}} || {{no}} || {{no}}
+|-
+| [[French language|French]] || {{yes}} || {{yes}} || {{no}}
+|-
+| [[Galician language|Galician]] || {{yes}} || {{yes}} || {{yes|As of 6.8}}
+|-
+| [[German language|German]] || {{yes|As of 5.5}} &lt;ref name=&quot;nb551l10n&quot;&gt;[http://www.netbeans.org/servlets/NewsItemView?newsItemID=1056 NetBeans.org Community News: Go Multilingual with NetBeans IDE 5.5.1!]&lt;/ref&gt; || {{yes|As of 5.5}} &lt;ref name=&quot;nb551l10n&quot;/&gt; || {{no}}
+|-
+| [[Greek language|Greek]] ||  {{yes|As of 6.9}} || {{no}} || {{no}}
+|-
+| [[Hindi language|Hindi]] || {{yes|As of 6.9}} || {{no}} || {{no}}
+|-
+| [[Indonesian language|Indonesian]] || {{yes|As of 5.5}} &lt;ref name=&quot;nb55pl10n&quot;/&gt;|| {{no}} || {{no}}
+|-
+| [[Italian language|Italian]] || {{yes}} || {{yes}} || {{no}}
+|-
+| [[Korean language|Korean]] || {{yes|As of 5.0}} &lt;ref name=&quot;nb50l10n&quot;&gt;[http://netbeans.org/community/news/show/910.html NetBeans.org Community News: Looking for NetBeans in Your Language?]&lt;/ref&gt; || {{yes|As of 5.0}} &lt;ref name=&quot;nb50l10n&quot;/&gt; || {{no}}
+|-
+| [[Lithuanian language|Lithuanian]] || {{yes|As of 6.9}} || {{no}} || {{no}}
+|-
+| [[Romanian language|Romanian]] || {{yes|As of 6.8}} || {{no}} || {{no}}
+|-
+| [[Russian language|Russian]] || {{yes|As of 5.0}} &lt;ref name=&quot;nb50l10n&quot;/&gt; || {{yes|As of 5.0}} &lt;ref name=&quot;nb50l10n&quot;/&gt; || {{yes|As of 6.9.1}}
+|-
+| [[Serbian language|Serbian]] || {{yes|As of 6.9}} || {{no}} || {{no}}
+|-
+| [[Spanish language|Spanish]] || {{yes|As of 5.5}} &lt;ref name=&quot;nb551l10n&quot;/&gt; || {{yes|As of 5.5}} &lt;ref name=&quot;nb551l10n&quot;/&gt; || {{no}}
+|-
+| [[Swedish language|Swedish]] || {{yes}} || {{yes}} || {{no}}
+|-
+| [[Traditional Chinese character|Traditional Chinese]] || {{yes}} || {{yes}} || {{no}}
+|-
+| [[Turkish language|Turkish]] || {{yes}} || {{yes}} || {{no}}
+|-
+| [[Vietnamese language|Vietnamese]] || {{yes|As of 6.9}} || {{no}} || {{no}}
+|}
+
+== See also ==
+* [[Sun Microsystems]]
+* [[NetBeans BlueJ Edition]]
+* [[Comparison of integrated development environments]]
+* [[Eclipse IDE]]
+* [[List of NetBeans-based software]]
+
+== References ==
+{{reflist|colwidth=30em}}
+
+== Further reading ==
+{{refbegin}}
+*{{Cite document
+| first1    = Tim
+| last1     = Boudreau 
+| first2    = Jesse 
+| last2     = Glick 
+| first3    = Simeon 
+| last3     = Greene 
+| first4    = Jack 
+| last4     = Woehr 
+| first5    = Vaughn 
+| last5     = Spurlin 
+| date      = October 15, 2002
+| title     = NetBeans: The Definitive Guide
+| edition   = First
+| publisher = [[O'Reilly Media]]
+| pages     = 672 
+| isbn      = 0596002807
+| url       = http://oreilly.com/catalog/9780596002800/
+}}
+*{{Cite document
+| first1    = David 
+| last1     = Heffelfinger
+| date      = October 31, 2008
+| title     = Java EE 5 Development with NetBeans 6
+| edition   = First
+| publisher = [[Packt|Packt Publishing]]
+| pages     = 400 
+| isbn      = 1847195466
+| url       = http://www.packtpub.com/java-ee5-development-with-netbeans-6/book
+}}
+*{{Cite document
+| first1    = Adam 
+| last1     = Myatt
+| date      = February 21, 2008
+| title     = Pro Netbeans IDE 6 Rich Client Platform Edition
+| edition   = First
+| publisher = [[Apress]]
+| pages     = 491
+| isbn      = 1590598954
+| url       = http://www.apress.com/book/view/9781590598955
+}}
+*{{Cite document
+| first1    = Patrick
+| last1     = Keegan
+| first2    = Ludovic
+| last2     = Champenois
+| first3    = Gregory
+| last3     = Crawley
+| first4    = Charlie
+| last4     = Hunt
+| first5    = Christopher
+| last5     = Webster
+| date      = May 9, 2006
+| title     = NetBeans IDE Field Guide: Developing Desktop, Web, Enterprise, and Mobile Applications
+| edition   = Second
+| publisher = [[Prentice Hall]]
+| pages     = 424
+| isbn      = 9780132395526
+| url       = http://www.informit.com/store/product.aspx?isbn=0131876201
+}}
+*{{Cite document
+| first1    = Heiko
+| last1     = Boeck
+| date      = July 01, 2009
+| title     = The Definitive Guide to NetBeans Platform
+| edition   = First
+| publisher = Apress
+| pages     = 450 
+| isbn      = 1430224177
+| url       = http://www.apress.com/book/view/1430224177
+}}
+*{{Cite document
+| first1    = JÃ¼rgen 
+| last1     = Petri
+| date      = August 11, 2010
+| title     = NetBeans Platform 6.9 Developer's Guide
+| edition   = First
+| publisher = [[Packt|Packt Publishing]]
+| pages     = 288 
+| isbn      = 1849511764
+| url       = https://www.packtpub.com/netbeans-platform-6-8-developers-guide/book
+}}
+{{refend}}
+
+== External links ==
+{{commons category}}
+* [http://www.netbeans.org/ Official site]
+* [http://plugins.netbeans.org/PluginPortal/ Plugin Portal] NetBeans plugins from the community
+* [http://www.sun.com/service/developer/index.jsp Developer Support Services from Sun Microsystems]
+
+{{Integrated development environments for C and C++}}
+{{Sun Microsystems}}
+
+{{DEFAULTSORT:Netbeans}}
+[[Category:Java platform]]
+[[Category:Open-source integrated development environments]]
+[[Category:Java development tools]]
+[[Category:Free UML tools]]
+[[Category:Linux integrated development environments]]
+[[Category:Sun Microsystems software]]
+[[Category:Free cross-platform software]]
+[[Category:Free HTML editors]]
+[[Category:Free software programmed in Java]]
+
+[[ar:ÙØªâØ¨ÙÙØ²]]
+[[bn:à¦¨à§à¦à¦¬à¦¿à¦¨à§à¦¸]]
+[[bg:NetBeans]]
+[[cs:NetBeans]]
+[[de:NetBeans IDE]]
+[[es:NetBeans]]
+[[eu:NetBeans]]
+[[fa:ÙØªâØ¨ÛÙØ²]]
+[[fr:NetBeans]]
+[[ko:ë·ë¹ì¦]]
+[[it:NetBeans]]
+[[he:NetBeans]]
+[[lt:NetBeans]]
+[[hu:NetBeans]]
+[[nl:NetBeans]]
+[[ja:NetBeans]]
+[[pl:NetBeans]]
+[[pt:NetBeans]]
+[[ru:NetBeans]]
+[[sk:NetBeans]]
+[[fi:NetBeans]]
+[[sv:NetBeans]]
+[[th:à¹à¸à¹à¸à¸à¸µà¸à¸ªà¹]]
+[[tr:NetBeans]]
+[[uk:NetBeans]]
+[[zh:NetBeans]]</rev></revisions></page></pages></query></api>

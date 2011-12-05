@@ -1,0 +1,79 @@
+<?xml version="1.0"?><api><query><pages><page pageid="417896" ns="0" title="SystemRescueCD"><revisions><rev xml:space="preserve">{{Infobox OS
+| name = SystemRescueCd
+| logo = [[Image:sysresccdlogo.png|70px]]
+| screenshot = [[Image:SystemRescueCD.png|300px]]
+| caption = the [[Live CD]] of SystemRescueCD
+| developer = Francois Dupoux
+| family = [[Unix-like]]
+| source_model = [[Open source]]
+| latest_release_version = 2.4.0
+| latest_release_date = {{release date|2011|11|1}}
+| kernel_type = [[Monolithic kernel|Monolithic]] ([[Linux kernel|Linux]])
+| ui = [[Xfce]] (previously [[JWM]] and [[Window Maker]])
+| license = Various
+| working_state = Current
+| website = [http://www.sysresccd.org/ www.sysresccd.org]
+}}
+
+'''SystemRescueCd''' is an [[operating system]] for the [[x86]] computer platform, though the primary purpose of SystemRescueCD is to repair unbootable or otherwise damaged computer systems after a [[Crash (computing)|system crash]]. SystemRescueCD is not intended to be used as a permanent [[operating system]]. It runs from a [[Live CD]] or a [[USB flash drive]]. It was designed by a team led by FranÃ§ois Dupoux, and is based on the [[Gentoo Linux]] distribution.
+
+==Structure==
+SystemRescueCD is capable of graphics using the [[Linux framebuffer]] option for tools such as [[GParted]]. It uses version 3.0.8/3.1.0 of the Linux kernel and has options such as connecting to the Internet through an [[Asymmetric Digital Subscriber Line|ADSL]] [[modem]] or [[Ethernet]] and graphical [[web browser]]s such as [[Mozilla Firefox]].
+
+==Features==
+SystemRescueCD has several features, some of them include:
+*[[GNU Parted]] and [[GParted]] to partition disks and re-size partitions, including [[File Allocation Table|FAT32]] and [[NTFS]]
+*[[Ranish Partition Manager]]
+*[[fdisk]] to edit the disk [[partition table]]
+*[[PartImage]], [[Disk image|disk imaging]] software which copies only used sectors
+*[[TestDisk]] to recover lost partition and [[PhotoRec]] to recover lost data
+*[[FSArchiver]] a system tool that allows you to save the contents of a file-system to a compressed archive file
+*A CD and DVD burner: [[dvd+rw-tools]]
+*Two bootloaders: [[GNU GRUB|GRUB]] and [[SYSLINUX]]
+*Web browsers: [[Mozilla Firefox]], [[ELinks]]
+*[[emelFM2]]
+*Archiving and unarchiving abilities
+*File system tools: file system create, delete, resize, move
+*Support for many file systems, including full NTFS read/write access (via [[NTFS-3G]]) as well as FAT32 and [[Mac OS]] [[Hierarchical File System|HFS]]
+*Support for Intel [[x86 architecture|x86]] and [[PowerPC]] systems, including [[Macintosh (computer)|Macs]]
+*Ability to create [[boot disk]] for operating systems
+*Support for [[Microsoft Windows|Windows]] [[Windows Registry|registry]] editing and password changing from Linux
+*Can boot [[FreeDOS]], [[Memtest86+]], hardware diagnostics and other boot disks from a single CD
+
+==Burning DVDs and system backup==
+The CD can also boot from a customized DVD which has almost 4.6 GB of free space for backed-up files. This makes it good for storing all the information that is needed from a hard drive and then formatting it. To burn the DVD, one  has to burn the image file first and then add all the separate files as  well as folders. This should not affect the general way in which  the DVD works. Then the DVD can be used to insert those files into the hard drive using [[Midnight Commander]].
+
+==References==
+{{Reflist}}
+
+==External links==
+{{Portal|Free software}}
+* {{Official|http://www.sysresccd.org/}}
+* {{DistroWatch|systemrescue|NAME=SystemRescueCD}}
+* [http://blogs.techrepublic.com.com/products/?p=751 Product Spotlight: SystemRescueCD]
+* [http://www.junauza.com/2008/06/essential-linux-tool-systemrescuecd.html Essential Linux Tool: SystemRescueCd]
+* [http://www.howtogeek.com/howto/windows-vista/change-your-forgotten-windows-password-with-the-linux-system-rescue-cd/ Change Your Forgotten Windows Password with the Linux System Rescue CD]
+* [http://www.linuxjournal.com/content/systemrescuecd-156 Review of Rescuecd from the Linux Journal]
+
+
+{{Xfce}}
+{{Linux distributions}}
+
+&lt;!-- Interlang --&gt;
+
+{{DEFAULTSORT:Systemrescuecd}}
+&lt;!-- Categories --&gt;
+[[Category:Operating system distributions bootable from read-only media]]
+[[Category:Live USB]]
+[[Category:Gentoo Linux derivatives]]
+[[Category:Free security software]]
+[[Category:Data recovery|SystemRescueCd (TestDisk)]]
+
+[[cs:SystemRescueCd]]
+[[de:SystemRescueCd]]
+[[fr:SystemRescueCd]]
+[[it:System Rescue CD]]
+[[pl:SystemRescueCd]]
+[[ro:SystemRescueCD]]
+[[ru:SystemRescueCD]]
+[[sk:SystemRescueCd]]</rev></revisions></page></pages></query></api>

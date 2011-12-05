@@ -1,0 +1,96 @@
+<?xml version="1.0"?><api><query><pages><page pageid="1119022" ns="0" title="FileZilla"><revisions><rev xml:space="preserve">{{Distinguish|FileZilla Server}}
+
+{{primary sources|date=January 2008}}
+{{Infobox Software
+| name = FileZilla Client
+| logo = [[File:FileZilla logo.svg|64px|FileZilla Icon]]
+| screenshot = [[File:FileZilla 3.3.1.png|300px| ]]
+| caption = FileZilla 3.3.1 on [[Ubuntu 10.04]]
+| collapsible =
+| developer = Tim Kosse
+| released = February, 2001
+| frequently updated = Yes &lt;!-- Release version update? Don't edit this page, just click on the version number! --&gt;
+| programming language = [[C++]], [[wxWidgets]]
+| operating system = [[Cross-platform]]
+| language = Multilingual
+| genre = [[FTP client]]
+| license = [[GNU General Public License]] Version 2
+| website = http://filezilla-project.org
+}}
+'''FileZilla''' is [[free software|free]], [[open source]], [[cross-platform]] [[FTP]] software, consisting of FileZilla Client and FileZilla Server. Binaries are available for [[Microsoft Windows|Windows]], [[Linux]], and [[Mac OS X]]. It supports [[File Transfer Protocol|FTP]], [[SSH file transfer protocol|SFTP]], and [[FTPS]] (FTP over [[Transport Layer Security|SSL/TLS]]). As of 18 April 2011, FileZilla Client was the 7th most popular download of all time from [[SourceForge.net]].&lt;ref&gt;[http://sourceforge.net/top/topalltime.php?type=downloads SourceForge.net: All-Time Top Downloads&lt;!-- Bot generated title --&gt;]&lt;/ref&gt;
+
+[[FileZilla Server]] is a sister product of FileZilla Client. It is an FTP server supported by the same project and features support for FTP and FTP over SSL/TLS.
+
+FileZilla's source code is hosted on [[SourceForge.net]]. The project was featured as ''Project of the Month'' in November 2003.&lt;ref&gt;[http://sourceforge.net/potm/potm-2003-11.php SourceForge.net: Project of the Month (2003-11)]&lt;/ref&gt;
+
+==History==
+FileZilla was started as a [[computer science]] class project in the second week of January 2001 by Tim Kosse and two classmates.
+Before they started to write the code, they discussed on which licence they should release the code. They decided to make FileZilla an open-source project, because there were already many FTP clients available and they didn't think that they would sell even one copy if they made FileZilla commercial.&lt;ref&gt;[http://web.archive.org/web/20080423060025/http://filezilla.sourceforge.net/documentation/history.htm&lt; FileZilla history]&lt;/ref&gt;
+
+The alpha version was released in late February 2001, and all required features were implemented by beta 2.1.{{Citation needed|date=March 2010}}
+
+Version 3 of FileZilla introduced support for operating systems other than Windows, including [[Linux]] and [[Mac OS X]].{{Citation needed|date=March 2010}}
+
+==Features and limitations==
+===Features===
+; Site manager: Allows a user to create a list of FTP sites along with their connection data, such as the port number to use, the protocol to use, and whether to use anonymous or normal logon. For normal logon, the username is saved and optionally the password.{{Citation needed|date=March 2010}}
+; Directory comparison: Can compare the contents of local and remote directories.
+; Message log: Displayed along the top of the window. It displays the console-type output showing the commands sent by FileZilla and the remote server's responses.{{Citation needed|date=March 2010}}
+; File and folder view: Displayed under the message log, provides a graphical interface for FTP. Users can navigate folders and view and alter their contents on both the local and remote machines using an Explorer-style tree interface. Users can drag and drop files between the local and remote computers.{{Citation needed|date=March 2010}}
+; Transfer queue: Displayed along the bottom of the window, shows the real-time status of each queued or active file transfer.{{Citation needed|date=March 2010}}
+
+===Limitations===
+; Scripting: Cannot be scripted from a command line or internally. Only manual, interactive supported.{{Citation needed|date=March 2010}}
+; Windows 9x: As of version 2.2.23, FileZilla uses [[Unicode]] internally. As a result, it no longer runs on Windows 9x/ME.{{Citation needed|date=March 2010}}
+;Mac OS X: The current binary versions of FileZilla for Mac OS X no longer support Mac OS X v10.4 âTigerâ or earlier. Running FileZilla with versions older than Mac OS X v10.5 âLeopardâ requires compilation.&lt;ref&gt;[http://forum.filezilla-project.org/viewtopic.php?f=3&amp;t=6398&amp;p=26014 Forum thread on Tiger support]&lt;/ref&gt;
+;Timestamps - Uploading: In [[FTP]] mode date/timestamps attributes on uploaded files can only be retained if the server supports the MFMT command. In [[SSH File Transfer Protocol|SFTP]] mode the said attributes can be retained starting with FileZilla 3.0.8.{{Citation needed|date=March 2010}}
+;Timestamps - Downloading: Date/timestamps on downloaded files can only be retained if the partition on which the files are saved supports timestamps for file creation date and time. E.g. on FAT32/NTFS partitions you can keep in the download folder the original timestamps that the files have on the server. Only newer versions of FileZilla support keeping timestamps.{{Citation needed|date=March 2010}}
+
+==See also==
+* [[FileZilla Server]]
+* [[Comparison of FTP client software]]
+
+==References==
+{{reflist}}
+
+==External links==
+* [http://filezilla-project.org/ Official website]
+* [http://sourceforge.net/projects/filezilla/ Project Site] (SourceForge.net)
+
+{{FLOSS}}
+
+[[Category:Free FTP clients]]
+[[Category:SFTP clients]]
+[[Category:Portable software]]
+[[Category:Free software programmed in C++]]
+
+[[Category:Cross-platform software]]
+[[Category:Free multilingual software]]
+[[Category:Software that uses wxWidgets]]
+
+[[ar:ÙØ§ÙÙØ²ÙÙØ§]]
+[[ca:FileZilla]]
+[[cs:FileZilla]]
+[[de:FileZilla]]
+[[es:FileZilla]]
+[[eo:FileZilla]]
+[[fr:FileZilla]]
+[[ko:íì¼ì§ë¼]]
+[[id:FileZilla Client]]
+[[it:FileZilla]]
+[[ku:FileZilla]]
+[[hu:FileZilla]]
+[[ml:à´«à´¯àµ½à´¸à´¿à´²àµà´²]]
+[[nl:FileZilla]]
+[[ja:FileZilla]]
+[[pl:FileZilla (klient FTP)]]
+[[pt:FileZilla]]
+[[ru:FileZilla]]
+[[sk:FileZilla]]
+[[fi:FileZilla]]
+[[sv:Filezilla]]
+[[th:à¹à¸à¸¥à¹à¸à¸´à¸¥à¸¥à¸²]]
+[[tr:FileZilla]]
+[[uk:FileZilla]]
+[[vi:FileZilla Client]]
+[[zh:FileZilla]]</rev></revisions></page></pages></query></api>

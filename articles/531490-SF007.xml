@@ -1,0 +1,93 @@
+<?xml version="1.0"?><api><query><pages><page pageid="531490" ns="0" title="SWIG"><revisions><rev xml:space="preserve">{{Infobox software
+| name                   = SWIG
+| logo                   = &lt;!-- [[File: ]] --&gt;
+| screenshot             = &lt;!-- [[File: ]] --&gt;
+| caption                =
+| collapsible            =
+| author                 = Dave Beazley
+| developer              = SWIG developers
+| released               = February [[1996]]&lt;ref&gt;http://www.swig.org/history.html&lt;/ref&gt;&lt;!-- {{start date|YYYY|MM|DD}} --&gt;
+| discontinued           =
+| latest release version = 2.0.4
+| latest release date    = {{start date and age|2011|05|21}}
+| latest preview version =
+| latest preview date    = &lt;!-- {{start date and age|YYYY|MM|DD}} --&gt;
+| frequently updated     =
+| programming language   = C, C++
+| operating system       = [[Cross-platform]]
+| platform               =
+| size                   =
+| language               =
+| status                 =
+| genre                  =
+| license                = [[GPL]]
+| website                = {{URL|http://swig.org}}
+}}
+'''SWIG''' ('''Simplified Wrapper and Interface Generator''') is an [[open source software]] tool used to connect [[computer program]]s or [[library (computing)|libraries]] written in [[C (programming language)|C]] or [[C++]] with [[scripting language]]s such as [[Lua (programming language)|Lua]], [[Perl]], [[PHP]], [[Python (programming language)|Python]], [[R (programming language)|R]], [[Ruby (programming language)|Ruby]], [[Tcl]], and other languages like [[C Sharp (programming language)|C#]], [[Java (programming language)|Java]], [[Modula-3]], [[Objective Caml]], [[GNU Octave|Octave]], and [[Scheme (programming language)|Scheme]]. Output can also be in the form of [[XML]] or Lisp [[S-expression]]s.
+
+==Function==
+
+The aim is to allow calling native functions (C or C++) by interpreted code, passing complex data types, keeping memory from being freed, inheriting classes across languages etc. The programmer writes an interface file containing a list of C/C++ functions to be visible to an interpreter. SWIG will compile the interface file into a regular C/C++. SWIG will generate [[Marshalling (computer science)|conversion code]] for functions with simple arguments; conversion code for complex types of arguments has to be written by programmer. SWIG tool creates [[source code]] which provides the glue between C/C++ and the target language.  Depending on the language, this glue comes in two forms:
+
+* a [[library (computer science)#Shared libraries|shared library]] that an extant interpreter can link to as some form of extension module, or
+* a shared library that can be linked to other programs compiled in the target language (for example, using [[Java Native Interface|JNI]] in Java).
+
+SWIG is not used for calling interpreted functions by native code; this has to be done by the programmer manually.
+
+==Purpose==
+There are two main reasons to embed a [[scripting language|scripting engine]] in an extant C/C++ program:
+*The program can then be customized far faster, [[Ousterhout's dichotomy|via a scripting language instead of C/C++]]. The scripting engine may even be exposed to the end user, so that they can automate common tasks by writing scripts.
+*Even if the final product is not to contain the scripting engine, it may nevertheless be very useful for writing test scripts.
+
+There are several reasons to create dynamic libraries that can be loaded into extant interpreters, including:
+*Provide access to a C/C++ [[library (computer science)|library]] which has no equivalent in the scripting language.
+*Write the whole program in the scripting language first, and after [[performance analysis|profiling]], rewrite performance critical code in C or C++.
+*Unit testing of C or C++ code is often better done from a scripting language.
+
+==History==
+
+SWIG is written in C and C++ and has been publicly available since February [[1996]]. The initial author and main developer was Dave Beazley who developed SWIG while working as a graduate student at [[Los Alamos National Laboratory]] and the [[University of Utah]] and while on the faculty at  the [[University of Chicago]]. Development is currently supported by an active group of volunteers led by William Fulton. SWIG has been released under a [[GNU General Public License]].
+
+==Concurrents==
+
+For Python, similar functionality is offered by [[SIP (software)|SIP]] and [[Boost (C++ libraries)|Boost's Boost.python library]]
+
+==See also==
+* [[Language binding]]
+* [[Foreign function interface]]
+* [[Calling convention]]
+* [[Name mangling]]
+* [[Application programming interface]] - API
+* [[Application Binary Interface]] - ABI
+* [[Comparison of application virtual machines]]
+*[[Wrapper function]]
+{{Portal|Free software}}
+
+==References==
+{{Reflist}}
+
+==Projects Using SWIG==
+*[[ZXID]] (Apache2 open source)
+*Symlabs SFIS (commercial)
+* etc. Many other projects use SWIG. Please add them here.
+
+==External links==
+*{{official website|http://www.swig.org}}
+*[http://swig.sourceforge.net Project home page] at [[SourceForge]]
+*[http://www.dabeaz.com/cgi-bin/wiki.pl SwigWiki], [[Wiki]] with information on using SWIG
+*Article &quot;[http://codeguru.com/csharp/.net/net_asp/scripting/article.php/c11103/ Expose Your C/C++ Program's Internal API with a Quick SWIG]&quot; by [[Victor Volkman]]
+*Article &quot;[http://web.archive.org/web/20091028030024/http://www.geocities.com/foetsch/python/extending_python.htm Python Extensions In C++ Using SWIG]&quot; by [[Michael FÃ¶tsch]]
+*Presentation &quot;[http://blip.tv/file/1179673/ Application overview for openSUSE]&quot; by [[Klaus KÃ¤mpf]]
+*[http://citeseer.csail.mit.edu/cs?q=SWIG Citations from CiteSeer]
+
+{{DEFAULTSORT:Swig}}
+[[Category:Computer programming tools]]
+[[Category:Free computer programming tools]]
+[[Category:Scripting languages]]
+[[Category:Cross-platform software]]
+
+[[de:SWIG]]
+[[fr:SWIG]]
+[[ja:SWIG]]
+[[pl:SWIG]]
+[[ru:SWIG]]</rev></revisions></page></pages></query></api>

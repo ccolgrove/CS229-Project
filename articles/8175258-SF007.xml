@@ -1,0 +1,268 @@
+<?xml version="1.0"?><api><query><pages><page pageid="8175258" ns="0" title="VMware ESX"><revisions><rev xml:space="preserve">{{primary sources|date=November 2011}}
+{{Infobox software
+| name = VMware ESX
+| logo =
+| screenshot =
+| caption =
+| developer = [[VMware|VMware, Inc.]]
+| latest_release_version = 5.0 (build 469512)
+| latest release date = {{release date|2011|08|24}}&lt;ref&gt;{{Cite web|title=VMware ESX 5.0 |url=http://www.vmware.com/support/pubs/vsphere-esxi-vcenter-server-pubs.html|publisher=VMware, Inc.}}&lt;/ref&gt; 
+| operating_system =
+| platform = [[x86]] (discontinued in 4.0 onwards)&lt;ref&gt;{{Cite web|title=VMware ESX 4.0 only installs and runs on servers with 64bit x86 CPUs. 32bit systems are no longer supported.|url=http://kb.vmware.com/selfservice/microsites/search.do?language=en_US&amp;cmd=displayKC&amp;externalId=1009080|publisher=VMware, Inc.}}&lt;/ref&gt;, [[x86-64]]
+| genre = [[Virtual machine monitor]]
+| license = [[Proprietary software|Proprietary]]
+| website = [http://www.vmware.com/products/vi/esx/ VMware ESX]
+}}
+
+'''VMware ESX''' is an enterprise-level [[hardware virtualization|computer virtualization]] product offered by [[VMware|VMware, Inc.]] ESX is a component of VMware's larger offering, [[VMware Infrastructure]], and adds management and reliability services to the core server product.  The original ESX is being replaced by ESXi.
+
+VMware ESX and VMware ESXi are bare-metal [[embedded hypervisor]]s that are VMware's [[enterprise software]] [[hypervisor]]s for servers that run directly on [[server (computing)|server]] hardware without requiring an additional underlying [[operating system]].&lt;ref name=&quot;ESXArch&quot;&gt;{{cite web |url= http://www.vmware.com/support/esx21/doc/esx21_admin_system_architecture.html |title=ESX Server Architecture |publisher=Vmware.com |date= |accessdate=2009-10-22}} {{Dead link|date=October 2010|bot=H3llBot}}&lt;/ref&gt;
+
+The basic server requires some form of persistent storage (typically an array of [[hard disk drive]]s) for storing the hypervisor and support files. A smaller footprint variant, ESXi, does away with the first requirement by permitting placement of the hypervisor onto a dedicated compact storage device. Both variants support the services offered by VMware Infrastructure.&lt;ref&gt;{{Cite web |title=Meet the Next Generation of Virtual Infrastructure Technology |url=http://www.vmware.com/vmworldnews/esx.html |publisher=VMware |accessdate=2007-09-21}}&lt;/ref&gt;
+
+== Naming ==
+''ESX'' allegedly stands for &quot;Elastic Sky X&quot;.&lt;ref&gt;
+{{cite web
+|url         = http://www.vmware.com/support/developer/studio/studio25/studio_developer.pdf
+|title       = Glossary
+|year        = 2011
+|work        = Developerâs Guide to Building vApps and Virtual Appliances: VMware Studio 2.5
+|publisher   = VMware Inc
+|location    = Palo Alto
+|page        = 153
+|accessdate  = 2011-11-09
+|quote       = ESXi[:] Elastic Sky X (ESX) pared down to a bare-metal server [...]
+}}
+&lt;/ref&gt;
+
+==Technical description==
+VMware, Inc. refers to the [[hypervisor]] used by VMware ESX as &quot;vmkernel&quot;.
+
+===Architecture===
+VMware states that the ESX product runs on &quot;bare metal&quot;.&lt;ref name=&quot;ESXDatasheet&quot;&gt;[http://www.vmware.com/pdf/esx_datasheet.pdf &quot;ESX Server Datasheet&quot;]&lt;/ref&gt; In contrast to other VMware products, it does not run atop a third-party operating system,&lt;ref name=&quot;ESXArch&quot;&gt;{{Cite web |url= http://www.vmware.com/support/esx21/doc/esx21_admin_system_architecture.html |title=ESX Server Architecture |publisher=Vmware.com |date= |accessdate=2009-07-01 |archiveurl = http://web.archive.org/web/20070929084239/http://www.vmware.com/support/esx21/doc/esx21_admin_system_architecture.html |archivedate = September 29, 2007}}&lt;/ref&gt; but instead includes its own kernel. Up through the current ESX version 4.1, a [[Linux kernel]] is started first,&lt;ref name=esxbootvideo&gt;{{Cite web |url= http://video.google.com.au/videoplay?docid=-8007161406494547506 |title=ESX machine boots |publisher=Video.google.com.au |date=2006-06-12 |accessdate=2009-07-01}}&lt;/ref&gt; and is used to load a variety of specialized virtualization components, including VMware's vmkernel component. This previously-booted Linux kernel then becomes the first running virtual machine and is called the service console. Thus, at normal run-time, the vmkernel is running on the bare computer and the Linux-based service console runs as the first virtual machine.
+
+The vmkernel itself, which VMware says is a [[microkernel]],&lt;ref&gt;{{Cite web |url= http://www.vmware.com/company/news/releases/64bit.html |title=Support for 64-bit Computing |publisher=Vmware.com |date=2004-04-19 |accessdate=2009-07-01}}&lt;/ref&gt; has three interfaces to the outside world:
+* hardware
+* guest systems
+* service console (Console OS)
+
+====Interface to hardware====
+The vmkernel handles CPU and memory directly, using scan-before-execution (SBE) to handle special or privileged CPU instructions&lt;ref name=&quot;ESXAnalyse&quot;&gt;[http://www13.informatik.tu-muenchen.de/lehre/seminare/WS0506/hauptsem/Ausarbeitung02.pdf Gerstel, Markus: &quot;VirtualisierungsansÃ¤tze mit Schwepunkt Xen&quot;]{{Dead link|date=July 2009}}
+&lt;/ref&gt;
+and the SRAT (system resource allocation table) to track allocated memory.&lt;ref&gt;
+{{cite web
+| url         = http://www.vmware.com/pdf/esx2_NUMA.pdf
+| title       = VMware ESX Server 2: NUMA Support
+| year        = 2005
+| publisher   = VMware Inc
+| location    = Palo Alto, California
+| page        = 7
+| pages       = 7
+| accessdate  = 2011-03-29
+| quote       = SRAT (system resource allocation table) - table that keeps track of memory allocated to a virtual machine.
+}}
+&lt;/ref&gt;
+
+Access to other hardware (such as network or storage devices) takes place using modules. At least some of the modules derive from modules used in the [[Linux kernel]]. To access these modules, an additional module called &lt;code&gt;vmklinux&lt;/code&gt; implements the Linux module interface. According to the README file, &quot;This module contains the Linux emulation layer used by the vmkernel.&quot;&lt;ref name=&quot;ESXOpenSource&quot;&gt;{{Cite web|url=http://www.vmware.com/download/open_source.html |title=ESX Server Open Source |publisher=Vmware.com |date= |accessdate=2009-07-01}}&lt;/ref&gt;
+
+The vmkernel uses the device drivers:&lt;ref name=&quot;ESXOpenSource&quot;/&gt;
+# net/e100
+# net/e1000
+# net/e1000e
+# net/bnx2
+# net/tg3
+# net/forcedeth
+# net/pcnet32
+# block/cciss
+# scsi/adp94xx
+# scsi/aic7xxx
+# scsi/aic79xx
+# scsi/ips
+# scsi/lpfcdd-v732
+# scsi/megaraid2
+# scsi/mptscsi_2xx
+# scsi/qla2200-v7.07
+# scsi/megaraid_sas
+# scsi/qla4010
+# scsi/qla4022
+# scsi/vmkiscsi
+# scsi/aacraid_esx30
+# scsi/lpfcdd-v7xx
+# scsi/qla2200-v7xx
+
+These drivers mostly equate to those described in VMware's [[hardware compatibility list]].&lt;ref =&quot;ESXHCL&quot;&gt;{{Cite web|url=http://www.vmware.com/resources/techresources/cat/119 |title=ESX Hardware Compatibility List |publisher=Vmware.com |date=2008-12-10 |accessdate=2009-07-01}}&lt;/ref&gt; All these modules fall under the [[GNU General Public License|GPL]]. Programmers have adapted them to run with the vmkernel: VMware Inc has changed the module-loading and some other minor things.&lt;ref name=&quot;ESXOpenSource&quot;/&gt;
+
+====Datacenter====
+Large companies might use datacenter for hosts and virtual machines as a primary container. Multiple datacenters can be used to represent organizational/business units......
+
+====Service console====
+The Service Console is a vestigial general purpose operating system most significantly used as  bootstrap for the VMware kernel, vmkernel, and secondarily used as a management interface. Both of these Console Operating System functions are being deprecated as VMware migrates to exclusively the 'embedded' ESX model, current version being ESXi.&lt;ref&gt;{{Cite web|url=http://blogs.vmware.com/esxi/2009/06/esxi-vs-esx-a-comparison-of-features.html |title=ESXi vs. ESX: A comparison of features |publisher=Vmware, Inc |date= |accessdate=2009-06-01}}&lt;/ref&gt;
+The Service Console, for all intents and purposes, is the operating system used to interact with VMware ESX and the virtual machines that run on the server.
+
+===Linux dependencies===
+ESX uses a [[Linux kernel]] to load additional code: often referred to by VMware, Inc. as the &quot;vmkernel&quot;. The dependencies between the &quot;vmkernel&quot; and the Linux part of the ESX server have changed drastically over different major versions of the software. The VMware FAQ&lt;ref name=faq&gt;[http://www.vmware.com/products/vi/esx/faqs.html VMware FAQ]{{Dead link|date=July 2009}}&lt;/ref&gt; states: &quot;ESX Server also incorporates a service console based on a Linux 2.4 kernel that is used to boot the ESX Server virtualization layer&quot;. The Linux kernel runs before any other software on an ESX host.&lt;ref name=&quot;esxbootvideo&quot;/&gt;
+On ESX versions 1 and 2, no VMkernel processes run on the system during the boot process.&lt;ref name=esxtechnicaldesignguide&gt;[http://www.vi3book.com/esxatdg_ch2.pdf ESX Server Advanced Technical Design Guide]{{Dead link|date=July 2009}}&lt;/ref&gt;
+After the Linux kernel has loaded, the S90vmware script loads the vmkernel.&lt;ref name=&quot;esxtechnicaldesignguide&quot;/&gt;
+VMware Inc states that vmkernel does not derive from Linux, but acknowledges that it has adapted certain device-drivers from Linux device drivers. The Linux kernel continues running, under the control of the vmkernel, providing functions including the proc file system used by the ESX and an environment to run support applications.&lt;ref name=&quot;esxtechnicaldesignguide&quot;/&gt;
+ESX version 3 loads the VMkernel from the Linux [[initrd]], thus much earlier in the boot-sequence than in previous ESX versions.
+
+In traditional systems, a given operating system runs a single kernel. The VMware FAQ mentions that ESX has both a Linux 2.4 kernel and vmkernel â hence confusion over whether ESX has a Linux base. An ESX system starts a Linux kernel first, but it loads vmkernel (also described by VMware as a kernel), which according to VMware 'wraps around' the linux kernel, and which (according to VMware Inc) does not derive from Linux.
+
+The ESX [[userspace]] environment, known as the &quot;Service Console&quot; (or as &quot;COS&quot; or as &quot;vmnix&quot;), derives from a modified version of [[Red Hat Linux]], (Red Hat 7.2 for ESX 2.x and [[Red Hat Enterprise Linux]] 3 for ESX 3.x). In general, this Service Console provides management interfaces ([[command line interface|CLI]], webpage MUI, [[Remote administration|Remote Console]]). This VMware ESX [[Hypervisor|hypervisor virtualization]] approach provides lower overhead and better control and granularity for allocating resources{{Citation needed|date=December 2009}} (CPU-time, disk-bandwidth, network-bandwidth, memory-utilization) to virtual machines, compared to so-called &quot;hosted&quot; virtualization, where a base OS handles the physical resources. It also increases security.
+
+As a further detail which differentiates the ESX from other VMware virtualization products: ESX supports the VMware proprietary cluster file system [[VMFS]]. VMFS enables multiple hosts to access the same [[Storage area network|SAN]] [[Logical Unit Number|LUNs]] simultaneously, while file-level locking provides simple protection to file-system integrity.
+
+===Purple Screen of Death===
+[[File:VMware ESX PSOD.png|thumb|right|A Purple Screen of Death as seen in VMware ESX Server 3.0]]
+In the event of a hardware error, the vmkernel can 'catch' a Machine Check Exception.&lt;ref name=kb&gt;[http://kb.vmware.com/kb/1005184|title= &quot;KB: Decoding Machine Check Exception (MCE) output after a purple screen error|publisher=VMware, Inc.&quot;]&lt;/ref&gt; This results in an error message displayed on a purple console screen. This is colloquially known as a PSOD, or Purple Screen of Death (cf. [[Blue Screen of Death]]).
+
+Upon displaying a PSOD, the vmkernel writes debug information to the core dump partition. This information, together with the error codes displayed on the PSOD can be used by VMware support to determine the cause of the problem.
+
+==Related products==
+The following products operate in conjunction with ESX:
+* vCenter Server, enables monitoring and management of multiple ESX, ESXi and GSX servers. In addition, users must install it to run infrastructure services such as:
+** [http://www.vmware.com/products/vi/vc/vmotion.html VMotion] (transferring virtual machines between servers on the fly, with zero downtime)&lt;ref&gt;http://www.vmware.com/files/pdf/VMware-VMotion-DS-EN.pdf&lt;/ref&gt;
+** [http://www.vmware.com/products/vi/storage_vmotion_overview.html SVMotion] (transferring virtual machines between Shared Storage LUNs on the fly, with zero downtime)&lt;ref&gt;http://www.vmware.com/files/pdf/VMware-Storage-VMotion-DS-EN.pdf&lt;/ref&gt;
+** [http://www.vmware.com/products/vi/vc/drs.html DRS] (automated VMotion based on host/VM load requirements/demands)
+** [http://www.vmware.com/products/vi/vc/ha.html HA] (restarting of Virtual Machine Guests in the event of a physical ESX Host failure)
+* Converter, enables users to create VMware ESX Server- or Workstation-compatible virtual machines from either physical machines or from virtual machines made by other virtualization products. Converter replaces the VMware &quot;P2V Assistant&quot; and &quot;Importer&quot; products â P2V Assistant allowed users to convert physical machines into virtual machines; and Importer allowed the import of virtual machines from other products into VMware Workstation.
+* vSphere Client (formerly VMware Infrastructure Client), enables monitoring and management of a single instance of ESX or ESXi server.  After ESX 4.1, vSphere Client was no longer available from the ESX/ESXi server, but must be downloaded from the VMware web site.
+** [http://vsphereclient.vmware.com/vsphereclient/2/5/8/9/0/2/VMware-viclient-all-4.1.0-258902.exe vSphere Client 4.1.0]
+
+===VMware ESX===
+Version release history:
+
+* VMware ESX Server 1.0 First release was in 2001
+* VMware ESX Server 1.1 (January 7, 2002)
+
+VMware ESX 1.5
+*VMware ESX Server 1.5 (May 13, 2002)
+
+VMware ESX 2.0 (July 21, 2003)
+*VMware ESX Server 2.1 Build 22983 (4/13/06)
+*VMware ESX Server 2.0.2 Build 23922 (5/4/06)
+
+VMware ESX 2.5 (December 14, 2004)
+*VMware ESX Server 2.5.0 Build 11343 (11/29/2004)
+*VMware ESX Server 2.5.1 Build 13057 (05/20/2005)
+*VMware ESX Server 2.5.1 Build 14182 (06/20/2005)
+*VMware ESX Server 2.5.2 Build 16390 (09/15/2005)
+*VMware ESX Server 2.5.3 Build 22981 (04/13/2006)
+*VMware ESX Server 2.5.4 Build 32233 (10/05/2006)
+*VMware ESX Server 2.5.5 Build 57619 (10/08/2007)
+
+VMware Infrastructure 3.0 (VI3) (June 5, 2006)
+*VMware ESX Server 3.0   Build 27701 (06/13/06)
+*VMware ESX Server 3.0.1 Build 32039 (09/25/06)
+*VMware ESX Server 3.0.2 Build 52542 (07/31/07)
+*VMware ESX Server 3.0.3 Build 104629 (August 8, 2008)
+*VMware ESX Server 3.0.3 Update 1 Build 231127 (08 Mar 2010)
+
+*VMware ESX Server 3.5 (December 10, 2007)
+*VMware ESX Server 3.5          Build 64607 (20 Feb 2008)
+*VMware ESX Server 3.5 Update 1 Build 82663 (10 Apr 2008)
+*VMware ESX Server 3.5 Update 2 Build 110268 (13 Aug 2008)
+*VMware ESX Server 3.5 Update 3 Build 123630 (6 Nov 2008)
+*VMware ESX Server 3.5 Update 4 Build 153875 (30 Mar 2009)
+*VMware ESX Server 3.5 Update 5 Build 207095 (03 Dec 2009)
+
+VMware vSphere 4.0 (May 20, 2009)
+*VMware ESX 4.0 Build 164009 (21 May 2009)
+*VMware ESX 4.0 Update 1 Build 208167 (19 Nov 2009)
+*VMware ESX 4.0 Update 2 Build 261974 (10 Jun 2010)
+*VMware ESX 4.0 Update 3 Build 398348 (5 May 2011)
+*VMware ESX 4.0 Update 4 Build 504850 ({{release date|2011|11|17}})
+*VMware ESX 4.1 Build 260247 (July 13, 2010)
+*VMware ESX 4.1 Update 1 Build 348481 (Feb 10, 2011)
+*VMware ESX 4.1 Update 2 Build 502767 (Oct 27, 2011)
+
+July 18, 2010
+vSphere 4.1 and its subsequent update and patch releases are the last releases to include both ESX and ESXi hypervisor architectures. Future major releases of VMware vSphere will include '''only''' the VMware ESXi architecture. For this reason, VMware recommends that deployments of vSphere 4.x utilize the ESXi hypervisor architecture.
+
+===VMware ESXi===
+{{Infobox software
+| name = VMware ESXi
+| logo =
+| screenshot =
+| caption =
+| developer = [[VMware|VMware, Inc.]]
+| latest_release_version = 5.0 (build 456551)
+| latest release date = {{release date|2011|8|24}}&lt;ref&gt;{{Cite web|title=VMware vSphere 5.0 Release Notes |url=http://www.vmware.com/support/vsphere5/doc/vsphere-esx-vcenter-server-50-release-notes.html |publisher=VMware, Inc.}}&lt;/ref&gt;
+| operating_system =
+| platform = [[x64 architecture|x64]]-compatible
+| genre = [[Virtual machine monitor]]
+| license = [[Proprietary software|Proprietary]]
+| website = [http://www.vmware.com/products/esxi/ VMware ESXi]
+}}
+
+VMware ESXi is a smaller footprint version of ESX that does not include ESX's Service Console. It is available as a free download from VMware though certain features are disabled&lt;ref&gt;{{Cite web|url=http://kb.vmware.com/selfservice/microsites/search.do?language=en_US&amp;cmd=displayKC&amp;externalId=1023990 |title=VMware ESX and ESXi 4.1 Comparison |publisher=Vmware.com |date= |accessdate=2011-06-09}}&lt;/ref&gt; without the purchase of a vCenter license.
+
+VMware ESXi was originally a compact version of VMware ESX that allowed for a smaller 32 MB disk footprint on the Host. With a simple configuration console for mostly network configuration and remote based VMware Infrastructure Client Interface, this allows for more resources to be dedicated to the Guest environments.
+
+There are two variations of ESXi, VMware ESXi Installable and VMware ESXi Embedded Edition. It has the ability to upgrade to [[VMware Infrastructure]] 3&lt;ref&gt;{{Cite web|url=http://www.vmware.com/products/esxi/ |title=Free VMware ESXi: Bare Metal Hypervisor with Live Migration |publisher=Vmware.com |date= |accessdate=2009-07-01}}&lt;/ref&gt; or [[VMware vSphere]] 4.0 ESXi.
+
+Originally named VMware ESX Server ESXi edition, through several revisions, finally becoming VMware ESXi 3. New editions then followed ESXi 3.5, ESXi 4 and now ESXi 5.
+
+Version release history:
+* VMware ESX 3 Server ESXi edition
+* -- unknown --
+* VMware ESXi 3.5 First Public Release (Build 67921) ({{release date|2007|12|31}})
+* VMware ESXi 3.5 Initial Release (Build 70348)
+* VMware ESXi 3.5 Update 1 (Build 82664)
+* VMware ESXi 3.5 Update 2 (Build 110271)
+* VMware ESXi 3.5 Update 3 (Build 123629)
+* VMware ESXi 3.5 Update 4 (Build 153875)
+* VMware ESXi 3.5 Update 5 (Build 207095)
+* VMware ESXi 4.0 (Build 164009) ({{release date|2009|5|21}})
+* VMware ESXi 4.0 Update 1 (Build 208167)
+* VMware ESXi 4.0 Update 2 (Build 261974) ({{release date|2010|6|10}})
+* VMware ESXi 4.0 Update 3 Build 398348 ({{release date|2011|5|5}})
+* VMware ESXi 4.0 Update 4 Build 504850 ({{release date|2011|11|17}})
+* VMware ESXi 4.1 (Build 260247) ({{release date|2010|7|13}})
+* VMware ESXi 4.1 Update 1 (Build 348481) ({{release date|2011|2|10}})
+* VMware ESXi 4.1 Update 2 (Build 502767) ({{release date|2011|10|27}})
+* VMware ESXi 5.0 (Build 456551) ({{release date|2011|08|24}})
+
+==Known limitations==
+Known limitations of VMware ESX, as of May 2009, include the following:
+
+===Infrastructure limitations===
+Some limitations in ESX Server 4 may constrain the design of data centers:&lt;ref&gt;{{Cite web|publisher=VMware, Inc. |url=http://www.vmware.com/pdf/vsphere4/r41/vsp_41_config_max.pdf |title=Configuration Maximums |date=2010-07-13 |accessdate=2010-07-13 |format=PDF}}&lt;/ref&gt;&lt;ref&gt;{{Cite web|publisher=VMware, Inc. |url=http://www.vmware.com/files/pdf/vsphere_performance_wp.pdf |title=What's new in VMware vSphere 4: Performance Enhancements |format=PDF}}&lt;/ref&gt;
+* Guest system maximum RAM: 255 GB
+* Host system maximum RAM: 1&amp;nbsp;TB&lt;ref&gt;{{Cite web|publisher=VMware, Inc. |url=http://www.vmware.com/pdf/vsphere4/r41/vsp_41_config_max.pdf |title=Configuration Maximums |date=2010-07-13 |accessdate=2010-07-13 |format=PDF}}&lt;/ref&gt;
+* Number of hosts in a [[high availability]] cluster: 32
+* Number of Primary Nodes in ESX Cluster high availability: 5 
+* Number of hosts in a Distributed Resource Scheduler cluster: 32
+* Maximum number of processors per virtual machine: 8
+* Maximum number of processors per host: 160
+* Maximum number of cores per processor: 12
+* Maximum number of virtual machines per host: 320
+* VMFS-3 limits files to 262,144 (2&lt;sup&gt;18&lt;/sup&gt;) blocks, which translates to 256 GB for 1 MB block sizes (the default) or up to 2 TB for 8 MB block sizes.&lt;ref&gt;{{cite web |url=http://www.vmware.com/pdf/vi3_301_201_config_max.pdf |title=Configuration Maximums for VMware Infrastructure 3 |format=PDF |date=2007-07-23 |accessdate=2007-09-26 |publisher=VMware}}&lt;/ref&gt; However you should be aware that on a VMFS Boot drive, it is very difficult to use anything other than 1 MB Block size.
+
+===Performance limitations===
+In terms of performance, virtualization imposes a cost in the additional work the CPU has to perform to virtualize the underlying hardware. Instructions that perform this extra work, and other activities that require virtualization, tend to lay in operating system calls. In an unmodified operating system, OS calls introduce the greatest portion of virtualization &quot;overhead&quot;.
+
+[[Paravirtualization]] or other virtualization techniques may help with these issues. VMware invented the [[Virtual Machine Interface]] for this purpose, and selected operating systems {{As of|2008|alt=currently}} support this. A comparison between [[full virtualization]] and [[paravirtualization]] for the ESX Server&lt;ref&gt;{{Cite web|publisher=VMware, Inc. |url=http://www.vmware.com/pdf/VMware_VMI_performance.pdf |title=Performance of VMware VMI |date=2008-02-13 |accessdate=2009-01-22 |format=PDF}}&lt;/ref&gt; shows that in some cases paravirtualization is much faster.
+
+==See also==
+* [[Comparison of platform virtual machines]]
+* [[List of VMware software]]
+* [[Virtual appliance]]
+* [[Virtual machine]]
+* [[Virtual disk image]]
+* [[VMware VMFS]]
+* [[x86 virtualization]]
+
+==References==
+{{Reflist|2}}
+
+==External links==
+* [http://www.vmware.com/products/vsphere/esxi-and-esx/index.html VMware ESX product page]
+* [http://www.happysysadm.com/2010/11/esx-server-troubleshooting.html ESX server troubleshooting]
+
+{{DEFAULTSORT:Vmware Esx}}
+[[Category:VMware]]
+
+[[es:VMware ESX]]
+[[it:VMware ESX Server]]
+[[ru:VMware ESX]]</rev></revisions></page></pages></query></api>

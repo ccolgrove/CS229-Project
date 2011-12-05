@@ -1,0 +1,89 @@
+<?xml version="1.0"?><api><query><pages><page pageid="25140600" ns="0" title="Chromium OS"><revisions><rev xml:space="preserve">{{lead too short|date=October 2011}}
+{{linkrot|date=October 2011}}
+{{Infobox OS
+| name = Chromium OS
+| logo = [[File:Chromium 11 Wordmark Logo.svg|200px|center|Chromium]]
+| screenshot         =&lt;!-- Deleted image removed:  [[File:Chromium OS Screnshot.png|300px]] --&gt;
+| caption            = Screenshot of Chromium OS Vanilla v0.13 running in a [[Virtual Machine]]
+| developer = [[Google|Google Inc.]]
+| family = [[Unix-like]]
+| license = Various
+| language =
+| kernel_type = [[Monolithic kernel|Monolithic]] ([[Ubuntu (operating system)|Ubuntu]]&lt;ref name=&quot;Chromium OS Kernel Design&quot;&gt;{{cite web|url=http://www.chromium.org/chromium-os/chromiumos-design-docs/chromium-os-kernel|title=Kernel Design: Background, Upgrades|publisher=Google|accessdate=7 September 2011}}&lt;/ref&gt; [[Linux kernel]])
+| ui = [[Graphical user interface|Graphical]] (Web-based)
+| working_state = [[Alpha release|Alpha]]
+| website = [http://dev.chromium.org/chromium-os dev.chromium.org]
+| supported_platforms = [[x86]], [[ARM architecture|ARM]]&lt;ref name=&quot;Bloomberg&quot;&gt;{{cite web|last=Womack|first=Brian|date=2009-07-08|accessdate=2009-07-08|url=http://www.bloomberg.com/apps/news?pid=20601087&amp;sid=aTd2k.YdQZ.Y|title=Google to Challenge Microsoft With Operating System|publisher=Bloomberg.com}}&lt;/ref&gt;
+| updatemodel =
+| package_manager = [[Portage (software)|Portage]]&lt;ref&gt;{{cite web|url=http://groups.google.com/a/chromium.org/group/chromium-os-dev/browse_thread/thread/337cca9a0da59ad6/9354a38894da5df5|title=Upcoming build system changes|last=Cairns|first=Ryan|date=2010-02-05|work=Chromium OS dev|publisher=Google Groups|accessdate=2010-03-23}}&lt;/ref&gt;
+}}
+
+'''Chromium OS''' is the [[open source]] development version of [[Google Chrome OS]]. 
+
+Chrome OS's [[source code]] was released on November 19, 2009 under the same [[BSD licenses|BSD license]] as Chromium OS.&lt;ref&gt;{{cite web|url=http://googleblog.blogspot.com/2009/11/releasing-chromium-os-open-source.html|title=Releasing the Chromium OS open source project|last=Sengupta|first=Caesar|date=2009-11-19|work=Official Google Blog|publisher=Google, Inc.|accessdate=2009-11-19}}&lt;/ref&gt;
+
+==User interface==
+Chromium OS uses the new &lt;code&gt;new:tab&lt;/code&gt; page found in Google Chrome to open web apps. Compared to prior builds, this replaces the applications page. Chromium OS provides a clock, battery indicator and network status indicator. The {{Keypress|Ctrl|Alt|/}} key combination toggles a keyboard overlay that shows the function of all the shortcut keys used in Chromium, including task and memory managers also found in the Chrome browser, and a command-line interface that accepts common Linux commands.&lt;ref name=&quot;Chromium Developer FAQ&quot;&gt;{{cite web|url=http://www.chromium.org/chromium-os/how-tos-and-troubleshooting/developer-faq|title=Developer FAQ|publisher=Google|accessdate=12 December 2009}}&lt;/ref&gt;&lt;ref name=&quot;Yegulalp &quot;&gt;{{cite web|url=http://www.informationweek.com/news/software/operatingsystems/showArticle.jhtml?articleID=222000239|title=Google Chrome OS Previewed|last=Yegulalp |first=Serdar|date=December 5, 2009 |work=InformationWeek|accessdate=6 December 2009}}&lt;/ref&gt;&lt;ref name=&quot;eWeek first-look review&quot;&gt;{{cite web|url=http://www.eweek.com/c/a/Application-Development/REVIEW-Google-Chrome-OS-Developer-Edition-Provides-Intriguing-Look-at-WebOnly-Computing-446612/|title=REVIEW: Google Chrome OS Developer Edition Provides Intriguing Look at Web-Only Computing |last=Rapoza|first=Jim|date=December 3, 2009|publisher=eWeek.com|accessdate=4 December 2009}}&lt;/ref&gt;
+
+==Architecture==
+In preliminary design documents, Google describes a three-tier architecture: [[firmware]], [[web browser]] and [[window manager]], and system-level software and [[Userland (computing)|userland]] services.&lt;ref name=&quot;Security overview&quot;&gt;{{cite web|url=http://sites.google.com/a/chromium.org/dev/chromium-os/chromiumos-design-docs/security-overview|title=Security Overview: Chromium OS design documents|publisher=Google|accessdate=25 November 2009}}&lt;/ref&gt;
+* The firmware contributes to fast boot time by not probing for [[hardware]], such as [[floppy disk]] drives, that are no longer common on computers, especially [[netbook]]s. The firmware also contributes to security by verifying each step in the boot process and incorporating system recovery.&lt;ref name=&quot;Security overview&quot; /&gt;
+* System-level software includes the Linux kernel that has been patched to improve boot performance. Userland software has been trimmed to essentials, with management by [[Upstart]], which can launch services in parallel, re-spawn crashed jobs, and defer services in the interest of faster booting.&lt;ref name=&quot;Security overview&quot; /&gt;
+* The window manager handles user interaction with multiple client windows much like other [[X window]] managers.&lt;ref name=&quot;Security overview&quot; /&gt;
+
+== Builds ==
+By May 2010, compiled versions of the work-in-progress source code had been downloaded from the Internet more than a million times.  The most popular version entitled &quot;Chromium OS Flow&quot; was created by Liam McLoughlin, a then 17-year-old college student in [[Manchester, England]], posting under the name &quot;Hexxeh&quot;. McLoughlin's builds boot from a USB memory stick and included  features that Google engineers had not yet implemented, such as support for the [[Java (programming language)|Java programming language]].&lt;ref name=&quot;NYT:Hexxeh&quot;&gt;{{cite news|last=Stone|first=Brad|title=Test Flights Into the Google Cloud|url=http://www.nytimes.com/2010/05/09/business/09ping.html?scp=1&amp;sq=hexxeh&amp;st=nyt|newspaper=New York Times|date=May 7, 2010}}&lt;/ref&gt;  
+
+While Google did not expect that hobbyists would use and evaluate Chromium OS ahead of its official release, [[Sundar Pichai]], Google vice president of product management, said that &quot;what people like Hexxeh are doing is amazing to see.&quot; Pichai said the early releases were an unintended consequence of open source development. &quot;If you decide to do open-source projects, you have to be open all the way.&quot;&lt;ref name=&quot;NYT:Hexxeh&quot;/&gt;
+
+Hexxeh's work continued into the following year. He announced &quot;Chromium OS Lime&quot; in December 2010,&lt;ref&gt;{{cite web|last=Hexxeh|title=Now with a citrus twist|url=http://hexxeh.net/?p=328117639|work=Hexxeh's Blog|accessdate=30 June 2011}}&lt;/ref&gt;  and in January 2011, released &quot;Luigi&quot;, an application designed to &quot;[[Privilege escalation|jailbreak]]&quot;/&quot;[[Rooting (Android OS)|root]]&quot; the [[Google]] [[Cr-48]] &quot;Mario&quot; prototype hardware and install a generic [[BIOS]].&lt;ref&gt;{{cite web|last=Hexxeh|title=Your princess is in another castleâ¦|url=http://hexxeh.net/?p=328117655|work=Hexxeh's Blog|accessdate=30 June 2011}}&lt;/ref&gt; The developer made the builds available in virtual machine format on March 13, 2011, the date of his most recent blog posting.&lt;ref&gt;{{cite web|last=Hexxeh|title=In my VirtualBox?|url=http://hexxeh.net/?p=328117684|work=Hexxeh's Blog|accessdate=30 June 2011}}&lt;/ref&gt; With no official build of Chromium OS forthcoming from Google, Hexxeh's &quot;Vanilla&quot; nightly builds of Chromium OS remain the principal resource for people wanting to try Chromium OS. 
+
+In May 2011, [[Dell Computer]] also released a new build for Dell Inspiron Mini 10v netbook, following up on an earlier build released almost 18 months earlier. The build did not support audio, but was bootable from a USB drive.&lt;ref&gt;{{cite news|last=Linder|first=Brad|title=Dell releases Chromium OS build for Inspiron Mini netbooks|url=http://liliputing.com/2011/05/dell-releases-chromium-os-build-for-inspiron-mini-netbooks.html|accessdate=16 May 2011|newspaper=Liliputing|date=May 15, 2011}}&lt;/ref&gt;   
+
+&lt;center&gt;&lt;gallery&gt;
+File:ChromiumOS Cherry - on web.png     | ChromiumOS Cherry &lt;br /&gt;Now known as &quot;Flow&quot;&lt;br/&gt;(4 December 2009)
+File:ChromiumOS Zero - login screen.png | ChromiumOS Zero&lt;br /&gt;Now known as &quot;Vanilla &quot;&lt;br/&gt;(9 December 2009)
+File:ChromiumOS Flow - login screen.png | ChromiumOS Flow&lt;br/&gt;(15 February 2010)
+File:Chromium OS Logon Screen.png | ChromiumOS Vanilla Login Screen&lt;br/&gt;(15 March 2011)
+&lt;/gallery&gt;&lt;/center&gt;
+
+==Devices==
+Some devices have shipped with Chromium OS preinstalled.  They include the Kogan Agora Chromium Laptop by the Australian company [[Kogan Technologies|Kogan]]&lt;ref&gt;[http://www.kogan.com.au/shop/agora-12-ultra-portable-laptop-chromium-os/ Agora 12&quot; Ultra Portable Laptop powered by Google Chromium OS - Buy your Google Chromium OS laptop computers from Kogan&lt;!-- Bot generated title --&gt;]&lt;/ref&gt;&lt;ref&gt;{{cite news| url=http://onespot.wsj.com/gadgets/2011/06/02/5549d/kogan-agora-is-worlds-first-google | work=The Wall Street Journal}}&lt;/ref&gt; and the  [[Xi3]] modular computer, introduced by the company of the same name.&lt;ref&gt;[http://www.engadget.com/2010/11/11/xi3-modular-computer-is-one-cool-looking-desktop-in-a-cube/ Xi3 Modular PC]&lt;/ref&gt;&lt;ref&gt;[http://www.engadget.com/2011/05/23/xi3-modular-pc-reborn-as-chrome-desktop-promises-independence-f/ ChromiumPC]&lt;/ref&gt;
+
+==See also==
+{{Portal box|Free software|Linux|Computer Science|Information technology}}
+*[[Google Chrome OS]]
+*[[Google Chrome]]
+*[[Chromium (web browser)]]
+*[[Android (operating system)]]
+*[[Boot 2 Gecko]]
+*[[EasyPeasy]]
+*[[Joli OS]]
+*[[Webconverger]] operating system based on [[Firefox]]
+{{-}}
+
+==References==
+{{Reflist|30em}}
+
+==External links==
+* {{official|http://www.chromium.org/chromium-os}}
+* [http://chromeos.hexxeh.net/ Chromium Builds by Hexxeh]
+* [http://safichromiumos.blogspot.com/ Chromium OS Build For Acer Aspire One]
+{{Linux-distro}}
+{{Google Inc.|corporate=no}}
+
+{{DEFAULTSORT:Chromium Os}}
+[[Category:Google software]]
+[[Category:Linux distributions]]
+
+[[es:Chromium OS]]
+[[fa:Ø³ÛØ³ØªÙâØ¹Ø§ÙÙ Ú©Ø±ÙÙÛÙ]]
+[[fr:Chromium OS]]
+[[he:Chromium OS]]
+[[ko:í¬ë¡ë¯¸ì OS]]
+[[mr:à¤à¥à¤°à¥à¤®à¤¿à¤¯à¤® à¤à¤à¤¸]]
+[[pl:Chromium OS]]
+[[ru:Chromium OS]]
+[[sv:Chromium OS]]
+[[tr:Chromium OS]]
+[[zh:Chromium OS]]</rev></revisions></page></pages></query></api>

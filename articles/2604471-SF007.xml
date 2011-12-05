@@ -1,0 +1,51 @@
+<?xml version="1.0"?><api><query><pages><page pageid="2604471" ns="0" title="Majordomo (software)"><revisions><rev xml:space="preserve">{{unreferenced|date=February 2007}}
+{{Infobox Software
+| name = Majordomo
+| logo = 
+| developer = Brent Chapman
+| latest_release_version = 1.94.5
+| latest_release_date = {{release date|2000|1|19}}
+| genre = [[Mailing lists]]
+| programming language   = [[Perl]] (&lt; 5.10)
+| operating_system = [[Unix]]
+| status                 = End of life
+| license = proprietary
+| website = http://www.greatcircle.com/majordomo
+}}
+'''Majordomo''' is a [[Electronic mailing list|mailing list manager]] (MLM) developed by Brent Chapman of Great Circle Associates. It is written in [[Perl]] and works in conjunction with [[sendmail]] on [[UNIX]] and related operating systems. In [[Latin]], &quot;major domo&quot; means &quot;head of the house&quot;; in English,  the word is used to refer to a large household's chief servant. 
+
+The current version of Majordomo is 1.94.5, [http://www.greatcircle.com/lists/majordomo-announce/mhonarc/majordomo-announce.2000/msg00000.html  released Jan. 19, 2000].
+
+The last released version of majordomo does not work with Perl 5.10 because it uses deprecated language constructs. Therefore it cannot be used on any modern UNIX system that ships with a recent [[Perl]] version.
+
+==History==
+Majordomo has been in widespread use since 1992, predating the popularity of the [[web browser]], in an era when many people had access to email but didn't have [[WWW]] access. As a result, tasks such as subscribing and unsubscribing are handled by sending mail messages, a process that may seem cumbersome today.
+
+There are front-ends, such as [http://www.siliconexus.com/MajorCool/ MajorCool], to provide a web interface. Many [[mailing lists]] still use Majordomo. There is work being done to [[Rewrite (programming)|completely rewrite]] Majordomo with a focus on keeping the familiar email interface while greatly improving the web interface and other features. This coding effort is referred to as Majordomo 2 and is currently being used by the [[OpenBSD]] project among others.
+
+Before Majordomo, mailing lists were maintained manually, with a list owner adding and removing participants by editing a text file. Most, however, moved to commercial mailing list hosting services, often with a stipend of $100 or more paid to the list owner by the hosting service in exchange for the transfer. Most of the hosting providers were subsequently bought out by [[Yahoo!]], and merged into its [[Yahoo! Groups]] service. 
+
+A commercial product used during the same era is [[LISTSERV]]. Other open-source mailing list software that gained popularity in recent years are [[GNU Mailman]]. There is mailing list software that works with [[qmail]], [[ezmlm]] (and the improved version, [[ezmlm]]-idx).
+
+==Licensing==
+
+Majordomo is community-supported semi-free software, however, the license says &quot;No part of Majordomo may be incorporated into any program or other product that is sold, or for which any revenue is received without written permission of Great Circle Associates&quot;.  There are a few exceptions listed in the license to this: &quot;You may install Majordomo at your site and run mailing lists for other (sic) using it, and charge for that service. You may install Majordomo at other sites, and charge for your time to install, configure, customize, and manage it. You may charge for enhancements you've made to the Majordomo software, subject to the distribution restrictions listed [in the license]. You may not charge for the Majordomo software itself.&quot;
+
+== External links ==
+*[http://www.greatcircle.com/majordomo/ Official Majordomo Website]
+*[http://www.mj2.org/ Majordomo 2 Website]
+*[http://www.faqs.org/faqs/mail/list-admin/majordomo-faq/ Majordomo FAQ]
+*[http://www.serverwatch.com/stypes/servers/article.php/16023_1376361 Majordomo -- A venerable UNIX/Perl-based mailing-list manager]
+*[http://www.wilsonweb.com/articles/majordomo.htm Majordomo Newsletters for the Novice]
+*[http://www.linux-tutorial.info/modules.php?name=Howto&amp;pagename=Majordomo-MajorCool-HOWTO Majordomo and MajorCool HOWTO]
+
+
+[[Category:Free mailing lists]]
+[[Category:Free email software]]
+[[Category:Perl software]]
+
+[[de:Majordomo]]
+[[fr:Majordomo]]
+[[it:Majordomo]]
+[[ja:Majordomo]]
+[[sv:Majordomo]]</rev></revisions></page></pages></query></api>

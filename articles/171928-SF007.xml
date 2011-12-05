@@ -1,0 +1,65 @@
+<?xml version="1.0"?><api><query><pages><page pageid="171928" ns="0" title="Almquist shell"><revisions><rev xml:space="preserve">{{Infobox Software
+| name                   = Almquist shell
+| logo                   = 
+| screenshot             = 
+| caption                = 
+| developer              = 
+| latest release version = 
+| latest release date    = 
+| programming language   = [[C (programming language)|C]]
+| operating system       = [[Cross-platform]]
+| platform               = [[Cross-platform]]
+| language               = English, multilingual ([[gettext]])
+| status                 = Active
+| genre                  = [[Unix shell]]
+| source_model           = [[Open source]]
+| license                = 
+| website                = {{URL|http://www.in-ulm.de/~mascheck/various/ash/}}
+}}
+The '''Almquist shell''' (also known as '''A Shell''', '''ash''' and '''sh''') was originally [[Kenneth Almquist]]'s clone of the [[SVR4]]-variant of the [[Bourne shell]]; it is a fast, small, [[POSIX]]-compatible [[Unix shell]] designed to replace the Bourne shell in later [[BSD]] distributions.  Originally it did not feature line editing{{Clarify|date=March 2010}} or [[command history]] mechanisms, because Almquist felt that such should be moved into the [[Computer terminal|terminal]] [[Device driver|driver]]; however, current variants support it.
+
+Derivatives of ash are installed as the default shell (&lt;tt&gt;/bin/sh&lt;/tt&gt;) on [[FreeBSD]], [[NetBSD]], [[DragonFly BSD]] and [[Minix]]. ash is also fairly popular in [[embedded Linux]] systems; its code was incorporated into the [[BusyBox]] catch-all executable often employed in this area. [[Debian]]'s version of ash is known as [[Debian Almquist shell|Debian Almquist Shell (dash)]].
+
+Some [[Linux distribution]]s also use [[Debian_Almquist_shell|a derivative of ash]] as the default shell, although [[Bash (Unix shell)|Bash]] (Bourne Again Shell) is more popular. Debian and [[Ubuntu (operating system)|Ubuntu]] [[Symbolic link|symlink]] &lt;tt&gt;/bin/sh&lt;/tt&gt; to the dash shell for faster [[Shell script|script]] execution, but keeps Bash as the default login shell.
+The following is extracted from the ash package information from [[Slackware]]:
+
+&lt;blockquote&gt;ash (Kenneth Almquist's ash shell)''
+
+&lt;blockquote&gt;A lightweight (92K) Bourne compatible shell. Great for machines with low memory, but does not provide all the extras of shells like [[Bash_(Unix_shell)|bash]], [[tcsh]], and [[zsh]]. Runs most shell scripts compatible with the Bourne shell. Note that under Linux, most scripts seem to use at least some bash-specific syntax. The Slackware setup scripts are a notable exception, since ash is the shell used on the install disks. NetBSD and Ubuntu uses ash as its /bin/sh.&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+
+Ash has since been replaced on both [[Debian]] and [[Ubuntu (operating system)|Ubuntu]].  Dash became the replacement for ash in Debian and was expected to be the default /bin/sh for Debian Lenny.&lt;ref&gt;[http://release.debian.org/lenny/goals.txt Release goals for Debian Lenny]&lt;/ref&gt;&lt;ref&gt;[http://lists.debian.org/debian-devel-announce/2008/04/msg00002.html Release Update: architecture status, release goal status, BSPs]&lt;/ref&gt; Dash became the default /bin/sh in [[Ubuntu (operating system)|Ubuntu]] starting with the 6.10 release in October 2006.&lt;ref&gt;[https://wiki.ubuntu.com/DashAsBinSh Dash as /bin/sh in Ubuntu 6.10]&lt;/ref&gt; 
+
+==See also==
+* [[Comparison of computer shells]]
+* [[test (Unix)]]
+
+== References ==
+{{reflist}}
+
+==Further reading==
+*{{citation
+|url=http://books.google.com/books?id=53zaxy423xcC&amp;pg=PA158&amp;lpg=PA158&amp;dq=Almquist+shell&amp;source=bl&amp;ots=T-VxLO5xbB&amp;sig=qZMamuZrgyDmI5PPCOWKIVqBius&amp;hl=en&amp;ei=hAZkTs-fI4XZ0QHgiLSGCg&amp;sa=X&amp;oi=book_result&amp;ct=result&amp;resnum=4&amp;ved=0CCsQ6AEwAzg8#v=onepage&amp;q=Almquist%20shell&amp;f=false
+|title=Beginning Portable Shell Scripting: From Novice to Professional
+|author=Peter Seebach
+|publisher=Apress
+|year=2008
+|isbn=1430210435
+}}
+
+==External links ==
+*{{official|http://www.in-ulm.de/~mascheck/various/ash/}}
+
+{{Unix Shells}}
+
+{{compu-prog-stub}}
+{{unix-stub}}
+[[Category:Text-oriented programming languages]]
+[[Category:Scripting languages]]
+[[Category:Unix shells]]
+[[Category:Cross-platform software]]
+
+[[el:ÎÎ­Î»ÏÏÎ¿Ï Almquist]]
+[[fr:Almquist shell]]
+[[ja:Almquist Shell]]
+[[ru:Almquist shell]]</rev></revisions></page></pages></query></api>

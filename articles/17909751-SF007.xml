@@ -1,0 +1,126 @@
+<?xml version="1.0"?><api><query><redirects><r from="MPlayer 1.0 rc2" to="MPlayer" /></redirects><pages><page pageid="159612" ns="0" title="MPlayer"><revisions><rev xml:space="preserve">{{two other uses|the open source media player|Microsoft's media player (mplayer2.exe)|Windows Media Player|the online gaming community|MPlayer.com}}
+{{Infobox software
+| name = MPlayer
+| logo = [[File:MPlayer.svg|64px]]
+| screenshot = [[File:MPlayer.png|250px]]
+| caption = MPlayer on Linux using the ''gMplayer'' front-end
+| developer = MPlayer team
+| released = 2000
+| frequently_updated = Yes
+| programming language = [[C (programming language)|C]]
+| platform = [[Cross-platform]]
+| language = English, Hungarian, Polish, Russian and Spanish
+| genre = [[Media player (application software)|Media player]]
+| license = [[GNU General Public License]]
+| website = [http://www1.mplayerhq.hu/ www.mplayerhq.hu]
+}}
+
+'''MPlayer''' is a [[free software|free]] and [[open source]] [[media player (application software)|media player]]. The program is available for all major [[operating system]]s, including [[Linux]] and other [[Unix-like]] systems, [[Microsoft Windows]] and [[Mac OS X]]. Versions for [[OS/2]], [[Syllable (operating system)|Syllable]], [[AmigaOS]] and [[MorphOS]] are also available. The Windows version works, with some minor problems, also in [[DOS]] using [[HX DOS Extender]]. A port for [[DOS]] using [[DJGPP]] is also available.&lt;ref&gt;http://www.ibiblio.org/pub/micro/pc-stuff/freedos/files/util/user/mplayer/&lt;/ref&gt; A version for the [[Wii]] [[Homebrew Channel]] has also emerged.&lt;ref&gt;http://hackmii.com/2008/08/libdi-and-the-dvdx-installer/&lt;/ref&gt; It has also been ported to run on the Amazon Kindle.&lt;ref&gt;http://gitorious.org/kindlebrew&lt;/ref&gt;
+
+==Capabilities and classification==
+MPlayer supports a wide variety of media formats&lt;ref&gt;http://www.mplayerhq.hu/DOCS/codecs-status.html&lt;/ref&gt; and can also save all streamed content to a file.
+
+A companion program, '''[[MEncoder]]''', can take an input stream or file and [[transcode]] it into several different output formats, optionally applying various transforms along the way.
+
+==History==
+Development of MPlayer began in 2000. The original author, ÃrpÃ¡d GereÃ¶ffy (known as A'rpi / Astral in the [[demoscene]]), was soon joined by many other programmers. The project was started because A'rpi was unable to find any satisfactory video players for Linux after XAnim stopped development in 1999.&lt;ref&gt;http://xanim.polter.net/&lt;/ref&gt; The first version was titled ''mpg12play v0.1'' and was hacked together in a half hour using ''libmpeg3'' from http://www.heroinewarrior.com/. After ''mpg12play v0.95pre5'', the code was merged with an [[Audio Video Interleave|AVI]] player based on avifile's ''[[Win32]] [[Dynamic-link library|DLL]] loader'' to form MPlayer v0.3 in November 2000.&lt;ref&gt;[http://www.mplayerhq.hu/DOCS/HTML/en/history.html Appendix D. History]&lt;/ref&gt; In the beginning most developers were from [[Hungary]], but currently the developers are located worldwide. Alex BeregszÃ¡szi has maintained MPlayer since 2003 when ÃrpÃ¡d GereÃ¶ffy left MPlayer development to begin work on a second generation MPlayer. The '''MPlayer G2''' project is currently abandoned, and all the development effort is put on MPlayer 1.0.&lt;ref name=&quot;2004-03&quot;&gt;{{cite web |title=MPLAYERHQ THE MOVIE PLAYE(via the [[Digital time capsule|Wayback Machine]]) |date=2004-01-10 |url=http://www6.mplayerhq.hu/design6/news.html  |accessdate=2008-11-14 |archiveurl = http://web.archive.org/web/20040409075342/http://www6.mplayerhq.hu/design6/news.html |archivedate = 2004-04-09}}&lt;/ref&gt;
+
+MPlayer was previously called &quot;MPlayer - The Movie Player for Linux&quot; by its developers but this was later shortened to &quot;MPlayer - The Movie Player&quot; after it became commonly used on multiple operating systems.
+
+==Supported media formats==
+[[File:MPlayer cmd win32.png|thumb|MPlayer being run via command line in Microsoft Windows.]]
+MPlayer can play almost anything, including:&lt;ref&gt;http://www.mplayerhq.hu/design7/info.html&lt;/ref&gt;
+* '''Physical media''': [[compact disc|CDs]], [[DVD]]s, [[Video CD]]s
+* '''[[Container format (digital)|Container format]]s''': [[3GP]], [[Audio Video Interleave|AVI]], [[Advanced Systems Format|ASF]], [[FLV]], [[Matroska]], [[QuickTime|MOV (QuickTime)]], [[MP4]], NUT, [[Ogg]], [[OGM]], [[RealMedia]], [[Bink Video|Bink]]
+* '''[[Template:Compression Formats|Video formats]]''': [[Cinepak]], [[DV]], [[H.263]], [[H.264/MPEG-4 AVC]], [[HuffYUV]], [[Indeo]], [[MJPEG]], [[MPEG-1]], [[MPEG-2]], [[MPEG-4 Part 2]], [[RealVideo]], [[Sorenson codec|Sorenson]], [[Theora]], [[WMV]], [[Bink Video|Bink]]
+* '''Audio formats''': [[Advanced Audio Coding|AAC]], [[AC3]], [[Apple Lossless|ALAC]], [[Adaptive Multi-Rate|AMR]], [[DTS (sound system)|DTS]], [[FLAC]], Intel Music Coder, [[Monkey's Audio]], [[MP3]], [[Musepack]], [[RealAudio]], [[Shorten]], [[Speex]], [[Vorbis]], [[Windows Media Audio|WMA]], [[Bink Video|Bink]]
+* '''[[Subtitles|Subtitle formats]]''': AQTitle, [[SubStation Alpha|ASS/SSA]], [[Closed captioning|CC]], JACOsub, [[MicroDVD]], MPsub, OGM, PJS, RT, [[SAMI|Sami]], [[SubRip|SRT]], SubViewer, [[VobSub|VOBsub]], VPlayer
+* '''Image formats''': [[BMP file format|BMP]], [[JPEG]], [[Multiple-image Network Graphics|MNG]], [[PCX]], PTX&lt;!--Pentax RAW Image?--&gt;, [[Truevision TGA|TGA]], [[Tagged Image File Format|TIFF]], [[Silicon Graphics Image|SGI]], Sun Raster
+* '''Protocols''': [[Real-time Transport Protocol|RTP]], [[Real Time Streaming Protocol|RTSP]], [[Hypertext Transfer Protocol|HTTP]], [[File Transfer Protocol|FTP]], [[Microsoft Media Services|MMS]], Netstream (mpst://), [[Server Message Block|SMB]], ffmpeg:// (Uses [[FFmpeg]]'s protocol implementations)
+
+MPlayer also supports a variety of different output drivers for displaying video, including [[VDPAU]], the [[X video extension]], [[OpenGL]], [[DirectX]], [[Direct3D]], [[Quartz Compositor]], [[VESA]], [[Framebuffer]], [[Simple DirectMedia Layer|SDL]] and rarer ones such as [[ASCII art]] and [[Project Blinkenlights|Blinkenlights]]. It can also be used to display TV from a TV card using the device &lt;tt&gt;tv://channel&lt;/tt&gt;, or play and capture radio channels via &lt;tt&gt;radio://channel|frequency&lt;/tt&gt;.
+
+Since version 1.0RC1, reasonable built-in support for the [[SubStation Alpha|ASS/SSA]] subtitle format is present by the use of [[libass]], though it still has issues rendering some languages (such as those requiring complex text layout such as Arabic).
+
+===Supported plugins===
+* [[XMMS]] plugins
+* [[Avisynth]]
+
+==Front-ends==
+MPlayer is a [[Command line interface|command line]] application which has different optional [[Graphical user interface|GUI]] front-ends for each of its supported operating systems. Commonly used GUIs are ''gMplayer'' and ''Gnome MPlayer'' written in [[GTK+]], ''KMPlayer'' written in [[Qt (framework)|Qt]], ''MPlayer OS X Extended'' (for Mac OS X) and ''MPUI-hcb'' (for Windows). Cross-platform GUIs are also available, like [[SMPlayer]] (Windows and Linux), UMPlayer,&lt;ref&gt;{{cite web |url=http://www.webupd8.org/2011/04/umplayer-new-cross-platform-mplayer-gui.html |title=UMPlayer: New Cross-Platform MPlayer GUI Based on SMPlayer |publisher=WebUpd8 |date=01-04-2011 |accessdate=16-08-2011 }}&lt;/ref&gt; etc. Several other GUI front-ends are also available for each platform.
+
+==Forks==
+* '''[http://www.mplayer2.org/ mplayer2]''' is a fork of MPlayer, it contains further development and supports a number of features not available in the original MPlayer.&lt;ref&gt;{{cite web |url=http://ostatic.com/blog/did-you-know-there-was-a-fork-of-mplayer |title=Did You Know there was a Fork of MPlayer? |publisher=ostatic.com |date=22-03-2011 |accessdate=29-11-2011}}&lt;/ref&gt;&lt;ref&gt;{{cite web |url=http://www.phoronix.com/scan.php?page=news_item&amp;px=OTI0Ng |title=Is MPlayer2 a viable fork of MPlayer? |publisher=[[Phoronix]] |date=24-03-2011 |accessdate=29-11-2011}}&lt;/ref&gt;
+
+==Legal issues==
+{{Original research|section|date=May 2010}}
+Most video and audio formats are supported natively through the [[libavcodec]] [[Library (computer science)|library]] of the [[FFmpeg]] project. For those formats where no open source decoder has been made yet MPlayer relies on binary codecs. It can use Windows [[DLL]]s directly with the help of a DLL loader [[Fork (software)|forked]] from avifile (which itself forked its loader from the [[Wine (software)|Wine]] project).
+
+The combination of [[Content-scrambling system|CSS]] decryption software and use of formats covered by [[software patent]]s places a fully functional MPlayer in the legal bind shared by most open source multimedia players. In the past MPlayer used to include [[OpenDivX]], a GPL-incompatible decoder library. This has since been removed, making MPlayer use only GPL-Like or BSD-like licenses. Usage of patented codecs in free software however is a still pending potential problem affecting [[FFmpeg]], MPlayer and similar software when used in countries where software patents apply.
+
+In January 2004 the MPlayer website was updated with an allegation that the Danish DVD player manufacturer, [[KISS Technology]], were marketing DVD players with [[firmware]] that included parts of MPlayer's GPL-licensed code. The implication was that KISS was violating the GPL License, since KISS did not release its firmware under the GPL license. The response from the managing director of KISS, Peter Wilmar Christensen, countered that the similarities between the two pieces of code indicate that the MPlayer team had in fact used code from KISS's firmware.&lt;ref name=&quot;2004-03&quot; /&gt;
+Notably, the KISS DVD player used a subtitle file format that is specific to MPlayer. This may make Mr. Christensen's statement seem improbable, because that subtitle file format was proposed and invented by an MPlayer developer in 2001 and not released to the public until it was incorporated into the MPlayer code, whereas the KISS player was released two years later in 2003.&lt;ref name=&quot;2004-03&quot; /&gt;
+
+==See also==
+{{Portal|Free software}}
+* [[MEncoder]]
+* [[Media player (application software)]]
+* [[Comparison of video player software]]
+
+==References==
+{{Reflist|2}}
+
+==External links==
+{{commons|MPlayer}}
+* {{official|http://www.mplayerhq.hu/}}
+* [irc://irc.freenode.net/mplayer #mplayer] IRC channel on Freenode
+
+{{Media player (application software)}}
+
+{{DEFAULTSORT:Mplayer}}
+[[Category:Free media players]]
+[[Category:Free video software]]
+[[Category:Linux DVD players]]
+[[Category:Linux media players]]
+[[Category:Amiga media players]]
+[[Category:Mac OS X media players]]
+[[Category:SVGAlib programs]]
+[[Category:Windows media players]]
+[[Category:GTK media players]]
+[[Category:Cross-platform software]]
+[[Category:Free software programmed in C]]
+[[Category:Free music software]]
+[[Category:Portable software]]
+[[Category:Software derived from or incorporating Wine]]
+
+[[ar:Ø¥ÙâØ¨ÙØ§ÙØ±]]
+[[bar:MPlayer]]
+[[bs:MPlayer]]
+[[ca:MPlayer]]
+[[cs:MPlayer]]
+[[da:MPlayer]]
+[[de:MPlayer]]
+[[et:MPlayer]]
+[[es:MPlayer]]
+[[fa:Ø§ÙâÙ¾ÙÛØ±]]
+[[fr:MPlayer]]
+[[gl:MPlayer]]
+[[ko:ì íë ì´ì´]]
+[[hr:MPlayer]]
+[[id:MPlayer]]
+[[it:MPlayer]]
+[[hu:MPlayer]]
+[[nl:MPlayer]]
+[[ja:MPlayer]]
+[[no:MPlayer]]
+[[pl:MPlayer]]
+[[pt:MPlayer]]
+[[ro:MPlayer]]
+[[ru:MPlayer]]
+[[sk:MPlayer]]
+[[sr:MPlayer]]
+[[fi:MPlayer]]
+[[sv:MPlayer]]
+[[tr:MPlayer]]
+[[uk:MPlayer]]
+[[zh:MPlayer]]</rev></revisions></page></pages></query></api>

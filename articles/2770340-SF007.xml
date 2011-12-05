@@ -1,0 +1,218 @@
+<?xml version="1.0"?><api><query><pages><page pageid="2770340" ns="0" title="Operating system-level virtualization"><revisions><rev xml:space="preserve">'''Operating system-level virtualization''' is a server virtualization method where the [[kernel (computer science)|kernel]] of an [[operating system]] allows for multiple isolated user-space instances, instead of just one. Such instances (often called containers, VEs, VPSs or jails) may look and feel like a real server, from the point of view of its owner. On Unix systems, this technology can be thought of as an advanced implementation of the standard [[chroot]] mechanism. In addition to isolation mechanisms, the kernel often provides resource management features to limit the impact of one container's activities on the other containers.
+
+== Uses ==
+Operating system-level virtualization is commonly used in [[virtual hosting]] environments, where it is useful for securely allocating finite hardware resources amongst a large number of mutually-distrusting users.  System administrators may also use it, to a lesser extent, for consolidating server hardware by moving services on separate hosts into containers on the one server.
+
+Other typical scenarios include separating several applications to separate containers for improved security, hardware independence, and added resource management features.
+
+OS-level virtualization implementations that are capable of [[live migration]] can be used for dynamic load balancing of containers between nodes in a cluster.
+
+== Advantages and disadvantages ==
+=== Overhead ===
+This form of virtualization usually imposes little or no overhead, because programs in virtual partition use the operating system's normal [[system call]] interface and do not need to be subject to [[emulator|emulation]] or run in an intermediate virtual machine, as is the case with whole-system virtualizers (such as [[VMware]] and [[QEMU]]) or [[paravirtualization|paravirtualizers]] (such as [[Xen]] and [[User-mode Linux|UML]]).  It also does not require hardware assistance to perform efficiently.
+
+=== Flexibility ===
+Operating system-level virtualization is not as flexible as other virtualization approaches since it cannot host a guest operating system different from the host one, or a different guest kernel. For example, with Linux, different distributions are fine, but other OS such as Windows cannot be hosted. This limitation is partially overcome in [[Solaris (operating system)|Solaris]] by its [[branded zones]] feature, which provides the ability to run an environment within a container that emulates an older Solaris 8 or 9 version in a Solaris 10 host. (a Linux branded zone was also announced but later abandoned).
+
+=== Storage ===
+Some operating-system virtualizers provide file-level copy-on-write mechanisms.  (Most commonly, a standard file system is shared between partitions, and partitions which change the files automatically create their own copies.)  This is easier to back up, more space-efficient and simpler to cache than the block-level copy-on-write schemes common on whole-system virtualizers.  Whole-system virtualizers, however, can work with non-native file systems and create and roll back snapshots of the entire system state.
+
+== Implementations ==
+{| class=&quot;wikitable&quot; style=&quot;font-size: 85%; text-align: center; width: 100%&quot;
+|-
+! rowspan=&quot;2&quot; | Mechanism
+! rowspan=&quot;2&quot; | Operating system
+! rowspan=&quot;2&quot; | License
+! rowspan=&quot;2&quot; | Available since/between
+! colspan=&quot;8&quot; | Features
+|-
+!File system isolation
+!Copy on Write
+!Disk quotas
+!I/O rate limiting
+!Memory limits
+!CPU quotas
+!Network isolation
+!Partition checkpointing &lt;br/&gt; and live migration
+|-
+|[[chroot]]
+|most [[UNIX-like]] operating systems
+|[[Proprietary_software|Proprietary]]
+[[BSD_License|BSD]]
+
+[[GNU_General_Public_License|GNU GPL]]
+[[CDDL]]
+| 1982
+| {{Partial}}&lt;ref name=&quot;root-escape&quot;&gt;Root user can easily escape from chroot.  Chroot was never supposed to be used as a security mechanism.{{whom?|date=November 2010}} [http://www.freebsd.org/doc/en/books/developers-handbook/secure-chroot.html]&lt;/ref&gt;
+| {{No}}
+| {{No}}
+| {{No}}
+| {{No}}
+| {{No}}
+| {{No}}
+| {{No}}
+|-
+|[[iCore Virtual Accounts]]
+|[[Windows XP]]
+|[[Proprietary software|Proprietary/Freeware]]
+| 2008
+| {{Yes}}
+| {{No}}
+| {{Yes}}
+| {{No}}
+| {{No}}
+| {{No}}
+| {{No}}
+| {{No}}
+|-
+|[[Linux-VServer]]&lt;br/&gt;(security context)
+|[[Linux]]
+|[[GNU_General_Public_License|GNU GPL v.2]]
+| 2001
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+| {{Yes}} &lt;ref name=&quot;cfq&quot;&gt;Utilizing the CFQ scheduler, you get a separate queue per guest.&lt;/ref&gt;
+| {{Yes}}
+| {{Yes}}
+| {{Partial}}&lt;ref name=&quot;vserver-net&quot;&gt;Networking is based on isolation, not virtualization.&lt;/ref&gt;
+| {{No}}
+|-
+| [[LXC]]
+|[[Linux]]
+|[[GNU_General_Public_License|GNU GPL v.2]]
+| 2008
+| {{Partial}}&lt;ref name=&quot;lxc-fs&quot;&gt;Due to lack of [http://wiki.ubuntu.com/UserNamespace user name space separation] in the Linux kernel it is currently possible to [http://blog.bofh.it/debian/id_413 evade from linux containers]&lt;/ref&gt;
+| {{Partial}}. Yes with [[Btrfs]].
+| {{Partial}}. Yes with [[Logical Volume Manager (Linux)|LVM]] or [[Disk quota]].
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+| {{No}}
+|-
+|[[OpenVZ]]
+|[[Linux]]
+|[[GNU_General_Public_License|GNU GPL v.2]]
+| 2005
+| {{Yes}}
+| {{No}}
+| {{Yes}}
+| {{Yes}} &lt;ref name=&quot;ioprio&quot;&gt;Available since kernel 2.6.18-028stable021. Implementation is based on CFQ disk I/O scheduler, but it is a two-level schema, so I/O priority is not per-process, but rather per-container. See [http://wiki.openvz.org/I/O_priorities_for_VE OpenVZ wiki: I/O priorities for VE] for details.&lt;/ref&gt;
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}&lt;ref name=&quot;vn&quot;&gt;Each container can have its own IP addresses, firewall rules, routing tables and so on. Three different networking schemes are possible: route-based, bridge-based, and assigning a real network device ([[NIC]]) to a container.&lt;/ref&gt;
+| {{Yes}}
+|-
+|[[Virtuozzo|Parallels Virtuozzo Containers]]
+|[[Linux]], [[Windows (operating system)|Windows]], [[Mac OS X]]
+|[[Proprietary_software|Proprietary]]
+| 2001
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+| {{Yes}} &lt;ref name=&quot;vz4&quot;&gt;Available since version 4.0, January 2008.&lt;/ref&gt;
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}&lt;ref name=&quot;vn&quot;/&gt;
+| {{Yes}}
+|-
+|[[Solaris Containers|Container/Zone]]
+||[[Solaris Operating System|Solaris]] and [[Opensolaris|OpenSolaris]]
+|[[CDDL]]
+| 2005
+| {{Yes}}
+| {{Partial}}. Yes with ZFS
+| {{Yes}}
+| {{No}}
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}&lt;ref name=&quot;crossbow&quot;&gt;See [[OpenSolaris Network Virtualization and Resource Control]] and [http://www.opensolaris.org/os/project/crossbow/faq/ Network Virtualization and Resource Control (Crossbow) FAQ] for details.&lt;/ref&gt;
+| {{No}}&lt;ref name=&quot;coldmig&quot;&gt;Cold migration (shutdown-move-restart) is implemented.&lt;/ref&gt;
+|-
+|[[FreeBSD Jail]]
+|[[FreeBSD]]
+|[[BSD_License|BSD]]
+| 1998
+| {{Yes}}
+| {{Yes}} (ZFS)
+| {{Yes}} &lt;ref name=&quot;diskquota&quot;&gt;Check the &quot;allow.quotas&quot; option and the &quot;Jails and File Systems&quot; section on the [http://www.freebsd.org/cgi/man.cgi?query=jail&amp;sektion=8 FreeBSD jail man page] for details.&lt;/ref&gt;
+| {{No}}
+| {{Yes}} &lt;ref name=&quot;rctl&quot;&gt;http://wiki.freebsd.org/Hierarchical_Resource_Limits&lt;/ref&gt;
+| {{Partial}} &lt;ref name=&quot;cpuquota&quot;&gt;Check the &quot;cpuset.id&quot; option on the [http://www.freebsd.org/cgi/man.cgi?query=jail&amp;sektion=8 FreeBSD jail man page] and the [http://www.freebsd.org/cgi/man.cgi?query=cpuset&amp;apropos=0&amp;sektion=0&amp;manpath=FreeBSD+8.0-RELEASE&amp;format=html cpuset] command. It's not a full cpu quota support because it constraints one or more processes to a given set/list of processors (cores) but it doesn't control the absolute processor/core related utilization. &lt;/ref&gt;
+| {{Yes}}
+| {{No}}
+|-
+|[[sysjail]]
+|[[OpenBSD]], [[NetBSD]]
+|[[BSD_License|BSD]]
+| - no longer supported as of 03-03-2009
+| {{Yes}}
+| {{No}}
+| {{No}}
+| {{No}}
+| {{No}}
+| {{No}}
+| {{Yes}}
+| {{No}}
+|-
+|[[Workload Partitions|WPARs]]
+|[[AIX]]
+|[[Proprietary_software|Proprietary]]
+| 2007
+| {{Yes}}
+| {{No}}
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}&lt;ref name=&quot;WPAR_netisolation&quot;&gt;Available since TL 02. See [http://www-01.ibm.com/support/docview.wss?uid=isg1fixinfo109461] for details.&lt;/ref&gt;
+| {{Yes}}&lt;ref name=&quot;WPAR/LPAR mobility&quot;&gt; See [http://www.ibm.com/developerworks/aix/library/au-aix61mobility/?ca=dgr-btw77liveappmobile61&amp;S_TACT=105AGX59&amp;S_CMP=GR]&lt;/ref&gt;
+|-
+|[[Secured Resource Partitions|HP SRP]]
+|[[HPUX]]
+|[[Proprietary_software|Proprietary]]
+| 2007
+| {{Yes}}
+| {{No}}
+| {{--}}
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+|-
+| [[Sandboxie]]	
+| [[Windows (operating system)|Windows]]	
+| [[Shareware]]	
+| {{?}}	
+| {{?}}	
+| {{?}}	
+| {{?}}	
+| {{?}}	
+| {{?}}	
+| {{?}}	
+| {{?}}
+| {{?}}
+|}
+
+=== Notes ===
+{{Reflist}}
+
+==See also==
+* [[Platform virtualization]]
+* [[Application virtualization]]
+* [[Storage_hypervisor|Storage Hypervisor]]
+* [[Hypervisor]]
+* [[Portable application creators]]
+
+== External links ==
+* [http://www.kernelthread.com/publications/virtualization/ An introduction to Virtualization]
+* [http://wiki.openvz.org/Introduction_to_virtualization A short intro to three different virtualization techniques]
+
+[[Category:Virtualization software]]
+[[Category:Operating system technology]]
+[[Category:Operating system security]]
+
+[[cs:Virtualizace na Ãºrovni operaÄnÃ­ho systÃ©mu]]
+[[ru:ÐÐ¸ÑÑÑÐ°Ð»Ð¸Ð·Ð°ÑÐ¸Ñ Ð½Ð° ÑÑÐ¾Ð²Ð½Ðµ Ð¾Ð¿ÐµÑÐ°ÑÐ¸Ð¾Ð½Ð½Ð¾Ð¹ ÑÐ¸ÑÑÐµÐ¼Ñ]]</rev></revisions></page></pages></query></api>

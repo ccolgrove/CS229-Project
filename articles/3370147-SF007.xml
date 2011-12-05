@@ -1,0 +1,81 @@
+<?xml version="1.0"?><api><query><pages><page pageid="3370147" ns="0" title="Winternals"><revisions><rev xml:space="preserve">{{Infobox company
+ | name             = Winternals Software LP
+ | logo             = [[File:WinternalsLogo.png|200px]]
+ | type             =
+ | genre            = [[Software development]]
+ | foundation       = 1996
+ | founder          = Bryce Cogswell and Mark Russinovich
+ | location_city    = [[Austin, TX]]
+ | location_country = USA
+ | location         =
+ | locations        =
+ | area_served      =
+ | key_people       = Bryce Cogswell and Mark Russinovich
+ | industry         =
+ | products         =
+ | services         =
+ | revenue          =
+ | operating_income =
+ | net_income       =
+ | owner            =
+ | num_employees    =
+ | parent           = [[Microsoft]]
+ | divisions        =
+ | subsid           =
+ | slogan           =
+ | homepage         = [http://www.winternals.com/ www.winternals.com]
+ | footnotes        =
+ | intl             =
+}}
+
+'''Windows Sysinternals''' is a part of the [[Microsoft TechNet]] [[website]] which offers technical resources and utilities to manage, diagnose, troubleshoot, and monitor a [[Microsoft Windows]] environment.&lt;ref name=&quot;technet-sysinternals&quot;&gt;{{Cite web|url=http://technet.microsoft.com/en-us/sysinternals/default.aspx|title=Windows Sysinternals|date={{Date|August 12, 2009|mdy}}|work=Microsoft Technet|publisher=Microsoft Corporation|accessdate={{Date|2009-08-15|mdy}}}}&lt;/ref&gt; Originally, the Sysinternals website (formerly known as '''ntinternals'''&lt;ref name=PDMR&gt;{{Cite video |people=[[Mark Russinovich]] |title=Podnutz Episode #64 - Mark Russinovich Talks Tech |url=http://www.podnutz.com/podnutz064 |format=Flash |medium=Podcast |publisher=Podnutz |time=0:02:01 |quote=...that's when Sysinternals started, originally called ntinternals... |date=May 9, 2011 |accessdate=June 18, 2011}}&lt;/ref&gt;) was created in 1996 and was operated by the company '''Winternals Software LP''',&lt;ref name=&quot;technet-sysinternals&quot; /&gt; which was located in [[Austin, Texas|Austin]], Texas. It was started by [[software developer]]s Bryce Cogswell and [[Mark Russinovich]].&lt;ref name=&quot;technet-sysinternals&quot; /&gt; [[Microsoft]] acquired Winternals and its assets on July 18, 2006.&lt;ref&gt;{{Cite web|url=http://www.winternals.com/Company/PressRelease92.aspx
+|title=Microsoft Acquires Winternals Software |date=July 18, 2006 |accessdate=July 18, 2006 |work=Company Press Releases |publisher=Winternals Software }}&lt;/ref&gt;
+
+The website featured several [[freeware]] tools to administer and monitor computers running Microsoft Windows. The software can now be found at Microsoft. The company also sold [[data recovery]] utilities and professional editions of their freeware tools.
+
+==Winternals Software LP==
+Winternals Software LP was founded by Bryce Cogswell and Mark Russinovich, who sparked the [[2005 Sony BMG CD copy protection scandal]] in an October 2005 posting to the Sysinternals blog.&lt;ref&gt;{{Cite web| url=http://blogs.technet.com/markrussinovich/archive/2005/10/31/sony-rootkits-and-digital-rights-management-gone-too-far.aspx | title=Sony, Rootkits and Digital Rights Management Gone Too Far | author=Mark Russinovich | date=October 31, 2005 | work=Sysinternals Blog | accessdate=December 18, 2006 }}&lt;/ref&gt;
+
+On July 18, 2006, Microsoft Corporation acquired the company and its assets. Russinovich explained that Sysinternals will remain active until Microsoft agrees on a method of distributing the tools provided there.&lt;ref&gt;{{Cite web| url=http://blogs.technet.com/markrussinovich/archive/2006/07/18/on-my-way-to-microsoft.aspx | title=On My Way to Microsoft! | author=Mark Russinovich | date=July 18, 2006 | work=Sysinternals Blog | accessdate=December 18, 2006 }}&lt;/ref&gt; However, [[NT Locksmith]], a Windows [[password recovery]] utility, was immediately removed.{{Citation needed|date=August 2009}} Currently, the Sysinternals website is moved to the ''Windows Sysinternals'' website and is a part of Microsoft TechNet.&lt;ref name=&quot;technet-sysinternals&quot; /&gt;
+
+In late 2010, Bryce Cogswell retired from Sysinternals.&lt;ref&gt;&quot;[http://www.windowsitpro.com/article/windows-azure-platform2/mark-russinovich-discusses-windows-azure-129988 Mark Russinovich Discusses Windows Azure]&quot;, Windows IT Pro. Retrieved on April 16, 2011.&lt;/ref&gt;
+
+===Source code and technology===
+{{Ref improve section|date=August 2009}}
+Most of the utilities that were developed were usually accompanied with the source code written in [[C (programming language)|C]], [[C++]], or [[assembly language]]. The code was compatible with Visual C++ v. 6.0 and could be compiled with little effort by a Windows developer. Some of the more interesting utilities did not come with source code, or a lesser version would be available with the source. In later releases, there were 64-bit versions of the utilities and even Linux versions as well.{{Citation needed|date=September 2010}}
+
+However since the Microsoft acquisition, none of the utilities currently available is accompanied with source code, and the Linux versions are no longer maintained or available.
+
+Some of the coding tricks used were based on the [[Native API|Windows Native API (NTAPI)]], which was (and still is) mostly undocumented by Microsoft. Using these coding examples - with source - would enable developers to create extraordinary programs that performed operations that would otherwise have been impossible using a standard API. Examples include hiding Registry information, intercepting or hooking APIs to monitor file operations by the OS, as well as Registry operations.
+
+==Products==
+Windows Sysinternals supplies users with numerous free utilities, most of which are being actively developed by Mark Russinovich and Bryce Cogswell,&lt;ref name=&quot;technet-sysinternals-w&quot;&gt;{{Cite web|url=http://technet.microsoft.com/en-us/sysinternals/default.aspx|title=What is new (August 5, 2009)|date={{Date|August 15, 2009|mdy}}|work=Windows Sysinternals|publisher=Microsoft Corporation|accessdate={{Date|2009-08-15|mdy}}}}&lt;/ref&gt; such as [[Process Explorer]], an advanced version of Windows Task Manager,&lt;ref&gt;{{Cite web|url=http://technet.microsoft.com/en-us/sysinternals/bb896653.aspx|title=Process Explorer v11.33|date={{Date|February 4, 2009|mdy}}|work=Windows Sysinternals|publisher=Microsoft Corporation|accessdate={{Date|2009-08-15|mdy}}}}&lt;/ref&gt; ''Autoruns'', allegedly the most advanced manager of startup applications,&lt;ref&gt;{{Cite web|url=http://technet.microsoft.com/en-us/sysinternals/bb963902.aspx|title=Autoruns for Windows v9.53|date={{Date|August 12, 2009|mdy}}|work=Windows Sysinternals|publisher=Microsoft Corporation|accessdate={{Date|2009-08-15|mdy}}}}&lt;/ref&gt; [[RootkitRevealer]], a [[rootkit]] detection utility,&lt;ref&gt;{{Cite web|url=http://technet.microsoft.com/en-us/sysinternals/bb897445.aspx|title=RootkitRevealer v1.71|date={{Date|November 1, 2006|mdy}}|work=Windows Sysinternals|publisher=Microsoft Corporation|accessdate={{Date|2009-08-15|mdy}}}}&lt;/ref&gt; [[Contig (defragmentation utility)|Contig]], [[PageDefrag]] and a total of 65 other utilities.&lt;ref name=&quot;technet-sysinternals-index&quot;&gt;{{Cite web|url=http://technet.microsoft.com/en-us/sysinternals/bb545027.aspx|title=Sysinternals Utilities Index|date={{Date|August 12, 2009|mdy}}|work=Windows Sysinternals|publisher=Microsoft Corporation|accessdate={{Date|2009-08-15|mdy}}}}&lt;/ref&gt; [[NTFSDOS]], which allowed NTFS volumes to be read by Microsoft's [[MS-DOS]] operating system, is now discontinued and is no longer available for download.&lt;ref name=&quot;technet-sysinternals-index&quot; /&gt;
+
+Previously available for download was the '''Winternals Administrator Pack''' which contained ERD Commander 2005, Remote Recover 3.0, NTFSDOS Professional 5.0, Crash Analyzer Wizard, FileRestore 1.0, Filemon Enterprise Edition 2.0, Regmon Enterprise Edition 2.0, AD Explorer Insight for Active Directory 2.0, and TCP Tools.
+
+On May 18, 2010 Sysinternals released its first new utility since its acquisition by Microsoft. Named RAMMap, it is a diagnostic utility similar to the memory tab of Windows Resource monitor; but more advanced. RAMMap runs only on Windows Vista and later.&lt;ref&gt;{{Cite web|title=RAMMap v1.11|url=http://technet.microsoft.com/en-us/sysinternals/ff700229.aspx|first1=Mark|last1=Russinovich|first2=Bryce|last2=Cogswell|publisher=Microsoft|work=Windows Sysinternals|date=May 18, 2011|accessdate=June 12, 2011}}&lt;/ref&gt;
+
+== Licensing issue with Best Buy ==
+In April 2006, [[Geek Squad]], a tech support company working in cooperation with [[Best Buy]], was accused of using unlicensed versions of the [[Emergency Repair Disk Commander|ERD Commander]] software. Winternals supplied Best Buy with copies of its software so that Best Buy could evaluate the software while conducting contract negotiations for using it on a permanent basis. When contract talks broke down Best Buy did not notify its Geek Squad Agents to stop using the software and discard all copies. A judge granted a restraining order on April 12, requiring that use of all unlicensed software be stopped, and forcing Best Buy to turn over all copies of Winternals software within 20 days.&lt;ref&gt;&quot;[http://www.foxnews.com/story/0,2933,191593,00.html Best Buy's Geek Squad Accused of Pirating Software]&quot;, FOX News. Retrieved on December 16, 2006.&lt;/ref&gt; After settlement, a version of the Winternals software was released to be used by Geek Squad.&lt;ref&gt;&quot;[http://www.winternals.com/Company/PressRelease90.aspx Winternals &amp; Best Buy/Geek Squad Settle Federal Lawsuit]&quot;, Winternals press release. Retrieved on December 16, 2006.{{Dead link|date=July 2011}}&lt;/ref&gt;
+
+==References==
+{{Reflist|30em}}
+
+==External links==
+* [http://www.sysinternals.com/ Sysinternals page on Microsoft TechNet]
+** [http://live.sysinternals.com/ Sysinternals Live tools directory] â Directly accessible repository of utilities
+* [http://www.winternals.com/ Winternals homepage] â Redirected to Microsoft Winternals announcement page
+** [http://web.archive.org/web/*/www.winternals.com Web Archive.org link to historical information Winternals]
+
+{{Microsoft}}
+{{Use mdy dates|date=July 2011}}
+
+[[Category:Computing websites]]
+[[Category:Internet properties established in 1996]]
+[[Category:Software companies of the United States]]
+[[Category:Companies based in Austin, Texas]]
+[[Category:Microsoft subsidiaries]]
+
+[[de:Windows Sysinternals]]
+[[ru:Sysinternals]]
+[[zh:Sysinternals]]</rev></revisions></page></pages></query></api>

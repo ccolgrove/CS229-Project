@@ -1,0 +1,1217 @@
+<?xml version="1.0"?><api><query><redirects><r from="Intel insider" to="Sandy Bridge" tofragment="Intel Insider and remote-control" /></redirects><pages><page pageid="7190463" ns="0" title="Sandy Bridge"><revisions><rev xml:space="preserve">'''Sandy Bridge''' is the [[List of Intel codenames|codename]] for a  [[microarchitecture]] developed by [[Intel]]  beginning in 2005 for [[central processing unit]]s in computers to replace the [[Nehalem (microarchitecture)|Nehalem]] microarchitecture. It was designed for the full range of applications from mobile devices, laptop and desktop computers, to large enterprise servers.
+Intel demonstrated a Sandy Bridge processor in 2009, and released first products in January 2011 based on the architecture.&lt;ref name=&quot;man&quot;/&gt;&lt;ref&gt;{{cite news |author= Brooke Crothers|title=CES: First Intel next-gen laptops will be quad core |work=The Circuits Blog |publisher=[[CNET.com]] |date=December 15, 2010 |url=http://news.cnet.com/8301-13924_3-20025830-64.html |accessdate= November 11, 2011 }}&lt;/ref&gt;
+
+Originally, implementations targeted a [[32 nanometer]] manufacturing process based on [[Multigate device#Planar double-gate transistors|planar double-gate transistors]].  Subsequent products, codenamed '''Ivy Bridge''', use a [[22 nanometer]] process. The Ivy Bridge [[die shrink]], known in the [[Intel Tick-Tock]] model as the &quot;tick&quot;, is based on [[Multigate device#Tri-gate transistors|3D tri-gate transistors]]. Intel demonstrated Ivy Bridge processors in 2011.&lt;ref&gt;{{Cite news |url = http://newsroom.intel.com/docs/DOC-2032 | title = Intel 22nm 3-D Tri-Gate Transistor Technology |work= News release and press materials |date= May 2, 2011 |publisher = Intel |accessdate =  November 11, 2011 }}&lt;/ref&gt;
+
+==Technology==
+Developed primarily in [[Israel]], the codename was originally &quot;Gesher&quot; (meaning &quot;bridge&quot; in [[Hebrew]]).
+The name was changed to avoid being associated with the defunct [[Gesher (political party)|Gesher political party]],&lt;ref&gt;{{Cite news |title= 'Sandy Bridge' Breaks the Mold for Chip Codenames |date= December 28, 2010 |url= http://freepress.intel.com/community/news/blog/2010/12/28/sandy-bridge-breaks-the-mold-for-chip-codenames |accessdate= November 11, 2011 }}&lt;/ref&gt;
+the decision was led by Ron Friedman, vice president of Intel managing the group at the time.&lt;ref name=&quot;man&quot;&gt;{{Cite news |title= The Man Behind 'Sandy Bridge' |date= December 28, 2010 |url= http://freepress.intel.com/community/news/blog/2010/12/28/the-man-behind-sandy-bridge |accessdate= November 11, 2011 }}&lt;/ref&gt;
+Intel demonstrated a Sandy Bridge processor with A1 [[Stepping level|stepping]] at 2&amp;nbsp;GHz during the [[Intel Developer Forum]] in September 2009.&lt;ref&gt;{{cite news |author= [[Anand Lal Shimpi]] |title=IDF 2009 - Intel Shows off 22nm &amp; 32nm, Sandy Bridge Demoed |work=[[AnandTech]] |date= September 22, 2009 |url= http://www.anandtech.com/show/2842/ |accessdate= November 11, 2011 }}&lt;/ref&gt;
+
+'''Upgraded features from Nehalem include:'''
+*32&amp;nbsp;kB data + 32&amp;nbsp;kB instruction [[L1 cache]] (3&amp;nbsp;clocks) and 256&amp;nbsp;kB [[L2 cache]] (8&amp;nbsp;clocks) per core
+*Shared L3&amp;nbsp;cache includes the processor graphics ([[LGA 1155]])
+*64-byte [[cache]] line size
+*Two load/store operations per [[CPU cycle]] for each memory channel
+*Decoded micro-operation cache and enlarged, optimized [[branch predictor]]
+*Improved performance for [[Transcendental function|transcendental mathematics]], [[AES encryption]], and [[SHA-1]] hashing
+*256-bit/cycle ring bus interconnect between cores, graphics, cache and System Agent Domain
+*[[Advanced Vector Extensions]] (AVX) 256-bit instruction set with wider vectors, new extensible syntax and rich functionality
+*[[Intel Quick Sync Video]], hardware support for video encoding and decoding
+*Up to 8 physical cores/16 logical cores (through [[Hyper-threading]])
+
+==Ivy Bridge==
+Ivy Bridge is the codename for the [[22 nanometer|22 nm]] [[die shrink]] of Sandy Bridge Intel plans for retail sale in 2012. Ivy Bridge processors will be backwards-compatible with the Sandy Bridge platform, but require a [[BIOS]]/firmware update.&lt;ref&gt;{{Cite web |title= Ivy Bridgeâs Backwards Compatibility Explained |date= May 27, 2011 |author= Cole |url= http://motherboardnews.com/2011/05/27/ivy-bridges-backwards-compatibility-explained/ |accessdate= November 11, 2011 }}&lt;/ref&gt;&lt;ref&gt;{{Cite news |title= Ivy Bridge should work in H67 and P67 motherboards |author= LG Nilson |date= February 5, 2011 |work= VR-Zone Technology beats |url= http://vr-zone.com/articles/ivy-bridge-should-work-in-h67-and-p67-motherboards/11077.html |accessdate= November 12, 2011 }}&lt;/ref&gt;
+Intel also plans a new 7-series [[Platform Controller Hub#Panther Point|Panther Point]] chipset with Ivy Bridge that will come with integrated [[USB 3.0]].&lt;ref&gt;{{Cite news |author= Anand Lal Shimpi |title= Correction: Ivy Bridge and Thunderbolt - Featured, not Integrated|work=[[AnandTech]] |date= June 1, 2011|url= http://www.anandtech.com/show/4406/correction-ivy-bridge-and-thunderbolt-featured-not-integrated/ |accessdate= November 11, 2011 }}&lt;/ref&gt;
+
+Ivy Bridge feature improvements from Sandy Bridge were expected to include:&lt;ref&gt;{{cite web
+ | url = http://www.bit-tech.net/hardware/cpus/2011/10/10/all-about-ivy-bridge/6
+ | title = Ivy Bridge Media Upgrades and Security Features
+ | first = Clive | last = Webster | date = 2011-10-10
+ | work = bit-tech | publisher = Dennis Publishing Limited
+}}&lt;/ref&gt;&lt;ref&gt;{{cite web
+ | title = Ivy Bridge desktop CPU lineup details
+ | url = http://www.cpu-world.com/news_2011/2011112701_Ivy_Bridge_desktop_CPU_lineup_details.html
+ | work = CPU World | date = 2011-11-27
+ | first = Gennadiy | last = Shvets
+}}&lt;/ref&gt;
+*[[Multigate device#Tri-gate transistors|Tri-gate transistor]] technology (up to 50% less power consumption).&lt;ref&gt;{{cite web
+ | url = http://newsroom.intel.com/community/intel_newsroom/blog/2011/05/04/intel-reinvents-transistors-using-new-3-d-structure
+ | title = Intel Reinvents Transistors Using New 3-D structure | publisher = Intel | accessdate = 2011-05-04
+}}&lt;/ref&gt;
+* [[PCI Express#PCI Express 3.0|PCI Express 3.0]] support.&lt;ref&gt;{{Cite web
+ | url= http://www.afterdawn.com/news/article.cfm/2011/03/30/intel_ivy_bridge_chips_feature_pci_express_3_0
+ | first = James | last =  Delahunty | title = Intel Ivy Bridge chips feature PCI Express 3.0
+ | work= After Dawn News | date= 2011-03-30 | accessdate =  2011-11-11
+}}&lt;/ref&gt;
+*Max CPU multiplier of 63 (57 for Sandy Bridge).
+*RAM support up to 2800MT/s in 200MHz increments.
+*[[Intel HD Graphics]] with [[DirectX#DirectX 11|DirectX 11]], [[OpenGL|OpenGL 3.1]], and [[OpenCL|OpenCL 1.1]] support.
+*The built-in GPU is believed to have up to 16 execution units (EUs), compared to Sandy Bridge's maximum of 12.&lt;ref name=&quot;anandtech_ivy_bridge&quot; /&gt;
+*The new random number generator and the [[RdRand]] instruction,&lt;ref name=&quot;ieee spectrum&quot;&gt;{{cite web
+ | url = http://spectrum.ieee.org/computing/hardware/behind-intels-new-randomnumber-generator/0
+ | title = Behind Intel's New Random-Number Generator
+ | first1 = Greg | last1 = Taylor | first2 = George | last2 = Cox | year = 2011 | month = September | work = Spectrum | publisher = [[IEEE]]
+}}&lt;/ref&gt; which is codenamed Bull Mountain.&lt;ref name=&quot;bull mountain&quot;&gt;{{cite web
+ | url = http://software.intel.com/en-us/articles/download-the-latest-bull-mountain-software-implementation-guide/?wapkw=%28bull+mountain%29
+ | title = Bull Mountain Software Implementation Guide | publisher = Intel | date = 2011-06-12 | accessdate = 2011-12-04
+}}&lt;/ref&gt;
+*[[Intel Quick Sync Video]].&lt;ref name=&quot;anandtech_ivy_bridge&quot;&gt;{{Cite news
+ | title= Intelâs Roadmap: Ivy Bridge, Panther Point, and SSDs | first = Kristian | last = VÃ¤ttÃ¶
+ | work= AnandTech |date= 2011-05-06 |accessdate= 2011-11-11
+ | url= http://www.anandtech.com/show/4318/intel-roadmap-ivy-bridge-panther-point-ssds/
+}}&lt;/ref&gt;
+*DDR3L low voltage for mobile processors.
+*Multiple [[4K resolution|4k]] video playback.
+
+Due to having no significant obstacles during the new 3D gate development, Intel planned to begin sale of the processors in the last quarter of 2011,&lt;ref&gt;{{Cite news
+ | title= Intel to Sell Ivy Bridge Late in Q4 2011
+ | first = Wolfgang | last = Gruener |work= Tom's Hardware |date= 2011-10-19 |accessdate= 2011-11-11
+ | url= http://www.tomshardware.com/news/ivy-bridge-processor-release-22nm-3d-transistor,13753.html 
+}}&lt;/ref&gt; with retail availability from April 2012.&lt;ref&gt;{{cite web
+ | url = http://www.cpu-world.com/news_2011/2011112401_Launch_dates_of_Ivy_Bridge_processors.html
+ | title = Launch dates of Ivy Bridge processors | date = 2011-11-24 | accessdate = 2011-12-04
+ | first =  Gennadiy | last = Shvets
+}}&lt;/ref&gt; Intel announced production of Ivy Bridge chips in volume, in preparation for the product launch, starting in the third quarter of 2011.&lt;ref&gt;{{cite web
+ | url = http://seekingalpha.com/article/300442-intel-s-ceo-discusses-q3-2011-results-earnings-call-transcript
+ | title = Intel's CEO Discusses Q3 2011 Results - Earnings Call Transcript
+}}&lt;/ref&gt;&lt;ref&gt;{{Cite news
+ | title= Intel Ivy Bridge CPUs may launch in March | first = Sylvie | last = Barak
+ | work= EE Times | date=  2011-10-21 | accessdate = 2011-11-11
+ | url= http://www.eetimes.com/electronics-news/4229956/22nm-Ivy-Bridge-CPUs-likely-to-launch-in-March
+}}&lt;/ref&gt;
+
+[[Thermal design power]] (TDP), according to a October 2011 leaked Intel roadmap, will come in 77/65/55/45/35W options for desktop processors,&lt;ref&gt;{{Cite news
+ | title= Ivy Bridge to have 77W max TDP, backwards and forwards compatibility explained
+ | first = LG | last = Nilson |date= 2011-10-18 |work= VR-Zone Technology beats |accessdate= 2011-11-12
+  |url= http://vr-zone.com/articles/ivy-bridge-to-have-77w-max-tdp-backwards-and-forwards-compatibility-explained/13754.html
+}}&lt;/ref&gt; while Intel says that mobile processors will use variable TDP (for example TDP of 15W, which automatically rises to 35W when the laptop is plugged into a docking bay; with a corresponding rise in performance).&lt;ref&gt;{{cite web
+ | url = http://www.nordichardware.com/news/69-cpu-chipset/43332-intel-ivy-bridge-gets-variable-tdp-and-thunderbolt.html
+ | title = Intel Ivy Bridge gets variable TDP and Thunderbolt
+ | first = Anton | last = Karmehed | date = 2011-05-31 | publisher = NHW
+}}&lt;/ref&gt;
+
+==Performance==
+===Sandy Bridge===
+*Up to 17% more CPU performance clock-for-clock compared to [[Lynnfield (microprocessor)|Lynnfield]] processors.&lt;ref&gt;[http://www.anandtech.com/show/4083/the-sandy-bridge-review-intel-core-i7-2600k-i5-2500k-core-i3-2100-tested/1 AnandTech - The Sandy Bridge Review: Intel Core i7-2600K, i5-2500K and Core i3-2100 Tested&lt;!-- Bot generated title --&gt;]&lt;/ref&gt;
+*Around twice the integrated graphics performance compared to [[Clarkdale (microprocessor)|Clarkdale's]] (12 [[Execution unit|EUs]] comparison).
+
+===Ivy Bridge===
+Intel's performance targets (compared to Sandy Bridge):&lt;ref&gt;{{Cite news |title= Ivy Bridge to have 20 percent performance advantage over Sandy Bridge |author= LG Nilson |date= February 3, 2011 |work= VR-Zone Technology beats |url= http://vr-zone.com/articles/ivy-bridge-to-have-20-percent-performance-advantage-over-sandy-bridge/11061.html |accessdate= November 12, 2011 }}&lt;/ref&gt;
+*Up to 25% increase in CPU performance.
+*Up to 199% increase in integrated GPU performance(HD2000 vs HD4000 in 3DMarkVantage).
+
+==CPU Specification Comparison==
+{| class=&quot;wikitable&quot;
+|-
+!colspan=4|Sandy Bridge
+!colspan=4|Ivy Bridge
+|-
+!Socket
+!Cores
+!Transistor count
+!Die size
+!Socket
+!Cores
+!Transistor count
+!Die size
+|-
+|rowspan=3|[[LGA 1155]]
+|4
+|995 Million&lt;ref name=&quot;Transistors_Sandy_bridge&quot;&gt;[http://www.anandtech.com/show/4818/counting-transistors-why-116b-and-995m-are-both-correct Counting Transistors: Why 1.16B and 995M Are Both Correct], by Anand Lal Shimpi on 14/9/2011, www.anandtech.com&lt;/ref&gt;
+|216&amp;nbsp;mm&lt;sup&gt;2&lt;/sup&gt;
+|LGA1155
+|4
+|1.4 Billion&lt;ref&gt;[http://www.anandtech.com/show/4798/ivy-bridge-148b-transistors Ivy Bridge: 1.4B Transistors]&lt;/ref&gt;
+|~172&amp;nbsp;mm&lt;sup&gt;2&lt;/sup&gt;&lt;ref&gt;[http://www.hardcore-hardware.com/20111003170/Latest-news/intel-mobile-ivy-bridge-cpu-pictured-compared-with-sandy-bridge.html Intel Mobile Ivy Bridge CPU Pictured, Compared with Sandy Bridge ], by Hardcore-Hardware 3/9/2011&lt;/ref&gt;
+|-
+|2 (6 EUs)
+|504 Million
+|131 mm&lt;sup&gt;2&lt;/sup&gt;
+|-
+|2 (12 EUs)
+|624 Million
+|149 mm&lt;sup&gt;2&lt;/sup&gt;
+|-
+|[[LGA 2011]]
+|4&lt;sup&gt;^&lt;/sup&gt;/6&lt;sup&gt;^&lt;/sup&gt;/8
+|2.27 Billion&lt;ref&gt;{{Cite web |author= Xie Ping |title= ç¬¬3é¡µï¼Sandy Bridge-Eæ¶æCore i7åå· |language= Chinese |work= INPAI.com.cn website |url= http://www.inpai.com.cn/doc/hard/160820_3.htm |accessdate= November 14, 2011 }}&lt;!-- reliable source?? --&gt;&lt;/ref&gt;
+|435 mm&lt;sup&gt;2&lt;/sup&gt;
+|}
+&lt;sup&gt;^&lt;/sup&gt; Octa-core with cores disabled for yield purposes.&lt;ref&gt;http://www.brightsideofnews.com/news/2011/3/30/intels-next-gen-platforms-leaked-lga-13562c-lga-20112c-z682c-x79-chipsets.aspx&lt;/ref&gt;
+
+==List of Sandy Bridge processors==
+&lt;sup&gt;1&lt;/sup&gt;Processors featuring Intel's HD 3000 graphics are set in '''bold'''. Other processors feature HD 2000 graphics or no graphics core (Graphics Clock rate indicated by N/A).
+===Desktop platform===
+&lt;ref name = &quot;E-Series&quot;&gt;{{cite web | url = http://www.tomshardware.com/news/Sandy-Bridge-E-Series-Patsburg-Direct-Media-Interface-Core-i7-9-series,12179.html | title = Intel's Sandy Bridge E-Series in Q4 2011 | date = 2011-02-11 | accessdate = 2011-02-13
+| publisher = Tom's Hardware}}&lt;/ref&gt;
+&lt;ref&gt;{{cite web | url = http://www.anandtech.com/show/4291/additional-details-on-sandy-bridgee-processors-x79-and-lga2011 | title = Additional Details on Sandy Bridge-E Processors, X79, and LGA2011 | date = 2011-04-26 | accessdate = 2011-04-30
+| publisher = Anandtech}}&lt;/ref&gt;
+&lt;ref name=&quot;ark&quot;&gt;{{Cite web |title= Products (Formerly Sandy Bridge) |publisher= Intel |work= Official product web site |url= http://ark.intel.com/products/codename/29900|accessdate= November 11, 2011 }}&lt;/ref&gt;
+&lt;ref&gt;{{cite web | url=http://ark.intel.com/search/products?q=core+i7&amp;page=3 | title = Intel i7 3930k and 3960x | date = 2011-11-22 | accessdate = 2011-11-22 | publisher = Intel}}&lt;/ref&gt;
+{| class=&quot;wikitable&quot;
+|-
+!rowspan=2|Target&lt;br&gt;segment
+!rowspan=2|Cores&lt;br&gt;(Threads)
+!colspan=2 rowspan=&quot;2&quot;|Processor&lt;br&gt;Branding &amp; Model
+!colspan=2|CPU [[Clock rate]]
+!colspan=2|Graphics [[Clock rate]]
+!rowspan=2|[[CPU cache#Multi-level caches|L3&lt;br&gt;Cache]]
+!rowspan=2|[[Thermal Design Power|TDP]]
+!rowspan=2|Release&lt;br&gt;Date (Y-M-D)
+!rowspan=2|Price&lt;br&gt;(USD)
+!colspan=3|Motherboard
+|-
+!Normal
+![[Intel Turbo Boost|Turbo]]
+!Normal
+!Turbo
+!Socket
+!Interface
+!Memory
+|-
+|rowspan=3|Extreme /&lt;br&gt; High-End
+|rowspan=2|6 (12)
+|[[Core i7|Core i7&lt;br&gt;Extreme]]
+|3960X
+|3.3 GHz
+|3.9 GHz
+|rowspan=3 colspan=2 {{N/A}}
+|15 MB
+|rowspan=3|130 W
+|rowspan=2|2011-11-14
+|$999
+|rowspan=3|[[LGA 2011|LGA&lt;br&gt;2011]]
+|rowspan=3|[[Direct Media Interface|DMI 2.0]]&lt;br&gt;PCIe 3.0
+|rowspan=3 | Up to quad&lt;br&gt;channel&lt;br&gt;DDR3-1600&lt;ref&gt;{{Cite news | url= http://www.tomshardware.com/reviews/core-i7-3960x-x79-performance,3026.html | title= Intel Core i7-3960X (Sandy Bridge-E) And X79 Platform Preview | work=Tom's Hardware | date= September 12, 2011 |author= Chris Angelini| accessdate= November 14, 2011 }}&lt;/ref&gt;
+|-
+|rowspan=6|[[Core i7]]
+|3930K
+|3.2 GHz
+|3.8 GHz
+|12 MB
+|$583
+|-
+|rowspan=5|4 (8)
+|3820
+|3.6 GHz
+|rowspan=2|3.9 GHz
+|10 MB
+|Q1 2012&lt;ref&gt;{{Cite news |title= Sandy Bridge-E and X79 available for (pre-)order |author= LG Nilson |date= October 31, 2011 |work= VR-Zone Technology beats |url= http://vr-zone.com/articles/sandy-bridge-e-and-x79-available-for-pre-order/13837.html |accessdate= November 12, 2011 }}&lt;/ref&gt;
+|$294
+|-
+|rowspan=14|Performance
+|'''2700K'''
+|3.5&amp;nbsp;GHz
+|rowspan=7|850&amp;nbsp;MHz
+|rowspan=4|1350&amp;nbsp;MHz
+|rowspan=4|8 MB
+|rowspan=3|95 W
+|2011-10-24
+|$332
+|rowspan=36|[[LGA 1155|LGA&lt;br&gt;1155]]
+|rowspan=36|[[Direct Media Interface|DMI 2.0]]&lt;br&gt;PCIe 2.0
+|rowspan=36|Up to dual&lt;br&gt;channel&lt;br&gt;DDR3-1333
+|-
+|'''2600K'''
+|rowspan=2|3.4&amp;nbsp;GHz
+|rowspan=3|3.8&amp;nbsp;GHz
+|rowspan=8|2011-1-9
+|$317
+|-
+|2600
+|$294
+|-
+|2600S
+|2.8&amp;nbsp;GHz
+|65 W
+|$306
+|-
+|rowspan=10|4 (4)
+|rowspan=11|[[Core i5]]
+|'''2500K'''
+|rowspan=2|3.3&amp;nbsp;GHz
+|rowspan=3|3.7&amp;nbsp;GHz
+|rowspan=3|1100&amp;nbsp;MHz
+|rowspan=10|6 MB
+|rowspan=2|95 W
+|$216
+|-
+|2500
+|$205
+|-
+|2500S
+|2.7&amp;nbsp;GHz
+|65 W
+|rowspan=2|$216
+|-
+|2500T
+|2.3&amp;nbsp;GHz
+|3.3&amp;nbsp;GHz
+|650&amp;nbsp;MHz
+|1250&amp;nbsp;MHz
+|45 W
+|-
+|2400
+|3.1&amp;nbsp;GHz
+|3.4&amp;nbsp;GHz
+|rowspan=6|850&amp;nbsp;MHz
+|rowspan=24|1100&amp;nbsp;MHz
+|95 W
+|$184
+|-
+|'''2405S'''
+|rowspan=2|2.5&amp;nbsp;GHz
+|rowspan=3|3.3&amp;nbsp;GHz
+|rowspan=2|65 W
+|2011-5-22
+|$205
+|-
+|2400S
+|2011-1-9
+|$195
+|-
+|2320
+|3.0&amp;nbsp;GHz
+|rowspan=3|95 W
+|2011-9-4
+|rowspan=3|$177
+|-
+|2310
+|2.9&amp;nbsp;GHz
+|3.2&amp;nbsp;GHz
+|2011-5-22
+|-
+|2300
+|2.8&amp;nbsp;GHz
+|3.1&amp;nbsp;GHz
+|2011-1-9
+|-
+|rowspan=22|Mainstream
+|rowspan=9|2 (4)
+|2390T
+|2.7&amp;nbsp;GHz
+|3.5&amp;nbsp;GHz
+|rowspan=3|650&amp;nbsp;MHz
+|rowspan=18|3 MB
+|rowspan=3|35 W
+|2011-2-20
+|$195
+|-
+|rowspan=8|[[Core i3#Core i3 2|Core i3]]
+|2120T
+|2.6&amp;nbsp;GHz
+|rowspan=21 {{N/A}}
+|2011-9-4
+|rowspan=2|$127
+|-
+|2100T
+|2.5&amp;nbsp;GHz
+|2011-2-20
+|-
+|2130
+|3.4&amp;nbsp;GHz
+|rowspan=13|850&amp;nbsp;MHz
+|rowspan=13|65 W
+|rowspan=2|2011-9-4
+|$138
+|-
+|'''2125'''
+|rowspan=2|3.3&amp;nbsp;GHz
+|$134
+|-
+|2120
+|2011-2-20
+|$138
+|-
+|'''2105'''
+|rowspan=3| 3.1&amp;nbsp;GHz
+|2011-5-22
+|$134
+|-
+|2102
+|Q2 2011
+|
+|-
+|2100
+|2011-2-20
+|$117
+|-
+|rowspan=12|2 (2)
+|rowspan=9|[[Pentium]]
+|G860
+|3.0&amp;nbsp;GHz
+|2011-9-4
+|rowspan=2| $86
+|-
+|G850
+|2.9&amp;nbsp;GHz
+|rowspan=2|2011-5-24
+|-
+|G840
+|2.8&amp;nbsp;GHz
+|$75
+|-
+|G632
+|rowspan=2| 2.7&amp;nbsp;GHz
+|Q3 2011
+| 
+|-
+|G630
+|2011-9-4
+|$75
+|-
+|G622
+|rowspan=2|2.6&amp;nbsp;GHz
+|Q2 2011
+| 
+|-
+|G620
+|2011-5-24
+|$64
+|-
+|G630T
+|2.3&amp;nbsp;GHz
+|rowspan=2|650&amp;nbsp;MHz
+|rowspan=2|35 W
+|2011-9-4
+|rowspan=2|$70
+|-
+|G620T
+|2.2&amp;nbsp;GHz
+|2011-5-24
+|-
+|rowspan=4|[[Celeron]]
+|G540
+|2.5&amp;nbsp;GHz
+|rowspan=2|850&amp;nbsp;MHz
+|rowspan=4|1000&amp;nbsp;MHz
+|rowspan=3|2 MB
+|rowspan=2|65 W
+|rowspan=4|2011-9-4
+|$52
+|-
+|G530
+|2.4&amp;nbsp;GHz
+|$42
+|-
+|G530T
+|2.0&amp;nbsp;GHz
+|rowspan=2|650&amp;nbsp;MHz
+|rowspan=2|35 W
+|$47
+|-
+|1 (1)
+|G440
+|1.6&amp;nbsp;GHz
+|1 MB
+|$37
+|}
+Suffixes to denote:
+*K - Unlocked &lt;span style=&quot;color: #969696&quot;&gt;(adjustable CPU ratio up to 57 bins)&lt;/span&gt;
+*S - Performance-optimized lifestyle &lt;span style=&quot;color: #969696&quot;&gt;(low power with 65W TDP)&lt;/span&gt;
+*T - Power-optimized lifestyle &lt;span style=&quot;color: #969696&quot;&gt;(ultra low power with 35-45W TDP)&lt;/span&gt;
+*X - Extreme performance &lt;span style=&quot;color: #969696&quot;&gt;(adjustable CPU ratio with no ratio limit)&lt;/span&gt;
+
+===Server platform===
+{| class=&quot;wikitable&quot;
+|-
+!rowspan=2|Target&lt;br&gt;Segment
+!rowspan=2|Socket
+!rowspan=2|Cores &lt;br&gt;(Threads)
+!colspan=2 rowspan=2|Processor&lt;br&gt;Branding &amp; Model
+!colspan=2|CPU [[Clock rate]]
+!colspan=2|Graphics [[Clock rate]]
+!rowspan=2|[[CPU cache#Multi-level caches|L3&lt;br&gt;Cache]]
+!rowspan=2|Interface
+!rowspan=2|Supported&lt;br&gt;Memory
+!rowspan=2|[[Thermal Design Power|TDP]]
+!rowspan=2|Release&lt;br&gt;Date
+!rowspan=2|Price&lt;br&gt;(USD)
+|-
+!Standard
+![[Intel Turbo Boost|Turbo]]
+!Normal
+!Turbo
+|-
+|4P Server
+|rowspan=18|[[LGA 2011|LGA&lt;br&gt;2011]]
+|8 (16)&lt;br&gt;6 (12)&lt;br&gt;4 (4/8)&lt;br&gt;2 (2/4)
+|rowspan=22|Xeon E5
+|46xx
+|colspan=2|
+|rowspan=24 colspan=2 {{N/A}}
+|
+|rowspan=18|2Ã [[Intel QuickPath Interconnect|QPI]]&lt;br&gt;DMI 2.0&lt;br&gt;PCIe 3.0
+|Up to quad&lt;br&gt;channel&lt;br&gt;DDR3-1600
+|
+|Q1 2012
+|
+|-
+|rowspan=18|2P Server
+|rowspan=8|8 (16)
+|2687W
+|3.1 GHz
+|
+|rowspan=8|20 MB
+|rowspan=9|4x DDR3-1600
+|150 W
+|rowspan=17|Q1 2012
+|$1885
+|-
+|2690
+|2.9 GHz
+|
+|135 W
+|$2057
+|-
+|2680
+|2.7 GHz
+|
+|130 W
+|$1723
+|-
+|2670
+|2.6 GHz
+|
+|rowspan=2|115 W
+|$1552
+|-
+|2665
+|2.4 GHz
+|
+|$1440
+|-
+|2660
+|2.2 GHz
+|
+|rowspan=2|95 W
+|$1329
+|-
+|2650
+|2.0 GHz
+|
+|$1106
+|-
+|2650L
+|1.8 GHz
+|
+|70 W
+|$1106
+|-
+|rowspan=5|6 (12)
+|2667
+|2.9 GHz
+|
+|rowspan=5|15 MB
+|130 W
+|$1552
+|-
+|2640
+|2.5 GHz
+|
+|rowspan=4|4x DDR3-1333
+|rowspan=3|95 W
+|$884
+|-
+|2630
+|2.3 GHz
+|
+|$612
+|-
+|2620
+|2.0 GHz
+|
+|$406
+|-
+|2630L
+|2.0 GHz
+|
+|60 W
+|$662
+|-
+|4 (8)
+|2643
+|3.3 GHz
+|
+|rowspan=3|10 MB
+|4x DDR3-1600
+|130 W
+|$884
+|-
+|rowspan=2|4 (4)
+|2609
+|2.4 GHz
+|
+|rowspan=2|4x DDR3-1066
+|rowspan=3|80 W
+|$294
+|-
+|2603
+|1.8 GHz
+|
+|$202
+|-
+|2 (4)
+|2637
+|3.0 GHz
+|
+|5 MB
+|4x DDR3-1600
+|$884
+|-
+|[[LGA 1356|LGA&lt;br&gt;1356]]
+|8 (16)&lt;br&gt;6 (12)&lt;br&gt;4 (4/8)&lt;br&gt;2 (2/4)
+|24xx
+|colspan=2|
+|
+|1Ã QPI&lt;br&gt;DMI 2.0&lt;br&gt;PCIe 3.0
+|Up to triple&lt;br&gt;channel&lt;br&gt;DDR3-1600
+|
+|Q1 2012
+|-
+|rowspan=15|1P Server
+|rowspan=3|[[LGA 2011|LGA&lt;br&gt;2011]]
+|rowspan=2|6 (12)
+|1660
+|3.3&amp;nbsp;GHz
+|3.9 GHz
+|15 MB
+|rowspan=3|2Ã [[Intel QuickPath Interconnect|QPI]]&lt;br&gt;DMI 2.0&lt;br&gt;PCIe 3.0
+|rowspan=3|Up to quad&lt;br&gt;channel&lt;br&gt;DDR3-1333
+|rowspan=3|130 W
+|rowspan=3|Q4 2011
+|$1080
+|-
+|1650
+|3.2&amp;nbsp;GHz
+|3.8 GHz
+|12 MB
+|$583
+|-
+|4 (8)
+|1620
+|rowspan=2|3.6&amp;nbsp;GHz
+|3.9 GHz
+|10 MB
+|$294
+|-
+|rowspan=12|[[LGA 1155|LGA&lt;br&gt;1155]]
+|rowspan=9|4 (8)
+|rowspan=12|Xeon E3
+|1290
+|4.0 GHz
+|rowspan=9|8 MB
+|rowspan=12|[[Direct Media Interface|DMI 2.0]]&lt;br&gt;PCIe 2.0
+|rowspan=12|Up to dual&lt;br&gt;channel&lt;br&gt;DDR3-1333
+|rowspan=3|95 W
+|2011-5-29
+|$885
+|-
+|1280
+|3.5&amp;nbsp;GHz
+|3.9 GHz
+|rowspan=11|2011-3-15
+|$612
+|-
+|'''1275'''
+|rowspan=2|3.4&amp;nbsp;GHz
+|rowspan=2|3.8 GHz
+|850 MHz
+|1350 MHz
+|$339
+|-
+|1270
+|colspan=&quot;2&quot; {{N/A}}
+|80 W
+|$328
+|-
+|1260L
+|2.4&amp;nbsp;GHz
+|3.3 GHz
+|650 MHz
+|1250 MHz
+|45 W
+|$294
+|-
+|'''1245'''
+|rowspan=2|3.3&amp;nbsp;GHz
+|rowspan=2|3.7 GHz
+|850 MHz
+|1350 MHz
+|95 W
+|$262
+|-
+|1240
+|colspan=2 {{N/A}}
+|80 W
+|$250
+|-
+|'''1235'''
+|rowspan=2|3.2&amp;nbsp;GHz
+|rowspan=2|3.6 GHz
+|850 MHz
+|1350 MHz
+|95 W
+|$240
+|-
+|1230
+|colspan=2 {{N/A}}
+|80 W
+|$215
+|-
+|rowspan=2|4 (4)
+|'''1225'''
+|rowspan=2|3.1&amp;nbsp;GHz
+|rowspan=3|3.4 GHz
+|850 MHz
+|1350 MHz
+|6 MB
+|95 W
+|$194
+|-
+|1220
+|rowspan=2 colspan=2 {{N/A}}
+|8 MB
+|80 W
+|rowspan=2|$189
+|-
+|2 (4)
+|1220L
+|2.2&amp;nbsp;GHz
+|3 MB
+|20 W
+|}
+
+===Mobile platform===
+* Core i5-2515E and Core i7-2715QE processors have support for ECC memory and PCI express port bifurcation.
+* '''All mobile processors, except [[Celeron]] and [[Pentium]], use Intel's Graphics sub-system HD 3000 (12 EUs).'''
+{| class=&quot;wikitable&quot;
+|-
+! rowspan=2|Target&lt;br&gt;Segment
+! rowspan=2|Cores /&lt;br&gt;Threads
+! colspan=2 rowspan=2|Processor&lt;br&gt;Branding &amp; Model
+! colspan=2|CPU [[Clock rate]]
+! colspan=2|Graphics [[Clock rate]]
+! rowspan=2|[[CPU cache#Multi-level caches|L3&lt;br&gt;Cache]]
+! rowspan=2|[[Thermal Design Power|TDP]]
+! rowspan=2|Release&lt;br&gt;Date
+! rowspan=2|Price&lt;br&gt;(USD)
+! colspan=2|Motherboard
+|-
+!Normal
+![[Intel Turbo Boost|Turbo]]&lt;br&gt;(1C/2C/4C)
+!Normal
+!Turbo
+!Interface
+!Socket
+|-
+|rowspan=2|Extreme
+|rowspan=12|4 (8)
+|rowspan=2|Core i7&lt;br&gt;Extreme
+|2960XM
+|2.7 GHz
+|3.7/3.6/3.4&amp;nbsp;GHz
+|rowspan=14|650&amp;nbsp;MHz
+|rowspan=6|1300&amp;nbsp;MHz
+|rowspan=4|8 MB
+|rowspan=2|55 W
+|2011-9-4
+|rowspan=2|$1096
+|rowspan=8|*[[Direct Media Interface|DMI 2.0]]&lt;br&gt;*Memory: Up to&lt;br&gt;dual channel&lt;br&gt;DDR3-1600&amp;nbsp;MHz&lt;br&gt;PCIe 2.0
+|rowspan=12|Socket G2 /&lt;br&gt;BGA-1224
+|-
+|2920XM
+|2.5 GHz
+|3.5/3.4/3.2&amp;nbsp;GHz
+|2011-1-5
+|-
+|rowspan=10|Performance
+|rowspan=20|Core i7
+|2860QM
+|2.5 GHz
+|3.6/3.5/3.3 GHz
+|rowspan=10 | 45 W
+|2011-9-4
+|rowspan=2|$568
+|-
+|2820QM
+|2.3 GHz
+|3.4/3.3/3.1 GHz
+|2011-1-5
+|-
+|2760QM
+|2.4 GHz
+|3.5/3.4/3.2 GHz
+|rowspan=8|6 MB
+|2011-9-4
+|rowspan=2|$378
+|-
+|2720QM
+|2.2 GHz
+|3.3/3.2/3.0 GHz
+|rowspan=3|2011-1-5
+|-
+|2715QE
+|rowspan=2|2.1 GHz
+|rowspan=2|3.0/2.9/2.7 GHz
+|rowspan=2|1200 MHz
+|rowspan=6|OEM
+|-
+|2710QE
+|-
+|2675QM
+|rowspan=2|2.2 GHz
+|rowspan=2|3.1/3.0/2.8 GHz
+|1200 MHz
+|rowspan=2|2011-10-2
+|rowspan=49|*[[Direct Media Interface|DMI 2.0]]&lt;br&gt;*Memory: Up to&lt;br&gt;dual channel&lt;br&gt;DDR3-1333&amp;nbsp;MHz&lt;br&gt;PCIe 2.0
+|-
+|2670QM
+|1100MHz
+|-
+|2635QM
+|rowspan=2|2.0 GHz
+|rowspan=2|2.9/2.8/2.6 GHz
+|1200 MHz
+|rowspan=2|2011-1-5
+|-
+|2630QM
+|1100 MHz
+|-
+|rowspan=45|Mainstream
+|rowspan=28|2 (4)
+|2640M
+|2.8 GHz
+|3.5/3.3 GHz
+|rowspan=2|1300 MHz
+|rowspan=10|4 MB
+|rowspan=2|35 W
+|2011-9-4
+|rowspan=3|$346
+|rowspan=45|Socket G2 /&lt;br&gt;BGA-1023
+|-
+|2620M
+|2.7 GHz
+|3.4/3.2 GHz
+|rowspan=4|2011-2-20
+|-
+|2649M
+|2.3 GHz
+|3.2/2.9 GHz
+|rowspan=2|500 MHz
+|rowspan=2|1100 MHz
+|rowspan=3|25 W
+|-
+|2629M
+|2.1 GHz
+|3.0/2.7 GHz
+|$311
+|-
+|2655LE
+|2.2 GHz
+|2.9/2.7 GHz
+|650 MHz
+|1000 MHz
+|OEM
+|-
+|2677M
+|1.8 GHz
+|2.9/2.6 GHz
+|rowspan=8|350 MHz
+|rowspan=2|1200 MHz
+|rowspan=8|17 W
+|rowspan=2|2011-6-20
+|$317
+|-
+|2637M
+|1.7 GHz
+|2.8/2.5 GHz
+|$289
+|-
+|2657M
+|1.6 GHz
+|2.7/2.4 GHz
+|1000 MHz
+|rowspan=3|2011-2-20
+|$317
+|-
+|2617M
+|rowspan=2|1.5 GHz
+|2.6/2.3 GHz
+|950 MHz
+|$289
+|-
+|2610UE
+|2.4/2.1 GHz
+|850 MHz
+|OEM
+|-
+|rowspan=10|Core i5
+|2557M
+|1.7 GHz
+|2.7/2.4 GHz
+|1200 MHz
+|rowspan=18|3 MB
+|2011-6-20
+|rowspan=2|$250
+|-
+|2537M
+|1.4 GHz
+|2.3/2.0 GHz
+|900 MHz
+|2011-2-20
+|-
+|2467M
+|1.6 GHz
+|2.3/2.0 GHz
+|1150 MHz
+|2011-6-19
+|OEM
+|-
+|2540M
+|2.6 GHz
+|3.3/3.1 GHz
+|rowspan=12|650 MHz
+|rowspan=2|1300 MHz
+|rowspan=12|35 W
+|rowspan=4|2011-6-20
+|$266
+|-
+|2520M
+|rowspan=3|2.5 GHz
+|3.2/3.0 GHz
+|$225
+|-
+|2515E
+|rowspan=2|3.1/2.8 GHz
+|rowspan=2|1100 MHz
+|rowspan=5|OEM
+|-
+|2510E
+|-
+|2435M
+|rowspan=2|2.4 GHz
+|rowspan=2|3.0/2.7 GHz
+|1300MHz
+|rowspan=2|2011-10-2
+|-
+|2430M
+|rowspan=2|1200 MHz
+|-
+|2410M
+|rowspan=2|2.3 GHz
+|2.9/2.6 GHz
+|2011-6-20
+|-
+|rowspan=8|Core i3
+|2350M
+|rowspan=25 {{N/A}}
+|1150 MHz
+|2011-10-2
+|$225
+|-
+|2330E
+|rowspan=2|2.2 GHz
+|1050 MHz
+|rowspan=2|2011-6-19
+|rowspan=12|OEM
+|-
+|2330M
+|1100 MHz
+|-
+|2310E
+|rowspan=2|2.1 GHz
+|1050 MHz
+|rowspan=2|2011-2-20
+|-
+|2310M
+|1100 MHz
+|-
+|2367M
+|1.4 GHz
+|rowspan=5|350 MHz
+|1000 MHz
+|rowspan=5|17 W
+|2011-10-2
+|-
+|2357M
+|rowspan=2|1.3 GHz
+|950 MHz
+|rowspan=2|2011-6-19
+|-
+|2340UE
+|800 MHz
+|-
+|rowspan=13|2 (2)
+|rowspan=5|Pentium
+|967
+|1.3 GHz
+|1000 MHz
+|rowspan=13|2 MB
+|2011-10-2
+|-
+|957
+|1.2 GHz
+|800 MHz
+|2011-6-19
+|-
+|B960
+|2.2 GHz
+|rowspan=8|650 MHz
+|rowspan=3|1100 MHz
+|rowspan=8|35 W
+|2011-10-2
+|-
+|B950
+|2.1 GHz
+|rowspan=2|2011-6-19
+|-
+|B940
+|2.0 GHz
+|-
+|rowspan=12|Celeron
+|B840
+|1.9 GHz
+|1000 MHz
+|2011-9-4
+|$86
+|-
+|B815&lt;ref&gt;http://www.cpu-world.com/CPUs/Celeron_Dual-Core/Intel-Mobile%20Celeron%20B815.html&lt;/ref&gt;
+|rowspan=3|1.6 GHz
+|1050 MHz
+|Q1 2012
+|
+|-
+|B810E
+|1000 MHz
+|2011-6-19
+|OEM
+|-
+|B810
+|950 MHz
+|2011-3-13
+|$86
+|-
+|B800
+|1.5 GHz
+|rowspan=2 | 1000 MHz
+|2011-6-19
+|$80
+|-
+|857
+|1.2 GHz
+|rowspan=5|350 MHz
+|rowspan=5|17 W
+|2011-7-3
+|rowspan=2|$134
+|-
+|847
+|rowspan=2|1.1 GHz
+|rowspan=4|800 MHz
+|rowspan=2|2011-6-19
+|-
+|847E
+|rowspan=2|OEM
+|-
+|rowspan=4|1 (1)
+|827E
+|1.4 GHz
+|rowspan=4|1.5 MB
+|rowspan=2|2011-7-3
+|-
+|787
+|1.3 GHz
+|$107
+|-
+|B720&lt;ref&gt;http://www.cpu-world.com/CPUs/Celeron_Dual-Core/Intel-Mobile%20Celeron%20B720.html&lt;/ref&gt;
+|1.7 GHz
+|rowspan=2|650 MHz
+|rowspan=2|1000 MHz
+|rowspan=2|35 W
+|Q1 2012
+|
+|-
+|B710
+|1.6 GHz
+|2011-6-19
+|$70
+|}
+
+Suffixes to denote:
+*M - Mobile processors
+**XM - Unlocked
+**QM - Quad-core
+*E - Embedded mobile processors
+**QE - Quad-core
+**LE - Performance-optimized
+**UE - Power-optimized
+
+==List of Ivy Bridge Processors==
+&lt;sup&gt;1&lt;/sup&gt;Processors featuring Intel's HD 4000 graphics are set in '''bold'''. Other processors feature HD 2500 graphics or no graphics core (Graphics Clock rate indicated by N/A).
+
+===Desktop Processors===
+[http://www.cpu-world.com/news_2011/2011112701_Ivy_Bridge_desktop_CPU_lineup_details.html CPU World: Rumoured Ivy Bridge processors]
+{| class=&quot;wikitable&quot;
+|-
+!rowspan=2|Target&lt;br&gt;segment
+!rowspan=2|Cores&lt;br&gt;(Threads)
+!colspan=2 rowspan=&quot;2&quot;|Processor&lt;br&gt;Branding &amp; Model
+!colspan=2|CPU [[Clock rate]]
+!colspan=2|Graphics [[Clock rate]]
+!rowspan=2|[[CPU cache#Multi-level caches|L3&lt;br&gt;Cache]]
+!rowspan=2|[[Thermal Design Power|TDP]]
+!rowspan=2|Release&lt;br&gt;Date (Y-M-D)
+!rowspan=2|Price&lt;br&gt;(USD)
+!colspan=3|Motherboard
+|-
+!Normal
+![[Intel Turbo Boost|Turbo]]
+!Normal
+!Turbo
+!Socket
+!Interface
+!Memory
+|-
+|rowspan=2|Performance
+|rowspan=2|4 (8)
+|rowspan=2|Core i7
+|'''3770K'''
+|3.5 GHz
+|rowspan=2|3.9 GHz
+|rowspan=8|650 MHz
+|rowspan=5|1150 MHz
+|rowspan=2|8 MB
+|rowspan=8|77 W
+|rowspan=3|
+|$
+|rowspan=8|[[LGA 1155|LGA&lt;br&gt;1155]]
+|rowspan=8|[[Direct Media Interface|DMI 2.0]]&lt;br&gt;PCIe 3.0&lt;sup&gt;^&lt;/sup&gt;
+|rowspan=8|Up to dual&lt;br&gt;channel&lt;br&gt;DDR3-1600
+|-
+|'''3770'''
+|3.4 GHz
+|$
+|-
+|rowspan=6|Mainstream
+|rowspan=6|4 (4)
+|rowspan=6|Core i5
+|'''3570K'''
+|3.4 GHz
+|rowspan=2|3.8 GHz
+|rowspan=6|6 MB
+|$
+|-
+|3570
+|3.4 GHz
+|
+|$
+|-
+|3550
+|3.3 GHz
+|3.7 GHz
+|
+|$
+|-
+|3470
+|3.2 GHz
+|3.6 GHz
+|rowspan=2|1100 MHz
+|
+|$
+|-
+|3450
+|3.2 GHz
+|3.5 GHz
+|
+|$
+|-
+|3330
+|3.0 GHz
+|3.2 GHz
+|1050 MHz
+|
+|$
+|}
+&lt;sup&gt;^&lt;/sup&gt; Requires a 75/77-series Motherboard
+&lt;!--
+====Server Processors====
+====Mobile Processors====
+--&gt;
+
+==Cougar Point chipset flaw==
+On January 31, 2011, Intel issued a recall on all 67-series motherboards due to a flaw in the Cougar Point Chipset.&lt;ref&gt;[http://www.sakhtafzarmag.com/news/digital-news-hardware/225-sandy-bridge.html Sandy BridgeØ Ø±Ø§Ù Ø­ÙâÙØ§Ø Ø¨Ø§Ø²Ø§Ø± Ø§ÛØ±Ø§Ù&lt;!-- Bot generated title --&gt;]&lt;/ref&gt; A hardware issue, in which the chipset's SATA-II ports may fail over time, cause failure of connection to SATA-II devices, though data is not at risk.&lt;ref&gt;Tom's Hardware,Intel Identifies Cougar Point Chipset Error, Halts Shipments http://www.tomshardware.com/news/cougar-point-sandy-bridge-sata-error,12108.html&lt;/ref&gt; Intel claims that this problem will only affect 5% of users over 3 years, however, heavier I/O workloads can exacerbate the problem.
+
+Intel stopped production of flawed B2 stepping chipsets and began producing B3 stepping chipsets with the silicon fix. Shipping of these new chipsets started on 14 February, 2011 and Intel estimated full recovery volume in April 2011.&lt;ref&gt;{{cite press|title=Intel Identifies Chipset Design Error, Implementing Solution |date=January 31, 2011 |publisher= Intel Corporation|url=http://newsroom.intel.com/community/intel_newsroom/blog/2011/01/31/intel-identifies-chipset-design-error-implementing-solution}}&lt;/ref&gt; Motherboard manufacturers (such as [[ASUS]] and [[Gigabyte Technology]]) and computer manufacturers (such as [[Dell]] and [[Hewlett-Packard]]) stopped selling products that involved the flawed chipset and offered support for affected customers. Options ranged from swapping for B3 motherboards to product refunds.&lt;ref&gt;{{cite news| url=http://www.bbc.co.uk/news/technology-12354263 | work=BBC News | title=Intel chip bug affects HP, Dell, Samsung and Lenovo | date=2011-02-03}}&lt;/ref&gt;&lt;ref&gt;{{cite news| url=http://www.reuters.com/article/2011/02/02/uk-intel-hp-idUKTRE7118OL20110202 | work=Reuters | title=HP to offer refund for PCs with flawed Intel chip | date=2011-02-02}}&lt;/ref&gt;
+
+Sandy Bridge processor sales were temporarily on hold, as one cannot use the CPU without a motherboard. However, processor release dates are not affected.&lt;ref&gt;[http://www.pcworld.com/article/218919/intel_to_ship_dualcore_sandy_bridge_chips_on_feb_20.html Intel to Ship Dual-core Sandy Bridge Chips on Feb. 20 | PCWorld&lt;!-- Bot generated title --&gt;]&lt;/ref&gt;
+After two weeks, Intel continued shipping some chipsets, but manufacturers had to agree to a set of terms that will prevent customers from encountering the bug.&lt;ref&gt;[http://www.expertreviews.co.uk/general/1282684/intel-to-continue-shipping-flawed-sandy-bridge-chipsets Intel to continue shipping flawed Sandy Bridge chipsets | Expert Reviews&lt;!-- Bot generated title --&gt;]&lt;/ref&gt;
+
+==Limitations==
+===Overclocking===
+Due to a single clock generator controlling the speed of all electrical buses, [[overclocking]] of [[Land grid array|LGA]]-1155 compatible processors beyond the default 100&amp;nbsp;MHz base clock speed is very limited, up to 5-7% without other hardware components failing.&lt;ref name = &quot;Intel plans to deliberately limit Sandy Bridge overclocking&quot;&gt;{{citation |title=Intel to limit Sandy Bridge Overclocking |publisher=Bit-Tech  |date=July 22, 2010 |url= http://www.bit-tech.net/news/hardware/2010/07/22/intel-to-limit-sandy-bridge-overclocking/1}}&lt;/ref&gt; However, Intel has made available K-edition processors which feature unlocked multipliers; the highest multiplier for Sandy Bridge is 57.&lt;ref name=&quot;AnandTech_3922-Page8&quot;&gt;{{cite news |author= Anand Lal Shimpi |title=Intelâs Sandy Bridge Architecture Exposed |page=8 |work=[[AnandTech]] |date= September 14, 2010|url=http://www.anandtech.com/show/3922/intels-sandy-bridge-architecture-exposed/ |accessdate= November 11, 2011 }}&lt;/ref&gt;
+
+Intel has demonstrated a Sandy Bridge CPU running stably overclocked at 4.9&amp;nbsp;GHz on air cooling.&lt;ref&gt;[http://www.youtube.com/watch?v=hKGnaTrxS_k YouTube - âªIntel demos Sandy Bridge running at 4.9GHzâ¬â&lt;!-- Bot generated title --&gt;]&lt;/ref&gt;&lt;ref name=&quot;ZD Net&quot;&gt;{{cite news |title=IDF Intel 2010: Intel Overclocks Sandy Bridge CPU to 4.9 GHz, outpaces 12-core AMD Opteron |publisher=[[ZDNet]] |url= http://www.zdnet.com/blog/computers/idf-intel-2010-intel-overclocks-sandy-bridge-cpu-to-49ghz-outpaces-12-core-amd-opteron/3863}}&lt;/ref&gt;
+
+Intel Sandy Bridge E-series Processors will come with &quot;Performance OverClocking&quot; support.&lt;ref&gt;[http://www.zdnet.com/blog/computers/intel-to-launch-x79-express-chipset-for-sandy-bridge-e-enthusiast-processors/5370 Intel to launch X79 Express chipset for Sandy Bridge E enthusiast processors | ZDNet&lt;!-- Bot generated title --&gt;]&lt;/ref&gt;
+
+===Chipset===
+Non-K edition CPUs can overclock up to four bins from its turbo multiplier. Refer [[LGA 1155|here]] for chipset support.
+
+==Intel Insider and remote-control==
+The processors include a &quot;service&quot; called Intel Insider which the company calls &quot;an extra layer of content protection&quot;.&lt;ref&gt;{{cite news|title=Intel Insider |url=http://www.intel.com/content/www/us/en/architecture-and-technology/intel-insider-for-premium-hd-home-entertainment.html |accessdate=2011-11-30}}&lt;/ref&gt; This protection technology is only intended for streaming services at the moment.
+
+Sandy Bridge processors with [[Intel vPro|Vpro]] capability have security features that can remotely disable a PC or erase information from hard drives. This can be useful in the case of a lost or stolen PC. The commands can be received through 3G signals, ethernet, or internet connections. AES encryption acceleration will be available, which can be useful for video conferencing and VoIP applications.&lt;ref name=&quot;fall2010forum&quot;&gt;{{cite news |last=Hachman |first=Mark |title=Intelâs âSandy Bridgeâ Chip to Include vPro Business Features |publisher=[[PC Magazine]] |date=2010-09-14 |url=http://www.pcmag.com/article2/0,2817,2369110,00.asp}}&lt;/ref&gt;
+
+==Successor==
+Intel demonstrated the  [[Haswell (microarchitecture)|Haswell]] architecture in September 2011,  planned for release in 2013 as  the successor to Sandy Bridge and Ivy Bridge.&lt;ref name=&quot;haswell&quot;&gt;{{cite news |author= Haswell chip completes Ultrabook 'revolution' |work=The Circuits Blog |publisher= CNET.com |date= September 14, 2011 |url=http://news.cnet.com/8301-13924_3-20106098-64/haswell-chip-completes-ultrabook-revolution/ |accessdate= November 11, 2011 }}&lt;/ref&gt;
+{{IntelProcessorRoadmap}}
+
+==See also==
+{{Portal box|Computer Science|Electronics}}
+* [[Accelerated Processing Unit]]
+* [[x86]]
+* [[x86-64]]
+* [[P5 (microarchitecture)|P5]]
+* [[P6 (microarchitecture)|P6]]
+* [[NetBurst (microarchitecture)|NetBurst]]
+* [[Core (microarchitecture)|Core]]
+* [[Nehalem (microarchitecture)|Nehalem]]
+* [[List of Intel CPU microarchitectures]]
+* [[AMD Fusion]]
+
+==References==
+{{Reflist|30em}}
+
+==External links==
+* [http://softwareprojects.intel.com/avx/ Intel's AVX page]
+* {{cite web|url= http://hothardware.com/Reviews/Intel-Core-i72600K-and-i52500K-Processors-Debut/ |title= Intel Core i7-2600K and i5-2500K Processors Debut |author= Marco Chiappetta |publisher= HotHardware.com |date= January 2, 2011 |accessdate= January 2, 2011}}
+* {{cite web|url= http://www.realworldtech.com/page.cfm?ArticleID=RWT091810191937&amp;p=1 |title= Intel's Sandy Bridge Microarchitecture |author= David Kanter |publisher= realworldtech.com |date= September 25, 2010 |accessdate= December 16, 2010}}
+* {{cite web|url= http://realworldtech.com/page.cfm?ArticleID=RWT080811195102 |title= Intel's Sandy Bridge Graphics Architecture |author= David Kanter |publisher= realworldtech.com |date= August 8, 2011 |accessdate= November 4, 2011}}
+* {{cite web|url= http://www.hardwaresecrets.com/article/Inside-the-Intel-Sandy-Bridge-Microarchitecture/1161/1 |title= Inside the Intel Sandy Bridge Microarchitecture |author= Gabriel Torres |publisher= hardwaresecrets.com |date= December 30, 2010 |accessdate= January 16, 2011}}
+* {{cite web|url= http://www.missingremote.com/review/intel-sandy-bridge-core-i5-2500k-and-dh67bl-motherboard
+ |title= Intel Sandy Bridge: Core i5-2500K and DH67BL Motherboard |author= Andrew Van Til |publisher= www.missingremote.com |date= January 3, 2011 |accessdate= January 3, 2011}}
+* {{cite web | url = http://www.youtube.com/watch?v=YIkMaQJSyP8 | title = Video Animation: Mark Bohr Gets Small: 22nm Explained |work= Video presentation | publisher = Intel | accessdate = November 11, 2011 }}&lt;!-- does not mention the microarchitecture, but 3D transistor, so perhaps relevant --&gt;
+
+{{Intel processors}}
+
+{{DEFAULTSORT:Sandy Bridge}}
+[[Category:Intel x86 microprocessors]]
+[[Category:2011 introductions]]
+
+[[ar:Ø³Ø§ÙØ¯Ù Ø¨Ø±ÙØ¯Ø¬]]
+[[cs:Sandy Bridge]]
+[[de:Intel-Sandy-Bridge-Mikroarchitektur]]
+[[es:Sandy Bridge]]
+[[fr:Sandy Bridge]]
+[[ko:ìëë¸ë¦¬ì§]]
+[[it:Sandy Bridge]]
+[[nl:Sandy Bridge]]
+[[ja:Sandy Bridgeãã¤ã¯ã­ã¢ã¼ã­ãã¯ãã£]]
+[[pt:Sandy Bridge]]
+[[ru:Sandy Bridge]]
+[[sl:Sandy bridge]]
+[[th:à¹à¸à¸à¸à¸µà¸à¸£à¸´à¸à¸à¹]]
+[[tr:Intel Sandy Bridge (microarchitecture)]]
+[[wuu:è±ç¹å°ç æ¡¥]]</rev></revisions></page></pages></query></api>

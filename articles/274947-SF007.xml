@@ -1,0 +1,364 @@
+<?xml version="1.0"?><api><query><pages><page pageid="274947" ns="0" title="WxWidgets"><revisions><rev xml:space="preserve">{{Primary sources|date=June 2011}}
+{{lowercase|title=wxWidgets}}
+{{Infobox software
+| name                   = wxWidgets
+| logo                   = [[File:wxWidgets.svg|128px]]
+| screenshot             =
+| caption                =
+| collapsible            =
+| author                 =
+| developer              = [http://wxwidgets.org/about/whowhat.htm wxWidgets Developers and Contributors]
+| released               = {{Start date and age|1992}}
+| discontinued           =
+| latest_release_version = 2.8.12
+| latest_release_date    = {{release date and age|2011|03|28}}
+| latest_preview_version = 2.9.2
+| latest_preview_date    = {{release date and age|2011|07|05}}
+| frequently_updated     =
+| programming_language   = [[C++]]
+| operating_system       = [[Cross-platform]]
+| platform               =
+| size                   =
+| language               =
+| status                 = Active
+| genre                  = Development [[Library (computing)|library]]
+| license                = [[wxWindows license]]
+| website                = {{URL|wxwidgets.org}}
+}}
+
+'''wxWidgets''' (formerly '''wxWindows''') is a [[widget toolkit]] for creating [[graphical user interface]]s (GUIs) for [[cross-platform]] applications. wxWidgets enables a program's GUI code to compile and run on several computer platforms with minimal or no [[source code|code]] changes. It covers systems such as [[Microsoft Windows]], [[Mac OS X]] ([[Carbon_(API)|Carbon]] and [[Cocoa_(API)|Cocoa]]), [[IOS_(Apple)|iOS]] ([[Cocoa Touch]]), [[Linux]]/[[Unix]] ([[X11]], [[Motif (widget toolkit)|Motif]], and [[GTK+]]), [[OpenVMS]], [[OS/2]] and [[AmigaOS]]. A version for [[embedded system]]s is under development.&lt;ref name='wxEmbedded'&gt;{{cite web|url=http://www.wxwidgets.org/docs/embedded.htm |title=wxEmbedded: wxWidgets for embedded applications |accessdate=2007-04-23 |publisher=Sourceforge.net }}&lt;/ref&gt;
+
+wxWidgets is used across many industry sectors, most notably by [[Xerox]], [[Advanced Micro Devices]] (AMD), [[Lockheed Martin]], [[NASA]] and the [[Center for Naval Analyses]]. It is also used in the public sector and education by, for example, [[Dartmouth Medical School]], [[National Human Genome Research Institute]], [[National Center for Biotechnology Information]], and many others.&lt;ref name=&quot;users&quot;&gt;{{cite web|title=About Who uses wxWidgets?|url=http://www.wxwidgets.org/about/whouses.htm|publisher=wxWidgets.org|accessdate=2011-04-12}}&lt;/ref&gt; wxWidgets is used in many open source projects,&lt;ref&gt;{{cite web|title=List of open source applications that uses wxWidgets|url=http://sourceforge.net/softwaremap/?&amp;fq%5B%5D=trove%3A481|publisher=SourceForge.net|accessdate=2011-04-22}}&lt;/ref&gt; as well as by the individual developers. A wide choice of compilers and other tools to use with wxWidgets, allows development of highly sophisticated applications on a tight budget.&lt;ref name=&quot;users&quot;/&gt;
+
+It is [[Free software|free]] and [[open source software]], distributed under the terms of the [[wxWidgets#License|wxWidgets license]], which satisfies those who wish to produce [[GNU General Public License|GPL]] software, and also those producing [[proprietary software]].&lt;ref name=&quot;license&quot;/&gt;
+
+==History==
+wxWidgets (initially wxWindows) was started in 1992 by Julian Smart at the [[University of Edinburgh]].&lt;ref&gt;{{cite web |url=http://wxwidgets.org/about/ |title=About the wxWidgets Project |publisher=wxwidgets.org |accessdate=2010-01-02 }}&lt;/ref&gt; He attained an honours degree in [[Computational science]] from the [[University of St Andrews]] in 1986, and is still a core developer.&lt;ref&gt;{{cite web|url=http://www.anthemion.co.uk/julian.htm |title=About Julian Smart, www.anthemion.co.uk |publisher=Anthemion.co.uk |date=1964-03-27 |accessdate=2009-06-08}}&lt;/ref&gt;&lt;ref&gt;{{cite web|url=http://www.bookfayre.cz/books/name/julian_smart.2247651.html.cs |title=Julian Smart |publisher=Bookfayre.cz |date= |accessdate=2009-06-08}}&lt;/ref&gt;
+
+On February 20, 2004, the developers of wxWindows announced that the project was changing its name to ''wxWidgets'', as a result of [[Microsoft]] requesting Julian Smart to respect Microsoft's [[United Kingdom]] [[trademark]] of the term ''Windows''.&lt;ref name='wxWindows to wxWidgets'&gt;{{cite web | url = http://wxwidgets.org/about/name.htm |title=Name change |accessdate=2007-04-23 |last=Smart |first=Julian |coauthors=Robin Dunn |month=August | year=2004 |publisher=Sourceforge.net }}&lt;/ref&gt;
+
+Major release versions were 2.4 on 6 January 2003, 2.6 on 21 April 2005 and 2.8.0 on 14 December 2006. &lt;!-- Earlier versions not listed on SourceForge.net --&gt;
+
+wxWidgets has participated in the [[Google Summer of Code]] since 2006.&lt;ref&gt;{{cite web|last=Smart|first=Julian|title=Google Summer of Code 2006: wxWidgets projects summary|url=http://wxwidgets.blogspot.com/2006/10/google-summer-of-code-2006-wxwidgets.html|publisher=wxwidgets.org|accessdate=2011-04-11|date=2006-10-10}}&lt;/ref&gt;&lt;ref&gt;{{cite web|title=Google Summer of Code 2006|url=http://code.google.com/intl/pl/soc/2006/wxwidgets/about.html|accessdate=2011-04-11}}&lt;/ref&gt;
+
+{{Prose|date=June 2011}}
+The following table contains the release history of wxWidgets, showing all of its major release versions.
+{| class=&quot;wikitable&quot; style=&quot;font-size: 85%; text-align: center;&quot;
+! Version number
+! Date
+! Notable changes
+|-
+&lt;!--________________________________________wxWindows 1________________________________________--&gt;
+! Project started by Julian Smart
+| 1992&lt;ref name=&quot;wxWidgets history&quot;&gt;{{cite web|title=History of wxWidgets|url=http://www.wxwidgets.org/about/history.htm|publisher=wxWidgets.org|accessdate=2011-04-11}}&lt;/ref&gt;
+|
+|-
+!colspan=&quot;3&quot; style=&quot;background:#C0C0C0&quot;|wxWindows 1
+|-
+! Alpha 1
+| 5 April 1997&lt;ref name=&quot;wxWidgets Change Log&quot;&gt;{{cite web|title=wxWidgets Change Log|url=http://svn.wxwidgets.org/svn/wx/wxWidgets/trunk/docs/changes.txt|publisher=wxWidgets.org|accessdate=2011-04-11}}&lt;/ref&gt;
+|
+|-
+! Beta 1
+| 24 December 1998&lt;ref name=&quot;wxWidgets Change Log&quot;/&gt;
+|
+|-
+&lt;!--________________________________________wxWidgets 2________________________________________--&gt;
+!colspan=&quot;3&quot; style=&quot;background:#C0C0C0&quot;|wxWidgets 2
+|-
+! 2.0.1
+| 1 March 1999&lt;ref name=&quot;wxWidgets Change Log&quot;/&gt;
+|
+|-
+! 2.2.0
+| 9 July 2000&lt;ref name=&quot;wxWidgets news&quot;&gt;{{cite web|title=News|url=http://www.wxwidgets.org/about/news/news.htm|publisher=wxWidgets.org|accessdate=2011-04-11}}&lt;/ref&gt;
+|
+|-
+! 2.4.0
+| 6 January 2003&lt;ref name=&quot;wxWidgets news&quot;/&gt;
+|
+|-
+! 2.6.0
+| 21 April 2005&lt;ref name=&quot;wxWidgets news&quot;/&gt;
+|
+|-
+! 2.8.0
+| 14 December 2006&lt;ref&gt;{{cite web|last=Sudiarto Raharjo|first=Willy|title=WxWidgets 2.8.0|url=http://slackblogs.blogspot.com/2006/12/wxwidgets-280.html|accessdate=2011-04-11|date=2006-12-14}}&lt;/ref&gt;
+|
+* wxAUI library.
+* Generic wxRichTextCtrl.
+* wxComboCtrl with custom, graphical comboboxes.
+* Further functionality including wxAnimationCtrl, wxSimpleHtmlListBox, wxHyperlinkCtrl, wxColourPickerCtrl, wxDirPickerCtrl, wxFilePickerCtrl, wxFontPickerCtrl, wxCollapsiblePane, wxSearchCtrl, wxAboutBox, wxTreebook, tar streams.
+|-
+&lt;!--________________________________________Future versions________________________________________--&gt;
+!colspan=&quot;3&quot; style=&quot;background:#C0C0C0&quot;|Future versions
+|-
+! 3.0
+| End of 2011&lt;ref name=Roadmap&gt;{{cite web|title=wxWidgets Roadmap|url=http://trac.wxwidgets.org/wiki/Roadmap|accessdate=2011-07-28}}&lt;/ref&gt;
+|
+* GTK+ 3 port
+* Transparent Unicode support.
+* Unification of Debug/Release builds.
+* Cocoa-based wxOSX port running in 64 bit mode.
+* PersistentControls.
+* Support for window-modal and application-modal dialogs.
+* wxRibbon - [[Ribbon_(computing)|Ribbon]] implementation
+* wxPropertyGrid
+|-
+! 3.2
+|&lt;ref name=Roadmap /&gt;
+|
+* Drop Win9x platform support.
+* Drop Microsoft Visual C++ 6.0 support.
+|-
+|}
+
+==License==
+{{Further|[http://www.wxwidgets.org/newlicen.htm wxWindows License]}}
+wxWidgets is distributed under a custom made ''wxWindows License'', similar to the [[GNU Lesser General Public License]], with an exception stating that derived works in [[binary file|binary form]] may be distributed on the user's own terms. This [[software license|license]] is a [[free software license]], making wxWidgets [[free software]].&lt;ref name=&quot;license&quot;&gt;{{cite web | url = http://www.wxwidgets.org/about/newlicen.htm |title = &quot;License&quot; page on website | quote = The wxWindows License is essentially the L-GPL (Library General Public License), with an exception stating that derived works in binary form may be distributed on the user's own terms. }}&lt;/ref&gt; It has been approved by the [[Open Source Initiative]] (OSI).&lt;ref&gt;{{cite web|title=Open Source Initiative OSI - The wxWindows Library Licence:Licensing|url=http://www.opensource.org/licenses/wxwindows.php|publisher=Open Source Initiative|accessdate=2011-04-28}}&lt;/ref&gt; Its name will be changed to ''wxWidgets Licence''.
+
+==Official support==
+===Supported platforms===
+wxWidgets is supported on the following platforms.&lt;ref name=FAQ&gt;{{cite web|title=wxWidgets - General FAQ|url=http://www.wxwidgets.org/docs/faqgen.htm|publisher=wxwidgets.org|accessdate=2011-04-29}}&lt;/ref&gt;
+* '''Windows''' - wxMSW (Windows 95/98/ME, NT, 2000, XP, and Vista)
+* '''Linux/Unix''' wxGTK+, wxX11, wxMotif
+* '''Mac OS X''' - wxMac (10.3 using Carbon)
+* '''OS/2''' - wxOS2, wxPM, wxWidgets for GTK+ or Motif can be compiled on OS/2
+* '''Embedded platforms''' - wxEmbedded&lt;ref name='wxEmbedded'/&gt;
+
+====External ports====
+* '''Amiga''' - wxWidgets-AOS: AmigaOS port&lt;ref&gt;{{cite web|title=wxWidgets-AOS: AmigaOS port|url=http://sourceforge.net/projects/wxwidget-aos/|accessdate=2011-04-24}}&lt;/ref&gt;
+
+===Supported compilers===
+{{see also2|[http://wiki.wxwidgets.org/Development:_Supported_Classes Supported classes by wxWidgets' ports]}}
+wxWidgets is officially confirmed to work properly with the following compilers.&lt;ref&gt;{{cite web|title=Supported Platforms|url=http://wiki.wxwidgets.org/Supported_Platforms|publisher=wxwidgets.org|accessdate=2011-04-24}}&lt;/ref&gt;
+{| class=&quot;wikitable&quot; style=&quot;font-size: 85%; width: auto;&quot;
+|-
+! colspan=2 | wxMSW
+! colspan=2 | wxGTK
+|-
+! Compiler
+! Version
+! Compiler
+! Version
+|- valign=&quot;top&quot;
+| [[Microsoft Visual Studio]] - [[Visual C++]]&lt;br/&gt;[[Borland C++]]&lt;br/&gt;[[Borland C++ Builder]]&lt;br/&gt;[[Watcom C/C++ compiler|Watcom C++]], [[OpenWatcom]]&lt;br/&gt;[[CodeWarrior]]&lt;br/&gt;[[Cygwin]]&lt;br/&gt;[[MinGW]]&lt;br/&gt;[[Digital Mars]] C/C++ compiler
+| align=left | 5.0 +&lt;br/&gt;5.5 +&lt;br/&gt;2006 +&lt;br/&gt;10.6 +&lt;br/&gt;7 +&lt;br/&gt;1.5 +&lt;br/&gt;2.0 +&lt;br/&gt;8.40 +
+| [[g++]]&lt;br/&gt;[[Sun Studio (software)|Sun Studio C/C++]]&lt;br/&gt;HP aC++&lt;br/&gt;IBM XL C/C++
+| 2.95 +&lt;br/&gt;5.9&lt;br/&gt;3.80&lt;br/&gt;8.00
+|}
+
+==Implementation==
+[[File:WxPython-logo.png|thumb|right|150px|[[wxPython]] logo]]
+The wxWidgets [[Library (computing)|library]] is implemented in [[C++]], with [[Language binding|bindings]] available for many commonly used [[programming language]]s. Some of them:&lt;ref&gt;{{cite web|title=wxWidgets General Information|url=http://wiki.wxwidgets.org/General_Information|publisher=wxwidgets.org|accessdate=2011-04-11}}&lt;/ref&gt;
+{| class=&quot;wikitable sortable&quot; style=&quot;font-size: 85%; text-align: center; width: auto;&quot;
+|-
+!Language
+!Binding
+!Latest release
+!Latest release date
+|-
+|[[Python (programming language)|Python]]
+|[[wxPython]]
+|2.8.12.1
+|2011-07-23&lt;ref&gt;{{cite web|title=wxPython|url=http://www.wxpython.org/|accessdate=2011-08-14}}&lt;/ref&gt;
+|-
+|[[PHP (programming language)|PHP]]
+|[[wxPHP]]
+|1.1
+|2011-09-22&lt;ref&gt;{{cite web|title=wxPHP|url=http://www.wxphp.org/|accessdate=2011-09-22}}&lt;/ref&gt;
+|-
+|[[Erlang (programming language)|Erlang]]
+|wxErlang
+|R14B03
+|2011-05-25&lt;ref&gt;{{cite web|title=Erlang -- wx the erlang binding of wxWidgets|url=http://www.erlang.org/doc/apps/wx/chapter.html|accessdate=2011-04-12}}&lt;/ref&gt;
+|-
+|[[Haskell (programming language)|Haskell]]
+|[[wxHaskell]]
+|0.12.1.2
+|2009-10-13&lt;ref&gt;{{cite web|title=WxHaskell - HaskellWiki|url=http://haskell.org/haskellwiki/WxHaskell|accessdate=2011-04-12}}&lt;/ref&gt;
+|-
+|[[Tcl]]
+|wxTCL
+|
+|&lt;ref&gt;{{cite web|title=wx Extension for Tcl|url=http://membres.lycos.fr/awaken/|accessdate=2011-04-12}}&lt;/ref&gt;
+|-
+|[[Lua (programming language)|Lua]]
+|wxLua
+|2.8.10.0
+|2009-05-24&lt;ref&gt;{{cite web|title=wxLua - homepage|url=http://wxlua.sourceforge.net/|accessdate=2011-04-12}}&lt;/ref&gt;
+|-
+|[[Perl]]
+|[[wxPerl]]
+|0.98
+|2010-08-18&lt;ref&gt;{{cite web|title=wxPerl|url=http://wxperl.sourceforge.net/|accessdate=2011-04-12}}&lt;/ref&gt;
+|-
+|[[Ruby (programming language)|Ruby]]
+|wxRuby
+|2.0.1
+|2009-09-08&lt;ref&gt;{{cite web|title=wxRubyWiki: wxRuby|url=http://wxruby.rubyforge.org/wiki/wiki.pl|accessdate=2011-04-12}}&lt;/ref&gt;
+|-
+|[[Smalltalk]]
+|wxSqueak
+|0.5.1
+|2008-07-06&lt;ref&gt;{{cite web|title=wxSqueak official website|url=http://www.wxsqueak.org/|accessdate=2011-04-12}}&lt;/ref&gt;
+|-
+|[[BASIC|Basic]]
+|[[wxBasic]]
+|2.8.10.23
+|2009-09-06&lt;ref&gt;{{cite web|title=wxBasic Programming Language|url=http://wxbasic.net/download.html|accessdate=2011-04-12}}&lt;/ref&gt;
+|-
+|[[Blitz_BASIC|BlitzMax]]
+|wxMax
+|1.01
+|2009-10&lt;ref&gt;{{cite web|title=  wxmax - BlitzMax binding for wxWidgets|url=http://code.google.com/p/wxmax/|accessdate=2011-04-12}}&lt;/ref&gt;
+|-
+|[[C (programming language)|C]]
+|wxC
+|
+|&lt;ref&gt;{{cite web|title=wxC official website|url=http://wxc.sourceforge.net/|accessdate=2011-04-12}}&lt;/ref&gt;
+|-
+|[[D (programming language)|D]]
+|wxD
+|0.15
+|2009-07-03&lt;ref&gt;{{cite web|title=wxD - Cross-Platform GUI Library|url=http://wxd.sourceforge.net/|accessdate=2011-04-12}}&lt;/ref&gt;
+|-
+|[[Euphoria (programming language)|Euphoria]]
+|wxEuphoria
+|0.16.0
+|2011-06-20&lt;ref&gt;{{cite web|title=wxEuphoria official website|url=http://wxeuphoria.sourceforge.net/|accessdate=2011-08-14}}&lt;/ref&gt;
+|-
+|[[.NET Framework]]
+|wx.NET
+|0.9.2
+|2010-07-14&lt;ref&gt;{{cite web|title=wx.NET Home Page|url=http://wxnet.sourceforge.net/|accessdate=2011-04-12}}&lt;/ref&gt;
+|-
+|[[Java (programming language)|Java]]
+|wx4j
+|0.2.0
+|2004-04-01&lt;ref&gt;{{cite web|title=wx4j: A Java Binding for wxWidgets|url=http://wx4j.sourceforge.net/|accessdate=2011-04-12}}&lt;/ref&gt;
+|-
+|[[JavaScript]]
+|wxJavaScript
+|0.9.75
+|2008-12-09&lt;ref&gt;{{cite web|title=wxJavaScript official website|url=http://www.wxjavascript.net/|accessdate=2011-04-12}}&lt;/ref&gt;
+|-
+|[[JavaScript]]
+|[[GLUEscript]]
+|0.1.08
+|2011-02-18&lt;ref&gt;{{cite web|title=GLUEscript - Glueing Libraries Using EcmaScript|url=http://gluescript.sourceforge.net/|accessdate=2011-04-12}}&lt;/ref&gt;
+|-
+|}
+
+wxWidgets is best described as a [[native mode]] toolkit as it provides a thin abstraction to a platform's native widgets, contrary to emulating the display of widgets using graphic primitives. Calling a native widget on the target platform results in a more native looking interface than toolkits such as [[Swing (Java)|Swing]] (for Java), as well as offering performance and other benefits.&lt;ref&gt;{{cite web |url=http://wiki.wxwidgets.org/WxWidgets_Compared_To_Other_Toolkits |title=WxWidgets Compared To Other Toolkits |publisher=wxwidgets.org |accessdate=2010-01-02 }}&lt;/ref&gt;
+
+The toolkit is also not restricted to GUI development, having an [[inter-process communication]] layer, [[internet socket|socket]] networking functionality, and more.
+
+==RAD tools and IDEs for wxWidgets==
+[[Image:Codelite2.0-Screenshot.png|thumb|right|215px|[[CodeLite]] under Windows XP]]
+{{rellink|1=See also: [http://wiki.codeblocks.org/index.php?title=Comparison_of_wxSmith_features Comparison of wxWidgets RAD solutions]}}
+There are many [[Rapid Application Development]] (RAD) and [[Integrated Development Environment]] (IDE) tools available, among them:&lt;ref&gt;{{cite web|title=Tools for wxWidgets|url=http://wiki.wxwidgets.org/Tools|publisher=wxWidgets.org|accessdate=2011-04-12}}&lt;/ref&gt;&lt;ref&gt;{{cite web|title=List of Integrated Development Environments|url=http://wiki.wxwidgets.org/List_of_Integrated_Development_Environments|publisher=wxWidgets.org|accessdate=2011-04-12}}&lt;/ref&gt;
+* [[Boa Constructor]] ([[Python (programming language)|Python]])
+* [[Code::Blocks]] (via wxSmith plugin)
+* [[CodeLite]]
+* [[wxDev-C++]] (Plugin)
+* [[wxGlade]]
+* [[wxFormBuilder]]
+* [[Philasmicos Entwickler Studio]]
+
+==Applications built using wxWidgets==
+[[Image:Audacity Ubuntu.png|thumb|right|215px|[[Audacity]] running under [[Ubuntu]]]]
+[[File:TrueCrypt on windows vista.png|thumb|right|215px|[[TrueCrypt]] on Windows Vista]]
+{{see also2|[[:Category:Software that uses wxWidgets|Category: Software that uses wxWidgets]]|[http://www.wxwidgets.org/about/screensh.htm wxWidgets Applications]|[http://wxwidgets.org/about/users.htm wxWidgets Users]|[http://wiki.wxwidgets.org/Commercial_applications_using_wxWidgets Commercial applications using wxWidgets]}}
+Notable applications that use wxWidgets:
+* [[Amaya (web browser)|Amaya]] - web authoring tool
+* [[aMule]] - peer-to-peer file sharing application
+* [[Audacity]] - cross-platform sound editor
+* [[BitTorrent (software)|BitTorrent]] - peer-to-peer file sharing application
+* [[Code::Blocks]] - C/C++ IDE
+* [[CodeLite]] - simple C++ Editor (Collection of free Tools, implemented by plugins)
+* [[Dolphin (emulator)|Dolphin]] - Nintendo GameCube, Wii, and Triforce emulator
+* [[Digsby]] - multiprotocol instant messaging application
+* [[FileZilla]] - FTP client
+* [[RapidSVN]] - Subversion client
+* [[TortoiseCVS]] - CVS client
+* [[TrueCrypt]] - application used for [[on-the-fly encryption]]
+
+==See also==
+{{Portal|Free software}}
+
+* [[Widget toolkit]]
+* [[List of widget toolkits]]
+* [[Qt (toolkit)]] - an application framework used by [[KDE]] applications
+* [[GTK+]] - the GIMP toolkit, a widget toolkit used by [[GNOME]] applications
+* [[gtkmm]] - C++ version of GTK+
+* [[FLTK]] - a light, cross platform, non-native widget toolkit
+* [[FOX toolkit]] - a fast, open source, cross-platform widget toolkit
+* [[Ultimate++]]
+* [[Juce]] - an extensive cross-platform widget toolkit
+* [[Microsoft litigation]]
+
+==References==
+{{Reflist|2}}
+
+==Further reading==
+*{{Citation
+| first1    = Julian
+| last1     = Smart
+| first2    = Kevin
+| last2     = Hock
+| first3    = Stefan
+| last3     = Csomor
+| title     = Cross-Platform GUI Programming with wxWidgets
+| edition   = 
+| date      = August 5, 2005
+| publisher = [[Prentice Hall]]
+| pages     = 744
+| isbn      = 978-0131473812
+| url       = 
+}}
+
+==External links==
+{{Commons category|wxWidgets}}
+* {{Official website|wxwidgets.org}}
+* [http://forums.wxwidgets.org wxForum] - official forum
+* [http://wxwidgets.blogspot.com/ wxBlog] - official blog
+* [http://wiki.wxwidgets.org/Main_Page wxWiki] - a wiki devoted to the wxWidgets project
+* [http://wxcode.sourceforge.net/ wxCode] - code snippets and libraries related to wxWidgets
+* [http://wxpack.sourceforge.net/ wxPack] - a complete ready-to-use wxWidgets [[Software development kit|development kit]]
+* [http://trac.wxwidgets.org/wiki wxTrac] - issue tracker (for reporting bugs, submitting patches)
+* [http://www.ibm.com/developerworks/library/l-wxwidgets/index.html Build cross-platform GUIs using wxWidgets] - a quick tutorial
+* [http://wiki.wxwidgets.org/WxWidgets_Compared_To_Other_Toolkits wxWidgets compared to other toolkits]
+
+{{wxWidgets}}
+{{Widget toolkits}}
+
+{{DEFAULTSORT:Wxwidgets}}
+[[Category:wxWidgets| ]]
+[[Category:Free development toolkits and libraries]]
+[[Category:Widget toolkits]]
+[[Category:X-based libraries]]
+[[Category:Free software programmed in C++]]
+[[Category:Cross-platform software]]
+[[Category:C++ libraries]]
+[[Category:1992 software]]
+
+[[ar:WxWidgets]]
+[[cs:WxWidgets]]
+[[de:WxWidgets]]
+[[es:WxWidgets]]
+[[fr:WxWidgets]]
+[[ko:WxWidgets]]
+[[id:WxWidgets]]
+[[it:WxWidgets]]
+[[ml:à´¡à´¬àµà´²àµà´¯àµà´à´àµà´¸àµ à´µà´¿à´¡àµà´àµà´±àµà´±àµà´¸àµ]]
+[[nl:WxWidgets]]
+[[ja:WxWidgets]]
+[[pl:WxWidgets]]
+[[pt:WxWidgets]]
+[[ru:WxWidgets]]
+[[fi:WxWidgets]]
+[[sv:WxWidgets]]
+[[tr:WxWidgets]]
+[[uk:WxWidgets]]
+[[zh:WxWidgets]]</rev></revisions></page></pages></query></api>

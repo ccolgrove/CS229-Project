@@ -1,0 +1,263 @@
+<?xml version="1.0"?><api><query><pages><page pageid="438891" ns="0" title="Apache Ant"><revisions><rev xml:space="preserve">{{more footnotes|date=August 2010}}
+{{Infobox software
+| name                   = Apache Ant (Another Neat Tool)
+| logo                   = [[File:Apache-Ant-logo.svg|200px|Apache Ant Logo]]
+| screenshot             = 
+| caption                = 
+| developer              = [[Apache Software Foundation]] 
+| latest release version = 1.8.2
+| latest release date    = {{release date|2010|12|27}}
+| latest preview version = 
+| latest preview date    = 
+| operating system       = [[Cross-platform]]
+| programming language   = [[Java (programming language)|Java]]
+| genre                  = [[Build Tool]]
+| license                = [[Apache License]] 2.0
+| website                = http://ant.apache.org
+}}
+'''Apache Ant''' is a software tool for [[build automation|automating software build]] processes.  It is similar to [[make (software)|Make]] but is implemented using the [[Java (programming language)|Java]] language, requires the Java platform, and is best suited to building Java projects.
+
+The most immediately noticeable difference between Ant and Make is that Ant uses [[XML]] to describe the build process and its dependencies,
+whereas Make uses [[Makefile#Makefile_structure|Makefile format]].
+By default the XML file is named &lt;code&gt;build.xml&lt;/code&gt;.
+
+Ant is an [[Apache Software Foundation|Apache]] project. It is [[open source software]], and is released under the [[Apache Software License]].
+
+==History==
+Ant (&quot;Another Neat Tool&quot;&lt;ref&gt;[http://ant.apache.org/faq.html#ant-name ''Why do you call it Ant?''], Apache Ant FAQ&lt;/ref&gt;) was conceived by [[James Duncan Davidson]] while turning a product from [[Sun Microsystems|Sun]] into [[open source]]. That product, Sun's [[reference implementation|reference]] [[JavaServer Pages|JSP]]/[[Servlet]] engine, later became [[Apache Tomcat]]. A [[proprietary software|proprietary]] version of ''make'' was used to build it on the [[Solaris Operating Environment]], but in the open source world there was no way of controlling which platform was used to build Tomcat. Ant was created as a simple platform-independent tool to build Tomcat from directives in an XML &quot;build file&quot;. Ant (version 1.1) was officially released as a stand-alone product on July 19, 2000.
+
+Several proposals for an Ant version 2 have been made, such as AntEater by [[James Duncan Davidson]], Myrmidon by [[Peter Donald (programmer)|Peter Donald]] and Mutant by [[Conor MacNeill (programmer)|Conor MacNeill]], none of which were able to find large acceptance with the developer community.&lt;ref&gt;[http://codefeed.com/blog/?p=98 Conor MacNeill -- The Early History of Ant Development]&lt;/ref&gt;
+
+Today, Ant is the build tool used by most Java development projects.&lt;ref&gt;Java Tools for eXtreme Programming, Wiley, 2002: 76&lt;/ref&gt; For example, most [[open source]] developers include build.xml files with their distribution.{{Citation needed|date=March 2010}}
+
+Because Ant made it trivial{{Citation needed|date=March 2010}} to integrate [[JUnit]] tests with the build process, Ant has made it easy for willing developers to adopt [[test-driven development]], and even [[Extreme Programming]].
+
+Other Java-based build tools include [[Apache Maven|Maven]] and [[JavaMake]].
+
+==Sample &lt;code&gt;build.xml&lt;/code&gt; file==
+Below is listed a sample build.xml file for a simple Java &quot;Hello, world&quot; application.  It defines four targets - ''clean'', ''[[clobber (computing)|clobber]]'', ''compile'' and ''jar'', each of which has an associated description.  The ''jar'' target lists the ''compile'' target as a dependency.  This tells Ant that before it can start the ''jar'' target it must first complete the ''compile'' target.
+&lt;syntaxhighlight lang=&quot;xml&quot;&gt;
+&lt;?xml version=&quot;1.0&quot;?&gt;
+&lt;project name=&quot;Hello&quot; default=&quot;compile&quot;&gt;
+    &lt;target name=&quot;clean&quot; description=&quot;remove intermediate files&quot;&gt;
+        &lt;delete dir=&quot;classes&quot;/&gt;
+    &lt;/target&gt;
+    &lt;target name=&quot;clobber&quot; depends=&quot;clean&quot; description=&quot;remove all artifact files&quot;&gt;
+        &lt;delete file=&quot;hello.jar&quot;/&gt;
+    &lt;/target&gt;
+    &lt;target name=&quot;compile&quot; description=&quot;compile the Java source code to class files&quot;&gt;
+        &lt;mkdir dir=&quot;classes&quot;/&gt;
+        &lt;javac srcdir=&quot;.&quot; destdir=&quot;classes&quot;/&gt;
+    &lt;/target&gt;
+    &lt;target name=&quot;jar&quot; depends=&quot;compile&quot; description=&quot;create a Jar file for the application&quot;&gt;
+        &lt;jar destfile=&quot;hello.jar&quot;&gt;
+            &lt;fileset dir=&quot;classes&quot; includes=&quot;**/*.class&quot;/&gt;
+            &lt;manifest&gt;
+                &lt;attribute name=&quot;Main-Class&quot; value=&quot;HelloProgram&quot;/&gt;
+            &lt;/manifest&gt;
+        &lt;/jar&gt;
+    &lt;/target&gt;
+&lt;/project&gt;
+&lt;/syntaxhighlight&gt;
+Within each target are the actions that Ant must take to build that target; these are performed using built-in ''tasks''.  For example, to build the ''compile'' target Ant must first create a [[directory (file systems)|directory]] called classes (Ant will only do so if it does not already exist) and then invoke the Java compiler. Therefore, the ''tasks'' used are ''mkdir'' and ''javac''. These perform a similar task to the command-line utilities of the same name.
+
+Another task used in this example is named ''jar'':
+&lt;syntaxhighlight lang=&quot;xml&quot;&gt;
+ &lt;jar destfile=&quot;hello.jar&quot;&gt;
+&lt;/syntaxhighlight&gt;
+This ant task has the same name as the common java command-line utility, [[JAR (file format)|JAR]], but is really a call to the ant program's built-in jar/zip file support. This detail is not relevant to most end users, who just get the JAR they wanted, with the files they asked for.
+
+Many Ant tasks delegate their work to external programs, either native or Java. They use Ant's own &lt;exec&gt; and &lt;java&gt; tasks to set up the command lines, and handle all the details of mapping from information in the build file to the program's arguments -and interpreting the return value. Users can see which tasks do this (e.g. &lt;cvs&gt;, &lt;signjar&gt;, &lt;chmod&gt;, &lt;rpm&gt;), by trying to execute the task on a system without the underlying program on the path, or without a full [[Java Development Kit]] (JDK) installed.
+
+==Extensions==
+
+WOProject-Ant&lt;ref&gt;[http://www.objectstyle.org/confluence/display/WOL/WOProject-Ant WOProject-Ant - WOProject / WOLips - Confluence&lt;!-- Bot generated title --&gt;]&lt;/ref&gt; is just one of many examples of a ''task'' extension written for Ant. These extensions are put to use by copying their jar files into ant's ''lib'' directory. Once this is done, these extension tasks can be invoked directly in the typical ''build.xml'' file. The WOProject extensions allow [[WebObjects]] developers to use ant in building their frameworks and applications, instead of using [[Apple Computer|Apple's]] [[Xcode]] suite.
+
+Antcontrib&lt;ref&gt;[http://ant-contrib.sourceforge.net Ant-Contrib Tasks&lt;!-- Bot generated title --&gt;]&lt;/ref&gt; provides a collection of tasks such as conditional statements and operations on properties as well as other useful tasks.&lt;ref&gt;[http://ant-contrib.sourceforge.net/tasks/tasks/index.html Ant-Contrib Tasks&lt;!-- Bot generated title --&gt;]&lt;/ref&gt;
+
+Other task extensions exist for [[Perforce]], [[Microsoft .NET|.Net]], [[EJB]], and filesystem manipulations, just to name a few.&lt;ref&gt;[http://ant.apache.org/manual/tasksoverview.html Overview of Ant Tasks&lt;!-- Bot generated title --&gt;]&lt;/ref&gt;
+
+==Portability==
+One of the primary aims of Ant was to solve make's portability problem. In a Makefile the actions required to create a target are specified as [[operating system shell|shell]] commands which are specific to the [[Platform (computing)|platform]] Make runs on. Different platforms require different shell commands. Ant solves this problem by providing a large amount of built-in functionality that is supposed to behave the same on all platforms.
+
+For example, in the sample &lt;code&gt;build.xml&lt;/code&gt; file above the ''clean'' target deletes the &lt;code&gt;classes&lt;/code&gt; directory and everything in it. In a Makefile this would typically be done with the command:
+ rm -rf classes/
+&lt;code&gt;[[rm (Unix)|rm]]&lt;/code&gt; is a [[Unix]]-specific command unavailable in some other environments. [[Microsoft Windows]], for example, would use:
+ rmdir /S /Q classes
+In an Ant build file the same thing would be accomplished using a built-in command:
+&lt;syntaxhighlight lang=&quot;xml&quot;&gt;
+ &lt;delete dir=&quot;classes&quot;/&gt;
+&lt;/syntaxhighlight&gt;
+A common difference between platforms is the symbol used to delimit elements of file system directory path components. Unix uses a forward slash (/) to delimit components whereas Windows uses a backslash (\). Ant build files let authors choose their favorite convention: forward slash or backslash for directories; semicolon or colon for path separators. It converts each to the symbol appropriate to the platform it executes on.
+
+==Limitations==
+{{criticism section|date=September 2011}}
+{{original research|section|date=September 2011}}
+
+*Ant build files are written in [[XML]]. For unfamiliar users, both XML itself and the complex structure (hierarchical, partly ordered, and pervasively cross-linked) of Ant documents can be a barrier to learning. A GUI called Antidote was available for a time, but never gained a following and has been retired from the Apache project. Moreover, the language of Ant is quite verbose, and the build files of large or complex projects become unmanageably large. Good design and modularization of build files can improve readability but not necessarily reduce size. Other build tools like [[Apache Maven|Maven]] use more concise scripts at the expense of generality and flexibility.
+*Many of the older tasks&amp;mdash;the core ones that are used every day, such as &lt;tt&gt;&lt;javac&gt;&lt;/tt&gt;, &lt;tt&gt;&lt;exec&gt;&lt;/tt&gt; and &lt;tt&gt;&lt;java&gt;&lt;/tt&gt;&amp;mdash;use default values for options that are not consistent with more recent versions of the tasks. Changing those defaults would break existing Ant scripts.
+*When expanding properties in a string or text element, undefined properties are not raised as an error, but left as an unexpanded reference (e.g. &lt;tt&gt;${unassigned.property}&lt;/tt&gt;).
+*Ant has limited fault handling rules, and no persistence of state, so it cannot be used as a workflow tool for any workflow other than classic build and test processes.
+*The Ant target model does not treat artifacts as targets. In most build tools a target is an artifact created by the buildâa program, library, intermediate object file, PDF documentation, etc.âand rules specify the dependencies between targets and the tasks to run to build a target when it is out of date. In Ant a target is a group of tasks rather than an artifact.  This means that Ant is sometimes unable to determine the relationship between an artifact and the task sequence to build the artifact and this logic must be implemented by the programmer using Ant's control structures.
+*Once a global property is defined it cannot be changed by any of the core tasks. [http://ant-contrib.sourceforge.net/ Antcontrib] provides a [http://ant-contrib.sourceforge.net/tasks/tasks/ variable task] to work around this problem. And [http://jwaresoftware.org/wiki/antxtras/home AntXtras] provides a variable property type that complements readonly properties.
+*Lazy property evaluation is not supported. For instance, when working within a Antcontrib &lt;for&gt; loop, a property cannot be re-evaluated for a sub-value which may be part of the iteration. (Again you can workaround this depending on the third-party extension you're using; AntXtras flow-control tasksets do provide for cursor redefinition for loops.)
+*In makefiles, any rule to create one file type from another file type can be written inline within the makefile. For example, you may transform a document into some other format by using rules to execute another tool. Creating a similar task in Ant is more complex: a separate task must be written in Java and included with the Ant build file in order to handle the same type of functionality. However, this separation can enhance the readability of the Ant script by hiding some of the details of how a task is executed on different platforms.
+
+There exists a myriad of third-party Ant extensions (called ''antlibs'') that provide much of the missing functionality. Also the Eclipse [[integrated development environment|IDE]] can build and execute Ant scripts while the [[NetBeans]] IDE uses Ant for its internal build system. As both these IDEs are very popular development platforms, they can simplify Ant use significantly (as a bonus Ant scripts generated by NetBeans can be used outside of that IDE as standalone scripts).
+
+==See also==
+*[[Build Automation]]
+*[[Apache Maven|Maven]], a project management and build automation tool primarily for Java
+*[[Apache Jelly]], a tool for turning XML into executable code
+*[[Nant]], Ant-like tool targeted at the .NET environment rather than Java
+*[[Apache Ivy|Ivy]], a dependency manager which integrates tightly with Ant, subproject of Ant
+*[[List of build automation software]]
+
+==References==
+{{Reflist}}
+
+== Bibliography ==
+{{refbegin}}
+*{{cite book
+| first1    = Steve
+| last1     = Loughran
+| first2    = Erik
+| last2     = Hatcher
+| title     = Ant in Action
+| publisher = [[Manning Publications]]
+| edition   = 2nd
+| pages     = 600
+| date      = July 12, 2007
+| isbn      = 978-1932394801
+| url       = 
+}}
+*{{cite book
+| first1    = Steven
+| last1     = Holzner
+| title     = Ant - The Definitive Guide
+| publisher = [[O'Reilly Media]]
+| edition   = 2nd
+| pages     = 334
+| date      = April 13, 2005
+| isbn      = 978-0596006099
+| url       = http://oreilly.com/catalog/9780596006099/
+}}
+*{{cite book
+| first1    = Matthew 
+| last1     = Moodie
+| title     = Pro Apache Ant
+| publisher = [[Apress]]
+| edition   = 1st
+| pages     = 360 
+| date      = November 16, 2005
+| isbn      = 978-1590595596
+| url       = http://www.apress.com/book/view/9781590595596
+}}
+*{{cite book
+| first1    = Alexis T.
+| last1     = Bell
+| title     = ANT Java Notes: An Accelerated Intro Guide to the Java ANT Build Tool
+| publisher = [[Virtualbookworm.com Publishing]]
+| edition   = 1st
+| pages     = 268 
+| date      = July 7, 2005
+| isbn      = 978-1589397385
+| url       = http://www.virtualbookworm.com/mm5/merchant.mvc?Screen=PROD&amp;Store_Code=bookstore&amp;Product_Code=antjava
+}}
+*{{cite book
+| first1    = Erik 
+| last1     = Hatcher
+| first2    = Steve 
+| last2     = Loughran
+| title     = Java Development with Ant
+| publisher = [[Manning Publications]]
+| edition   = 1st
+| pages     = 672 
+| date      = August 2002
+| isbn      = 978-1930110588
+| url       = 
+}}
+*{{cite book
+| first1    = Glenn 
+| last1     = Niemeyer
+| first2    = Jeremy 
+| last2     = Poteet
+| title     = Extreme Programming with Ant: Building and Deploying Java Applications with JSP, EJB, XSLT, XDoclet, and JUnit
+| publisher = [[SAMS Publishing]]
+| edition   = 1st
+| pages     = 456 
+| date      = May 29, 2003
+| isbn      = 978-0672325625
+| url       = http://www.informit.com/store/product.aspx?isbn=0672325624
+}}
+*{{cite book
+| first1    = Alan
+| last1     = Williamson
+| title     = Ant - Developer's Handbook
+| publisher = [[SAMS Publishing]]
+| edition   = 1st
+| pages     = 456 
+| date      = November 1, 2002
+| isbn      = 978-0672324260
+| url       = http://www.informit.com/store/product.aspx?isbn=0672324261
+}}
+*{{cite book
+| first1    = Bernd 
+| last1     = Matzke
+| title     = ANT: The Java Build Tool In Practice
+| publisher = [[Charles River Media]]
+| edition   = 1st
+| pages     = 280 
+| date      = September 2003
+| isbn      = 978-1584502487
+| url       = http://www.powells.com/biblio?isbn=9781584502487
+}}
+{{refend}}
+
+==External links==
+{{Wikibooks|Apache Ant}}
+*[http://ant.apache.org/ Official website of Apache Ant]
+*[http://ant.apache.org/manual/ Apache Ant manual] ([http://ant.apache.org/manual/tasklist.html tasks], [http://ant.apache.org/manual/conceptstypeslist.html types])
+*[http://wiki.apache.org/ant/FrontPage Apache Ant wiki]
+*[http://code.google.com/p/winant/ WinAnt - Windows installer for Apache Ant]
+*[http://www.exubero.com/ant/antintro-s5.html Introduction to Ant] (slide show)
+*[http://www.softwaresecretweapons.com/jspwiki/Wiki.jsp?page=LinguineMapsForApacheAnt Linguine Maps visualization library will automatically produce easy to read diagrams from Ant build files.]
+*[http://sourceforge.net/projects/antro antro - a profiler for Ant scripts]
+*[[b:Programming:Apache Ant|Wiki Book on learning Apache Ant]]
+*[http://ideoplex.com/focus/java#ant Ant tutorial]
+*[http://hbtechs.blogspot.com/2007/06/automation-using-innovative-tools.html Ant Automation], a good handy example of automation with Ant.
+*[http://visualdrugs.net/antrunner/ A simple Windows GUI for running Ant.]
+
+{{apache}}
+
+[[Category:Apache Software Foundation|Ant]]
+[[Category:Free software programmed in Java]]
+[[Category:Java development tools]]
+[[Category:Compiling tools|Ant]]
+[[Category:XML software]]
+[[Category:Build automation|Ant]]
+[[Category:Java libraries|Ant]]
+[[Category:Cross-platform software]]
+[[Category:Android development software]]
+
+[[ar:Ø£Ø¨Ø§ØªØ´Ù Ø£ÙØª]]
+[[ca:Apache Ant]]
+[[cs:Apache Ant]]
+[[da:Ant]]
+[[de:Apache Ant]]
+[[es:Apache Ant]]
+[[fr:Apache Ant]]
+[[it:Apache Ant]]
+[[lt:Ant]]
+[[hu:Apache Ant]]
+[[ml:à´à´ªàµà´ªà´¾à´àµà´àµ à´à´¨àµà´±àµ]]
+[[nl:Apache Ant]]
+[[ja:Apache Ant]]
+[[pl:Apache Ant]]
+[[pt:Apache Ant]]
+[[ru:Apache Ant]]
+[[sv:Apache Ant]]
+[[ta:à®à®ªà¯à®ªà®¾à®à¯à®à®¿ à®à®©à¯à®à¯]]
+[[tr:Apache Ant]]
+[[uk:Apache Ant]]
+[[zh:Apache Ant]]</rev></revisions></page></pages></query></api>

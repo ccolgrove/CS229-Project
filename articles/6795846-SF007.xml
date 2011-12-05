@@ -1,0 +1,71 @@
+<?xml version="1.0"?><api><query><pages><page pageid="6795846" ns="0" title="Puredyne"><revisions><rev xml:space="preserve">{{lowercase}}
+{{Infobox OS
+|name = puredyne
+|logo = [[File:Puredyne-logo-desktop.png|200px|Logo]]
+|screenshot = [[Image:Puredyne-calf jack sooper.png|210px]]
+|caption = puredyne running audio software
+|developer = GOTO10
+|family = [[Linux]]
+|source_model = [[Free software]]
+|latest_release_version = carrot&amp;coriander
+|latest_release_date = 2010-01-16
+|working_state = Current
+|supported_platforms = [[x86]], [[AppleâIntel architecture]], [[x86-64]]
+|kernel_type = [[Monolithic kernel]]
+|ui = Graphical ([[xfce]])
+|license = Various
+|website = [http://puredyne.goto10.org/ puredyne.goto10.org]
+}}
+'''puredyne''' is a [[Live CD|live]] [[Linux distribution]] based on [[Ubuntu (operating system)|Ubuntu]] and [[Debian Live]] and dedicated to live audio-and-visual processing and streaming.&lt;ref name=&quot;lac07&quot;&gt;[http://www.kgw.tu-berlin.de/~lac2007/papers/lac07_mansoux_galanopoulos_lee.pdf pure:dyne conference paper] at Linux Audio Conference 2007&lt;/ref&gt;&lt;ref name=&quot;linuxmagfeb09&quot;&gt;{{Citation
+ | year =2009
+ | title =Liberate your film!
+ | periodical =[[Linux Magazine]]
+ | issue =February 2009
+ | page =14
+ | url =http://www.linux-magazine.com/w3/issue/99/Linux_World_News.pdf
+ | accessdate =2010-01-16
+}}&lt;/ref&gt;&lt;ref name=&quot;mutemag08&quot;&gt;{{Citation
+ | year =2008
+ | title =All Problems of Notation Will be Solved by the Masses
+ | periodical =[[Mute Magazine]]
+ | author=Simon Yuill
+ | url =http://www.metamute.org/en/All-Problems-of-Notation-Will-be-Solved-by-the-Masses
+ | accessdate =2010-01-16
+}}&lt;/ref&gt; It focuses on the [[Pure Data]] audio synthesis system as well as [[SuperCollider]], [[Csound]] and others, plus live video-processing systems such as [[Processing (programming language)|Processing]] and Fluxus. It also includes hardware related software such as [[arduino]] and comes bundled with home-studio and graphic design software ([[Ardour (software)|Ardour]], [[JACK Audio Connection Kit|JACK]], [[GIMP]], [[Inkscape]], etc).
+
+Development of puredyne is supported by the [[Arts Council England]].&lt;ref name=&quot;lpannounce&quot;&gt;[http://lists.puredata.info/pipermail/pd-list/2009-01/067185.html puredyne &quot;leek and potato&quot; release announcement, January 2009]&lt;/ref&gt;&lt;ref name=&quot;ccannounce&quot;&gt;[https://lists.launchpad.net/puredyne-community/msg00001.html puredyne 9.10 &quot;carrot and coriander&quot; release announcement, January 2010]&lt;/ref&gt; Puredyne was a Featured Download on productivity weblog [[Lifehacker]]&lt;ref name=&quot;lifehacker&quot;&gt;[http://lifehacker.com/5102180/puredyne-turns-any-computer-into-a-multimedia-powerhouse Lifehacker feature]&lt;/ref&gt; and was named as one of the two softwares of year 2010 by the pixelache network of electronic festivals.&lt;ref&gt;{{cite web |url=http://www.pixelache.ac/helsinki/2010/pixelache-softwares-of-the-year-2010/ |title=Pixelache software(s) of year 2010 |author=Juha Huuskonen |date=2010-01-18 |work=Pixelache |publisher= |accessdate=2010-01-19}}&lt;/ref&gt;
+
+==Teaching==
+The main goal of puredyne is to provide a portable and easy to install live distribution to simplify the teaching of sound and video processing software which are either absent from the standard Linux distributions or incomplete. Its live form makes it a perfect system for workshops or installation in locked down workstations which is the case in most universities and institutions.
+
+==Media art==
+Another aspect of puredyne is that it is maintained by media artists for media artists. The system provides particular optimizations at the kernel and compilation level to take the most out of i686 machines for real-time audio and video.&lt;ref name=&quot;lac07&quot;/&gt; As a consequence, this operating system is well suited for live performances and art installations. The modular aspect makes it easy for artists to customize and deploy it quickly to their own project needs.&lt;ref&gt;[http://1010.co.uk/2007.04.24.html xxxxx workshops] and puredyne customization&lt;/ref&gt;&lt;ref name=&quot;ccannounce&quot;/&gt;
+
+==Live distribution==
+[[Image:Puredyne-arduino.jpg|thumb|right|puredyne running on an [[Asus Eee]] and controlling an [[Arduino]] board]]
+Used as a Live CD, puredyne is a complete Linux multimedia desktop environment that can run from virtually any x86 machine. The system can be booted from a CD, DVD, or USB stick.&lt;ref name=&quot;Kim_06&quot;&gt;{{cite web | title=pure:dyne, the Art + Music Performance OS for PCs and Intel Macs| author=Peter Kirn | work=Create Digital Music | url=http://createdigitalmusic.com/2006/12/19/puredyne-the-art-music-performance-os-for-pcs-and-intel-macs/| date=2006-12-19 }}&lt;/ref&gt; Thanks to AuFS and the Debian Live system, it is possible to combine the CD and save all system changes, including new drivers and software, in any storage device (from hard-disk to USB sticks and other flash memory).
+Installing puredyne can be done in several ways. The fastest is just a matter of copying a folder from the CD to the Hard-Drive (liveHD) or to a flash key (liveUSB). The system is truly a live distribution as it remains unchanged no matter which medium it is booted from.
+The system also comes with GCC and special SDK tools to facilitate the modification of the distribution, the addition of new software and the creation of new ISO images.
+
+==History==
+
+puredyne was started by Aymeric Mansoux, and for a long time, exclusively developed by members from the GOTO10 collective. It was initially based on the [[dyne:bolic]] multimedia linux distribution, and focused mostly on Pure Data, hence the name. The later &quot;leek and potato&quot; release in January 2009 marked a transition to Debian,&lt;ref name=&quot;lpannounce&quot;/&gt; and the January 2010 release was primarily Ubuntu-based but with Debian tools.&lt;ref name=&quot;ccannounce&quot;/&gt;
+
+== See also ==
+{{Portal|Free software}}
+* [[Comparison of Linux distributions]]
+* [[Software art]]
+
+==References==
+{{Reflist}}
+
+==External links==
+* {{official|http://puredyne.goto10.org/}}
+
+{{linux-distro}}
+{{Xfce}}
+
+[[Category:Linux media creation distributions]]
+[[Category:Ubuntu (operating system) derivatives]]
+
+[[fr:Puredyne]]</rev></revisions></page></pages></query></api>

@@ -1,0 +1,103 @@
+<?xml version="1.0"?><api><query><pages><page pageid="2383255" ns="0" title="CHAOS (operating system)"><revisions><rev xml:space="preserve">{{Advert|date=January 2009}}
+{{ infobox OS
+| name                   = CHAOS
+| screenshot             = [[Image:CHAOS 1-6 Welcome.png|250px]]
+| caption                = CHAOS-1.6 Boot Welcome Screen
+| developer              = Midnight Code / Ian Latter
+| family                 = [[Unix-like]]
+| source_model           = [[Open source]]
+| latest_release_version = 1.6
+| latest_release_date    = April 2005
+| working_state          = Current&lt;ref name=&quot;libmc&quot;&gt;{{cite web | title=Midnight Code: Project libMidnightCode (Once Written, Twice Linked) | url=http://www.midnightcode.org/projects/libmidnightcode/ | accessdate=June 30, 2007 }}&lt;/ref&gt;
+| kernel_type            = [[Monolithic kernel]]
+| ui                     = text ([[Bash (Unix shell)|bash]])
+| license                = Various
+| website                = http://midnightcode.org/projects/chaos/
+}}
+
+'''CHAOS''' is a small (6Mbyte) [[Linux distribution]] designed for creating [[ad hoc]] [[computer cluster]]s. CHAOS is a [[Live CD]] which fits on a single business card sized [[CD-ROM]]. This tiny disc will [[booting|boot]] any [[i586]] class [[IBM PC compatible|PC]] (that supports CD booting), into a working [[openMosix]] [[Node (networking)|node]], without disturbing (or even touching) the contents of any local hard disk.
+
+Designed for large-scale ad hoc clusters, once booted, CHAOS runs from memory allowing the CD to be used on the next node (and allowing for automated rebooting into the host [[operating system]]). CHAOS aims to be the most compact, secure and straightforward openMosix cluster platform available.&lt;ref&gt;{{cite web | title=openMosix: Instant openMosix | url=http://openmosix.sourceforge.net/instant_openmosix_clusters.html | accessdate=July 21, 2006 }}&lt;/ref&gt;
+
+==About==
+===What it is===
+[[Image:CHAOS-six-node-openMosix-no-load.png|thumb|225px|right|A six node CHAOS/openMosix cluster: The mosmon view with no load]]
+
+CHAOS is built around the [[open source]] project openMosix created by [[Moshe Bar]]. openMosix, itself, is a piece of software that is added to the [[Linux]] [[Kernel (computer science)|kernel]], to allow many Linux computers to work together as a [[Single-system image|Single System Image]] ([[Single-system image|SSI]])&lt;ref&gt;{{cite web | title=openMosix: What is openMosix? | url=http://openmosix.sourceforge.net/#What | accessdate=July 21, 2006 }}&lt;/ref&gt; type cluster.
+
+CHAOS creates a basic [[Node (networking)|node]] in an openMosix cluster, and is typically not deployed on its own; cluster builders will use feature rich Linux distributions (such as [[Quantian]] or [[ClusterKnoppix]]) as a &quot;head node&quot; in a cluster to provide their application software, while the CHAOS distribution runs on &quot;drone nodes&quot; to provide &quot;dumb power&quot; to the cluster.
+
+While this deployment model suits the typical cluster builder, openMosix is a peer-based cluster, consisting of only one type of node. All openMosix nodes are inherently equal and each can be, simultaneously, parent and child.
+
+===How it works===
+[[Image:CHAOS-six-node-openMosix-one-load.png|thumb|225px|right|A six node CHAOS/openMosix cluster: The mosmon view with one process' load, launched from node two]]
+
+As each new node is booted it will locate one cluster node, then negotiate its entry into the cluster. If the [[IP address]] of a node is not supplied to the booting node, it will multicast for one. The first responding node will be used as the point of negotiation. The local CHAOS node initiates an [[IPSEC]] tunnel to the elected negotiation node using a [[pre-shared key]]. If the tunnel fails to establish, the new node is unable to join the cluster. With the tunnel established the new node requests a copy of the openMosix cluster map from the negotiating cluster node. The new node then repeats this process with every node in the cluster map; establishing an IPSEC tunnel, validating the cluster map, then moving on. In this way, every node is interconnected with every other node by &quot;n-1&quot; IPSEC tunnel connections. All openMosix cluster communications are then said to be [[authenticate]]d and [[encrypted]] via the CHAOS [[Platform (computing)|platform]].
+
+Once an openMosix cluster is established on the CHAOS platform, openMosix can operate as if it were on any Linux platform. Any node can launch a [[Process (computing)|process]] and have that process migrate to the node with the best performance [[characteristics]] for executing that particular process. The openMosix environment has the &quot;mosmon&quot; utility to display the performance of the entire cluster, from any node. The image series on the right shows a six node openMosix cluster running on the CHAOS platform.
+
+===Why it was built===
+[[Image:CHAOS-six-node-openMosix-four-load.png|thumb|225px|right|A six node CHAOS/openMosix cluster: The mosmon view with four process' load, launched from node two]]
+
+CHAOS was developed to utilise idle [[desktop computer]] resources to perform pro-active [[brute-force]] [[cryptanalysis]] against given password hashes. A brute-force attack, as its name suggests, requires an [[Adversary (cryptography)|adversary]] to employ a mammoth work effort into the resolution of a cryptographic problem. Typically, this is an exhaustive search of a particular [[keyspace|key-space]]. For example, resolving the password for three upper-case alpha characters would require exploring the key-space for: AAA, AAB, AAC ... ZZX, ZZY, ZZZ.
+
+In order to reduce the time required to search the key-space, portions of the work effort can be farmed out idle resources. As opposed to [[rainbow tables]] this technique allows CHAOS to perform brute-force attacks against irregular or [[Salt (cryptography)|salted]] [[algorithms]].
+
+===Security assessed by===
+[[Image:CHAOS-six-node-openMosix-nine-load.png|thumb|225px|right|A six node CHAOS/openMosix cluster: The mosmon view with nine process' load, launched from node two]]
+
+The tool used to provide the cryptographic tests was [[John the Ripper]] ([[John the Ripper|JtR]]). JtR was scaled by using named pipes to funnel a controlled [[dictionary]] (a set of keys to try) into an arbitrary number of JtR clients. Each client would take one key, encrypt it, and test it against a local copy of the hash(es). John the Ripper on CHAOS differed from [[Cisillia]] as it facilitated dictionary based brute-force attacks across a large number of algorithms, rather than an entire key-space driven brute-force attack across one or two algorithms.
+
+===Security provided by===
+CHAOS was the first openMosix distribution to provide [[IPSEC]] and IP [[packet filtering]] to the cluster node, enabling [[authentication]] and [[encryption]] for inter-node communications, and enabling packet filtering to prevent non-cluster devices from accessing the vulnerable openMosix communications ports.&lt;ref name=&quot;ISS&quot;&gt;{{cite web | title=ISS vulnerability: mosix-malformed-packet-dos (8927) | url=http://xforce.iss.net/xforce/xfdb/8927 | accessdate=July 21, 2006 }}&lt;/ref&gt; These security controls allowed the cluster builder to utilise desktop computers in semi-trusted networks with minimal risk to cluster integrity, thus increasing the number of resources available for inclusion within the cluster.
+
+==History==
+===2003: The creation of CHAOS===
+
+The project started as tool development work for the IT Security group at [[Macquarie University]] in 2003, with an initial team that included Rob Dartnell, Ian Latter and Ty Miller. There was a need to demonstrate the weakness in one particular application's security via its one hashed, network transmitted, password. The [[openMosix]] cluster software, at that time, was available via a number of Linux distributions, but these were neither secure&lt;ref name=&quot;ISS&quot;/&gt; nor dynamic enough to support the campus PC environment that the cluster software was to be deployed into.
+
+The CHAOS distribution was created to fill this need, and was developed under the [[GPL]] to allow the openMosix community members to benefit from the security enhancements employed around the openMosix software (the clustering technology that is added to the Linux kernel). Security improvements made by the team included [[IPSEC]] tunnels for all cluster communications, state aware [[packet filtering]] for each node, a tiny [[operating system]] image which allowed for [[Preboot Execution Environment|PXE]] booting to remote PC memory, zero-touch cluster creation, etc.
+
+The original CHAOS project page was at http://itsecurity.mq.edu.au/chaos/ - this page is no longer available.
+
+===2004: CHAOS, CoSMoS and team departure===
+A presentation was made to the Australian Unix Users Group (AUUG) Security Symposium in February 2004&lt;ref&gt;{{cite web | title=AUUG Security Symposium: 20 February 2004 - Canberra | url=http://www.auug.org.au/events/2004/security/ | accessdate=July 21, 2006 }}&lt;/ref&gt; at about two thirds of the way through CHAOS' initial two year development cycle.
+
+In mid to late 2004 CHAOS was adapted to the [[coLinux|Cooperative Linux]] ([[coLinux]]) framework, allowing openMosix to run as a node on a [[Microsoft Windows]] PC for the first time. This was significant as there was now the ability to run ad-hoc clusters [[24x7]], and not just out of business hours. The version of CHAOS created for coLinux was dubbed CosMos (Chaos-OS on [[Microsoft]]-OS) and was also released under the GPL, complete with Windows installer software.
+
+Later that year work stalled on CHAOS and CosMos when the IT Security team broke up to work for various organisations. Development halted for most of the six months beginning Q4 2004.
+
+===2005: Relocation and public dissemination===
+There was renewed interest in CHAOS development when both Ian and Ty began work at [[Pure Hacking]] in Q2 2005. Pure Hacking could identify a need with the resource that CHAOS provided and offered to sponsor further CHAOS development so that it could remain under the GPL. A package updated version of CHAOS was released at that stage, but Pure Hacking provided no additional development time, leaving the project to grind to a halt again. CHAOS was &quot;[[Slashdotted]]&quot;&lt;ref&gt;{{cite web | title=Slashdot: Linux Distro turns PCs into Night-time Clusters | url=http://linux.slashdot.org/article.pl?sid=05/04/08/0552204 | accessdate=July 21, 2006 }}&lt;/ref&gt; during this time, due to the press that came from Pure Hacking's sponsorship announcement.&lt;ref&gt;{{cite web | title=ZDNet Australia: Linux distro turns PCs into supercomputers | url=http://www.zdnet.com.au/news/software/0,2000061733,39187301,00.htm | accessdate=July 21, 2006 }}&lt;/ref&gt; Unfortunately, Pure Hacking were unable to provide the time needed to develop or maintain CHAOS. Version 1.6 of CHAOS,&lt;ref&gt;{{cite web | title=Pure Hacking: CHAOS/openMosix Linux Cluster Distribution | url=http://www.purehacking.com/chaos/ | accessdate=July 21, 2006 }} {{Dead link|date=November 2010|bot=H3llBot}}&lt;/ref&gt; the only version released in Q1-3 of 2005, was released from development work performed in private time.
+
+In Q4 2005 Ian added CHAOS to the midnightcode.org&lt;ref&gt;{{cite web | title=Midnight Code: Project Chaos / CosMos (The Great Systems) | url=http://www.midnightcode.org/projects/chaos/ | accessdate=July 21, 2006 }}&lt;/ref&gt; web site (at the location advertised when leaving the University in 2004)&lt;ref&gt;{{cite web | title=IT Security: CHAOS - About the distribution | url=http://72.14.235.104/search?q=cache:KmINNlG2PDIJ:itsecurity.mq.edu.au/chaos/about/index.htm+CHAOS+move+midnightcode.org&amp;hl=en&amp;ct=clnk&amp;cd=1 | accessdate=July 21, 2006 }}&lt;/ref&gt; - in the hope of better maintaining the project. Improvements desperately needed include code and protocol clean ups, better enterprise management support, operational documentation, and simpler integration with the supporting openMosix distributions ([[Quantian]] and [[ClusterKnoppix]]).
+
+===2006-2007: Redevelopment===
+Many of the code clean-up issues (focused on Init and Tyd, particularly) will be resolved with the integration of the Midnight Code libraries.&lt;ref name=&quot;libmc&quot;/&gt; While currently being developed these libraries already provide better program execution, configuration control, network interface manipulation and status management than those currently in CHAOS.
+
+== See also ==
+{{Portal|Free software}}
+
+* [[List of Linux distributions]]
+* [[Live CD]]
+* [[List of Live CDs]]
+* [[openMosix]]
+
+==References==
+{{Reflist|2}}
+
+==External links==
+* [http://www.midnightcode.org/projects/chaos/ CHAOS homepage at Midnight Code]
+* [http://www.purehacking.com/chaos/ CHAOS-1.6 at Pure Hacking]
+* [http://www.midnightcode.org/papers/White%20Paper%20-%20Security%20and%20openMosix.pdf Securely deploying SSI cluster technology over untrusted networking infrastructure]
+* [http://www.midnightcode.org/papers/How%20To%20-%20Heterogeneous%20Clusters.pdf Running ClusterKnoppix as a master node to a CHAOS drone army]
+* [http://www.wired.com/news/infostructure/0,1377,67220,00.html Wired News: Linux Distribution Tames CHAOS]
+* [http://linux.slashdot.org/article.pl?sid=05/04/08/0552204 Slashdot: Linux Distro turns PCs into Night-time Clusters]
+* [http://www.zdnet.com.au/news/software/0,2000061733,39187301,00.htm ZDNet Australia: Linux distro turns PCs into supercomputers]
+
+{{linux-distro}}
+
+{{DEFAULTSORT:Chaos (Operating System)}}
+[[Category:Mini Linux distributions]]
+[[Category:Operating system distributions bootable from read-only media]]
+[[Category:Cluster computing]]</rev></revisions></page></pages></query></api>

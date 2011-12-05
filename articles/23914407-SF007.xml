@@ -1,0 +1,90 @@
+<?xml version="1.0"?><api><query><redirects><r from="Bittorrent trackers" to="BitTorrent tracker" /></redirects><pages><page pageid="1865828" ns="0" title="BitTorrent tracker"><revisions><rev xml:space="preserve">{{Refimprove|date=March 2009}}
+A '''BitTorrent tracker''' is a [[Server (computing)|server]] that assists in the communication between [[Peer-to-peer|peers]] using the [[BitTorrent (protocol)|BitTorrent protocol]]. It is also, in the absence of extensions to the original protocol, the only major [[Reliable system design|critical point]], as clients are required to communicate with the tracker to initiate downloads. Clients that have already begun downloading also communicate with the tracker periodically to negotiate with newer peers and provide statistics; however, after the initial reception of peer data, peer communication can continue without a tracker.
+
+== Trackers and indexers ==
+A tracker should be differentiated from a [[BitTorrent index]] by the fact that it does not necessarily list files that are being tracked. A BitTorrent index is a list of '''.torrent''' files, usually including descriptions and other information. Trackers merely coordinate communication between peers attempting to download the payload of the torrents.
+
+Many BitTorrent websites act as both tracker and index. Sites such as these publicize the tracker's URL and allow users to [[upload]] torrents to the index with the tracker's URL embedded in them, providing all the features necessary to initiate a download.
+
+=== Public trackers ===
+
+Open trackers can be used by anyone by adding the tracker address to an existing torrent, or they can be used by any newly created torrent. The most popular ones are [[OpenBitTorrent]] and [http://publicbt.com/ PublicBitTorrent]. [[The Pirate Bay]] used to run a tracker, but has since disabled it, although the website remains as a torrent index.
+
+=== Private trackers ===
+A ''private tracker'' is a BitTorrent tracker that restricts use, by requiring users to register with the site. The method for controlling registration used amongst many private trackers is an [[invitation system]], in which active and contributing members are given the ability to grant a new user permission to register at the site.&lt;ref&gt;{{cite news|url=http://torrentfreak.com/trading-bittorrent-tracker-invites-080115/ |title=Trading BitTorrent Tracker Invites , Commodity or Curse? |date=15 January 2008 |work=[[TorrentFreak]] |accessdate=23 October 2010}}&lt;/ref&gt; Invitations, typically sent via email or an invite code system, are normally granted to active users who have uploaded a pre-determined amount or meet specific upload-to-download ratio requirements. Trading invites for different sites is highly frowned upon in the private BitTorrent community as it allows anti-piracy groups to infiltrate private trackers more easily {{Citation needed|date=April 2011}}. Most private trackers monitor how much users upload or download, and in most situations, enforce a minimum upload-to-download ratio.
+
+Some of the allure of private tracker versus a public one are: higher speeds, a tighter community, and safer downloads. Private trackers implement a strict set of rules, so generally files containing malware are extremely uncommon. Many private trackers keep in close contact with each other, so bad users (who trade invites or attempt to fake their ratio) can be quickly blacklisted. Almost all private trackers implement a passkey system, where each user is given a personalized announce URL so if there is unauthorized distribution, it can be pinpointed to the user responsible. Some private trackers have a higher level of security than others&amp;nbsp;â many sites only allow their users to refer to their site as an abbreviation, and never as the site's full name or URL. Other trackers restrict invites to outstanding members, and many trackers, to increase security, have eliminated the invite system altogether. An example of a private tracker is [[Oink's Pink Palace]], which was forcibly shut down in late 2007 by law enforcement officials.
+
+The downside is that in a closed community it can be hard for all members to maintain the required ratio. Competitions may be offered, with prizes of improved ratios.  Some trackers will exchange ratio credit for donations.  Some trackers will also use &quot;free leech&quot; systems to improve the users ratio. When downloading a free leech torrent only the upload gets logged in, the download is ignored. Usually large torrents are offered as free leech. Seeding to a ratio of at least 1 is still recommended even for free leech torrents.
+
+== Legal issues ==
+{{Main|Legal issues with BitTorrent}}
+
+Many torrent trackers have been the target of [[cease and desist]] lawsuits from copyright bodies despite the fact that a tracker does not actually host or distribute any copyrighted data itself.
+
+A complicating factor is that torrent tracking websites operate in a variety of countries, including countries with copyright laws that differ from the country of origin of the copyrighted material, and countries in which different actions may be legal or illegal.
+
+Further complicating factors are that there are many circumstances under which it is legal to distribute copyrighted material&amp;nbsp;â indeed there are currently some experiments at legally selling content that is distributed over BitTorrent using a &quot;secure&quot; tracker system {{Citation needed|date=September 2009}}. For instance, copyright holders may choose to allow their content to be distributed for free, using licenses such as the [[Creative Commons]] family, or the [[GNU General Public License|GPL]]. In addition, some countries also have fair use provisions in copyright law, which allow people the right to access and use certain classes of copyrighted material without breach of the law.
+
+Besides these complications with copyrighted files using various licenses, there is also the fact that many kinds of data are in the [[public domain]] and therefore not subject to copyright at all.
+
+Perhaps the most complicated portion of this legal debate is the fact that although Bittorrent indexes and trackers provide means to receive and send copyrighted data between users, they do not host any copyrighted materials, and no copyrighted materials ever traverse these trackers or indexers.
+
+== Improving torrent reliability ==
+Trackers are the primary reason for a damaged BitTorrent 'swarm'. (Other reasons are mostly related to damaged or hacked clients uploading corrupt data.) The reliability of trackers has been improved through two main innovations in the BitTorrent protocol.
+
+=== Multi-tracker torrents ===
+Multi-tracker torrents feature multiple trackers in a single torrent file. This provides redundancy in the case that one tracker fails, the other trackers can continue to maintain the swarm for the torrent. One disadvantage to this is that it becomes possible to have multiple unconnected swarms for a single torrent where some users can connect to one specific tracker while being unable to connect to another. This can create a disjoint set which can impede the efficiency of a torrent to transfer the files it describes.
+&lt;!-- [[BitTorrent (protocol)]] claims Vuze did it first... --&gt;
+
+=== Trackerless torrents ===
+The original [[BitTorrent (software)|BitTorrent client]] was the first to offer decentralized, [[distributed computing|distributed]] tracking using a [[distributed hash table]] (DHT){{Citation needed|date=November 2009}}, making torrents more independent from the tracker. Later, [[Vuze]], [[rTorrent]], [[ÂµTorrent]], [[BitComet]], [[KTorrent]], and [[Transmission (BitTorrent client)|Transmission]] adopted this feature. Vuze's &quot;Distributed Database&quot; feature uses its own form of DHT ([[Kademlia]]) which is incompatible with the official BitTorrent client's implementation; however, support for the official implementation can be added through the [http://azureus.sourceforge.net/plugin_details.php?plugin=mlDHT Mainline DHT] plugin. Most other clients support the official DHT implementation.
+
+== IPv6 support ==
+One of the options for this [[HTTP]] based tracker protocol is the &quot;compact&quot; flag. This flag specifies that the tracker can compact the response by encoding [[IPv4]] addresses as a set of 4 bytes (32&amp;nbsp;bits).
+[[IPv6]] though are 128&amp;nbsp;bits long, and as such, the &quot;compact&quot; flag breaks IPv6 support. Trackers which support IPv6 clients thus currently ignore the compact flag. There have been mentions of a &quot;compact6&quot; flag, but this mechanism has not been adopted yet by the various BitTorrent clients.
+
+== Software ==
+[[opentracker]] from Dirk Engling powered one of the biggest BitTorrent trackers, [[The Pirate Bay]] tracker.
+
+[http://repo.cat-v.org/atrack/ Atrack] is a high performance open source tracker designed to run on [[Google App Engine]].
+
+[https://ck3r.org/tracker/ BitStorm] is a small tracker written in PHP which does not require a database and runs on any PHP compatible web server.
+
+[http://code.google.com/p/bitstorm/source/browse/?r=2#svn%2Ftrunk  BitStorm 2] use mysql database instead of flat file and provide better performance.
+
+See ''[[BitTorrent tracker software]]'' for a list of BitTorrent tracker software.
+
+== See also ==
+* [[BitTorrent (protocol)]]
+* [[BitTorrent client]]
+* [[Comparison of BitTorrent tracker software]]
+* [[BNBT]] - [[C++]] [[Software port|port]] of the original BitTorrent tracker written in [[Python (programming language)|Python]] by [[Bram Cohen]]
+* [[Bram Cohen]]
+* [[Distributed hash table]]
+* [[UDP tracker]]
+* [[XBT Tracker]] - [[C++]] BitTorrent tracker designed for performance (does not serve .torrent files or other web pages); requires [[MySQL]]
+
+== References ==
+{{reflist}}
+
+== External links ==
+* [http://www.trackon.org Index of open BitTorrent tracker].
+
+&lt;br&gt;
+{{BitTorrent}}
+
+{{DEFAULTSORT:Bittorrent Tracker}}
+[[Category:BitTorrent]]
+
+[[ar:ØªØ±Ø§ÙØ± Ø¨Øª ØªÙØ±ÙØª]]
+[[bg:Ð¢Ð¾ÑÐµÐ½Ñ ÑÑÐ°ÐºÐµÑ]]
+[[el:Tracker]]
+[[es:Tracker (BitTorrent)]]
+[[nl:Tracker (filesharing)]]
+[[pt:BitTorrent tracker]]
+[[ru:BitTorrent-ÑÑÐµÐºÐµÑ]]
+[[sl:Sledilnik]]
+[[sv:Bittorrent-tracker]]
+[[uk:BitTorrent ÑÑÐµÐºÐµÑ]]
+[[zh:BitTorrent tracker]]</rev></revisions></page></pages></query></api>

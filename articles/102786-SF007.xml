@@ -1,0 +1,128 @@
+<?xml version="1.0"?><api><query><pages><page pageid="102786" ns="0" title="MAME"><revisions><rev xml:space="preserve">{{Infobox Software
+| name = MAME
+| logo=[[Image:MAME.jpg|300px|MAME Logo]]
+| developer = [[Nicola Salmoria]] and the MAME Team
+| released = {{Release date and age|mf=yes|1997|02|05}}
+| frequently_updated = yes &lt;!-- New version ? Don't edit this page, just click on the version number located in the infobox. --&gt;
+| programming language = [[C++]]&lt;ref name=&quot;C++&quot;&gt;http://mamedev.org/devwiki/index.php/MAME_0.136u1&lt;/ref&gt;
+| operating_system = [[Cross-platform]]
+| genre = [[Emulator]]
+| license = [http://mamedev.org/license.html MAME License]
+| website = http://mamedev.org/
+}}
+
+'''MAME''' (an [[acronym]] of '''Multiple Arcade Machine Emulator''') is an [[emulator]] application designed to recreate the [[hardware]] of [[arcade game]] systems in [[software]] on modern personal computers and other platforms. The intention is to preserve gaming history by preventing vintage games from being lost or forgotten.  The aim of MAME is to be a reference to the inner workings of the emulated arcade machines; the ability to actually play the games is considered &quot;a nice side effect&quot;.&lt;ref&gt;{{cite web|url=http://mamedev.org/about.html |title=MAME &amp;#124; About MAME |publisher=Mamedev.org |date= |accessdate=2011-04-11}}&lt;/ref&gt;
+
+The first public MAME release (0.1) was on February 5, 1997, by [[Nicola Salmoria]]. The emulator now supports over seven thousand unique games and ten thousand actual [[ROM image]] sets, though not all of the supported games are playable.
+
+The project is currently maintained by Angelo Salese.&lt;ref name=&quot;angelo&quot;&gt;{{cite web|url=http://mamedev.org/?p=329 |title=MAME &amp;#124; Multiple Arcade Machine Emulator |publisher=Mamedev.org |date=2011-04-05 |accessdate=2011-04-11}}&lt;/ref&gt;
+
+== History and overview ==
+[[file:Mame1.png|thumb|MAME's main menu]]
+[[file:Mame2.png|thumb|MAME emulating [[Robby Roto]]]]
+The project was started by the Italian programmer Nicola Salmoria. MAME traces its roots to an earlier emulator project called Multi-Pac, but the name was changed as more and more games started to be emulated within the MAME framework. In April 1997 Salmoria stepped down due to his [[military service#Italy|national service]] commitments, handing stewardship of the project to fellow Italian Mirko Buffoni for a period of half a year.&lt;ref name=&quot;mamehistory&quot;&gt;{{cite web|url=http://mamedev.org/history.html|title=MAME Project History|accessdate=2011-04-23}}&lt;/ref&gt; In May 2003, David Haywood took over the job of the coordinator. From April 2005 the project was coordinated by Aaron Giles, who stepped down in April 2011 with Angelo Salese stepping in as the new coordinator.&lt;ref name=&quot;angelo&quot; /&gt; The project is supported by hundreds of developers around the world and thousands of outside contributors.
+
+At first, MAME was developed exclusively for MS-DOS, but it was soon ported to [[Unix-like]] systems (X/MAME), Macintosh (MacMAME and later MAME OS X) and Windows (MAME32). Currently, the main development occurs on the [[Microsoft Windows|Windows]] platform, and most other platforms are supported through the [[Simple Directmedia Layer|SDLMAME]] project, which has recently been integrated into the main development source tree.&lt;ref&gt;{{cite web|url=http://rbelmont.mameworld.info/?page_id=163 |title=Arbeeâs WIP Emporium Â» SDLHome x.y.z â the SDLMAME Homepage |publisher=Rbelmont.mameworld.info |date= |accessdate=2011-04-11}}&lt;/ref&gt; In addition, different versions of MAME have been ported to other computers, game consoles, mobile phones and PDAs, and at one point even to digital cameras.&lt;ref&gt;{{cite web|url=http://www.videogameobsession.com/videogame/kodak.html |title=Kodak DC-260 running MAME! @ Video Game Obsession (c) Matthew Henzel |accessdate=2011-04-23}}&lt;/ref&gt;
+
+Major releases of MAME occur approximately once a month. Windows executables in both 32-bit and 64-bit fashion are released on the official web site of the development team, along with the complete source code.&lt;ref&gt;{{cite web|url=http://mamedev.org/release.html |title=MAME Latest MAME Release |accessdate=2011-04-23}}&lt;/ref&gt; Smaller, incremental &quot;u&quot; (for update) releases are released weekly as source [[diff]]s against the most recent major version, to keep code in synchronization among developers.&lt;ref&gt;{{cite web|url=http://mamedev.org/updates.html |title=MAME Source Updates |accessdate=2011-04-23}}&lt;/ref&gt; The up-to-date MAME source code is kept on the public mess.org [[Subversion (software)|Subversion]] server for those who wish to access it. This is intended only for those who have access to [[compiler]] tools and feel comfortable building software from source code.
+
+The architecture of MAME has been extensively improved over the years. Support for both [[Raster graphics|raster]] and [[vector display]]s, as well as multiple CPUs and sound chips found its way into MAME in the first six months of the project. A flexible timer system to coordinate the synchronization between multiple emulated CPU cores was implemented, and ROM images started to be loaded according to their [[CRC32]] hash in the [[ZIP (file format)|ZIP files]] they were stored in.&lt;ref name=&quot;mamehistory&quot; /&gt;
+
+MAME has pioneered the reverse engineering of many undocumented system architectures, various CPUs (such as the [[M6809]]-derivative custom [[Konami]] CPU with new instructions) and sound chips (for example the [[List of Yamaha products#Sound chips|Yamaha FM sound chips]]), and MAME developers have been instrumental in the reverse engineering of many proprietary encryption algorithms utilized in arcade games. Examples of these include the [[Neo Geo]], [[CP System II]], [[CP System III]] and many others.
+
+The popularity of MAME has well since broken through to the mainstream, with enthusiasts building their own [[Video game arcade cabinet|arcade game cabinets]] to relive the old games, and with companies producing illegal derivative works of MAME to be installed in [[Video arcade|arcades]]. Cabinets can be built either from scratch or taking apart and modifying a genuine arcade game cabinet that was once used with the real hardware inside.&lt;ref&gt;J Wiley, Project Arcade, Build Your Own Arcade Machine, 2004 - ISBN 0-7645-5616-9&lt;/ref&gt; Collectors have criticized people for destroying cabinets and throwing away hardware that is working or could be restored with minimal effort.{{Citation needed|date=June 2011}}
+
+Although MAME contains a rudimentary user interface, the use of MAME in arcade game cabinets and [[home theater PC]]s necessitates special launcher applications called ''front ends'' with more advanced user interfaces. Front ends provide varying degrees of customization - allowing one to see images of the cabinets, history of the games and tips on how to play, and even video of the game play or ''attract mode'' of the game.
+
+The information contained within MAME is free for re-use, and companies have been known to utilize MAME when recreating their old classics on modern systems. Some have gone as far as to hire MAME developers to create emulators for their old properties. An example of this is the ''[[Taito Legends]]'' pack.&lt;ref name=&quot;taitolegendsmanual&quot;&gt;{{cite web|url=http://www2.sega.com/support/manuals/taitolegends_pc_manual.pdf |title=Taito Legends manual |publisher=Sega |date= |accessdate=2011-04-23}}&lt;/ref&gt;
+
+== Design ==
+The MAME core coordinates the emulation of several elements at the same time. These elements replicate the behavior of the hardware present in the original [[arcade cabinet|arcade machines]]. MAME can emulate many different [[central processing unit]]s (CPUs), both in number or types, including processors, audio and video specific chips, [[integrated circuit]]s, microcontrollers, etc., including the needed elements for them to communicate together such as memory regions, RAM, data buses, peripherals, storage devices, etc. These elements are virtualized so MAME acts as a software layer between the original program of the game, and the platform MAME runs on.
+
+MAME supports arbitrary screen resolutions, refresh rates and display configurations. Multiple emulated monitors, as required by for example [[Darius (video game)|Darius]], are supported as well.
+
+Individual arcade systems are specified by ''drivers'' which take the form of [[Macro (computer science)|C macros]]. These drivers specify the individual components to be emulated and how they communicate with each other. While MAME was originally written in [[C (programming language)|C]], the need for object oriented programming caused the development team to begin to compile all code as [[C++]] for MAME 0.136, taking advantage of additional features of that language in the process.&lt;ref name=&quot;C++&quot; /&gt;
+
+Although a great majority of the CPU emulation cores are [[Interpreter (computing)|interpretive]], MAME also supports [[dynamic recompilation]] through an intermediate language called the Universal Machine Language (UML) to increase the emulation speed. Back-end targets supported are x86 and x64. A C backend is also available to further aid verification of the correctness. CPUs emulated in this manner are SH-2, MIPS R3000 and PowerPC.
+
+=== Game data ===
+The original program code and graphics and sound data need to be present so that the game can be emulated. In most arcade machines, the data is stored in read-only memory chips (ROMs), although other devices such as [[cassette tape]]s, [[floppy disk]]s, [[hard disk]]s, [[laserdisc]]s, and [[compact disc]]s are also used. The contents of most of these devices can be copied to computer files, in a process called &quot;dumping&quot;. The resulting files are often generically called [[ROM image]]s or ROMs regardless of the kind of storage they came from. A game usually consists of multiple ROM and [[Programmable Array Logic|PAL]] images; these are collectively stored inside a single [[ZIP (file format)|ZIP file]], constituting a ROM set. In addition to the &quot;parent&quot; ROM set (usually chosen as the most recent &quot;World&quot; version of the game), games may have &quot;clone&quot; ROM sets with different program code, different language text intended for different markets etc. For example, ''[[Street Fighter II|Street Fighter II Turbo]]'' is considered a variant of ''Street Fighter II Champion Edition''. System boards like the [[Neo Geo (console)|Neo Geo]] that have ROMs shared between multiple games require the ROMs to be stored in &quot;BIOS&quot; ROM sets and named appropriately.
+
+Individual ROM files are often named after labels found on the ROM chips and the position they are located on the board in the format &quot;label.position&quot;. [[Sega]] for example use a standard labeling scheme for all the ROMs found on their arcade boards giving each unique ROM chip a unique label. &quot;mpr12380.b2&quot; is a ROM from the Golden Axe romset. This implies that the ROM was labeled &quot;mpr12380&quot; and located in position &quot;b2&quot; on the [[Printed circuit board|PCB]]. By using such a naming scheme it makes it easy to use MAME to identify, and often help repair, non-working [[Printed circuit board|PCBs]].
+
+Hard disks, CDs and laserdiscs are stored in a MAME-specific but documented format called the CHD (Compressed Hunks of Data).&lt;ref&gt;[http://mamedev.org/source/src/lib/util/chd.h.html]&lt;/ref&gt; Some arcade machines use analog hardware, such as laserdiscs, to store and play back audio/video data such as soundtracks and cinematics. This data must be [[capture]]d and [[codec|encoded]] into digital files that can be read by MAME. Although MAME supports [[lossless compression]] of laserdisc data, it can be argued that the digital copy is not a perfect reproduction of the analog source.
+
+A number of games use sound chips that have not yet been emulated successfully. These games require sound samples in WAV file format for sound emulation.
+
+MAME additionally supports artwork files in [[Portable Network Graphics|PNG format]] for bezel and overlay graphics.
+
+== Philosophy and accuracy ==
+The stated aim of the project is to document hardware, and so MAME takes a somewhat purist view of emulation, prohibiting programming [[hack (technology slang)|hacks]] that might make a game run improperly or run faster at the expense of emulation accuracy. Components such as CPUs are emulated at a low level (meaning individual instructions are emulated) whenever possible, and [[high-level emulation]] (HLE) is only used when a chip is completely undocumented and cannot be reverse-engineered in detail. Signal level emulation is used to emulate audio circuitry that consists of analog components.
+
+{{Quotation|We want to document the hardware. Now a lot of people will say; &quot;Where's your document? You just write a bunch of source code.&quot; And yes, that's true. One thing I've learned is that keeping documentation synced with source code is nearly impossible. The best proof that your documentation is right is &quot;does this code work&quot;.|Aaron Giles|California Extreme 2008&lt;ref&gt;[http://www.youtube.com/watch?v=Ek2ZGYv__IA YouTube - Aaron Giles at California Extreme 2008- Part 2]&lt;/ref&gt;}}
+
+MAME emulates well over a thousand different arcade game system boards, a majority of which are completely undocumented and custom designed to run either a single game or a very small number of them. The approach MAME takes with regards to accuracy is an incremental one; systems are emulated as accurately as they reasonably can be. Bootleg copies of games are often the first to be emulated, with proper (and copy protected) versions emulated later. Besides encryption, arcade games were usually protected with custom [[microcontroller unit]]s (MCUs) that implemented a part of the game logic or some other important functions. Emulation of these chips is preferred even when they have little or no immediately visible effect on the game itself. For example, the monster behavior in [[Bubble Bobble]] was not perfected until the code and data contained with the custom MCU was dumped through the [[decapping]] of the chip.&lt;ref&gt;{{cite web|url=http://mamelife.blogspot.com/2006_08_01_archive.html |title=Nicola's MAME Ramblings}}&lt;/ref&gt; This results in the ROM set requirements changing as the games are emulated to a more and more accurate degree.
+
+Portability and genericity are also important to MAME. Combined with the uncompromising stance on accuracy, this often results in high system requirements. Although a 2&amp;nbsp;GHz processor is enough to run almost all 2D games, more recent systems and particularly systems with 3D graphics can be unplayably slow even on the fastest computers. MAME does not currently take advantage of hardware acceleration to speed up the rendering of 3D graphics, in part because of the lack of a stable cross-platform 3D API, and in part because software rendering can in theory be an exact reproduction of the various custom 3D rendering approaches that were used in the arcade games.
+
+== Legal status ==
+
+Owning and distributing MAME itself is legal in most countries, as it is merely an emulator. Companies such as [[Sony Computer Entertainment|Sony]] have attempted in court to prevent emulators from being sold, but they have been ultimately unsuccessful.&lt;ref&gt;{{cite web |url= http://www.wired.com/news/business/0,1367,34281,00.html |title= Court Upholds PlayStation Rival |publisher= ''[[Wired (magazine)|Wired]]'' |first= Joanna |last= Glasner |date= 10 February 2000 |accessdate= 24 September 2006}}&lt;/ref&gt; MAME itself has thus far not been the subject of any court cases.
+
+However, most arcade games are still covered by copyright. While it is arguably legal to transfer the data contained in ROM chips from a board you own to a personal computer, both downloading from and distributing ROMs on the Internet without permission from copyright holders is a violation of copyright laws.
+
+Some copyright holders have been indecisive regarding making licensed arcade game ROMs available to the public. For example, in 2003 Atari made MAME-compatible ROMs for 27 of its arcade games available through the internet site ''Star ROMs''. However, by 2006 that decision had been reversed, and the ROMs are no longer being sold there. At one point, various Capcom games were sold with the HotRod arcade joystick manufactured by [[Hanaho]], but this arrangement was discontinued as well.
+
+Other copyright holders have released games which are no longer commercially viable free of charge to the public. ''[[Alien Arena (video game)|Alien Arena]]'', ''[[Gridlee]]'', ''[[Looping (video game)|Looping]]'', ''[[Robby Roto]]'', ''[[Super Tank]]'' and a number of early games by [[Exidy]] (''[[Car Polo]]'', ''[[Circus (video game)|Circus]]'', ''[[Crash (video game)|Crash]]'', ''[[Fax (video game)|Fax]]'', ''[[Fire One]]'', ''[[Hard Hat (video game)|Hard Hat]]'', ''[[Rip Cord]]'', ''[[Robot Bowl]]'', ''[[Side Trak]]'', ''[[Spectar]]'', ''[[Star Fire]]'', ''[[Targ (video game)|Targ]]'', ''[[Teeter Torture]]'', ''[[Top Gunner (Exidy video game)|Top Gunner]]'' and ''[[Victory (video game)|Victory]]'') have been released by their copyright holders under non-commercial licenses. These games may be downloaded legally from the official MAME web site.&lt;ref&gt;{{cite web|title=MAME ROMs for Free Download|url=http://mamedev.org/roms/}}&lt;/ref&gt; The Spanish arcade game developer [[Gaelco]] has also released ''[[World Rally (Gaelco)|World Rally]]'' for non-commercial use on their website.&lt;ref&gt;{{cite web | title = Gaelco games at home! | url = http://www.gaelco.com/english/pages/hablando/frhablan.htm }}&lt;/ref&gt;
+
+== License ==
+
+MAME is available at no cost, including its [[source code]]. Its [[software license]] is a BSD-derivative [[copyleft]] license in that redistributions of modified versions (derivative works) must include the complete corresponding source code. However, the license states that &quot;redistributions may not be sold, nor may they be used in a commercial product or activity&quot;. The main goal of this is to prevent arcade operators from installing MAME cabinets and profiting from the works of the original manufacturers of the game.&lt;ref&gt;{{cite web |url= http://mamedev.org/legal.html |title= MAME Legal Information |publisher= The MAME Development Team |first= Nicola |last= Salmoria |accessdate= 22 March 2009}}&lt;/ref&gt; Due to the prohibition on commercial distribution MAME does not fulfill the criteria of [[free software]] as defined by the [[Free Software Foundation]]; nor does it meet the conditions of the [[Open Source Definition]].
+
+The MAME development team encourages people to submit their work back to the main source tree; however changes that are viewed as detracting from emulation accuracy (hacks) are not accepted. Experimental features such as [[netplay]] are also not accepted as of yet. Derivative builds such as MAMEUIFX&lt;ref&gt;[http://mame32fx.altervista.org/ MAMEUIFX]&lt;/ref&gt; and MAMEHub/ClientServerMAME&lt;ref&gt;[https://sites.google.com/site/mamehub/home/ MAMEHub Homepage]&lt;/ref&gt;&lt;ref&gt;[http://10ghost.blogspot.com/ DigitalGhost's Blog]&lt;/ref&gt; have been developed to cater for users desiring such features.
+
+== See also ==
+{{portal|Video games}}
+
+* [[MESS]]
+* [[List of video game console emulators]]
+* [[Keeping Emulation Environments Portable]]
+
+== References ==
+
+{{Reflist}}
+
+== External links ==
+{{wikibooks|transwiki:MAME arcade cabinet}}
+
+&lt;!-- please do not add links to ROMs/bios repositories, as these most likely contain copyright violations and linking to them in Wikipedia is therefore not allowed; see [[WP:EL]] for details --&gt;
+* {{Official website|http://mamedev.org/}}
+* [http://www.mameworld.info/ MAMEworld] MAME resource and news site
+
+{{DEFAULTSORT:Mame}}
+[[Category:Arcade emulators]]
+[[Category:Multi-emulators]]
+[[Category:GP2X emulation software]]
+[[Category:Linux emulation software]]
+[[Category:Mac OS emulation software]]
+[[Category:Mac OS X emulation software]]
+[[Category:Windows emulation software]]
+[[Category:Retrocomputing]]
+[[Category:Cross-platform software]]
+
+[[da:MAME]]
+[[de:M.A.M.E.]]
+[[es:Multiple Arcade Machine Emulator]]
+[[fr:MAME]]
+[[gl:MAME]]
+[[ko:MAME]]
+[[it:MAME]]
+[[nl:MAME]]
+[[ja:MAME]]
+[[pl:MAME]]
+[[pt:MAME]]
+[[ru:MAME]]
+[[fi:MAME]]
+[[sv:MAME]]
+[[tr:MAME]]
+[[zh:MAME]]</rev></revisions></page></pages></query></api>

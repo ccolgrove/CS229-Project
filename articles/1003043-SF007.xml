@@ -1,0 +1,124 @@
+<?xml version="1.0"?><api><query><pages><page pageid="1003043" ns="0" title="Java 3D"><revisions><rev xml:space="preserve">{{Infobox software
+| name = Java 3D
+| logo =
+| screenshot =
+| caption =
+| developer = [[Sun Microsystems]]
+| latest_release_version = '''1.5.2'''
+| latest_release_date = 2008
+| latest_preview_version =
+| latest_preview_date =
+| operating_system = [[Cross-platform]]
+| genre = [[3D computer graphics software]] (library/API)
+| license = [[GPL#Version_2|GPL version 2]]+[[GPL linking exception]]
+| website = [https://java3d.dev.java.net/ java3d.dev.java.net]
+}}
+
+[[Image:java3d.png|thumb|right|300px|Java 3D central hierarchies in [[Lepus3|LePUS3]]]]
+
+'''Java 3D''' is a [[scene graph]]-based [[3D computer graphics|3D]] [[application programming interface]] (API) for the [[Java (software platform)|Java platform]]. It runs atop either [[OpenGL]] or [[Direct3D]]. Since version 1.2, Java 3D has been developed under the [[Java Community Process]].
+
+Compared to other solutions, Java 3D is not only a [[Primitive wrapper class|wrapper]] around these graphics APIs, but an interface that encapsulates the graphics programming using a true [[object-oriented]] approach. Here a scene is constructed using a [[scene graph]] that is a representation of the objects that have to be shown. This scene graph is structured as a tree containing several elements that are necessary to display the objects. Additionally, Java 3D offers extensive [[3D audio effect|spatialized sound]] support.
+
+Java 3D and its documentation are available for download separately. They are not part of the [[Java Development Kit]] (JDK).
+
+== History ==
+
+[[Intel]], [[Silicon Graphics]], [[Apple Computer|Apple]], and [[Sun Microsystems|Sun]] all had [[retained mode]] [[scene graph]] APIs under development in 1996. Since they all wanted to make a Java version, they decided to collaborate in making it. That project became Java 3D. Development was underway already in 1997. A public beta version was released in March 1998. The first version was released in December 1998. From mid-2003 through summer 2004, the development of Java 3D was discontinued. In the summer of 2004, Java 3D was released as a [[community source]] project, and [[Sun Microsystems|Sun]] and volunteers have since been continuing its development.
+
+On January 29, 2008, it was announced that improvements to Java 3D would be put on hold to produce a 3D scene graph for [[JavaFX]].&lt;ref&gt;{{cite web
+| url=http://www.java.net/node/674071
+| title= ANNOUNCEMENT: Java 3D plans
+| publisher= [[Sun Microsystems]]
+| date= 2008-01-29}}&lt;/ref&gt;
+
+Since February 28, 2008, the entire Java 3D source code is released under the [[GPL#Version_2|GPL version 2]] license with [[GPL linking exception]].&lt;ref&gt;{{cite web
+| url=http://forums.java.net/jive/thread.jspa?messageID=261477&amp;tstart=0#261477
+| title= ANNOUNCE: GPL open source release
+| publisher= [[Sun Microsystems]]
+| date= 2008-02-28
+| accessdate= 2008-02-29}}&lt;/ref&gt;
+
+== Features ==
+
+[[Image:Java3DStarSystemScreenShot.png|thumb|A screenshot of work drawn with Java 3D]]
+
+* Multithreaded [[scene graph]] structure
+* [[Cross-platform]]
+* Generic [[Real-time computer graphics|Real-time]] API, usable for both visualization and gaming
+* Support for [[Retained mode|retained]], compiled-retained, and [[Intermediate representation|immediate mode]] rendering
+* Includes hardware-accelerated [[JOGL]], [[OpenGL]] and [[Direct3D]] renderers (depending on platform)
+* Sophisticated virtual-reality-based view model with support for stereoscopic rendering and complex multi-display configurations
+* Native support for [[head-mounted display]]
+* [[Cave Automatic Virtual Environment|CAVE]] (multiple screen projectors)
+* [[3D audio effect|3D spatial sound]]
+* Programmable shaders, supporting both [[GLSL]] and [[Cg programming language|CG]]
+* [[Stencil buffer]]
+* Importers for most mainstream formats, like [[.3ds|3DS]], [[Wavefront .obj file|OBJ]], [[VRML]], [[X3D]], [[NWN]], and [[OpenFlight|FLT]]
+
+== Competing technologies ==
+
+Java 3D is not the only high-level API option to render 3D in Java. In part due to the pause in development during 2003 and 2004, several competing Java scene graph technologies emerged:
+
+'''General purpose:'''
+* [[AgentFX]]
+* [[3DzzD]], software and hardware 3D engine
+* [http://www.strata.com Strata Live 3D(tm)]
+* [http://standard3d.com Standard3D Stereoscopic Browser Application platform]
+
+'''Gaming:'''
+* [[Ardor3D]]
+* [[Xith3d|Xith3D]]
+* [[jMonkey Engine]]
+* Espresso3D
+
+'''Visualization:'''
+* [[Aviatrix3D]]
+* [[JView]]
+* [http://www3.math.tu-berlin.de/jreality/ Jreality].
+
+In addition to those, many other C or C++ scene graph APIs offer Java support through [[Java Native Interface|JNI]].
+
+At a lower level, the [[JOGL]] (JSR 231) OpenGL bindings for Java are a popular alternative to scene graph APIs such as Java 3D. [[Lightweight Java Game Library|LWJGL]] is another such binding.
+
+== See also ==
+{{Portal|Java}}
+* [[Project Looking Glass]] (Experimental 3D Desktop using Java 3D)
+* [[Project Wonderland]] (Virtual workspace environment using Java 3D and Project Darkstar)
+* [[J3DFly]] (Experimental Scene Graph editor for Java 3D)
+
+==References==
+{{Reflist|2}}
+
+==External links==
+* [http://java3d.dev.java.net Official site] and [http://download.java.net/media/java3d/builds/release/ releases]
+* [https://j3d-core.dev.java.net/j3d1_5_2/RELEASE-NOTES.html Release Notes] of recent version 1.5.2
+* [http://www.jcp.org/en/jsr/detail?id=926 JSR 926] (Java 3D 1.5), [http://www.jcp.org/en/jsr/detail?id=912 JSR 912] (Java 3D 1.3)
+* [http://forums.java.net/jive/forum.jspa?forumID=70 Forum] and [http://wiki.java.net/bin/view/Javadesktop/Java3D Wiki] for Java 3D. - Places for collaboration; includes lists of books and users, faq and knowledge base
+* [http://www.java3d.org/ java3d.org]. Tutorial, examples and information
+* [http://www.sdsc.edu/~nadeau/Courses/Siggraph99/ Lecture]. - From Siggraph for beginners
+* Game Programming [http://fivedots.coe.psu.ac.th/~ad/jg/], [http://fivedots.coe.psu.ac.th/~ad/jg2/] in Java 3D (chapters as pdf-files and sourcecode)
+* [http://www.3dchat.org Virtual Universe]. - Example VR application
+* [http://www.java3declipse.org Plugin for Eclipse]
+* [http://www.navgen.com Example visualisation applets using Java 3D]
+* [http://genex.hgu.mrc.ac.uk/Software/JavaTools/ JAtlasViewer]. - A 3D anatomical structure explorer with embedded 2D section made by Guangjie Feng.
+
+{{Java (Sun)}}
+
+{{DEFAULTSORT:Java 3d}}
+[[Category:Java platform|3D]]
+[[Category:Java specification requests|3D]]
+[[Category:3D scenegraph APIs]]
+[[Category:3D graphics software]]
+[[Category:Java APIs]]
+[[Category:Cross-platform software]]
+
+[[de:Java 3D]]
+[[es:Java 3D]]
+[[fr:Java 3D]]
+[[it:Java 3D]]
+[[he:Java 3D]]
+[[nl:Java 3D]]
+[[ja:Java 3D]]
+[[pl:Java 3D]]
+[[pt:Java 3D]]</rev></revisions></page></pages></query></api>

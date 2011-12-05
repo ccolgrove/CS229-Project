@@ -1,0 +1,32 @@
+<?xml version="1.0"?><api><query><pages><page pageid="361571" ns="0" title="System console"><revisions><rev xml:space="preserve">[[Image:KNOPPIX booting.png|thumb|Knoppix system console showing the boot process]]
+The '''system console''', '''root console''' or simply '''console''' is the text entry and display device for system administration messages, particularly those from the [[BIOS]] or [[boot loader]], the [[Kernel (computer science)|kernel]], from the [[init]] system and from the [[syslog|system logger]]. It is a physical device consisting of a keyboard and a screen.
+
+On traditional [[minicomputer]]s, the console was a '''serial console''', an [[RS-232]] serial link to a [[computer terminal|terminal]] such as a [[Digital Equipment Corporation|DEC]] [[VT100]]. This terminal was usually kept in a secured room  since it could be used for certain privileged functions such as halting the system or selecting which media to boot from.  Large [[midrange computer|midrange system]]s, e.g. those from [[Sun Microsystems]], [[Hewlett-Packard]] and [[IBM]], still use serial consoles. In larger installations, the console ports are attached to multiplexers or network-connected multiport serial servers that let an operator connect a terminal to any of the attached servers. Today, serial consoles are often used for accessing [[headless system]]s, usually with a [[terminal emulator]] running on a [[laptop]]. Also, routers, enterprise  [[network switches]] and other telecommunication equipment have RS-232 serial console ports.
+
+On [[Personal computer|PC]]s and [[workstation]]s, the computer's attached [[Computer keyboard|keyboard]] and [[Computer display|monitor]] have the equivalent function.  Since the monitor cable carries video signals, it cannot be extended very far. Often, installations with many servers therefore use keyboard/video multiplexers ([[KVM switch]]es) and possibly video amplifiers to centralize console access. In recent years, [[KVM/IP]] devices have become available that allow a remote computer to view the video output and send keyboard input via any TCP/IP network and therefore the [[Internet]].
+
+Some PC [[BIOS]]es, especially in servers, also support serial consoles, giving access to the BIOS through a serial port so that the simpler and cheaper serial console infrastructure can be used. Even where BIOS support is lacking, some [[operating system]]s, e.g. [[FreeBSD]] and [[Linux]], can be configured for serial console operation either during bootup, or after startup.
+
+It is usually possible to [[logging (computer security)|log in]] from the console. Depending on configuration, the operating system may treat a login session from the console as being more trustworthy than a login session from other sources. 
+
+==See also==
+* [[Command line interface]] (CLI)
+* [[Bootloader]]
+* [[System request]] (SysRq)
+* [[Console server]]
+* [[Front panel]]
+* [[Win32 console]]
+
+{{compsci-stub}}
+
+[[Category:BIOS]]
+[[Category:Computer systems]]
+[[Category:Out-of-band management]]
+[[Category:System administration]]
+[[Category:User interfaces]]
+
+[[cs:SystÃ©movÃ¡ konzole]]
+[[fr:Terminal informatique#Console]]
+[[ja:ã³ã³ã½ã¼ã«]]
+[[ru:ÐÐ¾Ð½ÑÐ¾Ð»Ñ#ÐÑÐ¾Ð³ÑÐ°Ð¼Ð¼Ð½Ð¾Ðµ Ð¾Ð±ÐµÑÐ¿ÐµÑÐµÐ½Ð¸Ðµ]]
+[[uk:ÐÐ¾Ð½ÑÐ¾Ð»Ñ (ÑÐ½ÑÐ¾ÑÐ¼Ð°ÑÐ¸ÐºÐ°)]]</rev></revisions></page></pages></query></api>

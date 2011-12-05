@@ -1,0 +1,110 @@
+<?xml version="1.0"?><api><query><pages><page pageid="519497" ns="0" title="CURL"><revisions><rev xml:space="preserve">{{lowercase title}}
+{{Other uses|Curl (disambiguation)}}
+{{one source|date=November 2010}}
+{{Primary|date=August 2010}}
+{{Infobox software
+| released = 1997&lt;ref name=history&gt;[http://curl.haxx.se/docs/history.html cURL History Page]&lt;/ref&gt;
+| name                 = cURL
+| logo                 = 
+| screenshot           = [[File:Curl.png|300px]]
+| caption              = Example output from &lt;code&gt;curl -O&lt;/code&gt;
+| author               = Daniel Stenberg
+| developer            = 
+| status               = Active
+| latest release version = 7.23.0
+| latest release date    = {{Start date and age|2011|11|15|df=yes}}
+| frequently updated   = yes
+| operating system     = [[Cross-platform]]
+| programming language = [[C programming language|C]]
+| genre                = [[FTP client]] / [[HTTP client]]
+| license              = Free Software: [http://curl.haxx.se/docs/copyright.html MIT/X derivate license]
+| website              = [http://curl.haxx.se/ curl.haxx.se]
+}}
+
+'''cURL''' is a computer software project providing a library and command-line tool for transferring data using various [[Protocol (computing)|protocols]]. The cURL project produces two products, '''libcurl''' and '''cURL'''. It was first released in 1997.
+
+== libcurl ==
+A free client-side URL transfer [[Library (computing)|library]], supporting [[FTP]], [[FTPS]], [[Gopher (protocol)|Gopher]], [[HTTP]], [[HTTPS]], [[Secure copy|SCP]], [[SSH File Transfer Protocol|SFTP]], [[Trivial File Transfer Protocol|TFTP]], [[Telnet]], [[DICT]], the [[file URI scheme]], [[LDAP]], LDAPS, [[IMAP]], [[POP3]], [[SMTP]] and [[RTSP]]. The library supports HTTPS certificates, [[HTTP POST]], [[HTTP PUT]], FTP uploading, [[Kerberos (protocol)|Kerberos]], HTTP form based upload, proxies, [[cookie (web)|cookie]]s, user-plus-password authentication, file transfer resume, and [[HTTP proxy]] tunneling.
+
+The libcurl library is portable. It builds and works identically on several platforms, including Solaris, NetBSD, FreeBSD, OpenBSD, Darwin, HPUX, IRIX, AIX, Tru64, Linux, UnixWare, HURD, Windows, Symbian, Amiga, OS/2, BeOS, Mac OS X, Ultrix, QNX, OpenVMS, RISC OS, Novell NetWare, DOS and more.
+
+The libcurl library is free, thread-safe, [[IPv6]] compatible, and fast. [[language binding|Bindings]] in more than 40 [[computer languages|languages]] are available for libcurl.
+
+== cURL ==
+A command line tool for getting or sending files using URL syntax.
+
+Since cURL uses libcurl, it supports a range of common Internet protocols, currently including HTTP, HTTPS, FTP, FTPS, SCP, SFTP, TFTP, LDAP, LDAPS, DICT, TELNET, FILE . IMAP, POP3, SMTP and RTSP (the last four-only in versions newer than 7.20.0 or 9 February 2010).
+
+The name of the project is a play on 'Client for URLs', originally with URL spelled in uppercase to make it obvious that it deals with URLs. The fact it can also be pronounced 'see URL' also helped; it works as an abbreviation for &quot;Client URL Request Library&quot; or the recursive version: &quot;Curl URL Request Library&quot;.
+
+Daniel Stenberg  started writing cURL in 1997, as a way to transfer files via protocols such as http, ftp, gopher, and many more, via a command-line interface. Several other people made
+important and crucial contributions to the project. Distributed under the [[MIT License]], cURL is [[free software]].
+
+== Examples of cURL use from command line ==
+Basic use of cURL involves simply typing curl at the command line, followed by the URL of the output to retrieve.
+
+To retrieve the [[example.com]] homepage, type:
+ &lt;code&gt;curl www.example.com&lt;/code&gt;
+
+cURL defaults to displaying the output it retrieves to the standard output specified on the system (usually the terminal window).  So running the command above would, on most systems, display the www.example.com source-code in the terminal window.
+
+cURL can write the output it retrieves to a file with the -o flag, thus:
+ &lt;code&gt;curl -o example.html www.example.com&lt;/code&gt;
+
+This will store the source code for www.example.com into a file named example.html.  While retrieving output, cURL will display a progress-bar showing how much of the output has downloaded.  Note however that cURL does not show a progress bar when preparing to display the output in the terminal window, since a progress-bar is likely to interfere with the display of the output.
+
+To download output to a file that has the same name as on the system it originates from, use the -O flag, for example:
+ &lt;code&gt;curl -O www.example.com/example.html&lt;/code&gt;
+
+== See also ==
+{{Portal|Free software}}
+* [[Wget]]
+* [[Web crawler]]
+* [[curl-loader]] - an open-source testing tool based on cURL
+* [[libwww]]
+
+==References==
+{{reflist}}
+
+==External links==
+&lt;!--==========================({{NoMoreLinks}})============================
+    | PLEASE BE CAUTIOUS IN ADDING MORE LINKS TO THIS ARTICLE. WIKIPEDIA  |
+    | IS NOT A COLLECTION OF LINKS NOR SHOULD IT BE USED FOR ADVERTISING. |
+    |                                                                     |
+    |           Excessive or inappropriate links WILL BE DELETED.         |
+    | See [[Wikipedia:External links]] &amp; [[Wikipedia:Spam]] for details.  |
+    |                                                                     |
+    | If there are already plentiful links, please propose additions or   |
+    | replacements on this article's discussion page, or submit your link |
+    | to the relevant category at the Open Directory Project (dmoz.org)   |
+    | and link back to that category using the {{dmoz}} template.         |
+    =========================({{NoMoreLinks}})=============================--&gt;
+*[http://curl.haxx.se/ cURL website]
+*[http://curl.haxx.se/docs/manpage.html curl manual]
+*[http://curl.haxx.se/docs/comparison-table.html Comparison of cURL vs other open source download tools]
+
+{{Download managers}}
+
+{{DEFAULTSORT:Curl}}
+
+[[Category:Free web crawlers]]
+[[Category:Download managers]]
+[[Category:Free FTP clients]]
+[[Category:HTTP clients]]
+[[Category:Free cross-platform software]]
+[[Category:Free software programmed in C]]
+[[Category:C libraries]]
+[[Category:1997 software]]
+[[Category:Software using the MIT license]]
+
+[[ar:ÙÙØ±Ù]]
+[[bg:CURL]]
+[[de:CURL]]
+[[es:CURL]]
+[[fr:CURL]]
+[[hr:CURL]]
+[[ja:CURL]]
+[[pl:CURL]]
+[[ru:CURL]]
+[[uk:CURL]]
+[[zh:CURL]]</rev></revisions></page></pages></query></api>

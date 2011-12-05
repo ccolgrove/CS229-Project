@@ -1,0 +1,159 @@
+<?xml version="1.0"?><api><query><pages><page pageid="34472" ns="0" title="Zope"><revisions><rev xml:space="preserve">{{About|an application server|the fish known as &quot;Zope&quot;|Abramis ballerus}}
+{{cleanup|date=April 2011}}
+{{Infobox software
+| name                   = Zope 2
+| logo                   =
+| screenshot             = [[File:Zope-screenshot.png|300px]]
+| caption                = Zope management interface in a Web browser window.
+| collapsible            = yes
+| developer              = Zope Corporation
+| status                 = Active
+| released                = {{start date|1998}}
+| latest_release_version = 2.13.6
+| latest_release_date    = {{Release_date|2011|04|03}}&lt;ref&gt;http://zope2.zope.org/releases&lt;/ref&gt;
+| latest_preview_version =
+| latest_preview_date    =
+| operating_system       = [[Cross-platform]]
+| size                   =
+| programming_language   = [[Python (programming language)|Python]]
+| genre                  = Web [[application server]]
+| license                = [[Zope Public License]]
+| website                = {{url|http://zope2.zope.org/}}
+}}
+{{Infobox software
+| name                   = Zope 3
+| logo                   =
+| collapsible            = yes
+| developer              = Zope Corporation
+| status                 = Active
+| released                = {{start date|2004}}
+| latest_release_version = 3.4.1
+| latest_release_date    = {{Release_date|2010|06|22}}
+| latest_preview_version =
+| latest_preview_date    =
+| operating_system       = [[Cross-platform]]
+| size                   =
+| programming_language   = [[Python (programming language)|Python]]
+| genre                  = Web [[application server]]
+| license                = [[Zope Public License]]
+| website                = {{url|http://www.zope.org/}}
+}}
+
+'''Zope''' is a [[free software|free]] and [[open source software|open-source]], [[object-oriented]] [[World Wide Web|Web]] [[application server]] written in the [[Python (programming language)|Python]] [[programming language]].  Zope stands for &quot;Z Object Publishing Environment&quot;, and was the first system using the now common [[Object (computer science)|object]] publishing methodology for the Web.&lt;ref name=&quot;linuxjournal&quot;&gt;{{cite journal|url=http://www.linuxjournal.com/article/8662|title=At the Forge - Assessing Ruby on Rails|author=Reuven M. Lerner|journal=Linux Journal|accessdate=2010-03-26|quote=Zope also pioneered the idea of object publishing, in which a URL describes the method that should be called on a particular object.}}&lt;/ref&gt;&lt;ref name=&quot;pje&quot;&gt;{{cite web|url=http://discuss.fogcreek.com/joelonsoftware/default.asp?cmd=show&amp;ixPost=94006|date=2003-12-11|title=Comment on &quot;Lisp and Productivity&quot;|author=Philip J Eby|publisher=Joel on Software|accessdate=2010-03-26|quote=  In 1997, Jim Fulton (the CTO at Zope Corp) developed a technique he called &quot;Object Publishing&quot;, and implemented in a library called the Python Object Publisher (aka Bobo).  The object publishing metaphor is found in many Python toolkits today; in other languages it's found only in crippled form, at best.}}&lt;/ref&gt; Zope has been recognized as a [[Python (programming language)|Python]] [[killer app]], an application that helped put Python in the spotlight.&lt;ref name=&quot;programmingpython&quot;&gt;{{cite book|last=Lutz|first=Mark|title=Programming Python|chapter=18: Advanced Internet Topics|chapterurl=http://books.google.com/books?id=5zYVUIl7F0QC&amp;lpg=PA1130&amp;pg=PA1130#v=onepage&amp;q=&amp;f=false|quote=The use of Zope has spread so quickly that many Pythonistas have looked to it as a Python ''Killer Application'' - a system so good that it naturally pushes Python into the development spotlight.|edition=3|year=2006|publisher=[[O'Reilly Media]]|accessdate=2010-03-27}}&lt;/ref&gt;&lt;ref&gt;{{cite news |url=http://www.byte.com/feature/BYT20000201S0004 |title=Zope Is Python's Killer App. |author=Jon Udell |publisher=[[BYTE]] |published=2000-02-07 |accessdate=2011-06-04 |archiveurl=http://web.archive.org/web/20000302033606/http://www.byte.com/feature/BYT20000201S0004 |archivedate=2000-03-02}}&lt;/ref&gt;
+
+Over the last few years, the Zope community has spawned several additional [[Web framework]]s with disparate aims and principles, but sharing philosophy, people, and source code. Zope 2 is still the most widespread of these frameworks, largely thanks to the [[Plone (software)|Plone]] [[content management system]], which runs on Zope 2. [[BlueBream]] (earlier called Zope 3) is less widespread but underlies several large sites, including [[Launchpad (website)|Launchpad]]. [[Grok (Web framework)|Grok]] was started as a more programmer-friendly framework, &quot;Zope 3 for cavemen&quot;, and in 2009 [[BFG (Web framework)|BFG]] gained popularity in the Zope community as a minimalistic framework based on Zope principles.
+
+==History==
+The Zope Corporation was formed in 1995 in [[Fredericksburg, Virginia]] under the name Digital Creations, as a joint venture with InfiNet (a joint newspaper chain venture). The company developed a classified advertisement engine for the Internet, then in 1997 became an independently owned private company. The company's software engineers are led by CTO Jim Fulton. PythonLabs, creators of Python, became part of the company in the year 2000. Python founder [[Guido van Rossum]] left Zope Corp in 2003.&lt;ref&gt;[http://developers.slashdot.org/article.pl?sid=03/07/09/1549236 Guido van Rossum Leaves Zope.com]&lt;/ref&gt;
+
+What is now known as Zope 2 began with the merging of three separate software products â Bobo, Document Template, and BoboPOS â into the Principia application server. At the behest of its largest investor, Opticality Ventures, Principia was re-released as free software under the name Zope in 1998. Bobo, and therefore Zope, was the first Web [[Object (computer science)|object]] publishing solution.&lt;ref name=&quot;linuxjournal&quot;/&gt;&lt;ref name=&quot;pje&quot;/&gt;
+
+In November 2004, Zope 3 was released. Zope 3 is a [[Rewrite (programming)|complete rewrite]] that preserves only the original [[Zope Object Database|ZODB]] object database.  It is directly intended for enterprise Web application development using the newest development paradigms.  Zope 3 is, however, not compatible with Zope 2, so you cannot run Zope 2 applications on Zope 3. It was originally intended to introduce a backwards-compatibility layer so that Zope 2 software would run on Zope 3.  Instead a module known as Five introduced the new Zope 3 paradigms into Zope 2, although full compatibility isn't possible that way either.
+
+The existence of two incompatible Web frameworks called Zope has caused a lot of confusion. In response Zope 3 was in January 2010 renamed &quot;BlueBream&quot;.&lt;ref&gt;{{cite web|url=http://bluebream.zope.org/doc/1.0/introduction.html#overview|title=BlueBream documentation|accessdate=2010-01-17}}&lt;/ref&gt;&lt;ref&gt;{{cite web|url=http://foundation.zope.org/minutes/zfbod-minutes-20100114|title=Zope Foundation Board of Directors meeting 2010-10-14|accessdate=2010-01-17}}&lt;/ref&gt;
+
+==Technical features==
+A Zope [[website]] is usually composed of objects in a [[Zope Object Database]], not files on a [[file system]] as is usual with most other [[Web server]] systems.  This allows users to harness the advantages of object technologies, such as [[Information hiding|encapsulation]]. Zope maps [[Uniform Resource Locator|URL]]s to objects using the containment hierarchy of such objects; methods are considered to be contained in their objects as well. Data can be stored in other databases as well, or on the file system, but ZODB is the most common solution.
+
+Zope provides two mechanisms for [[HTML]] templating: Dynamic Template Markup Language (DTML) and Zope Page Templates (ZPT).  DTML is a tag-based language that allows implementation of simple scripting in the templates. DTML has provisions for variable inclusion, conditions, and loops. However, DTML has major drawbacks: DTML tags interspersed with HTML form non-valid HTML documents, and careless inclusion of logic into templates results in very unreadable code.  ZPT is a technology that fixes these shortcomings.  ZPT templates can be either well-formed [[XML]] documents or HTML documents, in which all special markup is presented as attributes in the TAL ([[Template Attribute Language]]) namespace.  ZPT offers just a very limited set of tools for conditional inclusion and repetition of XML elements, thus the templates are usually quite simple, with most logic implemented in Python code.  One significant advantage of ZPT templates is that they can be edited in most graphical HTML editors.  ZPT also offers direct support for [[Internationalization and localization|internationalization]].
+
+Zope 2 underlies the [[Plone (content management system)|Plone]]  [[content management system]], as well as the [[ERP5]] open source [[enterprise resource planning]] system.
+
+==Zope 3 / BlueBream==
+{{Main|BlueBream}}
+
+Zope 2 has proven itself as a useful framework for Web applications development, but its use revealed some shortcomings.{{citation needed|date=August 2011}}  To name a few, creating Zope 2 products involves copying a lot of boilerplate code â &quot;magic&quot; code â that just has to be there, and the built-in management interface is difficult to modify or replace.  Zope 3 was a rewrite of the software that attempts to address these shortcomings while retaining the advantages of Zope that led to its popularity. BlueBream is based on a [http://wiki.zope.org/zope3/ComponentArchitecture component architecture] that makes it easy to mix software components of various origins written in [[Python (programming language)|Python]]. Although originally intended as a replacement for Zope 2, the Zope Component Architecture has instead been backported to Zope 2 starting with Zope 2.8. Also many Zope platforms such as [[Plone (software)|Plone]] are going through the same type of piece by piece rewriting. The first production release of the new software, Zope X3 3.0.0, was released on November 6, 2004.
+
+==Zope Toolkit==
+
+As a result of the development of Zope 3 / BlueBream, there are now many independent Python packages used and developed as a part of BlueBream, and although many of these are usable outside of BlueBream, many are not. To make it clearer which ones are independently usable, and also improve the re-usability of the packages the Zope Toolkit (ZTK) project was started. Thus the Zope Toolkit works as the base where each of the Zope-world frameworks builds on. Zope 2.12 is the first release of a Web framework that builds on Zope Toolkit, and [[Grok (Web framework)|Grok]] and BlueBream are set to have releases based on the ZTK during 2010.
+
+==Grok==
+In 2006 the [[Grok (Web framework)|Grok]] project was started by a number of Zope 3 developers who wanted to make Zope 3 technology more agile in use and more accessible to newcomers. Grok has since then seen regular releases and its core technology (Martian, grokcore.component) is also finding uptake in other Zope 3 and Zope 2 based projects.
+
+==Zope Page Templates==
+As mentioned previously, Zope Page Templates are themselves XHTML documents, which means they can be viewed and edited using normal HTML editors or XHTML compliant tools (a big advantage compared to other template languages used for Web applications).  Templates can also be checked for XHTML compliance so you can be fairly confident that they will automatically expand into proper XHTML.
+
+However, these page templates are not meant to be rendered as is.  Instead they are marked up with additional elements and attributes in special XML namespaces (see below).  This additional information is used to describe how the page template should ultimately be processed.
+
+Here are some basic examples.  To conditionally include a particular element, like a &lt;tt&gt;div&lt;/tt&gt; element, simply add the &lt;tt&gt;tal:condition&lt;/tt&gt; attribute to the element as follows:
+
+&lt;source lang=&quot;html4strict&quot;&gt;
+&lt;div tal:condition=&quot;...&quot;&gt;
+  ...
+&lt;/div&gt;
+&lt;/source&gt;
+
+To control what appears inside an element, use the &lt;tt&gt;tal:content&lt;/tt&gt; attribute like this:
+
+&lt;source lang=&quot;html4strict&quot;&gt;
+&lt;h1&gt;&lt;span tal:content=&quot;...&quot;/&gt;&lt;/h1&gt;
+...
+&lt;/source&gt;
+
+Finally, to introduce or replace values of attributes use the &lt;tt&gt;tal:attributes&lt;/tt&gt; attribute as follows:
+The power of python could also be utilised to dynamically alter the href at runtime.
+
+&lt;source lang=&quot;html4strict&quot;&gt;
+&lt;a href=&quot;&quot; tal:attributes=&quot;href python:'http://someurl.com/%s'%someobject&quot;&gt;...&lt;/a&gt;
+&lt;/source&gt;
+
+This is a very cursory explanation of Zope Page Templates.  The behavior of Zope Page Templates is almost completely described by a [[Web template#Template languages|template language]], fixed on [http://www.zope.org/Documentation/Books/ZopeBook/2_6Edition/AppendixC.stx TAL, TALES, and METAL specifications]:
+* [[Template Attribute Language]] (TAL),
+* Template Attribute Language Expression Syntax ([[TALES]]),
+* Macro Expansion Template Attribute Language ([[METAL]]).
+
+==See also==
+{{Portal|Free software}}
+
+*[[Content management]]
+*[[Django (Web framework)|Django]]
+*[[web2py]]
+*[[ERP5]]
+*[[Plone (software)|Plone]]
+*[[Web content management]]
+*[[Zope Content Management Framework]]
+*[[Zwiki]]
+
+{{Application frameworks}}
+
+==References==
+&lt;references/&gt;
+
+==External links==
+{{Wikibooks|Zope}}
+* [http://www.zope.org/ Zope website]
+* [http://wiki.zope.org/zope2 Zope 2 wiki]
+* [http://wiki.zope.org/zope3 Zope 3 wiki]
+* [http://zope.com/ Zope Corporation]
+* [http://www.zope.org/Documentation/Books/ZopeBook/ The Zope Book]
+* [http://wiki.bitflux.org/Templates_TAL_Example template (ZPT) Examples]
+* [http://wiki.zope.org more Zope wikis]
+
+&lt;!--Interwikies--&gt;
+
+&lt;!--Categories--&gt;
+[[Category:Free cross-platform software]]
+[[Category:Free software programmed in Python]]
+[[Category:Open source content management systems]]
+[[Category:Python web application frameworks]]
+[[Category:Zope|*]]
+
+[[az:Zope]]
+[[cs:Zope]]
+[[da:Zope]]
+[[de:Zope (Webanwendungsserver)]]
+[[es:Zope]]
+[[eu:Zope]]
+[[fr:Zope]]
+[[it:Zope]]
+[[hu:Zope]]
+[[ja:Zope]]
+[[pl:Zope]]
+[[pt:Zope]]
+[[ru:Zope]]
+[[fi:Zope]]
+[[sv:Zope]]
+[[tr:Zope]]
+[[uk:Zope]]
+[[zh:Zope]]</rev></revisions></page></pages></query></api>

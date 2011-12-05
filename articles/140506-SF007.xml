@@ -1,0 +1,41 @@
+<?xml version="1.0"?><api><query><pages><page pageid="140506" ns="0" title="Linux framebuffer"><revisions><rev xml:space="preserve">{{primarysources|date=March 2011}}
+{{Refimprove|date=March 2010}}
+[[Image:KNOPPIX booting.png|thumb|[[Knoppix]] booting on the framebuffer]]
+The '''Linux framebuffer''' ('''fbdev''') is a graphic hardware-independent [[abstraction layer]] to show [[computer graphics|graphics]] on a [[computer monitor]], typically on the [[computer console|console]]. The word ''[[framebuffer]]'' means a part of [[video memory]] containing a current [[video frame]], and the ''Linux framebuffer'' means âaccess method to the framebuffer under the [[Linux kernel]]â, without relying on system-specific libraries such as [[SVGALib]] or another [[user space]] software.
+
+== Applications ==
+There are three applications of the Linux framebuffer.
+* An implementation of text [[Linux console]] that doesn't use hardware [[text mode]] (useful when that mode is unavailable, or to overcome its restrictions on glyph size, number of code points etc.).  One popular aspect of this is the ability to have console show the [[Tux]] logo at boot up.
+* A possible graphic output method for an [[X server]], independent of [[video adapter]] hardware and its drivers.
+* Graphic programs avoiding the heavy [[computational overhead|overhead]] of the [[X Window System]].
+The last item includes several Linux programs such as [[MPlayer]], and libraries such as [[General Graphics Interface|GGI]], [[Simple DirectMedia Layer|SDL]], [[GTK+]] and [[Qt Extended]] can use the framebuffer directly. This is particularly popular in [[embedded system]]s.
+
+There is now a library [[DirectFB]] which provides a framework for hardware acceleration of the Linux framebuffer.
+
+There is also an in-kernel windowing system called [[FramebufferUI]] (fbui) that provides a basic 2D windowing experience with very little memory use.
+
+== History ==
+Linux has generic framebuffer support since 2.1.107 kernel.&lt;ref&gt;[http://tldp.org/HOWTO/Framebuffer-HOWTO.html Framebuffer HOWTO]&lt;/ref&gt;
+It was originally implemented to allow the kernel to emulate a text console on systems such as the [[Apple Macintosh]] that do not have a [[Text mode|text-mode display]], and was later expanded to Linux's originally-supported [[IBM PC compatible]] platform.
+
+== References ==
+&lt;references /&gt;
+{{Portal|Free software}}
+
+== External links ==
+*{{sourceforge|linux-fbdev}}
+*[http://www.xfree86.org/4.3.0/fbdev.4.html XFree86 doc]
+* [http://home.comcast.net/~fbui FramebufferUI in-kernel windowing system]
+
+{{Linux}}
+
+{{DEFAULTSORT:Linux Framebuffer}}
+[[Category:Free software programmed in C]]
+[[Category:Free system software]]
+[[Category:Linux kernel]]
+
+[[es:Fbdev]]
+[[fr:Framebuffer Linux]]
+[[pl:Linuksowy bufor ramki]]
+[[pt:Framebuffer (Linux)]]
+[[ru:Linux framebuffer]]</rev></revisions></page></pages></query></api>

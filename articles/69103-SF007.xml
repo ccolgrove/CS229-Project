@@ -1,0 +1,186 @@
+<?xml version="1.0"?><api><query><pages><page pageid="69103" ns="0" title="Xfce"><revisions><rev xml:space="preserve">{{Infobox software
+| name                   = Xfce
+| logo                   = [[Image:Xfce logo.svg|150px]]
+| screenshot             = [[Image:Xfce-4.4.png|300px]]
+| caption                = A typical Xfce 4.4 desktop. Various Xfwm effects are visible ([[drop shadow]]s behind windows, alpha-blended windows and panel).
+| developer              = Multiple developers, enumerated [http://www.xfce.org/about/credits here]
+| latest release version = 4.8.0
+| latest release date    = {{release date|2011|01|16}}
+| programming language   = [[C (programming language)|C]] ([[GTK+]] 2)
+| platform               = [[Unix-like]]
+| genre                  = [[Desktop environment]]
+| status                 = Active
+| license                = [[GNU General Public License]], [[GNU Lesser General Public License]] and [[BSD License]]
+| website                = http://www.xfce.org
+}}
+
+'''Xfce''' (pronounced as four individual letters)&lt;ref&gt;{{cite web |title=Xfce FAQ |work= |url=http://wiki.xfce.org/faq |accessdate=2007-01-06}}&lt;/ref&gt; is a [[free software]] [[desktop environment]] for [[Unix]] and other [[Unix-like]] platforms, such as [[Linux]], [[Solaris (operating system)|Solaris]], and [[BSD]] &amp;ndash; though recent compatibility issues have arisen with regard to BSD Unix platforms.&lt;ref&gt;{{cite web |title=Xfce 4.8 on BSD flavors |work= |url=http://gezeiten.org/post/2011/01/Xfce-4.8-on-BSD-flavors}}&lt;/ref&gt; It aims to be fast and lightweight, while still being visually appealing and easy to use.
+
+The current version, 4.8, is meant to be [[Modularity (programming)|modular]] and [[reusability|reusable]] {{Clarify|date=August 2011}} It consists of separately packaged components that together provide the full functionality of the desktop environment, but which can be selected in subsets to create the user's preferred personal working environment. Xfce is mainly used for its ability to run a modern desktop environment on relatively modest hardware.
+
+It is based on the [[GTK+]] 2 toolkit (the same as [[GNOME]]). It uses the Xfwm [[window manager]], described below. Its configuration is entirely mouse-driven, and the configuration files are hidden from the casual user.
+
+Xfce is included as one of the [[graphical user interface]]s on the [[Pandora (console)|Pandora]] handheld gaming system.&lt;ref&gt;{{cite web | url=http://en.wikipedia.org/wiki/File:PandoraFront.JPG | title=XFCE icons are visible in this photo of a finished Pandora}}&lt;/ref&gt;
+
+It is possible to run Xfce with 40MB of memory using [[Alpine Linux]].&lt;ref&gt;https://kmandla.wordpress.com/2010/12/02/also-not-a-joke-xfce-on-39mb/&lt;/ref&gt; On [[Ubuntu Linux|Ubuntu]], tests show that Xfce 4.6 has lower memory usage than [[GNOME]] 2.29 and [[KDE Plasma Desktop]] 4.4, but higher than [[LXDE]] 0.5.&lt;ref&gt;{{cite web|last=Larabel|first=Michael|title=Power &amp; Memory Usage Of GNOME, KDE, LXDE &amp; Xfce|url=http://www.phoronix.com/scan.php?page=article&amp;item=linux_desktop_vitals&amp;num=1|publisher=Phoronix|accessdate=30 July 2011|date=2010-03-08}}&lt;/ref&gt;
+
+== History ==
+Olivier Fourdan started the project in 1996.&lt;ref name=&quot;Then&quot;&gt;{{cite web|url=http://www.slashgear.com/xfce-creator-talks-linux-moblin-netbooks-and-open-source-0633329/|title=Xfce creator talks Linux, Moblin, netbooks and open-source|last=Then|first=Ewdison|date=6 February 2009|publisher=[[SlashGear]]|accessdate=5 February 2011}}&lt;/ref&gt; The name &quot;Xfce&quot; originally stood for &quot;[[XForms (toolkit)|XForms]] Common Environment&quot;, but since that time Xfce has been rewritten twice and no longer uses the XForms toolkit. The name survived, but it is no longer capitalized as &quot;XFCE&quot;, but rather as &quot;Xfce&quot;. The developers' current stance is that the [[initialism]] no longer stands for anything specific. It has been nicknamed &quot;Cholesterol Free Desktop Environment&quot;,&lt;ref&gt;{{cite web|url=http://en.opensuse.org/Xfce|title=Xfce - openSUSE}}&lt;/ref&gt;&lt;ref&gt;{{cite web|url=http://linux.about.com/cs/linux101/g/xfce.htm|title=xce - What is xfce}}&lt;/ref&gt; even in some of its man pages,&lt;ref&gt;{{cite web|url=http://www.digipedia.pl/man/doc/view/xfce.1/|title=man - xfce (1) - The Cholesterol Free Desktop Environment}}&lt;/ref&gt; and this rendering is quite popular as the unofficial name in the community (about 17,400 Google hits as of November 2011 [http://www.google.com/search?q=xfce+%22cholesterol+free+desktop+environment%22]).
+
+=== First versions ===
+Xfce began as a simple project created with XForms, meant to be a free [[Linux]] clone of [[Common Desktop Environment|CDE]]. Fourdan released the program, a simple toolbar, to [[ibiblio]] (then &quot;SunSITE&quot;).&lt;ref name=&quot;gazette&quot;&gt;
+{{cite web
+  | last  = Jacobowitz
+  | first = Norman
+  | title = Interview with Olivier Fourdan
+  | publisher = [[Linux Gazette]]
+  | date = 1999-07-01
+  | url = http://linuxgazette.net/issue43/jacobowitz.xfce.html
+  | accessdate = 2007-01-31 }}
+&lt;/ref&gt;
+
+=== Version 2 ===
+Fourdan continued developing the project, and in 1998, Xfce 2 was released with the first version of Xfce's window manager, Xfwm. He requested to have the project included in [[Red Hat Linux]], but was refused because the project was based on XForms. Red Hat only accepted software that was open source and released under either a GPL compatible or BSD compatible license, but, at the time, XForms was closed source and free only for personal use.&lt;ref name=&quot;gazette&quot;/&gt; For the same reason, Xfce was not in Debian before version 3. Xfce 2 was only distributed in Debian's contrib component.&lt;ref&gt;Debian xfce source package 3.4.0.20000513-1 changelog&lt;/ref&gt;
+
+=== Version 3 ===
+In March 1999 Fourdan began a complete rewrite of the project based on [[GTK+]], a non-proprietary toolkit whose popularity was increasing. The result was Xfce 3.0, which was licensed under the [[GNU General Public License|GNU GPL]]. Along with being based completely on [[free software]], the project gained GTK+'s [[drag-and-drop]] support, native language support, and improved configurability. Xfce was uploaded to [[SourceForge.net]] in February 2001, starting with version 3.8.1.&lt;ref&gt;{{cite web |title=SourceForge.net Project Page |work= |url=http://sourceforge.net/projects/xfce/ |accessdate=2007-01-31}}&lt;/ref&gt;
+
+=== Version 4 ===
+In version 4.0.0, Xfce was upgraded to use the [[GTK+]] 2 libraries. Changes in 4.2.0 included a [[Compositing window manager|compositing manager]] for Xfwm which added built-in support for transparency and drop shadows, as well as a new default [[Scalable Vector Graphics|SVG]] icon set.&lt;ref&gt;
+{{cite web
+  | title = Xfce 4.2.0 Changelog
+  | url = http://www.xfce.org/documentation/changelogs/4.2.0
+  | accessdate = 2007-01-31 }}
+&lt;/ref&gt; In January 2007, Xfce 4.4.0 was released. This included the [[Thunar]] file manager, a replacement for Xffm. Support for desktop icons was added. Also, various improvements were made to the panel to prevent buggy plugins from crashing the whole panel.&lt;ref&gt;
+{{cite web
+  | last  = Meurer
+  | first = Benedikt
+  | title = A Visual Tour of Xfce 4.4.0
+  | date = 2007-01-21
+  | url = http://foo-projects.org/~benny/articles/xfce44-visual-tour.html
+  | accessdate = 2007-01-31 }}
+&lt;/ref&gt; In February 2009 Xfce 4.6.0 was released. This version had a new configuration backend, a new settings manager and a new sound mixer, as well as several significant improvements to the session manager and the rest of Xfce's core components.&lt;ref&gt;
+{{cite web
+  | author = Xfce Development Team
+  | title = Xfce 4.6.0 Changelog
+  | url = http://www.xfce.org/download/changelogs/4.6.0/
+  | accessdate = 2011-01-16 }}&lt;/ref&gt;
+
+In January 2011,  Xfce 4.8.0 was released. This version included changes such as the replacement of  ThunarVFS and [[HAL (software)|HAL]] with [[GIO (GNOME)|GIO]], [[udev]], ConsoleKit and [[PolicyKit]], and new utilities for browsing remote [[network share]]s using several protocols including [[Simple File Transfer Protocol|SFTP]], [[Server Message Block|SMB]], and [[File Transfer Protocol|FTP]]. Window clutter was reduced by merging all file progress [[dialog box]]es into a single dialog. The panel application was also rewritten for better positioning, transparency, item and launcher management. 4.8 also introduced a new menu plugin to view directories. The 4.8 plugin framework remains compatible with 4.6 plugins. The display configuration dialog in 4.8 supports [[RandR]] 1.2, detecting screens automatically and allowing users to pick their preferred [[display resolution]], [[refresh rate]] and [[display rotation]]. Screens can be configured to either work in [[Multi-monitor#Clone mode|clone mode]] or being placed next to each other. Keyboard selection has become easier and more user-friendly. Also, the manual settings editor has been updated to be more functional.&lt;ref&gt;
+{{cite web
+  | author = Xfce Development Team
+  | title = Xfce 4.6.0 Changelog
+  | url = http://www.xfce.org/download/changelogs/4.8.0/
+  | accessdate = 2011-01-16 }}&lt;/ref&gt;
+
+The 4.8 development cycle was the first to use the new release strategy formed after the &quot;Xfce Release and Development Model&quot; developed at the [[Ubuntu (operating system)|Ubuntu]] Desktop Summit in May 2009. A new web application was employed to make release management easier, and a dedicated [[Transifex]] server was set up for Xfce translators.&lt;ref&gt;http://blog.xfce.org/category/transifex/&lt;/ref&gt; The project's server and mirroring infrastructure was also upgraded, partly to cope with anticipated demand following the release announcement for 4.8.
+
+== Applications ==
+
+Xfce provides a development framework for applications. Other than Xfce itself, there are third-party programs which use the Xfce [[Library (computer science)|libraries]], most notably the Mousepad text editor, Orage calendar and  [[Terminal (Xfce)|Terminal]]. One of the services provided to applications by the framework is a red banner across the top of the window when the application is running with [[Principle of least privilege|root privileges]] warning the user that they could damage system files.
+
+Other Xfce components include:
+* Xfmedia, a [[xine]]-based media player for Xfce; unmaintained since November 2006 (version 0.9.2)
+* Xfprint, a print manager
+* Xfburn, a CD/DVD burner
+
+=== Mousepad ===
+[[Image:Screenshot of Mousepad.png|thumb|right|210px|Screenshot of Mousepad]]
+Mousepad is based on the Leafpad text editor, is the Xfce default text editor and is developed by Erik Harrison and Nick Schermer. It was originally developed to provide printing support, which Leafpad lacked at that time.&lt;ref&gt;{{cite web|url=http://www.xfce.org/projects/mousepad/|title=Xfce - Mousepad|publisher=Xfce Project|accessdate=2009-02-22}}&lt;/ref&gt;  There have been no new releases of Mousepad for some time.
+
+=== Orage ===
+Starting with version 4.4, Xfcalendar was renamed to Orage and several features were added. Orage has alarms and uses the [[iCalendar]] format, making it compatible with many other calendar applications. It also includes a panel clock plugin and an international clock application capable of simultaneously showing clocks from several different time zones.
+
+=== Parole ===
+Parole is a media player that is based on the [[GStreamer]] framework. It is developed by Ali Abdallah and is part of the Xfce Goodies.&lt;ref&gt;{{cite web|title = Juste une parole (Xfce Goodies)|url = http://goodies.xfce.org/projects/applications/parole}}&lt;/ref&gt; It originally was only playlist based, but now includes an option to replace the entire playlist when opening a file for playing.&lt;ref&gt;{{cite web|title = parole - GStreamer based media player|url = http://git.xfce.org/apps/parole/commit/?id=61df0aef193f67047bf130e4adb13bff32eab4d9}}&lt;/ref&gt;
+
+=== Thunar ===
+{{Main|Thunar}}
+Thunar is the default file manager for Xfce, replacing Xffm. It resembles GNOME's [[Nautilus (file manager)|Nautilus]] and is designed for speed and a low memory footprint&lt;ref&gt;[http://thunar.xfce.org/pwiki/articles/memory_usage ThunarWiki: Thunar in comparison to Nautilus, ROX, Konqueror and Xffm]&lt;/ref&gt; as well as being highly customizable through plugins. Xfce also has a lightweight archive manager called Xarchiver, but this is not part of the core Xfce 4.4.0.&lt;ref&gt;
+{{cite web
+ | title = 4.4.0 release status so far
+ | url = http://foo-projects.org/pipermail/xfce4-dev/2007-January/022198.html }}
+&lt;/ref&gt;
+More recently, ''Squeeze'' has been started as an archive manager designed to integrate better into the Xfce desktop, though no further updates have been released since 24 February 2008.&lt;ref&gt;
+{{cite web
+ | title = Squeeze - news
+ | url = http://squeeze.xfce.org/news }}
+&lt;/ref&gt;
+
+=== Xfwm ===
+Starting with version 4.2, Xfwm integrates its own ''[[Compositing window manager|compositing manager]]''.
+
+== See also ==
+{{Portal|Free software}}
+* [[LXDE]]
+* [[GNOME]]
+* [[KDE]]
+* [[Comparison of X Window System desktop environments]]
+* [[Comparison of X window managers]]
+
+== References ==
+{{Reflist|2}}
+
+== External links ==
+{{Commons category|Xfce}}
+*{{Official website|http://www.xfce.org/}}
+*[http://en.gentoo-wiki.com/wiki/Xfce Xfce on Gentoo Wiki]
+
+{{X desktop environments and window managers}}
+{{Xfce}}
+{{Window Managers}}
+{{FLOSS}}
+
+&lt;!-- Interlang --&gt;
+
+&lt;!-- Categories --&gt;
+{{Use dmy dates|date=August 2011}}
+[[Category:Free desktop environments]]
+[[Category:X Window System]]
+[[Category:MS Windows-like desktops]]
+[[Category:Compositing window managers]]
+
+[[ar:Ø¥ÙØ³ Ø¥Ù Ø³Ù Ø¥Ù]]
+[[ast:Xfce]]
+[[bg:Xfce]]
+[[ca:Xfce]]
+[[cs:Xfce]]
+[[da:Xfce]]
+[[de:Xfce]]
+[[et:Xfce]]
+[[el:XFCE]]
+[[es:Xfce]]
+[[eo:Xfce]]
+[[eu:Xfce]]
+[[fa:Ø§Ú©Ø³âØ§ÙâØ³ÛâØ§Û]]
+[[fr:Xfce]]
+[[gl:Xfce]]
+[[ko:Xfce]]
+[[hr:Xfce]]
+[[id:Xfce]]
+[[is:Xfce]]
+[[it:Xfce]]
+[[he:Xfce]]
+[[ku:Xfce]]
+[[hu:Xfce]]
+[[mk:Xfce]]
+[[ms:Xfce]]
+[[nl:Xfce]]
+[[ja:Xfce]]
+[[no:Xfce]]
+[[nn:Xfce]]
+[[pl:Xfce]]
+[[pt:Xfce]]
+[[ro:Xfce]]
+[[ru:Xfce]]
+[[simple:Xfce]]
+[[sk:Xfce]]
+[[sl:Xfce]]
+[[fi:Xfce]]
+[[sv:Xfce]]
+[[te:Xfce]]
+[[th:Xfce]]
+[[tr:Xfce]]
+[[uk:Xfce]]
+[[ur:Xfce]]
+[[zh:Xfce]]</rev></revisions></page></pages></query></api>

@@ -1,0 +1,91 @@
+<?xml version="1.0"?><api><query><pages><page pageid="438819" ns="0" title="OpenSSL"><revisions><rev xml:space="preserve">{{copyedit|date=March 2011}}
+{{Infobox software
+| name                   = OpenSSL
+| logo                   =
+| screenshot             =
+| caption                =
+| developer              = The OpenSSL Project
+| frequently_updated     = yes
+| operating_system       = Multi-platform
+| programming_language   = [[C (programming language)|C]]
+| genre                  = [[Library (computer science)|Security library]]
+| license                = [[Apache License]] 1.0 and 4-clause [[BSD License]] like unique
+| website                = http://www.openssl.org/
+}}
+'''OpenSSL''' is an [[open source]] implementation of the [[Transport Layer Security|SSL and TLS]] protocols.  The core [[library (computer science)|library]] (written in the [[C (programming language)|C programming language]]) implements the basic [[cryptography|cryptographic]] functions and provides various utility functions.  Wrappers allowing the use of the OpenSSL library in a variety of computer languages are available.
+
+Versions are available for most [[Unix-like]] operating systems (including [[Solaris (operating system)|Solaris]], [[Linux]], [[Mac OS X]] and the four open source [[BSD]] operating systems), [[OpenVMS]] and [[Microsoft Windows]]. IBM provides a port for the [[IBM i|System i]] (OS/400). OpenSSL is based on '''SSLeay''' by Eric A. Young and Tim Hudson, development of which unofficially ended around December 1998, when Young and Hudson both started to work for [[RSA Security]].
+
+== Major version releases ==
+* OpenSSL 1.0.0 was released on March 29, 2010.
+* OpenSSL 0.9.8 was released on July 5, 2005.
+* OpenSSL 0.9.7 was released on December 31, 2002.
+* OpenSSL 0.9.6 was released on September 25, 2000.
+* OpenSSL 0.9.5 was released on February 28, 2000.
+* OpenSSL 0.9.4 was released on August 9, 1999. 	
+* OpenSSL 0.9.3 was released on May 25, 1999.
+* OpenSSL 0.9.2b was released on March 22, 1999.
+* OpenSSL 0.9.1c was the first release, on December 23, 1998.
+
+==Algorithms==
+OpenSSL supports a number of different cryptographic algorithms:
+; [[Cipher]]s:
+: [[Advanced Encryption Standard|AES]], [[Blowfish (cipher)|Blowfish]], [[Camellia (cipher)|Camellia]], [[SEED]], [[CAST-128]], [[Data Encryption Standard|DES]], [[International Data Encryption Algorithm|IDEA]], [[RC2]], [[RC4]], [[RC5]], [[Triple DES]], [[GOST (block cipher)|GOST 28147-89]]&lt;ref name=&quot;gost&quot;&gt;{{cite web |url=http://cvs.openssl.org/fileview?f=openssl/engines/ccgost/README.gost |title=GOST engine OpenSSL 1.0.0 README |publisher=cvs.openssl.org }}&lt;/ref&gt;
+; [[Cryptographic hash function]]s:
+: [[MD5]], [[MD2 (cryptography)|MD2]], [[SHA-1]], [[SHA-2]], [[RIPEMD-160]], [[MDC-2]], [[GOST (hash function)|GOST R 34.11-94]]&lt;ref name=&quot;gost&quot; /&gt;
+; [[Public-key cryptography]]:
+: [[RSA (algorithm)|RSA]], [[Digital Signature Algorithm|DSA]], [[DiffieâHellman key exchange]],  [[Elliptic curve cryptography|Elliptic curve]], [[GOST R 34.10-2001]]&lt;ref name=&quot;gost&quot; /&gt;
+
+== FIPS 140-2 compliance ==
+OpenSSL is one of the few [[open source]] programs to be involved with validation under the [[FIPS 140-2]] computer security standard by the [[National Institute of Standards and Technology]]'s (NIST) [[Cryptographic Module Validation Program]] (CMVP). (OpenSSL itself is not validated, but a component called the OpenSSL FIPS Object Module, based on OpenSSL, was created to provide many of the same capabilities).&lt;ref&gt;{{cite web |url=http://www.openssl.org/docs/fips/fipsnotes.html |title=Important Notes about OpenSSL and FIPS 140-2 |publisher=openssl.org}}&lt;/ref&gt;
+
+A certificate was first awarded in January 2006 but revoked in July 2006 &quot;when questions were raised about the validated moduleâs interaction with outside software.&quot; The certification was reinstated in February 2007.&lt;ref&gt;{{cite web |url=http://www.gcn.com/online/vol1_no1/43142-1.html |title=NIST recertifies open source encryption module |publisher=gcn.com}}&lt;/ref&gt;
+
+== Licensing ==
+OpenSSL is &quot;dual licensed&quot; under the ''OpenSSL License'' and the ''SSLeay License''.&lt;ref&gt;{{cite web |url=http://www.openssl.org/source/license.html |title=OpenSSL: Source, License |publisher=openssl.org}}&lt;/ref&gt; OpenSSL License is [[Apache License]] 1.0 and SSLeay License is 4-clause [[BSD License]]. The common usage of the term [[dual-license]] is that the user may pick which license they wish to use. However, OpenSSL documentation uses the term ''dual-license'' to mean that both licenses apply.
+
+As the OpenSSL License is [[Apache License]] 1.0, but not Apache License 2.0, it requires the phrase ''This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit. (http://www.openssl.org/)'' to appear in advertising material and any redistributions (Sections 3 and 6 of the OpenSSL License). Due to this restriction, OpenSSL License and Apache License are incompatible with the GPL.&lt;ref&gt;{{cite web |url=http://www.fsf.org/licensing/licenses |title=Licenses - Free Software Foundation |publisher=fsf.org}}&lt;/ref&gt;
+Some GPL developers have added an ''OpenSSL exception'' to their licenses specifically allowing OpenSSL to be used with their system. GNU [[Wget]] and [[climm]] both use such exceptions.&lt;ref&gt;{{cite web |url=http://users.ugent.be/~bpuype/wget |title=WGET 1.10.2 for Windows (win32) |publisher=users.ugent.be}}&lt;/ref&gt;&lt;ref&gt;{{cite web |url=http://www.climm.org/download.shtml.en |title=Releases of source and binaries |publisher=climm.org |accessdate=30 November 2010}}&lt;/ref&gt; Other packages use the LGPL licensed [[GnuTLS]] which performs the same task.
+
+== See also ==
+{{Portal box|Free software|Cryptography}}
+* [[CyaSSL]]
+* [[GnuTLS]]
+* [[Network Security Services]]
+* [[PolarSSL]]
+* [[POSSE project]]
+* [[Comparison of TLS Implementations]]
+* [[Transport Layer Security]]
+
+==References==
+{{Reflist}}
+
+==External links==
+* [http://www.openssl.org/ OpenSSL homepage]
+* [http://www.gnome.org/~markmc/openssl-and-the-gpl.html The OpenSSL License and the GPL] by [[Mark McLoughlin]]
+* [http://www.opensc-project.org/opensc/wiki/pkcs11-helper Use OpenSSL easily with PKCS#11 enabled smartcards]
+* [http://www.slproweb.com/products/Win32OpenSSL.html Win32 OpenSSL]
+* [http://code.google.com/p/openssl-for-windows/ OpenSSL for windows 32-bit and x64 version]
+* [http://www.ibm.com/developerworks/linux/library/l-openssl.html OpenSSL programming tutorial]
+* [http://www.rtfm.com/openssl-examples/ OpenSSL examples by Eric Rescorla]
+* [https://pkiwidgets.quovadisglobal.com/scriptgen/openssl.aspx Online tool to create custom command line to generate a Certificate Signing Request (CSR) in OpenSSL]
+
+{{DEFAULTSORT:Openssl}}
+[[Category:Cryptographic software]]
+[[Category:C libraries]]
+[[Category:Free security software]]
+
+[[ar:Ø£ÙØ¨Ù Ø£Ø³ Ø£ÙØ³ Ø£Ù]]
+[[cs:OpenSSL]]
+[[de:OpenSSL]]
+[[es:OpenSSL]]
+[[eu:OpenSSL]]
+[[fr:OpenSSL]]
+[[ko:OpenSSL]]
+[[it:OpenSSL]]
+[[ja:OpenSSL]]
+[[pl:OpenSSL]]
+[[pt:OpenSSL]]
+[[ru:OpenSSL]]
+[[uk:OpenSSL]]
+[[zh:OpenSSL]]</rev></revisions></page></pages></query></api>

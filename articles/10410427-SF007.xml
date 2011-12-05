@@ -1,0 +1,65 @@
+<?xml version="1.0"?><api><query><pages><page pageid="10410427" ns="0" title="Partimage"><revisions><rev xml:space="preserve">{{Infobox Software
+| name                   = Partimage
+| logo                   =
+| screenshot             = [[Image:Partimage.png|300px]]
+| caption                = Partimage 0.6.7 on Ubuntu
+| collapsible            =
+| author                 = Francois Dupoux and Franck Ladurelle
+| developer              =
+| released               =
+| released               = {{Start date|2001|09|11}}
+| discontinued           =
+| latest release version = 0.6.9
+| latest release date    = {{Start date and age|2010|07|25}}
+| latest preview version = 
+| latest preview date    = {{Start date and age|2009|09|29}}
+| frequently updated     =
+| programming language   =
+| operating system       = [[Linux]], [[Cross-platform]] ([[Live CD]])
+| platform               =
+| size                   =
+| language               =
+| status                 =
+| genre                  =
+| license                = [[GNU General Public License]]
+| website                = http://www.partimage.org/
+}}
+'''Partimage''' is a [[disk cloning]] utility for [[Linux]]/[[UNIX]] environments. Partimage can save [[disk partitioning|partitions]] in many formats to a [[disk image]]. Utilities such as Partimage are useful in a number of situations which are commonly encountered by network administrators as well as advanced computer users who maintain their own systems.
+
+== Common Uses ==
+Some common uses for Partimage are as follows.&lt;ref&gt;[http://www.debianadmin.com/backup-and-restore-linux-partitions-using-partimage.html Backup and Restore Linux Partitions Using Partimage - Debian Admin&lt;!-- Bot generated title --&gt;]&lt;/ref&gt;
+* [[Backup]] of individual disk partitions. [[Volume (computing)|volume]] backups are very useful for recovery in the case of a disk failure or data corruption.
+* Large-scale operating system deployment. Organizations with multiple, similar computer systems may use Partimage or similar utilities to ease the process of [[operating system]] and [[software]] [[provisioning]].
+
+== Features ==
+For [[Microsoft Windows|Windows]] users, Partimage includes experimental support for [[NTFS]]. Partimage supports most common Linux [[file systems]], and can be found in many [[Linux distribution]]s, including [[Debian]]&lt;ref&gt;[http://packages.debian.org/unstable/admin/partimage Debian Partimage]&lt;/ref&gt; and the [[Live Distro]]s PING,&lt;ref&gt;[http://ping.windowsdream.com/ping/download.html PING Partimage]&lt;/ref&gt; [[Knoppix]]&lt;ref&gt;[http://www.kernel.org/pub/dist/knoppix/packages.txt Knoppix Partimage]&lt;/ref&gt; and [[SystemRescueCD]].&lt;ref&gt;[http://www.sysresccd.org/Detailed-packages-list SystemRescueCD Partimage]&lt;/ref&gt;
+
+Other notable features include [[data compression|compression]] of disk image files, support for backup/restore from a network file server and data [[encryption]].
+
+Partimage uses [[Newt (programming library)|Newt]] for its GUI.
+
+Partimage is limited to cloning partitions that have supported filesystem types. This includes [[Ext2]], [[Ext3]], [[Reiserfs]], [[Fat16]], [[Fat32]], [[HPFS]], [[JFS (file system)|JFS]], [[Xfs]], [[Unix file system|UFS]], [[Hierarchical File System|HFS]] and [[Ntfs]]. Partimage does NOT support [[Ext4]] which is the default on new Ubuntu installations.
+
+== See also ==
+{{Portal|Free software}}
+* [[List of disk cloning software]]
+
+==References==
+{{Reflist}}
+
+==External links==
+* [http://www.partimage.org/ Official website]
+* [https://lists.sourceforge.net/lists/listinfo/partimage-users Partimage-users mailing list]
+* [http://www.kleobackup.net Kleo-Graphical user interface for Partimage]
+
+[[Category:Disk images]]
+[[Category:Free backup software]]
+[[Category:Disk cloning]]
+[[Category:Free system software]]
+
+
+{{Storage-software-stub}}
+
+[[af:Partimage]]
+[[de:Partimage]]
+[[pt:Partimage]]</rev></revisions></page></pages></query></api>

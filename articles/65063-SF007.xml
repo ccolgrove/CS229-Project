@@ -1,0 +1,92 @@
+<?xml version="1.0"?><api><query><pages><page pageid="65063" ns="0" title="Portable Executable"><revisions><rev xml:space="preserve">{{distinguish|Portable application}}
+{{refimprove|date=December 2010}}
+{{Infobox file format
+| name = Portable Executable
+| icon = 
+| extension = &lt;tt&gt;.cpl&lt;/tt&gt;, &lt;tt&gt;.exe&lt;/tt&gt;, &lt;tt&gt;.dll&lt;/tt&gt;, &lt;tt&gt;.ocx&lt;/tt&gt;, &lt;tt&gt;.sys&lt;/tt&gt;, &lt;tt&gt;.scr&lt;/tt&gt;, &lt;tt&gt;.drv&lt;/tt&gt;
+| mime = 
+| owner = [[Microsoft]]
+| genre = [[Binary file|Binary]], [[executable]], [[object code|object]], [[shared libraries]]
+| extendedfrom = [[DOS MZ executable]]&lt;br/&gt;[[COFF]]
+| containerfor = 
+| containedby = 
+|= 
+}}
+The '''Portable Executable''' (PE) format is a [[file format]] for [[executable]]s, [[object file|object code]] and [[Dynamic-link library|DLL]]s, used in 32-bit and 64-bit versions of [[Microsoft Windows|Windows]] [[operating system]]s. The term &quot;portable&quot; refers to the format's versatility in numerous environments of operating system software architecture. The PE format is a data structure that encapsulates the information necessary for the Windows OS loader to manage the wrapped executable code. This includes [[Library (computer science)#Dynamic linking|dynamic library references for linking]], [[Application programming interface|API]] export and import tables, resource management data and [[thread-local storage]] (TLS) data. On [[Windows NT|NT]] operating systems, the PE format is used for [[EXE]], [[Dynamic-link library|DLL]], [[SYS]] (device driver), and other file types. The [[Extensible Firmware Interface|Extensible Firmware Interface (EFI)]] specification states that PE is the standard executable format in EFI environments.
+
+PE is a modified version of the Unix [[COFF]] file format. '''PE/COFF''' is an alternative term in Windows development.
+
+On Windows NT operating systems, PE currently supports the [[IA-32]], [[IA-64]], and [[x86-64]] (AMD64/Intel64) [[instruction set architecture]]s (ISAs). Prior to [[Windows 2000]], Windows NT (and thus PE) supported the [[MIPS architecture|MIPS]], [[DEC Alpha|Alpha]], and [[PowerPC]] ISAs. Because PE is used on [[Windows CE]], it continues to support several variants of the MIPS, [[ARM architecture|ARM]] (including [[ARM architecture#Thumb|Thumb]]), and [[SuperH]] ISAs.
+
+The main competitors to PE are [[Executable and Linkable Format|ELF]] (used in [[Linux]] and most other versions of [[Unix]]) and [[Mach-O]] (used in [[Mac OS X]]).
+
+==Brief history==
+&lt;!-- Unsourced image removed: [[Image:PE32-Format(2).gif|frame|Sample showing a COFF+Optional Header of a PE32 file (dumped with LordPE)]] --&gt;
+Microsoft migrated to the PE format with the introduction of the Windows NT 3.1 operating system. All later versions of Windows, including Windows 95/98/ME, support the file structure. The format has retained limited legacy support to bridge the gap between DOS-based and NT systems. For example, PE/COFF headers still include an MS-DOS executable program, which is by default a [[Method stub|stub]] that displays the simple message &quot;This program cannot be run in DOS mode&quot; (or similar). PE also continues to serve the changing Windows platform. Some extensions include the .NET PE format (see below), a 64-bit version called PE32+ (sometimes PE+), and a specification for Windows CE.
+
+==Technical details==
+===Layout===
+A PE file consists of a number of headers and sections that tell the [[dynamic linker]] how to map the file into memory. An executable image consists of several different regions, each of which require different memory protection; so the start of each section must be aligned to a page boundary. For instance, typically the ''.text'' section (which holds program code) is mapped as execute/readonly, and the ''.data'' section (holding global variables) is mapped as no-execute/readwrite. However, to avoid wasting space, the different sections are not page aligned on disk. Part of the job of the dynamic linker is to map each section to memory  individually and assign the correct permissions to the resulting regions, according to the instructions found in the headers.
+
+===Import Table===
+One section of note is the ''import address table'' (IAT), which is used as a lookup table when the application is calling a function in a different module. It can be in form of both [[Dynamic-link_library#Symbol_resolution_and_binding|import by ordinal and import by name]]. Because a compiled program cannot know the memory location of the libraries it depends upon, an indirect jump is required whenever an API call is made.  As the dynamic linker loads modules and joins them together, it writes actual addresses into the IAT slots, so that they point to the memory locations of the corresponding library functions.  Though this adds an extra jump over the cost of an intra-module call resulting in a performance penalty, it provides a key benefit: The number of memory pages that need to be copy-on-write changed by the loader is minimized, saving memory and disk I/O time. If the compiler knows ahead of time that a call will be inter-module (via a dllimport attribute) it can produce more optimized code that simply results in an indirect call [[opcode]].
+
+===Relocations===
+PE files do not contain [[position-independent code]]. Instead they are compiled to a preferred ''base address'', and all addresses emitted by the compiler/linker are fixed ahead of time. If a PE file cannot be loaded at its preferred address (because it's already taken by something else), the operating system will ''rebase'' it. This involves recalculating every absolute address and modifying the code to use the new values. The loader does this by comparing the preferred and actual load addresses, and calculating a [[Delta encoding|delta]] value. This is then added to the preferred address to come up with the new address of the memory location.  Base relocations are stored in a list and added, as needed, to an existing memory location. The resulting code is now private to the process and no longer shareable, so many of the memory saving benefits of DLLs are lost in this scenario. It also slows down loading of the module significantly. For this reason rebasing is to be avoided wherever possible, and the DLLs shipped by Microsoft have base addresses pre-computed so as not to overlap. In the no rebase case PE therefore has the advantage of very efficient code, but in the presence of rebasing the memory usage hit can be expensive. This contrasts with [[Executable and Linkable Format|ELF]] which uses fully position independent code and a global offset table, which trades off execution time against memory usage in favor of the latter.
+
+==.NET, metadata, and the PE format==
+Microsoft's [[.NET Framework]] has extended the PE format with features which support the [[Common Language Runtime]] (CLR). Among the additions are a CLR Header and CLR Data section. Upon loading a binary, the OS loader yields execution to the CLR via a reference in the PE/COFF IMPORT table. The CLR then loads the CLR Header and Data sections.
+
+The CLR Data section contains two important segments: Metadata and Intermediate Language (IL) code:
+*Metadata contains information relevant to the assembly, including the assembly manifest. A manifest describes the assembly in detail including unique identification (via a hash, version number, etc.), data on exported components, extensive type information (supported by the Common Type System (CTS)), external references, and a list of files within the assembly. The CLR environment makes extensive use of metadata.
+*Intermediate Language (IL) code is abstracted, language independent code that satisfies the .NET CLR's [[Common Intermediate Language]] (CIL) requirement. The term &quot;Intermediate&quot; refers to the nature of IL code being cross-language and cross-platform compatible. This intermediate language, similar to [[Java bytecode]], allows platforms and languages to support the common .NET CLR. IL supports [[object-oriented programming]] (polymorphism, inheritance, abstract types, etc.), exceptions, events, and various data structures.
+
+==Use on other operating systems==
+The PE format is also used by [[ReactOS]], as ReactOS is intended to be [[binary code compatibility|binary-compatible]] with Windows.  It has also historically been used by a number of other operating systems, including [[SkyOS]] and [[BeOS]] R3. However, both SkyOS and BeOS eventually moved to [[Executable and Linkable Format|ELF]].
+
+As the [[Mono (software)|Mono development platform]] intends to be binary compatible with [[Microsoft .NET]], it uses the same PE format as the Microsoft implementation.
+
+On [[x86]], [[Unix-like]] operating systems, some Windows binaries (in PE format) can be executed with [[Wine (software)|Wine]]. The [[HX DOS Extender]] also uses the PE format for native DOS 32-bit binaries, plus it can to some degree execute existing Windows binaries in DOS, thus acting like a [[Wine (software)|Wine]] for DOS.
+
+[[Mac OS X 10.5]] has the ability to load and parse PE files, but is not binary compatible with Windows.&lt;ref name=&quot;chartier&quot;&gt;{{cite web|last=Chartier |first=David |title=Uncovered: Evidence that Mac OS X could run Windows apps soon |work=Ars Technica |url=http://arstechnica.com/journals/apple.ars/2007/11/30/uncovered-evidence-that-mac-os-x-could-run-windows-apps-soon |date=2007-11-30 |accessdate=2007-12-03 |quote=...&amp;nbsp;Steven Edwards describes the discovery that Leopard apparently contains an undocumented loader for Portable Executables, a type of file used in 32-bit and 64-bit versions of Windows. More poking around revealed that Leopard's own loader tries to find Windows DLL files when attempting to load a Windows binary. }}&lt;/ref&gt;
+
+==See also==
+* [[EXE]]
+* [[Executable and Linkable Format]]
+* [[a.out]]
+* [[Comparison of executable file formats]]
+* [[Executable compression]]
+* [[Application virtualization]]
+
+==References==
+{{reflist}}
+
+==External links==
+*[http://www.microsoft.com/whdc/system/platform/firmware/PECOFF.mspx Microsoft Portable Executable and Common Object File Format Specification] (latest edition, [[OOXML]] format)
+*[http://download.microsoft.com/download/e/b/a/eba1050f-a31d-436b-9281-92cdfeae4b45/pecoff.doc Microsoft Portable Executable and Common Object File Format Specification] (1999 edition, [[.doc]] format)
+*[http://msdn2.microsoft.com/en-us/library/ms809762.aspx The original Portable Executable article] by [[Matt Pietrek]] ([[MSDN]] Magazine, March 1994)
+*[http://msdn.microsoft.com/en-us/magazine/cc301805.aspx Part I. An In-Depth Look into the Win32 Portable Executable File Format] by [[Matt Pietrek]] ([[MSDN]] Magazine, February 2002)
+*[http://msdn.microsoft.com/en-us/magazine/cc301808.aspx Part II. An In-Depth Look into the Win32 Portable Executable File Format] by [[Matt Pietrek]] ([[MSDN]] Magazine, March 2002)
+*[http://www.ntcore.com/Files/dotnetformat.htm The .NET File Format by Daniel Pistelli]
+*[http://www.phreedom.org/solar/code/tinype/ Creating the smallest possible PE executable (97 bytes)]
+*[http://www.csn.ul.ie/~caolan/publink/winresdump/winresdump/doc/pefile.html Detailed description of the PE format by Johannes Plachy]
+*[http://www.microsoft.com/whdc/winlogo/drvsign/Authenticode_PE.mspx Windows Authenticode Portable Executable Signature Format]
+*[http://webster.cs.ucr.edu/Page_TechDocs/pe.txt LUEVELSMEYER's description about PE file format] [http://win32assembly.online.fr/files/pe1.zip Mirror]
+
+{{Executables}}
+
+[[Category:Executable file formats]]
+[[Category:Windows administration]]
+
+[[cs:Portable Executable]]
+[[de:Portable Executable]]
+[[fr:Portable Executable File Format]]
+[[ko:PE í¬ë§·]]
+[[it:Portable Executable]]
+[[he:Portable Executable]]
+[[nl:Portable Executable]]
+[[ja:Portable Executable]]
+[[pl:Portable Executable]]
+[[pt:Portable Executable]]
+[[ru:Portable Executable]]
+[[sv:Portable Executable]]</rev></revisions></page></pages></query></api>

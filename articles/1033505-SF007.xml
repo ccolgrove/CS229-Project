@@ -1,0 +1,183 @@
+<?xml version="1.0"?><api><query><pages><page pageid="1033505" ns="0" title="Puppy Linux"><revisions><rev xml:space="preserve">
+{{ infobox OS
+| name                   = Puppy Linux
+| logo                   = [[Image:Banner logo Puppy.png|250px]]
+| screenshot             = [[File:Puppy linux 5.3.0 Slacko puppy.png|250px]]
+| caption                = Puppy Linux 5.3.0 ''Slacko Puppy''
+| developer              = Barry Kauler (original)&lt;br /&gt;Larry Short, Mick Amadio and Puppy community (current)
+| family                 = [[Unix-like]]
+| source_model           = Primarily [[open source]]
+| working_state          = Current
+| latest_release_version = 5.3&lt;ref&gt;[http://bkhome.org/blog/?viewDetailed=02556 Puppy Linux 5.3 (Slacko)]&lt;/ref&gt;
+| latest_release_date    = {{release date|2011|10|24}}
+| license                = [[GPL]] and various others
+| website                = [http://www.puppylinux.org/ www.puppylinux.org]
+| latest_test_version    = 
+| latest_test_date       = &lt;!-- {{release date|2010|10|09}} --&gt;
+| marketing_target = Live CD, Netbooks, older systems and general use
+| language =
+| kernel_type = [[Monolithic kernel|Monolithic]]
+| ui = [[JWM]] / [[IceWM]] + [[ROX Desktop]]
+| working_state = Current
+| supported_platforms    = x86, 64 bit
+| updatemodel =
+| package_manager = PetGet, Puppy Package Manager
+}}
+
+'''Puppy Linux''' is a lightweight [[Linux distribution]] that focuses on [[Usability|ease of use]].&lt;ref&gt;[http://www.desktoplinux.com/articles/AT7455536044.html An in-depth look at Puppy Linux by Howard Fosdick]&lt;/ref&gt; The entire system can be run from [[RAM]], allowing the boot medium to be removed after the [[operating system]] has started. Applications such as [[AbiWord]] (a free word processing application), [[Gnumeric]] (a spreadsheet) and [[MPlayer]] (a free multimedia player) are included, along with a wide choice of web browsers that can be installed. The distribution was originally developed by Barry Kauler&lt;!-- Barry Kauler currently redirects to this article - do not make this a self-link --&gt; and other members of the community.  The tool [[Woof (software)|Woof]] can build a Puppy Linux distribution from the binary packages of other Linux distributions.&lt;ref name=&quot;Puppy5&quot;&gt;{{ cite web | url = http://distro.ibiblio.org/pub/linux/distributions/puppylinux/puppy-5.0/release-500.htm | title=Announcement and release notes for Lucid Puppy 5.0}}&lt;/ref&gt;
+
+== Features ==
+
+Puppy Linux is a full-fledged operating system, bundled with a collection of application suites for a wide variety of tasks suitable for general use. Puppy is small-sized, so it can boot from many media. It is also useful as a [[rescue disk]],&lt;ref&gt;{{cite web | url=http://lifehacker.com/307542/taking-puppy-linux-for-a-walk | title=Taking Puppy Linux for a Walk}}&lt;/ref&gt; a demonstration system, leaving the original/existing operating system unaltered, or as an OS to a system with a blank or missing hard drive, or for keeping old computers useful.&lt;ref&gt;{{ cite web | url=http://www.wikihow.com/Revive-an-old-PC-with-Linux | title=Reviving old computer}}&lt;/ref&gt;
+
+Puppy can boot from:
+
+* A [[live USB]], including [[USB flash drive]]s or any other bootable [[Universal serial bus|USB]] storage device (flash-Puppy)
+* A [[live CD]] (live-Puppy)
+* An [[SD card]] or built in Flash drive
+* A [[Zip drive]] or LS-120/240 [[SuperDisk]]
+* An internal [[hard disk drive]]
+* A [[computer network]] (thin-Puppy)
+* An [[emulator]] (emulated-puppy)
+* A floppy [[boot disk]] that loads the rest of the operating system from a USB drive, CD-ROM, or internal hard drive
+
+Puppy Linux features built-in tools which can be used to create bootable USB drives, create new Puppy CDs, or remaster a new live CD with different packages.&lt;ref&gt;{{ cite web | url = http://www.puppylinux.org/manuals/puppy-40/english/make-your-own-puppy-cd | title = Make your own Puppy CD }}&lt;/ref&gt;
+
+Puppy Linux has a unique feature which sets it apart from other Linux distributions: the ability to offer a normal persistently updating working environment on a write-once multisession CD/DVD. (It does not require a rewritable CD/DVD.) Puppy automatically detects changes in the file system and saves them incrementally on the disc.&lt;ref&gt;{{ cite web | url = http://puppylinux.com/multi-puppy.htm | title = Puppy Multisession DVD/CD }}&lt;/ref&gt;
+This feature works particularly well with DVDs, partly because of the much larger space available.
+While other distributions offer [[Live CD]] versions of their operating systems, they do not allow programs to be permanently added nor do they allow files to be written to the CD.
+
+Puppy also features sophisticated write-caching system designed to extend the life of USB flash drives that Puppy Linux runs from.&lt;ref&gt;{{ cite web | url = http://puppylinux.com/development/howpuppyworks.html | title = How Puppy Works }}&lt;/ref&gt;{{Citation needed|reason=third-party|date=July 2010}}
+
+Unlike some other OSes, Puppy Linux does not mount (i.e. prepare to read from/write to) hard drives nor connects to the network automatically. This reduces the odds that a bug or even intentionally-added incompatible software corrupts the contents of a hard drive.&lt;ref&gt;{{cite web | url=http://freespace.sourceforge.net/guidod/howto/autofs.html | title=AutoFS}}&lt;/ref&gt;
+
+Since Puppy Linux fundamentally runs in RAM, all the files, operations and configurations that are created/modified in a session would disappear when the system is shut down. However, it is possible to save files upon shutdown. This feature allows the user to either save the file to disk (USB, HDD etc.) or even write the file system to the same CD Puppy has booted from, if &quot;multisession&quot; was used to create the booted CD and if a CD burner is present. This is true for CD-Rs as well as CD-RWs and DVDs. 
+
+It is also possible to save all files to an external hard drive, USB stick, or even a floppy disk instead of the root file system. Puppy can also be installed to a hard disk.&lt;ref name=&quot;Eckstein08Ju10&quot;&gt;{{cite web|url = http://www.kmeckstein.com/linux/and-they-call-it-puppy-love/|title =And they call it Puppy Loveâ¦|accessdate = 9 July 2010|last = Eckstein|first = Keith|authorlink = |year = 2010|month = July}}&lt;/ref&gt;
+
+==User interface==
+[[Image:Puppylinux-215ce2.jpg|thumb|Desktop with one of multiple integrated themes with XMMS a multimedia player, mtPaint a painting program for creating pixel art and manipulating digital photos and mplayer running, plus an opened text file under Puppy Linux 2.15 CE Viz (with default WM: IceWM)]]
+The default [[window manager]] in most Puppy releases is [[JWM]].&lt;ref&gt;{{cite web | url=http://puppylinux.org/wikka/JoesWindowManager | title=JWM}}&lt;/ref&gt;
+
+Packages of the [[IceWM]] desktop, [[Fluxbox]] and [[Enlightenment (window manager)|Enlightenment]] are also available via Puppy's PetGet package (application) management system (see below). Some derivative distributions, called ''puplets'', come with default window managers other than [[JWM]].&lt;ref&gt;{{cite web | url=http://pupweb.org/wikka/IceWM | title=JWM}}&lt;/ref&gt;
+
+When the operating system boots, everything in the Puppy package uncompresses into a RAM area, the &quot;[[ramdisk]]&quot;. The PC needs to have at least 128 MB of RAM (with no more than 8 MB shared video) for all of Puppy to load into the ramdisk. However, it is possible for it to run on a PC with only about 48 MB of RAM because part of the system can be kept on the hard drive, or less effectively, left on the CD.
+
+Puppy is fairly full-featured for a system that runs entirely in a ramdisk, when booted as Live system or from a 'frugal' installation; however, Puppy also supports the 'full' installation mode, which allows Puppy to run from a hard drive partition, without a ramdisk. Applications were chosen that met various constraints, size in particular. Because one of the aims of the distribution is to be extremely easy to set up, there are many [[wizard (software)|wizard]]s that take the user through the process of a range of common tasks.&lt;ref&gt;{{cite web | url=http://www.puppylinux.org/home/overview|title=AboutPuppy - Puppy Linux|accessdate=2008-08-02 |work= |publisher= |date= |archiveurl = http://web.archive.org/web/20080621101141/http://puppylinux.org/home/overview &lt;!-- Bot retrieved archive --&gt; |archivedate = 2008-06-21}}&lt;/ref&gt;{{Citation needed|reason=third-party|date=July 2010}}
+
+==Package and distribution management==
+[[Image:WNOP02 EeePC 1.jpg|thumb|wNOP v0.2 on EeePC: Puppy 3.01 &amp; Compiz-Fusion]]
+
+Puppy Unleashed (currently replaced by [[Woof (software)|Woof]]) is a tool used to create Puppy [[ISO image]]s. It consists of more than 500 packages that are put together according to the user's needs.{{Citation needed|date=May 2010}}
+
+[[Woof (software)|Woof]] is an advanced tool for creating Puppy installations. It requires an Internet connection and some knowledge of Linux to use. It is able to download the binary source packages from another [[Linux distribution]] and process them into Puppy Linux packages by just defining the name of that Linux distro.&lt;ref&gt;{{cite web|author=Barry Kauler|title=Woof: the &quot;Puppy builder&quot;|url=http://bkhome.org/woof/|date=March 2010}}&lt;/ref&gt; It is equipped with a simpler version control named Bones.&lt;ref&gt;{{cite web|author=Barry Kauler|title=Bones: version control|url=http://bkhome.org/bones/index.html|date=March 2010}}&lt;/ref&gt;
+
+Puppy also comes with a remastering tool that takes a &quot;snapshot&quot; of the current system and lets the user create a live CD from it, and an additional remastering tool that is able to remove installed components.{{Citation needed|date=May 2010}}
+
+Puppy Linux uses the T2 SDE build scripts to build the base binary packages.{{Citation needed|date=July 2010}}
+
+Puppy Linux's package manager, ''Puppy Package Manager'', accepts packages from other distros (such as .deb packages).&lt;ref name=&quot;Kauler12Oct09&quot;&gt; {{Cite web|url = http://www.puppylinux.com/development/package-management.htm|title = Package management|accessdate = 23 January 2011|last = Kauler|first = Barry|authorlink = |year = 2009|month = October}}&lt;/ref&gt;
+
+== Variants ==
+Because of the relative ease with which the tool Woof and the remaster tool can be used to build variants of Puppy Linux, there are many variants available.&lt;ref name=&quot;Puppy5&quot; /&gt;&lt;ref&gt;{{cite web|title=PuppyLinux: Puplets|url=http://puppylinux.org/wikka/Puplets}}&lt;/ref&gt; Variants of Puppy Linux are known as ''puplets''. 
+
+After Barry Kauler reduced his involvement with the Puppy Project, he designed two new distributions within the same Puppy Linux family, Quirky and Wary. 
+
+;Quirky
+:An embedded distro inside the kernel. All files required are inside the kernel. It has simple module loading management but fewer drivers are included.&lt;ref&gt;[http://bkhome.org/quirky/ Quirky]&lt;/ref&gt; 
+
+;Wary
+:A Puppy variant targeted at users with old hardware. It uses an older, but long term support Linux kernel and the newest applications.&lt;ref&gt;[http://bkhome.org/wary/ Wary]&lt;/ref&gt;
+
+==Unofficial variants==
+;Fatdog64
+:A Puppy variant targeted at users with 64-bit platform.&lt;ref name=&quot;FatDog64&quot;&gt; {{Cite web|url = http://distro.ibiblio.org/pub/linux/distributions/fatdog/web/|title = Fat Dog 64|accessdate = 6 September 2011|last = Fat Dog Developers|authorlink = |year = undated}}&lt;/ref&gt;
+
+== Release history ==
+[[File:Pup-430.png|thumb|right|Puppy Linux 4.3.0]]
+[[File:Lucid Puppy 5.0.0.png|thumb|right|Puppy Linux 5.0.0]]
+[[File:Puppy Linux 5.2.8.png|thumb|right|Puppy Linux 5.2.8 ''Lucid Puppy'']]
+{| class=&quot;wikitable&quot;
+|-
+! Version
+! Release Date
+|-
+| Puppy 1
+| 29 March 2005
+|-
+| Puppy 2
+| 1 June 2006
+|-
+| Puppy 3
+| 2 October 2007
+|-
+| Puppy 4
+| 5 May 2008
+|-
+| Puppy 5
+| 15 May 2010
+|}
+
+'''Puppy 1''' series will run comfortably on very dated hardware, such as a Pentium computer with at least 32 MB RAM. For newer systems, the USB keydrive version might be better (although if USB device booting is not directly supported in the [[BIOS]], the Puppy floppy boot disk can be used to kick-start it). It is possible to run Puppy Linux with [[Windows 9x]]/[[Windows Me]]. It is also possible, if the BIOS does not support booting from USB drive, to boot from the CD and keep user state on a USB keydrive; this will be saved on shutdown and read from the USB device on bootup.&lt;ref&gt;{{ cite web | url=http://www.puppylinux.com/development/compileapps.htm | title=Pupsave file}}&lt;/ref&gt;
+
+'''Puppy 2''' uses the Mozilla-based SeaMonkey as its [[Internet suite]] (primarily a [[web browser]] and e-mail client).
+
+'''Puppy 3''' features Slackware 12 compatibility.&lt;ref&gt;{{ cite web | url = http://puppylinux.org/user/news.php?readmore=50 | title = Puppy 3.00 Released (Updated to 3.01) | first = Barry | last = Kauler }}&lt;/ref&gt; This is accomplished by the inclusion of almost all the dependencies needed for the installation of Slackware packages. However, Puppy Linux is not a [[List of Linux distributions#Slackware-based|Slackware-based distribution]].&lt;ref&gt;{{ cite web | url = http://www.puppylinux.com/download/release-3.01.htm | title = Puppy Linux release notes v3.00 | first = Barry | last = Kauler }}&lt;/ref&gt;
+
+'''Puppy 4''' is built from scratch using the T2 SDE &lt;ref&gt;{{ cite web | url = http://puppylinux.com/download/release-4.00.htm | title = Puppy Linux release notes 4.00 | first = Barry | last = Kauler }}&lt;/ref&gt; and no longer features native Slackware 12 compatibility&lt;ref name=&quot;puppylinux.com&quot;&gt;{{ cite web | url = http://puppylinux.com/development/package-management.htm | title = package management | first = Barry | last = Kauler }}&lt;/ref&gt; in order to reduce the size and include newer package versions than that found in 3. To compensate for this, an optional &quot;compatibility collection&quot; of packages was created that restores some of the lost compatibility.&lt;ref name=&quot;puppylinux.com&quot;/&gt;
+
+*Puppy 4.2 features changes to the user interface and backend, upgraded packages, language and character support, new in-house software and optimizations, while still keeping the [[ISO image]] size under 100 MB.&lt;ref&gt;{{ cite web | url = http://www.puppylinux.com/download/release-4.2.htm | title = Puppy Linux 4.2 |accessdate = 6 April 2011 | first = Barry | last = Kauler }}&lt;/ref&gt;
+
+'''Puppy 5''' is based on a project called [[Woof (software)|Woof]]&lt;ref&gt;{{ cite web | url = http://puppylinux.com/woof/ | title = Woof: the &quot;Puppy builder&quot; | first = Barry | last = Kauler |accessdate=2009-02-13 |work=Puppy developer pages |date=9 February 2009}}&lt;/ref&gt; which is designed to assemble a Puppy Linux distribution from the packages of other Linux distributions. Woof includes some binaries and software derived from [[Ubuntu (operating system)|Ubuntu]], [[Debian]], [[Slackware]], T2 SDE, or [[Arch Linux|Arch]] repositories. Puppy 5 came with a stripped down version of the [[Midori (web browser)|Midori]] browser to be used for reading help files and a choice of web browsers to be installed, including [[Chromium (web browser)|Chromium]], [[Mozilla Firefox|Firefox]], [[SeaMonkey]] Internet Suite, [[SRWare Iron|Iron]]  and [[Opera (web browser)|Opera]].&lt;ref name=&quot;LucidRespository&quot;&gt;{{Cite web|url = http://distro.ibiblio.org/pub/linux/distributions/puppylinux/Lucid_Puppy/|title = Index of /pub/linux/distributions/puppylinux/Lucid_Puppy|accessdate = 6 November 2010|last = Puppy Linux|authorlink = |year = 2010|month = June}}&lt;/ref&gt;&lt;ref name=&quot;LucidRespository2&quot;&gt;{{Cite web|url = http://distro.ibiblio.org/pub/linux/distributions/puppylinux/pet-packages-lucid/|title = Index of /pub/linux/distributions/puppylinux/pet-packages-lucid|accessdate = 2 December 2010|last = Puppy Linux|authorlink = |year = 2010|month = November}}&lt;/ref&gt;
+
+==Reception==
+Puppy Linux has been criticized for running all users as [[Superuser|root]] and its lack of available applications. [[DistroWatch]] reviewer Rober Storey concluded about Puppy 5.2.5 in April 2011: &quot;A lot of people like Puppy - it's in the top 10 of the DistroWatch page-hit ranking. I enjoy Puppy too, and it's what I run exclusively on my netbook. Maybe the only thing wrong with Puppy is that users' expectations tend to exceed the developer's intentions.&quot;&lt;ref name=&quot;DW18Apr11&quot;&gt; {{Cite news|url = http://distrowatch.com/weekly.php?issue=20110418#feature|title = Puppy Linux 5.2.5 - taking a bite out of bloat|accessdate = 23 April 2011|last = Storey|first = Robert|authorlink = |year = 2011|month = April| work = [[DistroWatch]]}}&lt;/ref&gt;
+
+In a detailed review of Puppy Linux in May 2011 Howard Fosdick of OS News addressed the root user issue, &quot;In theory this could be a problem -- but in practice it presents no downside. I've never heard of a single Puppy user suffering a problem due to this.&quot; Fosdick concluded &quot;I like Puppy because it's the lightest Linux distro I've found that is still suitable for end users. Install it on an old P-III or P-IV computer and your family or friends will use it just as effectively for common tasks as any expensive new machine.&quot;&lt;ref name=&quot;Fosdick16May11&quot;&gt; {{Cite news|url = http://www.osnews.com/story/24740/Puppy_Linux_Top_Dog_of_the_Lightweight_Distros|title = Puppy Linux: Top Dog of the Lightweight Distros|accessdate = 17 May 2011|last = Fosdick|first = Howard|authorlink = |year = 2011|month = May| work = OS News}}&lt;/ref&gt;
+
+== See also ==
+{{Portal box|Free software|Linux}}
+* [[Lightweight Linux distribution]]
+* [[List of Linux distributions that run from RAM]]
+
+==References==
+{{Reflist|30em}}
+
+==External links==
+{{Wikibooks}}
+*[http://www.puppylinux.com Official website]
+*[http://www.puppylinux.org Community website]
+*{{DistroWatch|puppy|NAME=Puppy Linux}}
+
+{{Linux distributions}}
+
+[[Category:Operating system distributions bootable from read-only media]]
+[[Category:Live USB]]
+[[Category:Mini Linux distributions]]
+
+[[ar:Ø¨ÙØ¨Ù ÙÙÙÙØ³]]
+[[bg:Puppy Linux]]
+[[cs:Puppy Linux]]
+[[da:Puppy Linux]]
+[[de:Puppy Linux]]
+[[et:Puppy Linux]]
+[[es:Puppy Linux]]
+[[fa:Ù¾Ø§Ù¾Û ÙÛÙÙÚ©Ø³]]
+[[fr:Puppy Linux]]
+[[hr:Puppy Linux]]
+[[id:Puppy Linux]]
+[[ia:Puppy Linux]]
+[[it:Puppy Linux]]
+[[hu:Puppy Linux]]
+[[ml:à´ªà´ªàµà´ªà´¿ à´²à´¿à´¨à´àµà´¸àµ]]
+[[nl:Puppy Linux]]
+[[ja:Puppy Linux]]
+[[pl:Puppy Linux]]
+[[pt:Puppy Linux]]
+[[ro:Puppy Linux]]
+[[ru:Puppy Linux]]
+[[simple:Puppy Linux]]
+[[fi:Puppy Linux]]
+[[sv:Puppy Linux]]
+[[ta:à®ªà®ªà¯à®ªà®¿ à®²à®¿à®©à®à¯à®à¯]]
+[[zh:Puppy Linux]]</rev></revisions></page></pages></query></api>

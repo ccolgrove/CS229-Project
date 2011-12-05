@@ -1,0 +1,149 @@
+<?xml version="1.0"?><api><query><pages><page pageid="30858923" ns="0" title="KeePass"><revisions><rev xml:space="preserve">{{primarysources|date=August 2011}}
+{{refimprove|date=September 2011}}
+{{Infobox software
+| name                   = KeePass Password Safe
+| logo                   = [[Image:KeePass icon.png|64px]]
+| screenshot             = [[Image:KeePass Main.png|250px]]
+| caption                = KeePass 2.x Main Window
+| collapsible            =
+| author                 =
+| developer              = Dominik Reichl
+| released               = {{initial release|2003|11|16}}
+| latest_release_version = 1.21
+| latest_release_date    = {{release date|2011|10|12}}
+| latest_preview_version = 2.17
+| latest_preview_date    = {{release date|2011|10|19}}
+| frequently_updated     =
+| programming_language   = [[C Sharp (programming language)|C#]] (2.x version),&lt;br /&gt;[[C++]] (1.x version)
+| operating_system       = [[Microsoft Windows|Windows]]; [[Linux]], [[Mac OS X]], [[BSD]] with [[Mono (software)|Mono]] (Professional Edition)
+| platform               = [[Cross-platform]]
+| language               = Multilingual
+| status                 =
+| genre                  = [[Password manager]]
+| license                = [[GNU General Public License|GPL]]
+| website                = [http://keepass.info/ keepass.info]
+}}
+
+'''KeePass Password Safe''' is an [[Open-source software|open-source]] [[Password manager|password management utility]] for [[Microsoft Windows]], with unofficial ports for [[Linux]], [[Mac OS X]], and a variety of other systems.
+
+==Cryptography==
+[[Image:KeePass add entry .png|thumb|left|&quot;Add Entry&quot; dialog in KeePass]]
+According to the utility's author, KeePass was one of the first password management utilities to use security-enhanced password edit controls, in this case one called CSecureEditEx.&lt;ref name=&quot;keepass_secedit&quot;&gt;{{cite web
+ | url = http://www.keepass.info/help/base/secedits.html
+ | title = Secure Edit Controls - KeePass
+ | author = Dominik Reichl
+ | accessdate = 2009-11-14
+}}&lt;/ref&gt;
+The author makes several claims regarding the security of the control and its resistance to password revealing utilities; however, the author does not cite or make any references to any third-party testing of the control to corroborate the claims of its security.&lt;ref name=&quot;secure_edit&quot;&gt;{{cite web
+ | url = http://www.codeproject.com/editctrl/SecEditEx.asp
+ | title = CSecureEditEx - A More Secure Edit Control
+ | author = Dominik Reichl
+ | date = 2005-04-17
+ | work = [http://www.codeproject.com/ The Code Project]
+}}&lt;/ref&gt;
+The software can be tested, since the [[source code]] is freely available.
+
+Access to the database is restricted by either a master password or a key file. Both methods may be combined to create a &quot;composite master key&quot;. If both methods are used, then both must be present to access the password database. KeePass version 2.x introduces a third optionâdependency upon the current Windows user.&lt;ref name=&quot;keepass2&quot;&gt;{{cite web
+ | url = http://keepass.info/help/base/keys.html
+ | title = Composite Master Key - KeePass
+ | author = Dominik Reichl
+ | accessdate = 2009-11-14
+}}&lt;/ref&gt;
+KeePass encrypts the database with the [[Advanced Encryption Standard|AES]] or [[Twofish]] symmetric ciphers. AES is the default option, and Twofish is available in 1.x, but is not available in version 2.x. However a separate plugin provides Twofish as an encryption algorithm.
+
+Passwords are protected in memory while KeePass is running. On Windows Vista and Windows 7, passwords are encrypted in process memory using Windows [[Data Protection API]], which allows storing the key for memory protection in a secure, non-swappable memory area. On previous Windows systems, KeePass falls back to using the [[ARC4]] cipher with a temporary, random session key.&lt;ref name=&quot;keepass_security&quot;&gt;{{cite web
+ | url = http://keepass.info/help/base/security.html
+ | title = Security - KeePass
+ | author = Dominik Reichl
+ | accessdate = 2007-12-13
+}}&lt;/ref&gt;
+
+==Portability==
+KeePass 1.x does not use any functions that require the latest [[Microsoft Windows|Windows]] operating system, such as theming on XP, or relying on the [[.NET Framework]]. KeePass supports XP themes, but doesn't require this operating system capability. However, KeePass 2.x â a complete rewrite of the program â is based on the .NET Framework. The application itself does not need to be installed, though KeePass 2.x requires that .NET be installed. A traditional Windows installer is available. You can download the binary [[ZIP (file format)|ZIP]] package which contains only the main executable and runs fine from portable devices like USB sticks.
+
+The program doesn't create any new registry keys and it doesn't create any [[initialization file]]s (ini) in the Windows directory. Deleting the KeePass directory (if the binary zip package is used) or using the uninstaller (if the installer package is used) leaves no trace of KeePass on the system.{{Citation needed|date=January 2009|comment=That sounds slightly biased. Don't all executables lead to the creation of one registry key and one file in the Windows directory? (Prefetch). The needs a third party source.}}
+
+A password database consists of only one file that can be transferred from one computer to another easily.
+
+There are ports to operating systems other than Windows, mostly for the older 1.x release (for example '''KeePassX''' on Linux and Mac OS X which does not yet support KeePass 2.x databases).
+
+==Features==
+===Password management===
+Passwords stored by this application can be further divided into manageable groups. Each group can have an identifying icon. Groups can be further divided into subgroups in a tree-like organization.
+
+Further, KeePass tracks the creation time, modification time, last access time, and expiration time of each password stored. Files can be attached and stored with a password record, or text notes can be entered with the password details. Each password record can also have an associated icon.
+
+===Import and export===
+The password list can be exported to various formats like [[.txt|TXT]], [[HTML]], [[Extensible Markup Language|XML]] and [[Comma-separated values|CSV]]. The XML output can be used in other applications and re-imported into KeePass using a plugin. The CSV output is compatible with many other password safes like the commercial closed-source Password Keeper and the closed-source Password Agent, also the CSVs can be imported by spreadsheet applications like Microsoft Excel or [[OpenOffice.org Calc]]. Exports from these programs can be imported to KeePass databases. KeePass can parse and import TXT outputs of CodeWalletPro, a commercial closed-source password safe. It can import TXT files created by [[Bruce Schneier]]'s [[Password Safe]] v2.
+File format support can be expanded through the use of KeePass plugins. The HTML output uses [[Cascading Style Sheets]] (CSS) to format the table, which makes it possible to change the layout.
+
+===Auto-type, global hot keys, drag-and-drop===
+Auto-type, global auto-type hot key combination and drag-n-drop support: KeePass can minimize itself and type the information of the currently selected entry into dialogs, webforms, etc. KeePass features a global auto-type hot key. When KeePass is running in the background (with opened database) and you press the hot key, it looks up the correct entry and executes its auto-type sequence. All fields, title, username, password, URL and notes can be drag-n-dropped into other windows.
+
+Windows [[Clipboard (software)|clipboard]] handling allows to double-click on any field of the password list to copy its value to the Windows clipboard. KeePass can clear the clipboard automatically some time after the user has copied one of his passwords into it. KeePass features a protection against clipboard monitors (other applications won't get notifications that the clipboard content has been changed) and it has a paste-once functionality: allow only one paste operation, after pasting the clipboard is cleared automatically by KeePass.
+
+===Browser Support===
+The auto-type functionality works with all windows, and consequently with all browsers. The [http://www.keeform.org KeeForm] extension allows to open websites with [[Internet Explorer]] and [[Mozilla Firefox]] and fill in user details automatically. For Internet Explorer, there's also a browser integration [[toolbar]] available.
+
+===Built-in password generator===
+[[Image:KeePass random password.png|User Interface of the password generator|thumb]]
+KeePass features a built-in [[Random password generator|password generator]] that generates random passwords. Random seeding can be done through user input (mouse movement and random keyboard input).
+
+===Plugins===
+KeePass has a plugin architecture. There are various plugins available on the KeePass homepage (import/export from/to various other formats, database backup, integration and automation, etc.). Note that plugins may compromise the security of KeePass, because they are written by independent authors and have full access to the KeePass database.
+
+==Other versions==
+* KeePassX, a multi-platform open-source KeePass clone for [[Linux]] and [[Mac OS X]], built using version 4.3 of the [[Qt (toolkit)|Qt libraries]]. {{As of|2011|10}}, databases created by KeePassX 0.4.3 are binary-compatible with databases created by the version 1.x of KeePass but not newer version 2.x databases. However, KeePass 2.x can export its database in KeePass 1.x format for use with KeePassX.&lt;ref&gt;http://www.keepassx.org/faq#q_3&lt;/ref&gt; 
+* 7Pass for Windows Phones, a Windows mobile port of KeePass for Windows Phone 7 devices
+* KeePass for Blackberry, a Blackberry port of KeePass for RIM devices
+* KeePassMobile, KeePass port for mobile phones ([[Java Platform, Micro Edition|Java ME]])
+* KeePass for J2ME, a [[Java Platform, Micro Edition|Java ME]] port of KeePass for mobile phones
+* iKeePass for iPhone, a port of KeePass for the iPhone, compatible with versions 1.x
+* MyKeePass for iPhone, compatible with versions 1.x and 2.x
+* KeePassDroid, a port of KeePass for the Android platform
+* KeePass for SmartDevices, a port of KeePass for [[Windows Mobile]] and PocketPC devices
+* [[KyPass]] for iPhone/iPad, a fork of MyKeePass with full dropbox support
+* KeePass for Mac OS X, using Mono.&lt;ref&gt;http://keepass2.openix.be&lt;/ref&gt;
+
+==See also==
+{{Portal box|Free software|Cryptography}}
+{{Div col}}
+* [[Apple Keychain]]
+* [[Billeo]]
+* [[iMacros|iMacros for Firefox]]
+* [[LastPass]]
+* [[Mitto]]
+* [[Pageonce]]
+* [[Password manager]]
+* [[Password Safe]]
+* [[Roboform]]
+* [[Sticky Password Manager]]
+{{Div col end}}
+
+==References==
+{{Reflist}}
+
+==External links==
+{{Commons category|KeePass|KeePass Screenshots}}
+* {{official|http://keepass.info/}}
+
+{{DEFAULTSORT:Keepass}}
+[[Category:2003 software]]
+[[Category:Password managers]]
+[[Category:Cryptographic software]]
+[[Category:Windows-only free software]]
+[[Category:Free security software]]
+[[Category:Free software programmed in C Sharp]]
+[[Category:Portable software]]
+
+[[cs:Keepass]]
+[[de:KeePass]]
+[[fr:KeePass]]
+[[it:KeePass Password Safe]]
+[[pl:KeePass Password Safe]]
+[[ru:KeePass]]
+[[sk:KeePass]]
+[[fi:KeePass]]
+[[th:à¸à¸µà¸¢à¹à¸à¸²à¸ª]]
+[[vi:KeePass]]
+[[zh:KeePass]]</rev></revisions></page></pages></query></api>

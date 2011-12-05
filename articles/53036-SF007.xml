@@ -1,0 +1,276 @@
+<?xml version="1.0"?><api><query><pages><page pageid="53036" ns="0" title="Network address translation"><revisions><rev xml:space="preserve">{{Redirect|NAT||Nat (disambiguation)}}
+
+In [[computer network]]ing, '''network address translation''' ('''NAT''') is the process of modifying [[IP address]] information in [[IPv4 header|IP packet headers]] while in transit across a traffic [[Router (computing)|routing device]].
+
+The simplest type of NAT provides a one to one translation of IP addresses. RFC 2663 refers to this type of NAT as '''basic NAT'''. It is often also referred to as '''one-to-one NAT'''.  In this type of NAT only the IP addresses, IP header checksum and any higher level checksums that include the IP address need to be changed. The rest of the packet can be left untouched (at least for basic TCP/UDP functionality, some higher level protocols may need further translation). Basic NATs can be used when there is a requirement to interconnect two IP networks with incompatible addressing.
+
+However it is common to hide an entire IP address space, usually consisting of [[private IP address]]es, behind a single IP address (or in some cases a small group of IP addresses) in another (usually public) address space. To avoid ambiguity in the handling of returned packets, a one-to-many NAT must alter higher level information such as TCP/UDP ports in outgoing communications and must maintain a translation table so that return packets can be correctly translated back. RFC 2663 uses the term '''NAPT''' ('''network address and port translation''') for this type of NAT. Other names include '''PAT''' ('''port address translation'''), '''IP masquerading''', '''NAT Overload''' and '''many-to-one NAT'''. Since this is the most common type of NAT it is often referred to simply as NAT.
+
+As described, the method enables communication through the router only when the conversation originates in the masqueraded network, since this establishes the translation tables. For example, a [[web browser]] in the masqueraded network can browse a website outside, but a web browser outside could not browse a web site in the masqueraded network. However, most NAT devices today allow the network administrator to configure translation table entries for permanent use. This feature is often referred to as &quot;static NAT&quot; or [[port forwarding]] and allows traffic originating in the &quot;outside&quot; network to reach designated hosts in the masqueraded network.
+
+In the mid-1990s NAT became a popular tool for alleviating the consequences of [[IPv4 address exhaustion]].&lt;ref&gt;[http://www.tcpipguide.com/free/t_IPNetworkAddressTranslationNATProtocol.htm www.tcpipguide.com/free/t_IPNetworkAddressTranslationNATProtocol.htm]&lt;/ref&gt; It has become a common, indispensable feature in [[Router (computing)|router]]s for home and small-office Internet connections. Most systems using NAT do so in order to enable multiple [[host (network)|host]]s on a [[private network]] to access the [[Internet]] using a single public IP address.
+
+Network address translation has serious [[#Drawbacks|drawbacks]] on the quality of Internet connectivity and requires careful attention to the details of its implementation. In particular all types of NAT break the originally envisioned model of IP [[end-to-end connectivity]] across the Internet and NAPT makes it difficult for systems behind a NAT to accept incoming communications. As a result, [[NAT traversal]] methods have been devised to alleviate the issues encountered.
+
+==One to many NATs==
+The majority of NATs map multiple private hosts to one publicly exposed IP address. In a typical configuration, a local network uses one of the designated [[private network|&quot;private&quot; IP address]] subnets (RFC 1918). A router on that network has a private address in that address space. The router is also connected to the Internet with a &quot;public&quot; address assigned by an [[Internet service provider]]. As traffic passes from the local network to the Internet, the source address in each packet is translated on the fly from a private address to the public address. The router tracks basic data about each active connection (particularly the destination address and port). When a reply returns to the router, it uses the connection tracking data it stored during the outbound phase to determine the private address on the internal network to which to forward the reply.
+
+All Internet packets have a source IP address and a destination IP address. Typically packets passing from the private network to the public network will have their source address modified while packets passing from the public network back to the private network will have their destination address modified. More complex configurations are also possible.
+
+To avoid ambiguity in how to translate returned packets, further modifications to the packets are required. The vast bulk of Internet traffic is TCP and UDP packets and for these protocols the port numbers are changed so that the combination of IP and port information on the returned packet can be unambiguously mapped to the corresponding private address and port information. Protocols not based on TCP or UDP require other translation techniques. ICMP packets typically relate to an existing connection and need to be mapped using the same IP and port mappings as that connection.
+
+===Methods of Port translation===
+There are several ways of implementing network address and port translation. In some application protocols that use IP address information, the application running on a node in the masqueraded network needs to determine the external address of the NAT, i.e., the address that its communication peers detect, and, furthermore, often needs to examine and categorize the type of mapping in use. Usually this is done because it is desired to set up a direct communications path (either to save the cost of taking the data via a server or to improve performance) between two clients both of which are behind separate NATs. For this purpose, the [[Simple traversal of UDP over NATs]] (STUN) protocol was developed (RFC 3489, March 2003). It classified NAT implementation as ''full cone NAT'', ''(address) restricted cone NAT'', ''port restricted cone NAT'' or ''symmetric NAT'' and proposed a methodology for testing a device accordingly. However, these procedures have since been deprecated from standards status, as the methods have proven faulty and inadequate to correctly assess many devices. New methods have been standardized in RFC 5389 (October 2008) and the STUN acronym now represents the new title of the specification: ''Session Traversal Utilities for NAT''.
+
+{| class=&quot;wikitable&quot;
+|-
+| {{anchor|Full-cone NAT}}'''Full-cone NAT''', also known as ''one-to-one NAT''
+
+* Once an internal address (iAddr:iPort) is mapped to an external address (eAddr:ePort), any packets from iAddr:iPort will be sent through eAddr:ePort.
+* ''Any external host'' can send packets to iAddr:iPort by sending packets to eAddr:ePort.
+| [[Image:Full Cone NAT.svg|right|400px]]
+|-
+| {{anchor|Restricted-cone NAT}}'''(Address) restricted cone NAT'''
+
+* Once an internal address (iAddr:iPort) is mapped to an external address (eAddr:ePort), any packets from iAddr:iPort will be sent through eAddr:ePort.
+* An external host (''hAddr:any'') can send packets to iAddr:iPort by sending packets to eAddr:ePort only if iAddr:iPort has previously sent a packet to hAddr:''any''. &quot;Any&quot; means the port number doesn't matter.
+| [[Image:Restricted Cone NAT.svg|right|400px]]
+|-
+| {{anchor|Port-restricted cone NAT}}'''Port-restricted cone NAT'''
+
+Like an address restricted cone NAT, but the restriction includes port numbers.
+
+* Once an internal address (iAddr:iPort) is mapped to an external address (eAddr:ePort), any packets from iAddr:iPort will be sent through eAddr:ePort.
+* An external host (''hAddr:hPort'') can send packets to iAddr:iPort by sending packets to eAddr:ePort only if iAddr:iPort has previously sent a packet to hAddr:hPort.
+| [[Image:Port Restricted Cone NAT.svg|right|400px]]
+|-
+| {{anchor|Symmetric NAT}}'''Symmetric NAT'''
+
+* Each request from the same internal IP address and port to a specific destination IP address and port is mapped to a unique external source IP address and port, if the same internal host sends a packet even with the same source address and port but to a different destination, a different mapping is used.
+* Only an external host that receives a packet from an internal host can send a packet back.
+| [[Image:Symmetric NAT.svg|right|400px]]
+|-
+|}
+
+This terminology has been the source of much confusion, as it has proven inadequate at describing real-life NAT behavior.&lt;ref&gt;
+{{cite journal
+|author=FranÃ§ois Audet; and Cullen Jennings
+|title=RFC 4787 Network Address Translation (NAT) Behavioral Requirements for Unicast UDP
+|publisher=[[IETF]]
+|date=January 2007
+|url=http://www.ietf.org/rfc/rfc4787.txt
+|format=text
+|accessdate=2007-08-29
+}}&lt;/ref&gt;
+Many NAT implementations combine these types, and it is therefore better to refer to specific individual NAT behaviors instead of using the Cone/Symmetric terminology. Especially, most NAT translators combine ''symmetric NAT'' for outgoing connections with ''static port mapping'', where incoming packets to the external address and port are redirected to a specific internal address and port.  Some products can redirect packets to several internal hosts, e.g. to divide the load between a few servers. However, this introduces problems with more sophisticated communications that have many interconnected packets, and thus is rarely used.
+
+===Type of NAT and NAT Traversal===
+The NAT traversal problem arises when two peers behind distinct NAT try to communicate. One way to solve this problem is to use [[port forwarding]], another way is to use various NAT traversal techniques. The most popular technique for TCP NAT traversal is [[TCP hole punching]], which requires the NAT to follow the ''port preservation'' design for TCP, as explained below.
+
+Many NAT implementations follow the ''port preservation'' design especially for TCP, which is to say that they use the same values as internal and external port numbers. NAT ''port preservation'' for outgoing TCP connections is especially important for TCP [[NAT traversal]], because programs usually bind distinct TCP sockets to [[ephemeral ports]] for distinct TCP connections, rendering NAT port prediction impossible for TCP.
+
+On the other hand, for UDP, NATs do not need to have ''port preservation'' because applications usually reuse the same UDP socket to send packets to distinct hosts, making port prediction straightforward, as it is the same source port for each packet.
+
+Furthermore, ''port preservation'' in NAT for TCP allows P2P protocols to offer less complexity and less latency because there is no need to use a third party to discover the NAT port since the application already knows the NAT port.&lt;ref&gt;{{cite web | title=Characterization and Measurement of TCP Traversal through NATs and Firewalls | url=http://nutss.gforge.cis.cornell.edu/pub/imc05-tcpnat/ | date=December 2006}}&lt;/ref&gt;
+
+However, if two internal hosts attempt to communicate with the same external host using the same port number, the external port number used by the second host will be chosen at random. Such NAT will be sometimes perceived as ''(address) restricted cone NAT'' and other times as ''symmetric NAT''.
+
+Recent studies have shown that roughly 70% of clients in [[Peer-to-peer|P2P]] networks employ some form of NAT.&lt;ref&gt;{{cite web | title=Illuminating the shadows: Opportunistic network and web measurement | url=http://illuminati.coralcdn.org/stats/ | date=December 2006}}&lt;/ref&gt;
+
+==Implementation==
+===Establishing Two-Way Communication===
+Every TCP and UDP packet contains both a source [[IP address]] and source port number as well as a destination IP address and destination port number. The port address/IP address pair forms a [[Internet socket|socket]]. In particular, the source port address and source IP address form the source socket.
+
+For publicly accessible services such as web servers and mail servers the port number is important. For example, port 80 connects to the web [[server (computing)|server]] software and port 25 to a mail server's [[SMTP]] [[Daemon (computer software)|daemon]]. The IP address of a public server is also important, similar in global uniqueness to a postal address or telephone number. Both IP address and port must be correctly known by all hosts wishing to successfully communicate.
+
+Private IP addresses as described in RFC 1918 are significant only on private networks where they are used, which is also true for host ports. Ports are unique endpoints of communication on a host, so a connection through the NAT device is maintained by the combined mapping of port and IP address.
+
+PAT resolves conflicts that would arise through two different hosts using the same source port number to establish unique connections at the same time.
+
+===An Analogy===
+A NAT device is similar to a phone system at an office that has one public telephone number and multiple extensions. Outbound phone calls made from the office all appear to come from the same telephone number. However, an incoming call that does not specify an extension cannot be transferred to an individual inside the office. In this scenario, the office is a private LAN, the main phone number is the public IP address, and the individual extensions are unique port numbers.&lt;ref&gt;{{cite web |url=http://www.tieline.com/Downloads/Audio-over-IP-Instant-Expert-Guide-v1.pdf |title=The Audio over IP Instant Expert Guide |date=January 2010 |accessdate=2011-08-19 |publisher=Tieline}}&lt;/ref&gt;
+
+=== Translation of the Endpoint ===
+With NAT, all communication sent to external hosts actually contain the ''external'' IP address and port information of the NAT device instead of internal host IPs or port numbers.
+
+*When a computer on the private (internal) network sends a [[IPv4|packet]] to the external network, the NAT device replaces the internal IP address in the source field of the packet header (''sender's address'') with the external IP address of the NAT device. PAT may then assign the connection a port number from a pool of available ports, inserting this port number in the source port field (much like the ''post office box number''), and forwards the packet to the external network. The NAT device then makes an entry in a translation table containing the internal IP address, original source port, and the translated source port. Subsequent packets from the same connection are translated to the same port number.
+
+*The computer receiving a packet that has undergone NAT establishes a connection to the port and IP address specified in the altered packet, oblivious to the fact that the supplied address is being translated (analogous to using a ''post office box number'').
+
+*A packet coming from the external network is mapped to a corresponding internal IP address and port number from the translation table, replacing the external IP address and port number in the incoming packet header (similar to the translation from ''[[post office box]] number'' to ''[[street address]]''). The packet is then forwarded over the inside network. Otherwise, if the destination port number of the incoming packet is not found in the translation table, the packet is dropped or rejected because the PAT device doesn't know where to send it.
+
+NAT will only translate IP addresses and ports of its internal hosts, hiding the true endpoint of an internal host on a private network.
+
+=== Visibility of Operation ===
+NAT operation is typically transparent to both the internal and external hosts.
+
+Typically the internal host is aware of the true IP address and TCP or UDP port of the external host. Typically the NAT device may function as the default gateway for the internal host. However the external host is only aware of the public IP address for the NAT device and the particular port being used to communicate on behalf of a specific internal host.
+
+==NAT and TCP/UDP==
+&quot;Pure NAT&quot;, operating on IP alone, may or may not correctly parse protocols that are totally concerned with IP information, such as [[Internet Control Message Protocol|ICMP]], depending on whether the payload is interpreted by a host on the &quot;inside&quot; or &quot;outside&quot; of translation. As soon as the protocol stack is traversed, even with such basic protocols as [[Transmission Control Protocol|TCP]] and [[User Datagram Protocol|UDP]], the protocols will break unless NAT takes action beyond the network layer.
+
+IP packets have a checksum in each packet header, which provides error detection only for the header. IP datagrams may become fragmented and it is necessary for a NAT to reassemble these fragments to allow correct recalculation of higher-level checksums and correct tracking of which packets belong to which connection.
+
+The major transport layer protocols, TCP and UDP, have a checksum that covers all the data they carry, as well as the TCP/UDP header, plus a &quot;pseudo-header&quot; that contains the source and destination IP addresses of the packet carrying the TCP/UDP header. For an originating NAT to pass TCP or UDP successfully, it must recompute the TCP/UDP header checksum based on the translated IP addresses, not the original ones, and put that checksum into the TCP/UDP header of the first packet of the fragmented set of packets. The receiving NAT must recompute the IP checksum on every packet it passes to the destination host, and also recognize and recompute the TCP/UDP header using the retranslated addresses and pseudo-header.  &lt;!-- The phrase &quot;receiveing NAT&quot; implies NAT is always used on the receiving end; not necessarily the case --&gt; This is not a completely solved problem. One solution is for the receiving NAT to reassemble the entire segment and then recompute a checksum calculated across all packets.
+
+The originating host may perform [[Maximum transmission unit]] (MTU) [[Path MTU Discovery|path discovery]] to determine the packet size that can be transmitted without fragmentation, and then set the ''don't fragment'' (DF) bit in the appropriate packet header field.
+
+==Destination network address translation (DNAT)==
+DNAT is a technique for transparently changing the destination [[IP address]] of an en-route [[packet (information technology)|packet]] and performing the inverse function for any replies. Any [[Router (computing)|router]] situated between two endpoints can perform this transformation of the packet.
+
+DNAT is commonly used to publish a service located in a private network on a publicly accessible [[IP address]].  This use of DNAT is also called [[port forwarding]], or [[DMZ (computing)|DMZ]] when used on an entire server, which becomes exposed to the WAN, becoming analogous to an undefended military [[demilitarised zone]] (DMZ).
+
+==SNAT==
+The meaning of the term ''SNAT'' varies by vendor. Many vendors have proprietary definitions for ''SNAT''. A common expansion is ''source NAT'', the counterpart of ''destination NAT'' (''DNAT''). Microsoft uses the acronym for ''Secure NAT'', in regard to the [[ISA Server]]. For Cisco Systems, ''SNAT'' means ''stateful NAT''.
+
+===Secure network address translation===
+In [[computer network]]ing, the process of network address translation done in a secure way involves rewriting the source and/or destination [[IP address|address]]es of [[Internet Protocol|IP]] [[Packet (information technology)|packet]]s as they pass through a [[Router (computing)|router]] or [[firewall (networking)|firewall]].
+
+==Dynamic network address translation==
+Dynamic NAT, just like static NAT, is not common in smaller networks but is found within larger corporations with complex networks. The way dynamic NAT differs from static NAT is that where static NAT provides a one-to-one internal to public static IP address mapping, dynamic NAT doesn't make the mapping to the public IP address static and usually uses a group of available public IP addresses.
+
+==Applications affected by NAT==
+Some [[Application Layer]] protocols (such as [[File Transfer Protocol|FTP]] and [[Session Initiation Protocol|SIP]]) send explicit network addresses within their application data. [[File Transfer Protocol|FTP]] in active mode, for example, uses separate connections for control traffic (commands) and for data traffic (file contents). When requesting a file transfer, the host making the request identifies the corresponding data connection by its [[OSI model#Layer 3: Network Layer|network layer]] and [[OSI model#Layer 4: Transport Layer|transport layer]] addresses. If the host making the request lies behind a simple NAT firewall, the translation of the IP address and/or TCP port number makes the information received by the server invalid. The [[Session Initiation Protocol]] (SIP) controls many [[Voice over IP]] (VoIP) calls, &lt;!-- Calls also use H.323 in some systems --&gt; and suffers the same problem. SIP and SDP may use multiple ports to set up a connection and transmit voice stream via [[Real-time Transport Protocol|RTP]]. IP addresses and port numbers are encoded in the payload data and must be known prior to the traversal of NATs. Without special techniques, such as [[STUN]], NAT behavior is unpredictable and communications may fail.
+
+[[Application Layer Gateway|Application layer gateway]] (ALG) software or hardware may correct these problems. An ALG software module running on a NAT firewall device updates any payload data made invalid by address translation. ALGs obviously need to understand the higher-layer protocol that they need to fix, and so each protocol with this problem requires a separate ALG.  For example, on many Linux systems, there are kernel modules called ''connection trackers'' which serve to implement ALGs. However, ALG does not work if the control channel is encrypted (e.g. [[FTPS#Firewall_incompatibilities|FTPS]]).
+
+Another possible solution to this problem is to use [[NAT traversal]] techniques using protocols such as [[STUN]] or [[Interactive Connectivity Establishment|ICE]], or proprietary approaches in a [[Session Border Controller|session border controller]]. NAT traversal is possible in both TCP- and UDP-based applications, but [[UDP hole punching|the UDP-based technique]] is simpler, more widely understood, and more compatible with legacy NATs.{{Citation needed|date=February 2011}} In either case, the high level protocol must be designed with NAT traversal in mind, and it does not work reliably across symmetric NATs or other poorly-behaved legacy NATs.
+
+Other possibilities are [[Universal Plug and Play|UPnP]] (Universal Plug and Play) or [[NAT-PMP]] (NAT Port Mapping Protocol), but these require the cooperation of the NAT device.
+
+Most traditional client-server protocols (FTP being the main exception), however, do not send layer 3 contact information and therefore do not require any special treatment by NATs. In fact, avoiding NAT complications is practically a requirement when designing new higher-layer protocols today (e.g. the use of [[SSH_File_Transfer_Protocol|SFTP]] instead of FTP).
+
+NATs can also cause problems where [[IPsec]] encryption is applied and in cases where multiple devices such as [[Session Initiation Protocol|SIP]] phones are located behind a NAT. Phones which encrypt their signaling with IPsec &lt;!-- ( &lt;=== not necessarily.  SIPS and RTPS do not necessarily employ IPSec) --&gt; encapsulate the port information within an encrypted packet, meaning that NA(P)T devices cannot access and translate the port. In these cases the NA(P)T devices revert to simple NAT operation. This means that all traffic returning to the NAT will be mapped onto one client causing service to more than one client &quot;behind&quot; the NAT to fail. There are a couple of solutions to this problem: one is to use [[Transport Layer Security|TLS]], which operates at level 4 in the [[ISO/OSI Reference Model|OSI Reference Model]] and therefore does not mask the port number; another is to encapsulate the IPsec within [[User Datagram Protocol|UDP]] - the latter being the solution chosen by [[TISPAN]] to achieve secure NAT traversal.
+
+The DNS protocol vulnerability announced by [[Dan Kaminsky]] on July 8, 2008  is indirectly affected by NAT port mapping. To avoid DNS server [[cache poisoning]], it is highly desirable to not translate UDP source port numbers of outgoing DNS requests from a DNS server which is behind a firewall which implements NAT. The recommended work-around for the DNS vulnerability is to make all caching DNS servers use randomized UDP source ports. If the NAT function de-randomizes the UDP source ports, the DNS server will be made vulnerable.
+
+== Advantages of PAT ==
+In addition to the advantages provided by NAT:
+*PAT (Port Address Translation) allows many internal hosts to share a single external IP address.
+*Users who do not require support for inbound connections [[IPv4 address exhaustion|do not consume public IP addresses]].
+
+==Drawbacks==
+The primary purpose of IP-masquerading NAT is that it has been a practical solution to the impending exhaustion of IPv4 address space. Even large networks can be connected to the Internet with as little as a single IP address. The more common arrangement is having machines that require end-to-end connectivity supplied with a routable IP address, while having machines that do not provide services to outside users behind NAT with only a few IP addresses used to enable Internet access, however, this brings some problems, outlined below.
+
+Some&lt;ref&gt;Larry L. Peterson; and Bruce S. Davie; ''Computer Networks: A Systems Approach'', Morgan Kaufmann, 2003, pp. 328-330, ISBN 1-55860-832-X&lt;/ref&gt; have also called this exact feature a major drawback, since it delays the need for the implementation of [[IPv6]]:&lt;blockquote&gt;
+&quot;[...] it is possible that its [NAT's] widespread use will significantly delay the need to deploy IPv6. [...] It is probably safe to say that networks would be better off without NAT [...]&quot;
+&lt;/blockquote&gt;
+
+Hosts behind NAT-enabled routers do not have [[end-to-end connectivity]] and cannot participate in some Internet protocols. Services that require the initiation of [[Transmission Control Protocol|TCP]] connections from the outside network, or stateless protocols such as those using [[User Datagram Protocol|UDP]], can be disrupted. Unless the NAT router makes a specific effort to support such protocols, incoming packets cannot reach their destination. Some protocols can accommodate one instance of NAT between participating hosts (&quot;passive mode&quot; [[File Transfer Protocol|FTP]], for example), sometimes with the assistance of an [[application-level gateway]] (see below), but fail when both systems are separated from the Internet by NAT. Use of NAT also complicates [[tunneling protocol]]s such as [[IPsec]] because NAT modifies values in the headers which interfere with the integrity checks done by [[IPsec]] and other tunneling protocols.
+
+End-to-end connectivity has been a core principle of the Internet, supported for example by the [[Internet Architecture Board]]. Current Internet architectural documents observe that NAT is a violation of the End-to-End Principle, but that NAT does have a valid role in careful design.&lt;ref&gt;R. Bush; and D. Meyer; RFC 3439, [http://www.ietf.org/rfc/rfc3439.txt ''Some Internet Architectural Guidelines and Philosophy''], December 2002&lt;/ref&gt; There is considerably more concern with the use of IPv6 NAT, and many IPv6 architects believe IPv6 was intended to remove the need for NAT.&lt;ref&gt;G. Van de Velde ''et al.''; RFC 4864, [http://tools.ietf.org/rfc/rfc4864.txt ''Local Network Protection for IPv6''], May 2007&lt;/ref&gt;
+
+Because of the short-lived nature of the stateful translation tables in NAT routers, devices on the internal network lose IP connectivity typically within a very short period of time unless they implement NAT [[Keepalive|keep-alive]] mechanisms by frequently accessing outside hosts. This dramatically shortens the power reserves on battery-operated hand-held devices and has thwarted more widespread deployment of such IP-native Internet-enabled devices.{{citation needed|date=May 2011}}
+
+Some [[Internet service provider]]s (ISPs), especially in [[India]], [[Russia]], parts of [[Asia]] and other &quot;developing&quot; regions provide their customers only with &quot;local&quot; IP addresses, due to a limited number of external IP addresses allocated to those entities{{Citation needed|date=March 2008}}. Thus, these customers must access services external to the ISP's network through NAT. As a result, the customers cannot achieve true end-to-end connectivity, in violation of the core principles of the Internet as laid out by the [[Internet Architecture Board]]{{Citation needed|date=February 2011}}.
+
+*Scalability - An implementation that only tracks ports can be quickly depleted by internal applications that use multiple simultaneous connections (such as an [[HTTP]] request for a web page with many embedded objects).  This problem can be mitigated by tracking the destination IP address in addition to the port (thus sharing a single local port with many remote hosts), at the expense of implementation complexity and CPU/memory resources of the translation device.
+*Firewall complexity - Because the internal addresses are all disguised behind one publicly-accessible address, it is impossible for external hosts to initiate a connection to a particular internal host without special configuration on the firewall to forward connections to a particular port.  Applications such as [[VOIP]], [[videoconferencing]], and other peer-to-peer applications must use [[NAT traversal]] techniques to function.
+
+== Specifications ==
+
+[[IEEE]] &lt;ref&gt;http://ieeexplore.ieee.org/iel4/6056/16183/00749275.pdf&lt;/ref&gt; Reverse Address and Port Translation (RAPT, or RAT) allows a host whose real IP address is changing from time to time to remain reachable as a server via a fixed home IP address. In principle, this should allow setting up servers on DHCP-run networks. While not a perfect mobility solution, RAPT together with upcoming protocols like DHCP-DDNS, it may end up becoming another useful tool in the network admin's arsenal.
+
+[[IETF]] &lt;ref&gt;http://www3.ietf.org/proceedings/99nov/I-D/draft-ietf-nat-rnat-00.txt&lt;/ref&gt; ''RAPT'' (IP Reachability Using Twice Network Address and Port Translation) The RAT device maps an IP datagram to its associated CN and 0MN by using three additional fields: the IP protocol type number and the transport layer source and destination connection identifiers (e.g. TCP port number or ICMP echo request/reply ID field).
+
+[[Cisco]] ''RAPT'' implementation is PAT (Port Address Translation) or overloading , and maps multiple private IP addresses to a single public IP address. Multiple addresses can be mapped to a single address because each private address is tracked by a port number.
+PAT uses unique source port numbers on the inside global IP address to distinguish between translations.  The port number is encoded in 16 bits. The total number of internal addresses that can be translated to one external address could theoretically be as high as 65,536 per IP address. Realistically, the number of ports that can be assigned a single IP address is around 4000. PAT will attempt to preserve the original source port. If this source port is already used, PAT will assign the first available port number starting from the beginning of the appropriate port group 0-511, 512-1023, or 1024-65535. When there are no more ports available and there is more than one external IP address configured, PAT moves to the next IP address to try to allocate the original source port again. This process continues until it runs out of available ports and external IP addresses.
+
+[[3COM]] '''{{US patent|6055236}}''' (Method and system for locating network services with distributed network address translation) Methods and system for locating network services with distributed network address translation. Digital certificates are created that allow an external network device on an external network, such as the Internet, to request a service from an internal network device on an internal distributed network address translation network, such as a stub local area network. The digital certificates include information obtained with a Port Allocation Protocol used for distributed network address translation. The digital certificates are published on the internal network so they are accessible to external network devices. An external network device retrieves a digital certificate, extracts appropriate information, and sends a service request packet to an internal network device on an internal distributed network address translation network. The external network device is able to locate and request a service from an internal network device. An external network device can also request a security service, such as an Internet Protocol security (&quot;IPsec&quot;) service from an internal network device. The external network device and the internal network device can establish a security service (e.g., Internet Key Exchange protocol service). The internal network device and external network device can then establish a Security Association using Security Parameter Indexes (&quot;SPI&quot;) obtained using a distributed network address translation protocol. External network devices can request services, and security services on internal network devices on an internal distribute network address translation network that were previously unknown and unavailable to the external network devices.
+
+==Examples of NAT software==
+* [[Internet Connection Sharing]] (ICS): Windows NAT+DHCP since W98SE
+* [[WinGate (computing)|WinGate]]: like ICS plus lots of control
+* [[iptables]]: the Linux packet filter and NAT (interface for NetFilter)
+* [[IPFilter]]: Solaris, NetBSD, FreeBSD, xMach.
+* [[PF (firewall)]]: The OpenBSD Packet Filter.
+* [[Netfilter]] Linux packet filter framework
+
+==See also==
+* [[AYIYA]] (IPv6 over IPv4 UDP thus working IPv6 tunneling over most NATs)
+* [[Carrier Grade NAT]]
+* [[Firewall (networking)|Firewall]]
+* [[Gateway (telecommunications)|Gateway]]
+* [[Internet Gateway Device Protocol|Internet Gateway Device (IGD) Protocol]]: UPnP NAT-traversal method
+* [[Middlebox]]
+* [[IPv4|Internet Protocol version 4]]
+* [[IPv6 transition mechanisms#NAT-PT|NAT-PT]]
+* [[Port forwarding]]
+* [[Port triggering]]
+* [[Private IP address]]
+* [[Proxy server]]
+* [[Routing]]
+* [[Subnetwork|Subnet]]
+* [[TCP and UDP port|port]]
+* [[Teredo tunneling]]: NAT traversal using IPv6
+
+==References==
+{{Reflist}}
+
+==External links==
+* [http://nattest.net.in.tum.de NAT-Traversal Test and results]
+* [http://nutss.net/pub/imc05-tcpnat/ Characterization of different TCP NATs] â Paper discussing the different types of NAT
+* [http://www.cisco.com/en/US/about/ac123/ac147/archived_issues/ipj_7-3/anatomy.html Anatomy: A Look Inside Network Address Translators â Volume 7, Issue 3, September 2004]
+* [http://computer.howstuffworks.com/nat.htm/printable Jeff Tyson, HowStuffWorks: ''How Network Address Translation Works'']
+* [http://www.newport-networks.com/whitepapers/nat-traversal1.html NAT traversal techniques in multimedia Networks] â White Paper from Newport Networks
+* [http://www.brynosaurus.com/pub/net/p2pnat/ Peer-to-Peer Communication Across Network Address Translators] [http://www.brynosaurus.com/pub/net/p2pnat.pdf (PDF)] â NAT traversal techniques for UDP and TCP
+* http://www.zdnetasia.com/insight/network/0,39044847,39050002,00.htm
+* RFCs
+** RFC 1631 (Status: Obsolete) - The IP Network Address Translator (NAT)
+** RFC 1918 - Address Allocation for Private Internets
+** RFC 3022 (Status: Informational) â Traditional IP Network Address Translator (Traditional NAT)
+** RFC 4008 (Status: Standards Track) â Definitions of Managed Objects for Network Address Translators (NAT)
+** RFC 5128 (Status: Informational) - State of Peer-to-Peer (P2P) Communications across Network Address Translators (NATs)
+** RFC 4966 (Status: Informational) - Reasons to Move the Network Address Translator - Protocol Translator (NAT-PT) to Historic Status
+* [http://www.fourmilab.ch/speakfree/unix/ ''Speak Freely'' End of Life Announcement] â John Walker's discussion of why he stopped developing a famous program for free Internet communication, part of which is directly related to NAT
+* [http://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/network-natd.html natd]
+* [http://www.cainetworks.com/support/training/snat-dnat-ocs.html SNAT, DNAT and OCS2007R2] â discussing the SNAT in Microsoft OCS 2007R2
+* Alternative Taxonomy (Part of the documentation for the IBM iSeries)
+** [http://publib.boulder.ibm.com/infocenter/iseries/v5r3/index.jsp?topic=/rzajw/rzajwstatic.htm Static NAT]
+** [http://publib.boulder.ibm.com/infocenter/iseries/v5r3/index.jsp?topic=/rzajw/rzajwdynamic.htm Dynamic NAT]
+** [http://publib.boulder.ibm.com/infocenter/iseries/v5r3/index.jsp?topic=/rzajw/rzajwaddmasq.htm Masquerade NAT]
+* [http://blog.ipexpert.com/2009/09/07/network-address-translation-nat/ Network Address Translation - NAT]
+* Cisco Systems
+** Document ID 6450: [http://www.cisco.com/en/US/tech/tk648/tk361/technologies_tech_note09186a0080094831.shtml How NAT Works]
+** Document ID 26704: [http://www.cisco.com/en/US/tech/tk648/tk361/technologies_q_and_a_item09186a00800e523b.shtml Network Address Translation (NAT) FAQ]
+** White Paper: [http://www.cisco.com/en/US/technologies/tk648/tk361/tk438/technologies_white_paper09186a0080091cb9.html Cisco IOS Network Address Translation Overview]
+** Cisco IOS NAT Commands [http://www.cisco.com/univercd/cc/td/doc/product/software/ios113ed/cs/csprtd/csprtd11/csnat.htm Cisco IOS commands]
+** Animation [http://www.cisco.com/image/gif/paws/6450/nat.swf Cisco NAT sample]
+
+{{DEFAULTSORT:Network Address Translation}}
+[[Category:Network Address Translation|*]]
+[[Category:Internet architecture]]
+
+[[ar:ØªØ±Ø¬ÙØ© Ø¹ÙÙØ§Ù Ø´Ø¨ÙØ©]]
+[[an:Network Address Translation]]
+[[bg:Network address translation]]
+[[cs:Network address translation]]
+[[da:Network Address Translation]]
+[[de:Network Address Translation]]
+[[et:VÃµrguaadresside tÃµlkimine]]
+[[es:Network Address Translation]]
+[[eu:NAT]]
+[[fa:Ø¨Ø±Ú¯Ø±Ø¯Ø§Ù ÙØ´Ø§ÙÛ Ø´Ø¨Ú©Ù]]
+[[fr:Network address translation]]
+[[ko:ë¤í¸ìí¬ ì£¼ì ë³í]]
+[[id:Translasi alamat jaringan]]
+[[is:Network address translation]]
+[[it:Network address translation]]
+[[he:Network Address Translation]]
+[[hu:HÃ¡lÃ³zati cÃ­mfordÃ­tÃ¡s]]
+[[nl:Network address translation]]
+[[ja:ãããã¯ã¼ã¯ã¢ãã¬ã¹å¤æ]]
+[[no:Network Address Translation]]
+[[pms:NAT]]
+[[pl:Network Address Translation]]
+[[pt:Network address translation]]
+[[ru:NAT]]
+[[simple:Network address translation]]
+[[sk:Network address translation]]
+[[sr:NAT]]
+[[fi:Osoitteenmuunnos]]
+[[sv:Network Address Translation]]
+[[tr:NAT]]
+[[uk:NAT]]
+[[vi:BiÃªn dá»ch Äá»a chá» máº¡ng]]
+[[zh:ç½ç»å°åè½¬æ¢]]</rev></revisions></page></pages></query></api>

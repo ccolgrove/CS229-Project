@@ -1,0 +1,248 @@
+<?xml version="1.0"?><api><query><pages><page pageid="905962" ns="0" title="TrueCrypt"><revisions><rev xml:space="preserve">{{Infobox software
+| logo = [[Image:TrueCrypt Logo.png]]
+| screenshot             = [[Image:TrueCrypt on windows vista.png|285px]]
+| caption                = TrueCrypt on Windows
+| developer              = TrueCrypt Foundation
+| latest release version = 7.1
+| latest release date    = {{release date|2011|09|01}} 
+| programming language   = [[C (programming language)|C]], [[C++]], [[Assembly language|Assembly]]
+| operating system       = [[Cross-platform]] - Windows, Mac OS, Linux, [[DragonFly BSD]] &lt;ref name=&quot;dragonfly&quot;&gt;{{cite web | title=DragonFly On-Line Manual Pages | url=http://leaf.dragonflybsd.org/cgi/web-man?command=tcplay&amp;section=ANY | publisher= DragonFly BSD Project | accessdate=2011-07-17}}&lt;/ref&gt; using the tcplay implementation
+| language               = [http://www.truecrypt.org/localizations.php 30 languages]&lt;BR&gt;(although most are incomplete translations)
+| genre                  = [[Disk encryption software]]
+| license                = [[Source available]] ([http://www.truecrypt.org/legal/license TrueCrypt License])
+| website                = [http://www.truecrypt.org/ www.truecrypt.org]
+}}
+'''TrueCrypt''' is a [[software application]] used for [[on-the-fly encryption]] (OTFE). It is free ([[Gratis versus libre|in terms]] of cost and commercial usage) and [[open source software|open source]].{{citation needed|date=October 2011}} It can create a virtual encrypted disk within a file or encrypt a [[Disk partitioning|partition]] or (under [[MS Windows]] except [[Windows 2000]]) the entire [[Data storage device|storage device]] ([[pre-boot authentication]]).
+
+== Operating systems ==
+TrueCrypt supports [[Microsoft Windows]], [[Mac OS X]], and [[Linux]] operating systems&lt;ref name=&quot;op_sys&quot;&gt;{{cite web | title=Supported Operating Systems | url=http://www.truecrypt.org/docs/?s=supported-operating-systems | publisher=TrueCrypt Foundation | accessdate=2010-08-13}}&lt;/ref&gt; (using [[Filesystem in Userspace|FUSE]]). Both [[32-bit]] and [[64-bit]] versions of these operating systems are supported, except for Windows [[Itanium|IA-64]] (not supported) and Mac OS X 10.6 Snow Leopard (runs as a 32-bit process).&lt;ref name=&quot;op_sys&quot;/&gt; The version for Windows 7, Windows Vista, or Windows XP can encrypt the [[booting|boot]] partition or entire boot drive.&lt;ref&gt;{{cite web | title=Operating Systems Supported for System Encryption | url=http://www.truecrypt.org/docs/?s=sys-encryption-supported-os | publisher=TrueCrypt Foundation | accessdate=2010-08-13}}&lt;/ref&gt; There is an independent, compatible implementation, tcplay, for [[DragonFly BSD]].&lt;ref name=&quot;dragonfly&quot;/&gt;
+
+== Cryptographic algorithms ==
+Individual algorithms supported by TrueCrypt are [[Advanced Encryption Standard|AES]], [[Serpent (cipher)|Serpent]], and [[Twofish]]. Additionally, five different combinations of [[Superencryption|cascaded]] algorithms are available: AES-Twofish, AES-Twofish-Serpent, Serpent-AES, Serpent-Twofish-AES and Twofish-Serpent. The [[cryptographic hash function]]s used by TrueCrypt are [[RIPEMD-160]], [[SHA-512]], and [[Whirlpool (cryptography)|Whirlpool]].
+
+=== Modes of operation ===
+TrueCrypt currently uses the [[Disk_encryption_theory#XTS|XTS]] [[block cipher modes of operation|mode of operation]]. Prior to this, TrueCrypt used [[Disk_encryption_theory#LRW|LRW mode]] in versions 4.1 through 4.3a, and [[Block_cipher_modes_of_operation#Cipher-block_chaining_.28CBC.29|CBC mode]] in versions 4.0 and earlier.&lt;ref name=&quot;version-history&quot;&gt;{{cite web|url=http://www.truecrypt.org/docs/?s=version-history|title=TrueCrypt version history|publisher=TrueCrypt Foundation|accessdate=2009-10-01}}&lt;/ref&gt; XTS mode is thought to be more secure than LRW mode, which in turn is more secure than CBC mode.&lt;ref name=&quot;Fruhwirth&quot;&gt;{{cite web |first = Clemens |last = Fruhwirth |url = http://clemens.endorphin.org/nmihde/nmihde-A4-ds.pdf |title = New Methods in Hard Disk Encryption |format = PDF |publisher = Institute for Computer Languages, Theory and Logic Group, Vienna University of Technology |date =  2005-07-18 |accessdate = 2007-03-10}}&lt;/ref&gt;
+
+Although new volumes can only be created in XTS mode, TrueCrypt is [[backward compatible]] with older volumes using LRW mode and CBC mode.&lt;ref name=&quot;version-history&quot; /&gt; Later versions produce a security warning when mounting CBC mode volumes and recommend that they be replaced with new volumes in XTS mode.
+
+==Performance==
+TrueCrypt supports [[Data parallelism|parallelized]]&lt;ref&gt;[http://www.truecrypt.org/docs/?s=parallelization Parallel encryption for multi-core systems]&lt;/ref&gt; encryption for [[multiprocessing|multi-core systems]] and, under Microsoft Windows, [[Pipeline (computing)|pipelined]] read/write operations (a form of asynchronous processing)&lt;ref&gt;[http://www.truecrypt.org/docs/?s=pipelining Pipelining support only under Windows as for ver 6.3a]&lt;/ref&gt; to reduce the performance hit of encryption and decryption. On some Intel processors, TrueCrypt supports [[AES instruction set|hardware-accelerated AES]] to further improve performance.&lt;ref&gt;http://www.truecrypt.org/docs/hardware-acceleration&lt;/ref&gt; The performance impact of disk encryption is especially noticeable on operations which would normally use [[Direct Memory Access]] (DMA), as all data must pass through the CPU for decryption, rather than being copied directly from disk to RAM.
+
+In a test carried out by [[Tom's Hardware]], although TrueCrypt is slower compared to an unencrypted disk, the overhead of [[On-the-fly encryption|real-time encryption]] was found to be similar regardless of whether mid-range or state-of-the-art hardware is in use, and this impact was &quot;quite acceptable&quot;.&lt;ref&gt;http://www.tomshardware.com/reviews/bitlocker-truecrypt-encryption,2587-9.html&lt;/ref&gt; In another article the performance cost was found to be unnoticeable when working with &quot;popular desktop applications in a reasonable manner&quot;, but it was noted that &quot;power users will complain&quot;.&lt;ref&gt;http://www.tomshardware.com/reviews/truecrypt-security-hdd,2125-11.html&lt;/ref&gt;
+
+== Security concerns ==
+&lt;!-- Before criticising this software, please read the TrueCrypt page I link to in the following paragraph.  *ALL* software-based disk encryption programs are vulnerable to tampering!!!!!!!!!!!!!!!!! --&gt;
+
+TrueCrypt is vulnerable to various known attacks. To prevent them, the documentation distributed with TrueCrypt requires users to follow various security precautions.&lt;ref&gt;[http://www.truecrypt.org/docs/?s=security-requirements-and-precautions Security Requirements and Precautions]&lt;/ref&gt; Some of those attacks are detailed below.
+
+===Plausible deniability===
+TrueCrypt supports a concept called [[plausible deniability]],&lt;ref&gt;http://www.truecrypt.org/docs/?s=plausible-deniability&lt;/ref&gt; by allowing a single &quot;hidden volume&quot; to be created within another volume.&lt;ref&gt;http://www.truecrypt.org/docs/?s=hidden-volume&lt;/ref&gt; In addition, the Windows versions of TrueCrypt have the ability to create and run a hidden encrypted operating system whose [[deniable encryption|existence may be denied]].&lt;ref&gt;http://www.truecrypt.org/docs/hidden-operating-system&lt;/ref&gt;
+
+The TrueCrypt documentation lists [http://www.truecrypt.org/docs/?s=hidden-volume-precautions many ways] in which TrueCrypt's hidden volume deniability features may be compromised (e.g. by third party software which may leak information through temporary files, thumbnails, etc., to unencrypted disks) and possible ways to avoid this.&lt;ref&gt;http://www.truecrypt.org/docs/?s=hidden-volume-precautions&lt;/ref&gt; In a paper published in 2008 and focused on the then latest version (v5.1a) and its plausible deniability, a team of security researchers led by [[Bruce Schneier]] states that [[Windows Vista]], [[Microsoft Word]], [[Google Desktop]], and others store information on unencrypted disks, which might compromise TrueCrypt's plausible deniability. The study suggested the addition of a hidden operating system functionality; this feature was added in TrueCrypt 6.0. When a hidden operating system is running, TrueCrypt also makes local unencrypted filesystems and non-hidden TrueCrypt volumes read-only to prevent data leaks.&lt;ref&gt;http://www.truecrypt.org/docs/?s=hidden-operating-system&lt;/ref&gt; The security of TrueCrypt's implementation of this feature was not evaluated because the first version of TrueCrypt with this option had only recently been released.&lt;ref&gt;{{cite conference |booktitle=3rd USENIX Workshop on Hot Topics in Security |title=Defeating Encrypted and Deniable File Systems: TrueCrypt v5.1a and the Case of the Tattling OS and Applications |url=http://www.cs.washington.edu/homes/supersat/paper-truecrypt-dfs.pdf |author=Alexei Czeskis, David J. St. Hilaire, Karl Koscher, Steven D. Gribble, Tadayoshi Kohno, Bruce Schneier |date=2008-07-18 }}&lt;/ref&gt;
+
+=== Identifying TrueCrypt volumes ===
+{{original research|section|date=October 2011}}
+While TrueCrypt volumes do not contain known file headers and their content is indistinguishable from random data, it is theoretically impossible to identify such files as being TrueCrypt volumes without knowing their passwords.{{citation needed|date=October 2011}} However, this brings up the question as to whether the presence of a file made entirely of statistically random bits may be sufficient to create [[reasonable suspicion]] that they contain encrypted data,{{or|date=October 2011}} thereby giving rise to [[probable cause]]. TrueCrypt volume files have file sizes that are evenly divisible by 512 and their content passes [[Chi-squared statistic|chi-squared]] [[randomness test]]s.{{citation needed|date=October 2011}} Although these features give reason to suspect a file to be a TrueCrypt volume, there are, however, some programs which exist for the purpose of securely erasing files by employing a method of overwriting file contents, and free disk space, with purely random data (i.e., &quot;shred&quot; &amp; &quot;scrub&quot;&lt;ref&gt;http://code.google.com/p/diskscrub/&lt;/ref&gt;), thereby creating reasonable doubt to counter pointed accusations declaring a file, made of statistically random data, to be a TrueCrypt file.&lt;ref&gt;http://www.freeotfe.org/docs/Main/plausible_deniability.htm#level_3_heading_2&lt;/ref&gt;&lt;ref&gt;http://www.forensicinnovations.com/blog/?p=7&lt;/ref&gt;
+
+If a system drive, or a partition on it, has been encrypted with TrueCrypt, then the above paragraph applies only to the contents of that drive/partition.{{or|date=October 2011}} However, when the TrueCrypt [[boot loader]] replaces the normal boot loader, an offline analysis of the drive can positively determine that a TrueCrypt boot loader is present.  Even though there are features to obfuscate its purpose (i.e.,  displaying a BIOS-like message to misdirect an observer such as, &quot;Non-system disk&quot; or &quot;disk error&quot;), these reduce the functionality of the TrueCrypt boot loader, and there still remains anecdotal evidence{{citation needed|date=October 2011}} that there may be an alternate scheme in place (i.e., the flicker of the hard-drive light when the &quot;Return&quot; key is pressed and the entered password is checked).{{citation needed|date=October 2011}}
+
+=== Passwords stored in memory ===
+TrueCrypt stores its keys in RAM; on an ordinary personal computer the DRAM will maintain its contents for several seconds after power is cut (or longer if the temperature is lowered). Even if there is some degradation in the memory contents, various algorithms can intelligently recover the keys. This method, known as a [[cold boot attack]] (which would apply in particular to a notebook computer obtained while in power-on, suspended, or screen-locked mode), has been successfully used to attack a file system protected by TrueCrypt.&lt;ref&gt;{{cite web |url=http://www.usenix.org/event/sec08/tech/full_papers/halderman/halderman_html/ |title=Lest We Remember: Cold Boot Attacks on Encryption Keys |author=Alex Halderman et al.}}&lt;/ref&gt;
+
+=== Physical security ===
+
+TrueCrypt documentation states that TrueCrypt is unable to secure data on a computer if an attacker physically accessed it and TrueCrypt is used on the compromised computer by the user again (this does not apply to a common case of a stolen, lost, or confiscated computer).&lt;ref&gt;{{cite web | url = http://www.truecrypt.org/docs/?s=physical-security | title = TrueCrypt documentation - Physical security | publisher = truecrypt.org }}&lt;/ref&gt; The attacker having physical access to a computer can, for example, install a hardware/software [[keylogger]], a [[Bus mastering|bus-mastering]] device capturing [[RAM|memory]], or install any other malicious [[Hardware Trojan (computing)|hardware]] or [[malware|software]], allowing the attacker to capture unencrypted data (including encryption keys and passwords), or to decrypt encrypted data using captured passwords or encryption keys. Therefore, physical security is a basic premise of a secure system. Attacks such as this are often called &quot;[[Evil Maid attack|evil maid attacks]]&quot;.&lt;ref&gt;{{cite web |author=Bruce Schneier |date=2009-10-23 |title=&quot;Evil Maid&quot; Attacks on Encrypted Hard Drives |publisher=Schneier on Security |url=https://www.schneier.com/blog/archives/2009/10/evil_maid_attac.html }}&lt;/ref&gt;
+
+=== Malware ===
+
+TrueCrypt documentation states that TrueCrypt cannot secure data on a computer if it has any kind of malware installed. Some kinds of malware are designed to log keystrokes, including typed passwords, that may then be sent to the attacker over the Internet or saved to an unencrypted local drive from which the attacker might be able to read it later, when he or she gains physical access to the computer.&lt;ref&gt;[http://www.truecrypt.org/docs/?s=malware TrueCrypt documentation: Malware]. Accessed on: April 10, 2011&lt;/ref&gt;
+
+=== The &quot;Stoned&quot; bootkit ===
+The &quot;Stoned&quot; [[bootkit]], an [[Master Boot Record|MBR]] [[rootkit]] presented by Austrian software developer Peter Kleissner at the [[Black Hat Briefings|Black Hat]] Technical Security Conference USA 2009,&lt;ref&gt;{{cite web | url = http://www.blackhat.com/presentations/bh-usa-09/KLEISSNER/BHUSA09-Kleissner-StonedBootkit-PAPER.pdf | title = Stoned bootkit White Paper | publisher = Peter Kleissner | work = Black Hat Technical Security Conference USA 2009 | format = PDF | accessdate = 2009-08-05 }}&lt;/ref&gt;&lt;ref&gt;{{cite web | url = http://www.blackhat.com/presentations/bh-usa-09/KLEISSNER/BHUSA09-Kleissner-StonedBootkit-SLIDES.pdf | title = Stoned bootkit Presentation Slides | publisher = Peter Kleissner | work = Black Hat Technical Security Conference USA 2009 | format = PDF | accessdate = 2009-08-05 }}&lt;/ref&gt; has been shown capable of tampering TrueCrypt's MBR effectively bypassing TrueCrypt's [[full disk encryption|full volume encryption]].&lt;ref&gt;{{cite web | url = http://www.h-online.com/security/Bootkit-bypasses-hard-disk-encryption--/news/113884 | title = Bootkit bypasses hard disk encryption | publisher = Heise Media UK Ltd. | work = The H-Security (H-Online.com) | accessdate = 2009-08-05 }}&lt;/ref&gt;&lt;ref&gt;{{cite news |author=David M Williams |date=2009-09-07 |title=The dark side of open source software is Stoned |publisher=iTWire |url=http://www.itwire.com/opinion-and-analysis/the-linux-distillery/27503-the-dark-side-of-open-source-software-is-stoned }}&lt;/ref&gt;&lt;ref&gt;{{cite web | url = http://simonhunt.wordpress.com/2009/08/04/truecrypt-vs-peter-kleissner-or-stoned-bootkit-revisited | title = TrueCrypt vs Peter Kleissner, Or Stoned BootKit Revisited.. | publisher = Simon Hunt | accessdate = 2009-08-05 }}&lt;/ref&gt;&lt;ref&gt;{{cite news |author=Uli Ries |date=2009-07-30 |title=Bootkit hebelt FestplattenverschlÃ¼sselung aus |language=German |publisher=Heise Online |url=http://www.heise.de/newsticker/meldung/Bootkit-hebelt-Festplattenverschluesselung-aus-748859.html }}&lt;/ref&gt;&lt;ref&gt;{{cite news |date=2009-07-30 |title=Windows-Hacking: TrueCrypt VerschlÃ¼sselung umgangen |language=German |publisher=Gulli News |url=http://www.gulli.com/news/windows-hacking-truecrypt-2009-07-30 }}&lt;/ref&gt; (but potentially every [[hard disk drive|hard disk]] encryption software is affected too if it does not rely on hardware-based encryption technologies like [[Trusted Platform Module|TPM]], orâeven if it doesâif this type of attack is made with administrative privileges while the encrypted operating system is running).&lt;ref&gt;{{cite web | url = http://www.stoned-vienna.com/downloads/TrueCrypt%20Foundation%20Mail%2018.%20Juli%202009.tif | title = Stoned bootkit attacking TrueCrypt's full volume encryption | publisher = TrueCrypt Foundation mail in response to Peter Kleissner on 18/07/2009 | accessdate = 2009-08-05 }}&lt;/ref&gt;&lt;ref name=&quot;TPM support&quot;&gt;{{cite web | url = http://www.truecrypt.org/faq#tpm | title = Some encryption programs use TPM to prevent attacks. Will TrueCrypt use it too? | publisher = TrueCrypt Foundation | work = TrueCrypt FAQ | accessdate = 2011-08-24 }}&lt;/ref&gt;
+
+Two types of attack scenarios exist in which it is possible to maliciously take advantage of this bootkit: in the first one, the user is required to [[Execution (computing)|launch]] the bootkit with administrative privileges once the PC has already booted into Windows; in the second one, analogously to [[hardware keylogger]]s, a malicious person needs physical access to the user's TrueCrypt-encrypted hard disk: in this context this is needed to modify the user's TrueCrypt MBR with the Stoned's one and then place the hard disk back on the unknowing user's PC, so that when the user boots the PC and types his/her TrueCrypt password on boot, the &quot;Stoned&quot; bootkit intercepts it thereafter because, from that moment on, the Stoned bootkit is loaded before TrueCrypt's MBR in the boot sequence. The first type of attack can be prevented as usual by good security practices, e.g. avoid running non-trusted [[executable]]s with administrative privileges. The second one can be successfully neutralized by the user if he/she suspects that the encrypted hard disk might have been physically available to someone he/she doesn't trust, by booting the encrypted operating system with TrueCrypt's Rescue Disk instead of booting it directly from the hard disk and restoring boot loader in MBR.&lt;ref&gt;{{cite web | url = http://peterkleissner.com/?p=11 | title = TrueCrypt Foundation is a joke to the security industry, pro Microsoft | publisher = Peter Kleissner | work = Peter Kleissner post and expert comments about Stoned bootkit | accessdate = 2009-08-05 }}&lt;/ref&gt;
+
+== Operation Satyagraha ==
+In July 2008, several TrueCrypt-secured hard drives were seized from a Brazilian banker [[Daniel Dantas]], who was suspected of financial crimes. The Brazilian National Institute of Criminology (INC) tried unsuccessfully for five months to obtain access to TrueCrypt-protected disks owned by the banker, after which they enlisted the help of the [[FBI]]. The FBI used [[dictionary attack]]s against Dantas' disks for over 12 months, but were still unable to decrypt them.&lt;ref name=&quot;Dantas&quot;&gt;{{cite web | author=J. Leyden | title=Brazilian banker's crypto baffles FBI | url=http://www.theregister.co.uk/2010/06/28/brazil_banker_crypto_lock_out/ | publisher=The Register | year=2010 | accessdate=2010-08-13}}&lt;/ref&gt;
+
+== Licensing ==
+The TrueCrypt License has not been officially approved by the [[Open Source Initiative]] and is not considered &quot;free&quot; by several major [[Linux distribution]]s (Arch Linux,&lt;ref&gt;[http://projects.archlinux.org/svntogit/packages.git/tree/truecrypt/repos/extra-i686/PKGBUILD Arch Linux Truecrypt PKGBUILD] Accessed on: July 17, 2011&lt;/ref&gt; Debian,&lt;ref&gt;[http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=364034 Debian Bug report logs - #364034]. Accessed on: January 12, 2009.&lt;/ref&gt; Ubuntu,&lt;ref&gt;[https://bugs.edge.launchpad.net/ubuntu/+bug/109701 Bug #109701 in Ubuntu]. Accessed on: April 20, 2009&lt;/ref&gt; Fedora,&lt;ref&gt;[http://lists.freedesktop.org/archives/distributions/2008-October/000276.html TrueCrypt licensing concern] Accessed on: April 20, 2009&lt;/ref&gt; openSUSE,&lt;ref&gt;[http://lists.opensuse.org/opensuse-buildservice/2008-10/msg00055.html non-OSI compliant packages in the openSUSE Build Service]. Accessed on: April 20, 2009&lt;/ref&gt; Gentoo&lt;ref&gt;[http://bugs.gentoo.org/show_bug.cgi?id=241650 Gentoo bug 241650]. Accessed on: April 20, 2009&lt;/ref&gt;), mainly because of distribution and copyright-liability reasons.&lt;ref&gt;[http://lists.freedesktop.org/archives/distributions/2008-October/000276.html Tom Calloway of Red Hat about TrueCrypt licensing concern] Accessed on July 10, 2009&lt;/ref&gt;
+
+TrueCrypt 6.3a (released Nov 2009) comes under TrueCrypt License Version 2.8 which was changed in some places from the 2.5 license, but TrueCrypt is still not included in any of the major Linux distributions.
+
+== Developers/Owners identities and related concerns ==
+
+The TrueCrypt developers use the [[pseudonym|aliases]] &quot;ennead&quot; and &quot;syncon&quot;, but later replaced all references to these aliases on their website with &quot;The TrueCrypt Foundation&quot; in 2010.&lt;ref&gt;http://sourceforge.net/projects/truecrypt/?showfeed=project_info&lt;/ref&gt;
+
+The [[domain name]] &quot;truecrypt.org&quot; was originally registered to a false address (&quot;NAVAS Station, [[ANTARCTICA]]&quot;),&lt;ref&gt;[http://www.webreportr.com/sites/truecrypt.org webreportr.com] domain information for TrueCrypt&lt;/ref&gt;&lt;ref&gt;http://www.who.is/website-information/truecrypt.org/ who.is [[WHOIS]]&lt;/ref&gt; and was later concealed behind a [[Network Solutions]] private registration.&lt;ref&gt;[http://www.networksolutions.com/whois-search/truecrypt.org Network Solutions WHOIS]&lt;/ref&gt;
+
+The ''TrueCrypt'' [[trademark]] was registered in the [[Czech Republic]] under name of &quot;David TesaÅÃ­k&quot;.&lt;ref&gt;[http://www.wipo.int/ipdl/en/ Intellectual Property Digital Library]; search trademarks directory for [http://www.wipo.int/ipdl/en/madrid/key.jsp?KEY=925625 IRN/925625]&lt;/ref&gt;
+
+In February 2010, the TrueCrypt website published a contact address in [[Nevada]], USA for the ''TrueCrypt Foundation''. The domain name truecrypt.org and the TrueCrypt trademarks (US and international/WIPO) were subsequently registered to the ''TrueCrypt Developers Association, LC'', also registered in Nevada.
+
+The anonymity of the developers and the abnormalities mentioned above have led some{{Who|date=July 2011}} to raise suspicions about the provenance of the product and speculate about the possible existence of vulnerabilities or backdoors that might exist in the source code or executables.&lt;ref&gt;[http://www.privacylover.com/encryption/analysis-is-there-a-backdoor-in-truecrypt-is-truecrypt-a-cia-honeypot/ Analysis: Is there a backdoor in Truecrypt? Is Truecrypt a CIA honeypot?]. Accessed on: April 10, 2011&lt;/ref&gt;
+
+== Planned features ==
+According to the TrueCrypt website&lt;ref&gt;[http://www.truecrypt.org/future.php Features to be implemented in future versions]&lt;/ref&gt; the following features are planned for future releases:
+
+* [[Command line]] options for volume creation (already implemented in Linux and Mac OS X versions)
+* &quot;Raw&quot; CD/DVD volumes
+
+== TrueCrypt and the Trusted Platform Module ==
+The FAQ section of the TrueCrypt website states that the [[Trusted Platform Module]] (TPM) cannot be relied upon for security, because if the attacker has physical or administrative access to the computer and you use it afterwards, the computer could have been modified by the attacker e.g. a malicious componentâsuch as a hardware keystroke loggerâcould have been used to capture the password or other sensitive information.  Since the TPM does not prevent an attacker from maliciously modifying the computer, TrueCrypt will not support the TPM.&lt;ref name=&quot;TPM support&quot; /&gt;
+
+== Version history ==
+TrueCrypt is based on ''Encryption for the Masses'' ([[E4M]]), an open source on-the-fly encryption program first released in 1997. However, E4M was discontinued in 2000 as the author, Paul Le Roux, began working on commercial encryption software.
+
+{| class=&quot;wikitable collapsible&quot;
+|- style=&quot;background:#f2f2f2;&quot;
+!width=&quot;6%&quot;|Version
+!width=&quot;14%&quot;|Release Date
+!width=&quot;80%&quot;|Significant Changes
+|-
+| 1.0
+| February 2, 2004
+| Initial release. Featured support for Windows 98, ME, 2000, and XP. Added plausible deniability for containers (although due to its simplistic nature, the practical value of the &quot;plausible deniability&quot; offered in this version is debatable),&lt;ref&gt;[http://www.freeotfe.org/docs/plausible_deniability.htm Plausible Deniability]&lt;/ref&gt; and various bugfixes and improvements over E4M.
+|-
+| 1.0a
+| February 3, 2004
+| Removed support for Windows 98 and ME because the author of the Windows 9x driver for E4M (the [[ScramDisk]] driver) gave no permission that would allow his code to be used in projects derived from E4M.&lt;ref name=&quot;e4m-scramdisk&quot;&gt;The authors of [[Scramdisk]] and E4M exchanged some code â the author of Scramdisk provided a driver for Windows 9x, and the author of E4M provided a driver for Windows NT, enabling cross-platform versions of both programs.&lt;/ref&gt;
+|-
+| 2.0
+| June 7, 2004
+| Added AES algorithm. Release made under the [[GNU General Public License]], and signed as the ''TrueCrypt Foundation'' â previous versions were signed by ''TrueCrypt Team''.
+|-
+| 2.1
+| June 21, 2004
+| New release due to licencing issues relating to the GNU General Public License. This release was made under original E4M license.&lt;ref name=&quot;users-guide-3.1a&quot;&gt;{{cite web |url=http://security.ngoinabox.org/Programs/Security/Encryption%20Tools/TrueCrypt/TrueCrypt%20User%20Guide.pdf |title= TrueCrypt User's Guide |publisher= TrueCrypt Foundation |work= TrueCrypt Version 3.1a |format=PDF |page=44 |date=2005-02-07 |accessdate= 2007-05-01 &lt;!-- *In case of emergency, break comment* |archiveurl= http://www.webcitation.org/5OVNHv4CB |archivedate= 2007-05-01 --&gt; |archiveurl = http://web.archive.org/web/20070327140654/http://security.ngoinabox.org/Programs/Security/Encryption+Tools/TrueCrypt/TrueCrypt+User+Guide.pdf &lt;!-- Bot retrieved archive --&gt; |archivedate = 2007-03-27}}&lt;/ref&gt; Added RIPEMD-160, size of a volume was no longer limited to 2048 GB, ability to create NTFS volumes.
+|-
+| 2.1a
+| October 1, 2004
+| Removed [[International Data Encryption Algorithm|IDEA]] encryption algorithm. Version released on [[SourceForge.net]], which became the official TrueCrypt domain. The official TrueCrypt domain moved back to truecrypt.org again at the beginning of May 2005, and the SourceForge website redirects to there.
+|-
+| 3.0
+| December 10, 2004
+| Added hidden volume support for containers. Added the Serpent and Twofish algorithms, along with cascaded cipher support.
+|-
+| 3.1
+| January 22, 2005
+| Added portable &quot;Traveller mode&quot;, along with new volume mounting options such as being able to mount as &quot;read only&quot;.
+|-
+| 4.0
+| November 1, 2005
+| Added support for Linux, x86-64, [[Big Endian]] machines, keyfiles, hot keys, ability to protect hidden volumes against corruption when their outer volumes are mounted, favorite volumes, the [[Whirlpool (algorithm)|Whirlpool]] hash algorithm, and language packs.
+|-
+| 4.1
+| November 25, 2005
+| Added LRW mode, which is more secure than CBC mode for on-the-fly storage encryption.&lt;ref name = Fruhwirth /&gt; LRW mode also neutralized an exploit that could (under certain circumstances) be used to compromise the plausible deniability of a TrueCrypt volume by allowing it to be distinguished from random data.&lt;ref name=&quot;version-history&quot; /&gt;
+|-
+| 4.2
+| April 17, 2006
+| Added various features to the Linux version, such as the ability to create volumes, change passwords and keyfiles, generate keyfiles, and backup/restore volume headers. In the Windows version, it introduced support for dynamic (sparse file) volumes.
+|-
+| 4.3
+| March 19, 2007
+| Added support for Windows Vista, support for file systems using sector sizes other than 512 bytes. This release phased out support of 64-bit block ciphers, disallowing creation of new containers using the [[Blowfish (cipher)|Blowfish]], [[CAST-128]], or [[Triple DES]] algorithms.
+|-
+| 5.0
+| February 5, 2008
+| Introduced XTS mode of operation, which is more secure than LRW mode. Added Mac OS X support, Linux GUI and Windows system disk encryption with pre-boot authentication, ability of creation of hidden volumes within NTFS volumes, but removed the ability to create hidden volumes on Linux, use the tool on a non-gui console and the ability to create encrypted partitions from the text mode. Encrypting the system volume for Windows 2000 is no longer supported (encrypting containers and non-system volumes are still supported, however). [[Pipelining]], SHA-512.
+|-
+| 5.1
+| March 10, 2008
+| Added support for hibernation on Windows computers where the system partition is encrypted, the ability to mount a partition in Windows that is within the key scope of system encryption without pre-boot authentication, and added command line options for creating new volumes in Linux and Mac OS X. This version also reduced the minimum memory requirements for the TrueCrypt Boot Loader (AES) from 42 KB to 27 KB in Windows and included significant improvements in AES encryption/decryption performance. Changed to [[Assembly language|assembly]] implementation of AES.&lt;ref name=&quot;version-history 5.1a&quot;&gt;{{cite web | url = http://www.truecrypt.org/docs/?s=version-history | title = Version History Part 1 | publisher = TrueCrypt Foundation | work = TrueCrypt Documentation | accessdate = 2008-06-04 }}&lt;/ref&gt;
+|-
+| 6.0
+| July 4, 2008
+| Parallelized encryption/decryption on [[multi-core]] processors (or multi-processor systems). Increase in encryption/decryption speed is directly proportional to the number of cores and/or processors. [[Deniable encryption]] support. Volume format updated to allow for a built-in backup, which allows recovery of containers with minor damage to their headers. Ability to create hidden volumes under Mac OS X and Linux.
+|-
+| 6.0a
+| July 8, 2008
+| On systems where certain inappropriately designed chipset drivers were installed, it was impossible to encrypt the system partition/drive. This will no longer occur. Other minor bug fixes.
+|-
+| 6.1
+| October 31, 2008
+| Ability to encrypt a non-system partition without losing existing data on the partition (in place encryption) on Windows Vista and Windows 2008. Added support for [[security token]]s and [[smart cards]] (two-factor authentication), though only to store keyfiles (without encryption). TrueCrypt boot loader now customizable. Pre-boot passwords can be used to mount non-system volumes. Linux and Mac OS X versions can now mount an encrypted Windows system partition.
+|-
+| 6.1a
+| December 1, 2008
+| Minor improvements, bug fixes, and security enhancements.
+|-
+| 6.2
+| May 11, 2009
+| The I/O pipeline of the Windows version now uses read-ahead buffering to improve read performance, especially on solid-state drives.
+|-
+| 6.2a
+| June 15, 2009
+| Improved file container creation speed on systems that have issues with write block sizes greater than 64 KB. The &quot;Device not ready&quot; error will no longer occur when the process of decrypting a system partition/drive is finished. Other minor improvements and bug fixes.
+|-
+| 6.3
+| October 21, 2009
+| Full support for Windows 7 and Mac OS X 10.6 Snow Leopard. &quot;System Favorite Volumes&quot; that allow regular TrueCrypt volumes to be mounted before system and application services start and before users start logging on.
+|-
+| 6.3a
+| November 23, 2009
+| &quot;Minor&quot; unspecified improvements and bug fixes.
+|-
+| 7.0
+| July 19, 2010
+| Hardware-accelerated AES. Encryption of hibernation files on Windows Vista and later. Automounting of volumes.
+|-
+| 7.0a
+| September 6, 2010
+| Workaround for a bug that caused system crashes when hibernating Truecrypt-encrypted systems. Other minor bug fixes and minor improvements.
+|-
+| 7.1
+| September 1, 2011
+| Full compatibility with 64-bit and 32-bit Mac OS X 10.7 Lion. Minor improvements and bug fixes  (Windows, Mac OS X, and Linux).
+|}
+
+==See also==
+
+{{col-begin}}
+{{col-break}}
+* [[Disk encryption software]]
+* [[Comparison of disk encryption software]]
+{{col-break}}
+{{Portal|Cryptography}}
+{{col-end}}
+
+== References and notes ==
+{{Reflist|colwidth=30em}}
+
+== External links ==
+{{Commons category}}
+* {{Official website|http://www.truecrypt.org/}}
+
+{{Crypto navbox}}
+
+{{DEFAULTSORT:Truecrypt}}
+[[Category:2004 software]]
+[[Category:Cross-platform software]]
+[[Category:Cryptographic software]]
+[[Category:Disk encryption]]
+[[Category:Linux security software]]
+[[Category:Windows software]]
+[[Category:Software that uses wxWidgets]]
+
+[[ar:ØªØ±ÙÙØ±Ø¨Øª]]
+[[bs:TrueCrypt]]
+[[cs:TrueCrypt]]
+[[de:TrueCrypt]]
+[[es:TrueCrypt]]
+[[fr:TrueCrypt]]
+[[ko:í¸ë£¨í¬ë¦½í¸]]
+[[id:TrueCrypt]]
+[[is:TrueCrypt]]
+[[it:TrueCrypt]]
+[[hu:TrueCrypt]]
+[[nl:TrueCrypt]]
+[[ja:TrueCrypt]]
+[[pl:TrueCrypt]]
+[[pt:TrueCrypt]]
+[[ru:TrueCrypt]]
+[[fi:TrueCrypt]]
+[[sv:TrueCrypt]]
+[[th:TrueCrypt]]
+[[tr:TrueCrypt]]
+[[uk:TrueCrypt]]</rev></revisions></page></pages></query></api>

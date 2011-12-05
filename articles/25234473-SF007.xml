@@ -1,0 +1,885 @@
+<?xml version="1.0"?><api><query><pages><page pageid="25234473" ns="0" title="CyanogenMod"><revisions><rev xml:space="preserve">{{primary sources|date=November 2011}}
+{{infobox OS 
+| logo                   = [[file:CyanogenModLogo.png|frameless]]
+| screenshot             = [[file:Screenshot-1318632299047.png|frameless]]
+| developer              = Cyanogen (Steve Kondik) / CyanogenMod team
+| source_model           = [[Free and open source software]]
+| supported_platforms    = [[ARM architecture|ARM]]
+| ui                     = ADW.Launcher
+| released               = 3.1 (Dream &amp; Magic)
+| latest_release_version = 7.1.0 (various)
+| latest_release_date    = {{release date|2011|10|10}}
+&lt;!-- (Commenting out while latest preview/unstable is older than latest stable) | latest_preview_version = 7.1.0 RC1
+| latest_preview_date    = {{release date|2011|6|26}}--&gt;
+| marketing_target       = [[Firmware]] replacement for [[Android (operating system)|Android]] Mobile Devices
+| programmed_in          = [[C (programming language)|C]] (core), [[C++]] (some third party libraries), [[Java (programming language)|Java]] (UI)
+| kernel_type            = [[Monolithic kernel|Monolithic]] (modified [[Linux kernel]])
+| language               = 
+| updatemodel            = 
+| package_manager        = 
+| working_state          = 
+| license                = [[Apache License]] 2 and [[GNU General Public License]] v2&lt;ref name=&quot;Licenses&quot;&gt;{{cite web |url=http://source.android.com/source/licenses.html |title=Licenses |work=Android Open Source Project |publisher=[[Open Handset Alliance]] |accessdate=15 Sept 2010}}&lt;/ref&gt;
+| website                = {{url|http://www.cyanogenmod.com/}}
+}}
+'''CyanogenMod''' is an [[after-market (general)|after-market]] replacement for the [[firmware]] of over sixty [[cell phone]]s and [[Internet tablet]]s. Based on the [[Android (operating system)|Android]] mobile computer [[operating system]], it offers features and options not found in the official firmware distributed by vendors of these devices.
+
+Features supported by CyanogenMod include native [[skin (computing)|theming]] support (also known as the &quot;T-Mobile Theme Engine&quot;), a codec for the [[Free Lossless Audio Codec]] (FLAC), a large [[Access Point Name]] list, an [[OpenVPN]] client, a reboot menu, support for Wi-Fi, Bluetooth, and USB [[tethering]], CPU [[overclocking]], soft buttons and other &quot;tablet tweaks&quot;, toggles in the notification pull-down (such as [[Wi-Fi]], [[Bluetooth]] and [[GPS]]), as well as other interface enhancements. CyanogenMod is also stated to increase performance and reliability compared with official firmware releases.&lt;ref&gt;[http://www.cyanogenmod.com/about|CyanogenMod's About Page]&lt;/ref&gt;
+
+CyanogenMod is developed as [[free and open source software]] based on the official releases of Android by [[Google, Inc.]] together with original and third-party code.
+
+Although only a subset of total CyanogenMod users elect to report their use of the firmware,&lt;ref&gt;{{cite web|url=http://www.cyanogenmod.com/blog/cmstats-what-it-is-and-why-you-should-opt-in|title=CM Stats explanation|author=|date=|work=|publisher=|accessdate=27 Oct 2011}}&lt;/ref&gt; as of 30 November 2011, CyanogenMod has recorded over 850,000 active installs on a multitude of devices.&lt;ref&gt;{{cite web |url=http://stats.cyanogenmod.com |title=CyanogenMod Stats |author= |date= |work= |publisher= |accessdate=21 Oct 2011}}&lt;/ref&gt;
+
+== History and development ==
+Shortly following the introduction of the [[HTC Dream]] (known as the &quot;T-Mobile G1&quot; in the United States) mobile phone in September 2008, a method was discovered to attain privileged control (known as &quot;[[Superuser|root access]]&quot;) within Android's Linux-based subsystem.&lt;ref&gt;{{cite web |url=http://theandroidsite.com/2009/05/14/how-to-root-your-g1-and-install-android-15-cupcake |title=How To: Root Your G1 And Install Android 1.5 Cupcake |author=Ben Marvin |date=14 May 2009 |work=The Android Site |publisher= |accessdate=28 Oct 2010}}&lt;/ref&gt; Having root access, combined with the [[open source]] nature of the Android operating system, allowed the phone's stock firmware to be modified and re-installed onto the phone.
+
+In the following year, several modified firmwares for the Dream were developed and distributed by Android enthusiasts. One, maintained by a developer named ''JesusFreke'', quickly became popular among Dream owners. In August, 2009, JesusFreke stopped work on his firmware, and suggested users switch to a version of his rom that had been further enhanced by developer ''Cyanogen'' (Steve Kondik) called &quot;CyanogenMod&quot;.&lt;ref&gt;[http://jf.andblogs.net/2009/08/20/calling-it-quits/ JesusFreke calls it quits]&lt;/ref&gt;
+
+CyanogenMod quickly grew in popularity, and a small community of developers, known as the CyanogenMod Team (and informally as &quot;Team Douche&quot;),&lt;ref&gt;{{cite web |url=http://www.talkandroid.com/16074-modders-round-table-with-team-douche-makers-of-cyanogenmod/ |title=Modders round table with Team Douche, makers of CyanogenMod |author=Dustin Karnes |date=2 October 2010 |work=TalkAndroid |publisher= |accessdate=22 Nov 2011}}&lt;/ref&gt; made contributions. Within a few months, the number of devices and features supported by CyanogenMod blossomed and CyanogenMod quickly became one of the most popular Android firmware distributions.
+
+=== CyanogenMod 6 ===
+
+Steve Kondik released CyanogenMod 6, based on Android 2.2 codenamed &quot;Froyo&quot;, for the [[Nexus One]], [[HTC Dream|Dream]], [[HTC Magic|Magic]], [[Motorola Droid|Droid]], [[HTC Aria|Aria]], [[HTC Legend|Legend]], [[HTC Desire|Desire]], [[HTC Evo 4G|Evo 4G]], [[HTC Hero|Hero]], [[HTC Wildfire|Wildfire]], [[Droid Incredible|Incredible]] and [[T-Mobile myTouch 3G Slide|myTouch 3G Slide]].&lt;ref&gt;{{cite web|url=http://twitter.com/#!/cyanogen/status/16867767987 |title=CM6 targets|author=Cyanogen |date=23 June 2010|work=[[Twitter]]|publisher=|accessdate=23 Dec 2010}}&lt;/ref&gt; A release candidate of CyanogenMod 6 became available on 11 July 2010,&lt;ref&gt;{{cite web|url=http://www.cyanogenmod.com/home/cyanogenmod-6-0-0-rc1|title=CyanogenMod-6.0.0 RC1 |author=Cyanogen |date=11 July 2010|work=CyanogenMod blog |publisher= |accessdate=23 Dec 2010}}&lt;/ref&gt; and the stable version was released on 28 August 2010.&lt;ref name=&quot;CM6&quot;&gt;{{cite web|url=http://lifehacker.com/5624778/cyanogenmod-60-released-brings-custom-froyo-goodness-to-tons-of-android-phones|title=CyanogenMod 6.0 Released, Brings Custom Froyo Goodness to Tons of Android Phones|author=Whitson Gordon |date=29 August 2010|work=[[Lifehacker]]|publisher=[[Gawker Media]] |accessdate=23 Dec 2010}}&lt;/ref&gt;
+
+=== CyanogenMod 7 ===
+
+The current CyanogenMod firmware is based on Android 2.3 (Gingerbread) with additional custom code contributed by the CyanogenMod Team. The custom portions of CyanogenMod are primarily written by Cyanogen (Steve Kondik) but include contributions from the [[xda-developers]] community (such as an enhanced launcher tray, an improved dialer, and an improved browser) as well as code from established open source projects (as with the inclusion of [[BusyBox]] in the shell).&lt;ref&gt;[http://forum.xda-developers.com/showthread.php?t=567610CyanogenMod development thread].&lt;/ref&gt;
+
+CyanogenMod 7 development began when Google released Android 2.3 (Gingerbread)'s source code.&lt;ref&gt;{{cite web|url=http://twitter.com/#!/cyanogen/status/15881087129493504|title=Gingerbread Release |author=Cyanogen |date=17 December 2010|work=[[Twitter]] |publisher= |accessdate=23 Dec 2010}}&lt;/ref&gt; On 15 February 2011, the first release candidates of CyanogenMod 7 was rolled out on several of the supported devices.&lt;ref&gt;{{cite web|url=http://www.cyanogenmod.com/home/cyanogenmod-7-release-candidates|title=CyanogenMod-7 Release Candidates! |author=Cyanogen |date=16 February 2011 |work=CyanogenMod blog |publisher= |accessdate=16 Feb 2011}}&lt;/ref&gt;&lt;ref&gt;{{cite web|url=http://lifehacker.com/#!5762028/cyanogenmod-7-rc-brings-gingerbready-goodness-canned-sms-responses-to-android|title=CyanogenMod 7 RC Brings Gingerbready Goodness, Canned SMS Responses to Android |author=Whitson Gordon |date=16 February 2011|work=[[Lifehacker]]|publisher=[[Gawker Media]] |accessdate=16 Feb 2011}}&lt;/ref&gt; The fourth release candidate was released on 30 March 2011 and brought increased support for the [[Nook Color]] and similar devices as well as many bug fixes.&lt;ref&gt;{{cite web|url=http://www.cyanogenmod.com/blog/cyanogenmod-7-0-0-rc4-has-arrived|title=CyanogenMod-7.0.0-RC4 has arrived |author=Cyanogen |date=30 March 2011|work=CyanogenMod blog |publisher= |accessdate=30 Mar 2011}}&lt;/ref&gt; On 11 April 2011, the public version of CyanogenMod 7.0 was released, based on Android 2.3.3.&lt;ref name=&quot;CM7 Release&quot;&gt;{{cite web|url=http://www.cyanogenmod.com/blog/cyanogenmod-7-0-released|title=CyanogenMod 7.0 Released! |author=Cyanogen |date=10 April 2011 |work=CyanogenMod blog|publisher= |accessdate=10 Apr 2011}}&lt;/ref&gt; The latest stable version, CyanogenMod 7.1, was released on 10 October 2011, based on Android 2.3.7.&lt;ref name=&quot;CM7.1 Released&quot;&gt;{{cite web|url=http://www.cyanogenmod.com/blog/cyanogenmod-7-1-released|title=CyanogenMod 7.1 Released! |author=Cyanogen |date=10 October 2011 |work=CyanogenMod blog|publisher= |accessdate=10 Oct 2011}}&lt;/ref&gt;
+[[File:My 4G phone.jpg|thumb|A myTouch 4G running [[CyanogenMod]]]]
+
+=== CyanogenMod 8 ===
+
+CyanogenMod version 8 was planned to be based on the Honeycomb (3.x) release of Android. However, no source code for Honeycomb was provided by Google until it appeared in the tree history of the Ice Cream Sandwich (4.0) source release. Since Honeycomb was superseded by Ice Cream Sandwich, the release schedule will continue directly from CyanogenMod 7 to CyanogenMod 9.
+
+=== CyanogenMod 9 ===
+
+The next version, based on Google's Ice Cream Sandwich (4.x) branch of Android, will be called CyanogenMod 9.&lt;ref&gt;[http://an.droid-life.com/2011/10/19/cyanogenmod-wont-work-on-cm9-until-ice-cream-sandwich-source-is-released | Android-Life.com story on CM9 and ICS]&lt;/ref&gt; Steve Kondik and his team have announced that they have begun work on the new release after Google released the source code to Android 4.0.1. &lt;ref name=&quot;CM9 Started&quot;&gt;[https://twitter.com/#!/cyanogen/status/136313427248431104 @cyanogen cyanogen ..and we're off. check back in 2 months :) #cm9 #ics], 2011/11/15, Twitter&lt;/ref&gt; By the last days of November, some alpha versions had been distributed, in particular for the Samsung mobile phones [[Nexus S]] and [[Samsung Galaxy S|Galaxy S]].&lt;ref name=&quot;koush_alpha_9&quot;&gt;[http://androidcommunity.com/samsung-nexus-s-android-4-0-cyanogenmod-9-alpha-hands-on-video-20111128/ Samsung Nexus S Android 4.0 CyanogenMod 9 Alpha hands-on [Video]], ''Android Community'' website, November 28, 2011&lt;/ref&gt;
+
+== Tools ==
+
+The CyanogenMod source code repository also contains the ClockworkMod Recovery (a &quot;recovery image&quot;, maintained by Koushik &quot;Koush&quot; Dutta), which is used to install CyanogenMod and other custom upgrades. A recovery image is a special [[booting|boot]] mode, which is used to back up or restore the device's storage and repair or upgrade system software. ClockworkMod Recovery can be automatically installed onto many rooted devices supported by CyanogenMod with Dutta's companion app, &quot;[[Rom Manager]]&quot;, which is available on the [[Android Market]].
+
+== Industry reaction ==
+
+Until recently, the response of tablet and smartphone manufacturers and mobile carrier has typically been less than supportive of third-party firmware development. Manufacturers had expressed concern about improper functioning of devices running unofficial software&lt;ref name=htcdev&gt;{{cite web| title=Unlock Bootloader | url=http://htcdev.com/bootloader/ | accessdate=2011-10-30}}&lt;/ref&gt; and related support costs. Moreover, firmware such as CyanogenMod sometimes offer features for which carriers would otherwise charge a premium (e.g. [[Tethering]]). As a result, technical obstacles such as locked [[bootloaders]] and restricted access to root permissions were common in many devices.
+
+However, as community-developed software has grown popular&lt;ref&gt;[http://www.zdnet.com/blog/perlow/cyanogenmod-cm7-teach-your-old-droid-new-tricks/15574|ZDNet discusses popularity of CyanogenMod]&lt;/ref&gt;&lt;ref&gt;[http://androidandme.com/2011/08/devices/popular-android-aftermarket-firmware-miui-gets-its-own-superphone/ AndroidAndMe: MIUI firmware is &quot;popular&quot;]&lt;/ref&gt; and following a statement by the Librarian of Congress that permits the use of &quot;jailbreaking&quot; mobile devices,&lt;ref&gt;[http://www.tuaw.com/2010/07/26/library-of-congress-rules-in-favor-of-jailbreaking/ LoC rules in favor of jailbreaking]&lt;/ref&gt; manufacturers and carriers have softened their position regarding CyanogenMod and other unofficial firmware distributions, with some including [[HTC]]&lt;ref&gt;[http://htcdev.com/bootloader HTC's bootloader unlock page]&lt;/ref&gt; and [[Motorola]]&lt;ref&gt;[http://techcrunch.com/2011/10/24/motorola-offers-unlocked-bootloader-tool-for-droid-razr-verizon-removes-it/ Motorola Offers Unlocked Bootloader Tool]&lt;/ref&gt; even actively providing support and encouraging development.
+
+In 2011, the need to circumvent hardware restrictions to install unofficial firmware lessened as an increasing number of devices shipped with unlocked or unlockable [[bootloader]]s, similar to the [[Nexus#Google smartphones|Nexus]] series of phones. Device manufacturer [[HTC]] has announced that it would support aftermarket software developers by making the bootloaders of all new devices unlockable,&lt;ref name=htcdev /&gt; and Samsung sent several [[Galaxy S II]] phones to the CyanogenMod team with the express purpose of bringing CyanogenMod to the device.&lt;ref&gt;{{Cite web|url=http://www.androidcentral.com/cyanogenmod-coming-galaxy-sii-thanks-samsung |title=CyanogenMod coming to the Galaxy S 2, thanks to Samsung |date=6 June 2011 |work=Android Central}}&lt;/ref&gt; Mobile carrier [[T-Mobile]] has voiced its support for the CyanogenMod project, tweeting &quot;CM7 is great!&quot;&lt;ref&gt;[https://twitter.com/#!/TMobile/status/60111542494048256|T-Mobiletweets &quot;CM7 is great!&quot;]&lt;/ref&gt;
+
+== Licensing ==
+
+Until version 4.1.11.1, CyanogenMod included several [[proprietary software]] applications by Google, such as Gmail, Maps, Market, Talk, and [[YouTube]], as well as several proprietary hardware drivers. These packages were included with the vendor distributions of Android, but not licensed for free distribution. After Google sent a [[cease and desist]] letter to CyanogenMod's chief developer, Steve Kondik, in late September 2009 demanding he stop distributing the aforementioned applications, development ceased for a few days.&lt;ref&gt;{{cite web|url=http://androidandme.com/2009/09/hacks/cyanogenmod-in-trouble/ |title=CyanogenMod in trouble? |author=Taylor Wimberly|date=24 September 2009 |work=Android and Me |publisher= |accessdate=28 Oct 2010}}&lt;/ref&gt;&lt;ref&gt;{{cite web|url=http://gizmodo.com/5367420/google-threatens-cyanogen-android-hacker-with-cease+and+desist |title=Google Threatens Cyanogen Android Hacker With Cease-and-Desist |author=Dan Nosowitz |date=25 September 2009 |work=[[Gizmodo]]|publisher=[[Gawker Media]] |accessdate=28 Oct 2010}}&lt;/ref&gt;&lt;ref&gt;{{cite web|url=http://www.engadget.com/2009/09/24/google-hits-android-rom-modder-with-a-cease-and-desist-letter/ |title=Google hits Android ROM modder with a cease-and-desist letter |author=Nilay Patel |date=24 September 2009 |work=[[Engadget]]|publisher=[[AOL]] |accessdate=28 Oct 2010}}&lt;/ref&gt;&lt;ref name=&quot;eWeek&quot;&gt;{{cite web|url=http://www.eweek.com/c/a/Linux-and-Open-Source/Google-Irks-Android-Developers-with-Cyanogen-Move-837741/ |title=Google Irks Android Developers with Cyanogen Move |author=Darryl K. Taft |date=28 September 2009 |work=eWeek |publisher=[[Ziff Davis]] |accessdate=28 Oct 2010}}&lt;/ref&gt; The reaction from many CyanogenMod users towards Google was hostile, with some claiming that Google's legal threats hurt their own interests, violated their informal corporate motto &quot;[[don't be evil]]&quot; and was a challenge to the open source community Google claimed to embrace.&lt;ref&gt;[http://forum.xda-developers.com/showthread.php?t=564623 One of many forum discussions on the Google C&amp;D].&lt;/ref&gt;&lt;ref&gt;[http://groups.google.com/group/android-discuss/browse_thread/thread/b0537bc784852862 Reaction to C&amp;D on Google's own discussion forum].&lt;/ref&gt;&lt;ref&gt;[http://groups.google.com/group/android-discuss/browse_thread/thread/49fa89c14d965f11 Another thread on Google's Android forum].&lt;/ref&gt;
+
+Following a statement from Google clarifying its position&lt;ref&gt;{{cite web|url=http://android-developers.blogspot.com/2009/09/note-on-google-apps-for-android.html |title=A Note on Google Apps for Android |author=Dan Morrill |date=25 September 2009 |work=Android Developers |publisher= |accessdate=28 Oct 2010}}&lt;/ref&gt; and a subsequent negotiation between Google and Cyanogen, it was resolved that the CyanogenMod project could continue, albeit in a form that did not directly bundle in the proprietary &quot;Google Experience&quot; components.&lt;ref&gt;[http://www.cyanogenmod.com/home/the-current-state Cyanogen updates users on licensing controversy].&lt;/ref&gt;&lt;ref&gt;{{cite web |url=http://www.wired.com/gadgetlab/2009/09/google-cracks-down-on-android-developer/|title=Google Muscles Android Developer, Offers Olive Branch |author=Roselyn Roark |date=28 September 2009 |work=[[Wired (magazine)|Wired]] |publisher= |accessdate=28 Oct 2010}}&lt;/ref&gt; It was determined that the proprietary Google apps may be backed-up from the Google-supplied firmware on the phone and then re-installed onto CyanogenMod releases without infringing copyright.
+
+Cyanogen has also warned that while issues no longer remain with Google, there are still potential licensing problems regarding proprietary, closed-source [[device driver]]s.&lt;ref&gt;[http://twitter.com/cyanogen/status/4456723780 Cyanogen's tweet about the driver issue].&lt;/ref&gt; However, he is rebuilding the [[source tree]], and believes the licensing issues with drivers can be worked out. He is also receiving assistance from Google employees.&lt;ref&gt;[http://www.cyanogenmod.com/home/just-a-quick-update Quick Update from Cyanogen].&lt;/ref&gt;
+
+== Uses ==
+
+CyanogenMod has been used on an [[HTC G1]] Android phone coupled with an [[Arduino]] board to create the autonomous &quot;brain&quot; of a robot.&lt;ref&gt;{{cite web|url=http://www.wired.com/gadgetlab/2010/03/android-robot/ |title=Android Phone Grows Up, Becomes Brain for Real Robot |author=Miran Pavic |date=5 March 2010 |work=[[Wired (magazine)|Wired]] |publisher= |accessdate=28 Oct 2010}}&lt;/ref&gt;
+
+== Version history ==
+{{refimprove section|date=November 2011}}
+
+{| class=&quot;wikitable&quot;
+|-
+! Version
+! Android version
+! Release&lt;br/&gt;date
+|-
+| style=&quot;white-space:nowrap; background:#f66;&quot;| 3.1
+| rowspan=&quot;43&quot; | Android 1.5 (Cupcake)
+| 2009
+|-
+| style=&quot;white-space:nowrap; background:#f66;&quot;| 3.2
+| 2009
+|-
+| style=&quot;white-space:nowrap; background:#f66;&quot;| 3.3
+| 2009
+|-
+| style=&quot;white-space:nowrap; background:#f66;&quot;| 3.3.1
+| 2009
+|-
+| style=&quot;white-space:nowrap; background:#f66;&quot;| 3.3.2
+| 2009
+|-
+| style=&quot;white-space:nowrap; background:#f66;&quot;| 3.3.3
+| 2009
+|-
+| style=&quot;white-space:nowrap; background:#f66;&quot;| 3.3.4
+| 2009
+|-
+| style=&quot;white-space:nowrap; background:#f66;&quot;| 3.3.5
+| 2009
+|-
+| style=&quot;white-space:nowrap; background:#f66;&quot;| 3.3.6
+| 2009
+|-
+| style=&quot;white-space:nowrap; background:#f66;&quot;| 3.3.7
+| 2009
+|-
+| style=&quot;white-space:nowrap; background:#f66;&quot;| 3.3.8
+| 2009
+|-
+| style=&quot;white-space:nowrap; background:#f66;&quot;| 3.4
+| 2009
+|-
+| style=&quot;white-space:nowrap; background:#f66;&quot;| 3.4.1
+| 2009
+|-
+| style=&quot;white-space:nowrap; background:#f66;&quot;| 3.4.2
+| 2009
+|-
+| style=&quot;white-space:nowrap; background:#f66;&quot;| 3.4.3
+| 2009
+|-
+| style=&quot;white-space:nowrap; background:#f66;&quot;| 3.4.4
+| 2009-06-24
+|-
+| style=&quot;white-space:nowrap; background:#f66;&quot;| 3.4.5
+| 2009
+|-
+| style=&quot;white-space:nowrap; background:#f66;&quot;| 3.4.6
+| 2009
+|-
+| style=&quot;white-space:nowrap; background:#f66;&quot;| 3.5
+| 2009
+|-
+| style=&quot;white-space:nowrap; background:#f66;&quot;| 3.5.1
+| 2009
+|-
+| style=&quot;white-space:nowrap; background:#f66;&quot;| 3.5.2
+| 2009
+|-
+| style=&quot;white-space:nowrap; background:#f66;&quot;| 3.5.3
+| 2009-07-01&lt;ref&gt;{{cite web|url=https://twitter.com/#!/cyanogen/status/2411319673|title=CyanogenMod 3.5.3 |author=Cyanogen |date=1 July 2009|work=[[Twitter]] |publisher= |accessdate=18 Nov 2011}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap; background:#f66;&quot;| 3.6
+| 2009
+|-
+| style=&quot;white-space:nowrap; background:#f66;&quot;| 3.6.1
+| 2009-07-03&lt;ref&gt;{{cite web|url=https://twitter.com/#!/cyanogen/status/2447364242|title=CyanogenMod 3.6.1 |author=Cyanogen |date=3 July 2009|work=[[Twitter]] |publisher= |accessdate=18 Nov 2011}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap; background:#f66;&quot;| 3.6.2
+| 2009-07-05
+|-
+| style=&quot;white-space:nowrap; background:#f66;&quot;| 3.6.3
+| 2009
+|-
+| style=&quot;white-space:nowrap; background:#f66;&quot;| 3.6.4.x
+| 2009-07-06
+|-
+| style=&quot;white-space:nowrap; background:#f66;&quot;| 3.6.5
+| 2009-07-09
+|-
+| style=&quot;white-space:nowrap; background:#f66;&quot;| 3.6.6
+| 2009-07-15
+|-
+| style=&quot;white-space:nowrap; background:#f66;&quot;| 3.6.7.x
+| 2009
+|-
+| style=&quot;white-space:nowrap; background:#f66;&quot;| 3.6.8.x
+| 2009-07-20
+|-
+| style=&quot;white-space:nowrap; background:#f66;&quot;| 3.9
+| 2009-07-22
+|-
+| style=&quot;white-space:nowrap; background:#f66;&quot;| 3.9.1
+| 2009-07-28
+|-
+| style=&quot;white-space:nowrap; background:#f66;&quot;| 3.9.2
+| 2009-07-29&lt;ref&gt;{{cite web|url=https://twitter.com/#!/cyanogen/status/2917663487|title=CyanogenMod 3.9.2 |author=Cyanogen |date=29 July 2009|work=[[Twitter]] |publisher= |accessdate=18 Nov 2011}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap; background:#f66;&quot;| 3.9.3
+| 2009
+|-
+| style=&quot;white-space:nowrap; background:#f66;&quot;| 3.9.4
+| 2009-08-02
+|-
+| style=&quot;white-space:nowrap; background:#f66;&quot;| 3.9.5
+| 2009-08-02
+|-
+| style=&quot;white-space:nowrap; background:#f66;&quot;| 3.9.6
+| 2009
+|-
+| style=&quot;white-space:nowrap; background:#f66;&quot;| 3.9.7
+| 2009-08-05
+|-
+| style=&quot;white-space:nowrap; background:#f66;&quot;| 3.9.8
+| 2009-08-12&lt;ref&gt;{{cite web|url=https://twitter.com/#!/cyanogen/statuses/3260102536|title=CyanogenMod 3.9.8 |author=Cyanogen |date=12 August 2009|work=[[Twitter]] |publisher= |accessdate=18 Nov 2011}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap; background:#f66;&quot;| 3.9.9.x
+| 2009
+|-
+| style=&quot;white-space:nowrap; background:#f66;&quot;| 3.9.10
+| 2009
+|-
+| style=&quot;white-space:nowrap; background:#f66;&quot;| 3.9.11.x
+| 2009
+|-
+| style=&quot;white-space:nowrap; background:#f1954a;&quot;| 4.0
+| rowspan=&quot;34&quot; | Android 1.6 (Donut)
+| 2009
+|-
+| style=&quot;white-space:nowrap; background:#f1954a;&quot;| 4.0.1
+| 2009-08-21
+|-
+| style=&quot;white-space:nowrap; background:#f1954a;&quot;| 4.0.2
+| 2009-08-23&lt;ref&gt;{{cite web|url=https://twitter.com/#!/cyanogen/statuses/3481403467|title=CyanogenMod 4.0.2 |author=Cyanogen |date=23 August 2009|work=[[Twitter]] |publisher= |accessdate=18 Nov 2011}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap; background:#f1954a;&quot;| 4.0.3.x
+| 2009-08-28
+|-
+| style=&quot;white-space:nowrap; background:#f1954a;&quot;| 4.0.4
+| 2009-08-29&lt;ref&gt;{{cite web |url=http://www.cyanogenmod.com/blog/4-0-4-is-out |title=4.0.4 is out! |author=Cyanogen |date=29 August 2009 |work=CyanogenMod blog |publisher= |accessdate=18 Nov 2011}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap; background:#f1954a;&quot;| 4.1
+| 2009-08-30&lt;ref&gt;{{cite web |url=http://www.cyanogenmod.com/blog/cm-4-1-experimental-is-out |title=CM-4.1 ExperiMENTAL is out! |author=Cyanogen |date=30 August 2009 |work=CyanogenMod blog |publisher= |accessdate=18 Nov 2011}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap; background:#f1954a;&quot;| 4.1.1
+| 2009-08-31&lt;ref&gt;{{cite web |url=http://www.cyanogenmod.com/blog/4-1-1-posted |title=4.1.1 Posted |author=Cyanogen |date=31 August 2009 |work=CyanogenMod blog |publisher= |accessdate=18 Nov 2011}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap; background:#f1954a;&quot;| 4.1.2.x
+| 2009-09-01&lt;ref&gt;{{cite web|url=https://twitter.com/#!/cyanogen/status/3678560728|title=CyanogenMod 4.1.2 |author=Cyanogen |date=1 September 2009|work=[[Twitter]] |publisher= |accessdate=18 Nov 2011}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap; background:#f1954a;&quot;| 4.1.4
+| 2009-09-06
+|-
+| style=&quot;white-space:nowrap; background:#f1954a;&quot;| 4.1.5
+| 2009-09-08&lt;ref&gt;{{cite web|url=https://www.facebook.com/note.php?note_id=148065696182|title=Android 1.6 inside â 4.1.5 is here. |author=CyanogenMod |date=8 September 2009|work=[[Facebook]] |publisher= |accessdate=18 Nov 2011}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap; background:#f1954a;&quot;| 4.1.6
+| 2009-09-09&lt;ref&gt;{{cite web|url=https://twitter.com/#!/cyanogen/status/3853097248|title=CyanogenMod 4.1.6 |author=Cyanogen |date=9 September 2009|work=[[Twitter]] |publisher= |accessdate=18 Nov 2011}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap; background:#f1954a;&quot;| 4.1.7
+| 2009-09-11&lt;ref&gt;{{cite web|url=https://twitter.com/#!/cyanogen/statuses/3901875031|title=CyanogenMod 4.1.7 |author=Cyanogen |date=11 September 2009|work=[[Twitter]] |publisher= |accessdate=18 Nov 2011}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap; background:#f1954a;&quot;| 4.1.8
+| 2009-09-13&lt;ref&gt;{{cite web |url=http://www.cyanogenmod.com/blog/4-1-8 |title=4.1.8! |author=Cyanogen |date=13 September 2009 |work=CyanogenMod blog |publisher= |accessdate=18 Nov 2011}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap; background:#f1954a;&quot;| 4.1.9.x
+| 2009-09-13
+|-
+| style=&quot;white-space:nowrap; background:#f1954a;&quot;| 4.1.10.x
+| 2009-09-16&lt;ref&gt;{{cite web|url=https://twitter.com/#!/cyanogen/statuses/4018318067|title=CyanogenMod 4.1.10 |author=Cyanogen |date=16 September 2009|work=[[Twitter]] |publisher= |accessdate=18 Nov 2011}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap; background:#f1954a;&quot;| 4.1.11.x
+| 2009-09-18&lt;ref&gt;{{cite web|url=https://twitter.com/#!/cyanogen/status/4071313356|title=CyanogenMod 4.1.11 |author=Cyanogen |date=18 September 2009|work=[[Twitter]] |publisher= |accessdate=18 Nov 2011}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap; background:#f1954a;&quot;| 4.1.99
+| 2009-10-05&lt;ref&gt;{{cite web |url=http://www.cyanogenmod.com/blog/cyanogenmod-4-1-99 |title=CyanogenMod 4.1.99 |author=Cyanogen |date=5 October 2009 |work=CyanogenMod blog |publisher= |accessdate=18 Nov 2011}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap; background:#f1954a;&quot;| 4.1.999
+| 2009-10-07&lt;ref&gt;{{cite web |url=http://www.cyanogenmod.com/blog/cyanogenmod-4-1-999 |title=CyanogenMod 4.1.999 |author=Cyanogen |date=7 October 2009 |work=CyanogenMod blog |publisher= |accessdate=18 Nov 2011}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap; background:#f1954a;&quot;| 4.1.9999
+| 2009-10-18&lt;ref&gt;{{cite web |url=http://www.cyanogenmod.com/blog/cyanogenmod-4-1-9999 |title=CyanogenMod 4.1.9999 |author=Cyanogen |date=20 October 2009 |work=CyanogenMod blog |publisher= |accessdate=18 Nov 2011}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap; background:#f1954a;&quot;| 4.2
+| 2009-10-24&lt;ref&gt;{{cite web |url=http://www.cyanogenmod.com/blog/cyanogenmod-4-2-stable |title=CyanogenMod 4.2 STABLE! |author=Cyanogen |date=24 October 2009 |work=CyanogenMod blog |publisher= |accessdate=18 Nov 2011}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap; background:#f1954a;&quot;| 4.2.1
+| 2009-10-24&lt;ref&gt;{{cite web |url=http://androidandme.com/2009/10/hacks/cyanogenmod-goes-legal-and-stable/ |title=CyanogenMod goes legal and stable |author=Taylor Wimberly |date=26 October 2009 |work=Android and Me |publisher= |accessdate=18 Nov 2011}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap; background:#f1954a;&quot;| 4.2.2
+| 2009-10-28&lt;ref&gt;{{cite web |url=http://www.cyanogenmod.com/blog/cyanogenmod-4-2-2 |title=CyanogenMod-4.2.2 |author=Cyanogen |date=28 October 2009 |work=CyanogenMod blog |publisher= |accessdate=18 Nov 2011}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap; background:#f1954a;&quot;| 4.2.3.x
+| 2009-10-31&lt;ref&gt;{{cite web |url=http://www.cyanogenmod.com/blog/cyanogenmod-4-2-3 |title=CyanogenMod 4.2.3 |author=Cyanogen |date=31 October 2009 |work=CyanogenMod blog |publisher= |accessdate=18 Nov 2011}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap; background:#f1954a;&quot;| 4.2.4
+| 2009-11-12&lt;ref&gt;{{cite web |url=http://www.cyanogenmod.com/blog/cyanogenmod-4-2-4 |title=CyanogenMod 4.2.4 |author=Cyanogen |date=12 November 2009 |work=CyanogenMod blog |publisher= |accessdate=18 Nov 2011}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap; background:#f1954a;&quot;| 4.2.5
+| 2009-11-16&lt;ref&gt;{{cite web |url=http://www.cyanogenmod.com/blog/cyanogenmod-4-2-5 |title=CyanogenMod 4.2.5 |author=Cyanogen |date=16 November 2009 |work=CyanogenMod blog |publisher= |accessdate=18 Nov 2011}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap; background:#f1954a;&quot;| 4.2.7.x
+| 2009-12-03&lt;ref&gt;{{cite web |url=http://www.cyanogenmod.com/blog/cyanogenmod-4-2-7 |title=CyanogenMod-4.2.7 |author=Cyanogen |date=3 December 2009 |work=CyanogenMod blog |publisher= |accessdate=18 Nov 2011}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap; background:#f1954a;&quot;| 4.2.8.x
+| 2009-12-13&lt;ref&gt;{{cite web |url=http://www.cyanogenmod.com/blog/cyanogenmod-4-2-8 |title=CyanogenMod-4.2.8 |author=Cyanogen |date=13 December 2009 |work=CyanogenMod blog |publisher= |accessdate=18 Nov 2011}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap; background:#f1954a;&quot;| 4.2.9.x
+| 2009-12-18&lt;ref&gt;{{cite web |url=http://www.cyanogenmod.com/blog/cyanogenmod-4-2-9 |title=CyanogenMod-4.2.9 |author=Cyanogen |date=18 December 2009 |work=CyanogenMod blog |publisher= |accessdate=18 Nov 2011}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap; background:#f1954a;&quot;| 4.2.10.x
+| 2009-12-24&lt;ref&gt;{{cite web |url=http://www.cyanogenmod.com/blog/cyanogenmod-4-2-10 |title=CyanogenMod-4.2.10! |author=Cyanogen |date=24 December 2009 |work=CyanogenMod blog |publisher= |accessdate=18 Nov 2011}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap; background:#f1954a;&quot;| 4.2.11.x
+| 2009-12-28&lt;ref&gt;{{cite web |url=http://www.cyanogenmod.com/blog/cyanogenmod-4-2-11 |title=CyanogenMod-4.2.11 |author=Cyanogen |date=28 December 2009 |work=CyanogenMod blog |publisher= |accessdate=18 Nov 2011}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap; background:#f1954a;&quot;| 4.2.12.x
+| 2010-01-04&lt;ref&gt;{{cite web |url=http://www.cyanogenmod.com/blog/cyanogenmod-4-2-12 |title=CyanogenMod 4.2.12 |author=Cyanogen |date=4 January 2010 |work=CyanogenMod blog |publisher= |accessdate=18 Nov 2011}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap; background:#f1954a;&quot;| 4.2.13
+| 2010-01-13&lt;ref&gt;{{cite web |url=http://www.cyanogenmod.com/blog/cyanogenmod-4-2-13 |title=CyanogenMod-4.2.13 |author=Cyanogen |date=13 January 2010 |work=CyanogenMod blog |publisher= |accessdate=18 Nov 2011}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap; background:#f1954a;&quot;| 4.2.14.x
+| 2010-01-31&lt;ref&gt;{{cite web |url=http://www.cyanogenmod.com/blog/cyanogenmod-4-2-14 |title=CyanogenMod-4.2.14 |author=Cyanogen |date=31 January 2010 |work=CyanogenMod blog |publisher= |accessdate=18 Nov 2011}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap; background:#f1954a;&quot;| 4.2.15.x
+| 2010-03-04
+|-
+| style=&quot;white-space:nowrap; background:#ffc42c;&quot;| 5.0
+| rowspan=&quot;9&quot; | Android 2.0 / 2.1 (Eclair)
+| 2010-02-14&lt;ref&gt;{{cite web |url=http://www.cyanogenmod.com/home/cyanogenmod-5-0-nexus-one |title=CyanogenMod 5.0 (Nexus One) |author=Cyanogen |date=14 February 2010 |work=CyanogenMod blog |publisher= |accessdate=23 Dec 2010}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap; background:#ffc42c;&quot;| 5.0.1
+| 2010-02-14&lt;ref&gt;{{cite web|url=https://twitter.com/#!/cyanogen/status/9087960170|title=CyanogenMod 5.0.1 |author=Cyanogen |date=14 February 2010|work=[[Twitter]] |publisher= |accessdate=18 Nov 2011}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap; background:#ffc42c;&quot;| 5.0.2
+| 2010-02-14&lt;ref&gt;{{cite web|url=https://twitter.com/#!/cyanogen/status/9103734612|title=CyanogenMod 5.0.2 |author=Cyanogen |date=14 February 2010|work=[[Twitter]] |publisher= |accessdate=18 Nov 2011}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap; background:#ffc42c;&quot;| 5.0.3.x
+| 2010-02-20&lt;ref&gt;{{cite web|url=https://twitter.com/#!/cyanogen/statuses/9380640407|title=CyanogenMod 5.0.3 |author=Cyanogen |date=20 February 2010|work=[[Twitter]] |publisher= |accessdate=18 Nov 2011}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap; background:#ffc42c;&quot;| 5.0.4.x
+| 2010-02-27&lt;ref&gt;{{cite web |url=http://forum.xda-developers.com/showpost.php?p=5743237&amp;postcount=3964 |title=CyanogenMOD 5.0.4 Released |author=Cyanogen |date=27 February 2010 |work=[[xda-developers]] |publisher= |accessdate=23 Dec 2010}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap; background:#ffc42c;&quot;| 5.0.5.x
+| 2010-03-19&lt;ref&gt;{{cite web |url=http://androidspin.com/2010/03/19/cyanogenmod-v5-0-5-for-htcgoogle-nexus-one-released/ |title=CyanogenMOD v5.0.5 for HTC/Google Nexus One Released |author=Chase Bahers |date=19 March 2010 |work=AndroidSPIN |publisher=MobileTweek, Inc |accessdate=23 Dec 2010}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap; background:#ffc42c;&quot;| 5.0.6.x
+| 2010-04-16&lt;ref&gt;{{cite web |url=http://www.cyanogenmod.com/home/cyanogenmod-5-0-6-tax-deductible |title=CyanogenMod 5.0.6&amp;nbsp;â Tax Deductible |author=Cyanogen |date=16 April 2010 |work=CyanogenMod blog |publisher= |accessdate=23 Dec 2010}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap; background:#ffc42c;&quot;| 5.0.7.x
+| 2010-05-25&lt;ref&gt;{{cite web |url=http://www.cyanogenmod.com/home/cyanogenmod-5-0-7-for-dream-and-magic |title=CyanogenMod 5.0.7 for Dream and Magic! |author=Cyanogen |date=25 May 2010 |work=CyanogenMod blog |publisher= |accessdate=23 Dec 2010}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap; background:#ffc42c;&quot;| 5.0.8
+| 2010-07-19&lt;ref&gt;{{cite web |url=http://www.cyanogenmod.com/home/cyanogenmod-5-0-8-has-landed |title=CyanogenMod-5.0.8 has landed! |author=Cyanogen |date=19 July 2010 |work=CyangenMod blog |publisher= |accessdate=23 Dec 2010}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap; background:#ff0;&quot;| 6.0.0
+| rowspan=&quot;2&quot; | Android 2.2 (Froyo)
+| 2010-08-28&lt;ref name=&quot;CM6&quot; /&gt;
+|-
+| style=&quot;white-space:nowrap; background:#ff0;&quot;| 6.1.x
+| 2010-12-06&lt;ref&gt;{{cite web |url=http://www.cyanogenmod.com/home/cyanogenmod-6-1-stable-has-landed |title=CyanogenMod-6.1 Stable Has Landed! |author=Cyanogen |date=6 December 2010 |work=CyanogenMod blog |publisher= |accessdate=23 Dec 2010}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap; background:#cf6;&quot;| 7.0.x
+| rowspan=&quot;2&quot; | Android 2.3 (Gingerbread)
+| 2011-04-10&lt;ref name=&quot;CM7 Release&quot; /&gt;
+|-
+| style=&quot;white-space:nowrap; background:#cf6;&quot;| 7.1.x
+| 2011-10-10&lt;ref&gt;&gt;{{cite web |url=http://www.cyanogenmod.com/blog/cyanogenmod-7-1-released |title=CyanogenMod 7.1 Released |author=Cyanogen |date=10 October 2011 |work=CyanogenMod blog |publisher= |accessdate=10 Oct 2011}}&lt;/ref&gt;
+|}
+
+== Supported devices ==
+
+CyanogenMod officially supports over 60 devices, with many non-official ports also available. Devices that are considered officially-supported include the following:&lt;ref&gt;[http://www.cyanogenmod.com/devices|CyanogenMod's official device list]&lt;/ref&gt;
+
+{|class=&quot;wikitable&quot;
+! style=&quot;width:5%&quot; | Manufacturer
+! style=&quot;width:10%&quot; | Model
+! style=&quot;width:14%&quot; | Code Name
+! style=&quot;width:5%&quot; | Form factor
+! style=&quot;width:14%&quot; | Notes
+! style=&quot;width:4%&quot; | Latest CM Support
+|-
+| [[Advent Computers|Advent]]
+| Vega
+| vega
+| tablet
+| 
+| 7.1.x
+|-
+| [[Barnes and Noble]]
+| [[Nook Color]]
+| encore
+| tablet
+|
+| 7.1.x
+|-
+| Commtiva
+| Z71
+| z71
+| phone
+| Also sold as Apanda A60, Chinavision Excalibur, Cincinnati Bell Blaze , Gigabyte Gsmart G1305, Motorola XT502, Muchtel A1, Nexian Journey, Optimus Boston, Orange Boston, Spice Mi-300 , Vibo A688, WellcoM A88
+| 7.1.x
+|-
+| [[GeeksPhone]]
+| [[GeeksPhone One|One]]
+| one
+| phone
+|
+| 7.1.x
+|-
+| [[GeeksPhone]]
+| Zero
+| zero
+| phone
+|
+| 7.1.x
+|-
+| [[Google]]
+| [[Nexus One]]
+| passion
+| phone
+| Manufactured by [[HTC]].
+| 7.1.x
+|-
+| [[Google]]
+| [[Nexus S]]
+| crespo
+| phone
+| Manufactured by [[Samsung]].
+| 7.1.x
+|-
+| [[Google]]
+| [[Nexus S 4G]]
+| crespo4g
+| phone
+| Manufactured by [[Samsung]].
+| 7.1.x
+|-
+| [[Hewlett Packard]]
+| [[HP TouchPad|TouchPad]]
+| tenderloin
+| tablet
+| Is currently in pre-full official support (alpha).
+| style=&quot;background: yellow&quot; |
+|-
+| [[HTC]]
+| [[HTC Aria|Aria]]
+| liberty
+| phone
+| 
+| 7.1.x
+|-
+| [[HTC]]
+| [[HTC Desire|Desire]] (GSM)
+| bravo
+| phone
+| 
+| 7.1.x
+|-
+| [[HTC]]
+| [[HTC Desire|Desire]] (CDMA)
+| bravoc
+| phone
+| 
+| 7.1.x
+|-
+| [[HTC]]
+| [[HTC Desire HD|Desire HD]]
+| ace
+| phone
+| Also marketed as the [[HTC Inspire 4G|AT&amp;T Inspire 4G]].
+| 7.1.x
+|-
+| [[HTC]]
+| [[Desire S]]
+| saga
+| phone
+| 
+| 7.1.x
+|-
+| [[HTC]]
+| [[HTC Desire Z|Desire Z]]
+| vision
+| phone
+| Also marketed as the T-Mobile G2.
+| 7.1.x
+|-
+| [[HTC]]
+| [[HTC Dream|Dream]]
+| dream_sapphire
+| phone
+| Also marketed as the T-Mobile G1 &amp; Era G1.
+| 6.1.x
+|-
+| [[HTC]]
+| [[HTC Hero#Droid Eris|Eris]]
+| desirec
+| phone
+|
+| 7.1.x
+|-
+| [[HTC]]
+| [[HTC Evo 3D|Evo 3D]] (CDMA)
+| shooter
+| phone
+| Is currently in pre-full official support (alpha).
+| style=&quot;background: yellow&quot; |
+|-
+| [[HTC]]
+| [[HTC Evo 4G|Evo 4G]]
+| supersonic
+| phone
+| 
+| 7.1.x
+|-
+| [[HTC]]
+| [[HTC Evo Shift 4G|Evo Shift 4G]]
+| speedy
+| phone
+| 
+| 7.1.x
+|-
+| [[HTC]]
+| [[HTC Hero|Hero]] (CDMA)
+| heroc
+| phone
+| 
+| 7.1.x
+|-
+| [[HTC]]
+| [[HTC Hero|Hero]] (GSM)
+| hero
+| phone
+| 
+| 7.1.x
+|-
+| [[HTC]]
+| [[Droid Incredible|Incredible]]
+| inc
+| phone
+| 
+| 7.1.x
+|-
+| [[HTC]]
+| [[HTC Incredible S|Incredible 2]]
+| vivow
+| phone
+| 
+| 7.1.x
+|-
+| [[HTC]]
+| [[HTC Incredible S|Incredible S]]
+| vivo
+| phone
+| 
+| 7.1.x
+|-
+| [[HTC]]
+| [[HTC Legend|Legend]]
+| legend
+| phone
+| 
+| 7.x
+|-
+| [[HTC]]
+| [[HTC Magic|Magic]]
+| dream_sapphire
+| phone
+| Also marketed as the T-Mobile myTouch 3G, Rogers HTC Magic, DoCoMo HT-03A
+| 6.1.x
+|-
+| [[HTC]]
+| [[T-Mobile myTouch 4G|myTouch 4G]]
+| glacier
+| phone
+| Also marketed as HTC Panache.
+| 7.1.x
+|-
+| [[HTC]]
+| [[T-Mobile myTouch 4G Slide|myTouch 4G Slide]]
+| doubleshot
+| phone
+| Is currently in pre-full official support (alpha).
+| style=&quot;background: yellow&quot; |
+|-
+| [[HTC]]
+| [[T-Mobile myTouch 3G Slide|myTouch 3G Slide]]
+| espresso
+| phone
+| 
+| 7.1.x
+|-
+| [[HTC]]
+| [[HTC Sensation|Sensation]]
+| pyramid
+| phone
+| Is currently in pre-full official support (alpha).
+| style=&quot;background: yellow&quot; |
+|-
+| [[HTC]]
+| [[HTC Tattoo|Tattoo]]
+| click
+| phone
+| 
+| 7.1.x
+|-
+| [[HTC]]
+| [[HTC Wildfire|Wildfire]]
+| buzz
+| phone
+| 
+| 7.1.x
+|-
+| [[Huawei]]
+| [[T-Mobile Pulse|U8220]]
+| u8220
+| phone
+| Also marketed as the T-Mobile Pulse.
+| 7.1.x
+|-
+| [[LG]]
+| [[LG Optimus 2X|T-Mobile G2x]]
+| p999
+| phone
+| 
+| 7.1.x
+|-
+| [[LG]]
+| [[LG Optimus 2X|Optimus 2X]]
+| p990
+| phone
+| Also marketed as the LG Optimus Speed.
+| 7.1.x
+|-
+| [[LG]]
+| [[LG Optimus Black|Optimus Black]]
+| p970
+| phone
+| Is currently in nightly only official support.
+| style=&quot;background: yellow&quot; |
+|-
+| [[Motorola]]
+| [[Motorola Atrix 4G|Atrix 4G]]
+| olympus
+| phone
+| Is currently in nightly only official support.
+| style=&quot;background: yellow&quot; |
+|-
+| [[Motorola]]
+| [[Motorola Backflip|Backflip]]
+| motus
+| phone
+| 
+| 7.1.x
+|-
+| [[Motorola]]
+| [[Motorola Cliq|Cliq]]
+| morrison
+| phone
+| Also marketed as the Motorola Dext.
+| 7.1.x
+|-
+| [[Motorola]]
+| [[Motorola Cliq#Cliq XT|Cliq XT]]
+| zeppelin
+| phone
+| Also marketed as the Motorola Quench.
+| 7.1.x
+|-
+| [[Motorola]]
+| [[Motorola Defy|Defy]]
+| umts_jordan
+| phone
+| 
+| 7.1.x
+|-
+| [[Motorola]]
+| [[Motorola Droid|Droid]]
+| sholes
+| phone
+| Official support is for only the Motorola Droid, not the Motorola Milestone.
+| 7.1.x
+|-
+| [[Motorola]]
+| [[Motorola Droid 2|Droid 2]]
+| cdma_droid2
+| phone
+| 
+| 7.1.x
+|-
+| [[Motorola]]
+| [[Motorola Droid 2|Droid 2 Global]]
+| cdma_droid2we
+| phone
+| 
+| 7.1.x
+|-
+| [[Motorola]]
+| [[Motorola Droid X|Droid X]]
+| cdma_shadow
+| phone
+| 
+| 7.1.x
+|-
+| [[Samsung]]
+| [[Samsung Galaxy S#In the United States|Captivate]]
+| captivatemtd
+| phone
+| 
+| 7.1.x
+|-
+| [[Samsung]]
+| [[Samsung Galaxy S#In the United States|Fascinate]]
+| fascinatemtd
+| phone
+| 
+| 7.1.x
+|-
+| [[Samsung]]
+| [[Samsung Galaxy S|Galaxy S]]
+| galaxysmtd
+| phone
+| Official CyanogenMod support for ONLY for the International Version (GT-I9000), Bell Vibrant (GT-I9000M), and Telcel Galaxy S (GT-I9000T). Not other models.
+| 7.1.x
+|-
+| [[Samsung]]
+| [[Samsung Galaxy S II|Galaxy S II]]
+| galaxys2
+| phone
+| Official CyanogenMod support for ONLY for the International Version (GT-I9100), Bell Vibrant (GT-I9100M), and Telcel Galaxy S (GT-I9100T). Not other models.
+| 7.1.x
+|-
+| [[Samsung]]
+| [[Samsung Galaxy S II#AT&amp;T's Galaxy S II|Galaxy S II (AT&amp;T)]]
+| galaxys2att
+| phone
+| 
+| 7.1.x
+|-
+| [[Samsung]]
+| [[Samsung Galaxy S#In the United States|Mesmerize]]
+| mesmerizemtd
+| phone
+| 
+| 7.1.x
+|-
+| [[Samsung]]
+| [[Samsung Galaxy S#In the United States|Showcase]]
+| showcasemtd
+| phone
+| 
+| 7.1.x
+|-
+| [[Samsung]]
+| [[Samsung Galaxy S#In the United States|Vibrant]]
+| vibrantmtd
+| phone
+| 
+| 7.1.x
+|-
+| [[Sony Ericsson]]
+| [[Sony Ericsson Xperia Arc|Xperia Arc]]
+| anzu
+| phone
+| 
+| 7.1.x
+|-
+| [[Sony Ericsson]]
+| [[Sony Ericsson Xperia Neo|Xperia Neo]]
+| hallon
+| phone
+| 
+| 7.1.x
+|-
+| [[Sony Ericsson]]
+| Xperia Mini
+| smultron
+| phone
+| 
+| 7.1.x
+|-
+| [[Sony Ericsson]]
+| [[Sony Ericsson Xperia mini pro|Xperia Mini Pro]]
+| mango
+| phone
+| 
+| 7.1.x
+|-
+| [[Sony Ericsson]]
+| [[Sony Ericsson Xperia Play|Xperia Play]] (GSM)
+| zeus
+| phone
+| 
+| 7.1.x
+|-
+| [[Sony Ericsson]]
+| Xperia Ray
+| urushi
+| phone
+| 
+| 7.1.x
+|-
+| [[Sony Ericsson]]
+| [[Sony Ericsson Xperia X8|Xperia X8]]
+| shakira
+| phone
+| 
+| 7.1.x
+|-
+| [[Sony Ericsson]]
+| [[Sony Ericsson Xperia X10|Xperia X10]]
+| es209ra
+| phone
+| Is currently in nightly only official support.
+| style=&quot;background: yellow&quot; |
+|-
+| [[Sony Ericsson]]
+| [[Sony Ericsson Xperia X10 Mini|Xperia X10 Mini]]
+| robyn
+| phone
+| 
+| 7.1.x
+|-
+| [[Sony Ericsson]]
+| [[Sony Ericsson Xperia X10 Mini#Sony Ericsson Xperia X10 Mini Pro|Xperia X10 Mini Pro]]
+| mimmi
+| phone
+| 
+| 7.1.x
+|-
+| [[ViewSonic]]
+| [[ViewSonic G Tablet|G Tablet]]
+| smb_a1002
+| tablet
+| 
+| 7.1.x
+|-
+| [[ZTE]]
+| [[ZTE Blade|Blade]]
+| blade
+| phone
+| Also marketed as the Orange San Francisco.
+| 7.1.x
+|-
+| [[ZTE]]
+| V9
+| v9
+| tablet
+| 
+| 7.1.x
+|}
+
+==See also==
+*[[Google Nexus]]
+*[[Rooting (Android OS)]]
+
+== References ==
+
+{{refs|30em}}
+
+== External links ==
+
+* {{official|http://www.cyanogenmod.com/}}
+* {{Facebook user|CyanogenMod|CyanogenMod}}
+* {{YouTube|channel=cyanogenmod|CyanogenMod}}
+* {{Twitter|cyanogenmod|CyanogenMod}}
+
+{{Android}}
+
+[[Category:Aftermarket firmware]]
+[[Category:Smartphones]]
+[[Category:Embedded Linux]]
+[[Category:Mobile Linux]]
+[[Category:Cloud clients]]
+[[Category:Mobile phone operating systems]]
+[[Category:Mobile open source]]
+[[Category:Android (operating system)]]
+
+[[cs:CyanogenMod]]
+[[de:CyanogenMod]]
+[[es:CyanogenMod]]
+[[fr:CyanogenMod]]
+[[ko:CyanogenMod]]
+[[it:CyanogenMod]]
+[[ja:CyanogenMod]]
+[[pl:CyanogenMod]]
+[[pt:CyanogenMod]]
+[[ru:CyanogenMod]]
+[[zh:CyanogenMod]]</rev></revisions></page></pages></query></api>

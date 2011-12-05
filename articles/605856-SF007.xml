@@ -1,0 +1,279 @@
+<?xml version="1.0"?><api><query><pages><page pageid="605856" ns="0" title="WordPress"><revisions><rev xml:space="preserve">{{about|the blogging software|the blog host|WordPress.com}}
+{{pp-move-indef}}
+{{Infobox software
+| name                   = WordPress
+| logo                   = [[File:WordPress logo.svg|250px]]
+| screenshot             = [[File:WordPress Dashboard.png|250px]]
+| caption                = WordPress Dashboard
+| collapsible            = yes
+| developer              = WordPress Foundation
+| status                 = Active
+| released = May 27, 2003&lt;ref name=release /&gt;
+| latest release version = 3.2.1
+| latest release date    = {{release date and age|2011|7|12}}&lt;ref&gt;[http://wordpress.org/news/2011/07/wordpress-3-2-1/]&lt;/ref&gt;
+| latest preview version =
+| latest preview date    = {{release date and age|2011|6|29}}
+| operating system       = [[Cross-platform]]
+| platform               = [[PHP]]
+| genre                  = [[Blog software|Weblog software]]
+| license                = [[GNU General Public License#Version 2|GNU GPLv2]] (or later)&lt;ref&gt;{{cite web|url=http://wordpress.org/about/gpl/ |title=WordPress âº About Â» GPL |publisher=WordPress.org |date= |accessdate=2010-06-15}}&lt;/ref&gt;
+| website                = [http://wordpress.org/ wordpress.org]
+}}
+'''WordPress''' is a [[free and open source]] [[blog]]ging tool and publishing platform powered by [[PHP]] and [[MySQL]]. It is often customized into a [[content management system]] (CMS).&lt;ref&gt;{{cite web |accessdate=2011-04-05 |url=http://codex.wordpress.org/User:Lastnode/Wordpress_CMS |title=User:Lastnode/Wordpress CMS|publisher=Wordpress}}&lt;/ref&gt; It has many features including a plug-in architecture and a template system. WordPress is used by over 14.7% of [[Alexa Internet]]'s &quot;top 1 million&quot; websites and as of August 2011 powers 22% of all new websites.&lt;ref&gt;{{cite web|url=http://techcrunch.com/2011/08/19/wordpress-now-powers-22-percent-of-new-active-websites-in-the-us/|title=WordPress Now Powers 22 Percent Of New Active Websites In The U.S.|last=Rao|first=Leena|date=19 August 2011|publisher=TechCrunch|accessdate=28 September 2011}}&lt;/ref&gt; WordPress is currently the most popular CMS in use on the Internet.&lt;ref&gt;{{cite web |accessdate=2011-08-08 |url=http://w3techs.com/technologies/overview/content_management/all|title=Usage of content management systems for websites}}&lt;/ref&gt;&lt;ref&gt;{{cite web |accessdate=2011-08-26 |url=http://trends.builtwith.com/cms |title=CMS Usage Statistics|publisher=BuiltWith}}&lt;/ref&gt;
+
+It was first released on May 27, 2003, by [[Matt Mullenweg]]&lt;ref name=release&gt;{{cite web |accessdate=2010-07-22 |url=http://wordpress.org/news/2003/05/wordpress-now-available/ |title=WordPress Now Available |publisher=WordPress |author=Mullenweg, Matt }}&lt;/ref&gt; as a fork of b2/cafelog. As of February 2011, version 3.0 had been downloaded over 32.5 million times.&lt;ref&gt;{{cite web|url=http://wordpress.org/download/counter/ |title=WordPress Download Counter |publisher=wordpress.org |date= |accessdate=2011-02-10}}&lt;/ref&gt;
+
+== Features ==
+[[File:Wordpress Template Hierarchy.png|250px|thumb|WordPress template hierarchy]]
+WordPress has a [[web template system]] using a [[template processor]].
+
+=== Themes ===
+WordPress users may install and switch between [[Theme (computing)|themes]]. Themes allow users to change the look and functionality of a WordPress website or installation without altering the informational content. Themes may be installed by using the Wordpress &quot;Dashboard&quot; administration tool, cPanel or uploading theme folders via FTP.&lt;ref&gt;Theme Installation [http://codex.wordpress.org/Using_Themes rel=ânofollowâ]&lt;/ref&gt;  The PHP and HTML code in themes can also be edited for more advanced customizations.
+
+=== Plugins ===
+One very popular feature of WordPress is its rich [[Plug-in (computing)|plugin architecture]] which allows users and developers to extend its functionality beyond the features that come as part of the base install; WordPress has a database of over 17,000 plugins&lt;ref&gt;See the counter in the [http://wordpress.org/extend/plugins/ official plugin directory]&lt;/ref&gt; with purposes ranging from [[SEO]] to adding [[widgets]].
+
+=== Widgets ===
+Widgets offer users drag-and-drop sidebar content placement and implementation of many plugins' extended capabilities. Users can rearrange [[GUI widget|widgets]] without editing [[PHP]] or [[HTML]] code.&lt;ref&gt;[http://codex.wordpress.org/WordPress_Widgets Wordpress Widgets]&lt;/ref&gt;
+
+=== Multi-user and multi-blogging ===
+Prior to WordPress 3.0, WordPress supported one blog per installation, although multiple concurrent copies may be run from different directories if configured to use separate database tables. WordPress Multi-User (WordPress MU, or just WPMU) was a fork of WordPress created to allow multiple blogs to exist within one installation that is able to be administered by a centralized maintainer.  WordPress MU makes it possible for those with a website to host their own blogging community, as well as control and moderate all the blogs from a single dashboard. WordPress MU adds eight new data tables for each blog.
+
+WordPress MU merged with WordPress as part of the 3.0 release.&lt;ref&gt;[http://wordpress.org/development/2010/06/thelonious/ WordPress 3.0 âTheloniousâ]&lt;/ref&gt;
+
+=== Mobile ===
+Native applications exist for Android,&lt;ref&gt;
+{{cite web|url=http://androidandme.com/2010/02/news/wordpress-publishes-native-android-application/ |title=WordPress publishes native Android application |publisher=Android and Me |date=2010-02-02 |accessdate=2010-06-15
+}}&lt;/ref&gt; iPhone/iPod Touch,&lt;ref&gt;
+{{cite web | url=http://www.altafsayani.com/2008/07/12/wordpress-app-for-iphone-and-ipod-touch/ | title=Idea: WordPress App For iPhone and iPod Touch | work=WordPress iPhone &amp; iPod Touch | accessdate=2008-07-12
+}}&lt;/ref&gt; iPad,&lt;ref name=post&gt;{{cite news |title=18 Million WordPress Blogs Land on the iPad |work=ReadWriteWeb |date=March 24, 2011 |url=http://www.readwriteweb.com/archives/18_million_wordpress_blogs_land_on_the_ipad.php/ }}&lt;/ref&gt;  Windows Phone 7, and BlackBerry&lt;ref&gt;
+{{cite web | url=http://blackberry.wordpress.org/ | title=WordPress for BlackBerry | work=WordPress | accessdate=2009-12-27
+}}&lt;/ref&gt; which provide access to some of the features in the WordPress Admin panel and work with WordPress.com and many WordPress.org blogs.
+
+=== Other features of note ===
+WordPress also features integrated link management; a [[Web search engine|search engine]]-friendly, clean [[permalink]] structure; the ability to assign nested, multiple categories to articles; and support for [[Tag (metadata)|tagging]] of posts and articles. Automatic filters are also included, providing standardized formatting and styling of text in articles (for example, converting regular quotes to [[Quotation mark|smart quotes]]). WordPress also supports the [[Trackback]] and [[Pingback]] standards for displaying links to other sites that have themselves linked to a post or article.
+
+== History ==
+''b2/cafelog'', more commonly known as simply ''b2'' or ''cafelog'', was the precursor to WordPress.&lt;ref&gt;{{cite video|people=Andrew Warner, [[Matt Mullenweg]] |date=2009-09-10 |title=The Biography Of WordPress&amp;nbsp;â With Matt Mullenweg |url=http://mixergy.com/the-biography-of-wordpress-with-matt-mullenweg/ |format=[[MPEG-4 Part 14]] |medium=Podcast |publisher=Mixergy |accessdate=2009-09-28 |time=10:57 |quote=b2 had actually, through a series of circumstances, essentially become abandoned.}}&lt;/ref&gt; b2/cafelog was estimated to have been employed on approximately 2,000 blogs as of May 2003. It was written in PHP for use with [[MySQL]] by Michel Valdrighi, who is now a contributing developer to WordPress. Although WordPress is the official successor, another project, [[b2evolution]], is also in active development.
+
+WordPress first appeared in 2003 as a joint effort between [[Matt Mullenweg]] and Mike Little to create a [[Fork (software development)|fork]] of b2.&lt;ref&gt;{{cite web | url = http://www.wordpress.org/about/ | title = WordPress &quot; About | accessdate = 2007-03-04 | publisher = wordpress.org | quote = WordPress started in 2003 (...) }}&lt;/ref&gt;  The name ''WordPress'' was suggested by Christine Selleck, a friend of Mullenweg.&lt;ref&gt;{{cite web | url = http://www.bigpinkcookie.com/2008/01/24/the-importance-of-being-matt/ | title = Big Pink Cookie | accessdate = 2009-03-10}}&lt;/ref&gt;
+
+In 2004 the licensing terms for the competing [[Movable Type]] package were changed by [[Six Apart]] and many of its most influential users migrated to WordPress.&lt;ref&gt;[http://www.salon.com/technology/feature/2004/08/09/six_apart &quot;Blogging grows up&quot;], Salon.com&lt;/ref&gt;&lt;ref&gt;[http://diveintomark.org/archives/2004/05/14/freedom-0 &quot;Freedom 0 &quot;], an influential post by [[Mark Pilgrim]]&lt;/ref&gt; By October, 2009, the 2009 Open Source content management system Market Share Report reached the conclusion that WordPress enjoyed the greatest brand strength of any open source content management systems.&lt;ref&gt;{{cite web|url=http://www.cmswire.com/downloads/cms-market-share/ |title=&quot;2009 Open Source CMS Market Share Report,&quot; page 57, by water&amp;stone and CMSWire Oct, 2009 |publisher=Cmswire.com |date=2009-12-17 |accessdate=2010-06-15}}&lt;/ref&gt;
+
+=== Awards ===
+In 2007 WordPress won a [[Packt]] Open Source CMS Award.
+
+In 2009 WordPress won the Packt best Open Source CMS Award.
+
+In 2010 WordPress won the Hall of Fame CMS category in the 2010 Open Source Awards.&lt;ref&gt;{{cite web | url = https://www.packtpub.com/open-source-awards-home/2010-wordpress | title = Open Source CMS Awards | accessdate = 2010-10-10 }}&lt;/ref&gt;
+
+In 2011 WordPress won the Open Source Web App of the Year Award at The Critters.&lt;ref&gt;{{cite web | url = http://ubelly.com/2011/05/winning-at-the-critters/ | title = Winning at The Critters | accessdate = 2011-05-27 }}&lt;/ref&gt;&lt;ref&gt;{{cite web | url = http://wpcandy.com/reports/wordpress-wins-2011-open-source-web-app-of-the-year-at-the-critters | title = Open Source Web App of the Year Award | accessdate = 2011-05-27 }}&lt;/ref&gt;
+
+=== Removal of sponsored themes ===
+On July 10, 2007, following a discussion on the WordPress ideas forum&lt;ref&gt;{{cite web | url=http://wordpress.org/extend/ideas/topic.php?id=553 | title=Idea: Remove Sponsored Themes from WordPress.org | work=WordPress Ideas | accessdate=2007-08-20 }}&lt;/ref&gt; and a post by Mark Ghosh in his blog Weblog Tools Collection,&lt;ref&gt;{{cite web | url = http://weblogtoolscollection.com/archives/2007/07/10/no-sponsored-themes-on-weblogtoolscollection/ | title = No Sponsored themes on WeblogToolsCollection | date = 2007-07-10 | accessdate = 2007-07-18 | author = Mark Ghosh }}&lt;/ref&gt; Matt Mullenweg announced that the official WordPress theme directory at http://themes.wordpress.net would no longer host themes containing sponsored links.&lt;ref&gt;{{cite web | url = http://photomatt.net/2007/07/10/wltc-high-ground/ | title = WLTC High Ground | date = 2007-07-10 | accessdate = 2007-07-18 | author = Matt Mullenweg }}&lt;/ref&gt;&lt;ref&gt;{{cite web | url = http://lorelle.wordpress.com/2007/07/11/its-official-sponsored-wordpress-themes-are-out/ | title = Itâs Official. Sponsored WordPress Themes Are Out. | date = 2007-07-11 | accessdate = 2007-07-25 | author = Lorelle van Fossen | work = Lorelle on WordPress }}&lt;/ref&gt; Although this move was criticized by designers and users of sponsored themes,{{Citation needed|date=December 2009}} it was applauded by WordPress users who consider such themes to be spam.&lt;ref&gt;{{cite web | url = http://weblogtoolscollection.com/archives/2007/07/10/no-sponsored-themes-on-weblogtoolscollection/ | title = No sponsor themes}}&lt;/ref&gt; The official WordPress theme directory ceased to accept any new themes, including those without sponsored links, shortly after the announcement was made. Sponsored themes are still available elsewhere, as well as free themes with additional sponsored links added by third parties.&lt;ref&gt;{{cite web | url = http://weblogtoolscollection.com/archives/2007/08/04/warning-templatebrowser-dot-com/ | title = WARNING: TemplatesBrowser dot com | date = 2007-08-04 | accessdate = 2008-05-18 | author = Mark Ghosh | work = Weblog Tools Collection }}&lt;/ref&gt;&lt;ref&gt;{{cite web | url = http://weblogtoolscollection.com/archives/2007/11/09/blogsthemecom-warning/ | title = Blogstheme.com WARNING | date = 2007-11-09 | accessdate = 2008-05-18 | author = Mark Ghosh | work = Weblog Tools Collection }}&lt;/ref&gt;
+
+On July 18, 2008, a new theme directory opened at http://wordpress.org/extend/themes/.  It was styled along the same lines as the plug-ins directory,&lt;ref&gt;{{cite web | url= http://wordpress.org/development/2008/07/theme-directory/ | title = Theme Directory | date = 2008-07-18 | author = Joseph Scott | work = WordPress Blog | accessdate=2007-08-20 }}&lt;/ref&gt; Any theme that is uploaded to it will be vetted, first by an automated program and then by a human.
+
+On December 12, 2008, over 200 themes were removed from the WordPress theme directory as they did not comply with [[GPL]] License requirements.&lt;ref&gt;{{cite web|url=http://www.blogherald.com/2008/12/12/200-themes-removed-from-wordpressorg-matt-explains-why |title=200 Themes Removed From WordPress.org&amp;nbsp;â Matt Explains Why |publisher=Blogherald.com |date=2008-12-12 |accessdate=2010-06-15}}&lt;/ref&gt; Today, author mentions are permitted in each theme but the official policy does not allow for sponsorships or links to sites distributing non-[[GPL]] compatible themes. Non-[[GPL]] compliant themes are now hosted on other theme directories.
+
+=== Releases ===
+Most WordPress releases are code named after well-known [[jazz]] musicians starting after version 1.0.&lt;ref&gt;{{cite web|url=http://wordpress.org/about/roadmap/ |title= Roadmap | work = Blog |publisher=Wordpress.org |date= |accessdate=2010-06-15}}&lt;/ref&gt;
+{| class=&quot;wikitable&quot;
+|-valign=&quot;top&quot;
+! Version
+! Code Name
+! Release Date
+! Notes
+|-valign=&quot;top&quot;
+| 0.70
+|
+| 27 May 2003
+| contained the same file structure as its predecessor, '''b2/cafelog''', and continued the numbering from its last release, 0.6.&lt;ref&gt;{{cite web|url=http://cafelog.com/ | title=Cafelog | accessdate=2011-05-15}}&lt;/ref&gt; Only 0.71-gold is available for download in the official WordPress Release Archive page.
+|-valign=&quot;top&quot;
+| 1.2
+| ''[[Charles Mingus|Mingus]]''
+| 22 May 2004
+| It's notable for containing the support of Plugins. The same Plugin identification headers are still used unchanged in the latest WordPress releases.
+|-valign=&quot;top&quot;
+| 1.5
+|''[[Billy Strayhorn|Strayhorn]]''
+| 17 February 2005
+| ''Strayhorn'' added a range of vital features, such as the ability to manage static pages and a template/theme system. It was also equipped with a new default template (code named ''[[Stanley Kubrick|Kubrick]]''&lt;ref&gt;{{cite web|url=http://binarybonsai.com/kubrick |title=Kubrick at Binary Bonsai |publisher=Binarybonsai.com |date= |accessdate=2010-06-15}}&lt;/ref&gt;) designed by Michael Heilemann.
+|-valign=&quot;top&quot;
+| 2.0
+| ''[[Duke Ellington|Duke]]''
+| 31 December 2005
+| This version added rich editing, better administration tools, image uploading, faster posting, an improved import system, and completely overhauled the back end. WordPress 2.0 also offered various improvements to plugin developers.&lt;ref&gt;{{cite web|url=http://wordpress.org/development/2005/12/wp2/ |title=WordPress âº Blog Â» WordPress 2 |publisher=Wordpress.org |date= |accessdate=2010-06-15}}&lt;/ref&gt;
+|-valign=&quot;top&quot;
+| 2.1
+| ''[[Ella Fitzgerald|Ella]]''
+| 22 January 2007
+| In addition to correcting security issues, version 2.1 featured a redesigned interface, enhanced editing tools (including integrated spell check and auto save), and improved content management options.&lt;ref&gt;{{cite web|url=http://codex.wordpress.org/Version_2.1 |title=WordPress 2.1 - codex |publisher=Codex.wordpress.org |date=2007-01-22 |accessdate=2010-06-15}}&lt;/ref&gt;
+|-valign=&quot;top&quot;
+| 2.2
+| ''[[Stan Getz|Getz]]''
+| 16 May 2007
+| Version 2.2 featured widget support for templates, updated [[Atom (standard)|Atom]] feed support, and speed optimizations.&lt;ref&gt;{{cite web|url=http://wordpress.org/development/2007/05/wordpress-22/ |title=WordPress âº Blog Â» WordPress 2.2 |publisher=Wordpress.org |date= |accessdate=2010-06-15}}&lt;/ref&gt;
+|-valign=&quot;top&quot;
+| 2.3
+| ''[[Dexter Gordon|Dexter]]''
+| 24 September 2007
+| Version 2.3 featured native tagging support, new [[taxonomy]] system for categories, and easy notification of updates. 2.3 also fully supports [[Atom (standard)|Atom 1.0]] along with the publishing protocol, and included some much needed security fixes.&lt;ref&gt;{{cite web|url=http://wordpress.org/development/2007/09/wordpress-23/ |title=WordPress âº Blog Â» WordPress 2.3 |publisher=Wordpress.org |date= |accessdate=2010-06-15}}&lt;/ref&gt;
+|-valign=&quot;top&quot;
+| 2.5
+| ''[[Michael Brecker|Brecker]]''
+| 29 March 2008
+| Developers skipped the release of version 2.4 so version 2.5 contained two releases worth of new code. WordPress 2.5 saw a complete overhaul of the administration interface and the WordPress website was also redesigned to match the new style.&lt;ref&gt;{{cite web|url=http://wordpress.org/development/2008/03/wordpress-25-brecker/ |title=WordPress âº Blog Â» WordPress 2.5 |publisher=Wordpress.org |date= |accessdate=2010-06-15}}&lt;/ref&gt;
+|-valign=&quot;top&quot;
+| 2.6
+| ''[[McCoy Tyner|Tyner]]''
+| 15 July 2008
+| ''Tyner'' contained new features that made WordPress a more powerful CMS: you can now [[Revision control|track changes]] to every post and page and easily post from wherever you are on the web.&lt;ref&gt;{{cite web|url=http://wordpress.org/development/2008/07/wordpress-26-tyner/ |title=WordPress âº Blog Â» WordPress 2.6 |publisher=Wordpress.org |date= |accessdate=2010-06-15}}&lt;/ref&gt;
+|-valign=&quot;top&quot;
+| 2.7
+| ''[[John Coltrane|Coltrane]]''
+| 11 December 2008
+| It once again saw the administration interface completely redesigned. It also introduces an automated upgrade feature, and automatic installation of plugins from within the administration interface.&lt;ref&gt;{{cite web|url=http://wordpress.org/development/2008/12/coltrane/ |title=WordPress âº Blog Â» WordPress 2.7 âColtraneâ |publisher=Wordpress.org |date= |accessdate=2010-06-15}}&lt;/ref&gt;
+|-valign=&quot;top&quot;
+| 2.8
+| ''[[Chet Baker|Baker]]''
+| 10 June 2009
+| ''Baker'' offered improvements in speed, and automatic installation of themes from within the administration interface. It also introduces the CodePress editor for syntax highlighting and a redesigned widget interface.&lt;ref&gt;{{cite web|url=http://wordpress.org/development/2009/06/wordpress-28/ |title=WordPress âº Blog Â» 2.8 Release Jazzes Themes and Widgets |publisher=WordPress.org |date= |accessdate=2010-06-15}}&lt;/ref&gt;
+|-valign=&quot;top&quot;
+| 2.9
+| ''[[Carmen McRae|Carmen]]''
+| 19 December 2009
+|  ''Carmen'' offers a global undo feature, a built-in image editor, batch plugin updating, and numerous under-the-hood tweaks.&lt;ref&gt;{{cite web|url=http://wordpress.org/development/2009/12/wordpress-2-9/ |title=WordPress âº Blog Â» WordPress 2.9, oh so fine |publisher=Wordpress.org |date= |accessdate=2010-06-15}}&lt;/ref&gt;
+|-valign=&quot;top&quot;
+| 3.0
+| ''[[Thelonious Monk|Thelonious]]''
+| 17 June 2010
+|  ''Thelonious'' offers a new default theme called &quot;Twenty Ten&quot; along with new theme [[API]]s; the merge of  WordPress and WordPress MU, creating the new multi-site functionality; and numerous under-the-hood tweaks.&lt;ref&gt;{{cite web|url=http://wordpress.org/development/2010/06/thelonious/ |title=WordPress âº Blog Â» WordPress 3.0 âTheloniousâ |publisher=Wordpress.org |date= |accessdate=2010-06-17}}&lt;/ref&gt;
+|-valign=&quot;top&quot;
+| 3.1
+| ''[[Django Reinhardt|Reinhardt]]''
+| 23 February 2011
+|  ''Reinhardt'' is most notable for the addition of the Admin Bar, which is displayed on all blog pages when the admin is logged in. Also significant is the introduction of Post Format, best explained as a Tumblr like micro-blogging feature. It provides easy access to many critical Wordpress functions, such as comments and updates. This version also includes internal linking capabilities, a newly streamlined writing interface, and numerous other changes.&lt;ref&gt;{{cite web|url=http://codex.wordpress.org/Version_3.1 |title=WordPress âº Codex Â» WordPress 3.1 âReinhardtâ |publisher=Wordpress.org |date= |accessdate=2011-02-25}}&lt;/ref&gt;
+|-valign=&quot;top&quot;
+| 3.2
+| ''[[George Gershwin|Gershwin]]''
+| 4 July 2011
+|  ''Gershwin'' was released only four months after version 3.1, reflecting the growing speed of development in the WordPress community. The focus for this release was making WordPress faster and lighter.
+|}
+
+== Future ==
+After the release of WordPress 3.0, the development team took a release cycle off from the WordPress software to focus on expanding and improving the WordPress community.&lt;ref&gt;{{cite web|url=http://www.webmaster-source.com/2010/06/18/wordpress-3-0-now-available/|title=WordPress 3.0 Now Available|date=18 June 2010}}&lt;/ref&gt;&lt;ref&gt;{{cite web|url=http://www.thewhir.com/web-hosting-news/061810_WordPress_30_Released_Adding_Multi_User_and_Streamlined_User_Interface|title=WordPress 3.0 Released, Adding Multi-User and Streamlined User Interface}}&lt;/ref&gt; WordPress 3.1 was subsequently released in February, 2011. With version 3.2, released on July 4, 2011, the minimum requirement PHP version and MySQL were raised as well.&lt;ref&gt;PHP 4 and MySQL 4 End of Life Announcement. WordPress. July 23, 2010. Retrieved October 6, 2010.[http://wordpress.org/news/2010/07/eol-for-php4-and-mysql4/]&lt;/ref&gt;
+
+== Vulnerabilities ==
+Many security issues&lt;ref&gt;{{cite web |date=2007-06-21 |title=Wincent Colaiuta |url=http://wincent.com/a/about/wincent/weblog/archives/2007/06/wordpress_flaw.php}}&lt;/ref&gt;&lt;ref&gt;{{cite web |date=2007-06-28 |title=David Kierznowski|url=http://blogsecurity.net/wordpress/interview-280607/}}&lt;/ref&gt; were uncovered in the software, particularly in 2007 and 2008. According to [[Secunia]], WordPress in April 2009 had 7 unpatched security advisories (out of 32 total), with a maximum rating of &quot;Less Critical&quot;.&lt;ref&gt;{{cite web |date=2009-04-07 |title=Secunia Advisories for WordPress 2.x|url=http://secunia.com/advisories/product/6745/}}&lt;/ref&gt; [[Secunia]] maintains an up-to-date list of WordPress vulnerabilities.&lt;ref&gt;{{cite web|url=http://secunia.com/advisories/product/6745/ |title=Secunia WordPress 2.x Vulnerability Report |publisher=Secunia.com |date= |accessdate=2010-06-15}}&lt;/ref&gt;&lt;ref&gt;{{cite web|url=http://secunia.com/advisories/product/33191/|title=Secunia WordPress 3.x Vulnerability Report |publisher=Secunia.com |date= |accessdate=2010-12-27}}&lt;/ref&gt;
+
+In January 2007, many high-profile [[Search engine optimization]] (SEO) blogs, as well as many low-profile commercial blogs featuring [[AdSense]], were targeted and attacked with a WordPress exploit.&lt;ref&gt;[http://www.threadwatch.org/node/11333 WordPress Exploit Nails Big Name Seo Bloggers | Threadwatch.org&lt;!-- Bot generated title --&gt;]&lt;/ref&gt; A separate vulnerability on one of the project site's [[web server]]s allowed an attacker to introduce exploitable code in the form of a [[Backdoor (computing)|back door]] to some downloads of WordPress 2.1.1. The 2.1.2 release addressed this issue; an advisory released at the time advised all users to upgrade immediately.&lt;ref&gt;{{cite web | url = http://wordpress.org/development/2007/03/upgrade-212/ | title = WordPress 2.1.1 dangerous, Upgrade to 2.1.2 | publisher = WordPress.org | accessdate = 2007-03-04 | date = 2 March 2007}}&lt;/ref&gt;
+
+In May 2007, a study revealed that 98% of WordPress blogs being run were exploitable because they were running outdated and unsupported versions of the software.&lt;ref&gt;{{cite web|url=http://blogsecurity.net/wordpress/articles/article-230507/ |title=Survey Finds Most WordPress Blogs Vulnerable |publisher=Blog Security |date=2007-05-23 |accessdate=2010-06-15}}&lt;/ref&gt;
+
+In a June 2007 interview, Stefan Esser, the founder of the PHP Security Response Team, spoke critically of WordPress's security track record, citing problems with the application's architecture that made it unnecessarily difficult to write code that is secure from [[SQL injection]] vulnerabilities, as well as some other problems.&lt;ref&gt;{{cite web|url=http://blogsecurity.net/wordpress/interview-280607/ |title=Blog Archive Â» Interview with Stefan Esser |publisher=BlogSecurity |date=2007-06-28 |accessdate=2010-06-15}}&lt;/ref&gt;
+
+Since then, WordPress has improved in terms of security and the latest versions are more secure with only minimal security issues{{Citation needed|date=July 2011}}. The last major security issue was found on WordPress 2.7{{Citation needed|date=July 2011}}, released in 2008.
+
+Individual installations of WordPress can be protected with security plugins such as [http://bit51.com/software/better-wp-security/ Better WP Security], [http://wordpress.org/extend/plugins/wp-security-scan/ WP Security Scan] and many others.&lt;ref&gt;[http://www.axetue.com/2011/09/04/top-security-plugins-for-wordpress/]&lt;/ref&gt;
+
+== Development and support ==
+=== Key developers ===
+[[Matt Mullenweg]] and Mike Little were co-founders of the project. The core contributing developers include Ryan Boren, Mark Jaquith, Matt Mullenweg, Andrew Ozz, and Peter Westwood.&lt;ref&gt;{{cite web|url=http://wordpress.org/about/ |title=About WordPress |accessdate=2010-10-05 |publisher=wordpress.org}}&lt;/ref&gt;
+
+WordPress is also developed by its community, including  ''WP testers'', a group of volunteers who test each release. They have early access to [[Neutral build|nightly builds]], beta versions and release candidates. Errors are documented in a special [[mailing list]], or the project's [[Trac]] tool.
+
+Though largely developed by the community surrounding it, WordPress is closely associated with [[Automattic]], the company founded by Matt Mullenweg. On September 9, 2010, Automattic handed the WordPress trademark to the newly-created WordPress Foundation, which is an umbrella organization supporting WordPress.org (including the software and archives for plugins and themes), [[bbPress]] and [[BuddyPress]].
+
+=== WordCamp developer and user conferences ===
+&quot;WordCamp&quot; is the name given to all WordPress-related gatherings, both informal [[unconference]]s and more formal conferences.&lt;ref&gt;[http://central.wordcamp.org/ WordCamp Central]&lt;/ref&gt; The first such event was WordCamp 2006 in August 2006 in [[San Francisco]], which lasted one day and had over 500 attendees.&lt;ref&gt;[http://2006.wordcamp.org/ WordCamp 2006]&lt;/ref&gt; The most recent event was WordCamp San Francisco in August 2011, which ran for three days and had over 1,000 attendees.&lt;ref&gt;[http://2011.sf.wordcamp.org/ WordCamp 2011]&lt;/ref&gt; The first WordCamp outside San Francisco was held in [[Beijing]] in September 2007.&lt;ref name=&quot;wordcamp schedule&quot;&gt;[http://central.wordcamp.org/schedule/ WordCamp Central &gt; Schedule]&lt;/ref&gt; Since then, there have been over 150 WordCamps around the world, for an average of nearly one a week.&lt;ref name=&quot;wordcamp schedule&quot; /&gt; WordCamp San Francisco, an annual event, remains the official annual conference of WordPress developers and users.&lt;ref&gt;[http://central.wordcamp.org/news/2011/01/24/wordcampsf-not-wordcon/ WordCamp SF Announced (not WordCon)], Jane Well, January 24, 2011&lt;/ref&gt;
+
+=== Support ===
+As an [[open source]] platform, WordPress relies on peer support. The primary support website is WordPress.org.&lt;ref&gt;WordPress.org [http://www.WordPress.org rel=ânofollowâ]&lt;/ref&gt;
+
+==See also==
+{{Portal|free software}}
+*[[List of content management systems]]
+*[[bbPress]]
+*[[Automattic]]
+
+==References==
+{{Reflist|colwidth=30em}}
+71 [http://xtendedview.com/wordpress/edit-comment-form-of-your-wordpress-blog-to-remove-website-text-box/41/ Edit comment form of your WordPress blog to remove website text box]
+
+==External links==
+{{Commons category|WordPress}}
+*{{Official website|http://wordpress.org/}}
+
+{{DEFAULTSORT:Wordpress}}
+[[Category:Open source content management systems]]
+[[Category:PHP programming language]]
+[[Category:Blog software]]
+[[Category:WordPress| ]]
+[[Category:Content management systems]]
+[[Category:Website management]]
+[[Category:Free software programmed in PHP]]
+[[Category:2003 software]]
+
+{{Link GA|id}}
+[[ar:ÙÙØ±Ø¯Ø¨Ø±ÙØ³]]
+[[bn:à¦à¦¯à¦¼à¦¾à¦°à§à¦¡à¦ªà§à¦°à§à¦¸]]
+[[zh-min-nan:WordPress]]
+[[be:Wordpress]]
+[[be-x-old:WordPress]]
+[[bg:WordPress]]
+[[ca:WordPress]]
+[[cs:WordPress]]
+[[da:WordPress]]
+[[de:WordPress]]
+[[et:WordPress]]
+[[el:WordPress]]
+[[es:WordPress]]
+[[eo:WordPress]]
+[[eu:WordPress]]
+[[fa:ÙØ±Ø¯Ù¾Ø±Ø³]]
+[[fr:WordPress]]
+[[gl:WordPress]]
+[[ko:ìëíë ì¤]]
+[[hy:ÕÕ¸ÖÕ¤ÕÖÕ¥Õ½]]
+[[hi:à¤µà¤°à¥à¤¡à¤ªà¥à¤°à¥à¤¸]]
+[[hr:WordPress]]
+[[id:WordPress]]
+[[it:WordPress]]
+[[he:×××¨××¤×¨×¡]]
+[[jv:WordPress]]
+[[kn:à²µà²°à³à²¡à³ à²ªà³à²°à³à²¸à³]]
+[[ka:ááá ááá áá¡á]]
+[[kk:Wordpress]]
+[[lv:WordPress]]
+[[lt:WordPress]]
+[[hu:WordPress]]
+[[mk:WordPress]]
+[[ml:à´µàµà´¡àµà´ªàµà´°à´¸àµ]]
+[[mr:à¤µà¤°à¥à¤¡à¤ªà¥à¤°à¥à¤¸]]
+[[ms:WordPress]]
+[[mn:WordPress]]
+[[nl:WordPress]]
+[[ja:WordPress]]
+[[no:WordPress]]
+[[uz:WordPress]]
+[[pl:WordPress]]
+[[pt:WordPress]]
+[[ro:WordPress]]
+[[ru:WordPress]]
+[[simple:WordPress]]
+[[sk:Wordpress]]
+[[sl:WordPress]]
+[[ckb:ÙÛØ±Ø¯Ù¾Ø±ÛØ³]]
+[[fi:WordPress]]
+[[sv:Wordpress]]
+[[tl:WordPress]]
+[[ta:à®µà¯à®°à¯à®à¯à®ªà®¿à®°à®à¯]]
+[[kab:Wordpress]]
+[[te:à°µà°°à±à°¡à±âà°ªà±à°°à±à°¸à±]]
+[[th:à¹à¸§à¸´à¸£à¹à¸à¹à¸à¸£à¸ªà¸ªà¹]]
+[[tr:WordPress]]
+[[uk:WordPress]]
+[[vi:WordPress]]
+[[diq:WordPress]]
+[[zh:WordPress]]</rev></revisions></page></pages></query></api>

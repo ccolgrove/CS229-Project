@@ -1,0 +1,248 @@
+<?xml version="1.0"?><api><query><pages><page pageid="556778" ns="0" title="Red Hat Enterprise Linux"><revisions><rev xml:space="preserve">{{Infobox OS
+| name                   = Red Hat Enterprise Linux
+| logo                   = [[Image:RedHat.svg|200px|Red Hat logo]]
+| screenshot             = [[Image:Redhat EL 5 default desktop.png|300px]]
+| caption                = Red Hat Enterprise Linux 6's default [[GNOME]] desktop
+| collapsible            = yes
+| developer              = [[Red Hat|Red Hat, Inc.]]
+| family                 = [[Linux]] ([[Unix-like]])
+| source_model           = [[Free and open source software]] (with exceptions)&lt;ref name=&quot;kernelblobs&quot;&gt;{{cite web |url= http://www.gnu.org/distros/common-distros.html#RedHat |title= Explaining Why We Don't Endorse Other Systems |publisher= the [[Free Software Foundation]] |accessdate=March 13, 2011}}&lt;/ref&gt;
+| released               = March 31, 2003 ([[Red Hat Linux|RHL]] discontinued) &amp; stated as RHEL on March 26, 2002{{Clarify|date=July 2010}}
+| latest_release_version = 6.1
+| latest_release_date    = {{release date|2011|05|19}}
+| latest_test_version = 6.2 [[Software release life cycle|Beta]]
+| latest_test_date    = {{release date|2011|10|05}}
+| marketing_target       = [[business|Commercial]] market (including for [[Mainframe computer|mainframes]], [[Server (computing)|server]]s, [[supercomputer]]s)
+| kernel_type = [[Monolithic kernel|Monolithic]] ([[Linux kernel|Linux]])
+| license                = Various free software licenses, plus proprietary [[binary blob]]s.&lt;ref name=&quot;kernelblobs&quot; /&gt;
+| language               = Multilingual
+| ui                     = [[GNOME]]
+| working_state          = Current
+| supported_platforms    = [[x86]], [[x86-64]], [[Itanium|IA-64]]; [[IBM POWER|POWER]]; [[IBM ESA/390|S/390]]; [[z/Architecture]]&lt;ref&gt;{{Cite web|title=Supported Architectures|url=https://www.redhat.com/apps/store/server/rhel.html#storeTabWrap|accessdate=2010-11-21}}&lt;/ref&gt;
+| updatemodel            = [[Yellow dog Updater, Modified|Yum]] ([[PackageKit]])
+| package_manager        = [[RPM Package Manager]]
+| website                = [http://www.redhat.com/rhel/ www.redhat.com/rhel/]
+}}
+
+'''Red Hat Enterprise Linux''' ('''RHEL''') is a [[Linux distribution|Linux-based operating system]] developed by [[Red Hat]] and targeted toward the [[business|commercial]] market. Red Hat Enterprise Linux is released in server versions for x86, x86-64, Itanium, PowerPC and [[IBM System z]], and desktop versions for x86 and x86-64. All of Red Hat's official support and training and the [[Red Hat Certification Program]] center around the Red Hat Enterprise Linux platform. Red Hat Enterprise Linux is often abbreviated to RHEL, although this is not an official designation.&lt;ref&gt;{{Cite web| url=http://www.redhatmagazine.com/2008/02/04/tips-and-tricks-rhel-ref/|title=Tips and tricks: How do I properly refer to Red Hat Enterprise Linux 2.1, Red Hat Enterprise Linux 3, Red Hat Enterprise Linux 4 and Red Hat Enterprise Linux 5 in documentation and when conversing with fellow users and customers?|publisher=redhatmagazine.com|date=2008-02-04|accessdate=2008-06-25}}&lt;/ref&gt;
+
+The first version of Red Hat Enterprise Linux to bear the name originally came onto the market as &quot;Red Hat Linux Advanced Server&quot;. In 2003 Red Hat rebranded Red Hat Linux Advanced Server to &quot;Red Hat Enterprise Linux AS&quot;, and added two more variants, Red Hat Enterprise Linux ES and Red Hat Enterprise Linux WS.
+
+While [[trademark]] restrictions prevent free re-distribution of officially supported versions of Red Hat Enterprise Linux,&lt;ref&gt;{{Cite web|title=ESR: &quot;We Don't Need the GPL Anymore&quot;|url=http://www.onlamp.com/pub/a/onlamp/2005/06/30/esr_interview.html|publisher=onlamp.com|accessdate=2008-03-04}}&lt;/ref&gt; compliance with open source licenses requires Red Hat to freely provide the source code for the distribution's software. As a result, several distributors have created re-branded and/or community-supported re-builds of Red Hat Enterprise Linux that can legally be made available, without official support from Red Hat.
+
+==Variants==
+There are also &quot;Academic&quot; editions of the Desktop and Server variants. They are offered to schools and students, are less expensive, and are provided with Red Hat technical support as an optional extra. Web support based on number of customer contacts can be purchased separately.
+
+It is often assumed the branding ES and AS stand for &quot;Entry-level Server&quot; and &quot;Advanced Server&quot;, respectively. The reason for this is that the ES product is indeed the company's base [[enterprise software|enterprise]] server product, while AS is the more advanced product. However, nowhere on its site or in its literature does Red Hat say what AS, ES and WS stand for.
+
+In Red Hat Enterprise Linux 5 there are new editions that substitute former Red Hat Enterprise Linux AS/ES/WS/Desktop:&lt;ref&gt;{{Cite web|url=http://www.redhat.com/rhel/moving/ |title=Moving to Red Hat Enterprise Linux 5 |author= |date= |work= |publisher=Red Hat |accessdate=2009-12-02}}&lt;/ref&gt;&lt;ref&gt;{{Cite web|url=http://www.redhat.com/rhel/compare/ |title=Red Hat Enterprise Linux Server Version Comparison Chart |author= |date= |work= |publisher=Red Hat |accessdate=2009-12-02}}&lt;/ref&gt;
+* Red Hat Enterprise Linux Advanced Platform (former AS)
+* Red Hat Enterprise Linux (former ES) (limited to 2 CPU-s)
+* Red Hat Enterprise Linux Desktop with Workstation and Multi-OS option
+* Red Hat Enterprise Linux Desktop with Workstation option (former WS)
+* Red Hat Enterprise Linux Desktop with Multi-OS option
+* Red Hat Enterprise Linux Desktop (former Desktop)
+
+Red Hat had also announced its Red Hat Global Desktop Linux edition &quot;for [[emerging markets]]&quot;.&lt;ref&gt;{{Cite web|title=Red_Hat_Global_Desktop_Linux:_The_Best_Kept_Secret? |url=http://www.linuxtoday.com/news_story.php3?ltsn=2007-08-03-031-26-OP-RH-SW |publisher=linuxtoday.com |accessdate=2008-03-04}}&lt;/ref&gt;
+
+RHEL 3 and 4 and previous releases had four variants:
+* Red Hat Enterprise Linux AS for mission-critical/enterprise [[computer system]]s.
+* Red Hat Enterprise Linux ES for supported network servers
+* Red Hat Enterprise Linux WS for technical [[power user|power-user]] enterprise desktops for high-performance computing
+* Red Hat Desktop for multiple deployments of single-user desktops for enterprises.
+
+==Relationship to free and community distributions==
+Originally, Red Hat sold support for versions of Red Hat Linux (Red Hat Linux 6.2E was essentially a version of Red Hat Linux 6.2 with different support levels.)&lt;ref&gt;{{Cite web|title=Fedora project wiki, History of Red Hat Linux|url=http://fedoraproject.org/wiki/History_of_Red_Hat_Linux#Abstract|publisher=fedoraproject.org|accessdate=2010-05-23}}&lt;/ref&gt;
+Starting with RHEL 2.1 AS in 2002, Red Hat sold their first version of RHEL. It was based on [[Red Hat Linux]], but used a much more conservative release cycle. Later versions included technologies from the Red Hat sponsored [[Fedora (operating system)|Fedora]] community distribution project. Red Hat Enterprise Linux release schedules do not follow that of Fedora (around 6 months per release) but are more conservative (2 years or more).
+
+Fedora serves as upstream for future versions of RHEL.  RHEL trees are forked off the Fedora repository, and released after a substantial stabilization and quality assurance effort.&lt;ref name=&quot;lineage&quot;&gt;{{Cite web|title=Fedora project wiki, Red Hat Enterprise Linux History|url=http://fedoraproject.org/wiki/RHEL#History|publisher=fedoraproject.org|accessdate=2010-06-08}}&lt;/ref&gt;  For example, RHEL 6 was forked from Fedora at the end of 2009 (approximately at the time of the Fedora 12 release) and released more or less together with Fedora 14.  By the time RHEL 6 was released, many features from Fedora 13 and 14 had already been backported into it.  The Fedora Project lists the following lineages for older Red Hat Enterprise releases&lt;ref name=&quot;lineage&quot; /&gt;:
+
+* Red Hat Linux 6.2 â Red Hat Linux 6.2E
+* Red Hat Linux 7.2 â Red Hat Enterprise Linux 2.1
+* Red Hat Linux 9 â Red Hat Enterprise Linux 3
+* Fedora Core 3 â Red Hat Enterprise Linux 4
+* Fedora Core 6 â Red Hat Enterprise Linux 5
+* Fedora 12, 13 â Red Hat Enterprise Linux 6&lt;ref name=&quot;lineage&quot; /&gt;
+
+In addition, the Fedora project includes [[Fedora (operating system)#Distribution|Extra Packages for Enterprise Linux (EPEL)]], a community-provided set of packages for RHEL going beyond the ones that Red Hat selected for inclusion in its supported distribution.
+
+âBoth Fedora and Red Hat Enterprise Linux are open source. Fedora is a free distribution and community project and upstream for Red Hat Enterprise Linux. Fedora is a general purpose system that gives Red Hat and the rest of its contributor community the chance to innovate rapidly with new technologies. Red Hat Enterprise Linux is a commercial enterprise operating system and has its own set of test phases including alpha and beta releases which are separate and distinct from Fedora development.â&lt;ref&gt;{{Cite web|title=Fedora project wiki, the difference between Fedora and RHEL|url=http://fedoraproject.org/wiki/RHEL#What.27s_the_difference_between_Fedora_and_Red_Hat_Enterprise_Linux.3F|publisher=fedoraproject.org|accessdate=2010-05-23}}&lt;/ref&gt;
+
+==Rebuilds==
+{{Main|Red Hat Enterprise Linux derivatives}}
+Originally, Red Hat's enterprise product, then known as ''Red Hat Linux'', was made freely available to anybody who wished to download it, while Red Hat made money from support. Red Hat then moved towards splitting its product line into ''Red Hat Enterprise Linux'' which was designed to be stable and with long-term support for enterprise users and 'Fedora' as the community distribution and project sponsored by Red Hat. The use of trademarks prevents verbatim copying of Red Hat Enterprise Linux.
+
+Since Red Hat Enterprise Linux is based completely on [[Free Software|free]] and [[open source]] software, Red Hat makes available the complete source code to its enterprise distribution through its FTP site to anybody who wants it. Accordingly, several groups have taken this source code and compiled their own versions of Red Hat Enterprise Linux, typically with the only changes being the removal of any references to Red Hat's trademarks and pointing the update systems to non-Red Hat servers. Groups which have undertaken this include [[CentOS]] (the 8th most popular as of November 2011),&lt;ref&gt;{{Cite web|title=Linux Distributions - Facts and Figures |url=http://distrowatch.com/stats.php?section=popularity |publisher=distrowatch.com |accessdate=2008-03-04}}&lt;/ref&gt; [[Oracle Linux]], [[Scientific Linux]], [[White Box Enterprise Linux]], StartCom Enterprise Linux, Pie Box Enterprise Linux, X/OS, Lineox, and [[Groupe Bull|Bull]]'s XBAS for high-performance computing. &lt;ref&gt;[https://computing.llnl.gov/linux/slurm/slurm_ug_2010/01-mh-cea.pdf SLURM at CEA]&lt;/ref&gt; All provide a free mechanism for applying updates without paying a service fee to the distributor.
+
+Rebuilds of Red Hat Enterprise Linux are free but do not get any commercial support or consulting services from Red Hat and lack any software, hardware or security certifications. Also, the rebuilds do not get access to Red Hat services like [[Red Hat Network]].
+
+Unusually, Red Hat took steps to [[Obfuscated code|obfuscate]] their changes to the Linux kernel for 6.0 by not publicly providing the [[patch file]]s for their changes in the source tarball, and only releasing the finished product in source form. Speculation suggested that the move was made in order to affect Oracle's competing rebuild and support services, which further modifies the distribution. This practice however, still complies with the [[GNU GPL]] since source code is defined as &quot;[the] preferred form of the work for making modifications to it&quot;, and the distribution still complies with this definition.&lt;ref&gt;{{cite web|title=Controversy surrounds Red Hat's &quot;obfuscated&quot; source code release|url=http://www.h-online.com/open/news/item/Controversy-surrounds-Red-Hat-s-obfuscated-source-code-release-1200554.html|publisher=The H|accessdate=12 March 2011}}&lt;/ref&gt; Red Hat's [[Chief technology officer|CTO]] Brian Stevens later confirmed the change, stating that certain information (such as patch information) would now only be provided to paying customers in order to make the Red Hat product more competitive against the growing number of companies offering support for products based on RHEL. CentOS developers had no objections to the change since they do not make any changes to the kernel beyond what is provided by Red Hat.&lt;ref&gt;{{cite web|title=Red Hat defends changes to kernel source distribution|url=http://www.h-online.com/open/news/item/Red-Hat-defends-changes-to-kernel-source-distribution-1202733.html|publisher=The H|accessdate=12 March 2011}}&lt;/ref&gt;
+
+==Commercial products based on Red Hat Enterprise Linux==
+{{Main|Commercial products based on Red Hat Enterprise Linux}}
+A number of commercial vendors use Red Hat Enterprise Linux as a base for the operating system in their products. Two of the best known are the Console Operating System in [[VMware ESX]] Server and [[Oracle Linux]] respin.
+
+==Version history==
+
+* Red Hat Enterprise Linux 2.1 AS (''[[Pensacola, Florida|Pensacola]]''), 2002-03-26&lt;ref&gt;{{Cite web|url=http://www.redhat.com/security/updates/notes/ |title=Red Hat Enterprise Linux Updates |author= |date= |work= |publisher=Red Hat |accessdate=2009-12-02}}&lt;/ref&gt;
+** Update 1, 2003-??-?? ([http://docs.redhat.com/docs/en-US/Red_Hat_Enterprise_Linux/2.1/html/AS_Release_Notes/RELEASE-NOTES-U1 Release Notes])
+** Update 2, 2003-??-?? ([http://docs.redhat.com/docs/en-US/Red_Hat_Enterprise_Linux/2.1/html/AS_Release_Notes/RELEASE-NOTES-U2 Release Notes])
+** Update 3, 2003-??-?? ([http://docs.redhat.com/docs/en-US/Red_Hat_Enterprise_Linux/2.1/html/AS_Release_Notes/RELEASE-NOTES-U3 Release Notes])
+** Update 4, 2004-??-?? ([http://docs.redhat.com/docs/en-US/Red_Hat_Enterprise_Linux/2.1/html/AS_Release_Notes/RELEASE-NOTES-U4 Release Notes])
+** Update 5, 2004-??-?? ([http://docs.redhat.com/docs/en-US/Red_Hat_Enterprise_Linux/2.1/html/AS_Release_Notes/RELEASE-NOTES-U5 Release Notes])
+** Update 6, 2004-12-13 ([http://docs.redhat.com/docs/en-US/Red_Hat_Enterprise_Linux/2.1/html/AS_Release_Notes/RELEASE-NOTES-U6 Release Notes])
+** Update 7, 2005-04-28 ([http://docs.redhat.com/docs/en-US/Red_Hat_Enterprise_Linux/2.1/html/AS_Release_Notes/RELEASE-NOTES-U7 Release Notes], [https://rhn.redhat.com/errata/RHBA-2005-362.html redhat-release-as-2.1AS-121.src.rpm])
+* Red Hat Enterprise Linux 2.1 ES (''[[Panama]]''), May 2003
+
+* Red Hat Enterprise Linux 3 (''Taroon''), 2003-10-22. Uses [[Linux (kernel)|Linux]] 2.4.21 ([http://www.redhat.com/docs/manuals/enterprise/RHEL-3-Manual/ Release notes also for updates])
+** Update 1, 2004-01-16 ([http://docs.redhat.com/docs/en-US/Red_Hat_Enterprise_Linux/3/html/Release_Notes/as-x86/RELEASE-NOTES-U1-x86-en.html Release Notes])
+** Update 2, 2004-05-18 ([http://docs.redhat.com/docs/en-US/Red_Hat_Enterprise_Linux/3/html/Release_Notes/as-x86/RELEASE-NOTES-U2-x86-en.html Release Notes])
+** Update 3, 2004-09-03 ([http://docs.redhat.com/docs/en-US/Red_Hat_Enterprise_Linux/3/html/Release_Notes/as-x86/RELEASE-NOTES-U3-x86-en.html Release Notes])
+** Update 4, 2004-12-21 ([http://docs.redhat.com/docs/en-US/Red_Hat_Enterprise_Linux/3/html/Release_Notes/as-x86/RELEASE-NOTES-U4-x86-en.html Release Notes])
+** Update 5, 2005-05-20 ([http://docs.redhat.com/docs/en-US/Red_Hat_Enterprise_Linux/3/html/Release_Notes/as-x86/RELEASE-NOTES-U5-x86-en.html Release Notes])
+** Update 6, 2005-09-28 ([http://docs.redhat.com/docs/en-US/Red_Hat_Enterprise_Linux/3/html/Release_Notes/as-x86/RELEASE-NOTES-U6-x86-en.html Release Notes])
+** Update 7, 2006-03-15 ([http://docs.redhat.com/docs/en-US/Red_Hat_Enterprise_Linux/3/html/Release_Notes/as-x86/RELEASE-NOTES-U7-x86-en.html Release Notes])
+** Update 8, 2006-07-20 ([http://docs.redhat.com/docs/en-US/Red_Hat_Enterprise_Linux/3/html/Release_Notes/as-x86/RELEASE-NOTES-U8-x86-en.html Release Notes])
+** Update 9, 2007-06-15 ([http://docs.redhat.com/docs/en-US/Red_Hat_Enterprise_Linux/3/html/Release_Notes/RELEASE-NOTES-U9-i386-en.html Release Notes])
+* Red Hat Enterprise Linux 4 (''[[Nahant]]''), 2005-02-15. Uses Linux 2.6.9
+** 4.1, also known as Update 1, 2005-06-09 ([http://www.redhat.com/docs/manuals/enterprise/RHEL-4-Manual/release-notes/as-x86/RELEASE-NOTES-U1-x86-en.html Release Notes])
+** 4.2, also known as Update 2, 2005-10-05 (kernel 2.6.9-22, [http://www.redhat.com/docs/manuals/enterprise/RHEL-4-Manual/release-notes/as-x86/RELEASE-NOTES-U2-x86-en.html Release Notes])
+** 4.3, also known as Update 3, 2006-03-07 ([http://www.redhat.com/docs/manuals/enterprise/RHEL-4-Manual/release-notes/as-x86/RELEASE-NOTES-U3-x86-en.html Release Notes]) ([http://www.centos.org/docs/4/html/release-notes/as-x86/RELEASE-NOTES-U3-en.html Release Notes on centos.org])
+** 4.4, also known as Update 4, 2006-08-11 (kernel 2.6.9-42, [http://www.redhat.com/docs/manuals/enterprise/RHEL-4-Manual/release-notes/as-x86/RELEASE-NOTES-U4-x86-en.html Release Notes])
+** 4.5, also known as Update 5, 2007-05-01 (kernel 2.6.9-55, [http://www.redhat.com/docs/manuals/enterprise/RHEL-4-Manual/release-notes/RELEASE-NOTES-U5-x86-en.html Release Notes])
+** 4.6, also known as Update 6, 2007-11-15 ([http://www.redhat.com/docs/manuals/enterprise/RHEL-4-Manual/release-notes/RELEASE-NOTES-U6-x86-en.html Release Notes])
+** 4.7, also known as Update 7, 2008-07-24 (kernel 2.6.9-78, [http://www.redhat.com/docs/manuals/enterprise/RHEL-4-Manual/release-notes/RELEASE-NOTES-U7-x86-en.html Release Notes])
+** 4.8, also known as Update 8, 2009-05-18 (kernel 2.6.9-89, [http://www.redhat.com/docs/en-US/Red_Hat_Enterprise_Linux/4.8/html/Release_Notes/index.html Release Notes])
+** 4.9, also known as Update 9, 2011-02-16 (kernel 2.6.9-100, [http://docs.redhat.com/docs/en-US/Red_Hat_Enterprise_Linux/4/html/4.9_Release_Notes/index.html Release Notes])
+* Red Hat Enterprise Linux 5 (''[[Tikanga MÄori|Tikanga]]''), 2007-03-14. Uses [[Linux (kernel)|Linux]] 2.6.18 ([http://www.redhat.com/docs/manuals/enterprise/RHEL-5-manual/release-notes/RELEASE-NOTES-x86-en.html Release notes])
+** 5.1, also known as Update 1, 2007-11-07 ([http://www.redhat.com/docs/manuals/enterprise/RHEL-5-manual/release-notes/RELEASE-NOTES-U1-x86-en.html Release Notes])
+** 5.2, also known as Update 2, 2008-05-21 ([http://www.redhat.com/docs/en-US/Red_Hat_Enterprise_Linux/5.2/html/Release_Notes/x86/index.html Release Notes], [http://www.redhat.com/docs/en-US/Red_Hat_Enterprise_Linux/5.2/html/Release_Notes/singles/relnotesU2-x86.html single file])
+** 5.3, also known as Update 3, 2009-01-20 (kernel 2.6.18-128, [http://docs.redhat.com/docs/en-US/Red_Hat_Enterprise_Linux/5/html/5.3_Release_Notes Release Notes])
+** 5.4, also known as Update 4, 2009-09-02 (kernel 2.6.18-164, [http://www.redhat.com/docs/en-US/Red_Hat_Enterprise_Linux/5.4/html/Release_Notes/ Release Notes])
+** 5.5, also known as Update 5, 2010-03-30 (kernel 2.6.18-194, [http://www.redhat.com/docs/en-US/Red_Hat_Enterprise_Linux/5.5/html/Release_Notes/ Release Notes])
+** 5.6, also known as Update 6, 2011-01-12 (kernel 2.6.18-238, [http://docs.redhat.com/docs/en-US/Red_Hat_Enterprise_Linux/5/html/5.6_Release_Notes/ Release Notes] and [https://rhn.redhat.com/errata/RHEA-2011-0020.html Errata for release])
+** 5.7, also known as Update 7, 2011-07-21 (kernel 2.6.18-274, [http://docs.redhat.com/docs/en-US/Red_Hat_Enterprise_Linux/5/html/5.7_Release_Notes/index.html Release Notes] and [https://rhn.redhat.com/errata/RHEA-2011-0977.html Errata for release])
+* Red Hat Enterprise Linux 6 (''Santiago''), 2010-11-10 Uses [[Linux (kernel)|Linux]] 2.6.32 ([http://docs.redhat.com/docs/en-US/Red_Hat_Enterprise_Linux/6/html/6.0_Release_Notes/ Release Notes]).
+** 6.1 also known as Update 1, 2011-05-19 ([http://www.redhat.com/about/news/prarchive/2011/Red-Hat-Delivers-Red-Hat-Enterprise-Linux-6-1 Release Announcement])
+
+===Life Cycle Dates===
+
+The various Red Hat Linux versions share a multiphase life cycle that can span 10 years. [http://www.redhat.com/security/updates/errata/ Errata Support Policies]
+
+{| class=&quot;wikitable&quot; 
+! Version !! Date of Release !! [https://access.redhat.com/support/policy/updates/errata/ End of Support Dates]
+|-
+| style=&quot;background-color: #fa8072;&quot; | Red Hat Enterprise Linux 2.1
+| 2002-03-26 (AS)&lt;br /&gt;
+2003-05-01 (ES)
+| 2009-05-31&lt;ref&gt;{{Cite web|url=https://rhn.redhat.com/errata/RHSA-2009-1076.html |title=Red Hat Enterprise Linux 2.1 - End Of Life |author= |date= |work= |publisher=Red Hat |accessdate=2010-01-12}}&lt;/ref&gt;
+|-
+| style=&quot;background-color: #fa8072;&quot; | {{nobr|Red Hat Enterprise Linux 3}}
+| 2003-10-23&lt;br /&gt;
+| 2006-07-20 (End of Production 1) &lt;br /&gt;
+2007-06-30 (End of Production 2) &lt;br /&gt;
+2010-10-31&lt;ref&gt;{{Cite web|url=https://rhn.redhat.com/errata/RHSA-2010-0817.html |title=Red Hat Enterprise Linux 3 - End Of Life |author= |date= |work= |publisher=Red Hat |accessdate=2010-01-12}}&lt;/ref&gt; (End of Production 3 / End of Regular Life Cycle) &lt;br /&gt;
+2013-10-31 (End of Extended Life Cycle)
+|-
+| style=&quot;background-color: #f0e68c;&quot; | {{nobr|Red Hat Enterprise Linux 4}}
+| 2005-02-14
+| 2009-03-31 (End of Production 1) &lt;br /&gt;
+2011-03-31 (End of Production 2) &lt;br /&gt;
+2012-02-29 (End of Production 3 / End of Regular Life Cycle) &lt;br /&gt;
+2015-02-28 (End of Extended Life Cycle)
+|-
+| style=&quot;background-color: #f0e68c;&quot; | {{nobr|Red Hat Enterprise Linux 5}}
+| 2007-03-15
+| Q4 2011 (End of Production 1) &lt;br /&gt;
+Q4 2012 (End of Production 2) &lt;br /&gt;
+2014-03-31 (End of Production 3 / End of Regular Life Cycle) &lt;br /&gt;
+2017-03-31 (End of Extended Life Cycle)
+|-
+| style=&quot;background-color: #A0E75A;&quot; | {{nobr|Red Hat Enterprise Linux 6}}
+| 2010-11-10
+| Q4 2014 (End of Production 1) &lt;br /&gt;
+Q4 2015 (End of Production 2) &lt;br /&gt;
+2017-11-30 (End of Production 3 / End of Regular Life Cycle) &lt;br /&gt;
+2020-11-30 (End of Extended Life Cycle)
+|-
+| style=&quot;background-color: #87ceeb;&quot; |{{nobr|Red Hat Enterprise Linux 7}}
+| ?
+| ?
+|}
+
+{{legend|#fa8072|Previous version outside of Regular Life Cycle}}
+{{legend|#f0e68c|Previous version with varying degrees of support}}
+{{legend|#A0E75A|Current version}}
+{{legend|#87ceeb|Future version}}
+
+Note:  A version outside of its Regular Life Cycle is normally unsupported, but support can still be obtained through Red Hat while the release is in its Extended Life Cycle through an add-on subscription, [http://www.redhat.com/rhel/server/extended_lifecycle_support/ Extended Life Cycle Support].
+
+==References==
+{{Reflist|colwidth=30em}}
+
+==Further reading==
+* {{Cite book|title=RHCE Red Hat Certified Engineer Linux Study Guide (RHEL 5)
+ |last= Jang |first= Michael H. |coauthors=
+ |year=2007 |publisher= McGraw-Hill |location= New York |isbn= 978-0072264548 |page= |pages= |url= |accessdate=}}
+* {{Cite book|title= Red Hat Certified Technician &amp; Engineer (RHEL 5)
+ |last= Ghori |first= Asghar |authorlink= |coauthors=
+ |year= 2009 |publisher= Global Village Publishing |location= Reston |isbn= 978-1615844302 |page= |pages= |url= |accessdate=}}
+* {{Cite book|title= Red Hat Enterprise Linux 5 Administration Unleashed
+ |last= Fox |first= Tammy |authorlink= |coauthors=
+ |year= 2007 |publisher= Sams |location= Indianapolis, Ind. |isbn= 978-0672328923 |oclc= 137291425 |page= |pages= |url= |accessdate=}}
+* {{Cite book|title= Learning Red Hat Enterprise Linux and Fedora
+ |last= McCarty |first= Bill |authorlink= |coauthors=
+ |year= 2004 |publisher= O'Reilly |location= Sebastopol, CA |isbn= 978-0596005894 |oclc= 55130915 |page= |pages= |url= |accessdate=}}
+* {{Cite book|title= Fedora 9 and Red Hat Enterprise Linux Bible
+ |last= Negus |first= Christopher |authorlink= |coauthors=
+ |year= 2008 |publisher= Wiley |location= Indianapolis, Ind. |isbn= 978-0470373620 |oclc= 222155845 |page= |pages= |url= |accessdate=}}
+* {{Cite book|title= Practical Guide to Fedora and Red Hat Enterprise Linux
+ |last= Sobell |first= Mark G. |authorlink= |coauthors=
+ |year= 2008 |publisher= Prentice Hall |location= Upper Saddle River, NJ |isbn= 978-0137142958 |oclc= 216616647 |page= |pages= |url= |accessdate=}}
+* {{Cite book|title= Red Hat Enterprise Linux 4 For Dummies
+ |last= Collings |first= Terry |authorlink= |coauthors=
+ |year= 2005 |publisher= Wiley |location= Hoboken, N.J. |isbn= 978-0764577130 |oclc= 58973830 |page= |pages= |url= |accessdate=}}
+* {{Cite book|title= Red Hat Enterprise Linux &amp; Fedora Core 4: The Complete Reference
+ |last= Petersen |first= Richard |authorlink= |coauthors=
+ |year= 2005 |publisher= McGraw-Hill |location= London |isbn= 978-0072261547 |oclc= 62293551 |page= |pages= |url= |accessdate=}}
+
+==External links==
+* [http://www.redhat.com/rhel/ Red Hat Enterprise Linux homepage]
+* [http://www.cio.com/article/155750 Brian Stevens, CTO and vice president of engineering, Red Hat on why Red Hat Enterprise Linux is &quot;The Business OS for Flexibility and Value&quot;]
+* {{DistroWatch|redhat|NAME=Red Hat Enterprise Linux}}
+
+{{Red Hat}}
+{{RedHatFedora-distro}}
+{{Linux distributions}}
+
+[[Category:RPM-based Linux distributions]]
+[[Category:Red Hat]]
+[[Category:X86-64 Linux distributions]]
+[[Category:Enterprise Linux distributions]]
+
+[[ar:Ø±ÙØ¯ ÙØ§Øª Ø¥ÙØªØ±Ø¨Ø±Ø§ÙØ² ÙÙÙÙØ³]]
+[[bs:Red Hat Enterprise Linux]]
+[[cs:Red Hat Enterprise Linux]]
+[[da:Red Hat Enterprise Linux]]
+[[de:Red Hat Enterprise Linux]]
+[[es:Red Hat Enterprise Linux]]
+[[fr:Red Hat Enterprise Linux]]
+[[ko:ë ëí ìí°íë¼ì´ì¦ ë¦¬ëì¤]]
+[[hr:Red Hat Enterprise Linux]]
+[[hu:Red Hat Enterprise Linux]]
+[[ml:à´±àµà´¡àµ à´¹à´¾à´±àµà´±àµ à´à´¨àµà´±àµ¼à´ªàµà´°àµà´¸àµ à´²à´¿à´¨à´àµà´¸àµ]]
+[[nl:Red Hat Enterprise Linux]]
+[[ja:Red Hat Enterprise Linux]]
+[[nn:Red Hat Enterprise Linux]]
+[[pl:Red Hat Enterprise Linux]]
+[[pt:Red Hat Enterprise Linux]]
+[[ro:Red Hat Enterprise Linux]]
+[[ru:Red Hat Enterprise Linux]]
+[[si:à¶»à·à¶©à· à·à·à¶§à· à¶à¶±à·à¶§à¶´à·âà¶»à¶ºà·à·à· (à¶½à·à¶±à¶à·à·à· à¶¶à·à¶¯à· à·à·à¶»à·à¶¸)]]
+[[sl:Red Hat Enterprise Linux]]
+[[sr:Red Hat Enterprise Linux]]
+[[sv:Red Hat Enterprise Linux]]
+[[tr:Red Hat Enterprise Linux]]
+[[uk:Red Hat Enterprise Linux]]
+[[vi:Red Hat Enterprise Linux]]
+[[zh:Red Hat Enterprise Linux]]</rev></revisions></page></pages></query></api>

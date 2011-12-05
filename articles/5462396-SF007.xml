@@ -1,0 +1,133 @@
+<?xml version="1.0"?><api><query><pages><page pageid="5462396" ns="0" title="Unity (game engine)"><revisions><rev xml:space="preserve">{{otheruses2|Unity}}
+{{Primary sources|date=September 2010}}
+{{expert-subject|Technology|article|talk=Expert request|date=February 2011|reason=needs expert help to fix this - too close to a blurb: remove all uncited stuff; find more third party sources, not just news media; describe the various products are, such as the Unity web player, in terms relevant to the end end user, not just the game developer}}
+
+{{Infobox software
+|name = Unity
+|location = [[SanFrancisco]]
+|logo = 
+|screenshot =
+|caption =
+|developer = Unity Technologies
+|latest_release_version = 3.4.2
+|latest_release_date = October 26, 2011
+|operating_system = [[Microsoft Windows|Windows]] (creation and deployment), [[Mac OS X]] (creation and deployment), [[Wii]]&lt;sup&gt;*&lt;/sup&gt;, [[iPhone]]/[[iPad]]&lt;sup&gt;*&lt;/sup&gt;, [[Xbox 360]]&lt;sup&gt;*&lt;/sup&gt;, [[Android (operating system)|Android]]&lt;sup&gt;*&lt;/sup&gt;, [[PS3]]&lt;sup&gt;*&lt;/sup&gt;&lt;br/&gt;&lt;small&gt;* = deployment only; an additional special licence is required for each platform&lt;/small&gt;
+|programming_language = [[C++]], [[C Sharp (programming language)|C#]]&lt;ref&gt;{{cite web|last=Meijer|first=Lucas|title=Is Unity Engine written in Mono/C#? or C++|url=http://answers.unity3d.com/questions/2187/is-unity-engine-written-in-mono-c-or-c|accessdate=26 April 2011}}&lt;/ref&gt;
+|genre = [[Game engine]]
+|license = [[Proprietary software|Proprietary]]
+|website = [http://www.unity3d.com/ www.unity3d.com]
+}}
+
+'''Unity''' is an integrated [[authoring tool]] for creating 3D [[video game]]s or other interactive content such as [[architectural visualization]]s or real-time 3D animations.   Unity's development environment runs on [[Microsoft Windows]] and [[Mac OS X]], and the games it produces can be run on  Windows, Mac, [[Xbox 360]], [[PlayStation 3]], [[Wii]],&lt;ref name=&quot;Wii&quot;&gt;{{cite web | url=http://www.gamasutra.com/php-bin/news_index.php?story=18840| title=Unity to Support Wii Console as Authorized Middleware Provider | publisher=Gamasutra}}&lt;/ref&gt; [[iPad]], [[iPhone]],&lt;ref name=&quot;iPhone&quot;&gt;{{cite web | url=http://www.macworld.com/article/132771/2008/04/unity.html | title=Unity Game Engine Coming to iPhone| publisher=Macworld}}&lt;/ref&gt; as well as the [[Android (operating system)|Android]] platform. It can also produce [[browser game]]s that use the Unity web player [[plug-in (computing)|plugin]], supported on Mac and Windows but not [[Linux]]. The web player is also used for deployment as Mac widgets. 
+
+Unity consists of both an editor&lt;ref&gt;{{cite web | url=http://unity3d.com/unity/editor/ | title=Unity 3 Editor Features}}&lt;/ref&gt; for developing/designing content and a [[game engine]]&lt;ref&gt;{{cite web | url=http://unity3d.com/unity/engine/ | title=Unity 3 Engine Features }}&lt;/ref&gt; for executing the final product.  Unity is similar to [[Macromedia Director|Director]], [[Game Blender|Blender game engine]], [[Virtools]], [[Torque Game Builder]], and [[Gamestudio]], which also use an integrated graphical environment as the primary method of development.
+
+Unity won the ''[[Wall Street Journal]]'' 2010 Technology Innovation Award in the software category.&lt;ref&gt;{{cite web | url=http://online.wsj.com/article/SB10001424052748703904304575497473735761294.html | title=The WSJ Technology Innovation Award Winners, Category by Category | publisher=The Wall Street Journal}}&lt;/ref&gt; In 2009, [[Unity Technologies]] was named one of [[Gamasutra]]'s &quot;Top 5 Game Companies of 2009&quot;&lt;ref&gt;{{cite web | url=http://www.gamasutra.com/view/news/26243/Gamasutras_Best_Of_2009_Top_5_Game_Companies.php |title=Gamasutra's Best of 2009: Top 5 Game Companies|publisher=Gamasutra}}&lt;/ref&gt; for Unity. Unity was a runner-up for the best use of graphics on Mac OS X in the 2006 [[Apple Design Awards]].&lt;ref name=ada2006&gt;{{cite web | url=http://www.macnn.com/articles/06/08/09/apple.design.awards.2006/| title=Apple Design Awards 2006 winners | publisher=MacNN}}&lt;/ref&gt;
+
+==Major features==
+* [[Integrated development environment]] with hierarchical, visual editing, detailed property inspectors and live game preview.&lt;ref&gt;{{cite web | url=http://tale-of-tales.com/blog/the-graveyard-post-mortem/#chapter2 | title=Tale of Tales: The Graveyard post mortem| publisher=Tale of Tales}}&lt;/ref&gt;&lt;ref&gt;{{cite web | url=http://creativemac.digitalmedianet.com/articles/viewarticle.jsp?id=82608&amp;afterinter=true | title=Unity 1.5.1 review| publisher=Creative Mac}}&lt;/ref&gt;
+* Deployment  on multiple platforms:
+** As a [[Microsoft Windows]] or [[Mac OS X]] executable
+** On the web (via the Unity Web Player plugin for [[Internet Explorer]], [[Firefox]], [[Safari (web browser)|Safari]], [[Mozilla]], [[Netscape]], [[Opera (web browser)|Opera]], [[Google Chrome]] and [[Camino]]) on Windows and OS X.
+** As a Mac OS X [[Dashboard (Mac OS)|Dashboard]] widget
+** For Nintendo [[Wii]]&lt;ref name=Wii /&gt; (requires additional license)
+** As an [[iPhone]]/[[iPad]] application&lt;ref name=iPhone /&gt; (requires additional license)
+** For Google [[Android (operating system)|Android]]&lt;ref&gt;{{cite web | url=http://www.gamasutra.com/php-bin/news_index.php?story=27558 | title=Unity Announces Support for Android | publisher=Gamasutra}}&lt;/ref&gt; (requires additional license)
+** For Microsoft [[Xbox 360]] (requires additional license)
+** For Sony [[PlayStation 3]] (requires additional license)
+* [[digital asset|Assets]] loaded into Unity and are automatically imported, and are re-imported if the asset is updated.&lt;ref&gt;{{cite web | url=http://drupal.technicat.com/games/unity/assets | title=Technicat: Asset Importing| publisher=Technicat}}&lt;/ref&gt; Unity supports integration with [[3ds Max]], [[Maya (software)|Maya]], [[Softimage]], [[Blender (software)|Blender]], [[Modo (software)|Modo]], [[ZBrush]], [[Cinema 4D]], [[Cheetah3D]], [[Photoshop]] and [[Allegorithmic Substance]].
+* Graphics engine uses [[Direct3D]] (Windows), [[OpenGL]] (Mac, Windows), [[OpenGL ES]] (iOS, Android), and proprietary APIs (Wii).&lt;ref&gt;{{cite web | url=http://unity3d.com/unity/features/graphics | title=Features: Graphical Fidelity| publisher=Unity Technologies}}&lt;/ref&gt;
+* Support for [[bump mapping]], [[reflection mapping]], [[parallax mapping]], [[Screen Space Ambient Occlusion]], dynamic shadows using [[shadow map]]s, render-to-texture and full-screen post processing effects.
+* ShaderLab language for using shaders, supporting both declarative &quot;programming&quot; of the fixed-function pipeline and shader programs written in [[Cg programming language|Cg]] or [[GLSL]].&lt;ref&gt;{{cite web | url=http://unity3d.com/unity/features/shaders | title=Features: Shaders| publisher=Unity Technologies}}&lt;/ref&gt; A shader can include multiple variants and a declarative fallback specification, allowing Unity to detect the best variant for the current video card and if none are compatible, fall back to an alternative shader that may sacrifice features for broader compatibility.
+* Built-in support for [[NVIDIA|Nvidia's]] (formerly [[Ageia|Ageia's]]) [[PhysX]] [[physics engine]],&lt;ref&gt;{{cite web | url=http://unity3d.com/unity/features/physics | title=Features: Advanced Physics| publisher=Unity Technologies}}&lt;/ref&gt; version 2.8.3 (as of Unity 3.0) with added support for real time cloth on arbitrary and skinned meshes, thick ray casts, and collision layers.
+* Game scripting via Mono.&lt;ref&gt;{{cite web | url=http://www.mono-project.com/Companies_Using_Mono | title=Companies Using Mono| publisher=Mono Project}}&lt;/ref&gt; Scripting is built on [[Mono (software)|Mono]], the open-source implementation of the [[.NET Framework]].  Programmers can use UnityScript (a custom language with [[ECMAScript]]-inspired syntax), [[C Sharp (programming language)|C#]] or [[Boo programming language|Boo]] (which has a [[Python (programming language)|Python]]-inspired syntax).  Starting with the 3.0 release, Unity ships with a customized version of MonoDevelop for debugging scripts&lt;ref&gt;{{cite web | url=http://unity3d.com/unity/whats-new/unity-3.html | title=What's New in Unity 3.0}}&lt;/ref&gt;.
+* The Unity Asset Server - A version control solution for all game assets and scripts, using PostgreSql as a backend.
+* Audio system built on [[FMOD]] library, with ability to play back [[Ogg Vorbis]] compressed audio.
+* Video playback using [[Theora]] codec.&lt;ref&gt;{{cite web | url=http://unity3d.com/unity/features/audio-and-video | title=Features: Audio and Video| publisher=Unity Technologies}}&lt;/ref&gt;
+* A terrain and vegetation engine,&lt;ref&gt;{{cite web | url=http://unity3d.com/unity/features/terrains | title=Features: Terrains| publisher=Unity Technologies}}&lt;/ref&gt; supporting tree billboarding.
+* Occlusion Culling with [[Umbra Software|Umbra]] (only in Unity &gt;= 3 Pro).
+* Built-in [[lightmap]]ping and [[global illumination]] with [[Beast (software)|Beast]] (only in Unity &gt;= 3 Pro).
+* Multiplayer networking using [[Raknet]].
+* The Unity Asset Store - An in-editor repository with thousands of Unity-ready assets, including models, characters, code, audio, etc.
+
+==Unity Asset Server==
+The Unity Asset Server is a [[revision control|version control]] solution for all game assets and scripts.&lt;ref name=asset-server&gt;{{cite web | url=http://unity3d.com/unity/features/unity-asset-server| title=Features: Unity Asset Server | publisher=Unity Technologies}}&lt;/ref&gt; The asset server supports multi-gigabyte projects with thousands of multi-megabyte files. Import settings and other metadata are stored and versioned while updates, commits, and graphical version comparisons are all performed inside the Unity Editor. When files are modified, their status is updated instantly. The Unity Asset Server runs on the open source [[PostgreSQL]] database server and is available for Windows, Mac OS X and Linux.   It lacks support for branches, and obviously for branch merges.
+
+Although the software that is used to run a Unity Asset Server is itself free to download and use, a connection to a Unity Asset Server cannot be made without a copy of the Unity3D Pro client that includes the Asset Server add-on, which is an additional cost.
+
+==Licensing==
+There are two main licenses: ''Unity'' and ''Unity Pro'',&lt;ref name=licensing&gt;{{cite web | url=http://unity3d.com/unity/licenses| title=Unity License Comparison | publisher=Unity Technologies}}&lt;/ref&gt; with the Pro version being available for a price and the non Pro version being free.  The ''Pro'' version has additional features, such as render-to-texture, occlusion culling, global lighting and post-processing effects, as well as the ability to work in a team via version control. The Free version, on the other hand, displays a splash screen (in standalone games) and a watermark (in web games) that cannot be customized or disabled.
+
+Both Unity and Unity Pro include the development environment, tutorials, sample projects and content, support via forum, wiki, and future updates in the same major version (i.e. buying Unity Pro 3.0 gets all future Unity Pro 3.x updates for free).
+
+Unity for iOS and Unity for Android are add-ons to an existing Unity purchase.&lt;ref name=iPhone /&gt; A Unity Pro licenses is required to purchase an iOS Pro or Android Pro licenses. The regular Android and iOS licenses can be used with the free version of Unity.
+
+Source code, PS3, Xbox 360, and Wii licenses are negotiated on a case by case basis.&lt;ref&gt;{{cite web | url=https://store.unity3d.com/shop/ | title = UNITY | publisher = Unity Technologies}}&lt;/ref&gt;
+
+Educational licenses are provided by Studica under the stipulation that it for purchase and use by schools, purely for education.&lt;ref&gt;{{cite web | url=http://www.studica.com/unity-pro-3-education.html | title= Unity Pro 3 - Education - Academic Software Discounts for Students -}}&lt;/ref&gt;
+
+==Future platforms==
+===Flash===
+It was announced in February of 2011 that Unity will export to Adobe Flash at some point in the future.&lt;ref&gt;{{cite web | url=http://learnunity3d.com/2011/02/unity-will-publish-to-flash-player/ | title=Unity will publish to Flash Player}}&lt;/ref&gt;  Development is ongoing.  This will allow users to play Unity-authored content with a Flash browser plug-in, rather than need to install the Unity plug-in, provided the game developer has built a Flash version of their game. Features are to include physics, lightmapping, Occlusion culling, custom shaders, lightprobes, particle systems, audio, and communication between the Unity project and Actionscript code.&lt;ref&gt;{{cite web | url=http://blogs.unity3d.com/2011/09/01/unity-and-flash-a-sneak-peek/ | title=Unity Technologies Blog Â» Blog Archive Â» Unity and Flash  a sneak peek }}&lt;/ref&gt;
+
+===Google Native Client===
+It was announced in 2010 that Unity Technologies was working on a Native Client port of their engine.&lt;ref&gt;{{cite web | url=http://www.next-gen.biz/news/unity-unveils-plugin-free-chrome-support | title=Unity Unveils Plugin-Free Chrome Support}}&lt;/ref&gt;  This would allow Unity-authored content to be played in any browser that supports Native Client.
+
+===Linux===
+There have been several indications at this point that a [[Linux]] port is in the works.  Specifically, an end-user discovered an option for Linux as a runtime platform in Unity itself&lt;ref&gt;{{cite web | url=http://forum.unity3d.com/threads/5891-Linux-Web-Player?p=518025&amp;viewfull=1#post518025 | title=Linux Runtime Option Discovered}}&lt;/ref&gt; and work on a Linux port was later confirmed by a Unity Technologies developer&lt;ref&gt;{{cite web | url=http://forum.unity3d.com/threads/5891-Linux-Web-Player?p=519300&amp;viewfull=1#post519300 | title=Unity Technologies developer confirms Linux Port In-Progress}}&lt;/ref&gt;.  A prototype of a web-plugin for Firefox on Linux was also blogged about on Unity 3D's corporate blog&lt;ref&gt;{{cite web | url=http://blogs.unity3d.com/2011/03/24/ninjacamp-iii-foxes-and-penguins-unite/ | title=NinjaCamp III: Foxes and Penguins Unite}}&lt;/ref&gt; and another Unity Technologies employee has publicly indicated that work has been done on a Linux port&lt;ref&gt;{{cite web | url=http://answers.unity3d.com/questions/118406/linux-support.html | title=Linux Support on Unity Answers Site}}&lt;/ref&gt;.  However, Unity Technologies has not made any official public statement regarding status of the port or an estimated release date.
+
+With the upcoming support for Flash&lt;ref&gt;{{cite web | url=http://learnunity3d.com/2011/02/unity-will-publish-to-flash-player/ | title=Unity will publish to Flash Player}}&lt;/ref&gt;, Linux users will be able to play Unity-authored content with a Flash browser plug-in.
+
+===Roku 2===
+On September 28 it was announced that Unity will provide content for the streaming box top set, Roku 2 through it's Union initiative.&lt;ref&gt;{{cite web | url= http://www.marketwire.com/press-release/Unity-Technologies-and-Roku-Announce-Agreement-to-Bring-Union-Game-Titles-to-Roku-1566592.htm?mkt_tok=3RkMMJWWfF9wsRonuKjOZKXonjHpfsX56uovX6exh4kz2EFye%2BLIHETpodcMTcVqNq%2BNFAAgAZVnyRQFD%2B6caJkT%2Fg%3D%3D | title=Unity Technologies and Roku Announce Agreement to Bring Union Game Titles to Roku:}}&lt;/ref&gt;
+
+==Shortfalls==
+===DirectX 11===
+The Unity 3d game engine does not offer any DirectX-11 support&lt;ref&gt;{{cite web | url= http://forum.unity3d.com/threads/49240-Does-Unity-support-DX11-Can-it-compare-to-BF-Bad-Company-2 | title= Does Unity support DX11? Can it compare to BF Bad Company 2?}}&lt;/ref&gt;, a rising technology in desktop gaming.
+
+===PS Vita Support===
+Additionally, the game engine has not announced support for the soon to be released [[PlayStation Vita]], while [[Unreal Engine 3]] has announced the ability to export to the PlayStation Vita platform.&lt;ref&gt;{{web cite | url= http://www.unrealengine.com/platforms | title= Platforms | Unreal Technology | access_date = 11/15/11}}&lt;/ref&gt;
+
+===AI Tools===
+Unity 3d has yet to release any form of an Artificial Intelligence tool or section of the editor, however in the latest Unite 11 Keynote, it was announced there will be a full AI implementation in Unity 3d's next version, 3.5.&lt;ref&gt;{{web cite | url= http://unity3d.com/unite/keynote | title= UNITY: Unite 11| access_date = 11/16/11}}&lt;/ref&gt; Many of the AI features Unity 3d does not inherently include can be obtained via 3rd party plugins such as [http://forum.unity3d.com/threads/97753-RAIN-one-Artificial-Intelligence-Engine-RELEASED RAIN- AI Engine].
+
+===Dynamic Destruction===
+Also known as &quot;destructible environments&quot;, Unity 3d does not support any form of dynamic breaking apart of 3d objects.&lt;ref&gt;{{web cite | url= http://forum.unity3d.com/threads/73345-Will-Unity3D-also-be-using-APEX | title= Will Unity3D also be using APEX ?| access_date = 11/15/11}}&lt;/ref&gt; Although Unity 3d supports most all of the features of Nvidia PhysX, it does not allow [http://developer.nvidia.com/apex-destruction APEX Destruction], a part of PhysX which allows the configuration of rules as to how 3d objects within the game-space will be broken apart based on user interaction.
+
+Unity 3d does, however, provide a code library that allows users to directly edit the shape of all game objects, allowing savvy users to create custom systems that can break apart objects.&lt;ref&gt;{{web cite | url= http://unity3d.com/support/documentation/ScriptReference/Mesh.html | title= Unity Script Reference â Mesh| access_date = 11/15/11}}&lt;/ref&gt; An example of one of these is the [http://forum.unity3d.com/threads/91183-Released-Mesh-Destruction-quot-Piecemaker-quot Piecemaker - Mesh Destruction Asset]
+
+==See also==
+* [[List of game engines]]
+
+==References==
+{{Reflist|2}}
+
+==External links==
+*{{Official website|http://www.unity3d.com/}}
+*{{YouTube|user=unity3d|Unity}}
+*{{Facebook|unity3d|Unity}}
+*{{Twitter|unity3d|Unity}}
+* [http://forum.unity3d.com Unity Forums (official Unity community)]
+* [http://www.unity-insider.de Unity Insider (German Unity community)]
+*{{YouTube|user=expressionforge|Unity}}
+* [http://www.design3.com design3, Unity's Authorized Training Partner]
+
+{{Unity engine games}}
+{{iPhone video game engines}}
+
+{{DEFAULTSORT:Unity (Game Engine)}}
+[[Category:Video game engines]]
+[[Category:IPhone video game engines]]
+[[Category:.NET game engines]]
+[[Category:Mac OS X software]]
+[[Category:Mono project applications]]
+[[Category:Unity engine games| ]]
+
+[[de:Unity (Spielengine)]]
+[[fa:ÙÙØªÙØ± ÛÙÙÛØªÛ]]
+[[fr:Unity (moteur de jeu)]]
+[[ko:ì ëí° (ê²ì ìì§)]]
+[[pt:Unity]]
+[[ru:Unity (Ð¸Ð³ÑÐ¾Ð²Ð¾Ð¹ Ð´Ð²Ð¸Ð¶Ð¾Ðº)]]
+[[tr:Unity 3D]]
+[[zh:Unity (æ¸¸æå¼æ)]]</rev></revisions></page></pages></query></api>

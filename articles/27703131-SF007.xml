@@ -1,0 +1,71 @@
+<?xml version="1.0"?><api><query><pages><page pageid="27703131" ns="0" title="List of free software Android applications"><revisions><rev xml:space="preserve">{{Multiple issues|cleanup=December 2011|refimprove=December 2011|disputed-list=December 2011|incomplete=December 2011|inadequate-lead=December 2011|update=December 2011}}
+[[File:Galaxy Nexus smartphone.jpg|thumb|Most Android phones, like the [[Galaxy Nexus]], allow installation of applications both from the [[Android market]] or directly via [[.apk|APK files]]]]
+[[Android (operating system)|Android]] is a [[Linux]]-based operating system for phones and other mobile devices (tablets, ereaders, media players, etc.).
+
+== Known free software Android applications ==
+
+This is an incomplete list of notable applications that run on the [[Android platform]] that meet the guidelines for [[free software]].
+
+=== Communication ===
+
+{| class=&quot;wikitable&quot;
+|-
+! Application name !! Description !! Website !! Apk !! Market !! Sources !! License !! API !! Note	
+|-
+| [[Android Privacy Guard|APG]] || Android Privacy Guard || [http://www.thialfihar.org/projects/apg/ APG] || [http://code.google.com/p/android-privacy-guard/downloads/list apk] || &lt;!--[market://search?q=pname:org.thialfihar.android.apg market]--&gt; {{Yes}} || [http://android-privacy-guard.googlecode.com/svn/trunk/ svn] || [http://www.apache.org/licenses/LICENSE-2.0 Apache 2.0] || Android 1.5+ ||   
+|-
+| [[Funambol]] || Android Sync client || [https://android-client.forge.funambol.org/ Funambol Client for Android]|| [https://android-client.forge.funambol.org/files/documents/99/365/FunambolSyncClient.apk apk] || &lt;!-- [market://search?q=pname:com.funambol.android market] --&gt; {{Yes}} || [https://android-client.forge.funambol.org/svn/android-client/trunk/android-client/ svn] || [http://www.gnu.org/licenses/agpl.html aGPLv3] || Android 2.0+ || 	
+|}
+
+=== Emulators ===
+{| class=&quot;wikitable&quot;
+|-
+! Application name !! Description !! Website !! Apk !! Market !! Sources !! License !! API !! Note	
+|-
+| [[Scummvm]] || ScummVM Android Port || [http://wiki.scummvm.org/index.php/Android ScummVM] || || || || || Android 1.5+ || now officially [https://sites.google.com/site/scummvmandroid/announcements/androidportofficiallymerged merged]
+|}
+
+=== Games ===
+{| class=&quot;wikitable&quot;
+|-
+! Application name !! Description !! Website !! Apk !! Market !! Sources !! License !! API !! Note	
+|-
+| [[Fish Fillets NG]] || Underwater puzzle game.  ||[http://fillets.sourceforge.net/ Fish Fillets NG]|| || {{Yes}} ||[http://fillets.sourceforge.net/download.php tgz] || GPLv2 || || Port of Fish Fillets NG
+|-
+| [[Frozen Bubble]] ||Knock the bubbles down by making clusters of three or more bubbles in the same color.  ||[http://code.google.com/p/frozenbubbleandroid/ Frozen Bubble]|| || {{Yes}} || [http://code.google.com/p/frozenbubbleandroid/source/browse/ svn] || GPLv2 || 3.0 || Port of Frozen Bubble
+|-
+| [[Nethack]] Android || NetHack || [http://code.google.com/p/nethack-android/ homepage] || [http://code.google.com/p/nethack-android/downloads/list list] || {{Yes}} || [http://nethack-android.googlecode.com/svn/trunk/ svn] || GPLv2 || 1.5+ || Port of NetHack
+|-
+| [[Simon Tatham]]'s Puzzles || A great portable collection of puzzle games, ported to android ||[http://chris.boyle.name/projects/android-puzzles Android Puzzles] || [http://chris.boyle.name/download/SGTPuzzles.apk apk] || {{Yes}} || [https://github.com/chrisboyle/sgtpuzzles git] || MIT || 1.5+ ||	
+|-
+| [[Warmux]] || A turn-based artillery game ||[http://www.wormux.org/ Warmux] || [http://www.wormux.org/phpboost/download/download-14+warmux-11-04-1-for-android.php apk] || {{Yes}} || [http://www.wormux.org/phpboost/download/download-13+warmux-11-04-1-source-code.php tar.bz2] || GPLv2 || 2.0+ ||	
+|}
+
+=== General ===
+
+{| class=&quot;wikitable&quot;
+|-
+! Application name !! Description !! Website !! Apk !! Market !! Sources !! License !! API !! Note	
+|-
+| Android's [[Fortune_(Unix)|Fortune]] || Quotes and Fortune Cookie program || [https://launchpad.net/androidsfortune Project Page] || [https://launchpad.net/androidsfortune/+download apk] || {{Yes}} || [https://code.launchpad.net/androidsfortune bzr] || GPLv3 || || 	
+|-
+| [[Barcode Scanner (application)|Barcode Scanner]] || Barcode reader || [http://code.google.com/p/zxing/ ZXing Project] || [http://code.google.com/p/zxing/downloads/list latest] || {{Yes}} || [http://zxing.googlecode.com/svn/trunk/ svn] || Apache 2.0 || || 	
+|-
+| [[FBReader|FBReaderJ]]||e-book reader || [http://fbreader.org/FBReaderJ/ site] || [http://www.fbreader.org/files/android/FBReaderJ.apk apk] || &lt;!-- [market://search?q=pname:org.geometerplus.zlibrary.ui.android market] --&gt; {{Yes}} || [https://github.com/geometer/FBReaderJ git] || GPL || Android 1.5+ ||  (fbreader's port)	
+|-
+| [[Rockbox]] || Music player / jukebox || [http://www.rockbox.org] || [http://www.rockbox.org/wiki/AndroidPort] || {{No}} || svn || GPLv2 || || officially &quot;unusable&quot;, early development version 	
+|-
+| [[Tomboy (software)|Tomdroid]] || Note taking application with online sync || [http://www.launchpad.net/tomdroid Tomdroid] || [https://launchpad.net/tomdroid/+download latest]|| {{Yes}} || [https://code.launchpad.net/tomdroid bzr] || GPLv3 || Android 1.6+ || a port of [[Tomboy (software)|Tomboy]] to android
+|}
+
+== External links ==
+* [http://www.aopensource.com/ Android Open Source resources and software database]
+* [http://f-droid.org/ F-Droid Repository of free and open Android Software]
+{{Android}}
+
+{{Portal|Free software}}
+{{FLOSS}}
+
+{{DEFAULTSORT:List Of Open Source Android Applications}}
+[[Category:Android software]]
+[[Category:Free software]]</rev></revisions></page></pages></query></api>

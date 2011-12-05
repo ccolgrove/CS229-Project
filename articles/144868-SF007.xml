@@ -1,0 +1,287 @@
+<?xml version="1.0"?><api><query><pages><page pageid="144868" ns="0" title="Apache Subversion"><revisions><rev xml:space="preserve">{{Infobox software
+| name                   = Subversion
+| logo                   = [[File:Subversion.png|250px]]
+| developer              = [[Apache Software Foundation]]
+| status                 = Active
+| released               = {{initial-release|October 20, 2000}}
+| frequently updated     = yes&lt;!-- Release version update? Don't edit this page, just click on the version number! --&gt;
+| operating system       = [[Cross-platform]]
+| programming language   = [[C (programming language)|C]]
+| genre                  = [[Revision control]]
+| license                = [[Apache License]]
+| website                = {{URL|http://subversion.apache.org/}}
+}}
+'''Apache Subversion''' (often abbreviated '''SVN''', after the command name ''svn'') is a [[software versioning]] and a [[revision control]] system distributed under a [[free license]]. Developers use Subversion to maintain current and historical versions of files such as [[source code]], web pages, and documentation.  Its goal is to be a mostly-compatible successor to the widely used [[Concurrent Versions System]] (CVS).
+
+The [[open source]] community has used Subversion widely: for example in projects such as [[Apache Software Foundation]], [[Free Pascal]], [[FreeBSD]], [[GNU Compiler Collection|GCC]], [[Django (web framework)|Django]], [[Ruby (programming language)|Ruby]], [[Mono (software)|Mono]], [[SourceForge]], [[PHP]] and [[MediaWiki]]. [[Google Code]] also provides Subversion hosting for their open source projects. [[BountySource]] systems use it exclusively. [[CodePlex]] offers access to Subversion as well as to other types of clients.
+
+The corporate world has also started to adopt Subversion. A 2007 report by [[Forrester Research]] recognized Subversion as the sole leader in the Standalone Software Configuration Management (SCM) category and as a strong performer in the Software Configuration and Change Management (SCCM) category.&lt;ref&gt;{{cite web | url=http://www.collab.net/forrester_wave_report/index.html | title=The Forrester Wave: Software Change and Configuration Management, Q2 2007 | publisher=[[Forrester Research]]}}
+&lt;/ref&gt;
+
+Subversion was created by [[CollabNet]] Inc. in 2000 and is now a top-level Apache project being built and used by a global community of contributors.
+
+==History==
+[[CollabNet]] founded the Subversion project in 2000 as an effort to write an open-source version-control system which operated much like [[Concurrent Versions System|CVS]] but which fixed the bugs and supplied some features missing in CVS. By 2001, Subversion had advanced sufficiently to host its own source code.&lt;ref&gt;&quot;Subversion's History&quot;, section of [http://svnbook.red-bean.com/ Version Control with Subversion], version 1.4&lt;/ref&gt; In November 2009, Subversion was accepted into [[Apache Incubator]]: this marked the beginning of the process to become a standard top-level Apache project.&lt;ref&gt;[http://www.sdtimes.com/link/33886 Subversion joins forces with Apache] by David Rubinstein in [[SD Times]] November 4, 2009.&lt;/ref&gt; It became a top-level Apache project on February 17, 2010.&lt;ref&gt;[http://subversion.wandisco.com/component/content/article/1/43.html] via subversion community&lt;/ref&gt;
+
+==Features==
+* [[Commit (data management)|Commits]] as true [[Atomicity (database systems)|atomic operations]] (interrupted commit operations in CVS would cause repository inconsistency or corruption).
+* Renamed/copied/moved/removed files retain full revision history.
+* The system maintains [[Software versioning|versioning]] for directories, renames, and file [[metadata]] (but not for timestamps). Users can move and/or copy entire directory-trees very quickly, while retaining full revision history.
+* Versioning of [[symbolic link]]s.
+* Native support for binary files, with space-efficient binary-diff storage.
+* [[Apache HTTP Server]] as network server, [[WebDAV]]/[[WebDAV#Extensions_and_derivatives|Delta-V]] for [[Protocol (computing)|protocol]]. There is also an independent server [[process (computing)|process]] called svnserve that uses a custom protocol over [[Internet Protocol Suite|TCP/IP]].
+* [[Branching (software)|Branching]] as a cheap operation, independent of file size (though Subversion itself does not distinguish between a branch and a directory)
+* Natively [[clientâserver model|clientâserver]], [[Abstraction layer|layered]] [[Library (computing)|library]] design.
+* Client/server protocol sends [[diff]]s in both directions.
+* Costs proportional to change size, not to data size.
+* [[Parsing|Parsable]] output, including [[XML]] log output.
+* [[Open source]] licensed â [[Apache License]] in the projected 1.7 release; prior versions use a derivative of the Apache Software License, v1.1
+* [[Internationalization and localization|Internationalized]] program messages.
+* File locking for unmergeable files (&quot;reserved checkouts&quot;).
+* Path-based authorization.
+* [[Language binding]]s for [[C Sharp (programming language)|C#]], [[PHP]], [[Python (programming language)|Python]], [[Perl]], [[Ruby (programming language)|Ruby]], and [[Java (programming language)|Java]].
+* Full [[MIME]] supportÂ â users can view or change the MIME type of each file, with the software knowing which MIME types can have their differences from previous versions shown.
+
+===Repository types===
+Subversion offers two types of repository storage.
+
+====Berkeley DB====
+Original development of Subversion used the [[Berkeley DB]] package.
+Subversion has some limitations with Berkeley DB usage when a program that accesses the database crashes or terminates forcibly. No data loss or corruption occurs, but the repository is offline while Berkeley DB replays the journal and cleans up any outstanding locks. When using Berkeley DB repository, the safest way to use it is by a single server process running as one user, instead of through a shared filesystem.&lt;ref name=&quot;backend&quot;&gt;{{cite book |author= Ben Collins-Sussman, Brian W. Fitzpatrick, C. Michael Pilato |title= Version Control with Subversion: For Subversion 1.7 |year= 2011  |chapter= Chapter 5: Strategies for Repository Deployment |url= http://svnbook.red-bean.com/en/1.7/svn.reposadmin.planning.html#svn.reposadmin.basics.backends |publisher = O'Reilly}}&lt;/ref&gt;
+
+====FSFS====
+In 2004, the Fast Secure File System (FSFS) was first developed. It uses the [[OpenSSL]] and [[Filesystem in Userspace]] (FUSE) packages.&lt;ref&gt;{{Cite web |title= FSFS - the Fast Secure File System |url= http://fsfs.sourceforge.net/ |accessdate= October 29, 2011 }}&lt;/ref&gt;
+FSFS works faster on directories with a large number of files and takes less disk space, due to less logging.&lt;ref name=&quot;backend&quot;/&gt;
+Beginning with Subversion 1.2, FSFS became the default data store for new repositories.
+
+===Repository access===
+{{Main| Comparison of Subversion clients}}
+
+Access to Subversion repositories can take place by:
+
+# Local filesystem or network filesystem,&lt;ref&gt;[[Berkeley DB]] relies on file locking and thus should not be used on (network) filesystems which do not implement them&lt;/ref&gt; accessed by client directly. This mode uses the &lt;tt&gt;file:///path&lt;/tt&gt; access scheme.
+# [[WebDAV]]/Delta-V (over http or https) using the &lt;tt&gt;mod_dav_svn&lt;/tt&gt; module for [[Apache HTTP Server|Apache 2]]. This mode uses the &lt;tt&gt;&lt;nowiki&gt;http://host/path&lt;/nowiki&gt;&lt;/tt&gt; access scheme or &lt;tt&gt;&lt;nowiki&gt;https://host/path&lt;/nowiki&gt;&lt;/tt&gt; for secure connections using ssl.
+# Custom &quot;svn&quot; protocol (default [[List of TCP and UDP port numbers|port]] 3690), using plain text or over [[TCP/IP]]. This mode uses either the &lt;tt&gt;&lt;nowiki&gt;svn://host/path&lt;/nowiki&gt;&lt;/tt&gt; access scheme for unencrypted transport or &lt;tt&gt;svn+ssh://host/path&lt;/tt&gt; scheme for tunneling over ssh.
+
+All three means can access both FSFS and Berkeley DB repositories.
+
+Any 1.x version of a client can work with any 1.x server. Newer clients and servers have additional features and performance capabilities, but have fallback support for older clients/servers.&lt;ref&gt;[http://subversion.tigris.org/svn_1.5_releasenotes.html SVN 1.5 release notes]&lt;/ref&gt;
+
+==Layers==
+Internally, a Subversion system comprises several libraries arranged as layers. Each performs a specific task and allows developers to create their own tools at the desired level of complexity and specificity.
+
+; Fs : The lowest level; it implements the versioned filesystem which stores the user data.
+; Repos : Concerned with the repository built up around the filesystem. It has many helper functions and handles the various &quot;hooks&quot; that a repository may have, e.g. scripts that run when an action is performed. Together, Fs and Repos constitute the &quot;filesystem interface&quot;.
+; mod_dav_svn : Provides [[WebDAV]]/Delta-V access through Apache 2.
+; Ra : Handles &quot;repository access&quot;, both local and remote. From this point on, repositories are referred to using URLs, e.g.
+;* &lt;tt&gt;file:///path/&lt;/tt&gt; for local access,
+;* &lt;tt&gt;&lt;nowiki&gt;http://host/path/&lt;/nowiki&gt;&lt;/tt&gt; or &lt;tt&gt;&lt;nowiki&gt;https://host/path/&lt;/nowiki&gt;&lt;/tt&gt; for WebDAV access, or
+;* &lt;tt&gt;&lt;nowiki&gt;svn://host/path/&lt;/nowiki&gt;&lt;/tt&gt; or &lt;tt&gt;svn+ssh://host/path/&lt;/tt&gt; for the SVN protocol.
+; Client, Wc : The highest level. It abstracts repository access and provides common client tasks, such as authenticating users or comparing versions. Subversion clients use the Wc library to manage the local working copy.
+
+==Filesystem==
+[[File:Svn 3D-tree.svg|right|thumb|250px]]
+
+One can view the Subversion filesystem as &quot;two-dimensional&quot;.&lt;ref&gt;[http://svnbook.red-bean.com/nightly/en/svn.branchmerge.basicmerging.html#svn.branchmerge.basicmerging.resurrect Basic Merging&lt;!-- Bot generated title --&gt;]&lt;/ref&gt; Two coordinates are used to unambiguously address filesystem items:
+* '''Path''' (regular [[Path (computing)|path]] of [[Unix-like]] OS filesystem)
+* '''Revision'''
+Each revision in a Subversion filesystem has its own ''[[root directory|root]]'', which is used to access contents at that revision. Files are stored as links to the most recent change; thus a Subversion repository is quite compact. The system consumes storage space proportional to the number of changes made, not to the number of revisions.
+
+The Subversion filesystem uses transactions to keep changes [[Atomicity (database systems)|atomic]]. A transaction operates on a specified revision of the filesystem, not necessarily the latest. The transaction has its own ''root'', on which changes are made. It is then either committed and becomes the latest revision, or is aborted. The transaction is actually a long-lived filesystem object; a client does not need to commit or abort a transaction itself, rather it can also begin a transaction, exit, and then can re-open the transaction and continue using it. Multiple clients can access the same transaction and work together on an atomic change, though no existing clients expose this capability.
+
+==Properties==
+One important feature of the Subversion filesystem is properties: simple ''name''=''value'' pairs of text. Properties occur in two different places in the Subversion filesystem. The first is on filesystem entries (i.e., files and directories). These are versioned just like other changes to the filesystem. Users can add any property they wish, and the Subversion client uses a set of properties, which it prefixes with 'svn:'.
+
+; &lt;tt&gt;svn:executable&lt;/tt&gt; : Makes files on [[Unix]]-hosted working copies executable.
+; &lt;tt&gt;svn:mime-type&lt;/tt&gt; : Stores the [[Internet media type]] (&quot;MIME type&quot;) of a file. Affects the handling of diffs and merging.
+; &lt;tt&gt;svn:ignore&lt;/tt&gt; : A list of filename patterns to ignore in a directory. Similar to [[Concurrent Versions System|CVS]]'s &lt;tt&gt;.cvsignore&lt;/tt&gt; file.
+; &lt;tt&gt;svn:keywords&lt;/tt&gt; : A list of ''keywords'' to substitute into a file when changes are made. The file itself must also reference the keywords as &lt;tt&gt;$keyword$&lt;/tt&gt; or &lt;tt&gt;$keyword:...$&lt;/tt&gt;. This is used to maintain certain information (e.g., author, date of last change, revision number) in a file without human intervention.&lt;br /&gt;The keyword substitution mechanism originates from [[Revision Control System|rcs]]&lt;ref&gt;http://www.openbsd.org/cgi-bin/man.cgi?query=rcs&amp;sektion=1#KEYWORD+SUBSTITUTION Keyword substitution keywords in cvs(1)&lt;/ref&gt; and from cvs.
+; &lt;tt&gt;svn:eol-style&lt;/tt&gt; : Makes the client convert [[Newline|end-of-line]] characters in text files. Used when the working copy is needed with a specific EOL style. &quot;native&quot; is commonly used, so that EOLs match the user's OS EOL style. Repositories may require this property on all files to prevent inconsistent line endings, which can cause a problem in itself.
+; &lt;tt&gt;svn:externals&lt;/tt&gt; : Allows parts of other repositories to be automatically checked-out into a sub-directory.
+; &lt;tt&gt;svn:needs-lock&lt;/tt&gt; : Specifies that a file is to be checked out with file permissions set to read-only. This is designed for use with the locking mechanism. The read-only permission reminds one to obtain a lock before modifying the file: obtaining a lock makes the file writable, and releasing the lock makes it read-only again. Locks are only enforced during a commit operation. Locks can be used without setting this property. However, that is not recommended, because it introduces the risk of someone modifying a locked file; they will only discover it has been locked when their commit fails.
+; &lt;tt&gt;svn:special&lt;/tt&gt; : This property is not meant to be set or modified directly by users. {{As of | 2010}} only used for having [[symbolic link]]s in the repository. When a symbolic link is added to the repository, a file containing the link target is created with this property set. When a Unix-like system checks out this file, the client converts it to a symbolic link.
+; &lt;tt&gt;svn:mergeinfo&lt;/tt&gt; : Used to track merge data (revision numbers) in Subversion 1.5 (or later). This property is automatically maintained by the &lt;tt&gt;merge&lt;/tt&gt; command, and it is not recommended to change its value manually.&lt;ref&gt;[http://svnbook.red-bean.com/en/1.5/svn.ref.properties.html Subversion Properties&lt;!-- Bot generated title --&gt;]&lt;/ref&gt;
+
+Subversion also uses properties on revisions themselves. Like the above properties on filesystem entries the names are completely arbitrary, with the Subversion client using certain properties prefixed with 'svn:'. However, these properties are not versioned and can be changed later.
+
+; &lt;tt&gt;svn:date&lt;/tt&gt; : the date and time stamp of a revision
+; &lt;tt&gt;svn:author&lt;/tt&gt; : the name of the user that submitted the change(s)
+; &lt;tt&gt;svn:log&lt;/tt&gt; : the user-supplied description of the change(s);
+
+==Branching and tagging==
+Subversion uses the inter-file branching model from [[Perforce]]&lt;ref&gt;[http://www.perforce.com/perforce/branch.html Inter-File Branching: A Practical Method for Representing Variants]&lt;/ref&gt; to handle [[Branching (software)|branches]] and does not support [[Revision tag|tagging]]. A branch is a separate line of development.&lt;ref&gt;[http://tortoisesvn.net/docs/release/TortoiseSVN_en/tsvn-dug-branchtag.html Branching / Tagging â TortoiseSVN]&lt;/ref&gt; Tagging refers to labeling the repository at a certain point in time so that it can be easily found in the future.
+
+The system sets up a new branch by using the '&lt;tt&gt;svn copy&lt;/tt&gt;' command, which should be used in place of the native operating system mechanism. Subversion does not create an entire new file version in the repository with its copy. Instead, the old and new versions are linked together internally and the history is preserved for both. The copied versions take up only a little extra room in the repository because Subversion saves only the differences from the original versions.
+
+All the versions in each branch maintain the history of the file up to the point of the copy, plus any changes made since. One can &quot;merge&quot; changes back into the [[Trunk (software)|trunk]] or between branches.  Due to the differencing algorithm, creating a copy takes very little additional space in the repository.
+
+[[File:Subversion project visualization.svg|650px|thumb|center|Visualization of a simple Subversion project]]
+
+==Limitations and problems==
+{{update|section|date=April 2011}}
+A known problem in Subversion affects the implementation of the file and directory '''rename''' operation. {{As of | 2010}}, Subversion implements the renaming of files and directories as a &quot;copy&quot; to the new name followed by a &quot;delete&quot; of the old name. Only the names change, all data relating to the edit history remains the same, and Subversion will still use the old name in older revisions of the &quot;tree&quot;. However, Subversion may become confused{{Citation needed|date=December 2010}} when files are modified and moved in the same commit. This can also cause problems when a move conflicts with edits made elsewhere,&lt;ref&gt;[http://subversion.tigris.org/issues/show_bug.cgi?id=898 Implement true renames]&lt;/ref&gt; for example during merging branches.&lt;ref&gt;
+[http://svnbook.red-bean.com/en/1.5/svn.branchmerge.advanced.html#svn.branchmerge.advanced.moves Advanced Merging]&lt;/ref&gt; The Subversion 1.5 release addressed some of these scenarios while others remain problematic.&lt;ref&gt;[http://subversion.tigris.org/svn_1.5_releasenotes.html#copy-move-improvements Copy/move-related improvements in Subversion 1.5]
+&lt;/ref&gt;
+
+{{As of | 2010}}, Subversion lacks some repository-administration and management features. For instance, someone may wish to edit the repository to permanently remove all historical records of certain data. Subversion does not have built-in support to achieve this simply.&lt;ref&gt;
+[http://subversion.tigris.org/issues/show_bug.cgi?id=516 svn obliterate]
+&lt;/ref&gt;
+
+Subversion stores additional copies of data on the local machine, which can become an issue with very large projects or files, or if developers work on multiple branches simultaneously. These &lt;tt&gt;.svn&lt;/tt&gt; directories on the client side can become corrupted by ill-advised user activity.&lt;ref&gt;[http://web.archive.org/web/20090320040211/http://www.jadeferret.com/docs/scm/svn-14-downsides.pdf Fierens, Sergio. &quot;Downsides of Subversion 1.4 for configuration management in large-scale software development&quot;]&lt;/ref&gt;
+
+Subversion does not store the modification times of files. As such, a file checked out of a subversion repository will have the 'current' date (instead of the modification time in the repository), and a file checked into the repository will have the date of the check-in (instead of the modification time of the file being checked in). This might not always be what is wanted.&lt;ref&gt;[http://subversion.tigris.org/issues/show_bug.cgi?id=1256 Issue 1256] at Tigris.org
+&lt;/ref&gt;
+To mitigate this third party solutions exist that allow for preserving modification time and other filesystem meta-data.&lt;ref&gt;[http://sourceforge.net/projects/freezeattrib/files/ FreezeAttrib (saves/restores file attributes using properties)]&lt;/ref&gt;
+&lt;ref&gt;[http://fsvs.tigris.org/ FSVS (Fast System VerSioning)]&lt;/ref&gt;
+However, giving checked out files a current date is important as wellÂ â this is how tools like [[make (software)|make(1)]] will take notice of a changed file for rebuilding it.
+
+Subversion does not use a [[distributed revision control]] model.  Ben Collins-Sussman, one of the designers of Subversion, believes a centralised model would help prevent &quot;insecure programmers&quot; from hiding their work from other team members.&lt;ref&gt;[http://blog.red-bean.com/sussman/?p=96 Programmer Insecurity @ iBanjo&lt;!-- Bot generated title --&gt;]&lt;/ref&gt;  Some users of version control systems see the centralised model as detrimental; famously, [[Linus Torvalds]] attacked&lt;ref&gt;[http://www.youtube.com/watch?v=4XpnKHJAok8 Google Tech Talk video] and its [http://web.archive.org/web/20110725034129/https://git.wiki.kernel.org/index.php/LinusTalk200705Transcript]&lt;/ref&gt; Subversion's model and its developers.
+
+While Subversion stores filenames as [[Unicode]], it does not specify if ''[[Precomposed character|precomposition]]'' or ''[[Combining character|decomposition]]'' is used for certain accented characters (such as Ã©). Thus, files added in SVN clients running on some operating systems (such as OS X) use ''decomposition'' encoding, while clients running on other operating systems (such as Linux) use ''precomposition'' encoding, with the consequence that those accented characters do not display correctly if the local SVN client is not using the same encoding as the client used to add the files.&lt;ref&gt;[http://subversion.tigris.org/issues/show_bug.cgi?id=2464 subversion: Issue 2464&lt;!-- Bot generated title --&gt;]&lt;/ref&gt;&lt;ref&gt;[http://www.syntevo.com/smartsvn/techarticles.html?page=problems.macos-special-characters SmartSVN - Subversion/SVN Client: Problems with umlauts in file names on Mac OS X&lt;!-- Bot generated title --&gt;]&lt;/ref&gt;
+
+By design, the &lt;code&gt;svn log&lt;/code&gt; command is always recursive: trying to access the history of a directory systematically pulls out the history of its entire hierarchy. A workaround is not to use the command line but use a sophisticated SVN client with filtering capabilities.
+
+===Subversion tags===
+This subsection focuses on ''tags'' but parts of it also apply to ''branches''.
+
+Revision numbers are difficult to remember in any version-control system. For this reason, most systems offer symbolic ''tags'' as user-friendly references to them. Subversion does not have such a feature and what its documentation recommends to use instead is very different in nature. Instead of implementing tags as ''references'' to points in history, Subversion recommends making snapshot ''copies'' into a well-known subdirectory (&quot;&lt;code&gt;tags/&lt;/code&gt;&quot;) in the space of the repository tree. Only a few predefined ''references'' are available: HEAD, BASE, PREV and COMMITTED.
+
+This history-to-space projection has multiple issues:
+
+1. When a snapshot is taken, the system does not assign any special meaning to the name of the tag/snapshot. This is the difference between a ''copy'' and a ''reference''. The revision is recorded and the snapshot can be accessed by URL. This makes some operations less convenient and others impossible. For instance, a naive &lt;code&gt;svn diff -r tag1:tag2 myfile&lt;/code&gt; does not work; it is slightly more complicated than that to achieve, requiring the user to know and input URL/paths to the snapshots instead of just the names: &lt;code&gt;svn diff &lt;URL-TO-TAG1&gt;/myfile &lt;URL-TO-TAG2&gt;/myfile&lt;/code&gt;. Other operations like for instance &lt;code&gt;svn log -r tag1:tag2 myfile&lt;/code&gt; are just impossible.
+
+2. When two (ideally independent) object types live in the repository tree, a &quot;fight to the top&quot; can ensue. In other words, it is often difficult to decide at which level to create the &quot;&lt;code&gt;tags/&lt;/code&gt;&quot; subdirectory:
+
+{|
+|
+    '''trunk'''/component'''foo'''/
+         /component'''bar'''/
+ '''tags'''/1.1/component'''foo'''/
+         /component'''bar'''/
+| &amp;nbsp;or&amp;nbsp;
+|
+ component'''foo'''/'''trunk'''/
+             /'''tags'''/1.1/
+ component'''bar'''/'''trunk'''/
+             /'''tags'''/1.1/
+|}
+
+3. Tags, by their conventional definition are both read-only and light-weight, on the repository and client.  Subversion copies are not read-only, and while they are light-weight on the repository, they are incredibly heavy-weight on the client.
+
+To address such issues, posters on the Subversion mailing lists have suggested a new feature called &quot;labels&quot; or &quot;aliases&quot;.&lt;ref&gt;[http://svn.haxx.se/users/ Subversion mailing lists]&lt;/ref&gt;
+SVN labels would more closely resemble the &quot;tags&quot; of other systems such as [[Concurrent Versions System|CVS]] or [[Git (software)|git]]. The fact that Subversion has global revision numbers opens the way to a very simple label-&gt;revision implementation. Yet as of 2010, no progress has been made and symbolic tags are not in the list of the most wanted features.&lt;ref&gt;[http://subversion.apache.org/roadmap.html Subversion Roadmap]&lt;/ref&gt;
+
+==Development and implementation==
+{{Main|Software that uses Subversion}}
+
+[[CollabNet]] has continued its involvement with Subversion, but the project runs as an independent open source community. In November 2009, the project was accepted into the [[Apache Incubator]], aiming to become part of the [[Apache Software Foundation]]'s efforts.&lt;ref&gt;http://www.open.collab.net/news/press/2009/svn-asf.html Collabnet Press Release&lt;/ref&gt; Since March 2010, the project is formally known as Apache Subversion, being a part of the Apache Top-Level Projects.&lt;ref&gt;http://www.open.collab.net/news/press/2010/apache.html Collabnet Press Release regarding Apache subversion&lt;/ref&gt;
+
+In October 2009, [[WANdisco]] announced the hiring of core Subversion committers as the company moved to become a major corporate sponsor of the project. This included Hyrum Wright, president of the Subversion Corporation and release manager for the Subversion project since early 2008, who joined the company to lead its open source team.&lt;ref&gt;{{Cite news |title= WANdisco Names Hyrum Wright to Lead Subversion Open Source Efforts |date= January 7, 2010 |work= News release |author= WANdisco |publisher= Open Source magazine |url= http://opensource.sys-con.com/node/1239202 |accessdate= October 29, 2011 }}&lt;/ref&gt;
+
+The Subversion open-source community does not provide binaries, but potential users can download binaries from volunteers.&lt;ref&gt;{{Cite web |title= Apache Subversion Binary Packages |work= Official project website  |url= http://subversion.apache.org/packages.html  |accessdate= October 29, 2011 }}&lt;/ref&gt; While the Subversion project does not include an official [[graphical user interface]] (GUI) for use with Subversion, third parties have developed a number of different GUIs, along with a wide variety of additional ancillary software.
+
+Work announced in 2009 included SubversionJ (a Java API) and implementation of the [http://svn.apache.org/repos/asf/subversion/trunk/notes/obliterate/obliterate-functional-spec.txt Obliterate] command, similar to that provided by [[Perforce]]. Both of these enhancements  were sponsored by WANdisco.&lt;ref&gt;{{Cite news |title= WANdisco Presents New Initiatives for the Subversion Open Source Project |author= WANdisco |publisher= CM Crossroads |work= News release |date= October 28, 2009 |url= http://www.cmcrossroads.com/index.php?Itemid=100152&amp;catid=101:news-and-announcements&amp;id=13065:wandisco-presents-new-initiatives-for-the-subversion-open-source-project-&amp;option=com_content&amp;view=article WANdisco |accessdate= October 29, 2011 }}&lt;/ref&gt;
+
+The Subversion committers normally have at least one or two new features under active development at any one time. The 1.7 release of Subversion in October 2011 included a streamlined HTTP transport to improve performance and a rewritten working-copy library.&lt;ref&gt;{{Cite web |title= Apache Subversion Roadmap |work= Official project website |url= http://subversion.apache.org/roadmap.html  |accessdate= October 29, 2011 }}&lt;/ref&gt;
+
+==Source code hosting ==
+
+{{See also|Comparison of open source software hosting facilities}}
+
+The following websites provide free source code hosting for SVN repositories:
+
+* [[Alioth (Debian)|Alioth]]
+* [[Assembla]]
+* [[BerliOS]]
+* [[Betavine]]
+* [[Freepository]]
+* [[Google Code]]
+* [[SourceForge]]
+
+==See also==
+{{Portal|Free software}}
+
+* [[List of revision control software]]
+* [[Comparison of revision control software]]
+* [[Comparison of Subversion clients]]
+* [[TortoiseSVN]]
+* [[DotSVN]]
+* [[UberSVN]]
+
+==Notes==
+{{Reflist|colwidth=30em}}
+
+==References==
+{{Refbegin}}
+* C. Michael Pilato, Ben Collins-Sussman, Brian W. Fitzpatrick; &lt;cite&gt;Version Control with Subversion&lt;/cite&gt;; O'Reilly; ISBN 0-596-00448-6 (1st edition, paperback, 2004, [http://svnbook.red-bean.com/ full book online], [http://mentalpointer.com/Subversion/svn-book.html mirror])
+* Garrett Rooney; &lt;cite&gt;Practical Subversion&lt;/cite&gt;; Apress; ISBN 1-59059-290-5 (1st edition, paperback, 2005)
+* Mike Mason; &lt;cite&gt;Pragmatic Version Control Using Subversion&lt;/cite&gt;; Pragmatic Bookshelf; ISBN 0-9745140-6-3 (1st edition, paperback, 2005)
+* William Nagel; &lt;cite&gt;Subversion Version Control: Using the Subversion Version Control System in Development Projects&lt;/cite&gt;; Prentice Hall; ISBN 0-13-185518-2 (1st edition, paperback, 2005)
+{{Refend}}
+
+==Further reading==
+* [http://www.red-bean.com/sussman/svn-anti-fud.html Dispelling Subversion FUD] by Ben Collins-Sussman (Subversion developer), as of 2004-12-21
+
+==External links==
+* {{Official website|http://subversion.apache.org/}}
+** [http://subversion.tigris.org/ Previous official site] &lt;small&gt;Not all content has yet been migrated to the new official site.&lt;/small&gt;
+* [http://svnbook.red-bean.com/ Version Control with Subversion], an [[O'Reilly Media|O'Reilly]] book available for free online
+* {{dmoz|Computers/Software/Configuration_Management/Tools/Subversion/|Subversion}}
+
+{{Revision control software}}
+{{Apache}}
+
+{{DEFAULTSORT:Subversion (Software)}}
+[[Category:Apache Software Foundation]]
+[[Category:Subversion]]
+[[Category:Collaborative software]]
+[[Category:Free revision control software]]
+[[Category:Free software programmed in C]]
+[[Category:Free cross-platform software]]
+[[Category:Concurrent Versions System]]
+[[Category:Linux archivers and compression-related utilities]]
+
+{{Link GA|ru}}
+&lt;!-- Interwikis --&gt;
+
+[[af:Subversion]]
+[[ar:Ø£Ø¨Ø§ØªØ´Ù Ø³Ø¨ÙÙØ±Ø¬Ù]]
+[[be-x-old:Subversion]]
+[[bg:Subversion (ÑÐ¾ÑÑÑÐµÑ)]]
+[[ca:Subversion]]
+[[cs:Apache Subversion]]
+[[da:Subversion]]
+[[de:Apache Subversion]]
+[[et:Apache Subversion]]
+[[es:Subversion]]
+[[eo:Subversion]]
+[[eu:Subversion]]
+[[fa:Ø¢Ù¾Ø§ÚÛ Ø³Ø§Ø¨âÙØ±ÚÙ]]
+[[fr:Apache Subversion]]
+[[gl:Subversion]]
+[[ko:ìë¸ë²ì ]]
+[[hi:à¤¸à¤¬à¤µà¤°à¥à¤à¤¼à¤¨]]
+[[id:Subversion]]
+[[it:Subversion]]
+[[lv:Subversion]]
+[[lt:Subversion]]
+[[hu:Apache Subversion]]
+[[mk:Subversion]]
+[[ml:à´¸à´¬àµâà´µàµàµ¼à´·àµ»]]
+[[nl:Subversion]]
+[[ja:Subversion]]
+[[no:Subversion]]
+[[pl:Subversion]]
+[[pt:Subversion]]
+[[ro:Apache Subversion]]
+[[ru:Subversion]]
+[[simple:Apache Subversion]]
+[[sk:Apache Subversion]]
+[[sr:Subversion]]
+[[fi:Subversion]]
+[[sv:Apache Subversion]]
+[[ta:à®à®ªà¯à®µà¯à®°à¯à®à®©à¯]]
+[[tr:Apache Subversion]]
+[[uk:Subversion]]
+[[vi:Subversion]]
+[[zh:Subversion]]</rev></revisions></page></pages></query></api>

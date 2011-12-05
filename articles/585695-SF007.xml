@@ -1,0 +1,76 @@
+<?xml version="1.0"?><api><query><pages><page pageid="585695" ns="0" title="Scanner Access Now Easy"><revisions><rev xml:space="preserve">{{Citations|date=August 2008}}
+
+{{Infobox Software
+| name                   = SANE
+| logo                   = [[Image:ScannerAccessNowEasyLogo.png|100px|The logo of the SANE project.]]
+| collapsible            = 
+| author                 = 
+| developer              = 
+| released               = 
+| latest release version = 1.0.22
+| latest release date    = {{release date and age|2011|02|14|df=yes}}
+| latest preview version = 
+| latest preview date    = 
+| frequently updated     = 
+| programming language   = 
+| operating system       = [[Microsoft Windows]], [[Linux]], [[UNIX]], [[OS/2]]
+| platform               = 
+| size                   = 
+| language               = 
+| status                 = 
+| genre                  = 
+| license                = GNU General Public License (GPL)
+| website                = [http://www.sane-project.org/ sane-project.org]
+}}
+
+[[Image:XSane.png|thumb|right|XSane on [[Ubuntu (operating system)|Ubuntu]] ([[Linux]])]]
+
+'''Scanner Access Now Easy''' (SANE) is an [[application programming interface]] (API) that provides standardized access to any raster [[image scanner]] hardware ([[Image scanner|flatbed]] scanner, [[handheld]] scanner, video- and still-cameras, [[frame grabber]]s, etc.). 
+
+The SANE API is [[public domain]] and its discussion and development is open to everybody. It is commonly used on [[Linux]].
+
+==Development==
+SANE differs from [[TWAIN]] in that it is cleanly separated into [[frontend]]s (user programs) and [[backend]]s (scanner drivers). Whereas a TWAIN driver handles the user interface as well as communications with the scanner hardware, a SANE driver only provides an interface with the hardware and describes a number of &quot;options&quot; which drive each scan. These ''options'' specify parameters such as the resolution of the scan, the scan area, colour model, etc. Each ''option'' has a name, and information about its type, units, and range or possible values (e.g. enumerated list). By convention there are several &quot;well known&quot; ''options'' that frontends can supply using convenient [[Graphical user interface|GUI]] interaction e.g. the scan area ''options'' can be set by dragging a rectangular outline over a preview image. Other options can be presented using GUI elements appropriate to their type e.g. sliders, drop-down lists, etc.
+
+One consequence of this separation is that network scanning is easily implemented with no special handling in either the frontends or backends. On a host with a scanner, the '''saned''' daemon runs and handles network requests. On client machines a &quot;net&quot; backend (driver) connects to the remote host to fetch the scanner options, and perform previews and scans. The saned daemon acts as a frontend locally, but simply passes requests and data between the network connections and the local scanner. Similarly, the &quot;net&quot; backend passes requests and data between the local frontend and the remote host. 
+
+Various types of unsupervised batch scanning are also possible with a minimum of support needed in the backend (driver). Many scanners support the attachment of document feeders which allow a large number of sheets of paper to be automatically scanned in succession. Using the SANE API, the frontend simply has to &quot;play back&quot; the same set of options for each scan, driving the document feed in between scans to load the next sheet of paper. The frontend only has to obtain the set of options from the user once.
+
+==Graphical user interfaces==
+Several user interfaces have been written to combine SANE with an easy user method of controlling it.
+===XSane===
+XSane is a graphical frontend for SANE that is written and maintained by Oliver Rauch. It is available for [[Microsoft Windows]], [[Linux]], [[UNIX]], and [[OS/2]] and is licenced under the GNU General Public License (GPL).&lt;ref name=&quot;XSANE&quot;&gt;{{cite web|url = http://www.xsane.org/|title = XSane - graphical scanning frontend|accessdate = 4 June 2010|last = Rauch|first = Oliver|authorlink = |year = 2009|month = February}}&lt;/ref&gt; The Windows version only allows a Windows computer to access a scanner that is attached to a Unix, OS/2 or Mac-OS-X computer, not to the local Windows computer.&lt;ref name=&quot;WIN32&quot;&gt; {{Cite web|url = http://www.xsane.org/xsane-win32.html|title = XSane WIN32 version|accessdate = 24 October 2010|last =Rauch|first = Oliver|authorlink = |year = undated}}&lt;/ref&gt;
+
+===Simple Scan===
+[[File:Simple Scan 2.32.0.png|thumb|right|Simple Scan 2.32.0]]
+Simple Scan is a simplified GUI using SANE that is intended to be easier to use and better integrate into the [[GNOME]] desktop than XSANE. It was initially written and is maintained by Robert Ancell of [[Canonical Ltd.]] for Linux. Simple Scan was first fielded as part of [[Ubuntu 10.04 Lucid Lynx]] and is also used in [[Lubuntu]].&lt;ref name=&quot;Launchpad&quot;&gt;{{cite web|url = https://launchpad.net/simple-scan|title = Simple Scan|accessdate = 4 June 2010|last = Ancell|first = Robert|authorlink = |year = 2010|month = May}}&lt;/ref&gt;&lt;ref name=&quot;UbuntuUpdates&quot;&gt;{{cite web|url = http://www.ubuntuupdates.org/packages/show/167219|title = Package simple-scan|accessdate = 4 June 2010|last = UbuntuUpdates.org|authorlink = |year = 2010|month = April}}&lt;/ref&gt;&lt;ref name=&quot;OMG&quot;&gt;{{cite web|url = http://www.omgubuntu.co.uk/2009/12/lucid-to-get-new-scanning-tool-simple.html|title = Lucid to Get Scanning Tool &quot;Simple Scan&quot;|accessdate = 4 June 2010|last = OMG! Ubuntu!|authorlink = |year = 2009|month = December}}&lt;/ref&gt;
+
+===gscan2pdf===
+gscan2pdf (Gnome Scan To PDF) is an interface for scanning documents to PDF on the [[GNOME]] desktop that uses SANE to communicate with the scanner. It is available under the [[General_Public_License|GPL]]. It includes common editing tools, e.g. for rotating or cropping pages. It is also able to perform [[Optical_Character_Recognition|OCR]] using several optional OCR tools and save a searchable PDF. PDF files can be further downsampled upon saving.&lt;ref name=&quot;gscan2pdf&quot;&gt; {{Cite web|url = http://gscan2pdf.sourceforge.net/|title = gscan2pdf - A GUI to produce PDFs or DjVus from scanned documents|accessdate = 27 September 2011|last = gscan2pdf|authorlink = |year = undated}}&lt;/ref&gt;
+
+== See also ==
+* [[Image and Scanner Interface Specification]] - open industry standard interface.
+* [[TWAIN]] - Software [[Application programming interface|API]] for local drivers that are bundled with control [[Graphical user interface|GUI]].
+* [[Windows Image Acquisition]] (WIA) - Proprietary API from Microsoft.
+
+==References==
+{{Reflist}}
+
+== External links ==
+* [http://www.sane-project.org/ Official SANE website]
+* [http://www.sane-project.org/sane-backends.html SANE backends list] 
+* [http://today.java.net/pub/a/today/2005/04/11/twain.html Java Tech: Acquire Images with TWAIN and SANE, Part 3] by Jeff Friesen 04/11/2005
+{{FLOSS}}
+
+[[Category:Device drivers]]
+[[Category:Imaging]]
+
+[[ast:Xsane]]
+[[de:Scanner Access Now Easy]]
+[[es:Scanner Access Now Easy]]
+[[fr:Scanner Access Now Easy]]
+[[it:SANE]]
+[[nl:Scanner Access Now Easy]]
+[[pl:SANE]]
+[[ru:SANE]]
+[[sv:Scanner Access Now Easy]]</rev></revisions></page></pages></query></api>

@@ -1,0 +1,121 @@
+<?xml version="1.0"?><api><query><pages><page pageid="351541" ns="0" title="Virtual Network Computing"><revisions><rev xml:space="preserve">[[Image:Vnc logo.svg|right|thumb|Virtual Network Computing logo]]
+In computing, '''Virtual Network Computing''' ('''VNC''') is a graphical [[desktop sharing]] system that uses the [[RFB protocol]] to remotely control another [[computer]]. It transmits the [[computer keyboard|keyboard]] and [[computer mouse|mouse]] events from one computer to another, relaying the graphical [[computer screen|screen]] updates back in the other direction, over a [[computer network|network]].
+
+VNC is platform-independent &amp;ndash; a VNC viewer on one [[operating system]] may connect to a VNC server on the same or any other operating system. There are clients and servers for many GUI-based operating systems and for [[Java Virtual Machine|Java]]. Multiple clients may connect to a VNC server at the same time. Popular uses for this technology include remote technical support and accessing files on one's work computer from one's home computer, or vice versa.
+
+VNC was originally developed at the [[Olivetti Research Laboratory]] in Cambridge, United Kingdom. The original VNC [[source code]] and many modern derivatives are [[open source]] under the [[GNU General Public License]].
+[[Image:VNC in KDE.png|thumb|VNC in [[KDE]].]]
+
+There are a number of variants of VNC&lt;ref&gt;[http://ipinfo.info/html/vnc_remote_control.php The VNC family of Remote Control Applications: a list of VNC variants]&lt;/ref&gt; which offer their own particular functionality; e.g., some optimised for [[Microsoft Windows]], or offering file transfer (not part of VNC proper), etc. Many are compatible (without their added features) with VNC proper in the sense that a viewer of one flavour can connect with a server of another; others are based on VNC code but not compatible with standard VNC.
+
+VNC and [[RFB protocol|RFB]] are registered trademarks of [[RealVNC]] Ltd. in the U.S. and in other countries.
+
+== History ==
+VNC was created at the Cambridge, UK [[Olivetti &amp; Oracle Research Lab]] (ORL &lt;ref&gt;{{cite web|url=http://www.uk.research.att.com/vnc/faq.html#q2|title=VNC Frequently Asked Questions (FAQ)|year=1999|archiveurl=http://classic-web.archive.org/web/20000815062637/www.uk.research.att.com/vnc/faq.html#q2|archivedate=2000|accessdate=}}&lt;/ref&gt;), which was then owned by [[Olivetti]] and [[Oracle Corporation]]. In 1999 AT&amp;T acquired the lab, and in 2002 closed down the lab's research efforts.
+
+Developers who worked on VNC while still at the AT&amp;T Research Lab are&lt;ref&gt;[http://www.realvnc.com/company/profiles.html RealVNC Executive Profiles]&lt;/ref&gt;:
+* [[Tristan Richardson]] (inventor)
+* [[Andy Harter]] (project leader)
+* [[Quentin Stafford-Fraser]]
+* [[James Weatherall, ATT|James Weatherall]]
+
+Following the closure of ORL in 2002, several members of the development team (including Richardson, Harter, Weatherall and Hopper) formed [[RealVNC]] in order to continue working on [[open source]] and commercial VNC software under that name.
+
+Several other versions of VNC have been developed from the original [[GNU General Public License|GPL]]ed source code. Such [[fork (software development)|forking]] has not led to compatibility problems because the RFB protocol is designed to be extensible. VNC clients and servers negotiate their capabilities with [[handshaking]] in order to use the most appropriate options supported at both ends.
+
+The term &quot;VNC&quot; is now a registered trademark of RealVNC Ltd. in the United States and other countries.&lt;ref&gt;http://www.realvnc.com/trademarks.html&lt;/ref&gt;
+
+== Etymology ==
+The name 'Virtual Network Computer/Computing' originates from ORL's work on a [[thin client]] called the Videotile which also used the [[RFB protocol]]. This was essentially an LCD with a pen input and a fast [[asynchronous transfer mode|ATM]] connection to the network. At the time, [[network computer]] was commonly used as a synonym for 'thin client'. VNC is essentially a software-only (i.e. virtual) version of this network computer.
+
+== Operation ==
+A VNC system consists of a client, a server , and a communication protocol
+* The VNC [[server (computing)|server]] is the program on the machine that shares its screen. The server passively allows the client to take control of it.
+* The VNC [[Client (computing)|client]] (or viewer) is the program that watches, controls, and interacts with the server. The client controls the server.
+* The VNC [[Communications protocol|protocol]] ([[RFB protocol|RFB]]) is very simple, based on one graphic primitive from server to client (&quot;Put a rectangle of [[pixel]] data at the specified X,Y position&quot;) and [[Event-driven programming|event messages]] from client to server.
+
+In the normal method of operation a viewer connects to a port on the server (default port 5900). Alternatively a browser can connect to the server (depending on the implementation) (default port 5800). And a server can connect to a viewer in &quot;listening mode&quot; on port 5500. One advantage of listening mode is that the server site does not have to configure its firewall to allow access on port 5900 (or 5800); the onus is on the viewer, which is useful if the server site has no computer expertise, while the viewer user would be expected to be more knowledgeable.
+
+The server sends small rectangles of the [[framebuffer]] to the client. In its simplest form, the VNC protocol can use a lot of [[Bandwidth (computing)|bandwidth]], so various methods have been devised to reduce the communication overhead. For example, there are various ''encodings'' (methods to determine the most efficient way to transfer these rectangles). The VNC protocol allows the client and server to negotiate which encoding will be used. The simplest encoding, which is supported by all clients and servers, is the ''raw encoding'' where pixel data is sent in left-to-right [[scanline]] order, and after the original full  screen has been transmitted, only transfers rectangles that change. This encoding works very well if only a small portion of the screen changes from one frame to the next (like a mouse pointer moving across a desktop, or text being written at the cursor), but bandwidth demands get very high if a lot of pixels change at the same time, such as when scrolling a window or viewing full-screen video.
+
+VNC by default uses [[TCP and UDP port|TCP port]] 5900+''N'',&lt;ref&gt;{{cite web|title=RealVNC - Frequently asked questions|url=http://www.realvnc.com/support/faq.html}}&lt;/ref&gt;&lt;ref&gt;{{cite web|title=UltraVnc Configuration|url=http://uvnc.com/install/configuration.html}}&lt;/ref&gt; where ''N'' is the display number (usually :0 for a physical display). Several implementations also start a basic [[Hypertext Transfer Protocol|HTTP]] [[web server|server]] on port 5800+''N'' to provide a VNC viewer as a [[Java applet]], allowing easy connection through any Java-enabled web browser. Different port assignments can be used as long as both client and server are configured accordingly.
+
+Using VNC over the Internet works well if the user has a [[broadband]] connection at both ends.  However, it may require advanced [[Network address translation|NAT]], [[Firewall (computing)|firewall]] and [[router (computing)|router]] configuration such as port forwarding in order for the connection to go through.  Some users may choose to use instant private networking applications such as [[Virtual Private Network]] (VPN) applications such as [[Hamachi (software)|Hamachi]] to make usage over the Internet much easier. Alternatively, a VNC connection can be established as a LAN connection if VPN is utilized as a proxy.
+
+Note that the machine the VNC server is running on does not need to have a physical display.  ''Xvnc'' is the Unix VNC server, which is based on a standard [[X Window System|X server]].  To applications Xvnc is an X &quot;server&quot; (ie displays client windows), and to remote VNC users it is a VNC server.  Applications can display themselves on Xvnc as if it were a normal X display, but they will appear on any connected VNC viewers rather than on a physical screen.&lt;ref&gt;{{cite web
+| url         = http://www.cl.cam.ac.uk/research/dtg/attarchive/vnc/xvnc.html
+| title       = X-based VNC server
+| author      = AT&amp;T Laboratories Cambridge
+| year        = 1999
+| work        = Virtual Network Computing
+| accessdate  = 2007-03-24
+| archiveurl  = http://web.archive.org/web/20070319223338/http://www.cl.cam.ac.uk/research/dtg/attarchive/vnc/xvnc.html
+| archivedate = 2007-03-19}}&lt;/ref&gt; Alternatively a machine (which may be a workstation or a network server) with screen, keyboard, and mouse can be set up to boot and run the VNC server as a service or daemon, then the screen, keyboard, and mouse can be removed and the machine stored in an out-of-the way location. 
+
+In addition, the display that is served by VNC is not necessarily the same display seen by a user on the server. On Unix/Linux computers that support multiple simultaneous X11 sessions, VNC may be set to serve a particular existing X11 session, or to start one of its own. It is also possible to run multiple VNC sessions from the same computer. On [[Microsoft Windows]] the VNC session served is always the current user session.
+
+VNC is commonly used as a cross-platform remote desktop system. For example, [[Apple Remote Desktop]] for [[Mac OS X]] (and more recently, &quot;[[Back to My Mac]]&quot; in 'Leopard' - Mac OS X 10.5) interoperates with VNC and will connect to a Linux user's current desktop if it is served with [[x11vnc]], or to a separate X11 session if one is served with [[TightVNC]]. From Linux, TightVNC will connect to a Mac OS X session served by Apple Remote Desktop if the VNC option is enabled, or to a VNC server running on [[Microsoft Windows]].
+
+== Security ==
+By default, RFB is not a secure protocol. While [[password]]s are not sent in plain-text (as in [[telnet]]), cracking could prove successful if both the [[encryption]] key and encoded password are [[Packet analyzer|sniffed]] from a network. For this reason it is recommended that a password of at least 8 characters be used. On the other hand, there is also an 8-character limit on some versions of VNC; if a password is sent exceeding 8 characters, the excess characters are removed and the truncated string is compared to the password.
+
+However, VNC may be tunnelled over an [[Secure Shell|SSH]] or [[Virtual private network|VPN]] connection which would add an extra security layer with stronger encryption. SSH clients are available for all major platforms (and many smaller platforms as well); SSH tunnels can be created from [[UNIX]] clients, [[Microsoft Windows]] clients, [[Macintosh]] clients (including [[Mac OS X]] and [[System 7]] and up) &amp;ndash; and many others.  There are [[freeware]] applications that create instant [[Virtual private network|VPN]] tunnels between computers.
+
+[[UltraVNC]] supports the use of an open-source encryption plugin which encrypts the entire VNC session including password authentication and data transfer. It also allows authentication to be performed based on [[NTLM]] and [[Active Directory]] user accounts. However, use of such encryption plugins make it incompatible with other VNC programs. [[RealVNC]] offers high-strength encryption as part of its commercial package. [[Workspot]] released [[Advanced Encryption Standard|AES encryption]] patches for VNC.
+
+==Limitations==
+Unicode is not supported in VNC versions 3.x and lower so it is impossible to transfer clipboard text outside the Latin-1 character set. 
+
+The VNC protocol is pixel based.  Although this leads to great flexibility (i.e.- any type of desktop can be displayed), it is often less efficient than solutions that have a better understanding of the underlying graphic layout like [[X11]] or Windows [[Remote Desktop Protocol]]. Those protocols send graphic primitives or high level commands in a simpler form (e.g., &quot;open window&quot;), whereas RFB just sends the raw pixel data.
+
+== See also ==
+* [[Remote Desktop Protocol]]
+* [[Comparison of remote desktop software]]
+* [[RealVNC]]
+* [[Vinagre]]
+* [[Chicken of the VNC]]
+* [[Libvncserver|LibVNCServer]]
+* [[UltraVNC|UltraVNC Server]]
+* [[SPICE (protocol)|SPICE]]
+
+== References ==
+{{reflist}}
+{{refbegin}}
+* {{cite journal | author=Tristan Richardson | coauthor=Quentin Stafford-Fraser; Kenneth R. Wood; &amp; Andy Hopper | title=Virtual Network Computing | work=IEEE Internet Computing'' | volume=2 | issue=1 | date=January/February 1998 | pages=33â38 | url=http://www.cl.cam.ac.uk/Research/DTG/attarchive/pub/docs/att/tr.98.1.pdf | format=PDF}}
+{{refend}}
+
+== External links ==
+{{commons|VNC}}
+{{wikibooks|Internet Technologies/VNC}}
+* [http://www.realvnc.com/docs/rfbproto.pdf RFB 3.8 Protocol Standard]
+* [http://www.hep.phy.cam.ac.uk/vnc_docs/index.html AT&amp;T VNC] - Original AT&amp;T-Cambridge VNC website
+* [http://linuxtutorialvideos.blogspot.com/2009/01/remote-loginvncssh.html Remote Login using VNC/SSH] â An easy to follow video showing how to install and configure a VNC server.
+* {{Dmoz|Computers/Software/Networking/Thin_Clients/Virtual_Network_Computing/|virtual network computing}} lists available VNC viewers and servers.
+* [http://winswitch.org/ winswitch] a tool for more easily starting/stopping VNC sessions and cloning desktop sessions
+{{remote administration software}}
+
+[[Category:Virtual Network Computing| ]]
+[[Category:Free network-related software]]
+
+[[ca:Virtual Network Computing]]
+[[cs:Virtual Network Computing]]
+[[da:Virtual Network Computing]]
+[[de:Virtual Network Computing]]
+[[es:VNC]]
+[[fa:Ø±Ø§ÛØ§ÙÙ ÙØ¬Ø§Ø²Û ØªØ­Øª Ø´Ø¨Ú©Ù]]
+[[fr:Virtual Network Computing]]
+[[ko:VNC]]
+[[it:Virtual Network Computing]]
+[[he:Virtual Network Computing]]
+[[nl:Virtual Network Computing]]
+[[ja:Virtual Network Computing]]
+[[no:Virtual Network Computing]]
+[[nn:VNC]]
+[[pl:Virtual Network Computing]]
+[[pt:Virtual Network Computing]]
+[[ru:Virtual Network Computing]]
+[[fi:VNC]]
+[[sv:Virtual Network Computing]]
+[[ta:à®®à¯à®¯à¯à®¨à®¿à®à®°à¯ à®µà®²à¯à®¯à®®à¯à®ªà¯à®ªà¯à®à®¾à®© à®à®£à®¿à®©à®¿]]
+[[uk:Virtual Network Computing]]
+[[zh:VNC]]</rev></revisions></page></pages></query></api>

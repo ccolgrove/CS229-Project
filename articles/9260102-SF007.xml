@@ -1,0 +1,86 @@
+<?xml version="1.0"?><api><query><pages><page pageid="9260102" ns="0" title="PowerISO"><revisions><rev xml:space="preserve">{{distinguish2|[[MagicISO]] or [[UltraISO]], unrelated [[disk image]] programs}}
+
+{{Infobox software
+| name                   = PowerISO
+| screenshot             = [[Image:PowerISO screenshot.png|300px]]
+| caption                = PowerISO in [[Windows 7]]
+| developer              = PowerISO Computing, Inc.
+| latest release version = 4.9
+| latest release date    = {{Start date and age|2011|11|15}}&lt;ref&gt;[http://www.poweriso.com/download.htm Official website: Download]&lt;/ref&gt;
+| operating system       = [[Microsoft Windows]], [[Mac OS X]], [[Linux]]
+| genre                  = [[Virtual drive]]
+| license                = Commercial [[proprietary software|proprietary]] (trial version available which cannot create or edit images greater than 300 MB)
+| website                = [http://poweriso.com/ poweriso.com]
+}}
+'''PowerISO''' is an [[software application|application]] used to create, open, [[Virtual drive|mount]] / [[Disk image emulator|emulate]], [[Data compression|compress]], [[Encryption|encrypt]], and otherwise manipulate [[Compact disk|CD]] / [[DVD]] [[Disk image|image files]]. It is most commonly known for its proprietary [[Direct Access Archive|DAA]] disc image format.  Other supported formats include [[ISO image|ISO]], [[Cue sheet (computing)|BIN]], [[NRG (file format)|NRG]], and [[DiscJuggler|CDI]]. PowerISO is able to modify all supported CD images formats, most notably ISO. The trial version cannot create or edit images greater than 300 megabytes, but can burn files of any size to disc. The maximum file size PowerISO can process is 256GB.&lt;ref name=&quot;powerisofaq&quot;&gt;[http://poweriso.com/faq.htm PowerISO - Create, Edit, Extract, Mount, Compress, Encrypt, Split ISO file, ISO/BIN converter, Virtual Drive, DAA&lt;!-- Bot generated title --&gt;]&lt;/ref&gt;
+
+PowerISO is currently produced by PowerISO Computing, Inc. The company's domain name is registered to an address in Beijing, China.
+
+==Features==
+*Supports both 32-bit and 64-bit Windows
+*Can open and extract ISO files
+*Can create an ISO file from hard disk files or CD/DVD-ROM
+*Can edit an existing ISO file
+*Can convert image files between ISO/BIN and other formats. PowerISO can convert almost all image file formats to standard ISO format file
+*Can make bootable ISO file, get boot information from bootable ISO file
+*Can make floppy disk image file
+*Can optimize files to save disk space while saving ISO file
+*Can mount ISO files with its internal virtual drive
+*Supports shell-integration
+*PowerISO can save DAA images, which add the following features that are absent in ISO (but can be obtained by manually compressing ISO files):
+**Can compress DAA images, thus saving space and allowing smaller downloads
+**Can password protect DAA images
+**Can split DAA images into multiple smaller files
+
+==Direct Access Archive==
+'''Direct Access Archive''', or '''DAA''', is a proprietary file format developed by PowerISO Computing for [[disk image]] files. The format supports features such as compression, password protection, and splitting to multiple volumes. Popular disk image [[Mount (computing)|mounting]] programs such as [[Alcohol 120%]] and [[Daemon Tools]] currently do not support the mounting of DAA images.
+
+Currently there is no published information about the format. Among mainstream applications, it can be opened or converted with PowerISO and [[MagicISO]].  Various free open source packages are also available to convert DAA to ISO images
+
+===File structure===
+Although lacking official documentation, DAA image files seem to be [[zlib|zlib-compressed]] [[ISO image]]s without any added functionality in comparison to ISO. It thus offers no advantage to a zipped ISO image and can be considered a case of [[vendor lock-in]].&lt;ref&gt;Text file in daa2iso: http://aluigi.altervista.org/mytoolz.htm#daa2iso&lt;/ref&gt;
+
+===Conversion tools===
+''PowerISO'' provides free command-line tools for [[Linux]] and [[Mac OS X]] which allow the user to extract DAA files or convert them into [[ISO]] format, however these tools haven't been updated to support the newest version of the DAA format. The PowerISO [[Microsoft Windows|Windows]] trial version only supports converting images from DAA files up to 300MB&lt;ref&gt;[http://www.poweriso.com/faq.htm PowerISO FAQ]&lt;/ref&gt;, less than half of the capacity of a standard [[CD]].
+
+''[[AcetoneISO]]'' is a free CD/DVD management application for Linux that can convert DAA to ISO with the help of the external PowerISO command-line tool for Linux.
+
+''daa2iso''&lt;ref&gt;[http://aluigi.altervista.org/mytoolz.htm#daa2iso daa2iso application for Windows]&lt;/ref&gt; is an open source [[command line]] application has been developed to convert DAA files to ISO files. The program comes with a Windows binary and source code which compiles under Unix-like operating systems. daa2iso allows users to select the .daa file, and the location for the .iso output via standard windows open and save dialogs.
+
+For Mac OS X, ''DAA Converter''&lt;ref&gt;[http://www.twilightedge.com/mac/daaconverter/ DAA Converter for Mac OS X]&lt;/ref&gt; is a GUI application which wraps the daa2iso command-line tool (GNU license).
+
+==System requirements==
+*Windows98/Me, Windows2000/XP/2003/Vista operating system or above (although the internal virtual drive needs Windows2000/XP/2003/Vista or above)
+*Intel Pentium 166&amp;nbsp;MHz or above
+*64MB memory
+*At least 10MB hard disk space
+
+==See also==
+*[[List of ISO image software]]
+*[[Comparison of ISO image software]]
+*[[:Category:Disk image emulators|Disk image emulators]]
+*[[:mount images]]
+
+==References==
+{{Reflist}}
+
+==External links==
+*[http://poweriso.com/ Official PowerISO website]
+*[http://www.poweriso.com/download.htm PowerISO downloads for Windows Linux and Mac OS X]
+
+==ISO conversion utilities==
+*[http://aluigi.altervista.org/mytoolz.htm daa2iso application for Windows] (source code included, and may be compiled for *nix / MacOSX without modification)
+*[http://www.twilightedge.com/mac/daaconverter/ DAA Converter for Mac OS X], graphical Mac interface for daa2iso
+
+{{Optical disc image software}}
+{{Disk image emulators software}}
+
+{{DEFAULTSORT:Poweriso}}
+[[Category:Disk image emulators]]
+[[Category:Disk image editors]]
+
+[[es:PowerISO]]
+[[id:PowerISO]]
+[[it:PowerISO]]
+[[ru:PowerISO]]
+[[tr:PowerISO]]</rev></revisions></page></pages></query></api>

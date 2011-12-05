@@ -1,0 +1,68 @@
+<?xml version="1.0"?><api><query><pages><page pageid="2150852" ns="0" title="SipX"><revisions><rev xml:space="preserve">{{Multiple issues| notability = January 2008
+ | refimprove = April 2009
+ | original research = April 2009}}
+
+{{lowercase|title=sipXecs}}
+
+{{Infobox software
+| name                   = SIPfoundry sipXecs (IP PBX)
+| logo                   =
+| screenshot             = [[Image:SipX-screenshot.png|250px]]
+| caption                = Screenshot of the sipXecs Configuration Manager
+| developer              = SIPfoundry
+| latest_release_version = 4.4.0
+| latest_release_date    = March 1, 2011
+| operating_system       = [[Linux]] [[FreeBSD]]
+| genre                  = [[IP telephony]]
+| license                = [[Affero General Public License]]
+| website                = http://www.sipfoundry.org/
+}}
+
+'''sipXecs (Enterprise Communications Server)''' is an [[open source]] voice over IP telephony server&lt;ref name=&quot;voipnews&quot;&gt;{{cite web
+|url= http://www.voip-news.com/feature/essential-guide-open-source-voip-031208/|title= The Essential Guide to Open-Source VoIP - VoIP News|accessdate=2008-03-13 |quote= SipX is an open-source VoIP telephony server.}}&lt;/ref&gt;. Its main feature is a software implementation of the [[Session Initiation Protocol]] (SIP), which makes it an IP based communications system (IP PBX). Featurewise, it is not unlike [[Asterisk (PBX)|Asterisk]], a very popular open source PBX, but the design of sipXecs deviates from Asterisk in many ways. Development started in 1999, but in 2004 Pingtel Corp contributed the codebase to the non-profit organization SIPfoundry. It is an open source project since then. Pingtel assets were acquired by Nortel in 2008 and Nortel continued to support the project with several key enhancements and additions.  Subsequent to the Avaya acquisition of Nortel in December 2009, Avaya has backed out of sipXecs and SIPfoundry.  Former members of Pingtel and Nortel have create a new commercial entity call eZuce, Inc. (www.eZuce.com)  to carry sipXecs forward and provide commercial versions of the software and support. Source code acquired by sipX is available under the [[Affero General Public License]] (AGPL)&lt;ref&gt;{{cite web
+|url= http://www.sipfoundry.org/licensing
+|title= Licensing - SIPfoundry|accessdate=2011-11-18}}&lt;/ref&gt; as well as a commercial offering from eZuce Inc. 
+
+sipXecs includes many features of a traditional [[private branch exchange]] (PBX) like voice mail, interactive voice response systems, auto attendants and the like. Furthermore it integrates with Exchange 2007&lt;ref&gt;{{cite web
+|url= http://blog.lithiumblue.com/2007/04/accessing-exchange-2007-unified_29.html
+|title= Accessing Exchange 2007 Unified Messaging: Introduction|accessdate=2008-03-20}}&lt;/ref&gt; and Active Directory Environments.
+
+The main components of the system are designed around [[FreeSWITCH]]&lt;ref&gt;http://www.sipfoundry.org/developers-info/33-software-components-of-sipxecs.html&lt;/ref&gt; a media router. In contrast to its main open source competitor [[Asterisk PBX]] and most commercial offerings that use SIP as a transport protocol, SipX does not play the role of a back-to-back user agent. This approach led to a modular and highly scalable system. All major components of sipX are implemented as servers and do not necessarily have to reside on a single machine only.
+
+==Design philosophy==
+{{Original research|section|date=April 2009}}
+sipX is distinguished from most other open source VoIP PBXs by several characteristics:
+* All call signaling is handled using the SIP protocol natively (vs. gatewaying SIP to some other signaling protocol, e.g. as done in the [[Asterisk PBX]]).
+* The sipXecs components handle call signaling, but once a call is set up, the voice (media) packets are sent directly between the endpoints involved. This allows most of the sipX components to be agnostic about the media and its encodings. E.g., [[Session Initiation Protocol|SIP]]-based [[Videophones]] can communicate without increasing the load on the sipX system.
+* The architecture of the system is client-server based and non-monolithic; the sipX components (proxy, media server, etc.) communicate between each other via the SIP protocol and can be run on different hosts (or replaced with other SIP components).
+* The system administrative interface is web-based (vs. a command-line interface) and named sipXconfig.
+
+sipXecs adheres to the SIP philosophy of implementing many features with significant support in the endpoints (telephones, gateways, voicemail systems) rather than entirely in the core components (proxy). This improves scalability but makes many features dependent on support in the endpoints of the telephone system.
+
+==Applications==
+
+sipXecs is used by small and large enterprises ranging up to about 10,000 users. The largest publicly announced deployment is at Amazon.com using an installation serving over 5,000 users.
+
+==Availability==
+sipXecs was available on multiple platforms like [[FreeBSD]] and major [[Linux]] distributions, including [[Red Hat Enterprise Linux]], [[Fedora (operating system)|Fedora Core]], [[CentOS]], [[Debian]] and others. Beginning with version 3.10 sipXecs does have native support for PowerPC ([[big endian]]) systems. Currently the system is being built only for CentOS / Red Hat.  Installation packages are available as well as modified ISO images of complete distributions with easy to use installation routines for sipX.
+
+==Hardware==
+sipXecs supports the use of [[Ethernet]]-attached [[Session Initiation Protocol|SIP]] hardware and also software phones. sipX itself does not interface to traditional phone lines. To attach ordinary (non-[[VoIP]]) phones or [[PSTN]] lines to the PBX, IP/PSTN gateways have to be used. sipXecs supports a number of commercially-available gateways.
+
+==Side Notes==
+* In addition to the above mentioned, the sipXecs system serves as a reference implementation of the SIP standard. It is used at SIPIT interoperability events organized by the [[SIP Forum]] to test interoperability of SIP solutions from many different vendors.
+* An automated SIP interoperability portal based on sipX is provided for free. It is primarily used by SIP phone manufacturers for SIP compliance and advanced feature testing.
+
+==External links==
+* [http://www.sipfoundry.org Official website]
+
+== See also ==
+{{Portal|Free software}}
+* [[Comparison of VoIP software]]
+
+==References==
+{{Reflist}}
+
+{{DEFAULTSORT:Sipx}}
+[[Category:VoIP software]]
+[[Category:Free VoIP software]]</rev></revisions></page></pages></query></api>

@@ -1,0 +1,653 @@
+<?xml version="1.0"?><api><query><pages><page pageid="7339782" ns="0" title="Criticism of Windows Vista"><revisions><rev xml:space="preserve">{{about|the criticism that applies specifically to Vista|criticism applying to several or all versions of Microsoft Windows|Criticism of Microsoft Windows}}
+{{Windows Vista}}
+{{Update|date=June 2010}}
+'''Windows Vista''', an [[operating system]] released by [[Microsoft]] in November 2006, has received substantial criticism by reviewers and users. Due to issues with privacy, security, performance, and [[product activation]], [[Windows Vista]] has been the subject of a number of negative assessments by various groups.
+
+==Security==
+In February 2008, [[Bitlocker Drive Encryption|Bitlocker]] was shown to be vulnerable to a [[cold boot attack]].&lt;ref name=&quot;ColdBoot&quot;&gt;{{cite journal
+|url=http://citp.princeton.edu/memory/
+|title=Lest We Remember: Cold Boot Attacks on Encryption Keys
+|author=J. Alex Halderman, [[Seth Schoen|Seth D. Schoen]], Nadia Heninger, William Clarkson, William Paul, Joseph A. Calandrino, Ariel J. Feldman, [[Jacob Appelbaum]], and [[Edward Felten|Edward W. Felten]]
+|publisher=[[Princeton University]]
+|date=2008-02-21
+|accessdate=2008-06-20
+}}; While other disk encryption products, including [[FileVault]], [[dm-crypt]], and [[TrueCrypt]], were shown to be vulnerable, only Bitlocker had cases in which it could be attacked even after a soft shutdown.&lt;/ref&gt; According to the researchers, the risk can be mitigated by configuring [[two-factor authentication]] (e.g. a boot [[Personal Identification Number|PIN]] in conjunction with a [[Trusted Platform Module|TPM]]), by disabling power standby mode and using hardware that overwrites memory during [[Power-on self-test|POST]] if the operating system does not shut down cleanly.
+
+===User Account Control===
+The following concerns have been raised {{Who|date=March 2010}} about the new [[User Account Control]] (UAC) security technology: Many third-party programs do not follow the [[principle of least privilege]] and therefore need to be run as an [[superuser|administrator]], triggering UAC prompts. For some time, Microsoft has recommended that programs be written to run as a standard user. However, because nearly all users are administrators by default in previous versions of Windows, many developers have incorrectly assumed that their applications will always execute with these privileges, or have not regression tested their code for LUA bugs.&lt;ref&gt;{{cite web|url=http://technet.microsoft.com/en-us/magazine/cc160944.aspx|title=Problems of Privilege: Find and Fix LUA Bugs|author=Aaron Margosis|accessdate=2008-10-27|publisher=[[Microsoft]]|date=2006-08-01}}&lt;/ref&gt; Microsoft added ''file and registry virtualization'' technology as well as application compatibility [[shim (computing)|shims]] to reduce the number of these [[Legacy system|legacy]] applications that trigger UAC prompts.&lt;ref&gt;{{cite web
+|url=http://channel9.msdn.com/ShowPost.aspx?PostID=288259
+|title=UAC - What. How. Why.
+|date=2007-03-05
+|accessdate=2007-03-23
+|format=video
+|author=Charles
+}}&lt;/ref&gt;
+
+User Account Control can be disabled through the Control Panel; however, this also disables privilege separation features such as [[Internet Explorer 7]]'s Protected Mode, which relies on UAC for its operation, and there is a risk of misplacing contents of files, that were previously ''virtualized'', reverting to the original installed versions of these files.
+
+===Password Restore===
+A password cannot be restored on Windows Vista Starter and Windows Vista Home Basic. This means that if an administrator forgets his/her password on any of these Operating Systems, they will not be able to download items or make major changes to the computer on a limited user account. However, a password can be restored on Windows Vista Home Premium, Windows Vista Business, Windows Vista Ultimate, and on Windows Vista Enterprise using a floppy disc or a USB flash drive. Passwords are restored by inputting the wrong password during log-in, then clicking &quot;Reset Password&quot;.
+
+===Driver signing requirement===
+[[64-bit]] versions of Windows Vista (and of Windows 7 as well) allow only [[code signing|signed]] [[device driver|drivers]] to be installed in [[ring (computer security)|kernel mode]]; this feature cannot be easily overridden by [[system administrator]]s.&lt;ref&gt;{{cite web
+|url=http://www.microsoft.com/whdc/winlogo/drvsign/drvsign.mspx
+|title=Driver Signing Requirements for Windows
+|publisher=[[Microsoft]]
+|accessdate=2008-02-23
+}}&lt;/ref&gt;&lt;ref&gt;{{cite web
+|url=http://www.heise-online.co.uk/security/Microsoft-blocks-64-bit-driver--/news/94035
+|title=Microsoft blocks 64-bit driver
+|publisher=heise Security UK
+|date=2007-08-08
+}}&lt;/ref&gt;
+
+In order for a driver to be signed, a developer will either have to pay Microsoft for the driver to be tested by Microsoft's [[WHQL Testing]]&lt;ref&gt;{{cite web
+|url=http://msdn.microsoft.com/en-us/library/ff552289.aspx
+|title=Signing Drivers For Public Release (Windows Server 2008 and Windows Vista)
+|publisher=[[Microsoft]]
+|accessdate=2008-02-23
+}}&lt;/ref&gt; or, if WHQL testing is not required, to purchase a &quot;Software Publisher [[public key certificate|Certificate]]&quot;&lt;ref&gt;{{cite web
+|url=http://msdn.microsoft.com/en-us/library/ff552299.aspx
+|title=Software Publisher Certificate
+|publisher=[[Microsoft]]
+}}&lt;/ref&gt; with which to sign the driver.
+
+The following criticisms/claims have been made regarding this requirement:
+
+* that it reduces Vista's compatibility with older hardware&lt;ref&gt;{{cite web|url= http://h10025.www1.hp.com/ewfrf/wc/document?lc=en&amp;cc=us&amp;docname=c00678204&amp;dlc=en|title= in here, HP states that it won't release vista drivers for some hardware. Together with the fact that the old drivers can't be loaded, this renders such hardware unusable under vista}}&lt;/ref&gt;
+* that it disallows experimentation from the hobbyist community.&lt;ref&gt;{{cite web|url= http://www.linchpinlabs.com/resources/atsiv/usage-design.html|title= Linchpin Labs Response to Microsoft's Classification of Atsiv}}&lt;/ref&gt; The required authenticode certificates for signing Vista drivers are expensive and out of reach&lt;ref&gt;{{cite web
+|url=http://www.winwaed.com/info/authenticode/authenticode.shtml
+|title=Microsoft Authenticode for the Small Independent Software Vendor
+|accessdate=2008-05-27
+|author=Marsden, Richard
+}}&lt;/ref&gt; for small developers, usually about $400â500/year (from [[VeriSign]]).
+* that it might exist not only for security reasons, but also to enforce [[Digital Rights Management]] policies, especially the [[Protected Video Path]] {{Citation needed|date=June 2010}} .
+
+Unsigned drivers could initially be installed through the use of tools included with Vista,&lt;ref&gt;{{cite web
+|url=http://www.mstalkonline.com/vista-install-unsigned-hardware-driver-in-x64-bit/
+|title=Allowing UnSigned Driver Installation in Vista x64
+|accessdate=2008-03-02
+}}&lt;/ref&gt; as well as some third party utilities such as Atsiv.&lt;ref&gt;{{cite news|url=http://www.computerworld.com/action/article.do?command=viewArticleBasic&amp;articleId=9028440|title=Utility evades Vista kernel defenses|date=2007-06-30|publisher=Computerworld|author=Gregg Keizer|accessdate=2008-09-14}}&lt;/ref&gt; However Microsoft has closed these workarounds with hotfix KB932596,&lt;ref&gt;{{cite web
+|url=http://support.microsoft.com/kb/932596
+|title=Microsoft Security Advisory: Update to improve Kernel Patch Protection
+|publisher=[[Microsoft]]
+|date=2007-10-26
+|accessdate=2008-03-03
+}}&lt;/ref&gt; which is included in Service Pack 1. Microsoft claims that using strict driver handling means more security, while critics{{Who|date=December 2009}} note that few if any security attacks have manifest in software drivers, which are almost always written by equipment manufacturers.
+
+===Flaws in memory protection features===
+
+Security researchers [[Alexander Sotirov]] and Mark Dowd have developed a technique that bypasses many of the new memory-protection safeguards in Windows Vista, such as [[address space layout randomization]] (ASLR). The result of this is that any already existing buffer overflow bugs that, in Vista, were previously not exploitable due to such features, may now be exploitable.&lt;ref&gt;{{cite web|url= http://taossa.com/archive/bh08sotirovdowd.pdf|title= How to Impress Girls with Browser Memory Protection Bypasses}}&lt;/ref&gt;&lt;ref&gt;{{cite web|url= http://arstechnica.com/news.ars/post/20080811-the-sky-isnt-falling-a-look-at-a-new-vista-security-bypass.html|title= The sky isn't falling: a look at a new Vista security bypass}}&lt;/ref&gt; This is not in itself a vulnerability: as Sotirov notes, &quot;''What we presented is weaknesses in the protection mechanism. It still requires the system under attack to have a vulnerability. Without the presence of a vulnerability these techniques donât really [accomplish] anything.''&quot;&lt;ref name=&quot;SotZDNet&quot;&gt;{{cite web|url= http://blogs.zdnet.com/Bott/?p=513|title= Alarmed about Vista security? Black Hat researcher Alexander Sotirov speaks out}}&lt;/ref&gt; The vulnerability Sotirov and Dowd used in their paper as an example was the 2007 animated cursor bug, [[Common Vulnerabilities and Exposures|CVE]]-2007-0038.
+
+One security researcher (Dino Dai Zovi) claimed that this means that it is &quot;completely game over&quot; for Vista security.&lt;ref&gt;{{cite web|url=http://searchsecurity.techtarget.com/news/article/0,289142,sid14_gci1324395,00.html |title=Researchers use browser to elude Vista memory protections |publisher=Searchsecurity.techtarget.com |date= |accessdate=2010-06-11}}&lt;/ref&gt; though Sotirov refuted this, saying that &quot;''The articles that describe Vista security as 'broken' or 'done for,' with 'unfixable vulnerabilities' are completely inaccurate. One of the suggestions I saw in many of the discussions was that people should just use Windows XP. In fact, in XP a lot of those protections weâre bypassing ''[such as ASLR] ''donât even exist.''&quot;&lt;ref name=&quot;SotZDNet&quot; /&gt;
+
+==Digital rights management==
+Another common criticism concerns the integration of new forms of [[digital rights management]] (DRM) into the operating system, specifically the [[Protected Video Path]] (PVP), which involves technologies such as [[High-bandwidth Digital Content Protection]] (HDCP) and the [[Image Constraint Token]] (ICT). These features have been added to Vista due to an agreement between Microsoft and major Hollywood studios.&lt;ref name=&quot;Microsoft-ocp&quot;&gt;{{cite web
+|url=http://www.microsoft.com/whdc/device/stream/output_protect.mspx
+|title=Output Content Protection and Windows Vista
+|date=2005-04-27
+|accessdate=2007-01-08
+|author=Marsh, Dave
+|publisher=[[Microsoft]]
+|archiveurl = http://web.archive.org/web/20061116163834/http://www.microsoft.com/whdc/device/stream/output_protect.mspx |archivedate = November 16, 2006}}&lt;/ref&gt; This will concern, among other things, play-back of protected content on [[HD DVD]] and [[Blu-ray]] discs, but it will not be enabled until at least 2010.
+
+The Protected Video Path mandates that encryption must be used whenever content marked as &quot;protected&quot; will travel over a link where it might be intercepted. This is called a User-Accessible Bus (UAB). Additionally, all devices that come into contact with premium content (such as graphics cards) have to be certified by Microsoft.&lt;ref name=&quot;Microsoft-ocp&quot;/&gt; Before playback starts, all the devices involved are checked using a Hardware Functionality Scan (HFS) to verify if they are genuine and have not been tampered with. Devices are required to switch off or artificially degrade the quality of any signal outputs that are not protected by HDCP. Additionally, Microsoft maintains a global revocation list for devices that have been compromised. This list is distributed to PCs over the Internet using normal update mechanisms. The only effect on a revoked driver's functionality is that high-level protected content will not play; all other functionality, including low-definition playback, is retained.&lt;ref name=&quot;Microsoft-ocp&quot;/&gt;&lt;ref name=&quot;vistablog20&quot; /&gt;
+
+===Notable critics===
+[[Peter Gutmann (computer scientist)|Peter Gutmann]], a computer security expert from the [[University of Auckland]], New Zealand, has released a [[whitepaper]]&lt;ref&gt;{{cite web
+|url=http://www.cs.auckland.ac.nz/~pgut001/pubs/vista_cost.html
+|title=A Cost Analysis of Windows Vista Content Protection
+|last=Gutmann
+|first=Peter
+|authorlink=Peter Gutmann (computer scientist)
+|date=2007-01-27
+|accessdate=2007-01-27
+}} Also available: [http://max-sievers.name/vista_cost.pdf PDF version]&lt;/ref&gt; in which he raises the following concerns against these mechanisms:
+* Adding encryption facilities to devices makes them more expensive, a cost that is passed on to the user.
+* If outputs are not deemed sufficiently protected by the media industry, then even very expensive equipment can be required to be switched off (for example, [[S/PDIF]]-based, high-end audio cards).
+* Some newer high-definition monitors are not HDCP-enabled, even though the manufacturer may claim otherwise.
+* The added complexity makes systems less reliable.
+* Since non-protected media are not subject to the new restrictions, users may be encouraged to remove the protection in order to view them without restrictions, thus defeating the content protection scheme's initial purpose.
+* Protection mechanisms, such as disabling or degrading outputs, may be triggered erroneously or maliciously, motivating denial-of-service attacks.
+* Revoking the driver of a device that is in wide use is such a drastic measure that Gutmann doubts Microsoft will ever actually do so. On the other hand, they may be forced to because of their legal obligations to the movie studios.
+
+[[Steve Gibson (computer programmer)|Steve Gibson]] of [[Gibson Research Corporation]] has stated during his [[Security Now!]] show that he agrees with Peter Gutmann in principle and that what he proposes is a factually accurate description of what is found in the specification from Microsoft.&lt;ref&gt;
+{{cite web
+|url=http://www.grc.com/sn/SN-074.htm
+|title=Steve Gibson &amp; Peter Gutmann on Vista DRM
+|first=Steve
+|last=Gibson
+|date=2007-01-17
+|accessdate=2007-01-17
+}}&lt;/ref&gt;
+
+The [[Free Software Foundation]] conducted a campaign called &quot;[[BadVista]]&quot; against Vista on these grounds.
+
+===Reaction to criticism===
+Ed Bott, author of Windows Vista Inside Out, has published a three-part blog which rebuts many of Gutmann's claims.&lt;ref&gt;{{cite web
+|url=http://blogs.zdnet.com/Bott/?p=299
+|title=Everything you've read about Vista DRM is wrong.
+|first=Ed
+|last=Bott
+|date=2007-09-16
+|accessdate=2007-09-21
+}}&lt;/ref&gt;
+
+Ed Bott's criticisms can be summarized as follows:
+* Gutmann allegedly based his paper on outdated documentation from Microsoft and second-hand web sources.
+* Gutmann allegedly quotes selectively from the Microsoft specifications.
+* Gutmann allegedly did no experimental work with Vista to prove his theories. Rather, he makes mistaken assumptions and then speculates wildly on their implications.
+* Gutmann's paper, while presented as serious research, is really just an opinion piece.
+
+Technology writer George Ou claims that Gutmann's paper relies on unreliable sources and that Gutmann has never used Windows Vista to test his theories.&lt;ref&gt;{{cite web
+|url=http://blogs.zdnet.com/Ou/?p=723
+|title=Gutmann Vista DRM paper uses shoddy Web Forums as source.
+|first=George
+|last=Ou
+|date=2007-09-01
+|accessdate=2007-09-22
+}}&lt;/ref&gt;
+
+Gutmann has responded to both Bott and Ou in a further article.,&lt;ref&gt;{{cite web
+|url=http://www.cypherpunks.to/~peter/zdnet.html
+|title=Windows DRM: A Response to the Disinformation
+|author=Peter Gutmann (computer scientist)
+}}&lt;/ref&gt; which states that the central thesis of Gutmann's article has not been refuted and the response of Bott is &quot;disinformation&quot;.
+
+Microsoft has published a blog entry with &quot;Twenty Questions (and Answers)&quot; on Windows Vista Content Protection, intending to refute some of Gutmann's arguments.&lt;ref&gt;{{cite web
+|url=http://windowsvistablog.com/blogs/windowsvista/archive/2007/01/20/windows-vista-content-protection-twenty-questions-and-answers.aspx
+|title=Windows Vista Content Protection - Twenty Questions (and Answers)
+|author=Nick White and Dave Marsh
+|date=2007-01-20
+|accessdate=2007-01-22
+}}&lt;/ref&gt;
+
+Paul Smith, a [[Microsoft Most Valuable Professional|Microsoft MVP]], has written a response to Gutmann's paper in which he counters some of his arguments.&lt;ref&gt;{{cite web
+|url=http://www.dasmirnov.net/blog/2006/12/31/windows_vista_drm_nonsense
+|title=Windows Vista DRM nonsense
+|first=Paul
+|last=Smith
+|date=2006-12-31
+|accessdate=2007-01-03
+}}&lt;/ref&gt; Specifically, he says:
+* Microsoft is not to blame for these measures. The company has been forced to do this by the movie studios.
+* The Protected Video Path will not be used for quite a while. There is said to be an agreement between Microsoft and Sony that Blu-ray discs will not mandate protection until at least 2010, possibly even 2012.&lt;ref name=&quot;arstechnica&quot;&gt;{{cite web
+|url=http://arstechnica.com/news.ars/post/20060521-6880.html
+|last=Fisher
+|first=Ken
+|date=2006-05-21
+|title=Hollywood reportedly in agreement to delay forced quality downgrades for Blu-ray, HD DVD
+}}&lt;/ref&gt;
+* Vista does not degrade or refuse to play any existing media, CDs or DVDs. The protected data paths are only activated if protected content requires it.
+* Users of other operating systems such as [[Linux]] or [[Mac OS X]] will not have official access to this premium content.
+Microsoft also noted that content protection mechanisms have existed in Windows as far back as [[Windows Me]].&lt;ref name=&quot;vistablog20&quot;&gt;{{cite web
+|url=http://windowsvistablog.com/blogs/windowsvista/archive/2007/01/20/windows-vista-content-protection-twenty-questions-and-answers.aspx
+|title=Windows Vista Content Protection - Twenty Questions (and Answers)
+|last=Marsh
+|first=Dave
+|date=2007-01-20
+|accessdate=2007-01-20
+|work=Windows Vista team blog
+|publisher=Microsoft
+}}&lt;/ref&gt;
+
+==Hardware requirements and performance==
+According to Microsoft, &quot;nearly all PCs on the market today will run Windows Vista&quot; and most PCs sold after 2005 are capable of running Vista.&lt;ref name=&quot;Judge1&quot;&gt;{{cite web
+|url=http://business.timesonline.co.uk/article/0,,9075-2188681,00.html
+|title=Windows revamp 'too advanced for most PCs'
+|date=2006-05-20
+|accessdate=2006-08-15
+|last=Judge
+|first=Elizabeth
+|publisher=The Times
+| location=London}}&lt;/ref&gt;&lt;ref name=&quot;Hwreqts2&quot;&gt;{{cite web
+|url=http://www.eweek.com/article2/0,1895,1843945,00.asp
+|title=Will Your PC Run Windows Vista?
+|date=2005-08-05
+|accessdate=2006-08-15
+|author=Spooner, John G.
+|coauthors=Foley, Mary Jo
+|publisher=eweek.com
+}}&lt;/ref&gt;&lt;ref name=&quot;Hardware1&quot;&gt;{{cite web
+|url=http://www.windowsitpro.com/Article/ArticleID/49835/49835.html?Ad=1
+|title=Finally, Microsoft Releases Windows Vista Hardware Requirements
+|date=2006-03-29
+|accessdate=2006-08-15
+|last=Thurrott
+|first=Paul
+|authorlink=Paul Thurrott
+|publisher=WinSuperSite.com
+}}&lt;/ref&gt;
+
+Much hardware that worked in XP does not work, or works poorly in Vista, due to companies going out of business, lack of interest in supporting old hardware, and changes in driver models.&lt;ref&gt;{{cite web|url=http://apcmag.com/creative_mute_on_vista_soundblaster_drivers.htm |title=Creative mute on Vista Soundblaster drivers |publisher=Apcmag.com |date= |accessdate=2010-06-11}}&lt;/ref&gt; Service Pack 1 for Vista is said to fix many of these problems.&lt;ref name=&quot;Hardware Compatibility&quot;&gt;{{cite web
+|url=http://www.articlesbase.com/operating-systems-articles/windows-vista-hardware-compatibility-issues-121465.html
+|title=Windows Vista - Hardware Compatibility Issues
+|date=2007-03-24
+|accessdate=2006-03-22
+|author=Anmol Taneja
+|publisher=Articlesbase
+}}&lt;/ref&gt;
+
+===Speed===
+
+[[Tom's Hardware]] published benchmarks in January 2007 that showed that Windows Vista executed typical applications more slowly than Windows XP with the same hardware configuration.&lt;ref&gt;{{cite web
+|url=http://www.tomshardware.com/2007/01/29/xp-vs-vista/
+|title=New Benchmark Tests for Vista
+|date=2007-05-04
+|accessdate=2007-05-13
+|last=Santo Domingo
+|first=Joel
+|publisher=tomshardware.com
+}}&lt;/ref&gt;  A subset of the benchmarks used were provided by [[Standard Performance Evaluation Corporation]] (or SPEC), who later stated that such &quot;results should not be compared to those generated while running Windows XP, even if testing is done with the same hardware configuration.&quot; SPEC acknowledges that an apple-to-apples comparison cannot be made in cases such as the one done by Tom's Hardware, calling such studies &quot;invalid comparisons.&quot;&lt;ref&gt;{{cite web
+|url=http://www.spec.org/gwpg/publish/vista_paper.html
+|title=Understanding the impact of Windows Vista on SPECviewperf performance measurement
+|date=2007-05-29
+|accessdate=2008-10-29
+|last=Williams
+|first=Ian
+|publisher=Standard Performance Evaluation Corporation
+}}&lt;/ref&gt; However, the TomsHardware report conceded that the SPECviewperf tests &quot;suffered heavily from the lack of support for the OpenGL graphics library under Windows Vista&quot;.  For this reason the report recommended against replacing Windows XP with Vista until manufacturers made these drivers available.&lt;ref name=&quot;Schmidt&quot;&gt;{{cite web
+|url=http://www.tomshardware.com/reviews/xp-vs-vista,1531-11.html
+|title=New Benchmark Tests for Vista, Conclusion
+|date=2007-01-29
+|last=Schmidt
+|first=Patrick
+|publisher=tomshardware.com
+}}&lt;/ref&gt; 
+
+The report also concluded in tests involving real world applications Vista performed considerably slower, noting &quot;We are disappointed that CPU-intensive applications such as video transcoding with XviD (DVD to XviD MPEG4) or the MainConcept H.264 Encoder performed 18% to nearly 24% slower in our standard benchmark scenarios&quot;. Other commonly used applications, including Photoshop and WinRAR, also performed worse under Vista.&lt;ref name=&quot;Schmidt&quot;/&gt; 
+
+Many low-to-middle-end machines that come with Windows Vista pre-installed suffer from exceptionally slow performance with the default Vista settings that come pre-loaded, and laptop manufacturers have offered to 'downgrade' laptops to Windows XPâfor a price.&lt;ref&gt;{{cite web|url=http://www.engadget.com/2009/02/16/microsoft-gets-sued-over-windows-xp-downgrade-fees/ |title=Microsoft gets sued over Windows XP downgrade fees |publisher=Engadget |date= |accessdate=2010-08-06}}&lt;/ref&gt; However, this &quot;price&quot; is unnecessary, as Microsoft allows users of Windows Vista and Windows 7 to freely &quot;downgrade&quot; their software by installing XP and then phoning a Microsoft representative for a new product key. [http://www.eweek.com/c/a/Windows/Microsoft-Windows-XP-Users-Can-Keep-Downgrade-Rights-491684/]
+
+===File operation performance===
+When first released in November 2006, Vista performed file operations such as copying and deletion more slowly than other operating systems. Large copies required when migrating from one computer to another seemed difficult or impossible without workarounds such as using the command line. This inability to efficiently perform basic file operations attracted strong criticism.&lt;ref&gt;{{cite web
+|url=http://forums.microsoft.com/TechNet/ShowPost.aspx?PostID=1358057&amp;SiteID=17
+|title=calculating time remaining moving, deleting, copying files very slow
+}}{{Dead link|date=June 2010}}&lt;/ref&gt; After six months, Microsoft confirmed the existence of these problems by releasing a special performance and reliability update,&lt;ref&gt;{{cite web
+|url=http://support.microsoft.com/?kbid=938979
+|title=An update is available that improves the performance and reliability of Windows Vista
+}}&lt;/ref&gt; which was later disseminated through Windows Update, and is included in Service Pack 1.&lt;ref name=&quot;vistablogwhite&quot;&gt;{{cite web
+|url=http://windowsvistablog.com/blogs/windowsvista/pages/windows-vista-service-pack-1-beta-whitepaper.aspx
+|title=Windows Vista Service Pack 1 Beta White Paper
+}} (See 'Performance' section)&lt;/ref&gt;
+
+Nonetheless, one benchmark reported to show that, while improving performance compared to Vista's original release, Service Pack 1 does not increase the level of performance to that of Windows XP.&lt;ref&gt;{{cite web
+|url=http://blogs.zdnet.com/hardware/?p=1332
+|title=Vista SP1 vs. XP SP2 - Benchmarked
+|last=Kingsley-Hughes
+|first=Adrian
+|date=2008-02-15
+|accessdate=2008-02-16
+}}&lt;/ref&gt; However, that benchmark has been questioned by others within ZDNet. Ed Bott both questions his colleagues' methods and provides benchmarks that refute the results.&lt;ref&gt;{{cite web
+|url=http://blogs.zdnet.com/Bott/?p=369&amp;page=1
+|title=Another take on Vista vs. XP benchmarks
+|date=2008-02-19
+}}&lt;/ref&gt;
+
+===Game performance===
+
+Early in Vista's lifecycle, many games showed a drop in frame rate compared to that experienced in Windows XP.&lt;ref&gt;{{cite web
+|url=http://www.theinquirer.net/default.aspx?article=36148
+|title=Testing Vista's different memory configurations
+|date=2006-12-04
+|accessdate=2007-05-13
+|last=Abazovic
+|first=Fuad
+|publisher=theinquirer.net
+}}&lt;/ref&gt;&lt;ref&gt;{{cite web
+|url=http://techgage.com/article/windows_vista_gaming_performance_reports
+|title=Windows Vista Gaming Performance Reports
+|date=2007-01-29
+|accessdate=2007-05-26
+|last=Williams
+|first=Rob
+|publisher=techgage.com
+}}&lt;/ref&gt;&lt;ref&gt;{{cite web
+|url=http://www.bjorn3d.com/read_pf.php?cID=1015
+|title=ATI Radeon X1950XTX CrossFire
+|date=2006-11-24
+|accessdate=2007-05-18
+|last=Cheatham
+|first=Miles
+|publisher=bjorn3d.com
+|archiveurl = http://web.archive.org/web/20070927174936/http://www.bjorn3d.com/read_pf.php?cID=1015 |archivedate = September 27, 2007}}&lt;/ref&gt; These results were largely the consequence of Vista's immature [[graphics processing unit]]s drivers, and higher system requirements for Vista itself.&lt;ref&gt;{{cite web
+|url=http://www.extremetech.com/article2/0,1697,2096940,00.asp
+|title=Vista Game Performance: Vista vs. XP and ATI vs. Nvidia
+|date=2007-02-20
+|accessdate=2007-05-26
+|last=Cross
+|first=Jason
+|publisher=extremetech.com
+}}&lt;/ref&gt;&lt;ref&gt;{{cite web
+|url=http://enthusiast.hardocp.com/article/2007/05/07/xp_vs_vista_tale_framerates
+|title=XP vs. Vista - A Tale of Framerates
+|date=2007-05-07
+|accessdate=2007-05-26
+|last=Wall
+|first=Jason
+|publisher=enthusiast.hardocp.com
+}}&lt;/ref&gt;
+Some recent benchmarks seem to suggest that, as of mid-2008, Vista SP1 is now on par with Windows XP in terms of game performance.&lt;ref&gt;{{cite web
+|url=http://www.extremetech.com/article2/0,2845,2302500,00.asp
+|title=Gaming Performance: Windows Vista SP1 vs. XP SP3
+|date=2008-05-12
+|accessdate=2008-07-29
+|last=Durham
+|first=Joel
+|publisher=extremetech.com
+}}&lt;/ref&gt; However, game developers' recommended memory requirements on Vista are still higher (usually double) than on XP.&lt;ref&gt;{{cite web
+|url=http://www.pcgamerequirements.com/game-index/devil-may-cry-4-game-requirements/
+|title=Devil May Cry 4 Games Requirements
+|quote=''(Minimum Requirements) Memory 512MB (Windows XP), 1GB (Windows Vista)''
+|accessdate=2009-04-13
+|publisher=pcgamerequirements.com
+}}&lt;/ref&gt;&lt;ref&gt;{{cite web
+|url=http://www.crysis-online.com/page/system-requirements.html
+|title=Crysis System Requirements
+|quote=''(Minimum Requirements) RAM: 1GB (1.5GB on Windows Vista)''
+|accessdate=2009-04-13
+|publisher=crysis-online.com
+}}&lt;/ref&gt;&lt;ref&gt;{{cite web
+|url=http://pc.ign.com/articles/923/923094p1.html
+|title=Valve Updates Left 4 Dead Requirements
+|accessdate=2009-04-13
+|quote=''RAM: 1 GB for XP / 2 GB for Vista''
+|publisher=ign.com
+}}&lt;/ref&gt;
+
+===Software bloat===
+Concerns have been expressed that Windows Vista may contain
+[[software bloat]]. Speaking in 2007 at the University of
+Illinois, Microsoft distinguished engineer [[Eric Traut]]
+said, &quot;A lot of people think of Windows as this large,
+bloated operating system, and that's maybe a fair
+characterization, I have to admit.&quot; He went on to say that,
+&quot;at its core, the kernel, and the components that make up
+the very core of the operating system, is actually pretty
+streamlined.&quot;&lt;ref&gt;{{cite web|url= http://www.techworld.com/opsys/news/index.cfm?newsid=10398|title= Microsoft to slim down 'bloated' Windows}}&lt;/ref&gt;
+
+Former PC World editor Ed Bott has expressed skepticism
+about the claims of bloat, noting that almost every single
+operating system that Microsoft has ever sold had been
+criticized as &quot;bloated&quot; when they first came out; even those
+now regarded as the exact opposite, such
+as [[MS-DOS]].&lt;ref&gt;{{cite web
+|url=http://www.zdnet.com/blog/bott/windows-bloat-its-always-been-that-way/18
+|title=Windows bloat? It's always been that way
+|author=Ed Bott
+}}&lt;/ref&gt;
+
+===Vista capable lawsuit===
+Two consumers sued Microsoft in United States federal court alleging the &quot;Windows Vista Capable&quot; marketing campaign was a [[bait and switch]] tactic as some computers originally installed with Windows XP could only run Vista Basic, and in some cases they did not run even Vista Basic at a user-acceptable speed. In February 2008 a [[Seattle]] judge granted the suit [[class action]] status, permitting all purchasers in the class to participate in the case.&lt;ref&gt;{{cite web|last=McDougall |first=Paul |url=http://www.informationweek.com/news/showArticle.jhtml?articleID=206900043 |title=informationweek.com |publisher=informationweek.com |date= |accessdate=2010-08-06}}&lt;/ref&gt;&lt;ref name='NYTimes-Stross-2008-03-09'&gt;
+{{cite news
+|first=Randall
+|last=Stross
+|title=They Criticized Vista. And They Should Know.
+|date=2008-03-08
+|url=http://www.nytimes.com/2008/03/09/business/09digi.html?scp=1&amp;sq=vista&amp;st=nyt
+|work=New York Times
+|accessdate=2008-03-08
+}}
+&lt;/ref&gt;
+Released documents in the case, as well as a [[Dell]] presentation in March 2007, discussed late changes to Windows Vista which permitted hardware to be certified that would require upgrading in order to use Vista, and that lack of compatible drivers forced hardware vendors to &quot;limp out with issues&quot; when Vista was launched.&lt;ref name='NYTimes-Stross-2008-03-09'/&gt;&lt;ref&gt;[http://www.nytimes.com/idg/IDG_002570DE00740E18002573FE006B7266.html?ref=technology NYTimes] â Dell Pointed Out Vista Mistakes, Internal Documents Show&lt;/ref&gt;
+This was one of several Vista launch appraisals included in 158 pages of unsealed documents.
+
+===Laptop battery life===
+With the new features of Vista, criticism has surfaced concerning the use of battery power in laptops running Vista, which can drain the battery much more rapidly than [[Windows XP]], reducing battery life.&lt;ref&gt;{{cite web
+|url=http://news.zdnet.com/2100-3513_22-6079215.html?tag=nl
+|title=Vista beta sucks up battery juice
+|date=2006-06-02
+|accessdate=2007-05-06
+|author=Fried, Ina
+|publisher=news.zdnet.com
+|archiveurl = http://web.archive.org/web/20070520144651/http://news.zdnet.com/2100-3513_22-6079215.html?tag=nl &lt;!-- Bot retrieved archive --&gt; |archivedate = 2007-05-20}}&lt;/ref&gt; With the Windows Aero visual effects turned off, battery life is equal to or better than Windows XP systems.&lt;ref&gt;{{cite web|url= http://www.zdnet.com/news/vista-draining-laptop-batteries-patience/152028|title = Vista draining laptop batteries, patience}}&lt;/ref&gt; &quot;With the release of a new operating system and its new features and higher requirements, higher power consumption is normal&quot;, as Richard Shim, an analyst with IDC noted, &quot;when Windows XP came out, that was true, and when Windows 2000 came out, that was true.&quot;&lt;ref&gt;{{cite web
+|url=http://news.zdnet.com/2100-1040_22-6181366.html
+|title=Vista draining laptop batteries, patience
+|date=2007-05-04
+|accessdate=2007-05-06
+|author=Krazit, Tom
+|publisher=news.zdnet.com
+|archiveurl = http://web.archive.org/web/20070507103220/http://news.zdnet.com/2100-1040_22-6181366.html &lt;!-- Bot retrieved archive --&gt; |archivedate = 2007-05-07}}&lt;/ref&gt;
+
+==Software compatibility==
+Significant problems have surfaced with other software running under Vista. According to Gartner, &quot;Vista has been dogged by fears, in some cases proven, that many existing applications have to be re-written to operate on the new system.&quot;&lt;ref&gt;{{cite web
+|url=http://www.zdnetasia.com/news/software/0,39044164,62012902,00.htm
+|title=Gartner: App testing delaying Vista rollouts
+|accessdate=2007-05-22
+|publisher=zdnetasia.com
+}}&lt;/ref&gt;
+Cisco has been reported as saying, &quot;Vista will solve a lot of problems, but for every action, there's a reaction, and unforeseen side-effects and mutations. Networks can become more brittle.&quot;&lt;ref&gt;{{cite web
+|url=http://www.zdnetasia.com/news/software/0,39044164,61953911,00.htm
+|title=Microsoft rallies developers behind Vista
+|accessdate=2007-05-22
+|publisher=zdnetasia.com
+}}&lt;/ref&gt; According to PC World, &quot;Software compatibility issues, bug worries keep businesses from moving to Microsoft's new OS.&quot;&lt;ref&gt;{{cite web
+|url=http://www.pcworld.com/article/id,128346-page,1/article.html
+|title=No Rush to Adopt Vista
+|accessdate=2007-05-22
+|publisher=IDG, quoted on PC World
+}}&lt;/ref&gt; Citing &quot;concerns over cost and compatibility&quot;, the [[United States Department of Transportation]] prohibited workers from upgrading to Vista.&lt;ref&gt;{{cite web
+|url=http://www.informationweek.com/news/showArticle.jhtml;jsessionid=CPID0SY4ST0CIQSNDLRCKHSCJUNN2JVN?articleID=197700789
+|title=Microsoft Hit By U.S. DOT Ban On Windows Vista, Explorer 7, and Office 2007
+|accessdate=2007-05-22
+|publisher=Information week [www.informationweek.com]
+}}&lt;/ref&gt; The University of Pittsburgh Medical Center, said the rollout (of Vista) is significantly behind schedule because &quot;several key programs still aren't compatible, including patient scheduling software.&quot;&lt;ref&gt;{{cite web
+|url=http://www.msnbc.msn.com/id/19747743/page/2/
+|title=Six months on, Vista users still griping (page 2 - The University of Pittsburgh Medical Center, a member of Microsoft's Vista Technical Adoption Program)
+|accessdate=2007-07-27
+|publisher=MS NBC [www.msnbc.com]
+}}&lt;/ref&gt;
+
+As of July 2007, there were over 2,000 tested applications&lt;ref name=&quot;vistablogwhite1&quot;&gt;{{cite news
+| url = http://windowsvistablog.com/blogs/windowsvista/pages/windows-vista-service-pack-1-beta-whitepaper.aspx
+| publisher = [[Microsoft]]
+| title = Windows Vista Service Pack 1 Beta White Paper
+| date = 2007-08-29
+| accessdate = 2007-08-29
+| page = 1
+}}&lt;/ref&gt; that were compatible with Vista. Microsoft has published a list of legacy applications that meet their &quot;Works with Windows Vista&quot; software standards&lt;ref&gt;{{cite web
+|url=https://winqual.microsoft.com/member/softwarelogo/workswithlist.aspx
+|title=Application List: Works with Windows Vista
+}}&lt;/ref&gt; as well as a list of applications that meet their more stringent &quot;Certified for Windows Vista&quot; standards.&lt;ref&gt;{{cite web
+|url=https://winqual.microsoft.com/member/softwarelogo/certifiedlist.aspx
+|title=Application List: Certified for Windows Vista
+}}&lt;/ref&gt; However, as of July 2007, software compatibility problems were still hindering adoption of Vista.&lt;ref&gt;{{cite web
+|url=http://www.msnbc.msn.com/id/19747743/
+|title=Six months on, Vista users still griping
+|accessdate=2007-07-27
+|publisher=MS NBC [www.msnbc.com]
+}}&lt;/ref&gt; Microsoft has released the Application Compatibility Toolkit 5.0 application for migrating Vista-incompatible applications, while [[Platform virtualization|virtualization]] solutions like [[VirtualBox]], [[Microsoft Virtual PC|Virtual PC 2007]] or those from [[VMware]] can also be used as a last resort to continue running Vista-incompatible applications under legacy versions of Windows.
+
+Microsoft also provides an Upgrade Advisor Tool (.NET must be installed and an Internet connection is required) which can be used on existing XP systems to flag driver and application compatibility issues before upgrading to Vista.&lt;ref&gt;{{cite web
+|url=http://www.microsoft.com/windows/products/windowsvista/buyorupgrade/upgradeadvisor.mspx
+|title=Windows Vista Upgrade Advisor
+}}&lt;/ref&gt;
+
+==Removal of announced features==
+Microsoft has also been criticized for removing some heavily discussed features such as [[Next-Generation Secure Computing Base]] in May 2004, [[WinFS]] in August 2004, [[Windows PowerShell]] in August 2005 (though this was released separately from Vista prior to Vista's release, and is included in Vista's successor, [[Windows 7]]), [[SecurID]] Support in May 2006, [[Data synchronization|PC-to-PC Synchronization]] in June 2006.&lt;ref name=&quot;YankedFromVista&quot;&gt;{{cite web
+|url=http://www.itnews.com.au/newsstory.aspx?CIaNID=34120&amp;CIPseq=0
+|title=What's been yanked from Vista, and when
+|date=2006-06-27
+|accessdate=2007-01-29
+|publisher=Techweb
+}}{{Dead link|date=August 2008}}&lt;/ref&gt; The initial &quot;three pillars&quot; in Vista were all radically altered to reach a release date.&lt;ref&gt;{{cite web|url= http://www.zdnetasia.com/news/software/0,39044164,39191794,00.htm|title= zdnetasia.com}}&lt;/ref&gt;
+
+==Pricing==
+Microsoft's international pricing of Vista has been criticized by many as too expensive.&lt;ref&gt;{{cite web
+|url=http://blogs.pcworld.com/staffblog/archives/002683.html
+|title=Windows Vista Versus XP Pricing
+|year=2006
+|month=September
+|accessdate=2008-20-31
+|publisher=PC World
+}}&lt;/ref&gt;&lt;ref&gt;{{cite web
+|url=http://www.itwire.com/content/view/5450/53/
+|title=Windows Vista Too Expensive Says Users
+|year=2006
+|month=August
+|accessdate=2008-20-31
+|publisher=IT Wire
+}}&lt;/ref&gt;&lt;ref&gt;{{cite web
+|url=http://www.nzherald.co.nz/technology/news/article.cfm?c_id=5&amp;objectid=10496007
+|title=Vista still looks expensive after cuts
+|year=2008
+|month=March
+|accessdate=2008-20-31
+|publisher=New Zealand Harald
+}}&lt;/ref&gt; The differences in pricing from one country to another vary significantly, especially considering that copies of Vista can be ordered and shipped worldwide from the United States; this could save between [[USD|$]]42 (â¬26) and $314 (â¬200). In many cases, the difference in price is significantly greater than was the case for Windows XP. In Malaysia, the pricing for Vista is at around RM799 ($244/â¬155).&lt;ref&gt;{{cite web
+|url=http://www.apcmag.com/5079/vistas_rip_off_australian_pricing
+|title=Is Vista's Australian pricing a rip-off?
+|date=2007-01-22
+|accessdate=2007-01-23
+|last=Warne
+|first=Dan
+|publisher=apcmag.com
+}}&lt;/ref&gt;
+At the current exchange rate, United Kingdom consumers could be paying almost double their United States counterparts for the same software.&lt;ref&gt;{{cite web
+|url=http://www.theinquirer.net/default.aspx?article=37140
+|title=Vista comes to rip-off Britain
+|date=2007-01-23
+|accessdate=2007-01-24
+|publisher=The Inquirer
+}}&lt;/ref&gt;
+
+{{Cquote|Microsoft has come under fire from British consumers about the price it is charging for Vista, the latest version of Windows.
+British (and French) customers will pay double the US price. The upgrade from Windows XP to Vista Home Basic will cost Â£100 (â¬126), while American users will pay only Â£51 ($100, â¬64).&lt;ref&gt;{{cite web
+|url=http://www.computeractive.co.uk/computeractive/news/2173895/vilification-vista-pricing
+|title=Microsoft vilified over price of Vista
+|year=2007
+|month=February
+|accessdate=2007-01-23
+|publisher=VNU Business Publications
+}}&lt;/ref&gt;|20px|20px|[[Computer Active]]}}
+
+Since the release of Windows Vista in January 2007 Microsoft has reduced the retail, and upgrade price point of Vista. Originally Vista Ultimate was priced at $399. and Home Premium Vista at $239. These prices have since been reduced to $319 and $199 respectively.&lt;ref&gt;{{cite web
+| url = http://arstechnica.com/microsoft/news/2009/06/windows-7-pricing-announced-cheaper-than-vista.ars
+| title = Windows 7 pricing announced: cheaper than Vista (Updated)
+| date= June 25, 2009
+| accessdate = October 4, 2009
+| last = Protalinski
+| first = Emil}}&lt;/ref&gt;
+
+==Software Protection Platform==
+Vista includes an enhanced set of anti-copying technologies, based on Windows XP's [[Windows Genuine Advantage]], called Software Protection Platform (SPP).&lt;ref&gt;{{cite web
+|title=The Skinny on Windows SPP and Reduced Functionality in Vista
+|author=Computerworld
+|url=http://www.computerworld.com/action/article.do?command=viewArticleBasic&amp;articleId=9004970
+}}&lt;/ref&gt; In the initial release of Windows Vista (without Service Pack 1), a major component of this was a reduced-functionality mode, which is entered when it is detected that the user has &quot;failed product activation&quot; or that their copy is &quot;identified as counterfeit or non-genuine.&quot;&lt;ref&gt;{{cite web
+|url=http://www.microsoft.com/presspass/features/2006/oct06/10-04SoftwareProtection.mspx
+|title=Microsoft's Software Protection Platform: Protecting Software and Customers from Counterfeiter
+|author=Microsoft PressPass
+}}&lt;/ref&gt; The technology was described in a Microsoft white paper as follows:
+{{Cquote|The default Web browser will be started and the user will be presented with an option to purchase a new product key. There is no start menu, no desktop icons, and the desktop background is changed to black. [...] After one hour, the system will log the user out without warning.&lt;ref&gt;{{cite web
+|url=http://www.microsoft.com/presspass/download/features/2006/10-03-06SoftwareProtectionWP.doc
+|title=White Paper: Microsoft's Software Protection Platform: Innovations for Windows Vista and Windows Server &quot;Longhorn&quot;
+|format=[[DOC (computing)|DOC]]
+|publisher=Microsoft PressPass
+|date=2006-10-03
+}}&lt;/ref&gt;}}
+
+This was criticised for being overly [[wikt:draconian|draconian]],&lt;ref&gt;{{cite web
+|url=http://www.computerworld.com/action/article.do?command=viewArticleBasic&amp;articleId=9004916&amp;pageNumber=15#spp
+|title=Hands On: A Hard Look at Windows Vista
+|page=15
+|date=2006-11-10
+|accessdate=2007-07-19
+}}&lt;/ref&gt;&lt;ref&gt;{{cite web
+|url=http://blogs.zdnet.com/Bott/?p=148
+|first=Ed
+|last=Bott
+|title=For Vista, WGA gets tougher
+|work=Ed Bott's Microsoft Report
+|date=2006-10-04
+|accessdate=2007-07-19
+}}&lt;/ref&gt; especially given an imperfect false-positive record on behalf of SPP's predecessor,&lt;ref&gt;{{cite web
+|url=http://blogs.zdnet.com/Bott/?p=150
+|author=Ed Bott
+|title=Another wave of WGA failures
+|work=Ed Bott's Microsoft Report
+|date=2006-10-04
+|accessdate=2007-07-19
+}}&lt;/ref&gt; and at least one temporary validation server outage which reportedly flagged many legitimate copies of Vista and XP as &quot;Non-Genuine&quot; when Windows Update would &quot;check in&quot; and fail the &quot;validation&quot; challenge.&lt;ref&gt;{{cite web
+|url=http://arstechnica.com/news.ars/post/20070825-windows-genuine-advantage-suffers-worldwide-outage-problems-galore.html
+|title=Windows Genuine Advantage suffers worldwide outage, problems galore (updated)
+|accessdate=2007-08-24
+}}&lt;/ref&gt;&lt;ref&gt;{{cite web
+|url=http://blogs.msdn.com/wga/archive/2007/08/27/update-on-validation-issues.aspx
+|title=Update on Validation Issues
+|accessdate=2007-07-28
+}}&lt;/ref&gt;
+
+SPP was significantly altered in [[Windows Vista Service Pack 1]]. Instead of the reduced functionality mode, an installation of Vista left unactivated for 30 days presents the user with a [[nag screen]] prompting them to activate the operating system when they log in, changes the desktop to a solid black colour every hour, and periodically warns the user about software counterfeiting with notification balloons. In addition, updates classified as optional are not available to unactivated copies of Vista.&lt;ref&gt;{{cite web
+|url=http://blogs.zdnet.com/hardware/?p=1253
+|title=ZDNET Hardware 2.0: SP1 brings with it a softer, gentler, naggier WGA
+|date=2008-09-02
+|accessdate=2008-07-22
+}}&lt;/ref&gt; Microsoft maintains a technical bulletin providing further details on product activation for Vista.&lt;ref&gt;{{cite web
+|url=http://www.microsoft.com/downloads/details.aspx?FamilyID=5cb10f03-27f6-461d-a3db-d440b4ced7f6&amp;DisplayLang=en
+|title=Product Activation for Windows Vista and Windows Server 2008
+|date=2007-11-06
+}}&lt;/ref&gt;
+
+==Sales figure inflation==
+According to industry sources, as of late July 2008 [[Windows XP]] is still outselling [[Windows Vista]], especially in business sales. According to [[HP]], [[Microsoft]] is miscounting and inflating Windows Vista sales figures.&lt;ref&gt;{{cite web|url=http://apcmag.com/xp_still_killing_vista_in_sales_volume_hp.htm |title=XP still killing Vista in sales volume: HP |publisher=Apcmag.com |date= |accessdate=2010-06-11}}&lt;/ref&gt;&lt;ref&gt;{{cite web|url=http://www.infopackets.com/news/business/microsoft/2008/20080801_windows_xp_still_outselling_windows_vista.htm |title=Windows XP Still Outselling Windows Vista / |publisher=Infopackets.com |date= |accessdate=2010-06-11}}&lt;/ref&gt; An HP manager is quoted in ''[[APC (magazine)|APC]]'':
+{{cquote|
+&quot;From the 30th of June [2008], we have no longer been able to ship a PC with a XP license&quot;, said Jane Bradburn, Market Development Manager, Commercial Notebooks for HP Australia.
+
+&quot;However, what we have been able to do with Microsoft is ship PCs with a Vista Business license but with XP pre-loaded. That is still the majority of business computers we are selling today.&quot;}}
+
+==Windows Ultimate Extras==
+Windows Vista Ultimate users can download exclusive [[Windows Ultimate Extras]]. These extras have been released much more slowly than expected, with only four available as of August 2009, almost three years after Vista was released, which has angered some users who paid extra mainly for the promised add-ons.&lt;ref&gt;{{cite web
+|url=http://windowsconnected.com/blogs/joshs_blog/archive/2007/06/13/ultimate-extras-where-are-you.aspx
+|title=Ultimate Extras, Where are you?
+|date=2007-07-04
+|accessdate=2007-07-04
+|first=Josh
+|publisher=windowsconnected.com
+}}&lt;/ref&gt;&lt;ref&gt;{{cite web
+|url=http://windowssecrets.com/comp/070628/
+|title=Microsoft evades promise of Vista Ultimate Extras
+|date=2007-07-04
+|accessdate=2007-07-04
+|last=Dunn
+|first=Josh
+|publisher=windowsconnected.com
+}}&lt;/ref&gt;&lt;ref&gt;{{cite web
+|url=http://www.istartedsomething.com/20070614/windows-ultimate-extras-sham
+|title=Windows Ultimate Extras is a sham - where's the responsibility?
+|author=Long Zheng
+}}&lt;/ref&gt;
+Barry Goffe, Director of Windows Vista Ultimate for Microsoft states that they were unexpectedly delayed on releasing several of the extras, but that &quot;Microsoft plans to ship a collection of additional Windows Ultimate Extras that it is confident will delight its passionate Windows Vista Ultimate customers.&quot;&lt;ref&gt;{{cite web
+|url=http://windowsultimate.com/blogs/announcements/archive/2007/09/25/windows-dreamscene-released.aspx
+|archiveurl=http://web.archive.org/web/20080211120503/http://windowsultimate.com/blogs/announcements/archive/2007/09/25/windows-dreamscene-released.aspx
+|archivedate=2008-02-11
+|title=Windows DreamScene released!
+|date=2007-09-25
+|accessdate=2007-10-05
+}}&lt;/ref&gt;
+
+==See also==
+* [[Criticism of Microsoft]]
+* [[Criticism of Microsoft Windows]]
+* [[Criticism of Windows XP]]
+* [[Mojave experiment]]
+
+==Footnotes==
+{{Reflist|colwidth=35em}}
+
+==External links==
+* [http://badvista.fsf.org/ Bad Vista FSF campaign]
+{{Microsoft}}
+
+{{DEFAULTSORT:Criticism of Windows Vista}}
+[[Category:Microsoft criticisms and controversies]]
+[[Category:Operating system criticisms|Windows Vista]]
+[[Category:Windows Vista]]
+
+[[de:Microsoft Windows Vista#Kritik]]
+[[es:Anexo:CrÃ­ticas a Windows Vista]]
+[[ms:Kritikan Windows Vista]]
+[[nl:Kritiek op Windows Vista]]
+[[fi:Windows Vistan kritiikki]]
+[[tr:Windows Vista'ya yÃ¶nelik eleÅtiriler]]
+[[zh:å°Windows Vistaçæ¹è©]]</rev></revisions></page></pages></query></api>

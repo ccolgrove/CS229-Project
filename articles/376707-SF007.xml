@@ -1,0 +1,326 @@
+<?xml version="1.0"?><api><query><pages><page pageid="376707" ns="0" title="R (programming language)"><revisions><rev xml:space="preserve">{{Infobox programming language
+| name                   = R
+| logo                   = [[Image:Rlogo.png|200px]]
+| paradigm               = [[Multi-paradigm programming language|multi-paradigm]]: [[Object-oriented programming|object-oriented]], [[Imperative programming|imperative]], [[Functional programming|functional]], [[Procedural programming|procedural]], [[Reflective programming|reflective]]
+| year                   = 1993&lt;ref&gt;[http://cran.r-project.org/doc/html/interface98-paper/paper_2.html A Brief History] R: Past and Future History, Ross Ihaka, Statistics Department, The University of Auckland, Auckland, New Zealand, available from the CRAN website&lt;/ref&gt;
+| designer               = [[Ross Ihaka]] and [[Robert Gentleman (statistician)|Robert Gentleman]]
+| developer              = R Development Core Team
+| latest_release_version = 2.14.0
+| latest_release_date    = {{start date and age|2011|10|31}}
+| latest_test_version    = Through [[Subversion (software)|Subversion]]
+| latest_test_date       =
+| typing                 = [[dynamic typing|Dynamic]]
+| implementations        =
+| dialects               =
+| influenced_by          = [[S (programming language)|S]], [[Scheme (programming language)|Scheme]]
+| influenced             =
+| operating_system       = [[Cross-platform]]
+| license                = [[GNU General Public License]]
+| website                = [http://www.r-project.org www.r-project.org]
+| wikibooks              = R Programming
+}}
+'''R''' is a [[programming language]] and software environment for [[statistics|statistical]] computing and graphics. The R language is widely used among statisticians for developing statistical software,&lt;ref&gt;{{ cite journal | author = Fox, John and Andersen, Robert | title = Using the R Statistical Computing Environment to Teach Social Statistics Courses | publisher = Department of Sociology, McMaster University | date = January 2005 | url = http://www.unt.edu/rss/Teaching-with-R.pdf | format = [[PDF]] | accessdate = 2006-08-03 }}&lt;/ref&gt;&lt;ref name=&quot;nytimes09&quot;&gt;{{cite news | url=http://www.nytimes.com/2009/01/07/technology/business-computing/07program.html |title=Data Analysts Captivated by R's Power | date=2009-01-06 | accessdate=2009-04-28|last=Vance| first=Ashlee |work=[[New York Times]]| quote=R is also the name of a popular programming language used by a growing number of data analysts inside corporations and academia. It is becoming their lingua franca...}}&lt;/ref&gt; and R is widely used for statistical software development and data analysis.&lt;ref name=nytimes09/&gt;
+
+R is an implementation of the [[S (programming language)|S programming language]] combined with [[lexical scoping]] semantics inspired by [[Scheme (programming language)|Scheme]]. S was created by [[John Chambers (programmer)|John Chambers]] while at [[Bell Laboratories|Bell Labs]]. R was created by [[Ross Ihaka]] and [[Robert Gentleman (statistician)|Robert Gentleman]]&lt;ref&gt;{{cite web | url=http://myprofile.cos.com/rgentleman | title=Robert Gentleman's home page | accessdate=2009-07-20}}&lt;/ref&gt; at the [[University of Auckland]], [[New Zealand]], and now, R is developed by the ''R Development Core Team'', of which Chambers is a member. R is named partly after the first names of the first two R authors (Robert Gentleman and Ross Ihaka), and partly as a play on the name of [[S (programming language)|S]].&lt;ref&gt;{{cite book |title=The R FAQ: Why is R named R? |author=Kurt Hornik |isbn=3-900051-08-9 |url=http://cran.r-project.org/doc/FAQ/R-FAQ.html#Why-is-R-named-R_003f |accessdate=2008-01-29 }}&lt;/ref&gt; 
+
+R is part of the [[GNU project]].&lt;ref&gt;{{cite web | url=http://directory.fsf.org/project/gnur/ | title=Free Software Foundation (FSF) Free Software Directory: GNU R | accessdate=2010-07-05}}&lt;/ref&gt;&lt;ref&gt;{{cite web | url=http://www.r-project.org/about.html | title=What is R? | accessdate=2009-04-28}}&lt;/ref&gt; Its [[source code]] is freely available under the [[GNU General Public License]], and pre-compiled binary versions are provided for various [[operating system]]s. R uses a [[command line interface]]; however, several [[graphical user interface]]s are available for use with R.
+
+== Statistical features ==
+&lt;!-- Deleted image removed: [[Image:R gui on os x.png|thumb|right|The R [[gui]] running the general linear model demo on Mac OS X.]] --&gt;
+R provides a wide variety of [[statistical]] and [[graphical]] techniques, including [[linear]] and [[nonlinear]] modeling, classical statistical tests, [[time-series analysis]], classification, clustering, and others. R is easily extensible through functions and extensions, and the R community is noted for its active contributions in terms of packages. There are some important differences, but much code written for S runs unaltered. Many of R's standard functions are written in R itself, which makes it easy for users to follow the algorithmic choices made. For computationally intensive tasks, [[C (programming language)|C]], [[C++]], and [[Fortran]] code can be linked and called at run time. Advanced users can write C or [[Java (programming language)|Java]]&lt;ref&gt;{{cite  |title=Calling R from Java |author=Duncan Temple Lang |url=http://www.omegahat.org/RSJava/RFromJava.pdf |accessdate=2010-07-05 }}&lt;/ref&gt; code to manipulate R objects directly.
+
+R is highly extensible through the use of user-submitted packages for specific functions or specific areas of study. Due to its S heritage, R has stronger [[object-oriented programming]] facilities than most statistical computing languages. Extending R is also eased by its permissive [[lexical scoping]] rules.&lt;ref&gt;{{cite journal  | last = Jackman | first = Simon | title = R For the Political Methodologist | journal = The Political Methodologist | volume = 11  | issue = 1 | pages = 20â22 | date = Spring 2003 | publisher = Political Methodology Section, [[American Political Science Association]] | url = http://polmeth.wustl.edu/tpm/tpm_v11_n2.pdf | format = [[PDF]] | accessdate = 2006-08-03 |archiveurl = http://web.archive.org/web/20060721143309/http://polmeth.wustl.edu/tpm/tpm_v11_n2.pdf |archivedate = 2006-07-21}}&lt;/ref&gt;
+
+According to [[Rexer's Annual Data Miner Survey]] in 2010, R has become the [[data mining]] tool used by more data miners (43%) than any other.&lt;ref&gt;http://www.rexeranalytics.com/Data-Miner-Survey-Results-2010.html&lt;/ref&gt;
+
+Another strength of R is static graphics, which can produce publication-quality graphs, including mathematical symbols.  Dynamic and interactive graphics are available through additional packages such as [[RGL]].&lt;ref&gt;{{cite web 
+| url=http://cran.r-project.org/web/views/Graphics.html 
+| title=CRAN Task View: Graphic Displays &amp; Dynamic Graphics &amp; Graphic Devices &amp; Visualization 
+| publisher=The Comprehensive R Archive Network  
+| accessdate=2011-08-01 }}&lt;/ref&gt;
+
+R has its own [[LaTeX]]-like documentation format, which is used to supply comprehensive documentation, both on-line in a number of formats and in hard copy.
+
+== Programming features ==
+R is an interpreted language typically used through a [[command line interpreter]]. If one types &quot;2+2&quot; at the command prompt and presses enter, the computer replies with &quot;4&quot;.
+
+&lt;source lang = &quot;rsplus&quot;&gt;
+&gt; 2+2
+[1] 4
+&lt;/source&gt;
+
+Like many other languages, R supports [[Matrix (mathematics)|matrix arithmetic]]. R's [[data structure]]s include [[Scalar (computing)|scalars]], [[Column vector|vectors]], [[Matrix (mathematics)|matrices]], data frames (similar to [[Table (database)|tables]] in a [[relational database]]) and [[List (computing)|lists]].&lt;ref&gt;{{cite book |last=Dalgaard |first=Peter |authorlink= |coauthors=  |title=Introductory Statistics with R |year=2002 |publisher=Springer-Verlag |location=New York, Berlin, Heidelberg |isbn=0387954759X pages=10â18, 34 }}&lt;/ref&gt; The R object system has been extended by package authors to define objects for [[Regression analysis|regression models]], [[time-series]] and [[Spatial analysis|geo-spatial coordinates]].
+
+R supports [[procedural programming]] with [[Function (computer science)|functions]] and, for some functions, [[object-oriented programming]] with [[generic function]]s. A generic function acts differently depending on the type of arguments it is passed. In other words the generic function [[Dynamic dispatch|dispatches]] the function ([[Method (computer science)|method]]) specific to that type of [[Object (computer science)|object]]. For example, R has a [[Generic function|generic]] print() function that can print almost every type of [[Object (computer science)|object]] in R with a simple &quot;print(objectname)&quot; syntax.
+
+Although R is mostly used by statisticians and other practitioners requiring an environment for statistical computation and software development, it can also be used as a [[numerical linear algebra|general matrix calculation]] toolbox with performance benchmarks comparable to [[GNU Octave]] or [[MATLAB]].&lt;ref&gt;{{cite web
+ | url=http://www.sciviews.org/benchmark
+ | publisher=SciView
+ | title=Speed comparison of various number crunching packages (version 2)
+ | accessdate=2007-11-03
+}}
+&lt;/ref&gt;
+
+== Examples ==
+=== Example 1 ===
+The following examples illustrate the basic syntax of the language and use of the command-line interface.
+
+In R and S, the [[Assignment (computer science)|assignment operator]] is an arrow made from two characters &quot;&lt;-&quot;.
+&lt;source lang=&quot;rsplus&quot;&gt;
+&gt; x &lt;- c(1,2,3,4,5,6)   # Create ordered collection (vector)
+&gt; y &lt;- x^2              # Square the elements of x
+&gt; print(y)              # print (vector) y
+[1]  1  4  9 16 25 36
+&gt; mean(y)               # Calculate average (arithmetic mean) of (vector) y; result is scalar
+[1] 15.16667
+&gt; var(y)                # Calculate sample variance
+[1] 178.9667
+&gt; lm_1 &lt;- lm(y ~ x)     # Fit a linear regression model &quot;y = f(x)&quot; or &quot;y = B0 + (B1 * x)&quot; 
+                        # store the results as lm_1
+&gt; print(lm_1)           # Print the model from the (linear model object) lm_1
+
+Call:
+lm(formula = y ~ x)
+
+Coefficients:
+(Intercept)            x  
+     -9.333        7.000 
+
+&gt; summary(lm_1)         # Compute and print statistics for the fit of the (linear model object) lm_1
+
+Call:
+lm(formula = y ~ x)
+
+Residuals:
+1       2       3       4       5       6
+3.3333 -0.6667 -2.6667 -2.6667 -0.6667  3.3333
+
+Coefficients:
+Estimate Std. Error t value Pr(&gt;|t|)
+(Intercept)  -9.3333     2.8441  -3.282 0.030453 *
+x             7.0000     0.7303   9.585 0.000662 ***
+---
+Signif. codes:  0 â***â 0.001 â**â 0.01 â*â 0.05 â.â 0.1 â â 1
+
+Residual standard error: 3.055 on 4 degrees of freedom
+Multiple R-squared: 0.9583,	Adjusted R-squared: 0.9478
+F-statistic: 91.88 on 1 and 4 DF,  p-value: 0.000662
+
+&gt; par(mfrow=c(2, 2))    # Request 2x2 plot layout
+&gt; plot(lm_1)       # Diagnostic plot of regression model
+&lt;/source&gt;
+
+
+[[File:Plots from lm example.svg|Diagnostic graphs produced by ''plot.lm()'' function. Features include mathematical notation in axis labels, as at lower left.]]
+
+=== Example 2 ===
+
+Short R code calculating [[w:Mandelbrot set|Mandelbrot set]] through the first 20 iterations of equation z = zÂ² + c plotted for different complex constants ''c''.  This example demonstrates:
+* use of community developed external libraries (called packages), in this case caTools package
+* handling of [[complex numbers]] 
+* multidimensional arrays of numbers used as basic data type, see variables C, Z and X
+&lt;source lang=&quot;rsplus&quot;&gt;
+library(caTools)         # external package providing write.gif function
+jet.colors &lt;- colorRampPalette(c(&quot;#00007F&quot;, &quot;blue&quot;, &quot;#007FFF&quot;, &quot;cyan&quot;, &quot;#7FFF7F&quot;, 
+                                 &quot;yellow&quot;, &quot;#FF7F00&quot;, &quot;red&quot;, &quot;#7F0000&quot;)) 
+m &lt;- 1200                # define size
+C &lt;- complex( real=rep(seq(-1.8,0.6, length.out=m), each=m ), 
+              imag=rep(seq(-1.2,1.2, length.out=m), m ) ) 
+C &lt;- matrix(C,m,m)       # reshape as square matrix of complex numbers
+Z &lt;- 0                   # initialize Z to zero
+X &lt;- array(0, c(m,m,20)) # initialize output 3D array
+for (k in 1:20) {        # loop with 20 iterations
+  Z &lt;- Z^2+C             # the central difference equation  
+  X[,,k] &lt;- exp(-abs(Z)) # capture results
+} 
+write.gif(X, &quot;Mandelbrot.gif&quot;, col=jet.colors, delay=100) 
+&lt;/source&gt;
+
+
+[[File:Mandelbrot Creation Animation.gif|400px|&quot;Mandelbrot.gif&quot; - Graphics created in R with 14 lines of code in Example 2]]
+
+== Packages ==
+The capabilities of R are extended through user-created ''packages'', which allow specialized statistical techniques, graphical devices, import/export capabilities, reporting tools, etc. These packages are developed primarily in R, and sometimes in [[Java (programming language)|Java]], [[C (programming language)|C]] and [[Fortran]]. A core set of packages are included with the installation of R, with more than 4300 ({{as of|2011|3|lc=on}}) available at the [http://cran.r-project.org/ Comprehensive R Archive Network (CRAN)], [[Bioconductor]], and other repositories.  
+&lt;ref name=&quot;bare_url&quot;&gt;{{cite web 
+| url = http://sites.google.com/site/r4statistics/popularity
+| author= Robert A. Muenchen
+| title = The Popularity of Data Analysis Software
+}}&lt;/ref&gt; 
+
+The  [http://cran.r-project.org/web/views/  &quot;Task Views&quot;] page (subject list) on the CRAN website lists the wide range of applications (Finance, Genetics, Machine Learning, Medical Imaging, Social Sciences and Spatial statistics) to which R has been applied and for which packages are available.
+
+Other R package resources include Crantastic, a community site for rating and reviewing all CRAN packages, and also R-Forge, a central platform for the collaborative development of R packages, R-related software, and projects. It hosts many unpublished, beta packages, and development versions of CRAN packages.
+
+The [[Bioconductor]] project provides R packages for the analysis of genomic data, such as [[Affymetrix]] and [[Complementary DNA|cDNA]] [[microarray]] object-oriented data handling and analysis tools, and has started to provide tools for analysis of data from next-generation [[high-throughput sequencing]] methods.
+
+Reproducible research and automated report generation can be accomplished with packages such as Sweave and odfWeave that support 
+execution of R code embedded within [[LaTeX]], [[OpenDocument|OpenDocument format]] and other markups&lt;ref&gt;http://cran.r-project.org/web/views/ReproducibleResearch.html&lt;/ref&gt;.
+
+== Milestones ==
+&lt;!-- List notable changes only; ignore service/bug-fig releases --&gt;
+
+The full list of changes is maintained in the [http://cran.r-project.org/src/base/NEWS NEWS] file.  Some highlights are listed below.
+
+* Version 0.16&amp;nbsp;â This is the last [[Software release life cycle#Alpha|alpha]] version developed primarily by Ihaka and Gentleman. Much of the basic functionality from the &quot;White Book&quot; (see [[S (programming language)#History|S history]]) was implemented. The mailing lists commenced on April 1, 1997.
+* Version 0.49&amp;nbsp;â April 23, 1997&amp;nbsp;â This is the oldest available [[Source code|source]] release, and compiles on a limited number of Unix-like platforms. CRAN is started on this date, with 3 mirrors that initially hosted 12 packages. Alpha versions of R for Microsoft Windows and [[Mac OS]] are made available shortly after this version.
+* Version 0.60&amp;nbsp;â December 5, 1997&amp;nbsp;â R becomes an official part of the [[GNU Project]]. The code is hosted and maintained on [[Concurrent Versions System|CVS]].
+* Version 1.0.0&amp;nbsp;â February 29, 2000&amp;nbsp;â Considered by its developers stable enough for production use.&lt;ref&gt;{{Cite web|url=https://stat.ethz.ch/pipermail/r-announce/2000/000127.html|title=R-1.0.0 is released|author=Peter Dalgaard|accessdate=2009-06-06}}&lt;/ref&gt;
+* Version 1.4.0&amp;nbsp;â S4 methods are introduced and the first version for [[Mac OS X]] is made available soon after.
+* Version 2.0.0&amp;nbsp;â October 4, 2004&amp;nbsp;â Introduced [[lazy loading]], which enables fast loading of data with minimal expense of system memory.
+* Version 2.1.0&amp;nbsp;â Support for [[UTF-8]] encoding, and the beginnings of [[internationalization and localization]] for different languages.
+* Version 2.11.0&amp;nbsp;â April 22, 2010&amp;nbsp;â Support for Windows 64 bit systems.
+* Version 2.13.0&amp;nbsp;â April 14, 2011&amp;nbsp;â Adding a new compiler function that allows speeding up functions by converting them to byte-code.
+* Version 2.14.0&amp;nbsp;- October 31, 2011&amp;nbsp;- Added mandatory namespaces for packages. Added a new parallel package.
+
+== Interfaces ==
+
+=== Graphical user interfaces ===
+* RGUI â comes with the pre-compiled version of R
+* [[Java Gui for R]] â cross-platform stand-alone R terminal and editor based on [[Java (programming language)|Java]] (also known as JGR)
+* [http://www.deducer.org/pmwiki/pmwiki.php?n=Main.DeducerManual Deducer] - GUI for menu driven data analysis (similar to [[SPSS]]/[[JMP]]/[[Minitab]]). 
+* [[Rattle GUI]] â cross-platform GUI based on RGtk2 and specifically designed for [[data mining]]
+* [[R Commander]] â cross-platform menu-driven GUI based on [[tcl]]tk (several plug-ins to Rcmdr are also available)
+* [[RapidMiner]] &lt;ref&gt;[http://rapid-i.com/content/view/219/1/ R Extension Presented on RCOMM 2010]&lt;/ref&gt; &lt;ref&gt;{{ cite web | url=http://www.kdnuggets.com/polls/2010/data-mining-analytics-tools.html
+ | title= Data Mining / Analytic Tools Used Poll (May 2010)
+}}&lt;/ref&gt;
+* [[RExcel]] â using R and Rcmdr from within [[Microsoft Excel]]
+* [http://www.red-r.org Red-R] â visual analysis interface that uses R for statistics
+* [[RKWard]] â extensible GUI and IDE for R
+* [http://www.ef-prime.com/products/ranalyticflow_en/ R AnalyticFlow] - analysis flowcharts with R (freeware)
+* [http://www.rstudio.org/ RStudio] - cross-platform open source IDE (which can also be run on a remote linux server)
+* [[Weka (machine learning)|Weka]]&lt;ref&gt;{{cite web | url=http://CRAN.R-project.org/package=RWeka | publisher=Kurt Hornik, Achim Zeileis, Torsten Hothorn and Christian Buchta | title=RWeka: An R Interface to Weka. R package version 0.3-17 | accessdate=2009}}&lt;/ref&gt; allows for the use of the data mining capabilities in Weka and statistical analysis in R.
+
+=== Editors and IDEs ===
+
+[[Text editor]]s and [[Integrated development environment]]s (IDEs) with some support for R include:
+[[Bluefish (text editor)|Bluefish]],&lt;ref&gt;''Customizable syntax highlighting based on Perl Compatible regular expressions, with subpattern support and default patterns for..R'', tenth bullet point,
+[http://bluefish.openoffice.nl/features.html Bluefish Features], Bluefish website, retrieved 9 July 2008.&lt;/ref&gt;
+[[Crimson Editor]], RStudio,&lt;ref&gt;{{cite web 
+ | url=http://www.rstudio.org
+ | title=RStudio: new IDE for R
+ | author=JJ Alaire and colleages
+ | accessdate=2011-08-04
+}}
+&lt;/ref&gt;
+[[ConTEXT]],
+[[Eclipse (software)|Eclipse]],&lt;ref&gt;{{cite web
+ | url=http://www.walware.de/goto/statet
+ | title=StatET: Eclipse based IDE for R
+ | author=Stephan Wahlbrink
+ | accessdate=2009-09-26
+}}
+&lt;/ref&gt;
+[[Emacs]] ([[Emacs Speaks Statistics]]),
+[[Vim (text editor)|Vim]], 
+Tinn-R,&lt;ref&gt;{{cite web
+ | url=http://sourceforge.net/projects/tinn-r/
+ | title=Tinn-R Editor - GUI for R Language and Environment
+ | publisher=Tinn-R Team
+ | accessdate=2010-11-07}}
+&lt;/ref&gt;
+[[Geany]],
+[[jEdit]],&lt;ref&gt;{{cite web
+ | url=http://community.jedit.org/?q=node/view/2339
+ | title=R syntax
+ | author=Jose Claudio Faria
+ | accessdate=2007-11-03
+}}
+&lt;/ref&gt;
+[[Kate (text editor)|Kate]],&lt;ref&gt;{{cite web
+ | url=http://kate-editor.org/downloads/syntax_highlighting
+ | title=Syntax Highlighting
+ | publisher=Kate Development Team
+ | accessdate=2008-07-09
+| archiveurl = http://web.archive.org/web/20080707062903/http://www.kate-editor.org/downloads/syntax_highlighting &lt;!-- Bot retrieved archive --&gt; |archivedate = 2008-07-07}}
+&lt;/ref&gt;
+R Productivity Environment (part of Revolution R Enterprise),&lt;ref&gt;{{cite web
+ | url=http://www.revolutionanalytics.com/products/enterprise-productivity.php
+ | title=R Productivity Environment
+ | publisher=Revolution Analytics
+ | accessdate=2011-09-03
+}}
+&lt;/ref&gt;
+[[TextMate]],
+[[gedit]], [[SciTE]], [[WinEdt]] (R Package RWinEdt), [[notepad++]],&lt;ref&gt;{{cite web |url=http://sourceforge.net/projects/npptor/ |title=NppToR: R in Notepad++ |publisher=sourceforge.net |accessdate=2010-07-11 |unused_data=Download NppToR: R in Notepad++ software for free at SourceForge.net }}&lt;/ref&gt;.
+
+=== Scripting languages ===
+R functionality has been made accessible from several scripting languages such as [[Python (programming language)|Python]] (by the RPy&lt;ref&gt;[http://rpy.sourceforge.net RPy home page&lt;!-- Bot generated title --&gt;]&lt;/ref&gt; interface package), [[Perl]] (by the Statistics::R&lt;ref&gt;[http://search.cpan.org/~gmpassos/Statistics-R-0.02/lib/Statistics/R.pm Statistics::R page on [[CPAN]]]&lt;/ref&gt; module) and [[Ruby_(programming_language)|Ruby]] (with the rsruby&lt;ref&gt;[http://rubyforge.org/projects/rsruby/ RSRuby rubyforge project]&lt;/ref&gt; [[rubygem]]).
+Scripting in R itself is possible via littler&lt;ref&gt;[http://dirk.eddelbuettel.com/code/littler.html littler web site]&lt;/ref&gt; as well as via Rscript.
+
+== Comparison with SAS, SPSS and Stata ==
+
+The general consensus is that R compares well with other popular statistical packages, such as [[SAS_(software)|SAS]], [[SPSS]] and [[Stata]]&lt;ref&gt;[http://www.ats.ucla.edu/stat/technicalreports/Number1/R_relative_statpack.pdf Comparison of R to SAS, Stata and SPSS]&lt;/ref&gt;. In January 2009, the ''[[New York Times]]'' ran an article about R gaining acceptance among data analysts and presenting a potential threat for the market share occupied by commercial statistical packages, such as SAS.&lt;ref&gt;{{cite news| url=http://www.nytimes.com/2009/01/07/technology/business-computing/07program.html | work=The New York Times | first=Ashlee | last=Vance | title=Data Analysts Captivated by R's Power | date=2009-01-07}}&lt;/ref&gt;
+
+== Commercial support for R ==
+In 2007, [[Revolution Analytics]] was founded to provide commercial support for Revolution R, its distribution of R which also includes components developed by the company. Major additional components include: ''ParallelR''&lt;ref&gt;http://www.revolutionanalytics.com/news-events/news-room/2008/enhanced-statistical-analyses-with-parallelr.php&lt;/ref&gt;, the ''R Productivity Environment'' IDE &lt;ref&gt;http://blog.revolutionanalytics.com/2009/11/rpe-the-r-productivity-environment-for-windows.html&lt;/ref&gt;, ''RevoScaleR'' (for [[big data]] analysis) &lt;ref&gt;http://www.revolutionanalytics.com/news-events/news-room/2010/revolution-analytics-brings-big-data-analysis-to-R.php&lt;/ref&gt;, ''RevoDeployR''&lt;ref&gt;http://blog.revolutionanalytics.com/2010/09/introducing-revodeployr-web-services-for-r.html&lt;/ref&gt;, web services framework and the ability for reading and writing data in the SAS file format.&lt;ref&gt;[http://www.theregister.co.uk/2011/02/07/revolution_r_sas_challenge/ 'Red Hat for stats' goes toe-to-toe with SAS]&lt;/ref&gt;
+
+In Oct 2011, [[Oracle Corporation|Oracle]] announced the ''Big Data Appliance'', which integrates R, [[Apache Hadoop]], [[Oracle Enterprise Linux]], a [[NoSQL]] database with the [[Exadata]] hardware.&lt;ref&gt;[http://www.oracle.com/us/corporate/press/512001 Oracle Unveils the Oracle Big Data Appliance]&lt;/ref&gt; &lt;ref&gt;[http://www.theregister.co.uk/2011/10/03/oracle_big_data_appliance/ Oracle rolls its own NoSQL and Hadoop]&lt;/ref&gt;
+
+Other major commercial software systems supporting connections to R include: [[Spotfire]]&lt;ref&gt;[http://spotfire.tibco.com/community/blogs/stn/archive/2010/03/08/spotfire-integration-with-s-and-r.aspx Spotfire Integration with S+ and R]&lt;/ref&gt;, [[SPSS]]&lt;ref&gt;http://www.unt.edu/benchmarks/archives/2007/october07/rss.htm&lt;/ref&gt;, [[STATISTICA]]&lt;ref&gt;http://www.statsoft.com/solutions/r-language-platform/&lt;/ref&gt;, [[Symphony (software)|Platform Symphony]] &lt;ref&gt;[http://platformcomputing.blogspot.com/2011/03/r-integrated-with-symphony.html Râ integrated with Symphony]&lt;/ref&gt;,
+[[SAS]]&lt;ref&gt;[http://support.sas.com/documentation/cdl/en/imlsstat/63545/HTML/default/viewer.htm#statr_toc.htm Calling Functions in the R Language (SAS/IML)]&lt;/ref&gt;
+
+== See also ==
+{{Portal|Free software}}
+
+* [[List of statistical packages]]
+* [[Comparison of statistical packages]]
+* [[List of numerical analysis software]]
+* [[Comparison of numerical analysis software]]
+* [[Free statistical software]]
+* [[Sweave]]
+* [[ggplot2]]
+
+== References ==
+{{Reflist|30em}}
+
+== External links ==
+{{Commons cat|R (programming language)}}
+{{sisterlinks|b=R Programming|v=How to use R|commons=Category:R (programming language)|wikt=no|n=no|s=no|q=no}}
+* {{official website|www.r-project.org}} of the R project
+* The [http://rwiki.sciviews.org/doku.php R wiki], a community wiki for R
+* [http://cran.ma.imperial.ac.uk/other-docs.html R books], has extensive list (with brief comments) of R-related books
+* [http://www.oga-lab.net/RGM2/index.php The R Graphical Manual], a collection of R graphics from all R packages, and an index to all functions in all R packages
+* [http://rseek.org R seek], a custom frontend to Google search engine, to assist in finding results related to the R language
+{{GNU}}
+{{Numerical analysis software}}
+{{Statistical software}}
+
+{{DEFAULTSORT:R (Programming Language)}}
+[[Category:R (programming language)|*]]
+[[Category:Free plotting software]]
+[[Category:Free cross-platform software]]
+[[Category:Functional languages]]
+[[Category:Data-centric programming languages]]
+[[Category:Statistical software]]
+
+[[ar:ÙØºØ© Ø§ÙØ¨Ø±ÙØ¬Ø© Ø¢Ø±]]
+[[ca:R (llenguatge de programaciÃ³)]]
+[[cs:R (programovacÃ­ jazyk)]]
+[[da:R (statistikprogram)]]
+[[de:R (Programmiersprache)]]
+[[et:R (programmeerimiskeel)]]
+[[es:R (lenguaje de programaciÃ³n)]]
+[[eu:R (programazio-lengoaia)]]
+[[fa:Ø¢Ø± (Ø²Ø¨Ø§Ù Ø¨Ø±ÙØ§ÙÙâÙÙÛØ³Û)]]
+[[fr:GNU R]]
+[[gl:Linguaxe de programaciÃ³n R]]
+[[ko:R (íë¡ê·¸ëë° ì¸ì´)]]
+[[hi:à¤à¤° (à¤ªà¥à¤°à¥à¤à¥à¤°à¤¾à¤®à¤¨ à¤­à¤¾à¤·à¤¾)]]
+[[id:R (bahasa pemrograman)]]
+[[it:R (software)]]
+[[he:R (×©×¤×ª ×ª×× ××ª)]]
+[[hu:R (programozÃ¡si nyelv)]]
+[[nl:R (softwarepakket)]]
+[[ja:Rè¨èª]]
+[[no:R (programmeringssprÃ¥k)]]
+[[pl:R (jÄzyk programowania)]]
+[[pt:R (linguagem de programaÃ§Ã£o)]]
+[[ru:R (ÑÐ·ÑÐº Ð¿ÑÐ¾Ð³ÑÐ°Ð¼Ð¼Ð¸ÑÐ¾Ð²Ð°Ð½Ð¸Ñ)]]
+[[sr:R (Ð¿ÑÐ¾Ð³ÑÐ°Ð¼ÑÐºÐ¸ ÑÐµÐ·Ð¸Ðº)]]
+[[fi:R (ohjelmisto)]]
+[[sv:R (programsprÃ¥k)]]
+[[ta:à®à®°à¯ (à®®à¯à®©à¯à®ªà¯à®°à¯à®³à¯)]]
+[[tr:R (programlama dili)]]
+[[uk:R (Ð¼Ð¾Ð²Ð° Ð¿ÑÐ¾Ð³ÑÐ°Ð¼ÑÐ²Ð°Ð½Ð½Ñ)]]
+[[vi:R (ngÃ´n ngá»¯ láº­p trÃ¬nh)]]
+[[zh:Rè¯­è¨]]</rev></revisions></page></pages></query></api>

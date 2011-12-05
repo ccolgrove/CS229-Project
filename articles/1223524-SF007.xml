@@ -1,0 +1,128 @@
+<?xml version="1.0"?><api><query><redirects><r from="Software Update Services" to="Windows Server Update Services" tofragment="History" /></redirects><pages><page pageid="2681951" ns="0" title="Windows Server Update Services"><revisions><rev xml:space="preserve">{{Refimprove|date=May 2011}}
+{{Infobox software
+| name                   = WSUS
+| title                  = Windows Server Update Services (WSUS)
+| logo                   = &lt;!-- [[File: ]] --&gt;
+| screenshot             = [[File:Microsoft WSUS Admin 2.png|300px]]
+| caption                = WSUS can display precise information about which updates each client needs
+| collapsible            = 
+| author                 = 
+| developer              = [[Microsoft Corporation]]
+| released               = &lt;!-- {{Start date|YYYY|MM|DD|df=yes/no}} --&gt;
+| discontinued           = 
+| latest release version = 3.0 SP2
+| latest release date    = {{Start date and age|2009|08|25|df=no}}&lt;ref name=download-3.0sp2 /&gt;
+| operating system       = [[Windows Server 2008 R2]]&lt;br /&gt;&lt;!--
+                        --&gt;[[Windows Server 2008]] SP1 or later&lt;br /&gt;&lt;!--
+                        --&gt;[[Windows Server 2003]] SP2 or later&lt;br /&gt;&lt;!--
+                        --&gt;[[Windows Small Business Server]] 2008&lt;br /&gt;&lt;!--
+                        --&gt;Windows Small Business Server 2003&lt;ref name=download-3.0sp2 /&gt;
+| platform               = '''Hardware:''' [[IA-32]] and [[x86-64]]&lt;br /&gt;'''Software:''' [[.NET Framework 2.0]] and [[Microsoft Management Console]]
+| size                   = 80 [[Megabyte|MB]] (almost)&lt;ref name=download-3.0sp2 /&gt;
+| language               = English&lt;ref name=download-3.0sp2 /&gt;
+| status                 = 
+| genre                  = [[Remote administration]]
+| license                = [[Freeware]]
+| website                = {{URL|www.microsoft.com/wsus}}
+}}
+'''Windows Server Update Services''' ('''WSUS'''), previously known as '''Software Update Services''' ('''SUS'''), is a [[computer program]] developed by [[Microsoft Corporation]] that enables administrators to manage the distribution of [[update]]s and [[hotfix]]es released for Microsoft products to computers in a corporate environment. WSUS downloads these updates from the [[Microsoft Update]] website and then distributes them to computers on a network. WSUS runs on [[Windows Server]] and is free to licensed Microsoft customers.
+
+==History==
+The first version of WSUS was known as Software Update Services (SUS).&lt;ref&gt;{{cite book
+  |last1=Foust
+  |first1=Mark
+  |last2=Chellis
+  |first2=James
+  |last3=Sheltz
+  |first3=Matthew
+  |last4=Sage London
+  |first4=Suzan
+  |title=MCSE Windows Server 2003 network infrastructure planning and maintenance study guide
+  |year=2006
+  |publisher=[[John Wiley and Sons]]
+  |location=[[Hoboken, New Jersey]]
+  |isbn=9780782144505
+  |accessdate=4 May 2011
+  |page=532
+  |chapter=Chapter 7: Planning Server-Level Security}}&lt;/ref&gt; It only delivered hotfixes and patches for Microsoft operating systems. SUS ran on a [[Windows Server]] operating system and [[download]]ed updates for the specified versions of Windows from the remote [[Windows Update]] site, operated by Microsoft. Clients could then download updates from this internal server, rather than connecting directly to Windows Update.&lt;ref&gt;{{cite web|title=Software Update Services|url=http://technet.microsoft.com/en-us/windowsserver/bb466186.aspx|work=[[Microsoft TechNet]]|publisher=Microsoft Corporation|accessdate=4 May 2011}}&lt;/ref&gt;  Support for SUS by Microsoft was originally planned to end on December 6, 2006, but based on user feedback, the date was extended to July 10, 2007.&lt;ref&gt;{{cite news|last=Keizer|first=Gregg|title=Microsoft Keeps Software Update Services Alive Until July|url=http://www.informationweek.com/news/194400595|accessdate=4 May 2011|newspaper=[[InformationWeek]]|date=16 Nov 2006|publisher=UBM TechWeb}}&lt;/ref&gt; 
+
+WSUS builds on SUS by expanding the range of software it can update.  The WSUS infrastructure allows automatic downloads of updates, hotfixes, [[service pack]]s, [[device driver]]s and feature packs to clients in an organization from a central server(s). This saves [[Bandwidth (computing)|bandwidth]], time and disk space, as the individual computers in a network do not have to connect to an external server themselves, but connect to a local central server.  It also increases administrators' control and allows clients to obtain updates in environments that do not have internet access.
+
+== Operation ==
+Windows Server Update Services 2.0 and above comprise a [[software repository|repository]] of update packages from Microsoft. It allows administrators to approve or decline updates before release, to force updates to install by a given date, and to obtain extensive reports on what updates each machine requires.  System administrators can also configure WSUS to approve certain classes of updates automatically (critical updates, security updates, service packs, drivers, etc.). One can also approve updates for &quot;detection&quot; only, allowing an administrator to see what machines will require a given update without also installing that update.
+
+Administrators can use WSUS with [[Group Policy]] for client-side configuration of the Automatic Updates client, ensuring that end-users can't disable or circumvent corporate update policies. WSUS does not require the use of [[Active Directory]]; client configuration can also be applied by local group policy or by modifying the [[Windows registry]].
+
+WSUS uses [[.NET Framework]], [[Microsoft Management Console]] and [[Internet Information Services]]. WSUS 3.0 uses either [[SQL Server Express]] or [[Windows Internal Database]] as its database engine. WSUS 2.0 used [[MSDE]].  [[System Center Configuration Manager]] (SCCM) interoperates with WSUS, and is able import third party security updates into the product.&lt;ref&gt;{{cite web|url=http://technet.microsoft.com/en-us/library/bb632895.aspx|title=About System Center Updates Publisher|publisher=Microsoft|accessdate=11 August 2011}}&lt;/ref&gt;
+
+== Version history ==
+{| class=&quot;wikitable&quot;
+|-
+! Version !! Date !! Comments
+|-
+| style=&quot;white-space:nowrap;&quot; | 2.0 [[Release Candidate]]
+| style=&quot;white-space:nowrap;&quot; | March 22, 2005
+|
+|-
+| style=&quot;white-space:nowrap;&quot; | 2.0 [[Software release life cycle#Web release|RTW]]
+| style=&quot;white-space:nowrap;&quot; | June 6, 2005
+| 
+|-
+| style=&quot;white-space:nowrap;&quot; | 2.0 Service Pack 1
+| style=&quot;white-space:nowrap;&quot; | May 31, 2006
+| Adds support for [[Windows Vista]] clients, additional client languages, and using [[Microsoft SQL Server]] 2005 as a database backend, as well as performance improvements with the web-based user interface
+|-
+| style=&quot;white-space:nowrap;&quot; | 3.0 beta 2
+| style=&quot;white-space:nowrap;&quot; | August 14, 2006
+| [[Microsoft Management Console|MMC]] based UI and loads of new features
+|-
+| style=&quot;white-space:nowrap;&quot; | 3.0 Release Candidate
+| style=&quot;white-space:nowrap;&quot; | February 12, 2007
+| 
+|-
+| style=&quot;white-space:nowrap;&quot; | 3.0 RTW
+| style=&quot;white-space:nowrap;&quot; | April 30, 2007
+| WSUS 3.0 and WSUS Client 3.0 were made available via WSUS on 22 May 2007&lt;ref&gt;{{cite web|last=Harder|first=Bobbie|title=Updates for WSUS available today|url=http://blogs.technet.com/b/wsus/archive/2007/05/22/updates-for-wsus-available-today.aspx|work=WSUS Product Team Blog|publisher=Microsoft Corporation|accessdate=4 May 2011|date=22 May 2007}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap;&quot; | 3.0 Service Pack 1 Release Candidate
+| style=&quot;white-space:nowrap;&quot; | November 1, 2007
+| 
+|-
+| style=&quot;white-space:nowrap;&quot; | 3.0 Service Pack 1 RTW&lt;ref&gt;{{cite web|last=Cole|first=Cecilia|title=WSUS 3.0 SP1 is now RTM|url=http://blogs.technet.com/b/wsus/archive/2008/02/07/wsus-3-0-sp1-is-now-rtm.aspx|work=WSUS Product Team Blog|publisher=Microsoft Corporation|accessdate=4 May 2011|date=7 Feb 2008}}&lt;/ref&gt;
+| style=&quot;white-space:nowrap;&quot; | February 7, 2008
+| 
+|-
+| style=&quot;white-space:nowrap;&quot; | 3.0 Service Pack 2 RTW
+| style=&quot;white-space:nowrap;&quot; | August 25, 2009
+| 
+|}
+
+== References ==
+
+{{Reflist|refs=
+&lt;ref name=download-3.0sp2&gt;{{cite web|title=Download details: Windows Server Update Services 3.0 SP2|url=http://www.microsoft.com/downloads/en/details.aspx?FamilyId=a206ae20-2695-436c-9578-3403a7d46e40&amp;displaylang=en|work=Microsoft Download Center|publisher=Microsoft Corporation|accessdate=4 May 2011|date=25 Aug 2009}}&lt;/ref&gt;
+}}
+
+== External links ==
+* {{Official website|http://www.microsoft.com/wsus}}
+* [http://www.microsoft.com/downloads/details.aspx?familyid=e99c9d13-63e0-41ce-a646-eb36f1d3e987&amp;displaylang=en Deploying Microsoft Windows Server Update Services 2.0]
+* [http://blogs.technet.com/wsus/default.aspx WSUS Product Team Blog]
+* [http://wsus.editme.com/ WSUS Wiki] â contains many detailed documents on WSUS operation, known issues, and troubleshooting
+* [http://www.wsus.de WSUS.DE] - German WSUS-Community (Microsoft CLIP Community)
+* [http://www.wuinstall.com WuInstall] - Control installation of WSUS updates from command line
+
+{{Windows Components}}
+
+[[Category:Windows Server]]
+[[Category:Microsoft server technology]]
+[[Category:Patch utilities]]
+
+[[cs:Windows Server Update Services]]
+[[de:Windows Server Update Services]]
+[[es:Windows Server Update Services]]
+[[fr:Windows Server Update Services]]
+[[hu:Windows Server Update Services]]
+[[ko:ìë ìë² ìë°ì´í¸ ìë¹ì¤]]
+[[it:Windows Server Update Services]]
+[[ja:Windows Server Update Services]]
+[[ru:Ð¡Ð»ÑÐ¶Ð±Ð° Ð¾Ð±Ð½Ð¾Ð²Ð»ÐµÐ½Ð¸Ñ Windows Server]]</rev></revisions></page></pages></query></api>

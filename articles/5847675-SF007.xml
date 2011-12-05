@@ -1,0 +1,76 @@
+<?xml version="1.0"?><api><query><pages><page pageid="5847675" ns="0" title="Buffalo network-attached storage series"><revisions><rev xml:space="preserve">{{Infobox Information appliance
+|name  = Buffalo network-attached storage series
+|image = [[Image:Kuro-box pro.jpg|150px]]
+|caption = The Kuro-Box Pro
+|manufacturer = [[Melco]]
+|type  = [[Network-attached storage]]
+|connectivity = [[100BASE-T]], [[1000BASE-T]]
+|os    = [[Linux]]
+|cpu   = [[PowerPC]], [[MIPS architecture|MIPSel]], [[ARM architecture|ARM]] 
+}}
+The '''Buffalo network-attached storage series''' are [[network-attached storage]] devices.&lt;ref&gt;Reviews include [http://reviews-zdnet.com.com/Buffalo_Gigabit_LinkStation_300GB/4505-3382_16-31385516.html CNET/ZDNET:LinkStation], [http://reviews-zdnet.com.com/Buffalo_TeraStation_Home_Server_NAS_2TB/4505-3382_16-31864376.html CNET/ZDNET:TeraStation], [http://linuxdevices.com/articles/AT9676199755.html LinuxDevices.com:LinkStation], 
+[http://linuxdevices.com/articles/AT4447705222.html LinuxDevices.com:TeraStation], [http://www.pcmag.com/article2/0,1759,1641390,00.asp PC Magazine:LinkStation], 
+[http://www.pcmag.com/article2/0,1759,1780692,00.asp PC Magazine:TeraStation], 
+[http://www.tomsnetworking.com/2005/06/27/review_hdhg250lan/ Tom's Networking:LinkStation], 
+[http://www.tomsnetworking.com/2005/05/25/review_terasta/ Tom's Networking:TeraStation]&lt;/ref&gt;
+They can be modified&lt;ref&gt;[http://www.yamasita.jp/linkstation.en/index.html English version of âWhy donât you hack the LinkStation/Kuro Box.â]*&lt;/ref&gt; into [[Embedded Linux|miniature general purpose Linux-based computers]].  The '''LinkStation''' and '''TeraStation''' are intended for the general public, while the '''Kuro Box''' is intended for expert [[Hacker (hobbyist)|hackers]] as a cheap platform for [[Linux]] development. 
+
+These devices have undergone various improvements since they were first produced.&lt;ref&gt;nas-central.org: [http://buffalo.nas-central.org/index.php/LS_Hardware_and_Software_information Hardware comparison (LinkStation and Kuro Box)]&lt;/ref&gt;
+For example, the first generation of this device had a [[100BASE-T]] network adapter using a [[Parallel ATA]] hard drive.  The current version has a [[1000BASE-T]]-capable connection and uses the [[Serial ATA]] interface.&lt;ref&gt;[http://www.buffalotech.com/products/product-detail.php?productid=152&amp;categoryid=34 LinkStation - SATA Version]&lt;/ref&gt;
+Older generations of the device used [[PowerPC]] and [[MIPS architecture|MIPS]] processors, while the latest version of the device&lt;ref&gt;[http://www.buffalotech.com/products/product-detail.php?productid=127&amp;categoryid=27 TeraStation - SATA Version]&lt;/ref&gt;
+uses an [[ARM architecture]] processor.&lt;ref&gt;[http://buffalo.nas-central.org/index.php/Terastationwiki nas-central.org: Overview over the Terastations]&lt;/ref&gt;
+
+== LinkStation ==
+&lt;div&gt;[[Image:Linkstationhg.jpg|thumb|100px|left|LinkStation HG]]&lt;/div&gt;
+The '''LinkStation''' is a [[PowerPC]], [[MIPS architecture|MIPS]] or [[ARM architecture|ARM]] based [[network attached storage]] appliance sold in North America, Europe and Japan, that is significantly notable among the Linux community  both in Japan&lt;ref&gt;http://linkstation.yi.org/ - A Japanese website dedicated to hacking the LinkStation.&lt;/ref&gt;&lt;ref&gt;http://www.type-g.com/ - A Japanese wiki which contains some LinkStation information.&lt;/ref&gt; and in the US/Europe&lt;ref&gt;http://buffalo.nas-central.org - The nas-central.org Wiki&lt;/ref&gt;&lt;ref&gt;[[Yahoo!]] Groups: [http://groups.yahoo.com/group/LinkStation_General/ LinkStation General]&lt;/ref&gt; for being &quot;hackable&quot; into a generic Linux appliance and made to do tasks other than the file storage task for which it was designed.
+The Linkstation has [[Ethernet]], [[USB]], and serial ports, but does not have a [[Computer display standard|video output]]. It is made by [[Buffalo Technology]]&lt;ref&gt;[http://www.buffalotech.com/ Buffalo Technology]&lt;/ref&gt; a division of [[Melco]]. Produced in Japan, as of 2006 it is also available at American retailers such as [[Best Buy]] and [[CompUSA]], as well as in Europe.
+
+== Kuro Box ==
+&lt;div&gt;[[Image:Kuro-box hg.jpg|thumb|100px|right|The Kuro Box]]&lt;/div&gt;
+The '''Kuro Box''' is the name for a series of [[PowerPC]] and [[ARM architecture|ARM]] processor based [[computer]]s intended for use as a [[Network-attached storage]] device. The original '''Kuro Box''' was made from spare hardware components the manufacturer&lt;ref&gt;[http://www.revogear.com/ Revogear.com]- American suppliers of KuroBox&lt;/ref&gt;&lt;ref&gt;[http://www.kuroutoshikou.com www.kuroutoshikou.com]- Japanese supplier of KuroBox&lt;/ref&gt; had from the Linkstation. Recent versions of the Kuro Box use later Linkstation hardware or hardware very similar to that of the Linkstation.&lt;ref&gt;[http://www.kurobox.com/mwiki/index.php/Hardware_Specifications Hardware Specifications for the Kuro Box Original,HG, and HG WR models]&lt;/ref&gt;&lt;ref&gt;[http://buffalo.nas-central.org/index.php/KuroBoxPro Hardware Specifications for the Kuro Box Pro]&lt;/ref&gt;
+All Kuro Box versions are provided without a [[hard drive]].  The case has the same physical dimensions and shape as the corresponding LinkStation, but it is black in color and has the Japanese symbols for &quot;Kuro Box&quot; ([[wiktionary:ç|ç]][[wiktionary:ç®±|ç®±]], meaning &quot;a box operated by an expert with esoteric knowledge&quot;) in silver lettering on the side panel. The name is also a pun because ''kuro'' (different kanji: [[wiktionary:é»|é»]]) also means 'black'.
+
+== TeraStation ==
+&lt;div&gt;[[Image:Terastation.jpg|thumb|100px|right|Two TeraStations stacked]]&lt;/div&gt;
+&lt;div&gt;The '''TeraStation''' is a [[Network-attached storage]] device using a [[PowerPC]] or [[ARM architecture]] processor similar to the LinkStation. It uses four internal [[Hard drives]] mounted in a [[RAID]] array.&lt;ref&gt;[http://www.buffalotech.com/products/product-detail.php?productid=133&amp;categoryid=25 Buffalo's Terastation Listing]&lt;/ref&gt; It comes in a grey or black [[cube]] shaped box depending on the model.&lt;/div&gt;
+
+==Linux community==
+===LinkStation===
+As the device runs on Linux, and included changes to the Linux source code, Buffalo was required to release their modified versions of [[Source code]] as per the terms of the [[GNU General Public License]]. Due to the availability of source code and the relatively low cost of the device, there are several community projects centered around it. There are two main replacement firmwares available for the device: the first is OpenLink&lt;ref&gt;nas-central.org: [http://buffalo.nas-central.org/index.php?title=Category:OpenLink Openlink]&lt;/ref&gt; which is based on the official Buffalo firmware with some improvements and features added. The other is FreeLink,&lt;ref&gt;nas-central.org: [http://buffalo.nas-central.org/index.php?title=Category:FreeLink Freelink]&lt;/ref&gt; which is a [[Debian]] distribution.
+
+===Kurobox===
+The product was designed by the manufacturer to accept a user supplied [[Linux]] distribution. Several&lt;ref&gt;www.kurobox.com: [http://www.kurobox.com/mwiki/index.php/Category:Project Projects]&lt;/ref&gt; including a Kurobox specific distribution called Sylver, [[Debian]], [[Gentoo Linux]], and [[Fedora (operating system)|Fedora Core]] have been ported to it by various user groups in both the [[USA]]/[[Europe]],&lt;ref&gt;http://www.kurobox.com/ - The Kurobox Page&lt;/ref&gt; and [[Japan]].&lt;ref&gt; http://www.kurobox.info/ - A Chinese language forum covering the Kurobox and LinkStation.&lt;/ref&gt;
+
+===TeraStation===
+Like the LinkStation the device runs its own version of [[Linux]]. [[Debian]] and [[Gentoo Linux]] distributions and [[NetBSD]] are reported to have been ported to it.&lt;ref&gt;[http://www.terastation.org/ The Terastation Wiki (apparently no longer online)]&lt;/ref&gt;
+
+==Uses==
+[[Image:Buffalo LinkStation Pro and KuroBox Pro together.jpeg|thumb|200px|right|LinkStation Pro and KuroBox Pro]]
+The device in various iterations ships with its own [[Universal Plug and Play]] protocol for distribution of [[multimedia]] stored on the device. It can also be configured as a variety of different media servers&lt;ref&gt;nas-central.org, [http://buffalo.nas-central.org/index.php?title=Category:Mediaserver Category:Mediaserver]&lt;/ref&gt; [[TwonkyVision]] Media server,&lt;ref&gt;[http://www.twonkyvision.de/Products/TwonkyMedia/nas.html TwonkyMedia: embedded devices and network attached storage devices]&lt;/ref&gt; a [[SlimServer]]/[[SqueezeCenter]] server, an [[iTunes]] server using the [[Digital Audio Access Protocol]],&lt;ref&gt;[http://homepage.mac.com/cudmore/KuroBox/Menu42.html Alan's KuroBox-DAAP Information] ([[Bonjour (software)|Bonjour]]/[[Digital Audio Access Protocol|DAAP]]/[[iTunes]])&lt;/ref&gt; a [[Samba (software)|Samba]] server, [[MLDonkey]] client, as well as a [[Network File System (protocol)|Network File System]] server for [[Posix]]-based systems. For use as a backup server, it can be modified to use it with [[Rsync]] to back up or synchronize data from one or many computers in the network pushing their data, or even having the LinkStation pulling the data from remote servers&amp;mdash;beside the use of the Buffalo-provided backup software for [[Microsoft Windows|Windows]]. It has also found use in a number of other ways, notably through its [[USB]] interface which comes configured as a [[Print server]] but can also use the [[Common Unix Printing System]] to act as such for a USB Printer. Users have managed to get it to use a number of other USB devices&lt;ref&gt;[http://buffalo.nas-central.org/index.php?title=Category:USB Category:USB on nas-central.org]&lt;/ref&gt; with the version 2.6 [[Linux kernel]]'s&lt;ref&gt;[http://buffalo.nas-central.org/index.php?title=Category:Kernel Category:Kernel on nas-central.org]&lt;/ref&gt; enhanced USB support. Additionally, because the [[Apache HTTP Server]] software is already installed for the purpose of providing the Buffalo configuration screens, the device is easily converted to be a lightweight web server (with the Buffalo content deleted) and then can serve any content of the operator's choice.
+
+== Gallery ==
+&lt;gallery&gt;
+Image:Buffalo_LinkStation_Mini_and_a_PP3_battery.jpg|LinkStation Mini and [[PP3 battery]]
+Image:Buffalo_LinkStation_Pro_and_KuroBox_Pro_together.jpeg|LinkStation Pro and KuroBox Pro
+Image:Kuro-box pro.jpg|Kuro-box pro
+Image:Kuro-box hg.jpg|Kuro Box
+Image:Linkstationhg.jpg|LinkStation HG
+Image:Terastation.jpg|Two TeraStations stacked
+&lt;/gallery&gt;
+
+==See also==
+*[[NSLU2]]
+
+==References==
+{{reflist|2}}
+
+{{Linux devices}}
+
+[[Category:Power Architecture]]
+[[Category:ARM architecture]]
+[[Category:Linux-based devices]]
+[[Category:Server appliance]]
+
+[[de:Linkstation]]
+[[ja:çç®±]]
+{{DEFAULTSORT:Buffalo Network-Attached Storage Series}}</rev></revisions></page></pages></query></api>

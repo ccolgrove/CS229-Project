@@ -1,0 +1,82 @@
+<?xml version="1.0"?><api><query><pages><page pageid="98628" ns="0" title="Magma computer algebra system"><revisions><rev xml:space="preserve">{{Infobox Software |
+| name = Magma
+| logo = [[Image:Magma-logo.png|Magma]]
+| screenshot = 
+| caption = 
+| developer =  Computational Algebra Group, [[Sydney School of Mathematics and Statistics|School of Mathematics and Statistics]], [[University of Sydney]] |
+| latest_release_version = 2.17-8 |
+| latest_release_date = May 27, 2011 |
+| operating_system = [[Cross-platform]]
+| genre = [[Computer algebra system]] |
+| license = Cost recovery (non-commercial proprietary) |
+| website = {{URL|http://magma.maths.usyd.edu.au/}} |
+}}
+'''Magma''' is a [[computer algebra system]] designed to solve problems in [[abstract algebra|algebra]], [[number theory]], [[algebraic geometry|geometry]] and [[combinatorics]].  It is named after the [[algebraic structure]]  [[magma (algebra)|magma]].  It runs on [[Unix|Unix-like]] and [[Linux]] based [[operating system]]s, as well as [[Microsoft Windows|Windows]].
+
+== Introduction ==
+Magma is produced and distributed by the [http://magma.maths.usyd.edu.au/magma/CayMagCAG/CayMagCAG.html Computational Algebra Group] within the [[Sydney School of Mathematics and Statistics|School of Mathematics and Statistics]] at the [[University of Sydney]].
+
+In late 2006, the book [http://www.springer.com/math/cse/book/978-3-540-37632-3 Discovering Mathematics with Magma] was published by [[Springer Science+Business Media|Springer]] as volume 19 of the Algorithms and Computations in Mathematics series.&lt;ref&gt;http://magma.maths.usyd.edu.au/magma/dmwm/&lt;/ref&gt;
+
+The Magma system is used extensively within pure mathematics. The Computational Algebra Group maintain a list of publications which cite Magma, and as of 2010 there are about 2600 citations, mostly in pure mathematics, but also including papers from areas as diverse as economics and geophysics.&lt;ref&gt;http://magma.maths.usyd.edu.au/magma/citations/&lt;/ref&gt;
+
+==History==
+The predecessor of the Magma system was called Cayley (1982â1993).
+
+Magma was officially released in August 1993 (version 1.0).  Version 2.0 of Magma was released in June 1996 and subsequent versions of 2.X have been released approximately once per year.
+
+With Python installed, version 2.9-2 supports [[MathML]]. &lt;ref&gt;http://lecerf.perso.math.cnrs.fr/software/kronecker/distribution.html&lt;/ref&gt;
+
+== Mathematical areas covered by the system ==
+* [[Group theory]]
+: Magma includes [[permutation group|permutation]], [[matrix (mathematics)|matrix]], [[finitely presented group|finitely-presented]], [[solvable group|soluble]], [[abelian group|abelian]] (finite or infinite), [[polycyclic group|polycyclic]], [[braid group|braid]] and [[straight-line program]] [[group (mathematics)|groups]].  Several databases of groups are also included.
+* [[Number theory]]
+: Magma contains [[Big O notation|asymptotically-fast]] algorithms for all fundamental integer and polynomial operations, such as the [[SchÃ¶nhageâStrassen algorithm]] for fast multiplication of integers and polynomials.  [[Integer factorization]] algorithms include the [[Lenstra elliptic curve factorization|Elliptic Curve Method]], the [[Quadratic sieve]] and the [[Number field sieve]].
+* [[Algebraic number theory]]
+: Magma includes the [[KANT computer algebra system]] for comprehensive computations in algebraic number fields.  A special type also allows one to compute in the [[algebraic closure]] of a field.
+* [[Module theory]] and [[linear algebra]]
+: Magma contains [[Big O notation|asymptotically-fast]] algorithms for all fundamental dense matrix operations, such as [[Strassen algorithm|Strassen multiplication]].
+* [[Sparse matrices]]
+: Magma contains the [[Structured gaussian elimination]] and [[Lanczos]] algorithms for reducing sparse systems which arise in [[index calculus]] methods, while Magma uses [[Markowitz pivoting]] for several other sparse linear algebra problems.
+* [[Lattice (group)|Lattices]] and the [[LLL algorithm]]
+: Magma has a provable implementation of [[fpLLL|''fp''LLL]],&lt;ref&gt;{{cite web|author=Cannon J. |url=http://magma.maths.usyd.edu.au/magma/htmlhelp/rel/node29.htm |title=Magma 2.13 release notes |month = July | year = 2006 }}&lt;/ref&gt; which is an LLL algorithm for integer matrices which uses floating point numbers for the GramâSchmidt coefficients, but such that the result is rigorously proven to be LLL-reduced.
+* [[Commutative algebra]] and [[GrÃ¶bner bases]]
+: Magma has an efficient implementation of the [[FaugÃ¨re F4 algorithm]] for computing [[GrÃ¶bner bases]].
+* [[Representation theory]]
+: Magma has extensive tools for computing in representation theory, including the computation of [[character tables]] of finite groups and the [[Meataxe]] algorithm.
+* [[Invariant theory]]
+: Magma has a type for invariant rings of finite groups, for which one can primary, secondary and  fundamental invariants, and compute with the module structure.
+* [[Lie theory]]
+* [[Algebraic geometry]]
+* [[Arithmetic geometry]]
+* [[Finite incidence structures]]
+* [[Cryptography]]
+* [[Coding theory]]
+* [[Optimization (mathematics)|Optimization]]
+
+==See also==
+*[[Comparison of computer algebra systems]]
+*[[Sage (mathematics software)|Sage]], an open source computer algebra system
+
+==References==
+{{reflist}}
+
+==External links==
+*{{Official website|http://magma.maths.usyd.edu.au/}}
+*[http://magma.maths.usyd.edu.au/calc/ Magma Free Online Calculator]
+*[http://magma.maths.usyd.edu.au/users/allan/gb/ Magma's High Performance for computing Groebner Bases]
+*[http://magma.maths.usyd.edu.au/users/allan/mat/hermite.html Magma's High Performance for computing Hermite Normal Forms of integer matrices]
+*[http://magma.maths.usyd.edu.au/users/allan/gcdcomp.html Magma V2.12 is apparently &quot;Overall Best in the World at Polynomial GCD&quot; :-)]
+*[http://www.math.harvard.edu/computing/magma/ Magma example code]
+
+{{Computer algebra systems}}
+
+{{DEFAULTSORT:Magma Computer Algebra System}}
+[[Category:Functional languages]]
+[[Category:Numerical programming languages]]
+[[Category:Linux computer algebra system software]]
+[[Category:Cross-platform software]]
+
+[[fr:Magma (calcul formel)]]
+[[id:Magma (perangkat lunak)]]
+[[ja:Magma (æ°å¼å¦çã·ã¹ãã )]]</rev></revisions></page></pages></query></api>

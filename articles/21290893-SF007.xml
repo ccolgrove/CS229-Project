@@ -1,0 +1,70 @@
+<?xml version="1.0"?><api><query><pages><page pageid="21290893" ns="0" title="Windows 2.1x"><revisions><rev xml:space="preserve">{{Infobox OS version
+| name               = Windows 2.1x
+| family             = Microsoft Windows
+| logo               = Windows 1.0 logo.svg
+| screenshot         = Windows 2.1.png
+| caption            = Screenshot of Windows 2.1
+| developer          = Microsoft
+| website            =
+| source_model       = [[Closed source software|Closed source]]
+| license            = MS-[[Software license agreement|EULA]]
+| kernel_type        =
+| preceded_by        = [[Windows 2.0]]
+| succeeded_by       = [[Windows 3.0]]
+| first_release_date = May 27, 1988
+| first_release_url  = http://support.microsoft.com/kb/32905
+| release_version    = 2.11
+| release_date       = {{Start date and age|1989|03|13}}
+| release_url        = http://support.microsoft.com/kb/32905
+| preview_version    =
+| preview_date       =
+| preview_url        =
+| support_status     = Unsupported as of December 31st 2001
+| date               = January 2009 &lt;!-- approximate date of template insertion for dating hidden maintenance categories --&gt;
+}}
+
+'''Windows 2.1x''' is a family of [[Microsoft Windows]] [[graphical user interface]]-based [[operating environment]]s.
+
+Windows/286 2.10 and Windows/386 2.10 were released on May 27, 1988, less than a year after the release of [[Windows 2.0]]. These versions can take advantage of the specific features of the [[Intel Corporation|Intel]] [[Intel 80286|80286]] and Intel [[Intel 80386|80386]] processors.
+
+==Editions==
+Two editions of Windows 2.1x were released, both of which could take advantage of the Intel processor for which they were designed.
+
+===Windows/286===
+Windows/286 takes advantage of the [[High Memory Area|HMA]] to increase the memory available to Windows programs. It introduced the [[HIMEM.SYS]] [[MS-DOS|DOS]] [[Device driver|driver]] for this purpose. It also includes support for several [[Expanded memory|EMS boards]], although this support is not related to the [[Intel 80286|80286 processor]]. The segmented nature of Windows [[Computer program|programs]] is quite suited to the usage of EMS, as portions of code and data can be made visible in the first [[megabyte]] of [[Random access memory|memory]] accessible to [[Real mode|real-mode]] programs only when the program using them is given control. Microsoft encouraged users to configure their computers with only 256KB of main memory, leaving the address space from 256-640KB available for dynamic mapping of EMS memory.
+
+Despite its name, Windows/286 was fully operational on an 8088 or 8086 processor. Windows/286 would simply not use the high memory area since none exist on an 8086-class processor; however, [[Expanded memory|EMS]] could still be used, if present. A few PC vendors shipped Windows/286 with 8086 hardware; an example was IBM's [[IBM Personal System/2|PS/2]] Model 25, which had an option to ship with a &quot;DOS 4.00 and Windows kit&quot; for educational markets, which included word processing and presentation software useful for students, which resulted in some confusion when purchasers of this system received a box labeled Windows/286 with a machine that was definitely less than an 80286.
+
+===Windows/386===
+Windows/386 was much more advanced than its predecessor. It introduced a [[protected mode]] kernel, above which the [[Graphical user interface|GUI]] and applications run as a [[virtual 8086 mode]] task. It allowed several MS-DOS programs to run in parallel in &quot;virtual 8086&quot; CPU mode, rather than always suspending background applications. (Windows applications could already run in parallel through [[Computer multitasking#Cooperative multitasking/time-sharing|cooperative multitasking]].) Each DOS application could use as much low memory as is available before Windows is started, minus a few kilobytes of overhead. Windows/386 also provided [[Expanded memory#Software emulation|EMS emulation]], using the memory management features of the 80386 to make RAM beyond 640K behave like the banked memory previously only supplied by add-in cards and used by popular DOS applications. (By overwriting the WIN200.BIN file with [[COMMAND.COM]], it is possible to use the EMS emulation in DOS without starting the Windows GUI.) There was no disk-based [[virtual memory]], so multiple DOS programs had to fit inside the available physical memory; therefore, Microsoft suggested buying additional [[RAM|memory]] and cards if necessary.
+
+Neither of these versions worked with [[DOS memory management|DOS memory managers]] like [[CEMM]] or [[QEMM]] or with [[DOS extender]]s, which have their own extended memory management and run in protected mode as well. This was remedied in version 3.0, which is compatible with [[Virtual Control Program Interface]] (VCPI) in &quot;standard mode&quot; and with [[DOS Protected Mode Interface]] (DPMI) in &quot;386 enhanced&quot; mode. Windows 3.0 also had the capability of using the DWEMM Direct Write Enhanced Memory Module. This is what enables the far faster and sleek graphical user interface.
+
+==Windows 2.11==
+On March 13, 1989, Windows 2.11 was released in Windows/286 and Windows/386 editions, with some minor changes in memory management, [[AppleTalk]] support and faster printing and updated printer drivers.
+
+Windows 2.11 was superseded by [[Windows 3.0]] in May 1990, but supported by Microsoft for twelve years, until December 31, 2001.{{Citation needed|date=June 2010}}
+
+==References==
+* [http://support.microsoft.com/kb/32905 Microsoft Windows Version History]
+
+==Further reading==
+* [[PC Magazine]]. ''[http://www.pcmag.com/article2/0,2817,1868387,00.asp 20 Years of Windows Solutions &amp;ndash; Windows 286 &amp; 386]''.
+
+==External links==
+* [http://video.google.com/videoplay?docid=4915875929930836239 Windows 386 Promotional Video]
+
+{{Microsoft Windows family}}
+
+[[Category:1988 software]]
+[[Category:Discontinued versions of Microsoft Windows]]
+
+[[ar:ÙÙÙØ¯ÙØ² 2.11]]
+[[es:Windows 2.1x]]
+[[ko:ìë 2.1x]]
+[[it:Windows/386]]
+[[no:Windows 2.1]]
+[[uz:Windows 2.1x]]
+[[ro:Windows 2.1x]]
+[[sl:Windows 2.1x]]
+[[tr:Windows 2.1x]]</rev></revisions></page></pages></query></api>

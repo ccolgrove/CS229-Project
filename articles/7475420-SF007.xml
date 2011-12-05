@@ -1,0 +1,59 @@
+<?xml version="1.0"?><api><query><pages><page pageid="7475420" ns="0" title="MojoPac"><revisions><rev xml:space="preserve">{{POV|date=June 2010}}
+
+{{Infobox software
+| name = MojoPac
+| logo = 
+| screenshot = 
+| caption = 
+| developer = RingCube Technologies
+| latest_release_version = v2.0
+| latest_release_date = [[5th December]] [[2008]]&lt;ref&gt;http://www.ringcube.com/portal/content/support/announcements.jsp#mojopac2000&lt;/ref&gt;
+| operating_system = [[Microsoft Windows XP]]
+| genre = [[Workspace Virtualization]]
+| language= 
+| license = 
+| website = [http://www.MojoPac.com/ www.MojoPac.com]
+}}
+
+'''MojoPac''' is an [[application virtualization]] product from RingCube Technologies. MojoPac turns any [[USB 2.0]] storage device, into a portable computing environment. The term &quot;MojoPac&quot; is used by the company to refer to the software application, the virtualized environment running inside this software, and the USB storage device that contains the software and relevant applications. MojoPac supports popular applications such as [[Firefox]] and [[Microsoft Office]], and it is also high performance enough to run popular PC Games such as [[World of Warcraft]] and [[Half-Life 2]].
+
+==Usage==
+To initially setup the MojoPac device, the user runs the installer and selects a USB device attached to the system. Once MojoPac is installed, it creates an executable in the root of that device along with an autorun file that gives the user the option of starting the MojoPac environment automatically when the device is plugged in (subject to how the host PC is configured). Once this application is started, a new Windows Desktop (with its own wallpaper, icons, shell, etc.) is started up in the virtualized MojoPac environment. Any application that runs inside this environment runs off the USB device without affecting the filesystem of the host. A user installs most applications (including [[Microsoft Office]], [[Adobe Photoshop]], [[Mozilla Firefox|Firefox]]) on the portable storage device by simply running the installer inside this environment. The user can switch between the host environment and the MojoPac environment by using the MojoBar at the top of the screen. Once the user is done with the applications, they just exit out of MojoPac and eject the USB device.
+
+To run the applications on a different computer, the user does not need to reinstall the application. The user can plug the portable storage device into any [[Windows XP]] computer. All the user's settings, applications, and documents function the same irrespective of which computer the portable storage device is connected to. The computer does not need any special applications or drivers installed to use MojoPac, although administrator rights are required if &quot;MojoPac Usher&quot; has not been installed on the host PC.
+
+When the portable storage device is disconnected from the computer, there is no personal information left behind on the computer.
+
+==Requirements==
+*Requires Windows XP Home or Pro; Windows 2000 is not supported, though Vista in planned to be supported in the near future [http://www.mojopac.com/forum/showthread.php?t=683]
+*Requires Administrator access.  A special version, MojoPac Usher, can be run in Universities or other locked down environments if the administrator is present to log in once [http://www.mojopac.com/portal/content/products/usher.jsp]. A Limited User version is under development. [http://www.mojopac.com/portal/content/how/requirements.jsp]
+
+==Security==
+MojoPac does not include features to encrypt the data on the USB drive, but does have a password protection system that prevents a person from starting up the MojoPac environment. All the files on the USB drive do not have any additional encryption, which is problematic if the MojoPac device is lost. However, this is no different from a default Windows XP installation and MojoPac can be used together with [[OTFE]] software such as [[FreeOTFE]] &lt;ref&gt;[http://www.freeotfe.org/docs/FAQ.htm#db] - Using MojoPac with FreeOTFE&lt;/ref&gt; or [[TrueCrypt]] to provide any desired strong [[encryption]] and [[plausible deniability]] (just as Windows XP can). A MojoPac device secured using this type of software is reasonably safe in the case of theft.
+
+Because of the virtualization performed by MojoPac, applications running inside the MojoPac environment cannot (generally) modify the host. For example, all the browsing history for [[Internet Explorer]] and other browsers are stored on the USB device rather than the host. Similarly, if a malicious program tries to delete the C:\Windows directory inside MojoPac, the files on the USB device are deleted, but the files on the host machine will remain. However, it is possible for a user to modify MojoPac's system files, which are then reflected to the same system files of the host PC&lt;ref&gt;[http://www.mojopac.com/forum/showthread.php?t=1326] - Test results of modifying files&lt;/ref&gt;, so the current level of isolation between the virtual environment and the host PC is not as strong as provided by full machine virtualization technologies like VMware. RingCube has stated this is a known bug which will be addressed in a future version of MojoPac&lt;ref&gt;[http://www.mojopac.com/forum/showthread.php?t=1449] - Known bug of unwanted host PC file modifications&lt;/ref&gt;.
+
+==See also==
+*[[Comparison of application launchers]]
+*[[RingCube vDesk|vDesk]] - a similar product produced by RingCube
+*[[Portable application creators]]
+*[[Windows To Go]]
+
+==References==
+{{Reflist}}
+
+==External links==
+*[http://www.mojopac.com MojoPac]
+*[http://online.wsj.com/public/article/SB116113166328095945-Ww4BXcJDokc_qfo_mFgJYsBjIPQ_20071017.html?mod=rss_personal_technology The Wall Street Journal - Turning Another Computer Into Your Own]
+*[http://lifehacker.com/software/windows/geek-to-live--build-your-pc-on-a-stick-with-mojopac-208338.php Lifehacker - Build your 'PC on a stick' with Mojopac]
+*[http://www.twit.tv/sn63 Security Now Episode about Mojopac]
+*[[Leo Laporte]] and [[Steve Gibson (computer programmer)|Steve Gibson]] discuss Mojopac in the [[Security Now]] podcast
+* [http://laptopcom.blogspot.com/2007/03/mojopac1050-carry-whole-your-laptop-and.html A Detailed Article about MojoPac]
+
+[[Category:Virtualization software]]
+[[Category:Portable computers]]
+[[Category:Portable software suites]]
+
+[[id:MojoPac]]
+[[ja:MojoPac]]
+[[vi:MojoPac]]</rev></revisions></page></pages></query></api>

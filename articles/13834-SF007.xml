@@ -1,0 +1,150 @@
+<?xml version="1.0"?><api><query><pages><page pageid="13834" ns="0" title="Hello world program"><revisions><rev xml:space="preserve">{{Redirect|Hello World|the 2009 compilation album by [[Michael Jackson]]|Hello World: The Motown Solo Collection|the song by Lady Antebellum|Hello World (song)}}
+[[Image:Hello World Perl GTk2.png|thumb|right|A [[Graphical user interface|GUI]] &quot;Hello World&quot; program, written in [[Perl]]]]
+[[Image:PSP-Homebrew.jpeg|thumb|right|It is possible to execute unsigned code on Sony's [[PlayStation Portable homebrew|PlayStation Portable]].]]
+[[Image:UT HelloWorld.jpg|thumb|right|A light-programmable [[biofilm]] displaying the Hello World message]]
+[[Image:CNC Hello World.jpg|thumb|right|[[CNC]] machining test in [[Perspex]]]]
+
+A '''&quot;Hello world&quot; program''' is a [[computer program]] that outputs &quot;Hello world&quot; on a [[display device]]. Because it is typically one of the simplest programs possible in most [[programming language]]s, it is by [[tradition]] often used to illustrate to beginners the most basic syntax of a programming language, or to verify that a language or system is operating correctly. 
+
+In a device that does not display text, a simple program to produce a signal, such as turning on an [[light-emitting diode|LED]], is often substituted for &quot;Hello world&quot; as the introductory program.
+
+==Purpose==
+A &quot;hello world&quot; program has become the traditional first program that many people learn. In general, it is simple enough that people who have no experience with computer programming can easily understand it, especially with the guidance of a teacher or a written guide. Using this simple program as a basis, [[computer science]] principles or elements of a specific [[programming language]] can be explained to novice programmers. Experienced programmers learning new languages can also gain a lot of information about a given language's syntax and structure from a hello world program.
+
+In addition, hello world can be a useful [[sanity test]] to make sure that a language's [[compiler]], [[development environment]], and [[run-time environment]] are correctly installed. Configuring a complete programming [[toolchain]] from scratch to the point where even trivial programs can be compiled and run can involve substantial amounts of work. For this reason, a simple program is used first when testing a new tool chain.
+
+&quot;Hello world&quot; is also used by computer hackers as a [[proof of concept]] that arbitrary code can be executed through an [[Exploit (computer security)|exploit]] where the system designers did not intend code to be executedâfor example, on Sony's [[PlayStation Portable]]. This is the first step in using homemade content (&quot;[[Homebrew (video games)|home brew]]&quot;) on such a device.
+
+==History==
+While small test programs existed since the development of programmable [[computer]]s, the tradition of using the phrase &quot;Hello world!&quot; as a test message was influenced by an example program in the seminal book ''[[The C Programming Language (book)|The C Programming Language]]''. The example program from that book prints &quot;&lt;code&gt;hello,&amp;nbsp;world&lt;/code&gt;&quot; (without capital letters or exclamation mark), and was inherited from a 1974 [[Bell Labs|Bell Laboratories]] internal memorandum by [[Brian Kernighan]], ''Programming in C: A Tutorial'', which contains the first known version:
+&lt;!--
+
+**************************************
+
+Editor's Note: We do not need to have an example for every programming language ever created. Wikipedia is an encyclopedia. Please refrain from adding examples just because we can. If you think a particular example adds something unique and valuable to the article, bring it up on the talk page, first. Thanks. (User:DragonHawk)
+
+Addendum: there are large repositories of Hello, World programs all over the net, in every conceivable language, and there is no need to list them all here. In fact, there is now a very comprehensive Wikibooks link: if you want to add a version for your language, do so there (you'll likely find it already exists). HERE IS NOT THE PLACE. The C version (which is not even correct modern C) is here because it is the first in a non-obscure language, and the B example because it is the first known. There is no reason to have any others here. DO NOT ADD ANY MORE!
+
+**************************************
+
+--&gt;
+
+&lt;!-- DO NOT ADD A NEWLINE TO THIS CODE, THE ORIGINAL DIDN'T HAVE ONE, THANKS --&gt;
+&lt;!-- See http://cm.bell-labs.com/cm/cs/who/dmr/ctut.pdf for original.  There was no stdio.h in 1974. --&gt;
+&lt;source lang=&quot;c&quot; style=&quot;overflow:auto&quot;&gt;
+ main()
+ {
+        printf(&quot;hello, world\n&quot;);
+ }
+&lt;/source&gt;
+
+The first known instance of the usage of the words &quot;hello&quot; and &quot;world&quot; together in computer literature occurred earlier, in Kernighan's 1972 ''Tutorial Introduction to the Language [[B (programming language)|B]]'',&lt;ref name=&quot;langb&quot;&gt;
+{{cite web| url = http://cm.bell-labs.com/cm/cs/who/dmr/bintro.html| title = The Programming Language B}}&lt;/ref&gt; with the following code:
+&lt;source lang=&quot;text&quot; style=&quot;overflow:auto&quot;&gt;
+ main( ) {
+   extrn a, b, c;
+   putchar(a); putchar(b); putchar(c); putchar('!*n');
+ }
+ a 'hell';
+ b 'o, w';
+ c 'orld';
+&lt;/source&gt;
+
+For modern languages, the hello world program tends to subtly grow in sophistication. For example, the [[Go programming language]] introduced a multilingual hello world program,&lt;ref&gt;[http://golang.org/doc/go_tutorial.html#tmp_20 A Tutorial for the Go Programming Language.] The Go Programming Language. Retrieved July 26, 2011.&lt;/ref&gt; [[Sun Microsystems|Sun]] demonstrated a [[Java (programming language)|Java]] hello world based on [[scalable vector graphics]],&lt;ref&gt;{{cite news|last=Jolif|first=Christophe|title=Bringing SVG Power to Java Applications|newspaper=Sun Developer Network|date=January 2003}}&lt;/ref&gt; and the [[XL (programming language)|XL]] programming language features a spinning Earth hello world using 3D graphics.&lt;ref&gt;{{cite web|last=de Dinechin|first=Christophe|title=Hello world!|url=http://grenouillebouillie.wordpress.com/2010/07/24/hello-world/|publisher=Grenouille Bouillie|date=July 24, 2010}}&lt;/ref&gt;
+[[Wikipedia]] founder [[Jimmy Wales]] announced during his presentation in Tuscaloosa's Ferguson Center Theater on September 2010 that Wikipedia's first live page was a 'Hello World' page.{{cn|date=September 2011}}
+
+==Variations==
+There are many variations on the punctuation and casing of the phrase. Variations include the presence or absence of the comma and exclamation mark, and the capitalization of the 'H', both the 'H' and the 'W', or neither. Some languages are forced to implement different forms, such as &quot;&lt;code&gt;HELLO WORLD!&lt;/code&gt;&quot;, on systems that only support capital letters, while many &quot;hello world&quot; programs in [[Esoteric programming language|esoteric languages]] print out a slightly modified string. For example, the first non-trivial [[Malbolge]] program printed &quot;HEllO WORld&quot;, this having been determined to be [[Principle of good enough|good enough]].
+
+There are variations in spirit, as well. [[Functional programming]] languages, like [[Lisp (programming language)|Lisp]], [[ML (programming language)|ML]] and [[Haskell (programming language)|Haskell]], tend to substitute a [[factorial]] program for Hello World, as the former emphasizes recursive techniques, which are a large part of functional programming, while the latter emphasizes I/O, which violates the spirit of pure functional programming by producing side effects.
+
+The [[Debian]] and [[Ubuntu (operating system)|Ubuntu]] [[Linux]] distributions provide the &quot;hello world&quot; program through the [[Advanced Packaging Tool|apt]] packaging system; this allows users to simply type &quot;apt-get install hello&quot; for the program to be installed, along with any [[dependency (software)|software dependencies]]. While of itself useless, it serves as a [[sanity check]] and a simple example to newcomers of how to install a package. It is significantly more useful for developers, however, as it provides an example of how to create a [[.deb]] package, either traditionally or using [[debhelper]], and the version of hello used, [[GNU]] hello, serves as an example of how to write a GNU program.&lt;ref&gt;[http://www.scriptol.com/programming/hello-world.php List of Hello World Programs in 200 Programming Languages.] Scriptol.com&lt;/ref&gt;
+
+== See also ==
+{{portalbox|Computer Science|Computing}}
+{{Div col|2}}
+*[[99 Bottles of Beer#References in science|&quot;99 Bottles Of Beer&quot; as used in computer science]]
+*[[Foobar]]
+*[[Hello world program examples]]
+*[[Just another Perl hacker]]
+*[[List of basic computer science topics]]
+*[[Trabb Pardo-Knuth algorithm]]
+*At [[Wikibooks]]:
+**[[b:Algorithm Implementation/Mathematics/Fibonacci Number Program|Algorithm Implementation/Mathematics/Fibonacci Number Program]]
+**[[b:Computer Programming/Hello world|Computer Programming/Hello world]]
+{{Div col end}}
+
+==References==
+{{reflist}}
+
+== External links ==
+{{wiktionary|Hello World}}
+{{Commons category|Hello World}}
+*[http://www.helloworldexample.net/ Hello World Examples] Hello World examples in many different programming languages.
+*[http://www.lysator.liu.se/c/bwk-tutor.html#simple-c ''Programming in C: A Tutorial''] by Brian Kernighan &amp;mdash; internal Bell Labs memo, containing the above C program
+&lt;!-- *[http://helloworldsite.he.funpic.de/ The Hello World Collection] with 400+ programs, including &quot;Hello World&quot; in 60+ human languages --&gt;
+*[http://boredzo.org/helloworld/ &quot;Hello World&quot; in four different ways - Worst possible to best possible]
+*[http://www.poromenos.org/node/89 The &quot;Hello World&quot; curve]
+&lt;!-- *[http://www.rawbw.com/~rem/HelloPlus/hellos.html &quot;HelloWorld online on Web, and steps beyond HelloWorld&quot;] --&gt;
+*[http://www.roesler-ac.de/wolfram/hello.htm Hello World collection] with 400+ programs, including &quot;Hello World&quot; in 60+ human languages
+*[http://msdn.microsoft.com/en-us/library/ms676538(VS.85).aspx MSDN â &quot;Hello Data&quot; example database]
+*[http://hellowiki.org HelloWiki.org], a wiki based Hello World collection, with helpful comments and links for starting.
+*[http://www.visual-prolog.com/video/HelloWorld/default.htm Hello World! Visual Prolog Video Tutorial] demonstrates basic IDE features while creating a [[Visual Prolog]] &quot;Hello World!&quot; program.
+
+
+{{Standard test item}}
+
+{{DEFAULTSORT:Hello World Program}}
+[[Category:Computer programming]]
+[[Category:Articles with example C code]]
+{{prog-lang-stub}}
+[[ar:Ø¨Ø±ÙØ§ÙØ¬ Ø£ÙÙØ§ Ø¨Ø§ÙØ¹Ø§ÙÙ]]
+[[az:Salam dÃ¼nya proqramÄ± (Hello World)]]
+[[bg:Hello, world]]
+[[bar:Servus-Woid-Programm]]
+[[bs:Hello world program]]
+[[ca:Hola mÃ³n]]
+[[cs:Hello world]]
+[[da:Hello world-program]]
+[[de:Hallo-Welt-Programm]]
+[[et:Hello world]]
+[[el:Î ÏÏÎ³ÏÎ±Î¼Î¼Î± hello world]]
+[[es:Hola mundo]]
+[[eo:Saluton, Mondo!]]
+[[eu:Kaixo mundua]]
+[[fa:Hello World]]
+[[fr:Hello world]]
+[[ko:Hello world íë¡ê·¸ë¨]]
+[[hy:Hello, World!]]
+[[id:Hello world]]
+[[ia:Hello World]]
+[[it:Hello world]]
+[[he:×ª××× ××ª Hello world]]
+[[ka:ááááá á¯ááá á¡ááá§áá á (áá ááá ááá)]]
+[[hu:âHellÃ³, vilÃ¡g!â program]]
+[[mk:Hello World]]
+[[ml:à´¹à´²àµ à´µàµàµ¾à´¡àµ (à´à´®àµà´ªàµà´¯àµà´àµà´àµ¼ à´ªàµà´°àµà´àµà´°à´¾à´)]]
+[[ms:Hello world]]
+[[nl:Hello world (programma)]]
+[[ja:Hello world]]
+[[no:Hello, world]]
+[[nn:Hello World]]
+[[pl:Hello world]]
+[[pt:Programa OlÃ¡ Mundo]]
+[[ro:Program Hello, world!]]
+[[ru:Hello, world!]]
+[[sah:Hello world]]
+[[sq:Njatjeta BotÃ« (programi)]]
+[[simple:Hello world program]]
+[[sk:Hello world]]
+[[sl:Pozdravljen, svet]]
+[[sr:Hello World]]
+[[sh:Hello World]]
+[[fi:Hei maailma -ohjelma]]
+[[sv:Hello World]]
+[[th:à¹à¸®à¸¥à¹à¸¥à¹à¸§à¸´à¸¥à¸à¹]]
+[[tr:Merhaba dÃ¼nya programÄ±]]
+[[uk:Hello world!]]
+[[ur:Hello World Program]]
+[[vi:Hello world]]
+[[zh:Hello World]]</rev></revisions></page></pages></query></api>

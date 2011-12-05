@@ -1,0 +1,645 @@
+<?xml version="1.0"?><api><query><pages><page pageid="19990354" ns="0" title="Features new to Windows 7"><revisions><rev xml:space="preserve">{{Windows 7}}
+Some of the new features included in [[Windows 7]] are advancements in touch, [[speech recognition|speech]], and [[handwriting recognition]], support for [[VHD (file format)|virtual hard disks]], support for additional [[file format]]s, improved performance on [[multi-core]] processors,&lt;ref&gt;{{cite web
+|url = http://blogs.zdnet.com/microsoft/?p=1612
+|title = Windows 7 to get parallel-processing tweaks
+|date = September 30, 2008
+|author = Mary Jo Foley
+|publisher = [[ZDNet]]
+|accessdate = 2009-04-29
+}}&lt;/ref&gt; improved [[booting|boot]] performance, and [[kernel (computer science)|kernel]] improvements.
+
+==Shell and user interface==
+Windows 7 retains the [[Windows Aero]] user interface and visual style first introduced with its predecessor, [[Windows Vista]], but many areas have seen enhancements.
+
+===Desktop===
+[[Image:Windows 7 Desktop Slide Show.png|thumb|right|Windows 7's Desktop Slideshow]]
+;Themes
+Support for themes has been extended in Windows 7. In addition to setting the colors of the window chrome, desktop background, desktop icons, mouse pointers and sound schemes, themes in Windows 7 include desktop slideshow settings. A new control panel interface, accessible through the &quot;Personalize&quot; context menu item on the desktop, has been introduced which provides the ability to customize and switch between themes, as well as download more themes from Microsoft's web site. Support for &quot;theme packs&quot; is included; theme packs are [[Cabinet (file format)|cabinet files]] with an extension of &lt;code&gt;.themepack&lt;/code&gt;, and consist of a &lt;code&gt;.theme&lt;/code&gt; as well as any number of image, sound, icon, and mouse cursor files.&lt;ref&gt;{{cite web
+|url=http://msdn.microsoft.com/en-us/library/bb773190(VS.85).aspx
+|title=Creating and Installing Theme Files
+|work=MSDN
+|publisher=Microsoft
+|accessdate=2009-04-12
+}}&lt;/ref&gt; Windows 7 recognizes this file format and will switch the user's theme to the theme contained inside when opened. A Windows 7 theme can also specify an [[RSS feed]] from which new desktop background images can be downloaded.
+
+The default theme is titled &quot;Windows 7&quot;, which consists of a single desktop background codenamed &quot;Harmony&quot; and the same sound scheme, desktop icons and mouse pointers as Windows Vista. Six new &quot;Aero Themes&quot; are included: Architecture, Characters, Landscapes, Nature, Scenes, and an additional country-specific theme that is determined based on the defined locale when the operating system is installed. The Windows 7 Beta includes themes for the United States, United Kingdom, Germany, Canada, Japan, South Africa and Australia, and while the theme for the user's home country is the only one displayed in the user interface, the files for all these themes are included in the operating system installation.&lt;ref&gt;{{cite web
+|url=http://blog.brothersoft.com/2009/01/18/how-to-activate-all-regional-themes-in-windows-7/
+|title=How to Activate All Regional Themes in Windows 7
+|date=January 17, 2009
+|accessdate=2009-04-12
+}}&lt;/ref&gt; Each of the themes included with Windows 7 consists of six desktop backgrounds each at 1920x1200 resolution; none of the desktop backgrounds included with Windows Vista are present in Windows 7. The country-specific desktop backgrounds depict both famous places in those countries (such as the [[Sydney]] skyline) as well as country scenes. A number of sound schemes are included, each associated with an included theme: Afternoon, Calligraphy, Characters, Cityscape, Delta, Festival, Garden, Heritage, Landscape, Quirky, Raga, Savanna, and Sonata.
+
+Additional theme packs are available as free downloads from Microsoft's web site.
+
+;Desktop Slideshow
+Windows 7 includes a desktop slideshow that changes the desktop background in a designated amount of time with a smooth fading transition. This feature supports pre-downloaded sets of wallpapers and also supports photo [[RSS]] feed.
+
+;Gadgets
+Windows Vista introduced [[Microsoft Gadgets|Gadgets]] and a sidebar which provides the ability to anchor Gadgets to the side of the user's desktop. In Windows 7, the sidebar has been removed, while gadgets can still be placed on the desktop. Gadgets snap to certain positions on the desktop and from each other; dragging with the Shift key held down prevents gadgets from automatically snapping into position. Windows 7 adds a [[Windows Media Center]] gadget to the default collection while removing the Contacts and Notes gadgets.
+
+Managing gadgets is more closely integrated with Windows Explorer, but the gadgets themselves continue to operate in a separate &lt;code&gt;sidebar.exe&lt;/code&gt; process.&lt;ref&gt;{{cite web
+|url=http://msdn.microsoft.com/en-us/library/dd370867(VS.85).aspx
+|title=Introduction to the Gadget Platform
+|work=MSDN
+|publisher=Microsoft
+|accessdate=2009-04-12
+}}&lt;/ref&gt; The Desktop context menu includes a new &quot;Gadgets&quot; menu option to access the gadget gallery, and a &quot;View&quot; sub-menu option to show or hide gadgets. Hiding gadgets results in the &lt;code&gt;sidebar.exe&lt;/code&gt; process being unloaded, which Microsoft says is a power-saving practice. Unlike Windows Vista, all gadgets run in a single process, which saves memory, and the process is not run at all if the user has no gadgets on the desktop. Gadgets can be brought to the foreground on top of active applications by pressing Win+G.
+
+;Branding and customization
+OEMs and enterprises are able to customize the logon screen wallpaper of Windows 7 that is displayed before a user logs on.
+
+===Windows Explorer===
+[[File:Windows 7 - Windows Explorer.png|thumb|[[Windows Explorer]]'s revised user interface.]]
+
+====Libraries====
+Windows Explorer in Windows 7 supports file that aggregates content from various locations - including shared folders on networked systems if the shared folder has been indexed by the host system - and presents them in a unified view. The libraries hide the actual location the file is stored in. Searching in a library automatically federates the query to the remote systems, in addition to searching on the local system, so that files on the remote systems are also searched. Unlike search folders, Libraries are backed by a physical location which allows files to be saved in the Libraries. Such files are transparently saved in the backing physical folder. The default save location for a library may be configured by the user, as can the default view layout for each library. Libraries are generally stored in the ''Libraries'' special folder, which allows them to be displayed on the navigation pane.
+
+By default, a new user account in Windows 7 contains four libraries for different file types: Documents, Music, Pictures, and Videos. They are configured to include the user's profile folders for these respective file types, as well as the computer's corresponding Public folders. The Public folder also contains a hidden Recorded TV library that appears in the Windows Explorer sidepane when TV is set up in Media Center for the first time.
+
+In addition to aggregating multiple storage locations, Libraries enable Arrangement Views and Search Filter Suggestions. Arrangement Views allow you to pivot your view of the library's contents based on metadata. For example, selecting the &quot;By Month&quot; view in the Pictures library will display photos in stacks, where each stack represents a month of photos based on the date they were taken. In the Music library, the &quot;By Artist&quot; view will display stacks of albums from the artists in your collection, and browsing into an artist stack will then display the relevant albums.
+
+Search Filter Suggestions are a new feature of the Windows 7 Explorer's search box. When the user clicks in the search box, a menu shows up below it showing recent searches as well as suggested [[Advanced Query Syntax]] filters that the user can type. When one is selected (or typed in manually), the menu will update to show the possible values to filter by for that property, and this list is based on the current location and other parts of the query already typed. For example, selecting the &quot;tags&quot; filter or typing &quot;tags:&quot; into the search box will display the list of possible tag values which will return search results.
+
+Arrangement Views and Search Filter Suggestions are database-backed features which require that all locations in the Library be indexed by the Windows Search service. Local disk locations must be indexed by the local indexer, and Windows Explorer will automatically add locations to the indexing scope when they are included in a library. Remote locations can be indexed by the indexer on another Windows 7 machine, on a Windows machine running [[Windows Search 4]] (such as Windows Vista or Windows Home Server), or on another device that implements the MS-WSP remote query protocol.&lt;ref&gt;{{cite web
+|url=http://msdn.microsoft.com/en-us/library/cc251767(PROT.10).aspx
+|title=MS-WSP: Windows Search Protocol
+|work=MSDN Library
+|publisher=Microsoft
+|date=2006-12-18
+|accessdate=2009-06-10
+}}&lt;/ref&gt;
+
+====Federated search====
+Windows Explorer also supports federating search to external data sources, such as custom databases or web services, that are exposed over the web and described via an [[OpenSearch]] definition. The federated location description (called a ''Search Connector'') is provided as a &lt;code&gt;.osdx&lt;/code&gt; file. Once installed, the data source becomes queryable directly from Windows Explorer. Windows Explorer features, such as previews and thumbnails, work with the results of a federated search as well.
+
+====Miscellaneous shell enhancements====
+* Windows 7 supports creating cascaded context menus with static verbs in submenus using the [[Windows Registry|Registry]] instead of a [[shell extension]].&lt;ref&gt;[http://msdn.microsoft.com/en-us/library/cc144171(VS.85).aspx Creating Context Menu Handlers]&lt;/ref&gt;
+* Custom verbs per folder through ''desktop.ini'' &lt;ref&gt; [http://msdn.microsoft.com/en-us/library/hh127441(v=vs.85).aspx How to Implement Custom Verbs for Folders through Desktop.ini] &lt;/ref&gt;
+* The search box in the Explorer window and the address bar can be resized.
+* Certain folders in the navigation pane can be hidden to reduce clutter.
+* Progress bars and overlay icons on an application's button on the taskbar.
+* Content view which shows thumbnails and metadata.
+* Buttons to toggle the preview pane and create a new folder.
+* Storage space progress bars that were only present for hard disks in Vista are now shown for removable storage devices.
+* Explorer view control supports multi-width columns in ''List view''.
+* File types for which property handlers or [[iFilter]]s are installed are re-indexed by default.
+
+===Start menu===
+The start orb now has a fade-in highlight effect when the user moves the mouse over it.
+
+[[File:Windows 7 Start Menu - search results.png|thumb|The search results pane in Windows 7, demonstrating a search for the word &quot;wireless&quot;.]]
+Windows 7's [[Start menu]] retains the two-column layout of its predecessors, with several functional changes:
+
+* The &quot;Documents&quot;, &quot;Pictures&quot; and &quot;Music&quot; buttons now link to the Libraries of the same name.
+* A &quot;Devices and Printers&quot; option has been added that displays a new device manager.
+* The &quot;shut down&quot; icon in Windows Vista has been replaced with a text link indicating what action will be taken when the icon is clicked. The default action to take is now configurable through the Taskbar and Start Menu Properties window.
+* Taskbar [[jumplist|Jump Lists]] are presented in the Start Menu via a [[guillemet]]; when the user moves the mouse over the guillemet, or presses the right-arrow key, the right-hand side of the Start menu is widened and replaced with the application's Jump List.
+
+The search box, first introduced with Windows Vista, has been extended to support searching Control Panel items. For example, clicking the Start button then typing &quot;wireless&quot; will show Control Panel options related to configuring and connecting to wireless network, adding Bluetooth devices, and troubleshooting. [[Group Policy]] settings for Windows Explorer provide the ability for administrators of an [[Active Directory]] domain, or an expert user to add up to five Internet web sites and five additional &quot;search connectors&quot; to the Search Results view in the Start menu. The links, which appear at the bottom of the pane, allow the search to be executed again on the selected web site or search connector. Microsoft suggests that network administrators could use this feature to enable searching of corporate Intranets or an internal [[Microsoft SharePoint|SharePoint]] server.&lt;ref&gt;{{cite web
+|url=http://blogs.msdn.com/e7/archive/2009/03/23/federating-windows-search-with-enterprise-data-sources.aspx
+|title=Federating Windows Search with Enterprise Data Sources
+|work=Engineering Windows 7
+|publisher=Microsoft
+|date=March 23, 2009
+|accessdate=2009-04-12
+}}&lt;/ref&gt;
+
+===Taskbar===
+The [[taskbar|Windows Taskbar]] has seen its most significant revision since its introduction in [[Windows 95]]. The taskbar is 10 [[pixel]]s taller than in Windows Vista to accommodate touch screen input and a new larger default icon size (although a smaller taskbar size is available), as well as maintain proportion to newer high resolution monitor modes. Running applications are denoted by a border frame around the icon. Within this border, a color effect (dependent on the predominant RGB value of the icon) that follows the mouse also indicates the opened status of the application. Applications can be pinned to the taskbar, so that shortcuts to them appear when they are not running. The glass taskbar is also more transparent. Taskbar buttons show icons by default, not application titles, unless they are set to 'not combine'. In this case, only icons are shown when the application is not running.
+
+[[Image:Windows 7 Taskbar.png|thumb|710px|center|The Windows 7 taskbar.]]
+
+;Pinned applications
+:The Quick Launch toolbar has been removed from default configuration, but may be easily added.&lt;ref&gt;[http://www.howtogeek.com/howto/windows-7/add-the-quick-launch-bar-to-the-taskbar-in-windows-7/ Add the Quick Launch Bar to the Taskbar in Windows 7]&lt;/ref&gt; The Windows 7 taskbar is more application-oriented than window-oriented, and therefore doesn't show window titles (these are shown when an application icon is clicked or hovered over, provided there are multiple windows for the application). Applications can now be pinned to the taskbar allowing the user instant access to the applications they commonly use. There are a few ways to pin applications to the taskbar. Icons can be dragged and dropped onto the taskbar, or the applicationâs icon can be right-clicked to pin it to the taskbar.
+
+[[Image:Windows 7 Aero Peak.png|thumb|left|The Windows 7 taskbar shows a preview of the window.]]
+;Thumbnail previews
+:Thumbnail previews which were introduced in Windows Vista have been expanded to not only preview the windows opened by the application in a small-sized thumbnail view, but to also interact with them. The user can close any window opened by clicking the X on the corresponding thumbnail preview. The name of the window is also shown in the thumbnail preview. A &quot;peek&quot; at the window is obtained by hovering over the thumbnail preview. Peeking brings up only the window of the thumbnail preview over which the mouse hovers, and turns any other windows on the desktop transparent. This also works for tabs in Internet Explorer: individual tabs may be peeked at in the thumbnail previews.Thumbnail previews integrate Thumbnail Toolbars &lt;ref&gt;[http://msdn.microsoft.com/en-us/magazine/dd942846.aspx#id0420081 Introducing The Taskbar APIs]&lt;/ref&gt; which can control the application from the thumbnail previews themselves. For example, if Windows Media Player is opened and the mouse is hovering on the application icon, the thumbnail preview will allow the user the ability to Play, Stop, and Play Next/Previous track without having to switch to the Windows Media Player window.
+
+[[Image:Windows Media Player JumpList.png|thumb|right|[[Windows Media Player]] Jump List.]]
+;Jump list
+:These are menu options available by right-clicking any icon on the taskbar or by holding the left mouse button and sliding towards the center of the desktop on an icon. Each application has unique jump lists which correspond to the features unique to the application, such as files recently opened or common tasks. For example, a Microsoft Word jump list might display all the recent documents opened; the Windows Media Player jump list displays recently played tracks and playlists that have been played. Internet Explorer's jump list displays recent history of websites and the ability to open a new tab or start InPrivate Browsing. Windows Live Messenger's jump list displays select common tasks such as instant messaging, signing off, and changing online status. While up to 10 menu items may appear on a jump list by default, Windows 7 provides the ability to customize this.&lt;ref&gt;[http://malektips.com/windows-7-jump-list-size-increase-decrease.html MalekTips.Com: Adjust Size of Jump Lists on Windows 7 Taskbar]&lt;/ref&gt;
+
+[[Image:Windows 7 Action Center - Balloon.png|left|thumb|The redesigned notification area and a balloon notification showing the [[Windows security center|Action Center]] messages.]]
+[[Image:Action-centre-warning.PNG|thumb|right|When the action center detects a security threat, it displays a thumbnail with problems listed.]]
+;Notification area
+:The notification area has been redesigned; the standard Volume, Network, Power and Action Center status icons are present, but no other application icons are shown unless the user has chosen them to be shown. A new &quot;Notification Area Icons&quot; control panel has been added which replaces the &quot;Customize Notification Icons&quot; dialog box in the &quot;Taskbar and Start Menu Properties&quot; window first introduced in [[Windows XP]]. In addition to being able to configure whether the application icons are shown, the ability to hide each application's notification [[Balloon help|balloons]] has been added. The user can then view the notifications at a later time.
+
+:A triangle to the left of the visible notification icons displays the hidden notification icons. Unlike Windows Vista and Windows XP, the hidden icons are displayed in a window above the taskbar, instead of on the taskbar. Icons can be dragged between this window and the notification area.
+
+[[Image:Aero Peek.png|thumb|Windows 7 desktop displayed through Peek.]]
+;Aero Peek
+:In past versions of Windows, the taskbar ended with the notification area on the right side. However, there is now the Aero Peek button, which, when clicked or hovered over with the mouse, displays the desktop and gadgets by turning all windows transparent. This replaces the ''Show Desktop'' shortcut in the Quick Launch bar in previous versions of Windows. Aero Peek exhibits the same features used by the thumbnail previews, except it applies them to the desktop. If the mouse hovers over it, all windows are transparent, as shown in the picture. If the button is clicked, all applications are minimized, and when clicked again, they are restored.
+
+===Window management mouse gestures===
+;Aero Snap â window maximizing and tiling
+:Windows can be dragged to the top of the screen to maximize them and dragged away to restore them. Dragging a window to the left or right of the screen makes it take up half the screen allowing the user to tile two windows next to each other. Also resizing the window to the bottom of the screen or top will extend the window full but retain the width of the window.&lt;ref&gt;{{cite web
+|url=http://arstechnica.com/articles/paedia/windows-7-beta.ars/4
+|title=Deep inside the Windows 7 Public Beta: an in-depth tour
+|date=11 January 2009
+|accessdate=2009-01-13
+|publisher=arstechnica.com
+}}&lt;/ref&gt; These features can be disabled via the Ease of Access Center if users do not wish the windows to automatically resize.&lt;ref&gt;[http://malektips.com/windows-7-disable-window-dock-maximize.html MalekTips.Com: Disable Automatic Docking and Maximizing of Windows]&lt;/ref&gt;
+
+;Aero Shake
+:Aero Shake allows users to clear up any clutter on their screen by shaking (dragging back and forth) a window of their choice with the mouse. All other windows will minimize, while the window the user shook stays active on the screen.&lt;ref&gt;{{cite web
+|url=http://w7info.com/articles/2009/01/aero-shake-feature-hd-video/
+|title=Aero Shake Feature - HD Video
+|last=Pennington
+|first=Kenneth
+|date=8 January 2009
+|accessdate=2009-01-09
+|publisher=w7info.com
+}}&lt;/ref&gt; When the window is shaken again, they are all restored, similar to desktop preview.
+
+===Keyboard shortcuts===
+A variety of new keyboard shortcuts have been introduced, over and above those introduced with Windows Vista.&lt;ref&gt;{{cite web
+|url=http://brandonlive.com/2009/01/10/windows-7-beta-hotkey-cheat-sheet/
+|title=Windows 7 Beta hotkey cheat sheet
+|date=10 January 1009
+|accessdate=2009-01-18
+|last=Paddock
+|first=Brandon
+}}&lt;/ref&gt;&lt;ref&gt;{{cite web
+|url=http://topwindows7themes.com
+|title=Windows 7 Beta Shortcuts Overview
+|date=31 May 1009
+|accessdate=2009-05-31
+|last=Steinmetz
+|first=Oliver
+}}&lt;/ref&gt;
+
+Global keyboard shortcuts:
+* '''Windows key + [[Space bar]]''' operates as a keyboard shortcut for Aero Peek.
+* '''Windows key + Up''' maximizes the current window.
+* '''Windows key + Down''' if current window is maximized, restores it; otherwise minimizes current window.
+* '''Windows key + Shift + Up''' maximizes the current window, in the vertical direction only.
+* '''Windows key + Left''' snaps the current window to the left edge of the screen.
+* '''Windows key + Right''' snaps the current window to the right half of the screen.
+* '''Windows key + Shift + Left''' and '''Windows key + Shift + Right''' move the current window to the left or right display.
+* '''Windows key + &lt;big&gt;+&lt;/big&gt;''' (plus sign) functions as zoom in command wherever applicable.
+* '''Windows key + &lt;big&gt;â&lt;/big&gt;''' (minus sign) functions as zoom out command wherever applicable.
+* '''Windows key + &lt;big&gt;ESC&lt;/big&gt;''' (Escape key) turn off zoom once enabled.
+* '''Windows key + Home''' operates as a keyboard shortcut for Aero Shake.
+&lt;!--* '''Windows key + B''' - Move focus to notification tray (the right-most portion of the taskbar)--&gt;
+&lt;!--* '''Windows key + D''' - Toggle showing the desktop--&gt;
+&lt;!--* '''Windows key + E''' - Run Windows Explorer--&gt;
+&lt;!--* '''Windows key + F''' - Search window--&gt;
+&lt;!--* '''Windows key + G''' displays all the Gadgets above other windows--&gt;
+&lt;!--* '''Windows key + L''' - Lock the computer--&gt;
+&lt;!--* '''Windows key + M''' - Minimize all open windows--&gt;
+&lt;!--* '''Windows key + Shift + M''' - Undo all window minimization--&gt;
+* '''Windows key + P''' shows an &quot;external display options&quot; selector that gives the user the choice of showing the desktop on only the computer's screen, only the external display, with the same output on both (clone), or on both displays with independent desktops (extend).
+&lt;!--* '''Windows key + U''' - Open Ease of Access Center--&gt;
+&lt;!--* '''Windows key + R''' - Open âRunâ command --&gt;
+&lt;!--* '''Windows key + T''' provides keyboard focus to the taskbar, then cycles the keyboard focus through taskbar items. '''Windows key + 1'''through '''Windows key + 0''' provide immediate shortcuts to the first ten pinned taskbar items (previously this launched items from QuickLaunch)--&gt;
+&lt;!--* '''Windows key + X''' - Run Windows Mobility Center--&gt;
+
+Taskbar:
+* '''Shift + Click''', or '''Middle click''' starts a new instance of the application, regardless of whether it's already running.
+* '''Ctrl + Shift + Click''' starts a new instance with Administrator privileges; by default, a [[User Account Control]] prompt will be displayed.
+* '''Shift + Right-click''' shows the classic Window menu (Restore / Minimize / Move / etc.); right-clicking on the application's thumbnail image will also show this menu. If the icon being clicked on is a grouped icon, the classic menu with Restore All / Minimize All / Close All menu is shown.
+* '''Ctrl + Click''' on a grouped icon cycles between the windows (or tabs) in the group.
+
+Windows Explorer:
+* '''Shift + Right-click''' on an application icon allows a process to be started as a different user.
+
+===Font management===
+The user interface for font management has been overhauled.&lt;ref&gt;{{cite web
+|url=http://www.istartedsomething.com/20081030/improvements-to-fonts-in-windows-7/
+|title=Improvements to fonts in Windows 7
+|last=Zheng
+|first=Long
+|date=30 October 2008
+|accessdate=2008-12-11
+|publisher=istartedsomething.com
+}}&lt;/ref&gt; As with Windows Vista, the collection of installed fonts is shown in a Windows Explorer window, but fonts from the same font family appear as &quot;stacks&quot; instead of as individual icons. A user can then double-click on the font stack and see the individual font. A preview of the font is displayed as part of the icon as well. New options for hiding installed fonts are included; a hidden font remains installed, but is not enumerated when an application asks for a list of available fonts. Windows Vista had received considerable criticism for including the same &quot;Add Font&quot; dialog that had existed as far back as [[Windows NT 3.1]]; this dialog has been removed.
+
+The Font dialog box&lt;ref&gt;{{cite web
+|url=http://msdn.microsoft.com/en-us/library/ms646958(VS.85).aspx
+|title=Font Dialog Box
+|date=2009-04-21
+|work=MSDN
+|publisher=Microsoft
+}}&lt;/ref&gt; has also been updated to show previews of the font selection in the selection lists.&lt;ref&gt;{{cite web
+|url=http://msdn.microsoft.com/en-us/library/dd371704(VS.85).aspx
+|title=ChooseFont() Win32 Common Dialog
+|date=2009-04-21
+|work=MSDN
+|publisher=Microsoft
+}}&lt;/ref&gt;
+
+The fontview.exe default font viewing application has replaced the &quot;Properties&quot; button with a &quot;Install&quot; button.
+
+===Devices===
+There are two major new user interface components for device management in Windows 7, &quot;Devices and Printers&quot; and &quot;Device Stage&quot;. Both of these are integrated with Windows Explorer, and together provide a simplified view of what devices are connected to the computer, and what capabilities they support.
+
+;Devices and Printers:
+[[File:Win7Devicemanager.png|thumb|The new Devices and Printers Control Pane; custom icons can be downloaded via the Internet.]]
+Devices and Printers is a new Control Panel interface that is directly accessible from the Start menu. Unlike the [[Device Manager]] Control Panel applet, which is still present, the icons shown on the Devices and Printers screen is limited to components of the system that a non-expert user will recognize as plug-in devices. For example, an external monitor connected to the system will be displayed as a device, but the internal monitor on a laptop will not. Device-specific features are available through the [[context menu]] for each device; an external monitor's context menu, for example, provides a link to the &quot;Display Settings&quot; control panel.
+
+This new Control Panel applet also replaces the &quot;Printers&quot; window in prior versions of Windows; common printer operations such as setting the default printer, installing or removing printers, and configuring properties such as paper size are done through this control panel.
+
+Windows 7 and Server 2008 R2 introduce print driver isolation, which improves the reliability of the print spooler by running printer drivers in a separate process to the spooler service. If a third party print driver fails while isolated, it does not impact other drivers or the print spooler service.
+
+;Device Stage:
+[[File:Windows 7 - Device Stage (Sansa e250).png|thumb|A Device Stage window showing available options for a [[Kodak]] ESP 9 [[Multifunction Printer]].]]
+Device Stage provides a centralized location for an externally-connected multi-function device to present its functionality to the user. When a device such as a [[portable music player]] is connected to the system, the device appears as an icon on the task bar, as well as in Windows Explorer.
+
+Windows 7 ships with high-resolution images of a number of popular devices, and is capable of connecting to the Internet to download images of devices it doesn't recognize. Opening the icon presents a window that displays actions relevant to that device. Screenshots of the technology presented by Microsoft suggest that a mobile phone could offer options for two-way synchronization, configuring ring-tones, copying pictures and videos, managing the device in [[Windows Media Player]], and using Windows Explorer to navigate through the device.&lt;ref&gt;{{cite web
+|url=http://arstechnica.com/microsoft/news/2008/10/arspdc-the-new-device-stage-in-windows-7.ars
+|title=Ars@PDC: The new &quot;Device Stage&quot; in Windows 7
+|last=Mackey
+|first=Kurt
+|work=One Microsoft Way
+|publisher=[[Ars Technica]]
+|date=October 31, 2008
+|accessdate=2009-04-12
+}}&lt;/ref&gt; Other device status information such as free memory and battery life can also be shown. The actual per-device functionality is defined via XML files that are downloaded when the device is first connected to the computer, or are provided by the manufacturer on an installation disc.&lt;ref&gt;{{cite web
+|url=http://msdn.microsoft.com/en-us/library/dd445710.aspx
+|title=Device Experience for Printers, Scanners, and Multifunction Printers
+|work=MSDN
+|publisher=Microsoft
+|accessdate=2009-04-12
+}}&lt;/ref&gt;
+
+==Multi-touch==
+Hilton Locke, who worked on the [[Microsoft Tablet PC|Tablet PC]] team at Microsoft, reported on December 11, 2007 that Windows 7 will have new touch features on devices supporting [[multi-touch]]. An overview and demonstration of the multi-touch capabilities, including a virtual piano program, a mapping and directions program and a touch-aware version of [[Paint (software)|Paint]], was given at the All Things Digital Conference on May 27, 2008. A video of the multi-touch capabilities was made available on the web later the same day.&lt;ref&gt;{{cite web
+ | author = Windows Vista Team Blog
+ | publisher = [[MSDN]] Blogs
+ | url = http://windowsvistablog.com/blogs/windowsvista/archive/2008/05/27/microsoft-demonstrates-multi-touch.aspx
+ | title = Microsoft demonstrates Multi-touch
+ | accessdate = 2008-05-28}}&lt;/ref&gt;
+
+==Graphics==
+===DirectX===
+* [[Direct3D#Direct3D 11|Direct3D 11]] is included with Windows 7. It is a strict super-set of Direct3D 10.1, which was introduced in Windows Vista Service Pack 1 and Windows Server 2008.
+* [[Direct2D]] and [[DirectWrite]], new [[hardware acceleration|hardware-accelerated]] [[vector graphics]] and [[font rendering]] [[API]]s built on top of Direct3D 10 that are intended to replace [[Graphics Device Interface|GDI]]/GDI+ for screen-oriented native-code graphics and text drawing. They can be used from managed applications with the [http://code.msdn.microsoft.com/WindowsAPICodePack Windows API Code Pack]
+* [[Windows Advanced Rasterization Platform]] (WARP), a software rasterizer component for DirectX that provides all of the capabilities of Direct3D 10.0 and 10.1 in software.&lt;ref&gt;{{cite web
+|url=http://msdn.microsoft.com/en-us/library/dd285359.aspx
+|title=Windows Advanced Rasterization Platform (WARP) In-Depth Guide
+|author=Andy Glaister
+|date=November 2008
+|accessdate=2008-11-30
+|publisher=Microsoft
+}}&lt;/ref&gt;
+* [[DirectX Video Acceleration]]-[[HDTV|High Definition]] (DXVA-HD)&lt;ref name=&quot;DXVA-HD&quot;&gt;{{cite web|url=http://msdn.microsoft.com/en-us/library/dd835187.aspx|title=Windows DDK - DXVA-HD|publisher=MSDN|accessdate=2009-06-13}}&lt;/ref&gt;
+
+Direct3D 11, Direct2D, DirectWrite, [[DirectX Graphics Infrastructure|DXGI]] 1.1, WARP and several other components will be available for Windows Vista SP2 and Windows Server 2008 SP2 by installing the [[Windows Vista Platform Update#Platform Update|Platform Update for Windows Vista]].&lt;ref&gt;[http://blogs.msdn.com/directx/archive/2009/09/10/windows-7-transition-pack-for-windows-vista.aspx The Platform Update for Windows Vista]&lt;/ref&gt;
+
+===Desktop Window Manager===
+First introduced in Windows Vista, the [[Desktop Window Manager]] (DWM) in Windows 7 has been updated to use version 10.1 of [[Direct3D#Direct3D 10|Direct3D]] API, and its performance has been improved significantly.&lt;ref&gt;{{cite web
+|url=http://blogs.msdn.com/e7/archive/2009/04/25/engineering-windows-7-for-graphics-performance.aspx
+|title=Engineering Windows 7 Graphics Performance
+|publisher=Microsoft
+|date=April 25, 2009
+|accessdate=2009-07-20
+}}&lt;/ref&gt;
+
+The Desktop Window Manager still requires at least a Direct3D 9-capable video card (supported with new {{code|D3D10_FEATURE_LEVEL_9_n}} &lt;ref name=&quot;d3dfeaturelevel&quot;&gt;{{cite web|url=http://msdn.microsoft.com/en-us/library/ee415631(VS.85).aspx|title=MSDN - DirectX SDK - Direct3D 10 - D3D10_FEATURE_LEVEL|accessdate=2009-11-22|publisher=Microsoft}}&lt;/ref&gt; device type introduced with the Direct3D 11 runtime).
+
+With a video driver conforming to [[Windows Display Driver Model]] v1.1, [[DXGI]] kernel in Windows 7 provides 2D hardware acceleration to APIs such as [[Graphics Device Interface|GDI]], Direct2D and DirectWrite (though GDI+ was not updated to use this functionality). This allows DWM to use significantly lower amounts of system memory, which do not grow regardless of how many windows are opened, like it was in Windows Vista.&lt;ref&gt;{{cite web
+|url=http://www.extremetech.com/article2/0,2845,2334155,00.asp
+|title=Microsoft Windows 7 Next-Gen Graphics
+|last=Cross
+|first=Jason
+|publisher=ExtremeTech
+|date=November 10, 2008
+|accessdate=2009-04-12
+}}&lt;/ref&gt; Systems equipped with a WDDM 1.0 video card will operate in the same fashion as in Windows Vista, using software-only rendering.
+
+The Desktop Window Manager in Windows 7 also adds support for systems using multiple heterogeneous graphics cards from different vendors.&lt;ref&gt;{{cite web
+|first=Wolfgang
+|last=Gruener
+|url=http://www.tgdaily.com/content/view/35641/118/
+|title=TG Daily - Windows Vista successor scheduled for a H2 2009 release?
+|publisher=TG Daily
+|date=January 16, 2008
+|accessdate=2009-04-21
+}}&lt;/ref&gt;
+
+===Other changes===
+Support for color depths of 30 and 48 bits is included, along with the wide color gamut [[scRGB]] (which for [[High-Definition Multimedia Interface|HDMI]] 1.3 can be converted and output as [[xvYCC]]). The video modes supported in Windows 7 are 16-bit sRGB, 24-bit sRGB, 30-bit sRGB, 30-bit with extended color gamut sRGB, and 48-bit scRGB.&lt;ref&gt;{{cite web|url=http://download.microsoft.com/download/5/E/6/5E66B27B-988B-4F50-AF3A-C2FF1E62180F/GRA-T583_WH08.pptx |title=WinHEC 2008 GRA-583: Display Technologies |publisher=Microsoft |date=2008-11-06 |accessdate=2008-12-04}}&lt;/ref&gt;&lt;ref&gt;{{cite web|url=http://news.softpedia.com/news/Windows-7-High-Color-Support-98741.shtml |title=Windows 7 High Color Support |publisher=Softpedia |date=2008-11-26 |accessdate=2008-12-05}}&lt;/ref&gt;
+
+Each user of Windows 7 and Server 2008 R2 has individual DPI settings, rather than the machine having a single setting as in previous versions of Windows. DPI settings can be changed by logging on and off, without needing to restart.&lt;ref&gt;{{cite web
+|url=http://msdn.microsoft.com/en-us/library/dd371771(VS.85).aspx
+|title=User Interface - High DPI Awareness
+|date=2009-04-21
+|work=MSDN
+|publisher=Microsoft
+}}&lt;/ref&gt;
+
+==Miscellaneous improvements==
+* [[AVCHD]] camera support and Universal Video Class 1.1
+* Protected Broadcast Driver Architecture (PBDA) for [[TV tuner]] cards, first implemented in Windows Media Center TV Pack 2008 for Windows Vista.
+* Support for up to 256 logical processors&lt;ref&gt;[http://www.engadget.com/2008/10/28/windows-7-details-galore-interface-tweaks-netbook-builds-medi/ Windows 7 details galore: interface tweaks, netbook builds, Media Center enhancements]&lt;/ref&gt;
+* Fewer hardware locks and greater parallelism&lt;ref&gt;{{cite web
+|url=http://blogs.msdn.com/philpenn/archive/2009/01/02/fewer-hardware-locks-and-greater-parallelism.aspx
+|title=Break up of the Dispatcher Lock: The most contended spinlock in the kernel was replaced with several finer grained synchronization mechanisms by Arun Kishan.
+|date=January 2, 2009
+|accessdate=2009-05-07
+|publisher=Microsoft
+}}&lt;/ref&gt;
+* Timer coalescing: modern processors and chipsets can switch to very low power usage levels while the CPU is idle. In order to reduce the number of times the CPU enters and exits idle states, Windows 7 introduces the concept of &quot;timer coalescing&quot;; multiple applications or device drivers which perform actions on a regular basis can be set to occur at once, instead of each action being performed on their own schedule. This facility is available in both kernel mode, via the &lt;code&gt;KeSetCoalesableTimer &lt;/code&gt; API (which would be used in place of &lt;code&gt;KeSetTimerEx&lt;/code&gt;), and in user mode with the &lt;code&gt;SetWaitableTimerEx&lt;/code&gt; [[Windows API]] call (which replaces &lt;code&gt;SetWaitableTimer&lt;/code&gt;).&lt;ref&gt;{{cite web
+|url=http://www.microsoft.com/whdc/system/pnppwr/powermgmt/TimerCoal.mspx
+|title=Windows Timer Coalescing
+|date=January 20, 2009
+|accessdate=2009-04-21
+|publisher=Microsoft
+}}&lt;/ref&gt;
+* Multi-function devices and Device Containers: Prior to Windows 7, every device attached to the system was treated as a single functional end-point, known as a ''devnode'', that has a set of capabilities and a &quot;status&quot;. While this is appropriate for single-function devices (such as a keyboard or scanner), it does not accurately represent multi-function devices such as a combined printer, fax machine, and scanner, or web-cams with a built-in microphone. In Windows 7, the drivers and status information for multi-function device can be grouped together as a single &quot;Device Container&quot;, which is presented to the user in the new &quot;Devices and Printers&quot; Control Panel as a single unit. This capability is provided by a new [[Plug and Play]] property, &lt;code&gt;ContainerID&lt;/code&gt;, which is a [[Globally Unique Identifier]] that is different for every instance of a physical device. The Container ID can be embedded within the device by the manufacturer, or created by Windows and associated with each devnode when it is first connected to the computer. In order to ensure the uniqueness of the generated Container ID, Windows will attempt to use information unique to the device, such as a [[MAC address]] or USB serial number. Devices connected to the computer via [[USB]], [[IEEE 1394 interface|IEEE 1394]] (FireWire), [[eSATA]], [[PCI Express]], [[Bluetooth]], and [[Windows Rally]]'s PnP-X support can make use of Device Containers.&lt;ref&gt;{{cite web
+|url=http://www.microsoft.com/whdc/Device/DeviceExperience/ContainerIDs.mspx
+|title=Multifunction Device Support and Device Container Groupings in Windows 7
+|date=March 25, 2009
+|accessdate=2009-04-21
+|publisher=Microsoft
+}}&lt;/ref&gt;
+* [[Windows Installer]] 5.0 supports installing and configuring [[Windows Service]]s,&lt;ref&gt;{{cite web
+|url=http://blogs.msdn.com/windows_installer_team/archive/2009/03/04/enhanced-service-configuration-with-windows-installer-5-0.aspx
+|title=Enhanced Service Configuration with Windows Installer 5.0
+|date=March 4, 2009
+|accessdate=2009-04-21
+|work=Windows Installer Team Blog
+|publisher=Microsoft
+}}&lt;/ref&gt; and provides developers with more control over setting permissions during software installation.&lt;ref&gt;{{cite web
+|url=http://blogs.msdn.com/windows_installer_team/archive/2009/03/05/enhanced-permissions-setting-with-windows-installer-5-0.aspx
+|title=Enhanced Permissions Setting with Windows Installer 5.0
+|date=March 5, 2009
+|accessdate=2009-04-21
+|work=Windows Installer Team Blog
+|publisher=Microsoft
+}}&lt;/ref&gt; Neither of these features will be available for prior versions of Windows; custom actions to support these features will continue to be required for Windows Installer packages that need to implement these features.
+* User-Mode Scheduling: The 64-bit versions of Windows 7 and Server 2008 R2 introduce a user-mode scheduling framework.&lt;ref&gt;{{cite web
+|url=http://msdn.microsoft.com/en-us/library/dd627187(VS.85).aspx
+|title=User-Mode Scheduling
+|accessdate=2009-04-21
+|work=MSDN
+|publisher=Microsoft
+}}&lt;/ref&gt; On Microsoft Windows operating systems, scheduling of threads inside a process is handled by the kernel. While for most applications this is sufficient, applications with large concurrent threading requirements, such as a database server, can benefit from having a thread scheduler in-process. This is because the kernel no longer needs to be involved in context switches between threads, and it obviates the need for a [[Thread pool pattern|thread pool]] mechanism as threads can be created and destroyed much more quickly when no kernel context switches are required.
+
+* Windows 7 will also contain a new [[IEEE 1394 interface|FireWire (IEEE 1394)]] stack that fully supports IEEE 1394b with S800, S1600 and S3200 data rates.&lt;ref&gt;{{cite web|url=http://www.1394ta.org/developers/Seminars/2008_MS1394b.pdf|title=Microsoft's 1394 Stategy and Roadmap|publisher=Zach
+|title=Microsoft describes USB 3.0 delays
+|last=Crothers
+|first=Brooke
+|date=6 November 2008
+|accessdate=2008-11-13
+|publisher=CNet
+}}&lt;/ref&gt;
+
+* Windows 7 ships with [[Internet Information Services]] (IIS) 7.5&lt;ref&gt;{{cite web
+|url=http://blogs.iis.net/bills/archive/2009/10/22/iis-7-5-launched-with-windows-7-and-windows-2008-r2.aspx
+|title=IIS 7.5 Launched with Windows 7 and Windows 2008 R2
+|last=
+|first=
+|date=22 Octobre, 2008
+|accessdate=2009-10-23
+|publisher=iis.net
+}}&lt;/ref&gt;
+* The ability to join a [[Windows Server domain|domain]] offline.&lt;ref&gt;{{cite web|url=http://technet.microsoft.com/en-us/library/dd392267(WS.10).aspx|title=Offline Domain Join (Djoin.exe) Step-by-Step Guide|date=2009-08-24|accessdate=2009-10-30|publisher=[[Microsoft]]}}&lt;/ref&gt;
+* Service Control Manager in conjunction with the Windows [[Task Scheduler]] supports trigger-start [[Windows service|services]].&lt;ref&gt;[http://channel9.msdn.com/posts/philpenn/Trigger-Started-Services/ Trigger Started Services: Channel9 Video]&lt;/ref&gt;
+
+==File system==
+===Solid state drives===
+Over time, several technologies have been incorporated into subsequent versions of Windows to improve the performance of the operating system on traditional hard disk drives (HDD) with rotating [[hard disk platter|platters]]. Since [[Solid state drive]]s (SSD) differ from mechanical HDDs in some key areas (no moving parts, [[write amplification]], limited number of erase cycles allowed for reliable operation), it is beneficial to disable certain optimizations and add others, specifically for SSDs. 
+
+Windows 7 incorporates many engineering changes to reduce the frequency of writes and flushes, which benefit SSDs in particular since each write operation wears the flash memory.
+
+Windows 7 also makes use of the [[TRIM (SSD command)|TRIM command]]. If supported by the SSD (not implemented on early devices), this optimizes when erase cycles are performed, reducing the need to erase blocks before each write and increasing write performance. 
+
+Several tools and techniques that were implemented in the past to reduce the impact of the [[Disk drive performance characteristics#Rotational latency|rotational latency]] of traditional HDDs, most notably [[disk defragmentation]], [[Windows Vista I/O technologies#SuperFetch|Superfetch]], [[ReadyBoost]], and application launch [[prefetching]], involve reorganizing (rewriting) the data on the platters. Since SSDs have no moving platters, this reorganization has no advantages, but may shorten the life of the solid state memory. Therefore these tools are by default disabled on SSDs in Windows 7, except for some early generation SSDs that might still benefit.
+
+Finally, [[Disk partitioning|partitions]] made with Windows 7âs partition-creating tools are created with the SSDâs alignment needs in mind, avoiding unwanted systematic write amplification.&lt;ref&gt;{{Citation | title = Engineering Windows 7 : Support and Q&amp;A for Solid-State Drives | date = May 5, 2009 | url = http://blogs.msdn.com/e7/archive/2009/05/05/support-and-q-a-for-solid-state-drives-and.aspx | accessdate = November 21, 2009 }}&lt;/ref&gt;
+
+===Virtual hard disks===
+The '''Enterprise''', Ultimate, and Professional editions of Windows 7 incorporate support for the [[VHD (file format)|Virtual Hard Disk]] (VHD) file format. VHD files can be mounted as drives, created, and booted from, in the same way as [[Windows Imaging Format|WIM]] files.&lt;ref&gt;http://blogs.msdn.com/chkoenig/archive/2008/10/28/pdc-day-2-windows-7-windows-live-mesh-and-office-online.aspx&lt;/ref&gt; Furthermore, an installed version of Windows 7 can be booted and run from a VHD drive, even on non-[[virtual machine|virtual hardware]], thereby providing a new way to [[multi boot]] Windows. Some features such as hibernation and Bitlocker are not available when booting from VHD.
+
+===Disk partitioning===
+By default a computer's disk is partitioned into two [[Disk partitioning|partitions]]: one of limited size for [[booting]], [[BitLocker]] and running the [[Windows Recovery Environment]] and the second with the operating system and user files.&lt;ref&gt;{{cite web|title=Windows Automated Installation Kit User's Guide for Windows 7|publisher=[[Microsoft]]|accessdate=2009-02-09|date=2008-11-19|url=http://www.microsoft.com/downloads/details.aspx?familyid=F1BAE135-4190-4D7C-B193-19123141EDAA}}&lt;/ref&gt;
+
+===Removable media===
+Windows 7 has also seen improvements to the Safely Remove Hardware menu, including the ability to eject just one camera card at the same time (from a single hub) and retain the ports for future use without reboot; and the labels of removable media are now also listed, rather than just the drive letter as for Windows versions from Me and 2000 to Vista.&lt;ref name=onecuckoocardreader&gt;[http://www.onecuckoosnest.com/2009/01/windows-7-fixes-card-reader-eject.html Windows 7 âFixesâ card reader eject issues.]&lt;/ref&gt; Windows Explorer now by default only shows memory card reader ports in My Computer if they contain a card.&lt;ref name=onecuckoocardreader&gt;http://www.onecuckoosnest.com/2009/01/windows-7-fixes-card-reader-eject.html&lt;/ref&gt;
+
+===BitLocker to Go===
+[[BitLocker]] brings encryption support to removable disks such as USB drives. Such devices can be protected by a passphrase, a recovery key, or be automatically unlocked on a computer &lt;ref&gt;http://www.microsoft.com/windows/enterprise/products/windows-7-bitlocker.aspx&lt;/ref&gt;
+
+==Boot performance==
+According to data gathered from the [http://www.microsoft.com/products/ceip/EN-US/default.mspx Microsoft Customer Experience Improvement Program], 35% of Vista SP1 installations boot up in 30 seconds or less.&lt;ref&gt;{{cite web|url=http://blogs.msdn.com/e7/archive/2008/08/29/boot-performance.aspx|title=Engineering Windows 7 - Boot Performance}}&lt;/ref&gt; The more lengthy boot times on the remainder of the machines are mainly due to some services or programs that are loaded but are not required when the system is first started. Microsoft's Mike Fortin, a Distinguished Engineer on the Windows team,&lt;ref&gt;{{cite web|url=http://www.microsoft.com/presspass/exec/de/Fortin/default.mspx|title=Mike Fortin: Distinguished Engineer}}&lt;/ref&gt; noted in August 2008 that Microsoft has set aside a team to work solely on the issue, and that team aims to &quot;significantly increase the number of systems that experience very good boot times.&quot; They &quot;focused very hard on increasing parallelism of driver initialization.&quot; Also, it aims to &quot;dramatically reduce&quot; the number of system services, along with their processor, storage, and memory demands.
+
+==Multimedia==
+===Windows Media Center===
+
+{{Main|Windows Media Center}}
+Windows Media Center in Windows 7 has retained much of the design and feel of its predecessor, but with a variety of user interface shortcuts and browsing capabilities.&lt;ref&gt;{{cite web|url=http://blog.retrosight.com/WindowsMediaCenterInThePDCBuildOfWindows7.aspx|title=Windows Media Center in the PDC Build of Windows 7|last=Owen|first=Charlie|date=28 October 2008|accessdate=2008-11-11|publisher=Microsoft}}&lt;/ref&gt; Playback of [[H.264/MPEG-4 AVC|H.264 video]] both locally and through a [[Media Center Extender]] (including the [[Xbox 360]]) is supported.
+
+Some notable enhancements in Windows 7 Media Center include a new mini guide, a new scrub bar, the option to color code the guide by show type, and internet content that is more tightly integrated with regular TV via the guide. All Windows 7 versions now support up to four tuners of each type (QAM, ATSC, CableCARD, NTSC, etc.).
+
+When browsing the media library, items that don't have album art are shown in a range of foreground and background color combinations instead of using white text on a blue background. When the left or right remote control buttons are held down to browse the library quickly, a two-letter prefix of the current album name is prominently shown as a visual aid. The Picture Library includes new slideshow capabilities, and individual pictures can be rated.
+
+Also, while browsing a media library, a new column appears at the top named &quot;Shared.&quot; This allows users to access shared media libraries on other Media Center PCs from directly within Media Center.
+
+For television support, the Windows Media Center &quot;TV Pack&quot; released by Microsoft in 2008 is incorporated into Windows Media Center. This includes support for [[CableCARD]] and North American (ATSC) [[QAM tuner|clear QAM tuners]], as well as creating lists of favorite stations.&lt;ref&gt;{{cite web|url=http://www.engadgethd.com/2008/08/06/hands-on-with-the-vista-media-center-tv-pack/|title=Hands-on with the Vista Media Center TV Pack|last=Drawbaugh|first=Ben|date=6 August 2008|accessdate=2008-11-11|publisher=Engadget HD}}&lt;/ref&gt;
+
+A Windows Media Center [[Microsoft Gadgets|gadget]] is included as well.
+
+===Format support===
+Windows 7 includes [[Audio Video Interleave|AVI]], [[WAV]], [[Advanced Audio Coding#Container formats|AAC/ADTS]] file media sinks to read the respective formats,&lt;ref name=&quot;MFTCodecs&quot;&gt;[http://msdn.microsoft.com/en-us/library/dd757927(VS.85).aspx Supported Media Formats in Media Foundation]&lt;/ref&gt; an MPEG-4 file source to read [[MPEG-4 Part 14|MP4]], M4A, M4V, MP4V [[.mov#QuickTime file format|MOV]] and [[3GP]] [[Container format (digital)|container formats]]&lt;ref&gt;[http://msdn.microsoft.com/en-us/library/dd757766(VS.85).aspx MPEG-4 File Source]&lt;/ref&gt; and an MPEG-4 file sink to output to MP4 format.&lt;ref&gt;[http://msdn.microsoft.com/en-us/library/dd757763(VS.85).aspx MPEG-4 File Sink]&lt;/ref&gt; Windows 7 also includes a media source to read [[MPEG transport stream]]/BDAV MPEG-2 transport stream (M2TS, MTS, M2T and [[AVCHD]]) files.{{Citation needed|date=April 2010}}
+
+Transcoding (encoding) support is not exposed through any built-in Windows application but codecs are included as [[Media Foundation]] Transforms (MFTs).&lt;ref name=&quot;MFTCodecs&quot;/&gt; In addition to [[Windows Media Audio]] and [[Windows Media Video]] encoders and decoders, and ASF file sink and file source introduced in Windows Vista,&lt;ref name=&quot;MFTCodecs&quot;/&gt; Windows 7 includes an [[H.264]] encoder with Baseline profile level 3 and Main profile support&lt;ref&gt;[http://msdn.microsoft.com/en-us/library/dd797816(VS.85).aspx H.264 Video Encoder]&lt;/ref&gt; and an [[Advanced Audio Coding|AAC]] Low Complexity ([[AAC-LC]]) profile encoder.&lt;ref&gt;[http://msdn.microsoft.com/en-us/library/dd742785(VS.85).aspx AAC Encoder]&lt;/ref&gt;
+
+For playback of various media formats, Windows 7 also introduces an H.264 decoder with Baseline, Main, and High profile support, up to level 5.1,&lt;ref&gt;[http://msdn.microsoft.com/en-us/library/dd797815(VS.85).aspx H.264 Video Decoder]&lt;/ref&gt; [[AAC-LC]] and [[HE-AAC]] v1 ([[Spectral band replication|SBR]]) multichannel, HE-AAC v2 ([[Parametric Stereo|PS]]) stereo decoders,&lt;ref&gt;[http://msdn.microsoft.com/en-us/library/dd742784(VS.85).aspx AAC Decoder]&lt;/ref&gt; [[MPEG-4 Part 2]] [[MPEG-4 Part 2#Simple Profile (SP)|Simple Profile]] and [[MPEG-4 ASP|Advanced Simple Profile]] decoders&lt;ref&gt;[http://msdn.microsoft.com/en-us/library/dd756559(VS.85).aspx MPEG4 Part 2 Video Decoder]&lt;/ref&gt; which includes decoding popular codec implementations such as [[DivX]], [[Xvid]] and [[Nero Digital]] as well as [[MJPEG]]&lt;ref name=&quot;MFTCodecs&quot;/&gt; and [[DV]]&lt;ref&gt;[http://msdn.microsoft.com/en-us/library/dd940322(VS.85).aspx DV Video Decoder]&lt;/ref&gt; MFT decoders for AVI. [[Windows Media Player 12]] uses the built-in Media Foundation codecs to play these formats by default.
+
+Windows 7 also updates the [[DirectShow]] filters introduced in Windows Vista for playback of [[MPEG-2]] and [[Dolby Digital]] to decode H.264, AAC, HE-AAC v1 and v2&lt;ref&gt;[http://msdn.microsoft.com/en-us/library/dd390676(VS.85).aspx Microsoft MPEG-1/DD/AAC Audio Decoder]&lt;/ref&gt; and [[Dolby Digital Plus]]&lt;ref&gt;[http://windowsteamblog.com/blogs/partner/archive/2009/11/17/windows-7-delivers-next-generation-audio.aspx Windows 7 Delivers Next-Generation Audio]&lt;/ref&gt; (including downmixing to Dolby Digital).
+
+==Security==
+The [[Windows Security Center]], which encompasses both [[computer security|security]] and maintenance of the computer, has been renamed ''Windows Action Center'' (Windows Health Center and Windows Solution Center in earlier builds).
+
+A new User Account Control user interface has been introduced, which provides the ability to select four different levels of notifications.&lt;ref&gt;{{cite web
+ | title = Windows 7 in-depth review and video: This time Microsoft gets it right
+ | publisher = ComputerWorld
+ | url =http://www.computerworld.com/action/article.do?command=viewArticleBasic&amp;articleId=9119378
+ | date = 2008-11-12}}&lt;/ref&gt; Geo-tracking will also be available in Windows 7. The feature will be disabled by default. When enabled the user will only have limited control as to which applications can track their location.&lt;ref&gt;{{cite web
+ | title = Windows 7 Will Let Microsoft Track Your Every Move
+ | publisher = Webmokey
+ | url =http://www.webmonkey.com/blog/Windows_7_Will_Let_Microsoft_Track_Your_Every_Move
+ | date = 2008-11-07}}&lt;/ref&gt;
+
+The [[Encrypting File System]] supports [[Elliptic Curve Cryptography|Elliptic-curve cryptographic algorithms]] (ECC) in Windows 7. For backward compatibility with previous releases of Windows, Windows 7 supports a mixed-mode operation of ECC and RSA algorithms. EFS self-signed certificates, when using ECC, will use 256-bit key by default. EFS can be configured to use 1K/2k/4k/8k/16k-bit keys when using self-signed RSA certificates, or 256/384/512-bit keys when using ECC certificates.
+
+In Windows Vista, the Protected User-Mode Audio (PUMA) content protection facilities are only available to applications that are running in a [[Protected Media Path]] environment. Because only the [[Media Foundation]] [[application programming interface]] could interact with this environment, a media player application had to be designed to use Media Foundation. In Windows 7, this restriction is lifted.&lt;ref&gt;{{cite web
+|url=http://code.msdn.microsoft.com/PDC08WhitePapers/Release/ProjectReleases.aspx?ReleaseId=1797
+|title=Protected User Mode Audio (PUMA) in Windows 7
+|work=Windows 7 Developer White Papers from PDC08
+|date=25 November 2008
+|accessdate=2008-12-14
+|publisher=Microsoft
+}}&lt;/ref&gt; PUMA also incorporates stricter enforcement of &quot;Copy Never&quot; bits when using [[Serial Copy Management System]] (SCMS) copy protection over an [[S/PDIF]] connection, as well as with [[High-bandwidth Digital Content Protection]] (HDCP) over [[High-Definition Multimedia Interface|HDMI]] connections.
+
+===Biometrics===
+Windows 7 includes the new [[Windows Biometric Framework]].&lt;ref&gt;{{cite web
+|url=http://www.microsoft.com/whdc/device/input/smartcard/WBFIntro.mspx
+|title=Introduction to the [[Windows Biometric Framework]] (WBF)
+|date=15 December 2008
+|accessdate=2009-01-10
+|publisher=Microsoft
+}}&lt;/ref&gt; This framework consists of a set of components that standardizes the use of fingerprint biometric devices. In prior releases of Microsoft Windows, biometric hardware device manufacturers were required to provide a complete stack of software to support their device, including device drivers, software development kits, and support applications. Microsoft noted in a white paper on the [[Windows Biometric Framework]] that the proliferation of these proprietary stacks resulted in compatibility issues, compromised the quality and reliability of the system, and made servicing and maintenance more difficult. By incorporating the core biometric functionality into the operating system, Microsoft aims to bring biometric device support on par with other classes of devices.
+
+A new Control Panel called ''Biometric Device Control Panel'' is included which provides an interface for deleting stored biometrics information, troubleshooting, and enabling or disabling the types of logins that are allowed using biometrics. Biometrics configuration can also be configured using [[Group Policy]] settings.
+
+==Networking==
+* [[DirectAccess]], a [[virtual private network|VPN]] tunnel technology based on [[IPv6]] and [[IPsec]]. DirectAccess requires domain-joined machines, Windows Server 2008 R2 on the DirectAccess server, at least Windows Server 2008 [[domain controllers]] and a [[public key infrastructure|PKI]] to issue authentication certificates.&lt;ref&gt;[http://technet.microsoft.com/en-us/library/dd367855.aspx What's New in Windows 7 Networking]&lt;/ref&gt;
+* BranchCache, a [[WAN optimization]] technology.&lt;ref&gt;[http://technet.microsoft.com/en-us/library/dd637832(WS.10).aspx Branch Cache Overview]&lt;/ref&gt;
+* The [[Bluetooth]] stack includes improvements introduced in the Windows Vista Feature Pack for Wireless, namely, Bluetooth 2.1+EDR support and remote wake from S3 or S4 support for self-powered Bluetooth modules.&lt;ref name=&quot;MSBTFAQ&quot;&gt;[http://download.microsoft.com/download/9/c/5/9c5b2167-8017-4bae-9fde-d599bac8184a/Bth_FAQ.docx Bluetooth Wireless Technology FAQ]&lt;/ref&gt;
+* [[Network Driver Interface Specification|NDIS]] 6.20&lt;ref name=NDIS&gt;{{cite web|url=http://msdn.microsoft.com/en-us/library/dd568055.aspx|title=Windows Driver Kit - Introducing NDIS 6.20|publisher=MSDN|accessdate=2009-06-14}}&lt;/ref&gt; (Network Driver Interface Specification)
+* HomeGroup
+* Native [[WWAN]] support, similar to native [[WiFi]] added in Vista.
+* Wireless Hosted Network capabilities: The Windows 7 [[Wireless Zero Configuration|wireless LAN service]] supports two new functions - Virtual Wi-Fi, that allows a single [[wireless network]] adapter to act like two client devices,&lt;ref name=VWiFi&gt;{{cite web|url=http://www.engadget.com/2009/05/18/microsofts-virtual-wifi-will-make-windows-7-wireless-adapters-d/|title=Microsoft's Virtual WiFi will make Windows 7 wireless adapters do a double-take}}&lt;/ref&gt; or a software-based wireless access point (SoftAP) to act as both a [[wireless hotspot]] in infrastructure mode and a wireless client at the same time.&lt;ref&gt;{{cite web|url=http://www.theregister.co.uk/2009/10/30/windows_7/|title=Hack slots hotspots into Windows 7|author=Bill Ray|date=2009-10-30|accessdate=2009-10-31}}&lt;/ref&gt; This feature is not exposed through the GUI; however the ''Virtual WiFi Miniport adapter'' can be installed and enabled for wireless adapters with drivers that support a hosted network by using the command ''netsh wlan set hostednetwork mode=allow &quot;ssid=&lt;network SSID&gt;&quot; &quot;key=&lt;wlan security key&gt;&quot; keyusage=persistent|temporary'' at an elevated command prompt.&lt;ref&gt;[http://msdn.microsoft.com/en-us/library/dd815243(VS.85).aspx About the Wireless Hosted Network]&lt;/ref&gt; The wireless SoftAP can afterwards be started using the command ''netsh wlan start hostednetwork''. Windows 7 also supports WPA2-PSK/AES security for the hosted network, but DNS resolution for clients requires it to be used with [[Internet Connection Sharing]] or a similar feature.
+* SMB 2.1, which includes minor performance enhancements over [[Server Message Block|SMB]]2, such as a new opportunistic locking mechanism.&lt;ref&gt;{{cite web|url=http://www.microsoft.com/downloads/details.aspx?displaylang=en&amp;FamilyID=d8541618-5c63-4c4d-a0fd-d942cd3d2ec6|publisher=[[Microsoft]]|accessdate=2009-11-02|date=2009-10-21|title=Implementing an End-User Data Centralization Solution|pages=10â11}}&lt;/ref&gt;
+* RDP 7.0&lt;ref&gt;{{cite web|url=http://support.microsoft.com/kb/969084|title=Description of the Remote Desktop Connection 7.0 client update for Remote Desktop Services (RDS) for Windows XP SP3, Windows Vista SP1, and Windows Vista SP2|publisher=[[Microsoft]]|accessdate=2009-11-01|date=2009-10-27}}&lt;/ref&gt;
+* [[Background Intelligent Transfer Service]] 4.0&lt;ref&gt;{{cite web|url=http://msdn.microsoft.com/en-us/library/bb968799(VS.85).aspx|title=Background Intelligent Transfer Service|publisher=[[Microsoft]]|accessdate=2009-11-14}}&lt;/ref&gt;
+
+===Windows Firewall===
+Windows 7 adds support for multiple firewall profiles. The [[Windows Firewall]] in Windows Vista dynamically changes which network traffic is allowed or blocked based on the location of the computer (based on which network it is connected to). This approach falls short if the computer is connected to more than one network at the same time (as for a computer with both an Ethernet and a wireless interface). In this case, Vista applies the profile that is more secure to all network connections. This is often not desirable; Windows 7 resolves this by being able to apply a separate firewall profile to each network connection.
+
+===DNSSEC===
+Windows 7 and Windows Server 2008 R2 introduce support for [[Domain Name System Security Extensions]] (DNSSEC),&lt;ref&gt;{{cite web
+|url=http://technet.microsoft.com/en-us/magazine/2009.05.win7.aspx
+|title=An Introduction to Security in Windows 7
+|last=Corio
+|first=Chris
+|work=TechNet Magazine
+|date=May 2009
+|accessdate=2009-04-23
+|publisher=Microsoft
+}}&lt;/ref&gt; a set of specifications for securing certain kinds of information provided by the [[Domain Name System]] (DNS) as used on [[Internet Protocol]] (IP) networks. DNSSEC employs [[digital signature]]s to ensure the authenticity of DNS data received from a DNS server, which protect against [[DNS cache poisoning]] attacks.
+
+==Management features==
+[[Image:Windows 7 graphical command shell.png|thumb|right|[[Windows PowerShell]] Integrated Scripting Environment (ISE)]]
+Windows 7 contains [[Windows PowerShell#PowerShell 2.0|Windows PowerShell 2.0]] out-of-the-box, which is also available as a download to install on older platforms:&lt;ref&gt;http://blogs.msdn.com/powershell/archive/2008/10/29/ny-times-delcares-powershell-to-be-30-of-the-value-of-windows-7.aspx&lt;/ref&gt;
+
+* Windows Troubleshooting Platform
+* [[Windows PowerShell]] Integrated Scripting Environment
+* PowerShell Remoting
+
+Other new management features include:
+* AppLocker (a set of Group Policy settings that evolved from Software Restriction Policies, to restrict which applications can run on a corporate network, including the ability to restrict based on the application's version number or publisher)
+* Group Policy Preferences (also available as a download for Windows XP and Windows Vista).
+* The Windows Automation API (also available as a download for Windows XP and Windows Vista).
+
+==Other features==
+* The hibernation file size is configurable in Windows 7 using ''powercfg.exe''. It can be set from anywhere between 50% to 100% of the total physical memory using the ''-size'' switch in ''powercfg.exe'', so the hibernation file is compressed and uses less disk space. The default size is 75% &lt;ref&gt;[http://download.microsoft.com/download/7/E/7/7E7662CF-CBEA-470B-A97E-CE7CE0D98DC2/HiberFootprint.docx Reducing the Disk Footprint for Windows 7 Hibernation]&lt;/ref&gt;
+* Windows 7 improves the [[Tablet PC Input Panel]] to make faster corrections using new gestures, supports text prediction in the soft keyboard and introduces a new Math Input Panel for inputting math into programs that support [[MathML]].&lt;ref&gt;[http://blogs.msdn.com/e7/archive/2009/04/23/ink-input-and-tablet.aspx Engineering Windows 7 : Ink Input and Tablet PC]&lt;/ref&gt; It recognizes handwritten math expressions and formulas. Additional language support for handwriting recognition can be gained by installing the respective MUI pack for that language (also called language pack).
+* Windows 7 includes [[Internet Explorer 8]]&lt;ref&gt;{{cite web
+ |url = http://www.microsoft.com/windows/windows-7/features/internet-explorer-8.aspx
+ |title = Windows 7 Features: Internet Explorer 8
+ |work = Windows 7 web site
+ |publisher = Microsoft Corporation
+}}&lt;/ref&gt; (and supports [[Internet Explorer 9]]), [[.NET Framework#.NET Framework 3.5 SP1|.NET Framework 3.5 SP1]]&lt;ref&gt;{{cite web
+ |url = http://msdn.microsoft.com/en-us/windows/dd146047.aspx
+ |title = Which SDK is Right for Me?
+ |work = Microsoft Developer Network
+ |publisher = Microsoft Corporation
+}}&lt;/ref&gt; and a standalone [[XPS Viewer]].&lt;ref&gt;{{cite web
+ |url = http://www.microsoft.com/whdc/xps/xpsview_win7.mspx
+ |title = XPS Viewer for Windows 7
+ |work = Windows Hardware Developer Central website
+ |publisher = Microsoft Corporation
+ |date = 20 August 2009
+ |accessdate = 8 January 2010
+}}&lt;/ref&gt;&lt;ref&gt;{{cite web
+ |url = http://windows.microsoft.com/en-US/windows7/products/features/xps
+ |title = Windows 7 Features: XPS
+ |work = Windows 7 Web site
+ |publisher = Microsoft Corporation
+ |accessdate = 8 January 2010
+}}
+&lt;/ref&gt;
+[[Image:WordPad on Windows 7.png|thumb|right|[[WordPad]] in Windows 7]]
+
+* As opposed to the blank start-up screen in Windows Vista, Windows 7's start-up screen consists of an animation featuring four colored light balls (one red, one yellow, one green, and one blue). They twirl around for a few seconds and then join together to form a glowing Windows logo. This only occurs on displays with a vertical resolution of 768 pixels or higher, as the animation is 1024x768. Any screen with a resolution below this displays the same startup screen that Vista used.
+
+* The Starter Edition of Windows 7 can run an unlimited number of applications, compared to only 3 in Windows Vista Starter. Microsoft had initially intended to ship Windows 7 Starter Edition with this limitation, but announced after the release of the Release Candidate that this restriction would not be imposed in the final release.&lt;ref&gt;{{cite web
+|url=http://windowsteamblog.com/blogs/windows7/archive/2009/05/29/let-s-talk-about-windows-7-starter.aspx
+|title=Letâs talk about Windows 7 Starter
+|last=LeBlanc
+|first=Brandon
+|date=May 29, 2009
+|accessdate=2009-05-29
+|publisher=Microsoft
+}}&lt;/ref&gt;
+
+* [[Calculator (Windows)|Calculator]] has been rewritten, with multiline capabilities including ''Programmer'' and ''Statistics'' modes, unit conversion, and date calculations. Calculator was also given a significant graphical facelift, the first since Windows 95 in 1995 and Windows NT 4.0 in 1996.
+
+* The [[ClearType]] Text Tuner which was previously available as a powertoy for earlier Windows versions has been integrated into Windows 7.
+
+* [[Paint (software)|Paint]] and [[WordPad]] both have the new ribbon user interface. Paint supports touch screens, realistic brushes, and viewing (but not saving) transparent PNG and [[ICO (file format)|ICO]] files.
+
+* [[Resource Monitor]] includes an improved RAM usage display, display of [[TCP/IP]] [[computer port (software)|ports]] being listened to, filtering processes using [[computer network|networking]], filtering processes with disk activity, and listing and searching process handles (e.g. files used by a process) and loaded modules (files required by an executable file, e.g. [[Dynamic-link library|DLL]] files).
+
+* For developers, Windows 7 includes a new networking API with support for building [[SOAP (protocol)|SOAP]]-based web services in [[machine code|native code]] (as opposed to .NET based [[Windows Communication Foundation|WCF]] web services),&lt;ref&gt;{{cite web|url=http://channel9.msdn.com/pdc2008/PC01/|title=Windows 7: Web Services in Native Code|publisher=PDC 2008|accessdate=2008-09-26}}&lt;/ref&gt; new features to shorten application install times, reduced UAC prompts, simplified development of installation packages,&lt;ref&gt;{{cite web|url=http://channel9.msdn.com/pdc2008/PC42/|title=Windows 7: Deploying Your Application with Windows Installer (MSI) and ClickOnce|publisher=PDC 2008|accessdate=2008-09-26}}&lt;/ref&gt; and improved globalization support through a new [[Extended Linguistic Services API]].&lt;ref&gt;{{cite web|url=http://channel9.msdn.com/pdc2008/PC52/|title=Windows 7: Writing World-Ready Applications|publisher=PDC 2008|accessdate=2008-09-26}}&lt;/ref&gt;
+
+* A new font, &quot;Gabriola&quot;, is included.&lt;ref&gt;{{cite web
+|url=http://www.withinwindows.com/2008/10/29/users-say-hello-to-gabriola-gabriola-say-hello-to-your-users/
+|title=Users, say hello to Gabriola. Gabriola, say hello to your users.
+|last=Zheng
+|first=Long
+|date=29 October 2008
+|accessdate=2008-11-06
+|publisher=I Started Something
+}}&lt;/ref&gt; 
+* [[WordPad]] supports [[Office Open XML]] and [[OpenDocument|ODF]] [[file format]]s.&lt;ref&gt;http://notes2self.net/archive/2008/10/29/openxml-and-odf-in-windows-7-wordpad.aspx&lt;/ref&gt;
+
+[[Image:Action Center on Windows 7.png|thumb|right|The new Action Center which replaces Windows Security Center]]
+* When a user right-clicks a disc image file, such as an [[ISO file]], the user can click &quot;Burn disc image&quot; to write the image to any compatible disc. Support for image verification is included. In previous versions of [[Microsoft Windows]] users had to install third-party software to burn image discs.&lt;ref&gt;{{cite web
+ |accessdate = 8 January 2010
+ |url = http://windowsteamblog.com/blogs/windowsexperience/archive/2009/04/13/burn-iso-images-natively-in-windows-7.aspx
+ |title = Burn ISO Images Natively in Windows 7
+ |work = Windows Experience Blog
+ |publisher = [[Microsoft Corporation]]
+ |last = LeBlanc
+ |first = Brandon
+ |date = 13 April 2009
+}}&lt;/ref&gt;&lt;ref&gt;{{cite web
+ | last= Pennington
+ | first= Kenneth
+ | title = Windows 7's Built in &quot;Burn Disc Image&quot; Feature
+ | publisher = Windows 7 Info
+ | url = http://w7info.com/articles/2009/01/windows-7s-built-in-burn-disc-image-feature/
+ | date = 16 January 2009}}&lt;/ref&gt;
+
+* If an application crashes twice in a row, Windows 7 will automatically attempt to apply a [[Shim (computing)|shim]]. If an application fails to install a similar self-correcting fix, a tool that asks some questions about the application launches.&lt;ref&gt;[http://www.tgdaily.com/index2.php?option=com_content&amp;do_pdf=1&amp;id=39940 Application Self-Healing] accessed on Jan 30 2009&lt;/ref&gt;
+
+* Windows 7 includes a [[Tagged Image File Format|TIFF]] [[IFilter]] optional component that enables indexing of TIFF documents by reading them with [[optical character recognition]] (OCR), making it is possible to search the scanned text rather than the TIFF image file.
+
+* Windows 7 includes power-saving features, such as adaptive display brightness, which dims a laptop's display when the laptop has not been used for a while. ''Powercfg.exe /Energy'' generates an HTML report of the computer's power-saving efficiency and checks which devices are preventing the computer from entering the sleep state. Windows 7 can individually suspend USB hubs and supports selective suspend for all in-box USB class drivers &lt;ref&gt;[http://download.microsoft.com/download/5/E/6/5E66B27B-988B-4F50-AF3A-C2FF1E62180F/CON-T537_WH08.pptx USB Technology Update And Windows Connectivity Strategy]&lt;/ref&gt;
+
+* Unlike [[Windows Vista]], window borders and the taskbar do not turn opaque when a window is maximized with [[Windows Aero]] applied. Instead, they remain translucent.
+
+* The [[Win32 console|Windows Console]] now adheres to the current Windows theme, instead of showing controls from the Windows Classic theme.
+
+* Games Internet [[Spades]], Internet [[Backgammon]] and Internet [[Checkers]], which were removed from Windows Vista, were restored in Windows 7.
+
+* Users can disable many more Windows components than was possible in Windows Vista. Components which can now be disabled include Internet Explorer 8, Windows Media Player, Windows Media Center, [[Windows Search]], and the Windows Gadget Platform.&lt;ref name=&quot;Engineering Windows 7&quot;&gt;{{cite web|url=http://blogs.msdn.com/e7/archive/2009/03/06/beta-to-rc-changes-turning-windows-features-on-or-off.aspx|title=Beta to RC Changes - Turning Windows Features On or Off}}&lt;/ref&gt;
+
+* [[Windows Virtual PC#Windows XP Mode|Windows XP Mode]] is a fully functioning copy of 32-bit [[Windows XP Professional]] SP3 running in a [[virtual machine]] provided by [[Microsoft Virtual PC]] 2010 (as opposed to [[Hyper-V]]) running on top of [[Windows 7]]. Through the use of the RDP protocol, it allows applications incompatible with Windows 7 to be run on the underlying Windows XP virtual machine, but still to appear to be part of the Windows 7 desktop,&lt;ref&gt;{{cite web|url=http://community.winsupersite.com/blogs/paul/archive/2009/04/24/secret-no-more-revealing-virtual-windows-xp-for-windows-7.aspx|title=Secret No More: Revealing Windows XP Mode for Windows 7|last=Thurrott|first=Paul|coauthors=Rafael Rivera|date=24 April 2009|publisher=Penton|accessdate=2009-06-21}}&lt;/ref&gt; thereby sharing the native Start Menu of Windows 7 as well as participating in file type associations. It is not distributed with Windows 7 media, but is offered as a free download to users of the Professional, Enterprise and Ultimate editions from Microsoft's web site. Users of Home Premium who want Windows XP functionality on their systems can download [[Microsoft Virtual PC|Virtual PC]] (or virtualisation software from other provider, such as [[VMware Player]]) free of charge, but must provide and install their own licensed copy of Windows XP, and will not have the virtual-physical desktop integration offered by XP Mode. XP Mode is intended for consumers rather than enterprises, as it offers no central management capabilitiesâ[[Microsoft Enterprise Desktop Virtualization]] (Med-V) will be available for the enterprise market.
+
+* Native support for Hyper-V virtual machines through the inclusion of VMBus integration drivers.&lt;ref&gt;{{cite web|url=http://blogs.msdn.com/virtual_pc_guy/archive/2009/01/12/windows-7-on-hyper-v.aspx|title=Windows 7 on Hyper-V|publisher=[[Microsoft]]|author=Ben Armstrong|date=2009-01-12|accessdate=2009-07-09}}&lt;/ref&gt;
+
+* Windows 7 introduces support for location and other sensors. As a demonstration of these sensors, location can be determined reasonably accurately by a machine connected to the Internet by WiFi without a [[Global Positioning System]] (GPS) receiver by downloading [[Geosense]] for Windows (not from Microsoft), which uses &quot;a hybrid mix of geolocation service providers and geolocation methods to pinpoint the most accurate location information possible - including but not limited to WiFi triangulation, cell tower triangulation and IP lookup&quot;.&lt;ref&gt;[http://geosenseforwindows.com/ ]&lt;/ref&gt;
+
+==See also==
+* [[List of features removed in Windows 7]]
+* [[Features new to Windows Vista]]
+* [[Features new to Windows XP]]
+
+==References==
+{{Reflist|30em}}
+
+==External links==
+* [http://technet.microsoft.com/en-us/library/dd349334(WS.10).aspx What's New in Windows 7 for IT Pros (RC)]
+* Windows Support Phone Number - [http://support.microsoft.com/gp/install2]
+
+{{DEFAULTSORT:Features New To Windows 7}}
+[[Category:Windows 7]]
+[[Category:Software features|Windows 7]]
+
+[[zh:Windows 7æ°åè½]]</rev></revisions></page></pages></query></api>

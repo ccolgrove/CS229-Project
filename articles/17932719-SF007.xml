@@ -1,0 +1,96 @@
+<?xml version="1.0"?><api><query><redirects><r from="LiveXP" to="WinBuilder" /></redirects><pages><page pageid="7853357" ns="0" title="WinBuilder"><revisions><rev xml:space="preserve">{{Infobox software
+| name                   = WinBuilder
+| logo                   = 
+| screenshot             = [[Image:WinBuilder.png|200px]]
+| caption                = WinBuilder
+| collapsible            = 
+| author                 = Nuno Brito
+| developer              = Peter Schlang
+| released               = 
+| latest release version = WinBuilder 082
+| latest release date    = {{release date|2011|08|14}} [http://reboot.pro/files/file/4-winbuilder/]
+| frequently updated     = 
+| programming language   = Delphi 7
+| operating system       = [[Microsoft Windows]]&lt;br/&gt;[[ReactOS]]
+| platform               = [[Microsoft Windows]], Microsoft Windows Installation Disc
+| size                   = 928 KB (version 082)
+| language               = MultilÄ±ingual with language files, English without them
+| status                 = Stable
+| genre                  = System Diagnostics and Administration, [[Live CD]]
+| license                = Freeware
+| website                = [http://winbuilder.net winbuilder.net]
+}}
+'''WinBuilder''' is a free application designed to build and customize boot disks ([[Live CD]]s) based on [[Microsoft Windows]] ([[WinPE]]).
+
+==Scripts==
+Scripts are the building blocks of Live CD compiled with Winbuilder are used to build the core components of the Live CD, for adding applications, and for configuration of a specific project. 
+Scripts consist of a human readable text file with the .script extension and can contain Winbuilder scripting commands, the scripts graphical user interface, and sometimes encoded applications to be extracted when needed.
+
+There is a paper explaining in detail the scripting framework of WinBuilder at [http://www.slideshare.net/nunobrito/explaining-the-winbuilder-framework Slideshare] that provides a comprehensive description of how it works.
+
+==Projects==
+A Project is a collection of Winbuilder scripts maintained for building a complete Live CD. Each project contains multiple scripts, each responsible for adding features or applications to the build.
+
+Users may build their own projects from scratch or use one of many projects actively developed by the boot-land community. Projects can be downloaded directly using Winbuilder's built-in download manager and used as-is or further customized to meet the individual's needs.
+
+===Actively developed projects===
+* [http://www.boot-land.net/forums/index.php?showforum=52 LiveXP] - Based on nativeEx, contains a large archive of programs targeted for computer repair and administration 
+* [http://www.boot-land.net/forums/index.php?showforum=122 MultiPE Leopard] - Live CD/DVD that can be built from either [[Windows 7]] or [[Windows Vista]] sources.
+* [http://reboot.pro/14250/page__view__findpost__p__126427 nativeEx_multiPE] - Live CD/DVD / UFD that can be built from either Windows XP, Windows 2003, Windows Vista, or Windows 7 x86 sources.
+* [http://www.boot-land.net/forums/index.php?showtopic=3866 NaughtyPE] - Windows XP PE boot disk with sound support and other multimedia features.
+* [http://www.boot-land.net/forums/index.php?showtopic=8462 VistaPE CAPI] - Based on [http://www.vistape.net/ VistaPE] VistaPE CAPI provides bugfixes and enhancements to the original project and support for newer Winbuilder versions.
+* [http://www.boot-land.net/forums/index.php?showtopic=12427 Win7PE_SE] - Live CD/DVD that can be built from either [[Windows 7]] or [[Windows Vista]] sources. A fork of Multi 7PEs.
+
+===Inactive Projects===
+* [http://www.boot-land.net/forums/index.php?showtopic=2755 BartPEcore] - running bartPE inside a winbuilder environment
+* [http://www.boot-land.net/forums/index.php?showtopic=11904 BB-7PE] - A [[Windows 7]] based Rescue focused PE using [[bbLean]] as its shell. 
+* [http://www.boot-land.net/forums/index.php?showtopic=9722 Multi 7PEs] (formally Win7PE) - Live CD/DVD that can be built from either [[Windows 7]] or [[Windows Vista]] sources
+* [http://www.boot-land.net/forums/index.php?showforum=83 NativeEx] - Small sized Windows XP PE boot disk (~50Mb)
+* [http://www.boot-land.net/forums/index.php?showtopic=76 PicoXP] - Minimalistic 14 MB boot disk based on XP
+* UXP  - Based On [[Windows XP]] for making a multiboot CD/DVD which includes The LiveXP and WinRoot ( also for customization of the CD/DVD there are other apps used such as Nlite , etc.
+* [http://www.boot-land.net/forums/index.php?showtopic=6056 VistaPE] - Based on [[Windows Preinstallation Environment#Windows PE 2.0|Windows PE 2.0]] (included on [[Windows Vista]] DVD and WAIK)
+* [http://www.boot-land.net/forums/index.php?showtopic=8774 Win7RescuePE] - Live CD/DVD based on [[Windows 7]]
+
+All of these projects are developed and distributed freely and aim to provide an alternative to other popular [[Live CD]] distributions based on Linux such as [[Knoppix]], [[Slax]], [[Damn Small Linux]], which are known for their use in rescue or administrative actions on PCs.
+
+== Use and reception ==
+
+Use of the software to build various customized boot disks has been covered in articles from [[PC Quest]],&lt;ref&gt;Anindya Roy, (February 01, 2008) ''[http://pcquest.ciol.com/content/handson/2008/108020101.asp Live Vista]'', [[PC Quest]]&lt;/ref&gt; [[:de:PC-Welt|PC-Welt]]&lt;ref&gt;{{de icon}} Christian LÃ¶bering, (10 Dec 2009) ''[http://www.pcwelt.de/start/software_os/windows/praxis/196912/der_usb_stick_als_notfallsystem/index.html Der USB-Stick als Notfallsystem]'' ''(The USB flash drive as a backup system)'', [[PC-Welt]], also [http://digitalewelt.freenet.de/softwareos/windows/der-usbstick-als-notfallsystem-_531024_275572.html appeared] in freenet&lt;/ref&gt; (the German edition of [[PC World (magazine)|PC World]], which also offers some customized scripts for building disk images including additional utilities, branded as pcwVistaPE&lt;ref&gt;[http://pcwelt-praxis.de/dokumentation/anleitungen/pcwvistape-vista-als-zweitsystem pcwVistaPE]&lt;/ref&gt; and pcwWin7PE&lt;ref&gt;[http://pcwelt-praxis.de/dokumentation/anleitungen/pcwwin7pe-schritt-fuer-schritt-zum-winpe-rettungssystem pcwWin7PE]&lt;/ref&gt;), the Russian edition of [[CHIP (magazine)|CHIP]],&lt;ref&gt;{{ru icon}} ÐÐ°ÐºÑÐ¸Ð¼ ÐÐ¼ÐµÐ»Ð¸Ð½ (August 2007) ''[http://chip-online.ru/archive/docs/upload/036049_01.pdf Windows PE: Vista, ÐºÐ¾ÑÐ¾ÑÐ°Ñ Ð²ÑÐµÐ³Ð´Ð° Ñ ÑÐ¾Ð±Ð¾Ð¹]'' ''(Vista, which is always with you)'', [[CHIP (magazine)|CHIP]], pp. 38&amp;ndash;42&lt;/ref&gt; and by [[TeraByte Unlimited]].&lt;ref&gt;[http://www.terabyteunlimited.com/howto/win7pe_tutorial.htm Creating a Win7RescuePE Boot Disc Containing Image for Windows] and [http://www.terabyteunlimited.com/howto/vistape_tutorial.htm Creating a VistaPE Boot Disc Containing Image for Windows], [[TeraByte Unlimited]] How-To Guides&lt;!-- these are pretty good tutorials, generally useful if you omit including their proprietary [[Image for Windows]] software in the disk image. --&gt;&lt;/ref&gt;
+
+[[CNET]] editor's review found that &quot;WinBuilder is one of the most easy-to-use boot disk creation tools in the genre,&quot; and praised it for its &quot;novice-friendly interface&quot;, but at the same time warned that the &quot;program expects experienced users. For the most part, boot disk applications are for experts only.&quot; The built-in Download Center was remarked because it &quot;simplifies  procuring the boot disk applications.&quot; Other features praised were &quot;its small size, fair memory overhead, simple instructions, and robust application installation wizards.&quot;&lt;ref&gt;CNET Staff, (December 25, 2007) ''[http://download.cnet.com/WinBuilder/3000-2094_4-10788498.html WinBuilder 074 CNET editors' review]'', [[CNET]]&lt;/ref&gt;
+
+==Gallery==
+&lt;gallery&gt;
+Image:WinBuilder building VistaPE.png|WinBuilder building [[VistaPE]]
+Image:VistaPE Live CD.png|VistaPE Live CD (created with WinBuilder)
+Image:Live CD of Windows XP created with WinBuilder.png|Live CD of Windows XP (created with WinBuilder)
+&lt;/gallery&gt;
+
+==See also==
+*[[BartPE]]
+*[[Windows Preinstallation Environment]]
+*[[List of Microsoft Windows components#Core components]]
+*[[List of Microsoft Windows components]]
+*[[nLite and vLite]]
+*[[Scripting]]
+*[[VistaPE]]
+*[[Windows To Go]]
+
+==External links==
+* [http://reboot.pro/forum/22/ Official WinBuilder download and support forum]
+* [http://code.google.com/p/winbuilder/wiki/index Winbuilder Documentation]
+* [http://wb.paraglidernc.com/Help/ Additional documentation by Paraglider]
+== References ==
+{{reflist}}
+;Notes
+{{refbegin}}
+* Menno Schoone, ''[http://www.optimizingpc.com/miscellaneous/manual_vistape.html VistaPE: manual for a Windows Vista based PE]'', OptimizingPC &lt;!-- this is a self-pub, but the Dutch version of this site, schoonepc.nl, is in top 3000 Dutch sites --&gt;
+* {{de icon}} Sascha MÃ¶lck, ''[http://www.computerwissen.de/uploads/media/COM_2008_02_N059.pdf Notfall-CD 2008 fÃ¼r Windows XP/Vista]'', pp.&amp;nbsp;41â44, ComputerWissen.de N 059/01
+* {{es icon}} Xavier Cardona Peris, ''Sistemas Operativos Monopuesto'', pp. [http://books.google.com/books?id=V5Ji-hk5McAC&amp;pg=PA102&amp;dq=%22WinBuilder%22+-inpublisher:icon&amp;as_brr=0&amp;cd=1#v=onepage&amp;q=%22WinBuilder%22%20-inpublisher%3Aicon&amp;f=false 102&amp;ndash;103] ISBN 849916269X
+{{refend}}
+
+[[Category:Operating system distributions bootable from read-only media]]
+[[Category:Windows administration]]
+
+[[es:WinBuilder]]
+[[pt:WinBuilder]]</rev></revisions></page></pages></query></api>

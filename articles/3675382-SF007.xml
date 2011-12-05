@@ -1,0 +1,125 @@
+<?xml version="1.0"?><api><query><pages><page pageid="3675382" ns="0" title="Executable space protection"><revisions><rev xml:space="preserve">In [[computer security]], '''executable space protection''' is the marking of [[Memory (computers)|memory]] regions as non-executable, such that an attempt to execute [[machine code]] in these regions will cause an [[Exception handling|exception]]. It makes use of hardware features such as the [[NX bit]].
+
+The [[Burroughs_large_systems#Tagged architecture|Burroughs 5000]] offered hardware support for executable space protection when it was introduced in [[1961]]; that capability was retained in its successors at least through [[2006]]. In its implementation of [[tagged architecture]], each word of memory had an associated, hidden tag bit designating it code or data. Thus, user programs cannot write or even read a program word, and data words cannot be executed.
+
+If an [[operating system]] can mark some or all writable regions of memory as non-executable, it may be able to prevent the [[call stack|stack]] and [[dynamic memory allocation|heap]] memory areas from being executable.  This helps to prevent certain [[buffer overflow]] [[exploit (computer science)|exploit]]s from succeeding, particularly those that inject and execute code, such as the [[Sasser worm|Sasser]] and [[Blaster worm|Blaster]] worms. These attacks rely on some part of memory, usually the stack, being both writable and executable; if it is not, the attack fails.
+
+==OS implementations==
+Many operating systems implement or have an available executable space protection policy.  Here is a list of such systems in alphabetical order, each with technologies ordered from newest to oldest.
+
+For some technologies, there is a summary which gives the major features each technology supports.  The summary is structured as below.
+
+* Hardware Supported Processors: (Comma separated list of CPU architectures)
+* Emulation:  (No) or (Architecture Independent) or (Comma separated list of CPU architectures)
+* Other Supported:  (None) or (Comma separated list of CPU architectures)
+* Standard Distribution:  (No) or (Yes) or (Comma separated list of distributions or versions which support the technology)
+* Release Date:  (Date of first release)
+
+A technology supplying Architecture Independent [[emulator|emulation]] will be functional on all processors which aren't hardware supported.  The &quot;Other Supported&quot; line is for processors which allow some grey-area method, where an explicit NX bit doesn't exist yet hardware allows one to be emulated in some way.
+
+===FreeBSD===
+Initial support for the [[NX bit]], on [[x86-64]] and [[x86]] processors that support it, first appeared in [[FreeBSD]] -CURRENT on June 8, 2004.  It has been in FreeBSD releases since the 5.3 release.
+
+===Linux===
+[[Linux kernel]] currently supports the NX bit on [[x86-64]] CPUs and on [[x86]] processors that support it, such as the current 64-bit CPUs of AMD, Intel, Transmeta and VIA.
+
+The support for this feature in the 64-bit mode on x86-64 CPUs was added in [[2004]] by [[Andi Kleen]], and later the same year, [[Ingo Molnar]] added support for it in 32-bit mode on 64-bit CPUs. These features have been in the stable Linux kernel since release 2.6.8 in August 2004.
+
+The availability of the NX bit on 32-bit x86 kernels, which may run on both 32-bit x86 CPUs and 64-bit x86 compatible CPUs, is significant because a 32-bit x86 kernel would not normally expect the NX bit that an [[AMD64]] or [[IA-64]] supplies; the NX enabler patch assures that these kernels will attempt to use the NX bit if present.
+
+Some desktop [[Linux distribution]]s such as [[Fedora Core]] 6, [[Ubuntu (operating system)|Ubuntu]] and [[openSUSE]] do not enable the HIGHMEM64 option by default, which is required to gain access to the NX bit in 32-bit mode, in their default kernel; this is because the [[Physical Address Extension|PAE]] mode that is required to use the NX bit causes pre-[[Pentium Pro]] (including Pentium MMX) and [[Celeron M]] and [[Pentium M]] processors without NX support to fail to boot. Other processors that do not support PAE are [[AMD K6]] and earlier, [[Transmeta Crusoe]], [[VIA C3]] and earlier, and [[Geode]] GX and LX. [[VMware Workstation]] versions older than 4.0, [[Parallels Workstation]] versions older than 4.0, and [[Microsoft Virtual PC]] and [[Microsoft Virtual Server|Virtual Server]] do not support PAE on the guest. Fedora Core 6 and Ubuntu 9.10 and later provide a kernel-PAE package which supports PAE and NX.
+
+NX memory protection has always been available in Ubuntu for any systems that had the hardware to support it and ran the 64-bit kernel or the 32-bit server kernel. The 32-bit PAE desktop kernel (linux-image-generic-pae) in Ubuntu 9.10 and later, also provides the PAE mode needed for hardware with the NX CPU feature.  For systems that lack NX hardware, the 32-bit kernels now provide an approximation of the NX CPU feature via software emulation that can help block many exploits an attacker might run from stack or heap memory.
+
+Non-execute functionality has also been present for other non-x86 processors supporting this functionality for many releases.
+
+====Exec Shield====
+[[Red Hat]] kernel developer [[Ingo Molnar]] released a Linux kernel patch named [[Exec Shield]] to approximate and utilize NX functionality on [[32-bit]] x86 CPUs.
+
+The Exec Shield patch was released to the [[Linux kernel mailing list]] on May 2, 2003. It was rejected for merging with the base kernel because it involved some intrusive changes to core code in order to handle the complex parts of the emulation trick.
+
+* Hardware Supported Processors: All that Linux supports NX on
+* Emulation:  NX approximation using the [[code segment]] limit on [[IA-32]] ([[x86]]) and compatible
+* Other Supported:  None
+* Standard Distribution: [[Fedora Core]] and [[Red Hat Enterprise Linux]]
+* Release Date:  May 2, 2003
+
+====PaX====
+The [[PaX]] NX technology can emulate an NX bit or NX functionality, or use a hardware NX bit.  PaX works on x86 CPUs that do not have the NX bit, such as 32-bit x86.
+
+The PaX project originated October 1, 2000.  It was later ported to 2.6, and is at the time of this writing still in active development.
+
+The Linux [[kernel (computer science)|kernel]] still does not ship with PaX (as of May, [[2007]]); the patch must be merged manually.
+
+* Hardware Supported Processors: [[DEC Alpha|Alpha]], [[AMD64]], [[IA-64]], [[MIPS architecture|MIPS]] (32 and 64 bit), [[PA-RISC]], [[PowerPC]], [[SPARC]]
+* Emulation:  [[IA-32]] ([[x86]])
+* Other Supported:  [[PowerPC]] (32 and 64 bit), [[SPARC]] (32 and 64 bit)
+* Standard Distribution:  [[Adamantix]], [[Hardened Gentoo]], [[Hardened Linux]], [[Alpine Linux]]
+* Release Date:  October 1, 2000
+
+===Mac OS X ===
+[[Mac OS X]] for Intel supports the NX bit on all CPUs supported by Apple (from 10.4.4 â the first Intel release â onwards).   Mac OS X 10.4 only supported NX stack protection.  In Mac OS X 10.5,  all 64-bit executables have NX stack and heap; W^X protection. This includes [[x86-64]] (Core 2 or later) and 64-bit [[PowerPC]] on the [[PowerPC 970|G5]] Macs.
+
+===NetBSD===
+As of [[NetBSD]] 2.0 and later (December 9, 2004), architectures which support it have non-executable stack and heap.
+&lt;ref&gt;NetBSD, [http://www.netbsd.org/Documentation/kernel/non-exec.html Non-executable stack and heap], retrieved 2011/07/14.&lt;/ref&gt;
+
+Those that have per-page granularity consist of: alpha, amd64, hppa, i386 (with PAE), powerpc (ibm4xx), sh5, sparc (sun4m, sun4d), sparc64.
+
+Those that can only support these with region granularity are: i386 (without PAE), powerpc (e.g. macppc).
+
+Other architectures do not benefit from non-executable stack or heap; NetBSD does not by default use any software emulation to offer these features on those architectures.
+
+===OpenBSD===
+====W^X====
+{{main|W^X}}
+A technology in the [[OpenBSD]] [[operating system]], known as W^X, marks writable pages by default as non-executable on processors that support that.  On 32-bit [[x86]] processors, the code segment is set to include only part of the address space, to provide some level of executable space protection.
+
+OpenBSD 3.3 shipped May 1, 2003, and was the first to include W^X.
+
+* Hardware Supported Processors: [[DEC Alpha|Alpha]], [[AMD64]], [[PA-RISC|HPPA]], [[SPARC]]
+* Emulation:  [[IA-32]] (x86)
+* Other Supported:  None
+* Standard Distribution:  Yes
+* Release Date:  May 1, 2003
+
+===Solaris===
+
+[[Solaris Operating System|Solaris]] has supported globally disabling stack execution on SPARC processors since Solaris 2.6 (1997); in Solaris 9 (2002), support for disabling stack execution on a per-executable basis was added.
+
+As of Solaris 10 (2005), use of the NX bit is automatically enabled by default on x86 processors that support this feature. Exceptions are made for the 32-bit legacy ABI's treatment of a program's stack segment. The vast majority of programs will work without changes. However, if a program fails, the protection may be disabled via the ''enforce-prot-exec'' EEPROM option. Sun recommend that failures should be reported as program bugs.{{Fact|date=February 2007}}
+
+===Android===
+
+As of [[Android_(operating_system)|Android]] 2.3 and later, architectures which support it have non-executable pages by default, including non-executable stack and heap.&lt;ref&gt;&quot;Android code change forcing NX&quot;, [http://android.git.kernel.org/?p=platform/build.git;a=commitdiff;h=2915cc3e323a9bf86e1a20b201ceb4e9529bc5a2 Android Source Repository Change], retrieved 2011/07/14.&lt;/ref&gt; &lt;ref&gt;&quot;Android Compatibility Requirement for NX&quot;, [https://review.source.android.com/#change,21776 Android Code Review], retrieved 2011/07/14.&lt;/ref&gt;
+
+===Windows===
+Starting with [[Windows XP]] [[Service Pack]] 2 and [[Windows Server 2003]] Service Pack 1, the NX features were implemented for the first time on the [[x86]] architecture.
+
+Microsoft Windows uses NX protection on critical [[Windows service]]s exclusively by default. Under Windows XP or Server 2003, the feature is called [[Data Execution Prevention]] (abbreviated DEP), and it can be configured through the advanced tab of &quot;System&quot; properties. If the [[x86]] processor supports this feature in hardware, then the NX features are turned on automatically in Windows XP/Server 2003 by default. If the feature is not supported by the x86 processor, then no protection is given.
+
+&quot;Software DEP&quot; is unrelated to the NX bit, and is what Microsoft calls their enforcement of Safe Structured Exception Handling.  Software DEP/SafeSEH checks when an exception is thrown to make sure that the exception is registered in a function table for the application, and requires the program to be built with it.
+
+Early implementations of DEP provided no [[address space layout randomization]] (ASLR), which allowed potential [[return-to-libc attack]]s that could have been feasibly used to [http://woct-blog.blogspot.com/2005/01/dep-evasion-technique.html disable DEP during an attack]. The [[PaX]] documentation [http://pax.grsecurity.net/docs/aslr.txt elaborates] on why ASLR is necessary; a [http://uninformed.org/?v=2&amp;a=4 proof-of-concept] was produced detailing a method by which DEP could be circumvented in the absence of ASLR.  It may be possible to develop a successful attack if the address of prepared data such as corrupted images or [[MP3]]s can be known by the attacker.  Microsoft added ASLR functionality in [[Windows Vista]] and [[Windows Server 2008]] to address this avenue of attack.
+
+Outside of the [[x86]] sphere, a version of NX also exists for Intel's [[IA-64]] which is implemented in Windows on that architecture.
+
+* Hardware Supported Processors: [[x86-64]] (AMD64 and Intel 64), [[IA-64]], [[Efficeon]], [[Pentium M]] (later revisions), [[AMD Sempron]] (later revisions)
+* Emulation:  No
+* Other Supported:  None
+* Standard Distribution: [[Windows XP]] Service Pack 2, [[Windows Server 2003]] Service Pack 1, [[Windows XP Professional x64 Edition]], [[Windows Vista]]
+* Release Date:  August 6, 2004
+
+== See also ==
+* [[Buffer overflow]]
+* [[Format string attack]]
+
+== References ==
+{{Reflist}}
+
+[[Category:Operating system security]]
+
+{{comp-sci-stub}}
+
+[[fr:Protection de l'espace exÃ©cutable]]
+[[ja:å®è¡ä¿è­·]]</rev></revisions></page></pages></query></api>

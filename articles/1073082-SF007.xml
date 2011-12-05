@@ -1,0 +1,385 @@
+<?xml version="1.0"?><api><query><pages><page pageid="1073082" ns="0" title="Amarok (software)"><revisions><rev xml:space="preserve">{{about|the music player software||Amarok (disambiguation)}}
+{{primary|date=November 2011}}
+{{tone|date=June 2011}}
+{{Infobox software
+| name                   = Amarok
+| logo                   = [[File:Amarok.svg|64px]]
+| screenshot             = [[File:Amarok 2.4.png|300px|Amarok 2.4]]
+| caption                = Screenshot of Amarok 2.4
+| author                 = Mark Kretschmann
+| developer              = [[KDE]]
+| released               = 23 June 2003&lt;ref&gt;[http://sourceforge.net/project/showfiles.php?group_id=84099&amp;package_id=86715 SourceForge.net]&lt;/ref&gt;
+| frequently updated     = yes&lt;!-- Release version update? Don't edit this page, just click on the version number! --&gt;
+| programming language   = [[C++]] ([[Qt (toolkit)|Qt]])
+| operating system       = [[Unix-like]], [[Mac OS X]], [[Microsoft Windows|Windows]] (through KDE for Windows)
+| language               = Multilanguage
+| genre                  = [[Audio player (software)|Audio player]]
+| license                = [[GNU General Public License#Version 2|GNU General Public License Version 2]]
+| website                = {{url|http://amarok.kde.org/en}}
+}}
+
+'''Amarok''' ({{IPAc-en|icon|Ë|Ã¦|m|Ér|É|k}})&lt;ref&gt;{{cite web|title=Amarok: Call for Jingle, July 06 2007|url=http://ccmixter.org/media/thread/1095#25856}}&lt;/ref&gt; is a [[cross-platform]] [[free and open source]] [[music player]] for [[KDE]], but is released independently of the central [[KDE Software Compilation]] release cycle. Amarok is released under the terms of the [[GNU General Public License]] 2.
+
+== History ==
+
+The project was originally started by Mark Kretschmann as a means of improving [[XMMS]] due to several usability problems, which interfered with the addition of new files to the playlist due to several user interface elements existing for one task. The original amaroK was created based upon the idea of a two-pane interface seen in [[Midnight Commander]], and the first version of the software released solely by Kretschmann, was based upon the ideal of allowing users to drag-and-drop music into an interface in which the playlist was displayed on the right and information on the left.
+
+After the initial release of AmaroK, several developers joined the project to form the âThree Mâsâ the first of whom was Max Howell, who acted as an interface designer and programmer for the project, alongside Muesli (Christian Muehlhaeuser), who also provided user interface insight and programming till the late 1.4 versions.
+Originally named '''amaroK''', it was renamed to Amarok in June 2006.
+
+Amarok 1.4 established a reputation for innovation after its release, but maintaining development with the old framework became more difficult as Amarok grew. With the release of KDE 4 the developers decided to give Amarok a complete overhaul aesthetically as well as functionally.
+
+A new major version of Amarok, version 2.0, was released on December 12, 2008. On June 3, 2009, version 2.1 was released which reintroduced a few of the 1.4 features which had been missing from the initial 2.0 release, and introduced some features such as native [[ReplayGain]] support for the first time.&lt;ref&gt;Prior versions of Amarok required a third-party plugin for ReplayGain functionality.&lt;/ref&gt;
+
+== Amarok logo ==
+
+Despite the fact that Amarok uses wolf-based artwork, and that the name &quot;amarok&quot; or &quot;amaroq&quot; literally refers to the [[Inuktitut]] word for &quot;[[wolf]]&quot;, it was originally named after the album ''[[Amarok (album)|Amarok]]'' by [[Mike Oldfield]]. The 1.2 release originally had a [http://www.deviantart.com/deviation/13944216/ wolf icon], but this was later withdrawn due to similarity with the logo of [[WaRP Graphics]] Inc. Amarokâs wolf logo has now been modified sufficiently so as not to infringe on WaRPâs trademarked logo, and reinstated.
+
+== Development goals ==
+
+Amarokâs tagline is âRediscover Your Musicâ, and its development is based around this ideology. Amarokâs core features such as the unique &quot;context browser&quot;, integrated [[Wikipedia]] lookup and lyrics download help users to find new music, and to learn more about the music they have. Amarok also features integration with [[last.fm]], giving users suggestions about what to listen to next and which artists may fit their mood, as well as with [[Magnatune]] integration, allowing no-cost full listening of all the music in their catalog, and [[Digital Rights Management|DRM]]-free purchasing.
+
+== Features ==
+=== Basic uses and functions ===
+
+Amarok serves many functions in addition to the basic function of playing music files. For example, Amarok can be used to organize a library of music into folders according to genre, artist, and album, can edit tags attached to most music formats, associate album art, attach lyrics, and automatically &quot;score&quot; music by keeping play count statistics.
+
+Although a more technical list of features is listed below, here are the primary functions or uses for Amarok:
+* Playing media files in various formats including but not limited to (depending on the setup) [[FLAC]], [[Ogg]], [[MP3]], [[Advanced Audio Coding|AAC]], [[WAV]], [[Windows Media Audio]], [[Apple Lossless]], [[WavPack]], [[TTA (codec)|TTA]] and [[Musepack]]. Amarok does not play digital music files embedded with [[digital rights management|DRM]].
+* Tagging digital music files (currently [[FLAC]], [[Ogg]], [[Windows Media Audio|WMA]], [[Advanced Audio Coding|AAC]], [[MP3]], and [[RealMedia]]).
+* Associating cover art with a particular album, and retrieving the cover art from [[Amazon.com|Amazon]].
+* Creating and editing playlists, including smart and dynamic playlists. The dynamic playlists can use such information as the &quot;score&quot; given to a song by an Amarok script, and the playcount which is stored in the database.
+* Synchronizing, retrieving, playing, or uploading music to the following digital music players: [[iPod]], [[iriver]] iFP, [[Creative NOMAD]], [[Creative ZEN]], [[Media Transfer Protocol|MTP]], [[Rio Karma]] and [[USB]] devices with [[File Allocation Table|VFAT]] (generic MP3 players) support.
+* Displaying artist information from Wikipedia and retrieving song lyrics.
+* [[Last.fm]] support, including submitting played tracks (including those played on some digital music players) to Last.fm, retrieving similar artists and playing Last.fm streams.
+* [[Podcast]].
+
+From version 1.4.4, Amarok introduced the integration of [[Magnatune]], a non-[[digital rights management|DRM]] digital music store, enabling users to purchase music in [[Ogg]], [[FLAC]], [[WAV]], and [[MP3]] formats.
+
+Some of these features depend on other programs or libraries that must be installed on the computer to operate.
+
+=== Technical features ===
+
+* Three main window panes: playlist browser,collection and player window.
+* [[Systray]] (panel notification area) icon support.
+* Song collection, which includes specific folders on the filesystem.
+** Searching Files/Artists/Album/Genre in Collection can be performed using Simple and Advanced options
+* Intelligent Playlists support(Dynamic Playlists)
+* Integration with online services such as [[Magnatune]], [[Jamendo]], [[MP3tunes]], [[Last.fm]] and [[Shoutcast]].&lt;ref&gt;Shoutcast support is no longer officially included in version 2.2 and above due to licensing issues.&lt;/ref&gt;
+* Songs can be rated both dynamically (based on how much the song is played) and by hand (giving rating of 1-5 stars to the song).
+* Amarok File Tracking (since 1.4.3): Stores file checksum in the collection. This allows the file be moved around in the filesystem without Amarok losing track of the song statistics.
+* Collection filter (newest songs, highest rated, most played, etc.).
+* Support for Phonon engine. The backend of Phonon dictates which media types Amarok can play and how they play. When using [[Xine]], Amarok supports [[Crossfade (audio engineering)|crossfading]], but not seeking in seekpointless FLAC files. When using [[Gstreamer]], Amarok supports seeking, but not crossfading. Amarok does not support a backend capable of [[Gapless playback]].
+* Support for [[moodbar]]s.
+* Uses TagLib for tags.
+* Amarok can be controlled via [[D-Bus]].
+* [http://amarok.kde.org/wiki/Scripts Amarok Scripts], for example, when writing lyrics fetching plugins, can be written in [[QtScript]].&lt;ref&gt;[http://amarok.kde.org/wiki/Development/Scripting_HowTo_2.0]&lt;/ref&gt;
+
+== Amarok 2.0 ==
+
+Amarok 2 was released on 10 December 2008 bringing along new features{{Citation needed|date=April 2010}}, but still less than Amarok 1.4, spawning considerable discussion, and a completely redesigned interface. New features include:
+* Tight integration with online services such as [[Magnatune]], [[Jamendo]], MP3tunes, [[Last.fm]] and [[Shoutcast]].
+* Completely overhauled scripting API and plugin support to allow better integration into Amarok.
+* Migration from the [[KDE 3]] to [[KDE Software Compilation 4]], and utilization of core technologies such as [[Solid (KDE)|Solid]], [[Phonon (KDE)|Phonon]], and [[Plasma (KDE)|Plasma]].
+
+The user interface had been redesigned to make context information like lyrics and albums from the same artist more accessible and allow the user to decide which information is available by adding applets to the Context View in the middle. The new Biased Playlists offer a way to let Amarok take care of the playlist in an intelligent way similar to Dynamic Playlists in previous versions. New services can easily be added via GetHotNewStuff in Amarok or from kde-apps.org. The migration to the KDE Platform 4 allows Amarok 2 to make use of technologies like Plasma, Phonon, and Solid which make Amarok easier to use and maintain.
+
+=== Changes Since 1.4 ===
+
+* Service Framework: This integrates networked music sources directly into Amarok. This includes online music stores, media servers, Web music lockers, and more. Due to this the users will be able to get easy access to music provided by [[Magnatune]], [[Jamendo]], [[Last.fm]], MP3Tunes Locker and [[Ampache]].
+* Biased Playlists: Biased Playlists extend the old Dynamic Playlists. They allow users to define an automatically populated playlist, based on specific probability-driven criteria called &quot;biases&quot;.
+* Context View: This view occupies the central place of the Amarokâs window, replacing the old Context Browser from the 1.x series. It displays contextual information about the music one plays, like the album cover, track rating, labels, lyrics, artist information, related songs and artists and track mood.
+* Other Features: Additional changes in Amarok 2.0 include new SVG-based scalable theme, advanced scripting, dynamic collections, usability changes, updated media device handling, new podcast manager and support for more software platforms.
+
+== Forks and variations ==
+[[File:Clementine 0.6 in Windows.png|200px|thumb|right|Clementine: A fork of Amarok 1.4.]]
+
+The transition from version 1.4 to version 2 was criticized by some users. As a consequence some new projects have been established, based on Amarok version 1.4.x.
+
+* '''[http://amarok.kde.org/wiki/Amarok_Live Amarok Live]''' was a [[live CD]] [[Linux distribution]] with the sole purpose to demonstrate Amarok.
+* '''[[Clementine (software)|Clementine]]''' is a fork of Amarok 1.4&lt;ref name=&quot;amarok14port&quot;&gt;{{cite web |url=http://mail.kde.org/pipermail/kde-announce-apps/2010-February/004398.html |title=Clementine 0.1 |author=David Sansome |publisher=KDE Mailing Lists |quote=It is largely a port of Amarok 1.4, with some features rewritten to take advantage of Qt4. |date=22-02-2010 |accessdate=03-11-2011}}&lt;/ref&gt; to port it to the Qt 4 framework.
+* '''[[Exaile]]''' is a [[GTK+]] port of Amarok 1.4.
+* '''[http://code.google.com/p/gereqi/ Gereqi]''' is a clone of Amarok 1.4, written in [[PySide]].
+* '''[http://pana.bunnies.net/ Pana]''' is a fork of Amarok 1.4. The intention is to keep the original program alive. The author has now discontinued the project, and suggested users switch to Clementine. [https://launchpad.net/pana Launchpad Site]
+
+== Release history ==
+{| class=&quot;wikitable&quot;
+|-
+! Colour
+! Meaning
+|-
+| style=&quot;background-color:#fa8072;&quot; | Red
+| Release no longer supported
+|-
+| style=&quot;background-color:#A0E75A;&quot; | Green
+| Release still supported
+|-
+| style=&quot;background-color:#87CEEB;&quot; | Blue
+| Future release
+|}
+
+{| class=&quot;wikitable&quot;
+! Major Version !! Codename !! Minor Version !! Release date !! Notes
+|----
+|-
+! 0.5
+| Wocka
+| style=&quot;background-color:#fa8072;&quot; | 0.5.0
+| 2003-06-23
+| Initial release
+|-
+! 0.6
+| ??
+| style=&quot;background-color:#fa8072;&quot; | 0.6.0
+| 2003-09-20
+| ??
+|-
+! 0.7
+| The Last Zombie
+| style=&quot;background-color:#fa8072;&quot; | 0.7.0
+| 2003-11-16
+| Added support for cross fading and customizable columns.
+|-
+! 1.0
+| ??
+| style=&quot;background-color:#fa8072;&quot; | 1.0.0
+| 2004-06-17
+| Added searchable 'collection', file browser, cover art from Amazon and statistics.
+|-
+! 1.1
+| I am a rock
+| style=&quot;background-color:#fa8072;&quot; | 1.1.0
+| 2004-09-27
+| Added song ratings and support for [[Xine]], [[Media Application Server|MAS]] and [[K3b]].
+|-
+! 1.2
+| ??
+| style=&quot;background-color:#fa8072;&quot; | 1.2.0
+| 2005-02-14
+| Support for [[iPod]]s, [[Audioscrobbler]], [[MySQL]] and a themeable browser.
+|-
+! rowspan=&quot;2&quot; | 1.3
+| rowspan=&quot;2&quot; | Airborne
+| style=&quot;background-color:#fa8072;&quot; | 1.3.0
+| 2005-08-14
+| New playlist browser, work on interface, dynamic playlists, support for podcasts, relative paths in playlists, playlist queue, [[Wikipedia]] integration and cuesheets.
+|-
+| style=&quot;background-color:#fa8072;&quot; | 1.3.9
+| 2006-03-26
+| Helix and GStreamer engine, nicer interface, work on podcast support.
+|-
+! rowspan=&quot;12&quot; | 1.4
+| rowspan=&quot;12&quot; | Fast Forward
+| style=&quot;background-color:#fa8072;&quot; | 1.4.0
+| 2006-05-17
+| Improved support for mobile devices, work on memory usage and interface design, integration of Last.FM into the context browser, gapless playback using Xine, lyrics now fetched with scripts, advanced Wikipedia integration, CD ripping via drag n drop, improved handling of podcasts.
+|-
+| style=&quot;background-color:#fa8072;&quot; | 1.4.1
+| 2006-07-02
+| Improved performance and usability, name changed from amaroK to Amarok, Last.FM streams, rating via scripts.
+|-
+| style=&quot;background-color:#fa8072;&quot; | 1.4.2
+| 2006-08-22
+| DAAP client, MTP media device support, dynamic collection, custom Last.FM stations.
+|-
+| style=&quot;background-color:#fa8072;&quot; | 1.4.3
+| 2006-09-05
+| AFT (Amarok File Tracking).
+|-
+| style=&quot;background-color:#fa8072;&quot; | 1.4.4
+| 2006-10-30
+| Magnatune integration, 3 different ways of crossfading with Xine and helix engine.
+|-
+| style=&quot;background-color:#fa8072;&quot; | 1.4.5
+| 2007-02-04
+| SHOUTcast streams, labels.
+|-
+| style=&quot;background-color:#fa8072;&quot; | 1.4.6
+| 2007-06-21
+| Added a new icon set and Rockbox support.
+|-
+| style=&quot;background-color:#fa8072;&quot; | 1.4.7
+| 2007-08-13
+| Updated icons and Cool Streams.
+|-
+| style=&quot;background-color:#fa8072;&quot; | 1.4.8
+| 2007-12-20
+| Added/improved support for latest [[iPod]]s (using libgpod3): 6th-Generation iPod Classic, 3rd-Generation iPod Nano, iPod Touch
+|-
+| style=&quot;background-color:#fa8072;&quot; | 1.4.9
+| 2008-04-09
+| Only released in [[Kubuntu]]. It was missing one important bug-fix, so it was immediately superseded by 1.4.9.1
+|-
+| style=&quot;background-color:#fa8072;&quot; | 1.4.9.1
+| 2008-04-12
+| Updated translations, and bug-fixes
+|-
+| style=&quot;background-color:#fa8072;&quot; | 1.4.10
+| 2008-08-13
+| Very important security update
+|-
+! rowspan=3 | 2.0
+|In the beginning
+| style=&quot;background-color:#A0E75A;&quot; | 2.0.0
+| 2008-12-10
+| Complete redesign of interface, increased graphical features, [[KDE 4]] support, first (not stable yet) release for [[Microsoft Windows]] and [[Mac OS X]].&lt;ref&gt;http://ljubomir.simin.googlepages.com/awnissue10 full list here&lt;/ref&gt;
+|-
+|Magellan
+|style=&quot;background-color:#A0E75A;&quot; | 2.0.1.1
+| 2009-01-11
+|Searching and filtering in the playlist, reintroduction of queueing and stopping after track.
+(Immediately superseded 2.0.1 after a security bug was found in the initial release).&lt;ref&gt;http://amarok.kde.org/en/releases/2.0.1.1 full list here&lt;/ref&gt;
+|-
+|Only Time Will Tell
+|style=&quot;background-color:#A0E75A;&quot; | 2.0.2
+| 2009-03-05
+|Bug and stability fixes.&lt;ref&gt;http://amarok.kde.org/en/releases/2.0.2 2.02 release notes&lt;/ref&gt;
+|-
+! rowspan=2 | 2.1
+|Let There be Light
+|style=&quot;background-color:#A0E75A;&quot; | 2.1.0
+| 2009-06-03
+|Native ReplayGain support, a refactoring of context view, a playlist layout editor, and Amarok URLs and bookmarks.&lt;ref&gt;http://amarok.kde.org/en/releases/2.1&lt;/ref&gt;
+|-
+|Oceania
+|style=&quot;background-color:#A0E75A;&quot; | 2.1.1
+| 2009-06-17
+|Mostly bug and stability fixes.&lt;ref&gt;http://amarok.kde.org/en/releases/2.1.1&lt;/ref&gt;
+|-
+! rowspan=3 | 2.2
+|Sunjammer
+|style=&quot;background-color:#A0E75A;&quot; | 2.2.0
+| 2009-10-01
+|Layout editing, photo and video plasmoids, breadcrumb navigation in the collection browser, and much improved sorting and editing in the playlist.&lt;ref&gt;http://amarok.kde.org/en/releases/2.2&lt;/ref&gt;
+|-
+|Weightless
+|style=&quot;background-color:#A0E75A;&quot; | 2.2.1
+| 2009-11-16
+|Faster collection scanner, podcast grouping, autofetching podcasts, [[Server Message Block|SMB]](samba) support in playlist.&lt;ref&gt;http://amarok.kde.org/en/releases/2.2.1&lt;/ref&gt;
+|-
+|Maya Gold
+|style=&quot;background-color:#A0E75A;&quot; | 2.2.2
+| 2010-01-11
+|Moodbar support, custom labels for music, podcast refinements, and many bugfixes.&lt;ref&gt;http://amarok.kde.org/en/releases/2.2.2&lt;/ref&gt;
+|-
+! rowspan=3 | 2.3
+|Clear Light
+|style=&quot;background-color:#A0E75A;&quot; | 2.3.0
+| 2010-03-15
+|Better podcast support and saved playlists, many small improvements.&lt;ref&gt;http://amarok.kde.org/en/releases/2.3.0&lt;/ref&gt;
+|-
+|The Bell
+|style=&quot;background-color:#A0E75A;&quot; | 2.3.1
+| 2010-05-31
+|Automated Playlist Generator, two new applets for the Context View, cover fetching improvements, and many bugfixes and small improvements.&lt;ref&gt;http://amarok.kde.org/en/releases/2.3.1&lt;/ref&gt;
+|-
+|Moonshine
+|style=&quot;background-color:#A0E75A;&quot; | 2.3.2
+| 2010-09-21
+|Dynamic Collection received fixes and should now work better with hard drives and USB mass storage devices, compatible with KDEâs 4.5 release, other bugfixes.&lt;ref&gt;http://amarok.kde.org/en/releases/2.3.2&lt;/ref&gt;
+|-
+! rowspan=1 | 2.4
+|Slipstream
+|style=&quot;background-color:#A0E75A;&quot; | 2.4
+| 2011-01-15
+|Now you can convert tracks from one file format to another when copying from the file browser to the local collection. We will expand this to media devices in future releases, other bugfixes.&lt;ref&gt;http://amarok.kde.org/en/releases/2.4.0&lt;/ref&gt;
+|-
+! rowspan=1 | 2.4.1
+|Resolution
+|style=&quot;background-color:#A0E75A;&quot; | 2.4.1
+| 2011-05-08
+|Lyrics iPod handling both got some love, along with remote collections. Also, you can now better preview your changes in the Organize Collection feature, other bugfixes.&lt;ref&gt;http://amarok.kde.org/en/releases/2.4.1&lt;/ref&gt;
+|-
+! rowspan=1 | 2.4.2
+|Nightshade
+|style=&quot;background-color:#A0E75A;&quot; | 2.4.2
+| 2011-07-07
+|Enable drag and drop on collections to copy/move within Local Music and directly from the playlist, other bugfixes.&lt;ref&gt;http://amarok.kde.org/en/releases/2.4.2/beta/1&lt;/ref&gt;
+|-
+! rowspan=1 | 2.4.3
+|Berlin
+|style=&quot;background-color:#A0E75A;&quot; | 2.4.3
+| 2011-08-01
+|Compiles with the [[Low Level Virtual Machine|LLVM]] frontend [[Clang]], Enable drag and drop on collections to copy/move within Local Music and directly from the playlist, other bugfixes.&lt;ref&gt;http://amarok.kde.org/en/releases/2.4.3&lt;/ref&gt;
+|-
+! rowspan=1 | 2.5
+|
+|style=&quot;background-color:#87CEEB;&quot; | 2.5
+| 2011-11-20
+|Re-written USB Mass Storage support, integrated Amazon MP3 store.&lt;ref&gt;http://amarok.kde.org/en/releases/2.5/beta/1&lt;/ref&gt;
+|-
+|}
+
+== See also ==
+{{Portal|Free software}}
+* [[Comparison of audio player software]]
+
+== References ==
+{{Reflist|30em}}
+
+== External links ==
+{{Commons|Amarok}}
+* [http://amarok.kde.org/ Amarok homepage]
+* [http://userbase.kde.org/Amarok Amarok UserBase]
+* [irc://irc.freenode.net/amarok #amarok] on freenode
+
+{{KDE}}
+{{Aggregators}}
+{{Media players}}
+
+{{DEFAULTSORT:Amarok (Software)}}
+[[Category:2003 software]]
+[[Category:Free audio software]]
+[[Category:KDE Extragear]]
+[[Category:Linux media players]]
+[[Category:Online music database clients]]
+[[Category:Free media players]]
+[[Category:MusicBrainz clients]]
+[[Category:Podcasting software]]
+[[Category:Jukebox-style media players]]
+[[Category:Free software programmed in C++]]
+[[Category:Free multilingual software]]
+[[Category:Applications using D-Bus]]
+[[Category:Mac OS X software]]
+[[Category:Windows software]]
+
+[[af:Amarok]]
+[[ar:Ø£ÙØ±ÙÙ (Ø¨Ø±ÙØ§ÙØ¬)]]
+[[ast:Amarok]]
+[[bg:Amarok]]
+[[bs:Amarok]]
+[[ca:Amarok (KDE)]]
+[[cs:Amarok (pÅehrÃ¡vaÄ)]]
+[[da:Amarok]]
+[[de:Amarok (Software)]]
+[[es:Amarok (software)]]
+[[eo:Amarok (programaro)]]
+[[eu:Amarok]]
+[[fa:Ø¢ÙØ§Ø±ÙÚ©]]
+[[fr:Amarok (logiciel)]]
+[[fy:Amarok (audiospiler)]]
+[[gl:Amarok]]
+[[ko:ìë§ë¡]]
+[[hi:à¤à¤®à¤¾à¤°à¥à¤]]
+[[hr:Amarok]]
+[[id:Amarok]]
+[[it:Amarok (KDE)]]
+[[lt:Amarok]]
+[[hu:Amarok (szoftver)]]
+[[nl:Amarok (audiospeler)]]
+[[ja:Amarok]]
+[[no:Liste over KDE-programmer#Amarok]]
+[[pl:Amarok (program)]]
+[[pt:Amarok (software)]]
+[[ro:Amarok (software)]]
+[[ru:Amarok]]
+[[simple:Amarok (software)]]
+[[sk:Amarok (audio)]]
+[[sl:Amarok]]
+[[sr:Amarok]]
+[[sh:Amarok]]
+[[fi:Amarok (ohjelmisto)]]
+[[sv:Amarok]]
+[[tr:Amarok (yazÄ±lÄ±m)]]
+[[uk:Amarok]]
+[[zh:Amarok]]</rev></revisions></page></pages></query></api>

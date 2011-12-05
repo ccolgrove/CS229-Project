@@ -1,0 +1,706 @@
+<?xml version="1.0"?><api><query><pages><page pageid="210892" ns="0" title="Firefox"><revisions><rev xml:space="preserve">{{Other uses|Firefox (disambiguation)}}
+{{Redirect|Phoenix (web browser)|the Phoenix browser based on tkWWW|tkWWW}}
+{{pp-semi-indef}}{{pp-move-indef}}
+
+{{Infobox web browser
+| name = Firefox
+| logo = [[File:Firefox 3.5-4.0 logo.png|105px|Mozilla Firefox Icon]][[File:Mozilla Firefox wordmark.svg|180px|Mozilla Firefox wordmark]]
+| screenshot = [[File:Firefox8.png|300px|]]
+| caption = Firefox 8 on Windows 7
+| author = [[Mozilla Corporation]]
+| developer = Mozilla Corporation&lt;br /&gt;[[Mozilla Foundation]]
+| released = {{Start date|2004|11|09}}
+| frequently updated = Yes
+| programming language = [[C (programming language)|C]]/[[C++]], [[JavaScript]],&lt;ref&gt;{{cite web|url=http://www.rietta.com/firefox/Tutorial/backend.html |title=Firefox's addons are written in JavaScript |publisher=Rietta |accessdate=2009-12-19}}&lt;/ref&gt; [[Cascading Style Sheets|CSS]],&lt;ref&gt;{{cite web|url=http://davidwalsh.name/firefox-internal-rendering-css |title=Firefox uses an &quot;html.css&quot; stylesheet for default rendering styles |publisher=David Walsh |accessdate=2009-12-19}}&lt;/ref&gt;&lt;ref&gt;{{cite web|url=http://userstyles.org/styles;app |title=The Firefox addon, Stylish takes advantage of Firefox's CSS rendering to change the appearance of Firefox |publisher=userstyles.org |accessdate=2009-12-19}}&lt;/ref&gt; [[XUL]], [[XBL]]
+| operating system = [[Cross-platform]]
+| engine = [[Gecko (layout engine)|Gecko]]
+| size = 13 [[Megabyte|MB]] â Windows&lt;ref name=&quot;sizes&quot; /&gt;&lt;br /&gt; 28 MB â Mac OS X&lt;ref name=&quot;sizes&quot; /&gt;&lt;br /&gt; 15 MB â Linux i686&lt;ref name=&quot;sizes&quot; /&gt;&lt;br /&gt;16 MB â Linux x86_64&lt;ref name=&quot;sizes&quot; /&gt;&lt;br /&gt; 66 MB â source code&lt;ref name=&quot;sizes&quot;&gt;{{cite web |url=https://ftp.mozilla.org/pub/mozilla.org/firefox/releases/latest/ |title=Latest stable Firefox release |publisher=Mozilla |date=2011-09-27 |accessdate=2011-09-29}}&lt;/ref&gt;
+| language = 83 [[locale]]s (74 languages)&lt;ref&gt;{{cite web |url=http://www.mozilla.com/firefox/all.html |title=Firefox web browser &amp;brvbar; International versions: Get Firefox in your language |work=Mozilla Firefox |publisher=Mozilla Corporation |accessdate=2011-09-29}}&lt;/ref&gt;
+| status = Active
+| genre = [[Web browser]]&lt;br /&gt;[[File Transfer Protocol|FTP client]]
+| license ='''Since version 3.0.6:''' [[Mozilla Public License|MPL]], [[GNU General Public License|GNU GPL]] or [[GNU Lesser General Public License|GNU LGPL]], '''version 3.0.5 and Earlier executable code version''' Mozilla Firefox [[EULA]] 1.0/1.1, '''version 3.0.5 and Earlier source code version of certain Firefox functionality''': MPL&lt;ref&gt;{{cite web|url=http://www.mozilla.com/en-US/legal/eula/ |title=Mozilla End-User Licensing Agreements |publisher=Mozilla |accessdate=2010-07-29}}&lt;/ref&gt;&lt;ref&gt;{{cite web|url=http://www.mozilla.com/en-US/legal/eula/firefox-en.html |title=Mozilla Firefox End-User Software License Agreement |publisher=Mozilla |accessdate=2010-07-29 |archiveurl = http://web.archive.org/web/20070528164713/http://www.mozilla.com/en-US/legal/eula/firefox-en.html |archivedate = May 28, 2007}}&lt;/ref&gt;
+| website = {{URL|http://www.firefox.com}}
+}}
+
+{{Firefox TOC}}
+
+'''Mozilla Firefox''' is a [[Free and open source software|free and open source]]&lt;ref name=&quot;lwn_trademark_issues&quot;&gt;{{cite web|url=http://lwn.net/Articles/118268/|title=Debian and Mozilla - a study in trademarks|work=[[LWN.net]]|accessdate=14 September 2011}}&lt;/ref&gt; [[web browser]] descended from the [[Mozilla Application Suite]] and managed by [[Mozilla Corporation]]. {{as of|2011|08|alt=As of September 2011}}, Firefox is the second most widely used browser, with approximately 25% of worldwide [[usage share of web browsers]].&lt;ref name=&quot;w3counter1&quot;&gt;{{cite web |url=http://www.w3counter.com/globalstats.php |title=Global Web Stats |work=W3Counter |publisher=Awio Web Services LLC |accessdate=2011-09-29}}&lt;/ref&gt;&lt;ref name=&quot;gs.statcounter.com&quot;&gt;{{cite web |url=http://gs.statcounter.com |title=Top 5 Browsers |work=StatCounter Global Stats |publisher=StatCounter |accessdate=2011-09-29}}&lt;/ref&gt;&lt;ref name=&quot;getclicky1&quot;&gt;{{cite web |url=http://www.getclicky.com/marketshare/global/web-browsers/ |title=Web browsers (Global marketshare) |work=Clicky |publisher=Roxr Software Ltd |accessdate=2011-09-29}}&lt;/ref&gt; The browser has had particular success in [[Germany]] and [[Africa]], where it is the most popular browser with 50%&lt;ref name=&quot;statcounter1&quot;&gt;{{cite web |url=http://gs.statcounter.com/#browser-DE-monthly-201109-201111 |title=Top 5 Browsers in Germany |work=StatCounter Global Stats |publisher=StatCounter |accessdate=2011-09-29}}&lt;/ref&gt; and 35%&lt;ref name=&quot;statcounterafrica&quot;&gt; http://gs.statcounter.com/#browser-af-monthly-201111-201111-bar &lt;/ref&gt; usage respectively.
+
+To display web pages, Firefox uses the [[Gecko (layout engine)|Gecko]] [[layout engine]], which implements most current [[web standards]] in addition to several features that are intended to anticipate likely additions to the standards.&lt;ref&gt;{{cite web|year=2009|url = http://download-firefox.org/spread-firefox/gecko-layout-engine-and-mozilla-firefox/|title = Gecko Layout Engine|accessdate = 2009-02-16}}&lt;/ref&gt;
+
+Features include [[Tab (GUI)|tabbed browsing]], [[Spell checker|spell checking]], [[incremental find]], [[Live bookmarks|live bookmarking]], a [[download manager]], [[Privacy mode|private browsing]], location-aware browsing (also known as &quot;[[geolocation]]&quot;) based exclusively on a [[Google]] service&lt;ref name=&quot;mozgeo&quot;&gt;{{cite web|title = Location-Aware Browsing|url = http://www.mozilla.com/firefox/geolocation/|accessdate = 2009-07-05|publisher = Mozilla Corp}} (section &quot;''What information is being sent, and to whom? (...)''&quot;)&lt;/ref&gt; and an integrated search system that uses Google by default in most localizations. Functions can be added through [[List of Firefox extensions|extensions]], created by [[third-party developer]]s,&lt;ref name=&quot;mozilla1&quot;&gt;{{cite web|url=https://addons.mozilla.org/firefox/browse/type:1/cat:all |title=Browse all extensions page |publisher=Addons.mozilla.org |date= |accessdate=2011-08-17}}&lt;/ref&gt; of which there is a wide selection, a feature that has attracted many of Firefox's users.
+
+Firefox runs on various [[operating systems]] including [[Microsoft Windows]], [[Linux]], [[Mac OS X]], [[FreeBSD]], and many other platforms. Its current stable release is version 8.0.1, released on {{as of|2011|11|21|alt=November 21, 2011}}.&lt;ref name=&quot;release notes&quot;&gt;{{cite web |title = Mozilla Firefox 8.0 Release Notes|publisher = Mozilla|url = https://www.mozilla.org/en-US/firefox/8.0.1/releasenotes//|accessdate = 2011-11-22}}&lt;/ref&gt;
+
+==History==
+{{Main|History of Firefox}}
+
+The Firefox project began as an experimental branch of the Mozilla project by [[Dave Hyatt]], [[Joe Hewitt (programmer)|Joe Hewitt]] and [[Blake Ross]]. They believed the commercial requirements of [[Netscape|Netscape's]] sponsorship and developer-driven [[feature creep]] compromised the utility of the Mozilla browser.&lt;ref&gt;{{cite web|url = http://weblogs.mozillazine.org/ben/archives/009698.html|title = Where Did Firefox Come From?|accessdate=2009-08-02|last= Goodger|first= Ben|authorlink= Ben Goodger |date=2006-02-06|publisher = Inside Firefox}}&lt;/ref&gt; To combat what they saw as the [[Mozilla Application Suite|Mozilla Suite's]] [[software bloat]], they created a stand-alone browser, with which they intended to replace the Mozilla Suite. On April 3, 2003, the [[Mozilla Foundation|Mozilla Organization]] announced that they planned to change their focus from the Mozilla Suite to Firefox and [[Mozilla Thunderbird|Thunderbird]].&lt;ref&gt;{{cite web|url = http://www-archive.mozilla.org/roadmap/roadmap-02-Apr-2003.html|title = mozilla development roadmap|accessdate = 2009-08-02|last = Eich|first = Brendan|authorlink = Brendan Eich|coauthors = [[Dave Hyatt|David Hyatt]] |date=2003-04-02|publisher = [[Mozilla]]}}&lt;/ref&gt;
+
+===Early versions===
+[[File:Firefox 1 0 8.png|thumb|300px|German build of Firefox 1.0.8]]
+
+The Firefox project has undergone several name changes. Originally titled ''Phoenix'', it was renamed because of [[trademark]] issues with [[Phoenix Technologies]]. The replacement name, ''Firebird'', provoked an intense response from the [[Firebird (database server)|Firebird]] free database software project.&lt;ref&gt;{{cite web|url = http://www.ibphoenix.com/main.nfs?a=ibphoenix&amp;page=ibp_Mozilla0|archiveurl = http://web.archive.org/web/20070914035447/http://www.ibphoenix.com/main.nfs?a=ibphoenix&amp;page=ibp_Mozilla0|archivedate = 2007-09-14|title = Mozilla browser becomes Firebird|accessdate = 2007-01-30|publisher = IBPhoenix}}&lt;/ref&gt;&lt;ref&gt;{{cite web|url = http://www.techworld.com.au/article/64477/mozilla_dirty_deed_brings_firey_response|title = Mozilla 'dirty deed' brings out a Firey response|accessdate = 2010-10-22 |date=2003-04-17|last = Dahdah|first = Howard|publisher = Techworld|quote = &quot;This must be one of the dirtiest deeds I've seen in open source so far,&quot; said Helen Borrie, a Firebird project administrator and documenter.}}{{dead link|date=December 2010}}&lt;/ref&gt;&lt;ref&gt;{{cite web|url = http://news.cnet.com/2100-1032_3-1000146.html|title = Mozilla's Firebird gets wings clipped|accessdate = 2007-01-30 |date=2003-05-06|last = Festa|first = Paul|publisher = [[CNET Networks|CNET]]}}&lt;/ref&gt; In response, the Mozilla Foundation stated that the browser should always bear the name ''Mozilla Firebird'' to avoid confusion with the database software. After further pressure from the database server's development community, on February 9, 2004, Mozilla Firebird became ''Mozilla Firefox'',&lt;ref&gt;{{cite web|url = http://news.cnet.com/2100-7344-5156101.html|title = Mozilla holds 'fire' in naming fight|accessdate = 2007-01-24|last = Festa|first = Paul |date=February 9, 2004|publisher = CNET News}}&lt;/ref&gt; often referred to as simply ''Firefox.'' Mozilla prefers that Firefox be abbreviated as ''Fx'' or ''fx,'' though it is often abbreviated as ''FF''.&lt;ref&gt;{{cite web|url = http://www.mozilla.com/firefox/releases/1.5.html#FAQ|title = Firefox 1.5 Release Notes|accessdate = 2008-01-03|publisher = Mozilla}}&lt;/ref&gt; The Firefox project went through many versions before 1.0 was released on November 9, 2004. After a series of stability and security fixes, the Mozilla Foundation released its first major update, Firefox version 1.5, on November 29, 2005. Firefox 1.5.0.12 is the final version officially supported under [[Windows 95]].
+
+===Version 2.0===
+{{Main|Firefox 2}}
+
+On October 24, 2006, Mozilla released [[Firefox 2]]. This version includes updates to the [[Features of Firefox#Tabbed browsing|tabbed browsing]] environment; the extensions manager; the [[Graphical user interface|GUI (Graphical User Interface)]]; and the find, search and software update engines; a new session restore feature; inline spell checking; and an anti-[[phishing]] feature which was implemented by [[Google]] as an extension,&lt;ref&gt;{{cite web|url = http://www.google.com/tools/firefox/safebrowsing|title = Google Safe Browsing for Firefox|accessdate = 2007-02-05|publisher = Google}}&lt;/ref&gt;&lt;ref&gt;{{cite web|url = https://wiki.mozilla.org/?title=Phishing_Protection:_Design_Documentation&amp;oldid=46996#Background|title = Phishing Protection Design Documentation&amp;nbsp;â Background|accessdate = 2007-01-24|author = Mozilla wiki contributors|publisher = Mozilla wiki}}&lt;/ref&gt; and later merged into the program itself.&lt;ref&gt;{{cite web| url=http://www.mozilla.com/firefox/2.0/releasenotes/ |title=Mozilla Firefox 2 Release Notes|publisher=Mozilla Corporation |accessdate=2006-12-19}}&lt;/ref&gt; In December 2007, Firefox Live Chat was launched. It allows users to ask volunteers questions through [[Openfire|a system]] powered by [[Jive Software]], with guaranteed hours of operation and the possibility of help after hours.&lt;ref&gt;{{cite web|url=http://blog.mozilla.com/sumo/2007/12/28/firefox-live-chat-launching-today/ |title=Firefox Support Blog Â» Blog Archive Â» Firefox Live Chat launching today |publisher=The Mozilla Blog |date=2007-12-28 |accessdate=2009-12-19}}&lt;/ref&gt; Firefox 2.0.0.20 is the final version which can run under an unmodified installation of [[Windows NT 4.0]], [[Windows 98]], and [[Windows ME]].{{Citation needed|date=June 2011}}
+
+===Version 3.0===
+{{Main|Firefox 3}}
+
+Firefox 3 was released on June 17, 2008,&lt;ref&gt;{{cite web|url = https://developer.mozilla.org/devnews/index.php/2008/06/17/firefox-3-available-today-at-1700-utc-10am-pdt/|title = Firefox 3 available today at 17:00 UTC (10am PDT)| accessdate = 2008-02-17 |date=2008-06-17|publisher = Mozilla Developer Center}}&lt;/ref&gt; by the [[Mozilla Corporation]]. Firefox 3 uses version 1.9 of the Mozilla [[Gecko (layout engine)|Gecko]] layout engine for displaying web pages. This version fixes many bugs, improves standard compliance, and implements new web [[Application programming interface|APIs]].&lt;ref name=&quot;mdc_fx3_developers&quot;&gt;{{cite web|url = https://developer.mozilla.org/en/Firefox_3_for_developers|title = Firefox 3 for developers|accessdate = 2007-07-17 |date=2007-07-17|publisher = Mozilla Developer Center}}&lt;/ref&gt; Other new features include a redesigned download manager, a new &quot;Places&quot; system for storing bookmarks and history, and separate [[theme (computing)|themes]] for different operating systems. The latest version under 3.0 is Firefox 3.0.19.
+
+Development stretches back to the first Firefox 3 [[Open beta|beta]] (under the codename 'Gran Paradiso'&lt;ref&gt;{{cite web|url=http://groups.google.com/group/mozilla.dev.planning/browse_thread/thread/c73f6a1c25e8e7b0/b714ca46975f0109#b714ca46975f0109|title = Gecko 1.9/Firefox 3 (&quot;Gran Paradiso&quot;) Planning Meeting, Wednesday Jun 7, 11:00 am|accessdate=2006-09-17 |date=June 2, 2006|last = Vukicevic|first = Vladimir|publisher = Google Groups: mozilla.dev.planning}}&lt;/ref&gt;) which had been released several months earlier on 19 November 2007,&lt;ref&gt;{{cite web |url=https://developer.mozilla.org/devnews/index.php/2007/11/19/firefox-3-beta-1-now-available-for-download/ |author=Mike Beltzner |publisher=Mozilla Developer News |title=Firefox 3 Beta 1 now available for download}}&lt;/ref&gt; and was followed by several more beta releases in spring 2008 culminating in the June release.&lt;ref&gt;{{cite web |accessdate=2007-12-20 |url=https://developer.mozilla.org/devnews/index.php/2007/12/18/firefox-3-beta-2-now-available-for-download/ |author=Mike Beltzner |publisher=Mozilla Developer News |title=Firefox 3 Beta 2 now available for download}}&lt;/ref&gt; Firefox 3 had more than 8 million unique downloads the day it was released, setting a [[Guinness World Records|Guinness World Record]].&lt;ref&gt;{{cite web |url=http://www.pcworld.com/businesscenter/article/147256/mozilla_logs_8_millionplus_firefox_3_downloads_in_a_day.html |title=Mozilla Logs 8 Million-plus Firefox 3 Downloads in a Day |last=Montalbano |first=Elizabeth |date=2008-06-18 |work=PCWorld |accessdate=2009-04-30}} See also: {{cite web |url=http://www.pcworld.com/businesscenter/article/146405/mozilla_shooting_for_record_books_with_firefox_3_release.html |title=Mozilla Shooting for Record Books With Firefox 3 Release |last=Montalbano |first=Elizabeth |date=2008-05-28 |work=PCWorld |accessdate=2009-04-30}}&lt;/ref&gt;
+
+===Version 3.5===
+{{Main|Firefox 3.5}}
+[[File:Mozilla Firefox 3.5.png|thumb|300px|Firefox 3.5 on Ubuntu]]
+
+Version 3.5, codenamed [[Shiretoko National Park|Shiretoko]],&lt;ref&gt;{{cite web|url=https://wiki.mozilla.org/Firefox3.1|title=Firefox 3.1 &quot;Shiretoko&quot;|date=2008-06-12|accessdate=2008-06-12}}&lt;/ref&gt; adds a variety of new features to Firefox. Initially numbered Firefox 3.1, Mozilla developers decided to change the numbering of the release to 3.5, in order to reflect a significantly greater scope of changes than originally planned.&lt;ref&gt;{{cite newsgroup|title=Shiretoko (Firefox 3.1) being renamed to Firefox 3.5|date=March 6, 2009|author=Mike Shaver |newsgroup=mozilla.dev.planning |server=news.mozilla.org |id=mailman.34.1236360325.4415.dev-planning@lists.mozilla.org}}&lt;/ref&gt; The final release was on June 30, 2009. The changes included much faster performance thanks to an upgrade to [[SpiderMonkey (JavaScript engine)|SpiderMonkey]] [[JavaScript]] engine called [[SpiderMonkey (JavaScript engine)|TraceMonkey]] and rendering improvements,&lt;ref name=&quot;betanews&quot;&gt;{{cite web|url=http://www.betanews.com/article/The-final-score-Firefox-35-performs-at-251-the-speed-of-30/1246470925|title=The final score: Firefox 3.5 performs at 251% the speed of 3.0|date=2009-07-01|author=Scott M. Fulton, III|publisher=Betanews|accessdate=2010-05-04}}&lt;/ref&gt; and support for the &lt;code&gt;&amp;lt;video&gt;&lt;/code&gt; and &lt;code&gt;&amp;lt;audio&gt;&lt;/code&gt; tags as defined in the [[HTML5|HTML 5]] specification, with a goal to offer [[video]] playback without being encumbered by [[patent]] issues associated with many video technologies.&lt;ref name=&quot;Warne APC&quot;&gt;{{cite web|url=http://apcmag.com/firefox_to_go_headtohead_with_flash_and_silverlight.htm|title=Firefox to go head-to-head with Flash and Silverlight|accessdate= 2008-01-18|author= Dan Warne|date=2007-05-07|work=APC Magazine|publisher=ACP Magazines Ltd}}&lt;/ref&gt; Cross-site [[XMLHttpRequest]]s (XHR), which can allow for more powerful web applications and an easier way to implement [[mashup (web application hybrid)|mashups]], are also implemented in 3.5.&lt;ref&gt;{{cite web |url=https://developer.mozilla.org/En/HTTP_Access_Control |title=HTTP Access Control|date=2009-06-29|accessdate=2009-07-01}}&lt;/ref&gt; A new global [[JSON]] object contains native functions to efficiently and safely [[Serialization|serialize and deserialize]] JSON objects, as specified by the [[ECMAScript]] 3.1 draft.&lt;ref&gt;{{cite web|url=http://wiki.ecmascript.org/doku.php?id=es3.1:json_support|title= es3.1:json_support|publisher=ECMA}}&lt;/ref&gt; Full [http://www.w3.org/TR/css3-selectors/#selectors CSS 3 selector] support has been added. Firefox 3.5 uses the Gecko 1.9.1 engine, which includes a few features that were not included in the 3.0 release. [[Multi-touch]] trackpad support was also added to the release, including [[gesture recognition|gesture support]] like pinching for zooming and swiping for back and forward.&lt;ref&gt;{{cite web|url=http://www.macrumors.com/2008/12/10/latest-firefox-3-1-beta-adds-multi-touch-support/|title=Latest Firefox 3.1 Beta Adds Multi-Touch Support|last=Kim|first=Arnold |date=2008-12-10|publisher=Mac Rumors|accessdate=2009-01-17}}&lt;/ref&gt; Firefox 3.5 also features an updated logo.&lt;ref&gt;{{cite web|url=http://blog.mozilla.com/faaborg/2009/05/15/creative-brief-for-the-new-firefox-icon/|title=Creative Brief for the New Firefox Icon|author=Alex Faaborg|date=2009-05-15|accessdate=2009-05-30}}&lt;/ref&gt;
+
+===Version 3.6===
+{{Main|Firefox 3.6}}
+
+Version 3.6 (latest version 3.6.24) is the release codenamed [[Tsingy de Namoroka Strict Nature Reserve|Namoroka]].&lt;ref&gt;{{cite web |url=https://wiki.mozilla.org/Firefox/Namoroka#Namoroka |title=Namoroka|date=August 8, 2009 |publisher=Mozilla |accessdate=2009-08-14}}&lt;/ref&gt; Development for this version started on December 1, 2008,&lt;ref&gt;{{Cite document |url= http://forums.mozillazine.org/viewtopic.php?f=18&amp;t=975065&amp;p=5127635 |title=First step to Firefox 3.2: Alpha 1 is here |accessdate=2008-12-01 |date=2008-12-01 |author=Alfred Kayser |publisher=Mozilla Links |postscript= &lt;!--None--&gt;}}&lt;/ref&gt; and it was released on January 21, 2010.&lt;ref name=&quot;release notes&quot;/&gt; This release uses the Gecko 1.9.2 [[layout engine|rendering engine]].
+
+New features for Firefox 3.6 include built-in support for Personas (toolbar skins), notification of out-of-date [[plug-in (computing)|plugins]],&lt;ref&gt;The check is performed not inside add-ons window (as if usual add-ons), but on the Mozilla site though.&lt;/ref&gt; full screen playback of [[Theora]] video, support for the [[Web Open Font Format|WOFF]] open webfont format,&lt;ref&gt;{{cite web |last=Blizzard |first=Christopher |url=http://hacks.mozilla.org/2009/10/woff/ |title=Web Open Font Format for Firefox 3.6 |publisher=Mozilla Hacks |date=2009-10-20 |accessdate=2009-12-19}}&lt;/ref&gt; a more secure plugin system, and many performance improvements.&lt;ref name=&quot;release notes&quot;/&gt;
+
+====Out-of-process plug-ins====
+[[File:Firefox sad plugin.png|thumb|upright|A crashed Adobe Flash plugin]]
+
+One minor update to Firefox 3.6, version 3.6.4 (code-named [[Lorentz National Park|Lorentz]]) features &quot;Crash Protection&quot;&lt;ref&gt;{{cite web|url=https://wiki.mozilla.org/Firefox/Crash_Protection |title=Firefox/Crash Protection - MozillaWiki |publisher=Wiki.mozilla.org |date=2010-07-04 |accessdate=2011-08-17}}&lt;/ref&gt; (also called out-of-process plug-ins, or OOPP), which isolates execution of plug-ins into a separate process, preventing a plug-in crash from bringing down the whole browser.
+
+In the initial release only 3 plug-ins were isolated by default: [[Adobe Flash|Adobe Flash Player]], [[QuickTime|Apple Quicktime]], and [[Microsoft Silverlight]], and the feature was available only in the Windows and Linux builds. Mac OS X 10.6 support was added in Firefox 4. Firefox 3.6.6 increased the amount of time a plug-in is allowed to be unresponsive to the point before the plug-in would quit.&lt;ref&gt;{{cite web|url=http://www.mozilla.com/en-US/firefox/3.6.6/releasenotes/|date=2010-06-26|publisher=Mozilla|title=Mozilla Firefox 3.6.6 Release Notes}}&lt;/ref&gt;
+
+Starting with Lorentz, Mozilla plans to release non-intrusive changes as minor updates that previously included only stability and security fixes.&lt;ref name=&quot;Lorentz&quot;&gt;{{cite web|url=http://news.cnet.com/8301-30685_3-10433844-264.html|title=Firefox 3.6 due this month; next comes 'Lorentz'|publisher=CNET News |date=2010-01-13 |accessdate=2010-01-17}}&lt;/ref&gt;
+
+===Version 4.0===
+{{Main|Firefox 4}}
+[[File:Firefox 4.png|thumb|300px|Firefox 4.0 displaying [[Wikipedia]] on [[Windows 7]].]]
+
+Released on March 22, 2011,&lt;ref&gt;{{cite web|url=http://www.conceivablytech.com/6252/products/mozilla-to-ship-firefox-4-final-on-march-22 |title=Mozilla To Ship Firefox 4 Final On March 22 |publisher=ConceivablyTech |date=2011-03-15 |accessdate=2011-08-17}}&lt;/ref&gt;&lt;ref&gt;{{cite web|url=http://groups.google.com/group/mozilla.dev.planning/browse_thread/thread/18a347956e4693eb# |title=Firefox 4 Final Release Schedule - mozilla.dev.planning &amp;#124; Google Groups |publisher=Groups.google.com |date= |accessdate=2011-08-17}}&lt;/ref&gt; Firefox 4 was codenamed &quot;Tumucumaque&quot; after [[Tumucumaque National Park]].
+
+Version 4 brought a new [[user interface]] and is said to be faster.&lt;ref name=&quot;Firefox 4 plan&quot;&gt;{{cite web|url=http://www.theregister.co.uk/2010/05/10/firefox_4_dot_o_plan/ |title=Mozilla spills plan for, yes, Firefox 4 |publisher=The Register |date=2010-05-10 |accessdate=2010-05-10}}&lt;/ref&gt; Early mockups of the new interface on [[Microsoft Windows|Windows]], [[Mac OS X]], and [[Linux]] were first made available in July 2009.&lt;ref&gt;{{cite web|url=https://wiki.mozilla.org/Firefox/4.0_Windows_Theme_Mockups |title=Firefox 4.0 Windows Theme Mockups |publisher=Mozilla |date=2010-06-02 |accessdate=2010-08-11}}&lt;/ref&gt;&lt;ref&gt;{{cite web|url=https://wiki.mozilla.org/Firefox/4.0_Mac_Theme_Mockups |title=Firefox 4.0 Mac Theme Mockups |publisher=Mozilla |date=2010-06-16 |accessdate=2010-08-11}}&lt;/ref&gt;&lt;ref&gt;{{cite web|url=https://wiki.mozilla.org/Firefox/4.0_Linux_Theme_Mockups |title=Firefox 4.0 Linux Theme Mockups |publisher=Mozilla |date=2010-07-21 |accessdate=2010-08-11}}&lt;/ref&gt; Other new features included improved notifications, tab groups, application tabs, a redesigned add-on manager, integration with [[Firefox Sync]], and support for multitouch displays.&lt;ref&gt;{{cite web|title=What are Tab Groups?|url=http://support.mozilla.com/en-US/kb/what-are-tab-groups}}&lt;/ref&gt;&lt;ref&gt;{{cite web |url= http://www.azarask.in/blog/post/designing-tab-candy/ |title= Firefox Panorama: Tab Candy Evolved |author= [[Aza Raskin]] |accessdate= 2010-09-11}}&lt;/ref&gt;&lt;ref name=&quot;Firefox 4 release plan&quot;&gt;{{cite web|url= http://news.cnet.com/8301-30685_3-20004620-264.html |title= Firefox 4 release plan: The need for speed |author= Stephen Shankland |publisher= cnet |date= 2010-05-11 |accessdate= 2010-05-28}}&lt;/ref&gt;&lt;ref&gt;{{cite web |url= http://mozillalabs.com/sync/2010/08/24/sync-in-firefox-4-beta/ |title= Sync in Firefox 4 Beta |publisher= [[Mozilla Labs]] |date= 2010-08-24 |accessdate= 2010-09-11}}{{dead link|date=August 2011}}&lt;/ref&gt;&lt;ref&gt;{{cite web|url= http://news.cnet.com/8301-30685_3-20006239-264.html |title= Mozilla prepares coders for Firefox 4 features |author= Stephen Shankland |publisher= cnet |date= 2010-05-28 |accessdate= 2010-05-28}}&lt;/ref&gt;
+
+On October 13, 2006, [[Brendan Eich]], Mozilla's [[Chief technical officer|Chief Technology Officer]], wrote about the plans for &quot;Mozilla 2&quot;, referring to the most comprehensive iteration (since its creation) of the overall platform on which Firefox and other Mozilla products run.&lt;ref&gt;{{cite web|url=http://weblogs.mozillazine.org/roadmap/archives/2006/10/mozilla_2.html|title=Mozilla 2|last=Eich|first=Brendan|date=2006-10-13|accessdate=2006-09-16}}{{dead link|date=August 2011}}&lt;/ref&gt; Most of the objectives were gradually incorporated into Firefox through versions 3.0, 3.5, and 3.6. The largest changes, however, were planned for Firefox 4.
+
+Firefox 4 was based on the [[Gecko (layout engine)|Gecko]] 2.0 engine, which added or improved support for [[HTML5]], [[CSS3]], [[WebM]], and [[WebGL]].&lt;ref&gt;{{cite web|url=http://hacks.mozilla.org/2010/05/firefox-4-the-html5-parser-inline-svg-speed-and-more/ |title=Firefox 4 HTML 5 parser |author=Henri Sivonen |date=2010-05-11 |accessdate=2010-05-11}}&lt;/ref&gt;&lt;ref name=&quot;Firefox 4 fast&quot;&gt;{{cite web|url=http://beltzner.ca/mike/2010/05/10/firefox-4-fast-powerful-and-empowering/ |title=Firefox 4: fast, powerful, and empowering |author=Beltzner, Mike |date=2010-05-10 |accessdate=2010-05-10}}&lt;/ref&gt; It also included a new JavaScript engine ([[JÃ¤gerMonkey]]) and better [[XPCOM]] APIs.&lt;ref&gt;{{cite web|url = http://hacks.mozilla.org/2010/03/a-quick-note-on-javascript-engine-components/|title = a quick note on JavaScript engine components|author = Christopher Blizzard|date = 2010-03-08|accessdate = 2010-03-19}}&lt;/ref&gt;
+
+===Rapid release===
+{{See also|History of Firefox#Rapid release development cycle}}
+
+[[File:About Nightly.png|thumb|250px|The &quot;About Nightly&quot; window from Mozilla Firefox 10 Nightly.]]
+In April 2011, the development process was split into several &quot;channels&quot;, each working on a build in a different [[Software release life cycle|stage of development]]. The most recent available build is called &quot;Nightly Builds&quot; and offers the latest, untested features and updates. The &quot;Aurora&quot; build is up to six weeks behind &quot;Nightly&quot; and offers functionality that has undergone basic testing. The &quot;Beta&quot; channel is another six weeks away. It provides improved stability over the nightly builds and is the first development milestone that has the &quot;Firefox&quot; logo. &quot;Release&quot; is the current official version of Firefox. New releases are planned to occur in six to sixteen week intervals.&lt;ref&gt;{{cite web|url=http://mozilla.github.com/process-releases/draft/development_specifics/ |title=Mozilla Firefox: Development Specifics |publisher=Mozilla |date=2011-04-07 |accessdate=2011-04-16}}&lt;/ref&gt; The aim of this faster-paced process is to get new functions to users faster.&lt;ref&gt;{{cite web|url=http://mozilla.github.com/process-releases/draft/development_specifics/ |title=Mozilla Firefox: Development Process |publisher=Mozilla |date=2011-04-07 |accessdate=2011-04-16}}&lt;/ref&gt;
+
+====Version 5.0====
+Firefox 5 was released on June 21, 2011,&lt;ref name=&quot;mozilla2&quot;&gt;{{cite web |url=http://www.mozilla.com/en-US/firefox/new/ |title=Mozilla Firefox Web BrowserâFree Download |publisher=Mozilla }}&lt;/ref&gt; only three months after the major release of Firefox 4. Firefox 5 is the first release as part of Mozilla's new rapid release plan, matching Google Chrome's rapid release schedule and rapid version number increments.&lt;ref&gt;{{cite web |url=http://arstechnica.com/business/news/2011/06/firefox-update-policy-the-enterprise-is-wrong-not-mozilla.ars |title=Firefox update policy: the enterprise is wrong, not Mozilla |publisher=Ars Technica |date=27 June 2011}}&lt;/ref&gt;
+
+====Version 6.0====
+Mozilla released its Mozilla Firefox 6.0 on August 16, 2011. The update brought: permissions manager, new address bar highlighting, streamlined the look of the site identity block, quicker startup time and many other new features.
+
+====Version 7.0====
+Firefox 7, released September 27, 2011, uses as much as 50% less memory than Firefox 4 as a result of the MemShrink project to reduce Firefox memory usage.&lt;ref&gt;{{cite web | url = http://blog.mozilla.com/nnethercote/2011/08/09/firefox-7-is-lean-and-fast-2/ | title = Firefox 7 is lean and fast | author = Nicholas Nethercote | date = August 9, 2011 | accessdate = August 17, 2011}}&lt;/ref&gt;&lt;ref&gt;{{cite web | url = https://wiki.mozilla.org/Performance/MemShrink | title = Performance/MemShrink | publisher = Mozilla | accessdate = August 11, 2011}}&lt;/ref&gt;&lt;ref&gt;[http://www.pcworld.com/article/238504/firefox_7_beta_puts_priority_on_performance.html Firefox 7 Beta Puts Priority on Performance | PCWorld&lt;!-- Bot generated title --&gt;]&lt;/ref&gt; Mozilla Firefox 7.0.1 was released a few days later, fixing a rare but serious issue with add-ons not being detected by the browser.&lt;ref&gt;{{cite web |url=https://www.mozilla.org/en-US/firefox/7.0.1/releasenotes/ |title=Mozilla Firefox 7.0.1 Release Notes |publisher=Mozilla |accessdate=2011-10-03}}&lt;/ref&gt;
+
+====Version 8.0====
+Firefox 8 was released on 8 November 2011, and is currently the latest stable version in the &quot;Stable&quot; channel. Firefox 8 ensured that users really wanted any previously installed add-ons. Upon installation, a dialog box prompted users to enable or disable the add-ons. Add-ons installed by third-party programs were disabled by default, but user-installed add-ons were enabled by default. Mozilla judged that third-party-installed add-ons were problematic, taking away user control, lagging behind on compatibility and security updates, slowing down Firefox start-up and page loading time, and cluttering the interface with unused toolbars.&lt;ref&gt;http://www.zdnetasia.com/firefox-8-cracks-down-on-add-ons-62302794.htm&lt;/ref&gt;
+
+====Future releases====
+Test builds can be downloaded from the Firefox development channels: '''&quot;Beta&quot;''', '''&quot;Aurora&quot;''', and '''&quot;Nightly Builds&quot;'''.
+
+Currently (November 2011), a Firefox 9 beta release is in the &quot;Beta&quot; channel, a Firefox 10 alpha release is in the &quot;Aurora&quot; channel, and a Firefox 11 alpha release is in the &quot;Nightly Builds&quot; channel.
+
+Features planned for future versions include silent updating so that version increments will not bother the user, although the user will be able to disable that function.&lt;ref&gt;http://www.computerworld.com/s/article/print/9220513/Mozilla_aims_to_add_silent_updating_to_Firefox_10&lt;/ref&gt; A different looking user-interface called &quot;Australis&quot; is also planned.&lt;ref&gt;{{cite web |url=http://www.extremetech.com/computing/91652-mozilla-unveils-new-firefox-interface-for-firefox-9-and-beyond |title=Mozilla unveils new Firefox interface for Firefox 9 and beyond |publisher=ExtremeTech |date=2011-07-01 |accessdate=2011-10-02}}&lt;/ref&gt;
+
+==Version release table==
+{{See also|History of Firefox}}
+
+{| class=&quot;wikitable&quot;
+|-
+! Browser name
+! Gecko version
+! Version
+! Support status
+! Codename
+! Release date
+|-
+| rowspan=&quot;5&quot;| '''Phoenix'''
+| rowspan=&quot;3&quot;|1.2
+| 0.1
+| {{no2|{{N}}}}
+| ''[[Pescadero, California|Pescadero]]''
+| style=&quot;white-space: nowrap;&quot;| September 23, 2002
+|-
+| 0.2
+| {{no2|{{N}}}}
+| ''[[Santa Cruz, California|Santa Cruz]]''
+| October 01, 2002
+|-
+| 0.3
+| {{no2|{{N}}}}
+| ''[[Lucia, California|Lucia]]''
+| October 14, 2002
+|-
+| rowspan=2|1.3
+| 0.4
+| {{no2|{{N}}}}
+| ''[[Oceano, California|Oceano]]''
+| October 19, 2002
+|-
+| 0.5
+| {{no2|{{N}}}}
+| ''[[Naples, Long Beach, California|Naples]]''
+| December 07, 2002
+|-
+| rowspan=2| '''Firebird'''
+| rowspan=2|1.5
+| 0.6
+| {{no2|{{N}}}}
+| ''[[Glendale, California|Glendale]]''
+| May 17, 2003
+|-
+| 0.7
+| {{no2|{{N}}}}
+| ''[[Indio, California|Indio]]''
+| October 15, 2003
+|-
+| rowspan=&quot;2&quot;| '''Firefox'''
+| 1.6
+| 0.8
+| {{no2|{{N}}}}
+| ''[[Royal Oak, New Zealand|Royal Oak]]''
+| February 09, 2004
+|-
+| rowspan=3|1.7
+| 0.9
+| {{no2|{{N}}}}
+| ''[[One Tree Hill, New Zealand|One Tree Hill]]''
+| June 15, 2004
+|-
+| rowspan=&quot;2&quot;| '''Firefox 1'''
+| 1.0
+| {{no2|{{N}}}}
+| ''[[Phoenix, Arizona|Phoenix]]''
+| November 09, 2004
+|-
+| 1.0.8
+| {{no2|{{N}}}}
+|
+| April 13, 2006
+|-
+| rowspan=&quot;2&quot;| '''Firefox 1.5'''
+| rowspan=2|1.8
+| 1.5
+| {{no2|{{N}}}}
+| ''[[Deer Park, New York|Deer Park]]''
+| November 29, 2005
+|-
+| 1.5.0.12
+| {{no2|{{N}}}}
+|
+| May 30, 2007
+|-
+| rowspan=&quot;2&quot;|'''[[Firefox 2]]'''
+| rowspan=2|1.8.1
+| 2.0
+| {{no2|{{N}}}}
+| ''[[Bon Echo Provincial Park|Bon Echo]]''
+| October 24, 2006
+|-
+| 2.0.0.20
+| {{no2|{{N}}}}
+|
+| December 18, 2008
+|-
+| rowspan=&quot;2&quot;|'''[[Firefox 3]]'''
+| rowspan=2|1.9
+| 3.0&lt;ref name=&quot;developer1&quot;&gt;{{cite web|url=https://developer.mozilla.org/devnews/index.php/2008/06/11/coming-tuesday-june-17th-firefox-3/|title= Coming Tuesday, June 17: Firefox 3|publisher=Mozilla Developer News}}&lt;/ref&gt;
+| {{no2|{{N}}}}
+| ''[[Gran Paradiso]]''
+| June 17, 2008
+|-
+| 3.0.19
+| {{no2|{{N}}}}
+|
+| March 30, 2010
+|-
+| rowspan=2|'''[[Firefox 3.5]]'''
+| rowspan=2|1.9.1
+| 3.5&lt;ref&gt;{{cite web|url = http://mozillalinks.org/wp/2008/05/firefox-31-targeted-for-years-end/|title = Firefox 3.1 targeted for yearâs end|publisher = Mozilla Links|accessdate = 2009-06-30}}&lt;/ref&gt;
+| {{no2|{{N}}}}
+| ''[[Shiretoko National Park|Shiretoko]]&lt;ref&gt;{{cite web|url = https://wiki.mozilla.org/Firefox_3.5|title = Firefox3.5|publisher = Mozilla Wiki|accessdate = 2009-06-30}}&lt;/ref&gt;''
+| June 30, 2009
+|-
+| 3.5.19
+| {{no2|{{N}}}}
+|
+| April 28, 2011
+|-
+| rowspan=2|'''[[Firefox 3.6]]'''
+| rowspan=2| 1.9.2
+| 3.6
+| {{yes2|{{Y}}}}
+| ''[[Tsingy de Namoroka Strict Nature Reserve|Namoroka]]&lt;ref&gt;{{cite web| url=https://wiki.mozilla.org/Firefox/Namoroka |title=Firefox/Namoroka |publisher=Mozilla Wiki |accessdate=2009-06-24}}&lt;/ref&gt;''
+| January 21, 2010&lt;ref name=&quot;release notes&quot; /&gt;
+|-
+| 3.6.24
+| {{yes2|{{Y}}}}
+|
+| November 08, 2011
+|-
+| rowspan=2|'''[[Firefox 4]]'''
+| rowspan=2| 2.0
+| 4.0
+| {{no2|{{N}}}}
+| ''[[Tumucumaque National Park|Tumucumaque]]''&lt;ref&gt;{{cite web|url=http://www.mozilla.org/parks/tumucumaque/
+| title=Tumucumaque Park|publisher=Mozilla|accessdate=2010-11-28}}&lt;/ref&gt;
+| March 22, 2011&lt;ref&gt;{{cite web|url=http://www.mozilla.com/en-US/firefox/4.0rc2/releasenotes/|title=Mozilla Firefox 4 RC 2 Release Notes|publisher=Mozilla|accessdate=2011-03-18}}&lt;/ref&gt;
+|-
+| 4.0.1
+| {{no2|{{N}}}}
+|
+| April 28, 2011
+|-
+| rowspan=2|'''Firefox 5'''
+| rowspan=2| 5.0
+| 5.0
+| {{no2|{{N}}}}
+|
+| June 21, 2011&lt;ref&gt;{{cite web|url=http://www.mozilla.com/en-US/firefox/5.0/releasenotes/|title=Mozilla Firefox 5 Release Notes|publisher=Mozilla|accessdate=2011-06-21}}&lt;/ref&gt;
+|-
+| 5.0.1
+| {{no2|{{N}}}}
+|
+| July 11, 2011
+|-
+| rowspan=2|'''Firefox 6'''
+| rowspan=2| 6.0
+| 6.0
+| {{no2|{{N}}}}
+|
+| August 16, 2011&lt;ref&gt;{{cite web |url=http://www.mozilla.com/en-US/firefox/6.0/releasenotes/ |title=Mozilla Firefox 6 Release Notes |publisher=Mozilla |accessdate=2011-08-16}}&lt;/ref&gt;
+|-
+| 6.0.2
+| {{no2|{{N}}}}
+|
+| September 06, 2011&lt;ref&gt;{{cite web |url=https://www.mozilla.org/en-US/firefox/6.0.2/releasenotes/ |title=Mozilla Firefox 6.0.2 Release Notes |publisher=Mozilla |accessdate=2011-08-31}}&lt;/ref&gt;
+|-
+| rowspan=2|'''Firefox 7'''
+| rowspan=2| 7.0
+| 7.0
+| {{no2|{{N}}}}
+|
+| September 27, 2011&lt;ref&gt;{{cite web|url=http://www.mozilla.com/en-US/firefox/7.0/releasenotes/|title=Mozilla Firefox 7 Release Notes|publisher=Mozilla|accessdate=2011-08-27}}&lt;/ref&gt;
+|-
+| 7.0.1
+| {{no2|{{N}}}}
+|
+| September 29, 2011&lt;ref&gt;https://www.mozilla.org/en-US/firefox/7.0.1/releasenotes/&lt;/ref&gt;
+|-
+| rowspan=2|'''Firefox 8'''
+| rowspan=2| 8.0
+| 8.0
+| {{yes2|{{Y}}}}
+|
+|November 08, 2011&lt;ref&gt;{{cite web|url=http://www.mozilla.org/en-US/firefox/8.0/releasenotes/|title=Mozilla Firefox 8 Release Notes|publisher=Mozilla|accessdate=2011-11-08}}&lt;/ref&gt;
+|-
+| 8.0.1
+| {{yes2|{{Y}}}}
+|
+| November 21, 2011&lt;ref&gt;{{cite web|url=http://www.mozilla.org/en-US/firefox/8.0.1/releasenotes/|title=Mozilla Firefox Release Notes|publisher=Mozilla|accessdate=2011-11-23}}&lt;/ref&gt;
+|-
+| |'''Firefox 9 Beta'''
+| | 9.0
+| 9.0&amp;nbsp;Beta&amp;nbsp;1
+|{{yes2|{{Y}}}}
+|
+| November 11, 2011&lt;ref&gt;https://www.mozilla.org/en-US/firefox/9.0/releasenotes/&lt;/ref&gt;
+|-
+| |'''Firefox 10 Alpha'''
+| | 10.0
+| 10.0a1
+|{{yes2|{{Y}}}}
+|
+|Usually daily
+|-
+| |'''Firefox 11 Alpha'''
+| | 11.0
+| 11.0a1
+|{{yes2|{{Y}}}}
+|
+|Usually daily
+|-
+! Browser name
+! Gecko version
+! Version
+! Support status
+! Codename
+! Release date
+|}
+{{Reflist|group=Note}}
+
+==Features==
+{{Main|Features of Firefox}}
+Principal Firefox features&lt;ref name=&quot;Latest Firefoxâs Feature-Pack&quot;&gt;{{cite web |url=http://www.techpluto.com/latest-features-of-firefox/|title=Latest Firefoxâs Feature-Pack}}&lt;/ref&gt; include [[Tab (GUI)|tabbed browsing]], [[Spell checker|spell checking]], [[incremental find]], [[Features of Firefox|live bookmarking]], a [[download manager]], [[Privacy mode|private browsing]], [[geolocation|location-aware browsing]] based on a [[Google]] service&lt;ref name=&quot;mozgeo&quot;/&gt; and an integrated search system that uses Google by default in most localizations. Functions can be added through [[List of Firefox extensions|extensions]], created by [[third-party developer]]s,&lt;ref name=&quot;mozilla1&quot;/&gt; of which there is a wide selection, a feature that has attracted many of Firefox's users.
+
+Additionally, Firefox provides an environment for web developers in which they can use built-in tools, such as the Error Console or the [[DOM Inspector]], or extensions, such as [[Firebug (Firefox extension)|Firebug]].
+
+===Standards===
+[[File:Firefox 7 Acid 3 Result.png|thumb|300px|The results of the [[Acid3]] test (as of November 2011) on Firefox 8.0]]
+Firefox implements many [[web standards]], including [[HTML]], [[XML]], [[XHTML]], [[MathML]], [[Scalable Vector Graphics|SVG]] 1.1 (partial),&lt;ref&gt;{{cite web |url=https://developer.mozilla.org/en/SVG_in_Firefox |accessdate=2007-09-30 |title=SVG in Firefox}}&lt;/ref&gt; [[Cascading Style Sheets|CSS]] (with extensions),&lt;ref&gt;{{cite web |url=https://developer.mozilla.org/en/CSS_Reference/Mozilla_Extensions |title=CSS Reference: Mozilla Extensions â MDC |publisher=Developer.mozilla.org |date=2011-04-24 |accessdate=2011-08-17}}&lt;/ref&gt; ECMAScript ([[JavaScript]]), [[Document Object Model|DOM]], [[XSLT]], [[XPath]], and [[APNG]] (Animated [[Portable Network Graphics|PNG]]) images with [[Alpha compositing|alpha transparency]].&lt;ref&gt;{{cite web |url=https://developer.mozilla.org/en/Gecko_FAQ |title=Which open standards is the Gecko development project working to support, and to what extent does it support them? |work=Gecko FAQ |accessdate=2007-01-24 |author=Mozilla Developer Center contributors |date=2007-01-21 |publisher=Mozilla Developer Network}}&lt;/ref&gt; Firefox also implements standards proposals created by the [[Web Hypertext Application Technology Working Group|WHATWG]] such as client-side storage,&lt;ref&gt;{{cite web |url=http://www.whatwg.org/specs/web-apps/current-work/#storage |title=WHATWG specification&amp;nbsp;â Web Applications 1.0&amp;nbsp;â Working Draft. Client-side session and persistent storage |accessdate=2007-02-07 |date=2007-02-07 |publisher=Web Hypertext Application Technology Working Group}}&lt;/ref&gt;&lt;ref&gt;{{cite web |url=https://developer.mozilla.org/en/DOM/Storage |title=DOM:Storage |accessdate=2007-02-07 |author=Mozilla Developer Center contributors |date=2007-09-30 |publisher=Mozilla Developer Network}}&lt;/ref&gt; and [[canvas element]].&lt;ref&gt;{{cite web |url= http://www.ibm.com/developerworks/xml/library/x-futhtml1/ |title=The future of HTML, Part 1: WHATWG |accessdate=2007-01-24 |last=Dumbill |first=Edd |date=2005-12-06 |publisher=[[IBM]]}}&lt;/ref&gt;
+
+Firefox passes the [[Acid2]] standards-compliance test from version 3.0.&lt;ref&gt;{{cite web |url= http://www.betanews.com/article/Latest-Firefox-beta-passes-Acid2-test-IE8-claims-to-pass-also/1198178648 |title=Latest Firefox beta passes Acid2 test, IE8 claims to pass also |last=Fulton |first=Scott |date=2007-12-20 |publisher=Betanews |accessdate=2007-12-21}}&lt;/ref&gt; Firefox versions up to and including 6.0.2 did not pass the [[Acid3]] test. Mozilla had originally stated that they did not intend for Firefox to pass the Acid3 test fully because they believed that the SVG fonts part of the test had become outdated and irrelevant, due to [[WOFF]] being agreed upon as a standard by all major browser makers.&lt;ref&gt;{{cite web |url=http://www.conceivablytech.com/5430/products/why-firefox-4-will-never-pass-the-acid3-test/ |title=Why Firefox 4 Will Never Pass The Acid3 Test |accessdate=2011-02-01}}&lt;/ref&gt; Because the SVG font tests were removed from the Acid3 test in September 2011, Firefox 4 and greater now score 100/100.&lt;ref&gt;{{cite web |url=https://plus.google.com/107429617152575897589/posts/JdHnqpuUER4 |title=Ian Hickson announces Acid3 modifications |date=2011-09-17 |accessdate=2011-09-17}}&lt;/ref&gt;&lt;ref name=acid3updated&gt;{{citation |url=http://www.tomsguide.com/us/acid3-browser-test-web-standard-compatibility-IE9,news-12583.html |title=Acid3 Test Simplified |publisher=Tom's Hardware}}&lt;/ref&gt;
+
+Firefox also implements&lt;ref name=&quot;mozcomphishff3&quot;&gt;{{cite web |title=Phishing and Malware Protection |url=http://www.mozilla.com/firefox/phishing-protection/ |accessdate=2009-11-29 |publisher=Mozilla Corp.}} (section &quot;How does Phishing and Malware Protection work in Firefox?&quot;)&lt;/ref&gt; a proprietary protocol&lt;ref name=&quot;googsb2prot&quot;&gt;{{cite web |title=Client specification for the Google Safe Browsing v2.1 protocol |url=http://code.google.com/p/google-safe-browsing/wiki/Protocolv2Spec |accessdate=2009-11-29 |publisher=Google Inc.}} ''&quot;(...) '''Do not use this protocol without explicit written permission from Google.'''&quot;'', ''&quot;'''Note''': This is not a license to use the defined protocol. (...)&quot;''&lt;/ref&gt; from Google called &quot;safebrowsing&quot; (used to exchange data related with &quot;phishing and malware protection&quot;), which is not an [[open standard]].
+
+===Security===
+Firefox uses a [[sandbox (computer security)|sandbox security model]],&lt;ref&gt;{{cite web|url = https://developer.mozilla.org/en/Bypassing_Security_Restrictions_and_Signing_Code|title = Bypassing Security Restrictions and Signing Code|accessdate = 2007-01-24|last = Ranganathan|first = Arun|coauthors = Netscape Communications |date=2002-11-11|publisher = Mozilla Developer Network}}&lt;/ref&gt; and limits scripts from accessing data from other web sites based on the [[same origin policy]].&lt;ref&gt;{{cite web|url = https://developer.mozilla.org/En/Same_origin_policy_for_JavaScript |title=The Same Origin Policy|date = 2001-06-08|accessdate = 2007-11-12|publisher = Mozilla Developer Network}}&lt;/ref&gt; It uses [[Transport Layer Security|SSL/TLS]] to protect communications with web servers using strong [[cryptography]] when using the [[HTTP Secure|HTTPS]] protocol.&lt;ref&gt;{{cite web|url = http://www.mozilla.org/projects/security/pki/psm/help_21/ssl_help.html|title = Privacy &amp; Security Preferences&amp;nbsp;â SSL|accessdate = 2007-01-24 |date=2001-08-31|publisher = Mozilla}}&lt;/ref&gt; It also provides support for web applications to use [[smart card|smartcards]] for authentication purposes.&lt;ref&gt;[https://developer.mozilla.org/en/JavaScript_crypto Developer documentation] on using [[PKCS11|PKCS#11]] modules (primarily smart cards) for cryptographic purposes&lt;/ref&gt;
+
+The Mozilla Foundation offers a &quot;bug bounty&quot; to researchers who discover severe security holes in Firefox.&lt;ref&gt;{{cite web|url = http://www.mozilla.org/security/bug-bounty.html|title = Mozilla Security Bug Bounty Program|accessdate = 2007-11-21 |date=2004-09-03|publisher = Mozilla}}&lt;/ref&gt; Official guidelines for handling security vulnerabilities discourage early [[full disclosure|disclosure of vulnerabilities]] so as not to give potential attackers an advantage in creating exploits.&lt;ref&gt;{{cite web |url = http://www.mozilla.org/projects/security/security-bugs-policy.html |title = Handling Mozilla Security Bugs |accessdate = 2007-01-24 |date=2003-02-11 |publisher = Mozilla}}&lt;/ref&gt;
+
+Because Firefox generally has fewer publicly known unpatched security [[vulnerability (computing)|vulnerabilities]] than [[Internet Explorer]] (see ''[[Comparison of web browsers]]''), improved security is often cited as a reason to switch from Internet Explorer to Firefox.&lt;ref name=&quot;WSJHowTo&quot;&gt;{{cite news|url=http://ptech.wsj.com/archive/ptech-20040916.html |archiveurl=http://web.archive.org/web/20070221061526/http://ptech.wsj.com/archive/ptech-20040916.html |archivedate=February 21, 2007 |title=How to Protect Yourself From Vandals, Viruses If You Use Windows|last=Mossberg|first=Walter S.|publisher=Wall Street Journal |date=2004-09-16|accessdate=2006-10-17|quote = I suggest dumping Microsoft's Internet Explorer Web browser, which has a history of security breaches. I recommend instead Mozilla Firefox, which is free at www.mozilla.org. It's not only more secure but also more modern and advanced, with tabbed browsing, which allows multiple pages to be open on one screen, and a better pop-up ad blocker than the belated one Microsoft recently added to IE.}}&lt;/ref&gt;&lt;ref&gt;{{cite web|url = http://www.securityfocus.com/columnists/249|title = Time to Dump Internet Explorer|accessdate = 2007-01-24|last = Granneman|first = Scott |date=2004-06-17|publisher = SecurityFocus}}&lt;/ref&gt;&lt;ref&gt;{{cite web|url = http://reviews.cnet.com/browsers/mozilla-firefox/4505-3514_7-31117280.html?tag=nav|title = CNET editors' review|accessdate = 2007-01-24|last = Costa|first = Dan|coauthors = Scott Vamosi |date=2005-03-24|publisher = [[CNET Networks|CNET]] Reviews}}&lt;/ref&gt;&lt;ref&gt;{{cite web|url = http://www.slate.com/id/2103152|title = Are the Browser Wars Back?|accessdate = 2007-01-24|last = Boutin|first = Paul |date=2004-06-30|publisher = ''[[Slate (magazine)|Slate]]''}}&lt;/ref&gt; ''[[The Washington Post]]'' reports that exploit code for known, critical unpatched security vulnerabilities in Internet Explorer was available for 284 days in 2006. In comparison, exploit code for known, critical security vulnerabilities in Firefox was available for 9 days before Mozilla issued a patch to remedy the problem.&lt;ref&gt;{{cite news|url = http://blog.washingtonpost.com/securityfix/2007/01/internet_explorer_unsafe_for_2.html|title = Internet Explorer Unsafe for 284 Days in 2006|accessdate = 2007-01-24|last = Krebs|first = Brian |date=2007-01-04|publisher = Washington Post}}&lt;/ref&gt;
+
+A 2006 [[Symantec]] study showed that, although Firefox had surpassed other browsers in the number of vendor-confirmed vulnerabilities that year through September, these vulnerabilities were patched far more quickly than those found in other browsers.&lt;ref&gt;{{cite web|url = http://www.techweb.com/wire/security/193005335|archiveurl = http://web.archive.org/web/20080207192416/http://www.techweb.com/wire/security/193005335|archivedate = 2008-02-07|title = Firefox Sports More Bugs, But IE Takes 9 Times Longer To Patch|accessdate = 2007-01-24|last = Keizer|first = Gregg |date=2006-09-25|publisher = TechWeb}}&lt;/ref&gt; Symantec later clarified their statement, saying that Firefox still had fewer security vulnerabilities than Internet Explorer, as counted by security researchers.&lt;ref&gt;{{cite web|url = http://www.infoworld.com/d/security-central/symantec-adjusts-browser-bug-count-096|title = Symantec adjusts browser bug count|accessdate = 2007-01-24|last = McMillan|first = Robert |date=2006-03-07|publisher = InfoWorld}}&lt;/ref&gt; As of February 11, 2011, Firefox 3.6 has no (known) unpatched security [[vulnerability (computing)|vulnerabilities]] according to [[Secunia]].&lt;ref&gt;{{cite web|url = http://secunia.com/product/28698/|title = Vulnerability Report: Mozilla Firefox 3.6.x|accessdate = 2011-02-11|publisher = Secunia}}&lt;/ref&gt; Internet Explorer 8 has five unpatched security vulnerabilities, the worst being rated &quot;Less Critical&quot; by Secunia.&lt;ref&gt;{{cite web|url = http://secunia.com/advisories/product/21625/|title = Vulnerability Report: Microsoft Internet Explorer 8.x|accessdate = 2011-02-11|publisher = Secunia}}&lt;/ref&gt;
+
+In October 2009, Microsoft's security engineers acknowledged that Firefox was vulnerable since February of that year due to a [[.NET Framework]] 3.5 SP1 [[Windows Update|Windows update]] that silently installed a buggy 'Windows Presentation Foundation' plug-in into Firefox.&lt;ref&gt;{{cite web|url=http://news.idg.no/cw/art.cfm?id=5CF0A4A7-1A64-67EA-E45F5A54F2136086 |title=Sneaky Microsoft plug-in puts Firefox users at risk (Internet&amp;nbsp;â Software&amp;nbsp;â Security) |publisher=IDG |accessdate=2009-12-19}}&lt;/ref&gt; This vulnerability has since been patched by Microsoft.&lt;ref&gt;{{cite web|url=http://www.microsoft.com/technet/security/bulletin/ms09-054.mspx|title=Microsoft Security Bulletin MS09-054&amp;nbsp;â Critical|publisher=Microsoft|accessdate=2010-03-17}}&lt;/ref&gt;
+
+All patched [[vulnerability (computing)|vulnerabilities]] of Mozilla products are publicly listed.&lt;ref&gt;[http://www.mozilla.org/security/known-vulnerabilities/ Known Vulnerabilities in Mozilla Products] Mozilla&lt;/ref&gt;
+
+===Telemetry===
+When Firefox is upgraded to version 7.0, an [[information bar]] will appear asking users whether they would like to send performance statistics (also known as âtelemetryâ) to [[Mozilla Corporation|Mozilla]].  According to Mozilla's privacy policy,&lt;ref&gt;{{cite web|url=http://www.mozilla.org/en-US/legal/privacy/firefox.html#telemetry|title=Mozilla Firefox Privacy Policy|publisher=[[Mozilla Corporation]], a subsidiary of the [[Mozilla Foundation]]}}&lt;/ref&gt; these statistics are stored only in aggregate format, and the only personally-identifiable information transmitted is the user's [[IP address]].
+
+===Localizations===
+{{main|Mozilla localizations}}
+Firefox is a heavily [[Internationalization and localization|localized]] web browser. The first official release in November 2004 was available in 24 different languages and for 28 [[locale]]s, including [[British English]]/[[American English]], [[Peninsular Spanish|European Spanish]]/[[Argentine Spanish]] and [[Putonghua|Chinese]] in [[Traditional Chinese characters]]/[[Simplified Chinese characters]].&lt;ref&gt;{{cite web |url=ftp://archive.mozilla.org/pub/mozilla.org/firefox/releases/1.0/win32/ |title=Index of ftp://archive.mozilla.org/pub/mozilla.org/firefox/releases/1.0/win32/ |accessdate=2011-08-22}}&lt;/ref&gt;
+Currently supported versions 3.6 and 8.0 are available for
+76 locales (68 languages)&lt;ref&gt;{{cite web |url=ftp://releases.mozilla.org/pub/mozilla.org/firefox/releases/latest-3.6/win32/ |title=Index of ftp://releases.mozilla.org/pub/mozilla.org/firefox/releases/latest-3.6/win32/ |accessdate=2011-11-09}}&lt;/ref&gt;
+and 83 locales (74 languages)&lt;ref&gt;{{cite web |url=ftp://releases.mozilla.org/pub/mozilla.org/firefox/releases/latest/win32/ |title=Index of ftp://releases.mozilla.org/pub/mozilla.org/firefox/releases/latest/win32/ |accessdate=2011-11-09}}&lt;/ref&gt;
+respectively.
+
+==Other versions==
+
+===Portable versions===
+{{See also|Portable application}}
+
+There is a [[Firefox Portable|portable edition of Firefox for Windows]], which can be used from a [[USB flash drive|USB Flash drive]]. This particular distribution makes it possible to run Firefox (and many of its extensions) on corporate/government networks in lieu of the default browser. This can be especially helpful for any user who does not possess administrative rights on the system being used.
+
+===Firefox for mobile===
+{{Main|Firefox for mobile}}
+
+Firefox for mobile, codenamed [[Fennec Fox|Fennec]], is a web browser for smaller non-PC devices, [[mobile phone]]s and [[PDA]]s. It was first released for the [[Nokia]] [[Maemo (operating system)|Maemo]] operating system (specifically the Nokia N900) on January 28, 2010.&lt;ref&gt;{{cite web |url=http://www.mozilla.com/mobile/1.0/releasenotes/|title=Firefox for Nokia N900 Release Notes|publisher=Mozilla |date=2010-01-28 |accessdate=2010-01-30}}&lt;/ref&gt; Version 4 for [[Android (operating system)|Android]] and [[Maemo (operating system)|Maemo]] was released on March 29, 2011.&lt;ref name=&quot;ff4&quot;&gt;{{cite web|url=http://blog.mozilla.com/blog/2011/03/29/mozilla-launches-firefox-4-for-android-allowing-users-to-take-the-power-and-customization-of-firefox-everywhere-2/|title=Mozilla Launches Firefox 4 for Android, Allowing Users to Take the Power and Customization of Firefox Everywhere|accessdate=2011-03-29}}&lt;/ref&gt; The browser's version number was bumped from version 2 to version 4 to synchronize with all future desktop releases of Firefox since the rendering engines used in both browsers are the same.&lt;ref&gt;{{cite web|url=http://starkravingfinkle.org/blog/2010/09/fennec-4-0-new-and-notable/|title=Fennec 4.0 â New and Notable}}&lt;/ref&gt; Version 7 will be the last release for Maemo on the N900.&lt;ref&gt;{{cite web|url=https://bugzilla.mozilla.org/show_bug.cgi?id=681422#c1|title=No updates in Maemo5}}&lt;/ref&gt; The user interface is completely redesigned and optimized for small screens, the controls are hidden away so that only the web content is shown on screen, and it uses [[touchscreen]] interaction methods. It includes the Awesomebar, tabbed browsing, Add-on support, password manager, location-aware browsing, and the ability to synchronize with the user's computer Firefox browser using [[Firefox Sync]].&lt;ref&gt;{{cite web|url=http://www.mozilla.com/mobile/features/|title=Firefox mobile features|accessdate=2010-01-30}}&lt;/ref&gt;
+
+==System requirements==
+Browsers [[compiler|compiled]] from Firefox source code may run on various operating systems; however, officially distributed binaries are meant for the following: [[Microsoft Windows]] ([[Windows 2000|2000]], [[Windows XP|XP]], [[Windows Server 2003|Server 2003]], [[Windows Vista|Vista]] or [[Windows 7|7]]), [[Mac OS X Leopard|Mac OS X 10.5]], [[Mac OS X Snow Leopard|Mac OS X 10.6]] and [[Linux]] (with the following libraries installed: [[GTK+]] 2.10 or higher, [[GLib]] 2.12 or higher, [[Pango]] 1.14 or higher, [[X.Org Server|X.Org]] 1.0 or higher (1.7 or higher is recommended), [[libstdc++]] 4.3 or higher). Official recommended hardware requirements are a [[Pentium 4]] or newer that supports [[SSE2]] and 512 [[megabyte|MB]] [[Random-access memory|RAM]] for the [[Microsoft Windows|Windows]] version or [[Macintosh]] computer with an [[Intel Corporation|Intel]] [[x86]] processor and 512 MB RAM for Mac version.&lt;ref name=&quot;OfficialSysReqs&quot;&gt;{{cite web|url =http://www.mozilla.com/en-US/firefox/4.0/system-requirements/|title = Mozilla Firefox 4 System Requirements|accessdate = 2011-04-08|author = Mozilla Corp.}}&lt;/ref&gt;
+
+Official minimum hardware requirements are a [[Pentium compatible processor|Pentium]] 233 [[Hertz|MHz]] and 64 [[megabyte|MB]] [[Random-access memory|RAM]] for the [[Microsoft Windows|Windows]] version or [[Macintosh]] computer with an [[Intel Corporation|Intel]] [[x86]] or [[PowerPC]] [[PowerPC 7xx|G3]], [[PowerPC G4|G4]], or [[PowerPC 970|G5]] processor and 128 MB RAM for Mac version.&lt;ref name=&quot;OfficialSysReqsMin&quot;&gt;{{cite web|url = http://www.mozilla.com/firefox/system-requirements.html|title = Mozilla Firefox 5 System Requirements|accessdate = 2011-07-19|author = Mozilla Corp.}}&lt;/ref&gt;
+
+===64-bit builds===
+64-bit nightly builds for Windows are available,&lt;ref&gt;{{cite web |url=http://oduinn.com/blog/2010/05/28/first-sighting-of-firefox-64bit-builds-on-window64/ |title= First sighting of Firefox 64bit builds on Window64 |date=2010-05-28 |accessdate=2010-06-01}}&lt;/ref&gt; but due to incompatibilities, including with popular plugins, official 64-bit releases are not provided.&lt;ref&gt;{{cite web |title=Bug 471090 â &amp;#091;meta&amp;#093; [[Microsoft Windows|Windows]] x64 build tracking bug |url=https://bugzilla.mozilla.org/show_bug.cgi?id=471090 |publisher=Mozilla |date=2008-12-24 |accessdate=2009-11-29}}&lt;/ref&gt;
+
+The official releases of Firefox for OS X are universal builds that include both 32-bit and 64-bit versions of the browser in one package.&lt;ref&gt;{{cite web|title=Firefox 4 for Mac OS X: Under the Hood|url=http://boomswaggerboom.wordpress.com/2010/11/10/firefox-4-for-mac-os-x-under-the-hood/}}&lt;/ref&gt; A typical browsing session uses a combination of the 64-bit browser process and a 32-bit plugin process, because some popular plugins still are 32-bit.
+
+For [[Linux]], vendor-backed, performance optimized, stable 64-bit builds exist (such as for [[SUSE Linux distributions|Novell-Suse Linux]], [[Red Hat Linux]], and [[Ubuntu (operating system)|Ubuntu]]), in addition to the nightly builds.
+
+===Older operating systems===
+Firefox 1.5.0.12 is the last version to work on [[Windows 95]] and Firefox 2.0.0.20 is the last version to work on [[Windows 98]], [[Windows Me]], and [[Windows NT 4.0]]. Although not officially supported, a utility called KernelEx can run Firefox 3.x versions on [[Windows 98]] and [[Windows Me]]. These versions/lines are no longer supported by Mozilla.{{Clarify|&quot;Firefox 3.x&quot; includes Firefox 3.6.20, which is still supported (although not on the mentioned operating systems). Did the writer mean 3.0.x or 3.5.x instead?|date=August 2011}}
+
+Firefox 2.0.0.14 is the last version to work on [[OS/2]] Warp 3. Later Firefox versions requires a libc 0.6.3 based version of the GCC runtime library. libc 0.6.2 and later require Warp 4.
+
+Firefox 3.5.9 is the last version to work on [[HP-UX]] 11i, as packaged by [[Hewlett-Packard]].&lt;ref&gt;{{cite web|url=https://h20392.www2.hp.com/portal/swdepot/try.do?productNumber=HPUXFIREFOX|title=Firefox/Thunderbird Web Browsers for HP-UX 11i|author=Hewlett-Packard|publisher=Hewlett-Packard|accessdate= 2011-08-14}}&lt;/ref&gt;
+
+Firefox 3.6.24 is the latest version to work on [[Mac OS X Tiger|Mac OS X 10.4 (Tiger)]], as well as PowerPC Macs running [[Mac OS X Leopard|Mac OS X 10.5]].&lt;ref&gt;{{cite web|url=http://www.mozilla.com/en-US/firefox/4.0/system-requirements/|title=Mozilla Firefox 4 System Requirements|author=Mozilla|publisher=Mozilla|accessdate= 2011-03-24}}&lt;/ref&gt;&lt;ref&gt;{{cite web|url=http://www.mozilla.com/en-US/firefox/3.6.24/system-requirements/|title=Mozilla Firefox 3.6 System Requirements|author=Mozilla|publisher=Mozilla|accessdate= 2011-11-08}}&lt;/ref&gt; Officially released versions numbered 4.0 and higher do not work (although some unofficial builds based upon the newer versions do work, requiring varying degrees of patches), but future 3.6.x releases will work.
+
+===Unofficial ports===
+[[Software port|Port]]s have been developed for other platforms, including {{nowrap|[[RISC OS]]}}.&lt;ref&gt;{{cite web | url = http://tech.slashdot.org/story/05/06/20/196213/Firefox-on-RISC-OS | title = Firefox on RISC OS | accessdate = 2011-07-20 | date = 2005-06-20 | work = [[Slashdot]] | publisher = [[Geeknet]] | quote = Ian Chamberlain writes &quot;RISC OS users have crowed for years about the intuitiveness of their operating system's GUI. But that vaunted usability is of little utility in this modern world without a modern web browser to go with it. So you'll understand the importance of the RISC OS Firefox port released today.&quot;}}&lt;/ref&gt;&lt;ref&gt;{{cite web | url = http://www.drobe.co.uk/riscos/artifact1379.html | title = Firefox first beta published | accessdate = 2011-07-20 | last = Williams | first = Chris | date = 2005-05-20 | publisher = [[Drobe]] | quote = The first public beta version of the RISC OS Firefox port is now available for download.}}&lt;/ref&gt;&lt;ref&gt;{{cite web | url = http://www.drobe.co.uk/riscos/artifact2231.html | title = New release of RISC OS Firefox available | accessdate = 2011-07-20 | date = 2008-02-22 | publisher = [[Drobe]] | quote = new version of the RISC OS Firefox 2 web browser port has been released today for punters to download. Release 3 has been significantly bug-fixed and uses the latest source code from the mainstream Firefox project.}}&lt;/ref&gt; The {{nowrap|RISC OS}} port is no longer being actively developed.{{Citation needed|date=July 2011}}
+
+==Licensing==
+Firefox [[source code]] is [[free software]]. Most of it is [[Multi-licensing|tri-licensed]] under the [[Mozilla Public License]] (MPL), the [[GNU General Public License]] (GPL) and the [[GNU Lesser General Public License]] (LGPL).{{Citation needed|From about:license|date=September 2011}} These licenses permit anyone to view, modify, and/or redistribute the source code, and several publicly released applications have been built on it; for example, [[Netscape (web browser)|Netscape]], [[Flock (web browser)|Flock]], [[Miro (software)|Miro]], [[Mozilla Corporation software rebranded by the Debian project|Iceweasel]], and [[Songbird (software)|Songbird]] make use of code from Firefox. &lt;!-- Miro and Songbird should somehow be separated because they build on XULRunner and not Firefox itself. --&gt;
+
+In the past, Firefox was licensed solely under the MPL,&lt;ref name=&quot;mozrelicensing&quot;&gt;{{cite web|url=http://www-archive.mozilla.org/MPL/relicensing-faq.html|title=Mozilla Relicensing FAQ|accessdate=2007-01-24|publisher=Mozilla}}&lt;/ref&gt; which the FSF (Free Software Foundation) criticizes for being [[weak copyleft]]; the license permits, in limited ways, proprietary [[derivative work]]s. Additionally, code only licensed under the MPL cannot legally be linked with code under the GPL {{Cn-span|or the LGPL|date=September 2011}}.&lt;ref&gt;{{cite web|url=http://www.gnu.org/philosophy/netscape-npl.html|title=On the Netscape Public License|accessdate=2007-01-24|last=Stallman|first=Richard|authorlink=Richard Stallman|publisher=[[Free Software Foundation]]}}&lt;/ref&gt;&lt;ref&gt;{{cite web|url=http://www.gnu.org/licenses/license-list.html#MPL|title=Various Licenses and Comments about Them. Mozilla Public License (MPL)|accessdate=2007-01-24|publisher=[[Free Software Foundation]]}}&lt;/ref&gt; To address these concerns, Mozilla re-licensed most of Firefox under the tri-license scheme of MPL, GPL, or LGPL. Since the re-licensing, developers have been free to choose the license under which they will receive most of the code, to suit their intended use: GPL or LGPL linking and derivative works when one of those licenses is chosen, or MPL use (including the possibility of proprietary derivative works) if they choose the MPL.&lt;ref name=&quot;mozrelicensing&quot;/&gt;
+
+===Trademark and logo===
+{{See also|Mozilla Corporation software rebranded by the Debian project}}
+
+[[File:Deer park globe.svg|thumb|upright|The generic globe logo used when Firefox is compiled without the official branding]]
+The name &quot;Mozilla Firefox&quot; is a registered [[trademark]]; along with the official Firefox logo, it may only be used under certain terms and conditions. Anyone may redistribute the official binaries in unmodified form and use the Firefox name and branding for such distribution, but restrictions are placed on distributions which modify the underlying source code.&lt;ref&gt;{{cite web|url=http://www.mozilla.org/foundation/trademarks/policy.html|title=Mozilla Trademark Policy|accessdate=2007-01-30|publisher=Mozilla}}&lt;/ref&gt;
+
+Mozilla not only forbids creating derivative works from the Firefox logo (i.e. modifying it),&lt;ref name=&quot;MozComLegalStuff&quot;&gt;{{cite web|url=http://www.mozilla.com/about/logo/legal.html|title=Legal Stuff|accessdate=2009-03-07|publisher=Mozilla Corp.}}&lt;/ref&gt; but also strongly discourages creating independent but similar logos.&lt;ref name=&quot;MozComStopLogo&quot;&gt;{{cite web|url=http://www.mozilla.com/about/logo/stop.html|title=Stop Logo Cruelty|accessdate=2009-03-07|publisher=Mozilla Corp.|archiveurl=http://replay.web.archive.org/20100522010026/http://www.mozilla.com/en-US/about/logo/stop.html|archivedate=2010-05-24}} ''&quot;'''Don't''' Create new elements that look enough like the Firefox logo so as to cause confusion.&quot;''&lt;/ref&gt;
+
+There has been some controversy over the Mozilla Foundation's intentions in stopping certain open source distributions from using the &quot;Firefox&quot; trademark.&lt;ref name=&quot;lwn_trademark_issues&quot;/&gt; Former Mozilla CEO [[Mitchell Baker]] explained in an interview in 2007 that distributions could freely use the Firefox trademark if they did not modify source-code, and that the Mozilla Foundation's only concern was with users getting a consistent experience when they used &quot;Firefox&quot;.&lt;ref&gt;
+{{cite web|url=http://apcmag.com/the_stoush_over_linux_distributions_using_the_firefox_trademark.htm|title=The stoush over Linux distributions using the Firefox trademark|accessdate=2008-01-18|author=Dan Warne|date=2007-05-07|work=APC Magazine|publisher=ACP Magazines Ltd}}&lt;/ref&gt;
+
+To allow distributions of the code ''without'' using the official branding, the Firefox [[source code]] contains a &quot;branding switch&quot;. This switch allows the code to be compiled without the official logo and name, for example to produce a derivative work unencumbered by restrictions on the Firefox trademark (this is also often used for alphas of future Firefox versions). In the unbranded compilation the trademarked logo and name are replaced with a freely distributable generic globe logo and the name of the release series from which the modified version was derived. The name &quot;Deer Park&quot; is used for derivatives of Firefox 1.5, &quot;Bon Echo&quot; for derivatives of Firefox 2.0, &quot;Gran Paradiso&quot; for derivatives of Firefox 3.0 and &quot;Shiretoko&quot; is used for derivatives of Firefox 3.5. Derivatives of Firefox 3.6 are referred to as &quot;Namoroka&quot;. The codename Minefield and a modified version of the generic logo stylized to look like a bomb is used for unofficial builds of version 3.0 and later, and for nightly builds of the trunk.
+
+Distributing modified versions of Firefox under the &quot;Firefox&quot; name requires explicit approval from Mozilla for the changes made to the underlying code, and requires the use of ''all'' of the official branding. For example, it is not permissible to use the name &quot;Firefox&quot; without also using the official logo. When the [[Debian]] project decided to stop using the official Firefox logo in 2006 (because of copyright restrictions on its use incompatible with the project's [[Debian Free Software Guidelines|guidelines]]), they were told by a representative of the Mozilla Foundation that this was not acceptable, and were asked either to comply with the published trademark guidelines or cease using the &quot;Firefox&quot; name in their distribution.&lt;ref&gt;{{cite web|url=http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=354622|title=Debian Bug report logs â #354622: Uses Mozilla Firefox trademark without permission|accessdate=2007-01-30|publisher=Debian}}&lt;/ref&gt; &lt;!-- is this important enough to include in the context of this article? - Some Debian developers had misunderstood previous communication to be an agreement that allowed them to do this, but Mozilla disputed this assertion. --&gt; Ultimately, Debian switched to branding their modified version of Firefox &quot;[[Mozilla Corporation software rebranded by the Debian project|Iceweasel]]&quot;, along with other Mozilla software.
+
+==Advertising==
+The rapid adoption of Firefox, 100 million downloads in its first year of availability,&lt;ref&gt;{{cite web|url = http://www-archive.mozilla.org/press/mozilla-2005-10-19.html|title = Firefox surpasses 100 million downloads|accessdate = 2007-02-04 |date=October 19, 2005|author = Palmer, Judi and Colvig, Mary|publisher = Mozilla}}&lt;/ref&gt; followed a series of aggressive marketing campaigns starting in 2004 with a series of events [[Blake Ross]] and [[Asa Dotzler]] called &quot;marketing weeks&quot;.&lt;ref&gt;{{cite web|url = http://www.blakeross.com/archives/000228.html|archiveurl = http://web.archive.org/web/20040805210701/http://www.blakeross.com/archives/000228.html|archivedate = 2004-08-05|title = Week 1: Press reviews|accessdate = 2007-02-04 |date=2004-07-07|last = Ross|first = Blake|authorlink = Blake Ross|publisher = Blake Ross}}&lt;/ref&gt;
+
+On September 12, 2004,&lt;ref&gt;{{cite web|url = http://www.spreadfirefox.com/node/115|archiveurl = http://archive-sfx.spreadfirefox.com/node/115|archivedate=2005-02-26|title = We're igniting the web. Join us!|accessdate = 2007-02-04 |date=2004-09-12|author = Sfx Team|publisher = Spread Firefox: Sfx Team's Blog}}&lt;/ref&gt; a marketing portal dubbed &quot;Spread Firefox&quot; (SFX) debuted along with the Firefox Preview Release, creating a centralized space for the discussion of various marketing techniques. A two-page ad in the December 16th edition of the New York Times, placed by Mozilla Foundation in coordination with Spread Firefox, featured the names of the thousands of people worldwide who contributed to the Mozilla Foundation's fundraising campaign to support the launch of the Firefox 1.0 web browser.&lt;ref name=&quot;Mozilla Foundation&quot;&gt;{{cite web|url=http://www-archive.mozilla.org/press/mozilla-2004-12-15.html|title=Mozilla Foundation Places Two-Page Advocacy Ad in the New York Times |accessdate=2010-06-15 |first=Mozilla Foundation |date=2004-12-15}}&lt;/ref&gt; SFX portal enhanced the &quot;Get Firefox&quot; button program, giving users &quot;referrer points&quot; as an incentive. The site lists the top 250 referrers. From time to time, the SFX team or SFX members launch marketing events organized at the Spread Firefox website. As a part of the Spread Firefox campaign, there was an attempt to break the world download record with the release of Firefox 3.&lt;ref name=&quot;WorldRecord&quot;&gt;{{cite web|url = http://www.spreadfirefox.com/worldrecord/|title = Set a Guinness World Record Enjoy a Better Web|accessdate = 2008-05-30|last = Mozilla Foundation|year = 2008|month = May}}&lt;/ref&gt;
+
+The &quot;World Firefox Day&quot; campaign started on July 15, 2006,&lt;ref&gt;{{cite web|url = http://www.spreadfirefox.com/node/24241|archiveurl = http://archive-sfx.spreadfirefox.com/node/24241|archivedate=2006-08-03|title = World Firefox Day Launches|accessdate = 2007-01-24|date =2006-07-16|author = Sfx Team|publisher = Spread Firefox: Sfx Team's Blog}}&lt;/ref&gt; the third anniversary of the founding of the [[Mozilla Foundation]],&lt;ref&gt;[http://www-archive.mozilla.org/press/mozilla-foundation.html Mozilla Foundation Announcement], date=2003-07-15&lt;/ref&gt; and ran until September 15, 2006.&lt;ref&gt;{{cite web|url = http://www.worldfirefoxday.com/faq.php|archiveurl = http://web.archive.org/web/20071116084027/http://worldfirefoxday.com/faq.php|archivedate = 2007-11-16|title = Friends of Firefox Frequently Asked Questions|accessdate = 2007-11-27|publisher = Mozilla}}&lt;/ref&gt; Participants registered themselves and a friend on the website for nomination to have their names displayed on the Firefox Friends Wall, a digital wall that will be displayed at the headquarters of the Mozilla Foundation.
+
+On February 21, 2008 in honor of reaching 500 million downloads, the Firefox community celebrated by visiting [[FreeRice]] to earn 500 million grains of rice.&lt;ref&gt;{{cite web|url =http://blog.mozilla.com/blog/2008/02/21/500-million-firefox-downloads-complete-500-million-grains-in-progress/|title =500 million Firefox downloads: complete; 500 million grains: in progress|date = 2008-02-21|accessdate = 2009-06-24|publisher = Mozilla}}&lt;/ref&gt;
+
+Some of Firefox's contributors made a [[crop circle]] of the Firefox logo in an [[oat]] field near [[Amity, Oregon|Amity]], Oregon, near the intersection of Lafayette Highway and Walnut Hill Road.&lt;ref&gt;{{cite web|url=http://firefoxcropcircle.com/circle/ |title=Take Back the Field |work=Oregon State Linux Users Group |date=2006-08-14 |accessdate=2011-08-28}}&lt;/ref&gt;
+
+==Market adoption==
+{{Firefox usage share}}
+{{See also|Usage share of web browsers}}
+&lt;!-- {{Browser marketshare}} --&gt;
+[[File:Wikimedia browser share pie chart.png|frameless|left]]
+
+{{as of|2011|08}}, Firefox is the second most widely used browser, with approximately 30% of worldwide [[usage share of web browsers]].&lt;ref name=&quot;w3counter1&quot;/&gt;&lt;ref name=&quot;gs.statcounter.com&quot;/&gt;&lt;ref name=&quot;getclicky1&quot;/&gt;
+
+Downloads have continued at an increasing rate since Firefox 1.0 was released in November 2004, and as of July 31, 2009 Firefox has been downloaded over one billion times.&lt;ref&gt;{{cite web|last=Shankland |first=Stephen |url=http://news.cnet.com/8301-1001_3-10301013-92.html |title=Firefox: 1 billion downloads only part of the story |publisher=CNET News |date=2009-07-31 |accessdate=2009-12-19}}&lt;/ref&gt; This number does not include downloads using software updates or those from third-party websites.&lt;ref&gt;{{cite web |url=http://feeds.spreadfirefox.com/downloads/firefox.xml |title=Spread Firefox: Mozilla Firefox Download Counts |accessdate=2007-02-14 |publisher=Mozilla}}&lt;/ref&gt; They do not represent a user count, as one download may be installed on many machines, one person may download the software multiple times, or the software may be obtained from a third party. According to Mozilla, Firefox had more than 400 million users {{as of|2010|11|lc=on}}.&lt;ref&gt;{{cite web|url = http://techcrunch.com/2010/11/18/state-of-mozilla/ |title = Mozilla: $104 Million In Revenues, 400 Million Users, Google Deal Running Through 2011 | author = MG Siegler | accessdate = 2011-06-08 | date = 2010-11-18}}&lt;/ref&gt;
+
+In July 2010, all [[IBM]] employees (about 400,000) were asked to use Firefox as their default browser.&lt;ref&gt;{{cite web|url=http://www.sutor.com/c/2010/07/ibm-moving-to-firefox-as-default-browser/ |title=Saying it out loud: IBM is moving to Firefox as its default browser |publisher=Bob Sutor |date=2010-07-01 |accessdate=2010-07-02}}&lt;/ref&gt;
+
+==Reception==
+[[File:Usage share of web browsers (Source StatCounter).svg|left|thumb|[[Usage share of web browsers]] according to [[StatCounter]].]]
+
+''[[Forbes]].com'' called Firefox the best browser in a 2004 commentary piece,&lt;ref&gt;{{cite news|url=http://www.forbes.com/2004/09/29/cx_ah_0929tentech.html|title=Better Browser Now The Best|last=Hesseldahl|first=Arik|publisher=Forbes |date=2004-09-29|accessdate=2006-10-17}}&lt;/ref&gt; and ''[[PC World (magazine)|PC World]]'' named Firefox &quot;Product of the Year&quot; in 2005 on their &quot;100 Best Products of 2005&quot; list.&lt;ref&gt;{{cite web|url=http://www.pcworld.com/article/120763/the_100_best_products_of_2005.html|title=The 100 Best Products of 2005|accessdate=2007-01-24 |date=2005-06-01|author=''PC World'' editors|publisher=''[[PC World (magazine)|PC World]]''}}&lt;/ref&gt; After the release of Firefox 2 and [[Internet Explorer 7]] in 2006, ''PC World'' reviewed both and declared that Firefox was the better browser.&lt;ref name=&quot;pcworldreview&quot;&gt;{{cite web|url=http://www.pcworld.com/article/127309-6/radically_new_ie_7_or_updated_mozilla_firefox_2which_browser_is_better.html|title=Radically New IE 7 or Updated Mozilla Firefox 2&amp;nbsp;â Which Browser Is Better?|accessdate=2007-05-18|last=Larkin|first=Erik |date=2006-10-24|publisher=''[[PC World (magazine)|PC World]]''}}&lt;/ref&gt; ''[[Which?]]'' Magazine named Firefox its &quot;Best Buy&quot; web browser.&lt;ref&gt;{{cite web|url=http://www.which.co.uk/reports_and_campaigns/computers_and_internet/reports/internet/using_the_internet/Web%20browsers/pp_excel_546_114959.jsp|title=Mozilla Firefox 2 (PC)|archiveurl= http://web.archive.org/web/20070902041958/http://www.which.co.uk/reports_and_campaigns/computers_and_internet/reports/internet/using_the_internet/Web+browsers/pp_excel_546_114959.jsp|archivedate=2007-09-02 |accessdate=2007-07-09 |date=October 24, 2006|publisher=[[Which?]]}}&lt;/ref&gt; In 2008, [[CNET]] compared [[Safari (web browser)|Safari]], [[Google Chrome|Chrome]], Firefox, and Internet Explorer in their &quot;Battle of the Browsers&quot; in terms of performance, security, and features, where Firefox was selected as a favorite.&lt;ref&gt;{{cite web|url=http://download.cnet.com/8301-2007_4-10079338-12.html |title=Prizefight: Battle of the browsers |publisher=CNET |date=October 30, 2008 |accessdate=2009-12-19}}&lt;/ref&gt;
+
+===Performance===
+In December 2005, ''Internet Week'' ran an article in which many readers reported high memory usage in Firefox 1.5.&lt;ref&gt;{{cite web|url=http://www.informationweek.com/software/opensource/174909795|title=Firefox 1.5: Not Ready For Prime Time?|accessdate=2007-01-24|last=Finnie|first=Scot |date=December 8, 2005|publisher=InformationWeek}}{{dead link|date=August 2011}}&lt;/ref&gt; Mozilla developers said that the higher memory use of Firefox 1.5 was at least partially due to the new fast backwards-and-forwards (FastBack) feature.&lt;ref&gt;{{cite web|url=http://weblogs.mozillazine.org/ben/archives/009749.html|title=About the Firefox &quot;memory leak&quot;|date=2006-02-14|accessdate=2007-11-17|last=Goodger|first=Ben|authorlink=Ben Goodger}}&lt;/ref&gt; Other known causes of memory problems were malfunctioning extensions such as [[Google Toolbar]] and some older versions of [[Adblock]],&lt;ref&gt;{{cite web|url=http://kb.mozillazine.org/?title=Problematic_extensions&amp;oldid=30448|title=Problematic Extensions|accessdate=2007-01-24|author=MozillaZine Knowledge Base contributors |date=January 19, 2007|publisher=MozillaZine Knowledge Base}}&lt;/ref&gt; or plug-ins, such as older versions of Adobe Acrobat Reader.&lt;ref&gt;{{cite web|url=http://kb.mozillazine.org/?title=Adobe_Reader&amp;oldid=30451|title=Adobe Reader|accessdate=2007-01-24|author=MozillaZine Knowledge Base contributors |date=January 17, 2007|publisher=MozillaZine Knowledge Base}}&lt;/ref&gt; When ''PC Magazine'' compared memory usage of Firefox 2, [[Opera (web browser)|Opera 9]], and Internet Explorer 7, they found that Firefox used approximately as much memory as the other two browsers.&lt;ref&gt;{{cite web|url=http://www.pcmag.com/article2/0,2817,1991370,00.asp|title=Which New Browser Is Best: Firefox 2, Internet Explorer 7, or Opera 9?|accessdate=2007-01-24 |date=2006-07-19|last=Muchmore|first=Michael W.|publisher=[[PC Magazine]]}}&lt;/ref&gt;
+
+[[Softpedia]] noted that Firefox 1.5 took longer to start up than other browsers,&lt;ref&gt;{{cite web|url=http://www.softpedia.com/reviews/windows/Mozilla-Firefox-Review-13677.shtml|title=Mozilla Firefox 1.5 Final Review|accessdate=2006-09-22|date=November 30, 2005|last=Muradin|first=Alex|publisher=Softpedia}}&lt;/ref&gt; which was confirmed by further speed tests.{{Citation needed|date=May 2010}}&lt;!--&lt;ref name=&quot;speedcmp&quot;&gt;{{cite web|url=http://www.howtocreate.co.uk/browserSpeed.html HowtoCreate.co.uk|title=Browser Speed Comparisons|accessdate=2007-01-24|last=Wilton-Jones|first=Mark|publisher=How To Create}}&lt;/ref&gt; Author has requested that article not be posted/cited as it is outdated!--&gt;
+IE 6 launched more swiftly than Firefox 1.5 on Windows XP since many of its components were built into the OS and loaded during system startup.&lt;!--&lt;ref name=&quot;speedcmp&quot;/&gt;--&gt; As a workaround for the issue, a preloader application was created that loaded components of Firefox on startup, similar to Internet Explorer.&lt;ref&gt;{{cite web|url=https://sourceforge.net/projects/ffpreloader/ |title= Firefox Preloader| accessdate=2007-04-26|publisher=SourceForge}}&lt;/ref&gt; A Windows Vista feature called [[Windows Vista I/O technologies#SuperFetch|SuperFetch]] performs a similar task of preloading Firefox if it is used often enough.
+
+Tests performed by ''[[PC World (magazine)|PC World]]'' and Zimbra in 2006 indicated that Firefox 2 used less memory than Internet Explorer 7.&lt;ref name=&quot;pcworldreview&quot;/&gt;&lt;ref&gt;{{cite web|url=http://www.zimbrablog.com/blog/archives/2006/10/ie-7-vs-ie-6.html|title=IE 7 vs IE 6|accessdate=2007-01-24 |date=October 19, 2006|last=Dargahi|first=Ross|publisher=Zimbra}}&lt;/ref&gt; Firefox 3 used less memory than Internet Explorer 7, Opera 9.50 Beta, Safari 3.1 Beta, and Firefox 2 in tests performed by Mozilla, CyberNet, and The Browser World.&lt;ref&gt;{{cite web|url=http://arstechnica.com/open-source/news/2008/03/firefox-3-goes-on-a-diet-eats-less-memory-than-ie-and-opera.ars|title=Firefox 3 goes on a diet, eats less memory than IE and Opera|publisher=Ars Technica|author=Ryan Paul|date=2008-03-17|accessdate=2008-06-01}}&lt;/ref&gt;&lt;ref&gt;{{cite web|url=http://cybernetnews.com/cybernotes-browser-performance-comparisons/|title=Browser Performance Comparisons|publisher=CyberNet|date=2008-03-26|accessdate=2008-06-01}}&lt;/ref&gt;&lt;ref&gt;{{cite web|url=http://www.thebrowserworld.com/2008/03/29/firefox-30-beta-4-vs-opera-950-beta-vs-safari-31-beta-multiple-sites-opening-test/|title=Firefox 3.0 Beta 4 Vs Opera 9.50 Beta Vs Safari 3.1 Beta: Multiple Sites Opening Test|publisher=The Browser World|date=2008-03-29|accessdate=2008-06-01}}&lt;/ref&gt; In mid 2009, Betanews benchmarked Firefox 3.5 and declared that it performed &quot;nearly ten times better on XP than Microsoft Internet Explorer 7&quot;.&lt;ref name=&quot;betanews&quot; /&gt;
+
+In January 2010, Lifehacker compared the performance of Firefox 3.5, Firefox 3.6, Google Chrome 4 (stable and Dev versions), Safari 4, and Opera (10.1 stable and 10.5 pre-alpha versions). Lifehacker timed how long browsers took to start and reach a page (both right after boot-up and after running at least once already), timed how long browsers took to load nine tabs at once, tested JavaScript speeds using Mozilla's Dromaeo online suite (which implements Apple's SunSpider and Google's V8 tests) and measured memory usage using Windows 7's process manager. They concluded that Firefox 3.5 and 3.6 were the fifth and sixth fastest browsers respectively on startup, 3.5 was third and 3.6 was sixth fastest to load nine tabs at once, 3.5 was sixth and 3.6 was fifth fastest on the JavaScript tests. They also concluded that Firefox 3.6 was the most efficient with memory usage followed by Firefox 3.5.&lt;ref&gt;{{cite web|url=http://lifehacker.com/5457242/browser-speed-tests-firefox-36-chrome-4-opera-105-and-extensions |title=Browser Speed Tests: Firefox 3.6, Chrome 4, Opera 10.5, and Extensions |publisher=Lifehacker |date=2010-01-26 |accessdate=2010-05-04}}&lt;/ref&gt;
+
+===Relationship with Google===
+The Mozilla Corporation's relationship with [[Google]] has been noted in the popular press,&lt;ref&gt;{{cite web|url=http://www.internetnews.com/dev-news/article.php/3590756|title=Mozilla's Millions?|accessdate=2007-01-24 |date=March 10, 2006| last=Kerner|first=Sean Michael|publisher=InternetNews}}&lt;/ref&gt;&lt;ref&gt;{{cite web| url=http://www.informationweek.com/news/showArticle.jhtml?articleID=181501852| title=Mozilla Confirms Firefox Taking In Millions Of Google Dollars|accessdate=2007-01-24 |date=March 7, 2006| last=Gonsalves|first=Antone|publisher=InformationWeek}}&lt;/ref&gt; especially with regard to their paid referral agreement. The release of the anti-[[phishing]] protection in Firefox 2 in particular raised considerable controversy:&lt;ref&gt;{{cite web |url=http://www.platinax.co.uk/news/26-10-2006/firefox-2-releases-privacy-storm| title=Firefox 2 releases privacy storm|accessdate=2007-01-24 |date=October 26, 2006|last=Turner|first=Brian|publisher=Platinax}}&lt;/ref&gt; anti-phishing protection enabled by default is based on a list updated by twice-hourly downloads to the user's computer from Google's server.&lt;ref name=&quot;FirefoxPrivacyPolicy&quot;&gt;{{cite web|url=http://www.mozilla.com/legal/privacy/firefox-en.html|title=Firefox Privacy Policy|accessdate=2007-01-24|month=October|year=2006|publisher=mozilla.com}}&lt;/ref&gt; The user cannot change the data provider within the GUI,&lt;ref&gt;{{cite web|url=https://bugzilla.mozilla.org/show_bug.cgi?id=342188|title=Bug 342188&amp;nbsp;â support changing the local list data provider|accessdate=2007-01-24|publisher=Bugzilla@Mozilla}}&lt;/ref&gt; and is not informed who the default data provider is. The browser also sends Google's [[HTTP cookie|cookie]] with each update request.&lt;ref&gt;{{cite web|url=https://bugzilla.mozilla.org/show_bug.cgi?id=368255|title=Bug 368255 sending Google's cookie with each request for update in default antiphishing mode|accessdate=2007-02-05|publisher=Bugzilla@Mozilla}}&lt;/ref&gt; Some{{Who|date=October 2009}} [[internet privacy]] advocacy groups have expressed concerns surrounding Google's possible uses of this data, especially that Firefox's privacy policy states that Google may share information (that is not personally identifying) gathered with &quot;safebrowsing&quot; service with third parties, including business partners.&lt;ref name=&quot;GoogleFirefoxPrivacyPolicy&quot;&gt;{{cite web|url=http://code.google.com/apis/safebrowsing/firefox3_privacy.html|title=Google Safe Browsing Service in Mozilla Firefox Version 3|accessdate=2009-02-27|publisher=Google}}&lt;/ref&gt; Following Google CEO [[Eric E. Schmidt|Eric Schmidt]]'s comments in December 2009 regarding privacy during a [[CNBC]] show,&lt;ref&gt;{{cite web|url=http://gawker.com/5419271/google-ceo-secrets-are-for-filthy-people|title=Google CEO: Secrets Are for Filthy People|accessdate=2009-12-15|publisher=Gawker}}&lt;/ref&gt; [[Asa Dotzler]], Mozilla's director of community development suggested that users use the [[Bing]] search engine instead of Google search.&lt;ref&gt;{{cite web|url=http://weblogs.mozillazine.org/asa/archives/2009/12/if_you_have_nothing.html|title=If you have nothing to hide...|accessdate=2009-12-15|date=2009-12-10}}&lt;/ref&gt; Google also promoted Firefox through [[YouTube]] until the release of Google Chrome. In August 2009, Mozilla Security assisted Google by pointing out a security flaw in Google's Chrome browser.&lt;ref&gt;{{cite web|url=http://www.betanews.com/article/Mozilla-credited-with-discovering-exploitable-Google-Chrome-2-flaw/1251232310 |title=Betanews |publisher=Betanews |accessdate=2010-06-27}}&lt;/ref&gt; {{as of|2011|07|df=US}}, Firefox's default search provider is Google.
+
+In 2005, the Mozilla Foundation and Mozilla Corporation had a combined revenue of [[United States dollar|US$]]52.9 million, with approximately 95% derived from search engine royalties.&lt;ref name=&quot;mf2006statement&quot;&gt;{{cite web|url=http://www.mozilla.org/foundation/documents/mf-2006-audited-financial-statement.pdf|title=Mozilla Foundation and subsidiary&amp;nbsp;â Independent Auditors' Report and Consolidated Financial Statements|format=PDF|accessdate=2007-11-06|author=Hood &amp; Strong, LLP. |date=December 31, 2006|publisher=[[Mozilla Foundation]]}} Page 11.&lt;/ref&gt;&lt;ref&gt;{{cite web|url=http://blog.lizardwrangler.com/2007/01/02/the-mozilla-foundation-achieving-sustainability/|title=The Mozilla Foundation: Achieving Sustainability|accessdate=2008-06-23 |date=January 2, 2007|last=Baker|first=Mitchell|authorlink=Mitchell Baker|publisher=Mitchell's Blog}}&lt;/ref&gt; In 2006, the Mozilla Foundation and Mozilla Corporation had a combined revenue of US$66.9 million, with approximately 90% derived from search engine royalties.&lt;ref name=&quot;mf2006statement&quot; /&gt;&lt;ref&gt;{{cite web|url=http://blog.lizardwrangler.com/2007/10/22/beyond-sustainability/|title=Beyond Sustainability|accessdate=2008-06-23 |date=October 22, 2007|last=Baker|first=Mitchell|authorlink=Mitchell Baker|publisher=Mitchell's Blog}}&lt;/ref&gt;
+In 2007, the Mozilla Foundation and Mozilla Corporation had a combined revenue of US$81 million, with 88% of this sum (US$66 million) from Google.&lt;ref name=&quot;mf2007statement&quot;&gt;{{cite web|url=http://www.mozilla.org/foundation/documents/mf-2007-audited-financial-statement.pdf|title=Mozilla Foundation and Subsidiary&amp;nbsp;â Independent Auditors' Report and Consolidated Financial Statements|format=PDF|accessdate=2009-02-27|author=Hood &amp; Strong, LLP. |date=December 31, 2007 and 2006|publisher=[[Mozilla Foundation]]}}&lt;/ref&gt;&lt;ref&gt;{{cite web|url=http://blog.lizardwrangler.com/2008/11/19/sustainability-in-uncertain-times/|title=Sustainability in Uncertain Times|accessdate=2009-02-27 |date=November 19, 2008|last=Baker|first=Mitchell|authorlink=Mitchell Baker|publisher=Mitchell's Blog}}&lt;/ref&gt;
+In 2008, both Mozilla organizations had a combined revenue of US$78.6 million, with 91% coming from Google.&lt;ref name=&quot;mf2008statement&quot;&gt;{{cite web|url=http://www.mozilla.org/foundation/documents/mf-2008-audited-financial-statement.pdf|title=Mozilla Foundation and Subsidiaries&amp;nbsp;â Independent Auditors' Report and Consolidated Financial Statements|format=PDF|accessdate=2009-11-21|author=Hood &amp; Strong, LLP. |date=December 31, 2008 and 2007|publisher=[[Mozilla Foundation]]}}&lt;/ref&gt;
+The Mozilla Foundation and Corporation are being audited by the [[Internal Revenue Service|IRS]] with the possibility of having its non-profit status called into question.&lt;ref name=&quot;mf2007statement&quot; /&gt;&lt;ref name=&quot;mf2008statement&quot; /&gt;&lt;ref name=&quot;TechCrunchMozGoog&quot;&gt;{{cite web|url=http://www.techcrunch.com/2008/11/19/google-makes-up-88-percent-of-mozillas-revenues-threatens-its-non-profit-status/|title=Google Makes Up 88 Percent Of Mozillaâs Revenues, Threatens Its Non-Profit Status|accessdate=2009-02-27 |date=November 19, 2008|last=Schonfeld|first=Erick|publisher=TechCrunch}}&lt;/ref&gt;
+
+===Response from Microsoft===
+Microsoft's head of Australian operations, Steve Vamos, stated in late 2004 that he did not see Firefox as a threat and that there was not significant demand for the feature-set of Firefox among Microsoft's users.&lt;ref&gt;{{cite web|url=http://www.zdnet.com.au/news/soa/Microsoft-Firefox-does-not-threaten-IE-s-market-share/0,139023165,139166227,00.htm|title=Microsoft: Firefox does not threaten IE's market share|accessdate=2007-01-24 |date=2004-11-11|last=Kotadia|first=Munir|publisher=ZDNet}}&lt;/ref&gt; Microsoft Chairman [[Bill Gates]] has used Firefox, but has commented that &quot;it's just another browser, and IE [Microsoft's Internet Explorer] is better&quot;.&lt;ref&gt;{{cite news|url=http://news.bbc.co.uk/2/hi/business/4508897.stm|title=The assault on software giant Microsoft|accessdate=2007-01-24 |date=May 9, 2005|last=Weber|first=Tim|publisher=BBC News}}&lt;/ref&gt;
+
+A Microsoft [[U.S. Securities and Exchange Commission|SEC]] filing on June 30, 2005 acknowledged that &quot;competitors such as Mozilla offer software that competes with the Internet Explorer Web browsing capabilities of our Windows operating system products.&quot;&lt;ref&gt;{{cite web|url=http://www.linux.org/news/2005/09/01/0001.html|title=SEC Filing Shows Microsoft Fears Firefox, Lawsuits Over Bugs|accessdate=2007-01-24 |date=September 1, 2005|last=Keizer|first=Gregg|publisher=Linux Online}}&lt;/ref&gt; The release of Internet Explorer 7 was fast tracked, and included functionality that was previously available in Firefox and other browsers, such as tabbed browsing and RSS feeds.&lt;ref&gt;{{cite news|url=http://news.bbc.co.uk/2/hi/business/4516269.stm|title=How Microsoft plans to beat its rivals|accessdate=2008-04-09 |date=May 10, 2005|last=Weber|first=Tim|publisher=BBC News}}&lt;/ref&gt;
+
+Despite the cold reception from Microsoft's top management, the Internet Explorer development team maintains a relationship with Mozilla. They meet regularly to discuss web standards such as [[Extended Validation Certificate|extended validation certificates]].&lt;ref&gt;{{cite web|url=http://blogs.msdn.com/ie/archive/2005/11/21/495507.aspx|title=Better Website Identification and Extended Validation Certificates in IE7 and Other Browsers|accessdate=2007-04-03 |date=November 21, 2005|publisher=IE Blog}}&lt;/ref&gt; In 2005, Mozilla agreed to allow Microsoft to use its [[Web feed]] logo in the interest of common graphical representation of the Web feeds feature.&lt;ref&gt;{{cite web|url=http://blogs.msdn.com/rssteam/archive/2005/12/14/503778.aspx|title=Icons: It's still orange|accessdate=2007-04-03 |date=December 14, 2005|publisher=RSS}}&lt;/ref&gt;
+
+In August 2006, Microsoft offered to help Mozilla integrate Firefox with the then-forthcoming Windows Vista,&lt;ref&gt;{{cite web|url=http://news.cnet.com/Microsoft-reaches-out-to-Firefox-developers/2100-7344_3-6108221.html?tag=nl|title=Microsoft reaches out to Firefox developers|accessdate=2007-01-24 |date=2006-08-22|last=Barker|first=Colin|publisher=[[CNET Networks|CNET]] News}}&lt;/ref&gt; an offer Mozilla accepted.&lt;ref&gt;{{cite web|url=http://news.cnet.com/Microsoft-offers-helping-hand-to-Firefox/2100-1032_3-6109455.html|title=Microsoft offers helping hand to Firefox|accessdate=2007-01-24 |date=2006-08-24|last=Barker|first=Colin|publisher=[[CNET Networks|CNET]] News}}&lt;/ref&gt;
+
+In October 2006, as congratulations for a successful ship of Firefox 2, the Internet Explorer 7 development team sent a cake to Mozilla.&lt;ref&gt;{{cite web|url=http://fredericiana.com/2006/10/24/from-redmond-with-love/|title=From Redmond With Love|accessdate=2007-01-24|date=2006-10-24|last=Wenzel|first=FrÃ©dÃ©ric|publisher=fredericiana (weblog of a Mozilla Corporation intern)}}&lt;/ref&gt;&lt;ref&gt;{{cite web |url=http://interviews.slashdot.org/article.pl?sid=06/11/09/1445241 |title=Mozilla People Answer Firefox 2.0 Questions |accessdate=2007-07-14 |work=}}&lt;/ref&gt; As a nod to the [[browser wars]], some jokingly suggested that Mozilla send a cake back along with the recipe, in reference to the [[Open source software|open-source software]] movement.&lt;ref&gt;{{cite web|url=http://www.tonychor.com/archive/2006_10.html |title=Tonynet Explorer: October 2006 Archives |publisher=Tonynet Explorer |accessdate=2009-12-19}}&lt;/ref&gt; The IE development team sent another cake on June 17, 2008, upon the successful release of Firefox 3,&lt;ref&gt;{{cite web|url=http://fredericiana.com/2008/06/17/from-redmond-with-love-part-2/|title=From Redmond With Love, Part 2|accessdate=2008-06-18 |date=2008-06-17|last=Wenzel|first=FrÃ©dÃ©ric|publisher=fredericiana (weblog of a Mozilla Corporation intern)}}&lt;/ref&gt; again on March 22, 2011, for Firefox 4,&lt;ref&gt;{{cite web|url=http://www.techspot.com/news/42945-microsoft-sends-mozilla-another-cake-for-firefox-4-release.html|title=Microsoft sends Mozilla another cake for Firefox 4 release|author=Emil Protalinski|publisher=TechSpot}}&lt;/ref&gt; and yet again for the Firefox 5 release.&lt;ref&gt;{{cite web|url=http://thenextweb.com/microsoft/2011/06/21/microsoft-sends-mozilla-traditional-treat-to-celebrate-shipping-firefox-5/|title=Microsoft sends Mozilla traditional treat to celebrate shipping Firefox 5|author=Alex Wilhelm|publisher=The Next Web}}&lt;/ref&gt;
+
+In November 2007, Jeff Jones (a &quot;security strategy director&quot; in Microsoft's Trustworthy Computing Group) criticized Firefox, claiming that Internet Explorer experienced fewer [[vulnerability (computing)|vulnerabilities]] and fewer higher severity vulnerabilities than Firefox in typical enterprise scenarios.&lt;ref&gt;{{cite web|url=http://blogs.csoonline.com/internet_explorer_and_firefox_vulnerability_analysis_report|archiveurl=http://www.webcitation.org/5mq3x9Bql|archivedate=2010-01-17|title=Internet Explorer and Firefox Vulnerability Analysis Report|date=2007-11-30|accessdate=2009-06-24}}&lt;/ref&gt;
+Mozilla developer [[Mike Shaver]] discounted the study, citing Microsoft's bundling of security fixes and the study's focus on fixes, rather than vulnerabilities, as crucial flaws.&lt;ref&gt;{{cite web|url=http://shaver.off.net/diary/2007/11/30/counting-still-easy-critical-thinking-still-surprisingly-hard/ |title=counting still easy, critical thinking still surprisingly hard|date=30 November 2007|accessdate=2009-06-24}}&lt;/ref&gt;
+
+Firefox was one of the twelve browsers offered to [[European Economic Area]] users of [[Microsoft Windows]] in 2010&amp;nbsp;â see [[BrowserChoice.eu]].&lt;ref&gt;BBC, [http://news.bbc.co.uk/1/hi/technology/8537763.stm Microsoft offers browser choices to Europeans], 1 March 2010&lt;/ref&gt;
+
+===.NET Framework 3.5 Service Pack 1===
+In February 2009, Microsoft released Service Pack 1 for [[.NET Framework 3.5|version 3.5]] of the .NET Framework. This update also installed Microsoft .NET Framework Assistant add-on (enabling [[ClickOnce]] support).&lt;ref&gt;{{cite web|url=http://www.zdnetasia.com/techguide/security/0,39044901,62055736,00.htm|title=Microsoft may be Firefox's worst vulnerability|date=7 July 2009|accessdate=2009-08-20}}&lt;/ref&gt; The update received media attention after users discovered that the add-on could not be uninstalled through the add-ons interface.&lt;ref name=&quot;washingtonPostdotNET&quot;&gt;{{cite news|url=http://voices.washingtonpost.com/securityfix/2009/05/microsoft_update_quietly_insta.html|publisher=The Washington Post|title=Microsoft Update Quietly Installs Firefox Extension|date=2009-05-29|accessdate=2010-12-19}}&lt;/ref&gt;&lt;ref&gt;{{cite web|url=http://www.annoyances.org/exec/show/article08-600|title=Remove the Microsoft .NET Framework Assistant (ClickOnce) Firefox Extension|date=27 February 2009|accessdate=2009-08-20}}&lt;/ref&gt; Several hours after the website Annoyances.org posted an article regarding this update, Microsoft employee Brad Abrams posted in his blog Microsoft's explanation for why the add-on was installed, and also included detailed instructions on how to remove it.&lt;ref&gt;{{cite web|url=http://blogs.msdn.com/brada/archive/2009/02/27/uninstalling-the-clickonce-support-for-firefox.aspx|title=Brad Abrams: Uninstalling the ClickOnce Support for Firefox|date=27 February 2009|accessdate=2009-08-20}}&lt;/ref&gt; However, the only way to get rid of this extension was to modify manually the [[Windows Registry]], which could cause Windows systems to fail to boot up if not done correctly.&lt;ref name=&quot;washingtonPostdotNET&quot; /&gt;
+
+On 16 October 2009, Mozilla blocked all versions of Microsoft .NET Framework Assistant from being used with Firefox and from the [[Mozilla Add-ons]] service.&lt;ref&gt;{{cite web|last=Morgan|first=Michael|title=blocklist evil versions of microsoft .NET Framework Assistant (the name of the add-on slipped into Firefox)|work=Bugzilla@Mozilla|publisher=[[Mozilla Foundation]]|date=2009-10-16|url=https://bugzilla.mozilla.org/show_bug.cgi?id=522777#c18}}&lt;/ref&gt; Two days later, the add-on was removed from the blocklist after confirmation from Microsoft that it is not a vector for [[vulnerability (computing)|vulnerabilities]].&lt;ref&gt;{{cite web|last=Shaver|first=Mike|title=update: .NET Framework Assistant (ClickOnce support) unblocked|date=2009-10-18|accessdate=2009-12-10|url=http://shaver.off.net/diary/2009/10/18/update-net-framework-assistant-clickonce-support-unblocked/}}&lt;/ref&gt;&lt;ref&gt;{{cite web|last=Shaver|first=Mike|title=update on the .NET Framework Assistant and Windows Presentation Foundation plugin blocking from this weekend|date=2009-10-19|accessdate=2009-12-10|url=http://shaver.off.net/diary/2009/10/19/update-on-the-net-framework-assistant-and-windows-presentation-foundation-plugin-blocking-from-this-weekend/}}&lt;/ref&gt; Version 1.1 (released on June 10, 2009 to the Mozilla Add-ons service) and later of the Microsoft .NET Framework Assistant allows the user to disable and uninstall in the normal fashion.&lt;ref&gt;{{cite news|last=Krebs|first=Brian|title=Microsoft's Fix for the Firefox Add-on Snafu|date=2009-06-03|accessdate=2009-12-10|url=http://voices.washingtonpost.com/securityfix/2009/06/microsoft_patch_to_fix_firefox.html|work=The Washington Post}}&lt;/ref&gt;
+
+===Vulnerability statistics===
+Firefox security [[vulnerability (computing)|vulnerabilities]] have been patched relatively quickly. [[Symantec]]'s [http://www.symantec.com/about/news/release/article.jsp?prid=20060925_02 Internet Security Threat Report Vol. 10], based on data from the first half of 2006, reported that while Firefox had more public vulnerabilities than Internet Explorer during that time period (47 vs. 38), Firefox's vulnerabilities were fixed on average one day after the exploit code was made available, as compared to nine days for Internet Explorer.
+
+[[InfoWorld]] has cited security experts saying that as Firefox becomes more popular, more vulnerabilities will be found,&lt;ref&gt;{{cite web|url=http://www.infoworld.com/d/security-central/security-firms-fight-firefox-fire-fire-032|title=Security firms fight Firefox fire with fire|work=InfoWorld|author=Bob Francis}}&lt;/ref&gt; a claim that [[Mitchell Baker]], president of the Mozilla Foundation, has denied: &quot;There is this idea that market share alone will make you have more vulnerabilities. It is not relational at all.&quot;&lt;ref name=&quot;popularity-insecure&quot;&gt;{{cite web|url=http://software.silicon.com/applications/0,39024653,39128935,00.htm|title=Popularity won't make Firefox insecure, says Mozilla head|work=silicon.com|author=Michael Kanellos|accessdate=2006-10-13}}&lt;/ref&gt;
+
+===Expert and media coverage===
+The [[United States Computer Emergency Readiness Team]] (US-CERT) stated in October 2004 that Internet Explorer's design makes it very difficult to secure. In contrast, almost none of their concerns apply to Firefox.&lt;ref&gt;{{cite web|url=http://www.kb.cert.org/vuls/id/713878|title=Vulnerability Note VU#713878|work=US-CERT|accessdate=2006-10-13}}&lt;/ref&gt;
+&lt;blockquote&gt;There are a number of significant vulnerabilities in technologies relating to the IE domain/zone security model, local file system (Local Machine Zone) trust, the Dynamic HTML (DHTML) document object model (in particular, proprietary DHTML features), the HTML Help system, MIME type determination, the graphical user interface (GUI), and ActiveX... IE is integrated into Windows to such an extent that vulnerabilities in IE frequently provide an attacker significant access to the operating system.&lt;/blockquote&gt;
+
+Some security experts, including [[Bruce Schneier]]&lt;ref&gt;{{cite web|url=http://www.schneier.com/blog/archives/2004/12/safe_personal_c.html|title=Safe Personal Computing|author=Bruce Schneier|accessdate=2006-10-13}}&lt;/ref&gt; and [[David A. Wheeler]],&lt;ref&gt;{{cite web|url=http://www.dwheeler.com/essays/securing-windows.html#dontuseie|title=Securing Microsoft Windows (for Home and Small Business Users)|author=David A. Wheeler|accessdate=2006-10-13}}&lt;/ref&gt; recommended that users should stop using Internet Explorer 6 or earlier for normal browsing, and switch to a different browser instead; Wheeler specifically recommended Firefox.
+
+Several technology columnists have suggested the same, including ''[[The Wall Street Journal|Wall Street Journal]]'' columnist [[Walter Mossberg|Walter S. Mossberg]],&lt;ref name=&quot;WSJHowTo&quot;&gt;{{cite news|url=http://ptech.wsj.com/archive/ptech-20040916.html |archiveurl=http://web.archive.org/web/20070221061526/http://ptech.wsj.com/archive/ptech-20040916.html |archivedate=February 21, 2007 |title=How to Protect Yourself From Vandals, Viruses If You Use Windows|last=Mossberg|first=Walter S.|publisher=Wall Street Journal |date=2004-09-16|accessdate=2006-10-17|quote = I suggest dumping Microsoft's Internet Explorer Web browser, which has a history of security breaches. I recommend instead Mozilla Firefox, which is free at www.mozilla.org. It's not only more secure but also more modern and advanced, with tabbed browsing, which allows multiple pages to be open on one screen, and a better pop-up ad blocker than the belated one Microsoft recently added to IE.}}&lt;/ref&gt; ''[[The Washington Post|Washington Post]]'' columnist Rob Pegoraro,&lt;ref&gt;{{cite news|url=http://www.washingtonpost.com/wp-dyn/articles/A47146-2004Nov13.html|title=Firefox Leaves No Reason to Endure Internet Explorer|author=Rob Pegoraro|work=Washington Post|accessdate=2006-10-13|date=2004-11-14}}&lt;/ref&gt; ''[[USA Today]]''âs Byron Acohido and Jon Swartz,&lt;ref&gt;{{cite news|url=http://www.usatoday.com/tech/news/computersecurity/2004-09-08-zombieinfect_x.htm|title=Signs your PC's under siege, and what you can do|work=USA Today|author=Byron Acohido and Jon Swartz|accessdate=2006-10-13|date=2004-11-18}}&lt;/ref&gt; ''[[Forbes]]'''s [[Arik Hesseldahl]],&lt;ref&gt;{{cite news|url=http://www.forbes.com/2004/09/29/cx_ah_0929tentech.html?partner=tentech_newsletter|title=Better Browser Now The Best|author=Arik Hesseldahl|work=Forbes|accessdate=2006-10-26|date=2004-09-29}}&lt;/ref&gt; eWeek.com Senior Editor Steven J. Vaughan-Nichols,&lt;ref&gt;{{cite web|url=http://www.eweek.com/c/a/Linux-and-Open-Source/Internet-Explorer-Is-Too-Dangerous-to-Keep-Using/|title=Internet Explorer Is Too Dangerous to Keep Using|author=Steven J. Vaughan-Nichols|work=eWeek.com|accessdate=2006-10-13}}&lt;/ref&gt; and Desktop Pipelineâs Scot Finnie.&lt;ref&gt;{{cite web|url=http://www.desktoppipeline.com/53700233|archiveurl=http://web.archive.org/web/20061007172505/http://www.desktoppipeline.com/53700233|archivedate=2006-10-07|title=Firefox 1.0: The New World Wide Web Champ?|author=Scot Finnie|work=InformationWeek|accessdate=2006-10-13}}&lt;/ref&gt;
+
+===Awards===
+Firefox has been given a number of awards by various organizations. These awards include:
+* PC Magazine Editors' Choice, June 2008&lt;ref&gt;{{cite web|author=By&amp;nbsp;Michael Muchmore |url=http://www.pcmag.com/article2/0,2817,2317294,00.asp |title=Firefox 3&amp;nbsp;â At A Glance&amp;nbsp;â Reviews by PC Magazine |publisher=PCMag.com |date=1994-12-01 |accessdate=2009-12-19}}&lt;/ref&gt;
+* CNET Editors' Choice, June 2008&lt;ref&gt;{{cite web|url=http://reviews.cnet.com/browsers/firefox-3/4505-3514_7-33087853.html|title=Firefox 3 Browser reviews&amp;nbsp;â CNET Reviews|accessdate=2008-07-18}}&lt;/ref&gt;
+* PC World 100 Best Products of 2008, May 2008&lt;ref&gt;{{cite web|url=http://www.pcworld.com/article/146161-4/the_100_best_products_of_2008.html|title=The 100 Best Products of 2008&amp;nbsp;â numbers 21 through 30|accessdate=2009-04-13}}&lt;/ref&gt;
+* Webware 100 winner, April 2008&lt;ref&gt;{{cite web|url=http://www.webware.com/8301-13546_109-9913314-29.html|title=Webware 100 Award Winner Firefox|accessdate=2008-04-25}}&lt;/ref&gt;
+* Webware 100 winner, June 2007&lt;ref&gt;{{cite web|url=http://www.webware.com/8301-13546_109-9729691-29.html|title=Webware 100 Award Winner Firefox|accessdate=2007-10-22}}&lt;/ref&gt;
+* PC World 100 Best Products of 2007, May 2007&lt;ref&gt;{{cite web|url=http://www.pcworld.com/article/131935-5/the_100_best_products_of_2007.html|title=The 100 Best Products of 2007|accessdate=2007-10-22}}&lt;/ref&gt;
+* PC Magazine Editors' Choice, October 2006&lt;ref&gt;{{cite web|url=http://www.pcmag.com/article2/0,2817,2047445,00.asp|title=Firefox 2.0 Review|accessdate=2007-10-22}}&lt;/ref&gt;
+* CNET Editors' Choice, October 2006&lt;ref&gt;{{cite web|url=http://reviews.cnet.com/browsers/firefox-2/4505-3514_7-32126746.html|title=Firefox 2 CNET Editor's Review|accessdate=2007-10-22}}&lt;/ref&gt;
+* PC World's 100 Best Products of 2006, July 2006&lt;ref&gt;{{cite web|url=http://www.pcworld.com/article/125706-13/the_100_best_products_of_2006.html|title=The 100 Best Products of 2006|accessdate=2007-10-22}}&lt;/ref&gt;
+* PC Magazine Technical Excellence Award, Software and Development Tools category, January 2006&lt;ref&gt;{{cite web|url=http://www.pcmag.com/article2/0,2817,1903598,00.asp|title=Mozilla Firefox &amp; Altiris SVS|accessdate=2007-10-22}}&lt;/ref&gt;
+* PC Magazine Best of the Year Award, December 27, 2005&lt;ref&gt;{{cite web|url=http://www.pcmag.com/article2/0,2817,1898240,00.asp|title=Best of the Year, Software: Home, Firefox|accessdate=2007-10-22}}&lt;/ref&gt;
+* PC Pro Real World Award (Mozilla Foundation), December 8, 2005&lt;ref&gt;{{cite web|url=http://www.pcpro.co.uk/news/81155/pc-pro-awards-2005-the-winners.html|title=PC Pro Awards 2005&amp;nbsp;â the winners|accessdate=2007-10-22}}&lt;/ref&gt;
+* CNET Editors' Choice, November 2005&lt;ref&gt;{{cite web|url=http://reviews.cnet.com/security-utility-services/firefox-1-5/4505-9241_7-31516411.html?tag=prod|title=Firefox 1.5, CNET editors' review|accessdate=2007-10-22}}&lt;/ref&gt;
+* UK Usability Professionals' Association Award Best Software Application 2005, November 2005&lt;ref&gt;{{cite web|url=http://www.usabilitynews.com/news/article2786.asp|title=First UK UPA Awards commend Firefox, Flickr, Google, Apple, John Lewis and BA|accessdate=2007-10-22}}{{dead link|date=August 2011}}&lt;/ref&gt;
+* Macworld Editor's Choice with a 4.5 Mice Rating, November 2005&lt;ref&gt;{{cite web|url=http://www.macworld.com/article/47001/2005/09/browserrdp.html|title=Web browser roundup|accessdate=2007-10-22}}&lt;/ref&gt;
+* Softpedia Userâs Choice Award, September 2005&lt;ref&gt;{{cite web|url=http://news.softpedia.com/news/Firefox-Receives-the-Softpedia-User-s-Choice-Award-8221.shtml|title=Firefox Receives Softpedia Userâs Choice Award|accessdate=2007-10-22}}&lt;/ref&gt;
+* TUX 2005 Readers' Choice Award, September 2005&lt;ref&gt;{{cite web|url=http://www.tuxmagazine.com/node/1000151|title=UX 2005 Readers' Choice Award Winners Announced|accessdate=2007-10-22}}&lt;/ref&gt;
+* PC World Product of the Year, June 2005&lt;ref&gt;{{cite web|url=http://www.pcworld.com/article/120763/the_100_best_products_of_2005.html|title=The 100 Best Products of 2005|accessdate=2007-10-22}}&lt;/ref&gt;
+* Forbes Best of the Web, May 2005&lt;ref&gt;{{cite news|url=http://www.forbes.com/bow/b2c/review.jhtml?id=7702|title=Best of the Web, BOW Directory, Look It Up, Web Browsers, Firefox|accessdate=2007-10-22|work=Forbes}}&lt;/ref&gt;
+* PC Magazine Editorâs Choice Award, May 2005&lt;ref&gt;{{cite web|url=http://www.pcmag.com/article2/0,2817,1815875,00.asp|title=Firefox 1.0.3|accessdate=2007-10-22}}&lt;/ref&gt;
+
+==See also==
+{{Portal|Free software}}
+{{div col|colwidth=20em}}
+* ''[[The Book of Mozilla]]''
+* [[List of web browsers]]
+* [[Month of bugs]]
+* [[Mozilla Prism]]
+* [[Netscape Navigator]]
+* [[Timeline of web browsers]]
+* [[XULRunner]]
+{{div col end}}
+
+==References==
+{{Reflist|30em}}
+
+==Further reading==
+{{refbegin|30em}}
+* {{cite book|last = Cheah|first = Chu Yeow|title = Firefox Secrets: A Need-To-Know Guide|publisher = O'Reilly|year = 2005|isbn = 0-9752402-4-2}}
+* {{cite book|last = Feldt|first = Kenneth C.|title = Programming Firefox|publisher = O'Reilly|year = 2007|isbn = 0-596-10243-7}}
+* {{cite book|last = Granneman|first = Scott|title = Don't Click on the Blue e!: Switching to Firefox|publisher = O'Reilly|year = 2005|isbn = 0-596-00939-9}}
+* {{cite book|last = Hofmann|first = Chris|coauthors = Marcia Knous, &amp; John Hedtke|title = Firefox and Thunderbird Garage|publisher = Prentice Hall PTR|year = 2005|isbn = 0-13-187004-1}}
+* {{cite book|last = McFarlane|first = Nigel|title = Firefox Hacks|publisher = O'Reilly|year = 2005|isbn = 0-596-00928-3}}
+* {{cite book|last = Reyes|first = Mel|title = Hacking Firefox: More Than 150 Hacks, Mods, and Customizations|publisher = Wiley|year = 2005|isbn = 0-7645-9650-0}}
+* {{cite book|authorlink = Blake Ross|last = Ross|first = Blake|title = Firefox for Dummies|publisher = Wiley|year = 2006|isbn = 0-471-74899-4}}
+{{Refend}}
+
+==External links==
+{{Sister project links|wikt=no|q=no|s=no|v=no}}
+* {{official website|http://www.firefox.com}} for [[End-user (computer science)|end-users]]
+* [http://nightly.mozilla.org/ Firefox Nightly Builds]
+* [http://www.mozilla.org/ Mozilla Foundation homepage]
+* [http://www.spreadfirefox.com/ Firefox Marketing/Advertising Site]
+* {{dmoz|Computers/Software/Internet/Clients/WWW/Browsers/Firefox}}
+
+{{Mozilla projects}}
+{{Web browsers}}
+{{FLOSS}}
+{{Aggregators}}
+{{gopher clients}}
+
+[[Category:Firefox| ]]
+[[Category:2004 software]]
+[[Category:Free FTP clients]]
+[[Category:Free multilingual software]]
+[[Category:Free software programmed in C++]]
+[[Category:Free cross-platform software]]
+[[Category:Gopher clients]]
+[[Category:History of the Internet]]
+[[Category:Web browsers for AmigaOS]]
+[[Category:Linux internet software]]
+[[Category:Mac OS X web browsers]]
+[[Category:POSIX web browsers]]
+[[Category:Unix internet software]]
+[[Category:Windows web browsers]]
+[[Category:OS/2 web browsers]]
+
+{{Link GA|de}}
+{{Link GA|es}}
+{{Link GA|fr}}
+{{Link GA|zh}}
+{{Link FA|hu}}
+{{Link FA|ka}}
+{{Link FA|ml}}
+{{Link FA|ro}}
+{{Link FA|sl}}
+
+[[af:Mozilla Firefox]]
+[[als:Mozilla Firefox]]
+[[am:ááá áá¨á­áá­áµ]]
+[[ar:ÙÙØ²ÙÙØ§ ÙÙØ±ÙÙØ³]]
+[[ast:Mozilla Firefox]]
+[[az:Mozilla Firefox]]
+[[bn:à¦®à§à¦à¦¿à¦²à¦¾ à¦«à¦¾à¦¯à¦¼à¦¾à¦°à¦«à¦à§à¦¸]]
+[[zh-min-nan:Mozilla Firefox]]
+[[be:Mozilla Firefox]]
+[[be-x-old:Mozilla Firefox]]
+[[bs:Mozilla Firefox]]
+[[br:Mozilla Firefox]]
+[[bg:Mozilla Firefox]]
+[[ca:Mozilla Firefox]]
+[[cv:Mozilla Firefox]]
+[[cs:Mozilla Firefox]]
+[[cy:Mozilla Firefox]]
+[[da:Mozilla Firefox]]
+[[de:Mozilla Firefox]]
+[[dsb:Mozilla Firefox]]
+[[et:Mozilla Firefox]]
+[[el:Mozilla Firefox]]
+[[es:Mozilla Firefox]]
+[[eo:Mozilla Firefox]]
+[[eu:Mozilla Firefox]]
+[[fa:ÙØ§ÛØ±ÙØ§Ú©Ø³ ÙÙØ²ÛÙØ§]]
+[[fo:Mozilla Firefox]]
+[[fr:Mozilla Firefox]]
+[[fy:Mozilla Firefox]]
+[[fur:Mozilla Firefox]]
+[[ga:Mozilla Firefox]]
+[[gd:Firefox]]
+[[gl:Mozilla Firefox]]
+[[ko:ëª¨ì§ë¼ íì´ì´í­ì¤]]
+[[hy:ÕÕ¸Õ¦Õ«Õ¬Õ¡ ÕÕ¡ÕµÖÖÕ¸ÖÕ½]]
+[[hi:à¤®à¥à¤à¤¼à¤¿à¤²à¤¾ à¤«à¤¾à¤¯à¤°à¤«à¥à¤à¥à¤¸]]
+[[hsb:Mozilla Firefox]]
+[[hr:Mozilla Firefox]]
+[[ilo:Mozilla Firefox]]
+[[id:Mozilla Firefox]]
+[[ia:Mozilla Firefox]]
+[[os:Mozilla Firefox]]
+[[is:Mozilla Firefox]]
+[[it:Mozilla Firefox]]
+[[he:×××××× ×¤×××¨×¤××§×¡]]
+[[jv:Mozilla Firefox]]
+[[kn:à²®à³à²à²¿à²²à³à²²à²¾ à²«à³à²°à³âà²«à²¾à²à³à²¸à³]]
+[[ka:Mozilla Firefox]]
+[[csb:Mozilla Firefox]]
+[[kk:Mozilla Firefox]]
+[[ku:Mozilla Firefox]]
+[[lad:Mozilla Firefox]]
+[[la:Mozilla Firefox]]
+[[lv:Mozilla Firefox]]
+[[lb:Mozilla Firefox]]
+[[lt:Mozilla Firefox]]
+[[lmo:Mozilla Firefox]]
+[[hu:Mozilla Firefox]]
+[[mk:Mozilla Firefox]]
+[[mg:Mozilla Firefox]]
+[[ml:à´®àµà´¸à´¿à´²àµà´² à´«à´¯àµ¼à´«àµà´àµà´¸àµ]]
+[[mr:à¤®à¥à¤à¤¿à¤²à¤¾ à¤«à¤¾à¤¯à¤°à¤«à¥à¤à¥à¤¸]]
+[[ms:Mozilla Firefox]]
+[[nl:Mozilla Firefox]]
+[[ja:Mozilla Firefox]]
+[[no:Mozilla Firefox]]
+[[nn:Mozilla Firefox]]
+[[oc:Mozilla Firefox]]
+[[om:Firefox]]
+[[uz:Mozilla Firefox]]
+[[pl:Mozilla Firefox]]
+[[pt:Mozilla Firefox]]
+[[ro:Mozilla Firefox]]
+[[ru:Mozilla Firefox]]
+[[sq:Mozilla Firefox]]
+[[si:à¶¸à·à·à·à¶½à·à¶½à· à·à¶ºà¶»à·à·à·à¶à·à·à·]]
+[[simple:Mozilla Firefox]]
+[[sk:Mozilla Firefox]]
+[[sl:Mozilla Firefox]]
+[[so:Firefox]]
+[[ckb:ÙØ§ÛÛØ±ÙÛÚ©Ø³]]
+[[sr:ÐÐ¾Ð·Ð¸Ð»Ð° ÑÐ°ÑÐµÑÑÐ¾ÐºÑ]]
+[[sh:Mozilla Firefox]]
+[[su:Mozilla Firefox]]
+[[fi:Mozilla Firefox]]
+[[sv:Mozilla Firefox]]
+[[tl:Mozilla Firefox]]
+[[ta:à®à®ªà®¯à®°à¯ à®à®ªà®¾à®à¯à®à¯]]
+[[kab:Firefox]]
+[[tt:Mozilla Firefox]]
+[[th:à¸¡à¸­à¸à¸´à¸¥à¸¥à¸² à¹à¸à¸£à¹à¸à¸­à¸à¸à¹]]
+[[tg:Mozilla Firefox]]
+[[tr:Mozilla Firefox]]
+[[uk:Mozilla Firefox]]
+[[vec:Mozilla Firefox]]
+[[vi:Mozilla Firefox]]
+[[yi:Mozilla Firefox]]
+[[zh-yue:Mozilla Firefox]]
+[[diq:Mozilla Firefox]]
+[[bat-smg:Mozilla Firefox]]
+[[zh:Mozilla Firefox]]</rev></revisions></page></pages></query></api>

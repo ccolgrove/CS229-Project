@@ -1,0 +1,425 @@
+<?xml version="1.0"?><api><query><pages><page pageid="1173541" ns="0" title="Runlevel"><revisions><rev xml:space="preserve">{{Refimprove|date=August 2010}}
+
+The term '''''runlevel''''' refers to a mode of operation in one of the computer [[operating system]]s that implement Unix [[System V]]-style [[init]]ialization.   Conventionally, seven runlevels exist, numbered from zero to six; though up to ten, from zero to nine{{Citation needed|date=August 2011}}, may be used.''' S''' is sometimes used as a synonym for one of the levels. Only one &quot;runlevel&quot; is executed on bootup - run levels are '''''not''''' executed sequentially, i.e. either runlevel 2 OR 3 OR 4 is executed, '''''not''''' 2 then 3 then 4.
+
+&quot;Runlevel&quot; defines the state of the machine after boot. Different runlevels are typically assigned to:
+
+* [[single-user mode]]
+* multi-user mode without network services started
+* multi-user mode with network services started
+* system shutdown
+* system reboot
+
+The exact setup of these configurations will vary from OS to OS, and from one Linux distribution to another. Example, runlevel 4 might be multi-user, GUI, no-server on one distribution, and nothing on another. Note the difference in the Red Hat and Slackware distributions charted in this article. However, &quot;runlevels&quot; do commonly follow patterns described in this article. When installing Linux, it is best to consult that distribution's available user guides.
+
+In standard practice, when a computer enters runlevel zero, it halts, and when it enters runlevel six, it reboots. The intermediate runlevels (1-5) differ in terms of which drives are mounted, and which network services are started.   Default runlevels are typically 3, 4, or 5. Lower run levels are useful for maintenance or emergency repairs, since they usually don't offer any network services at all.  The particular details of runlevel configuration differ widely among operating systems, and also among system administrators.
+
+The runlevel system replaced the traditional &lt;tt&gt;/etc/rc&lt;/tt&gt; script used in [[Version 7 Unix]].
+
+==Standard runlevels==
+{| class=&quot;wikitable&quot;
+|+Standard runlevels
+|-
+!ID
+!Name
+!Description
+|-
+|'''0'''
+|Halt
+|Shuts down the system.
+|-
+|'''S'''
+|[[Single user mode|Single-User Mode]]
+|Does not configure [[network interface]]s or start [[daemon (computer software)|daemons]].{{ref|runlevel_S_as_1}}
+|-
+|'''6'''
+|Reboot
+|Reboots the system.
+|}
+
+&lt;small&gt;{{note|runlevel_S_as_1}} = Almost all systems use runlevel 1 for this purpose.  This mode is intended to provide a safe environment to perform system maintenance.  Originally this runlevel provided a single terminal (console) interface running a [[superuser|root]] login [[operating system shell|shell]].  The increasing trend towards physical access to the computer during the [[booting|boot]] process has led to changes in this area.&lt;/small&gt;
+
+== Linux ==
+The [[Linux]] operating system can make use of runlevels through the programs of the [[sysvinit]] project.  After the [[Linux kernel]] has booted, the &lt;tt&gt;init&lt;/tt&gt; program reads the &lt;tt&gt;/etc/inittab&lt;/tt&gt; file to determine the behavior for each runlevel.  Unless the user specifies another value as a [[kernel boot parameter]], the system will attempt to enter (start) the default runlevel.
+
+===Typical Linux runlevels===
+Major [[Linux distribution]]s agreed to define the following runlevels as part of the [[Linux Standard Base]] specification&lt;ref&gt;{{cite web | url = http://refspecs.freestandards.org/LSB_4.1.0/LSB-Core-generic/LSB-Core-generic/runlevels.html | title = Chapter 20. System Initialization 20.5. Run Levels | work = Linux Standard Base Core Specification 4.1 | year = 2011 | accessdate = 2011-04-21}}&lt;/ref&gt;:
+
+{| class=&quot;wikitable&quot;
+|+Typical Linux runlevels
+|-
+!ID
+!Name
+!Description
+|-
+|'''0'''
+|Halt
+|Shuts down the system.
+|-
+|'''1'''
+|Single-User Mode
+|Mode for administrative tasks.&lt;ref&gt;{{cite web | url = http://refspecs.freestandards.org/LSB_4.1.0/LSB-Core-generic/LSB-Core-generic/shutdown.html | title = Chapter 15. Commands and Utilities 15.2. Command Behavior | work = Linux Standard Base Core Specification 4.1 | year = 2011 | accessdate = 2011-04-21}}&lt;/ref&gt;{{ref|behavour_of_runlevel_1}}
+|-
+|'''2'''
+|Multi-User Mode
+|Does not configure network interfaces and does not export networks services.{{ref|behavour_of_runlevel_23}}
+|-
+|'''3'''
+|Multi-User Mode with Networking
+|Starts the system normally.{{ref|behavior_of_runlevel_23|noid=noid}}
+|-
+|'''4'''
+|Not used/User-definable
+|For special purposes.
+|-
+|'''5'''
+|Start the system normally with appropriate display manager.  ( with GUI )
+|As runlevel 3 + [[X display manager (program type)|display manager]].
+|-
+|'''6'''
+|Reboot
+|Reboots the system.
+|}
+
+&lt;small&gt;{{note|behavour_of_runlevel_1}} = The additional behavior of this runlevel varies greatly.  All distributions provide at least one virtual terminal.  Some distributions start a login shell as the [[superuser]]; some require correctly entering the superuser's password first; others provide a login prompt, allowing any user access.&lt;/small&gt;
+
+&lt;small&gt;{{note|behavour_of_runlevel_23}} = In some cases, runlevels 2 and 3 function identically; offering a Multi-User Mode with Networking.&lt;/small&gt;
+
+===Debian Linux===
+[[Debian]], as well as most of the distributions based on it, like early Ubuntu, does not make any distinction between runlevels 2 to 5.
+
+{| class=&quot;wikitable&quot;
+|+Debian Linux runlevels
+|-
+!ID
+!Description
+|-
+|'''0'''
+|Halt
+|-
+|'''1'''
+|Single-User mode
+|-
+|'''2'''-'''5'''
+|Full Multi-User with console logins and display manager if installed
+|-
+|'''6'''
+|Reboot
+|}
+
+====Ubuntu====
+[[Ubuntu (operating system)|Ubuntu]] 6.10 (Edgy Eft) and later contain [[Upstart]] as a replacement for the traditional init-process, but they still use the traditional init scripts and Upstart's SysV-rc compatibility tools to start most services and emulate runlevels.
+
+===Red Hat Linux and Fedora===
+[[Red Hat]] as well as most of its derivatives (such as [[CentOS]]) uses runlevels like this &lt;ref name=&quot;Redhat runlevels&quot;&gt;[http://www.redhat.com/docs/en-US/Red_Hat_Enterprise_Linux/5.4/html/Installation_Guide/s1-boot-init-shutdown-sysv.html] Redhat runlevels&lt;/ref&gt; :
+
+{| class=&quot;wikitable&quot;
+|+Red Hat Linux/Fedora runlevels
+|-
+!ID
+!Description
+|-
+|'''0'''
+|Halt
+|-
+|'''1'''
+|Single-User mode
+|-
+|'''2'''
+|Multi-user mode console logins only (without networking)
+|-
+|'''3'''
+|Multi-User mode, console logins only
+|-
+|'''4'''
+|Not used/User-definable
+|-
+|'''5'''
+|Multi-User mode, with display manager as well as console logins (X11)
+|-
+|'''6'''
+|Reboot
+|}
+
+Which services are started in which runlevels can be managed with the '''chkconfig''' tool, which keeps its configuration settings under '''/etc/rc.d/'''. '''/sbin/chkconfig --list''' lists all the services controlled by chkconfig and whether they are on/off for each runlevel. Setting a service A controlled by chkconfig, for levels X, Y and Z is as simple as '''/sbin/chkconfig --level XYZ A on'''
+
+===SUSE Linux ===
+[[SUSE Linux|SUSE]] uses a similar setup to Red Hat:
+
+{| class=&quot;wikitable&quot;
+|+SUSE Linux runlevels
+|-
+!ID
+!Description
+|-
+|'''0'''
+|Halt
+|-
+|'''1''' or '''S'''
+|Single-User mode
+|-
+|'''2'''
+|Multi-User mode without networking
+|-
+|'''3'''
+|Multi-User mode, console logins only
+|-
+|'''4'''
+|Not used/User-definable
+|-
+|'''5'''
+|Multi-User mode with display manager
+|-
+|'''6'''
+|Reboot
+|}
+
+The services that run under a specific runlevel can be modified with YaST | System Services (runlevel) or with '''chkconfig''' command like the Red Hat based distributions.
+
+===Slackware Linux===
+[[Slackware Linux]] uses runlevel 1 for maintenance, as on other Linux distributions;  runlevels 2, 3 and 5 identically configured for a console (with all services active); and runlevel 4 adds the X Window System.
+
+{| class=&quot;wikitable&quot;
+|+Slackware Linux runlevels
+|-
+!ID
+!Description
+|-
+|'''0'''
+|Halt
+|-
+|'''1'''
+|Single-User mode
+|-
+|'''2'''
+|Unused but configured the same as runlevel 3
+|-
+|'''3'''
+|Multi-User mode without display manager
+|-
+|'''4'''
+|Multi-User mode with display manager
+|-
+|'''5'''
+|Unused but configured the same as runlevel 3
+|-
+|'''6'''
+|Reboot
+|}
+
+===Arch Linux&lt;ref name=&quot;arch_boot&quot;&gt;{{cite web
+| title = Arch Linux Runlevels
+| url = https://wiki.archlinux.org/index.php/Runlevels
+| accessdate = 2010-12-31}}&lt;/ref&gt;===
+{| class=&quot;wikitable&quot;
+|+[[Arch Linux]] runlevels
+|-
+!ID
+!Description
+|-
+|'''0'''
+|Halt
+|-
+|'''1'''
+|Single-User (Maintenance Mode)
+|-
+|'''2'''
+|Not used
+|-
+|'''3'''
+|Multi-User
+|-
+|'''4'''
+|Not used
+|-
+|'''5'''
+|Multi-User with X11
+|-
+|'''6'''
+|Reboot
+|}
+
+===Gentoo Linux===
+{| class=&quot;wikitable&quot;
+|+[[Gentoo Linux]] runlevels
+|-
+!ID
+!Description
+|-
+|'''0'''
+|Halt
+|-
+|'''1''' or '''S'''
+|Single-User mode
+|-
+|'''2'''
+|Multi-User mode without networking
+|-
+|'''3'''
+|Multi-User mode
+|-
+|'''4'''
+|Aliased for runlevel '''3'''
+|-
+|'''5'''
+|Aliased for runlevel '''3'''
+|-
+|'''6'''
+|Reboot
+|}
+
+== Unix ==
+===System V Releases 3 and 4===
+{| class=&quot;wikitable&quot;
+|+[[System V]] runlevels
+|-
+!ID
+!Description
+|-
+|'''0'''
+|Shut down system, power-off if hardware supports it (only available from the console)
+|-
+|'''1'''
+|Single-User mode, all filesystems unmounted but root, all processes except console processes killed
+|-
+|'''2'''
+|Multi-User mode
+|-
+|'''3'''
+|Multi-User mode with [[Remote File System|RFS]] (and [[Network File System (protocol)|NFS]] in Release 4) filesystems exported
+|-
+|'''4'''
+|Multi-User, User-definable
+|-
+|'''5'''
+|Halt the operating system, go to firmware
+|-
+|'''6'''
+|Reboot
+|-
+|'''s''', '''S'''
+|Identical to '''1''', except current terminal acts as the system console
+|}
+
+===Solaris&lt;ref name=&quot;solaris_boot&quot;&gt;{{cite web
+| title = Solaris Boot Process
+| url = http://blogs.sun.com/boot/entry/amrita_sadhukhan
+| publisher = Amrita Sadhukhan ([[Sun Microsystems|Sun]])
+| accessdate = 2009-11-04}}&lt;/ref&gt;===
+{| class=&quot;wikitable&quot;
+|+[[Solaris operating system|Solaris]] runlevels
+|-
+!ID
+!Description
+|-
+|'''0'''
+|Operating system halted; ([[SPARC]] only) drop to [[Open Firmware|OpenBoot]] prompt
+|-
+|'''S'''
+|Single-User mode with only root filesystem mounted (as read-only)
+|-
+|'''1'''
+|Single-User mode with all local filesystems mounted (read-write)
+|-
+|'''2'''
+|Multi-User mode with most daemons started
+|-
+|'''3'''
+|Multi-User mode; identical to '''2''' (runlevel '''3''' runs both &lt;tt&gt;/sbin/rc2&lt;/tt&gt; and &lt;tt&gt;/sbin/rc3&lt;/tt&gt;), with filesystems exported, plus some other network services started.
+|-
+|'''4'''
+|Alternative Multi-User mode, User-definable
+|-
+|'''5'''
+|Shut down, power-off if hardware supports it
+|-
+|'''6'''
+|Reboot
+|}
+
+===HP-UX===
+{| class=&quot;wikitable&quot;
+|+[[HP-UX]] runlevels
+|-
+!ID
+!Description
+|-
+|'''0'''
+|System halted
+|-
+|'''S'''
+|Single-User mode, booted to system console only, with only root filesystem mounted (as read-only)
+|-
+|'''s'''
+|Single-User mode, identical to '''S''' except the current terminal acts as the system console
+|-
+|'''1'''
+|Single-User mode with local filesystems mounted (read-write)
+|-
+|'''2'''
+|Multi-User mode with most [[Daemon (computer software)|daemons]] started and [[Common Desktop Environment]] launched
+|-
+|'''3'''
+|Identical to runlevel '''2''' with NFS exported
+|-
+|'''4'''
+|Multi-User mode with [[VUE]] started instead of CDE
+|-
+|'''5''', '''6'''
+|Not used/User-definable
+|}
+
+===FreeBSD, OpenBSD and NetBSD===
+
+The BSD variants don't use the concept of run levels, although on some versions init(8) provides an emulation of some of the common run levels.
+
+===AIX===
+[[AIX operating system|AIX]] does not follow the [[System V]] R4 (SVR4) run level specification, with run levels from 0 to 9 available, as well as from a to c. 0 and 1 are reserved, 2 is the default normal multi-user mode and run levels from 3 to 9 are free to be defined by the administrator. Run levels from a to c allow the execution of processes in that run level without killing processes started in another.
+
+{| class=&quot;wikitable&quot;
+|+AIX runlevels
+|-
+!ID
+!Name
+!Description
+|-
+|0
+|
+|reserved
+|-
+|1
+|
+|reserved
+|-
+|2
+|Normal Multi-User mode
+|default mode
+|}
+
+==See also==
+*[[Init]]
+*[[Upstart]]
+*[[Pidof|Killall5]]
+
+==External links==
+*[http://www.linfo.org/runlevel_def.html Runlevel Definition] - by The Linux Information Project (LINFO)
+*[http://wiki.linuxquestions.org/wiki/Run_Levels What are run levels?] - LinuxQuestions.org
+
+==References==
+&lt;references/&gt;
+{{Reflist}}
+
+[[Category:Unix]]
+
+[[ar:ÙØ³ØªÙÙ ØªØ´ØºÙÙ]]
+[[de:Runlevel]]
+[[es:Nivel de ejecuciÃ³n]]
+[[fa:Ø³Ø·Ø­ Ø§Ø¬Ø±Ø§]]
+[[fr:Run level]]
+[[it:Runlevel]]
+[[ml:à´±àµºà´²àµà´µàµ½]]
+[[ja:ã©ã³ã¬ãã«]]
+[[pt:Runlevel]]
+[[ru:Ð£ÑÐ¾Ð²ÐµÐ½Ñ Ð²ÑÐ¿Ð¾Ð»Ð½ÐµÐ½Ð¸Ñ]]
+[[uk:Ð ÑÐ²ÐµÐ½Ñ Ð²Ð¸ÐºÐ¾Ð½Ð°Ð½Ð½Ñ]]
+[[zh:è¿è¡çº§å«]]</rev></revisions></page></pages></query></api>

@@ -1,0 +1,83 @@
+<?xml version="1.0"?><api><query><pages><page pageid="18287478" ns="0" title="Rsyslog"><revisions><rev xml:space="preserve">{{Technical|date=July 2008}}
+{{Infobox software
+| name                    = Rsyslog
+| logo                    =
+| screenshot              =
+| caption                 =
+| collapsible             =
+| author                  = Rainer Gerhards
+| developer               =
+| released                = &lt;!-- {{Start date|YYYY|MM|DD}} --&gt;
+| discontinued            =
+| latest release version  = 5.8.2
+| latest release date     = {{Start date and age|2011|06|21}}
+| latest preview version  = 6.1.2
+| latest preview date     = {{Start date and age|2010|12|16}}
+| frequently updated      =
+| programming language    = [[C (programming language)|C]]
+| operating system        = [[Unix-like]]
+| platform                =
+| size                    =
+| language                =
+| status                  =
+| genre                   = System logging
+| license                 = [[GNU General Public License]] v3
+| website                 = http://www.rsyslog.com/
+}}
+'''Rsyslog''' is an [[open source]] software utility used on [[UNIX]] and [[Unix-like]] computer systems for forwarding [[Data logging|log messages]] in an [[Internet Protocol|IP]] [[Computer Network|network]]. It implements the basic [[syslog]] protocol, extends it with content-based filtering, rich filtering capabilities, flexible configuration options and adds important features such as using [[Transmission Control Protocol|TCP]] for transport.
+
+== Protocol ==
+Rsyslog uses the quasi-standard [[BSD]] syslog protocol, specified in [[Request for Comments|RFC]] 3164. As the text of RFC 3164 is just a vague informational description and not a standard, various incompatible extensions of it emerged. Rsyslog supports many of these extensions. The format of relayed messages can be customized.
+
+The most important extensions of the original protocol supported by rsyslog are:
+* [[ISO 8601]] timestamp with millisecond granularity and timezone information
+* the addition of the name of relays in the host fields to make it possible to track the path a given message has traversed
+* reliable transport using [[Transmission Control Protocol|TCP]]
+* support [[Generic Security Services Application Program Interface|GSS-API]] and [[Transport Layer Security|TLS]]
+* logging directly into various database engines.
+* support for the upcoming new IETF syslog RFC series
+* support for buffered operation modes where messages are buffered locally if the receiver is not ready
+
+== History ==
+The rsyslog project began in 2004, when [[Rainer Gerhards]], the primary author of rsyslog, decided to write a new strong syslog daemon to compete with [[syslog-ng]], because; and according to the author &quot;A new major player will prevent monocultures and provide a rich freedom of choice.&quot;&lt;ref&gt;{{cite web |url=http://blog.gerhards.net/2007/08/why-does-world-need-another-syslogd.html |title=Why does the world need another syslog?|date=August 12, 2007|accessdate=June 7, 2009}}&lt;/ref&gt;
+Rainer Gerhards worked on rsyslog inside his own society, Adiscon GmbH.
+
+== Distributions ==
+rsyslog is available for a number of Unix systems and Linux distributions, among others:&lt;ref&gt;{{cite web |url=http://wiki.rsyslog.com/index.php/Platforms| title=Platforms|accessdate=June 7, 2009}}&lt;/ref&gt;
+* [[Fedora (operating system)|Fedora]] (In November 2007, rsyslog has become the default syslogd for the Fedora project) Fedora was the first major distribution to adopt this software.  
+* [[openSUSE]] (default since 11.2; November 2009)
+* [[Debian|Debian GNU/Linux]] (As of Debian 5.0, rsyslog has become the default syslog&lt;ref&gt;{{cite web |url=http://www.debian.org/releases/lenny/i386/release-notes/ch-whats-new.en.html#system-changes |title=Debian 5.0 release notes |date=February 14, 2009 |accessdate=February 16, 2009 |quote=The package rsyslog takes over as default system and kernel logging daemon for Debian 5.0, replacing syslogd and klogd.}}&lt;/ref&gt;)
+* [[Ubuntu (operating system)|Ubuntu]]
+* [[Red Hat Enterprise Linux]] (from RHEL 5)
+* [[Solaris (operating system)|Solaris]]
+* [[FreeBSD]]
+* [[OpenBSD]]
+* [[Gentoo Linux|Gentoo]]
+
+== Related RFCs and working groups ==
+
+* RFC 3164 - The BSD syslog Protocol (obsoleted by RFC 5424)
+* RFC 5424 - The Syslog Protocol (obsoletes RFC 3164)
+* RFC 5425 - Transport Layer Security Mapping for Syslog
+* RFC 5426 - Transmission of Syslog Messages over UDP
+
+==References==
+&lt;references/&gt;
+
+== See also ==
+* [[Syslog-ng]]
+
+==External links==
+{{Portal|Free software}}
+* [http://www.rsyslog.com/ Official website]
+* [http://loganalyzer.adiscon.com/ Web Interface for rsyslog]
+* [http://www.apsolab.com/ Web Interface for rsyslog (with alerts, etc.)]
+* {{Freshmeat|rsyslog}}
+
+[[Category:Internet protocols]]
+[[Category:Internet standards]]
+[[Category:System administration]]
+[[Category:Network management]]
+[[Category:Free network-related software]]
+
+[[de:Rsyslog]]</rev></revisions></page></pages></query></api>

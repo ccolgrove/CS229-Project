@@ -1,0 +1,89 @@
+<?xml version="1.0"?><api><query><redirects><r from="WinRT" to="Windows Runtime" /></redirects><pages><page pageid="33104533" ns="0" title="Windows Runtime"><revisions><rev xml:space="preserve">'''Windows Runtime''', or '''WinRT''', is [[Microsoft]]'s new [[programming model]] that makes the backbone of the new [[Metro (design language)|Metro]] experience (also known as ''Immersive'') in their new [[Windows 8]] operating system.
+&lt;ref&gt;{{cite web | url=http://www.infoq.com/news/2011/09/Design-Details-Windows-Runtime | title=Design Details of the Windows Runtime | author=Abel Avram | date=21 September 2011 | work=InfoQ}}&lt;/ref&gt;&lt;ref&gt;{{cite web | url=http://www.anandtech.com/show/4771/microsoft-build-windows-8-pre-beta-preview/5 | title=Microsoft BUILD: Windows 8, A Pre-Beta Preview | author=Brian Klug &amp; Ryan Smith | date=13 September 2011 | work=[[AnandTech]]}}&lt;/ref&gt;&lt;ref&gt;{{cite web | url=http://www.winsupersite.com/blog/supersite-blog-39/windows8/winrt-replacing-win32-140605 | title=WinRT is Replacing Win32 | author=[[Paul Thurrott]] | date=15 September 2011 | work=Paul Thurrott's supersite for Windows}}&lt;/ref&gt;
+
+The WinRT application model was designed to make interfacing between languages and platforms easy and seamless.
+
+It consists of an execution interface as well as a collection of [[API]]s that give access to the functionality provided by Windows 8.
+
+WinRT was revealed at the Microsoft BUILD-conference September 12th, 2011.
+
+== History ==
+
+== Technology ==
+
+WinRT is designed to create a completely new programming paradigm that is not encumbered with legacy code. WinRT applications will install in seconds and run within a sandbox. Microsoft claims WinRT is a [[native]] runtime system that is implemented directly on the [[Windows NT]]-kernel and thus not based on previous platforms. However, examination of the runtime libraries reveal that they actually are built upon [[Win32]] [[API]].&lt;ref&gt;{{ cite web | title=WinRT and .NET in Windows 8 (Paragraph 5) | url=http://blogs.microsoft.co.il/blogs/sasha/archive/2011/09/15/winrt-and-net-in-windows-8.aspx }}&lt;/ref&gt; This is the same approach used by the [[.NET Framework|.NET]].{{Cn|date=October 2011}}
+
+== Services ==
+=== Metadata ===
+:''See also [[.NET metadata]]''
+
+The metadata describes the code written for the WinRT platform. It defines a [[programming model]] that makes it possible to write [[object-oriented]] that can be shared across [[programming languages]]. It also enables services like [[Reflection (programming)|reflection]].
+
+[[Herb Sutter]], [[C++]] expert at [[Microsoft]], told during his session on C++ at the BUILD-conference that the WinRT metadata is [[.NET metadata]].&lt;ref&gt;http://channel9.msdn.com/Events/BUILD/BUILD2011/TOOL-532T&lt;/ref&gt;. Native code (processor specific) cannot contain metadata and it is then stored in separate WINMD-files that can be reflected just like ordinary [[.NET assembly|.NET assemblies]].&lt;ref&gt;http://www.ciprianjichici.ro/blog/post/NET-Gets-a-New-Lease-of-Life.aspx&lt;/ref&gt;
+
+Because it is .NET metadata the programmer can then use code written in native  WinRT-languages from managed [[.NET languages]].
+
+=== Type system ===
+WinRT has a rich [[object-oriented]] [[Class (computer programming)|class]]-based [[type system]] that is built on the metadata. It supports constructs with corresponding constructs that are found in the .NET framework: [[Class (computer programming)|classes]], [[method]]s, [[properties]], [[Delegation_(programming)|delegate]]s and [[Event_(computing)|event]]s.
+
+==== WinRT components ====
+Classes that are compiled to target the WinRT are called ''WinRT components''. They are classes that can be written in any supported language and for any supported platform. The key is the metadata. This metadata makes it possible to interface with the component from any other WinRT language.  The runtime requires WinRT components that are built with .NET Framework to use the defined interface types or .NET type interfaces, which automatically map to the first named.  Inheritance is as yet not supported in managed WinRT components, except for XAML classes. &lt;ref&gt;http://channel9.msdn.com/Events/BUILD/BUILD2011/TOOL-531T&lt;/ref&gt;
+
+=== Programming interfaces ===
+Programs and libraries targeted for the WinRT runtime can be created and consumed from a number of platforms and programming languages. Notably [[C (programming language)|C]]/[[C++]] (either with language extensions offering first-class support for WinRT concepts, or with a lower-level template library allowing to write code in standard C++), .NET ([[C Sharp (programming language)|C#]] and [[Visual Basic .NET|VB.NET]]) and [[JavaScript]]. This is made possible by the metadata.
+
+A language interface (or binding) is also referred to as a ''language projection''.
+
+==== C/C++ ====
+:''See also: [[C++]]''
+
+Native C++ is a first-class citizen of the WinRT-platform.
+
+The language has a number of extensions that enable integration with the platform and its type system. The syntax resembles the one of [[C++/CLI]] although it produces native code and metadata that integrates with the runtime via [[Component_Object_Model|COM]]. The extensions also enable reference counting.
+
+WinRT is a native platform and supports any native C++ code. A C++ developer can reuse existing native C/C++ libraries with the only need to use the language extensions when writing code that is interfacing with the runtime.
+
+==== .NET ====
+:''See also: [[.NET Framework]]''
+
+The [[.NET Framework]] and the [[Common Language Runtime]] (CLR) is integrated into the WinRT as a subplatform. It also has influenced and set the standards for the ecosystem through the metadata format and libraries. The CLR provides services like [[JIT-compilation]] code and [[Garbage collection (computer science)|garbage collection]].
+
+WinRT supports XAML-based .NET Metro-style applications which are primarily written in [[C Sharp (programming language)|C#]] and VB.NET. Although not yet officially supported, programs can also be written in other .NET languages.
+
+'''Limitations'''&lt;br/&gt;
+Classes defined in WinRT components that are built in managed .NET languages must be declared as &lt;code&gt;sealed&lt;/code&gt; to not be able to be derived from as a limitation. However, non-sealed WinRT classes defined elsewhere can be inherited from in .NET, their virtual methods overriden, and so on (but the inherited managed class must still be sealed).
+
+Members that interfaces with other language must have a signature with WinRT types or a managed type that is convertible to these. &lt;ref&gt;http://channel9.msdn.com/Events/BUILD/BUILD2011/TOOL-531T&lt;/ref&gt;
+
+==== JavaScript ====
+:''See also: [[JavaScript]]''
+
+[[Microsoft]] initially announced that [[HTML5]] and JavaScript would be integrated as part of the development experience for [[Windows 8]]. The &quot;Chakra&quot; JavaScript engine which was developed for [[Internet Explorer 9]] integrates with WinRT. That makes JavaScript a first-class citizen in the WinRT ecosystem.
+
+The JavaScript environment does some tricks under the hood. It adapts WinRT features to follow the JavaScript naming conventions to make the developer get the same experience as on the [[Web]]-platform. Namespaces are mapped to JavaScript objects and some special members are also added in some cases to make the developer experience similar to any web scenario.
+
+[[Metro (design language)|Metro]] interfaces can be built with HTML5 and [[CSS]] and JavaScript in [[code-behind]].
+
+The current version is JavaScript 5.
+
+=== API ===
+WinRT comes with an [[Application Programming Interface]] (API) in the form of a [[class library]] that exposes the features of Windows 8 for the developer, like the Metro interface API. It is accessible and consumable from any supported language.
+
+==== Windows classes ====
+The Windows classes are native C/C++ libraries (unmanaged) that are exposed by the WinRT. They provide access to all functionality from [[XAML]] parser to the camera function.
+
+==== Naming conventions ====
+The naming convetions for the components (classes and other members) in the API are heavily influenced by the .NET naming conventions which uses [[CamelCase|camel case]]. Microsoft recommends users to follow these rules in case where no others are given.
+
+These conventions are projected differently in some languages, like JavaScript, which converts it to its conventions and the other way around. This is to give a native and consistent experience regardless of the programming language.
+
+== References ==
+{{reflist}}
+
+== External links ==
+* [http://msdn.microsoft.com/en-us/library/windows/apps/hh464942(v=VS.85).aspx WinRT documentation (preview)] at [http://msdn.microsoft.com/en-us/windows/apps Windows Dev Center]
+
+[[Category:Microsoft Windows]]
+
+[[de:Windows Runtime]]
+[[uk:Windows RunTime]]</rev></revisions></page></pages></query></api>

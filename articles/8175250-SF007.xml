@@ -1,0 +1,139 @@
+<?xml version="1.0"?><api><query><pages><page pageid="8175250" ns="0" title="VMware Workstation"><revisions><rev xml:space="preserve">{{linkrot|date=September 2011}}
+{{Infobox software
+| name = VMware Workstation
+| logo = [[Image:VMware Workstation 6 logo.png|40px|VMware Workstation Logo]]
+| screenshot = [[Image:VMware Workstation.png|260px]]
+| caption = VMware Workstation running [[Ubuntu (operating system)|Ubuntu]] under Windows
+| collapsible =
+| author =
+| developer = [[VMware|VMware, Inc.]]
+| released = 1999&lt;ref&gt;http://ieeexplore.ieee.org//xpls/abs_all.jsp?arnumber=5492950&lt;/ref&gt;
+| latest release version = 8.0.1&lt;ref&gt;http://downloads.vmware.com/d/info/desktop_end_user_computing/vmware_workstation/8_0&lt;/ref&gt;
+| latest release date = {{release date|2011|11|17}}&lt;ref&gt;http://www.vmware.com/support/ws80/doc/releasenotes_workstation_801.html&lt;/ref&gt;
+| latest preview version =
+| latest preview date =
+| frequently updated =
+| programming language =
+| operating system = [[Microsoft Windows]] &lt;br&gt; [[Linux]]
+| platform = [[x86-64]]-compatible
+| size =
+| language = English
+| status = Active
+| genre = [[Virtual machine]]
+| license = [[Commercial software|Commercial]], [[Proprietary software|Proprietary]]
+| website = http://www.vmware.com/products/ws/
+}}
+[[Image:VMware Workstation - Snapshot Manager.png|thumb|right|200px|The Snapshot Manager in VMware Workstation 6]]
+'''VMware Workstation''' is a [[virtual machine]] software suite for [[x86]] and [[x86-64]] computers from [[VMware]], a division of [[EMC Corporation]], which allows users to set up multiple x86 and x86-64 virtual machines (VMs) and use one or more of these virtual machines simultaneously with the hosting [[operating system]]. Each virtual machine instance can execute its own guest operating system, including [[Microsoft Windows|Windows]], [[Linux]], [[BSD|BSD variants]], and others. In simple terms, VMware Workstation allows one physical machine to run multiple operating systems simultaneously, whereas other VMware products help manage or migrate VMware virtual machines across multiple physical host machines. Workstation is sold and developed by VMware; [[VMware Player]] is a similar program with fewer features supplied free of charge.
+
+VMware Workstation supports [[bridging (networking)|bridging]] to existing host [[network card|network adapters]], [[CD-ROM]] devices, [[hard disk]] drives, and [[Universal Serial Bus|USB]] devices (including USB Isochronous devices such as [[webcam]]s, microphones etc.), and provides the ability to simulate some hardware. For example, it can [[mount (computing)|mount]] an [[ISO image|ISO]] file as a CD-ROM, and [[.vmdk]] files as hard disks,  and can configure its network adapter driver to use [[network address translation]] (NAT) through the host machine rather than bridging through it (which would require an IP address for each guest machine on the host network).
+
+Multiple successive snapshots of an operating system running under VMware Workstation can be taken&lt;ref&gt;[http://blogs.techrepublic.com.com/virtualization-coach/?p=143 Snapshots in VMware Workstation]&lt;/ref&gt;, and the virtual machine can be restarted in the state it was in when any snapshot was saved.
+
+VMware Workstation includes the ability to designate multiple virtual machines as a team which administrators can then power on and off, suspend, and resume as a single object, making it particularly useful for testing client-server environments.
+
+==Version history==
+Major releases:
+* 2001-11-01 - VMware releases Workstation 3.0.
+* 2002-04-09 - Workstation 3.1 is released at Microsoft Tech-Ed 2002&lt;ref&gt;{{Cite press release |title=VMware Unveils VMware Workstation 3.1 at Microsoft TechÂ·Ed 2002 |url=http://www.vmware.com/company/news/releases/ws31.html |publisher=VMware |date=2002-04-09 |accessdate=2007-11-03}}&lt;/ref&gt;
+* 2003-03-23 - Workstation version 4.0 is released.&lt;ref&gt;{{Cite press release |title=VMware Announces Fourth Generation of Desktop Virtualization Software |url=http://www.vmware.com/company/news/releases/ws4_announce.html |publisher=VMware |date=2003-03-23 |accessdate=2007-11-03}}&lt;/ref&gt;
+* 2004-04-05 - VMware announces the release of Workstation version 4.5.&lt;ref&gt;{{Cite press release |title=VMware Announces New Release of Award-winning Desktop Virtualization Software |url=http://www.vmware.com/company/news/releases/ws45.html |publisher=VMware |date=2004-04-05 |accessdate=2007-11-03}}&lt;/ref&gt;
+* 2005-04-11 - Workstation version 5.0 is released.&lt;ref&gt;{{Cite press release |title=VMware Unveils Fifth Generation of Powerful Desktop Virtualization Software |url=http://www.vmware.com/company/news/releases/ws5.html |publisher=VMware |date=2005-04-11 |accessdate=2007-11-03}}&lt;/ref&gt;
+* 2005-09-12 - VMware updates Workstation to version 5.5.&lt;ref&gt;{{Cite press release |title=VMware Introduces New Release of Its Powerful Desktop Virtualization Software |url=http://www.vmware.com/company/news/releases/ws55_beta.html |publisher=VMware |date=2005-09-12 |accessdate=2007-11-03}}&lt;/ref&gt;
+* 2007-05-09 - VMware releases Workstation version 6.0.&lt;ref&gt;{{cite press release |url=http://www.vmware.com/company/news/releases/050907ws6.html |date=2007-05-09 |accessdate=2007-09-20 |publisher=VMware, Inc. |title=VMware Announces Availability of Sixth Generation of Industry-Leading Desktop Virtualization Software}}&lt;/ref&gt;
+* 2008-09-23 - VMware releases Workstation version 6.5.0&lt;ref&gt;{{cite web|url=http://www.vmware.com/support/ws65/doc/releasenotes_ws65.html |title=VMware Workstation 6.5 Release Notes |publisher=Vmware.com |date= |accessdate=2011-01-02}}&lt;/ref&gt;
+* 2009-10-26 - VMware releases Workstation version 7&lt;ref&gt;{{cite web|url=http://blogs.vmware.com/workstation/2009/10/workstation-7-the-gold-standard-in-desktop-virtualization-now-available.html |title=VMware: VMware Workstation Zealot: Workstation 7 â The Gold Standard in Desktop Virtualization â Now Available! |publisher=Blogs.vmware.com |date= |accessdate=2011-01-02}}&lt;/ref&gt;
+* 2011-09-14 - VMware releases Workstation version 8&lt;ref&gt;{{cite web|url=http://blogs.vmware.com/workstation/2011/09/vmware-workstation-8-now-available-worldwide.html |title=VMware Workstation 8.0 Release Notes |publisher=Vmware.com |date= |accessdate=2011-10-24}}&lt;/ref&gt;
+
+==Known issues==
+Known limitations of VMware Workstation, {{As of|2009|alt=as of October, 2009}}, included the following:
+
+===Hardware support===
+* Workstation 8 is the first version that requires a [[x86-64]]-compatible CPU.&lt;ref&gt;{{cite web|url=http://www.vmware.com/support/ws80/doc/releasenotes_workstation_80.html#Installation_Requirements |title=VMware Workstation 8 Now Available Worldwide! |publisher=Vmware.com |date= |accessdate=2011-09-14}}&lt;/ref&gt;
+* VMware virtual machines do not directly support [[FireWire]].&lt;ref name=1394support&gt;{{cite web |url=http://www.vmware.com/community/message.jspa?messageID=390865 |title=Does 5.5 support Firewire. If not, is VMWare working on it. |publisher=VMTN |date=2006-04-27}}&lt;/ref&gt;
+* VMware Workstation v6.5 and older cannot use more than 2 CPUs (or cores) per virtual machine. This means that a single virtual machine cannot use the full power of the underlying hardware on machines with the total number of cores greater than 2 (such as Intel's Core 2 Quad or AMD's Phenom x4). Version 7.0 has support for up to 4 cores/CPUs. Version 7.1 has support for up to 8 cores/CPUs.
+* VMware Workstation version 5.5 provided only experimental support for [[3D computer graphics|3D]] [[hardware acceleration]], via [[Microsoft]]'s [[Direct3D]] 8 API.&lt;ref&gt;{{cite web |url=http://www.vmware.com/support/ws55/doc/ws_vidsound_d3d.html |title=Experimental Support for Direct3D |accessdate=2007-08-28}}&lt;/ref&gt;&lt;ref&gt;{{cite web |url=http://weblog.infoworld.com/virtualization/archives/2007/02/can_3d_graphics.html |title=Can 3D Graphics be Achieved on Virtualization? |accessdate=2007-08-28 |date=2007-02-10 |publisher=InfoWorld}}&lt;/ref&gt; A [http://www.youtube.com/watch?v=xF_CoXsXtk4 video] has appeared on [[YouTube]] that demonstrates several 3D-accelerated games running under VMware Fusion and Mac OS X. The release notes for Fusion beta 2 include a [http://www.vmware.com/products/beta/fusion/releasenotes_fusion.html#games list] of 3D-accelerated computer games that can run within Windows XP-based virtual machines. In version 6.5, Direct3D 9.0 API support (only up to Shader Model 2.0) is provided on Windows 2000 and Windows XP guests (although not [[Windows 9x]]) and on any host OS. Version 7 has support for Shader Model 3.0 and OpenGL 2.1 graphics. It can [http://www.youtube.com/watch?v=duWkk872yM0 run] [[Crysis]] at 14-18 frame/s at low settings. [[Windows Display Driver Model]] support (version 1.0) was introduced in version 7.0, allowing [[Windows Aero]] to run in virtualized [[Windows Vista]] and later Windows guests, but OpenGL is regressed to 1.4.
+* [[64-bit]] guest operating systems require a 64-bit processor and a BIOS compatible with [[x86 virtualization]].&lt;ref name=&quot;64bitGuests&quot;&gt;{{cite web|url=http://kb.vmware.com/selfservice/viewContent.do?externalId=1901 |title=Hardware and Firmware Requirements for 64-Bit Guest Operating Systems |publisher=Kb.vmware.com |date=2010-10-28 |accessdate=2011-01-02}}&lt;/ref&gt; Intel processors require [[x86 virtualization|Intel VT]] hardware virtualization technology as Intel 64-bit processors without hardware virtualization technology do not have segmentation support in [[long mode]].&lt;ref name=&quot;64bitGuests&quot;/&gt; Only [[AMD64]] processors of revision D or later can run 64-bit guests.&lt;ref name=&quot;64bitGuests&quot;/&gt;
+* When using VMware Workstation in an environment using [[Media Access Control]] (MAC) addresses as [[unique identifier]]s (UID), the MAC address for each virtual machine should (and often must) be configured manually in order to ensure uniqueness (for example, in an environment in which [[network switch]]es implement MAC security; or in an environment in which [[Altiris]] products use the MAC address as the UID). In such a situation, disabling all networks/adapters other than &quot;bridged&quot; and editing each virtual machine's .vmx file to change &quot;ethernet0.address&quot; to a unique MAC and &quot;ethernet0.addresstype&quot; to &quot;static&quot; will help.
+
+===OS-specific issues===
+64-bit Solaris 10 1/06 (Update 1) and Solaris 10 6/06 (Update 2) fail with a triple fault on Core 2 generation processors (this includes processors codenamed Merom, Woodcrest, and Conroe). A Sun Microsystems [http://blogs.sun.com/jim/entry/how_to_install_solaris_10 blog] has published a workaround for this issue.
+
+===Network protocols===
+VMware Workstation can swallow CPU [[interrupt]]s, making maintenance of accurate time difficult.&lt;ref name=vmw_timekeeping_wp&gt;{{cite web |title=Timekeeping in VMware Virtual Machines |url=http://www.vmware.com/pdf/vmware_timekeeping.pdf |format=PDF |date=2005-08-01 |accessdate=2007-09-26 |publisher=VMware}}&lt;/ref&gt; [[Network Time Protocol]] (NTP) servers should not be run under VMware.
+
+===Vulnerabilities===
+Vulnerabilities affecting VMWare products typically involve ways for users inside a Guest VM to become super-user, or allow Guests to execute code on the Host.
+
+Notable vulnerabilities of earlier versions include:
+* Kostya Kortchinsky of Immunity discovered a vulnerability in the 3d API allowing Guests to execute code on the Host.&lt;ref&gt;http://www.immunityinc.com/documentation/cloudburst-vista.html&lt;/ref&gt; Fixed in VMWare Workstation 6.5.2.
+* Rafal Wojtczvk of [[McAfee]] discovered a Guest-to-Host memory corruption vulnerability which might allow Guest users to run arbitrary code on the Host.&lt;ref&gt;{{cite web|url=http://cve.mitre.org/cgi-bin/cvename.cgi?name=2007-4496 |title=CVE - CVE-2007-4496 (under review) |publisher=Cve.mitre.org |date=2010-12-21 |accessdate=2011-01-02}}&lt;/ref&gt; While the [[Common Vulnerabilities and Exposures|CVE]] entry is still set to &quot;under review&quot;, the vulnerability was fixed in VMWare Player 2.01.&lt;ref&gt;{{cite web|url=http://www.vmware.com/support/player2/doc/releasenotes_player2.html |title=VMware Player Release Notes |publisher=Vmware.com |date=2008-08-28 |accessdate=2011-01-02}}&lt;/ref&gt;
+* Greg MacManus of iDefense Labs discovered a vulnerability in the Shared Folders implementation which allowed Guests to read/write host files (in a non-default configuration).&lt;ref&gt;{{cite web|url=http://labs.idefense.com/intelligence/vulnerabilities/display.php?id=521 |title=Public Advisory: 04.27.07 // iDefense Labs |publisher=Labs.idefense.com |date= |accessdate=2011-01-02}}&lt;/ref&gt; Fixed in VMWare Workstation 5.5.4.&lt;ref&gt;{{cite web|url=http://www.vmware.com/support/ws55/doc/releasenotes_ws55.html#bugfix554 |title=VMware Workstation 5.5 Release Notes |publisher=Vmware.com |date=2008-11-06 |accessdate=2011-01-02}}&lt;/ref&gt;
+* Core Security discovered that the Shared Folders patch did not correctly account for [[Unicode]] characters.&lt;ref&gt;{{cite web|url=http://www.coresecurity.com/content/advisory-vmware |title=Core Security Technologies |publisher=Coresecurity.com |date= |accessdate=2011-01-02}}&lt;/ref&gt; The Unicode traversal vulnerability was fixed in VMware Workstation 6.0.3.&lt;ref&gt;{{cite web|url=http://www.vmware.com/support/ws6/doc/releasenotes_ws6.html#bugfix603 |title=VMware Workstation 6 Release Notes |publisher=Vmware.com |date=2008-08-28 |accessdate=2011-01-02}}&lt;/ref&gt;
+
+==VMware ACE==
+VMware ACE ('''a'''ssured '''c'''omputing '''e'''nvironment)&lt;ref&gt;{{cite web|author=Currently Being Moderated |url=http://www.vmworld.com/docs/DOC-1773 |title=VMware ACE: The Assured Computing Environment for the Enterprise |publisher=VMworld.com |date= |accessdate=2011-01-02}}&lt;/ref&gt; is a feature that allows the deployment of virtual machines that end users can use on their work PC, personal computer, or even a portable USB media device (in the way of a [[portable application]]). In essence, VMware ACE allows the creation of [[portable application|portable]] [[virtual machine]]s.
+
+==VMware Tools==
+VMware Tools is a package with drivers and other software that can be installed in guest operating systems to increase their performance. It has several components, including the following:
+* Drivers for the emulated hardware:
+** VESA-compliant graphics for the guest machine to access high screen resolutions
+** Network drivers for the vmxnet2 and vmxnet3 [[Network card|NIC]]
+** [[Ensoniq AudioPCI]] audio
+** Mouse integration
+* Drag-and-drop file support
+* Clipboard sharing between host and guest
+* Time synchronization capabilities (guest syncs with host machine's clock)
+* Support for Unity, a feature that allows seamless integration of applications with the host desktop
+
+==Gallery==
+&lt;gallery&gt;
+Image:VMware Workstation booting a Virtual Machine.png|VMware Workstation booting a virtual machine
+Image:Boot Menu of VMware Workstation.png|Boot Menu of a VMware Workstation virtual machine
+Image:BIOS of VMware Workstation.png|The [[BIOS]] of a VMware Workstation virtual machine
+&lt;/gallery&gt;
+
+==Third-party resources==
+===Ready-to-use virtual machines===
+Many ready-made virtual machines (VMs) which run on VMWare Player, Workstation, and other virtualization software are available&lt;ref&gt;[http://www.vmware.com/appliances/directory/ Directory of VMs with 1539 entries as of 7 January 2011]&lt;/ref&gt; for specific purposes, either for purchase or free of charge; for example a free [[Linux]]-based &quot;browser appliance&quot; with the [[Firefox]] browser installed&lt;ref&gt;[http://www.vmware.com/appliances/directory/80 VMWare Browser Appliance page]&lt;/ref&gt; which can be used for safe Web browsing; if infected or damaged it can be discarded and replaced by a clean copy. The appliance can be configured to automatically reset itself after each use so personal information is not stored. VMs distributed legally only have freely distributable [[operating system]]s, as operating systems on VMs must be licensed; ready-to-use Microsoft Windows VMs, in particular, are not distributed, except for evaluation versions.
+
+===Other tools===
+* [http://www.powerwf.com PowerWF] - Provides a visual representation of VMware VIX scripts, converting them into workflows, or converting workflows into Powershell cmdlets and modules. VIX is VMware's addition to Microsoft's Powershell for automation of the VMware Player.
+
+==See also==
+* [[Comparison of platform virtual machines]]
+* [[List of VMware software]]
+* [[x86 virtualization]]
+* [[OS level virtualization]]
+* [[Virtuozzo|Parallels Virtuozzo Containers]]
+* [[iCore Virtual Accounts]]
+* [[FreeBSD jail|FreeBSD Jail]]
+* [[Solaris Zones|Solaris Containers]]
+* [[VirtualBox]]
+* [[Virtual disk image]]
+
+==References==
+{{Reflist|2}}
+
+==External links==
+* [http://www.vmware.com/products/ws/ VMware Workstation product page]
+* [http://store.vmware.com/servlet/ControllerServlet?Action=DisplayPage&amp;Env=BASE&amp;Locale=en_US&amp;SiteID=vmware&amp;id=ProductDetailsPage&amp;productID=165308800 Workstation at VMware Store]
+
+===Reviews===
+* [http://www.zdnet.co.uk/reviews/hosted-virtualisation/2009/12/14/vmware-workstation-7-39936973/ Review of VMware Workstation 7 at ZDNet UK, rated 9/10]
+* [http://www.v3.co.uk/v3/software/2255539/vmware-workstation-review Review of VMware Workstation 7 at V3, rated 4/5]
+
+{{DEFAULTSORT:Vmware Workstation}}
+[[Category:VMware]]
+[[Category:Virtualization software]]
+[[Category:Windows software]]
+[[Category:Proprietary cross-platform software]]
+[[Category:1998 software]]
+
+[[cs:VMware Workstation]]
+[[de:VMware Workstation]]
+[[id:VMware Workstation]]
+[[it:VMware Workstation]]
+[[pl:VMware Workstation]]
+[[ro:VMware Workstation]]
+[[ru:VMware Workstation]]</rev></revisions></page></pages></query></api>

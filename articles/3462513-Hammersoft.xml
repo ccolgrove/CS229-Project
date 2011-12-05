@@ -1,0 +1,86 @@
+<?xml version="1.0"?><api><query><pages><page pageid="3462513" ns="0" title="Radeon R520"><revisions><rev xml:space="preserve">{{Infobox GPU
+| name = ''Radeon X1000 Series''
+| codename = ''Fudo'' (R520)&lt;br /&gt;''Rodin'' (R580)
+| created = 2005-2006
+| entry = Radeon X1300, X1550, X1050
+| midrange = Radeon X1600, X1650
+| highend = Radeon X1800, X1900, X1950
+| d3dversion = 9.0c, Shader Model 3.0
+| predecessor = [[Radeon R420]]
+| successor = [[Radeon R600]]
+}}
+
+ATI's '''&quot;R520&quot;''' core (codenamed '''Fudo''') is the foundation for a line of [[DirectX]] 9.0c and [[OpenGL]] 2.0 3D accelerator X1000 [[video card]]s. It is ATI's first major architectural overhaul since the &quot;[[Radeon R300|R300]]&quot; core and is highly optimized for [[Shader Model]] 3.0. The '''[[Radeon]] X1000 series''' using the core was introduced on October 5, 2005, and competed primarily against nVidia's [[GeForce 7 Series|GeForce 7000 series]]. ATI released the successor to the R500 series with the [[Radeon R600|R600]] series on May 14, 2007. ATI does not provide official support for any ''X1000 series'' cards for [[Windows 7]].&lt;ref&gt;http://support.amd.com/us/gpudownload/windows/Legacy/Pages/radeonaiw_vista64.aspx?type=2.4.1&amp;product=2.4.1.3.7&amp;lang=English&lt;/ref&gt;
+
+==Architecture==
+The R520 core architecture is referred to by ATI as an &quot;Ultra [[Thread (computer science)|Threaded]] Dispatch Processor&quot;. This refers to ATI's plan to boost the efficiency of their core, instead of going with a brute force increase in the number of processing units. A central pixel shader &quot;dispatch unit&quot; breaks [[pixel shader|shaders]] down into threads (batches) of 16 pixels (4Ã4) and can track and distribute up to 128 threads per pixel &quot;quad&quot; (4 pipelines each). When one of the shader quads becomes idle, due to a completion of a task or waiting for other data, the dispatch engine will assign the quad with another task to do in the meantime, with the overall result being a greater utilization of the shader units, theoretically. With such a large number of threads per &quot;quad&quot;, ATI created a very large [[general purpose register]] array that is capable of multiple concurrent reads and writes and has a high-bandwidth connection to each shader array. This provides temporary storage necessary to keep the pipelines fed by having work available as much as possible. With chips such as RV530 and R580, where the number of shader units per pipeline triples, the efficiency of pixel shading drops off slightly because these shaders still have the same level of threading resources as the less endowed RV515 and R520.&lt;ref name=TechReportX1000series&gt;Wasson, Scott. [http://techreport.com/reviews/2005q4/radeon-x1000/index.x?pg=1 ATI's Radeon X1000 series graphics processors], Tech Report, October 5, 2005.&lt;/ref&gt;
+
+The next major change to the core is with its memory bus. [[Radeon R420|R420]] and R300 had nearly identical memory controller designs, with the former being a bug fixed release designed for higher clock speeds. R520, however, differs with its central controller (arbiter) that connects to the &quot;memory clients&quot;. Around the chip there are two 256-bit ring buses running at the same speed as the [[DRAM]] chips, but in opposite directions to reduce [[RAM latency|latency]]. Along these ring buses are 4 &quot;stop&quot; points where data exits the ring and going into or out of the memory chips. There is actually a fifth stop, one that is significantly less complex, designed for the [[PCI Express]] interface and video input. This design allows memory accesses to be far quicker though lower latency by virtue of the smaller distance the signals need to move through the GPU, and by increasing the number of banks per DRAM. Basically the chip can spread out memory requests faster and more directly to the RAM chips. ATI claims a 40% improvement in efficiency over older designs. Again, the smaller cores such as RV515 and RV530 receive cutbacks due to their smaller, less costly designs. RV530, for example, has two internal 128-bit buses instead. This generation has support for all recent memory types, including [[GDDR4]]. In addition to ring bus, each memory channel now has the granularity of 32-bits, which improves memory efficiency when performing small memory requests.&lt;ref name=TechReportX1000series /&gt;
+
+The vertex shader engines were already of the required [[Floating point|FP32]] precision in ATI's older products. Changes necessary for SM3.0 included longer instruction lengths, dynamic flow control instructions, with branches, loops and subroutines and a larger temporary register space. The pixel shader engines are actually quite similar in computational layout to their R420 counterparts, although they were heavily optimized and tweaked to reach high clock speeds on the 90&amp;nbsp;nm process. ATI has been working for years on a high-performance shader compiler in their driver for their older hardware, so staying with a similar basic design that is compatible offered obvious cost and time savings.&lt;ref name=TechReportX1000series /&gt;
+
+At the end of the pipeline, the texture addressing processors are now decoupled from pixel shader, so any unused texturing units can be dynamically allocated to pixels that need more texture layers. Other improvements include 4096x4096 texture support and ATI's 3Dc [[normal map]] compression sees an improvement in compression ratio for more specific situations.&lt;ref name=TechReportX1000series /&gt;
+
+The R5xx family introduced a more advanced onboard motion-video engine. Like the Radeon cards since the R100, the R5xx can offload almost the entire MPEG-1/2 video pipeline. The R5xx can also assist in Microsoft WMV9/[[VC-1]] and MPEG [[H.264]]/AVC decoding, by a combination of the 3D/pipeline's shader-units and the motion-video engine. Benchmarks show only a modest decrease in CPU-utilization for VC-1 and H.264 playback. 
+
+As is typical for an ATI video card release, a selection of real-time 3D demonstration programs were released at launch. ATI's development of their &quot;digital superstar&quot;, [[Ruby (character)|Ruby]], continued with a new demo named The Assassin. The demo showcased a highly complex environment, with [[High dynamic range rendering|high dynamic range lighting]] (HDR) and dynamic [[soft shadows]]. Ruby's latest nemesis, Cyn, was composed of 120,000 polygons.&lt;ref&gt;http://www.ati.com/designpartners/media/edudemos/RadeonX1k.html&lt;/ref&gt;
+
+The cards support dual-link [[Digital Visual Interface|DVI]] output and [[High-bandwidth Digital Content Protection|HDCP]]. However, using HDCP requires external ROM to be installed, which were not available for early models of the video cards. RV515, RV530, RV535 cores include 1 single and 1 double DVI link; R520, RV560, RV570, R580, R580+ cores include 2 double DVI links.
+
+AMD has released the final Radeon R5xx Acceleration document.&lt;ref&gt;Advanced Micro Devices, Inc. [http://www.x.org/docs/AMD/R5xx_Acceleration_v1.3.pdf Radeon R5xx Acceleration v. 1.3], X.org website, April 1, 2008.&lt;/ref&gt;
+
+==Variants==
+===X1300âX1550 series===
+This series is the budget solution of the X1000 series and is based on the RV515 core. The chips have 4 [[texture mapping unit|texture units]], 4 [[Render Output unit|ROPs]], 4 [[pixel shader]]s, and 2 [[vertex shader]]s, similar to the older [[Radeon R300|X300 - X600]] cards. These chips basically use 1 &quot;quad&quot; (referring to 4 pipelines) of a R520, whereas the faster boards use just more of these &quot;quads&quot;. For example, the X1800 uses 4 &quot;quads&quot;. This modular design allows ATI to build a &quot;top to bottom&quot; line-up using identical technology, saving research and development time and money. Because of its smaller design, these cards also offer lower power demands (30 watts), so they run cooler and can be used in smaller cases.&lt;ref name=TechReportX1000series /&gt;
+Eventually, ATI created the X1550, little more than an X1300 in disguise, and discontinued the X1300. The X1050 was based on the R300 core and was sold as an ultra-low-budget part.
+
+Early '''Mobility Radeon X1300''' to '''X1450''' are based around the RV515 core as well.&lt;ref&gt;[http://ati.amd.com/products/mobilityradeonx1300/specs.html Mobility Radeon X1300], ATI, accessed June 8, 2007.&lt;/ref&gt;&lt;ref&gt;[http://ati.amd.com/products/mobilityradeonx1350/specs.html Mobility Radeon X1350], ATI, accessed June 8, 2007.&lt;/ref&gt;&lt;ref&gt;[http://ati.amd.com/products/mobilityradeonx1400/specs.html Mobility Radeon X1400], ATI, accessed June 8, 2007.&lt;/ref&gt;&lt;ref&gt;[http://ati.amd.com/products/mobilityradeonx1450/specs.html Mobility Radeon X1450], ATI, accessed June 8, 2007.&lt;/ref&gt;
+
+Beginning in 2006, '''Radeon X1300''' and '''X1550''' products were shifted to the RV505 core, which had similar capabilities and features as the previous RV515 core, but was manufactured by [[Taiwan Semiconductor Manufacturing Corporation|TSMC]] using an 80nm process (reduced from the 90nm process of the RV515).&lt;ref&gt;[http://www.theinquirer.net/inquirer/news/1043030/amd-samples-80nm-rv505ce---finally The Inquirer, 16 November 2006: ''AMD samples 80nm RV505CE - finally''] (cited 4 February 2011)&lt;/ref&gt;
+
+===X1600 series===
+X1600 uses the M56{{ref|http://www.theinquirer.net/?article=27861}} core which is based on RV530 core, a core similar but distinct from RV515. 
+
+The RV530 has a 3:1 ratio of pixel shaders to texture units. It possesses 12 pixel shaders while retaining RV515's 4 texture units and 4 ROPs. It also gains three extra vertex shaders, bringing the total to 5 units. The chip's single &quot;quad&quot; has 3 pixel shader processors per pipeline, similar to the design of R580's 4 quads. This means that RV530 has the same texturing ability as the X1300 at the same clock speed, but with its 12 pixel shaders it encroaches on X1800's territory in shader computational performance. Unfortunately, due to the programming content of available games, the X1600 is greatly hampered by lack of texturing power.&lt;ref name=TechReportX1000series /&gt;
+
+The X1600 was positioned to replace [[Radeon X600]] and [[Radeon X700]] as ATI's mid-range GPU. The '''Mobility Radeon X1600''' and '''X1700''' are also based on RV530.&lt;ref&gt;[http://ati.amd.com/products/mobilityradeonx1700/specs.html Mobility Radeon X1700], ATI, accessed June 8, 2007.&lt;/ref&gt;&lt;ref&gt;[http://ati.amd.com/products/mobilityradeonx1600/specs.html Mobility Radeon X1600], ATI, accessed June 8, 2007.&lt;/ref&gt;
+
+===X1650 series===
+The X1650 series has two parts, which are quite different with regards to performance. The X1650 Pro uses the RV535 core (which is a RV530 core manufactured on the newer 80&amp;nbsp;nm process). Its advantage over X1600 is both lower power consumption and heat output.&lt;ref&gt;Hanners. [http://www.elitebastards.com/cms/index.php?option=com_content&amp;task=view&amp;id=107&amp;Itemid=27 PowerColor Radeon X1650 PRO video card review], Elite Bastards, August 27, 2006.&lt;/ref&gt;
+
+The other part, the X1650XT, uses the newer RV570 core (also known as the RV560) although cut down in processing power (note that the fully equipped RV570 core powers the X1950Pro, a high-performance card) to match its main competitor, NVIDIA's 7600GT.&lt;ref name=TechReportX1650&gt;Wasson, Scott. [http://techreport.com/reviews/2006q4/radeon-x1650xt/index.x?pg=1 ATI's Radeon X1650 XT graphics card], Tech Report, October 30, 2006.&lt;/ref&gt;
+
+===X1800 series===
+Originally the flagship of the X1000 series, the X1800 series was released with little fanfare due to the [[rolling release]] and the gain by its competitor at that time, NVIDIAâs [[GeForce 7 Series]]. The reason for the delayed release was that ATI engineers had found a bug within the core caused by a faulty 3rd party 90&amp;nbsp;nm chip design library which greatly hampered clock speed ramping, and so they had to &quot;respin&quot; it for another revision. The problem had been almost random in how it affected the prototype chips, making it quite difficult to finally identify. When the R520 hit the market in late 2005, the X1800 was the first high-end 90&amp;nbsp;nm GPU. ATI opted to fit the cards with either 256 [[MiB]] or 512 MiB on-board memory (foreseeing a future of ever growing demands on local memory size). The X1800XT PE was exclusively on 512 MiB on-board memory. The X1800 replaced the R480-based [[Radeon X850]] as ATI's premier performance GPU.&lt;ref name=TechReportX1000series /&gt;
+
+With R520's delayed release, its competition was far more impressive than it would have been if the chip had made its originally scheduled Spring/Summer '05 release. Like its predecessor X850, the R520 chip carries 4 &quot;quads&quot; (4 pipelines each), which means it has similar texturing capability if at the same clock speed as its ancestor, and the NVIDIA 6800 series. Contrasting the X850 however, R520's shader units are vastly improved. Not only are they fully [[Shader Model 3]] capable, but ATI introduced some innovative advancements in shader threading that can greatly improve the efficiency of the shader units. Unlike the X1900, the X1800 has 16 pixel shader processors as well, and equal ratio of texturing to pixel shading capability. The chip also ups the vertex shader number from 6 on X800 to 8. And, with the use of the 90&amp;nbsp;nm [[Low-K]] fabrication process, these high-transistor chips could still be clocked at very high frequencies. This is what gives the X1800 series the ability to be competitive with GPUs with more pipelines but lower clock speeds, such as the NVIDIA 7800 and 7900 series that use 24 pipelines.&lt;ref name=TechReportX1000series /&gt;
+
+X1800 was quickly replaced by X1900 because of its delayed release. X1900 was not behind schedule, and was always planned as the &quot;spring refresh&quot; chip. However, due to the large quantity of unused X1800 chips, ATI decided to kill 1 quad of pixel pipelines and sell them off as the X1800GTO.
+
+===X1900 and X1950 series===
+[[Image:ATI Radeon Sapphire X1950 Pro.JPG|right|thumb|260px|Sapphire Radeon X1950 Pro]]
+The X1900 and X1950 series fixes several flaws in the X1800 design and adds a significant pixel shading performance boost. The R580 core is pin compatible with the R520 [[printed circuit board|PCBs]] meaning that a redesign of the X1800 PCB was not needed. The boards carry either 256 MB or 512 MiB of onboard [[GDDR3]] memory depending on the variant. The primary change between R580 and R520 is that ATI changed the pixel shader processor to texture processor ratio. The X1900 cards have 3 pixel shaders on each pipeline instead of 1, giving a total of 48 pixel shader units. ATI has taken this step with the expectation that future 3D software will be more pixel shader intensive.&lt;ref&gt;Wasson, Scott. [http://www.techreport.com/reviews/2006q1/radeon-x1900/index.x?pg=1 ATI's Radeon X1900 series graphics cards], Tech Report, January 24, 2006.&lt;/ref&gt;
+
+In the latter half of 2006, ATI introduced the Radeon X1950 XTX. This is a graphics board using a revised R580 GPU called ''R580+''. R580+ is the same as R580 except for support of [[GDDR4]] memory, a new graphics [[dynamic random access memory|DRAM]] technology that offers lower power consumption per clock and offers a significantly higher clock rate ceiling. X1950 XTX clocks its RAM at 1&amp;nbsp;GHz (2&amp;nbsp;GHz DDR), providing 64.0 GB/s of memory bandwidth, a 29% advantage over the X1900 XTX. The card was launched on August 23, 2006.&lt;ref&gt;Wasson, Scott. [http://www.techreport.com/reviews/2006q3/radeon-x1950xtx/index.x?pg=1 ATI's Radeon X1950 XTX and CrossFire Edition graphics cards], Tech Report, August 23, 2006.&lt;/ref&gt;
+
+The X1950 Pro was released on October 17, 2006 and was intended to replace the X1900GT in the competitive sub-$200 market segment. The X1950 Pro GPU is built from the ground up on the 80&amp;nbsp;nm RV570 core with only 12 texture units and 36 pixel shaders. The X1950 Pro is the first ATI card that supports native Crossfire implementation by a pair of internal Crossfire connectors, which eliminates the need for the unwieldy external dongle found in older Crossfire systems.&lt;ref&gt;Wilson, Derek. [http://www.anandtech.com/video/showdoc.aspx?i=2858&amp;p=1 ATI Radeon X1950 Pro: CrossFire Done Right], AnandTech, October 17, 2006.&lt;/ref&gt;
+
+==Chipset table==
+{{Main|Comparison of ATI Graphics Processing Units#Radeon R500 (X1xxx) series}}
+
+==References==
+{{Reflist|2}}
+
+==External links==
+* [http://www.x.org/docs/AMD/R5xx_Acceleration_v1.3.pdf R500 family ISA documentation]
+
+{{ATI}}
+
+[[Category:ATI Technologies products]]
+[[Category:Video cards]]
+
+[[cs:Radeon R520]]
+[[fr:R520]]
+[[pl:Radeon R520]]
+[[fi:Radeon R520]]
+[[zh:Radeon R520]]</rev></revisions></page></pages></query></api>

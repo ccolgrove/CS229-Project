@@ -1,0 +1,102 @@
+<?xml version="1.0"?><api><query><redirects><r from="Deb packages" to="Deb (file format)" /></redirects><pages><page pageid="457906" ns="0" title="Deb (file format)"><revisions><rev xml:space="preserve">{{No footnotes|date=June 2010}}
+{{lowercase|title=deb (file format)}}
+{{Infobox file format
+| name                   = Debian package
+| icon                   = 
+| logo                   = 
+| screenshot             = [[File:Application-x-deb.svg|64px]]
+| caption                = The [[GNOME]] icon for deb files
+| extension              = &lt;tt&gt;.deb&lt;/tt&gt;
+| mime                   = application/x-deb
+| type code              = 
+| uniform type           = 
+| magic                  = 
+| owner                  = [[Debian]]
+| released               = 
+| latest release version = 
+| latest release date    = 
+| genre                  = [[Package management system]]
+| container for          = [[Software package (installation)|Software package]]
+| contained by           = 
+| extended from          = [[ar (Unix)|&lt;tt&gt;ar&lt;/tt&gt; archive]]
+| extended to            = 
+| standard               = 
+| url                    = 
+}}
+[[Image:Gdebi.png|250px|thumb|[[GDebi]] installing a .deb package]]
+'''deb''' is the [[filename extension|extension]] of the [[Debian]] [[Software package (installation)|software package]] format and the most often used name for such [[binary file|binary package]]s. Like the &quot;Deb&quot; part of the term ''Debian'', it originates from the name of Debra, erstwhile girlfriend and now ex-wife of Debian's founder [[Ian Murdock]].
+
+Debian packages are also used in distributions based on Debian, such as [[Ubuntu (operating system)|Ubuntu]] and [[List_of_Linux_distributions#Debian-based|others]].
+
+Debian packages are standard [[Unix]] [[ar (Unix)|ar archives]] that include two [[gzip]]ped, [[Bzip2|bzipped]] or [[lzma]]ed [[tar (file format)|tar]] archives: one that holds the control information and another that contains the data.
+
+The accepted program for handling these packages is [[dpkg]], most commonly via other programs such as [[Advanced Packaging Tool|apt]]/[[aptitude (software)|aptitude]] or Gdebi.
+
+Debian packages can be converted into other packages and vice versa using [[Alien (computing)|alien]], and created from source code using [[CheckInstall]] or Debian Package Maker.
+
+Some core Debian packages are available as '''udeb'''s (âmicro debsâ), and are typically used only for bootstrapping a Debian installation. Although these files use the ''udeb'' filename extension, they adhere to the same structure specification as ordinary ''deb'' files. However, unlike their ''deb'' counterparts, ''udeb'' packages contain only essential functional files.&lt;ref&gt;http://d-i.alioth.debian.org/doc/internals/ch03.html&lt;/ref&gt; In particular, documentation files are normally omitted. ''udeb'' packages are not installable on a standard Debian system.
+
+== Implementation ==
+
+Since Debian 0.93, a deb file is implemented as an [[Ar (Unix)|ar]] archive. Canonical contents of this archive are three files:
+* &lt;tt&gt;debian-binary&lt;/tt&gt;: deb format version number. This is &quot;2.0&quot; for current versions of Debian.
+* &lt;tt&gt;control.tar.gz&lt;/tt&gt;: all package meta-information.
+* &lt;tt&gt;data.tar&lt;/tt&gt;, &lt;tt&gt;data.tar.gz&lt;/tt&gt;, &lt;tt&gt;data.tar.bz2&lt;/tt&gt;, &lt;tt&gt;data.tar.lzma&lt;/tt&gt; or &lt;tt&gt;data.tar.xz&lt;/tt&gt;: the actual installable files.
+The &lt;tt&gt;debian-binary&lt;/tt&gt; file must be the first entry in the archive, otherwise it will not be recognized as a Debian package.
+
+== See also ==
+*[[List of archive formats]]
+*[[AppStream]]
+*[[Debian]]
+*[[Getdeb]]
+*[[dpkg]]
+*[[PackageKit]]
+*[[RPM Package Manager]]
+*[[CheckInstall]]
+*[[SuperDeb]]
+*[[jigdo]]
+
+== External links ==
+*[http://www.debian.org/doc/debian-policy/ Debian Policy Manual]
+*[http://www.debian.org/doc/FAQ/ch-pkg_basics Debian FAQ: Basics of the Debian package management system]
+*[http://www.everyjoe.com/newlinuxuser/howto-use-dpkg-to-install-deb-files/ Article on what to do with deb files]
+*[http://vafer.org/projects/jdeb JDeb] Cross platform [[Apache Ant|Ant task]] and [[Apache Maven|Maven plugin]] to build Debian packages.
+*[http://code.google.com/p/ant-deb-task/ ant-deb-task] An [[Apache Ant|Ant task]] that allows you to create Debian .deb packages on any platform where Java is available. 
+*[http://thedarkmaster.wordpress.com/2008/05/24/how-to-create-manipulate-a-deb-file-of-a-compiled-application/ How to create / manipulate a .deb file of a compiled application]
+*[http://www.ibm.com/developerworks/linux/library/l-debpkg/index.html How to make deb packages]
+*[http://tldp.org/HOWTO/html_single/Debian-Binary-Package-Building-HOWTO/ Debian Binary Package Building HOWTO]
+*[https://wiki.ubuntu.com/PackagingGuide/Basic?action=show&amp;redirect=HowToBuildDebianPackagesFromScratch/ Building Debian packages]
+*[http://www.bytehold.com/index.php/projects/176-debian-binary-package-and-repository-howto Debian binary package and unofficial repository howto]
+
+= References =
+&lt;references/&gt;
+
+{{Debian}}
+{{Archive formats}}
+
+[[Category:Archive formats]]
+[[Category:Dpkg]]
+[[Category:Filename extensions]]
+[[Category:Ubuntu (operating system)]]
+
+{{software-type-stub}}
+
+[[ar:Ø¯ÙØ¨]]
+[[bn:à¦¡à§à¦¬ (à¦«à¦¾à¦à¦² à¦«à¦°à¦®à§à¦¯à¦¾à¦)]]
+[[ca:DEB]]
+[[cs:Deb (souborovÃ½ formÃ¡t)]]
+[[de:Debian-Paket]]
+[[es:Deb]]
+[[fr:Deb]]
+[[it:Deb]]
+[[ms:Deb (format fail)]]
+[[ja:Deb (ãã¡ã¤ã«ãã©ã¼ããã)]]
+[[pl:Deb]]
+[[pt:.deb]]
+[[ru:Deb (ÑÐ¾ÑÐ¼Ð°Ñ ÑÐ°Ð¹Ð»Ð¾Ð²)]]
+[[simple:Deb (file format)]]
+[[sk:Deb]]
+[[sv:Deb]]
+[[tr:Deb]]
+[[uk:Deb]]
+[[zh:Deb]]</rev></revisions></page></pages></query></api>

@@ -1,0 +1,73 @@
+<?xml version="1.0"?><api><query><pages><page pageid="169055" ns="0" title="Apache POI"><revisions><rev xml:space="preserve">{{Infobox Software
+| name                   = Apache POI
+| logo                   = [[Image:Jakarta POI Logo.gif|170px|Jakarta POI Logo]]
+| screenshot             =
+| caption                =
+| developer              = [[Apache Software Foundation]]
+| latest release version = 3.7
+| latest release date    = {{release date|2010|10|29}}
+| latest preview version = 3.8 Beta 4
+| latest preview date    = {{release date|2011|08|26}}
+| operating system       = [[Cross-platform]]
+| programming language   =
+| genre                  = [[API]] to access [[Microsoft Office]] [[file format|formats]]
+| license                = [[Apache License]] 2.0
+| website                = http://poi.apache.org
+}}
+'''Apache POI''', a project run by the [[Apache Software Foundation]], and previously a sub-project of the [[Jakarta Project]], provides pure [[Java platform|Java]] libraries for reading and writing files in [[Microsoft Office]] [[file format|formats]], such as [[Microsoft Word|Word]], [[Microsoft PowerPoint|PowerPoint]] and [[Microsoft Excel|Excel]].
+
+==History and roadmap==
+The name was originally an [[acronym]] for &quot;Poor Obfuscation Implementation&quot;,&lt;ref&gt;{{citation | url = http://www.javaworld.com/javaworld/jw-03-2004/jw-0322-poi.html | title = Excelling in Excel with Java | first = Elango | last = Sundaram | publisher = Java World | date = 2004-03-22}}.&lt;/ref&gt; referring humorously to the fact that the file formats seemed to be deliberately [[Obfuscated code|obfuscated]], but poorly, since they were successfully [[reverse engineering|reverse-engineered]]. This explanation â and those of the similar names for the various sub-projects â were removed from the official web pages in order to better market the tools to businesses who would not consider such humour appropriate.  The original authors (Andrew C. Oliver and Marc Johnson) also noted the existence of the Hawaiian [[poi (food)|poi]] dish, made of mashed [[taro root]], which had similarly derogatory connotations.&lt;ref&gt;{{citation | url = http://web.archive.org/web/20041015142404/http://www.coyotesong.com/poi/ | title = POI homepage from October 2004 | publisher = Coyote Song}}, showing original explanations for naming.&lt;/ref&gt;
+
+===Office Open XML support===
+POI supports the ISO/IEC 29500:2008 [[Office Open XML]] file formats since version 3.5.  A significant contribution for OOXML support came from Sourcesense,&lt;ref&gt;{{citation | url = http://www.sourcesense.com/ | title = SourceSense}}.&lt;/ref&gt; an [[open source]] company which was commissioned by [[Microsoft]] to develop this contribution.&lt;ref&gt;{{cite web
+| url=http://www.informationweek.com/news/windows/showArticle.jhtml?articleID=206905858
+| title= Microsoft Eyes Open Source Components for Office 2007
+| publisher= Information Week
+| date=26 March 2008
+| accessdate=1 March 2009}}&lt;/ref&gt;  This link spurred controversy, some POI contributors questioning POI OOXML patent protection regarding Microsoft's [[Open Specification Promise]] patent license.&lt;ref&gt;{{citation | url = http://mail-archives.apache.org/mod_mbox/poi-dev/200803.mbox/%3c47EAE71C.6040603@buni.org%3e | title = POI development mailing list archives | date = 2008-3}}.&lt;/ref&gt;
+
+==Architecture==
+The Apache POI project contains the following subcomponents:
+
+* POIFS (Poor Obfuscation Implementation File System) â This component reads and writes [[Microsoft]]'s [[OLE 2]] [[Structured storage|Compound document]] format.  Since all [[Microsoft Office]] files are [[OLE 2]] files, this component is the basic building block of all the other POI elements. POIFS can therefore be used to read a wider variety of files, beyond those whose explicit decoders are already written in POI.
+* HSSF (Horrible SpreadSheet Format) â reads and writes [[Microsoft Excel]] (XLS) format files. It can read files written by  [[Microsoft Excel|Excel]] 97 onwards; this [[file format]] is known as the ''BIFF 8'' format. As the Excel file format is complex and contains a number of tricky characteristics, some of the more advanced features cannot be read.
+* XSSF (XML SpreadSheet Format) â reads and writes [[Office Open XML]] (XLSX) format files.  Similar feature set to HSSF, but for Office Open XML files.
+* HPSF (Horrible Property Set Format) â reads &quot;Document Summary&quot; information from [[Microsoft Office]] files. This is essentially the information that one can see by using the ''File|Properties'' menu  item within an [[Microsoft Office|Office]] application.
+* HWPF (Horrible Word Processor Format) â aims to read and write [[Microsoft Word|Microsoft Word 97]] (DOC) format files. This component is in initial stages of development.
+* HSLF (Horrible Slide Layout Format) â a pure Java implementation for [[Microsoft PowerPoint]] files. This provides the ability to read, create and edit presentations (though some things are easier to do than others)
+* HDGF (Horrible DiaGram Format) â an initial pure Java implementation for [[Microsoft Visio]] binary files. It provides an ability to read the low level contents of the files.
+* HPBF (Horrible PuBlisher Format) â a pure Java implementation for Microsoft Publisher files.
+* HSMF (Horrible Stupid Mail Format&lt;ref&gt;{{citation | url = http://npoi.codeplex.com/discussions/233518 | publisher = Microoft | title = Codeplex NPOI}}.&lt;/ref&gt;) â a pure Java implementation for Microsoft Outlook MSG files.&lt;ref&gt;{{citation | title = POI-HSMF | publisher = Apache | url = http://poi.apache.org/hsmf/}}.&lt;/ref&gt;
+* DDF (Dreadful Drawing Format) â a package for decoding the Microsoft Office Drawing format.
+
+The HSSF component is the most advanced feature of the library.&lt;ref&gt;{{citation | url = http://poi.apache.org/hssf/ | title = POI-HSSF | publisher = Apache}}.&lt;/ref&gt;  Other components (HPSF, HWPF, and HSLF) are usable, but less full-featured&lt;ref&gt;{{citation | url = http://poi.apache.org/hwpf/ | title = POI-HWPF | publisher = Apache}}.&lt;/ref&gt;&lt;ref&gt;{{citation | url = http://poi.apache.org/hslf/ | title = POI-HSLF | publisher = Apache}}.&lt;/ref&gt;
+
+The POI library is also provided as a [[Ruby (programming language)|Ruby]]&lt;ref&gt;{{citation | title = POI-Ruby | publisher = Apache | url = http://poi.apache.org/poi-ruby.html}}.&lt;/ref&gt; or [[ColdFusion]] extension.
+
+==See also==
+*[[Open Packaging Conventions]]
+*[[Office Open XML software]]
+*[[NPOI]]
+
+==References==
+{{Reflist|2}}
+
+==External links==
+* {{citation | url = https://poi.apache.org/ | title = Apache POI}} â the official Apache POI project page.
+* {{citation | url = http://oscon2006.sourceforge.net/ | title = POI presentation at OSCON2006 | publisher = Source Forge}}.
+
+{{Apache}}
+
+{{DEFAULTSORT:Apache Poi}}
+[[Category:Apache Software Foundation|POI]]
+[[Category:Microsoft Office related software]]
+[[Category:Java platform]]
+[[Category:Java libraries|POI]]
+[[Category:Free cross-platform software]]
+
+[[de:Apache POI]]
+[[fr:Apache POI]]
+[[ja:Apache POI]]
+[[pl:Apache POI]]
+[[zh:Apache POI]]</rev></revisions></page></pages></query></api>

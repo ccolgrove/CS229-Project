@@ -1,0 +1,322 @@
+<?xml version="1.0"?><api><query><pages><page pageid="25978" ns="0" title="Reversi"><revisions><rev xml:space="preserve">{{Distinguish|Reversis}}
+{{Use dmy dates|date=September 2010}}
+{{Infobox game
+| title         = Reversi/Othello
+| subtitle      = 
+| image_link    = [[File:Othello (Reversi) board.jpg|250px]]
+| image_caption = 
+| designer      = 
+| illustrator   = 
+| publisher     = 
+| players       = 2
+| ages          = Recommended for 5 years or older
+| setup_time    = 5â10 seconds
+| playing_time  = 5â60 minutes
+| complexity    = Low
+| strategy      = High
+| random_chance = None
+| skills        = [[Abstract strategy game|Strategy]], Observation
+| footnotes     =
+}}
+'''Reversi''' (also marketed by [[Pressman Toy Corp.|Pressman]] under the trade name '''Othello''') is a board game involving [[abstract strategy game|abstract strategy]] and played by two players on a board with 8 rows and 8 columns and a set of distinct pieces for each side. Pieces typically are disks with a light and a dark face, each face belonging to one player. The player's goal is to have a majority of their colored pieces showing at the end of the game, turning over as many of their opponent's pieces as possible.
+
+== Origins ==
+The modern version is based on the game ''reversi'' that was invented in 1883 by either of two Englishmen (each calling the other a fraud), Lewis Waterman or John W. Mollett (or perhaps earlier by someone else entirely), and gained considerable popularity in England at the end of the 19th century. The game's first known-to-be reliable mention is in 21 August 1886 edition of [[Saturday Review (London)|The Saturday Review]]. Later mention includes an 1895 article in the ''New York Times'': &quot;Reversi is something like [[go-bang|Go Bang]], and is played with 64 pieces.&quot;&lt;ref&gt;[http://query.nytimes.com/gst/abstract.html?res=9F01EEDB1139E033A25752C0A9649D94649ED7CF&amp;scp=14&amp;sq=reversi &quot;FINE NEW GAMES AND TOYS; Now Ready for Distribution by the Agents of Santa Claus. IN THE MODERN WONDERLAND Millions Spent for the Amusement and Instruction of Children â Minds Active and Hands Busy All the Time&quot;], ''New York Times'', 1 December 1895.&lt;/ref&gt; In 1893, the well-known German games publisher [[Ravensburger]] started producing the game as one of its first titles. Two 18th century continental European books dealing with a game that may or may not be the one with which we are concerned are mentioned on page 14 of the Spring 1989 [[Othello Quarterly]], and there has been speculation, so far without documentation, that the game has more ancient origins.
+
+The modern rule set used on the international tournament stage originated in [[Mito, Ibaraki]], Japan in the 1970s: the Japanese game company [[Tsukuda Original]] [[registered trademark|registered the game under the trademark]] name ''Othello''. The name was selected as a reference to the [[William Shakespeare|Shakespeare]]an play ''[[Othello|Othello, the Moor of Venice]]'', referencing the conflict between the [[Moors|Moor]] Othello and Iago, who describes himself as &quot;two faced&quot; and more controversially, to the unfolding drama between Othello, who is black, and [[Desdemona (Othello)|Desdemona]], who is white. The green colour of the board is inspired by the image of the general Othello, valiantly leading his battle in a green field. It can also be likened to a jealousy competition (jealousy being the central theme in Shakespeare's play), since players engulf the pieces of the opponent, thereby turning them to their possession.&lt;ref&gt;{{cite news |work=Time Magazine |title=
+Japanese Othello|date= 22 November 1976 |url=http://www.time.com/time/magazine/article/0,9171,914702,00.html}}&lt;/ref&gt;
+
+A 2002 press release about the origins of the modern game makes no mention of the original version:&lt;ref name=&quot;mdigame&quot;&gt;[http://findarticles.com/p/articles/mi_m0EIN/is_2002_Dec_4/ai_94878240 &quot;Othello: The World's Best Selling Licensed Strategy Game Lands in MDI Entertainment's Portfolio of Lottery Game Properties&quot;], 4 December 2002.&lt;/ref&gt; &lt;blockquote&gt;&quot;Othello was invented by Japanese game enthusiast, Goro Hasegawa in 1971. He chose James R. Becker, to help him develop and market the game. Inspired by the ancient Chinese strategy game '[[Go (board game)|Go]]', Hasegawa sought to create a game that was rich in strategy, but still approachable by the casual player. Becker simplified the game play, coined the tagline, 'A Minute to Learn...A Lifetime to Master' and named this new game after Shakespeare's classic play, because of the black and white disks. Othello was first introduced in Japan in 1973, by Tsukuda Original Co., who at Becker's suggestion organized the Japanese Othello Association.&quot;&lt;ref name=&quot;mdigame&quot; /&gt;&lt;/blockquote&gt;
+
+In 1973, Othello became a commercial success in Japan and held its first national championship.&lt;ref name=&quot;FFOhistory&quot;&gt;[http://translate.google.com/translate?u=http%3A%2F%2Fwww.ffothello.org%2Fjeu%2Fhistorique.php&amp;langpair=fr|en&amp;hl=it&amp;ie=UTF8], French Othello Federation's History of Othello.&lt;/ref&gt;
+Goro Hasegawa, who wrote ''How to win at Othello'', popularized the game in Japan in 1975.{{Citation needed|date=January 2008}}
+
+== Rules ==
+Each of the two sides corresponds to one player; they are referred to here as ''light'' and ''dark'' after the sides of Othello pieces, but &quot;heads&quot; and &quot;tails&quot; would identify them equally well, so long as each marker has sufficiently distinctive sides.
+
+Reversi did not have a defined starting position. Othello's rules, however, state that the game begins with four markers placed in a square in the middle of the grid, two facing light-up, two pieces with the dark side up. The dark player makes the first move.
+{{Reversi diagram small|=
+| tcenter
+| 
+|=
+ 1 | | | | | | | | |=
+ 2 | | | | | | | | |=
+ 3 | | | | | | | | |=
+ 4 | | | |O|X| | | |=
+ 5 | | | |X|O| | | |=
+ 6 | | | | | | | | |=
+ 7 | | | | | | | | |=
+ 8 | | | | | | | | |=
+    a b c d e f g h  
+| &lt;center&gt;Starting position&lt;/center&gt;
+}}
+Dark must place a piece with the dark side up on the board, in such a position that there exists at least one straight (horizontal, vertical, or diagonal) occupied line between the new piece and another dark piece, with one or more contiguous light pieces between them. In the below situation, dark has the following options indicated by transparent pieces:
+{{Reversi diagram small|=
+| tcenter
+| 
+|=
+ 1 | | | | | | | | |=
+ 2 | | | | | | | | |=
+ 3 | | | |x| | | | |=
+ 4 | | |x|O|X| | | |=
+ 5 | | | |X|O|x| | |=
+ 6 | | | | |x| | | |=
+ 7 | | | | | | | | |=
+ 8 | | | | | | | | |=
+    a b c d e f g h  
+| &lt;center&gt;Where dark may play&lt;/center&gt;
+}}
+After placing the piece, dark turns over (flips, captures) all light pieces lying on a straight line between the new piece and any anchoring dark pieces. All reversed pieces now show the dark side, and dark can use them in later movesâunless light has reversed them back in the meantime. In other words, a valid move is one where at least one piece is reversed.
+
+If dark decided to put a piece in the topmost location (all choices are strategically equivalent at this time), one piece gets turned over, so that the board appears thus:
+{{Reversi diagram small|=
+| tcenter
+| 
+|=
+ 1 | | | | | | | | |=
+ 2 | | | | | | | | |=
+ 3 | | | |X| | | | |=
+ 4 | | | |X|X| | | |=
+ 5 | | | |X|O| | | |=
+ 6 | | | | | | | | |=
+ 7 | | | | | | | | |=
+ 8 | | | | | | | | |=
+    a b c d e f g h  
+| &lt;center&gt;After dark play&lt;/center&gt;
+}}
+Now light plays. This player operates under the same rules, with the roles reversed: light lays down a light piece, causing a dark piece to flip. Possibilities at this time appear thus (indicated by transparent pieces):
+{{Reversi diagram small|=
+| tcenter
+| 
+|=
+ 1 | | | | | | | | |=
+ 2 | | | | | | | | |=
+ 3 | | |o|X|o| | | |=
+ 4 | | | |X|X| | | |=
+ 5 | | |o|X|O| | | |=
+ 6 | | | | | | | | |=
+ 7 | | | | | | | | |=
+ 8 | | | | | | | | |=
+    a b c d e f g h  
+| &lt;center&gt;Where light may play&lt;/center&gt;
+}}
+Light takes the bottom left option and reverses one piece:
+{{Reversi diagram small|=
+| tcenter
+| 
+|=
+ 1 | | | | | | | | |=
+ 2 | | | | | | | | |=
+ 3 | | | |X| | | | |=
+ 4 | | | |X|X| | | |=
+ 5 | | |O|O|O| | | |=
+ 6 | | | | | | | | |=
+ 7 | | | | | | | | |=
+ 8 | | | | | | | | |=
+    a b c d e f g h  
+| &lt;center&gt;After light play&lt;/center&gt;
+}}
+Players take alternate turns. If one player cannot make a valid move, play passes back to the other player. When neither player can move, the game ends. This occurs when the grid has filled up or when neither player can legally place a piece in any of the remaining squares. This means the game ends before the grid is completely filled. This possibility may occur because one player has no pieces remaining on the board in his or her color. In over-the-board play this is generally scored as if the board was full (64-0).
+
+Example where the game ends before the grid is completely filled:
+{{Reversi diagram small|=
+| tcenter
+| 
+|=
+ 1 |O|O|O|O|O|O|O|O|=
+ 2 |O|O|O|O|O|O|O|O|=
+ 3 |O|O|O|O|O|O|O|O|=
+ 4 |O|O|O|O|O|O|O| |=
+ 5 |O|O|O|O|O|O| | |=
+ 6 |O|O|O|O|O|O| |X|=
+ 7 |O|O|O|O|O|O|O| |=
+ 8 |O|O|O|O|O|O|O|O|=
+    a b c d e f g h  
+| &lt;center&gt;VlasÃ¡kovÃ¡ 1 - 63 Schotte (European Grand Prix Prague 2011)&lt;/center&gt;
+}}
+The player with the most pieces on the board at the end of the game wins. An exception to this is that if a clock is employed then if one player defaults on time that player's opponent wins regardless the board configuration, with varying methods to determine the official score where one is required.
+
+In common practice over the internet, opponents agree upon a time-control of, typically, from 1 to 30 minutes per game per player. Standard time control in the World Championship is 30 minutes, and this or something close to it is common in over-the-board (as opposed to internet) tournament play generally. In time-defaulted games, where disk differential is used for tiebreaks in tournaments or for rating purposes, one common over-the-board procedure for the winner of defaulted contests to complete both sides' moves with the greater of the result thereby or one disk difference in his or her favor being the recorded score.
+
+Significant variants of the game, such as where the starting position differs from standard or the objective is to have the fewest pieces one's color at the end, are sometimesâbut rarelyâplayed.
+
+== Strategic elements ==
+{{multiple issues|section=y|refimprove=January 2011|original research = January 2011}}
+Strategic concepts in Reversi include corners, mobility, edge play, parity, endgame play and looking ahead.
+
+=== Corners ===
+Corner positions, once played, remain immune to flipping for the rest of the game (because there is no other opposite color behind them to create a flip); thus a player could use a piece in a corner of the board to anchor groups of pieces (starting with the adjacent edges) permanently. Therefore, capturing a corner often proves an effective strategy when the opportunity arises. More generally, a piece is stable when, along all four axes (horizontal, vertical, and each diagonal), it is on a boundary, in a filled row, or next to a stable piece of the same color. Grabbing a corner prematurely may be a mistake, however, if in doing so the player leaves &quot;holes&quot; along the edge. These holes can be filled by the opposing player and could result in capture of some or most of the pieces along that edge. This renders occupying the corner largely useless.
+
+=== Mobility ===
+An opponent playing with reasonable strategy will not so easily relinquish the corner or any other good moves. So to achieve these good moves, a player must force his or her opponent to play moves that relinquish those good moves. One of the ways to achieve this involves reducing the number of moves available to the player's opponent.
+Ideally, this will eventually force the opponent to make an undesirable move.
+
+=== Edges ===
+Edge pieces can anchor flips that influence moves to all regions of the board. If played poorly, this can poison later moves by causing players to flip too many pieces and open up many moves for the opponent. However, playing on edges where an opponent cannot easily respond drastically reduces possible moves for that opponent.
+
+The square immediately diagonally adjacent to the corner (called the X-square), when played in the early or middle game, typically guarantees the loss of that corner. Nevertheless, such a corner sacrifice is sometimes played for some strategic purpose (like retaining mobility). Playing to the edge squares adjacent to the corner (called the C-squares) can also be dangerous if it gives the opponent powerful forcing moves.
+
+=== Parity ===
+Parity is one of the most important parts of the strategy. In short, the concept of parity is about getting the last move in every empty region in the end-game, and thereby increasing the number of stable discs.
+
+The concept of parity led to a change in the perception of the game, as it led to distinct strategies for playing black and white. It forced black to play more aggressive moves and gave white the opportunity to stay calm and focus on keeping the parity. As a result the opening books and mid-game were focused on black being the &quot;attacker&quot; and white being the &quot;defender&quot;. 
+
+The concept of parity also controls how edge positions are played and how edges interact.
+
+=== Endgame ===
+For the endgame (the last 20 or so moves of the game) the strategies will typically change. Special techniques such as sweeping, gaining access, and the details of move-order can have a large impact on the outcome of the game. Actual counting of discs in the very final stages is often critical, and in human play an inaccurate choice for disk differential can be better than an accurate one in terms of the expected outcome.
+
+=== Brightwell Quotient ===
+Invented by the British Mathematician and 3 times vice World Champion and 5 times British Champion [[Graham Brightwell]], this is as tiebreaker, that is now used in many tournaments including the WOC. If two players have the same number of points in the 13 rounds WOC swiss, the tie is resolved in favour of the player with the higher Brightwell Quotient.
+
+== Computer opponents and research ==
+{{main|Computer Othello}}
+Because of difficulties in human lookaheadâpeculiar to Reversi because of the apparent strategic meaninglessness of internal disks (this makes blindfold games almost impossible) and the attractiveness of the game to programmers, the best [[Computer Othello|Othello computer]] programs have easily defeated the best humans since 1980, when the program The Moor beat the reigning world champion. In 1997, [[Logistello]] defeated the human champion [[Takeshi Murakami]] with a score of 6:0.
+
+Analysts have estimated the number of legal positions in Othello is at most 10&lt;sup&gt;28&lt;/sup&gt;, and it has a [[game-tree complexity]] of approximately 10&lt;sup&gt;58&lt;/sup&gt;.&lt;ref name=&quot;Allis1994&quot;&gt;{{cite book | author = [[Victor Allis]] | year = 1994 | title = Searching for Solutions in Games and Artificial Intelligence | publisher = Ph.D. Thesis, University of Limburg, Maastricht, The Netherlands | isbn = 9090074880 | url = http://fragrieu.free.fr/SearchingForSolutions.pdf}}&lt;/ref&gt; Mathematically, Othello still remains [[Solved game#Solved games|unsolved]]. Experts have not absolutely resolved what the outcome of a game will be where both sides use [[Solved game#Perfect play|perfect play]]. However, analysis of thousands of high-quality games (most of them computer-generated) has led to the strong conclusion (pending actual proof) that, on the standard 8-by-8 board, perfect play on both sides results in a draw.&lt;ref&gt;http://abulmo.perso.neuf.fr/games/book-2008.htm Edax Principal Variations&lt;/ref&gt; When [[generalized game|generalizing]] the game to play on an ''n''-by-''n'' board, the problem of determining if the first player has a winning move in a given position is [[PSPACE-complete]].&lt;ref&gt;{{cite journal | author = S. Iwata and T. Kasai | title = The Othello game on an n*n board is PSPACE-complete | journal = Theor. Comp. Sci. | issue = 123 | year = 1994 | pages = 329â340 | volume = 123 | doi = 10.1016/0304-3975(94)90131-7}}&lt;/ref&gt; On 4-by-4 and 6-by-6 boards under perfect play, the second player wins. The first of these results is relatively trivial, and the second dates to around 1990.
+
+== World Othello Championship ==
+{| class=&quot;wikitable&quot;
+! Year
+! Location
+! World Champion
+! Country
+! Team
+! Runner-Up
+! Country
+|-
+| 1977 || Tokyo || Hiroshi Inoue || {{JAP}} || N/A || Thomas Heiberg || {{NOR}}
+|-
+| 1977'''*''' || [[Monte Carlo]] || Sylvain Perez || {{flagicon|FRA}} France || N/A || Michel Rengot (Blanchard) || {{flagicon|FRA}} France
+|-
+| 1978 || New York || Hidenori Maruoka || {{JAP}} || N/A || [[Carol Jacobs]] || {{flagicon|USA}} USA
+|-
+| 1979 || Rome || Hiroshi Inoue || {{JAP}} || N/A || [[Jonathan Cerf]] || {{flagicon|USA}} USA
+|-
+| 1980 || London || Jonathan Cerf || {{flagicon|USA}} USA || N/A || Takuya Mimura || {{JAP}}
+|-
+| 1981 || [[Brussels]] || Hidenori Maruoka || {{JAP}} || N/A || Brian Rose || {{flagicon|USA}} USA
+|-
+| 1982 || [[Stockholm]] || Kunihiko Tanida || {{JAP}} || N/A || David Shaman || {{flagicon|USA}} USA
+|-
+| 1983 || Paris || Ken'Ichi Ishii || {{JAP}} || N/A || [[Imre Leader]] || {{GBR}}
+|-
+| 1984 || Melbourne || Paul Ralle || {{flagicon|FRA}} France || N/A || Ryoichi Taniguchi || {{JAP}}
+|-
+| 1985 || [[Athens]] || Masaki Takizawa || {{JAP}} || N/A || Paolo Ghirardato || {{ITA}}
+|-
+| 1986 || Tokyo || Hideshi Tamenori || {{JAP}} || N/A || Paul Ralle || {{flagicon|FRA}} France
+|-
+| 1987 || [[Milan]] || Ken'Ichi Ishii || {{JAP}} || {{flagicon|USA}} USA || Paul Ralle || {{flagicon|FRA}} France
+|-
+| 1988 || Paris || Hideshi Tamenori || {{JAP}} || {{GBR}} || [[Graham Brightwell]] || {{GBR}}
+|-
+| 1989 || [[Warsaw]] || Hideshi Tamenori || {{JAP}} || {{GBR}} || [[Graham Brightwell]] || {{GBR}}
+|-
+| 1990 || [[Stockholm]] || Hideshi Tamenori || {{JAP}} || {{flagicon|FRA}} France || Didier Piau || {{flagicon|FRA}} France
+|-
+| 1991 || New York || Shigeru Kaneda || {{JAP}} || {{flagicon|USA}} USA || Paul Ralle || {{flagicon|FRA}} France
+|-
+| 1992 || [[Barcelona]] || Marc Tastet || {{flagicon|FRA}} France || {{GBR}} || David Shaman || {{GBR}}
+|-
+| 1993 || London || David Shaman || {{flagicon|USA}} USA || {{flagicon|USA}} USA || Emmanuel Caspard || {{flagicon|FRA}} France
+|-
+| 1994 || Paris || Masaki Takizawa || {{JAP}} || {{flagicon|FRA}} France || Karsten Feldborg || {{DEN}}
+|-
+| 1995 || Melbourne || Hideshi Tamenori || {{JAP}} || {{flagicon|USA}} USA || David Shaman || {{flagicon|USA}} USA
+|-
+| 1996 || Tokyo || Takeshi Murakami || {{JAP}} || {{GBR}} || StÃ©phane Nicolet || {{flagicon|FRA}} France
+|-
+| 1997 || [[Athens]] || Makoto Suekuni || {{JAP}} || {{GBR}} || [[Graham Brightwell]] || {{GBR}}
+|-
+| 1998 || [[Barcelona]] || Takeshi Murakami || {{JAP}} || {{flagicon|FRA}} France || Emmanuel Caspard || {{flagicon|FRA}} France
+|-
+| 1999 || [[Milan]] || David Shaman || {{NLD}} || {{JAP}} || Tetsuya Nakajima || {{JAP}}
+|-
+| 2000 || [[Copenhagen]] || Takeshi Murakami || {{JAP}} || {{flagicon|USA}} USA || Brian Rose || {{flagicon|USA}} USA
+|-
+| 2001 || New York || Brian Rose || {{flagicon|USA}} USA || {{flagicon|USA}} USA || Raphael Schreiber || {{flagicon|USA}} USA
+|-
+| 2002 || [[Amsterdam]] || David Shaman || {{NLD}} || {{flagicon|USA}} USA || Ben Seeley || {{flagicon|USA}} USA
+|-
+| 2003 || [[Stockholm]] || Ben Seeley || {{flagicon|USA}} USA || {{JAP}} || Makoto Suekuni || {{JAP}}
+|-
+| 2004 || London || Ben Seeley || {{flagicon|USA}} USA || {{flagicon|USA}} USA || Makoto Suekuni || {{JAP}}
+|-
+| 2005 || [[ReykjavÃ­k]] || Hideshi Tamenori || {{JAP}} || {{JAP}} || Kwangwook Lee || {{KOR}}
+|-
+| 2006 || [[Mito, Ibaraki|Mito]] || Hideshi Tamenori || {{JAP}} || {{JAP}} || Makoto Suekuni || {{SGP}}
+|-
+| 2007 || [[Athens]] || Kenta Tominaga || {{JAP}} || {{JAP}} || StÃ©phane Nicolet || {{flagicon|FRA}} France
+|-
+| 2008 || [[Oslo]] || Michele Borassi || {{ITA}} || {{JAP}} || Tamaki Miyaoka || {{JAP}}
+|-
+| 2009 || [[Ghent]] || Yusuke Takanashi || {{JAP}} || {{JAP}} || Matthias Berg || {{flagicon|GER}} Germany
+|-
+| 2010 || [[Rome]] || [[Yusuke Takanashi]] || {{JAP}} || {{JAP}} || Michele Borassi || {{ITA}}
+|-
+| 2011 || [[Newark,_New_Jersey|Newark NJ]] || [[Hiroki Nobukawa]] || {{JAP}} || {{JAP}} || [[Piyanat Aunchulee]] || {{THA}}
+|}
+
+'''*'''This rivalling Monte Carlo world championship is usually not considered to be an official world championship. In official homepages it is called the first European Championship.
+
+== References ==
+
+{{reflist}}
+
+== Further reading ==
+Othello books to increase skill to tournament-level play:
+* Ted Landau, ''[http://www.tlandau.com/files/Othello-B%26B.pdf Othello: Brief &amp; Basic]'', 1990
+* Randy Fang, ''[http://othello.federation.free.fr/livres/beginner-Randy-Fang.pdf Othello: From Beginner to Master]'', 2003
+* Brian Rose, ''[http://othellogateway.com/rose/book.pdf Othello: A Minute to Learn... A Lifetime to Master]'', 2005
+
+== External links ==
+{{Wikibooks|Reversi}}
+* [http://www.pressmangames.com/instructions/instruct_othello.html Pressman] Othello instructions
+* [http://www.worldothellofederation.com/ World Othello Federation]
+* [http://www.samsoft.org.uk/reversi/ Reversi â An Animated Guide]
+* '''Online Play'''
+** [http://www.playok.com/en/reversi/ PlayOK Reversi]
+** [http://www.iothello.net/ iOthello: an online international othello community developed for and by Othello players]
+** [http://www.reversilounge.com/ Reversi Lounge]
+** [http://spiele.meingames.de/reversi MeinGames Reversi] English, Russian, German.
+* '''Pictures'''
+** [http://www.ffothello.org/musee/musee.php?param_sous_categorie=vieux_reversi Pictures of the 19th century reversi boards]
+** [http://gamesmuseum.uwaterloo.ca/VirtualExhibits/Whitehill/othello/ &quot;Othello (Reversi)&quot;], University of Waterloo, Elliott Avedon Museum &amp; Archive of Games
+* '''Books'''
+** Othello Wiki Book Project - [http://othello.dk/book/index.php/Books Othello-Reversi Book List] 
+** Marc Mandt, ''[http://www.site-constructor.com/othello/Present/Basic_Strategy.html Introduction to Basic Othello Strategy and Algorithms]'', 2001
+** [http://www.britishothello.org.uk/newsletters.html British Othello Federation Newsletters]
+
+
+{{Mattel}}
+
+[[Category:Abstract strategy games]]
+[[Category:PSPACE-complete problems]]
+[[Category:Pressman Toy Corporation games]]
+[[Category:Ravensburger games]]
+[[Category:Discontinued Windows components]]
+
+[[cs:Othello (deskovÃ¡ hra)]]
+[[da:Othello (brÃ¦tspil)]]
+[[de:Othello (Spiel)]]
+[[es:Reversi]]
+[[eo:Reverso]]
+[[fr:Othello (jeu)]]
+[[ko:ì¤ë¸ë¡]]
+[[it:Othello]]
+[[he:×¨××¨×¡×]]
+[[nl:Reversi]]
+[[ja:ãªã»ã­ (éæ¯)]]
+[[no:Othello (brettspill)]]
+[[pl:Reversi]]
+[[pt:Reversi]]
+[[ru:Ð ÐµÐ²ÐµÑÑÐ¸]]
+[[sco:Reversi]]
+[[sl:Othello (strateÅ¡ka igra)]]
+[[fi:Othello (lautapeli)]]
+[[sv:Othello (spel)]]
+[[th:à¹à¸­à¹à¸à¸¥à¹à¸¥à¹]]
+[[tr:Reversi]]
+[[vi:Cá» Othello]]
+[[zh:é»ç½æ£]]</rev></revisions></page></pages></query></api>

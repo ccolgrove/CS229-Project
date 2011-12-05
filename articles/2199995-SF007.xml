@@ -1,0 +1,113 @@
+<?xml version="1.0"?><api><query><pages><page pageid="2199995" ns="0" title="Dedicated hosting service"><revisions><rev xml:space="preserve">{{dablink|&quot;Dedicated server&quot; redirects here. For information about dedicated servers in multiplayer video gaming, see [[Game server#Types of game servers]].}}
+{{original research|date=August 2011}}
+{{Unreferenced|date=April 2007}}
+{{internet hosting}}
+A '''dedicated hosting service''', '''dedicated server''', or '''managed hosting service''' is a type of [[Internet hosting]] in which the client leases an entire server not shared with anyone.  This is more flexible than [[shared hosting]], as organizations have full control over the server(s), including choice of [[operating system]], [[hardware]], etc.  Server administration can usually be provided by the hosting company as an add-on service. In some cases a dedicated server can offer less overhead and a larger [[return on investment]]. Dedicated servers are most often housed in [[Data centre|data centers]], similar to [[Colocation centre|colocation facilities]], providing [[Emergency power system|redundant power]] sources and [[Heating, Ventilating, and Air Conditioning|HVAC]] systems.  In contrast to colocation, the server hardware is owned by the provider and in some cases they will provide support for your operating system or applications.
+==Operating system support==
+
+Availability, price and employee familiarity often determines which operating systems are offered on dedicated servers. Variations of [[Linux]] and [[Unix]] ([[open source]] [[operating systems]]) are often included at no charge to the customer. Commercial operating systems include Microsoft Windows Server, provided through a special program called Microsoft SPLA. Red Hat Enterprise is a commercial version of Linux offered to hosting providers on a monthly fee basis. The monthly fee provides OS updates through the [[Red Hat Network]] using an application called yum. Other operating systems are available from the open source community at no charge. These include [[CentOS]], [[Fedora (operating system)|Fedora Core]], [[Debian]], and many other Linux distributions or BSD systems [[FreeBSD]], [[NetBSD]], [[OpenBSD]].
+
+Support for any of these operating systems typically depends on the level of management offered with a particular dedicated server plan. Operating system support may include updates to the core system in order to acquire the latest security fixes, patches, and system-wide vulnerability resolutions. Updates to core operating systems include kernel upgrades, service packs, application updates, and security patches that keep server secure and safe. Operating system updates and support relieves the burden of server management from the dedicated server owner.
+
+==Bandwidth and connectivity==
+
+[[Bandwidth (computing)|Bandwidth]] refers to the [[data transfer rate]] or the amount of data that can be carried from one point to another in a given time period (usually a second) and is often represented in bits (of data) per second (bit/s). For example, visitors to your server, web site, or applications utilize bandwidth *Third â Total Transfer (measured in bytes transferred)
+
+'''95th Method:''' line speed, billed on the 95th percentile, average or peak usage, refers to the speed in which data flows from the server or device. Line speed is measured in bits per second (or kilobits per second, megabits per second or gigabits per second).
+
+'''Unmetered Method:''' The second [[Bandwidth (computing)|bandwidth]] measurement is unmetered service where providers cap or control the âtop lineâ speed for a server. Top line speed in unmetered bandwidth is the total Mbit/s allocated to the server and configured on the switch level. For example, if you purchase 10 Mbit/s unmetered bandwidth, the top line speed would be 10 Mbit/s. 10 Mbit/s would result in the provider controlling the speed transfers take place while providing the ability for the dedicated server owner to not be charged with bandwidth overages. Unmetered bandwidth services usually incur an additional charge. 
+
+'''Total Transfer Method:''' Some providers will calculate the Total Transfer, the measurement of actual data leaving and arriving, measured in bytes. Measurement between providers varies, though it is either the total traffic in, the total traffic out, whichever is the greater or the sum of the two.
+
+'''Bandwidth Pooling:''' This is a key mechanism for hosting buyers to determine which provider is offering the right pricing mechanism of bandwidth pricing. Most Dedicated Hosting providers bundle bandwidth pricing along with the monthly charge for the dedicated server. Let us illustrate this with the help of an example. An average $100 server from any of the common dedicated bandwidth providers would carry 2 TB of bandwidth. Suppose you purchased 10 servers then you would have the ability to consume 2 TB of bandwidth per server. However, let us assume that given your application architecture only 2 of these 10 servers are really web facing while the rest are used for storage, search, database or other internal functions then the provider that allows bandwidth pooling would let you consume overall 20 TB of bandwidth as incoming or outbound or both depending on their policy. The provider that does not offer [[bandwidth pooling]] would just let you use 4 TB of bandwidth, and the rest of the 16 TB of bandwidth would be practically unusable.
+
+
+One of the reasons for choosing to outsource dedicated servers is the availability of high powered networks from multiple providers. As dedicated server providers utilize massive amounts of bandwidth, they are able to secure lower volume based pricing to include a multi-provider blend of bandwidth. To achieve the same type of network without a multi-provider blend of bandwidth, a large investment in core routers, long term contracts, and expensive monthly bills would need to be in place. The expenses needed to develop a network without a multi-provider blend of bandwidth does not make sense economically for hosting providers.
+
+Many dedicated server providers include a [[service level agreement]] based on [[computer network|network]] uptime. Some dedicated server hosting providers offer a 100% uptime guarantee on their network. By securing multiple vendors for connectivity and using redundant hardware, providers are able to guarantee higher uptimes; usually between 99-100% uptime if they are a higher quality provider. One aspect of higher quality providers is they are most likely to be [[Multihoming|multi-homed]] across multiple quality uplink providers, which in turn, provides significant redundancy in the event one goes down in addition to potentially improved routes to destinations.
+
+Bandwidth consumption over the last several years has shifted from a per megabit usage model to a per gigabyte usage model. Bandwidth was traditionally measured in line speed access that included the ability to purchase needed megabits at a given monthly cost. As the shared hosting model developed, the trend towards gigabyte or total bytes transferred, replaced the megabit line speed model so dedicated server providers started offering per gigabyte.
+
+Prominent players in the dedicated server market offer large amounts of bandwidth ranging from 500 gigabytes to 3000 gigabytes using the âoversellingâ model. It is not uncommon for major players to provide dedicated servers with 1Terabyte (TB) of bandwidth or higher. Usage models based on the byte level measurement usually include a given amount of bandwidth with each server and a price per gigabyte after a certain threshold has been reached. Expect to pay additional fees for bandwidth overage usage. For example, if a dedicated server has been given 3000 gigabytes of bandwidth per month and the customer uses 5000 gigabytes of bandwidth within the billing period, the additional 2000 gigabytes of bandwidth will be invoiced as bandwidth overage. Each provider has a different model for billing. As of yet, no industry standards have been set.
+
+==Management==
+{{main|Managed dedicated server}}
+To date, no industry standards have been set to clearly define the management role of dedicated server providers. What this means is that each provider will use industry standard terms, but each provider will define them differently. For some dedicated server providers, fully managed is defined as having a web based control panel while other providers define it as having dedicated system engineers readily available to handle all server and network related functions of the dedicated server provider. 
+
+Server management can include some or all of the following:
+
+*[[Operating system]] updates
+*Application updates
+*[[Internet Server Monitoring|Server monitoring]]
+*[[Simple Network Management Protocol|SNMP]] hardware monitoring
+*Application monitoring
+*Application management
+*Technical support
+*[[Firewall (computing)|Firewall]] services
+*[[Antivirus software|Antivirus]] updates
+*[[Information technology security audit|Security audits]]
+*[[Denial-of-service attack|DDoS]] protection and mitigation
+*[[Intrusion detection]]
+*[[Backup]]s and restoration
+*[[Disaster recovery]]
+*[[DNS hosting service]]
+*[[Load balancing (computing)|Load balancing]]
+*Database administration
+*Performance tuning
+*Software installation and configuration
+*User management
+*Programming consultation
+ 
+Dedicated hosting server providers define their level of management based on the services they provide. In comparison, fully managed could equal self managed from provider to provider.    
+
+Administrative maintenance of the operating system, often including upgrades, [[Patch (computing)|security patches]], and sometimes even [[daemon (computer software)|daemon]] updates are included. Differing levels of management may include adding users, domains, daemon configuration, or even custom programming.
+
+Dedicated server hosting providers may provide the following types of server managed support:
+
+* Fully Managed - Includes monitoring, software updates, reboots, security patches and operating system upgrades. Customers are completely hands-off.
+* Managed - Includes medium level of management, monitoring, updates, and a limited amount of support. Customers may perform specific tasks.
+* Self Managed - Includes regular monitoring and some maintenance. Customers provide most operations and tasks on dedicated server.
+* Unmanaged - Little to no involvement from [[service provider]]. Customers provide all maintenance, upgrades, patches, and security.
+
+==Security==
+Dedicated hosting server providers utilize extreme security measures to ensure the safety of data stored on their network of servers. Providers will often deploy various software programs for scanning systems and networks for obtrusive invaders, spammers, hackers, and other harmful problems such as [[Trojan horse (computing)|Trojans]], worms, and crashers (Sending multiple connections). [[Linux]] and [[Microsoft Windows|Windows]] use different software for security protection.
+
+==Software==
+
+Providers often bill for dedicated servers on a fixed monthly price to include specific software packages. Over the years, software vendors realized the significant market opportunity to bundle their software with dedicated servers. They have since started introducing pricing models that allow dedicated hosting providers the ability to purchase and resell software based on reduced monthly fees.
+
+Microsoft offers software licenses through a program called the Service Provider License Agreement. The SPLA model provides use of Microsoft products through a monthly user or processor based fee. SPLA software includes the Windows Operating System, Microsoft SQL Server, Microsoft Exchange Server, Microsoft SharePoint and shoutcast hosting, and many other server based products.
+
+Dedicated Server Providers usually offer the ability to select the software you want installed on a dedicated server. Depending on the overall usage of the server, this will include your choice of operating system, database, and specific applications. Servers can be customized and tailored specific to the customerâs needs and requirements.    
+
+Other software applications available are specialized web hosting specific programs called control panels. Control panel software is an all inclusive set of software applications, server applications, and automation tools that can be installed on a dedicated server. Control panels include integration into web servers, database applications, programming languages, application deployment, server administration tasks, and include the ability to automate tasks via a web based front end.
+
+Most dedicated servers are packaged with a control panel. Control panels are often confused with management tools, but these control panels are actually web based automation tools created to help automate the process of web site creation and server management. Control panels should not be confused with a full server management solution by a dedicated hosting provider.
+
+==Limitations==
+Many providers do not allow [[Internet Relay Chat|IRC]] (bots, clients or daemons). This is due to rogue IRC users triggering [[DDoS]] attacks against the provider, which may overwhelm their networks, lowering service quality for all customers.
+
+*[[Pornography|Adult content]] is disallowed by many providers as it may either be of questionable legality or consume large amounts of bandwidth.
+*[[Copyright violation]] Hosting copyrighted material of which you do not own the copyright to is against the terms of service of most hosting companies.
+
+==See also==
+* [[Hosting environment]]
+* [[Data center]]
+
+&lt;!-- ==============================({{NoMoreLinks}})============================== --&gt;
+&lt;!-- DO NOT ADD MORE LINKS TO THIS ARTICLE. WIKIPEDIA IS NOT A COLLECTION OF LINKS --&gt;
+&lt;!--                  Links to hosting services WILL BE DELETED.                   --&gt;
+&lt;!-- ============================================================================= --&gt;
+
+[[Category:Web hosting]]
+
+[[de:Dedizierter Server]]
+[[es:Servicio de alojamiento dedicado]]
+[[fa:Ø³Ø±ÙØ± Ø§Ø®ØªØµØ§ØµÛ]]
+[[fr:Serveur dÃ©diÃ©]]
+[[nl:Dedicated server]]
+[[no:Dedikert server]]
+[[pl:Serwer dedykowany]]
+[[pt:Servidor dedicado]]
+[[ru:ÐÑÐ´ÐµÐ»ÐµÐ½Ð½ÑÐ¹ ÑÐµÑÐ²ÐµÑ]]
+[[zh:ä¸ææå¡å¨]]</rev></revisions></page></pages></query></api>

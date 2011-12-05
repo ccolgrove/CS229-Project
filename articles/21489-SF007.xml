@@ -1,0 +1,239 @@
+<?xml version="1.0"?><api><query><pages><page pageid="21489" ns="0" title="NetHack"><revisions><rev xml:space="preserve">{{Infobox video game
+| title          = NetHack
+| image          = [[Image:Nethack releasing a djinni.png|220px]]
+| caption        = A released [[genie|djinni]] grants the player a wish.
+| aspect ratio   =
+| resolution     =
+| developer      = [http://www.nethack.org/v343/Guidebook.html#_TOCentry_51 The NetHack DevTeam]
+| writer         =
+| publisher      =
+| distributor    =
+| license        = [[NetHack General Public License]]
+| series         =
+| engine         =
+| version        = 3.4.3 (8 December 2003)&lt;br /&gt;3.4.1 (23 February 2003)&lt;br /&gt;3.4.0 (20 March 2002)&lt;br /&gt;3.3 (10 December 1999)
+| released       = 1.3d ([[1987#July|July 1987]])&lt;ref&gt;{{Cite web|url=http://nethackwiki.com/wiki/NetHack_1.3d |title=NetHack 1.3d |work=[http://nethackwiki.com/wiki/Main_Page NetHackWiki] |accessdate=2008-12-15}}&lt;/ref&gt;
+| genre          = [[Roguelike]]
+| modes          =
+| ratings        =
+| platforms      = [[Cross-platform]]
+| media          =
+| requirements   =
+| input          = [[Computer keyboard|Keyboard]] and [[mouse (computing)|mouse]]
+}}
+'''''NetHack''''' is a single-player [[roguelike]] [[video game]] originally released in [[1987 in video gaming|1987]]. It is a descendant of an earlier game called ''[[Hack (Unix video game)|Hack]]'' ({{vgy|1985}}), which is a descendant of ''[[Rogue (computer game)|Rogue]]'' ({{vgy|1980}}).&lt;ref name='Salon 2000-01-26' /&gt; [[Salon.com|Salon]] describes it as &quot;one of the finest gaming experiences the computing world has to offer.&quot;&lt;ref name='Salon 2000-01-26'&gt;{{Cite web|url=http://archive.salon.com/tech/feature/2000/01/27/nethack/ |title=The best game ever |accessdate=2009-07-13 |last=Au |first=Wagner James |date=2000-01-26 |work=[[Salon.com]] |publisher=Salon Media Group |archiveurl=http://web.archive.org/web/20080113042211/http://archive.salon.com/tech/feature/2000/01/27/nethack/ |archivedate=2008-01-13 }}&lt;/ref&gt;
+
+The &quot;net&quot; element references the fact that its development was coordinated through [[USENET]],&lt;ref&gt;{{Cite web|url=http://nethack.sourceforge.net/docs/nh340/nethack.txt |title=NETHACK(6) Manpage |accessdate=2009-12-08 |work=nethack.sourceforge.net}}&lt;/ref&gt;&lt;ref&gt;{{Cite web|url=http://nethackwiki.com/wiki/NetHack_1.3d |title=NetHack 1.3d â NetHackWiki â Wishing, royal jelly, artifacts, and more |accessdate=2009-12-08 |work=nethackwiki.com}}&lt;/ref&gt; even before the [[World Wide Web]] existed. The &quot;hack&quot; element refers to the game it was based on, ''[[Hack (Unix video game)|Hack]]''. The player takes the part of a dungeon-delving character in search of the Amulet of Yendor.&lt;ref&gt;{{Cite news|last=Au|first=Wagner James|author-link=|title=Back to the Dungeon|newspaper=Wired|date=August 1997|url=http://www.wired.com/wired/archive/5.08/streetcred.html?pg=3|postscript=.}}&lt;/ref&gt;
+__TOC__
+&lt;!-- commented out, see &quot;Talk:NetHack#Timeline Commented Out&quot; [braces replaced with parentheses, below]
+{{-}}
+(|class=&quot;wikitable&quot; style=&quot;float: right; clear: right; margin-left: 8px; margin-right: 0&quot;
+|&lt;timeline&gt;
+# History of NetHack
+# Source: http://www.spod-central.org/~psmith/nh/anhftime.html
+# For the Brouwer Hacks, the original Usenet posts at
+# http://groups.google.com/group/net.sources/msg/ca26bd0114097f32?dmode=source
+# http://groups.google.com/group/net.sources/msg/26d50fa9d577e33b?dmode=source
+# http://groups.google.com/group/net.sources.games/msg/b944083362b069ea?dmode=source
+# http://groups.google.com/group/net.sources.games/msg/d91fc36c40ee4649?dmode=source
+
+ImageSize = width:155 height:1070
+PlotArea = width:115 height:1050 left:39 bottom:20
+
+DateFormat = dd/mm/yyyy
+Period = from:1984 till:2007
+TimeAxis = orientation:vertical
+ScaleMajor = unit:year increment:1 start:1984
+ScaleMinor = unit:month increment:1 start:01/06/1984
+
+Define $dx = 20
+Define $dy = -2
+
+PlotData=
+ bar:NetHack color:black width:25 mark:(line,white) align:left fontsize:S
+
+ from:12/12/1984 till:21/01/1985 shift:($dx,-3) text:[[Hack (video game)|Hack 1.0]]
+ from:21/01/1985 till:01/04/1985 shift:($dx,$dy) text:Hack 1.0.1
+ from:01/04/1985 till:23/07/1985 shift:($dx,$dy) text:Hack 1.0.2
+ from:23/07/1985 till:28/07/1987 shift:($dx,4dy) text:Hack 1.0.3
+ from:28/07/1987 till:14/08/1987 shift:($dx,-3) text:NetHack 1.3d
+ from:14/08/1987 till:03/12/1987 shift:($dx,$dy) text:NetHack 1.4f
+ from:03/12/1987 till:09/04/1988 shift:($dx,$dy) text:NetHack 2.2a
+ from:09/04/1988 till:23/07/1989 shift:($dx,-7) text:NetHack 2.3e
+ from:23/07/1989 till:03/08/1989 shift:($dx,-21) text:NetHack 3.0.0
+ from:03/08/1989 till:18/08/1989 shift:($dx,-14) text:NetHack 3.0.1
+ from:18/08/1989 till:07/09/1989 shift:($dx,-9) text:NetHack 3.0.2
+ from:07/09/1989 till:29/09/1989 shift:($dx,-2) text:NetHack 3.0.3
+ from:29/09/1989 till:17/10/1989 shift:($dx,3) text:NetHack 3.0.4
+ from:17/10/1989 till:22/11/1989 shift:($dx,9) text:NetHack 3.0.5
+ from:22/11/1989 till:23/02/1990 shift:($dx,11) text:NetHack 3.0.6
+ from:23/02/1990 till:05/06/1990 shift:($dx,8) text:NetHack 3.0.7
+ from:05/06/1990 till:28/06/1990 shift:($dx,10) text:NetHack 3.0.8
+ from:28/06/1990 till:08/02/1991 shift:($dx,5) text:NetHack 3.0.9
+ from:08/02/1991 till:28/01/1993 shift:($dx,$dy) text:NetHack 3.0.10
+ from:28/01/1993 till:05/03/1993 shift:($dx,-4) text:NetHack 3.1.0
+ from:05/03/1993 till:10/06/1993 shift:($dx,-2) text:NetHack 3.1.1
+ from:10/06/1993 till:20/07/1993 shift:($dx,$dy) text:NetHack 3.1.2
+ from:20/07/1993 till:18/04/1996 shift:($dx,$dy) text:NetHack 3.1.3
+ from:18/04/1996 till:16/06/1996 shift:($dx,$dy) text:NetHack 3.2.0
+ from:16/06/1996 till:12/12/1996 shift:($dx,$dy) text:NetHack 3.2.1
+ from:12/12/1996 till:12/12/1999 shift:($dx,$dy) text:NetHack 3.2.2
+ from:12/12/1999 till:12/12/1999 shift:($dx,$dy) text:NetHack 3.2.3
+ from:12/12/1999 till:10/08/2000 shift:($dx,$dy) text:NetHack 3.3.0
+ from:10/08/2000 till:21/03/2002 shift:($dx,$dy) text:NetHack 3.3.1
+ from:21/03/2002 till:24/02/2003 shift:($dx,$dy) text:NetHack 3.4.0
+ from:24/02/2003 till:31/08/2003 shift:($dx,$dy) text:NetHack 3.4.1
+ from:31/08/2003 till:09/12/2003 shift:($dx,$dy) text:NetHack 3.4.2
+ from:09/12/2003 till:end shift:($dx,$dy) text:NetHack 3.4.3
+&lt;/timeline&gt;
+|)
+--&gt;
+== History and development ==
+The first version of ''NetHack'' was released by Mike Stephenson in July 1987.&lt;ref&gt;{{Cite web|author=Zero One |url=http://nethack.wikia.com/wiki/NetHack_1.3d|title=NetHack |work=[[Wikihack]] |date=2006-07-15 |accessdate=2011-04-08}}&lt;/ref&gt; 
+
+By the release of Nethack 3.0 in July 1989, a development team had arisen.  Over the next 14 years of development they established a tight-lipped culture, revealing little, if anything, between each release. Owing to the ever-increasing depth and complexity found in each release, the DevTeam enjoys a near-mythical status among some fans.  This perceived omniscience is captured in the acronym TDTTOE, &quot;The DevTeam Thinks of Everything&quot;.&lt;ref&gt;{{Cite web|author=Eli |url=http://nethack.wikia.com/wiki/The_DevTeam_Thinks_Of_Everything|title=Wikihack |work=[[Wikihack]] |date=2006-09 |accessdate=2011-04-08}}&lt;/ref&gt;
+
+For many years fans and others considered NetHack to be &quot;...one of the oldest games still being developed.&quot; &lt;ref&gt;{{Cite web|author=Eli |url=http://jayisgames.com/archives/2006/07/nethack.php|title=NetHack |work=[[Jay Is Games]] |date=2006-07-16 |accessdate=2008-12-15}}&lt;/ref&gt; 
+
+The last version to include new gameplay features was Nethack 3.4.3, released in December 2003.  Subsequent releases have included new tilesets and compatibility with variants of Mac OS.&lt;ref&gt;{{Cite web|author=Kenneth Lorber |url=http://www.nethack.org/|title=NetHack |work=NetHack |year=2009 |accessdate=2011-04-08}}&lt;/ref&gt;
+
+== Gameplay ==
+Before playing a game, the player is asked to name his or her character and then select a [[race (fantasy)|race]], [[character class|role]], [[gender]], and [[alignment (role-playing games)|alignment]], or allow the game to assign them randomly. There are traditional fantasy roles such as [[knight]], [[barbarian]], [[wizard (character class)|wizard]], [[rogue (character class)|rogue]], [[valkyrie]], [[Cleric (character class)|priest]], [[Monk (character class)|monk]], and [[samurai]], but there are also unusual ones, including [[archaeologist]], [[tourist]], and [[caveman]].&lt;ref&gt;{{Cite web|url=http://www.nethack.org/v343/Guidebook.html#_TOCentry_2 |title=NetHack 3.4.3: Guidebook for NetHack 3.4 |publisher=Nethack.org |date= |accessdate=2010-09-08}}&lt;/ref&gt; The [[player character]]'s role and alignment dictate which [[deity]] the character serves in the game and &quot;how other monsters react toward you&quot;.&lt;ref&gt;{{Cite web|url=http://www.nethack.org/v343/Guidebook.html#_TOCentry_4 |title=NetHack 3.4.3: Guidebook for NetHack 3.4 |publisher=Nethack.org |date= |accessdate=2010-09-08}}&lt;/ref&gt;
+
+After the player character is created, the main objective is introduced. To win the game, the player must retrieve the Amulet of Yendor, found at the lowest level of the dungeon, and sacrifice it to his or her deity. Successful completion of this task rewards the player with the gift of [[immortality]], and the player is said to &quot;ascend&quot;, attaining the status of [[demigod]]. In addition, a number of sub-quests must be completed, including one class-specific quest.
+
+The player's character is, unless manually specified otherwise, accompanied by a pet animal, typically a [[kitten]] or [[dog|little dog]], although knights begin with a [[saddle]]d [[pony]].&lt;ref&gt;{{Cite web|url=http://www.nethack.org/v343/Guidebook.html#_TOCentry_17 |title=NetHack 3.4.3: Guidebook for NetHack 3.4 |publisher=Nethack.org |date= |accessdate=2010-09-08}}&lt;/ref&gt;  Pets grow from fighting, and they can be changed by various means.  Most of the other monsters may also be tamed using magic or tempting food.
+
+===Dungeon levels===
+''NetHack'''s dungeon spans about 50 levels, of which most are randomly generated when the player character first encounters them. A typical level contains a way &quot;up&quot; and a way &quot;down&quot; (these may be stairways, ladders, trapdoors etc.), along with several &quot;rooms&quot; joined by corridors. The &quot;rooms&quot; are randomly generated rectangles (as opposed to the linear corridors) and may contain features such as altars, shops, fountains, traps, thrones, pools of water, and sinks based upon the randomly generated features of the room . Some &quot;special&quot; levels are of fixed design in every game session. There are several dungeon branches, including a [[Sokoban]] puzzle&lt;ref&gt;{{Cite web|url=http://nethackwiki.com/wiki/Sokoban |title=Sokoban â NetHackWiki â Strategy, wishing, artifacts, and more |publisher=NetHackWiki.com |date=2010-08-26 |accessdate=2010-09-08}}&lt;/ref&gt; and [[Vlad III the Impaler|Vlad]]'s Tower.&lt;ref&gt;{{Cite web|url=http://nethackwiki.com/wiki/Vlad%27s_Tower |title=Vlad's Tower â NetHackWiki â Strategy, wishing, artifacts, and more |publisher=NetHackWiki.com |date= |accessdate=2010-09-08}}&lt;/ref&gt;
+
+===Items and tools===
+[[Image:Nethack-inventory.png|250px|thumb|right|A player's inventory, as displayed after application of the &quot;menucolors&quot; patch.]]
+''NetHack'' features a variety of items: [[weapon]]s (either ranged or [[melee]]), [[armour|armor]] to protect the player; [[scroll]]s and spellbooks to read, [[potion]]s to quaff, rings, amulets, and an assortment of [[tool]]s such as keys and lamps.&lt;ref&gt;{{Cite web|url=http://www.nethack.org/v343/Guidebook.html#_TOCentry_20 |title=NetHack 3.4.3: Guidebook for NetHack 3.4 |publisher=Nethack.org |date= |accessdate=2010-09-08}}&lt;/ref&gt;
+
+''NetHack''&lt;nowiki&gt;'&lt;/nowiki&gt;s identification of items is almost identical to ''[[Rogue (computer game)|Rogue]]''&lt;nowiki&gt;'&lt;/nowiki&gt;s. For example, a newly-discovered potion may be referred to as a 'pink potion' with no other clues as to its identity. Players can perform a variety of actions and tricks to deduce, or at least narrow down, the identity of the potion.&lt;ref&gt;{{Cite web|url=http://www.nethack.org/v343/Guidebook.html#_TOCentry_51 |title=NetHack 3.4.3: Guidebook for NetHack 3.4 |publisher=Nethack.org |date= |accessdate=2010-09-08}}&lt;/ref&gt; The most obvious is the somewhat risky tactic of simply drinking it.
+
+Like ''Rogue'', all items of a certain type will have the same description; e.g., all scrolls of enchant weapon may be labeled 'TEMOV', and once one has been identified, all scrolls of enchant weapon found will be labeled unambiguously as such. Starting a new game will scramble the items' descriptions again, so the 'silver ring' that is a ring of levitation in one game might be a ring of hunger in another.
+
+===Blessings and curses===
+As in many other roguelike games, all items in ''NetHack'' are either &quot;[[blessing|blessed]]&quot;, &quot;uncursed&quot;, or &quot;[[curse]]d&quot;.&lt;ref&gt;{{Cite web|url=http://www.nethack.org/v343/Guidebook.html#_TOCentry_21 |title=NetHack 3.4.3: Guidebook for NetHack 3.4 |publisher=Nethack.org |date= |accessdate=2010-09-08}}&lt;/ref&gt; The majority of items are found uncursed, but the blessed or cursed status of an item is unknown until it is identified or detected through other means.  The priest character class automatically identifies items as being blessed or cursed.
+
+Generally, a blessed item will be more powerful than an uncursed item, and a cursed item will be less powerful, with the added disadvantage that once it has been equipped by the player, it cannot be easily unequipped. Where an object would bestow an effect upon the character, a curse will generally make the effect harmful, or increase the amount of harm done. There are exceptions, however, which are usually very specific â for example, drinking a cursed potion of gain level will make the character literally rise through the ceiling to the level above.
+
+===Character death===
+Like roguelikes in general, ''NetHack'' features [[Permanent death|permadeath]]: expired characters cannot be revived without having made backup copies of the actual save files. Players sometimes use the acronyms &quot;YAAD&quot; or &quot;YASD&quot; when discussing their characters' deaths, meaning &quot;Yet Another Annoying Death&quot; or &quot;Yet Another Stupid Death&quot;, respectively.&lt;ref&gt;{{Cite web|url=http://nethackwiki.com/wiki/Yet_Another_Stupid_Death |title=Yet Another Stupid Death â NetHackWiki â Strategy, wishing, artifacts, and more |publisher=NetHackWiki.com |date= |accessdate=2010-09-08}}&lt;/ref&gt; An &quot;annoying&quot; death is typically one that was the fault of misfortune more than the player (such as falling into a spiked, poisoned pit trap early in the game); a &quot;stupid&quot; death is when player's actions were directly responsible for their own death.
+
+The prompt &quot;Do you want your possessions identified?&quot; (abbreviated as &quot;DYWYPI&quot; and used to suggest character death) is given by default at the end of any game, allowing the player to learn any unknown properties of the items found during the game. Player's attributes (such as resistances, luck and others), conduct and a tally of creatures killed may also be displayed.
+
+The game sporadically saves a level on which a character has died and then integrates that level into a later game. This is done via &quot;bones files&quot;, which are saved on the computer hosting the game. A player using a publicly-hosted copy of the game can thus encounter the remains and possessions of many other players, although many of these possessions have become cursed. Players can also swap bones files via programs like Hearse.&lt;ref&gt;{{Cite web|url=http://hearse.krollmark.com/ |title=Hearse |accessdate=2008-12-15}}&lt;/ref&gt;
+
+===Conducts===
+Although ''NetHack'' can be completed by new or intermediate players without any artificial limitations, experienced players can attempt &quot;conducts&quot; for an additional challenge.&lt;ref&gt;{{Cite web|url=http://www.nethack.org/v343/Guidebook.html#_TOCentry_38 |title=NetHack 3.4.3: Guidebook for NetHack 3.4 |publisher=Nethack.org |date= |accessdate=2010-09-08}}&lt;/ref&gt; These are voluntary restrictions on actions taken, such as using no wishes, following a [[vegetarian]] or even [[vegan]] diet, or even killing no monsters. While in general conducts are tracked by the game and are displayed at death or ascension, unofficial conducts, such as the Zen conduct (in which the player's character wears a blindfold throughout the whole game), also exist within the ''NetHack'' community.
+
+===Spoilers===
+''NetHack'' is largely based on discovering secrets and tricks during gameplay. It can take years for one to become well-versed in them, and even experienced players routinely discover new ones. A number of ''NetHack'' fansites and discussion forums offer lists of game secrets known as &quot;spoilers&quot;.&lt;ref&gt;{{Cite web|url=http://www.statslab.cam.ac.uk/~eva/nethack/spoilerlist.html |title=List of Nethack Spoilers |publisher=Statslab.cam.ac.uk |date= |accessdate=2010-09-08}}&lt;/ref&gt; Fans of ''NetHack'' consider an ascension without having read spoilers very prestigious; the achievement is so difficult that some question whether it has been or can be accomplished.
+
+==Interface==
+''NetHack'' was originally created with only a simple ASCII [[graphical user interface]], although the option to use something more elaborate was added later in its development. Interface elements â environment, entities, and objects â are represented by arrangements of [[ASCII]] or [[Extended ASCII]] glyphs used in plain text, &quot;[[Digital Equipment Corporation|DEC]] graphics&quot; or &quot;[[IBM]] graphics&quot; mode. In addition to the environment, the interface also displays character and situational information.
+
+A detailed example:
+{|
+|-
+|&lt;pre&gt;
+ You see here a silver ring.
+                                           ------------
+                                         ##....._.....|
+                                           |...........#          ------
+                                          #...........|           |....|
+                      ---------------   ###------------           |...(|
+                      |..%...........|##########               ###-@...|
+                      |...%...........###    #                 ## |....|
+                      +.......&lt;......|       ###              ### |..!.|
+                      ---------------          #              #   ------
+                                               ###          ###
+                                                 #          #
+                                              ---.-----   ###
+                                              |.......|   #
+                                              |........####
+                                              |.......|
+                                              |.......|
+                                              ---------
+ Hacker the Conjurer            St:11 Dx:13 Co:12 In:11 Wi:18 Ch:11  Neutral
+ Dlvl:3  $:120 HP:39(41) Pw:36(36) AC:6  Exp:5 T:1073&lt;/pre&gt;
+|}
+[[Image:NetHack for Windows Screenshot.png|thumb|''NetHack'' for Microsoft Windows in &quot;tiles mode&quot;.]]
+[[Image:vultures-2.1.0 screenshot.jpg|thumb|250px|''Vulture's Eye'' offers an isometric perspective.]]
+[[Image:NeXTSTEP Nethack.png|thumb|250px|''NetHack'' on [[OPENSTEP]]/[[NeXTSTEP]]. ]]
+
+The player (The '@' sign, a wizard in this case) has entered the level via the stairs (the '&lt;' sign) and killed a few monsters, leaving their corpses (the '%' signs) behind. Exploring, the wizard has uncovered three rooms joined by corridors (the '#' signs): one with an altar (the '_' sign), another empty, and the final one (that the wizard is currently in) containing a potion (the '!' sign), chest (the '(' sign), and has just moved onto a square containing a silver ring. Large parts of the level remain unexplored (probably to the west through the door (the '+' sign)) and the player has yet to find the down-stairs (a '&gt;' sign) to the next level.
+
+Apart from the original [[termcap]] interface shown above, there are interfaces that replace standard screen representations with [[2D computer graphics|two-dimensional]] images, or [[Tile-based game#Video games|tiles]], collectively known as &quot;tiles mode&quot;. Graphic interfaces of this kind utilize the [[X Window System]], the similar [[Microsoft Windows]] GUI, the [[Qt (toolkit)|Qt toolkit]], or the [[GNOME]] libraries.
+
+Enhanced graphical options also exist, such as the [[Isometric projection|isometric perspective]] of ''[[Falcon's Eye]]'' and ''[[Vulture's Eye]]'', or the [[3D computer graphics|three-dimensional]] rendering that [[noegnud]] offers. ''Vulture's Eye'' is a [[Fork (software development)|fork]] of the now defunct Falcon's Eye project. ''Vulture's Eye'' adds additional graphics, sounds, bug fixes and performance enhancements and is under active development in an open collaborative environment.
+
+==Online==
+Bugs, humorous messages, stories, experiences, and ideas for the next version are discussed on the [[Usenet]] [[newsgroup]] rec.games.roguelike.nethack.&lt;ref&gt;{{Cite web|url=http://nethackwiki.com/wiki/rec.games.roguelike.nethack |title=rec.games.roguelike.nethack |work=[http://nethackwiki.com/wiki/Main_Page NetHackWiki] |accessdate=2008-12-15}}&lt;/ref&gt;
+
+A public server at nethack.alt.org, commonly known as NAO, gives access to NetHack through a [[Telnet]] interface. A Java [[Telnet]] emulator is also available on the same site. Ebonhack connects to NAO with a graphical tiles-based interface.&lt;ref&gt;{{Cite web|url=http://junction404.com/#ebonhack |title=Ebonhack webpage}}&lt;/ref&gt;
+
+NetHack also has an [[IRC]] channel, #nethack, on the [[Freenode]] network. Many people discuss the game there, and the resident announcer bot, &quot;Rodney&quot;, notifies of every death, ascension and wish that occurs on the NAO server. Rodney can also announce full and new moons, as well as providing a substantial database of information which players can access with commands.
+
+==Ports and variants==
+Unofficial [[Porting|ports]] exist for the [[Nintendo DS]],&lt;ref&gt;{{Cite web|last=Pernsteiner |first=Stuart |url=http://stuartp.commixus.com/nhds/ |title=NetHack for the Nintendo DS |date=2007-03-17 |accessdate=2008-12-15 |work=Stuart Pernsteiner's Website}}&lt;/ref&gt;&lt;ref&gt;{{Cite web|last=Kosinski |first=Brett |url=http://frodo.dyn.gno.org/~brettk/NetHackDS |title=NetHackDS |work=The &quot;B&quot; Ark |date=2008-10-19 |accessdate=2008-12-15}}&lt;/ref&gt; [[PlayStation Portable]],&lt;ref&gt;{{Cite web|url=http://www.feelthepawa.com/PSP/NetHack/ |title=Porting NetHack to the PSP â Latest news |date=2007-03-22 |accessdate=2008-12-15}}&lt;/ref&gt; [[Tapwave Zodiac]],&lt;ref&gt;{{Cite web|url=http://www.retrobits.net/palmos/nethack.shtml |title=NetHack and SlashEM for Palm OS |work=[http://www.retrobits.net/ Retrobits.net] |accessdate=2008-12-15}}&lt;/ref&gt; [[GP2X]],&lt;ref&gt;{{Cite web|url=http://wiki.gp2x.org/wiki/Nethack_(graphical) |title=Nethack (graphical) |work=[http://wiki.gp2x.org/wiki/Main_Page GP2X Wiki] |date=2008-07-12 |accessdate=2008-12-15}}&lt;/ref&gt; [[Windows Mobile]],&lt;ref&gt;{{Cite web|url=http://handheld.softpedia.com/get/Games/Adventure/NetHack-9837.shtml |title=Download NetHack 3.4.3 for Windows Mobile PocketPC â Softpedia |date=2006-04-16 |work=[[Softpedia]] |accessdate=2008-12-13}}&lt;/ref&gt; [[Android (operating system)|Android]],&lt;ref&gt;{{Cite web|url=http://www.androlib.com/android.application.com-nethackff-zzxC.aspx |title=NetHack v1.1.3 Game for Android |work=[http://www.androlib.com/ AndroLib.com] |accessdate=2009-11-14}}&lt;/ref&gt; Nokia Internet Tablets [[Nokia 770|770]], [[N800]] and up &lt;ref&gt;{{Cite web|last=Caron |first=Frank |url=http://arstechnica.com/journals/thumbs.ars/2007/05/24/n800-gaming-overview |title=The N800 surfs nicely, but how does it game? |work=[[Ars Technica]] |date=2007-05-24 |accessdate=2008-12-15}}&lt;/ref&gt;&lt;ref&gt;{{Cite web|url=http://www.rengels.de/computer/nethack/ |title=Nethack ported to Maemo on Nokia 770}}&lt;/ref&gt; and [[iPhone]].&lt;ref&gt;{{Cite web|url=http://code.google.com/p/inethack/|title =iNetHack (NetHack iPhone port)|accessdate=2009-11-23}}&lt;/ref&gt;
+
+One popular variant of NetHack is ''[[Slash'EM]]'', which includes several enhanced features&lt;ref&gt;{{Cite web|url=http://slashem.sourceforge.net/ |title=The Slash'EM Homepage}}&lt;/ref&gt;.
+
+''SporkHack''&lt;ref&gt;{{Cite web|url=http://www.sporkhack.com |title=SporkHack}}&lt;/ref&gt; and ''UnNetHack''&lt;ref&gt;{{Cite web|url=http://apps.sf.net/trac/unnethack |title=UnNetHack}}&lt;/ref&gt;
+are actively developed [[Branching (software)|variants]].
+
+==References==
+{{Reflist}}
+
+==External links==
+&lt;!-- Read external link policies before posting links here http://en.wikipedia.org/wiki/Wikipedia:External_links --&gt;
+{{Wikiquote}}
+{{Portal|Video games}}
+* [http://www.nethack.org/ ''NetHack'' Official Site]
+** [http://www.nethack.org/v343/Guidebook.html A Guide to the Mazes of Menace (Guidebook for ''NetHack'')] by [[Eric S. Raymond]]
+* {{dmoz|Games/Video_Games/Roleplaying/Rogue-like/NetHack/|''NetHack''}}
+* {{moby game|id=/nethack|name=''NetHack''}}
+* [http://archive.gamespy.com/legacy/halloffame/nethack_a.shtm Hall of Fame â ''NetHack''] at [[GameSpy]]
+
+
+{{open source video games}}
+{{Use dmy dates|date=September 2010}}
+
+{{DEFAULTSORT:Nethack}}
+[[Category:1987 video games]]
+[[Category:Role-playing video games]]
+[[Category:Roguelikes]]
+[[Category:Fantasy video games]]
+[[Category:Free, open source roguelikes]]
+[[Category:Amiga games]]
+[[Category:Atari ST games]]
+[[Category:GP2X games]]
+[[Category:Linux games]]
+[[Category:Mac OS games]]
+[[Category:Mac OS X games]]
+[[Category:Windows games]]
+[[Category:Cross-platform software]]
+
+[[ca:NetHack]]
+[[cs:NetHack]]
+[[da:NetHack]]
+[[de:NetHack]]
+[[et:NetHack]]
+[[es:NetHack]]
+[[fr:NetHack]]
+[[ko:ë·íµ]]
+[[it:NetHack]]
+[[nl:NetHack]]
+[[ja:NetHack]]
+[[no:NetHack]]
+[[pl:NetHack]]
+[[pt:NetHack]]
+[[ru:NetHack]]
+[[fi:NetHack]]
+[[sv:NetHack]]
+[[th:à¹à¸à¹à¸à¹à¸®à¹à¸]]
+[[zh:NetHack]]</rev></revisions></page></pages></query></api>

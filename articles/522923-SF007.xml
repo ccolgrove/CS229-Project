@@ -1,0 +1,97 @@
+<?xml version="1.0"?><api><query><pages><page pageid="522923" ns="0" title="Lucene"><revisions><rev xml:space="preserve">{{Merge from|Ferret search library|KinoSearch|Lucene.net|date=May 2011}}
+{{Infobox software
+| name = Lucene
+| logo = [[Image:Lucene logo green 300.png|160px|Lucene logo]]
+| screenshot =
+| caption =
+| developer = [[Apache Software Foundation]]
+| status = Active
+| latest release version = 3.5
+| latest release date = {{release date|2011|11|27}}
+| latest preview version =
+| latest preview date =
+| operating system = [[Cross-platform]]
+| programming language = [[Java (programming language)|Java]]
+| genre = [[Search algorithm|Search]] and [[Index (information technology)|index]]
+| license = [[Apache License]] 2.0
+| website = http://lucene.apache.org
+}}
+
+'''Apache Lucene''' is a [[free software|free]]/[[open source software|open source]] [[information retrieval]] [[Library (computing)|software library]], originally created in [[Java (programming language)|Java]] by [[Doug Cutting]]. It is supported by the [[Apache Software Foundation]] and is released under the [[Apache Software License]].
+
+Lucene has been ported to other programming languages including [[Object Pascal|Delphi]], [[Perl]], [[C Sharp (programming language)|C#]], [[C++]], [[Python (programming language)|Python]], [[Ruby (programming language)|Ruby]] and [[PHP]].
+
+==History==
+Lucene was originally written by [[Doug Cutting]]. It was initially available for download from its home at the [[SourceForge]] web site. It joined the Apache Software Foundationâs [[Jakarta Project|Jakarta]] family of open source Java products in September 2001 and became its own top-level Apache project in February 2005. Until recently, it included a number of sub-projects, such as [[Lucene Java]], Droids, [[Lucene.net|Lucene.Net]], [[Lucy (Lucene)|Lucy]], [[Apache Mahout|Mahout]], [[Solr]], [[Nutch]], [[Open Relevance Project]], [[PyLucene]] and [[Apache Tika|Tika]].  Solr has been merged into the Lucene project itself and Mahout, Nutch and Tika have been moved to be independent top-level projects.
+
+==Features and common use==
+While suitable for any application which requires full text [[Index (search engine)|indexing]] and searching capability, Lucene has been widely recognized &lt;ref&gt;{{cite book |title=Machine Learning and Data Mining in Pattern Recognition: 5th International Conference |last=Perner |first=Petra |authorlink= |coauthors= |year=2007 |publisher=Springer |location= |isbn=978-3-540-73498-7 |page=387 |pages= |url= |accessdate=}}&lt;/ref&gt;&lt;ref&gt;[http://www.glscube.org/downloads/glscube_design.pdf GNU/Linux Semantic Storage System]&lt;/ref&gt; for its utility in the implementation of [[Internet search engine]]s and local, single-site searching.
+
+At the core of Lucene's logical architecture is the idea of a '''document''' containing '''fields''' of text. This flexibility allows Lucene's API to be independent of the [[file format]]. Text from [[Portable Document Format|PDFs]], [[HTML]], [[Microsoft Word]], and [[OpenDocument]] documents, as well as many others (except images), can all be indexed as long as their textual information can be extracted.
+
+== Lucene-based projects ==
+Lucene itself is just an indexing and search library and does not contain [[web spider|crawling]] and HTML [[parsers|parsing]] functionality.  However, several projects extend Lucene's capability:
+* Apache [[Nutch]] provides web crawling and HTML parsing
+* Apache [[Solr]] â an enterprise search server
+* [[ElasticSearch]]  â an enterprise search server. 
+* [[Compass Project|Compass]] â a Java Search Engine Framework
+
+== Users ==
+
+For a list of companies that use Lucene (rather than extend), see Lucene's [http://wiki.apache.org/lucene-java/PoweredBy PoweredBy] page. As an example Twitter is using Lucene for its real time search&lt;ref name=&quot;twitter&quot;&gt;Twitter uses Lucene [http://techcrunch.com/2010/10/06/new-twitter-search/]&lt;/ref&gt;
+
+==See also==
+{{Portal|Free software}}
+* [[Lucene.net]]
+* [[Hadoop]]
+* [[Hibernate search]]
+* [[Xapian]]
+* [[Sphinx (search engine)]]
+* [[LGTE]]
+* [[Information extraction]]
+* [[Text mining]]
+
+==References==
+{{Reflist}}
+
+==Bibliography==
+{{Refbegin}}
+* {{cite book |last= Gospodnetic |first= Otis |coauthors= Erik Hatcher,Michael McCandless|pages = 475
+  |title= Lucene in Action| edition = 2nd |date= June 28, 2009 |publisher= [[Manning Publications]] |location=
+  |isbn= 1-933988-17-7 | url =
+}}
+* {{cite book |last= Gospodnetic |first= Otis |coauthors= Erik Hatcher |pages = 456
+  |title= Lucene in Action| edition = 1st |date = December 1, 2004|publisher= [[Manning Publications]] |location=
+  |isbn= 978-1-932394-28-3 | url =
+}}
+{{Refend}}
+
+==External links==
+* [http://lucene.apache.org/ Lucene homepage]
+* [http://wiki.apache.org/lucene-java/LuceneImplementations List of Lucene Ports (or Implementations) in Other Languages on the Apache wiki]
+* [http://web.archive.org/web/20060715234923/schmidt.devlib.org/software/lucene-wikipedia.html Introductory article with Java code for search] (This page is on [[Internet Archive]]) on [http://download.wikimedia.org/wikipedia/ Wikipedia data]
+* [http://wiki.apache.org/lucene-java/LuceneFAQ Lucene FAQ]
+* [http://code.google.com/p/luke/ Luke (Lucene Index Toolbox)]
+* [http://lab.cisti-icist.nrc-cnrc.gc.ca/cistilabswiki/index.php/LuSql LuSql] High performance JDBC-to-Lucene index builder
+* [http://www.elasticsearch.org/ ElasticSearch] â A Distributed, Highly Available, [[RESTful]] Search Engine
+
+{{Apache}}
+
+[[Category:Apache Software Foundation]]
+[[Category:Free search engine software]]
+[[Category:Java libraries]]
+[[Category:Cross-platform software]]
+
+[[de:Lucene]]
+[[es:Lucene]]
+[[fr:Lucene]]
+[[it:Lucene]]
+[[nl:Lucene]]
+[[ja:Lucene]]
+[[no:Lucene]]
+[[pt:Apache Lucene]]
+[[ru:Lucene]]
+[[th:à¸¥à¸¹à¸à¸µà¸]]
+[[tr:Lucene]]
+[[vi:Lucene]]
+[[zh:Lucene]]</rev></revisions></page></pages></query></api>

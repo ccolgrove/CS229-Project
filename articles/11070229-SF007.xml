@@ -1,0 +1,177 @@
+<?xml version="1.0"?><api><query><pages><page pageid="11070229" ns="0" title="BD+"><revisions><rev xml:space="preserve">{{Expert-subject-multiple|Blu-ray|Cryptography|date=January 2009}}
+
+'''BD+''' is a component of the [[Blu-ray Disc]] [[Digital Rights Management]] system. It was developed by [[Cryptography Research]] Inc. and is based on their [[Self-Protecting Digital Content]] concept.&lt;ref&gt;{{Cite web | title=About SPDC | url=http://www.cryptography.com/technology/spdc/index.html | work= | publisher=Cryptography Research, Inc. | date= | accessdate=2009-04-12}}&lt;/ref&gt; Its intent was to prevent unauthorized copies of [[Blu-ray]] discs and the playback of Blu-ray media using unauthorized devices.
+
+While BD+ has not stemmed the flow of 'cracked' high definition content, it has made it necessary for those who wish to copy Blu-ray movies to reinvest resources to break each new version of security code.&lt;ref&gt;[http://www.afterdawn.com/news/archive/16313.cfm BD+ re-secured, Slysoft beaten]&lt;/ref&gt;
+
+BD+ played a pivotal role in the [[format war]] of Blu-ray and [[HD DVD]]. Several studios cited Blu-ray Disc's adoption of the BD+ anti-copying system as the reason they supported Blu-ray Disc over HD DVD. The copy protection scheme was to take &quot;10 years&quot; to crack, according to Richard Doherty, an analyst with Envisioneering Group.&lt;ref&gt;{{Cite web |url=http://blog.wired.com/27bstroke6/2008/02/how-crypto-won.html |title=How Crypto Won the DVD War |publisher=Wired |author=Ryan Singel  |date=February 26, 2008 |accessdate=2008-02-27}}&lt;/ref&gt;
+
+On 19 November 2007, [[Macrovision]] announced that it planned to acquire the SPDC technology (including patents and software code) from CRI for US$45 million in cash plus stock warrants.&lt;ref name=&quot;Macrovision&quot;&gt;{{Cite web|url=http://www.macrovision.com/company/newscenter/pressreleases/1434_7711.htm|title=Macrovision to Acquire Blu-ray Disc Security Technology from Cryptography Research, Inc.}}&lt;/ref&gt;
+
+== Capabilities ==
+
+{{Cleanup-reorganize|section|date=January 2009}}
+
+BD+ is effectively a [[virtual machine]] embedded in authorized players. It allows content providers to include executable programs on Blu-ray Discs. Such programs can:&lt;ref name=&quot;dellbd-romprotection&quot;&gt;{{Cite web |url=http://www.dell.com/downloads/global/vectors/brcp.pdf |title=Blu-ray Disc Next-Generation Optical Storage: Protecting Content on the BD-ROM |accessdate=2007-05-03 |publisher=[[DELL]] |format=PDF}}&lt;/ref&gt;
+* examine the host environment, to see if the player has been tampered with. Every licensed playback device manufacturer must provide the BD+ licensing authority with memory footprints that identify their devices.
+* verify that the player's keys have not been changed.
+* execute native code, possibly to patch an otherwise insecure system.
+* transform the audio and video output. Parts of the content will not be viewable without letting the BD+-program repair it.
+If a playback device manufacturer finds that its devices have been hacked, it can potentially release BD+-code that detects and circumvents the vulnerability. These programs can then be included in all new disc releases.&lt;ref&gt;{{Cite patent |country=US |number=2010169663 |status=application |title=Systems and Methods for Detecting Authorized Players |pubdate=2010-07-01 |fdate=2009-01-22 |assign1=CYBERLINK CORPORATION}}&lt;/ref&gt;
+
+The specifications of the BD+ virtual machine are only officially available to licensed device manufacturers. A list of licensed adopters is available from the BD+ website.&lt;ref&gt;[http://www.bdplusllc.com/home/list_of_adopters_content_participants_and_eligible_code_developers BD+ Technologies LLC&lt;!-- Bot generated title --&gt;]&lt;/ref&gt; Both [[SlySoft]] and members of the [[Doom9]] forum have reverse engineered the virtual machine specification, however.
+
+According to the reverse-engineered specification, the virtual machine consists of a 32-bit big endian [[DLX]] like processor with 4MB of RAM. It has 32 32-bit registers available for use. A [[Trap (computing)|TRAP instruction]] is used to allow the virtual machine host to perform more complex actions as system calls.&lt;ref name=&quot;Doom9 thread on reverse engineering&quot;&gt;[http://forum.doom9.org/showthread.php?t=140571 Doom9 thread on reverse engineering]&lt;/ref&gt;
+
+To prevent simple, [[Disassembly|static disassembly]] of the BD+ code, an instruction filter is available that can perform an [[XOR]] operation on an opcode before executing it.  By varying the instruction filter at runtime, the compiler can force an adversary to trace through the code at runtime before they can fully disassemble it.&lt;ref&gt;[http://forum.doom9.org/printthread.php?t=140571&amp;pp=20&amp;page=3http://forum.doom9.org/printthread.php?t=140571&amp;pp=20&amp;page=3 Doom9 thread on instruction filter]&lt;/ref&gt;
+
+== Virtual machine ==
+
+This program which can be found inside the BDSVM directory of a BD+ protected disc is called content code.&lt;ref name=&quot;Doom9 thread on reverse engineering&quot;/&gt; The content code is executed on a virtual big endian [[DLX|DLX-like processor]] interfacing 4MB of memory. The processor supports 59 different instructions and a register set consisting of 32 general purpose registers and three special purpose registers for the instruction ï¬lter, the clock cycle counter and the program counter. The BD+ Virtual Machine applies memory protection by masking memory access addresses to prevent them from falling outside of the designated memory areas. The execution of content code starts at address 0x1000 relative to the beginning of the payload of the ï¬rst block of the ï¬le 00001.svm (located inside the BDSVM directory).
+
+=== Traps ===
+
+While the BD+ virtual machine is extremely simple, the interface between the virtual machine and the player is somewhat more complicated.&lt;ref name=&quot;Doom9 thread on reverse engineering&quot;/&gt; BD+ provides the content code with 25 [[system calls]] or &quot;traps&quot;. An overview is given in the table below. Note that the bits 00-07 of the trap id uniquely identify each trap within a group. The group id itself is speciï¬ed by the bits 08-16 of the trap id. The group ids seen so far are 00 (event handling), 01 (cryptography operations), 02 (arithmetic operations), 03 (memory operations), 04 (slot memory access), 05 (device access) and 80 (debugging).
+
+{| class=&quot;wikitable&quot;
+|-
+! Group ID
+! Trap ID
+! Name
+! Parameters
+|-
+| rowspan=&quot;2&quot;| 00
+| 000010 || TRAP_Finished            || 0
+|-
+| 000020 || TRAP_FixUpTableSend      || 2
+|-
+| rowspan=&quot;4&quot;| 01
+| 000110 || TRAP_Aes                 || 5
+|-
+| 000120 || TRAP_PrivateKey          || 5
+|-
+| 000130 || TRAP_Random              || 2
+|-
+| 000140 || TRAP_Sha1                || 4
+|-
+| rowspan=&quot;3&quot;| 02
+| 000210 || TRAP_AddWithCarry        || 3
+|-
+| 000220 || TRAP_MultiplyWithCarry   || 4
+|-
+| 000230 || TRAP_XorBlock            || 3
+|-
+| rowspan=&quot;3&quot;| 03
+| 000310 || TRAP_Memmove             || 3
+|-
+| 000320 || TRAP_MemSearch           || 5
+|-
+| 000330 || TRAP_Memset              || 3
+|-
+| rowspan=&quot;3&quot;| 04
+| 000410 || TRAP_SlotAttach          || 2
+|-
+| 000420 || TRAP_SlotRead            || 2
+|-
+| 000430 || TRAP_SlotWrite           || 1
+|-
+| rowspan=&quot;7&quot;| 05
+| 000510 || TRAP_ApplicationLayer    || 3
+|-
+| 000520 || TRAP_Discovery           || 4
+|-
+| 000530 || TRAP_DiscoveryRAM        || 3
+|-
+| 000540 || TRAP_LoadContentCode     || 5
+|-
+| 000550 || TRAP_MediaCheck          || 6
+|-
+| 000560 || TRAP_RunNative           || 4
+|-
+| 000570 || TRAP_???                 || 0
+|-
+| rowspan=&quot;3&quot;| 80
+| 008010 || TRAP_DebugLog            || 2
+|-
+| 008020 || TRAP_???                 || ?
+|-
+| 008030 || TRAP_???                 || ?
+|}
+Each of these system calls can be invoked by the TRAP instruction (opcode 0x39). By convention register 29 is used as the stack pointer holding the memory address of the parameters. After parameter validation the system call is executed and a return code is written to register 1.
+During its execution the content code performs a series of tests to verify it is being executed in a trusted environment. One of these tests involves asking the player for its certificate with &lt;code&gt;TRAP_Discovery&lt;/code&gt;. The RSA signature of this certificate is later verified by the content code using the public key of the license administration which is (optionally in obfuscated form) also stored in the content code. Later the player is asked to sign a random message with ECDSA by calling &lt;code&gt;TRAP_PrivateKey&lt;/code&gt;. The generated signature is subsequently verified using the player's public key stored in the previously verified certificate.
+
+=== Events ===
+The BD+ virtual machine is event-driven. Five callbacks (events) are defined by the interface which the player may invoke to notify the content code of a variety of events, including the playback of various parts of the movie, shutdown, media eject events, or player security operations. The event data is exchanged using a dedicated memory area (0x00-0x3F). &lt;code&gt;TRAP_Finished&lt;/code&gt; is invoked whenever the content code has finished processing an event. The first event invoked is &lt;code&gt;EVENT_Startup&lt;/code&gt; which starts the execution of the content code.
+
+{| class=&quot;wikitable&quot;
+|-
+! Group ID
+! Event ID
+! Name
+! Parameters
+|-
+| rowspan=&quot;2&quot;| 00
+| 000000 || EVENT_Startup            || 1
+|-
+| 000010 || EVENT_Shutdown           || 1
+|-
+| rowspan=&quot;1&quot;| 01
+| 000110 || EVENT_PlaybackFile       || 2
+|-
+| rowspan=&quot;2&quot;| 02
+| 000210 || EVENT_???                || 2
+|-
+| 000220 || EVENT_PlaybackSegment    || 3
+|}
+
+=== Conversion table ===
+
+Before a BD+-capable disc is mastered, random sections of the .m2ts files are overwritten by random data, effectively corrupting parts of the content.  The original data is stored encrypted and obfuscated within the BD+ content code.&lt;ref name=&quot;Doom9 thread on reverse engineering&quot;/&gt;  After the content code has verified the security of the execution environment, it sends a table with repair instructions (the &quot;conversion table&quot; or &quot;fix-up table&quot;) to the player using the system call &lt;code&gt;TRAP_FixUpTableSend&lt;/code&gt;. The conversion table consists of one subtable for each .m2ts file on the disc.  A subtable consists of multiple, possibly empty, segments which contain the repair descriptors.  Each repair descriptor then provides the raw data and the offset needed to repair a small section of a .m2ts file, replacing the corrupted part of the file with the original data.
+
+== Reverse engineering and emulation of BD+ implementations ==
+
+On November 8, 2007, [[SlySoft]] announced that BD+ discs can be copied with their [[AnyDVD HD]] software.&lt;ref&gt;[http://forum.slysoft.com/showthread.php?t=9453 AnyDVD 6.1.9.6 beta - SlySoft Forum&lt;!-- Bot generated title --&gt;]&lt;/ref&gt; This was possible because first generation BD+ titles did not check if [[Advanced Access Content System|AACS]] was present. This allowed a user to copy a BD to the harddrive and play it back from there using only a specific version of Cyberlink's PowerDVD (3319a), but not to transcode, otherwise manipulate the content or play it back from a burned BD-R or BD-RE.  Updated versions of BD+ security code plugged this hole.
+
+On January 9, 2008, engadgethd.com reported that Fox has stated that BD+ has yet to be compromised.&lt;ref&gt;[http://www.engadgethd.com/2008/01/09/bd-has-not-been-compromised-yet/ BD+ has not been compromised, yet], Engadget HD.&lt;/ref&gt; When asked how many hi-def [[20th Century Fox]] titles had become available online, the rep reported that the titles were available as [[HD DVD]]s in Europe.
+
+On March 3, 2008, [[SlySoft]] updated AnyDVD HD allowing the full decryption of BD+,&lt;ref&gt;[http://forum.slysoft.com/showthread.php?t=14786  Press Release: AnyDVD HD now with BD+ support - SlySoft Forum]&lt;/ref&gt; allowing for not only the viewing of the film itself but also playing and copying disks with third-party software.
+
+On March 19, 2008, a new version of AnyDVD HD was released (6.4.0.0) that supports the full removing of the BD+ copy protection for all titles released to date.&lt;ref&gt;[http://forum.slysoft.com/showthread.php?t=14787 AnyDVD 6.4.0.0 - SlySoft Forum]&lt;/ref&gt;&lt;ref&gt;[http://blogs.zdnet.com/storage/?p=306 ZDNet Blogs]&lt;/ref&gt;&lt;ref&gt;[http://forum.slysoft.com/showthread.php?t=14786 Press Release: AnyDVD HD now with BD+ support  - SlySoft Forum]&lt;/ref&gt;
+
+In May 2008 the Blu-ray release of ''[[Jumper (film)|Jumper]]'' introduced a modified version of BD+ security code which prevented the Slysoft AnyDVD HD software from removing BD+.  This modified version was again circumvented by Slysoft several months after Jumper hit the streets.
+
+In August 2008, members of the Doom9 forum began work on an independent project to create an open-source implementation of BD+.&lt;ref&gt;[http://forum.doom9.org/showthread.php?t=140571  Finally handling BD+ - Doom9 Forum]&lt;/ref&gt;
+
+In late October 2008, the same Doom9 members made the first working repaired BD+ movie with the previously developed open source tools,&lt;ref&gt;[http://forum.doom9.org/showpost.php?p=1207578&amp;postcount=292] Finally handling BD+ - Doom9 Forum&lt;/ref&gt; and as of November 1, 2008, have created code to debug content produced for BD+'s virtual machine.&lt;ref name=&quot;slashDoom9&quot;&gt;{{Cite web|url=http://it.slashdot.org/it/08/11/01/1728222.shtml|title=Doom9 Researchers Break BD+|last=Dawson|first=K|date=2008-11-01|publisher=Slashdot|accessdate=2008-11-02}}&lt;/ref&gt;
+
+On November 2, 2008, Doom9 forums announced that early (pre-May 2008) BD+ discs can be played back using open source software only.&lt;ref&gt;[http://forum.doom9.org/showthread.php?p=1207578#post1207578 Doom9 forums announced that BD+ disc can be copied]&lt;/ref&gt;
+
+In early November 2008 multiple versions of BD+ security code were released which, according to Slysoft, may take a few months to circumvent.&lt;ref&gt;[http://forum.slysoft.com/showthread.php?t=21985 BD+ movies that Anydvd HD 6.4.8.4 beta may not handle properly]&lt;/ref&gt;
+
+On December 29, 2008 Slysoft announced that AnyDVD HD 6.5.0.2 decrypts copy protection on all current Blu-ray movies.&lt;ref name=&quot;forum.slysoft.com&quot;&gt;[http://forum.slysoft.com/showthread.php?t=24602 SlySoft defeats Blu-ray's BD+ DRM scheme again]&lt;/ref&gt;
+
+On February 13, 2009 a 4th version of BD+ security code was discovered on the movie Australia,&lt;ref name=&quot;ReferenceA&quot;&gt;[http://forum.slysoft.com/showthread.php?t=27330 BD+ discs that may not work properly with Anydvd HD]&lt;/ref&gt; rendering Slysoft's existing AnyDVD HD software ineffective.
+
+On March 19, 2009 Slysoft announced that AnyDVD HD 6.5.3.1 adds support for some new BD+ protection in movies, e.g. Australia, The Robe, South Pacific.&lt;ref&gt;[http://forum.slysoft.com/showthread.php?t=28598 AnyDVD (HD) 6.5.3.1 released]&lt;/ref&gt;  Some BD+ movies were not supported by Slysoft's update, e.g. Slumdog Millionaire, The Day the Earth Stood Still, Marley &amp; Me, X-men Trilogy.&lt;ref&gt;[http://forum.slysoft.com/showthread.php?t=28549 More BD+ discs that may not work properly with Anydvd HD]&lt;/ref&gt; Since then, Slysoft has released several updates adding support for newer titles.
+
+On October 7, 2009 support for BD+ was announced for MakeMKV, making it the second application capable of handling all BD+ discs released to date. &lt;ref&gt;[http://www.makemkv.com/forum2/viewtopic.php?f=5&amp;t=612 BD+ status page]&lt;/ref&gt;
+
+In 2010 four other companies released software that can decrypt BD+; DVD Fab. Blu-ray Copy, Leawo Blu-ray Copy, Pavtube Blu-ray Copy, and [[BlindWrite]].
+
+==See also==
+*[[Blu-ray Disc#Digital rights management|Blu-ray Digital Rights Management]]
+
+==References==
+{{Reflist|2}}
+
+{{High definition media}}
+
+{{DEFAULTSORT:Bd}}
+[[Category:Digital rights management]]
+[[Category:Optical disc copy protection]]
+[[Category:Virtual machines]]
+
+[[de:BD+]]
+[[es:BD+]]
+[[fr:BD+]]
+[[it:BD+]]</rev></revisions></page></pages></query></api>

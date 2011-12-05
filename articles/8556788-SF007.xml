@@ -1,0 +1,242 @@
+<?xml version="1.0"?><api><query><pages><page pageid="8556788" ns="0" title="Parallels Desktop for Mac"><revisions><rev xml:space="preserve">{{Infobox software
+| name                   = Parallels Desktop for Mac
+| logo                   = [[Image:Parallelsdesktop.png|64px]]
+| screenshot             = [[Image:Parallels Desktop 5.jpg|260px]]
+| caption                = Parallels Desktop for Mac running [[Windows 7]] on [[Mac OS X 10.6]]
+| developer              = [[Parallels, Inc.]]
+| latest release version = 7.0.15052 (Revision 710728)
+| latest release date    = {{start date and age|2011|11|15}}
+| operating system       = [[Mac OS X]]
+| platform               = [[AppleâIntel architecture]]
+| language               = [[Multi-lingual]]
+| genre                  = [[Virtual machine]]
+| license                = [[Proprietary software|Proprietary]]
+| website                = [http://www.parallels.com/en/products/desktop/ Parallels Desktop for Mac]
+}}
+'''Parallels Desktop for Mac''' by [[Parallels, Inc.]], is software providing [[hardware virtualization]] for [[Macintosh]] computers with [[Intel]] processors.
+
+==Overview==
+[[Parallels, Inc.]] is a developer of desktop and server [[Platform virtualization|virtualization]] software.
+
+===Historical===
+Released on June 15, 2006, it was the first software product to bring virtualization mainstream to Macintosh computers utilizing the [[AppleâIntel architecture]] ([[Connectix]] [[VirtualPC]] was released in 1997 for [[PowerPC]] Macs).
+
+Its name initially was '[[Parallels Workstation]] for Mac OS X', which was consistent with the company's corresponding [[Linux]] and [[Microsoft Windows|Windows]] products. This name was not well received within the Mac community, where some felt that the name, particularly the term âworkstation,â evoked the aesthetics of a Windows product. Parallels agreed: â''Since we've got a great Mac product, we should make it look and sound like a Mac product...''â, it was therefore renamed âParallels Desktop for Macâ.&lt;ref name=&quot;pwfmoxinpdfmatrcirfd&quot;&gt;{{Cite web|title=Parallels Workstation for Mac OS X is now Parallels Desktop for Macâand the release candidate is ready for download! |url=http://parallelsvirtualization.blogspot.com/2006/05/parallels-workstation-for-mac-os-x-is.html |author=Rudolph, Ben |work=The Official Parallels Virtualization Blog |date=2006-05-18 |accessdate=2006-09-26}}&lt;/ref&gt;
+
+On January 10, 2007, Parallels Desktop 3.0 for Mac was awarded âBest in Showâ at [[Macworld Conference &amp; Expo|MacWorld 2007]].&lt;ref&gt;{{Cite web|author=Rudolph, Ben |url=http://www.parallels.com/en/news/id,10614 |title=Parallels Desktop for Mac Update RC Wins MacWorld Expo 2007 &quot;Best in Show&quot; |publisher=Parallels, Inc. |accessdate=2007-01-10 |date=2006-05-18 |archiveurl = http://web.archive.org/web/20070116232507/http://www.parallels.com/en/news/id,10614 &lt;!-- Bot retrieved archive --&gt; |archivedate = 2007-01-16}}&lt;/ref&gt;
+
+===Technical===
+Parallels Desktop for Mac is a hardware emulation virtualization software, using [[hypervisor]] technology that works by mapping the host computerâs hardware resources directly to the virtual machineâs resources. Each virtual machine thus operates identically to a standalone computer, with virtually all the resources of a physical computer.&lt;ref&gt;{{Cite web|url=http://www.parallels.com/files/upload/Parallels%20Desktop%20for%20Mac%20Updated%20Datasheet.pdf |title=Parallels Desktop for Mac Datasheet |publisher=Parallels, Inc. |accessdate=2007-01-02 |archiveurl = http://web.archive.org/web/20070307114844/http://www.parallels.com/files/upload/Parallels+Desktop+for+Mac+Updated+Datasheet.pdf &lt;!-- Bot retrieved archive --&gt; |archivedate = 2007-03-07}}&lt;/ref&gt; Because all guest virtual machines use the same hardware drivers irrespective of the actual hardware on the host computer, virtual machine instances are highly portable between computers. For example, a running virtual machine can be stopped, copied to another physical computer, and restarted.
+
+Parallels Desktop for Mac is able to virtualize a full set of standard PC hardware, including&lt;ref name=&quot;Feature&quot;&gt;{{Cite web|url=http://www.parallels.com/en/products/desktop/sr/ |title=System Requirements |publisher=Parallels, Inc. |accessdate=2007-01-02 |archiveurl = http://web.archive.org/web/20061221023133/http://www.parallels.com/en/products/desktop/sr/ &lt;!-- Bot retrieved archive --&gt; |archivedate = 2006-12-21}}&lt;/ref&gt;
+* A virtualized [[Central processing unit|CPU]] of the same type as the host's physical processor,
+* [[ACPI]] compliance system,
+* A generic [[motherboard]] compatible with the [[Intel]] i965 chipset,
+* Up to 8 GB of [[RAM]] for guest virtual machines,
+* Up to 1 GB of video RAM (VRAM),
+* [[VGA]] and [[SVGA]] [[video adapter]] with [[VESA]] 3.0 support and [[OpenGL]] and [[DirectX]] acceleration,
+* A 1.44 MB [[floppy drive]], which can be mapped to a physical drive or to an image file,
+* Up to four [[Integrated Drive Electronics|IDE]] devices.  This includes virtual [[hard disk|hard drives]] ranging in size from 20 MB to 2 TB each and CD/DVD-ROM drives.  Virtual CD/DVD-ROM drives can be mapped to either physical drives or [[ISO image]] files.
+* DVD/CD-ROM âpass-throughâ access,
+* Up to four [[serial port]]s that can be mapped to a pipe or to an output file,
+* Up to three bi-directional [[parallel port]]s, each of which can be mapped to a real port, to a real printer, or to an output file,
+* An [[Ethernet]] virtual [[network adapter|network card]] compatible with [[Realtek]] RTL8029(AS), capable of up to 16 network interface connections,
+* Up to eight [[USB|USB 2.0]] devices and two USB 1.1 devices,
+* An [[AC'97]]-compatible sound card.
+* A 104-key Windows enhanced keyboard and a [[PS/2 connector|PS/2]] wheel mouse.
+
+Note that no mention is made of support for the following host interfaces:
+* [[Bluetooth]]
+* [[Firewire]]
+* [[Fibre Channel]]
+* [[PC Card]]
+* [[SCSI]]
+* [[Serial Attached SCSI|SAS]]
+* [[eSATA]]
+* [[TOSLINK]]
+
+==Version 2.5==
+&lt;!-- Deleted image removed: [[Image:Parallels coherence.jpg|thumb|right|260px|Parallels Coherence]] --&gt;
+The first official release of version 2.5 was on February 27, 2007, as build 3186.
+
+Version 2.5 brought support for USB 2.0 devices, which expanded the number of USB devices supported at native speed, including support for built in [[iSight]] USB web-cams. The amount of video RAM allocated to the guest OS was made adjustable, up to 32MB. Full featured CD/DVD drives arrived in this version, which allowed the user to burn disks directly in the virtual environment, and play any copy-protected CD or DVD as one would in Mac OS X. In addition, a shared clipboard and drag-drop support between Mac OS X and the guest OS was implemented. This version brought the ability for users with a Windows XP installation to upgrade to Windows Vista from within the VM environment.&lt;ref&gt;{{Cite web|url=http://www.parallels.com/en/products/desktop/ga/features/|title=Desktop Release Features|publisher=Parallels Web |accessdate=2007-02-28 |archiveurl = http://web.archive.org/web/20070302073922/http://www.parallels.com/en/products/desktop/ga/features/ &lt;!-- Bot retrieved archive --&gt; |archivedate = 2007-03-02}}&lt;/ref&gt; A new feature known as '''Coherence''' was added, which removed the Windows chrome, desktop, and the virtualization frames to create a more seamless desktop environment between Windows and Mac OS X applications. This version also allowed users to boot their existing [[Boot Camp (software)|Boot Camp]] Windows XP partitions, which eliminated the need to have multiple Windows installations on their Mac. A tool called '''Parallels Transporter''' was included to allow users to migrate their Windows PC, or existing [[VMware]] or [[Virtual PC]] VMs to Parallels Desktop for Mac.
+
+===Netsys lawsuit===
+
+In 2007, the German company Netsys GmbH sued Parallels' German distributor Avanquest for copyright violation, claiming that Parallels Desktop and Parallels Workstation are directly based on a line of products called âtwoOStwoâ that Parallels developed on paid commission for Netsys, of which it says, Netsys has been assigned all copyrights.  Additionally, the lawsuit claimed that Parallels Desktop 2.5's compatibility with âtwoOStwoâ showed that the two software products are run by essentially the same functional core.&lt;ref&gt;[http://www.virtual-strategy.com/article/articleview/2042/1/2/ Virtual Strategy Magazine â Virtualization's Dirty Laundry Aired in German Court Room&lt;!-- Bot generated title --&gt;]&lt;/ref&gt;  When Netsys lost its initial urgency proceeding, in which it requested a temporary injunction from the Landgericht district court of Berlin, it filed a new suit.&lt;ref&gt;[http://www.macnn.com/articles/07/05/31/netsys.sues.avanquest MacNN | Netsys sues Parallels German distributor&lt;!-- Bot generated title --&gt;]&lt;/ref&gt;
+
+==Version 3.0==
+[[Image:Parallels Desktop graphics.jpg|thumb|right|260px|Parallels Desktop features hardware accelerated 3D graphics, and runs many Windows games, including [[Crysis]], shown here.]]
+
+On June 7, 2007 build 4124 was released as the first publicly available version of Desktop 3.0.
+
+Version 3.0 retained all of the functionality from previous versions and added new features and tools. Support for [[DirectX]] 8.1 and [[OpenGL]]&lt;ref&gt;{{Cite web|url=http://www.parallels.com/en/products/desktop/3d/ |title=Parallels Desktop for Mac 3.0 3D Graphics |publisher=SWSoft Parallels |date=2007-06-07}}&lt;/ref&gt; was added, allowing Mac users to play some Windows games without the need to boot into Windows with Boot Camp.&lt;ref&gt;{{Cite web|url=http://www.insidemacgames.com/features/view.php?ID=486 |title=Inside Mac Games Interviews Parallels |last=Wang |first=Anthony |publisher=Inside Mac Games |date=2006-12-11 |accessdate=2006-12-21}}&lt;/ref&gt; A new feature called '''SmartSelect''' offers cross OS file and application integration by allowing the user to open Windows files with Mac OS X programs and vice versa. '''Parallels Explorer''' was introduced, which allows the user to browse their Windows system files in Mac OS X without actually launching Windows. A new snapshot feature was included, allowing one to restore their virtual machine environment to a previous state in case of issues. Further, Parallels added a security manager to limit the amount of interaction between the Windows and Mac OS X installations. This version included a long awaited ''complete'' âParallels tools'â driver suite for Linux guest operating systems. Therefore integration between Mac OS X and Linux guest-OS's has been greatly improved.&lt;ref name=3.0&gt;{{Cite web|url=http://www.parallels.com/en/products/desktop/features/ |title=Parallels Desktop for Mac 3.0 overview |publisher=SWSoft Parallels |date=2007-05-31}}&lt;/ref&gt;
+
+Despite the addition of numerous new features, tools and added functionality, the first iteration of Desktop for Mac 3.0 may be missing some of features that Parallels had planned for it. A Parallels, Inc. representative stated at [[Macworld Conference &amp; Expo|MacWorld]] in January 2007 that version 3.0 would bring accelerated graphics, âmulti-core virtual machines/virtual SMP, some SCSI support, a more Mac-like feel, as well as a more sophisticated coherence mode, dubbed Coherence 2.0â.&lt;ref name=&quot;Macworld&quot;&gt;{{Cite web|url=http://arstechnica.com/journals/apple.ars/2007/1/11/6582 |title=Ars at Macworld: Interview with Parallels |last=Chang |first=Jacqui |publisher=Arstechica |date=2007-01-11}}&lt;/ref&gt; While accelerated graphics have materialised,  Coherence, as well as the overall look and feel of Parallels Desktop for Mac has only changed slightly. Also, [[SCSI]] support has not been implemented.&lt;ref name=3d&gt;{{Cite web|url=http://www.parallels.com/en/products/desktop/3d/ |title=Parallels Desktop for Mac 3.0 overview |publisher=SWSoft Parallels |date=2007-06-07}}&lt;/ref&gt;
+
+It is currently unknown if these features have been abandoned altogether, or if they will show up in a later build of version 3.0.
+
+Build 4560, released on July 17, 2007,&lt;ref&gt;Rudolph, Ben (2007-07-17). [http://parallelsvirtualization.blogspot.com/2007/07/desktop-for-mac-30-build-4560.html Desktop for Mac 3.0 â Build 4560]. Retrieved on 2007-07-17.&lt;/ref&gt; added an imaging tool which allowed users to add capacity to their virtual disks.
+
+===Feature update===
+[[Image:Parallels Coherence + Expose.png|thumb|right|260px|Parallels Coherence in ExposÃ©]]
+Build 5160, released on September 11, 2007,&lt;ref&gt;{{Cite web|url=http://parallelsvirtualization.blogspot.com/2007/09/parallels-desktop-30-feature-update-is.html |title=Parallels Desktop 3.0 Feature Update is LIVE! |publisher=Official Parallels Blog |date=2007-09-01 |accessdate=2007-09-12 |last=Rudolph |first=Ben}}&lt;/ref&gt;
+added some new features and updated some current features.
+
+The release focused on updates to Coherence, with support for [[ExposÃ© (Mac OS X)|ExposÃ©]], window shadows, transparent windows, and the ability to overlap several Windows and Mac windows. Further, Parallels' Image Tool was updated to allow  one to change their virtual hard disk format between plain and expanding.
+Parallels Explorer was updated to allow for one to automatically mount an offline VM hard drive to the Mac desktop. Some new features added are [[iPhone]] support in Windows, allowing [[iTunes]] in Windows to [[Synchronization|sync]] with it.&lt;ref&gt;{{Cite web|url=http://www.parallels.com/en/products/desktop/beta |title=Beta Announcement Parallels Desktop 3.0 for Mac Feature Update |publisher=Parallels, Inc. |date=2007-08-02}}&lt;/ref&gt; Users can now mirror desktops or other folders. Further, Mac drives can now be mapped by Windows and sound devices can now be changed â[[on the fly]]â. Up to 2 GB of RAM can be allocated to a virtual machine, with a total of 4 GB of RAM available.&lt;ref name=MEM&gt;[http://forums.parallels.com/thread16150.html Parallels Desktop 3.0 build 5160 features and improvements]&lt;/ref&gt;
+
+Parallels Desktop for Mac Build 5608 added support for guest Parallels Tools for Linux in the latest Linux distributions (including Ubuntu 8).  It also added support for running 3D graphics in Windows virtual machines on Mac OS X Leopard 10.5.3.
+
+===Use of code from the Wine project===
+According to Parallels' Licensing page, Desktop for Mac version 3.0 contains [[Direct3D]] code that was originally developed by the [[Wine (software)|Wine]] [[open source]] project.&lt;ref&gt;[http://www.parallels.com/en/support/desktop/licensing/ Licensing information].  Parallels, Inc.  Retrieved on 2007-07-16.&lt;/ref&gt;  Wine software is licensed under the [[GNU Lesser General Public License]], which required Parallels to release the [[source code]].  Parallels released the modified source code on July 2, 2007, about 2 weeks after the promised release date.&lt;ref&gt;DÃ¶singer, Stefan (2007-07-03). [http://wiki.winehq.org/Parallels Parallels Desktop Watch].  The official Wine Wiki.  Retrieved on 2007-07-30.&lt;/ref&gt;  A Parallels spokesman explained the reasons for the delay in a message on the official company blog.&lt;ref&gt;Rudolph, Ben (July 3, 2007).  [http://parallelsvirtualization.blogspot.com/2007/07/lowdown-on-parallels-wine.html The Lowdown on Parallels &amp; Wine].  Retrieved on 2007-07-30.&lt;/ref&gt;
+
+==Version 4.0==
+Version 4.0, released November 11, 2008,&lt;ref name=&quot;powerpage.org&quot;&gt;http://www.powerpage.org/2008/11/parallels_desktop_for_mac_40_released.html&lt;/ref&gt; updates its GUI, adds some new features, enhances its performance by up to 50%&lt;ref&gt;http://www.techspot.com/news/32413-parallels-lauches-desktop-for-mac-40.html&lt;/ref&gt; and has been developed to consume 15â30% less power than previous versions.&lt;ref&gt;http://www.marketwatch.com/news/story/Parallels-Desktop-40-Mac-Offers/story.aspx?guid=%7B012A7E5A-5481-4482-B296-0472824F2013%7D&lt;/ref&gt;  Version 4.0 is the first version of Parallels Desktop that supports both 32-bit and 64-bit guest operating systems.  Parallels Desktop 4.0 for Macâs 3D support includes DirectX 9.0, DirectX Pixel Shader 2.0 and OpenGL 2.0 &lt;ref&gt;http://www.macworld.com/article/136717/2008/11/parallels.html&lt;/ref&gt; as well as 256 MB video memory.  It also adds support for 8 GB RAM in a virtual machine and 8-way SMP.  Parallels Desktop 4.0 introduces an adaptive hypervisor, which allows users to focus the host computerâs resources towards either host or the guest operating system.&lt;ref&gt;http://www.informationweek.com/news/hardware/mac/showArticle.jhtml?articleID=212001646&lt;/ref&gt;
+
+Parallels Desktop 4.0 for Mac adds some new features such as:
+* A fourth viewing mode called Modality,&lt;ref name=&quot;powerpage.org&quot;/&gt; which allows users to scale the size of an active guest operating system on the Macâs desktop
+* A new screenshot utility called Clips, which lets users take and share screenshots between the host and the guest operating systems.
+* Start Menu integration and Automatic Windows Notifications on the Apple Menu Bar.
+* The ability to use select voice commands&lt;ref&gt;http://www.jkontherun.com/2008/11/parallels-40-re.html&lt;/ref&gt; to remotely control the virtual machine.
+* The ability to start and stop a virtual machine via the iPhone. (Requires installing an iPhone application from Apple's AppStore.)
+
+Since the Version 4.0 release, Parallels Desktop for Mac has a new logo.  The new logo has what resembles an aluminum [[iMac]], with what appears to be [[Windows XP]] on the screen and 2 parallel red lines overlaid on right side.
+
+===Feature Update===
+Build 3810, released January 9, 2009,&lt;ref&gt;http://weblog.infoworld.com/virtualization/archives/2009/01/parallels_updat_2.html&lt;/ref&gt; includes performance enhancements and features, such as DirectX 9.0 Shaders Model 2 and Vertex Shader support for additional 3D support Intel Streaming SIMD Extensions (SSE4) for better media applications performance.  Build 3810 also adds support for running Windows 7 in a VM and for running Mac OS X Snow Leopard Server as either a host or as a guest OS.&lt;ref&gt;http://www.macobserver.com/tmo/article/parallels_desktop_4.0_build_3810_released/&lt;/ref&gt;
+
+Also included are usability features such as the ability to share Windows files by dragging them directly to a Mac application in Mac Dock. Windows can now also automatically start in the background when a user opens a Windows application on the Mac desktop. Version 4.0 drew criticism for problems upgrading from Version 3.0 shortly after its initial release.&lt;ref&gt;http://www.ecommercetimes.com/story/65195.html&lt;/ref&gt; Build 3810 also addresses installation and upgrade issues previously experienced with Version 4.0 and introduces the option to enroll in the company's new Customer Experience Program, which lets customers provide information about their preferences and user priorities.
+
+==Version 5==
+Officially released on November 4, 2009, Parallels Desktop 5 adds several new features, mainly to improve integration with the host OS. 
+
+New features include:
+* 3d graphics and speed improvements
+* Optimized for Mac OS X 10.6 (Snow Leopard) 
+* support for Windows 7
+* theming of Windows applications to make them look like native applications
+* support for Multi-Touch gestures (from a trackpad or Magic Mouse) and the Apple Remote
+* The ability to drag and drop formatted text and images between Windows, Linux, and Mac applications,
+* The ability for a system administrator to lock down a virtual machine so that users can't change the state of the virtual machine,
+* Support for Open GL 2.1 for Linux guest virtual machines.
+* support for DirectX 9c with Shader Model 3.
+
+===Feature Update===
+Build 9308, released on December 21, 2009, added some new features.&lt;ref&gt;A Holiday Basket of Goodies: Parallels Desktop 5 Build 9308 and New Features http://blogs.parallels.com/consumertech/2009/12/a-holiday-basket-of-goodies-parallels-desktop-5-build-9308-and-new-features.html&lt;/ref&gt;
+
+====Linux guest operating systems====
+* Parallels Tools support [[X.Org Server|Xorg 1.7]] in Fedora 12 virtual machines (experimental)
+* Parallels Tools support [[Mandriva]] 2010 (experimental)
+* [[OpenSUSE]] 11.1 installation media auto detection
+
+====Virtualization====
+* Improved performance for [[USB]] mass storage.
+
+====Windows guest operating systems====
+* Improved resume from suspend in virtual machines with multiple monitors assigned.
+* Improved performance of file access via Shared Folders.
+
+====3D &amp; Video====
+* Improved performance for video playback in Windows Vista and Windows 7.
+* [[Windows Aero]] is not available by default for machines with Intel [[Intel GMA#GMA X3100|GMA X3100]] and [[Intel GMA#GMA 950|GMA 950]] graphic adapters (some MacBook and Mac Mini models). It is available on MacBooks with NVIDIA 9400M graphics cards.&lt;ref&gt;Aero support in Parallels 5 [http://forum.parallels.com/showpost.php?p=389990&amp;postcount=7 Aero does not work in Parallels 5]&lt;/ref&gt;
+* Vertical synchronization is now configurable. You can configure these settings using the corresponding option in the virtual machine video configuration page.
+* Improved 3D performance for the video game [[Mirror's Edge]].
+
+====Mac OS X Server guest operating system====
+* The ability to pass kernel options to the Mac OS X Server guest OS has been added. To do so, enable the &quot;Select boot device on startup&quot; option in the virtual machine configuration: it will enable you to specify the necessary kernel options in the 5-seconds timeout before booting the kernel.
+
+==Version 6==
+Officially announced on September 9, 2010 and launched on September 14, 2010, Parallel 6 supports full 64-bit support for the first time. Parallels claims that Parallels Desktop 6 for Mac &quot;[has] over 80 new and improved features, including speed 40% above the previous version.&quot; 
+Specific new features include:
+* An all-new 64-bit engine
+* 5.1 Surround Sound support
+* Better import implementation of VMware, Virtual PC virtual machines and Boot Camp partitions
+* Improved network, hard drive and Transporter performance
+* Windows program Spotlight integration
+* Faster Windows launch time
+* Enhanced 3D graphics that are 40% better than previous versions
+* Ability to extend Mac OS X Parental Controls to Windows applications
+* Ability to use Mac OS X keyboard shortcuts in Windows applications
+* Enhanced Spaces and ExposÃ© support
+
+==Version 7==
+
+Officially announced on September 1, 2011 and released on September 6, 2011, Parallels Desktop 7 adds many new features, compared to its previous version.
+
+The list below contains most important features (according to developer's website) but not all of them. More information about new features could be found on developer's official website.
+
+* Integration with Mac OS X Lion :
+** Full-screen support
+** Use of Launchpad for Windows apps
+** Mission Control support
+** Lion as a guest OS
+** Lion animations support
+* Improved user interface
+* New standard help and documentation
+* Shared devices with Mac OS X
+* Longer battery life
+* Mac OS X parental controls support
+* Support for Intel AES-NI encryption
+* Enhanced performance and 3D graphics
+* Support for up to 1GB video memory in virtual machine
+* Enhanced audio support - up to 192kHz
+* Surround sound 7.1
+
+==Supported operating systems==
+===Host===
+Parallels Desktop 7 for Mac requires an Intel-powered Mac running [[Mac OS X v10.4|Mac OS X v10.4 &quot;Tiger&quot;]] 10.4.11 or later.&lt;ref name=&quot;support&quot;&gt;{{Cite web|url=http://www.parallels.com/products/desktop/resources/sr/|title=System Requirements â Parallels Desktop 5 for Mac|publisher=Parallels|accessdate=2009-01-13}} {{Dead link|date=October 2010|bot=H3llBot}}&lt;/ref&gt;
+
+===Guest===
+In Parallels Desktop 7 for Mac, support for guests includes a variety of 32-bit and 64-bit [[x86]] operating systems, including&lt;ref name=&quot;support&quot; /&gt;
+* multiple versions of Microsoft Windows, including [[Windows 7]], as well as [[MS-DOS]],
+* [[Mac OS X Server#Mac OS X Server 10.5 .28Leopard Server.29|Mac OS X Leopard Server]], [[Mac OS X Server#Mac OS X Server 10.6 .28Snow Leopard Server.29|Snow Leopard Server]], and [[Mac OS X Lion]],
+* various [[Linux]] distributions, [[FreeBSD]],
+* [[eComStation]], [[OS/2]], [[Solaris (operating system)|Solaris]],
+
+==Known limitations==
+Parallels Desktop for Mac 5, as of November 2009, has issues including:
+* Windows theme may be switched to Windows Classic theme upon disabling the MacLook option. To work around this issue, enable MacLook, and then disable it again, or restart the virtual machine.
+* Apple Remote does not work exclusively within the virtual machine on Mac OS X 10.6 and 10.6.1 (Snow Leopard). To solve this Issue, upgrade your system to Mac OS X 10.6.2 or later.
+* Shared folders do not work in 64-bit Mac OS X Snow Leopard Server virtual machines. In 32-bit Mac OS X Snow Leopard Server virtual machines, shared folders work fine.
+* Some foreign (VMware for instance) Ubuntu virtual machines cannot be imported using the Parallels Transporter.&lt;ref&gt;http://forum.parallels.com/showthread.php?t=95875&lt;/ref&gt; This is probably an ext4 problem.
+* Cannot import standard OVA appliances from other software (such as [[Virtualbox]])
+
+Parallels Desktop for Mac 6 does not support more than 256 M of video ram (VRAM).
+
+==See also==
+* [[Comparison of VMware Fusion and Parallels Desktop]]
+* [[Comparison of platform virtual machines]] for a list of related virtualization software products
+* [[Desktop virtualization]]
+* [[Hypervisor]]
+* [[VirtualBox]]
+* [[Virtual machine]]
+* [[Platform virtualization|Virtualization]]
+* [[X86 virtualization]]
+* [[Virtual disk image]]
+
+==References==
+{{Reflist|2}}
+
+==External links==
+* [http://www.parallels.com/en/products/desktop/ Official website]
+* [http://kb.parallels.com/en/111319 Latest update Release Notes]
+
+===Reviews===
+* [http://www.macappzone.com/reviews/parallels-desktop-powerful-virtualization-made-simple/ Review of Parallels Desktop at MacAppZone]
+* [http://arstechnica.com/apple/news/2009/11/parallels-desktop-5-review.ars Review of Parallels Desktop 5 at Ars Technica]
+* [http://arstechnica.com/apple/reviews/2010/09/parallels-desktop-6-the-ars-review.ars/ Review of Parallels Desktop 6 at Ars Technica]
+* [http://www.mactech.com/2011/01/05/virtualization-benchmarks VMware Fusion 3.1 and Parallels Desktop 6 for Mac compare at MacTech]
+
+{{DEFAULTSORT:Parallels Desktop For Mac}}
+[[Category:Virtualization software]]
+[[Category:Mac OS X-only software]]
+[[Category:Software derived from or incorporating Wine]]
+
+[[bg:Parallels Desktop for Mac]]
+[[de:Parallels Desktop for Mac]]
+[[fr:Parallels Desktop]]
+[[it:Parallels Desktop for Mac]]
+[[ja:Parallels Desktop]]
+[[ru:Parallels Desktop Ð´Ð»Ñ Mac]]
+[[sv:Parallels Desktop]]</rev></revisions></page></pages></query></api>

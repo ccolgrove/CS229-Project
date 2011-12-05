@@ -1,0 +1,30 @@
+<?xml version="1.0"?><api><query><pages><page pageid="545859" ns="0" title="Security Accounts Manager"><revisions><rev xml:space="preserve">The '''Security Accounts Manager''' (SAM) is a [[Windows registry|registry]] file in [[Windows NT]], [[Windows 2000]], [[Windows XP]], [[Windows Vista]] and [[Windows 7]]. It stores users' [[password]]s in a hashed format (in [[LM hash]] and [[NTLM]] hash). Since a [[hash function]] is one-way, this provides some measure of security for the storage of the passwords.
+
+In an attempt to improve the security of the SAM database against offline [[software cracking]], [[Microsoft]] introduced the [[SYSKEY]] function in [[Windows NT|Windows NT 4.0]].  When SYSKEY is enabled, the on-disk copy of the SAM file is partially encrypted, so that the password hash values for all local accounts stored in the SAM are encrypted with a key (usually also referred to as the &quot;SYSKEY&quot;).
+
+In the case of online attacks, it is not possible to simply copy the SAM file to another location.  The SAM file cannot be moved or copied while Windows is running, since the Windows kernel obtains and keeps an exclusive filesystem lock on the SAM file, and will not release that lock until the operating system has shut down or a &quot;[[Blue Screen of Death]]&quot; exception has been thrown.  However, the in-memory copy of the contents of the SAM can be dumped using various techniques, making the password hashes available for offline [[brute-force attack]].
+
+== Removing LM hash ==
+Most versions of Windows can be configured to disable the creation and storage of valid LM hashes when the user changes their password.  This is the default setting in Windows Vista, but was disabled by default in previous versions of Windows.  Note: enabling this setting does not immediately clear the LM hash values from the SAM, but rather enables an additional check during password change operations that will instead store a &quot;dummy&quot; value in the location in the SAM database where the LM hash is otherwise stored. (This dummy value has no relationship to the user's password â it is the same value used for all user accounts.)
+
+As well, LM hashes cannot be calculated when the user chooses a password of over fourteen characters in length.  Thus, when a user (or administrator) sets a password of fifteen characters or longer, the LM hash value is set to a &quot;dummy&quot; value, which is not valid for authentication purposes.
+
+== Related attacks ==
+In Windows NT 3.51, NT 4.0 and 2000, an attack was devised to bypass the local authentication system.  If the SAM file is deleted from the hard drive (e.g. mounting the Windows OS volume into an alternate operating system), the attacker could log in as any account with no password. This flaw was corrected with Windows XP, which shows an error message and shuts down the computer. However there exist recently{{when|date=November 2011}} developed software utilities{{cn|date=November 2011}} which, by the aforementioned{{where|date=November 2011}} methodology of using either an emulated virtual drive, or boot disk (usually Unix/Linux) based environment to mount the local drive housing the active NTFS partition, and using programmed software routines and function calls from within assigned memory stacks to isolate the SAM file from the Windows NT system installation directory structure (default: &lt;code&gt;c:\windows\system32\config&lt;/code&gt;) and, depending on the particular software utility being used, remove the password hashes stored for user accounts in their entirety, or in some cases, modify the user account passwords directly from this environment.
+
+This software has both a highly pragmatic and beneficial use as a password clearing or account recovering utility for individuals who have lost or forgotten their windows account passwords, as well as a possible use as a malicious software security bypassing utility. Essentially granting a user with enough ability, experience, and familiarity with both the cracking utility software and the security routines of the Windows NT kernel (as well as offline and immediate local access to the target computer) the capability to entirely bypass/remove the windows account passwords from a potential target computer. 
+
+
+{{FOLDOC}}
+
+[[Category:Microsoft Windows security technology]]
+[[Category:Access control software]]
+
+{{Windows Components}}
+
+[[ar:ÙØ¯ÙØ± Ø£ÙÙ Ø§ÙØ­Ø³Ø§Ø¨Ø§Øª]]
+[[de:Security Accounts Manager]]
+[[es:Administrador de cuentas de seguridad]]
+[[fr:Security Account Manager]]
+[[id:Security accounts manager]]
+[[ru:Security Account Manager]]</rev></revisions></page></pages></query></api>

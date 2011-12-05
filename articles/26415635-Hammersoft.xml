@@ -1,0 +1,117 @@
+<?xml version="1.0"?><api><query><pages><page pageid="26415635" ns="0" title="Node.js"><revisions><rev xml:space="preserve">{{refimprove|date=November 2011}}
+{{infobox software
+| name                   = Node.js
+| logo                   = [[File:Nodejs_logo_light.pngâ|150px|Node.js Logo]]
+| screenshot             =
+| caption                =
+| author                 = Ryan Lienhart Dahl
+| developer              = [http://github.com/ry/node/blob/master/AUTHORS Node.js Developers]
+| operating system       = [[Mac OS X]], [[Linux]], [[Solaris (operating system)|Solaris]], [[FreeBSD]], [[OpenBSD]], [[Windows]] (older versions require [[Cygwin]]), [[webOS]]
+| status                 = Active
+| released               =
+| latest release version = 0.6.5
+| latest release date    = {{release date|2011|12|4}}
+
+| latest preview version = 0.5.10
+| latest preview date    = {{release date|2011|10|21}}
+| programming language   = [[C++]], [[JavaScript]]
+| genre                  = [[Event-driven programming|Event-driven]] [[computer network programming|networking]]
+| license                = [[MIT License]]
+| website                = {{URL|http://nodejs.org/}}
+}}
+'''Node.js''' is a [[software system]] designed for writing [[Scalability|highly-scalable]] internet applications, notably [[web server]]s.&lt;ref&gt;[http://www.readwriteweb.com/hack/2011/01/wait-whats-nodejs-good-for-aga.php Wait, What's Node.js Good for Again?], By Klint Finley, January 25, 2011, ReadWriteHack&lt;/ref&gt;
+Programs are written in [[JavaScript]], using [[Event-driven architecture|event-driven]], [[asynchronous I/O]] to minimize overhead and maximize scalability.&lt;ref&gt;{{cite news
+ |url=http://www.theregister.co.uk/2011/03/01/the_rise_and_rise_of_node_dot_js/
+ |title=The Node Ahead: JavaScript leaps from browser into future
+ |author=Cade Metz |publisher=''[[The Register]]'' |date=1st March 2011
+}}&lt;/ref&gt;
+Node.js consists of Google's [[V8 (JavaScript engine)|V8 JavaScript engine]] plus several built-in libraries.
+
+Node.js was created by [[Ryan Dahl]] starting in 2009, and its growth is sponsored by [[Joyent]], his employer.&lt;ref&gt;[http://mashable.com/2011/03/10/node-js/ Why Everyone Is Talking About Node], By Jolie O'Dell, March 10, 2011, Mashable
+&lt;/ref&gt;&lt;ref name=&quot;Node.js pushes JavaScript to the server-side&quot;&gt;{{Cite web
+|url= http://www.sdtimes.com/NODE_JS_PUSHES_JAVASCRIPT_TO_THE_SERVER_SIDE/By_Alex_Handy/About_JAVASCRIPT_and_NODEJS/35668
+|title= Node.js pushes JavaScript to the server-side
+|author=  Alex Handy
+|publisher= SDTimes
+|date= 2011-06-24
+|accessdate= 2011-09-04}}
+&lt;/ref&gt;
+
+Similar environments written in other programming languages include [[Twisted (software)|Twisted]] for [[Python (programming language)|Python]], [[Perl Object Environment]] for [[Perl]], [[libevent]] for [[C (programming language)|C]] and EventMachine for [[Ruby (programming language)|Ruby]]. Unlike most [[JavaScript]], it is not executed in a web browser, but is instead a form of [[server-side JavaScript]]. Node.js implements some [[CommonJS]] specifications.&lt;ref&gt;[http://wiki.commonjs.org/wiki/Implementations/node.js Implementations/node.js] - CommonJS Spec Wiki&lt;/ref&gt; Unlike most JavaScript systems, it provides a [[Read-eval-print loop|REPL]] environment for interactive testing.
+
+== Examples ==
+This is a complete implementation of [[Hello world program|hello world]] as a [[Web server|HTTP Server]] in Node.js:
+&lt;source lang=&quot;javascript&quot;&gt;
+var http = require('http');
+
+http.createServer(function (request, response) {
+    response.writeHead(200, {'Content-Type': 'text/plain'});
+    response.end('Hello World\n');
+}).listen(8000);
+
+console.log('Server running at http://127.0.0.1:8000/');
+&lt;/source&gt;
+
+
+This is a simple [[Transmission Control Protocol|TCP]] server which listens on [[TCP and UDP port|port]] 7000 and [[echo (command)|echo]]es 'hello' upon connection:
+&lt;source lang=&quot;javascript&quot;&gt;
+var net = require('net');
+
+net.createServer(function (stream) {
+    stream.write('hello\r\n');
+
+    stream.on('end', function () {
+        stream.end('goodbye\r\n');
+    });
+
+    stream.pipe(stream);
+}).listen(7000);
+&lt;/source&gt;
+
+== Community ==
+Node.js has an active developer community primarily centered on two mailing lists, [http://groups.google.com/group/nodejs nodejs] and [http://groups.google.com/group/nodejs-dev nodejs-dev], and the [[IRC]] channel #node.js on [[freenode]].  The community gathers at [http://www.nodeconf.com/ NodeConf], an annual developer conference focused on Node.js.&lt;ref&gt;[http://www.readwriteweb.com/hack/2011/04/nodeconf-schedule-announced.php NodeConf Schedule Announced], By Klint Finley, April 7, 2011, ReadWriteHack&lt;/ref&gt;
+
+== See also ==
+{{Portal|Free software}}
+* [[JavaScript]]
+* [[V8 (JavaScript engine)]]
+* [[Node Package Manager|NPM]], the Node Package Manager - the predominant package manager for Node.js.  As of Node.js version 0.6.3, npm is installed automatically with Node.js.
+* [[JSAN]], the JavaScript Archive Network - a lesser used JavaScript package manager.
+
+== References ==
+{{reflist}}
+
+== External links ==
+{{External links|date=November 2011}}
+*{{Official website|http://nodejs.org}}
+*[https://github.com/joyent/node Source Repository]
+*[http://groups.google.com/group/nodejs Nodejs mailing list] - general discussion about Node.js
+*[http://groups.google.com/group/nodejs-dev Nodejs-dev mailing list] - list for discussion of bugs and changes to Node.js itself
+*[http://npmjs.org/ The Node.js Package Manager]
+*[http://howtonode.org/ How To Node tutorial web site]
+*[https://github.com/joyent/node/wiki/Node-Hosting Hosting compatible with Node]
+*[http://syskall.com/how-to-write-your-own-native-nodejs-extension How to write your own native Node.js extension]
+*[http://thechangelog.com/post/501053444/episode-0-2-0-node-js-with-felix-geisendorfer Node.js contributor Felix GeisendÃ¶rfer gives some background on Node.js on The Changelog podcast]
+*[http://www.pavingways.com/nodejs-node-is-important-introduction_1288.html A thorough introduction on the PavingWays blog]
+*[http://net.tutsplus.com/tutorials/javascript-ajax/this-time-youll-learn-node-js/ Introduction to Node.js]
+*[http://gigaom.com/cloud/node-js-and-the-javascript-age/ Node.js and the JavaScript Age]
+*[http://www.nodebeginner.org The Node Beginner Book], a comprehensive introduction for experienced developers that are new to Node.js
+*[http://book.mixu.net Mixu's Node Book], a free 10-chapter book on Node.js
+*[http://project70.com/nodejs/beginners-tutorial-node-js/ A Beginner's Tutorial for Node.js], an in-depth tutorial for developers new to Node.
+*[http://javascriptology.com/nodeThreads/ Threads_a_gogo] Run node's JavaScript cpu-bound tasks asynchronously, in parallel, in background threads. Avoid blocking node's precious event loop.
+{{Compu-lang-stub}}
+
+[[Category:JavaScript libraries]]
+
+[[ar:ÙÙØ¯.js]]
+[[de:Node.js]]
+[[es:Node.js]]
+[[fa:ÙÙØ¯.Ø¬ÛâØ§Ø³]]
+[[fr:Node.js]]
+[[ko:Node.js]]
+[[it:Node.js]]
+[[he:Node.js]]
+[[ja:Node.js]]
+[[pt:Node.js]]
+[[ru:Node.js]]
+[[zh:Node.js]]</rev></revisions></page></pages></query></api>

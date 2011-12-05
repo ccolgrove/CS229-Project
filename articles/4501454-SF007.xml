@@ -1,0 +1,119 @@
+<?xml version="1.0"?><api><query><pages><page pageid="4501454" ns="0" title="Nokia PC Suite"><revisions><rev xml:space="preserve">{{Other uses|Nokia Ovi Suite}}
+{{Refimprove|date=May 2009}}
+{{Infobox software
+| name                   = Nokia PC Suite
+| logo                   = [[Image:Nokia pc suite.png]]
+| screenshot             = [[Image:Nokia PC Suite screenshot.png|300px|Nokia PC Suite Main window]]
+| caption                = Nokia PC Suite Main window
+| developer              = [[Nokia]]
+| latest_release_version = 7.1.62.1 &lt;sup&gt;([[#Latest release|See note]])&lt;/sup&gt;
+| latest_release_date    = {{release date|2011|07|05}}
+| operating_system       = [[Microsoft Windows]]
+| language               = Multilingual
+| genre                  = 
+| license                = [[Proprietary software|Proprietary]] [[freeware]]
+| website                = [http://europe.nokia.com/A4144903 Official European site] 
+}}
+
+'''Nokia PC Suite''' is a software package used to establish an interface between [[Nokia]] mobile devices and computers that run [[Microsoft Windows]] [[operating system]].
+
+==Usage==
+It can be used to transfer music, photos and applications. It can also be used to send [[Short Message Service]] (SMS) messages or act as a modem to connect the computer to the [[Internet]]. A mobile phone can be connected by [[Universal Serial Bus|USB]],  [[Bluetooth]], or [[Infrared Data Association|infrared]]. '''Nokia PC Suite''' is closed-source software and is required to access certain aspects of Nokia handsets.
+
+==History==
+While Nokia PC Suite is still being updated, it is slated to be replaced by Nokia's next generation phone suite software&lt;ref&gt;[http://europe.nokia.com/support/download-software/nokia-ovi-suite/faq#00 Nokia Ovi Suite - FAQ]&lt;/ref&gt;, [[Nokia Ovi Suite]], which will support other platforms in addition to Windows.&lt;ref&gt;{{cite web |url=http://betalabs.nokia.com/ovisuite |title=Nokia Ovi Suite 2.0 |publisher=Nokia Beta Labs |accessdate=2009-10-08}}&lt;/ref&gt; [[Nokia Ovi Suite]] drops the Lotus Notes client sync support which is present in '''Nokia PC Suite''', instead requiring the user to use Lotus Notes Traveler software which must be installed and maintained on the Lotus Notes server- that is, synchronisation using PC Suite works from the phone to the user's PC, synchronisation on a phone which has Ovi Suite must use third party software (such as Lotus Notes Traveler which works from the phone to the server). &lt;ref&gt;{{cite web |url=http://www.nokia.com.au/support/download-software/nokia-ovi-suite/faq |title=FAQ-Nokia Ovi Suite |publisher=Nokia Australia |accessdate=2010-10-26}}&lt;/ref&gt;
+
+== Latest release ==
+Support for old phones is removed occasionally from the program. The latest release stands for the latest ''general'' release. The official site supplies a table&lt;ref&gt;{{cite web| url=http://europe.nokia.com/support/download-software/pc-suites/compatibility-and-download| title=Compatibility &amp; Download| publisher=Nokia Europe| accessdate=2010-04-12}}&lt;/ref&gt; that matches each phone model with the latest release that supported it (up to and including the latest general release).
+
+== Features ==
+The following applications and features are included into the latest version of Nokia PC Suite:
+
+* Nokia Communication Centre for controlling contacts, contact groups, messages and a full calendar (v7.1+).
+* Memory view (v7.1+).
+* Battery view and control and low-battery alert (v7.1+).
+* Pop up notification for incoming calls and messages (v7.0+). Ability to initiate and answer calls (v7.1+).
+* Direct quick handling of the cell phone's calendar (v7.0+).
+* [[#Nokia PC Sync|Nokia PC Sync]] for contacts, calendar, notes, to-do items, e-mails, bookmarks and files/folders
+* Nokia Content Copier for backup and restore
+* Nokia Application Installer for installing Java and Symbian applications
+* Nokia File Manager for file transfer
+* Nokia Contacts for contacts handling (replaced with Nokia Communication Centre in v7.1)
+* Nokia Messages for messages handling
+* One touch Access for connecting to the Internet using the phone as a modem
+* Nokia Music Manager for CD ripping and music transfer
+* Nokia Image Store for transferring pictures from phone to PC
+* Notification when new phone software ([[firmware]]) updates are available (for [[Nokia Software Updater]])
+
+== Limitations ==
+The backup functionality uses a non-documented binary file format (.nbu), which can only be used to restore to a phone.  This means that the data can only be accessed by doing a restore to a working phone. Third-party programs (either commercial or free) can be used to read the file, but they greatly vary in the amount of information they can retrieve.
+
+=== Nokia PC Sync ===
+{{Infobox Software
+|name       = Nokia PC Sync
+|logo       = [[File:PC Sync.png|Nokia PC Sync Icon]]
+|screenshot = [[File:Nokia PC Sync support.jpg|300px|Software supported by Nokia PC Sync]]
+|caption    = Software supported by Nokia PC Sync
+}}
+Nokia PC Sync makes it possible to synchronize contacts, calendar, notes, to-do items, e-mails, bookmarks and files/folders between a supported Nokia mobile phone and:
+
+* [[Microsoft Outlook]] 2000-2007 (Outlook 2010 x64 doesn't work with PC Suite at the moment,but its possible to sync via Ovi Suite (tested with 3.1 and E71). Office 2010 x86 does, but is not officially supported. {{Citation needed|date=July 2010}})
+* [[Outlook Express|Microsoft Outlook Express]] / [[Windows Address Book]]
+* [[IBM Lotus Organizer|Lotus Organizer]] 5.0-6.0
+* [[IBM Lotus Notes|Lotus Notes]] 5.x-8.x
+* [[Windows Contacts|Microsoft Windows Vista Contacts]] {{Citation needed|date=December 2008}}
+* [[Windows Calendar|Microsoft Windows Vista Calendar]] {{Citation needed|date=December 2008}}
+* Microsoft Internet Explorer and Mozilla Firefox bookmarks {{Citation needed|date=December 2008}}
+* Windows 2000/XP files/folders {{Citation needed|date=December 2008}}
+
+PC Sync 7.0.9.2 contained a major bug which truncates street addresses which have been edited on the PC to run over more than one line, when synchronised back to the phone.  In this way it was possible to lose large parts of your contacts address information. {{Citation needed|date=December 2008}}
+
+=== Nokia Maps ===
+Nokia PC Suite can not add or update maps and voices for the Nokia Maps application. This requires Nokia Map Loader or [[Nokia Ovi Suite]], which both require Microsoft Windows with Microsoft .NET framework installed. However, it is possible to download maps for Nokia Maps without need for Nokia Map Loader or Nokia Ovi Suite by pointing a web browser [http://nokiamaps.site666.info directly to the map files on Nokia's Maps server].
+
+== System requirements ==
+* Available hard disk space: 250 MB (file size approx 25 MB)
+* Operating system:
+** [[Windows 7]]
+** [[Windows Vista]]
+** [[Windows XP Professional x64 Edition]] (Service Pack 2 or higher)
+** [[Windows XP]] (Professional or Home Edition) (Service Pack 2 or higher)
+
+* Connection methods: [[Universal Serial Bus|USB]] cable, [[Bluetooth]], or [[Infrared Data Association|infrared]]
+* Supported Bluetooth software (Bluetooth stacks):
+** Microsoft Windows Bluetooth ([[Bluetooth stack#Microsoft Windows stack|included in XP SP2, Vista and 7]])
+** Toshiba Bluetooth stack for Windows XP/2000 v 4.0
+** WIDCOMM BTW 1.4, 3.0, 4.0, 5.0
+** IVT BlueSoleil Bluetooth stack for Windows XP/2000, driver version 1.6.1.4 (Nokia [[Nseries]], [[Eseries]], and 3250 phones require driver version 2.1.2.0.)
+
+== See also ==
+* [[OpenSync (software)]] - Open Source synchronization framework
+* [[Noki]] - an explorer for Nokia PC Suite backup file (.nbu, .nfb, .nfc, .arc - sd card backup file and contacts.cdb - symbian contact database foramat)
+* [[iNoki]] - an iPhone app for transfer Nokia PC Suite backup file to iPhone &amp; iPad
+* [[Series60-Remote]] - An alternative for S60-based mobile phones for Linux, Mac OS X and Windows
+* [http://specials.msn.co.in/sp09/pdm/ Microsoft Phone Data Manager] - an alternative to Nokia PC Suite (though you may still need to install Nokia PC Suite to get the Bluetooth drivers (and then possibly uninstall to remove it afterwards))
+* [http://sourceforge.net/projects/nbuexplorer/ NBU Explorer] - free alternative to read NBU files
+* [https://launchpad.net/nokinux Nokinux] - Nokia PC Suite on Linux
+
+== References ==
+{{Reflist}}
+
+== External links ==
+* Nokia PC Suite: [http://www.nokia-asia.com/A4482316 Asia], [http://europe.nokia.com/A4144903 Europe], [http://latinoamerica2.ext.nokia.com/lta_es/soporte/galeria/pc_suite/home.htm Latin America] and [http://www.nokiausa.com/A4986251 U.S.A.]
+
+{{Nokia software}}
+
+{{DEFAULTSORT:Nokia Pc Suite}}
+[[Category:Mobile phone management software]]
+[[Category:Nokia software products]]
+[[Category:S60 (software platform)]]
+
+[[cs:Nokia PC Suite]]
+[[de:Nokia PC Suite]]
+[[es:Nokia PC Suite]]
+[[fr:Nokia PC Suite]]
+[[id:Nokia PC Suite]]
+[[no:Nokia PC Suite]]
+[[pl:Nokia PC Suite]]
+[[pt:Nokia PC Suite]]
+[[ru:Nokia PC Suite]]</rev></revisions></page></pages></query></api>

@@ -1,0 +1,124 @@
+<?xml version="1.0"?><api><query><pages><page pageid="172684" ns="0" title="InterBase"><revisions><rev xml:space="preserve">{{Infobox software
+| name                   = InterBase
+| screenshot             = &lt;!--  Commented out: [[Image:InterBase Performance Monitor.png|250px|{{deletable image-caption}}]] --&gt;&lt;!-- Do not change unless you have read &quot;Wikipedia:Software_screenshots&quot;! --&gt;
+| caption                = InterBase's performance monitor allows database administrators to view and control server use.
+| developer              = [[Embarcadero Technologies]]
+| latest release version = 10 (XE)
+| latest release date    = 21 September 2010
+| operating system       = [[cross-platform]]
+| genre                  = [[Database management system]]
+| license                = [[Proprietary software|Proprietary]]
+| website                = {{URL|http://www.embarcadero.com/products/interbase}}
+}}
+'''InterBase''' is a [[relational database management system]] (RDBMS) currently developed and marketed by [[Embarcadero Technologies]]. InterBase is distinguished from other DBMSs by its small footprint, close to zero administration requirements, and multi-generational architecture.&lt;ref&gt;{{cite web | author=Todd, Bill | title=InterBase: What Sets It Apart | work=The Database Group, Inc. publications | url=http://edn.embarcadero.com/article/27007 | accessdate=September 21, 2005 }}&lt;/ref&gt; InterBase runs on the [[Linux]], [[Microsoft Windows]], [[Mac OS X]] and [[Solaris (operating system)|Solaris]] [[operating system]]s.
+
+==Technology==
+In many respects, InterBase is quite conventional; it is a [[SQL|SQL-92]]-compliant [[relational database]] and supports standard interfaces such as [[JDBC]], [[ODBC]], and [[ADO.NET]].   However, certain technical features distinguish InterBase from other products.
+
+===Small footprint===
+A full InterBase 2009 server installation requires around 40 [[Megabyte|MB]] on disk. This is significantly smaller than the ''client'' installation of many competing database servers. The server uses very little memory when idle. A minimum InterBase client install requires about 400 [[Kilobyte|KB]] of disk space.
+
+===Embedded or server===
+InterBase offers the option to run as an embedded database or regular server.
+
+===Minimal administration===
+InterBase servers typically do not require full-time [[database administrator]]s.
+
+===Multi-generational architecture===
+====Concurrency control====
+Consider a simple banking application where two users have access to the funds in a particular account. Bob reads the account and finds there is 1000 dollars in it, so he withdraws 500. Jane reads the same account before Bob has changed it, sees 1000 dollars, and withdraws 800. The account should be 300 dollars overdrawn, however, depending on which transaction gets processed first it will contain either 500 or 200 dollars. This poses a serious problem and needless to say, any database system with multi-user access needs some sort of system to deal with these scenarios.
+
+The techniques used to solve this and other related problems are known in the database industry as [[concurrency control]].
+
+Traditional products used ''[[lock (software engineering)|lock]]s'' which stated that a particular [[Database transaction|transaction]] was going to modify a record. Once the lock was placed, no one else could read or modify the data until the lock was released. The lock may block changes to a single record, a ''page'' (a group of records stored together on disk) of records, or every record examined by a particular transaction, depending on the ''lock resolution.'' Lock resolution is a tradeoff between performance and accuracyâby blocking updates at the page level, for example, some updates will be blocked which do not in fact conflict with updates made by other transactions, but performance will be improved in comparison with record level locks.
+
+Locking becomes an even bigger problem when combined with another feature common to all such systems, [[Isolation (database systems)|isolation]]. This is because transactions typically involve both a read and a writeâin this example, to read the value of the account and then change it. In order to show an isolated view of the data the entire transaction, including records read but never written to, must be locked in many database servers.
+
+In InterBase, readers do not block writers. Instead, each record in the database can exist in more than one version. For instance, when Bob and Jane read the accounts they would both get &quot;version 1&quot;, reading 1000 dollars. When Bob then changes the account to make his withdrawal the data is not overwritten, but instead a new &quot;version 2&quot; will be created with 500 dollars. Jane's attempt to make her 800 dollar withdrawal will notice that there is a new version 2, and her attempt to make a withdrawal will fail.
+
+This approach to concurrency control is called [[multiversion concurrency control]]. InterBase's implementation of multiversion concurrency control is commonly called its multi-generational architecture. InterBase was the second commercial database to use this technique; the first was [[Digital Equipment Corporation|DEC]]'s Rdb/ELN.
+
+Multiversion concurrency control also makes true [[Snapshot isolation|snapshot]] transaction isolation relatively simple to implement. A transaction with snapshot isolation in InterBase shows the state of the database precisely as it was at the instant the transaction began. This is very useful for backups of an [[active database]], long-running batch processes, and the like.
+
+====Rollbacks and recovery====
+InterBase also uses its multi-generational architecture to implement [[rollback (data management)|rollbacks]]. Most database servers use [[Database log|logs]] to implement the rollback feature, which can result in rollbacks taking a long time or possibly even requiring manual intervention. By contrast, InterBase's rollbacks are near-instantaneous and never fail.
+
+====Drawbacks====
+Certain operations are more difficult to implement in a multi-generational architecture, and hence perform slowly relative to a more traditional implementation. One example is the SQL &lt;code&gt;COUNT&lt;/code&gt; verb. Even when an index is available on the column or columns included in the &lt;code&gt;COUNT&lt;/code&gt;, all records must be visited in order to see if they are visible under the current transaction isolation.
+
+==History==
+===Multiversion concurrency control before InterBase===
+[[Multiversion concurrency control]] is described in some detail in sections 4.3 and 5.5 of the 1981 paper &quot;Concurrency Control in Distributed Database Systems&quot;&lt;ref&gt;{{cite web | author=Bernstein, Philip A. and Goodman, Nathan | title=Concurrency Control in Distributed Database Systems | work=ACM Computing Surveys | url=http://portal.acm.org/citation.cfm?id=356846&amp;dl=GUIDE&amp;coll=Portal | accessdate=September 21, 2005 }}&lt;/ref&gt; by [[Phil Bernstein|Philip Bernstein]] and Nathan Goodmanâthen employed by the Computer Corporation of America. Bernstein and Goodman's paper cites a 1978 dissertation&lt;ref&gt;{{cite web | author=Reed, D.P. | title=Naming and Synchronization in a Decentralized Computer System | work=MIT dissertation | url=http://www.lcs.mit.edu/publications/specpub.php?id=773 | accessdate=September 21, 2005 }}&lt;/ref&gt; by D.P. Reed which quite clearly describes [[Multiversion concurrency control|MVCC]] and claims it as an original work.
+
+===Early years===
+[[Jim Starkey]] was working at [[Digital Equipment Corporation|DEC]] on their [[Datatrieve]] [[network database]] product when he came up with an idea for a system to manage concurrent changes by many users. The idea dramatically simplified the existing problems of ''locking'' which were proving to be a serious problem for the new [[relational database]] systems being developed at the time. He started working on the system at DEC, but at the time DEC had just started a relational database effort which lead to the [[Oracle Rdb|Rdb/VMS]] product. When they found out about his project a [[turf war]] broke out (although the product was released as Rdb/ELN), and Starkey eventually decided to quit.
+
+Although InterBase's implementation is much more similar to the system described by [[David P. Reed|Reed]] in his MIT dissertation than any other database that existed at the time and Starkey knew Bernstein from his previous position at the Computer Corporation of America and later at DEC, Starkey has stated that he arrived at the idea of multiversion concurrency control independently.&lt;ref&gt;{{cite web | author=Starkey, Jim | title=Weblog comment | work=Multiversion Concurrency Control Before InterBase | url=http://blogs.teamb.com/craigstuntz/2005/02/18/2699/ | accessdate=September 21, 2005 }}&lt;/ref&gt; In the same comment, Starkey says:
+
+&lt;blockquote&gt;The inspiration for multi-generational concurrency control was a database system done by [[Prime Computer|Prime]] that supported page level snapshots. The intention of the feature was to give a reader a [[Database consistency|consistent]] view of the database without blocking writers. The idea intrigued me as a very useful characteristic of a database system.&lt;/blockquote&gt;
+
+He had heard that the local [[workstation]] vendor [[Apollo Computer]] was looking for a database offering on their [[Unix]] machines, and they agreed to fund development. With their encouragement he formed '''Groton Database Systems''' (named after the town, [[Groton, Massachusetts]], where they were located) on [[Labor Day]] 1984 and started work on what would eventually be released as '''InterBase'''. In 1986 Apollo suffered a corporate shakeup and decided to exit the software business,{{Citation needed|date=November 2009}} but by this time the product was making money.
+
+===The road to Borland===
+Between 1986 and 1991 the product was gradually sold to [[Ashton-Tate]], makers of the famous [[dBASE]] who were at the time purchasing various database companies in order to fill out their portfolio. The company was soon in trouble,{{Citation needed|date=October 2007}} and [[Borland]] purchased Ashton-Tate in 1991, acquiring InterBase as part of the deal.
+
+===Open source===
+In early 2000, Borland announced that InterBase would be released under [[open source]], and began negotiations to spin off a separate company to manage the product. When the people who were to run the new company and Borland could not agree on the terms of the separation, InterBase remained a Borland product, and the source code for InterBase version 6 was released under a variant of the [[Mozilla Public License]] in mid-2000.
+
+With the InterBase division at Borland under new management, the company released a [[proprietary software|proprietary]] version of InterBase version 6 and then 6.5. Borland released several updates to the open source code before announcing that it would no longer actively develop the open source project. [[Firebird (database server)|Firebird]], an open source [[fork (software)|fork]] of the InterBase 6 code, however, remains in active development.
+
+In 2001, a backdoor was discovered (and fixed) in the software that had been present in all versions since 1994.&lt;ref name=&quot;Backdoor&quot;&gt;[http://www.cert.org/advisories/CA-2001-01.html CERT Advisory CA-2001-01 Interbase Server Contains Compiled-in Back Door Account]&lt;/ref&gt;
+
+===CodeGear===
+On February 8 of 2006, Borland announced the intention to sell their line of development tool products, including InterBase, [[Borland Delphi|Delphi]], [[JBuilder]], and other tools.[http://www.borland.com/us/company/news/press_releases/2006/02_08_06_borland_acquires_segue_software.html] But instead of selling the divisions, Borland [[spin out|spun them out]] as a subsidiary on 14 November 2006. InterBase, along with IDE tools such as [[Borland Delphi|Delphi]] and [[JBuilder]] are included in the new company's product lineup. Then, on 7 May 2008, Borland and [[Embarcadero Technologies]] announced that Embarcadero had &quot;signed a definitive asset purchase agreement to purchase CodeGear.&quot;&lt;ref&gt;{{cite web
+ |url=http://dn.codegear.com/article/38132
+ |title=Community Letter: Embarcadero Technologies agrees to acquire CodeGear from Borland
+ |accessdate=2008-05-08
+ |last=Intersimone
+ |first=David
+ |date=2008-05-07
+}}&lt;/ref&gt;  The acquisition, for approximately $24.5 million, closed on 30 June 2008.&lt;ref&gt;{{cite web
+ |url=http://www.embarcadero.com/press-releases/embarcadero-technologies-closes-acquisition-of-codegear-from-borland-software
+ |title=Embarcadero Technologies Closes Acquisition of CodeGear
+ |accessdate=2008-07-03
+ |last=Bravo
+ |first=Thoma
+ |date=2008-07-01
+}}&lt;/ref&gt;
+
+===Recent releases===
+At the end of 2002, Borland released InterBase version 7, featuring support for [[Symmetric multiprocessing|SMP]], enhanced support for monitoring and control of the server by administrators, and [http://www.dbginc.com/tech_pprs/ib7/IB7.htm more]. Borland released InterBase 7.1 in June 2003, 7.5 in December 2004, and 7.5.1 on June 1, 2005.
+
+In September 2006, Borland announced&lt;ref name=&quot;2007ReleaseAnnouncement&quot;&gt;[http://edn.embarcadero.com/article/33698 Borlandâs Developer Tools Group Introduces InterBase 2007]&lt;/ref&gt; the availability of InterBase 2007. Its new features include point in time recovery via [[Journaling file system|journaling]] (which also allows recoverability without the performance penalty of synchronous writes), [[incremental backup]], batch statement operations, new [[Unicode]] [[character encoding]]s, and a new [[Open Database Connectivity|ODBC]] driver.
+
+In September 2008, Embarcadero announced&lt;ref name=&quot;2009ReleaseAnnouncement&quot;&gt;[http://etnaweb04.embarcadero.com/news/press_releases/interbase2009.php Embarcadero Announces High-Performance InterBase SMP 2009 Database]&lt;/ref&gt; the availability of InterBase 2009. Its new features include full Database Encryption, selective Column-level data encryption and over-the-wire encryption offering secure TCP/IP communication via SSL.
+
+In September 2010, Embarcadero announced&lt;ref name=&quot;2010ReleaseAnnouncement&quot;&gt;[http://www.embarcadero.com/press-releases/new-interbase-xe-offers-advanced-security-and-scalability-with-near-zero-administration Embarcaderoâs New InterBase XE Offers Advanced Security and Scalability with Near-Zero Administration]&lt;/ref&gt; the availability of InterBase XE. Its new features include a 64 bit client and server, improved security, improved scalability, support for dynamic SQL in stored procedures, and optimized performance of large objects with Stream methods.
+
+==References==
+{{Reflist}}
+
+==External links==
+*[http://www.embarcadero.com/products/interbase InterBase product page]
+*[http://www.sqlly.com InterBase Development Studio]
+*[http://www.da-soft.com/anydac/ Interbase (and more) Data Access Components for Delphi]
+
+{{DEFAULTSORT:Interbase}}
+[[Category:Proprietary database management systems]]
+[[Category:Windows software]]
+[[Category:CodeGear software]]
+[[Category:Cross-platform software]]
+
+[[ca:InterBase]]
+[[cs:InterBase]]
+[[de:InterBase]]
+[[es:InterBase]]
+[[fr:InterBase]]
+[[it:InterBase]]
+[[ja:InterBase]]
+[[pl:InterBase]]
+[[pt:InterBase]]
+[[ru:InterBase]]
+[[sv:InterBase]]
+[[uk:InterBase]]
+[[zh:InterBase]]</rev></revisions></page></pages></query></api>

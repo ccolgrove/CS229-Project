@@ -1,0 +1,143 @@
+<?xml version="1.0"?><api><query><pages><page pageid="11436470" ns="0" title="Syslog-ng"><revisions><rev xml:space="preserve">{{multiple issues|external links=November 2010}}
+{{Infobox software
+| name                    = syslog-ng
+| logo                    =
+| screenshot              =
+| caption                 =
+| collapsible             =
+| author                  = BalÃ¡zs Scheidler
+| developer               =
+| released                = 1998 &lt;!-- {{Start date|YYYY|MM|DD}} --&gt;
+| discontinued            =
+| latest release version  = 3.3.1
+| latest release date     =  {{Start date and age|2011|10|06}}
+| latest preview version  =
+| latest preview date     = &lt;!-- {{Start date and age|YYYY|MM|DD}} --&gt;
+| frequently updated      =
+| programming language    =
+| operating system        = Unix-like
+| engine                  =
+| platform                =
+| size                    =
+| language                =
+| status                  =
+| genre                   = System logging
+| license                 = [[LGPL|GNU Lesser General Public License]](core) [[GPLv2|GNU General Public License version 2]](plugins)
+| website                 = http://www.balabit.com/network-security/syslog-ng/
+}}
+{{Portal|Free software}}
+'''syslog-ng''' is an [[open source]] implementation of the [[Syslog]] protocol for [[Unix]] and [[Unix-like]] systems. It extends the original syslogd model with content-based filtering, rich filtering capabilities, flexible configuration options and adds important features to syslog, like using [[Transmission Control Protocol|TCP]] for transport. As of today syslog-ng is developed by [[Balabit]] IT Security Ltd. It has two editions with a common codebase. The first is called syslog-ng OSE (with the license LGPL) and have additional plugins (modules) under [[Proprietary_software|proprietary]] license. This edition is called Premium Edition (PE).
+
+==Protocol==
+
+syslog-ng uses the quasi-standard [[BSD]] [[syslog]] protocol, specified in [[Request for Comments|RFC]] 3164. As the text of RFC 3164 is vague and is just an informational description and not a standard, various incompatible extensions of it emerged. Since version 3.0 also supports the standard syslog protocol specified in RFC 5424 which was released in 2009. syslog-ng tries hard to interoperate with a wide variety of devices, and the format of relayed messages can be customized.
+
+The most important extensions of the original protocol endorsed by syslog-ng are:
+* [[ISO 8601]] timestamp with millisecond granularity and timezone information
+* the addition of the name of relays in the host fields to make it possible to track the path a given message has traversed
+* reliable transport using [[Transmission Control Protocol|TCP]]
+* [[Transport Layer Security|TLS]] encryption (Since 3.0.1 in OSE &lt;ref&gt;{{cite web |url=http://www.balabit.com/downloads/files/syslog-ng/open-source-edition/3.0.1/changelog-en.txt
+   | title=Changelog 3.0.1
+   | accessdate=2009-01-21
+}}&lt;/ref&gt;)
+
+==History==
+
+The syslog-ng project began in 1998, when BalÃ¡zs Scheidler, the primary author of syslog-ng, ported the existing nsyslogd code to Linux. The 1.0.x branch of syslog-ng was still based on the nsyslogd sources and are available in the syslog-ng source archive.
+
+Right after the release of syslog-ng 1.0.x, a reimplementation of the code base started to address some of the shortcomings of nsyslogd and to address the licensing concerns of Darren Reed, the original nsyslogd author. This reimplementation was named stable in the October of 1999 with the release of 1.2.0. This time around, syslog-ng depended on some code originally developed for [[lsh]] by Niels MÃ¶ller.
+
+Three major releases (1.2, 1.4 and 1.6) were using this code base, the last release of the 1.6.x branch in February 2007. In this period of about 8 years, syslog-ng became one of the most popular alternative syslog implementations.
+
+In a volunteer based effort, [[Rewrite (programming)|yet another rewrite]] was started back in 2001, dropping lsh code and using the more widely available GLib library. This rewrite of the codebase took its time, the first stable release of 2.0.0 happened in October 2006.
+
+Development efforts were focused on improving the 2.0.x branch; support for 1.6.x was dropped at the end of 2007. Support for 2.X was dropped at the end of 2009, but it is still used in some Linux distributions&lt;ref&gt;{{cite web |url=http://packages.qa.debian.org/s/syslog-ng.html|title=Debian syslog-ng package| accessdate=2011-11-11}}&lt;/ref&gt;&lt;ref&gt;{{cite web | url=http://ocw.novell.com/suse-linux-enterprise-server-administrators/upgrading-to-certified-linux-professional-10/3070_07_manual.pdf|title=SLES syslog-ng documentation|accessdate=2011-11-11}}&lt;/ref&gt;. [[Balabit]], the company behind syslog-ng, started a parallel, commercial fork of syslog-ng, called syslog-ng Premium Edition.  Portions of the commercial income are used to sponsor development of the free version.
+
+Syslog-ng version 3.0 was released in the fourth quarter of 2008.
+
+Starting with the 3.0 version developments efforts were parallel on the Premium and on the Open Source Editions. PE efforts were focused on quality, transport reliability, performance and encrypted log storage. The Open Source Edition efforts focused on improving the flexibility of the core infrastructure to allow more and more different, non-syslog message sources.
+
+Both the OSE &amp; PE forks produced two releases (3.1 and 3.2) in 2010.
+
+==Features==
+
+syslog-ng has a much larger scope than merely transporting syslog messages and storing them to plain text log files:
+* the ability to format log messages using UNIX shell-like variable expansion;
+* the use of this shell-like variable expansion when naming files, thus covering thousands of destination files with a single statement;
+* the ability to send log messages to local applications;
+* ability to message flow-control in network transport;
+* logging directly into a database (since syslog-ng OSE 2.1);
+* rewrite portions of the syslog message with set and substitute primitives (since syslog-ng OSE 3.0);
+* classify incoming log messages and at the same time extract structured information from the unstructured syslog message (since syslog-ng OSE 3.0);
+* generic name-value support: each message is just a set of name-value pairs, which can be used to store extra information (since syslog-ng OSE 3.0);
+* the ability to process structured message formats transmitted over syslog, like extract columns from CSV formatted lines (since syslog-ng OSE 3.0);
+* the ability to correlate multiple incoming messages to form a more complex, correlated event (since syslog-ng OSE 3.2);&lt;ref&gt;{{cite web|url=http://lwn.net/Articles/424459/| title=Correlating lo messages with syslog-ng| accessdate=2011-11-11}}&lt;/ref&gt;
+
+==Distributions==
+
+syslog-ng is part of a number of different [[GNU/Linux]] and Unix distributions. Some distributions install it as the default system logger, others only provide a package and an upgrade path from the standard syslogd.
+
+Among others:
+* [[openSUSE]]  used it as default prior to openSUSE 11.2, and is still available
+* [[SLES]] uses it as default
+* [[Debian Linux|Debian GNU/Linux]] used before version 5.0 syslogd and klogd (Lenny (5.0) uses [[Rsyslog]]&lt;ref&gt;{{cite web |url=http://www.debian.org/releases/lenny/i386/release-notes/ch-whats-new.en.html#system-changes
+   | title=Chapter 2. What's new in Debian GNU/Linux 5.0
+   | accessdate=2010-05-22
+}}&lt;/ref&gt;)
+
+* [[Gentoo Linux]]
+* [[Fedora (operating system)|Fedora]] used it prior to Fedora 10
+* [[Arch Linux]]
+* [[Hewlett-Packard]]'s [[HP-UX]]
+* [[FreeBSD]]
+* A [[Cygwin]] port is available for [[Microsoft Windows]]
+
+==Portability==
+
+syslog-ng is highly portable to many Unix systems, old and new alike. A list of the currently known to work Unix versions are found below:
+* [[Linux]] on [[i386]], [[ARM]], PowerPC, [[SPARC]] and [[x86-64]] CPUs
+* [[FreeBSD]] 7.x - 9.x on [[i386]] and [[x86-64]] CPUs
+* [[AIX]] 5 on [[IBM POWER]] CPUs
+* [[HP-UX]] 11iv1, 11iv2 on [[PA-RISC]] and [[Itanium]] CPUs
+* [[Solaris (operating system)|Solaris]] 8, 9, 10 on SPARC, x86-64 and i386 CPUs
+* [[Tru64]] 5.1b on [[Alpha]] CPUs
+
+The list above is based on BalaBit's current first hand experience, other platforms may also work, but your mileage may vary.
+
+== Related RFCs &amp; working groups ==
+
+* RFC 3164 - The BSD syslog protocol
+* RFC 5424 - The Syslog Protocol
+* RFC 5425 - Transport Layer Security (TLS) Transport Mapping for Syslog
+* RFC 5426 - Transmission of Syslog Messages over UDP
+
+==References==
+&lt;references/&gt;
+
+== See also ==
+* [[Syslog]]
+* [[Rsyslog]]
+
+==Official links==
+* [http://www.balabit.com/network-security/syslog-ng/ syslog-ng homepage]
+* [http://www.balabit.com/dl/html/syslog-ng-admin-guide_en.html/index.html syslog-ng documentation]
+==External links==
+* [http://oreilly.com/catalog/9780596006709 Michael D. Bauer: Linux Server Security, Second Edition published 2005 at O'Reilly: System Log Management and Monitoring (Chapter 12)]
+* [http://www.apsolab.com XLog-Solution is a centralized multi-platform log manager for systems and software.]
+* [http://nms.gdd.net/index.php/PHP-Syslog-NG Php-syslog-ng - a web interface and reporting tool for syslog-ng data]
+* [http://www.logzilla.pro LogZilla is a scalable, multi-vendor, Enterprise Class syslog event viewer for centralized network event and problem management.]
+* [http://www.campin.net/syslog-ng/faq.html syslog-ng FAQ]
+* [http://www.syslog.org/wiki/Syslog-ng/Syslog-ngWiki syslog-ng support wiki &amp; forum]
+* [http://www.feweb.net/syslog_and_vlogger.htm Syslog-ng and vlogger meet]
+
+{{DEFAULTSORT:Syslog-Ng}}
+[[Category:Free network-related software]]
+[[Category:Internet protocols]]
+[[Category:Internet standards]]
+[[Category:Linux security software]]
+[[Category:Network management]]
+[[Category:System administration]]
+
+[[de:Syslog-ng]]
+[[fr:Syslog-ng]]
+[[ja:Syslog-ng]]</rev></revisions></page></pages></query></api>

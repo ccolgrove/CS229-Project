@@ -1,0 +1,119 @@
+<?xml version="1.0"?><api><query><pages><page pageid="946149" ns="0" title="DOSBox"><revisions><rev xml:space="preserve">{{Lead too short|date=May 2010}}
+{{Infobox software
+| name                   = DOSBox
+| author                 = Peter Veenstra
+| logo                   = [[File:DOSBox icon.png|70px|DOSBox icon]]
+| screenshot             = [[File:DOSBox screenshot.png|300px]]
+| caption                = DOSBox 0.73 running on Windows Vista
+| developer              = DOSBox Team
+| programming language   = [[C (programming language)|C]], [[C++]]
+| released               = 22 July 2002&lt;ref&gt;{{cite web | url=https://sourceforge.net/community/potm-200905/ | title=Project of the Month, May 2009 | publisher=[[SourceForge]] | accessdate=2009-09-29}}&lt;/ref&gt;
+| latest release version = 0.74
+| latest release date    = {{Start date and age|2010|5|12|df=yes}}
+| operating system       = [[Cross-platform]]
+| genre                  = [[Emulator]]
+| license                = [[GNU General Public License]]
+| website                = [http://www.dosbox.com/ www.dosbox.com]
+}}
+'''DOSBox''' is [[emulator]] software that emulates an [[IBM PC compatible]] computer running [[MS-DOS]]. It is intended especially for use with old [[Personal computer game|PC games]]. DOSBox is [[free software]].
+
+DOSBox can be used to run old MS-DOS software, especially games, that would otherwise not work on modern computers.
+
+==Features==
+DOSBox is a [[command-line]] program, configured either by a set of command-line arguments or by editing a [[plain text]] configuration file. For ease of use, several graphical [[front-end]]s have been developed by the user community.&lt;ref&gt;{{cite web|url=http://www.dosbox.com/wiki/DOSBoxFrontends|title=DOSBox Frontends|date= 2008-12-15|accessdate=2009-01-03|author=|publisher=DOSBox}}&lt;/ref&gt;
+
+DOSBox is a full [[central processing unit|CPU]] emulator, capable of running DOS programs that require the CPU to be in either [[real mode]] or [[protected mode]].&lt;ref name=&quot;Interview&quot;&gt;{{cite interview| subject = Qbix| interviewer = Classic Dos Games  | title = Interview with Qbix | url = http://www.classicdosgames.com/interviews/peterveenstra.html | date = 2008-04-30  | accessdate = 2009-01-03 }}&lt;/ref&gt;  Other similar programs, such as [[dosemu]] or [[Virtual DOS machine|VDMs]] for Windows and OS/2, provide  [[compatibility layer]]s and rely on virtualization capabilities of the [[Intel 80386|386]] family processors. Since DOSBox can emulate its CPU by interpretation, it's independent of its host CPU.&lt;ref name=&quot;Interview&quot;/&gt; However, on systems which provide the [[i386]] [[instruction set]], the option to use [[binary translation|dynamic instruction translation]] is available in DOSBox. Though this setting is less accurate and reliable, it is faster than interpretive CPU emulation.
+
+It is capable of emulating many types of graphics and sound hardware. Graphics emulation includes [[text mode]], [[Hercules Graphics Card|Hercules]], [[Color Graphics Adapter|CGA]] (including composite and 160x100x16 tweaked modes), [[Tandy 1000|Tandy]], [[Enhanced Graphics Adapter|EGA]], [[Video Graphics Array|VGA]] (including [[Mode X]] and other tweaks), [[VESA BIOS Extensions|VESA]], and full [[S3 Trio|S3 Trio 64]] emulation.&lt;ref name=&quot;Interview&quot;/&gt; Sound hardware that can be emulated includes the [[PC speaker]], [[AdLib]], [[Gravis Ultrasound]], [[Tandy 1000|Tandy]], [[Sound Blaster|Creative Music System/GameBlaster]], [[Sound Blaster|Sound Blaster 1.x/2.0/Pro/16]], [[MPU-401]], and [[Covox Speech Thing|Disney Sound Source]]. ([[Roland MT-32|MT-32]]/[[Roland CM-32L|CM-32L]] emulation is included in unofficial builds&lt;!-- &lt;ref&gt;[http://ykhwong.x-y.net/cvs/frame.html DOSBox Daum Cafe]&lt;/ref&gt; --&gt;, but not in the official source code repository due to need for copyrighted [[ROM image]]s.) Storage is handled by mapping (either through the configuration file or through a command within the emulator) a drive letter in the emulator to a directory, image file or CDROM drive on the host. A permanently mapped Z: drives stores dosbox commands and startup scripts. 
+
+A popular feature of DOSBox is its ability to capture [[screenshot]]s and record gameplay footage. The video is [[Data compression|compressed]] using the ''Zip Motion Block Video'' codec.&lt;ref&gt;{{cite web|url=http://wiki.multimedia.cx/index.php?title=DosBox_Capture_Codec|title=DosBox Capture Codec|date=2008-03-09|accessdate=2009-01-03|author=|publisher=}}&lt;/ref&gt; In its uncompressed state the footage is almost an exact replica of the actual program. The video recording feature was added in version 0.65. In earlier versions,  one had to rely on custom modifications and a third-party screen recorder to record video, but the quality and emulator performance was generally very poor.&lt;ref&gt;{{cite web|url=http://www.surg3.com/dfl/news_detail.php?id=42|title=Recording video from DosBox|date=2008-03-07|accessdate=2009-01-03|author=bakkelun|publisher=}}&lt;/ref&gt;
+
+A component that differentiates DOSBox from other emulators is its ability to simulate [[peer-to-peer]] or [[Internet]]/[[Intranet]] networking. This includes [[modem]] simulation over [[Internet protocol suite|TCP/IP]], allowing for DOS modem games to be played over modern LANs or the Internet, and [[IPX]] network tunneling, which allows for old IPX DOS multiplayer games to be played as [[UDP/IP]] over modern [[LAN]]s or the Internet. [[Win32]] and Linux specific builds support direct [[serial port]] access. Certain third-party patches also allow DOSBox to emulate an NE2000-class [[network interface card]] as a passthrough to the host computer's own network card, essentially allowing full internet connectivity (for example, using Windows 3.1 and Trumpet Winsock) and web browsing using programs such as [[Netscape Navigator]], albeit with little real world utility other than as a curiosity.
+
+DOSBox contains its own internal DOS-like [[Shell (computing)|shell]], rather than being a fully virtual PC emulator like [[Bochs]]. This means that it can be used without owning a license to any real DOS operating system. Most commands that are typically used in installer [[batch file]]s are supported, but many of the more advanced commands of later MS-DOS versions (e.g. post-[[Windows 98]] DOS shells) are not. In addition to its internal shell, it also supports running image files of games and software originally intended to start without any [[operating system]].
+
+DOSBox is capable of timing-compatible implementation of the serial ports, and can run older hardware and software dependent on such; however, some [[USB]] devices that are supported by the host OS can act as a replacement for older serial port devices when using the emulator.
+
+[[File:DOSBOX Windows 3.1.png|thumb|[[Windows 3.1x|Microsoft Windows 3.1]] running in DOSBox, on [[Windows XP]].]]
+It can also be used to install [[Windows 3.1x|Windows 3.1]], and can boot disk images with copies of other operating systems, including [[CP/M-86]] and [[Windows 95]], as well as real DOS environments ([[MS-DOS]], [[IBM PC DOS|PC DOS]], [[DR-DOS]], [[FreeDOS]], etc.). However, the project has a policy of not adding features that aren't used by DOS games if they impact performance.
+
+Emulation of [[3dfx_Interactive#Voodoo_Graphics_PCI|Voodoo]] cards is in development. This should give not only support for games that use the Glide API, but also provide Direct3D support to Win9x guests.
+
+==Ports==
+DOSBox uses the [[Simple DirectMedia Layer|SDL]] library and has been [[porting|ported]] to many operating systems including [[Microsoft Windows]], [[Mac OS X]] v10.3 or later (for example, [http://boxerapp.com/ Boxer]), [[Linux]], [[KolibriOS]], and [[eComStation]]. Using the [[HX DOS Extender]], it can even run in [[DOS]].&lt;ref&gt;{{cite web|url=http://www.japheth.de/HX.html|title=HX DOS Extender |date=|accessdate=2009-01-02|author=japheth|publisher=}}&lt;/ref&gt;  The source code has also been [[Fork (software development)|fork]]ed to provide compatibility on a number of non-[[x86]] PC computer platforms, including the [[Palm OS]], [[PlayStation Portable]], [[Android (operating system)|Android]], [[Symbian]], [[Maemo]], [[Wii]], and the [[GP2X]], on various [[computing architecture]]s including [[PowerPC]], [[SPARC]], [[MIPS architecture|MIPS]] and [[ARM architecture|ARM]]. DOSBox is included in the software repositories for many [[Linux distributions]] such as [[Fedora (operating system)|Fedora]], [[Debian]], and [[Ubuntu (operating system)|Ubuntu]]. It has even been ported to [[Google Native Client]] to run old games in a web browser.
+
+==DOSBox and the Wine compatibility layer==
+The developers of the [[Wine (software)|Wine]] [[compatibility layer]] (a program which allows users to run some Windows programs in other operating systems which Wine is compatible with), have begun the process of integrating DOSBox to facilitate running DOS programs which are not supported natively by the Wine [[Virtual DOS machine]] (winevdm).&lt;ref&gt;{{cite web
+ | url=http://www.phoronix.com/scan.php?page=news_item&amp;px=OTAzMw
+ | title=Wine 1.3.12 Brings Initial DOSBox Integration
+ | date=2011-1-21
+ | accessdate=2011-8-26
+}}&lt;/ref&gt;
+
+==Unofficial builds==
+
+There are several unofficial DOSBox builds providing ''additional'' functionality compared to official release:
+
+* [http://ykhwong.x-y.net ykhwong's build]: Glide, MT-32, Save/Load states, etc. This build updates not only with stable DOSBox releases, but with intermediate SVN builds&lt;ref&gt;SVN builds can be gotten at [http://www.emucr.com emucr.com]&lt;/ref&gt; too.
+* [http://www.si-gamer.net/gulikoza/ gulikoza's build]: Glide, etc.
+
+==Commercial deployment==
+[[id Software]] has used DOSBox to re-release vintage games such as ''[[Wolfenstein 3D]]'' and ''[[Commander Keen]]'' on [[Valve Corporation|Valve]]'s [[Steam (software)|Steam]]. In the process, it was reported they violated the program's license, the GNU GPL; the issue, which was reported as an oversight, was promptly resolved.&lt;ref&gt;{{cite web| url=http://news.softpedia.com/news/Are-id-Software-and-Valve-Thiefs-62007.shtml| title=Are id Software and Valve Thieves?| publisher=[[Softpedia]]| date=2007-08-06|accessdate=2009-01-03|author=}}&lt;/ref&gt;&lt;ref&gt;{{cite web| url=http://www.eurogamer.net/article.php?article_id=80945| title=id sorts GPL Steam issue| publisher=[[Eurogamer]]| date=2007-08-07|accessdate=2009-01-03|author=Purchese, Rob}}&lt;/ref&gt; [[Activision Blizzard]] has also used it to re-release [[Sierra Entertainment]]'s DOS games.&lt;!-- &lt;ref&gt;{{cite web| url=http://www.mobygames.com/forums/dga,2/dgb,3/dgm,39026/| title=&quot;Runs on XP&quot; Sierra Adventure Collections to use DosBox| publisher=[[MobyGames]]| date=2006-09-14}}&lt;/ref&gt;  --&gt; [[LucasArts]] used it to re-release [[Star Wars: Dark Forces]] for modern machines on Steam. [[2K Games]] producer Jason Bergman stated the company used DOSBox for Steam re-releases of certain parts of the [[X-Com]] series.&lt;ref&gt;{{cite web|url=http://www.shacknews.com/laryn.x?id=17846108#itemanchor_17846108| title=Comments-morning discussion| publisher=[[Shacknews]]| date=2008-09-04|accessdate=2009-01-03|author=Bergman, Jason}}&lt;/ref&gt; [[GOG.com]] uses DOSBox for all of their DOS releases.&lt;ref&gt;{{cite web|url=http://www.gog.com/en/thanks/| title=Our Thanks| publisher=[[GOG.com]]|accessdate=2009-01-03}}&lt;/ref&gt; [[Bethesda Softworks]] recommends DOSBox and  provides a link to the DOSBox website on the downloads page for [[The Elder Scrolls: Arena]] and [[The Elder Scrolls II: Daggerfall]].&lt;ref&gt;{{cite web| url=http://www.elderscrolls.com/arena/| title=The Elder Scrolls Official Site | The Elder Scrolls: Arena: publisher=[[Bethesda Softworks]]| accessdate=2011-03-03}}&lt;/ref&gt; &lt;ref&gt;{{cite web| url=http://www.elderscrolls.com/daggerfall/| title=The Elder Scrolls Official Site | The Elder Scrolls: Daggerfall: publisher=[[Bethesda Softworks]]| accessdate=2011-03-03}}&lt;/ref&gt; [[3D Realms]] also recommends DOSBox and like Bethesda Softworks, provides a link to the DOSBox website on their downloads page.&lt;ref&gt;{{cite web| url=http://www.3drealms.com/downloads.html#misc| title=3D Realms Site: Master Download Page| publisher=[[3D Realms]]| accessdate=2009-11-05}}&lt;/ref&gt;
+
+==See also==
+{{Portal|Free software}}
+*[[Comparison of platform virtual machines]]
+*[[List of MS-DOS games]]
+*[[Legacy mode]]
+*[[Virtual DOS machine]]
+*[[DOSEMU]]
+*[[Wine (software)|Wine]]
+*[[ScummVM]], a portable interpreter for classical [[adventure game]] scripting languages
+*[[FreeDOS]]
+
+==References==
+{{Reflist|2}}
+
+==External links==
+{{Commons}}
+*[http://www.dosbox.com/ Official DOSBox website]
+*[http://vogons.zetafleet.com/index.php?c=7 Official DOSBox forum]
+*[http://www.classicdosgames.com/interviews/peterveenstra.html Interview with Qbix, a developer of DOSBox.] A technical insight into DOSBox.
+
+{{DEFAULTSORT:Dosbox}}
+[[Category:2002 software]]
+[[Category:DOS on IBM PC compatibles]]
+[[Category:DOS emulators]]
+[[Category:Free emulation software]]
+[[Category:GP2X emulation software]]
+[[Category:Linux emulation software]]
+[[Category:Windows emulation software]]
+[[Category:X86 emulators]]
+[[Category:SDL programs]]
+[[Category:Free cross-platform software]]
+[[Category:Free software programmed in C]]
+[[Category:Free software programmed in C++]]
+[[Category:Portable software]]
+
+[[ca:DOSBox]]
+[[cs:DOSBox]]
+[[de:DOSBox]]
+[[et:DOSBox]]
+[[es:DOSBox]]
+[[eo:DOSbox]]
+[[fa:Ø¯Ø§Ø³ Ø¨Ø§Ú©Ø³]]
+[[fr:DOSBox]]
+[[ko:ëì¤ë°ì¤]]
+[[it:DOSBox]]
+[[he:DOSBox]]
+[[lt:DOSBox]]
+[[nl:DOSBox]]
+[[ja:DOSBox]]
+[[pl:DOSBox]]
+[[pt:DosBox]]
+[[ru:DOSBox]]
+[[sk:DOSBox]]
+[[szl:DOSBox]]
+[[fi:DOSBox]]
+[[sv:Dosbox]]
+[[zh:DOSBox]]</rev></revisions></page></pages></query></api>

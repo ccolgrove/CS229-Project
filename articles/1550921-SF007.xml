@@ -1,0 +1,2436 @@
+<?xml version="1.0"?><api><query><pages><page pageid="1550921" ns="0" title="Comparison of wiki software"><revisions><rev xml:space="preserve">{{Original research|date=March 2011}}
+The following tables compare general and technical information for a number of [[wiki software]] packages.
+
+==General information==
+{| class=&quot;wikitable sortable&quot; style=&quot;text-align: center; font-size: 85%; width: auto; table-layout: fixed;&quot;
+|-
+! style=&quot;width: 12em&quot; |
+! Creator
+! First public release date
+! Latest stable release
+! Stable release date
+! Predecessor
+! Cost ([[USD]])
+! Software license&lt;ref name=&quot;license&quot;&gt;Licenses here are a summary, and are not taken to be complete statements of the licenses. Some packages may use libraries under different licenses.&lt;/ref&gt;
+! Open source
+! Encoding
+! Multilingual
+! Programming language
+! [[Data management|Data backend]]
+|-
+| {{rh}} | [[BrainKeeper]]
+| BrainKeeper, Inc.
+| {{dts|nowrap=off|link=off|2005|September|01}}
+| 
+| {{dts|nowrap=off|link=off|2010|March|01}}
+| 
+|&lt;ref&gt;Paid plans start at $17/month&lt;/ref&gt;
+| [[Proprietary software|Proprietary]]
+| {{No}}
+| 
+| {{Yes}}
+| [[Java (programming language)|Java]]/[[Java EE]]
+| [[MySQL]]
+|-
+| {{rh}} | [[Central Desktop]]
+| Central Desktop Inc.
+| {{dts|nowrap=off|link=off|2005|October|01}}
+| 2.0
+| {{dts|nowrap=off|link=off|2010|February|22}}
+| 
+|&lt;ref&gt;Free Ver Available, Paid plans start at $25/month&lt;/ref&gt;
+| [[Proprietary software|Proprietary]]
+| {{No}}
+| 
+| 
+| [[PHP]]
+| [[PostgreSQL]]
+|-
+| {{rh}} | [[CodeBeamer (software)|codeBeamer]]
+| [[Intland Software]]
+|{{dts|nowrap=off|link=off|2002}}
+| 5.6.0
+|{{dts|nowrap=off|link=off|2011|March|31}}
+| 
+|
+| [[Proprietary software|Proprietary]]
+| {{No}}
+| [[UTF-8]]
+| {{No}}
+| [[Java (programming language)|Java]]
+| [[MySQL]], [[Oracle Database|Oracle]], [[Apache Derby]] or [[Postgres]]
+|-
+| {{rh}} | [[Atlassian Confluence|Confluence]]
+| [[Atlassian Software Systems]]
+| {{dts|nowrap=off|link=off|2004|March|25}}
+| 4.0
+| {{dts|nowrap=off|link=off|2011|September|15}}
+| 
+|&lt;ref&gt;Free (open source project or community or personal), $1200&amp;ndash;8000 commercial, $600&amp;ndash;4000 academic&lt;/ref&gt;
+|&lt;ref&gt;Commercial, Academic, Community, Personal, Open Source Project&lt;/ref&gt;
+| {{Yes}}&lt;ref name=CNFSRC&gt;Atlassian Confluence Licensing FAQs({{Cite web|url=http://www.atlassian.com/about/licensing/faq.jsp#source_code|title=Do I get access to the source code?}})&lt;/ref&gt;
+| [[UTF-8]]
+| {{Yes}}
+| [[Java (programming language)|Java]], [[Java EE]]
+| [[IBM DB2|DB2]], [[MS SQL Server]], [[MySQL]], [[Oracle database|Oracle]], or [[PostgreSQL]]
+|-
+| {{rh}} | [[coWiki]]
+| Daniel T. Gorski; Paul Hanchett
+| {{dts|nowrap=off|link=off|2002|March|}}
+| 0.3.4
+| {{dts|nowrap=off|link=off|2005|February|24}}
+| 
+| {{free}}
+| [[GNU General Public License|GPL]]
+| {{Yes}}
+| 
+| 
+| [[PHP5]]
+| [[MySQL]]
+|-
+| {{rh}} | [[MindTouch Deki]]
+| [[MindTouch]] &amp; community
+| {{dts|nowrap=off|link=off|2006|July|25}}
+| 10.0.8
+| {{dts|nowrap=off|link=off|2011|April|18}}
+| [[MediaWiki]]
+|&lt;ref&gt;Free &amp; open-source edition, paid enterprise edition, and free and paid hosted versions offered.&lt;/ref&gt;
+| [[GNU General Public License|GPL]]/[[Lesser GNU General Public License|LGPL]], [[Apache License]]
+| {{Yes}}
+| [[UTF-8]]
+| {{Yes}}
+| [[PHP]], [[C Sharp (programming language)|C#]] on Windows or [[Mono (software)|Mono]]
+| [[MySQL]]
+|-
+| {{rh}} | [[DokuWiki]]
+| Andreas Gohr
+| {{dts|nowrap=off|link=off|2004|July|}}
+| 
+| {{dts|nowrap=off|link=off|2011|May|25}}
+|
+| {{free}}
+| [[GNU General Public License|GPL v2]]
+| {{Yes}}
+| [[UTF-8]]
+| {{Yes}}
+| [[PHP]]
+| [[File system]]
+|-
+| {{rh}} | [[EditMe]]
+| Matt Wiseley
+| {{dts|nowrap=off|link=off|2003|August|}}
+|
+|
+| 
+| {{nonfree}} From $5/mo
+| Proprietary
+| {{No}}
+| [[ISO8859-1]]
+| {{No}}
+| [[Java (programming language)|Java]]
+| [[MySQL]]
+|-
+| {{rh}} | [[FlexWiki]]
+| David Ornstein
+| 
+| 2.1.0.274
+| {{dts|nowrap=off|link=off|2008|October|20}}
+| 
+| {{free}}
+| [[Common Public License|CPL]]
+| {{Yes}}
+| 
+| 
+| [[ASP.NET]], [[C Sharp (programming language)|C#]]
+| [[File system]], [[Microsoft SQL Server]]
+|-
+| {{rh}} | [[Foswiki]]
+| Foswiki Association
+| | {{dts|nowrap=off|link=off|2009|January|9}}
+| 1.1.3
+| | {{dts|nowrap=off|link=off|2011|April|16}}
+| [[TWiki]]
+| {{free}}
+| [[GNU General Public License|GPL]]
+| {{Yes}}
+| [[ISO8859-1]], [[UTF-8]]
+| {{Yes}}
+| [[Perl]]
+| [[File system]]
+|-
+| {{rh}} | [[Gitit (software)|Gitit]]
+| John MacFarlane and community
+| | {{dts|nowrap=off|link=off|2008|November|7}}
+| 0.8.0.1
+| | {{dts|nowrap=off|link=off|2011|June|6}}
+| 
+| {{free}}
+| [[GNU General Public License|GPL]]
+| {{yes}}
+| [[UTF-8]]
+| {{yes}}
+| [[Haskell (programming language)|Haskell]]
+| [[Git (software)|Git]], now also [[Darcs]], [[Mercurial]]
+|-
+| {{rh}} | [[Gollum]]
+| 
+| 
+| 
+| 
+| 
+| {{free}}
+| [[MIT License|MIT]]
+| {{yes}}
+| [[UTF-8]]
+| {{yes}}
+| 
+| [[Git (software)|Git]]
+|-
+
+
+| {{rh}} | [[Ikiwiki]]
+| Joey Hess et al.&lt;ref name=&quot;KX12KM&quot;&gt;quoted from [[Ikiwiki]] specifically ({{Cite web|url=http://en.wikipedia.org/w/index.php?title=Ikiwiki&amp;oldid=340766261 |title=http://en.wikipedia.org/wiki/Ikiwiki version 19:13, 29 January 2010 |accessdate=2010-01-29}})&lt;/ref&gt;
+| 29 April 2006&lt;ref name=&quot;KX12KM&quot;/&gt;&lt;ref&gt;Version 1.0, see [http://ikiwiki.info/roadmap/ ikiwiki roadmap]&lt;/ref&gt;
+| 3.20110608&lt;ref name=&quot;KX12KM&quot;/&gt;&lt;ref&gt;({{Cite web|url=http://ikiwiki.info/download/ |title=Download page of ikiwiki|publisher=Ikiwiki.info |date= |accessdate=2010-01-29}}) asserts the latest source is in debian repository ({{Cite web|url=http://packages.debian.org/unstable/source/ikiwiki |title=ikiwiki at debian packages |publisher=Packages.debian.org |date= |accessdate=2010-01-29}}) which gives the latest version number.&lt;/ref&gt;
+| {{dts|nowrap=off|link=off|2011|June|8}}
+| 
+| {{free}}&lt;ref name=&quot;KX12KM&quot;/&gt;
+| [[GNU General Public License]] v2 +&lt;ref name=&quot;KX12KM&quot;/&gt;
+| {{Yes}}&lt;ref name=&quot;KX12KM&quot;/&gt;
+| 
+| {{Yes}}
+| [[Perl]]&lt;ref name=&quot;KX12KM&quot;/&gt;
+| standard [[version control system]]&lt;ref name=&quot;features&quot;&gt;{{Cite web|url=http://ikiwiki.info/features/#index1h2 |title=ikiwiki feature &quot;Use a Real RCS&quot; |publisher=Ikiwiki.info |date= |accessdate=2010-01-29}}&lt;/ref&gt; such as [[Git (software)|Git]] or [[Subversion (software)|Subversion]] or 6+ others&lt;ref name=&quot;KX12KM&quot;/&gt;&lt;ref name=&quot;rcs_support&quot;&gt;{{Cite web|url=http://ikiwiki.info/rcs |title=ikiwiki Revision Control Systems |publisher=Ikiwiki.info |date= |accessdate=2010-01-29}}&lt;/ref&gt;
+|-
+| {{rh}} | [[Instiki]]
+| [[David Heinemeier Hansson]]
+| 
+| 0.19.2
+| {{dts|nowrap=off|link=off|2011|June|12}}
+| 
+| {{free}}
+| [[Ruby License]]&lt;ref&gt;Instiki - Ruby License Instiki is distributed under the same terms as Ruby itself, per the [http://ruby.mirror.easynet.be/en/LICENSE.txt Mirror.Easynet.be], Ruby license.&lt;/ref&gt;
+| {{Yes}}
+| 
+| 
+| [[Ruby programming language|Ruby]]
+| [[Ruby on Rails#Model|Active Record]]
+|-
+| {{rh}} | [[JAMWiki]]
+| Various
+| {{dts|nowrap=off|link=off|2006|June|30}}
+| 1.0.4
+| {{dts|nowrap=off|link=off|2011|June|6}}
+| [[MediaWiki]]
+| {{free}}
+| [[GNU Lesser General Public License|LGPL]]
+| {{Yes}}
+| [[UTF-8]]
+| {{Yes}}
+| [[Java (programming language)|Java]]
+| Most [[JDBC|JDBC compliant databases]], or [[HSQL|file system using HSQL]]
+|-
+| {{rh}} | [[Jive SBS]]
+| [[Jive Software]]
+| {{dts|nowrap=off|link=off|2007|January|7}}
+| 4.5.6
+| 
+| 
+|&lt;ref&gt;For internal collaboration and communities of practice: free for up to 5 users, additional users $59/user/year&lt;/ref&gt;
+| [[Proprietary software|Proprietary]]
+| {{No}}
+| [[ISO8859-1]], [[UTF-8]], ...
+| {{Yes}}
+| [[Java EE]]/[[Java (programming language)|Java]]
+| [[SQL]]/[[LDAP]]&lt;ref&gt;including: [[MySQL]], [[Oracle database|Oracle]], [[PostgreSQL]], [[IBM DB2]] and [[Microsoft SQL Server]]&lt;/ref&gt;
+|-
+| {{rh}} | [[JotSpot]]
+| JotSpot
+| {{dts|nowrap=off|link=off|2004|October|}}
+| 2.0
+| {{dts|nowrap=off|link=off|2006|July|24}}
+| 
+| {{nonfree}} From $100/mo
+| Proprietary
+| {{No}}
+| 
+| 
+| [[Java (programming language)|Java]]
+| [[File system]], [[XML]]
+|-
+| {{rh}} | [[JSPWiki]]
+| Janne Jalkanen
+| {{dts|nowrap=off|link=off|2001|July|6}}
+| 2.8.4
+| {{dts|nowrap=off|link=off|2010|May|09}}
+| 
+| {{free}}
+| Apache Public License 2.0
+| {{Yes}}
+| [[UTF-8]]
+| {{Yes}}
+| [[Java (programming language)|Java]]
+| [[Flat-file]], [[Revision Control System|RCS]], [[Subversion (software)|SVN]]
+|-
+| {{rh}} | [http://jjjuli.sourceforge.net Juli]
+| Fumisky Wells
+| | {{dts|nowrap=off|link=off|2011|April|7}}
+| 1.02.01
+| | {{dts|nowrap=off|link=off|2011|August|23}}
+| 
+| {{free}}
+| [[GNU General Public License|GPL]]
+| {{yes}}
+| [[UTF-8]]
+| {{yes}}
+| [[Ruby (programming language)|Ruby]]
+| [[Git (software)|Git]]
+|-
+| {{rh}} | [[MediaWiki]]
+| [[Wikimedia Foundation]]
+| {{dts|nowrap=off|link=off|2002|January|25}}
+| 1.17.0
+| {{dts|nowrap=off|link=off|2011|June|22}}
+| 
+| {{free}}
+| [[GNU General Public License|GPL]] v2
+| {{Yes}}
+| [[UTF-8]]
+| {{Yes}}
+| [[PHP]]
+| [[MySQL]], [[PostgreSQL]], [[SQLite]]
+|-
+| {{rh}} | [[Midgard (software)|Midgard Wiki]]
+| Henri Bergius
+| {{dts|nowrap=off|link=off|2004|September|29}}
+| 8.09.9&lt;ref&gt;[http://www.midgard-project.org/updates/midgard-ragnaroek-8-09-9_released/ Midgard-Project.org]&lt;/ref&gt;
+| {{dts|nowrap=off|link=off|2010|June|22}}
+| 
+| {{free}}
+| [[GNU Lesser General Public License|LGPL]]
+| {{Yes}}
+| 
+| 
+| [[PHP]]
+| [[MySQL]] and [[Revision Control System|RCS]]
+|-
+| {{rh}} | [[MoinMoin]]
+| JÃ¼rgen Hermann; Thomas Waldmann; ...
+| {{dts|nowrap=off|link=off|2000|July|28}}
+| 1.9.3
+| {{dts|nowrap=off|link=off|2010|June|27}}
+| PikiPiki
+| {{free}}
+| [[GNU General Public License|GPL]]
+| {{Yes}}
+| [[UTF-8]]
+| {{Yes}}
+| [[Python (programming language)|Python]]
+| [[Flat-file]]
+|-
+| {{rh}} | [[MojoMojo]]
+| Marcus Ramberg &amp; community
+| {{dts|nowrap=off|link=off|2007|August|29}}
+| 1.03
+| {{dts|nowrap=off|link=off|2010|January|12}}
+| 
+| {{free}}
+| [[Perl]]
+| {{Yes}}
+| [[UTF-8]]
+| {{Yes}}
+| [[Perl]]
+| [[PostgreSQL]], [[SQLite]], [[MySQL]], others
+|-
+| {{rh}} | [[OddMuseWiki]]
+| Alex Schroeder
+|
+| 1.934
+| {{dts|nowrap=off|link=off|2009|November|13}}&lt;ref&gt;[http://download.savannah.gnu.org/releases/oddmuse/ Index of /releases/oddmuse &amp;ndash; download.savannah.gnu.org]&lt;/ref&gt;
+| [[UseModWiki]] 0.9
+| {{free}}
+| [[GNU General Public License|GPL]]
+| {{Yes}}
+| [[UTF-8]]&lt;ref&gt;[http://www.oddmuse.org/cgi-bin/oddmuse/Script_Setup The HttpCharset option is set to UTF-8 by default]&lt;/ref&gt;
+| 
+| [[Perl]]
+| [[Flat-file]]
+|-
+| {{rh}} | [[PBworks]]
+| David Weekly
+| {{dts|nowrap=off|link=off|2005|May|30}}
+|
+|
+| [[TipiWiki]]
+|&lt;ref name=&quot;Free &amp; Paid options available&quot;&gt;Free &amp; Paid options available&lt;/ref&gt;
+| Proprietary
+| {{No}}
+| [[UTF-8]]
+| 
+| [[PHP]]
+| [[MogileFS]], [[Squid (software)|Squid]], [[MySQL]], [[Pound (networking)|Pound]], [[lighttpd]]
+|-
+| {{rh}} | [[PhpWiki]]
+| Steve Wainstead, ...
+| {{dts|nowrap=off|link=off|1999|December|}}
+| 1.3.14
+| {{dts|nowrap=off|link=off|2007|July|1}}
+| [[WikiWikiWeb]]
+| {{free}}
+| [[GNU General Public License|GPL]]
+| {{Yes}}
+| [[ISO8859-1]], [[UTF-8]]
+| {{Yes}}
+| [[PHP]]
+| [[Berkeley DB]], [[Flat-file]], [[MySQL]], [[PostgreSQL]], [[Microsoft SQL Server]], Oracle 8, Firebird
+|-
+| {{rh}} | [[Pier (software)|Pier]]
+| Lukas Renggli
+| 
+| 2.0
+| 
+| SmallWiki
+| {{free}}
+| [[MIT Licence|MIT]]
+| {{Yes}}
+| 
+| 
+| [[Smalltalk]], [[Squeak]]
+| Image-based, and pluggable
+|-
+| {{rh}} | [[PmWiki]]
+| Patrick Michaud
+| {{dts|nowrap=off|link=off|2002|February|6}}
+| 2.2.35
+| {{dts|nowrap=off|link=off|2011|November|11}}
+| 
+| {{free}}
+| [[GNU General Public License|GPL]]
+| {{Yes}}
+| [[ISO8859-1]], [[UTF-8]]
+| {{Yes}}
+| [[PHP]]
+| [[Flat-file]]. MySQL, SQLite (plug-ins)
+|-
+| {{rh}} | [[ProjectForum]]
+| CourseForum Technologies
+| {{dts|nowrap=off|link=off|2003|January}}
+| 7.0.1
+| {{dts|nowrap=off|link=off|2011|June|22}}
+| 
+| &lt;ref&gt;Free and paid versions available.&lt;/ref&gt;
+| [[Proprietary software|Proprietary]]
+| {{No}}
+| [[UTF-8]]
+| 
+| Various (precompiled)
+| [[Metakit]]
+|-
+| {{rh}} | [[Qontext]]
+| Qontext, Inc
+| {{dts|nowrap=off|link=off|2010|November|6}}
+| 0.144.1
+| {{dts|nowrap=off|link=off|2010|December|12}}
+| 
+| Refer website
+| [[Proprietary software|Proprietary]]
+| {{No}}
+| [[UTF-8]]
+| {{Yes}}
+| [[Java (programming language)|Java]]
+| [[Amazon Elastic Compute Cloud|Amazon Cloud]]
+|-
+| {{rh}} | [[SamePage]]
+| [[eTouch Systems]]
+| {{dts|nowrap=off|link=off|2007|2005}}
+| 4.4.0.0.239
+| 
+| 
+|&lt;ref&gt;For internal collaboration and knowledge management: SaaS &amp; hosted pricing&lt;/ref&gt;
+| [[Proprietary software|Proprietary]]
+| {{No}}
+| 
+| {{Yes}}
+| [[Java EE]]/[[Java (programming language)|Java]]
+| [[SQL]]/[[LDAP]]
+|-
+| {{rh}} | [[ScrewTurn Wiki]]
+| ScrewTurn Software
+| {{dts|nowrap=off|link=off|2006|September|3}}
+| 3.0.5.600
+| {{dts|nowrap=off|link=off|2011|July|12}}
+| 
+| {{Free}}
+| [[GPL]] v2
+| {{Yes}}
+| 
+| {{Yes}}
+| [[ASP.NET]], [[C Sharp (programming language)|C#]]
+| [[MySql]], [[Microsoft SQL Server]] or [[flat-file]]
+|-
+| {{rh}} | [[Microsoft_SharePoint_Foundation|SharePoint Foundation]]
+| Microsoft
+| {{dts|nowrap=off|link=off|2001|March}}
+| 2010
+| {{dts|nowrap=off|link=off|2010|April|22}}
+| 3.0
+| {{Free}}&lt;ref&gt;user licence is included in Windows Server CAL&lt;/ref&gt;
+| [[Proprietary_software|Proprietary]]
+| {{No}}
+| [[UTF-8]]
+| {{Yes}}
+| [[ASP.NET]], [[C Sharp (programming language)|C#]]
+| [[Microsoft SQL Server]] or [[Windows Internal Database]]
+|-
+| {{rh}} | [[Microsoft_SharePoint_Server|SharePoint Server]]
+| Microsoft
+| {{dts|nowrap=off|link=off|2001}}
+| 2010
+| {{dts|nowrap=off|link=off|2010|April|22}}
+| 2007
+| {{nonfree}} from $90/user or from $3/mo&lt;ref&gt;price for whole suite, including wiki system, ECM, social software, ...&lt;/ref&gt;
+| [[Proprietary_software|Proprietary]]
+| {{No}}
+| [[UTF-8]]
+| {{Yes}}
+| [[ASP.NET]], [[C Sharp (programming language)|C#]]
+| [[Microsoft SQL Server]] or [[Windows Internal Database]]
+|-
+| {{rh}} | [[SMW%2B|SMW+]]
+| ontoprise GmbH
+| 
+| 1.5.6-1
+| {{dts|nowrap=off|link=off|2011|September|14}}
+| MediaWiki
+| {{free}}
+| [[GNU General Public License|GPL]]
+| {{Yes}}
+| [[UTF-8]]
+| 
+| [[PHP]]
+| [[MySQL]]
+|-
+| {{rh}} | [[Socialtext]]
+| Socialtext
+| 2003
+| 4.6.0
+| {{dts|nowrap=off|ink=off|2011|February|24}}
+| N/A
+|&lt;ref&gt;Pricing varies. Available deployment options include: free open-source and VMware image downloads, hosted services and dedicated appliances.&lt;/ref&gt;
+|&lt;ref&gt;Open-source and commercial licensing options&lt;/ref&gt;
+| 
+| {{No}}
+| 
+| [[Perl]]
+| [[PostgreSQL]]
+|-
+| {{rh}} | [[Swiki]]
+| [[Mark Guzdial]]; Jochen Rick
+| {{dts|nowrap=off|link=off|1999|October|}}
+| 1.5
+| {{dts|nowrap=off|link=off|2005|December|6}}
+| 
+| {{free}}
+| [[GNU General Public License|GPL]]
+| {{Yes}}
+| 
+| 
+| [[Squeak]]
+| [[File system]]
+|-
+| {{rh}} | [[ThoughtFarmer]]
+| ThoughtFarmer
+| {{dts|nowrap=off|link=off|2006|May|}}
+| 4.0
+| {{dts|nowrap=off|link=off|2010|November|22}}
+| 
+| {{nonfree}} $109/user
+| Proprietary
+| {{No}}
+| [[UTF-8]]
+| {{Yes}}
+| [[ASP.NET]], [[C Sharp (programming language)|C#]]
+| [[Microsoft SQL Server]]
+|-
+| {{rh}} | [[TiddlyWiki]]
+| Jeremy Ruston
+| {{dts|nowrap=off|link=off|2004|September|}}
+| 2.6.2
+| {{dts|nowrap=off|link=off|2010|November|30}}&lt;ref&gt;http://www.tiddlywiki.com/beta/&lt;/ref&gt;
+| 
+| {{free}}
+| [[BSD licenses|BSD]]
+| {{Yes}}
+| [[UTF-8]]
+| {{Yes}}
+| [[JavaScript]]
+| Single file, MySQL (mod)
+|-
+| {{rh}} | [[TigerWiki]]
+| Chabel.org
+| {{dts|nowrap=off|link=off|2005|July|}}
+| 2.19
+| {{dts|nowrap=off|link=off|2006|November|02}}
+| roWiki
+| {{free}}
+| [[GNU General Public License|GPL]]
+| {{Yes}}
+| 
+| 
+| [[PHP]]
+| [[File system]]
+|-
+| {{rh}} | [[Tiki Wiki CMS Groupware]]
+| Luis Argerich (200+ devs nowadays)
+| {{dts|nowrap=off|link=off|2002|October|9}}
+| 8.1
+| {{dts|nowrap=off|link=off|2011|November|11}}
+| 
+| {{free}}
+| [[GNU Lesser General Public License|LGPL]]
+| {{Yes}}
+| [[UTF-8]]
+| {{Yes}}
+| [[PHP]]
+| [[MySQL]]
+|-
+| {{rh}} | [[Traction TeamPage]]
+| Traction Software
+| {{dts|nowrap=off|link=off|1999|December|1}}
+| 5.2
+| {{dts|nowrap=off|link=off|2011|May|10}}
+| 
+|&lt;ref&gt;Free for personal or commercial use with up to 5 login accounts for contributors / editors / administrators and unlimited visitor access (no login required). Pricing starts at $3750 / year for 25 login accounts. Amazon EC2 hosting available.&lt;/ref&gt;
+| [[Proprietary software|Proprietary]]
+| {{No}}
+| [[UTF-8]], ...
+| Supports multi-lingual content&lt;br&gt;(and supports [[i18n]])
+| [[Java SE]]/[[Java (programming language)|Java]]
+| Flat File and File System&lt;br&gt;Oracle 10G RDB option &lt;br&gt;WebDAV for Attachments
+|-
+| {{rh}} | [[TWiki]]
+| Peter Thoeny
+| {{dts|nowrap=off|link=off|1998|October|}}
+| 5.0.2
+| {{dts|nowrap=off|link=off|2011|May|3}}
+| JosWiki
+|&lt;ref&gt;Free download at twiki.org; twiki.net offers Certified TWiki Virtual Appliance with/without support, and paid hosting solutions&lt;/ref&gt;
+| [[GNU General Public License|GPL]]
+| {{Yes}}
+| [[ISO8859-1]], [[UTF-8]]
+| {{Yes}}
+| [[Perl]]
+| [[Flat-file]], [[Revision Control System|RCS]], pluggable storage backend&lt;ref&gt;[http://n2.nabble.com/Foswiki-on-Wikipedia-td3698728i20.html#a3728148 Foswiki mailing list - Foswiki on Wikipedia]&lt;/ref&gt;
+|-
+| {{rh}} | [[UseModWiki]]
+| Clifford Adams
+| {{dts|nowrap=off|link=off|2000|January|22}}
+| 1.0.5
+| {{dts|nowrap=off|link=off|2009|August|28}}
+| AtisWiki
+| {{free}}
+| [[GNU General Public License|GPL]]
+| {{Yes}}
+| 
+| 
+| [[Perl]]
+| [[Flat-file]]
+|-
+| {{rh}} | [[WackoWiki]]
+| Roman Ivanov
+| {{dts|nowrap=off|link=off|2003|March|}}
+| R4.3
+| {{dts|nowrap=off|link=off|2011|March|20}}
+| [[WakkaWiki]]
+| {{free}}
+| [[BSD license|BSD]]
+| {{Yes}}
+| 
+| {{Yes}}
+| [[PHP]]
+| [[MySQL]]
+|-
+! {{rh}} | [[Wiki Server]]
+| [[Apple Inc.]]
+|
+|
+|
+|
+| comes with OS X Server
+| [[Proprietary software|Proprietary]]
+| {{No}}
+|
+|
+|
+|
+|-
+! {{rh}} | [[Wikispaces]]
+| Tangient LLC
+| {{dts|nowrap=off|link=off|2005|March|18}}
+|
+|
+|
+|&lt;ref name=&quot;Free &amp; Paid options available&quot;/&gt;
+| Proprietary
+| {{No}}
+| [[UTF-8]]
+| {{Yes}}
+| [[PHP]]
+| [[MySQL]], [[MogileFS]]
+|-
+! {{rh}} | [[Wikiwig]]
+| Steve Goldman (Formerly Starcrouz)
+| {{dts|nowrap=off|link=off|2004|July|20}}
+| R5.01
+| {{dts|nowrap=off|link=off|2008|May|28}}
+| Wikiwig 4.x
+| {{free}}
+| [[GNU General Public License|GPL]]
+| {{Yes}}
+| 
+| {{Yes}}
+| [[PHP]]
+| [[MySQL]]
+|-
+! {{rh}} | [[WikkaWiki]]
+| Wikka Development Team
+| {{dts|nowrap=off|link=off|2004|May|16}}
+| 1.3.1
+| {{dts|nowrap=off|link=off|2011|Mar|31}}
+| [[WakkaWiki]]
+| {{free}}
+| [[GNU General Public License|GPL]]
+| {{Yes}}
+| [[ISO8859-1]]
+| {{Yes}}
+| [[PHP]]
+| [[MySQL]]
+|-
+! {{rh}} | wiki, [[WikiWikiWeb]]
+| [[Ward Cunningham]]
+| 1995
+| 
+| 
+| Apple [[HyperCard]]
+| see QuickWiki
+| 
+| 
+| 
+| 
+| Perl
+| 
+|-
+| {{rh}} | [[XWiki]]
+| Ludovic Dubost
+| {{dts|nowrap=off|link=off|2004|February|}}
+| 3.2
+| {{dts|nowrap=off|link=off|2011|October|11}}
+| Twiki
+| {{free}}
+| [[GNU Library General Public License|LGPL]]
+| {{Yes}}
+| [[UTF-8]]
+| {{Yes}}
+| [[Java (programming language)|Java]]
+| [[PostgreSQL]], [[MySQL]], Oracle, Apache Derby, HSQLDB
+|-
+| {{rh}} | [[ZWiki]]
+| Simon Michael
+| {{dts|nowrap=off|link=off|1999|November|5}}
+| 0.61.0
+| {{dts|nowrap=off|link=off|2008|October|28}}
+| 
+| {{free}}
+| [[GNU General Public License|GPL]]
+| {{Yes}}
+| [[UTF-8]]
+| {{Yes}}
+| [[Python (programming language)|Python]]
+| [[Zope Object Database|ZODB - Zope Object Database]]
+|-class=&quot;sortbottom&quot;
+! style=&quot;width: 12em&quot; |
+! Creator
+! First public release date
+! Latest stable release
+! Stable release date
+! Predecessor
+! Cost ([[USD]])
+! Software license&lt;ref name=&quot;license&quot;/&gt;
+! Open source
+! Encoding
+! Multilingual
+! Programming language
+! [[Data management|Data backend]]
+|}
+&lt;references/&gt;
+
+==Target audience==
+{| class=&quot;wikitable sortable&quot; style=&quot;text-align: center; font-size: 85%; width: auto; table-layout: fixed;&quot;
+|-
+! Wiki software
+! Public
+! Private
+! Corporate/Enterprise
+! Education
+! Intranet
+! Personal
+! Scientific/Technical/Mathematical
+|-
+! {{rh}} | [[BrainKeeper]]
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+| {{No}}
+|-
+! {{rh}} | [http://puszcza.gnu.org.ua/software/camelwiki CamelWiki]
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+| {{No}}
+|-
+
+! {{rh}} | [[Central Desktop]]
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+|
+|
+|-
+! {{rh}} | [[CodeBeamer (software)|codeBeamer]]
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+|
+|-
+! {{rh}} | [[Atlassian Confluence|Confluence]]
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+|
+|-
+! {{rh}} | [[coWiki]]
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+|
+|
+|
+|
+|-
+! {{rh}} | [[MindTouch|MindTouch Deki]]
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+|
+|
+|-
+! {{rh}} | [[DokuWiki]]
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+|
+|-
+! {{rh}} | [[EditMe]]
+| {{Yes}}
+| {{Yes}}
+|
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+|
+|-
+! {{rh}} | [[FlexWiki]]
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+|
+|
+|
+|
+|-
+! {{rh}} | [[Foswiki]]
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+|-
+! {{rh}} | [[Instiki]]
+| {{Yes}}
+| {{Yes}}
+|
+|
+|
+| {{Yes}}
+|
+|-
+! {{rh}} | [[Gitit (software)|Gitit]]
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{Yes}} Inbuilt support for [[LaTeX]] math; syntax highlighting for code blocks.
+|-
+
+! {{rh}} | [[JAMWiki]]
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+|
+|-
+! {{rh}} | [[Jive SBS]]
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+| {{No}}
+|
+|-
+! {{rh}} | [[JotSpot]]
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+|
+|
+|
+|
+|-
+! {{rh}} | [[JSPWiki]]
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+|
+|
+|-
+| {{rh}} | [http://jjjuli.sourceforge.net Juli]
+| {{yes}}
+| {{yes}}
+|
+| {{yes}}
+| {{yes}}
+| {{yes}}
+|
+|-
+! {{rh}} | [[MediaWiki]]
+| {{Yes}}
+| {{Yes}}[http://www.mediawiki.org/wiki/Manual:Preventing_access#Simple_private_wiki]
+| {{Yes}}
+|
+|
+|
+|
+|-
+! {{rh}} | [[Midgard (software)|Midgard Wiki]]
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+|
+|
+|
+|
+|-
+! {{rh}} | [[MoinMoin]]
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+|
+|-
+! {{rh}} | [[MojoMojo]]
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+|
+|-
+! {{rh}} | [[PlanetMath|NoÃ¶sphere]]
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+|
+| {{Yes}} Latex input
+|-
+! {{rh}} | [[OddMuseWiki]]
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+|
+|
+|-
+! {{rh}} | [[PBworks]]
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+|
+|
+|-
+! {{rh}} | [[PhpWiki]]
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+|
+|
+|-
+! {{rh}} | [[PmWiki]]
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+|-
+! {{rh}} | [[ProjectForum]]
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+|-
+! {{rh}} | [[Qontext]]
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+|-
+! {{rh}} | [[SamePage]]
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+|
+|
+|-
+! {{rh}} | [[ScrewTurn Wiki]]
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+|
+|
+|-
+! {{rh}} | [[Microsoft_SharePoint_Foundation|SharePoint Foundation]]
+|
+|
+| {{Yes}}
+| {{Yes}}
+|
+|
+|
+|-
+! {{rh}} | [[Microsoft_SharePoint_Server|SharePoint Server]]
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+|-
+! {{rh}} | [[SMW+]]
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+|-
+! {{rh}} | [[Socialtext]]
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+|
+|
+|-
+! {{rh}} | [[Swiki]]
+| {{Yes}}
+| {{Yes}}
+|
+| {{Yes}}
+|
+|
+|
+|-
+! {{rh}} | [[ThoughtFarmer]]
+|
+|
+| {{Yes}}
+|
+| {{Yes}}
+|
+|
+|-
+! {{rh}} | [[TiddlyWiki]]
+|
+| {{Yes}}
+|
+|
+|
+| {{Yes}}
+|
+|-
+! {{rh}} | [[TigerWiki]]
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+|
+|
+|-
+! {{rh}} | [[Tiki Wiki CMS Groupware]]
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+|
+|-
+! {{rh}} | [[Traction TeamPage]]
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+|
+|
+|-
+! {{rh}} | [[TWiki]]
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+|
+|
+|-
+! {{rh}} | [[UseModWiki]]
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+|
+|
+|-
+! {{rh}} | [[WackoWiki]]
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+|
+|
+|-
+! {{rh}} | [[Wikispaces]]
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+|
+|-
+! {{rh}} | [[Wikiwig]]
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+|
+|
+|-
+! {{rh}} | [[WikkaWiki]]
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+|
+|-
+! {{rh}} | [[XWiki]]
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+|-
+! {{rh}} | [[ZWiki]]
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+|
+|
+|-class=&quot;sortbottom&quot;
+! Wiki software
+! Public
+! Private
+! Corporate/Enterprise
+! Education
+! Intranet
+! Personal
+! Scientific/Technical/Mathematical
+|}
+
+==Features 1==
+{| class=&quot;wikitable sortable&quot; style=&quot;text-align: center; font-size: 85%; width: auto; table-layout: fixed;&quot;
+|-
+! style=&quot;width: 12em&quot; |
+! File uploading / attachments
+! [[Wikispam|Spam]] prevention
+! Page access control&lt;ref name=&quot;pac&quot;&gt;Page Access Control: Some wiki engines allow (optional) read/write access restriction to users or user groups on a per-page basis (e.g. through [[Access control list]]s).&lt;/ref&gt;
+! Inline HTML&lt;ref name=&quot;inline&quot;&gt;Inline HTML ''Safe'' means that several features of HTML are restricted. This is better than ''Full'', for security reasons.  Users with complete access to HTML could, for example, create [[phishing|spoof]] forms to trick users.&lt;/ref&gt;
+! User-customizable interface&lt;ref name=&quot;uci&quot;&gt;User-customizable interface: Many items have administrator hand-editable templates.  Even items which use hard-coded templates could still be modified if the source is available.&lt;/ref&gt;
+! Document renaming
+|-
+! {{rh}} | [[BrainKeeper]]
+| {{Yes}}
+| {{Yes}},
+| {{No}}
+| {{Yes}}
+| {{Yes}}, templates and themes, html and css
+| {{Yes}}
+|-
+! {{rh}} | [http://puszcza.gnu.org.ua/software/camelwiki CamelWiki]
+| {{No}}
+| {{Yes}}, Verification code
+| {{No}}
+| {{No}}
+| {{Partial}}, CSS
+| {{No}}
+|-
+
+! {{rh}} | [[Central Desktop]]
+| {{Yes}}
+| {{Yes}}, CAPTCHA
+| {{No}}
+| {{Yes}}
+| {{Yes}}, templates and themes, html and css
+| {{No}}
+|-
+! {{rh}} | [[CodeBeamer (software)|codeBeamer]]
+| {{Yes}}
+| {{No}}
+| {{Yes}}
+| optional
+| {{Partial}} - JSP pages + [[Cascading Style Sheets|CSS]]
+| {{Yes}}, links don't break
+|-
+! {{rh}} | [[Atlassian Confluence|Confluence]]
+| {{Yes}}
+| {{Yes}}, CAPTCHA
+| {{Yes}}
+| optional
+| {{Yes}}, templates and themes + [[Cascading Style Sheets|CSS]]
+| {{Yes}}, links are updated
+|-
+! {{rh}} | [[coWiki]]
+| {{No}}
+| {{No}}
+| {{Yes}}, due to UNIX-style permissions
+| {{No}}
+| {{Partial}} - hand-edited templates, document &quot;Print version&quot;
+| {{Yes}}, all pages are seamlessly updated
+|-
+! {{rh}} |
+[[MindTouch|MindTouch Deki]]
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+| optional
+| {{Yes}}
+| {{Yes}}
+|-
+! {{rh}} | [[DokuWiki]]
+| {{Yes}}
+| {{Yes}}, blacklist
+| {{Yes}}, optional
+| {{Yes}}, optional
+| {{Yes}}, templates, [[Cascading Style Sheets|CSS]], PHP; heavily documented PHP [http://dev.splitbrain.org/reference/dokuwiki/nav.html?inc/template.php.html API]
+| {{Yes}}, plugin
+|-
+! {{rh}} | [[EditMe]]
+| {{Yes}}
+| {{Yes}}, CAPTCHA
+| {{Yes}},
+| {{Yes}},
+| {{Yes}}, templates, [[Cascading Style Sheets|CSS]], [XHTML], [JavaScript]
+| {{Yes}},
+|-
+! {{rh}} | [[FlexWiki]]
+| {{Yes}}
+| {{Yes}}, blacklist, CAPTCHA, nofollow
+| {{Yes}}
+| {{Yes}}, plugin
+| {{Partial}} - CSS, templates, WikiTalk
+| {{Yes}}, old page becomes a redirect
+|-
+! {{rh}} | [[Foswiki]]
+| {{Yes}}
+| {{Yes}}, ACL
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}, skins
+| {{Yes}}
+|-
+! {{rh}} | [[Gitit (software)|Gitit]]
+| {{Yes}}
+| {{Yes}}, [[reCAPTCHA]]
+| {{Yes}}
+| {{Yes}},
+| {{Yes}} - Templates, CSS
+| {{Yes}}, old page becomes a redirect
+|-
+! {{rh}} | [[Instiki]]
+| {{Yes}}
+| {{No}}
+| {{No}}
+| {{Yes}}
+| {{Partial}} - [[Cascading Style Sheets|CSS]]
+| {{No}}
+|-
+! style=&quot;width: 12em&quot; |
+! File uploading / attachments
+! [[Wikispam|Spam]] prevention
+! Page access control&lt;ref name=&quot;pac&quot; /&gt;
+! Inline HTML&lt;ref name=&quot;inline&quot; /&gt;
+! User-customizable interface&lt;ref name=&quot;uci&quot; /&gt;
+! Document renaming
+|-
+! {{rh}} | [[JAMWiki]]
+| {{Yes}}
+| {{Yes}}, content by regular expressions
+| {{Yes}}
+| {{Yes}}, optional
+| {{Yes}} - templates and editable CSS stylesheet topic
+| {{Yes}}, old page becomes a redirect
+|-
+! {{rh}} | [[Jive SBS]]
+| {{Yes}}
+| optional
+| {{Yes}}, extensive permissions API
+| {{Yes}}
+| {{Yes}}
+| {{No}}, scheduled for 3.0
+|-
+! {{rh}} | [[JotSpot]]
+| {{Yes}}
+| {{No}}
+| {{Yes}}
+| {{Yes}}, optional
+| {{Partial}} - [[Cascading Style Sheets|CSS]]
+| {{Yes}}
+|-
+! {{rh}} | [[JSPWiki]]
+| {{Yes}}
+| {{Yes}}, content by regular expressions, CAPTCHA, Akismet, bot detection
+| {{Yes}}
+| {{Yes}}, optional
+| {{Partial}} - templates
+| {{Yes}}
+|-
+| {{rh}} | [http://jjjuli.sourceforge.net Juli]
+| {{Yes}}
+| {{No}}
+| {{No}}
+| {{Yes}},
+| {{Yes}} - Templates, CSS
+| {{Yes}}
+|-
+! {{rh}} | [[MediaWiki]]
+| {{Yes}}
+| {{Yes}}, URL blacklist, word blacklist, IP address blocking, [[CAPTCHA|captchas]]
+| {{Yes}}
+| {{Yes}}
+| {{Partial}} - many features are user-customizable, templates
+| {{Yes}}, old page becomes a redirect
+|-
+! {{rh}} | [[Midgard (software)|Midgard Wiki]]
+| {{Yes}}
+| {{No}}
+| {{Yes}}
+| {{Yes}}
+| {{Partial}} templates, [[Cascading Style Sheets|CSS]]
+| {{No}}
+|-
+! {{rh}} | [[MoinMoin]]
+| {{Yes}}
+| {{Yes}}, BadContent filtering via [[Regular Expressions]], Textchas
+| {{Yes}}, very flexible ACLs, wiki-editable groups
+| {{Yes}} - safe
+| {{Yes}} - Themes, templates, [[Cascading Style Sheets|CSS]], [[XSL Transformations|XSLT]], user editable navigation
+| {{Yes}}, old page can be a redirect
+|-
+! {{rh}} | [[MojoMojo]]
+| {{Yes}}
+| {{Yes}}, CAPTCHA
+| {{Yes}}, Cascading ACL control allowing stewardship of topics
+| {{Yes}} - safe
+| {{Yes}} - Themes, [[Cascading Style Sheets|CSS]]
+| {{Yes}}, current: page redirect, soon: Node moving
+|-
+! {{rh}} | Near-Time
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}, templates, html, custom navigation portal, custom data fields, CSS
+| {{Yes}}
+|-
+! {{rh}} | [[OddMuseWiki]]
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}, plugin
+| [[Cascading Style Sheets|CSS]]
+| {{Yes}}
+|-
+! {{rh}} | [[PBworks]]
+| {{Yes}}
+| {{Yes}} - passwords, SSO-capable integration, [[access control list|ACL]]s, IP address whitelisting/blacklisting
+| {{Yes}}
+| {{Yes}}, and plugins
+| Partial - [[CSS]]
+| {{No}}
+|-
+! {{rh}} | [[PhpWiki]]
+| {{Yes}}
+| {{Yes}}, [[CPAN]] Blog::SpamAssassin
+| {{Yes}}
+| plugin
+| themes; un-documented
+| {{Yes}}
+|-
+! {{rh}} | [[PmWiki]]
+| {{Yes}}
+| {{Yes}}&lt;ref&gt;word/URL block (addon, auto-upd. database), URL-approval (option), encrypt e-mails (addon), [[nofollow]], [[Captcha]] (addon)&lt;/ref&gt;
+| {{Yes}}
+| {{Yes}}, module
+| {{Yes}}, themes, per page/per group [[Cascading Style Sheets|CSS]], ...
+| {{Yes}}, module
+|-
+! {{rh}} | [[ProjectForum]]
+| {{Yes}}
+| {{Yes}}, registration
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}, templates, themes, [[Cascading Style Sheets|CSS]], ...
+| {{Yes}}
+|-
+! {{rh}} | [[Qontext]]
+| {{Yes}}
+| {{Yes}}, via registration and [[nofollow]]
+| {{Yes}}
+| {{No}}
+| {{Yes}}, [[Cascading Style Sheets|CSS]] and templates
+| {{Yes}}
+|-
+! {{rh}} | [[SamePage]]
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+|-
+! {{rh}} | [[Microsoft_SharePoint_Foundation|SharePoint Foundation]]
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+|-
+! {{rh}} | [[Microsoft_SharePoint_Server|SharePoint Server]]
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+|-
+! {{rh}} | [[SMW+]]
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+| {{Yes}} Templates, skins, css, special wikipages (forms)
+| {{Yes}} (old page becomes a redirect)
+|-
+! {{rh}} | [[Socialtext]]
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+|-
+! style=&quot;width: 12em&quot; |
+! File uploading / attachments
+! [[Wikispam|Spam]] prevention
+! Page access control&lt;ref name=&quot;pac&quot; /&gt;
+! Inline HTML&lt;ref name=&quot;inline&quot; /&gt;
+! User-customizable interface&lt;ref name=&quot;uci&quot; /&gt;
+! Document renaming
+|-
+! {{rh}} | [[Swiki]]
+| {{Yes}}
+| {{Yes}}, block IP addresses, words, UserIDs
+| {{Yes}}
+| {{Yes}}
+| For AniAniWebs, [[Cascading Style Sheets|CSS]]
+| {{Yes}}, updating all backlinks
+|-
+! {{rh}} | [[ThoughtFarmer]]
+| {{Yes}}
+| N/A
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+|-
+! {{rh}} | [[TiddlyWiki]]
+| {{Yes}}, plugin&lt;ref&gt;{{cite web|last=Shulman|first=Eric|title=AttachFilePluginInfo|url=http://www.tiddlytools.com/#AttachFilePluginInfo|work=TiddlyTools|accessdate=13 May 2011}}&lt;/ref&gt; 
+| {{No}}
+| {{No}}
+| {{Yes}}, plugin
+| {{Yes}}, themes, user [[Cascading Style Sheets|CSS]], modules
+| {{Yes}}
+|-
+! {{rh}} | [[TigerWiki]]
+| {{No}}
+| {{No}}, to be coded
+| {{Yes}}, password protection
+| {{No}}
+| {{Partial}} - style-sheets, template
+| {{No}}
+|-
+! {{rh}} | [[Tiki Wiki CMS Groupware]]
+| {{Yes}}
+| {{Yes}}, CAPTCHA for registration and anonymous edits or comments, encrypted email addresses.&lt;ref&gt;[http://doc.tikiwiki.org/Spam+Protection Documentation about Spam Protection for Tiki]&lt;/ref&gt;
+| {{Yes}}
+| {{Yes}}
+| themes, user [[Cascading Style Sheets|CSS]], modules
+| {{Yes}}
+|-
+! {{rh}} | [[Traction TeamPage]]
+| {{Yes}}, with WebDAV versioning
+| {{Yes}}, CAPTCHA for registration, block lists
+| {{Yes}}
+| {{Yes}} Safe
+| {{Yes}}, workspace templates, color templates, and developer tools
+| {{Yes}}, links are updated automatically and name history maintained
+|-
+! {{rh}} | [[TWiki]]
+| {{Yes}}
+| {{Yes}}&lt;ref&gt;IP address blacklist, content by regular expressions, excessive activities, scripted registration prevention (plugin), hidden e-mail addresses&lt;/ref&gt;
+| {{Yes}}
+| {{Yes}}
+| templates, skins, user [[Cascading Style Sheets|CSS]]
+| {{Yes}}, fixing backlinks
+|-
+! {{rh}} | [[UseModWiki]]
+| {{Yes}}
+| {{Yes}}, IP address blacklist
+| {{Yes}}?
+| {{Yes}}?
+| [[Cascading Style Sheets|CSS]]
+| {{Yes}}, admins only
+|-
+! {{rh}} | [[WackoWiki]]
+| {{Yes}}
+| {{Yes}}, referrer blacklist
+| {{Yes}}
+| {{Yes}} - configurable/safe
+| themes, style-sheets
+| {{Yes}}
+|-
+! {{rh}} | [[Wikispaces]]
+| {{Yes}}
+| {{Yes}}, CAPTCHA
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}, themes, HTML, CSS
+| {{Yes}}
+|-
+! {{rh}} | [[Wikiwig]]
+| {{Yes}}
+| {{Yes}},Captcha
+| {{Yes}}
+| {{Yes}}
+| {{Partial}}
+| {{Yes}}
+|-
+! {{rh}} | [[WikkaWiki]]
+| {{Yes}}
+| {{Yes}}, referrer blacklist (module), HTTP REQUEST analysis (module)
+| {{Yes}}
+| {{Yes}}, configurable/safe
+| {{Yes}}, CSS stylesheets
+| {{Yes}}, old pages can be redirected
+|-
+! {{rh}} | [[XWiki]]
+| {{Yes}}
+| {{Yes}}, Captcha, [[Access Control List|ACL]]
+| {{Yes}}
+| {{Yes}}
+| {{Yes}} style-sheets, templates, themes, skin extensions
+| {{Yes}}
+|-
+! {{rh}} | [[ZWiki]]
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+| style-sheets, templates, skins
+| {{Yes}}
+|-class=&quot;sortbottom&quot;
+! style=&quot;width: 12em&quot; |
+! File uploading / attachments
+! [[Wikispam|Spam]] prevention
+! Page access control&lt;ref name=&quot;pac&quot; /&gt;
+! Inline HTML&lt;ref name=&quot;inline&quot; /&gt;
+! User-customizable interface&lt;ref name=&quot;uci&quot; /&gt;
+! Document renaming
+|}
+
+==Features 2==
+{| class=&quot;wikitable sortable&quot; style=&quot;text-align: center; font-size: 85%; width: auto; table-layout: fixed;&quot;
+|-
+! style=&quot;width: 12em&quot; |
+! [[mw:WYSIWYG editor|WYSIWYG editing]]
+! [[Web feed]]s
+! Extensibility
+! Cross-wiki support
+! [[Wiki farm]]s
+! [[Outliner]] Mechanism&lt;ref&gt;HTML/XHTML with nested markup, or XOXO with collapsing or folding outlines&lt;/ref&gt;
+! Other features
+|-
+! {{rh}} | [[BrainKeeper]]
+| {{Yes}}
+| {{Yes}}, RSS
+| {{No}}
+| {{No}}
+| {{No}}
+| {{Yes}}
+|&lt;ref&gt;Calendars, Discussions, Spreadsheets, Templates&lt;/ref&gt;
+|-
+! {{rh}} | [http://puszcza.gnu.org.ua/software/camelwiki CamelWiki]
+| {{No}}
+| {{No}}
+| {{No}}
+| {{No}}
+| {{No}}
+| {{No}}
+|
+|-
+! {{rh}} | [[Central Desktop]]
+| {{Yes}}
+| {{Yes}}, RSS
+|
+|
+|
+|
+|&lt;ref&gt;Block architecture, Calendars, Discussions, Database feature, Tasks and Milestones Blocks available&lt;/ref&gt;
+|-
+! {{rh}} | [[CodeBeamer (software)|codeBeamer]]
+| {{Yes}} with [[TinyMCE]] or [[Microsoft Word]]
+| {{No}}
+| {{Yes}}, Java Plug-ins
+|
+|
+|
+|&lt;ref&gt;Enterprise level security, Integration with Issue Tracker / Document Manager / Continuous Integration, Open API, Tagging, E-Mail Notifications, Commercial support&lt;/ref&gt;
+|-
+! {{rh}} | [[Atlassian Confluence|Confluence]]
+| {{Yes}}
+| {{Yes}}, RSS
+| Java Plug-ins, User Macros in [[Apache Velocity]]
+|
+|
+|
+|&lt;ref&gt;Enterprise level security, Simple admin interface, Open Plug-in API, Tagging, E-Mail Notifications, Fully supported&lt;/ref&gt;
+|-
+! {{rh}} | [[coWiki]]
+| {{?}}
+| {{Yes}}, RSS [http://www.cowiki.org/184.html]
+| plugins via an OOP interface
+|
+|
+|
+|&lt;ref&gt;Data saved hierarchic (web trees) and in XML, per-page threaded comments, comfortable installation wizard&lt;/ref&gt;
+|-
+! {{rh}} | [[MindTouch|MindTouch Deki]]
+| {{Yes}}
+| {{Yes}}, RSS, XML, JSON
+| API, Service Oriented Architecture
+|
+|
+|
+|&lt;ref&gt;Highly usable, stores in XML, SOA, API, enterprise arch and business focused, fully supported by [[MindTouch]] [http://www.mindtouch.com company website]&lt;/ref&gt;
+|-
+! {{rh}} | [[DokuWiki]]
+| {{No}} [http://wiki.splitbrain.org/wiki:quickbuttons Quickbuttons] and a preview mode exist however
+| {{Yes}}, RSS/Atom [http://wiki.splitbrain.org/wiki:syndication]
+| {{Yes}}, Plugin API
+| {{Yes}}
+| {{No}}
+| {{Yes}}
+| Look at the Website&lt;ref&gt;Section Editing, XHTML-Compliant, nice tables, side-by-side diff, namespaces, [[Interwiki]]&lt;/ref&gt;
+|-
+! {{rh}} | [[EditMe]]
+| {{Yes}}
+| {{Yes}}, RSS
+| {{Yes}}, Modules, embedded JavaScript API
+| {{No}}
+|
+|
+|&lt;ref&gt;Embedded server-side JavaScript, forums, blogs, security groups and policies, side-by-side diff, auto-generated navigation&lt;/ref&gt;
+|-
+! {{rh}} | [[FlexWiki]]
+| {{No}}
+| {{Yes}}, RSS
+| [[Active Server Pages|ASP]], WikiTalk, .Net Reflection plugins
+|
+|
+|
+| Forms, Scripting, Integrated Weblog and Threaded Message Forum
+|-
+! {{rh}} | [[Gitit (software)|Gitit]]
+| {{yes}}
+| {{no}} [[Markdown]] and other [[lightweight markup languages]]
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+|-
+
+
+! {{rh}} | [[UseModWiki]]
+| {{No}}?
+| {{Yes}}
+| extensions
+|
+|
+|
+|
+|-
+! {{rh}} | [[Instiki]]
+| {{No}}
+| {{Yes}}, RSS
+| fairly trivial with minimal Ruby knowledge
+| {{Yes}}, can use different (administrator-set) markup languages.
+|
+|
+|&lt;ref&gt;Trivial to set up on any platform that supports Ruby. Supports inline HTML, Textile, Markdown, and RDoc.&lt;/ref&gt;
+|-
+! style=&quot;width: 12em&quot; |
+! [[mw:WYSIWYG editor|WYSIWYG editing]]
+! [[Web feed]]s
+! Extensibility
+! Cross-wiki support
+! Wiki farms
+! [[Outliner]] Mechanism
+! Other features
+|-
+! {{rh}} | [[JAMWiki]]
+| {{Partial}}, optional editing buttons
+| {{Yes}}, RSS
+|
+|
+|
+|
+| Plugin wiki syntax parser (default is Mediawiki syntax)
+|-
+! {{rh}} | [[Jive SBS]]
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}, both functionality and theme via plugins
+| {{No}}
+|
+|
+|
+|-
+! {{rh}} | [[JotSpot]]
+| {{Yes}}
+| {{Yes}}, RSS, per page
+| plugins, server-side Javascript
+|
+|
+|
+|&lt;ref&gt;Support for server-side Javascript, [[VMware]] virtual appliance&lt;/ref&gt;
+|-
+! {{rh}} | [[JSPWiki]]
+| {{Partial}}, alpha
+| {{Yes}}, RSS, per page
+| plugins, filters, providers
+|
+|
+|
+| Weblog integration
+|-
+| {{rh}} | [http://jjjuli.sourceforge.net Juli]
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{yes}}
+|
+|-
+! {{rh}} | [[MediaWiki]]
+| {{Partial}}, via extensions
+| {{Yes}}, RSS/Atom
+| actions, handlers
+|
+| {{Yes}}
+|
+|&lt;ref&gt;Per-article discussion page, watchlist, searching, [[metawikipedia:Enotif|email notification]] (built in, but currently disabled on Wikipedia)&lt;/ref&gt;
+|-
+! {{rh}} | [[Midgard (software)|Midgard Wiki]]
+| {{No}}
+| {{Yes}}, RSS, all changes
+| [[PHP]] component architecture
+|
+|
+|
+| CMS integration
+|-
+! {{rh}} | [[MoinMoin]]
+| {{Yes}}, v1.5+
+| {{Yes}}, RSS, last changes
+| different plugin types
+| {{Yes}}, selectable parsers
+|
+|
+|&lt;ref&gt;Enterprise level security, authentication, and authorization, Email notification, additional desktop edition, XML-RPC content synchronization, searching in attachments (v1.6+).&lt;/ref&gt;
+|-
+! {{rh}} | [[MojoMojo]]
+| {{Yes}}, With live preview
+| {{Yes}}, RSS
+| {{Yes}}, plugins and custom additions types
+| {{Yes}}, Multiple markup parsers available
+|
+|
+|&lt;ref&gt;Hierarchical node structure and cascading permissions system allows for stewardship of topics.  Version control and ability to do 3-way merge on conflict.&lt;/ref&gt;
+|-
+! {{rh}} | [[OddMuseWiki]]
+| {{Yes}}, plugin
+| {{Yes}}
+| plugins
+|
+| {{Yes}}
+|
+|&lt;ref&gt;very easily extensible, themeable, easy setup of wiki farms&lt;/ref&gt;
+|-
+! {{rh}} | [[PBworks]]
+| {{Yes}}
+| {{Yes}}, RSS/Atom
+| API, AuthAPI, plugins, wikilets
+|
+|
+|
+|&lt;ref&gt;SideBars; Discussions; email notifications w/diffs; SSO integration capability; Statistics; PDF output; HTML slideshows; integrated modules for calendars, spreadsheets, audio chat, and more; fully UTF-8 compliant; Tagging.&lt;/ref&gt;
+|-
+! {{rh}} | [[PhpWiki]]
+| {{Yes}}, module
+| {{Yes}} RSS/Atom/RDF: global, per page or per user
+| plugins
+|
+|
+|
+| support all databases
+|-
+! {{rh}} | [[PmWiki]]
+| {{No}}. GUI buttons and Preview mode exist however&lt;ref&gt;JavaScript GUI buttons/Edit Toolbar for most frequently used wiki markup codes (customizable).&lt;/ref&gt;
+| {{Yes}} RSS/Atom/RDF (option): global, per namespace, per page or per watchlist; feed readers (plugins)
+| very, 500+ plugins and configuration recipes
+| [[WikiCreole]] (option), [[Markdown]] (plugin)&lt;ref&gt;The PmWiki markup rules are easily modifiable and replaceable by plug-ins, should a need for another wikimarkup family be demonstrated.&lt;/ref&gt;
+| {{Yes}}
+|
+|&lt;ref&gt;Highly sophisticated support for customization. Practically cameleon-like&lt;/ref&gt;
+|-
+! {{rh}} | [[ProjectForum]]
+| {{Yes}}
+| {{Yes}}, RSS/Atom
+| {{Yes}}
+| {{No}}
+| {{Yes}}
+|
+|
+|-
+! {{rh}} | [[Qontext]]
+| {{Yes}}
+| {{Yes}}, [[RSS]]
+| {{No}}
+| {{No}}
+| {{N/A}}
+| {{No}}
+|&lt;ref&gt;Enterprise level security, authentication, and authorization, Email notification,Discussions,Tagging,WYSIWYG-like editor,Social tagging,minimal setup, cross-browser support&lt;/ref&gt;
+|-
+! {{rh}} | [[SamePage]]
+| {{Yes}}
+| {{Yes}}, RSS feeds,
+| plugins
+|
+|
+|
+|
+|-
+! {{rh}} | [[Microsoft_SharePoint_Foundation|SharePoint Foundation]]
+| {{Yes}}
+| {{Yes}}, RSS feeds
+| {{Yes}} Themes, WebParts, API
+| {{Yes}} (limited)
+| {{Yes}}
+| {{Yes}}
+| Lists, CMS, Weblog, Tagging, Discussions Notifications, Reports, Workflow, Enterprise level security
+|-
+! {{rh}} | [[Microsoft_SharePoint_Server|SharePoint Server]]
+| {{Yes}}
+| {{Yes}}, RSS feeds
+| {{Yes}} Themes, WebParts, API
+| {{Yes}} (limited)
+| {{Yes}}
+| {{Yes}}
+| Forms(InfoPath), Lists, CMS, Weblog, Tagging, Discussions, Notifications, Reports, Enterprise level security, Workflow, Enterprise Search
+|-
+! {{rh}} | [[SMW+]]
+| {{Yes}}
+| {{Yes}}, via Data Import
+| {{Yes}}, special purpose extensions
+|
+|
+|
+|&lt;ref&gt;Extensive semantic features: ellaborate toolbox and GUIs for the easy authoring, retrieval, navigation and organization of semantic data. Collaborative ontology management and semantic data integration (integrate external heterogeneous data silos). Fine grained access rights to (non-)semantic data and content.&lt;/ref&gt;
+|-
+! {{rh}} | [[Socialtext]]
+| {{Yes}}
+| {{Yes}}, RSS feeds, Google/Technorati search results
+| using REST/SOAP APIs
+|
+|
+|
+|&lt;ref&gt;accessible through REST/SOAP APIs&lt;/ref&gt;
+|-
+! style=&quot;width: 12em&quot; |
+! [[mw:WYSIWYG editor|WYSIWYG editing]]
+! [[Web feed]]s
+! Extensibility
+! Cross-wiki support
+! [[Wiki farms]]
+! [[Outliner]] Mechanism
+! Other features
+|-
+! {{rh}} | [[Swiki]]
+| {{No}}
+|
+| Some
+|
+|
+|
+|&lt;ref&gt;Installs own webserver (Commanche) and can co-exist with IIS or Apache. AniAniWeb function provides owner control of granular access and creates access groups. Users tracked by email address.&lt;/ref&gt;
+|-
+! {{rh}} | [[ThoughtFarmer]]
+| {{Yes}}
+| {{Yes}}
+| Plugins, API used by ThoughtFarmer Professional Services
+|
+|
+|
+|&lt;ref&gt;Structured wiki, granular access controls, faceted browsing, revision control, full text search, email notification, photo albums&lt;/ref&gt;
+|-
+! {{rh}} | [[TiddlyWiki]]
+| {{Yes}}, with [[FCKeditor]] or other plugin
+| {{Yes}}, RSS
+| plugins
+|
+|
+|
+|&lt;ref&gt;Single file, minimal setup, cross-browser&lt;/ref&gt;
+|-
+! {{rh}} | [[TigerWiki]]
+| {{No}}
+| {{Yes}}, RSS with plugin
+| Code modification
+|
+|
+|
+|&lt;ref&gt;All minimal features that a wiki needs&lt;/ref&gt;
+|-
+! {{rh}} | [[Tiki Wiki CMS Groupware]]
+| {{Yes}}, with [[FCKeditor]] or via [http://doc.tikiwiki.org/Quicktags Quicktag] insertion
+| {{Yes}}, RSS/Atom/RDF
+| Hundreds of features, plugins, modules &amp; mods
+| {{No}}
+|
+|
+|&lt;ref&gt;ACLs, calendaring, charting, email notification, form handling and reporting, slideshow presentations, spreadsheet calculations and GRAPHS, mobile, GIS (MapServer), JGraphPad for drawings inside wikipages, 3d Browsing, Workspaces, Workflows, OpenOffice WYSIWYG editing of Tiki content, Multitiki installations&lt;/ref&gt;
+|-
+! {{rh}} | [[Traction TeamPage]]
+| {{Yes}}
+| {{Yes}}, Dynamic RSS inbound / outbound
+| Plug-in architecture for widgets, forms, interface and function modifications
+|
+|
+|
+|&lt;ref&gt;Enterprise level security, Multiple workspaces (tens to thousands) on same TeamPage server, Faceted permissioned search crossing workspaces using content or tag navigation, Page and Comment Moderation,  Social tagging, Threaded discussion, Paragraph or page level comments, Microblogging with follow model, Extensible Personal Profile Pages, Live blogging, Document versioning and management via WebDAV,  Page Name history to support complex refactoring, Mobile browsing / search / navigation / editing, E-Mail Newsletter, Flexible notification model (subscribe to page, comment thread, workspace, author for content or tag changes with email or Jabber notification), Reply to automatically generated email notification message to add comment to thread with automatic cleanup. Built-in usage metrics and interactive graphs, voting and star rating support. Google Web Toolkit (GWT) skin technology. Simple web based admin, Authenticate using LDAP or Active Directory (including LDAP queries for group definition, NTLM support for single signon, Optional Attivio Advanced Search module provides permission aware drill-down content navigation as well as wiki + attached document search, Java SDK (no charge for Java source and documentation), extensible SDL (Skin Definition Language), Fully supported&lt;/ref&gt;
+|-
+! {{rh}} | [[TWiki]]
+| {{Yes}}, pre-installed plugin
+| {{Yes}}, RSS/Atom, with search string
+| 400+ extensions; Plugin API for developers; TWiki markup/scripting for users to create wiki applications
+| {{Yes}}, user selectable wiki syntax with EditSyntaxPlugin
+|
+|
+|&lt;ref&gt;Revision control, ACLs for topics, tagging, blogging, calendaring, charting, global search &amp; replace, email notification, form handling and reporting, platform to build wiki applications, graphing, slideshow presentations, 13 translations, plotting, multistyle diffs, advanced searching, spreadsheet calculations, WYSIWYG supports TML, available as a VMware appliance&lt;/ref&gt;
+|-
+! {{rh}} | [[UseModWiki]]
+| {{No}}?
+| {{Yes}}
+| extensions
+|
+|
+|
+|
+|-
+! {{rh}} | [[WackoWiki]]
+| {{No}}, Has toolbar buttons and keyboard shortcuts to create WikiMarkup, see: [http://wackowiki.org/Dev/Projects/WikiEdit WikiEdit]
+| {{Yes}}, RSS
+| actions, handlers
+|
+|
+|
+|&lt;ref&gt;WYSIWYG-like editor, ACLs, subpages, comments, files, email notification, cloning of pages, installation wizard...&lt;/ref&gt;
+|-
+! {{rh}} | [[Wikispaces]]
+| {{Yes}}
+| {{Yes}}, RSS/Atom
+| API, widgets, single sign-on (SSO)
+|
+|
+|
+|&lt;ref&gt;Discussion pages, tagging, email notification, full-text search, user dashboard, localization&lt;/ref&gt;
+|-
+! {{rh}} | [[Wikiwig]]
+| {{Yes}}, Xinha
+| {{No}}
+| {{some}}
+|
+|
+|
+|
+|-
+! {{rh}} | [[WikkaWiki]]
+| {{No}}
+| {{Yes}}, Single page/Comments/Global
+| {{Yes}}, plugins, actions, handlers, menulets
+|
+|
+|
+|&lt;ref&gt;FreeMind support, ACLs, cloning of pages, advanced syntax highlighting using GeSHi, ''on-the-fly'' downloading of codeblocks&lt;/ref&gt;
+|-
+! {{rh}} | [[XWiki]]
+| {{Yes}}, using a custom powerful GWT-based editor
+| {{Yes}}, RSS
+| {{Yes}}, component, plugins, macros, scripts, applications
+| {{Yes}}, based on [http://code.google.com/p/wikimodel WikiModel], support syntaxes from other wikis
+| {{Yes}}
+| {{No}}
+|&lt;ref&gt;Platform to build wiki applications, Forms and Scripting, Multilingual, Database storage, Fulltext search, GraphViz, SVG, Freemind, Lucene, Charting, photo albums, presentations, blogging, calendar, e-mail plugin, virtual wikis, simple table computations, sortable tables, section editing, portlet integration, integrated statistics, [[XML-RPC]] API, Tags, PDF/RTF export&lt;/ref&gt;
+|-
+! {{rh}} | [[ZWiki]]
+| {{Yes}}, using Epoz
+| {{Yes}}, RSS/Atom
+| all [[Zope]] plugins, [[LaTeX]], and more
+|
+|
+|
+|&lt;ref&gt;hierarchical pages, revision control, fulltext search, email notification, issue tracker, LaTeX integration&lt;/ref&gt;
+|-class=&quot;sortbottom&quot;
+! style=&quot;width: 12em&quot; |
+! [[mw:WYSIWYG editor|WYSIWYG editing]]
+! [[Web feed]]s
+! Extensibility
+! Cross-wiki support
+! [[Wiki farms]]
+! [[Outliner]] Mechanism
+! Other features
+|}
+
+==Installation==
+{{Original research|table|date=December 2009}}
+{| class=&quot;wikitable sortable&quot; style=&quot;text-align: center; font-size: 85%; width: auto; table-layout: fixed;&quot;
+|-
+! style=&quot;width: 12em&quot; |
+! Platform
+! Web-server required
+! Other software required
+! Installable to USB stick
+|-
+! {{rh}} | [[BrainKeeper]]
+| NA - hosted
+| None
+| NA
+|
+|-
+! {{rh}} | [http://puszcza.gnu.org.ua/software/camelwiki CamelWiki]
+| Linux, Unix, Windows &amp; others
+| Any supporting CGI
+| Perl, MySQL or PostgreSQL
+|
+|-
+! {{rh}} | [[Central Desktop]]
+| NA - hosted
+| None
+| None
+|
+|-
+! {{rh}} | [[CodeBeamer (software)|codeBeamer]]
+| Any OS that supports Java 1.5 and servlet 2.4
+| Tomcat included, or use your own servlet container.
+| Java 1.5
+|
+|-
+! {{rh}} | [[Atlassian Confluence|Confluence]]
+| Any OS that supports Java 1.4 and servlet 2.4
+| Tomcat included, or use your own servlet container.
+| Java 1.4
+|
+|-
+! {{rh}} | [[coWiki]]
+| Linux, Unix, Windows &amp; others
+| Apache with PHP
+| MySQL, PHP
+|
+|-
+! {{rh}} | [[MindTouch|MindTouch Deki]]
+| Linux, Unix, Windows &amp; others
+| Apache, IIS6, IIS7, IIS8
+| Mono, MySQl, PHP
+|
+|-
+! {{rh}} | [[DokuWiki]]
+| Linux, Unix, Windows &amp; others
+| Should work on any web server with PHP
+| PHP
+| {{Yes}}
+|-
+! {{rh}} | [[FlexWiki]]
+| Linux, Unix, Windows &amp; others
+| IIS/Apache
+| ASP.Net/Mono
+|
+|-
+
+|-
+! {{rh}} | [[Gitit (software)|Gitit]]
+| Cross platform
+| Yes. [[Happstack]]; can also be used locally.
+| [[LaTeX]]; Versioning system like [[Git (software)|Git]], [[Darcs]], or [[Mercurial]]
+| {{no}}
+|-
+
+! {{rh}} | [[Instiki]]
+| Linux, Unix, Windows &amp; others
+| None (built-in)
+| Ruby
+|
+|-
+! style=&quot;width: 12em&quot; |
+! Platform
+! Web-server required
+! Other software required
+|
+|-
+! {{rh}} | [[JAMWiki]]
+| Any OS that supports Java 1.5 and servlet 2.4
+| Any servlet 2.4-compliant application server
+| Java 1.5
+|
+|-
+! {{rh}} | [[Jive SBS]]
+| Java 1.5 + one of: Windows Server 2003 SP2, Linux (2.6 Kernel), Solaris 10
+| Tomcat, WebLogic, WebSphere
+| MS SQL, Postgres, MySQL or Oracle
+|
+|-
+! {{rh}} | [[JotSpot]]
+| Linux, Unix, Windows &amp; others
+| None (built-in)
+| VMware Player
+|
+|-
+! {{rh}} | [[JSPWiki]]
+| Any OS that supports Java 1.5 and servlet 2.4
+| any servlet 2.4-compliant web server
+| Java 1.5
+|
+|-
+| {{rh}} | [http://jjjuli.sourceforge.net Juli]
+| Cross platform
+| Not mandatory
+| [[Ruby programming language|Ruby]], [[Git (software)|Git]]
+| {{yes}}
+|-
+! {{rh}} | [[MediaWiki]]
+| Linux, Unix, Windows &amp; others
+| Any web server that supports PHP 5.1+
+| MySQL, PHP5
+|
+|-
+! {{rh}} | [[Midgard (software)|Midgard Wiki]]
+| Linux, Unix &amp; others
+| Apache with PHP
+| MySQL, PHP
+|
+|-
+! {{rh}} | [[MoinMoin]]
+| Linux, Macs, Unix, Windows &amp; others
+| None for Desktop version
+| Python
+| {{Yes}}
+|-
+! {{rh}} | [[MojoMojo]]
+| Linux, Macs, Unix, Windows, others
+| None - builtin server suitable for desktop or production use
+| SQL database ([[MySQL]], [[PostgreSQL]], [[Sqlite]])
+|
+|-
+! {{rh}} | [[OddMuseWiki]]
+| Linux, Unix, Windows &amp; others
+| Any web server with cgi support
+| Perl
+|
+|-
+! {{rh}} | [[PhpWiki]]
+| Linux, Unix, Windows &amp; others
+| Any Web-server with PHP
+| PHP
+|
+|-
+! {{rh}} | [[PmWiki]]
+| Linux, Unix, Windows &amp; others
+| Any Web-server with PHP, can run without a web server.
+| PHP
+| {{Yes}}
+|-
+! {{rh}} | [[ProjectForum]]
+| Windows, Mac OS X, Linux
+| None (built-in)
+| None
+| {{Yes}}
+|-
+! {{rh}} | [[Qontext]]
+| [[Software_as_a_service|SAAS]]&lt;ref&gt;Qontext is a cloud based application[http://www.getapp.com/qontext-application Reference site]&lt;/ref&gt;
+| N/A
+| No
+| N/A
+|-
+! {{rh}} | [[Microsoft_SharePoint_Foundation|SharePoint Foundation]]
+| Windows Server
+| IIS
+| Optional SQL Server
+|
+|-
+! {{rh}} | [[Microsoft_SharePoint_Server|SharePoint Server]]
+| Windows Server or SaaS
+| IIS or SaaS
+| Optional SQL Server
+|
+|-
+! {{rh}} | [[SMW+]]
+| Linux Unix Windows &amp; others
+| Apache or IIS with PHP 5.0+
+| MySQL PHP5
+|
+|-
+! {{rh}} | [[Socialtext]]
+| NA - hosted
+| no, all required components included
+| no, all required components included
+|
+|-
+! style=&quot;width: 12em&quot; |
+! Platform
+! Web-server required
+! Other software required
+|
+|-
+! {{rh}} | [[Swiki]]
+| Linux, Unix, Windows &amp; others
+| Noneâinstalls own server. Can coexist with IIS and Apache by running on alternate port
+| None
+|
+|-
+! {{rh}} | [[ThoughtFarmer]]
+| Windows &amp; others
+| MS-Windows Server 2003 or 2008
+| MS SQL Server 2005 or 2008
+|
+|-
+! {{rh}} | [[TiddlyWiki]]
+| Windows &amp; others.
+| None
+| Runs in regular browser
+| {{Yes}}
+|-
+! {{rh}} | [[TigerWiki]]
+| Linux, Unix &amp; others
+| Any Web-server with PHP
+| PHP
+|
+|-
+! {{rh}} | [[Tiki Wiki CMS Groupware]]
+| Linux, Unix, Windows &amp; others
+| Apache with PHP
+| PHP
+| {{Yes}}
+|-
+! {{rh}} | [[Traction TeamPage]]
+| Any OS capable of running Java 2 Virtual Machine
+| None (Built-In)
+| None
+|
+|-
+! {{rh}} | [[TWiki]]
+| Linux, Unix, Windows &amp; others
+| Any Web-server with cgi support. Web-server included in [http://twiki.org/cgi-bin/view/Codev/TWikiVMDebianStable VMware appliance] and [http://twiki.org/cgi-bin/view/Codev/TWikiForWindowsPersonal TWiki for MS-Windows Personal]
+| Perl, RCS
+|
+|-
+! {{rh}} | [[UseModWiki]]
+| Linux, Unix, Windows &amp; others
+| Any web server with cgi support
+| Perl
+|
+|-
+! {{rh}} | [[WackoWiki]]
+| Linux, Unix, Windows &amp; others
+| Apache v1.3.x (v2 recommended), IIS
+| MySQL, PHP
+|
+|-
+! {{rh}} | [[Wikispaces]]
+| SaaS - hosted
+| None
+| None
+|
+|-
+! {{rh}} | [[Wikiwig]]
+| Linux, Unix, Windows &amp; others
+| Any with PHP
+| MySQL, PHP
+|
+|-
+! {{rh}} | [[WikkaWiki]]
+| Linux, Unix, Windows &amp; others
+| Any Web-server with PHP
+| MySQL/PHP
+|
+|-
+! {{rh}} | [[XWiki]]
+| Java Platform
+| Any Java EE webserver
+| Java
+| {{Yes}}
+|-
+! {{rh}} | [[ZWiki]]
+| Linux, Unix, Windows &amp; others
+| Zope
+| Python (included with most Zope installs)
+|
+|-class=&quot;sortbottom&quot;
+! style=&quot;width: 12em&quot; |
+! Platform
+! Web-server required
+! Other software required
+! Installable to USB stick
+|}
+
+==Footnotes==
+{{Reflist|2}}
+
+==See also==
+* [[List of wiki software]]
+* [[List of wikis]]
+* [[Wiki farm]]
+* [[Wiki software]]
+* [[Comparison of wiki farms]]
+
+==External links==
+* [http://www.wiki.org/wiki.cgi? Wiki.org], What Is Wiki - general Wiki info.
+* [http://www.wikimatrix.org/ WikiMatrix.org] - Comparison of wikis and features selected by the user.
+* [https://spreadsheets.google.com/ccc?key=0AvdxahUksh3mdDNvd1E0UHFheW8tQkFmZWhhWHgwLVE&amp;hl=en Wiki Comparison grid] - Comparison of wiki software in a shared and editable Google Spreadsheet
+* [http://sites.wiki.ubc.ca/etec510/Wiki_Affordances Wiki Affordances] - Examination of the five key [[affordances]] that all modern, fully developed wikis share.
+
+{{Wiki topics}}
+{{Wiki software}}
+
+{{Use dmy dates|date=September 2010}}
+
+{{DEFAULTSORT:Comparison Of Wiki Software}}
+[[Category:Wikis]]
+[[Category:Wiki software| Comparison]]
+[[Category:Software comparisons|Wiki software]]
+
+[[hi:à¤µà¤¿à¤à¥ à¤¸à¥à¤«à¥à¤à¤µà¥à¤¯à¤° à¤à¥ à¤¤à¥à¤²à¤¨à¤¾]]
+[[pt:ComparaÃ§Ã£o de softwares wiki]]
+[[zh:Wikiè½¯ä»¶æ¯è¾]]</rev></revisions></page></pages></query></api>

@@ -1,0 +1,58 @@
+<?xml version="1.0"?><api><query><pages><page pageid="6316130" ns="0" title="Process Explorer"><revisions><rev xml:space="preserve">{{unreferenced|date=June 2011}}
+
+{{Infobox software
+| screenshot = [[Image:Process Explorer Screenshot.png|250px|Process Explorer Screenshot]]
+| caption = Process Explorer v15.05 running on [[Windows 7]]
+| name = Process Explorer
+| developer = [[Sysinternals]], [[Microsoft]]
+| latest_release_version = v15.05
+| latest_release_date = {{release date and age|2011|09|20}}
+| operating_system = [[Microsoft Windows|Windows XP, 2003, Vista, 7 and x64 versions]]
+| license = Proprietary
+| website = [http://technet.microsoft.com/sysinternals/bb896653 Process Explorer Homepage]
+}}
+
+'''Process Explorer''' is a [[freeware]] [[computer program]] for [[Microsoft Windows]] created by [[Sysinternals]], which has been acquired by [[Microsoft Corporation]].
+
+Process Explorer is a system monitoring and examination utility. It provides the functionality of [[Windows Task Manager]] along with a rich set of features for collecting information about [[Process (computing)|process]]es running on the user's system. It can be used as the first step in debugging software or system problems.
+
+Process Explorer can be used to track down problems. For example, it provides a means to list or search for named resources that are held by a process or all processes. This can be used to track down what is holding a file open and preventing its use by another program. Or as another example, it can show the command lines used to start a program, allowing otherwise identical processes to be distinguished. Or like Task Manager, it can show a process that is maxing out the CPU, but unlike Task Manager it can show which thread (with the callstack) is using the CPU â information that is not even available under a debugger.
+
+Process Explorer is one of a set of administration and monitoring utilities available from the [[Microsoft]] [[Sysinternals]] website.
+
+== History ==
+Process Explorer began in the early [[Sysinternals]] days as two separate utilities, HandleEx and DLLView, which were merged in 2001 &lt;ref&gt; [http://blogs.msdn.com/b/microsoft_press/archive/2011/06/14/rtm-d-today-windows-sysinternals-administrator-s-reference.aspx RTMâd today: Windows Sysinternals Administrator's Reference] &lt;/ref&gt; Until 2008, Process Explorer worked on [[Windows 9x]]/[[Windows Me|Me]], [[Windows NT 4.0]] and [[Windows 2000]]. Versions of Process Explorer up to 12.04 work on [[Windows 2000]]; versions 14.0 and higher do not. The current version runs on [[Windows XP]] and upwards. Version 15 added GPU monitoring for [[Windows Vista]] and later.
+
+== Features ==
+* Hierarchical view of processes.
+* Ability to display an icon and company name next to each process.
+* Live CPU activity graph in the task bar.
+* Ability to suspend selected process.
+* Ability to raise the window attached to a process, thus &quot;unhiding&quot; it.
+* Complete process tree can be killed.
+* Interactively alter a service process' access security
+* Interactively set the priority of a process
+* Disambiguates service executables which perform multiple service functions.  For example, when the pointer is placed over a svchost.exe, it will tell if it is the one performing automatic updates/secondary logon/etc., or the one providing RPC, or the one performing terminal services, and so on.
+
+== See also ==
+* [http://processhacker.sourceforge.net/ Process Hacker] - Open source process exploring utility with GPL license
+* [[Process Lasso]]
+
+== References ==
+{{Reflist}}
+
+== External links ==
+* [http://technet.microsoft.com/sysinternals/bb896653 Process Explorer Official Webpage] Microsoft Retrieved on December 29, 2008
+* [http://blogs.cnet.com/8301-13554_1-9867426-33.html Using Process Explorer to tame svchost.exe - Advanced topics] February 9, 2008
+* [http://blogs.cnet.com/8301-13554_1-9868661-33.html Process Explorer Part 2] February 10, 2008
+* [http://forum.sysinternals.com/forum_posts.asp?TID=10998 Process Explorer Guide for Newbies] February 27, 2009
+* [http://technet.microsoft.com/sysinternals/bb842062 Sysinternals Suite at Microsoft Technet] Updated continuously as of August 2009
+
+[[Category:Windows software]]
+[[Category:Process (computing)]]
+[[Category:Computer performance]]
+[[Category:Microsoft development tools]]
+
+[[de:Process Explorer]]
+[[ru:Process Explorer]]
+[[vi:Process Explorer]]</rev></revisions></page></pages></query></api>

@@ -1,0 +1,240 @@
+<?xml version="1.0"?><api><query><pages><page pageid="32478" ns="0" title="Vim (text editor)"><revisions><rev xml:space="preserve">{{ infobox software
+| name                   = Vim
+| logo                   = [[File:Vimlogo.svg|60px|Vim logo]]
+| screenshot             = [[File:Vim-(logiciel)-console.png|frameless]]
+| caption                = Vim running in a [[terminal emulator]]
+| author                 = [[Bram Moolenaar]]
+| developer              =
+| released               = {{Start date and age|1991}}
+| frequently_updated     = yes&lt;!-- Release version update? Don't edit this page, just click on the version number! --&gt;
+| programming language   = [[C (programming language)|C]] and [[Vimscript]]
+| platform               = [[Cross-platform]]: [[Unix]], [[Linux]], [[Microsoft Windows]]
+| language               = English, Chinese, French, German, Italian, Persian, Polish, Russian, Spanish&lt;ref&gt;{{cite web|title=Vim in non-English languages|url=http://www.vim.org/translations.php|accessdate=14 December 2010}}&lt;/ref&gt;
+| genre                  = [[Text editor]]
+| license                = [[free software license|Free software]], [[charityware]]
+| website                = http://www.vim.org/
+}}
+'''Vim''' is a [[text editor]] written by [[Bram Moolenaar]] and first released publicly in 1991. Based on the [[vi]] editor common to [[Unix-like]] systems, Vim is designed for use both from a [[command line interface]] and as a standalone application in a [[graphical user interface]]. Vim is [[free and open source software]] and is released under a license which includes some [[charityware]] clauses, encouraging users who enjoy the software to consider donating to children in [[Uganda]].&lt;ref&gt;[http://vimdoc.sourceforge.net/htmldoc/uganda.html#license Vim documentation: uganda&lt;!-- Bot generated title --&gt;]&lt;/ref&gt; The license is compatible with the [[GNU General Public License]].
+
+Although Vim was originally released for the [[Amiga]], Vim has since been developed to be [[cross-platform]], supporting [[#Availability|many other platforms]].  It is the most popular editor amongst [[Linux Journal]] readers.&lt;ref&gt;{{cite web|url=http://www.linuxjournal.com/article/7029#N0x850ca10.0x85cf4c4|title=Linux Journal: 2003 Readers' Choice Awards|accessdate=2006-05-24|date=2003-11-01}}; {{cite web|url=http://www.linuxjournal.com/article/7724#N0x850cd80.0x85d3e3c|title=Linux Journal: 2004 Readers' Choice Awards|accessdate=2006-05-24|date=2004-11-01}}; {{cite web|url=http://www.linuxjournal.com/article/8520#N0x850cd80.0x87983bc|title=Linux Journal: 2005 Readers' Choice Awards|accessdate=2006-05-24|date=2005-09-28}}&lt;/ref&gt;
+
+== History ==
+
+Written in 1988 by [[Bram Moolenaar]] for the [[Amiga]] computer, but first released publicly (v1.14) in 1991.&lt;ref&gt;http://moolenaar.net/vimstory.pdf&lt;/ref&gt; It was based on an earlier editor, Stevie, for the Atari ST,&lt;ref&gt;{{cite news | title=Two decades of productivity: Vim's 20th anniversary | url=http://arstechnica.com/open-source/news/2011/11/two-decades-of-productivity-vims-20th-anniversary.ars | first=Ryan | last=Paul | work=Ars Technica | date=2011-11-02 | accessdate=2011-11-04}}&lt;/ref&gt; created by Tim Thompson, Tony Andrews and G.R. (Fred) Walter.{{cn|date=November 2011}}&lt;!-- the tag is for this comment about authors of Stevie --&gt;
+
+The name &quot;Vim&quot; is an acronym for &quot;''Vi IMproved''&quot;&lt;ref&gt;{{cite web |url=http://iccf-holland.org/click5.html#oualline |title=ICCF Holland&amp;nbsp;â helping children in Uganda |publisher=ICCF Holland |accessdate=2007-10-23 }}&lt;/ref&gt; because Vim is an extended version of the [[vi]] editor, with many additional features designed to be helpful in editing program [[source code]].  Originally, the acronym stood for &quot;''Vi IMitation''&quot;, but that was changed with the release of Vim 2.0 in December 1993.&lt;ref name=&quot;filewatcher&quot;&gt;{{cite web |title=Filewatcher |url=http://www.filewatcher.com/b/ftp/ftp.twaren.net/pub/Unix/Editors/Vim/old.0.0.html |accessdate=February 26, 2011}}&lt;/ref&gt;  A later comment states that the reason for changing the name was that Vim's feature set surpassed that of vi.&lt;ref name=history/&gt;
+
+== Interface ==
+[[File:Vim.png|thumb|left|200px|Graphical Vim under [[GTK+|GTK+ 2]].]]
+
+Like [[vi]], Vim's interface is based not on menus or icons but on commands given in a [[text user interface]]; its [[GUI]] mode, '''gVim''', adds menus and toolbars for commonly used commands but the full functionality is still expressed through its [[command line]] mode.
+
+Vim has a built-in [[tutorial#Computer based tutoring|tutorial]] for beginners (accessible through the &quot;vimtutor&quot; command). There is also the Vim [[User guide|Users' Manual]] that details Vim's features. This manual can be read from within Vim, or found online.&lt;ref&gt;[http://vimdoc.sourceforge.net/htmldoc/usr_toc.html Vim manual] at Sourceforge.net&lt;/ref&gt;&lt;ref name=&quot;vimbook&quot;&gt;{{Cite book|title=Vi IMproved (VIM)|isbn=0-7357-1001-5|first=Steve|last=Oualline|publisher=New Riders Publishers |year=2001|month=April |url=ftp://ftp.vim.org/pub/vim/doc/book/vimbook-OPL.pdf }}&lt;/ref&gt;
+
+Vim also has a built-in help facility (using the &lt;code&gt;:help&lt;/code&gt; command) that allows users to query and navigate through commands and features.
+
+== Customization ==
+
+Part of Vim's power is that it can be extensively customized. The basic interface can be controlled by the many options available, and the user can define personalized key mappingsâoften called [[macro (computer science)#Keyboard macros|macros]]âor abbreviations to automate sequences of keystrokes, or even call internal or user defined functions.
+
+There are many [[plug-in (computing)|plugin]]s available that will extend or add new functionality to Vim.  These complex scripts are usually written in Vim's internal scripting language ''[[vimscript]]''.&lt;ref&gt;[http://vimdoc.sourceforge.net/htmldoc/usr_41.html#vim-script-intro: help vim-script-intro]&lt;/ref&gt; Vim also supports scripting using [[Lua (programming language)|Lua]] (as of Vim 7.3), [[Perl]], [[Python (programming language)|Python]], [[Racket (programming language)|Racket]]&lt;ref&gt;{{Cite web |url=http://vimdoc.sourceforge.net/htmldoc/if_mzsch.html |title=Vim documentation: if_mzsch |date=11 February 2010}}&lt;/ref&gt; (formerly PLT Scheme), [[Ruby (programming language)|Ruby]], and [[Tcl]].
+
+There are projects bundling together complex scripts and customizations and aimed at turning Vim into a tool for a specific task or adding a major flavour to its behaviour. Examples include [[Cream (software)|Cream]] which makes Vim behave like a click-and-type editor or VimOutliner that provides a comfortable [[outliner]] for users of Unix-like systems.
+
+== Features and improvements over ''vi'' ==
+
+Vim has a vi compatibility mode but when not in this mode Vim has many enhancements over ''vi''.&lt;ref name=&quot;vimhelp&quot;&gt;Vim help system (type &quot;&lt;code&gt;[http://vimdoc.sourceforge.net/htmldoc/help.html :help]&lt;/code&gt;&quot; within Vim)&lt;/ref&gt; However, even in compatibility mode, Vim is not 100% compatible with ''vi'' as defined in the [[Single Unix Specification]]&lt;ref&gt;{{cite | url = http://pubs.opengroup.org/onlinepubs/9699919799/utilities/vi.html | title= &quot;vi&amp;nbsp;â screen-oriented (visual) display editor&quot;, Single Unix Specification, Version 4 (IEEE Std 1003.1-2008) | author = The Open Group | accessdate = 2010-12-27 | year = 2008 }}&lt;/ref&gt; and [[POSIX]] (e.g., Vim does not support ''vi'''s open mode, only visual mode). Vim has nevertheless been described as âvery much compatible with Viâ.&lt;ref name=vimfaq&gt;{{cite web |url=http://vimdoc.sourceforge.net/htmldoc/vimfaq.html#1.3|title=Vim FAQ|author=Peppe, Benji, Charles Campbell|date=2004-01-02|accessdate=2010-12-27}} (question 1.3)&lt;/ref&gt;
+
+Some of Vim's enhancements include [[autocomplete|completion]], [[File comparison|comparison]] and [[merge (revision control)|merging]] of files (known as vimdiff), a comprehensive integrated help system, extended [[regular expression]]s, [[scripting language]]s (both native and through alternative scripting interpreters such as Perl, Python, Ruby, Tcl, etc.) including support for [[plug-in (computing)|plugins]], a [[graphical user interface]] (known as gvim), limited [[integrated development environment]]-like features, [[mouse (computing)|mouse]] interaction (both with and without the GUI), [[Folding editor|folding]], editing of compressed or archived files in [[gzip]], [[bzip2]], [[ZIP (file format)|zip]], and [[tar (file format)|tar]] format and files over network protocols such as [[Secure Shell|SSH]], [[File Transfer Protocol|FTP]], and [[Hypertext Transfer Protocol|HTTP]], session state preservation, [[spell checker|spell checking]], split (horizontal and vertical) and tabbed windows, [[unicode]] and other multi-language support, [[syntax highlighting]], trans-session command, search, and cursor position [[command history|histories]], multiple level [[undo|undo/redo]] history which can persist across editing sessions, and visual mode.
+
+== Availability ==
+
+Whereas ''vi'' was originally available only on [[Unix]] operating systems, Vim has been [[porting|ported]] to many operating systems including [[AmigaOS]] (the initial target platform), [[Atari]] [[MiNT]], [[BeOS]], [[DOS]], [[Microsoft Windows]] [[Windows 95|95]]/[[Windows 98|98]]/[[Windows Me|Me]]/[[Windows NT|NT]]/[[Windows 2000|2000]]/[[Windows XP|XP]]/[[Windows Server 2003|Server 2003]]/[[Windows Vista|Vista]]/[[Windows Server 2008|Server 2008]]/[[Windows 7|7]], [[IBM]] [[OS/2]] and [[OS/390]], [[MorphOS]], [[OpenVMS]], [[QNX]], [[RISC OS]], [[Unix]], [[Linux]], [[Berkeley Software Distribution|BSD]], and [[Mac OS]].&lt;ref&gt;&quot;&lt;code&gt;[http://vimdoc.sourceforge.net/htmldoc/help.html#sys-file-list :help sys-file-list]&lt;/code&gt;&quot;&lt;br /&gt;{{cite web|url=http://www.vim.org/download.php|title=Vim Online: Downloads|accessdate=2007-01-07}}&lt;/ref&gt;  Also, Vim is shipped with every copy of [[Apple Inc.|Apple]] [[Mac OS X]].&lt;ref&gt;{{cite web|url=http://developer.apple.com/library/mac/#DOCUMENTATION/Darwin/Reference/ManPages/man1/vim.1.html|title=Mac OS X Manual Page For vim(1)|accessdate=2010-01-12}}&lt;/ref&gt;
+
+Vim has been compiled for Apple's [[iOS (Apple)|iOS]] operating system, and can be installed through [[Cydia]] on [[iOS jailbreaking|jailbroken]] Apple devices running iOS.&lt;ref&gt;http://www.foreveriphone.com/vim-on-iphone/&lt;/ref&gt; Vim has been independently compiled for [[Android (operating system)|Android]], although it can only run on rooted devices as of July 2011.&lt;ref&gt;http://code.google.com/p/android-cruft/&lt;/ref&gt;
+
+== Release history ==
+
+{| class=&quot;wikitable&quot;
+|-
+! style=&quot;text-align:left;&quot; | Date
+! style=&quot;text-align:left;&quot; | Version
+! style=&quot;text-align:left;&quot; | Changes and additions
+|-
+| June, 1987
+| N/A
+| Tim Thompson releases Stevie (ST editor for VI enthusiasts), a limited vi clone for the [[Atari ST]], posting the source on [[Usenet]].&lt;ref name=stevie&gt;{{cite web|first=Tim|last=Thompson|date=2000-03-26|url=http://nosuch.com/tjt/stevie/|title=Stevie|accessdate=2010-12-27}}&lt;/ref&gt;&lt;ref name=&quot;stevie-usenet&quot;&gt;{{cite newsgroup|title=A mini-vi for the ST|author=Tim Thompson|date=1987-06-28|newsgroup=comp.sys.atari.st |id=129@glimmer.UUCP|url=http://groups.google.com/group/comp.sys.atari.st/msg/8db96f888d778a32?dmode=source|accessdate=2010-12-27}}&lt;/ref&gt;
+|-
+| June, 1988
+| N/A
+| Tony Andrews improves Stevie, and ports it to [[Unix]] and [[OS/2]], releasing version 3.10 on [[Usenet]].&lt;ref name=stevie/&gt;&lt;ref name=&quot;v15i026&quot;&gt;{{cite newsgroup|title=v15i037: Stevie, an &quot;aspiring&quot; VI clone for Unix, OS/2, Amiga|author=Tony Andrews |date=1988-06-06|newsgroup=comp.sources.unix |id=893@fig.bbn.com|url=http://groups.google.com/group/comp.sources.unix/msg/1fccf6a82259beed?dmode=source|accessdate=2010-12-27}}&lt;/ref&gt;
+
+|-
+| 1988
+| 1.0
+| Bram Moolenaar creates '''Vi IMitation''' for the Amiga, based on Stevie, never publicly released
+|-
+| November 2, 1991
+| 1.14&lt;ref name=&quot;history&quot;&gt;{{cite web|first=Bram|last=Moolenaar|date=2002-01-15|url=http://www.free-soft.org/FSM/english/issue01/vim.html|title=Vim, an open-source text editor|accessdate=2005-10-24}}&lt;/ref&gt;|| First public release for the [[Amiga]] on [[Fred Fish]] disk #591&lt;ref&gt;[http://cd.textfiles.com/fredfish/v1.6/FF_Disks/571-600/FF_591/Contents Textfiles.com]&lt;/ref&gt;
+|-
+| 1992
+| 1.22&lt;ref name=&quot;history&quot;/&gt;
+| Port to [[Unix]]. Vim now competes with ''[[vi]]''.
+|-
+| December 14, 1993
+| 2.0&lt;ref name=&quot;filewatcher&quot; /&gt;
+| This is the first release using the name '''Vi IMproved'''.
+|-
+| August 12, 1994
+| 3.0&lt;ref name=&quot;history&quot;/&gt;
+| Support for multiple windows
+|-
+| May 29, 1996
+| 4.0&lt;ref name=&quot;history&quot;/&gt;&lt;ref&gt;{{cite web |date=2004-03-12 |url=http://www.vim.org/htmldoc/version4.html |title=Official Vim Manual, Version 4 summary |accessdate=2008-08-06}}&lt;/ref&gt;
+| [[Graphical user interface]]
+|-
+| February 19, 1998
+| 5.0&lt;ref name=&quot;history&quot;/&gt;&lt;ref&gt;{{cite web |date=2004-01-17 |url=http://www.vim.org/htmldoc/version5.html |title=Official Vim Manual, Version 5 summary |accessdate=2008-08-06}}&lt;/ref&gt;|| [[Syntax highlighting]], basic [[Scripting language|scripting]] (user defined functions, commands, etc.)
+|-
+| April 6, 1998
+| 5.1
+| [[Software bug|Bug]] fixes, various improvements
+|-
+| April 27, 1998
+| 5.2
+| Long line support, file browser, dialogs, popup menu, select mode, session files, user defined functions and commands, [[Tcl]] interface, etc.
+|-
+| August 31, 1998
+| 5.3
+| Bug fixes, etc.
+|-
+| July 25, 1999
+| 5.4
+| Basic file encryption, various improvements
+|-
+| September 19, 1999
+| 5.5
+| Bug fixes, various improvements
+|-
+| January 16, 2000
+| 5.6
+| New syntax files, bug fixes, etc.
+|-
+| June 24, 2000
+| 5.7
+| ''[[idem]]''
+|-
+| May 31, 2001
+| 5.8
+| ''idem''
+|-
+| September 26, 2001
+| 6.0&lt;ref name=&quot;history&quot;/&gt;&lt;ref&gt;{{cite web |date=2004-03-12 |url=http://www.vim.org/htmldoc/version6.html |title=Official Vim Manual, Version 6 summary |accessdate=2008-08-06}}&lt;/ref&gt;|| [[Folding editor|Folding]], [[Plug-in (computing)|plugins]], multi-language, etc.
+|-
+| March 24, 2002
+| 6.1
+| Bug fixes
+|-
+| June 1, 2003
+| 6.2
+| GTK2, Arabic language support, :try command, minor features, bug fixes
+|-
+| June 7, 2004
+| 6.3
+| Bug fixes, translation updates, mark improvements
+|-
+| October 15, 2005
+| 6.4
+| Bug fixes, updates to Perl, Python, and Ruby support
+|-
+| May 7, 2006
+| 7.0 &lt;ref&gt;{{cite web |date=2006-05-10 |url=http://vimdoc.sourceforge.net/htmldoc/version7.html |title=Official Vim Manual, Version 7 summary |accessdate=2008-08-06}}&lt;/ref&gt;|| [[Spell checker|Spell checking]], [[Autocomplete|code completion]], tab pages (multiple viewports/window layouts), current line and column highlighting, undo branches, and more
+|-
+| May 12, 2007
+| 7.1
+| Bug fixes, new syntax and runtime files, etc.
+|-
+| August 9, 2008
+| 7.2 &lt;ref&gt;[http://groups.google.com/group/vim_announce/browse_thread/thread/2c89671dd928812f Groups.google.com]&lt;/ref&gt;|| Floating point support in scripts, refactored screen drawing code, bug fixes, new syntax files, etc.
+|-
+| August 15, 2010
+| 7.3
+| [[Lua (programming language)|Lua]] support, Python3 support, [[Blowfish (cipher)| Blowfish]] encryption, persistent undo/redo
+|}
+
+== See also ==
+{{Portal|Free software}}
+
+* [[Comparison of text editors]]
+* [[Editor war]]
+* [[List of text editors]]
+* [[List of Unix programs]]
+* [[Vimperator]]
+
+== References ==
+
+{{refs|30em}}
+
+== External links ==
+{{Wikibooks|Learning the vi Editor|Vim}}
+{{Commons category|Vim}}
+
+* {{Official|http://vim.sourceforge.net/}}
+* [http://vimdoc.sourceforge.net/ Online Vim documentation]
+* [http://vimhelp.appspot.com/ Online Vim help pages]
+* [ftp://ftp.vim.org/pub/vim/doc/book/vimbook-OPL.pdf Vi IMproved - Vim], by Steve Oualline and [http://www.moolenaar.net/vim_errata.html errata].
+* [http://iccf-holland.org/click5.html Books], complete list
+* [http://blog.interlinked.org/tutorials/vim_tutorial.html Vim Introduction and Tutorial]
+
+{{FLOSS}}
+
+[[Category:Unix text editors]]
+[[Category:Windows text editors]]
+[[Category:Mac OS text editors]]
+[[Category:Mac OS X text editors]]
+[[Category:OpenVMS text editors]]
+[[Category:Free text editors]]
+[[Category:Termcap]]
+[[Category:Free software programmed in C]]
+[[Category:Cross-platform software]]
+[[Category:Linux text editors]]
+[[Category:Free file comparison tools]]
+
+[[af:VIM]]
+[[ar:ÙÙÙ (ÙØ­Ø±Ø± ÙØµÙØµ)]]
+[[bar:Vim]]
+[[bs:Vim]]
+[[bg:Vim]]
+[[ca:Vim]]
+[[cs:Vim]]
+[[de:Vim]]
+[[et:Vim]]
+[[el:Vim]]
+[[es:Vim]]
+[[eo:Vim (tekstoprilaborilo)]]
+[[eu:Vim]]
+[[fa:ÙÛÙ]]
+[[fr:Vim]]
+[[ko:Vim]]
+[[hr:Vim]]
+[[ia:Vim]]
+[[it:Vim (editor di testo)]]
+[[he:Vim]]
+[[lt:Vim]]
+[[hu:Vim]]
+[[ms:Vim]]
+[[nl:Vim (teksteditor)]]
+[[ja:Vim]]
+[[pl:Vim]]
+[[pt:Vim]]
+[[ro:Vim]]
+[[ru:Vim]]
+[[simple:Vim]]
+[[sh:Vim]]
+[[fi:Vim]]
+[[sv:Vim (textredigerare)]]
+[[ta:à®µà®¿à®®à¯]]
+[[th:à¸§à¸´à¸¡]]
+[[tr:Vim]]
+[[uk:Vim]]
+[[zh:Vim]]</rev></revisions></page></pages></query></api>

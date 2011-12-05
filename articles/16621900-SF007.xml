@@ -1,0 +1,48 @@
+<?xml version="1.0"?><api><query><redirects><r from="Gestor de Arranque Grafico" to="GAG (boot loader)" /></redirects><pages><page pageid="9941449" ns="0" title="GAG (boot loader)"><revisions><rev xml:space="preserve">{{primary sources|date=August 2011}}
+{{Notability|date=March 2010}}
+
+{{Infobox Software
+| name                   = GAG
+| logo                   = 
+| screenshot             = [[Image:GAG_screenshot.png|250px]]
+| caption                = GAG 4.9
+| collapsible            = 
+| author                 = 
+| developer              = Sergio Costas Rodriguez
+| released               = 
+| latest release version = 4.10
+| latest release date    = {{release date and age|2008|08|11}}
+| latest preview version = 
+| latest preview date    = 
+| frequently updated     = 
+| programming language   = [[Assembly language]]
+| operating system       = OS independent, [[X86]] architecture
+| platform               = 
+| size                   = 
+| language               = [[Multilingual]] (6)
+| status                 = 
+| genre                  = Boot Loader
+| license                = [[GNU General Public License|GNU GPL]]
+| website                = [http://gag.sourceforge.net/ gag.sourceforge.net]
+}}
+
+'''GAG''' ('''G'''estor de '''A'''rranque '''G'''rÃ¡fico, English: &quot;Graphical Boot Manager&quot;) is a GNU GPL [[boot loader]] for [[x86]] computers. It doesn't need its own [[Disk partitioning|partition]] â it installs directly to the [[boot sector]] of [[Hard disk]] or [[floppy disk]] which allows it to survive to repartitioning or formatting. It is distributed as a bootable disk image, which makes it fully [[operating system]]-independent. It can be installed from a [[CD-ROM]] or from a linux terminal too (this last method allows to install it in a USB pendrive).
+
+GAG works on x86 processor with standard [[VGA]] graphic adapter or compatible (it can't be properly run under [[Hercules Graphics Card|Hercules]], [[Color Graphics Adapter|CGA]] or [[Enhanced Graphics Adapter|EGA]]).
+
+GAG aims to be an easy-to-use boot manager, but allows certain advanced features. It has a classic 3D-looking [[GUI]] driven by a keyboard. It allows to have up to 9 operating systems installed. Every OS (boot partition) has an icon, label and, if needed, [[password]] protection. Configuration is menu-driven, and can be protected with its own password too.
+
+It allows to hide [[primary partition]]s (to avoid OS collisions between C:/D: primary partitions) and auto-choose using timer.
+
+==Grub2 incompatibility==
+Because GAG is a pure [[Chain_loading#Chain_loading_in_boot_manager_programs|chain loading boot loader]], it requires a kernel loader to be installed in the superblock of each bootable partition to handle the different filesystems or kernels. This means that users of [[GNU]]/[[Linux]] are required to install [[LILO]] or [[GRUB]] in the superblock of the partition in order to be able to boot from GAG; however it seems that installing [[GRUB2]] in a superblock is discouraged.{{Citation needed|date=November 2011}} Some people have been able to make this configuration work by running '''sudo grub-install /dev/sdXX''' (where XX represents the root partition), however it is not guaranteed to work.
+
+==External links==
+* [http://sourceforge.net/projects/gag GAG at Sourceforge]
+
+{{free-software-stub}}
+
+
+[[Category:Free boot loaders]]
+
+[[fr:Gestor de Arranque GrÃ¡fico]]</rev></revisions></page></pages></query></api>

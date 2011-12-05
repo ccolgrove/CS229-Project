@@ -1,0 +1,98 @@
+<?xml version="1.0"?><api><query><redirects><r from="Sudoers" to="Sudo" /></redirects><pages><page pageid="1008028" ns="0" title="Sudo"><revisions><rev xml:space="preserve">{{Lowercase|title=sudo}}{{Redirect|SUDO|the non-profit organisation|Sudan Social Development Organization}}
+{{refimprove|date=November 2011}}
+{{Infobox software
+| name                   = sudo
+| developer              = Todd C. Miller
+| screenshot             = [[File:Sudo on Ubuntu.png|300px]]
+| caption                = sudo in a terminal
+| latest releaseversion  = 1.8.1-1
+| latest release date    = {{release date|2011|04|15}}
+| latest preview version =
+| latest preview date    =
+| operating system       = [[Unix-like]]
+| genre                  = Privilege authorization
+| license                = [[ISC license|ISC]]-style&lt;ref&gt;{{cite web|author=Todd C. Miller |url=http://www.sudo.ws/sudo/license.html |title=Sudo License |publisher=Sudo.ws |date=2011-06-17 |accessdate=2011-11-17}}&lt;/ref&gt;
+| website                = {{url|http://www.sudo.ws}}
+}}
+
+'''&lt;code&gt;sudo&lt;/code&gt;''' ({{IPAc-en|icon|Ë|s|uË|d|uË}}&lt;ref&gt;{{cite web|url=http://sudo.ws/sudo/troubleshooting.html|title=Troubleshooting tips and FAQ for Sudo|author=Miller, Todd C|accessdate=2009-11-20}}&lt;/ref&gt; or {{IPAc-en|Ë|s|uË|d|oÊ}}) is a [[computer program|program]] for [[Unix-like]] computer [[operating system]]s that allows users to run programs with the security privileges of another user (normally the [[superuser]], or root). Its name is a concatenation of the &lt;code&gt;[[su (Unix)|su]]&lt;/code&gt; command (which grants the user a [[shell (computing)|shell]] of another user, normally the superuser) and &quot;do&quot;, or take action.{{cn|date=November 2011}}
+
+Unlike the &lt;code&gt;su&lt;/code&gt; command, users typically supply their own [[password]] to &lt;code&gt;sudo&lt;/code&gt; rather than the root password. After authentication, and if the &lt;code&gt;/etc/sudoers&lt;/code&gt; configuration file permits the user access, then the system will invoke the requested command.
+
+== History ==
+
+The program was originally written by Bob Coggeshall and Cliff Spencer &quot;around 1980&quot; at the Department of [[Computer Science]] at [[University at Buffalo, The State University of New York|SUNY/Buffalo]]. The current version is under active development and is maintained by [[OpenBSD]] developer Todd C. Miller and distributed under a [[BSD license|BSD-style]] license.&lt;ref&gt;{{cite web|url=http://www.gratisoft.us/sudo/history.html|title=A Brief History of Sudo|author=Miller, Todd C|accessdate=2007-03-05}}&lt;/ref&gt;
+
+In November 2009 Thomas Claburn, in response to fears that [[Microsoft]] had patented the &lt;code&gt;sudo&lt;/code&gt; command,&lt;ref&gt;{{cite web|url=http://www.maximumpc.com/article/news/microsoft_has_patented_sudo_yes_command|title=Microsoft has Patented &quot;sudo.&quot; Yes, the Command|author=Lilly, Paul|accessdate=2009-11-13}}&lt;/ref&gt;  found the suspicions to be overblown.&lt;ref&gt;{{cite web | url = http://www.darkreading.com/security/security-management/221800112/index.html  | title = Does New Microsoft Patent Infringe On Unix Program Sudo? Some in the open source community suspicious of Microsoft's intent | first = Claburn | last = Thomas | date = 2009-11-16 | work = Dark Reading | accessdate = 2010-11-29 | quote = A patent granted to Microsoft (NSDQ: MSFT) has stirred up worry that world's largest software company wants to claim Unix's &quot;sudo&quot; as its own. [...] In short, suspicions about this patent are overblown. }}&lt;/ref&gt; The [[claim (patent)|claim]]s were narrowly framed to a particular [[GUI]], rather than to the sudo concept.&lt;ref&gt;Eaton, Nick [http://blog.seattlepi.com/microsoft/2009/11/12/did-microsoft-just-sneakily-patent-an-open-source-tool/ &quot;Did Microsoft just sneakily patent an open-source tool?&quot;], seattlepi.com, November 12, 2009, accessed April 24, 2011.&lt;/ref&gt;
+
+== Design ==
+
+Unlike the &lt;code&gt;su&lt;/code&gt; command, users typically supply their own [[password]] to sudo. After authentication, and if the &lt;code&gt;/etc/sudoers&lt;/code&gt; configuration file permits the user access, then the system will invoke the requested command. By default the user's password can be retained through a grace period (15 minutes per [[pseudo terminal]]), allowing the user to execute several successive commands as the requested user without having to provide a password again.
+
+&lt;code&gt;sudo&lt;/code&gt; is able to log each command run. Where a user attempts to invoke sudo without being listed in the sudoers file an error is presented to the user indicating that the attempt has been recorded in the [[system log]].{{cn|date=November 2011}}
+
+== Configuration ==
+
+The &lt;code&gt;/etc/sudoers&lt;/code&gt; file allows listed users access to [[Execution (computers)|execute]] to a [[subset]] of commands while having the privileges of the [[root user]].
+
+&lt;code&gt;sudo&lt;/code&gt; may be configured to require the root password, or no password at all.&lt;ref&gt;{{cite web |url=http://www.gratisoft.us/sudo/man/sudo.html |title=Manpage for sudo |accessdate=2007-11-04}}&lt;/ref&gt;
+
+== Impact ==
+
+In some cases sudo has completely supplanted the superuser login for administrative tasks, most notably in [[Linux distribution]]s, such as [[Fedora (operating system)|Fedora]] and [[Ubuntu (operating system)|Ubuntu]], as well as Apple's [[Mac OS X]].&lt;ref&gt;{{cite web|url=https://help.ubuntu.com/community/RootSudo |title=RootSudo | work = Community Ubuntu Documentation  |publisher=Help.ubuntu.com |date=2011-11-08 |accessdate=2011-11-17}}&lt;/ref&gt;&lt;ref&gt;{{cite web|url=http://www.macdevcenter.com/pub/a/mac/2002/10/22/macforunix.html |title=Top Ten Mac OS X Tips for Unix Geeks |publisher=MacDevCenter.com |date= |accessdate=2011-11-17}}&lt;/ref&gt;
+
+== Tools and similar programs ==
+
+&lt;code&gt;visudo&lt;/code&gt; is a command-line utility that allows editing of the &lt;code&gt;/etc/sudoers&lt;/code&gt; file in a safe fashion. It opens &lt;code&gt;/etc/sudoers&lt;/code&gt; using the &lt;code&gt;[[vi]]&lt;/code&gt; editor's interface, prevents multiple simultaneous edits with [[lock (computer science)|lock]]s, performs [[sanity testing|sanity checks]] and checks for parse errors.&lt;ref&gt;{{cite web|author=Todd C. Miller |url=http://www.gratisoft.us/sudo/man/visudo.html |title=Visudo Manual |publisher=Gratisoft.us |date=2011-06-17 |accessdate=2011-11-17}}&lt;/ref&gt;
+
+There exist several graphical frontends for use in a [[graphical user interface|GUI]] environment, notably &lt;code&gt;kdesudo&lt;/code&gt;, and &lt;code&gt;gksudo&lt;/code&gt;; [[Mac OS X]] also has Authorization Services.&lt;ref&gt;{{cite web|url=http://developer.apple.com/mac/library/documentation/Security/Conceptual/authorization_concepts/01introduction/introduction.html |title=Introduction to Authorization Services Programming Guide |publisher=Developer.apple.com |date= |accessdate=2011-11-17}}&lt;/ref&gt;
+
+The &lt;code&gt;[[runas]]&lt;/code&gt; command provides similar functionality on [[Microsoft Windows]].
+
+== See also ==
+{{Portal|Free software}}
+
+* [[chroot]]
+* [[Comparison of privilege authorization features]]
+
+== References ==
+
+{{Reflist}}
+
+== External links ==
+
+* {{official|http://www.sudo.ws/}}
+
+{{security-software-stub}}
+
+{{Unix commands}}
+
+[[Category:Computer security software]]
+[[Category:System administration]]
+[[Category:Unix text editors]]
+[[Category:Unix user management and support-related utilities]]
+
+[[ar:Ø³ÙØ¯Ù]]
+[[bar:Sudo]]
+[[ca:Sudo]]
+[[cs:Sudo]]
+[[da:Sudo]]
+[[de:Sudo]]
+[[es:Sudo]]
+[[fa:Sudo]]
+[[fr:Sudo]]
+[[id:Sudo]]
+[[it:Sudo]]
+[[ja:Sudo]]
+[[ko:Sudo]]
+[[nl:Sudo]]
+[[pl:Sudo]]
+[[pt:Sudo]]
+[[pt:Visudo]]
+[[ro:Sudo]]
+[[ru:Sudo]]
+[[simple:Sudo]]
+[[sl:Sudo]]
+[[sv:Sudo]]
+[[uk:Sudo]]
+[[zh:Sudo]]</rev></revisions></page></pages></query></api>

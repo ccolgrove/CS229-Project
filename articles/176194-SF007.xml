@@ -1,0 +1,392 @@
+<?xml version="1.0"?><api><query><pages><page pageid="176194" ns="0" title="Make (software)"><revisions><rev xml:space="preserve">{{Infobox software
+| name                   = make
+| author                 = [[Stuart Feldman]]
+| developer              =
+| released               = 1977
+| programming language   =
+| operating system       =
+| platform               =
+| language               =
+| genre                  = [[build automation]] tool
+}}
+In [[software development]], '''Make''' is a [[utility software|utility]] that [[Build Automation|automatically builds]] executable programs and libraries from [[source code]] by reading files called '''makefiles''' which specify how to derive the target program. Make can decide where to start through [[topological sorting]]. Though [[integrated development environment]]s and language-specific compiler features can also be used to manage the build process in modern systems, Make remains widely used, especially in [[Unix]].
+
+==Origin==
+There are now a number of dependency-tracking build utilities, but Make is one of the most widespread, primarily due to its inclusion in [[Unix]], starting with the [[PWB/UNIX]] 1.0, which featured a variety of tools targeting software development tasks. It was originally created by [[Stuart Feldman]] in 1977 at [[Bell Labs]]. In 2003 Dr. Feldman received the [[Association for Computing Machinery|ACM]] Software System Award for the authoring of this widespread tool.&lt;ref&gt;{{Cite book|pages=94|title=Practical Development Environments|author=Matthew Doar|isbn=978-0596007966|year=2005|publisher=[[O'Reilly Media]]}}&lt;/ref&gt;
+
+Before Make's introduction, the Unix build system most commonly consisted of [[operating system]] dependent &quot;make&quot; and &quot;install&quot; shell scripts accompanying their program's source.{{Citation needed|date=September 2009}} Being able to combine the commands for the different targets into a single file and being able to abstract out dependency tracking and archive handling was an important step in the direction of modern build environments.
+
+==Modern versions==
+Make has gone through a number of [[Rewrite (programming)|rewrites]], including a number of from-scratch variants which used the same file format and basic algorithmic principles and also provided a number of their own non-standard enhancements. Some of them are:
+* [[BSD]] Make, which is derived from [[Adam de Boor]]'s work on a version of Make capable of building targets in [[Parallel computing|parallel]], and survives with varying degrees of modification in [[FreeBSD]], [[NetBSD]] and [[OpenBSD]]. Most notably, it has conditionals and iterative loops which are applied at the parsing stage and may be used to conditionally and programmatically construct the makefile, including generation of targets at runtime.
+* [[GNU]] Make is frequently used in conjunction with the [[GNU build system]]. Its departures from traditional Make are most noticeable in pattern-matching in [[dependency graph]]s and build targets, as well as a number of functions which may be invoked allowing functionality like listing the files in the current directory. It is also included in Appleâs [[Xcode]] development suite for the [[Mac OS]].
+* [[Microsoft]] ''nmake'', commonly available on Windows. It is fairly basic in that it offers only a subset of the features of the two versions of Make mentioned above. Microsoft's ''nmake'' is not to be confused with ''nmake'' from [[AT&amp;T]] and [[Bell Labs]] for Unix.
+
+[[POSIX]] includes standardization of the basic features and operation of the Make utility, and is implemented with varying degrees of completeness in Unix-based versions of Make. In general, simple makefiles may be used between various versions of Make with reasonable success. GNU Make and BSD Make can be configured to look first for files named &quot;GNUmakefile&quot; and &quot;BSDmakefile&quot; respectively,&lt;ref&gt;{{ cite web|url=http://www.gnu.org/software/make/manual/make.html#Makefile-Names |title=GNU `make' |publisher=Free Software Foundation }}&lt;/ref&gt;&lt;ref&gt;{{cite web |url=http://www.openbsd.org/cgi-bin/man.cgi?query=make#FILES |title=Manual Pages: make |publisher= OpenBSD 4.8 }}&lt;/ref&gt; which allows one to put makefiles which use implementation-defined behavior in separate locations.
+
+==Behaviour==
+Make is typically used to [[Software build|build]] executable programs and libraries from source code. Generally though, any process that involves transforming a source file to a target result (by executing arbitrary commands) is applicable to Make. For example, Make could be used to detect a change made to an image file (the source) and the transformation actions might be to convert the file to some specific format, copy the result into a content management system, and then send e-mail to a predefined set of users that the above actions were performed.
+
+Make is invoked with a list of target file names to build as [[command-line argument]]s:
+
+&lt;syntaxhighlight lang=&quot;bash&quot;&gt;
+    make TARGET [TARGET ...]
+&lt;/syntaxhighlight&gt;
+
+Without arguments, Make builds the first target that appears in its makefile, which is traditionally a symbolic &quot;phony&quot; target named ''all''.
+
+Make decides whether a target needs to be regenerated by comparing file modification times. This solves the problem of avoiding the building of files which are already up to date, but it fails when a file changes but its modification time stays in the past. Such changes could be caused by restoring an older version of a source file, or when a network filesystem is a source of files and its clock or timezone is not synchronized with the machine running Make. The user must handle this situation by forcing a complete build. Conversely, if a source file's modification time is in the future, it triggers unnecessary rebuilding, which may inconvenience users.
+
+==Makefiles==
+
+Make searches the file to run from current directory. E.g. the GNU Make searches files in order &lt;tt&gt;GNUmakefile, makefile, Makefile&lt;/tt&gt;.
+
+The makefile language is similar to [[declarative programming]].&lt;ref&gt;[http://phoenix.labri.fr/wiki/doku.php?id=an_overview_on_dsls an overview on dsls], 2007/02/27, phoenix wiki&lt;/ref&gt;&lt;ref&gt;http://www.cs.ualberta.ca/~paullu/C201/Slides/c201.21-31.pdf {{Dead link|date=October 2010}}&lt;/ref&gt;&lt;ref&gt;[http://lists.w3.org/Archives/Public/www-ws-arch/2002Aug/0105.html Re: Choreography and REST],  from Christopher B Ferris on 2002-08-09&lt;/ref&gt;&lt;ref&gt;[http://www.robots.ox.ac.uk/~tgtjr/makefiles.html Target Junior Makefiles], Andrew W. Fitzgibbon and William A. Hoffman&lt;/ref&gt; This class of language, in which necessary end conditions are described but the order in which actions are to be taken is not important, is sometimes confusing to programmers used to [[imperative programming]].
+
+One problem in [[build automation]] is the tailoring of a build process to a given [[Platform (computing)|platform]]. For instance, the compiler used on one platform might not accept the same options as the one used on another. This is not well handled by Make. This problem is typically handled by generating platform specific build instructions, which in turn are processed by Make. Common tools for this process are [[Autoconf]] and [[CMake]].
+
+===Rules===
+
+A makefile consists of ''rules''. Each rule begins with a textual ''dependency line'' which defines a target followed by a colon (:) and optionally an enumeration of components (files or other targets) on which the target depends. The dependency line is arranged so that the target (left hand of the colon) depends on components (right hand of the colon).
+
+An example is a specific [[object file]] target which depends on a C source file and [[header file]]s. Because Make itself does not understand, recognize or distinguish different kinds of files, this opens up a possibility for human error. A forgotten or an extra dependency may not be immediately obvious and may result in subtle bugs in the generated software. It is possible to write makefiles which generate these dependencies by calling third-party tools, and some makefile generators, such as the [[Automake]] toolchain provided by the [[GNU Project]], can do so automatically.
+
+After each dependency line, a series of command lines may follow which define how to transform the components (usually source files) into the target (usually the &quot;output&quot;). If any of the
+components have been modified, the command lines are run.
+
+Each command line must begin with a [[tab character]] to be recognized as a command. The tab is a [[Whitespace (computer science)|whitespace]] character, but the [[space character]] does not have the same special meaning. This is problematic, since there may be no visual difference between a tab and a series of space characters. This aspect of the syntax of makefiles is often subject to criticism. When using makefile generators or text editors with explicit makefile support, this issue is likely less important.
+
+Each command is executed by a separate [[Unix shell|shell]] or [[command-line interpreter]] instance. Since operating systems use different command-line interpreters this can lead to unportable makefiles. For instance, GNU Make by default executes commands with [[/bin/sh]], where [[Unix]] commands like [[cp (Unix)|cp]] are normally used. In contrast to that Microsoft's ''nmake'' executes commands with cmd.exe, where [[Batch file|batch]] commands like [[copy (command)|copy]] will be used.
+
+&lt;syntaxhighlight lang=&quot;make&quot;&gt;
+    target [target ...]: [component ...]
+    [&lt;TAB&gt;command 1]
+	   .
+	   .
+	   .
+    [&lt;TAB&gt;command n]
+&lt;/syntaxhighlight&gt;
+
+Usually each rule has a single unique target, rather than multiple targets.
+
+A rule may have no command lines defined. The dependency line can consist solely of components that refer targets like:
+
+&lt;syntaxhighlight lang=&quot;make&quot;&gt;
+    realclean: clean distclean
+&lt;/syntaxhighlight&gt;
+
+The command lines of a rule are usually arranged so that they generate the target. An example: if &quot;file.html&quot; is newer, it is converted to text. The contents of the makefile:
+
+&lt;syntaxhighlight lang=&quot;make&quot;&gt;
+    file.txt: file.html
+	    lynx -dump file.html &gt; file.txt
+&lt;/syntaxhighlight&gt;
+
+The above rule would be triggered when Make updates &quot;file.txt&quot;. In the following invocation, Make would typically use this rule to update the &quot;file.txt&quot; target if necessary.
+
+&lt;syntaxhighlight lang=&quot;bash&quot;&gt;
+    make file.txt
+&lt;/syntaxhighlight&gt;
+
+Command lines can have one or more of the following three prefixes:
+* a [[hyphenâminus]] (-), specifying that errors are ignored
+* an [[at sign]] (@), specifying that the command is not printed to standard output before it is executed
+* a [[plus sign]] (+), the command is executed even if Make is invoked in a &quot;do not execute&quot; mode
+
+Ignoring errors and silencing echo can alternatively be obtained via the special targets &quot;.IGNORE&quot; and &quot;.SILENT&quot;.&lt;ref&gt;[http://pubs.opengroup.org/onlinepubs/009695399/utilities/make.html make], The Open Group Base Specifications Issue 6&lt;/ref&gt;
+
+===Macros===
+
+A makefile can contain definitions of macros. Macros are usually referred to as ''variables'' when they hold simple string definitions, like &quot;CC=gcc&quot;. Macros in makefiles may be overridden in the [[command-line argument]]s passed to the Make utility. [[Environment variables]] are also available as macros.
+
+Macros allow users to specify the programs invoked and other custom behavior during the build process. For example, the macro &quot;CC&quot; is frequently used in makefiles to refer to the location of a [[C (programming language)|C]] compiler, and the user may wish to specify a particular compiler to use.
+
+New macros (or simple &quot;variables&quot;) are traditionally defined using capital letters:
+
+&lt;syntaxhighlight lang=&quot;make&quot;&gt;
+    MACRO = definition
+&lt;/syntaxhighlight&gt;
+
+A macro is used by expanding it. Traditionally this is done by enclosing its name inside &lt;code&gt;$()&lt;/code&gt;. Very rarely, though possible, inside &lt;code&gt;${}&lt;/code&gt;.
+
+&lt;syntaxhighlight lang=&quot;make&quot;&gt;
+    NEW_MACRO = $(MACRO)-$(MACRO2)
+&lt;/syntaxhighlight&gt;
+
+Macros can be composed of shell commands by using the [[command substitution]] operator, denoted by [[backticks]] (&lt;code&gt;`&lt;/code&gt;).
+
+&lt;syntaxhighlight lang=&quot;make&quot;&gt;
+    YYYYMMDD  = ` date `
+&lt;/syntaxhighlight&gt;
+
+The content of the definition is stored &quot;as is&quot;. [[Lazy evaluation]] is used, meaning that macros are normally expanded only when their expansions are actually required, such as when used in the command lines of a rule. An extended example:
+
+&lt;syntaxhighlight lang=&quot;make&quot;&gt;
+    PACKAGE   = package
+    VERSION   = ` date +&quot;%Y.%m%d&quot; `
+    ARCHIVE   = $(PACKAGE)-$(VERSION)
+
+    dist:
+            #  Notice that only now macros are expanded for shell to interpret:
+            #      tar -cf package-`date +&quot;%Y%m%d&quot;`.tar
+
+            tar -zcf $(ARCHIVE).tar .
+&lt;/syntaxhighlight&gt;
+
+The generic syntax for overriding macros on the command line is:
+
+&lt;syntaxhighlight lang=&quot;bash&quot;&gt;
+    make MACRO=&quot;value&quot; [MACRO=&quot;value&quot; ...] TARGET [TARGET ...]
+&lt;/syntaxhighlight&gt;
+
+Makefiles can access predefined ''internal macros''.
+
+&lt;syntaxhighlight lang=&quot;make&quot;&gt;
+    target: component1 component2
+            echo $? contains those components, that need attention, THAT ARE YOUNGER than current TARGET
+            echo $@ evaluates to current TARGET name to the left
+&lt;/syntaxhighlight&gt;
+
+===Suffix rules===
+
+Suffix rules are in the form &lt;code&gt;FROM.TO&lt;/code&gt; and they can be used to launch actions based on file extension. In the case of suffix rules, internal macro &lt;code&gt;$&amp;lt;&lt;/code&gt; refers the component and &lt;code&gt;$@&lt;/code&gt; refers to the TARGET. An example to convert any HTML file into text; notice the shell redirection token &lt;code&gt;&amp;gt;&lt;/code&gt; in the middle:
+
+&lt;syntaxhighlight lang=&quot;make&quot;&gt;
+    .SUFFIXES: .txt .html
+
+    # From .html to .txt
+    .html.txt:
+            lynx -dump $&lt;   &gt;   $@
+&lt;/syntaxhighlight&gt;
+
+When called from command line, the above example expands.
+
+&lt;syntaxhighlight lang=&quot;make&quot;&gt;
+    $ make -n file.txt
+      lynx -dump file.html &gt; file.txt
+&lt;/syntaxhighlight&gt;
+
+===Other elements===
+
+Single-line [[comment (programming)|comment]]s are started with the [[hash symbol]] (#).
+
+Some directives in makefiles can [[include directive|include]] other makefiles.
+
+[[Line continuation]] is indicated with a backslash &lt;code&gt;\&lt;/code&gt; character at the end of a line.
+
+&lt;syntaxhighlight lang=&quot;make&quot;&gt;
+    target: component \
+            component
+    &lt;TAB&gt;command ;          \
+    &lt;TAB&gt;command |          \
+    &lt;TAB&gt;piped-command
+&lt;/syntaxhighlight&gt;
+
+==Example makefiles==
+Makefiles are traditionally used for compiling code (*.c, *.cc, *.C, etc.), but they can also be used for providing commands to automate common tasks. One such makefile is called from the command line:
+
+&lt;syntaxhighlight lang=&quot;bash&quot;&gt;
+    make                        # Without argument runs first TARGET
+    make help                   # Show available TARGETS
+    make dist                   # Make a release archive from current dir
+&lt;/syntaxhighlight&gt;
+
+The makefile:
+
+&lt;syntaxhighlight lang=&quot;make&quot;&gt;
+    PACKAGE	 = package
+    VERSION	 = ` date &quot;+%Y.%m%d%&quot; `
+    RELEASE_DIR  = ..
+    RELEASE_FILE = $(PACKAGE)-$(VERSION)
+
+    # Notice that the variable LOGNAME comes from the environment in
+    # POSIX shells.
+    #
+    # target: all - Default target. Does nothing.
+    all:
+	    echo &quot;Hello $(LOGNAME), nothing to do by default&quot;
+            # very rarely: echo &quot;Hello ${LOGNAME}, nothing to do by default&quot;
+	    echo &quot;Try 'make help'&quot;
+
+    # target: help - Display callable targets.
+    help:
+	    egrep &quot;^# target:&quot; [Mm]akefile
+
+    # target: list - List source files
+    list:
+	    # Won't work. Each command is in separate shell
+	    cd src
+	    ls
+
+	    # Correct, continuation of the same shell
+	    cd src; \
+	    ls
+
+    # target: dist - Make a release.
+    dist:
+	    tar -cf  $(RELEASE_DIR)/$(RELEASE_FILE) &amp;&amp; \
+	    gzip -9  $(RELEASE_DIR)/$(RELEASE_FILE).tar
+&lt;/syntaxhighlight&gt;
+
+Below is a very simple makefile that would compile a source called &quot;helloworld.c&quot; using [[GNU C Compiler|gcc]], a C compiler, and specifies a &quot;clean&quot; target to remove the generated files, for example to start over. The .PHONY tag is a technicality that tells Make that a particular target name does not produce an actual file. The &lt;code&gt;$@&lt;/code&gt; and &lt;code&gt;$&amp;lt;&lt;/code&gt; are two of the so-called internal macros (also known as automatic variables) and stand for the target name and &quot;implicit&quot; source, respectively. There are a number of other internal macros.&lt;ref&gt;[http://www.opengroup.org/onlinepubs/009695399/utilities/make.html#tag_04_84_13_07 A listing of some Make internal macros at opengroup.org]&lt;/ref&gt;&lt;ref&gt;[http://www.gnu.org/software/make/manual/html_node/Automatic-Variables.html#Automatic-Variables Automatic Variables] GNU `make'&lt;/ref&gt;
+
+&lt;syntaxhighlight lang=&quot;make&quot;&gt;
+    CC     = gcc
+    CFLAGS = -g
+
+    all: helloworld
+
+    helloworld: helloworld.o
+	    # Commands start with TAB not spaces
+	    $(CC) $(LDFLAGS) -o $@ $^
+
+    helloworld.o: helloworld.c
+	    $(CC) $(CFLAGS) -c -o $@ $&lt;
+
+    clean:
+	    rm -f helloworld helloworld.o
+
+    # This is GNU makefile extension to notify that roughly means: 'clean' does
+    # not depend on any files in order to call it.
+    .PHONY: clean
+&lt;/syntaxhighlight&gt;
+
+Many systems&lt;!--
+at least open group base specification compliant systems, see above ref
+--&gt; come with a version of Make configured to handle common tasks like compiling based on file suffixes, which allows one to leave out the actual instructions from the target and source specification. Assuming such a system, the above example could be shortened as follows:
+
+&lt;syntaxhighlight lang=&quot;make&quot;&gt;
+    all: helloworld
+
+    helloworld: helloworld.o
+
+    helloworld.o: helloworld.c
+
+    clean:
+	    rm -f helloworld helloworld.o
+
+    .PHONY: clean
+&lt;/syntaxhighlight&gt;
+
+Make allows for custom suffix rules to be defined&lt;!--
+it appears that the open group base specification says .SUFFIXES and simple suffix
+rules must work, so there, gnu make.
+--&gt;, allowing for powerful abstraction of rules by separating the file build relationships from the construction rules.
+
+An example makefile for GNU Make:
+
+&lt;syntaxhighlight lang=&quot;make&quot;&gt;
+    # Just a snippet to stop executing under other make(1) commands
+    # that won't understand these lines
+
+    ifneq (,)
+    This makefile requires GNU Make.
+    endif
+
+    include makefile/environment.mk
+    include makefile/common.mk
+
+    # Define macros. In this case &quot;simple variables that don't expand&quot;
+    # Can be overridden on command line
+
+    CC     = gcc
+    CFLAGS = -Wall -pedantic -g
+
+    all:
+	echo &quot;Nothing to do, yet&quot;
+&lt;/syntaxhighlight&gt;
+
+== See also ==
+{{Portal|Free software}}
+
+* [[Apache Ant]]
+* [[CMake]]
+* [[Configure script]]
+* [[Fastmake]]
+* [[Flowtracer]]
+* [[GNU Automake]]
+* [[imake]]
+* [[Perforce Jam|Jam]]
+* [[mk (software)|mk]]
+* [[Premake]]
+* [[qmake]]
+* [[rake (software)|Rake]]
+* [[SCons]]
+* [[Waf]]
+* [[Watcom C/C++ compiler]]
+* [[Xconfig]]
+
+==References==
+{{Reflist|2}}
+
+==External links==
+===Reference, manuals, books===
+* [http://www.opengroup.org/onlinepubs/009695399/utilities/make.html The Open Group Base Specifications Issue 6 IEEE Std 1003.1, 2004 Edition manual]
+* [http://www.gnu.org/software/make/manual The GNU make manual]
+* [http://www.freebsd.org/cgi/man.cgi?query=make&amp;sektion=1 FreeBSD make manual page]
+* [http://msdn.microsoft.com/en-us/library/dd9y37ha.aspx Microsoft NMAKE reference]
+* [http://developer.apple.com/mac/library/documentation/DeveloperTools/gnumake/make_toc.html#SEC_Contents MAC OS X library reference for GNUMake website]
+* [http://gmsl.sourceforge.net/ GNU make Standard Library].
+* [http://oreilly.com/catalog/make3/book/ ''Managing Projects with GNU make -- 3rd edition''].   
+* [http://notendur.hi.is/jonasson/software/make-book/ ''Managing Projects with GNU make -- 3rd edition -- single-file version''].
+
+===Tutorials===
+* [http://sites.google.com/site/michaelsafyan/software-engineering/how-to-write-a-makefile Makefile Tutorial: How To Write A Makefile]
+* [http://www.opussoftware.com/tutorial/TutMakefile.htm OPUS Makefile Tutorial]
+* [http://www.thomasstover.com/make.html Makefile Tutorial for C, gcc, &amp; gmake]
+
+===Debugging GNU Make===
+* [http://josefsson.org/autobuild/ Autobuild]
+* [http://www.swag.uwaterloo.ca/btv/ BTV Toolkit]
+* [http://buildaudit.sourceforge.net/ Build audit]
+* [http://bre.klaki.net/programs/colormake/ colormake]
+* [http://gmd.sourceforge.net/ GNU Make Debugger]
+* [http://gmsl.sourceforge.net/ GNU make Standard Library]
+* [http://sourceforge.net/projects/munit/ GNU make test framework]
+* [http://sailhome.cs.queensu.ca/~bram/makao/index.html MAKAO]
+* [http://makepp.sourceforge.net/1.50/makeppgraph.html makeppgraph]
+* [http://directory.fsf.org/project/mtool/ Maketool]
+* [http://phil.freehackers.org/pretty-make/index.html Pretty Make]
+* [http://bashdb.sourceforge.net/remake/ Remake].
+
+===Other===
+* [http://www.cmcrossroads.com/cm-articles/columns/ask-mr-make &quot;Ask Mr. Make&quot; series of article about GNU Make]
+* [http://www.wanderinghorse.net/computing/make/ ''Managing Projects with GNU make -- 3.xth edition'']
+* [http://freshmeat.net/articles/view/1702/ ''What is wrong with make?'']
+* [http://www.conifersystems.com/whitepapers/gnu-make/ ''Whatâs Wrong With GNU make?'']
+* [http://miller.emu.id.au/pmiller/books/rmch/ ''Recursive Make Considered Harmful'']
+* [http://make.paulandlesley.org/autodep.html Advanced Auto-Dependency Generation].
+* [http://www.c2.com/cgi/wiki?UsingNmake ''Using NMake'']
+* [http://seed7.sourceforge.net/scrshots/make7.htm ''Make7 - A portable open source make utility'']
+
+{{GNU}}
+
+{{DEFAULTSORT:Make}}
+[[Category:Compiling tools]]
+[[Category:Unix programming tools]]
+[[Category:Unix SUS2008 utilities]]
+[[Category:Build automation]]
+
+[[ar:ØµÙØ¹ (Ø¨Ø±ÙØ¬Ø©)]]
+[[ca:Make]]
+[[cs:Make]]
+[[da:Make]]
+[[de:Make]]
+[[es:Make]]
+[[eo:Make]]
+[[fa:ÙÛÚ©âÙØ§ÛÙ]]
+[[fr:Make]]
+[[ko:Make (ìíí¸ì¨ì´)]]
+[[is:Make]]
+[[it:Make]]
+[[ht:Make]]
+[[nl:Make (computerprogramma)]]
+[[ja:Make]]
+[[pl:Make]]
+[[pt:Make]]
+[[ru:Make]]
+[[fi:Make]]
+[[sv:Make (datorprogram)]]
+[[tr:Make]]
+[[uk:Make]]
+[[zh:Make]]</rev></revisions></page></pages></query></api>

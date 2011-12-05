@@ -1,0 +1,42 @@
+<?xml version="1.0"?><api><query><pages><page pageid="4167705" ns="0" title="Windows Recovery Environment"><revisions><rev xml:space="preserve">[[Image:Windows Vista System Recovery.png|thumb|240px|Windows Vista's System Recovery menu]]
+
+'''Windows Recovery Environment (WinRE)''' is a set of tools included in the [[Windows Vista]], [[Windows Server 2008]], [[Windows 7]], and [[Windows Server 2008 R2]] operating systems to help diagnose and recover from serious errors which may be preventing Windows from booting successfully. WinRE may be installed and/or booted from many media including hard disks (Hidden NTFS partition type 0x27), optical media (such as an operating system installation disc) and [[Preboot Execution Environment|PXE]] (e.g. [[Windows Deployment Services]]).  WinRE is based on [[WinPE]] 2.0.&lt;ref&gt;{{citeweb|title=Windows RE Notes : Introducing Windows Recovery Environment (Windows RE)|url=http://blogs.msdn.com/winre/archive/2006/09/18/760295.aspx|publisher=msdn.com|accessdate=2008-02-13}}&lt;/ref&gt; 
+
+== Features ==
+The following options are available when booting from the operating system DVD:
+
+*Startup Repair - Automatically finds and fixes boot errors in the [[Windows Vista Startup Process]] (including corrupted [[Boot Configuration Data#Boot Configuration Data|Boot Configuration Data]] files).
+*System Restore - Utilizes the [[Volume Shadow Copy]] service to restore the computer to a previous state or restore point. It uses the System Restore feature that was first introduced in Windows Me.
+*Complete PC Restore - Restores the Complete PC Backup [[disk image]] if a full system image backup was previously made.
+*Windows Memory Diagnostic Tool - Analyses the computer memory ([[Random Access Memory|RAM]]) for hardware memory problems.
+*Command Prompt - Gives full [[command line interface|command-line]] access to the file system, volumes and files, unlike the Recovery Console, which was limited in operation. The command prompt can be used to run [[System File Checker]] (sfc /scannow) against an offline Windows installation and repair missing or corrupt files. Tools like [[Robocopy]], [[Diskpart]] and DISM (Deployment Image Servicing and Management) can be used to perform various system tasks like recovering or backing up files, managing partitions, and fix servicing-related issues &lt;ref&gt; [http://blogs.technet.com/b/joscon/archive/2009/07/14/the-coolest-new-dism-command-to-me-at-least.aspx The coolest new DISM command (to me at least)] &lt;/ref&gt; respectively.
+*When installed on the same [[Disk partitioning|partition]] as another Windows operating system, such as Windows Vista, Windows Recovery Environment can be accessed by pressing F8 while the computer is booting. 
+
+In addition, volumes encrypted with [[Bitlocker Drive Encryption|Bitlocker]] can be mounted if a recovery key is available.
+
+The number of tools available has increased significantly compared to what is available with previous versions of Windows. [[Windows XP]] and [[Windows 2000]] are limited to the [[Recovery Console]]. 
+
+The Windows Recovery Environment can also be installed to a hard drive partition by OEMs,&lt;ref&gt;{{cite web |url=http://blogs.msdn.com/winre/archive/2007/01/12/how-to-install-winre-on-the-hard-disk.aspx |publisher=msdn.com|accessdate=2008-02-14 |title=How to install Windows RE on the hard disk}}&lt;/ref&gt; and customized with additional tools such as a separate [[recovery disc|system recovery]] tool for restoring the computer back to its original state.&lt;ref&gt;{{cite web |url=http://technet2.microsoft.com/WindowsVista/en/library/f19ec108-1922-425a-8cd8-ee29029f4b901033.mspx?mfr=true |title=Customizing the Windows RE Experience |publisher=microsoft.com|accessdate=2008-02-13}}&lt;/ref&gt; As of [[Windows Vista SP1]], users can create their own bootable CD containing the recovery environment.
+
+== See also ==
+* [[Windows Preinstallation Environment]] (WinPE)
+* [[Features new to Windows Vista]]
+* [[Windows To Go]]
+
+== References ==
+{{reflist|2}}
+
+== External links ==
+* [http://blogs.msdn.com/winre/ WinRE team blog]
+
+{{Windows Components}}
+
+[[Category:Microsoft Windows]]
+[[Category:Windows administration]]
+[[Category:Windows components]]
+[[Category:Windows Vista]]
+[[Category:Windows Server 2008]]
+
+[[cs:Windows Recovery Environment]]
+[[it:Windows Recovery Environment]]
+[[ja:Windows Recovery Environment]]</rev></revisions></page></pages></query></api>

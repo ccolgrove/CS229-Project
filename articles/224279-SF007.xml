@@ -1,0 +1,124 @@
+<?xml version="1.0"?><api><query><pages><page pageid="224279" ns="0" title="Pango"><revisions><rev xml:space="preserve">{{Other uses}}
+{{Infobox software
+| name = Pango
+| developer = [[Behdad Esfahbod]]
+&lt;!-- | logo = --&gt;
+|screenshot = &lt;span style=&quot;font-size:3em; line-height: 130%;&quot;&gt;Î Î±Î½èª&lt;/span&gt;
+|caption = Pango name written as intended
+| latest_release_version = 1.29.5
+| latest_release_date    = {{release date and age|2011|11|22}}
+| operating_system = [[Unix-like]], [[Microsoft Windows]]
+| genre = [[Rendering (computer graphics)|Text rendering]]
+| license = [[LGPL]]
+| website = [http://www.pango.org/ www.pango.org]
+}}
+
+'''Pango''' (Î Î±Î½èª) is an [[LGPL]] licensed [[open source software|open source]] [[computing]] [[library (computing)|library]] used by software developers for laying out and rendering text in high quality, emphasising support for multilingual text.&lt;ref&gt;{{cite web
+|url         = http://www.pango.org/
+|title       = Pango website
+|accessdate  = 7 July, 2011
+}}&lt;/ref&gt;  Different font [[backend]]s can be used, allowing cross-platform support, so that Pango-rendered text will appear similar under different operating systems, such as [[Linux]], Apple's [[Mac OS]] and [[Microsoft Windows]].
+
+== Utilization ==
+
+Pango has been integrated into most Linux distributions. The [[GTK+]] UI toolkit uses Pango for all of its text rendering. The [[Linux]] versions of the [[Mozilla Firefox]] web browser and [[Mozilla Thunderbird]] mail client use Pango for text rendering.{{clarify|post-text=(see [[Talk:Pango#Linux and Firefox integration|talk page]])|date=July 2011}}
+
+== Name ==
+The name pango comes from [[Greek language|Greek]] ''pan'' (ÏÎ±Î½, &quot;all&quot;) and [[Japanese language|Japanese]] ''go'' (èª, &quot;[[language]]&quot;).&lt;ref&gt;{{cite web
+|url         = http://www.ibm.com/developerworks/library/l-u-pango1/
+|title       = The Pango connection: Part 1
+|archiveurl  = http://web.archive.org/web/20090627223318/http://www.ibm.com/developerworks/library/l-u-pango1/
+|archivedate = 27 June, 2009
+|accessdate  = 7 July, 2011
+|deadurl     = no
+}}&lt;/ref&gt;
+
+== Support for OpenType features ==
+
+[[Image:Pango locl demo.png|thumb|250px|Default rendering above, localized Romanian rendering below.]]
+
+Pango 1.17 and newer support the  '''locl''' script tag that allows alternate glyphs to be used for the same Unicode code point. Assuming you have [[Verdana]] version 5.01 installed, which supports the locl feature for the latn/ROM (Romanian) script, a quick demonstration (on Linux) is:
+&lt;source lang=&quot;bash&quot;&gt;
+for lang in en ro; do pango-view \
+ --font=&quot;Verdana 64&quot; \
+ --text &quot;ÅÅ£ vs. ÈÈ in $lang&quot; \
+ --language=$lang; done
+&lt;/source&gt;
+
+For an explanation of the substitutions rules for Romanian, see this [[Romanian_alphabet#Comma-below_.28.C8.99_and_.C8.9B.29_versus_cedilla_.28.C5.9F_and_.C5.A3.29|discussion]].
+
+Setting the locale via the POSIX environment variable, e.g. LANG=ro_RO.UTF-8 will also cause Pango to use '''locl''' font feature. Finally, you can change the language on the fly in the same text using [http://library.gnome.org/devel/pango/unstable/PangoMarkupFormat.html Pango markup], e.g.:
+
+&lt;source lang=&quot;bash&quot;&gt;
+pango-view \
+ --font=&quot;Verdana 24&quot; \
+ --markup \
+ --text 'In the same text: &lt;span lang=&quot;en&quot;&gt;ÅÅ£&lt;/span&gt;(en) and &lt;span lang=&quot;ro&quot;&gt;ÅÅ£&lt;/span&gt;(ro).'
+&lt;/source&gt;
+
+The official showcase of Pango's script-aware features is [http://www.pango.org/ScriptGallery here].
+
+== Text and graphics ==
+Complete text handling and graphics rendering is provided when integrated with [[Cairo (graphics)|Cairo]].
+
+== HarfBuzz ==
+'''HarfBuzz''' (in [[Persian language|Persian]]: {{lang|fa|Ø­Ø±ÙâØ¨Ø§Ø²}}) is a layout/shaping engine for [[OpenType]] fonts.&lt;ref&gt;{{cite web
+|url         = http://freedesktop.org/wiki/Software/HarfBuzz
+|title       = HarfBuzz Official website
+|accessdate  = 7 July, 2011
+}}&lt;/ref&gt; Its purpose is to standardize text layout in [[FOSS]]; its code originally started as part of the [[FreeType]] project, was then developed separately in [[Qt (toolkit)|Qt]] and Pango, and finally merged back into a common repository.  Both Qt and Pango currently use HarfBuzz; other standalone users include [[Firefox]] and [[Chromium (web browser)|Chromium]], the open source project behind [[Google Chrome]].&lt;ref&gt;{{cite web
+|url         = http://behdad.org/text/
+|title       = State of Text Rendering
+|first       = Behdad 
+|last        = Esfahbod
+|date        = 18 January, 2010
+|deadurl     = no
+|accessdate  = 7 July, 2011
+}}&lt;/ref&gt;
+
+== See also ==
+{{Portal|Free software}}
+
+*[[Uniscribe]] (Windows multilingual text rendering engine)
+*[[WorldScript]] (Old Macintosh multilingual text rendering engine)
+*[[Core Text]] (modern multilingual text rendering engine introduced in [[Mac OS X 10.5]])
+*[[Graphite (SIL)|Graphite]] ([[multiplatform]] open source smart-font renderer from [[SIL International|SIL]])
+*[[Cairo (graphics)|Cairo]] a vector-based graphics library with multiple backends
+*[[FreeType]] a software library that implements a font rasterization engine
+*[[FontForge]] a typeface (font) editor program
+
+== Notes ==
+{{Reflist}}
+
+==References==
+* [http://fishsoup.net/bib/PangoIuc25-paper.pdf Pango, an open-source Unicode text layout engine. by Owen Taylor in Twenty fifth Internationalization and unicode conference, April 2004]
+* [http://www-128.ibm.com/developerworks/linux/library/l-u-pango1/ The Pango Connection : Part 1, Tony Graham, 2001]
+* [http://www-128.ibm.com/developerworks/linux/library/l-u-pango2/ The Pango Connection : Part 2, Tony Graham, 2001]
+* [http://ols.fedoraproject.org/OLS/Reprints-2001/taylor.pdf  &quot;Pango: internationalized text handling&quot; Owen Taylor  in Ottawa linux symposium 2001]
+* [http://www.crulp.org/Publication/papers/2007/reverse_chaining.pdf  &quot;Implementation of Reverse Chaining Mechanism in Pango for Rendering Nastaliq Script&quot; Wali, A., Rehman, S., In the Proceedings of Second Workshop of Computational Approaches to Arabic Script-based Languages (CAASL-2), Stanford University, US, 2007]
+* [http://www.crulp.org/Publication/theses/2004/contextual_substitution_support.pdf   &quot;Enhancing Contextual Substitution Support in Pango Using Opentype&quot;, Wali, A.  MS Thesis, National University of Computer and Emerging Sciences, Lahore, Pakistan, 2004]
+* [http://lists.freedesktop.org/archives/harfbuzz/2009-August/000359.html Harfbuzz API design discussion thread]
+* [http://developer.gnome.org/pango/stable/ Pango Reference Manual] 
+
+{{Free and open source typography}}
+{{Freedesktop.org}}
+
+[[Category:C libraries]]
+[[Category:Digital typography]]
+[[Category:Free software programmed in C]]
+[[Category:GNOME]]
+[[Category:GTK+]]
+
+[[ar:Ø¨Ø§ÙØºÙ]]
+[[ca:Pango]]
+[[de:Pango]]
+[[es:Pango]]
+[[fr:Pango]]
+[[hu:Pango]]
+[[nl:Pango]]
+[[ja:Pango]]
+[[pl:Pango]]
+[[pt:Pango]]
+[[ru:Pango]]
+[[si:à¶´à·à¶±à·à¶à·]]
+[[zh:Pango]]</rev></revisions></page></pages></query></api>

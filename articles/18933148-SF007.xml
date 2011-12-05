@@ -1,0 +1,52 @@
+<?xml version="1.0"?><api><query><redirects><r from="Sorcerer (Linux distribution)" to="Sorcerer (operating system)" /></redirects><pages><page pageid="28250" ns="0" title="Sorcerer (operating system)"><revisions><rev xml:space="preserve">{{Cleanup|date=November 2009}}
+{{ infobox OS
+| name                   = Sorcerer
+| logo                   = 
+| developer              = Kyle Sallee
+| family                 = [[Unix-like]]
+| source_model           = [[Open source]]
+| released               = {{Start date|df=yes|2007|02|02}}
+| working_state          = Active
+| latest_release_version = ([[Rolling release]])
+| latest_release_date    = Installation CD on September 7, 2011
+| kernel_type            = [[Modular kernel|Modular]] [[Linux kernel]]
+| supported_platforms    = [[x86]], [[x86_64]]
+| license                = Various
+| website                = [http://sorcerer.silverice.org/ sorcerer.silverice.org]
+| screenshot             =
+| caption                =
+}}
+
+'''Sorcerer''' is a source based [[Linux distribution]].
+Sorcerer's source management tool is called sorcery. Sorcery downloads and compiles source code in order to install and update installed software.  Instead of using cryptic hard to remember acronyms, such as rpm and dpkg, Sorcerer's tool terminology is based upon magic words.  For example, a recipe for downloading, compiling, and installing software is called a &quot;spell.&quot;  Software to install is &quot;cast&quot; onto the box.  Installed software can be removed by &quot;dispelling.&quot;  Consequently, the command line tools for casting and dispelling software are called cast and dispel, respectively.
+
+Earliest versions of Sorcerer were named ''Sorcerer GNU/Linux'', with key components licensed under the [[GNU General Public License]] (GPL). However, from around 2002 and forward current versions of Sorcerer release some key components under the ''Sorcerer Public License'' and not the GPL, and the distribution has dropped the term ''GNU/Linux''. Sorcerer has two ancient [[Fork (software)|forks]]: [[Lunar Linux]] and [[Source Mage]] which are not based on nor compatible with the current sorcery code nor compatible with current grimoire.  Their terminology also deviates from Sorcerer terminology.
+
+== Technical Distinctions ==
+A somewhat distinctive feature of Sorcerer is the fact that it is based almost exclusively on [[source code]]. While many other operating systems generally make use of a package that contains pre-compiled (executable) programs, Sorcerer compiles source code on the machine prior to installation.
+
+A new &quot;grimoire&quot;, which is a catalog of software supported for immediate installation, is made available daily.  When new sources are available, the spells in the grimoire are updated.  One's desktop is updated by first installing a current grimoire. If necessary, the installed Sorcery is updated.  Finally, any and all installed software can be updated according to the user's decision.
+
+Sorcery automatically recompiles installed software as necessary to ensure continued compatibility and usability when installed libraries are updated to newer or older versions. Unlike a pre-compiled binary-based distro that must always download new packages, Sorcery most often recompiles installed software from previously downloaded sources. When a new source is required and an older source was previously downloaded, then Sorcerer will download a tiny patch that transforms the old source tarball into a current source tarball.  The practice of keeping old source tarballs and downloading patches for updates allows Sorcerer systems to be updated using less bandwidth than distributions that provide pre-compiled packages.
+
+Users can add new spells to the grimoire on their local machine and can submit the new spell for inclusion in the general distribution.
+
+The minimum system requirements are given as 1 GB of [[Random-access memory|RAM]] and 20 GB of [[Hard disk drive|hard disk]] space. This is suggested because compiling some sources will consume large amounts of resources. However, software compilation, which happens at [[nice (Unix)|nice level]] 15, shows almost no impact upon performance on modern multi-core SMP computers with 1 GB or more RAM installed. Therefore, Sorcerer installations are normally updated while still in multi-user mode while causing no interruption to services or downtime.  Changing to single user run level mode for updating is not recommended.
+
+== See also ==
+;Other source-base Linux distributions
+* [[CRUX]]
+* [[Gentoo Linux]]
+* [[GoboLinux]]
+* [[Lunar Linux]]
+* [[Source Mage]]
+
+== External links ==
+* [http://sorcerer.silverice.org Official website]
+
+{{linux-distro}}
+
+[[Category:Source-based Linux distributions]]
+[[Category:X86-64 Linux distributions]]
+
+[[es:Sorcerer Linux]]</rev></revisions></page></pages></query></api>

@@ -1,0 +1,51 @@
+<?xml version="1.0"?><api><query><pages><page pageid="6331985" ns="0" title="Mondo Rescue"><revisions><rev xml:space="preserve">{{Infobox software
+| name = Mondo Rescue
+| logo =
+| screenshot = [[Image:Mondo Rescue.png|300px]]
+| caption = Mondo Rescue on [[Ubuntu (operating system)|Ubuntu]]
+| author = Hugo Rabson&lt;ref&gt;http://www.linuxjournal.com/article/5449&lt;/ref&gt;
+| developer = Bruno Cornec&lt;br /&gt;Andree Leidenfrost
+| released =
+| latest release version = 2.2.9.6
+| latest release date = April 13, 2011
+| latest preview version =
+| latest preview date =
+| operating system = [[Linux]], [[FreeBSD]]
+| platform =
+| programming language = [[C (programming language)|C]], [[Shell script|Unix shell]]
+| language = English
+| status = Active
+| genre = Disaster recovery
+| license = [[GNU General Public License]]
+| website = [http://www.mondorescue.org/ www.mondorescue.org]
+}}
+
+'''Mondo Rescue''' is [[free software|free]] [[disaster recovery]] software. It supports [[Linux]] ([[i386]], [[x86-64]], [[IA-64]]) and [[FreeBSD]] (i386). It's packaged for multiple distributions ([[Red Hat]], [[Red Hat Enterprise Linux|RHEL]],  [[Fedora (operating system)|Fedora]], [[CentOS]], [[SUSE Linux|OpenSuSE]], [[SUSE Linux Enterprise Server|SLES]], [[Mandriva Linux|Mandriva]], [[Debian]], [[Ubuntu (operating system)|Ubuntu]]&lt;ref&gt;https://help.ubuntu.com/community/MondoMindi&lt;/ref&gt;, [[Gentoo Linux|Gentoo]]). It also supports tapes, disks, USB devices, network and CD/DVD as backup media, multiple filesystems, [[Logical volume management|LVM]], software and hardware [[RAID]]. Restoration may be done from a physical media including OBDR tape support, or CD/DVD/USB media, or from the network through [[Preboot Execution Environment|PXE]].
+
+As mentioned by the FSF&lt;ref&gt;http://directory.fsf.org/project/MondoRescue/&lt;/ref&gt;, &quot;The emphasis is on stability and ease of use&quot;. According to Ohloh&lt;ref&gt;http://www.ohloh.net/p/mondorescue&lt;/ref&gt;, MondoRescue development is worth more than $6M.
+
+Mondo uses its own Linux distribution called Mindi to provide a favorable post boot environment for performing data restore. Unlike other disk clone solutions there is no ready to use Live CD provided by Mondo Rescue, instead, the included mindi package will create a custom turn-key Live CD/DVDs using the exact Linux kernel and configuration of the system being backed up. In effect, this bootable DVD/CD is customized to the computer being backed up; the objective being to reduce the possibility of having missing device drivers or kernel incompatibilities that may arise from using a generic (vanilla) linux kernel in a pre-built Live DVD/CD.
+
+The MondoRescue project uses the continuous packaging approach brought by http://project-builder.org to deliver regular packaged beta of the project at ftp://ftp.mondorescue.org/test
+
+== See also ==
+{{Portal|Free software}}
+* [[List of disk cloning software]]
+
+==External links==
+* {{Official|http://www.mondorescue.org/}}
+* {{Freshmeat|mondorescue|Mondo Rescue}}
+* Framasoft [http://www.framasoft.net/article4633.html article] on MondoRescue
+* [http://c-net.fr/info/?doc=Mondo_Rescue,_la_sauvegarde_sous_Linux A french Web page]  about  MondoRescue
+
+===References===
+{{Reflist|colwidth=30em}}
+
+[[Category:Free system software]]
+[[Category:Free backup software]]
+[[Category:Free software programmed in C]]
+
+
+{{Storage-software-stub}}
+
+[[fr:Mondo Rescue]]</rev></revisions></page></pages></query></api>

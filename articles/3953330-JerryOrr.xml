@@ -1,0 +1,31 @@
+<?xml version="1.0"?><api><query><pages><page pageid="3953330" ns="0" title="Photoclinometry"><revisions><rev xml:space="preserve">'''Photoclinometry''' is the process by which a 2-dimensional image of a surface is transformed into a surface map that represents different levels of elevation. It uses the shadows and light direction as reference points. It is used mostly to depict the surface of sculptures, to give an idea of how it would look in 3-dimension. The techniques depend on very specific conditions, especially light direction.
+
+==The Process==
+When light reflects off an object it creates shadows. These shadows can be used to create a [[bump map]] of a surface, which uses [[grayscale]] levels to depict the height of a point on a surface. Knowing the direction and angle of the light source, one can calculate the approximate height that a point has. However the light direction and angle is usually unknown, which leads to poor quality images, or having to create multiple [[bump map]]s, each time trying different settings.
+
+==Usage==
+* Some artists use photoclinometry to digitize a 3-dimensional representation of a sculpture.
+* [[Geologist]]s and those that study [[planetary science]] use it to get an idea of how the surface of a planet looks like, and generate [[topographic maps]] and [[digital elevation model]]s.
+
+==Problems==
+Light direction is very important to the quality of a photoclinometric image. Light that comes from directly over the surface (behind the camera) makes it hard to distinguish the shadows. Multiple light sources are also a problem, since they destroy important shadows required for the algorithms to work properly.
+
+In order to solve these problems, new missions to other planets plan to use a process similar to [[stereoscopy]] in order to get a more accurate depiction of the surface on another planet. The [[Mars Reconnaissance Orbiter]] is one of the mission that attempts to do this. This process uses two images of one location taken from two separate lens on a camera, much in the same way humans do with their eyes. By using two images, they can get a 3-dimensional perspective of objects on the surface like we do.
+
+==See also==
+* [[Photogrammetry]]
+* [[Stereoscopy]]
+* [[Bump mapping]]
+
+==Further reading==
+* Kirk, Randolph L., Barrett, Janet M., Soderblom, Laurence A. (2003) Photoclinometry Made Simple...? ''Advances in Planetary Mapping.'' [http://astrogeology.usgs.gov/Projects/ISPRS/MEETINGS/Houston2003/abstracts/Kirk_isprs_mar03.pdf]
+* McEwen, Alfred S. (1991) Photometric functions for photoclinometry and other applications. ''Icarus,'' 92, 298-311. [[ISSN]] 0019-1035.
+* Wilson, L., Hampton, J. S., Balen, H. C. (1985) Photoclinometry of Terrestrial and Planetary Surfaces. ''Lunar and Plantary Science,'' XVI, 912-913. [http://adsabs.harvard.edu/abs/1985LPI....16..912W]
+
+==External links==
+* [http://www.sculptor.org/3D/Scanning/ShapeFromShading.htm Shape from Shading - Photoclinometry]
+* [http://astrogeology.usgs.gov/Teams/Geomatics/pc.html USGS Geomatics]
+
+[[Category:Photographic processes]]
+
+{{photography-stub}}</rev></revisions></page></pages></query></api>

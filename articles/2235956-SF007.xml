@@ -1,0 +1,69 @@
+<?xml version="1.0"?><api><query><pages><page pageid="2235956" ns="0" title="Xming"><revisions><rev xml:space="preserve">{{Infobox software
+| name = Xming
+| screenshot = [[File:Ubuntu on Windows - running Synaptic and nautilus.png|300px]]
+| caption = Xming displaying [[Synaptic Package Manager|Synaptic]] and [[Nautilus (file manager)|Nautilus]]
+| developer = Colin Harrison
+| latest_release_version = 6.9.0.31
+| latest_release_date = public release, {{release date and age|2007|5|4}}
+| latest_preview_version = 7.5.0.40
+| latest_preview_date = limited to donors, {{release date and age|2011|09|30}}
+| operating_system = [[Microsoft Windows]] XP/2003/Vista/7
+| website = http://sourceforge.net/projects/xming
+}}
+
+'''Xming''' is an [[porting|implementation]] of the [[X Window System]] for [[Microsoft Windows]] operating systems, including [[Windows XP]], [[Windows Server 2003]], [[Windows Vista]] &lt;ref name=&quot;linuxcom&quot;&gt;{{cite web |url=http://www.linux.com/archive/feature/118106|title=Use Linux over Windows with Xming|publisher=Linux.com|author=Joe 'Zonker' Brockmeier|date=2007-08-08|accessdate=2009-06-08}}&lt;/ref&gt;&lt;ref name=&quot;novell&quot;&gt;{{cite web|url=http://www.novell.com/coolsolutions/tip/18137.html|title=Xming - A X Server for Windows|publisher=Novell|author=David Mair|date=2006-11-22|accessdate=2009-06-09}}&lt;/ref&gt;  and [[Windows 7]].&lt;ref&gt;http://www.straightrunning.com/XmingNotes/&lt;/ref&gt;
+
+==Features==
+Xming provides the X Window System display server, a set of traditional sample X applications and tools, and a set of fonts. It features support of several languages and has [[Mesa 3D]], [[OpenGL]], and [[GLX]] [[3D Computer Graphics|3D graphics extensions]]&lt;ref name=&quot;linuxcom&quot; /&gt; capabilities.
+
+The Xming X server is based on the [[X.Org Server]]. It is cross-compiled on [[Linux]] with the [[MinGW]] compiler suite and the Pthreads-Win32 multi-threading library. XMing runs natively on Windows and does not need any third-party emulation software.
+
+Xming may be used with implementations of [[Secure Shell]] (SSH) to securely forward X11 sessions from other computers.&lt;ref name=&quot;novell&quot; /&gt; It supports [[PuTTY]] and ''ssh.exe'', and comes with a version of PuTTY's plink.exe. The Xming project also offers a portable version of PuTTY.
+
+The software has been recommended by authors of books on free software when a free X server is needed,&lt;ref&gt;Van Vugt 2009:273&lt;/ref&gt;&lt;ref&gt;Garrido 2007:366&lt;/ref&gt; and described as simple&lt;ref&gt;Iskander 2007:41&lt;/ref&gt; and easier to install though less configurable than other popular free choices like [[Cygwin/X]].&lt;ref&gt;Peckar 2008:182&lt;/ref&gt;
+
+==Licensing==
+
+Xming was previously distributed with a series of [[software license]]s which included statements construed by reviewers as indicating that distribution was permitted under the terms of the [[GNU General Public License|GNU General Public License (GPL)]], but which set further restrictions. The [[Free Software Foundation]] stated to one such reviewer that such distribution was a violation of the terms of the GPL.&lt;ref&gt;{{cite web|url=http://blue-gnu.biz/content/fsf_confirms_xming_restrictions_not_allowed|title=FSF Confirms Xming Restrictions Not Allowed|publisher=Blue-gnu.biz|date=2007-11-16|accessdate=2011-01-18|archiveurl=http://web.archive.org/web/20080430161402/http://blue-gnu.biz/content/fsf_confirms_xming_restrictions_not_allowed|archivedate=2008-04-30}}&lt;/ref&gt; The Xming license was later altered to remove the reference to the GPL.&lt;ref&gt;{{cite web|url=http://blue-gnu.biz/content/blue_gnu_wrong_about_xming_xming_no_longer_gpl |title=Blue GNU Wrong About Xming - Xming No Longer GPL|publisher=Blue-gnu.biz |date=2007-11-19 |accessdate=2010-08-28|archiveurl=http://web.archive.org/web/20071222033943/http://blue-gnu.biz/content/blue_gnu_wrong_about_xming_xming_no_longer_gpl|archivedate=2007-12-22}}&lt;/ref&gt;
+
+==Newer Releases==
+
+Donations must be made to download new releases, (since May 2007).&lt;ref&gt;http://www.straightrunning.com/XmingNotes/#head-12&lt;/ref&gt; Making a donation will allow the user access to new downloads for one year. However releases listed as &quot;Public Domain&quot; can still be downloaded with no donation, the same public releases are hosted on sourceforge &lt;ref&gt;http://sourceforge.net/projects/xming/&lt;/ref&gt;. As of writing this public release works on Windows 7 x64.
+
+{{quote|5. Private individuals using Xming non-commercially, who want to use Xming Website Releases as sole user, will be given access to them for one year after making a small Donation to help fund the replacement equipment needed to further Xming development.&lt;ref name=&quot;yearly&quot;&gt;{{cite web|url=http://www.straightrunning.com/XmingNotes/term.php|title=Xming's Terms and Conditions|work=Xming|accessdate=October 13, 2009}}&lt;/ref&gt;|Clarifications|XMing's Terms and Conditions}}
+
+==See also==
+*[[Cygwin/X]]
+
+== Notes ==
+
+{{Reflist}}
+
+== References ==
+
+{{refbegin}}
+* {{cite book | last = Iskander | first = Magued | authorlink = | coauthors = | title = Innovations in E-learning, Instruction Technology, Assessment, and Engineering Education | publisher = Springer | date = | year = 2007 | location = | pages = | url = http://books.google.com/books?id=X2ifByY_JKwC | doi = | id = | isbn = 9781402062612}}
+* {{cite book | last = Van Vugt | first = Sander | authorlink = | coauthors = | title = Beginning the Linux Command Line | publisher = Apress | date = | year = 2009 | location = | pages = | url = http://books.google.com/books?id=pxBwMx7O-bkC | doi = | id = | isbn = 9781430218890}}
+* {{cite book | last = Garrido | first = JosÃ© M | authorlink = | coauthors = Richard Schlesinger | title = Principles of modern operating systems | publisher = Jones &amp; Bartlett Publishers | date = | year = 2007 | location = | pages = | url = http://books.google.com/books?id=EYlriWI8ZX8C | doi = | id = | isbn = 9780763735746}}
+* {{cite book | last = Peckar | first = Mike | authorlink = | coauthors = | title = Fognet's Field Guide to OpenView Network Node Manager - Revised | publisher = Lulu.com | date = | year = 2008 | location = | pages = | url = http://books.google.com/books?id=-SyyO_ZZXHYC | doi = | id = | isbn = 9780978562724}}
+{{refend}}
+
+==External links==
+* [http://www.straightrunning.com/XmingNotes/ Official website]
+* [http://sourceforge.net/projects/xming Sourceforge development site]
+* [http://freedesktop.org/wiki/Xming Original project homesite]
+
+{{XWinSys}}
+
+[[Category:X servers]]
+[[Category:Free server software]]
+
+[[cs:Xming]]
+[[de:Xming]]
+[[es:Xming]]
+[[fr:Xming]]
+[[ja:Xming]]
+[[pl:Xming]]
+[[ru:Xming]]
+[[sk:Xming]]
+[[zh:Xming]]</rev></revisions></page></pages></query></api>

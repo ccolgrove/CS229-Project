@@ -1,0 +1,70 @@
+<?xml version="1.0"?><api><query><pages><page pageid="2630680" ns="0" title="Freespire"><revisions><rev xml:space="preserve">{{ Infobox OS
+| name                   = Freespire
+| logo                   = [[Image:Freespire logo.png|250px]]
+| screenshot             = [[Image:FreespireScreenshot.png|250px]]
+| caption                = A screenshot of Freespire RC1
+| developer              = [[Linspire]], Inc. and the Freespire community
+| family                 = [[Unix-like]]
+| source_model           = [[Free and open source software]] with optional [[proprietary software|proprietary]] components
+| license                = [[Free software license|Free software]] licenses (mostly [[GNU General Public License|GPL]]) with optional [[proprietary software|proprietary]]-licensed components
+| latest_release_version = 2.0.8 &lt;!-- If you update this, remember to also update [[Comparison of Linux distributions]]--&gt;
+| latest_release_date    = {{Start date and age|2007|11|30}}&lt;ref name=&quot;Freespire2&quot;&gt;{{cite web |title=Freespire 2 |work=Freespire wiki |publisher=freespire.org |date=2007-11-30 |url=http://wiki.freespire.org/index.php/Freespire_2 |accessdate=2009-03-25}}&lt;/ref&gt;
+| kernel_type            = [[Monolithic kernel]]
+| ui                     = [[KDE]]
+| working_state          = Discontinued
+| website                = [http://www.freespire.org www.freespire.org]
+| supported_platforms    = [[x86]]&lt;ref&gt;{{cite web|url=http://wiki.freespire.org/index.php/HCL_Processors |title=HCL Processors - Freespire |publisher=Wiki.freespire.org |date=2009-08-19 |accessdate=2010-05-03}}&lt;/ref&gt;
+| language               = [[English language|English]]
+}}
+
+'''Freespire''' was a community-driven [[Linux distribution]] which was composed mostly of [[Free software|free]], [[Open-source software|open source]] software, while providing users the choice of including [[proprietary software]] including [[multimedia codec]]s, [[device driver]]s and [[application software]].
+
+Freespire was originally derived from [[Linspire]]. Freespire 1.0 was based on [[Debian]], while Freespire 2.0 was based on [[Ubuntu (operating system)|Ubuntu]]. Linspire was bought by [[Xandros]], who originally planned to switch back to Debian for future Freespire releases.&lt;ref&gt;{{cite web |title=Back to Debian: Freespire returns to Debian Roots |publisher=practical-tech.com |date=2008-08-06 |url=http://practical-tech.com/operating-system/back-to-debian-freespire-returns-to-debian-roots |accessdate=2009-03-25}}&lt;/ref&gt;
+
+==History==
+In August 2005, a distribution [[Live CD]] based on Linspire's source pools named ''Freespire'' hit the web by accident.&lt;ref&gt;{{cite web | url = http://wiki.freespire.org/index.php/FAQ_Category:_About_Freespire_and_The_Freespire_Project#Wasn.27t_there_a_Freespire_project_released_towards_the_end_of_2005.3F_Is_this_the_same_project.3F | title = Wasn't there a Freespire project released towards the end of 2005? Is this the same project? | work = Freespire FAQ | publisher = Freespire.org | accessdate = 2006-05-04 }}&lt;/ref&gt; This distribution was created by Andrew Betts and was not produced or released by Linspire Inc. Freespire was confused by some users to be an actual product from Linspire, and at the request of Linspire the distribution adopted a development codename ''Squiggle'' and began looking for a new name. Linspire then, on the back of the generated publicity, offered users a &quot;free Linspire&quot; (purchase price discounted to $0) by using the coupon code &quot;Freespire&quot; until September 9, 2005. Squiggle OS is no longer in active development.
+
+On April 24, 2006, Linspire announced its own project named &quot;Freespire&quot;.&lt;ref name=LinuxPlanet&gt;{{cite web | url=http://www.linuxplanet.com/linuxplanet/newss/6228/1/ | title=LinuxPlanet: Linspire Announces Freespire Distribution (New Distro Comes in Free and Proprietary Flavors)
+| accessdate=2008-12-15}}&lt;/ref&gt; The new Freespire distribution was announced by then Linspire President and former CEO Kevin Carmony. This follows to the model of [[Fedora (operating system)|Fedora]] being supported by [[Red Hat]] and the community since 2003. [[Novell]] had also started a similar community project by the name of [[openSUSE]] for its [[SUSE Linux]] product line in the second half of 2005.
+
+[[Xandros]] acquired Linspire/Freespire in the Summer of 2008.&lt;ref&gt;{{cite web | url = http://www.linspire.com/lindows_news_pressreleases.php | title = July 2008 Linspire news release}}&lt;/ref&gt;  Xandros had plans to keep Freespire as a community developed distribution similar to that of OpenSUSE and Fedora for their respective commercial distributions.
+
+The final release of Freespire was 2.0.8, released on 30 November 2007.&lt;!-- This is from http://distrowatch.com/table.php?distribution=freespire --- somebody help me put a citation please? --&gt;  This was based on Ubuntu 7.04 which was supported for 18 months and reached end-of-life on 19 October 2008.  Freespire therefore receives no security updates from upstream at present.  The distribution is now considered &quot;Discontinued&quot; by distrowatch.com.&lt;ref&gt;{{cite web|url=http://distrowatch.com/table.php?distribution=freespire |title=Freespire |publisher=DistroWatch.com |date= |accessdate=2011-02-12}}&lt;/ref&gt;
+
+==Features==
+The distribution is a Debian-based, community-driven and -supported project tied to the commercial Linspire distribution. Freespire includes previously proprietary elements from Linspire, such as the [[Click N' Run]] (CNR) client, while other elements, which Linspire itself licenses but does not own, like the [[Windows Media Audio]] compatibility libraries{{Clarify|date=July 2010}}, remain proprietary, [[closed source software|closed source]]. Consequently, there are two versions of Freespire, one with the proprietary, closed source libraries, and one, called Freespire OSS Edition, that includes mostly open-source components. Freespire has a number of in-house programs written in [[Haskell (programming language)|Haskell]] and [[Objective Caml]], such as its [[ISO]] image builder, its hardware detection and autoconfiguration, its [[Software package (installation)|package]] autobuilder and &quot;Debian library&quot;, and also the programs managing the [[Common Gateway Interface|CGI]]. &lt;!-- also its click and run software warehouse thing, but I don't know its proper name --&gt;
+
+==Releases==
+{| class=&quot;wikitable&quot;
+|-
+!Version !! Release date !! Notes
+|-
+|1.0 Release Candidate (1.0.2) || July 28, 2006&lt;ref&gt;{{cite web|url=http://wiki.freespire.org/index.php/Release_Notes/1.0.2 |title=Release Notes/1.0.2 - Freespire |publisher=Wiki.freespire.org |date= |accessdate=2010-05-03}}&lt;/ref&gt; || Release candidate
+|-
+|1.0 (1.0.13) || August 4, 2006&lt;ref&gt;{{cite web|url=http://wiki.freespire.org/index.php/Release_Notes#Freespire_1.0_Stable_Release_Notes |title=Release Notes - Freespire |publisher=Wiki.freespire.org |date= |accessdate=2010-05-03}}&lt;/ref&gt; || Public release based on Debian, Linux kernel 2.6.14, and KDE 3.3.2&lt;ref&gt;[http://www.linuxformat.co.uk/modules.php?op=modload&amp;name=News&amp;file=article&amp;sid=385 Freespire 1.0: first impressions :: Linux Format :: The website of the UK's best-selling Linux magazine]{{Dead link|date=May 2010}}&lt;/ref&gt;
+|-
+|2.0 RC (1.9.0) || July 10, 2007&lt;ref name=&quot;schedule&quot;&gt;{{cite web|url=http://wiki.freespire.org/index.php/Freespire_2.0_Schedule |title=Freespire 2.0 Schedule - Freespire |publisher=Wiki.freespire.org |date= |accessdate=2010-05-03}}&lt;/ref&gt; || Release candidate
+|-
+|2.0 || August 7, 2007&lt;ref&gt;{{cite web|url=http://wiki.freespire.org/index.php/Download_Freespire |title=Download Freespire - Freespire |publisher=Wiki.freespire.org |date= |accessdate=2010-05-03}}&lt;/ref&gt;|| Public release based on [[Ubuntu (operating system)|Ubuntu 7.04]], [[Linux (kernel)|Linux]] 2.6.20, and [[KDE]] 3.5.6.&lt;ref&gt;{{cite web|url=http://wiki.freespire.org/index.php/Freespire_Roadmap |title=Freespire Roadmap - Freespire |publisher=Wiki.freespire.org |date= |accessdate=2010-05-03}}&lt;/ref&gt; with the built-in [[Click'N'Run|CNR 7]] plug-in
+|-
+|2.0.8 || November 30, 2007||Fixes and Beta [[Click'N'Run|CNR]] plug-in&lt;ref name=&quot;Freespire2&quot; /&gt;
+|}
+
+==References==
+{{Reflist|2}}
+
+{{Ubuntu-distro}}
+{{Linux distributions}}
+
+[[Category:Linspire]]
+[[Category:Ubuntu (operating system) derivatives]]
+
+[[bg:Freespire]]
+[[es:Freespire]]
+[[fa:ÙØ±ÛâØ§Ø³Ù¾Ø§ÛØ±]]
+[[ml:à´«àµà´°àµà´¸àµà´ªàµàµ¼]]
+[[nl:Freespire]]
+[[ro:Freespire]]
+[[ru:Freespire]]
+[[simple:Freespire]]
+[[sv:Freespire]]</rev></revisions></page></pages></query></api>

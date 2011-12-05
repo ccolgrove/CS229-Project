@@ -1,0 +1,237 @@
+<?xml version="1.0"?><api><query><redirects><r from="Boot menu" to="Booting" /></redirects><pages><page pageid="40909" ns="0" title="Booting"><revisions><rev xml:space="preserve">{{More footnotes|date=October 2008}}
+{{Copy edit|date=June 2011}}
+
+{{About|bootstrapping operating systems|the general concept|Bootstrapping}} {{otheruses}}
+
+In [[computing]], '''booting''' (also known as '''booting up''') is a process that begins when a user turns on a [[computer system]] and prepares the computer to perform its normal operations. On modern computers, this typically involves loading and starting an [[operating system]]. The '''boot sequence''' is the initial set of operations that the computer performs when power is switched on. A '''boot loader''' is a [[computer program]] that typically loads the main operating system or  [[runtime environment]] for the computer.
+
+Since the [[IBM 701]]{{citation needed|date=November 2011}} in the 1950s, booting has been used to load programs and operating systems into the [[computer memory|main memory]] of [[stored-program computer]]s, including [[mainframe computer]]s, [[minicomputer]]s, [[microcomputers]], [[personal computer]]s, and [[consumer electronics]] devices). Some simpler [[embedded systems]] do not require a boot sequence to begin functioning and may run programs stored in [[read-only memory]] (ROM) when turned on. There are numerous examples of single and multi-stage boot sequences that begin with the execution of boot program(s) stored in boot ROMs.  During the booting process, the [[binary code]] of an operating system or runtime environment may be loaded from [[non-volatile memory|nonvolatile]] [[secondary storage]] (such as a [[hard disk drive]]) into volatile, or [[random-access memory]] (RAM) and then executed.  The booting concept is also known as &quot;Initial Program Load&quot; for [[IBM]] mainframe computers.
+
+The computer word ''boot'' is short for [[bootstrapping|''bootstrap'']] (itself short for ''bootstrap load''). The term ''bootstrap'' derives from the idiom ''to  [[Bootstrapping#Straps on leather boots|pull oneself up by one's bootstraps]]''. The term refers to the paradox that a computer cannot run without first loading software but must be running before any software can be loaded.&lt;ref&gt;{{cite web |url=http://www.phrases.org.uk/meanings/290800.html |title=Phrase Finder |publisher=phrases.org.uk}}&lt;/ref&gt;
+
+== History ==
+In computers of the 1950s, pressing a bootstrap button caused a hardwired program to read a bootstrap program from a [[punched card]] in a [[punched card reader|card reader]], a [[Magnetic tape data storage|magnetic tape]] in a [[tape drive]], a [[Drum memory|magnetic drum]] unit or [[Disk storage|magnetic disk]] drive, and then execute the loaded boot program, which loaded a larger system of programs from that medium into memory without further help from the human operator.&lt;ref&gt;{{cite web |url=http://dictionary.reference.com/search?r=2&amp;q=bootstrap |title=Bootstrap |publisher=[[Dictionary.com]]}}&lt;/ref&gt;&lt;ref&gt;{{cite web |url=http://www.thefreedictionary.com/bootstrap |title=Bootstrap |publisher=[[TheFreeDictionary.com]]}}&lt;/ref&gt; The term &quot;boot&quot; has been used in this sense since at least 1958.&lt;ref&gt;{{cite book |title=Oxford English Dictionary |publisher=[[Oxford University]]}}&lt;/ref&gt;  For example, the [[IBM 701]] computer (1952â1956) had a &quot;load&quot; button that initiated reading of the first [[36-bit]] [[word (computer architecture)|word]] from a punched card, magnetic tape, or magnetic drum unit.  The left 18-bit half-word was then executed as an instruction, which usually read additional words into memory.&lt;ref&gt;''From Gutenberg to the Internet'', Jeremy M. Norman, 2005, page 436, ISBN 0-930405-87-0&lt;/ref&gt;  Similarly, the [[IBM 1401]] system (c. 1958) used a card reader to load a program from a punched card. The 80 characters stored in the punched card were read into memory locations 001 to 080, then the computer would branch to memory location 001 to read its first stored instruction. This instruction was always the same: move the information in these first 80 memory locations to an assembly area where the information in punched cards 2, 3, 4, and so on, could be combined to form the stored program.  Once this information was moved to the assembly area, the machine would branch to an instruction in location 080 (read a card) and the next card would be read and its information processed.  Essentially, the process was one where each subsequent card was &quot;bootstrapped&quot; into memory by the previous punched card.
+
+The [[CDC 6600]] (c. 1964) had a ''dead start'' panel with 144 toggle switches; the dead start switch entered 12 words from the toggle switches to the memory of ''peripheral processor'' (''PP'') 0 and initiated the load sequence. PP 0 loaded the necessary code into its own memory and then initialized the other PPs.
+
+The [[GE-600 series|GE 645]] (c. 1965) had a &quot;'''BOOT'''&quot; button.&lt;ref&gt;{{cite web |url=http://www.multicians.org/mgb.html |title=Glossary of Multics acronyms and terms |first=Tom |last=Van Vleck |accessdate=2010-01-18}}&lt;/ref&gt; It is possible that the contraction from &quot;bootstrap&quot; to &quot;boot&quot; was motivated by an inclination to label the button with fewer, larger characters, or the contraction may follow the familiar habit of contracting words to make them easier to say, and to create insider jargon.
+
+Some machines, like the [[Atari ST]] [[microcomputer]], were &quot;instant-on&quot;, with the operating system executing from a [[Read-only memory|ROM]]. Retrieval of the OS from secondary or tertiary store was thus eliminated as one of the characteristic operations for bootstrapping. To allow system customizations, accessories, and other support software to be loaded automatically, the Atari's floppy drive was read for additional components during the boot process. There was a timeout delay that provided time to manually insert a floppy as the system searched for the extra components. This could be avoided by inserting a blank disk.
+
+The [[Multics]] operating system (c. 1967) had a boot command.&lt;ref&gt;{{cite book |title= Multics System Programmer's Manual |chapter=BC.4.01 System Initialization and Bootload |date=1967-06-30 |first=A. |last=Bensoussan |url=http://www.multicians.org/mspmtoc.html}}&lt;/ref&gt;&lt;ref&gt;{{cite book |title= Multics System Programmer's Manual |chapter=BV.1.01 BOS Bootload: boot |date=1968-05-03 |first=S. D. |last=Dunten |coauthors=T. H. Van Vleck |url=http://www.multicians.org/mspmtoc.html}}&lt;/ref&gt;
+
+In the [[Unix]] operating system, the earliest reference for &quot;boot&quot; is probably in ''The Unix Programmer's Manual'', first edition 1971.11.03.&lt;ref&gt;{{cite book |title=The Unix Programmer's Manual |edition=1st edition |date=1971-11-03 |first=Ken |last=Thompson |authorlink=Ken Thompson |coauthors=[[Dennis Ritchie]] |url=http://www.cs.bell-labs.com/who/dmr/1stEdman.html |archiveurl=http://web.archive.org/web/20070409100452/http://www.cs.bell-labs.com/who/dmr/1stEdman.html |archivedate=2007-04-09 |accessdate=2008-01-07}}&lt;/ref&gt;
+
+== Boot loader ==
+A computer's central processor can only execute program code found in [[read-only memory]] (ROM), [[random access memory]] (RAM), or (for computers of the 1950s through 1970s) switches on an operator's [[front panel]]. Modern operating systems, application code, and data are stored on nonvolatile data storage devices, such as [[hard drive]]s, [[CD]]s, [[DVD]]s, [[memory card|flash memory cards]] (like [[SD card]]s), [[USB flash drive]]s, and [[floppy disk]]s. When a computer is first powered on, it usually does not have an operating system in ROM or RAM. The computer must execute a relatively small program stored in ROM, along with the bare minimum of data needed to access the nonvolatile devices from which the operating system programs and data may be loaded into RAM.
+
+The small program that starts this sequence is known as a ''bootstrap loader'', ''bootstrap'' or ''boot loader''. This small program's only job is to load other data and programs which are then executed from RAM. Often, multiple-stage boot loaders are used, during which several programs of increasing complexity load one after the other in a process of [[chain loading]].
+[[Image:PDP 8 e Trondheim.jpg|thumb|PDP-8/E front panel showing the switches used to load the bootstrap]]
+Early computers (such as the [[IBM 650]], [[Digital Equipment Corporation|DEC]] [[PDP-5]] through [[PDP-8]], early models of the [[PDP-11]], and early microcomputers such as the [[Altair 8800]]) had a row of dials or [[toggle switch]]es on the front panel that allowed the operator to manually enter the boot instructions into memory before transferring control to the [[Central processing unit|CPU]]. They could also be used to pass instructions directly to the CPU. Interestingly, the PDP-1 had a hardware built-in loader, such that an operator only needed to push the &quot;load&quot; switch and the paper tape reader would read a program directly into core memory. The boot loader would then read in either the second-stage boot loader (called ''Binary Loader'' of [[paper tape]] with [[checksum]]) or the operating system from an outside storage medium such as paper tape, punched card, or a disk drive.
+
+[[Pseudocode]] for the bootloader might be as simple as the following eight instructions:
+
+# Set the P register to 9
+# Check paper tape reader ready
+# If not ready, jump to 2
+# Read a byte from paper tape reader to accumulator
+# If end of tape, jump to 9
+# Store accumulator to address in P register
+# Increment the P register
+# Jump to 2
+
+A related example is based on a loader for a 1970's Nicolet Instrument Corporation minicomputer.  Note that the bytes of the second-stage loader are read from paper tape in reverse order.
+
+# Set the P register to 106
+# Check paper tape reader ready
+# If not ready, jump to 2
+# Read a byte from paper tape reader to accumulator
+# Store accumulator to address in P register
+# Decrement the P register
+# Jump to 2
+
+The length of the second stage loader is such that the final byte overwrites location 7.  After the instruction in location 6 executes, location 7 starts the second stage loader executing.  The second stage loader then waits for the much longer tape containing the operating system to be placed in the tape reader.  The difference between the boot loader and second stage loader is the addition of checking code to trap paper tape read errors, a frequent occurrence with the hardware of the time, which in this case was an [[ASR-33 Teletype|Teletype Model 33 ASR]].
+
+Some computer systems, upon receiving a boot signal from a human operator or a peripheral device, may load a very small number of fixed instructions into memory at a specific location, initialize at least one CPU, and then point the CPU to the instructions and start their execution.  These instructions typically start an input operation from some peripheral device (which may be switch-selectable by the operator). Other systems may send hardware commands directly to peripheral devices or I/O controllers that cause an extremely simple input operation (such as &quot;read sector zero of the system device into memory starting at location 1000&quot;) to be carried out, effectively loading a small number of bootload instructions into memory; a completion signal from the I/O device may then be used to start execution of the instructions by the CPU.
+
+Smaller computers often use less flexible but more automatic bootload mechanisms to ensure that the computer starts quickly and with a predetermined software configuration. In many desktop computers, for example, the bootstrapping process begins with the CPU executing software contained in ROM (for example, the [[BIOS]] of an [[IBM PC]]) at a predefined address (some CPUs, including the Intel [[Intel 8086|x86 series]] are designed to execute this software after reset without outside help). This software contains rudimentary functionality to search for devices eligible to participate in booting, and load a small program from a special section (most commonly the [[boot sector]]) of the most promising device.
+
+Boot loaders may face peculiar constraints, especially in size; for instance, on the IBM PC and compatibles, the first stage of boot loaders located on hard drives must fit into the first 446 [[bytes]] (or 440 bytes if Windows NT or above has to be supported because NT put 6 byte disk-signature starting from offset 440) of the [[Master boot record#Structure of a Master Boot Record|Master Boot Record]], in order to leave room for the 64-byte [[partition table]] and the 2-byte 0xAA55 'signature', which the BIOS requires for a proper boot loader.
+
+Some operating systems, most notably pre-1995 [[Apple Macintosh|Macintosh]] systems from [[Apple Inc.|Apple]], are so closely interwoven with their hardware that it is impossible to natively boot an operating system other than the standard one. This is the opposite extreme of the bootload using switches mentioned above; it is highly inflexible but relatively error-proof and foolproof as long as all hardware is working normally. A common solution in such situations is to design a bootloader that works as a program belonging to the standard OS that hijacks the system and loads the alternative OS. This technique was used by Apple for its [[A/UX]] Unix implementation and copied by various freeware operating systems and [[BeOS|BeOS Personal Edition 5]].
+
+The [[Atari ST]] also had its operating system in ROM, but by inserting the [[Spectre GCR]] cartridge with the Macintosh system ROM in the game slot and turning the Atari on, it could &quot;natively boot&quot; the Macintosh operating system rather than Atari's own [[Atari TOS|TOS]] system. The [[Atari ST]] hardware was designed so the cartridge slot could provide native program execution for gaming purposes as a holdover from Atari's legacy making electronic games.
+
+Common primary boot loaders include:
+
+* [[BIOS]]
+* [[Extensible Firmware Interface|EFI]]
+* [[OpenBIOS]]
+* [[OpenBoot]]
+* [[OpenBIOS#SLOF|SLOF]]
+
+=== Second-stage boot loader ===
+
+Second-stage boot loaders, such as [[GNU GRUB|GRUB]], [[BOOTMGR]], [[SYSLINUX|Syslinux]], [[Linux Loader|LILO]] or [[NTLDR]], are most often not themselves an operating system, but are able to load the operating system properly and transfer execution to it. The operating system will initialize itself, and may load [[device driver]]s that are needed for the normal operation of the OS. After that it starts loading normal system programs.
+
+Many bootloaders (like GRUB, BOOTMGR, LILO, and NTLDR) can be configured to give the user multiple booting choices. These choices can include different operating systems (for [[dual boot|dual or multi-booting]] from different partitions or drives), different versions of the same operating system (in case a new version has unexpected problems), different operating system loading options (e.g., booting into a rescue or [[safe mode]]), and some standalone programs that can function without an operating system, such as memory testers (e.g., [[memtest86+]]) or even games (see [[List of PC Booter games]]).&lt;ref&gt;{{cite web |url=http://www.coreboot.org/Tint |title=Tint |publisher=coreboot |accessdate=20 November 2010}}&lt;/ref&gt; Usually a default choice is preselected with a time delay during which a user can press a key to change the choice; after this delay the default choice is automatically run so normal booting can occur without interaction.
+
+The boot process can be considered complete when the computer is ready to interact with the user, or the operating system is capable of running system programs or application programs. Typical modern personal computers boot in about one minute, of which about 15 seconds are taken by a [[power-on self test]] (POST) and a preliminary boot loader, and the rest by loading the operating system and other software. Time spent after the operating system loading can be considerably shortened to as little as 3 seconds&lt;ref&gt;{{cite web |url=http://www.coreboot.org/FAQ#Why_do_we_need_coreboot_for_cluster_maintainance.3F |title=FAQ - Why do we need coreboot? |publisher=[[coreboot]] |accessdate=20 November 2010}}&lt;/ref&gt; by bringing the system up [[Symmetric multiprocessing|with all cores at once]], as with [[coreboot]].&lt;ref&gt;{{cite web |url=http://www.youtube.com/watch?v=X72LgcMpM9k |title=Google tech talks - coreboot (aka LinuxBIOS): The Free/Open-Source x86 Firmware |publisher=[[YouTube]] }}&lt;/ref&gt; Large servers may take several minutes to boot and start all their services.
+
+Many [[embedded system]]s must boot immediately. For example, waiting a minute for a [[Television set|digital television]] or [[Global Positioning System|GPS satellites]]  to start is generally unacceptable. Therefore such devices have software systems in ROM or [[flash memory]] so the device can begin functioning immediately. For these types of embedded system little or no loading is necessary, since the loading can be precomputed and stored on the ROM when the device is made.
+
+Large and complex systems may have boot procedures that proceed in multiple phases, each phase loading a more complex version of itself, until finally the operating system and other software are loaded and ready to execute.  Because operating systems are designed as if they never start or stop, bootload processes sometimes load the operating system, configure themselves as a mere process within that system, and then irrevocably transfer control to the operating system. The bootload process then terminates normally as any other process would, and the user need not have any awareness of the bootload.
+
+=== Network booting ===
+{{main|network booting}}
+
+Most computers are also capable of booting over a [[computer network]]. In this scenario, the operating system is stored on the disk of a [[server (computing)|server]], and certain parts of it are transferred to the client using a simple protocol such as the [[Trivial File Transfer Protocol]]. After these parts have been transferred, the operating system then takes over control of the booting process.
+
+== Boot devices (IBM PC) ==
+{{see also|system partition}}
+[[File:Windows To Go USB Drive.png|thumb|[[Windows To Go]] bootable flash drive, a [[Live USB]] example|link=Windows To Go]]
+
+The boot device is the device from which the operating system is loaded. A modern PC [[BIOS]] supports booting from various devices, typically a local hard disk drive (or one of several [[disk partitioning|partitions]] on such a disk), an [[optical disc drive]], a [[Universal Serial Bus|USB]] device (flash drive, hard disk drive, optical disc drive, etc.), a flash memory card such as an SD card in a [[Memory card reader|multi-media card slot]], or a network interface card (using [[Preboot Execution Environment|PXE]]). Older, less common bootable devices include [[boot floppy|floppy disk drives]], [[SCSI]] devices, [[Zip drive]]s, and [[LS-120]] drives.
+
+Typically, the BIOS will allow the user to configure a ''boot order''. If the boot order is set to &quot;first, the DVD drive; second, the hard disk drive&quot;, then the BIOS will try to boot from the DVD drive, and if this fails (e.g. because there is no DVD in the drive), it will try to boot from the local hard drive.
+
+For example, on a PC with [[Windows XP]] installed on the hard drive, the user could set the boot order to the one given above, and then insert a [[Linux]] [[Live CD]] in order to try out [[Linux]] without having to install an operating system onto the hard drive. This is an example of [[dual booting]] â the user choosing which operating system to start after the computer has performed its POST. In this example of dual booting, the user chooses by inserting or removing the CD from the computer, but it is more common to choose which operating system to boot by selecting from a menu using the computer keyboard. (Typically &lt;code&gt;F11&lt;/code&gt; or &lt;code&gt;ESC&lt;/code&gt;)
+
+== Boot sequence on standard PC (IBM-PC compatible) ==
+
+Upon starting, a personal computer's [[x86]] CPU runs the instruction located at the memory location CS:IP F000:FFF0 of the [[BIOS]], which wraps to linear address 0xFFFF0, the BIOS entry inside the ROM. This memory location is close to the end of the {{nowrap|1 MB}} of system memory accessible in [[real mode]]. It typically contains a jump instruction that transfers execution to the location of the BIOS start-up program. This program runs a [[power-on self test]] (POST) to check and initialize required devices.  The BIOS goes through a pre-configured list of [[Non-volatile memory|non-volatile storage devices]] (&quot;boot device sequence&quot;) until it finds one that is bootable. A bootable device is defined as one that can be read from, and the last two bytes of the first sector contain the [[Word (data type)|word]] &lt;tt&gt;0xAA55&lt;/tt&gt; (also known as the boot signature).
+
+[[file:Binary executable file2.png|thumb|A [[hex dump]] of [[FreeBSD]]'s boot0 MBR]]
+
+Once the BIOS has found a bootable device it loads the boot sector to linear address 0x7C00 (usually [[X86 memory segmentation|Segment]]:[[Offset (computer science)|Offset]] 0000:7C00, but some BIOSes use 07C0:0000) and transfers execution to the boot code.  In the case of a hard disk, this is referred to as the [[master boot record]] (''MBR'') and is often not operating system specific. The conventional MBR code checks the MBR's partition table for a partition set as ''bootable'' (the one with ''active'' flag set).&lt;ref&gt;Note that per MBR specifications the active partition is not required to be primary, however the boot sector code may require it to be in order to work properly.&lt;/ref&gt; If an active partition is found, the MBR code loads the boot sector code from that partition and executes it. The boot sector is often operating-system-specific; however, in most operating systems its main function is to load and execute the operating system [[kernel (computer science)|kernel]], which continues startup. If there is no active partition, or the active partition's boot sector is invalid, the MBR may load a secondary boot loader which will select a partition (often via user input) and load its boot sector, which usually loads the corresponding operating system kernel.
+
+Some systems (particularly newer [[Macintoshes]] and new editions of [[Microsoft Windows]]) use [[Intel]]'s proprietary [[Extensible Firmware Interface|EFI]]. Also coreboot allows a computer to boot without having an over-complicated firmware/BIOS constantly running in [[System Management Mode|system management mode]].  The legacy 16-bit BIOS interfaces are required by certain x86 operating systems, such as Windows 3.1/95/98. However most boot loaders have 16-bit support for these legacy BIOS systems.&lt;ref&gt;{{cite web |url=http://www.intel.com/technology/framework/ |title=Intel Platform Innovation Framework for EFI |publisher=Intel |accessdate=2008-01-07}}&lt;/ref&gt;&lt;ref&gt;Intel [[Macintosh]] computers all have firmware with compatibility mode for legacy BIOS operations&lt;/ref&gt;&lt;ref&gt;{{cite web |url=http://www.coreboot.org/OpenBIOS |title=? }}{{dead link|date=November 2010}}&lt;/ref&gt;
+
+[[file:AwardBIOS startup.png|thumb|[[Award Software]] BIOS during booting from 1997]]
+
+Most PCs, if a [[BIOS]] chip is present, will show a screen detailing the BIOS chip manufacturer, [[copyright]] held by the chip's manufacturer and the ID of the chip at startup. At the same time, it also shows the amount of computer memory available and other pieces of information about the computer.
+
+== Other kinds of boot sequences ==
+
+Some other processors have other kinds of boot modes.
+
+There are alternative techniques for booting [[CPU]]s and microcontrollers:
+
+* Some modern CPUs and microcontrollers (for example, [[Texas Instruments|TI]] [[OMAP]]) or sometimes even DSPs may have boot ROM with boot code integrated directly into their silicon, so such a processor could perform quite a sophisticated boot sequence on its own and load boot programs from various sources like NAND flash, SD or MMC card and so on. It is hard to hardwire all the required logic for handling such devices, so an integrated boot ROM is used instead in such scenarios. Boot ROM usage enables more flexible boot sequences than hardwired logic could provide. For example, the boot ROM could try to perform boot from multiple boot sources. Also, a boot ROM is often able to load a boot loader or diagnostic program via serial interfaces like [[UART]], [[Serial Peripheral Interface Bus|SPI]], [[USB]] and so on. This feature is often used for system recovery purposes when for some reasons usual boot software in non-volatile memory got erased. This technique could also be used for initial non-volatile memory programming when there is clean non-volatile memory installed and hence no software available in the system yet.
+* It is also possible to take control of a system by using a hardware debug interface such as [[JTAG]]. Such an interface may be used to write the boot loader program into bootable non-volatile memory (e.g. flash) by instructing the processor core to perform the necessary actions to program non-volatile memory. Alternatively, the debug interface may be used to upload some diagnostic or boot code into RAM, and then to start the processor core and instruct it to execute the uploaded code. This allows, for example, the recovery of embedded systems where no software remains on any supported boot device, and where the processor does not have any integrated boot ROM.  JTAG is a standard and popular interface; many CPUs, microcontrollers and other devices are manufactured with JTAG interfaces (as of 2009).
+* Some microcontrollers provide special hardware interfaces which can't be used to take arbitrary control of a system or directly run code, but instead they allow the insertion of boot code into bootable non-volatile memory (like flash memory) via simple protocols. Then at the manufacturing phase, such interfaces are used to inject boot code (and possibly other code) into non-volatile memory. After system reset, the microcontroller begins to execute code programmed into its non-volatile memory, just like usual processors are using ROMs for booting. Most notably this technique is used by [[Atmel AVR]] microcontrollers, and by others as well. In many cases such interfaces are implemented by hardwired logic. In other cases such interfaces could be created by software running in integrated on-chip boot ROM from [[GPIO]] pins.
+
+Most [[digital signal processor]]s have the following boot modes:
+
+* Serial mode boot
+* Parallel mode boot, such as the host port interface (HPI boot)
+
+In case of DSPs there is often a second microprocessor or microcontroller present in the system design, and this is responsible for overall system behavior, interrupt handling, dealing with external events, user interface, etc. while the DSP is dedicated to signal processing tasks only. In such systems the DSP could be booted by another processor which is sometimes referred as the ''host processor'' (giving name to a Host Port). Such a processor is also sometimes referred as the ''master'', since it usually boots first from its own memories and then controls overall system behavior, including booting of the DSP, and then further controlling the DSP's behavior. The DSP often lacks its own boot memories and relies on the host processor to supply the required code instead. The most notable systems with such a design are cell phones, modems, audio and video players and so on, where a DSP and a CPU/microcontroller are co-existing.
+
+Many [[FPGA]] chips load their configuration from an external serial [[EEPROM]] (&quot;configuration ROM&quot;) on power-up.
+
+== IBM Initial Program Load ==
+In current [[IBM mainframe]] systems, the boot process is known as [[IBM System/360 architecture#Initial Program Load|''Initial Program Load'']] (IPL).
+
+This term was coined by IBM for the design of the [[System/360]] (ca, 1965) and continues to be used in those environments today.&lt;ref name=&quot;zAPoP&quot;&gt;{{cite book |url=http://publibz.boulder.ibm.com/epubs/pdf/a2278324.pdf |title=z/Architecture Principles of Operation |pages=Chapter 17 |publisher=[[IBM]] |month=September |year=2005 |format=PDF |accessdate=2007-04-14 |nopp=true}}&lt;/ref&gt; In the System/360 processors, an IPL is initiated by the computer operator by selecting the three hexadecimal digit device address (CUU; C=I/O Channel address, UU=Control Unit and device address&lt;ref group=NB&gt;Some control units attached only 8 devices; some attached more than 16.&lt;/ref&gt;) followed by pressing the ''LOAD'' button. On [[System/370]] and some later systems, the functions of the switches and the LOAD button are simulated using selectable areas on the screen of a graphics console, often an [[IBM 2250]]-like device or an [[IBM 3270]]-like device. For example, on the System/370 Model 158, the keyboard sequence 0-7-X (zero, seven and X, in that order) results in an IPL from the device address which was keyed into the input area. Amdahl 470V/6 and related CPUs supported four hexadecimal digits on those CPUs which had the optional second channel unit installed, for a total of 32 channels. Later, IBM would also support more than 16 channels.
+
+The IPL function in the System/360 and its successors, and its compatibles such as Amdahl's, reads 24 bytes from an operator-specified device into memory starting at location zero.  The second and third groups of eight bytes are treated as Channel Command Words (CCWs) to continue loading the startup program (the first CCW is always simulated by the CPU and consists of a READ IPL command, 0x02, with command chaining and suppress incorrect length implied).  When the I/O channel commands are complete, the first group of eight bytes is then loaded into the Program Status Word (PSW) and the startup program begins execution at the designated location.&lt;ref name=&quot;zAPoP&quot;/&gt;  The IPL device is usually a disk drive, but exactly the same procedure is also used to IPL from other input-type devices, such as [[tape drive]]s, or even [[card reader]]s, in a device-independent manner, allowing, for example, the installation of an operating system on a brand-new computer from an OS initial distribution magnetic tape (for disk controllers, the 0x02 command also causes the selected device to seek to cylinder 0x0000, head 0x0000, and to search for record 0x01, thereby also simulating a stand-alone seek command, 0x07, and a search ID equal command, 0x31; seeks and searches are not simulated by tape and card controllers).
+
+The disk, tape or card deck must contain a special program to load the actual operating system into memory, and for this specific purpose &quot;IPL Text&quot; is placed on the disk by the stand-alone DASDI (Direct Access Storage Device Initialization) program or an equivalent program running under an operating system, e.g., ICKDSF, but IPL-able tapes and card decks are distributed with this &quot;IPL Text&quot; already present.
+
+== Burroughs Bootstrap From Tape ==
+
+A noteworthy variation of this is found on the [[Burroughs Corporation|Burroughs]] [[B1700]] where there is neither a bootstrap ROM nor a hardwired IPL operation. Instead, after the system is reset it reads and executes opcodes sequentially from a tape drive mounted on the front panel; this sets up a boot loader in RAM which is then executed. However, since this makes few assumptions about the system it can equally well be used to load diagnostic (Maintenance Test Routine) tapes which display an intelligible code on the [[front panel]] even in cases of gross CPU failure.
+
+== Quick boot ==
+
+Several devices are available that enable the user to &quot;quick-boot&quot; to a usually Linux-powered OS for various simple tasks such as Internet access (such as [[Splashtop]] and [[Latitude ON]]).&lt;ref&gt;{{cite web |url=http://www.linuxdevices.com/news/NS2560585344.html |title=MontaVista Linux drives Dell's quick-boot feature |first=Eric |last=Brown |date=2008-10-02 |publisher=linuxdevices.com |accessdate=20 November 2010}}&lt;/ref&gt;&lt;ref&gt;{{cite web |url=http://www.phoronix.com/scan.php?page=article&amp;item=splashtop_voodoo&amp;num=1 |title=SplashTop Linux On HP, Dell Notebooks? |first=Michael |last=Larabel |date=June 14, 2008 |publisher=[[Phoronix]] |accessdate=20 November 2010}}&lt;/ref&gt;&lt;ref&gt;{{cite web |url=http://www.youtube.com/watch?v=InUpF5Uetfc |title=Voodoo Envy's Instant-On IOS (powered by Splashtop) |publisher=YouTube |accessdate=20 November 2010}}&lt;/ref&gt;&lt;ref&gt;{{cite web |url=http://www.gadgets-reviews.com/voodoo-envy-133.html |title=Voodoo Envy 133 Laptop vs MacBook Air |publisher=gadgets-reviews.com |date=July 29, 2008 | accessdate=20 November 2010}}&lt;/ref&gt;&lt;ref&gt;{{cite web |url=http://www.voodoopc.com/ |title=Voodoopc homepage |accessdate=20 November 2010}}&lt;/ref&gt;&lt;ref&gt;{{cite web |url=http://www.linuxdevices.com/news/NS7654890804.html |title=5-second Linux boots on low-powered hardware |first=Eric |last=Brown |date=2008-10-03 |accessdate=20 November 2010}}&lt;/ref&gt;&lt;ref&gt;{{cite web |url=http://www.youtube.com/watch?v=y40Z1mvGOt8 |title=Latitude ON  |publisher=YouTube |accessdate=20 November 2010}}&lt;/ref&gt;&lt;ref&gt;{{cite web |url=http://www.linuxdevices.com/news/NS5185504436.html |title=Linux boots in 2.97 seconds |first=Eric |last=Brown|date=2008-11-07 |publisher=linuxdevices.com |accessdate=20 November 2010}}&lt;/ref&gt;&lt;ref&gt;{{cite web |url=http://www.linuxdevices.com/news/NS8282586707.html?kc=rss |title=News |publisher=linuxdevices.com |accessdate=20 November 2010}}&lt;/ref&gt;
+
+== See also ==
+
+* [[Boot disk]]
+* [[Bootkit]]
+* [[Comparison of boot loaders]]
+* [[Das U-Boot]]
+* [[Linux startup process]]
+* [[Live CD]]
+* [[Live USB]]
+* [[Microreboot]]
+* [[Multi boot]]
+* [[Network booting]]
+* [[PC booter]]
+* [[Rebooting (computing)]]
+* [[RedBoot]]
+* [[Windows NT Startup Process]]
+* [[Windows Vista startup process]]
+* [[Windows To Go]]
+
+== Notes ==
+{{Reflist|group=NB}}
+
+== References ==
+
+{{Reflist|2}}
+
+== Further reading ==
+{{wiktionary|bootup}}
+{{Commons category}}
+
+* [http://duartes.org/gustavo/blog/post/how-computers-boot-up How Computers Boot Up]
+* [http://www.societyofrobots.com/bootloader_50_robot.shtml Practical bootloader tutorial for ATmega microcontrollers]
+* [http://www.osdcom.info/content/view/33/39/ Booting with Grub] at OSDEV Community
+* [http://www.viralpatel.net/taj/tutorial/hello_world_bootloader.php Tutorial on writing hello world bootloader]
+* [http://www.vnutz.com/content/program_a_bootstrap_loader x86 BootStrap Programming Tutorial]
+* [http://www.khmere.com/freebsd_book/html/ch02.html Bootstrapping FreeBSD]
+* [http://lateral.netmanagers.com.ar/stories/23.html The Linux boot process unveiled]
+* [http://www.kernelthread.com/mac/osx/arch_boot.html Mac OS X Boot Process]
+* [http://homepage.ntlworld.com./jonathan.deboynepollard/FGA/dos-windows-boot-process.html The DOS and DOS/Windows boot processes]
+* [http://www.pocketpcfaq.com/faqs/5.0/reset.htm Windows Mobile 5.0 Soft Reset]
+* [http://www.hardreset.eu/index_en.html Pocket PC devices hard reset and soft reset]
+* [http://www.hard-reset.com/  Cell phone, Tablet and Pocket PC devices hard reset and soft reset]
+* [http://www.goodells.net/multiboot/ Understanding Multibooting]
+{{Operating System}}
+
+[[Category:Booting]]
+[[Category:BIOS]]
+
+[[ar:Ø¥ÙÙØ§Ø¹ (Ø­Ø§Ø³ÙØ¨)]]
+[[be:ÐÐ°Ð³ÑÑÐ·ÐºÐ° Ð°Ð¿ÐµÑÐ°ÑÑÐ¹Ð½Ð°Ð¹ ÑÑÑÑÑÐ¼Ñ]]
+[[ca:Carregador de l'arrencada]]
+[[cs:BootovÃ¡nÃ­]]
+[[da:Boot]]
+[[de:Booten]]
+[[et:Buutimine]]
+[[es:Arranque (informÃ¡tica)]]
+[[fa:Ø±Ø§ÙâØ§ÙØ¯Ø§Ø²Û]]
+[[fr:Amorce (informatique)]]
+[[gl:Xestor de arranque]]
+[[ko:ë¶í]]
+[[id:Pengebutan]]
+[[is:RÃ¦siforrit]]
+[[it:Boot]]
+[[he:××ª×××]]
+[[lv:SÄknÄÅ¡anas programma]]
+[[hu:Boot]]
+[[ml:à´¬àµà´àµà´àµ à´²àµà´¡àµ¼]]
+[[ms:But (komputer)]]
+[[nl:Opstarten]]
+[[new:à¤¬à¥à¤ à¤²à¥à¤¡à¤°]]
+[[ja:ãã¼ã]]
+[[no:Oppstart]]
+[[nn:Oppstart]]
+[[pl:Program rozruchowy]]
+[[pt:Boot]]
+[[ru:ÐÐ°Ð³ÑÑÐ·ÑÐ¸Ðº Ð¾Ð¿ÐµÑÐ°ÑÐ¸Ð¾Ð½Ð½Ð¾Ð¹ ÑÐ¸ÑÑÐµÐ¼Ñ]]
+[[sq:Booting]]
+[[simple:Booting]]
+[[sk:Bootovanie]]
+[[sl:Zagonski nalagalnik]]
+[[sr:Bootloader]]
+[[fi:KÃ¤ynnistys]]
+[[sv:Bootning]]
+[[tr:Booting]]
+[[uk:ÐÐ°Ð²Ð°Ð½ÑÐ°Ð¶ÐµÐ½Ð½Ñ Ð¾Ð¿ÐµÑÐ°ÑÑÐ¹Ð½Ð¾Ñ ÑÐ¸ÑÑÐµÐ¼Ð¸]]
+[[vi:Khá»i Äá»ng mÃ¡y tÃ­nh]]
+[[zh-yue:èµ·åç¨å¼]]
+[[zh:ååç¨å¼]]</rev></revisions></page></pages></query></api>

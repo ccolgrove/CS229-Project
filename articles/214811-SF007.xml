@@ -1,0 +1,89 @@
+<?xml version="1.0"?><api><query><pages><page pageid="214811" ns="0" title="Automake"><revisions><rev xml:space="preserve">{{Infobox software
+| name                   = Automake
+| logo                   = [[Image:Heckert GNU white.svg|100px]]
+| developer              = [[GNU|The GNU Project]]
+| latest release version = 1.11.1
+| latest release date    = {{release date and age|2009|12|08}}
+| operating system       = [[Cross-platform]]
+| genre                  = [[Programming tool]]
+| license                = [[GNU General Public License]]
+| website                = http://sourceware.org/automake/
+}}
+[[Image:Autoconf-automake-process.svg|thumb|400px|Flow diagram of autoconf and automake]]
+'''GNU Automake''' is a [[programming tool]] that produces portable [[makefile]]s for use by the [[make (software)|make]] program, used in compiling software. It is made by the Free Software Foundation as one of [[GNU]] programs, and is part of the [[GNU build system]].  The makefiles produced follow the [[GNU Coding Standards]].
+
+It is written in the [[Perl]] [[programming language]] and must be used with [[autoconf|GNU autoconf]]. Automake contains the following commands:
+
+*''aclocal''
+*''automake''
+
+''aclocal'', however, is a general-purpose program that can be useful to autoconf users.  The [[GNU Compiler Collection]], for example, uses ''aclocal'' even though its makefile is hand written.
+
+Like Autoconf, Automake used to be not entirely [[backwards compatible]]. For example, a project created with automake 1.4 will not necessarily work with automake 1.9.  The situation however has improved noticeably with more recent releases.
+
+==Approach==
+Automake aims to allow the programmer to write a makefile in a higher-level language, rather than having to write the whole makefile manually.  In simple cases, it suffices to give:
+*a line that declares the name of the program to build;
+*a list of source files;
+*a list of command-line options to be passed to the [[compiler]] (for example, in which directories header files will be found);
+*a list of command-line options to be passed to the [[Linker (computing)|linker]] (which libraries the program needs and in what directories they are to be found).
+
+From this information, Automake generates a makefile that allows the user to:
+*compile the program;
+*clean (i.e., remove the files resulting from the compilation);
+*install the program in standard directories;
+*uninstall the program from where it was installed;
+*create a source distribution archive (commonly called a ''tarball'');
+*test that this archive is self-sufficient, and in particular that the program can be compiled in a directory other than the one where the sources are deployed.
+
+===Dependency generation===
+Automake also takes care of automatically generating&lt;ref&gt;[http://sources.redhat.com/automake/automake.html#Dependency-Tracking Automatic Dependency Tracking], Automake Manual&lt;/ref&gt; the [[Coupling (computer science)|dependency]] information, so that when a source file is modified, the next invocation of the make command will know which source files need to be recompiled.  If the compiler allows it, Automake tries to make the dependency system dynamic: whenever a source file is compiled, that file's dependencies are updated by asking the compiler to regenerate the file's dependency list. In other words, dependency tracking is a side effect of the compilation process.
+
+This attempts to avoid the problem with some static dependency systems, where the dependencies are detected only once when the programmer starts working on the project.&lt;ref&gt;[http://sources.redhat.com/automake/automake.html#Dependency-Tracking-Evolution Dependency Tracking in Automake], Automake Manual&lt;/ref&gt;  In such a case, if a source file gains a new dependency (e.g., if the programmer adds a new #include directive in a [[C (programming language)|C]] source file), then a discrepancy is introduced between the real dependencies and those that are used by the compilation system.  The programmer should then regenerate the dependencies, but runs the risk of forgetting to do so.
+
+In the general case, automake generates dependencies via the bundled [[depcomp]] script, which will invoke the compiler appropriately or fall back to [[makedepend]].  If the compiler is a sufficiently recent version of [[GNU Compiler Collection|gcc]], however, automake will inline the dependency generation code to call gcc directly.
+
+===Libtool===
+Automake can also help with the compilation of libraries by automatically generating makefiles that will invoke GNU [[Libtool]].  The programmer is thus exempted from having to know how to call Libtool directly, and the project benefits from the use of a portable library creation tool.
+
+==See also==
+{{Portal|Free software}}
+
+* [[CMake]]
+* [[imake]]
+* [[Flowtracer]]
+
+==References==
+{{Refbegin}}
+* Gary V. Vaughan, Ben Elliston, Tom Tromey: ''Gnu Autoconf, Automake, and Libtool'', Sams, ISBN 1-57870-190-2
+{{Reflist|2}}
+{{Refend}}
+
+==External links==
+* [http://sources.redhat.com/automake/ Automake home page]
+* [http://sources.redhat.com/autobook/ Online version of ''The Goat Book'' aka Autobook]
+* [http://autotoolset.sourceforge.net/ Autotoolset home page]
+* Article &quot;[http://www.openismus.com/documents/linux/automake/automake.shtml Using Automake and Autoconf with C++]&quot; by Murray Cumming
+* [http://www.flameeyes.eu/autotools-mythbuster/ Autotools Mythbuster]
+
+===Tutorials===
+* Tutorial for beginners &quot;[http://www.developingprogrammers.com/index.php/2006/01/05/autotools-tutorial/ Autotools Tutorial]&quot; by Sarah George
+* The &quot;[http://www.lrde.epita.fr/~adl/autotools.html Autotools Tutorial]&quot; by Alexandre Duret-Lutz introduces [[Autoconf]], Automake, [[Libtool]], and [[Gettext]].
+* [http://autotoolset.sourceforge.net/tutorial.html Learning the GNU Development tools]
+
+{{GNU}}
+
+[[Category:Free software programmed in Perl]]
+[[Category:Compiling tools]]
+[[Category:GNU Project software]]
+[[Category:Build automation]]
+[[Category:Free cross-platform software]]
+
+[[es:GNU Automake]]
+[[fr:GNU Automake]]
+[[ko:Automake]]
+[[pl:Automake]]
+[[pt:Automake]]
+[[ru:Automake]]
+[[uk:Automake]]
+[[zh:Automake]]</rev></revisions></page></pages></query></api>

@@ -1,0 +1,561 @@
+<?xml version="1.0"?><api><query><redirects><r from="Wine compatibility layer" to="Wine (software)" /></redirects><pages><page pageid="37583" ns="0" title="Wine (software)"><revisions><rev xml:space="preserve">{{Infobox software
+| name                   = Wine
+| title                  = 
+| logo                   = [[File:Winehq logo glass.png|64px|Wine logo]]
+| screenshot             = [[File:Wineie on ubuntu.png|260px]]
+| caption                = Screenshot of &quot;Wine Internet Explorer&quot;, a simplistic shell of Wine-[[Gecko (layout engine)|Gecko]], running on [[Ubuntu (operating system)|Ubuntu]].
+| collapsible            = 
+| author                 = [[Alexandre Julliard]]
+| developer              = [http://source.winehq.org/source/AUTHORS Wine authors&lt;br /&gt;](1,249)
+| released               = {{Start date|1993|07|04|df=yes/no}}&lt;!-- based on http://wiki.winehq.org/WineReleasePlan &amp; the first Wine ChangeLog entry minus initial development time period(~4 days) --&gt;
+| discontinued           = 
+| latest release version = 
+| latest release date    = &lt;!-- {{Start date and age|YYYY|MM|DD|df=yes/no}} --&gt;
+| latest preview version = 
+| latest preview date    = &lt;!-- {{Start date and age|YYYY|MM|DD|df=yes/no}} --&gt;
+| frequently updated     = yes &lt;!-- Release version update? Don't edit this page, just click on the version number! --&gt;&lt;!-- DO NOT include this parameter unless you know what it does --&gt;
+| programming language   = [[C (programming language)|C]]
+| operating system       = [[Unix-like]] systems
+| platform               = [[Cross-platform]]
+| size                   = 18 MB (compressed)
+| language               = &lt;!-- (according to http://wiki.winehq.org/) English + at least 3 translations (PortuguÃªs, Deutsch &amp; Spanish) --&gt;
+| status                 = Active
+| genre                  = [[Compatibility layer]]
+| license                = [[GNU Lesser General Public License|GNU LGPL]] v2.1+
+| website                = {{URL|http://www.winehq.org/}}
+}}
+
+'''Wine''' is a [[free software|free]] [[software application]] that aims to allow computer programs written for [[Microsoft Windows]] to run on [[Unix-like]] [[operating system]]s. Wine also provides a [[software library]], known as '''Winelib''', against which developers can [[compiler|compile]] Windows applications to help [[porting|port]] them to Unix-like systems.&lt;ref&gt;{{cite web
+ | url = http://winehq.org/site/winelib
+ | title = Winelib
+ | publisher = Wine HQ
+ | accessdate = 29 June 2008
+}}&lt;/ref&gt;
+
+Wine is a [[compatibility layer]], not an emulator. It duplicates functions of a Windows computer by providing alternative implementations of the [[Dynamic-link library|DLL]]s that Windows programs call,{{Citation needed|date=June 2011}} and a process to substitute for the [[Windows NT]] [[kernel (computer science)|kernel]]. This method of duplication differs from other methods that might also be considered emulation, where Windows programs run in a [[virtual machine]].&lt;ref&gt;{{cite web
+ | url=http://wiki.winehq.org/FAQ#head-c9e6502ad636315e905d07f7e44594757a6738e3
+ | title=Is Wine an emulator? There seems to be disagreement.
+}}&lt;/ref&gt; Wine is predominantly written using [[black-box testing]] reverse-engineering, to avoid [[copyright]] issues.&lt;ref&gt;{{cite web
+ | url=http://forum.winehq.org/viewtopic.php?p=37364#37364
+ | title=Legal Issues
+ | first=James
+ | last=Mckenzie
+ | date=26 December 2009
+ | publisher=WineHQ Forums
+}}&lt;/ref&gt;
+
+The name ''Wine'' initially was an acronym for'' '''WIN'''dows '''E'''mulator''.&lt;ref&gt;[http://www.faqs.org/faqs/windows-emulation/wine-faq WINE FAQ] Old meaning of the name even used until 1997&lt;/ref&gt; Its meaning later shifted to the [[recursive acronym|recursive]] [[backronym]], '''''W'''ine '''I'''s '''N'''ot an '''E'''mulator'' in order to differentiate the software from other emulators.&lt;ref&gt;[http://groups.google.com/group/comp.os.linux.misc/msg/eb77fac360ad4a52?dmode=source Wine Is Not an Emulator] First proposal to change the meaning of the name WINE{{Dead link|date=October 2010}}&lt;/ref&gt; While the name sometimes appears in the forms ''WINE'' and ''wine'', the project developers have agreed to standardize on the form ''Wine''.&lt;ref&gt;{{cite web | url=http://wiki.winehq.org/FAQ?action=recall&amp;rev=217#head-8b4fbbe473bd0d51d936bcf298f5b7f0e8d25f2e | title=Why do some people write WINE and not Wine? |work = Wine Wiki FAQ | publisher=Official Wine Wiki| date=7 July  2008 | accessdate=13 July 2008 }}&lt;/ref&gt;
+
+In a 2007 survey by desktoplinux.com of 38,500 Linux desktop users, 31.5% of respondents reported using Wine to run Windows applications.&lt;ref&gt;{{cite web
+ | title = 2007 Desktop Linux Market survey
+ | url = http://www.desktoplinux.com/cgi-bin/survey/survey.cgi?view=archive&amp;id=0813200712407
+ | date = 21 August 2007
+ | accessdate = 8 October 2007
+}}&lt;/ref&gt;  This plurality was larger than all [[x86 virtualization]] programs combined, as well as larger than the 27.9% who reported not running Windows applications.&lt;ref&gt;{{cite web
+ | url=http://www.desktoplinux.com/news/NS8454912761.html
+ | title=Running Windows applications on Linux
+ | work=2007 Desktop Linux Survey results
+ | first=Steven J. | last=Vaughan-Nichols
+ | date=22 August 2007
+ | publisher=DesktopLinux
+}}&lt;/ref&gt;
+
+==History==
+Bob Amstadt (the initial project leader) and Eric Youngdale started the Wine project in 1993 as a way to run [[Microsoft Windows|Windows]] applications on [[Linux]]. It was inspired by two [[Sun Microsystems]]' products, the [[Wabi (software)|Wabi]] for the [[Solaris (operating system)|Solaris]] operating system, and the [[Public Windows Initiative]]&lt;ref&gt;{{cite newsgroup
+ | url=http://groups.google.com/group/comp.windows.x.i386unix/browse_thread/thread/88fbd87c0ae2e48f/5003eb8ed33ae522
+ | title=Wine project status
+ | first=Bob
+ | last=Amstadt
+ | newsgroup=comp.windows.x.i386unix
+ | date=29 September 1993
+ | accessdate=13 July 2008
+}}&lt;/ref&gt; (an attempt to get [[Windows API]] fully reimplemented in the public domain as an [[ISO]] standard, but rejected by the entity due to pressure from [[Microsoft]] in 1996).&lt;ref&gt;{{cite web
+ | url=http://findarticles.com/p/articles/mi_m0CGN/is_1999_May_7/ai_54580586
+ | title=Sun Uses ECMA as Path to ISO Java Standardization
+ | publisher=Computergram International
+ | date=7 May 1999
+ | accessdate=13 July 2008
+}}&lt;/ref&gt; Wine originally targeted Windows 3.x ([[16-bit application|16-bit]]) [[application software]], but  {{As of|2010|lc = on}} focuses on 32-bit and 64-bit applications. The project originated in discussions on [[Usenet]] in [news:comp.os.linux comp.os.linux] in June 1993.&lt;ref&gt;{{cite newsgroup
+ | title=WABI available on linux or not
+ | author=Byron A Jeff
+ | date=25 August 1993
+ | newsgroup=comp.os.linux.misc
+ | url=http://groups.google.com/group/comp.os.linux.misc/msg/daa52d28ff44919f
+ | accessdate= 21 September 2007
+}}&lt;/ref&gt; [[Alexandre Julliard]] has led the project since 1994.
+
+The project has proved time-consuming and difficult for the developers, mostly because of incomplete and incorrect [[documentation]] of the Windows API. While [[Microsoft]] extensively documents most Win32 [[subroutine|functions]], some areas such as [[file format]]s and [[protocol (computing)|protocol]]s have no official Microsoft specification. Microsoft Windows also includes undocumented low-level functions and obscure [[computer bug|bugs]] that Wine must duplicate precisely in order to allow some applications to work properly.&lt;ref&gt;{{cite interview
+ | last = Loli-Queru | first = Eugenia
+ | url = http://www.osnews.com/story/227
+ | title = Interview with WINE's Alexandre Julliard
+ | date = 29 October 2001
+ | work = OSnews
+ | accessdate = 30 June 2008
+ | quote = Usually we start from whatever documentation is available, implement a first version of the function, and then as we find problems with applications that call this function we fix the behavior until it is what the application expects, which is usually quite far from what the documentation states.
+}}&lt;/ref&gt; Consequently, the Wine team has [[reverse engineering|reverse-engineered]] many function calls and file formats in such areas as [[Thunk (compatibility mapping)|thunk]]ing.{{citation needed|date=October 2011}} More recently some developers have suggested enhanced tactics such as examining the sources of extant free and open-source software.
+
+The Wine project originally released Wine under the same [[MIT License]] as the X Window System, but owing to concern about [[proprietary software|proprietary]] versions of Wine not contributing their changes back to the core project,&lt;ref&gt;{{cite web
+ | url=http://www.winehq.org/pipermail/wine-devel/2002-February/003912.html
+ | title=Wine license change
+ | first=Jeremy | last=White
+ | date=6 February 2002
+ | accessdate=27 April 2010
+}}&lt;/ref&gt; work as of March 2002 has used the LGPL for its licensing.&lt;ref&gt;{{cite web
+ | url=http://www.winehq.org/pipermail/wine-devel/2002-February/004487.html
+ | title=License change vote results
+ | author=Alexandre Julliard
+ | date=18 February 2002
+ | accessdate=27 April 2010
+}}&lt;/ref&gt;
+
+Wine officially entered beta with version 0.9 on 25 October 2005.&lt;ref&gt;{{cite web
+ | url=http://www.winehq.org/news/2005102502
+ | title=Beta!
+ | date=25 October 2005
+ | accessdate=9 December 2010
+}}&lt;/ref&gt; Version 1.0 was released on 17 June 2008,&lt;ref&gt;{{cite web
+ | url=http://winehq.org/announce/1.0
+ | title=Announcement of version 1.0
+ | publisher=Wine HQ
+ | date=17 June 2008
+ | accessdate=1 September 2008
+}}&lt;/ref&gt; after 15 years of development. Version 1.2 was released on 16 July 2010.&lt;ref&gt;{{cite web
+ | url=http://www.winehq.org/news/2010071601
+ | title=Release News
+ | first=Alexandre
+ | last=Julliard
+ | date= 16 July 2010
+}}&lt;/ref&gt; Development versions are released roughly every two weeks.
+
+=== Corporate sponsorship ===
+The main corporate sponsor of Wine is [[CodeWeavers]], which employs Julliard and many other Wine developers to work on Wine and on [[CrossOver]], CodeWeavers' supported version of Wine.  Crossover includes some application-specific tweaks not considered suitable for the WineHQ version, as well as some additional proprietary components.&lt;ref&gt;{{cite news
+ | first=Jeremy | last=White
+ | url = http://www.codeweavers.com/support/forums/announce/?t=24;mhl=100155;msg=100155#msg100155
+ | title = Announcing CrossOver 10.0 and CrossOver Games 10.0, The Impersonator
+ | publisher = Codeweavers.com
+ | date=27 January 2011
+ | accessdate=28 January 2011
+}}&lt;/ref&gt;
+
+The involvement of [[Corel]] for a time assisted the project, chiefly by employing Julliard and others to work on it. Corel had an interest in porting [[WordPerfect Office]], its [[office suite]], to Linux (especially [[Corel Linux]]).  Corel later cancelled all Linux-related projects after Microsoft made major investments in Corel, stopping their Wine effort.&lt;ref&gt;{{cite news
+ | first=Steven J.
+ | last=Vaughan-Nichols
+ | url = http://www.linux.com/archive/feature/21411
+ | title = That's All Folks: Corel Leaves Open Source Behind
+ | publisher = Linux.com
+ | date=25 February 2002
+ | accessdate=3 January 2009
+}}&lt;/ref&gt;
+
+Other corporate sponsors include [[Google]], which hired CodeWeavers to fix Wine so [[Picasa]] ran well enough to be ported directly to Linux using the same binary as on Windows; Google later paid for improvements to Wine's support for [[Adobe Photoshop|Adobe Photoshop CS2]].  Wine is also a regular beneficiary of Google's [[Summer of Code]] program.&lt;ref&gt;{{cite mailing list
+ | last=Kegel | first=Dan
+ | url=http://article.gmane.org/gmane.comp.emulators.wine.devel/56872
+ | title=Google's support for Wine in 2007
+ | date=14 February 2008
+ | mailinglist=wine-devel
+ | accessdate=3 January 2009
+}}&lt;/ref&gt;&lt;ref&gt;{{cite web
+ | url=http://code.google.com/opensource/wine.html
+ | title=Open Source Patches: Wine
+ | publisher=Google
+ | accessdate=7 September 2008
+}}&lt;/ref&gt;
+
+==Architecture==
+[[File:ClamWin on Ubuntu.png|thumb|right|[[ClamWin]] GUI]]
+Wine implements the Windows API entirely in [[user space]], rather than as a [[kernel module]]. Services normally provided by the kernel in Windows&lt;ref&gt;See the &quot;[[Windows service]]&quot; article&lt;/ref&gt; are provided by a [[daemon (computing)|daemon]] known as the '''wineserver''', the task of which is to implement basic Windows functionality, as well as integration with the [[X Window System]], and translation of [[signal (computing)|signals]] into native Windows exceptions.
+
+Although Wine implements some aspects of the [[Windows kernel]], it is not possible to use native Windows drivers with it, due to Wine's underlying architecture. This prevents certain applications from working, such as some [[Copy protection|copy-protected]] titles.{{Clarify|date=August 2011|reason= A &quot;title&quot; is a computer software?}}
+
+Wine is primarily developed for Linux, but the [[Mac OS X]], [[FreeBSD]], and [[Solaris Operating System|Solaris]] [[Porting|ports]] are currently (as of January 2009) well maintained.&lt;ref&gt;{{cite web
+ | url = http://www.winehq.org/site/docs/wine-faq/index#UNDER-WHAT-PLATFORMS-WILL-WINE-RUN
+ | title=Under what hardware platform(s) and operating system(s) will Wine(Lib) run?
+ | work=Wine FAQ
+ | accessdate=3 January 2009
+}}{{dead link|date=October 2011}}&lt;/ref&gt; Wine is also available for [[OpenBSD]] and [[NetBSD]] through [[Ports collection|OpenBSD Ports]]
+&lt;ref&gt;{{cite web
+ | url=http://openports.se/emulators/wine
+ | title=OpenBSD Ports: emulators/wine
+ | publisher=Openports.se
+ | date= |accessdate=27 April 2010
+}}&lt;/ref&gt; and NetBSD [[pkgsrc]] respectively. Since October 2010, Wine also works on the [[ARM architecture|ARM]] platform when used as Winelib (which lets developers compile Windows code on Linux using Wine as a library).&lt;ref&gt;{{cite web
+ | url=http://www.winehq.org/announce/1.3.4
+ | title=The Wine development release 1.3.4 announcement
+ | publisher=Winehq.org
+ | accessdate=15 October 2010
+}}&lt;/ref&gt; Some versions of Wine's DLLs are available for Microsoft Windows,&lt;ref&gt;{{cite web
+ | url=http://sourceforge.net/project/showfiles.php?group_id=6241&amp;package_id=112520
+ | title=Wine Win32 Packages
+ | publisher=Sourceforge.net
+ | accessdate=17 October 2010
+}}&lt;/ref&gt; but Wine does not fully compile or run on Windows yet.&lt;ref&gt;{{cite web
+ | url=http://wiki.winehq.org/WineOnWindows
+ | title=The Official Wine Wiki: Wine on Windows
+ | publisher=Wiki.winehq.org
+ | accessdate=27 April 2010
+}}&lt;/ref&gt;
+
+== Functionality ==
+[[Image:History Of WineAppDB.gif|thumb|300px|An animation showing progress in application compatibility according to test results from Wine AppDB (click on the picture to see the animation).&lt;br /&gt;
+{{legend|#ececec|Software that runs flawlessly (&quot;Platinum&quot;)}}
+{{legend|#fff600|Software that runs flawlessly with configuration (&quot;Gold&quot;)}}
+{{legend|#c0c0c0|Software with minor Issues (&quot;Silver&quot;)}}
+{{legend|#fcba0a|Software with major Issues (&quot;Bronze&quot;)}}
+{{legend|#999966|Unusable software (&quot;Garbage&quot;)}}]]
+
+The developers of the [[Direct3D]] portions of Wine have continued to implement new features such as [[pixel shaders]] to increase game support.&lt;ref&gt;{{cite web
+ | url = http://wiki.winehq.org/DirectX-Shaders
+ | title = DirectX-Shaders
+ | publisher=Official Wine Wiki
+ | accessdate=3 January 2009
+}}&lt;/ref&gt; Wine can also use native DLLs directly, thus increasing functionality, but then a license for Windows is needed unless the DLLs were distributed with the application itself.
+
+''winecfg'' is a GUI configuration utility included with Wine. Winecfg makes configuring Wine easier by making it unnecessary to edit the registry directly, although, if needed, this can be done with the included registry editor (similar to Windows ''[[regedit]]''). Wine also includes its own open-source implementations of several other Windows programs, such as ''[[Notepad (Windows)|notepad]]'', ''[[wordpad]]'', ''[[Control Panel (Windows)|control]]'', ''[[Internet Explorer|iexplore]]'', and ''[[Windows Explorer|explorer]]''.
+
+The Wine Application Database ''AppDB'' is a community-maintained database of which Windows applications work, and how well they work, with Wine.
+
+=== Backward compatibility ===
+[[File:Wineon64bit.png|thumb|left|200px|Wine running an old [[16-bit]] Windows game called [[Chip's Challenge]] on an [[x86-64]] ([[64-bit]]) computer.]]
+[[File:Wine version.png|thumb|right|A screenshot showing how Wine can be configured to mimic different versions of Windows, going as far back as Windows 2.0 as shown.]]
+Wine ensures good [[backward compatibility]] with legacy Windows applications, including those written for [[Windows 3.1x|Windows 3.1]].&lt;ref name=&quot;winelegacy&quot;&gt;{{cite web
+ | url=http://media.codeweavers.com/pub/crossover/case_studies/WinLegacySupport.pdf
+ | title=Windows Legacy Application Support Under Wine
+ | accessdate=9 December 2010
+}}&lt;/ref&gt;  Wine can mimic different Windows versions required for some programs, going as far back as Windows version 2.0.&lt;ref name=&quot;Wine Windows 2.0&quot;&gt;{{cite web
+ | url=http://www.maximumpc.com/article/still_need_to_run_windows_apps_have_a_glass_of_wine
+ | title=Still need to run Windows apps? Have a glass of wine
+ | first=Robert | last=Strohmeyer
+ | date= 6 April 2007
+ | accessdate=9 December 2010
+}}&lt;/ref&gt; However, Windows 1.x and Windows 2.x support was removed from Wine development version 1.3.12 if DOSBox is installed on the system (see below on [[Wine (software)#MS-DOS|MS-DOS]]). You can nevertheless select &quot;Windows 2.0&quot; as the Windows version you want to emulate, but Wine still won't run Windows 2.0 programs.
+
+Backward compatibility in Wine is superior to that of Windows, as newer versions of Windows can force users to upgrade legacy Windows applications.  In many cases, Wine can offer better legacy support than newer versions of Windows with &quot;Compatibility Mode&quot;.&lt;ref name=&quot;winelegacy&quot; /&gt;{{Citation needed|The document comes from Codeweavers which has an economical interest in Wine and may thus be biased.|date=August 2011}}
+
+Wine can run [[16-bit]] Windows programs on a 64-bit operating system, which uses an [[x86-64]] (64-bit) CPU (example screenshot on the left). 64-bit versions of Microsoft Windows will not run 16-bit Windows programs.&lt;ref&gt;{{cite web
+ | url=http://www.windowsitpro.com/article/performance/why-can-t-i-install-16-bit-programs-on-a-computer-running-the-64-bit-version-of-windows-xp-.aspx
+ | title=Why can't I install 16-bit programs on a computer running the 64-bit version of Windows XP?
+ | first=John | last=Savill
+ | date=11 February 2002
+ | accessdate=9 December 2010
+}}&lt;/ref&gt;
+
+Wine partially supports Windows [[console application]]s, and the user can choose which backend to use to manage the console (choices include&lt;ref&gt;{{cite web
+ | url = http://www.winehq.org/docs/wineusr-guide/cui-programs
+ | title = Text mode programs (CUI: Console User Interface)
+ | publisher=Wine User Guide
+ | accessdate=22 May 2010
+}}&lt;/ref&gt; raw streams, [[curses (programming library)|curses]], and [[user32]]). When using the raw streams or curses backends, Windows applications will run in a Unix terminal.
+
+=== 64-bit applications ===
+{{Update|date=October 2010}}
+Preliminary support for [[64-bit]] [[Microsoft Windows|Windows]] applications was added to Wine 1.1.10, in December 2008.&lt;ref&gt;{{cite mailing list
+ | first=Maarten | last=Lankhorst
+ | url= http://www.winehq.org/pipermail/wine-devel/2008-December/070941.html
+ | title = Wine64 hello world app runs!
+ | date = 5 December 2008
+ | mailinglist=wine-devel
+ | accessdate = 15 December 2008
+}}&lt;/ref&gt; This currently requires at least [[GNU Compiler Collection|gcc]] version 4.4, and the Wine developers expect that it will take significant time before support stabilizes. However, as almost all Windows applications are {{As of|2010|alt=currently}} available in 32-bit versions, and the 32-bit version of Wine can run on 64-bit platforms, this is seen as a non-issue.
+
+The 64-bit port of Wine also has preliminary [[WoW64]] support ({{As of|2010|April|lc=on}}), which allows both 32-bit and 64-bit Windows applications to run inside the same Wine instance.&lt;ref&gt;{{cite web
+ | url=http://wiki.winehq.org/Wine64ForPackagers
+ | title=Wine64 for packagers
+ | publisher=Official Wine Wiki
+ | accessdate=20 April 2010
+}}&lt;/ref&gt;
+
+=== Third-party applications ===
+[[File:Pegasus Mail Wine.png|thumb|right|[[Pegasus Mail]] running via Wine, version 1.1.42.  (The [[Font rasterization|font smoothing]] is enabled by using [[winetricks]].  You can see the smooth fonts in the picture when it's viewed at full size.)]]
+Some applications require more tweaking than simply installing the application in order to work properly, such as manually configuring Wine to use certain Windows DLLs.  The Wine project does not integrate such [[workaround]]s into the Wine codebase, instead preferring to focus solely on improving Wine's implementation of the Windows API.  While this approach focuses Wine development on long-term compatibility, it makes it difficult for users to run applications that require workarounds.  Consequently, many third party applications have been created to ease the use of those applications that don't work ''[[out of the box]]'' within Wine itself. The Wine wiki maintains a page of current and obsolete third party applications.&lt;ref&gt;{{cite web
+ | url=http://wiki.winehq.org/ThirdPartyApplications
+ | title=Third Party Applications
+ | publisher=Official Wine Wiki
+ | accessdate=3 January 2009
+}}&lt;/ref&gt;
+
+*''[[CrossOver]]'', proprietary software
+*''[[Bordeaux (software)|Bordeaux]]'' is a proprietary Wine GUI configuration manager that runs winelib applications. It also supports installation of third party utilities, installation of applications and games, and the ability to use custom configurations. ''Bordeaux'' currently runs on Linux, FreeBSD, PC-BSD, Solaris, OpenSolaris, [[OpenIndiana]]&lt;ref&gt;{{cite web
+ | url=http://openindiana.org/pipermail/openindiana-discuss/2010-October/thread.html#544
+ | title=OpenIndiana Bordeaux annonucement
+ | publisher=OpenIndiana-announce mailing list
+ | accessdate=1 October 2010
+}}&lt;/ref&gt;&lt;ref&gt;{{cite web
+ | url=http://www.bordeauxgroup.com/press-release/bordeaux-openindiana
+ | title=Bordeaux group press release
+ | publisher=Bordeaux group site
+ | accessdate=1 October 2010
+}}&lt;/ref&gt;, and Mac OS X computers.
+*''[[Winetricks]]'' is a [[script (computing)|script]] to install some basic components (typically Microsoft DLLs and fonts) required for some applications to run correctly under Wine. The Wine project will accept bug reports for users of Winetricks, unlike most third-party applications. It is maintained by Wine developer Dan Kegel.&lt;ref&gt;{{cite web
+ | url=http://wiki.winehq.org/winetricks
+ | title=winetricks
+ | publisher=Official Wine Wiki
+ | accessdate=3 January 2009
+}}&lt;/ref&gt;
+*''[[QT4Wine]]'' is an open Gui for advanced setup of Wine.
+*''[[Wine-Doors]]'' is an application-management tool for the [[GNOME]] desktop which adds functionality to Wine. Wine-Doors is an alternative to WineTools which aims to improve upon WineTools' features and extend on the original idea with a more modern design approach.&lt;ref&gt;{{cite web
+ | url=http://www.wine-doors.org/
+ | title=Wine doors
+ | publisher=Wine doors
+ | accessdate=27 April 2010
+}}&lt;/ref&gt;
+*''[[IEs4Linux]]'' is a utility to install all versions of Internet Explorer, including versions 4 to 6 and version 7 (in beta).&lt;ref&gt;{{cite web
+ | url=http://www.tatanka.com.br/
+ | title=IEs4Linux
+ | publisher=Tatanka.com.br
+ | accessdate=27 April 2010
+}}&lt;/ref&gt;
+*''[[PlayOnLinux]]'' is an application to ease the installation of Windows applications (primarily games)
+*''Wineskin'' is a utility to manage Wine engine versions and create wrappers for [[Mac OSX]].&lt;ref&gt;{{cite web
+ | url=http://wineskin.doh123.com/
+ | title=Wineskin
+}}&lt;/ref&gt;
+
+=== Windows CE ===
+
+Wine will not run [[Windows CE]] programs. There is an ongoing project to port Wine to [[ARM architecture|ARM]] processors, which may in the future be used as a base for a WineCE running [[Windows CE]] programs.&lt;ref&gt;{{cite web
+ | url=http://wiki.winehq.org/ARM
+ | title=ARM support
+ | publisher=The Official Wine Wiki
+ | accessdate=20 August 2011
+}}&lt;/ref&gt;
+
+=== MS-DOS ===
+
+Early versions of [[Microsoft Windows]] run on top of [[MS-DOS]] and Windows programs may depend on MS-DOS programs being runnable. Wine does not have good support for MS-DOS, but starting with development version 1.3.12, Wine tries running MS-DOS programs in [[DOSBox]] if DOSBox is available on the system.&lt;ref&gt;[http://www.winehq.org/pipermail/wine-users/2011-March/087629.html]&lt;/ref&gt; However, Wine currently also identifies Windows 1.x and Windows 2.x programs as MS-DOS programs, attempting to run them in DOSBox (which doesn't work). Thus, DOSBox availability breaks Windows 1.x and Windows 2.x support.&lt;ref&gt;[http://bugs.winehq.org/show_bug.cgi?id=26715]&lt;/ref&gt;
+
+== Other versions of Wine ==
+The core Wine development aims at a correct implementation of the Windows API as a whole and has sometimes lagged in some areas of compatibility with certain applications.  Direct3D, for example, remained unimplemented until 1998,&lt;ref&gt;{{cite news
+ | first=Brian | last=Vincent
+ | url=http://www.winehq.com/?issue=208
+ | title = WineConf 2004 Summary
+ | date=3 February 2004
+ | issue=208
+ | work=Wine Weekly News
+ | publisher=WineHQ.org
+ | accessdate=3 January 2009
+}}&lt;/ref&gt; although newer releases have had an increasingly complete implementation.&lt;ref&gt;{{cite web
+ | url = http://www.winehq.org/status/directx
+ | title = Wine Status - DirectX DLLs
+ | publisher=WineHQ.org
+ | accessdate=3 January 2009
+}}&lt;/ref&gt;
+
+CodeWeavers markets [[CrossOver]] specifically for running [[Microsoft Office]] and other major Windows applications including some games. CodeWeavers employs [[Alexandre Julliard]] to work on Wine and contributes most of its code to the Wine project under the LGPL. CodeWeavers also released a new version called [[Crossover Mac]] for Intel-based [[Apple Macintosh]] computers on 10 January 2007.&lt;ref&gt;{{cite web
+ | url=http://linux.slashdot.org/article.pl?sid=07/01/10/1924235
+ | title=CodeWeavers Releases CrossOver 6 for Mac and Linux
+ | publisher=Slashdot
+ | accessdate=3 January 2009
+}}&lt;/ref&gt;
+
+CodeWeavers has also recently released [[CrossOver Games]], which is optimized for running Windows [[computer game]]s. Unlike CrossOver, it doesn't focus on providing the most stable version of Wine. Instead, experimental features are provided to support newer games.&lt;ref&gt;{{cite web
+ | url=http://www.codeweavers.com/products/cxgames/
+ | title=Crossover Games site
+ | publisher=Codeweavers.com
+ | date=6 January 1990
+ | accessdate=27 April 2010
+}}&lt;/ref&gt;
+
+[[TransGaming Technologies]] produced the proprietary [[Cedega (software)|Cedega]] software. Formerly known as WineX, Cedega represented a [[fork (software)|fork]] from the last MIT-licensed version of Wine in 2002. Much like Crossover Games, TransGaming's Cedega was targeted towards running Windows [[computer game]]s. On 7 January 2011, [[TransGaming Technologies]] announced continued development of Cedega Technology under the [https://gametreelinux.com GameTree Developer Program]. Members can keep using their Cedega ID and password until 28 February 2011.&lt;ref&gt;{{cite web
+ | url=https://gametreelinux.com
+ | title=GameTree Developer Program
+ | publisher=gametreelinux.com
+ | accessdate=2 January 2011
+}}&lt;/ref&gt;
+
+TransGaming has also produced [[Cider (software)|Cider]], a library for [[AppleâIntel architecture]] Macintoshes. Instead of being an end-user product, Cider (like Winelib) is a [[wrapper library|wrapper]] allowing developers to adapt their games to run natively on Intel [[Mac OS X]] without any changes in source code.
+
+The [[Russia]]n company Etersoft has been developing a proprietary version of Wine since 2006. WINE@Etersoft supports popular Russian applications (for example, 1C:Enterprise by [[1C Company]]).&lt;ref&gt;{{cite web
+ | url=http://www.pcweek.ru/themes/detail.php?ID=72021&amp;phrase_id=97643
+ | title=WINE@Etersoft - Russian proprietary fork of Wine {{ru icon}}
+ | publisher=Pcweek.ru
+ | date=21 April 2010
+ | accessdate=27 April 2010
+}}&lt;/ref&gt; {{As of|2010|alt=In 2010}}, Etersoft is going to issue WINE@Etersoft CAD which is oriented towards [[CAD|CAD systems]] such as [[AutoCAD]], [[Bricscad]], and [[Compass-3D]].
+
+Other projects using Wine source code include:
+* [[ReactOS]], a project to write an operating system compatible with [[Windows NT]] down to the [[device driver]] level. ReactOS uses Wine source code considerably, but because of architectural differences, ReactOS code (such as dlls written specifically for it, like ntdll, user32, kernel32, gdi32, and advapi) is not generally reused in Wine.&lt;ref&gt;{{cite web
+ | url=http://www.reactos.org/en/dev_faq.html
+ | title=Developer FAQ
+ | publisher=ReactOS
+ | accessdate=25 May 2009
+}}&lt;/ref&gt; In July 2009, Alex Bragin, the ReactOS project lead, started&lt;ref&gt;{{cite web
+ | url=http://www.mail-archive.com/ros-diffs@reactos.org/msg01658.html
+ | title=Creation of Arwinss branch
+ | publisher=Mail-archive.com
+ | date=17 July 2009
+ | accessdate=27 April 2010
+}}&lt;/ref&gt; a new ReactOS branch called Arwinss,&lt;ref&gt;{{cite web
+ | url=http://www.reactos.org/wiki/Arwinss
+ | title=Arwinss at ReactOS wiki
+ | publisher=Reactos.org
+ | date=20 February 2010
+ | accessdate=27 April 2010
+}}&lt;/ref&gt; and it was officially announced in January 2010.&lt;ref&gt;{{cite web
+ | url=http://www.reactos.org/archives/public/ros-dev/2010-January/012709.html
+ | title=Arwinss presentation
+ | publisher=Reactos.org
+ | accessdate=27 April 2010
+}}&lt;/ref&gt; Arwinss is an alternative implementation of the core Win32 components, and uses mostly unchanged versions of Wine's user32.dll and gdi32.dll.
+*  [[Linux Unified Kernel]], a project  intended to be binary-compatible with application software and device drivers made for Microsoft Windows and Linux. This kernel imports all the key features of the Windows operating system kernel into the Linux kernel to support both Linux and Windows applications and device drivers.
+* [[Darwine]], a port of the Wine libraries to [[Darwin (operating system)|Darwin]] and Mac OS X. Kronenberg.org stated &quot;As some might have read on Wine-Devel, Darwine is dead for good. The OS X port of Wine formerly known as Darwine is now Wine.&quot;  Kronenberg continues work on an Intel Mac version called [http://winebottler.kronenberg.org/ Winebottler]
+*''[http://wineskin.doh123.com/ Wineskin]'', an open source Wine GUI configuration manager for [[Mac OS X]]. Wineskin creates a wrapper around Wine in the form of a normal Mac Application. The wrapper can also be used to make a distributable âportâ of software.&lt;ref&gt;{{cite web
+ | url=http://wineskin.doh123.com/FAQ.html
+ | title=Wineskin FAQ
+ | publisher=doh123
+ | accessdate=12 April 2011
+}}&lt;/ref&gt;
+* [[Odin (software)|Odin]], a project to run Win32 binaries on [[OS/2]] or convert them to OS/2 native format. The project also provides the Odin32 API to compile Win32 programs for OS/2.
+* [[E/OS]], a project attempting to allow any program designed for any operating system to be run without the need to actually install any other operating system.
+* [[Rewind (software)|Rewind]], a defunct MIT-licensed fork of the last MIT-licensed version of Wine.
+* [[Parallels Desktop for Mac|Parallels Desktop 3 for Mac]], a proprietary product that uses some Wine code for its DirectX handling.
+* [[VirtualBox]] v3.x, an Open-Source product that uses some Wine code for its Direct3D handling.
+
+== Reception ==
+The Wine project has received a number of technical and philosophical complaints and concerns over the years.
+
+=== Security ===
+Because of Wine's ability to run Windows binary code, concerns have been raised over native Windows viruses and malware affecting Unix-like operating systems.&lt;ref&gt;{{cite newsgroup
+ | url=http://www.linux.com/archive/feature/42031
+ | title=Running Windows viruses with Wine
+ | author=Matt Moen
+ | date=26 January 2005
+ | accessdate=23 October 2009
+}}&lt;/ref&gt; Wine can run much malware, but programs running in Wine are confined to the current user's privileges, restricting some undesirable consequences. This is one reason Wine should never be run as the [[superuser]].&lt;ref&gt;{{cite web
+ | url=http://wiki.winehq.org/FAQ?action=recall&amp;rev=312#head-96bebfa287b4288974de0df23351f278b0d41014
+ | title=Should I run Wine as root?
+ | work = Wine Wiki FAQ
+ | publisher=Official Wine Wiki
+ | date=7 August 2009
+ | accessdate=24 August 2009
+}}&lt;/ref&gt; Malware research software such as [[ZeroWine]]&lt;ref&gt;{{cite web
+ | url=http://sourceforge.net/projects/zerowine/
+ | title=ZeroWine project home page
+}}&lt;/ref&gt; runs Wine on Linux in a [[virtual machine]], to keep the malware completely isolated from the host system.
+
+Another security concern is when the implemented specifications are ill-designed and allow for security compromise. Because Wine implements these specs, it will also implement the security vulnerabilities it contains.&lt;ref&gt;{{cite web
+ | title=Linux/BSD still exposed to WMF exploit through WINE!
+ | url=http://www.zdnet.com/blog/ou/linuxbsd-still-exposed-to-wmf-exploit-through-wine/146
+}}&lt;/ref&gt;
+
+=== Wine vs. native Unix applications ===
+A common concern about Wine is that its existence means that vendors are less likely to write native Linux, Mac OS X, and BSD applications. As an example of this, it is worth considering IBM's 1994 operating system, [[OS/2 Warp]]. An article describes the weaknesses of OS/2 which killed it, the first one being:
+
+{{cquote|OS/2 offered excellent compatibility with DOS and Windows 3.1 applications. No, this is not an error. Many application vendors argued that by developing a DOS or Windows app, they would reach the OS/2 market in addition to DOS/Windows markets and they didn't develop native OS/2 applications.&lt;ref&gt;{{cite web
+ | url=http://pages.prodigy.net/michaln/history/os2warp/index.html
+ | title=OS/2 Warp history
+ | author=Michal Necasek
+}}&lt;/ref&gt;}}
+
+The Wine project itself responds to these complaints on one of its [[Wiki]] pages:
+{{cquote|For most people there remain a handful of programs locking them in to Windows. It's obvious there will never be a Microsoft Office ported to Linux, however older versions of programs like TurboTax  won't be ported either. Similarly, there are tens of thousands of games and internal corporate applications which will never be ported. If you want to use Linux and rely on any legacy Windows application, something like Wine is essential... Wine makes Linux more useful and allows for millions of users to switch who couldn't otherwise. This greatly raises Linux marketshare, drawing more commercial and community developers to Linux.&lt;ref&gt;{{cite web
+ | url=http://wiki.winehq.org/Debunking_Wine_Myths#head-9af2c83644754ac9805dc929403ca0440c96c383
+ | title=Debunking Wine Myths
+ | author=Bernhard Rosenkraenzer
+}}&lt;/ref&gt;}}
+
+The use of Wine for gaming has proved specifically controversial in the Linux community, as some feel it is preventing, or at least hindering, the further growth of [[Linux gaming|native gaming]] on the platform.&lt;ref&gt;[http://replay.waybackmachine.org/20010511055620/http://www.gamespy.com/articles/may01/wine/ Ports vs. Wine] Gamespot (Article by James Hills)&lt;/ref&gt;&lt;ref&gt;[http://www.phoronix.com/scan.php?page=article&amp;item=linux_gaming_frank&amp;num=3 An Interview With A Linux Game Porter] [[Phoronix]], July 03, 2009 (Article by [[Michael Larabel]])&lt;/ref&gt;
+
+=== Microsoft and Wine ===
+Microsoft has generally not made public statements about Wine. However, the [[Microsoft Update]] software will block updates to Microsoft applications running in Wine. On 16 February 2005, Ivan Leo Puoti discovered that Microsoft had started checking the [[Windows registry]] for the Wine configuration key and would block the Windows Update for any component. Puoti wrote, &quot;It's ... the first time they've broken radio silence on the project.&quot;&lt;ref&gt;{{cite mailing list
+ | first = Ivan Leo
+ | last = Puoti
+ | url=http://winehq.com/hypermail/wine-devel/2005/02/0441.html
+ | archiveurl=http://linux.slashdot.org/story/05/02/17/1318212/microsoft-blocking-wine-users-from-downloads-site
+ | archivedate=17 February 2005
+ | title=Microsoft genuine downloads looking for Wine
+ | date=18 February 2005
+ | mailinglist=wine-devel
+ | accessdate=23 January 2006
+}}&lt;/ref&gt;
+
+The [[Windows Genuine Advantage]] (WGA) system also checks for existence of Wine registry keys. The WGA [[FAQ]] states that WGA will not run in Wine by design, as Wine does not constitute &quot;genuine Windows&quot;.&lt;ref&gt;{{cite web
+ | url = http://www.microsoft.com/genuine/downloads/FAQ.aspx
+ | title = Genuine Windows FAQ
+ | publisher = Microsoft Corporation
+ | accessdate= 30 January 2006
+}}&lt;/ref&gt; When WGA validation detects Wine running on the system, it will notify users that they are running non-genuine Windows and disallow genuine Windows downloads for that system. Despite this, some reports have circulated of the WGA system working in Wine,&lt;ref&gt;{{cite web
+ | url = http://linux.slashdot.org/article.pl?sid=07/06/18/0037223
+ | title = Ubuntu Linux Validates as Genuine Windows
+ | publisher=Slashdot
+ | accessdate=3 January 2009
+}}&lt;/ref&gt;&lt;ref&gt;{{cite web
+ | url = http://forums.bit-tech.net/showthread.php?t=95654
+ | title = WGA running in Wine
+ | accessdate=3 January 2009
+}}&lt;/ref&gt;  although this loophole has now been closed with the next WGA component update. In the case of [[Internet Explorer 7]], Microsoft has since removed the WGA requirements.&lt;ref&gt;{{cite news|last=Foley|first=Mary-Jo|title=Internet Explorer 7 update: Now WGA-free|url=http://www.zdnet.com/blog/microsoft/internet-explorer-7-update-now-wga-free/788|accessdate=30 June 2011|newspaper=ZDNet|publisher=CBS Interactive|date=4 October 2007}}&lt;/ref&gt;
+
+== See also ==
+{{Portal|Free software}}
+
+* [[Executor (software)]]
+* [[ReactOS]]
+* [[Windows Interface Source Environment]]
+
+==References==
+{{Reflist|colwidth=30em}}
+
+==Further reading==
+* [http://interviews.slashdot.org/article.pl?sid=04/05/17/0057241 Jeremy White's Wine Answers] - [[Slashdot]] interview with Jeremy White of CodeWeavers
+* [http://madpenguin.org/cms/index.php/index.php?m=show&amp;id=1512 Jeremy White interview] on the &quot;Mad Penguin&quot; web-site
+* [http://lwn.net/Articles/135413/ Appointment] of the [[Software Freedom Law Center]] as legal counsel to represent the Wine project
+* [http://www.kegel.com/wine/scale4.pdf Wine: Where it came from, how to use it, where it's going] - a work by Dan Kegel
+
+==External links==
+{{Commons category|Wine (software)}}
+* [http://www.winehq.org/ Wine Development HQ] - the official homepage of Wine
+* [news://comp.emulators.ms-windows.wine Wine newsgroup] ([http://groups.google.com/group/comp.emulators.ms-windows.wine Google web interface])
+* [http://winebottler.kronenberg.org/ WineBottler] - A Wine program for Mac OS X
+
+* {{Freshmeat|wine|Wine}}
+* {{ohloh|wine}}
+{{Use dmy dates|date=February 2011}}
+
+{{DEFAULTSORT:Wine (Software)}}
+[[Category:Compatibility layers]]
+[[Category:Computing platforms]]
+[[Category:Cross-platform software]]
+[[Category:Free system software]]
+[[Category:Free software programmed in C]]
+[[Category:1993 software]]
+[[Category:Acronyms]]
+
+[[af:Wine]]
+[[ar:ÙØ§ÙÙ (Ø¨Ø±ÙØ§ÙØ¬)]]
+[[bn:à¦à¦¯à¦¼à¦¾à¦à¦¨ (à¦¸à¦«à¦à¦à¦¯à¦¼à§à¦¯à¦¾à¦°)]]
+[[bs:Wine]]
+[[ca:Wine]]
+[[cv:Wine]]
+[[cs:Wine]]
+[[da:Wine]]
+[[de:Wine]]
+[[et:Wine]]
+[[es:Wine]]
+[[eo:Wine]]
+[[eu:Wine]]
+[[fa:ÙØ§ÛÙ (ÙØ±Ù Ø§ÙØ²Ø§Ø±)]]
+[[fr:Wine]]
+[[ko:ìì¸ (ìíí¸ì¨ì´)]]
+[[id:Wine (perangkat lunak)]]
+[[ia:WINE]]
+[[is:Wine]]
+[[it:Wine]]
+[[he:Wine]]
+[[lt:Wine]]
+[[hu:WINE]]
+[[ml:à´µàµà´¨àµâ (à´¸àµà´«àµà´±àµà´±àµâà´µàµà´¯à´°àµâ)]]
+[[nl:Wine]]
+[[ja:Wine]]
+[[no:Wine]]
+[[pl:Wine]]
+[[pt:Wine]]
+[[ru:Wine]]
+[[simple:Wine (software)]]
+[[sk:Wine]]
+[[sl:Wine]]
+[[sr:Vajn]]
+[[fi:Wine]]
+[[sv:Wine]]
+[[tr:Wine]]
+[[uk:Wine]]
+[[vi:Wine (pháº§n má»m)]]
+[[zh:Wine]]</rev></revisions></page></pages></query></api>

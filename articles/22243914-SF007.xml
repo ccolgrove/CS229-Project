@@ -1,0 +1,190 @@
+<?xml version="1.0"?><api><query><redirects><r from=".air" to="Adobe AIR" /></redirects><pages><page pageid="7741928" ns="0" title="Adobe AIR"><revisions><rev xml:space="preserve">{{Primary sources|date=March 2011}}
+{{Infobox software
+| name                   = Adobe AIR
+| logo                   = [[File:Adobe AIR icon.svg|64px|The Official Adobe AIR Icon]]
+| screenshot             =
+| caption                =
+| author                 =
+| developer              = [[Adobe Systems]]
+| released               = {{Start date and age|2008|February|25}}
+| latest release version = 3.1
+| latest release date    = {{Start date and age|2011|11|11}}
+| operating system       = [[Microsoft Windows]]&lt;br/&gt;[[Mac OS X]]&lt;br/&gt;[[Android (operating system)|Android]]&lt;br/&gt;[[iOS (Apple)|iOS]]&lt;br/&gt;[[BlackBerry Tablet OS]]&lt;br/&gt;[[Linux]] (Discontinued since v2.6)&lt;ref&gt;{{cite web
+ |url = http://www.adobe.com/products/air/systemreqs/
+ |title = System requirements
+ |work = Adobe AIR website
+ |publisher = Adobe Inc
+ |accessdate = 2011-09-07
+ |quote = Adobe is increasingly investing in mobile devices. As such, we are changing our distribution model for LinuxÂ® and will no longer invest in the development of a desktop Linux operating system version of AdobeÂ® AIRÂ® or the AIR SDK. The last version to support desktop Linux is AIR 2.6.}}&lt;/ref&gt;
+| platform               = [[IA-32]], [[x64]], [[ARM architecture|ARM]] and [[MIPS architecture|MIPS]]
+| language               = English
+| status                 = Active
+| genre                  = [[Run-time environment]]
+| license                = [[Freeware]] ([[Proprietary software|Proprietary]])&lt;ref&gt;{{cite web|url=http://www.adobe.com/products/eulas/pdfs/Adobe_AIR.pdf|format=PDF|date=4 February 2008|title=Adobe AIR 1.1 EULA|publisher=Adobe Systems|accessdate=15 March 2011}}&lt;/ref&gt;
+| website                = {{URL|http://www.adobe.com/products/air/}}
+}}
+'''Adobe Integrated Runtime''', also known as '''Adobe AIR''', is a [[cross-platform]] [[runtime environment]] developed by [[Adobe Systems]] for building [[Rich Internet Application]]s (RIA) using [[Adobe Flash]], [[Adobe Flex]], [[HTML]], and [[Ajax (programming)|Ajax]], that can be run as [[application software|desktop applications]] or on mobile devices. The runtime supports installable applications on [[Microsoft Windows|Windows]], [[Linux]], [[Mac OS]] and some mobile operating systems such as [[iOS]] and [[Android (operating system)|Android]].
+
+With AIR, Adobe intends to provide a versatile runtime-environment that allows existing Flash, [[ActionScript]], or HTML and [[JavaScript]] code to be used to construct Internet-based applications that have many of the characteristics of more traditional desktop-like programs. Adobe positions it as a [[Web browser|browser-less]] runtime for [[Rich Internet application|RIAs]] that can be deployed onto the desktop, rather than as a full-fledged [[application framework]]. An application deployed in a browser does not require installation, while one deployed with AIR requires the application be packaged, digitally signed, and installed on the user's local file system. This provides access to local storage and file systems, while browser-deployed applications are more limited in where and how data can be accessed and stored.&lt;ref&gt;{{Cite web|url=http://www.adobe.com/products/air/comparison/|title=Adobe AIR: Browser vs. Desktop|publisher=Adobe Systems|accessdate=15 March 2011}}&lt;/ref&gt;
+
+Adobe AIR internally uses [[Adobe Flash Player]] as the runtime environment, and [[ActionScript]] 3 as the sole programming language. Flash applications must specifically be built for the Adobe AIR runtime in order to utilize additional features provided, such as file system integration, native client extensions, native window/screen integration, taskbar/dock integration, and hardware integration with connected [[Accelerometer]] and [[GPS]] devices.&lt;ref&gt;[www.adobe.com/products/air.html Adobe AIR 3], Adobe&lt;/ref&gt; AIR enables applications to work with data in multiple different ways, including local files, local [[SQLite]] databases for which AIR has inbuilt support, a database server via web services, or the encrypted local store included with AIR.
+
+==Availability==
+The latest version of Adobe AIR, Version 3, contains [[Adobe Flash Player]] 11, and is available for [[Microsoft Windows|Windows]] (XP and newer) and [[Mac OS X]].&lt;ref name=&quot;fp11ios&quot;&gt;[http://www.adobe.com/devnet/air/articles/ios_features_in_air26.html iOS features in Adobe AIR 2.6], Adobe Devnet&lt;/ref&gt; Official support for desktop Linux distributions ceased in June 2011 with version 2.6,&lt;ref&gt;http://kb2.adobe.com/cps/521/cpsid_52132.html&lt;/ref&gt; though AIR 3 is supported on select mobile operating systems, [[Android (operating system)|Android]] (ARM Cortex-A8 and above&lt;ref name=&quot;flashmobileblog1&quot;&gt;{{cite news |url=http://www.flashmobileblog.com/2010/03/02/flash-player-10-1-installations-and-updates/ |title=Flash Player 10.1 â Installations and updates |accessdate=2010-11-19}}&lt;/ref&gt;) and [[Apple]] [[iOS]].&lt;ref name=&quot;fp11ios&quot;/&gt;
+
+In January 2009, Adobe claimed that there were over 100 million installations of Adobe AIR worldwide, and that &quot;the majority of AIR runtime installations occur at the time the first AIR application is installed by a user&quot;.&lt;ref&gt;{{Cite web |url=http://blogs.adobe.com/air/2009/01/air_passes_100_million_install.html?sdid=EENCL|first=Adrian|last=Ludwig|work=Adobe AIR Team Blog|date=28 January 2009|title=AIR passes 100 million installations|publisher=Adobe Systems|accessdate=15 March 2011}}&lt;/ref&gt; The large number of installations is actually because Adobe AIR was included with all downloaded installations of [[Adobe Acrobat|Adobe Reader]] 9 (released in July, 2008), Adobe Photoshop, Adobe Lightroom, with no option for exclusion either in the download or in the installation.&lt;ref&gt;{{Cite web|url=http://blogs.adobe.com/adobereader/2008/06/adobe_reader_9_is_here_1.html|work=Adobe Reader Blog|first=Steve|last=Gottwals|date=27 June 2008|title=Adobe Reader 9 is Here!|publisher=Adobe Systems|accessdate=15 March 2011}}&lt;/ref&gt; {{As of|August 2010}} Adobe still bundles Adobe AIR (along with the application Acrobat.com) with the Adobe Reader 9.3 download, with no option for exclusion, and the installation file for Adobe Reader 9.3 also installs Adobe AIR.
+
+==Release history==
+===&quot;Apollo&quot; 1.0 Betas===
+Adobe made a public preview release of AIR (then called Apollo) along with a [[software development kit]] (SDK) and extension for developing Apollo applications with the Flex framework, on March 19, 2007.
+
+On June 10, 2007, Apollo was renamed to AIR and a public [[Software release life cycle#Beta|beta release]] of the runtime was launched. Public beta 2 of AIR SDK was released on October 1, 2007. Public beta 3, was released on December 12, 2007.
+
+===Adobe AIR 1.0===
+Version 1.0 of the Adobe AIR runtime and SDK was released on February 25, 2008.{{citation needed|date=March 2011}}
+
+===Adobe AIR 1.1===
+Version 1.1 of Adobe AIR was released on June 16, 2008. This release included a number of new features including:
+
+* Support for additional languages including Chinese Traditional, Chinese Simplified, French, German, Italian, Japanese, Korean, Brazilian Portuguese, Russian, and Spanish
+* Support for localizing the name, description local database error messages of the application
+* A new option that allows an application to be updated from an old certificate to a new one while preserving the identity of the application (for example from a self-signed certificate to a chained certificate)
+* A new property for detecting the space available on a drive
+* A new property for detecting whether the hosting operating system's window manager supports transparency
+
+In addition, version 1.1 includes support for Microsoft Windows XP Tablet PC Edition and 64-bit editions of Windows Vista Home Premium, Business, Ultimate, and Enterprise.&lt;ref&gt;{{cite web|url=http://download.macromedia.com/pub/air/documentation/1_1/adobe_air_1-1_faq.pdf|format=PDF|date=16 June 2008|title=Adobe AIR 1.1 FAQ|publisher=Adobe Systems|accessdate=15 March 2011}}&lt;/ref&gt;
+
+===Adobe AIR 1.5===
+Adobe AIR 1.5 was released on November 17, 2008. New capabilities included:
+
+* Support for encrypting the local database
+* Inclusion of Flash Player 10 features
+* An updated  version of [[WebKit]] with performance improvements due to a new JavaScript interpreter
+* Support for five new languages including Czech, Dutch, Swedish, Turkish and Polish
+* A [[Linux]] version was released on December 18, 2008.&lt;ref&gt;{{cite web|url=http://www.h-online.com/newsticker/news/item/Adobe-release-AIR-for-Linux-739415.html|publisher=[[Heinz Heise]]|title=Adobe release AIR for Linux|date=18 December 2008|accessdate=15 March 2011}}&lt;/ref&gt;&lt;ref&gt;{{cite web|title=AIR for Linux:Release Notes|archiveurl=http://web.archive.org/web/20080527094324/http://labs.adobe.com/wiki/index.php/AIR_for_Linux:Release_Notes|archivedate=27 May 2008|date=31 March 2008|url=http://labs.adobe.com/wiki/index.php/AIR_for_Linux:Release_Notes|publisher=Adobe Systems|accessdate=15 March 2011}}&lt;/ref&gt;
+
+===Adobe AIR 1.5.1===
+Released on February 24, 2009, AIR 1.5.1 was primarily a compatibility update that includes bug fixes and security updates.
+
+===Adobe AIR 1.5.2===
+Released on July 30, 2009, AIR 1.5.2 introduced a number of minor new features and compatibility issues. Some of important fixes included:
+
+* When using the full-screen interactive mode an application using the 1.5.2 namespace can capture the keyDown event and call the preventDefault() method of the event
+* SWF content embedded within an HTML container could now be displayed with certain wmode settings.
+
+===Adobe AIR 1.5.3===
+Adobe AIR 1.5.3 was released on December 8, 2009. It included fixes for a number of compatibility and security related issues. The [[BBC iPlayer]] Desktop manager v1.5.15695.18135 is the first version to use AIR 1.5.3.
+
+===AIR 2.0===
+The Adobe AIR 2 public beta was released on November 16, 2009 followed by the beta 2 on February 2, 2010 and the release candidate on May 11, 2010. In addition, Adobe AIR for Android was announced on February 12, 2010. AIR 2 was officially released for Windows, Mac OS and Linux on June 10, 2010 and Android on October 8, 2010. It dropped support for [[PowerPC]] Macs.
+
+===AIR 2.5===
+Adobe AIR 2.5 was released on October 24, 2010 at the Adobe MAX 2010 conference.&lt;ref&gt;{{cite web|first=Michael|last=Hu|url=http://blogs.adobe.com/air/2010/10/adobe-air-2-is-now-available.html|date=24 October 2010|title=Adobe AIR 2.5 is Now Available!|work=Adobe AIR Team Blog|publisher=Adobe Systems|accessdate=15 March 2011}}&lt;/ref&gt;
+
+===AIR 2.6===
+Adobe AIR 2.6 was released on February 24, 2011 for [[Android (operating system)|Android]] devices.&lt;ref&gt;{{cite web|url=http://blogs.adobe.com/flashplayer/2011/02/adobe-air-2-6-for-android-is-now-available.html|title=Adobe AIR Team Blog|publisher=Adobe Systems|accessdate=20 April 2011}}&lt;/ref&gt; Another update was released on March 22, 2011 for updated [[Apple iOS]] support.&lt;ref&gt;{{cite web|url=http://blogs.adobe.com/flashplayer/2011/03/adobe-air-2-6-sdk-now-available-with-updated-ios-support.html|title=Adobe AIR Team Blog|publisher=Adobe Systems|accessdate=20 April 2011}}&lt;/ref&gt;
+
+===AIR 2.7===
+Adobe AIR 2.7 was released on June 14, 2011. &lt;ref&gt;{{cite web|url=http://blogs.adobe.com/flashruntimereleases/2011/06/14/air-2-7-runtimes-and-sdk-are-now-available|title=Adobe AIR Team Blog|publisher=Adobe Systems|accessdate=14 June 2011}}&lt;/ref&gt; [[Linux]] support was dropped. &lt;ref&gt;{{cite web|url=http://www.adobe.com/products/air/faq/|title=Adobe AIR Team Blog|publisher=Adobe Systems|accessdate=14 June 2011}}&lt;/ref&gt;
+
+===AIR 3.0===
+Adobe released Adobe AIR 3.0 on October 3, 2011. &lt;ref&gt;{{cite web|url=http://blogs.adobe.com/flashplayer/2011/10/adobe-flash-player-11-air-11-available-later-today.html|title=Adobe AIR Team Blog|publisher=Adobe Systems|accessdate=04 Oct 2011}}&lt;/ref&gt; AIR 3.0 included support for native 64-bit CPU architecture, hardware accelerated graphics rendering, captive runtime, JPEG-XR image format, LZMA compression for SWF files, and H.264 encoding.&lt;ref&gt;{{cite web|title=Adobe AIR 3 Features|url=http://www.adobe.com/products/air/features._sl_id-contentfilter_sl_featuredisplaytypes_sl_new.html|publisher=Adobe Systems Incorporated|accessdate=4 October 2011}}&lt;/ref&gt;
+
+==Application development==
+Adobe AIR supports Flash applications by running them within a contained Flash Player instance, and [[HTML]]/[[JavaScript]]/[[Ajax (programming)|Ajax]] web applications by running them within the included [[WebKit]] [[Web browser engine|rendering engine]]. Multiple instances of the browser can be started within a single AIR application, but JavaScript content executes with some security limitations.
+
+Adobe has provided a free SDK in order to build AIR applications, known as the AIR SDK. The AIR SDK allows developers to use any [[text editor]] such as [[Notepad++]] or [[FlashDevelop]] (an IDE) to edit ActionScript source code (.as files), and then build a corresponding AIR application or AIR installer (.air file) from the same.
+
+Adobe provides for AIR HTML/JavaScript development with [[Adobe Dreamweaver]] CS5, although any other [[HTML editor]] or text editor can be used.&lt;ref&gt;{{cite web|url=http://www.adobe.com/devnet/air/articles/getting_started_air_js.html|title=Getting started with Adobe AIR for HTML/JavaScript developers|publisher=Adobe Systems|accessdate=15 March 2011|date=24 August 2010}}&lt;/ref&gt;
+
+=== ActionScript ===
+Adobe AIR applications can be built either with the [[Adobe Flex]] Framework, or without. The framework is an integrated collection of stylable [[Graphical User Interface]], data manipulation and networking components, and applications built upon it are known as &quot;Flex&quot; applications. Applications built without the framework depend entirely on the developer's own skills and artistic abilities, and are commonly known as &quot;pure ActionScript&quot; projects.
+
+In both methods, developers can access the full Flash Player set of functionalities, including [[Text file|text]], [[vector graphics]], [[bitmap]] graphics, [[video]], [[audio]], camera and microphone support, among others. Adobe AIR also includes additional features such as file system integration, native extensions, native desktop integration, and hardware integration with connected devices.
+
+Adobe provides two ways of developing AIR applications in ActionScript:
+*[[Adobe Flash Builder]] (formerly [[Adobe Flex Builder]])
+*[[Adobe Flash]] CS4 or newer
+
+Third-party development environments that target the AIR runtime are also available:
+*[[FlashDevelop]], an open-source Flash ActionScript IDE, which includes a debugger for AIR applications
+*FDT by PowerFlasher Solutions, a commercial ActionScript IDE
+
+=== JavaScript ===
+Adobe AIR supports a subset of [[JavaScript]], which does not support dynamic execution of code when running in the application sandbox. According to the Adobe, this restriction is designed to prevent malicious remote content from attacking a user's system.&lt;ref name=air_security&gt;{{cite web|url=http://help.adobe.com/en_US/AIR/1.5/air_security/air_security.pdf|year=2008|page=6|publisher=Adobe Systems|accessdate=24 March 2011|format=PDF|title=ADOBEÂ® AIRâ¢ 1.5 Security White Paper}}&lt;/ref&gt; Due to this restriction, JavaScript frameworks that make use of dynamic JavaScript functions like eval() were not initially compatible with Adobe AIR. However, several frameworks including [[Dojo Toolkit]],{{Citation needed|date=March 2011}} [[jQuery]],{{Citation needed|date=March 2011}} and [[Ext (JavaScript library)|ExtJS]]{{Citation needed|date=March 2011}} were updated to support Adobe AIR's application sandbox. Some frameworks like [[MooTools]] were already compatible.{{Citation needed|date=March 2011}}
+
+Dreamweaver CS4/CS3 requires an additional extension to compile AIR applications,&lt;ref&gt;{{cite web|url=http://www.adobe.com/products/air/tools/ajax/#section-2|title=Adobe - AIR: Tools for Ajax|publisher=Adobe Systems|accessdate=15 March 2011}}&lt;/ref&gt; as does Flash CS3 in the form of an update.&lt;ref&gt;{{cite web|url=http://www.adobe.com/support/flash/downloads.html#flashCS4|date=17 November 2008|quote=Adobe AIR 1.5 Update for Flash CS4 Professional|title=Adobe Flash - Downloads|publisher=Adobe Systems|accessdate=15 March 2011}}&lt;/ref&gt; The cross-platform nature of the runtime means any HTML editor, coupled with the AIR SDK, can create AIR applications.
+
+==Criticisms==
+Developers' community finds AIR's features on Android devices lacking. For example AEC support is added to AIR Platform, but Android runtime is left excluded, using self-proven motivations that add no real-life value.&lt;ref&gt;{{cite web|url=https://bugbase.adobe.com/index.cfm?event=bug&amp;id=2901450|title=AEC in Android not working|publisher=Adobe Systems|accessdate=15 November 2011}}&lt;/ref&gt; As a result, although most of Android devices have built-in AEC capabilities, AIR applications suffer a lot from echo issues. This lacking of features also decreases AIR applications' popularity.{{cn|date=November 2011}}
+
+==References==
+{{Reflist}}
+
+==Further reading==
+{{Refbegin}}
+*{{Cite web
+ |url = http://blogs.media-tips.com/bernard.opic/uninstaller-for-adobe-air/
+ |title = Uninstaller for Adobe AIR
+ |work = Le blog de Bernard Opic
+ |first = Bernard
+ |last = Opic
+ |date = 9 February 2011
+ |accessdate = 3 March 2011
+}}
+*{{Cite web
+ |url = http://www.adobe.com/devnet/air/articles/introduction_to_air_security.html
+ |title = Introduction to AIR Security
+ |work = Adobe AIR Developer Center
+ |publisher = Adobe Systems
+ |date = 3 March 2008
+ |accessdate = 3 March 2011
+ |first = Lucas
+ |last = Adamski
+}}
+*{{Cite web
+ |url = http://www.adobe.com/devnet/air/articles/signing_air_applications.html
+ |title = Digitally signing Adobe AIR applications
+ |work = Adobe AIR Developer Center
+ |publisher = Adobe Systems
+ |date = 5 January 2009
+ |first = Todd
+ |last = Prekaski
+ |accessdate = 3 March 2011
+}}
+{{Refend}}
+
+==External links==
+*{{Official website|http://www.adobe.com/products/air/}}
+**[http://www.adobe.com/cfusion/exchange/index.cfm?event=productHome&amp;exc=24&amp;loc=en_us Adobe AIR Marketplace]
+**[http://www.adobe.com/devnet/air/ Adobe AIR Developer Network]
+**[http://www.adobe.com/support/documentation/en/air Adobe AIR Documentation]
+
+{{Adobe Flash}}
+{{Adobe Systems}}
+{{Rich Internet applications}}
+
+[[Category:Adobe Systems]]
+[[Category:Adobe Flex]]
+[[Category:Application programming interfaces]]
+[[Category:Site-specific browsing]]
+[[Category:Cross-platform software]]
+
+[[ar:Ø£Ø¯ÙØ¨Ù Ø£ÙØ±]]
+[[de:Adobe Integrated Runtime]]
+[[es:Adobe Integrated Runtime]]
+[[fa:Ø§Ø¯ÙØ¨Û Ø§ÛØ±]]
+[[fr:Adobe Integrated Runtime]]
+[[ko:ì´ëë¹ íµí© ë°íì]]
+[[id:Adobe Integrated Runtime]]
+[[it:Adobe Integrated Runtime]]
+[[nl:Adobe Air]]
+[[ja:Adobe Integrated Runtime]]
+[[pl:Adobe Integrated Runtime]]
+[[pt:Adobe AIR]]
+[[ru:Adobe Integrated Runtime]]
+[[fi:Adobe AIR]]
+[[sv:Apollo (Adobe)]]
+[[th:à¸­à¸°à¹à¸à¸à¸µà¸­à¸´à¸à¹à¸à¸­à¸£à¹à¹à¸à¸£à¹à¸à¹à¸à¸£à¸±à¸à¹à¸à¸¡à¹]]
+[[uk:Adobe AIR]]
+[[zh:Adobe AIR]]</rev></revisions></page></pages></query></api>

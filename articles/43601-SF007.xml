@@ -1,0 +1,132 @@
+<?xml version="1.0"?><api><query><pages><page pageid="43601" ns="0" title="Gnuplot"><revisions><rev xml:space="preserve">{{lowercase|title=gnuplot}}
+{{Infobox software
+| name                   = gnuplot
+| logo                   =
+| screenshot             = [[Image:Gnuplot ellipsoid.svg|250px]]
+| caption                = 3D rendering of an [[ellipsoid]] by gnuplot
+| developer              =
+| released               = 1986
+| latest release version = 4.4.4&lt;ref&gt;http://www.gnuplot.info/announce.4.4.4&lt;/ref&gt;
+| latest release date    = {{Start date and age|2011|11|14|df=yes/no}}
+| latest_preview_version = Through [[Concurrent Versions System|CVS]]
+| programming language   = [[C (programming language)|C]]
+| platform               = [[Cross-platform]]
+| language               =
+| status                 = Active
+| genre                  = [[List of graphing software|Plotting]]
+| license                = [[Open source]] (own license)
+| website                = {{URL|http://www.gnuplot.info/}}
+}}
+'''gnuplot''' is a [[Command line|command-line]] program that can generate two- and three-dimensional [[Plot (graphics)|plots]] of [[Function (mathematics)|function]]s, [[data]], and data fits. It is frequently used for publication-quality graphics as well as education.   The program runs on all major [[computer]]s and [[operating system]]s ([[GNU]]/[[Linux]], [[Unix]], [[Microsoft Windows]], [[Mac&amp;nbsp;OS&amp;nbsp;X]] and others). It is a program with a fairly long history, dating back to 1986. Despite its name, this software is not distributed under the [[GNU General Public License]] (GPL), opting for its own [[open source]] license instead.
+
+== Features ==
+
+gnuplot can produce output directly on screen, or in many formats of graphics files, including [[Portable Network Graphics]] (PNG), [[Encapsulated PostScript]] (EPS), [[Scalable Vector Graphics]] (SVG), [[JPEG]] and many others. It is also capable of producing [[LaTeX]] code that can be included directly in LaTeX documents, making use of LaTeX's fonts and powerful formulae abilities.  The program can be used both interactively and in batch mode using scripts.
+
+The program is well supported and documented. Extensive help can also be found on the Internet.
+
+gnuplot is used as the plotting engine of [[GNU Octave]], [[Maxima (software)|Maxima]] and [[gretl]], and it can be used from various languages, including [[Perl]] (via [[CPAN]]), [[Python (programming language)|Python]] (via [http://gnuplot-py.sourceforge.net/ Gnuplot-py] and [[Software for Algebra and Geometry Experimentation|SAGE]]), [[Java (programming language)|Java]] (via [http://jgnuplot.sourceforge.net/ jgnuplot]), [[Ruby (programming language)|Ruby]] (via [http://github.com/rdp/ruby_gnuplot Ruby Gnuplot]), [[Ch (computer programming)|Ch]] (via [http://www.softintegration.com/docs/ch/plot/ Ch Gnuplot]) and [[Smalltalk]] ([[Squeak]] and [[GNU Smalltalk]]).
+gnuplot also supports [[Pipe (Unix)|piping]].&lt;ref&gt;[http://linuxgazette.net/168/misc/lg/2_cent_tip__piping_to_gnu_plot_from_c.html Piping to GNU Plot from C by Amit Saha]&lt;/ref&gt;
+
+gnuplot is programmed in [[C (programming language)|C]].
+
+{{Image gallery
+|lines=1
+|width=240
+|height=160
+|Gnuplot-in-action.png||Gnuplot in interactive use.
+|Gnuplot tcp analysis.png|Thousands of dots plotted, forming a pattern|A [[scatter plot]] of samples from a text file.
+|Logarithmic spiral.png||A logarithmic spiral.
+}}
+
+== License ==
+Despite gnuplot's name, it is not part of or related to the [[GNU]] system (hence the decision to use a lowercase 'g') and it is not distributed under the [[GNU General Public License]] (GPL).
+However, some GNU packages do use gnuplot.
+
+The title of this program was originally chosen to avoid conflicts with a program called ânewplotâ, and was originally a compromise between âllamaplotâ and ânplotâ.&lt;ref&gt;[http://www.gnuplot.info/faq/faq.html#SECTION00032000000000000000 Gnuplot FAQ&lt;!-- Bot generated title --&gt;]&lt;/ref&gt;
+
+The program is distributed under a license which permits copying and modification of the source code.
+However, modified versions are only allowed to be distributed as [[Patch (computing)|patch]] files.
+
+== Alternatives ==
+
+{{Portal|Free software}}
+{{see also|List of graphing software}}
+
+For script-driven graphics, gnuplot is by far the most popular program. [http://pyxplot.org.uk/ PyXPlot] is a free plotting software that has a very similar syntax but tries to enhance gnuplot's data processing and scripting capabilities.
+
+If the graphics shall be driven by an application program, plot commands can be fed to gnuplot via a [[pipe (computing)|pipe]]. Alternatively, one would link the application program with a graphics [[library (computing)|library]] like
+* [[PGPLOT]]
+* [[PLplot]]
+* [[Matplotlib]] for use with [[Python (programming language)|Python]]
+
+For interactive plotting through a [[graphical user interface]] (GUI), one would use one of the following open-source programs:
+* [[QtiPlot]], inspired by the proprietary program [[Origin (software)|Origin]]
+* [[SciDAVis]], a fork of QtiPlot
+* [[LabPlot]], project merged with SciDAVis
+* [[HippoDraw]]
+* [[Veusz]], in Python
+
+==References==
+{{Reflist}}
+
+== Further reading ==
+{{Wikibooks|gnuplot}}
+{{Wikibooks|Ad Hoc Data Analysis From The Unix Command Line|Quick Plotting With gnuplot}}
+* {{citation
+| first1      = Philipp K
+| last1       = Janert
+| year        = 2010
+| title       = Gnuplot in action: understanding data with graphs
+| publisher   = [[Manning Publications]], Connecticut, USA
+| pages       = 350
+| isbn        = 978-1-933988-39-9
+| url         = 
+}}.
+
+==External links==
+{{Commons category|Gnuplot diagrams}}
+* [http://www.gnuplot.info/ gnuplot Central] contains links to the FAQ and to download locations
+* [http://gnuplot.sourceforge.net/demo/ gnuplot demo plots]
+* [http://t16web.lanl.gov/Kawano/gnuplot/index-e.html Not so frequently asked questions] &amp;mdash; various tips about gnuplot
+* [http://www-128.ibm.com/developerworks/library/l-gnuplot/ Visualize your data with gnuplot] &amp;mdash; an IBM tutorial
+* [http://www.cs.unc.edu/~jeffay/dirt/FAQ/gnuplot.html Gnuplot tips] &amp;mdash; mouse command reference
+* {{Dmoz|Science/Math/Software/Graphing/Gnuplot/}}
+* [http://code.google.com/p/gnuplot-cpp/ gnuplot-cpp] &amp;mdash; a [[C++]] programming interface to gnuplot
+* [http://www.stahlke.org/dan/gnuplot-iostream/ gnuplot-iostream] &amp;mdash; pipe gnuplot commands from a simple [[C++]] class
+* [http://jgnuplot.sourceforge.net/ jgnuplot] &amp;mdash; a [[Java (programming language)|Java]] programming interface to gnuplot
+* [http://search.cpan.org/dist/Chart-Gnuplot Chart::Gnuplot] &amp;mdash; a [[Perl (programming language)|Perl]] programming interface to gnuplot
+* [https://github.com/dkogan/feedgnuplot feedgnuplot] &amp;mdash; a [[Perl]] script to plot real-time or stored data from [[standard input]]
+* [http://www.plotshare.com Plotshare] &amp;mdash; online interface for gnuplot that helps to share plots with others
+
+[[Category:Computer animation]]
+[[Category:Free 3D graphics software]]
+[[Category:Free cross-platform software]]
+[[Category:Free plotting software]]
+[[Category:Free software programmed in C]]
+[[Category:Free mathematics software]]
+[[Category:Plotting software]]
+
+[[bg:Gnuplot]]
+[[ca:Gnuplot]]
+[[cs:Gnuplot]]
+[[de:Gnuplot]]
+[[es:Gnuplot]]
+[[fa:Ú¯ÙÙÙ¾ÙØ§Øª]]
+[[fr:Gnuplot]]
+[[ko:ê·¸ëíë¡¯]]
+[[id:Gnuplot]]
+[[it:Gnuplot]]
+[[hu:Gnuplot]]
+[[nl:Gnuplot]]
+[[ja:Gnuplot]]
+[[pl:Gnuplot]]
+[[pt:Gnuplot]]
+[[ru:Gnuplot]]
+[[fi:Gnuplot]]
+[[th:à¸à¸´à¸§à¸à¸¥à¸­à¸]]
+[[tr:Gnuplot]]
+[[uk:Gnuplot]]
+[[ur:Gnuplot]]
+[[vec:Gnuplot]]
+[[zh:Gnuplot]]</rev></revisions></page></pages></query></api>

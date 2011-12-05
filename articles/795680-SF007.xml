@@ -1,0 +1,186 @@
+<?xml version="1.0"?><api><query><pages><page pageid="795680" ns="0" title="Windows NT 4.0"><revisions><rev xml:space="preserve">{{Infobox OS version
+| name                = Windows NT 4.0
+| family              = Microsoft Windows
+| logo                = Windows NT logo.svg
+| screenshot          = Windows NT 4.0.png
+| caption             = Screenshot of Windows NT 4.0
+| developer           = Microsoft
+| website             = 
+| source_model        = [[Closed source software|Closed source]]
+| license             = [[Software license agreement|MS-EULA]]
+| supported_platforms = [[IA-32]], [[DEC Alpha|Alpha]], [[MIPS architecture|MIPS]], [[PowerPC]]
+| preceded_by         = [[Windows NT 3.51]]
+| succeeded_by        = [[Windows 2000]]
+| kernel_type         = [[Hybrid kernel|Hybrid]]
+| first_release_date  = '''RTM:''' 29 July 1996&lt;br&gt;'''Retail:''' 24 August 1996
+| first_release_url   = http://www.microsoft.com/presspass/press/1996/jul96/ntw40pr.mspx
+| release_version     = 4.0 (Build 1381: Service Pack 6a)
+| release_date        = {{Start date and age|2001|07|26|df=yes}}
+| release_url         = http://support.microsoft.com/kb/299444
+| preview_version     = 
+| preview_date        = 
+| preview_url         = 
+| support_status      = Unsupported as of 30 June 2004 for Windows NT 4.0 Workstation&lt;ref&gt;{{cite web |title=Microsoft Support Lifecycle for Windows NT 4.0 Workstation |url=http://support.microsoft.com/lifecycle/?LN=en-us&amp;p1=3194&amp;x=2&amp;y=14 |publisher=Microsoft |accessdate=4 September 2009}}&lt;/ref&gt; and 31 December 2004 for Windows NT 4.0 Server&lt;ref&gt;{{cite web |title=Microsoft Support Lifecycle for Windows NT 4.0 Server |url=http://support.microsoft.com/lifecycle/?LN=en-us&amp;p1=3188&amp;x=12&amp;y=11 |publisher=Microsoft |accessdate=4 September 2009}}&lt;/ref&gt;
+| date                = January 2009 &lt;!-- approximate date of template insertion for dating hidden maintenance categories --&gt;
+}}
+
+'''Windows NT 4.0''' is a [[Preemption (computing)|preemptive]],&lt;ref&gt;{{cite web |author=Donald McLaughlin and Partha Dasgupta |title=Distributed Preemptive Scheduling on Windows NT |url=http://www.usenix.org/publications/library/proceedings/usenix-nt98/full_papers/poster_mclaughlin/mclaughlin_html/mclaughlin.html |work=2nd USENIX Windows NT Symposium |publisher=USENIX |date=4 August 1998 |accessdate=4 September 2009}}&lt;/ref&gt; [[Graphical user interface|graphical]] and business-oriented [[operating system]] designed to work with either [[uniprocessor]] or [[Symmetric multiprocessing|symmetric multi-processor]] computers. It was the next release of [[Microsoft]]'s [[Windows NT]] line of [[operating system]]s and was released to manufacturing on 31 July 1996.&lt;ref&gt;Microsoft Announces the Release of Windows NT Workstation 4.0 (July 31, 1996) http://www.microsoft.com/presspass/press/1996/jul96/ntw40pr.mspx&lt;/ref&gt; It is a [[32-bit]] [[Microsoft Windows|Windows]] system available in both workstation and server editions with a graphical environment similar to that of [[Windows 95]].
+
+==Overview==
+The successor to [[Windows NT 3.51]], Windows NT 4.0 introduced the modern user interface of [[Windows 95]] to the Windows NT product line, including the [[Windows Shell]], [[Windows Explorer]] (known as Windows NT Explorer), and the use of &quot;My&quot; nomenclature (e.g. [[My Computer]]). It also includes most applications introduced with [[Windows 95]]. Internally, Windows NT 4.0 was known as the Shell Update Release (SUR).&lt;ref name=&quot;NT4UndertheHood&quot;&gt;[http://www.microsoft.com/msj/archive/S413.aspx Poking Around Under the Hood: A Programmer's View of Windows NT 4.0]&lt;/ref&gt; Various administrative tools, notably ''User Manager for Domains'', ''Server Manager'' and ''Domain Name Service Manager'' have improved graphical user interfaces. The [[Start Menu]] in Windows NT 4.0 separated the ''per-user'' shortcuts and folders from the ''All users'' shortcuts and folders by a separator line. &lt;ref&gt; [http://www.winsupersite.com/article/windows-2000/windows-2000-professional-beta-3-reviewed-127366 Windows 2000 Professional Beta 3 Review] &lt;/ref&gt; Windows NT 4.0 includes some enhancements from [[Microsoft Plus!#Microsoft Plus.21 for Windows 95|Microsoft Plus! for Windows 95]] such as the 3D Pinball game, font smoothing, full window drag, high color icons and stretching the wallpaper to fit the screen. [[Windows Desktop Update]] could also be installed on Windows NT 4.0 to update the shell version and install [[Task Scheduler]]. &lt;ref&gt; [http://technet.microsoft.com/en-us/library/cc751232.aspx The New Task Scheduler (Windows 95 and Windows NT 4.0)] &lt;/ref&gt; The Windows NT 4.0 Resource Kit included the Desktop Themes utility. &lt;ref&gt; [http://support.microsoft.com/kb/159564 Windows NT 4.0 Resource Kit Utilities Corrections and Comments] &lt;/ref&gt;
+
+Windows NT 4.0 is the last major release of Microsoft Windows to support the [[DEC Alpha|Alpha]], [[MIPS architecture|MIPS]] or [[PowerPC]] CPU architectures. It remained in use by businesses for a number of years, despite Microsoft's many efforts to get customers to upgrade to Windows 2000 and newer versions. It was also the last release in the Windows NT line to be branded as ''Windows NT''.
+
+==Features==
+[[Image:Windows NT 4.0 SERVER CoverBOX.PNG|thumb|right|Windows NT 4.0 Server edition]]
+
+Although the chief enhancement has been the addition of the Windows 95 shell, there are several major performance, scalability and feature improvements to the core [[Architecture of Windows NT|architecture]], kernel, [[Windows USER|USER32]], [[Component Object Model|COM]] and [[MSRPC]].&lt;ref name=&quot;NT4UndertheHood&quot;/&gt;&lt;ref&gt;[ftp://ftp.microsoft.com/Developr/drg/COM/MarkRy/MS_DCE_COM.ppt Microsoft, DCE, and COM]&lt;/ref&gt; Windows NT 4.0 also introduced the concept of ''System Policies'' &lt;ref&gt; [http://support.microsoft.com/kb/161334 Guide To Windows NT 4.0 Profiles and Policies] &lt;/ref&gt; and the [[System Policy Editor]].
+
+Other important features included with this release were the [[Microsoft CryptoAPI|Crypto API]],&lt;ref name=&quot;NT4UndertheHood&quot;/&gt; [[Telephony Application Programming Interface|Telephony API 2.0]] with limited Unimodem support,&lt;ref&gt;[http://www.microsoft.com/msj/0498/tapi.aspx For the Telephony API, Press 1; For Unimodem, Press 2; or Stay on the Line: Microsoft Systems Journal article]&lt;/ref&gt; which was the first release of TAPI on Windows NT, [[Distributed Component Object Model|DCOM]] and new [[Object Linking and Embedding|OLE]] features,&lt;ref&gt;[http://www.microsoft.com/msj/0596/activex0596.aspx Introducing Distributed COM and the New OLE Features in Windows NT 4.0]&lt;/ref&gt; and [[Microsoft Transaction Server]] for network applications, [[Microsoft Message Queuing]] (MSMQ), which improved [[interprocess communication]], [[Winsock|Winsock 2]] and the [[TCP/IP]] stack improvements, and file system defragmentation support.&lt;ref name=&quot;NTDefrag&quot;&gt;[http://bandwidthco.com/whitepapers/compforensics/fsanalysis/fragmentation/Inside%20Windows%20NT%20Disk%20Defragmenting.pdf Inside Windows NT Disk Defragmenting]&lt;/ref&gt;
+
+The server editions of Windows NT 4.0 include [[Internet Information Services]] 2.0, [[Microsoft FrontPage]] 1.1, [[Windows Media Services|NetShow Services]], [[Remote Access Service]] (which includes a [[Point-to-Point Tunneling Protocol|PPTP]] server for VPN functionality) and Multi-Protocol Routing service. There are new administrative wizards and a lite version of the [[Microsoft Network Monitor|Network Monitor]] utility shipped with [[System Management Server]]. The Enterprise edition introduced [[Microsoft Cluster Server]].
+
+One significant difference from previous versions of Windows NT is that the [[Graphics Device Interface]] (GDI) is moved into kernel mode&lt;ref&gt;{{cite web |author=Keith Pleas |title=Windows NT 4.0 |url=http://windowsitpro.com/Windows/Articles/ArticleID/2469/pg/2/2.html |publisher=Windows IT Pro |date=April 1996 |accessdate=4 September 2009}}&lt;/ref&gt; rather than being in user mode in the CSRSS process. This eliminated a process to process context switch in calling GDI functions, resulting in a significant performance improvement over Windows NT 3.51, particularly in the graphical user interface. This however also mandated that graphics and printer drivers had to run in kernel mode as well&lt;ref&gt; [http://www.unixwiz.net/techtips/win32-pdriver-ktou.html Converting Win32 Kernel-mode Print Drivers to User Mode] &lt;/ref&gt;, resulting in potential stability issues.  
+
+Windows NT 4.0 was the first release of Microsoft Windows to include [[DirectX]] as standardâversion 2 shipped with the initial release of Windows NT 4.0, and version 3 was included with the release of Service Pack 3 in mid-1997.  Unlike Windows 95 (which did not include DirectX until the OSR2 release in August 1996), Windows NT 4.0 does not support [[Direct3D]] and [[Universal Serial Bus|USB]]. Later versions of DirectX were not released for Windows NT 4.0, although an unofficial DirectX 5 package was available. However, Open GL hardware-accelerated graphics were solidly supported since the very first moment and successfully used by many video games and 3D applications (i. e. Quake I, II and III, Unreal, 3D Studio MAX, SoftImage, Maya...).  
+
+In early releases of 4.0, numerous stability issues did occur as graphics and printer vendors had to change their drivers to be compatible with the kernel mode interfaces exported to them by GDI. The change to move the GDI to run in the same process context as its caller was prompted by complaints from NT Workstation users about realtime graphics performance, but this change put a considerable onus on hardware manufacturers to update device drivers.  Even when manufacturers, primarily graphics hardware manufacturers, wrote 4.0-specific drivers, the [[BSOD]] was much more prevalent in Windows NT 4.0 until these driver issues were resolved.{{cn|date=October 2011}}
+
+Windows NT 4.0 also included a new [[Windows Task Manager]] application. Previous versions of Windows NT included the Task List application, but it only shows ''applications'' currently on the desktop. To monitor how much CPU and memory resources are being used, users were forced to use Performance Monitor. The task manager offers a more convenient way of getting a snapshot of all the applications running on the system at any given time.
+
+With Windows NT 4.0, users could finally run a 32-bit version of Internet Explorer on an NT-based OS. Earlier versions of Windows NT supported running only 16-bit versions of Internet Explorer. &lt;ref&gt; [http://support.microsoft.com/kb/184510 Running 16-bit Internet Explorer on Windows 95 or Windows NT] &lt;/ref&gt; &lt;ref&gt; [http://www.winsupersite.com/article/news2/microsoft-delivers-internet-explorer-3-0a-for-windows-3-1-and-nt-3-51 Microsoft delivers Internet Explorer 3.0a for Windows 3.1 and NT 3.51] &lt;/ref&gt; Microsoft offered up to [[Internet Explorer 6|Internet Explorer 6.0 SP1]] for Windows NT 4.0 with Service Pack 6. [[Sysprep]] was introduced as a deployment tool with Windows NT 4.0.
+
+As the [[Microsoft Management Console]] was not developed yet (it debuted in [[Windows 2000]]), Windows NT 4.0 administrative tools are standalone executables and not MMC snap-ins.
+
+Windows NT 4.0 upgraded [[NTVDM]]'s x86 emulation in the [[RISC]] versions from [[Intel 80286|286]] to [[Intel 80486|486]].&lt;ref&gt; [http://support.microsoft.com/kb/102555 INFO: How Windows handles floating-point calculations] &lt;/ref&gt;
+
+==Comparison with Windows 95==
+
+While providing much greater stability than Windows 95, it was also less flexible from a desktop perspective. Much of the stability was gained by the use of protected memory and the [[hardware abstraction layer]]. Direct hardware access was disallowed and &quot;misbehaving&quot; applications were terminated without needing the computer to be restarted. The trade-off was that NT required an excessive amount of memory in comparison to consumer targeted products such as Windows 95 (32 Mb for normal desktop use, 128 Mb or more for heavy 3D applications) .&lt;ref&gt;{{cite web |title=Troubleshooting and Configuring the Windows NT/95 Registry: Windows 95 and Plug and Play |url=http://docs.rinet.ru/Registratura/htm/ch14.htm |publisher=Macmillan Computer Publishing |accessdate=4 September 2009}}&lt;/ref&gt;
+
+While nearly all programs written for Windows 95 will run on Windows NT, many 3D games would not, due in part to Windows NT 4.0 having limited support for [[DirectX]] (however, it was possible to play many of them in Open GL). Third-party device drivers were an alternative to access the hardware directly, but poorly written drivers became a frequent source of &quot;stop errors&quot;. Such failures began to be referred to as the &quot;blue screen of death&quot; or [[BSOD]] and would require the system to be restarted in such cases. These errors were very rare if using the appropiate drivers and it was not uncommon for NT servers or workstations to run for months at a time without failure. By comparison, Windows consumer versions at the time were much less stable and popularized the belief that all Windows versions were unreliable.{{Citation needed|date=December 2009}}. 
+
+Windows NT 4.0 is also less user-friendly than Windows 95 when it comes to certain maintenance and management tasks; for instance, in spite of shipping a year later than Windows 95, by default there is no [[Legacy Plug and Play|Plug and Play]] support and no [[Device Manager]] (although limited support could be installed later) which greatly simplifies installation of hardware devices. Many basic DOS applications would run, however graphical DOS applications would not run due to the way they accessed graphics hardware. Although Windows NT 4.0 introduced APIs for defragmentation &lt;ref name=&quot;NTDefrag&quot;/&gt;, there was no built-in defrag utility, unlike Windows 95.
+
+The difference between the NT/2000 and 95/98 lines of Windows ended with the arrival of the different versions of [[Windows XP]]. At that time, the APIs âsuch as [[OpenGL]] and [[DirectX]]â had matured sufficiently to be more efficient to write for common PC hardware. On the other hand, the hardware itself had become powerful enough to handle the [[application programming interface|API]] processing overhead acceptably.
+
+==Editions==
+[[Image:Windows NT WorkstationOS.PNG|thumb|right|Windows NT 4.0 Workstation edition]]
+Windows NT 4.0 Server was included in versions 4.0 and 4.5 of [[Microsoft Small Business Server|BackOffice Small Business Server]] suite.
+
+===Client===
+* '''Windows NT 4.0 Workstation''' was designed for use as the general business desktop operating system.
+
+===Servers===
+* '''Windows NT 4.0 Server''', released in 1996, was designed for small-scale business server systems.
+
+* '''Windows NT 4.0 Server, Enterprise Edition''', released in 1997, is the precursor to the '''Enterprise''' line of the Windows server family. Enterprise Server was designed for high-demand, high-traffic networks. Windows NT 4.0 Server, Enterprise Edition includes Service Pack 3.&lt;ref&gt;[http://technet.microsoft.com/en-us/library/cc767919.aspx Windows NT Server 4.0, Enterprise Edition, Administrator's Guide and Release Notes]&lt;/ref&gt;
+
+* '''Windows NT 4.0 Terminal Server Edition''', released in 1998, allows the users to log on remotely. The same functionality was called ''[[Terminal Services]]'' in [[Windows 2000]] and later server releases, and also powers the ''Remote Desktop'' feature that first appeared in [[Windows XP]].
+
+===Embedded===
+* '''Windows NT 4.0 Embedded''' (abbreviated '''NTe''') is an edition of Windows NT 4.0 that was aimed at [[computer]]-powered [[major appliance]]s, [[vending machine]]s, [[Automatic teller machine|ATM]]s and other devices that cannot be considered computers ''per se''. It is the same system as the standard Windows NT 4.0, but it comes packaged in a [[database]] of components and [[Dependency (computer science)|dependencies]], from which a developer can choose individual components to build customized setup [[CD]]s and [[hard disk]] [[booting|boot]] [[image]]s. Windows NT 4.0 Embedded includes Service Pack 5. It was succeeded by [[Windows XP editions#Windows XP Embedded|Windows XP Embedded]].
+
+==Upgradeability==
+An &quot;Option Pack&quot; is available as a free-bundled CD around 1998, which includes [[Internet Information Services|IIS]] 4.0 with [[Active Server Pages]], [[FrontPage Server Extensions]], Certificate Server, [[Microsoft Transaction Server|MTS]], [[MSMQ]], [[Collaboration Data Objects for Windows NT Server|CDONTS]], [[Internet Authentication Service]] (IAS), [[Windows Indexing Service|Indexing Service]], [[Microsoft Management Console]] 1.0, [[Microsoft Site Server]], SMTP and NNTP services and other new software.&lt;ref&gt;[http://www.left-brain.com/tabId/65/itemId/1821/pageId/5/Microsoft-Windows-NT-Server-Administrators-Bible.aspx Windows NT 4.0 Option Pack]&lt;/ref&gt;
+
+Several features such as [[Distributed File System (Microsoft)|Distributed File System]] and [[Network Load Balancing Services|Windows NT Load Balancing Service]] (WLBS) were delivered as addons for Windows NT Server 4.0. The [[Routing and Remote Access Service]] was also a downloadable feature which replaced Windows NT 4.0's separate RAS and Multi-Protocol Routing services.
+
+The last version of [[Microsoft Office]] to run on Windows NT 4.0 is [[Office XP]].
+
+==Service Packs==
+&lt;table border=&quot;1&quot; class=&quot;wikitable&quot; style=&quot;font-size:85%&quot; align=right&gt;
+&lt;tr&gt;
+&lt;th&gt;Software&lt;/th&gt;
+&lt;th&gt;Date&lt;/th&gt;&lt;/tr&gt;
+&lt;td&gt;Release to manufacturing (RTM)&lt;/td&gt;
+&lt;td&gt;31 July 1996&lt;/td&gt;&lt;/tr&gt;
+&lt;td&gt;General release (Retail)&lt;/td&gt;
+&lt;td&gt;24 August 1996&lt;/td&gt;&lt;/tr&gt;
+&lt;td&gt;Service Pack 1 (SP1)&lt;/td&gt;
+&lt;td&gt;16 October 1996&lt;/td&gt;&lt;/tr&gt;
+&lt;td&gt;Service Pack 2 (SP2)&lt;/td&gt;
+&lt;td&gt;14 December 1996&lt;/td&gt;&lt;/tr&gt;
+&lt;td&gt;Service Pack 3 (SP3)&lt;/td&gt;
+&lt;td&gt;15 May 1997&lt;/td&gt;&lt;/tr&gt;
+&lt;td&gt;Service Pack 4 (SP4)&lt;/td&gt;
+&lt;td&gt;25 October 1998&lt;/td&gt;&lt;/tr&gt;
+&lt;td&gt;Service Pack 5 (SP5)&lt;/td&gt;
+&lt;td&gt;4 May 1999&lt;/td&gt;&lt;/tr&gt;
+&lt;td&gt;Service Pack 6 (SP6)&lt;/td&gt;
+&lt;td&gt;22 November 1999&lt;/td&gt;&lt;/tr&gt;
+&lt;td&gt;Service Pack 6a (SP6a)&lt;/td&gt;
+&lt;td&gt;30 November 1999&lt;/td&gt;&lt;/tr&gt;
+&lt;td&gt;Service Pack 7 (SP7)&lt;/td&gt;
+&lt;td&gt;Due Q3 2001, cancelled 18 April 2001&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;
+
+Microsoft released Windows NT 4.0 [[service pack]]s primarily to fix [[Software bug|bugs]]. Windows NT 4.0, during the product's lifecycle, had several service packs, as well as numerous service rollup packages and option packs. The last full service pack was Service Pack 6a (SP6a).
+
+A SP7 was planned at one stage in early 2001, but this became the ''Post SP6a Security Rollup'' and not a full Service Pack, released on 26 July 2001, 16 months after Windows 2000 and nearly three months prior to Windows XP.&lt;ref&gt;{{cite web |author=Rob Kerr |title=MS ditches Service Packs for Windows NT 4.0 |url=http://www.theregister.co.uk/2001/04/18/ms_ditches_service_packs/ |publisher=The Register |date=18 April 2001 |accessdate=24 September 2009}}&lt;/ref&gt;
+
+The service packs also added a multitude of new features such as newer versions of or improvements to [[Internet Information Services]], public-key and certificate authority functionality, user accounts and user profile improvements, smart card support, improved symmetric multiprocessing (SMP) scalability, clustering capabilities, [[Component Object Model|COM]] support improvements, User Profile Disk Quotas, Event Log service, ''Security Configuration Manager'' [[Microsoft Management Console|MMC]] snap-in, [[MS-CHAPv2]] and [[NTLMv2]], [[Server Message Block|SMB]] packet signng, [[SYSKEY]], [[Windows NT startup process|boot]] improvements, [[Windows Internet Naming Service|WINS]] improvements, [[Routing and Remote Access Service]] (RRAS), [[Point-to-Point Tunneling Protocol|PPTP]], DCOM/HTTP tunneling improvements, IGMPv2, [[Windows Management Instrumentation|WMI]], [[Microsoft Active Accessibility|Active Accessibility]] and NTFS 3.0 support among others.&lt;ref&gt;[http://web.archive.org/web/19990117055557/http://www.microsoft.com/ntserver/nts/exec/overview/NT4SP4whatnew.asp What's New in Windows NT 4.0 Service Pack 4?]&lt;/ref&gt;
+
+==Resource Kits==
+Microsoft released five revisions of the Windows NT 4.0 Workstation and Server [[Resource Kit]] (original release plus four supplements) which contained a large number of tools and utilities as well as third-party software.
+
+==Security==
+Microsoft stopped providing security updates for Windows NT 4.0 Workstation on 30 June 2004 and Windows NT 4.0 Server on 31 December 2004, due to major security flaws including [http://www.microsoft.com/technet/security/Bulletin/MS03-010.mspx Microsoft Security Bulletin MS03-010], which according to Microsoft could not be patched without significant changes to the core operating system. According to the security bulletin, &quot;Due to [the] fundamental differences between Windows NT 4.0 and Windows 2000 and its successors, it is infeasible to rebuild the software for Windows NT 4.0 to eliminate the vulnerability. To do so would require re-architecting a very significant amount of the Windows NT 4.0 operating system, and [...] there would be no assurance that applications designed to run on Windows NT 4.0 would continue to operate on the patched system.&quot; 
+
+Between June 2003 and June 2007, 127 security flaws were identified and patched in Windows 2000 Server, many of which may also affect Windows NT 4.0 Server; however, Microsoft does not test security bulletins against unsupported software.
+
+==Legacy==
+The stability of Windows NT offered reduced support costs over [[Windows 95]] or [[Windows 98]]. It was later succeeded by [[Windows 2000]] which was based on NT and largely bridged the gap between NT and consumer Windows versions. [[Windows XP]] and later versions were released which completed the unification of the core architecture of all currently marketed Windows versions around NT.
+
+==Physical RAM limit==
+The maximum amount of physical RAM in a PC that Windows NT 4.0 supports is 4 GB.&lt;ref&gt;[http://www.microsoft.com/whdc/system/platform/server/pae/paemem.mspx Physical RAM limit for Windows NT 4.0 .]&lt;/ref&gt;
+
+==References==
+{{Reflist}}
+
+==External links==
+* [http://www.guidebookgallery.org/guis/windows/winnt40 Guidebook: Windows NT 4.0 Gallery] â A website dedicated to preserving and showcasing Graphical User Interfaces
+* [http://www.hpcfactor.com/qlink/?linkID=16 HPC:Factor Windows NT 4.0 Workstation Patches &amp; Updates Guide]
+* [http://www.hpcfactor.com/qlink/?linkID=149 HPC:Factor Windows NT 4.0 Server Patches &amp; Updates Guide]
+* [http://nt4ref.zcm.com.au/ Windows NT 4.0 Reference Material]
+* [http://www.josephn.net/windows_nt4_resources Josephn.net: Windows NT 4.0 Terminal Server Edition Tips &amp; Updates]
+
+{{Microsoft Windows family}}
+
+{{DEFAULTSORT:Windows Nt 4.0}}
+[[Category:1996 software]]
+[[Category:Windows NT]]
+[[Category:Discontinued Microsoft software]]
+[[Category:PowerPC operating systems]]
+[[Category:Discontinued versions of Microsoft Windows]]
+
+[[ar:ÙÙÙØ¯ÙØ² Ø¥Ù ØªÙ 4.0]]
+[[az:Windows NT 4.0]]
+[[bg:Windows NT 4.0]]
+[[ca:Windows NT 4.0]]
+[[cs:Windows NT 4.0]]
+[[da:Microsoft Windows NT 4.0]]
+[[de:Microsoft Windows NT 4.0]]
+[[es:Windows NT 4.0]]
+[[fi:Windows NT 4.0]]
+[[fr:Windows NT 4.0]]
+[[ko:ìë NT 4.0]]
+[[id:Windows NT 4.0]]
+[[it:Windows NT 4.0]]
+[[hu:Windows NT 4.0]]
+[[hy:Windows NT 4.0]]
+[[ms:Windows NT 4.0]]
+[[nl:Windows NT 4.0]]
+[[ja:Microsoft Windows NT 4.0]]
+[[no:Windows NT 4.0]]
+[[uz:Windows NT 4.0]]
+[[pl:Windows NT 4.0]]
+[[ro:Windows NT 4.0]]
+[[ru:Windows NT 4.0]]
+[[sl:Windows NT 4.0]]
+[[sv:Windows NT 4.0]]
+[[tl:Windows NT 4.0]]
+[[ta:à®µà®¿à®©à¯à®à¯à®¸à¯ à®à®©à¯à®à®¿ 4.0]]
+[[tr:Windows NT 4.0]]
+[[uk:Windows NT 4.0]]
+[[zh:Windows NT 4.0]]</rev></revisions></page></pages></query></api>

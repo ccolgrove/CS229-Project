@@ -1,0 +1,130 @@
+<?xml version="1.0"?><api><query><pages><page pageid="437720" ns="0" title="Memcached"><revisions><rev xml:space="preserve">{{Infobox software
+| name = Memcached
+| logo =
+| screenshot =
+| caption =
+| developer = [[Danga Interactive]]
+| released = {{start date|2003|5|22}}
+| latest release version = 1.4.10
+| latest release date = {{release date|2011|11|09}}
+| operating system = [[Cross-platform]]
+| programming language = [[C (programming language)|C]]
+| genre = distributed memory caching system
+| license = [[BSD License]]
+| website = {{URL|http://www.memcached.org/}}
+}}
+
+In [[computing]], '''memcached''' is a general-purpose distributed [[memory caching]] system that was originally developed by [[Danga Interactive]] for [[LiveJournal]], but is now used by many other sites. It is often used to speed up dynamic [[database]]-driven websites by caching data and [[Object (computer science)|objects]] in [[RAM]] to reduce the number of times an external data source (such as a database or API) must be read. Memcached runs on Unix, Linux, Windows and MacOSX and is distributed under a [[permissive free software license]].&lt;ref&gt;{{cite web
+|url=http://code.sixapart.com/svn/memcached/trunk/server/LICENSE |title=License of memcached }}&lt;/ref&gt;
+
+Memcached's APIs provide a giant [[hash table]] distributed across multiple machines. When the table is full, subsequent inserts cause older data to be purged in [[Cache algorithms|least recently used (LRU)]] order. Applications using Memcached typically layer requests and additions into RAM before falling back on a slower backing store, such as a database.
+
+The system is used by sites including [[YouTube]],&lt;ref&gt;{{cite video
+ | people = Cuong Do Cuong (Engineering manager at YouTube/Google)
+ | title = Seattle Conference on Scalability: YouTube Scalability
+ | url = http://video.google.com/videoplay?docid=-6304964351441328559
+ | medium = Online Video - 26th minute
+ | publisher = Google Tech Talks
+ | location = Seattle
+ | June 23, 2007 }}&lt;/ref&gt; [[Reddit]],&lt;ref&gt;[http://carsonified.com/blog/dev/steve-huffman-on-lessons-learned-at-reddit/ Steve Huffman on Lessons Learned at Reddit]&lt;/ref&gt; [[Zynga]],&lt;ref&gt;[http://gigaom.com/2010/06/08/how-zynga-survived-farmville/ How Zynga Survived FarmVille]&lt;/ref&gt; [[Facebook]],&lt;ref&gt;[http://developers.facebook.com/opensource/ Facebook Developers Resources]&lt;/ref&gt;&lt;ref&gt;[http://www.facebook.com/note.php?note_id=39391378919&amp;ref=mf Scaling memcached at Facebook]&lt;/ref&gt; [[Orange (telecommunications)|Orange]],&lt;ref&gt;[http://www.orangepartner.com/ Orange Developers]&lt;/ref&gt; and [[Twitter]].&lt;ref&gt;[http://blog.twitter.com/2008/05/its-not-rocket-science-but-its-our-work.html It's Not Rocket Science, But It's Our Work]&lt;/ref&gt; [[Heroku]] (now part of [[Salesforce]]) offers a [[Couchbase]]-managed memcached add-on service&lt;ref&gt;[http://addons.heroku.com/memcache Heroku memcached add-on]&lt;/ref&gt; as part of their [[platform as a service]]. [[Google App Engine]], [[AppScale]] and [[Amazon Web Services]] also offer a memcached service through an API.&lt;ref&gt;[http://code.google.com/appengine/docs/python/memcache/usingmemcache.html Using Memcache - Google App Engine - Google Code]&lt;/ref&gt;&lt;ref&gt;http://appscale.cs.ucsb.edu memcached in AppScale&lt;/ref&gt;&lt;ref&gt;http://aws.amazon.com/elasticache/&lt;/ref&gt; Memcached is also supported by some popular [[Content Management System|CMSs]] such as [[Drupal]],&lt;ref&gt;http://drupal.org/project/memcache&lt;/ref&gt; [[Joomla]], and [[WordPress]].&lt;ref&gt;http://dougal.gunters.org/blog/2009/08/26/w3-total-cache-plugin&lt;/ref&gt;
+&lt;!-- no ref, but seems to use memcache: Slashdot, GameFAQs, NYTimes.com, deviantART, Jamendo --&gt;
+
+== History ==
+Memcached was first developed by [[Brad Fitzpatrick]] for his website [[LiveJournal]], on May 22, 2003.&lt;ref&gt;[http://community.livejournal.com/changelog/637455.html]&lt;/ref&gt;&lt;ref&gt;[http://brad.livejournal.com/1893677.html]&lt;/ref&gt;&lt;ref&gt;[http://community.livejournal.com/lj_dev/539656.html]&lt;/ref&gt;
+
+== Architecture ==
+The system uses a [[clientâserver]] architecture. The servers maintain a keyâvalue [[associative array]]; the clients populate this array and query it. Keys are up to 250 bytes long and values can be at most 1 [[megabyte]] in size.
+
+Clients use client side libraries to contact the servers which, by default, expose their service at [[Computer port (software)|port]] 11211. Each client knows all servers; the servers do not communicate with each other. If a client wishes to set or read the value corresponding to a certain key, the client's library first computes a hash of the key to determine the server that will be used. Then it contacts that server. The server will compute a second hash of the key to determine where to store or read the corresponding value.
+
+The servers keep the values in RAM; if a server runs out of RAM, it discards the oldest values. Therefore, clients must treat Memcached as a transitory cache; they cannot assume that data stored in Memcached is still there when they need it. A Memcached-protocol compatible product known as [[MemcacheDB]] provides persistent storage.
+
+If all client libraries use the same hashing algorithm to determine servers, then clients can read each other's cached data; this is obviously desirable.
+
+A typical deployment will have several servers and many clients. However, it is possible to use Memcached on a single computer, acting simultaneously as client and server.
+
+=== Security ===
+Most deployments of Memcached exist within trusted networks where clients may freely connect to any server. There are cases, however, where Memcached is deployed in untrusted networks or where administrators would like to exercise control over the clients that are connecting. For this purpose Memcached can be compiled with optional [[Simple Authentication and Security Layer|SASL]] authentication support. The SASL support requires the binary protocol.
+
+A presentation at [[Black Hat Briefings|BlackHat USA 2010]] revealed that a number of large public websites had left memcached open to inspection, analysis, retrieval, and modification of data.&lt;ref&gt;[http://www.sensepost.com/blog/4873.html BlackHat Write-up: go-derper and mining memcaches]&lt;/ref&gt;
+
+== Example code ==
+''Note that all functions described on this page are [[pseudocode]] only. Memcached calls and programming languages may vary based on the API used.''
+
+Converting database or object creation queries to use Memcached is simple. Typically, when using straight database queries, example code would be as follows:
+
+&lt;source lang=&quot;c&quot;&gt;
+ function get_foo(int userid) {
+    result = db_select(&quot;SELECT * FROM users WHERE userid = ?&quot;, userid);
+    return result;
+ }
+&lt;/source&gt;
+After conversion to Memcached, the same call might look like the following
+&lt;source lang=&quot;c&quot;&gt;
+ function get_foo(int userid) {
+    /* first try the cache */
+    data = memcached_fetch(&quot;userrow:&quot; + userid);
+    if (!data) {
+       /* not found : request database */
+       data = db_select(&quot;SELECT * FROM users WHERE userid = ?&quot;, userid);
+       /* then store in cache until next get */
+       memcached_add(&quot;userrow:&quot; + userid, data);
+    }
+    return data;
+ }
+&lt;/source&gt;
+The server would first check whether a Memcached value with the unique key &quot;userrow:userid&quot; exists, where userid is some number. If the result does not exist, it would select from the database as usual, and set the unique key using the Memcached API add function call.
+
+However, if only this API call were modified, the server would end up fetching incorrect data following any database update actions: the Memcached &quot;view&quot; of the data would become out of date. Therefore, in addition to creating an &quot;add&quot; call, an update call would be also needed, using the Memcached set function.
+&lt;source lang=&quot;c&quot;&gt;
+ function update_foo(int userid, string dbUpdateString) {
+   /* first update database */
+    result = db_execute(dbUpdateString);
+    if (result) {
+       /* database update successful : fetch data to be stored in cache */
+       data = db_select(&quot;SELECT * FROM users WHERE userid = ?&quot;, userid);
+       /* last line could also look like data = createDataFromDBString(dbUpdateString); */
+       /* then store in cache until next get */
+       memcached_set(&quot;userrow:&quot; + userid, data);
+    }
+ }
+&lt;/source&gt;
+This call would update the currently cached data to match the new data in the database, assuming the database query succeeds. An alternative approach would be to invalidate the cache with the Memcached delete function, so that subsequent fetches result in a cache miss. Similar action would need to be taken when database records were deleted, to maintain either a correct or incomplete cache.
+
+== See also ==
+{{Portal box|Computer Science|Free software}}
+* [[Membase]]
+* [[Redis]]
+
+== References ==
+{{Reflist}}
+
+== External links ==
+* [http://www.memcached.org/ Official memcached site]
+* [http://code.google.com/p/memcached/wiki/Start memcached wiki and faq]
+* [http://code.google.com/p/memcachemanager/ PHP Memcached Manager with Tag Support]
+* [http://membase.org/ membase]
+* [http://lukaszwrobel.pl/blog/memcached-and-ruby Memcached and Ruby]
+* [http://www.quickcached.org/ QuickCached - memcached server implementation in Java]
+
+== Commercially Supported Distributions ==
+* [http://www.couchbase.com/products-and-services/memcached Couchbase Server (formerly Membase)] offers a memcached &quot;bucket type&quot; (free for use, subscription support available)
+* [http://www.gigaspaces.com/wiki/display/XAP71/memcached GigaSpaces Java based Memcached] (free community edition, fault tolerance)
+* [http://www.hazelcast.com/docs/1.9.4/manual/single_html/#MemcacheClient Hazelcast Memcached] clustered, elastic, fault-tolerant, Java based memcached (free for use, subscription support available)
+
+[[Category:Free memory management software]]
+[[Category:Cross-platform software]]
+[[Category:Structured storage]]
+[[Category:2003 software]]
+
+[[ca:Memcached]]
+[[de:Memcached]]
+[[es:Memcached]]
+[[fr:Memcached]]
+[[mn:Memcached]]
+[[ja:Memcached]]
+[[pl:Memcached]]
+[[ru:Memcached]]
+[[uk:Memcached]]
+[[vi:Memcached]]
+[[zh:Memcached]]</rev></revisions></page></pages></query></api>

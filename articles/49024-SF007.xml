@@ -1,0 +1,243 @@
+<?xml version="1.0"?><api><query><pages><page pageid="49024" ns="0" title="Mathematica"><revisions><rev xml:space="preserve">{{otheruses}}
+{{Infobox software
+| name                   = Mathematica
+| logo                   = [[Image:MathematicaSpikeyVersion8.png|100px]]
+| screenshot             = [[Image:Mathematica logistic bifurcation.png|256px]]
+| caption                = Mathematica 8.0.0 Linux frontend
+| developer              = [[Wolfram Research]]
+| released               = June 23, 1988&lt;ref&gt;http://blog.wolfram.com/2008/06/23/mathematica-turns-20-today/&lt;/ref&gt;
+| frequently_updated     = yes&lt;!-- Release version update? Don't edit this page, just click on the version number! --&gt;
+| programming language   = 
+| platform               = [[Cross-platform]] [http://www.wolfram.com/products/mathematica/platforms/ (list)]
+| language               = English, Chinese and Japanese.
+| programming language   = Mathematica, [[C (programming language)|C]]
+| genre                  = [[Computer algebra system|Computer algebra]], [[List of numerical analysis software|numerical computations]], [[Information visualization]], [[List of statistical packages|statistics]], [[Graphical user interface|user interface creation]]
+| license                = [[Proprietary software|Proprietary]]
+| website                = [http://www.wolfram.com/products/mathematica/ www.wolfram.com/products/mathematica]
+}}
+'''Mathematica''' is a computational software program used in scientific, engineering, and mathematical fields and other areas of technical computing. It was conceived by [[Stephen Wolfram]] and is developed by [[Wolfram Research]] of [[Champaign, Illinois]].&lt;ref&gt;[http://www.businessweek.com/magazine/content/05_40/b3953024.htm Stephen Wolfram: Simple Solutions; The iconoclastic physicist's Mathematica software nails complex puzzles], BusinessWeek, October 3, 2005.&lt;/ref&gt;&lt;ref&gt;[http://www.wolfram.com/company/contact.cgi Wolfram Research Contact Info]&lt;/ref&gt;
+
+The name of the program &quot;Mathematica&quot; was suggested to Stephen Wolfram by Apple co-founder [[Steve Jobs]]&lt;ref&gt;http://blog.wolframalpha.com/2011/10/06/steve-jobs-a-few-memories/#more-15338&lt;/ref&gt; although Stephen Wolfram had thought about it earlier. 
+== Features ==
+[[Image:Mathematica dinis surface.png|thumb|325px|[[Dini's surface]] plotted with adjustable parameters]]
+Features of Mathematica include:&lt;ref&gt;[http://reference.wolfram.com Mathematica documentation]&lt;/ref&gt;
+*[[Elementary function|Elementary]] mathematical function library
+*[[Special functions|Special]] mathematical function library
+*Matrix and data manipulation tools including support for [[sparse array]]s
+*Support for [[complex number]], [[Arbitrary precision arithmetic|arbitrary precision]], interval arithmetic and symbolic computation
+*2D and 3D data and function [[Visualization (graphic)|visualization]] and animation tools
+*Solvers for systems of equations, [[diophantine equation]]s, [[Ordinary differential equation|ODEs]], [[Partial differential equation|PDEs]], [[Differential algebraic equation|DAEs]], [[Delay differential equation|DDEs]] and [[recurrence relation]]s
+*Numeric and symbolic tools for discrete and continuous calculus
+*Multivariate [[statistics]] libraries including fitting, hypothesis testing, and probability and expectation calculations on over 100 distributions.
+*Constrained and unconstrained local and global [[Optimization (mathematics)|optimization]]
+*Programming language supporting [[Procedural programming|procedural]], [[Functional programming|functional]] and  [[Object-oriented programming|object oriented]] constructs
+*Toolkit for adding [[user interface]]s to calculations and applications
+*Tools for [[image processing]]&lt;ref&gt;[http://www.macworld.com/article/138219/mathematica_7.html Review: Mathematica 7. Technical computing powerhouse gets more oomph] Macworld, Jan 2009&lt;/ref&gt; and [[morphological image processing]] including [[image recognition]]
+*Tools for visualizing and analysing [[Graph (mathematics)|graphs]]
+*Tools for combinatoric problems
+*Tools for [[text mining]] including regular expressions and semantic analysis
+*Data mining tools such as [[cluster analysis]], [[sequence alignment]] and [[pattern matching]]
+*Number theory function library
+*Tools for financial calculations including bonds, annuities, derivatives, options etc.
+*Group theory functions
+*Libraries for [[wavelet]] analysis on sounds, images and data
+*[[Control systems]] libraries
+*Continuous and discrete [[integral transform]]s
+*Import and export filters for data, images, video, sound, [[CAD]], [[GIS]],&lt;ref&gt;[http://www.cadalyst.com/general-software/mathematica-6-cadalyst-labs-review-6299 Mathematica 6 Labs Review] Cadalyst Feb 1, 2008&lt;/ref&gt; document and biomedical formats
+*Database collection for mathematical, scientific, and socio-economic information and access to [[WolframAlpha]] data and computations
+*Technical word processing including [[Formula editor|formula editing]] and automated report generating
+*Tools for connecting to DLLs.  [[SQL]], [[Java (software platform)|Java]], [[.NET framework|.NET]], [[C++]], [[FORTRAN]], [[CUDA]], [[OpenCL]] and [[http]] based systems
+*Tools for parallel programing
+*Using both &quot;free-form linguistic input&quot; (a [[natural language user interface]]) &lt;ref&gt;[http://blog.wolfram.com/2010/11/15/the-free-form-linguistics-revolution-in-mathematica/ The Free-Form Linguistics Revolution in Mathematica]&lt;/ref&gt; and Mathematica language in notebook when connected to the Internet
+
+== Interface ==
+Mathematica is split into two parts, the [[kernel (computer science)|kernel]] and the [[Front and back ends|front end]]. The kernel interprets expressions (Mathematica code) and returns result expressions.
+
+The front end, designed by [[Theodore Gray]], provides a [[GUI]], which allows the creation and editing of Notebook documents containing program code with [[prettyprint]]ing, formatted text together with results including [[Formula editor|typeset mathematics]], graphics, GUI components, tables, and sounds. All contents and formatting can be generated algorithmically or interactively edited. Most standard word processing capabilities are supported, but there is only one level of &quot;undo.&quot;
+
+Documents can be structured using a hierarchy of cells, which allow for outlining and sectioning of a document and support automatic numbering index creation. Documents can be presented in a slideshow environment for presentations. Notebooks and their contents are represented as Mathematica expressions that can be created, modified or analysed by Mathematica programs. This allows conversion to other formats such as [[TeX]] or [[XML]].
+
+The front end includes development tools such as a debugger, input completion and automatic syntax coloring.  
+
+The standard front end is used by default, but alternative front ends are available.  They include the Wolfram Workbench, an [[Eclipse (software)|Eclipse]] based [[Integrated development environment|IDE]], introduced in 2006. It provides project-based code development tools for Mathematica, including revision management, debugging, profiling, and testing.&lt;ref&gt;[http://www.macworld.com/news/2006/06/21/workbench/index.php MacWorld review of Wolfram Workbench]&lt;/ref&gt; Mathematica also includes a command line front end.&lt;ref&gt;[http://reference.wolfram.com/mathematica/tutorial/UsingATextBasedInterface.html Using a Text-Based Interface] documentation at wolfram.com&lt;/ref&gt;
+
+== High-performance computing ==
+In recent years, the capabilities for [[high-performance computing]] have been extended with the introduction of [[packed array]]s (version 4, 1999)&lt;ref&gt;[http://goliath.ecnext.com/premium/0199/0199-1526706.html Math software packs new power; new programs automate such tedious processes as solving nonlinear differential equations and converting units] by Agnes Shanley, ''Chemical Engineering'', March 1, 2002.&lt;/ref&gt; and [[sparse matrices]] (version 5, 2003),&lt;ref&gt;[http://www.accessmylibrary.com/coms2/summary_0286-9587712_ITM Mathematica 5.1: additional features make software well-suited for operations research professionals] by ManMohan S. Sodhi, ''OR/MS Today'', December 1, 2004.&lt;/ref&gt; and by adopting the [[GNU Multi-Precision Library]] to evaluate high-precision arithmetic.
+
+Version 5.2 (2005) added automatic [[Thread (computer science)|multi-threading]] when computations are performed on [[multi-core]] computers.&lt;ref&gt;[http://www.accessmylibrary.com/coms2/summary_0286-12336000_ITM The 21st annual Editors' Choice Awards], Macworld, February 1, 2006.&lt;/ref&gt; This release included CPU specific optimized libraries. In addition Mathematica is supported by third party specialist acceleration hardware such as [[ClearSpeed]].&lt;ref&gt;[http://www.thefreelibrary.com/ClearSpeed+Advance(TM)+Accelerator+Boards+Certified+by+Wolfram...-a0147498410 ClearSpeed Advance(TM) Accelerator Boards Certified by Wolfram Research; Math Coprocessors Enable Mathematica Users to Quadruple Performance.]&lt;/ref&gt;
+
+In 2002, [[gridMathematica]] was introduced to allow user level [[Parallel computing|parallel programming]] on heterogeneous clusters and multiprocessor systems &lt;ref&gt;[http://www.macworld.com/news/2002/11/20/mathematica/index.php gridMathematica offers parallel computing solution] by Dennis Sellers, MacWorld, November 20, 2002.&lt;/ref&gt; and in 2008 parallel computing technology was included in all Mathematica licenses including support for grid technology such as [[Windows HPC Server 2008]], [[Windows Server 2003|Microsoft Compute Cluster Server]] and [[Sun Grid]].
+
+Support for [[CUDA]] and [[OpenCL]] [[GPU]] hardware was added in 2010. Also, version 8 can generate [[C (programming language)|C]] code, which is automatically compiled by a system C compiler, such as [[Intel C++ Compiler]] or compiler of [[Visual Studio 2010]].
+
+== Development ==
+Several solutions are available for deploying applications written in Mathematica:
+*Mathematica Player Pro is a runtime version of Mathematica that will run any Mathematica application but does not allow editing or creation of the code.&lt;ref&gt;[http://www.gizmag.com/mathematica-player-pro-new-application-delivery-system-for-mathematica/9096/ Mathematica Player Pro - new Application Delivery System for Mathematica] www.gizmag.com&lt;/ref&gt; 
+*A [[gratis versus libre|free-of-charge]] version, ''Wolfram [[CDF Player]]'', is provided for running Mathematica programs that have been saved in the [[Computable Document Format]] (CDF).&lt;ref&gt;[http://wolfram.com/cdf Computable Document Format for Interactive Content]&lt;/ref&gt; It can also view standard Mathematica files, but not run them. It includes plugins for common web browsers.
+*webMathematica allows a web browser to act as a front end to a remote Mathematica server. It is designed to allow a user written application to be remotely accessed via a browser on any platform. It may not be used to give full access to Mathematica.
+*Mathematica code can be converted to C code or to an automatically generated DLL.
+
+== Connections with other applications ==
+Communication with other applications occurs through a protocol called [http://www.wolfram.com/solutions/mathlink/mathlink.html MathLink]. It allows communication between the Mathematica kernel and front-end, and also provides a general interface between the kernel and other applications.
+
+Although Mathematica has a large array of functionality, a number of interfaces to other software have been developed, for use where other programs have functionality that Mathematica does not provide, to enhance those applications, or to access legacy code.
+
+Wolfram Research freely distributes a developer kit for linking applications written in the [[C (programming language)|C programming language]] to the Mathematica kernel through ''MathLink''.&lt;ref name=&quot;accessmylibrary.com&quot;&gt;[http://www.accessmylibrary.com/coms2/summary_0286-9256461_ITM New Mathematica: faster, leaner, linkable and QuickTime-compatible: MathLink kit allows ties to other apps. (Wolfram Research Inc. ships Mathematica 2.1, new QuickTime-compatible version of Mathematica software)] by Daniel Todd, MacWeek, June 15, 1992.&lt;/ref&gt;
+
+Using ''.NET/Link''.,&lt;ref&gt;[http://www.wolfram.com/solutions/mathlink/netlink/ .NET/Link]: .NET/Link is a toolkit that integrates Mathematica and the Microsoft .NET Framework.&lt;/ref&gt; a .NET program can ask Mathematica to perform computations; likewise, a Mathematica program can load .NET [[class (computer science)|classes]], manipulate .NET objects and perform method calls. This makes it possible to build .NET [[graphical user interface]]s from within Mathematica. Similar functionality is achieved with ''J/Link''.,&lt;ref name=&quot;macworld.com&quot;&gt;[http://www.macworld.com/2002/11/reviews/mathematica/ Mathematica 4.2] by Charles Seiter, ''Macworld'', November 1, 2002.&lt;/ref&gt; but with Java programs instead of .NET programs.
+
+Communication with [[SQL]] databases is achieved through built-in support for [[JDBC]].&lt;ref&gt;[http://www.databasejournal.com/news/article.php/3453911 Mathematica 5.1 Available ], Database Journal, Jan 3, 2005.&lt;/ref&gt; Mathematica can also install [[web services]] from a [[Web Services Description Language|WSDL]] description.&lt;ref&gt;[http://www.w3.org/Math/Documents/Notes/services.xml Mathematical Web Services: W3C Note 1 August 2003]&lt;/ref&gt;&lt;ref&gt;[http://reference.wolfram.com/mathematica/WebServices/tutorial/Introduction.html Introduction to Web Services], Mathematica Web Services Tutorial&lt;/ref&gt;
+
+Other languages that connect to Mathematica include [[Haskell (programming language)|Haskell]],&lt;ref&gt;[http://hackage.haskell.org/package/mathlink Haskell packages]&lt;/ref&gt; [[AppleScript]],&lt;ref&gt;[http://www.unisoftwareplus.com/products/mathlinkosax/ Unisoftware plus]&lt;/ref&gt; [[Racket_(programming_language)|Racket]],&lt;ref&gt;[http://www.cs.utah.edu/~czhu/SchemeLink/mrmma.html MrMathematica website]&lt;/ref&gt; [[Visual Basic]],&lt;ref&gt;[http://library.wolfram.com/infocenter/TechNotes/4710/ Mathematica for ActivX]&lt;/ref&gt; [[Python (programming language)|Python]]&lt;ref&gt;[http://dkbza.org/pythonika.html Pythonika MathLink module for Python]&lt;/ref&gt;&lt;ref&gt;[http://library.wolfram.com/infocenter/MathSource/585/   PYML (Python Mathematica interface)]&lt;/ref&gt;  and [[Clojure]].&lt;ref&gt;[http://clojuratica.weebly.com/]&lt;/ref&gt;
+
+Links are available to many specialized mathematical software packages including [[OpenOffice.org Calc]],&lt;ref&gt;[http://www.lauschkeconsulting.com/calclink.html CalcLink] Lauschke Consulting&lt;/ref&gt; [[Microsoft Excel]],&lt;ref&gt;[http://www.wolfram.com/products/applications/excel_link/] Mathematica Link for Excel&lt;/ref&gt; [[MATLAB]],&lt;ref&gt;[http://www.mathworks.com/matlabcentral/fileexchange/6044-mathematica-symbolic-toolbox-for-matlab-version-2-0 Mathematica Toolbox for Matlab]&lt;/ref&gt;&lt;ref&gt;[http://library.wolfram.com/infocenter/MathSource/618/ Mathsource item #618 for calling MATLAB from Mathematica] Roger Germundsson from [[Wolfram Research]]&lt;/ref&gt; [[R_Statistics|R]],&lt;ref&gt;[http://www.scienceops.com/Rlink2.asp R-Link]  Calling [[R_Statistics|R]] from within Mathematica&lt;/ref&gt;&lt;ref&gt;[http://library.wolfram.com/infocenter/Conferences/6510/ Using [[R_Statistics|R]]'s functionality with Mathematica] Wolfram Technology Conference in 2006&lt;/ref&gt; [[Sage_(mathematics_software)|Sage]],&lt;ref&gt;http://facstaff.unca.edu/mcmcclur/Mathematica/Sage/ Calling Sage from Mathematica&lt;/ref&gt;&lt;ref&gt;http://facstaff.unca.edu/mcmcclur/Mathematica/Sage/UsingSage.nb A Mathematica notebook to call [[Sage_(mathematics_software)|Sage]] from Mathematica.&lt;/ref&gt; [[SINGULAR]],&lt;ref&gt;[http://www.risc.uni-linz.ac.at/people/mkauers/publications/kauers06m.pdf] Manuel Kauers and Viktor Levandovskyy of the [[Johannes_Kepler_University_Linz|Johannes Kepler University in Austria]] &lt;/ref&gt; [[MathModelica]] and [[Origin_(software)|Origin]].&lt;ref&gt;[http://electronicdesign.com/Articles/ArticleID/1323/1323.html * Interface Links Origin And Mathematica Software] Electronic Design&lt;/ref&gt;
+
+Mathematical equations can be exchanged with other computational or typesetting software via [[MathML]].
+
+Mathematica can capture real-time data via a link to [[LabView]],&lt;ref&gt;[http://www.bettervi.com/mlink/index.html Mathematica Link to Labview] BetterView Consulting&lt;/ref&gt; from financial feeds&lt;ref&gt;[http://www.lauschkeconsulting.com/ddfplus.html DDFLink] Lauschke Consulting&lt;/ref&gt; and directly from hardware devices via GPIB (IEEE 488),&lt;ref&gt;[http://sourceforge.net/projects/gitm/ GITM] SourceForge&lt;/ref&gt; [[USB]]&lt;ref&gt;[http://www.wolfram.com/news/btoptools.html BTopTools] A commercial interface to USB devices&lt;/ref&gt; and serial interfaces.&lt;ref&gt;[http://library.wolfram.com/infocenter/MathSource/6380/ Interfacing Hardware with Mathematica]&lt;/ref&gt; It automatically detects and reads from [[Human_interface_device|HID]] devices.
+
+Alternative interfaces are available such as JMath,&lt;ref&gt;[http://robotics.caltech.edu/~radford/jmath/ JMath website]&lt;/ref&gt; based on [[GNU readline]] and MASH&lt;ref&gt;[http://ai.eecs.umich.edu/people/dreeves/mash/ MASH website]&lt;/ref&gt; which runs self contained Mathematica programs (with arguments) from the UNIX command line.
+
+== Computable data ==
+[[Image:MathematicaWind.png|thumb|325px|A stream plot of live weather data]]
+Mathematica includes collections of curated data in a consistent framework for immediate computation. Data can be accessed programmatically to inform or test models and is updated automatically from a data server at Wolfram Research.&lt;ref&gt;http://reference.wolfram.com/mathematica/guide/ScientificAndTechnicalData.html&lt;/ref&gt; Some data such as share prices and weather are delivered in real-time. Data sets currently include:
+*Astronomical data: 99 properties of 155,000 astronomical bodies
+*Chemical data: 111 properties of 34,000 chemical compounds,  86 properties of 118 chemical elements and 35 properties of 1000 subatomic particles
+*Geopolitical data: 225 properties of 237 countries and 14 properties of 160,000 cities around the world
+*Financial data: 71 historical and real-time properties of 186,000 shares and financial instruments
+*Mathematical data: 89 properties of 187 polyhedra, 258 properties of 3000 graphs, 63 properties of 6 knots, 37 properties of 21 lattice structures, 32 properties of 52 geodesic schemes
+*Language data: 37 properties of 149,000 English words. 26 additional language dictionaries
+*Biomedical data: 41 properties of all 40,000 human genes, 30 properties of 27,000 proteins
+*Weather data: live and historical measurements of 43 properties of 17,000 weather stations around the world
+&lt;!--- Values can be updated by running the following Mathematica code:
+{#, Length[#[]], Length[#[&quot;Properties&quot;]]} &amp; /@ {AstronomicalData,
+  ChemicalData, CityData, CountryData, ElementData, FinancialData,
+  GraphData, IsotopeData, KnotData, LatticeData, ParticleData,
+  PolyhedronData, WordData, WeatherData, GenomeData, GeodesyData,
+  ProteinData} ---&gt;
+*Wolfram|Alpha data: trillions of data points from [[WolframAlpha]]
+
+== Licensing ==
+Mathematica is [[proprietary software]] restricted by both [[trade secret]] and [[copyright]] law.&lt;ref&gt;[http://www.wolfram.com/terms/MathematicaLicenseAgreement.pdf Wolfram Mathematica License Agreement]&lt;/ref&gt;
+
+A regular single-user license for Mathematica used in a commercial environment costs $2495. It includes four additional kernels for parallel computations and one year of service that includes updates, technical support, a home use license, a webMathematica Amateur license,&lt;ref&gt;[http://www.wolfram.com/products/webmathematica/versions/amateurorder.html webMathematica terms]&lt;/ref&gt; a Wolfram Workbench license and three Mathematica Player Pro licenses. Discounts are available for government, charity, educational, pre-college, school, student, home use&lt;ref&gt;[http://www.macworld.com/article/138664/2009/02/mathematica.html Mathematica Home Edition Released] Macworld, Feb 2009&lt;/ref&gt; and retiree use and depend on geographical region. Student licenses cost $140. A general &quot;home use&quot; license (&quot;Mathematica Home Edition&quot;) is also available to the public and is priced at $295. Educational site licenses allow use by students at home. A license manager similar to [[Flexlm|FLEXnet]] is available to provide sharing of licenses within a group.
+
+== Platform availability ==
+Mathematica 8 is supported on various versions of [[Linux]], Apple's [[Mac OS X]], and NT-based [[Microsoft Windows]]. All platforms are supported with 64-bit implementations.&lt;ref&gt;[http://www.wolfram.com/products/mathematica/platforms/ Supported platforms list]&lt;/ref&gt; Earlier versions of Mathematica up to 6.0.3 supported other operating systems, including [[Solaris (operating system)|Solaris]], [[IBM AIX (operating system)|AIX]], [[Convex Computer|Convex]], [[HP-UX]], [[IRIX]], [[MS-DOS]], [[NeXTSTEP]], [[OS/2]], [[Ultrix]] and [[Windows Me]].&lt;ref&gt;[http://www.serc.iisc.ernet.in/ComputingFacilities/software/mathematica-6.0/platform.html Mathematica 6 Platform Availability]&lt;/ref&gt;
+
+== Version history ==
+Mathematica built on the ideas in Cole and Wolfram's earlier [[Symbolic Manipulation Program]] (SMP).&lt;ref&gt;[http://www.accessmylibrary.com/coms2/summary_0286-11287695_ITM Math, the universe, and Stephen: the author of Mathematica created a whirlwind of scientific controversy this year when, after more than 10 years of research, he published his treatise on the ability of simple structures to create unpredictable complex patterns. (2002 Scientist Of The Year).(Stephen Wolfram)] by Tim Studt, R&amp;D, November 1 , 2002.&lt;/ref&gt;&lt;ref&gt;[http://query.nytimes.com/gst/fullpage.html?res=940DE5DA173AF937A15755C0A96E948260 A Top Scientist's Latest: Math Software] by Andrew Pollack, ''The New York Times'', June 24, 19988.&lt;/ref&gt;
+
+[[Wolfram Research]] has released the following versions of Mathematica&lt;ref&gt;[http://www.wolfram.com/products/mathematica/quickrevisionhistory.html Quick Revision History of Mathematica]&lt;/ref&gt;:
+&lt;div style=&quot;-moz-column-count:2; column-count:2;&quot;&gt;
+*Mathematica 1.0 (June 23, 1988)&lt;ref&gt;http://www.wolfram.com/company/scrapbook/page03.html&lt;/ref&gt;&lt;ref&gt;http://www.mathematica-journal.com/issue/v9i1/news.html Mathematica Journal, Volume 9, Issue 1 &lt;/ref&gt;&lt;ref&gt;[http://query.nytimes.com/gst/fullpage.html?res=940DE6DB133EF933A05753C1A96E948260 Supercomputer Pictures Solve the Once Insoluble], John Markoff, October 30, 1988.&lt;/ref&gt;&lt;ref&gt;[http://12000.org/my_notes/compare_mathematica/index.htm], Nasser M. Abbasi.&lt;/ref&gt;
+*Mathematica 1.1 (1989)&lt;ref&gt;Mathematica 1.1. Biotechnology Software. Vogel, W. K. (1989)&lt;/ref&gt;
+*Mathematica 1.2 (August 1, 1989)&lt;ref&gt;[http://www.accessmylibrary.com/coms2/summary_0286-9205258_ITM Mathematica 1.2 adds new graphics options: upgrade also promises concurrent operations] by Elinor Craig, ''MacWeek'', July 25, 1989.&lt;/ref&gt;&lt;ref&gt;[http://12000.org/my_notes/compare_mathematica/index.htm], Nasser M. Abbasi.&lt;/ref&gt;
+*Mathematica 2.0 (January 15, 1991)&lt;ref&gt;[http://www.accessmylibrary.com/coms2/summary_0286-9227849_ITM Mathematica + 283 functions = Mathematica 2.0] by Raines Cohen, ''MacWeek'', January 15, 1991.&lt;/ref&gt;&lt;ref&gt;[http://12000.org/my_notes/compare_mathematica/index.htm], Nasser M. Abbasi.&lt;/ref&gt;
+*Mathematica 2.1 (June 15, 1992)&lt;ref&gt;[http://12000.org/my_notes/compare_mathematica/index.htm], Nasser M. Abbasi.&lt;/ref&gt;&lt;ref name=&quot;accessmylibrary.com&quot;/&gt;
+*Mathematica 2.2 (June 1, 1993)&lt;ref&gt;[http://12000.org/my_notes/compare_mathematica/index.htm], Nasser M. Abbasi.&lt;/ref&gt;&lt;ref&gt;[http://www.highbeam.com/doc/1G1-13185601.html New version of Mathematica], ''Mechanical Engineering'', June 1, 1993.&lt;/ref&gt;
+*Mathematica 3.0 (September 3, 1996)&lt;ref&gt;[http://www.wolfram.com/news/archive/#1996], Wolfram news archive, 1996.&lt;/ref&gt;
+*Mathematica 4.0 (May 19, 1999)&lt;ref&gt;[http://12000.org/my_notes/compare_mathematica/index.htm], Nasser M. Abbasi.&lt;/ref&gt;&lt;ref&gt;[http://www.highbeam.com/doc/1G1-61370961.html Mathematica 4.0] by Charles Seiters, ''Macworld'', October 1, 1999.&lt;/ref&gt;
+*Mathematica 4.1 (November 2, 2000)&lt;ref&gt;[http://12000.org/my_notes/compare_mathematica/index.htm], Nasser M. Abbasi.&lt;/ref&gt;
+*Mathematica 4.2 (November 1, 2002)&lt;ref&gt;[http://12000.org/my_notes/compare_mathematica/index.htm], Nasser M. Abbasi.&lt;/ref&gt;
+*Mathematica 5.0 (June 12, 2003)&lt;ref&gt;[http://12000.org/my_notes/compare_mathematica/index.htm], Nasser M. Abbasi.&lt;/ref&gt;&lt;ref&gt;[http://www.mywire.com/pubs/PCMagazine/2003/09/02/420220?extID=10051 Mathematica 5.0 Adds Up: Exactly 15 years after Mathematica's initial release, Wolfram Research has released Mathematica ], ''PC Magazine'', September 3, 2003.&lt;/ref&gt;
+*Mathematica 5.1 (October 25, 2004)&lt;ref&gt;[http://12000.org/my_notes/compare_mathematica/index.htm], Nasser M. Abbasi.&lt;/ref&gt;&lt;ref&gt;[http://moreresults.factiva.com/results/index/index.aspx?ref=PCW0000020050115e0c60001i Mathematica 5.1's Web Services Add Up; Mathematica 5.1 delivers improvements over Version 5.0 that are vastly out of proportion for a .1 upgrade.] by Peter Coffee, ''eWeek'', December 6, 2004.&lt;/ref&gt;
+*Mathematica 5.2 (June 20, 2005)&lt;ref&gt;[http://12000.org/my_notes/compare_mathematica/index.htm], Nasser M. Abbasi.&lt;/ref&gt;&lt;ref&gt;[http://www.macworld.co.uk/news/index.cfm?NewsID=12069&amp;Page=1&amp;pagePos=6 Mathematica hits 64-bit], ''MacWorld'' UK, July 13, 2005.&lt;/ref&gt;
+*Mathematica 6.0 (May 1, 2007)&lt;ref&gt;[http://blog.wolfram.com/2007/05/] Today, Mathematica is reinvented - Blog by Stephen Wolfram&lt;/ref&gt;&lt;ref&gt;[http://www.scientific-computing.com/products/review_details.php?review_id=17 Mathematica 6: Felix Grant finds that version 6 of Wolfram Research's symbolic mathematical software really does live up to its expectations.] Scientific Computing, 2007.&lt;/ref&gt;
+*Mathematica 6.0.1 (July 5, 2007)&lt;ref&gt;[http://blog.wolfram.com/?year=2007&amp;monthnum=07&amp;name=mathematica-601-arrives.], Wolfram Blog, 2007.&lt;/ref&gt;
+*Mathematica 6.0.2 (2008)&lt;ref&gt;[http://www.wolfram.com/products/mathematica/quickrevisionhistory.html], Mathematica Quick Revision History.&lt;/ref&gt;
+*Mathematica 6.0.3 (2008)&lt;ref&gt;[http://www.wolfram.com/products/mathematica/quickrevisionhistory.html], Mathematica Quick Revision History.&lt;/ref&gt;
+*Mathematica 7.0 (November 18, 2008)&lt;ref&gt;[http://blog.wolfram.com/2008/11/], Mathematica 7.0 Released Today! - Blog by Stephen Wolfram&lt;/ref&gt;
+*Mathematica 7.0.1 (March 5, 2009)&lt;ref&gt;[http://forums.wolfram.com/mathgroup/archive/2009/Mar/msg00118.html], Announcing Mathematica 7.0.1.&lt;/ref&gt;
+*Mathematica 8.0 (November 15, 2010)
+*Mathematica 8.0.1 (March 7, 2011)
+*Mathematica 8.0.4 (October 24, 2011)
+&lt;/div&gt;
+
+== See also ==
+{{Wikibooks|Mathematica}}
+{{commonscat|Mathematica}}
+*[[Publicon]], a technical publication software marketed by Wolfram Research
+*[[Wolfram Alpha|Wolfram|Alpha]], a computational knowledge engine
+*[[IMTEK Mathematica Supplement]], an open-source Mathematica add-on for finite element simulation
+*[[List of computer simulation software]]
+*[[List of graphing software]]
+*[[Mathematical software]]
+
+== References ==
+{{reflist|colwidth=30em}}
+
+== External links ==
+*[http://www.wolfram.com/products/mathematica/ Wolfram Mathematica 8] 
+*[http://www.wolfram.com Wolfram Research]
+*[http://reference.wolfram.com/ Mathematica Documentation Center]
+*[http://www.terrystickels.com/math-art/ Mathematica Photo Gallery, examples of art using Mathematica]
+*[http://www.theodoregray.com/BrainRot/ Will it rot my students' brains if they use Mathematica?] by Theodore W. Gray and Jerry Glynn, excerpted from ''The Beginner's Guide to Mathematica V4'', published by Cambridge University Press
+*[http://demonstrations.wolfram.com/LevelsOfAMathematicaExpression/ Levels Of A Mathematica Expression] by Enrique Zeleny, [[Wolfram Demonstrations Project]]
+*[http://12000.org/my_notes/compare_mathematica/index.htm A little bit of Mathematica history] documenting the growth of code base and number of functions over time
+*[http://www.scientificweb.com/ncrunch/ncrunch5.pdf Comparison of mathematical programs for data analysis] ScientificWeb
+*[http://www.mathprogramming-intro.org/ Mathematica programming: An advanced Introduction] free book
+
+{{Computer algebra systems}}
+{{Numerical analysis software}}
+{{Statistical software}}
+{{Image Processing Software}}
+
+[[Category:1988 software]]
+[[Category:Apple Design Award winners]]
+[[Category:Array programming languages]]
+[[Category:Astronomical databases]]
+[[Category:Audio programming languages]]
+[[Category:Computer algebra systems]]
+[[Category:Cross-platform software]]
+[[Category:Data analysis software]]
+[[Category:Earth sciences graphics software]]
+[[Category:Econometrics software]]
+[[Category:Formula editors]]
+[[Category:Formula manipulation languages]]
+[[Category:Functional languages]]
+[[Category:Interactive geometry software]]
+[[Category:Linux computer algebra system software]]
+[[Category:Linux numerical analysis software]]
+[[Category:Mathematical optimization software]]
+[[Category:Mathematical software]]
+[[Category:Numerical programming languages]]
+[[Category:Numerical software]]
+[[Category:Pi-related software]]
+[[Category:Physics software]]
+[[Category:Plotting software]]
+[[Category:Science software]]
+[[Category:Simulation programming languages]]
+[[Category:Software that uses Qt]]
+[[Category:Statistical programming languages]]
+[[Category:Statistical software]]
+[[Category:Term-rewriting programming languages]]
+[[Category:Theorem proving software systems]]
+[[Category:Wolfram Research]]
+
+[[ar:ÙØ§Ø«ÙØ§ØªÙÙØ§]]
+[[cs:Mathematica]]
+[[de:Mathematica]]
+[[es:Mathematica]]
+[[fa:ÙØªÙØªÛÚ©Ø§]]
+[[fr:Mathematica]]
+[[ko:ë§¤ì¤ë§¤í°ì¹´]]
+[[id:Mathematica]]
+[[it:Mathematica]]
+[[he:Mathematica]]
+[[lt:Mathematica]]
+[[hu:Mathematica]]
+[[ml:à´®à´¾à´¤àµà´¤à´®à´¾à´±àµà´±à´¿à´àµà´]]
+[[nl:Mathematica (softwarepakket)]]
+[[ja:Mathematica]]
+[[no:Mathematica]]
+[[pl:Mathematica]]
+[[pt:Mathematica]]
+[[ru:Mathematica]]
+[[sq:Mathematica]]
+[[sl:Mathematica]]
+[[fi:Mathematica]]
+[[sv:Mathematica]]
+[[tr:Mathematica]]
+[[uk:Mathematica]]
+[[zh:Mathematica]]</rev></revisions></page></pages></query></api>

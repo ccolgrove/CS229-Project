@@ -1,0 +1,128 @@
+<?xml version="1.0"?><api><query><pages><page pageid="148169" ns="0" title="IBM PC DOS"><revisions><rev xml:space="preserve">{{Refimprove|date=August 2009}}
+{{About|IBM PC DOS|other compatible operating systems of the DOS family|DOS}}
+{{Infobox OS
+| name = PC DOS (IBM DOS)
+| logo = [[Image:PC-DOS.svg|150px]]
+| screenshot = [[Image:PC-DOS 1.10 screenshot.png|280px]]
+| caption = A typical command line in PC DOS.
+| developer = [[IBM]] and [[Microsoft]]
+| family = [[DOS]]
+| source_model = [[Closed source]]
+| latest_release_version = PC DOS 2000
+| latest_release_date = 1998
+| kernel_type =
+| ui = [[Command line interface]]
+| license = [[Proprietary software|Proprietary]]
+| working_state = Historic
+| website =
+}}
+'''IBM PC DOS''' (full name: The IBM Personal Computer Disk Operating System) is a [[DOS]] system for the [[IBM Personal Computer]] and [[IBM PC compatible|compatibles]], manufactured and sold by [[IBM]] from the 1980s to the 2000s.
+
+The [[MS-DOS API|DOS INT &lt;tt&gt;21&lt;/tt&gt;h]] function &lt;tt&gt;30&lt;/tt&gt;h ''get DOS version'' returns OEM code &lt;tt&gt;00&lt;/tt&gt;h for [[IBM]] instead of &lt;tt&gt;FF&lt;/tt&gt;h for [[Microsoft]].  This is relevant for DOS 7, because various features introduced in MS DOS 7 (a part of [[Windows 95]]) are not supported in PC DOS 7, and vice  versa, e.g., MS DOS 7 does not support [[REXX]], and PC DOS 7 does not support [[FAT32]].     
+
+==History==
+The IBM task force assembled to develop the PC decided that critical components of the machine, including the operating system, would come from outside vendors.  This radical break from company tradition of in-house development was the key decision that made the IBM PC an industry standard.  But it was done out of necessity, to save time.  [[Microsoft]] was selected for the operating system.  IBM wanted Microsoft to retain ownership of whatever software it developed, and wanted nothing to do with helping Microsoft, other than making suggestions from afar.  According to task force member Jack Sams, &quot;The reasons were internal.  We had a terrible problem being sued by people claiming we had stolen their stuff.  It could be horribly expensive for us to have our programmers look at code that belonged to someone else because they would then come back and say we stole it and made all this money.  We had lost a series of suits on this, and so we didn't want to have a product which was clearly someone else's product worked on by IBM people.  We went to Microsoft on the proposition that we wanted this to be their product.&quot;  IBM first contacted Microsoft to look the company over in July 1980.  Negotiations continued over the next months, and the paperwork was officially signed in early November.&lt;ref name=&quot;Ref-1&quot;&gt;Wallace, J. &amp; Erickson, J. (1992). ''Hard Drive'', John Wiley &amp; Sons. ISBN 0-471-56886-4.&lt;/ref&gt;
+
+== Versions ==
+
+=== PC DOS 1.x ===
+
+Microsoft first licensed, then purchased [[86-DOS]] from [[Seattle Computer Products]] (SCP), which was modified for the IBM PC by Microsoft employee [[Bob O'Rear]] with assistance from SCP (later Microsoft) employee [[Tim Paterson]].  O'Rear got 86-DOS to run on the prototype PC in February 1981.  86-DOS had to be converted from 8-inch to 5.25-inch [[floppy disks]] and integrated with the [[BIOS]], which Microsoft was helping IBM to write.&lt;ref name=&quot;Ref-2&quot; /&gt;  IBM had more people writing requirements for the computer than Microsoft had writing code.  O'Rear often felt overwhelmed by the number of people he had to deal with at the ESD (Entry Systems Division) facility in [[Boca Raton]].  86-DOS was [[rebranded]] IBM PC DOS 1.0 for its August 1981 release with the IBM PC.   Toward the end of 1981, Paterson went to work on an upgrade, which was called PC DOS 1.1.  It allowed data to be written on both sides of a diskette, thus doubling the capacity of the IBM machine, and was finished in March 1982.
+
+=== PC DOS 2.x ===
+
+Later, a group of Microsoft programmers (primarily [[Paul Allen]], [[Mark Zbikowski]] and [[AARD code|Aaron Reynolds]])&lt;ref name=&quot;Ref-2&quot;&gt;Duncan, Ray (1988). ''The MS-DOS Encyclopedia'', Microsoft Press. ISBN 1-55615-049-0.&lt;/ref&gt; began work on PC DOS 2.0, the next version for the [[IBM PC/XT]], the first PC to store data on a hard disk.  A much more sophisticated program than 1.0, it had 20,000 lines of [[assembly language]] code, compared to about 4,000 lines in the first version.  It was officially announced in March 1983.  In March 1984, the [[IBM PCjr]] shipped.  It ran PC DOS 2.1, which supported PCjr's ability to run programs from ROM cartridges and slightly different disk-controller architecture.&lt;ref name=&quot;Ref-2&quot;/&gt;
+
+=== PC DOS 3.x ===
+
+In August 1984, IBM introduced the [[IBM PC/AT]], a computer built around the [[Intel]] [[80286]] processor.  It ran on PC DOS 3.0, which supported the computer's larger hard drives and high density (1.2 MB) diskettes.&lt;ref name=&quot;Ref-1&quot;/&gt;  PC DOS 3.1 supported IBM's Network Adapter card on the IBM [[PC-Network]].  PC DOS 3.2 added support for 3Â½-inch double-density 720 KB floppy disk drives, supporting the [[IBM PC Convertible]], IBM's first computer to use 3Â½-inch floppy disks, released April 1986.
+
+In June 1985, IBM and Microsoft signed a long-term Joint Development Agreement to share specified DOS code and create a new operating system from scratch, known at the time as Advanced DOS. On April 2, 1987 [[OS/2]] was announced as the first product produced under the agreement.&lt;ref&gt;{{cite web|title=Microsoft Operating System/2 With Windows Presentation Manager Provides Foundation for Next Generation of Personal Computer Industry|author=Michal Necasek|work= The History of OS/2|date=2004-06-24|url=http://pages.prodigy.net/michaln/history/pr/87apr_m3592.html}} â a copy of Microsoft's 1987-04-02 press release announcing OS/2&lt;/ref&gt; At the same time, IBM released its next generation of personal computers, the [[IBM Personal System/2]].&lt;ref name=&quot;Ref-1&quot;/&gt;  PC DOS 3.3, released with the PS/2 line, added support for high density 3Â½-inch 1.44 MB floppy disk drives, which IBM introduced in its 80286-based and higher PS/2 models.  The upgrade from DOS 3.2 to 3.3 was completely written by IBM, with no development effort on the part of Microsoft, who were working on &quot;Advanced DOS 1.0&quot;.
+
+=== PC DOS 4.x ===
+
+PC DOS 4.0, shipped July 1988, was an unsuccessful DOS which arose from IBM testing ideas for its in-development DOS 5, which later became OS/2.&lt;ref&gt;[http://www.tacktech.com/display.cfm?ttid=30 History of Microsoft Windows and MS-DOS (Miscellaneous)] TACKtech Corp.&lt;/ref&gt;
+
+=== PC DOS 5 ===
+
+Digital Research released a retail DOS 5.0, which caught Microsoft off-foot, but the combination of [[vaporware]], and some hurried coding, allowed Microsoft to stave off the competition.  This DOS also is the last DOS that IBM and Microsoft shared the full code for, and the DOS that was integrated into OS/2 2.0's, and later Windows NT's, [[virtual DOS machine]].  DOS in these operating systems for the [[i386]] computer never progressed past this.{{Citation needed|date=November 2010}}
+
+Under the terms of the split, IBM was allowed to keep (and buy the rights for) their own DOS, which they did.  They were allowed to keep Win-OS/2 as well (basically Windows 3.10 for OS/2).  Microsoft was rather specific on what DOS was, since OEM diskettes were labeled &quot;MS-DOS and Additional Tools&quot;, i.e. two products.  IBM released their own DOS, with a new editor, and a number of utilities being full back-versions of PC-Tools.  Microsoft's tools were feature-limited Norton tools.
+
+=== PC DOS 6.1 ===
+
+PC DOS remained a rebranded version of MS-DOS until 1993. IBM and Microsoft parted ways&amp;mdash;MS-DOS 6 was released in March, and PC DOS 6.1 (separately developed) followed in June. [[QBasic]] was dropped and the [[MS-DOS Editor]] was replaced with [[E (PC-DOS)|E]].
+
+=== PC DOS 6.3 ===
+
+PC DOS 6.3 followed in December. PC DOS 6.30 was also used in OS/2 for the [[PowerPC]].
+
+The final split came after DOS 6.30.  One notes that 6.30 has the improvements that 6.20 has, and that beginning with 6.22 and Windows 3.11, the preferred server OS switched from OS/2 to Windows NT.
+
+=== PC DOS 7.0 ===
+
+PC DOS 7.0 was released in November 1994. The [[REXX]] programming language was added, as well as support for a new floppy disk format, [[IBM Extended Density Format|XDF]], which extended a standard 1.44 MB floppy disk to 1.86 MB.
+
+IBM's DOS 7.0, the last released before Boca Raton closed, included more SAA features (like REXX, IPF view for help, and unpack2 - all out of OS/2), along with removing the incorrect DOS version from most, but not all of the utilities.
+
+=== PC DOS 2000 ===
+
+The most recent retail release was PC DOS 2000 &amp;ndash; released from Austin in 1998 &amp;ndash; which found its niche in the [[embedded software]] market and elsewhere. PC DOS 2000 is basically a slipstream of 7.0 with [[Year 2000 problem|Y2K]] and other fixes applied. To applications, PC DOS 2000 reports itself as &quot;IBM PC DOS 7.00, revision 1&quot;, in contrast to the original PC DOS 7.0, which reported itself as revision 0. IBM continues to use PC DOS code to compile DOS boot disks for their servers.
+
+[[ThinkPad]] products currently have a copy of the latest version of PC DOS in their Rescue and Recovery partition.{{Citation needed|date=July 2009}}
+
+=== PC DOS 7.10 ===
+
+There is also a LBA/FAT32-enabled OEM version of PC DOS since 2003, reporting itself as &quot;IBM PC DOS 7.10&quot; to applications.{{Citation needed|date=November 2011}} It must not be confused with OEM [[DR-DOS]] 7.04 and higher, which also report as &quot;IBM PC DOS 7.10&quot; for compatibility purposes.
+
+== See also ==
+* [[Timeline of x86 DOS operating systems]]
+* [[Comparison of x86 DOS operating systems]]
+* [[List of DOS commands]]
+
+== References ==
+{{Reflist}}
+
+== Further reading ==
+* IBM Corporation and Microsoft, Inc. ''DOS 3.30: User's Guide''. IBM Corporation, 1987. Part number 80X0933.
+* IBM Corporation and Microsoft, Inc. ''DOS 3.30: Reference (Abridged)''. IBM Corporation, 1987. Part number 94X9575.
+* IBM Corporation. ''Getting Started with Disk Operating System Version 4.00''. IBM Corporation, 1988. Part number 15F1370.
+* IBM Corporation. ''Using Disk Operating System Version 4.00''. IBM Corporation, 1988. Part number 15F1371.
+* IBM Corporation. ''IBM Disk Operating System Version 5.0. User Guide and Reference''. IBM Corporation, 1991. Part number 07G4584.
+* IBM Corporation. ''PC DOS 7 User's Guide''. IBM, 1995.
+* IBM Redbooks. [http://www.redbooks.ibm.com/abstracts/gg244459.html PC DOS 7 Technical Update]. IBM, 1995. ISBN 0-7384-0677-5. 
+* IBM Corporation. ''IBM PC DOS and Microsoft Windows User's Guide''. Indianapolis, IN: Que Corporation, 1995. ISBN 0-7897-0276-2.
+
+== External links ==
+*[ftp://ftp.boulder.ibm.com/software/dos/ ftp://ftp.boulder.ibm.com/software/dos/] PC DOS 2000 (Chinese Edition), freely available for download from IBM
+*[http://www.ibm.com/systems/management/sgstk/ IBM ServerGuide Scripting toolkit] - its DOS Edition contains PC DOS 7.1 (June 2005) with LBA and FAT32 support
+
+{{IBM operating systems}}
+
+{{DEFAULTSORT:Ibm Pc Dos}}
+[[Category:Microcomputer software]]
+[[Category:Disk operating systems]]
+[[Category:DOS issues]]
+[[Category:IBM operating systems]]
+[[Category:Floppy disk-based operating systems]]
+[[Category:Discontinued operating systems]]
+[[Category:Proprietary operating systems]]
+
+[[ca:IBM PC-DOS]]
+[[cs:PC-DOS]]
+[[de:PC DOS]]
+[[es:IBM PC DOS]]
+[[ko:PC-DOS]]
+[[hr:PC-DOS]]
+[[it:PC DOS]]
+[[ms:PC-DOS]]
+[[ja:IBM PC DOS]]
+[[no:PC-DOS]]
+[[pl:PC-DOS]]
+[[pt:PC-DOS]]
+[[ro:PC-DOS]]
+[[ru:PC DOS]]
+[[fi:PC-DOS]]
+[[sv:PC-DOS]]
+[[tr:IBM PC-DOS]]
+[[zh:PC-DOS]]</rev></revisions></page></pages></query></api>

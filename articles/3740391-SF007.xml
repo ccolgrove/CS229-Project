@@ -1,0 +1,3046 @@
+<?xml version="1.0"?><api><query><pages><page pageid="3740391" ns="0" title="Comparison of operating system kernels"><revisions><rev xml:space="preserve">A [[Kernel (computer science)|kernel]] is the core component of every computer [[operating system]]. While kernels are highly technical in nature, and may be hidden from the user under many layers of software and applications, they do have distinguishing or characteristic features, such as [[computer architecture]], design goals, as well as the more practical features that they provide. A direct '''comparison of operating system kernels''' can highlight these design choices, and provide insight into different niches and the evolving technology of kernels.
+
+== Comparison criterion ==
+The following tables compare '''general and technical information''' for a number of widely used and currently available [[operating system]] kernels. Please see the individual products' articles for further information.
+
+Even though there is a large number and variety of available [[Linux distribution]]s, all of these kernels are grouped under a single entry in these tables, due to differences being of the patch level. See [[comparison of Linux distributions]] for a detailed comparison. Linux distributions that have highly modified kernels, for example [[Real-time computing]] kernels, should be listed separately. There are also a wide variety of minor BSD operating systems, many of which can be found at [[Comparison of BSD operating systems]].
+
+The tables specifically do not include subjective viewpoints on the merits of each kernel or operating system. For this kind of information, please see [[operating system advocacy]].
+
+==Feature overview==
+The major contemporary general-purpose [[Kernel (computer science)|kernels]] are shown in comparison. Only an overview of the technical features is detailed.
+
+{| class=&quot;sortable wikitable&quot; style=&quot;text-align: center; width: auto&quot;
+! Kernel name
+! Used in
+! Creator
+! Executable&lt;br&gt;format&lt;br&gt;(also see&lt;br&gt;[[Comparison of kernels#Comparison of Binary format support|section]]&lt;br&gt;below)
+! Type
+! Integrated [[Firewall (networking)|firewall]]
+! [[Symmetric multiprocessing|SMP]] support
+! Multiple [[Computer architecture|architecture]]&lt;br&gt;support&lt;br&gt;(also see&lt;br&gt;[[Comparison of kernels#Architecture support|section]] below).
+! [[Computer multitasking|Multitasking]]
+! [[Operating system-level virtualization|Virtualization]]
+! [[Security]]
+! [[Software performance analysis|Profiling]]/[[Debugging]]
+! Soft [[Real-time computing|real-time]] support
+! Hard [[Real-time computing|real-time]] support
+! Can keep [[Real-time clock|RTC]] in [[Universal Time|UT]]&lt;ref&gt;[http://www.cl.cam.ac.uk/~mgk25/mswish/ut-rtc.html IBM PC Real Time Clock should run in UT]&lt;/ref&gt;
+|-
+! [[Agnix]] [http://agnix.sourceforge.net/]
+|&lt;!--used in--&gt; {{?}}
+|&lt;!--creator--&gt; {{?}}
+|&lt;!--executable format--&gt; {{?}}
+|&lt;!--type--&gt; {{?}}
+|&lt;!--Integrated firewall--&gt; {{?}}
+|&lt;!--SMP support--&gt; {{?}}
+|&lt;!--multiple CPU support--&gt; {{?}}
+| {{yes}}
+| {{?}}
+| {{?}}
+| {{?}}
+| {{?}}
+| {{?}}
+| {{?}}
+|-
+! [[Amiga Exec]]
+| [[AmigaOS]]
+| [[Commodore International]]
+| [[Amiga Hunk|HUNK]]
+| [[Exokernel]] (atypical)&lt;ref&gt;The Amiga hardware lacked support for memory protection, so the strong isolation goals of the microkernel design could not be achieved.{{Citation needed|date=February 2007}}&lt;/ref&gt;
+| {{no}}
+| {{no}}
+| {{no}}
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{yes}}
+| {{no}}
+| {{yes}}
+| {{?}}
+|-
+! [[Amiga Exec SG (2nd Generation)]]
+| [[AmigaOS 4]]
+| [[Hyperion Entertainment]]
+| [[Executable and Linkable Format|ELF]]/[[Amiga Hunk|HUNK]]
+| [[Exokernel]] (atypical)
+| {{no}}
+| {{no}}
+| {{no}}
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{?}}
+|-
+! [[DragonFly BSD#Kernel design|DragonFly BSD kernel]] [http://www.dragonflybsd.org/]
+| [[DragonFly BSD]]
+| [[Matt Dillon (computer scientist)|Matt Dillon]]
+| [[Executable and Linkable Format|ELF]], others - platform dependent
+| [[hybrid kernel|hybrid]]
+| {{yes|[[IPFilter]], [[Ipfirewall]],&lt;br&gt;[[PF (firewall)|PF]]}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes|[[chroot]], [[jail]],vkernel}}
+| {{?}}
+| {{yes|[[DDB]]{{Disambiguation needed|date=June 2011}}, [[KGDB]]}}
+| {{?}}
+| {{?}}
+| {{?}}
+|-
+! [[FreeBSD|FreeBSD kernel]]
+| [[FreeBSD]],
+[[GNU variants#FreeBSD variants|Debian GNU/kFreeBSD]],
+[[Gentoo/FreeBSD]]
+| [[FreeBSD|The FreeBSD Project]]
+| [[Executable and Linkable Format|ELF]], others - platform dependent
+| [[Monolithic kernel|monolithic]]
+| {{yes|[[IPFilter]], [[Ipfirewall]],&lt;br&gt;[[PF (firewall)|PF]]}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes|[[chroot]], [[FreeBSD jail|jail]]}}
+| {{yes|[[Access control list|POSIX.1e and NFSv4 ACLs]]&lt;ref&gt;http://www.freebsd.org/doc/en/books/handbook/fs-acl.html&lt;/ref&gt;, [[Mandatory Access Control|TrustedBSD MAC]], [[OpenBSM]]}}
+| {{yes|[[Kernel debugger|KDB]], [[DDB]]{{Disambiguation needed|date=June 2011}}, [[KGDB]], [[DTrace]], [[hwpmc]]}}
+| {{yes}}
+| {{?}}
+| {{yes}}
+|-
+! [[GNU Hurd]] [http://hurd.gnu.org/]
+| [[Bee GNU/Hurd]],
+[[Debian GNU/Hurd|Debian&lt;br&gt;GNU/Hurd]]
+| [[GNU Project]]/[[Free Software Foundation]]
+| [[Executable and Linkable Format|ELF]]
+| [[microkernel]]
+| {{?}}
+| {{no}}
+| {{no}}
+| {{yes}}
+| {{?}}
+| {{?}}
+| {{?}}
+| {{?}}
+| {{?}}
+| {{?}}
+|-
+! [[GNU Mach]] [http://www.gnu.org/software/hurd/gnumach.html]
+| {{?}}
+| [[GNU Project]]/[[Free Software Foundation]]
+| {{?}}
+| [[microkernel]]
+| {{?}}
+| {{no}}
+| {{no}}
+| {{yes}}
+| {{?}}
+| {{?}}
+| {{?}}
+| {{?}}
+| {{?}}
+| {{?}}
+|-
+! [[Inferno (operating system)|Inferno kernel]]
+| [[Inferno (operating system)|Inferno]]
+| [[Bell Labs]] / [[Vita Nuova Holdings]]
+| {{?}}
+| [[virtual machine]]
+| {{?}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{?}}
+| {{?}}
+| {{?}}
+| {{?}}
+| {{?}}
+| {{?}}
+|-
+! [[L4 microkernel family|L4]]
+| [[L4 microkernel family|L4]]
+| [[Jochen Liedtke]]
+| {{?}}
+| [[microkernel]]
+| {{?}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes|[[Afterburner/L4]] [http://www.l4ka.org/79.php], Marzipan [http://www.l4ka.org/78.php]}}
+| {{yes| [[Capabilities]] [http://os.inf.tu-dresden.de/fiasco/features.html]}}
+| {{yes| Fiasco L4 Kernel [http://os.inf.tu-dresden.de/fiasco/features.html]}}
+| {{?}}
+| {{?}}
+|-
+! [[Linux kernel]] [http://www.kernel.org/]
+| [[Linux]]
+| [[Linus Torvalds]]
+| [[Executable and Linkable Format|ELF]], others
+| [[Monolithic kernel|monolithic]]
+| {{yes|[[netfilter/iptables|netfilter/&lt;br&gt;iptables]]}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes|[[cgroups]], [[chroot]], [[Lguest]], [[Xen]], [[Kernel-based Virtual Machine|KVM]], [[kvm-lite]], [[LXC]]}}
+| {{yes|[[Access control list|POSIX ACL]], [[Capability-based security#POSIX Capabilities|POSIX Capabilities]], keyctl, [[Linux Security Modules|LSM]]([[SELinux]], [[Simplified Mandatory Access Control Kernel|SMACK]], [[TOMOYO Linux]], [[AppArmor]])}}
+| {{yes|[[OProfile]], [[kprobe]], [[SystemTap]], [[JProbe]], [[ftrace]], [[Kernel debugger|KDB]], [[KGDB]], [[kernel marker]], [[perf tools]]&lt;!--, [[kprobe-based event tracer]]--&gt;}}
+| {{yes|CONFIG_PREEMPT}}
+| {{no|(CONFIG_PREEMPT_RT Patch)}}
+| {{yes}}
+|-
+! [[Mach (kernel)|Mach]] [http://www.cs.cmu.edu/afs/cs/project/mach/public/www/mach.html]
+| [[NextStep]] and [[OpenStep]]
+| [[Carnegie Mellon University]]
+| [[Mach-O]]
+| [[microkernel]]
+| {{?}}
+| {{?}}
+| {{?}}
+| {{?}}
+| {{?}}
+| {{?}}
+| {{?}}
+| {{?}}
+| {{?}}
+| {{?}}
+|-
+! [[Minix 3]] [http://www.minix3.org]
+| [[Minix 3]]
+| [[Andrew S. Tanenbaum]]
+| [[a.out]]&lt;br&gt;
+| [[microkernel]]
+| {{no}}
+| {{no}}
+| {{no}}
+| {{yes}}
+| {{no}}
+| {{yes|[[Unix security|Unix permissions]]}}
+| {{yes|Call profiling, statistical profiling, Minix Debugger (mdb)}}
+| {{no}}
+| {{no}}
+| {{?}}
+|-
+! [[MkLinux]] [http://www.mklinux.org]
+| {{?}}
+| [[OSF Research Institute]] and [[Apple Computer]]
+| {{?}}
+| [[microkernel]]
+| {{?}}
+| {{?}}
+| {{?}}
+| {{?}}
+| {{?}}
+| {{?}}
+| {{?}}
+| {{?}}
+| {{?}}
+| {{?}}
+|-
+! [[NetBSD|NetBSD kernel]]
+| [[NetBSD]],
+[[GNU variants#Debian GNU/NetBSD|Debian GNU/NetBSD]],
+| [[NetBSD|The NetBSD Project]]
+| [[Executable and Linkable Format|ELF]], others - platform dependent
+| [[Monolithic kernel|monolithic]]
+| {{yes|[[IPFilter]]
+[[PF (firewall)|PF]]}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes|[[Xen]], [[chroot]]}}
+| {{yes|[[kauth]]}}
+| {{yes|[[DDB]]{{Disambiguation needed|date=June 2011}}, [[KGDB]], [[tprof]]}}
+| {{yes|[[POSIX]] real-time scheduling extensions}}
+| {{yes|[[Kernel preemption]]}}{{Citation needed|date=February 2011}}
+| {{?}}
+|-
+! [[Novell Netware|NetWare kernel]]
+| [[Novell NetWare]]
+| [[Novell]]
+| [[NetWare Loadable Module|NLM]]
+| [[Hybrid kernel|hybrid]]
+| {{yes}}
+| {{yes}}
+| {{no}}
+| {{yes}}
+| {{?}}
+| {{?}}
+| {{?}}
+| {{?}}
+| {{?}}
+| {{?}}
+|-
+! [[OpenBSD|OpenBSD kernel]]
+| [[OpenBSD]]
+| [[OpenBSD developers]]
+| [[Executable and Linkable Format|ELF]], others - platform dependent
+| [[Monolithic kernel|monolithic]]
+| {{yes|[[PF (firewall)|PF]]}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{?}}
+| {{?}}
+| {{?}}
+| {{?}}
+| {{?}}
+| {{?}}
+|-
+! [[Plan 9 kernel]]
+| [[Plan 9 from Bell Labs]]
+| [[Bell Labs]]
+| {{?}}
+| [[Hybrid kernel|hybrid]]
+| {{yes|ipmux}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{?}}
+| {{?}}
+| {{?}}
+| {{?}}
+| {{?}}
+| {{?}}
+|-
+! [[ReactOS|ReactOS kernel]]
+| [[ReactOS]]
+| [[ReactOS Foundation]]
+| [[Portable Executable|PE]], others?
+| [[Hybrid kernel|hybrid]]
+| {{?}}
+| {{?}}
+| {{?}}
+| {{yes}}
+| {{?}}
+| {{?}}
+| {{?}}
+| {{?}}
+| {{?}}
+| {{?}}
+|-
+! [[Rockbox|Rockbox kernel]]
+| [[Rockbox]]
+| The Rockbox Project
+| {{?}}
+| {{?}}
+| {{?}}
+| {{?}}
+| {{yes}}
+| {{?}}
+| {{?}}
+| {{?}}
+| {{?}}
+| {{?}}
+| {{?}}
+| {{?}}
+|-
+! [[SunOS|SunOS kernel]]
+| [[SunOS]]
+| [[Sun Microsystems]]
+| [[a.out]]&lt;br&gt;
+| [[Monolithic kernel|monolithic]]
+| {{?}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{?}}
+| {{?}}
+| {{?}}
+| {{?}}
+| {{?}}
+| {{?}}
+|-
+! [[Solaris (operating system)|Solaris kernel]]
+| [[Solaris (operating system)|Solaris]],
+[[OpenSolaris]],
+[[GNU variants#OpenSolaris variants|Nexenta OS]]
+| [[Sun Microsystems]]
+| [[Executable and Linkable Format|ELF]] (32-bit only until&lt;br /&gt;Solaris 7 in 1998)
+| [[Monolithic kernel|monolithic]]
+| {{yes|[[IPFilter]]}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes|[[Solaris Zones|Zones]], [[chroot]]}}
+| {{yes|[[Access control list|ACL]], [[RBAC]], Auditing, [[Least privilege|Privileges]], [[Solaris Zones|Zones]], [[Solaris Trusted Extensions|Trusted Extensions]]}}
+| {{yes|[[DTrace]], CPU profiling, microstate accounting, perf counters, kernel lock stats, kstats, mdb, kmdb}}
+| {{yes|Real-time scheduler}}
+| {{?}}
+| {{?}}
+|-
+! [[Trix (operating system)|Trix]]
+| {{?}}
+| [[Massachusetts Institute of Technology]]
+| {{?}}
+| [[Monolithic kernel|monolithic]]
+| {{?}}
+| {{?}}
+| {{?}}
+| {{?}}
+| {{?}}
+| {{?}}
+| {{?}}
+| {{?}}
+| {{?}}
+| {{?}}
+|-
+! [[Architecture of Windows NT|Windows NT kernel]] [http://www.microsoft.com/windows]
+| [[Windows NT]], [[Windows 2000|2000]],&lt;br&gt;[[Windows XP|XP]], [[Windows 2003|2003]], [[Windows Vista|Vista]], [[Windows 7]]
+| [[Microsoft]]
+| [[Portable Executable|PE]], others?
+| [[hybrid kernel|hybrid]]
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{?}}
+| {{?}}
+| {{?}}
+| {{?}}
+| {{?}}
+| {{no}}
+|-
+! [[XNU]] ([[Darwin (operating system)|Darwin]] kernel) [http://developer.apple.com/darwin/]
+| [[Mac OS X]],
+[[OpenDarwin]],
+[[GNU-Darwin|GNU/Darwin]]
+| [[Apple Computer]]
+| [[Mach-O]]
+| [[hybrid kernel|hybrid]]
+| {{yes|[[Ipfirewall]],&lt;br&gt;[[PF (firewall)|PF]] (starting in Lion)}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{?}}
+| {{?}}
+| {{yes|[[DTrace]]}}
+| {{?}}
+| {{?}}
+| {{?}}
+|-
+! [[HelenOS|SPARTAN kernel]] [http://www.helenos.eu/]
+| [[HelenOS]]
+| [[Jakub Jermar]]
+| [[Executable and Linkable Format|ELF]]
+| [[microkernel]]
+| {{?}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{?}}
+| {{?}}
+| {{?}}
+| {{?}}
+| {{?}}
+| {{?}}
+|-class=&quot;sortbottom&quot;
+! Kernel name
+! Used in
+! Creator
+! Executable&lt;br&gt;format&lt;br&gt;(also see&lt;br&gt;[[Comparison of kernels#Comparison of Binary format support|section]]&lt;br&gt;below)
+! Type
+! Integrated [[Firewall (networking)|firewall]]
+! [[Symmetric multiprocessing|SMP]] support
+! Multiple [[Computer architecture|architecture]]&lt;br&gt;support&lt;br&gt;(also see&lt;br&gt;[[Comparison of kernels#Architecture support|section]] below).
+! [[Computer multitasking|Multitasking]]
+! [[Operating system-level virtualization|Virtualization]]
+! [[Security]]
+! [[Software performance analysis|Profiling]]/[[Debugging]]
+! Soft [[Real-time computing|real-time]] support
+! Hard [[Real-time computing|real-time]] support
+! Can keep [[Real-time clock|RTC]] in [[Universal Time|UT]]
+|}
+
+==Transport protocol support==
+{| class=&quot;sortable wikitable&quot; style=&quot;text-align: center; width: auto&quot;
+! Kernel Name
+! [[Transmission Control Protocol|TCP]]
+! [[User Datagram Protocol|UDP]]
+! [[SCTP]]
+! [[DCCP]]
+|-
+! [[FreeBSD|FreeBSD kernel]]
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{no}}
+|-
+! [[Linux kernel]]
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+|-
+! [[Solaris (operating system)|Solaris kernel]]
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{?}}
+|-
+! [[Architecture of Windows NT|Windows NT kernel]]
+| {{yes}}
+| {{yes}}
+| {{no}}
+| {{?}}
+|-
+! [[XNU]]
+| {{yes}}
+| {{yes}}
+| {{no}}
+| {{no}}
+|}
+
+==In-kernel Security==
+
+{| class=&quot;sortable wikitable&quot; style=&quot;text-align: center; width: auto&quot;
+! Kernel Name
+! File access control
+! [[NX bit|Disable memory execution]] support
+! Kernel [[Address space layout randomization|ASLR]]
+! [[Mandatory access control]]
+! [[Capability-based security]]
+! In-kernel key management
+! Audit API
+! [[Sandbox (computer security)|Sandbox]]
+! [[SYN flood]] protection
+! [[UDP flood]] protection
+! [[Ping flood]] protection
+! [[Smurf attack]] protection
+! [[Intrusion prevention system|Network Behavior Analysis]]
+|-
+! Linux Kernel
+| {{yes|[[Filesystem permissions#Traditional Unix permissions|Traditional Unix permissions]], [[Access control list|POSIX ACL]]}}
+| {{yes}}
+| {{yes}}
+| {{yes|[[Linux Security Modules|LSM]]([[SELinux]], [[Simplified Mandatory Access Control Kernel|SMACK]], [[TOMOYO Linux]], [[AppArmor]])}}
+| {{no}}
+| {{yes|[[keyctl]]}}
+| {{yes|fanotify}}
+| {{yes|SELinux Sandbox, [[seccomp]]}}
+| {{yes|[[SYN cookies]]}}
+| {{no}}?
+| {{no}}?
+| {{no}}?
+| {{no}}
+|-
+! FreeBSD Kernel
+| {{yes|[[Filesystem permissions#Traditional Unix permissions|Traditional Unix permissions]], [[Access control list|POSIX and NFSv4 ACL]]}}
+| {{yes}}
+| {{?}}
+| {{yes|[[TrustedBSD MAC]]}}
+| {{yes|Capsicum}}
+| {{?}}
+| {{yes|[[OpenBSM]]}}
+| {{yes|Capsicum}}
+| {{yes|[[SYN cookies]]}}
+| {{?}}
+| {{?}}
+| {{?}}
+| {{?}}
+|-
+! Solaris Kernel
+| {{yes|[[Filesystem permissions#Traditional Unix permissions|Traditional Unix permissions]], [[Access control list|POSIX ACL]], [[ZFS|NFSv4 ACL]]}}
+| {{yes|Default}}
+| {{?}}
+| {{yes|[[Solaris Trusted Extensions]]}}
+| {{?}}
+| {{?}}
+| {{?}}
+| {{?}}
+| {{?}}
+| {{?}}
+| {{?}}
+| {{?}}
+| {{?}}
+|-
+! Windows NT kernel
+| {{yes|[[Access control list]]}}
+| {{yes|[[Data Execution Prevention|DEP]]}}
+| {{yes}}
+| {{yes|[[Mandatory Integrity Control]]}}
+| {{?}}
+| {{?}}
+| {{?}}
+| {{?}}
+| {{?}}
+| {{?}}
+| {{?}}
+| {{?}}
+| {{?}}
+|-
+! XNU
+| {{yes|[[Filesystem permissions#Traditional Unix permissions|Traditional Unix permissions]], [[access control list]]}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{?}}
+| {{?}}
+| {{yes|[[OpenBSM]]}}
+| {{yes|Apple XNU Sandbox}}
+| {{?}}
+| {{?}}
+| {{?}}
+| {{?}}
+| {{?}}
+|}
+
+==In-kernel Virtualization==
+
+{| class=&quot;sortable wikitable&quot; style=&quot;text-align: center; width: auto&quot;
+! Kernel Name
+! [[Operating system-level virtualization|Container]] (no resource management, no security)
+! [[Operating system-level virtualization|Container]] (no resource management)
+! [[Operating system-level virtualization|Container]] (resource management)
+! [[Paravirtualization]]
+! [[Full virtualization]]
+! User-space execution
+|-
+! Linux Kernel
+| {{yes|[[chroot]]}}
+| colspan=&quot;2&quot; {{yes|[[LXC]]}}
+| {{yes|Virtio, [[Hyper-V]] (guest only), [[Xen]] (guest only), [[Virtual Machine Interface|VMI]] (guest only), [[kvm-lite]], [[lguest]]}}
+| {{yes|[[Kernel-based Virtual Machine|KVM]]}}
+| {{yes|[[User-mode Linux|UML]]}}
+|-
+! FreeBSD
+| {{yes|chroot}}
+| colspan=&quot;2&quot; {{yes|[[jail (computer security)|jail]]}}
+| {{yes|Virtio, [[Xen]] (guest only), [[BHyVe]]}}
+| {{yes|[[VirtualBox]]}}
+| {{?}}
+|-
+! Solaris kernel
+| {{yes|chroot}}
+| colspan=&quot;2&quot; {{yes|[[Solaris_Zones|Solaris Containers / Zones]]}}
+| {{No}}
+| {{No}}
+| {{No}}
+|-
+! Windows NT kernel
+| {{?}}
+| {{?}}
+| {{?}}
+| {{yes|Hyper-V}}
+| {{yes|Hyper-V}}
+| {{?}}
+|-
+! XNU
+| {{yes|chroot}}
+| {{?}}
+| {{?}}
+| {{?}}
+| {{?}}
+| {{?}}
+|}
+
+==In-kernel server support==
+
+{| class=&quot;sortable wikitable&quot; style=&quot;text-align: center; width: auto&quot;
+! Kernel Name
+! [[HTTP]]
+! [[FTP]]
+! [[Network File System (protocol)|NFS]]
+! [[CIFS]]
+! [[Name server]]
+! transport-layer load balancer
+! application-layer load balancer
+! [[9P]]
+! [[Secure Sockets Layer|SSL]] proxy
+|-
+! [[Linux kernel]]
+| {{no|([[TUX web server]] patch)}}
+| {{no|([[TUX web server]] patch)}}
+| {{yes|knfsd}}
+| {{no}}
+| {{?}}
+| {{yes|[[IP Virtual Server]]}}
+| {{no|([[KTCPVS]])}}
+| {{no|([http://lkml.indiana.edu/hypermail/linux/kernel/0711.0/0585.html patch available])}}
+| {{no}}
+|-
+! [[Solaris (operating system)|Solaris kernel]]
+| {{?}}
+| {{?}}
+| {{Yes}}
+| {{yes}}&lt;ref&gt;[http://www.itjungle.com/tug/tug112907-story05.html OpenSolaris Project Weaves CIFS Server Into the Solaris Kernel  ]&lt;/ref&gt;
+| {{?}}
+| {{yes}}&lt;ref&gt;[http://download.oracle.com/docs/cd/E19963-01/html/821-1453/gijjm.html Integrated Load Balancer]&lt;/ref&gt;
+| {{yes}}&lt;ref&gt;[http://download.oracle.com/docs/cd/E19963-01/html/821-1453/gijjm.html Integrated Load Balancer]&lt;/ref&gt;
+| {{?}}
+| {{yes|[[KSSL]]}}
+|-
+! [[Architecture of Windows NT|Windows NT kernel]]
+| {{yes|HTTP.sys}}&lt;!--kernel driver--&gt;
+| {{?}}
+| {{?}}
+| {{yes}}
+| {{?}}
+| {{yes}}
+| {{yes}}
+| {{no}}
+| {{?}}
+|-
+! [[XNU]]
+| {{no}}
+| {{no}}
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+|}
+
+==Binary format support==
+A comparison of OS support for different [[binary format]]s ([[executables]]):
+
+{| class=&quot;sortable wikitable&quot; style=&quot;text-align: center; width: auto&quot;
+! Kernel Name
+! [[A.out (file format)|a.out]]
+! [[ECOFF]]
+! [[Executable and Linkable Format|ELF]]
+! FDPIC&lt;br&gt;ELF&lt;br&gt;binaries&lt;br&gt;(mmu less)
+! flat&lt;br&gt;binaries&lt;br&gt;(superH)
+! [[Amiga Hunk|HUNK]]
+! [[Mach-O]]
+! Misc&lt;br&gt;(wrapper&lt;br&gt;based,&lt;br&gt;like&lt;br&gt;interpreters)
+! [[Portable Executable|PE]]
+! SOM&lt;br&gt;(PA-RISC,&lt;br&gt;HP-UX)
+! [[NetWare Loadable Module|NLM]]
+! [[Preferred Executable Format|PEF]]
+|-
+! [[Amiga Exec]]
+| {{No}}
+| {{No}}
+| {{Yes}}&lt;ref&gt;AmigaOS up to version 3.9 could use the ELF format for PowerPC executables and libraries through ppc.library, also known as PowerUP. [[AmigaOS 4]], uses ELF as its native executable format.&lt;/ref&gt;
+| {{No}}
+| {{No}}
+| {{Yes}}
+| {{No}}
+| {{No}}
+| {{No}}
+| {{No}}
+| {{?}}
+| {{?}}
+|-
+! [[HP-UX]]
+| {{No}}
+| {{No}}
+| {{Yes}}
+| {{No}}
+| {{No}}
+| {{No}}
+| {{No}}
+| {{No}}
+| {{No}}
+| {{Yes}}
+| {{No}}
+| {{No}}
+|-
+! [[Linux kernel]]
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+| {{No}}
+| {{No}}
+| {{Yes}}
+| {{some}}&lt;ref&gt;The Linux kernel can recognize PE binaries through [[binfmt_misc]] and run them using [[Wine (software)|Wine]]&lt;/ref&gt;
+| {{Yes}}
+| {{?}}
+| {{No}}
+|-
+! [[MINIX 3]]
+| {{Yes}}
+| {{No}}
+| {{No}}
+| {{No}}
+| {{No}}
+| {{No}}
+| {{No}}
+| {{No}}
+| {{No}}
+| {{No}}
+| {{No}}
+| {{No}}
+|-
+![[NetBSD|NetBSD kernel]]
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+| {{?}}
+| {{?}}
+| {{?}}
+| {{Yes}}
+| {{?}}
+| {{Yes}}
+| {{?}}
+| {{?}}
+| {{?}}
+|-
+! [[ReactOS|ReactOS kernel]]
+| {{?}}
+| {{?}}
+| {{?}}
+| {{?}}
+| {{?}}
+| {{?}}
+| {{?}}
+| {{?}}
+| {{Yes}}
+| {{?}}
+| {{?}}
+| {{?}}
+|-
+! [[Solaris (operating system)|Solaris kernel]]
+| {{Yes}}&lt;ref&gt;to support [[SunOS]] 4.x binaries&lt;/ref&gt;
+| {{No}}
+| {{Yes}}&lt;ref&gt;including a Linux compatibility option&lt;/ref&gt;
+| {{No}}
+| {{No}}
+| {{No}}
+| {{No}}
+| {{No}}
+| {{some}}&lt;ref&gt;The Solaris kernel can PE using [[Wine (software)|Wine]]&lt;/ref&gt;
+| {{No}}
+| {{?}}
+| {{?}}
+|-
+! [[Architecture of Windows NT|Windows NT kernel]]
+| {{No}}
+| {{No}}
+| {{No}}
+| {{No}}
+| {{No}}
+| {{No}}
+| {{No}}
+| {{No}}
+| {{Yes}}
+| {{No}}
+| {{No}}
+| {{No}}
+|-
+! [[XNU]]
+| {{No}}
+| {{No}}
+| {{No}}
+| {{No}}
+| {{No}}
+| {{No}}
+| {{Yes}}
+| {{No}}
+| {{No}}
+| {{No}}
+| {{No}}
+| {{No}}
+|}
+
+==File system support==
+Physical [[file system]]s:
+{| style=&quot;font-size:85%; text-align: center; width: auto&quot; class=&quot;sortable wikitable&quot;
+! Kernel
+! [[Advanced Disc Filing System|Acorn ADFS]]
+! [[Amiga FFS]]
+! [[BeFS]]
+! [[Boot File System|BFS]]
+! [[cramfs]]
+! [[Extent File System|EFS]]
+! [[ext2]]
+! [[ext3]]
+! [[ext4]]
+! [[File Allocation Table|FAT]]
+! [[FreeVxFS]]
+! [[Hierarchical File System|HFS]]
+! [[HFS+]]
+! [[High Performance File System|HPFS]]
+! [[ISO 9660]]
+! [[JFFS]]
+! [[JFFS2]]
+! [[IBM Journaled File System 2 (JFS2)|JFS]]
+! [[Minix fs]]
+! [[Novell Storage Services|NSS]]
+! [[NTFS]]
+! [[OCFS]]
+! [[QNX4 FS]]
+! [[System V FS]]
+! [[Universal Disk Format|UDF]]
+! [[Unix File System|UFS]]
+! [[XFS]]
+! [[ZFS]]
+! [[ReiserFS]]
+! [[Reiser4]]
+! [[Btrfs]]
+! [[HAMMER]]
+! [[Tux3]]
+! [[exFAT]]
+&lt;!--Data--&gt;
+|-
+! [[FreeBSD|FreeBSD kernel]]
+| {{No}}
+| {{No}}
+| {{No}}
+| {{No}}
+| {{No}}
+| {{No}}
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+| {{No}}
+| {{No}}
+| {{No}}
+| {{No}}
+| {{Yes}}
+| {{No}}
+| {{No}}
+| {{No}}
+| {{No}}
+| {{No}}
+| {{partial|limited write}}
+| {{No}}
+| {{No}}
+| {{No}}
+| {{Yes}}
+| {{Yes}}
+| {{partial|read only}}
+| {{Yes}}
+| {{partial|read only}}
+| {{No}}
+| {{No}}
+| {{no}}
+| {{no}}
+| {{?}}
+|-
+! [[Linux kernel]]
+| {{partial|Yes}}&lt;br&gt;&lt;ref name=&quot;experi&quot;&gt;experimental and dangerous write support&lt;/ref&gt;
+| {{Yes}}
+| {{partial|read only}}
+| {{Yes}}
+| {{Yes}}
+| {{partial|read only}}
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+| {{partial|read only}}
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+| {{Yes}}
+| {{partial|limited write&lt;br&gt;&lt;ref&gt;The only supported operation is overwriting existing files, without changing the file length so a loop file on a ntfs volume can be written; better write support can be achieved through ntfs-3g, although that is a [[FUSE (Linux)|FUSE]] filesystem and therefore not strictly a kernel feature&lt;/ref&gt;}}
+| {{Yes}}
+| {{partial|Yes}}&lt;br&gt;&lt;ref name=&quot;experi&quot;/&gt;&lt;br&gt;&lt;ref&gt;write support currently broken&lt;/ref&gt;
+| {{partial|write support?}}
+| {{Yes}}
+| {{partial|Yes}}&lt;br&gt;&lt;ref name=&quot;experi&quot;/&gt;
+| {{Yes}}
+| {{Yes| both FUSE and native}}
+| {{yes}}
+| {{Yes}}
+| {{yes}}
+| {{no}}
+| {{yes}}
+| {{no|(experimental patch is available&lt;ref&gt;[http://groups.google.com/group/fa.linux.kernel/browse_thread/thread/903eb182127e8f21/e2e23eeb3a016268 Fat64 / exFat fs and Linux]&lt;/ref&gt;)}}
+|-
+! [[MINIX 3]]
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{no|Tools available, cannot mount}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+|-
+! [[Novell Netware|NetWare kernel]]
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{?}}
+|-
+! [[ReactOS]] kernel
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{yes}}&lt;ref name=&quot;reactos-fs&quot;&gt;[http://www.reactos.org/wiki/index.php/Version_Status Version Status - ReactOS]&lt;/ref&gt;
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{yes}}&lt;ref name=&quot;reactos-fs&quot;/&gt;
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{yes}}&lt;ref name=&quot;reactos-fs&quot;/&gt;
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+|-
+! [[Solaris (operating system)|Solaris kernel]]
+| {{dunno}}
+| {{dunno}}
+| {{dunno}}
+| {{dunno}}
+| {{dunno}}
+| {{dunno}}
+| {{yes}}
+| {{dunno}}
+| {{dunno}}
+| {{yes}}
+| {{dunno}}
+| {{dunno}}
+| {{dunno}}
+| {{dunno}}
+| {{yes}}
+| {{dunno}}
+| {{dunno}}
+| {{dunno}}
+| {{dunno}}
+| {{no}}
+| {{no}}
+| {{dunno}}
+| {{dunno}}
+| {{dunno}}
+| {{yes}}
+| {{yes}}
+| {{dunno}}
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{?}}
+|-
+! [[Architecture of Windows NT|Windows NT kernel]]
+| {{dunno}}
+| {{dunno}}
+| {{dunno}}
+| {{dunno}}
+| {{dunno}}
+| {{dunno}}
+| {{partial|Yes}}&lt;br&gt;&lt;ref name=windowsextdriver&gt;additional driver needed - see [http://www.fs-driver.org/ http://www.fs-driver.org/]&lt;/ref&gt;
+| {{partial|Yes}}&lt;br&gt;&lt;ref name=windowsext&gt;additional driver needed&lt;/ref&gt;
+| {{dunno}}
+| {{yes}}
+| {{dunno}}
+| {{partial|Yes}}&lt;br&gt;&lt;ref name=&quot;windowsext&quot;/&gt;
+| {{partial|Yes}}&lt;br&gt;&lt;ref name=&quot;windowsext&quot;/&gt;
+| {{no}}
+| {{yes}}
+| {{dunno}}
+| {{dunno}}
+| {{dunno}}
+| {{dunno}}
+| {{no}}
+| {{yes}}
+| {{dunno}}
+| {{dunno}}
+| {{dunno}}
+| {{yes}}
+| {{dunno}}
+| {{dunno}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{yes}}
+|-
+! [[XNU]]
+| {{No}}
+| {{No}}
+| {{No}}
+| {{No}}
+| {{No}}
+| {{No}}
+| {{partial|Yes}}&lt;br&gt;&lt;ref name=&quot;Macext&quot;&gt;[http://sourceforge.net/projects/ext2fsx/ Third party module required. Mac OS X Kernel Module available here]&lt;/ref&gt;
+| {{partial|Yes}}&lt;br&gt;&lt;ref name=&quot;Macext&quot;/&gt;
+| {{No}}
+| {{Yes}}
+| {{No}}
+| {{Yes}}
+| {{Yes}}
+| {{No}}
+| {{Yes}}
+| {{No}}
+| {{No}}
+| {{No}}
+| {{No}}
+| {{No}}
+| {{partial|limited write}}
+| {{No}}
+| {{No}}
+| {{No}}
+| {{Yes}}
+| {{Yes}}
+| {{No}}
+| {{partial|read only}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{yes}}
+|}
+
+==Networked filesystem support==
+
+{| class=&quot;sortable wikitable&quot; style=&quot;text-align: center; width: auto&quot;
+! Kernel Name
+! [[Network File System (protocol)|NFS]]
+! [[Andrew File System|AFS]]
+! [[CIFS]]
+! [[Coda]]
+! [[9P]]
+! [[Ceph]]
+|-
+! [[FreeBSD|FreeBSD kernel]]
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{no}}
+|-
+! [[Linux kernel]]
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+|-
+! [[Solaris (operating system)|Solaris kernel]]
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{no}}
+|-
+! [[Architecture of Windows NT|Windows NT kernel]]
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{no}}
+|-
+! [[XNU]]
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{no}}
+|}
+
+==Supported CPU architectures==
+
+{| style=&quot;font-size:85%; text-align: center; width: auto&quot; class=&quot;sortable wikitable&quot;
+
+!rowspan=&quot;3&quot;| [[Kernel (computer science)|kernel]]
+
+!colspan=&quot;2&quot;| [[Digital Equipment Corporation|DEC]]
+
+!colspan=&quot;2&quot;| [[ARM Holdings]]
+
+!colspan=&quot;1&quot;| [[Hewlett-Packard|HP]]
+
+!colspan=&quot;4&quot;| [[Intel]]
+
+!colspan=&quot;2&quot;| [[MIPS Technologies]]
+
+!colspan=&quot;2&quot;| [[AIM_alliance|AIM]] &lt;!--(developed by Apple, IBM and Motorola)--&gt;
+
+!colspan=&quot;2&quot;| [[IBM]]
+
+!colspan=&quot;5&quot;| [[Renesas Technology|Renesas Electronics]]
+
+!colspan=&quot;3&quot;| [[Sun Microsystems]]
+
+!colspan=&quot;2&quot;| [[Motorola]]
+
+!colspan=&quot;1&quot;| [[Analog Devices]] &lt;!--(developed by Intel and Analog Devices)--&gt;
+
+!colspan=&quot;1&quot;| [[Xilinx]]
+
+!colspan=&quot;2&quot;| [[Renesas Technology|Renesas Electronics]]
+
+!colspan=&quot;2&quot;| [[Tensilica]]
+
+!colspan=&quot;1&quot;| [[Axis Communications]]
+
+!colspan=&quot;1&quot;| [[Fujitsu]]
+
+!colspan=&quot;1&quot;| [[Atmel]]
+
+!colspan=&quot;1&quot;| [[Panasonic]] &lt;!--aka Matsushita--&gt;
+
+!colspan=&quot;1&quot;| [[Hyperstone]]
+
+!colspan=&quot;3&quot;| [[Altera]]
+
+!colspan=&quot;1&quot;| [[Western Design Center|WDC]]
+
+!colspan=&quot;1&quot;| [[Sunplus Technology]]
+
+!colspan=&quot;1&quot;| [[Tilera]]
+
+!colspan=&quot;1&quot;| [[Texas Instruments]]
+
+|-
+
+!rowspan=&quot;2&quot;| [[VAX]]
+
+!rowspan=&quot;2&quot;| [[DEC Alpha|Alpha]]
+
+!colspan=&quot;2&quot;| [[ARM architecture|ARM]]
+
+!rowspan=&quot;2&quot;| [[PA-RISC family|PA-RISC]]
+
+!colspan=&quot;2&quot;| [[x86 architecture|x86]]
+!rowspan=&quot;2&quot;| [[i960]]
+!rowspan=&quot;2&quot;| [[IA-64]]
+
+!colspan=&quot;2&quot;| [[MIPS architecture|MIPS]]
+
+&lt;!--POWER--&gt;
+
+!colspan=&quot;2&quot;| [[PowerPC]]
+
+!rowspan=&quot;2&quot;| [[System/390|System/&lt;br&gt;390]]
+
+!rowspan=&quot;2&quot;| [[z/Architecture]]
+
+!rowspan=&quot;2&quot;| [[H8300]]
+
+!rowspan=&quot;2&quot;| [[M16C]]
+
+!rowspan=&quot;2&quot;| [[M32R]]
+
+!colspan=&quot;2&quot;| [[SuperH]]
+
+&lt;!--!rowspan=&quot;2&quot;| [[RX600]]--&gt;
+
+!colspan=&quot;3&quot;| [[SPARC]]
+
+!colspan=&quot;2&quot;| [[m68k]]
+
+!rowspan=&quot;2&quot;| [[Blackfin]] (nommu)
+
+!rowspan=&quot;2&quot;| [[MicroBlaze]]
+
+!rowspan=&quot;2&quot;| [[78K]]
+
+!rowspan=&quot;2&quot;| [[V850]]
+
+!colspan=&quot;2&quot;| [[Xtensa]]
+
+!rowspan=&quot;2&quot;| [[ETRAX CRIS]]
+
+!rowspan=&quot;2&quot;| [[FR-V]]
+
+!rowspan=&quot;2&quot;| [[AVR32]]
+
+!rowspan=&quot;2&quot;| [[MN10300]] &lt;!--Panasonic(aka Matsushita)'s CPU--&gt;
+
+!rowspan=&quot;2&quot;| E1 (nommu) &lt;!--E132XS. Hyperstone's CPU--&gt;
+
+!rowspan=&quot;2&quot;| [[Nios embedded processor|Nios]] (nommu)
+
+!colspan=&quot;2&quot;| [[Nios II]]
+
+!rowspan=&quot;2&quot;| [[WDC 65C816]]
+
+!rowspan=&quot;2&quot;| [[S+core]]
+
+!rowspan=&quot;2&quot;| Tilera
+
+!rowspan=&quot;2&quot;| [[Texas Instruments TMS320C6000|C6X]]
+
+|-
+
+! mmu
+
+! nommu
+
+! x86
+! x86-64
+
+! mmu
+
+! nommu
+
+! 32-bit
+
+! 64-bit
+
+! mmu
+
+! nommu
+
+! 32-bit
+
+! 64-bit
+
+! nommu
+
+! mmu
+
+! nommu
+
+! mmu
+
+! nommu
+
+! mmu
+
+! nommu
+
+|-
+
+! [[DragonFly BSD#Kernel design|DragonFly BSD kernel]]
+
+|&lt;!--vax--&gt;{{?}}
+
+|&lt;!--alpha--&gt;{{No}}
+
+|&lt;!--arm--&gt;{{No}}
+
+|&lt;!--arm-nommu--&gt;{{No}}
+
+|&lt;!--hppa--&gt;{{No}}
+
+|&lt;!--x86-32--&gt;{{Yes}}
+|&lt;!--x86-64--&gt;{{Yes}}
+|&lt;!--i960--&gt;{{?}}
+
+|&lt;!--ia64--&gt;{{No}}
+
+|&lt;!--mips--&gt;{{No}}
+|&lt;!--mips-nommu--&gt;{{No}}
+|&lt;!--ppc32--&gt;{{No}}
+|&lt;!--ppc64--&gt;{{No}}
+|&lt;!--s390--&gt;{{No}}
+|&lt;!--zarchitecture--&gt;{{No}}
+|&lt;!--h8300--&gt;{{?}}
+|&lt;!--m16c--&gt;{{?}}
+|&lt;!--m32r--&gt;{{?}}
+|&lt;!--sh--&gt;{{No}}
+|&lt;!--sh-nommu--&gt;{{No}}
+|&lt;!--sparc32--&gt;{{No}}
+|&lt;!--sparc64--&gt;{{No}}
+|&lt;!--sparc-nommu--&gt;{{No}}
+
+|&lt;!--m68k--&gt;{{No}}
+
+|&lt;!--m68k-nommu--&gt;{{No}}
+
+|&lt;!--blackfin--&gt;{{?}}
+
+|&lt;!--MicroBlaze--&gt;{{?}}
+
+|&lt;!--78k--&gt;{{?}}
+
+|&lt;!--v850--&gt;{{?}}
+
+|&lt;!--xtensa--&gt;{{?}}
+
+|&lt;!--xtensa-nommu--&gt;{{?}}
+
+|&lt;!--etrax-cris--&gt;{{?}}
+
+|&lt;!--fr-v--&gt;{{?}}
+
+|&lt;!--avr32--&gt;{{?}}
+
+|&lt;!--mn10300--&gt;{{?}}
+
+|&lt;!--e1-nommu--&gt;{{?}}
+
+|&lt;!--nios-nommu--&gt;{{?}}
+
+|&lt;!--nios2--&gt;{{?}}
+
+|&lt;!--nios2-nommu--&gt;{{?}}
+
+|&lt;!--wdc-65c816--&gt;{{?}}
+
+|&lt;!--s+core--&gt;{{?}}
+
+|&lt;!--tilera--&gt;{{?}}
+
+|&lt;!--c6x--&gt;{{?}}
+
+|-
+
+! [[FreeBSD|FreeBSD kernel]]
+
+|&lt;!--vax--&gt;{{No}}
+
+|&lt;!--alpha--&gt;{{No}}
+
+|&lt;!--arm--&gt;{{Yes}}
+
+|&lt;!--arm-nommu--&gt;{{?}}
+
+|&lt;!--hppa--&gt;{{No}}
+
+|&lt;!--x86-32--&gt;{{Yes}}
+|&lt;!--x86-64--&gt;{{Yes}}
+|&lt;!--i960--&gt;{{?}}
+
+|&lt;!--ia64--&gt;{{Yes}}
+
+|&lt;!--mips--&gt;{{Yes}}
+
+|&lt;!--mips-nommu--&gt;{{No}}
+
+|&lt;!--ppc32--&gt;{{Yes}}
+
+|&lt;!--ppc64--&gt;{{Yes}}
+
+|&lt;!--s390--&gt;{{No}}
+|&lt;!--zarchitecture--&gt;{{No}}
+
+|&lt;!--h8300--&gt;{{?}}
+
+|&lt;!--m16c--&gt;{{?}}
+
+|&lt;!--m32r--&gt;{{?}}
+
+|&lt;!--sh--&gt;{{No}}
+
+|&lt;!--sh-nommu--&gt;{{No}}
+
+|&lt;!--sparc32--&gt;{{No}}
+
+|&lt;!--sparc64--&gt;{{Yes}}
+
+|&lt;!--sparc-nommu--&gt;{{?}}
+
+|&lt;!--m68k--&gt;{{No}}
+
+|&lt;!--m68k-nommu--&gt;{{No}}
+
+|&lt;!--blackfin--&gt;{{?}}
+
+|&lt;!--MicroBlaze--&gt;{{?}}
+
+|&lt;!--78k--&gt;{{?}}
+
+|&lt;!--v850--&gt;{{?}}
+
+|&lt;!--xtensa--&gt;{{?}}
+
+|&lt;!--xtensa-nommu--&gt;{{?}}
+
+|&lt;!--etrax-cris--&gt;{{?}}
+
+|&lt;!--fr-v--&gt;{{?}}
+
+|&lt;!--avr32--&gt;{{?}}
+
+|&lt;!--mn10300--&gt;{{?}}
+
+|&lt;!--e1-nommu--&gt;{{?}}
+
+|&lt;!--nios-nommu--&gt;{{?}}
+
+|&lt;!--nios2--&gt;{{?}}
+
+|&lt;!--nios2-nommu--&gt;{{?}}
+
+|&lt;!--wdc-65c816--&gt;{{?}}
+
+|&lt;!--s+core--&gt;{{?}}
+
+|&lt;!--tilera--&gt;{{?}}
+
+|&lt;!--c6x--&gt;{{?}}
+
+|-
+
+! [[Linux kernel]]
+
+|&lt;!--vax--&gt;{{No}}
+
+|&lt;!--alpha--&gt;{{Yes}}
+
+|&lt;!--arm--&gt;{{Yes}}
+
+|&lt;!--arm-nommu--&gt;{{Yes}}
+
+|&lt;!--hppa--&gt;{{Yes}}
+
+|&lt;!--x86-32--&gt;{{Yes}}
+|&lt;!--x86-64--&gt;{{Yes}}
+|&lt;!--i960--&gt;{{No}}
+
+|&lt;!--ia64--&gt;{{Yes}}
+
+|&lt;!--mips--&gt;{{Yes}}
+|&lt;!--mips-nommu--&gt;{{?}}
+|&lt;!--ppc32--&gt;{{Yes}}
+|&lt;!--ppc64--&gt;{{Yes}}
+|&lt;!--s390--&gt;{{Yes}}
+|&lt;!--zarchitecture--&gt;{{Yes}}
+|&lt;!--h8300--&gt;{{Yes}}
+|&lt;!--m16c--&gt;{{No}}
+|&lt;!--m32r--&gt;{{Yes}}
+|&lt;!--sh--&gt;{{Yes}}
+|&lt;!--sh-nommu--&gt;{{Yes}}
+|&lt;!--sparc32--&gt;{{Yes}}
+|&lt;!--sparc64--&gt;{{Yes}}
+|&lt;!--sparc-nommu--&gt;{{Yes}}
+
+|&lt;!--m68k--&gt;{{Yes}}
+
+|&lt;!--m68k-nommu--&gt;{{Yes}}
+
+|&lt;!--blackfin--&gt;{{Yes}}
+
+|&lt;!--MicroBlaze--&gt;{{Yes}}
+
+|&lt;!--78k--&gt;{{No}}
+
+|&lt;!--v850--&gt;{{No}} (dropped in 2.6.x)
+
+|&lt;!--xtensa--&gt;{{Yes}}
+
+|&lt;!--xtensa-nommu--&gt;{{Yes}}
+
+|&lt;!--etrax-cris--&gt;{{Yes}}
+
+|&lt;!--fr-v--&gt;{{Yes}}
+
+|&lt;!--avr32--&gt;{{Yes}}
+
+|&lt;!--mn10300--&gt;{{Yes}}
+
+|&lt;!--e1-nommu--&gt;{{No}}
+
+|&lt;!--nios-nommu--&gt;{{No}}
+
+|&lt;!--nios2--&gt;{{yes}}
+
+|&lt;!--nios2-nommu--&gt;{{yes}}
+
+|&lt;!--wdc-65c816--&gt;{{No}}&lt;!--gdb call it w65--&gt;
+
+|&lt;!--s+core--&gt;{{Yes}}
+
+|&lt;!--tilera--&gt;{{Yes}}
+
+|&lt;!--c6x--&gt;{{No}}
+
+|-
+
+! [[MINIX 3]]
+
+|&lt;!--vax--&gt;{{?}}
+
+|&lt;!--alpha--&gt;{{No}}
+
+|&lt;!--arm--&gt;In progress
+
+|&lt;!--arm-nommu--&gt;{{?}}
+
+|&lt;!--hppa--&gt;{{No}}
+
+|&lt;!--x86-32--&gt;{{Yes}}
+|&lt;!--x86-64--&gt;In progress
+|&lt;!--i960--&gt;{{No}}
+
+|&lt;!--ia64--&gt;{{No}}
+
+|&lt;!--mips--&gt;In progress
+|&lt;!--mips-nommu--&gt;{{?}}
+|&lt;!--ppc32--&gt;{{No}}
+|&lt;!--ppc64--&gt;{{No}}
+|&lt;!--s390--&gt;{{No}}
+|&lt;!--zarchitecture--&gt;{{No}}
+|&lt;!--h8300--&gt;{{No}}
+|&lt;!--m16c--&gt;{{?}}
+|&lt;!--m32r--&gt;{{No}}
+|&lt;!--sh--&gt;{{No}}
+|&lt;!--sh-nommu--&gt;{{No}}
+|&lt;!--sparc32--&gt;{{No}}
+|&lt;!--sparc64--&gt;{{No}}
+|&lt;!--sparc-nommu--&gt;{{No}}
+
+|&lt;!--m68k--&gt;{{No}}
+
+|&lt;!--m68k-nommu--&gt;{{No}}
+
+|&lt;!--blackfin--&gt;{{No}}
+
+|&lt;!--MicroBlaze--&gt;{{No}}
+
+|&lt;!--78k--&gt;{{?}}
+
+|&lt;!--v850--&gt;{{No}}
+
+|&lt;!--xtensa--&gt;{{No}}
+
+|&lt;!--xtensa-nommu--&gt;{{No}}
+
+|&lt;!--etrax-cris--&gt;{{No}}
+
+|&lt;!--fr-v--&gt;{{No}}
+
+|&lt;!--avr32--&gt;{{No}}
+
+|&lt;!--mn10300--&gt;{{No}}
+
+|&lt;!--e1-nommu--&gt;{{No}}
+
+|&lt;!--nios-nommu--&gt;{{No}}
+
+|&lt;!--nios2--&gt;{{No}}
+
+|&lt;!--nios2-nommu--&gt;{{No}}
+
+|&lt;!--wdc-65c816--&gt;{{No}}
+
+|&lt;!--s+core--&gt;{{No}}
+
+|&lt;!--tilera--&gt;{{No}}
+
+|&lt;!--c6x--&gt;{{No}}
+
+|-
+
+! [[NetBSD|NetBSD kernel]]
+
+|&lt;!--vax--&gt;{{Yes}}
+
+|&lt;!--alpha--&gt;{{Yes}}
+
+|&lt;!--arm--&gt;{{Yes}}
+
+|&lt;!--arm-nommu--&gt;{{no}}&lt;ref name=&quot;netbsd-nommu&quot;&gt;[http://www.netbsd.org/contrib/projects.html#mmu-less NetBSD Projects - Support for MMU-less systems]&lt;/ref&gt;
+
+|&lt;!--hppa--&gt;{{Yes}}
+
+|&lt;!--x86-32--&gt;{{Yes}}
+|&lt;!--x86-64--&gt;{{Yes}}
+|&lt;!--i960--&gt;{{?}}
+
+|&lt;!--ia64--&gt;{{Yes}}
+
+|&lt;!--mips--&gt;{{Yes}}
+|&lt;!--mips-nommu--&gt;{{no}}&lt;ref name=&quot;netbsd-nommu&quot;/&gt;
+|&lt;!--ppc32--&gt;{{Yes}}
+|&lt;!--ppc64--&gt;{{No}}
+|&lt;!--s390--&gt;{{No}}
+|&lt;!--zarchitecture--&gt;{{No}}
+|&lt;!--h8300--&gt;{{?}}
+|&lt;!--m16c--&gt;{{?}}
+|&lt;!--m32r--&gt;{{?}}
+|&lt;!--sh--&gt;{{Yes}}
+|&lt;!--sh-nommu--&gt;{{no}}&lt;ref name=&quot;netbsd-nommu&quot;/&gt;
+|&lt;!--sparc32--&gt;{{Yes}}
+|&lt;!--sparc64--&gt;{{Yes}}
+|&lt;!--sparc-nommu--&gt;{{no}}&lt;ref name=&quot;netbsd-nommu&quot;/&gt;
+
+|&lt;!--m68k--&gt;{{Yes}}
+
+|&lt;!--m68k-nommu--&gt;{{no}}&lt;ref name=&quot;netbsd-nommu&quot;/&gt;
+
+|&lt;!--blackfin--&gt;{{?}}
+
+|&lt;!--MicroBlaze--&gt;{{?}}
+
+|&lt;!--78k--&gt;{{?}}
+
+|&lt;!--v850--&gt;{{?}}
+
+|&lt;!--xtensa--&gt;{{?}}
+
+|&lt;!--xtensa-nommu--&gt;{{?}}
+
+|&lt;!--etrax-cris--&gt;{{?}}
+
+|&lt;!--fr-v--&gt;{{?}}
+
+|&lt;!--avr32--&gt;{{?}}
+
+|&lt;!--mn10300--&gt;{{?}}
+
+|&lt;!--e1-nommu--&gt;{{?}}
+
+|&lt;!--nios-nommu--&gt;{{?}}
+
+|&lt;!--nios2--&gt;{{?}}
+
+|&lt;!--nios2-nommu--&gt;{{?}}
+
+|&lt;!--wdc-65c816--&gt;{{?}}
+
+|&lt;!--s+core--&gt;{{?}}
+
+|&lt;!--tilera--&gt;{{?}}
+
+|&lt;!--c6x--&gt;{{?}}
+
+|-
+
+! [[Novell NetWare|NetWare kernel]]
+
+|&lt;!--vax--&gt;{{No}}
+
+|&lt;!--alpha--&gt;{{No}}
+
+|&lt;!--arm--&gt;{{No}}
+
+|&lt;!--arm-nommu--&gt;{{No}}
+
+|&lt;!--hppa--&gt;{{No}}
+
+|&lt;!--x86-32--&gt;{{Yes}}
+|&lt;!--x86-64--&gt;{{No}}
+|&lt;!--i960--&gt;{{?}}
+
+|&lt;!--ia64--&gt;{{No}}
+
+|&lt;!--mips--&gt;{{No}}
+|&lt;!--mips-nommu--&gt;{{No}}
+|&lt;!--ppc32--&gt;{{No}}
+|&lt;!--ppc64--&gt;{{No}}
+|&lt;!--s390--&gt;{{No}}
+|&lt;!--zarchitecture--&gt;{{No}}
+|&lt;!--h8300--&gt;{{?}}
+|&lt;!--m16c--&gt;{{?}}
+|&lt;!--m32r--&gt;{{?}}
+|&lt;!--sh--&gt;{{No}}
+|&lt;!--sh-nommu--&gt;{{No}}
+|&lt;!--sparc32--&gt;{{No}}
+|&lt;!--sparc64--&gt;{{No}}
+|&lt;!--sparc-nommu--&gt;{{No}}
+
+|&lt;!--m68k--&gt;{{No}}
+
+|&lt;!--m68k-nommu--&gt;{{No}}
+
+|&lt;!--blackfin--&gt;{{?}}
+
+|&lt;!--MicroBlaze--&gt;{{?}}
+
+|&lt;!--78k--&gt;{{?}}
+
+|&lt;!--v850--&gt;{{?}}
+
+|&lt;!--xtensa--&gt;{{?}}
+
+|&lt;!--xtensa-nommu--&gt;{{?}}
+
+|&lt;!--etrax-cris--&gt;{{?}}
+
+|&lt;!--fr-v--&gt;{{?}}
+
+|&lt;!--avr32--&gt;{{?}}
+
+|&lt;!--mn10300--&gt;{{?}}
+
+|&lt;!--e1-nommu--&gt;{{?}}
+
+|&lt;!--nios-nommu--&gt;{{?}}
+
+|&lt;!--nios2--&gt;{{?}}
+
+|&lt;!--nios2-nommu--&gt;{{?}}
+
+|&lt;!--wdc-65c816--&gt;{{?}}
+
+|&lt;!--s+core--&gt;{{?}}
+
+|&lt;!--tilera--&gt;{{?}}
+
+|&lt;!--c6x--&gt;{{?}}
+
+|-
+
+! [[OpenBSD|OpenBSD kernel]]
+
+|&lt;!--vax--&gt;{{Yes}}
+
+|&lt;!--alpha--&gt;{{Yes}}
+
+|&lt;!--arm--&gt;{{Yes}}
+
+|&lt;!--arm-nommu--&gt;{{?}}
+
+|&lt;!--hppa--&gt;{{Yes}}
+
+|&lt;!--x86-32--&gt;{{Yes}}
+|&lt;!--x86-64--&gt;{{Yes}}
+|&lt;!--i960--&gt;{{?}}
+
+|&lt;!--ia64--&gt;{{No}}
+
+|&lt;!--mips--&gt;{{Yes}}
+
+|&lt;!--mips-nommu--&gt;{{?}}
+
+|&lt;!--ppc32--&gt;{{Yes}}
+
+|&lt;!--ppc64--&gt;{{No}}
+
+|&lt;!--s390--&gt;{{No}}
+|&lt;!--zarchitecture--&gt;{{No}}
+
+|&lt;!--h8300--&gt;{{?}}
+
+|&lt;!--m16c--&gt;{{?}}
+
+|&lt;!--m32r--&gt;{{?}}
+
+|&lt;!--sh--&gt;{{yes}}
+
+|&lt;!--sh-nommu--&gt;{{?}}
+
+|&lt;!--sparc32--&gt;{{Yes}}
+
+|&lt;!--sparc64--&gt;{{Yes}}
+
+|&lt;!--sparc-nommu--&gt;{{?}}
+
+|&lt;!--m68k--&gt;{{Yes}}
+
+|&lt;!--m68k-nommu--&gt;{{Yes}}
+
+|&lt;!--blackfin--&gt;{{?}}
+
+|&lt;!--MicroBlaze--&gt;{{?}}
+
+|&lt;!--78k--&gt;{{?}}
+
+|&lt;!--v850--&gt;{{?}}
+
+|&lt;!--xtensa--&gt;{{?}}
+
+|&lt;!--xtensa-nommu--&gt;{{?}}
+
+|&lt;!--etrax-cris--&gt;{{?}}
+
+|&lt;!--fr-v--&gt;{{?}}
+
+|&lt;!--avr32--&gt;{{?}}
+
+|&lt;!--mn10300--&gt;{{?}}
+
+|&lt;!--e1-nommu--&gt;{{?}}
+
+|&lt;!--nios-nommu--&gt;{{?}}
+
+|&lt;!--nios2--&gt;{{?}}
+
+|&lt;!--nios2-nommu--&gt;{{?}}
+
+|&lt;!--wdc-65c816--&gt;{{?}}
+
+|&lt;!--s+core--&gt;{{?}}
+
+|&lt;!--tilera--&gt;{{?}}
+
+|&lt;!--c6x--&gt;{{?}}
+
+|-
+
+! [[Rockbox|Rockbox kernel]]
+
+|&lt;!--vax--&gt;{{?}}
+
+|&lt;!--alpha--&gt;{{?}}
+
+|&lt;!--arm--&gt;{{Yes}}
+
+|&lt;!--arm-nommu--&gt;{{?}}
+
+|&lt;!--hppa--&gt;{{?}}
+
+|&lt;!--x86-32--&gt;{{?}}
+|&lt;!--x86-64--&gt;{{?}}
+|&lt;!--i960--&gt;{{?}}
+
+|&lt;!--ia64--&gt;{{?}}
+
+|&lt;!--mips--&gt;{{?}}
+|&lt;!--mips-nommu--&gt;{{?}}
+|&lt;!--ppc32--&gt;{{?}}
+|&lt;!--ppc64--&gt;{{?}}
+|&lt;!--s390--&gt;{{?}}
+|&lt;!--zarchitecture--&gt;{{No}}
+|&lt;!--h8300--&gt;{{?}}
+|&lt;!--m16c--&gt;{{?}}
+|&lt;!--m32r--&gt;{{?}}
+|&lt;!--sh--&gt;{{Yes}}
+|&lt;!--sh-nommu--&gt;{{?}}
+|&lt;!--sparc32--&gt;{{?}}
+|&lt;!--sparc64--&gt;{{?}}
+|&lt;!--sparc-nommu--&gt;{{?}}
+
+|&lt;!--m68k--&gt;{{Yes}}
+
+|&lt;!--m68k-nommu--&gt;{{?}}
+
+|&lt;!--blackfin--&gt;{{?}}
+
+|&lt;!--MicroBlaze--&gt;{{?}}
+
+|&lt;!--78k--&gt;{{?}}
+
+|&lt;!--v850--&gt;{{?}}
+
+|&lt;!--xtensa--&gt;{{?}}
+
+|&lt;!--xtensa-nommu--&gt;{{?}}
+
+|&lt;!--etrax-cris--&gt;{{?}}
+
+|&lt;!--fr-v--&gt;{{?}}
+
+|&lt;!--avr32--&gt;{{?}}
+
+|&lt;!--mn10300--&gt;{{?}}
+
+|&lt;!--e1-nommu--&gt;{{?}}
+
+|&lt;!--nios-nommu--&gt;{{?}}
+
+|&lt;!--nios2--&gt;{{?}}
+
+|&lt;!--nios2-nommu--&gt;{{?}}
+
+|&lt;!--wdc-65c816--&gt;{{?}}
+
+|&lt;!--s+core--&gt;{{?}}
+
+|&lt;!--tilera--&gt;{{?}}
+
+|&lt;!--c6x--&gt;{{?}}
+
+|-
+
+! [[Solaris (operating system)|Solaris kernel]]
+
+|&lt;!--vax--&gt;{{No}}
+
+|&lt;!--alpha--&gt;{{No}}
+
+|&lt;!--arm--&gt;{{No}}
+
+|&lt;!--arm-nommu--&gt;{{No}}
+
+|&lt;!--hppa--&gt;{{No}}
+
+|&lt;!--x86-32--&gt;{{Yes}}
+|&lt;!--x86-64--&gt;{{Yes}}
+|&lt;!--i960--&gt;{{?}}
+
+|&lt;!--ia64--&gt;{{No}}
+
+|&lt;!--mips--&gt;{{No}}
+
+|&lt;!--mips-nommu--&gt;{{No}}
+
+|&lt;!--ppc32--&gt;{{No}}
+
+|&lt;!--ppc64--&gt;{{No}}
+
+|&lt;!--s390--&gt;{{No}}
+|&lt;!--zarchitecture--&gt;{{No}}
+
+|&lt;!--h8300--&gt;{{?}}
+
+|&lt;!--m16c--&gt;{{?}}
+
+|&lt;!--m32r--&gt;{{?}}
+
+|&lt;!--sh--&gt;{{No}}
+
+|&lt;!--sh-nommu--&gt;{{No}}
+
+|&lt;!--sparc32--&gt;{{Yes}}
+
+|&lt;!--sparc64--&gt;{{Yes}}
+
+|&lt;!--sparc-nommu--&gt;{{?}}
+
+|&lt;!--m68k--&gt;{{No}}
+
+|&lt;!--m68k-nommu--&gt;{{No}}
+
+|&lt;!--blackfin--&gt;{{?}}
+
+|&lt;!--MicroBlaze--&gt;{{?}}
+
+|&lt;!--78k--&gt;{{?}}
+
+|&lt;!--v850--&gt;{{?}}
+
+|&lt;!--xtensa--&gt;{{?}}
+
+|&lt;!--xtensa-nommu--&gt;{{?}}
+
+|&lt;!--etrax-cris--&gt;{{?}}
+
+|&lt;!--fr-v--&gt;{{?}}
+
+|&lt;!--avr32--&gt;{{?}}
+
+|&lt;!--mn10300--&gt;{{?}}
+
+|&lt;!--e1-nommu--&gt;{{?}}
+
+|&lt;!--nios-nommu--&gt;{{?}}
+
+|&lt;!--nios2--&gt;{{?}}
+
+|&lt;!--nios2-nommu--&gt;{{?}}
+
+|&lt;!--wdc-65c816--&gt;{{?}}
+
+|&lt;!--s+core--&gt;{{?}}
+
+|&lt;!--tilera--&gt;{{?}}
+
+|&lt;!--c6x--&gt;{{?}}
+
+|-
+
+! [[Architecture of Windows NT|Windows NT kernel]]
+
+|&lt;!--vax--&gt;{{No}}
+
+|&lt;!--alpha--&gt;{{Yes2}}NT 5.0 RC1 and below only
+
+|&lt;!--arm--&gt;{{Yes}}
+
+|&lt;!--arm-nommu--&gt;{{No}}
+
+|&lt;!--hppa--&gt;{{No}}
+
+|&lt;!--x86-32--&gt;{{Yes}}
+|&lt;!--x86-64--&gt;{{Yes}}
+|&lt;!--i960--&gt;{{No}}
+
+|&lt;!--ia64--&gt;{{Yes}}
+
+|&lt;!--mips--&gt;{{Yes2}}[[Windows NT 4.0|NT 4.0]] and below only
+
+|&lt;!--mips-nommu--&gt;{{No}}
+
+|&lt;!--ppc32--&gt;{{Yes2}}[[Windows NT 3.51|NT 3.51]] and [[Windows NT 4.0|NT 4.0]] only
+
+|&lt;!--ppc64--&gt;{{No}}
+
+|&lt;!--s390--&gt;{{No}}
+|&lt;!--zarchitecture--&gt;{{No}}
+
+|&lt;!--h8300--&gt;{{No}}
+
+|&lt;!--m16c--&gt;{{No}}
+
+|&lt;!--m32r--&gt;{{No}}
+
+|&lt;!--sh--&gt;{{No}}
+
+|&lt;!--sh-nommu--&gt;{{No}}
+
+|&lt;!--sparc32--&gt;{{No}}
+
+|&lt;!--sparc64--&gt;{{No}}
+
+|&lt;!--sparc-nommu--&gt;{{No}}
+
+|&lt;!--m68k--&gt;{{No}}
+
+|&lt;!--m68k-nommu--&gt;{{No}}
+
+|&lt;!--blackfin--&gt;{{No}}
+
+|&lt;!--MicroBlaze--&gt;{{No}}
+
+|&lt;!--78k--&gt;{{No}}
+
+|&lt;!--v850--&gt;{{No}}
+
+|&lt;!--xtensa--&gt;{{No}}
+
+|&lt;!--xtensa-nommu--&gt;{{No}}
+
+|&lt;!--etrax-cris--&gt;{{No}}
+
+|&lt;!--fr-v--&gt;{{No}}
+
+|&lt;!--avr32--&gt;{{No}}
+
+|&lt;!--mn10300--&gt;{{No}}
+
+|&lt;!--e1-nommu--&gt;{{No}}
+
+|&lt;!--nios-nommu--&gt;{{No}}
+
+|&lt;!--nios2--&gt;{{No}}
+
+|&lt;!--nios2-nommu--&gt;{{No}}
+
+|&lt;!--wdc-65c816--&gt;{{No}}
+
+|&lt;!--s+core--&gt;{{No}}
+
+|&lt;!--tilera--&gt;{{No}}
+
+|&lt;!--c6x--&gt;{{No}}
+
+|-
+
+! [[Windows CE|Windows CE kernel]]
+
+|&lt;!--vax--&gt;{{No}}
+
+|&lt;!--alpha--&gt;{{No}}
+
+|&lt;!--arm--&gt;{{Yes}}
+
+|&lt;!--arm-nommu--&gt;{{?}}
+
+|&lt;!--hppa--&gt;{{No}}
+
+|&lt;!--x86-32--&gt;{{Yes}}
+|&lt;!--x86-64--&gt;{{?}}
+|&lt;!--i960--&gt;{{No}}
+
+|&lt;!--ia64--&gt;{{No}}
+
+|&lt;!--mips--&gt;{{Yes}}
+
+|&lt;!--mips-nommu--&gt;{{?}}
+
+|&lt;!--ppc32--&gt;{{No}}
+
+|&lt;!--ppc64--&gt;{{No}}
+
+|&lt;!--s390--&gt;{{No}}
+|&lt;!--zarchitecture--&gt;{{No}}
+
+|&lt;!--h8300--&gt;{{No}}
+
+|&lt;!--m16c--&gt;{{?}}
+
+|&lt;!--m32r--&gt;{{No}}
+
+|&lt;!--sh--&gt;{{Yes}}
+
+|&lt;!--sh-nommu--&gt;{{?}}
+
+|&lt;!--sparc32--&gt;{{No}}
+
+|&lt;!--sparc64--&gt;{{No}}
+
+|&lt;!--sparc-nommu--&gt;{{No}}
+
+|&lt;!--m68k--&gt;{{No}}
+
+|&lt;!--m68k-nommu--&gt;{{No}}
+
+|&lt;!--blackfin--&gt;{{No}}
+
+|&lt;!--MicroBlaze--&gt;{{No}}
+
+|&lt;!--78k--&gt;{{?}}
+
+|&lt;!--v850--&gt;{{No}}
+
+|&lt;!--xtensa--&gt;{{No}}
+
+|&lt;!--xtensa-nommu--&gt;{{No}}
+
+|&lt;!--etrax-cris--&gt;{{No}}
+
+|&lt;!--fr-v--&gt;{{No}}
+
+|&lt;!--avr32--&gt;{{No}}
+
+|&lt;!--mn10300--&gt;{{No}}
+
+|&lt;!--e1-nommu--&gt;{{No}}
+
+|&lt;!--nios-nommu--&gt;{{No}}
+
+|&lt;!--nios2--&gt;{{No}}
+
+|&lt;!--nios2-nommu--&gt;{{No}}
+
+|&lt;!--wdc-65c816--&gt;{{No}}
+
+|&lt;!--s+core--&gt;{{No}}
+
+|&lt;!--tilera--&gt;{{No}}
+
+|&lt;!--c6x--&gt;{{No}}
+
+|-
+
+! [[XNU]]
+
+|&lt;!--vax--&gt;{{No}}
+
+|&lt;!--alpha--&gt;{{No}}
+
+|&lt;!--arm--&gt;{{Yes}}
+
+|&lt;!--arm-nommu--&gt;{{?}}
+
+|&lt;!--hppa--&gt;{{No}}
+
+|&lt;!--x86-32--&gt;{{Yes}}
+|&lt;!--x86-64--&gt;{{Yes}}
+|&lt;!--i960--&gt;{{?}}
+
+|&lt;!--ia64--&gt;{{No}}
+
+|&lt;!--mips--&gt;{{No}}
+
+|&lt;!--mips-nommu--&gt;{{No}}
+
+|&lt;!--ppc32--&gt;{{Yes}}
+
+|&lt;!--ppc64--&gt;{{Yes}}
+
+|&lt;!--s390--&gt;{{No}}
+|&lt;!--zarchitecture--&gt;{{No}}
+
+|&lt;!--h8300--&gt;{{?}}
+
+|&lt;!--m16c--&gt;{{?}}
+
+|&lt;!--m32r--&gt;{{?}}
+
+|&lt;!--sh--&gt;{{No}}
+
+|&lt;!--sh-nommu--&gt;{{No}}
+
+|&lt;!--sparc32--&gt;{{No}}
+
+|&lt;!--sparc64--&gt;{{No}}
+
+|&lt;!--sparc-nommu--&gt;{{No}}
+
+|&lt;!--m68k--&gt;{{No}}
+
+|&lt;!--m68k-nommu--&gt;{{No}}
+
+|&lt;!--blackfin--&gt;{{?}}
+
+|&lt;!--MicroBlaze--&gt;{{?}}
+
+|&lt;!--78k--&gt;{{?}}
+
+|&lt;!--v850--&gt;{{?}}
+
+|&lt;!--xtensa--&gt;{{?}}
+
+|&lt;!--xtensa-nommu--&gt;{{?}}
+
+|&lt;!--etrax-cris--&gt;{{?}}
+
+|&lt;!--fr-v--&gt;{{?}}
+
+|&lt;!--avr32--&gt;{{?}}
+
+|&lt;!--mn10300--&gt;{{?}}
+
+|&lt;!--e1-nommu--&gt;{{?}}
+
+|&lt;!--nios-nommu--&gt;{{?}}
+
+|&lt;!--nios2--&gt;{{?}}
+
+|&lt;!--nios2-nommu--&gt;{{?}}
+
+|&lt;!--wdc-65c816--&gt;{{?}}
+
+|&lt;!--s+core--&gt;{{?}}
+
+|&lt;!--tilera--&gt;{{?}}
+
+|&lt;!--c6x--&gt;{{?}}
+
+|-
+
+! [[HelenOS|SPARTAN kernel]]
+
+|&lt;!--vax--&gt;{{?}}
+
+|&lt;!--alpha--&gt;{{No}}
+
+|&lt;!--arm--&gt;{{Yes}}
+
+|&lt;!--arm-nommu--&gt;{{?}}
+
+|&lt;!--hppa--&gt;{{No}}
+
+|&lt;!--x86-32--&gt;{{Yes}}
+|&lt;!--x86-64--&gt;{{Yes}}
+|&lt;!--i960--&gt;{{?}}
+
+|&lt;!--ia64--&gt;{{Yes}}
+
+|&lt;!--mips--&gt;{{Yes}}
+
+|&lt;!--mips-nommu--&gt;{{?}}
+
+|&lt;!--ppc32--&gt;{{Yes}}
+
+|&lt;!--ppc64--&gt;In Progress
+
+|&lt;!--s390--&gt;{{No}}
+|&lt;!--zarchitecture--&gt;{{No}}
+
+|&lt;!--h8300--&gt;{{?}}
+
+|&lt;!--m16c--&gt;{{?}}
+
+|&lt;!--m32r--&gt;{{?}}
+
+|&lt;!--sh--&gt;{{No}}
+
+|&lt;!--sh-nommu--&gt;{{No}}
+
+|&lt;!--sparc32--&gt;{{No}}
+
+|&lt;!--sparc64--&gt;{{Yes}}
+
+|&lt;!--sparc-nommu--&gt;{{?}}
+
+|&lt;!--m68k--&gt;{{No}}
+
+|&lt;!--m68k-nommu--&gt;{{No}}
+
+|&lt;!--blackfin--&gt;{{?}}
+
+|&lt;!--MicroBlaze--&gt;{{?}}
+
+|&lt;!--78k--&gt;{{?}}
+
+|&lt;!--v850--&gt;{{?}}
+
+|&lt;!--xtensa--&gt;{{?}}
+
+|&lt;!--xtensa-nommu--&gt;{{?}}
+
+|&lt;!--etrax-cris--&gt;{{?}}
+
+|&lt;!--fr-v--&gt;{{?}}
+
+|&lt;!--avr32--&gt;{{?}}
+
+|&lt;!--mn10300--&gt;{{?}}
+
+|&lt;!--e1-nommu--&gt;{{?}}
+
+|&lt;!--nios-nommu--&gt;{{?}}
+
+|&lt;!--nios2--&gt;{{?}}
+
+|&lt;!--nios2-nommu--&gt;{{?}}
+
+|&lt;!--wdc-65c816--&gt;{{?}}
+
+|&lt;!--s+core--&gt;{{?}}
+
+|&lt;!--tilera--&gt;{{?}}
+
+|&lt;!--c6x--&gt;{{?}}
+
+|-
+
+! [[FreeRTOS|FreeRTOS kernel]]
+
+|&lt;!--vax--&gt;{{?}}
+
+|&lt;!--alpha--&gt;{{?}}
+
+|&lt;!--arm--&gt;{{?}}
+
+|&lt;!--arm-nommu--&gt;{{yes}}
+
+|&lt;!--hppa--&gt;{{?}}
+
+|&lt;!--x86-32--&gt;{{?}}
+|&lt;!--x86-64--&gt;{{?}}
+|&lt;!--i960--&gt;{{?}}
+
+|&lt;!--ia64--&gt;{{?}}
+
+|&lt;!--mips--&gt;{{?}}
+
+|&lt;!--mips-nommu--&gt;{{?}}
+
+|&lt;!--ppc32--&gt;{{yes}}
+
+|&lt;!--ppc64--&gt;{{?}}
+
+|&lt;!--s390--&gt;{{?}}
+|&lt;!--zarchitecture--&gt;{{No}}
+
+|&lt;!--h8300--&gt;{{?}}
+
+|&lt;!--m16c--&gt;{{?}}
+
+|&lt;!--m32r--&gt;{{?}}
+
+|&lt;!--sh--&gt;{{?}}
+
+|&lt;!--sh-nommu--&gt;{{?}}
+
+|&lt;!--sparc32--&gt;{{?}}
+
+|&lt;!--sparc64--&gt;{{?}}
+
+|&lt;!--sparc-nommu--&gt;{{?}}
+
+|&lt;!--m68k--&gt;{{?}}
+
+|&lt;!--m68k-nommu--&gt;{{?}}
+
+|&lt;!--blackfin--&gt;{{yes}}
+
+|&lt;!--MicroBlaze--&gt;{{yes}}
+
+|&lt;!--78k--&gt;{{yes}}
+
+|&lt;!--v850--&gt;{{yes}}
+
+|&lt;!--xtensa--&gt;{{?}}
+
+|&lt;!--xtensa-nommu--&gt;{{?}}
+
+|&lt;!--etrax-cris--&gt;{{?}}
+
+|&lt;!--fr-v--&gt;{{?}}
+
+|&lt;!--avr32--&gt;{{yes}}
+
+|&lt;!--mn10300--&gt;{{?}}
+
+|&lt;!--e1-nommu--&gt;{{?}}
+
+|&lt;!--nios-nommu--&gt;{{?}}
+
+|&lt;!--nios2--&gt;{{?}}
+
+|&lt;!--nios2-nommu--&gt;{{yes}}
+
+|&lt;!--wdc-65c816--&gt;{{?}}
+
+|&lt;!--s+core--&gt;{{?}}
+
+|&lt;!--tilera--&gt;{{?}}
+
+|&lt;!--c6x--&gt;{{?}}
+
+|}
+
+==Supported kernel execution environment==
+{| style=&quot;text-align: center; width: auto&quot; class=&quot;sortable wikitable&quot;
+! Kernel name
+! [[Linux]]
+! [[Darwin (operating system)|Darwin]]
+! [[Architecture of Windows NT|Windows NT kernel]]
+! [[FreeBSD]]
+! [[NetBSD]]
+! [[Solaris (operating system)|Solaris]]
+! OSF/1
+! Amiga Unix
+! SunOS
+! BSDI
+! IBCS2 systems
+! IRIX
+! Ultrix
+! NDIS
+! SVR4
+|-
+! [[FreeBSD]]
+| {{yes}}&lt;ref name=&quot;freebsd-compat&quot;&gt;[http://www.freebsd.org/doc/en/articles/linux-emulation/inside.html Linux emulation in FreeBSD - 2 A look inside...]&lt;/ref&gt;
+| {{no}}
+| {{no}}
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{yes}}&lt;ref name=&quot;freebsd-compat&quot;/&gt;
+| {{yes}}&lt;ref name=&quot;freebsd-compat&quot;/&gt;
+|-
+! [[Linux]]
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+|-
+! [[NetBSD]]
+| {{yes}}&lt;ref name=&quot;netbsd-compat&quot;&gt;[http://www.netbsd.org/docs/compat.html NetBSD Binary Emulation]&lt;/ref&gt;
+| {{no}}? [http://hcpnet.free.fr/applebsd.html]?
+| {{no}}? [http://pkgsrc.se/emulators/peace]?
+| {{yes}}&lt;ref name=&quot;netbsd-compat&quot;/&gt;
+| {{yes}}
+| {{yes}}&lt;ref name=&quot;netbsd-compat&quot;/&gt;
+| {{yes}}&lt;ref name=&quot;netbsd-compat&quot;/&gt;
+| {{yes}}&lt;ref name=&quot;netbsd-compat&quot;/&gt;
+| {{yes}}&lt;ref name=&quot;netbsd-compat&quot;/&gt;
+| {{yes}}&lt;ref name=&quot;netbsd-compat&quot;/&gt;
+| {{yes}}&lt;ref name=&quot;netbsd-compat&quot;/&gt;
+| {{yes}}&lt;ref name=&quot;netbsd-compat&quot;/&gt;
+| {{yes}}&lt;ref name=&quot;netbsd-compat&quot;/&gt;
+| {{yes}} [http://netbsd-soc.sourceforge.net/projects/ndis/]
+| {{yes}}
+|-
+! [[OpenBSD]]
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{yes}}
+| {{?}}
+| {{?}}
+| {{?}}
+| {{?}}
+| {{no}}
+| {{yes}}
+|-
+! [[Architecture of Windows NT|Windows NT kernel]]
+| {{no}}
+| {{no}}
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+|-
+! [[ReactOS|ReactOS kernel]]
+| {{no}}
+| {{no}}
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+|-
+! [[XNU]]
+| {{no}}
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+|-class=&quot;sortbottom&quot;
+! Kernel name
+! [[Linux]]
+! [[Darwin (operating system)|Darwin]]
+! [[Architecture of Windows NT|Windows NT kernel]]
+! [[FreeBSD]]
+! [[NetBSD]]
+! [[Solaris (operating system)|Solaris]]
+! OSF/1
+! Amiga Unix
+! SunOS
+! BSDI
+! IBCS2 systems
+! IRIX
+! Ultrix
+! NDIS
+! SVR4
+|}
+
+== Supported cipher algorithms ==
+This may be usable on some situations like file system encrypting.
+{| style=&quot;font-size:85%; text-align: center; width: auto&quot; class=&quot;sortable wikitable&quot;
+! Kernel name
+! [[Data Encryption Standard|DES]]
+! [[Advanced Encryption Standard|AES]]
+! [[Blowfish (cipher)|Blowfish]]
+! [[Triple DES]]
+! [[Serpent (cipher)|Serpent]]
+! [[Twofish]]
+! [[CAST-128]] &lt;!--aka CAST5--&gt;
+! [[DES-X]]
+! [[International Data Encryption Algorithm|IDEA]]
+! [[RC2]]
+! [[RC5]]
+! [[SEED]]
+! [[Skipjack (cipher)|Skipjack]]
+! [[Tiny Encryption Algorithm|TEA]]
+! [[XTEA]]
+! [[CAST-256]] &lt;!--aka CAST6--&gt;
+! [[RC4]] &lt;!--aka ARC4--&gt;
+! [[Camellia (cipher)|Camellia]]
+! [[Anubis (cipher)|Anubis]]
+! [[KHAZAD]]
+! [[Salsa20]]
+! [[FCrypt]] &lt;!--used in RxRPC--&gt;
+|-
+! Linux
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{?}}
+| {{?}}
+| {{?}}
+| {{?}}
+| {{yes}}
+| {{?}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+|-
+! Windows
+| {{yes}}
+| {{yes}}
+| {{no}}
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{yes}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+|-class=&quot;sortbottom&quot;
+! Kernel name
+! [[Data Encryption Standard|DES]]
+! [[Advanced Encryption Standard|AES]]
+! [[Blowfish (cipher)|Blowfish]]
+! [[Triple DES]]
+! [[Serpent (cipher)|Serpent]]
+! [[Twofish]]
+! [[CAST-128]] &lt;!--aka CAST5--&gt;
+! [[DES-X]]
+! [[International Data Encryption Algorithm|IDEA]]
+! [[RC2]]
+! [[RC5]]
+! [[SEED]]
+! [[Skipjack (cipher)|Skipjack]]
+! [[Tiny Encryption Algorithm|TEA]]
+! [[XTEA]]
+! [[CAST-256]] &lt;!--aka CAST6--&gt;
+! [[RC4]] &lt;!--aka ARC4--&gt;
+! [[Camellia (cipher)|Camellia]]
+! [[Anubis (cipher)|Anubis]]
+! [[KHAZAD]]
+! [[Salsa20]]
+! [[FCrypt]] &lt;!--used in RxRPC--&gt;
+|}
+
+== Supported compression algorithms ==
+This may be usable on some situations like compression file system.
+{| style=&quot;text-align: center; width: auto&quot; class=&quot;sortable wikitable&quot;
+! Kernel name
+! [[DEFLATE|Deflate]]
+! [[zlib]]
+! [[Lempel-Ziv-Oberhumer|LZO]]
+! [[LZJB]]
+! [[gzip]]
+|-
+! Linux
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{?}}
+| {{yes}}
+|-
+! Solaris
+| {{?}}
+| {{?}}
+| {{?}}
+| {{yes}}
+| {{yes}}
+|-class=&quot;sortbottom&quot;
+! Kernel name
+! [[DEFLATE|Deflate]]
+! [[zlib]]
+! [[Lempel-Ziv-Oberhumer|LZO]]
+! [[LZJB]]
+! [[gzip]]
+|}
+
+== Supported hash algorithms ==
+{| style=&quot;font-size:85%; text-align: center; width: auto&quot; class=&quot;sortable wikitable&quot;
+! Kernel name
+! [[CRC32|CRC-32 (IEEE)]]
+! [[CRC32c]]
+! [[MD2 (cryptography)|MD2]]
+! [[MD4]]
+! [[MD5]]
+! [[SHA-1]]
+! [[SHA-256]]
+! [[SHA-384]]
+! [[SHA-512]]
+! [[Michael MIC]]&lt;!--used in TKIP--&gt;
+! [[RIPEMD|RIPEMD-128]]
+! [[RIPEMD|RIPEMD-160]]
+! [[RIPEMD|RIPEMD-256]]
+! [[RIPEMD|RIPEMD-320]]
+! [[Tiger (cryptography)|Tiger]]
+! [[Whirlpool (cryptography)|Whirlpool]]
+! [[HMAC]]
+! [[MDC2]]
+! [[GOST (hash function)|GOST]]
+! [[LASH-160]]
+! [[LASH-256]]
+! [[LASH-384]]
+! [[LASH-512]]
+|-
+! Linux
+| {{yes}}&lt;ref name=&quot;TOMOYO crc32 source&quot;&gt;[http://tomoyo.sourceforge.jp/cgi-bin/lxr/source/lib/crc32.c]&lt;/ref&gt;
+| {{yes}}&lt;ref name=&quot;TOMOYO crc32c source&quot;&gt;[http://tomoyo.sourceforge.jp/cgi-bin/lxr/source/crypto/crc32c.c]&lt;/ref&gt;
+| {{yes}}&lt;ref name=&quot;MD2 man page&quot;&gt;[http://linux.die.net/man/3/md2 MD2 Linux man page]&lt;/ref&gt;
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}&lt;ref name=&quot;GNU core-utils documentation&quot;&gt;[http://www.gnu.org/s/coreutils/manual/html_node/sha2-utilities.html GNU SHA2 utilities]&lt;/ref&gt;
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{?}}
+| {{?}}
+| {{?}}
+| {{?}}
+| {{?}}
+| {{?}}
+| {{?}}
+|-
+! Solaris
+&lt;!--CRC--&gt;| {{yes}}
+| {{yes}}
+&lt;!--MDx--&gt;| {{yes}}
+| {{yes}}
+| {{yes}}
+&lt;!--SHA--&gt;| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+&lt;!--MIC--&gt;| {{?}}
+&lt;!--RIPE--&gt;| {{?}}
+| {{yes}}
+| {{?}}
+| {{?}}
+&lt;!--Tiger--&gt;| {{yes}}
+| {{?}}
+| {{yes}}
+| {{yes}}
+| {{?}}
+&lt;!--LASH--&gt;| {{?}}
+| {{?}}
+| {{?}}
+| {{?}}
+|-
+! Windows NT
+&lt;!--CRC--&gt;| {{?}}
+| {{?}}
+&lt;!--MDx--&gt;| {{yes}}
+| {{yes}}
+| {{yes}}
+&lt;!--SHA--&gt;| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+&lt;!--MIC--&gt;| {{no}}
+&lt;!--RIPE--&gt;| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+&lt;!--Tiger--&gt;| {{no}}
+| {{no}}
+| {{yes}}
+| {{no}}
+| {{no}}
+&lt;!--LASH--&gt;| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+|-class=&quot;sortbottom&quot;
+! Kernel name
+! [[CRC32|CRC-32 (IEEE)]]
+! [[CRC32c]]
+! [[MD2 (cryptography)|MD2]]
+! [[MD4]]
+! [[MD5]]
+! [[SHA-1]]
+! [[SHA-256]]
+! [[SHA-384]]
+! [[SHA-512]]
+! [[Michael MIC]]&lt;!--used in TKIP--&gt;
+! [[RIPEMD|RIPEMD-128]]
+! [[RIPEMD|RIPEMD-160]]
+! [[RIPEMD|RIPEMD-256]]
+! [[RIPEMD|RIPEMD-320]]
+! [[Tiger (cryptography)|Tiger]]
+! [[Whirlpool (cryptography)|Whirlpool]]
+! [[HMAC]]
+! [[MDC2]]
+! [[GOST (hash function)|GOST]]
+! [[LASH-160]]
+! [[LASH-256]]
+! [[LASH-384]]
+! [[LASH-512]]
+|}
+
+== Supported [[Bluetooth protocols]] ==
+{| style=&quot;font-size:85%; text-align: center; width: auto&quot; class=&quot;sortable wikitable&quot;
+! Kernel name
+! {{abbr|ACL|Asynchronous connection-oriented}}
+! {{abbr|SCO|Synchronous connection-oriented}}
+! {{abbr|LMP|Link management protocol}}
+! {{abbr|HCI|Host/controller interface}}
+! {{abbr|L2CAP|Logical link control and adaptation protocol}}
+! {{abbr|BNEP|Bluetooth network encapsulation protocol}}
+! {{abbr|RFComm.|Radio frequency communication}}
+! {{abbr|SDP|Service discovery protocol}}
+! {{abbr|TCP|Telephony control protocol}}
+! {{abbr|AVTCP|Audio/visual control transport protocol}}
+! {{abbr|AVDTP|Audio/visual data transport protocol}}
+! {{abbr|OBEX|Object exchange}}
+! CMTP
+! HIDP
+! HCRP
+! CAPI
+! PPP
+|-
+! [[FreeBSD|FreeBSD kernel]]
+| {{?}}
+| {{?}}
+| {{?}}
+| {{yes}}
+| {{yes}}
+| {{?}}
+| {{yes}}
+| {{yes}}
+| {{?}}
+| {{?}}
+| {{?}}
+| {{?}}
+| {{?}}
+| {{?}}
+| {{?}}
+| {{?}}
+| {{?}}
+|-
+! Linux
+| {{?}}
+| {{yes}}
+| {{?}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{?}}
+| {{?}}
+| {{?}}
+| {{?}}
+| {{?}}
+| {{yes}}
+| {{yes}}
+| {{?}}
+| {{?}}
+| {{?}}
+|-class=&quot;sortbottom&quot;
+! Kernel name
+! ACL
+! SCO
+! LMP
+! HCI
+! L2CAP
+! BNEP
+! RFComm.
+! SDP
+! TCP
+! AVTCP
+! AVDTP
+! OBEX
+! CMTP
+! HIDP
+! HCRP
+! CAPI
+! PPP
+|}
+
+== See also ==
+*[[Comparison of open source operating systems]]
+*[[Comparison of Linux distributions]]
+*[[Comparison of BSD operating systems]]
+*[[Comparison of Windows versions]]
+*[[List of operating systems]]
+*[[Comparison of file systems]]
+*[[Comparison of operating systems]]
+*[[Operating system advocacy]]
+*[[XvsXP]]
+
+==Footnotes==
+&lt;!--See http://en.wikipedia.org/wiki/Wikipedia:Footnotes for an explanation of how to generate footnotes using the &lt;ref&gt; and &lt;/ref&gt; tags and the tag below --&gt;
+{{reflist|colwidth=30em}}
+
+[[Category:Software comparisons|Kernels]]
+[[Category:Computing platforms]]
+[[Category:Operating system kernels]]</rev></revisions></page></pages></query></api>

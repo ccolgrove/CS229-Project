@@ -1,0 +1,94 @@
+<?xml version="1.0"?><api><query><pages><page pageid="242350" ns="0" title="MLDonkey"><revisions><rev xml:space="preserve">{{Infobox software
+| name                   = MLDonkey
+| logo                   =
+| screenshot             =
+| caption                =
+| developer              =
+| released               = late 2001
+| frequently_updated     = yes&lt;!-- Release version update? Don't edit this page, just click on the version number! --&gt;
+| programming language   = [[Objective Caml]], with some [[C (programming language)|C]] and [[Assembly language|assembly]]
+| operating system       = [[Cross-platform]]
+| language               = ?
+| genre                  = [[Peer-to-peer|P2P]] File sharing
+| license                = [[GNU General Public License|GPL]]
+| website                = [http://mldonkey.sourceforge.net/ mldonkey.sourceforge.net]
+}}
+'''MLDonkey''' is an [[open source]], multi-protocol, [[peer-to-peer]] [[file sharing]] application that runs as a back-end server application on many platforms. It can be controlled through a user interface provided by one of many separate front-ends, including a Web interface, telnet interface and over a dozen native client programs.
+
+Originally a [[Linux]] client for the [[EDonkey network|eDonkey]] protocol, it now runs on many flavors of [[Unix-like]], [[Mac OS X]], [[Microsoft Windows|Windows]] and [[MorphOS]] and supports numerous peer-to-peer protocols.
+
+It is written in [[Objective Caml]], with some [[C (programming language)|C]] and even some [[Assembly language|assembly]].
+
+== History ==
+
+Development of the software began in late 2001. The original developer of MLDonkey is Fabrice Le Fessant from [[Institut national de recherche en informatique et en automatique|INRIA]]. It was originally conceived as an effort to spread the use of Objective Caml in the open source community.&lt;ref&gt;[http://hal.archives-ouvertes.fr/inria-00071789/en/ Fabrice Le Fessant; MLdonkey, a Multi-Network Peer-to-Peer File-Sharing Program]&lt;/ref&gt;
+
+In January 2003, [[Slyck.com]] reported brief friction between MLDonkey developers and the official [[Overnet]] MetaMachine developers, which denounced MLDonkey as a &quot;rogue client&quot;, allegedly for incorrect behavior on the network.&lt;ref&gt;Thomas Mennecke, [http://www.slyck.com/news.php?story=34 Rogue Clients and Overnet], January 17, 2003&lt;/ref&gt;
+
+Versions before 3.0 have a known security vulnerability that allows an attacker with access to the web interface to read any file on the file system.&lt;ref&gt;DJ Walker-Morgan, [http://www.h-online.com/security/news/item/MLDonkey-3-0-closes-security-hole-740577.html MLDonkey 3.0 closes security hole], [[Heinz Heise|H-online]], 16 March 2009&lt;/ref&gt;
+
+== Features ==
+Features of MLdonkey core:
+
+* Peer to peer (p2p) program that supports the following network protocols, either partially or completely:
+**  [[eDonkey network]]
+**  [[Overnet]]
+**  [[BitTorrent (protocol)|BitTorrent]]
+**  [[Kad Network]]
+**  [[Direct Connect (file sharing)|Direct Connect]]
+**  [[HTTP]]/[[File Transfer Protocol|FTP]]
+* Multiple control interfaces: telnet, web interface, third party GUIs.
+
+Written in the [[Ocaml]] programming language and licensed under the [[GNU General Public License|GPL]], the application separates the user interface (which can be a [[web browser]], [[telnet]], or a third-party [[GUI]] application) and the code that interacts with the peer-to-peer networks.
+
+MLDonkey is able to connect simultaneously to different peers using different network protocols. In addition it can download and merge parts of one file from different network protocols&lt;ref&gt;[http://mldonkey.sourceforge.net/Merge Latest cores (above 2.5.28) contain an experimental feature: swarming between networks]&lt;/ref&gt; although this feature is currently documented as experimental. MLDonkey runs in a terminal session and does not require a GUI environment, saving memory and processing resources. Behavior is controlled by editable configuration files, orâin a more user friendly fashionâfrom a separate user interface.
+
+From release 2.9.0 on, support for [[gnutella]] and [[Gnutella2|G2]] are no longer compiled in by default as both plugins are buggy and currently unmaintained; however, it is still possible to compile them in by making the appropriate setting in the configuration file.&lt;ref&gt;[http://sourceforge.net/forum/forum.php?forum_id=719769 MLDonkey will no longer compile in Gnutella and G2 support by default]&lt;/ref&gt;
+
+== See also ==
+{{Portal|Free software}}
+* [[Comparison of eDonkey software]]
+* [[Comparison of BitTorrent clients]]
+
+==References==
+{{Reflist}}
+'''General references'''
+{{Refbegin}}
+* {{pl icon}} Andrzej KwaÅniewski (November 18, 2005) ''[http://www.pcworld.pl/news/85312/P2P.pod.Linuksem.html P2P pod Linuksem] (P2P in Linux)'', [[PC World (magazine)|PC World]] Poland
+{{Refend}}
+
+== Frontends ==
+* [http://p2p-gui.sourceforge.net/ P2P-GUI (web interface)]
+* [http://www.niemueller.de/software/palm/onager/ Onager (PalmOS)]
+* [http://sancho-gui.sourceforge.net/ Sancho]
+
+== External links ==
+* [http://mldonkey.sourceforge.net/ Official homepage]
+* [http://savannah.nongnu.org/projects/mldonkey Bug tracker ]
+
+{{BitTorrent}}
+{{EDonkey}}
+{{File sharing}}
+
+[[Category:File sharing programs]]
+[[Category:Free BitTorrent clients]]
+[[Category:Free file sharing software]]
+[[Category:Free software programmed in assembly]]
+[[Category:Free software programmed in C]]
+[[Category:Linux file sharing software]]
+[[Category:Cross-platform software]]
+[[Category:OCaml software]]
+[[Category:Free software programmed in OCaml]]
+
+[[ca:MLDonkey]]
+[[de:MLDonkey]]
+[[es:MLDonkey]]
+[[fr:MLDonkey]]
+[[it:MLDonkey]]
+[[hu:MLDonkey]]
+[[nl:MLDonkey]]
+[[pl:MLDonkey]]
+[[pt:MLDonkey]]
+[[ru:MLDonkey]]
+[[vi:MLDonkey]]
+[[zh:MLDonkey]]</rev></revisions></page></pages></query></api>

@@ -1,0 +1,138 @@
+<?xml version="1.0"?><api><query><pages><page pageid="19189459" ns="0" title="Wuala"><revisions><rev xml:space="preserve">{{Infobox Software
+| name                   = Wuala
+| logo                   = [[File:Wuala logo.svg|200px]]
+| screenshot             = 
+| caption                = 
+| author                 = Dominik Grolimund, Luzius Meisser
+| developer              = LaCie Inc., Switzerland
+| released               = 14 August 2008
+| latest release version = Hirslanden
+| latest release date    = {{release date|2011|10|04}}
+| latest preview version =
+| latest preview date    =
+| operating system       = MicrosoftÂ WindowsÂ [[Windows XP|XP]], [[Windows Vista|Vista]] or [[Windows 7|7]], [[Linux]], [[Mac OS X]] 10.4 and greater
+| platform               = [[Java (software platform)|Java]]
+| language               = [[English language|English]], [[German language|German]], [[Portuguese language|Portuguese]], [[French language|French]]
+| status                 = Active, Public Beta
+| genre                  = [[Online storage|secure online storage]]
+| license                = Proprietary
+| website                = [http://www.wuala.com http://www.wuala.com]
+}}
+'''Wuala''' ({{Pron-en|wÉËËlÉË}} â a [[Word play|play on the word]] [[wiktionary:voilÃ |voilÃ ]]) is a secure [[online storage]], [[file synchronization]], versioning and [[backup]], service, originally developed and run by CaleidoÂ Inc.,&lt;ref&gt;Wuala | FAQ | General Questions | [http://www.wuala.com/en/support/faq/c/1#id000114 Who is behind Wuala?]&lt;/ref&gt; which is now part of [[LaCie]]. Service is a combination of:
+* data centres that are provided by Wuala in multiple European countries (France, Germany, Switzerland)&lt;ref&gt;Wuala | [http://www.wuala.com/en/learn/technology How it Works]&lt;/ref&gt;
+* the ''WualaÂ cloud'' â distributed data storage that is provided by users who trade storage. This feature has been dropped.
+
+==History==
+Most research and development occurred at the [[ETH Zurich|Swiss Federal Institute of Technology]] (ETH) in [[ZÃ¼rich]].
+
+[[File:Wuala logo.png|thumb|Old logo for Wuala]]
+14 August 2008: an &quot;open beta&quot;-java-applet, available from the website, could be run from a [[web browser]].
+
+19 September 2008: the Wuala Webstart&lt;ref&gt;[http://sourceforge.net/projects/wualawebstart/ Wuala Webstart | Download Wuala Webstart software for free at SourceForge.net]&lt;/ref&gt; project was registered on SourceForge.net.&lt;ref&gt;[http://wualawebstart.sourceforge.net/ SourceForge.net: Wuala Webstart - Project Web Hosting - Open Source Software]&lt;/ref&gt;
+
+26 October 2008: an [[Alpha release]] [[REST]] API, at a very early stage of development, supported [[HTTP#Request methods|HTTP GET]] requests for content that was either public, or shared through a keyed hyperlink.&lt;ref&gt;[http://www.wuala.com/en/api Wuala Rest API | Wuala API (Alpha)]&lt;/ref&gt;
+
+16 December 2008: the Uniform Resource Locator changed from http://wua.la/ to http://www.wuala.com/ and files that were public, or shared through a keyed hyperlink, were made accessible through web browsers.&lt;ref&gt;WualaÂ Blog | [http://www.wuala.com/blog/2008/12/jingle-bell-rock.html Jingle Bell Rock]&lt;/ref&gt;
+
+19 March 2009: [[LaCie]] announced a merger with Caleido AG.&lt;ref&gt;[http://www.lacie.com/us/company/news/news.htm?id=10468 LaCie and Wuala Merge to Create a Cloud of Storage Devices]&lt;/ref&gt;&lt;ref&gt;Wuala | FAQ | [http://www.wuala.com/en/support/faq/c/27 Wuala and LaCie]&lt;/ref&gt; Wuala describe the merger as between Wuala and LaCie&lt;ref&gt;[http://www.wuala.com/en/support/faq/c/1#id000114 Who is behind Wuala?]&lt;/ref&gt; (not Caleido AG and LaCie).
+
+5 January 2010: post-merger announcement of the first joint products.&lt;ref&gt;[http://www.wuala.com/blog/2010/01/introducing-lacie-cookey-and-lacie.html Introducing: LaCie CooKey and LaCie WhizKey with Wuala Inside]&lt;/ref&gt;&lt;ref&gt;[http://www.lacie.com/us/company/news/news.htm?id=10534 LaCie Unveils New USB &quot;Keys&quot; with Wuala Online Storage Inside]&lt;/ref&gt;
+
+23 May 2011: all pro features - backup, sync, file versioning and time travel - are available for everyone at no cost&lt;ref&gt;[http://www.wuala.com/blog/2011/05/hottingen-new-style-full-feature-set.html Hottingen: New Style &amp; Full-Feature Set]&lt;/ref&gt;
+
+28 September 2011: we are discontinuing the &quot;trade storage&quot; feature. &lt;ref&gt;[https://forum.wuala.com/viewtopic.php?f=39&amp;t=2231 Wuala dropping p2p trading]&lt;/ref&gt;
+
+==Features==
+Any registered user can:
+* keep files private
+* share files with other registered users
+* share files with unregistered users, through a keyed [[hyperlink]]
+* publish files
+* [[backup]]
+* [[file synchronization]]
+* file versioning.
+
+Registered and unregistered users can:
+* receive [[streaming media]].&lt;ref&gt;Wuala | FAQ | Files and Folders | [http://www.wuala.com/en/support/faq/c/6#id000623 How do I stream my files?]&lt;/ref&gt;
+
+When a user adds a file to Wuala, or saves changes to a file that is served by Wuala, the user's local copy of file is:
+* first encrypted
+* then chunked into redundant fragments using [[Reed-Solomon error correction]] codes.
+* The fragments are then uploaded to the data centers
+
+==Storage==
+Users of Wuala alone start with 2 GB of storage for free.
+
+Users of joint products may start with greater amounts of storage for a limited period:
+* with a LaCie external [[hard disk drive]], 10 GB for one year
+* with a LaCie [[USB flash drive]], 4 GB for two years.&lt;ref&gt;comment from Wuala, 2010-12-03 at [http://www.wuala.com/blog/2010/01/introducing-lacie-cookey-and-lacie.html Introducing: LaCie CooKey and LaCie WhizKey with Wuala Inside]&lt;/ref&gt;
+
+Additional storage may be bought, gained through referral.&lt;ref&gt;Wuala | FAQ | [http://www.wuala.com/en/support/faq/c/30 Referral Program]&lt;/ref&gt;
+
+For bought storage: prices range from 19 EUR/year for 10 GB to 229 EUR/year for 250 GB.&lt;ref&gt;Wuala | [http://www.wuala.com/en/pricing/ Pricing]&lt;/ref&gt;
+
+===Trading===
+
+One of the distinguishing features of Wuala, the ability to trade local disk storage space against cloud storage is being discontinued.
+
+==User interfaces==
+===Desktop application===
+The user interface offers most of the features that are normally associated with a [[file manager]]. Additional features come through integration.
+
+A registered user can install the [[Java (software platform)|Java]]-based client application:
+* on any number of [[Linux]], [[Mac OS X]] and [[Microsoft Windows]] computers
+* with [[Filesystem in Userspace|FUSE]], [[Filesystem in Userspace|MacFUSE]] and [[Dokan (software)|Dokan]] respectively for file system integration.
+
+===Wuala Webstart and web browsers===
+Through a [[web browser]], on a computer that has Java installed:
+* the user can start/trust a [[Java applet]],&lt;ref&gt;Wuala | [http://www.wuala.com/launch/ Remote Access]&lt;/ref&gt; which downloads and runs a [[Java Classloader|class loader]] allowing fast start of the latest version of the Wuala application.&lt;ref&gt;[http://jazoon.com/portals/0/Content/ArchivWebsite/jazoon.com/jazoon09/en/conference/presentationdetails2bf2.html Wuala Webstart: Launching a Java Application directly from a Website], 2009-06-25 presentation to Jazoon09, the international conference on Java technology&lt;/ref&gt;
+
+If the computer is without Java, or if running of the class loader is prevented:
+* any folder that is public, or shared with a [[hyperlink|weblink]], can be browsed.
+
+===Non-graphical interfaces===
+Support for the following may be limited:
+* [[command-line interface]]
+* [[daemon (computer software)|daemon]]
+* [[headless system]].
+
+==Security==
+According to Wuala's FAQ,&lt;ref&gt;FAQ entry at http://www.wuala.com/en/support/faq/c/20#id002003&lt;/ref&gt; the software uses [[Advanced Encryption Standard|AES]]-128 for encryption and [[RSA (algorithm)|RSA]]-2048 for key exchange and signatures. Keys are organized in a key management scheme called [[Cryptree]].&lt;ref&gt;&quot;Cryptree: A Folder Tree Structure for Cryptographic File Systems&quot; by Meisser et al. http://www.dcg.ethz.ch/publications/srds06.pdf&lt;/ref&gt;
+
+According to the FAQ,&lt;ref&gt;FAQ entry at http://www.wuala.com/en/support/faq/c/20#id002001&lt;/ref&gt; Wuala employs full [[client-side encryption]]. All files and their metadata get encrypted before they are uploaded. The encryption key is stored such that no one, not even [[LaCie]] that operates the service, can decrypt the stored files. The disadvantage of this is that Wuala has no password recovery and all data processing needs to be done in the client (for example creating a search index). The advantage is significantly improved privacy.
+
+Since the source code to Wuala has not been released, it is difficult to ensure that the software does what it states it does (including proper [[Client-Side Encryption|client-side encryption]]).  Also, updates are pushed automatically to the client machine.  These facts mean that users of Wuala are not safe from possible [[Backdoor (computing)|backdoors]] in [[Computer programs|code]].
+
+==Reviews==
+* 2007-10-18: [http://news.cnet.com/8301-17939_109-9800042-2.html Unlimited online storage for free, almost: Wuala | Webware - CNET]
+* 2008-05-22: [http://www.linuxjournal.com/content/online-storage-wuala Online Storage with Wuala | Linux Journal]
+* 2008-08-14: [http://www.pcmag.com/article2/0,2817,2328036,00.asp Wuala Makes Online Storage Social | News &amp; Opinion  | PCMag.com]
+* 2008-08-14: [http://www.downloadsquad.com/2008/08/14/wuala-p2p-online-storage-service-goes-live Wuala P2P online storage service goes live] ([[Download Squad]])
+* 2008-07-18: [http://www.techcrunch.com/2008/07/18/you-have-three-days-to-check-out-wualas-social-grid-storage You Have Three Days To Check Out Wuala's 'Social Grid' Storage] ([[TechCrunch]])
+
+==Notes and references==
+{{reflist}}
+
+==External links==
+* {{official website|http://www.wuala.com/}}
+* [http://bugs.wuala.com/changelog_page.php Wuala - Change Log]
+* [http://bugs.wuala.com/roadmap_page.php Wuala - Roadmap]
+* YouTube | Google Tech Talks | [http://www.youtube.com/watch?v=3xKZ4KGkQY8 Wuala - a distributed file system] (2007-10-30)
+
+==See also==
+* [[List of online backup services]]
+* [[Comparison of online backup services]]
+
+[[Category:Distributed data storage systems]]
+[[Category:Distributed file systems]]
+[[Category:File hosting]]
+[[Category:File sharing services]]
+
+[[de:Wuala]]
+[[es:Wuala]]
+[[fa:ÙØ¦Ø§ÙØ§]]
+[[fr:Wuala]]
+[[ja:Wuala]]
+[[pt:Wuala]]
+[[ru:Wuala]]
+[[uk:Wuala]]</rev></revisions></page></pages></query></api>

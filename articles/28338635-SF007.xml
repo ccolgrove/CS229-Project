@@ -1,0 +1,210 @@
+<?xml version="1.0"?><api><query><pages><page pageid="28338635" ns="0" title="Command-line interface"><revisions><rev xml:space="preserve">[[File:Linux command-line. Bash. GNOME Terminal. screenshot.png|thumb|300px|Screenshot of a sample [[Bash (Unix shell)|Bash]] session. [[GNOME Terminal|GNOME Terminal 3]], [[Fedora 15]]]]
+[[File:bash screenshot.png|thumb|300px|Screenshot of a sample [[Bash (Unix shell)|Bash]] session, taken on an old release of [[Gentoo Linux]].]]
+[[File:Apple Unix with Netscape.jpg|thumb|300px|Screenshot of [[Apple Computer]]'s CommandShell in [[A/UX]] 3.0.1.]]
+[[File:Windows PowerShell 1.0 PD.png|thumb|300px|Screenshot of [[Windows PowerShell]] 1.0, running under [[Windows Vista]]]]
+[[File:Command prompt on windows vista.png|thumb|300px|The [[cmd.exe]] command-line interface in [[Windows 7]]]]
+[[File:Mac OS X Terminal.png|thumb|300px|The Mac OS X Terminal]]
+
+A '''command-line interface (CLI)''' is a mechanism for interacting with a computer [[operating system]] or [[software]] by typing commands to perform specific tasks.  This text-only interface contrasts with the use of a [[mouse (computing)|mouse pointer]] with a [[graphical user interface]] (GUI) to click on options, or menus on a [[Text-based user interface|text user interface]] (TUI) to select options.
+This method of instructing a computer to perform a given task is referred to as &quot;entering&quot; a command: the system waits for the user to conclude the submitting of the text command by pressing the &quot;Enter&quot; key (a descendant of the &quot;carriage return&quot; key of a typewriter keyboard). A command-line interpreter then receives, [[Parsing|parses]], and executes the requested user  command. The command-line interpreter may be run in a [[Computer terminal#Text terminals|text terminal]] or in a [[terminal emulator]] window as a remote shell client such as [[PuTTY]]. Upon completion, the command usually returns output to the user in the form of text lines on the CLI. This output may be an answer if the command was a question, or otherwise a summary of the operation.
+
+The concept of the CLI originated when [[teleprinter|teletypewriter]] machines (TTY) were connected to computers in the 1950s, and offered results on demand, compared to [[batch processing|batch]] oriented mechanical [[punched card]] input technology. Dedicated text-based [[cathode ray tube|CRT]] terminals followed, with faster interaction and more information visible at one time, then [[computer terminal|graphical terminals]] enriched the visual display of information. Currently personal computers encapsulate all three functions (batch processing, CLI, GUI) in software.  
+
+The CLI continues to [[co-evolve]] with GUIs like those provided by [[Microsoft Windows]], [[Mac OS]] and the [[X Window System]].  In some applications, such as [[MATLAB]], [[AutoCAD]] or [[Eagle (program)|EAGLE]], a CLI is integrated with the GUI, with some benefits of both.
+
+==Usage==
+A CLI is used whenever a large vocabulary of commands or queries, coupled with a wide (or arbitrary) range of options, can be entered more rapidly as text than with a pure GUI. This is typically the case with operating system command [[Shell (computing)|shell]]s. CLIs are also used by systems with insufficient resources to support a graphical user interface.  Some computer language systems (such as [[Python (programming language)|Python]], [[Forth (programming language)|Forth]], [[LISP]] and many dialects of [[BASIC]]) provide an interactive command-line mode to allow for experimentation.
+
+CLIs are often used by programmers and system administrators, in engineering and scientific environments, and by technically advanced personal computer users. CLIs are also popular among people with visual disability, since the commands and feedbacks can be displayed using [[Refreshable Braille display]]s.   
+
+A program that implements such a text interface is often called a command-line interpreter, command processor or [[shell (computing)|shell]], whereby the term shell, often used to describe a command-line interpreter, can be in principle any program that constitutes the user-interface, including fully graphically oriented ones&amp;mdash;for example, the default Windows GUI is created by a shell program named EXPLORER.EXE&lt;!-- Not to be mixed up with Internet Explorer --&gt;, as defined in the SHELL=EXPLORER.EXE line in the WIN.INI configuration file.
+Examples of command-line interpreters include the various [[Unix shell]]s (sh, ksh, csh, tcsh, bash, etc.), the historical [[CP/M]] CCP, and [[DOS|MS-DOS/IBM-DOS/DR-DOS]]'s [[COMMAND.COM]], as well as the [[OS/2]] and the Windows [[CMD.EXE]] programs, the latter groups being based heavily on [[Digital Equipment Corporation|DEC's]] [[RSX-11|RSX]] and [[RSTS/E|RSTS]] CLIs. Under most operating systems, it is possible to replace the default shell program by more specialized or powerful alternatives; some widespread examples include [[4DOS]] for DOS, [[4OS2]] for OS/2, and [[4NT]] or [[Take Command (command line interpreter)|Take Command]] for Windows.
+
+In November 2006, [[Microsoft]] released version 1.0 of [[Windows PowerShell]] (formerly codenamed ''Monad''), which combined features of traditional Unix shells with their object-oriented [[.NET Framework]]. [[MinGW]] and [[Cygwin]] are [[open source|open-source]] packages for Windows that offer a Unix-like CLI. Microsoft provides [[MKS Inc.]]'s [[Korn shell|ksh]] implementation ''MKS Korn shell'' for Windows through their [[Microsoft Windows Services for UNIX|Services for UNIX]] add-on.
+
+The latest versions of the [[Macintosh]] operating system are based on a variation of Unix called [[Darwin (operating system)|Darwin]]. On these computers, users can access a Unix-like command-line interface called [[Apple Terminal|Terminal]] found in the Applications Utilities folder. (This terminal uses [[Bash (Unix shell)|bash]] by default.)
+[[File:Matlab7.4.png|right|thumb|300px|Screenshot of the [[MATLAB]] 7.4 command-line interface and GUI.]]
+Some applications provide both a CLI and a GUI. In some cases, the GUI is a wrapper around a CLI application; other times, there is a CLI to control a GUI application. The engineering/scientific numerical computation package [[MATLAB]] provides no GUI for some calculations, but the CLI can handle any calculation. The three-dimensional-modelling program [[Rhinoceros 3D]] &lt;!-- This should be moved to [[Rhinoceros 3D]] page if it's important: (used to design the cases of most cell phones, as well as thousands of other industrial products) --&gt; provides a CLI as well as a distinct scripting language. In some computing environments, such as the [[Oberon operating system|Oberon]] or [[Smalltalk]] user interface, most of the text which appears on the screen may be used for giving commands.
+
+==Anatomy of a shell CLI==
+A CLI can generally be considered as consisting of [[syntax]] and [[semantics]]. The ''syntax'' is the grammar that all commands must follow. In the case of [[operating system]]s (OS), [[MS-DOS]] and [[Unix]] each define their own set of rules that all commands must follow. In the case of [[embedded systems]], each vendor, such as [[Nortel]], [[Juniper Networks]] or [[Cisco Systems]], defines their own proprietary set of rules that all commands within their CLI conform to. These rules also dictate how a user navigates through the system of [[Command (computing)|command]]s.  The ''semantics'' define what sort of operations are possible, on what sort of data these operations can be performed, and how the grammar represents these operations and dataâthe symbolic meaning in the syntax.
+
+Two different CLIs may agree on either syntax or semantics, but it is only when they agree on both that they can be considered sufficiently similar to allow users to use both CLIs without needing to learn anything, as well as to enable re-use of scripts.
+
+A simple CLI will display a prompt, accept a &quot;command line&quot; typed by the user terminated by the [[Enter key]], then execute the specified command and provide textual display of results or error messages.  Advanced CLIs will validate, interpret and parameter-expand the command line before executing the specified command, and optionally capture or redirect its output.
+
+Unlike a button or menu item in a GUI, a command line is typically self-documenting, stating exactly what the user wants done.  In addition, command lines usually include many [[Default (computer science)|defaults]] that can be changed to customize the results.  Useful command lines can be saved by assigning a [[character string]] or [[Alias (command)|alias]] to represent the full command, or several commands can be grouped to perform a more complex sequence &amp;mdash; for instance, compile the program, install it, and run it &amp;mdash; creating a single entity, called a command procedure or script which itself can be treated as a command. These advantages mean that a user must figure out a complex command or series of commands only once, because they can be saved, to be used again. 
+
+The commands given to a CLI shell are often in one of the following forms:
+
+*''doSomething how toFiles''
+*''doSomething how sourceFile destinationFile''
+*''doSomething how &lt; inputFile &gt; outputFile''
+*''doSomething how | doSomething how | do Something how &gt; outputFile''
+
+where ''doSomething'' is, in effect, a [[verb]], ''how'' an [[adverb]] (for example, should the command be executed &quot;verbosely&quot; or &quot;quietly&quot;) and ''toFiles'' an object or objects (typically one or more files) on which the command should act. The '&gt;' in the third example is a [[redirection operator]], telling the command-line interpreter to send the output of the command not to the screen but to the file named on the right of the '&gt;'. This will overwrite the file. Using '&gt;&gt;' will redirect the output and append it to the file. Another redirection operator is the [[vertical bar]] ('|'), which creates a [[pipeline (Unix)|pipeline]] where the output of one command becomes the input to the next command.
+
+=== CLI and resource protection ===
+&lt;!-- Scope: Is this section really relevant?  The same file system resource protection applies to GUI applications and even system programs, such as drivers, running in the background.  Perhaps this discussion would be better included in the ''File System'' article.  The idea that some CLIs allow any command at any time and others are &quot;stateful&quot; is relevant, but the rest is questionable. ~~~~ --&gt;
+&lt;!-- sorry, this section is awful. It's better now, and I'll find cites later. --Lexein --&gt;
+In some CLIs, the commands issued are not coupled to any conceptual place within a command hierarchy. A user can specify relative or absolute [[Path (computing)|paths]] to any command or data. Examples of this include DOS, OS/2, Windows, and UNIX, which provide forms of a [[chdir|change directory]] command which allows access to any directory in the system.  In some systems, protection of resources is provided by a system of resource ownership by privileged groups, and password-protected user accounts which are members of specific groups.  MS-DOS/PC-DOS provides no such resource protection, nor do versions of Windows prior to the Windows NT family.  (Both of these were designed as single-user systems, where it was assumed that the owner would simply not allow people that she/he did not fully trust to have physical access to the computer at all.  UNIX, by contrast, originated as a time-sharing system in corporate and university environments. Similarly, [[Concurrent CP/M]], [[Concurrent DOS]], [[Multiuser DOS]], [[REAL/32]]&lt;!-- all used and designed for time-sharing and industrial applications --&gt; and the members of the DR-DOS family offer various user- as well as file/directory-oriented protection schemes as well.)
+
+Other CLIs (such as those in network routers) limit the set of commands that a user can perform to a subset, determined by location within a command hierarchy, grouped by association with security, system, interface, etc.  The location within this hierarchy and the options available are often referred to as a mode. In these systems the user might traverse through a series of sub-hierarchies, each with their own subset of commands. For example, if the CLI had two modes called ''interface'' and ''system'', the user would enter the word 'interface' at the command prompt and then enter an interface mode, where a certain subset of commands and data are available. At this point system commands are not accessible and would not be accessible until the user explicitly exits the interface mode and enters the system mode.
+
+===Command prompt===&lt;!-- This section is linked from [[Z shell]], [[Prompt]]and [[Abort, Retry, Fail]] --&gt;
+A command prompt (or just ''prompt'') is a sequence of (one or more) characters used in a command-line interface to indicate readiness to accept commands.  Its intent is to literally [[Wiktionary:prompt|prompt]] the user to take action. A prompt usually ends with one of the characters $, %, #, :, &gt; and often includes other information, such as the path of the current [[working directory]].
+
+On many [[Unix]] system and derivative systems, it is common for the prompt to end in a $ or % character if the user is a normal user, but in a # character if the user is a [[superuser]] (&quot;root&quot; in Unix terminology).
+
+It is common for prompts to be modifiable by the user. Depending on the environment, they may include colors, special characters, and other elements like variables and functions for the current time, user, shell number or working directory, in order, for instance, to make the prompt more informative or visually pleasing, to distinguish sessions on various machines, or to indicate the current level of nesting of commands. On some systems, special tokens in the definition of the prompt can be used to cause external programs to be called by the command-line interpreter while displaying the prompt.
+
+In DOS's COMMAND.COM and in the Windows NT's command-line interpreter [[cmd.exe]] the prompt is modifiable by issuing a &lt;code&gt;prompt&lt;/code&gt; command or by directly changing the value of the corresponding &lt;code&gt;%PROMPT%&lt;/code&gt; [[environment variable]]. The default of most modern systems, the &lt;code&gt;C:\&gt;&lt;/code&gt; style is obtained, for instance, with &quot;&lt;code&gt;prompt $P$G&lt;/code&gt;&quot;. The default of older DOS systems, &lt;code&gt;C&gt;&lt;/code&gt; is obtained by just &quot;&lt;code&gt;prompt&lt;/code&gt;&quot;, although on some systems this produces the newer &lt;code&gt;C:\&gt;&lt;/code&gt; style, unless used on floppy drives A: or B:; on those systems &quot;&lt;code&gt;prompt $N$G&lt;/code&gt;&quot; can be used to override the automatic default and explicitly switch to the older style.
+
+On many Unix systems, the &lt;code&gt;$PS1&lt;/code&gt; variable can be used, although other variables also may have an impact on the prompt (depending on what [[Unix shell|shell]] is being used). In the [[Bash (Unix shell)|bash]] shell, a prompt of the form
+:&lt;code&gt;[time] user@host: work_dir $&lt;/code&gt;
+could be set by issuing the command
+:&lt;code&gt;export PS1='[\t] \u@\H: \W $'&lt;/code&gt;
+
+In [[zsh]] the &lt;code&gt;$RPROMPT&lt;/code&gt; variable controls an optional &quot;prompt&quot; on the right hand side of the display. It is not a real prompt in that the location of text entry does not change. It is used to display information on the same line as the prompt, but right justified.
+
+In [[RISC OS]], the command prompt is a '&lt;code&gt;*&lt;/code&gt;' symbol, and thus (OS)CLI commands are often referred to as &quot;star commands&quot;.&lt;ref&gt;RISC OS 3 User Guide, Part 3: Outside the desktop (page 125) Published by Acorn Computers Limited, ISBN1 85250 124 2, Edition 2 Part number 0496,075 Issue 1 March 1992&lt;/ref&gt; It is also possible to access the same commands from other command lines (such as the [[BBC BASIC]] command line), by preceding the command with a '&lt;code&gt;*&lt;/code&gt;'.
+
+===Arguments===
+A '''command-line argument''' or '''parameter''' is an [[Parameter (computer science)|argument]] sent to a program being called. In principle a program can take many command-line arguments, the meaning and importance of which depend entirely upon the program.
+
+When a command processor is active a program is typically invoked by typing its name followed by command-line arguments (if any). For example, in [[Unix]] and [[Unix-like]] environments, an example of a command-line argument is:
+
+&lt;source lang=&quot;bash&quot;&gt;
+rm file.s
+&lt;/source&gt;
+
+&quot;file.s&quot; is a command-line argument which tells the program [[rm (Unix)|rm]] to remove the file &quot;file.s&quot;.
+
+Programming languages such as [[C (programming language)|C]], [[C++]] and [[Java (programming language)|Java]] allow a program to interpret the command-line arguments by handling them as string parameters in the [[Main function (programming)|main function]].
+
+===={{anchor|SwitChar}}Command-line option====
+&lt;!-- This section is linked from several places inside or outside this article, preferable by &quot;#SwitChar&quot;. Do not remove or rename this section heading without also updating the links. --&gt;
+A '''command-line option''' or simply '''option''' (also known as a '''flag''' or '''switch''') modifies the operation of a command; the effect is determined by the command's program. Options follow the command name on the command line, separated by spaces. A space before the first option is not always required.
+
+For example, in the [[OpenVMS]] operating system, the command ''directory'' is used to list the [[computer file|file]]s inside a [[directory (file systems)|directory]].  By default&amp;mdash;that is, when the user simply types ''directory''&amp;mdash;it will list only the names of the files.  By appending the ''/owner'' option (to form the command ''directory/owner''), the user can instruct the ''directory'' command to also display the ownership of the files.
+
+The format of options varies widely between operating systems. In most cases the syntax is by convention rather than an operating system requirement; the entire command line is simply a string passed to a program, which can process it in any way the programmer wants.
+
+Sometimes different programs use different syntax in the same operating system. For example:
+* Options may be indicated by &lt;tt&gt;-&lt;/tt&gt;, &lt;tt&gt;/&lt;/tt&gt;, or either.
+* They may or may not be [[case-sensitive]]
+* Sometimes options and their arguments are run together, sometimes separated by whitespace, and sometimes by a character, typically &lt;tt&gt;:&lt;/tt&gt; or &lt;tt&gt;=&lt;/tt&gt;. Thus &quot;Prog -fFilename&quot;, &quot;Prog -f Filename&quot;, &quot;Prog -f:Filename&quot;, &quot;Prog -f=Filename&quot;.
+* Some programs allow single-character options to be combined; others do not. The switch &quot;-fA&quot; may mean the same as &quot;-f -A&quot;, or it may be incorrect, or it may even be a valid but different parameter.
+
+In [[Unix-like]] systems, the ASCII [[hyphenâminus]] is commonly used to specify options. The character is usually followed by one or more letters. An argument that is a single hyphenâminus by itself without any letters usually specifies that a program should handle data coming from the [[standard input]] or send data to the [[standard output]]. Two hyphenâminus characters (&amp;nbsp;--&amp;nbsp;) are used on some programs to specify &quot;[[long option]]s&quot; where more descriptive option names are used. This is a common feature of [[GNU]] software.
+
+In [[DOS]], [[OS/2]] and [[Microsoft Windows|Windows]] the forward slash ('/') is more prevalent, although the hyphenâminus is also sometimes used there. In many versions of DOS (MS-DOS/PC-DOS 2.xx and higher, all versions of DR-DOS since 5.0, as well as in [[PTS-DOS]] and [[FreeDOS]]) the current switch character to be used is defined by a value returned from a system call (INT&amp;nbsp;21/AH=37h). The default character returned by this API is '/', but can be changed to a hyphen-minus on all above-mentioned systems (except for MS-DOS/PC-DOS 5.0 and higher). In some of these systems (MS-DOS/PC-DOS 2.xx/3.xx, DR-DOS 7.02 and higher, and FreeDOS), the setting can not only be controlled by programs, but also pre-configured by a SWITCHAR directive in CONFIG.SYS. While applications should retrieve this setting before parsing command line arguments, many existing programs don't adhere to this standard and are hardwired to use '/' only. Under DR-DOS, if the setting has been changed from '/', the first directory separator '\' in the display of the PROMPT parameter $G will change to a forward slash '/' (also a valid directory separator in DOS, OS/2 and Windows) as a visual clue to indicate the change. Some command-line interpreters (including newer versions of DR-DOS COMMAND.COM and 4DOS) also provide pseudo-environment variables named %/% or %SWITCHAR% to allow portable batchjobs to be written.
+
+It is impossible to know what arguments a program can recognise, and what syntax to use without consulting program documentation. It is usual for a program to display a brief summary of its parameters when invoked with a command-line which is typically one of: no parameters; &lt;tt&gt;?&lt;/tt&gt;; &lt;tt&gt;-?&lt;/tt&gt;; &lt;tt&gt;-h&lt;/tt&gt;; &lt;tt&gt;/?&lt;/tt&gt;; &lt;tt&gt;/h&lt;/tt&gt;; &lt;tt&gt;-help&lt;/tt&gt;; or &lt;tt&gt;--help&lt;/tt&gt;. Entering a program name without parameters in the hope that it will display parameters can be hazardous, as some programs and scripts execute without further ado.
+
+===The space character===
+In many areas of computing, but particularly in the command line, the [[space character]] can cause problems as it has two distinct and incompatible functions: as part of a command or parameter, or as a parameter or name [[Delimiter|separator]]. Ambiguity can be prevented either by prohibiting embedded spaces in file- and directory names in the first place (for example, by substituting them with [[underscores]] '_'), or, if supported by the command-line interpreter and the programs taking these parameters as arguments, by enclosing a name with embedded spaces between quote characters.  For example&lt;br&gt;
+:&lt;code&gt;Long path/Long program name Parameter one Parameter two&lt;/code&gt; ...
+is ambiguous (is &quot;program name&quot; part of the program name, or two parameters?); however
+:&lt;code&gt;Long_path/Long_program_name Parameter_one Parameter_two&lt;/code&gt; ...,
+:&lt;code&gt;LongPath/LongProgramName ParameterOne ParameterTwo&lt;/code&gt; ...,
+and&lt;br&gt;
+:&lt;code&gt;&quot;Long path/Long program name&quot; &quot;Parameter one&quot; &quot;Parameter two&quot;&lt;/code&gt; ...
+are not ambiguous. [[Unix]]-based operating systems minimize the use of embedded spaces to minimize the need for quotes. In [[Microsoft Windows]], one often has to use quotes because embedded spaces (such as in directory names) are common.
+
+==Command-line interpreter==
+&lt;!-- Deleted image removed: [[File:UKNCRT-11.png|thumb|RT-11 running on [[UKNC]]]] --&gt;
+
+A '''command-line interpreter''' (also called a '''command line [[Shell (computing)|shell]]''', '''command language interpreter''', or abbreviated as '''CLI''') is a [[computer program]] that reads lines of text entered by a user and interprets them in the context of a given [[operating system]] or [[programming language]].
+
+Command-line interpreters allow users to issue various commands in a very efficient (and often terse) way. This requires the user to know the names of the commands and their parameters, and the syntax of the [[programming language|language]] that is interpreted.
+
+===Early history===
+From the 1960s onwards, user interaction with computers was primarily by means of command-line interfaces, initially on machines like the [[Teletype Corporation|Teletype]] [[ASR-33 Teletype|Model 33 ASR]], but then on early [[CRT]]-based [[computer terminals]] such as the [[VT52]].
+
+All of these devices were purely text based, with no ability to display graphic or pictures.&lt;ref&gt;With the exception of [[ASCII art]]&lt;/ref&gt; For business [[Application software|application programs]], text-based [[menu (computing)|menus]] were used, but for more general interaction the command line was the interface.
+
+From the early 1970s the [[Unix]] operating system on [[minicomputers]] pioneered the concept of a powerful command-line environment, which Unix called the &quot;shell&quot;, with the ability to &quot;[[Pipeline (Unix)|pipe]]&quot; the output of one command in as input to another, and to save and re-run strings of commands as &quot;[[shell scripts]]&quot; which acted like custom commands.
+
+The command-line was also the main interface for the early home computers such as the [[Commodore PET]], [[Apple II]] and [[BBC Micro]] - almost always in the form of a [[BASIC]] interpreter. When more powerful business orientated microcomputers arrived with [[CP/M]] and later [[MSDOS]] computers such as the [[IBM PC]], the command-line began to borrow some of the syntax and features of the Unix shells such as [[globbing]] and [[Pipeline (Unix)|piping]] of output.
+The command-line was first seriously challenged by the new [[GUI]] approach in 1984 with the Apple [[Macintosh 128K]], but it took until 1990 and [[Windows 3.0]] before most users converted.
+
+While most computer users now use a GUI almost exclusively, more advanced users have access to powerful command-line environments:
+
+* MS Windows users have the classic [[cmd.exe]] &quot;DOS&quot;-like environment, but also the new [[PowerShell]] interfaces
+* Apple&lt;ref&gt;via ''Finder, Applications, Utilities, [[Terminal.app]]''&lt;/ref&gt; (Mac OS X) and Linux users have the classic Unix [[Bash (Unix shell)|bash]] shell
+* Routers from [[Cisco IOS|Cisco]]&lt;ref&gt;[http://www.cisco.com/en/US/docs/ios/12_0/configfun/configuration/guide/fcui.html#wp7687 ''&quot;The Cisco IOS command-line interface (CLI) is the primary user interface...&quot;'']&lt;/ref&gt; [[Juniper Networks]] &lt;ref&gt;[http://www.juniper.net/techpubs/software/junos/junos55/swconfig55-getting-started/html/cli-overview-getting-started.html ''&quot;...the software that you use whenever you access the router...&quot;'']&lt;/ref&gt; and many others are commonly configured from the command-line.
+
+==Scripting==
+Most command-line interpreters support [[script (computer programming)|scripting]], to various extents. (They are, after all, interpreters of an interpreted [[programming language]], albeit in many cases the language is unique to the particular command-line interpreter.) They will interpret scripts (variously termed [[shell script]]s or [[batch file]]s) written in the [[programming language|language]] that they interpret. Some command-line interpreters also incorporate the interpreter engines of other languages, such as [[REXX]], in addition to their own, allowing the executing of scripts, in those languages, directly within the command-line interpreter itself.
+
+Conversely, [[scripting programming language]]s, in particular those with an [[eval]] [[function (programming)|function]] (such as [[REXX]], [[Perl]], [[Python (programming language)|Python]], [[Ruby (programming language)|Ruby]] or [[Jython]]), can be used to implement command-line interpreters. For a few [[operating system]]s, most notably [[DOS]], such a command interpreter provides a more flexible command line interface than the one supplied. In other cases, such a command interpreter can present a highly customised user interface employing the user interface and input/output facilities of the language.
+
+==Quotes==
+{{quotation|Although most users think of the shell as an interactive command interpreter, it is really a programming language in which each statement runs a command. Because it must satisfy both the interactive and programming aspects of command execution, it is a strange language, shaped as much by history as by design.|[[Brian Kernighan]] &amp; [[Rob Pike]] &lt;ref&gt;Brian W. Kernighan and Rob Pike, &quot;The UNIX Programming Environment&quot;, ''Prentice-Hall'' (1984).&lt;/ref&gt;}}
+
+==See also==
+* [[Batch processing]]
+* [[Batch file]]
+* [[clig]] for [[tcl]]/[[C (programming language)|c]]
+* [[Comparison of computer shells]]
+* [[Console application]]
+* [[Data terminal|Text terminal]]
+* [[Graphical user interface#Comparison to other interfaces]]
+* [[Interpreter directive]]
+* [[In the Beginning... Was the Command Line]]
+* [[Natural user interface]]
+* [[Read-eval-print loop]]
+* [[Run command]] in Microsoft Windows
+* [[Scripting language]]
+* [[Shell (computing)]]
+* [[Shell script]]
+* [[Terminal emulator]]
+
+==References==
+{{reflist}}
+
+==External links==
+*[http://books.google.com/books?id=OmnF5MGRNn8C&amp;dq=in+the+beginning+comand+line&amp;pg=PP1&amp;ots=XTN1PFZuJw&amp;sig=S-k5FfNtMXcbbqjqUiqSaMyII8Q&amp;hl=en In the Beginning... Was the Command Line] &amp;mdash; Short book about CLIs by Neal Stephenson.
+*[http://www.patersontech.com/Dos/Softalk/Softalk.html The Roots of DOS] David Hunter, ''Softalk for the IBM Personal Computer'' March 1983. Archived at Patersontech.com since [http://web.archive.org/web/20001003150623/http://www.patersontech.com/Dos/Softalk/Softalk.html 2000].
+
+{{DEFAULTSORT:Command-Line Interface}}
+[[Category:User interfaces]]
+[[Category:User interface techniques]]
+[[Category:Software architecture]]
+[[Category:History of humanâcomputer interaction]]
+[[Category:Computing commands| ]]
+
+[[af:Bevellyn]]
+[[ar:ÙØ§Ø¬ÙØ© Ø³Ø·Ø± Ø§ÙØ£ÙØ§ÙØ±]]
+[[bg:ÐÐ½ÑÐµÑÑÐµÐ¹Ñ Ñ ÐºÐ¾Ð¼Ð°Ð½Ð´ÐµÐ½ ÑÐµÐ´]]
+[[ca:LÃ­nia d'ordres]]
+[[cs:PÅÃ­kazovÃ½ ÅÃ¡dek]]
+[[da:KommandolinjegrÃ¦nseflade]]
+[[de:Kommandozeile]]
+[[et:KÃ¤surida]]
+[[es:LÃ­nea de comandos]]
+[[fa:ÙØ§Ø³Ø· Ø®Ø· ÙØ±ÙØ§Ù]]
+[[fr:Interface en ligne de commande]]
+[[gl:LiÃ±a de comandos]]
+[[ko:ëªë ¹ ì¤ ì¸í°íì´ì¤]]
+[[id:Antarmuka baris perintah]]
+[[is:SkipanalÃ­nuviÃ°mÃ³t]]
+[[it:Interfaccia a riga di comando]]
+[[he:×××©×§ ×©××¨×ª ×¤×§×××]]
+[[kk:ÐÐ¾Ð¼Ð°Ð½Ð´Ð°Ð»ÑÒ Ð¶Ð¾Ð»]]
+[[hu:Parancssoros felhasznÃ¡lÃ³i felÃ¼let]]
+[[nl:Command-line-interface]]
+[[ja:ã­ã£ã©ã¯ã¿ã¦ã¼ã¶ã¤ã³ã¿ãã§ã¼ã¹]]
+[[no:Kommandolinje]]
+[[pl:Wiersz poleceÅ]]
+[[ro:CLI]]
+[[ru:ÐÐ½ÑÐµÑÑÐµÐ¹Ñ ÐºÐ¾Ð¼Ð°Ð½Ð´Ð½Ð¾Ð¹ ÑÑÑÐ¾ÐºÐ¸]]
+[[sk:PrÃ­kazovÃ½ riadok]]
+[[sl:Vmesnik z ukazno vrstico]]
+[[sr:ÐÐ½ÑÐµÑÑÐµÑÑ ÐºÐ¾Ð¼Ð°Ð½Ð´Ð½Ðµ Ð»Ð¸Ð½Ð¸ÑÐµ]]
+[[fi:KomentoliittymÃ¤]]
+[[sv:Kommandotolk]]
+[[tr:Komut satÄ±rÄ±]]
+[[uk:ÐÐ½ÑÐµÑÑÐµÐ¹Ñ ÐºÐ¾Ð¼Ð°Ð½Ð´Ð½Ð¾Ð³Ð¾ ÑÑÐ´ÐºÐ°]]
+[[zh:å½ä»¤è¡çé¢]]</rev></revisions></page></pages></query></api>

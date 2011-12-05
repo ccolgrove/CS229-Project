@@ -1,0 +1,130 @@
+<?xml version="1.0"?><api><query><pages><page pageid="478750" ns="0" title="ChucK"><revisions><rev xml:space="preserve">{{Other uses|Chuck (disambiguation)}}
+{{Infobox programming language
+| logo             = [[File:ChucK logo2.jpg|the ChucK Operator]]
+| paradigm         = [[Multi-paradigm programming language|Multi-paradigm]]
+| year             = 2003&lt;ref name=dean2009/&gt;
+| designer         = [[Ge Wang]] and [[Perry R. Cook]]&lt;ref name=dean2009&gt;{{cite book
+ | first=R. T. | last=Dean | year=2009
+ | title=The Oxford handbook of computer music
+ | series=Oxford Handbooks in Music Series
+ | publisher=Oxford University Press US
+ | isbn=0195331613 | page=57
+ | url=http://books.google.com/books?id=96ymxXy3wjMC&amp;pg=PA57
+}}&lt;/ref&gt;
+| typing           = [[strong typing|strong]]
+| operating_system = [[Cross-platform]]
+| license          = [[Mac OS X|Mac]], [[Linux]], [[Microsoft Windows|Windows]]: [[GNU General Public License]]&lt;br/&gt;
+[[iOS (Apple)|iOS]]: Closed Source (Not Public)
+| website          = http://chuck.cs.princeton.edu/
+}}
+
+'''ChucK''' is a concurrent, strongly timed audio [[programming language]] for real-time synthesis, composition, and performance,&lt;ref name=collins_rincon2007&gt;{{cite book
+ | author=Ge Wang
+ | editor=Collins, Nicholas; RincÃ³n, Julio d'Escrivan
+ | chapter=A history of programming and music
+ | title=The Cambridge companion to electronic music
+ | publisher=Cambridge University Press | year=2007
+ | isbn=0521868610 | page=69
+ | url=http://books.google.com/books?id=AJbdPZv1DjgC&amp;pg=PA69 }}&lt;/ref&gt; which runs on [[Mac&amp;nbsp;OS&amp;nbsp;X]], [[Linux]], [[Microsoft Windows]], and [[iOS (Apple)|iPhone/iPad]]. It is designed to favor readability and flexibility for the programmer over other considerations such as raw performance. It natively supports deterministic [[concurrency (computer science)|concurrency]] and multiple, simultaneous, dynamic control rates. Another key feature is the ability to add, remove, and modify code [[on the fly]], while the program is running, without stopping or restarting. It has a highly precise timing/concurrency model, allowing for arbitrarily fine granularity. It offers composers and researchers a powerful and flexible programming tool for building and experimenting with complex [[audio synthesis]] programs, and real-time interactive control.{{Citation needed|date=June 2011}}
+
+ChucK is distributed freely under the terms of the [[GNU General Public License]] on [[Mac OS X]], [[Linux]] and [[Microsoft Windows]]. On [[iOS (Apple)|iPhone/iPad]], ChiP (ChucK for iPhone) is distributed under a limited, closed source license, and is not currently licensed to the public. However, &quot;the core team would like to explores (sic) ways to open ChiP by creating a beneficial environment for everyone&quot;.&lt;ref&gt;{{cite web
+ | first=Ge | last=Wang | work=chuck-users mailing list
+ | title=ChucKian greetings and updates!
+ | publisher=Princeton University
+ | url=https://lists.cs.princeton.edu/pipermail/chuck-users/2008-December/003604.html
+ | accessdate=2011-05-24
+}}&lt;/ref&gt;
+
+== Language features ==
+The ChucK programming language is a loosely C-like object-oriented language, with [[strongly typed|strong static typing]].
+
+ChucK is distinguished by the following characteristics:&lt;ref&gt;{{cite journal|url=http://soundlab.cs.princeton.edu/publications/chuck_icmc2003.pdf|author=Wang, G. and P. Cook|year=2003|title=ChucK: A concurrent, on-the-fly audio programming language|work=Proceedings of the International Computer Music Conference}}&lt;/ref&gt;
+
+* Direct support for real-time [[Synthesizer|audio synthesis]]
+* A powerful and simple [[concurrent programming]] model
+* A unified timing mechanism for multi-rate event and control processing.
+* A language syntax that encourages left-to-right syntax and semantics within program statements.
+* Precision timing:  a strongly-timed sample-synchronous timing model.
+* Programs are dynamically compiled to ChucK [[virtual machine]] bytecode.
+* A runtime environment that supports [[Live coding|on-the-fly programming]].
+
+ChucK standard libraries provide:
+
+* [[MIDI]] input and output.
+* Real-time control via the [[Open Sound Control]] protocol.
+* [[Synthesis Toolkit]] unit generators.
+
+==Code example==
+The following is a simple ChucK program that generates sound and music:
+
+  &lt;font color=#339933&gt;// our signal graph (patch)&lt;/font&gt;
+  SinOsc s =&gt; JCRev r =&gt; dac;
+  &lt;font color=#339933&gt;// set gain&lt;/font&gt;
+  .2 =&gt; s.gain;
+  &lt;font color=#339933&gt;// set dry/wet mix&lt;/font&gt;
+  .1 =&gt; r.mix;
+  
+  &lt;font color=#339933&gt;// an array of pitch classes (in half steps)&lt;/font&gt;
+  [ 0, 2, 4, 7, 9, 11 ] @=&gt; &lt;font color=#0000ff&gt;int&lt;/font&gt; hi[];
+  
+  &lt;font color=#339933&gt;// infinite time loop&lt;/font&gt;
+  &lt;font color=#0000ff&gt;while&lt;/font&gt;( &lt;font color=#0000ff&gt;true&lt;/font&gt; )
+  {
+      &lt;font color=#339933&gt;// choose a note, shift registers, convert to frequency&lt;/font&gt;
+      Std.mtof( 45 + Std.rand2(0,3) * 12 +
+          hi[Std.rand2(0,hi.cap()-1)] ) =&gt; s.freq;
+  
+      &lt;font color=#339933&gt;// advance time by 120 ms&lt;/font&gt;
+      120::&lt;font color=#0000ff&gt;ms&lt;/font&gt; =&gt; &lt;font color=#0000ff&gt;now&lt;/font&gt;;
+  }
+
+== Uses ==
+ChucK has been used in performances by the [[Princeton Laptop Orchestra]] (PLOrk) and for developing [[Smule]] applications, including their [[ocarina]] emulator.&lt;ref&gt;{{cite web
+ | first=Peter | work=Kirn | date=July 22, 2009
+ | title=Interview: Smuleâs Ge Wang on iPhone Apps, Ocarinas, and Democratizing Music Tech
+ | work=Create Digital Music
+ | url=http://createdigitalmusic.com/2009/07/interview-smules-ge-wang-on-iphone-apps-ocarinas-and-democratizing-music-tech/
+ | accessdate=2011-05-24 }}&lt;/ref&gt; PLOrk organizers attribute some the uniqueness of their performances to the live coding they can perform with ChucK.&lt;Ref&gt;{{cite web|url=http://www.pcmag.com/article2/0,2817,2319579,00.asp|title=Laptop Orchestra Makes (Sound) Waves|publisher=[[PC Magazine]] | quote=The other thing that set PLOrk apart from the beginning was its use of a text-based program called ChucK, developed by a Princeton graduate student. ChucK allows the user to code quicklyâsimilar to live codingâand &quot;on the fly&quot; for a performance, allowing for the spontaneity and real-time interaction that is important in live music performance. &quot;ChucK is the only language that I know of that was designed from the outset to facilitate that,&quot; Trueman says. The program is also &quot;concurrent,&quot; meaning that it can handle many different processes going on at once. Its &quot;innate sense of time&quot; allows performers to communicate during live rehearsals and performances, he says, adding that many other laptop musicians probably use a program like Max/MSP (which PLOrk uses in addition to ChucK) or another widely available commercial program. Today some other laptop orchestrasâincluding the Stanford Laptop Orchestra (SLOrk), which was directly inspired by PLOrkâalso employ ChucK.}}&lt;/ref&gt;
+
+== See also ==
+{{Portal|Free software}}
+
+* [[Comparison of audio synthesis environments]]
+
+==References==
+&lt;references/&gt;
+
+==Further reading==
+{{Refbegin}}
+=== Literature by its authors ===
+* {{cite web|last1=Wang|first1=G.|first2=P.|last2=Cook|year=2007|title=The ChucK Manual|url=http://chuck.cs.princeton.edu/release/files/chuck_manual.pdf}}
+* {{cite journal|last1=Wang|first1=G.|first2=P.|last2=Cook|year=2003|title=ChucK: A concurrent, on-the-fly audio programming language|journal=Proceedings of the [[International Computer Music Conference]]|url=http://soundlab.cs.princeton.edu/publications/chuck_icmc2003.pdf}}
+* {{cite journal|last1=Wang|first1=G.|first2=P.|last2=Cook|year=2004|title=On-the-fly programming: Using code as an expressive musical instrument|journal=Proceedings of the International Conference on [[New Interfaces for Musical Expression]]|url=http://soundlab.cs.princeton.edu/publications/on-the-fly_nime2004.pdf}}
+* {{cite journal|last1=Wang|first1=G.|first2=P.|last2=Cook|year=2004|title=The Audicle: A context-sensitive, on-the-fly audio programming environ/mentality|journal=In Proceedings of the International Computer Music Conference|url=http://soundlab.cs.princeton.edu/publications/audicle_icmc2004.pdf}}
+* {{cite journal|last1=Wang|first1=G|first2=A.|last2=Misra|first3=A|last3=Kapur|frist4=P|last4=Cook|year=2005|title=Yeah ChucK it! =&gt; Dynamic, controllable, interface mapping|journal=Proceedings of the International Conference on New Interfaces for Musical Expression|url=http://soundlab.cs.princeton.edu/publications/chuck_nime2005.pdf}}
+* {{cite journal|last1=Wang|first1=G.|first2=P.|last2=Cook|first3=A|last3=Misra|year=2005|title=Designing and implementing the ChucK programming language|journal=Proceedings of the International Computer Music Conference|url=http://soundlab.cs.princeton.edu/publications/chuck_icmc2005.pdf}}
+* {{cite journal|last1=Wang|first1=G|first2=R|last2=Fiebrink|first3=P|last3=Cook|year=2007|title=Combining analysis and synthesis in the ChucK programming language|journal=Proceedings of the International Computer Music Conference|url=http://soundlab.cs.princeton.edu/publications/uana_icmc2007.pdf}}
+* {{cite book|editor=Nicholas Collins, Julio d'EscrivÃ¡n|title=The Cambridge companion to electronic music|year=2007|publisher=Cambridge University Press|isbn=9780521868617|page=69|author=Wang, G.|chapter=}}
+
+=== Seemingly independent coverage ===
+* Graham Morrison, (2009) ''Generate choons with Chuck''. Tired of the same old music in the charts, we create our own music from a series of pseudo random numbers. ''[[Linux Format]]'' issue [http://www.linuxformat.com/archives?issue=125 125]
+* Alan Blackwell and Nick Collins, ''[http://www.ppig.org/papers/17th-blackwell.pdf The Programming Language as a Musical Instrument]'' in P. Romero, J. Good, E. Acosta Chaparro &amp; S. Bryant (Eds). Proc. PPIG 17, pp. 120-130
+* {{cite book|editor=R. T. Dean|title=The Oxford Handbook of Computer Music|year=2009|publisher=Oxford University Press|isbn=9780195331615|pages=27 and 580|editor-link=Roger Dean (musician)}}
+
+{{Refend}}
+
+==External links==
+* [http://chuck.cs.princeton.edu/ ChucK] homepage
+* [http://www.dtic.upf.edu/~gcoleman/chuck/ Graham Coleman's ChucK page]
+
+{{DEFAULTSORT:Chuck}}
+[[Category:Audio programming languages]]
+[[Category:Free audio software]]
+[[Category:Electronic music]]
+[[Category:Software synthesizers]]
+[[Category:Cross-platform software]]
+[[Category:Audio software with JACK support]]
+
+[[de:ChucK (Programmiersprache)]]
+[[es:ChucK]]
+[[fr:ChucK]]</rev></revisions></page></pages></query></api>

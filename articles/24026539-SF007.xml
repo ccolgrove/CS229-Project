@@ -1,0 +1,76 @@
+<?xml version="1.0"?><api><query><redirects><r from="Kexts" to="Loadable kernel module" /></redirects><pages><page pageid="371658" ns="0" title="Loadable kernel module"><revisions><rev xml:space="preserve">{{refimprove|date=January 2011}}
+In [[computing]], a '''loadable kernel module''' (or '''LKM''') is an [[object file]] that contains code to extend the running [[kernel (computer science)|kernel]], or so-called ''base kernel'', of an [[operating system]].  Most current [[Unix-like]] systems, and [[Microsoft Windows]], support loadable kernel modules, although they might use a different name for them, such as '''kernel loadable module''' ('''kld''') in [[FreeBSD]] and '''kernel extension''' ('''kext''') in [[Mac OS X]]. They are also known as '''Kernel Loadable Modules''' (or '''KLM'''), and simply as '''Kernel Modules''' ('''KMOD'''). LKMs are typically used to add support for new [[hardware]] and/or [[filesystem]]s, or for adding [[system call]]s. When the functionality provided by an LKM is no longer required, it can be unloaded in order to free [[computer storage|memory]].
+
+== Description ==
+Without loadable kernel modules, an operating system would have to have all possible anticipated functionality already compiled directly into the base kernel. Much of that functionality would reside in memory without being used, wasting memory, and would require that users rebuild and [[booting|reboot]] the base kernel every time new functionality is desired. Most operating systems supporting loadable kernel modules will include modules to support most desired functionality.
+
+== Linux ==
+Loadable kernel modules in Linux are loaded by the &lt;tt&gt;[[modprobe]]&lt;/tt&gt; command.  They are located in &lt;tt&gt;/lib/modules&lt;/tt&gt; and they have had the extension &lt;tt&gt;.ko&lt;/tt&gt; (&quot;kernel object&quot;) since version 2.6.&lt;ref&gt;{{cite web|title=The Linux Kernel Module Programming Guide, section 2.2 &quot;Compiling Kernel Modules&quot;|url=http://tldp.org/LDP/lkmpg/2.6/html/x181.html|accessdate=2011-10-14}}&lt;/ref&gt; The &lt;tt&gt;[[lsmod]]&lt;/tt&gt; command lists the loaded kernel modules.
+
+=== License issues ===
+
+In the opinion of Linux maintainers, LKM are [[derived work]]s of the kernel. The Linux maintainers tolerate the distribution of [[Proprietary software|proprietary]] modules, but allow symbols to be marked as only available to [[GNU General Public License]] (GPL) modules.
+
+==== Tainting ====
+Loading a proprietary or non-GPL-compatible LKM will set a 'taint' flag&lt;ref&gt;{{cite web |date=2011-06-21|author=Linus Torvalds, et all |title=Documentation/oops-tracing.txt |publisher=kernel.org |url=http://repo.or.cz/w/linux-2.6.git/blob/HEAD:/Documentation/oops-tracing.txt#l222 |accessdate=2011-10-03 }}&lt;/ref&gt; in the running kernelâmeaning that any problems or [[Software bug|bugs]] experienced will be less likely to be investigated by the maintainers.&lt;ref&gt;{{cite web |date=2006-03-24 |author=Jonathan Corbet |title=Tainting from user space |publisher=LWN.net |url=https://lwn.net/Articles/184879/ |accessdate=2011-10-03 }}&lt;/ref&gt;&lt;ref&gt;{{cite web |date=2007-07-26 |title=Novell support documentation: Tainted kernel |url=http://www.novell.com/support/viewContent.do?externalId=3582750&amp;sliceId=1 |accessdate=2011-10-03 }}&lt;/ref&gt; LKMs effectively become part of the running kernel, so can corrupt kernel data structures and produce bugs that may not be able to be investigated if the module is indeed proprietary.
+
+==== Linuxant controversy ====
+In 2004, Linuxantâa consulting company that releases proprietary device drivers as loadable kernel modulesâattempted to bypass GPLONLY symbol restrictions by abusing a [[Null character|NULL terminator]] in their &lt;code&gt;MODULE_LICENSE&lt;/code&gt;:
+
+&lt;source lang=&quot;text&quot;&gt;
+MODULE_LICENSE(&quot;GPL\0for files in the \&quot;GPL\&quot; directory; for others, only LICENSE file applies&quot;);
+&lt;/source&gt;
+
+The string comparison code used by the kernel at the time tried to determine whether the module was GPLed stopped when it reached a null character (\0), so it would be fooled into thinking that the module was declaring its licence to be just &quot;GPL&quot;. The GPL directory referred to in the rest of the licence string was empty.&lt;ref&gt;[http://kerneltrap.org/node/2991 Linux: Abusing the MODULE_LICENSE Macro]&lt;/ref&gt;
+
+== FreeBSD ==
+Kernel modules for [[FreeBSD]] are stored within &lt;tt&gt;/boot/kernel/&lt;/tt&gt; for modules distributed with the [[OS]], or usually &lt;tt&gt;/boot/modules/&lt;/tt&gt; for modules installed from [[FreeBSD ports]] or [[FreeBSD ports#Packages|FreeBSD packages]], or for proprietary or otherwise binary-only modules.  FreeBSD kernel modules usually have the extension &lt;tt&gt;.kld&lt;/tt&gt;.  Once the machine has booted, they may be loaded with the &lt;tt&gt;kldload&lt;/tt&gt; command, unloaded with &lt;tt&gt;kldunload&lt;/tt&gt;, and listed with &lt;tt&gt;kldstat&lt;/tt&gt;.  Modules can also be loaded from the loader before the kernel starts, either automatically (through &lt;tt&gt;/boot/loader.conf&lt;/tt&gt;) or by hand.
+
+== Mac OS X ==
+Some loadable kernel modules in Mac OS X can be loaded automatically.  Loadable kernel modules can also be loaded by the &lt;tt&gt;kextload&lt;/tt&gt; command.  They can be listed by the &lt;tt&gt;kextstat&lt;/tt&gt; command.  Loadable kernel modules are located in [[application bundle]]s with the extension &lt;tt&gt;.kext&lt;/tt&gt;.  Modules supplied with the operating system are stored in the &lt;tt&gt;/System/Library/Extensions&lt;/tt&gt; directory; modules supplied by third parties are in various other directories.
+
+== Fragmentation penalty ==
+One minor criticism of preferring a modular kernel over a static kernel is the so-called ''[[Fragmentation (computer)|Fragmentation]] Penalty''.
+The ''base kernel'' is always unpacked into ''real'' contiguous [[Random-access memory|memory]] by its setup routines; so, the base kernel code is never fragmented.
+Once the system is in a state where modules may be insertedâfor example, once the [[filesystem]]s have been [[Mount (computing)|mount]]ed that contain the modulesâit is probable that any new kernel code insertion will cause the kernel to become fragmented, thereby introducing a minor performance penalty.{{fact|date=September 2007}}
+
+== Binary compatibility ==
+Linux does not provide a stable [[API]] or [[Application binary interface|ABI]] for kernel modules.  This means that there are differences in internal structure and function between different kernel versions, which can cause compatibility problems.  In an attempt to combat those problems, symbol versioning data is placed within the &lt;tt&gt;.modinfo&lt;/tt&gt; section of loadable [[Executable and Linkable Format|ELF]] modules.  This versioning information can be compared with that of the running kernel before loading a module; if the versions are incompatible, the module will not be loaded.
+
+Other operating systems, such as [[Solaris (operating system)|Solaris]], [[FreeBSD]], [[Mac OS X]], and [[Microsoft Windows|Windows]] keep the kernel [[API]] and [[Application binary interface|ABI]] relatively stable, thus avoiding this problem.  For example, [[FreeBSD]] kernel modules compiled against kernel version 6.0 will work without recompilation on any other FreeBSD 6.x version, e.g. 6.4.  However, they are not compatible with other major versions and must be recompiled for use with FreeBSD 7.x, as API and ABI compatibility is maintained only within a branch.
+
+== Security ==
+While loadable kernel modules are a convenient method of modifying the running kernel, this can be abused by an attacker on a compromised system to prevent detection of his [[Process (computing)|processes]] or [[Computer file|file]]s, allowing him to maintain control over the system.  Many [[rootkits]] make use of LKMs in this way. Note that modules do not help in any way in privilege elevation, as [[Root user|root]] access is required to load a LKM; they merely make it easier for the attacker to hide the break-in.{{fact|date=January 2011}}
+
+== See also ==
+* [[Device driver]]
+* [[lsmod]]
+* [[modprobe]]
+* [[NetWare Loadable Module]]
+
+== References ==
+{{Reflist}}
+
+== External links ==
+* [http://www.ibm.com/developerworks/linux/library/l-lkm/index.html?ca=dgr-lnxw07LinuxLKM&amp;S_TACT=105AGX59&amp;S_CMP=GR IBM DeveloperWorks in-depth article on LKM]
+* [http://www.kexts.com/ Online kext database for OSX / Hackintosh]
+* [http://en.tldp.org/LDP/lkmpg/index.html Ori Pomerantz, Linux Kernel Module Programming Guide]
+* [http://www.linux.org/docs/ldp/howto/Module-HOWTO/copyright.html Copyright Considerations With LKMs]{{dead link|date=October 2011}}
+* [http://developer.apple.com/mac/library/documentation/Darwin/Conceptual/KEXTConcept/KEXTConceptIntro/introduction.html &quot;Kernel Extension Programming Topics&quot; document for Mac OS X]
+
+{{Operating System}}
+{{Linux}}
+{{FreeBSD}}
+
+[[Category:Operating system technology]]
+[[Category:Linux kernel]]
+[[Category:FreeBSD]]
+
+[[de:Kernel-Modul]]
+[[es:MÃ³dulo de nÃºcleo]]
+[[fr:Loadable Kernel Module]]
+[[id:Modul kernel]]
+[[ja:ã­ã¼ããã«ã»ã«ã¼ãã«ã»ã¢ã¸ã¥ã¼ã«]]
+[[pt:MÃ³dulo do nÃºcleo (Linux)]]
+[[ru:ÐÐ¾Ð´ÑÐ»ÑÐ½Ð¾Ðµ ÑÐ´ÑÐ¾]]
+[[sv:Laddbar kÃ¤rnmodul]]</rev></revisions></page></pages></query></api>

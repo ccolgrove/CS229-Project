@@ -1,0 +1,47 @@
+<?xml version="1.0"?><api><query><pages><page pageid="1647685" ns="0" title="Microsoft Mail"><revisions><rev xml:space="preserve">{{unreferenced|date=May 2009}}
+'''Microsoft Mail''' (or '''MSMail''') was the name given to several early [[Microsoft]] e-mail products. 
+
+==Mac Networks==
+The first Microsoft Mail product was introduced in 1988 for AppleTalk Networks. It was based on InterMail, a product that Microsoft purchased and updated. An MS-DOS client was added for PCs on AppleTalk networks. It was later sold off to become '''Quarterdeck Mail''', then '''Star Nine Mail''', and has long since been discontinued.
+
+==PC Networks==
+{{Infobox Software
+| name                   = Microsoft Mail
+| logo                   = [[Image:Microsoft Mail icon.png]]
+| screenshot             = [[Image:Microsoft Mail.png|250px]]
+| caption                = Microsoft Mail Client for Windows NT
+| author                 = 
+| developer              = [[Microsoft]]
+| released               = 1991
+| latest release version = 
+| latest release date    = 
+| latest preview version = 
+| latest preview date    = 
+| operating system       = [[Microsoft Windows]]
+| platform               = 
+| language               = 
+| genre                  = [[Email]]
+| license                = [[Proprietary software]]
+| website                = 
+}}
+The second Microsoft Mail product was introduced in 1991 for PC Networks. It was based on Network Courier, a product that Microsoft purchased and updated. There were clients for MS-DOS and Windows, including '''Windows for Workgroups Mail'''.&lt;ref&gt;http://support.microsoft.com/kb/94178&lt;/ref&gt; A stripped-down version of the PC-based server, '''Microsoft Mail for PC Networks''', was included in [[Windows 95]] and [[Windows NT 4.0]]. The last version was 3.5 as it was replaced by [[Microsoft Exchange Server]] (which starts with version 4.0). 
+
+The client software was also named Microsoft Mail and was included in some older versions of [[Microsoft Office]] such as version 4.x. The original &quot;Inbox&quot; ([[Microsoft Exchange Client|Exchange client]] or [[Windows Messaging]]) of Windows 95 also had the capability to connect to an MS Mail server. Later, they were replaced with the much more powerful [[Microsoft Exchange Server|Microsoft Exchange]] and later [[Microsoft Outlook|Outlook]] (Windows) and [[Microsoft Entourage|Entourage]] (Mac).
+
+Microsoft Mail was a shared-file mail system; the &quot;postoffice&quot; was a database of files. Clients used mapped network drives and file sharing to write mail to the postoffice. Clients were in effect [[Message Transfer Agent]]s (MTAs) for their own postoffices. Mail that needed to travel between postoffices required an external MTA. This MTA was called External.exe and ran on MS-DOS or Windows NT. A multitasking MTA was added with Microsoft Mail for PC Networks 3.5. This ran in the OS/2 subsystem of Windows NT and Windows 2000.
+
+Connections to other email systems were made possible by gateways to &quot;foreign mail systems&quot;. There were gateways to [[PROFS]] and [[SNADS]] (Office Vision), [[SMTP]], [[X.400]], [[Novell]]'s [[Message Handling System]] (MHS), [[MCI Mail]] and others were created by Microsoft.
+
+Many companies running these gateways quickly replaced them with Microsoft Exchange Server connectors. In particular an early part of a migration from MSMail to Exchange included replacing the Microsoft Mail for PC Networks Gateway to SMTP to the Microsoft Exchange Internet Mail Connector, later renamed to the Microsoft Exchange Internet Mail Service.
+
+A single postoffice was locked to a limit of 500 mailboxes. This meant a large enterprise would require many postoffices and many MTAs to connect these postoffices. Also, the Microsoft Mail Client for Windows used an MMF file to store messages, they were downloaded off the postoffice. Because of the file lock and the way they were accessed a user could only login to their mail from a single PC at a time. This made using MSMail across multiple machines problematic. 
+
+For enterprises a challenge of running a Microsoft Mail for PC Networks environment was the method of synchronizing directories (Global Address Books). Every postoffice had a separate Global Address List and these were synchronized using MSMail 3.X directory synchronization protocol and software called dispatch.exe.
+== References ==
+{{reflist}}
+
+
+{{Microsoft Office}}
+
+[[Category:Discontinued Microsoft software|Mail]]
+[[Category:Microsoft email software|Mail]]</rev></revisions></page></pages></query></api>

@@ -1,0 +1,102 @@
+<?xml version="1.0"?><api><query><redirects><r from="Moka Five" to="MokaFive" /></redirects><pages><page pageid="12077741" ns="0" title="MokaFive"><revisions><rev xml:space="preserve">{{Infobox Company
+| company_name = MokaFive
+| company_logo = [[Image:mokafive logo.jpg|250px]]
+| company_type = [[Private Company|Private]]
+| company_slogan = Freedom computing
+| foundation = [[California]] 2005
+| location = [[Redwood City, California|Redwood City]], [[California]]
+| industry = [[software|Computer Software]]
+| products = Moka Five Creator/Player/Service
+| homepage = [http://mokafive.com/ mokafive.com]
+}}
+
+'''MokaFive''', (formerly '''Moka5''') headquartered in [[Redwood City, California]], provides a desktop-as-a-service platform for managing desktop computers. MokaFive was founded in July 2005 as a spinoff of the Collective Project in [[Stanford University]]'s Computer Science Department. MokaFive's main product, MokaFive Suite, allows users to create, run, distribute and manage [[LivePC]]s, which are complete, managed virtual computing environments.
+
+MokaFive Suite  is a virtual desktop management solution designed to be agnostic with respect to the virtual machine monitor. It is currently ported to [[VMware Player]], but includes additional features that are required for managing virtual desktops in an enterprise environment.  These features include automatic updates of virtual machines, streaming and caching of virtual machine images, hardware-accelerated 3D graphics support, and zero-footprint install when running from a [[USB drive]].&lt;ref&gt;{{cite web|url=http://www.moka5.com/node/836|title=moka5 and VMware Differences}}&lt;/ref&gt;
+
+AVG Anti-Virus is now integrated into the MokaFive virtual desktop management suite to provide the industryâs first complete solution for a secure virtual desktop that can be deployed directly on the end userâs personal machines. The solution enables consumers that work for enterprises to use AVGâs free software to protect their personal workspace, while at the same time assuring that sensitive corporate information contained in the virtual desktop is always kept safe.
+
+== History ==
+
+MokaFive was founded in July 2005 by [[Stanford]] Professor [[Monica Lam]] with her students Ramesh Chandra, Constantine Sapuntzakis, and John Whaley under the name [[SkyBlue Technologies]].&lt;ref&gt;{{cite news|url=http://www.businessweek.com/the_thread/dealflow/archives/2006/05/from_the_khosla.html|title=From the Khosla Portfolio: SkyBlue Technologies|date=May 4, 2006|publisher=BusinessWeek}}&lt;/ref&gt;  They received their first round of funding from [[Vinod Khosla]] at [[Khosla Ventures]] ($1 million followed by $2.26 million).&lt;ref&gt;{{cite news|url=http://weblog.infoworld.com/virtualization/archives/2006/05/moka5_to_delive.html|title=moka5 to Deliver PC Virtualization Innovation|date=May 16, 2006|publisher=infoworld.com}}&lt;/ref&gt;&lt;ref&gt;{{cite news|url=http://www.siliconbeat.com/entries/2006/05/17/khosla_enters_virtualization_space_invests_in_moka5.html|title=Khosla enters virtualization space; invests in Moka5|date=May 17, 2006|publisher=San Jose Mercury News}}&lt;/ref&gt;
+
+=== The Stanford Collective Project ===
+
+MokaFive had its beginnings as a four-year [[National Science Foundation|NSF]]-funded research project at Stanford University called &quot;The Collective: A Virtual Appliance Computing Infrastructure&quot;.&lt;ref&gt;{{cite web|url=http://www.moka5.com/products/thin.html|title=Comparison with Thin Client and Hosted Virtual Desktops|publisher=moka5}}&lt;/ref&gt;  The Collective project was started by the Stanford SUIF group, headed by Prof. Monica Lam, Prof. [[Mendel Rosenblum]], and Prof. [[Dan Boneh]].  The objective was &quot;to develop a new computing system architecture that is secure, reliable, easy to administer, and provides ubiquitous access to users' computing environments.&quot;&lt;ref&gt;{{cite web|url=http://suif.stanford.edu/collective/|title=The Collective, A Virtual Appliance Computing Infrastructure|publisher=Stanford SUIF Group}}&lt;/ref&gt;
+
+The Collective project began in 1999 with the exploration of a stateless thin-client architecture, a la [[Sun Ray]], where computation would occur on a centralized server.&lt;ref&gt;{{cite journal|url=http://suif.stanford.edu/papers/schmidt99.pdf|date=December, 1999|volume=34|issue=5|pages=32â47|title=The Interactive Performance of SLIM: A Stateless, Thin-Client Architecture|first=Brian A.|last=Schmidt|coauthors=M. S. Lam, J. D. Northcutt|journal=Operating Systems Review}}&lt;/ref&gt;  A thin-client architecture had the advantage of centralized management and allowing a user's data to live in the network, but it had some serious flaws: namely, it was not possible to work while disconnected (e.g. on a disconnected laptop or an unreliable network connection), it required a substantial server infrastructure, and it required a high-bandwidth low-latency network, which was not always possible with distant remote offices.
+
+To address the flaws of the thin-client model, the Collective group developed a new system where a centrally-managed virtual machine would run locally on the user's computer.&lt;ref&gt;{{cite journal|url=http://suif.stanford.edu/collective/hotos03-virtual-app.pdf|date=May, 2003|pages=32â47|title=Virtual Appliance in the Collective: A Road to Hassle-free Computing|first=Constantine|last=Sapuntzakis|coauthors=M. S. Lam|journal=Proceedings of the 9th Workshop on Hot Topics in Operating Systems (HOTOS IX)}}&lt;/ref&gt;  In this way, they were able to get the benefits of the thin-client model (easy management and administration) without many of the downsides (reliance on server infrastructure and fast network connection, no disconnected operation).  The Collective architecture was presented in a paper at the HotOS conference in May 2003.  This paper first coined the term [[virtual appliance|Virtual Appliance]], later picked up by [[VMware]].  Later publications in LISA 2003 and NSDI 2005 expanded upon this idea.&lt;ref&gt;{{cite journal|url=http://suif.stanford.edu/papers/lisa03-deploying-vap.pdf|date=October, 2003|pages=181â194|title=Virtual Appliances for Deploying and Maintaining Software|first=Constantine|last=Sapuntzakis|coauthors=D. Brumley, R. Chandra, N. Zeldovich, J. Chow, M. S. Lam, and M. Rosenblum|journal=Proceedings of the 17th Large Installation Systems Administration Conference (LISA 2003)}}&lt;/ref&gt;&lt;ref&gt;{{cite journal|url=http://suif.stanford.edu/papers/nsdi05.pdf|date=May, 2005|pages=259â272|title=The Collective: A Cache-Based System Management Architecture|first=Ramesh|last=Chandra|coauthors=N. Zeldovich, C. Sapuntzakis, and M. S. Lam|journal=Proceedings of the Second Symposium on Networked Systems Design and Implementation (NSDI 2005)}}&lt;/ref&gt;
+
+As of roughly 19:12 pm (GMT) on 5 April 2008 the MokaFive website changed dramatically. The new website is http://www.mokafive.com.
+
+== Products ==
+{{Asof|2009|6|22}}, there are two MokaFive products:&lt;ref&gt;{{cite web|url=http://www.mokafive.com/products/products-overview.php|title=Product Overview}}&lt;/ref&gt;
+
+* MokaFive Suite
+* MokaFive Service
+
+MokaFive Suite is an installable Desktop-as-a-Service platform, a software solution that enterprises or service providers could use to provide and manage virtual desktops to their customers.  MokaFive Service is a subscription-based, hosted service, provided by MokaFive itself, that allows customers to manage virtual desktops without having to install and maintain the server components.
+
+=== How MokaFive Works ===
+MokaFive consists of four main components: Player, Creator, Enterprise Server and Console.&lt;ref&gt;{{cite web|url=http://www.mokafive.com/products/components.php|title=Product Components}}&lt;/ref&gt;   Users use the Player to run [[LivePC]] images on their local computers.  Running images locally allows users to run images offline as well as online.
+
+Players check in periodically with the MokaFive Enterprise Server for any updates.  IT administrators can efficiently update a single image and centrally control policies, and the Enterprise Server takes care of the distribution.
+
+MokaFive Enterprise Server compresses image files and sends the differences in the image, which reduces update time and bandwidth utilization.  LivePC images are virtual desktop images in a MokaFive format.  Existing VMware images can be converted into LivePC images using the Creator.  The same image can be run on either Windows or [[Macintosh]] computers.
+
+Unlike standard virtual machine images, LivePC images have features that make it particularly adapted for desktop management:
+
+* LivePC images allow users to install personal applications and maintain their user data and settings, and allow for IT to update their OS and corporate applications.&lt;ref&gt;{{cite news|url=http://www.eweek.com/c/a/Desktops-and-Notebooks/MokaFive-Rolls-Out-Desktop-Virtualization-Platform-211122/|title=Moka5 Rolls Out Desktop Virtualization Platform}}&lt;/ref&gt;
+* LivePC images can be joined to an AD domain without requiring a reboot, and they remain joined through image updates.
+
+MokaFive Players are used to control and run LivePC images.  Players can be installed through AD GPOs, distributed on pre-installed [[USB]] devices, or users can download the Player installer and perform a self-installation.  
+
+Players provide many features designed for improved end-user experience and enterprise IT desktop management:&lt;ref&gt;{{cite web|url=http://www.mokafive.com/products/features.php|title=Features}}&lt;/ref&gt;
+* Differential updates which load in the background
+* Granular security policies
+* Single-sign-on to images
+* Encryption
+* AD-based authentication
+* Revoke and kill of images
+* Similar Windows and Macintosh experience
+* Printing to the host's printers
+* Performance enhancements for USB deployments
+
+MokaFive Enterprise Server is a lightweight, secure management platform.  It can be horizontally scaled, and images can be stored locally for remote offices, to reduce [[WAN]] utilization.  MokaFive Enterprise Server integrates with a corporate AD server, for authentication and targeting.
+
+==== Differences between LivePC Engine and VMplayer ====
+MokaFive Player embeds the free [[VMware Player]] as its virtualization platform. It adds several additional features to the standard VMware Player:
+
+* Seamless updates of virtual machines. In MokaFive Player, users are subscribed to a LivePC so they automatically receive all updates. Updates are sent through an RSS feed that the LivePC subscribes to.
+* Streaming and caching of virtual machine images. MokaFive Player will stream virtual machine images over the network so you don't need to download the entire image before starting. It will also cache the image locally so you can work disconnected.
+* Hardware-accelerated 3D graphics support. MokaFive Player includes support for DirectX 8 and 9 3D programs. The host graphics adapter is exposed to the guest operating system as a mokzzile 3D accelerator so DirectX applications can run at nearly full speed. Many games exhibit strange behaviour such as slow timing in ''Call of Duty 4''.
+* Zero-footprint install (needs administrative rights) when running from a USB drive. When plugging into a host that does not have MokaFive installed, MokaFive Player will dynamically install itself, and then uninstall itself after unplugging.
+
+== Known issues ==
+MokaFive inherits many of the [[VMware Player#Known issues|limitations of VMware Player]], including no support for IEEE-1394/FireWire and certain other hardware devices. However, MokaFive claims that its software is technically independent of the embedded virtual machine platform and that they will support other VMs.
+
+As is the case with any desktop virtualization solution, MokaFive LivePCs include the operating system. Thus it requires an operating system license for each LivePC, which is a consideration when the operating system is not free. Including the entire operating system also makes LivePCs larger and require more memory than using, for example, [[application virtualization]].
+
+On June 29, 2009, MokaFive released version 2.0, which replaced &quot;user disks&quot; with layering of virtual PCs. This innovation allows users to easily install software on their virtual machine copy. But users who created machines under version 1.x will need to start over. MokaFive's manual migration procedure does not support current users who used the standard configuration for their live pc. Concurrently, MokaFive removed user forums from their website.
+
+== See also ==
+* [[Virtual appliance]]
+* [[Virtual machine]]
+* [[X86 virtualization]]
+
+== References ==
+{{reflist|2}}
+
+== External links ==
+* [http://www.mokafive.com MokaFive Home Page]
+* [http://jennyw.dangerousideas.com/2006/9/28/moka5-versus-mojopac/ MokaFive versus Mojopac]
+* [http://mcpmag.com/columns/article.asp?EditorialsID=1500 Microsoft Certified Professional Magazine]
+* [http://searchsystemschannel.techtarget.com/tip/0,289483,sid99_gci1230396,00.html Search Systems Channel]
+* [http://www.informit.com/articles/article.aspx?p=706209 MokaFive: Virtualization in your pocket]
+
+{{DEFAULTSORT:Mokafive}}
+[[Category:Software companies of the United States]]
+[[Category:Virtualization software]]
+[[Category:Companies established in 2005]]
+[[Category:Companies based in California]]</rev></revisions></page></pages></query></api>

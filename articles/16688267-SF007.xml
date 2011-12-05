@@ -1,0 +1,17 @@
+<?xml version="1.0"?><api><query><pages><page pageid="16688267" ns="0" title="Disk Copy Fast"><revisions><rev xml:space="preserve">'''Disk Copy Fast''' (DCF) is a [[file archiver]] software utility that creates [[disk image]]s of floppy disks.  It also refers to the file format used to encode the disk image files created.  These image files typically use the [[file extension]] &quot;.DCF&quot;.
+
+== File format information ==
+DCF files contain a file header plus a raw image of the floppy disk encoded as a bit stream of the first sector to the last sector imaged.  Sectors are imaged from track 00 sector 00 to the last sector recorded.  The DCF software by default only records sectors up to the last track used by the file system as specified in the file allocation table.
+
+DCF format is not compatible with [[Rawrite]] ([[.ima]]) or [[.img|.IMG file format]].
+
+== Software information ==
+Disk Copy Fast and its professional/commercial version Disk Copy Plus were authored by Chang Ping Lee.  The last known version is 5.3a released in 1996.  This software does not run well under Windows XP or newer. This software may be [[abandonware]].
+
+If you have files saved in this format, WinImage from Gilles Vollant Software will extract them. http://www.winimage.com/
+
+{{Disk_images}}
+
+[[Category:Archive formats]]
+
+{{software-type-stub}}</rev></revisions></page></pages></query></api>

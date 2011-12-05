@@ -1,0 +1,92 @@
+<?xml version="1.0"?><api><query><redirects><r from="McAfee Internet Security Suite" to="McAfee VirusScan" /></redirects><pages><page pageid="5086905" ns="0" title="McAfee VirusScan"><revisions><rev xml:space="preserve">{{Infobox software
+| name = McAfee Total Protection
+| logo =
+| screenshot = [[Image:McAfee SecurityCenter.png|300px]]
+| caption = McAfee SecurityCenter v11.0.560 on [[Windows 7]]
+| developer = [[McAfee]]
+| latest_release_version = v11.0.560 (Security Centre);v15.0.288 (Virus Scan)| latest_release_date = 2011-06-24
+| operating_system = [[Microsoft Windows]], [[Mac OS X]], [[Linux]]
+| platform =
+| genre = [[Antivirus software|Antivirus]]
+| license = [[Proprietary software|Proprietary]]
+| website = [http://www.mcafee.com McAfee.com]}}
+
+'''McAfee VirusScan''' is an [[antivirus software|antivirus]] program created and maintained by [[McAfee Inc.]] (formerly known as [[Network Associates]]). McAfee markets VirusScan to home and home-office users; McAfee also develops ''VirusScan Enterprise'' for use in corporate environments. The product is not available as a standalone package, but is included in the ''McAfee VirusScan Plus'' package or as part of ''McAfee Internet Security Suite.'' McAfee also produces a similar product for [[Mac OS X]] under the name of ''VirusScan for Mac''. Additionally, [[BSkyB]] and McAfee have produced a &quot;[[Sky Broadband]]&quot; branded version of VirusScan, offered free to [[Sky Digital (UK &amp; Ireland)|Sky Digital]] customers upon broadband modem installation.
+
+==Features==
+The 2010 edition of VirusScan Plus integrates antivirus, [[Firewall (computing)|firewall]] and anti-[[spyware]] capabilities.
+
+It includes, amongst other things;
+
+* On-access file scanner (McAfee OAS)
+* Inbound and outbound firewall protection
+* Spyware protection
+* Daily definition updates
+* McAfee ''X-Ray'' [[rootkit]] detection
+* McAfee ''SiteAdvisor'' - displays a safety rating for websites based on tests for evidence of [[e-mail spam|spam]], [[malware]] and [[phishing]]
+* McAfee ''SystemGuards'' - monitors a computer for activity that may be caused by virus infection or hacker activity(discontinued: see below)
+
+*In the upgraded release in February 2010 McAfee discontinued SystemGuards in favor of its Active protection(Artemis), which detects suspicious activity in real-time and contacts McAfee labs to determine whether the file is a threat. Artemis was released around August 2008.&lt;ref name=&quot;mcafee&quot;&gt;{{cite web|url=http://www.mcafee.com/us/about/press/corporate/2008/20080908_180000_q.html |title=&quot;McAfee Press Release&quot; |publisher=Mcafee.com |date= |accessdate=2010-11-09}}&lt;/ref&gt;
+
+VirusScan Plus 2010 is compatible with [[Windows 2000]], [[Windows XP]], [[Windows Vista]] and [[Windows 7]] only.
+
+==VirusScan Enterprise==
+McAfee also produces an enterprise-level product named VirusScan Enterprise: McAfee has designed this for use on larger networks. It contains features intended to make management of antivirus software on multiple computers easier. Unlike the home-user edition, it consists of a client application - loaded on all networked computers - and a server application, through which the system installs signature and application updates and configures settings for all client programs.  Clients can be controlled with the ePolicy Orchestrator, which is a unified console (it can control VirusScan and other McAfee products).
+
+==VirusScan for Mac==
+&lt;!-- Deleted image removed: [[Image:VirusScan.png|right|64px|VirusScan icon]] --&gt;
+In November 2007 McAfee announced&lt;ref&gt;{{cite web|url=http://www.mcafee.com/us/about/press/corporate/2007/20071129_164500_x.html |title=McAfee, Inc. Releases VirusScan Software for Leopard |publisher=Mcafee.com |date= |accessdate=2010-11-09}}&lt;/ref&gt; VirusScan for Mac 8.6. (Earlier versions used the name [[Virex]], developed by HJC Software.) The main highlights of VirusScan version 8.6 include:
+
+* '''Leopard Compatibility''': First version compatible with Mac OS X 10.5 Leopard
+* '''Universal Binary''':  First universal binary version in the Virex product line. It will run on both Intel- and PowerPC-based Mac computers natively.
+* '''On Access scanning''': Features true blocking On Access Scanning. It scans every file being accessed from or written to the machine and blocks infections if any. On Access Scanner can be configured to scan on Read Only, Write only or both. It can also be configured to scan files on network volumes.
+* '''5301 engine support''': The latest McAfee Anti-Virus engine.
+* '''Apple Mail scanning''' : It will now scan Apple Mail messages for any infections. This feature is available through both On Demand Scanner and On Access Scanner.
+
+VirusScan for Mac 8.6.1 The main highlights of this new version are:
+
+* Support for updating virus signatures (DATs) and scanning engine from ePolicy Orchestrator repositories
+* Support for updating virus signatures (DATs) and scanning engine from HTTP and local repositories
+* Support for specifying a list of FTP, HTTP,and/or local repositories for updating virus signatures (DATs) and scanning engine. Please open the URL to check the DAT Version http://vil.nai.com/vil/DATReadme.aspx 
+* Support for VirusScan for Mac deployment and installation from ePolicy Orchestrator
+* Support for installing HotFixes and Patches for VirusScan for Mac from ePolicy Orchestrator
+* Support for proxy server authentication
+* Addition of Minimum Escalation Requirements tool
+
+==Criticism==
+In tests by [[Virus Bulletin]] and other independent consumer-organizations, McAfee virus scan has not fared well, frequently failing to detect some common viruses.&lt;ref&gt;[http://www.virusbtn.com/vb100/archive/results?display=tests Virus Bulletin] {{registration required}} &lt;/ref&gt;
+
+A review of VirusScan 2006 by [[CNET]] criticized the product due to &quot;pronounced performance hits in two of our three real-world performance tests&quot;&lt;ref&gt;{{cite web|last=Tedja |first=Irsan |url=http://reviews.cnet.com/McAfee_VirusScan_2006/4505-3681_7-31473526-2.html |title=McAfee VirusScan 2006 Reviews - Cnet.com |publisher=Reviews.cnet.com |date= |accessdate=2010-11-09}}&lt;/ref&gt; and some users reviewing the same product reported encountering technical problems.&lt;ref&gt;{{cite web|last=Tedja |first=Irsan |url=http://reviews.cnet.com/McAfee_VirusScan_2006/4852-3681_7-31473526.html?tag=uoreturn |title=McAfee VirusScan 2006 Ratings - Cnet.com |publisher=Reviews.cnet.com |date= |accessdate=2010-11-09}}&lt;/ref&gt;
+
+Some older versions of the VirusScan engine use all available CPU cycles.&lt;ref&gt;[http://www.dundee.ac.uk/ics/documents/virus/viruswinvs451readme.txt VirusScan 4.5.1 release notes]{{dead link|date=November 2010}}&lt;/ref&gt;
+
+{{As of | 2009}} McAfee virus-scanning products did not handle false positives well, repeatedly removing or quarantining known clean files even after the user restores them.&lt;ref&gt;{{cite web|url=http://computershopper.com/software/reviews/mcafee-total-protection-2009 |title=Computer Shopper Review |publisher=Computershopper.com |date=2009-09-13 |accessdate=2010-11-09}}&lt;/ref&gt;
+
+Reviewers have described customer support for McAfee products as lacking, with support staff slow to respond and unable to answer many questions.&lt;ref&gt;{{cite web|url=http://anti-virus-software-review.toptenreviews.com/mcafee-review.html |title=TopTen Reviews |publisher=Anti-virus-software-review.toptenreviews.com |date= |accessdate=2010-11-09}}&lt;/ref&gt;&lt;ref&gt;[http://www.adwarereport.com/mt/archives/mcafee_virusscan_plus_review.php Adware Support review]&lt;/ref&gt;
+
+On April 21, 2010, beginning approximately at 2 PM GMT, an erroneous virus definition file update from McAfee affected millions of computers worldwide running Windows XP Service Pack 3. The update resulted in the removal of a Windows system file (&lt;code&gt;[[svchost.exe]]&lt;/code&gt;) on those machines, causing machines to lose network access and, in some cases, to enter a reboot loop. McAfee rectified this by removing and replacing the faulty DAT file, version 5958, with an emergency DAT file (version 5959) and has posted a fix for the affected machines in its consumer &quot;KnowledgeBase&quot;.&lt;ref&gt;{{cite news|url=http://isc.sans.org/diary.html?storyid=8656|title=McAfee DAT 5958 Update Issues|date=21 April 2010|accessdate=22 April 2010}}&lt;/ref&gt;&lt;ref&gt;{{cite news|url=http://www.engadget.com/2010/04/21/mcafee-update--shutting-down-xp-machines/|title=Botched McAfee update shutting down corporate XP machines worldwide|date=21 April 2010|accessdate=22 April 2010}}&lt;/ref&gt;
+
+==See also==
+{{Portal|Computer security}}
+* [[List of antivirus software]]
+
+==References==
+&lt;references/&gt;
+
+==External links==
+* [http://us.mcafee.com/root/package.asp?pkgid=276&amp;cid=25655 VirusScan page on McAfee web site]
+* [http://www.mcafee.com/us/enterprise/products/anti_virus/file_servers_desktops/virex.html VirusScan for Mac page on McAfee web site]
+
+[[Category:McAfee]]
+[[Category:Antivirus software]]
+[[Category:Windows software]]
+
+[[de:McAfee VirusScan]]
+[[fa:ÙÚ©âØ¢ÙÛ (ÙØ±ÙâØ§ÙØ²Ø§Ø±)]]
+[[fr:McAfee VirusScan]]
+[[ka:McAfee VirusScan]]
+[[nl:McAfee VirusScan]]
+[[ja:ãã«ãã£ã¼ã»ã¦ã¤ã«ã¹ã¹ã­ã£ã³]]
+[[pl:McAfee VirusScan]]
+[[pt:McAfee VirusScan]]
+[[sk:McAfee VirusScan]]</rev></revisions></page></pages></query></api>

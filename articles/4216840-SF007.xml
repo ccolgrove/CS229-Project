@@ -1,0 +1,72 @@
+<?xml version="1.0"?><api><query><pages><page pageid="4216840" ns="0" title="AIGLX"><revisions><rev xml:space="preserve">{{Refimprove|date=February 2008}}
+{{Update|date=June 2011}}
+
+[[Image:Fedora-Core-6-AIGLX.png|thumb|[[Compiz]] running on Fedora Core 6 with AIGLX.]]
+'''Accelerated Indirect GLX'''  (&quot;'''AIGLX'''&quot;) is an [[open source]] project founded by [[Red Hat]] and the [[Fedora (operating system)|Fedora]] community, led by Kristian HÃ¸gsberg,&lt;ref&gt;{{cite web | url = http://archive.fosdem.org/2007/interview/kristian+hoegsberg | title = Interview: Kristian HÃ¸gsberg | date = 2007-02-06 | quote = Learn from AIGLX creator Kristian HÃ¸gsberg....}}&lt;/ref&gt; to allow accelerated indirect [[GLX]] rendering capabilities to  the [[X.Org Server]] and [[Direct Rendering Infrastructure|DRI]] drivers. This allows remote X clients to get fully hardware accelerated rendering over the GLX protocol; coincidentally, this development was required for [[OpenGL]] [[compositing window manager]]s (such as [[KWin]] or [[Compiz]]) to function with hardware acceleration.
+
+== Rationale ==
+
+There are two ways in which a windowing system can allow an OpenGL implementation to talk to the graphics card.
+
+The first is to specify the OpenGL command stream in a portable network-neutral manner using a client/server implementation similar to the X11 drawing routines.  This method, used by AIGLX, is indirect in that the drawing commands are sent to the X server and then the X server sends them along to the graphics card.
+
+The second way, which is at the base of [[Xgl]], is to open a window and then allow the OpenGL library to send commands directly to the graphics card.
+
+Accelerating the indirect OpenGL path is orthogonal to how the X server itself is implemented, but it has the side effect of allowing the OpenGL command stream to be more easily captured and redirected to a texture.  This allows Compiz and other [[compositing window manager]]s to be built on top of a traditional server with a small [[GLX]] extension rather than requiring a full Xgl server. Another advantage is that [[Direct Rendering Infrastructure|DRI]] bypasses the compositing engine, while with AIGLX everything is allowed to be both accelerated and composited.
+
+== Deployments ==
+
+The AIGLX project has been merged into X.Org and is available as of X.Org 7.1. Currently, [[Mandriva Linux]] 2007, [[Fedora (Linux distribution)|Fedora]] 7, [[Ubuntu (operating system)|Ubuntu]], [[Gentoo Linux|Gentoo]], and [[FreeBSD]] 7 have the ability to run AIGLX out of the box, and installation repositories are available for older versions of the distributions.{{fact|date=August 2011}} [[SabayonLinux]] 3.3 [[Live CD]]/Live DVD ships with AIGLX available from the boot prompt. AIGLX is also available on [[openSUSE]] 10.2, using the packages available in the &lt;tt&gt;xorg72&lt;/tt&gt; branch of the openSUSE Build Repository.
+
+AIGLX needs driver support to run. Specifically, it depends on the &lt;tt&gt;texture_from_pixmap&lt;/tt&gt; [[OpenGL]] extension, which is supported on embedded [[Intel]] i810 through G45 graphics chipsets &amp; [[ATI Radeon]] cards up to X1900 series through free drivers in X.org and [[NVIDIA]] graphics card through NVIDIA's [[proprietary software|proprietary]] 9xxx series drivers (although with these drivers, compositing managers do not require AIGLX proper &amp;mdash; only X.Org 7.1).
+
+== Relationship to Xgl ==
+
+Although the AIGLX project has features similar to [[Xgl]], it is not intended to be a competing product. According to [http://fedoraproject.org/wiki/RenderingProject/aiglx  the Fedora Project Wiki], the project was founded in part because Xgl was written during its final stages &quot;behind closed doors.&quot;  This lack of peer-review drew criticism claiming to be the root of flaws in the software.  An agreement was reached to share the source code between the two projects under the premise that doing so would prevent compatibility conflicts. Xgl was removed from the X Server on June 12, 2008.&lt;ref&gt;[http://gitweb.freedesktop.org/?p=xorg/xserver.git;a=commit;h=d15b3790307053587df8daed1936ff6923881b63 XGL Version Info]&lt;/ref&gt;
+
+== AIGLX with major graphics drivers ==
+=== ATI ===
+
+For older [[Radeon]]s, AIGLX has long been supported as part of [[X.Org]]'s official [[Radeon]] driver.  As of version 8.42 of [[fglrx]] (the proprietary driver from [[ATI]]), AIGLX is supported. There are reports of instability and problems from users using the latest [[Compiz]] and [[X.Org]] versions, which are directly related to the driver, and can be circumvented by disabling the [[composite (graphics)|âCompositeâ extension]] and using at least version 9.1 of the driver.&lt;ref&gt;{{cite web | title = Gentoo bug for x11-drivers/ati-drivers-9.1 â Comment #32 | url = http://bugs.gentoo.org/show_bug.cgi?id=256874#c32  | accessdate = 2009-02-02 | first = Navid | last = Zamani | date = 2009-02-02 }}&lt;/ref&gt; Some users have chosen this, or to not use ATI's proprietary driver due to instability with the drivers. Visual tearing has been noted by some users when using the restricted driver.&lt;ref&gt;[http://ubuntuforums.org/showthread.php?t=524785 ATI Compiz Fusion Tearing? - Ubuntu Forums&lt;!-- Bot generated title --&gt;]&lt;/ref&gt;
+
+=== Intel ===
+
+AIGLX has long been supported as part of [[X.Org]]'s official Intel driver, since Intel provides open source drivers it is easy to integrate them.
+
+=== NVIDIA ===
+
+NVIDIA has long supported AIGLX through its own GL and GLX architecture, as it does not use the standard [[Direct Rendering Infrastructure]] architecture.&lt;ref&gt;[http://www.gentoo.org/doc/en/nvidia-guide.xml Gentoo Linux Documentation - Gentoo Linux nVidia Guide&lt;!-- Bot generated title --&gt;]&lt;/ref&gt;
+
+== See also ==
+*[[Compositing window manager]]
+*[[X window system]]
+*[[OpenGL]]
+*[[Xgl]]
+*[[VirtualGL]]
+*[[Beryl (window manager)|Beryl]]
+*[[Compiz]]
+
+== References ==
+
+{{reflist}}
+
+== External links ==
+* [http://fedoraproject.org/wiki/RenderingProject/aiglx Fedora Project Wiki AIGLX Article] â contains demonstration videos in the free [[Theora|Ogg Theora]] format.
+
+{{XWinSys}}
+
+[[Category:Free software projects]]
+[[Category:Freedesktop.org]]
+
+[[ca:AIGLX]]
+[[de:AIGLX]]
+[[es:AIGLX]]
+[[fr:AIGLX]]
+[[ko:AIGLX]]
+[[it:AIGLX]]
+[[ja:AIGLX]]
+[[pl:AIGLX]]
+[[pt:AIGLX]]
+[[ru:AIGLX]]
+[[sk:AIGLX]]
+[[sv:AIGLX]]</rev></revisions></page></pages></query></api>

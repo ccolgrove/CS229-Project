@@ -1,0 +1,207 @@
+<?xml version="1.0"?><api><query><pages><page pageid="16884326" ns="0" title="SliTaz"><revisions><rev xml:space="preserve">{{ infobox OS
+| name                   = SliTaz GNU/Linux
+| logo                   = [[File:Slitaz-logo.svg|200px|center]]
+| screenshot             = [[Image:SliTaz-Ver3.0-screenshot.png|250px|center]]
+| developer              = The SliTaz GNU/Linux Association; [http://www.slitaz.org/en/asso/index.html Slitaz.org] / Christophe Lincoln
+| family                 = [[Unix-like]]
+| source_model           = [[Open source]]
+| working_state          = Current
+| released               = 22 March 2008 &lt;ref name=&quot;first release&quot;&gt;[http://www.slitaz.org/en/doc/releases/1.0/relnotes.en.html slitaz.org]  SliTaz GNU/Linux is a free, open source community project.&lt;/ref&gt;
+| latest_release_version = 3.0
+| latest_release_date    = {{release date|mf=yes|2010|03|28}} &lt;ref name=&quot;release&quot;&gt;[http://www.slitaz.org/en/doc/releases/3.0/relnotes.en.html Slitaz.org] Welcome to SliTaz 3.0! Small, fast, easy to use and customize, the new SliTaz stable version is now out after one year of development.&lt;/ref&gt;
+| latest preview version = cooking
+| latest preview date    = {{release date|2011|05|31}}
+| license                = GPL and various others
+| website                = [http://slitaz.org/en slitaz.org]
+| family                 = [[Unix-like]]
+| source_model           = [[Open source]]
+| kernel_type            = [[Monolithic kernel|Monolithic]] ([[Linux kernel|Linux]])
+| ui =                     [[LXDE]], [[JWM]]
+| license                = [[GNU GPL]] and various others
+| working_state          = Current
+| supported_platforms    = [[x86]]
+| package_manager        = Tazpkg
+}}
+
+'''SliTaz GNU/Linux''' is a community-based software project started in 2006 by Christophe Lincoln. It is a [[Linux distribution]] with a [[Root directory|root filesystem]] that takes up approximately 100 MB of disk space, and its [[ISO image]] installation media is around 30 MB.&lt;ref&gt;[http://distrowatch.com/weekly.php?issue=20080331#feature Distrowatch.com] &quot;GNU/Linux 1.0 is not just another small desktop distro; it is, in fact, the smallest by some margin.&quot;&lt;/ref&gt;&lt;ref&gt;[http://www.freesoftwaremagazine.com/columns/slitaz_live_cd_small_beautifully_marked Freesoftwaremagazine.com] &quot;Size isnât everything. Oh yes it is.&quot;&lt;/ref&gt;&lt;ref&gt;[http://www.linux.com/archive/feature/140573 Linux.com] The SliTaz developers have redefined what a micro GNU/Linux distribution can and should be&lt;/ref&gt; This makes it suitable for use on older hardware, or as a backup Linux LiveCD environment.&lt;ref&gt;[http://www.linux-magazine.com/Issues/2008/97/SLITAZ Linux-magazine.com] &quot;Similar to Puppy Linux, SliTaz loads entirely to RAM, so it runs blazingly fast even on older hardware.&quot;&lt;/ref&gt;
+SliTaz, which stands for ''Simple Light Incredible Temporary Autonomous Zone'',&lt;ref&gt;[http://www.slitaz.org/de/index.html Slitaz.org/de] &quot;Die 'Simple Light Incredible Temporary Autonomous Zone' eben!&quot;&lt;/ref&gt; boots from either a CD or a [[USB flash drive|USB key]], into an [[Openbox]] desktop, and uses [[BusyBox]] for many of its core functions. It has a wide range of desktop and rescue software available and can be loaded entirely into [[Random-access memory|RAM]], or installed to a hard drive.&lt;ref&gt;[http://www.junauza.com/2008/03/slitaz-gnulinux-smallest-desktop-distro.html Junauza.com] &quot;SliTaz can be loaded as a LiveCD which I did, or through a bootable USB media.&quot;&lt;/ref&gt;
+
+==History==
+
+After 1 year of community development, SliTaz 3.0 was released on March 28, 2010. SliTaz shares many common goals with [[Damn Small Linux]], but is smaller (30&amp;nbsp;MB ISO) and keeps its [[Linux kernel]] up to date (kernel 2.6.30.6 as of March 28, 2010).
+
+==System requirements==
+
+SliTaz GNU/Linux supports all machines based on the [[Intel 80486|i486]] or [[x86]] [[Intel]] compatible processors. The &quot;core&quot; LiveCD environment requires 192&amp;nbsp;MB of RAM to run efficiently. Additionally, there is a reduced functionality graphical installer LiveCD environment titled &quot;loram-slitaz&quot; which requires 80&amp;nbsp;MB to run efficiently. Finally, there is the &quot;loram-slitaz-cdrom&quot; flavor, which is a simple text-based installer, and it requires 16&amp;nbsp;MB. Regardless of installation method, however, SliTaz requires at least 16&amp;nbsp;MB of RAM to run efficiently.&lt;ref name=&quot;system requirements&quot;&gt;[http://www.slitaz.org/en/doc/releases/3.0/relnotes.en.html#hardware Slitaz.org]  SliTaz 3.0 release notes.&lt;/ref&gt;
+
+The low system requirements make SliTaz particularly suited to [[Netbook]] computers. As such, SliTaz includes support for a wide range of Netbooks.&lt;ref name=&quot;system requirements&quot; /&gt;
+
+==Applications==
+
+* [[Advanced Linux Sound Architecture|ALSA]] mixer, audio player
+* [[Asunder]] CD ripper / encoder
+* Chat, mail, and [[FTP clients]]
+* CD or DVD tools for engraving, editing, etc.
+* Elegant desktop ([[Openbox]])
+* [[Midori (web browser)|Midori]] Web browser
+* Database engine ([[SQLite]])
+* SSH client and server ([[Dropbear (software)|Dropbear]])
+* More than 2300 packages
+
+==Features==
+SliTaz boots from:
+* A [[Live USB]] using tazusb or with [[UNetbootin]]
+* A [[Live CD]] (cooking or stable 3.0)
+* An internal [[hard drive]]
+* A virtual device (e.g. [[VMware]])
+* A floppy [[boot disk]]
+* A [[LAN]] using [[Preboot Execution Environment]] and the internet using [[gPXE]]
+
+==System Tools==
+SliTaz has its own original tools:
+* TazPkg - The SliTaz lightweight package manager
+* [[TazLiTo]] - Allows for creation of a custom SliTaz LiveCD distribution
+* TazUSB - Allows for creation of a custom SliTaz USB distribution
+* TazWok - Creates custom packages for use with TazPkg
+
+==Release history==
+
+{|class=&quot;wikitable&quot;
+!Version
+!Release date
+!Stability
+|-----------------------------------
+|-
+| style=&quot;background-color:Salmon;&quot; | 1.0
+|| 23 March 2008
+|| Stable version
+|-
+| style=&quot;background-color:Salmon;&quot; | 2.0
+|| 16 April 2009
+|| Stable version
+|-
+|  style=&quot;background-color:#A0E75A;&quot; | 3.0
+|| 28 March 2010
+|| Current stable version
+|-
+| style=&quot;background:SkyBlue;&quot; | 
+|| 31 May 2011
+|| Current cooking version
+|}
+
+&lt;timeline&gt;
+ImageSize = width:800 height:auto barincrement:12
+PlotArea  = top:10 bottom:50 right:130 left:20
+AlignBars = late
+
+DateFormat = dd/mm/yyyy
+Period     = from:01/01/2008 till:01/01/2012
+TimeAxis   = orientation:horizontal
+ScaleMajor = unit:year increment:1 start:2008
+
+Colors     =
+  id:stable   value:green legend: Stable
+  id:cooking   value:rgb(0.9,0.9,0.9) legend: Cooking
+
+Legend     = columns:2 left:150 top:24 columnwidth:175
+
+TextData =
+  pos:(20,27) textcolor:black fontsize:M
+  text:&quot;Version:&quot;
+
+BarData =
+  barset:PM
+
+PlotData=
+  width:5 align:left fontsize:S shift:(5,-4) anchor:till
+  barset:PM
+
+ from: 23/03/2008 till: 15/04/2009 color:stable fontsize:10 text:&quot;1.0 &quot;
+ from: 16/04/2009 till: 27/03/2010 color:stable fontsize:10 text:&quot;2.0 &quot;
+ from: 28/03/2010 till: 30/05/2011 color:stable fontsize:10 text:&quot;3.0 &quot;
+ from: 31/05/2011 till: 01/07/2011 color:cooking fontsize:10 text:&quot;Cooking &quot;
+&lt;/timeline&gt;
+
+
+==Flavors==
+
+Apart from the LiveCD, other versions include:
+* xvesa - A fully featured desktop environment using the tiny Xvesa graphical server
+* justX - A system using only the minimum X requirements to boot
+* loram - A system that boots with only 80 MB RAM
+* loram-cdrom - A system that boots with only 16 MB RAM (and a little swap)
+* base - The core system (8 MB)
+* 3in1 - Flavor containing the base, justx and core ISOs
+* Tiny SliTaz&lt;ref&gt;[http://tiny.slitaz.org/ tiny.slitaz.org] SliTaz on a single floppy running in 8 MB RAM&lt;/ref&gt; - flavors based on Linux 2.6, [[busybox]] and [[uClibc]] running in memory (hard drive optional, [[ext3]] supported). It provides a [[Preboot Execution Environment|PXE]] proxy&lt;ref&gt;[http://doc.slitaz.org/en:guides:pxe doc.slitaz.org] SliTaz PXE guide&lt;/ref&gt;&lt;ref&gt;[http://boot.slitaz.org/ boot.slitaz.org] SliTaz boot service&lt;/ref&gt;, a [[File Transfer Protocol|FTP]] server, a [[Network Time Protocol|NTP]] server, and a Printer network gateway with  [[Web user interface|web administration]]
+
+==Pizza==
+
+* SliTaz online flavor builder&lt;ref&gt;[http://mirror.slitaz.org/pizza/ mirror.slitaz.org/pizza] Build your own SliTaz flavor&lt;/ref&gt;
+
+==Gallery==
+&lt;gallery&gt;
+Image:SliTaz-GNU-Linux 1.png|Stable 1.0
+Image:SliTaz-Ver2.0-screenshot.png|Stable 2.0
+Image:SliTaz-Ver3.0-screenshot.png|Stable 3.0
+Image:Slitaz-cooking-20101104.png|Cooking
+&lt;/gallery&gt;
+
+==See also==
+{{Portal|Free software|Linux}}
+* [[Comparison of Linux Live Distros]]
+* [[Lightweight Linux distribution]]
+* [[List of Linux distributions that run from RAM]]
+
+==References==
+{{Reflist}}
+
+==External links==
+* [http://www.slitaz.org/en/ SliTaz GNU/Linux official website]
+* [http://distrowatch.com/SliTaz SliTaz @ DistroWatch]
+* [http://virtualboxes.org/images/slitaz/ Ready to use Virtualbox images for SliTaz Gnu/Linux]
+* [http://unetbootin.sourceforge.net/ Unetbootin homepage]
+* [http://linuxologist.com/reviews/slitaz-linux-zero-to-distro-in-30-mb/ SliTaz Review]
+
+{{LXDE}}
+{{linux-distro}}
+
+{{DEFAULTSORT:Slitaz Gnu/Linux}}
+[[Category:Operating system distributions bootable from read-only media]]
+[[Category:Knoppix]]
+[[Category:Mini Linux distributions]]
+[[Category:Source-based Linux distributions]]
+[[Category:Live USB]]
+
+[[ar:Ø³ÙÙØªØ§Ø² Ø¬ÙÙ/ÙÙÙÙØ³]]
+[[ast:SliTaz]]
+[[bs:SliTaz]]
+[[cs:SliTaz]]
+[[da:SliTaz]]
+[[de:Slitaz]]
+[[es:SliTaz GNU/Linux]]
+[[fr:SliTaz GNU/Linux]]
+[[hr:SliTaz]]
+[[id:SliTaz]]
+[[zu:SliTaz]]
+[[it:SliTaz]]
+[[sw:SliTaz]]
+[[ht:SliTaz]]
+[[ku:SliTaz]]
+[[lv:SliTaz]]
+[[mk:Slitaz]]
+[[mg:SliTaz]]
+[[ja:Slitaz]]
+[[no:SliTaz GNU/Linux]]
+[[pl:SliTaz]]
+[[pt:SliTaz]]
+[[ro:SliTaz GNU/Linux]]
+[[ru:SliTaz]]
+[[simple:SliTaz]]
+[[sk:SliTaz]]
+[[sl:SliTaz]]
+[[so:SliTaz]]
+[[sr:SliTaz]]
+[[fi:Slitaz]]
+[[uk:Slitaz]]
+[[vi:SliTaz]]
+[[zh:Slitaz]]</rev></revisions></page></pages></query></api>

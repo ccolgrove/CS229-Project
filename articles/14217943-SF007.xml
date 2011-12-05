@@ -1,0 +1,235 @@
+<?xml version="1.0"?><api><query><pages><page pageid="14217943" ns="0" title="Dalvik (software)"><revisions><rev xml:space="preserve">{{Infobox software
+| name                    = Dalvik
+| logo                    =
+| screenshot              =
+| caption                 =
+| collapsible             =
+| author                  = Dan Bornstein
+| developer               =
+| released                = &lt;!-- {{Start date|YYYY|MM|DD}} --&gt;
+| discontinued            =
+| latest release version  =
+| latest release date     = &lt;!-- {{Start date and age|YYYY|MM|DD}} --&gt;
+| latest preview version  =
+| latest preview date     = &lt;!-- {{Start date and age|YYYY|MM|DD}} --&gt;
+| frequently updated      =
+| programming language    =
+| operating system        = [[Linux kernel]]
+| platform                = [[Android (operating system)|Android]]
+| size                    =
+| language                =
+| status                  =
+| genre                   = [[Virtual machine]]
+| license                 = [[Apache License 2.0]]
+| website                 = http://code.google.com/p/dalvik/
+}}
+{{Infobox file format
+| name                   = Dalvik Executable
+| icon                   = 
+| logo                   = 
+| screenshot             = 
+| caption                = 
+| extension              = .dex
+| mime                   = 
+| type code              = 
+| uniform type           = 
+| magic                  = 
+| owner                  = 
+| released               = &lt;!-- {{Start date|YYYY|mm|dd|df=yes/no}} --&gt;
+| latest release version = 
+| latest release date    = &lt;!-- {{Start date and age|YYYY|mm|dd|df=yes/no}} --&gt;
+| genre                  = 
+| container for          = 
+| contained by           = 
+| extended from          = 
+| extended to            = 
+| standard               = 
+| free                   = 
+| url                    = 
+}}
+'''Dalvik''' is the [[Virtual machine#Process virtual machines|process virtual machine]] (VM) in [[Google|Google's]] [[Android (operating system)|Android operating system]]. It is the software that runs the [[Android Market|app]]s on Android devices. Dalvik is thus an integral part of Android, which is typically used on mobile devices such as [[mobile phone]]s, [[tablet computer]]s and [[netbook]]s. Programs are commonly written in a dialect of [[Java programming language|Java]] and compiled to [[Java bytecode|bytecode]]. Then they are converted from [[Java Virtual Machine]]-compatible [[.class]] files to Dalvik-compatible .dex (Dalvik Executable) files before installation on a device. The compact Dalvik Executable format is designed to be suitable for systems that are constrained in terms of [[Random access memory|memory]] and [[Central processing unit|processor]] speed.
+
+Dalvik is [[Open-source license|open-source software]]. It was originally written by Dan Bornstein, who named it after the fishing village of [[DalvÃ­k]] in [[EyjafjÃ¶rÃ°ur]], [[Iceland]], where some of his ancestors lived.&lt;ref&gt;[http://uke.livejournal.com/25660.html Journal entry] referencing the source of the name&lt;/ref&gt;&lt;ref name=&quot;onlamp&quot;&gt;{{Cite web |title= Google Calling: Inside Android, the gPhone SDK |url= http://www.onlamp.com/pub/a/onlamp/2007/11/12/google-calling-inside-the-gphone-sdk.html |publisher= onlamp.com |accessdate= 2008-02-05 }}&lt;/ref&gt;
+
+== Architecture ==
+[[File:System-architecture.jpg|thumb|right|Architecture Diagram]] 
+Unlike [[Java Virtual Machine|Java VMs]], which are [[stack machine]]s, the Dalvik VM is a [[Register machine|register-based architecture]].
+
+A tool called '''dx''' is used to convert some (but not all) Java [[class (file format)|.class]] files into the .dex format.  Multiple [[Class (computer science)|classes]] are included in a single .dex file.  Duplicate [[String_(computer_science)|strings]] and other constants used in multiple class files are included only once in the .dex output to conserve space.  Java [[bytecode]] is also converted into an alternative [[instruction set]] used by the Dalvik VM.  An uncompressed .dex file is typically a few percent smaller in size than a [[Data compression|compressed]] [[JAR (file format)|.jar]] (Java Archive) derived from the same .class files.&lt;ref&gt;{{cite web
+| url=http://sites.google.com/site/io/dalvik-vm-internals/2008-05-29-Presentation-Of-Dalvik-VM-Internals.pdf?attredirects=0
+| title=Presentation of Dalvik VM Internals
+| first=Dan|last=Bornstein
+| publisher=Google
+| date=2008-05-29
+| accessdate=2010-08-16
+| format=PDF
+| page=22
+}}&lt;/ref&gt;
+
+The Dalvik executables may be modified again when installed onto a mobile device.  In order to gain further [[Optimization (computer science)|optimizations]], [[endianness|byte order]] may be swapped in certain data, simple [[data structure]]s and [[Function (computer science)|function]] [[Library (computing)|libraries]] may be [[Linker (computing)|linked]] [[Inline function|inline]], and empty class objects may be [[Short-circuit evaluation|short-circuited]], for example.
+
+As of  [[Android (operating system)|Android]] 2.2, Dalvik has a [[Just-in-time compilation|just-in-time compiler]].&lt;ref&gt;{{cite web |url= http://www.androidpolice.com/2010/05/11/exclusive-androidpolice-coms-nexus-one-is-running-android-2-2-froyo-how-fast-is-it-compared-to-2-1-oh-only-about-450-faster/ | title= Nexus One Is Running Android 2.2 Froyo. How Fast Is It Compared To 2.1? Oh, Only About 450% Faster |date= 2010-05-13 |accessdate= 2010-05-21}}&lt;/ref&gt;
+
+Being optimized for low memory requirements, Dalvik has some specific characteristics that differentiate it from other standard VMs:&lt;ref&gt;{{cite web
+| url=http://blogs.sun.com/jrose/entry/with_android_and_dalvik_at
+| title=with Android and Dalvik at Google I/O
+| last=Rose|first=John
+| date=2008-05-31
+| accessdate=2008-06-08
+}}&lt;/ref&gt;
+* The VM was slimmed down to use less space
+* The [[Class (file format)#The constant pool|constant pool]] has been modified to use only [[32-bit]] indices to simplify the [[Interpreter (computing)|interpreter]]
+* Standard [[Java bytecode]] executes 8-bit stack instructions.  Local variables must be copied to or from the operand stack by separate instructions.  Dalvik instead uses its own 16-bit instruction set that works directly on local variables.  The local variable is commonly picked by a 4-bit 'virtual register' field.  This lowers Dalvik's instruction count and raises its interpreter speed.
+
+Moreover, according to Google, Dalvik has been designed so that a device can run multiple instances of the VM efficiently.&lt;ref&gt;{{cite web
+| url=http://developer.android.com/guide/basics/what-is-android.html
+| title=What is Android?
+| author=Google
+| date=2009-04-13
+| accessdate=2009-04-19
+}}&lt;/ref&gt;
+
+==Performance==
+
+The relative merits of [[stack machine]]s versus [[Register machine|register]]-based approaches is a subject of ongoing debate&lt;ref&gt;{{cite web
+| url= http://www.usenix.org/events/vee05/full_papers/p153-yunhe.pdf
+| title= Virtual Machine Showdown: Stack Versus Registers
+| first4= M. Anton |last4= Ertl
+| first= Yunhe |last= Shi
+| first2= David |last2= Gregg
+| first3= Andrew |last3= Beatty
+| date= 2005-06-11
+| accessdate= 2009-12-22}}&lt;/ref&gt;.
+
+Generally, stack-based machines must use [[Instruction (computer science)|instructions]] to load data on the stack and manipulate that data, and, thus, require more instructions than register machines to implement the same [[High-level programming language|high level code]], but the instructions in a register machine must encode the source and destination registers and, therefore, tend to be larger. This difference is primarily of importance to VM interpreters for which [[opcode]] dispatch tends to be expensive along with other factors similarly relevant to [[just-in-time compilation]].
+
+However, tests performed on [[ARM architecture|ARM]] devices by [[Oracle Corporation|Oracle]] with standard non graphic Java benchmarks on both [[Android version history#2.2 Froyo|Android 2.2]] and [[Embedded_Java#Java SE embedded|Java SE embedded]] (both based on [[Java SE 6]]) showed that Android 2.2 was 2 to 3 times slower than Java SE embedded&lt;ref&gt;{{cite web
+| url= http://blogs.oracle.com/javaseembedded/entry/how_does_android_22s_performance_stack_up_against_java_se_embedded
+| title=Java SE Embedded Performance Versus Android 2.2 
+| publisher=[[Oracle Corporation]]
+| first=Bob |last=Vandette 
+| date= 2010-11-22
+| quote=''The results show that although Androids new JIT is an improvement over its interpreter only implementation, Android is still lagging behind the performance of our Hotspot enabled Java SE Embedded.   As you can see from the above results, Java SE Embedded can execute Java bytecodes from 2 to 3 times faster than Android 2.2.''
+| accessdate= 2011-09-04}}&lt;/ref&gt;.
+
+==Class library==
+Dalvik does not align to [[Java SE]] nor [[Java ME]] [[Java Class Library|class library]] profiles&lt;ref&gt;{{cite web
+| url= http://www.infoq.com/news/2007/11/android-java
+| title= Google's Android SDK Bypasses Java ME in Favor of Java Lite and Apache Harmony
+| publisher= infoq.com
+| date= 2007-11-12
+| quote= Instead of providing a full version of the Java SE or Java ME Google has diverged on two fronts. First, a limited subset of the core Java packages is provided. (...) By going this route Android is following in the footsteps of another Google project GWT which uses Java as its development language but does not support the full JDK. 
+| accessdate= 2009-05-31 
+}}&lt;/ref&gt;&lt;ref&gt;{{cite web
+| url= http://droidtutorials.blogspot.com/2010/02/alternative-to-point2d.html
+| title= Alternative to Point2D
+| publisher= Droid Tutorials
+| date= 2010-02-12
+| quote= Given that AWT is not supported in Android API, the Point2D class, which is useful for writing 2D graphics, is missing either. 
+| accessdate=2010-02-17}}&lt;/ref&gt; (e.g., [[Java ME]] classes, [[Abstract Window Toolkit|AWT]] or [[Swing (Java)|Swing]] are not supported). Instead it uses its own library&lt;ref&gt;{{cite web
+| url=http://developer.android.com/reference/packages.html
+| title=Package Index
+| publisher=[[Open Handset Alliance]]
+| accessdate=2009-
+}}&lt;/ref&gt; built on a subset of the [[Apache Harmony]] Java implementation.
+
+==Licensing and patents==
+
+Dalvik is claimed by Google to be a [[Clean room design|clean-room]] implementation rather than a development on top of a standard Java runtime, which would mean it might not inherit copyright-based license restrictions from either the standard-edition or open-source-edition Java runtimes.&lt;ref&gt;{{cite web| url=http://www.betaversion.org/~stefano/linotype/news/110/
+| title=Dalvik: how Google routed around Sunâs IP-based licensing restrictions on Java ME
+| author=Stefano Mazzocchi
+| date=2007-11-12
+| accessdate=2010-08-16}}&lt;/ref&gt;. However, the fact that Google's implementation of the Java runtime is clean-room is disputed by [[Oracle Corporation|Oracle]] and some reviewers.&lt;ref&gt;{{cite web
+| url=http://www.zdnet.com/blog/bott/the-real-history-of-java-and-android-as-told-by-google/3924
+| title=The real history of Java and Android, as told by Google
+| author=Ed Bott
+| publisher=[[ZDNet]]
+| quote=''The definition of a âclean roomâ implementation is that the engineers writing the code have no direct exposure to the original, copyrighted material, incuding code, specifications, and other documentation. Thatâs a problem for Google, as I noted in yesterdayâs post, because there is substantial evidence that the engineers working on the project had direct access to the copyrighted material. ''
+| date=2011-09-08
+| accessdate=2011-11-27}}&lt;/ref&gt;
+
+Dalvik is published under the terms of the [[Apache License]] 2.0.&lt;ref&gt;http://android.git.kernel.org/?p=platform/dalvik.git;a=blob_plain;f=NOTICE;hb=HEAD&lt;/ref&gt;
+
+On 12 August 2010, [[Oracle Corporation|Oracle]], which acquired [[Sun Microsystems]] in April 2009 and therefore owns the rights to Java, sued Google over claimed infringement of copyrights and patents. In developing Android, it is alleged that Google knowingly, directly and repeatedly infringed Oracle's Java-related intellectual property.&lt;ref&gt;{{cite web| url=http://www.digitaltrends.com/mobile/oracle-sues-google-over-java-in-android-devices/
+| title=Oracle Sues Google Over Java in Android Devices
+| publisher=digitaltrends.com
+| date=2010-08-13
+| accessdate=2011-08-08}}&lt;/ref&gt;&lt;ref&gt;{{cite web
+| url= http://www.computerworld.com/s/article/9180678/Update_Oracle_sues_Google_over_Java_use_in_Android?taxonomyId=13
+| title=Oracle sues Google over Java use in Android
+| author=James Niccolai
+| date=2010-08-12
+| work = [[Computerworld]]
+| accessdate=2010-08-13
+}}&lt;/ref&gt;&lt;ref&gt;{{cite web
+| title = Oracle Sues Google Over Android Java Use
+| author = Mark Hachman
+| date = 2010-08-13
+| url = http://www.pcmag.com/article2/0,2817,2367761,00.asp
+| work = [[PC Magazine]]
+| publisher = [[Ziff Davis]]}}&lt;/ref&gt;
+
+Specifically the patent infringement claim&lt;ref&gt;{{cite web
+| title = COMPLAINT FOR PATENT AND COPYRIGHT INFRINGEMENT - DEMAND FOR JURY TRIAL
+| date = 2010-08-12
+| accessdate = 2011-08-08
+| url = http://stadium.weblogsinc.com/engadget/files/oracle-google.pdf
+| publisher = UNITED STATES DISTRICT COURT - NORTHERN DISTRICT OF CALIFORNIA
+| quote=''Android (including without limitation the Dalvik VM and the Android software development kit) and devices that operate Android infringe one or more claims of each of United States Patents Nos. 6,125,447; 6,192,476; 5,966,702; 7,426,720; RE38,104; 6,910,205; and 6,061,520.''}}&lt;/ref&gt; references seven patents including {{USPTO Patent|patnum=5966702}} &quot;Method And Apparatus For Preprocessing And Packaging Class Files&quot;, and {{USPTO Patent|patnum=6910205}} &quot;Interpreting Functions Utilizing A Hybrid Of Virtual And Native Machine Instructions&quot;.&lt;ref&gt;{{cite web 
+| url= http://www.scribd.com/doc/35811761/Oracle-s-complaint-against-Google-for-Java-patent-infringement 
+| title= Oracle's complaint against Google for Java patent infringement
+| publisher= scribd.com
+| accessdate= 2010-08-13
+}}&lt;/ref&gt; 
+It also references {{USPTO Patent|patnum=RE38104}} &quot;Method And Apparatus For Resolving Data References In Generated Code&quot;.
+
+== On non-Android platforms ==
+In 2011, the software company Myriad Group announced &quot;Alien Dalvik&quot;, a port of the Dalvik virtual machine to platforms other than Android.&lt;ref&gt;http://www.myriadgroup.com/Device-Manufacturers/Android-solutions/Alien-Dalvik.aspx &lt;/ref&gt;&lt;ref&gt;http://www.allaboutmeego.com/news/item/12571_Alien_Dalvik_hopes_to_bring_An.php &lt;/ref&gt;
+
+== See also ==
+{{Portal|Free software}}
+* [[Application virtualization]]
+* [[Comparison of application virtual machines]]
+* [[Comparison of Java and Android API]]
+* [[Dalvik Turbo virtual machine]]
+
+== References ==
+
+{{refs|30em}}
+
+== External links ==
+* http://code.google.com/p/dalvik/
+* {{cite web | date = August 16 2010 | author = Pamela Jones | title = Oracle America's complaint against Google, as text | url = http://www.groklaw.net/article.php?story=20100815110101756 | work = [[Groklaw]] }}&lt;!-- should moved into text as an inline reference --&gt;
+* [http://www.netmite.com/android/mydroid/dalvik/docs/ Detailed Dalvik specifications documents]
+* [http://www.retrodev.com/android/dexformat.html Dex File Format]
+* [http://developer.android.com/reference/dalvik/bytecode/Opcodes.html Dalvik VM OpCodes]
+* {{YouTube|id=Ls0tM-c4Vfo|title=Google I/O 2010 - A JIT Compiler for Android's Dalvik VM}}
+* [http://sites.google.com/site/io/dalvik-vm-internals Dalvik VM Internals] - Presentation from Google I/O 2008, by Dan Bornstein
+* [http://code.google.com/p/android-dalvik-vm-on-java/ Android-dalvik-vm-on-java ] is an ongoing project aims to develop a pure Java implementation of the Android's Dalvik virtual machine.
+* [http://johnkoenig.com/the-800-million-dollar-question-whats-the-difference-between-trademark-and-copyright/ Oracle v Google Copyright Claims Decompiled]
+
+
+{{Android}}
+
+{{DEFAULTSORT:Dalvik (Software)}}
+[[Category:Register-based virtual machines]]
+[[Category:Java virtual machine]]
+[[Category:Android (operating system)]]
+
+[[ar:Ø¢ÙØ© Ø¯Ø§ÙÙÙÙ Ø§ÙØ§ÙØªØ±Ø§Ø¶ÙØ©]]
+[[ca:Dalvik]]
+[[de:Dalvik Virtual Machine]]
+[[es:Dalvik]]
+[[fa:Ø¯Ø§ÙÙÛÚ© (ÙØ±ÙâØ§ÙØ²Ø§Ø±)]]
+[[fr:Machine virtuelle Dalvik]]
+[[ko:ë¬ë¹ ê°ì ë¨¸ì ]]
+[[is:Dalvik]]
+[[it:Dalvik virtual machine]]
+[[nl:Dalvik (software)]]
+[[ja:Dalvikä»®æ³ãã·ã³]]
+[[pl:Dalvik (maszyna wirtualna)]]
+[[pt:Dalvik virtual machine]]
+[[ru:Dalvik virtual machine]]
+[[sv:Dalvik (programvara)]]
+[[uk:Dalvik]]
+[[zh:Dalvikèææº]]</rev></revisions></page></pages></query></api>

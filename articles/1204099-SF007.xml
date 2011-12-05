@@ -1,0 +1,84 @@
+<?xml version="1.0"?><api><query><pages><page pageid="1204099" ns="0" title="Xcopilot"><revisions><rev xml:space="preserve">{{Multiple issues|cleanup=March 2009|tone=March 2009|unencyclopedic=March 2009}}
+[[Image:Xcopilot-linux.conf.au-2004.gif|thumb|Screen shot]]
+'''Xcopilot''' is a [[Palm Pilot]] emulator that runs under [[Unix]]/[[X Window System|X11]]. It offers emulation of the timer, [[serial port]]s, touch pad and LCD along with [[Motorola 68000]] emulation (m68k), specifically the [[Freescale DragonBall]] used in Palm Pilots until they switched to [[Intel XScale]] ARM processors (later DragonBalls were based on an ARM core not a 68000 but retained the same name, however were not used by Palm.) Xcopilot was originally developed by Ivan Curtis with contributions from Ian Goldberg, Jef Dionne, Kresten Krab Thorup, and Andrew Pfiffer based on the [[Microsoft Windows|Windows]] program Copilot&lt;ref&gt;[http://hewgill.com/pilot/copilot/ Copilot - The Windows PalmPilot Emulator]&lt;/ref&gt;. While the original Copilot application eventually turned into the [[Palm OS Emulator]], the Unix/X11 port branched off and enjoyed its own popularity. Written in 1997, Xcopilot was aimed at developers of applications on the [[Palm OS]] platform, freeing them from the drudgery of interfacing to the real hardware during the development process.
+
+Xcopilot found a new role in the 2000s with the development of [[uCLinux]], a version of Linux meant for very low-end microprocessors without an [[Memory management unit|MMU]] . Today Xcopilot is no longer maintained but is still useful for trying out uClinux. With the addition of a virtual ethernet Xcopilot would probably become more popular again, because the simulated hardware would then look very like many modern firewall and VPN devices based on Motorola processors. Networking is only available over [[Point-to-Point Protocol|PPP]] on the simulated serial port.
+
+At [[linux.conf.au| linux.conf.au 2004]] a [[Live CD]] was produced &lt;ref&gt;The image was made by [http://shearer.org/User:Dan Dan Shearer] with the help of a team of testers and contributors&lt;/ref&gt; to support the talks, one of which was on uCLinux &lt;ref&gt;The talk was given by [http://www.kernel-traffic.org/kernel-traffic/quotes/Greg_Ungerer.html Greg Ungerer]&lt;/ref&gt;. The screenshot shows Xcopilot used on this CD to run a webserver explaining how to use the CD.
+
+== Obtaining Xcopilot ==
+Xcopilot is no longer maintained, and there are problems building
+it on recent distributions of Linux. You may instead wish to use the [[Palm OS Emulator]].
+
+*********************************************************************
+Xcopilot can be compiled successfully on Suse Linux 10.1 after making a few changes in the source code,
+as follows:
+
+1.  cd to subdirectory mc68k
+2.  edit file custom.c line 803:
+
+        static unsigned long cycles;   /* original */
+    
+by deleting &quot;static&quot;
+
+        unsigned long cycles;         /* new */
+
+3.  edit file memory.c
+
+line 382:
+
+         if ((*((char *)rom)++ &amp; *bootmask++) != *bootsign++)
+             return 0;
+
+by changing it to:
+
+         { if  ((*((char *)rom)   &amp; *bootmask++) != *bootsign++)
+              return 0;
+         rom++;
+         }
+
+line 501:
+
+        (char *) rommemory -= offset;   /* original */
+
+by changing it to:
+
+        rommemory = (char *) rommemory - offset;  /* new */
+
+********************************************************************
+
+Notes:
+
+a. The patches above also fixed xcopilot compilation on a Ubuntu 8.04 (Hardy) system;
+
+b. To compile the above sources, you will need to install the development packages for libxpm-dev and libxt-dev (if they aren't installed already), or else you will 
+get compilation errors because of missing header files;
+
+c. The binary produced with the above procedure mostly works, but has the following shortcomings:
+
+c1. will only be able to use PalmOS 1.0 and  2.0 ROMs (anything from 3.0 and above will either make xcopilot output &quot;E - Error loading ROM file&quot; or &quot;Fatal/BUSERR&quot; 
+error messages to stderr, or will simply hang with no messages;
+
+c2. [[Graffiti (Palm OS)|Graffiti]] will not work: you will have to use the on-screen keyboard to input anything;
+
+c3. The emulated Palm will turn itself off  every few seconds,requiring you to hit the power-on button all the time to continue.
+
+********************************************************************
+
+d. There does not seem to be any current Xcopilot homepage. The most up to date source for using Xcopilot with uClinux is the version in CVS on cvs.uclinux.org.
+
+ cvs -d:pserver:anonymous@cvs.uclinux.org:/var/cvs login
+
+Just press enter at the password prompt, and then run:
+
+ cvs -d:pserver:anonymous@cvs.uclinux.org:/var/cvs checkout xcopilot
+
+Otherwise a reasonably recent version can be downloaded from http://www.uclinux.org/pub/uClinux/utilities/xcopilot-0.6.6-uc0.tar.gz
+
+== References ==
+&lt;references/&gt;
+
+==External links==
+*[http://www.dedicated-systems.com/vpr/layout/display/pr.asp?PRID=3491 Tutorial] a tutorial on getting uClinux working with Xcopilot.
+
+[[Category:Emulation software]]</rev></revisions></page></pages></query></api>

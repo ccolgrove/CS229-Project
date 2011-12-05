@@ -1,0 +1,69 @@
+<?xml version="1.0"?><api><query><pages><page pageid="11442874" ns="0" title="JMicron"><revisions><rev xml:space="preserve">{{Infobox Company |
+  company_name   = JMicron Technology Corporation |
+  company_logo   = [[Image:JMicron logo.jpg]] |
+  company_type   = |
+  foundation     = |
+  location_city  = [[Hsinchu]] |
+  location_country = [[Taiwan]] |
+  key_people     = |
+  industry       = [[Computer industry|Computer]]|
+  products       = [[Chipset]]s |
+  revenue        = |
+  operating_income = |
+  net_income     = |
+  num_employees  = |
+  parent         = |
+  subsid         = |
+  homepage       = [http://www.jmicron.com/ www.jmicron.com]
+}}
+
+'''JMicron Technology Corporation'''([[Chinese language|Chinese]]: æºå¾®ç§æ) is a [[Taiwan]]ese manufacturer of [[integrated circuits]] which mostly produces [[Serial ATA]] and related controller chips.&lt;ref&gt;[http://www.jmicron.com/Product_list.htm JMicron's product list]&lt;/ref&gt;
+
+Its chips are used by a number of companies, such as [[ASUS]],&lt;ref&gt;[http://support.asus.com/download/download.aspx?SLanguage=en-us&amp;model=M2V-MX&amp;type=map&amp;mapindex=4 Reference to JMicron on ASUS website.]&lt;/ref&gt; [[Gigabyte Technology|Gigabyte]], and [[MSI]]&lt;ref&gt;[http://www.msicomputer.com/product/p_spec.asp?model=P965_Neo-F&amp;class=mb MSI's original P965 Neo-F with JMicron controller]&lt;/ref&gt; in [[PC motherboard]]s, though because of difficulties, newer MSI models have moved to using integrated [[Marvell]] controllers.&lt;ref&gt;[http://global.msi.com.tw/index.php?func=proddesc&amp;prod_no=1275&amp;maincat_no=1&amp;cat2_no=170&amp;cat3_no=2 MSI P965 Neo-F version 2, with JMicron controller replaced]&lt;/ref&gt;
+
+==SSD Controllers==
+JMicron's JMF601 and JMF602 SATA [[flash controller]]s were reported to have issues with write latency, causing a stuttering problem.&lt;ref&gt;[http://www.dailytech.com/OCZ+Once+Again+Slashes+the+Price+of+Core+Series+SSDs/article12993.htm OCZ Once Again Slashes the Price of Core Series SSDs]&lt;/ref&gt;&lt;ref&gt;[http://www.bit-tech.net/hardware/2008/12/03/g-skill-patriot-and-intel-ssd-test/10 G.Skill, Intel &amp; Patriot SSD group test]&lt;/ref&gt; The performance problem was attributed to the small buffer size used in the controller.&lt;ref&gt;[http://www.tomshardware.com/news/ssd-jmicron-jmf602,7057.html Avoid SSDs with Jmicron's JMF602 Controller]&lt;/ref&gt; Some manufacturers tried to get around the problem by using 2 JMicron controllers and added more cache, but this increased the cost and still failed to deliver the improved performance.&lt;ref&gt;[http://www.tomshardware.com/news/super-talent-intel-ssd,7978.html Super Talent Claims Its SSDs Can Rock Intel's]&lt;/ref&gt; In June 2008, JMicron released version B of the affected controllers, which claimed to improve write latency and allow reserving more spare blocks to overcome the issue,&lt;ref name=&quot;DailyTech&quot;&gt;{{cite news
+| url=http://www.dailytech.com/Exclusive+Interview+With+JMicron+on+SSD+Controllers/article14004.htm
+| first=Jansen | last=Ng
+| title=Exclusive Interview With JMicron on SSD Controllers
+| date=22 January 2009
+| publisher=[[DailyTech]]
+| accessdate = 2009-01-23
+}}&lt;/ref&gt; but Anandtech's test showed that although JMF602B has twice the cache of the JMF602A controller and has less stutter, 4KB random write has 74x the latency and under 2% write speed of Western Digital VelociRaptor 300GB.&lt;ref&gt;[http://anandtech.com/storage/showdoc.aspx?i=3531 The SSD Anthology: Understanding SSDs and New Drives from OCZ]&lt;/ref&gt;
+
+JMicron's [[solid-state drive|SSD]] [[Flash memory controller|controller]] is widely adopted by many SSD manufacturers such [[ASUS Eee PC]], [[Corsair Memory|Corsair]],&lt;ref&gt;http://www.hardwaresecrets.com/news/4585&lt;/ref&gt; [[OCZ]], and [[Transcend]]. JMicron was the first{{Citation needed|date=March 2009}} company to provide an SSD controller chip to these companies, allowing them to produce reasonably priced [[MLC]] SSDs. JMicron was to announce a new SSD controller with a DRAM cache in Q3 2009,&lt;ref name=&quot;DailyTech&quot;/&gt; but no such announcement occurred.
+
+JMF602 would be succeeded by JMF612.&lt;ref&gt;[http://www.dailytech.com/SSD+Prices+Could+be+Cut+in+Half+Due+to+New+JMicron+Flash+Controller++32nm+NAND+Flash/article14176.htm  SSD Prices Could be Cut in Half Due to New JMicron Flash Controller &amp; 32nm NAND Flash]&lt;/ref&gt;
+
+==Linux Compatibility==
+JMicron SATA/IDE controllers are often incompatible with some boot loaders. In particular, those using [[GNU GRUB|GRUB]], such as [[Ubuntu (operating system)|Ubuntu]], cannot boot in some conditions (2006/08, 2.6.17).&lt;ref&gt;[https://bugs.launchpad.net/bugs/57502 Bug #57502: JMicron PATA/SATA Controller does not work]&lt;/ref&gt; The 2.6.18 Linux kernel and JMicron controller BIOS 1.06.53&lt;ref&gt;[http://www.jmicron.com/Support_FAQ.html JMicron FAQ]&lt;/ref&gt; solved these incompatibilities, but may not be present in existing products, or may require re-flashing the motherboard BIOS. Other bootloaders such as the [[Windows]] [[NTLDR]] boot loader and [[EXTLINUX]] work fine. It has been fixed by the latest distros.
+
+== Security breach ==
+According to the comprehensive analysis of [[Stuxnet]] virus released by Symantec in 2011&lt;ref&gt;[http://www.symantec.com/content/en/us/enterprise/media/security_response/whitepapers/w32_stuxnet_dossier.pdf | W32.Stuxnet Dossier - Version 1.4 (February 2011)]&lt;/ref&gt;, a JMicron's digital certificate for Windows got compromised, allowing attacker to digitally sign malicious drivers, then revoked by [[Verisign]] : ''&quot;The attackers would have needed to obtain the digital certificates from someone who may have physically entered the premises of the two companies'' [ [[Realtek]] and JMicron] ''and stole them, as the two companies are in close physical proximity.&quot;'' states the report.
+
+==Products==
+JMicron makes products for a number of different applications, including:
+
+* PATA-SATA translation Bridge
+* USB-ATA bridge
+* 1394+USB-SATA bridge
+* PCI-Express-ATA bridge
+* PCI Express-1394 bridge
+* SATA Port Multiplier/Selector with RAID
+* PCI Express-Ethernet bridge
+* USB+SATA flash controller
+* SSD controller
+
+==References==
+{{reflist}}
+
+==External links==
+* [http://www.jmicron.com/ JMicron official website]
+
+{{Solid-state Drive}}
+
+{{DEFAULTSORT:Jmicron}}
+
+[[Category:Electronics companies of Taiwan]]
+
+[[ko:JMicron]]</rev></revisions></page></pages></query></api>

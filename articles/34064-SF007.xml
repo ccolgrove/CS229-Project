@@ -1,0 +1,421 @@
+<?xml version="1.0"?><api><query><pages><page pageid="34064" ns="0" title="Windows 95"><revisions><rev xml:space="preserve">{{Use mdy dates|date=August 2010}}
+{{Infobox OS version
+|               name = Windows 95
+|             family = Microsoft Windows
+|               logo = Windows 95 logo.svg
+|         screenshot = Windows 95 Desktop screenshot.png
+|            caption = Screenshot of Windows 95
+|          developer = [[Microsoft]]
+|            website = 
+|       source_model = [[Closed source software|Closed source]]
+|            license = [[Proprietary software|Proprietary]] [[commercial software]]
+|supported_platforms = [[IA-32]]
+|        kernel_type = [[Monolithic kernel|Monolithic]]
+|        preceded_by = [[Windows 3.1x]]
+|       succeeded_by = [[Windows 98]]
+| first_release_date = {{Start date and age|1995|August|24}}
+|  first_release_url = http://www.washingtonpost.com/wp-srv/business/longterm/microsoft/stories/1995/debut082495.htm
+|    release_version = 4.0 (Build 950 C: OEM Service Release 2.5)
+|       release_date = {{Start date and age|1997|11|26}}
+|        release_url = http://www.windowsitpro.com/Articles/ArticleID/17404/17404.html?Ad=1
+|    preview_version =
+|       preview_date =
+|        preview_url =
+|     support_status = Unsupported as of December 31, 2001&lt;ref&gt;{{cite web
+  |title=Windows Life-Cycle Policy
+  |url=http://www.microsoft.com/windows/lifecycle/default.mspx
+  |publisher=Microsoft
+  |date=3 April 2008
+  |accessdate=6 September 2009
+  }}&lt;/ref&gt;
+|              date = January 2009&lt;!-- approximate date of template insertion for dating hidden maintenance categories --&gt;
+}}
+
+'''Windows 95''' is a consumer-oriented [[graphical user interface]]-based [[operating system]]. It was released on August 24, 1995 by [[Microsoft]],&lt;ref name=WashPost1995&gt;{{cite news|title=With Windows 95's Debut, Microsoft Scales Heights of Hype|author=David Segal|url= http://www.washingtonpost.com/wp-srv/business/longterm/microsoft/stories/1995/debut082495.htm| publisher=Washington Post|date=1995-08-24 |accessdate=2011-03-24}}&lt;/ref&gt; and was a significant progression from the company's previous [[Microsoft Windows|Windows]] products. During development it was referred to as '''Windows 4.0''' or by the [[Microsoft codenames|internal codename]] '''[[Chicago (font)|Chicago]]'''.
+
+Windows 95 integrated Microsoft's formerly separate [[MS-DOS]] and [[Microsoft Windows|Windows]] products. It featured significant improvements over its predecessor, [[Windows 3.1x|Windows 3.1]], most notably in the graphical user interface (GUI) and in its relatively simplified &quot;plug-n-play&quot; features. There were also major changes made at lower levels of the operating system, such as moving from a mainly 16-bit architecture to a pre-emptively multitasked 32-bit architecture.
+
+In the marketplace, Windows 95 was a major success, and within a year or two of its release had become the most successful operating system ever produced. It also had the effect of driving other major players (including [[OS/2]]) out of business, something which would later be [[DR-DOS#The Microsoft Lawsuit|used in court]] against Microsoft. Some three years after its introduction, Windows 95 was succeeded by [[Windows 98]].
+
+==Development==
+{{Ref improve section|date=April 2010}}
+The initial design and planning of Windows 95 can be traced back to around March 1992,&lt;ref&gt;Comes v. Microsoft. [http://groklaw.net/pdf/iowa/www.iowaconsumercase.org/011607/1000/PX01263.pdf Plaintiff's Exhibit 1263].&lt;/ref&gt;&lt;ref&gt;Comes v. Microsoft. [http://groklaw.net/pdf/iowa/www.iowaconsumercase.org/011607/1000/PX01308.pdf Plaintiff's Exhibit 1308].&lt;/ref&gt;&lt;ref&gt;Comes v. Microsoft. [http://groklaw.net/pdf/iowa/www.iowaconsumercase.org/011607/1000/PX01310.pdf Plaintiff's Exhibit 1310].&lt;/ref&gt; just after the release of [[Windows 3.1x|Windows 3.1]]. At this time ''Windows for Workgroups 3.1'' and [[Windows NT 3.1]] were still in development and Microsoft's plan for the future was focused on [[Cairo (operating system)|Cairo]]. Cairo would be Microsoft's next-generation operating system based on Windows NT and featuring a new user interface and an object-based file system, but it was not planned to be shipped before 1994 (Cairo would eventually partially ship in July 1996 in the form of [[Windows NT 4.0]], but without the object-based file system, which would later evolve into [[WinFS]]).
+
+Simultaneously with Windows 3.1's release, [[IBM]] started shipping [[OS/2 2.0#32-bit era|OS/2 2.0]]. Microsoft realized they were in need of an updated version of Windows that could support 32-bit applications and preemptive multitasking, but could still run on low-end hardware (Windows NT did not).&lt;!--PX 1308--&gt; So the development of Windows &quot;Chicago&quot; was started and, as it was planned for a late 1993 release, became known as Windows 93. Initially the decision was made not to include a new user interface, as this was planned for Cairo, and only focus on making installation, configuration, and networking easier. Windows 93 would ship together with MS-DOS 7.0 offering a more integrated experience to the user and making it pointless for other companies to create DOS clones.&lt;!--PX 1308--&gt; MS-DOS 7.0 was in development at that time under the code name &quot;Jaguar&quot; and could optionally run on top of a Windows 3.1-based 32-bit protected mode kernel called &quot;Cougar&quot; in order to better compete with [[DR-DOS]].&lt;!--http://antitrust.slated.org/www.iowaconsumercase.org/TP011907.txt / PX03512 --&gt;
+
+The Chicago project was led by [[Brad Silverberg]], who was at that time, senior vice president of the personal systems division at Microsoft. Microsoft's product plan looked as follows:
+
+{| class=wikitable
+! Codename !! Planned release date !! Description !! Released as
+|-
+| &quot;Janus&quot;&lt;ref name=&quot;comes1285&quot;&gt;Comes v. Microsoft. [http://groklaw.net/pdf/iowa/www.iowaconsumercase.org/011607/1000/PX01285.pdf Plaintiff's Exhibit 1285].&lt;/ref&gt; || March 1992 || || Windows 3.1
+|-
+| &quot;Astro&quot;&lt;ref name=&quot;comes1285&quot;/&gt; || September 1992 || Upgrade to MS-DOS 5.0, adding third party tools to surpass DR-DOS 6.0 in features. || MS-DOS 6.0
+|-
+| &quot;Winball&quot;&lt;ref name=&quot;comes1285&quot;/&gt; || || || Windows for Workgroups 3.1
+|-
+| &quot;Jaguar&quot;&lt;ref name=&quot;comes1285&quot;/&gt; || June 1993 || Next major release of real-mode MS-DOS, better integrating with Windows || (MS-DOS 7.0)
+|-
+| &quot;Cougar&quot;&lt;ref name=&quot;comes1285&quot;/&gt; || June 1993 || A 32-bit protected-mode MS-DOS kernel based on Windows' 386 enhanced-mode kernel || (Windows 95 VMM)
+|-
+| &quot;Panther&quot;&lt;ref name=&quot;comes1285&quot;/&gt; || June 1993 || The 32-bit Windows subsystem that could run on top of &quot;Cougar&quot; implementing a subset of Windows NT's Win32 API, but a superset of the [[Win32s]] API. || Windows 95
+|-
+| &quot;Rover&quot;&lt;ref name=&quot;comes1285&quot;/&gt; || June 1993 || Windows for Mobile Computing, based on &quot;Panther&quot; ||
+|-
+| NT || || A new version of Windows built from the ground up as an operating system for servers and workstations. || Windows NT 3.1
+|-
+| &quot;Cairo&quot; || || || Windows NT 4.0
+|}
+
+The first version of Chicago's feature specification was finished on September 30, 1992. &lt;!-- PX05516 --&gt; Cougar was to become Chicago's kernel.
+
+===Beta===
+Prior to the official release, the American public was given a chance to preview Windows 95 in the Windows 95 Preview Program. For [[US$]]19.95, users were sent a set of 3.5-inch floppy diskettes that would install Windows 95 either as an upgrade to Windows 3.1x or as a fresh install on a clean computer. Users who bought into the program were also given a free preview of [[MSN|The Microsoft Network]] (MSN), the online service that Microsoft launched with Windows 95. The preview versions expired in November 1995, after which the user would have to purchase their own copy of the final version of Windows 95. Some releases were made that haven't been leaked, such as Chicago 30.
+
+Several Windows 95 betas were released before the final launch:
+
+{| class=&quot;wikitable&quot; style=&quot;font-size: 85%&quot;
+|-
+!Build 58s
+|Build 58s introduced a Start menu prototype. It divided the functions of the Windows 95 Start menu up into three buttons. Future Chicago builds combined these three into the Start button still recognized today.
+
+Build 58s included a new File Manager, Chicago Explorer, which remained relatively unchanged in the initial version of Windows 95 and in [[Windows NT 4.0]]. Build 58s still included Program Manager as found in Windows 3.1, although this application was supplemented by the new desktop and taskbar/Start menu designs.
+
+This build also introduced [[File shortcut|shortcuts]] (Chicago referred to them as Links) and native [[right click]] functionality, which Windows 3.1 lacked. It also introduced long file name support.
+|[[File:Windows Chicago (build 58) boot screen.jpg|160px|The Windows Chicago Build 58 boot screen.]]
+|[[File:winchicagodesktop.png|160px|Windows Chicago Build 58s desktop.]]
+|-
+!Build 73g
+|Build 73g is the next leaked build of Windows Chicago with a date stamp of November 1993. It is mostly the same as Build 58, with a few UI tweaks and a network logon box at startup.
+|[[File:Windows Chicago (build 73) boot screen.gif|160px]]
+|[[File:windowschicago73.png|160px|A screenshot of the Windows Chicago build 78 desktop.]]
+|-
+!Build 81
+|Build 81 follows build 73g. The date stamp says it is from January 1994. The three start buttons are combined into one. However the 8 character folder limit makes the Start Menu item &quot;Accessories&quot; read &quot;access~1&quot;. Programs running are only displayed on the taskbar. The briefcase UI was improved. The My Computer item is displayed when opened as :drives and Network as :network
+|
+|
+|-
+!Build 122
+|Build 122 was the first version of Chicago to call itself a Beta edition. Again, there is not much info on this version, but there is a date stamp of June 9, 1994.
+|
+|
+|-
+!Build 189
+|Build 189 is the first version to call itself Windows 95. The date stamp is marked September 21, 1994. The UI has been completely re-done to where it looks and feels like the final version of Windows 95, though there still are numerous things left over from Chicago. The start menu also slightly differs from newer builds of Windows 95, as there is actually color along the side.
+|
+|[[File:windowschicago189.png|160px|A screenshot of Windows Chicago build 189.]]
+|-
+!Build 224
+|Build 224 is Windows 95 beta 2. Only a date stamp of November 8, 1994 can be found as information on this build.
+|
+|
+|-
+!Build 347
+|Build 347 is the Windows 95 &quot;Final Beta Release&quot;. The build number refers to a German release, but seems to install in English. This version has a date stamp of March 17, 1995.
+|[[File:windowschicago347.png|160px|The startup screen from build 347.]]
+|
+|-
+!Build 468
+|Build 468 is the May Test Release version of Windows 95, with a date stamp of May 11, 1995. This version is so close to the final Windows 95, it can be mistaken for it.
+|rowspan=3 | [[File:windowschicago490.png|160px|The startup screen from build 468, 480 and 490.]]
+|rowspan=3 |
+|-
+!Build 480
+|Build 480 is the May Test Release. It was released in two languages: English and German. 
+|-
+!Build 490 (RC1)
+|Build is dated June 8, 1995. The build number seems to indicate that this is Release Candidate 1.
+|}
+
+===Release===
+[[File:Windows95BOXSHOT.png|thumb|right|200px|Microsoft Windows 95 operating system cover shot]]
+Windows 95 was released with great fanfare, including a commercial featuring the [[The Rolling Stones|Rolling Stones']] 1981 single &quot;[[Start Me Up]]&quot; (a reference to the Start button).&lt;ref&gt;Microsoft detractors were quick to point out that the second verse of &quot;Start Me Up&quot; begins &quot;you make a grown man cry&quot; (a line which is repeated throughout). The phrase subsequently featured as a humorous reference in many critical expositions of Windows 95.&lt;/ref&gt; It was widely reported that [[Microsoft]] paid the [[Rolling Stones]] between US$8 and US$14 million for the use of the song in the 95 advertising campaign. According to sources at Microsoft, however, this was just a rumor spread by the Stones to increase their market value, and Microsoft actually paid a fraction of that amount.&lt;ref&gt;{{cite web |url=http://weblogs.jupiterresearch.com/analysts/gartenberg/archives/016913.html |title=The Story behind &quot;Start Me Up&quot; and Windows 95 |author=Michael Gartenberg |date=22 August 2006 |publisher=JupiterResearch |archiveurl=http://web.archive.org/web/20071214054208/http://weblogs.jupiterresearch.com/analysts/gartenberg/archives/016913.html |archivedate=14 December 2007 |accessdate=9 September 2009}} Internet Archive&lt;/ref&gt; A 30-minute promotional video, labeled a &quot;cyber sitcom&quot;, featuring [[Jennifer Aniston]] and [[Matthew Perry (actor)|Matthew Perry]], was also released to showcase the features of Windows 95. Microsoft's US$300 million advertising campaign featured stories of people waiting in line outside stores to get a copy.{{Citation needed|date=August 2010}}
+
+In the UK, the largest computer chain [[PC World (retailer)|PC World]] received a large number of oversized Windows 95 boxes, posters and point of sale material, and many branches opened at midnight to sell the first copies of the product, although these customers were far fewer in number than publicity had suggested.{{Citation needed|date=August 2010}} In [[London]] Microsoft gave free newspapers to people.&lt;ref name=&quot;FriedCNET&quot;&gt;Fried, Ina. &quot;[http://www.cnn.com/2010/TECH/web/08/25/cnet.microsoft.windows/index.html?iref=NS1 Windows 95 turns 15: Has Microsoft's OS peaked?]&quot; ''[[CNET]]'' at ''[[CNN]]''. August 25, 2010. Retrieved on August 26, 2010.&lt;/ref&gt;
+
+In the [[United States]], the [[Empire State Building]] in [[New York City]] was lit to match the colors of the Windows logo.&lt;ref name=WashPost1995/&gt; In [[Canada]], a {{convert|328|ft|m|abbr=on}} banner was hung from the top of the [[CN Tower]] in [[Toronto, Canada|Toronto]]. Copies of [[The Times]] were available for free in the [[United Kingdom]] where Microsoft paid for 1.5 million issues (twice the daily circulation at the time).
+
+The release included a number of &quot;Fun Stuff&quot; items on the CD, including music videos of [[Edie Brickell]]'s &quot;Good Times, Bad Times&quot;&lt;ref&gt;{{cite web|url=http://www.youtube.com/watch?v=xSA-CWme3pM|title=Edie Brickell - Good Times, Bad Times |publisher=YouTube.com}}&lt;/ref&gt; and [[Weezer]]'s &quot;[[Buddy Holly (song)|Buddy Holly]]&quot;, most notably resulting in a sudden skyrocket in the popularity of the video and song &quot;[[Buddy Holly (song)|Buddy Holly]]&quot; that won [[Weezer]] a place in MTV Music Video Awards history.&lt;ref&gt;{{cite web | url=http://www.mtv.com/ontv/vma/1995|title=
+1995 MTV Video Music Awards on mtv.com |accessdate=2011-01-04 |publisher=''mtv.com''}}&lt;/ref&gt;
+
+==Architecture==
+[[Image:Windows 95 architecture.png|thumb|Architectural diagram]]
+
+Windows 95 was designed to be maximally compatible with existing [[MS-DOS]] and 16-bit Windows applications and [[device drivers]], while under this constraint offering a more stable and better performing system.&lt;ref name=&quot;pre-multi&quot;&gt;{{cite web|url=http://support.microsoft.com/kb/117567/EN-US/|title=How 16-Bit and 32-Bit Programs Multitask in Windows 95 |publisher=support.microsoft.com |date=2006-11-15 |accessdate=2010-04-09}}&lt;/ref&gt;&lt;ref name=&quot;w95-archi&quot;&gt;{{cite web|url=http://technet.microsoft.com/en-us/library/cc751120.aspx |lang=en|title=Windows 95 Architecture Components|work=[[Microsoft Technet]]|publisher=Microsoft |date= |accessdate=2011-03-24}}&lt;/ref&gt; Architecturally, Windows 95 can be considered an evolution of [[Windows for Workgroups]]' 386 enhanced mode. The lowest level of the operating system is formed by a large number of ''[[VxD|virtual device drivers]]'' (VxDs) running in 32-bit [[protected mode]] and one or more virtual DOS machines running in [[virtual 8086 mode]]. The virtual device drivers can be responsible for handling physical devices (such as video and network cards), emulating virtual devices used by the virtual machines, or providing various system services. The three most important virtual device drivers are:
+
+;Virtual Machine Manager: The Virtual Machine Manager (&lt;code&gt;VMM32.VXD&lt;/code&gt;) can be considered the [[kernel (computing)|kernel]] of Windows 95 and is responsible for tasks such as [[memory management]], [[event handling|event]] and [[interrupt handling]], loading and initialization of virtual device drivers, the creation of new virtual machines, and [[scheduling (computing)|scheduling]] of [[thread (computer science)|threads]].
+;Configuration Manager: The Configuration Manager (CONFIGMG) is responsible for implementing [[Legacy Plug and Play|Plug and Play]] functionality. It detects devices in the system using several ''bus enumerators'', monitors the system for changes to the hardware configuration. It is responsible for assigning various resources ([[I/O port]]s, [[IRQ]]s, [[DMA channel]]s, and [[memory-mapped I/O|memory]]) to the devices in a conflict free fashion.
+;Installable File System Manager (Input/Output Subsystem): The Installable File System Manager coordinates the access to various file systems. Windows 95 ships with support for [[FAT16]], and in later releases [[FAT32]], file systems (VFAT), [[ISO 9660]] (CDFS), and several [[network redirector]]s. A dynamically sized [[disk buffer]] is provided by VCACHE. In the ''Block I/O Subsystem'', requests are scheduled by the ''Input/Output Supervisor''. Access to the disk is performed by a ''port driver'', or in the case of a [[SCSI]] device, by a ''[[miniport]]'' driver working atop the SCSI layer.
+:Like Windows for Workgroups running with [[32-bit file access|32-bit file]] (based on [[IFSHLP.SYS]]) and [[32-bit disk access|disk access]] enabled, I/O operations can be handled entirely in 32-bit protected mode, bypassing [[MS-DOS]] and the [[BIOS]], giving a significant performance improvement. In case there is no native Windows driver for a certain storage device, or if a device is forced to run in compatibility mode, the ''Real Mode Mapper'' port driver can access it through MS-DOS.
+
+The [[Win32 API]] is implemented by three modules, each consisting of a 16-bit and a 32-bit component:
+;Kernel: Kernel (&lt;code&gt;KRNL386.EXE&lt;/code&gt;, &lt;code&gt;[[KERNEL32.DLL]]&lt;/code&gt;, and &lt;code&gt;VWIN32.VXD&lt;/code&gt;) provides high level access to functions such as [[memory management|memory]] and [[process management (computing)|process management]], and access to the file system.
+;User: User (&lt;code&gt;USER.EXE&lt;/code&gt; and &lt;code&gt;[[USER32.DLL]]&lt;/code&gt;) is responsible for managing and drawing the various [[user interface]] components, such as [[window (computing)|windows]], [[menu (computing)|menus]], and [[button (computing)|buttons]].
+;GDI: The [[Graphics Device Interface]] (&lt;code&gt;GDI.EXE&lt;/code&gt; and &lt;code&gt;GDI32.DLL&lt;/code&gt;) is responsible for drawing graphics in a device-independent way.
+
+===Dependence on MS-DOS===
+{{Ref improve section|date=April 2010}} &lt;!-- Add citations to Andrew Schulman (Win95 has some critical dependencies on MS-DOS) and Raymond Chen (MS-DOS only has minor role as compatibility layer) --&gt;
+
+To end-users, MS-DOS appeared as an underlying component of Windows 95. For example, it was possible to prevent loading the graphical user interface and boot the system into a real-mode MS-DOS environment. This sparked debate amongst users and professionals over the question of to what extent Windows 95 was an operating system or merely a graphical shell running on top of MS-DOS. From an architectural stance, both viewpoints lack nuance.
+
+When the graphical user interface was started, the virtual machine manager took over the filesystem-related and disk-related functionality from MS-DOS, which itself was demoted to a compatibility layer for 16-bit device drivers.&lt;ref name=ChenMSDN&gt;{{cite web |url=http://blogs.msdn.com/b/oldnewthing/archive/2007/12/24/6849530.aspx |title=What was the role of MS-DOS in Windows 95? |authorlink=Raymond Chen |last=Chen |first=Raymond |work=The Old New Thing |publisher=MSDN.com |date=2008-12-24 |accessdate=2011-03-24}}&lt;/ref&gt; This contrasted with earlier versions of Windows which relied on MS-DOS to perform file and disk access. (Windows for Workgroups 3.11 could also largely bypass MS-DOS when [[32-bit file access]] and [[32-bit disk access]] was enabled.) Keeping MS-DOS in memory &lt;!-- &quot;in memory&quot; vs. &quot;running&quot;: as far as I'm aware MS-DOS was not scheduled CPU time in the same sense as other threads in the system are, it is only active if called. --&gt; allowed Windows 95 to use DOS device drivers if suitable Windows drivers were unavailable. MS-DOS also still handled most other functions (for example, allocating memory and parsing file names), issued by legacy Win16 and DOS applications, as Microsoft saw little benefit in replacing these helper functions with newly-written 32-bit code.&lt;ref name=ChenMSDN/&gt;
+
+A negative consequence of keeping MS-DOS around was that Windows had to do some work to keep DOS's internal data structures synchronized with those of Windows itself. When starting an application, even a native 32-bit Windows application, MS-DOS would momentarily execute to create a data structure (the [[program segment prefix]]) and it was even theoretically possible for MS-DOS to run out of [[conventional memory]] while doing so, preventing the application from launching.&lt;ref&gt;{{harvnb|Schulman|1994}}&lt;/ref&gt;{{Page needed|date=February 2011}} Windows 3.x in fact allocated FIXED segments in conventional memory first, which can conflict. And since the segments were allocated as FIXED, Windows could not move them, which would prevent any more applications from launching. This was fixed in Windows 95. {{Citation needed|date=September 2010}}&lt;!--add citation to MSJ article or other sources describing this.--&gt;
+
+==User interface==
+[[File:Windows 95 at first run.jpg|300px|right|thumb|Windows 95 first-run dialog, explaining use of the Start button.]]
+Some basic elements of the interface introduced in Windows 95 â such as the desktop metaphor with the [[taskbar]] at the bottom, Start button and the Windows Explorer file manager â remain fundamentally unchanged in later versions of Windows, such as [[Windows 7]] and [[Windows Server 2008 R2]], nearly 15 years later. The word &quot;Start&quot; was dropped from the button in [[Windows Vista]] in 2006, with the company preferring to label the button with the Windows logo (&quot;Start&quot; is still present as a [[tooltip]] and in the classic GUI mode). The [[Start menu]] introduced in Windows 95 was included at least up to and including Windows 7.
+
+When released for Windows 95, [[Internet Explorer 4|Internet Explorer 4.0]] came with an optional [[Shell (computing)|shell]] update known as [[Windows Desktop Update]] that changed the user interface significantly. That update gave Windows 95 (and Windows NT 4.0) features that would become the [[GUI|graphical user interface]] of [[Windows 98]].
+
+==Technical improvements==
+Windows 95 included support for 255-character mixed-case [[long filename]]s&lt;ref&gt;255-character mixed-case long filename is possible only for files and/or folders with no sub-folders at the root folder of any drive.&lt;/ref&gt; and [[Preemption (computing)|preemptively]] multitasked pseudo-protected-mode 32-bit applications. Whereas earlier versions of Windows are optional &quot;DOS extending shells&quot; requiring MS-DOS or an MS-DOS compatible operating system (usually sold separately), Windows 95 incorporated MS-DOS into a consolidated operating system, which was a significant marketing change. The release of Windows 95 also marked wider acceptance of [[Legacy Plug and Play|Plug and Play]] standards on the IBM PC platform.
+
+===Long file names===
+[[32-bit File Access]] is necessary for the ''long file names'' feature introduced with Windows 95 through the use of the [[File Allocation Table|VFAT]] file system. It is available to both Windows programs and MS-DOS programs started from Windows (they have to be adapted slightly, since accessing long file names requires using larger [[pathname]] [[Buffer (computer science)|buffers]] and hence different [[system call]]s). Competing DOS-compatible operating systems released before Windows 95 cannot see these names. Using older versions of DOS utilities to manipulate files means that the long names are not visible and are lost if files are moved or renamed, as well as by the copy (but not the original), if the file is copied. During a Windows 95 automatic upgrade of an older Windows 3.1 system, DOS and third-party disk utilities which can destroy long file names are identified and made unavailable ([[Microsoft Anti-Virus for Windows]] indicated that the upgrade program was itself a [[computer virus]]). When Windows 95 is started in DOS mode, e.g. for running DOS programs, low-level access to disks is locked out. In case the need arises to depend on disk utilities that do not recognize long file names, such as MS-DOS 6.x's defrag utility, a program called LFNBACK for backup and restoration of long file names is provided on the CD-ROM. The program is in the \ADMIN\APPTOOLS\LFNBACK directory of the Windows 95 CD-ROM.
+
+===32-bit===
+Windows 95 followed [[Windows for Workgroups]] 3.11 with its lack of support for older, 16-bit [[x86]] processors, thus requiring an [[Intel 80386]] (or compatible).
+
+The introduction of [[32-bit File Access]] in Windows for Workgroups 3.11 meant that 16-bit real mode MS-DOS is not used for managing the files while Windows is running, and the earlier introduction of the [[32-bit Disk Access]] means that the PC [[BIOS]] is not used for managing hard disks. This essentially reduces MS-DOS to the role of a [[booting|boot loader]] for the protected-mode Windows kernel. DOS can be used for running old-style [[device driver|drivers]] for compatibility, but Microsoft discourages using them, as this prevents proper multitasking and impairs system stability. [[Control Panel (Windows)|Control Panel]] allows a user to see what MS-DOS components are used by the system; optimal performance is achieved when they are bypassed. The Windows [[kernel (computer science)|kernel]] uses MS-DOS style real-mode drivers in ''[[Safe Mode]],'' which exists to allow a user to fix problems relating to loading native, protected-mode drivers.
+
+==Internet Explorer==
+Windows 95 originally shipped without [[Internet Explorer]], and the default network installation did not install TCP/IP, the network protocol used on the Internet. At the release date of Windows 95, Internet Explorer 1.0 was available, but only in the Plus! add-on pack for Windows 95, which was a separate product. The Plus! Pack did not reach as many retail consumers as the operating system itself (it was mainly advertised for its add-ons such as themes and better disk compression) but was usually included in [[pre-installed]] ([[Original equipment manufacturer|OEM]]) sales, and at the time of Windows 95 release, the web was being browsed mainly with a variety of early web browsers such as Netscape (promoted by products such as [[Internet in a Box]]).
+
+Windows 95 OEM Service Release 1 was the first release of Windows to include [[Internet Explorer]] (version [[Internet Explorer 2|2.0]]) with the OS. While there was no uninstaller, it could be deleted easily if the user so desired. OEM Service Release 2 included [[Internet Explorer 3]]. The installation of [[Internet Explorer 4]] on Windows 95 (or the OSR2.5 version preinstalled on a computer) gave Windows 95 active desktop and browser integration into Windows Explorer, known as the Windows Desktop Update. The CD version of the last release of Windows 95, OEM Service Release 2.5 (Version 4.00.950C), includes Internet Explorer 4, and installs it after Windows 95's initial setup and first boot is complete.
+
+Only the 4.x series of the browser contained the Windows Desktop Update features, so anyone wanting the new shell had to install IE4 with the desktop update before installing a newer version of Internet Explorer. The last version of Internet Explorer supported on Windows 95 is [[Internet Explorer 5.5]] which was released in 2000. Windows 95 shipped with Microsoft's own dial-up online service called [[The Microsoft Network#History|The Microsoft Network]].
+
+==Editions==
+A number of different editions of Windows 95 have been released. Only the original release was sold as a shrink-wrapped product, later editions were provided only to computer [[original equipment manufacturer]]s (OEMs) for installation on new PCs. For this reason these editions are known as '''OEM Service Releases''' ('''OSR''').
+
+Together with the introduction of Windows 95, Microsoft released the ''[[Microsoft Plus!]] for Windows 95'' pack, which contained a number of optional components for high-end (486) multimedia PCs, including Internet Explorer, DriveSpace, and additional themes.
+
+Microsoft initially indicated to make updates available to Windows 95 every 6 months in the form of [[service pack]]s. The first service pack was made available half a year after the original release and fixed a number of small bugs.
+
+The second service pack mainly introduced support for new hardware. Most notably support for hard drives larger than 2 GiB in the form of the [[FAT32]] file system. This release was never made available to end-users directly and was only sold through OEMs with the purchase of a new PC. &lt;!-- possibly hard drive --&gt;
+
+A full third service pack was never released, but two smaller updates to the second were released in the form of a USB Supplement (OSR 2.1) and the [[Windows Desktop Update]] (OSR 2.5). &lt;!-- citation needed: vaguely remember this being done under pressure from OEMs/Gateway which needed USB support more quickly, 4.03 version number certainly suggests this was originally planned as SP3. --&gt; Both were available as stand-alone updates and as updated disc images shipped by OEMs. OSR 2.5 was notable for featuring a number of changes to the Windows Explorer, integrating it with Internet Explorer 4.0âthis version of the Explorer looks very similar to the one featured in Windows 98.
+
+{| class=wikitable style=&quot;font-size: 85%; text-align: center; width: 100%&quot;
+|-
+!rowspan=2|Release
+!rowspan=2|Code name
+!rowspan=2|Release date
+!colspan=3|Version &lt;!-- first column: version as reported in the My Computer property sheet; second column: version as reported by the updated system files and microsoft knowledge base --&gt;
+!colspan=4|Software components
+!colspan=8|Hardware support
+|-
+!System properties&lt;ref group=&quot;note&quot;&gt;The version string displayed in the &quot;System properties&quot; tab. Right-click on &quot;My Computer&quot; and choose &quot;Properties&quot;.&lt;/ref&gt;
+!System files&lt;ref group=&quot;note&quot;&gt;The version of updated system files. Note that most system files that have not been updated retain their often retain their old version number. Version numbers are not consistently used: some system files may have older or newer build numbers or use a version numbering scheme separate from regular system files.&lt;/ref&gt;
+!Timestamp
+![[MS-DOS]]
+![[Internet Explorer]]
+![[DriveSpace]]
+![[DirectX]]&lt;ref group=&quot;note&quot;&gt;Upgradable to 8.0a.&lt;/ref&gt;
+![[FAT32]]
+![[Infrared Data Association|Infrared]]&lt;ref&gt;{{cite web|title=Windows 95 Support for Infrared Data Association Connectivity |url=http://support.microsoft.com/kb/139445|publisher=Microsoft|date=15 November 2006|accessdate=9 September 2009}}&lt;/ref&gt;
+![[UDMA]]&lt;ref&gt;{{cite web|title=How to Enable Direct Memory Access (DMA)|url= http://support.microsoft.com/kb/258757|publisher=Microsoft|date=27 January 2007|accessdate=9 September 2009}}&lt;/ref&gt;
+![[IRQ]] steering&lt;ref&gt;{{cite web|title=Description of PCI Bus IRQ Steering|url= http://support.microsoft.com/kb/182604|publisher=Microsoft|date=22 January 2007|accessdate=9 September 2009}}&lt;/ref&gt;
+![[USB]]
+![[AGP]]
+![[MMX (instruction set)|MMX]]&lt;ref&gt;{{cite web|title=GP Fault or Fatal Exception Error on Intel MMX CPU|url=http://support.microsoft.com/kb/156492|publisher=Microsoft|date=15 November 2006| accessdate=9 September 2009}}&lt;/ref&gt;
+![[P6 (microarchitecture)|P6]]&lt;ref&gt;{{cite web|title=Memory Management Problems on Computers with Pentium Processors|url=http://support.microsoft.com/kb/179897|publisher=Microsoft|date=22 September 2005| accessdate=9 September 2009}}&lt;/ref&gt;
+|-
+!Windows 95 (retail and OEM)
+|Chicago
+|rowspan=2|24 August 1995
+|colspan=&quot;2&quot;|4.00.950&lt;ref group=&quot;note&quot;&gt;This version of Windows 95 is sometimes called &quot;950r6&quot; because there were five prior release candidates of build 950. Release candidate 6 was the build that shipped in retail boxes.&lt;/ref&gt;
+|1995-07-11 09:50:00
+|rowspan=&quot;4&quot;|7.0
+|{{n/a}}
+|2
+|rowspan=&quot;4&quot; {{n/a}}
+|rowspan=&quot;4&quot; {{no}}
+|rowspan=&quot;2&quot; {{no}}
+|rowspan=&quot;4&quot; {{no}}
+|rowspan=&quot;4&quot; {{no}}
+|rowspan=&quot;5&quot; {{no}}
+|rowspan=&quot;5&quot; {{no}}
+|rowspan=&quot;4&quot; {{partial|Bugs}}
+|rowspan=&quot;7&quot; {{partial|Bugs}}
+|-
+!Microsoft Plus! for Windows 95
+|Frosting
+|{{n/a}}||4.40.310||1995-07-14 04:40:00
+|1.0
+|3
+|-
+!Service Pack 1
+|rowspan=2 {{n/a}}
+|rowspan=2|14 February 1996&lt;ref&gt;{{cite web|title=Microsoft Releases Windows 95 Service Pack|url= http://www.microsoft.com/presspass/press/1996/feb96/srvcpkpr.mspx|publisher=Microsoft|date=14 February 1996|accessdate=9 September 2009}}&lt;/ref&gt;
+|rowspan=&quot;2&quot;|4.00.950a &lt;!-- as displayed in the system properties tab: LOWER CASE &quot;a&quot;, WITHOUT a space between the build number and the &quot;a&quot; --&gt; ||rowspan=&quot;2&quot;|4.00.951&lt;ref group=&quot;note&quot;&gt;Some components have higher build numbers up to 955.&lt;/ref&gt;
+|1995-12-31 09:50:00
+|rowspan=&quot;2&quot;|[[Internet Explorer 2|2.0]]&lt;ref&gt;{{cite web|title=Description of Microsoft Windows 95 Service Pack 1 Components|url=http://support.microsoft.com/kb/146449|publisher=Microsoft|date=16 November 2006|accessdate=16 July 2010}}&lt;/ref&gt;
+|rowspan=&quot;2&quot;|2
+|rowspan=&quot;6&quot; {{yes}}
+|-
+!OEM Service Release 1
+|1996-02-02 09:51:00
+|-
+!OEM Service Release 2
+|Detroit
+|24 August 1996
+|rowspan=&quot;3&quot;|4.00.950 B &lt;!-- as displayed in the system properties tab: capital B, with a space between the build number and B --&gt;
+|4.00.1111
+|1996-08-24 11:11:11
+|rowspan=&quot;4&quot;|7.1
+|rowspan=&quot;3&quot;|[[Internet Explorer 3|3.0]]
+|rowspan=&quot;4&quot;|3
+|rowspan=&quot;3&quot;|2.0a
+|rowspan=&quot;4&quot; {{yes}}
+|rowspan=&quot;4&quot; {{yes}}
+|rowspan=&quot;4&quot; {{yes}}
+|rowspan=&quot;4&quot; {{yes}}
+|-
+!USB Supplement to OSR2
+|rowspan=3 {{n/a}}
+|rowspan=2|27 August 1997&lt;ref&gt;{{cite web|title=How to Determine the Version of Windows 95/98/Me in Use|url=http://support.microsoft.com/kb/158238|publisher=Microsoft|date=12 May 2007|accessdate=9 September 2009}}&lt;/ref&gt;
+|rowspan=2|4.03.1212&lt;ref group=&quot;note&quot;&gt;Original release of the USB Supplement to OSR2.&lt;/ref&gt;&lt;br /&gt;4.03.1214&lt;ref group=&quot;note&quot;&gt;Updated version of the USB Supplement to OSR2.&lt;/ref&gt;
+|rowspan=2|1997-04-10 12:14:00
+|rowspan=&quot;3&quot; {{yes}}
+|rowspan=&quot;3&quot; {{yes}}
+|-
+!OEM Service Release 2.1
+|-
+!OEM Service Release 2.5
+|26 November 1997
+|4.00.950 C &lt;!-- as displayed in the system properties tab: capital C, with a space between the build number and C --&gt; ||4.03.1216&lt;ref group=&quot;note&quot;&gt;The Microsoft Knowledge Base reports 4.03.1214. The USB Supplement to OSR2 contains an updated VMM.VXD with support for the Pentium Pro and Pentium II. This file has version 4.03.1216 and has a timestamp of 1997-09-23 09:51:18.&lt;/ref&gt;
+|1997-11-26 12:16:00
+|[[Internet Explorer 4#Overview_2|4.00]]&lt;ref group=&quot;note&quot;&gt;Installation can be cancelled using CTRL-ALT-DELETE two times in welcome screen of IE4 setup, also there is C:\WINDOWS\SYSTEM\IEREMOVE.EXE.&lt;/ref&gt;
+|5.0
+|{{yes}}
+|-
+|}
+
+{{Refbegin|2}}
+&lt;references group=&quot;note&quot; /&gt;
+{{Refend}}
+
+==System requirements==
+Official system requirements were an [[Intel 80386]] DX CPU of any speed, 4&amp;nbsp;MB of system RAM, and 50-55&amp;nbsp;MB of hard drive space depending on features selected. These minimal claims were made in order to maximize the available market of Windows 3.1 converts. This configuration was distinctly suboptimal for any productive use on anything but single tasking dedicated workstations due to the heavy reliance on [[virtual memory]]. Also, in some cases, if any networking or similar components were installed the system would refuse to boot with 4 megabytes of RAM. It was possible to run Windows 95 on a 386 SX but this led to even less acceptable performance due to its 16-bit external data bus. To achieve optimal performance, Microsoft recommends an [[Intel 80486]] or compatible microprocessor with at least 8&amp;nbsp;MB of RAM.&lt;ref&gt;{{cite web|title=Windows 95 Installation Requirements|url= http://support.microsoft.com/kb/138349|publisher=Microsoft|date=23 April 2007|accessdate=9 September 2009}}&lt;/ref&gt;
+
+Windows 95 was superseded by [[Windows 98]] and could still be directly upgraded by both [[Windows 2000]]&lt;ref&gt;{{cite web|url=http://www.microsoft.com/windows2000/professional/howtobuy/upgrading/path/default.asp|title=Microsoft.com}}&lt;/ref&gt; and [[Windows Me]]. On December 31, 2001, Microsoft ended its support for Windows 95, making it an &quot;obsolete&quot; product according to the Microsoft Lifecycle Policy.&lt;ref&gt;{{cite web|title=Windows 95 Support: Contact Support|url=http://www.microsoft.com/windows95/support/contact/default.asp |publisher=Microsoft|date=13 December 2002|accessdate=9 September 2009 |archiveurl = http://web.archive.org/web/20070522053321/http://www.microsoft.com/windows95/support/contact/default.asp |archivedate = May 22, 2007}} Internet Archive&lt;/ref&gt; Even though support for Windows 95 has ended, the software still remains in use on some home and
+school computers because of budget issues, a lack of knowledge or lack of desire to upgrade to newer editions of Windows. In addition, some video game enthusiasts choose to use Windows 95 for their [[legacy system]] to play old DOS games, although some other versions of Windows such as Windows 98 can also be used for this purpose.
+
+Windows 95 has been released on both [[floppy disk]]s and on [[CD-ROM]], as some computer systems at the time did not include a CD-ROM drive. The retail floppy disk version of Windows 95 came on 13 [[Distribution Media Format|DMF]] formatted floppy disks, while OSR 2.1 doubled the floppy count to 26. Both versions exclude additional software that [[CD-ROM]] might have featured. [[Microsoft Plus!]] for Windows 95 was also available on floppy disks.
+
+2 Gigabytes is the maximum supported hard drive space on the 1st version of Windows 95 and OSR1.
+
+==Legacy==
+Many features that became key components of the Microsoft Windows series, such as the [[start menu]] and the [[taskbar]], originated in Windows 95. Neil MacDonald, a [[Gartner]] analyst, said &quot;If you look at Windows 95, it was a quantum leap in difference in technological capability and stability.&quot; Windows 95 was the first version of Windows to be a standard factory install on the average PC. Ina Fried of ''[[CNET]]'' said &quot;By the time Windows 95 was finally ushered off the market in 2001, it had become a fixture on computer desktops around the world.&quot;&lt;ref name=&quot;FriedCNET&quot;/&gt;
+
+==Physical RAM limit==
+The maximum amount of physical RAM in a PC that Windows 95 supports is 480 MB.&lt;ref&gt;[http://blogs.msdn.com/b/oldnewthing/archive/2003/08/14/54640.aspx Physical RAM limit for Windows 95.]&lt;/ref&gt;
+
+==Notes==
+{{Reflist|2}}
+
+==References==
+{{Refbegin|2}}
+
+===Microsoft Knowledge Base===
+*{{kb|146449|Description of Microsoft Windows 95 Service Pack 1 Components}}
+*{{kb|143003|Description of Microsoft Windows 95 Service Pack 1 Updates}}
+*{{kb|148761|Description of Windows 95 OEM Service Release 1}}
+*{{kb|253756|Availability of Universal Serial Bus Support in Windows 95}}
+*{{kb|161020|Implementing Windows 95 Updates}}
+
+===Articles===
+*Guardian Unlimited. [http://century.guardian.co.uk/1990-1999/Story/0,6051,112728,00.html Windows 95: The hype and beyond]
+*Washington Post. [http://www.washingtonpost.com/wp-srv/business/longterm/microsoft/stories/1995/debut082495.htm With Windows 95's Debut, Microsoft Scales Heights of Hype]
+*Microsoft. [http://www.support.microsoft.com/kb/138349/ Windows 95 Installation Requirements]
+*Microsoft. [http://www.microsoft.com/windows/lifecycle/default.mspx Windows 95 end of support date]
+{{Refend}}
+
+==Further reading==
+{{Refbegin|2}}
+
+;Microsoft
+*Microsoft. ''Microsoft Windows 95 Resource Kit''.
+
+;Architecture
+*{{Cite book|first=Andrew|last=Schulman|title=Unauthorized Windows 95: A Developer's Guide to Exploring the Foundations of Windows &quot;Chicago&quot;|url=http://ftp.uni-mannheim.de/info/OReilly/windows/win95.update/unauthw.html|accessdate=9 September 2009|year=1994| publisher=IDG Books|isbn=978-1-56884-169-4|ref=harv|archiveurl=http://web.archive.org/web/20060615065625/http://ftp.uni-mannheim.de/info/OReilly/windows/win95.update/unauthw.html|archivedate=June 15, 2006}} Internet Archive
+*{{Cite book|author=Matt Pietrek|title=Windows 95 System Programming SECRETS|year=1995| publisher=IDG Books|url=http://www.wheaty.net/w95spsdisk.htm|authorlink=Matt Pietrek}}
+
+;Television
+* [[Computer Chronicles]]. &quot;[http://www.archive.org/details/CC1301_windows_95 Windows 95]&quot;.
+
+{{Refend}}
+
+==External links==
+{{Portal|Microsoft}}
+*&quot;[http://web.archive.org/web/*/www.microsoft.com/products/prodref/426_ov.htm Windows 95].&quot; Microsoft.
+*&quot;[http://web.archive.org/web/19990508225937/http://www.windows.com/windows95/default.asp Windows 95].&quot; Microsoft Windows.
+*Microsoft [http://web.archive.org/web/20070222072653/www.microsoft.com/windows95/downloads/ Windows Update] (from archive.org)
+*[http://www.hpcfactor.com/qlink/?linkID=12 HPC: Factor Windows 95 Patches &amp; Updates Guide]
+
+{{Microsoft Windows family}}
+
+[[Category:1995 software]]
+[[Category:Windows 95]]
+[[Category:DOS issues]]
+[[Category:Discontinued versions of Microsoft Windows]]
+
+[[ar:ÙÙÙØ¯ÙØ² 95]]
+[[az:Windows 95]]
+[[bn:à¦à¦à¦¨à§à¦¡à§à¦ à§¯à§«]]
+[[bg:Windows 95]]
+[[ca:Windows 95]]
+[[cv:Windows 95]]
+[[cs:Windows 95]]
+[[da:Windows 95]]
+[[de:Microsoft Windows 95]]
+[[et:Windows 95]]
+[[el:Windows 95]]
+[[es:Windows 95]]
+[[eo:Windows 95]]
+[[eu:Windows 95]]
+[[fa:ÙÛÙØ¯ÙØ² Û¹Ûµ]]
+[[fr:Windows 95]]
+[[gl:Windows 95]]
+[[ko:ìë 95]]
+[[hi:à¤µà¤¿à¤£à¥à¤¡à¥à¤à¤¼ à¥¯à¥«]]
+[[hr:Windows 95]]
+[[id:Windows 95]]
+[[it:Windows 95]]
+[[jv:Windows 95]]
+[[ka:Windows 95]]
+[[ku:Windows 95]]
+[[la:Windows 95]]
+[[lt:Windows 95]]
+[[hu:Windows 95]]
+[[ms:Windows 95]]
+[[nl:Windows 95]]
+[[ja:Microsoft Windows 95]]
+[[no:Windows 95]]
+[[nn:Windows 95]]
+[[uz:Windows 95]]
+[[pl:Microsoft Windows 95]]
+[[pt:Windows 95]]
+[[ro:Windows 95]]
+[[ru:Windows 95]]
+[[si:à·à·à¶±à·à¶©à·à·à· 95]]
+[[simple:Windows 95]]
+[[sl:Windows 95]]
+[[sr:ÐÐ¸Ð½Ð´Ð¾ÑÑ 95]]
+[[sh:Windows 95]]
+[[fi:Windows 95]]
+[[sv:Windows 95]]
+[[tl:Windows 95]]
+[[ta:à®µà®¿à®©à¯à®à¯à®¸à¯ 95]]
+[[th:à¸§à¸´à¸à¹à¸à¸§à¸ªà¹ 95]]
+[[tg:Windows 95]]
+[[tr:Windows 95]]
+[[uk:Windows 95]]
+[[vec:Windows 95]]
+[[vi:Windows 95]]
+[[yi:Windows 95]]
+[[yo:Windows 95]]
+[[zh:Windows 95]]
+[[hj:windows 95]]</rev></revisions></page></pages></query></api>

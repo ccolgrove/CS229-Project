@@ -1,0 +1,79 @@
+<?xml version="1.0"?><api><query><pages><page pageid="2047621" ns="0" title="389 Directory Server"><revisions><rev xml:space="preserve">{{Infobox software
+|name = 389 Directory Server
+|logo =
+|screenshot =
+|caption =
+|collapsible =
+|author =
+|developer = [[Red Hat]]
+|released = {{Start date and age|2005|12|8}}
+|latest release version = 1.2.9.9
+|latest release date = {{Start date and age|2011|9|8}}
+|latest preview version = 1.2.9.10
+|latest preview date = {{Start date and age|2011|9|8}}
+|frequently updated =
+|programming language =
+|operating system = [[GNU/Linux]] / [[Unix]]
+|platform =
+|size =
+|language =
+|status = Active
+|genre = [[Directory service|Directory server]]
+|license = [[GNU General Public License|GPL]]
+|website = [http://port389.org/ port389.org]
+}}
+
+The '''389 Directory Server''' (previously '''Fedora Directory Server''') is an LDAP ([[Lightweight Directory Access Protocol]]) server developed by [[Red Hat]], as part of Red Hat's community-supported [[Fedora Project]]. 389 Directory Server is identical to the Red Hat Directory Server, just rebranded.  The name 389 is derived from the [[port number]] for LDAP.
+
+While 389 Directory Server is freely distributable under the terms of the GPL, Red Hat is also offering an officially supported version, Red Hat Directory Server, but with a different license known as open public license. The paid subscription will include added features like certified stable builds, customer service, and technical support, although the paid version is only available in limited markets.
+
+389 Directory Server is being built on top of [[Fedora (operating system)|Fedora]], but supports many operating systems including [[Red Hat Enterprise Linux]] 3 and later, [[Debian]], [[Solaris (operating system)|Solaris]] 8 and later, and [[HP-UX]] 11i.
+
+== History ==
+389 Directory Server is the newest incarnation of what was once the original [[University of Michigan]] [[slapd]] project. In 1996, the project's developers were hired by [[Netscape Communications Corporation]] and the project became known as the '''Netscape Directory Server''' (NDS). After acquiring Netscape, [[AOL]] sold ownership of the NDS [[intellectual property]] to [[Sun Microsystems]], but retained ''rights akin to ownership''. Sun sold and developed the Netscape Directory Server under the name JES/SunOne Directory Server. AOL/Netscape's rights were acquired by Red Hat, and on June 1, 2005, much of the [[source code]] was released as [[free software]] under the terms of the [[GNU General Public License]] (GPL).
+
+As of 389 Directory Server version 1.0 (December 1, 2005), Red Hat released all of the remaining source code for all components included in the release package and continues to maintain them under their respective licenses.&lt;ref name=fedoradswikiopensource&gt;{{cite web
+| title = 389 Directory Server Wiki: &quot;What parts are open source?&quot;
+| url = http://port389.org/wiki/FAQ#What_parts_are_open_source.3F
+| accessdate = 2009-07-20
+}}&lt;/ref&gt;&lt;ref name=fedoradswikilicensing&gt;{{cite web
+| title = 389 Directory Server Wiki: &quot;Licensing&quot;
+| url = http://port389.org/wiki/Licensing
+| accessdate = 2009-07-20
+}}&lt;/ref&gt;
+
+In May 2009 the Fedora Directory Server project changed its name to 389 to give the project a distribution and vendor neutral name and encourage porting or running the software on other operating systems.&lt;ref name=fedoradsnamechange&gt;{{cite web
+| title = 389 Directory Server name change?&quot;
+| url = http://port389.org/wiki/389_Change_FAQ
+| accessdate = 2009-07-20
+}}&lt;/ref&gt;
+
+Since Oracle bought Sun, there has been considerable uncertainty over the future and cost of the Sun/Oracle version of the JES/Sun One Directory Server.
+
+== Features ==
+389 Directory Server has multi-master capability.
+
+389 Directory Server also has the ability to export parts of the directory to read-only servers. This is similar to the [[Windows_Server_2008#Active_Directory_improvements|Read Only Domain Controller]] in Microsoft's [[Active Directory|Active Directory Domain Services]].
+
+389 Directory Server has a [[Java (programming language)|Java]]-based [[GUI]] front end for administration, but the underlying LDAP database can be managed by other LDAP compliant tools.
+
+== See also ==
+{{Portal|Free software}}
+* [[List of LDAP software]]
+* [[FreeIPA]]
+
+==References==
+{{Reflist}}
+
+==External links==
+* [http://port389.org/ 389 Project home page]
+
+{{Red Hat}}
+
+[[Category:Fedora Project]]
+[[Category:Directory services]]
+
+[[de:389 Directory Server]]
+[[fr:389 Directory Server]]
+[[nl:389 Directory Server]]
+[[ru:389 Directory Server]]</rev></revisions></page></pages></query></api>

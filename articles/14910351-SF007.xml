@@ -1,0 +1,62 @@
+<?xml version="1.0"?><api><query><pages><page pageid="14910351" ns="0" title="Microsoft Java Virtual Machine"><revisions><rev xml:space="preserve">{{Dablink|This article is about the '''Microsoft Java Virtual Machine'''.  For Microsoft's general virtualization software see '''[[Microsoft Virtual PC]]'''}}
+The '''Microsoft Java Virtual Machine''' was a proprietary [[Java Virtual Machine]] [[computer program]] from [[Microsoft]]. It was first made available for [[Internet Explorer]] [[Internet Explorer 3|version 3]] so that users could run [[Java applet]]s when browsing on the World Wide Web. It was the fastest Windows-based implementation of a Java virtual machine for the first two years after its release.&lt;ref name=&quot;jworld&quot;&gt;John Neffenger - [http://www.javaworld.com/javaworld/jw-08-1998/jw-08-volanomark.html Which Java VM scales best?], [[JavaWorld]], August 1, 1998 Quote:&quot;Microsoft SDK 2.02 still stands alone as the only fast and scalable Java virtual machine. Our customers with the highest Web site traffic currently have no other viable choice for a JVM.&quot;&lt;/ref&gt;  [[Sun Microsystems]], the creator of Java, sued Microsoft in October 1997 for incompletely implementing the Java 1.1 standard.&lt;ref name=&quot;jworld2&quot;&gt;[http://www.javaworld.com/javaworld/jw-10-1997/jw-10-lawsuit.html]&lt;/ref&gt; It was also named in the [[United States v. Microsoft]] antitrust civil actions, as an implementation of Microsoft's [[Embrace, extend and extinguish]] strategy. In 2001, Microsoft settled the lawsuit with Sun and discontinued its Java implementation{{Citation needed|date=November 2010}}.
+
+==History==
+===Performance===
+The Microsoft JM won the [[PC Magazine]] Editor's choice awards in 1997 and 1998 for best Java support. In 1998 a new release included the [[Java Native Interface]] which supplemented Microsoft's proprietary Raw Native Interface (RNI) and J/Direct. Microsoft claimed to have the fastest Java implementation for Windows, although IBM also made that claim in 1999 and beat the Microsoft and Sun virtual machines in the [[JavaWorld]] Volano test.&lt;ref name=&quot;jworld&quot; /&gt;
+
+===Antitrust trial===
+
+Microsoft's proprietary extensions to Java were used as evidence in the [[United States v. Microsoft]] antitrust civil actions.
+
+A Memorandum of the United States in Support of Motion for Preliminary Injunction in the case of United States of America vs. Microsoft claimed that Microsoft wanted to kill Java in the marketplace.
+&lt;blockquote&gt;
+In short, Microsoft feared and sought to impede the development of network effects that cross-platform technology like [[Netscape Navigator]] and Java might enjoy and use to challenge Microsoft's monopoly. Another internal Microsoft document indicates that the plan was not simply to blunt Java/browser cross-platform momentum, but to destroy the cross-platform threat entirely, with the &quot;Strategic Objective&quot; described as to &quot;Kill cross-platform Java by grow[ing] the polluted Java market.&quot;&lt;ref&gt;[http://www.usdoj.gov/atr/cases/f1700/1762.htm Memorandum of the United States in Support of Motion for Preliminary Injunction] UNITED STATES OF AMERICA v. MICROSOFT CORPORATION, May 18, 1998&lt;/ref&gt; &lt;/blockquote&gt;
+
+===Sun vs. Microsoft===
+
+In October 1997, [[Sun Microsystems]], the creator of Java, sued Microsoft for incompletely implementing the Java 1.1 standard.&lt;ref name=&quot;jworld3&quot;&gt;http://www.javaworld.com/javaworld/jw-10-1997/jw-10-lawsuit.html&lt;/ref&gt;
+
+In January 2001, Sun and Microsoft settled the suit. Microsoft paid Sun $20 million and the two agreed to a plan for Microsoft to phase out products that included the older version of Microsoft Java that allegedly infringed on Sun's Java copyrights and trademarks.
+
+*[[Office XP]] Developer
+*[[Office 2000]] Developer
+*Office 2000 Premium Service Release 1
+*[[Microsoft BackOffice Server]] 2000
+*[[Internet Security and Acceleration Server]](ISA) 2000
+*[[Internet Explorer 5|Internet Explorer 5.5]]
+*[[Visual Studio]] 6 Microsoft Developer Edition
+*[[Windows 98]] and [[Windows Me]]
+
+The Microsoft Java Virtual Machine was discontinued in 2001 in response to the Sun Microsystems lawsuit.  Microsoft continued to offer support until June 30, 2009.&lt;ref name=&quot;microsoftkb&quot;&gt;http://www.microsoft.com/mscorp/java/default.mspx&lt;/ref&gt;
+
+===Windows XP===
+{{See also|Windows XP}}
+The initial edition [[Windows XP]] RTM did not ship with a Java virtual machine 2001, due to the settlement. This required users that wanted to run [[Java Applets]] in [[Internet Explorer]] to download and install either the standard [[HotSpot|Sun Java virtual machine]], or locate a copy of the Microsoft Java virtual machine elsewhere.
+
+Service Pack 1 (SP1) for Windows XP was released on September 9, 2002. It contained post-RTM security fixes and hot-fixes, compatibility updates, optional [[.NET Framework]] support, and enabled technologies for new devices such as Tablet PCs. It also included the Microsoft Java virtual machine.&lt;ref&gt;{{cite web|url= http://www.winsupersite.com/reviews/windowsxp_sp1_preview.asp |accessdate= 2007-09-21 |title= Windows XP Service Pack 1 preview |date= September 9, 2002}}&lt;/ref&gt;
+
+On February 3, 2003, Microsoft released Service Pack 1 (SP1) again as Service Pack 1a (SP1a). This release removed Microsoft's [[Java virtual machine]] as a result of the lawsuit with [[Sun Microsystems]].&lt;ref&gt;{{cite web|url= http://support.microsoft.com/?kbid=813926 |accessdate= 2007-09-21 |title= Differences Between Windows XP SP1 and Windows XP SP1a |date= February 3, 2003}}&lt;/ref&gt;
+
+==See also==
+{{Portal|Java}}
+
+*[[Visual J++]]
+
+==References==
+{{Reflist}}
+
+==External links==
+*[http://www.microsoft.com/java Microsoft Java home page]
+*[http://www.microsoft.com/mscorp/java/faq.mspx Microsoft Java transition FAQ]
+*[http://www.microsoft.com/presspass/press/1998/dec98/javavmpr.mspx Award-Winning Virtual Machine Continues to Provide Fastest, Most Integrated Java Language Support]. Microsoft Press release, Dec. 7, 1998
+*Darryl K. Taft - [http://www.eweek.com/article2/0,1759,1405300,00.asp Microsoft to Junk Flagship Products, Cites Java Settlement]. December 5, 2003. [[eWeek]]
+*Joe Wilcox  and Stephen Shankland  - [http://www.news.com/2100-1001-270200.html Microsoft's Java decision a mixed bag]. [[cNet]], July 18, 2001
+*[http://download.windowsupdate.com/msdownload/update/v3-19990518/cabpool/MSJavWU_8073687b82d41db93f4c2a04af2b34d.exe Download last version of MSJVM]
+{{Java Virtual Machine}}
+{{Internet Explorer}}
+
+[[Category:Discontinued Java virtual machines]]
+[[Category:Discontinued Microsoft software]]
+
+[[zh:Microsoft Javaèæ¬æ©å¨]]</rev></revisions></page></pages></query></api>

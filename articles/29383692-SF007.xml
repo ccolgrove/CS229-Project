@@ -1,0 +1,187 @@
+<?xml version="1.0"?><api><query><pages><page pageid="29383692" ns="0" title="Unity (user interface)"><revisions><rev xml:space="preserve">{{Infobox software
+| name                   = Unity
+| title                  =
+| logo                   = [[File:Unity Logo.svg|100px|Unity Logo]]
+| screenshot             = [[File:Ubuntu 11.10 Final.png|250px]]
+| caption                = Unity 4.22.0, with the launcher and the dash displayed (Note the transparent dash, panel, and launcher when Dash is activated), running on [[Oneiric Ocelot|Ubuntu 11.10 &quot;Oneiric Ocelot&quot;]].
+| collapsible            =
+| author                 =
+| developers             = [[Canonical]], Ubuntu community, [[Ayatana]] community
+| released               = {{start date and age|2010|06|09}}&lt;ref name=&quot;PublishingHistory&quot;&gt;{{Cite web|url = https://launchpad.net/ubuntu/+source/unity/+publishinghistory|title = Publishing history of âunityâ package in Ubuntu|accessdate = 9 December 2010|last = [[Canonical Ltd]]|authorlink = |year = 2010|month = December}}&lt;/ref&gt;
+| discontinued           =
+| latest release version = 4.22.0
+| latest release date    = {{start date and age|2011|10|07}}&lt;ref name=&quot;PublishingHistory&quot; /&gt;
+| latest preview version = 4.24.0
+| latest release date    = {{start date and age|2011|10|12}}&lt;ref name=&quot;PublishingHistory&quot;&gt;{{Cite web|url = https://launchpad.net/ubuntu/+source/unity/+publishinghistory|title = Publishing history of âunityâ package in Ubuntu|accessdate = 9 December 2010|last = [[Canonical Ltd]]|authorlink = |year = 2010|month = December}}&lt;/ref&gt;
+| frequently updated     = Yes
+| programming language   = [[Vala (programming language)|Vala]], [[C++]]&lt;ref name=&quot;Bazaar&quot;&gt;{{Cite web|url = http://bazaar.launchpad.net/~unity-team/unity/trunk/revision/573|title = ~unity-team/unity/trunk : 573|accessdate = 13 December 2010|last = Jagdish Patel|first = Neil |authorlink = |year = 2010|month = November}}&lt;/ref&gt;, [[QML]]
+| operating system       = [[Linux]]
+| platform               = [[Personal Computer]], [[Netbook]], [[Tablet computer|Tablet]]
+| language               = Multilanguage
+| status                 = Active
+| genre                  = [[Shell (computing)|Shell]]
+| license                = [[GNU_GPL#Version_3|GNU General Public License (GPLv3)]], [[GNU LGPL|GNU Lesser General Public License (LGPLv3)]]
+| website                = {{URL|unity.ubuntu.com}}
+}}
+
+'''Unity''' is a [[Shell (computing)|shell interface]] for the [[GNOME]] [[desktop environment]] developed by [[Canonical Ltd]] for its [[Ubuntu (operating system)|Ubuntu operating system]]. Unity debuted in the [[Ubuntu Netbook Edition|netbook edition]] of [[Ubuntu 10.10]].  It is designed to make more efficient use of space given the limited screen size of [[netbook]]s, including, for example, a vertical application switcher&lt;ref&gt;{{cite web |last=Proffitt |first=Brian |title=Ubuntu Unity Interface Tailored for Netbook Screens |url=http://www.pcworld.com/article/196009/ubuntu_unity_interface_tailored_for_netbook_screens.html?tk=mod_rel |publisher=ITWorld |accessdate=28 October 2010 |date=2010-05-10}}&lt;/ref&gt; called the launcher.&lt;ref&gt;{{cite web |url=https://help.ubuntu.com/11.04/ubuntu-help/unity-introduction.html |title=Welcome to Ubuntu 11.04 |work=Ubuntu Official Documentation |publisher=Ubuntu documentation team |accessdate=2011-06-13 }}&lt;/ref&gt; Unlike GNOME, [[KDE Software Compilation]], [[Xfce]], or [[LXDE]], Unity is not a collection of applications but designed to be used with existing [[GTK+]] programs.&lt;ref name=UbuntuSplits&gt;{{cite web |last=Jackson |first=Joab |title=Software / Services Oct 25, 2010 1:20 pm Canonical Ubuntu Splits From GNOME Over Design Issues |url=http://www.pcworld.com/businesscenter/article/208708/canonical_ubuntu_splits_from_gnome_over_design_issues.html |publisher=PC World Business Center |accessdate=28 October 2010 |date=2010-10-25}}&lt;/ref&gt;
+
+Unity is part of the Ayatana project, an initiative to improve the user experience within Ubuntu. In addition to Unity, there are Application Indicators and other projects such as MeMenu, the notification system and the application NotifyOSD gathered.
+
+==Development==
+[[Ubuntu (operating system)|Ubuntu]] has previously used the full [[GNOME]] desktop environment; founder [[Mark Shuttleworth]] cited philosophical differences with the GNOME team over the user experience to explain why Ubuntu would use Unity as the default desktop instead of [[GNOME Shell]], beginning April 2011, with
+[[List of Ubuntu releases#Ubuntu 11.04 (Natty Narwhal)|Ubuntu 11.04 (Natty Narwhal)]].&lt;ref name=UbuntuSplits /&gt;
+
+In November 2010, Ubuntu Community Manager [[Jono Bacon]] explained that Ubuntu will continue to ship the GNOME stack, GNOME applications, and optimize Ubuntu for GNOME. The only difference, he wrote, would be that Unity is a different shell for GNOME.&lt;ref&gt;
+  {{cite web
+  | url    = http://www.jonobacon.org/2010/10/25/ubuntu-11-04-to-ship-unity/
+  | title  = UBUNTU 11.04 TO SHIP UNITY
+  | author = Jono Bacon
+  | date   = 2010-10-25
+  }}&lt;/ref&gt;
+
+Canonical announced it had engineered Unity for desktop computers as well and is making Unity the default shell for Ubuntu in version 11.04.&lt;ref&gt;{{cite web|last=Noyes|first=Katherine|title=Is Unity the Right Interface for Desktop Ubuntu? |url=http://www.networkworld.com/news/2010/102610-is-unity-the-right-interface.html|publisher=PC World|accessdate=28 October 2010|date=2010-10-26}}&lt;/ref&gt;
+
+GNOME Shell was not included in [[Ubuntu 11.04 Natty Narwhal]] because work on it was not completed at the time 11.04 was frozen, but is available from a [[Personal Package Archive|PPA]],&lt;ref&gt;{{cite web | url = https://launchpad.net/~gnome3-team/+archive/gnome3 | title = Ubuntu GNOME 3 Team | accessdate = 2011-03-02}}&lt;/ref&gt; and is available in Ubuntu 11.10 through the official repositories.&lt;ref&gt;{{cite web |url=http://www.webupd8.org/2011/10/things-to-tweak-after-installing-ubuntu.html |title=Things To Tweak After Installing Ubuntu 11.10 Oneiric Ocelot - Web Upd8: Ubuntu / Linux blog |author=Andrew |date=13 October 2011 |publisher=webupd8.org |accessdate=13 October 2011 }}&lt;/ref&gt;
+
+In November 2010, Mark Shuttleworth announced the intention to eventually run Unity on [[Wayland (display server protocol)|Wayland]] instead of the currently-used [[X window system]].&lt;ref&gt;{{cite web
+ |url=http://www.markshuttleworth.com/archives/551
+ |title=Unity on Wayland
+ |author=[[Mark Shuttleworth]]
+ |quote=The next major transition for Unity will be to deliver it on Wayland....
+ |date=2010-11-04
+}}&lt;/ref&gt;
+
+In December 2010, some users requested that the Unity [[Comparison of application launchers|launcher]] (or [[dock (computing)|dock]]) be movable from the left to other sides of the screen, but Mark Shuttleworth stated in reply, âI'm afraid that won't work with our broader design goals, so we won't implement that. We want the launcher always close to the Ubuntu button.â&lt;ref&gt;
+{{cite web
+ | url    = https://bugs.launchpad.net/unity/+bug/668415
+ | date   = 2010-10-30
+ | author = [[Mark Shuttleworth]]
+ | title  = Movement of Unity launcher
+}}&lt;/ref&gt; However, with Ubuntu 11.10, the Ubuntu button has been moved into the launcher, rendering this argument invalid.
+
+The Unity shell interface is now written in a toolkit called Nux instead of Clutter&lt;ref&gt;
+{{cite web
+ | url    = http://www.inalogic.com/component/content/article/35-nux/49-nux-and-unity
+ | date   = 2010-12-08
+ | author = Jay Taoko
+ | title  = Nux and Unity
+}}&lt;/ref&gt; and a plugin of the [[Compiz]] window manager,&lt;ref name=&quot;CompizPlugin&quot;&gt;{{cite web
+ |url=http://askubuntu.com/questions/13073/is-unity-just-a-plugin-of-compiz
+ |date=2010-11-13
+ |author=fluteflute
+ |title=Is unity just a plugin of compiz
+ |quote=The version of Unity that will be released in 11.04 is definitely implemented as plugin(s) in Compiz.
+}}
+&lt;/ref&gt; which Canonical states is faster than [[Mutter (window manager)|Mutter]],&lt;ref&gt;[http://www.webupd8.org/2010/10/unity-to-use-compiz-instead-of-mutter.html Unity To Use Compiz instead of Mutter [Ubuntu 11.04 Natty Narwhal News&amp;#93; ~ Web Upd8: Ubuntu / Linux blog&lt;!-- Bot generated title --&gt;]&lt;/ref&gt; the window manager for which GNOME Shell is a plugin.
+
+On 14 January 2011 Canonical also released a technical preview of a â2Dâ version of Unity based on [[Qt (framework)|Qt]] and written in [[QML]].&lt;ref name=&quot;2D-QML&quot;&gt;[http://developer.qt.nokia.com/forums/viewthread/3214/ Canonical building Unity 2D on QML and Qt | Qt DevNet forums | Qt Developer Network&lt;!-- Bot generated title --&gt;]&lt;/ref&gt; Unity-2D was not shipped on the Ubuntu 11.04 CD, instead the classic GNOME desktop was the fall-back for hardware that could not run Unity.&lt;ref&gt;[http://digitizor.com/2011/01/18/no-unity-2d-natty/ Canonical Says Unity 2D Not Part Of The Ubuntu 11.04 Plan]&lt;/ref&gt;&lt;ref&gt;[https://bugs.launchpad.net/ubuntu/+source/unity/+bug/730588/comments/8 Comment 8 for bug 730588]&lt;/ref&gt;
+
+In March 2011 there were public indications of friction between Canonical and its development of Unity and the GNOME developers. As part of Unity development Ubuntu developers had submitted [[API]] coding for inclusion in Gnome as an external dependency. According to Dave Neary, &quot;an external dependency is a non-GNOME module which is a dependency of a package contained in one of the GNOME module sets&quot; and the reasons why libappindicator was not accepted as an external dependency are that &quot;it does not fit that definition&quot;, it has &quot;duplicate functionality with libnotify&quot; (the current Gnome Shell default) and its [[Contributor License Agreement|CLA]] does not meet current GNOME policy.&lt;ref name=&quot;Neary15Mar11&quot;&gt; {{Cite web|url = http://bethesignal.org/blog/2011/03/15/timeline-gnome-user-experience-hackfest-2008/|title = Timeline: The Greatest Show on Earth - Dave Neary comment|accessdate = 1 April 2011|last =Waugh|first = Jeff|authorlink = |year = 2011|month = March}}&lt;/ref&gt; Mark Shuttleworth responded, {{cquote|This is a critical juncture for the leadership of Gnome. Iâll state plainly that I feel the long tail of good-hearted contributors to Gnome and Gnome applications are being let down by a decision-making process that has let competitive dynamics diminish the scope of Gnome itself. Ideas that are not generated 'at the core' have to fight incredibly and unnecessarily hard to get oxygenâ¦ getting room for ideas to be explored should not feel like a frontal assault on a machine gun post. This is no way to lead a project. This is a recipe for a project that loses great people to environments that are more open to different ways of seeing the worldâ¦ Embracing those other ideas and allowing them to compete happily and healthily is the only way to keep the innovation they bring inside your brand. Otherwise, youâre doomed to watching them innovate and then having to ârelayoutâ your own efforts to keep up, badmouthing them in the process. We started this with a strong, clear statement: Unity is a shell for Gnome. Now Gnome leadership have to decide if they want the fruit of that competition to be an asset to Gnome, or not.&lt;ref name=&quot;Graner10Mar11&quot;&gt; {{Cite news|url = http://www.ubuntu-user.com/Online/News/Has-GNOME-Rejected-Canonical-help-Shuttleworth-Responds|title = Has GNOME Rejected Canonical help? Shuttleworth Responds|accessdate = 19 March 2011|last = Graner|first = Amber|authorlink = |year = 2011|month = March| work = [[Ubuntu User]]}}&lt;/ref&gt;&lt;ref name=&quot;Shuttleworth10Mar11&quot;&gt; {{Cite web|url = http://www.markshuttleworth.com/archives/654|title = Internal competition is healthy, but depends on strong and mature leadership|accessdate = 19 March 2011|last = Shuttlewort
+h|first = Mark|authorlink = |year = 2011|month = March}}&lt;/ref&gt;&lt;ref name=&quot;Shuttleworth13Mar11&quot;&gt; {{Cite web|url = http://www.markshuttleworth.com/archives/661|title = All the other guys are not wrong|accessdate = 19 March 2011|last = Shuttleworth|first = Mark|authorlink = |year = 2011|month = March}}&lt;/ref&gt;}}
+
+In April 2011 Mark Shuttleworth announced that [[Ubuntu 11.10 Oneiric Ocelot]] would not include the classic GNOME desktop as a fall back to Unity, unlike [[Ubuntu 11.04 Natty Narwhal]]. Instead Ubuntu 11.10 will use the Qt-based Unity 2D for users whose hardware cannot support the 3D version.&lt;ref name=&quot;OMG03Apr11&quot;&gt; {{Cite news|url = http://www.omgubuntu.co.uk/2011/04/ubuntu-11-10-will-not-ship-with-classic-gnome-desktop/|title = Ubuntu 11.10 will not ship with âclassicâ GNOME desktop|accessdate = 6 April 2011|last = Sneddon|first = Joey|authorlink = |year = 2011|month = April| work = [[OMG Ubuntu!]]}}&lt;/ref&gt;&lt;ref name=&quot;OMG27May11&quot;&gt; {{Cite news|url = http://www.omgubuntu.co.uk/2011/05/unity-2d-lands-in-oneiric-daily-build|title = Unity 2D lands in Oneiric daily build|accessdate = 27 May 2011|last = Sneddon|first = Joey|authorlink = |year = 2011|month = May| work = [[OMG Ubuntu!]]}}&lt;/ref&gt; However, the classic GNOME desktop remains available as a fallback in Ubuntu 11.10 through a package in the Ubuntu repositories.&lt;ref&gt;http://www.webupd8.org/2011/08/installing-using-classic-gnome-desktop.html&lt;/ref&gt;
+
+At the November 2011 [[Ubuntu Developer Summit]] it was announced that Unity for Ubuntu 12.04 will include non-re-enabling the systray, better application integration, ability to drag lenses onto the launcher and that the 2D version will use the same decoration buttons as the 3D version.&lt;ref name=&quot;WebUpd805Nov11&quot;&gt; {{Cite news|url = http://www.webupd8.org/2011/11/expected-changes-in-ubuntu-1204-precise.html|title = Expected Changes In Ubuntu 12.04 Precise Pangolin |accessdate = 8 November 2011|last = |first = Andrew|date = 15 November 2011| work = Web Upd8}}&lt;/ref&gt;
+
+== Availability ==
+As Unity and the supporting Ayatana projects&lt;ref&gt;
+{{cite web
+|url         = https://launchpad.net/ayatana
+|title       = The Ayatana Project
+|year        = 2011
+|publisher   = Canonical Ltd.
+|accessdate  = 2011-10-31
+|quote       = The Ayatana Project is the collective project that houses user interface, design and interaction projects started by Canonical. 
+}}
+&lt;/ref&gt; are developed primarily for Ubuntu, Ubuntu is the first to offer new versions.
+
+Outside of Ubuntu, other Linux distributors have tried to pick up Ayatana - with varying success. The Ayatana components require other applications to be modified, which increases the complexity for adoption by others.
+
+* [[Arch Linux]] offers many Ayatana components, including Unity and Unity 2D&lt;ref&gt;{{cite web | url = https://wiki.archlinux.org/index.php/Ayatana | publisher=Arch Linux Wiki | title = Ayatana}}&lt;/ref&gt; but as of November 2011, only Unity is available in a recent version.&lt;ref&gt;[http://aur.archlinux.org/packages.php?ID=42311 Package Details]&lt;/ref&gt;
+* [[Fedora (operating system)|Fedora]] contributors have announced interest in offering Unity&lt;ref&gt;{{cite web | url = http://www.happyassassin.net/2010/12/03/unity-on-fedora-possibly/ | title = Unity on Fedora? Possibly! | author = Adam Williamson}}&lt;/ref&gt; but this effort has been postponed until after Fedora 15.&lt;ref&gt;{{cite web | url = http://www.happyassassin.net/2010/12/08/unity-hardware-failures-and-f15-qa/ | title = Unity, hardware failures, and F15 QA | author = Adam Williamson}}&lt;/ref&gt;
+* [[Frugalware]] has adopted Ayatana, including Unity and Unity 2D, as part of the development branch for an upcoming Frugalware release.&lt;ref&gt;{{cite web | url = http://wiki.frugalware.org/index.php/Ayatana_Project_Portage | publisher=Frugalware Linux Wiki | title = Ayatana Project Portage }}&lt;/ref&gt;
+* [[openSUSE]] offers many Ayatana components for GNOME.&lt;ref&gt;{{cite web | url = http://en.opensuse.org/openSUSE:GNOME_Ayatana | publisher=openSUSE Wiki | title = GNOME Ayatana}}&lt;/ref&gt; Bringing Unity itself to openSUSE has been put on hold, the developers citing problems with Compiz as main reason.&lt;ref&gt;{{cite web | url = http://lizards.opensuse.org/2011/02/15/abandoning-unity-for-the-time-being/ | publisher=openSUSE | title = GNOME Ayatana | author = Nelson Marques}}&lt;/ref&gt;
+
+== Unity vs. Unity 2D ==
+[[File:Unity 2D with KDE.png|right|250px|thumb|Unity 2D showing the ability to run alongside different window managers and desktop environments]]
+[[File:Unity-2D Natty.png|right|250px|thumb|RAM consumption of Unity 2D]]
+
+Canonical maintains two discrete versions of Unity which are almost indistinguishable from a visual standpoint but very different on the technical level.
+
+Unity is written as a plugin for Compiz&lt;ref name=&quot;CompizPlugin&quot; /&gt; and is written in the programming languages C++ and [[Vala (programming language)|Vala]] and uses an uncommon [[OpenGL]] toolkit called Nux. Being a plugin for Compiz gives Unity GPU-accelerated performance on compatible systems.&lt;br&gt;
+Unity 2D is a set of individual applications.&lt;ref name=&quot;2D-Components&quot;&gt;[[:File:Unity-2D Natty.png]]&lt;/ref&gt; They are written in the GUI building language QML from the widespread Qt framework.&lt;ref name=&quot;2D-QML&quot; /&gt; By default Unity 2D uses the [[Metacity]] window manager&lt;ref name=&quot;2D-Components&quot; /&gt; but can also use accelerated window managers like [[Compiz]] or [[KWin]].
+
+In Ubuntu 11.10, Unity 2D uses Metacity's XRender based compositor to achieve transparency effects.{{Citation needed|date=August 2011}}
+
+Starting with [[Ubuntu 11.10]], Unity 2D replaced the classic [[GNOME Panel]] as the fall-back for users whose hardware cannot run the Compiz version of Unity.&lt;ref name=&quot;OMG27May11&quot; /&gt;
+
+==Reception==
+===By reviewers===
+Unity has received mixed reviews. Its design and deployment has been controversial and as a result some software reviewers have written about it, finding faults with its implementation and limitations. In spite of these, other reviewers have found Unity is an improvement over GNOME 2 and also that there is potential for Unity to improve over time.&lt;ref name=&quot;PaulJul10&quot;&gt; {{Cite news|url = http://arstechnica.com/open-source/reviews/2010/05/exclusive-hands-on-with-ubuntus-new-unity-netbook-shell.ars|title = Hands-on with Ubuntu's new Unity netbook shell|accessdate = 1 April 2011|last = Paul|first = Ryan|authorlink = |year = 2010|month = July| work = [[Ars Technica]]}}&lt;/ref&gt;&lt;ref name=&quot;OMG17Mar11&quot;&gt; {{Cite news|url = http://www.omgubuntu.co.uk/2011/03/unity/|title = Whatâs wrong with Unity &amp; how we can fix it|accessdate = 14 March 2011|last =  Humphrey|first = Benjamin|authorlink = |year = 2011|month = March| work = OMG Ubuntu}}&lt;/ref&gt;&lt;ref name=&quot;PaulNov10&quot;&gt; {{Cite news|url = http://arstechnica.com/open-source/reviews/2010/10/ars-reviews-ubuntu-1010-wip.ars/7|title = Blessed Unity: Ars reviews Ubuntu 10.10|accessdate = 1 April 2011|last = Paul|first = Ryan|authorlink = |year = 2010|month = November| work = [[Ars Technica]]}}&lt;/ref&gt;&lt;ref name=&quot;Paul14Apr11&quot;&gt; {{Cite news|url = http://arstechnica.com/open-source/news/2011/04/unity-environment-in-good-shape-on-track-for-ubuntu-1104.ars|title = Unity environment in good shape, on track for Ubuntu 11.04|accessdate = 19 April 2011|last = Paul|first = Ryan|authorlink = |year = 2011|month = April| work = [[Ars Technica]]}}&lt;/ref&gt;&lt;ref name=&quot;Lynch01May11&quot;&gt; {{Cite news|url = http://desktoplinuxreviews.com/2011/05/01/ubuntu-11-04/6/|title = Ubuntu 11.04|accessdate = 02 May 2011|last = Lynch|first = Jim |authorlink = |year = 2011|month = May| work = Desktop Linux Reviews}}&lt;/ref&gt;
+
+;2010
+In reviewing a very early version of Unity shortly after it was unveiled in the summer of 2010, Ryan Paul of [[Ars Technica]] noted problems figuring out how to launch additional applications that are not on the dock bar. He also mentioned a number of bugs, including a lack of means to track which applications were open, along with other minor window management difficulties. He remarked that many of these were probably due to the early stage in the development process and expected it to improve over time. Paul concluded positively, &quot;Our test of the Unity prototype leads us to believe that the project has considerable potential and could bring a lot of value to the Ubuntu Netbook Edition. Its unique visual style melds beautifully with Ubuntu's new default theme and its underlying interaction model seems compelling and well-suited for small screens.&quot;&lt;ref name=&quot;PaulJul10&quot; /&gt;&lt;ref name=&quot;OMG17Mar11&quot; /&gt;
+
+In an extensive review of [[Ubuntu 10.10]] shortly after its release in October 2010, Ryan Paul of Ars Technica made further observations on Unity at that time. He noted, âUnity is highly ambitious and offers a substantially different computing experience than the conventional Ubuntu desktopâ and concluded that âThe [application] selectors are visually appealing, but they are easily the weakest part of the Unity user experience. The poor performance significantly detracts from their value in day-to-day use and the lack of actual file management functionality largely renders the file selector useless. The underlying concepts behind their design are good, however, and they have the potential to be much more valuable in the future as unity matures.&quot;&lt;ref name=&quot;PaulNov10&quot; /&gt;&lt;ref name=&quot;Paul14Apr11&quot; /&gt;
+
+;2011
+In March 2011 writer Benjamin Humphrey of [[OMG Ubuntu]] criticized the development version of Unity then being tested for [[Ubuntu 11.04]] on a number of grounds, including a development process that is divorced from user experiences, the lack of response to user feedback, &quot;the seemingly unbelievable lack of communication the design team has&quot; and a user interface which he described as &quot;cluttered and inconsistent&quot; but overall concluded that âUnity is not all bad â¦ While a number of the concepts in Unity may be flawed from a design point of view, the actual idea itself is not, and Canonical deserve applause for trying to jump start the stagnant open source desktop with Unity when the alternatives do not evoke confidence.â&lt;ref name=&quot;OMG17Mar11&quot; /&gt;
+
+On 14 April 2011 Ryan Paul of Ars Technica reviewed Unity as implemented in Ubuntu 11.04 beta, just two weeks before its stable release. At that time he reported that Unity was on track for inclusion in Natty Narwhal, despite the ambitious development schedule. He indicated, &quot;close attention to detail shines through in many aspects of Unity. The menubar is clean and highly functional. The sidebar dock is visually appealing and has excellent default behaviors for automatic hiding.&quot; He did note that the interface still has some weak points, especially difficulties browsing for applications not on the dock, as well as switching between application categories. He singled out &quot;random packages from the repositories, which are presented as applications that are available for installation in the launcher, are distracting and largely superfluous.&quot; Paul concluded &quot;There is still a lot of room for improvement, but Unity is arguably a strong improvement over the conventional GNOME 2.x environment for day-to-day use. The breadth of the changes may be disorienting for some users, but most will like what they see when Unity lands on their desktop at the end of the month&quot;.&lt;ref name=&quot;Paul14Apr11&quot; /&gt; Two weeks later he added the lack of configurability to his criticisms.&lt;ref name=&quot;Paul29Apr11&quot;&gt; {{Cite news|url = http://arstechnica.com/open-source/news/2011/04/ubuntu-1104-released-a-natty-narwhal-rises-from-the-depths.ars|title = Ubuntu 11.04 released, a Natty Narwhal rises from the depths|accessdate = 30 April 2011|last = Paul|first = Ryan|authorlink = |year = 2011|month = April| work =[[Ars Technica]]}}&lt;/ref&gt;  In a very detailed assessment of Ubuntu 11.04 and Unity  published on 12 May 2011, Ryan Paul further concluded Unity was a positive development for Ubuntu, but that more development needs to be invested to make it work right. He wrote: âThey have done some incredibly impressive work so far and have delivered a desktop that is suitable for day-to-day use, but it is still very far from fulfilling its full potential.â&lt;ref name=&quot;Paul12May11&quot;&gt; {{Cite news|url = http://arstechnica.com/open-source/reviews/2011/05/riding-the-narwhal-ars-reviews-unity-in-ubuntu-1104.ars|title = Riding the Narwhal: Ars reviews Unity in Ubuntu 11.04|accessdate = 12 May 2011|last = Paul|first = Ryan|authorlink = |year = 2011|month = May| work = [[Ars Technica]]}}&lt;/ref&gt;
+
+On 25 April 2011, the eve of the release of Ubuntu 11.04, reviewer Matt Hartley of ''IT Management'' criticized Unity, saying that the &quot;dumbing down of the Linux desktop environment is bordering on insane.&quot;&lt;ref name=&quot;Hartley25Apr11&quot;&gt; {{Cite news|url = http://itmanagement.earthweb.com/osrc/article.php/3931691/WhyIsUbuntusUnitySqueezingoutGNOME3.htm|title = Why Is Ubuntu's Unity Squeezing out GNOME 3?|accessdate = 29 April 2011|last = Hartley|first = Matt|year = 2011|month = April| work = IT Management}}&lt;/ref&gt;
+
+Reviewer Joey Sneddon of ''OMG Ubuntu'' was more positive about Unity in his review of Ubuntu 11.04, encouraging users, &quot;Sure itâs different â but different doesnât mean bad; the best thing to do is to give it a chance.&quot; He concluded that Unity on the desktop makes &quot;better use of screen space, intuitive interface layouts and, most importantly, making a desktop that works for the user and not in spite of them&quot;.&lt;ref name=&quot;OMG28Apr11&quot;&gt; {{Cite news|url = http://www.omgubuntu.co.uk/2011/04/ubuntu-11-04-released-reviewed/|title = Ubuntu 11.04 released, reviewed|accessdate = 3 May 2011|last = Sneddon|first = Joey|authorlink = |year = 2011|month = May| work = OMG Ubuntu}}&lt;/ref&gt;
+
+Following the release of Ubuntu 11.04 [[Canonical Ltd]] founder [[Mark Shuttleworth]] indicated that while he was generally happy with the implementation of Unity, he felt that there was room for improvement. Shuttleworth said, &quot;I recognise there are issues, and I would not be satisfied unless we fixed many of them in 11.10...Unity was the best option for the average user upgrading or installing. There are LOTS of people for whom it isnât the best, but we had to choose a default position...Itâs by no means perfect, and it would be egotistical to suggest otherwise...I think the bulk of it has worked out fantastically â both at an engineering level (Compiz, Nux) and in the user experience.&quot;&lt;ref name=OMG05May11&quot;&gt; {{Cite news|url = http://www.omgubuntu.co.uk/2011/05/mark-shuttleworth-talks-windicators-changes-for-unity-in-oneiric-and-whole-lot-more/|title =Mark Shuttleworth talks Windicators, changes for Unity in Oneiric, and whole lot moreâ¦|accessdate = 5 May 2011|last = Sneddon|first = Joey|authorlink = |year = 2011|month = May| work =OMG Ubuntu}}&lt;/ref&gt;
+
+In reviewing Unity in Ubuntu 11.04 on 9 May 2011, Jesse Smith of [[Distrowatch]] criticized its lack of customization, menu handling and Unity hardware requirements, saying &quot;there's really nothing here which should demand 3D acceleration&quot;. He also noted that &quot;the layout doesn't translate well to large screens or multiple-screen systems&quot;.&lt;ref name=&quot;DW09May11&quot;&gt; {{Cite news|url = http://distrowatch.com/weekly.php?issue=20110509#feature|title = A look at Ubuntu 11.04|accessdate = 10 May 2011|last = Smith|first = Jesse|authorlink = |year = 2011|month = May| work = [[Distrowatch]]}}&lt;/ref&gt; Jack M. Germain of ''Linux Insider'' reviewed Unity on 11 May 2011, indicating strong dislike for it, saying, &quot;Put me in the Hate It category&quot; and indicating that as development has proceeded he likes it less and less.&lt;ref name=&quot;Germain11May11&quot;&gt; {{Cite news|url = http://www.linuxinsider.com/story/Natty-Narwhal-Offers-Unity-but-No-Clarity-72417.html|title = Natty Narwhal Offers Unity but No Clarity|accessdate = 12 May 2011|last =Germain|first = Jack M.|authorlink = |year = 2011|month = May| work = Linux News}}&lt;/ref&gt;
+
+More criticism appeared after the release of Ubuntu 11.10. In November 2011 Robert Storey writing in [[DistroWatch]] noted that developer work on Unity is now taking up so much time that little is getting done on outstanding Ubuntu bugs, resulting in a distribution that is not as stable or as fast as it should be. Storey concluded &quot;Perhaps it would be worth putting up with the bugs if Unity was the greatest thing since sliced bread - something wonderful that is going to revolutionize desktop computing. But it's not. I tried Unity, and it's kind of cute, but nothing to write home about.&quot;&lt;ref name=&quot;UniqueNameOfRef&quot;&gt; {{Cite news|url = http://distrowatch.com/weekly.php?issue=20111107#opinion|title = Disunity|accessdate = 8 November 2011|last = Storey|first = Robert|date = 7 November 2011| work = [[DistroWatch]]}}&lt;/ref&gt;
+
+===By developers===
+Developers of Linux distributions based upon Ubuntu have also weighed in on the introduction of Unity. Some have been critical, including two distributions who base their criticism on [[usability testing]]. Marco Ghirlana, the lead developer of the audio- and video-centric ArtistX, stated, &quot;When I tried Unity on computer illiterates, they were less productive and took ages to understand the concepts behind it. When I show them how to use it, they said that it is pretty to see but hard to use.&quot; Stephen Ewen, the lead developer for [[UberStudent]], an Ubuntu-based Linux distribution for [[higher education]] and college-bound high school students, stated, &quot;Unity's design decreases both visual and functional accessibility, which tabulates to decreased productivity.&quot; Ewen also criticized Unity's menu scheme as much less accessible than on GNOME 2, which he said, &quot;means that the brain cannot map as quickly to program categories and subcategories, which again means further decreased productivity.&quot;&lt;ref&gt;Byfield, Bruce. &quot;Other Linux Distros' View of Ubuntu's Unity: It Ain't Pretty.&quot; ''Datamation,'' 17 May 2011. Available at http://itmanagement.earthweb.com/osrc/article.php/12068_3933716_2/Other-Linux-Distros-View-of-Ubuntus-Unity-It-Ain146t-Pretty.htm&lt;/ref&gt;
+
+==See also==
+* [[Comparison of X Window System desktop environments]]
+* [[Comparison of X window managers]]
+
+==References==
+{{reflist|30em}}
+
+==External links==
+{{commons category|Unity (desktop environment)|Unity}}
+* {{Official website|http://unity.ubuntu.com/}}
+*[https://wiki.ubuntu.com/DemystifyingUnityGraphicsHardwareRequirements Official Unity hardware requirements]
+
+{{Ubuntu}}
+{{Use dmy dates|date=April 2011}}
+{{X desktop environments and window managers}}
+
+{{DEFAULTSORT:Unity (Desktop Environment)}}
+[[Category:Free desktop environments]]
+[[Category:Ubuntu (operating system)]]
+[[Category:Canonical Ltd]]
+
+[[ar:ÙÙÙØªÙ (ÙØ§Ø¬ÙØ© ÙØ³ØªØ®Ø¯Ù)]]
+[[bn:à¦à¦à¦¨à¦¿à¦à¦¿ (à¦¡à§à¦à§à¦¸à¦à¦ª à¦ªà¦°à¦¿à¦¬à§à¦¶)]]
+[[ca:Unity (entorn d'escriptori)]]
+[[cs:Unity (uÅ¾ivatelskÃ© rozhranÃ­)]]
+[[de:Unity (BenutzeroberflÃ¤che)]]
+[[es:Unity (entorno de escritorio)]]
+[[eu:Unity]]
+[[fa:ÛÙÙÛØªÛ]]
+[[fr:Unity (gestionnaire de bureau)]]
+[[ko:ì°ë¶í¬ ì ëí°]]
+[[it:Unity (software)]]
+[[ms:Unity (paparan antara muka)]]
+[[ja:Unity]]
+[[pl:Unity (powÅoka systemowa)]]
+[[pt:Unity (interface de usuÃ¡rio)]]
+[[ru:Unity (Ð¾Ð±Ð¾Ð»Ð¾ÑÐºÐ° ÑÐ°Ð±Ð¾ÑÐµÐ³Ð¾ ÑÑÐ¾Ð»Ð°)]]
+[[ta:à®¯à¯à®©à®¿à®à¯à®à®¿ (à®®à¯à®à¯à®à¯à®à®£à®¿à®©à®¿ à®à®à¯à®®à¯à®à®®à¯)]]
+[[tt:Unity (ÑÑ Ó©ÑÑÓÐ»Ðµ ÑÐ¸ÑÓÐ»ÐµÐ³Ðµ)]]
+[[tr:Unity]]
+[[uk:Unity (ÑÑÑÐ»ÑÐ½Ð¸ÑÑ)]]
+[[zh:Unity]]</rev></revisions></page></pages></query></api>

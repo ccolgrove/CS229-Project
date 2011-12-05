@@ -1,0 +1,144 @@
+<?xml version="1.0"?><api><query><pages><page pageid="1962599" ns="0" title="Tux Paint"><revisions><rev xml:space="preserve">{{Infobox software
+| name                   = Tux Paint
+| logo                   = [[Image:Tux paint logo.png|100px|]]
+| screenshot             = [[Image:Tux Paint.png|250px|]]
+| caption                = A screenshot of a blank drawing canvas on Tux Paint in Spanish.
+| developer              = [[Bill Kendrick]], et al.
+| latest_release_version = 0.9.21c
+| latest_release_date    = December 27, 2010
+| operating_system       = [[Cross-platform]]
+| programming language   = [[C (programming language)|C]]
+| genre                  = [[Raster graphics editor]]
+| license                = [[GNU General Public License]]
+| website                = [http://www.tuxpaint.org/ www.tuxpaint.org]
+}}
+
+'''Tux Paint''' is a [[free software|free]] and [[open source software|open source]] [[bitmap graphics editor]] (a program for creating and processing [[raster graphics]]) geared towards young children. The project was started in 2002 by [[Bill Kendrick]] who continues to maintain and improve it, with help from numerous volunteers. It is licensed under the [[GNU General Public License]], and seen by many as a free software alternative to a similar [[proprietary software|proprietary]] [[educational software]] product, [[Kid Pix]].&lt;ref&gt;[http://www.macmerc.com/news/newsbite/893 MacMerc review of Tux Paint], June 18, 2003.&lt;/ref&gt;
+
+==History==
+
+Tux Paint was initially created for the [[Linux]] operating system, as there was no suitable drawing program for young children available for Linux at that time.&lt;ref&gt;[http://www.osnews.com/story.php/1549/Interview-with-Bill-Kendrick-of-NewBreedSoftware/ Interview with Bill Kendrick of NewBreedSoftware at OSNews], August 16, 2002.&lt;/ref&gt; It is written in the [[C (programming language)|C programming language]] and uses various free and open source [[library (software)|helper libraries]], including [[Simple DirectMedia Layer|the Simple DirectMedia Layer (SDL)]], and has since been made available for [[Microsoft Windows]], [[Mac OS X|Apple Mac OS X]], [[BeOS]] and other platforms. (See the [http://www.tuxpaint.org/download/ Tux Paint downloads page].)
+
+===Selected Milestone releases===
+* 2002.06.16 (June 16, 2002) - Initial release (brushes, stamps, lines, eraser), two days after coding started
+* 2002.06.30 (June 30, 2002) - First Magic tools added (blur, blocks, negative)
+* 2002.07.31 (July 31, 2002) - Localization support added
+* 0.9.11 (June 17, 2003) - Right-to-left support, UTF-8 support in Text tool
+* 0.9.14 (October 12, 2004) - '''Tux Paint Config.''' configuration tool released, Starter image support
+* 0.9.16 (October 21, 2006) - Slideshow feature, animated and directional brushes
+* 0.9.17 (July 1, 2007) - Arbitrary screen size and orientation support, [[SVG]] support, [[input method]] support
+* 0.9.18 (November 21, 2007) - Magic Tools turned into plug-ins, [[Pango]] text rendering
+
+==Features==
+
+Tux Paint stands apart from typical graphics editing software (such as [[GIMP|The GIMP]] or [[Photoshop]])  that it was designed to be usable by [[children]] as young as 3 years of age. The [[user interface]] is meant to be intuitive, and utilizes [[icon (computing)|icons]], audible feedback and textual hints to help explain how the software works. The brightly-colored interface, [[sound effects]] and cartoon mascot ([[Tux]], the mascot of the Linux kernel) are meant to engage children.
+
+[[Image:Tuxpaint-drawing.png|thumb|right|Drawing with Tux Paint's Paint tool.]]
+
+Tux Paint's normal interface is split into five sections:
+* Toolbox, containing the various basic tools (see below) and application controls ([[undo]], save, new, [[printing|print]])
+* Canvas, where the [[digital image|images]] are drawn and edited
+* Color [[Palette (computing)|palette]], where colors can be chosen (when applicable to the current tool)
+* Selector, providing various selectable objects (e.g., brushes, [[digital font|fonts]] or sub-tools, depending on the current tool)
+* Information area, where instructions, tips and encouragement are provided
+
+A simple [[slideshow]] feature allows previously-saved images to be displayed as a basic flip-book [[animation]] or as a slide [[presentation]].
+
+===Basic drawing tools===
+
+Like most popular graphics editing and composition tools, Tux Paint includes a paintbrush, an eraser, and tools to draw lines, [[polygon|polygonal shapes]] and text. Tux Paint provides multiple levels of [[undo]] and [[redo]], allowing accidental or unwanted changes to be removed while editing a picture.
+
+===Interacting with the operating system===
+
+Tux Paint was designed in such a way that the user does not need to understand the underlying [[operating system]] or how to [[Computer file management|deal with files]]. The &quot;Save&quot; and &quot;Open&quot; commands were designed to mimic those of software for [[personal digital assistant]] devices, such as the [[Palm Pilot|Palm]] handheld.&lt;ref&gt;[http://www.tuxpaint.org/reviews/communitykids/ &quot;Tux Paint
+Great Fun for Your Kids... If They Can Get You Off the Program!&quot;], Community Kids Magazine, December 2007&lt;/ref&gt; When one saves a picture in Tux Paint, they do not need to provide a [[computer file|file]] name or [[file browser|browse]] for where to place it. When one goes to open a previously-saved picture, a collection of [[thumbnail]]s of saved images is shown.
+
+Similarly, printing is typically a 'no questions asked' process, as well.
+
+===Advanced drawing tools===
+
+[[Image:Tuxpaint-magic-tools.png|thumb|right|A drawing made with a variety of Magic Tools.]]
+
+Tux Paint includes a number of 'filters' and 'special effects' which can be applied to a drawing, such as [[Gaussian blur|blurring]], fading, and making the picture look as though it was drawn in [[chalk]] on [[pavement (roads)|pavement]]. These are available through the 'Magic' tool in Tux Paint.  Starting with version 0.9.18, Tux Paint's 'Magic' tools are built as [[Plug-in (computing)|plugins]] that are loaded at runtime and use a [[C (programming language)|C]] [[Application programming interface|API]] specifically for creating such tools.&lt;ref&gt;[http://www.tuxpaint.org/latest/tuxpaint-0.9.18-press-release-en.php3 Tux Paint 0.9.18 press release], November 21, 2007.&lt;/ref&gt;
+
+[[Image:Tuxpaint-space-stamps.png|thumb|left|A space scene using Tux Paint Rubber Stamps]]
+
+A large collection of [[art]]work and [[Photography|photographic]] imagery are also available (under a [[license]] allowing free redistribution), and may be placed inside drawings using Tux Paint's &quot;[[Rubber stamp|Rubber Stamp]]&quot; tool. Stamps can be in either [[Raster graphics|raster (bitmap)]] format (in [[Portable Network Graphics|PNG]] format, supporting 24[[color depth|bpp]] and full [[alpha channel|alpha]] transparency), or as [[vector graphics]] (in [[Scalable Vector Graphics|SVG]] format) on many platforms Tux Paint supports. As of mid-2008, over 800 stamps are included in the stamps collection.
+
+===Parental and teacher controls===
+
+[[Image:Tuxpaint-config-sshot.png|thumb|right|Tux Paint Config., a graphical configuration tool for Tux Paint.]]
+
+As features are added to Tux Paint, [[computer configuration|configuration]] options have been added that allow parents and teachers to disable features and alter the behavior to better suit their children's or students' needs, or to better integrate the software in their home or school computing environment. Typical options, such as enabling or disabling sound effects and full-screen mode are available.  There are also options that help make Tux Paint suitable for younger or [[disabled]] children, such as displaying text using only [[uppercase]] letters or ignoring the distinction between buttons on the [[Computer mouse|mouse]].
+
+===Localization===
+
+Tux Paint has been [[translation|translated]] into numerous languages, and has support for the display of text in languages that use non-Latin character sets, such as [[Japanese language|Japanese]], [[Greek language|Greek]], or [[Telugu language|Telugu]]. As of June 2008, over 80 languages are supported.&lt;ref&gt;[http://www.tuxpaint.org/help/po/ &quot;Help Us Translate&quot;] page at Tux Paint website&lt;/ref&gt; Correct support for complex languages requires [[Pango]]. [[Sound effects]] and descriptive sounds for stamp imagery can also be localized.  Tux Paint includes its own form of [[input method]] support, allowing entry of non-Latin characters using the 'Text' tool.&lt;ref&gt;[http://www.tuxpaint.org/latest/tuxpaint-0.9.17-press-release-en.php3 Tux Paint 0.9.17 announcement]&lt;/ref&gt; Japanese ([[Romanized]] [[Hiragana]] and Romanized [[Katakana]]), Korean ([[Hangul|Hangul 2-bul]]) and Traditional Chinese are currently supported.
+
+==Wikiversity Tux Paint Storyboard Artwork Project==
+
+[[Wikiversity]] has a [[v:Tux Paint Storyboarding Project|project]] to create artwork for '''Rubber Stamps''' of human figures which turn Tux Paint into a storyboarding program for kids to storyboard their movies.
+
+==Gallery==
+
+The [http://www.tuxpaint.org/ Tux Paint website] includes an [http://www.tuxpaint.org/gallery/ online gallery] of over 500 drawings submitted by over 150 children and adults.
+
+&lt;gallery&gt;
+Image:tuxpaint-golden-gate-bridge-sf.png|&quot;[[Golden Gate Bridge]]&quot;, drawn using Tux Paint.
+&lt;/gallery&gt;
+
+==Availability==
+
+Tux Paint is included with the software that comes with the [[ASUS Eee PC]]. It is also a standard package in educationally-oriented [[Linux distribution]]s, such as [[Debian]] Jr. and [[Edubuntu]], as an optional package in numerous other Linux distributions, as well as part of numerous educationally-oriented Linux [[Live CD]]s.  It is included in various software collections for Windows (such as [[GNUWin II]] and [[Open Source Software CD]]), as well as in [[Portable application|portable software]] collections for Windows, since it can be run as a stand-alone application (without needing to be installed system-wide). Tux Paint is also available as an activity within the free and open source educational suite [[GCompris]].&lt;ref&gt;[http://tuxpaint.org/links/#distributors Tux Paint distributors]&lt;/ref&gt;
+
+==See also==
+
+{{Portal|Free software}}
+{{Commons category|Tux Paint}}
+*[[GCompris]]
+*[[Kid Pix]]
+*[[List of raster graphics editors]]
+*[[Comparison of raster graphics editors]]
+*[[Tux]] (Linux mascot penguin)
+*[[Tux Typing]]
+*[[Tux, of Math Command]]
+*[[Canvastic]]
+
+==References==
+
+{{Reflist}}
+
+==External links==
+*[http://www.tuxpaint.org/ Tux Paint official website]
+*[http://www.sourceforge.net/projects/tuxpaint/ &quot;Tux Paint&quot; project] at [[SourceForge|SourceForge.net]]
+*[http://www.tux4kids.com/ Tux4Kids]
+*[http://translate.sourceforge.net/wiki/decathlon/tuxpaint Tux Paint localisation]
+*[http://www.o.ne.tz/tuxpaint/ TuKsi Koti la Rangi (Tux Paint in Swahili)] [[Swahili language|Swahili]] translation project
+*[http://www.huftis.org/nynorsk-programvare/tux-paint/ Tux Paint in Norwegian Nynorsk] [[Norwegian language|Norwegian]] [[Nynorsk]] translation project
+*[http://www3.autistici.org/ironbishop/tuxpaint/ Tux Paint Localizzazione in Italiano (it_IT l10n)] [[Italian language|Italian]] translation project
+*[http://sourceforge.net/projects/tuxpaint-au/ &quot;Tuxpaint Stamps for Australian Schools&quot; project] at [[SourceForge|SourceForge.net]]
+
+{{Raster graphics editors}}
+{{open source video games}}
+
+[[Category:Free raster graphics editors]]
+[[Category:Free software programmed in C]]
+[[Category:Software for children]]
+[[Category:Linux bitmap graphics editors|Tux paint]]
+[[Category:Cross-platform software]]
+[[Category:Free, open source educational games]]
+[[Category:Portable software]]
+
+[[ca:Tux Paint]]
+[[cs:Tux Paint]]
+[[es:Tux Paint]]
+[[fr:Tux Paint]]
+[[ko:í±ì¤ íì¸í¸]]
+[[it:Tux Paint]]
+[[nl:Tux Paint]]
+[[pt:Tux Paint]]
+[[ru:Tux Paint]]
+[[fi:Tux Paint]]
+[[sv:Tux Paint]]
+[[uk:Tux Paint]]
+[[zh:Tux Paint]]</rev></revisions></page></pages></query></api>

@@ -1,0 +1,122 @@
+<?xml version="1.0"?><api><query><pages><page pageid="511018" ns="0" title="Media Player Classic"><revisions><rev xml:space="preserve">{{primarysources|date=January 2011}}
+{{Infobox software
+| name                   = Media Player Classic
+| logo                   = [[File:Media Player Classic logo.png|64px]]
+| screenshot             = [[File:Media Player Classic screenshot.png|300px]]
+| caption                =
+| collapsible            =
+| author                 =
+| developer              = Gabest
+| released               = {{start date and age|2003|05|29}}
+| discontinued           = Yes
+| latest release version = 6.4.9.1
+| latest release date    = {{Start date and age|2010|02|14}}
+| latest preview version =
+| latest preview date    =
+| programming language   = [[C++]]
+| operating system       = [[Microsoft Windows]]
+| platform               = [[IA-32]]
+| size                   = 1.9 MB (~2.0 MB)
+| language               = English, Portuguese, Czech, Italian, Ukrainian, French, Russian, Hungarian and German
+| status                 = Stalled
+| genre                  = [[Media player (application software)|Media player]]
+| license                = [[GNU General Public License]]
+| website                = {{URL|http://sourceforge.net/projects/guliverkli}}
+}}
+
+'''Media Player Classic''' ('''MPC''') is a compact [[media player (application software)|media player]] for 32-bit and 64-bit [[Microsoft Windows]]. The application mimics the look and feel of the old, lightweight [[Windows Media Player]] 6.4 but integrates most options and features found in modern media players. It and its [[Fork (software development)|forks]] are standard media players in the [[K-Lite Codec Pack]] and the [[Combined Community Codec Pack]].
+
+Media Player Classic was originally created and maintained by a programmer named &quot;Gabest&quot;. It was developed as a closed-source application, but later relicensed as [[free software]] under the terms of the [[GNU General Public License]]. MPC is hosted under the &lt;code&gt;guliverkli&lt;/code&gt; project at [[SourceForge.net]]. The project itself is something of an [[umbrella organization]] for works by Gabest.
+
+This project is now principally maintained by the community at the [[Doom9]] forum. The currently active fork is called &quot;Media Player Classic Home Cinema&quot;.
+
+== Features ==
+=== MPEG-1, MPEG-2, and MPEG-4 playback ===
+Media Player Classic is capable of [[VCD]], [[SVCD]], and [[DVD]] playback without installation of additional software or codecs. MPC has built-in codecs for [[MPEG-2]] video with support for subtitles and codecs for [[LPCM]], [[MPEG-1 Audio Layer II|MP2]], [[3GP]], [[AC3]], and [[DTS Coherent Acoustics|DTS]] audio. MPC also contains an improved [[MPEG]] splitter that supports playback of VCDs and SVCDs using its VCD/SVCD/XCD Reader. On October 30, 2005, Gabest added [[MPEG-4 Part 14|*.mp4]] and [[MPEG-4 Part 17|MPEG-4 Timed Text]] support.&lt;ref&gt;[http://forum.doom9.org/showthread.php?t=101835 Doom9 - Media Player Classic supports Matroska v2, *.mp4, *.mov, and MPEG-4 Timed Text]&lt;/ref&gt; An [[MPEG-4 Part 3|AAC]] decoding filter has been present in MPC for a while, which makes the player suitable for AAC playback in MP4, and so makes it an alternative to both [[Winamp]] and [[iTunes]].
+
+=== DirectShow ===
+Media Player Classic is primarily based on the [[DirectShow]] architecture and therefore automatically uses installed DirectShow decoding filters. For instance, after the open source DirectShow decoding filter [[ffdshow]] has been installed, fast and high quality decoding and postprocessing of the [[MPEG-4 Part 2|MPEG-4 ASP]], [[H.264]], and [[Flash Video]] formats is available in MPC.
+
+MPC provides [[DXVA]] beta support for newer [[NVIDIA]] and [[ATI]] video cards when using an [[H.264]] or [[VC-1]]. This provides hardware-acceleration for playback.
+
+In addition to DirectShow, MPC can also use the [[QuickTime]] and the [[RealPlayer]] codecs and filters (if installed on the computer) to play their native files.
+
+=== Matroska and Ogg containers ===
+Media Player Classic supports native playback of [[OGM]] and [[Matroska]] [[container format (digital)|container format]]s. However, OGM audio playback is limited by a lack of support for the CoreVorbis DirectShow filter, which mainly affects newer OGM files (c. 2006). The crux of this problem is that MPC is ''[[Hard coding|hard-coded]]'' to use an older Vorbis filter, so even if one installs newer filters, MPC is unable to use them.&lt;ref&gt;{{cite web| url=http://www.illiminable.com/ogg/| title=Directshow Filters for Ogg Vorbis, Speex, Theora and FLAC| publisher=illiminable.com| accessdate=2007-12-29| date=2006-02-24}}&lt;/ref&gt;
+
+=== TV tuners ===
+MPC supports playback and recording of [[television]] if a supported [[TV tuner]] is installed.
+
+== GPL violations using MPC code ==
+In April 2005, Gabest claimed that two media players, namely VX30 and [[K-Multimedia Player]], had each violated the [[GNU General Public License]] (GPL) by using portions of the Media Player Classic source code.&lt;ref&gt;[http://sourceforge.net/forum/forum.php?forum_id=462894 SourceForge.net: GPL violation]&lt;/ref&gt; Maui X-Stream, the distributor of VX30, previously accused of GPL violations with its [[CherryOS]] software, has made no response to the claim. The authors of [[K-Multimedia Player]] published an official comment on their forum denying the alleged GPL violation, however their forum posting lists GPL licensed libraries used by their executable, which would require their entire program also be released under the [[GNU GPL]] license.&lt;ref&gt;[http://www.kmplayer.com/forums/showthread.php?t=141 Do not believe bad rumors spread in networks. - K-Multimedia Player's Forums&lt;!-- Bot generated title --&gt;]&lt;/ref&gt;
+
+== Media Player Classic Home Cinema ==
+{{Infobox software
+| name                    = Media Player Classic Home Cinema
+| logo                    =[[File:Media Player Classic logo.png|64px]]
+| screenshot              =
+| caption                 =
+| author                  =
+| developer               =
+| released                = {{Start date and age|2006|03|29}}
+| discontinued            =
+| latest release version  = 1.5.2.3456
+| latest release date     = {{Start date and age|2011|07|22}}
+| latest preview version  = 
+| latest preview date     = 
+| programming language    = [[C++]]
+| operating system        = [[Microsoft Windows]]
+| platform                = [[IA-32]] and [[x86-64]]
+| size                    = 5.6 MB
+| language                = Armenian, Belarusian, Catalan, Chinese (Simplified), Chinese (Traditional), Czech, Dutch, French, German, Hebrew, Hungarian, Italian, Japanese, Korean, Polish, Portuguese (Brazil), Russian, Slovak, Spanish, Sweden, Turkish and Ukrainian&lt;ref&gt;[http://mpc-hc.sourceforge.net/media-player-features.html#languages Player Features: Language support]&lt;/ref&gt;
+| genre                   = [[media player (application software)|Media player]]
+| license                 = [[GNU General Public License]]
+| website                 = {{URL|http://mpc-hc.sourceforge.net/}}
+}}
+
+Due to a stall in development of ''Media Player Classic'' in May 2006, many bugs were left unfixed. The community at the [[Doom9]] forum has since continued the project in two main veins. The version known as Media Player Classic 6.4.9.1 was meant for fixing bugs and updating outdated libraries; its branch's development is mostly inactive.&lt;ref&gt;{{cite web|url=http://forum.doom9.org/showthread.php?t=128616|title=Doom9's topic on ''Media Player Classic'' patched build|accessdate=2007-11-11}}&lt;/ref&gt; The other version, called '''Media Player Classic Home Cinema''' ('''MPC-HC'''), is meant for adding new features, as well as fixing bugs and updating libraries.&lt;ref&gt;{{cite web|url=http://forum.doom9.org/showthread.php?t=123537|title=Doom9's topic on ''Media Player Classic Home Cinema''|accessdate=2007-11-11}}&lt;/ref&gt; Gabest, the main developer of the original version, stated in March 2007 that development of ''Media Player Classic'' is not dead but that he was unable to work on it.&lt;ref&gt;{{cite web|url=https://sourceforge.net/projects/guliverkli/forums/forum/281014/topic/1690818|title=SourceForge's discussion about project status|accessdate=2011-04-06}}&lt;/ref&gt;
+
+Media Player Classic Home Cinema updates the original player and adds many useful functionalities including the option to remove [[Screen tearing|tearing]], additional video decoders (in particular H.264, VC-1 and MPEG-2 with [[DirectX Video Acceleration]] support&lt;ref&gt;[http://mpc-hc.sourceforge.net/DXVASupport.html DXVA Support in MPC Home Cinema]&lt;/ref&gt;), [[Enhanced Video Renderer]] support, and multiple bug fixes. There is also a 64 bit-version of ''Media Player Classic Home Cinema'' that supports Windows XP x64, Windows Vista x64, and Windows 7 x64. MPC-HC as of version 1.4.2499.0 and later is also the first open source media player to implement [[color management]] support.&lt;ref&gt;[http://voxelium.wordpress.com/2010/09/20/icc-color-management-in-media-player-classic-home-cinema/ ICC color management in Media Player Classic Home Cinema]&lt;/ref&gt;
+
+== See also ==
+{{Portal|Free software}}
+
+* [[VSFilter]]
+* [[Comparison of video player software]]
+
+==References==
+{{Reflist}}
+
+==External links==
+*{{SourceForge|guliverkli|Media Player Classic}}
+*[http://mpc-hc.sourceforge.net/ Media Player Classic Home Cinema]
+*{{SourceForge|mpc-hc|Media Player Classic Home Cinema}}
+*[http://code.google.com/p/mpc-hc/ Media Player Classic Home Cinema at Google Code]
+*{{SourceForge|guliverkli2|Patched build of MPC}}
+
+[[Category:Windows media players]]
+[[Category:Free video software]]
+[[Category:Free media players]]
+[[Category:Free software programmed in C++]]
+[[Category:Windows-only free software]]
+
+[[ca:Media Player Classic]]
+[[cs:Media Player Classic]]
+[[de:Media Player Classic]]
+[[es:Media Player Classic]]
+[[fr:Media Player Classic]]
+[[ko:ë¯¸ëì´ íë ì´ì´ í´ëì]]
+[[it:Media Player Classic]]
+[[lt:Media Player Classic]]
+[[nl:Media Player Classic]]
+[[ja:Media Player Classic]]
+[[no:Media Player Classic]]
+[[pl:Media Player Classic]]
+[[pt:Media Player Classic]]
+[[ru:Media Player Classic]]
+[[sk:Media Player Classic]]
+[[fi:Media Player Classic]]
+[[sv:Media Player Classic]]
+[[uk:Media Player Classic]]
+[[vi:Media Player Classic]]
+[[zh:Media Player Classic]]</rev></revisions></page></pages></query></api>

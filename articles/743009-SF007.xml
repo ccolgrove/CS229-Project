@@ -1,0 +1,60 @@
+<?xml version="1.0"?><api><query><pages><page pageid="743009" ns="0" title="Zero Install"><revisions><rev xml:space="preserve">{{primarysources|date=December 2009}}
+{{Infobox Software
+| name                   =  Zero Install
+| logo                   = 
+| screenshot             = [[Image:Zero Install.png|275px]]
+| caption                = Zero Install ready to run a downloaded program
+| developer              = Thomas Leonard
+| latest release version = 1.0 &lt;ref&gt;http://article.gmane.org/gmane.comp.file-systems.zero-install.devel/4186&lt;/ref&gt;
+| latest release date    = {{release date|2011|05|23}}
+| latest preview version = 
+| latest preview date    = 
+| operating_system       = [[Linux]], [[Unix]], [[Mac OS X]], [[Windows]]
+| programming language   = [[Python_(programming_language)|Python]]
+| genre                  = [[Software package (installation)|Software package]]
+| license                = [[GNU Lesser General Public License]]
+| website                = http://0install.net
+}}
+
+'''Zero Install''' is a means of distributing and [[Software package (installation)|packaging]] [[software]] for multiple operating systems ([[Linux]] and [[Unix|Unix-like]], [[MacOS X]], and [[Windows]]).  Many distributions offer it as an additional non-default component.&lt;ref&gt;http://packages.debian.org/search?keywords=zeroinstall-injector&lt;/ref&gt;&lt;ref&gt;http://packages.ubuntu.com/lucid/zeroinstall-injector&lt;/ref&gt;
+
+== Design ==
+
+Rather than the normal method of downloading a software package, extracting it, and installing it before it can be used (with the accompanying use of [[destructive update]]s and [[privilege escalation]]), packages distributed using Zero Install need only be run. The first time software is accessed, it is downloaded from the [[Internet]] and cached; subsequently, software is accessed from the cache. Programs are accessed by the fully qualified name of their URL; for example one would not run &quot;myeditor textfile.txt&quot;, but &quot;&lt;nowiki&gt;http://www.example.org/edit&lt;/nowiki&gt; textfile.txt&quot;. Inside the cache, each application unpacks to its own directory, as in [[Application Directory]] systems.
+
+The system is implemented as a [[Python (programming language)|Python]] program, called the ''Injector'' (a reference to [[Dependency injection]]). The system is intended to be used alongside a distribution's native package manager.
+
+The main advantage of Zero Install over more popular packaging systems is that no [[root password]] is needed to install software; packages can be installed in system locations writable by that user. Thus, package installation affects only the user installing it, which makes it possible for all users to be able to install and run new software.
+
+== See also ==
+* [[Application virtualization]]
+* [[Portable application creators]]
+* [[Java Web Start]]
+* [[Autopackage]]
+* [[klik (packaging method)|Klik]]
+* [[RUNZ]]
+* [[ROX Desktop]]
+* [[ClickOnce]]
+
+==References==
+{{reflist}}
+
+==External links==
+* [http://0install.net/ The Zero Install webpage]
+* [http://www.osnews.com/story.php/16956/Decentralised-Installation-Systems/ Decentralised Installation Systems] - essay on OSNews.com
+* [http://www.netbsd.org/gallery/pkgsrc-interviews.html#zero-install pkgsrc and the concepts of package management 1997-2007 (part 2) - The Zero Install system]
+* [http://www.linux.com/article.pl?sid=07/02/15/0724206 Zero Install: An executable critique of native package systems] - linux.com review and interview
+* [http://www.pro-linux.de/news/2005/8310.html Neue Zero Install-Implementation] - article on pro-linux.de
+* [http://slashdot.org/article.pl?sid=04/04/03/174249&amp;mode=nested&amp;tid=106&amp;tid=185 Zero Install: The Future of Linux on the Desktop?] - Slashdot article
+
+[[Category:Software distribution]]
+[[Category:Cross-platform software]]
+[[Category:Package management systems]]
+
+[[de:Zero Install]]
+[[es:Zero Install]]
+[[fr:Zero Install]]
+[[it:Zero Install]]
+[[pl:Zero Install]]
+[[pt:Zero Install]]
+[[simple:Zero Install]]</rev></revisions></page></pages></query></api>

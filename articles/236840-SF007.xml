@@ -1,0 +1,104 @@
+<?xml version="1.0"?><api><query><pages><page pageid="236840" ns="0" title="Ardour (software)"><revisions><rev xml:space="preserve">{{Primary sources|date=October 2010}}
+{{Infobox software
+| name                 = Ardour
+| logo                 = [[File:Ardour-icon.png]]
+| screenshot           = [[File:Arch-Linux-Ardour.png|250px]]
+| caption              = Ardour running under [[Linux]]
+| developer            = [http://ardour.org/credits The Ardour Community]
+| released             = {{Start date|2005|9|23|df=yes}}&lt;ref&gt;{{cite mailing list |last=Davis |first=Paul |title=ardour 0.99 released |date=2005-09-23 |mailinglist=ardour-dev |accessdate=2008-12-30 |url=http://osdir.com/ml/audio.ardour.devel/2005-09/msg00084.html &lt;!-- lists.ardour.org/pipermail/ardour-dev-ardour.org/2005-September/002658.html is not in the wayback machine, and lists.ardour.org is not public --&gt;}}&lt;/ref&gt;{{#tag:ref|The first development series of Ardour was finalized with 0.99; there was no 1.0 release, and all features which had been planned for 1.0 were deferred to the 2.0 series.&lt;ref&gt;{{cite mailing list|last=Davis |first=Paul |title=post 0.99 |date=2005-09-23 |mailinglist=ardour-dev |url=http://lists.ardour.org/pipermail/ardour-dev-ardour.org/2005-September/002659.html |publisher=Ardour.org|archiveurl=http://web.archive.org/web/20051103053112/lists.ardour.org/pipermail/ardour-dev-ardour.org/2005-September/002659.html |archivedate=2005-11-03 |accessdate=2008-12-30 }}&lt;/ref&gt;|group='nb'}}
+| frequently_updated   = yes&lt;!-- Release version update? Don't edit this page, just click on the version number!--&gt;
+| programming_language = [[C++]] ([[GTK+]])
+| operating_system     = [[FreeBSD]], [[Linux]], [[Mac OS X]]
+| language             = [[English language|English]]&lt;ref&gt;{{cite web|url=http://ardour.org/node/3485|title=Other Languages and Translation &quot;team&quot;|publisher=Ardour.org}}&lt;/ref&gt;
+| genre                = [[Digital audio workstation]]
+| license              = [[GPLv2]]+&lt;ref name=&quot;license&quot; /&gt;
+| website              = [http://ardour.org/ ardour.org]
+}}
+'''Ardour''' is a [[hard disk recorder]] and [[digital audio workstation]] application. It runs on [[Linux]], [[Mac OS&amp;nbsp;X]]&lt;ref&gt;{{cite web | title=Ardour - System Requirements | url=http://ardour.org/system_requirements | publisher=Ardour.org|accessdate=2008-12-03 }}&lt;/ref&gt; and [[FreeBSD]].&lt;ref&gt;{{cite web|url=http://www.freshports.org/audio/ardour/ |title=audio/ardour |publisher=FreshPorts.org |date= |accessdate=2010-10-28}}&lt;/ref&gt;  Its primary author is [[Paul Davis (programmer)|Paul Davis]], who is also responsible for the [[JACK Audio Connection Kit]]. Ardour's intention is to provide digital audio workstation software suitable for professional use.
+
+Released under the terms of the [[GNU General Public License]] (version two or any later version), Ardour is [[free software]]&lt;ref name=&quot;license&quot;&gt;{{cite web |url=http://viewcvs.ardour.org/index.cgi/ardour2/ardour2/branches/3.0/autowaf.py?revision=5891&amp;view=markup |title=A license notice example on top an Ardour source code file |publisher=Ardour.org |accessdate=2009-12-08}}&lt;/ref&gt; although the downloader is asked to spend some money to proceed downloading the full version. Without paying, users can download either the full source code or a limited OSX binary without the ability to &quot;load or save AU plugin settings&quot;.&lt;ref&gt;{{cite web|url=http://ardour.org/download |title=Download |publisher=Ardour.org |date= |accessdate=2010-10-28}}&lt;/ref&gt;
+
+== Features ==
+The feature list below is an overview of Ardour's features including the most essential features. Covering all features is beyond the scope of this article.
+
+=== Recording ===
+Ardour's recording capabilities are limited only by the hardware it is run on. There are no built in limitations in the software. When recording on top of existing material Ardour can do [[Latency (audio)|latency]] compensation, positioning the recorded material where it was intended to be when recording it. Monitoring options include monitoring with external hardware (a feature supported by some sound cards), monitoring with Ardour and monitoring with [[JACK Audio Connection Kit|JACK]]. Monitoring with Ardour makes it possible to apply [[Plug-in (computing)|plugin]] effects to the signal while it is recorded in real time. Using the audio server JACK, Ardour can record both from the audio card and JACK-compatible Software concurrently.
+
+New versions of JACK also support transporting audio over a generic [[Internet Protocol|IP]] network.&lt;ref&gt;{{cite web | title =  NetJack - Jack Over The Net | url = http://netjack.sourceforge.net/ |publisher=netjack.sourceforge.net}}&lt;/ref&gt; This makes it possible to run Ardour on hardware separate from the one that actually contains the audio interface.
+
+=== Mixing ===
+Ardour supports an arbitrary number of tracks and buses through an &quot;anything to anywhere&quot; routing system. All gain, panning and plugin parameters can be automated. All sample data is mixed and maintained internally in 32-bit floating point format.
+
+=== Editing ===
+Ardour supports dragging, trimming, splitting and timestretching recorded regions with sample-level resolution and has a possibility to layer regions. It includes a crossfade editor and a [[beat detection]]. Ardour has unlimited undo/redo and a snapshot feature for storing the current state of a session to a file for future reference.
+
+=== Mastering ===
+Ardour can be used as an [[audio mastering]] environment. Its integration with [[JACK Audio Connection Kit|JACK]] makes it possible to use mastering tools such as [[JAMin]] to process the audio data. The output of Ardour's mixer can be sent to JAMin and/or any other JACK-aware audio-processing software, and the output processed by these programmes can be recorded using a recording-software. Ardour can also export TOC and CUE files, which allows for the creation of [[Red Book (audio CD standard)|audio CD]]s.
+
+== Compatibility ==
+As Ardour is a [[free and open source software]] application anyone can read and modify the program's [[source code]]. Ardour attempts to adhere to industry standards, such as [[MIDI timecode|SMPTE/MTC]], [[Broadcast Wave Format|Broadcast WAVE]], [[MIDI Machine Control]] and [[XML]].&lt;ref&gt;{{cite web | url=http://ardour.org/key_features | title=Ardour Key Features |publisher=Ardour.org| accessdate=2008-05-16}}&lt;/ref&gt;
+
+Ardour has been tested and runs on the [[GNU]]/[[Linux]] operating system, on the [[x86-64]], [[x86]], [[PowerPC|PPC]] architectures, [[Sun Solaris]], [[Mac OS X]] on Intel and PowerPC, and [[FreeBSD]]. It takes advantage of multiprocessor and multicore SMP and realtime features of these operating systems. Support is limited on operating systems other than Linux and OS X, however.&lt;ref&gt;{{cite web | url=http://ardour.org/node/878 | title=Solaris discussion |publisher=Ardour.org| accessdate=2008-12-03 }}&lt;/ref&gt;
+
+Attempts have been made, and continue to be made,&lt;ref&gt;{{cite web|url=http://old.nabble.com/Setting-a-font-for-the-verbose-cursor(s)-td30799250.html |title=Setting a font for the verbose cursor(s) |publisher=Nabble.com |date=2011-01-30 |accessdate=}}&lt;/ref&gt; to port to [[Microsoft Windows|Windows]], although Ardour's lead developer has expressed reluctance to encourage those efforts.&lt;ref&gt;{{cite web|url=http://ardour.org/node/517#comment-1206 |title=Windows? |publisher=Ardour.org |date= |accessdate=2010-10-28}}&lt;/ref&gt;&lt;ref&gt;{{cite web|url=http://ardour.org/node/2162#comment-13873 |title=Why Ardour don't work in windows? |publisher=Ardour.org |date= |accessdate=2010-10-28}}&lt;/ref&gt;
+
+=== Plugins ===
+Ardour relies on plugins to enable many features from [[audio effect]]s processing to [[dynamics (music)|dynamic]] control. It supports the [[LADSPA]] and [[LV2]] plugin architectures on Linux and additionally [[Audio Units]] on OS X. Using [[Steinberg]]'s [[Virtual Studio Technology|VST]] plugins with Ardour on Linux and FreeBSD is possible if Ardour is [[compiled]] by the user or packager/distributor to include VST support. As of version 2.8, VST support no longer requires use of the VST [[SDK]] from Steinberg.&lt;ref&gt;{{cite web | url=http://ardour.org/node/2555 | title=Ardour 2.8 Released |publisher=ardour.org| accessdate=2009-03-28 }}&lt;/ref&gt;
+
+=== Import and Export ===
+Ardour supports exporting whole sessions or parts of sessions, and importing audio clips into sessions from more than 30 different audio file formats. This can be done using Ardour's built-in audio file database manager or directly from an ordinary file browser.
+
+== Supporting companies ==
+[[SAE Institute]] provided corporate support for Ardour up until February 2009. The aim of the initiative was to provide a more integrated experience on Mac OS X and the development of a version tailored towards beginner students.&lt;ref&gt;{{cite web |url=http://ardour.org/node/976 |title=SAE Institute Sponsors Ardour Open Source DAW Project |publisher=Ardour.org |date= |accessdate=2010-10-28}}&lt;/ref&gt;
+
+[[Solid State Logic]] employed Paul Davis to work full time on Ardour during the development of the version 2. This support lasted through to the end of 2006.&lt;ref&gt;{{cite web|url=http://ardour.org/sponsorship |title=Ardour Seeks New Sponsorship |publisher=Ardour.org |date= |accessdate=2010-10-28}}&lt;/ref&gt;
+
+[[Harrison Audio Consoles]] has been a supporter of the Ardour project since early 2005. Harrison's destructive film dubber, the Xdubber, is based on Ardour. The Xdubber also serves as a customizable platform for enterprise-class [[Digital audio workstation|DAW]] users.&lt;ref&gt;{{cite web | title = Harrison Debuts Xrouter, Xdubber | url = http://livefromaes.com/articles/publish/article_248.shtml |publisher=LiveFromAES.com}}&lt;/ref&gt;
+
+== See also ==
+{{Portal|Free software}}
+
+* [[JACK Audio Connection Kit]], a real time low latency audio server.
+* [[List of free audio software]]
+* [[Linux audio software]]
+* [[Comparison of multitrack recording software]]
+
+== Notes ==
+{{Reflist|group=nb}}
+
+==References==
+{{Reflist|3}}
+
+== Articles ==
+* {{cite web |last=Hinkle-Turner |first=Elizabeth |title=Ardour et al., or Free and Easy Laptop Pro Audio: An Essay Perspective from a desperate working mother composer |url=http://cec.sonus.ca/econtact/11_3/hinkle_turner_ardour.html |work=eContact! 11.3 â Open Source for Audio Application|date=September 2009 |publisher=Canadian Electroacoustic Community}}
+* {{cite web |last=Nettingsmeier |first=JÃ¶rn |title=Ardour and Ambisonics: A FLOSS approach to the next generation of sound spatialisation |url=http://cec.sonus.ca/econtact/11_3/nettingsmeier_ambisonics.html|work=eContact! 11.3 - JÃ¶rn Nettingsmeier - Ardour and Ambisonics |date=September 2009 |publisher=Canadian Electroacoustic Community}}
+
+==External links==
+{{Commons cat|Ardour (software)}}
+* [http://ardour.org/ Project home page]
+* [http://linuxjournal.com/article/7796 Introducing Ardour] - Article in [[Linux Journal]]
+* [[FLOSS Weekly]] - [http://twit.tv/floss86 86: Ardour] podcast with Paul Davis for Ardour
+* [http://opensourcemusician.libsyn.com/index.php?post_id=531039 Open Source Musician podcast interview] with Paul Davis
+
+{{Audio editors}}
+
+{{DEFAULTSORT:Ardour (Software)}}
+[[Category:2004 software]]
+[[Category:Free audio editors]]
+[[Category:Free music software]]
+[[Category:Free software programmed in C++]]
+[[Category:Digital audio workstation software]]
+[[Category:Cross-platform software]]
+[[Category:Audio software with JACK support]]
+[[Category:Mac OS X music creation software]]
+
+[[ca:Ardour]]
+[[de:Ardour]]
+[[es:Ardour]]
+[[fr:Ardour]]
+[[it:Ardour]]
+[[ja:Ardour]]
+[[pl:Ardour (oprogramowanie)]]
+[[pt:Ardour]]
+[[ru:Ardour]]
+[[sv:Ardour]]</rev></revisions></page></pages></query></api>

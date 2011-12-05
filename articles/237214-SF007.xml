@@ -1,0 +1,174 @@
+<?xml version="1.0"?><api><query><pages><page pageid="237214" ns="0" title="AspectJ"><revisions><rev xml:space="preserve">{{merge from|AspectWerkz|date=October 2011}}
+{{Infobox programming language
+ | name                   = AspectJ
+ | logo                   = 
+ | caption                = crosscutting objects for better modularity
+ | file ext               = aj
+ | paradigm               = [[Aspect-oriented programming|aspect-oriented]]
+ | released               = {{Start date|2001}}
+ | designer               = 
+ | developer              = [[Eclipse Foundation]]
+ | latest release version = 1.6.11
+ | latest release date    = {{release date|2011|03|15}}
+ | latest preview version = 
+ | latest preview date    = &lt;!-- {{start date and age|YYYY|MM|DD}} --&gt;
+ | typing                 = 
+ | implementations        = [[The AspectJ Development Tools]] for [[Eclipse (software)|Eclipse]]
+ | dialects               = 
+ | influenced by          = 
+ | influenced             = 
+ | programming language   = [[Java (programming language)|Java]]
+ | operating system       = [[Cross-platform]]
+ | license                = [[Eclipse Public License]]
+ | website                = http://www.eclipse.org/aspectj/
+ | wikibooks              = 
+}}
+
+'''AspectJ''' is an [[Aspect-oriented programming|aspect-oriented]] extension created at [[PARC (company)|PARC]] for the [[Java (programming language)|Java]] programming language. It is available in [[Eclipse Foundation]] open-source projects, both stand-alone and integrated into [[Eclipse (computing)|Eclipse]].  AspectJ has become the widely-used de-facto standard for [[Aspect-oriented programming|AOP]] by emphasizing simplicity and usability for end users.  It uses Java-like syntax and has included IDE integrations for displaying crosscutting structure since its initial public release in 2001.
+
+==Simple language description==
+All valid Java programs are also valid AspectJ programs, but AspectJ also allows programmers to define special constructs called ''[[Aspect-oriented_software_development#Aspects|aspects]]''.  Aspects can contain several entities unavailable to standard classes.  These are:
+
+* [[inter-type declaration]]sâallow a programmer to add methods, fields, or interfaces to existing classes from within the aspect.  This example adds an &lt;code&gt;acceptVisitor&lt;/code&gt; (see [[visitor pattern]]) method to the &lt;code&gt;Point&lt;/code&gt; class:
+
+&lt;source lang=&quot;java&quot;&gt;
+aspect VisitAspect {
+  void Point.acceptVisitor(Visitor v) {
+    v.visit(this);
+  }
+}
+&lt;/source&gt;
+
+* [[pointcut]]s &amp;mdash; allow a programmer to specify [[join point]]s (well-defined moments in the execution of a program, like method call, object instantiation, or variable access).  All pointcuts are expressions ([[Aspect-oriented_software_development#Quantification_and_obliviousness|quantifications]]) that determine whether a given join point matches.  For example, this point-cut matches the execution of any instance method in an object of type &lt;code&gt;Point&lt;/code&gt; whose name begins with &lt;code&gt;set&lt;/code&gt;:
+
+&lt;source lang=&quot;java&quot;&gt;
+pointcut set() : execution(* set*(..) ) &amp;&amp; this(Point);
+&lt;/source&gt;
+
+* [[Advice (computer science)|advice]] &amp;mdash; allows a programmer to specify code to run at a join point matched by a [[pointcut]].  The actions can be performed ''before'', ''after'', or ''around'' the specified [[join point]].  Here, the advice refreshes the display every time something on &lt;code&gt;Point&lt;/code&gt; is set, using the pointcut declared above:
+
+&lt;source lang=&quot;java&quot;&gt;
+after () : set() {
+  Display.update();
+}
+&lt;/source&gt;
+
+AspectJ also supports limited forms of pointcut-based static checking and aspect reuse (by inheritance).  See the [http://www.eclipse.org/aspectj/doc/released/progguide/index.html AspectJ Programming Guide] for a more detailed description of the language.
+
+== AspectJ compatibility and implementations ==
+
+AspectJ has been designed to be implemented in many ways, including source- or bytecode-weaving and directly in the VM (virtual machine).  In all cases, the AspectJ program is transformed into a valid Java program run in a Java VM.  Any classes affected by aspects are binary-compatible with the unaffected classes (in order to maintain compatibility with any classes that were compiled with the unaffected originals).  Supporting multiple implementations allows the language to grow as technology changes, and being Java-compatible ensures platform availability.
+
+Key to its success has been engineering and language decisions designed to make the language usable and programs deployable.  The original Xerox AspectJ implementation used source weaving, which required access to source code.  When Xerox contributed the code to Eclipse, AspectJ was reimplemented using the Eclipse Java compiler and a bytecode weaver based on [[BCEL]], so developers could write aspects for code in binary (.class) form.  At this time the AspectJ language was restricted to support a per-class model essential for incremental compilation and load-time weaving.  This made IDE integrations as responsive as their Java counterparts, and it enabled developers to deploy aspects without altering the build process.  This led to increased adoption, as AspectJ became usable for impatient Java programmers and enterprise-level deployments.  Since then, the Eclipse team has increased performance and correctness, upgraded the AspectJ language to support Java 5 language features like generics and annotations, and integrated annotation-style pure-java aspects from [[AspectWerkz]].
+
+The Eclipse project supports both command-line and [[Apache Ant|Ant]] interfaces. A related Eclipse project has steadily improved the Eclipse IDE support ([[AJDT]]) for AspectJ and other providers of crosscutting structure. IDE support for [[emacs]], [[NetBeans]], and [[JBuilder]] foundered when Xerox put them into open source, but support for Oracle's JDeveloper did appear. IDE support has been key to Java programmers using AspectJ and understanding crosscutting concerns.
+
+BEA has offered limited support in a VM for aspect-oriented extensions, but for extensions to be supported in all Java VM's would require agreement through Sun's Java Community Process (see also the java.lang.instrument package available since Java SE 5 which is some kind of common ground for JVM load-time instrumentation). 
+
+Academic interest in both the semantics and implementation of [[Aspect-oriented programming|aspect-oriented]] languages has surrounded AspectJ since its release.  The leading research implementation of AspectJ is the [http://www.aspectbench.org/ AspectBench Compiler], or ''abc''; it supports extensions for changing the syntax and semantics of the language and forms the basis for many AOP experiments that the AspectJ team can no longer support, given its broad user base.
+
+Many programmers discover AspectJ as an enabling technology for other projects they use, most notably [[Spring Framework (Java)#Aspect-oriented programming framework|Spring AOP]]. A sister Spring project, [[Spring Roo]], automatically maintains AspectJ [[mixins|inter-type declarations]] as its principal code generation output.
+
+== History and contributors ==
+
+[[Gregor Kiczales]] started and led the [[Xerox PARC]] team that eventually developed AspectJ; he coined the term &quot;crosscutting&quot;.  Fourth on the team, [[Chris Maeda]] coined the term &quot;aspect-oriented programming.&quot;  [[Jim Hugunin]] and [[Erik Hilsdale]] ([[Xerox PARC]] team members 12 and 13) were the original compiler and weaver engineers, [[Mik Kersten]] implemented the IDE integration and started the [http://eclipse.org/ajdt Eclipse AJDT] project with [[Adrian Colyer]] (current lead of the [http://eclipse.org/aspectj AspectJ project]) and [[Andrew Clement]] (current compiler engineer).
+
+[[Jonas Boner]] and [[Alex Vasseur]] engineered the [[AspectWerkz]] project, and later contributed to the AspectJ project when it merged in the AspectWerkz annotation style and load-time weaving support.
+
+The [[AspectBench Compiler]] was developed and is being maintained as a joint effort of the [[Programming Tools Group]] at the [[Oxford University Computing Laboratory]], the [[Sable Research Group]] at [[McGill University]] and the Institute for [[BRICS Institute|Basic Research in Computer Science (BRICS)]].
+
+==Bibliography==
+{{refbegin}}
+*{{citation
+| first1    = Ramnivas
+| last1     = Laddad
+| title     = AspectJ in Action: Enterprise AOP with Spring
+| date      = September 28, 2009
+| edition   = 2nd
+| publisher = [[Manning Publications]]
+| pages     = 550
+| isbn      = 978-1933988054
+| url       = 
+}}
+*{{citation
+| first1    = Russ
+| last1     = Miles
+| title     = AspectJ Cookbook
+| date      = December 20, 2004
+| edition   = 1st
+| publisher = [[O'Reilly Media]]
+| pages     = 354 
+| isbn      = 978-0596006549
+| url       = http://oreilly.com/catalog/9780596006549/
+}}
+*{{citation
+| first1    = Adrian
+| last1     = Colyer 
+| first2    = Andy 
+| last2     = Clement 
+| first3    = George 
+| last3     = Harley 
+| first4    = Matthew 
+| last4     = Webster 
+| title     = Eclipse AspectJ: Aspect-Oriented Programming with AspectJ and the Eclipse AspectJ Development Tools
+| date      = December 24, 2004
+| edition   = 1st
+| publisher = [[Addison-Wesley Professional]]
+| pages     = 504 
+| isbn      = 978-0321245878
+| url       = http://www.informit.com/store/product.aspx?isbn=0321245873
+}}
+*{{citation
+| first1    = Joseph D.
+| last1     = Gradecki
+| first2    = Nicholas
+| last2     = Lesiecki
+| title     = Mastering AspectJ: Aspect-Oriented Programming in Java
+| date      = March 7, 2003
+| edition   = 1st
+| publisher = [[John Wiley &amp; Sons|Wiley]]
+| pages     = 456 
+| isbn      = 978-0471431046
+| url       = http://www.wiley.com/WileyCDA/WileyTitle/productCd-0471431044.html
+}}
+{{refend}}
+
+==See also==
+
+* [[Aspect-oriented programming]]
+* [[AspectWerkz]]
+* [[Spring AOP]] (part of the [[Spring Framework (Java)|Spring Framework]])
+* [[Aspect-oriented software development]]
+
+== External links ==
+* [http://eclipse.org/aspectj AspectJ Home Page]
+* Xerox has {{US patent|6467086}} for AOP/AspectJ, but published AspectJ source code under the [http://www.eclipse.org/legal/cpl-v10.html Common Public License], which grants some patent rights.
+* http://www.eclipse.org/aspectj/doc/released/progguide/index.html
+* [http://www.eclipse.org/ajdt/ AJDT]
+* http://aspectbench.org/
+* http://www.ibm.com/developerworks/java/library/j-aspectj
+{{aosd}}
+{{Eclipse Foundation}}
+
+{{DEFAULTSORT:Aspectj}}
+[[Category:Java programming language family]]
+[[Category:Aspect-oriented programming]]
+[[Category:Aspect-oriented software development]]
+[[Category:Software distribution]]
+[[Category:Eclipse (software)]]
+[[Category:Software development process]]
+[[Category:Eclipse technology]]
+[[Category:Eclipse software]]
+[[Category:Cross-platform software]]
+
+[[bg:AspectJ]]
+[[de:AspectJ]]
+[[es:AspectJ]]
+[[fr:AspectJ]]
+[[it:AspectJ]]
+[[ms:AspectJ]]
+[[ja:AspectJ]]
+[[pl:AspectJ]]
+[[pt:AspectJ]]
+[[tr:AspectJ]]
+[[uk:AspectJ]]</rev></revisions></page></pages></query></api>

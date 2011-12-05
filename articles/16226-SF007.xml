@@ -1,0 +1,143 @@
+<?xml version="1.0"?><api><query><pages><page pageid="16226" ns="0" title="JUnit"><revisions><rev xml:space="preserve">{{Redirect|Junit|the Egyptian goddess|Junit (goddess)}}
+{{Infobox software
+| name                   = JUnit
+| logo                   =
+| screenshot             =
+| caption                =
+| developer              = [[Kent Beck]], [[Erich Gamma]], David Saff
+| latest release version = 4.9&lt;ref&gt;[https://github.com/KentBeck/junit/downloads JUnit Releases]&lt;/ref&gt;
+| latest release date    = {{release date|2011|08|22}}
+| latest preview version = 
+| latest preview date    = 
+| operating system       = [[Cross-platform]]
+| programming language   = [[Java programming language|Java]]
+| genre                  = [[Unit testing]] tool
+| license                = [[Common Public License]]
+| website                = {{URL|http://junit.sourceforge.net}}
+}}
+
+'''JUnit''' is a [[unit testing]] [[Software framework|framework]] for the [[Java (programming language)|Java programming language]]. JUnit has been important in the development of [[test-driven development]], and is one of a family of [[unit testing]] frameworks collectively known as [[xUnit]] that originated with [[SUnit]].
+
+JUnit is linked as a [[JAR (file format)|JAR]] at compile-time; the framework resides under packages &lt;code&gt;junit.framework&lt;/code&gt; for JUnit 3.8 and earlier and under &lt;code&gt;org.junit&lt;/code&gt; for JUnit 4 and later.
+
+==Example of JUnit test fixture==
+A JUnit [[Test fixture]] is a Java object. With older versions of JUnit, fixtures had to inherit from &lt;code&gt;junit.framework.TestCase&lt;/code&gt;, but new tests using JUnit 4 should not do this&lt;ref&gt;{{cite web
+| url=http://junit.sourceforge.net/doc/cookbook/cookbook.htm
+| title=JUnit Cookbook
+| publisher=junit.sourceforge.net
+| author=[[Kent Beck]], [[Erich Gamma]]
+| accessdate=2011-05-21}}&lt;/ref&gt;. Test methods must be annotated by the &lt;code&gt;@Test&lt;/code&gt; [[Java annotation|annotation]]. If the situation requires it&lt;ref&gt;{{cite web
+| url=http://c2.com/cgi/wiki?ExpensiveSetUpSmell
+| title=Expensive Setup Smell
+| publisher=C2 Wiki
+| author=[[Kent Beck]]
+| accessdate=2011-11-28}}&lt;/ref&gt;, it is also possible to define a method to execute before (or after) each (or all) of the test methods with the &lt;code&gt;@Before&lt;/code&gt; (or &lt;code&gt;@After&lt;/code&gt;) and &lt;code&gt;@BeforeClass&lt;/code&gt; (or &lt;code&gt;@AfterClass&lt;/code&gt;) annotations.&lt;ref&gt;{{cite web
+| url=http://junit.sourceforge.net/doc/cookbook/cookbook.htm
+| title=JUnit Cookbook
+| publisher=junit.sourceforge.net
+| author=[[Kent Beck]], [[Erich Gamma]]
+| accessdate=2011-05-21}}&lt;/ref&gt;
+
+&lt;source lang=&quot;java&quot;&gt;
+import org.junit.*;
+
+public class TestFoobar{
+    @BeforeClass
+    public static void setUpClass() throws Exception {
+        // Code executed before the first test method       
+    }
+
+    @Before
+    public void setUp() throws Exception {
+        // Code executed before each test    
+    }
+ 
+    @Test
+    public void testOneThing() {
+        // Code that tests one thing
+    }
+
+    @Test
+    public void testAnotherThing() {
+        // Code that tests another thing
+    }
+
+    @Test
+    public void testSomethingElse() {
+        // Code that tests something else
+    }
+    @After
+    public void tearDown() throws Exception {
+        // Code executed after each test   
+    }
+ 
+    @AfterClass
+    public static void tearDownClass() throws Exception {
+        // Code executed after the last test method 
+    }
+}
+&lt;/source&gt;
+
+==Ports==
+JUnit has been [[List of unit testing frameworks|ported to other languages]] including:
+* [[Actionscript]] ([http://www.flexunit.org/ FlexUnit])
+* [[Ada (programming language)|Ada]] ([http://libre.adacore.com/libre/tools/aunit/ AUnit])
+* [[C]] ([http://cunit.sourceforge.net/ CUnit])
+* [[C Sharp (programming language)|C#]] ([[NUnit]])
+* [[C++]] ([[CPPUnit]])
+* [[Fortran]] ([[fUnit]])
+* [[CodeGear Delphi|Delphi]] ([[DUnit]])
+* [[Free Pascal]] ([http://camelos.sourceforge.net/fpcUnit.html FPCUnit])
+* [[JavaScript]] ([[JSUnit]])
+* [[Objective-C]] ([http://www.sente.ch/software/ocunit/ OCUnit])
+* [[Perl]] ([http://search.cpan.org/~adie/Test-Class-0.31/lib/Test/Class.pm Test::Class] and [http://search.cpan.org/~mcast/Test-Unit-0.25/lib/Test/Unit.pm Test::Unit])
+* [[PHP]] ([[PHPUnit]])
+* [[Python (programming language)|Python]] ([[PyUnit]])
+* [[R (programming language)|R]] ([http://RUnit.sourceforge.net/ RUnit])
+* [[Haskell (programming language)|Haskell]] ([http://hackage.haskell.org/package/HUnit HUnit])
+* [[Qt (framework)|Qt]] ([[QTestLib]])
+
+==See also==
+* [[Mock object]]
+* [[TestNG]], an alternative to JUnit
+* [[List of unit testing frameworks]]
+* [[Test fixture]]
+* [[Mockito]] and [[PowerMock]], mocking extensions to JUnit
+
+{{Portal box|Software Testing|Free software}}
+
+==References==
+{{Reflist}}
+
+==External links==
+&lt;!-- Please don't add links to non-Java xUnit frameworks here. 
+ Instead, add them to http://en.wikipedia.org/wiki/XUnit --&gt;
+* [http://junit.org/ JUnit home page]
+* [http://www.ibm.com/developerworks/opensource/library/os-junit/?ca=dgr-lnxw07JUnite JUnit antipatterns (developerWorks)] and [http://www.exubero.com/junit/antipatterns.html JUnit antipatterns (Exubero)]
+* [http://www.ibm.com/developerworks/java/library/j-junit4.html?ca=dgr-lnxw01JUnit4 An early look at JUnit 4]
+* [http://www.methodsandtools.com/tools/tools.php?junit JUnit Presentation]
+* [http://www.bunker37.com/2011/02/junits/ JUnits]
+
+{{DEFAULTSORT:Junit}}
+[[Category:Java development tools]]
+[[Category:Extreme Programming]]
+[[Category:Free software programmed in Java]]
+[[Category:Unit testing frameworks]]
+[[Category:Cross-platform software]]
+[[Category:Java platform]]
+
+[[ca:JUnit]]
+[[cs:JUnit]]
+[[de:JUnit]]
+[[es:JUnit]]
+[[fr:JUnit]]
+[[it:JUnit]]
+[[he:JUnit]]
+[[lt:JUnit]]
+[[hu:JUnit]]
+[[ja:JUnit]]
+[[pl:JUnit]]
+[[pt:JUnit]]
+[[ru:JUnit]]
+[[uk:JUnit]]
+[[zh:JUnit]]</rev></revisions></page></pages></query></api>

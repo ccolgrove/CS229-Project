@@ -1,0 +1,230 @@
+<?xml version="1.0"?><api><query><pages><page pageid="208074" ns="0" title="ScummVM"><revisions><rev xml:space="preserve">{{Infobox software
+| name                   = ScummVM
+| logo                   = [[Image:Scummvm logo.svg|150px|ScummVM]]
+| screenshot             = [[Image:ScummVM 1.0.0.png|250px]]
+| caption                = ScummVM 1.0.0's [[graphical user interface]] with the &quot;modern&quot; skin
+| developer              = ScummVM [[Virtual team|Team]]
+| released               = {{release date and age|mf=yes|2001|10|05}}
+| latest_release_version = 1.4.0
+| latest_release_date    = {{release date and age|2011|11|11}}
+| operating_system       = [[Cross-platform]]
+| genre                  = [[Interpreter (computing)|Interpreter]]
+| license                = [[GNU General Public License]]
+| website                = http://www.scummvm.org/
+}}
+'''ScummVM''' is a collection of [[game engine recreation]]s. Originally designed to play [[LucasArts adventure games]] that use the [[SCUMM]] system (the ''VM'' in the name stands for ''[[virtual machine]]''), it now also supports a variety of non-SCUMM games by companies like [[Revolution Software]] and [[Adventure Soft]]. It was originally written by [[Ludvig Strigeus]].&lt;ref&gt;[http://wiki.scummvm.org/index.php/ScummVM_History history of ScummVM] on ScummVM Wiki&lt;/ref&gt; Released under the terms of the [[GNU General Public License]], ScummVM is [[free software]]. The latest version, 1.4.0 was released on November 11th, 2011.
+
+ScummVM is a reimplementation of the part of the [[software]] used to [[interpreter (computing)|interpret]] the [[scripting language]]s such games used to describe the game world rather than emulating the [[hardware]] the games ran on; as such, ScummVM allows the games it supports to be played on [[system platform|platforms]] other than those for which they were originally released.
+
+==Ports==
+[[Porting|Portability]] is a design goal of the project.&lt;ref&gt;[http://wiki.scummvm.org/index.php/Portability_Guide ScummVM Portability guidelines]&lt;/ref&gt; Ports of ScummVM are available for [[Microsoft Windows]], [[Mac OS X]] and a variety of [[Unix-like]] systems including [[Linux]] (RPM Based, Debian based, source based), members of the [[BSD]] family ([[FreeBSD]]/[[NetBSD]]/[[OpenBSD]]/[[DragonFly BSD]]) and [[Solaris (operating system)|Solaris]]. It has also been ported to console systems. Less mainstream personal computer ports include those to [[AmigaOS]]/[[MorphOS]], [[MiNT|Atari/FreeMiNT]], [[Haiku (operating system)|Haiku]]/[[BeOS]]/[[Magnussoft ZETA|ZETA]] and [[OS/2]].
+
+A variety of [[game console]]s have official ports; ScummVM has been ported to gaming machines such as the [[PlayStation 2]], [[Dreamcast]], [[Nintendo GameCube]] and [[Wii]],&lt;ref&gt;[http://www.nintendowiifanboy.com/2008/09/02/scummvm-now-has-limited-gamecube-and-wii-support/ News on Gamecube/Wii ports]&lt;/ref&gt; and to [[handheld console]]s including the [[GP2X]], [[Nintendo DS]] and the [[PlayStation Portable]]. [[Handheld computer]] platforms supported include [[Palm OS]]/[[Tapwave Zodiac]], [[Symbian OS]] ([[UIQ]] platform, Nokia [[Nokia Series 60|60]], [[Nokia Series 80|80]] and [[Nokia 7710]]/[[Nokia Series 90|90]] phone series), Nokia's [[Internet Tablet OS]] (used by the [[Nokia 770]], [[N800]] and [[N810]]), Apple's [[iPhone]],&lt;ref&gt;[http://gizmodo.com/gadgets/iphone-gaming/native-lucasarts-games-emulation-makes-iphone-absolutely-perfect-326257.php Gizmodo news on iPhone port]&lt;/ref&gt; [[MotoMAGX]], [[MotoEZX]] phones and [[Windows Mobile]]. Platforms supported by unofficial ScummVM ports include the Microsoft's [[Xbox]] gaming console, [[Zaurus]], [[Gizmondo]] and [[GP32]] portable device platforms. [[Mobile phone]]s running [[Android (operating system)|Android]]&lt;ref&gt;[http://sites.google.com/site/scummvmandroid/ scummvm-android]&lt;/ref&gt;, [[webOS]]&lt;ref&gt;[http://www.webos-internals.org/wiki/Application:ScummVM Webos Internals Team Ports ScummVM on WebOS]&lt;/ref&gt; or unofficial Samsung's bada OS are also supported.
+
+==Games supported by ScummVM==
+[[File:ScummVM Windows Screenshot.png|thumb|[[Graphical user interface|GUI]] of ScummVM 0.8.0 with the &quot;Classic (builtin)&quot; skin]]
+
+The following games have support built into the current release of ScummVM.&lt;ref&gt;Not all games are completable or even playable. Some of them are still very much works-in-progress. For a complete, up-to-date list, see [http://www.scummvm.org/compatibility.php the official ScummVM compatibility chart].&lt;/ref&gt;
+
+===LucasArts SCUMM games===
+{{Refbegin|2}}
+*''[[The Curse of Monkey Island]]''
+*''[[Maniac Mansion: Day of the Tentacle]]''
+*''[[The Dig]]''
+*''[[Full Throttle (1995 video game)|Full Throttle]]''
+*''[[Indiana Jones and the Fate of Atlantis]]''
+*''[[Indiana Jones and the Last Crusade: The Graphic Adventure]]''
+*''[[Loom (video game)|Loom]]''
+*''[[Maniac Mansion]]''
+*''[[Monkey Island 2: LeChuck's Revenge]]''
+*''[[Sam &amp; Max Hit the Road]]''
+*''[[The Secret of Monkey Island]]''
+*''[[Zak McKracken and the Alien Mindbenders]]''
+{{Refend}}
+
+===Sierra On-Line games===
+{{Refbegin|2}}
+*''[[The Black Cauldron (video game)|The Black Cauldron]]''
+*''[[Castle of Dr. Brain]]''
+*''[[The Island of Dr. Brain]]''
+*''[[EcoQuest#EcoQuest: The Search for Cetus|EcoQuest: The Search for Cetus]]''
+*''[[EcoQuest#EcoQuest II: Lost Secret of the Rainforest|EcoQuest II: Lost Secret of the Rainforest]]''
+*''[[Gold Rush!]]''
+*''[[King's Quest: Quest for the Crown]]''
+*''[[King's Quest II: Romancing the Throne]]''
+*''[[King's Quest III: To Heir Is Human]]''
+*''[[King's Quest IV: The Perils of Rosella]]''
+*''[[Leisure Suit Larry in the Land of the Lounge Lizards]]''
+*''[[Leisure Suit Larry Goes Looking for Love (in Several Wrong Places)]]''
+*''[[Leisure Suit Larry III: Passionate Patti in Pursuit of the Pulsating Pectorals]]''
+*''[[Leisure Suit Larry 5: Passionate Patti Does a Little Undercover Work]]''
+*''[[Leisure Suit Larry 6: Shape Up or Slip Out!]]''
+*''[[Manhunter: New York]]'' (developed by [[Evryware]])
+*''[[Manhunter 2: San Francisco]]'' (developed by Evryware)
+*''[[Mickey's Space Adventure]]''
+*''[[Mixed-Up Mother Goose]]''
+*''[[Police Quest: In Pursuit of the Death Angel]]''
+*''[[Quest for Glory: So You Want to Be a Hero]]''
+*''[[Quest for Glory II: Trial by Fire]]''
+*''[[Quest for Glory III: Wages of War]]''
+*''[[Space Quest: The Sarien Encounter]]''
+*''[[Space Quest II: Vohaul's Revenge]]''
+*''[[Space Quest III: The Pirates of Pestulon]]''
+*''[[Space Quest IV: Roger Wilco and the Time Rippers]]''
+*''[[Space Quest V: The Next Mutation]]''
+*''[[Troll's Tale]]''
+*''[[Winnie the Pooh in the Hundred Acre Wood]]''
+{{Refend}}
+
+===Games by other developers===
+Various games by [[Humongous Entertainment]] use the SCUMM engine, and are therefore playable with ScummVM. ScummVM also supports the following non-SCUMM games:
+
+{{Refbegin|2}}
+*''[[Bargon Attack]]''
+*''[[Beneath a Steel Sky]]''
+*''[[Broken Sword: The Shadow of the Templars]]''
+*''[[Broken Sword II: The Smoking Mirror]]''
+*''[[Bud Tucker in Double Trouble]]''
+*''[[Cruise for a Corpse]]''
+*''[[Discworld (video game)|Discworld]]''
+*''[[Discworld II: Missing Presumed...!?|Discworld 2]]''
+*''[[Dragon History]]''
+*''[[Drascula: The Vampire Strikes Back]]''
+*''[[Elvira: Mistress of the Dark]]''
+*''[[Elvira II: The Jaws of Cerberus]]''
+*''[[Fascination (video game)|Fascination]]''
+*''[[Flight of the Amazon Queen]]''
+*''[[Future Wars]]''
+*''[[Gobliiins#Gobliiins|Gobliiins]]''
+*''[[Gobliiins#Gobliins 2: The Prince Buffoon|Gobliins 2: The Prince Buffoon]]''
+*''[[Gobliiins#Goblins Quest 3|Goblins Quest 3]]''
+*''[[I Have No Mouth, and I Must Scream (video game)|I Have No Mouth, and I Must Scream]]''
+*''[[Inherit the Earth: Quest for the Orb]]''
+*''[[Lands of Lore: The Throne of Chaos]]''
+*''[[Leather Goddesses of Phobos 2: Gas Pump Girls Meet the Pulsating Inconvenience from Planet X!]]''
+*''[[Lost in Time (video game)|Lost in Time]]''
+*''[[Lure of the Temptress]]''
+*''[[The Manhole]]''
+*''[[Nippon Safes Inc.]]''
+*''[[Return to Zork]]''
+*''[[Ringworld: Revenge of the Patriarch]]''
+*''[[Rodney's Funscreen]]''
+*''[[Simon the Sorcerer]]''
+*''[[Simon the Sorcerer II: The Lion, the Wizard and the Wardrobe]]''
+*''[[Simon the Sorcerer's Puzzle Pack]]''
+*''[[Teen Agent (computer game)|Teen Agent]]''
+*''[[The 7th Guest]]''
+*''[[The Bizarre Adventures of Woodruff and the Schnibble]]''
+*''[[The Feeble Files]]''
+*''[[The Legend of Kyrandia#Book One|The Legend of Kyrandia Book One]]''
+*''[[The Legend of Kyrandia#Book Two: The Hand of Fate|The Legend of Kyrandia Book Two: The Hand of Fate]]''
+*''[[The Legend of Kyrandia#Book Three: Malcolm's Revenge|The Legend of Kyrandia Book Three: Malcolm's Revenge]]''
+*''[[Toonstruck]]''
+*''[[TouchÃ©: The Adventures of the Fifth Musketeer]]''
+*''[[Urban Runner]]''
+*''[[Waxworks (1992 video game)|Waxworks]]'' (a.k.a. ''Elvira 3'')
+*''[[Ween: The Prophecy]]''
+{{Refend}}
+
+==Mistic's GPL violations==
+{{Quote box
+|width=40%
+|border=1px
+|quote=In December 2008, members of the ScummVM team discovered that three games for the Nintendo Wii console (&quot;[[Freddi Fish|Freddi Fish: The Case of the Missing Kelp Seeds]]&quot;, . . . &quot;[[Pajama Sam#Pajama_Sam:_No_Need_To_Hide_When_It.27s_Dark_Outside|Pajama Sam: No Need to Hide When It's Dark Outside]]&quot;, . . . and &quot;[[Spy Fox in &quot;Dry Cereal&quot;|Spy Fox: Dry Cereal]]&quot;, . . .) made use of ScummVM, without complying with the terms of the GPL license. They sent a warning letter to the German distributor of these games, Atari Deutschland GmbH, who was not aware that ScummVM was used in the creation of the games. Atari Deutschland GmbH established contact with Mistic Software Inc., the developers of the games.
+
+Mistic Software Inc. responded by denying that members of the ScummVM team hold any rights to the particular code they used. The dispute was ultimately settled in May 2009 by Mistic Software Inc. paying all legal fees and making a donation to the Free Software Foundation as a sign of good will, without acknowledging copyright infringement.
+|source=â''GPL conflict with Atari'', cyx, fingolfin, June 19, 2009&lt;ref name=&quot;gplquote&quot;&gt;[http://www.scummvm.org/news/20090616/ Jun 16, 2009: GPL conflict with Atari]&lt;/ref&gt;}}
+
+In December 2008, the ScummVM team was informed that three games for the [[Wii]] console were using ScummVM illegally. [[Atari]] had contracted [[Majesco Entertainment]] to port these titles to the Wii, who in turn contracted [[Mistic Software]] to port the games. Mistic used the ScummVM binary (version 0.9.0), in addition to the games' assets and source code, to port the games, but did not credit the ScummVM team or distribute ScummVM source code as required by ScummVM's license, the [[GNU GPL]]. Examination of the binary showed a clear violation; the ScummVM team credits were still in the code, as well as known bugs from that release.
+
+The team contacted [[gpl-violations.org]] for legal representation. At first denying the charges, Atari later started negotiating when they learned the ScummVM team only desired adherence to the GPL, and not monetary compensation. However, upon learning that using [[open-source software]] is forbidden by [[Nintendo]] for use with the [[Wii]] [[software development kit]], the developers challenged the legality of the reverse engineering methods used by the ScummVM team, claiming that they therefore had no rights over the resulting code. The ScummVM team denied these charges.
+
+Faced with a long court battle, the matter was settled by ScummVM team members fingolfin and cyx, who agreed to post a press release and no longer speak of the case. The remaining copies of the games violating the GPL were ordered to be sold within a set period, after which time all remaining stock copies must be destroyed or high fines will be levied. As a result, Mistic must make a donation to the [[Free Software Foundation]] in addition to paying all expenses incurred by the lawyers working for gpl-violations.org.&lt;ref name=&quot;gpl&quot;&gt;[http://sev-notes.blogspot.com/2009/06/gpl-scummvm-and-violations.html GPL, ScummVM and violations]&lt;/ref&gt;
+
+==Development==
+ScummVM was a participant in the [[Google Summer of Code]] 2007, 2008&lt;ref&gt;[http://wiki.scummvm.org/index.php/OpenTasks Summer of Code project ideas page]&lt;/ref&gt;, 2009, 2010&lt;ref&gt;http://www.scummvm.org/news/20100428/&lt;/ref&gt; &lt;ref&gt;http://socghop.appspot.com/org/home/google/gsoc2010/scummvm&lt;/ref&gt; and 2011&lt;ref&gt;http://www.google-melange.com/gsoc/accepted_orgs/google/gsoc&lt;/ref&gt; &lt;ref&gt;http://google-melange.appspot.com/org/home/google/gsoc2011/scummvm&lt;/ref&gt;.
+
+The following games have been added to ScummVM's [[Subversion (software)|Subversion]] tree. The engines may be in various states of operation.
+
+{{Columns-list|2|
+* ''[[Inca II: Wiracocha]]''
+* ''[[Myst]]''
+* ''[[Operation Stealth]]''
+* ''[[Orion Burger]]''
+* ''[[Personal Nightmare]]''
+* ''[[Riven: The Sequel to Myst]]''
+* ''[[The 11th Hour (video game)|The 11th Hour]]''
+* ''[[The Big Red Adventure]]''
+* ''[[The Last Dynasty]]''
+}}
+
+''[[Another World (video game)|Another World]]'' was integrated for a short period of time causing a brief but heated discussion, ranging from emotional to purely technical aspects. Some felt it was more of an action game than an adventure game, others worried that ScummVM, being geared towards bitmapped graphics, really was not the ideal platform for a polygon-based game. The discussion was rendered moot when the ''raw'' project was officially closed by its author, at the request of [[Eric Chahi]], the original developer of ''Another World'', who was developing his own Windows-based update.{{Citation needed|date=July 2008}} ''[[Operation Stealth]]'' and ''[[Future Wars]]'' support was added by integrating another stand-alone recreation of their engine: cinE.&lt;ref&gt;[http://sourceforge.net/projects/cine SourceForge.net: cinE - the cinematic Engine&lt;!-- Bot generated title --&gt;]&lt;/ref&gt;
+
+In 2006, the [[Adventure Game Interpreter]] engine was added. It is based on Sarien code, an AGI interpreter that was outdated and buggy in some ways, which has been solved in the new ScummVM engine. The Sarien project stopped its development, continuing the development into ScummVM's AGI engine.&lt;ref&gt;[http://sarien.sourceforge.net/ Old Sarien Site]&lt;/ref&gt; TrollVM has also been integrated into ScummVM adding support for three pre-AGI games: ''[[Mickey's Space Adventure]]'', ''[[Troll's Tale]]'', and ''[[Winnie the Pooh in the Hundred Acre Wood]]''.&lt;ref&gt;[http://trollvm.sourceforge.net/ Old TrollVM Site]&lt;/ref&gt;&lt;ref&gt;http://sourceforge.net/apps/trac/sourceforge/ticket/9661&lt;/ref&gt;
+
+In 2009, there was a merge with [[FreeSCI]] project. The first official merged version appeared in October 2010, introducing support for [[Sierra's Creative Interpreter]] games.
+
+During the development cycle leading up to the 0.5.0 release on August 2, 2003, game manufacturer [[Revolution Software]] not only helped ScummVM developers add support for their adventure ''[[Beneath a Steel Sky]]'' by supplying them with the original [[source code]], but also decided to release both the [[CD-ROM|CD]] and the [[floppy disk|floppy]] version of the game as [[freeware]],&lt;ref&gt;[http://revolution.co.uk/_display.php?id=16 Revolution Software Website]&lt;/ref&gt; available for download on the ScummVM website.&lt;ref&gt;[http://games.slashdot.org/article.pl?sid=03/08/02/1235259&amp;mode=thread&amp;tid=127&amp;tid=186 ScummVM 0.5.0 Out, With Some Official Game Support] at [[Slashdot]]&lt;/ref&gt; A few months later, the developers of ''[[Flight of the Amazon Queen]]'' made it freely available in much the same way.
+
+===Residual===
+'''Residual''' is a [[game engine recreation]] of [[GrimE]], the 3D [[adventure game]] [[game engine|engine]], released under the [[GNU General Public License]]. It is a reimplementation of the part of the [[software]] used to [[interpreter (computing)|interpret]] the [[scripting language]]s by conducting reverse engineering on the original game. It is considered a sister project to ScummVM, the 2D adventure game interpreter. Residual's aim is to reimplement the residual (remaining) adventure games. The original [[Lua (programming language)|Lua]]-based engine was called GrimE (as opposed to [[SCUMM]]), so Residual's title is also a word pun as grime is a type of residue.
+
+Residual is currently able to run on multiple platforms including [[Microsoft Windows|Windows]], [[Linux]], [[Mac OS X]] and [[Amiga OS]].&lt;ref&gt;[http://residual.sourceforge.net/faq/#1_4 &quot;Residual :: F.A.Q.&quot;]. residual.sourceforge.net&lt;/ref&gt; Currently there is only partial support for one GrimE game, ''[[Grim Fandango]]'',&lt;ref&gt;Not all games are completable or even playable. Some of them are still very much works-in-progress. For a complete, up-to-date list, see [http://residual.sourceforge.net/compatibility/ the official Residual compatibility chart].&lt;/ref&gt; which on the 25 April 2011 was marked &quot;completable with a few minor glitches&quot;.&lt;ref&gt;
+[http://residual.sourceforge.net/news/20110425/ Announce from the 25 April 2011]&lt;/ref&gt;
+
+==See also==
+{{Portal box|Free software|Video games}}
+*[[Game engine recreation]]
+*[[Sierra's Creative Interpreter]]
+*[[Z-machine]]
+*[[:Category:ScummVM supported games|ScummVM supported games]]
+
+==References==
+{{Reflist|2}}
+
+==External links==
+{{commons|ScummVM}}
+*[http://www.scummvm.org Official site]
+* [http://residual.sourceforge.net/ ''Residual''] for ''[[GrimE]]'', the engine used in ''[[Grim Fandango]]'' and ''[[Escape from Monkey Island]]'' (ScummVM sister project)
+*[http://www.wired.com/gadgets/miscellaneous/news/2005/01/66205 Emulators Answer the Call], [[Wired (magazine)|Wired]], 1 October 2005.
+*{{cite web| url=http://www.jameswoodcock.co.uk/?page_id=54| title=ScummVM MIDI Music Enhancement Project| publisher=jameswoodcock.co.uk}}
+
+{{LucasArts adventure games}}
+
+{{DEFAULTSORT:Scummvm}}
+[[Category:Adventure game engines]]
+[[Category:Amiga software]]
+[[Category:BeOS software]]
+[[Category:BSD software]]
+[[Category:Cross-platform software]]
+[[Category:Dreamcast emulation software]]
+[[Category:Linux software]]
+[[Category:Mac OS X software]]
+[[Category:MorphOS software]]
+[[Category:OS/2 software]]
+[[Category:Palm OS software]]
+[[Category:Pocket PC software]]
+[[Category:Solaris software]]
+[[Category:Unix software]]
+[[Category:Windows software]]
+
+[[cs:ScummVM]]
+[[da:ScummVM]]
+[[de:ScummVM]]
+[[et:ScummVM]]
+[[es:ScummVM]]
+[[fr:ScummVM]]
+[[ko:ì¤ì»´VM]]
+[[hr:ScummVM]]
+[[it:ScummVM]]
+[[he:ScummVM]]
+[[hu:ScummVM]]
+[[ja:ScummVM]]
+[[no:ScummVM]]
+[[pl:ScummVM]]
+[[pt:ScummVM]]
+[[ru:ScummVM]]
+[[sk:ScummVM]]
+[[sh:ScummVM]]
+[[fi:ScummVM]]
+[[sv:ScummVM]]</rev></revisions></page></pages></query></api>

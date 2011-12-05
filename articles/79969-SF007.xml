@@ -1,0 +1,129 @@
+<?xml version="1.0"?><api><query><pages><page pageid="79969" ns="0" title="Enlightenment (window manager)"><revisions><rev xml:space="preserve">{{Infobox Software
+| name                   = Enlightenment
+| logo                   = [[File:E17 enlightenment logo shiny black curved.svg|64px|Enlightenment logo]]
+| screenshot             = [[File:E17 bw screenshot.png|250px|Enlightenment DR17]]
+| caption                = Enlightenment DR17
+| developer              = [[Carsten Haitzler]] and others
+| latest release version = E16 1.0.10
+| latest release date    = {{start date and age|2011|10|09}}
+| latest preview version = E17 0.16.999.55225
+| latest preview date    = {{start date and age|2010|12|03}}
+| programming language   = [[C (programming language)|C]]
+| operating system       = [[Unix-like]]
+| genre                  = [[Window manager]]
+| license                = [[BSD License|BSD]]
+| website                = http://www.enlightenment.org
+}}
+'''Enlightenment''', also known simply as '''E''', is a [[stacking window manager]] for the [[X Window System]] which can be used alone or in conjunction with a [[desktop environment]] such as [[GNOME]] or [[KDE]].  Enlightenment is often used as a substitute for a full desktop environment.
+
+==History==
+The first version of Enlightenment was released by Rasterman ([[Carsten Haitzler]]) in 1997.&lt;ref&gt;{{cite web | url = http://www.enlightenment.org/p.php?p=about/e16&amp;l=en | title = Enlightenment DR16 | work = Enlightenment}}&lt;/ref&gt;
+
+Enlightenment has been under development for over a decade; its latest stable release is version E16 1.0.10.
+
+Version 0.17, also referred to as '''DR17''' or '''E17''', has been in development since December 2000.&lt;ref&gt;{{cite web | url = http://mgeisler.net/2000/12/e17-has-been-committed-to-cvs/ | title = E17 has been committed to CVS | work = Martin Geisler Online | date = 9 December 2000 | first = Martin | last = Geisler}}&lt;/ref&gt; It is a complete rewrite on DR16 and was designed to be a full-fledged [[Shell (computing)#On X Window System|desktop shell]], based on the new [[Enlightenment Foundation Libraries]] (EFL).
+
+&quot;...Enlightenment, the original eye-candy window manager....&quot;&lt;ref&gt;{{cite web | url = http://cgit.freedesktop.org/xorg/proto/compositeproto/plain/compositeproto.txt | title = Composite Extension | date = 2007-07-03 | author = [[Keith Packard]], Deron Johnson}}&lt;/ref&gt;
+
+==Features==
+===E16===
+
+Some of its features include:
+
+* Enlightenment allows you to have a grid of workspaces called virtual desktops. Switching between them is achieved by hurling the mouse [[cursor (computers)|cursor]] to the edge of the screen, at which the desktop appears to slide across to reveal the next. The maximum grid size is currently 8 by 8 desktops, and you can have 32 grids (each with a different background), making 2048 total possible desktop spaces. (Users can enable a map of the desktops, in case they get lost, which is called the pager.)
+* The desktop dragbar allows a desktop to be 'slid back' to reveal the desktop 'underneath'. The E team use the analogy of sheets of paper, stacked on top of each other, where you can slide off a piece partially to reveal what's beneath.
+* Window grouping â the ability to put windows into groups so that they can all be moved, resized, closed, etc. together.
+* [[Icon (computing)|Iconification]] â reducing windows to an icon, stored in 'iconboxes' that can be placed about the screen.
+* Ability to change window borders (or remove borders and title bars completely).
+* Users can create keybindings for actions such as maximizing windows, launching programs, moving between desktops and moving the mouse [[cursor (computers)|cursor]], hence making it possible to use Enlightenment solely with a keyboard. e16keyedit is a graphical program for simplifying keybinding creation.
+* It contains a command line interface, eesh, which affects the window manager actions, and makes it possible to write powerful shell scripts controlling most features on the desktop - from settings to single window manipulations.
+* Newer versions include compositing effects such as fading and transparency.
+
+One of the aims of the window manager is to be as configurable as possible, and to this end, it includes customization dialogs for focus settings, window movement, resizing, grouping and placement settings, audio, multiple desktop, desktop background, pager, tooltip and autoraise settings. It also includes a special effects dialog, including a desktop 'ripple' effect.
+
+===E17===
+DR17 is in active development, but core features are in place:
+* Fully themeable, with both a menu-based and command-line theme-changing interface
+* A built-in file manager
+* Icons on the desktop
+* Virtual desktop grid feature
+* Modular design â can dynamically load external modules. Currently available modules include:
+** [[Pager (GUI)|Pager]] â Switching between different virtual desktops
+** iBar â Launching applications
+** iBox - Holding minimized applications
+** Engage (formerly known as iTask NG) â A [[dock (computing)|dock]] similar to the [[Mac OS X]] dock
+** Dropshadow â Provides a [[Drop shadow|drop-shadow]] for every window
+** Clock â Analog clock
+** Battery â Monitoring a [[laptop]] battery
+** CPUFreq â Monitoring a laptop CPU
+** Temperature â Monitoring laptop temperature
+** Illume - Modifies the user interface of enlightenment to work cleanly on a mobile device  
+
+* One or more ''shelves'' to manage the gadget placement and appearance on the screen
+* Animated, interactive desktop backgrounds, menu items, iBar items and desktop widgets are all possible
+* Window shading, iconification, maximising and sticky settings
+* Customizable key bindings
+* Support for internationalization
+* Standardized â supports all needed standards ([[NetWM]], [[ICCCM]], [[freedesktop.org|XDG]] and so on)
+
+==Developers==
+===Principal===
+* [[Carsten Haitzler|Carsten &quot;Rasterman&quot; Haitzler]] â lead developer
+* Kim &quot;kwo&quot; Woelders â E16 maintainer
+* Hisham &quot;CodeWarrior&quot; Mardam Bey&lt;ref&gt;{{cite web |url = http://hisham.cc/pages/about/ | work = CodeWarrior's Cruft | author = Hisham Mardam Bey | title = About Me}}&lt;/ref&gt;
+* Christopher &quot;devilhorns&quot; Michael
+
+===Inactive===
+* Geoff &quot;Mandrake&quot; Harrison&lt;ref&gt;{{cite web | url = http://www.mandrake.net/?page_id=2 | work = mandrake.net | title = 
+About Mandrake}}&lt;/ref&gt;
+
+==See also==
+{{portal|Free software}}
+* [[List_of_terminal_emulators | List of terminal emulators]]
+* [[Comparison of X window managers]]
+* [[Enlightenment Foundation Libraries]]
+* [[OpenGEU]] â Ubuntu-based distribution using Enlightenment (no longer an active project)
+* [[Elive]] â an installable Live CD of [[Debian]] built to showcase Enlightenment
+* [[Unite17]] â a [[Unity Linux|Unity]] based distribution using Enlightenment
+* [[Moon OS]] â a lightweight distribution based on Ubuntu and uses the Enlightenment window manager
+* [[Bodhi Linux]] - lightweight Ubuntu based distribution using Enlightenment E17
+
+==References==
+
+{{reflist}}
+
+==External links==
+{{Wikibooks|The Unofficial Enlightenment User's Manual}}
+* {{official|http://www.enlightenment.org/}}
+* [http://www.sf.net/projects/enlightenment Enlightenment SourceForge.net Project Page]
+
+{{Enlightenment desktop}}
+{{X desktop environments and window managers}}
+{{Window managers}}
+{{FOSS}}
+
+[[Category:Free X window managers]]
+[[Category:Freedesktop.org]]
+[[Category:Free desktop environments]]
+
+[[ar:Ø¥ÙÙÙØªÙÙØª]]
+[[ca:Enlightenment]]
+[[de:Enlightenment]]
+[[es:Enlightenment]]
+[[eo:Enlightenment]]
+[[fr:Enlightenment (logiciel)]]
+[[it:Enlightenment]]
+[[hu:Enlightenment]]
+[[nl:Enlightenment]]
+[[ja:Enlightenment]]
+[[pl:Enlightenment]]
+[[pt:Enlightenment]]
+[[ro:Enlightenment]]
+[[ru:Enlightenment]]
+[[simple:Enlightenment (Window Manager)]]
+[[sk:Enlightenment]]
+[[fi:Enlightenment]]
+[[sv:Enlightenment]]
+[[tr:Enlightenment]]
+[[uk:Enlightenment]]
+[[zh:Enlightenment]]</rev></revisions></page></pages></query></api>

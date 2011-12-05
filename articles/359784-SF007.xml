@@ -1,0 +1,92 @@
+<?xml version="1.0"?><api><query><pages><page pageid="359784" ns="0" title="SHOUTcast"><revisions><rev xml:space="preserve">{{Infobox software
+| name                   = SHOUTcast
+| title                  = SHOUTcast Distributed Network Audio Server 
+| logo                   = [[File:SHOUTcast logo.svg|200px]]
+| screenshot             = &lt;!-- [[File: ]] --&gt;
+| caption                = 
+| collapsible            = 
+| author                 = 
+| developer              = [[AOL]]
+| released               = &lt;!-- {{Start date|YYYY|MM|DD}} --&gt;
+| discontinued           = 
+| latest release version = 2.0.0 (Build 29)
+| latest release date    = {{Start date and age|2011|07|31}}
+| frequently updated     = &lt;!-- DO NOT include this parameter unless you know what it does --&gt;
+| programming language   = 
+| operating system       = 
+| platform               = [[Cross-platform]]
+| size                   = 
+| language               = 
+| status                 = Active
+| genre                  = [[Streaming media]]
+| license                = [[proprietary software|Proprietary]]
+| website                = {{URL|www.shoutcast.com}}
+}}
+
+'''SHOUTcast''' is [[cross-platform]] [[proprietary software]] for [[streaming media]] over the Internet. The software, developed by [[Nullsoft]] (purchased by [[AOL]] on June 1, 1999), allows [[digital audio]] content, primarily in [[MP3]] or [[HE-AAC]] format, to be broadcast to and from [[media player (application software)|media player]] software, enabling the creation of [[Internet radio]] &quot;stations&quot;. '''SHOUTcast Radio''' is a related website which provides a directory of SHOUTcast stations.
+
+==Software design==
+The SHOUTcast software uses a [[clientâserver model]], with each component communicating via a network [[protocol (computing)|protocol]] that intermingles audio or video data with [[metadata]] such as song titles and the station name. It uses [[HTTP]] as a [[transport protocol]]. Although [[multicast]] was planned, it was never developed.
+
+SHOUTcast [[server (computing)|servers]] and [[client (computing)|clients]] are available for [[FreeBSD]], [[Linux]], [[Mac OS X]], [[Microsoft Windows]], and [[Solaris (operating system)|Solaris]]. Client-only versions exist for [[Android (operating system)|Android]], [[BlackBerry OS]], [[iOS (Apple)|iOS]] ([[iPad]], [[iPhone]]), [[Palm OS]] and [[webOS]] (Radio Hibiki), [[PlayStation Portable]], [[Windows Mobile]], [[Symbian]] [[S60 (software platform)|S60]] and [[UIQ]],&lt;ref&gt;[http://www.playstation.com/psp-app/radio/en/player.html Internet Radio | PSP (PlayStation Portable)]&lt;/ref&gt; [[Nintendo DS]] (DSOrganize) and [[Wii]].
+
+The output format is supported by multiple clients, including Nullsoft's own [[Winamp]], and [[Amarok (software)|Amarok]], [[Exaile]], [[foobar2000]], [[iTunes]], [[Songbird (software)|Songbird]], [[Totem (media player)|Totem]], [[XMMS]], and [[Zinf]]. If the client does not support the SHOUTcast protocol, then the SHOUTcast server sends the stream without the metadata thus allowing it to be heard/viewed in clients like Windows Media Player. SHOUTcast servers are usually linked to by means of playlist files, which are small text files (usually with extensions .pls or .m3u) that contain the URL of the SHOUTcast server. When that URL is visited in a Web browser which identifies itself as [[Mozilla]]-compatible (as most do), the server will return a generated SHOUTcast server info/status page, rather than streaming audio.
+
+==Uses==
+The most common use of SHOUTcast is for creating or listening to Internet audio broadcasts; however, video streams exist as well. Some traditional radio stations use SHOUTcast to extend their presence onto the [[World Wide Web|Web]].
+
+==History==
+Created in 1999,&lt;ref&gt;[http://seattletimes.nwsource.com/cgi-bin/PrintStory.pl?slug=2968794&amp;date=19990627 The  Seattle Times â Internet Radio â Computers Help You Hear What Might Be Broadcasts]&lt;/ref&gt; SHOUTcast's streaming protocol uses metadata tags and responses that all start with ICY, which stands for &quot;I Can Yell&quot;, the original name of the protocol. A [[cybersquatter]] registered the associated icanyell.com/.net/.org domains before Nullsoft, so Nullsoft changed the protocol's name from I Can Yell to SHOUTcast. Despite the name change, the ICY prefix persists in the protocol spec.
+
+==SHOUTcast directory and website==
+A feature of SHOUTcast servers is the ability to optionally publish server information, including the current number of listeners, in a directory of stations that [[AOL]] maintains on the SHOUTcast [[website]]. Site visitors can pick a station to listen to and download a [[playlist]] file for use in their own SHOUTcast-capable media player.
+
+In September 2008, AOL redesigned the SHOUTcast website,&lt;ref&gt;[http://www.broadcastingworld.net/news/view-159/ Internet Radio | SHOUTcast 2.0]&lt;/ref&gt; which had been roughly the same since 2000. In 2010, SHOUTcast again redesigned it with more of an AOL look.&lt;ref&gt;[http://www.broadcastingworld.net/news/view-51/ Internet Radio | SHOUTcast's New Look]&lt;/ref&gt; As part of the redesign, the directory and services were rebranded as &quot;SHOUTcast Radio&quot;, rather than &quot;SHOUTcast Streaming Technology.&quot; The redesign included a fully functional option to view the site and directory with the old layout.
+
+[[VideoLAN]] says that AOL's license for use of the SHOUTcast Radio servers would â[force] us to integrate the spyware and adware based Shoutcast Radio Toolbar inside your browser.â and thus prevents [[open source]] software from using the SHOUTcast Radio servers.  VideoLAN therefore removed support for SHOUTcast Radio in version 1.1 of the VLC media player, and pointed users to the [[Icecast]] directory instead. Only access to the directory of SHOUTcast stations was removed, not the ability to play SHOUTcast streams.&lt;ref&gt;{{cite | url=http://www.zdnet.com/blog/open-source/new-vlc-more-open-source-than-ever/6724 | title=New VLC more open source than ever}}&lt;/ref&gt;
+
+==Popularity==
+As of 2011, up to 900,000 concurrent listeners can be seen during peak hours, according to SHOUTcast's self-reported statistics. The maximum and minimum number of listeners fluctuates widely during a day, with roughly three times the number of listeners during peak hours compared to low use times.
+As of July 2011, SHOUTcast Radio includes over 45,000 stations.
+[[File:ShoutcastListenerGrowth.png|400px|thumb|left|Concurrent listener growth]]
+[[File:ShoutcastServerGrowth.png|400px|thumb|center|Concurrent server growth]]
+
+==See also==
+{{Portal|Radio}}
+* [[Icecast]]
+* [[List of Internet stations]]
+* [[List of streaming media systems]]
+* [[Nullsoft Streaming Video]]
+
+==References==
+{{Reflist}}
+
+==External links==
+* {{Official website|www.shoutcast.com}}
+* [http://www.shoutcastblog.com/ Official SHOUTcast blog]
+{{AOL Inc.}}
+
+{{DEFAULTSORT:Shoutcast}}
+[[Category:Time Warner subsidiaries]]
+[[Category:AOL]]
+[[Category:Internet radio in the United States]]
+[[Category:Internet radio software]]
+[[Category:Internet Protocol based network software]]
+[[Category:Streaming software]]
+[[Category:Cross-platform software]]
+
+[[ca:SHOUTcast]]
+[[de:SHOUTcast]]
+[[es:SHOUTcast]]
+[[fr:SHOUTcast]]
+[[ko:ì¤ì°í¸ìºì¤í¸]]
+[[it:SHOUTcast]]
+[[nl:SHOUTcast]]
+[[ja:SHOUTcast]]
+[[no:SHOUTcast]]
+[[pl:SHOUTcast]]
+[[pt:SHOUTcast]]
+[[ru:SHOUTcast]]
+[[fi:SHOUTcast]]
+[[sv:SHOUTcast]]
+[[zh:SHOUTcast]]</rev></revisions></page></pages></query></api>

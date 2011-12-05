@@ -1,0 +1,143 @@
+<?xml version="1.0"?><api><query><pages><page pageid="479337" ns="0" title="Mozilla Sunbird"><revisions><rev xml:space="preserve">{{Infobox software
+| name                   = Mozilla Sunbird
+| logo                   = [[File:SunbirdIcon.png|100px]]
+| screenshot             = [[File:Mozilla Sunbird.png|200px]]
+| caption                = Mozilla Sunbird main window running under [[Windows Vista]]
+| developer              = [[Mozilla Foundation]] and community
+| released               = ?
+| frequently_updated     = No; development ceased&lt;!-- Release version update? Don't edit this page, just click on the version number! --&gt;
+| programming language   = [[C++]], [[XUL]], [[XBL]], [[JavaScript]]
+| operating system       = [[Microsoft Windows|Windows]], [[Linux]], [[BSD UNIX]], [[Mac OS X]], [[Solaris (operating system)|Solaris]], [[OpenSolaris]] and [[OS/2]]
+| language               = [[Multilingual]],&lt;ref name=&quot;Sunbird - International Downloads&quot;&gt;{{cite web | title = Sunbird - International Downloads | publisher = mozilla.org | url = http://www.mozilla.org/projects/calendar/sunbird/l10n_download.html | accessdate = 2007-06-12 }}&lt;/ref&gt; EULA in English only&lt;ref name=mozeula&gt;{{cite web | url = http://www.mozilla.org/legal/eula | title = Mozilla Sunbird [[Software license agreement|End-User Software Licensing Agreement]] | accessdate = 2007-06-12 | publisher = mozilla.org}}&lt;/ref&gt;
+| genre                  = [[Personal information manager]]
+| license                = [[Mozilla Public License|MPL]], MPL/[[GNU General Public License|GPL]]/[[LGPL]] tri-license
+| website                = [http://www.mozilla.org/projects/calendar/sunbird/ Project Homepage]
+}}
+'''Mozilla Sunbird''' is a [[free and open source software|free and open source]], [[cross-platform]] [[calendaring software|calendar application]] that was developed by the [[Mozilla Foundation]], [[Sun Microsystems]] and many volunteers.&lt;ref name=&quot;volunteerlist&quot;&gt;[http://www.mozilla.org/credits/ Mozilla contributors list], ''Mozilla.org''&lt;/ref&gt; Mozilla Sunbird was described as &quot;...&amp;nbsp;a cross platform standalone calendar application based on Mozilla's [[XUL]] user interface language.&quot;&lt;ref name=&quot;mainsunbirdpage&quot;&gt;[http://www.mozilla.org/projects/calendar/sunbird/index.html The Sunbird Project - Standalone Calendar] - Main project page describing the project.&lt;/ref&gt; Announced in July 2003,&lt;ref name=&quot;sunbirdAnnounced&quot;&gt;[http://www.mozillazine.org/talkback.html?article=3432 Mozilla Sunbird Standalone Calendar Project Launches - MozillaZine Talkback] - MozillaZine article announcing the Sunbird Project&lt;/ref&gt; Sunbird is a standalone version of the [[Mozilla Calendar Project]].
+
+It was developed as a standalone version of the [[Lightning (software)|Lightning]] calendar and scheduling extension for [[Mozilla Thunderbird]]. Development of Sunbird was ended with release 1.0 beta 1 to focus on development of [[Lightning (software)|Mozilla Lightning]].&lt;ref&gt;[http://www.mozilla.org/projects/calendar/releases/sunbird1.0b1.html Sunbird 1.0 beta1 Release Notes]: &quot;This is the last public Sunbird release by the Calendar Project.&quot; . Retrieved 2010-04-01.&lt;/ref&gt;&lt;ref&gt;[http://weblogs.mozillazine.org/calendar/2009/02/calendar_project_at_a_critical.html Calendar Project at a critical juncture], Calendar Weblog. Retrieved 2010-04-01.&lt;/ref&gt;
+
+==Sun contributions==
+Sun Microsystems contributed significantly to the Lightning extension project to provide users with an alternative free and open source choice to [[Microsoft Office]] by combining [[OpenOffice.org]] and Thunderbird/Lightning.&lt;ref&gt;{{cite web|last=Paquet |first=Simon |url=http://weblogs.mozillazine.org/calendar/2006/10/sun_microsystems_announces_int.html |title=Calendar Weblog |publisher=Weblogs.mozillazine.org |date=2006-10-05 |accessdate=2010-04-07}}&lt;/ref&gt; Sun's key focus areas in addition to general bug fixing were calendar views, team/collaboration features and support for the [[Sun Java Calendar Server|Sun Java System Calendar Server]].&lt;ref&gt;{{cite web|url=http://www.openoffice.org/editorial/mozilla_lightning_and_OOo.html |title=Interview On Mozilla Lighting and |publisher=Openoffice.org |date= |accessdate=2010-04-07}}&lt;/ref&gt; Since both projects share the same code base, any contribution to one of them is a direct contribution to the other.
+
+==Trademark issues and Iceowl==
+{{Main|Mozilla Corporation software rebranded by the Debian project}}
+Although released under a [[Mozilla Public License|MPL]], MPL/[[GNU General Public License|GPL]]/[[LGPL]] tri-license, Mozilla Sunbird suffers from trademark restrictions that prevent the distribution of modified versions with the Mozilla branding.
+
+As a result the [[Debian]] project created [[Iceowl]], a virtually identical version sans the branding restrictions.
+
+==Release history==
+{| class=&quot;wikitable&quot;
+|-
+!colspan=&quot;3&quot;|Key:
+|- style=&quot;text-align:center;&quot;
+|  style=&quot;width:33%; white-space:nowrap; background:#ff8080; &quot;|Old Version
+|  style=&quot;width:34%; white-space:nowrap; background:#40cc40; &quot;|Current Version
+|  style=&quot;width:33%; white-space:nowrap; background:#ffff80; &quot;|Future Version
+|}
+
+{| class=&quot;wikitable&quot;
+|-
+! [[Gecko (layout engine)|Gecko]] version
+! Sunbird version
+! Release date
+! Significant changes
+|-
+!1.8
+| style=&quot;white-space:nowrap; background:#ff8080;&quot;| 0.2
+|style=&quot;white-space: nowrap&quot;| February 4, 2005
+||
+|-
+!rowspan=2|1.9
+| style=&quot;white-space:nowrap; background:#ff8080;&quot;| [http://www.rumblingedge.com/2006/10/13/sunbird-03-released/ 0.3]
+|style=&quot;white-space: nowrap&quot;| October 11, 2006
+|Calendar storage moved from flat .ICS files to [[SQLite]]
+|-
+| style=&quot;white-space:nowrap; background:#ff8080;&quot;| [http://www.rumblingedge.com/2007/02/06/sunbird-031-released/ 0.3.1]
+|style=&quot;white-space: nowrap&quot;| February 19, 2007
+|Timezones updated for DST change
+|-
+!rowspan=4|1.8.1
+| style=&quot;white-space:nowrap; background:#ff8080;&quot;| [http://www.rumblingedge.com/2006/12/01/sunbird-05-released/ 0.5]
+|style=&quot;white-space: nowrap&quot;| June 27, 2007
+|Moved to [[Gecko (layout engine)|Gecko]] 1.8.1 for added stability and includes support for [[Google Calendar]] via an extension.&lt;ref&gt;{{cite web |url=https://addons.mozilla.org/en-US/sunbird/addon/4631 |title=Provider for Google Calendar |publisher=[[Mozilla]] |author=Philipp Kewisch| date=2007-05-20| accessdate=2007-06-29}}&lt;/ref&gt;
+|-
+| style=&quot;white-space:nowrap; background:#ff8080;&quot;| [http://www.rumblingedge.com/2007/07/08/sunbird-07-released/ 0.7]
+|style=&quot;white-space: nowrap&quot;| October 25, 2007
+|Cleaner user interface and additional functionality
+|-
+| style=&quot;white-space:nowrap; background:#ff8080;&quot;| [http://www.rumblingedge.com/2007/11/09/sunbird-08-released/ 0.8]
+|style=&quot;white-space: nowrap&quot;| April 4, 2008
+|International [[time zone|timezones]], experimental offline support and task mode
+|-
+| style=&quot;white-space:nowrap; background:#40cc40;&quot;| [http://www.rumblingedge.com/2008/09/21/sunbird-09-released/ 0.9]
+|style=&quot;white-space: nowrap&quot;| September 23, 2008
+|
+* Events spanning days now have a visual indicator indicating them as connected events.
+* When reloading a remote calendar a progress indicator is now shown.
+* The so-called &quot;minimonth&quot; (small calendar month in the upper left) has been given a visual overhaul.
+* The calendar views (day, week, multiweek, month) have been given a visual overhaul.
+* [[CalDAV]] support and interoperability with various CalDAV servers has been improved.
+|-
+!1.9.1
+| style=&quot;white-space:nowrap; background:#ffff80;&quot;| [http://www.mozilla.org/projects/calendar/sunbird/ 1.0b1]
+|style=&quot;white-space: nowrap&quot;| April 2, 2010
+|
+* Multiple alarms can be defined for one event.
+* CalDAV support is improved.
+|}
+
+==See also==
+* [[Lightning (software)|Lightning]] for [[Mozilla Thunderbird]] and [[SeaMonkey]]
+* [[List of personal information managers]]
+* [[List of applications with iCalendar support]]
+
+==References==
+{{Reflist|2}}
+
+==External links==
+* {{Official website|http://www.mozilla.org/projects/calendar/sunbird/}}
+* [https://wiki.mozilla.org/Calendar:Home_Page MozillaWiki]
+* [http://weblogs.mozillazine.org/calendar/ The Sunbird development blog]
+* [http://www.rumblingedge.com/2006/11/20/sunbird-release-changelogs/ The Rumbling Edge: Sunbird release changelogs]
+* Portable version
+** [http://portableapps.com/apps/office/sunbird_portable Sunbird Portable] by [[PortableApps.com]]
+
+{{Mozilla projects}}
+{{FreeCollabManageSoftware}}
+{{FLOSS}}
+
+&lt;!-- Interlang --&gt;
+
+[[Category:Mozilla]]
+[[Category:Calendaring software]]
+[[Category:Personal information managers]]
+[[Category:Cross-platform software]]
+[[Category:C++ software]]
+[[Category:Gecko-based software]]
+[[Category:Portable software]]
+
+[[ca:Mozilla Sunbird]]
+[[cs:Mozilla Sunbird]]
+[[da:Mozilla Sunbird]]
+[[de:Mozilla Sunbird]]
+[[es:Mozilla Sunbird]]
+[[eo:Mozilla Sunbird]]
+[[eu:Mozilla Sunbird]]
+[[fr:Mozilla Sunbird]]
+[[ko:ëª¨ì§ë¼ ì ë²ë]]
+[[hsb:Mozilla Sunbird]]
+[[it:Mozilla Sunbird]]
+[[he:Mozilla Sunbird]]
+[[hu:Mozilla Sunbird]]
+[[ja:Mozilla Sunbird]]
+[[uz:Mozilla Sunbird]]
+[[pt:Mozilla Sunbird]]
+[[ro:Mozilla Sunbird]]
+[[ru:Mozilla Sunbird]]
+[[sk:Mozilla Sunbird]]
+[[sr:ÐÐ¾Ð·Ð¸Ð»Ð° ÑÐ°Ð½Ð±ÐµÑÐ´]]
+[[fi:Mozilla Sunbird]]
+[[sv:Mozilla Sunbird]]
+[[uk:Mozilla Sunbird]]
+[[zh:Mozilla Sunbird]]</rev></revisions></page></pages></query></api>

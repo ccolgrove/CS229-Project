@@ -1,0 +1,76 @@
+<?xml version="1.0"?><api><query><pages><page pageid="11635962" ns="0" title="Mythbuntu"><revisions><rev xml:space="preserve">{{Original research|date=November 2009}}
+&lt;!-- If you update this article, please remember to update other Ubuntu derivatives, which include, but are not limited to: Ubuntu, Kubuntu, Edubuntu, Xubuntu, Gobuntu. --&gt;
+{{ infobox OS
+| name                   = Mythbuntu
+| family                 = [[Unix-like]]
+| logo                   = 
+| screenshot             = [[Image:Mythbuntu 8.04.png|300px]]
+| caption                = Mythbuntu 8.04.1
+| latest_release_version = 11.10
+| latest_release_date    = {{release date|2011|10|13}}
+| website                = [http://mythbuntu.org/ mythbuntu.org]
+}}
+
+'''Mythbuntu''' is a [[Home theater PC|media center]] [[operating system]] (OS). It is based on [[Ubuntu (operating system)|Ubuntu]] and integrates the [[MythTV]] Media center software as its main function, and does not install with all of the programs included with Ubuntu.
+
+Following the principles of [[KnoppMyth]] and [[Mythdora]], Mythbuntu is designed to simplify the installation of MythTV on a [[home theater PC]]. After Mythbuntu has been installed the MythTV setup program begins in which it can be configured as a frontend (a media viewer), backend (a media server), or combination of the two.
+
+Mythbuntu aims to keep close ties with Ubuntu thus allowing changes to be moved upstream for the greater benefit of the Ubuntu Community.&lt;ref name=&quot;existingUbuntu&quot;&gt;[http://www.mythbuntu.org/existing-ubuntu Installing Mythbuntu packages within Ubuntu]&lt;/ref&gt; Due to the close link with Ubuntu, easy conversions between desktop and standalone Mythbuntu installations are possible. The development cycle of Mythbuntu closely follows that of Ubuntu, with releases occurring every six months.&lt;ref&gt;[http://www.mythbuntu.org/about About Mythbuntu]&lt;/ref&gt;
+
+== Desktop ==
+
+Mythbuntu uses the [[Xfce]] desktop interface by default, but users can install [[GNOME|ubuntu-desktop]], [[KDE|kubuntu-desktop]], or [[Xfce|xubuntu-desktop]] through the Mythbuntu Control Centre, allowing users to get the default interfaces from those flavors of Ubuntu. The only software that is included in this release is media-related software such as [[VLC media player|VLC]], [[Amunix]], and [[Rhythmbox]].
+
+== Mythbuntu Control Centre ==
+[[Image:Mythbuntu Control Centre.png|thumb|The Control Centre]]
+The Mythbuntu Control Centre provides a GUI which can be used to configure the system.  The user can select what kind of system (Backend, Frontend, Both) they wish to have installed. Inside the Control Centre, the user can perform common actions such as installing plugins for MythTV, configuring the [[MySQL]] database, setting passwords, and installing [[device driver|drivers]] and [[Codec|codecs]]. Configuration of remote controls and a range of other utilities and small programs are performed all from within this program.
+
+== Different Applications of Mythbuntu ==
+=== Complete Installation (Front-end and Back-end)===
+
+Mythbuntu can be used to install a full MythTV system on a single device (acting as both [[Client (computing)|client]] and [[file server|server]]). The front-end is the software required for the visual elements (or the [[GUI]]) and is utilised by the common user to find, play, and manipulate [[media files]].  The backend is the server where the media files, tuners, and database are actually stored.  A full [[frontend]] and backend system may have an advantage in that it has 'portability', i.e. it is a standalone device that is not dependent on a separate server (like a [[Video game console|gaming console]] for example).
+
+=== Front-end only installations ===
+
+[[Image:Front-end myth-tv setup.png|thumb|Diagram of a possible setup.]]
+Alternatively, Mythbuntu can be used to install a MythTV client, front-end only system. For example, users may have a central storage device (server) in their home that can be accessed from numerous other devices throughout the home over a network. The central storage device can act as MythTV server, and the MythTV front-end client software can be installed on devices containing minimal hardware. Mythbuntu can also run directly from a CD-ROM (i.e. without installation), providing that there is a [[Local area network|network connection]] to a PC with a 'complete installation' (a MythTV back-end server).  
+
+Using a 'server' separate from one or more front-end units offers the advantage of providing multiple clients with simultaneous access to a single repository of shared media files.  The server used would generally have hardware of a relatively high specification and can be kept outside of the main living room or other entertainment area of the home. An advantage of keeping the server PC outside the living room is that some configurations can be quite noisy (especially with certain hard drives or server power supply fans), and it can be expensive to invest in fanless/heat sink equipment to avoid such noise problems.
+
+== Adding Mythbuntu to Ubuntu ==
+Mythbuntu is an Ubuntu derivative that offers an easy single-click conversion from Ubuntu to Mythbuntu&lt;ref name=&quot;existingUbuntu&quot; /&gt;&lt;ref&gt;[http://mythbuntu.org/download/getmythbuntu.php Install link target]&lt;/ref&gt;.  This means a user no longer needs to type in command line, which can be daunting to new users, or hunt for packages in the various package managers.
+
+==Version history==
+* Mythbuntu 7.10 Gutsy Gibbon (with MythTV .20) was released on Monday, October 22, 2007.
+* Mythbuntu 8.04.1 Hardy Heron (with MythTV .21) was released Monday July 14th, 2008.
+* Mythbuntu 8.10 Intrepid Ibex (with MythTV .21) was released on Thursday Oct 30th, 2008.
+* Mythbuntu 9.04 Jaunty Jackalope (with MythTV .21-fixes) was released on Thursday April 23rd, 2009.
+* Mythbuntu 9.10 Karmic Koala (with MythTV .22) was released on Thursday October 29th, 2009.&lt;ref&gt;http://www.mythbuntu.org/downloads&lt;/ref&gt;
+* Mythbuntu 10.04 Lucid Lynx (with MythTV .23) was released on Thursday April 29th, 2010.&lt;ref&gt;http://www.mythbuntu.org/10.04/release&lt;/ref&gt;
+* Mythbuntu 10.10 Maverick Meerkat (with MythTV .23.1) was released on October 19, 2010.&lt;ref&gt;http://www.mythbuntu.org/10.10/release&lt;/ref&gt;
+* Mythbuntu 11.04 Natty Narwhal (with MythTV .24) was released on April 28, 2011.&lt;ref&gt;http://www.mythbuntu.org/11.04/release&lt;/ref&gt;
+
+== See also ==
+* [[LinuxMCE]]
+
+== References ==
+{{reflist}}
+
+== External links ==
+* [http://www.mythbuntu.org/ Mythbuntu homepage]
+
+{{Ubuntu}}
+{{Linux distributions}}
+{{Xfce}}
+{{Home theater PC (application software)}}
+
+[[Category:Ubuntu (operating system) derivatives]]
+[[Category:Multimedia software]]
+[[Category:Free television software]]
+
+[[bn:à¦®à¦¿à¦¥à¦¬à§à¦¨à§à¦à§]]
+[[es:Mythbuntu]]
+[[fr:Mythbuntu]]
+[[it:Mythbuntu]]
+[[pt:Mythbuntu]]
+[[sk:Mythbuntu]]</rev></revisions></page></pages></query></api>

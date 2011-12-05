@@ -1,0 +1,52 @@
+<?xml version="1.0"?><api><query><pages><page pageid="417992" ns="0" title="Bootable business card"><revisions><rev xml:space="preserve">{{Unreferenced|date=April 2008}}
+[[Image:Bootable Buisness Card.JPG|thumb|250px|A Bootable business card.]]
+
+A '''bootable business card''' (BBC) is a [[CD-ROM]] that has been cut, pressed, or molded to the size and shape of a [[business card]] (designed to fit in a wallet or pocket).  Alternative names for this form factor include &quot;credit card&quot;, &quot;hockey rink&quot;, and &quot;wallet-size&quot;. The cards are designed to hold about 50 [[Megabyte|MB]].  The CD-ROM business cards are generally used for commercial product demos, are mailed to prospective customers, and are given away at [[trade show]]s.
+
+Although the term &quot;bootable business card&quot; could be applied to any bootable CD-ROM in the business card form factor, it almost always refers one which contains a compact [[Linux distribution]] generally containing a suite of system diagnostic and rescue tools and/or demos of specific packages.
+
+==History==
+In 1999 [[Linuxcare]] employee Duncan MacKinnon proposed the idea of producing and distributing such a card for an upcoming tradeshow.  He and his team of volunteers (fellow employees) coined the phrase &quot;bootable business card&quot;.
+
+The premiere version was available at the first [[LinuxWorld]] Expo in [[San Jose, California]].  The initial press run produced 10,000 copies. Most of those were given away at the show and shipped to Linux users groups in the ensuing months.
+
+Since the project consisted of [[open source]] and [[free software]], and the idea was compelling and simple, a number of other Linux BBCs rapidly became available.
+
+The first derivative was produced by the Irish Linux Users Group.  Over the years, most of the creators of the original Linuxcare BBC left the company, but have continued to work on the project which is now called the [[LNX-BBC]].
+
+At least one of the boxed [[Red Hat Linux]] packages included a system rescue CD in business card form factor.
+
+Many derivatives and clones of the BBC have proliferated.  Almost all of these run on [[personal computer|PC]]s.  Limited success has been achieved on BBCs and Live CDs on other computing platforms.
+
+The early versions of the Linuxcare BBC were collections of packages that had been precompiled for other distributions (such as [[Debian]] and [[Red Hat Linux]] from which subsets of files were copied into the directory from which the BBC was &quot;mastered&quot; (the ISO 9660 CD images were built).
+
+Building the entire mini-distribution from source code was the major undertaking of the LNX-BBC project (which formed of the original Linuxcare members with other contributors and volunteers).  The first version of the LNX-BBC that was independent from Linuxcare was 1.618 (a number suggested by team member Seth Schoen, an approximation of the [[golden mean]], or [[phi]], and a tribute to [[Don Knuth]] who used successively more precise approximations of [[pi|Ï]] for versioning his [[TeX]] typesetting system).  
+
+Beginning with version 2.0, all LNX-BBC discs are built entirely from source code using the GAR system&lt;!-- [http://www.lnx-bbc.org/faq-Building_from_Source_Code.html] GAR is short for &quot;Gmake Autobuild Runtime&quot; --&gt;.
+This version was used by the [[Free Software Foundation]] as their membership card (given sponsoring members for their donations).
+
+More recently, the 50 MB [[Damn Small Linux]] can be put on BBCs.  There have also been &quot;BBC&quot; releases of other free operating systems such as [[FreeBSD]].
+
+==Operation==
+The key of the bootable business card is that it runs completely from the CD and the system's memory (RAM), as several &quot;Live&quot; CD versions of Linux have been doing for years.  One simply puts the CD into the drive, powers up the computer and ensures that the CD drive is selected for boot before the hard drive.
+
+Once booted, the [[operating system]] runs from the CD and out of the system's [[Random Access Memory|RAM]].  Because the business card form factor has such a small capacity the Linuxcare developers chose to use a compressed filesystem. This allows the typical BBC to contain about 100 [[megabyte]]s of software in only about 50 megabytes of disc space.
+
+The original BBC and most of its clones and derivatives will scan the system for recognized [[filesystem]]s, automatically &quot;mounting&quot; these up in read-only mode.  This makes filesystems on any local hard disks accessible while minimizing the risk of inadvertent corruption, deletion or other damage to files on local drives.
+
+A typical BBC contains a suite of networking, back-up and data recovery utilities, which is why they are valued by Linux system administrators as rescue tools.
+
+Many BBCs use the cloop (compressed loopback) driver which provided a compressed read-only filesystem for Linux.  Of course they typically have some of the system's memory (RAM) configured as a [[ramdisk]] (or perhaps several RAM disks).  This typically leaves the CD-ROM drive dedicated for the duration of the system usage.  However, some BBCs create a larger ramdisk and copy the entire system off the CD, thus making the drive available for other CDs or DVDs.  This is useful because some PCs have only a single CD or DVD drive.
+
+Once booted, these systems provide a UNIX/Linux command line prompt (generally as the root user).  Some also provide some very compact [[graphical user interface]] (GUI) tools.  The LNX-BBC includes a small X (X Window System) server and a web browser called [[BrowseX]] (among other tools).
+
+At their core most BBCs are rescue and diagnostics tools for expert professionals, and normal user-operations are catered for better by Live CD distributions.
+
+==Alternatives==
+A number of Linux distributions run from [[Live CD]]s, operating in a similar manner to a bootable business card, notably including the [[Knoppix]] and [[Ubuntu (operating system)|Ubuntu]] distributions.  Similarly, Linux distributions can often be configured to run from a [[USB flash drive]], or a similar medium, such as a [[floppy disk]].  Some can be booted over a network.
+
+==See also==
+*[[Shaped CD]]
+*[[Live CD]]
+
+[[Category:Compact Disc]]</rev></revisions></page></pages></query></api>

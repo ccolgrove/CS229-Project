@@ -1,0 +1,154 @@
+<?xml version="1.0"?><api><query><pages><page pageid="9347765" ns="0" title="PeaZip"><revisions><rev xml:space="preserve">{{Infobox software
+| logo                   = [[Image:Peazip ico.svg|48px]]
+| screenshot             = [[Image:Peazip-screenshot.png|250px]]
+| caption                = PeaZip running on [[Windows 7]]
+| author                 =
+| developer              = Giorgio Tani
+| released               = {{Start date|September 16, 2006}}&lt;ref&gt;{{cite web | url = http://peazip.org/peazip0-changelog.txt | title = PeaZip - Changelog | date = 2011-03-15 | accessdate = 2011-03-15 }}&lt;/ref&gt;
+| latest release version = 4.2&lt;ref&gt;{{cite web | url = http://www.peazip.org/changelog.html | title = PeaZip - Changelog | date = 2011-11-20 | accessdate = 2011-11-20 }}&lt;/ref&gt;
+| latest release date    = {{release date and age|2011|11|20}}
+| latest preview version =
+| latest preview date    =
+| frequently updated     = Yes
+| programming language   = [[Free Pascal]] ''(highly compatible with [[Delphi]] and [[Object Pascal]] languages)&lt;ref&gt;{{cite web | url = http://peazip.org/peazip-free-archiver.html | title = See for '''Notes for developers''' | date = 2011-03-15 | accessdate = 2011-03-15 }}&lt;/ref&gt;''
+| operating system       = [[Microsoft Windows]]&lt;br/&gt;[[GNU]]/[[Linux]]&lt;br/&gt;[[Mac OS]] ''(Under Development)''&lt;ref&gt;{{cite web | url = http://peazip.org/peazip-help-faq.html#OSX | title = PeaZip for Mac OS | date = 2011-08-17 | accessdate = 2011-08-17 }}&lt;/ref&gt;&lt;br/&gt;[[BSD]] ''(compiled by [[PC-BSD]] community)''&lt;ref&gt;{{cite web | url = http://peazip.org/peazip-help-faq.html#BSD | title = PeaZip for BSD | date = 2011-08-18 | accessdate = 2011-08-18 }}&lt;/ref&gt;,
+| platform               = [[x86-32]], [[x86-64]]
+| size                   = '''Windows'''&lt;br/&gt;4.7&amp;nbsp;[[Megabyte|MB]] - [[EXE]]&lt;br/&gt;&lt;br/&gt;'''Linux [[GTK2]]'''&lt;br/&gt;8.9&amp;nbsp;MB - [[Deb (file format)|DEB]]&lt;br/&gt; 8.5&amp;nbsp;MB - [[RPM]]&lt;br/&gt;9.0&amp;nbsp;MB - [[TGZ]]&lt;br/&gt;&lt;br/&gt;'''Linux [[Qt (framework)|QT]]'''&lt;br/&gt;9.0&amp;nbsp;MB - [[Deb (file format)|DEB]]&lt;br/&gt;8.6&amp;nbsp;MB - [[RPM]]&lt;br/&gt;9.0&amp;nbsp;MB - [[TGZ]]
+| language               = Chinese Traditional - ç¹é«ä¸­æ &lt;br/&gt;Chinese - ç®ä½ä¸­æ&lt;br/&gt;Äesky&lt;br/&gt;English&lt;br/&gt;German - Deutsch&lt;br/&gt;English (United Kingdom)&lt;br/&gt;English&lt;br/&gt;Spanish - EspaÃ±ol&lt;br/&gt;FranÃ§ais&lt;br/&gt;Galician - Galego&lt;br/&gt;Hungarian - Magyar&lt;br/&gt;Italian - Italiano&lt;br/&gt;Japanese - æ¥æ¬èª&lt;br/&gt;Korean - íêµ­ì´&lt;br/&gt;Dutch - Nederlands&lt;br/&gt;Norwegian - Norsk&lt;br/&gt;Polish - Polski&lt;br/&gt;Portuguese (Brazil) - PortuguÃªs&lt;br/&gt;Portuguese (Portugal)&lt;br/&gt;Russian - ÑÑÑÑÐºÐ¸Ð¹&lt;br/&gt;Sinhala - à·à·à¶à·à¶½&lt;br/&gt;Swedish - Svenska&lt;br/&gt;Turkish - TÃ¼rkÃ§e&lt;br/&gt;Ukrainian - Ð£ÐºÑÐ°ÑÐ½ÑÑÐºÐ°&lt;br/&gt;Vietnamese - Viá»t
+| status                 = Active
+| genre                  = [[File archiver|File Archiver]], File Compressor, [[File Manager]], File Splitter, [[File Encryption]], [[Secure file deletion]]
+| license                = [[GNU Lesser General Public License]]
+| website                = [http://peazip.org peazip.org]
+}}
+'''PeaZip''' is a [[file manager]] and [[file archiver]] for [[Microsoft Windows]] and [[GNU]]/[[Linux]].&lt;ref&gt;{{cite web |url=http://www.linux.com/feature/127889 |title=Archive files in both Windows and Linux using PeaZip |accessdate=2008-04-09 |author=Federico Kereki |date=2008-03-05 |publisher=[[Linux.com]]}}&lt;/ref&gt; It supports its native [[#Native archive format|PEA archive format]] (featuring compression, multi volume split and flexible authenticated encryption and integrity check schemes) and other mainstream formats, with special focus on handling [[open format]]s.&lt;ref&gt;{{cite web |url=http://www.download.com/8301-2007_4-9832605-12.html |title=Killer Download: Top file compression alternatives |accessdate=2008-04-09 |author=Jason Parker |date=2007-12-11 |publisher=[[Download.com]]}}&lt;/ref&gt;&lt;ref&gt;{{cite web |url=http://blog.freedownloadscenter.com/2007/09/26/peazip-compression-software/ |title=PeaZip Compression Software |accessdate=2008-04-09 |author=O. James Fagbire |date=2007-09-26 |publisher=Free Downloads Center}}&lt;/ref&gt; It supports 134 file extensions (Version 4.2).&lt;ref&gt;http://www.peazip.org/&lt;/ref&gt;
+
+PeaZip is mainly written in [[Free Pascal]], using [[Lazarus (software)|Lazarus]].  PeaZip is released under the terms of the [[GNU Lesser General Public License]].
+
+== Features ==
+The program features an archive browser interface with search and history features for intuitive navigation in archive's content, and allows the application of fine-grained multiple exclusion and inclusion filter rules to the archive; a flat browsing mode is possible as alternative archive browsing method.
+
+PeaZip allows users to run extracting and archiving operations automatically using command-line generated exporting the job defined in the GUI front-end. It can also create, edit and restore an archive's layout for speeding up archiving or backup operation's definition.
+
+Other notable features of the program includes archive conversion, file splitting and joining, secure file deletion, byte-to-byte file comparison, archive encryption, checksum/hash files, find duplicate files, system benchmarking, random passwords/keyfiles generation, view image thumbnails ([[Thread_(computer_science)|multi threaded]] on the fly thumbnails generation without saving image cache to the host machine), and integration in the [[Windows Explorer]] [[context menu]]. In addition, the program's user interface (including icons and color scheme) can be customized.&lt;ref&gt;{{cite web |url=http://www.softpedia.com/reviews/windows/PeaZip-Review-51601.shtml |title=Get Your Files Wrapped |accessdate=2008-04-09 |author=Ionut Ilascu |date=2007-04-10 |publisher=[[Softpedia]]}}&lt;/ref&gt;&lt;ref&gt;{{cite web |url=http://www.softpedia.com/reviews/linux/PeaZip-Review-51545.shtml |title=PeaZip Review |accessdate=2008-04-09 |author=Mihai Marinof |date=2007-04-10 |publisher=Softpedia}}&lt;/ref&gt;&lt;ref&gt;{{cite web |url=http://peazip.en.softonic.com/ |title=Compress files with the greatest of ease |accessdate=2008-04-09 |publisher=Softonic}}&lt;/ref&gt;
+
+PeaZip is available for x86 and x86-64 as installable package for Windows and Linux (DEB, RPM and TGZ, compiled both for [[GTK2]] and [[Qt (toolkit)|Qt]] widgetset), and as natively standalone, portable application for both Windows and Linux. In the latter form it is available also as [[PortableApps]] package (.paf.exe).&lt;ref&gt;{{cite web |url=http://portableapps.com/apps/utilities/peazip_portable |title=PeaZip Portable |accessdate=2008-04-09 |author=Zach Hudock |coauthors=Giorgio Tani |date=2008-03-25 |publisher=[[PortableApps.com]]}}&lt;/ref&gt;
+
+Along with more popular and general-purpose archive formats like [[7z]], [[Tar (file format)|Tar]], [[ZIP (file format)|ZIP]] etc., PeaZip supports the [[PAQ]] and LPAQ formats.  Although usually not recommended for general purpose use (due to high memory usage and low speed), those formats are included for the value as cutting edge compression technology, providing compression ratio amongst the best for most data structures.&lt;ref&gt;{{cite web |url=http://www.maximumcompression.com/data/summary_mf.php |title=Summary of the multiple file compression benchmark tests |accessdate=2008-04-09 |publisher=Maximum Compression}}&lt;/ref&gt;&lt;ref&gt;{{cite web |url=http://cs.fit.edu/~mmahoney/compression/text.html |title=Large Text Compression Benchmark |accessdate=2008-04-09 |author=Matt Mahoney |coauthors= |date=2008-04-06 |quote=The &quot;better&quot; option chooses best compression (equivalent to gzip -9).}}&lt;/ref&gt;
+
+PeaZip supports encryption with [[Advanced Encryption Standard|AES]] 256-bit [[Block cipher|cipher]] in 7z, ZIP and PEA archive formats. In [[FreeArc]]'s ARC format, supported ciphers are [[AES (cipher)|AES]] 256-bit, [[Blowfish (cipher)|Blowfish]], [[Twofish]] 256 and [[Serpent (cipher)|Serpent]] 256.&lt;ref name=&quot;peazip_features&quot;&gt;[http://www.peazip.org/peazip-free-archiver.html Peazip introduction] Retrieved on 2009-07-06&lt;/ref&gt;
+
+=== Limitations ===
+The graphical frontend's progress bar is less reliable than the native console's progress indicator for the various backend utilities.
+If it is critical to follow the real time progress of the work it is possible to set the program to use the native console interface, or both graphical and console interfaces, for the backend utilities.
+
+=== Native archive format ===
+'''PEA''', an abbreviation for '''Pack Encrypt Authenticate''', is an [[archive file format]].  It is a general purpose archiving format featuring compression and multiple volume output.  The developers' goal is to offer a flexible security model through Authenticated Encryption, that provides both privacy and authentication of the data, and redundant integrity checks ranging from [[checksums]] to cryptographically strong [[hash function|hashes]], defining three different levels of communication to control: [[Stream (computing)|streams]], [[Object (computer science)|objects]], and [[Volume (compression)|volumes]].&lt;ref name=&quot;pea_help&quot;&gt;{{cite book|last=Tani |first=Giorgio |title=PEA |url=http://www.peazip.org/pea_help.pdf |format=PDF |date=2008-03-20 }}{{Verify source|date=May 2010}}&lt;/ref&gt;{{Verify source|date=May 2010}}
+
+It was developed in conjunction with the PeaZip file archiver. PeaZip and Universal Extractor support the PEA archive format.
+
+=== Third-party technologies ===
+PeaZip acts as a graphical [[front-end]] for numerous third-party open source or royalty-free utilities, including:
+
+* Igor Pavlov's [[7-zip|7z]] executable and Myspace's POSIX port of 7z under Linux
+* Bulat Ziganshin's [[FreeArc]] archiver (to not be confused with SEA's ARC)
+* [[PAQ]]8, ZPAQ and LPAQ executables, maintained by Matt Mahoney and various contributors
+* Ilia Muraviev's [[QUAD (compressor)|QUAD]] and BALZ compressors
+* GNU strip and [[UPX]]
+* UNACEV2.DLL 2.6.0.0 (royalty-free UNACEV2.DLL license) and UNACE for Linux (royalty-free UNACE for Linux license) (maintained by Marcel Lemke, ACE Compression Software)
+
+Most of these utilities can run both in console mode or through a graphical wrapper that allows more user-friendly handling of output information.
+
+== Supported formats ==
+=== Full archiving and extraction support ===
+{{div col|colwidth=15em}}
+* [[7z]]&lt;ref&gt;{{cite web |url=http://www.7-zip.org/links.html |title=Links |accessdate=2008-04-09 |author=Igor Pavlov |quote=Applications that work with .7z archives:}}&lt;/ref&gt;
+* 7z-[[Self-extracting archive|SFX]]
+* [[FreeArc]]'s ARC/WRC&lt;ref&gt;{{cite web |url=http://freearc.org/Download.aspx |title=Download FreeArc |accessdate=2008-04-09 |author=Bulat Ziganshin |quote=Third-party GUI for FreeArc}}&lt;/ref&gt;
+* [[bzip2]]: bz2, tar.bz2, tbz, tb2
+* [[gzip]]: gz, tar.gz, tgz
+* [[PAQ]]8F/JD/L/O,&lt;ref&gt;{{cite web |url=http://cs.fit.edu/~mmahoney/compression/ |title=Data Compression Programs |accessdate=2008-04-09 |author=Matt Mahoney |date=2008-03-09 |quote=PeaZip (Giorgio Tani) is a GUI front end for Windows and Linux that supports the paq8o, lpaq1, and many other compression formats.}}&lt;/ref&gt; LPAQ, ZPAQ
+* [[#Native archive format|PEA]]
+* QUAD/BALZ
+* split (.001)
+* [[Tar (file format)|tar]]
+* [[Windows_Imaging_Format|WIM]]
+* [[Xz|XZ]]
+* [[ZIP (file format)|ZIP]]
+{{div col end}}
+
+=== Browse/test/extract support ===
+{{div col|colwidth=15em}}
+* [[ACE (file format)|ACE]]
+* [[ARJ]]
+* [[cabinet (file type)|CAB]]
+* [[Microsoft Compressed HTML Help|CHM]]
+* Compound File (MSI, DOC, PPT, XLS, etc.)
+* [[CPIO]]
+* [[deb (file format)|DEB]]
+* [[EAR (file format)|EAR]]
+* [[ISO image|ISO]] CD/DVD images
+* [[JAR (file format)|JAR]]
+* [[LZMA]]
+* [[LZH]]
+* [[Nullsoft Scriptable Install System|NSIS]] installers
+* [[OpenDocument|OpenOffice's OpenDocument]] file types
+* PET/PUP (Puppy Linux installers)
+* PAK/[[PK3 (file extension)|PK3]]/[[PK4 (file extension)|PK4]]
+* [[RAR (file format)|RAR]]
+* [[RPM Package Manager|RPM]]
+* SMZIP
+* [[U3]]P
+* [[WAR (Sun file format)|WAR]]
+* [[Windows Imaging Format|WIM]]
+* [[XPI]]
+* [[compress|Z (compress)]]
+* [[ZIPX]]
+{{div col end}}
+
+=== Repair ===
+* [[FreeArc]]'s ARC
+
+== Software advertising ==
+
+As of 3.7, PeaZip installer for Windows is available either as a version showing advertising during installation process (in partnership with [[OpenCandy]], which is part of [[Google Ventures]]), and alternatively as a plain installer version with no third party bundle.
+PeaZip Portable and PeaZip for Linux packages do not feature any third party bundle, and alongside PeaZip plain installer are suitable for environments requiring exclusively software released under OSI approved licenses.
+
+== See also ==
+{{Portal|Free software}}
+* [[Comparison of file archivers]]
+* [[List of archive formats]]
+* [[Comparison of archive formats]]
+* [[List of portable software]]
+
+==References==
+{{Reflist|2}}
+
+==External links==
+* [http://www.peazip.org PeaZip home page]
+* [http://www.peazip.org/pea-archiving-utility.html Pea archiving utility and PEA file format specifications]
+* [http://code.google.com/p/peazip/ PeaZip on Google Code]
+
+{{Compression Software Implementations}}
+{{Archive formats}} &lt;!-- for PEA native archive format --&gt;
+{{FOSS}}
+
+{{DEFAULTSORT:Peazip}}
+[[Category:Free data compression software]]
+[[Category:Free file managers]]
+[[Category:Free software programmed in Pascal]]
+[[Category:Windows compression software]]
+[[Category:Portable software]]
+
+[[de:PeaZip]]
+[[es:PeaZip]]
+[[fa:PeaZip]]
+[[fr:PeaZip]]
+[[it:PeaZip]]
+[[nl:PeaZip]]
+[[no:PeaZip]]
+[[pl:PeaZip]]
+[[pt:Peazip]]
+[[ru:PeaZip]]
+[[simple:PeaZip]]
+[[fi:PeaZip]]
+[[zh:Peazip]]</rev></revisions></page></pages></query></api>

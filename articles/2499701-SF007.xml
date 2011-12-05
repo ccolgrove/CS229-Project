@@ -1,0 +1,128 @@
+<?xml version="1.0"?><api><query><pages><page pageid="2499701" ns="0" title="OpenOffice.org Calc"><revisions><rev xml:space="preserve">{{original research|date=September 2011}}
+{{Notability|date=September 2011}}
+{{Infobox software
+| name                   = OpenOffice.org Calc
+| logo                   = [[Image:OOoCalc.png|52px]]
+| screenshot             = [[Image:OpenOffice.org Calc.png|300px]]
+| caption                = Screenshot of OpenOffice.org Calc
+| collapsible            =
+| developer              = [[Oracle Corporation]] in association with the Open Source community
+| status                 = Active
+| latest release version = 3.3
+| latest release date    = {{Release date and age|2011|01|25}}
+| operating system       = [[Cross-platform]]
+| genre                  = [[Spreadsheet]]
+| license                = [[GNU Lesser General Public License]]
+| website                = [http://www.openoffice.org/product/calc.html www.openoffice.org]
+}}
+[[Image:OOoCalc22.png|250px|thumb]]
+
+[[Image:OpenOffice.org Calc in Mac OS X.jpg|300px|right|thumb|OpenOffice.org Calc running on Mac OS X]]
+'''OpenOffice.org Calc''' is the [[spreadsheet]] component of the [[OpenOffice.org]] software package.
+
+Calc is similar to [[Microsoft Excel]], with a roughly equivalent range of features. Calc is capable of opening and saving most spreadsheets in Microsoft Excel file format. It provides a number of features not present in Excel, including a system that automatically defines series for graphing based on the layout of the user's data. Calc is also capable of writing spreadsheets directly as [[PDF]] files.
+
+The default [[file format]] for OpenOffice.org Calc (versions 2.x and 3.x) can be set to either Microsoft Excel's native file format or the international standard [[OpenDocument|OpenDocument Format]] (ODF) [[International Organization for Standardization|ISO]]/[[International Electrotechnical Commission|IEC]] 26300:2006. Calc also supports a wide range of other file formats, for both opening and saving files, such as [[Comma-separated values|CSV]], [[HTML]], [[OpenOffice.org XML|SXC]], [[dBase|DBF]], [[Data Interchange Format|DIF]], [[Uniform Office Format|UOF]], [[SYmbolic LinK (SYLK)|SLK]], [[StarOffice|SDC]] and others.&lt;ref name=&quot;file-formats&quot;&gt;[http://wiki.services.openoffice.org/wiki/Documentation/OOo3_User_Guides/Getting_Started/File_formats  File formats OOo can open, December 1, 2008]&lt;/ref&gt;
+
+As with the entire OpenOffice.org suite, Calc can be used across a variety of platforms, including [[Mac OS X]], [[Microsoft Windows]], [[Linux]], [[FreeBSD]] and [[Solaris (operating system)|Solaris]]. Available under the [[GNU Lesser General Public License]], Calc is [[free software]].
+
+==Special capabilities==
+Capabilities of Calc include:
+*[[Open source software]]
+*Available on many platforms, including Windows, MacOS, Linux, Unix, etc.
+*Ability to read/write OpenDocument (ODF), Excel (XLS), CSV, and several other formats.
+*Support for a large number of functions, including those for imaginary numbers, as well as financial and statistical functions.
+*Additional capabilities are easily added as ''extensions'', which includes such capabilities as being able to call functions from the R statistical package, calculations based upon textual representations of number, database access, and use of external BI tools
+
+==Missing features==
+In some cases, Calc lacks a [[Wizard (software)|GUI wizard]] to access certain advanced features associated with competing products, such as statistical capabilities like [[error bar]] support on graphs, and polynomial [[regression analysis]]. However, many of these calculations can be performed by manually entering the functions and relationships, plus a few macros. Another [[Free and open source software|FOSS]] application called [[Gnumeric]] provides easier access to these [[statistical analysis]] features by presenting them to users with a [[Wizard (software)|wizard]].
+
+==DataPilot==
+The feature ''DataPilot'' provides similar functionality to that of [[Pivot table]] found in [[Microsoft Excel]]. It is used for interactive table layout and dynamic data analysis. Unlike Excel, however, OpenOffice.org does not support [[Pivot chart]]s.
+
+With OpenOffice.org 2.0, the DataPilot feature has added support of '''Page fields''' - you can sort data on their fields.
+
+==In comparison to Microsoft Excel==
+''See also the [[Comparison of spreadsheets]] article''.
+
+{{Inappropriate tone|date=April 2011}}
+* Very simple copy a table out of a web site, paste into an empty spreadsheet, and then sum up numbers does not work, as Calc implicitly stores the pasted numbers into text fields not usable for calculation.
+
+* the GUI does not show the very important functions, like SUM, in the default view.
+
+*An advantage of Calc over Excel is that it ''directly'' uses metrics when defining the width of a cell or column, or the height of a cell or row. This number can be expressed in either cm, mm, inches, [[Pica (typography)|picas]] or [[point (typography)|points]].
+
+*Calc also has some additional functions, like EASTERSUNDAY, which works most years. Other ones, like DAYS and YEARS (which calculate date differences) can be replaced by Excel's DATEDIF function.&lt;ref&gt;http://office.microsoft.com/en-us/help/HA011609811033.aspx&lt;/ref&gt;
+
+*Calc fully supports the conditional formatting of Excel 97-2003, but it supports neither the changes implemented from the 2007 version of [[Microsoft|Microsoft's]] software, nor the &quot;data bars&quot; that can be associated to specific cells.
+
+*Unlike Microsoft's product (even Excel 2010), Calc offers a more sophisticated function wizard, that lets the user ''navigate'' through ''nested'' formulas. This feature is particularly useful when working with some complex sheets, to [[debugging|debug]] [[nested function]]s.
+
+*It is possible in Calc to undo the &quot;Delete Sheet&quot; operation, which Excel is incapable of.
+
+*Although Calc offers a feature similar to Excel's PivotTables (called DataPilot), it doesn't have an equivalent for PivotCharts, which somewhat limits the possibility to share spreadsheets between these applications when used for data analysis.
+
+*OpenOffice also allows users to save files in the .dbf (the old dBASE database file) format, support for which has been removed from Excel 2007. Although the .dbf is a legacy format, some programs (e.g. ESRI's ArcGIS) use the .dbf as the basis for handling all spreadsheet data. OpenOffice allows you to directly edit and save changes to GIS spreadsheet files, while Excel only offers import of .dbf files to be saved in a different format.
+
+*Calc does not have any add-ins for real-time stock quotes. However, live streaming financial data can be provided with two commercial packages for [[Mathematica]], CalcLink&lt;ref&gt;[http://www.lauschkeconsulting.com/calclink.html CalcLink] Lauschke Consulting&lt;/ref&gt; and DDFLink.&lt;ref&gt;[http://www.lauschkeconsulting.com/ddfplus.html DDFLink] Lauschke Consulting&lt;/ref&gt;
+
+*Calc did not have the &quot;Solver&quot; add-in until version 3.0, while Excel has had this since Office 97 as an add-in&lt;ref&gt;{{cite web|url=http://hadm.sph.sc.edu/courses/J716/SolverInstall.html | title=Installing Microsoft Excel's Solver | publisher=University of South Carolina}}&lt;/ref&gt;.  However, the solver function in Calc (3.0) is limited in the types of functions which allow convergance. 
+
+*In relation to [[macro (computer science)|macros]], Calc's BASIC functions are basically like those of its competitor, although it lacks a few of them, like ''InStrRev'' (which reversely looks up a substring within a string). Calc's [[object model]] however, is rather different from Excel's, and it doesn't support the easy-editing feature of Microsoft's product, via the object.property or object.procedure (object.[[method (computer science)|method]]) &quot;smart&quot; characteristic (inherited from the [[Visual Studio]] programming environment).
+
+*Calc doesn't have XLM macros that are embedded in Excel.
+
+*Calc (unlike Excel) can use [[Python (programming language)|Python]], [[JavaScript]], [[C++]] and [[CLI]] as additional macro languages.
+
+*Calc supports use of [[regular expression]]s in find and replace operations, whereas Excel only supports limited [[wildcard character|wildcard]] searching.
+
+* Both Calc and Excel support the use of [[complex numbers]].
+
+* Calc will omit native macros when saving in .xls format
+
+==See also==
+{{Portal|Free software}}
+*[[Comparison of office suites]]
+*[[InrecoLan FuzzyMath]]
+*[[List of spreadsheets]]
+*[[Comparison of spreadsheets]]
+
+==References==
+{{Reflist}}
+
+==External links==
+{{Commons category}}
+*[http://www.openoffice.org/product/calc.html Calc information page]
+*[http://sc.openoffice.org/ OpenOffice.org Spreadsheet Project]
+*[http://documentation.openoffice.org/faqs/spreadsheet/index.html Spreadsheet FAQ]
+*[http://wiki.services.openoffice.org/wiki/Documentation/How_Tos Official OpenOffice Documentation Wiki. Select any of the Calc sections]
+*[http://www.openofficeschool.org/calc Free lessons for OpenOffice.org Calc]
+*[http://www.lauschkeconsulting.com/calclink.html CalcLink (a bi-directional link between Calc and Mathematica)]
+
+{{Spreadsheets}}
+{{OpenOffice.org}}
+
+{{DEFAULTSORT:Openoffice.Org Calc}}
+[[Category:OpenOffice.org|Calc]]
+[[Category:Free spreadsheet software]]
+[[Category:Spreadsheet software]]
+[[Category:Free cross-platform software]]
+
+[[ar:Ø£ÙØ¨Ù Ø£ÙÙÙØ³.Ø£ÙØ±Ø¬ ÙØ§ÙÙ]]
+[[ca:OpenOffice.org Calc]]
+[[cs:OpenOffice.org Calc]]
+[[da:OpenOffice.org Calc]]
+[[es:OpenOffice.org Calc]]
+[[fr:OpenOffice.org Calc]]
+[[it:OpenOffice.org Calc]]
+[[nl:OpenOffice.org Calc]]
+[[no:OpenOffice.org Calc]]
+[[nn:OpenOffice.org Calc]]
+[[pl:OpenOffice.org Calc]]
+[[pt:Calc]]
+[[ru:OpenOffice.org Calc]]
+[[simple:OpenOffice.org Calc]]
+[[sk:OpenOffice.org Calc]]
+[[uk:OpenOffice.org Calc]]
+[[vi:OpenOffice.org Calc]]
+[[zh:OpenOffice.org Calc]]</rev></revisions></page></pages></query></api>

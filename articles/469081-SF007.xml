@@ -1,0 +1,95 @@
+<?xml version="1.0"?><api><query><pages><page pageid="469081" ns="0" title="Synaptic (software)"><revisions><rev xml:space="preserve">{{refimprove|date=December 2010}}
+{{Infobox software
+| name                   = Synaptic Package Manager
+| logo                   = [[Image:Synaptic.png]]
+| screenshot             = [[Image:Synaptic screenshot.png|300px]]
+| caption                = Synaptic 0.62
+| developer              = Alfredo Kojima, Gustavo Niemeyer and Michael Vogt
+| latest release version = 0.70
+| latest release date    = {{release date and age|2010|12|06}}
+| operating system       = [[Debian]] and other distributions using [[Advanced Packaging Tool|APT]]
+| genre                  = [[Package management system|Package manager]]
+| license                = [[GNU General Public License|GNU GPL]]
+| website                = http://www.nongnu.org/synaptic/
+}}
+'''Synaptic''' is a [[computer program]] which is a [[GTK+]] [[graphical user interface]] front-end to the [[Advanced Packaging Tool]] for the [[Debian]] package management system. Synaptic is usually used on systems based on [[Deb (file format)|deb]] packages but can also be used on systems based on [[RPM Package Manager|RPM]] packages. It can be used to install, remove and upgrade software packages and to add [[Software repository|repositories]].
+
+==Features==
+* Install, remove, upgrade and downgrade single and multiple packages
+* System-wide upgrade
+* Package search utility
+* Manage package repositories
+* Find packages by name, description and several other attributes
+* Select packages by status, section, name or a custom filter
+* Sort packages by name, status, size or version
+* Browse available online documentation related to a package
+* Download the latest changelog of a package
+* Lock packages to the current version
+* Force the installation of a specific package version
+* Undo/Redo of selections
+* Built-in terminal emulator for the package manager
+
+It also has the following features for [[Debian]] and [[Ubuntu (operating system)|Ubuntu]] only:
+* Configure packages through the debconf system
+* [[Xapian]]-based fast search
+* Get screenshots from screenshots.debian.net
+
+==Usage==
+The package manager enables the user to install, to upgrade or to remove software packages.  To install a package a user must search for the program they want and mark it for installation.  Changes are not applied instantly; the user must first mark all changes and then apply them.
+
+==History==
+Synaptic development was funded by [[Conectiva]], which asked [[Alfredo Kojima]], then an employee, to write a graphical frontend for APT, continuing the work initiated with the creation of the APT RPM backend, [[apt-rpm]]. Eventually Synaptic became used in Conectiva's install process. Gustavo Niemeyer also worked on it, while working for Conectiva. It is now maintained by Michael Vogt.
+
+==Alternatives==
+{{Main|Ubuntu Software Center}}
+In October 2009, when the Ubuntu Software Center became available, Synaptic and other utilities were to be replaced by the Ubuntu Software Center in an unspecified future version of Ubuntu.&lt;ref name=&quot;UbuntuWiki&quot;&gt;{{cite web|url = https://wiki.ubuntu.com/SoftwareCenter|title = SoftwareCenter|accessdate = 2011-03-03|last = [[Canonical Ltd.]]|authorlink = |year = 2009|month = September}}&lt;/ref&gt; In Ubuntu 11.10 Oneiric Ocelot, Synaptic has been removed from the default installation, but remains available as a package in the repository. &lt;ref name=&quot;Webupd8&quot;&gt;{{cite web|url = http://www.webupd8.org/2011/06/synaptic-removed-from-ubuntu-1110-deja.html|title = Synaptic removed from Ubuntu 11.10|accessdate = 2011-06-23|last = |authorlink = |year = 2011|month = June}}&lt;/ref&gt;
+
+When one installs a new package, [[Aptitude (software)|Aptitude]], like Synaptic, automatically installs required packages (called ''dependencies''). But when one removes a manually installed package, Aptitude also has the ability to remove the no-longer-used  packages that were automatically installed.
+
+==See also==
+{{Portal|Free software}}
+*[[AppStream]]
+*[[PackageKit]]
+*[[KPackage]]
+
+==References==
+{{Reflist}}
+
+==External links==
+* {{official|http://www.nongnu.org/synaptic/}}
+* [https://help.ubuntu.com/community/SynapticHowto Synaptic in help.ubuntu.com, including the improvements].
+
+{{DEFAULTSORT:Synaptic (Software)}}
+[[Category:Dpkg]]
+[[Category:Linux PMS graphical front-ends]]
+[[Category:Free package management systems]]
+[[Category:Linux package management-related software]]
+
+[[ar:Ø³ÙÙØ§Ø¨ØªÙ (Ø¨Ø±ÙØ§ÙØ¬)]]
+[[ast:Synaptic]]
+[[bs:Synaptic]]
+[[ca:Synaptic]]
+[[de:Synaptic]]
+[[es:Synaptic]]
+[[eo:Synaptic]]
+[[fr:Synaptic]]
+[[ko:ìëí± ê¾¸ë¬ë¯¸ ê´ë¦¬ì]]
+[[hr:Synaptic]]
+[[it:Synaptic]]
+[[hu:Synaptic]]
+[[nl:Synaptic]]
+[[ja:Synaptic]]
+[[no:Synaptic]]
+[[pl:Synaptic]]
+[[pt:Synaptic]]
+[[ru:Synaptic]]
+[[simple:Synaptic Package Manager]]
+[[sk:Synaptic]]
+[[sr:Ð¡Ð¸Ð½Ð°Ð¿ÑÐ¸Ðº]]
+[[sh:Synaptic]]
+[[fi:Synaptic]]
+[[sv:Synaptic]]
+[[th:Synaptic]]
+[[tr:Synaptic]]
+[[uk:Synaptic]]
+[[zh:Synaptic]]</rev></revisions></page></pages></query></api>

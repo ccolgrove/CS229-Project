@@ -1,0 +1,66 @@
+<?xml version="1.0"?><api><query><pages><page pageid="6643091" ns="0" title="Debian Almquist shell"><revisions><rev xml:space="preserve">{{primarysources|date=June 2010}}
+{{Infobox Software
+| name                   = Debian Almquist shell
+| logo                   =
+| developer              =
+| status                 =
+| latest release version = 0.5.7
+| latest release date    = {{release date|2011|07|08}}
+| latest preview version =
+| latest preview date    =
+| operating system       =
+| size                   =
+| programming language   =
+| genre                  = [[POSIX]]-compliant [[Unix shell]]
+| license                = [[BSD license]], [[GNU General Public License]]
+| website                = http://gondor.apana.org.au/~herbert/dash/ 
+}}
+
+The '''Debian Almquist shell''' ('''dash''') is a [[Unix shell]], much smaller than [[Bash (Unix shell)|bash]] but still aiming at [[POSIX]]-compliancy. It requires less disk space but is also less [[feature-rich]].
+
+== History ==
+
+Dash is a direct descendant of the [[NetBSD]] version of the [[Almquist shell]] (ash). It was ported to [[Linux]] by [[Herbert Xu]] in early 1997. It was renamed to ''dash'' in 2002.
+
+Dash, like ash, executes [[shell script]]s faster than [[Bash (Unix shell)|bash]] and depends on fewer libraries. It is believed&lt;ref&gt;http://packages.debian.org/dash&lt;/ref&gt; to be more reliable in the case of upgrade problems or disk failures. dash may be used as a:
+
+* shell on installation [[floppy disk]]s
+* root user shell
+* /bin/sh replacement
+* testing environment for shell scripts to verify their compatibility with POSIX syntax
+
+Dash is a modern replacement for ash in [[Debian]] and was expected to be the default /bin/sh for Debian Lenny.&lt;ref&gt;[http://release.debian.org/lenny/goals.txt Release goals for Debian Lenny]&lt;/ref&gt;&lt;ref&gt;[http://lists.debian.org/debian-devel-announce/2008/04/msg00002.html Release Update: architecture status, release goal status, BSPs]&lt;/ref&gt; Dash has been the default /bin/sh in [[Ubuntu (operating system)|Ubuntu]] since the 6.10 release in October 2006.&lt;ref&gt;[https://wiki.ubuntu.com/DashAsBinSh Dash as /bin/sh in Ubuntu 6.10]&lt;/ref&gt; During the transition by Ubuntu, numerous scripts making use of [[Bash (Unix shell)|Bash]]-specific functionality (but not declaring it) were discovered.&lt;ref&gt;[https://bugs.launchpad.net/ubuntu/+source/dash/+bug/61463 Ubuntu bug #61463: script that are using bash could be broken with the new symlink]&lt;/ref&gt;&lt;ref&gt;[https://bugs.launchpad.net/ubuntu/+source/dash/+bug/141481 Ubuntu bug #141481: dash as #!/bin/sh introduces countless incompatibilities]&lt;/ref&gt; To avoid errors, Bash-specific scripts can be modified to be compatible with the appropriate standard, or explicitly declare their use of [[Bash (Unix shell)|bashisms]] by explicitly setting the interpreter to bash via the [[Shebang (Unix)|shebang]] line: &lt;code&gt;#!/usr/bin/env bash&lt;/code&gt;.
+
+==References==
+{{Portal|free software}}
+
+{{Reflist|2}}
+
+==External links==
+
+* [http://gondor.apana.org.au/~herbert/dash/ Dash home]
+* [http://packages.debian.org/stable/dash Debian package overview]
+* [http://bugs.debian.org/cgi-bin/pkgreport.cgi?users=debian-release@lists.debian.org&amp;tag=goal-dash Debian bugs tagged goal-dash]
+* Dash as default /bin/sh in [http://wiki.debian.org/DashAsBinSh Debian],  [https://launchpad.net/distros/ubuntu/+spec/dash-as-bin-sh Ubuntu]
+* [http://www.spinics.net/lists/dash/ Dash mailing list archive]
+* [http://wiki.debian.org/Shell Shells in Debian]
+
+{{Debian}}
+{{Unix Shells}}
+
+{{DEFAULTSORT:Debian Almquist Shell}}
+[[Category:Debian]]
+[[Category:Unix shells]]
+[[Category:Ubuntu (operating system)]]
+
+
+{{Unix-stub}}
+
+[[ca:Debian Almquist shell]]
+[[cs:Debian Almquist shell]]
+[[el:ÎÎ­Î»ÏÏÎ¿Ï Almquist ÏÎ¿Ï Debian]]
+[[es:Debian Almquist Shell]]
+[[fr:Debian Almquist shell]]
+[[it:Debian Almquist shell]]
+[[ja:Debian Almquist shell]]
+[[ru:Debian Almquist shell]]</rev></revisions></page></pages></query></api>

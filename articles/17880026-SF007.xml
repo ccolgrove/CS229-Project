@@ -1,0 +1,104 @@
+<?xml version="1.0"?><api><query><redirects><r from="GImageX" to="Windows Imaging Format" /></redirects><pages><page pageid="3632045" ns="0" title="Windows Imaging Format"><revisions><rev xml:space="preserve">{{Infobox file format
+| name         = WIM image format
+| extension    = &lt;tt&gt;.wim .swm&lt;/tt&gt;
+| mime         = 
+| genre        = [[Disk image]]
+| containerfor = 
+| containedby  = 
+| owner        = [[Microsoft]]
+| extendedfrom = 
+| extendedto   = 
+| magic        = &lt;code&gt;MSWIM\0\0&lt;/code&gt;
+}}
+The '''Windows Imaging Format (WIM)''' is a [[Computer file|file]]-based [[disk image]] [[file format|format]]. It was developed by [[Microsoft]] to deploy Windows Vista and all later Windows [[operating system]] releases, which use it as part of their standard installation procedure.  It works equally well with older versions of Windows however, and is used as part of [[Windows Fundamentals for Legacy PCs]].
+
+==Design==
+Like other [[disk image]] formats, a WIM file contains a set of files and associated [[filesystem]] [[metadata]]. However, unlike [[Disk sector|sector]]-based formats (such as [[ISO image|&lt;tt&gt;.ISO&lt;/tt&gt;]], &lt;tt&gt;.CUE&lt;/tt&gt;/&lt;tt&gt;.BIN&lt;/tt&gt; used for CD and DVD images), WIM is file-based, which means that the smallest unit of information is a [[Computer file|file]]. The primary advantages of it being file-based include hardware independence and [[single-instance storage]] of a file referenced multiple times in the filesystem tree.
+
+Although the architecture is file-based, the files are stored inside a single WIM database, reducing the [[Server Message Block|SMB]] overhead of opening and closing many individual files at that end of the data transfer.  The cost of reading or writing many thousands of individual files on the local disk is negated by hardware and software-based [[disk buffer|disk caching]] as well as sequential reading and writing of the data.
+
+WIM images need to be deployed to an existing [[Volume (computing)|volume]] or [[Disk partitioning|partition]] as the toolset does not create low-level disk structures such as [[disk partitioning|partitions]], nor does it [[disk formatting|format]] them.  Microsoft provides a [[command-line interface|command-line]] tool called &lt;tt&gt;[[diskpart]]&lt;/tt&gt; for creating and formatting new volumes.
+
+WIM files can contain multiple disk images, which are referenced either by their numerical index or by their unique name.  Due to the use of [[single instance storage]], the more each successive disk image has in common with previous images added to the WIM file, the less new data will be added. A WIM can also be split (spanned) into multiple parts, which have the &lt;tt&gt;.swm&lt;/tt&gt; extension.
+
+==ImageX==
+'''ImageX''' is the command-line tool used to create, edit and deploy [[Microsoft Windows|Windows]] disk images in the Windows Imaging Format. It is distributed as part of the free [[Windows Automated Installation Kit]] (WAIK). Starting with [[Windows Vista]], Windows Setup uses the WAIK API to install fresh as well as cloned installation of Windows.
+
+The first developed prototype of ImageX was build 6.0.4007.0 (main.030212-2037). It allowed Microsoft OEM Partners to experiment with the imaging technology and was developed in parallel with Longhorn alpha prototypes. It was first introduced in Milestone 4 into the Longhorn project, and used in later builds of Longhorn. Build 6.0.5384.4 added significant advantages over previous versions, like read-only and read/write folder mounting capabilities, splitting to multiple image files (SWM), a WIM filter driver and the latest [[LZX|LZX compression]] algorithms. It has been used since pre-RC (release candidates) of Windows Vista.
+
+==DISM==
+The Deployment Image Service and Management Tool is used to retrieve or modify information within an image.
+
+&lt;br /&gt;Example usage:
+
+'''mount image'''&lt;br /&gt;
+dism /mount-wim /wimfile:c:\win7\sources\boot.wim /index:1 /mountDir:c:\temp2
+
+'''which drivers are included?'''&lt;br /&gt;
+dism /image:c:\temp2 /get-Drivers
+
+'''add drivers'''&lt;br /&gt;
+dism /image:c:\temp2 /add-driver /driver:C:\dell\drivers\r191214\nvdm.inf
+
+'''unmount image'''&lt;br /&gt;
+dism /unmount-wim /mountdir:c:\temp2 /commit
+
+'''OTHER DISM COMMANDS'''&lt;br /&gt;
+/mount-wim&lt;br /&gt;
+
+/set-edition &lt;br /&gt;
+
+/set-productKey&lt;br /&gt;
+
+/apply-unattend&lt;br /&gt;
+
+/cleanup-wim&lt;br /&gt;
+
+/add-driver&lt;br /&gt;
+
+/remove-driver&lt;br /&gt;
+
+/set-uilang&lt;br /&gt;
+
+/set-setupuilang&lt;br /&gt;
+
+/add-package&lt;br /&gt;
+
+/remove-package&lt;br /&gt;
+
+/enable-feature&lt;br /&gt;
+
+/disable-feature&lt;br /&gt;
+
+==Customizing images==
+
+A WIM image can also be mounted as a new [[Volume (computing)|volume]] under Windows with a [[drive letter assignment|drive letter]] associated in order to facilitate easier extraction or updating of its contents.  (For example, a WIM image can be converted into an [[ISO image]] using this approach).  A [[device driver]] named WimFltr.sys needs to be loaded before a WIM image can be mounted using ImageX however.
+
+A set of public APIs for manipulating WIMs have also been released, with the required functionality contained in WIMGAPI.DLL, thereby allowing developers to write their own tools too.  A number of third party applications have therefore included the capability to read or write WIM files.  
+
+WIM images can be made [[booting|bootable]], as is the case with Windows Vista's setup DVD.  In this case, BOOT.WIM contains a bootable version of [[Windows PE]] from which the installation is performed.  Other setup files are contained in the file INSTALL.WIM.
+
+==See also==
+* [[Windows Preinstallation Environment]]
+* [[System Deployment Image]]
+* [[Windows To Go]]
+
+== References ==
+{{Reflist}}
+* [http://download.microsoft.com/download/f/e/f/fefdc36e-392d-4678-9e4e-771ffa2692ab/Windows%20Imaging%20File%20Format.rtf Windows Imaging Format Whitepaper that describes the internal file structure of WIM files]
+* [http://technet.microsoft.com/en-us/library/cc507842.aspx ImageX and WIM Image Format] at [[Microsoft TechNet]] 
+
+{{Disk_images}}
+{{Windows Components}}
+
+[[Category:Archive formats]]
+[[Category:Windows Vista]]
+[[Category:Windows Server 2008]]
+[[Category:Disk images]]
+
+[[de:Windows Imaging Format Archive]]
+[[es:Windows Imaging Format]]
+[[fr:Windows Imaging Format]]
+[[ja:Windows Imaging Format]]
+[[ru:Windows Imaging Format]]
+[[yi:Windows Imaging Format]]</rev></revisions></page></pages></query></api>

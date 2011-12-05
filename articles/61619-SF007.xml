@@ -1,0 +1,100 @@
+<?xml version="1.0"?><api><query><pages><page pageid="61619" ns="0" title="Ghostscript"><revisions><rev xml:space="preserve">{{Infobox software
+| name                   = Ghostscript
+| logo                   = [[File:Ghostscript.svg|150px]]
+| caption                = Ghostscript Logo
+| author                 = [[L. Peter Deutsch]]
+| developer              = [[Artifex Software]]
+| released               = {{Release date and age|1988|8|11}}&lt;ref&gt;{{cite web |url=http://ghostscript.com/doc/current/History1.htm#Version1.0 |title=History of Ghostscript versions 1.n |accessdate=2007-04-10}}&lt;/ref&gt;
+| latest release version = 9.04
+| latest release date    = {{Release date and age|2011|8|8}}
+| operating system       = [[Cross-platform]]
+| genre                  = [[PostScript]] and [[Portable Document Format|PDF]] interpreter
+| license                = [[GNU General Public License]], [[Aladdin Free Public License]]
+| website                = [http://www.ghostscript.com www.ghostscript.com]
+}}
+
+'''Ghostscript''' is a suite of software based on an [[Interpreter (computing)|interpreter]] for [[Adobe Systems]]' [[PostScript]] and [[Portable Document Format]] (PDF) [[page description language]]s.
+
+== Features ==
+
+Ghostscript can be used as a [[raster image processor]] (RIP) for raster [[computer printer]]s&amp;mdash;for instance, as an input filter of [[Berkeley printing system|line printer daemon]]&amp;mdash;or as the RIP engine behind PostScript and PDF viewers.
+
+Ghostscript can also be used as a file format converter, such as PostScript to PDF converter; this is often combined with a PostScript printer driver in &quot;[[virtual printer]]&quot; PDF creators. It also supports [[PDF/A]] and [[PDF/X]]-3.&lt;ref&gt;{{cite web |url=http://www.ghostscript.com/doc/current/Ps2pdf.htm#PDFX |title=ps2pdf: PostScript-to-PDF converter |accessdate=2011-05-22}}&lt;/ref&gt;
+
+As it takes the form of a language interpreter, Ghostscript can also be used as a general purpose programming environment.
+
+Ghostscript has been [[porting|ported]] to many operating systems, including [[Unix]], [[Linux]], [[Mac OS]], [[OpenVMS]], [[Microsoft Windows]], [[MS-DOS]], [[FreeDOS]], [[OS/2]], [[Atari TOS]] and [[AmigaOS]].
+
+== Frontends ==
+
+Several [[graphical user interface]]s have been written for use with Ghostscript which permit a user to view a PostScript or PDF file on screen, scroll, page forward and backward, and zoom the text as well as print single or multiple pages.
+
+* '''Ghostview''' runs under Unix/[[X11]]. Ghostview has an unusual (and arguably counter-intuitive) [[user interface]] feature: dragging the mouse over the image pans the image in the opposite direction (the mouse moves the viewport over the image, rather than the image underneath the viewport). The effect is similar to having invisible [[scroll bar]]s all over the image and is approximately the opposite of panning in [[Google Maps]] and other applications.
+* '''gv''' runs under Unix/X11. gv is a visually improved version of Ghostview. Its behaviour is similar to Ghostview.
+* '''mgv''' runs under Unix/X11. It is a [[Motif (widget toolkit)|Motif]] based front-end to Ghostscript. It features a more conventional user interface, with regular menus, a toolbar, and scrollbars.
+* '''GSview''' runs under [[Microsoft Windows]], [[OS/2]], and [[Unix-like]] operating systems. It is best known for its Windows and OS/2 versions. On UNIX it uses the [[GTK+]] toolkit. Although under a public license, it also employs a [[Nagware|nag screen]] to urge users to register so as to support the development of GSview. The registration fee is [[Australian dollar|A$]]40. The latest version was released in November 2007. The Ghostscript documentation states, concerning its installation under Windows: &quot;After installing Ghostscript, it is strongly recommended that you install the GSview previewer, which provides an easier to use graphical interface for Ghostscript.&quot;&lt;ref&gt;[http://pages.cs.wisc.edu/~ghost/doc/svn/Install.htm#Windows4 Installing Ghostscript on MS Windows]&lt;/ref&gt;
+* '''PDF Blender''' is a cross-platform application that converts and merges documents to and from PostScript and PDF formats.
+* '''Moonshiner''' is a graphical front-end for using Ghostscript to convert from PostScript to PDF, aiming to be a Linux work-alike for [[Adobe Acrobat|Adobe's Distiller.]]
+* '''KGhostView''' runs under  Unix/X11. It is KDE3 port of Ghostview.
+* '''Okular''' runs under  Unix/X11 and [[Microsoft Windows]] (using KDE4 for Windows). It is a KDE4 application.
+* '''[[PDFcreator]]''' runs under [[Microsoft Windows]] and creates a local printer
+
+== History ==
+
+Ghostscript was originally written by [[L. Peter Deutsch]] in [[1986]] for the [[GNU Project]], and released under the [[GNU General Public License]]; later, Deutsch formed Aladdin Enterprises to license Ghostscript under a [[proprietary software license|proprietary license]]. Ghostscript is currently owned by Artifex Software and maintained by
+Artifex Software employees and the worldwide user community. The current version of Ghostscript is again available under [[GNU General Public License|GPL]] but Ghostscript can be also licensed
+for use in proprietary projects for a fee.
+
+== Variants ==
+
+* '''GPL Ghostscript''' is the canonical variant available under the [[GNU General Public License]], which is a [[free software license]]. Before June 2006, the leading edge of Ghostscript development was distributed as '''AFPL Ghostscript''' (formerly named '''Aladdin Ghostscript''') under the [[Aladdin Free Public License]], which restricts commercial use. AFPL Ghostscript is now abandoned.&lt;ref&gt;[http://www.advogato.org/person/raph/diary.html?start=411 Advogato: Blog for raph&lt;!-- Bot generated title --&gt;]&lt;/ref&gt;
+* '''GNU Ghostscript''' is part of the [[GNU project]] and is now derived from GPL Ghostscript.
+* '''ESP Ghostscript''' was distributed by [[Easy Software Products]] under the GPL. It was based on GPL Ghostscript and contains several modifications to improve compatibility with ESP's [[Common Unix Printing System]]. This version is no longer developed, since it was merged with GPL Ghostscript.&lt;ref&gt;[http://www.cups.org/articles.php?L484 Article #484: The Grand Unified Ghostscript Officially Released: GPL Ghostscript 8.60 - Common UNIX Printing System&lt;!-- Bot generated title --&gt;]&lt;/ref&gt;
+* '''Ghostscript''' is the current commercial proprietary version licensed by Artifex Software for inclusion in [[proprietary software|closed-source]] products.
+
+The GPL version is also used as the basis for a '''Display Ghostscript''', which adds the functionality needed to fully support [[Display PostScript]].
+
+== Free fonts ==
+There are two sets of [[free software|free]] fonts supplied for Ghostscript:&lt;ref&gt;{{cite web |url=http://code.google.com/p/ghostscript/source/browse/#svn/trunk/urw-fonts |title=Ghostscript SVN - URW fonts |accessdate=2010-04-21}}&lt;/ref&gt;&lt;ref&gt;{{cite web |url=http://packages.debian.org/sid/gsfonts |title=Debian package - gsfonts |accessdate=2010-04-21}}&lt;/ref&gt;&lt;ref&gt;{{cite web |url=http://www.ghostscript.com/doc/current/Fonts.htm |title=Fonts and font facilities supplied with Ghostscript |accessdate=2010-04-21}}&lt;/ref&gt;&lt;ref&gt;{{cite web |url=http://www.sabi.co.uk/Notes/linuxFonts.html |title=Linux fonts (mostly X11) |date=2009-08-15 |accessdate=2010-04-21}}&lt;/ref&gt;
+* 35 basic [[PostScript fonts#Core Font Set|PostScript fonts]] contributed by URW++ Design and Development Incorporated, of Hamburg, Germany in 1996 under the [[GNU General Public License|GPL]] and [[Aladdin Free Public License|AFPL]].&lt;ref&gt;{{Citation |url=http://www.geocrawler.com/archives/3/378/1996/5/0/2064811/ |archiveurl=http://web.archive.org/web/20021023155414/http://www.geocrawler.com/archives/3/378/1996/5/0/2064811/ |title=Finally! Good-quality free (GPL) basic-35 PostScript Type 1 fonts. |archivedate=2002-10-23 |accessdate=2010-05-06}}&lt;/ref&gt;&lt;ref&gt;{{Citation |url=http://www.tug.org/fonts/deutsch-urw.txt |title=Finally! Good-quality free (GPL) basic-35 PostScript Type 1 fonts. |format=TXT |accessdate=2010-05-06}}&lt;/ref&gt;&lt;ref&gt;{{cite web |url=http://www.tug.org/fonts/ |title=Fonts and TeX |date=2009-12-19 |accessdate=2010-05-06}}&lt;/ref&gt;&lt;ref&gt;{{citation |url=http://www.tug.org/TUGboat/Articles/tb29-1/tb91ludwichowski-fonts.pdf |format=PDF |title=Five years after: Report on international TEX font projects |year=2007 |accessdate=2010-05-06}}&lt;/ref&gt;&lt;ref&gt;{{citation |url=http://mirror.cs.wisc.edu/pub/mirrors/ghost/aladdin/fonts/ghostscript-fonts-std-4.0.tar.gz |title=ghostscript-fonts-std-4.0.tar.gz - GhostScript 4.0 standard fonts - AFPL license |format=TAR.GZ |date=1996-06-28 |accessdate=2010-05-06}}&lt;/ref&gt;&lt;ref&gt;{{citation |url=http://mirror.cs.wisc.edu/pub/mirrors/ghost/aladdin/fonts/ghostscript-fonts-std-6.0.tar.gz |format=TAR.GZ |title=ghostscript-fonts-std-6.0.tar.gz - GhostScript 6.0 standard fonts - GPL license |date=1999-12-22 |accessdate=2010-05-06}}&lt;/ref&gt; It is a full set of Type1 fonts similar to the classic Adobe set: Bookman L ([[Bookman (typeface)|Bookman]]), Century Schoolbook L ([[Century Schoolbook|New Century Schoolbook]]), Chancery L (Zapf Chancery), Dingbats ([[Zapf Dingbats]]), Gothic L (Avant Garde), [[Nimbus Mono L]] ([[Courier (typeface)|Courier]]), [[Nimbus Roman No9 L]] ([[Times Roman|Times]]), [[Nimbus Sans L]] ([[Helvetica]]), Palladio L ([[Palatino]]), Standard Symbols L ([[Symbol (typeface)|Symbol]]).
+* A miscellaneous set including Cyrillic, kana, and fonts derived from the free Hershey fonts, with improvements by Thomas Wolff (such as adding accented characters).
+
+== See also ==
+{{Portal|Free software}}
+
+* [[Common Unix Printing System]]
+* [[Foomatic]]
+* [[PostScript Printer Description]]
+* [[Printer driver]]
+* [[pstoedit]]
+
+== References ==
+
+{{Reflist}}
+
+== External links ==
+* [http://www.ghostscript.com/ Homepage]
+* [http://devlinux.org/deutsch-interview.html 1998 Interview with L. Peter Deutsch on history of Ghostscript project]
+
+[[Category:PostScript]]
+[[Category:Free PDF readers]]
+[[Category:Digital press]]
+[[Category:Cross-platform software]]
+
+[[bg:GhostScript]]
+[[ca:Ghostscript]]
+[[cs:Ghostscript]]
+[[de:Ghostscript]]
+[[es:Ghostscript]]
+[[fr:Ghostscript]]
+[[it:Ghostscript]]
+[[nl:Ghostscript]]
+[[ja:Ghostscript]]
+[[pl:Ghostscript]]
+[[pt:Ghostscript]]
+[[ru:Ghostscript]]
+[[sk:Ghostscript]]
+[[sv:Ghostscript]]
+[[uk:Ghostscript]]
+[[vi:Ghostscript]]
+[[zh:Ghostscript]]</rev></revisions></page></pages></query></api>
