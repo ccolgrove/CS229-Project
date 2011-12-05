@@ -1,5 +1,3 @@
-package take_two;
-
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
@@ -26,7 +24,6 @@ import org.w3c.dom.Text;
 import org.xml.sax.SAXException;
 
 public class XMLParser {
-	private static final String INPUT_DIR = "../../../revhistories/revision_diffs_by_user/";
 	private static final String XML_HEADER = "<?xml version=\"1.0\"?> <!DOCTYPE some_name [ <!ENTITY nbsp \"&#160;\"> ]><api>"; 
 	private static final String XML_FOOTER = "</api>";
 
@@ -34,39 +31,20 @@ public class XMLParser {
 	
 	public XMLParser() {
 	  try {
-    DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
-	  builder = factory.newDocumentBuilder();
+	    DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
+	    builder = factory.newDocumentBuilder();
 	  } catch (ParserConfigurationException e) {
       e.printStackTrace();
 	  }
 	}
 
-	// TODO(jtibs): actually deal with these exceptions
-	public List<Revision> parse(String user) {
-	  try {
-	    List<Revision> revisions = new ArrayList<Revision>();
-
-	    File dir = new File(INPUT_DIR + File.separator + user);
-	    System.out.println(INPUT_DIR);
-	    for (File file : dir.listFiles()) {
-	      //System.err.println(file);
-	      Document document = builder.parse(file);
-	      Revision revision = parseRevision(document);
-	      if (revision != null)
-	        revisions.add(revision);
-	    }
-
-	    return revisions;
-	  } catch (IOException e) {
-	    e.printStackTrace();
-	  } catch (SAXException e) {
-	    e.printStackTrace();
-	  }
-	  return null;
-	}
-
 	/** Parses the given revision diff and returns a Revision representing it */
-	private Revision parseRevision(Document xmlDocument) {
+	public Revision parseRevision(File file) {
+	  Document xmlDocument = null;
+	  try {
+	    xmlDocument = builder.parse(file);
+	  } catch (IOException e) {
+	  } catch (SAXException e) {}
 	  // get information from <page> tag
 	  NodeList nodes = xmlDocument.getElementsByTagName("page");
 	  NamedNodeMap attributes = nodes.item(0).getAttributes();
@@ -115,6 +93,7 @@ public class XMLParser {
 		return date;
 	}
 	
+	/** extracts text content from the given html */
 	private String cleanContent(String content) {
 	  StringBuilder result = new StringBuilder();
     content = XML_HEADER + content + XML_FOOTER;
@@ -153,7 +132,46 @@ public class XMLParser {
 	  } catch (NullPointerException e) {
 	    return null;
 	  }
-	  System.out.println(result.toString());
 	  return result.toString();
+	}
+	
+	public TestDocument parseDocument(File file) {
+	  TestDocument result = new TestDocument();
+	  Document xmlDocument = null;
+    try {
+      xmlDocument = builder.parse(file);
+    } catch (IOException e) {
+    } catch (SAXException e) {}
+    // get information from <page> tag
+    NodeList nodes = xmlDocument.getElementsByTagName("rev");
+    String text = nodes.item(0).getFirstChild().getNodeValue();
+    
+    // parse out infobox and intro
+    int equals = text.indexOf("==");
+    String intro = text.substring(0, equals);
+    int brackets = intro.lastIndexOf("}}");
+    result.paragraphs.add(intro.substring(0, brackets + 2));  // infobox
+    result.paragraphs.add(intro.substring(brackets + 2));  // intro paragraph
+    text = text.substring(equals);
+    
+    while (true) {
+      int i = text.indexOf("==");
+      int j = text.indexOf("===");      
+      if (i == -1 && j == -1) break;
+      
+      String paragraph = null;
+      if (j == -1 || (i != -1 && i < j)) {
+        paragraph = text.substring(0, i);
+        text = text.substring(i + 2);
+      } else {
+        paragraph = text.substring(0, j);
+        text = text.substring(j + 3);
+      }
+      
+      if (paragraph.length() > 40 && ! paragraph.contains("wikitable"))  // TODO: fix this
+        result.paragraphs.add(paragraph);
+    }
+    
+    return result;
 	}
 }
