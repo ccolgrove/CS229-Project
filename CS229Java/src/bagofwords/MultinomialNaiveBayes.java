@@ -90,6 +90,8 @@ public class MultinomialNaiveBayes {
 		CoreLabelTokenFactory factory = new CoreLabelTokenFactory();
 		PTBTokenizer<CoreLabel> ptbt = new PTBTokenizer<CoreLabel>(new StringReader(sentence),
 	              factory, "");
+		
+		int numTokens = 0;
 	    for (; ptbt.hasNext(); ) {
 	    	String label = ptbt.next().originalText();
 	        if (wordProbs.containsKey(label)) {
@@ -97,8 +99,13 @@ public class MultinomialNaiveBayes {
 	        } else {
 	        	logProb += wordProbs.get(UNK_TOKEN);
 	        }
+	        numTokens ++;
 	    }
-	    return logProb;
+	    
+	    if (numTokens > 0)
+	    	return logProb/numTokens;
+	    else
+	    	return Double.NEGATIVE_INFINITY;
 	}
 	
 	public void calculateProbabilities(List<Revision> revisions, List<TestDocument> docs) {
