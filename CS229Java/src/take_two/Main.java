@@ -43,6 +43,9 @@ public class Main {
     // prepare test data
     for (TestDocument document : documents)
       calculateScores(document, revisions);
+    
+    // train + test using leave-one-out cross-validation
+    
   }
 
   /** updates document.scores */
