@@ -45,7 +45,22 @@ public class Main {
       calculateScores(document, revisions);
     
     // train + test using leave-one-out cross-validation
-    
+    MultinomialNaiveBayes classifier = new MultinomialNaiveBayes();
+    for (TestDocument document : documents) {
+      List<Revision> train = new ArrayList<Revision>(revisions);
+      for (Revision revision : revisions) {
+        if (revision.pageId.equals(document.id))
+          train.remove(revision);
+      }
+      
+      classifier.calculateProbabilities(revisions, documents);
+      List<String> prediction = classifier.mostLikelyParagraphs(document);
+      
+      document.orderParagraphs();
+      System.out.println("~~~PREDICTION~~~\n" + prediction);
+      System.out.println("~~~ACTUAL~~~\n" + document.paragraphs.get(0));
+      break;
+    }
   }
 
   /** updates document.scores */
@@ -81,8 +96,7 @@ public class Main {
 
       document.scores.set(index, document.scores.get(index) + 1);
       System.out.println("\n~~~REVISION~~~\n" + revision.content);
-      System.out.println("\n~~~PARAGRAPH~~~\n" + document.paragraphs.get(index));  
+      System.out.println("\n~~~PARAGRAPH~~~\n" + document.paragraphs.get(index));
     }
-
   }
 }
