@@ -16,7 +16,7 @@ import edu.stanford.nlp.process.PTBTokenizer;
 
 public class MultinomialNaiveBayes {
 	
-	public static final double ADD_K = 1;
+	public static final double ADD_ALPHA = 0.1;
 	public static final String UNK_TOKEN = "<UNKNOWN>";
 	
 	public Map<String, Double> wordProbs;
@@ -31,8 +31,8 @@ public class MultinomialNaiveBayes {
 		}
 	}
 	
-	public Map<String, Integer> getWordCounts(List<Revision> revisions, List<TestDocument> documents) {
-		Map<String, Integer> counts = new HashMap<String, Integer>();
+	public Map<String, Double> getWordCounts(List<Revision> revisions, List<TestDocument> documents) {
+		Map<String, Double> counts = new HashMap<String, Double>();
 		
 		CoreLabelTokenFactory factory = new CoreLabelTokenFactory();
 		
@@ -45,7 +45,7 @@ public class MultinomialNaiveBayes {
 		        if (counts.containsKey(label)) {
 		        	counts.put(label, counts.get(label)+1);
 		        } else {
-		        	counts.put(label, 1);
+		        	counts.put(label, 1.0);
 		        }
 		    }
 		}
@@ -57,21 +57,21 @@ public class MultinomialNaiveBayes {
 				for (; ptbt.hasNext(); ) {
 					String label = ptbt.next().originalText();
 			        if (!counts.containsKey(label)) {
-			        	counts.put(label, 0);
+			        	counts.put(label, 0.0);
 			        }
 			    }	
 			}
 		}
 		
-		counts.put(UNK_TOKEN, 0);
+		counts.put(UNK_TOKEN, 0.0);
 		
 		for (String key : counts.keySet()) {
-			counts.put(key, counts.get(key) + 1);
+			counts.put(key, counts.get(key) + ADD_ALPHA);
 		}
 		return counts;
 	}
 	
-	public Map<String, Double> getWordProbs(Map<String, Integer> counts) {
+	public Map<String, Double> getWordProbs(Map<String, Double> counts) {
 		double total = 0;
 		Map<String, Double> probs = new HashMap<String, Double>();
 		for (String key: counts.keySet()) {
@@ -101,8 +101,8 @@ public class MultinomialNaiveBayes {
 	    return logProb;
 	}
 	
-	public void calculateProbabilites(List<Revision> revisions, List<TestDocument> docs) {
-		Map<String, Integer> wordCounts = getWordCounts(revisions, docs);
+	public void calculateProbabilities(List<Revision> revisions, List<TestDocument> docs) {
+		Map<String, Double> wordCounts = getWordCounts(revisions, docs);
 		wordProbs = getWordProbs(wordCounts);
 	}
 	
@@ -145,7 +145,7 @@ public class MultinomialNaiveBayes {
 		documents.add(doc);
 		
 		MultinomialNaiveBayes mnb = new MultinomialNaiveBayes();
-		mnb.calculateProbabilites(revs, documents);
+		mnb.calculateProbabilities(revs, documents);
 		
 		List<String> mostLikely = mnb.mostLikelyParagraphs(doc);
 		
