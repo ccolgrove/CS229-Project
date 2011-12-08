@@ -12,8 +12,8 @@ import java.util.Map;
 public class Main {
   public static final String TEST_DIR = "../../../articles/";
   private static final String TRAIN_DIR = "../../../revhistories/revision_diffs_by_user/";
-  //public static final String USER = "Hammersoft";
-  public static final String USER = "SF007";
+  public static final String USER = "Hammersoft";
+  //public static final String USER = "SF007";
   //public static final String USER = "The_Egyptian_Liberal";
   //public static final String USER = "JerryOrr";
   //public static final String USER = "Tangledorange";
@@ -42,6 +42,7 @@ public class Main {
       if (! name.substring(dash + 1, dot).equals(USER)) 
         continue;
       TestDocument document = parser.parseDocument(file);
+      if (document.paragraphs.size() == 0) continue;
       document.id = name.substring(0, dash);
       documents.add(document);
     }
@@ -77,8 +78,8 @@ public class Main {
           rank = i;
       }
       System.out.println("rank: " + rank);
-      System.out.println("PREDICTED:\n" + predictions.get(0).paragraph);
-      System.out.println("ACTUAL:\n" + actual);
+      //System.out.println("PREDICTED:\n" + predictions.get(0).paragraph);
+      //System.out.println("ACTUAL:\n" + actual);
         
     }
   }
@@ -120,8 +121,8 @@ public class Main {
       }
 
       document.scores.set(index, document.scores.get(index) + 1);
-      //System.out.println("\n~~~REVISION~~~\n" + revision.content);
-      //System.out.println("\n~~~PARAGRAPH~~~\n" + document.paragraphs.get(index));
+      System.out.println("\n~~~REVISION~~~\n" + revision.content);
+      System.out.println("\n~~~PARAGRAPH~~~\n" + document.paragraphs.get(index));
     }
   }
 }

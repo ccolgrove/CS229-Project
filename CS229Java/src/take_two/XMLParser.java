@@ -1,5 +1,3 @@
-package take_two;
-
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
@@ -12,6 +10,8 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.DocumentBuilder;
@@ -111,8 +111,8 @@ public class XMLParser {
 	      if (classNode == null) continue;
 	      String type = classNode.getNodeValue();
 	      
-	      if (type.equals("diff-deletedline") || type.equals("diff-addedline")
-	          || type.equals("diff-context")) {  // if we are interested in this line
+	      if (/*type.equals("diff-deletedline") ||*/ type.equals("diff-addedline")
+	          /*|| type.equals("diff-context")*/) {  // if we are interested in this line
 	        Node div = ((Element) node).getElementsByTagName("div").item(0);
 	        if (div == null) continue;
 	        NodeList divChildren = div.getChildNodes();
@@ -150,12 +150,24 @@ public class XMLParser {
     
     // parse out infobox and intro
     int equals = text.indexOf("==");
-    String intro = text.substring(0, equals);
-    int brackets = intro.lastIndexOf("}}");
-    result.paragraphs.add(intro.substring(0, brackets + 2));  // infobox
-    result.paragraphs.add(intro.substring(brackets + 2));  // intro paragraph
-    text = text.substring(equals);
+    if (equals == -1) {
+      result.paragraphs.add(text);
+      return result;
+    }
     
+    String intro = text.substring(0, equals);
+    
+    Pattern pattern = Pattern.compile("\\{\\{Infobox.*|.*=.*\\}\\}");
+    Matcher matcher = pattern.matcher(intro);
+    
+    if (matcher.matches()) {
+      String infobox = matcher.group();
+      result.paragraphs.add(infobox);
+      intro = intro.substring(matcher.end() + 2);
+    }
+    result.paragraphs.add(intro);
+    
+    // separate out each section
     while (true) {
       int i = text.indexOf("==");
       int j = text.indexOf("===");      
@@ -173,7 +185,7 @@ public class XMLParser {
       if (paragraph.length() > 40 && ! paragraph.contains("wikitable"))  // TODO: fix this
         result.paragraphs.add(paragraph);
     }
-    
+
     return result;
 	}
 }
