@@ -1,156 +1,0 @@
-<?xml version="1.0"?><api><query><pages><page pageid="976641" ns="0" title="ALT Linux"><revisions><rev xml:space="preserve">{{Cleanup|date=January 2009}}
-{{infobox OS
-| name                   = ALT Linux
-| logo                   =
-| screenshot             = [[Image:AltLinux-4.1.png|250px]]
-| caption                = ALT Linux 4.1
-| developer              = ALT Linux Ltd&lt;ref&gt;http://www.altlinux.com&lt;/ref&gt; and ALT Linux Team&lt;ref&gt;http://en.altlinux.org/ALT_Linux_Team&lt;/ref&gt;
-| family                 = [[Unix-like]]
-| source_model           = [[Open source]]
-| released               = {{start date|2001|03|25}}&lt;ref&gt;[http://www.altlinux.org/Releases/History?uselang=en Releases/History - ALT Linux Wiki]{{ru icon}}&lt;/ref&gt;&lt;ref&gt;[http://lists.altlinux.org/pipermail/community/2001-March/203374.html &lt;nowiki&gt;[mdk-re]&lt;/nowiki&gt; I: Linux-Mandrake RE Spring 2001]{{ru icon}}&lt;/ref&gt;
-| latest_release_version = 5.0.2&lt;!-- If you update this, remember to also update [[Comparison of Linux distributions]]--&gt;
-| latest_release_date    = {{release date|2011|01|18}}.&lt;ref&gt;http://www.altlinux.ru/news/archive/2011/01/item/621/&lt;/ref&gt;
-| latest_test_version    = [http://en.altlinux.org/Sisyphus Sisyphus]
-| latest_test_date       = released daily&lt;ref&gt;[http://packages.altlinux.org/en/ packages.altlinux.org] tracks the daily development.&lt;/ref&gt;
-| language               = Multilingual (but installation process only in [[English language|English]], [[Russian language|Russian]], [[Ukrainian language|Ukrainian]]&lt;ref&gt;[ftp://ftp.altlinux.ru/pub/distributions/ALTLinux/4.0/Desktop/4.0.3/iso/ Desktop 4.0.3 installation CD images] in 3 languages.&lt;/ref&gt;)
-| kernel_type            = [[Monolithic kernel|Monolithic]] ([[Linux kernel|Linux]])
-| ui                     = [[Bash (Unix shell)|bash]]; [[KDE Plasma Desktop]] (in ''Desktop''), [[Xfce]] (in ''Desktop Lite'')
-| working_state          = Current
-| website                = http://www.altlinux.com/
-| supported_platforms    = [[IA-32]], [[x86-64]]
-| updatemodel            = [[apt-rpm]]
-| package_manager        = [[RPM Package Manager|RPM]]
-}}
-'''ALT Linux''' is a set of [[RPM Package Manager|RPM]]-based operating systems built on top of the [[Linux kernel]] and Sisyphus&lt;ref&gt;http://en.altlinux.org/Sisyphus&lt;/ref&gt; packages repository. ALT Linux is developed jointly by ALT Linux Team developers community and ALT Linux Ltd.
-
-== History ==
-
-ALT Linux Team arose from the merger of IPLabs Linux Team and Linux community of the Institute of Logic, Cognitive Science and Development of Personality.&lt;ref&gt;http://howsoftwareisbuilt.com/2009/02/25/interview-with-alexey-rusakov-project-manager-alt-linux/&lt;/ref&gt; The latter cooperated with [[Mandrake Linux]] and [[SUSE Linux distributions|SUSE]] teams to improve localization (specifically Cyrillic), producing a Linux-Mandrake Russian Edition (RE).
-
-At some point, Mandrake and Mandrake RE became in fact different distributions and thus the decision was made to create a separate project. The name ALT was coined, which is a recursive acronym meaning &quot;ALT Linux Team&quot;.
-
-The split led to the creation of the Sisyphus package repository, which is an unstable branch of the ALT Linux development.
-
-In 2007, the Sisyphus repository won a prestigious CNews award in nomination for Information Security.&lt;ref&gt;[http://awards.cnews.ru/2007/#6 CNews award 2007 results]&lt;/ref&gt;
-
-== Releases&lt;ref&gt;http://www.altlinux.org/Releases/History&lt;/ref&gt; ==
-{{Expand section|descriptions of distribution variants|date=June 2008}}
-
-=== Linux-Mandrake ===
-
-''Linux-Mandrake 7.0 Russian Edition'', released in the beginning of 2000, was the first de facto independent distribution of IPLabs Linux Team. It kept the name ''Mandrake'' with permission from Mandrake developers.
-
-''Spring 2001'' was the second IPLabs Linux team release, released several months later.
-
-=== ALT Linux 1.* ===
-
-Since the summer of 2001 ALT Linux Team has been formed and ALT Linux name has been established.
-
-First ALT Linux release was ''ALT Linux Junior 1.0'', released in summer of 2001, followed by the updated ''ALT Linux Junior 1.1'' in autumn of 2001.
-
-Junior distributions were 1CD releases.
-
-=== ALT Linux 2.* ===
-
-''ALT Linux Master 2.0'', released in May 2002, was the 4CD all-purpose Linux distribution targeted for software developers and system administrators.
-
-''ALT Linux Junior 2.0'' was released in summer of 2002, as an 1CD desktop/workstation-oriented release.
-
-=== ALT Linux 3.0 ===
-ALT Linux Compact 3.0 was released during autumn 2005, and consisted of 1CD/1DVD installable versions along with LiveCD (TravelCD 3.0). There were several subsequent OEM updates counting up to 3.0.5.
-
-=== ALT Linux 4.0 ===
-These series changed the official naming somewhat to be Â«ALT Linux 4.0 $flavourÂ».
-* Server was released in June 2007 (1CD+1DVD per platform; i586 and x86_64);
-* Office Server quickly followed (1CD; i586 and x86_64);
-* Desktop Personal in August 2007 (1DVD, LiveCD, Rescue CD; i586; KDE3);
-* Lite in December 2007 (installation CD, live CD and 2CD with addons; i586; XFCE4);
-* Terminal in December 2007 (joint release with [[:ru:Media Magic|Media Magic Ltd]], 1DVD; i586; KDE3, low client RAM requirements).
-
-There was also a more conservative Â«school 4.0 branchÂ» maintained for Russian schools pilot project, and several distributions specifically tailored for schools released using that as a base.
-
-=== ALT Linux 4.1 ===
-* Desktop was released in October 2008 (1CD/1DVD; i586 and x86_64; KDE3);
-* Children in December 2008 (LiveCD; i586);
-* Skif in December 2008 (1CD; x86_64; HPC);
-* School Server in February 2009 (1CD; i586).
-
-=== ALT Linux 5.x ===
-5.0 branch was canceled&lt;ref&gt;http://en.altlinux.org/Stable_branches&lt;/ref&gt; mainly due to stormy X.org conditions (and subsequently archived); 5.1 community branch was created along with p5 Â«conservativeÂ» branch later in 2009. Somewhat confusingly, distributions based on p5/branch were numbered as ALT Linux 5.0:
-
-* Ark (client+server suite, 1DVD+1CD per platform; i586 and x86_64);
-* School Suite â mostly i586, also including docs, video lessons and free software for Windows (3DVD):
-** Server (1DVD; i586 and x86_64);
-** Terminal (1DVD; KDE3);
-** Master (1DVD/flash; KDE4);
-** Junior (1DVD/flash; GNOME2);
-** Lite (2CD; XFCE4);
-** New Lite (1CD/1DVD/flash; LXDE);
-* KDesktop (1DVD; i586 and x86_64; KDE4);
-* Simply Linux 5.0 (1CD/flash/LiveCD; i586; XFCE4).
-
-=== Lite ===
-
-A small single CD distribution for older / low-memory computers, with [[Xfce]] as default desktop. Available in normal and [[Live CD]] versions.&lt;ref&gt;[http://www.altlinux.ru/home_and_office/altlinux40lite.html ALT Linux Lite 4.0] description&lt;/ref&gt;  Rather superseded by LXDE-based New Lite.
-
-=== Compact ===
-
-''Compact'' is a series of ALT Linux distributions tailored for beginner users. It's mostly supposed to be used on workstations, home computers and notebooks. It includes additional means for easy configuration, lots of office and multimedia applications, some games. ''Compact'' was also popular choice for [[OEM]] whitelabeling, i.e. creating a specific edition for various hardware vendors to bundle with their hardware.
-
-&lt;!--
-=== Junior ===
-
-ÐÐ¸ÑÑÑÐ¸Ð±ÑÑÐ¸Ð²Ñ ÑÐµÑÐ¸Ð¸ ''Junior'' Ð¿ÑÐµÐ´Ð½Ð°Ð·Ð½Ð°ÑÐµÐ½Ñ Ð´Ð»Ñ ÑÐµÑÐµÐ½Ð¸Ñ ÑÐ°Ð·Ð»Ð¸ÑÐ½ÑÑ Ð¿ÑÐ¸ÐºÐ»Ð°Ð´Ð½ÑÑ Ð·Ð°Ð´Ð°Ñ Ð¿Ð¾Ð»ÑÐ·Ð¾Ð²Ð°ÑÐµÐ»ÐµÐ¹. ÐÐ¾Ð¼Ð¸Ð¼Ð¾ ÑÑÐ°Ð²ÑÐ¸Ñ Ð¿ÑÐ¸Ð²ÑÑÐ½Ð¾Ð¹ Ð½ÐµÐ¾Ð±ÑÐ¾Ð´Ð¸Ð¼Ð¾ÑÑÑÑ Ð¾ÑÐ¸ÑÐ½ÑÑ Ð¸ Ð¼ÑÐ»ÑÑÐ¸Ð¼ÐµÐ´Ð¸Ð¹Ð½ÑÑ Ð¿ÑÐ¸Ð»Ð¾Ð¶ÐµÐ½Ð¸Ð¹, Ð° ÑÐ°ÐºÐ¶Ðµ Ð¿ÑÐ¸Ð»Ð¾Ð¶ÐµÐ½Ð¸Ð¹, Ð½ÐµÐ¾Ð±ÑÐ¾Ð´Ð¸Ð¼ÑÑ Ð´Ð»Ñ Ð¿Ð¾Ð»Ð½Ð¾ÑÐµÐ½Ð½Ð¾Ð¹ ÑÐ°Ð±Ð¾ÑÑ Ð² ÐÐ½ÑÐµÑÐ½ÐµÑ, Ð² ''Junior'' Ð²ÑÐ¾Ð´ÑÑ ÑÐµÐºÑÑÐ¾Ð²ÑÐµ ÑÐµÐ´Ð°ÐºÑÐ¾ÑÑ, ÑÐ»Ð¾Ð²Ð°ÑÐ¸, ÑÑÐ¸ÑÑÑ, Ð½ÐµÑÐºÐ¾Ð»ÑÐºÐ¾ Ð³ÑÐ°ÑÐ¸ÑÐµÑÐºÐ¸Ñ Ð¾Ð¿ÐµÑÐ°ÑÐ¸Ð¾Ð½Ð½ÑÑ ÑÑÐµÐ´, ÑÐ·ÑÐºÐ¸ Ð¿ÑÐ¾Ð³ÑÐ°Ð¼Ð¼Ð¸ÑÐ¾Ð²Ð°Ð½Ð¸Ñ Ð¸ ÑÑÐµÐ´Ñ ÑÐ°Ð·ÑÐ°Ð±Ð¾ÑÐºÐ¸, ÑÐ¸ÑÑÐµÐ¼Ñ ÑÐ¿ÑÐ°Ð²Ð»ÐµÐ½Ð¸Ñ Ð±Ð°Ð·Ð°Ð¼Ð¸ Ð´Ð°Ð½Ð½ÑÑ, Ð¾Ð±ÑÐ°Ð·Ð¾Ð²Ð°ÑÐµÐ»ÑÐ½ÑÐµ Ð¿ÑÐ¾Ð³ÑÐ°Ð¼Ð¼Ñ, Ð¸Ð³ÑÑ Ð¸ ÑÑÐ¸Ð»Ð¸ÑÑ Ð°Ð´Ð¼Ð¸Ð½Ð¸ÑÑÑÐ¸ÑÐ¾Ð²Ð°Ð½Ð¸Ñ ÑÐ¸ÑÑÐµÐ¼Ñ. ÐÐ´Ð½Ð¾Ð¹ Ð¸Ð· Ð·Ð°Ð´Ð°Ñ Ð¿ÑÐ¸ ÑÐ¾ÑÑÐ°Ð²Ð»ÐµÐ½Ð¸Ð¸ Ð´Ð¸ÑÑÑÐ¸Ð±ÑÑÐ¸Ð²Ð° ''ALT Linux 2.3 Junior'' Ð±ÑÐ»Ð¾ ÑÐ¾Ð·Ð´Ð°Ð½Ð¸Ðµ Ð½Ð° Ð±Ð°Ð·Ðµ GNU/Linux Ð¿Ð»Ð°ÑÑÐ¾ÑÐ¼Ñ Ð´Ð»Ñ Ð¾Ð±ÑÑÐµÐ½Ð¸Ñ [[Ð¸Ð½ÑÐ¾ÑÐ¼Ð°ÑÐ¸ÐºÐ°|Ð¸Ð½ÑÐ¾ÑÐ¼Ð°ÑÐ¸ÐºÐµ]] Ð¸ Ð¸Ð½ÑÐ¾ÑÐ¼Ð°ÑÐ¸Ð¾Ð½Ð½ÑÐ¼ ÑÐµÑÐ½Ð¾Ð»Ð¾Ð³Ð¸ÑÐ¼. ÐÐ¾ÑÑÐ¾Ð¼Ñ Ð² Ð½ÑÐ¼ Ð¿ÑÐ¸ÑÑÑÑÑÐ²ÑÑÑ Ð´Ð¾Ð¿Ð¾Ð»Ð½Ð¸ÑÐµÐ»ÑÐ½ÑÐµ ÑÑÐµÐ±Ð½ÑÐµ Ð¸ Ð¼ÐµÑÐ¾Ð´Ð¸ÑÐµÑÐºÐ¸Ðµ Ð¿Ð¾ÑÐ¾Ð±Ð¸Ñ, ÐºÐ½Ð¸Ð³Ð¸ Ð¸ ÑÑÐ°ÑÑÐ¸ Ð¿Ð¾ GNU/Linux Ð¸ ÑÐ¼ÐµÐ¶Ð½ÑÐ¼ ÑÐµÐ¼Ð°Ð¼.
-
-Ð ÐºÐ¾Ð½ÑÐµ 2007 Ð³Ð¾Ð´Ð° Ð±ÑÐ»Ð° Ð²ÑÐ¿ÑÑÐµÐ½Ð° Ð±ÐµÑÐ°-Ð²ÐµÑÑÐ¸Ñ ''{{nobr|ALT Linux 4.0 Junior}}''.&lt;ref&gt;[http://www.altlinux.ru/company_news/junior_40_beta.html ALT Linux Ð½Ð°ÑÐ¸Ð½Ð°ÐµÑ Ð¿ÑÐ±Ð»Ð¸ÑÐ½Ð¾Ðµ ÑÐµÑÑÐ¸ÑÐ¾Ð²Ð°Ð½Ð¸Ðµ ÑÐºÐ¾Ð»ÑÐ½Ð¾Ð³Ð¾ Ð´Ð¸ÑÑÑÐ¸Ð±ÑÑÐ¸Ð²Ð°]&lt;/ref&gt;
---&gt;
-&lt;!--
-=== Desktop ===
-Ð¡ÐµÑÐ¸Ñ ''Desktop'' â ÑÐ°Ð·Ð²Ð¸ÑÐ¸Ðµ ÑÐµÑÐ¸Ð¸ ''Junior'' Ð´Ð»Ñ Ð´Ð¾Ð¼Ð°ÑÐ½ÐµÐ³Ð¾ Ð¸ Ð¾ÑÐ¸ÑÐ½Ð¾Ð³Ð¾ Ð¿ÑÐ¸Ð¼ÐµÐ½ÐµÐ½Ð¸Ñ. ÐÐµÑÑÐ¸Ñ ''Small Business Desktop'' Ð¿Ð¾Ð·Ð²Ð¾Ð»ÑÐµÑ ÑÐ°Ð±Ð¾ÑÐ°ÑÑ Ñ Ð¿ÑÐ¾Ð³ÑÐ°Ð¼Ð¼Ð°Ð¼Ð¸ Â«1Ð¡Â» Ð¸ Ð´ÑÑÐ³Ð¸Ð¼Ð¸ ÑÐ¾ÑÑÐ¸Ð¹ÑÐºÐ¸Ð¼Ð¸ Ð±Ð¸Ð·Ð½ÐµÑ-Ð¿ÑÐ¸Ð»Ð¾Ð¶ÐµÐ½Ð¸ÑÐ¼Ð¸, Ð° Ð²ÐµÑÑÐ¸Ñ ''Corporate Desktop'' Ð²ÐºÐ»ÑÑÐ°ÐµÑ ÑÑÐ»ÑÐ³Ð¸ ÑÐ°ÑÑÐ¸ÑÐµÐ½Ð½Ð¾Ð¹ ÑÐµÑÐ½Ð¸ÑÐµÑÐºÐ¾Ð¹ Ð¿Ð¾Ð´Ð´ÐµÑÐ¶ÐºÐ¸.
---&gt;
-
-&lt;!--
-=== Master ===
-ÐÐ°Ð´Ð°ÑÐ° Ð´Ð¸ÑÑÑÐ¸Ð±ÑÑÐ¸Ð²Ð¾Ð² ÑÐµÑÐ¸Ð¸ ''Master'' â ÑÐ»ÑÐ¶Ð¸ÑÑ ÑÐ½Ð¸Ð²ÐµÑÑÐ°Ð»ÑÐ½ÑÐ¼ Ð¸Ð½ÑÑÑÑÐ¼ÐµÐ½ÑÐ°ÑÐ¸ÐµÐ¼ Ð´Ð»Ñ ÑÐ°Ð·ÑÐ°Ð±Ð¾ÑÑÐ¸ÐºÐ°, Ð°Ð´Ð¼Ð¸Ð½Ð¸ÑÑÑÐ°ÑÐ¾ÑÐ° Ð¸ Ð¿Ð¾Ð»ÑÐ·Ð¾Ð²Ð°ÑÐµÐ»Ñ. ''Master'' â Ð½Ð°Ð¸Ð±Ð¾Ð»ÐµÐµ Ð¿Ð¾Ð»Ð½ÑÐ¹ Ð´Ð¸ÑÑÑÐ¸Ð±ÑÑÐ¸Ð² ALT Linux, Ð² ÐºÐ¾ÑÐ¾ÑÐ¾Ð¼ Â«Ð²ÑÑ Ð¿Ð¾Ð´ ÑÑÐºÐ¾Ð¹Â». ÐÐ° Ð¾ÑÐ½Ð¾Ð²Ðµ Master Ð¼Ð¾Ð¶Ð½Ð¾ ÑÑÑÐ¾Ð¸ÑÑ ÐºÐ¾ÑÐ¿Ð¾ÑÐ°ÑÐ¸Ð²Ð½ÑÐµ Ð¸Ð½ÑÐ¾ÑÐ¼Ð°ÑÐ¸Ð¾Ð½Ð½ÑÐµ ÑÐ¸ÑÑÐµÐ¼Ñ, Ð¸ÑÐ¿Ð¾Ð»ÑÐ·Ð¾Ð²Ð°ÑÑ ÐµÐ³Ð¾ Ð² ÐºÐ°ÑÐµÑÑÐ²Ðµ ÑÐµÑÐ²ÐµÑÐ½Ð¾Ð¹ Ð¿Ð»Ð°ÑÑÐ¾ÑÐ¼Ñ, Ð´Ð»Ñ ÑÐ°Ð·ÑÐ°Ð±Ð¾ÑÐºÐ¸ ÐºÐ»Ð¸ÐµÐ½ÑÑÐºÐ¸Ñ Ð¸ ÑÐµÑÐ²ÐµÑÐ½ÑÑ Ð¿ÑÐ¸Ð»Ð¾Ð¶ÐµÐ½Ð¸Ð¹, Ð² Ð¾Ð±ÑÐ°Ð·Ð¾Ð²Ð°ÑÐµÐ»ÑÐ½ÑÑ ÑÑÑÐµÐ¶Ð´ÐµÐ½Ð¸ÑÑ, Ð° ÑÐ°ÐºÐ¶Ðµ Ð¿ÑÐ¸Ð¼ÐµÐ½ÑÑÑ Ð² ÐºÐ°ÑÐµÑÑÐ²Ðµ Ð¿ÑÐ¾ÑÐµÑÑÐ¸Ð¾Ð½Ð°Ð»ÑÐ½Ð¾Ð¹ Ð½Ð°ÑÑÐ¾Ð»ÑÐ½Ð¾Ð¹ Ð¾Ð¿ÐµÑÐ°ÑÐ¸Ð¾Ð½Ð½Ð¾Ð¹ ÑÐ¸ÑÑÐµÐ¼Ñ. ÐÐ¾ÑÐ»ÐµÐ´Ð½ÑÑ Ð²ÐµÑÑÐ¸Ñ Ð´Ð¸ÑÑÑÐ¸Ð±ÑÑÐ¸Ð²Ð° ALT Linux Master 2.4 Ð²ÑÑÐ»Ð° Ð² Ð¾ÐºÑÑÐ±ÑÐµ 2004 Ð³Ð¾Ð´Ð°.
---&gt;
-
-=== Server ===
-''ALT Linux Server'' is a hardened server single CD distribution. It is certified by Federal department of technical and expert control of Russia in the following categories:
-* by the level of monitoring for non-declared features â level 4&lt;ref&gt;[http://www.fstec.ru/_docs/doc_3_3_010.htm Classification by level of monitoring for non-declared features]&lt;/ref&gt;
-* class of protection from unauthorized access to information â class 5&lt;ref&gt;[http://www.fstec.ru/_docs/doc_3_3_003.htm Classes of protection from unauthorized access to information]&lt;/ref&gt;
-
-=== Terminal ===
-''ALT Linux Terminal'' is a terminal server distribution&lt;ref&gt;Last stable release is [ftp://ftp.altlinux.org/pub/distributions/ALTLinux/4.0/Terminal/ 4.0.0].&lt;/ref&gt; based on ALT Linux Desktop and ALTSP5 â a friendly/merging fork of [[Linux Terminal Server Project|LTSP]] which is usable on older hardware acting as [[thin client|thin]]/[[diskless workstation|diskless]] clients (16Mb RAM is enough while stock LTSP5 usually requires 64+Mb RAM).  It was also adapted for Russian School Education National Project&lt;ref&gt;[[:ru:ÐÐµÑÐµÑÐµÐ½Ñ ÑÐºÐ¾Ð»ÑÐ½Ð¾Ð³Ð¾ Ð¿ÑÐ¾Ð³ÑÐ°Ð¼Ð¼Ð½Ð¾Ð³Ð¾ Ð¾Ð±ÐµÑÐ¿ÐµÑÐµÐ½Ð¸Ñ#.D0.A1.D0.B2.D0.BE.D0.B1.D0.BE.D0.B4.D0.BD.D0.BE.D0.B5_.D0.9F.D0.9E|School software list]]&lt;/ref&gt; free software package.
-
-== References ==
-{{reflist}}
-
-== External links ==
-* [http://altlinux.org/ Community website] ([http://en.altlinux.org/ in English])
-* [http://en.altlinux.org/Sisyphus Sisyphus package repository], on which Alt Linux is based
-* {{Freshmeat|alt-linux|ALT Linux}}
-* {{DistroWatch|alt|NAME=ALT Linux}}
-
-===Reviews===
-* [http://linuxbsdos.com/2009/12/23/alt-linux-5-ark-desktop-review/ ALT Linux 5 Ark desktop review]
-* [http://linuxbsdos.com/2009/12/24/customizing-alt-linux-5-ark-desktop/ Customizing ALT Linux 5 Ark desktop]
-* [http://linuxbsdos.com/2009/12/24/simply-linux-5-review/ Simply Linux 5 review]
-* [http://linuxbsdos.com/2009/12/25/customizing-simply-linux-5-2/ Customizing Simply Linux 5]
-* [http://linuxbsdos.com/2009/12/30/how-to-install-cairo-dock-on-simply-linux-5/ How to install Cairo-Dock on Simply Linux 5]
-
-{{Xfce}}
-{{Linux distributions}}
-
-{{DEFAULTSORT:Alt Linux}}
-[[Category:RPM-based Linux distributions]]
-[[Category:X86-64 Linux distributions]]
-
-[[et:ALT Linux]]
-[[es:ALT Linux]]
-[[ko:ALT ë¦¬ëì¤]]
-[[it:ALT Linux]]
-[[pl:ALT Linux]]
-[[pt:ALT Linux]]
-[[ro:ALT Linux]]
-[[ru:ÐÐ¸ÑÑÑÐ¸Ð±ÑÑÐ¸Ð²Ñ ALT Linux]]
-[[tr:ALT Linux]]</rev></revisions></page></pages></query></api>
