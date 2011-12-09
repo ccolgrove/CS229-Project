@@ -85,13 +85,25 @@ public class MultinomialNaiveBayes {
 		return probs;
 	}
 	
-	public double getSentenceProb(Map<String, Double> wordProbs, String sentence) {
+	public int calculateDocumentSize(TestDocument document) {
+		int totalWords = 0;
+		for (String paragraph : document.paragraphs) {
+			CoreLabelTokenFactory factory = new CoreLabelTokenFactory();
+			PTBTokenizer<CoreLabel> ptbt = new PTBTokenizer<CoreLabel>(new StringReader(paragraph),
+		              factory, "");
+			totalWords += ptbt.tokenize().size();
+		}
+		
+		return totalWords;
+	}
+	
+	public double getSentenceProb(Map<String, Double> wordProbs, String sentence, int totalWords) {
 		double logProb = 0;
 		CoreLabelTokenFactory factory = new CoreLabelTokenFactory();
 		PTBTokenizer<CoreLabel> ptbt = new PTBTokenizer<CoreLabel>(new StringReader(sentence),
 	              factory, "");
 		
-		int numTokens = 0;
+		double numTokens = 0;
 	    for (; ptbt.hasNext(); ) {
 	    	String label = ptbt.next().originalText();
 	        if (wordProbs.containsKey(label)) {
@@ -103,7 +115,7 @@ public class MultinomialNaiveBayes {
 	    }
 	    
 	    if (numTokens > 0)
-	    	return logProb/numTokens;
+	    	return logProb + Math.log(numTokens/totalWords);
 	    else
 	    	return Double.NEGATIVE_INFINITY;
 	}
@@ -118,7 +130,9 @@ public class MultinomialNaiveBayes {
 		List<Pair> paragraphs = new ArrayList<Pair>();
 		
 		for (String paragraph : document.paragraphs) {
-			double prob = getSentenceProb(wordProbs, paragraph);
+			int length = calculateDocumentSize(document);
+			System.out.println(length);
+			double prob = getSentenceProb(wordProbs, paragraph, length);
 			paragraphs.add(new Pair(paragraph, prob));	
 		}
 		
