@@ -3,7 +3,6 @@ package take_two;
 import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Set;
 
 import query.QueryGetter;
 
@@ -19,7 +18,7 @@ public class Main {
   public static void main(String[] args) {
     List<Revision> revisions = new ArrayList<Revision>();
     List<TestDocument> documents = new ArrayList<TestDocument>();
-
+    
     // read in the train and test data
     System.out.println("reading in train data!");
     XMLParser parser = new XMLParser();
@@ -32,10 +31,10 @@ public class Main {
 
     System.out.println("reading in test data!");
     
-    Set<String> documentsToUse = null;
+    List<String> documentsToUse = null;
     try {
-      documentsToUse = QueryGetter.getNMostRecentlyEditedPageIds(USER, 10);
-    } catch (Exception e) { e.printStackTrace();}
+      documentsToUse = QueryGetter.getNMostRecentlyEditedPageIds(USER, 50);
+    } catch (Exception e) { e.printStackTrace(); }
     
     dir = new File(TEST_DIR);
     for (File file : dir.listFiles()) {
@@ -44,7 +43,7 @@ public class Main {
       int dot = name.indexOf(".");
       String id = name.substring(0, dash);
       if (! name.substring(dash + 1, dot).equals(USER) ||
-          ! documentsToUse.contains(id)) 
+          ! (documentsToUse.indexOf(id) != -1)) 
         continue;
       
       TestDocument document = parser.parseDocument(file);
@@ -61,18 +60,30 @@ public class Main {
     // train + test using leave-one-out cross-validation
     System.out.println("testing!");
     MultinomialNaiveBayes classifier = new MultinomialNaiveBayes();
-    for (TestDocument document : documents) {
-      List<Revision> train = new ArrayList<Revision>(revisions);
+    int count = 0;
+    for (TestDocument testDocument : documents) {
+      if (count++ > 10) break;
+      
+      List<Revision> trainRevisions = new ArrayList<Revision>(revisions);
       for (Revision revision : revisions) {
-        if (revision.pageId.equals(document.id))
-          train.remove(revision);
+        if (revision.pageId.equals(testDocument.id))
+          trainRevisions.remove(revision);
       }
       
-      classifier.calculateProbabilities(train, documents);
-      List<MultinomialNaiveBayes.Pair> predictions = classifier.mostLikelyParagraphs(document);
+      List<TestDocument> trainDocuments = new ArrayList<TestDocument>(documents);
+      trainDocuments.remove(testDocument);
+      for (TestDocument document : new ArrayList<TestDocument>(trainDocuments)) {
+        for (int i = 0; i < document.paragraphs.size(); i++) {
+          if (document.scores.get(i) > 0)
+            document.paragraphs.remove(i);
+        }
+      }
       
-      document.orderParagraphs();
-      String actual = document.paragraphs.get(0);
+      classifier.calculateProbabilities(trainRevisions, trainDocuments);
+      List<MultinomialNaiveBayes.Pair> predictions = classifier.mostLikelyParagraphs(testDocument);
+      
+      testDocument.orderParagraphs();
+      String actual = testDocument.paragraphs.get(0);
       
       System.out.println("num paragraphs: " + predictions.size());
       int rank = -1;
@@ -127,8 +138,8 @@ public class Main {
       }
 
       document.scores.set(index, document.scores.get(index) + 1);
-      System.out.println("\n~~~REVISION~~~\n" + revision.content);
-      System.out.println("\n~~~PARAGRAPH~~~\n" + document.paragraphs.get(index));
+      //System.out.println("\n~~~REVISION~~~\n" + revision.content);
+      //System.out.println("\n~~~PARAGRAPH~~~\n" + document.paragraphs.get(index));
     }
   }
 }
