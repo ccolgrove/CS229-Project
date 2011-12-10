@@ -1,4 +1,4 @@
-package take_two;
+package bagofwords;
 
 import java.io.StringReader;
 import java.util.ArrayList;
@@ -8,20 +8,20 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import take_two.Revision;
+import take_two.TestDocument;
 import edu.stanford.nlp.ling.CoreLabel;
 import edu.stanford.nlp.process.CoreLabelTokenFactory;
 import edu.stanford.nlp.process.PTBTokenizer;
 
-public class MultinomialNaiveBayes {
+public class MultinomialNaiveBayesOld {
 	
 	public static final double ADD_ALPHA = 0.1;
 	public static final String UNK_TOKEN = "<UNKNOWN>";
 	
 	public Map<String, Double> wordProbs;
-	public boolean countDocumentWords = true;
-	public double documentWeight = 0.1;
 	
-	public static class Pair {
+	private static class Pair {
 		public double score;
 		public String paragraph;
 		
@@ -30,7 +30,6 @@ public class MultinomialNaiveBayes {
 			this.paragraph = paragraph;
 		}
 	}
-	
 	
 	public Map<String, Double> getWordCounts(List<Revision> revisions, List<TestDocument> documents) {
 		Map<String, Double> counts = new HashMap<String, Double>();
@@ -58,13 +57,7 @@ public class MultinomialNaiveBayes {
 				for (; ptbt.hasNext(); ) {
 					String label = ptbt.next().originalText();
 			        if (!counts.containsKey(label)) {
-			        	if (!countDocumentWords) {
-			        		counts.put(label, 0.0);
-			        	} else {
-			        		counts.put(label, documentWeight);
-			        	}
-			        } else if (countDocumentWords) {
-			        	counts.put(label, counts.get(label) + documentWeight);
+			        	counts.put(label, 0.0);
 			        }
 			    }	
 			}
@@ -104,28 +97,25 @@ public class MultinomialNaiveBayes {
 		return totalWords;
 	}
 	
-	public double getSentenceProb(Map<String, Double> wordProbs, String sentence, int total) {
+	public double getSentenceProb(Map<String, Double> wordProbs, String sentence, int totalWords) {
 		double logProb = 0;
 		CoreLabelTokenFactory factory = new CoreLabelTokenFactory();
 		PTBTokenizer<CoreLabel> ptbt = new PTBTokenizer<CoreLabel>(new StringReader(sentence),
 	              factory, "");
 		
-		int numTokens = 0;
-		
+		double numTokens = 0;
 	    for (; ptbt.hasNext(); ) {
 	    	String label = ptbt.next().originalText();
 	        if (wordProbs.containsKey(label)) {
 	        	logProb += wordProbs.get(label);
 	        } else {
-	          logProb += wordProbs.get(UNK_TOKEN);
+	        	logProb += wordProbs.get(UNK_TOKEN);
 	        }
 	        numTokens ++;
 	    }
 	    
 	    if (numTokens > 0)
-	      //return 1.0/numTokens;
-	    	//return logProb/numTokens
-	    	return logProb + Math.log((double) numTokens/total);
+	    	return logProb + Math.log(numTokens/totalWords);
 	    else
 	    	return Double.NEGATIVE_INFINITY;
 	}
@@ -135,14 +125,14 @@ public class MultinomialNaiveBayes {
 		wordProbs = getWordProbs(wordCounts);
 	}
 	
-	public List<Pair> mostLikelyParagraphs(TestDocument document) {
+	public List<String> mostLikelyParagraphs(TestDocument document) {
 	
 		List<Pair> paragraphs = new ArrayList<Pair>();
 		
-		int docSize = calculateDocumentSize(document);
-		
 		for (String paragraph : document.paragraphs) {
-			double prob = getSentenceProb(wordProbs, paragraph, docSize);
+			int length = calculateDocumentSize(document);
+			System.out.println(length);
+			double prob = getSentenceProb(wordProbs, paragraph, length);
 			paragraphs.add(new Pair(paragraph, prob));	
 		}
 		
@@ -158,7 +148,7 @@ public class MultinomialNaiveBayes {
 			orderedParagraphs.add(p.paragraph);
 		}
 		
-		return paragraphs;
+		return orderedParagraphs;
 	}
 	
 	public static void main(String[] args) {
@@ -175,12 +165,12 @@ public class MultinomialNaiveBayes {
 		List<TestDocument> documents = new ArrayList<TestDocument>();
 		documents.add(doc);
 		
-		MultinomialNaiveBayes mnb = new MultinomialNaiveBayes();
+		MultinomialNaiveBayesOld mnb = new MultinomialNaiveBayesOld();
 		mnb.calculateProbabilities(revs, documents);
 		
-		List<Pair> mostLikely = mnb.mostLikelyParagraphs(doc);
+		List<String> mostLikely = mnb.mostLikelyParagraphs(doc);
 		
-		//System.out.println(mostLikely);
+		System.out.println(mostLikely);
 		
 	}
 	

@@ -4,8 +4,6 @@ import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
-import bagofwords.MultinomialNaiveBayes;
-
 public class Main {
   public static final String TEST_DIR = "../../../articles/";
   private static final String TRAIN_DIR = "../../../revhistories/revision_diffs_by_user/";
