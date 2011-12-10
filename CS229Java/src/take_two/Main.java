@@ -3,10 +3,13 @@ package take_two;
 import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Set;
+
+import query.QueryGetter;
 
 public class Main {
-  public static final String TEST_DIR = "../../../articles/";
-  private static final String TRAIN_DIR = "../../../revhistories/revision_diffs_by_user/";
+  public static final String TEST_DIR = "/Users/jtibs/Dropbox/cs229files/articles/";
+  private static final String TRAIN_DIR = "/Users/jtibs/Dropbox/cs229files/revhistories/revision_diffs_by_user/";
   public static final String USER = "Hammersoft";
   //public static final String USER = "SF007";
   //public static final String USER = "The_Egyptian_Liberal";
@@ -20,7 +23,6 @@ public class Main {
     // read in the train and test data
     System.out.println("reading in train data!");
     XMLParser parser = new XMLParser();
-    int count = 0;
     File dir = new File(TRAIN_DIR + USER);
     for (File file : dir.listFiles()) {
       //System.err.println(file);
@@ -29,16 +31,25 @@ public class Main {
     }
 
     System.out.println("reading in test data!");
+    
+    Set<String> documentsToUse = null;
+    try {
+      documentsToUse = QueryGetter.getNMostRecentlyEditedPageIds(USER, 10);
+    } catch (Exception e) { e.printStackTrace();}
+    
     dir = new File(TEST_DIR);
     for (File file : dir.listFiles()) {
       String name = file.getName();
       int dash = name.indexOf("-");
       int dot = name.indexOf(".");
-      if (! name.substring(dash + 1, dot).equals(USER)) 
+      String id = name.substring(0, dash);
+      if (! name.substring(dash + 1, dot).equals(USER) ||
+          ! documentsToUse.contains(id)) 
         continue;
+      
       TestDocument document = parser.parseDocument(file);
       if (document.paragraphs.size() == 0) continue;
-      document.id = name.substring(0, dash);
+      document.id = id;
       documents.add(document);
     }
     
