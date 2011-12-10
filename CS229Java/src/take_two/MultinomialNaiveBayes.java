@@ -27,7 +27,7 @@ public class MultinomialNaiveBayes {
 	public boolean countDocumentWords = true;
 	public boolean selectFeatures = false;
 	public double documentWeight = 0.1;
-	public int numFeatures = 2;
+	public int numFeatures = 100;
 	
 	public static class Pair {
 		public double score;
