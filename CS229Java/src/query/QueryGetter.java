@@ -60,11 +60,9 @@ public class QueryGetter {
     	//downloadRevisionDiffsForPage("1092923", true); // Google
     	//downloadRevisionDiffsForUser("SF007", true);
     	//downloadRevisionDiffsForUser("The_Egyptian_Liberal", true);
-    	downloadNMostRecentlyEditedArticles("Tangledorange", -1);
-    	downloadNMostRecentlyEditedArticles("Hammersoft", -1);
-    	downloadNMostRecentlyEditedArticles("SF007", -1);
-    	downloadNMostRecentlyEditedArticles("JerryOrr", -1);
-    	downloadNMostRecentlyEditedArticles("The_Egyptian_Liberal", -1);
+    	for (String i : getNMostRecentlyEditedPageIds("SF007", 100)) {
+    		System.out.println(i);
+    	}
     }
 	
 	
@@ -187,8 +185,8 @@ public class QueryGetter {
     	}
     }
     
-    public static Set<String> getNMostRecentlyEditedPageIds(String username, int n) throws Exception {
-    	File dir = new File("../revhistories/user_contribs");
+    public static List<String> getNMostRecentlyEditedPageIds(String username, int n) throws Exception {
+    	File dir = new File("C:/Users/Remington/Dropbox/cs229files/revhistories/user_contribs");
     	TreeMap<Integer, File> files = new TreeMap<Integer, File>();
     	for (File f : dir.listFiles()) {
     		if (f.getName().startsWith(username)) {
@@ -199,7 +197,7 @@ public class QueryGetter {
     		}
     	}
     	
-    	HashSet<String> topPageIds = new HashSet<String>();
+    	List<String> topPageIds = new ArrayList<String>();
     	
     	for (Integer i : files.keySet()) {
     		if (n >= 0 && topPageIds.size() >= n) break;
@@ -212,7 +210,9 @@ public class QueryGetter {
     			if (n >= 0 && topPageIds.size() >= n) break;
     			NamedNodeMap attributes = items.item(j).getAttributes();
     			String pageId = attributes.getNamedItem("pageid").getNodeValue();
-    			topPageIds.add(pageId);
+    			if (!topPageIds.contains(pageId)) {
+    				topPageIds.add(pageId);
+    			}
     		}
     	}
     	
