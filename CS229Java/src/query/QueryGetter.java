@@ -187,7 +187,7 @@ public class QueryGetter {
     	}
     }
     
-    private static Set<String> getNMostRecentlyEditedPageIds(String username, int n) throws Exception {
+    public static Set<String> getNMostRecentlyEditedPageIds(String username, int n) throws Exception {
     	File dir = new File("../revhistories/user_contribs");
     	TreeMap<Integer, File> files = new TreeMap<Integer, File>();
     	for (File f : dir.listFiles()) {
