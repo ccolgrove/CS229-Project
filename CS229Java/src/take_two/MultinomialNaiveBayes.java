@@ -1,3 +1,5 @@
+package take_two;
+
 import java.io.StringReader;
 import java.util.ArrayList;
 import java.util.Collections;
@@ -16,6 +18,8 @@ public class MultinomialNaiveBayes {
 	public static final String UNK_TOKEN = "<UNKNOWN>";
 	
 	public Map<String, Double> wordProbs;
+	public boolean countDocumentWords = true;
+	public double documentWeight = 0.1;
 	
 	public static class Pair {
 		public double score;
@@ -26,6 +30,7 @@ public class MultinomialNaiveBayes {
 			this.paragraph = paragraph;
 		}
 	}
+	
 	
 	public Map<String, Double> getWordCounts(List<Revision> revisions, List<TestDocument> documents) {
 		Map<String, Double> counts = new HashMap<String, Double>();
@@ -53,7 +58,13 @@ public class MultinomialNaiveBayes {
 				for (; ptbt.hasNext(); ) {
 					String label = ptbt.next().originalText();
 			        if (!counts.containsKey(label)) {
-			        	counts.put(label, 0.0);
+			        	if (!countDocumentWords) {
+			        		counts.put(label, 0.0);
+			        	} else {
+			        		counts.put(label, documentWeight);
+			        	}
+			        } else if (countDocumentWords) {
+			        	counts.put(label, counts.get(label) + documentWeight);
 			        }
 			    }	
 			}
@@ -81,13 +92,26 @@ public class MultinomialNaiveBayes {
 		return probs;
 	}
 	
-	public double getSentenceProb(Map<String, Double> wordProbs, String sentence) {
+	public int calculateDocumentSize(TestDocument document) {
+		int totalWords = 0;
+		for (String paragraph : document.paragraphs) {
+			CoreLabelTokenFactory factory = new CoreLabelTokenFactory();
+			PTBTokenizer<CoreLabel> ptbt = new PTBTokenizer<CoreLabel>(new StringReader(paragraph),
+		              factory, "");
+			totalWords += ptbt.tokenize().size();
+		}
+		
+		return totalWords;
+	}
+	
+	public double getSentenceProb(Map<String, Double> wordProbs, String sentence, int total) {
 		double logProb = 0;
 		CoreLabelTokenFactory factory = new CoreLabelTokenFactory();
 		PTBTokenizer<CoreLabel> ptbt = new PTBTokenizer<CoreLabel>(new StringReader(sentence),
 	              factory, "");
 		
 		int numTokens = 0;
+		
 	    for (; ptbt.hasNext(); ) {
 	    	String label = ptbt.next().originalText();
 	        if (wordProbs.containsKey(label)) {
@@ -100,7 +124,8 @@ public class MultinomialNaiveBayes {
 	    
 	    if (numTokens > 0)
 	      //return 1.0/numTokens;
-	    	return logProb/numTokens;
+	    	//return logProb/numTokens
+	    	return logProb + Math.log((double) numTokens/total);
 	    else
 	    	return Double.NEGATIVE_INFINITY;
 	}
@@ -114,8 +139,10 @@ public class MultinomialNaiveBayes {
 	
 		List<Pair> paragraphs = new ArrayList<Pair>();
 		
+		int docSize = calculateDocumentSize(document);
+		
 		for (String paragraph : document.paragraphs) {
-			double prob = getSentenceProb(wordProbs, paragraph);
+			double prob = getSentenceProb(wordProbs, paragraph, docSize);
 			paragraphs.add(new Pair(paragraph, prob));	
 		}
 		

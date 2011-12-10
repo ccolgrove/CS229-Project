@@ -14,7 +14,7 @@ import edu.stanford.nlp.ling.CoreLabel;
 import edu.stanford.nlp.process.CoreLabelTokenFactory;
 import edu.stanford.nlp.process.PTBTokenizer;
 
-public class MultinomialNaiveBayes {
+public class MultinomialNaiveBayesOld {
 	
 	public static final double ADD_ALPHA = 0.1;
 	public static final String UNK_TOKEN = "<UNKNOWN>";
@@ -165,7 +165,7 @@ public class MultinomialNaiveBayes {
 		List<TestDocument> documents = new ArrayList<TestDocument>();
 		documents.add(doc);
 		
-		MultinomialNaiveBayes mnb = new MultinomialNaiveBayes();
+		MultinomialNaiveBayesOld mnb = new MultinomialNaiveBayesOld();
 		mnb.calculateProbabilities(revs, documents);
 		
 		List<String> mostLikely = mnb.mostLikelyParagraphs(doc);
