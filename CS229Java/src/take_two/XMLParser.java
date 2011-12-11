@@ -6,9 +6,6 @@ import java.io.IOException;
 import java.io.StringBufferInputStream;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
-
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Date;
 //import java.util.List;
 import java.util.regex.Matcher;
@@ -28,7 +25,7 @@ import org.xml.sax.SAXException;
 public class XMLParser {
 	private static final String XML_HEADER = "<?xml version=\"1.0\"?> <!DOCTYPE some_name [ <!ENTITY nbsp \"&#160;\"> ]><api>"; 
 	private static final String XML_FOOTER = "</api>";
-	private static final String INFOBOX_PATTERN = "\\{\\{Infobox.*\\|.*=.*\\}\\}\\n";
+	private static final String INFOBOX_PATTERN = "\\{\\{.*\\|.*=.*\\n\\}\\}\\n";
 
 	private DocumentBuilder builder;
 	
@@ -113,7 +110,7 @@ public class XMLParser {
 	      String type = classNode.getNodeValue();
 	      
 	      if (type.equals("diff-deletedline") || type.equals("diff-addedline")
-	          /*|| type.equals("diff-context")*/) {  // if we are interested in this line
+	          || type.equals("diff-context")) {  // if we are interested in this line
 	        Node div = ((Element) node).getElementsByTagName("div").item(0);
 	        if (div == null) continue;
 	        NodeList divChildren = div.getChildNodes();
@@ -149,42 +146,51 @@ public class XMLParser {
     NodeList nodes = xmlDocument.getElementsByTagName("rev");
     String text = nodes.item(0).getFirstChild().getNodeValue();
     
-//    // parse out infobox and intro
-//    int equals = text.indexOf("==");
-//    if (equals == -1) {
-//      result.paragraphs.add(text);
-//      return result;
-//    }
-//    
-//    String intro = text.substring(0, equals);
-//    
-//    Pattern pattern = Pattern.compile(INFOBOX_PATTERN, Pattern.DOTALL);
-//    Matcher matcher = pattern.matcher(intro);
-//    
-//    System.out.println("intro: " + intro);
-//    if (matcher.find()) {
-//      String infobox = matcher.group();
-//      result.paragraphs.add(infobox);
-//      System.out.println("infobox: " + infobox);
-//      intro = intro.substring(matcher.end() + 2);
-//    }
-//    result.paragraphs.add(intro);
-//    
-//    // separate out each section
-//    while (true) {
-//      int index = text.indexOf("\n\n");     
-//      if (index == -1) break;
-//      
-//      String paragraph = text.substring(0, index);
-//      text = text.substring(index + 2);
-//      
-//      if (paragraph.length() > 40)  // TODO: fix this
-//        result.paragraphs.add(paragraph);
-//    }
-    String[] split = text.split("\\n\\n|\\}\\n");
-    result.paragraphs = new ArrayList<String>();
-    for (String str : split)
-      result.paragraphs.add(str);
+    // parse out infobox and intro
+    int equals = text.indexOf("==");
+    if (equals == -1) {
+      result.paragraphs.add(text);
+      return result;
+    }
+    
+    String intro = text.substring(0, equals);
+    
+    Pattern pattern = Pattern.compile(INFOBOX_PATTERN, Pattern.DOTALL);
+    Matcher matcher = pattern.matcher(intro);
+    
+    System.out.println("intro: " + intro);
+    if (matcher.find()) {
+      String infobox = matcher.group();
+      result.paragraphs.add(infobox);
+      System.out.println("infobox: " + infobox);
+      intro = intro.substring(matcher.end() + 2);
+    }
+    result.paragraphs.add(intro);
+    
+    // separate out each section
+    while (true) {
+      int i = text.indexOf("==");
+      int j = text.indexOf("===");      
+      if (i == -1 && j == -1) break;
+      
+      String paragraph = null;
+      if (j == -1 || (i != -1 && i < j)) {
+        paragraph = text.substring(0, i);
+        text = text.substring(i + 2);
+      } else {
+        paragraph = text.substring(0, j);
+        text = text.substring(j + 3);
+      }
+      
+      if (paragraph.length() > 40 && ! paragraph.contains("wikitable"))  // TODO: fix this
+        result.paragraphs.add(paragraph);
+    }
+    
+//  String[] split = text.split("\\n\\n|\\}\\n");
+//  result.paragraphs = new ArrayList<String>();
+//  for (String str : split)
+//    result.paragraphs.add(str);
+
     return result;
 	}
 }
