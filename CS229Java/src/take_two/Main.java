@@ -9,15 +9,16 @@ import query.QueryGetter;
 public class Main {
   public static final String TEST_DIR = "/Users/jtibs/Dropbox/cs229files/articles/";
   private static final String TRAIN_DIR = "/Users/jtibs/Dropbox/cs229files/revhistories/revision_diffs_by_user/";
-  public static final String USER = "Hammersoft";
+  //public static final String USER = "Hammersoft";
   //public static final String USER = "SF007";
-  //public static final String USER = "The_Egyptian_Liberal";
+  public static final String USER = "The_Egyptian_Liberal";
   //public static final String USER = "JerryOrr";
   //public static final String USER = "Tangledorange";
   
   public static void main(String[] args) {
     List<Revision> revisions = new ArrayList<Revision>();
     List<TestDocument> documents = new ArrayList<TestDocument>();
+    List<TestDocument> allDocuments = new ArrayList<TestDocument>();
     
     // read in the train and test data
     System.out.println("reading in train data!");
@@ -43,42 +44,49 @@ public class Main {
       int dot = name.indexOf(".");
       String id = name.substring(0, dash);
       if (! name.substring(dash + 1, dot).equals(USER) ||
-          ! (documentsToUse.indexOf(id) != -1)) 
+          documentsToUse.indexOf(id) == -1) 
         continue;
       
       TestDocument document = parser.parseDocument(file);
       if (document.paragraphs.size() == 0) continue;
       document.id = id;
-      documents.add(document);
+      if (documentsToUse.indexOf(id) < 10)
+        documents.add(document);
+    
+      allDocuments.add(document);
     }
     
     // prepare test data
     System.out.println("calculating scores!");
-    for (TestDocument document : documents)
+    for (TestDocument document : allDocuments)
       calculateScores(document, revisions);
     
     // train + test using leave-one-out cross-validation
     System.out.println("testing!");
     MultinomialNaiveBayes classifier = new MultinomialNaiveBayes();
-    int count = 0;
     for (TestDocument testDocument : documents) {
-      if (count++ > 10) break;
-      
       List<Revision> trainRevisions = new ArrayList<Revision>(revisions);
       for (Revision revision : revisions) {
         if (revision.pageId.equals(testDocument.id))
           trainRevisions.remove(revision);
       }
       
-      List<TestDocument> trainDocuments = new ArrayList<TestDocument>(documents);
-      trainDocuments.remove(testDocument);
-      for (TestDocument document : new ArrayList<TestDocument>(trainDocuments)) {
+      List<TestDocument> trainDocuments = new ArrayList<TestDocument>();
+      for (TestDocument document : allDocuments) {
+        if (document.equals(testDocument)) continue;
+        
+        TestDocument newDocument = new TestDocument();  
         for (int i = 0; i < document.paragraphs.size(); i++) {
-          if (document.scores.get(i) > 0)
-            document.paragraphs.remove(i);
+          if (document.scores.get(i) == 0) {
+            newDocument.paragraphs.add(document.paragraphs.get(i));
+            newDocument.scores.add(document.scores.get(i));
+          }
         }
+        trainDocuments.add(newDocument);
       }
       
+      //classifier.calculateProbabilities(trainRevisions, trainDocuments);
+      classifier.countDocumentWords = false;
       classifier.calculateProbabilities(trainRevisions, trainDocuments);
       List<MultinomialNaiveBayes.Pair> predictions = classifier.mostLikelyParagraphs(testDocument);
       
@@ -90,14 +98,13 @@ public class Main {
       for (int i = 0; i < predictions.size(); i++) {
         //System.out.println("~~~PREDICTION" + i + "~~~\n");
         //System.out.println(predictions.get(i).paragraph);
-        System.out.println("score: " + predictions.get(i).score);
+        //System.out.println("score: " + predictions.get(i).score);
         if (predictions.get(i).paragraph.equals(actual))
           rank = i;
       }
       System.out.println("rank: " + rank);
       //System.out.println("PREDICTED:\n" + predictions.get(0).paragraph);
-      //System.out.println("ACTUAL:\n" + actual);
-        
+      //System.out.println("ACTUAL:\n" + actual);    
     }
   }
 
@@ -106,7 +113,7 @@ public class Main {
     for (String paragraph : document.paragraphs)
       // initialize scores list
       document.scores.add(0.0);
-
+    int count = 0;
     for (Revision revision : revisions) {
       if (! revision.pageId.equals(document.id))
         continue;
