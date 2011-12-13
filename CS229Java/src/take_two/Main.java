@@ -11,9 +11,9 @@ import query.QueryGetter;
 public class Main {
   public static final String TEST_DIR = "/Users/jtibs/Dropbox/cs229files/articles/";
   private static final String TRAIN_DIR = "/Users/jtibs/Dropbox/cs229files/revhistories/revision_diffs_by_user/";
-  //public static final String USER = "Hammersoft";
+  public static final String USER = "Hammersoft";
   //public static final String USER = "SF007";
-  public static final String USER = "The_Egyptian_Liberal";
+  //public static final String USER = "The_Egyptian_Liberal";
   //public static final String USER = "JerryOrr";
   //public static final String USER = "Tangledorange";
   
@@ -50,8 +50,12 @@ public class Main {
         continue;
       
       TestDocument document = parser.parseDocument(file);
+      if (document.paragraphs.size() == 0) continue;
+      //if (document.paragraphs.size() < 10) continue;
       document.id = id;
-      if (documents.size() < 10 && document.paragraphs.size() >= 10)
+      //if (documentsToUse.indexOf(id) < 25 && documents.size() < 10)
+      if (documentsToUse.indexOf(id) < 10)
+      //if (documents.size() < 10)
         documents.add(document);
     
       allDocuments.add(document);
@@ -86,7 +90,7 @@ public class Main {
         trainDocuments.add(newDocument);
       }
       
-      classifier.countDocumentWords = false;
+      //classifier.countDocumentWords = true;
       classifier.calculateProbabilities(trainRevisions, trainDocuments);
       List<MultinomialNaiveBayes.Pair> predictions = classifier.mostLikelyParagraphs(testDocument);
       
@@ -122,6 +126,7 @@ public class Main {
     for (String paragraph : document.paragraphs)
       // initialize scores list
       document.scores.add(0.0);
+    int count = 0;
     for (Revision revision : revisions) {
       if (! revision.pageId.equals(document.id))
         continue;
