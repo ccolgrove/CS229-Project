@@ -17,6 +17,7 @@ public class MultinomialNaiveBayes {
 	public static final double ADD_ALPHA = 0.1;
 	public static final String UNK_TOKEN = "<UNKNOWN>";
 	
+	public Map<String, Double> wordCounts;
 	public Map<String, Double> wordProbs;
 	public Map<String, Double> wordNonCounts;
 	public Map<String, Double> wordNonProbs;
@@ -24,10 +25,10 @@ public class MultinomialNaiveBayes {
 	public Map<String, Double> wordAllProbs;
 	public double probRevision;
 	
-	public boolean countDocumentWords = true;
-	public boolean selectFeatures = false;
+	public boolean countDocumentWords = false;
+	public boolean selectFeatures = true;
 	public double documentWeight = 0.1;
-	public int numFeatures = 100;
+	public int numFeatures = 1000;
 	
 	public static class Pair {
 		public double score;
@@ -45,7 +46,7 @@ public class MultinomialNaiveBayes {
 	
 	
 	public Map<String, Double> getWordCounts(List<Revision> revisions, List<TestDocument> documents) {
-		Map<String, Double> counts = new HashMap<String, Double>();
+		wordCounts = new HashMap<String, Double>();
 		wordNonCounts = new HashMap<String, Double>();
 		wordAllCounts = new HashMap<String, Double>();
 		
@@ -64,10 +65,10 @@ public class MultinomialNaiveBayes {
 		              factory, "");
 		    for (; ptbt.hasNext(); ) {
 		    	String label = ptbt.next().originalText();
-		        if (counts.containsKey(label)) {
-		        	counts.put(label, counts.get(label)+1);
+		        if (wordCounts.containsKey(label)) {
+		        	wordCounts.put(label, wordCounts.get(label)+1);
 		        } else {
-		        	counts.put(label, 1.0);
+		        	wordCounts.put(label, 1.0);
 		        }
 		        
 		        if (wordAllCounts.containsKey(label)) {
@@ -78,28 +79,29 @@ public class MultinomialNaiveBayes {
 		    }
 		}
 		
-		Map<String, Double>  docCountMap = null;
-		if (selectFeatures) {
-			docCountMap = wordNonCounts;
-		} else {
-			docCountMap = counts;
-		}
-		
 		for (TestDocument doc: documents) {
 			for (String paragraph : doc.paragraphs) {
 				PTBTokenizer<CoreLabel> ptbt = new PTBTokenizer<CoreLabel>(new StringReader(paragraph),
 		              factory, "");
 				for (; ptbt.hasNext(); ) {
 					String label = ptbt.next().originalText();
-			        if (!docCountMap.containsKey(label)) {
-			        	if (!countDocumentWords) {
-			        		docCountMap.put(label, 0.0);
-			        	} else {
-			        		docCountMap.put(label, documentWeight);
-			        	}
-			        } else if (countDocumentWords) {
-			        	docCountMap.put(label, docCountMap.get(label) + documentWeight);
-			        }
+					if (selectFeatures) {
+						if (!wordNonCounts.containsKey(label)) {
+							wordNonCounts.put(label, 1.0);
+						} else {
+							wordNonCounts.put(label, wordNonCounts.get(label) + 1);
+						}
+					} else {
+						if (!wordCounts.containsKey(label)) {
+							if (!countDocumentWords) {
+								wordCounts.put(label, 0.0);
+							} else {
+								wordCounts.put(label, documentWeight);
+							}
+						} else if (countDocumentWords) {
+							wordCounts.put(label, wordCounts.get(label) + documentWeight);
+						}
+					}
 			        
 			        if (wordAllCounts.containsKey(label)) {
 			        	wordAllCounts.put(label, wordAllCounts.get(label)+1);
@@ -110,37 +112,47 @@ public class MultinomialNaiveBayes {
 			}
 		}
 		
-		counts.put(UNK_TOKEN, 0.0);
+		wordCounts.put(UNK_TOKEN, 0.0);
+		wordNonCounts.put(UNK_TOKEN, 0.0);
+		wordAllCounts.put(UNK_TOKEN, ADD_ALPHA);
 		
 		for (String word: wordAllCounts.keySet()) {
-			if (!counts.containsKey(word)) {
-				counts.put(word, 0.0);
+			if (!wordCounts.containsKey(word)) {
+				wordCounts.put(word, 0.0);
 			}
 			if (!wordNonCounts.containsKey(word)) {
 				wordNonCounts.put(word, 0.0);
 			}
 		}
 		
-		for (String key : counts.keySet()) {
-			counts.put(key, counts.get(key) + ADD_ALPHA);
+		for (String key : wordCounts.keySet()) {
+			wordCounts.put(key, wordCounts.get(key) + ADD_ALPHA);
 		}
 		
 		for (String key: wordNonCounts.keySet()) {
 			wordNonCounts.put(key, wordNonCounts.get(key) + ADD_ALPHA);
 		}
 		
-		return counts;
+		for (String key: wordAllCounts.keySet()) {
+			wordAllCounts.put(key, wordAllCounts.get(key) + ADD_ALPHA);
+		}
+		
+		//System.out.println("revisions " + wordCounts);
+		//System.out.println("documents " + wordNonCounts);
+		//System.out.println("all " + wordAllCounts);
+		
+		return wordCounts;
 	}
 	
 	public Map<String, Double> getWordProbs(Map<String, Double> counts) {
 		double total = 0;
-		Map<String, Double> probs = new HashMap<String, Double>();
-		for (String key: counts.keySet()) {
-			total += counts.get(key);
+		wordProbs = new HashMap<String, Double>();
+		for (String key: wordCounts.keySet()) {
+			total += wordCounts.get(key);
 		}
 		
 		for (String key: counts.keySet()) {
-			probs.put(key, counts.get(key)/total);
+			wordProbs.put(key, counts.get(key)/total);
 		}
 		
 		total = 0;
@@ -163,19 +175,27 @@ public class MultinomialNaiveBayes {
 			wordAllProbs.put(key, wordAllCounts.get(key)/total);
 		}
 		
-		return probs;
+		//System.out.println("revisions: " + wordProbs);
+		//System.out.println("documents " + wordNonProbs);
+		//System.out.println("all " + wordAllProbs);
+		
+		return wordProbs;
 	}
 	
 	public void selectFeatures() {
+		//System.out.println("prob revision: " + probRevision);
+		
 		final Map<String, Double> miMap = new HashMap<String, Double>();
 		for (String word: wordAllProbs.keySet()) {
 			double miTT = wordProbs.get(word)*probRevision*Math.log(wordProbs.get(word)/wordAllProbs.get(word));
 			double miTF = wordNonProbs.get(word)*(1-probRevision)*Math.log(wordNonProbs.get(word)/wordAllProbs.get(word));
-			double miFT = (1 - wordProbs.get(word))*probRevision*Math.log((1 - wordProbs.get(word))/wordAllProbs.get(word));
-			double miFF = (1 - wordNonProbs.get(word))*(1-probRevision)*Math.log((1 - wordNonProbs.get(word))/wordAllProbs.get(word));
+			double miFT = (1 - wordProbs.get(word))*probRevision*Math.log((1 - wordProbs.get(word))/(1 -wordAllProbs.get(word)));
+			double miFF = (1 - wordNonProbs.get(word))*(1-probRevision)*Math.log((1 - wordNonProbs.get(word))/(1 - wordAllProbs.get(word)));
 			double mi = miTT + miTF + miFT + miFF;
 			
-			System.out.println(word + " " + mi);
+			//System.out.println(word + " mi " + mi + " prob " + wordProbs.get(word) + " " + wordNonProbs.get(word));
+			//System.out.println(miTT + " " + miTF + " " + miFT + " " + miFF);
+			//System.out.println();
 			miMap.put(word, mi);
 		}
 		
@@ -188,12 +208,20 @@ public class MultinomialNaiveBayes {
 			}	
 		});
 		
-		System.out.println(wordList);
+		//System.out.println("features in order: " + wordList);
 		
 		for (int i = numFeatures; i < wordList.size(); i++) {
 			String word = wordList.get(i);
 			wordProbs.remove(word);
 		}
+		
+		int count = 0;
+		for (String key:wordProbs.keySet()) {
+			count++;
+			//System.out.println("SELECTED FEATURE " + count + ": " + key + " count " + wordAllCounts.get(key) + " - " + wordNonCounts.get(key));
+		}
+		
+		//System.out.println("Done selecting");
 	}
 	
 	public int calculateDocumentSize(TestDocument document) {
@@ -209,6 +237,8 @@ public class MultinomialNaiveBayes {
 	}
 	
 	public double getSentenceProb(Map<String, Double> wordProbs, String sentence, int total) {
+		
+		//System.out.println("Calculating probability!!");
 		double logProb = 0;
 		CoreLabelTokenFactory factory = new CoreLabelTokenFactory();
 		PTBTokenizer<CoreLabel> ptbt = new PTBTokenizer<CoreLabel>(new StringReader(sentence),
@@ -219,6 +249,7 @@ public class MultinomialNaiveBayes {
 	    for (; ptbt.hasNext(); ) {
 	    	String label = ptbt.next().originalText();
 	        if (wordProbs.containsKey(label)) {
+	        	//System.out.println("word " + label + " prob " + wordProbs.get(label));
 	        	logProb += Math.log(wordProbs.get(label));
 	        	numTokens ++;
 	        } else if (!selectFeatures) {
@@ -227,17 +258,19 @@ public class MultinomialNaiveBayes {
 	        }
 	    }
 	    
-	    if (numTokens > 0)
-	      //return 1.0/numTokens;
-	    	//return logProb/numTokens
-	    	return logProb + Math.log((double) numTokens/total);
-	    else
+	    if (numTokens > 0) {
+	    	System.out.println("num tokens: " + numTokens);
+	    	//return 1.0/numTokens;
+	    	return logProb/numTokens;
+	    	//return logProb + Math.log((double) numTokens/total);
+	    } else {
 	    	return Double.NEGATIVE_INFINITY;
+	    }
 	}
 	
 	public void calculateProbabilities(List<Revision> revisions, List<TestDocument> docs) {
 		Map<String, Double> wordCounts = getWordCounts(revisions, docs);
-		wordProbs = getWordProbs(wordCounts);
+		getWordProbs(wordCounts);
 		if (selectFeatures) {
 			selectFeatures();
 		}
