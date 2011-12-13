@@ -2,7 +2,9 @@ package take_two;
 
 import java.io.File;
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 import query.QueryGetter;
 
@@ -48,9 +50,8 @@ public class Main {
         continue;
       
       TestDocument document = parser.parseDocument(file);
-      if (document.paragraphs.size() == 0) continue;
       document.id = id;
-      if (documentsToUse.indexOf(id) < 10)
+      if (documents.size() < 10 && document.paragraphs.size() >= 10)
         documents.add(document);
     
       allDocuments.add(document);
@@ -85,22 +86,30 @@ public class Main {
         trainDocuments.add(newDocument);
       }
       
-      //classifier.calculateProbabilities(trainRevisions, trainDocuments);
       classifier.countDocumentWords = false;
       classifier.calculateProbabilities(trainRevisions, trainDocuments);
       List<MultinomialNaiveBayes.Pair> predictions = classifier.mostLikelyParagraphs(testDocument);
       
-      testDocument.orderParagraphs();
-      String actual = testDocument.paragraphs.get(0);
+      
+      Set<String> revisedParagraphs =  new HashSet<String>();
+      for (int i = 0; i < testDocument.paragraphs.size(); i++) {
+        if (testDocument.scores.get(i) > 0)
+          revisedParagraphs.add(testDocument.paragraphs.get(i));  
+      }
+      System.out.println("size: " + revisedParagraphs.size()); 
       
       System.out.println("num paragraphs: " + predictions.size());
       int rank = -1;
+      boolean done = false;
       for (int i = 0; i < predictions.size(); i++) {
         //System.out.println("~~~PREDICTION" + i + "~~~\n");
         //System.out.println(predictions.get(i).paragraph);
         //System.out.println("score: " + predictions.get(i).score);
-        if (predictions.get(i).paragraph.equals(actual))
+        if (revisedParagraphs.contains(predictions.get(i).paragraph)) { 
           rank = i;
+          done = true;
+        }
+        if (done) break;
       }
       System.out.println("rank: " + rank);
       //System.out.println("PREDICTED:\n" + predictions.get(0).paragraph);
@@ -113,7 +122,6 @@ public class Main {
     for (String paragraph : document.paragraphs)
       // initialize scores list
       document.scores.add(0.0);
-    int count = 0;
     for (Revision revision : revisions) {
       if (! revision.pageId.equals(document.id))
         continue;

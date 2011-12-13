@@ -6,6 +6,7 @@ import java.io.IOException;
 import java.io.StringBufferInputStream;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Date;
 //import java.util.List;
 import java.util.regex.Matcher;
@@ -110,7 +111,7 @@ public class XMLParser {
 	      String type = classNode.getNodeValue();
 	      
 	      if (type.equals("diff-deletedline") || type.equals("diff-addedline")
-	          || type.equals("diff-context")) {  // if we are interested in this line
+	          /*|| type.equals("diff-context")*/) {  // if we are interested in this line
 	        Node div = ((Element) node).getElementsByTagName("div").item(0);
 	        if (div == null) continue;
 	        NodeList divChildren = div.getChildNodes();
@@ -157,15 +158,13 @@ public class XMLParser {
     
     Pattern pattern = Pattern.compile(INFOBOX_PATTERN, Pattern.DOTALL);
     Matcher matcher = pattern.matcher(intro);
-    
-    System.out.println("intro: " + intro);
     if (matcher.find()) {
       String infobox = matcher.group();
       result.paragraphs.add(infobox);
-      System.out.println("infobox: " + infobox);
       intro = intro.substring(matcher.end() + 2);
     }
     result.paragraphs.add(intro);
+    text = text.substring(equals);
     
     // separate out each section
     while (true) {
